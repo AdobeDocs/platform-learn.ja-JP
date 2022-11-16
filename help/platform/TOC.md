@@ -1,0 +1,215 @@
+---
+user-guide-title: Adobe Experience Platform のチュートリアル
+breadcrumb-title: チュートリアル
+user-guide-description: Experience Platform の多くの要素について学びます。
+audience: all
+doc-type: video
+source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 35%
+
+---
+
+
+# Adobe Experience Platform のチュートリアル {#tutorials}
+
++ [Platform チュートリアル](/help/platform/overview.md)
++ Platform の概要 {#intro-to-platform}
+   + [Experience Platformを活用した顧客体験](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [バックグラウンド：Experience Platformを活用した顧客体験](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [Experience Platform の概要](/help/platform/intro-to-platform/overview.md)
+   + [主な機能](/help/platform/intro-to-platform/key-capabilities.md)
+   + [アプリケーションとインテリジェントサービス](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+   + [Experience Cloud・アプリケーションとの統合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [主なユースケース](/help/platform/intro-to-platform/key-use-cases.md)
+   + [基本的なアーキテクチャ](/help/platform/intro-to-platform/basic-architecture.md)
+   + [Platform ユーザーインターフェイスの使用](/help/platform/intro-to-platform/interface-tour.md)
+   + [役割とプロジェクトのフェーズ](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ [はじめに：データアーキテクトとデータエンジニア](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target=&quot;_blank&quot;}
++ [Experience Platform API に対する認証](/help/platform/authentication/platform-api-authentication.md)
++ [ Experience Platform へのサンプルデータのインポート](/help/platform/data-generator/import-sample-data.md)
++ 管理 {#admin}
+   + [アラートを使用](/help/platform/admin/use-alerts.md)
+   + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
+   + [属性ベースのアクセス制御の設定](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [Admin Console](/help/platform/admin/admin-console.md)
+   + [製品プロファイルの管理](/help/platform/admin/managing-product-profiles.md)
++ [監査ログ](/help/platform/governance/audit-logs.md)
++ [データ収集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja){target=&quot;_blank&quot;}
++ ダッシュボード {#dashboards}
+   + [ダッシュボードの作成](/help/platform/dashboards/create-a-dashboard.md)
++ データガバナンス {#data-governance}
+   + [概要](/help/platform/governance/understanding-data-governance.md)
+   + [エンドツーエンドのデモ](/help/platform/governance/introduction-to-data-governance.md)
+   + [ガバナンスラベルを使用したデータの分類](/help/platform/governance/classify-data-using-governance-labels.md)
+   + [データ使用ポリシーの作成](/help/platform/governance/create-data-usage-policies.md)
+   + [データ使用ポリシーの作成](/help/platform/governance/enforce-data-usage-policies.md)
+   + [同意の実施](/help/platform/governance/enforce-consent.md)
++ データハイジーン {#data-hygiene}
+   + [概要](/help/platform/data-hygiene/overview.md)
+   + [消費者を削除](/help/platform/data-hygiene/delete-consumers.md)
+   + [データセットの削除](/help/platform/data-hygiene/delete-datasets.md)
++ データ取得 {#data-ingestion}
+   + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
+   + [バッチ取得の概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
+   + [データセットの作成と入力](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
+   + [XDM への CSV ファイルのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=ja){target=&quot;_blank&quot;}
+   + [ソースの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
+   + [Adobe Analyticsからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [データをAudience Managerから取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [クラウドストレージからデータを取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
+   + [CRM からのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [データベースからのデータ取得](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
+   + [ストリーミングインジェストの概要](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
+   + [HTTP API を使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
+   + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
+   + [Web SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Mobile SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
++ Data Science Workspace {#data-science-workspace}
+   + [概要](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
+   + [アーキテクチャ](data-science-workspace/architecture-overview.md)
+   + [コーススキーマとデータセットの作成](data-science-workspace/create-the-course-schema-and-dataset.md)
+   + [JupyterLab ノートブックにデータを読み込む](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
+   + [JupyterLab ノートブックでのデータのクエリと検出](data-science-workspace/dsw-query-service.md)
+   + [探索的データ分析](data-science-workspace/eda.md)
+   + [レシピ、モデル、サービスの概要](data-science-workspace/recipes-models-services-overview.md)
+   + [レシピビルダーテンプレートを使用したモデルの作成](data-science-workspace/recipe-builder-template.md)
+   + [モデルの効果の分析](data-science-workspace/analyze-model-performance.md)
+   + [トレーニング済みモデルの作成と公開 (UI)](data-science-workspace/create-model-ui.md)
+   + [サービスの自動トレーニングとスコアリングのスケジュール設定](data-science-workspace/schedule-training-scoring.md)
+   + [機械学習のインサイトによるリアルタイム顧客プロファイルの強化](data-science-workspace/dsw-profile-segmentation.md)
+   + [ソースファイルのレシピへのパッケージ化](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target=&quot;_blank&quot;}
+   + [パッケージ化されたレシピの読み込み (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target=&quot;_blank&quot;}
+   + [パッケージ化されたレシピの読み込み (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target=&quot;_blank&quot;}
++ 宛先 {#destinations}
+   + [宛先の概要](/help/platform/destinations/understanding-destinations.md)
+   + [宛先への接続](/help/platform/destinations/connecting-to-destinations.md)
+   + [宛先の作成とデータのアクティブ化](/help/platform/destinations/create-destinations-and-activate-data.md)
+   + [宛先へのプロファイルとセグメントのアクティブ化](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Google Customer Match との統合](/help/platform/destinations/integrate-with-google-customer-match.md)
+   + [Azure BLOB の宛先の設定](/help/platform/destinations/configure-the-azure-blob-destination.md)
+   + [Marketoの宛先の設定](/help/platform/destinations/configure-the-marketo-destination.md)
+   + [ファイルベースのクラウドストレージまたは電子メールマーケティングの宛先の設定](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
+   + [ソーシャルの宛先の設定](/help/platform/destinations/configure-a-social-destination.md)
+   + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ja)
+   + [非アプリケーションに対するデータのAdobe化 Web セミナー](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
++ ID {#identities}
+   + [ID グラフと ID グラフの概要](/help/platform/identities/understanding-identity-and-identity-graphs.md)
+   + [ID データのラベル、取り込み、検証](/help/platform/identities/label-ingest-and-verify-identity-data.md)
+   + [ID グラフの表示](/help/platform/identities/view-identity-graphs.md)
++ 監視 {#monitoring}
+   + [データ取得の監視](/help/platform/monitoring/monitoring-dashboard.md)
+   + [セグメントのアクティベーションの監視](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
+   + [データフローのモニタリング](/help/platform/monitoring/data-monitoring.md)
++ プロファイル {#profiles}
+   + [リアルタイム顧客プロファイル](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
+   + [プロファイルの概要図](/help/platform/profiles/overview-diagram.md)
+   + [データをプロファイルに取り込む](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [プロファイル表示の詳細のカスタマイズ](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
+   + [アカウントプロファイルの表示](/help/platform/profiles/view-account-profiles.md)
+   + [結合ポリシーの作成](/help/platform/profiles/create-merge-policies.md)
+   + [和集合スキーマの概要](/help/platform/profiles/union-schemas-overview.md)
++ プライバシーとセキュリティ {#privacy}
+   + [Privacy Serviceの概要](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [プライバシーリクエストの ID データ](/help/platform/privacy/identity-data-in-privacy-requests.md)
+   + [プライバシー JavaScript ライブラリ](/help/platform/privacy/using-privacy-javascript-library.md)
+   + [Adobe Analyticsのプライバシーラベル](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
+   + [Privacy ServiceAPI の概要](/help/platform/privacy/getting-started-with-privacy-services-api.md)
+   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [プライバシーイベントへの購読](/help/platform/privacy/subscribe-to-privacy-events.md)
+   + [顧客管理キーの設定](/help/platform/privacy/set-up-customer-managed-keys.md)
+   + [責任ある顧客データ管理に関する 10 の考慮事項](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
+   + [データ管理人としてのマーケターの役割の向上](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
++ クエリ {#queries}
+   + [概要](/help/platform/queries/understanding-query-service.md)
+   + [クエリサービス UI](/help/platform/queries/query-service-ui.md)
+   + [クエリサービス API](/help/platform/queries/query-service-api.md)
+   + [データを見る](/help/platform/queries/explore-data.md)
+   + [データを準備](/help/platform/queries/prepare-data.md)
+   + [Adobe 定義関数](/help/platform/queries/adobe-defined-functions.md)
+   + [データ使用パターン](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
+   + [クエリを実行](/help/platform/queries/run-queries.md)
+   + [クエリ結果からデータセットを生成](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target=&quot;_blank&quot;}
+   + [Tableau](/help/platform/queries/psql-client-tableau.md)
+   + [データの分析と視覚化](/help/platform/queries/analyze-and-visualize.md)
+   + [BI ツールを使用したダッシュボードの作成](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
+   + [顧客データを再充電](/help/platform/queries/recharge-your-customer-data.md)
+   + [クエリサービスにクライアントを接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target=&quot;_blank&quot;}
++ スキーマ {#schemas}
+   + [概要](/help/platform/schemas/schemas-and-experience-data-model.md)
+   + [構築ブロック](/help/platform/schemas/schema-building-blocks.md)
+   + [データモードの計画](/help/platform/schemas/plan-your-data-model.md)
+   + [データモデルを XDM に変換する](/help/platform/schemas/convert-your-data-model-to-xdm.md)
+   + [スキーマの作成](/help/platform/schemas/create-schemas.md)
+   + [B2B データのスキーマの作成](/help/platform/schemas/create-schemas-for-b2b-data.md)
+   + [クラスの作成](/help/platform/schemas/create-classes.md)
+   + [フィールドグループの作成](/help/platform/schemas/create-schema-field-groups.md)
+   + [データタイプの作成](/help/platform/schemas/create-data-types.md)
+   + [スキーマ間の関係の設定](/help/platform/schemas/configure-relationships-between-schemas.md)
+   + [列挙フィールドと推奨値を使用する](/help/platform/schemas/use-enumerated-fields.md)
+   + [サンドボックス間でのスキーマのコピー](/help/platform/schemas/copy-schemas-between-sandboxes.md)
+   + [スキーマの更新](/help/platform/schemas/update-schemas.md)
+   + [アドホックスキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target=&quot;_blank&quot;}
++ セグメント {#segments}
+   + [セグメントビルダーの概要](/help/platform/segments/segment-builder-overview.md)
+   + [セグメントの作成](/help/platform/segments/create-segments.md)
+   + [コンテンツベースのセグメントの作成](/help/platform/segments/create-content-based-segments.md)
+   + [コンバージョンセグメントの作成](/help/platform/segments/create-conversion-segments.md)
+   + [既存のセグメントからセグメントを作成](/help/platform/segments/create-segments-from-existing-segments.md)
+   + [順次セグメントの作成](/help/platform/segments/create-sequential-segments.md)
+   + [動的セグメントの作成](/help/platform/segments/create-dynamic-segments.md)
+   + [複数エンティティセグメントの作成](/help/platform/segments/create-multi-entity-segments.md)
+   + [B2B データを使用したセグメントの作成](/help/platform/segments/create-segments-with-b2b-data.md)
+   + [ストリーミングセグメント化のデモ](/help/platform/segments/streaming-segmentation-demo.md)
+   + [セグメントの評価](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=ja){target=&quot;_blank&quot;}
+   + [データを書き出すデータセットを作成する](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target=&quot;_blank&quot;}
+   + [セグメントの一致の接続設定](/help/platform/segments/segment-match-connection-setup.md)
+   + [セグメントの一致のデータガバナンス](/help/platform/segments/segment-match-data-governance.md)
+   + [セグメントの一致の設定フロー](/help/platform/segments/segment-match-configuration-flow.md)
+   + [セグメントの一致によるインサイトの事前共有](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [受信データのセグメント一致](/help/platform/segments/segment-match-receiving-data.md)
++ ソース {#sources}
+   + [ソースの概要](/help/platform/sources/overview.md)
+   + [Adobe Analyticsからのデータの取り込み](/help/platform/sources/ingest-data-from-adobe-analytics.md)
+   + [データをAudience Managerから取り込む](/help/platform/sources/ingest-data-from-aam.md)
+   + [Marketoからのデータの取り込み](/help/platform/sources/ingest-data-from-marketo.md)
+   + [クラウドストレージからデータを取り込む](/help/platform/sources/ingest-data-from-cloud-storage.md)
+   + [CRM からのデータの取り込み](/help/platform/sources/ingest-data-from-crm.md)
+   + [データベースからのデータ取得](/help/platform/sources/ingest-data-from-databases.md)
+   + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
++ アプリケーションサービス {#application-services}
+   + [Customer Journey Analyticsチュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
+   + [Journey Orchestrationチュートリアル](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
+   + [offer decisioningチュートリアル](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=ja){target=&quot;_blank&quot;}
+   + リアルタイム CDP チュートリアル{#rtcdp}
+      + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+      + [B2B エディションの概要](/help/platform/rtcdp/b2b-overview.md)
+      + [エンドツーエンドのデモ](/help/platform/rtcdp/demo.md)
+      + [ワークフロー](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+      + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
+      + [IAB Transparency and Consent Framework 2.0 との統合](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
+      + [データ使用ポリシーの適用](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
++ インテリジェントサービス {#intelligent-services}
+   + [概要](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Attribution AI の概要](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+   + [Attribution AI値](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [Attribution AI の設定](/help/platform/intelligent-services/configure-attribution-ai.md)
+   + [Attribution AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+   + [顧客 AI の概要](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [顧客 AI 値](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [Customer AI の設定](/help/platform/intelligent-services/configure-customer-ai.md)
+   + [Customer AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
++ Experience Cloud の統合 {#experience-cloud}
+   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
+   + [Marketo Engageでキャンペーンを調整](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Adobe Targetを使用した次ヒットのパーソナライゼーション](/help/platform/experience-cloud/next-hit-personalization.md)
++ 業界トレンド {#industry}
+   + [データ管理の将来と変化する環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
+   + [2 つの視点 - ブランドと消費者](/help/platform/industry/brands-vs-consumers.md)
+   + [Audience Center of Excellence の進化](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
+   + [顧客プロファイルを使用したより優れたエクスペリエンスの構築](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
+   + [ファーストパーティデータコンテキストでのデータ共同作業](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
+   + [翻訳](translate.md)
