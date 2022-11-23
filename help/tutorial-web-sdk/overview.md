@@ -3,10 +3,10 @@ title: Web SDK を使用した Adobe Experience Cloud 実装のチュートリ�
 description: Adobe Experience Platform Web SDK を使用して、Experience Cloud アプリケーションを実装する方法について説明します。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6488faee86a53585bdbf03e069c4d6cf7e81d096
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 27%
+source-wordcount: '417'
+ht-degree: 25%
 
 ---
 
@@ -49,7 +49,9 @@ Experience PlatformWeb SDK は、Adobe Experience Cloudのお客様がAdobe Expe
 
 ## 前提条件
 
-このレッスンでは、Adobe IDと [必要な権限](configure-permissions.md) レッスンを完了するために。 アクセスできない場合は、Experience Cloud管理者に問い合わせて、アクセス権を要求する必要があります。
+すべてのExperience Cloudユーザーが Platform Web SDK を使用できます。 Real-time Customer Data PlatformやJourney Optimizerなどのプラットフォームベースのアプリケーションのライセンスを取得して Web SDK を使用する必要はありません。
+
+このレッスンでは、Adobeアカウントと [必要な権限](configure-permissions.md) レッスンを完了するために。 アクセスできない場合は、Experience Cloud管理者に問い合わせて、アクセス権を要求する必要があります。
 
 また、HTML や JavaScript などのフロントエンド開発言語に精通していることを前提としています。これらの言語の専門家である必要はありませんが、コードを読んで理解できる場合は、このチュートリアルをさらに活用できます。
 
