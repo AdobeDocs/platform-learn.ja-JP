@@ -3,9 +3,9 @@ title: Web データ用の XDM スキーマの作成
 description: データ収集インターフェイスで Web データの XDM スキーマを作成する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1080'
 ht-degree: 6%
 
 ---
@@ -78,6 +78,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
 1. **[!UICONTROL 構成**] パネルで、 `Untitled schema name`
 1. 内 **[!UICONTROL スキーマのプロパティ]** パネル、 **[!UICONTROL 表示名]** `Luma Web Event Data`
+1. 以外の **[!UICONTROL 表示名]** 有効化するフィールド **[!UICONTROL 保存]** オプション
 1. 選択 **[!UICONTROL 保存]**
 
 ![Luma Web イベントデータ](assets/schema-luma-web-event-data.png)
