@@ -3,9 +3,9 @@ title: チュートリアルの権限の設定
 description: Experience PlatformWeb SDK へのアクセスをリクエストする方法と、「 Web SDK を使用したAdobe Experience Cloudの実装」チュートリアルを完了するために必要な権限の設定方法について説明します。
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 7%
 
 ---
@@ -16,14 +16,14 @@ Experience PlatformWeb SDK へのアクセスをリクエストする方法と�
 
 ## データ収集
 
-* 次の権限を持っている： **[!UICONTROL 開発]**, **[!UICONTROL 編集]**, **[!UICONTROL 承認]**, **[!UICONTROL 公開]**, **[!UICONTROL 拡張機能の管理]**、および **[!UICONTROL 環境の管理]** タグのプロパティ。 タグ権限について詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja).
+* 次の権限を持っている： **[!UICONTROL 開発]**, **[!UICONTROL 編集]**, **[!UICONTROL 承認]**, **[!UICONTROL 公開]**, **[!UICONTROL 拡張機能の管理]**, **[!UICONTROL 環境の管理]**、および **[!UICONTROL プロパティを管理]**. タグ権限について詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja).
 * オプションのイベント転送レッスンを完了する場合は、エッジ転送と権限項目を含む製品ライセンスをお持ちください **[!UICONTROL プラットフォーム]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 リアルタイム CDP のようなプラットフォームベースのアプリケーションを使用していない場合でも、これらの機能は、すべてのExperience Cloudのお客様が利用できる必要があります。
 
-* へのアクセス **デフォルトの実稼動** サンドボックス。
+* へのアクセス **デフォルトの実稼動**, **&quot;Prod&quot;** サンドボックス (.
 * アクセス先 **[!UICONTROL スキーマを管理]** および **[!UICONTROL スキーマを表示]** under **[!UICONTROL データモデリング]**
 * アクセス先 **[!UICONTROL ID 名前空間の管理]** および **[!UICONTROL ID 名前空間の表示]** under **[!UICONTROL Identity Management]**
 * アクセス先 **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームの表示]** under **[!UICONTROL データ収集]**

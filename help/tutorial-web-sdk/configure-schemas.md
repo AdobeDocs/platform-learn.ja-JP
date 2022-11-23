@@ -3,10 +3,10 @@ title: Web データ用の XDM スキーマの作成
 description: データ収集インターフェイスで Web データの XDM スキーマを作成する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 6%
+source-wordcount: '1125'
+ht-degree: 5%
 
 ---
 
@@ -47,7 +47,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
    >[!NOTE]
    >
-   >リアルタイム CDP などのプラットフォームベースのアプリケーションをご利用の場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。
+   >リアルタイム CDP などのプラットフォームベースのアプリケーションをご利用の場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
 
 1. に移動します。 **[!UICONTROL スキーマ]** 左のナビゲーション
 1. を選択します。 **[!UICONTROL スキーマを作成]** 右上のボタン
@@ -63,10 +63,10 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
 >[!TIP]
 > 
->この演習では、Web データ収集用に推奨される事前定義済みフィールドグループを追加します。 _**[!UICONTROL AEP Web SDK ExperienceEvent Mixin]**_、および _**[!UICONTROL 消費者エクスペリエンスイベント]**_.
+>この演習では、Web データ収集用に推奨される事前定義済みフィールドグループを追加します。 _**[!UICONTROL AEP Web SDK ExperienceEvent]**_、および _**[!UICONTROL 消費者エクスペリエンスイベント]**_.
 
-1. 保持 **[!UICONTROL 既存のフィールドグループを使用]** ラジオボタンを選択
-1. [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`] を検索します
+1. 内 **[!UICONTROL フィールドグループ]** セクション、選択 **[!UICONTROL 追加]**
+1. [!UICONTROL `AEP Web SDK ExperienceEvent`] を検索します
 1. 「 」ボックスをオンにします。
 1. [!UICONTROL `Consumer Experience Event`] を検索します
 1. 「 」ボックスをオンにします。
@@ -83,7 +83,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
 ![Luma Web イベントデータ](assets/schema-luma-web-event-data.png)
 
-両方のフィールドグループを使用する場合、Web でのデータ収集に必要な、最も一般的に使用されるキーと値のペアにアクセスできることに注意してください。 いずれかのフィールドグループ名をクリックすると、そのグループが属するキーと値のペアのグループがインターフェイスで強調表示されます。 次の例では、どのグループが属しているかを確認します **[!UICONTROL 消費者エクスペリエンスイベント]**.
+両方のフィールドグループを使用する場合、Web でのデータ収集に必要な、最も一般的に使用されるキーと値のペアにアクセスできることに注意してください。 この [!UICONTROL 表示名] の各フィールドは、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、必要に応じて標準フィールドの表示名を変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、そのグループが属するキーと値のペアのグループがインターフェイスで強調表示されます。 次の例では、どのグループが属しているかを確認します **[!UICONTROL 消費者エクスペリエンスイベント]**.
 
 ![スキーマフィールドグループ](assets/schema-consumer-experience-event.jpg)
 
