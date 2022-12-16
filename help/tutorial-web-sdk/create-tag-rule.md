@@ -3,9 +3,9 @@ title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '849'
 ht-degree: 5%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 5%
 
 ## タグルールを作成
 
+タグでは、ルールは、様々な条件でアクション（呼び出しの実行）を実行するために使用されます。 この最初のルールを使用し、Web SDK の [!UICONTROL イベントの送信] アクション。 このチュートリアルの後半で、訪問者がいるページのタイプに基づいて、異なるバージョンの XDM オブジェクトを送信します。 そのため、ルール条件を使用して、他のタイプのページを除外します。
+
 タグルールを作成するには：
 
 1. このチュートリアルで使用するタグプロパティを開きます。
@@ -84,7 +86,7 @@ ht-degree: 5%
 1. 次の URL パスに対して、さらに 3 つの例外を追加します。
 
    * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** 対象 `/content/luma/us/en/user/checkout/order/thank-you.html`
+   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
    * **`Core - product page`** 対象 `/products/` Regex スイッチをオンにして
 
    ![条件を追加](assets/rule-condition-exception-all.png)
