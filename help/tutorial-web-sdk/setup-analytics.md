@@ -3,9 +3,9 @@ title: Experience PlatformWeb SDK を使用したAdobe Analyticsのセットア�
 description: Experience PlatformWeb SDK を使用したAdobe Analyticsの設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 ### e コマースデータ要素の作成
 
-「データ要素の作成」レッスンでは、次の操作をおこないます。 [JavaScript データ要素の作成](create-data-elements.md#create-data-elements-to-capture-the-data-layer) がキャプチャしたコンテンツと id の詳細。 次に、e コマースデータをキャプチャするための追加のデータ要素を作成します。 これは、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} は、買い物かご内の製品詳細ページと製品に異なるデータレイヤー構造を使用します。各シナリオのデータ要素を作成する必要があります。 以下の提供されているコードスニペットを使用します。
+「データ要素の作成」レッスンでは、次の操作をおこないます。 [JavaScript データ要素の作成](create-data-elements.md#create-data-elements-to-capture-the-data-layer) がキャプチャしたコンテンツと id の詳細。 次に、e コマースデータをキャプチャするための追加のデータ要素を作成します。 これは、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} は、買い物かご内の製品詳細ページと製品に異なるデータレイヤー構造を使用します。各シナリオのデータ要素を作成する必要があります。 Luma データレイヤーから必要なものを取得するには、いくつかのカスタムコードデータ要素を作成する必要があります。独自のサイトにを実装する際に必要になる場合と不要な場合があります。 この場合、買い物かごの項目の配列をループして、各製品の特定の詳細を取得する必要があります。 以下の提供されているコードスニペットを使用します。
 
 1. チュートリアルに使用するタグプロパティを開きます。
 1. に移動します。 **[!UICONTROL データ要素]**
