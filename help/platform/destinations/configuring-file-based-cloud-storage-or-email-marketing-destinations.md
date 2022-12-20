@@ -1,13 +1,13 @@
 ---
 title: ファイルベースのクラウドストレージまたは電子メールマーケティングの宛先の設定
-description: Adobeのリアルタイム CDP でのファイルベースの宛先の設定に関するチュートリアルで、ヒントを得ます。 これは、クラウドストレージの宛先（S3 や SFTP など）および電子メールマーケティングの宛先にも当てはまります。
+description: AdobeのReal-Time CDPでのファイルベースの宛先の設定に関するチュートリアルで、ヒントを説明します。 これは、クラウドストレージの宛先（S3 や SFTP など）および電子メールマーケティングの宛先にも当てはまります。
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 5%

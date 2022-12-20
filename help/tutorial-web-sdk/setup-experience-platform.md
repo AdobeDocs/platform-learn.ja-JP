@@ -2,7 +2,7 @@
 title: Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
 description: Web SDK を使用して、Web データをAdobe Experience Platformにストリーミングする方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 10%
@@ -235,7 +235,7 @@ Platform インターフェイス ( またはJourney Optimizerインターフェ
 
    ![顧客プロファイル](assets/experience-platform-validate-dataset-custProfile.png)
 
-これで、Experience Platform（およびリアルタイム CDP）用の Platform Web SDK が有効になりました。 Customer Journey Analytics! Journey Optimizer!)!
+これで、Experience Platform( およびReal-Time CDP! Customer Journey Analytics! Journey Optimizer!)!
 
 
 [次へ： ](setup-analytics.md)

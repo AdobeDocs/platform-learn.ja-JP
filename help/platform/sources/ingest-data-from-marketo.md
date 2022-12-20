@@ -7,7 +7,7 @@ role: Data Engineer, Data Architect
 kt: 9259
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> このビデオはコースの一部です。 [マーケター向け Real-time CDP, B2B Edition の概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)(Experience League時に無料で利用可能 )
+> このビデオはコースの一部です。 [Real-Time CDP, B2B Edition を使い始める（マーケター向け）](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)(Experience League時に無料で利用可能 )
 
 詳しくは、 [Marketo Engageソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

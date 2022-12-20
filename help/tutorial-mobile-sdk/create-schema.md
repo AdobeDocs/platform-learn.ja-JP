@@ -2,7 +2,7 @@
 title: XDM スキーマの作成
 description: モバイルアプリイベント用の XDM スキーマを作成する方法を説明します。
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 14%
@@ -53,7 +53,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    >[!NOTE]
    >
-   > Real-time CDP などのプラットフォームベースのアプリケーションのお客様は、このチュートリアルに開発サンドボックスを使用する必要があります。 他のお客様は、デフォルトの実稼動サンドボックスを使用します。
+   > Real-Time CDPなどの Platform ベースのアプリケーションのお客様は、このチュートリアルで開発サンドボックスを使用する必要があります。 他のお客様は、デフォルトの実稼動サンドボックスを使用します。
 
 
 1. 選択 **[!UICONTROL スキーマ]** under **[!UICONTROL データ管理]**.
@@ -66,7 +66,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 * **クラス** スキーマに含まれるデータの行動面を定義します。 例： `XDM ExperienceEvent` は時系列、イベントデータ、 `XDM Individual Profile` は、個人に関する属性データをキャプチャします。
 * **データタイプ** は、基本リテラルフィールドと同じ方法で、クラスまたはフィールドグループの参照フィールドタイプとして使用されます。
 
-上記の説明は、概要です。 詳しくは、 [スキーマ構築ブロック](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=ja) ビデオまたは読み取り [スキーマ構成の基本](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) （製品ドキュメント内）。
+上記の説明は、概要です。 詳しくは、 [スキーマ構築ブロック](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=ja) ビデオまたは読み取り [スキーマ構成の基本](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) （製品ドキュメント内）。
 
 このチュートリアルでは、消費者エクスペリエンスイベントフィールドグループを使用し、カスタムフィールドグループを作成してプロセスを示します。
 

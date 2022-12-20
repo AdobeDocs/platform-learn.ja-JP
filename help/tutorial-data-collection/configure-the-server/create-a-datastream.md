@@ -2,7 +2,7 @@
 title: データストリームの作成
 description: データストリームの作成
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Edge Network がデータをシャトルするAdobe製品を設定するには�
 
 通常、会社には、Web サイトの更新に関するプロモーションパスがあります。 会社の担当者（変更に応じて、マーケターまたはエンジニア）は、通常、そのユーザーのみが使用している開発環境で変更をテストします。 変更が快適に行われると、変更はステージング環境に昇格され、さらにテストが実施されます。 最後に、変更はユーザーに表示される実稼動用 Web サイトに公開されます。 データストリームは、このプロモーションパターンをサポートします。
 
-リアルタイム CDP、Journey Optimizer、Customer Journey Analyticsなどのプラットフォームベースのアプリケーションをサポートしている場合は、これらの環境に対応する個別の Platform サンドボックスに、追加のデータストリームを作成する必要があります。
+Real-Time CDP、Journey Optimizer、Customer Journey Analyticsなどの Platform ベースのアプリケーションをサポートしている場合は、これらの環境に対応する個別の Platform サンドボックスに、追加のデータストリームを作成する必要があります。
 
 Platform のユーザーでない場合は、1 つのサンドボックスで複数のデータストリームを作成し、データストリームコピー機能を使用して設定を複製できます。
 

@@ -3,7 +3,7 @@ title: ID 名前空間の設定
 description: Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 6%
@@ -55,7 +55,7 @@ Web サイトで、Experience CloudAPI またはExperience CloudID サービス�
 
    >[!NOTE]
    >
-   >リアルタイム CDP などのプラットフォームベースのアプリケーションをご利用の場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
+   >Real-Time CDPなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
 
 1. 選択 **[!UICONTROL ID]** 左のナビゲーション
 1. 選択 **[!UICONTROL 参照]**

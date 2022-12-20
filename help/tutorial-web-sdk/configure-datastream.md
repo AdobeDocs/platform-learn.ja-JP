@@ -3,7 +3,7 @@ title: データストリームの設定
 description: データストリームを有効にし、設定ソリューションをExperience Cloudする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 8%
@@ -43,7 +43,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >リアルタイム CDP などのプラットフォームベースのアプリケーションをご利用の場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
+   >Real-Time CDPなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
 
 1. に移動します。 **[!UICONTROL データストリーム]** 左のナビゲーション
 1. 選択 **[!UICONTROL 新規データストリーム]** をクリックします。

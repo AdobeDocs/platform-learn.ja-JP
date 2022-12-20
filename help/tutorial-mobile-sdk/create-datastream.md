@@ -2,7 +2,7 @@
 title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 7%

@@ -1,6 +1,6 @@
 ---
 title: リアルタイム顧客プロファイルの有効化
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: リアルタイム顧客プロファイルの有効化
 description: このレッスンでは、リアルタイム顧客プロファイルのスキーマとデータセットを有効にします。
 role: Data Architect
@@ -8,7 +8,7 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 3%

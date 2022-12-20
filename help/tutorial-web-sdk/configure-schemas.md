@@ -3,7 +3,7 @@ title: Web データ用の XDM スキーマの作成
 description: データ収集インターフェイスで Web データの XDM スキーマを作成する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 5%
@@ -47,7 +47,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
    >[!NOTE]
    >
-   >リアルタイム CDP などのプラットフォームベースのアプリケーションをご利用の場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
+   >Real-Time CDPなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
 
 1. に移動します。 **[!UICONTROL スキーマ]** 左のナビゲーション
 1. を選択します。 **[!UICONTROL スキーマを作成]** 右上のボタン

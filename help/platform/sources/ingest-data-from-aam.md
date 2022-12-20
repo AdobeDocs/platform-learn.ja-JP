@@ -1,12 +1,12 @@
 ---
 title: Adobe Audience Manager Data Connector を使用したデータの取り込み
-description: プロセスと人員をAdobe Audience ManagerからReal-time Customer Data Platformに移行するように再設定する際に、Audience ManagerData Connector を使用して、特性とセグメントをAAMから Platform に取り込み、他のリッチデータ（PII を含む）と組み合わせて、宛先パートナーに送信できます。 このビデオでは、リアルタイム CDP 用のAAM Data Connector の設定手順を説明します。
+description: プロセスと人員をAdobe Audience ManagerからReal-time Customer Data Platformに移行するように再設定する際に、Audience ManagerData Connector を使用して、特性とセグメントをAAMから Platform に取り込み、他のリッチデータ（PII を含む）と組み合わせて、宛先パートナーに送信できます。 このビデオでは、Real-Time CDP用AAM Data Connector の設定手順を説明します。
 role: Data Engineer, Data Architect
 feature: Sources
 thumbnail: 331214.jpg
 kt: 7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # Adobe Audience Manager Data Connector を使用したデータの取り込み
 
-プロセスと人員をAdobe Audience ManagerからReal-time Customer Data Platform（リアルタイム CDP）に移行するように再設定する際に、Audience Managerデータコネクタを使用してAAMの特性とセグメントを Platform に取り込み、他のリッチデータ（PII を含む）と組み合わせて、宛先パートナーに送信できます。 このビデオでは、リアルタイム CDP 用のAAMデータコネクタの設定手順を説明します。
+プロセスと人員をAdobe Audience ManagerからReal-time Customer Data Platform(Real-Time CDP) に移行するように再設定する際に、Audience Managerデータコネクタを使用して、AAMの特性とセグメントを Platform に取り込み、他のリッチデータ（PII を含む）と組み合わせて、宛先パートナーに送信できます。 このビデオでは、Real-Time CDP用AAM Data Connector の設定手順を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?quality=12&learn=on)
 

@@ -2,7 +2,7 @@
 title: Adobe Experience Platformへのデータ送信
 description: Adobe Experience Platformにデータを送信する方法を説明します。
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 Adobe Experience Platformにデータを送信する方法を説明します。
 
-このオプションのレッスンは、Real-time Customer Data Platform（リアルタイム CDP）、Journey Optimizer、Customer Journey Analyticsのすべてのお客様に関連します。 Experience Platformは、AdobeとAdobe以外のすべてのデータを、リアルタイムで更新する堅牢な顧客プロファイルに変換し、AI に基づくインサイトを使用して、あらゆるチャネルで適切なエクスペリエンスを提供するオープンシステムです。
+このオプションのレッスンは、Real-time Customer Data Platform(Real-Time CDP)、Journey OptimizerおよびCustomer Journey Analyticsのすべてのお客様に関連しています。 Experience Platformは、AdobeとAdobe以外のすべてのデータを、リアルタイムで更新する堅牢な顧客プロファイルに変換し、AI に基づくインサイトを使用して、あらゆるチャネルで適切なエクスペリエンスを提供するオープンシステムです。
 
 この [イベント](events.md), [ライフサイクル](lifecycle-data.md)、および [id](identity.md) 以前のレッスンで収集し、Platform Edge Network に送信したデータは、Adobe Experience Platformを含む、データストリームで設定されたサービスに転送されます。
 

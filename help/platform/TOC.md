@@ -4,7 +4,7 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 35%
@@ -56,14 +56,14 @@ ht-degree: 35%
    + [データセットの作成と入力](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [XDM への CSV ファイルのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=ja){target=&quot;_blank&quot;}
    + [ソースの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Adobe Analyticsからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [Adobe Analyticsからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [データをAudience Managerから取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [クラウドストレージからデータを取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-   + [CRM からのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [クラウドストレージからデータを取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ja)
+   + [CRM からのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ja)
    + [データベースからのデータ取得](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [ストリーミングインジェストの概要](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [HTTP API を使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
-   + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
+   + [HTTP API を使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=ja)
+   + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ja)
    + [Web SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
    + [Mobile SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
 + Data Science Workspace {#data-science-workspace}
@@ -103,7 +103,7 @@ ht-degree: 35%
    + [セグメントのアクティベーションの監視](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [データフローのモニタリング](/help/platform/monitoring/data-monitoring.md)
 + プロファイル {#profiles}
-   + [リアルタイム顧客プロファイル](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
+   + [リアルタイム顧客プロファイルについて](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [プロファイルの概要図](/help/platform/profiles/overview-diagram.md)
    + [データをプロファイルに取り込む](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [プロファイル表示の詳細のカスタマイズ](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
@@ -184,7 +184,7 @@ ht-degree: 35%
    + [Customer Journey Analyticsチュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Journey Orchestrationチュートリアル](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [offer decisioningチュートリアル](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=ja){target=&quot;_blank&quot;}
-   + リアルタイム CDP チュートリアル{#rtcdp}
+   + Real-Time CDPチュートリアル{#rtcdp}
       + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [B2B エディションの概要](/help/platform/rtcdp/b2b-overview.md)
       + [エンドツーエンドのデモ](/help/platform/rtcdp/demo.md)

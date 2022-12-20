@@ -7,10 +7,10 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 37%
+ht-degree: 20%
 
 ---
 
@@ -22,4 +22,4 @@ ht-degree: 37%
 
 >[!IMPORTANT]
 >
-> 属性ベースのアクセス制御は、現在、米国を拠点とするヘルスケア関連のお客様向けの限定リリースで利用できます。この機能は、完全にリリースされると、すべての Real-time Customer Data Platform のお客様が利用できるようになります。また、このビデオで使用される Regulated Health Data ラベルは、Healthcare Shield のお客様に対してのみ使用できます。
+> 属性ベースのアクセス制御は、現在、米国を拠点とするヘルスケア関連のお客様向けの限定リリースで利用できます。この機能は、完全にリリースされると、すべてのReal-time Customer Data Platformのお客様が利用できるようになります。 また、このビデオで使用される Regulated Health Data ラベルは、Healthcare Shield のお客様に対してのみ使用できます。

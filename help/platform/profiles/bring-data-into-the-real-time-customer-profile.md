@@ -1,15 +1,15 @@
 ---
 title: データをリアルタイム顧客プロファイルに取り込む
-description: リアルタイム顧客プロファイルにより、カスタマージャーニーの各段階を通じて、チャネル間のパーソナライゼーションを大規模に実現します。 リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にするには、スキーマと対応するデータセットの両方を有効にします。
+description: リアルタイム顧客プロファイルにより、カスタマージャーニーの各段階を通じて、チャネル間のパーソナライズ機能を大幅に実現します。リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にするには、スキーマと対応するデータセットの両方を有効にします。
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 2702
 thumbnail: 27301.jpg
 exl-id: fc7aad9e-8eaf-4101-b41e-a0d9b127f8be
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 18%
+ht-degree: 27%
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 宛先へのプロファイルとセグメントのアクティブ化
-description: リアルタイム CDP で、宛先に対するオーディエンスセグメントをアクティブ化する方法について説明します。  このワークストリームは、宛先またはセグメントインターフェイスで開始します。
+description: Real-Time CDPで宛先に対してオーディエンスセグメントをアクティブ化する方法を説明します。  このワークストリームは、宛先またはセグメントインターフェイスで開始します。
 feature: Destinations
 role: User
 level: Beginner
@@ -8,7 +8,7 @@ doc-type: video
 thumbnail: 336046.jpg
 kt: 8483
 exl-id: 659e7739-8d24-4b75-a0d2-56d087d5eea9
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 29%
@@ -17,7 +17,7 @@ ht-degree: 29%
 
 # 宛先へのプロファイルとセグメントのアクティブ化
 
-リアルタイム CDP で、宛先に対するオーディエンスセグメントをアクティブ化する方法について説明します。  このワークストリームは、宛先またはセグメントインターフェイスで開始します。
+Real-Time CDPで宛先に対してオーディエンスセグメントをアクティブ化する方法を説明します。  このワークストリームは、宛先またはセグメントインターフェイスで開始します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?quality=12&learn=on)
 

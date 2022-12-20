@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -176,10 +176,10 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて学習する場合は、次のリンクをクリックしてください： [「データアーキテクトおよびデータエンジニア向けスタートガイド」チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). この他のチュートリアルの前のレッスンでは、Postmanコレクションによって生成されたものすべてを手動で作成し、優れたスタートをお楽しみください。
 
 このサンドボックスにリンクするサンプルの Web SDK 実装を作成する場合は、
-[Web SDK を使用したAdobe Experience Cloudの実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Web SDK チュートリアルの「初期設定」、「タグ設定」、「Experience Platformの設定」の各レッスンを設定したら、 `luma-crm.json` パスワードを使用したファイル `test` を使用して、プロファイルフラグメントを、このチュートリアルでアップロードしたデータと結合して表示できます。
+[Web SDK を使用したAdobe Experience Cloudの実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja). Web SDK チュートリアルの「初期設定」、「タグ設定」、「Experience Platformの設定」の各レッスンを設定したら、 `luma-crm.json` パスワードを使用したファイル `test` を使用して、プロファイルフラグメントを、このチュートリアルでアップロードしたデータと結合して表示できます。
 
 このサンドボックスにリンクする Mobile SDK 実装のサンプルを作成する場合は、
-[モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Web SDK チュートリアルの「初期設定」、「アプリケーションの実装」、「Experience Platform」のレッスンを設定したら、 `luma-crm.json` ファイルを参照して、このチュートリアルでアップロードしたデータとのプロファイルフラグメントの結合を確認します。
+[モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja). Web SDK チュートリアルの「初期設定」、「アプリケーションの実装」、「Experience Platform」のレッスンを設定したら、 `luma-crm.json` ファイルを参照して、このチュートリアルでアップロードしたデータとのプロファイルフラグメントの結合を確認します。
 
 ## サンドボックス環境をリセット {#reset-sandbox}
 
