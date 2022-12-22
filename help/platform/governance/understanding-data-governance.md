@@ -6,9 +6,9 @@ feature: Data Governance
 kt: 3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adaf6713c31efe66c463df65b4328d49dd717602
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '127'
 ht-degree: 8%
 
 ---
