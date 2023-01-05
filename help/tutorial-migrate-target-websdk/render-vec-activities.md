@@ -2,10 +2,10 @@
 title: VEC アクティビティのレンダリング | at.js 2.x から Web SDK への Target の移行
 description: Adobe Targetの Web SDK 実装を使用して Visual Experience Composer アクティビティを取得し、適用する方法について説明します。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 8%
+source-wordcount: '885'
+ht-degree: 5%
 
 ---
 
@@ -183,27 +183,6 @@ Platform Web SDK は、開発者に対して、コンテンツのリクエスト
 >[!TIP]
 >
 > タグ機能（以前の Launch）を使用して Web SDK を実装する場合、タグ埋め込みコードは、上記の「Platform Web SDK ベースコード」、「Platform Web SDK が非同期で読み込まれた」および「Platform Web SDK を設定」セクションに代わるものです。 「sendEvent」コマンドは、 [!UICONTROL イベントを送信] アクションタイプ [!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング] オプションが選択されています。
-
-## Visual Editing Helper ブラウザー拡張機能を使用したアクティビティの作成
-
-Google Chrome 用Adobe Experience Cloud Visual Editing ヘルパーブラウザー拡張機能を使用すると、Adobe Target Visual Experience Composer(VEC) 内で確実に Web サイトを読み込み、Web エクスペリエンスを迅速に作成および QA できます。
-
-Visual Editing Helper ブラウザー拡張機能は、at.js または Platform Web SDK を使用する Web サイトで機能します。
-
->[!IMPORTANT]
->
->新しい Visual Editing Helper 拡張機能は、以前の [Target VEC ヘルパーブラウザー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 古い VEC ヘルパー拡張機能がインストールされている場合は、Visual Editing Helper 拡張機能を使用する前に、この拡張機能を削除または無効にする必要があります。
-
-### Visual Editing Helper を取得してインストールする
-
-1. 次に移動： [Chrome Web Store のAdobe Experience Cloud Visual Editing Helper ブラウザー拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. 追加先をクリックします。 **クロム** > **拡張機能を追加**.
-1. Target で VEC を開きます。
-1. この拡張機能を使用するには、VEC または QA モードで、Chrome ブラウザーのツールバーにある「Visual Editing Helper」ブラウザー拡張機能アイコン（Visual Editing 拡張機能アイコン）をクリックします。
-
-オーサリングをサポートするために、Target VEC で Web サイトを開くと、Visual Editing Helper が自動的に有効になります。 この拡張機能には、条件付き設定はありません。この拡張機能では、SameSite Cookie の設定を含むすべての設定を自動的に処理します。
-
-詳しくは、該当するドキュメントを参照してください [Visual Editing Helper 拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) および [Visual Experience Composer のトラブルシューティング](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
 
 次に、リクエスト方法とリクエスト方法について説明します。 [フォームベースの Target アクティビティをレンダリング](render-form-based-activities.md).
 
