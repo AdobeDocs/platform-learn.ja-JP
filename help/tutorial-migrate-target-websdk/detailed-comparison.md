@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x と Web SDK の比較 | at.js 2.x から Web SDK への Target の移行
 description: 機能、関数、設定、データフローなど、at.js 2.x と Platform Web SDK の違いについて説明します。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2164'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ Platform Web SDK を初めて使用する場合は、心配する必要はあり
 | リダイレクトオファー | サポートあり | サポートあり. ただし、Platform Web SDK を使用したページから at.js を使用した（かつ反対の方向の）ページへのリダイレクトはサポートされていません。 |
 | オンデバイス判定 | サポートあり | 現在はサポートされていません |
 | Mbox のプリフェッチ | サポートあり | 部分的にサポートされています。 アクティビティのプリフェッチ動作が変更されたので、この機能を有効にするには、カスタマーサポートにお問い合わせください。 |
-| カスタムイベント | サポートあり | 部分的に次を介してサポート [フックの監視](https://github.com/adobe/alloy/wiki/Monitoring-Hooks) |
+| カスタムイベント | サポートあり | サポートなし. 詳しくは、 [公共ロードマップ](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) （現在のステータス）。 |
 | レスポンストークン | サポートあり | サポートあり. 詳しくは、 [専用のレスポンストークンに関するドキュメント](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) at.js と Platform Web SDK のコード例と違いについては、を参照してください。 |
 | データプロバイダー | サポートあり | サポートなし. カスタムコードを使用して、Platform Web SDK をトリガー化できます `sendEvent` コマンドを使用して、別のプロバイダーからデータを取得できます。 |
 
@@ -79,7 +79,7 @@ Platform Web SDK を初めて使用する場合は、心配する必要はあり
 | `trackEvent()` および `sendNotifications()` | 以下を使用： `sendEvent` 命令 [特定の `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 設定：<br><br>`decisioning.propositionDisplay` は、アクティビティのレンダリングを示します。<br><br>`decisioning.propositionInteract` は、マウスのクリックと同様に、ユーザーがアクティビティを操作することを示します。 |
 | `targetGlobalSettings()` | 直接同等のものはありません。 詳しくは、 [ターゲット設定の比較](detailed-comparison.md) を参照してください。 |
 | `targetPageParams()` および `targetPageParamsAll()` | に渡されたすべてのデータ `xdm` オプション `sendEvent` コマンドが Target の mbox パラメーターにマッピングされる。 mbox パラメーターはシリアル化されたドット表記を使用して命名されるので、Platform Web SDK への移行時には、新しい mbox パラメーター名を使用するために、既存のオーディエンスおよびアクティビティを更新する必要が生じる場合があります。 <br><br>の一部として渡されたデータ `data.__adobe.target` の `sendEvent` コマンドが [Target プロファイルとRecommendations固有のパラメーター](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js カスタムイベント | サポートなし. しかし、 [レスポンストークン](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) は、 `propositions` ～に応じて `sendEvent` 呼び出し。 |
+| at.js カスタムイベント | サポートなし. 詳しくは、 [公共ロードマップ](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) （現在のステータス）。 [レスポンストークン](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) は、 `propositions` ～に応じて `sendEvent` 呼び出し。 |
 
 ## at.js の設定と Platform Web SDK の同等の機能
 

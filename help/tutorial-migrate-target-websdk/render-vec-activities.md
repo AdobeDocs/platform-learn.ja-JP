@@ -2,9 +2,9 @@
 title: VEC アクティビティのレンダリング | at.js 2.x から Web SDK への Target の移行
 description: Adobe Targetの Web SDK 実装を使用して Visual Experience Composer アクティビティを取得し、適用する方法について説明します。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
+source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Target アクティビティは、Visual Experience Composer(VEC) またはフォームベースのコンポーザーを使用して設定されます。 Platform Web SDK は、at.js と同様に、VEC ベースのアクティビティを取得し、ページに適用できます。 移行のこの段階では、次の操作をおこないます。
 
-* 必要に応じて、Visual Editing Helper ブラウザ拡張機能をインストールします。
+* Visual Editing Helper ブラウザー拡張機能のインストール
 * の実行 `sendEvent` Platform Web SDK でを呼び出して、アクティビティをリクエストします。
 * を使用する at.js 実装の参照を更新します。 `getOffers()` ターゲットを実行するには `pageLoad` リクエスト。
 
