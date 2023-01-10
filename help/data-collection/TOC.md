@@ -30,7 +30,7 @@ ht-degree: 38%
 + Web SDK{#web-sdk}
    + [概要](web-sdk/overview.md)
    + [デモ](web-sdk/demo.md)
-   + [実装チュートリアル（タグ付き）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [実装チュートリアル（タグ付き）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target=&quot;_blank&quot;}
    + 同意{#consent}
       + [概要](web-sdk/consent/overview.md)
       + [Adobe標準を使用して同意の値を設定](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 38%
    + [概要](mobile-sdk/overview.md)
    + [モバイルプロパティの作成](mobile-sdk/create-mobile-properties.md)
    + [依存関係マネージャーの使用](mobile-sdk/use-dependency-managers.md)
-   + [モバイルアプリでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [モバイルアプリでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja){target=&quot;_blank&quot;}
 + サーバー API{#server-api}
    + [概要](server-api/overview.md)
    + [API の基本](server-api/introduction.md)
