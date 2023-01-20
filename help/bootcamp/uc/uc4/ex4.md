@@ -6,10 +6,10 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 3%
+source-wordcount: '755'
+ht-degree: 2%
 
 ---
 
@@ -48,9 +48,7 @@ Analysis Workspaceを初めて使用する場合は、このビデオをご覧�
 
 ![デモ](./images/premptyprojects.png)
 
-まず、画面の右上隅にある正しいデータビューを選択してください。 この例では、選択するデータビューはです。 `vangeluwe - Omnichannel Data View`.
-
-![デモ](./images/prdv.png)
+まず、画面の右上隅にある正しいデータビューを選択してください。 この例では、選択するデータビューはです。 `CJA Bootcamp - Omnichannel Data View`.
 
 次に、プロジェクトを保存し、名前を付けます。 次のコマンドを使用して保存できます。
 
@@ -113,7 +111,7 @@ Analysis Workspaceを初めて使用する場合は、このビデオをご覧�
 
 | タイトル | 説明 |
 | ----------------- |-------------| 
-| コンバージョン率 | コンバージョン率 |
+| yourLastName — コンバージョン率 | yourLastName — コンバージョン率 |
 
 画面には次のような内容が表示されます。
 

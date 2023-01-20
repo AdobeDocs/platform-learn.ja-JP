@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ CJA と Platform の間でおこなわれた様々な接続を、以下に示し
 
 ![デモ](./images/cja7.png)
 
-次に、のチェックボックスを検索して確認します。 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` および `Demo System - Event Dataset for Call Center (Global v1.1)`.
+次に、のチェックボックスを検索して確認します。 `Demo System - Profile Dataset for Loyalty (Global v1.1)` および `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 その後、これを取得します。 「**次へ**」をクリックします。
 
@@ -84,7 +83,7 @@ CJA と Platform の間でおこなわれた様々な接続を、以下に示し
 
 前述のように、データセットごとに異なるユーザー ID を設定できます。 これにより、複数のオリジンの異なるデータセットを CJA で統合できます。 NPS や調査データを取り込むと、状況や何が起きたのかを理解するのに非常に興味深く役立つと思います。
 
-ユーザー ID フィールドの値が対応している限り、ユーザー ID フィールドの名前は重要ではありません。 例えば、 `email` 1 つのデータセットと `emailAddress` を使用します。 If `delaigle@adobe.com` は、両方のデータセットのユーザー ID フィールドと同じ値です。CJA は、データをステッチできます。
+ユーザー ID フィールドの値が対応している限り、ユーザー ID フィールドの名前は重要ではありません。 例えば、ユーザー ID が `email` 1 つのデータセットと `emailAddress` 別の `dnb-bootcamp@adobe.com` は、両方のデータセットのユーザー ID フィールドと同じ値です。CJA は、データをステッチできます。
 
 現在、匿名行動を既知の行動に結び付けるなど、他にもいくつかの制限があります。 FAQ はこちらで確認してください。 [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja).
 
@@ -107,7 +106,7 @@ CJA と Platform の間でおこなわれた様々な接続を、以下に示し
 | データセット | 人物 ID |
 | ----------------- |-------------| 
 | デモシステム — Web サイトのイベントデータセット (Global v1.1) | 電子メール |
-| デモシステム — 音声アシスタントのイベントデータセット（グローバル v1.1） | 電子メール |
+| デモシステム — ロイヤルティ用のプロファイルデータセット (Global v1.1) | 電子メール |
 | デモシステム — コールセンターのイベントデータセット（グローバル v1.1） | 電子メール |
 
 また、すべてのデータセットで、次のオプションが有効になっていることを確認する必要があります。

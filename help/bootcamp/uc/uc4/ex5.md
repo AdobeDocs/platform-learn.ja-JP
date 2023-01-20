@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ ht-degree: 1%
 
 プロジェクトを開く `yourLastName - Omnichannel Analysis`.
 
-プロジェクトを開き、データビューで `yourLastName - Omnichannel Analysis` 選択した場合、最初のビジュアライゼーションの作成を開始する準備が整いました。
+プロジェクトを開き、データビューで `CJA Bootcamp - Omnichannel Data View` 選択した場合、最初のビジュアライゼーションの作成を開始する準備が整いました。
 
 ![デモ](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->次のような日付範囲を選択してください： **今週** または **今月**. 利用可能な最新のデータが 2022 年 9 月 20 日に取り込まれました。
+>利用可能な最新のデータが19/09/2022に取り込まれました。この日付を含む日付範囲を選択してください。
 
 ![デモ](./images/pro1.png)
 
@@ -77,9 +76,9 @@ ht-degree: 1%
 
 ![デモ](./images/pro7b.png)
 
-## 閲覧された上位 5 件の製品
+## 閲覧された上位 4 件の製品
 
-上位 5 件の製品は何を閲覧したか。
+上位 4 件の製品は何を閲覧したか。
 
 時々必ずプロジェクトを保存してください。
 
@@ -88,7 +87,7 @@ ht-degree: 1%
 | Windows | Ctrl + S |
 | Mac | Command + S |
 
-閲覧された上位 5 件の製品の検索を開始しましょう。 左側のメニューで、 **製品名** -Dimension。
+閲覧された上位 4 件の製品の検索を開始します。 左側のメニューで、 **製品名** -Dimension。
 
 ![デモ](./images/pro8.png)
 
@@ -102,7 +101,7 @@ ht-degree: 1%
 
 ![デモ](./images/pro13.png)
 
-次に、ユーザーエージェントを使用して分類を実行します。 を検索 **ユーザーエージェント** ブランド名の下にドラッグします。
+次に、ロイヤルティレベルを使用して分類を実行します。 を検索 **ロイヤルティレベル** ブランド名の下にドラッグします。
 
 ![デモ](./images/pro15.png)
 
@@ -114,7 +113,7 @@ ht-degree: 1%
 
 ![デモ](./images/pro18.png)
 
-次に、表で最初の 5 つを選択します。 **ユーザーエージェント**  行を **Google Pixel XL 32GB ブラックスマートフォン** > **シティ信号**. 5 行を選択する際、 **CTRL** ボタン（Windows の場合）または **コマンド** ボタン (Mac)
+次に、テーブルで、 **ロイヤルティレベル**  行を **Google Pixel XL 32GB ブラックスマートフォン** > **シティ信号**. 3 行を選択する際、 **CTRL** ボタン（Windows の場合）または **コマンド** ボタン (Mac)
 
 ![デモ](./images/pro20.png)
 
@@ -154,7 +153,7 @@ Analysis Workspaceを使用したビジュアライゼーションの詳細に�
 
 前の演習と同じ日付範囲を選択します。
 
-![デモ](./images/prodatef.png)
+![デモ](./images/pro1.png)
 
 これが見えます
 
@@ -216,7 +215,7 @@ Analysis Workspaceを使用したビジュアライゼーションの詳細に�
 
 前の演習と同じ日付範囲を選択します。
 
-![デモ](./images/pro0b.png)
+![デモ](./images/pro1.png)
 
 ディメンションを検索 **ページ名** 左側のコンポーネントの下：
 
@@ -297,7 +296,7 @@ Analysis Workspaceを使用したビジュアライゼーションの詳細に�
 
 前の演習と同じ日付範囲を選択します。
 
-![デモ](./images/pro24d.png)
+![デモ](./images/pro1.png)
 
 クリック **フリーフォームテーブル**.
 
