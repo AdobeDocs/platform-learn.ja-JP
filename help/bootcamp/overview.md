@@ -3,7 +3,7 @@ title: Experience Makers Bootcamp
 description: Experience Makers Bootcamp の参加者の出発点
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -40,9 +40,9 @@ ht-degree: 1%
 
 14.00～15.30:ユーザーフロー 1:「獲得」実践エクササイズ
 
-15.00～15.15:改行
+15.30～15.45:改行
 
-15.15～17.00:ユーザーフロー 2:「登録とオンボーディング」実践エクササイズ
+15.45～17.00:ユーザーフロー 2:「登録とオンボーディング」実践エクササイズ
 
 18.00～19.00:体験「カクテル作りのコンペティション」
 
