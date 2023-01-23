@@ -3,9 +3,9 @@ title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 エクスペリエンスを配信する方法と、追加のパラメーターを Target に渡す方法について説明します。
 
-[Adobe Target](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html) は、顧客のエクスペリエンスをカスタマイズおよびパーソナライズするために必要なすべてを提供するAdobe Experience Cloudアプリケーションです。web、モバイルサイト、アプリ、その他のデジタルチャネルでの売上高を最大化できます。
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja) は、顧客のエクスペリエンスをカスタマイズおよびパーソナライズするために必要なすべてを提供するAdobe Experience Cloudアプリケーションです。web、モバイルサイト、アプリ、その他のデジタルチャネルでの売上高を最大化できます。
 
 ## 学習内容
 
@@ -117,7 +117,7 @@ Platform Web SDK から Target アクティビティを配信する前に、Targ
 
 データストリームで Target を設定するには：
 
-1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} インターフェイス
+1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
 1. 以前に作成したを選択 `Luma Web SDK` datastream
 
@@ -161,7 +161,7 @@ Adobeでは、開発、ステージングおよび実稼動の各データスト
 
 ### Target サードパーティ ID の名前空間
 
-このオプションの設定では、Target サードパーティ ID に使用する ID シンボルを指定できます。 Target では、1 つの ID シンボルまたは名前空間でのプロファイルの同期のみサポートしています。 詳しくは、 [mbox3rdPartyId のリアルタイムプロファイル同期](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) 」の節を参照してください。
+このオプションの設定では、Target サードパーティ ID に使用する ID シンボルを指定できます。 Target では、1 つの ID シンボルまたは名前空間でのプロファイルの同期のみサポートしています。 詳しくは、 [mbox3rdPartyId のリアルタイムプロファイル同期](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ja) 」の節を参照してください。
 
 ID 記号は、の ID リストにあります。 **データ収集** > **[!UICONTROL 顧客]** > **[!UICONTROL ID]**.
 
@@ -184,7 +184,7 @@ Luma サイトを使用するこのチュートリアルの目的では、ID シ
 
 Target がデータストリームで有効になっている場合、Target からの視覚的なパーソナライゼーションの決定は、Platform Web SDK によって配信されます。 しかし、 _これらは、自動的にはレンダリングされません_. 自動レンダリングを有効にするには、グローバルページ型ルールを変更する必要があります。
 
-1. 内 [データ収集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} インターフェイスで、このチュートリアルで使用するタグプロパティを開きます。
+1. 内 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイスで、このチュートリアルで使用するタグプロパティを開きます。
 1. を開きます。 `all pages - library load - AA & AT` ルール
 1. を選択します。 `Adobe Experience Platform Web SDK - Send event` アクション
 1. 有効にする **[!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング]** チェックボックスを使用
@@ -334,7 +334,7 @@ Target がデータストリームで有効になっている場合、Target か
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
