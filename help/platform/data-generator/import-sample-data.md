@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 4%
+source-wordcount: '1650'
+ht-degree: 7%
 
 ---
 
@@ -50,6 +50,7 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 
 1. ダウンロードフォルダーから、 `platform-utils-main.zip` ファイルをコンピューター上の目的の場所に展開し、解凍します。
 1. 内 `luma-data` フォルダー、すべての `json` ファイルを編集し、 `_techmarketingdemos` 前にアンダースコアが付いた独自のテナント id が付きます。
+1. 開く `luma-offline-purchases.json` テキストエディターで、過去 1 か月にイベントが発生するようにすべてのタイムスタンプを更新する ( 例えば、「 `"timestamp":"2022-06` とを置き換えます )
 1. 解凍されたフォルダーの場所をメモしておきます。後で `FILE_PATH` Postman環境変数：
 
    >[!NOTE]
@@ -183,6 +184,6 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 
 ## サンドボックス環境をリセット {#reset-sandbox}
 
-実稼動以外のサンドボックスをリセットすると、サンドボックスの名前と関連する権限を維持しながら、そのサンドボックスに関連付けられているすべてのリソース（スキーマ、データセットなど）が削除されます。 この「クリーンな」サンドボックスは、引き続き、アクセス権を持つユーザーと同じ名前で使用できます。
+実稼動以外のサンドボックスをリセットすると、サンドボックスの名前と関連付けられた権限は保持されたまま、そのサンドボックスに関連付けられているすべてのスキーマ（リソース、データセットなど）が削除されます。この「クリーンな」サンドボックスは、引き続き、アクセス権を持つユーザーと同じ名前で使用できます。
 
 手順に従います。 [ここ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) ：サンドボックス環境をリセットする場合。

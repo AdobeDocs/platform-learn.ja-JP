@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2553'
 ht-degree: 1%
 
 ---
@@ -289,6 +289,7 @@ Webhook に対する 3 つのヒットが表示されます。
 
 1. 既にダウンロードおよび解凍されているはずです。 [luma-data.zip](assets/luma-data.zip) を `Luma Tutorial Assets` フォルダー。
 1. 開く `luma-offline-purchases.json` テキストエディターで、 `_techmarketingdemos` スキーマに表示される、独自のアンダースコアテナント id を使用します。
+1. 過去 1 か月のイベントが発生するように、すべてのタイムスタンプを更新します ( 例： `"timestamp":"2022-06` とを置き換えます )
 1. ご希望のクラウドストレージプロバイダーを選択し、 [!UICONTROL ソース] カタログ
 1. アップロード `luma-offline-purchases.json` を、お使いのクラウドストレージプロバイダー内の場所に追加します。
 
