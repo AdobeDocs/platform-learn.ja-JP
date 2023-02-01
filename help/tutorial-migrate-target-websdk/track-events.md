@@ -1,9 +1,9 @@
 ---
 title: イベントの追跡 | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用してAdobe Targetコンバージョンイベントを追跡する方法について説明します。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,10 @@ Target のコンバージョンイベントは、at.js と同様に、Platform W
 * 設定が不要な、自動的に追跡されるイベント
 * ベストプラクティスの Platform Web SDK 実装に合わせて調整する必要がある購入コンバージョンイベント
 * コードの更新が必要な非購入コンバージョンイベント
+
+>[!WARNING]
+>
+> 2022 年 10 月 2 日以降に開始された Platform Web SDK 実装では、 [プリフェッチ回避策](prefetch-workaround.md) を有効にして、このページで説明している一部のイベントを正しく追跡するために使用します。
 
 ## 目標トラッキングの比較
 

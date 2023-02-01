@@ -1,16 +1,20 @@
 ---
 title: 送信パラメーター | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用して、mbox、プロファイル、エンティティの各パラメーターをAdobe Targetに送信する方法について説明します。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 0%
+source-wordcount: '1294'
+ht-degree: 1%
 
 ---
 
 # Platform Web SDK を使用して Target にパラメーターを送信する
 
 Target の実装は、サイトのアーキテクチャ、ビジネス要件、使用する機能によって Web サイト間で異なります。 ほとんどの Target 実装には、コンテキスト情報、オーディエンスおよびコンテンツレコメンデーション用の様々なパラメーターを渡す機能が含まれています。
+
+>[!WARNING]
+>
+> 2022 年 10 月 2 日以降に開始された Platform Web SDK 実装では、 [プリフェッチ回避策](prefetch-workaround.md) このページで説明したパラメーターを正常に渡すために。
 
 シンプルな製品の詳細ページと注文の確認ページを使用して、Target にパラメーターを渡す際のライブラリの違いを示します。
 
@@ -57,17 +61,17 @@ at.js を使用した次のページの例を考えてみましょう。
 </html>
 ```
 
-<!--
 
-Order Confirmation:
+
+注文確認:
 
 ```HTML
 <!doctype html>
 <html>
 <head>
   <title>Order Confirmation</title>-->
-<!--Target parameters -->
-<!--  <script>
+  <!--Target parameters -->
+  <script>
     targetPageParams = function() {
       return {
         // Property token
@@ -80,9 +84,9 @@ Order Confirmation:
         "mbox3rdPartyId": "TT8675309",
       };
     };
-  </script>-->
-<!--Target at.js library loaded asynchonously-->
-<!--  <script src="/libraries/at.js" async></script>
+  </script>
+  <!--Target at.js library loaded asynchonously-->
+  <script src="/libraries/at.js" async></script>
 </head>
 <body>
   <h1 id="title">Order Confirmation</h1>
@@ -90,7 +94,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 
 ## パラメーターマッピングの概要
@@ -115,7 +118,7 @@ Platform Web SDK で渡されるパラメーター `sendEvent` ペイロード�
 
 | at.js パラメーターの例 | Platform Web SDK オプション | メモ |
 | --- | --- | --- |
-| `at_property` | N/A | プロパティトークンは、 [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) また、 `sendEvent` 呼び出し。 |
+| `at_property` | 該当なし | プロパティトークンは、 [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) また、 `sendEvent` 呼び出し。 |
 | `siteSection` | `xdm.web.webPageDetails.siteSection` | すべての Target mbox パラメーターは、 `xdm` オブジェクトを作成し、XDM ExperienceEvent クラスを使用してスキーマに準拠します。 mbox パラメーターは、 `data` オブジェクト。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | すべての Target プロファイルパラメーターは、 `data` オブジェクトと `profile.` を適切にマッピングする必要があります。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Target のカテゴリ親和性機能で使用される、の一部として渡す必要がある予約済みパラメーター `data` オブジェクト。 |
@@ -125,15 +128,12 @@ Platform Web SDK で渡されるパラメーター `sendEvent` ペイロード�
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースの Recommendations アルゴリズムに使用されます。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 特定のエンティティ ID が Recommendations デザインで返されるのを防ぐために使用します。 |
 | `mbox3rdPartyId` | identityMap に設定します。 詳しくは、 [顧客 ID とのプロファイルの同期](#synching-profiles-with-a-customer-id) | デバイスと顧客属性をまたいで Target プロファイルを同期するために使用されます。 顧客 ID に使用する名前空間は、 [データストリームのターゲット設定](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `orderId` | `xdm.commerce.order.purchaseID` | Target コンバージョントラッキングの一意の注文を識別するために使用します。 |
+| `orderTotal` | `xdm.commerce.order.priceTotal` | Target のコンバージョンと最適化目標の注文合計の追跡に使用します。 |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>または<br> `xdm.productListItems[0-n].SKU` | Target のコンバージョントラッキングおよび Recommendations アルゴリズムで使用されます。 詳しくは、 [エンティティパラメーター](#entity-parameters) 詳しくは、以下の節を参照してください。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 次に使用 [カスタムスコアリング](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) アクティビティ目標。 |
 
 {style=&quot;table-layout:auto&quot;}
-
-<!--
-| `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | -->
-
 
 ## カスタムパラメーター
 
@@ -245,12 +245,12 @@ alloy("sendEvent", {
 >
 >この `commerce` フィールドグループが使用され、 `productListItems` 配列が XDM ペイロードに含まれ、最初の `SKU` この配列の値が次にマッピングされている： `entity.id` 製品表示を増分する目的で
 
-<!-- 
-## Purchase parameters
 
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Web SDK implementation, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+## 購入パラメーター
 
-at.js example using `targetPageParams()`:
+購入パラメーターは、注文が成功した後、注文確認ページで渡され、Target のコンバージョンと最適化の目標に使用されます。 Platform Web SDK 実装では、これらのパラメーターおよびは、 `commerce` フィールドグループを使用します。
+
+at.js の使用例 `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -262,9 +262,9 @@ targetPageParams = function() {
 };
 ```
 
-Purchase information is passed to Target when the `commerce` field group has `puchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+購入情報は、 `commerce` フィールドグループが次の値を持つ `puchases.value` に設定 `1`. 注文 ID と注文の合計は、 `order` オブジェクト。 この `productListItems` 配列が存在する場合、 `SKU` 値は次の場合に使用されます。 `productPurchasedId`.
 
-Platform Web SDK example using `sendEvent` command:
+Platform Web SDK の使用例 `sendEvent` コマンド：
 
 ```JavaScript
 alloy("sendEvent", {
@@ -289,9 +289,8 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->The `productPurchasedId` value can also be passed as a comma-separated list of entity IDs under the `data` object.
+>この `productPurchasedId` の値は、 `data` オブジェクト。
 
--->
 
 ## 顧客 ID とのプロファイルの同期
 
@@ -413,8 +412,8 @@ alloy("sendEvent", {
 </html>
 ```
 
-<!--
-Order Confirmation:
+
+注文確認:
 
 ```HTML
 <!doctype html>
@@ -422,9 +421,9 @@ Order Confirmation:
 <head>
   <title>Order Confirmation</title>
 
--->
-<!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
-<!--
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+
   <script>
     !function(e,a,n,t){var i=e.head;if(i){
     if (a) return;
@@ -432,21 +431,20 @@ Order Confirmation:
     o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
--->
-<!--Platform Web SDK base code-->
-<!--
+
+  <!--Platform Web SDK base code-->
+
   <script>
     !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
     []).push(o),n[o]=function(){var u=arguments;return new Promise(
     function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
     (window,["alloy"]);
   </script>
--->
-<!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
-<!--  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
--->
-<!--Configure Platform Web SDK and send event-->
-<!--  <script>
+  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+
+  <!--Configure Platform Web SDK and send event-->
+  <script>
     alloy("configure", {
       "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
       "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
@@ -483,7 +481,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 次に、 [Target コンバージョンイベントの追跡](track-events.md) Platform Web SDK を使用して、
 

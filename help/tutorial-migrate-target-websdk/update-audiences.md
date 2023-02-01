@@ -1,9 +1,9 @@
 ---
 title: オーディエンスとプロファイルスクリプトを更新 | at.js 2.x から Web SDK への Target の移行
 description: Adobe Target Web SDK との互換性を保つために、Web オーディエンスとプロファイルスクリプトを更新するExperience Platformについて説明します。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ Target を Platform Web SDK に移行するためのテクニカルアップデ�
 * mbox パラメーターを使用するオーディエンスの更新
 * mbox パラメーターを使用するプロファイルスクリプトの更新
 * すべてのオファーおよびアクティビティを更新し、mbox パラメータートークンの置き換えを使用します ( 例： `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> 2022 年 10 月 2 日以降に開始された Platform Web SDK 実装では、 [プリフェッチ回避策](prefetch-workaround.md) このページで説明した機能の一部を正しく使用するために。
 
 ## オーディエンスを調整
 
