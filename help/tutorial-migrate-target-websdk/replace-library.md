@@ -1,9 +1,9 @@
 ---
 title: ライブラリの置き換え | at.js 2.x から Web SDK への Target の移行
 description: Adobe Target実装を at.js 2.x からAdobe Experience Platform Web SDK に移行する方法について説明します。 トピックには、ライブラリの概要、実装の違い、その他の重要な注意事項が含まれます。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 4%
 
 ---
@@ -207,6 +207,12 @@ Platform Web SDK でちらつきを制御する方法について詳しくは、
 
 Platform Web SDK は、ページが読み込まれるたびに設定する必要があります。 この `configure` コマンドは、常に、と呼び出す最初の SDK コマンドである必要があります。 次の例では、サイト全体が 1 つのデプロイメントで Platform Web SDK にアップグレードされると想定しています。
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+この `edgeConfigId` が [!UICONTROL データストリーム ID]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB タグ]
+
+タグ実装では、多くのフィールドが自動入力されるか、ドロップダウンメニューから選択できます。 異なるプラットフォームに注意してください [!UICONTROL サンドボックス] および [!UICONTROL datastreams] は、各環境に対して選択できます。 データストリームは、公開プロセスでのタグライブラリの状態に基づいて変化します。
+
+![Web SDK タグ拡張機能の設定](assets/tags-config.png)
+>[!ENDTABS]
+
 ページごとに at.js から Platform Web SDK に移行する予定がある場合は、次の設定オプションが必要です。
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -224,6 +242,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB タグ]
+
+![Web SDK タグ拡張機能の移行オプションの設定](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 Target に関する注目すべき設定オプションを以下に示します。
 
