@@ -11,9 +11,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 hide: true
 kt: 11159
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '87'
 ht-degree: 5%
 
 ---
@@ -48,5 +48,3 @@ ht-degree: 5%
 + [の実装を検証する](validate.md)
 
 + [Debug Target](debugging.md)
-
-+ [プリフェッチの回避策](prefetch-workaround.md)

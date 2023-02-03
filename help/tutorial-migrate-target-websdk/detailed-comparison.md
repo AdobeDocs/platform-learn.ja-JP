@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x と Web SDK の比較 | at.js 2.x から Web SDK への Target の移行
 description: 機能、関数、設定、データフローなど、at.js 2.x と Platform Web SDK の違いについて説明します。
-source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -43,8 +43,8 @@ Platform Web SDK を初めて使用する場合は、心配する必要はあり
 | リモートオファー | サポートあり | サポートあり |
 | リダイレクトオファー | サポートあり | サポートあり. ただし、Platform Web SDK を使用したページから at.js を使用した（かつ反対の方向の）ページへのリダイレクトはサポートされていません。 |
 | オンデバイス判定 | サポートあり | 現在はサポートされていません |
-| Mbox のプリフェッチ | サポートあり | 部分的にサポートされています。 アクティビティのプリフェッチ動作が変更されたので、この機能を有効にするには、カスタマーサポートにお問い合わせください。 |
-| カスタムイベント | サポートあり | サポートなし. 詳しくは、 [公共ロードマップ](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) （現在のステータス）。 |
+| Mbox のプリフェッチ | サポートあり | 2022 年 10 月 1 日以降に開始されるすべての新しい移行で、デフォルトで有効になっています |
+| カスタムイベント | サポートあり | サポートなし. 詳しくは、 [公共ロードマップ](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) （現在のステータス）。 |
 | レスポンストークン | サポートあり | サポートあり. 詳しくは、 [専用のレスポンストークンに関するドキュメント](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) at.js と Platform Web SDK のコード例と違いについては、を参照してください。 |
 | データプロバイダー | サポートあり | サポートなし. カスタムコードを使用して、Platform Web SDK をトリガー化できます `sendEvent` コマンドを使用して、別のプロバイダーからデータを取得できます。 |
 
@@ -79,7 +79,7 @@ Platform Web SDK を初めて使用する場合は、心配する必要はあり
 | `trackEvent()` および `sendNotifications()` | 以下を使用： `sendEvent` 命令 [特定の `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 設定：<br><br>`decisioning.propositionDisplay` は、アクティビティのレンダリングを示します。<br><br>`decisioning.propositionInteract` は、マウスのクリックと同様に、ユーザーがアクティビティを操作することを示します。 |
 | `targetGlobalSettings()` | 直接同等のものはありません。 詳しくは、 [ターゲット設定の比較](detailed-comparison.md) を参照してください。 |
 | `targetPageParams()` および `targetPageParamsAll()` | に渡されたすべてのデータ `xdm` オプション `sendEvent` コマンドが Target の mbox パラメーターにマッピングされる。 mbox パラメーターはシリアル化されたドット表記を使用して命名されるので、Platform Web SDK への移行時には、新しい mbox パラメーター名を使用するために、既存のオーディエンスおよびアクティビティを更新する必要が生じる場合があります。 <br><br>の一部として渡されたデータ `data.__adobe.target` の `sendEvent` コマンドが [Target プロファイルとRecommendations固有のパラメーター](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js カスタムイベント | サポートなし. 詳しくは、 [公共ロードマップ](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) （現在のステータス）。 [レスポンストークン](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) は、 `propositions` ～に応じて `sendEvent` 呼び出し。 |
+| at.js カスタムイベント | サポートなし. 詳しくは、 [公共ロードマップ](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) （現在のステータス）。 [レスポンストークン](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) は、 `propositions` ～に応じて `sendEvent` 呼び出し。 |
 
 ## at.js の設定と Platform Web SDK の同等の機能
 
@@ -90,7 +90,7 @@ at.js ライブラリは、Target UI の様々な設定を使用して設定お�
 | `bodyHiddenStyle` | を [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) と `configure` command |
 | `bodyHidingEnabled` | 次の場合、 `prehidingStyle` が `configure` 」コマンドを入力すると、この機能が有効になります。 スタイルが定義されていない場合、Platform Web SDK はコンテンツを非表示にしようとしません。 |
 | `clientCode` | 自動設定 |
-| `cookieDomain` | 適用なし |
+| `cookieDomain` | 該当なし |
 | `crossDomain` | を `thirdPartyCookiesEnabled` 選択肢 `true` と `configure` コマンドを使用して、クロスドメインの使用例に対してファーストパーティ Cookie とサードパーティ Cookie を有効にする |
 | `cspScriptNonce` および `cspStyleNonce` | 詳しくは、 [CSP の設定](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html) |
 | `dataProviders` | サポートなし |
@@ -101,15 +101,15 @@ at.js ライブラリは、Target UI の様々な設定を使用して設定お�
 | `globalMboxAutoCreate` | を `renderDecisions` 選択肢 `true` と `sendEvent` コマンドを使用して VEC ベースのエクスペリエンスを自動的に取得し、レンダリングすることができます。<br><br>リクエスト a `decisionScope` 対象 `__view__` VEC ベースのエクスペリエンスを手動でレンダリングする場合。 |
 | `imsOrgId` | を `orgId` と `configure` command |
 | `optinEnabled` および `optoutEnabled` | Platform Web SDK を参照してください。 [プライバシーオプション](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html). この `defaultConsent` オプションは、Platform Web SDK がサポートするすべてのAdobeソリューションに適用されます。 |
-| `overrideMboxEdgeServer` および `overrideMboxEdgeServerTimeout` | 適用なし. すべての Platform Web SDK リクエストで、Adobe Experience Platform Edge ネットワークが使用されます。 |
+| `overrideMboxEdgeServer` および `overrideMboxEdgeServerTimeout` | 該当なし. すべての Platform Web SDK リクエストで、Adobe Experience Platform Edge ネットワークが使用されます。 |
 | `pageLoadEnabled` | を `renderDecisions` 選択肢 `true` と `sendEvent` command |
 | `secureOnly` | サポートなし. Platform Web SDK は、 `secure` および `sameSite="none"` 属性。 |
 | `selectorsPollingTimeout` | サポートなし. Platform Web SDK では、5 秒の値を使用します。 必要に応じて、カスタムコードを使用してコンテンツを手動でレンダリングできます。 |
 | `serverDomain` | 以下を使用： `edgeDomain` 設定 `configure` command |
-| `telemetryEnabled` | 適用なし |
+| `telemetryEnabled` | 該当なし |
 | `timeout` | サポートなし. ちらつきを緩和するコードに適切なタイムアウトが含まれていることを確認することをお勧めします。 |
 | `viewsEnabled` | サポートなし. Target ビューのコンテンツは、最初の `sendEvent()` を呼び出す `renderDecisions` が `true` または `__view__` decisionScope がリクエストに含まれます。 |
-| `visitorApiTimeout` | 適用なし |
+| `visitorApiTimeout` | 該当なし |
 
 
 ## システム図の比較

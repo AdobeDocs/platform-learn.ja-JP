@@ -1,9 +1,9 @@
 ---
 title: 送信パラメーター | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用して、mbox、プロファイル、エンティティの各パラメーターをAdobe Targetに送信する方法について説明します。
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1269'
 ht-degree: 1%
 
 ---
@@ -11,10 +11,6 @@ ht-degree: 1%
 # Platform Web SDK を使用して Target にパラメーターを送信する
 
 Target の実装は、サイトのアーキテクチャ、ビジネス要件、使用する機能によって Web サイト間で異なります。 ほとんどの Target 実装には、コンテキスト情報、オーディエンスおよびコンテンツレコメンデーション用の様々なパラメーターを渡す機能が含まれています。
-
->[!WARNING]
->
-> 2022 年 10 月 2 日以降に開始された Platform Web SDK 実装では、 [プリフェッチ回避策](prefetch-workaround.md) このページで説明したパラメーターを正常に渡すために。
 
 シンプルな製品の詳細ページと注文の確認ページを使用して、Target にパラメーターを渡す際のライブラリの違いを示します。
 
