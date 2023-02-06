@@ -5,57 +5,57 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 4%
+source-wordcount: '293'
+ht-degree: 2%
 
 ---
 
-# 1.5 措置をとる：セグメントをFacebookに送信
+# 1.5 Ação:enviu segmento para o Facebook
 
-に移動します。 [Adobe Experience Platform](https://experience.adobe.com/platform). ログイン後、Adobe Experience Platformのホームページに移動します。
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer ログイン， vocêirá acessar a página inicial da Adobe Experience Platform.
 
 ![データ取得](./images/home.png)
 
-続行する前に、 **サンドボックス**. 選択するサンドボックスの名前はです ``Bootcamp``. これを行うには、 **[!UICONTROL 実稼動版]** 画面の上の青い線で表示されます。 適切な [!UICONTROL サンドボックス]画面が変更され、専用の [!UICONTROL サンドボックス].
+アンテス・デ・コニュナール、ヴォーチェ・プレシャ・セレクショナー・アム **サンドボックス**. 誰かがサンドボックスを選択し、Bootcamp を行うことはありません。 É porivel fazer isso clicando no texto **[!UICONTROL 実稼動版]** ナ・リンハ・アズール・ナ・パルテ・スーペリア・ダ・テラ Depois de selecionar o sandbox apporiado, você verá a tela mudando e agora vocestá em seu [!UICONTROL サンドボックス] 決め手
 
 ![データ取得](./images/sb1.png)
 
-左側のメニューで、に移動します。 **宛先**&#x200B;を選択し、 **カタログ**. 次に、 **宛先カタログ**. In **宛先**&#x200B;をクリックし、 **セグメントのアクティブ化** の **Facebook Custom Audience** カード。
+メニュー aesquerda, vá para なし **宛先** e, em seguida, vá para **カタログ**. ボーヴェラ o **宛先カタログ**. Em **宛先**, clique **セグメントのアクティブ化** no cartão **Facebook Custom Audience**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-宛先を選択 **bootcamp-facebook** をクリックし、 **次へ**.
+次を選択： **bootcamp-facebook** e クライアント **次へ**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-使用可能なセグメントのリストで、前の演習で作成したセグメントを選択します。 「**次へ**」をクリックします。
+Na lista de segmentos disponíveis, selecione o segmento que voccriou no exercício antero. クリック **次へ**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-の **マッピング** ページで、 **変換を適用** チェックボックスが有効になっている。 「**次へ**」をクリックします。
+ナパジナ **マッピング**, caixa de seleção を確認する **変換を適用** エスタ・マルカダ。 クリック **次へ**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-の **セグメントスケジュール** ページで、 **オーディエンスの起源** を設定し、 **顧客から直接**. 「**次へ**」をクリックします。
+ナパジナ **セグメントスケジュール**、A を選択 **オーディエンスの起源** エディフェコモ **顧客から直接**. クリック **次へ**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-最後に、 **レビュー** ページ、クリック **完了**.
+パーフィン、ナパジナ **レビュー**, clique **完了**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-これで、セグメントがFacebook Custom Audiences にリンクされました。 顧客がこのセグメントを認定されるたびに、シグナルがFacebookサーバーサイドに送信され、Facebook側のカスタムオーディエンスにその顧客を含めます。
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre qualificar para esse segmento, um sinal será enviado lado do servidor (server-side) do Facebook para incluire esse cliente no Público Personalizado no lado do Facebook.
 
-facebookでは、「カスタムオーディエンス」の下にAdobe Experience Platformからのセグメントが表示されます。
+No Facebook, vocéencontrara seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-これで、カスタムオーディエンスがFacebookに表示されます。
+アゴラヴォード・バー・セウ・プブリコ・パーソナライズアド・アパレサー・ノ・Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[ユーザーフローに戻る 1](./uc1.md)
+[レトルナルパラフルクソデウサリオ 1](./uc1.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

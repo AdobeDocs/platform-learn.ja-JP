@@ -5,181 +5,183 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 6%
+source-wordcount: '984'
+ht-degree: 3%
 
 ---
 
-# 2.3 ジャーニーと電子メールメッセージの作成
+# 2.3 クリスアヨルナダ電子メール
 
-この演習では、デモ Web サイトでアカウントを作成したときにトリガーする必要があるジャーニーを設定します。
+Neste expercício, vocêirá configurar a jornada quanda quando alguém criar uma conta no site de demonstração.
 
-に移動してAdobe Journey Optimizerにログインします。 [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
+Faça ログインのAdobe Journey Optimizerのアクセスサンド a [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-リダイレクト先： **ホーム**  Journey Optimizerで表示 まず、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは、と呼ばれます。 `Bootcamp`. サンドボックス間を切り替えるには、 **Prod** リストからサンドボックスを選択します。 この例では、サンドボックスの名前はです。 **Bootcamp**. その後、 **ホーム** サンドボックスの表示 `Bootcamp`.
+Vocêserá redirectionado para a visualização da **ホーム**  Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. パラオルタナルドゥウムサンドボックスパラアウトロ、クリック EM **Prod** sandbox na lista からを選択します。 Neste エグザンプロ， o nome do sandboxé **Bootcamp**. Voêestará na visualização da **ホーム** サンドボックスを設定 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1 ジャーニーの作成
+## 2.3.1 クリー・ア・スア・ヨルナダ
 
-左のメニューで、「**ジャーニー**」をクリックします。次に、「 **作成ジャーニー** をクリックして、新しいジャーニーを作成します。
+メニューがなく、クリック **ジャーニー**. Em seguida、clique em **作成ジャーニー** パラクリアルマ・ノヴァ・ヨルナダ。
 
 ![ACOP](./images/createjourney.png)
 
-すると、空のジャーニー画面が表示されます。
+ヴォクレヴェラウマテラデヨルナバジア。
 
 ![ACOP](./images/journeyempty.png)
 
-前の練習では、新しい **イベント**. このように名前を付けました `yourLastNameAccountCreationEvent` および置き換え済み `yourLastName` を姓に置き換えます。 これは、イベントの作成の結果です。
+エクスペリシオ前部、ボークリウムノボ **イベント**. ベント語 `yourLastNameAccountCreationEvent` e 置換 `yourLastName` ペロ・セウ・ソブレノーム。 Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-次に、このイベントをこのイベントの開始として使用する必要があります。ジャーニー これをおこなうには、画面の左側に移動して、イベントのリストでイベントを検索します。
+アゴラのボーカは、思い切ってエステエベントをコモ・イニシオ・デスタ・ヨルナダ。 Vocêpode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-イベントを選択し、イベントキャンバスにドラッグ&amp;ドロップします。ジャーニー ジャーニーは次のようになります。
+セレクワンセウイベント、アレスト e solte o evento na tela de Jornada. Sua Jornada agora deve ser semelhante ao seginte:
 
 ![ACOP](./images/journeyevent.png)
 
-ジャーニーの 2 番目の手順として、短いを追加する必要があります **待機** 手順 画面の左側に移動して、 **Orchestration** を参照してください。 プロファイル属性を使用しているので、それらがリアルタイム顧客プロファイルに入力されていることを確認する必要があります。
+コモセグンダ・エタパ・ダ・ヨルナダ、ボーデヴ・アディシオナール・ウマ・エタパ・カルタ・デ・デ **待機**. Vá para o lado esquerdo da tela até a seção **Orchestration** para encontrar isso. Vocêusarara attributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real.
 
 ![ACOP](./images/journeywait.png)
 
-ジャーニーは次のようになりました。 画面の右側で、待機時間を設定する必要があります。 1 分に設定します。 これにより、イベントが発生した後にプロファイル属性が使用可能になるまでの時間が十分に確保されます。
+スアヨルナダアゴラは、セメルハンテアオセギンテに敬意を表します。 ラド・ディレイト・ダ・テラ・テレ・プレシサの設定は、テンポ・デ・エスペラの設定はありません。 コモ 1 ミヌトを定義。 イソダラバスタンテテンポパラオスアトリブトスドペルフィルエステジャム・ディスポニヴェス・アポスオ・ディスパロ・ド・イベント。
 
 ![ACOP](./images/journeywait1.png)
 
-クリック **Ok** 変更を保存します。
+クリック **Ok** para salvar suas alteraçoes
 
-ジャーニーの 3 番目の手順として、 **電子メール** アクション。 画面の左側に移動して、 **アクション**&#x200B;を選択し、 **電子メール** アクションを実行し、ジャーニーの 2 番目のノードにドラッグ&amp;ドロップします。 これが見えます
+コモ・テルセイラ・エタパ・ダ・ヨルナダ、ボーディヴ・アディシオナルマ・アサオ **電子メール**. Vá para o lado esquerdo da tela para **アクション**, selection ação **電子メール** arraste e ソルト ação no segundo nó da sua jornada アゴラ・オ・セギンテ・セラ・エキシビド。
 
 ![ACOP](./images/journeyactions.png)
 
 を **カテゴリ** から **マーケティング** をクリックし、電子メールを送信できる電子メールサーフェスを選択します。 この場合、選択する E メールサーフェスは次のようになります。 **電子メール**. 次のチェックボックスをオンにします。 **メールのクリック数** および **メール開封数** 両方とも有効です。
 
+定義 **カテゴリ** コモ **マーケティング** e selecion uma superficie de e mail que pemita o envio de e-mail. Nesse caso、スーパーファイシー E メールユーザーセレクショナダ E メール。 Certifique-se de que as caixas de seleção **メールのクリック数** e **メール開封数** エステジャム・マルカダス。
+
 ![ACOP](./images/journeyactions1.png)
 
-次の手順では、メッセージを作成します。 それには、「 **コンテンツを編集**.
+プロキシモ・エタパ・クリアル・スア・メンセージェム。 クリック・エム、パラ・イッソ **コンテンツを編集**.
 
 ![ACOP](./images/journeyactions2.png)
 
-## 2.3.2 メッセージの作成
+## 2.3.2 Crie a sua mensagem
 
-メッセージを作成するには、 **コンテンツを編集**.
+パラクリアスアメンセージェム、クリケ **コンテンツを編集**.
 
 ![ACOP](./images/journeyactions2.png)
 
-これが見えます
+O seguinte será exibido.
 
 ![ACOP](./images/journeyactions3.png)
 
-次をクリック： **件名** テキストフィールド。
+Clique no campo de texto **件名**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-テキスト領域で、 **こんにちは**
+コメス・ナ・アレア・デ・テクスト **オラ**
 
 ![Journey Optimizer](./images/msg6.png)
 
-件名はまだ行われていません。 次に、フィールドのパーソナライゼーショントークンを取り込む必要があります **名** それは以下の下に保存されています `profile.person.name.firstName`. 左側のメニューで、下にスクロールして、 **人物** 要素を選択し、矢印をクリックすると、次のレベルに移動します。
+リンハ・デ・アスント・アインダ・アンオ・エスタ・プロンタ。 Em seguida, você precisa trazer o token de personalização para o **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニュー無し，役割 para baixo para encontrar o elemento **人物** e clique na seta para ir um nível mais profundo
 
 ![Journey Optimizer](./images/msg7.png)
 
-次に、 **氏名** 要素を選択し、矢印をクリックすると、次のレベルに移動します。
+エレメントアゴラエンコントロ **氏名** e clique na seta para ir um nível mais profundo
 
 ![Journey Optimizer](./images/msg8.png)
 
-最後に、 **名** フィールドに入力し、 **+** その横にサインが表示されます。 パーソナライゼーショントークンがテキストフィールドに表示されます。
+Por フィム、ローカライズ o campo **名** e clique no símbolo **+**  ラドデレ Vocêverá o token de personalização apacer no campo de texto。
 
 ![Journey Optimizer](./images/msg9.png)
 
-次に、テキストを追加します。 **新規登録ありがとうございました。**。「**保存**」をクリックします。
+エム・セギダ、テキストの愛好家 **アグラデセモスはサアインヴァサン！** Salvar をクリックします。. クリック **保存**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-その後、戻ってきます。 クリック **メールデザイナー** 電子メールのコンテンツを作成します。
+エンタオ、ヴォーチラ・レトルナ・パラ・エスタ・テラ。 クリック **メールデザイナー**  para criar o conteúdo do e-mail.
 
 ![Journey Optimizer](./images/msg11.png)
 
-次の画面で、E メールのコンテンツを提供する 3 つの異なる方法が求められます。
+Na próxima tela, será selicitado que você forneça o conteúdo e-mail através de 3 métodos diferentes:
 
-- **ゼロからデザイン**:空白のキャンバスから開始し、WYSIWYG エディターを使用して、構造およびコンテンツコンポーネントをドラッグ&amp;ドロップし、電子メールのコンテンツを視覚的に作成します。
-- **独自のコーディング**:HTML
-- **インポートHTML**:既存のHTMLテンプレートをインポートします。編集できます。
+- **ゼロからデザイン**:comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo e-mail.
+- **独自のコーディング**:Crie seu proprio modelo de e-mail codificando usandoHTML
+- **インポートHTML**:um modeloHTMLの存在をインポート、que você poderá editar.
 
-クリック **インポートHTML**.
+クリック **インポートHTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-ファイルをドラッグ&amp;ドロップします **mailtemplatebootcamp.html**（ダウンロード可能） [ここ](../../assets/html/mailtemplatebootcamp.html.zip). 「読み込み」をクリックします。
+アルキボのアレステ・ソルテ **mailtemplatebootcamp.html**，固有のボーカルバイシャ [ここ](../../assets/html/mailtemplatebootcamp.html.zip). Clique Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
-次のデフォルトの電子メールテンプレートが表示されます。
+Vocêverá este modelo de e-mail padrão:
 
 ![Journey Optimizer](./images/msg14.png)
 
-E メールをパーソナライズしましょう。 テキストの横をクリック **こんにちは** そして、 **パーソナライゼーションを追加** アイコン
+Vamos のパーソナライズ機能と電子メール。 Clique ao lado do texto **オラ** e, em seguida, clique no icone **パーソナライゼーションを追加**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-次に、 **名** 次の場所に保存されるパーソナライゼーショントークン `profile.person.name.firstName`. メニューで、 **人物** 要素、ドリルダウン **氏名** 要素を選択し、 **+** アイコンをクリックして、式エディターに「名」フィールドを追加します。
+Em seguida, você precisa trazer o token de personalização **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニューなし、要素をローカライズ **人物**, faça uma busca detalada no elemento **氏名** e clique no icone **+** para adicionar o campo **名** ao editor de expresson
 
-「**保存**」をクリックします。
+クリック **保存**.
 
 ![Journey Optimizer](./images/msg36.png)
 
-パーソナライゼーションフィールドがテキストにどのように追加されたかがわかります。
+アゴラヴォクラコモオカンポデパーソナライズアサンフォイアディシオナドアオセウテキスト。
 
 ![Journey Optimizer](./images/msg37.png)
 
-クリック **保存** メッセージを保存します。
+クリック **保存** para salvar sua mensagem.
 
 ![Journey Optimizer](./images/msg55.png)
 
-次をクリックして、メッセージダッシュボードに戻ります。 **矢印** 左上隅の件名行テキストの横に表示されます。
+レトルネ・パラ・ド・メンサゲンス・クリカンドナ・セタ・ラド・ド・テキスト・ダ・リンハ・デ・アスント・ノ・カント・スーペリア・エスケルド。
 
 ![Journey Optimizer](./images/msg56.png)
 
-登録メールの作成が完了しました。 左上隅の矢印をクリックして、ジャーニーに戻ります。
+アゴラの声は、クリアサオ・ド・セウ電子メール・デ・カダストロを締めくくる。 クリケナセタノカントスーペリアスケルドパラレトルナーラスアヨルナダ。
 
 ![Journey Optimizer](./images/msg57.png)
 
-「**OK**」をクリックします。
+クリック **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 ジャーニーの公開
+## 2.3.3 スアジャナラ語の公開
 
-ジャーニーに名前を付ける必要があります。 これをおこなうには、 **プロパティ** アイコンを使用して、画面の右上に表示されます。
+ヴォーチェ・アインダ・プレシサ・アム・ノーム・ア・スア・ヨルナダ。 ボーチュポーデ・ファザー・イッソ・クリカンド・ノ・イコーネ **プロパティ** 上等のディレイトダテラは無い。
 
 ![ACOP](./images/journeyname.png)
 
-ここにジャーニーの名前を入力できます。 以下を使用してください： `yourLastName - Account Creation Journey`. 「**OK**」をクリックして変更を保存します。
+ヴォーチェ・アインダ・プレシサ・アム・ノーム・ア・スア・ヨルナダ。 ボーチュポーデ・ファザー・イッソ・クリカンド・ノ・イコーネ `yourLastName - Account Creation Journey`. クリック **OK** mudanças としての para salvar
 
 ![ACOP](./images/journeyname1.png)
 
-これで、「 **公開**.
+アゴラヴォーポードパブリカルスアヨルナ・クリカンド・エム **公開**.
 
 ![ACOP](./images/publishjourney.png)
 
-クリック **公開** 再び
+クリック **公開**  ノバメンテ
 
 ![ACOP](./images/publish1.png)
 
-次に、ジャーニーが公開されたことを示す緑色の確認バーが表示されます。
+Vocêverá uma barra de confirmação verde informando que sua jornaagora está Publicada.
 
 ![ACOP](./images/published.png)
 
-これで、この練習が完了しました。
+ヴォーテルミヌーはエキスペルシオをテストした。
 
-次のステップ： [2.4 ジャーニーのテスト](./ex4.md)
+プロクシマエタパ： [2.4 テストスアヨルナダ](./ex4.md)
 
-[ユーザーフローに戻る 2](./uc2.md)
+[レトルナルパラフルクソデウサリオ 2](./uc2.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

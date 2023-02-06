@@ -5,93 +5,93 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# 2.2 イベントの作成
+# 2.2 クリーセウエベント
 
-に移動してAdobe Journey Optimizerにログインします。 [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
+Faça ログインのAdobe Journey Optimizerのアクセスサンド a [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-リダイレクト先： **ホーム**  Journey Optimizerで表示 まず、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは、と呼ばれます。 `Bootcamp`. サンドボックス間を切り替えるには、 **Prod** リストからサンドボックスを選択します。 この例では、サンドボックスの名前はです。 **Bootcamp**. その後、 **ホーム** サンドボックスの表示 `Bootcamp`.
+Vocêserá redirectionado para a visualização da **ホーム** Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. Para alternar de um sandbox para outro, clique em Prod selecionone o sandbox na lista. Neste エグザンプロ， o nome do sandboxé **Bootcamp**. Voêestará na visualização da **ホーム** サンドボックスを設定 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-左側のメニューで、下にスクロールして、 **設定**. 次に、 **管理** 下のボタン **イベント**.
+メニュー無し，ロールパラバイクソ e clique em **設定**. エム・セグイダ、クリケ・ノ・ボトン **管理** アバイオクデ **イベント**.
 
 ![ACOP](./images/acopmenu.png)
 
-その後、使用可能なすべてのイベントの概要が表示されます。 クリック **イベントを作成** をクリックして、独自のイベントの作成を開始します。
+ヴァクヴェルア・ヴィサオ・ジェラル・デ・トドス・エベント・ディスポニヴェイス。 クリック **イベントを作成** para começar criar seu próprio evento
 
 ![ACOP](./images/emptyevent.png)
 
-新しい空のイベントウィンドウがポップアップ表示されます。
+ウマ・ノヴァ・ジャネラ・デ・エヴェント・ヴァジア・イラ・アパレサー。
 
 ![ACOP](./images/emptyevent1.png)
 
-まず、イベントに次のような名前を付けます。 `yourLastNameAccountCreationEvent` 次のような説明を追加します。 `Account Creation Event`.
+Em primeiro lugar, dêum nome ao seu evento como, por exemplo: `yourLastNameAccountCreationEvent` e adicione uma は、por エグザンプリを表します。 `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-次に、 **タイプ** が **単一**、および **イベント ID タイプ** 選択、選択 **生成されたシステム**.
+Em seguida, certifique-se de que **タイプ** está definido como **単一** e, para a selção de **イベント ID タイプ**, selecone **生成されたシステム**.
 
 ![ACOP](./images/eventidtype.png)
 
-次に、「スキーマ」を選択します。 この演習では、スキーマが準備されました。 スキーマを使用してください `Demo System - Event Schema for Website (Global v1.1) v.1`.
+etapa seguiné a seleção do スキーマ。 Um スキーマ foi 準備 para este expercício. スキーマの使用 `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-スキーマを選択すると、 **フィールド** 」セクションに入力します。 これで、 **フィールド** セクションに 3 つのアイコンのポップアップが表示されます。 をクリックします。 **編集** アイコン
+Depois de selecionar o Schema, vocêverá vários campos sendo selecionados na seção **フィールド**. アゴラボーデヴ・パサー、マウス、ソサオ **フィールド** e três icones ポップアップ serão exibidos クリケ・ノ・イコーネ **編集**.
 
 ![ACOP](./images/eventpayload.png)
 
-表示される **フィールド** ウィンドウポップアップ。E メールをパーソナライズするために必要なフィールドの一部を選択する必要があります。  後で、既にAdobe Experience Platformにあるデータを使用して、他のプロファイル属性を選択します。
+Voêverá uma janela pop-up de **フィールド**, onde voce selecionar alguns dos campos que precisamos personalizar o e-mail Escolheremos outroos attributos de perfil postermente, utizando os dados já existentes na Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
-オブジェクト内 `_experienceplatform.demoEnvironment`フィールドを必ず選択してください。 **brandLogo** および **brandName**.
+No objecto `_experienceplatform.demoEnvironment`, pcertifique-se de selecionar os campos **brandLogo** e **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-オブジェクト内 `_experienceplatform.identification.core`フィールドを必ず選択してください。 **電子メール**.
+No objecto `_experienceplatform.identification.core`, certifique se de selecionar o campo **電子メール**.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-クリック **Ok** 変更を保存します。
+クリック **Ok** を alteraçoes のような para salvar に設定します。
 
 ![ACOP](./images/saveok.png)
 
-次に、これが表示されます。 クリック **保存** もう一度変更を保存します。
+Em seguida, tela abaixo deve ser exibida. クリック **保存**  mais uma vez para salvar suas alteraçoes...
 
 ![ACOP](./images/eventsave.png)
 
-これで、イベントが設定され、保存されました。
+Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-イベントを再度クリックして、 **イベントを編集** 画面を再度表示します。 上にマウスポインターを置く **フィールド** 3 つのアイコンを再度表示します。 をクリックします。 **ペイロードを表示** アイコン
+クリケノセウイベントノバメンテパラアブリルマイスマベステラ **イベントを編集**. マウスの酔いが醒める **フィールド** para ver os 3 icones outra vez. クリケ・ノ・イコーネ **ペイロードを表示**.
 
 ![ACOP](./images/viewevent.png)
 
-これで、期待されるペイロードの例が表示されます。
-イベントには一意のオーケストレーション eventID があり、見つかるまでペイロード内を下にスクロールすると見つかります `_experience.campaign.orchestration.eventID`.
+アゴラヴォクヴェラ・アムエグザンプロダ・カルガ・クティル・エスペラダ。
+Seu evento tem um eventID de orquestraçãoúnico, que vocêpode encontrar rolando para baixo nessa cargaútil (payload) até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-次の演習の 1 つで作成するジャーニーをトリガーにするには、イベント ID をAdobe Experience Platformに送信する必要があります。 この eventID は、後で必要になる場合があるので、覚えておいてください。
+O eventIDé o que deve ser envidaoà Adobe Experience Platform para acionar a jornada que você construirá em dos próximos expercícios. Lembre-se deste eventID、voce precisar dele postermente。
 `"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
 
-クリック **Ok**&#x200B;をクリックし、その後に「 **キャンセル**.
+クリック **Ok** e, em seguida, clique **キャンセル**.
 
-これで、この練習が完了しました。
+アゴラボーテルミノーはエステエキスシオ。
 
-次のステップ： [2.3 電子メールメッセージの作成](./ex3.md)
+プロクシマエタパ： [ 2.3 Crie sua mensagem de e-mail](./ex3.md)
 
-[ユーザーフローに戻る 2](./uc2.md)
+[レトルナルパラフルクソデウサリオ 2](./uc2.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

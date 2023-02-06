@@ -5,65 +5,67 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 2%
+source-wordcount: '933'
+ht-degree: 0%
 
 ---
 
-# 1.4 措置をとる：セグメントをAdobe Targetに送信
+# 1.4 Ação:enviu segmento para o Adobe Target
 
-に移動します。 [Adobe Experience Platform](https://experience.adobe.com/platform). ログイン後、Adobe Experience Platformのホームページに移動します。
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer ログイン， vocêirá acessar a página inicial da Adobe Experience Platform.
 
 ![データ取得](./images/home.png)
 
-続行する前に、 **サンドボックス**. 選択するサンドボックスの名前はです ``Bootcamp``. これを行うには、 **[!UICONTROL 実稼動版]** 画面の上の青い線で表示されます。 適切な [!UICONTROL サンドボックス]画面が変更され、専用の [!UICONTROL サンドボックス].
+アンテス・デ・コニュナール、ヴォーチェ・プレシャ・セレクショナー・アム **サンドボックス**. 誰かがサンドボックスを選択し、Bootcamp を行うことはありません。 É porivel fazer isso clicando no texto **[!UICONTROL 実稼動版]** ナ・リンハ・アズール・ナ・パルテ・スーペリア・ダ・テラ Depois de selecionar o sandbox apporiado, você verá a tela mudando e agora vocestá em seu [!UICONTROL サンドボックス] 決め手
 
 ![データ取得](./images/sb1.png)
 
-## 1.4.1 Adobe Targetの宛先へのセグメントのアクティブ化
+## 1.4.1 Ative seu segmento para o destino do Adobe Target
 
-Adobe Targetは、Real-Time CDPからの宛先として利用できます。 Adobe Target統合を設定するには、に移動します。 **宛先**、 **カタログ**.
+O Adobe Target está disponível como um destino do CDP em tempo real. Para configurar sua integração com o Adobe Target, acesse **宛先** e **カタログ**.
 
-クリック **パーソナライズ** 内 **カテゴリ** メニュー 次に、 **Adobe Target** 宛先カード。 クリック **セグメントのアクティブ化**.
+クリック **パーソナライズ** メニューなし **カテゴリ**. ヴォクレベラオ・カルタン・デデジノ・ド **Adobe Target**. クリック **セグメントのアクティブ化**.
 
 ![時刻](./images/atdest1.png)
 
-宛先を選択 ``Bootcamp Target`` をクリックし、 **次へ**.
+宛先を選択 ``Bootcamp Target`` e クリック **次へ**.
 
 ![時刻](./images/atdest3.png)
 
-使用可能なセグメントのリストで、 [1.3 セグメントの作成](./ex3.md)（という名前） `yourLastName - Interest in Real-Time CDP`. 次に、「**次へ**」をクリックします。
+Na lista de segmentos disponíveis, selione o segmento que vocriou em [1.3 Crie um segmento](./ex3.md), com o nome `yourLastName - Interest in Real-Time CDP`. Em seguida、clique em **次へ**.
 
 ![時刻](./images/atdest8.png)
 
-次のページで、 **次へ**.
+ナ・プロキシマ・パギナ、クリック・エム **次へ**.
 
 ![時刻](./images/atdest9.png)
 
-「**完了**」をクリックします。
+クリック **完了**.
 
 ![時刻](./images/atdest10.png)
 
-これで、セグメントがAdobe Targetに対してアクティブ化されました。
+セグメントアゴラエスタアティバドパラオAdobe Target。
 
 ![時刻](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Real-Time CDPでAdobe Targetの宛先を作成したばかりの場合、宛先が有効になるまで最大 1 時間かかる場合があります。 これは、バックエンド設定の設定による 1 回限りの待機時間です。 最初の 1 時間の待機時間とバックエンドの設定が完了すると、Adobe Targetの宛先に送信される新しく追加されたエッジセグメントを、リアルタイムでのターゲティングに使用できるようになります。
+>イメディアタメンテ・アポス・クリア・セ・デスティノ・ド・Adobe TargetのReal-Time CDP、ポデ・レヴァ・アテ・ウマ・ホラ・パラ・ク・オ・デスティノ・セジャ・アティバド。 Esteé um tempo de esperaúnico devido a definição da configuração de back-end. デポイス・クエ・オ・テンポ・デ・エスペラ・イニシャル・デ 1 ホラ・デ 1 ホラ・ア・コンフィギュラ・ホラ・ド・バックエンド・フォレム締結、オス・セグメントス・デ・ボルダ・レシオナドス・サン・デジノ・ド・Adobe Target
 
-## 1.4.2 Adobe Targetのフォームベースのアクティビティの設定
+## 1.4.2 suaatividade baseada em furmário do Adobe Targetの設定
 
-Real-Time CDPセグメントをAdobe Targetに送信するように設定したら、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定できます。 この演習では、Visual Experience Composer ベースのアクティビティを設定します。
+Agora que seu segmento Real-Time CDP está configurado para ser enviado Adobe Target,é 占有設定は suaatividade de Segmentação por experiência no Adobe Target. Neste expercicio, vocêirá configurar uma atividade basedade no Visual Experience Composer.
 
-Adobe Experience Cloudのホームページで、 [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). クリック **ターゲット** をクリックして開きます。
+アセスアパギナの官僚ダAdobe Experience Cloud・アセサンド [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). クリック **ターゲット** 準学長
 
 ![RTCDP](./images/excl.png)
 
 の **Adobe Target** ホームページには、既存のすべてのアクティビティが表示されます。
 クリック **+アクティビティを作成** をクリックして、新しいアクティビティを作成します。
+ナ・パジナ・イニシャル・ド **Adobe Target**, vocêverá todas as atividades existenteses.
+クリック **+アクティビティを作成** パラクリアルマ・ノヴァ・アティビデード。
 
 ![RTCDP](./images/exclatov.png)
 
@@ -71,116 +73,116 @@ Adobe Experience Cloudのホームページで、 [https://experiencecloud.adobe
 
 ![RTCDP](./images/exclatcrxt.png)
 
-選択 **ビジュアル** そして、 **アクティビティ URL** から `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`ただし、その前に、XX を 01 ～ 30 の数値に置き換えます。
+選択 **ビジュアル** e 定義 a **アクティビティ URL** コモ `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso，代替 XX por um número entre 01 e 30.
 
 >[!IMPORTANT]
 >
->様々なAdobe Targetエクスペリエンスの衝突を避けるために、イネーブルメントの各参加者は個別の Web ページを使用する必要があります。 Web ページを選択し、次の場所から URL を検索できます。 [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Cada particante da capacitação deve usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. É esporivel escolher uma página da Web e contral a URL accessando: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
->すべてのページが同じベース URL を共有し、参加者の数で終わります。
+>トダスはパギナスのコンパルティラムメスマ URL ベース e termam com o número do particante.
 >
->例えば、参加者 1 は URL を使用する必要があります `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, participant 30 は URL を使用する必要があります `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>エグザンプロ、または参加者 1 は URL をデバイスします `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
-ワークスペースを選択 **AT Bootcamp**.
+ワークスペースの選択 **AT Bootcamp**.
 
-「**次へ**」をクリックします。
+クリック **次へ**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
-これで、Visual Experience Composer に移動しました。 Web サイトが完全に読み込まれるまでに 20 ～ 30 秒かかる場合があります。
+Visual Experience Composer の無い Agora vocestá。 Pode levar de 20 a 30 segundos até que o site esteja complete carregado.
 
 ![RTCDP](./images/atform1.png)
 
-デフォルトのオーディエンスは現在 **すべての訪問者**. をクリックします。 **3 ドット** 次の **すべての訪問者** をクリックし、 **オーディエンスを変更**.
+オ・プブリコ・パドラオ・サン **すべての訪問者**. クリケノス **3 ドット** ラドデ **すべての訪問者** e クライアント **オーディエンスを変更**.
 
 ![RTCDP](./images/atform3.png)
 
-これで、使用可能なオーディエンスのリストが表示され、以前に作成してAdobe Targetに送信したAdobe Experience Platformセグメントがこのリストに含まれます。 以前にAdobe Experience Platformで作成したセグメントを選択します。 クリック **オーディエンスの割り当て**.
+アゴラボケスタ・ベンド・アリスタ・デ・プブリコス・ディスポニヴェイス、e o segmento da Adobe Experience Platform・ク・ヴォクリオ・アンテリオルメンテ・エネヴィオ・Adobe Target・アゴラ・ファズ・パルテ・デッサ・リスタ。 セグメントのセレシオネは、クレクリオ・アンテリオルメンテ・ナ・Adobe Experience Platform。 クリック **オーディエンスの割り当て**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Adobe Experience Platformセグメントは、このエクスペリエンスのターゲット設定アクティビティの一部になりました。
+Seu segmento da Adobe Experience Platform agora faz parte dessa Atividade de segmentação por experiência.
 
 ![RTCDP](./images/atform4.png)
 
-ヒーロー画像を変更する前に、 **すべて許可** をオンにします。
+アンテス・デ・オルタライアイメージ・プリンシパル、ヴォーデヴ・クリカー・エム **すべて許可** banner de cookie がありません。
 
-これをおこなうには、に移動します。 **参照**
+Para isso, vá para **参照**
 
 ![RTCDP](./images/cook1.png)
 
-次に、「 **すべて許可**.
+Em seguida、clique em **すべて許可**.
 
 ![RTCDP](./images/cook2.png)
 
-次へ、 **作成**.
+Em seguida, retorne para **作成**.
 
 ![RTCDP](./images/cook3.png)
 
-次に、Web サイトのホームページでヒーロー画像を変更します。 Web サイトのデフォルトのヒーロー画像をクリックし、 **コンテンツを置換** 次に、 **画像**.
+アゴラ・ヴァモスはイメージメンのプリンシパル na página の公式サイトをムダル。 クリックナイメージメンプリンシパル padrano no site, clique em **コンテンツを置換** e セレクション **画像**.
 
 ![RTCDP](./images/atform5.png)
 
-画像ファイルを検索します。 **rtcdp.png**. 選択して、 **保存**.
+ペルキソ・オ・アルキボ・デ・イメージェム **rtcdp.png**. 1 つのクリックエムを選択 **保存**.
 
 ![RTCDP](./images/atform6.png)
 
-選択したオーディエンスの新しい画像で新しいエクスペリエンスが表示されます。
+Voêverá a nova experiência com a nova imagem para o seu Público selecionado
 
 ![RTCDP](./images/atform7.png)
 
-左上隅のアクティビティのタイトルをクリックして、名前を変更します。
+クリケ・ノ・ティトウロ・ダ・スア・アティビダード・ノ・カントー・スーペリア・エスケルド・パラ・レノメア・ラ。
 
 ![RTCDP](./images/exclatvecname.png)
 
-名前には、次を使用してください。
+パラノーム、次を使用：
 
 - `yourLastName - RTCDP - XT (VEC)`
 
-「**次へ**」をクリックします。
+クリック **次へ**.
 
 ![RTCDP](./images/atform8.png)
 
-「**次へ**」をクリックします。
+クリック **次へ**.
 
 ![RTCDP](./images/atform8a.png)
 
-の **目標と設定**  — ページ、移動 **目標指標**.
+ナパジナ **目標と設定**、アクセス **目標指標**.
 
 ![RTCDP](./images/atform9.png)
 
-プライマリ目標を **エンゲージメント** - **サイト滞在時間**. 「**保存して閉じる**」をクリックします。
+メタプリンシパル COMO の定義 **エンゲージメント** - **サイト滞在時間**. クリック **保存して閉じる**.
 
 ![RTCDP](./images/vec3.png)
 
-これで、 **アクティビティの概要** ページ。 アクティビティをアクティブ化する必要があります。
+アゴラボケスタナパギナ **アクティビティの概要**. ボーチャインダ・プレシサ・アティビダード。
 
 ![RTCDP](./images/atform10.png)
 
-フィールドをクリックします。 **非アクティブ** を選択し、 **有効化**.
+クリケノカンポ **非アクティブ** e セレクション **有効化**.
 
 ![RTCDP](./images/atform11.png)
 
-その後、アクティビティがライブになったことを視覚的に確認します。
+Vocêreceberá uma confirmação visual de que sua atividade agora está ativa.
 
 ![RTCDP](./images/atform12.png)
 
-これでアクティビティが実行され、bootcamp の Web サイトでテストできます。
+アゴラスアアティヴィダードエスタアティヴァ e pode ser testada no site do bootcamp.
 
-次に、デモ Web サイトに戻り、 **Real-Time CDP**&#x200B;作成したセグメントに即座に適合し、Adobe Targetアクティビティがホームページにリアルタイムで表示されます。
+セアゴラヴォクレヴォルタオセウサイト de demonstração e visitar a página do produto para **Real-Time CDP**, você se qualificará instanceamente para o segmento cue criou e verá a a atividade do Adobe Target exibida na página inicial em tempo real.
 
 >[!IMPORTANT]
 >
->様々なAdobe Targetエクスペリエンスの衝突を避けるために、イネーブルメントの各参加者は個別の Web ページを使用する必要があります。 Web ページを選択し、次の場所から URL を検索できます。 [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Cada particante da capacitação deve usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. É esporivel escolher uma página da Web e contrar a URL accessando ao リンク： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
->すべてのページが同じベース URL を共有し、参加者の数で終わります。
+>トダスはパギナスのコンパルティラムメスマ URL ベース e termam com o número do particante.
 >
->例えば、参加者 1 は URL を使用する必要があります `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, participant 30 は URL を使用する必要があります `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>エグザンプロ、または参加者 1 デヴユーザー a `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 ![RTCDP](./images/atform12a.png)
 
-次のステップ： [1.5 措置をとる：セグメントをFacebookに送信](./ex5.md)
+プロクシマエタパ： [1.5 措置をとる：セグメントをFacebookに送信](./ex5.md)
 
-[ユーザーフローに戻る 1](./uc1.md)
+[レトルナルパラフルクソデウサリオ 1](./uc1.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

@@ -5,90 +5,90 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 4%
+source-wordcount: '842'
+ht-degree: 2%
 
 ---
 
-# 3.3 ジャーニーとプッシュ通知の作成
+# 3.3 クリースアヨルナダ電子通知のプッシュ
 
-この演習では、モバイルアプリを使用して誰かがビーコンに入ったときにトリガーする必要があるジャーニーとメッセージを設定します。
+Neste exercício, vocêirá configurar a jornada e a mensagem que precisa ser acionada quando alguém inserir uma sinalização (beacon) usando o aplicativo móvel.
 
-に移動してAdobe Journey Optimizerにログインします。 [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
+Faça ログインのAdobe Journey Optimizerのアクセスサンド a [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-リダイレクト先： **ホーム**  Journey Optimizerで表示 まず、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは、と呼ばれます。 `Bootcamp`. サンドボックス間を切り替えるには、 **Prod** リストからサンドボックスを選択します。 この例では、サンドボックスの名前はです。 **Bootcamp**. その後、 **ホーム** サンドボックスの表示 `Bootcamp`.
+Vocêserá redirectionado para a visualização da **ホーム** Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. パラオルタナルドゥウムサンドボックスパラアウトロ、クリック EM **Prod** sandbox na lista からを選択します。 Neste エグザンプロ， o nome do sandboxé **Bootcamp**. Voêestará na visualização da **ホーム**  サンドボックスを設定 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.3.1 ジャーニーの作成
+## 3.3.1 クリー・ア・スア・ヨルナダ
 
-左のメニューで、「**ジャーニー**」をクリックします。次に、「 **作成ジャーニー** をクリックして、新しいジャーニーを作成します。
+メニューがなく、クリック **ジャーニー**. Em seguida、clique em **作成ジャーニー** パラクリアルマ・ノヴァ・ヨルナダ。
 
 ![ACOP](./images/createjourney.png)
 
-すると、空のジャーニー画面が表示されます。
+ヴォクレヴェラウマテラデヨルナバジア。
 
 ![ACOP](./images/journeyempty.png)
 
-前の練習では、新しい **イベント**. このように名前を付けました `yourLastNameBeaconEntryEvent` および置き換え済み `yourLastName` を姓に置き換えます。 これは、イベントの作成の結果です。
+エクスペリシオ前部、ボークリウムノボ **イベント**. ベント語 `yourLastNameBeaconEntryEvent` e 置換 `yourLastName` ペロ・セウ・ソブレノーム。 Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-次に、このイベントをこのイベントの開始として使用する必要があります。ジャーニー これをおこなうには、画面の左側に移動して、イベントのリストでイベントを検索します。
+アゴラのボーカは、思い切ってエステエベントをコモ・イニシオ・デスタ・ヨルナダ。 Vocêpode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-イベントを選択し、ジャーニーキャンバスにドラッグ&amp;ドロップします。 ジャーニーは次のようになりました。 クリック **Ok** 変更を保存します。
+セレクワンセウイベント、アレスト e solte o evento na tela de jornada。 スアヨルナダアゴラは、セメルハンテアオセギンテに敬意を表します。 クリック **Ok** para salvar suas alteraçoes
 
 ![ACOP](./images/journeyevent.png)
 
-ジャーニーの 2 番目の手順として、 **プッシュ** アクション。 画面の左側に移動して、 **アクション**&#x200B;を選択し、 **プッシュ** アクションを実行し、ジャーニーの 2 番目のノードにドラッグ&amp;ドロップします。
+コモセグンダエタパダヨルナダ、ボーディヴアディシオナルマアサオ **プッシュ**. Vá para o lado esquerdo da tela para **アクション**, selection ação **プッシュ** arraste e ソルト ação no segundo nó da sua jornada
 
 ![ACOP](./images/journeyactions.png)
 
-画面の右側で、次にプッシュ通知を作成する必要があります。
+ラド・ディレイト・ダ・テラ、アゴラ・ヴォークレベ・クリア・スア通知サオ・プッシュはありません。
 
-を **カテゴリ** から **マーケティング** プッシュ通知を送信できるプッシュサーフェスを選択します。 この場合、選択する押し出しサーフェスは次のようになります。 **mmeewis-app-mobile-bootcamp**.
+定義 **カテゴリ** コモ **マーケティング** e selecionuma superfície push que permite envirar notificaçoes push. スーパーファイシーがユーザーセレクショナダを押すネスカソ **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.3.2 メッセージの作成
+## 3.3.2 Crie a sua mensagem
 
 クリック **コンテンツを編集**.
 
 ![ACOP](./images/emptymsg.png)
 
-次の内容が表示されます。
+Em seguida, a tela abaixo será exibida:
 
 ![ACOP](./images/emailmsglist.png)
 
-プッシュ通知の内容を定義します。
+Vamos は、conteúdo da notificação push を定義します。
 
-次をクリック： **タイトル** テキストフィールド。
+Clique no campo de texto **タイトル**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-テキスト領域で、 **こんにちは**. パーソナライゼーションアイコンをクリックします。
+コメス・ナ・アレア・デ・テクスト **オラ**. クリケ・ノ・イコーネ・デ・パーソナライザ・サオ。
 
 ![Journey Optimizer](./images/msg6.png)
 
-次に、フィールドのパーソナライゼーショントークンを取り込む必要があります **名** それは以下の下に保存されています `profile.person.name.firstName`. 左側のメニューで、 **プロファイル属性**、下にスクロール/移動して、 **人物** 要素を選択し、矢印をクリックして、フィールドに到達するまで深いレベルに移動します。 `profile.person.name.firstName`. 次をクリック： **+** アイコンをクリックして、フィールドをキャンバスに追加します。 「**保存**」をクリックします。
+トークンデパーソナライゼーションパラオカンポ **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニューがありません， selecione **プロファイル属性**，役割 para baixo/navegue para encontroo elemento **人物** e clique na seta para avançar um nvel até chegar ao campo `profile.person.name.firstName`. クリケ・ノ・イコーネ **+** para adicionar o campo a tela クリック **保存**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-その後、戻ってきます。 フィールドの横にあるパーソナライゼーションアイコンをクリックします。 **本文**.
+エンタオ、ヴォーチラ・レトルナ・パラ・エスタ・テラ。 Clique noícone de personalização ao lado do campo **本文**.
 
 ![Journey Optimizer](./images/msg11.png)
 
-テキスト領域で、 `Welcome at the `.
+エスクレバ・ナレア・デ・テクスト `Bem-vindo(a)`.
 
 ![Journey Optimizer](./images/msg12.png)
 
-次に、「 **コンテキスト属性** その後 **Journey Orchestration**.
+Em seguida、clique em  **コンテキスト属性** その後 **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -96,7 +96,7 @@ ht-degree: 4%
 
 ![ACOP](./images/jomsg4.png)
 
-イベントの名前をクリックします。次のようになります。 **yourLastNameBeaconEntryEvent**.
+Clique nome do seu evento, que deve ser semelhante ao seguinte: **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
@@ -112,30 +112,30 @@ ht-degree: 4%
 
 ![ACOP](./images/jomsg8.png)
 
-次をクリック： **+** アイコン **POI 名**.
-これが見えます 「**保存**」をクリックします。
+クリック番号 **+** アイコン番号 **POI 名**.
+エムセギダ、o seguinte será exibido. クリック **保存**.
 
 ![ACOP](./images/jomsg9.png)
 
-これで、メッセージの準備が整いました。 左上隅の矢印をクリックして、ジャーニーに戻ります。
+スア・メンサゲム・アゴラ・エスタ・プロンタ。 クリケナセタノカントスーペリアスケルドパラレトルナーラスアヨルナダ。
 
 ![ACOP](./images/jomsg11.png)
 
-「**OK**」をクリックします。
+クリック **Ok**.
 
 ![ACOP](./images/jomsg14.png)
 
-## 3.3.2 画面にメッセージを送信する
+## 3.3.2 Envie uma mensagem para uma tela
 
-ジャーニーの 3 番目の手順として、 **sendMessageToScreen** アクション。 画面の左側に移動して、 **アクション**&#x200B;を選択し、 **sendMessageToScreen** アクションを実行し、ジャーニーの 3 番目のノードにドラッグ&amp;ドロップします。 これが見えます
+コモ・テルセイラ・エタパ・ダ・ヨルナダ、ボーディヴ・アディシオナルマ・アサオ  **sendMessageToScreen** アクション。 Vá para o lado esquerdo da tela para **アクション**, selection ação **sendMessageToScreen** e arraste e solte ação no terceiro nó da sua jornada エムセギダ、vocêverá a tela abaixo。
 
 ![ACOP](./images/jomsg15.png)
 
-この **sendMessageToScreen** 「 」アクションは、ストア内ディスプレイで使用されるエンドポイントにメッセージを公開するカスタムアクションです。 この **sendMessageToScreen** action には、定義される変数の数が必要です。 これらの変数は、下にスクロールして表示されます。 **アクションパラメーター**.
+**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usade pela exibição na loja A ação **sendMessageToScreen** エスペラ・ク・ムルティプラス・バリアヴェイス・セジャム・ディフィダス。 Vocêpode visualizar essas variáveis rolando para baiaté ver **アクションパラメーター**.
 
 ![ACOP](./images/jomsg16.png)
 
-次に、各アクションパラメーターの値を設定する必要があります。 どの値が必要かをどこで把握するには、次の表に従います。
+アゴラヴォーチャは、バロレスパラカダパラメトロデアソサンを定義します。 Siga esta tabela para entender quais valores são nesários e onde.
 
 | パラメーター | value |
 |:-------------:| :---------------:|
@@ -151,29 +151,29 @@ ht-degree: 4%
 
 {style=&quot;table-layout:auto&quot;}
 
-これらの値を設定するには、 **編集** アイコン
+Para は、バロアを定義し、clique no icone **編集**.
 
 ![ACOP](./images/jomsg17.png)
 
-次に、 **詳細設定モード**.
+Em seguida, selection **詳細設定モード**.
 
 ![ACOP](./images/jomsg18.png)
 
-次に、上のテーブルに基づいて値を貼り付けます。 「**OK**」をクリックします。
+Em seguida、cole o valor com base na tabela acima. クリック **Ok**.
 
 ![ACOP](./images/jomsg19.png)
 
-この手順を繰り返して、各フィールドの値を追加します。
+レピタエッセスプロセッサパラアジオナールパラカダカンポ。
 
 >[!IMPORTANT]
 >
->フィールド ECID には、イベントへの参照があります `yourLastNameBeaconEntryEvent`. 必ず `yourLastName` 姓です。
+>Para o campo ECID, há referrência ao evento`yourLastNameBeaconEntryEvent`. Lembre-se de substituir  `yourLastName` ペロ・セウ・ソブレノーム。
 
-最終結果は次のようになります。
+O resultado final deve ser semelhante ao seguinte:
 
 ![ACOP](./images/jomsg20.png)
 
-上にスクロールし、 **Ok**.
+ロールパラシマクリックエム **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
@@ -181,28 +181,28 @@ ht-degree: 4%
 
 ![ACOP](./images/journeyname.png)
 
-ここにジャーニーの名前を入力できます。 以下を使用してください： `yourLastName - Beacon Entry Journey`. 「**OK**」をクリックして変更を保存します。
+ボーチュポードインサーレオノームダヨルナダアキ。 使用方法 `yourLastName - Beacon Entry Journey`. クリック **OK** para salvar suas alteraçoes
 
 ![ACOP](./images/journeyname1.png)
 
-これで、「 **公開**.
+アゴラヴォーポードパブリカルスアヨルナ・クリカンド・エム **公開**.
 
 ![ACOP](./images/publishjourney.png)
 
-クリック **公開** 再び
+クリック **公開** ノバメンテ
 
 ![ACOP](./images/publish1.png)
 
-次に、ジャーニーが公開されたことを示す緑色の確認バーが表示されます。
+Vocêverá uma barra de confirmação verde informando que sua jornaagora está Publicada.
 
 ![ACOP](./images/published.png)
 
-ジャーニーはライブになり、トリガーできます。
+スアヨルナダアゴラエスタアティヴァ e pode ser acionada.
 
-これで、この練習が完了しました。
+ヴォーテルミヌーはエキスペルシオをテストした。
 
-次のステップ： [3.4 ジャーニーのテスト](./ex4.md)
+プロクシマエタパ： [3.4 テストスアヨルナダ](./ex4.md)
 
-[ユーザーフローに戻る 3](./uc3.md)
+[レトルナルパラフルクソデウサリオ 3](./uc3.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

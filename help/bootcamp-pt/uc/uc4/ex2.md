@@ -5,103 +5,104 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 2%
 
 ---
 
-# 4.2Customer Journey AnalyticsでのAdobe Experience Platformデータセットの接続
+# 4.2 データセットの接続とAdobe Experience PlatformのCustomer Journey Analytics
 
-## 目標
+## Objectivos
 
-- データ接続 UI について
-- Adobe Experience Platformデータを CJA に取り込む
-- ユーザー ID とデータの組み合わせについて
-- データストリーミングの概念をCustomer Journey Analytics
+- Compreenda a UI da conexão de dados
+- トラガオスダドスダAdobe Experience Platformパラオ CJA
+- Entenda a ID da pessoa e a compilação de dados
+- Aprenda o cepto de streaming de dados no Customerジャーニー
 
-## 4.2.1 接続
+## 4.2.1 コネクサオ
 
-に移動します。 [analytics.adobe.com](https://analytics.adobe.com) をクリックして、Customer Journey Analyticsにアクセスします。
+Acesse [analytics.adobe.com](https://analytics.adobe.com) パラアクセサーかCustomer Journey Analytics。
 
-Customer Journey Analyticsのホームページで、に移動します。 **接続**.
+ナ・パジナ・イニシャル・ド・Customer Journey Analytics、アセス **接続**.
 
 ![デモ](./images/cja2.png)
 
-CJA と Platform の間でおこなわれた様々な接続を、以下に示します。 これらの接続の目標は、Adobe Analyticsのレポートスイートと同じです。 しかし、データの収集は全く異なります。 すべてのデータはAdobe Experience Platformデータセットから取得されます。
+Aqui vocepede ver todas as diferentes conexes feitas entre o CJA e a Plataforma. エサス・コネクソエス・テム・オ・メズモ・オブジェティヴォ・ドス・コンジュントス・デ・レラトリオス・Adobe Analytics。 エンタント、コレタドスダドスのセは完全な違いを完了します。 Todos os dados vêm de datasets da Adobe Experience Platform.
 
-最初の接続を作成しましょう。 **新しい接続を作成**&#x200B;をクリックします。
+バモスクリアスアプリメイラコネクサオ。 クリック **新しい接続を作成**.
 
 ![デモ](./images/cja4.png)
 
-次に、 **接続を作成** UI
+Voêverá a UI **接続を作成** UI
 
 ![デモ](./images/cja5.png)
 
-これで、接続に名前を付けることができます。
+アゴラヴォードダルムノームアスアコネクサオ。
 
-次の命名規則を使用してください： `yourLastName – Omnichannel Data Connection`.
+este modelo de nomenclatura を使用： `yourLastName – Omnichannel Data Connection`.
 
-例：`vangeluw - Omnichannel Data Connection`
+エグザンプロ： `vangeluw - Omnichannel Data Connection`
 
-また、使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、サンドボックスを選択します。これは、 `Bootcamp`. この例では、使用するサンドボックスはです。 **Bootcamp**. また、 **毎日のイベントの平均数** から **100 万未満**.
+Voce também deve selecionar o sandbox correto para usar. メニューサンドボックスがありません。1 つのセウサンドボックスを選択し、一意のデバイスユーザーを選択してください `Bootcamp`. Neste exemplo, o sandbox a useré o **Bootcamp**. E ヴォーカルタンベムデヴェデフィル o **毎日のイベントの平均数** から **100 万未満**.
 
 ![デモ](./images/cjasb.png)
 
-サンドボックスを選択した後、この接続へのデータセットの追加を開始できます。 クリック **データセットを追加**.
+Após selecionar seu sandbox, voce pode começar a adicionar datasets a esta conexão. クリック **データセットを追加**.
 
 ![デモ](./images/cjasb1.png)
 
-## 4.2.2 Adobe Experience Platformデータセットの選択
+## 4.2.2 Adobe Experience Platformからのデータセットの選択
 
-データセットを検索します。 `Demo System - Event Dataset for Website (Global v1.1)`. クリック **+** をクリックして、この接続にデータセットを追加します。
+データセットの固定 `Demo System - Event Dataset for Website (Global v1.1)`. クリック **+** para adicionar o dataset a esta conexão
 
 ![デモ](./images/cja7.png)
 
-次に、のチェックボックスを検索して確認します。 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` および `Demo System - Event Dataset for Call Center (Global v1.1)`.
+カイサス・デ・セレサオのアゴラ・ペスキーズ・エ・マルク `Demo System - Event Dataset for Voice Assistants (Global v1.1)` および `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-その後、これを取得します。 「**次へ**」をクリックします。
+エムセギダ、vocêverá a tela abaixo。 クリック **次へ**.
 
 ![デモ](./images/cja9.png)
 
-## 4.2.3 人物 ID とデータの結合
+## 4.2.3 ID da pessoa e コンパイラサオデダド
 
-### 人物 ID
+### ID da pessoa
 
-今の目標は、これらのデータセットを結合することです。 選択したすべてのデータセットに対して、 **人物 ID**. 各データセットには、独自のユーザー ID フィールドがあります。
+O objetivo agoraé juntar はデータセットを取り込みます。 パラカダデータセットセレクショナド、vocêverá um campo chamado **人物 ID**. カダデータセットテムセウプロプリオカンポデ ID デペソア。
 
 ![デモ](./images/cja11.png)
 
-ご覧のように、ほとんどのユーザーは自動的にユーザー ID を選択しています。 これは、Adobe Experience Platformの各プライマリでスキーマ識別子が選択されているからです。 例として、次にのスキーマを示します。 `Demo System - Event Schema for Call Center (Global v1.1)`を使用すると、プライマリ識別子が `phoneNumber`.
+Como vocever, a maioria da pessoa selecionado automaticamente を削除します。 イッソオコレ・ポルク・アム・インディフィシアドル・プリンシパル・セレシオナド・エム・カダ・エスケマ・ナ・Adobe Experience Platform。 コモエグザンプロ， aqui está o esquema para `Demo System - Event Schema for Call Center (Global v1.1)`, onde vocepode ver que o Identificador Primário está definido como `phoneNumber`.
 
 ![デモ](./images/cja13.png)
 
-ただし、接続用にデータセットを結合する際に使用する識別子に影響を与えることもできます。 データセットにリンクされたスキーマ内で設定されている任意の識別子を使用できます。 ドロップダウンをクリックして、各データセットで使用できる ID を確認します。
+No entanto, vocêainda pode influenciar qual identificador será usado para compilar datasets para sua conexão. Vocêpode usar qualquer identificador configurado no esquema vinculado seu データセット。 Clique no menu suspenso para explorar os IDs disponíveis em cada データセット。
 
 ![デモ](./images/cja14.png)
 
-前述のように、データセットごとに異なるユーザー ID を設定できます。 これにより、複数のオリジンの異なるデータセットを CJA で統合できます。 NPS や調査データを取り込むと、状況や何が起きたのかを理解するのに非常に興味深く役立つと思います。
+Conforme mencionado, vocêpode definir は IDs de pessoa para cada データセットを異なります。 Isso permite reunir は、de múltiplas origens no CJA のデータセットを分割します。 想像してみてください trazer NPSou dados de pesquisa que seriam muito interessantes eúteis para compreender o contexto e o o moteco de um acontecimento.
 
-ユーザー ID フィールドの値が対応している限り、ユーザー ID フィールドの名前は重要ではありません。 例えば、 `email` 1 つのデータセットと `emailAddress` を使用します。 If `delaigle@adobe.com` は、両方のデータセットのユーザー ID フィールドと同じ値です。CJA は、データをステッチできます。
+O nome do campo ID da pessoa não importante, desque o valor nos campos ID da pessoa corresponda. Digamos que temos `email` em データセット e `emailAddress` em outro データセット定義 como ID da pessoa。 Se `delaigle@adobe.com` tiver o mesmo valor para o campo ID da pessoa em ambos os データセット、o CJA poderá compilar os dados。
 
-現在、匿名行動を既知の行動に結び付けるなど、他にもいくつかの制限があります。 FAQ はこちらで確認してください。 [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja).
+Autalmente, existem algumas ustoas limitaçoes, como compilar o comportamento annonimo para conhecido. ペルガンタスが頻繁にアクイを呼び込むという領事館： [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja).
 
-### ユーザー ID を使用したデータのステッチ
 
-これで、ユーザー ID を使用したデータセットのステッチの概念を理解したので、次を選択します `email` を設定します。
+### コンピランドオスダドス usando o ID da pessoa
+
+ID da ペッソア、ヴァモスエスコルハーを使用する agora que voce compreende o conpilede o de compilar datasets `email` como ID da pessoa para cada データセット。
 
 ![デモ](./images/cja15.png)
 
-各データセットに移動して、ユーザー ID を更新します。
+Acesse cada dataset para autizar o ID da pessoa.
 
 ![デモ](./images/cja12a.png)
 
-次に、 `email` をクリックします。
+アゴラプレエンチャオカンポ ID da pessoa escolhendo o `email` リスタサスペンサ。
 
 ![デモ](./images/cja17.png)
 
-3 つのデータセットを結び付けたら、続行する準備が整いました。
+Depois de compilar os três datasets, estamos prontos para continuar.
 
 | データセット | 人物 ID |
 | ----------------- |-------------| 
@@ -109,22 +110,21 @@ CJA と Platform の間でおこなわれた様々な接続を、以下に示し
 | デモシステム — 音声アシスタントのイベントデータセット（グローバル v1.1） | 電子メール |
 | デモシステム — コールセンターのイベントデータセット（グローバル v1.1） | 電子メール |
 
-また、すべてのデータセットで、次のオプションが有効になっていることを確認する必要があります。
+Voce também precisa garantir que, para cada dataset, essa opçoes esestejam habilityadas:
 
-- すべての新しいデータをインポート
-- 既存のすべてのデータをバックフィル
+- Importar todos os novos dados
+- Preencher todos os dados の存在
 
 クリック **データセットを追加**.
 
 ![デモ](./images/cja16.png)
 
-クリック **保存** 次の演習に進みます。
-を作成した後、 **接続** CJA でデータが使用可能になるまでに数時間かかる場合があります。
+クリック **保存** e vá para o próximo exercício. デポワ・ド・クリアスア **接続**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
 
 ![デモ](./images/cja20.png)
 
-次のステップ： [4.3 データビューの作成](./ex3.md)
+プロクシマエタパ： [4.3 Crie uma Visualização de Dados](./ex3.md)
 
-[ユーザーフローに戻る 4](./uc4.md)
+[レトルナルパラフルクソデウサリオ 4](./uc4.md)
 
-[すべてのモジュールに戻る](./../../overview.md)
+[レトルナーパラトドスオスモドゥロス](./../../overview.md)

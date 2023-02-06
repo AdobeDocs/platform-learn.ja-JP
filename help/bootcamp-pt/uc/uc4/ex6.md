@@ -5,31 +5,30 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 1%
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
-# 4.6 インサイトから行動へ
+# 4.6 Dos のインサイト àação
 
-## 目標
+## Objectivos
 
-- Customer Journey Analytics
-- Real-Time CDPとAdobe Journey Optimizerでそのオーディエンスを使用
+- Entenda como criar um público com base em visão coletada noCustomer Journey Analytics
+- esse público no CDP em tempo real e no Adobe Journey Optimizerを使用
 
-## 4.6.1 オーディエンスの作成と公開
+## 4.6.1 Crie uma audiencia e publique-a
 
-プロジェクトで、という名前のフィルターを作成しました。
+エム・セウ・プロジェト、ボークリウ・アム・フィルター。
 
-## 4.6.2 セグメントの一部としてのオーディエンスの使用
+## 4.6.2 use sua audiência como parte de um segmento
 
+## 4.6.2 seu segmento na Real-Time CDP em tempo real を使用
 
-## 4.6.2 Real-Time CDPでのセグメントの使用
-
-## 4.6.3 Adobe Journey Optimizerでのセグメントの使用
+## 4.6.3 seu segmento no Adobe Journey Optimizerを使用
 
 [ユーザーフローに戻る 4](./uc4.md)
 
-[すべてのモジュールに戻る](./../../overview.md)
+[ボルタル・パラ・トドス・モドゥロス](./../../overview.md)

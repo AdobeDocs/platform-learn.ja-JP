@@ -5,85 +5,85 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '516'
 ht-degree: 3%
 
 ---
 
-# 1.3 セグメントの作成 — UI
+# 1.3 Crieum segmento - UI
 
-この演習では、Adobe Experience Platformのセグメントビルダーを使用してセグメントを作成します。
+Neste exercício, vocêirá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
 
-## Story
+## ヒスタミン
 
-に移動します。 [Adobe Experience Platform](https://experience.adobe.com/platform). ログイン後、Adobe Experience Platformのホームページに移動します。
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer ログイン， vocêirá acessar a página inicial da Adobe Experience Platform.
 
 ![データ取得](./images/home.png)
 
-続行する前に、 **サンドボックス**. 選択するサンドボックスの名前はです ``Bootcamp``. これを行うには、 **[!UICONTROL 実稼動版]** 画面の上の青い線で表示されます。 適切な [!UICONTROL サンドボックス]画面が変更され、専用の [!UICONTROL サンドボックス].
+アンテス・デ・コニュナール、ヴォーチェ・プレシャ・セレクショナー・アム **サンドボックス**. サンドボックスをユーザーセレクショナド é にすることはできません ``Bootcamp``. É porivel fazer isso clicando no texto **[!UICONTROL 実稼動版]** ナ・リンハ・アズール・ナ・パルテ・スーペリア・ダ・テラ Depois de selecionar o sandbox apporiado, você verá a tela mudando e agora vocestá em seu [!UICONTROL サンドボックス] 決め手
 
 ![データ取得](./images/sb1.png)
 
-左側のメニューで、に移動します。 **セグメント**. このページでは、既存のすべてのセグメントの概要を確認できます。 をクリックします。 **+セグメントを作成** ボタンをクリックして、新しいセグメントの作成を開始します。
+メニューが見つからない、アクセス **セグメント**. Nesta página, vocêtem uma visão geral de todos segmentos existentes. クリケ・ノ・ボトン+クリアル・セグメントパラ・コメサールはクリアル・ノボ・セグメントと呼ばれる。
 
 ![セグメント化](./images/menuseg.png)
 
-新しいセグメントビルダーに移動すると、 **属性** メニューオプションと **XDM 個人プロファイル** 参照。
+Quando estiver no no novo construtor de segmentos, vocêirá perceber imediatamente a opção de menu **属性** リファレンシアド **XDM 個人プロファイル**.
 
 ![セグメント化](./images/segmentationui.png)
 
-XDM はエクスペリエンスビジネスを強化する言語なので、XDM もセグメントビルダーの基盤です。 Platform で取り込まれるすべてのデータは XDM に対してマッピングする必要があり、そのため、データの取得元に関係なく、すべてのデータは同じデータモデルの一部になります。 これにより、セグメントを作成する際に大きなメリットが得られます。この 1 つのセグメントビルダー UI から、同じワークフロー内の任意の接触チャネルからのデータを組み合わせることができます。 セグメントビルダーで作成したセグメントは、Adobe Target、Adobe Campaign、Adobe Audience Managerなどのソリューションに送信してアクティベーションできます。
+Como o XDM é は言語的な que alimenta o setor de experiência, o XDM tambémémé は基本的な para o construtor de segmentos です。 Todos os dados ingeridos na platforma devem ser mapeados em relação ao XDM e, portanto, todos dados se tornam parte do mesmo modelo de dados, independentemente da da origem dados. イッソ・オフェレセウマグランデ・バンタゲムアオクリアーセグメントス、ポイスはパーティシャルデッサインターフェイス do usuário do construtor de segmento、é 占有コンバイナー dados de qualquer origem no mesmo fluxo de trabalho。 Os segmentos criados no Construtor de segmentos podem ser envidados solutionses como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-次に、製品を表示したすべての顧客のセグメントを作成する必要があります **Real-Time CDP**.
+アゴラヴォーチャ・クリアル・アム・セグメント・デ・トドス・クライアンテス・クイアリザラム・オ・プロダクト **Real-Time CDP**.
 
-このセグメントを構築するには、エクスペリエンスイベントを追加する必要があります。 すべてのエクスペリエンスイベントは、 **イベント** アイコン **フィールド** メニューバー
+Para construir este segmento, você precisa adicionar um Evento de experiência. ベントス・デ・エクスペリエンシア・クリカンド・ノ・イコーネ **イベント** ナバラ・デ・メニュー **フィールド**.
 
 ![セグメント化](./images/findee.png)
 
-次に、最上位レベルが表示されます。 **XDM ExperienceEvents** ノード。 クリック **XDM ExperienceEvent**.
+Em seguida, vocêverá o nó **XDM ExperienceEvents** 優れていると思います。 クリック **XDM ExperienceEvent**.
 
 ![セグメント化](./images/see.png)
 
-に移動します。 **製品リスト項目**.
+Acesse **製品リスト項目**.
 
 ![セグメント化](./images/plitems.png)
 
-選択 **名前** をクリックし、 **名前** オブジェクトをセグメントビルダーキャンバス上から **イベント** 」セクションに入力します。 次の内容が表示されます。
+選択 **名前** ～に対して無礼を言う **名前** メニュー à esquerda na tela do construtor de segmentos na seção **イベント**. Em seguida, o seguinte será exibido:
 
 ![セグメント化](./images/eewebpdtlname.png)
 
-比較パラメーターは次のようにする必要があります。 **次と等しい** 入力フィールドに、 **リアルタイム CDP**.
+O parâmetro de comparação deve ser **次と等しい** e, campo de entrada, insira **リアルタイム CDP**.
 
 ![セグメント化](./images/pv.png)
 
-セグメントビルダーに要素を追加するたびに、 **推定を更新** 」ボタンを使用して、セグメント内の母集団の新しい推定を取得します。
+センプレク・アディシオナール・エレメントトアオコンストラクター・デ・セグメントス、ヴォクレポード・クリカル・ノ・ボサン **推定を更新** para obter uma nova estimativa da população em seu segmento
 
 ![セグメント化](./images/refreshest.png)
 
-形式 **評価方法**&#x200B;を選択します。 **Edge**.
+パラ **評価方法**, selecone **Edge**.
 
 ![セグメント化](./images/evedge.png)
 
-最後に、セグメントに名前を付けて保存します。
+ポールフィム、ヴァモスダルムノームアオセグメントエサルバロ。
 
-命名規則として、次を使用します。
+コモモデロデノメンクラトゥラ、次を使用します。
 
 - `yourLastName - Interest in Real-Time CDP`
 
-次に、 **保存して閉じる** 」ボタンをクリックしてセグメントを保存します。
+エム・セグイダ、クリケ・ノ・ボトン **保存して閉じる** para salvar seu segmento
 
 ![セグメント化](./images/segmentname.png)
 
-これで、セグメントの概要ページに戻り、セグメントに適合する顧客プロファイルのサンプルプレビューが表示されます。
+Agora vocirá retornarà página de visão geral do segmento, onde verá uma visualização de amostra dos perfis de clientes que qualificam para o seu segmento.
 
 ![セグメント化](./images/savedsegment.png)
 
-これで、次の演習に進み、Adobe Targetでセグメントを使用できます。
+アゴラヴォーポード継続 no próximo exercício e usar seu segmento com o Adobe Target.
 
-次のステップ： [1.4 措置をとる：セグメントをAdobe Targetに送信](./ex4.md)
+プロクシマエタパ： [1.4 Ação:enviu segmento para o Adobe Target](./ex4.md)
 
-[ユーザーフローに戻る 1](./uc1.md)
+[レトルナルパラフルクソデウサリオ 1](./uc1.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

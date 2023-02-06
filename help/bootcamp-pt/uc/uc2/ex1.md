@@ -5,38 +5,38 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '368'
 ht-degree: 2%
 
 ---
 
-# 2.1 Web サイトにアクセスし、アカウントを作成する
+# 2.1 サイトへの訪問 e crie sua conta
 
-## コンテキスト
+## Contexto
 
-未知から既知へのジャーニーは、最近のブランドの中で最も重要なトピックの 1 つで、獲得から定着までのカスタマージャーニーです。
+ヨルナダ・ド・デスコンヘキド・アオ・コンヘキド・アオ・ドス・トピコス・マイス・マイス・インポータント・パラはマルカス・アトルメンテ、アシム・コモ・ヨルナダ・ド・クリエンテ、ダ・アクシソオ・アリテンサオ。
 
-Adobe Experience Platformはこの旅で大きな役割を果たしています。 プラットフォームはコミュニケーションの脳です。 **経験記録システム**.
+Adobe Experience Platform・デセンペニャ・パペル・インポータンテ・ネッサ・ヨルナダ。 A plataformaé o cérebro da comunicação, o **経験記録システム**.
 
-プラットフォームとは、「顧客」という単語が、既知の顧客だけではなく、幅広い環境を指します。 Web サイト上の不明な訪問者は、Platform の観点からの顧客でもあるので、不明な訪問者としての行動もすべて Platform に送信されます。 このアプローチにより、訪問者が最終的に既知の顧客になったとき、ブランドはその時点以前の出来事も視覚化できます。 これは、アトリビューションとエクスペリエンスの最適化の観点から役立ちます。
+プラタフォルマエウムアンビエンテエムは、パラヴラクライアントエングロバマイスドクライアントコンヘキドスをクライアント。 Um visitante desconhecido no site tambéméum cliente do ponto de vista da Plataforma e, comotal, todo o comportamento de um visitante desconhecido também envida Plataforma. Graças a essa abordagem, quando esse visitante eventualmente se torna um cliente conhecido, uma marca também pode visualizar o que anteceu antes daquele momento. Isso ajuda は、特定の de uma の視点で de otimização de attribução e experiência。
 
-## カスタマージャーニーフロー
+## フラクソダヨルナダドクライアンテ
 
-に移動します。 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). クリック **すべて許可**. 前のユーザーフローでの閲覧行動に基づいて、Web サイトのホームページにパーソナライゼーションが表示されます。
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). クリック **すべて許可**. com base no seu comportamento de navegação no fluxo de usário anterio, vocêverá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-画面の左上隅にあるAdobeロゴアイコンをクリックして、プロファイルビューアを開きます。 プロファイルビューアパネルと、リアルタイム顧客プロファイルを **Experience CloudID** を現在不明なこの顧客の主な識別子として使用する。
+クリケ・ノ・イコーネ・ド・ロゴシポ・ダ・Adobeは、最高のエスカルド・デ・テラ・パラ・アブリルとは言えません。 Verifique o painel do Visualizador de perfile e no Perfil do cliente em tempo real com o **Experience CloudID** como identificador primário para ste clientte que aindaé desconhecido
 
 ![デモ](./images/pv1.png)
 
-また、顧客の行動に基づいて収集されたすべてのエクスペリエンスイベントを表示することもできます。
+Voce também pode ver todos os Eventos de experiência coletados com base no comportamento d cliente.
 
 ![デモ](./images/pv3.png)
 
-次をクリック： **プロファイル** アイコンをクリックします。
+クリケ・ノ・イコーネ **プロファイル** 上等のディレイトダテラは無い。
 
 ![デモ](./images/pv4.png)
 
@@ -44,30 +44,30 @@ Adobe Experience Platformはこの旅で大きな役割を果たしています�
 
 ![デモ](./images/pv5.png)
 
-フォームのすべてのフィールドに入力します。 電子メールアドレスと電話番号には、実際の値を使用します。電子メールと SMS の配信に関する後の演習で使用されるからです。
+プレエンチャ・トドス・カンポスはマヌラリオをする。 um valor real para endereço de e-mail e número de telefone, pois sera usado em exercícios posterores para envio de e-mail e SMS を使用します。
 
 ![デモ](./images/pv7.png)
 
-下にスクロールして、 **登録**.
+役割パラバイクソクリック **登録**.
 
 ![デモ](./images/pv8.png)
 
-これが見えます
+エムセギダ、o seguinte será exibido.
 
 ![デモ](./images/pv9.png)
 
-このメールも届きます：
+Voce também receberá o seguinte 電子メール：
 
 ![デモ](./images/pv10.png)
 
-数分後に、次のメールも届きます。
+E alguns minutos depois, você também receberá o seguinte e-mail:
 
 ![デモ](./images/pv11.png)
 
-次に、このオンボーディングジャーニーの設定方法を見てみましょう。
+Vamos conferir seguir como essa jornada de onboarding foi configurada 。
 
-次のステップ： [2.2 イベントの作成](./ex2.md)
+プロクシマエタパ [2.2 クリーセウエベント](./ex2.md)
 
-[ユーザーフローに戻る 2](./uc2.md)
+[レトルナルパラフルクソデウサリオ 2](./uc2.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

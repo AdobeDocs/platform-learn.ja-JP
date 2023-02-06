@@ -5,82 +5,83 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 1%
+source-wordcount: '990'
+ht-degree: 0%
 
 ---
 
 # 4.1Customer Journey Analytics101
 
-## 目標
+## Objectivos
 
-- CJA アプリケーションサービスについて
-- CJA の位置付け方法を学ぶ
-- CJA ワークフローについて：データ接続からインサイトへ
+- CJA のエンテンダオクエ
+- エンテンダクアルエオパペルド CJA
+- CJA を実行するワークフローのエンテンダ：ダコネサンデダオスの洞察
 
-## 4.1.1Customer Journey Analyticsとは
+## 4.1.1 O queé oCustomer Journey Analytics?
 
-Customer Journey Analytics(CJA) は、ビジネスインテリジェンスチームとデータサイエンスチームに対し、クロスチャネルデータ（オンラインとオフライン）のステッチと分析のためのツールキットを提供します。 CJA 内の機能は、複雑なマルチチャネルカスタマージャーニーにコンテキストと明確性を提供します。 提供されるコンテキストにより、顧客コンバージョンプロセスからの痛点を取り除くこと、および最も重要な瞬間に対する優れたエクスペリエンスを設計および提供することに関する実用的なインサイトが得られます。
+OCustomer Journey Analytics(CJA) fornece uma インターフェイス em em que os times de Analytics, Negócios e Tecnologia conseguem unir todos dados dados da companisar a jornada cross-channel (online e offline) do cliente de ponta ponta ponta。 O CJAé capaz de fornecer contexto e clareza para essa jornada, trazendo uma visiono acionável em cima dificuldades no processo de converso e possibilitando o planejamento de experincias perantes e personanos ponanos ponas pontos pontos pontos pontos pontos pontos montos montos mantos mantos mantos mantos 関連性が関連性が関連性が関連性です。
 
-CJA はAnalysis WorkspaceをAdobe Experience Platformの上に置きます。 Adobe Experience Platformはコミュニケーションとオーケストレーションの頭脳で、CJA との連携により、ブランドはすべてのデータをコンテキスト化し視覚化し、視覚化できるようになり、ビジネスチームと Insight チームは、オンラインからオフラインのカスタマージャーニーまでを分析できます。
+O CJA traz o Analysis Workspace conectado a Adobe Experience Platform. Adobe Experience Platformo cérebro da comunicação e da orquestração e, com o CJA, marcas agora podem contextualizar e visualar toes dados, para as equipes de negócios e insights possam eles, analisando toda on-line para-line do cliente cline clinte
 
-ビジネスチームと Insight チームは、Analysis Workspaceのドラッグ&amp;ドロップ、ポイント&amp;クリックで操作しやすい UI を使用して、CJA と話し合い、質問をし、その場で回答を得ることができます。
+デ・ネグシオス e インサイト podem conversar com o CJA, fazer perguntas e obter respostas em tempo real com インターフェイス do usuário de arrastar e soltar, apontar e clicar e fcil de usar do Analysis Workspace.
 
 ![デモ](./images/cja-adv-analysis1.png)
 
-## 4.1.2 主な利点
+## 4.1.2 プリンシパはバンタゲン
 
-お客様にとっての主なメリットは次の 3 つです。
+Os três principais benepícios para os clientes sao:
 
-- 誰でもインサイトを利用できるようにする機能（データアクセスの民主化など）
-- コンテキストジャーニーで顧客を確認する機能（つまり、データをオンラインとオフラインの両方の複数のチャネルにまたがって順番に視覚化できます）
-- を必要とせずにデータの力を活用する機能（つまり、通常の人がデータを使用して、マーケティング活動のための深いインサイトと分析を解き放つことができます）
+- A capasidade de dispononibilizar insights para todos (ou seja, democratizar o acesso aos dados).
+- A capasidade de ver o cliente em joruma jornada context (ou seja, os dados podem ser visualizados sequencialmente, abrangendo múltiplos canais on-line e off-line).
+- A capasidade de aproveitar o poder dos dados sem que haja a nesidade (ou seja, permite que indivíduos usem dados para desbloquears insights e análises profundas profundas para ativação de marketing)
 
-## 4.1.3 なぜCustomer Journey Analyticsを選ぶのか
+## 4.1.3 ## 4.1.3 Por que escolher oCustomer Journey Analytics?
 
-CJA は、Power BI、Microstrategy、Locker、Tableau などの現在の BI アプリケーションを置き換えることを目的としていません。 これらの BI アプリケーションは、データを視覚化して会社のダッシュボードを作成し、組織の全員が重要な指標をすばやく確認できるようにすることを目的としています。\
-CJA の目標は、マーケティングチームとビジネスチームに分析力をもたらし、そのペルソナにとって「必須」の分析ツールにすることです。
+O CJA nano se destina a subsituir um aplicativo de BI atual, comoPower BI, Microstrategy, Locker ou Tableau. O objetivo de BI ビジュアライゼーションの aplicativos de BI ビジュアライゼーションの dados para criar painéis corporativos para que em uma organização possam ver métricas importantes rapidamente. O objetivo do CJAé trazer poder de análise para de marketing e Negócios, tornando-o uma ferramenta de análise obrigatoria para pessoas
 
-従来、BI アプリケーションは、真の顧客インテリジェンスを有効にすることができませんでした。
 
-- アトリビューションもカスタマージャーニー分析も実行できません。
-- BI アプリケーションは、事前に質問を知る必要がある
-- インタラクティブクエリは、データベースの構造によって制限されます
-- SQL スキルが必要です。
-- BI アプリケーションは、なぜ何が起きたのかを尋ねる能力を与えません。
-- BI アプリケーションは、顧客タッチポイントに直接接続していません。
 
-上記のため、ビジネスユーザーやアナリストは、ほぼ即座にデッドエンドをヒットし、高価で、遅く、柔軟性がなく、行動のシステムから切り離された分析を行います。
+Tradicionalmente, os applicativos de BI têm sido incapazes de perimiter a verdadeira inteligência do cliente:
 
-CJA を使用すると、オフラインとオンラインのデータを使用して、カスタマージャーニーを 360 の視点で把握し、インサイトを得る時間を短縮し、何が起きたのかとそれに対する対応方法をビジネスユーザーに独立させることができます。
+- エレスナンオポデムファザーアトリブイサオエナンファゼムアナリセスデヨルナダドクライアンテ
+- Os aplicativos de BI precisam saber a pergunta com antecedência
+- 領事として、サン・リミタダス・ペラ・エストルトゥラ・ド・バンコ・デ・ダドス
+- ハビリダデス・デ・SQL サオ・ニサリアス。
+- Os aplicativos de BI não permitem que você pergunte o motiveo de um acontecimento.
+- Os aplicativos de BI não têm conexão direta com os pontos de contato do cliente.
+
+ポルタント、ウスアリオス・デ・ネゴシオス・アナリスタス・チェガムはベコスの sem saída quase imediatamente, tornando a análise cara, lenta, inflexível e desconectada dos sistemas de ação.
+
+com o CJA voê pode ter uma visão completa da jornada do cliente, usando dados offline e online, com as ferramentas certas para reduzir o tempo de insight, tornando os usuários de negcios independentes por que algo algo algo aco come como como re como respor a como respoder a isso.
 
 ![デモ](./images/cja-use-case.png)
 
-## 4.1.4Customer Journey Analyticsワークフロー
+## 4.1.4 Compreenda o fluxo de trabalho doCustomer Journey Analytics
 
-次の演習を開始する前に、データを視覚化して深いインサイトを得るために、Adobe Experience Platformから CJA にデータを取り込むために必要な手順を理解することが重要です。 これを CJA ワークフローと呼びます。 次の図を見てみましょう。
+Antes de iniciar os próximos expercícios,é essencial compreender quais etapas são nesarias para trazer dados da da da da da da para o CJA para visualizá-los e obter alguns insights profundos. É o que chamamos de fluxo de trabalho do CJA. バモス検証：
 
 ![デモ](./images/cja-work-flow.jpg)
 
-上記の手順を開始する前に、手順 0(Adobe Experience Platformで使用できるデータを理解するため ) を忘れないでください。
+アンテス・デ・イニシアはエタパ・アシマ、ナン・セ・エスケサ・ダ・エタパ 0、ク・コンプレエンダー・オス・ダドス・エスト・ディスポニヴェイス・ナ・Adobe Experience Platform。
 
-**ゴミ入りゴミ出し。** 覚えてる？ 使用可能なデータと、Adobe Experience Platformのスキーマの設定方法を明確に理解する必要があります。 Adobe Experience Platformのデータを理解すると、データ接続部分だけでなく、ビジュアライゼーションの作成や分析の際にも、作業が容易になります。
+**ゴミ入りゴミ出し。** Voêdeve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são configurados. coisas, nano só na parte de conexão de dados, mas também na hora de construir visualizaçois, es e fazer análises としてコンプレエンダーオス dados que estão na Adobe Experience Platform fazer análises.
 
-## 4.1.5 手順 0:Adobe Experience Platformのスキーマとデータセットについて
+## 4.1.5 Etapa 0:Compreender esquemas e データセット da Adobe Experience Platform
 
-次の URL に移動して、Adobe Experience Platformにログインします。 [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Faça ログイン na Adobe Experience Platform accessando a URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-ログイン後、Adobe Experience Platformのホームページに移動します。
+Depois de fazer ログイン， vocêirá acessar a página inicial da Adobe Experience Platform.
 
 ![データ取得](../uc1/images/home.png)
 
-続行する前に、 **サンドボックス**. 選択するサンドボックスの名前はです ``Bootcamp``. これを行うには、 **[!UICONTROL Prod]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスに移動します。
+アンテス・デ・コニュナール、ヴォーチェ・プレシャ・セレクショナー・アム **サンドボックス**. サンドボックスをユーザーセレクショナド é にすることはできません ``Bootcamp``. ボーチュポーデ・ファザー・イッソ・クリカンド・ノ・イコーネ **[!UICONTROL Prod]** 上等のディレイトダテラは無い。 Depois de selecionar o sandbox apporiado, você verá a tela mudando e agora voceêestá em seu sandbox dedicado.
 
 ![データ取得](../uc1/images/sb1.png)
 
-Adobe Experience Platformでこれらのスキーマとデータセットを確認してください。
+スキーマがAdobe Experience Platformのデータセットであることを確認します。
 
 | データセット | スキーマ |
 | ----------------- |-------------| 
@@ -88,23 +89,26 @@ Adobe Experience Platformでこれらのスキーマとデータセットを確�
 | デモシステム — コールセンターのイベントデータセット（グローバル v1.1） | デモシステム — コールセンター（グローバル v1.1）のイベントスキーマ |
 | デモシステム — 音声アシスタントのイベントデータセット（グローバル v1.1） | デモシステム — 音声アシスタント用のイベントスキーマ（グローバル v1.1） |
 
-少なくとも次のような項目を確認しておく必要があります。
+Certifique-se de ter verificado menos:
 
 - ID:CRMID、phoneNumber、ECID、電子メール。 プライマリ識別子はどの ID で、セカンダリ識別子はどれですか。
 識別子を見つけるには、スキーマを開き、オブジェクトを確認します `_experienceplatform.identification.core`. スキーマを見る [デモシステム — Web サイトのイベントスキーマ (Global v1.1)](https://experience.adobe.com/platform/schema).
 
+- 識別子：CRMID、phoneNumber、ECID、電子メール。 クァイスはサンオス identificadores primários, quais são os identificadores secundários?
+ボケポード・エンコントラール・アブリンド・アム・スキーマ・オブジェトのオブザンド `_experienceplatform.identification.core`. スキーマの検証 [デモシステム — Web サイトのイベントスキーマ (Global v1.1)](https://experience.adobe.com/platform/schema).
+
 ![デモ](./images/identity.png)
 
-- スキーマ内のコマースオブジェクトの参照 [デモシステム — Web サイトのイベントスキーマ (Global v1.1)](https://experience.adobe.com/platform/schema).
+- o objeto de comércio dentro do スキーマを探索 [デモシステム — Web サイトのイベントスキーマ (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![デモ](./images/commerce.png)
 
-- すべての [データセット](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) データを見て
+- todos os を視覚化 [データセット](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) エベリケオスダドス
 
-これで、Customer Journey AnalyticsUI の使用を開始する準備が整いました。
+アゴラヴォーケスタ・プロント・パラ・コメサル a usar a interface do usário doCustomer Journey Analytics。
 
-次のステップ： [4.2Customer Journey AnalyticsでのAdobe Experience Platformデータセットの接続](./ex2.md)
+プロクシマエタパ： [データセットをAdobe Experience PlatformなしCustomer Journey Analytics](./ex2.md)
 
-[ユーザーフローに戻る 4](./uc4.md)
+[レトルナルパラフルクソデウサリオ 4](./uc4.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

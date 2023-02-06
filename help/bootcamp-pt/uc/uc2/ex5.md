@@ -5,88 +5,89 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '269'
+ht-degree: 0%
 
 ---
 
-# 2.5 モバイルアプリをインストールして使用する
+# 2.5 Instale e use o aplicativo móvel
 
 
-## モバイルアプリのインストール
+## Instale o aplicativo movel
 
-アプリをインストールする前に、を有効にする必要があります **トラッキング** をiOSデバイスで使用できます。 これをおこなうには、に移動します。 **設定** > **プライバシーとセキュリティ** > **トラッキング** およびオプションを確認します。 **アプリの追跡リクエストを許可**.
+Antes de instalar o applicativo,é nitário habilitar Rastreamento no seu dispositivo iOS. Para isso, acesse Configuraçoes > Privacidade e segurança > Rastreamento e confirme a opção Peritrir que os applicativos solicititem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Apple App Storeに移動して、を検索します。 `aepmobile-bootcamp`. クリック **インストール** または **ダウンロード**.
+App Store・ダ・Apple・エペスク `aepmobile-bootcamp`.\
+クリック **Instalar** ou **ダウンロード**.
 
 ![DSN](./../uc3/images/app1.png)
 
-アプリがインストールされたら、 **開く**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-「**OK**」をクリックします。
+クリック **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-クリック **許可**.
+クリック **権限**.
 
 ![DSN](./../uc3/images/app3.png)
 
-クリック **同意します**.
+クリック **コンコルド**.
 
 ![DSN](./../uc3/images/app7.png)
 
-クリック **アプリの使用中に許可**.
+クリック **アプリの Permiter enquanto uso**.
 
 ![DSN](./../uc3/images/app8.png)
 
-クリック **許可**.
+クリック **権限**.
 
 ![DSN](./../uc3/images/app5.png)
 
-これで、ホームページ上のアプリで、カスタマージャーニーを経由する準備が整いました。
+アゴラヴォーケスタノ・アプリカティボ、ナ・パジナ・イニシャル、プロント (a) パラ・ヴェリフィカル・トダ・ヨルナダ・クライアンテ。
 
 ![DSN](./../uc3/images/app12.png)
 
-## カスタマージャーニーフロー
+## フラクソダヨルナダドクライアンテ
 
-まず、ログインする必要があります。 「**ログイン**」をクリックします。
+Primeiramente,é nepisario fazer o login. クリック **ログイン**.
 
 ![DSN](./../uc3/images/app13.png)
 
-前の演習でアカウントを作成した後、Web サイトでこれを確認しました。 次に、アプリで作成したアカウントの電子メールアドレスを再利用してログインする必要があります。
+Depois de criar sua conta nos excios anteriores, issoé exibido no site. Agora nesario reutilizar o endreço de e-mail da conta cque voccrio uno applicativo para fazer o login.
 
 ![デモ](./../uc3/images/pv1.png)
 
-Web サイトで使用したメールアドレスをここに入力し、 **ログイン**.
+Digite o endreço de e-mail que vocêsou no site e clique em **ログイン**.
 
 ![DSN](./../uc3/images/app14.png)
 
-ログインしていることを確認するメッセージが表示され、プッシュ通知が送信されます。
+Vocêrecerbera uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-アプリのホームページに戻ると、追加の機能が表示されます。
+レトルネ・パラ・ア・パジナ・イニシャル・ド・アプリカティボ e os recursos adicionais irano apacerer.
 
 ![DSN](./../uc3/images/app17.png)
 
-に移動します。 **製品**. 任意の製品（この例では）をクリックします。 **行くコーヒー**.
+Acesse **製品**. Cliem qualquer producto、ネストされた例： **行くコーヒー**.
 
 ![DSN](./images/app19.png)
 
-次の項目が表示されます。 **行くコーヒー** 製品ページに表示されます。 クリック **購入**.
+Voêverá a página do produto **行くコーヒー** アプリケーティボなし クリック **購入**.
 
 ![DSN](./images/app20.png)
 
-これでこの練習が終わり、次の練習に向けて準備が整いました。
+アゴラヴォーカルテルミノーは、exercício e está pronto proximas atividades として設定します。
 
-次のステップ： [2.6 コールセンターにおけるパーソナライゼーション](./ex6.md)
+プロクシマエタパ： [ 2.6 Personalização no call center](./ex6.md)
 
-[ユーザーフローに戻る 2](./uc2.md)
+[レトルナルパラフルクソデウサリオ 2](./uc2.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

@@ -5,22 +5,22 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4 ジャーニーのテスト
+# 2.4 テストスアヨルナダ
 
-## カスタマージャーニーフロー
+## フラクソダヨルナダドクライアンテ
 
-新しい、クリーンな匿名ブラウザーウィンドウを開き、に移動します。 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). クリック **すべて許可**. 前のユーザーフローでの閲覧行動に基づいて、Web サイトのホームページにパーソナライゼーションが表示されます。
+アブラウマノヴァジャネラアノニマドナヴガドルエヴァパラ [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). クリック **すべて許可**. com base no seu comportamento de navegação no fluxo de usário anterio, vocêverá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8a.png)
 
-次をクリック： **プロファイル** アイコンをクリックします。
+クリケ・ノ・イコーネ **プロファイル** 上等のディレイトダテラは無い。
 
 ![デモ](./images/web8b.png)
 
@@ -28,32 +28,33 @@ ht-degree: 2%
 
 ![デモ](./images/pv5.png)
 
-フォームのすべてのフィールドに入力します。 電子メールアドレスと電話番号には、実際の値を使用します。電子メールと SMS の配信に関する後の演習で使用されるからです。
+プレエンチャ・トドス・カンポスはマヌラリオをする。 um valor real para endereço de e-mail e número de telefone, pois sera usado em exercícios posterores para envio de e-mail e SMS を使用します。
 
 ![デモ](./images/pv7a.png)
 
-下にスクロールします。 次に、演習 2.2 で作成したカスタムイベントの eventID を入力する必要があります。次の ID を参照してください。
+役割のパラバイクソ。 Agora voce inserir o eventID do seu evento personalizado que voccrio no expercicio 2.2. Vocêpode encontrá-lo aqui:
 
 ![ACOP](./images/payloadeventID.png)
 
-イベント ID は、作成したジャーニーをトリガー化するために、Adobe Experience Platformに送信する必要があるものです。 この例では eventID です。 `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+O eventIDé o que precisa ser enviado a Adobe Experience Platform para acionar a jornada que vocurstruiu. eventID ネストの例：
+`19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-「 」フィールドに eventID を入力します。 **アカウント作成イベント ID** をクリックし、 **登録**.
+Preencha または eventID no campo **アカウント作成イベント ID** e クライアント **登録**.
 
 ![デモ](./images/pv8a.png)
 
-これが見えます
+Em seguida, a tela abaixo será exibida:
 
 ![デモ](./images/pv9.png)
 
-また、この電子メールも届きます。この電子メールは、この演習の一環として自分で作成した電子メールです。
+ヴォーチャンベム・レセベラ・エステ E メール、ケ・o・E メール・ク・ヴォーチャン・メスモ・クリオ・コモ・パルテ・デス・エステ・エクスペリシオ。
 
 ![デモ](./images/pv10a.png)
 
-これで、この練習が完了しました。
+ヴォーテルミヌーはエキスペルシオをテストした。
 
-次のステップ： [2.5 モバイルアプリをインストールして使用する](./ex5.md)
+プロクシマエタパ： [2.5 Instale e use o aplicativo móvel](./ex5.md)
 
-[ユーザーフローに戻る 2](./uc2.md)
+[レトルナルパラフルクソデウサリオ 2](./uc2.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

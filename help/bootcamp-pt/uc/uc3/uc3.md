@@ -5,43 +5,43 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 4%
+source-wordcount: '205'
+ht-degree: 2%
 
 ---
 
-# （三）物理とデジタルの組み合わせ
+# 3.レトルナールパラトドスオスモドゥロス
 
-## 学習内容
+## Objetivos de aprendizado
 
-## 前提条件
+## Pré-requisitos
 
-- Adobe Experience Platformへのアクセス： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform Data Collection へのアクセス： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- デモ Web サイトへのアクセス
+- Adobe Experience Platform・アセソ：  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso a coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração
 
 >[!IMPORTANT]
 >
->このチュートリアルは、特定の bootcamp 形式を容易にするために作成されました。 アクセスできない特定のシステムおよびアカウントを使用します。 アクセスがなくても、この非常に詳細な内容を読むことで、多くを学ぶことができると思います。 ブートキャンプの参加者で、アクセス資格情報が必要な場合は、Adobe担当者に連絡し、必要な情報を伝えてもらってください。
+>Este チュートリアル foi criado para faciliar um formato specífico de bootcamp. Sistemas e contas specíficos quais vocais vocaê pode não ter acesso são utilizados neste チュートリアル Mesmo sem acesso, vocêainda pode aprender muito com a leitura deste conteúdo detalhado. Se vocé um particante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da representante daAdobepara recever as informationçoes nesárias.
 
-## 演習
+## エクスペシオス
 
-[3.1 モバイルアプリを使用し、ビーコンエントリをトリガーする](./ex1.md)
+[3.1 aplicativo movel e acione sinalizador beacon の使用](./ex1.md)
 
-この演習では、イベントの設定方法を学びます。
+Neste expercicio, vocêirá aprender como configurar um evento.
 
-[3.2 イベントの作成](./ex2.md)
+[3.2 クリーセウエベント](./ex2.md)
 
-この演習では、イベントの設定方法を学びます。
+Neste expercicio, vocêirá aprender como configurar um evento.
 
-[3.3 ジャーニーとプッシュ通知の作成](./ex3.md)
+[3.3 クリースアヨルナダ電子通知のプッシュ](./ex3.md)
 
-この演習では、ジャーニーとプッシュ通知を設定する方法、およびイベントとメッセージをそのジャーニーにリンクする方法について説明します。
+Neste expercício, vocêirá aprender como configurar uma jornada e uma notificação push e como vinciul seu evento e mensagem para a jornada.
 
-[3.4 ジャーニーのテスト](./ex4.md)
+[3.4 テストスアヨルナダ](./ex4.md)
 
-この演習では、ジャーニーを設定する方法と、イベントとメッセージをそのジャーニーにリンクする方法を学びます。
+Neste expercício, vocêirá aprend como configurar uma jornade e como vinciul seu evento e mensagem para a jornada.
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

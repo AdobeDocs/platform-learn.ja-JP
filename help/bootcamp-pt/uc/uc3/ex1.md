@@ -5,34 +5,36 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# 3.1 モバイルアプリを使用し、ビーコンエントリをトリガーする
+# 3.1 aplicativo móvel e acione um ビーコンの使用
 
-## モバイルアプリのインストール
+## Instale o aplicativo movel
 
 アプリをインストールする前に、を有効にする必要があります **トラッキング** をiOSデバイスで使用できます。 これをおこなうには、に移動します。 **設定** > **プライバシーとセキュリティ** > **トラッキング** およびオプションを確認します。 **アプリの追跡リクエストを許可**.
 
+アンテス・デ・インスタラー・オ・アプリカティボ，é nepiário habilitar **Rastreamento** seu に反応しないiOS アクセス・パラ・イッソ **設定** > **Privacide e segurança** > **Rastreamento** オパサンを検証する **Peritir que os applicativos solicitiem o rastreamento**.
+
 ![DSN](./../uc3/images/app4.png)
 
-Apple App Storeに移動して、を検索します。 `aepmobile-bootcamp`. クリック **インストール** または **ダウンロード**.
+App Store・ダ・Apple・エペスク `aepmobile-bootcamp`. クリック **Instalar** ou **ダウンロード**.
 
 ![DSN](./../uc3/images/app1.png)
 
-アプリがインストールされたら、 **開く**.
+Depois que o aplicativo estiver instalado, clique em **開く**.
 
 ![DSN](./../uc3/images/app2.png)
 
-「**OK**」をクリックします。
+クリック **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-クリック **許可**.
+クリック **権限**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +42,93 @@ Apple App Storeに移動して、を検索します。 `aepmobile-bootcamp`. ク
 
 ![DSN](./../uc3/images/app7.png)
 
-クリック **アプリの使用中に許可**.
+クリック **Peritir enquanto usa o applicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-クリック **許可**.
+クリック **権限**.
 
 ![DSN](./../uc3/images/app5.png)
 
-これで、ホームページ上のアプリで、カスタマージャーニーを経由する準備が整いました。
+アゴラヴォーケスタノ・アプリカティボ、ナ・パジナ・イニシャル、プロント (a) パラ・ヴェリフィカル・トダ・ヨルナダ・クライアンテ。
 
 ![DSN](./../uc3/images/app12.png)
 
-## カスタマージャーニーフロー
+## フラクソダヨルナダドクライアンテ
 
-まず、ログインする必要があります。 「**ログイン**」をクリックします。
+Primeiramente,é nepisario fazer o login. クリック **ログイン**.
 
 ![DSN](./images/app13.png)
 
-前の演習でアカウントを作成した後、Web サイトでこれを確認しました。 次に、アプリで作成したアカウントの電子メールアドレスを再利用してログインする必要があります。
+Depois de criar sua conta nos excios anteriores, issoé exibido no site. Agora nesario reutilizar o endreço de e-mail da conta cque voccrio uno applicativo para fazer o login.
 
 ![デモ](./images/pv1.png)
 
-Web サイトで使用したメールアドレスをここに入力し、 **ログイン**.
+Digite o endreço de e-mail que vocêsou no site e clique em **ログイン**.
 
 ![DSN](./images/app14.png)
 
-ログインしていることを確認するメッセージが表示され、プッシュ通知が送信されます。
+Vocêrecerbera uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-アプリのホームページに戻ると、追加の機能が表示されます。
+レトルネ・パラ・ア・パジナ・イニシャル・ド・アプリカティボ e os recursos adicionais irano apacerer.
 
 ![DSN](./images/app17.png)
 
-まず、に移動します。 **製品**. 任意の製品（この例では）をクリックします。 **行くコーヒー**.
+アセス・プリメイロ **製品**. Cliem qualquer producto、ネストされた例： **行くコーヒー**.
 
 ![DSN](./images/app19.png)
 
-次の項目が表示されます。 **行くコーヒー** 製品ページに表示されます。
+Voêverá a página do produto **行くコーヒー** アプリケーティボなし
 
 ![DSN](./images/app20.png)
 
-オフラインストアの場所でのビーコンエントリイベントをシミュレートするようになりました。 これをシミュレートする目的は、店舗内の画面での顧客体験をパーソナライズすることです。 店舗内のエクスペリエンスを視覚化するために、店舗に入った顧客に関連する情報を動的に表示するページが作成されました。
+Agora vocirá simular um entrada de sinalização (beacon) em um local de armazenamento offline. O objetivo da simulação personalizar experiência do cliente nas telas da loja. Para ビジュアライゼーション a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informaçoes relevantes para o cliente ao entrar na loja.
 
-続行する前に、お使いのコンピューターでこの Web ページを開いてください： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-次の内容が表示されます。
+Em seguida, a tela abaixo será exibida:
 
 ![DSN](./images/screen1.png)
 
-次に、ホームページに戻ります。 次をクリック： **ビーコン** アイコン
+エム・セギダ、レトルン・パラ・ア・パギナの官僚。 クリケ・ノ・イコーネ・ド **ビーコン**.
 
 ![DSN](./images/app23.png)
 
 これが見えます まず、「 」を選択します。 **Bootcamp Screen Beacon** そして、 **エントリ** 」ボタンをクリックします。 これにより、ビーコンエントリをシミュレートできます。
+Após essa etapa, o seguinte será exibido. Primeiro, selecione **Bootcamp Screen Beacon** e クリケノボタンデ **エントラダ**. Isso permitriá que vocêsimule entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
-次に、ストア内画面を見てみましょう。 最後に表示した製品が、5 秒以内に表示されます。
+アゴラはテラ・ダ・ロジャを確認します。 Vocêverá oúltimo produto visualizado apacer nessa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-次に、に戻ります。 **製品**. 任意の製品（この例では）をクリックします。 **ビーチブランケットタン**.
+Em seguida, retorne para **製品**. Cliem qualquer producto、ネストされた例： **ビーチブランケットタン**.
 
 ![DSN](./images/app22.png)
 
-次に、ホームページに戻ります。 次をクリック： **ビーコン** アイコン
+エム・セギダ、レトルン・パラ・ア・パギナの官僚。 クリケ・ノ・イコーネ・ド **ビーコン**.
 
 ![DSN](./images/app23.png)
 
-これが見えます まず、「 」を選択します。 **Bootcamp Screen Beacon** そして、 **エントリ** ボタンを再度クリックします。 これにより、ビーコンエントリをシミュレートできます。
+Em seguida, selection **Bootcamp Screen Beacon** e クリケノボタンデ **エントラダ** ノバメンテ Isso permitrá que vocêsimule entrada de sinalização (beacon).
 
 ![DSN](./images/app21.png)
 
-次に、ストア内画面をもう一度見てみましょう。 最後に表示した製品が、5 秒以内に表示されます。
+アゴラ、確認テラダロハノバメンテ。 Vocêverá oúltimo produto visualizado apacer nessa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-また、Web サイト上のプロファイルビューアも見てみましょう。 多くのイベントが追加され、顧客とのインタラクションが収集され、Adobe Experience Platformに保存されていることを示すだけです。
+アゴラ，ヴァモスベリファイカル também o seu ビジュアライゼアドルデペルフィルノサイト。 Vocêverá muitos eventos que foram adicionados, para mostrar qualquer interação com um cliente coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-次の演習では、独自のビーコンエントリジャーニーを設定およびテストします。
+Nos próximos expercícios, vocirá configurar e testar sua própria jornade entrada do beacon.
 
-次のステップ： [3.2 イベントの作成](./ex2.md)
+プロクシマエタパ： [3.2 クリーセウエベント](./ex2.md)
 
-[ユーザーフローに戻る 3](./uc3.md)
+[レトルナルパラフルクソデウサリオ 3](./uc3.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

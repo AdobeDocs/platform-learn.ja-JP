@@ -5,67 +5,67 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 1%
+source-wordcount: '429'
+ht-degree: 0%
 
 ---
 
 # 4.顧客ジャーニー分析
 
-このユーザーフローでは、アプリケーションアプリケーションサービスに関する実践的なCustomer Journey Analyticsを得ることができます。
+Neste fluxo de usuário, vocêterá experiência prática com o serviço de aplicativoCustomer Journey Analytics。
 
-Customer Journey Analyticsは、ビジネスインテリジェンスとデータサイエンスチームに対し、クロスチャネルデータ（オンラインとオフライン）を結び付け、分析するためのツールキットを提供します。 Customer Journey Analytics内の機能は、複雑なマルチチャネルカスタマージャーニーにコンテキストと明確性を提供します。 提供されたコンテキストは、顧客コンバージョンプロセスから痛点を取り除き、最も重要な瞬間にポジティブなエクスペリエンスを提供する方法に関する実用的なインサイトを生成します。
+OCustomer Journey Analyticsfornece uma インターフェイス em que os times de Analytics, Negócios e Tecnologia conseguem unir os dados dados da companhia e analisar a jornada cross-channel (online e offline) do cliente de ponta a ponta。 OCustomer Journey Analyticsエ・カパス・デ・フォルネサー・コンテキストエ・クレザ・パラヨルナダス・デ・クライアンテ・マルチカナル・コンプレクサス。 O contexto fornecido gera uma visocionável em cima das dificuldades no processo de converso o e possibilita experincias relevantes e personalizadas nos pontos mais relivates.
 
-このビデオを見て、価値、カスタマージャーニー、設定プロセスを理解してください。
+Assista a este vídeo para compreender o valor, a jornada do cliente e o processo de configuração:
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Customer Journey Analyticsの詳細は [ここ](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Mais informations sobre oCustomer Journey Analyticspodem ser enconferas [アクイ](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
-## 学習内容
+## Objetivos de aprendizado
 
-- Customer Journey AnalyticsUI の理解
-- Adobe Experience PlatformデータセットのCustomer Journey Analytics
-- Customer Journey Analyticsでのユーザー ID とデータの組み合わせについて
-- データ接続とデータビューの概念を理解する
-- Adobe Experience PlatformデータセットでのAnalysis Workspaceの使用
+- Familiarize-se com a UI doCustomer Journey Analytics
+- Traga os データセット da Adobe Experience Platform para oCustomer Journey Analytics
+- Entenda o ID da pessoa e a junção de dados noCustomer Journey Analytics
+- Entenda conitios de uma connexão de dados e uma visualização de dados
+- Adobe Experience PlatformのAnalysis Workspace com データセットで使用
 
-## 前提条件
+## Pré-requisitos
 
-- Analysis Workspaceに関する知識が好まれますが、必須ではありません
-- Adobe Experience Platformへのアクセス： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Customer Journey Analytics・アプリケーション・サービスへのアクセス
+- É preferível que haja certa familidade com o Analysis Workspace, mas unoé obrigatoório
+- Adobe Experience Platform・アセソ： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso ao serviço de applicativo deCustomer Journey Analytics
 
 >[!IMPORTANT]
 >
->このチュートリアルは、特定の bootcamp 形式を容易にするために作成されました。 アクセスできない特定のシステムおよびアカウントを使用します。 アクセスがなくても、この非常に詳細な内容を読むことで、多くを学ぶことができると思います。 ブートキャンプの参加者で、アクセス資格情報が必要な場合は、Adobe担当者に連絡し、必要な情報を伝えてもらってください。
+>Este チュートリアル foi criado para faciliar um formato specífico de Bootcamp. Sistemas e contas specíficos quais vocais vocaê pode não ter acesso são utilizados neste チュートリアル Mesmo sem acesso, vocêainda pode aprender muito com a leitura deste conteúdo detalhado. Se vocé um participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da representante daAdobepara recever as informationçoes nesárias.
 
-## 演習
+## エクスペシオス
 
 [4.1Customer Journey Analytics101](./ex1.md)
 
-Customer Journey Analyticsの概念
+サイバトゥドソーブオスコニトスはCustomer Journey Analytics。
 
-[4.2Customer Journey AnalyticsでのAdobe Experience Platformデータセットの接続](./ex2.md)
+[4.2 データセットの接続とAdobe Experience PlatformのCustomer Journey Analytics](./ex2.md)
 
-Adobe Experience Platformの複数のデータセットをCustomer Journey Analyticsに使用する方法を説明します。
+サイバコモコンコンシューマー múltiplos データセット daAdobe Experience PlatformのCustomer Journey Analytics。
 
-[4.3 データビューの作成](./ex3.md)
+[4.3 Crie uma Visualização de Dados](./ex3.md)
 
-データビューを設定する方法について、Customer Journey Analytics。
+サイバコモコンフィギュラは、uma ビジュアライゼーション ação de dados noCustomer Journey Analytics。
 
-[4.4Customer Journey Analyticsにおけるデータの準備](./ex4.md)
+[4.4 Prepação de dados emCustomer Journey Analytics](./ex4.md)
 
-分析を続行する前に、データの準備をおこなう方法を説明します。
+Aprenda como fazer alguma prepação de dados antes de continuar com a análise.
 
-[4.5Customer Journey Analytics](./ex5.md)
+[4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
 
-Customer Journey Analyticsを使用してAdobe Experience Platformデータを視覚化する方法を説明します。
+サイバコモのビジュアライゼーションは、オスダドス、Adobe Experience PlatformウサンドオCustomer Journey Analytics。
 
-[4.6 インサイトから行動へ](./ex6.md)
+[4.6 De insights a ação](./ex6.md)
 
-リアルタイム CPD とAdobe Journey Optimizerを使用して、オーディエンスの形式でインサイトを行動に移す方法を説明します。
+Aprenda como usar seus insights na forma de um público em ação usando o CPD em テンポレアル e o Adobe Journey Optimizer.
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

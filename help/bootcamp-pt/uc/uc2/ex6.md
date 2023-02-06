@@ -5,87 +5,87 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
 
-# 2.6 コールセンターにおけるパーソナライゼーション
+# 2.6 Personalização no call center
 
 既にブートキャンプ中に複数回話し合ったように、顧客体験のパーソナライズは、オムニチャネル方式で発生すべきことです。 コールセンターは、多くの場合、カスタマージャーニーの他の部分とは完全に切り離されており、多くの場合、カスタマーエクスペリエンスに不満を抱きますが、そうする必要はありません。 コールセンターをAdobe Experience Platformにリアルタイムで簡単に接続する方法の例を見てみましょう。
 
-## 顧客ジャーニーフロー
+## フラクソダヨルナダドクライアンテ
 
-前の演習では、モバイルアプリケーションを使用し、 **購入** 」ボタンをクリックします。
+No exercício antior, usando o aplicativo móvel, você comprou um produto clicando no botão **購入**.
 
 ![DSN](./images/app20.png)
 
-注文の状況に関する質問があるとしますが、どうしますか？ 通常はコールセンターに電話します。
+ヴァモス・スポール・クー・ヴォークテニャ・ペルガンタ・ソーブやステータス・ド・セウ・ペディド、オ・クー・ヴォーカル・ファリア？ ノーマルメンテ、ボーリガリアパラオコールセンター。
 
-コールセンターに連絡する前に、 **ロイヤルティ ID**. ロイヤルティ ID は、Web サイトのプロファイルビューアで確認できます。
+アンテス・デ・リガー・パラオ・コールセンター、ヴォーチュ・プレシサ・サベル・セウ **ロイヤルティ ID**. Vocêpode encontrar seu ID de fidelidade no Visualizador de Perfil do サイト。
 
 ![DSN](./images/cc1.png)
 
-この場合、 **ロイヤルティ ID** が **5863105**. デモ環境でのコールセンター機能のカスタム実装の一環として、にプレフィックスを追加する必要があります。 **ロイヤルティ ID**. プレフィックスは **11373**&#x200B;である場合、この例で使用するロイヤルティ ID は **11373 5863105**.
+ネスカソ、o **ロイヤルティ ID** é **5863105**. Como parte de nossa implementationção personalizada do recurso de call center no ambiente de dedemonstração, vocede vadicionar um prefixo seu **ロイヤルティ ID**. プレフィクソ **11373**, portanto, o ID de fidelidade a userado neste exemploé **11373 5863105**.
 
-それは今からやりましょう。 電話を使って番号を呼び出す **+1 (323) 745-1670**.
+バモスファザーイソアゴラ。 セウテレフォン e リグーパラオヌメロを使用 **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-ロイヤリティ ID の入力が求められ、その後に **#**. ロイヤルティ ID を入力します。
+Será selsitado que vocêinsira seu ID de fidelidade, seguido de **#**. Digite seu ID de fidelidade。
 
 ![DSN](./images/cc3.png)
 
-そうすれば、 **こんにちは、名**. この名は、Adobe Experience Platformのリアルタイム顧客プロファイルから取得されます。 次に 3 つの選択肢があります。 プレス番号 **1**, **注文ステータス**.
+ヴォクヴィラ **こんにちは、セウノメ**&#x200B;いいえ。 エッセネ・レティラド・ド・ペルフィル・ド・クライエンテ・エムテンポレアルナ・Adobe Experience Platform。 ボークテム 3 エスコール。 プレッシオ・オヌメロ **1**, **注文ステータス**.
 
 ![DSN](./images/cc4.png)
 
-ご注文状況をお聞きの上、 **1** メインメニューに戻る場合、または 2 を押します。 押す **2**.
+Depois de ouvir o status do seu pedido, vocêterá a opção de pressionar **1** para voltar ao メニュープリンシパル o pressionar 2. Pressione **2**.
 
 ![DSN](./images/cc5.png)
 
-次に、1 ～ 5 の数値（1 は低、5 は高）を選択して、コールセンターの体験を評価するよう求められます。 選択を行います。
+Em seguida, será selá selititado que você avalie sua experiência de call center, selecionando um número entre 1 e 5, sendo 1 baixo e 5 alto. ファサスアエスコーラ。
 
 ![DSN](./images/cc6.png)
 
-コールセンターへの呼び出しが終了します。
+スアチャマダパラ o コールセンターセラエンセラダ。
 
-に移動します。 [Adobe Experience Platform](https://experience.adobe.com/platform). ログイン後、Adobe Experience Platformのホームページに移動します。
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer ログイン， vocêirá acessar a página inicial da Adobe Experience Platform.
 
 ![データ取得](./images/home.png)
 
-続行する前に、 **サンドボックス**. 選択するサンドボックスの名前はです ``Bootcamp``. これを行うには、 **[!UICONTROL 実稼動版]** 画面の上の青い線で表示されます。 適切な [!UICONTROL サンドボックス]画面が変更され、専用の [!UICONTROL サンドボックス].
+アンテス・デ・コニュナール、ヴォーチェ・プレシャ・セレクショナー・アム **サンドボックス**. サンドボックスをユーザーセレクショナド é にすることはできません ``Bootcamp``. É porivel fazer isso clicando no texto **[!UICONTROL 実稼動版]** ナ・リンハ・アズール・ナ・パルテ・スーペリア・ダ・テラ Depois de selecionar o [!UICONTROL サンドボックス] アプラワド、ヴォークベラ a tela mudando e agora voceá em seu [!UICONTROL サンドボックス] 決め手
 
 ![データ取得](./images/sb1.png)
 
-左側のメニューで、に移動します。 **プロファイル** および **参照**.
+メニューが見つからない、アクセス **プロファイル** e **参照**.
 
 ![顧客プロファイル](./images/homemenu.png)
 
-を選択します。 **ID 名前空間** **電子メール** 顧客プロファイルのメールアドレスを入力します。 クリック **表示**. 「 」をクリックして、プロファイルを開きます。
+次を選択： **ID 名前空間** **電子メール** e insira o endreço de e-mail do seu perfil de cliente クリック **表示**. クリック・パラ・アブリル・セウ・ペルフィル。
 
 ![DSN](./images/cc7.png)
 
-顧客プロファイルが再度表示されます。 に移動します。 **イベント**.
+ヴォクヴェラ・セウ・ペルフィル・デ・クライアンテ・ノバメンテ。 Acesse **イベント**.
 
 ![DSN](./images/cc8.png)
 
-イベントの下に、eventType が **callCenter**. 最初のイベントは、質問に対する回答の結果です **通話満足度の評価**.
+Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro eventoé o resutado da sua resposta a pergunta Avalie o seu n **通話満足度の評価**.
 
 ![DSN](./images/cc9.png)
 
-少し下にスクロールすると、 **注文ステータス**.
+ロールアムプコパラバイクソ e vocéverá o evento que foi registrado quando você selecionou a opção de verificar o **注文ステータス**.
 
 ![DSN](./images/cc10.png)
 
-に移動します。 **セグメントのメンバーシップ**. コールセンターでのインタラクションに基づいて、2 つのセグメントがリアルタイムでプロファイルで認定されるようになりました。 これらのセグメントメンバーシップを使用して、他のチャネルでの通信やパーソナライゼーションの影響を受けることができます。
+Acesse **セグメントのメンバーシップ**. アゴラヴォクヴェラ・クエ 2 セグメントスセクオリフィカム・エム・セウ・ペルフィル、エム・テンポ・リアル、com base nas interaçoes que voce por meio do コールセンター Essas associaçoes de segmento podem e devem user usadas para impactar qual comunicação e personalização aem qualquer outro canal.
 
 ![DSN](./images/cc11.png)
 
-これで、この練習が完了しました。
+ヴォーテルミヌーはエキスペルシオをテストした。
 
-[ユーザーフローに戻る 2](./uc2.md)
+[レトルナルパラフルクソデウサリオ 2](./uc2.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

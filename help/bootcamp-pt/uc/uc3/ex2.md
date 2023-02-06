@@ -5,83 +5,83 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# 3.2 イベントの作成
+# 3.2 クリーセウエベント
 
-に移動してAdobe Journey Optimizerにログインします。 [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
+Faça ログインのAdobe Journey Optimizerのアクセスサンド a [Adobe Experience Cloud]. クリック **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-リダイレクト先： **ホーム**  Journey Optimizerで表示 まず、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは、と呼ばれます。 `Bootcamp`. サンドボックス間を切り替えるには、 **Prod** リストからサンドボックスを選択します。 この例では、サンドボックスの名前はです。 **Bootcamp2**. その後、 **ホーム** サンドボックスの表示 `Bootcamp`.
+Vocêserá redirectionado para a **ホーム** Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. パラオルタナルドゥウムサンドボックスパラアウトロ、クリック EM **Prod** sandbox na lista からを選択します。 Neste エグザンプロ， o nome do sandboxé **Bootcamp2**. Voêestará na visualização da **ホーム** サンドボックスを設定 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-左側のメニューで、下にスクロールして、 **設定**. 次に、 **管理** 下のボタン **イベント**.
+メニュー無し，ロールパラバイクソ e clique em **設定**. エム・セグイダ、クリケ・ノ・ボトン **管理** エム・イベントス。
 
 ![ACOP](./images/acopmenu.png)
 
-その後、使用可能なすべてのイベントの概要が表示されます。 クリック **イベントを作成** をクリックして、独自のイベントの作成を開始します。
+ヴァクヴェルア・ヴィサオ・ジェラル・デ・トドス・エベント・ディスポニヴェイス。 クリック **イベントを作成** para começar criar seu próprio evento
 
 ![ACOP](./images/emptyevent.png)
 
-新しい空のイベントウィンドウがポップアップ表示されます。
+ウマ・ノヴァ・ジャネラ・デ・エヴェント・ヴァジア・イラ・アパレサー。
 
-まず、イベントに次のような名前を付けます。 `yourLastNameBeaconEntryEvent` 次のような説明を追加します。 `Beacon Entry Event`.
+Em primeiro lugar, dêum nome ao seu evento como, por exemplo: `yourLastNameBeaconEntryEvent` e adicione uma は以下のように、por エグザンプリを表します。 `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-次に、 **タイプ** が **単一**、および **イベント ID タイプ** 選択、選択 **生成されたシステム**.
+Em seguida, certifique-se de que **タイプ** está definido como **単一** e, para a selção de **イベント ID タイプ**, selecone **生成されたシステム**.
 
 ![ACOP](./images/eventidtype.png)
 
-次に、「スキーマ」を選択します。 この演習では、スキーマが準備されました。 スキーマを使用してください `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
+etapa seguiné a seleção do スキーマ。 Um スキーマ foi 準備 para este expercício. スキーマの使用 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-スキーマを選択すると、 **フィールド** 」セクションに入力します。 これで、 **フィールド** セクションに 3 つのアイコンのポップアップが表示されます。 をクリックします。 **編集** アイコン
+Depois de selecionar o Schema, vocêverá vários campos sendo selecionados na seção **フィールド**. アゴラボーデヴ・パサー、マウス、ソサオ **フィールド** e três icones ポップアップ serão exibidos クリケ・ノ・イコーネ・デ **編集**.
 
 ![ACOP](./images/eventpayload.png)
 
-表示される **フィールド** ウィンドウポップアップ。ジャーニーをパーソナライズするために必要なフィールドの一部を選択する必要があります。  後で、既にAdobe Experience Platformにあるデータを使用して、他のプロファイル属性を選択します。
+Voêverá uma janela pop-up de **フィールド**, onde vocede selecionar alguns dos campos que precisamos para personalizar a jornada Escolheremos outros attributos de perfil postermente, utizando os dados já existentes na Adobe Experience Platform
 
 ![ACOP](./images/eventfields.png)
 
-下にスクロールして、オブジェクトが表示されるようにします。 `Place context` チェックボックスをオンにします。 これにより、顧客の所在地のすべてのコンテキストがジャーニーで使用できるようになります。 クリック **Ok** 変更を保存します。
+ロール・パラ・バイクソ・アテ・バー・オブジェト `Place context` カイシャ・デ・セルサオをマルクに。 com isso, todo o contexto da localização do cliente será disponibilizado para a jornada. クリック **Ok** para salvar suas alteraçoes
 
 ![ACOP](./images/eventpayloadbr.png)
 
-次に、これが表示されます。 クリック **保存** もう一度変更を保存します。
+Em seguida, você deverá ver a tela abaixo. クリック **保存** mais uma vez para salvar suas alteraçoes
 
 ![ACOP](./images/eventsave.png)
 
-これで、イベントが設定され、保存されました。
+Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-イベントを再度クリックして、 **イベントを編集** 画面を再度表示します。 上にマウスポインターを置く **フィールド** 3 つのアイコンを再度表示します。 をクリックします。 **表示** アイコン
+クリケノセウエベントノバメンテパラテラ **イベントを編集** マイス・ウマ・ベス マウスの酔いが醒める **フィールド** para ver os 3 ícones(para ver os 3 ícones)。 クリケ・ノ・イコーネ **表示**.
 
 ![ACOP](./images/viewevent.png)
 
-これで、期待されるペイロードの例が表示されます。
-イベントには一意のオーケストレーション eventID があり、見つかるまでペイロード内を下にスクロールすると見つかります `_experience.campaign.orchestration.eventID`.
+アゴラヴォクヴェラ・アムエグザンプロダ・カルガ・クティル・エスペラダ。
+Seu evento tem um eventID de orquestraçãoúnico, que vocêpode encontrar rolando para baixo nessa cargaútil visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-次の演習の 1 つで作成するジャーニーをトリガーにするには、イベント ID をAdobe Experience Platformに送信する必要があります。 この eventID は、後で必要になる場合があるので、覚えておいてください。
+O eventIDé o que deve ser envidaoà Adobe Experience Platform para acionar a jornada que você construirá em dos próximos expercícios. Lembre-se deste eventID、voce precisar dele postermente。
 `"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
-クリック **Ok**&#x200B;をクリックし、その後に「 **キャンセル**.
+クリック **Ok** e, em seguida, clique **キャンセル**.
 
-これで、この練習が完了しました。
+ヴォーテルミヌーはエキスペルシオをテストした。
 
-次のステップ： [3.3 ジャーニーとプッシュ通知の作成](./ex3.md)
+プロクシマエタパ： [3.3 クリースアヨルナダ電子通知のプッシュ](./ex3.md)
 
-[ユーザーフローに戻る 3](./uc3.md)
+[レトルナルパラフルクソデウサリオ 3](./uc3.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

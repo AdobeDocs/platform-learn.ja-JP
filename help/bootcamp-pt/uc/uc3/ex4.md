@@ -5,54 +5,54 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
-# 3.4 ジャーニーのテスト
+# 3.4 テストスアヨルナダ
 
-ジャーニーをテストするには、演習 3.2 で作成したイベントのイベント ID を使用する必要があります。この ID は次のようになります。
+パラテスタースア・ヨルナダ， vocêdeve usar o eventID criado no expercio 3.2, que deve ser semelhante ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-イベント ID は、ジャーニーをトリガーするためにAdobe Experience Platformに送信する必要があるものです。 この例では、eventID は次のようになります。
+O eventIDé o que precisa ser envida a Adobe Experience Platform para acionar a jornada. 次の例， o eventIDé:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-モバイルアプリを開き、ホームページに移動します。 「**設定**」アイコンをクリックします。
+アブラ・オ・アプリカティボ・モベル・エ・ヴァ・パラ・ア・パギナの官僚。 クリケ・ノ・イコーネ・デ **設定**.
 
 ![DSN](./images/appsett.png)
 
-「 」フィールドに eventID を貼り付けます **ビーコンの EventID** をクリックし、 **保存**.
+Cole seu eventID no campo **ビーコンの EventID** e クライアント **保存**.
 
 ![DSN](./images/beacon1.png)
 
-続行する前に、お使いのコンピューターでこの Web ページを開いてください： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-次の内容が表示されます。
+Em seguida, será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-次に、ホームページに戻ります。 次をクリック： **ビーコン** アイコン
+レトルネ・パラ・パギナの官僚。 クリケ・ノ・イコーネ・ド **ビーコン**.
 
 ![DSN](./images/app23.png)
 
-これが見えます まず、「 」を選択します。 **Bootcamp Screen Beacon** そして、 **エントリ** 」ボタンをクリックします。 これにより、ビーコンエントリをシミュレートできます。
+Primeiro, selecione **Bootcamp Screen Beacon** e クリケノボタンデ **エントラダ** 」ボタンをクリックします。 イッソ・ペリティラ・ク・ヴォーク・シミュレ・エントラダ・ド・ビーコン。
 
 ![DSN](./images/app21.png)
 
-次に、ストア内画面を見てみましょう。 最後に表示した製品が、5 秒以内に表示されます。
+アゴラはテラ・ダ・ロジャを確認します。 Vocêverá oúltimo produto visualizado apacer nessa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-プッシュ通知も受け取りました。
+ボーダンベム・テラ・レシベド・スア通知サオ・プッシュ。
 
 ![DSN](./images/beacon2.png)
 
-これで、この練習が完了しました。
+ヴォーテルミヌーはエキスペルシオをテストした。
 
-[ユーザーフローに戻る 3](./uc3.md)
+[レトルナルパラフルクソデウサリオ 3](./uc3.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

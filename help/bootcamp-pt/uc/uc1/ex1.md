@@ -5,61 +5,59 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
 
-# 1.1 不明から Web サイト上で既知まで
+# 1.1 Do desconhecido ao conhecido em nosso site
 
-## コンテキスト
+## Contexto
 
-未知から既知へのジャーニーは、最近のブランドの中で最も重要なトピックの 1 つで、獲得から定着までのカスタマージャーニーです。
+Adobe Experience Platform・デセンペニャ・パペル・インポータンテ・ネッサ・ヨルナダ。 A plataformaé o cérebro da comunicação, o **経験記録システム**.
 
-Adobe Experience Platformはこの旅で大きな役割を果たしています。 プラットフォームはコミュニケーションの脳です。 **経験記録システム**.
+プラタフォルマエウムアンビエンテエムは、パラヴラクライアントエングロバマイスドクライアントコンヘキドスをクライアント。 Um visitante desconhecido no site tambéméum cliente do ponto de vista da Plataforma e, comotal, todo o comportamento de um visitante desconhecido também envida Plataforma. Graças a essa abordagem, quando esse visitante eventualmente se torna um cliente conhecido, uma marca também pode visualizar o que anteceu antes daquele momento. Isso ajuda は、特定の de uma の視点で de otimização de attribução e experiência。
 
-プラットフォームとは、「顧客」という単語が、既知の顧客だけではなく、幅広い環境を指します。 Web サイト上の不明な訪問者は、Platform の観点からの顧客でもあるので、不明な訪問者としての行動もすべて Platform に送信されます。 このアプローチにより、訪問者が最終的に既知の顧客になったとき、ブランドはその時点以前の出来事も視覚化できます。 これは、アトリビューションとエクスペリエンスの最適化の観点から役立ちます。
+## フラクソダヨルナダドクライアンテ
 
-## カスタマージャーニーフロー
-
-に移動します。 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). クリック **すべて許可**.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). クリック **すべて許可**.
 
 ![DSN](./images/web8.png)
 
-画面の左上隅にあるAdobeロゴアイコンをクリックして、プロファイルビューアを開きます。
+クリケ・ノ・イコーネ・ド・ロゴシポ・ダ・Adobeは、最高のエスカルド・デ・テラ・パラ・アブリルとは言えません。
 
 ![デモ](./images/pv1.png)
 
-プロファイルビューアパネルと、リアルタイム顧客プロファイルを **Experience CloudID** を現在不明なこの顧客の主な識別子として使用する。
+Verifique o painel do Visualizador de perfile e no Perfil do cliente em tempo real com o **Experience CloudID** como identificador primário para ste clientte que aindaé desconhecido
 
 ![デモ](./images/pv2.png)
 
-また、顧客の行動に基づいて収集されたすべてのエクスペリエンスイベントを表示することもできます。 リストは現在空ですが、まもなく変更されます。
+Voce também pode ver todos os Eventos de Experiência coletados com base no comportamento d cliente. A lista está vazia no momento, mas isso mudará em breve.
 
 ![デモ](./images/pv3.png)
 
-次に移動： **アプリケーションサービス** メニューオプションを選択し、製品をクリックします。 **Real-Time CDP**.
+Acesse a opção de menu **アプリケーションサービス** 製品がありません **Real-Time CDP**.
 
 ![デモ](./images/pv4.png)
 
-製品の詳細ページが表示されます。 タイプのエクスペリエンスイベント **製品表示** は、モジュール 1 で確認した Web SDK 実装を使用して、Adobe Experience Platformに送信されるようになりました。 プロファイルビューアパネルを開き、 **エクスペリエンスイベント**.
+Voêverá a página detales do produto. Um Evento de experiência do tipo **製品表示** agora foi enviado para a Adobe Experience Platform usando a implementação do web SDK que você revisou no Módulo 1. アブラ・オ・ペインエル・ビジュアライゼアドール・デ・ペルフィル・エ・ベリフィク・セウス **エクスペリエンスイベント**.
 
 ![デモ](./images/pv5.png)
 
-次に移動： **アプリケーションサービス** メニューオプションを選択し、製品をクリックします。 **Adobe Journey Optimizer**. 別のエクスペリエンスイベントがAdobe Experience Platformに送信されました。
+Acesse a opção de menu **アプリケーションサービス** 製品がありません **Adobe Journey Optimizer**. Mais um Evento de experiência foi enviado para a Adobe Experience Platform.
 
 ![デモ](./images/pv7.png)
 
-プロファイルビューアパネルを開きます。 これで、次のタイプの 2 つのエクスペリエンスイベントが表示されます **製品表示**. この動作は匿名ですが、クリックのたびに追跡され、Adobe Experience Platformに保存されます。 匿名顧客が認識されたら、すべての匿名行動を知名プロファイルに自動的に結合できます。
+Abra o painel 視覚化アドールデペルフィル。 アゴラヴォクヴェラ 2 Eventos de experiência do tipo **製品表示**. エンボラオコンポルタメントセハアノニモ、カダクリケレラストレード、アルマゼネアドナAdobe Experience Platform。 Depois que o cliente annonimo se tornar conhecido, poderemos mesclar todo o comportamento annimo automaticamente ao perfil conhecido.
 
 ![デモ](./images/pv8.png)
 
-次に、顧客プロファイルを分析し、行動を使用して Web サイトでの顧客体験をパーソナライズします。
+アゴラヴァモスアナリサルセウペルフィルデクライアンテ e usar seu comportamento personalizar sua experiencencia do cliente no site.
 
-次のステップ： [1.2 自身のリアルタイム顧客プロファイルの視覚化 — UI](./ex2.md)
+プロクシマエタパ： [1.2 seu proprio perfil de cliente em tempo real - UI](./ex2.md)
 
-[ユーザーフローに戻る 1](./uc1.md)
+[レトルナルパラフルクソデウサリオ 1](./uc1.md)
 
-[すべてのモジュールに戻る](../../overview.md)
+[レトルナーパラトドスオスモドゥロス](../../overview.md)

@@ -5,106 +5,105 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 3%
+source-wordcount: '793'
+ht-degree: 1%
 
 ---
 
-# 4.4 Analysis Workspaceでのデータの準備
+# 4.4 Prepação de dados emCustomer Journey Analytics
 
-## 目標
+## Objectivos
 
-- CJA でのAnalysis Workspace UI について
-- Analysis Workspaceでのデータ準備の概念の理解
-- データ計算の実行方法を説明します
+- Entenda a UO do Analysis Workspaceの CJA
+- Entenda concitios de preparação de dados no Analysis Workspace
+- アプレンダアファザーカルクロスデダドス
 
-## 4.4.1 CJA でのAnalysis Workspace UI
+## 4.4.1 UI でのAnalysis Workspaceの CJA の実行
 
-Analysis Workspaceでは、単一の Analytics レポートの一般的な制限をすべて削除します。 堅牢で柔軟なキャンバスで、カスタム分析プロジェクトを作成できます。 任意の数のデータテーブル、ビジュアライゼーションおよびコンポーネント（ディメンション、指標、セグメントおよび時間の精度）をプロジェクトにドラッグ&amp;ドロップします。 即座に分類およびセグメントを作成し、分析用のコホートを作成し、アラートを作成し、セグメントを比較し、フローおよびフォールアウト分析を実行し、レポートをキュレーションおよびスケジュールして、会社の任意のユーザーと共有します。
+OAnalysis Workspaceは、Analytics の際にトダを削除します。 Ele forene uma tela lobsta e flexível para criar projectos de analytics personalizados. Arraste e solte qualte qualquer número de tabelas de dados, visualizaçoes e componentes (dimensions, métricas, segmentos e granuridades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo de falhase relatórios de curadoria e agendamento pa co compartilcom pqu co co co co com pquer quer pquer pquer pquer pquer peso e peso em esemenseom pa em seem seu
 
-Customer Journey Analyticsは、このソリューションを Platform データに基づいて実現します。 次の 4 分間の概要ビデオをご覧いただくことを強くお勧めします。
+OCustomer Journey Analyticstraz essa solção além dos dados da plataforma. É altamente recomendável assisiar a este vídeo de visão geral de quatro minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-Analysis Workspaceを初めて使用する場合は、このビデオをご覧ください。
+Se voce nunca usou o Analysis Workspace antes, recomendamos este vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### プロジェクトを作成
+### クリーセウプロジェト
 
-次に、最初の CJA プロジェクトを作成します。 CJA 内の「プロジェクト」タブに移動します。
-「**新規作成**」をクリックします。
+アゴラエホラ・ド・クリアル・セウ・プリメイロ・プロジェトは CJA を行う。 Vá para a aba de projectos dentro do CJA. クリック **新規作成**.
 
 ![デモ](./images/prmenu.png)
 
-これが見えます 選択 **空のプロジェクト** 次に、 **作成**.
+エムセギダ、vocêverá a tela abaixo。 選択 **空のプロジェクト** 東クリック **作成**.
 
 ![デモ](./images/prmenu1.png)
 
-その後、空のプロジェクトが表示されます。
+Voêverá um projeto vazio.
 
 ![デモ](./images/premptyprojects.png)
 
-まず、画面の右上隅にある正しいデータビューを選択してください。 この例では、選択するデータビューはです。 `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar Visualização de dados correta no canto superior direito da tela. Neste エグザンプロ、Visualização de dados a ser selecionada `vangeluwe - Omnichannel Data View`.
 
 ![デモ](./images/prdv.png)
 
-次に、プロジェクトを保存し、名前を付けます。 次のコマンドを使用して保存できます。
+エムセギダ、vocirá salvar seu projeto e dar um nome a ele. Vocêpode usar o seguinte comando para salvar:
 
 | OS | ショートカット |
 | ----------------- |-------------| 
 | Windows | Ctrl + S |
 | Mac | Command + S |
 
-次のポップアップが表示されます。
+Vocêverá este ポップアップ：
 
 ![デモ](./images/prsave.png)
 
-次の命名規則を使用してください：
+este modelo de nomenclatura を使用：
 
 | 名前 | 説明 |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-次に、「 **保存**.
+Em seguida、clique em **保存**.
 
 ![デモ](./images/prsave2.png)
 
-## 4.4.2 計算指標
+## 4.4.2 メトリカスカルカダ
 
-データビューのすべてのコンポーネントを整理しましたが、ビジネスユーザーが分析を開始できるように、一部のコンポーネントを調整する必要があります。 また、分析中に計算指標を作成して、インサイトの発見をさらに深くすることもできます。
+Embora tenhamos organizado todos componentes na Visualização de dados, vocainda deve adaptar alguns deles para que os usários de negcios estejam prontos para iniciar suas análises. Além disso, durante qualquer processo de analytics, voce pode criar métricas calculadas para aprofundar a de secoberta de insights.
 
-例として、計算指標を作成します。 **コンバージョン率** の使用 **購入** データビューで定義した指標/イベント。
+Como 模範， criaremos uma Taxao de conversão calculada usando a métrica/evento Compras que definimos na Visualização de dados.
 
-### コンバージョン率
+## タクサデコンバオ
 
-計算指標ビルダーを開きましょう。 をクリックします。 **+** をクリックして、Analysis Workspaceで最初の計算指標を作成します。
+Vamos começar は、コンストラクター・デ・メトリカス・カリカダのアブリエです。 クリック **+** パラクリアスアプリメイラメトリカカルカダのAnalysis Workspace
 
 ![デモ](./images/pradd.png)
 
-この **計算指標ビルダー** が表示されます。
+O **計算指標ビルダー** irá aparecer:
 
 ![デモ](./images/prbuilder.png)
 
-次を検索： **購入** をクリックします。 の下 **指標** クリック **すべて表示**
+強制 **購入** na lista de métricas no menu do lado esquerdo Em **指標** クリック **すべて表示**
 
 ![デモ](./images/calcbuildercr1.png)
 
-次に、 **購入** 指標を追加します。
+アゴラアレステメトリカをソルテ **購入** ナ・エニファサン・ダ・メトリカ・カリキュラダ。
 
 ![デモ](./images/calcbuildercr2.png)
 
-通常、コンバージョン率はを意味します。 **コンバージョン/セッション**. 計算指標の定義キャンバスでも同じ計算を行います。 次を検索： **セッション** 指標をドラッグし、定義ビルダーの「 **購入** イベント。
+正常には、taxade conversão minia **コンバージョン/セッション**. エンサン，ヴァモスファザー o mesmo cálculo na tela de definição de métrica calculada. メトリカをエンコントロール **セッション** e arraste e solte a no criador de definição, no evento **購入**.
 
 ![デモ](./images/calcbuildercr3.png)
 
-除算演算子が自動的に選択されることに注意してください。
+オペラドール・デ・デ・ディブサオ・セレオナドを自動的に使う。
 
 ![デモ](./images/calcbuildercr4.png)
 
-通常、コンバージョン率はパーセンテージで表されます。 形式をパーセンテージに変更し、2 桁の小数も選択します。
+taxade conversãoé comumente は porcentagem を表します。 Então, vamos mudar o formato para porcentagem e selecionar 2 casas as decimais.
 
 ![デモ](./images/calcbuildercr5.png)
 
@@ -114,46 +113,46 @@ Analysis Workspaceを初めて使用する場合は、このビデオをご覧�
 | ----------------- |-------------| 
 | コンバージョン率 | コンバージョン率 |
 
-画面には次のような内容が表示されます。
+Por fim, altere o nome e a descrição da métrica calculada:
 
 ![デモ](./images/calcbuildercr6.png)
 
-忘れずに **保存** 計算指標。
+ナンセエスケサデ **Salvar** メトリカカリキュラダ。
 
 ![デモ](./images/pr9.png)
 
-## 4.4.3 計算Dimension:フィルター（セグメント化）と日付範囲
+## 4.4.3 寸法：Filtros (segmentatção) e intervalos de datas
 
-### フィルター：計算Dimension
+### フィルタ：ディメンションエスカルカダ
 
-計算は指標にのみ使用するものではありません。 分析を開始する前に、いくつかを作成するのも興味深い作業です。 **計算Dimension**. これは基本的に、 **セグメント** Adobe Analyticsに戻る Customer Journey Analyticsでは、これらのセグメントは **フィルター**.
+オスカルクロスナンデベム、アペナスパラメトリカス。 アンテス・デ・イニシア・クァルケア・アナリス、タンベム・エ・インテレスサンテ・クリア・アルグマ **計算Dimension**. イッソ・シピラシア、エッセンシャルメンテ、 **セグメント** Adobe Analytics ノCustomer Journey Analyticsセグメントサンシャマドスデ **フィルター**.
 
 ![デモ](./images/prfilters.png)
 
-フィルターを作成すると、ビジネスユーザーは、役立つ計算ディメンションを使用して分析を開始できます。 これにより、いくつかのタスクを自動化し、導入部分を支援します。 次に例を示します。
+A criação de filtros ajudará os usários de negócios a iniciar o analytics com algumas dimensions, es calcuadas valiosas. Isso irá automatizar algumas tarefas, além de ajudar na parte de adoção. Abaixo estão alguns exemployes:
 
-1. 所有メディア、有料メディア、
-2. 新規訪問と再訪問
-3. 買い物かごを放棄した顧客
+1. メディア・プロプリア、メディア・パガ
+2. Visitas novas x レコード
+3. Clientes com carrinho abondonado
 
-これらのフィルタは、解析パーツの前または中に作成できます（次の演習で作成します）。
+Ess filtros podem ser criados antes ou durante a parte de análise (o que vocêfará no próximo exercício).
 
-### 日付範囲：計算時間Dimension
+### データの間隔：ディメンションデテンポカルカダ
 
-時間Dimensionは、別のタイプの計算ディメンションです。 既に作成済みのものもありますが、データ準備段階で独自のカスタム時間Dimensionを作成することもできます。
+As dimensions, es de tempo são outro tipo de dimensions, es calculadas. Alguns já foram criados, mas você também pode criar suas próprias Dimensoes de tempo personalizadas na fase de prepação de dados.
 
-これらの計算時間Dimensionは、アナリストやビジネスユーザーが重要な日付を記憶し、それらを使用してレポート時間をフィルタリングおよび変更するのに役立ちます。 分析を行う際に頭に浮かぶ典型的な質問や疑問：
+Essas Dimensionsoes de tempo calculado ajudarão analistas e usários de negócios lembrar datas importantes e usá-las para filter e alteror o tempo de relatrio. ペルガンタ・エドゥヴィダ・ティピカス・クアンド・ファゼモス・アナリス：
 
-- 昨年のブラック・フライデーはいつでしたか？ 21、29 日？
-- 私たちは 12 月にいつそのテレビキャンペーンを行いましたか？
-- 2018 年のサマーセールはいつからいつまで行われましたか。 私は 2019 年と比べたい。 ところで、2019 年の正確な日は分かりますか？
+- Quando foi 黒金曜日 do ano passado? エントリー OS 21 e 29?
+- クアンド・ヴェイキュラモス・アクエラ・カンパーハ・デ・テレビエム・デザンブロ？
+- De quando a quando fizemos as vendas de verão de 2018? Quero comparar com 2019. 2019 年に、ボーケ・サベ・オス・ディアス・エクサトスエム？
 
 ![デモ](./images/timedimensions.png)
 
-これで、CJA Analysis Workspaceを使用したデータ準備の演習が完了しました。
+アゴラのボーチュエオエクスペルシオデデプラファサオデダドスユサンドオAnalysis Workspaceド CJA。
 
-次のステップ： [4.5Customer Journey Analytics](./ex5.md)
+プロクシマエタパ： [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
 
-[ユーザーフローに戻る 4](./uc4.md)
+[レトルナルパラフルクソデウサリオ 4](./uc4.md)
 
-[すべてのモジュールに戻る](./../../overview.md)
+[レトルナーパラトドスオスモドゥロス](./../../overview.md)
