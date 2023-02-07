@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Vocêserá redirectionado para a visualização da **ホーム** Journey Optimiz
 
 ラド・ディレイト・ダ・テラ、アゴラ・ヴォークレベ・クリア・スア通知サオ・プッシュはありません。
 
-定義 **カテゴリ** コモ **マーケティング** e selecionuma superfície push que permite envirar notificaçoes push. スーパーファイシーがユーザーセレクショナダを押すネスカソ **mmeewis-app-mobile-bootcamp**.
+定義 **カテゴリ** コモ **マーケティング** e selecione um push surface que permite envirator notificaçaoes push. スーパーファイシーがユーザーセレクショナダを押すネスカソ **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,7 +88,7 @@ Clique no campo de texto **タイトル**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Em seguida、clique em  **コンテキスト属性** その後 **Journey Orchestration**.
+Em seguida、clique em  **コンテキスト属性** e **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -127,11 +127,11 @@ Clique nome do seu evento, que deve ser semelhante ao seguinte: **yourLastNameBe
 
 ## 3.3.2 Envie uma mensagem para uma tela
 
-コモ・テルセイラ・エタパ・ダ・ヨルナダ、ボーディヴ・アディシオナルマ・アサオ  **sendMessageToScreen** アクション。 Vá para o lado esquerdo da tela para **アクション**, selection ação **sendMessageToScreen** e arraste e solte ação no terceiro nó da sua jornada エムセギダ、vocêverá a tela abaixo。
+コモ・テルセイラ・エタパ・ダ・ヨルナダ、ボーディヴ・アディシオナルマ・アサオ  **sendMessageToScreen**. Vá para o lado esquerdo da tela para **アクション**, selection ação **sendMessageToScreen** e arraste e solte ação no terceiro nó da sua jornada エムセギダ、vocêverá a tela abaixo。
 
 ![ACOP](./images/jomsg15.png)
 
-**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usade pela exibição na loja A ação **sendMessageToScreen** エスペラ・ク・ムルティプラス・バリアヴェイス・セジャム・ディフィダス。 Vocêpode visualizar essas variáveis rolando para baiaté ver **アクションパラメーター**.
+**sendMessageToScreen** é uma ação personalizada que irá publicuma mensagem no **エンドポイント** usado pela exibição na loja A ação **sendMessageToScreen** エスペラ・ク・ムルティプラス・バリアヴェイス・セジャム・ディフィダス。 Vocêpode visualizar essas variáveis rolando para baiaté ver **アクションパラメーター**.
 
 ![ACOP](./images/jomsg16.png)
 

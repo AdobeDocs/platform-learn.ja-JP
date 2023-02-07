@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Faça ログインのAdobe Journey Optimizerのアクセスサンド a [Adobe 
 
 ![ACOP](./images/acophome.png)
 
-Vocêserá redirectionado para a **ホーム** Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. パラオルタナルドゥウムサンドボックスパラアウトロ、クリック EM **Prod** sandbox na lista からを選択します。 Neste エグザンプロ， o nome do sandboxé **Bootcamp2**. Voêestará na visualização da **ホーム** サンドボックスを設定 `Bootcamp`.
+Vocêserá redirectionado para a **ホーム** Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. パラオルタナルドゥウムサンドボックスパラアウトロ、クリック EM **Prod** sandbox na lista からを選択します。 Neste エグザンプロ， o nome do sandboxé **Bootcamp**. Voêestará na visualização da **ホーム** サンドボックスを設定 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -68,7 +68,7 @@ Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/viewevent.png)
 
-アゴラヴォクヴェラ・アムエグザンプロダ・カルガ・クティル・エスペラダ。
+Agora vocêverá um exemplo do payload esperado.
 Seu evento tem um eventID de orquestraçãoúnico, que vocêpode encontrar rolando para baixo nessa cargaútil visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)

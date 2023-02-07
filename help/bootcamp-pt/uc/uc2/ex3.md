@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '934'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Vocêserá redirectionado para a visualização da **ホーム**  Journey Optimi
 
 ![ACOP](./images/journeyempty.png)
 
-エクスペリシオ前部、ボークリウムノボ **イベント**. ベント語 `yourLastNameAccountCreationEvent` e 置換 `yourLastName` ペロ・セウ・ソブレノーム。 Este foi o resultado da criação do Evento:
+エクスペリシオ前部、ボークリウムノボ **イベント**. ベント語 `seuSobrenomeAccountCreationEvent` e 置換 `seuSobrenome` ペロ・セウ・ソブレノーム。 Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -60,9 +60,7 @@ Vocêserá redirectionado para a visualização da **ホーム**  Journey Optimi
 
 ![ACOP](./images/journeyactions.png)
 
-を **カテゴリ** から **マーケティング** をクリックし、電子メールを送信できる電子メールサーフェスを選択します。 この場合、選択する E メールサーフェスは次のようになります。 **電子メール**. 次のチェックボックスをオンにします。 **メールのクリック数** および **メール開封数** 両方とも有効です。
-
-定義 **カテゴリ** コモ **マーケティング** e selecion uma superficie de e mail que pemita o envio de e-mail. Nesse caso、スーパーファイシー E メールユーザーセレクショナダ E メール。 Certifique-se de que as caixas de seleção **メールのクリック数** e **メール開封数** エステジャム・マルカダス。
+定義 **カテゴリ** コモ **マーケティング** e selecone uma **電子メール表面** que perito o envido de e-mail ネスカソ、a **電子メール表面** ユーザーセレクショナダ é 電子メール。 Certifique-se de que as caixas de seleção **メールのクリック数** e **メール開封数** エステジャム・マルカダス。
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,11 +86,11 @@ Clique no campo de texto **件名**.
 
 ![Journey Optimizer](./images/msg6.png)
 
-リンハ・デ・アスント・アインダ・アンオ・エスタ・プロンタ。 Em seguida, você precisa trazer o token de personalização para o **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニュー無し，役割 para baixo para encontrar o elemento **人物** e clique na seta para ir um nível mais profundo
+リンハ・デ・アスント・アインダ・アンオ・エスタ・プロンタ。 Em seguida, você precisa trazer o token de personalização para o **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニュー無し，役割 para baixo para encontrar o elemento **人物** e clique na seta para 視覚化器 mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-エレメントアゴラエンコントロ **氏名** e clique na seta para ir um nível mais profundo
+エレメントアゴラエンコントロ **氏名** clique na seta para ビジュアライゼーション (mais campos)
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -100,7 +98,7 @@ Por フィム、ローカライズ o campo **名** e clique no símbolo **+** �
 
 ![Journey Optimizer](./images/msg9.png)
 
-エム・セギダ、テキストの愛好家 **アグラデセモスはサアインヴァサン！** Salvar をクリックします。. クリック **保存**.
+エム・セギダ、テキストの愛好家 **アグラデセモスはサアインヴァサン！**。クリック **保存**.
 
 ![Journey Optimizer](./images/msg10.png)
 
@@ -118,7 +116,7 @@ Na próxima tela, será selicitado que você forneça o conteúdo e-mail atravé
 
 ![Journey Optimizer](./images/msg12.png)
 
-アルキボのアレステ・ソルテ **mailtemplatebootcamp.html**，固有のボーカルバイシャ [ここ](../../assets/html/mailtemplatebootcamp.html.zip). Clique Importar.
+アルキボのアレステ・ソルテ **mailtemplatebootcamp.html**，固有のボーカルバイシャ [アクイ](../../assets/html/mailtemplatebootcamp.html.zip). Clique Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -130,7 +128,7 @@ Vamos のパーソナライズ機能と電子メール。 Clique ao lado do text
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você precisa trazer o token de personalização **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニューなし、要素をローカライズ **人物**, faça uma busca detalada no elemento **氏名** e clique no icone **+** para adicionar o campo **名** ao editor de expresson
+Em seguida, você precisa trazer o token de personalização **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニューなし、要素をローカライズ **人物**, faça uma busca detalada no elemento **氏名** e clique no icone **+** para adicionar o campo **名** ao 編集者。
 
 クリック **保存**.
 
@@ -162,7 +160,7 @@ Em seguida, você precisa trazer o token de personalização **名** クエス
 
 ![ACOP](./images/journeyname.png)
 
-ヴォーチェ・アインダ・プレシサ・アム・ノーム・ア・スア・ヨルナダ。 ボーチュポーデ・ファザー・イッソ・クリカンド・ノ・イコーネ `yourLastName - Account Creation Journey`. クリック **OK** mudanças としての para salvar
+Vocêpode fazer isso clicando no item clicar no item &quot;Name&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. クリック **OK** mudanças としての para salvar
 
 ![ACOP](./images/journeyname1.png)
 

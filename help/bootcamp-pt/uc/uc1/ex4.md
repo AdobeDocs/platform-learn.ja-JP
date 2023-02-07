@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Na lista de segmentos disponíveis, selione o segmento que vocriou em [1.3 Cri
 >
 >イメディアタメンテ・アポス・クリア・セ・デスティノ・ド・Adobe TargetのReal-Time CDP、ポデ・レヴァ・アテ・ウマ・ホラ・パラ・ク・オ・デスティノ・セジャ・アティバド。 Esteé um tempo de esperaúnico devido a definição da configuração de back-end. デポイス・クエ・オ・テンポ・デ・エスペラ・イニシャル・デ 1 ホラ・デ 1 ホラ・ア・コンフィギュラ・ホラ・ド・バックエンド・フォレム締結、オス・セグメントス・デ・ボルダ・レシオナドス・サン・デジノ・ド・Adobe Target
 
-## 1.4.2 suaatividade baseada em furmário do Adobe Targetの設定
+## 1.4.2 suaatividade のAdobe Targetでの設定
 
 Agora que seu segmento Real-Time CDP está configurado para ser enviado Adobe Target,é 占有設定は suaatividade de Segmentação por experiência no Adobe Target. Neste expercicio, vocêirá configurar uma atividade basedade no Visual Experience Composer.
 
@@ -62,8 +62,6 @@ Agora que seu segmento Real-Time CDP está configurado para ser enviado Adobe Ta
 
 ![RTCDP](./images/excl.png)
 
-の **Adobe Target** ホームページには、既存のすべてのアクティビティが表示されます。
-クリック **+アクティビティを作成** をクリックして、新しいアクティビティを作成します。
 ナ・パジナ・イニシャル・ド **Adobe Target**, vocêverá todas as atividades existenteses.
 クリック **+アクティビティを作成** パラクリアルマ・ノヴァ・アティビデード。
 
@@ -73,7 +71,7 @@ Agora que seu segmento Real-Time CDP está configurado para ser enviado Adobe Ta
 
 ![RTCDP](./images/exclatcrxt.png)
 
-選択 **ビジュアル** e 定義 a **アクティビティ URL** コモ `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso，代替 XX por um número entre 01 e 30.
+選択 **ビジュアル** e 定義 a **アクティビティ URL** コモ `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso，代替 XX por um número entre 01 e 60.
 
 >[!IMPORTANT]
 >
@@ -137,7 +135,7 @@ Voêverá a nova experiência com a nova imagem para o seu Público selecionado
 
 パラノーム、次を使用：
 
-- `yourLastName - RTCDP - XT (VEC)`
+- `seuSobrenome - RTCDP - XT (VEC)`
 
 クリック **次へ**.
 
@@ -181,7 +179,7 @@ Vocêreceberá uma confirmação visual de que sua atividade agora está ativa.
 
 ![RTCDP](./images/atform12a.png)
 
-プロクシマエタパ： [1.5 措置をとる：セグメントをFacebookに送信](./ex5.md)
+プロクシマエタパ： [1.5 Ação:enviu segmento para o Facebook](./ex5.md)
 
 [レトルナルパラフルクソデウサリオ 1](./uc1.md)
 

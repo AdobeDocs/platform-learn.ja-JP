@@ -2,9 +2,9 @@
 title: Experience Makers Bootcamp — ブラジル
 description: Experience Makers Bootcamp の参加者の出発点
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ムイタス・エンプレサス・ナオ・エスサン・シエンテス・ド・アトリトク・エクステナ・ヨルナダ・ドス・セウス・クライエンテス， conseência de uma abordagem fragmentada e não integrada ao orquestrar a com u co cliente Dados, perfile e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experienências excepcionais ao consumidor.
 
-参加型デセットブートキャンプパラ aprimorar aprimer como uma bordagem baseada em plataforma pode ajudar na obtenção dos insights nisarios para identificare e remover pontos de a atrito para a primorar a jorna do seu cliente.
+参加型 deste bootcamp para aprender como uma abordada em baseada emExperience Platformpode ajudar na obtenção dos insights neários para identificar e remover pontos de atrito para a primorar a jornada do seu cliente.
 
-パーソナライズされた ação em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente essencial. Insights levam ação, o que leva mais insights. フェラメンタス・パラとしてのアボルダジェム除外ダAdobefocada na plataforma fornece, além de impulsionar os avanços tecnológicos, sua eupie sua capasidade de oferecade de oferecercia holistica ao cliente emvuma de expemuma de expemuma ndo nedo cintuma dendo cindo clindo clindo cliendo clinde clinte フィカ運河。
+パーソナライズされた ação em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente essencial. Insights levam ação, o que leva mais insights. A abordagem exclusiva daAdobefocada na forence as ferramentas para, além de impulsionar os avanços tecnológicos, impactar oganosiação, sua eupite sua cacaidade de oferecuma experia holisticao clientia cliao clientia clia clientia cia cia em ve me me em vez de expia de expiruma de exia de exia de me mevenência denência de de de de clincia de de de de clincente clinte clinente clindo clindo clinte cl ポール運河。
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 0%
 
 ## Instale o aplicativo movel
 
-アプリをインストールする前に、を有効にする必要があります **トラッキング** をiOSデバイスで使用できます。 これをおこなうには、に移動します。 **設定** > **プライバシーとセキュリティ** > **トラッキング** およびオプションを確認します。 **アプリの追跡リクエストを許可**.
-
-アンテス・デ・インスタラー・オ・アプリカティボ，é nepiário habilitar **Rastreamento** seu に反応しないiOS アクセス・パラ・イッソ **設定** > **Privacide e segurança** > **Rastreamento** オパサンを検証する **Peritir que os applicativos solicitiem o rastreamento**.
+アンテス・デ・インスタラー・オ・アプリカティボ，é nesário habilitar o **Rastreamento** seu に反応しないiOS アクセス・パラ・イッソ **設定** > **Privacide e segurança** > **Rastreamento** オパサンを検証する **Peritir que os applicativos solicitiem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -26,7 +24,7 @@ App Store・ダ・Apple・エペスク `aepmobile-bootcamp`. クリック **
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **開く**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -84,7 +82,7 @@ Voêverá a página do produto **行くコーヒー** アプリケーティ�
 
 ![DSN](./images/app20.png)
 
-Agora vocirá simular um entrada de sinalização (beacon) em um local de armazenamento offline. O objetivo da simulação personalizar experiência do cliente nas telas da loja. Para ビジュアライゼーション a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informaçoes relevantes para o cliente ao entrar na loja.
+Agora vocirá simular um entrada de sinalização （ビーコン） em uma loja offline. O objetivo da simulação personalizar experiência do cliente nas telas da loja. Para ビジュアライゼーション a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informaçoes relevantes para o cliente ao entrar na loja.
 
 Antes de continuar, abra esta página da web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -96,7 +94,6 @@ Em seguida, a tela abaixo será exibida:
 
 ![DSN](./images/app23.png)
 
-これが見えます まず、「 」を選択します。 **Bootcamp Screen Beacon** そして、 **エントリ** 」ボタンをクリックします。 これにより、ビーコンエントリをシミュレートできます。
 Após essa etapa, o seguinte será exibido. Primeiro, selecione **Bootcamp Screen Beacon** e クリケノボタンデ **エントラダ**. Isso permitriá que vocêsimule entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)

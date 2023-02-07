@@ -5,7 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Vocêserá redirectionado para a visualização da **ホーム** Journey Optimiz
 
 ![ACOP](./images/emptyevent1.png)
 
-Em primeiro lugar, dêum nome ao seu evento como, por exemplo: `yourLastNameAccountCreationEvent` e adicione uma は、por エグザンプリを表します。 `Account Creation Event`.
+Em primeiro lugar, dêum nome ao seu evento como, por exemplo: `seuSobrenomeAccountCreationEvent` e adicione uma は、por エグザンプリを表します。 `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
@@ -79,7 +79,7 @@ Seu evento agora está configurado e salvo.
 ![ACOP](./images/viewevent.png)
 
 アゴラヴォクヴェラ・アムエグザンプロダ・カルガ・クティル・エスペラダ。
-Seu evento tem um eventID de orquestraçãoúnico, que vocêpode encontrar rolando para baixo nessa cargaútil (payload) até visualiza `_experience.campaign.orchestration.eventID`.
+Seu evento tem um eventID de orquestraçãoúnico, que vocêpode encontrar rolando para baixo nessa cargutil (payload) até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 

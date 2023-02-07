@@ -5,16 +5,16 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
 
 # 2.6 Personalização no call center
 
-既にブートキャンプ中に複数回話し合ったように、顧客体験のパーソナライズは、オムニチャネル方式で発生すべきことです。 コールセンターは、多くの場合、カスタマージャーニーの他の部分とは完全に切り離されており、多くの場合、カスタマーエクスペリエンスに不満を抱きますが、そうする必要はありません。 コールセンターをAdobe Experience Platformにリアルタイムで簡単に接続する方法の例を見てみましょう。
+コンフォーメディスクドヴァリアスは、ブートキャンプのデュランテをヴェーズし、パーソナライズアエクスペリエンシアのドクリエンテアルゴデヴェアコンテカードマネイラオムニチャネル。 Um コールセンタージェラルメンテバスタンテデスコネクタドは、restante da jornada do cliente e isso pode, com frequência, levar a experiências transtrantes do cliente, mas não precisa ser assim. Vamos mostrar um examplo de como call center pode ser facilmente connectado a Adobe Experience Platform, em テンポリアル。
 
 ## フラクソダヨルナダドクライアンテ
 
@@ -38,7 +38,7 @@ Será selsitado que vocêinsira seu ID de fidelidade, seguido de **#**. Digite s
 
 ![DSN](./images/cc3.png)
 
-ヴォクヴィラ **こんにちは、セウノメ**&#x200B;いいえ。 エッセネ・レティラド・ド・ペルフィル・ド・クライエンテ・エムテンポレアルナ・Adobe Experience Platform。 ボークテム 3 エスコール。 プレッシオ・オヌメロ **1**, **注文ステータス**.
+ヴォクヴィラ **こんにちは、セウノメ**. エッセネ・レティラド・ド・ペルフィル・ド・クライエンテ・エムテンポレアルナ・Adobe Experience Platform。 ボークテム 3 エスコール。 プレッシオ・オヌメロ **1**, **注文ステータス**.
 
 ![DSN](./images/cc4.png)
 
@@ -72,7 +72,7 @@ Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depoi
 
 ![DSN](./images/cc8.png)
 
-Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro eventoé o resutado da sua resposta a pergunta Avalie o seu n **通話満足度の評価**.
+Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro eventoé o resutado da sua resposta a pergunta **通話満足度の評価** （アバリーセウシャマダ）。
 
 ![DSN](./images/cc9.png)
 
