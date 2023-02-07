@@ -3,7 +3,7 @@ title: チュートリアルの権限の設定
 description: Experience PlatformWeb SDK へのアクセスをリクエストする方法と、「 Web SDK を使用したAdobe Experience Cloudの実装」チュートリアルを完了するために必要な権限の設定方法について説明します。
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4eaa7ae1cf4c4c1478484eaeb877733a43c6fdf5
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 7%
@@ -23,7 +23,7 @@ Experience PlatformWeb SDK へのアクセスをリクエストする方法と�
 
 Real-Time CDPなどの Platform ベースのExperience Cloudをお使いでない場合でも、これらの機能をすべてのアプリケーションのお客様が利用できる必要があります。
 
-* へのアクセス **デフォルトの実稼動**, **&quot;Prod&quot;** サンドボックス (.
+* へのアクセス **デフォルトの実稼動**, **&quot;Prod&quot;** サンドボックス。
 * アクセス先 **[!UICONTROL スキーマを管理]** および **[!UICONTROL スキーマを表示]** under **[!UICONTROL データモデリング]**
 * アクセス先 **[!UICONTROL ID 名前空間の管理]** および **[!UICONTROL ID 名前空間の表示]** under **[!UICONTROL Identity Management]**
 * アクセス先 **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームの表示]** under **[!UICONTROL データ収集]**
