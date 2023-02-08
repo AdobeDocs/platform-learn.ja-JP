@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -91,10 +91,8 @@ Depois de fazer ログイン， vocêirá acessar a página inicial da Adobe Exp
 
 Certifique-se de ter verificado menos:
 
-- ID:CRMID、phoneNumber、ECID、電子メール。 プライマリ識別子はどの ID で、セカンダリ識別子はどれですか。
-識別子を見つけるには、スキーマを開き、オブジェクトを確認します `_experienceplatform.identification.core`. スキーマを見る [デモシステム — Web サイトのイベントスキーマ (Global v1.1)](https://experience.adobe.com/platform/schema).
-
 - 識別子：CRMID、phoneNumber、ECID、電子メール。 クァイスはサンオス identificadores primários, quais são os identificadores secundários?
+
 ボケポード・エンコントラール・アブリンド・アム・スキーマ・オブジェトのオブザンド `_experienceplatform.identification.core`. スキーマの検証 [デモシステム — Web サイトのイベントスキーマ (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![デモ](./images/identity.png)
@@ -107,7 +105,7 @@ Certifique-se de ter verificado menos:
 
 アゴラヴォーケスタ・プロント・パラ・コメサル a usar a interface do usário doCustomer Journey Analytics。
 
-プロクシマエタパ： [データセットをAdobe Experience PlatformなしCustomer Journey Analytics](./ex2.md)
+プロクシマエタパ： [4.2 データセットの接続とAdobe Experience PlatformのCustomer Journey Analytics](./ex2.md)
 
 [レトルナルパラフルクソデウサリオ 4](./uc4.md)
 

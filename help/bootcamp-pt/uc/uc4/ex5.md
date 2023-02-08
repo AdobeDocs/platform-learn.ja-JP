@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 - Conheça alguns recursos que tornam o Analysis Workspace tão diferente.
 - Analysis Workspaceのアナリサルの CJA ユサンド
 
-## コンテキスト
+## Contexto
 
 Neste expercício, vocêusará o Analysis Workspace no CJA para analizar visualizaçoes de productos, funis de productos, rotatividade など
 
@@ -316,7 +316,7 @@ Graças a primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos
 
 ## Recapitulação do Analysis Workspace e doCustomer Journey Analytics
 
-コモヴォーカプレンデウネステラボラトリオ、オAnalysis Workspaceレウンデダドスデトドスカナイスパラアナリサルヨルナダコンプレタドクライアンテ。 Além disso, lembre-se de que você pode trazer dados para o mesmo workspace que não está vinculado a jornada. ポデ・サー・ムイト・クティル・トラザー・ダドス・デスコネクタドス・パラ・アナリス・パラ・コンテキスタリザーア・ヨルナダ。 Alguns の従業員には、coisas como dados NPS、pesquisas、eventos de anúncios doFacebook ou interaçoes offline (não identificadas) が含まれます。
+O Analysis Workspaceは、Analytics を使用してトダを削除します。 Ele forene uma tela lobsta e flexível para criar projectos de analytics personalizados. Arraste e solte qualte qualquer número de tabelas de dados, visualizaçoes e componentes (dimensions, métricas, segmentos e granuridades de tempo) para um projeto. Vocepode criar de forma instantânea filtros e analises, gráficos de coorte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamento para compartilhar com quer peso aem seu negio
 
 プロクシマエタパ： [4.6 De insights a ação](./ex6.md)
 
