@@ -1,7 +1,7 @@
 ---
 title: 送信パラメーター | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用して、mbox、プロファイル、エンティティの各パラメーターをAdobe Targetに送信する方法について説明します。
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 1%
@@ -225,7 +225,7 @@ alloy("sendEvent", {
     "__adobe": {
       "target": {
         "entity.id": "SKU-00001-LARGE",
-        "entity.categoryId": "clothing,shirts"
+        "entity.categoryId": "clothing,shirts",
         "entity.customEntity": "some value",
         "cartIds": "SKU-00002,SKU-00003",
         "excludedIds": "SKU-00001-SMALL"
