@@ -4,33 +4,16 @@ description: Adobe Experience Platformの詳細
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 73313bf0b2f9a0f539c8b52bda2d9bd66bed65d1
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 35%
+source-wordcount: '164'
+ht-degree: 40%
 
 ---
 
 # Adobe Experience Platform のチュートリアル
 
 Adobe Experience Platform は、顧客体験を促進する完全なソリューションを構築し、管理するための、市場で最も強力で柔軟性の高いオープンシステムです。Experience Platform を使用すると、顧客データとコンテンツを任意のシステムから一元管理し、データサイエンスと機械学習を適用して、パーソナライズされた豊富なエクスペリエンスのデザインと配信を大幅に改善できます。これらのビデオとチュートリアルを使用して、Experience Platformの多くの要素を学習します。
-
-
-<div id="whats-new-section">
-
-## 最新情報
-
-* **[属性ベースのアクセス制御の設定（ビデオ）](admin/configure-attribute-based-access-control.md)**
-
-   *特定のリソースへのアクセスを制限*
-* **[データの衛生状態の概要（ビデオ）](/help/platform/data-hygiene/overview.md)**
-
-   *データ最小化の手法を改善*
-* **[データセットの削除（ビデオ）](/help/platform/data-hygiene/delete-datasets.md)**
-
-   *データセットの有効期間の設定*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
