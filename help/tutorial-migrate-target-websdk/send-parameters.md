@@ -1,9 +1,9 @@
 ---
 title: 送信パラメーター | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用して、mbox、プロファイル、エンティティの各パラメーターをAdobe Targetに送信する方法について説明します。
-source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
+source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -14,11 +14,9 @@ Target の実装は、サイトのアーキテクチャ、ビジネス要件、�
 
 シンプルな製品の詳細ページと注文の確認ページを使用して、Target にパラメーターを渡す際のライブラリの違いを示します。
 
-at.js を使用した次のページの例を考えてみましょう。
+at.js を使用する 2 つのページの例を次に示します。
 
-<!--Assume the following two example pages using at.js:-->
-
-製品の詳細：
++++at.js を製品の詳細ページに追加します。
 
 ```HTML
 <!doctype html>
@@ -57,9 +55,10 @@ at.js を使用した次のページの例を考えてみましょう。
 </html>
 ```
 
++++
 
 
-注文確認:
++++at.js を注文の確認ページに表示：
 
 ```HTML
 <!doctype html>
@@ -90,6 +89,8 @@ at.js を使用した次のページの例を考えてみましょう。
 </body>
 </html>
 ```
+
++++
 
 
 ## パラメーターマッピングの概要
@@ -140,12 +141,16 @@ at.js の使用例 `targetPageParams()`:
 ```JavaScript
 targetPageParams = function() {
   return {
-    "siteSection": "product detail"
+    "pageName": "product detail"
   };
 };
 ```
 
-Platform Web SDK の使用例 `sendEvent` コマンド：
+Platform Web SDK JavaScript の例と使用 `sendEvent` コマンド：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -153,12 +158,25 @@ alloy("sendEvent", {
     "web": {
       "webPageDetails": {
         // Other attributes included according to xdm schema
-        "siteSection": "product detail"
+        "name": "product detail"
       }
     }
   }
 });
 ```
+
+>[!TAB タグ]
+
+タグでは、最初に [!UICONTROL XDM オブジェクト] XDM フィールドにマッピングするデータ要素：
+
+![XDM オブジェクトデータ要素の XDM フィールドへのマッピング](assets/params-tags-pageName.png)
+
+次に、 [!UICONTROL XDM オブジェクト] の [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL XDM オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -184,6 +202,10 @@ targetPageParams = function() {
 
 Platform Web SDK の使用例 `sendEvent` コマンド：
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```JavaScript
 alloy("sendEvent", {
   "data": {
@@ -196,6 +218,18 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB タグ]
+
+タグで、最初にデータ要素を作成し、 `data.__adobe.target` オブジェクト：
+
+![データ要素でのデータオブジェクトの定義](assets/params-tags-dataObject.png)
+
+次に、 [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Send イベントにデータオブジェクトを含める](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
 
 ## エンティティパラメーター
 
@@ -219,6 +253,10 @@ targetPageParams = function() {
 
 Platform Web SDK の使用例 `sendEvent` コマンド：
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```JavaScript
 alloy("sendEvent", {
   "data": {
@@ -234,6 +272,22 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB タグ]
+
+タグで、最初にデータ要素を作成し、 `data.__adobe.target` オブジェクト：
+
+![データ要素でのデータオブジェクトの定義](assets/params-tags-dataObject-entities.png)
+
+次に、 [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Send イベントにデータオブジェクトを含める](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
+
+
+
+
 
 すべて [エンティティパラメーター](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js でサポートされているのは、Platform Web SDK でもサポートされています。
 
@@ -258,9 +312,13 @@ targetPageParams = function() {
 };
 ```
 
-購入情報は、 `commerce` フィールドグループが次の値を持つ `puchases.value` に設定 `1`. 注文 ID と注文の合計は、 `order` オブジェクト。 この `productListItems` 配列が存在する場合、 `SKU` 値は次の場合に使用されます。 `productPurchasedId`.
+購入情報は、 `commerce` フィールドグループが次の値を持つ `purchases.value` に設定 `1`. 注文 ID と注文の合計は、 `order` オブジェクト。 この `productListItems` 配列が存在する場合、 `SKU` 値は次の場合に使用されます。 `productPurchasedId`.
 
 Platform Web SDK の使用例 `sendEvent` コマンド：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -282,6 +340,19 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB タグ]
+
+タグでは、最初に [!UICONTROL XDM オブジェクト] XDM フィールドにマッピングするデータ要素：
+
+![XDM オブジェクトデータ要素の XDM フィールドへのマッピング](assets/params-tags-purchase.png)
+
+次に、 [!UICONTROL XDM オブジェクト] の [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL XDM オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -311,6 +382,10 @@ targetPageParams = function() {
 
 Platform Web SDK の使用例 `sendEvent` コマンド：
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```JavaScript
 alloy("sendEvent", {
   "xdm": {
@@ -324,6 +399,22 @@ alloy("sendEvent", {
 });
 ```
 
+>[!TAB タグ]
+
+この [!UICONTROL ID] 値 [!UICONTROL 認証状態] および [!UICONTROL 名前空間] が [!UICONTROL ID マップ] データ要素：
+![顧客 ID をキャプチャする ID マップデータ要素](assets/params-tags-customerIdDataElement.png)
+
+この [!UICONTROL ID マップ] 次に、データ要素を使用して [!UICONTROL identityMap] フィールド [!UICONTROL XDM オブジェクト] データ要素：
+![XDM オブジェクトデータ要素で使用される ID マップデータ要素](assets/params-tags-customerIdInXDMObject.png)
+
+この [!UICONTROL XDM オブジェクト] が [!UICONTROL イベントを送信] ルールのアクション：
+
+![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent.png)
+
+データストリームのAdobe Targetサービスで、必ず [!UICONTROL Target サードパーティ ID 名前空間] を [!UICONTROL ID マップ] データ要素
+![データストリームでの Target サードパーティ ID 名前空間の設定](assets/params-tags-customerIdNamespaceInDatastream.png)
+
+>[!ENDTABS]
 
 ## Platform Web SDK の例
 
@@ -335,7 +426,7 @@ alloy("sendEvent", {
 - A `configure` ライブラリを初期化するコマンド
 - A `sendEvent` データを送信し、レンダリングする Target コンテンツを要求するコマンド
 
-製品の詳細：
++++製品の詳細ページの Web SDK:
 
 ```HTML
 <!doctype html>
@@ -408,8 +499,9 @@ alloy("sendEvent", {
 </html>
 ```
 
++++
 
-注文確認:
++++注文の確認ページの Web SDK:
 
 ```HTML
 <!doctype html>
@@ -477,6 +569,8 @@ alloy("sendEvent", {
 </body>
 </html>
 ```
+
++++
 
 次に、 [Target コンバージョンイベントの追跡](track-events.md) Platform Web SDK を使用して、
 

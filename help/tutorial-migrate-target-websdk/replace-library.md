@@ -1,9 +1,9 @@
 ---
 title: ライブラリの置き換え | at.js 2.x から Web SDK への Target の移行
 description: Adobe Target実装を at.js 2.x からAdobe Experience Platform Web SDK に移行する方法について説明します。 トピックには、ライブラリの概要、実装の違い、その他の重要な注意事項が含まれます。
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 4%
 
 ---
@@ -63,6 +63,8 @@ at.js を使用した単純な Target 実装を想定します。
 * Target アクティビティで機能を使用できる 1 つ以上のサードパーティのヘルパーライブラリ（jQuery など）
 * ちらつきを軽減するための事前非表示スニペット
 * Target at.js ライブラリは、デフォルト設定で非同期的に読み込まれ、アクティビティを自動的に要求およびレンダリングします。
+
++++at.js のHTMLコードの例を参照してください。
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ at.js を使用した単純な Target 実装を想定します。
 </body>
 </html>
 ```
+
++++
 
 Platform Web SDK を使用するように Target をアップグレードするには、まず at.js を削除します。
 
