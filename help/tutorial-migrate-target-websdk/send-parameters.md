@@ -1,9 +1,9 @@
 ---
 title: 送信パラメーター | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用して、mbox、プロファイル、エンティティの各パラメーターをAdobe Targetに送信する方法について説明します。
-source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
+source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1663'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ at.js を使用する 2 つのページの例を次に示します。
         // Property token
         "at_property": "5a0fd9bb-67de-4b5a-0fd7-9cc09f50a58d",
         // Mbox parameters
-        "siteSection": "product details",
+        "pageName": "product detail",
         // Profile parameters
         "profile.gender": "male",
         "user.categoryId": "clothing",
@@ -95,16 +95,16 @@ at.js を使用する 2 つのページの例を次に示します。
 
 ## パラメーターマッピングの概要
 
-この 2 つのサンプルページで使用される Target パラメーターは、Platform Web SDK を使用して、少し異なる方法で送信する必要があります。 at.js を使用して Target にパラメーターを渡す方法は複数あります。
+Platform Web SDK を使用した場合、これらのページの Target パラメーターの送信方法が異なります。 at.js を使用して Target にパラメーターを渡す方法は複数あります。
 
 - 次で設定： `targetPageParams()` ページ読み込みイベントの関数
 - 次で設定： `targetPageParamsAll()` 関数を使用して、ページ上のすべての Target リクエストに対して
 - を使用して直接パラメーターを送信 `getOffer()` 単一の場所に対する関数
 - を使用して直接パラメーターを送信 `getOffers()` 1 つ以上の場所で機能
 
-この例では、 `targetPageParams()` アプローチが使用されます。
+次の例では、 `targetPageParams()` アプローチが使用されます。
 
-Platform Web SDK は、追加の関数を必要とせずに、一貫した単一の方法でデータを送信することで、これを簡素化します。 すべてのパラメーターは、 `sendEvent` コマンドを使用します。
+Platform Web SDK は、追加の関数を必要とせずに、1 つの一貫した方法でデータを送信できます。 すべてのパラメーターは、 `sendEvent` コマンドを使用します。
 
 Platform Web SDK で渡されるパラメーター `sendEvent` ペイロードは次の 2 つのカテゴリに分類されます。
 
@@ -116,7 +116,7 @@ Platform Web SDK で渡されるパラメーター `sendEvent` ペイロード�
 | at.js パラメーターの例 | Platform Web SDK オプション | メモ |
 | --- | --- | --- |
 | `at_property` | 該当なし | プロパティトークンは、 [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) また、 `sendEvent` 呼び出し。 |
-| `siteSection` | `xdm.web.webPageDetails.siteSection` | すべての Target mbox パラメーターは、 `xdm` オブジェクトを作成し、XDM ExperienceEvent クラスを使用してスキーマに準拠します。 mbox パラメーターは、 `data` オブジェクト。 |
+| `pageName` | `xdm.web.webPageDetails.name` | すべての Target mbox パラメーターは、 `xdm` オブジェクトを作成し、XDM ExperienceEvent クラスを使用してスキーマに準拠します。 mbox パラメーターは、 `data` オブジェクト。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | すべての Target プロファイルパラメーターは、 `data` オブジェクトと `profile.` を適切にマッピングする必要があります。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Target のカテゴリ親和性機能で使用される、の一部として渡す必要がある予約済みパラメーター `data` オブジェクト。 |
 | `entity.id` | `data.__adobe.target.entity.id` <br>または<br> `xdm.productListItems[0].SKU` | エンティティ ID は、Target Recommendations行動カウンターで使用されます。 これらのエンティティ ID は、 `data` オブジェクトまたは `xdm.productListItems` 配列を返します。 |
@@ -169,18 +169,18 @@ alloy("sendEvent", {
 
 タグでは、最初に [!UICONTROL XDM オブジェクト] XDM フィールドにマッピングするデータ要素：
 
-![XDM オブジェクトデータ要素の XDM フィールドへのマッピング](assets/params-tags-pageName.png)
+![XDM オブジェクトデータ要素の XDM フィールドへのマッピング](assets/params-tags-pageName.png){zoomable=&quot;yes&quot;}
 
 次に、 [!UICONTROL XDM オブジェクト] の [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL XDM オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent.png)
+![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->カスタム mbox パラメーターは、 `xdm` オブジェクトを `sendEvent` コマンドを使用する場合、at.js Target 実装で使用される mbox パラメーターは、同等の XDM に再割り当てする必要があります。 つまり、これらの mbox パラメーターを参照するオーディエンス、アクティビティまたはプロファイルスクリプトを更新する必要があります。
+>カスタム mbox パラメーターは `xdm` オブジェクトの名前を変更し、mbox パラメーターを参照するオーディエンス、アクティビティまたはプロファイルスクリプトを更新する必要があります。 詳しくは、 [Platform Web SDK の互換性を考慮した Target オーディエンスとプロファイルスクリプトの更新](update-audiences.md) このチュートリアルのページを参照してください。
 
 
 ## プロファイルパラメーター
@@ -223,11 +223,11 @@ alloy("sendEvent", {
 
 タグで、最初にデータ要素を作成し、 `data.__adobe.target` オブジェクト：
 
-![データ要素でのデータオブジェクトの定義](assets/params-tags-dataObject.png)
+![データ要素でのデータオブジェクトの定義](assets/params-tags-dataObject.png){zoomable=&quot;yes&quot;}
 
 次に、 [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Send イベントにデータオブジェクトを含める](assets/params-tags-sendEvent-withData.png)
+![Send イベントにデータオブジェクトを含める](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -277,11 +277,11 @@ alloy("sendEvent", {
 
 タグで、最初にデータ要素を作成し、 `data.__adobe.target` オブジェクト：
 
-![データ要素でのデータオブジェクトの定義](assets/params-tags-dataObject-entities.png)
+![データ要素でのデータオブジェクトの定義](assets/params-tags-dataObject-entities.png){zoomable=&quot;yes&quot;}
 
 次に、 [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Send イベントにデータオブジェクトを含める](assets/params-tags-sendEvent-withData.png)
+![Send イベントにデータオブジェクトを含める](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -345,11 +345,11 @@ alloy("sendEvent", {
 
 タグでは、最初に [!UICONTROL XDM オブジェクト] XDM フィールドにマッピングするデータ要素：
 
-![XDM オブジェクトデータ要素の XDM フィールドへのマッピング](assets/params-tags-purchase.png)
+![XDM オブジェクトデータ要素の XDM フィールドへのマッピング](assets/params-tags-purchase.png){zoomable=&quot;yes&quot;}
 
 次に、 [!UICONTROL XDM オブジェクト] の [!UICONTROL イベントを送信] [!UICONTROL アクション] ( 複数 [!UICONTROL XDM オブジェクト] は [結合済み](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent.png)
+![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent-purchase.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -402,17 +402,17 @@ alloy("sendEvent", {
 >[!TAB タグ]
 
 この [!UICONTROL ID] 値 [!UICONTROL 認証状態] および [!UICONTROL 名前空間] が [!UICONTROL ID マップ] データ要素：
-![顧客 ID をキャプチャする ID マップデータ要素](assets/params-tags-customerIdDataElement.png)
+![顧客 ID をキャプチャする ID マップデータ要素](assets/params-tags-customerIdDataElement.png){zoomable=&quot;yes&quot;}
 
 この [!UICONTROL ID マップ] 次に、データ要素を使用して [!UICONTROL identityMap] フィールド [!UICONTROL XDM オブジェクト] データ要素：
-![XDM オブジェクトデータ要素で使用される ID マップデータ要素](assets/params-tags-customerIdInXDMObject.png)
+![XDM オブジェクトデータ要素で使用される ID マップデータ要素](assets/params-tags-customerIdInXDMObject.png){zoomable=&quot;yes&quot;}
 
 この [!UICONTROL XDM オブジェクト] が [!UICONTROL イベントを送信] ルールのアクション：
 
-![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent.png)
+![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
 データストリームのAdobe Targetサービスで、必ず [!UICONTROL Target サードパーティ ID 名前空間] を [!UICONTROL ID マップ] データ要素
-![データストリームでの Target サードパーティ ID 名前空間の設定](assets/params-tags-customerIdNamespaceInDatastream.png)
+![データストリームでの Target サードパーティ ID 名前空間の設定](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -472,7 +472,7 @@ alloy("sendEvent", {
         "web": {
           "webPageDetails": {
             // Other attributes included according to XDM schema
-            "siteSection": "product detail"
+            "pageName": "product detail"
           }
         }
       },
