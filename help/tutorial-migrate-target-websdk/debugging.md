@@ -1,10 +1,10 @@
 ---
 title: デバッグ | at.js 2.x から Web SDK への Target の移行
 description: Adobe Experience Platform Web SDK を使用したAdobe Target実装のデバッグ方法について説明します。 トピックには、デバッグオプション、ブラウザー拡張機能、at.js と Platform Web SDK の違いが含まれます。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 4%
+source-wordcount: '1534'
+ht-degree: 3%
 
 ---
 
@@ -120,7 +120,7 @@ Adobe Experience Platform Debugger で Platform Web SDK Target トレースを�
 1. ページを再読み込みし、エッジネットワークでのやり取りに関する詳細情報がログに記録されます
 1. 説明の「Target Traces」で始まるログエントリにフォーカスし、を選択します。 **[!UICONTROL 表示]** Target のトレースの詳細を表示するには
 
-![Adobe Experience Platform Debugger を使用して Target トレースを表示する方法](assets/target-trace-debugger.png)
+![Adobe Experience Platform Debugger を使用して Target トレースを表示する方法](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 選択後 **[!UICONTROL 表示]**&#x200B;に値を指定すると、オーバーレイが表示され、リクエストに関連する次の情報を確認できます。
 
@@ -142,7 +142,7 @@ Target のトレース情報は、Adobe Experience Platform Debugger ブラウ�
 1. タイプのログエントリを選択 `com.adobe.target.trace`
 1. ペイロードの詳細を展開し、以下の情報を表示します。 `context > targetTrace`
 
-![アシュランスを使用して Target トレースを表示する方法](assets/target-trace-assurance.png)
+![アシュランスを使用して Target トレースを表示する方法](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## ネットワークリクエストと応答の検証
 
@@ -150,7 +150,7 @@ Platform Web SDK のリクエストペイロードと応答 `sendEvent` 呼び�
 
 ### コンテンツリクエストペイロード
 
-![Platform Web SDK ペイロードの Target 固有の要素](assets/target-payload.png)
+![Platform Web SDK ペイロードの Target 固有の要素](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - プロファイル、エンティティ、およびその他の非 mbox パラメーターは、 `data.__adobe.target`
 - 決定範囲は、 `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ Platform Web SDK のリクエストペイロードと応答 `sendEvent` 呼び�
 
 ### コンテンツ応答本文
 
-![Platform Web SDK の応答本文の Target 固有の要素](assets/target-response.png)
+![Platform Web SDK の応答本文の Target 固有の要素](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - Platform Web SDK は、 `handle` object
 - この `personalization:decisions` アクションは、Target またはoffer decisioningからの応答を示します
@@ -169,7 +169,7 @@ Platform Web SDK のリクエストペイロードと応答 `sendEvent` 呼び�
 
 ### 提案イベントのペイロード
 
-![ターゲットの提案イベントの例](assets/target-proposition-event.png)
+![ターゲットの提案イベントの例](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Target 固有の SDK イベントは、 `decisioning.propositionDisplay` 印象や `decisioning.propositionInteract` クリックなどのインタラクションの場合
 - 提案イベントの詳細は、のイベント配列にあります。 `xdm._experience.decisioning`

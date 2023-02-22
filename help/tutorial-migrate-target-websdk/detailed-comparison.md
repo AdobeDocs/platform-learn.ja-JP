@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x と Web SDK の比較 | at.js 2.x から Web SDK への Target の移行
 description: 機能、関数、設定、データフローなど、at.js 2.x と Platform Web SDK の違いについて説明します。
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2156'
 ht-degree: 8%
 
 ---
@@ -39,7 +39,7 @@ Platform Web SDK を初めて使用する場合は、心配する必要はあり
 | ハイブリッドアプリケーション | サポートあり | サポートあり |
 | QA URL | サポートあり | サポートあり |
 | mbox サードパーティ ID | サポートあり | サポートあり |
-| カスタマー属性 | サポートあり | サポート対象 |
+| 顧客属性 | サポートあり | サポート対象 |
 | リモートオファー | サポートあり | サポートあり |
 | リダイレクトオファー | サポートあり | サポートあり. ただし、Platform Web SDK を使用したページから at.js を使用した（かつ反対の方向の）ページへのリダイレクトはサポートされていません。 |
 | オンデバイス判定 | サポートあり | 現在はサポートされていません |
@@ -90,7 +90,7 @@ at.js ライブラリは、Target UI の様々な設定を使用して設定お�
 | `bodyHiddenStyle` | を [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) と `configure` command |
 | `bodyHidingEnabled` | 次の場合、 `prehidingStyle` が `configure` 」コマンドを入力すると、この機能が有効になります。 スタイルが定義されていない場合、Platform Web SDK はコンテンツを非表示にしようとしません。 |
 | `clientCode` | 自動設定 |
-| `cookieDomain` | 該当なし |
+| `cookieDomain` | 適用なし |
 | `crossDomain` | を `thirdPartyCookiesEnabled` 選択肢 `true` と `configure` コマンドを使用して、クロスドメインの使用例に対してファーストパーティ Cookie とサードパーティ Cookie を有効にする |
 | `cspScriptNonce` および `cspStyleNonce` | 詳しくは、 [CSP の設定](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html) |
 | `dataProviders` | サポートなし |
@@ -101,15 +101,15 @@ at.js ライブラリは、Target UI の様々な設定を使用して設定お�
 | `globalMboxAutoCreate` | を `renderDecisions` 選択肢 `true` と `sendEvent` コマンドを使用して VEC ベースのエクスペリエンスを自動的に取得し、レンダリングすることができます。<br><br>リクエスト a `decisionScope` 対象 `__view__` VEC ベースのエクスペリエンスを手動でレンダリングする場合。 |
 | `imsOrgId` | を `orgId` と `configure` command |
 | `optinEnabled` および `optoutEnabled` | Platform Web SDK を参照してください。 [プライバシーオプション](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html). この `defaultConsent` オプションは、Platform Web SDK がサポートするすべてのAdobeソリューションに適用されます。 |
-| `overrideMboxEdgeServer` および `overrideMboxEdgeServerTimeout` | 該当なし. すべての Platform Web SDK リクエストで、Adobe Experience Platform Edge ネットワークが使用されます。 |
+| `overrideMboxEdgeServer` および `overrideMboxEdgeServerTimeout` | 適用なし. すべての Platform Web SDK リクエストで、Adobe Experience Platform Edge ネットワークが使用されます。 |
 | `pageLoadEnabled` | を `renderDecisions` 選択肢 `true` と `sendEvent` command |
 | `secureOnly` | サポートなし. Platform Web SDK は、 `secure` および `sameSite="none"` 属性。 |
 | `selectorsPollingTimeout` | サポートなし. Platform Web SDK では、5 秒の値を使用します。 必要に応じて、カスタムコードを使用してコンテンツを手動でレンダリングできます。 |
 | `serverDomain` | 以下を使用： `edgeDomain` 設定 `configure` command |
-| `telemetryEnabled` | 該当なし |
+| `telemetryEnabled` | 適用なし |
 | `timeout` | サポートなし. ちらつきを緩和するコードに適切なタイムアウトが含まれていることを確認することをお勧めします。 |
 | `viewsEnabled` | サポートなし. Target ビューのコンテンツは、最初の `sendEvent()` を呼び出す `renderDecisions` が `true` または `__view__` decisionScope がリクエストに含まれます。 |
-| `visitorApiTimeout` | 該当なし |
+| `visitorApiTimeout` | 適用なし |
 
 
 ## システム図の比較
@@ -118,7 +118,7 @@ at.js ライブラリは、Target UI の様々な設定を使用して設定お�
 
 ### at.js 2.x のシステム図
 
-![ページ読み込み時の at.js 2.0 の動作](assets/target-at-js-2x-diagram.png)
+![ページ読み込み時の at.js 2.0 の動作](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
 
 | を呼び出します | 詳細 |
 | --- | --- |

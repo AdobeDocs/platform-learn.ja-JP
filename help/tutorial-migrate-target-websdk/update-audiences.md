@@ -1,9 +1,9 @@
 ---
 title: オーディエンスとプロファイルスクリプトを更新 | at.js 2.x から Web SDK への Target の移行
 description: Adobe Target Web SDK との互換性を保つために、Web オーディエンスとプロファイルスクリプトを更新するExperience Platformについて説明します。
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Target を Platform Web SDK に移行するためのテクニカルアップデ�
 
 at.js と Platform Web SDK の両方との互換性を確保する 1 つの方法は、関連するオーディエンスを更新して `OR` 条件は、次に示すように使用されます。
 
-![Platform Web SDK の互換性を考慮した Target オーディエンスの更新を表示する方法](assets/target-audience-update.png)
+![Platform Web SDK の互換性を考慮した Target オーディエンスの更新を表示する方法](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## プロファイルスクリプトの編集
 

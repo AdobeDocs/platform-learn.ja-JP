@@ -1,9 +1,9 @@
 ---
 title: 送信パラメーター | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用して、mbox、プロファイル、エンティティの各パラメーターをAdobe Targetに送信する方法について説明します。
-source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Platform Web SDK で渡されるパラメーター `sendEvent` ペイロード�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | カスタムエンティティパラメーターは、Recommendations製品カタログの更新に使用されます。 これらのカスタムパラメーターは、 `data` オブジェクト。 |
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースの Recommendations アルゴリズムに使用されます。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 特定のエンティティ ID が Recommendations デザインで返されるのを防ぐために使用します。 |
-| `mbox3rdPartyId` | identityMap に設定します。 詳しくは、 [顧客 ID とのプロファイルの同期](#synching-profiles-with-a-customer-id) | デバイスと顧客属性をまたいで Target プロファイルを同期するために使用されます。 顧客 ID に使用する名前空間は、 [データストリームのターゲット設定](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | identityMap に設定します。 | デバイスと顧客属性をまたいで Target プロファイルを同期するために使用されます。 顧客 ID に使用する名前空間は、 [データストリームのターゲット設定](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Target コンバージョントラッキングの一意の注文を識別するために使用します。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Target のコンバージョンと最適化目標の注文合計の追跡に使用します。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>または<br> `xdm.productListItems[0-n].SKU` | Target のコンバージョントラッキングおよび Recommendations アルゴリズムで使用されます。 詳しくは、 [エンティティパラメーター](#entity-parameters) 詳しくは、以下の節を参照してください。 |
@@ -134,7 +134,7 @@ Platform Web SDK で渡されるパラメーター `sendEvent` ペイロード�
 
 ## カスタムパラメーター
 
-すべてのカスタム mbox パラメーターは、を使用して XDM データとして渡す必要があります。 `sendEvent` コマンドを使用します。 XDM スキーマに、Target 実装に必要なすべてのデータポイントが含まれていることを確認することが重要です。
+カスタム mbox パラメーターは、 `sendEvent` コマンドを使用します。 XDM スキーマに、Target 実装に必要なすべてのフィールドが含まれていることを確認することが重要です。
 
 at.js の使用例 `targetPageParams()`:
 
@@ -359,7 +359,7 @@ alloy("sendEvent", {
 >この `productPurchasedId` の値は、 `data` オブジェクト。
 
 
-## 顧客 ID とのプロファイルの同期
+## 顧客 ID (mbox3rdPartyId)
 
 Target では、1 つの顧客 ID を使用して、デバイスやシステム間でプロファイルを同期できます。 at.js を使用すると、これを `mbox3rdPartyId` （Target リクエスト内）、またはExperience CloudID サービスに最初に送信された顧客 id。 at.js とは異なり、Platform Web SDK の実装では、 `mbox3rdPartyId` 複数の値が存在する場合は、 例えば、ビジネスにグローバル顧客 ID と異なる事業部門向けに個別の顧客 ID がある場合、どの ID Target を使用するかを設定できます。
 
@@ -411,7 +411,7 @@ alloy("sendEvent", {
 
 ![Send イベントに XDM オブジェクトデータ要素を含める](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
-データストリームのAdobe Targetサービスで、必ず [!UICONTROL Target サードパーティ ID 名前空間] を [!UICONTROL ID マップ] データ要素
+データストリームのAdobe Targetサービスで、必ず [!UICONTROL Target サードパーティ ID 名前空間] を [!UICONTROL ID マップ] データ要素：
 ![データストリームでの Target サードパーティ ID 名前空間の設定](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]

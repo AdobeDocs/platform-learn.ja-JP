@@ -1,9 +1,9 @@
 ---
 title: ライブラリの置き換え | at.js 2.x から Web SDK への Target の移行
 description: Adobe Target実装を at.js 2.x からAdobe Experience Platform Web SDK に移行する方法について説明します。 トピックには、ライブラリの概要、実装の違い、その他の重要な注意事項が含まれます。
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 4%
 
 ---
@@ -64,7 +64,7 @@ at.js を使用した単純な Target 実装を想定します。
 * ちらつきを軽減するための事前非表示スニペット
 * Target at.js ライブラリは、デフォルト設定で非同期的に読み込まれ、アクティビティを自動的に要求およびレンダリングします。
 
-+++at.js のHTMLコードの例を参照してください。
++++HTMLページでの実装の例
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobeでは、ページ全体のパフォーマンスを最高にするために
 
 同期実装の事前非表示スタイルは、 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) オプション。 Platform Web SDK の設定については、次の節で説明します。
 
->[!TIP]
->
-> タグ機能（旧称 Launch）を使用して Web SDK を実装する場合、事前非表示のスタイルは、 Adobe Experience Platform Web SDK 拡張機能の設定で編集できます。
-
 Platform Web SDK でちらつきを制御する方法について詳しくは、ガイドの節を参照してください。  [パーソナライズされたエクスペリエンスのちらつきの管理](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Platform Web SDK の設定
 
-Platform Web SDK は、ページが読み込まれるたびに設定する必要があります。 この `configure` コマンドは、常に、と呼び出す最初の SDK コマンドである必要があります。 次の例では、サイト全体が 1 つのデプロイメントで Platform Web SDK にアップグレードされると想定しています。
+Platform Web SDK は、ページが読み込まれるたびに設定する必要があります。 次の例では、サイト全体が 1 つのデプロイメントで Platform Web SDK にアップグレードされると想定しています。
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-この `edgeConfigId` が [!UICONTROL データストリーム ID]
+この `configure` コマンドは、常に、と呼び出す最初の SDK コマンドである必要があります。 この `edgeConfigId` が [!UICONTROL データストリーム ID]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 タグ実装では、多くのフィールドが自動入力されるか、ドロップダウンメニューから選択できます。 異なるプラットフォームに注意してください [!UICONTROL サンドボックス] および [!UICONTROL datastreams] は、各環境に対して選択できます。 データストリームは、公開プロセスでのタグライブラリの状態に基づいて変化します。
 
-![Web SDK タグ拡張機能の設定](assets/tags-config.png)
+![Web SDK タグ拡張機能の設定](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 ページごとに at.js から Platform Web SDK に移行する予定がある場合は、次の設定オプションが必要です。
@@ -249,7 +245,7 @@ alloy("configure", {
 
 >[!TAB タグ]
 
-![Web SDK タグ拡張機能の移行オプションの設定](assets/tags-config-migration.png)
+![Web SDK タグ拡張機能の移行オプションの設定](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Target に関する注目すべき設定オプションを以下に示します。
@@ -263,19 +259,15 @@ Target に関する注目すべき設定オプションを以下に示します�
 | `thirdPartyCookiesEnabled` | アドビのサードパーティ Cookie の設定を有効にします。SDK は、訪問者 ID をサードパーティのコンテキストで保持し、同じ訪問者 ID をサイト全体で使用できるようにします。 複数のサイトがある場合は、このオプションを使用します。ただし、プライバシー上の理由から、このオプションが望ましくない場合があります。 | `true` |
 | `prehidingStyle` | パーソナライズされたコンテンツをサーバーから読み込む際に、Web ページのコンテンツ領域を非表示にする CSS スタイル定義を作成するために使用します。これは、SDK の同期デプロイメントでのみ使用されます。 | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` に設定できます。 `true` 複数のドメインで一貫した Target 訪問者プロファイルを維持する。 このオプションは、 `false` 複数ドメインの訪問者プロファイルの永続性が必要な場合を除き、省略されます。
-
->[!TIP]
->
-> タグ機能（旧称 Launch）を使用して Web SDK を実装する場合、これらの設定はAdobe Experience Platform Web SDK 拡張機能の設定で管理できます。
-
 オプションの完全なリストについては、 [Platform Web SDK の設定](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ja) ガイド。
 
 ## 実装例
 
 Platform Web SDK を適切に配置すると、サンプルページは次のようになります。
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ Platform Web SDK を適切に配置すると、サンプルページは次のよ
 </html>
 ```
 
->[!TIP]
->
-> タグ機能（以前の Launch）を使用して Web SDK を実装する場合、タグ埋め込みコードは、上記の「Platform Web SDK ベースコード」、「Platform Web SDK が非同期で読み込まれた」および「Platform Web SDK を設定」セクションに代わるものです。
+>[!TAB タグ]
+
+ページコード：
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+タグに、Adobe Experience Platform Web SDK 拡張機能を追加します。
+
+![Adobe Experience Platform Web SDK 拡張機能の追加](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+また、必要な設定を追加します。
+![Web SDK タグ拡張機能の移行オプションの設定](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 上記のように Platform Web SDK ライブラリを含めて設定するだけでは、Adobe Edge Network へのネットワーク呼び出しは実行されないことに注意してください。
 
