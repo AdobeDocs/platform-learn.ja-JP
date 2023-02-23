@@ -4,10 +4,10 @@ breadcrumb-title: データ収集チュートリアル
 user-guide-description: Experience Platform でデータ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル。
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 6f2410a66538d3e16ba27f5330ec95ef2600b154
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 38%
+source-wordcount: '239'
+ht-degree: 43%
 
 ---
 
@@ -24,13 +24,14 @@ ht-degree: 38%
    + [ルールの作成](tags/build-rules.md)
    + [ライブラリのビルドと公開](tags/build-and-publish-a-library.md)
    + [ユーザーと権限](tags/users-and-permissions.md)
-   + [Web SDK を使用した Web サイトでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target=&quot;_blank&quot;}
-   + [ソリューション SDK を使用した Web サイトでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ja){target=&quot;_blank&quot;}
-   + [モバイルアプリでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja){target=&quot;_blank&quot;}
+   + [Web SDK を使用した Web サイトでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
+   + [ソリューション SDK を使用した Web サイトでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ja){target="_blank"}
+   + [モバイルアプリでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja){target="_blank"}
 + Web SDK{#web-sdk}
    + [概要](web-sdk/overview.md)
    + [デモ](web-sdk/demo.md)
-   + [実装チュートリアル（タグ付き）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target=&quot;_blank&quot;}
+   + [実装チュートリアル（タグ付き）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
+   + [Target の移行のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
    + 同意{#consent}
       + [概要](web-sdk/consent/overview.md)
       + [Adobe標準を使用して同意の値を設定](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +42,7 @@ ht-degree: 38%
    + [概要](mobile-sdk/overview.md)
    + [モバイルプロパティの作成](mobile-sdk/create-mobile-properties.md)
    + [依存関係マネージャーの使用](mobile-sdk/use-dependency-managers.md)
-   + [モバイルアプリでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja){target=&quot;_blank&quot;}
+   + [モバイルアプリでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja){target="_blank"}
 + サーバー API{#server-api}
    + [概要](server-api/overview.md)
    + [API の基本](server-api/introduction.md)
@@ -65,5 +66,5 @@ ht-degree: 38%
    + Experience Cloud デバッガー{#experience-cloud}
       + [デバッガーのインストール](debugger/experience-cloud/add-the-extension.md)
       + [デバッガーの使用](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-      + [Target のトラブルシューティング](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target=&quot;_blank&quot;}
-      + [タグ環境を切り替え](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target=&quot;_blank&quot;}
+      + [Target のトラブルシューティング](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
+      + [タグ環境を切り替え](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}

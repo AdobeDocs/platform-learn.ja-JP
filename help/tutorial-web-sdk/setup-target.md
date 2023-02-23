@@ -3,9 +3,9 @@ title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3801'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 2%
 Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 エクスペリエンスを配信する方法と、追加のパラメーターを Target に渡す方法について説明します。
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja) は、顧客のエクスペリエンスをカスタマイズおよびパーソナライズするために必要なすべてを提供するAdobe Experience Cloudアプリケーションです。web、モバイルサイト、アプリ、その他のデジタルチャネルでの売上高を最大化できます。
+
 
 ## 学習内容
 
@@ -26,6 +27,10 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
 * XDM データを Target に渡し、Target パラメーターへのマッピングについて理解する
 * プロファイルやエンティティのパラメーターなど、カスタムデータを Target に渡す
 * Platform Web SDK を使用した Target 実装の検証
+
+>[!TIP]
+>
+>詳しくは、 [at.js 2.x から Platform Web SDK への Target の移行](/help/tutorial-migrate-target-websdk/introduction.md) 既存の at.js 実装を移行する手順ガイドのチュートリアルです。
 
 
 ## 前提条件

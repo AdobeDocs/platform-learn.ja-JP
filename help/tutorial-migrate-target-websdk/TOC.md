@@ -3,23 +3,22 @@ user-guide-title: at.js 2.x から Web SDK への Target の移行
 breadcrumb-title: at.js 2.x から Web SDK への Target の移行
 user-guide-description: at.js から Web SDK への移行を成功に導く方法を説明する、Target のお客様向けの実践チュートリアルです。
 feature-set: Target,Experience Platform
-solution: Experience Platform,Data Collection,Target
+solution: Target,Data Collection,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
 role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-hide: true
 kt: 11159
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '88'
 ht-degree: 5%
 
 ---
 
 
-# Target の at.js 実装の Web SDK への移行 {#migrate-target-to-websdk}
+# at.js 2.x から Platform Web SDK への Target の移行 {#migrate-target-to-websdk}
 
 + [チュートリアルの概要](introduction.md)
 
