@@ -2,9 +2,9 @@
 title: VEC アクティビティのレンダリング | at.js 2.x から Web SDK への Target の移行
 description: Adobe Targetの Web SDK 実装を使用して Visual Experience Composer アクティビティを取得し、適用する方法について説明します。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 タグで、 [!UICONTROL イベントを送信] アクションタイプ [!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング] 選択したオプション：
 
-![タグでパーソナライゼーションのレンダリングが true に設定されたイベントを送信](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![タグで選択されている Render visual personalization の決定を使用してイベントを送信します](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ Platform Web SDK は、開発者に対して、コンテンツのリクエスト
 
 これで、基本的な Platform Web SDK の実装が完了しました。
 
-+++Target コンテンツの自動レンダリングを含む Web SDK の例ページ：
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+Target コンテンツの自動レンダリングを使用する JavaScript の例：
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ Platform Web SDK は、開発者に対して、コンテンツのリクエスト
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> タグ機能（以前の Launch）を使用して Web SDK を実装する場合、タグ埋め込みコードは、上記の「Platform Web SDK ベースコード」、「Platform Web SDK が非同期で読み込まれた」および「Platform Web SDK を設定」セクションに代わるものです。 「sendEvent」コマンドは、 [!UICONTROL イベントを送信] アクションタイプ [!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング] オプションが選択されています。
+>[!TAB タグ]
+
+Target コンテンツの自動レンダリングを含むタグの例ページ：
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+タグに、Adobe Experience Platform Web SDK 拡張機能を追加します。
+
+![Adobe Experience Platform Web SDK 拡張機能の追加](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+目的の設定を追加します。
+![Web SDK タグ拡張機能の移行オプションの設定](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+を含むルールの作成 [!UICONTROL イベントを送信] アクションと [!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング] 選択済み：
+![タグで選択されている「パーソナライゼーションをレンダリング」を使用してイベントを送信します](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 次に、リクエスト方法とリクエスト方法について説明します。 [フォームベースの Target アクティビティをレンダリング](render-form-based-activities.md).
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

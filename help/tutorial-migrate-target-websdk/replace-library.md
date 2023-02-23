@@ -1,9 +1,9 @@
 ---
 title: ライブラリの置き換え | at.js 2.x から Web SDK への Target の移行
 description: Adobe Target実装を at.js 2.x からAdobe Experience Platform Web SDK に移行する方法について説明します。 トピックには、ライブラリの概要、実装の違い、その他の重要な注意事項が含まれます。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ at.js から Platform Web SDK に移行するために、ページ上のAdobe Ta
 * Target の管理設定を確認し、IMS 組織 ID をメモします
 * at.js ライブラリを Platform Web SDK に置き換える
 * 同期ライブラリ実装の事前非表示スニペットを更新する
-* ページでの Platform Web SDK の設定
+* Platform Web SDK の設定
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ at.js を使用した単純な Target 実装を想定します。
 * ちらつきを軽減するための事前非表示スニペット
 * Target at.js ライブラリは、デフォルト設定で非同期的に読み込まれ、アクティビティを自動的に要求およびレンダリングします。
 
-+++HTMLページでの実装の例
++++HTMLページでの at.js 実装例
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Platform Web SDK を使用するように Target をアップグレードする�
 <script src="/libraries/at.js" async></script>
 ```
 
-また、を、現在サポートされているバージョンの Platform Web SDK(alloy.js) に置き換えます。
+また、 alloy JavaScript ライブラリまたはタグ埋め込みコードとAdobe Experience Platform Web SDK 拡張機能に置き換えます。
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ Platform Web SDK を使用するように Target をアップグレードする�
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB タグ]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+タグプロパティに、 Adobe Experience Platform Web SDK 拡張機能を追加します。
+
+![Adobe Experience Platform Web SDK 拡張機能の追加](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 事前にビルドされたスタンドアロンバージョンでは、「alloy」という名前のグローバル関数を作成するページに直接「ベースコード」を追加する必要があります。 この関数を使用して SDK を操作します。グローバル関数に別の名前を付けたい場合は、 `alloy` 名前。
-
->[!TIP]
->
-> タグ機能（以前の Launch）を使用して Web SDK を実装する場合、alloy.js ライブラリは、Adobe Experience Platform Web SDK 拡張機能を追加することで、タグライブラリに追加されます。
-
 
 詳しくは、 [Platform Web SDK のインストール](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=ja) ドキュメントを参照してください。
 
@@ -168,9 +181,9 @@ Platform Web SDK の実装では、ライブラリが非同期で読み込まれ
 
 ### 非同期実装
 
-at.js と同様、Platform Web SDK ライブラリが非同期で読み込まれる場合、Target がコンテンツの入れ替えを実行する前に、ページのレンダリングが完了する可能性があります。 この動作により、Target で指定し、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示される、「ちらつき」と呼ばれる現象が発生する場合があります。 このちらつきを回避するには、Adobeで、非同期の Platform Web SDK スクリプト参照の直前に、特別な事前非表示スニペットを追加することをお勧めします。
+at.js と同様、Platform Web SDK ライブラリが非同期で読み込まれる場合、Target がコンテンツの入れ替えを実行する前に、ページのレンダリングが完了する可能性があります。 この動作により、Target で指定し、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示される、「ちらつき」と呼ばれる現象が発生する場合があります。 このちらつきを回避するには、非同期の Platform Web SDK スクリプト参照またはタグ埋め込みコードの直前に、特別な事前非表示スニペットを追加することをお勧めします。
 
-上記の例のように実装が非同期の場合は、at.js 非表示スニペットを、Platform Web SDK と互換性のある次のバージョンに置き換えます。
+上記の例のように実装が非同期的な場合は、at.js 非表示スニペットを、Platform Web SDK と互換性のある次のバージョンに置き換えます。
 
 ```HTML
 <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
@@ -191,13 +204,13 @@ at.js と同様、Platform Web SDK ライブラリが非同期で読み込まれ
 
 * `3000` 事前非表示のタイムアウトをミリ秒単位で指定します。 タイムアウト前に Target からの応答を受信しなかった場合、事前非表示の style タグは削除されます。 このタイムアウトに達することはまれです。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Platform Web SDK は、 `alloy-prehiding`. at.js の事前非表示スニペットを使用する場合は、正しく機能しない可能性があります。
 
 ### 同期実装
 
-Adobeでは、ページ全体のパフォーマンスを最高にするために、Platform Web SDK を非同期で実装することをお勧めします。 ただし、ライブラリが同期的に読み込まれる場合は、事前に非表示になるスニペットは不要です。 代わりに、Platform Web SDK の設定で、事前非表示のスタイルを指定します。
+Adobeでは、ページ全体のパフォーマンスを最高にするために、Platform Web SDK を非同期で実装することをお勧めします。 ただし、alloy.js ライブラリまたはタグ埋め込みコードが同期的に読み込まれる場合は、事前に非表示にするスニペットは不要です。 代わりに、Platform Web SDK の設定で、事前非表示のスタイルを指定します。
 
 同期実装の事前非表示スタイルは、 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) オプション。 Platform Web SDK の設定については、次の節で説明します。
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB タグ]
 
 ![Web SDK タグ拡張機能の移行オプションの設定](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 Target に関する注目すべき設定オプションを以下に示します。
@@ -352,9 +366,8 @@ Platform Web SDK を適切に配置すると、サンプルページは次のよ
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ Platform Web SDK を適切に配置すると、サンプルページは次のよ
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

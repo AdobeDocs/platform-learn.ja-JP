@@ -2,9 +2,9 @@
 title: はじめに | at.js 2.x から Web SDK への Target の移行
 description: Adobe Target実装を at.js 2.x からAdobe Experience Platform Web SDK に移行する方法について説明します。 トピックには、JavaScript ライブラリの読み込み、送信パラメーター、レンダリングアクティビティ、その他の注目すべき引き出し線が含まれます。
 recommendations: catalog,noDisplay
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '617'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ Adobe Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdo
 * Adobe Analyticsとのより緊密な統合で、別々のネットワーク呼び出しからの情報のステッチに依存しない
 * 開発者にとって柔軟性の高い実装
 
-おそらく、移行の最大のメリットは、Real-time Customer Data Platformのお客様にとってです。 Real-Time CDPは、Experience Platformに取り込まれるあらゆるデータとリアルタイム顧客プロファイル機能に基づいて、幅広いオーディエンス構築機能を提供します。 組み込みのデータガバナンスフレームワークにより、そのデータの責任を持つ使用が自動化されます。 顧客 AI を使用すると、機械学習モデルを簡単に使用して、傾向モデルと、その出力をAdobe Targetに共有できるチャーンモデルを構築できます。 さらに、オプションの医療およびプライバシーとセキュリティシールドのアドオンのお客様は、同意実施機能を使用して、個々のお客様の同意設定を容易に実施できます。 Platform Web SDK は、Web チャネルでこれらの RTCDP 機能を使用するための要件です。
+おそらく、Target のお客様にとっての移行の最大のメリットは、Real-time Customer Data Platformとの統合です。 Real-Time CDPは、Experience Platformに取り込まれるあらゆるデータとリアルタイム顧客プロファイル機能に基づいて、幅広いオーディエンス構築機能を提供します。 組み込みのデータガバナンスフレームワークにより、そのデータの責任を持つ使用が自動化されます。 顧客 AI を使用すると、機械学習モデルを簡単に使用して、傾向モデルと、その出力をAdobe Targetに共有できるチャーンモデルを構築できます。 さらに、オプションの医療およびプライバシーとセキュリティシールドのアドオンのお客様は、同意実施機能を使用して、個々のお客様の同意設定を容易に実施できます。 Platform Web SDK は、Web チャネルでこれらの RTCDP 機能を使用するための要件です。
 
 ## 学習内容
 
@@ -51,7 +51,6 @@ Adobe Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdo
 
 * 現在の Target at.js の実装を技術的に理解する
 * 次の項目があることを確認します。 [編集者または発行者の役割](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) を Target インスタンスに追加し、独自の例を試せるようにします。
-* のインストール [Adobe Experience Cloud Visual Editing Helper ブラウザー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) Google Chrome 用
 * Adobe Targetでアクティビティを設定する方法を説明します。 リフレッシャーが必要な場合、このレッスンで役立つチュートリアルとガイドを次に示します。
    * [Visual Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
    * [フォームベースの Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
@@ -61,4 +60,4 @@ Adobe Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdo
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

@@ -1,9 +1,9 @@
 ---
 title: 送信パラメーター | at.js 2.x から Web SDK への Target の移行
 description: Experience PlatformWeb SDK を使用して、mbox、プロファイル、エンティティの各パラメーターをAdobe Targetに送信する方法について説明します。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -97,19 +97,16 @@ at.js を使用する 2 つのページの例を次に示します。
 
 Platform Web SDK を使用した場合、これらのページの Target パラメーターの送信方法が異なります。 at.js を使用して Target にパラメーターを渡す方法は複数あります。
 
-- 次で設定： `targetPageParams()` ページ読み込みイベントの関数
+- 次で設定： `targetPageParams()` 関数をページ読み込みイベントに対して使用します（このページの例で使用）。
 - 次で設定： `targetPageParamsAll()` 関数を使用して、ページ上のすべての Target リクエストに対して
 - を使用して直接パラメーターを送信 `getOffer()` 単一の場所に対する関数
 - を使用して直接パラメーターを送信 `getOffers()` 1 つ以上の場所で機能
 
-次の例では、 `targetPageParams()` アプローチが使用されます。
 
-Platform Web SDK は、追加の関数を必要とせずに、1 つの一貫した方法でデータを送信できます。 すべてのパラメーターは、 `sendEvent` コマンドを使用します。
+Platform Web SDK は、追加の関数を必要とせずに、1 つの一貫した方法でデータを送信できます。 すべてのパラメーターは、 `sendEvent` コマンドを使用し、次の 2 つのカテゴリに分類できます。
 
-Platform Web SDK で渡されるパラメーター `sendEvent` ペイロードは次の 2 つのカテゴリに分類されます。
-
-1. 自動的に `xdm` object
-1. を使用して手動で渡す `data.__adobe.target` object
+- 自動的に `xdm` object
+- を使用して手動で渡す `data.__adobe.target` object
 
 次の表に、Platform Web SDK を使用してパラメーターの例を再マッピングする方法を示します。
 
@@ -124,7 +121,7 @@ Platform Web SDK で渡されるパラメーター `sendEvent` ペイロード�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | カスタムエンティティパラメーターは、Recommendations製品カタログの更新に使用されます。 これらのカスタムパラメーターは、 `data` オブジェクト。 |
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースの Recommendations アルゴリズムに使用されます。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 特定のエンティティ ID が Recommendations デザインで返されるのを防ぐために使用します。 |
-| `mbox3rdPartyId` | identityMap に設定します。 | デバイスと顧客属性をまたいで Target プロファイルを同期するために使用されます。 顧客 ID に使用する名前空間は、 [データストリームのターゲット設定](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | を `xdm.identityMap` object | デバイスと顧客属性をまたいで Target プロファイルを同期するために使用されます。 顧客 ID に使用する名前空間は、 [データストリームのターゲット設定](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Target コンバージョントラッキングの一意の注文を識別するために使用します。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Target のコンバージョンと最適化目標の注文合計の追跡に使用します。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>または<br> `xdm.productListItems[0-n].SKU` | Target のコンバージョントラッキングおよび Recommendations アルゴリズムで使用されます。 詳しくは、 [エンティティパラメーター](#entity-parameters) 詳しくは、以下の節を参照してください。 |
@@ -233,7 +230,7 @@ alloy("sendEvent", {
 
 ## エンティティパラメーター
 
-エンティティパラメーターは、Target Recommendationsの行動データと追加のカタログ情報を渡すために使用されます。 プロファイルパラメーターと同様、すべてのエンティティパラメーターは、 `data.__adobe.target` Platform Web SDK のオブジェクト `sendEvent` コマンドペイロード。
+エンティティパラメーターは、Target Recommendationsの行動データと追加のカタログ情報を渡すために使用されます。 すべて [エンティティパラメーター](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js でサポートされているのは、Platform Web SDK でもサポートされています。 プロファイルパラメーターと同様、すべてのエンティティパラメーターは、 `data.__adobe.target` Platform Web SDK のオブジェクト `sendEvent` コマンドペイロード。
 
 特定の項目のエンティティパラメーターの前には、「 」を付ける必要があります `entity.` 適切なデータキャプチャを行うために。 予約済み `cartIds` および `excludedIds` recommendations アルゴリズムのパラメーターの前にはを付けないでください。また、各値には、エンティティ ID のコンマ区切りリストを含める必要があります。
 
@@ -284,12 +281,6 @@ alloy("sendEvent", {
 ![Send イベントにデータオブジェクトを含める](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
-
-
-
-
-
-すべて [エンティティパラメーター](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js でサポートされているのは、Platform Web SDK でもサポートされています。
 
 >[!NOTE]
 >
@@ -576,4 +567,4 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

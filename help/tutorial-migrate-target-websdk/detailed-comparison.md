@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x と Web SDK の比較 | at.js 2.x から Web SDK への Target の移行
 description: 機能、関数、設定、データフローなど、at.js 2.x と Platform Web SDK の違いについて説明します。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2157'
 ht-degree: 8%
 
 ---
@@ -153,4 +153,4 @@ at.js ライブラリは、Target UI の様々な設定を使用して設定お�
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

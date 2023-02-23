@@ -1,9 +1,9 @@
 ---
 title: デバッグ | at.js 2.x から Web SDK への Target の移行
 description: Adobe Experience Platform Web SDK を使用したAdobe Target実装のデバッグ方法について説明します。 トピックには、デバッグオプション、ブラウザー拡張機能、at.js と Platform Web SDK の違いが含まれます。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1535'
 ht-degree: 3%
 
 ---
@@ -180,4 +180,4 @@ Platform Web SDK のリクエストペイロードと応答 `sendEvent` 呼び�
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
