@@ -2,9 +2,9 @@
 title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '583'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 以下の手順を実行して、組織がアシュランスにアクセスできることを確認します。
 
-1. 訪問 [https://experience.adobe.com/griffon](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}
+1. 訪問 [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
 1. Experience CloudのAdobe ID資格情報を使用してログインします。
 1. もし **[!UICONTROL セッション]** 画面が表示され、アクセス権が付与されます。 ベータ版アクセスページが表示されたら、「 **[!UICONTROL 登録]**.
 
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-詳細はこちらをご覧ください [ここ](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target=&quot;_blank&quot;}。
+詳細はこちらをご覧ください [ここ](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
 
 ## ベース URL の設定
 
@@ -73,16 +73,16 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 
 ![アシュアランス url](assets/mobile-assurance-url-type.png)
 
-iOSでの URL スキームの詳細については、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=&quot;_blank&quot;}。
+iOSでの URL スキームの詳細については、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 アシュランスは、ブラウザーまたは QR コードを介して URL を開くことで機能します。この URL は、アプリを開き、追加のパラメーターを含むベース URL から始まります。 これらの一意のパラメーターは、セッションの接続に使用されます。
 
 ## セッションへの接続
 
-1. 次に移動： [アシュランス UI](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}。
+1. 次に移動： [アシュランス UI](https://experience.adobe.com/griffon){target="_blank"}.
 1. 選択 **[!UICONTROL セッションを作成]**.
 1. 提供 **[!UICONTROL セッション名]** 例： `Luma App QA` そして **[!UICONTROL ベース URL]** `lumadeeplink://default`
-1. 「**[!UICONTROL Next]**」を選択します。
+1. 「**[!UICONTROL 次へ]**」を選択します。
    ![アシュランス作成セッション](assets/mobile-assurance-create-session.png)
 1. **[!UICONTROL QR コードをスキャン]** 物理デバイスを使用している場合。 シミュレーターを使用している場合は、 **[!UICONTROL リンクをコピー]** シミュレーターで Safari と共に開きます。
    ![アシュランス qa コード](assets/mobile-assurance-qr-code.png)
@@ -94,7 +94,7 @@ iOSでの URL スキームの詳細については、 [Appleドキュメント](
    * Web UI で取得されるExperience Cloudイベント。
       ![保証イベント](assets/mobile-assurance-events.png)
 
-問題が発生した場合は、 [技術](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target=&quot;_blank&quot;} および [一般ドキュメント](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target=&quot;_blank&quot;}。
+問題が発生した場合は、 [技術](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
 
 次へ： **[同意](consent.md)**
 
