@@ -1,13 +1,13 @@
 ---
 title: Customer AI スコアおよびインサイトの使用
 description: 顧客 AI の傾向スコアおよびインサイトを使用して顧客をコンバージョンおよび保持する方法について説明します。
-role: User
-solution: Intelligent Services
+solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
+role: User
 kt: 4171
 thumbnail: 32666.jpg
 exl-id: f3f628ef-223a-48d9-979e-86f038268923
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 59%

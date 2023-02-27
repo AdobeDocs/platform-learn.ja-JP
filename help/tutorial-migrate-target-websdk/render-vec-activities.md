@@ -1,10 +1,10 @@
 ---
 title: VEC アクティビティのレンダリング | at.js 2.x から Web SDK への Target の移行
 description: Adobe Targetの Web SDK 実装を使用して Visual Experience Composer アクティビティを取得し、適用する方法について説明します。
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+source-git-commit: ca2fade972a2f7f84134ee4ef9c0f24c5ab1c5c6
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 5%
+source-wordcount: '830'
+ht-degree: 6%
 
 ---
 
@@ -22,10 +22,6 @@ Google Chrome 用Adobe Experience Cloud Visual Editing ヘルパーブラウザ�
 
 Visual Editing Helper ブラウザー拡張機能は、at.js または Platform Web SDK を使用する Web サイトで機能します。
 
->[!IMPORTANT]
->
->新しい Visual Editing Helper 拡張機能は、以前の [Target VEC ヘルパーブラウザー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 古い VEC ヘルパー拡張機能がインストールされている場合は、Visual Editing Helper 拡張機能を使用する前に、この拡張機能を削除または無効にする必要があります。
-
 ### Visual Editing Helper を取得してインストールする
 
 1. 次に移動： [Chrome Web Store のAdobe Experience Cloud Visual Editing Helper ブラウザー拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
@@ -36,6 +32,10 @@ Visual Editing Helper ブラウザー拡張機能は、at.js または Platform 
 Target VEC で web サイトを開くと、Visual Editing Helper が自動的に有効になり、オーサリング機能が強化されます。この拡張機能には、条件付き設定はありません。この拡張機能では、SameSite Cookie の設定を含むすべての設定を自動的に処理します。
 
 詳しくは、該当するドキュメントを参照してください [Visual Editing Helper 拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) および [Visual Experience Composer のトラブルシューティング](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+>[!IMPORTANT]
+>
+>新しい [Visual Editing Helper 拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) 前の [Target VEC ヘルパーブラウザー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 古い VEC ヘルパー拡張機能がインストールされている場合は、Visual Editing Helper 拡張機能を使用する前に、この拡張機能を削除または無効にする必要があります。
 
 ## コンテンツの自動リクエストと適用
 
