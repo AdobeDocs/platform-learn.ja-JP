@@ -3,10 +3,11 @@ title: Adobe Analyticsソースコネクタを使用したデータの取り込�
 description: Adobe Analyticsソースコネクタを使用すると、Adobe AnalyticsからAdobe Experience Platformのリアルタイム顧客プロファイルおよびエクスペリエンスデータレイクに、データのストリーミング、マッピング、フィルタリングを簡単におこなうことができます。
 role: Data Engineer, Data Architect
 feature: Sources
+last-substantial-update: 2023-02-23T00:00:00Z
 kt: 3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: 8c69b521b85df3baa7e1e14b91b30861453c066e
+source-git-commit: 19d4b68a17dd6d9c3a62f15e01293f351ac1da5e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 9%
@@ -21,4 +22,4 @@ Adobe Analyticsソースコネクタを使用すると、Adobe AnalyticsからAd
 
 >[!INFO]
 >
-> このビデオはコースの一部です [データエンジニア向けのデータ取り込み](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=ja)(Experience League時に無料で利用可能 )
+> このビデオはコースの一部です [データエンジニア向けのデータ取り込み](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=ja)(Experience League時に無料で利用可能 )
