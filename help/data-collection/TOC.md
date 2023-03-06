@@ -4,7 +4,7 @@ breadcrumb-title: データ収集チュートリアル
 user-guide-description: Experience Platform でデータ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル。
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
+source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 43%
@@ -31,7 +31,7 @@ ht-degree: 43%
    + [概要](web-sdk/overview.md)
    + [デモ](web-sdk/demo.md)
    + [実装チュートリアル（タグ付き）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
-   + [Target の移行のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
+   + [Target の移行のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=ja){target="_blank"}
    + 同意{#consent}
       + [概要](web-sdk/consent/overview.md)
       + [Adobe標準を使用して同意の値を設定](web-sdk/consent/set-consent-adobe.md)

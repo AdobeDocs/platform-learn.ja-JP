@@ -5,9 +5,9 @@ feature: Web SDK
 kt: 9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0c3edbeaa5cb46f159a3efe72c108dfd2235f04b
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '687'
 ht-degree: 2%
 
 ---
@@ -32,8 +32,13 @@ Adobe Experience Cloudアプリケーションは、次のような様々なテ�
 1. お客様のAdobe Experience Platform Web SDK 実装は、ID マップに FPID を含む、Platform Edge ネットワークにリクエストを送信します。
 1. Experience PlatformEdge Network は FPID を受け取り、それを使用してExperience CloudID(ECID) を生成します。
 1. Platform Web SDK の応答は、ECID をエンドユーザーのブラウザーに返します。
-1. Platform Web SDK では、JavaScript を使用して、ECID を `AMCV_` エンドユーザーのブラウザーの cookie。
+1. この `idMigrationEnabled=true`に設定する場合、Platform Web SDK は JavaScript を使用して ECID を `AMCV_` エンドユーザーのブラウザーの cookie。
 1. イベントでは、 `AMCV_` cookie の有効期限が切れると、プロセスが繰り返されます。 同じファーストパーティデバイス ID が使用できる限り、新しい `AMCV_` cookie は、以前と同じ ECID 値で作成されます。
+
+>[!NOTE]
+>
+>この `idMigrationEnabled` をに設定する必要はありません。 `true` を使用します。 を使用 `idMigrationEnabled=false` 表示されない `AMCV_` cookie を使用する必要がありますが、は、ネットワーク応答で ECID 値を探す必要があります。
+
 
 このチュートリアルでは、PHP スクリプト言語を使用した具体的な例を使用して、次の方法を示します。
 
