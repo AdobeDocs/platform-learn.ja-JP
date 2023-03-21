@@ -6,10 +6,10 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 6%
+source-wordcount: '938'
+ht-degree: 5%
 
 ---
 
@@ -113,11 +113,11 @@ ht-degree: 6%
 - **独自のコーディング**:HTML
 - **インポートHTML**:既存のHTMLテンプレートをインポートします。編集できます。
 
-クリック **インポートHTML**.
+クリック **インポートHTML**. または、 **保存済みのテンプレート** をクリックし、テンプレートを選択します。 **Bootcamp — メールテンプレート**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-ファイルをドラッグ&amp;ドロップします **mailtemplatebootcamp.html**（ダウンロード可能） [ここ](../../assets/html/mailtemplatebootcamp.html.zip). 「読み込み」をクリックします。
+選択した場合 **インポートHTML**、ファイルをドラッグ&amp;ドロップできるようになりました **mailtemplatebootcamp.html**（ダウンロード可能） [ここ](../../assets/html/mailtemplatebootcamp.html.zip). 「読み込み」をクリックします。
 
 ![Journey Optimizer](./images/msg13.png)
 
