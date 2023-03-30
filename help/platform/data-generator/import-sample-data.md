@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
+source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1832'
 ht-degree: 8%
 
 ---
@@ -160,7 +160,6 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
    * `2-Luma-CRM-Data.postman_collection.json` は、顧客の CRM データ用にスキーマを作成し、入力されたデータセットを作成します。 このスキーマは、人口統計の詳細、個人の連絡先の詳細、環境設定の詳細、カスタム ID フィールドグループで構成される XDM Individual Profile クラスに基づいています。
    * `3-Luma-Product-Catalog.postman_collection.json` は、製品カタログ情報のスキーマを作成し、入力されたデータセットを作成します。 このスキーマは、カスタムの製品カタログクラスに基づき、カスタムの製品カタログフィールドグループを使用します。
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` は、顧客のオフライン購入イベントデータのスキーマを作成し、入力されたデータセットを作成します。 スキーマは、XDM ExperienceEvent クラスに基づいており、カスタムの ID およびコマースの詳細フィールドグループで構成されます。
-
    * `5-Luma-Product-Inventory-Events.postman_collection.json` は、在庫切れとなる製品に関連するイベントのスキーマと入力されたデータセットを作成します。 スキーマは、カスタムのビジネスイベントクラスとカスタムフィールドグループに基づいています。
    * `6-Luma-Test-Profiles.postman_collection.json` は、Adobe Journey Optimizerで使用するテストプロファイルを含むスキーマを作成し、入力されたデータセットを作成します
    * `7-Luma-Web-Events.postman_collection.json` はスキーマを作成し、単純な履歴 web データを含んだデータセットを設定します。
@@ -173,7 +172,12 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 1. に移動します。 **[!UICONTROL プロファイル]** > **[!UICONTROL 参照]**
 1. 選択 `Luma Loyalty Id` を **[!UICONTROL ID 名前空間]**
 1. を検索 `5625458` を **[!UICONTROL ID 値]**
-1. を開きます。 `Danny Wright` profile
+1. を開きます。 `Daniel Wright` profile
+
+>[!TIP]
+>
+>プロファイルが表示されない場合は、 [!UICONTROL データセット] すべてのデータセットが正常に作成され、取り込まれたことを確認するページ。 問題がない場合は、15 分待ってから、プロファイルがビューアで使用できるかどうかを確認します。  データの取り込みで問題が発生した場合は、エラーメッセージを確認して、問題を見つけてみてください。 また、 [!UICONTROL データセット] json データファイルをドラッグ&amp;ドロップして、データを再取り込みします。
+
 
 ![プロファイルを開く](../assets/data-generator/images/validation-profile-open.png)
 
