@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 7%
+source-wordcount: '1752'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 
 >[!NOTE]
 >
->このチュートリアルの最終結果は、と同じサンプルデータを含むサンドボックスです。 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>このチュートリアルの最終結果は、 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). 2023 年 4 月に、 [Journey Optimizerの課題](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja).
 
 
 ## 前提条件
@@ -48,9 +48,9 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
    >
    >ユーザーデータが [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) ファイルは架空のもので、デモ目的でのみ使用します。
 
-1. ダウンロードフォルダーから、 `platform-utils-main.zip` ファイルをコンピューター上の目的の場所に展開し、解凍します。
-1. 内 `luma-data` フォルダー、すべての `json` ファイルを編集し、 `_techmarketingdemos` 前にアンダースコアが付いた独自のテナント id が付きます。
-1. 開く `luma-offline-purchases.json` テキストエディターで、過去 1 か月にイベントが発生するようにすべてのタイムスタンプを更新する ( 例えば、「 `"timestamp":"2022-06` とを置き換えます )
+1. ダウンロードフォルダーから `platform-utils-main.zip` ファイルをコンピューター上の目的の場所に移動し、解凍します。
+1. 内 `luma-data` フォルダー、すべての `json` ファイルを編集し、 `_yourOrganizationID` 前にアンダースコアが付いた独自のテナント id が付きます。
+1. 開く `luma-offline-purchases.json` および `luma-web-events.json` テキストエディターで、過去 1 か月にイベントが発生するようにすべてのタイムスタンプを更新する ( 例えば、「 `"timestamp":"2022-11` とを置き換えます )
 1. 解凍されたフォルダーの場所をメモしておきます。後で `FILE_PATH` Postman環境変数：
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![コレクションの読み込み](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
    * `3-Luma-Product-Catalog.postman_collection.json` は、製品カタログ情報のスキーマを作成し、入力されたデータセットを作成します。 このスキーマは、カスタムの製品カタログクラスに基づき、カスタムの製品カタログフィールドグループを使用します。
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` は、顧客のオフライン購入イベントデータのスキーマを作成し、入力されたデータセットを作成します。 スキーマは、XDM ExperienceEvent クラスに基づいており、カスタムの ID およびコマースの詳細フィールドグループで構成されます。
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` は、在庫切れとなる製品に関連するイベントのスキーマと入力されたデータセットを作成します。 スキーマは、カスタムのビジネスイベントクラスとカスタムフィールドグループに基づいています。
+   * `6-Luma-Test-Profiles.postman_collection.json` は、Adobe Journey Optimizerで使用するテストプロファイルを含むスキーマを作成し、入力されたデータセットを作成します
+   * `7-Luma-Web-Events.postman_collection.json` はスキーマを作成し、単純な履歴 web データを含んだデータセットを設定します。
+
+
 ## 検証
 
 サンプルデータは、コレクションが実行される際に、複数のシステムのデータを組み合わせたリアルタイム顧客プロファイルを構築するように設計されています。 この好例は、ロイヤルティ、CRM、オフライン購入データセットの最初のレコードです。 そのプロファイルを検索して、データが取り込まれたことを確認します。 内 [Adobe Experience Platformインターフェイス](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 ![オフライン購入イベントファイルのイベントデータ](../assets/data-generator/images/validation-profile-events.png)
 
 ## 次の手順
+
+Adobe Journey Optimizerについて学びたい場合、このサンドボックスには、 [Journey Optimizerの課題](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja)
 
 結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて学習する場合は、次のリンクをクリックしてください： [「データアーキテクトおよびデータエンジニア向けスタートガイド」チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). この他のチュートリアルの前のレッスンでは、Postmanコレクションによって生成されたものすべてを手動で作成し、優れたスタートをお楽しみください。
 
