@@ -2,14 +2,14 @@
 title: Adobe Experience Platform Web SDK と Edge Network の概要
 description: Adobe Experience Platform Web SDK および Edge Network により、1 つの JavaScript ライブラリと 1 つのビーコンを使用して、アドビアプリケーションやサードパーティの宛先にデータを送信する方法について説明します。
 landing-page-description: Web SDK と Edge Network の概要を説明します。
-short-description: Get an overview of Web SDK and Edge Network.
+short-description: Web SDK と Edge Network の概要を説明します。
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '217'
+ht-degree: 41%
 
 ---
 

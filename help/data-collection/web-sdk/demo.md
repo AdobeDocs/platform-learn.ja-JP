@@ -2,14 +2,14 @@
 title: Adobe Experience Platform Web SDK および Edge ネットワークのデモ
 description: アドビへの 1 回の呼び出しで Experience Platform、Analytics、Audience Manager および Target にデータを送信する、Adobe Experience Platform Web SDK および Edge Network の動作をご覧ください。
 landing-page-description: アドビへの 1 回の呼び出しで Experience Platform、Analytics、Audience Manager および Target にデータを送信する、Web SDK および Edge Network の動作のデモをご覧ください。
-short-description: See a demo of Web SDK and Edge Network in action, with a single call to Adobe sending data to Experience Platform, Analytics, Audience Manager, and Target.
+short-description: アドビへの 1 回の呼び出しで Experience Platform、Analytics、Audience Manager および Target にデータを送信する、Web SDK および Edge Network の動作のデモをご覧ください。
 kt: 5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
