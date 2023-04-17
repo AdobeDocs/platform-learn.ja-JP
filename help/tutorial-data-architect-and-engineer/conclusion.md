@@ -6,10 +6,10 @@ description: このレッスンでは、AdobeのAdmin Consoleを使用してAdob
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -50,9 +50,5 @@ Platform でのさらなる実験に使用することをお勧めします。 �
 * [Experience Platform チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Experience Platform ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ja)
 * [Experience League科](https://experienceleague.adobe.com/?lang=ja#dashboard/learning)
-
-次に、サードパーティアプリケーションへの接続に関する詳細を確認できる別のチュートリアルを示します。
-
-* [Adobe Experience Platform の包括的な技術チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Adobe Experience Platformとの旅にご協力いただき、ありがとうございます。
