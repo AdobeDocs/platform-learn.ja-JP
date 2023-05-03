@@ -8,7 +8,7 @@ exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
 source-git-commit: 0c3edbeaa5cb46f159a3efe72c108dfd2235f04b
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -149,4 +149,4 @@ PHP には UUID 生成用のネイティブライブラリがないので、こ�
 1. 別のリクエストを Platform Edge Network に送信します。
 1. 値を `AMCV_<IMSORGID@AdobeOrg>` cookie が同じ `ECID` の値 `AMCV_` cookie が削除されました。 指定された FPID の cookie の値が同じ場合、ECID のシード処理が成功していました。
 
-この機能について詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
+この機能について詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja).

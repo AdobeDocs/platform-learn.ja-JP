@@ -21,6 +21,6 @@ ht-degree: 20%
 
 >[!INFO]
 >
-> このビデオはコースの一部です。 [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)(Experience League時に無料で利用可能 )
+> このビデオはコースの一部です。 [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja)(Experience League時に無料で利用可能 )
 
 詳しくは、 [スキーマドキュメント](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja).

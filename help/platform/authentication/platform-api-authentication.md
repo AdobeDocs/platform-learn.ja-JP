@@ -9,7 +9,7 @@ exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -47,7 +47,7 @@ Adobeが提供するPostmanコレクションは、すべてのAdobe I/OAPI に�
 
 ## その他のリソース
 
-* [Adobe I/Oコンソール](https://console.adobe.io)
+* [Adobe I/O コンソール](https://console.adobe.io)
 * [Adobe Experience Platform Postmanのサンプル](https://github.com/adobe/experience-platform-postman-samples)
    * [Adobe I/Oアクセストークン生成Postmanコレクション](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
    * [Adobe Experience Platform APIs Postmanコレクション](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)

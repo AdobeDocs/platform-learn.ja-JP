@@ -20,6 +20,6 @@ ht-degree: 58%
 
 >[!INFO]
 >
-> このビデオはコースの一部です [Adobe Experience Platformの概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1)(Experience League時に無料で利用可能 )
+> このビデオはコースの一部です [Adobe Experience Platformの概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=ja)(Experience League時に無料で利用可能 )
 
 

@@ -1,6 +1,6 @@
 ---
 title: ソースの概要
-description: Adobe、ファーストパーティおよびサードパーティのアプリケーションから、Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを簡単に取り込む方法を説明します。
+description: アドビ、ファーストパーティおよびサードパーティ製のアプリケーションから、Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを簡単に取り込む方法を説明します。
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3800
@@ -9,7 +9,7 @@ exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
 source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 15%
+ht-degree: 35%
 
 ---
 
@@ -21,6 +21,6 @@ Adobe Experience Platformインターフェイスでソース（ソースコネ�
 
 >[!INFO]
 >
-> このビデオはコースの一部です [データエンジニア向けのデータ取り込み](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=ja)(Experience League時に無料で利用可能 )
+> このビデオはコースの一部です [データエンジニア向けのデータ取り込み](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=ja)(Experience League時に無料で利用可能 )
 
 詳しくは、 [ソースドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja).
