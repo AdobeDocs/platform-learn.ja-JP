@@ -4,10 +4,10 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
+source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 41%
+source-wordcount: '925'
+ht-degree: 43%
 
 ---
 
@@ -26,9 +26,15 @@ ht-degree: 41%
    + [基本的なアーキテクチャ](/help/platform/intro-to-platform/basic-architecture.md)
    + [Platform ユーザーインターフェイスの使用](/help/platform/intro-to-platform/interface-tour.md)
    + [役割とプロジェクトのフェーズ](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ Real-Time CDPの概要 {#rtcdp}
+   + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [エンドツーエンドのデモ](/help/platform/rtcdp/demo.md)
+   + [ワークフロー](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+   + [B2B エディションの概要](/help/platform/rtcdp/b2b-overview.md)
+   + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [はじめに：データアーキテクトとデータエンジニア](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Experience Platform API に対する認証](/help/platform/authentication/platform-api-authentication.md)
-+ [ Experience Platform へのサンプルデータのインポート](/help/platform/data-generator/import-sample-data.md)
++ [ Experience Platform へのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [アラートを使用](/help/platform/admin/use-alerts.md)
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
@@ -46,13 +52,14 @@ ht-degree: 41%
    + [データ使用ポリシーの作成](/help/platform/governance/create-data-usage-policies.md)
    + [データ使用ポリシーの作成](/help/platform/governance/enforce-data-usage-policies.md)
    + [同意の実施](/help/platform/governance/enforce-consent.md)
+   + [IAB Transparency and Consent Framework 2.0 との統合](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + データハイジーン {#data-hygiene}
    + [データセットの削除](/help/platform/data-hygiene/delete-datasets.md)
-+ データ取得 {#data-ingestion}
++ データ取り込み {#data-ingestion}
    + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [バッチ取得の概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [データセットの作成と入力](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [XDM への CSV ファイルのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=ja){target="_blank"}
+   + [XDM への CSV ファイルのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=ja){target="_blank"}
    + [ソースの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Adobe Analyticsからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [データをAudience Managerから取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -63,7 +70,7 @@ ht-degree: 41%
    + [HTTP API を使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=ja)
    + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ja)
    + [Web SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [Mobile SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+   + [Mobile SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=ja){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
    + [概要](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [アーキテクチャ](data-science-workspace/architecture-overview.md)
@@ -90,12 +97,25 @@ ht-degree: 41%
    + [Marketoの宛先の設定](/help/platform/destinations/configure-the-marketo-destination.md)
    + [ファイルベースのクラウドストレージまたは電子メールマーケティングの宛先の設定](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [ソーシャルの宛先の設定](/help/platform/destinations/configure-a-social-destination.md)
-   + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ja)
+   + Adobe Targetとカスタムパーソナライゼーション{#target}
+      + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ja)
+      + [Adobe Targetの宛先の設定](/help/platform/destinations/target/configure-the-target-destination.md)
+      + [セグメントとプロファイル属性のアクティブ化](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
    + [非アプリケーションに対するデータのAdobe化 Web セミナー](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + ID {#identities}
    + [ID グラフと ID グラフの概要](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID データのラベル、取り込み、検証](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID グラフの表示](/help/platform/identities/view-identity-graphs.md)
++ インテリジェントサービス {#intelligent-services}
+   + [概要](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Attribution AI の概要](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+   + [Attribution AI値](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [Attribution AI の設定](/help/platform/intelligent-services/configure-attribution-ai.md)
+   + [Attribution AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+   + [顧客 AI の概要](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [顧客 AI 値](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [Customer AI の設定](/help/platform/intelligent-services/configure-customer-ai.md)
+   + [Customer AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + 監視 {#monitoring}
    + [データ取得の監視](/help/platform/monitoring/monitoring-dashboard.md)
    + [セグメントのアクティベーションの監視](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
@@ -178,28 +198,7 @@ ht-degree: 41%
    + [データベースからのデータ取得](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
    + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
-+ アプリケーションサービス {#application-services}
-   + [Customer Journey Analytics チュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
-   + [Journey Orchestrationチュートリアル](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-   + [offer decisioningチュートリアル](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=ja){target="_blank"}
-   + Real-Time CDPチュートリアル{#rtcdp}
-      + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-      + [B2B エディションの概要](/help/platform/rtcdp/b2b-overview.md)
-      + [エンドツーエンドのデモ](/help/platform/rtcdp/demo.md)
-      + [ワークフロー](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-      + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-      + [IAB Transparency and Consent Framework 2.0 との統合](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-      + [データ使用ポリシーの適用](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
-+ インテリジェントサービス {#intelligent-services}
-   + [概要](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
-   + [Attribution AI の概要](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Attribution AI値](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
-   + [Attribution AI の設定](/help/platform/intelligent-services/configure-attribution-ai.md)
-   + [Attribution AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [顧客 AI の概要](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-   + [顧客 AI 値](/help/platform/intelligent-services/business-value-of-customer-ai.md)
-   + [Customer AI の設定](/help/platform/intelligent-services/configure-customer-ai.md)
-   + [Customer AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+
 + Experience Cloud の統合 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Marketo Engageでキャンペーンを調整](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
