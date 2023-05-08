@@ -1,16 +1,16 @@
 ---
 title: Adobeのリアルタイム CDP からAdobe Targetにセグメントとプロファイル属性を共有するには、どうすればよいですか。
-description: 説明がありません
+description: Adobe Real-time Customer Data PlatformからAdobe Targetにセグメントとプロファイル属性を共有し、Web サイト、モバイルアプリ、その他のデジタルプロパティにリアルタイムでパーソナライズされたコンテンツを表示する方法を説明します。
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: fc6d129f473e4d26f57980bb239f95462c3f3cc9
+source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 

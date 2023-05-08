@@ -4,10 +4,10 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
+source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 43%
+source-wordcount: '932'
+ht-degree: 42%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 43%
    + [ファイルベースのクラウドストレージまたは電子メールマーケティングの宛先の設定](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [ソーシャルの宛先の設定](/help/platform/destinations/configure-a-social-destination.md)
    + Adobe Targetとカスタムパーソナライゼーション{#target}
-      + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ja)
+      + [Adobe Targetを使用した次ヒットのパーソナライゼーション](/help/platform/destinations/target/next-hit-personalization.md)
       + [Adobe Targetの宛先の設定](/help/platform/destinations/target/configure-the-target-destination.md)
       + [セグメントとプロファイル属性のアクティブ化](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Target でのReal-Time CDPセグメントの使用](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
@@ -199,11 +199,10 @@ ht-degree: 43%
    + [データベースからのデータ取得](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
    + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
-
+   + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud の統合 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Marketo Engageでキャンペーンを調整](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Adobe Targetを使用した次ヒットのパーソナライゼーション](/help/platform/experience-cloud/next-hit-personalization.md)
 + 業界トレンド {#industry}
    + [データ管理の将来と変化する環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [2 つの視点 - ブランドと消費者](/help/platform/industry/brands-vs-consumers.md)
