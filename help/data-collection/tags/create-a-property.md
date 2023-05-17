@@ -1,6 +1,6 @@
 ---
 title: タグの概要とプロパティ（旧称 Launch）の作成
-description: データ収集のタグの概要と、サイトのコードを格納するプロパティを作成する方法を簡単に学習します。
+description: データ収集のタグの概要と、サイトのコードを格納するプロパティを作成する方法を簡単に説明します。
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
 feature: Tags
 kt: 3524
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 # タグの概要とプロパティの作成
 
-データ収集のタグの概要と、サイトのコードを格納するプロパティを作成する方法を簡単に学習します。
+データ収集のタグの概要と、サイトのコードを格納するプロパティを作成する方法を簡単に説明します。
 
 >[!NOTE]
 >

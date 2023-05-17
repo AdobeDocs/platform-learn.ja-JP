@@ -1,20 +1,20 @@
 ---
 title: イベント転送の概要
-description: イベント転送によりデータ収集を一元化して web およびモバイルアプリに必要なコードの量を減らし、Adobe Experience Platform Edge Network を介してアドビ以外のソリューションにデータをストリーミングする方法について学習します。
+description: イベント転送によりデータ収集を一元化して web およびモバイルアプリに必要なコードの量を減らし、Adobe Experience Platform Edge Network を介してアドビ以外のソリューションにデータをストリーミングする方法について説明します。
 feature: Event Forwarding
 kt: 6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # イベント転送の概要
 
-イベント転送によりデータ収集を一元化して web およびモバイルアプリに必要なコードの量を減らし、Adobe Experience Platform Edge Network を介してアドビ以外のソリューションにデータをストリーミングする方法について学習します。
+イベント転送によりデータ収集を一元化して web およびモバイルアプリに必要なコードの量を減らし、Adobe Experience Platform Edge Network を介してアドビ以外のソリューションにデータをストリーミングする方法について説明します。
 
 >[!NOTE]
 >

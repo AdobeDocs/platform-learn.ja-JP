@@ -1,6 +1,6 @@
 ---
 title: Customer AI スコアおよびインサイトの使用
-description: 顧客 AI の傾向スコアおよびインサイトを使用して顧客をコンバージョンおよび保持する方法について説明します。
+description: 顧客 AI の傾向スコアおよびインサイトを使用して顧客をコンバージョンして定着させる方法について説明します。
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
 role: User
@@ -16,7 +16,7 @@ ht-degree: 59%
 
 # Customer AI スコアおよびインサイトの使用
 
-顧客 AI の傾向スコアおよびインサイトを使用して顧客をコンバージョンおよび保持する方法について説明します。
+顧客 AI の傾向スコアおよびインサイトを使用して顧客をコンバージョンして定着させる方法について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
 
