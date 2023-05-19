@@ -7,9 +7,9 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13122
-source-git-commit: fc6d129f473e4d26f57980bb239f95462c3f3cc9
+source-git-commit: 758ccd3aef6789c727bbe19e30947bb7ee5f2615
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '130'
 ht-degree: 6%
 
 ---
@@ -20,6 +20,6 @@ Real-time Customer Data PlatformでAdobe Targetの宛先を設定し、セグメ
 
 >[!IMPORTANT]
 >
->拡張Adobe Target V2 宛先コネクタのベータリリースにより、宛先カタログに 2 つのAdobe Targetカードが表示される場合がありました。 Adobe Target V2 宛先コネクタはベータ版で、一部のお客様のみが利用できます。
+>拡張Adobe Target V2 宛先コネクタのベータリリースでは、宛先カタログに 2 つのAdobe Targetカードが表示される場合がありました。 Adobe Target V2 宛先コネクタはベータ版で、一部のお客様のみが利用できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on)

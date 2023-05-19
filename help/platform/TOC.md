@@ -4,9 +4,9 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
+source-git-commit: bc55e75f7bfdde878f4e95bfb1fdd02fca9018b5
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 42%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 42%
       + [Adobe Targetの宛先の設定](/help/platform/destinations/target/configure-the-target-destination.md)
       + [セグメントとプロファイル属性のアクティブ化](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Target でのReal-Time CDPセグメントの使用](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
+      + [Target でのReal-Time CDPプロファイル属性の使用](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [非アプリケーションに対するデータのAdobe化 Web セミナー](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + ID {#identities}
    + [ID グラフと ID グラフの概要](/help/platform/identities/understanding-identity-and-identity-graphs.md)
