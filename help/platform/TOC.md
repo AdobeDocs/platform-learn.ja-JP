@@ -4,9 +4,9 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: bc55e75f7bfdde878f4e95bfb1fdd02fca9018b5
+source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 42%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 42%
 + データガバナンス {#data-governance}
    + [概要](/help/platform/governance/understanding-data-governance.md)
    + [エンドツーエンドのデモ](/help/platform/governance/introduction-to-data-governance.md)
-   + [ガバナンスラベルを使用したデータの分類](/help/platform/governance/classify-data-using-governance-labels.md)
+   + [ラベルを使用してデータを分類する](/help/platform/governance/classify-data-using-labels.md)
    + [データ使用ポリシーの作成](/help/platform/governance/create-data-usage-policies.md)
    + [データ使用ポリシーの作成](/help/platform/governance/enforce-data-usage-policies.md)
    + [同意の実施](/help/platform/governance/enforce-consent.md)
