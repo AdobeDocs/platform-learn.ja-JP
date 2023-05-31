@@ -6,10 +6,10 @@ feature: Identities
 kt: 3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
+source-wordcount: '102'
+ht-degree: 5%
 
 ---
 
@@ -18,8 +18,4 @@ ht-degree: 7%
 Adobe Experience Platformの ID 解決の主な機能（ID 収集、ID グラフ、API）について説明します。 ID サービスが、統合プロファイルを作成することで、切断された ID をリンクして、一貫した接続エクスペリエンスを提供する方法を説明します。 詳しくは、 [id サービスドキュメント](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
-
->[!INFO]
->
-> このビデオはコースの一部です [Adobe Experience Platformの概要（データエンジニア向け）](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2)(Experience League時に無料で利用可能 )
 

@@ -8,10 +8,10 @@ kt: 9259, 13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 4%
+source-wordcount: '162'
+ht-degree: 5%
 
 ---
 
@@ -30,10 +30,6 @@ ht-degree: 4%
 標準ワークフローを使用してMarketo用のソースコネクタを設定する方法を説明します。 標準ワークフローでは、スキーマと ID 名前空間を事前に作成する必要があります。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
-
->[!INFO]
->
-> このビデオはコースの一部です。 [Real-Time CDP, B2B Edition を使い始める（マーケター向け）](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)(Experience League時に無料で利用可能 )
 
 詳しくは、次のドキュメントを参照してください。
 * [Marketo Engageソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

@@ -7,10 +7,10 @@ kt: 3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 6%
+source-wordcount: '208'
+ht-degree: 4%
 
 ---
 
@@ -29,10 +29,6 @@ CRM ソースからAdobe Experience Platformのリアルタイム顧客プロフ
 テンプレートワークフローを使用して、Salesforce CRM 用のソースコネクタを設定する方法を説明します。 このワークフローは、Salesforce データをテンプレートに基づいて取り込むために必要なアセットを自動生成します。 事前の時間を節約でき、必要に応じてアセットをカスタマイズできます。 このワークフローは、すべての CRM ソースコネクタでサポートされているわけではありません。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
-
->[!INFO]
->
-> このビデオはコースの一部です [データエンジニア向けのデータ取り込み](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=ja)(Experience League時に無料で利用可能 )
 
 詳しくは、次のドキュメントを参照してください。
 * [Salesforce 接続ドキュメントの作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).

@@ -7,10 +7,10 @@ kt: 7285
 thumbnail: 333312.jpg
 hidefromtoc: true
 exl-id: c7f927d1-87fc-4bf3-83c3-6efb97f88c9e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 10%
+source-wordcount: '75'
+ht-degree: 8%
 
 ---
 
@@ -21,9 +21,5 @@ ht-degree: 10%
 * [サンプルデータをダウンロード (25 MB zip)](../assets/DSW-course-sample-assets.zip)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333312?quality=12&learn=on)
-
->[!INFO]
->
-> このビデオはコースの一部です。 [データサイエンティスト向け Data Science Workspace の概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw)(Experience League時に無料で利用可能 )
 
 詳しくは、 [Data Science Workspace ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=ja).
