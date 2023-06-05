@@ -2,10 +2,10 @@
 title: ID
 description: モバイルアプリで ID データを収集する方法を説明します。
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 4%
+source-wordcount: '591'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Adobe Experience Platform ID サービスを使用すると、デバイスやシステム間で ID を結び付け、顧客とその行動をより良く把握でき、効果的な個人のデジタルエクスペリエンスをリアルタイムで提供できます。 ID フィールドと名前空間は、異なるデータソースを結合して、360 度のリアルタイム顧客プロファイルを構築するための接着剤です。
 
-詳しくは、 [ID 拡張](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network) そして [id サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) 」を参照してください。
+詳しくは、 [ID 拡張](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) そして [id サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) 」を参照してください。
 
 ## 前提条件
 
@@ -65,10 +65,10 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 ## カスタム ID 名前空間の設定
 
-ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) id が関連するコンテキストのインジケーターとして機能する 例えば、「name@email.com」の値を電子メールアドレスとして、または「443522」を数値 CRM ID として区別します。
+ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) id が関連するコンテキストのインジケーターとして機能する 例えば、「name@email.com」の値を電子メールアドレスとして、または「443522」を数値 CRM ID として区別します。
 
 1. 「データ収集」インターフェイスで、「 **[!UICONTROL ID]** をクリックします。
-1. 選択 **[!UICONTROL ID 名前空間を作成]**.
+1. 「**[!UICONTROL ID 名前空間を作成]**」を選択します。
 1. 次を提供： **[!UICONTROL 表示名]** / `Luma CRM ID` および **[!UICONTROL ID シンボル]** 値 `lumaCrmId`.
 1. 選択 **[!UICONTROL クロスデバイス ID]**.
 1. 「**[!UICONTROL 作成]**」を選択します。

@@ -2,7 +2,7 @@
 title: プロファイル
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Profile 拡張機能を使用して、ユーザーに関する属性をクライアントに保存できます。 この情報を後で使用して、オンラインまたはオフラインのシナリオでメッセージのターゲティングやパーソナライズをおこなうことができます。最適なパフォーマンスを得るために、サーバーに接続する必要はありません。 Profile 拡張機能は、クライアントサイド操作プロファイル (CSOP) を管理し、API への対応、ユーザープロファイル属性の更新、ユーザープロファイル属性の他のシステムとの生成イベントとしての共有をおこなう方法を提供します。
 
-プロファイルデータは、他の拡張機能によってプロファイル関連のアクションを実行するために使用されます。 例えば、プロファイルデータを使用し、プロファイルデータに基づいてルールを実行する Rules Engine 拡張機能があります。 詳しくは、 [Profile 拡張機能](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile) ドキュメント内
+プロファイルデータは、他の拡張機能によってプロファイル関連のアクションを実行するために使用されます。 例えば、プロファイルデータを使用し、プロファイルデータに基づいてルールを実行する Rules Engine 拡張機能があります。 詳しくは、 [Profile 拡張機能](https://developer.adobe.com/client-sdks/documentation/profile/) ドキュメント内
 
 >[!IMPORTANT]
 >
@@ -65,7 +65,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-追加 `updateUserAttributes` ドキュメントを参照してください [ここ](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#update-user-attributes).
+追加 `updateUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## 取得
 
@@ -78,7 +78,7 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-追加 `getUserAttributes` ドキュメントを参照してください [ここ](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#get-user-attributes).
+追加 `getUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## アシュランスで検証
 

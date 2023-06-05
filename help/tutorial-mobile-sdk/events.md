@@ -2,9 +2,9 @@
 title: イベント
 description: モバイルアプリでイベントデータを収集する方法を説明します。
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 モバイルアプリでイベントを追跡する方法を説明します。
 
-Edge Network 拡張機能は、Experience Events を Platform Edge Network に送信する API を提供します。 エクスペリエンスイベントは、XDM ExperienceEvent スキーマ定義に準拠したデータを含むオブジェクトです。 より簡単に言えば、モバイルアプリでのユーザーの行動を取り込みます。 Platform Edge Network がデータを受信すると、Adobe AnalyticsやExperience Platformなど、データストリームで設定されたアプリケーションやサービスにデータを転送できます。 詳しくは、 [エクスペリエンスイベント](https://aep-sdks.gitbook.io/docs/getting-started/initialize-the-sdk) （製品ドキュメント内）。
+Edge Network 拡張機能は、Experience Events を Platform Edge Network に送信する API を提供します。 エクスペリエンスイベントは、XDM ExperienceEvent スキーマ定義に準拠したデータを含むオブジェクトです。 より簡単に言えば、モバイルアプリでのユーザーの行動を取り込みます。 Platform Edge Network がデータを受信すると、Adobe AnalyticsやExperience Platformなど、データストリームで設定されたアプリケーションやサービスにデータを転送できます。 詳しくは、 [エクスペリエンスイベント](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) （製品ドキュメント内）。
 
 ## 前提条件
 
@@ -176,7 +176,7 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
 上記の例では、XDM データオブジェクトを構築する際の考え方のプロセスを説明していると思います。 次に、Luma アプリに画面ビュートラッキングを追加します。
 
 1. `Home.swift` に移動します。
-1. 次のコードをに追加します。 `viewDidAppear(...)`.
+1. `viewDidAppear(...)` に次のコードを追加します。
 
    ```swift
            let stateName = "luma: content: ios: us: en: home"

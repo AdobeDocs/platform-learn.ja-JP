@@ -8,10 +8,10 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '3344'
-ht-degree: 1%
+source-wordcount: '3346'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->このチュートリアルでは、Web SDK を使用した Web サイトからのストリーミング取り込みに焦点を当てていますが、 [Adobeモバイル SDK](https://aep-sdks.gitbook.io/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)などのメカニズムを使用できます。
+>このチュートリアルでは、Web SDK を使用した Web サイトからのストリーミング取り込みに焦点を当てていますが、 [Adobeモバイル SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)などのメカニズムを使用できます。
 
 ## 必要な権限
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 1. の場合 **[!UICONTROL サンドボックス]**&#x200B;を選択します。 `Luma Tutorial`
 1. の場合 **[!UICONTROL イベントデータセット]**&#x200B;を選択します。 `Luma Web Events Dataset`
 1. 他のAdobeアプリケーションを使用する場合は、他のセクションを自由に参照して、これらの他のソリューションの Edge 設定で必要な情報を確認してください。 Web SDK は、データをExperience Platformにストリーミングする目的だけでなく、他のAdobeアプリケーションで使用される以前の JavaScript ライブラリをすべて置き換える目的で開発されました。 Edge 設定は、データの送信先となる各アプリケーションのアカウント詳細を指定するために使用します。
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データストリームの設定と保存](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -123,7 +123,7 @@ ht-degree: 1%
    ![新しいプロパティを追加](assets/websdk-property-addNewProperty.png)
 1. を **[!UICONTROL 名前]**&#x200B;を入力して、 `Luma Platform Tutorial` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）
 1. を **[!UICONTROL ドメイン]**&#x200B;を入力して、 `enablementadobe.com` （後述）
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![プロパティの詳細](assets/websdk-property-propertyDetails.png)
 
@@ -324,7 +324,7 @@ Platform でデータがランディングされていることを検証する�
 1. を選択します。 **[!UICONTROL プロファイル ID]** プロファイルを開くには
    ![プロファイルを検索して開く](assets/websdk-platform-openProfile.png)
 1. を選択します。 **[!UICONTROL イベント]** タブをクリックして、表示したページを確認します。
-   ![プロファイルイベント](assets/websdk-platform-profileEvents.png)
+   ![プロファイルイベント](assets/websdk-platform-profileEvents.png)\
    <!--![](assets/websdk-platform-confirmProfile.png)-->
 
 ## イベントにカスタムデータを追加する

@@ -2,10 +2,10 @@
 title: タグプロパティの設定
 description: タグプロパティを [!UICONTROL データ収集] インターフェイス。
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 ## 初期設定
 
 1. 新しいモバイルタグプロパティを作成します。
-   1. 内 [データ収集インターフェイス](https://experience.adobe.com/data-collection/){target=&quot;_blank&quot;}、 **[!UICONTROL タグ]** 左のナビゲーション
+   1. 内 [データ収集インターフェイス](https://experience.adobe.com/data-collection/){target="_blank"}を選択します。 **[!UICONTROL タグ]** 左のナビゲーション
    1. 選択 **[!UICONTROL 新しいプロパティ]**
 
       ![タグプロパティの作成](assets/mobile-tags-new-property.png).
@@ -45,7 +45,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
       >[!NOTE]
       >
-      > このチュートリアルでおこなう操作など、エッジベースのモバイル SDK 実装のデフォルトの同意設定は、 [!UICONTROL 同意拡張] そして、 [!UICONTROL プライバシー] の設定を使用して、タグプロパティの設定を行います。 このレッスンの後半で、同意拡張機能を追加して設定します。 詳しくは、 [ドキュメント](https://aep-sdks.gitbook.io/docs/resources/privacy-and-gdpr).
+      > このチュートリアルでおこなう操作など、エッジベースのモバイル SDK 実装のデフォルトの同意設定は、 [!UICONTROL 同意拡張] そして、 [!UICONTROL プライバシー] の設定を使用して、タグプロパティの設定を行います。 このレッスンの後半で、同意拡張機能を追加して設定します。 詳しくは、 [ドキュメント](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. 新しいプロパティを開く
@@ -75,13 +75,13 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 1. 以下を使用： [!UICONTROL 検索] 次の拡張機能をインストールする機能。 これらの拡張機能のどちらにも設定は必要ありません。
    * ID
-   * AEP アシュランス
+   * AEP Assurance
 
 ## 拡張機能の設定
 
 1. のインストール **同意** 拡張子。
 
-   このチュートリアルの目的で、 **[!UICONTROL 保留中]**. の同意拡張機能について詳しくは、 [ドキュメント](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network).
+   このチュートリアルの目的で、 **[!UICONTROL 保留中]**. の同意拡張機能について詳しくは、 [ドキュメント](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
 
    ![同意設定](assets/mobile-tags-extension-consent.png)
 
@@ -110,14 +110,14 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 1. インストール手順は、導入の出発点として適しています。
 
-   追加情報を見つけることができます [ここ](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk).
+   追加情報を見つけることができます [ここ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
    * **[!UICONTROL 環境ファイル ID]**:この一意の ID は開発環境を指します。この値をメモしておきます。 実稼動/ステージング/開発には、すべて異なる ID 値が設定されます。
    * **[!UICONTROL ポッドファイル]**:CocoaPods は、SDK のバージョンとダウンロードの管理に使用されます。 詳しくは、 [ドキュメント](https://cocoapods.org/).
    * **[!UICONTROL 初期化コード]**:このコードブロックは、必要な SDK を読み込んで、起動時に拡張機能を登録する方法を示します。
 
 >[!NOTE]
->インストール手順は、最初の段階と見なされ、最終的なドキュメントではありません。 最新の SDK バージョンおよびコードサンプルは、公式の [ドキュメント](https://aep-sdks.gitbook.io/docs/).
+>インストール手順は、最初の段階と見なされ、最終的なドキュメントではありません。 最新の SDK バージョンおよびコードサンプルは、公式の [ドキュメント](https://developer.adobe.com/client-sdks/documentation/).
 
 ## モバイルタグのアーキテクチャ
 

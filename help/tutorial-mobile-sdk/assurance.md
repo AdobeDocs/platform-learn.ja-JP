@@ -2,10 +2,10 @@
 title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 2%
+source-wordcount: '585'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 アシュランス（正式には Project Griffon と呼ばれます）は、データ収集やモバイルアプリでのエクスペリエンス提供の方法を調査、配達確認、シミュレーション、検証するのに役立つように設計されています。
 
-保証は、Adobe Experience Platform Mobile SDK で生成された生の SDK イベントを調べるのに役立ちます。 SDK で収集されたすべてのイベントを調査できます。 SDK イベントは、時間順に並べ替えられたリストビューに読み込まれます。 各イベントには、詳細を示す詳細ビューがあります。 SDK 設定、データ要素、共有状態、SDK 拡張機能のバージョンを参照するための追加のビューも提供されます。 詳しくは、 [アシュランス](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance) （製品ドキュメント内）。
+保証は、Adobe Experience Platform Mobile SDK で生成された生の SDK イベントを調べるのに役立ちます。 SDK で収集されたすべてのイベントを調査できます。 SDK イベントは、時間順に並べ替えられたリストビューに読み込まれます。 各イベントには、詳細を示す詳細ビューがあります。 SDK 設定、データ要素、共有状態、SDK 拡張機能のバージョンを参照するための追加のビューも提供されます。 詳しくは、 [アシュランス](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja) （製品ドキュメント内）。
 
 
 ## 前提条件
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-詳細はこちらをご覧ください [ここ](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
+詳細はこちらをご覧ください [ここ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## ベース URL の設定
 
@@ -94,7 +94,7 @@ iOSでの URL スキームの詳細については、 [Appleドキュメント](
    * Web UI で取得されるExperience Cloudイベント。
       ![保証イベント](assets/mobile-assurance-events.png)
 
-問題が発生した場合は、 [技術](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
+問題が発生した場合は、 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja){target="_blank"}.
 
 次へ： **[同意](consent.md)**
 

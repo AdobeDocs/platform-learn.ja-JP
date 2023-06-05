@@ -1,12 +1,12 @@
 ---
 title: モバイルアプリでのAdobe Experience Cloudの実装チュートリアルの概要
 description: Adobe Experience Cloudモバイルアプリケーションの実装方法を説明します。 このチュートリアルでは、サンプルの Swift アプリケーションでExperience Cloudアプリケーションを実装する手順を説明します。
-recommendation: noDisplay,catalog
+recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 10%
+source-wordcount: '643'
+ht-degree: 11%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Adobe Experience Platform Mobile SDK を使用して、モバイルアプリに Adobe Experience Cloud アプリケーションを実装する方法を説明します。
 
-Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド SDK です。 詳しくは、 [Adobe Experience Platform Mobile SDK ドキュメント](https://aep-sdks.gitbook.io/docs/) を参照してください。
+Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド SDK です。 詳しくは、 [Adobe Experience Platform Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/) を参照してください。
 
 ![ビルド設定](assets/data-collection-mobile-sdk.png)
 
@@ -26,7 +26,7 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 このチュートリアルでは、次の内容について学習します。
 
 * 標準フィールドグループとカスタムフィールドグループを使用してスキーマを作成します。
-* データストリームを設定します。
+* データストリームの設定.
 * モバイルタグプロパティを設定します。
 * Experience Platformデータセットを設定します（オプション）。
 * アプリにタグ拡張機能をインストールして実装します。
@@ -55,7 +55,7 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * **[!UICONTROL プロパティ権限]** — 許可する項目 **[!UICONTROL 開発]**, **[!UICONTROL 承認]**, **[!UICONTROL 公開]**, **[!UICONTROL 拡張機能の管理]**、および **[!UICONTROL 環境の管理]**.
    * **[!UICONTROL 会社権限]** — 許可する項目 **[!UICONTROL プロパティを管理]** また、オプションのプッシュメッセージレッスンを完了している場合、 **[!UICONTROL アプリ設定を管理]**
 
-      タグ権限について詳しくは、 [タグのユーザー権限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja){target=&quot;_blank&quot;} を参照してください。
+      タグ権限について詳しくは、 [タグのユーザー権限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja){target="_blank"} （製品ドキュメント内）。
 * Experience Platformでは、次が必要です。
    * **[!UICONTROL データモデリング]** — スキーマを管理および表示する権限項目です。
    * **[!UICONTROL Identity Management]**—id 名前空間を管理および表示する権限項目です。
@@ -74,8 +74,8 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 
 サンプルアプリケーションの 2 つのバージョンをダウンロードできます。
 
-1. [空](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;} — このチュートリアルの実践演習を完了するためのExperience Cloudコードのないバージョン
-1. [完全実装済み](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;} — 参照用に完全なExperience Cloud実装を含むバージョン。
+1. [空](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}  — このチュートリアルの実践演習を完了するExperience Cloudコードのないバージョン
+1. [完全実装済み](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}  — 参照用の完全なExperience Cloud実装を含むバージョン。
 
 それでは、始めましょう。
 

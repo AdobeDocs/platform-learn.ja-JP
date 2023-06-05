@@ -2,10 +2,10 @@
 title: 同意
 description: モバイルアプリに同意を実装する方法を説明します。
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 モバイルアプリに同意を実装する方法を説明します。
 
-Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience Platform Mobile SDK と Edge Network 拡張機能を使用する場合に、モバイルアプリから同意設定を収集できます。 詳しくは、 [同意拡張](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network)（ドキュメント内）
+Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience Platform Mobile SDK と Edge Network 拡張機能を使用する場合に、モバイルアプリから同意設定を収集できます。 詳しくは、 [同意拡張](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)（ドキュメント内）
 
 ## 前提条件
 
@@ -33,7 +33,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 1. ユーザーに 1 回だけ問い合わせたい場合。 これを管理する簡単な方法の 1 つは、 `UserDefaults`.
 1. `Home.swift` に移動します。
-1. 次のコードをに追加します。 `viewDidLoad()`.
+1. `viewDidLoad()` に次のコードを追加します。
 
    ```swift
    let defaults = UserDefaults.standard
@@ -41,7 +41,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    let hidePopUp = defaults.bool(forKey: consentKey)
    ```
 
-1. ユーザーがこのアラートをまだ確認していない場合は、表示し、応答に基づいて同意を更新します。 次のコードをに追加します。 `viewDidLoad()`.
+1. ユーザーがこのアラートをまだ確認していない場合は、表示し、応答に基づいて同意を更新します。 `viewDidLoad()` に次のコードを追加します。
 
    ```swift
    if(hidePopUp == false){
@@ -71,7 +71,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 同意モバイル拡張機能では、現在の同意値に基づいて、トラッキングを自動的に抑制/追加/許可します。 また、現在の同意状態に自分でアクセスすることもできます。
 
 1. `Home.swift` に移動します。
-1. 次のコードをに追加します。 `viewDidLoad()`.
+1. `viewDidLoad()` に次のコードを追加します。
 
 ```swift
 Consent.getConsents{ consents, error in

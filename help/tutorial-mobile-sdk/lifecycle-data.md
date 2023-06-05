@@ -2,7 +2,7 @@
 title: ライフサイクルデータ
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 モバイルアプリでライフサイクルデータを収集する方法を説明します。
 
-Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、モバイルアプリからの収集のライフサイクルデータを有効にします。 Adobe Experience Platform Edge Network 拡張機能は、このライフサイクルデータを Platform Edge Network に送信し、そこで、データストリーム設定に従って、他のアプリケーションやサービスに転送されます。 詳しくは、 [ライフサイクル拡張](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network) （製品ドキュメント内）。
+Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、モバイルアプリからの収集のライフサイクルデータを有効にします。 Adobe Experience Platform Edge Network 拡張機能は、このライフサイクルデータを Platform Edge Network に送信し、そこで、データストリーム設定に従って、他のアプリケーションやサービスに転送されます。 詳しくは、 [ライフサイクル拡張](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) （製品ドキュメント内）。
 
 
 ## 前提条件
@@ -45,7 +45,7 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
    ![追加を選択](assets/mobile-lifecycle-add.png)
 1. 検索バーに「lifecycle」と入力します。
 1. の横にあるチェックボックスを選択します。 **[!UICONTROL AEP Mobile のライフサイクルの詳細]**.
-1. 選択 **[!UICONTROL フィールドグループを追加]**.
+1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
    ![フィールドグループを追加](assets/mobile-lifecycle-lifecycle-field-group.png)
 1. 「**[!UICONTROL 保存]**」を選択します。
    ![保存](assets/mobile-lifecycle-lifecycle-save.png)
@@ -55,7 +55,7 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
 
 次に、 `AppDelegate.swift` ライフサイクルイベントを登録するには：
 
-1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは `applicationWillEnterForeground:` delegate メソッド。 Add `lifecycleStart:`
+1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは `applicationWillEnterForeground:` delegate メソッド。 追加 `lifecycleStart:`
 
    ```swift
    MobileCore.lifecycleStart(additionalContextData: nil)
@@ -69,7 +69,7 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
 
 >[!NOTE]
 >
->iOS 13 以降の場合は、 [ドキュメント](https://aep-sdks.gitbook.io/docs/foundation-extensions/mobile-core/lifecycle#register-lifecycle-with-mobile-core-and-add-appropriate-start-pause-calls) のコードが少し異なる場合にのみ有効です。
+>iOS 13 以降の場合は、 [ドキュメント](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/#register-lifecycle-with-mobile-core-and-add-appropriate-startpause-calls) のコードが少し異なる場合にのみ有効です。
 
 ## アシュランスで検証
 
@@ -82,7 +82,7 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
 
 ## データを Platform Edge ネットワークに転送する
 
-前の演習では、フォアグラウンドイベントとバックグラウンドイベントを Mobile SDK にディスパッチします。 これらのイベントを Platform Edge Network に送信するには、以下の手順に従います [ここ](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network#configure-a-rule-to-forward-lifecycle-metrics-to-platform). イベントが Platform Edge ネットワークに送信されると、データストリーム設定に従って、他のアプリケーションやサービスに転送されます。
+前の演習では、フォアグラウンドイベントとバックグラウンドイベントを Mobile SDK にディスパッチします。 これらのイベントを Platform Edge Network に送信するには、以下の手順に従います [ここ](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). イベントが Platform Edge ネットワークに送信されると、データストリーム設定に従って、他のアプリケーションやサービスに転送されます。
 
 ライフサイクルイベントを Platform Edge Network に送信するルールを追加すると、次の内容が表示されます。 `Application Close (Background)` および `Application Launch (Foreground)` アシュランスに XDM データを含むイベント。
 

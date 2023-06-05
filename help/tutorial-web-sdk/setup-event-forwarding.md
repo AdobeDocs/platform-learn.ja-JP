@@ -3,9 +3,9 @@ title: イベント転送プロパティの設定
 description: イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1887'
 ht-degree: 6%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 6%
 Adobe Experience Platformでイベント転送を使用するには、次の 3 つのオプションの 1 つ以上を使用して、まずAdobe Experience Platform Edge Network にデータを送信する必要があります。
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform モバイル SDK](https://aep-sdks.gitbook.io/docs/)
-<!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+* [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/documentation/)
+   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -84,7 +84,7 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 
 データストリームで Target を設定するには：
 
-1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} インターフェイス
+1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
 1. 以前に作成したを選択 `Luma Web SDK` datastream
 
@@ -158,7 +158,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 1. ブラウザービューポートの高さを含む XDM オブジェクトパスに入力します。 `arc.event.xdm.environment.browserDetails.viewportHeight`
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![イベント転送 ECID パス](assets/event-forwarding-browser-viewpoirt-height.png)
 
@@ -173,7 +173,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 1. Experience CloudID を含む XDM オブジェクトパスを入力する `arc.event.xdm.identityMap.ECID.0.id`
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![イベント転送 ECID パス](assets/event-forwarding-ecid.png)
 
@@ -268,7 +268,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 1. ルールは次のようになります
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![イベント転送ルールを保存](assets/event-forwarding-rule-save.png)
 

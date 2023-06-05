@@ -2,10 +2,10 @@
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 * タグライブラリが正常に構築され、 [前のレッスン](configure-tags.md).
 * からの開発環境ファイル ID [モバイルインストール手順](configure-tags.md#generate-sdk-install-instructions).
-* ダウンロード済み、空 [サンプルアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;}。
-* の使用経験 [XCode](https://developer.apple.com/xcode/){target=&quot;_blank&quot;}。
-* 基本 [コマンドライン](https://en.wikipedia.org/wiki/Command-line_interface){target=&quot;_blank&quot;} の知識。
+* ダウンロード済み、空 [サンプルアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* の使用経験 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
+* 基本 [コマンドライン](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} 知識
 
 ## 学習内容
 
@@ -142,7 +142,7 @@ MobileCore.registerExtensions(extensions, {
 
 * 必要な拡張機能を登録します。
 * タグプロパティ設定を使用するように MobileCore および他の拡張機能を設定します。
-* デバッグログを有効にします。 詳細およびオプションについては、 [Mobile SDK ドキュメント](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
+* デバッグログを有効にします。 詳細およびオプションについては、 [Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 
 >[!IMPORTANT]
 >実稼動アプリケーションでは、現在の環境 (dev/stag/prod) に基づいて AppId を切り替える必要があります。
