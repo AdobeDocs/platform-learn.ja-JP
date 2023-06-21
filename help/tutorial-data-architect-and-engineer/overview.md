@@ -6,8 +6,9 @@ role: Data Architect, Data Engineer
 kt: 4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 191fe710c6cd00b5355881158a7e0af85523e22e
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -47,7 +48,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 ## 前提条件
 
-* これで、 [Adobe Experience Platformコースの概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) を使用し、Platform の機能に精通していること
+* これで、 [Adobe Experience Platformコースの概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=ja) を使用し、Platform の機能に精通していること
 * Adobe Experience Platform( またはReal-Time CDPやJourney Optimizerなどのプラットフォームベースのアプリケーション ) とデータ収集（旧称 Launch）でプロビジョニングされたアカウントにアクセスできます。
 * このアカウントのシステム管理者であるか、または [ユーザー権限の設定](configure-permissions.md) あなたのために。
 

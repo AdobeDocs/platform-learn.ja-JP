@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2538'
+source-wordcount: '2528'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,6 @@ ht-degree: 1%
 >* エラー診断を有効にすると、データの取り込みに関するデータが生成され、その後、データアクセス API を使用して確認できます。 詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
 >* 部分取り込みを使用すると、エラーを含むデータを、指定可能な特定のしきい値まで取り込むことができます。 詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
-
 ### データの検証
 
 データが正常に取り込まれたことを確認する方法はいくつかあります。
@@ -103,7 +102,6 @@ ht-degree: 1%
 1. を選択します。 `Luma Loyalty Id` 名前空間
 1. 次に、 `loyaltyId` の値をデータセットから取得します。  `5625458`
 1. 選択 **[!UICONTROL 表示]**
-
    ![データセットからのプロファイルの確認](assets/ingestion-loyalty-profile.png)
 
 #### データ取り込みイベントを使用した検証
@@ -137,7 +135,7 @@ ht-degree: 1%
 まず、データの取り込み先のデータセットのデータセット ID を取得します。
 
 1. オープン [!DNL Postman]
-1. この 24 時間以内にリクエストをおこなっていない場合、認証トークンは有効期限が切れている可能性があります。 リクエストを開く **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
+1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
 1. 環境変数を開き、 **CONTAINER_ID** まだ `tenant`
 1. リクエストを開く **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** を選択し、 **送信**
 1. 以下を受け取る必要があります。 `200 OK` 応答
@@ -337,7 +335,7 @@ Adobeは、複数の ETL ベンダーと提携し、Experience Platformへのデ
 
 * [Adobe Experience Platform 用 ETL 統合の開発](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector ページ (AdobeExchange)](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Adobe Experience Platform Connector の Informatica ドキュメント ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
+* [Adobe Experience Platform Connector の Informatica ドキュメント](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## その他のリソース

@@ -8,10 +8,10 @@ feature: Schemas
 kt: 4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 7%
+source-wordcount: '2485'
+ht-degree: 9%
 
 ---
 
@@ -47,7 +47,7 @@ Key terms:
 
 >[!TIP]
 >
-> Experience Platformでのデータモデリングについて詳しく見るには、このコースを受講することをお勧めします。 [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)(Experience League時に無料で利用可能 )
+> Experience Platformでのデータモデリングについて詳しく見るには、このコースを受講することをお勧めします。 [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja)(Experience League時に無料で利用可能 )
 
 ## 必要な権限
 
@@ -79,7 +79,7 @@ Key terms:
 
 次に、スキーマにフィールドグループを追加するよう求めるプロンプトが表示されます。 すべてのフィールドは、グループを使用してスキーマに追加する必要があります。 Adobeが提供する業界標準のフィールドグループの大きなセットから選択するか、独自のフィールドグループを作成できます。 Experience Platformで独自のデータのモデリングを開始する際は、Adobeが提供する業界標準のフィールドグループに慣れておくとよいでしょう。 可能な限り、顧客 AI、Attribution AI、Adobe Analyticsなどのダウンストリームサービスを強化する場合があるので、これらを使用することをお勧めします。
 
-独自のデータを使用する場合、大きな手順は、Platform で取り込むデータと、そのモデル化方法を決定することです。 この大きなトピックについては、コースで詳しく説明します [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). このチュートリアルでは、事前に決定されたスキーマの実装について、ガイドします。
+独自のデータを使用する場合、大きな手順は、Platform で取り込むデータと、そのモデル化方法を決定することです。 この大きなトピックについては、コースで詳しく説明します [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja). このチュートリアルでは、事前に決定されたスキーマの実装について、ガイドします。
 
 フィールドグループを追加するには：
 
@@ -87,11 +87,11 @@ Key terms:
    1. **[!UICONTROL 人口統計の詳細]** 名前や誕生日などの基本的な顧客データの場合
    1. **[!UICONTROL 個人の連絡先の詳細]** 電子メールアドレスや電話番号などの基本的な連絡先の詳細
 1. 行の右側にあるアイコンを選択して、フィールドグループに寄稿されたフィールドをプレビューできます。
-   ![標準フィールドグループを選択](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
+   ![標準フィールドグループの選択](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. 次を確認します。 **[!UICONTROL 業界]** > **[!UICONTROL 小売]** 」ボックスを使用して、業界固有のフィールドグループを表示します。
 1. 選択 **[!UICONTROL ロイヤルティ]** 「ロイヤルティプログラム」フィールドを追加します。
-1. 選択 **[!UICONTROL フィールドグループを追加]** :3 つのフィールドグループをすべてスキーマに追加します。
+1. 「**[!UICONTROL フィールドグループを追加]**」を選択して、3 つのフィールドグループをすべてスキーマに追加します。
    ![ロイヤルティスキーマへの標準フィールドグループの追加](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -99,7 +99,7 @@ Key terms:
 
 スキーマを保存するには：
 
-1. スキーマの最上位のノードを選択します。
+1. スキーマの一番上のノードを選択します。
 1. 入力 `Luma Loyalty Schema` を **[!UICONTROL 表示名]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
    ![スキーマに名前を付けて保存する](assets/schemas-loyalty-nameAndSave.png)
@@ -122,12 +122,11 @@ Key terms:
 1. 用途 `Luma Identity profile field group` を **[!UICONTROL 表示名]**
 1. 用途 `system identifiers for XDM Individual Profile class` を **[!UICONTROL 説明]**
 1. 選択 **[!UICONTROL フィールドグループを追加]**
-
    ![新しいフィールドグループを追加](assets/schemas-loyalty-nameFieldGroup.png)
 
 新しい空のフィールドグループがスキーマに追加されます。 この **[!UICONTROL +]** ボタンを使用して、階層内の任意の場所に新しいフィールドを追加できます。 ここでは、ルートレベルにフィールドを追加します。
 
-1. 選択 **[!UICONTROL +]** をクリックします。 これにより、テナント ID 名前空間の下に新しいフィールドが追加され、カスタムフィールドと標準フィールドの競合を管理できます。
+1. スキーマ名の横にある「**[!UICONTROL +]**」を選択します。これにより、テナント ID 名前空間の下に新しいフィールドが追加され、カスタムフィールドと標準フィールドの競合を管理できます。
 1. 内 **[!UICONTROL フィールドプロパティ]** サイドバーは、新しいフィールドの詳細を追加します。
    1. **[!UICONTROL フィールド名]**: `systemIdentifier`
    1. **[!UICONTROL 表示名]**: `System Identifier`
@@ -140,7 +139,7 @@ Key terms:
 
 1. 最初のフィールド
    1. **[!UICONTROL フィールド名]**: `loyaltyId`
-   1. **[!UICONTROL 表示名：]** `Loyalty Id`
+   1. **[!UICONTROL 表示名:]** `Loyalty Id`
    1. **[!UICONTROL タイプ]**: **[!UICONTROL 文字列]**
 1. 2 番目のフィールド
    1. **[!UICONTROL フィールド名]**: `crmId`
@@ -177,13 +176,12 @@ Key terms:
 > 1. 名前を付ける `Luma CRM Schema`
 > 1. 次のフィールドグループを使用します。人口統計の詳細、個人の連絡先の詳細、Luma ID プロファイルフィールドグループ
 
-
 まず、空のスキーマを作成します。
 
 1. オープン [!DNL Postman]
-1. この 24 時間以内にリクエストをおこなっていない場合、認証トークンは有効期限が切れている可能性があります。 リクエストを開く **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** を選択し、 **送信** をクリックして、新しい JWT およびアクセストークンをリクエストします。
+1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、新しいアクセストークンをリクエストします。
 1. 環境変数を開き、 **CONTAINER_ID** から `global` から `tenant`. 次を使用する必要があります。 `tenant` スキーマの作成など、Platform 内の独自のカスタム要素を操作する場合。
-1. 選択 **保存**
+1. 「**保存**」を選択します
    ![CONTAINER_ID をテナントに変更します](assets/schemas-crm-changeContainerId.png)
 1. リクエストを開く **[!DNL Schema Registry API > Schemas > Create a new custom schema.]**
 1. を開きます。 **本文** 「 」タブに移動し、次のコードを貼り付けて「 」を選択します。 **送信** を呼び出します。 この呼び出しは、同じ `XDM Individual Profile` 基本クラス：
@@ -218,10 +216,9 @@ Key terms:
 >
 > この呼び出しに関する一般的な問題と、おそらく次の修正点が当てはまります。
 >
-> * 認証トークンがありません：を実行します。 **IMS:JWT 生成+ユーザートークンを介した認証** を呼び出して新しいトークンを生成する
+> * 認証トークンがありません：を実行します。 **OAuth:アクセストークンをリクエスト** 新しいトークンを生成するリクエスト
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`:を更新します。 **CONTAINER_ID** 次の環境変数： `global` から `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`:ユーザーの権限をAdmin Console
-
 
 ### 標準フィールドグループを追加
 
@@ -277,7 +274,6 @@ Key terms:
    ```
 
 1. 選択 **送信**
-
    ![ID フィールドグループの追加](assets/schemas-crm-addIdentityMixin.png)
 
 API 応答とインターフェイスの両方を確認して、フィールドグループがスキーマに追加されたことを確認します。
@@ -297,7 +293,7 @@ API 応答とインターフェイスの両方を確認して、フィールド�
 1. を **[!UICONTROL 表示名]**&#x200B;を入力して、 `System Identifier`
 1. を **[!UICONTROL タイプ]**&#x200B;を選択します。 **システム識別子** 以前に作成したカスタムデータタイプ
 1. を選択します。 **[!UICONTROL 適用]** ボタン
-1. スキーマに名前を付けます `Luma Offline Purchase Events Schema`
+1. スキーマに名前を付ける `Luma Offline Purchase Events Schema`
 1. を選択します。 **[!UICONTROL 保存]** ボタン
 
 データタイプによってすべてのフィールドがどのように追加されたかを確認します。

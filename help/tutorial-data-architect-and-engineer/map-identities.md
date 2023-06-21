@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 3%
+source-wordcount: '944'
+ht-degree: 8%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 ## ID 名前空間を作成
 
-この演習では、Luma のカスタム ID フィールドの ID 名前空間を作成します。 `loyaltyId`, `crmId`、および `productSku`. ID 名前空間は、同じ名前空間内の 2 つの一致する値によって 2 つのデータソースが ID グラフを形成できるので、リアルタイム顧客プロファイルの構築に重要な役割を果たします。
+この演習では、Luma のカスタム ID フィールドの ID 名前空間を作成します。 `loyaltyId`, `crmId`、および `productSku`. ID 名前空間は、同じ名前空間内の 2 つの一致する値により、2 つのデータソースで ID グラフを構成できるので、リアルタイム顧客プロファイルを作成するうえで重要な役割を果たします。
 
 
 ### UI での名前空間の作成
@@ -68,7 +68,7 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 1. 選択 **[!UICONTROL 作成]**
 
-   ![名前空間を作成](assets/identity-createNamespace.png)
+   ![名前空間の作成](assets/identity-createNamespace.png)
 
 次に、以下の詳細を含む Luma 製品カタログスキーマ用に別の名前空間を設定します。
 
@@ -76,7 +76,7 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 |---------------|-----------|
 | 表示名 | Luma 製品 SKU |
 | ID シンボル | lumaProductSKU |
-| タイプ | 人以外の識別子 |
+| タイプ | 人物以外の識別子 |
 
 
 
@@ -92,12 +92,11 @@ API を使用して CRM 名前空間を作成します。
 > 1. を **[!UICONTROL ID シンボル]**，使用 `lumaCrmId`
 > 1. を **[!UICONTROL タイプ]**、クロスデバイスを使用
 
-
 ID 名前空間を作成しましょう `Luma CRM Id`:
 
 1. ダウンロード [ID サービス.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) を `Luma Tutorial Assets` フォルダー
 1. コレクションの読み込み先 [!DNL Postman]
-1. この 24 時間以内にリクエストをおこなっていない場合、認証トークンは有効期限が切れている可能性があります。 リクエストを開く **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]**&#x200B;を選択し、 **送信** をクリックして、新しい JWT およびアクセストークンをリクエストします。
+1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、新しいアクセストークンをリクエストします。
 1. リクエストを選択 **[!UICONTROL ID サービス] > [!UICONTROL ID 名前空間] > [!UICONTROL 新しい ID 名前空間の作成].**
 1. 以下を [!DNL Body] リクエストの：
 
@@ -124,18 +123,18 @@ ID 名前空間を作成しましょう `Luma CRM Id`:
 
 ### プライマリID 用の XDM フィールドのラベル付け
 
-リアルタイム顧客プロファイルで使用される各スキーマには、プライマリ ID を指定する必要があります。 また、取り込まれる各レコードには、そのフィールドの値が必要です。
+リアルタイム顧客プロファイルで使用される各スキーマには、プライマリ ID を指定する必要があります。また、取り込まれる各レコードには、そのフィールドの値が必要です。
 
 プライマリ ID を `Luma Loyalty Schema`:
 
-1. を開きます。 `Luma Loyalty Schema`
+1. `Luma Loyalty Schema` を開きます
 1.  `Luma Identity profile field group`
 1. を選択します。 `loyaltyId` フィールド
 1. 次を確認します。 **[!UICONTROL ID]** ボックス
 1. 次を確認します。 **[!UICONTROL プライマリID]** ボックス
 1. を選択します。 `Luma Loyalty Id` 名前空間 **[!UICONTROL ID 名前空間]** ドロップダウン
 1. 選択 **[!UICONTROL 適用]**
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![プライマリID ](assets/identity-loyalty-primary.png)
 
@@ -157,7 +156,7 @@ ID 名前空間を作成しましょう `Luma CRM Id`:
 
 1 つのスキーマに複数の ID フィールドを追加できます。 非プライマリ ID は、多くの場合、セカンダリ ID と呼ばれます。 オフラインでの購入をオンラインでの行動に結び付けるために、crmId をセカンダリ識別子としてアドビの `Luma Loyalty Schema` 後で Web イベントデータに含まれます。 次に、 `Luma Loyalty Schema`:
 
-1. を開きます。 `Luma Loyalty Schema`
+1. `Luma Loyalty Schema` を開きます
 1. 選択 `Luma Identity Profile Field group`
 1. 選択 `crmId` フィールド
 1. 次を確認します。 **[!UICONTROL ID]** ボックス
@@ -170,14 +169,14 @@ ID 名前空間を作成しましょう `Luma CRM Id`:
 
 これで、ID フィールドにラベルが付いたので、Luma の製品カタログとイベントスキーマの間のスキーマ関係の設定を完了できます。
 
-1. を開きます。 `Luma Offline Purchase Events Schema`
+1. `Luma Offline Purchase Events Schema` を開きます
 1. 選択 **[!UICONTROL コマースの詳細]** フィールドグループ
 1. 選択 **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** フィールド
 1. 次を確認します。 **[!UICONTROL 関係]** ボックス
 1. 選択 `Luma Product Catalog Schema` を **[!UICONTROL 参照スキーマ]**
 1. `Luma Product SKU` は、 **[!UICONTROL 参照 ID 名前空間]**
 1. 選択 **[!UICONTROL 適用]**
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![参照フィールド](assets/identity-offlinePurchase-relationship.png)
 

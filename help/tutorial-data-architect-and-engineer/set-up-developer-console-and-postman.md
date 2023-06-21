@@ -8,10 +8,10 @@ feature: API
 kt: 4348
 thumbnail: 4348-set-up-developer-console-and-postman.jpg
 exl-id: 72b541fa-3ea1-4352-b82b-c5b79ff98491
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 1%
+source-wordcount: '1320'
+ht-degree: 2%
 
 ---
 
@@ -38,11 +38,11 @@ Platform は、API を使用して最初に構築されます。 すべての主
 
 ## Adobe Developer Console の設定
 
-Adobe Developerコンソールは、AdobeAPI および SDK へのアクセス、ほぼリアルタイムのイベントのリッスン、Runtime での関数の実行、App Builder アプリのビルドをおこなう開発者の宛先です。 この変数を使用してExperience PlatformAPI にアクセスします。 詳しくは、 [Adobe Developer Console ドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)
+Adobe Developerコンソールは、AdobeAPI および SDK へのアクセス、ほぼリアルタイムのイベントのリッスン、Runtime での関数の実行、App Builder アプリケーションの構築をおこなう開発者の宛先です。 この変数を使用してExperience PlatformAPI にアクセスします。 詳しくは、 [Adobe Developer Console ドキュメント](https://www.adobe.io/apis/experienceplatform/console/docs.html)
 
 1. ローカルマシン上に、という名前のフォルダーを作成します。 `Luma Tutorial Assets` 」を参照してください。
 
-1. を開きます。 [Adobe Developer Console](https://console.adobe.io)
+1. を開きます。 [Adobe Developer Console](https://console.adobe.io){target="_blank"}
 
 1. ログインし、正しい組織に属していることを確認します。
 
@@ -50,7 +50,15 @@ Adobe Developerコンソールは、AdobeAPI および SDK へのアクセス、
 
    ![新規プロジェクトを作成](assets/adobeio-createNewProject.png)
 
-1. 新しく作成されたプロジェクトで、 **[!UICONTROL プロジェクトに追加]** ボタンをクリックし、 **[!UICONTROL API]**
+
+1. 新しく作成されたプロジェクトで、 **[!UICONTROL プロジェクトを編集]** ボタン
+1. を **[!UICONTROL プロジェクトタイトル]** から `Luma Tutorial API Project` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）
+1. 「**[!UICONTROL 保存]**」を選択します
+
+   ![Adobe Developer Console プロジェクト API 設定](assets/adobeio-renameProject.png)
+
+
+1. 選択 **[!UICONTROL API を追加]**
 
    ![Adobe Developer Console プロジェクト API 設定](assets/adobeio-addAPI.png)
 
@@ -60,104 +68,64 @@ Adobe Developerコンソールは、AdobeAPI および SDK へのアクセス、
 
    ![Adobe Developer Console プロジェクト API 設定](assets/adobeio-AEPAPI.png)
 
-1. のような外部システムからの認証用 [!DNL Postman]の場合、公開鍵と秘密鍵のペアが必要です。 新しいキーペアを生成するには、「 」を選択します。 **[!UICONTROL オプション 1]**  をクリックし、 **[!UICONTROL キーペアを生成]** ボタン
+1. 選択 **[!UICONTROL OAuth サーバー間]** 資格情報として「 」を選択し、 **[!UICONTROL 次へ]**.
+   ![OAuth サーバー間を選択](assets/adobeio-choose-auth.png)
 
-   ![Adobe Developer Console プロジェクト API 設定](assets/adobeio-keypair.png)
-
-1. キーの準備が整ったら、ローカルマシンにキーをダウンロードするように求められる場合があります。 にパッケージ化されたキーを保存します。 `config.zip` フォルダーに `Luma Tutorial Assets`. 次の演習では、これらが必要になります。
-
-
-1. キーが生成されると、スクリーンショットに示すように、公開鍵がプロジェクトに自動的に追加されます。 を選択します。 **[!UICONTROL 次へ]** 」ボタンをクリックします。
-
-   ![ キーが生成され、選択された後に表示](assets/adobeio-afterKeyIsGenerated.png)
-
-1. を選択します。 `Luma Tutorial Platform` 製品プロファイルを選択し、 **[!UICONTROL 設定済み API を保存]** ボタン
+1. を選択します。 `AEP-Default-All-Users` 製品プロファイルを選択し、 **[!UICONTROL 設定済み API を保存]**
 
    ![製品プロファイルを選択](assets/adobeio-selectProductProfile.png)
 
 1. これで、開発者コンソールプロジェクトが作成されました。
 
-1. 内 **[!UICONTROL 試す]** 「 」セクションで、「 」を選択します。 **[!UICONTROL Postman用のダウンロード]** 次に、 **[!UICONTROL サービスアカウント (JWT)]** をダウンロードするには [!DNL Postman] 環境 json ファイル。 保存する `service.postman_environment.json` の `Luma Tutorial Assets` フォルダー。
+1. 内 **[!UICONTROL 試す]** 「 」セクションで、「 」を選択します。 **[!UICONTROL Postman用のダウンロード]** 次に、 **[!UICONTROL OAuth サーバー間]** をダウンロードするには [!DNL Postman] 環境 json ファイル。 保存する `oauth_server_to_server.postman_environment.json` の `Luma Tutorial Assets` フォルダー。
 
 
    ![Adobe Developer Console プロジェクト API 設定](assets/adobeio-io-api.png)
 
-   >[!NOTE]
-   >
-   >組織のシステム管理者は、プロジェクトをAdmin Consoleの製品プロファイルで「API 資格情報」として表示できます
-   >
-   >![Adobe Developer Console プロジェクト API 設定](assets/adobeio-io-integrationInAdminConsole.png)
+## システム管理者に API 資格情報を役割に追加してもらう
 
-プロジェクトに番号が割り当てられていることに気付いたかもしれません（例：「Project 12」）。
+API 資格情報を使用してExperience Platformとやり取りするには、システム管理者に API 資格情報を前のレッスンで作成した役割に割り当ててもらう必要があります。  システム管理者でない場合は、次のように送信します。
 
-1. パンくずリストでプロジェクト番号を選択
-1. を選択します。 **[!UICONTROL プロジェクトを編集]** ボタン
-1. を **[!UICONTROL プロジェクトタイトル]** から `Luma Tutorial API Project` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）
-1. を選択します。 **[!UICONTROL 保存]** ボタン
+1. この [!UICONTROL 名前] の API 資格情報 (`Credential in Luma Tutorial API Project`)
+1. この [!UICONTROL テクニカルアカウントの電子メール] 資格情報（システム管理者が資格情報を見つけるのに役立ちます）
 
-   ![Adobe Developer Console プロジェクト API 設定](assets/adobeio-renameProject.png)
+   ![[!UICONTROL 名前] および [!UICONTROL テクニカルアカウントの電子メール] の資格情報](assets/postman-credentialDetails.png)
 
+システム管理者の手順は次のとおりです。
+
+1. ログイン [Adobe Experience Platform](https://platform.adobe.com)
+1. 選択 **[!UICONTROL 権限]** 左側のナビゲーションで、 [!UICONTROL 役割] screen
+1. を開きます。 `Luma Tutorial Platform` 役割
+   ![ロールを開く](assets/postman-openRole.png)
+1. を選択します。 **[!UICONTROL API 資格情報]** タブ
+1. 選択 **[!UICONTROL API 資格情報を追加]**
+   ![資格情報を追加](assets/postman-addCredential.png)
+1. 次を検索： `Credential in Luma Tutorial API Project` 秘密鍵証明書、フィルタリング [!UICONTROL テクニカルアカウントの電子メール] リストが長い場合は、チュートリアル参加者が提供します。
+1. 秘密鍵証明書を選択
+1. 「**[!UICONTROL 保存]**」を選択します
+
+
+   ![資格情報を追加](assets/postman-findCredential.png)
 
 ## Postmanの設定
 
 >[!CAUTION]
 >
->Postmanインターフェイスは定期的に更新されます。 このチュートリアルのスクリーンショットは、Postman v9.0.5 for Macで撮影したものですが、インターフェイスオプションが変更された可能性があります。
+>Postmanインターフェイスは定期的に更新されます。 このチュートリアルのスクリーンショットは、Postman v10.15.1 for Macで撮影したものですが、インターフェイスオプションが変更された可能性があります。
 
 
 1. ダウンロードとインストール [[!DNL Postman]](https://www.postman.com/downloads/)
-1. 開く [!DNL Postman] ダウンロードした json 環境ファイルをインポートします。 `service.postman_environment.json`
+1. 開く [!DNL Postman] ワークスペースの作成
+   ![環境のインポート](assets/postman-createWorkspace.png)
+
+1. ダウンロードした JSON 環境ファイルをインポートします。 `oauth_server_to_server.postman_environment.json`
    ![環境のインポート](assets/postman-importEnvironment.png)
 1. In [!DNL Postman]、ドロップダウンで環境を選択します
 
+1. アイコンを選択して環境変数を表示します。
+
    ![環境の変更](assets/postman-changeEnvironment.png)
-1. を選択します。 **目** アイコンをクリックして環境変数を表示します。
 
-   ![Adobe Developer Console プロジェクト API 設定](assets/postman-PostmanEnvironment.png)
-
-### 環境名の更新
-
-開発者コンソールから書き出された環境の名前はランダムに生成されるので、説明的な名前を付けてください。そのため、実際の Platform 実装で作業を開始する際に、後で環境を混乱させないようにします。
-
-1. 環境変数画面が開いたまま、「 」を選択します。 **編集** 右上に
-1. を更新します。 **環境名** から `Luma Tutorial`
-1. 終了 **環境の管理** 次の手順でさらに編集するので、編集モードでモーダルを開きます。
-
-   ![Postman環境名の更新](assets/postman-updateEnvName.png)
-
-### 秘密鍵を追加
-
-次に、 PRIVATE_KEY 値をPostman環境に追加します
-
-1. ダウンロードした `config.zip` ファイルを作成します。 この zip には次の 2 つのファイルが含まれます。
-   * `private.key`
-   * `certificate_pub.crt`
-1. を開きます。 `private.key` ファイルを編集し、コンテンツをコピーします。
-1. Postmanで、 **環境の管理** > **編集** 最後の演習から開いたままのモーダルをコピーし、 **PRIVATE_KEY** 内 **初期値** および **現在の値** 列。
-1. 選択 **保存**
-
-   ![秘密鍵をPostmanに貼り付け](assets/postman-privateKey.png)
-
-### JWT とアクセストークンの追加
-
-Adobeは、 [!DNL Postman] コレクションを参照してください。Experience Platformの API を調べるのに役立ちます。 これらのコレクションは、 [Adobe Experience Platform Postmanのサンプル GitHub リポジトリ](https://github.com/adobe/experience-platform-postman-samples). このチュートリアル全体でこのを何度も使用するので、後で独自の会社にExperience Platformを実装する際には、このリポジトリをブックマークする必要があります。
-
-最初のコレクションはAdobeIdentity Managementサービス (IMS)API と連携します。 これは、Postman内から JWT_TOKEN と ACCESS_TOKEN を設定する便利な方法です *実稼動以外の使用例向け* 例えば、サンドボックスでこのチュートリアルを完了する場合などです。 または、Adobe Developerコンソール内で JWT トークンを生成できます。 ただし、このコレクションは定期的に期限切れになるので、このチュートリアルを完了する際に、Adobe Developerコンソールに再度アクセスしなくても、コレクションを使用して更新できます。
-
->[!WARNING]
->
->詳しくは、 [AdobeIdentity Management Service API の README](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)の場合、指定された生成方法は非実稼動での使用に適しています。 ローカル署名は、サードパーティのホストから JavaScript ライブラリを読み込み、リモート署名は秘密鍵をAdobeが所有し、操作する Web サービスに送信します。 Adobeはこの秘密鍵を保存しませんが、実稼働鍵は誰とも共有しないでください。
-
-トークンを生成するには：
-
-1. をダウンロードします。 [開発者コンソールのアクセストークン生成コレクション](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Identity%20Management%20Service.postman_collection.json) を `Luma Tutorial Assets` フォルダー
-1. コレクションの読み込み先 [!DNL Postman]
-1. リクエストを選択 **IMS:JWT 生成+ユーザートークンを介した認証** を選択し、 **送信**
-
-   ![トークンのリクエスト](assets/postman-requestToken.png)
-1. この **JWT_TOKEN** および **ACCESS_TOKEN** の環境変数で自動入力 [!DNL Postman].
-
-   ![Postman](assets/postman-config.png)
 
 ### サンドボックス名とテナント ID の追加
 
@@ -181,12 +149,35 @@ Adobeは、 [!DNL Postman] コレクションを参照してください。Exper
    >
    >`CONTAINER_ID` は、チュートリアルの間に値が複数回変更されるフィールドです。 条件 `global` が使用されている場合、API は Platform アカウント内でAdobeが指定した要素とやり取りします。 条件 `tenant` が使用されている場合、API は独自のカスタム要素とやり取りします。
 
-1. 選択 **保存**
+1. 「**保存**」を選択します
 
    ![環境変数として追加された SANDBOX_NAME、TENANT_ID、CONTAINER_ID の各フィールド](assets/postman-addEnvFields.png)
 
 
-## Platform API 呼び出しの実行
+
+## API 呼び出しの実行
+
+### アクセストークンの取得
+
+Adobeは、 [!DNL Postman] コレクションを参照してください。Experience Platformの API を調べるのに役立ちます。 これらのコレクションは、 [Adobe Experience Platform Postmanのサンプル GitHub リポジトリ](https://github.com/adobe/experience-platform-postman-samples). このチュートリアル全体でこのを何度も使用するので、後で独自の会社にExperience Platformを実装する際には、このリポジトリをブックマークする必要があります。
+
+最初のコレクションはAdobeIdentity Managementサービス (IMS)API と連携します。 これは、Postman内からアクセストークンを取得する便利な方法です。
+
+アクセストークンを生成するには：
+
+1. をダウンロードします。 [Identity Management Service API コレクション](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/ims/Identity%20Management%20Service.postman_collection.json) を `Luma Tutorial Assets` フォルダー
+1. コレクションの読み込み先 [!DNL Postman]
+1. リクエストを選択 **oAuth:アクセストークンをリクエスト** リクエストと選択 **送信**
+1. 以下を受け取る必要があります。 `200 OK` レスポンスにアクセストークンを含むレスポンス
+
+   ![トークンのリクエスト](assets/postman-requestToken.png)
+
+1. アクセストークンは、 **ACCESS_TOKEN** 環境変数 [!DNL Postman] 環境。
+
+   ![Postman](assets/postman-config.png)
+
+
+### Platform API の操作
 
 次に、Platform API 呼び出しを作成して、すべてが正しく設定されていることを確認します。
 
@@ -196,12 +187,12 @@ Adobeは、 [!DNL Postman] コレクションを参照してください。Exper
 
 1. をダウンロードします。 [スキーマレジストリ API コレクション](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) を `Luma Tutorial Assets` フォルダー
 1. インポート先 [!DNL Postman]
-1. 開く **スキーマレジストリ API > クラス > クラスの一覧**
+1. 開く **スキーマレジストリ API/スキーマ/リストスキーマ**
 1. 以下を見る： **パラメーター** および **ヘッダー** タブに、前に入力した環境変数の一部が含まれていることを確認します。
 1. なお、 **ヘッダー/値を承認フィールド** が `application/vnd.adobe.xed-id+json`. スキーマレジストリ API では、次のいずれかが必要です [指定された Accept ヘッダー値](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) 応答で異なる形式を提供する
 1. 選択 **送信** を使用して、最初の Platform API 呼び出しをおこないます。
 
-うまくいけば `200 OK` 次の図に示すように、サンドボックス内で使用可能な標準 XDM クラスのリストを含む応答。
+うまくいけば `200 OK` 次の図に示すように、サンドボックス内で使用可能なAdobe提供の XDM スキーマのリストを含む応答。
 
 ![Postmanでの最初の API 呼び出し](assets/postman-firstAPICall.png)
 

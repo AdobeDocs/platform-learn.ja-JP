@@ -8,9 +8,9 @@ feature: Sandboxes
 kt: 4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '404'
 ht-degree: 4%
 
 ---
@@ -64,27 +64,17 @@ ht-degree: 4%
 
 ## 新しいサンドボックスを製品プロファイルに追加する
 
-サンドボックスがアクティブになったら、そのサンドボックスを使用するには、製品プロファイルにサンドボックスを含める必要があります。 製品プロファイルに追加するには、次の手順を実行します。
+サンドボックスがアクティブになったら、そのサンドボックスを使用するには、自分の役割に含める必要があります。 これを自分の役割に追加するには（システム管理者または製品管理者の権限が必要）:
 
-1. 別のブラウザータブで、 [Admin Console](https://adminconsole.adobe.com)
-1. に移動します。 **[!UICONTROL 製品/Adobe Experience Platform]**
-1. を開きます。 `Luma Tutorial Platform` profile
-
-   ![製品プロファイルを選択](assets/sandbox-selectProfile.png)
-
-1. 次に移動： **[!UICONTROL 権限]** タブ
-
+1. 次に移動： [!UICONTROL 権限] screen
+1. を開きます。 `Luma Tutorial Platform` 役割
+1. _削除_ の `Prod` ロールのサンドボックス
+1. を `Luma Tutorial` サンドボックス
+1. 「**[!UICONTROL 保存]**」を選択します
 1. の [!UICONTROL サンドボックス] 行、選択 **[!UICONTROL 編集]**
 
-   ![編集を選択](assets/sandbox-selectSandboxes.png)
+   ![Luma チュートリアルの追加](assets/sandbox-addLumaTutorial.png)
 
-1. _削除_ の **[!UICONTROL Prod]** 最初にプロファイルに割り当てたサンドボックス
-1. を選択します。 **[!UICONTROL +]** 新しい `Luma Tutorial` 右側の列のサンドボックス
-1. 選択 **[!UICONTROL 保存]** 更新した権限を保存するには、以下を実行します。
-
-   ![サンドボックスを他の列に移動します。](assets/sandbox-addLumaTutorial.png)
-
-1. 「Experience Platform」タブに戻る
 1. ページを再読み込み（または Shift キーを押しながら再読み込み）すると、 `Luma Tutorial` サンドボックスに含めるか、サンドボックスドロップダウンに含める必要があります
 1. 次に切り替え： `Luma Tutorial` サンドボックスにまだ存在しない場合は、
 

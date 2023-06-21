@@ -8,9 +8,9 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1103'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 3%
    > 1. データの再取り込み
 
 
-
    ![プロファイル切り替え](assets/profile-loyalty-enableSchema.png)
 
 簡単でしょ？ 上記の手順を、他のスキーマに対して繰り返します。
@@ -86,7 +85,7 @@ ht-degree: 3%
 まず、 `meta:altId` の `Luma CRM Schema`:
 
 1. オープン [!DNL Postman]
-1. この 24 時間以内にリクエストをおこなっていない場合、認証トークンは有効期限が切れている可能性があります。 リクエストを開く **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
+1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
 1. リクエストを開く **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. を選択します。 **送信** ボタン
 1. 200 件の応答が返されます
@@ -147,7 +146,7 @@ ht-degree: 3%
 まず、 `id` の `Luma CRM Dataset`:
 
 1. オープン [!DNL Postman]
-1. この 24 時間以内にリクエストをおこなっていない場合、認証トークンは有効期限が切れている可能性があります。 リクエストを開く **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
+1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
 1. リクエストを開く **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. を選択します。 **送信** ボタン
 1. 200 件の応答が返されます

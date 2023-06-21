@@ -1,19 +1,20 @@
 ---
-title: Adobe Experience Platform へのサンプルデータのインポート
+title: Adobe Experience Platform へのサンプルデータの読み込み
 description: 一部のサンプルデータを使用してExperience Platformサンドボックス環境を設定する方法について説明します。
 role: Developer
 feature: API
 kt: 7349
 thumbnail: 7349.jpg
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
+source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1831'
 ht-degree: 8%
 
 ---
 
-# Adobe Experience Platform へのサンプルデータのインポート
+# Adobe Experience Platform へのサンプルデータの読み込み
 
 サンプルデータを使用して Experience Platform サンドボックス環境をセットアップする方法を説明します。Postman Collection を使用すると、フィールドグループ、スキーマ、データセットを作成して、Experience Platform にサンプルデータをインポートできます。
 
@@ -21,26 +22,25 @@ ht-degree: 8%
 
 Experience Platformのビジネスユーザーは、多くの場合、Experience Platformが提供するマーケティング機能を調査する前に、フィールドグループの識別、スキーマの作成、データの準備、データセットの取り込みなど、一連の手順を実行する必要があります。 このチュートリアルでは、データを可能な限り迅速に Platform サンドボックスに取り込めるように、いくつかの手順を自動化します。
 
-このチュートリアルでは、Luma という架空の小売ブランドに焦点を当てています。 ロイヤリティ、CRM、製品カタログ、オフライン購入データをリアルタイム顧客プロファイルに組み合わせ、これらのプロファイルをアクティブ化して、マーケティングを次のレベルに引き上げます。 Luma のサンプルデータを生成しました。このチュートリアルの残りの部分で、このデータをExperience Platformサンドボックス環境の 1 つに読み込みます。
+このチュートリアルでは、Luma という架空の小売ブランドに焦点を当てています。 Adobe Experience Platformに投資して、ロイヤリティ、CRM、製品カタログ、オフライン購入データをリアルタイムの顧客プロファイルに組み合わせ、これらのプロファイルをアクティブ化して、マーケティングを次のレベルに引き上げます。 Luma のサンプルデータを生成しました。このチュートリアルの残りの部分で、このデータをExperience Platformサンドボックス環境の 1 つに読み込みます。
 
 >[!NOTE]
 >
->このチュートリアルの最終結果は、 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). 2023 年 4 月に、 [Journey Optimizerの課題](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja).
+>このチュートリアルの最終結果は、 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). 2023 年 4 月に、 [Journey Optimizerの課題](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja). 認証方法を OAuth に切り替えるように 2023 年 6 月に更新されました。
 
 
 ## 前提条件
 
-* Experience PlatformAPI にアクセスでき、認証方法がわかっている。 そうでない場合は、確認してください [チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ja).
+* Experience PlatformAPI にアクセスでき、認証方法がわかっている。 そうでない場合は、確認します [チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ja).
 * Experience Platform開発サンドボックスにアクセスできます。
 * ご使用のExperience Platformテナント ID がわかっています。 認証済みの [API リクエスト](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
-または、Platform アカウントにログインする際に、URL から抽出します。 例えば、次の URL では、テナントは「
-`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
+または、Platform アカウントにログインする際に、URL から抽出します。 例えば、次の URL では、テナントは「`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
-## Postmanの使用 {#postman}
+## 使用 [!DNL Postman] {#postman}
 
 ### 環境変数の設定
 
-手順に従う前に、 [Postman](https://www.postman.com/downloads/) アプリケーション。  それでは、始めましょう。
+手順に従う前に、 [Postman](https://www.postman.com/downloads/) アプリケーション。 それでは、始めましょう。
 
 1. をダウンロードします。 [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) ファイル。このチュートリアルで必要なすべてのファイルを含みます。
 
@@ -49,9 +49,9 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
    >ユーザーデータが [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) ファイルは架空のもので、デモ目的でのみ使用します。
 
 1. ダウンロードフォルダーから `platform-utils-main.zip` ファイルをコンピューター上の目的の場所に移動し、解凍します。
-1. 内 `luma-data` フォルダー、すべての `json` ファイルを編集し、 `_yourOrganizationID` 前にアンダースコアが付いた独自のテナント id が付きます。
-1. 開く `luma-offline-purchases.json` および `luma-web-events.json` テキストエディターで、過去 1 か月にイベントが発生するようにすべてのタイムスタンプを更新する ( 例えば、「 `"timestamp":"2022-11` とを置き換えます )
-1. 解凍されたフォルダーの場所をメモしておきます。後で `FILE_PATH` Postman環境変数：
+1. 内 `luma-data` フォルダーを開き、すべての `json` ファイルを編集し、 `_yourTenantId` 前にアンダースコアが付いた独自のテナント id が付きます。
+1. 開く `luma-offline-purchases.json`, `luma-inventory-events.json`、および `luma-web-events.json` テキストエディターで、過去 1 か月のイベントが発生するようにすべてのタイムスタンプを更新します ( 例えば、 `"timestamp":"2022-11` とを置き換えます )
+1. 解凍されたフォルダーの場所をメモしておきます。後で `FILE_PATH` [!DNL Postman] 環境変数：
 
    >[!NOTE]
    > Macでファイルパスを取得するには、 `platform-utils-main` フォルダーを右クリックし、「 」を選択します。 **情報を取得** オプション。
@@ -63,16 +63,16 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
    > 
    > ![Windows のファイルパス](../assets/data-generator/images/windows-file-path.png)
 
-1. Postmanを開き、 **Workspaces** ドロップダウンメニュー：\
+1. 開く [!DNL Postman] をクリックし、 **Workspaces** ドロップダウンメニュー：\
    ![ワークスペースを作成](../assets/data-generator/images/create-workspace.png)
-1. を入力します。 **名前** およびオプション **概要** （ワークスペースの場合）、 **ワークスペースを作成**. Postmanは、作成時に新しいワークスペースに切り替わります。
+1. を入力します。 **名前** およびオプション **概要** （ワークスペースの場合）、 **ワークスペースを作成**. [!DNL Postman] 作成時に新しいワークスペースに切り替わります。
    ![ワークスペースを保存](../assets/data-generator/images/save-workspace.png)
-1. 次に、このワークスペースでPostmanコレクションを実行するように設定を調整します。 Postmanのヘッダーで、歯車アイコンをクリックし、 **設定** をクリックして、設定モーダルを開きます。 キーボードショートカット (CMD/CTRL + ,) を使用して、モーダルを開くこともできます。
+1. 次に、設定を調整して、 [!DNL Postman] このワークスペースのコレクション。 のヘッダー [!DNL Postman]、歯車アイコンをクリックし、「 **設定** をクリックして、設定モーダルを開きます。 キーボードショートカット (CMD/CTRL + ,) を使用して、モーダルを開くこともできます。
 1. 以下 `General` タブで、リクエストがタイムアウト（ミリ秒）を次に更新する `5000 ms` を有効にします。 `allow reading file outside this directory`
    ![設定](../assets/data-generator/images/settings.png)
 
    >[!NOTE]
-   > 作業ディレクトリ内からファイルが読み込まれると、同じファイルが他のデバイスに格納されている場合、デバイス間でスムーズに実行されます。 ただし、作業ディレクトリの外からファイルを実行する場合は、同じ目的を示す設定をオンにする必要があります。 次に、 `FILE_PATH` がPostmanの作業ディレクトリパスと同じではない場合は、このオプションを有効にする必要があります。
+   > 作業ディレクトリ内からファイルが読み込まれると、同じファイルが他のデバイスに格納されている場合、デバイス間でスムーズに実行されます。 ただし、作業ディレクトリの外からファイルを実行する場合は、同じ目的を示す設定をオンにする必要があります。 次に、 `FILE_PATH` が [!DNL Postman]の作業ディレクトリパスを指定する場合は、このオプションを有効にする必要があります。
 
 1. を閉じる **設定** パネル。
 1. を選択します。 **環境** 次に、 **インポート**:
@@ -85,14 +85,13 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` Adobe Developer Console で
+   * `SCOPES`
    * `TECHNICAL_ACCOUNT_ID`
-   * `META_SCOPE`
    * `IMS`
    * `IMS_ORG`—`Organization ID` Adobe Developer Console で
-   * `PRIVATE_KEY`
    * `SANDBOX_NAME`
-   * `CONTAINER_ID`
    * `TENANT_ID` — 例えば、アンダースコアを先頭に付けるようにしてください。 `_techmarketingdemos`
+   * `CONTAINER_ID`
    * `platform_end_point`
    * `FILE_PATH`— `platform-utils-main.zip` ファイル。 フォルダー名が含まれていることを確認します（例： ）。 `/Users/dwright/Desktop/platform-utils-main`
 
@@ -123,11 +122,11 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 
 次に、認証をおこない、ユーザートークンを生成する必要があります。 このチュートリアルで使用するトークン生成方法は、実稼動以外での使用にのみ適していることに注意してください。 ローカル署名は、サードパーティのホストから JavaScript ライブラリを読み込み、リモート署名は秘密鍵をAdobeが所有し、操作する Web サービスに送信します。 Adobeはこの秘密鍵を保存しませんが、実稼働鍵は誰とも共有しないでください。
 
-1. を開きます。 `Authentication` コレクション、 `IMS: JWT Generate + Auth via User Token` POSTリクエストを表示し、 `SEND` をクリックして、アクセストークンを認証および取得します。
+1. を開きます。 `0-Authentication` コレクション、 `OAuth: Request Access Token` をクリックし、 `SEND` をクリックして、アクセストークンを認証および取得します。
 
    ![コレクションの読み込み](../assets/data-generator/images/authentication.png)
 
-1. 環境変数を確認し、 `JWT_TOKEN` および `ACCESS_TOKEN` が設定されました。
+1. 環境変数を確認し、 `ACCESS_TOKEN` が設定されました。
 
 ### データのインポート
 
@@ -167,7 +166,7 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 
 ## 検証
 
-サンプルデータは、コレクションが実行される際に、複数のシステムのデータを組み合わせたリアルタイム顧客プロファイルを構築するように設計されています。 この好例は、ロイヤルティ、CRM、オフライン購入データセットの最初のレコードです。 そのプロファイルを検索して、データが取り込まれたことを確認します。 内 [Adobe Experience Platformインターフェイス](https://platform.adobe.com/):
+サンプルデータは、コレクションが実行される際に、複数のシステムのデータを組み合わせたリアルタイム顧客プロファイルを構築するように設計されています。 この好例は、ロイヤルティ、CRM、オフライン購入データセットの最初のレコードです。 そのプロファイルを検索して、データが取り込まれたことを確認します。 内 [Adobe Experience Platformインターフェイス](https://experience.adobe.com/platform/):
 
 1. に移動します。 **[!UICONTROL プロファイル]** > **[!UICONTROL 参照]**
 1. 選択 `Luma Loyalty Id` を **[!UICONTROL ID 名前空間]**
