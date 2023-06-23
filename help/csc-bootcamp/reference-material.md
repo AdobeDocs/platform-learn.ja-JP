@@ -1,13 +1,14 @@
 ---
 title: CSC Bootcamp — 参考資料
 description: このブートキャンプで扱うトピックをより深く理解するのに役立つ興味深い出発点。
-kt: 5342
+jira: KT-5342
 doc-type: tutorial
 activity: develop
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8dda3ba5-ad68-41b7-b247-aedb217256a4
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -38,7 +39,7 @@ Adobike も、顧客がオンラインで簡単に自転車を注文できるよ
 
 ### Adobe Experience Manager
 
-- [Creative Cloud・サービスを使用したコンテンツ自動化の概要](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
+- [Creative Cloud サービスでのコンテンツ自動処理の概要](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
 - [AEM Commerce as a Cloud Service を使い始める](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
 - [Adobe Experience Manager as a Headless CMS の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
 

@@ -5,10 +5,10 @@ breadcrumb-title: リアルタイム顧客プロファイルの有効化
 description: このレッスンでは、リアルタイム顧客プロファイルのスキーマとデータセットを有効にします。
 role: Data Architect
 feature: Profiles
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 3%

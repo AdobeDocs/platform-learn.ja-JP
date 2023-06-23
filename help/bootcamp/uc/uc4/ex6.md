@@ -1,11 +1,12 @@
 ---
 title: Bootcamp -Customer Journey Analytics — インサイトからアクションまで
 description: Bootcamp -Customer Journey Analytics — インサイトからアクションまで
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: e5c2ad88967d7f6a45d3a5cc09ca4c9bc9a62a08
+exl-id: 7a38a0a4-46e4-41f2-9a75-316dfde7128f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 # 4.6 インサイトから行動へ
 
-## ゴール
+## 目標
 
 - Customer Journey Analyticsで収集されたビューに基づいてオーディエンスを構築する方法を理解する
 - Real-Time CDPとAdobe Journey Optimizerでこのオーディエンスを使用

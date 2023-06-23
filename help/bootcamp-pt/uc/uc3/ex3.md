@@ -1,14 +1,15 @@
 ---
 title: Bootcamp — 物理とデジタルの組み合わせ — Journey Optimizerジャーニーとプッシュの作成 — Brazilnotification
 description: Bootcamp — 物理とデジタルの組み合わせ — Journey Optimizerジャーニーとプッシュの作成 — Brazilnotification
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: a4ef6eaf-6b39-4450-82bf-7db99595a323
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 2%
+source-wordcount: '835'
+ht-degree: 1%
 
 ---
 
@@ -149,7 +150,7 @@ Clique nome do seu evento, que deve ser semelhante ao seguinte: **yourLastNameBe
 | ACTIVITYID | `''` |
 | PLACEMENTID | `''` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Para は、バロアを定義し、clique no icone **編集**.
 

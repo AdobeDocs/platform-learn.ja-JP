@@ -3,10 +3,10 @@ title: Marketo EngageとReal-time Customer Data Platform、B2B Edition を使用
 description: Marketo EngageとReal-time Customer Data Platform(CDP)、B2B エディションを使用してキャンペーンを調整する方法について説明します。
 solution: Real-time Customer Data Platform
 role: User
-kt: 9263
+jira: KT-9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%

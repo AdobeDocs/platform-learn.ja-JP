@@ -1,11 +1,12 @@
 ---
 title: Bootcamp — 物理とデジタルの組み合わせ — ジャーニーのテスト — ブラジル
 description: Bootcamp — 物理とデジタルの組み合わせ — ジャーニーのテスト — ブラジル
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: 04e2877f-8672-4584-8204-4489a7025c63
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%

@@ -1,11 +1,12 @@
 ---
 title: Bootcamp -Customer Journey Analytics- Adobe Experience PlatformデータセットをCustomer Journey Analyticsに接続
 description: Bootcamp -Customer Journey Analytics- Adobe Experience PlatformデータセットをCustomer Journey Analyticsに接続
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
+exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 3%
@@ -67,7 +68,7 @@ CJA と Platform の間でおこなわれた様々な接続を、以下に示し
 
 ## 4.2.3 人物 ID とデータの結合
 
-### 人物 ID
+### ユーザー ID
 
 今の目標は、これらのデータセットを結合することです。 選択したすべてのデータセットに対して、 **人物 ID**. 各データセットには、独自のユーザー ID フィールドがあります。
 
@@ -103,11 +104,11 @@ CJA と Platform の間でおこなわれた様々な接続を、以下に示し
 
 3 つのデータセットを結び付けたら、続行する準備が整いました。
 
-| データセット | 人物 ID |
+| データセット | ユーザー ID |
 | ----------------- |-------------| 
-| デモシステム — Web サイトのイベントデータセット (Global v1.1) | 電子メール |
-| デモシステム — ロイヤルティ用のプロファイルデータセット (Global v1.1) | 電子メール |
-| デモシステム — コールセンターのイベントデータセット（グローバル v1.1） | 電子メール |
+| デモシステム — Web サイトのイベントデータセット (Global v1.1) | メール |
+| デモシステム — ロイヤルティ用のプロファイルデータセット (Global v1.1) | メール |
+| デモシステム — コールセンターのイベントデータセット（グローバル v1.1） | メール |
 
 また、すべてのデータセットで、次のオプションが有効になっていることを確認する必要があります。
 

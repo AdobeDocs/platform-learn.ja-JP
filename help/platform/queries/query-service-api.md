@@ -3,10 +3,10 @@ title: クエリサービス API
 description: Adobe Experience Platform クエリサービス API を使用して、クエリの記述と実行、スケジュールクエリの作成、およびクエリテンプレートの作成をおこなう方法について説明します。
 role: Data Engineer, User
 feature: Queries
-kt: 7682
+jira: KT-7682
 thumbnail: 333700.jpg
 exl-id: dd9a2521-e1e5-44b4-bd10-c460ed895e52
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 86%

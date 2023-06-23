@@ -5,10 +5,10 @@ breadcrumb-title: ID のマッピング
 description: このレッスンでは、ID 名前空間を作成し、スキーマに ID フィールドを追加します。
 role: Data Architect
 feature: Profiles
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 8%

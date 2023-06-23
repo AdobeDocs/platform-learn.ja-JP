@@ -3,10 +3,10 @@ title: Adobe Experience Platformでのデータセットの作成とデータの
 description: このビデオでは、Adobe Experience Platformインターフェイスでデータセットを作成し、データを取り込む方法を示します。
 role: Data Engineer, Data Architect
 feature: Data Ingestion
-kt: 2700
+jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 19%

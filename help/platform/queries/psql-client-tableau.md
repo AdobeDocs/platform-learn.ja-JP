@@ -2,10 +2,10 @@
 title: Tableau のクエリーサービスへの接続
 description: PostgreSQL プロトコルをサポートする様々なデスクトップクライアントアプリケーションからクエリサービスに接続する方法、および PostgreSQL ツールとドライバを使用してクエリを接続し、書き込む方法について説明します。
 feature: Queries
-kt: 7688
+jira: KT-7688
 thumbnail: 333702.jpg
 exl-id: c81e669e-af61-4b6b-8eb6-a516731b6529
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 18%

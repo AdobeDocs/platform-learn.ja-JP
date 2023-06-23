@@ -2,9 +2,9 @@
 user-guide-title: Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル
 breadcrumb-title: Web SDK チュートリアル
 solution: Data Collection
-kt: 6953
+jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 38%
@@ -36,7 +36,7 @@ ht-degree: 38%
 + 同意管理 {#consent-management}
    + [同意の設定](setup-consent.md)
 
-+ イベントの転送 {#event-forwarding}
++ イベント転送 {#event-forwarding}
    + [イベント転送の設定](setup-event-forwarding.md)
 
 + [まとめ](conclusion.md)

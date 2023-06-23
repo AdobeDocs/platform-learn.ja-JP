@@ -5,13 +5,13 @@ breadcrumb-title: データガバナンスフレームワークの適用
 description: このレッスンでは、サンドボックスに取り込んだデータにデータガバナンスフレームワークを適用します。
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -57,7 +57,7 @@ Luma は、ロイヤルティデータをサードパーティと共有しない
 次に、使用を制限するデータにラベルを付けます。
 
 1. Platform ユーザーインターフェイスで、「 **[!UICONTROL データセット]** 左のナビゲーション
-1. を開きます。 `Luma Loyalty Dataset`
+1. `Luma Loyalty Dataset` を開きます
 1. 次に移動： **[!UICONTROL データガバナンス]** タブ
 1. ラベルを個々のフィールドに適用するか、データセット全体に適用できます。 データセット全体にラベルを適用します。 鉛筆アイコンをクリックします。 このアイコンが表示されない場合は、ブラウザーを広げるか、中央のパネルを右にスクロールしてみてください。
    ![データガバナンス](assets/governance-dataset.png)

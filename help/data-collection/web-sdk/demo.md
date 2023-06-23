@@ -3,13 +3,13 @@ title: Adobe Experience Platform Web SDK および Edge ネットワークのデ
 description: アドビへの 1 回の呼び出しで Experience Platform、Analytics、Audience Manager および Target にデータを送信する、Adobe Experience Platform Web SDK および Edge Network の動作をご覧ください。
 landing-page-description: アドビへの 1 回の呼び出しで Experience Platform、Analytics、Audience Manager および Target にデータを送信する、Web SDK および Edge Network の動作のデモをご覧ください。
 short-description: アドビへの 1 回の呼び出しで Experience Platform、Analytics、Audience Manager および Target にデータを送信する、Web SDK および Edge Network の動作のデモをご覧ください。
-kt: 5206
+jira: KT-5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
-source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '171'
+ht-degree: 78%
 
 ---
 

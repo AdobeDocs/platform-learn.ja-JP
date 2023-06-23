@@ -3,10 +3,10 @@ title: データガバナンスの概要
 description: データをデータソースで収集した時点から、Adobe Experience Platform外の宛先に配信する時点まで、データを完全に制御する方法を説明します。
 role: Data Architect
 feature: Data Governance
-kt: 3991
+jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 5%

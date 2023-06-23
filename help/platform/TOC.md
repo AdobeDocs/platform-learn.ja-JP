@@ -4,10 +4,10 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 42%
+source-wordcount: '937'
+ht-degree: 44%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 42%
 + データガバナンス {#data-governance}
    + [概要](/help/platform/governance/understanding-data-governance.md)
    + [エンドツーエンドのデモ](/help/platform/governance/introduction-to-data-governance.md)
-   + [ラベルを使用してデータを分類する](/help/platform/governance/classify-data-using-labels.md)
+   + [ラベルを使用したデータの分類](/help/platform/governance/classify-data-using-labels.md)
    + [データ使用ポリシーの作成](/help/platform/governance/create-data-usage-policies.md)
    + [データ使用ポリシーの作成](/help/platform/governance/enforce-data-usage-policies.md)
    + [同意の実施](/help/platform/governance/enforce-consent.md)
@@ -69,7 +69,7 @@ ht-degree: 42%
    + [ストリーミングインジェストの概要](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [HTTP API を使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=ja)
    + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ja)
-   + [Web SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Web SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=ja){target="_blank"}
    + [Mobile SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=ja){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
    + [概要](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
@@ -203,7 +203,7 @@ ht-degree: 42%
    + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud の統合 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Marketo Engageでキャンペーンを調整](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Marketo Engageでキャンペーンを調整](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + 業界トレンド {#industry}
    + [データ管理の将来と変化する環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [2 つの視点 - ブランドと消費者](/help/platform/industry/brands-vs-consumers.md)

@@ -5,10 +5,10 @@ breadcrumb-title: サンドボックスの作成
 description: このレッスンでは、チュートリアルの残りの部分で使用できる開発環境サンドボックスを作成します。
 role: Data Architect, Data Engineer
 feature: Sandboxes
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%

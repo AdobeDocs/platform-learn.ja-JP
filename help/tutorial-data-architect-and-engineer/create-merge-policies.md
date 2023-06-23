@@ -5,13 +5,13 @@ breadcrumb-title: 結合ポリシーの作成
 description: このレッスンでは、データをプロファイルに結合する方法を決定する結合ポリシーを作成します。
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 4348
+jira: KT-4348
 audience: data architect
 doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -73,8 +73,8 @@ ExperienceEvent クラスには和集合スキーマがないことに注意し�
 1. ドラッグ&amp;ドロップ `Luma Loyalty Dataset` および `Luma CRM Dataset` から **[!UICONTROL データセット]** パネル。
 1. 確認 `Luma Loyalty Dataset` 上にドラッグ&amp;ドロップして上に表示 `Luma CRM Dataset`
 1. を選択します。 **[!UICONTROL 保存]** ボタン
-<!--do i need to explain Private Graph? Is that GA?-->
-![結合ポリシー](assets/mergepolicies-newPolicy.png)
+   <!--do i need to explain Private Graph? Is that GA?-->
+   ![結合ポリシー](assets/mergepolicies-newPolicy.png)
 
 ## 結合ポリシーの検証
 

@@ -5,10 +5,10 @@ breadcrumb-title: データ取得イベントへのサブスクライブ
 description: このレッスンでは、Adobe Developerコンソールとオンライン Webhook 開発ツールを使用して Webhook を設定し、データ取得イベントをサブスクライブします。 これらのイベントを使用して、後続のレッスンでのデータ取得ジョブのステータスを監視します。
 role: Data Engineer
 feature: Data Management
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 6%

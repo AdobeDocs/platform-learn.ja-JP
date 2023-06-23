@@ -1,11 +1,12 @@
 ---
 title: ブートキャンプ — 物理とデジタルのブレンド — ブラジル
 description: ブートキャンプ — 物理とデジタルのブレンド — ブラジル
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 2%

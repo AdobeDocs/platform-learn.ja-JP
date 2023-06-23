@@ -3,10 +3,10 @@ title: クエリサービスで作成されたダッシュボードの値につ�
 description: Adobe Experience Platformを使用すると、ブランドは、行動、CRM、POS データなど、保存されているすべてのデータセットを取り込み、保存、構造化、取り込みできます。 ブランドは、Experience Platformのクエリサービスを使用して、これらのデータセットに対してクエリを実行し、ビジネスに関する特定の質問に回答し、効果的なインサイトの生成を開始できます。 このビデオでは、クエリサービスを使用してビジネスインテリジェンス (BI) ツールでダッシュボードを作成する価値を示します。
 role: Data Engineer,User
 feature: Queries
-kt: 3714
+jira: KT-3714
 thumbnail: 28981.jpg
 exl-id: bf78cbeb-151a-43ef-a90b-6438af7ffbeb
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%

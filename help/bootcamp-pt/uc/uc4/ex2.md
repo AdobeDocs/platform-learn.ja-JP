@@ -1,11 +1,12 @@
 ---
 title: Bootcamp -Customer Journey Analytics-Customer Journey AnalyticsでのAdobe Experience Platformデータセットの接続 — ブラジル
 description: Bootcamp -Customer Journey Analytics-Customer Journey AnalyticsでのAdobe Experience Platformデータセットの接続 — ブラジル
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
+exl-id: 51078fca-f234-4e50-96ba-ee7f5e286869
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -104,11 +105,11 @@ Acesse cada dataset para autizar o ID da pessoa.
 
 Depois de compilar os três datasets, estamos prontos para continuar.
 
-| データセット | 人物 ID |
+| データセット | ユーザー ID |
 | ----------------- |-------------| 
-| デモシステム — Web サイトのイベントデータセット (Global v1.1) | 電子メール |
-| デモシステム — 音声アシスタントのイベントデータセット（グローバル v1.1） | 電子メール |
-| デモシステム — コールセンターのイベントデータセット（グローバル v1.1） | 電子メール |
+| デモシステム — Web サイトのイベントデータセット (Global v1.1) | メール |
+| デモシステム — 音声アシスタントのイベントデータセット（グローバル v1.1） | メール |
+| デモシステム — コールセンターのイベントデータセット（グローバル v1.1） | メール |
 
 Voce também precisa garantir que, para cada dataset, essa opçoes esestejam habilityadas:
 

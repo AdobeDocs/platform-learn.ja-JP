@@ -3,10 +3,10 @@ title: データモデルを XDM に変換する
 description: このビデオでは、データアーキテクトが既存のトランザクションデータモデルを取り出し、それをエクスペリエンスデータモデルに変換する方法を示します。 エンティティ関係図を使用したモデリングアプローチの違いを示します。
 role: Data Architect
 feature: Schemas
-kt: 7933
+jira: KT-7933
 thumbnail: 333483.jpg
 exl-id: 20cff411-99e1-42d5-852d-9fd66cf0e6f9
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 7%

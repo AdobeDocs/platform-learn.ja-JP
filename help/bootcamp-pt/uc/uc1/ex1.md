@@ -1,11 +1,12 @@
 ---
 title: Bootcamp - Real-time Customer Profile - Web サイト上の不明な情報から既知の情報まで — ブラジル
 description: Bootcamp - Real-time Customer Profile - Web サイト上の不明な情報から既知の情報まで — ブラジル
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: 853a69d2-5dac-413d-bb40-ef29604a26ae
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 1%
@@ -34,7 +35,7 @@ Verifique o painel do Visualizador de perfile e no Perfil do cliente em tempo re
 
 ![デモ](./images/pv2.png)
 
-Voce também pode ver todos os Eventos de Experiência coletados com base no comportamento d cliente. A lista está vazia no momento, mas isso mudará em breve.
+Voce também pode ver todos os Eventos de Experiência coletados com base no comportamento do cliente. A lista está vazia no momento, mas isso mudará em breve.
 
 ![デモ](./images/pv3.png)
 

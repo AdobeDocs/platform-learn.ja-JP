@@ -2,13 +2,13 @@
 title: イベント転送の概要
 description: イベント転送によりデータ収集を一元化して web およびモバイルアプリに必要なコードの量を減らし、Adobe Experience Platform Edge Network を介してアドビ以外のソリューションにデータをストリーミングする方法について説明します。
 feature: Event Forwarding
-kt: 6419
+jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '137'
+ht-degree: 62%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 0%
 > * platform launch（クライアント側）が **[!DNL tags]**
 > * platform launchサーバー側が **[!DNL event forwarding]**
 > * エッジ設定が **[!DNL datastreams]**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/331937?quality=12&learn=on)
 

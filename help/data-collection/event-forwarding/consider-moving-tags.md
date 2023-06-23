@@ -3,14 +3,14 @@ title: ベンダータグをイベント転送に移動することを検討し�
 description: サーバー側のデータ配布のためのクライアント側のベンダータグを評価する方法について説明します。
 feature: Event Forwarding, Tags, Integrations
 solution: Data Collection
-kt: 9921
+jira: KT-9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch は、Adobe Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。 その結果、製品ドキュメント全体でいくつかの用語の変更がロールアウトされました。 用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html)を参照してください。
+>Adobe Experience Platform Launch は、Adobe Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。 その結果、製品ドキュメント全体でいくつかの用語が変更されました。用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja)を参照してください。
 
 ブラウザーベンダーは、サードパーティ cookie の処理方法を変更しています。 広告やマーケティングのベンダーやテクノロジーでは、多くの場合、クライアント側タグを使用する必要があります。 これらの課題は、お客様がサーバー側のデータ配信を追加している理由の 2 つに過ぎません。
 
@@ -45,7 +45,7 @@ ht-degree: 5%
 
 ### データ {#data}
 
-既存のクライアント側タグを使用すると、サイトで実行または実行される際に、ユースケースのデータはどうなりますか？ ベンダータグを付けずに、クライアントで必要なデータを取り込むことができるので、イベント転送に送信できますか？ を使用する場合 [タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) または他のタグ管理システムでは、ほとんどの訪問者のインタラクションデータを収集および配信に使用できます。 しかし、ユースケースに必要なデータは、クライアント側のベンダータグを使用せずに、必要なとき、必要なとき、必要なとき、必要な形式で利用できますか？ その他の考慮すべきデータに関する質問を次に示します。
+既存のクライアント側タグを使用すると、サイトで実行または実行される際に、ユースケースのデータはどうなりますか？ ベンダータグを付けずに、クライアントで必要なデータを取り込むことができるので、イベント転送に送信できますか？ を使用する場合 [タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) または他のタグ管理システムでは、ほとんどの訪問者のインタラクションデータを収集および配信に使用できます。 しかし、ユースケースに必要なデータは、クライアント側のベンダータグを使用せずに、必要なとき、必要なとき、必要なとき、必要な形式で利用できますか？ その他の考慮すべきデータに関する質問を次に示します。
 
 - すべてのイベントにベンダーユーザー ID が必要ですか？
 - その場合、クライアント側タグを使用せずに、どのようにして収集または生成できますか。
@@ -71,7 +71,7 @@ ht-degree: 5%
 - 必要なデータを送信するために API エンドポイントは存在しますか。 使用例をサポートするエンドポイントを見つけるには、ベンダーの開発者または API のドキュメントを参照してください。
 - イベントデータのストリーミングを許可していますか、それともバッチデータのみを許可していますか。
 - どの認証方法をサポートしていますか？ トークン、HTTP、OAuth クライアント資格情報のバージョン、その他のバージョンは？ 詳しくは、 [ここ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) イベント転送でサポートされるメソッドの場合。
-- API の更新オフセットは何ですか？ その制限はイベント転送の最小値と互換性がありますか。 詳細 [ここ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
+- API の更新オフセットは何ですか？ その制限はイベント転送の最小値と互換性がありますか。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - 関連するエンドポイントに必要なデータは何ですか？
 - エンドポイントへの呼び出しごとに、ベンダー固有のユーザー識別子が必要か。
 - その識別子が必要な場合、クライアント側のコードなしで、どこで、どのように生成または取り込むことができますか。
@@ -88,7 +88,7 @@ ht-degree: 5%
 
 API を持っているが、API 呼び出しごとに一意の訪問者 ID やユーザー ID が必要な場合はどうなりますか？ サイトでベンダーのクライアント側コード（タグ）を実行していない場合、どうすればその ID にアクセスできますか？
 
-一部のベンダーは、サードパーティ Cookie を使用せずに新しい世界に合わせてシステムを変更しています。 これらの変更には、代替の一意の識別子 ( [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) またはその他 [顧客生成 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). ベンダーが顧客生成 ID を許可している場合、Web または Mobile SDK を使用してクライアントから Platform Edge Network に送信するか、イベント転送の API 呼び出しから取得することができます。 イベント転送ルールでそのベンダーにデータを送信する場合は、必要に応じてその識別子を含めるだけです。
+一部のベンダーは、サードパーティ Cookie を使用せずに新しい世界に合わせてシステムを変更しています。 これらの変更には、代替の一意の識別子 ( [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) またはその他 [顧客生成 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja). ベンダーが顧客生成 ID を許可している場合、Web または Mobile SDK を使用してクライアントから Platform Edge Network に送信するか、イベント転送の API 呼び出しから取得することができます。 イベント転送ルールでそのベンダーにデータを送信する場合は、必要に応じてその識別子を含めるだけです。
 
 ベンダーが独自のクライアント側タグでのみ生成またはアクセスできるデータ（ベンダー固有の一意の ID など）を必要とする場合、そのベンダータグは移動に適した候補とはならない可能性が高くなります。 _適切な API を使用せずにデータ収集をイベント転送に移動するという考えでクライアント側タグのリバースエンジニアリングを試みることはお勧めしません。_
 
@@ -102,6 +102,6 @@ API を持っているが、API 呼び出しごとに一意の訪問者 ID や�
 
 この記事では、ベンダーのクライアント側タグを評価し、イベント転送プロパティでサーバー側に移動する可能性のある一連の手順を説明しました。 関連トピックについて詳しくは、次のリンクを参照してください。
 
-- [タグ管理](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) Adobe Experience Platform
+- [タグ管理](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) Adobe Experience Platform
 - [イベント転送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) （サーバーサイド処理用）
-- [用語の更新](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) データ収集
+- [用語の更新](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja) データ収集

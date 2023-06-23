@@ -1,12 +1,12 @@
 ---
 title: Bootcamp — モバイルアプリをインストールして使用する
 description: Bootcamp — モバイルアプリをインストールして使用する
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%

@@ -2,10 +2,10 @@
 title: データの調査
 description: SQL 関数を使用して、取り込んだデータを検証、データをプレビューし、データの統計的および分析的プロパティを調べる方法について説明します。
 feature: Queries
-kt: 7684
+jira: KT-7684
 thumbnail: 333415.jpg
 exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 84%

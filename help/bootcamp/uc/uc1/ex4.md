@@ -1,12 +1,12 @@
 ---
 title: Bootcamp - Real-time CDP — セグメントの構築とアクション — セグメントをAdobe Targetに送信する
 description: Bootcamp - Real-time CDP — セグメントの構築とアクション — セグメントをAdobe Targetに送信する
-kt: 5342
+jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%

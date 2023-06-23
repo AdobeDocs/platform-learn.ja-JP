@@ -1,11 +1,12 @@
 ---
 title: Bootcamp — リアルタイム顧客プロファイル — 自分のリアルタイム顧客プロファイルを視覚化 — UI — ブラジル
 description: Bootcamp — リアルタイム顧客プロファイル — 自分のリアルタイム顧客プロファイルを視覚化 — UI — ブラジル
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 4eebb080-77fd-4162-aa64-d599f1274c93
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 2%

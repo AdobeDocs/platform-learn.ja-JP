@@ -1,11 +1,12 @@
 ---
 title: Bootcamp -Customer Journey Analytics — データビューの作成 — ブラジル
 description: Customer Journey Analytics — データビューの作成 — ブラジル
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 072179998d19c32589280defdb257a86d8728fea
+exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1655'
 ht-degree: 2%
@@ -116,7 +117,7 @@ Vamos deixar o Nome da Página como Prop. デッサフォルマ、ヴォーク�
 
 | 検索するコンポーネント名 | 新しい名前 | 永続化設定 |
 | ----------------- |-------------| --------------------| 
-| 名前 (web.webPageDetails.name) | ページ名 |  |
+| 名前 (web.webPageDetails.name) | ページ名 |          |
 
 Em seguida, escolha a dimensiono **phoneNumber** solte-a na tela を使用します。 O novo nome deve ser **電話番号**.
 
@@ -144,7 +145,7 @@ caixa de seleção para modificar a configuraçoes de persistência として Ma
 
 | 検索するコンポーネント名 | 新しい名前 | 属性設定 |
 | ----------------- |-------------| --------------------| 
-| web.webPageDetails.pageViews.value | ページビュー数 |  |
+| web.webPageDetails.pageViews.value | ページビュー数 |         |
 
 ![デモ](./images/7-v2.png)
 
@@ -159,26 +160,26 @@ Observação:設定のとおり、 de persistência nas métricas também podem 
 | 検索するコンポーネント名 | 新しい名前 | 永続化設定 |
 | ----------------- |-------------| --------------------| 
 | brandName | ブランド名 | 最新、セッション |
-| 冷感 | 通話感 |  |
-| 呼び出し ID | 呼び出しインタラクションタイプ |  |
+| 冷感 | 通話感 |          |
+| 呼び出し ID | 呼び出しインタラクションタイプ |          |
 | callTopic | トピックを呼び出し | 最新、セッション |
 | ecid | ECID | 最新、担当者（レポートウィンドウ） |
-| 電子メール | 電子メール ID | 最新、担当者（レポートウィンドウ） |
-| 支払タイプ | 支払タイプ |  |
+| メール | 電子メール ID | 最新、担当者（レポートウィンドウ） |
+| 支払タイプ | 支払タイプ |          |
 | 製品追加メソッド | 製品追加メソッド | 最新、セッション |
-| イベントタイプ | イベントタイプ |  |
-| 名前 (productListItems.name) | 製品名 |  |
+| イベントタイプ | イベントタイプ |         |
+| 名前 (productListItems.name) | 製品名 |         |
 | SKU | SKU（セッション） | 最新、セッション |
-| トランザクション ID | トランザクション ID |  |
-| URL (web.webPageDetails.URL) | URL |  |
+| トランザクション ID | トランザクション ID |         |
+| URL (web.webPageDetails.URL) | URL |         |
 | ユーザーエージェント | ユーザーエージェント | 最新、セッション |
 
 ### メトリカ
 
 | 検索するコンポーネント名 | 新しい名前 | 属性設定 |
 | ----------------- |-------------| --------------------| 
-| 数量 | 数量 |  |
-| commerce.order.priceTotal | 売上高 |  |
+| 数量 | 数量 |          |
+| commerce.order.priceTotal | 売上高 |         |
 
 Sua configuração deve ser semelhante ao seguinte:
 
@@ -206,7 +207,7 @@ Vamos começar com a primeira Métrica: **製品表示**.
 
 Agora altere o nome e は、descrição do componente para os seguintes valores:
 
-| コンポーネント名 | コンポーネントの説明 |
+| コンポーネント名 | コンポーネント説明 |
 | ----------------- |-------------| 
 | 製品表示 | 製品表示 |
 

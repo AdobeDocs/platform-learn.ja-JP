@@ -3,10 +3,10 @@ title: Attribution AIの概要
 description: マーケターやアナリストがAttribution AIを使用してマーケティングチャネルやキャンペーンの影響を把握する方法の概要です。
 feature: Attribution AI
 role: User
-kt: 4808
+jira: KT-4808
 thumbnail: 32667.jpg
 exl-id: abb4a09d-7cb6-4cb8-a49d-9a6f4a654a52
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%

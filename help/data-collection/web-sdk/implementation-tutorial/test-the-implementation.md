@@ -4,11 +4,11 @@ description: 実装のテスト
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: e2213c23-d395-4c57-8c6c-0319cd0fb0ac
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -72,10 +72,10 @@ Web ページが設定され、Adobe Experience Platformタグライブラリが
 
 ![データセットの取り込み](../../assets/implementation-strategy/dataset-ingestion.png)
 
-## Adobe Experience Platform Debugger 拡張機能の使用
+## Adobe Experience Platform Debugger拡張機能の使用
 
-ブラウザーとAdobeーサーバーの両方での実装の動作に関する詳細については、 Adobe Experience Platform Debugger ブラウザー拡張機能を参照してください。
+ブラウザーとAdobeーのサーバーの両方での実装の動作について詳しくは、Adobe Experience Platform Debuggerブラウザー拡張機能を参照してください。
 
-[Chrome 用Adobe Experience Platform Debugger 拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+[Chrome 用Adobe Experience Platform Debugger拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-[Firefox 用Adobe Experience Platform Debugger 拡張機能](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
+[Firefox 用Adobe Experience Platform Debugger拡張機能](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)

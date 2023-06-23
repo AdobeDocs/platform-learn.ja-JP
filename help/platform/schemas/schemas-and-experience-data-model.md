@@ -3,10 +3,10 @@ title: スキーマとエクスペリエンスデータモデル (XDM) の概要
 description: カスタマーエクスペリエンスを説明するための標準データモデルである、エクスペリエンスデータモデル（XDM）について説明します。
 role: Data Architect, Data Engineer
 feature: Schemas
-kt: 2696
+jira: KT-2696
 thumbnail: 27105.jpg
 exl-id: f517ada0-c106-45f0-96ea-3b3cc8bd03ba
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 20%

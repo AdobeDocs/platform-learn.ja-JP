@@ -3,9 +3,9 @@ title: クラスをまたいだセグメントの作成とセグメントコン�
 description: クラスをまたいだセグメント化（マルチエンティティセグメント化）を使用すると、XDM プロファイルクラスと、他の XDM クラスを使用して作成されたデータセットの両方に基づいてデータを組み合わせたセグメントを構築できます。 セグメントコンテキスト（セグメントペイロード）を使用すると、セグメント定義に訪問者の買い物かごの放棄コンテンツなどの主要なコンテキストの詳細を指定して、パーソナライズされたメッセージを送信できます。
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 28947.jpg
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 5%

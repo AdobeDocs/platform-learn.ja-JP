@@ -1,11 +1,12 @@
 ---
 title: Bootcamp — 物理とデジタルの組み合わせ — Journey Optimizerイベントを作成 — ブラジル
 description: Bootcamp — 物理とデジタルの組み合わせ — Journey Optimizerイベントを作成 — ブラジル
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 2133b560-09d8-419d-bb99-05d0f3df52cc
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Vocêserá redirectionado para a **ホーム** Journey Optimizer Primeiro, verif
 
 ウマ・ノヴァ・ジャネラ・デ・エヴェント・ヴァジア・イラ・アパレサー。
 
-Em primeiro lugar, dêum nome ao seu evento como, por exemplo: `yourLastNameBeaconEntryEvent` e adicione uma は以下のように、por エグザンプリを表します。 `Beacon Entry Event`.
+Em primeiro lugar, dêum nome ao seu evento como, por exemplo: `yourLastNameBeaconEntryEvent` e adicione uma は、por エグザンプリを表します。 `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 

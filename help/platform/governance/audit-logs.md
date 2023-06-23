@@ -3,9 +3,9 @@ title: 監査ログ
 description: コンプライアンス要件を満たし、 Adobe Experience Platform 実装をトラブルシューティングするうえで、監査ログ機能がいかに役立つかについて説明します。
 role: Admin
 feature: Data Governance
-kt: 9934
+jira: KT-9934
 exl-id: af2c7ec3-82bf-43e9-8b52-f90a39e72926
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 75%

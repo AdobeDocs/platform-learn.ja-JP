@@ -3,10 +3,10 @@ title: 複数エンティティセグメントの作成
 description: このビデオでは、Adobe Experience Platformのセグメントビルダーで複数エンティティのセグメントを作成する方法を説明します。  マルチエンティティのセグメント化（クラスをまたいだセグメント化）を使用すると、複数の XDM クラスに基づくデータを組み合わせたセグメントを構築できます。
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 3%

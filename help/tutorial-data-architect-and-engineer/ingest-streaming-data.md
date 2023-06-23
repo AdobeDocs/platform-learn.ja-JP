@@ -5,10 +5,10 @@ breadcrumb-title: ストリーミングデータの取り込み
 description: このレッスンでは、Web SDK を使用してデータをExperience Platformにストリーミングします。
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 2%
@@ -82,7 +82,6 @@ ht-degree: 2%
 次の手順で [!UICONTROL datastream]:
 
 1. にログインします。 [Experience Platformデータ収集ユーザーインターフェイス](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. 選択 **[!UICONTROL データストリーム]** 左のナビゲーション
@@ -103,7 +102,6 @@ ht-degree: 2%
 1. の場合 **[!UICONTROL イベントデータセット]**&#x200B;を選択します。 `Luma Web Events Dataset`
 1. 他のAdobeアプリケーションを使用する場合は、他のセクションを自由に参照して、これらの他のソリューションの Edge 設定で必要な情報を確認してください。 Web SDK は、データをExperience Platformにストリーミングする目的だけでなく、他のAdobeアプリケーションで使用される以前の JavaScript ライブラリをすべて置き換える目的で開発されました。 Edge 設定は、データの送信先となる各アプリケーションのアカウント詳細を指定するために使用します。
 1. 「**[!UICONTROL 保存]**」を選択します
-
    ![データストリームの設定と保存](assets/websdk-edgeConfig-addEnvironment.png)
 
 エッジ設定が保存されると、開発、ステージング、実稼動用に 3 つの環境が作成されたことを示す画面が表示されます。 その他の開発環境を追加できます。
@@ -124,7 +122,6 @@ ht-degree: 2%
 1. を **[!UICONTROL 名前]**&#x200B;を入力して、 `Luma Platform Tutorial` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）
 1. を **[!UICONTROL ドメイン]**&#x200B;を入力して、 `enablementadobe.com` （後述）
 1. 「**[!UICONTROL 保存]**」を選択します
-
    ![プロパティの詳細](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -248,7 +245,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 
 ## リクエスト内のデータの検証
 
-### Adobe Experience Platform Debugger の追加
+### Adobe Experience Platform Debugger
 
 Experience Platformデバッガーは、Web ページに実装されているAdobeテクノロジーを確認するのに役立つ、Chrome および Firefox ブラウザーで使用できる拡張機能です。 使用するブラウザーのバージョンをダウンロードします。
 
@@ -281,7 +278,6 @@ Experience PlatformDebugger には、既存のタグプロパティを別のタ�
 1. 次に移動： **[!UICONTROL 起動]** 左のナビゲーション
 1. 「設定」タブを選択します。
 1. の右側に、 **[!UICONTROL ページ埋め込みコード]**、 **[!UICONTROL アクション]** ドロップダウンと選択 **[!UICONTROL 置換]**
-
    ![アクション/置換を選択します。](assets/websdk-debugger-replaceLibrary.png)
 1. 認証されているので、デバッガーは使用可能な Launch のプロパティと環境を取り込みます。 を選択します。 `Luma Platform Tutorial` プロパティ
 1. を選択します。 `Development` 環境
@@ -364,7 +360,6 @@ Platform でデータがランディングされていることを検証する�
 1. を選択します。 `web.webPageDetails.name` フィールド
 1. を **[!UICONTROL 値]**、アイコンを選択してデータ要素選択モーダルを開き、 `Page Name` データ要素
 1. 選択 **[!UICONTROL ライブラリに保存]**
-
    ![ページ名を XDM オブジェクトデータ要素にマッピングします](assets/websdk-property-dataElement-createXDMObject.png)
 
 同じ手順を使用して、Web サイト上の追加のカスタムデータを XDM フィールドにマッピングします。

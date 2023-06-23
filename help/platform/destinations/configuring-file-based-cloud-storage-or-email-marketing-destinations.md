@@ -4,13 +4,13 @@ description: AdobeのReal-Time CDPでのファイルベースの宛先の設定�
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 6624
+jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 AdobeのReal-time Customer Data Platform(CDP) におけるファイルベースの宛先の設定に関するチュートリアルで、ヒントを紹介します。 これは次に当てはまります。 [!UICONTROL クラウドストレージ] 宛先（例： S3 や SFTP）および [!UICONTROL 電子メールマーケティング] 宛先。 製品ドキュメントの詳細については、以下を参照してください。
 
-* [プロファイルの一括書き出し先に対するオーディエンスデータのアクティブ化](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) Experience PlatformUI を使用してバッチまたは電子メールマーケティングの宛先に対してデータをアクティブ化する方法について
+* [プロファイルの一括書き出し先に対するオーディエンスデータのアクティブ化](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=ja) Experience PlatformUI を使用してバッチまたは電子メールマーケティングの宛先に対してデータをアクティブ化する方法について
 * [フローサービス API を使用してバッチ宛先に接続し、データをアクティブ化する](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) フローサービス API を使用してバッチまたは電子メールマーケティングの宛先に対してデータをアクティブ化する方法については、
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?quality=12&learn=on)

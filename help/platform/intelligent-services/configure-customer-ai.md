@@ -4,10 +4,10 @@ description: 顧客 AI のインスタンスを作成して、顧客の行動を
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
 role: User
-kt: 4172
+jira: KT-4172
 thumbnail: 32665.jpg
 exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 42%

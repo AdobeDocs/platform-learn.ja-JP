@@ -2,9 +2,9 @@
 title: タグライブラリ（旧称 Launch ライブラリ）を構築して公開する
 description: タグプロパティでライブラリを作成し、開発環境、ステージング環境、実稼動環境を通じて変更をプッシュする方法について説明します。
 feature: Tags
-kt: 3531
+jira: KT-3531
 exl-id: 877b92e1-9b93-4abe-99e4-f80a3e353681
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%

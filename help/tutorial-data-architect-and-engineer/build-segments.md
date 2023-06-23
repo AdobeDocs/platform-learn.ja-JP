@@ -5,13 +5,13 @@ breadcrumb-title: セグメントの作成
 description: このレッスンでは、前のレッスンで取り込んだプロファイルデータに基づいて、一部のセグメントを作成します。
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 1. 選択 `Tier` 次と等しい `Gold` または `Platinum`
 1. 選択 **[!UICONTROL 見積もりを更新]** セグメントに適合するプロファイル数を確認する
 1. を **[!UICONTROL 名前]**&#x200B;を入力して、 `Luma customers with level Gold or Above`
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
    ![セグメント](assets/segment-goldOrAbove.png)
 
 <!--## Build a sequential segment-->
@@ -67,7 +67,6 @@ ht-degree: 1%
 1. 次をドラッグ： **[!UICONTROL 購入]** イベントタイプをキャンバスに _二つの別々の時間_
 1. 2 つの間の時計アイコンを選択します。 **[!UICONTROL 購入]** イベントを追加し、「30 日以内」を選択します。
 1. この時点でのセグメント定義が次の内容であることを確認します。 **&quot;少なくとも 1 回の購入イベントを持ち、30 日以内に 1 回以上の購入イベントを持つオーディエンスを含める&quot;**
-
    ![30 日以内に 2 回の購入](assets/segment-twoPurchases.png)
 1. 次に、イベントフィルターをに変更します。 `sku`
 1. 「 SKU 」フィールドを 2 番目の購入イベントにドラッグします
