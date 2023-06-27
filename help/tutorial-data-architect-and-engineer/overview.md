@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Platform は、API を使用して最初に構築されます。 インターフ
 ### サードパーティのテクノロジー
 
 このチュートリアルでは複数のテクノロジーを使用しますが、テクノロジーエコシステムのほぼ完全なAdobeを維持します。 独自の Platform 実装では、Platform を特定のサードパーティテクノロジーと統合する可能性が高くなります。 このチュートリアルをすべてのお客様に対して適切に保つために、より一般的な実装を使用します。
+
+## チュートリアルの更新
+
+* 2023 年 6 月：新しい権限ワークフローを追加し、OAuth Server-to-Server API 資格情報を使用するように更新しました。
+
 
 では、最初のレッスンに進みましょう —[権限の設定](configure-permissions.md).
