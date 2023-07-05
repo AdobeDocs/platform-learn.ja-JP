@@ -4,9 +4,9 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '943'
 ht-degree: 44%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 44%
 + 管理 {#admin}
    + [アラートを使用](/help/platform/admin/use-alerts.md)
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
-   + [属性ベースのアクセス制御の設定](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [製品プロファイルの管理](/help/platform/admin/managing-product-profiles.md)
 + [監査ログ](/help/platform/governance/audit-logs.md)
@@ -130,6 +130,7 @@ ht-degree: 44%
    + [アカウントプロファイルの表示](/help/platform/profiles/view-account-profiles.md)
    + [結合ポリシーの作成](/help/platform/profiles/create-merge-policies.md)
    + [和集合スキーマの概要](/help/platform/profiles/union-schemas-overview.md)
+   + [アップサートを使用した特定の属性の更新](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + プライバシーとセキュリティ {#privacy}
    + [Privacy Serviceの概要](/help/platform/privacy/introduction-to-privacy-services.md)
    + [プライバシーリクエストの ID データ](/help/platform/privacy/identity-data-in-privacy-requests.md)
