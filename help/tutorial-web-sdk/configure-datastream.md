@@ -1,11 +1,11 @@
 ---
 title: データストリームの設定
 description: データストリームを有効にし、設定ソリューションをExperience Cloudする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
-feature: Datastreams
+feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '448'
 ht-degree: 8%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 8%
 
 **データストリームを作成する手順は、次のとおりです。**
 
-1. を開きます。 [データ収集インターフェイス](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. を開きます。 [データ収集インターフェイス](https://launch.adobe.com/){target="_blank"}
 1. が正しいサンドボックスにあることを確認します。
 
    >[!NOTE]
@@ -49,7 +49,7 @@ ht-degree: 8%
 1. 選択 **[!UICONTROL 新規データストリーム]** をクリックします。
 1. 入力 `Luma Web SDK` を **[!UICONTROL 名前]**. この名前は、後でタグプロパティで Web SDK 拡張機能を設定する際に参照されます。
 1. を選択します。 `Luma Web Event Data` を **[!UICONTROL イベントスキーマ]**
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データストリームの作成](assets/datastream-create-datastream.png)
 

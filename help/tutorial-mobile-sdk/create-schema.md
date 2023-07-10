@@ -1,11 +1,12 @@
 ---
 title: XDM スキーマの作成
 description: モバイルアプリイベント用の XDM スキーマを作成する方法を説明します。
+feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
 
@@ -21,9 +22,9 @@ XDM はパブリックに文書化された仕様であり、デジタルエク�
 
 Experience Platform では、スキーマを使用して、一貫性のある再利用可能な方法でデータの構造を記述します。システムをまたいで一貫したデータを定義することで、意味を保有しやすくなり、データから価値を得ることができます。
 
-データを Platform に取り込む前に、スキーマを構成して、データの構造を説明し、各フィールドに含めることができるデータの種類を制約する必要があります。 スキーマは、基本クラスと 0 個以上のスキーマフィールドグループで構成されます。
+データを Platform に取り込む前に、スキーマを構成して、データの構造を記述し、各フィールドに含めることができるデータの種類を制限する必要があります。スキーマは、基本クラスと 0 個以上のスキーマフィールドグループで構成されます。
 
-デザインの原則やベストプラクティスなど、スキーマ構成モデルについて詳しくは、 [スキーマ構成の基本](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) またはコース [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm).
+デザインの原則やベストプラクティスなど、スキーマ構成モデルについて詳しくは、 [スキーマ構成の基本](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) またはコース [XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja).
 
 >[!TIP]
 >
@@ -141,7 +142,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    このフィールドは、アプリとのやり取りのためのコンテナオブジェクトです。 ラクダの箱を渡せ **[!UICONTROL フィールド名]** `appInteraction`, **[!UICONTROL 表示名]** `App Interaction`、および **[!UICONTROL type]** `Object`.
 
-1. 選択 **[!UICONTROL 適用]**.
+1. 「**[!UICONTROL 適用]**」を選択します。
 
    ![新しいアプリアクションイベントの追加](assets/mobile-schema-datatype-app-action.png)
 
@@ -151,7 +152,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    この手順は、Adobe Analyticsの成功イベントと同じです。
 
-1. 選択 **[!UICONTROL 適用]**.
+1. 「**[!UICONTROL 適用]**」を選択します。
 
    ![アクション名フィールドの追加](assets/mobile-schema-datatype-action-name.png)
 
@@ -193,7 +194,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 選択 `App Information` から **[!UICONTROL タイプ]** 」ドロップダウンに表示され、前の演習で作成したデータタイプを示します。
 
-1. 選択 **[!UICONTROL 適用]**.
+1. 「**[!UICONTROL 適用]**」を選択します。
 
    ![適用の選択](assets/mobile-schema-fieldgroup-apply.png)
 

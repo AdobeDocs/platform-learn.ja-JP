@@ -1,8 +1,10 @@
 ---
 title: Adobe Experience Platformへのデータ送信
 description: Adobe Experience Platformにデータを送信する方法を説明します。
+solution: Data Collection,Experience Platform
+feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 11%
@@ -37,7 +39,7 @@ Adobe Experience Platformにデータを送信する方法を説明します。
 
 ## データセットの作成
 
-Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 データセットは、スキーマ（列）とフィールド（行）で構成されるデータコレクション（通常はテーブル）を格納し管理するための構造です。データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja) 」を参照してください。
+Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 データセットは、スキーマ（列）とフィールド（行）で構成されるデータコレクション（通常はテーブル）を格納し管理するための構造です。データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja) 」を参照してください。
 
 1. 右上の 3 x 3Experience Platformから選択して、メニューインターフェイスに移動します。
    ![データセットメニュー](assets/mobile-dataset-menu.png)
@@ -52,7 +54,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 1. スキーマを検索し、「 」を選択します。
 
-1. 「**[!UICONTROL Next]**」を選択します。
+1. 「**[!UICONTROL 次へ]**」を選択します。
    ![データセットの設定](assets/mobile-dataset-configure.png)
 
 1. 次を提供： **[!UICONTROL 名前]**, **[!UICONTROL 説明]**&#x200B;を選択し、 **[!UICONTROL 完了]**.

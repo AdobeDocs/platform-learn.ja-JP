@@ -1,11 +1,12 @@
 ---
 title: タグプロパティの設定
 description: タグプロパティを [!UICONTROL データ収集] インターフェイス。
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -35,7 +36,6 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 1. 新しいモバイルタグプロパティを作成します。
    1. 内 [データ収集インターフェイス](https://experience.adobe.com/data-collection/){target="_blank"}を選択します。 **[!UICONTROL タグ]** 左のナビゲーション
    1. 選択 **[!UICONTROL 新しいプロパティ]**
-
       ![タグプロパティの作成](assets/mobile-tags-new-property.png).
    1. の **[!UICONTROL 名前]**&#x200B;を入力して、 `Mobile SDK Course`.
    1. の **[!UICONTROL Platform]**&#x200B;を選択します。 **[!UICONTROL モバイル]**.

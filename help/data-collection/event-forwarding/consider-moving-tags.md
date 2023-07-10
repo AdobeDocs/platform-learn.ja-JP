@@ -2,12 +2,11 @@
 title: ベンダータグをイベント転送に移動することを検討します
 description: サーバー側のデータ配布のためのクライアント側のベンダータグを評価する方法について説明します。
 feature: Event Forwarding, Tags, Integrations
-solution: Data Collection
-jira: KT-9921
+role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
-role: Admin, Developer, Architect
+jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 6%

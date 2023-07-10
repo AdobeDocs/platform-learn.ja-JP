@@ -4,12 +4,15 @@ description: Adobe Experience Cloud Debugger を使用して、Experience Cloud 
 landing-page-description: Adobe Experience Cloud Debugger を使用して実装をトラブルシューティングする方法を説明します。実装されている Adobe ソリューションと、呼び出しの内容を理解します。
 short-description: Adobe Experience Cloud Debugger を使用して実装をトラブルシューティングする方法を説明します。実装されている Adobe ソリューションと、呼び出しの内容を理解します。
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
+feature: Debugger
+role: Data Engineer
+level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '190'
+ht-degree: 50%
 
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: 顧客データを充実させ、エクスペリエンスを実現
 description: 低品質のデータの影響を軽減し、価値までの時間を短縮し、多くの使用例に同じデータを使用して ROI を増やす方法を説明します。
-role: Data Engineer, Data Architect, Developer
 feature: Queries
+role: Data Engineer, Data Architect, Developer
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%

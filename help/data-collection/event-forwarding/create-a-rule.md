@@ -2,10 +2,12 @@
 title: イベント転送ルールの作成
 description: データ収集でイベント転送ルールを作成する方法を説明します。
 feature: Event Forwarding, Tags
+role: Data Engineer
+level: Intermediate
 jira: KT-6423
 thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 18%

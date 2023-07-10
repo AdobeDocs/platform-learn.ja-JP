@@ -1,12 +1,12 @@
 ---
 title: ID 名前空間の設定
 description: Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
-feature: Identities
+feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 6%
+source-wordcount: '693'
+ht-degree: 11%
 
 ---
 
@@ -43,14 +43,14 @@ Web サイトで、Experience CloudAPI またはExperience CloudID サービス�
 
 ## ID 名前空間の作成
 
-この演習では、Luma のカスタム ID フィールドの ID 名前空間を作成します。 `lumaCrmId`. ID 名前空間は、同じ名前空間内の 2 つの一致する値によって 2 つのデータソースが ID グラフを形成できるので、リアルタイム顧客プロファイルの構築に重要な役割を果たします。
+この演習では、Luma のカスタム ID フィールドの ID 名前空間を作成します。 `lumaCrmId`. ID 名前空間は、同じ名前空間内の 2 つの一致する値により、2 つのデータソースで ID グラフを構成できるので、リアルタイム顧客プロファイルを作成するうえで重要な役割を果たします。
 
 演習を始める前に、Adobe Experience Platformの ID の詳細については、以下の短いビデオをご覧ください。
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
 
 次に、Luma CRM ID 用の名前空間を作成します。
 
-1. を開きます。 [データ収集インターフェイス](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. を開きます。 [データ収集インターフェイス](https://launch.adobe.com/){target="_blank"}
 1. チュートリアルに使用するサンドボックスを選択します
 
    >[!NOTE]
@@ -75,12 +75,12 @@ Web サイトで、Experience CloudAPI またはExperience CloudID サービス�
    | タイプ | クロスデバイス ID |
 
 
-   ![名前空間を作成](assets/identities-create-namespace.png)
+   ![名前空間の作成](assets/identities-create-namespace.png)
 
 
    ID 名前空間が **[!UICONTROL ID]** 画面
 
-   ![名前空間を作成](assets/configure-identities-namespace-lumaCrmId.png)
+   ![名前空間の作成](assets/configure-identities-namespace-lumaCrmId.png)
 
 
 >[!INFO]

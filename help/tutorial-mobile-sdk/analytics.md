@@ -1,8 +1,9 @@
 ---
 title: Analytics マッピング
 description: モバイルアプリでAdobe Analyticsのデータを収集する方法を説明します。
+solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 2%
@@ -104,7 +105,7 @@ s.events = "scAdd:321435"
 
 ## アシュランスで検証
 
-の使用 [アシュランス QA ツール](assurance.md) ExperienceEvent の送信中で、XDM データが正しく、Analytics のマッピングが期待どおりにおこなわれていることを確認できます。 例：
+の使用 [アシュランス QA ツール](assurance.md) ExperienceEvent の送信中で、XDM データが正しく、Analytics のマッピングが期待どおりにおこなわれていることを確認できます。 以下に例を示します。
 
 1. productListAdds イベントを送信します。
 
@@ -173,7 +174,7 @@ Analytics に転送された XDM データは、 [コンテキストデータ](h
 a.x.[xdm path]
 ```
 
-例：
+以下に例を示します。
 
 ```
 //Standard Field

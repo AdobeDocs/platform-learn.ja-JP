@@ -1,11 +1,14 @@
 ---
 title: Adobe Journey Optimizerプッシュメッセージ
 description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モバイルアプリへのプッシュメッセージを作成する方法について説明します。
+solution: Data Collection,Journey Optimizer
+feature-set: Journey Optimizer
+feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '881'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -80,7 +83,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. をオンにします。 **[!UICONTROL プッシュ認証情報]** ボタンをクリックして、資格情報を追加します。
 1. をドラッグ&amp;ドロップします。 `.p8` **Appleプッシュ通知認証キー** ファイル。
 1. キー ID( `p8` 認証キー。 これは、**証明書、識別子およびプロファイル**&#x200B;ページの「キー」タブにあります。
-1. チーム ID を指定します。これは、 **メンバーシップ** タブをクリックします。
+1. チーム ID を指定します。これは、「**メンバーシップ**」タブの下にある文字列値です。
 1. 「**[!UICONTROL 保存]**」を選択します。
    ![アプリのサーフェス設定](assets/mobile-push-app-surface-config.png)
 
@@ -95,6 +98,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 >[!NOTE]
 >「CJM プッシュトラッキングエクスペリエンスイベントデータセット」がオプションとして表示されない場合は、カスタマーケアにお問い合わせください。
+>
 
 ## アプリにAdobe Journey Optimizerを実装
 

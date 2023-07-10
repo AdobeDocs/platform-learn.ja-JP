@@ -2,9 +2,11 @@
 title: 依存関係マネージャーの使用
 description: CocoaPods と Gradle を使用して、Mobile SDK の拡張機能と依存関係を管理する方法について説明します。
 feature: Mobile SDK
-jira: KT-
+role: Developer
+level: Beginner
+jira: KT-2638
 exl-id: 92b8c63a-0ce5-493e-8ebd-2fabfa88d37e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 9%

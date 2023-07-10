@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 role: Developer, Data Engineer
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: 951987c5c360aca005c78a976a6090d088f36455
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3321'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,6 @@ ht-degree: 3%
 > * platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
 > * platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * エッジ設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)**
-
 
 このチュートリアルでは、データ収集の Platform Web SDK 拡張機能を使用して、CMP（同意管理プラットフォーム）から取得した同意データを実装し、アクティブにする方法について説明します。 Adobe標準と IAB TCF 2.0 同意標準の両方を使用して、OneTrust または Sourcepoint を CMP の例として使用します。
 
@@ -42,7 +41,7 @@ Platform の同意標準 v2.0 の場合、Adobe Experience Platformにアクセ�
 このチュートリアルでは、データ収集にアクセスできるユーザーが、Web SDK 拡張機能がインストールされ、開発用に作成および構築された作業用ライブラリを使用して、クライアント側タグプロパティを作成していることを前提としています。 これらのトピックについては、次のドキュメントで詳しく説明します。
 
 * [プロパティの作成または設定](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ja#create-or-configure-a-property)
-* [ライブラリの概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
+* [ライブラリの概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=ja)
 * [パブリッシュの概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja)
 
 また、 [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome 拡張機能を使用して、実装を検査および検証します。
@@ -231,7 +230,7 @@ addEventListener();
 
 ### 手順 3:ライブラリに保存してビルド
 
-を使用している場合、 [作業ライブラリ](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) 前提条件：これらの変更を既に保存し、開発ライブラリを構築しています。
+を使用している場合、 [作業ライブラリ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature) 前提条件：これらの変更を既に保存し、開発ライブラリを構築しています。
 
 ![](./images/save-library.png)
 

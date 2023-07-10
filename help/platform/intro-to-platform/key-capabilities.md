@@ -2,10 +2,11 @@
 title: 主な機能
 description: このビデオでは、Adobe Experience Platformの主な機能について説明します。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+level: Beginner
 jira: KT-4332
 thumbnail: 32502.jpg
 exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 3%

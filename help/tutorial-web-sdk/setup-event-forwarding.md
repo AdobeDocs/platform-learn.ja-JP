@@ -1,9 +1,9 @@
 ---
 title: イベント転送プロパティの設定
 description: イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
-feature: Event Forwarding
+feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1887'
 ht-degree: 6%
@@ -20,7 +20,7 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/documentation/)
-   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 * イベント転送を含むソフトウェアライセンス。 イベント転送は、データ収集の有料機能です。 詳しくは、Adobeアカウントチームにお問い合わせください。
 * イベントの転送がExperience Cloud組織で有効になっています。
 * イベント転送のユーザー権限。 ( 内 [Admin Console](https://adminconsole.adobe.com/)( Adobe Experience Platform Launch製品の下 )[!UICONTROL プラットフォーム] > [!UICONTROL Edge] およびすべて [!UICONTROL プロパティ権限]) をクリックします。 一旦許可されると、次のように表示されます [!UICONTROL イベント転送] データ収集インターフェイスの左側のナビゲーションで、次の操作をおこないます。
-   ![イベント転送のプロパティ](assets/event-forwarding-menu.png)
+  ![イベント転送のプロパティ](assets/event-forwarding-menu.png)
 
 * Edge ネットワークにデータを送信するように設定されたAdobe Experience Platform Web または Mobile SDK。 このチュートリアルの次のレッスンを完了している。
 
@@ -55,13 +55,13 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
       * [XDM スキーマの設定](configure-schemas.md)
       * [ID 名前空間の設定](configure-identities.md)
       * [データストリームの設定](configure-datastream.md)
+
    * タグ設定
 
       * [Web SDK 拡張機能のインストール](install-web-sdk.md)
       * [データ要素の作成](create-data-elements.md)
       * [タグルールの作成](create-tag-rule.md)
       * [Adobe Experience Platform Debugger を使用した検証](validate-with-debugger.md)
-
 
 
 ## イベント転送プロパティの作成
@@ -90,8 +90,7 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 
    ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk.png)
 
-1. 選択 **[!UICONTROL サービスを追加]**
-
+1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームにサービスを追加する](assets/event-forwarding-datastream-addService.png)
 1. 選択 **[!UICONTROL イベント転送]** を **[!UICONTROL サービス]**
 
@@ -183,6 +182,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 
    >[!TIP]
+   >
    独自の Web サイトで作業する際には、Web ブラウザーのネットワークツールを使用した XDM オブジェクトパスを見つけ、次のフィルタリングをおこないます。 `/ee` リクエスト、ビーコンを開く [!UICONTROL **ペイロード**] をクリックし、目的の変数にドリルダウンします。 次に、マウスで右クリックし、「プロパティパスをコピー」を選択します。 ブラウザビューポートの高さの例を次に示します。
    ![イベント転送 XDM パス](assets/event-forwarding-xdm-path.png)
 
@@ -277,6 +277,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 通常のタグプロパティの場合と同様に、ライブラリを作成し、イベント転送開発環境に対するすべての変更をビルドします。
 
 >[!NOTE]
+>
 ステージングおよび実稼動のイベント転送プロパティをデータストリームにリンクしていない場合、ライブラリを構築する唯一のオプションとして開発環境が表示されます。
 
 ![イベント転送ルールを保存](assets/event-forwarding-initial-build.png)
@@ -319,4 +320,5 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 [次へ： ](conclusion.md)
 
 >[!NOTE]
+>
 Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

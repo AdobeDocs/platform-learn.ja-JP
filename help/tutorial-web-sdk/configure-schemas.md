@@ -1,12 +1,12 @@
 ---
 title: Web データ用の XDM スキーマの作成
 description: データ収集インターフェイスで Web データの XDM スキーマを作成する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
-feature: Schemas
+feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 5%
+source-wordcount: '1121'
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ Platform Web SDK は、スキーマを使用して WebExperience Cloudデータ�
 >
 > デモ用に、このレッスンの演習では、スキーマの例を作成して、閲覧されたコンテンツと顧客が購入した製品を [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). これらの手順を使用して、独自の目的で別のスキーマを作成できますが、まずサンプルのスキーマを作成して、スキーマエディターの機能を学ぶことをお勧めします。
 
-XDM スキーマの詳細については、「[XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)」または [XDM システムの概要](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja).
+XDM スキーマの詳細については、「[XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja)」または [XDM システムの概要](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja).
 
 ## 学習内容
 
@@ -40,9 +40,9 @@ XDM スキーマの詳細については、「[XDM を使用した顧客体験�
 
 XDM スキーマは、Experience Platform内のデータを記述する標準的な方法で、スキーマに準拠するすべてのデータを、競合なしに組織全体で再利用したり、複数の組織間で共有したりできます。 詳しくは、 [スキーマ構成の基本](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja).
 
-この演習では、上の Web イベントデータを取り込むための推奨ベースラインフィールドグループを使用して XDM スキーマを作成します。 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}:
+この演習では、上の Web イベントデータを取り込むための推奨ベースラインフィールドグループを使用して XDM スキーマを作成します。 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
-1. を開きます。 [データ収集インターフェイス](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. を開きます。 [データ収集インターフェイス](https://launch.adobe.com/){target="_blank"}
 1. が正しいサンドボックスにあることを確認します。
 
    >[!NOTE]
@@ -79,7 +79,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 1. **[!UICONTROL 構成**] パネルで、 `Untitled schema name`
 1. 内 **[!UICONTROL スキーマのプロパティ]** パネル、 **[!UICONTROL 表示名]** `Luma Web Event Data`
 1. 以外の **[!UICONTROL 表示名]** 有効化するフィールド **[!UICONTROL 保存]** オプション
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
 ![Luma Web イベントデータ](assets/schema-luma-web-event-data.png)
 
@@ -87,7 +87,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
 ![スキーマフィールドグループ](assets/schema-consumer-experience-event.jpg)
 
-このレッスンは出発点にすぎません。 独自の Web イベントスキーマを作成する場合は、ビジネス要件を確認し、文書化する必要があります。 このプロセスは、 [ビジネス要件ドキュメント](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=ja) および [ソリューションデザインリファレンス](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) (Adobe Analytics実装の場合 )。ただし、には _すべてのダウンストリームデータ受信者_ （プラットフォーム、ターゲット、イベントの転送先など）。
+このレッスンは出発点にすぎません。 独自の Web イベントスキーマを作成する場合は、ビジネス要件を確認し、文書化する必要があります。 このプロセスは、 [ビジネス要件ドキュメント](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=ja) および [ソリューションデザインリファレンス](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=ja) (Adobe Analytics実装の場合 )。ただし、には _すべてのダウンストリームデータ受信者_ （プラットフォーム、ターゲット、イベントの転送先など）。
 
 
 ### identityMap オブジェクト

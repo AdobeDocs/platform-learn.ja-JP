@@ -1,11 +1,12 @@
 ---
 title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
+feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 7%
 データストリームは [!UICONTROL データ収集] インターフェイス [!UICONTROL Datastream] 設定ツールを使用します。 データストリームを作成する手順は、次のとおりです。
 
 1. 正しい Platform サンドボックス内にあることを確認します。
-1. 選択 **[!UICONTROL 新規データストリーム]**.
+1. **[!UICONTROL 新しいデータストリーム]**&#x200B;を選択します。
 
    ![datastreams ホーム](assets/mobile-datastream-new.png)
 

@@ -3,7 +3,7 @@ title: タグ付きAdobe Targetを追加
 description: at.js、ページ読み込み要求、パラメーター、注文要求、カスタムのヘッダー/フッターコードを含むタグを使用してAdobe Targetを実装する方法について説明します。 このレッスンは、「 Web サイトでのExperience Cloudの実装」チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -14,7 +14,7 @@ ht-degree: 75%
 
 このレッスンでは、ページ読み込みリクエストとカスタムパラメーターを使用して [Adobe Target 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ja)を実装します。
 
-[Adobe Target](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html) は、顧客のエクスペリエンスのカスタマイズやパーソナライズに必要なすべてのツールを提供する Adobe Experience Cloud ソリューションです。Web サイト、モバイルサイト、アプリケーション、ソーシャルメディアおよびその他のデジタルチャネルでの収益性を最大化することができます。
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja) は、顧客のエクスペリエンスのカスタマイズやパーソナライズに必要なすべてのツールを提供する Adobe Experience Cloud ソリューションです。Web サイト、モバイルサイト、アプリケーション、ソーシャルメディアおよびその他のデジタルチャネルでの収益性を最大化することができます。
 
 >[!NOTE]
 >
@@ -23,7 +23,6 @@ ht-degree: 75%
 > * platform launch（クライアント側）が **[!DNL tags]**
 > * platform launchサーバー側が **[!DNL event forwarding]**
 > * エッジ設定が **[!DNL datastreams]**
-
 
 ## 学習内容
 
@@ -298,7 +297,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ### 顧客 ID パラメーターの追加
 
-Adobe Experience Platform ID サービスを使用して顧客 ID を収集すると、Adobe Experience Cloud の[顧客属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html)機能を使用して CRM データを Target に簡単にインポートできます。また、[デバイスをまたいだ訪問者のステッチ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)も可能で、顧客がデバイス（ノート PC とモバイルデバイスなど）を切り替えても、一貫したユーザーエクスペリエンスを維持できます。
+Adobe Experience Platform ID サービスを使用して顧客 ID を収集すると、Adobe Experience Cloud の[顧客属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ja)機能を使用して CRM データを Target に簡単にインポートできます。また、[デバイスをまたいだ訪問者のステッチ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)も可能で、顧客がデバイス（ノート PC とモバイルデバイスなど）を切り替えても、一貫したユーザーエクスペリエンスを維持できます。
 
 ページ読み込み要求を実行する前に、ID サービスの `Set Customer IDs` アクションに顧客 ID を設定する必要があります。そのためには、サイトに次の機能があることを確認します。
 
@@ -388,7 +387,6 @@ Target Premium のお客様がチュートリアルプロパティにプロパ�
    ![変更を保存](images/target-addATProperty-keepChanges.png)をクリックします。
 
 1. 「**[!UICONTROL ライブラリに保存してビルド]**」をクリックします。
-
    ![「ライブラリに保存してビルド」をクリックする](images/target-addATProperty-save.png)
 
 >[!WARNING]
@@ -491,7 +489,7 @@ Luma サイトで注文確認リクエストを実行する必要があるデー
    1. の下 **[!UICONTROL 詳細オプション]**、 `Order` から `60` だから後で火がつく `Load Target` 行動 ( `All Pages - Library Loaded` 規則 `Order` が `50`)
    1. **[!UICONTROL 変更を保存]**&#x200B;をクリックします。
 1. **[!UICONTROL 条件／追加]**&#x200B;をクリックします。
-   1. **[!UICONTROL 条件の種類／クエリー文字列なしのパス]**&#x200B;を選択します。
+   1. **[!UICONTROL 条件の種類／クエリ文字列なしのパス]**&#x200B;を選択します。
    1. `Path equals` には `thank-you.html` を入力します。
    1. 「正規表現」オプションをオンにして、ロジックを `equals` から `contains` に変更します（`Test` 機能を使用して、URL のテストが合格することを確認できます）。`https://luma.enablementadobe.com/content/luma/us/en/user/checkout/order/thank-you.html`
 
@@ -565,7 +563,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 まれに、ページ読み込みおよび注文確認要求以外の Target 要求を作成する必要があります。 例えば、パーソナライゼーションに使用する重要なデータは、ページの下部にハードコードされたり、非同期 API リクエストから返されたりするので、タグ埋め込みコードの前にページで定義されていない場合があります。 このデータは、追加のリクエストを使用して Target に送信できますが、ページが既に表示されているので、コンテンツ配信にこのリクエストを使用するのは最適ではありません。 このデータは、後で使用するための訪問者プロファイルの強化（プロファイルパラメーターを使用）、またはRecommendationsカタログへの入力に使用できます。
 
-このような状況では、コア拡張機能のカスタムコードアクションで、[getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)／[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) および [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html) メソッドを使用して要求を実行します。この操作は、[注文確認要求](#order-confirmation-request)の演習のときとよく似ていますが、異なる要求名を使用し、特別な注文パラメーターは使用しません。カスタムコードから Target 要求を実行する前に、必ず **[!UICONTROL Load Target]** アクションを使用してください。
+このような状況では、コア拡張機能のカスタムコードアクションで、[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)／[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) および [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) メソッドを使用して要求を実行します。この操作は、[注文確認要求](#order-confirmation-request)の演習のときとよく似ていますが、異なる要求名を使用し、特別な注文パラメーターは使用しません。カスタムコードから Target 要求を実行する前に、必ず **[!UICONTROL Load Target]** アクションを使用してください。
 
 ## ライブラリのヘッダーとライブラリのフッター
 

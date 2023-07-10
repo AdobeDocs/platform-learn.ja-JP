@@ -3,10 +3,12 @@ user-guide-title: Experience Makers Bootcamp — ブラジル
 breadcrumb-title: Experience Makers Bootcamp — ブラジル
 user-guide-description: Adobe Experience Platformの様々な側面に関する実践チュートリアルです。
 audience: all/bootcamp-pt/
+role: User,Developer
+level: Beginner,Intermediate
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 3%

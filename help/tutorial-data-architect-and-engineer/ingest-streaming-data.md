@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 2%
 **データエンジニア** このチュートリアル以外で、ストリーミングデータを取り込む必要があります。 Adobe Experience Platform Web または Mobile SDK を実装する場合、通常、Web またはモバイルの開発者がデータレイヤーの作成とタグプロパティの設定に関与します。
 
 演習を開始する前に、次の 2 つの短いビデオを見て、ストリーミングデータ取り込みと Web SDK の詳細を確認してください。
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -245,7 +246,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 
 ## リクエスト内のデータの検証
 
-### Adobe Experience Platform Debugger
+### Adobe Experience Platform Debugger の追加
 
 Experience Platformデバッガーは、Web ページに実装されているAdobeテクノロジーを確認するのに役立つ、Chrome および Firefox ブラウザーで使用できる拡張機能です。 使用するブラウザーのバージョンをダウンロードします。
 
@@ -454,7 +455,7 @@ Web SDK が CRM ID を送信していることを検証するには：
 
 * [Web SDK を使用した Adobe Experience Cloud の実装](/help/tutorial-web-sdk/overview.md)
 * [ストリーミング取得ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ja)
-* [ストリーミング取得 API リファレンス](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [ストリーミング取得 API リファレンス](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 お疲れ様でした。これは、Web SDK および Launch に関する多くの情報でした。 本格的な実装にはさらに関わりがありますが、これらは、Platform での作業を開始し、結果を確認するのに役立つ基本です。
 

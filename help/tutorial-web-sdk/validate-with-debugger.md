@@ -1,18 +1,18 @@
 ---
 title: Debugger を使用した Web SDK の実装のExperience Platform
-description: Adobe Experience Platform Debugger を使用して Platform Web SDK の実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
-feature: Debugger
+description: Adobe Experience Platform Debuggerを使用して Platform Web SDK の実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
+feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 5%
+source-wordcount: '1073'
+ht-degree: 6%
 
 ---
 
 # Debugger を使用した Web SDK の実装のExperience Platform
 
-Adobe Experience Platform Debugger を使用して Platform Web SDK の実装を検証する方法について説明します。
+Adobe Experience Platform Debuggerを使用して Platform Web SDK の実装を検証する方法について説明します。
 
 Experience Platformデバッガーは、Web ページに実装されているAdobeテクノロジーを確認するのに役立つ、Chrome および Firefox ブラウザーで使用できる拡張機能です。 使用するブラウザーのバージョンをダウンロードします。
 
@@ -36,7 +36,7 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 
 ## 前提条件
 
-データ収集タグと [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} で、このチュートリアルの以前のレッスンで次の内容を完了していること。
+データ収集タグと [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} とは、このチュートリアルの以前のレッスンを完了していること。
 
 * [権限の設定](configure-permissions.md)
 * [XDM スキーマの設定](configure-schemas.md)

@@ -1,9 +1,9 @@
 ---
 title: チュートリアルの権限の設定
 description: Experience PlatformWeb SDK へのアクセスをリクエストする方法と、「 Web SDK を使用したAdobe Experience Cloudの実装」チュートリアルを完了するために必要な権限の設定方法について説明します。
-feature: Access Control
+feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4eaa7ae1cf4c4c1478484eaeb877733a43c6fdf5
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 7%

@@ -1,9 +1,9 @@
 ---
 title: データ収集チュートリアル
 description: データ収集の強力なユーザーになるためのハウツービデオとチュートリアル
-mini-toc-levels: 1
+mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 37%
@@ -19,14 +19,11 @@ ht-degree: 37%
 ## 最新情報
 
 * **[サーバー API の概要（ビデオ）](server-api/overview.md)**
-
-   *認証済みのセキュアなサーバー API を使用してデータを送信します。*
+  *認証済みのセキュアなサーバー API を使用してデータを送信します。*
 * **[モバイルアプリでのAdobe Experience Cloudの実装（チュートリアル）](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)**
-
-   *Mobile SDK を使用してExperience Cloudアプリケーションを実装します。*
+  *Mobile SDK を使用してExperience Cloudアプリケーションを実装します。*
 * **[クライアント側タグの移動（チュートリアル）](event-forwarding/consider-moving-tags.md)**
-
-   *クライアント側タグをイベント転送に移動することを検討します。*
+  *クライアント側タグをイベント転送に移動することを検討します。*
 
 </div>
 
@@ -48,7 +45,7 @@ ht-degree: 37%
       <img alt="Web SDK を使用した Adobe Experience Cloud の実装" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja" target="_blank">
     <strong>Web SDK を使用したExperience Cloudの実装</strong>
     </a>
     </div>
@@ -57,11 +54,11 @@ ht-degree: 37%
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja" target="_blank">
       <img alt="モバイルアプリでの実装" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja" target="_blank">
     <strong>モバイルアプリにExperience Cloudを実装する</strong>
     </a>
     </div>

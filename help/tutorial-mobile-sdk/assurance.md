@@ -1,8 +1,9 @@
 ---
 title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 4%
@@ -90,9 +91,9 @@ iOSでの URL スキームの詳細については、 [Appleドキュメント](
    ![アシュランスピンを入力](assets/mobile-assurance-enter-pin.png)
 1. 接続に成功した場合は、アシュランス Web UI にイベントが表示され、アプリに浮動保証アイコンが表示されます。
    * アシュランスアイコンフローティング。
-      ![保証モーダル](assets/mobile-assurance-modal.png)
+     ![保証モーダル](assets/mobile-assurance-modal.png)
    * Web UI で取得されるExperience Cloudイベント。
-      ![保証イベント](assets/mobile-assurance-events.png)
+     ![保証イベント](assets/mobile-assurance-events.png)
 
 問題が発生した場合は、 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja){target="_blank"}.
 

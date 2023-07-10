@@ -3,9 +3,12 @@ user-guide-title: モバイルアプリでの Experience Cloud の実装：チ�
 breadcrumb-title: モバイルアプリチュートリアル
 user-guide-description: Experience Platform Mobile SDK を使用して、モバイルアプリで Adobe Experience Cloud アプリケーションを実装する方法について説明します。
 solution: Data Collection
+feature: Mobile SDK
+role: Developer
+level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 71%

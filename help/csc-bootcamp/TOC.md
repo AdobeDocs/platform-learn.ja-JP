@@ -3,10 +3,12 @@ user-guide-title: Experience Makers コンテンツサプライチェーン Boot
 breadcrumb-title: Experience Makers コンテンツサプライチェーン Bootcamp
 user-guide-description: Adobe製品がコンテンツサプライチェーンの最適化に役立つ方法を示す実践チュートリアルです。
 audience: all
+role: User,Developer
+level: Beginner,Intermediate
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 3%

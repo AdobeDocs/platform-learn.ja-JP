@@ -2,12 +2,15 @@
 user-guide-title: Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル
 breadcrumb-title: Web SDK チュートリアル
 solution: Data Collection
+feature: Web SDK,Tags
+role: Data Engineer
+level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -31,7 +34,7 @@ ht-degree: 38%
    + [設定Experience Platform](setup-experience-platform.md)
    + [Adobe Analyticsの設定](setup-analytics.md)
    + [設定Audience Manager](setup-audience-manager.md)
-   + [Target の設定](setup-target.md)
+   + [Target のセットアップ](setup-target.md)
 
 + 同意管理 {#consent-management}
    + [同意の設定](setup-consent.md)
