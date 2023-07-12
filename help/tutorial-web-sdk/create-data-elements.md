@@ -3,10 +3,10 @@ title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 9b112881a3b062cbd56502b3644c701c82380735
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 4%
+source-wordcount: '1163'
+ht-degree: 5%
 
 ---
 
@@ -47,7 +47,7 @@ Platform Web SDK に関係なく、Web サイトのデータ収集変数 ( デ�
 
 ## 前提条件
 
-データレイヤーとは何かを把握し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} データレイヤーを使用し、タグ内のデータ要素の参照方法を把握している。 チュートリアルの前の次の手順を完了している必要があります
+データレイヤーとは何かを把握し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーを参照し、タグ内のデータ要素を参照する方法を理解している必要があります。 チュートリアルの前の次の手順を完了している必要があります
 
 * [権限の設定](configure-permissions.md)
 * [XDM スキーマの設定](configure-schemas.md)
@@ -61,7 +61,7 @@ Platform Web SDK に関係なく、Web サイトのデータ収集変数 ( デ�
 
 ## データレイヤーを取り込むためのデータ要素の作成
 
-XDM オブジェクトの作成を開始する前に、次の一連のデータ要素マッピングを作成し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} データレイヤー：
+XDM オブジェクトの作成を開始する前に、次の一連のデータ要素マッピングを作成し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤー：
 
 1. に移動します。 **[!UICONTROL データ要素]** を選択し、 **[!UICONTROL データ要素を追加]** ( または **[!UICONTROL 新規データ要素の作成]** タグプロパティに既存のデータ要素がない場合 )
 
@@ -74,23 +74,23 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 1. 終了 `None` を **[!UICONTROL ストレージ期間]** の設定は、ページごとにこの値が異なるので、
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![ページ名データ要素](assets/data-element-pageName.jpg)
 
 同じ手順に従って、次の 4 つの追加データ要素を作成します。
 
 * **`page.pageInfo.server`**  マッピング先
-   `digitalData.page.pageInfo.server`
+  `digitalData.page.pageInfo.server`
 
 * **`page.pageInfo.hierarchie1`**  マッピング先
-   `digitalData.page.pageInfo.hierarchie1`
+  `digitalData.page.pageInfo.hierarchie1`
 
 * **`user.profile.attributes.username`**  マッピング先
-   `digitalData.user.0.profile.0.attributes.username`
+  `digitalData.user.0.profile.0.attributes.username`
 
 * **`user.profile.attributes.loggedIn`** マッピング先
-   `digitalData.user.0.profile.0.attributes.loggedIn`
+  `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`cart.orderId`** マッピング先 `digitalData.cart.orderId` ( この [Analytics を設定](setup-analytics.md) レッスン )
 
@@ -132,13 +132,9 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 1. を **[!UICONTROL 認証状態]**&#x200B;を選択します。 **[!UICONTROL 認証済み]**
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データ収集インターフェイス](assets/identity-id-namespace.png)
-
->[!WARNING]
->
->プライマリ ID は、Adobe Experience Platformに送信されるすべてのレコードで必要です。 デフォルトでは、Experience CloudID(ECID) が Platform Web SDK のプライマリ ID として使用されます。 このような機能は、絶対に使用したくない `Luma CRM ID` を Web SDK のプライマリ id として設定する必要があります。これは、ユーザーの認証後にのみ存在するので、すべてのレコードで使用できるわけではないからです。
 
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
@@ -195,7 +191,7 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 1. にマッピング `identityMap.loginID` データ要素
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データ収集インターフェイス](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
 
@@ -208,10 +204,10 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
 | `page.pageInfo.hierarchie1` | `xdm.content` |
-| `page.pageInfo.pageName` |  |
-| `page.pageInfo.server` |  |
-| `user.profile.attributes.loggedIn` |  |
-| `user.profile.attributes.username` |  |
+| `page.pageInfo.pageName` | |
+| `page.pageInfo.server` | |
+| `user.profile.attributes.loggedIn` | |
+| `user.profile.attributes.username` | |
 
 これらのデータ要素が配置されたら、タグでルールを作成して、XDM オブジェクトを介して Platform Edge Network へのデータ送信を開始する準備が整いました。
 
