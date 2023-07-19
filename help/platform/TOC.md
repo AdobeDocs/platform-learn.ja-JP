@@ -4,10 +4,10 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
+source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 44%
+source-wordcount: '955'
+ht-degree: 42%
 
 ---
 
@@ -41,6 +41,26 @@ ht-degree: 44%
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [製品プロファイルの管理](/help/platform/admin/managing-product-profiles.md)
++ オーディエンスとセグメント化 {#audiences}
+   + [Audience Portal と構成の概要](audiences/introduction-to-audience-portal-and-composition.md)
+   + [オーディエンスのアップロード](audiences/upload-audiences.md)
+   + [オーディエンスルールビルダーの概要](audiences/audience-rule-builder-overview.md)
+   + [オーディエンスの作成](audiences/create-audiences.md)
+   + [コンテンツベースのオーディエンスの作成](audiences/create-content-based-audiences.md)
+   + [コンバージョンオーディエンスの作成](audiences/create-conversion-audiences.md)
+   + [既存のオーディエンスからのオーディエンスの作成](audiences/create-audiences-from-existing-audiences.md)
+   + [順次オーディエンスの作成](audiences/create-sequential-audiences.md)
+   + [動的オーディエンスの作成](audiences/create-dynamic-audiences.md)
+   + [複数エンティティのオーディエンスの作成](audiences/create-multi-entity-audiences.md)
+   + [B2B データを使用したオーディエンスの作成](audiences/create-audiences-with-b2b-data.md)
+   + [ストリーミングセグメント化のデモ](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [オーディエンスルールの評価](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=ja){target="_blank"}
+   + [データを書き出すデータセットの作成](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [セグメントの一致の接続設定](/help/platform/segments/segment-match-connection-setup.md)
+   + [セグメントの一致のデータガバナンス](/help/platform/segments/segment-match-data-governance.md)
+   + [セグメントの一致の設定フロー](/help/platform/segments/segment-match-configuration-flow.md)
+   + [セグメントの一致によるインサイトの事前共有](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [受信データのセグメント一致](/help/platform/segments/segment-match-receiving-data.md)
 + [監査ログ](/help/platform/governance/audit-logs.md)
 + [データ収集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja){target="_blank"}
 + ダッシュボード {#dashboards}
@@ -173,24 +193,6 @@ ht-degree: 44%
    + [サンドボックス間でのスキーマのコピー](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [スキーマの更新](/help/platform/schemas/update-schemas.md)
    + [アドホックスキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ セグメント {#segments}
-   + [セグメントビルダーの概要](/help/platform/segments/segment-builder-overview.md)
-   + [セグメントの作成](/help/platform/segments/create-segments.md)
-   + [コンテンツベースのセグメントの作成](/help/platform/segments/create-content-based-segments.md)
-   + [コンバージョンセグメントの作成](/help/platform/segments/create-conversion-segments.md)
-   + [既存のセグメントからセグメントを作成](/help/platform/segments/create-segments-from-existing-segments.md)
-   + [順次セグメントの作成](/help/platform/segments/create-sequential-segments.md)
-   + [動的セグメントの作成](/help/platform/segments/create-dynamic-segments.md)
-   + [複数エンティティセグメントの作成](/help/platform/segments/create-multi-entity-segments.md)
-   + [B2B データを使用したセグメントの作成](/help/platform/segments/create-segments-with-b2b-data.md)
-   + [ストリーミングセグメント化のデモ](/help/platform/segments/streaming-segmentation-demo.md)
-   + [セグメントの評価](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=ja){target="_blank"}
-   + [データを書き出すデータセットの作成](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-   + [セグメントの一致の接続設定](/help/platform/segments/segment-match-connection-setup.md)
-   + [セグメントの一致のデータガバナンス](/help/platform/segments/segment-match-data-governance.md)
-   + [セグメントの一致の設定フロー](/help/platform/segments/segment-match-configuration-flow.md)
-   + [セグメントの一致によるインサイトの事前共有](/help/platform/segments/segment-match-pre-share-insights.md)
-   + [受信データのセグメント一致](/help/platform/segments/segment-match-receiving-data.md)
 + ソース {#sources}
    + [ソースの概要](/help/platform/sources/overview.md)
    + [Adobe Analyticsからのデータの取り込み](/help/platform/sources/ingest-data-from-adobe-analytics.md)
