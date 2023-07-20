@@ -4,10 +4,10 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
+source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 42%
+source-wordcount: '978'
+ht-degree: 43%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 42%
    + [ワークフロー](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [B2B エディションの概要](/help/platform/rtcdp/b2b-overview.md)
    + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [はじめに：データアーキテクトとデータエンジニア](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [はじめに：データアーキテクトとデータエンジニア](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja){target="_blank"}
 + [Experience Platform API に対する認証](/help/platform/authentication/platform-api-authentication.md)
 + [ Experience Platform へのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
@@ -205,8 +205,11 @@ ht-degree: 42%
    + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud の統合 {#experience-cloud}
-   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Marketo Engageでキャンペーンを調整](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
+   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + 業界トレンド {#industry}
    + [データ管理の将来と変化する環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [2 つの視点 - ブランドと消費者](/help/platform/industry/brands-vs-consumers.md)

@@ -8,16 +8,20 @@ doc-type: feature video
 thumbnail: 333305.jpg
 jira: KT-7892
 exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 7%
+source-wordcount: '115'
+ht-degree: 6%
 
 ---
 
 # 順次オーディエンスの作成
 
 このビデオでは、オーディエンスのタイムラインにエクスペリエンスイベントを追加し、一定期間内に特定の順序でアクションを実行したオーディエンスを作成する方法を説明します。
+
+>[!NOTE]
+>
+> &quot;[!UICONTROL セグメント]&quot;の名前が変更されました&quot;[!UICONTROL オーディエンス]」と入力します。 選択 **[!UICONTROL オーディエンスを作成]** > **[!UICONTROL ルールを作成]** をクリックして、このビデオで取り上げるルールビルダーを開始します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333305/?quality=12&learn=on)
 

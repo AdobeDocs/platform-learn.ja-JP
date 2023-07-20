@@ -8,16 +8,21 @@ doc-type: feature video
 thumbnail: 333301.jpg
 jira: KT-7887
 exl-id: ed66a76e-909b-4b60-887f-58e3d6ab349f
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 8%
+source-wordcount: '107'
+ht-degree: 6%
 
 ---
 
 # オーディエンスルールビルダーの概要
 
 オーディエンスの構成要素、ユーザーインターフェイス、オーディエンスルールの構築を開始する際のヒントなど、Experience Platformでのオーディエンスルールビルダーの概要を説明します。
+
+>[!NOTE]
+>
+> &quot;[!UICONTROL セグメント]&quot;の名前が変更されました&quot;[!UICONTROL オーディエンス]」と入力します。 選択 **[!UICONTROL オーディエンスを作成]** > **[!UICONTROL ルールを作成]** をクリックして、このビデオで取り上げるルールビルダーを開始します。
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/333301/?quality=12&learn=on)
 
