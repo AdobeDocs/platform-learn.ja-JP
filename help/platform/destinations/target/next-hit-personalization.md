@@ -2,13 +2,13 @@
 title: Real-Time CDPとAdobe Targetを使用した次ヒットのパーソナライゼーションとは
 description: Real-time Customer Data Platform(CDP) とAdobe Targetを使用した次のヒットでのパーソナライズ方法について説明します。
 role: User
-solution: Real-time Customer Data Platform,Target
+solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 7%

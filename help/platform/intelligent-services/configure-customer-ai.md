@@ -1,13 +1,13 @@
 ---
 title: Customer AI の設定
 description: 顧客 AI のインスタンスを作成して、顧客の行動を予測する方法について説明します。
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-4172
 thumbnail: 32665.jpg
 exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 42%
