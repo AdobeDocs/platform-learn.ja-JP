@@ -5,8 +5,11 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Data Views
 exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '1655'
 ht-degree: 2%
@@ -99,7 +102,7 @@ Vamos começar com o primeiro componente: **名前 (web.webPageDetails.name)**. 
 
 Esse componenteé o nome da página, como voce derivar da leitura do campo do schema `(web.webPageDetails.name)`.
 
-エンタント、ユサル **名前** como o nome nãoé a melhor convenção de nomenclatura para um usário corporatevo compreender rapidamente essa dimensiono
+エンタント、ユサル **名前** como o nome nãoé a melhor convenção de nomenclatura para um usuário corporatevo compreender rapidamente essa dimensiono
 
 バモス・ムダル・オ・ノーム・パラ **ページ名**. クリケノコンポーネント e o renomeie na area **コンポーネント設定**.
 

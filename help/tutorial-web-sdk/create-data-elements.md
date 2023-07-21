@@ -3,9 +3,9 @@ title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 9b112881a3b062cbd56502b3644c701c82380735
+source-git-commit: 28333d3079f586996cd6b6933831ffd9f3caacd1
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1179'
 ht-degree: 5%
 
 ---
@@ -131,10 +131,18 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 -->
 
 1. を **[!UICONTROL 認証状態]**&#x200B;を選択します。 **[!UICONTROL 認証済み]**
+1. 選択 **[!UICONTROL プライマリ]**
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データ収集インターフェイス](assets/identity-id-namespace.png)
+
+>[!TIP]
+>
+> Adobeでは、人物を表す ID（例： ）を送信することをお勧めします。 `Luma CRM Id`、 [!UICONTROL プライマリ] id.
+
+
+
 
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
