@@ -3,7 +3,7 @@ title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 0c9c8c679c2c0b3446e802bf52028194b08e6644
+source-git-commit: e1c7ab68d0292edaaa3a93ae8da8cd49d8b4874c
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 5%
@@ -141,7 +141,7 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 >
 > Adobeでは、人物を表す ID（例： ）を送信することをお勧めします。 `Luma CRM Id`、 [!UICONTROL プライマリ] id.
 >
-> ID マップに `Luma CRM Id` ECID で、 `Luma CRM Id` が [!UICONTROL プライマリ] id. ID マップに ECID のみが含まれている場合、ECID は [!UICONTROL プライマリ] id.
+> ID マップに人物識別子（Luma CRM ID など）が含まれる場合、人物識別子は [!UICONTROL プライマリ] id. それ以外の場合、ECID は [!UICONTROL プライマリ] id.
 
 
 
