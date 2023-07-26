@@ -4,10 +4,10 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 43%
+source-wordcount: '975'
+ht-degree: 44%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 43%
 + [Platform チュートリアル](/help/platform/overview.md)
 + Platform の概要 {#intro-to-platform}
    + [Experience Platformを活用した顧客体験](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [バックグラウンド：Experience Platformを活用した顧客体験](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [バックグラウンド：Experience Platformを活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform の概要](/help/platform/intro-to-platform/overview.md)
    + [主な機能](/help/platform/intro-to-platform/key-capabilities.md)
    + [アプリケーションとインテリジェントサービス](/help/platform/intro-to-platform/application-and-intelligent-services.md)
    + [Experience Cloud・アプリケーションとの統合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主なユースケース](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本的なアーキテクチャ](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Platform ユーザーインターフェイスの使用](/help/platform/intro-to-platform/interface-tour.md)
+   + [ユーザーインターフェイス](/help/platform/intro-to-platform/interface-tour.md)
    + [役割とプロジェクトのフェーズ](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Real-Time CDPの概要 {#rtcdp}
    + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -77,13 +77,13 @@ ht-degree: 43%
    + [データセットの削除](/help/platform/data-hygiene/delete-datasets.md)
 + データ取り込み {#data-ingestion}
    + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
-   + [バッチ取得の概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
+   + [バッチ取り込みの概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [データセットの作成と入力](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [XDM への CSV ファイルのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=ja){target="_blank"}
    + [ソースの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Adobe Analyticsからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [データをAudience Managerから取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [クラウドストレージからデータを取り込む](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ja)
+   + [クラウドストレージからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ja)
    + [CRM からのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ja)
    + [データベースからのデータ取得](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [ストリーミングインジェストの概要](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
@@ -176,7 +176,7 @@ ht-degree: 43%
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [データの分析と視覚化](/help/platform/queries/analyze-and-visualize.md)
    + [BI ツールを使用したダッシュボードの作成](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
-   + [顧客データを再充電](/help/platform/queries/recharge-your-customer-data.md)
+   + [顧客データを再充電する](/help/platform/queries/recharge-your-customer-data.md)
    + [クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + スキーマ {#schemas}
    + [概要](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -198,7 +198,7 @@ ht-degree: 43%
    + [Adobe Analyticsからのデータの取り込み](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [データをAudience Managerから取り込む](/help/platform/sources/ingest-data-from-aam.md)
    + [Marketoからのデータの取り込み](/help/platform/sources/ingest-data-from-marketo.md)
-   + [クラウドストレージからデータを取り込む](/help/platform/sources/ingest-data-from-cloud-storage.md)
+   + [クラウドストレージからのデータの取り込み](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [CRM からのデータの取り込み](/help/platform/sources/ingest-data-from-crm.md)
    + [データベースからのデータ取得](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
