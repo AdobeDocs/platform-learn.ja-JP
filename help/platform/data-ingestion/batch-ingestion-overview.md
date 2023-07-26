@@ -1,12 +1,13 @@
 ---
 title: バッチデータ取り込みの概要
 description: このビデオでは、Adobe Experience Platformでのバッチ取り込みの概要と、API を使用してバッチデータを取り込む方法を示します。
-role: Data Engineer, Data Architect
 feature: Data Ingestion
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-7022
 thumbnail: 330995.jpg
 exl-id: 300acb73-2099-438d-97b3-48d2af5afdb0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 14%

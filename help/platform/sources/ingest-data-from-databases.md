@@ -1,12 +1,13 @@
 ---
 title: データベースソースコネクタを使用したデータの取り込み
 description: このビデオでは、データベースソースからAdobe Experience Platformのリアルタイム顧客プロファイルとエクスペリエンスデータレイクに、シームレスで拡張性の高い方法でデータを一括取り込む方法について説明します。
-role: Data Engineer
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

@@ -1,12 +1,13 @@
 ---
 title: オーディエンスの作成
 description: Adobe Experience Platformでオーディエンスを作成する方法を説明します。
-role: User
 feature: Segments
+role: User
+level: Beginner
 jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 16%

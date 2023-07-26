@@ -1,12 +1,13 @@
 ---
 title: クラウドストレージソースコネクタを使用したデータの取り込み
 description: このビデオでは、クラウドストレージサービスからAdobe Experience Platformのリアルタイム顧客プロファイルとデータレイクに、シームレスで拡張性の高い方法で、簡単にデータをバッチ取り込む方法を示します。
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-3827
 thumbnail: 29695.jpg
 exl-id: 406b4545-8977-43fa-85b2-2069bba9f15a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 8%

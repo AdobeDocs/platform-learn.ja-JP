@@ -2,10 +2,11 @@
 title: ファーストパーティデバイス ID を生成
 description: ファーストパーティデバイス ID の生成方法について説明します
 feature: Web SDK
+level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 3%
@@ -32,19 +33,19 @@ Adobe Experience Cloudアプリケーションは、次のような様々なテ�
 1. お客様のAdobe Experience Platform Web SDK 実装は、ID マップに FPID を含む、Platform Edge ネットワークにリクエストを送信します。
 1. Experience PlatformEdge Network は FPID を受け取り、それを使用してExperience CloudID(ECID) を生成します。
 1. Platform Web SDK の応答は、ECID をエンドユーザーのブラウザーに返します。
-1. この `idMigrationEnabled=true`に設定する場合、Platform Web SDK は JavaScript を使用して ECID を `AMCV_` エンドユーザーのブラウザーの cookie。
+1. 次の場合、 `idMigrationEnabled=true`に設定する場合、Platform Web SDK は JavaScript を使用して ECID を `AMCV_` エンドユーザーのブラウザーに表示される cookie。
 1. イベントでは、 `AMCV_` cookie の有効期限が切れると、プロセスが繰り返されます。 同じファーストパーティデバイス ID が使用できる限り、新しい `AMCV_` cookie は、以前と同じ ECID 値で作成されます。
 
 >[!NOTE]
 >
->この `idMigrationEnabled` をに設定する必要はありません。 `true` を使用します。 を使用 `idMigrationEnabled=false` 表示されない `AMCV_` cookie を使用する必要がありますが、は、ネットワーク応答で ECID 値を探す必要があります。
+>The `idMigrationEnabled` をに設定する必要はありません。 `true` を使用します。 を使用 `idMigrationEnabled=false` 表示されない可能性があります `AMCV_` cookie を使用する必要がありますが、は、ネットワーク応答で ECID 値を探す必要があります。
 
 
 このチュートリアルでは、PHP スクリプト言語を使用した具体的な例を使用して、次の方法を示します。
 
 * UUIDv4 の生成
 * Cookie への UUIDv4 値の書き込み
-* ID マップに cookie の値を含めます
+* ID マップに cookie の値を含めます。
 * ECID 生成の検証
 
 ファーストパーティデバイス ID に関するその他のドキュメントは、製品ドキュメントを参照してください。
@@ -74,7 +75,7 @@ PHP には UUID 生成用のネイティブライブラリがないので、こ�
 
 ## Cookie への UUIDv4 値の書き込み
 
-次のコードは、UUID を生成するために、上記の関数にリクエストを送信します。 その後、組織で決定された Cookie フラグを設定します。 Cookie が既に生成されている場合は、有効期限が延長されます。
+次のコードは、UUID を生成するために、上記の関数にリクエストをおこないます。 その後、組織で決定された Cookie フラグを設定します。 Cookie が既に生成されている場合は、有効期限が延長されます。
 
 ```
 <?php

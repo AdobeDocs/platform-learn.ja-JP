@@ -2,12 +2,13 @@
 title: IAB の Transparency and Consent Framework 2.0 とAdobe Real-time Customer Data Platformの統合
 description: このビデオでは、Adobe の Real-time Customer Data Platform が、ブランドがデジタルメディアに関与する際に消費者の同意を得るのにどのように役立つかを示します。IAB の Transparency & Consent Framework 2.0 のサポートを通じて、ブランドは、消費者との関わり方をより柔軟に得ると同時に、消費者がそうすることに同意するための制御を強化します。
 solution: Real-Time Customer Data Platform
-role: Data Architect
 feature: Destinations
+role: Data Architect, Data Engineer, Data Architect
+level: Beginner
 jira: KT-5950
 thumbnail: 38346.jpg
 exl-id: 337b97d0-fd29-4bdb-a79a-9fe428adaae8
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 84%

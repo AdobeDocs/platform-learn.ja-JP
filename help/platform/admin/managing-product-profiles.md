@@ -1,12 +1,13 @@
 ---
 title: 製品プロファイル
 description: 製品プロファイルを作成し、ユーザー、開発者、管理者および権限を割り当てる方法について説明します。
-role: Admin, User
 feature: Access Control
+role: Admin, User
+level: Beginner
 jira: KT-7924
 thumbnail: 336081.jpg
 exl-id: f29d8a20-9af9-4f87-949e-bb9393ccf049
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 80%

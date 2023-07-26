@@ -3,10 +3,11 @@ title: 顧客データを充実させ、エクスペリエンスを実現
 description: 低品質のデータの影響を軽減し、価値までの時間を短縮し、多くの使用例に同じデータを使用して ROI を増やす方法を説明します。
 feature: Queries
 role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -19,7 +20,7 @@ ht-degree: 3%
 
 このビデオでは、次の内容について説明します。
 
-* Adobe Experience Platformの
+* Adobe Experience Platformのデータ準備機能
 * Adobe Real-Time CDP、Adobe Journey Optimizer、Customer Journey Analyticsによる ROI の向上
 
 >[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)

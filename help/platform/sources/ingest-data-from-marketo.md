@@ -3,12 +3,13 @@ title: データをMarketo Engageから取り込む
 description: 標準ワークフローとテンプレートワークフローを使用して、ソースコネクタを使用してMarketo Engageからデータを取り込む方法を説明します。
 solution: Real-Time Customer Data Platform
 feature: Sources
-role: Data Engineer, Data Architect
-jira: KT-9259, 13303
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
+jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 5%

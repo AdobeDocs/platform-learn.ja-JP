@@ -1,12 +1,13 @@
 ---
 title: ID グラフの表示
 description: ID グラフビューア機能を使用して、検証とデバッグのための ID グラフを検索、調査およびフィルタリングする方法について説明します。
-role: Data Engineer
 feature: Identities
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-7046
 thumbnail: 331030.jpg
 exl-id: 1e289250-6b9c-4e43-84a4-7376044b3db6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 15%

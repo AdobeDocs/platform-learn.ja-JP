@@ -1,12 +1,13 @@
 ---
 title: JupyterLab ノートブックにデータを読み込む
 description: このビデオでは、JupyterLab ノートブックを作成し、Adobe Experience Platformからデータを読み込む方法を示します。 また、大量のデータを扱う際にノートブックのパフォーマンスを向上させる方法も示します。
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-6786
 thumbnail: 329612.jpg
 exl-id: e6cf8ca2-1387-4877-8a04-cc257ebc879e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 10%

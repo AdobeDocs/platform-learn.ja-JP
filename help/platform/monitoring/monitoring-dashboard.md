@@ -1,12 +1,13 @@
 ---
 title: データ取得の監視
 description: 監視ダッシュボードを使用して、Adobe Experience Platform に取り込まれたデータを監視および追跡する方法について説明します。この監視ダッシュボードでは、プロファイルおよび ID サービスに対するデータレイクを介したソースデータ処理の状況を、ソース、データフロー、データフロー実行の各レベルでトップダウン表示し、適切なタイミングでアクションにつながるアドバイザリも表示します。
-feature: Data Ingestion
-role: Data Engineer
+feature: Data Ingestion, Monitoring
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-7104
 thumbnail: 330549.jpg
 exl-id: f02477d3-8e7c-4f53-a547-b37d0c63c79a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 73%

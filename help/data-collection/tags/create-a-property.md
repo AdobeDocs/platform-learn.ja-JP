@@ -3,9 +3,10 @@ title: タグの概要とプロパティ（旧称 Launch）の作成
 description: データ収集のタグの概要と、サイトのコードを格納するプロパティを作成する方法を簡単に説明します。
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
 feature: Tags
+level: Beginner
 jira: KT-3524
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 72%
@@ -18,6 +19,6 @@ ht-degree: 72%
 
 >[!NOTE]
 >
-> Launch が **[!DNL tags]**
+> Launch は現在 **[!DNL tags]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?quality=12&learn=on)

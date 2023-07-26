@@ -1,12 +1,13 @@
 ---
 title: スキーマの更新
 description: Adobe Experience Platformの既存のスキーマを更新する際に注意すべき基本的な事項。
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-7938
 thumbnail: 333612.jpg
 exl-id: 28911226-bb08-4713-ae31-6e0ad2f4ac2a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 19%

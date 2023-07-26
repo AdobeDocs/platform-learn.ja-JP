@@ -4,11 +4,11 @@ breadcrumb-title: Web チュートリアル
 user-guide-description: タグを使用して Web サイト上にAdobe Experience Cloudソリューションを実装する方法について説明します。
 solution: Data Collection
 feature: Tags
-role: Data Engineer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 37%

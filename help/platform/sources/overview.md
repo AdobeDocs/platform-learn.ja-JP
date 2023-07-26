@@ -1,12 +1,13 @@
 ---
 title: ソースの概要
 description: アドビ、ファーストパーティおよびサードパーティ製のアプリケーションから、Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを簡単に取り込む方法を説明します。
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 38%

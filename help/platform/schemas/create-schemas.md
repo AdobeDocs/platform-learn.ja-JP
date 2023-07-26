@@ -1,12 +1,13 @@
 ---
 title: スキーマの作成
 description: このビデオでは、XDM Individual Profile クラスと様々なフィールドグループを使用してAdobe Experience Platformでスキーマを作成する方法を説明します。
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-2697
 thumbnail: 27012.jpg
 exl-id: 65c83db2-d81f-4422-81e5-cd9c15cdacbf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 49%

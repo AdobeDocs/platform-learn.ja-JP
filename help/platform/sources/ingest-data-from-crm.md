@@ -1,13 +1,14 @@
 ---
 title: CRM ソースコネクタを使用したデータの取り込み
 description: CRM ソースからAdobe Experience Platformのリアルタイム顧客プロファイルとデータレイクにデータを簡単にバッチ取り込む方法をシームレスに説明します。
-role: Data Engineer, Data Architect
 feature: Sources
-jira: KT-3826, 13272
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
+jira: KT-3826, KT-13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 7%
@@ -26,7 +27,7 @@ CRM ソースからAdobe Experience Platformのリアルタイム顧客プロフ
 
 ## テンプレートワークフロー (Salesforce)
 
-テンプレートワークフローを使用して、Salesforce CRM 用のソースコネクタを設定する方法を説明します。 このワークフローは、Salesforce データをテンプレートに基づいて取り込むために必要なアセットを自動生成します。 事前の時間を節約でき、必要に応じてアセットをカスタマイズできます。 このワークフローは、すべての CRM ソースコネクタでサポートされているわけではありません。
+テンプレートワークフローを使用して、Salesforce CRM 用のソースコネクタを設定する方法を説明します。 このワークフローは、Salesforce データをテンプレートに基づいて取り込むのに必要なアセットを自動生成します。 事前の時間を節約でき、必要に応じてアセットをカスタマイズできます。 このワークフローは、すべての CRM ソースコネクタでサポートされているわけではありません。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
 

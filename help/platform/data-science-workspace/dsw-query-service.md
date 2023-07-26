@@ -1,12 +1,13 @@
 ---
 title: Data Science Workspace でのデータのクエリと検出
 description: Adobe Experience Platform を使用すると、クエリサービスを標準機能として JupyterLab に統合することにより、Data Science Workspace で構造化照会言語（SQL）を使用できます。
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7286
 thumbnail: 333311.jpg
 exl-id: c946d462-42bc-4adf-a4db-47a61fa6bbff
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 50%

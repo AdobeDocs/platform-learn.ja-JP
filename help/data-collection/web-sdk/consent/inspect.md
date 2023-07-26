@@ -2,10 +2,10 @@
 title: Inspectと同意シグナルの検証
 description: 同意設定がAdobe Experience Platformのデータに適切に適用されていることを検証する方法を説明します。
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 jira: KT-7571
 exl-id: d7534d2d-6a64-4189-bc35-0de8c6c8bf5a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Launch が **[!DNL tags]**
+> Launch は現在 **[!DNL tags]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/332696/?quality=12&learn=on)
 

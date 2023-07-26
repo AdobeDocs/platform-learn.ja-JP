@@ -4,7 +4,8 @@ breadcrumb-title: データ収集チュートリアル
 user-guide-description: Experience Platform でデータ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル。
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
+role: Developer, Data Engineer
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 43%
@@ -46,7 +47,7 @@ ht-degree: 43%
 + サーバー API{#server-api}
    + [概要](server-api/overview.md)
    + [API の基本](server-api/introduction.md)
-+ イベントの転送{#event-forwarding}
++ イベント転送{#event-forwarding}
    + [概要](event-forwarding/overview.md)
    + [プロパティを作成する](event-forwarding/create-a-property.md)
    + [データストリームの設定](event-forwarding/set-up-a-datastream.md)
@@ -54,7 +55,7 @@ ht-degree: 43%
    + [ルールの作成](event-forwarding/create-a-rule.md)
    + [イベント転送の監視](event-forwarding/monitor.md)
    + [クライアント側タグの移動](event-forwarding/consider-moving-tags.md)
-   + [Google Ads 拡張コンバージョンの設定](event-forwarding/set-up-google-ads-enhanced-conversions.md)
+   + [Google Ads の拡張コンバージョンの設定](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Mailchimp のAdobe拡張](event-forwarding/adobe-extension-for-mailchimp.md)
 + データストリームと Edge ネットワーク{#edge-network}
    + [データストリームの設定](edge/configure-datastreams.md)

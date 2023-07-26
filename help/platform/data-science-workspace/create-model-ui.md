@@ -1,12 +1,13 @@
 ---
 title: トレーニング済みモデルの作成と公開
 description: JupyterLab Recipe Builder ノートブックで作成したレシピを使用して、モデルを作成、トレーニング、評価、および公開する方法について説明します。
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7291
 thumbnail: 333595.jpg
 exl-id: 149909cf-8294-45ed-b854-b9db5582858e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%
