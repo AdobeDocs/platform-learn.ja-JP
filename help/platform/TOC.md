@@ -4,9 +4,9 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
+source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '970'
 ht-degree: 44%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 44%
    + [BI ツールを使用したダッシュボードの作成](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [顧客データを再充電する](/help/platform/queries/recharge-your-customer-data.md)
    + [クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [データレイク内のデータの検証](/help/platform/queries/validate-data-in-the-datalake.md)
 + スキーマ {#schemas}
    + [概要](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [構築ブロック](/help/platform/schemas/schema-building-blocks.md)
