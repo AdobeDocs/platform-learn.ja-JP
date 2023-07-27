@@ -4,9 +4,9 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
+source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '969'
 ht-degree: 44%
 
 ---
@@ -217,4 +217,3 @@ ht-degree: 44%
    + [Audience Center of Excellence の進化](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [顧客プロファイルを使用したより優れたエクスペリエンスの構築](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [ファーストパーティデータコンテキストでのデータ共同作業](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-   + [翻訳](translate.md)
