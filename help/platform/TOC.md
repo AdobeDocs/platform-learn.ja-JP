@@ -4,9 +4,9 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
+source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '965'
 ht-degree: 44%
 
 ---
@@ -203,7 +203,7 @@ ht-degree: 44%
    + [データベースからのデータ取得](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
    + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
-   + [Adobe Targetを使用した次ヒットのパーソナライゼーション](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [トラブルシューティング：SFTP コネクタ](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud の統合 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
