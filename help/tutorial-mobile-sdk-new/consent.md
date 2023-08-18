@@ -1,0 +1,116 @@
+---
+title: 同意
+description: モバイルアプリに同意を実装する方法を説明します。
+feature: Mobile SDK,Consent
+hide: true
+hidefromtoc: true
+source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 3%
+
+---
+
+# 同意
+
+モバイルアプリに同意を実装する方法を説明します。
+
+Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience Platform Mobile SDK と Edge Network 拡張機能を使用する際に、モバイルアプリから同意設定を収集できます。 詳しくは、 [同意拡張](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)（ドキュメント内）
+
+## 前提条件
+
+* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
+
+## 学習内容
+
+このレッスンでは、次の操作を実行します。
+
+* ユーザーに同意を求めるプロンプトを表示します。
+* ユーザーの応答に基づいて拡張機能を更新します。
+* 現在の同意状態を取得する方法を説明します。
+
+## 同意を求める
+
+チュートリアルを最初から実行した場合は、同意拡張機能のデフォルトの同意がに設定されていることを覚えておく必要があります。 **[!UICONTROL 保留中 — ユーザーが同意設定を提供する前に発生したイベントをキューに入れます。]**
+
+データの収集を開始するには、ユーザーから同意を得る必要があります。 このチュートリアルでは、単にアラートで要求するだけで、ユーザーの同意を得ることができます。 実際のアプリでは、自分の地域の同意に関するベストプラクティスを参考にする必要があります。
+
+1. ユーザーに 1 回だけ問い合わせたい場合。 そのため、Mobile SDK の同意と、Appleを使用した追跡に必要な認証を組み合わせる必要があります [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). このアプリでは、ユーザーがトラッキングを承認する際に、そのユーザーがイベントの収集にも同意すると仮定します。
+
+1. に移動します。 `MobileSDK`：簡単に再利用できるように、Adobe Experience Platform SDK へのすべての API 呼び出しがバンドルされる、汎用の静的構造体です。
+
+   このコードを `updateConsent` 関数に置き換えます。
+
+   ```swift
+   let collectConsent = ["collect": ["val": value]]
+   let currentConsents = ["consents": collectConsent]
+   Consent.update(with: currentConsents)
+   MobileCore.updateConfigurationWith(configDict: currentConsents)
+   ```
+
+1. に移動します。 `DisclaimerView.swift`：アプリケーションをインストールまたは再インストールして、初めてアプリケーションを起動した後に表示される表示です。 Appleの設定ごとにトラッキングを承認するように求められます。 [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). ユーザーが承認した場合は、同意も更新します。
+
+   次のコードを `ATTrackingManager.requestTrackingAuthorization { status in` クロージャ。
+
+   ```swift {highlight="3,6"}
+   if status == .authorized {
+       // Set consent to yes
+       MobileSDK.shared.updateConsent(value: "y")
+   }
+   else {
+       MobileSDK.shared.updateConsent(value: "n")
+   }
+   ```
+
+## 現在の同意状態を取得する
+
+同意モバイル拡張機能では、現在の同意値に基づいて、 / pends /を自動的に抑制し、トラッキングを許可します。 また、現在の同意状態に自分でアクセスすることもできます。
+
+1. `MobileSDK.swift` に移動します。
+
+   次のコードを `getConsents` 関数：
+
+   ```swift
+   Consent.getConsents { consents, error in
+            guard error == nil, let consents = consents else { return }
+            guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+            guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+            Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+        }
+   ```
+
+2. に移動します。 **[!UICONTROL HomeView]**.
+
+   次のハイライト表示されたコードを `.task` 修飾子：
+
+   ```swift {highlight="3"}
+   .task {
+        // Ask status of consents
+        MobileSDK.shared.getConsents()   
+   }
+   ```
+
+上記の例では、単に Xcode 内のコンソールに同意ステータスをログに記録するだけです。 実際のシナリオでは、これを使用して、ユーザーに表示されるメニューやオプションを変更できます。
+
+## アシュランスで検証
+
+1. 以下を確認します。 [アシュランス](assurance.md) レッスン。
+1. AEM Desktop App をインストールします。
+1. アシュランスで生成された URL を使用して、アプリを起動します。
+1. 上記のコードを正しく追加した場合は、同意するよう求められます。
+
+   選択 **[!UICONTROL 続行…]** 次に、「 **[!UICONTROL 許可]**.
+
+   <img src="./assets/consent-update-1.png" width="300" /> 
+   <img src="./assets/consent-update-2.png" width="300" />
+
+1. 次のように表示されます。 **[!UICONTROL 同意応答を取得]** イベントが Assurance UI に表示されます。
+   ![同意を検証](assets/consent-update.png)
+
+
+
+>[!SUCCESS]
+>
+>これで、Adobe Experience Platform Mobile SDK を使用した同意を求めるメッセージが、インストール後（または再インストール後）の最初の起動時にアプリで有効になりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+次へ： **[ライフサイクルデータの収集](lifecycle-data.md)**
