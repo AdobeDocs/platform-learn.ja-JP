@@ -4,9 +4,9 @@ description: タグのプロパティを設定する方法については、 [!U
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 9%
 
 ---
@@ -136,7 +136,12 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
    インストール手順は、導入の出発点として適しています。 追加情報を見つけることができます [ここ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. を選択します。 **[!UICONTROL Swift]** 下のタブ **[!UICONTROL 初期化コードの追加]**. このコードブロックは、必要な SDK を読み込んで、起動時に拡張機能を登録する方法を示します。
+   >[!INFO]
+   >
+   >このチュートリアルの残りの部分では、次の操作をおこないます。 **not** CocoaPods の手順を使用しますが、代わりにネイティブの Swift Package Manager(SPM) ベースの設定を使用します。
+   >
+
+1. を選択します。 **[!UICONTROL Swift]** 下のタブ **[!UICONTROL 初期化コードの追加]**. このコードブロックは、必要な SDK を読み込んで、起動時に拡張機能を登録する方法を示します。 詳しくは、 [SDK のインストール](install-sdks.md).
 
 1. コピー ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) の **[!UICONTROL 環境ファイル ID]** 後で必要な場所に保存します。 この一意の ID は開発環境を指します。 各環境（実稼動、ステージング、開発）には、独自の一意の ID 値があります。
 
@@ -146,14 +151,9 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 >
 >インストール手順は、最初の段階と見なされ、最終的なドキュメントではありません。 最新の SDK バージョンおよびコードサンプルは、公式の [ドキュメント](https://developer.adobe.com/client-sdks/documentation/).
 
->[!INFO]
->
->このチュートリアルの残りの部分では、次の操作をおこないます。 **not** CocoaPods の手順を使用しますが、ネイティブの Swift パッケージベースの設定を確認してください。
-
-
 ## モバイルタグのアーキテクチャ
 
-Web バージョンのタグ（以前の Launch）に詳しい場合は、モバイル上の違いを理解することが重要です。
+タグの Web バージョン（以前の Launch）に詳しい方は、モバイル上の違いを理解することが重要です。
 
 * Web 上では、タグプロパティが JavaScript にレンダリングされ、JavaScript は（通常は）クラウドでホストされます。 この JavaScript ファイルが Web サイトで直接参照されます。
 
