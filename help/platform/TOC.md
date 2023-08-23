@@ -4,7 +4,7 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
+source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 43%
@@ -143,10 +143,10 @@ ht-degree: 43%
    + [セグメントのアクティベーションの監視](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [データフローのモニタリング](/help/platform/monitoring/data-monitoring.md)
 + パートナーデータのサポート {#partner-data-support}
-   + [パートナーデータサポートの概要](/platform/partner-data-support/partner-data-support-overview.md)
-   + [オフサイトでの見込み調査をサポート](/platform/partner-data-support/offsite-prospecting-partner-data.md)
-   + [プロファイルへのパートナー属性の追加](/platform/partner-data-support/partner-enrichment-partner-data.md)
-   + [不明な訪問者に対する Onsite のパーソナライズ](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
+   + [パートナーデータサポートの概要](/help/platform/partner-data-support/partner-data-support-overview.md)
+   + [オフサイトでの見込み調査をサポート](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [プロファイルへのパートナー属性の追加](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [不明な訪問者に対する Onsite のパーソナライズ](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + プロファイル {#profiles}
    + [リアルタイム顧客プロファイルについて](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [プロファイルの概要図](/help/platform/profiles/overview-diagram.md)
