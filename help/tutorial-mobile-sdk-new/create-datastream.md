@@ -3,8 +3,7 @@ title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
 hide: true
-hidefromtoc: true
-source-git-commit: 45481ca81f2ee4119bc900a0dd2652818269df6b
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 9%
@@ -88,7 +87,7 @@ ht-degree: 9%
 >
 >組織が使用する各サービスを有効にすると、モバイルアプリで収集されたデータをどこでも使用できるようになります。 データストリームの設定について詳しくは、ドキュメントを参照してください [ここ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-お客様の Web サイトに Platform Mobile SDK を実装する場合、3 つのデータストリームを作成して、3 つのタグ環境（開発、ステージング、実稼動）にマッピングする必要があります。 Adobe Real-time Customer Data PlatformやAdobe Journey Optimizerなどのプラットフォームベースのアプリケーションで Platform Mobile SDK を使用している場合は、適切な Platform サンドボックスにこれらのデータストリームを作成する必要があります。
+独自のアプリに Platform Mobile SDK を実装する場合、3 つのデータストリームを作成して、3 つのタグ環境（開発、ステージング、実稼動）にマッピングする必要があります。 Adobe Real-time Customer Data PlatformやAdobe Journey Optimizerなどのプラットフォームベースのアプリケーションで Platform Mobile SDK を使用している場合は、適切な Platform サンドボックスにこれらのデータストリームを作成する必要があります。
 
 >[!SUCCESS]
 >

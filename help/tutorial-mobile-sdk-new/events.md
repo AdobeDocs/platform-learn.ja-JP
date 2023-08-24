@@ -2,11 +2,10 @@
 title: イベント
 description: モバイルアプリでイベントデータを収集する方法を説明します。
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 0%
+source-wordcount: '1156'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +62,7 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
 
 * アプリ内でエクスペリエンスイベントデータを含むオブジェクトを作成するには、次のようなコードを使用します。
 
-  ```swift {highlight="2-8"}
+  ```swift
   var xdmData: [String: Any] = [
       "eventType": "commerce.productViews",
       "commerce": [
@@ -79,14 +78,14 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
    * `commerce.productViews.id`：製品の SKU を表す文字列値
    * `commerce.productViews.value`：イベントの数値を指定します。 ブール値 (Adobe Analyticsでは「カウンター」) の場合、値は常に 1 に設定されます。 数値イベントまたは通貨イベントの場合、値は 1 より大きい値になります。
 
-* スキーマ内で、コマース製品表示イベントに関連付けられた追加データを識別します。 この例では、 `productListItems` コマース関連のイベントで使用される標準のフィールドセットです。
+* スキーマ内で、コマース製品表示イベントに関連付けられた追加データを識別します。 この例では、 **[!UICONTROL productListItem]** コマース関連のイベントで使用される標準のフィールドセットです。
 
   ![製品リスト項目スキーマ](assets/datacollection-prodListItems-schema.png)
-   * 次の点に注意してください。 `productListItems` は配列なので、複数の製品を提供できます。
+   * 次の点に注意してください。 **[!UICONTROL productListItems]** は配列なので、複数の製品を提供できます。
 
 * このデータを追加するには、 `xdmData` 補足データを含むオブジェクト：
 
-```swift {highlight="9-16"}
+```swift
 var xdmData: [String: Any] = [
     "eventType": "commerce.productViews",
         "commerce": [
@@ -106,119 +105,84 @@ var xdmData: [String: Any] = [
 ]
 ```
 
-* その後、データ構造を使用して `ExperienceEvent`:
+* これで、このデータ構造を使用して `ExperienceEvent`:
 
   ```swift
   let productViewEvent = ExperienceEvent(xdm: xdmData)
   ```
 
-* また、sendEvent API を使用して、イベントとデータを Platform Edge Network に送信します。
+* 次に、 `sendEvent` API:
 
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
 
-次に、Xcode プロジェクトにこのコードを実装します。
-アプリには、異なるコマース製品関連のアクション（表示、買い物かごに追加、後で保存するため、購入）があり、ユーザーが実行した操作に基づいてイベントを送信したい場合。
+次に、このコードを Xcode プロジェクトに実際に実装します。
+アプリに異なるコマース製品関連のアクションがあり、ユーザーが実行したアクションに基づいてイベントを送信したい場合は、次のようにします。
 
-1. エクスペリエンスイベントの送信を構造化するには、 `MobileSDK`をクリックし、次の項目を `sendCommerceExperienceEvent` 関数に置き換えます。 この関数は、コマースエクスペリエンスのイベントと製品をパラメーターとして取ります。
+* 表示：ユーザーが特定の製品を表示したときに発生します。
+* 買い物かごに追加：ユーザーがタップしたとき <img src="assets/addtocart.png" width="20" /> 製品の詳細画面で、
+* 後で保存する：ユーザーがタップしたとき <img src="assets/saveforlater.png" width="15" /> 製品の詳細画面で、
+* 購入：ユーザーがタップしたとき <img src="assets/purchase.png" width="20" /> 製品の詳細画面で、
 
-   ```swift {highlight="2-22"}
-   func sendCommerceExperienceEvent(commerceEventType: String, product: Product) {
-     let xdmData: [String: Any] = [
-         "eventType": "commerce." + commerceEventType,
-         "commerce": [
-             commerceEventType: [
-                 "id": product.sku,
-                 "value": 1
-             ]
-         ],
-         "productListItems": [
-             [
-                 "name": product.name,
-                 "priceTotal": product.price,
-                 "SKU": product.sku
-             ]
-         ]
-     ]
+エクスペリエンスイベントの送信を構造化するには：
+
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、以下の内容を `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 関数に置き換えます。 この関数は、コマースエクスペリエンスのイベントと製品をパラメーターとして取ります。
+
+   ```swift
+   let xdmData: [String: Any] = [
+       "eventType": "commerce." + commerceEventType,
+       "commerce": [
+           commerceEventType: [
+               "id": product.sku,
+               "value": 1
+           ]
+       ],
+       "productListItems": [
+           [
+               "name": product.name,
+               "priceTotal": product.price,
+               "SKU": product.sku
+           ]
+       ]
+   ]
    
-     Logger.viewCycle.info("About to send commerce experience event of type  \(commerceEventType)..."
-     let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
-     Edge.sendEvent(experienceEvent: commerceExperienceEvent)
-   }
+   Logger.viewCycle.info("About to send commerce experience event of type  \(commerceEventType)..."
+   let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: commerceExperienceEvent)
    ```
 
-1. In `ProductView` 様々な呼び出しを `sendCommerceExperienceEvent` 関数：
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** を呼び出し、 `sendCommerceExperienceEvent` 関数：
 
-   1. 次の場合： `.task` 修飾子 `ATTrackingManager.trackingAuthorizationStatus` クロージャ。 The `.task` 製品表示が初期化されて表示されると修飾子が呼び出されるので、特定の時点で製品表示イベントを送信できます。
+   1. 次の場合： `.task` 修飾子、内 `ATTrackingManager.trackingAuthorizationStatus` クロージャ。 この `.task` 製品表示が初期化されて表示されると修飾子が呼び出されるので、特定の時点で製品表示イベントを送信できます。
 
-      ```swift {highlight="4-5"}
-      .task {
-          if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-               // Send commerce experience event
-              MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productView", product: product)
-          }
-      }
+      ```swift
+      // Send commerce experience event
+      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productView", product: product)
       ```
 
-   1. 製品表示で使用できるツールバーの各ボタン（後で保存、買い物かごに追加、購入）に対して、関連する呼び出しを追加します。
+   1. 各ボタン (<img src="assets/saveforlater.png" width="15" />、 <img src="assets/addtocart.png" width="20" /> および <img src="assets/purchase.png" width="20" />) をツールバーの `ATTrackingManager.trackingAuthorizationStatus == .authorized` 閉鎖：
 
-      * 「後で使用するために保存」または「ウィッシュリストに追加」の場合：
+      1. の場合 <img src="assets/saveforlater.png" width="15" />：
 
-        ```swift {highlight="5-6"}
-        Button {
-            Task {
-                if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-                // Send saveForLater commerce experience event
-                    MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
-                }
-            }
-            showSaveForLaterDialog.toggle()
-        } label: {
-            Label("", systemImage: "heart")
-        }
-        .alert(isPresented: $showSaveForLaterDialog, content: {
-            Alert(title: Text( "Saved for later"), message: Text("The selected item is saved to your wishlist…"))
-        })
-        ```
+         ```swift
+         // Send saveForLater commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
+         ```
 
-      * 買い物かごに追加：
+      1. の場合 <img src="assets/addtocart.png" width="20" />：
 
-        ```swift {highlight="5-6"}
-        Button {
-            Task {
-                if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-                    // Send productListAdds commerce experience event
-                    MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
-                }
-            }
-            showAddToCartDialog.toggle()
-        } label: {
-                Label("", systemImage: "cart.badge.plus")
-        }
-        alert(isPresented: $showAddToCartDialog, content: {
-            Alert(title: Text( "Added to basket"), message: Text("The selected item is added to your basket…"))
-        })
-        ```
+         ```swift
+         // Send productListAdds commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
+         ```
 
-      * 購入の場合：
+      1. の場合 <img src="assets/purchase.png" width="20" />：
 
-        ```swift {highlight="5-6"}
-        Button {
-            Task {
-                if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-                    // Send purchase commerce experience event
-                    MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
-                }
-            }
-            showPurchaseDialog.toggle()
-        } label: {
-            Label("", systemImage: "creditcard")
-        }
-        .alert(isPresented: $showPurchaseDialog, content: {
-            Alert(title: Text( "Purchases"), message: Text("The selected item is purchased…"))
-        })
-        ```
+         ```swift
+         // Send purchase commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
+         ```
 
 ### カスタムフィールドグループ
 
@@ -231,9 +195,9 @@ var xdmData: [String: Any] = [
 
   >[!NOTE]
   >
-  >  標準フィールドグループは、常にオブジェクトルートから始まります。
+  >* 標準フィールドグループは、常にオブジェクトルートから始まります。
   >
-  >  カスタムフィールドグループは、常にExperience Cloud組織に固有のオブジェクトの下で開始します。 `_techmarketingdemos` この例では、
+  >* カスタムフィールドグループは、常にExperience Cloud組織に固有のオブジェクトの下で開始します。 `_techmarketingdemos` この例では、
 
   アプリのインタラクションイベントの場合は、次のようなオブジェクトを作成します。
 
@@ -273,7 +237,7 @@ var xdmData: [String: Any] = [
   ```
 
 
-* 次に、 `ExperienceEvent`.
+* これで、このデータ構造を使用して `ExperienceEvent`.
 
   ```swift
   let event = ExperienceEvent(xdm: xdmData)
@@ -288,34 +252,31 @@ var xdmData: [String: Any] = [
 
 ここでも、Xcode プロジェクトにこのコードを実装します。
 
-1. 利便性を考慮して、 `MobileSDK`.
+1. 利便性を考慮して、 **[!UICONTROL MobileSDK]**. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
 
-   アプリのインタラクション用の 1 つ。 ハイライト表示されたコードを `sendAppInteractionEvent(actionName)` 機能する **[!UICONTROL MobileSDK]**:
+   1. アプリのインタラクション用の 1 つ。 このコードを `func sendAppInteractionEvent(actionName: String)` 関数：
 
-   ```swift {highlight="2-16"}
-   func sendAppInteractionEvent(actionName: String) {
-        let xdmData: [String: Any] = [
-           "eventType": "application.interaction",
-           tenant : [
-               "appInformation": [
-                   "appInteraction": [
-                       "name": actionName,
-                       "appAction": [
-                           "value": 1
-                       ]
-                   ]
-               ]
-           ]
-       ]
-       let appInteractionEvent = ExperienceEvent(xdm: xdmData)
-       Edge.sendEvent(experienceEvent: appInteractionEvent)
-   }
-   ```
+      ```swift
+      let xdmData: [String: Any] = [
+          "eventType": "application.interaction",
+          tenant : [
+              "appInformation": [
+                  "appInteraction": [
+                      "name": actionName,
+                      "appAction": [
+                          "value": 1
+                      ]
+                  ]
+              ]
+          ]
+      ]
+      let appInteractionEvent = ExperienceEvent(xdm: xdmData)
+      Edge.sendEvent(experienceEvent: appInteractionEvent)
+      ```
 
-   画面追跡用のもの。 ハイライト表示されたコードを `sendTrackScreenEvent(stateName)` 機能する **[!UICONTROL MobileSDK]**:
+   1. 画面追跡用のもの。 このコードを `func sendTrackScreenEvent(stateName: String) ` 関数：
 
-   ```swift {highlight="2-17"}
-   func sendTrackScreenEvent(stateName: String) {
+      ```swift
       let xdmData: [String: Any] = [
           "eventType": "application.scene",
           tenant : [
@@ -332,40 +293,24 @@ var xdmData: [String: Any] = [
       ]
       let trackScreenEvent = ExperienceEvent(xdm: xdmData)
       Edge.sendEvent(experienceEvent: trackScreenEvent)
-   }
-   ```
+      ```
 
-1. に移動します。 **[!UICONTROL LoginSheet]**.
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]**.
 
-   * 次のハイライト表示されたコードを [ ログイン ] ボタンのクロージャに追加します。
+   1. 次のハイライト表示されたコードを [ ログイン ] ボタンのクロージャに追加します。
 
-     ```swift {highlight="3"}
-     Button("Login") {                               
-        // Send app interaction event
-        MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-        dismiss()
-     }
-     .disabled(currentEmailId.isValidEmail == false)
-     .buttonStyle(.bordered)
-     ```
+      ```swift
+      // Send app interaction event
+      MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
+      dismiss()
+      ```
 
-   * 次のハイライト表示されたコードをに追加します。 `onAppear` 修飾子：
+   1. 次のハイライト表示されたコードをに追加します。 `onAppear` 修飾子：
 
-     ```swift {highlight="13"}
-     .onAppear {
-        Task {
-            if currentEmailId == "testUser@gmail.com" || currentEmailId.isValidEmail == false {
-                // still allow to log in
-                disableLogin = false
-            }
-            else {
-                disableLogin = true
-            }
-        }
-        // Send track screen event
-        MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
-     }
-     ```
+      ```swift
+      // Send track screen event
+      MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
+      ```
 
 ### 検証
 
@@ -374,19 +319,19 @@ var xdmData: [String: Any] = [
 
    1. アシュランスアイコンを左に移動します。
    1. 選択 **[!UICONTROL ホーム]** 」をクリックします。
-   1. を選択します。 **[!UICONTROL ログイン]** ボタンをクリックして、ログインシートを開きます。
-   1. を選択します。 **[!UICONTROL A|]** ボタンを使用して、ランダムな電子メールと顧客 id を挿入できます。
+   1. Select the <img src="assets/login.png" width="15" /> ボタンをクリックして、ログインシートを開きます。
+   1. Select the <img src="assets/insert.png" width="15" /> ボタンを使用して、ランダムな電子メールと顧客 id を挿入できます。
    1. 選択 **[!UICONTROL ログイン]**.
    1. 選択 **[!UICONTROL 製品]** 」をクリックします。
    1. 製品を選択します。
-   1. 選択 **[!UICONTROL 後で使用するために保存]**.
-   1. 選択 **[!UICONTROL 買い物かごに追加]**.
-   1. 選択 **[!UICONTROL 購入]**.
+   1. 選択 <img src="assets/saveforlater.png" width="15" />。
+   1. 選択 <img src="assets/addtocart.png" width="20" />。
+   1. 選択 <img src="assets/purchase.png" width="15" />。
 
       <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
 
 
-1. を探します。 **[!UICONTROL hitReceived]** イベント **[!UICONTROL com.adobe.edge.conductor]** ベンダー。
+1. Assurance UI で、 **[!UICONTROL hitReceived]** イベント **[!UICONTROL com.adobe.edge.conductor]** ベンダー。
 1. イベントを選択し、 **[!UICONTROL メッセージ]** オブジェクト。
    ![データ収集の検証](assets/datacollection-validation.png)
 
@@ -396,8 +341,8 @@ var xdmData: [String: Any] = [
 これで、Luma アプリへのデータ収集の追加を開始するためのすべてのツールが用意されました。 ユーザーが製品とどのようにやり取りするかによりインテリジェンスを追加でき、アプリにより多くのアプリインタラクションや画面トラッキングコールを追加できます。
 
 * 注文、チェックアウト、空のバスケット、その他の機能をアプリに実装し、関連するコマースエクスペリエンスイベントをこの機能に追加します。
-* への呼び出しを繰り返します。 `sendAppInteractionEvent` を適切なパラメーターに置き換えて、アプリ内でのユーザーのその他のアプリの操作を追跡します。
-* への呼び出しを繰り返します。 `sendTrackScreenEvent` を適切なパラメーターに設定して、アプリ内でユーザーが表示した各画面を追跡します。
+* への呼び出しを繰り返します。 `sendAppInteractionEvent` を適切なパラメーターに置き換えて、ユーザーによるその他のアプリの操作を追跡します。
+* への呼び出しを繰り返します。 `sendTrackScreenEvent` を適切なパラメーターに設定して、アプリ内でユーザーが表示した画面を追跡します。
 
 >[!TIP]
 >

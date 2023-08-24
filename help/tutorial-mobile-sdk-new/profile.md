@@ -2,11 +2,10 @@
 title: プロファイル
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 2%
+source-wordcount: '591'
+ht-degree: 4%
 
 ---
 
@@ -40,39 +39,19 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 * ユーザー属性を取得します。
 
 
-## 設定と更新
+## ユーザー属性の設定と更新
 
 ターゲティングやパーソナライゼーションでは、ユーザーが以前にアプリで購入したかどうかをすばやく把握すると便利です。 Luma アプリでセットアップしましょう。
 
-1. に移動します。 **[!UICONTROL ProductView]** ( **[!UICONTROL 件数]** > **[!UICONTROL 製品]**) をクリックし、 `updateUserAttributes` （「購入」ボタン内）:
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** そして、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
 
-   ```swift {highlight="8-9"}
-   Button {
-       Task {
-           if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-               // Send purchase commerce experience event
-               MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
-               // Update attributes
-               MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
-           }
-       }
-       showPurchaseDialog.toggle()
-   } label: {
-       Label("", systemImage: "creditcard")
-   }
-   .alert(isPresented: $showPurchaseDialog, content: {
-       Alert(title: Text( "Purchases"), message: Text("The selected item is purchased…"))
-   })
-   ```
-
-2. に移動します。 **[!UICONTROL MobileSDK]** そして、 `updateUserAttributes` 関数に置き換えます。 次のハイライト表示されたコードを追加します。
-
-   ```swift {highlight="2-4"}
-   func updateUserAttributes(attributeName: String, attributeValue: String) {
-       var profileMap = [String: Any]()
-       profileMap[attributeName] = attributeValue
-       UserProfile.updateUserAttributes(attributeDict: profileMap)
-   }
+   ```swift
+   // Create a profile map
+   var profileMap = [String: Any]()
+   // Add attributes to profile map
+   profileMap[attributeName] = attributeValue
+   // Use profile map to update user attributes
+   UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
    このコードは次を実行します。
@@ -83,27 +62,29 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    1. を使用します。 `profileMap` 辞書を `attributeDict` のパラメーター `UserProfile.updateUserAttributes` API 呼び出し。
 
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** Xcode プロジェクトナビゲーターで、への呼び出しを探します。 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button):
 
-その他 `updateUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+   ```swift
+   // Update attributes
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   ```
 
-## 取得
+その他のドキュメントも参照できます。 [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+
+## ユーザー属性の取得
 
 ユーザーの属性を更新すると、他のAdobeSDK で使用できるようになりますが、属性を明示的に取得することもできます。
 
-1. に移動します。 **[!UICONTROL HomeView]** ( **[!UICONTROL 件数]** > **[!UICONTROL 一般]**) をクリックし、 `.onAppear` 修飾子 次のコードを追加します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** /一般/ **[!UICONTROL HomeView]** Xcode プロジェクトナビゲーターで、を探します。 `.onAppear` 修飾子 次のコードを追加します。
 
-   ```swift {highlight="3-11"}
-   .onAppear {
-       // Track view screen
-       MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: home")
-       // Get attributes
-       UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-           if attributes?["isPaidUser"] as! String == "yes" {
-               showBadgeForUser = true
-           }
-           else {
-               showBadgeForUser = false
-           }
+   ```swift
+   // Get attributes
+   UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
+       if attributes?["isPaidUser"] as! String == "yes" {
+           showBadgeForUser = true
+       }
+       else {
+           showBadgeForUser = false
        }
    }
    ```
@@ -111,9 +92,9 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    このコードは次を実行します。
 
    1. 呼び出し `UserProfile.getUserAttributes` ～で閉鎖する `iPaidUser` 属性名を `attributeNames` 配列。
-   1. 次に、 `isPaidUser` 属性とタイミング `yes`では、右上の人物アイコンにバッジを配置します。
+   1. 次に、 `isPaidUser` 属性とタイミング `yes`をクリックし、 <img src="assets/paiduser.png" width="20" /> アイコンを使用して、アイコンをクリックします。
 
-その他 `getUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+その他のドキュメントも参照できます。 [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## アシュランスで検証
 
@@ -124,23 +105,23 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    1. アシュランスアイコンを左に移動します。
    1. 選択 **[!UICONTROL ホーム]** 」をクリックします。
-   1. ログインシートを開くには、 **[!UICONTROL ログイン]** 」ボタンをクリックします。
-   1. ランダムな電子メールと顧客 ID を挿入するには、 **[!UICONTROL A|]** ボタンをクリックします。
+   1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> button.
+   1. ランダムな電子メールと顧客 ID を挿入するには、 <img src="assets/insert.png" width="15" /> button .
    1. 選択 **[!UICONTROL ログイン]**.
    1. 選択 **[!UICONTROL 製品]** 」をクリックします。
    1. 1 つの製品を選択します。
-   1. 選択 **[!UICONTROL 後で使用するために保存]**.
-   1. 選択 **[!UICONTROL 買い物かごに追加]**.
-   1. 選択 **[!UICONTROL 購入]**.
-   1. に戻る **[!UICONTROL ホーム]** 画面。 更新された「ログイン」ボタンが表示されます。
+   1. 選択 <img src="assets/saveforlater.png" width="15" />。
+   1. 選択 <img src="assets/addtocart.png" width="20" />。
+   1. 選択 <img src="assets/purchase.png" width="15" />。
+   1. に戻る **[!UICONTROL ホーム]** 画面。 次の更新された値が表示されます： **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]**.
 
       <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
 
-1. 次のように表示されます。 **[!UICONTROL UserProfileUpdate]** および **[!UICONTROL getUserAttributes]** Assurance UI のイベントと更新済み `profileMap` の値です。
+1. Assurance UI には、 **[!UICONTROL UserProfileUpdate]** および **[!UICONTROL getUserAttributes]** 更新された `profileMap` の値です。
    ![プロファイルを検証](assets/profile-validate.png)
 
 >[!SUCCESS]
 >
->これで、Edge ネットワーク内のプロファイルの属性を更新するアプリを設定し、（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようになりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>これで、Edge ネットワーク内のプロファイルの属性を更新するアプリを設定し、（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようになりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[データをAdobe Analyticsにマッピング](analytics.md)**

@@ -3,10 +3,9 @@ title: Analytics マッピング
 description: モバイルアプリでAdobe Analyticsのデータを収集する方法を説明します。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 このデータを使用する処理ルールは次のようになります。
 
-* 次の値を上書きしています： `App Screen Name (eVar2)` (1) `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2) `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` が設定されている。
+* あなた **[!UICONTROL の値を上書き]** 1) **[!UICONTROL アプリの画面名 (eVar2)]** (2) **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** 4) **[!UICONTROL 設定済み]** (5)
 
-* 設定した `Add to Wishlist (Event 3)` から `a.x.commerce.saveForLaters.value(Context)` if `a.x.commerce.saveForLaters.value(Context)` が設定されている。
+* あなた **[!UICONTROL イベントを設定]** (6) **[!UICONTROL ウィッシュリストに追加（イベント 3）]** (7) から **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL 設定済み]** (10).
 
 ![分析処理ルール](assets/analytics-processing-rules.png)
 

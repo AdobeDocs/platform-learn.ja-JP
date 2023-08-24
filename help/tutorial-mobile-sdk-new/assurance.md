@@ -3,11 +3,10 @@ title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 4%
+source-wordcount: '741'
+ht-degree: 5%
 
 ---
 
@@ -43,17 +42,19 @@ ht-degree: 4%
 
 ## 実装方法
 
-一般 [SDK のインストール](install-sdks.md)前のレッスンで完了したiOSでは、アプリのアシュランスセッションを開始するために、以下の追加も必要です。 次のコードをに追加します。 **[!UICONTROL SceneDelegate]**:
+一般 [SDK のインストール](install-sdks.md)前のレッスンで完了したiOSでは、アプリのアシュランスセッションを開始するために、以下の追加も必要です。
 
-```swift {highlight="5"}
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            // Start the Assurance session
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** をクリックします。
+
+1. 次のコードを `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>` に追加します。
+
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
 
 詳しくは、[こちら](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"})を参照してください。
 
@@ -94,7 +95,7 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
 1. 次を提供： **[!UICONTROL セッション名]** 例： `Luma Mobile App Session` そして **[!UICONTROL ベース URL]**:Xcode で入力した URL スキームで、その後に `://`. 例：`lumatutorialswiftui://`。
 1. 「**[!UICONTROL 次へ]**」を選択します。
    ![アシュランス作成セッション](assets/assurance-create-session.png)
-1. 新しいセッションを作成ダイアログで、次の操作を行います。
+1. Adobe Analytics の **[!UICONTROL 新しいセッションを作成]** モーダルダイアログ：
 
    物理デバイスを使用している場合：
 

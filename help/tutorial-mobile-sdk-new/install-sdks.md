@@ -2,10 +2,9 @@
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 
 ---
@@ -58,9 +57,10 @@ Xcode では、 **[!UICONTROL ファイル]** > **[!UICONTROL パッケージを
 
 ## 拡張機能のインポート
 
-Xcode で、 **[!UICONTROL AppDelegate]** および **[!UICONTROL MobileSDK]**、次のインポートを追加します。
+Xcode で、に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 次のインポートを追加します。
 
 ```swift
+// import AEP MobileSDK libraries
 import AEPCore
 import AEPServices
 import AEPIdentity
@@ -76,9 +76,11 @@ import AEPOptimize
 import AEPAssurance
 ```
 
+同じ操作を次にも実行します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+
 ## AppDelegate を更新
 
-In **AppDelegate**,
+に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** Xcode プロジェクトナビゲーターで使用します。
 
 1. を設定します。 `@AppStorage` 値 `environmentFileId` を、手順 6 でタグから取得した開発環境ファイル ID 値 ( [SDK のインストール手順の生成](configure-tags.md#generate-sdk-install-instructions).
 

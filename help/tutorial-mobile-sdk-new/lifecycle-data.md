@@ -2,10 +2,9 @@
 title: ライフサイクルデータ
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '612'
 ht-degree: 3%
 
 ---
@@ -51,23 +50,22 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## 実装の変更
 
-次に、を更新できます。 `SceneDelegate` ライフサイクルイベントを登録するには：
+これで、プロジェクトを更新して、ライフサイクルイベントを登録できます。
 
-1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは、 `sceneWillEnterForeground:` delegate メソッドと、ライフサイクル開始イベントをトリガーする場所です。 ハイライト表示されたコードを追加します。
+1. Xcode プロジェクトナビゲーターで、Luma / Luma / SceneDelegate に移動します。
 
-   ```swift {highlight="3"}
-   func sceneWillEnterForeground(_ scene: UIScene) {
-      // When in foreground start lifecycle data collection
-      MobileCore.lifecycleStart(additionalContextData: nil)
-   }
+1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは、 `sceneWillEnterForeground:` delegate メソッドと、ライフサイクル開始イベントをトリガーする場所です。 このコードを `func sceneWillEnterForeground(_ scene: UIScene)`:
+
+   ```swift
+   // When in foreground start lifecycle data collection
+   MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. アプリがバックグラウンドに入るときに、アプリの `sceneDidEnterBackground:` delegate メソッド。 ハイライト表示されたコードを追加します。
+1. アプリがバックグラウンドに入ると、アプリの `sceneDidEnterBackground:` delegate メソッド。 このコードを  `func sceneDidEnterBackground(_ scene: UIScene)`:
 
-   ```swift {highlight="3"}
-   func sceneDidEnterBackground(_ scene: UIScene) {
-      // When in background pause lifecycle data collection
-      MobileCore.lifecyclePause()
+   ```swift
+   // When in background pause lifecycle data collection
+   MobileCore.lifecyclePause()
    }
    ```
 

@@ -3,11 +3,10 @@ title: ID
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 6%
+source-wordcount: '653'
+ht-degree: 8%
 
 ---
 
@@ -52,35 +51,20 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 ユーザーがアプリにログインする際に、標準 ID（電子メール）とカスタム ID(Luma CRM ID) の両方を更新する必要がある場合。
 
-1. に移動します。 **[!UICONTROL LoginSheet]** ( **[!UICONTROL 件数]** > **[!UICONTROL 一般]**) をクリックし、 `updateIdentities`:
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateIdentities(emailAddress: String, crmId: String)` 関数の実装。 次のコードを関数に追加します。
 
-   ```swift {highlight="3,4"}
-   Button("Login") {
-       // call updaeIdentities
-       MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   ```swift
+   // Set up identity map
+   let identityMap: IdentityMap = IdentityMap()
    
-       // Send app interaction event
-       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-       dismiss()
-   }
-   .disabled(currentEmailId.isValidEmail == false)
-   .buttonStyle(.bordered)
-   ```
-
-1. 次に移動： `updateIdentities` 関数の実装 **[!UICONTROL MobileSDK]** ( **[!UICONTROL Utils]**) を Xcode Luma アプリプロジェクトに追加します。 次のハイライト表示されたコードを関数に追加します。
-
-   ```swift {highlight="2-12"}
-   func updateIdentities(emailAddress: String, crmId: String) {
-       let identityMap: IdentityMap = IdentityMap()
-       // Add identity items
-       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
-       identityMap.add(item:emailIdentity, withNamespace: "Email")
-       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+   // Add identity items to identity map
+   let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   identityMap.add(item:emailIdentity, withNamespace: "Email")
+   identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
-       // Update identities
-       Identity.updateIdentities(with: identityMap)
-   }
+   // Update identities
+   Identity.updateIdentities(with: identityMap)
    ```
 
    このコードは次を実行します。
@@ -111,6 +95,13 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
       Identity.updateIdentities(with: identityMap) 
       ```
 
+1. に移動します。 **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
+
+   ```swift
+   // call updaeIdentities
+   MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
+   ```
+
 
 >[!NOTE]
 >
@@ -121,27 +112,22 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 以下を使用できます。 `removeIdentity` をクリックして、保存されたクライアント側の IdentityMap から id を削除します。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側のユーザープロファイルグラフまたは ID グラフから識別子が削除されることはありません。
 
-1. に移動します。 **[!UICONTROL LoginSheet]** ( **[!UICONTROL 件数]** > **[!UICONTROL 一般]**) をクリックし、 `removeIdentities`:
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
 
-   ```swift {highlight="3"}
-   Button("Logout", role: .destructive) {
-       // call removeIdentities
-       MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-       dismiss()                   
-   }
-   .buttonStyle(.bordered)
+   ```swift
+   Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
+   Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
+   // reset email and CRM Id to their defaults
+   currentEmailId = "testUser@gmail.com"
+   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. 次のコードを `removeIdentities` 機能する `MobileSDK`:
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** Xcode プロジェクトナビゲーターで、 **[!UICONTROL ログアウト]** 」ボタンをクリックします。 次のコードを追加します。
 
-   ```swift {highlight="2-8"}
-   func removeIdentities(emailAddress: String, crmId: String) {
-       Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
-       Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-       // reset email and CRM Id to their defaults
-       currentEmailId = "testUser@gmail.com"
-       currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
-   }
+   ```swift
+   // call removeIdentities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   dismiss()                   
    ```
 
 
@@ -150,9 +136,9 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
 1. Luma アプリ内
    1. を選択します。 **[!UICONTROL ホーム]** タブをクリックします。
-   1. を選択します。 **[!UICONTROL ログイン]** アイコンを右上に表示します。
+   1. Select the <img src="assets/login.png" width="15" /> アイコンを右上に表示します。
    1. 電子メールアドレスと CRM ID を入力するか、
-   1. A|を選択すると、 **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]**.
+   1. 選択 <img src="assets/insert.png" width="15" /> ランダムに生成するには **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]**.
    1. 選択 **[!UICONTROL ログイン]**.
 
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">

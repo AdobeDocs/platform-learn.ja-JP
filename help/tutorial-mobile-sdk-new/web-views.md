@@ -3,13 +3,13 @@ title: WebViews を処理
 description: モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
 jira: KT-6987
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
+
 
 # WebViews を処理
 
@@ -36,35 +36,30 @@ WebView のExperience CloudID サービス JavaScript 拡張機能は、新し�
 
 ## 実装
 
-Luma サンプルアプリで、 **[!UICONTROL TermsOfServiceSheet]** ファイル ( **[!UICONTROL 情報]** フォルダーで )、 `SwiftUIWebViewModel` クラス：
+に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 情報]** > **[!UICONTROL TermsOfServiceSheet]**&#x200B;をクリックし、 `func loadUrl()` 関数 `final class SwiftUIWebViewModel: ObservableObject` クラス。 次の呼び出しを追加して、Web ビューを処理します。
 
-```swift {highlight="6-22"}
-    func loadUrl() {
-        let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-        if var urlString = url?.absoluteString {
-            // Adobe Experience Platform - Handle Web View
-            AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
-                if let error = error {
-                    print("Error with Webview", error)
-                    return;
-                }
-                
-                if let urlVariables: String = urlVariables {
-                    urlString.append("?" + urlVariables)
-                    guard let url = URL(string: urlString) else {
-                        return
-                    }
-                    DispatchQueue.main.async {
-                        self.webView.load(URLRequest(url: url))
-                    }
-                }
-                Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
-            }
+```swift
+// Adobe Experience Platform - Handle Web View
+AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
+    if let error = error {
+        print("Error with Webview", error)
+        return;
+    }
+    
+    if let urlVariables: String = urlVariables {
+        urlString.append("?" + urlVariables)
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.webView.load(URLRequest(url: url))
         }
     }
+    Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
+}
 ```
 
-このコードの最も重要な部分は、 `AEPEdgeIdentity.Identity.getUrlVariables` クロージャ（ハイライト表示）。 クロージャでは、ECID などの関連するすべての情報を含めるために URL の変数を設定します。 この例では、ローカルファイルを使用していますが、リモートページにも同じ概念が適用されます。
+The `AEPEdgeIdentity.Identity.getUrlVariables` API は、ECID などのすべての関連情報を含めるために URL の変数を設定します。 この例では、ローカルファイルを使用していますが、リモートページにも同じ概念が適用されます。
 
 詳しくは、 `Identity.getUrlVariables` の API [Edge Network 拡張機能 API リファレンスガイドの ID](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
