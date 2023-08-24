@@ -4,7 +4,7 @@ description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モ
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 2%
@@ -123,6 +123,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. 次に移動： **[!UICONTROL 設定]** タブをクリックします。
 
 1. タップ **[!UICONTROL アプリ内メッセージ]**. アプリ内メッセージがアプリに表示されます。
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 

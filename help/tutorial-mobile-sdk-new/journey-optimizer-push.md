@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 4%
@@ -97,8 +97,8 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. Adobe Analytics の **[!UICONTROL 拡張機能のインストール]** ダイアログ
    1. 環境を選択します（例： ）。 **[!UICONTROL 開発]**.
    1. を選択します。 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセット **[!UICONTROL イベントデータセット]** ドロップダウンリスト。
-      ![AJO 拡張機能の設定](assets/push-tags-ajo.png)
    1. 選択 **[!UICONTROL ライブラリに保存してビルドする]**.
+      ![AJO 拡張機能の設定](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    1. 次を提供： **[!UICONTROL 説明]**&#x200B;例： `Test event to trigger push notifications in Luma app`.
 
    1. 前の手順で作成したモバイルアプリエクスペリエンスイベントスキーマを選択します。 [XDM スキーマの作成](create-schema.md) から **[!UICONTROL スキーマ]** 例えば、リスト **[!UICONTROL Luma モバイルアプリイベントスキーマ v.1]**.
-   1. 選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 「フィールド」リストの横に表示されます。
+   1. 選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) の横 **[!UICONTROL フィールド]** リスト。
 
       ![イベントの手順 1 を編集](assets/ajo-edit-event1.png)
 
