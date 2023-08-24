@@ -4,7 +4,7 @@ description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モ
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 2%
@@ -73,11 +73,11 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. 下にスクロールして **[!UICONTROL アクション]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL コンテンツを編集]**.
 1. Adobe Analytics の **[!UICONTROL アプリ内メッセージ]** 画面：
    1. 選択 **[!UICONTROL モーダル]** として **[!UICONTROL メッセージのレイアウト]**.
-   1. 入力 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 対象： **[!UICONTROL メディア URL]**.
-   1. を入力します。 **[!UICONTROL ヘッダー]**&#x200B;例： `Welcome to this Luma In-App Message` を入力し、 **[!UICONTROL 本文]**&#x200B;例： `Triggered by pushing that button in the app...`.
-   1. 入力 **[!UICONTROL 解除]** として **[!UICONTROL ボタン#1テキスト（プライマリ）]**.
-   1. プレビューの更新方法を確認します。
-   1. 選択 **[!UICONTROL 有効化するレビュー]**.
+   2. 入力 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 対象： **[!UICONTROL メディア URL]**.
+   3. を入力します。 **[!UICONTROL ヘッダー]**&#x200B;例： `Welcome to this Luma In-App Message` を入力し、 **[!UICONTROL 本文]**&#x200B;例： `Triggered by pushing that button in the app...`.
+   4. 入力 **[!UICONTROL 解除]** として **[!UICONTROL ボタン#1テキスト（プライマリ）]**.
+   5. プレビューの更新方法を確認します。
+   6. 選択 **[!UICONTROL 有効化するレビュー]**.
       ![アプリ内エディター](assets/ajo-in-app-editor.png)
 1. Adobe Analytics の **[!UICONTROL 有効化のレビュー（Luma — アプリ内メッセージキャンペーン）]** 画面、選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) （内） **[!UICONTROL スケジュール]** タイル。
    ![スケジュールを確認し、「スケジュール」を選択します。](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    1. 「**[!UICONTROL 完了]**」をクリックします。
       ![トリガー論理](assets/ajo-trigger-logic.png)
 
-   トラックアクションを定義し、 **[!UICONTROL アクション]** 次と等しい `in-app` そして **[!UICONTROL コンテキストデータ]** がのキーと値のペア `showMessage = true`.
+   トラックアクションを定義し、 **[!UICONTROL アクション]** 次と等しい `in-app` そして **[!UICONTROL コンテキストデータ]** がのキーと値のペア `"showMessage" : "true"`.
 
 1. 戻る **[!UICONTROL Luma — アプリ内メッセージキャンペーン]** 画面、選択 **[!UICONTROL 有効化するレビュー]**.
 1. Adobe Analytics の **[!UICONTROL 有効化のレビュー（Luma — アプリ内メッセージキャンペーン）]** 画面、選択 **[!UICONTROL 有効化]**.
@@ -103,14 +103,14 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. Xcode プロジェクトナビゲーターで、Luma/Luma/Utils/MobileSDK に移動し、 `func sendTrackAction(action: String, data: [String: Any]?)` 関数を呼び出し、次のコードを追加します。このコードは、 `MobileCore.track` 関数、パラメーターに基づく `action` および `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. Xcode プロジェクトナビゲーターで、Luma/Luma/ビュー/一般/ConfigView に移動します。 アプリ内メッセージボタンのコードを探し、次のコードを追加します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL ConfigView]** Xcode Project Navigator の下に表示されます。 アプリ内メッセージボタンのコードを探し、次のコードを追加します。
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
