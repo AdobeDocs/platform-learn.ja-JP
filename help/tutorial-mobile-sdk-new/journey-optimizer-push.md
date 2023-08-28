@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2005'
 ht-degree: 4%
 
 ---
@@ -36,9 +36,9 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 ## 学習内容
 
-このレッスンでは、次の操作を実行します。
+このレッスンでは、次の操作を行います
 
-* アプリ ID をApple Push Notification service(APN) に登録します。
+* アプリ ID をAppleプッシュ通知サービス (APN) に登録します。
 * の作成 **[!UICONTROL アプリサーフェス]** AJO 内で使用できます。
 * を更新します。 **[!UICONTROL スキーマ]** プッシュメッセージフィールドを含めるには
 * をインストールして設定します。 **[!UICONTROL Adobe Journey Optimizer]** タグ拡張。
@@ -81,7 +81,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. 「アプリ ID（iOS バンドル ID）」フィールドにモバイルアプリのバンドル ID を入力します。Luma アプリと共にフォローしている場合、その値は `com.adobe.luma.tutorial.swiftui`.
 1. をオンにします。 **[!UICONTROL プッシュ認証情報]** ボタンをクリックして、資格情報を追加します。
 1. をドラッグ&amp;ドロップします。 `.p8` **Appleプッシュ通知認証キー** ファイル。
-1. 次を提供： **[!UICONTROL キー ID]**: `p8` 認証キー。 これはの下にあります。 **[!UICONTROL キー]** タブ **証明書、識別子、およびプロファイル** Apple Developer Portal ページのページ。
+1. 次を提供： **[!UICONTROL キー ID]**: `p8` 認証キー。 これは、 **[!UICONTROL キー]** 」タブをクリックします。 **証明書、識別子、およびプロファイル** Apple Developer Portal ページのページ。
 1. **[!UICONTROL チーム ID]** を指定します。チーム ID は、 **メンバーシップ** 」タブまたはApple Developer Portal ページの上部に表示されます。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -105,7 +105,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 >表示されない場合 `AJO Push Tracking Experience Event Dataset` 必要に応じて、カスタマーケアにお問い合わせください。
 >
 
-## アプリでのAdobe Journey Optimizerの実装
+## アプリでのJourney Optimizerの実装
 
 前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、メッセージング SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
 
@@ -175,6 +175,20 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 独自のプッシュ通知を作成するには、プッシュ通知の送信を処理するジャーニーをトリガーするイベントをJourney Optimizerで定義する必要があります。
 
+### スキーマを更新
+
+スキーマで定義されたイベントのリストの一部として、まだ使用できない新しいイベントタイプを定義します。
+
+1. Journey Optimizer UI で、 **[!UICONTROL スキーマ]** をクリックします。
+1. 選択 **[!UICONTROL 参照]** 」をクリックします。
+1. スキーマを選択します（例： ）。 **[!UICONTROL Luma モバイルアプリイベントスキーマ]** をクリックして開きます。
+1. スキーマエディターで、次の操作を実行します。
+   1. を選択します。 **[!UICONTROL eventType]** フィールドに入力します。
+   1. Adobe Analytics の **[!UICONTROL フィールドのプロパティ]** ウィンドウ領域を下にスクロールして、イベントタイプに使用可能な値のリストを表示します。 選択 **[!UICONTROL 行を追加]**、を追加します。 `application.test` として **[!UICONTROL 値]** および **[!UICONTROL プッシュ通知のテストイベント]** として `DISPLAY NAME`.
+   1. 「**[!UICONTROL 適用]**」を選択します。
+   1. 「**[!UICONTROL 保存]**」を選択します。
+      ![イベントタイプに値を追加](assets/ajo-update-schema-eventtype-enum.png)
+
 ### イベントの定義
 
 1. Journey Optimizer UI で、 **[!UICONTROL 設定]** をクリックします。
@@ -193,7 +207,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
       ![イベントの手順 1 を編集](assets/ajo-edit-event1.png)
 
-      Adobe Analytics の **[!UICONTROL フィールド]** ダイアログで、次のフィールドが選択されていることを確認します ( 常に選択されているデフォルトのフィールド（_id、id および timestamp）の上部 )。 ドロップダウンリストを使用して、次の間で切り替えることができます。 **[!UICONTROL 選択済み]**, **[!UICONTROL すべて]** および **[!UICONTROL プライマリ]** または ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) フィールドに入力します。
+      Adobe Analytics の **[!UICONTROL フィールド]** ダイアログで、次のフィールドが選択されていることを確認します ( 常に選択されているデフォルトのフィールドの上部 (**[!UICONTROL _id]**, **[!UICONTROL id]**、および **[!UICONTROL timestamp]**)) を参照してください。 ドロップダウンリストを使用して、次の間で切り替えることができます。 **[!UICONTROL 選択済み]**, **[!UICONTROL すべて]** および **[!UICONTROL プライマリ]** または ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) フィールドに入力します。
 
       * **[!UICONTROL 特定されたアプリケーション (id)]**,
       * **[!UICONTROL イベントタイプ (eventType)]**,
@@ -205,9 +219,8 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
    1. 選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) の横 **[!UICONTROL イベント ID 条件]** フィールドに入力します。
 
-      1. Adobe Analytics の **[!UICONTROL イベント ID 条件の追加]** ダイアログ、ドラッグ&amp;ドロップ **[!UICONTROL アプリケーション識別子 (id)]** underthen **[!UICONTROL アプリケーション（アプリケーション）]** 次に対して **[!UICONTROL ここに要素をドラッグ&amp;ドロップ]**.
-      1. ポップオーバーで、Xcode からバンドル識別子を入力します。例： `com.adobe.luma.tutorial.swiftui` 隣のフィールドで **[!UICONTROL 次と等しい]**.
-      1. 「**[!UICONTROL OK]**」をクリックします。
+      1. Adobe Analytics の **[!UICONTROL イベント ID 条件の追加]** ダイアログ、ドラッグ&amp;ドロップ **[!UICONTROL イベントタイプ (eventType)]** 次に対して **[!UICONTROL ここに要素をドラッグ&amp;ドロップ]**.
+      1. ポップオーバーで、下までスクロールし、「 」を選択します。 **[!UICONTROL application.test]**. 次に、上までスクロールし、「 」を選択します。 **[!UICONTROL OK]**.
       1. 「**[!UICONTROL OK]**」をクリックします。
          ![イベント条件を編集](assets/ajo-edit-condition.png)
 
@@ -306,7 +319,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
    このコードにより、 `testPushPayload` 関数に指定されたパラメーター (`applicationId` および `eventType`) と呼び出し `sendExperienceEvent` ペイロードを辞書に変換する際に発生した問題を修正しました。 また、このコードは、今回は、に基づく Swift の同時実行モデルを使用してAdobe Experience Platform SDK を呼び出す際の非同期的な側面も考慮します `await` および `async`.
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL ConfigView]** Xcode プロジェクトナビゲーターで使用します。 プッシュ通知ボタンの定義で、次のコードを追加して、テストプッシュ通知エクスペリエンスイベントペイロードを、そのボタンがタップされるたびにジャーニーをトリガーに送信します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL ConfigView]** 」をクリックします。 プッシュ通知ボタンの定義で、次のコードを追加して、テストプッシュ通知エクスペリエンスイベントペイロードを、そのボタンがタップされるたびにジャーニーをトリガーに送信します。
 
    ```swift
    // Setting parameters and calling function to send push notification

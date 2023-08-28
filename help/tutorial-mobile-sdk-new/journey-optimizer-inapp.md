@@ -4,9 +4,9 @@ description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モ
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -26,13 +26,27 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
 * Adobe Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のAdobe Journey Optimizer機能に対する十分な権限が必要です。
-   * キャンペーンの作成.
+   * キャンペーンを管理します。
 * 証明書、識別子、キーを作成するのに十分なアクセス権を持つ有料Apple開発者アカウント。
 * 物理iOSデバイスまたはテスト用のシミュレーター。
-* [APN で登録されたアプリ ID](journey-optimizer-push.md#register-app-id-with-apn)
+* [Apple Push Notification Service に登録されたアプリ ID](journey-optimizer-push.md#register-app-id-with-apn)
 * [データ収集にアプリのプッシュ資格情報を追加しました](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
 * [Adobe Journey Optimizer Tags 拡張機能のインストール](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
 * [アプリにAdobe Journey Optimizerを実装](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+
+
+## 学習内容
+
+このレッスンでは、次の操作を行います
+
+* アプリ ID をAppleプッシュ通知サービス (APN) に登録します。
+* の作成 **[!UICONTROL アプリサーフェス]** AJO 内で使用できます。
+* を更新します。 **[!UICONTROL スキーマ]** プッシュメッセージフィールドを含めるには
+* をインストールして設定します。 **[!UICONTROL Adobe Journey Optimizer]** タグ拡張。
+* AJO タグ拡張を含めるようにアプリを更新します。
+* アシュランスで設定を検証します。
+* Journey Optimizerで独自のキャンペーンとアプリ内メッセージエクスペリエンスを定義する。
+* アプリ内から独自のアプリ内メッセージを送信します。
 
 
 ## アシュランスで検証
@@ -146,4 +160,4 @@ Assurance UI でアプリ内メッセージを検証できます。
 >
 >これで、アプリでアプリ内メッセージを有効にし、Adobe Journey OptimizerとAdobe Experience Platform Mobile SDK 用のAdobe Journey Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[まとめと次のステップ](conclusion.md)**
+次へ： **[Journey Optimizerでオファーを表示](journey-optimizer-offers.md)**
