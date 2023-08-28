@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2309'
 ht-degree: 3%
 
 ---
@@ -40,8 +40,8 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 * Journey Optimizer - Decisioning 拡張機能でタグプロパティを更新します。
 * 提案イベントをキャプチャするためにスキーマを更新します。
 * アシュランスで設定を検証します。
-* Target で簡単な A/B テストを作成します。
-* Optimize 拡張機能を含めるようにアプリを更新します。
+* Journey Optimizer — 決定管理でのオファーに基づいて、オファーの決定を作成します。
+* Optimizer 拡張機能を含めるようにアプリを更新します。
 * アプリに、決定管理からオファーを実装します。
 
 
@@ -283,7 +283,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 
    * XDM 辞書の設定 `xdmData`：オファーを提示する必要があるプロファイルを識別する ECID が含まれます。
    * 定義 `decisionScope`：配置、使用するコレクション、ランキング式および実施要件ルールを決定するオブジェクト (Journey Optimizer - Decision Management UI で定義したもの )。
-   * は、2 つの API を呼び出します。 [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。 Luma アプリは設定ファイル (`decisions.json`) を呼び出し、次の JSON 形式に基づいてスコープパラメーターを取得します。
+   * は、2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。 Luma アプリは設定ファイル (`decisions.json`) を呼び出し、次の JSON 形式に基づいてスコープパラメーターを取得します。
 
      ```swift
      "scopes": [
@@ -298,7 +298,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 
      ただし、任意の種類の実装を使用して、Optimizer API が適切なパラメーター (`activityId`, `placementId` そして `itemCount`) を呼び出し、有効な [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) オブジェクトを設定します。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL EdgeOffersView]** 」をクリックします。 次を検索： `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 呼び出し (
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL EdgeOffersView]** 」をクリックします。 次を検索： `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 呼び出し (
 
    * は、(Journey Optimizer — 決定管理で定義した ) 決定範囲に基づいて、現在のプロファイルの提案を取得し、
    * アプリに正しく表示できるコンテンツの結果の折り返しを解除します。

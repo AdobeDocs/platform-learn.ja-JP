@@ -5,7 +5,7 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 3%
@@ -42,7 +42,7 @@ Target Standard も使用できるはずですが、このチュートリアル�
 * 提案イベントをキャプチャするためにスキーマを更新します。
 * アシュランスで設定を検証します。
 * Target で簡単な A/B テストを作成します。
-* Optimize 拡張機能を含めるようにアプリを更新します。
+* Optimizer 拡張機能を含めるようにアプリを更新します。
 * アプリに A/B テストを実装します。
 * アシュランスで実装を検証します。
 
@@ -192,9 +192,9 @@ Target Standard も使用できるはずですが、このチュートリアル�
    * XDM 辞書 `xdmData`:A/B テストを提示する必要があるプロファイルを識別する ECID を含み、
    * の `decisionScope`:A/B テストを提示する場所の配列。
 
-   次に、関数は 2 つの API を呼び出します。 [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
+   次に、関数は 2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL TargetOffersView]** 」をクリックします。 次を検索： `func getPropositionAT(location: String) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 呼び出し (
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL TargetOffersView]** 」をクリックします。 次を検索： `func getPropositionAT(location: String) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 呼び出し (
    * は、決定範囲（A/B テストで定義した場所）に基づいて、現在のプロファイルの提案を取得し、
    * アプリに正しく表示できるコンテンツの結果の折り返しを解除します。
 
