@@ -3,36 +3,37 @@ title: Adobe Journey Optimizerのアプリ内メッセージ
 description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モバイルアプリに対するアプリ内メッセージを作成する方法について説明します。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
+feature: In App
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 2%
+source-wordcount: '1607'
+ht-degree: 3%
 
 ---
 
-# Adobe Journey Optimizerのアプリ内メッセージ
+# Journey Optimizerのアプリ内メッセージ
 
-Platform Mobile SDK およびAdobe Journey Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法について説明します。
+Platform Mobile SDK およびJourney Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法について説明します。
 
-Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信できます。 Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Adobe Journey Optimizerのアプリ内メッセージデータフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizerでは、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
->このレッスンはオプションで、アプリ内メッセージの送信を希望するAdobe Journey Optimizerユーザーにのみ適用されます。
+>このレッスンはオプションで、アプリ内メッセージの送信を希望するJourney Optimizerユーザーにのみ適用されます。
 
 
 ## 前提条件
 
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
-* Adobe Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のAdobe Journey Optimizer機能に対する十分な権限が必要です。
+* Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
    * キャンペーンを管理します。
 * 証明書、識別子、キーを作成するのに十分なアクセス権を持つ有料Apple開発者アカウント。
 * 物理iOSデバイスまたはテスト用のシミュレーター。
-* [Apple Push Notification Service に登録されたアプリ ID](journey-optimizer-push.md#register-app-id-with-apn)
-* [データ収集にアプリのプッシュ資格情報を追加しました](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
-* [Adobe Journey Optimizer Tags 拡張機能のインストール](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
-* [アプリにAdobe Journey Optimizerを実装](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+* Apple Push Notification Service に登録されたアプリ ID
+* データ収集にアプリのプッシュ資格情報を追加しました
+* Journey Optimizer Tags 拡張機能のインストール
+* アプリにJourney Optimizerを実装
 
 
 ## 学習内容
@@ -40,16 +41,121 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 このレッスンでは、次の操作を行います
 
 * アプリ ID をAppleプッシュ通知サービス (APN) に登録します。
-* の作成 **[!UICONTROL アプリサーフェス]** AJO 内で使用できます。
-* を更新します。 **[!UICONTROL スキーマ]** プッシュメッセージフィールドを含めるには
-* をインストールして設定します。 **[!UICONTROL Adobe Journey Optimizer]** タグ拡張。
-* AJO タグ拡張を含めるようにアプリを更新します。
+* AJO でアプリサーフェスを作成します。
+* Journey Optimizerタグ拡張機能をインストールして設定します。
+* Journey Optimizerタグ拡張を含めるようにアプリを更新します。
 * アシュランスで設定を検証します。
 * Journey Optimizerで独自のキャンペーンとアプリ内メッセージエクスペリエンスを定義する。
 * アプリ内から独自のアプリ内メッセージを送信します。
 
+## アプリのセットアップ
 
-## アシュランスで検証
+>[!TIP]
+>
+>アプリを既に [Journey Optimizerプッシュメッセージ](journey-optimizer-push.md) チュートリアルでは、この節をスキップできます。
+
+### アプリ ID を APNS に登録
+
+以下の手順は、Adobe Experience Cloud固有のものではなく、APNS の設定手順を示すように設計されています。
+
+### 秘密鍵の作成
+
+1. Apple開発者ポータルで、に移動します。 **[!UICONTROL キー]**.
+1. キーを作成するには、「 」を選択します。 **[!UICONTROL +]**.
+   ![新しいキーを作成](assets/mobile-push-apple-dev-new-key.png)
+
+1. 次を提供： **[!UICONTROL キー名]**.
+1. を選択します。 **[!UICONTROL Apple Push Notification service] (APNs)** チェックボックス。
+1. 「**[!UICONTROL 続行]**」を選択します。
+   ![新しいキーを設定](assets/mobile-push-apple-dev-config-key.png)
+1. 設定を確認し、「 」を選択します。 **[!UICONTROL 登録]**.
+1. をダウンロードします。 `.p8` 秘密鍵。 これは、App Surface 設定で使用されます。
+1. 次の項目をメモします。 **[!UICONTROL キー ID]**. これは、App Surface 設定で使用されます。
+1. 次の項目をメモします。 **[!UICONTROL チーム ID]**. これは、App Surface 設定で使用されます。
+   ![キーの詳細](assets/push-apple-dev-key-details.png)
+
+追加のドキュメントは、 [ここにある](https://help.apple.com/developer-account/#/devcdfbb56a3).
+
+### データ収集にアプリのプッシュ資格情報を追加
+
+1. 次から： [データ収集インターフェイス](https://experience.adobe.com/data-collection/)を選択します。 **[!UICONTROL アプリのサーフェス]** をクリックします。
+1. 設定を作成するには、「 」を選択します。 **[!UICONTROL アプリサーフェスを作成]**.
+   ![アプリのサーフェスホーム](assets/push-app-surface.png)
+1. を入力します。 **[!UICONTROL 名前]** 設定の場合、例： `Luma App Tutorial`  .
+1. 送信者 **[!UICONTROL モバイルアプリケーション設定]**&#x200B;を選択します。 **[!UICONTROL Apple iOS]**.
+1. 「**[!UICONTROL アプリ ID（iOS バンドル ID）]**」フィールドにモバイルアプリのバンドル ID を入力します。例：`com.adobe.luma.tutorial.swiftui`。
+1. をオンにします。 **[!UICONTROL プッシュ認証情報]** を切り替えて、資格情報を追加します。
+1. をドラッグ&amp;ドロップします。 `.p8` **Appleプッシュ通知認証キー** ファイル。
+1. 次を提供： **[!UICONTROL キー ID]**: `p8` 認証キー。 これは、 **[!UICONTROL キー]** 」タブをクリックします。 **証明書、識別子、およびプロファイル** Apple Developer Portal ページのページ。 関連トピック [秘密鍵の作成](#create-a-private-key).
+1. **[!UICONTROL チーム ID]** を指定します。チーム ID は、 **メンバーシップ** 」タブまたはApple Developer Portal ページの上部に表示されます。 関連トピック [秘密鍵の作成](#create-a-private-key).
+1. 「**[!UICONTROL 保存]**」を選択します。
+
+   ![アプリのサーフェス設定](assets/push-app-surface-config.png)
+
+### Journey Optimizer Tags 拡張機能のインストール
+
+アプリがJourney Optimizerで動作するようにするには、タグプロパティを更新する必要があります。
+
+1. に移動します。 **[!UICONTROL タグ]** > **[!UICONTROL 拡張機能]** > **[!UICONTROL カタログ]**,
+1. プロパティを開きます（例： ）。 **[!UICONTROL Luma モバイルアプリチュートリアル]**.
+1. 選択 **[!UICONTROL カタログ]**.
+1. を検索します。 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
+1. 拡張機能のインストール.
+1. Adobe Analytics の **[!UICONTROL 拡張機能のインストール]** ダイアログ
+   1. 環境を選択します（例： ）。 **[!UICONTROL 開発]**.
+   1. を選択します。 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセット **[!UICONTROL イベントデータセット]** リスト。
+   1. 選択 **[!UICONTROL ライブラリに保存してビルドする]**.
+      ![AJO 拡張機能の設定](assets/push-tags-ajo.png)
+
+>[!NOTE]
+>
+>表示されない場合 `AJO Push Tracking Experience Event Dataset` 必要に応じて、カスタマーケアにお問い合わせください。
+>
+
+### アプリでのJourney Optimizerの実装
+
+前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、メッセージング SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
+
+>[!NOTE]
+>
+>以下を完了した場合、 [SDK のインストール](install-sdks.md) 」セクションに移動した場合は、SDK が既にインストールされているので、この手順をスキップできます。
+>
+
+1. Xcode で、 [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios.git) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
+1. 確認 `AEPMessaging` は、インポートのリストの一部です。
+
+   `import AEPMessaging`
+
+1. 確認 `Messaging.self` は、登録する拡張機能の配列の一部です。
+
+   ```swift
+   let extensions = [
+       AEPIdentity.Identity.self,
+       Lifecycle.self,
+       Signal.self,
+       Edge.self,
+       AEPEdgeIdentity.Identity.self,
+       Consent.self,
+       UserProfile.self,
+       Places.self,
+       Messaging.self,
+       Optimize.self,
+       Assurance.self
+   ]
+   ```
+
+1. 次を追加： `MobileCore.setPushIdentifier` から `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 関数に置き換えます。
+
+   ```swift
+   // Send push token to Experience Platform
+   MobileCore.setPushIdentifier(deviceToken)
+   ```
+
+   この関数は、アプリがインストールされているデバイスに固有のデバイストークンを取得します。 次に、設定済みの設定を使用し、Appleのプッシュ通知サービス (APNs) に依存するプッシュ通知配信用のトークンを設定します。
+
+
+## セットアップ保証の検証
 
 1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
 1. 物理デバイスまたはシミュレーターにアプリをインストールします。
@@ -79,7 +185,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. Journey Optimizer UI で、 **[!UICONTROL キャンペーン]** をクリックします。
 1. 選択 **[!UICONTROL キャンペーンを作成]**.
 1. Adobe Analytics の **[!UICONTROL キャンペーンを作成]** 画面：
-   1. 選択 **[!UICONTROL アプリ内メッセージ]** を選択し、 **[!UICONTROL Luma モバイルアプリ]** から **[!UICONTROL アプリサーフェス]** リスト。
+   1. 選択 **[!UICONTROL アプリ内メッセージ]** をクリックし、 **[!UICONTROL アプリサーフェス]** 例えば、リスト **[!UICONTROL Luma モバイルアプリ]**.
    1. 選択 **[!UICONTROL 作成]**
       ![キャンペーンのプロパティ](assets/ajo-campaign-properties.png)
 1. キャンペーンの定義画面で、 **[!UICONTROL プロパティ]**、 **[!UICONTROL 名前]** （例：キャンペーン） `Luma - In-App Messaging Campaign`、および **[!UICONTROL 説明]**&#x200B;例： `In-app messaging campaign for Luma app`.
@@ -112,9 +218,9 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 ## アプリ内メッセージのトリガー
 
-アプリ内メッセージを送信するためのすべての材料が揃っています。 残りの点は、コードでこのアプリ内メッセージにトリガーを設定する方法です。
+アプリ内メッセージを送信するためのすべての材料が揃っています。 残りの点は、アプリでこのアプリ内メッセージにトリガーを設定する方法です。
 
-1. Xcode プロジェクトナビゲーターで、Luma/Luma/Utils/MobileSDK に移動し、 `func sendTrackAction(action: String, data: [String: Any]?)` 関数を呼び出し、次のコードを追加します。このコードは、 `MobileCore.track` 関数、パラメーターに基づく `action` および `data`.
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func sendTrackAction(action: String, data: [String: Any]?)` 関数を呼び出し、次のコードを追加します。このコードは、 `MobileCore.track` 関数、パラメーターに基づく `action` および `data`.
 
 
    ```swift
@@ -122,7 +228,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    MobileCore.track(action: action, data: data)
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL ConfigView]** Xcode Project Navigator の下に表示されます。 アプリ内メッセージボタンのコードを探し、次のコードを追加します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL ConfigView]** をクリックします。 アプリ内メッセージボタンのコードを探し、次のコードを追加します。
 
    ```swift
    Task {
@@ -141,7 +247,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## アシュランスで検証
+## アシュランスでの実装の検証
 
 Assurance UI でアプリ内メッセージを検証できます。
 
@@ -152,12 +258,12 @@ Assurance UI でアプリ内メッセージを検証できます。
    ![アプリ内メッセージのアシュランス](assets/assurance-in-app-display-message.png)
 
 
-## アプリへの実装
+## 次の手順
 
-これで、プッシュ通知を（関連する場合に）Luma アプリに追加するためのすべてのツールが揃いました。 例えば、アプリにログインする際や、特定の位置情報に近づいた際に、ユーザーを歓迎する場合などです。
+これで、関連する場合、適用可能な場合に、Luma アプリにアプリ内メッセージを追加するためのすべてのツールが用意されました。 例えば、アプリ内で追跡した特定のインタラクションに基づいて製品をプロモーションする場合などです。
 
 >[!SUCCESS]
 >
->これで、アプリでアプリ内メッセージを有効にし、Adobe Journey OptimizerとAdobe Experience Platform Mobile SDK 用のAdobe Journey Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>アプリでアプリ内メッセージを有効にし、Experience PlatformMobile SDK 用のJourney OptimizerとJourney Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[Journey Optimizerでオファーを表示](journey-optimizer-offers.md)**
