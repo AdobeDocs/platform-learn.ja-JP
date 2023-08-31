@@ -3,9 +3,9 @@ title: モバイルアプリでのAdobe Experience Cloudの実装チュートリ
 description: Adobe Experience Cloudモバイルアプリケーションの実装方法を説明します。 このチュートリアルでは、サンプルの Swift アプリケーションでExperience Cloudアプリケーションを実装する手順を説明します。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '659'
 ht-degree: 11%
 
 ---
@@ -39,6 +39,10 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * [プロファイル](profile.md)
    * [Adobe Experience Platform](platform.md)
    * [Journey Optimizerを使用したプッシュメッセージ](journey-optimizer-push.md)
+   * [Journey Optimizerを使用した Im-app メッセージ](journey-optimizer-inapp.md)
+   * [Journey Optimizerとのオファー](journey-optimizer-offers.md)
+   * [Target での A/B テスト](target.md)
+
 * にExperience Cloudパラメーターを正しく渡す [webview](web-views.md).
 * を使用して実装を検証する [Adobe Experience Platform Assurance](assurance.md).
 
@@ -74,12 +78,12 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 
 サンプルアプリケーションの 2 つのバージョンをダウンロードできます。
 
-1. [空](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：このチュートリアルの実践的な演習を完了するためのExperience Cloudコードのないバージョン。
-1. [完全実装済み](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：参照用に完全なExperience Cloud実装を含むバージョン。
+1. [空](https://git.corp.adobe.com/rmaur/Luma{target="_blank"})：このチュートリアルの実践的な演習を完了するためのExperience Cloudコードのないバージョン。
+1. [完全実装済み](https://git.corp.adobe.com/Luma{target="_blank"})：参照用に完全なExperience Cloud実装を含むバージョン。
 
 それでは、始めましょう。
 
->[!NOTE]
+>[!SUCCESS]
 >
 >Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
