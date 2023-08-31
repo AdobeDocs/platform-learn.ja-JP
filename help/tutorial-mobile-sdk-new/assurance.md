@@ -3,10 +3,10 @@ title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 5%
+source-wordcount: '738'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 以下の手順を実行して、組織がアシュランスにアクセスできることを確認します。
 
-1. 訪問 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance{target="_blank"}).
+1. 訪問 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
 1. Experience CloudのAdobe ID資格情報を使用してログインします。
 1. 次の項目が表示された場合、 **[!UICONTROL セッション]** 画面が表示され、アクセス権が付与されます。 （ベータ版）アクセスページが表示された場合は、「 **[!UICONTROL 登録]** 登録する。
 
@@ -56,7 +56,7 @@ ht-degree: 5%
    }
    ```
 
-詳しくは、[こちら](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"})を参照してください。
+詳細はこちらをご覧ください [ここ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## 署名
 
@@ -81,7 +81,7 @@ Xcode でアプリケーションを初めて実行する前に、必ず署名�
 
    ![アシュアランス url](assets/assurance-url-type.png)
 
-iOSでの URL スキームについて詳しくは、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app{target="_blank"}).
+iOSでの URL スキームについて詳しくは、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 アシュランスは、ブラウザーまたは QR コードを介して URL を開くことで機能します。 この URL は、アプリを開くベース URL で始まり、追加のパラメーターが含まれています。 これらの一意のパラメーターは、セッションの接続に使用されます。
 
@@ -129,7 +129,7 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
 
      ![アシュランスイベント](assets/assurance-events.png)
 
-問題が発生した場合は、 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/{target="_blank"}) および [一般ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja{target="_blank"}).
+問題が発生した場合は、 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja){target="_blank"}.
 
 >[!SUCCESS]
 >
