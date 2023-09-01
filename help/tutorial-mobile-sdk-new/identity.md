@@ -3,9 +3,9 @@ title: ID
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 8%
 
 ---
@@ -112,7 +112,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 以下を使用できます。 `removeIdentity` をクリックして、保存されたクライアント側の IdentityMap から id を削除します。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側のユーザープロファイルグラフまたは ID グラフから識別子が削除されることはありません。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
 
    ```swift
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
@@ -122,7 +122,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** Xcode プロジェクトナビゲーターで、 **[!UICONTROL ログアウト]** 」ボタンをクリックします。 次のコードを追加します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログアウト]** 」ボタンをクリックします。 次のコードを追加します。
 
    ```swift
    // call removeIdentities
@@ -144,7 +144,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. Assurance Web UI で**[!UICONTROL エッジ ID の更新 ID]**イベント **[!UICONTROL com.adobe.griffon.mobile]** ベンダー。
+1. Assurance Web UI で **[!UICONTROL エッジ ID の更新 ID]** イベント **[!UICONTROL com.adobe.griffon.mobile]** ベンダー。
 1. イベントを選択し、 **[!UICONTROL ACPExtensionEventData]** オブジェクト。 更新した ID が表示されます。
    ![id の更新を検証](assets/identity-validate-assurance.png)
 

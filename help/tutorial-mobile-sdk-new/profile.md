@@ -2,9 +2,9 @@
 title: プロファイル
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ターゲティングやパーソナライゼーションでは、ユーザーが以前にアプリで購入したかどうかをすばやく把握すると便利です。 Luma アプリでセットアップしましょう。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** そして、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
    // Create a profile map
@@ -62,7 +62,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    1. を使用します。 `profileMap` 辞書を `attributeDict` のパラメーター `UserProfile.updateUserAttributes` API 呼び出し。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** Xcode プロジェクトナビゲーターで、への呼び出しを探します。 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button):
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button):
 
    ```swift
    // Update attributes
@@ -75,7 +75,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ユーザーの属性を更新すると、他のAdobeSDK で使用できるようになりますが、属性を明示的に取得することもできます。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** /一般/ **[!UICONTROL HomeView]** Xcode プロジェクトナビゲーターで、を探します。 `.onAppear` 修飾子 次のコードを追加します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** /一般/ **[!UICONTROL HomeView]** Xcode プロジェクトナビゲーターで、 `.onAppear` 修飾子 次のコードを追加します。
 
    ```swift
    // Get attributes
@@ -113,9 +113,13 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    1. 選択 <img src="assets/saveforlater.png" width="15" />。
    1. 選択 <img src="assets/addtocart.png" width="20" />。
    1. 選択 <img src="assets/purchase.png" width="15" />。
-   1. に戻る **[!UICONTROL ホーム]** 画面。 次の更新された値が表示されます： **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]**.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+   1. に戻る **[!UICONTROL ホーム]** 画面。 バッジが追加されます <img src="assets/person-badge-icon.png" width="15" />。
+
+      <img src="./assets/personbadges.png" width="200">
+
+
 
 1. Assurance UI には、 **[!UICONTROL UserProfileUpdate]** および **[!UICONTROL getUserAttributes]** 更新された `profileMap` の値です。
    ![プロファイルを検証](assets/profile-validate.png)

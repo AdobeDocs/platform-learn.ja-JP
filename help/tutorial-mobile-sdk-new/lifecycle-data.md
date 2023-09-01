@@ -2,9 +2,9 @@
 title: ライフサイクルデータ
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 これで、プロジェクトを更新して、ライフサイクルイベントを登録できます。
 
-1. Xcode プロジェクトナビゲーターで、Luma / Luma / SceneDelegate に移動します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 」をクリックします。
 
 1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは、 `sceneWillEnterForeground:` delegate メソッドと、ライフサイクル開始イベントをトリガーする場所です。 このコードを `func sceneWillEnterForeground(_ scene: UIScene)`:
 
@@ -87,24 +87,23 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 1. 選択 **[!UICONTROL 初期ビルド]** を使用するライブラリとして追加しました。
 1. 「**[!UICONTROL 新規ルールを作成]**」を選択します。
    ![新規ルールの作成](assets/rules-create-new.png)
-1. Adobe Analytics の [!UICONTROL ルールを作成] 画面、入力 `Application Status` 対象： **[!UICONTROL 名前]**.
+1. Adobe Analytics の **[!UICONTROL ルールを作成]** 画面、入力 `Application Status` 対象： **[!UICONTROL 名前]**.
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** below **[!UICONTROL イベント]**.
    ![ルールを作成ダイアログ](assets/rule-create-name.png)
-1. Adobe Analytics の [!UICONTROL イベント設定] 手順：
+1. Adobe Analytics の **[!UICONTROL イベント設定]** 手順：
    1. 選択 **[!UICONTROL Mobile Core]** として **[!UICONTROL 拡張]**.
    1. 選択 **[!UICONTROL 前景]** として **[!UICONTROL イベントタイプ]**.
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
       ![ルールイベント設定](assets/rule-event-configuration.png)
-1. ルールを作成画面に戻って、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** 次の **[!UICONTROL Mobile Core - Foreground]**.
+1. 戻る **[!UICONTROL ルールを作成]** 画面、選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** 次の **[!UICONTROL Mobile Core - Foreground]**.
    ![次のイベント設定](assets/rule-event-configuration-next.png)
-1. Adobe Analytics の [!UICONTROL イベント設定] 手順：
+1. Adobe Analytics の **[!UICONTROL イベント設定]** 手順：
    1. 選択 **[!UICONTROL Mobile Core]** として **[!UICONTROL 拡張]**.
    1. 選択 **[!UICONTROL 背景]** として **[!UICONTROL イベントタイプ]**.
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
       ![ルールイベント設定](assets/rule-event-configuration-background.png)
-1. ルールを作成画面に戻って、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** below **[!UICONTROL アクション]**.
-   ![ルール追加アクション](assets/rule-action-button.png)
-1. Adobe Analytics の [!UICONTROL アクションの設定] 手順：
+      ![ルール追加アクション](assets/rule-action-button.png)
+1. Adobe Analytics の **[!UICONTROL アクションの設定]** 手順：
    1. 選択 **[!UICONTROL AdobeExperience Edge ネットワーク]** として **[!UICONTROL 拡張]**.
    1. 選択 **[!UICONTROL イベントを Edge ネットワークに転送する]** として **[!UICONTROL アクションタイプ]**.
    1. 「**[!UICONTROL 変更を保持]**」を選択します。

@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 * タグライブラリが正常に構築され、 [前のレッスン](configure-tags.md).
 * からの開発環境ファイル ID [モバイルインストール手順](configure-tags.md#generate-sdk-install-instructions).
-* ダウンロード済み、空 [サンプルアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}).
-* の使用経験 [XCode](https://developer.apple.com/xcode/{target="_blank"}).
+* ダウンロード済み、空 [サンプルアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* の使用経験 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 学習内容
 
@@ -80,7 +80,7 @@ import AEPAssurance
 
 ## AppDelegate を更新
 
-に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** Xcode プロジェクトナビゲーターで使用します。
+に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 」をクリックします。
 
 1. を設定します。 `@AppStorage` 値 `environmentFileId` を、手順 6 でタグから取得した開発環境ファイル ID 値 ( [SDK のインストール手順の生成](configure-tags.md#generate-sdk-install-instructions).
 
