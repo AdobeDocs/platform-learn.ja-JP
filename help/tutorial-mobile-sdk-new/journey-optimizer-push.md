@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2173'
 ht-degree: 4%
 
 ---
@@ -49,11 +49,11 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 * アプリ内から独自のプッシュ通知を送信します。
 
 
-## アプリのセットアップ
+## セットアップ
 
 >[!TIP]
 >
->アプリを既に [Journey Optimizerのアプリ内メッセージ](journey-optimizer-inapp.md) チュートリアルでは、この節をスキップできます。
+>環境を既に [Journey Optimizerのアプリ内メッセージ](journey-optimizer-inapp.md) チュートリアルでは、この節をスキップできます。
 
 ### アプリ ID を APNS に登録
 

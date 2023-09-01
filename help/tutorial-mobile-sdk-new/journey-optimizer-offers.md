@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,11 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 * アプリに、決定管理からオファーを実装します。
 
 
-## アプリのセットアップ
+## セットアップ
 
 >[!TIP]
 >
->アプリを既に [Target での A/B テストの設定](target.md) チュートリアル：スキップできます [Adobe Journey Optimizer - Decisioning タグ拡張機能のインストール](#install-adobe-journey-optimizer---decisioning-tags-extension) および [スキーマを更新](#update-your-schema).
+>環境を既に [Target での A/B テストの設定](target.md) チュートリアル：スキップできます [Adobe Journey Optimizer - Decisioning タグ拡張機能のインストール](#install-adobe-journey-optimizer---decisioning-tags-extension) および [スキーマを更新](#update-your-schema).
 
 ### Edge 設定を更新
 
@@ -368,7 +368,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 
 * オファーに異なるパラメーター（優先度、キャッピングなど）を適用する
 * アプリでのプロファイル属性の収集 ( [プロファイル](profile.md)) をクリックし、これらのプロファイル属性を使用してオーディエンスを構築します。 その後、これらのオーディエンスを、決定の実施要件ルールの一部として使用します。
-* 複数の決定範囲を組み合わせる
+* 複数の決定範囲を組み合わせます。
 
 >[!SUCCESS]
 >

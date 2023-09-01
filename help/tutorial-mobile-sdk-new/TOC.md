@@ -8,9 +8,9 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: a48c1eedbb3e75d9ebdcf1262cab493e4a097d72
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '74'
 ht-degree: 72%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 72%
    + [WebViews](web-views.md)
    + [ID](identity.md)
    + [プロファイル](profile.md)
+   + [Places](places.md)
 + Experience Cloud {#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)

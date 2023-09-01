@@ -2,9 +2,9 @@
 title: プロファイル
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 4%
 
 ---
@@ -128,4 +128,4 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 >
 >これで、Edge ネットワーク内のプロファイルの属性を更新するアプリを設定し、（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようになりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[データをAdobe Analyticsにマッピング](analytics.md)**
+次へ： **[位置情報サービスを使用する](places.md)**

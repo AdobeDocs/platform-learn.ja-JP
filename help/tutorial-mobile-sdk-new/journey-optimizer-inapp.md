@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1605'
 ht-degree: 3%
 
 ---
@@ -48,11 +48,11 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 * Journey Optimizerで独自のキャンペーンとアプリ内メッセージエクスペリエンスを定義する。
 * アプリ内から独自のアプリ内メッセージを送信します。
 
-## アプリのセットアップ
+## セットアップ
 
 >[!TIP]
 >
->アプリを既に [Journey Optimizerプッシュメッセージ](journey-optimizer-push.md) チュートリアルでは、この節をスキップできます。
+>環境を既に [Journey Optimizerプッシュメッセージ](journey-optimizer-push.md) チュートリアルでは、この節をスキップできます。
 
 ### アプリ ID を APNS に登録
 
