@@ -2,9 +2,9 @@
 title: プロファイル
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '612'
 ht-degree: 4%
 
 ---
@@ -41,16 +41,14 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ## ユーザー属性の設定と更新
 
-ターゲティングやパーソナライゼーションでは、ユーザーが以前にアプリで購入したかどうかをすばやく把握すると便利です。 Luma アプリでセットアップしましょう。
+アプリでのターゲティングやパーソナライゼーションに役立つのは、ユーザーが過去または最近に購入したかどうかをすばやく知ることです。 Luma アプリでセットアップしましょう。
 
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
-   // Create a profile map
+   // Create a profile map, add attributes to the map and update profile using the map
    var profileMap = [String: Any]()
-   // Add attributes to profile map
    profileMap[attributeName] = attributeValue
-   // Use profile map to update user attributes
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
@@ -60,22 +58,21 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    1. を使用して辞書に要素を追加します。 `attributeName` 例： `isPaidUser`) および `attributeValue` 例： `yes`) をクリックします。
 
-   1. を使用します。 `profileMap` 辞書を `attributeDict` のパラメーター `UserProfile.updateUserAttributes` API 呼び出し。
+   1. を使用します。 `profileMap` 辞書を `attributeDict` のパラメーター [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 呼び出し。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button):
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button). 次のコードを追加します。
 
    ```swift
    // Update attributes
    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
-その他のドキュメントも参照できます。 [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## ユーザー属性の取得
 
-ユーザーの属性を更新すると、他のAdobeSDK で使用できるようになりますが、属性を明示的に取得することもできます。
+ユーザーの属性を更新すると、他のAdobeSDK でも使用できるようになりますが、属性を明示的に取得して、アプリを好きなように動作させることもできます。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** /一般/ **[!UICONTROL HomeView]** Xcode プロジェクトナビゲーターで、 `.onAppear` 修飾子 次のコードを追加します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL HomeView]** Xcode プロジェクトナビゲーターで、 `.onAppear` 修飾子 次のコードを追加します。
 
    ```swift
    // Get attributes
@@ -91,7 +88,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    このコードは次を実行します。
 
-   1. 呼び出し `UserProfile.getUserAttributes` ～で閉鎖する `iPaidUser` 属性名を `attributeNames` 配列。
+   1. 呼び出し [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を使用した API `iPaidUser` 属性名を `attributeNames` 配列。
    1. 次に、 `isPaidUser` 属性とタイミング `yes`をクリックし、 <img src="assets/paiduser.png" width="20" /> アイコンを使用して、アイコンをクリックします。
 
 その他のドキュメントも参照できます。 [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
@@ -106,18 +103,25 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    1. アシュランスアイコンを左に移動します。
    1. 選択 **[!UICONTROL ホーム]** 」をクリックします。
    1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> button.
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. ランダムな電子メールと顧客 ID を挿入するには、 <img src="assets/insert.png" width="15" /> button .
    1. 選択 **[!UICONTROL ログイン]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
+
    1. 選択 **[!UICONTROL 製品]** 」をクリックします。
    1. 1 つの製品を選択します。
    1. 選択 <img src="assets/saveforlater.png" width="15" />。
    1. 選択 <img src="assets/addtocart.png" width="20" />。
    1. 選択 <img src="assets/purchase.png" width="15" />。
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
    1. に戻る **[!UICONTROL ホーム]** 画面。 バッジが追加されます <img src="assets/person-badge-icon.png" width="15" />。
 
-      <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/personbadges.png" width="300">
 
 
 

@@ -2,9 +2,9 @@
 title: Places
 description: モバイルアプリで Places の位置情報サービスを使用する方法について説明します。
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1754'
 ht-degree: 3%
 
 ---
@@ -88,8 +88,8 @@ Places サービスで目標地点を定義します。
 1. に移動します。 **[!UICONTROL タグ]** モバイルタグプロパティを見つけて、プロパティを開きます。
 1. 選択 **[!UICONTROL 拡張機能]**.
 1. 選択 **[!UICONTROL カタログ]**.
-1. を検索します。 **[!UICONTROL Adobe Journey Optimizer — 判定]** 拡張子。
-1. 拡張機能のインストール. 拡張機能に追加の設定は必要ありません。
+1. を検索します。 **[!UICONTROL 場所]** 拡張子。
+1. 拡張機能のインストール.
 
    ![判定拡張機能の追加](assets/tag-places-extension.png)
 
@@ -116,7 +116,7 @@ Places サービスで目標地点を定義します。
 
 ### タグを更新する
 
-Places 拡張機能は、位置情報イベントを監視する機能を提供し、これらのイベントに基づいてアクションをトリガー化できます。 この機能を使用して、アプリケーションに実装する必要のある API コーディングを最小限に抑えることができます。
+タグの Places 拡張機能は、位置情報イベントを監視する機能を提供し、これらのイベントに基づいてアクションをトリガー化できます。 この機能を使用して、アプリケーションに実装する必要のある API コーディングを最小限に抑えることができます。
 
 **データ要素**
 
@@ -128,7 +128,7 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
 1. Adobe Analytics の **[!UICONTROL データ要素を作成]** 画面（例： ） `Name - Entered`.
 1. 選択 **[!UICONTROL 場所]** から **[!UICONTROL 拡張]** リスト。
 1. 選択 **[!UICONTROL 名前]** から **[!UICONTROL データ要素タイプ]** リスト。
-1. 選択**[!UICONTROL 現在の POI]**の下 **[!UICONTROL TARGET]**.
+1. 選択 **[!UICONTROL 現在の POI]** underthen **[!UICONTROL TARGET]**.
 1. 選択 **[!UICONTROL ライブラリに保存]**.
    ![データ要素](assets/tags-create-data-element.png)
 
@@ -150,7 +150,7 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
 
 次に、これらのデータ要素を使用するルールを定義します。
 
-1. 選択 **[!UICONTROL ルール]** をクリックします。
+1. タグプロパティ内。 選択 **[!UICONTROL ルール]** をクリックします。
 1. 選択 **[!UICONTROL ルールを追加]**.
 1. Adobe Analytics の **[!UICONTROL ルールを作成]** 画面で、ルールの名前を入力します。例： `POI - Entry`.
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL イベント]**.
@@ -183,7 +183,7 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
       }
       ```
 
-      The `{%% ... %%}` 値は、 ![データ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) ダイアログの横に表示され、ダイアログからデータ要素を選択します。
+      また、 `{%% ... %%}` JSON のデータ要素プレースホルダー値を選択するには、 ![データ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). ポップアップダイアログでは、作成したデータ要素を選択できます。
 
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
       ![タグアクション](assets/tags-action-mobile-core.png)
@@ -249,7 +249,7 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
 アシュランスで設定を検証するには、次の手順に従います。
 
 1. Assurance UI に移動します。
-1. 左側のパネルでまだ使用できない場合は、をクリックします。 選択 **[!UICONTROL 設定]** 左側のパネルで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL イベント]** および **[!UICONTROL マップとシミュレーション]** underthen **[!UICONTROL PLACES SERVICE]**.
+1. 左側のパネルでまだ使用できない場合は、「 」を選択します。 **[!UICONTROL 設定]** 左側のパネルで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL イベント]** および **[!UICONTROL マップとシミュレーション]** underthen **[!UICONTROL PLACES SERVICE]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 選択 **[!UICONTROL マップとシミュレーション]** をクリックします。
 1. Places サービスで定義された POI の 1 つを選択し、ポップアップから次を選択します ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL エントリイベントをシミュレート]**.
@@ -291,12 +291,21 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
    ]
    ```
 
-1. Xcode プロジェクトナビゲーターで Luma / Luma / Utils / MobileSDK に移動し、関数 processRegionEvent(regionEvent: PlacesRegionEvent, forRegion: CLRegion) 非同期関数を探します。 この関数は、 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API.
-1. Xcode のプロジェクトナビゲーターで、Luma / Luma /ビュー/場所/ジオフェンスシートに移動します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 関数に追加します。次のコードを追加します。
+
+   ```swift
+   // Process geolocation event
+   Places.processRegionEvent(regionEvent, forRegion: region)
+   ```
+
+   この [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API は、位置情報を Places サービスに通信します。
+
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 場所]** > **[!UICONTROL GeofenceSheet]** Xcode のプロジェクトナビゲーター内。
 
    1. 「入力」ボタンに、次のコードを入力します。
 
    ```swift
+   // Simulate geofence entry event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
    }
@@ -305,12 +314,13 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
    1. 「終了」ボタンに、次のコードを入力します。
 
    ```swift
+   // Simulate geofence exit event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
    }
    ```
 
-このチュートリアルのトピックの外で、iOS内のロケーションマネージャー実装の詳細について説明します。
+このチュートリアルでは、iOS内のロケーションマネージャー実装の詳細について説明します。
 
 
 ## アプリを使用した検証
@@ -321,13 +331,13 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
 
 1. マップを動かして、中央の青い円が POI の 1 つ（例：ロンドン）の上にあることを確認します。
 
-1. 青をタップ <img src="assets/geobutton.png" width="20" /> 右下にカテゴリと名前が表示されるまで繰り返し繰り返し実行します。
+1. タップ <img src="assets/geobutton.png" width="20" /> 右下にカテゴリと名前が表示されるまで繰り返し繰り返し実行します。
 
-1. POI のラベルをタップすると、近くの POI シートが開きます。
+1. POI のラベルをタップすると、 **[!UICONTROL 近くの POI]** シート。
 
    <img src="assets/appgeolocation.png" width="300" />
 
-1. アプリからの位置情報イベントをシミュレートするには、「入口」または「終了」ボタンを押します。
+1. を押します。 **[!UICONTROL 入口]** または **[!UICONTROL 終了]** ボタンを使用して、アプリからのジオフェンスエントリおよびジオフェンスの終了イベントをシミュレートします。
 
    <img src="assets/appentryexit.png" width="300" />
 
@@ -337,9 +347,11 @@ Places 拡張機能は、位置情報イベントを監視する機能を提供�
 
 ## 次の手順
 
-これで、アプリ内の位置情報機能に機能を追加するためのすべてのツールが用意できました。 イベントを Edge ネットワークやデータストリームを通じてExperience Platformに転送すると、アプリで使用されるプロファイルに対してエクスペリエンスイベントが表示されます。 これらのエクスペリエンスイベントは、Journey Optimizerでのジャーニーのトリガーに使用できます ( [プッシュ通知](journey-optimizer-inapp.md) および [アプリ内メッセージ](journey-optimizer-push.md) (Journey Optimizer))。 例えば、物理ストアのジオフェンスに入る際にアプリユーザーにプッシュ通知を送信する通常の例です。
+これで、アプリ内の位置情報機能に機能を追加するためのすべてのツールが用意できました。 イベントを Edge ネットワークに転送したとき、アプリを次のように設定したら、 [Experience Platform](platform.md)に設定すると、アプリで使用されているプロファイルに対してエクスペリエンスイベントが表示されます。
 
-アプリの機能の実装は、主に Places サービス、タグプロパティで定義したデータ要素およびルールによって実行されています。 または、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API( [イベント](events.md) （詳しくは、を参照）が設定された placeContext オブジェクトを含む XDM ペイロードを使用している場合。
+このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガー化できます ( [プッシュ通知](journey-optimizer-inapp.md) および [アプリ内メッセージ](journey-optimizer-push.md) (Journey Optimizer))。 例えば、アプリユーザーが物理ストアのジオフェンスに入ったときに、製品プロモーションを含むプッシュ通知をアプリユーザーに送信する通常の例です。
+
+アプリの機能の実装は、主に Places サービス、タグプロパティで定義したデータ要素およびルールによって実行されています。 そのため、アプリ内のコードを最小限に抑えます。 または、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API( [イベント](events.md) （詳しくは、を参照）、 `placeContext` オブジェクト。
 
 >[!SUCCESS]
 >

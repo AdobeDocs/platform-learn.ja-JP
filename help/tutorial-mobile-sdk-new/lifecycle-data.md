@@ -2,9 +2,9 @@
 title: ライフサイクルデータ
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,8 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 選択 **[!UICONTROL 背景]** として **[!UICONTROL イベントタイプ]**.
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
       ![ルールイベント設定](assets/rule-event-configuration-background.png)
-      ![ルール追加アクション](assets/rule-action-button.png)
+1. 戻る **[!UICONTROL ルールを作成]** 画面、選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** underthen **[!UICONTROL アクション]**.
+   ![ルール追加アクション](assets/rule-action-button.png)
 1. Adobe Analytics の **[!UICONTROL アクションの設定]** 手順：
    1. 選択 **[!UICONTROL AdobeExperience Edge ネットワーク]** として **[!UICONTROL 拡張]**.
    1. 選択 **[!UICONTROL イベントを Edge ネットワークに転送する]** として **[!UICONTROL アクションタイプ]**.

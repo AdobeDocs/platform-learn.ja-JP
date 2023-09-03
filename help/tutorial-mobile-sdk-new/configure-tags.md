@@ -3,7 +3,7 @@ title: タグプロパティの設定
 description: タグのプロパティを設定する方法については、 [!UICONTROL データ収集] インターフェイス。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 9%
@@ -129,7 +129,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
    ![環境のホーム画面](assets/tags-environments.png)
 
-1. Adobe Analytics の [!UICONTROL モバイルインストール手順] ダイアログで、 **[!UICONTROL iOS]** タブをクリックします。
+1. Adobe Analytics の **[!UICONTROL モバイルインストール手順]** ダイアログで、 **[!UICONTROL iOS]** タブをクリックします。
 
 1. コピー可能 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) CocoaPods を使用してプロジェクトを設定する手順 CocoaPods は、SDK のバージョンとダウンロードの管理に使用されます。 詳しくは、 [ドキュメント](https://cocoapods.org/).
 

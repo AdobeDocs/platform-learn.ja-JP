@@ -3,9 +3,9 @@ title: Analytics マッピング
 description: モバイルアプリでAdobe Analyticsのデータを収集する方法を説明します。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ The [イベント](events.md) 以前のレッスンで収集し、Platform Edge 
 
 ### 例#1 - s.products
 
-好例は [products 変数](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) 処理ルールを使用して入力できない XDM 実装では、必要なすべてのデータを productListItems に渡し、s.products は、Analytics マッピングを通じて自動的に入力されます。
+好例は [products 変数](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) 処理ルールを使用して入力できない XDM 実装を使用すると、必要なデータをすべてに渡すことができます `productListItems` および `s.products` は、Analytics マッピングを使用して自動的に入力されます。
 
 このオブジェクト：
 
@@ -56,7 +56,7 @@ The [イベント](events.md) 以前のレッスンで収集し、Platform Edge 
 ]
 ```
 
-その結果、次のようになります。
+結果：
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >現在 `productListItems[N].SKU` は、自動マッピングでは無視されます。
+
 
 ### 例#2 - scAdd
 
@@ -80,7 +81,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 }
 ```
 
-その結果、次のようになります。
+結果：
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ s.events = "scAdd"
 }
 ```
 
-その結果、次のようになります。
+結果：
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## アシュランスで検証
 
-の使用 [アシュランス QA ツール](assurance.md) ExperienceEvent の送信中で、XDM データが正しく、Analytics のマッピングが期待どおりに実行されていることを確認できます。 以下に例を示します。
+の使用 [アシュランス](assurance.md) エクスペリエンスイベントの送信中で、XDM データが正しく、Analytics のマッピングが期待どおりにおこなわれていることを確認できます。 以下に例を示します。
 
 1. productListAdds イベントを送信します。
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 以下に例を示します。
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 

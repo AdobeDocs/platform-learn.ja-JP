@@ -3,10 +3,10 @@ title: XDM スキーマの作成
 description: モバイルアプリイベント用の XDM スキーマを作成する方法を説明します。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 17%
+source-wordcount: '1416'
+ht-degree: 18%
 
 ---
 
@@ -100,7 +100,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    ![ドロップダウンから ExperienceEvent を選択する](assets/schema-create.png)
 
-1. 選択 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **追加** 次の [!UICONTROL フィールドグループ].
+1. 選択 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **追加** 次の **[!UICONTROL フィールドグループ]**.
 
    ![フィールドグループを追加](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    メインスキーマの構成画面に戻り、使用可能なフィールドがすべて表示されます。
 
-1. 「 」を選択して、スキーマに名前を付けます。 **[!UICONTROL 名称未設定のスキーマ]** 左上から、次に **[!UICONTROL 表示名]** &amp; **[!UICONTROL 説明]**&#x200B;例： `Luma Mobile App Event Schema` および `Schema for Luma mobile app experience events.`
+1. 「 」を選択して、スキーマに名前を付けます。 **[!UICONTROL 名称未設定のスキーマ]** から **[!UICONTROL 構成]** ペイン（下） **[!UICONTROL スキーマ]**) と、 **[!UICONTROL 表示名]** &amp; **[!UICONTROL 説明]**&#x200B;例： `Luma Mobile App Event Schema` および `Schema for Luma mobile app experience events.`
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -125,8 +125,8 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 >[!NOTE]
 >
 >グループ内のすべてのフィールドを使用する必要はないことに注意してください。 役立つ場合は、スキーマを空のデータレイヤーと考えることができます。 アプリでは、適切な時間に関連する値を設定します。
->
->The `Consumer Experience Event` は、という名前のデータ型を持ちます。 `Web information`：ページビューやリンククリックなどのイベントを表します。 書き込み時には、この機能に対するモバイルアプリの同等性がないので、独自のを作成します。
+
+The [!UICONTROL 消費者エクスペリエンスイベント] フィールドグループのデータタイプは [!UICONTROL Web 情報]：ページビューやリンククリックなどのイベントを表します。 書き込み時には、この機能に対するモバイルアプリの同等性がないので、独自のを作成します。
 
 ## カスタムデータタイプの作成
 
@@ -152,9 +152,8 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. フィールドを追加するには、 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 」ボタンをクリックします。
 
-   このフィールドは、アプリとのやり取りのためのコンテナオブジェクトです。
 
-1. キャメルケースの提供 **[!UICONTROL フィールド名]** `appInteraction`, **[!UICONTROL 表示名]** `App Interaction`をクリックし、次を選択します。 `Object` から **[!UICONTROL タイプ]** リスト。
+1. このフィールドは、アプリとのやり取りのためのコンテナオブジェクトなので、キャメルケースを提供します。 **[!UICONTROL フィールド名]** `appInteraction`, **[!UICONTROL 表示名]** `App Interaction`をクリックし、次を選択します。 `Object` から **[!UICONTROL タイプ]** リスト。
 
 1. 「**[!UICONTROL 適用]**」を選択します。
 
@@ -180,7 +179,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 右側のパネルの下までスクロールし、「 」を選択します。 **[!UICONTROL 適用]**.
 
-1. 次の手順で、 `appStateDetails` を含むオブジェクト **[!UICONTROL 測定]** ～と呼ばれるフィールド `screenView` と 2 **[!UICONTROL 文字列]** 名前の付いたフィールド `screenName` および `screenType` を作成する際と同じ手順に従います。 **[!UICONTROL appInteraction]** オブジェクト。
+1. 次の手順で、 `appStateDetails` を含むオブジェクト **[!UICONTROL 測定]** ～と呼ばれるフィールド `screenView` と 2 **[!UICONTROL 文字列]** 名前の付いたフィールド `screenName` および `screenType`の場合は、 **[!UICONTROL appInteraction]** オブジェクト。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -196,7 +195,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    ![新しいフィールドグループを追加中](assets/schema-fieldgroup-add.png)
 
-1. カスタムフィールドグループを作成するには、 **[!UICONTROL 新しいフィールドグループを作成]** 上部付近のラジオボタン。
+1. 「**[!UICONTROL 新しいフィールドグループを作成]**」を選択します。
 
 1. 次を提供： **[!UICONTROL 表示名]** および **[!UICONTROL 説明]**&#x200B;例： `App Interactions` および `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 右側のレールで、 **[!UICONTROL フィールド名]** / `appInformation`, a **[!UICONTROL 表示名]** / `App Information`、および **[!UICONTROL タイプ]** / `App Information`.
 
-1. 選択 **[!UICONTROL アプリのインタラクション]** から **[!UICONTROL タイプ]** ドロップダウン：前の演習で作成したデータタイプです。
+1. 選択 **[!UICONTROL アプリのインタラクション]** から **[!UICONTROL タイプ]** ドロップダウン（前の演習で作成したカスタムデータタイプ）。
 
 1. 「**[!UICONTROL 適用]**」を選択します。
 
@@ -220,7 +219,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 >[!NOTE]
 >
->カスタムフィールドグループは、常にExperience Cloud組織 ID の下に配置されます。 その場合 `_techmarketingdemos` は組織の一意の値に置き換えられます。
+>カスタムフィールドグループは、常にExperience Cloud組織 ID の下に配置されます。 その場合 `_techmarketingdemos`は、スクリーンショットで使用されているが、組織の一意の値に置き換えられます。
 
 
 >[!SUCCESS]

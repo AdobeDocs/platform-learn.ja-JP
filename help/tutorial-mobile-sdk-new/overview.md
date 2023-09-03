@@ -3,10 +3,10 @@ title: モバイルアプリでのAdobe Experience Cloudの実装チュートリ
 description: Adobe Experience Cloudモバイルアプリケーションの実装方法を説明します。 このチュートリアルでは、サンプルの Swift アプリケーションでExperience Cloudアプリケーションを実装する手順を説明します。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 11%
+source-wordcount: '725'
+ht-degree: 10%
 
 ---
 
@@ -30,6 +30,8 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 * モバイルタグプロパティを設定します。
 * Experience Platformデータセットを設定します（オプション）。
 * アプリにタグ拡張機能をインストールして実装します。
+* にExperience Cloudパラメーターを正しく渡す [webview](web-views.md).
+* を使用して実装を検証する [Adobe Experience Platform Assurance](assurance.md).
 * 次のAdobe Experience Cloudアプリケーション/拡張機能を追加します。
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [ライフサイクルデータの収集](lifecycle-data.md)
@@ -37,14 +39,14 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * [同意](consent.md)
    * [ID](identity.md)
    * [プロファイル](profile.md)
+   * [Places](places.md)
+   * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Journey Optimizerを使用したプッシュメッセージ](journey-optimizer-push.md)
    * [Journey Optimizerを使用した Im-app メッセージ](journey-optimizer-inapp.md)
    * [Journey Optimizerとのオファー](journey-optimizer-offers.md)
    * [Target での A/B テスト](target.md)
 
-* にExperience Cloudパラメーターを正しく渡す [webview](web-views.md).
-* を使用して実装を検証する [Adobe Experience Platform Assurance](assurance.md).
 
 >[!NOTE]
 >
@@ -72,14 +74,18 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 
 すべてのExperience Cloudのお客様は、Mobile SDK のデプロイに必要な機能にアクセスできる必要があります。
 
-また、あなたが～に詳しいと想定されています。 [!DNL Swift]. コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+>[!NOTE]
+>
+>iOSをプラットフォームとして使用します。 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用します。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 君は少し詳しいと思われる [!DNL Swift] および [!DNL SwiftUI]. コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+
 
 ## Luma アプリケーションのダウンロード
 
-サンプルアプリケーションの 2 つのバージョンをダウンロードできます。
+サンプルアプリケーションの 2 つのバージョンをダウンロードできます。 両方のバージョンをダウンロード/複製できます [Github](https://git.corp.adobe.com/rmaur/Luma). 次の 2 つのフォルダーがあります。
 
-1. [空](https://git.corp.adobe.com/rmaur/Luma{target="_blank"})：このチュートリアルの実践的な演習を完了するためのExperience Cloudコードのないバージョン。
-1. [完全実装済み](https://git.corp.adobe.com/Luma{target="_blank"})：参照用に完全なExperience Cloud実装を含むバージョン。
+
+1. [開始](https://git.corp.adobe.com/rmaur/Luma{target="_blank"})：このチュートリアルで実践的な演習を完了するために必要な、Experience PlatformMobile SDK コードのほとんどに対して、コードがない、またはプレースホルダーコードが付いたプロジェクトです。
+1. [完了](https://git.corp.adobe.com/Luma{target="_blank"})：参照用に完全な実装を含むバージョン。
 
 それでは、始めましょう。
 

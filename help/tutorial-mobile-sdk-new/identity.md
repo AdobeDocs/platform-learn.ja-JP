@@ -3,10 +3,10 @@ title: ID
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 8%
+source-wordcount: '666'
+ht-degree: 7%
 
 ---
 
@@ -54,16 +54,14 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateIdentities(emailAddress: String, crmId: String)` 関数の実装。 次のコードを関数に追加します。
 
    ```swift
-   // Set up identity map
+   // Set up identity map, add identities to map and update identities
    let identityMap: IdentityMap = IdentityMap()
    
-   // Add identity items to identity map
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
    let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
-   // Update identities
    Identity.updateIdentities(with: identityMap)
    ```
 
@@ -98,7 +96,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. に移動します。 **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
 
    ```swift
-   // call updaeIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -110,14 +108,14 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 ## ID の削除
 
-以下を使用できます。 `removeIdentity` をクリックして、保存されたクライアント側の IdentityMap から id を削除します。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側のユーザープロファイルグラフまたは ID グラフから識別子が削除されることはありません。
+以下を使用すると、 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 保存されたクライアント側 ID マップから ID を削除する API。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側のユーザープロファイルグラフまたは ID グラフから識別子が削除されることはありません。
 
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
 
    ```swift
+   // Remove identities and reset email and CRM Id to their defaults
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-   // reset email and CRM Id to their defaults
    currentEmailId = "testUser@gmail.com"
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
@@ -125,9 +123,8 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログアウト]** 」ボタンをクリックします。 次のコードを追加します。
 
    ```swift
-   // call removeIdentities
-   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-   dismiss()                   
+   // Remove identities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
    ```
 
 
@@ -137,11 +134,14 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. Luma アプリ内
    1. を選択します。 **[!UICONTROL ホーム]** タブをクリックします。
    1. Select the <img src="assets/login.png" width="15" /> アイコンを右上に表示します。
+
+      <img src="./assets/identity1.png" width="300">
+
    1. 電子メールアドレスと CRM ID を入力するか、
    1. 選択 <img src="assets/insert.png" width="15" /> ランダムに生成するには **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]**.
    1. 選択 **[!UICONTROL ログイン]**.
 
-      <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
+      <img src="./assets/identity2.png" width="300">
 
 
 1. Assurance Web UI で **[!UICONTROL エッジ ID の更新 ID]** イベント **[!UICONTROL com.adobe.griffon.mobile]** ベンダー。

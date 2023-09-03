@@ -3,9 +3,9 @@ title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '765'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 4%
 以下の手順を実行して、組織がアシュランスにアクセスできることを確認します。
 
 1. 訪問 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Experience CloudのAdobe ID資格情報を使用してログインします。
+1. Adobe IDの資格情報を使用してログインし、Experience Cloudします。
 1. 次の項目が表示された場合、 **[!UICONTROL セッション]** 画面が表示され、アクセス権が付与されます。 （ベータ版）アクセスページが表示された場合は、「 **[!UICONTROL 登録]** 登録する。
 
 ## 実装方法
@@ -56,6 +56,8 @@ ht-degree: 4%
    }
    ```
 
+   このコードは、アプリがバックグラウンドになっていて、ディープリンクを使用して開いたときに保証セッションを開始します。
+
 詳細はこちらをご覧ください [ここ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## 署名
@@ -63,21 +65,21 @@ ht-degree: 4%
 Xcode でアプリケーションを初めて実行する前に、必ず署名を更新してください。
 
 1. Xcode で  プロジェクトを開きます。
-1. 選択 **[!UICONTROL Luma]** 」と入力します。
+1. 選択 **[!UICONTROL Luma]** をクリックします。
 1. を選択します。 **[!UICONTROL Luma]** ターゲット。
 1. を選択します。 **署名と機能** タブをクリックします。
-1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**.
+1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**&#x200B;または、特定のApple開発プロビジョニングの詳細を使用します。
 
    ![Xcode 署名機能](assets/xcode-signing-capabilities.png)
 
 ## ベース URL の設定
 
 1. Xcode でプロジェクトに移動します。
-1. 選択 **[!UICONTROL Luma]** 」と入力します。
+1. 選択 **[!UICONTROL Luma]** をクリックします。
 1. を選択します。 **[!UICONTROL Luma]** ターゲット。
 1. を選択します。 **情報** タブをクリックします。
 1. ベース URL を追加するには、下にスクロールして **URL タイプ** をクリックし、 **+** 」ボタンをクリックします。
-1. 設定 **識別子** を、で設定したバンドル識別子に追加します。 [署名](#signing) 例： `com.adobe.luma.tutorial.swiftui`) および **URL スキーム** から `lumatutorialswiftui`.
+1. 設定 **識別子** を、で設定したバンドル識別子に追加します。 [署名](#signing) 例： `com.adobe.luma.tutorial.swiftui`) をクリックし、 **URL スキーム**&#x200B;例： `lumatutorialswiftui`.
 
    ![アシュアランス url](assets/assurance-url-type.png)
 
@@ -106,7 +108,7 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
    シミュレーターを使用している場合は、次の手順に従います。
 
    1. 選択 **[!UICONTROL リンクをコピー]**.
-   1. コピーを使用してディープリンクをコピーします ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 」ボタンをクリックし、ディープリンクを使用して、シミュレーターで Safari でアプリを開きます。
+   1. を使用してディープリンクをコピーする ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  ディープリンクを使用して、シミュレーターで Safari でアプリを開きます。
       ![アシュランスコピーリンク](assets/assurance-copy-link.png)
 
 1. アプリが読み込まれると、手順 7 で示す PIN を入力するよう求めるモーダルダイアログが表示されます。
@@ -119,15 +121,15 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
 1. 接続に成功した場合は、次のように表示されます。
    * アプリの上に浮かぶアシュランスアイコン。
 
-   <img src="assets/assurance-modal.png" width="300">
+     <img src="assets/assurance-modal.png" width="300">
 
-   * Assurance の Web ベースの UI で提供されるExperience Cloudの更新で、次の内容が表示されます。
+   * Assurance UI でのExperience Cloudの更新で、次の内容が表示されます。
 
       1. アプリからのエクスペリエンスイベント。
       1. 選択したイベントの詳細。
       1. デバイスとタイムライン。
 
-     ![アシュランスイベント](assets/assurance-events.png)
+         ![アシュランスイベント](assets/assurance-events.png)
 
 問題が発生した場合は、 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja){target="_blank"}.
 

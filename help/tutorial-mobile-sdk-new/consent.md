@@ -3,7 +3,7 @@ title: 同意
 description: モバイルアプリに同意を実装する方法を説明します。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 2%
@@ -41,6 +41,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    このコードを `updateConsent` 関数に置き換えます。
 
    ```swift
+   // Update consent
    let collectConsent = ["collect": ["val": value]]
    let currentConsents = ["consents": collectConsent]
    Consent.update(with: currentConsents)
@@ -52,12 +53,14 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    次のコードを `ATTrackingManager.requestTrackingAuthorization { status in` クロージャ。
 
    ```swift
+   // Add consent based on authorization
    if status == .authorized {
-         // Set consent to yes
-         MobileSDK.shared.updateConsent(value: "y")
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "y")
    }
    else {
-         MobileSDK.shared.updateConsent(value: "n")
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
@@ -70,6 +73,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    次のコードを `getConsents` 関数：
 
    ```swift
+   // Get consents
    Consent.getConsents { consents, error in
       guard error == nil, let consents = consents else { return }
       guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }

@@ -3,9 +3,9 @@ title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '546'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 ## 前提条件
 
-データストリームを作成するには、データ収集インターフェイス ( 旧称： [!UICONTROL Launch]) を使用し、 [!UICONTROL Experience Platform] > [!UICONTROL データ収集] > **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームの表示]**.
+データストリームを作成するには、データ収集インターフェイス ( 旧称： [!UICONTROL Launch]) をクリックし、データストリームの管理と表示を行うユーザー権限が必要です。
 
 ## 学習内容
 
@@ -74,7 +74,7 @@ ht-degree: 9%
 
 1. 切り替えてサービスを有効にする **[!UICONTROL 有効]** オン。
 
-1. を選択します。 **[!UICONTROL イベントデータセット]** を [データセットの作成](platform.md#create-a-dataset) 例えば、命令 **Luma モバイルアプリイベントデータセット**
+1. を選択します。 **[!UICONTROL イベントデータセット]** を [データセットの作成](platform.md#create-a-dataset) 手順、例： **Luma モバイルアプリイベントデータセット**
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -88,7 +88,7 @@ ht-degree: 9%
 >
 >組織が使用する各サービスを有効にすると、モバイルアプリで収集されたデータをどこでも使用できるようになります。 データストリームの設定について詳しくは、ドキュメントを参照してください [ここ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-独自のアプリに Platform Mobile SDK を実装する場合、3 つのデータストリームを作成して、3 つのタグ環境（開発、ステージング、実稼動）にマッピングする必要があります。 Adobe Real-time Customer Data PlatformやAdobe Journey Optimizerなどのプラットフォームベースのアプリケーションで Platform Mobile SDK を使用している場合は、適切な Platform サンドボックスにこれらのデータストリームを作成する必要があります。
+独自のアプリに Platform Mobile SDK を実装する場合、最終的に 3 つのデータストリームを作成して、3 つのタグ環境（開発、ステージング、実稼動）にマッピングする必要があります。 Adobe Real-time Customer Data PlatformやAdobe Journey Optimizerなどのプラットフォームベースのアプリケーションで Platform Mobile SDK を使用している場合は、適切なサンドボックスにこれらのデータストリームを作成する必要があります。
 
 >[!SUCCESS]
 >
