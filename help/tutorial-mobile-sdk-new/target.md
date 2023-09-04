@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -218,7 +218,7 @@ Target Standard も使用できるはずですが、このチュートリアル�
    * は、決定範囲（A/B テストで定義した場所）に基づいて、現在のプロファイルの提案を取得し、
    * アプリに正しく表示できるコンテンツの結果の折り返しを解除します。
 
-1. まだ **[!UICONTROL TargetOffersView]**、 f を見つけます。`unc updatePropositions(location: String) async` 関数を呼び出し、次のコードを追加します。
+1. まだ **[!UICONTROL TargetOffersView]**&#x200B;を検索し、 `func updatePropositions(location: String) async` 関数を呼び出し、次のコードを追加します。
 
    ```swift
        Task {
