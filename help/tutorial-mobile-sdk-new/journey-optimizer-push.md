@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2199'
 ht-degree: 4%
 
 ---
 
 # Journey Optimizerプッシュメッセージ
 
-Platform Mobile SDK とJourney Optimizerを使用して、モバイルアプリ用のプッシュメッセージを作成する方法について説明します。
+Mobile SDK とJourney Optimizerを使用して、モバイルアプリ用のプッシュExperience Platformを作成する方法について説明します。
 
 Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞ったオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのプッシュ通知データフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -28,7 +28,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 * SDK が正常にビルドされ、インストールされ、設定された状態でアプリを実行しました。
 * Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
    * アプリケーションサーフェスを作成します。
-   * ジャーニーの作成
+   * ジャーニーの作成.
    * メッセージを作成。
    * メッセージプリセットの作成.
 * 証明書、識別子、キーを作成するのに十分なアクセス権を持つ有料Apple開発者アカウント。
@@ -38,8 +38,8 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 このレッスンでは、次の操作を行います
 
-* アプリ ID をAppleプッシュ通知サービス (APNS) に登録します。
-* AJO でアプリサーフェスを作成します。
+* アプリ ID をAppleプッシュ通知サービス (APNs) に登録します。
+* Journey Optimizerでアプリサーフェスを作成します。
 * スキーマを更新して、プッシュメッセージフィールドを含めます。
 * Journey Optimizerタグ拡張機能をインストールして設定します。
 * Journey Optimizerタグ拡張を含めるようにアプリを更新します。
@@ -110,7 +110,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 >[!NOTE]
 >
->表示されない場合 `AJO Push Tracking Experience Event Dataset` 必要に応じて、カスタマーケアにお問い合わせください。
+>表示されない場合 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** 必要に応じて、カスタマーケアにお問い合わせください。
 >
 
 ### アプリでのJourney Optimizerの実装
@@ -146,16 +146,18 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    ]
    ```
 
-1. 次を追加： `MobileCore.setPushIdentifier` から `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 関数に置き換えます。
+### プッシュ通知用のデバイストークンの登録
+
+1. 次を追加： [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) への API `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 関数に置き換えます。
 
    ```swift
-   // Send push token to Experience Platform
+   // Send push token to Mobile SDK
    MobileCore.setPushIdentifier(deviceToken)
    ```
 
    この関数は、アプリがインストールされているデバイスに固有のデバイストークンを取得します。 次に、設定済みの設定を使用し、Appleのプッシュ通知サービス (APNs) に依存するプッシュ通知配信用のトークンを設定します。
 
-## セットアップ保証の検証
+## アシュランスを使用して設定を検証
 
 1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
 1. 物理デバイスまたはシミュレーターにアプリをインストールします。
@@ -238,7 +240,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
    1. 「**[!UICONTROL 保存]**」を選択します。
       ![イベントの手順 2 を編集](assets/ajo-edit-event2.png)
 
-このチュートリアルの一部として前に作成したモバイルアプリエクスペリエンスイベントスキーマに基づくイベント設定を作成しました。 このイベント設定は、モバイルアプリ識別子を使用して受信エクスペリエンスイベントをフィルタリングするので、次の手順で作成するジャーニーをトリガーできるのはモバイルアプリから開始されたイベントのみになります。 実際のシナリオでは、外部サービスからプッシュ通知を送信する場合も同じ概念が当てはまります。外部アプリケーションから、ジャーニーをトリガーする前に、特定のフィールドを持つExperience Platformにエクスペリエンスイベントを送信します。
+このチュートリアルの一部として前に作成したモバイルアプリエクスペリエンスイベントスキーマに基づくイベント設定を作成しました。 このイベント設定は、特定のイベントタイプ (`application.test`) を使用する場合、次の手順で構築するジャーニーをトリガーにできるのは、モバイルアプリから開始した特定のタイプを持つイベントのみです。 実際のシナリオでは、外部サービスからプッシュ通知を送信する場合も同じ概念が当てはまります。外部アプリケーションから、ジャーニーをトリガーする前に、特定のフィールドを持つExperience Platformにエクスペリエンスイベントを送信します。
 
 ### ジャーニーの作成
 
@@ -278,9 +280,9 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 
 ## プッシュ通知のトリガー
 
-プッシュ通知を送信するためのすべての構成要素が揃っている。 残りの点は、このプッシュ通知のトリガー方法です。 基本的に、これは以前に見たのと同じです。適切なペイロードを持つエクスペリエンスイベントを ( ![イベント](events.md)) をクリックします。
+プッシュ通知を送信するためのすべての構成要素が揃っている。 残りの点は、このプッシュ通知のトリガー方法です。 基本的に、これは以前に見たのと同じです。適切なペイロードを持つエクスペリエンスイベントを ( [イベント](events.md)) をクリックします。
 
-今回は、送信しようとしているエクスペリエンスイベントは、単純な XDM 辞書を構築して構築されていません。 プッシュ通知ペイロードを表す構造体を使用します。 アプリケーションでエクスペリエンスイベントペイロードを作成する方法として、専用のデータタイプを定義する方法があります。
+今回は、送信しようとしているエクスペリエンスイベントは、単純な XDM 辞書を構築して構築されていません。 次を使用します： `struct` プッシュ通知ペイロードを表します。 アプリケーションでエクスペリエンスイベントペイロードを作成する方法として、専用のデータタイプを定義する方法があります。
 
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL モデル]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** をクリックし、コードを調べます。
 
@@ -313,6 +315,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードをに追加します。 `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```swift
+   // Create payload and send experience event
    Task {
        let testPushPayload = TestPushPayload(
            application: Application(
@@ -333,9 +336,11 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 
    ```swift
    // Setting parameters and calling function to send push notification
-   let eventType = "mobileapp.testpush"
-   let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
-   await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)   
+   Task {
+       let eventType = testPushEventType
+       let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
+       await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)
+   }
    ```
 
 
@@ -346,6 +351,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 1. 次に移動： **[!UICONTROL 設定]** タブをクリックします。
 
 1. タップ **[!UICONTROL プッシュ通知]**. アプリにプッシュ通知が表示されます。
+
    <img src="assets/ajo-test-push.png" width="300" />
 
 

@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1569'
 ht-degree: 3%
 
 ---
 
 # Journey Optimizerのアプリ内メッセージ
 
-Platform Mobile SDK およびJourney Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法について説明します。
+Experience PlatformMobile SDK とJourney Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法について説明します。
 
 Journey Optimizerでは、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
@@ -145,17 +145,8 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
    ]
    ```
 
-1. 次を追加： `MobileCore.setPushIdentifier` から `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 関数に置き換えます。
 
-   ```swift
-   // Send push token to Experience Platform
-   MobileCore.setPushIdentifier(deviceToken)
-   ```
-
-   この関数は、アプリがインストールされているデバイスに固有のデバイストークンを取得します。 次に、設定済みの設定を使用し、Appleのプッシュ通知サービス (APNs) に依存するプッシュ通知配信用のトークンを設定します。
-
-
-## セットアップ保証の検証
+## アシュランスを使用して設定を検証
 
 1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
 1. 物理デバイスまたはシミュレーターにアプリをインストールします。
@@ -166,8 +157,8 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 1. 「**[!UICONTROL 保存]**」を選択します。
    ![保存](assets/assurance-in-app-config.png)
 1. 選択 **[!UICONTROL アプリ内メッセージ]** をクリックします。
-1. を選択します。 **[!UICONTROL 検証]** タブをクリックします。
-1. エラーが表示されていないことを確認します。
+1. を選択します。 **[!UICONTROL 検証]** タブをクリックします。 エラーが表示されていないことを確認します。
+
    ![アプリ内検証](assets/assurance-in-app-validate.png)
 
 
@@ -193,7 +184,7 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 1. 下にスクロールして **[!UICONTROL アクション]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL コンテンツを編集]**.
 1. Adobe Analytics の **[!UICONTROL アプリ内メッセージ]** 画面：
    1. 選択 **[!UICONTROL モーダル]** として **[!UICONTROL メッセージのレイアウト]**.
-   2. 入力 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 対象： **[!UICONTROL メディア URL]**.
+   2. 入力 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` （の） **[!UICONTROL メディア URL]**.
    3. を入力します。 **[!UICONTROL ヘッダー]**&#x200B;例： `Welcome to this Luma In-App Message` を入力し、 **[!UICONTROL 本文]**&#x200B;例： `Triggered by pushing that button in the app...`.
    4. 入力 **[!UICONTROL 解除]** として **[!UICONTROL ボタン#1テキスト（プライマリ）]**.
    5. プレビューの更新方法を確認します。
@@ -220,17 +211,18 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 
 アプリ内メッセージを送信するためのすべての材料が揃っています。 残りの点は、アプリでこのアプリ内メッセージにトリガーを設定する方法です。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func sendTrackAction(action: String, data: [String: Any]?)` 関数を呼び出し、次のコードを追加します。このコードは、 `MobileCore.track` 関数、パラメーターに基づく `action` および `data`.
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func sendTrackAction(action: String, data: [String: Any]?)` 関数を呼び出し、次のコードを追加します。このコードは、 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 関数、パラメーターに基づく `action` および `data`.
 
 
    ```swift
-   // send trackAction event
+   // Send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL ConfigView]** をクリックします。 アプリ内メッセージボタンのコードを探し、次のコードを追加します。
 
    ```swift
+   // Setting parameters and calling function to send in-app message
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }

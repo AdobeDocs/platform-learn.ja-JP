@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1434'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ Target Standard も使用できるはずですが、このチュートリアル�
 
 >[!TIP]
 >
->アプリを既に [Journey Optimizerオファー](journey-optimizer-offers.md) チュートリアル
+>アプリを既に [Journey Optimizerオファー](journey-optimizer-offers.md) チュートリアル：スキップできます [Adobe Journey Optimizer - Decisioning タグ拡張機能のインストール](#install-adobe-journey-optimizer---decisioning-tags-extension) および [スキーマを更新](#update-your-schema).
 
 ### Edge 設定を更新
 
@@ -104,13 +104,13 @@ Target Standard も使用できるはずですが、このチュートリアル�
 
 1. Target UI で、 **[!UICONTROL アクティビティ]** 上部のバーから。
 1. 選択 **[!UICONTROL アクティビティを作成]** および **[!UICONTROL A/B テスト]** を選択します。
-1. Adobe Analytics の **[!UICONTROL A/B テストアクティビティの作成]** モーダルを選択します。 **[!UICONTROL モバイル]** として **[!UICONTROL タイプ]**」で、 **[!UICONTROL ワークスペースを選択]** リストを開き、プロパティを **[!UICONTROL プロパティを選択]** リスト。
+1. Adobe Analytics の **[!UICONTROL A/B テストアクティビティの作成]** ダイアログ、選択 **[!UICONTROL モバイル]** として **[!UICONTROL タイプ]**」で、 **[!UICONTROL ワークスペースを選択]** リストを開き、プロパティを **[!UICONTROL プロパティを選択]** リスト。
 1. 「**[!UICONTROL 作成]**」を選択します。
    ![Target アクティビティを作成](assets/target-create-activity1.png)
 
 1. Adobe Analytics の **[!UICONTROL 無題のアクティビティ]** 画面、 **[!UICONTROL エクスペリエンス]** 手順：
 
-   1. 入力 `luma-mobileapp-abtest` in **[!UICONTROL 場所を選択]** L**の下[!UICONTROL 場所 1]**.
+   1. 入力 `luma-mobileapp-abtest` in **[!UICONTROL 場所を選択]** underthen **[!UICONTROL 場所 1]**.
    1. 選択 ![Chrevron down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) 次の **[!UICONTROL デフォルトコンテンツ]** を選択し、 **[!UICONTROL JSON オファーを作成]** を選択します。
    1. 次の JSON をにコピーします。 **[!UICONTROL 有効な JSON オブジェクトを入力してください]**.
 
@@ -194,9 +194,23 @@ Target Standard も使用できるはずですが、このチュートリアル�
    ]
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： ` func updatePropositionAT(ecid: String, location: String) async` 関数に置き換えます。 Inspectを設定するコード
-   * XDM 辞書 `xdmData`:A/B テストを提示する必要があるプロファイルを識別する ECID を含み、
-   * の `decisionScope`:A/B テストを提示する場所の配列。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： ` func updatePropositionAT(ecid: String, location: String) async` 関数に置き換えます。 次のコードを追加します。
+
+   ```swift
+   Task {
+       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+       let identityMap = ["identityMap" : ecid]
+       let xdmData = ["xdm" : identityMap]
+       let decisionScope = DecisionScope(name: location)
+       Optimize.clearCachedPropositions()
+       Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   この関数
+
+   * XDM 辞書の設定 `xdmData`:A/B テストを提示する必要があるプロファイルを識別する ECID を含み、
+   * を定義します。 `decisionScope`:A/B テストを提示する場所の配列。
 
    次に、関数は 2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
 

@@ -3,9 +3,9 @@ title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '551'
 ht-degree: 9%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 9%
 
 次に、Experience Cloudサービスをデータストリームに接続します。 Platform Mobile SDK が Edge ネットワークにデータを送信する場合、データストリームは次のサービスにデータを送信します。
 
+### Adobe Analytics
+
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
 
 1. 追加 **[!UICONTROL Adobe Analytics]** から [!UICONTROL サービス] リスト
@@ -61,6 +63,9 @@ ht-degree: 9%
 1. 「**[!UICONTROL 保存]**」を選択します。
 
    ![Adobe Analytics as Datastream サービスの追加](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 また、Adobe Experience Platformサービスを有効にすることもできます。
 

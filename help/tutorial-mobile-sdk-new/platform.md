@@ -4,10 +4,10 @@ description: Adobe Experience Platformにデータを送信する方法を説明
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 8%
+source-wordcount: '963'
+ht-degree: 7%
 
 ---
 
@@ -51,21 +51,20 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 1. 「**[!UICONTROL スキーマからデータセットを作成]**」をクリックします。
    ![データセットホーム](assets/dataset-create.png)
 
-1. スキーマを検索
-
-1. スキーマを選択します。
+1. スキーマを検索します。 例えば、 `Luma Mobile` 」と入力します。
+1. スキーマを選択します（例： ）。 **[!UICONTROL Luma モバイルアプリイベントスキーマ]**.
 
 1. 「**[!UICONTROL 次へ]**」を選択します。
    ![データセットの設定](assets/dataset-configure.png)
 
-1. 次を提供： **[!UICONTROL 名前]** および **[!UICONTROL 説明]**.
+1. 次を提供： **[!UICONTROL 名前]**&#x200B;例： `Luma Mobile App Events Dataset` および **[!UICONTROL 説明]**.
 
 1. 「**[!UICONTROL 完了]**」を選択します。
    ![データセットの完了](assets/dataset-finish.png)
 
 ## データストリームの更新
 
-データセットを作成したら、必ず [データストリームの更新](create-datastream.md) をクリックしてAdobe Experience Platformを追加します。 この更新により、データが Platform に送られるようになります。
+データセットを作成したら、必ず [データストリームの更新](create-datastream.md#adobe-experience-platform) をクリックしてAdobe Experience Platformを追加します。 この更新により、データが Platform に送られるようになります。
 
 ## データセット内のデータの検証
 
@@ -88,23 +87,23 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 
 ### スキーマを有効にする
 
-1. スキーマを開く
-1. 有効にする **[!UICONTROL プロファイル]**
-1. 選択 **[!UICONTROL このスキーマのデータの identityMap フィールドには、プライマリ ID が含まれます。]** モーダルダイアログで
-1. ****&#x200B;スキーマの保存
+1. スキーマを開きます（例： ）。 **[!UICONTROL Luma モバイルアプリイベントスキーマ]**.
+1. 有効にする **[!UICONTROL プロファイル]**.
+1. 選択 **[!UICONTROL このスキーマのデータの identityMap フィールドには、プライマリ ID が含まれます。]** 」と入力します。
+1. ****&#x200B;スキーマの保存.
 
    ![プロファイルのスキーマの有効化](assets/platform-profile-schema.png)
 
 ### データセットの有効化
 
-1. データセットを開く
-1. 有効にする **[!UICONTROL プロファイル]**
+1. データセットを開きます（例： ）。 **[!UICONTROL Luma モバイルアプリイベントデータセット]**.
+1. 有効にする **[!UICONTROL プロファイル]**.
 
    ![プロファイルのデータセットの有効化](assets/platform-profile-dataset.png)
 
 ### プロファイル内のデータの検証
 
-アプリを開き、イベントを追跡している画面に移動します。 Luma アプリにログインし、購入します。
+アプリを開き、追跡イベントの画面に移動します（例：Luma アプリにログインして購入）。
 
 アシュランスを使用して、identityMap に渡された ID（Email、lumaCrmId または ECID）の 1 つ、例えば CRM ID を検索します。
 
@@ -112,7 +111,7 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 
 Platform インターフェイスで、
 
-1. に移動します。 **[!UICONTROL プロファイル]** > **[!UICONTROL 参照]**,
+1. に移動します。 **[!UICONTROL プロファイル]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL 参照]** 上部のバーから。
 1. 取得した ID の詳細（例： ）を指定します。 `Luma CRM ID` 対象： **[!UICONTROL ID 名前空間]** にコピーした値 **[!UICONTROL ID 値]**. 次に、 **[!UICONTROL 表示]**.
 1. 詳細を表示するには、プロファイルを選択します。
 
@@ -128,7 +127,7 @@ Platform インターフェイスで、
 
 プロファイルの詳細画面で、次の操作を実行します。
 
-1. ID グラフを表示するには、リンクをクリックするか、 **[!UICONTROL ID]** > **[!UICONTROL ID グラフ]**
+1. ID グラフを表示するには、リンクをクリックするか、 **[!UICONTROL ID]**&#x200B;を選択し、「 **[!UICONTROL ID グラフ]** 上部のバーから。
 1. ID 値を検索するには、 `Luma CRM ID` として **[!UICONTROL ID 名前空間]** をコピーし、 **[!UICONTROL ID 値]**. 次に、 **[!UICONTROL 表示]**.
 
    このビジュアライゼーションは、プロファイル内でリンクされているすべての ID とその接触チャネルを表示します。 以下に、この Mobile SDK チュートリアル（データソース 2）と [Web SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja) （データソース 1）:

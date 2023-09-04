@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2368'
 ht-degree: 3%
 
 ---
 
 # Journey Optimizerオファー
 
-Platform Mobile SDK を使用して、モバイルアプリでJourney Optimizer Decision Management のオファーを表示する方法について説明します。
+Experience PlatformMobile SDK を使用して、モバイルアプリでJourney Optimizer Decision Management のオファーを表示する方法について説明します。
 
 Journey Optimizer Decision Management は、あらゆるタッチポイントにわたって最適なオファーとエクスペリエンスを適切なタイミングで顧客に提供できるようにします。 設計が完了したら、パーソナライズされたオファーを使用してオーディエンスのターゲティングをおこないます。
 
@@ -23,7 +23,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 
 >[!NOTE]
 >
->このレッスンはオプションで、決定管理機能を使用してモバイルアプリでオファーを表示したいジャーニー最適化ユーザーにのみ適用されます。
+>このレッスンはオプションで、決定管理機能を使用してモバイルアプリでオファーを表示したいJourney Optimizerユーザーにのみ適用されます。
 
 
 ## 前提条件
@@ -92,7 +92,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 1. Assurance UI に移動します。
 1. 選択 **[!UICONTROL 設定]** 左側のパネルで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL 設定の検証]** underthen **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
-1. 選択 **[!UICONTROL 設定の検証]** をクリックします。 データストリームの設定と、アプリケーションでの SDK の設定の両方が検証されます。
+1. 選択 **[!UICONTROL 設定の検証]** をクリックします。 アプリケーションのデータストリーム設定と SDK 設定の両方が検証されます。
    ![AJO 判定の検証](assets/ajo-decisioning-validation.png)
 
 
@@ -144,7 +144,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 
       次の表を使用して、その他の 4 つのオファーを定義します。
 
-      | オファー名 | オファーコンテンツ |
+      | オファー名 | JSON 形式のオファーコンテンツ |
       |---|---|
       | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma - Desire Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
@@ -192,10 +192,11 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 1. Journey Optimizer UI で、 **[!UICONTROL オファー]** をクリックします。
 1. 選択 **[!UICONTROL コレクション]** 上部のバーから。
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL コレクションを作成]**.
-1. Adobe Analytics の **[!UICONTROL 新しいコレクション]** モーダルには、 **[!UICONTROL 名前]** コレクションの例： `Luma - Mobile App Collection`を選択します。 **[!UICONTROL 静的コレクションを作成]**&#x200B;をクリックし、 **[!UICONTROL 次へ]**.
-1. In **[!UICONTROL Luma — モバイルアプリコレクション]**」で、コレクションに含めるオファーを選択します。 このチュートリアルでは、作成した 5 つのオファーを選択します。
-   ![オファー — コレクション](assets/ajo-collection-offersselected.png)
+1. Adobe Analytics の **[!UICONTROL 新しいコレクション]** ダイアログで、 **[!UICONTROL 名前]** コレクションの例： `Luma - Mobile App Collection`を選択します。 **[!UICONTROL 静的コレクションを作成]**&#x200B;をクリックし、 **[!UICONTROL 次へ]**.
+1. In **[!UICONTROL Luma — モバイルアプリコレクション]**」で、コレクションに含めるオファーを選択します。 このチュートリアルでは、作成した 5 つのオファーを選択します。 検索フィールドを使用して、例えば次のように入力することで、リストを簡単にフィルタリングできます。 **[!UICONTROL Luma]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
+
+   ![オファー — コレクション](assets/ajo-collection-offersselected.png)
 
 
 ## 決定の作成
@@ -207,10 +208,10 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 評価条件は、
 
 * オファーコレクション
-* 実施要件ルール：例えば、オファーは特定のオーディエンスに対してのみ利用できます。
+* 実施要件ルール：例えば、は特定のオーディエンスに対してのみ利用できるオファーです。
 * ランキング方法：複数のオファーを選択できる場合、どの方法を使用してランク付けするか（例：オファーの優先度、数式または AI モデルを使用する方法）。
 
-詳しくは、 [オファーを作成および管理するための主な手順](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 配置、ルール、ランキング、オファー、表示域、コレクション、決定などの方法をより深く理解したい場合は、相互にやり取りし、関係を持ち合わせます。 このチュートリアルでは、決定を定義する柔軟性ではなく、決定の出力の使用にのみ焦点を当てています。
+詳しくは、 [オファーを作成および管理するための主な手順](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 配置、ルール、ランキング、オファー、表示域、コレクション、決定などの方法をより深く理解したい場合は、相互にやり取りし、関係を持ち合わせます。 このチュートリアルでは、Journey Optimizer — 決定管理内で決定を柔軟に定義するのではなく、決定の出力の使用にのみ焦点を当てています。
 
 1. Journey Optimizer UI で、 **[!UICONTROL オファー]** をクリックします。
 1. 選択 **[!UICONTROL 決定]** 上部のバーから。
@@ -286,24 +287,38 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
    ]
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 関数に置き換えます。 Inspect
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 関数に置き換えます。 次のコードを追加します。
+
+   ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   Task {  
+      let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+      let identityMap = ["identityMap" : ecid]
+      let xdmData = ["xdm" : identityMap]
+      let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   この関数：
 
    * XDM 辞書の設定 `xdmData`：オファーを提示する必要があるプロファイルを識別する ECID が含まれます。
-   * 定義 `decisionScope`: Journey Optimizer - Decision Management UI で定義した決定に基づくオブジェクトで、次の場所からコピーした決定範囲を使用して定義されます。 [決定の作成](#create-a-decision).
-   * は、2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。 Luma アプリは設定ファイル (`decisions.json`) を呼び出し、次の JSON 形式に基づいてスコープパラメーターを取得します。
+   * 定義 `decisionScope`: Journey Optimizer - Decision Management UI で定義した決定に基づくオブジェクトで、次の場所からコピーした決定範囲を使用して定義されます。 [決定の作成](#create-a-decision).  Luma アプリは設定ファイル (`decisions.json`) を呼び出し、次の JSON 形式に基づいてスコープパラメーターを取得します。
 
      ```swift
      "scopes": [
          {
-             "name": "luma - Mobile App Decision",
-             "activityId": "xcore:offer-activity:177cdaa5e1fd589d",
-             "placementId": "xcore:offer-placement:13a3b264ce69bb14",
+             "name": "name of the scope",
+             "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+             "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
              "itemCount": 2
          }
      ]
      ```
 
      ただし、あらゆる種類の実装を使用して、Optimize API が適切なパラメーター (`activityId`, `placementId` そして `itemCount`) を呼び出し、有効な [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) オブジェクトを設定します。
+   * は、2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
 
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL EdgeOffersView]** 」をクリックします。 次を検索： `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 呼び出し (
 
@@ -313,22 +328,24 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 1. まだ **[!UICONTROL EdgeOffersView]**&#x200B;を検索し、 `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` 関数を呼び出し、次のコードを追加します。
 
    ```swift
-       Task {
-           await self.updatePropositionOD(
-               ecid: currentEcid,
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionOD(
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
+   // Update and then get propositions
+   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
+   Task {
+      await self.updatePropositionOD(
+          ecid: currentEcid,
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+     )
+   }
+   try? await Task.sleep(seconds: 2.0)
+   Task {
+      await self.getPropositionOD(
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+      )
+   }
    ```
 
    このコードを使用すると、提案を更新し、手順 5 および 6 で説明した関数を使用して結果を取得できます。
