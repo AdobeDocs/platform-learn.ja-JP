@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1519'
+ht-degree: 3%
 
 ---
 
@@ -214,29 +214,27 @@ Target Standard も使用できるはずですが、このチュートリアル�
 
    次に、関数は 2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL TargetOffersView]** 」をクリックします。 次を検索： `func getPropositionAT(location: String) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 呼び出し (
-   * は、決定範囲（A/B テストで定義した場所）に基づいて、現在のプロファイルの提案を取得し、
-   * アプリに正しく表示できるコンテンツの結果の折り返しを解除します。
+1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL TargetOffersView]** 」をクリックします。 次を検索： `func onPropositionsUpdateAT(location: String) async {` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 呼び出し (
+   * は、決定範囲（A/B テストで定義した場所）に基づいて、現在のプロファイルの提案を取得します。
+   * 提案からオファーを取得します。
+   * オファーのコンテンツをアプリに正しく表示できるようにアンラップし、
+   * トリガー `displayed()` オファーが表示されたことを知らせるイベントを Edge ネットワークに送り返す、オファーに対するアクション。
 
-1. まだ **[!UICONTROL TargetOffersView]**&#x200B;を検索し、 `func updatePropositions(location: String) async` 関数を呼び出し、次のコードを追加します。
+1. まだ **[!UICONTROL TargetOffersView]**&#x200B;を使用して、次のコードを `.onFirstAppear` 修飾子 このコードにより、オファーを更新するためのコールバックが 1 回だけ登録されます。
 
    ```swift
-       Task {
-           await self.updatePropositionAT(
-               ecid: currentEcid,
-               location: location
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionAT(
-               location: location
-           )
-       }
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateAT(location: location)
+   }
    ```
 
-   このコードを使用すると、提案を更新し、手順 5 および 6 で説明した関数を使用して結果を取得できます。
+1. まだ **[!UICONTROL TargetOffersView]**&#x200B;を使用して、次のコードを `.task` 修飾子 このコードは、ビューが更新されるとオファーを更新します。
 
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsAT(ecid: currentEcid, location: location)
+   ```
 
 ## アプリを使用した検証
 
@@ -262,11 +260,11 @@ Assurance で A/B テストを検証するには、次の手順に従います�
 1. 選択 **[!UICONTROL リクエスト]** 上部のバーに 表示される **[!UICONTROL Target]** リクエスト。
    ![AJO 判定の検証](assets/assurance-decisioning-requests.png)
 
-1. 「シミュレート」タブと「イベントリスト」タブを調べて、Target オファーの設定を確認する機能を確認できます。
+1. 参照可能 **[!UICONTROL シミュレート]** および **[!UICONTROL イベントリスト]** タブを使用して、Target オファーの設定を確認する機能を確認します。
 
 ## 次の手順
 
-これで、A/B テストや他の Target アクティビティ（エクスペリエンスのターゲット設定、多変量分析テストなど）を、関連する場合に適用可能な場合に Luma アプリに追加するためのすべてのツールが用意できました。
+これで、A/B テストや他の Target アクティビティ（エクスペリエンスのターゲット設定、多変量分析テストなど）を、関連する場合に適用可能な場合に Luma アプリに追加するためのすべてのツールが用意できました。 詳しい情報は、 [Optimize 拡張機能用の GitHub リポジトリ](https://github.com/adobe/aepsdk-optimize-ios) 専用の [チュートリアル](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) Adobe Targetオファーの追跡方法に関する情報です。
 
 >[!SUCCESS]
 >
