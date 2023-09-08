@@ -1,18 +1,18 @@
 ---
 title: Web データ用の XDM スキーマの作成
-description: データ収集インターフェイスで Web データの XDM スキーマを作成する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
+description: データ収集インターフェイスで Web データ用の XDM スキーマを作成する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 6%
 
 ---
 
 # Web データ用の XDM スキーマの作成
 
-データ収集インターフェイスで Web データの XDM スキーマを作成する方法を説明します。
+データ収集インターフェイスで Web データ用の XDM スキーマを作成する方法を説明します。
 
 エクスペリエンスデータモデル (XDM) スキーマは、Adobe Experience Platformでスキーマを構成するための構成要素、原則およびベストプラクティスです。
 
@@ -22,7 +22,7 @@ Platform Web SDK は、スキーマを使用して WebExperience Cloudデータ�
 >
 > デモ用に、このレッスンの演習では、スキーマの例を作成して、閲覧されたコンテンツと顧客が購入した製品を [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). これらの手順を使用して、独自の目的で別のスキーマを作成できますが、まずサンプルのスキーマを作成して、スキーマエディターの機能を学ぶことをお勧めします。
 
-XDM スキーマの詳細については、「[XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja)」または [XDM システムの概要](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja).
+XDM スキーマの詳細については、「[XDM を使用した顧客体験データのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja)」をクリックするか、 [XDM システムの概要](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja).
 
 ## 学習内容
 
@@ -49,7 +49,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
    >
    >Real-Time CDPなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
 
-1. に移動します。 **[!UICONTROL スキーマ]** 左のナビゲーション
+1. に移動します。 **[!UICONTROL スキーマ]** 左のナビゲーションで
 1. を選択します。 **[!UICONTROL スキーマを作成]** 右上のボタン
 1. ドロップダウンメニューで、「 」を選択します。 **[!UICONTROL XDM ExperienceEvent]**
 
@@ -65,7 +65,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 > 
 >この演習では、Web データ収集用に推奨される事前定義済みフィールドグループを追加します。 _**[!UICONTROL AEP Web SDK ExperienceEvent]**_、および _**[!UICONTROL 消費者エクスペリエンスイベント]**_.
 
-1. 内 **[!UICONTROL フィールドグループ]** セクション、選択 **[!UICONTROL 追加]**
+1. Adobe Analytics の **[!UICONTROL フィールドグループ]** セクション、選択 **[!UICONTROL 追加]**
 1. [!UICONTROL `AEP Web SDK ExperienceEvent`] を検索します
 1. 「 」ボックスをオンにします。
 1. [!UICONTROL `Consumer Experience Event`] を検索します
@@ -77,13 +77,13 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 フィールドグループを選択した状態で、スキーマに名前を付ける準備が整いました。 XDM スキーマの一般的な命名規則は、データのソースに続いてスキーマに名前を付けることです。
 
 1. **[!UICONTROL 構成**] パネルで、 `Untitled schema name`
-1. 内 **[!UICONTROL スキーマのプロパティ]** パネル、 **[!UICONTROL 表示名]** `Luma Web Event Data`
-1. 以外の **[!UICONTROL 表示名]** 有効化するフィールド **[!UICONTROL 保存]** オプション
+1. Adobe Analytics の **[!UICONTROL スキーマのプロパティ]** パネル、 **[!UICONTROL 表示名]** `Luma Web Event Data`
+1. 以外の項目を選択 **[!UICONTROL 表示名]** 有効化するフィールド **[!UICONTROL 保存]** オプション
 1. 「**[!UICONTROL 保存]**」を選択します
 
 ![Luma Web イベントデータ](assets/schema-luma-web-event-data.png)
 
-両方のフィールドグループを使用する場合、Web でのデータ収集に必要な、最も一般的に使用されるキーと値のペアにアクセスできることに注意してください。 この [!UICONTROL 表示名] の各フィールドは、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、必要に応じて標準フィールドの表示名を変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、そのグループが属するキーと値のペアのグループがインターフェイスで強調表示されます。 次の例では、どのグループが属しているかを確認します **[!UICONTROL 消費者エクスペリエンスイベント]**.
+両方のフィールドグループを使用する場合、Web でのデータ収集に必要な、最も一般的に使用されるキーと値のペアにアクセスできることに注意してください。 The [!UICONTROL 表示名] の各フィールドは、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、必要に応じて標準フィールドの表示名を変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、そのグループが属するキーと値のペアのグループがインターフェイスで強調表示されます。 次の例では、どのグループが属しているかを確認します。 **[!UICONTROL 消費者エクスペリエンスイベント]**.
 
 ![スキーマフィールドグループ](assets/schema-consumer-experience-event.jpg)
 
@@ -96,7 +96,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
 ![Luma Web イベントデータ](assets/schema-identityMap.png)
 
-Web 上のユーザーを識別するために必要なExperience CloudID を格納するので、Web 関連のデータ収集には必須のオブジェクトです。 また、認証済みユーザーの内部顧客 ID を設定するためのキーにもなります。 `[!UICONTROL identityMap]` は、 [ID の設定](configure-identities.md) レッスン。 これは、 **[!UICONTROL XDM ExperienceEvent]** クラス。
+Web 上のユーザーを識別するために必要なExperience CloudID を格納するので、Web 関連のデータ収集には必須のオブジェクトです。 また、認証済みユーザーの内部顧客 ID を設定するためのキーにもなります。 `[!UICONTROL identityMap]` 詳しくは、 [ID の設定](configure-identities.md) レッスン。 これは、 **[!UICONTROL XDM ExperienceEvent]** クラス。
 
 
 >[!IMPORTANT]
@@ -106,7 +106,7 @@ Web 上のユーザーを識別するために必要なExperience CloudID を格
 >この設定については、 [設定Experience Platform](setup-experience-platform.md) レッスン。
 >![プロファイルスキーマ](assets/schema-profile.png)
 
-これで、タグプロパティに Web SDK 拡張機能を追加する際に、このスキーマを参照できます。
+これで、タグプロパティに Web SDK 拡張機能を追加すると、このスキーマを参照できます。
 
 
 [次へ： ](configure-identities.md)
