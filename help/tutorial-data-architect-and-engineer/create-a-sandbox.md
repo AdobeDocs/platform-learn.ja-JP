@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 ## 必要な権限
 
-内 [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Sandbox Administration]** > **[!UICONTROL View Sandboxes]** and **[!UICONTROL Manage Sandboxes]**
@@ -44,11 +44,11 @@ ht-degree: 4%
 サンドボックスを作成します。
 
 1. にログインします。 [Adobe Experience Platform](https://experience.adobe.com/platform) インターフェイス
-1. に移動します。 **[!UICONTROL サンドボックス]** 左のナビゲーション
+1. に移動します。 **[!UICONTROL サンドボックス]** 左のナビゲーションで
 1. 選択 **[!UICONTROL サンドボックスを作成]** 右上に
    ![サンドボックスを作成を選択](assets/sandbox-createSandbox.png)
 
-1. 選択 **[!UICONTROL 開発]** を **[!UICONTROL タイプ]**
+1. 選択 **[!UICONTROL 開発]** として **[!UICONTROL タイプ]**
 1. サンドボックスに名前を付ける `luma-tutorial` （末尾に名前を追加することを検討してください）。
 1. チュートリアルにタイトルを付ける `Luma Tutorial` （末尾に名前を追加することを検討してください）。
 1. を選択します。 **[!UICONTROL 作成]** ボタン
@@ -62,16 +62,16 @@ ht-degree: 4%
 
 サンドボックスが「[!UICONTROL アクティブ]」をクリックしてから、次の演習に進みます。
 
-## 新しいサンドボックスを製品プロファイルに追加する
+## 新しいサンドボックスをロールに追加します。
 
 サンドボックスがアクティブになったら、そのサンドボックスを使用するには、自分の役割に含める必要があります。 これを自分の役割に追加するには（システム管理者または製品管理者の権限が必要）:
 
 1. 次に移動： [!UICONTROL 権限] screen
 1. を開きます。 `Luma Tutorial Platform` 役割
-1. _削除_ の `Prod` ロールのサンドボックス
-1. を `Luma Tutorial` サンドボックス
+1. （オプション） _削除_ の `Prod` ロールのサンドボックス
+1. 次を追加： `Luma Tutorial` sandbox
 1. 「**[!UICONTROL 保存]**」を選択します
-1. の [!UICONTROL サンドボックス] 行、選択 **[!UICONTROL 編集]**
+1. 次の日： [!UICONTROL サンドボックス] 行、選択 **[!UICONTROL 編集]**
 
    ![Luma チュートリアルの追加](assets/sandbox-addLumaTutorial.png)
 
