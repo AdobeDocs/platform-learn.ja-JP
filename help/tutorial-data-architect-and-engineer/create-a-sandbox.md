@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
+source-git-commit: fdb6a49caa29d98d73524fd0887d25641ef67780
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -62,7 +62,7 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
 
 サンドボックスが「[!UICONTROL アクティブ]」をクリックしてから、次の演習に進みます。
 
-## 新しいサンドボックスをロールに追加します。
+## 新しいサンドボックスを役割に追加
 
 サンドボックスがアクティブになったら、そのサンドボックスを使用するには、自分の役割に含める必要があります。 これを自分の役割に追加するには（システム管理者または製品管理者の権限が必要）:
 
