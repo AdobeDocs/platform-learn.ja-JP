@@ -3,10 +3,10 @@ title: タグプロパティの設定
 description: タグのプロパティを設定する方法については、 [!UICONTROL データ収集] インターフェイス。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 9%
+source-wordcount: '1095'
+ht-degree: 8%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
       >[!NOTE]
       >
-      > このチュートリアルでおこなう操作など、エッジベースのモバイル SDK 実装のデフォルトの同意設定は、 [!UICONTROL 同意拡張] そして、 [!UICONTROL プライバシー] の設定を使用して、タグプロパティの設定を行います。 このレッスンの後半で、同意拡張機能を追加して設定します。 詳しくは、 [ドキュメント](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > このレッスンでおこなう操作は、 [!UICONTROL 同意拡張] そして、 [!UICONTROL プライバシー] の設定を使用して、タグプロパティの設定を行います。 このレッスンの後半で、同意拡張機能を追加して設定します。 詳しくは、 [ドキュメント](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. 新しいプロパティを開きます。
@@ -112,13 +112,13 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
    1. In **[!UICONTROL データストリーム]** 「 」を選択します。 **[!UICONTROL Datastream]** 作成した [前の手順](create-datastream.md) 各環境の例 **[!UICONTROL Luma モバイルアプリ]**.
 
-   1. 次を指定します。 **[!UICONTROL Edge Network ドメイン]** 範囲 **[!UICONTROL ドメイン設定]**. Edge ネットワークドメインは、サンドボックスの名前で、その後にが続きます。 `data.adobedc.net`例： `techmarketingdemos.data.adobedc.net`.
+   1. 次を指定します。 **[!UICONTROL Edge Network ドメイン]** 範囲 **[!UICONTROL ドメイン設定]**. Edge Network ドメインは組織の名前で、その後にが続きます `data.adobedc.net`例： `techmarketingdemos.data.adobedc.net`.
 
    1. 次から： **[!UICONTROL ライブラリに保存]** メニュー、選択 **[!UICONTROL ライブラリに保存してビルドする]**.
 
       ![エッジネットワーク設定](assets/tags-extension-edge.png)
 
-ライブラリは、新しい拡張機能と設定用にビルドされています。 正常なビルドは、 <span style="color:green">●</span> （内） **[!UICONTROL 初期ビルド]** 」ボタンをクリックします。
+ライブラリは、新しい拡張機能と設定用に構築されています。 正常なビルドは、 <span style="color:green">●</span> （内） **[!UICONTROL 初期ビルド]** 」ボタンをクリックします。
 
 
 ## SDK のインストール手順の生成
@@ -131,7 +131,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 1. Adobe Analytics の **[!UICONTROL モバイルインストール手順]** ダイアログで、 **[!UICONTROL iOS]** タブをクリックします。
 
-1. コピー可能 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) CocoaPods を使用してプロジェクトを設定する手順 CocoaPods は、SDK のバージョンとダウンロードの管理に使用されます。 詳しくは、 [ドキュメント](https://cocoapods.org/).
+1. コピー可能 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) CocoaPods を使用してプロジェクトを設定する手順 CocoaPods は、SDK のバージョンとダウンロードの管理に使用されます。 詳しくは、 [Cocoapods ドキュメント](https://cocoapods.org/). Android を開発プラットフォームとして使用している場合、Gradle は SDK のバージョン、ダウンロード、依存関係を管理するためのツールです。 詳しくは、 [Gradle ドキュメント](https://gradle.org/)
 
    インストール手順は、導入の出発点として適しています。 追加情報を見つけることができます [ここ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 * Web 上では、タグプロパティが JavaScript にレンダリングされ、JavaScript は（通常は）クラウドでホストされます。 この JavaScript ファイルが Web サイトで直接参照されます。
 
-* モバイルタグプロパティでは、ルールと設定は、クラウドでホストされる JSON ファイルにレンダリングされます。 この JSON ファイルがダウンロードされ、モバイルアプリの Mobile Core 拡張機能によって読み取られます。 拡張機能は、連携する個別の SDK です。 タグプロパティに拡張機能を追加する場合は、アプリも更新する必要があります。 拡張機能の設定を変更したり、ルールを作成したりすると、更新されたタグライブラリを公開すると、それらの変更がアプリに反映されます。
+* モバイルタグプロパティでは、ルールと設定は、クラウドでホストされる JSON ファイルにレンダリングされます。 この JSON ファイルがダウンロードされ、モバイルアプリの Mobile Core 拡張機能によって読み取られます。 拡張機能は、連携する個別の SDK です。 タグプロパティに拡張機能を追加する場合は、アプリも更新する必要があります。 拡張機能の設定を変更したり、ルールを作成したりすると、更新されたタグライブラリを公開すると、それらの変更がアプリに反映されます。 この柔軟性により、アプリのコードを変更したり、アプリをアプリストアに再送信する必要なく、設定 (Adobe分析レポート（ID など）を変更したり、アプリの動作（後のレッスンで確認できるデータ要素とルールを使用）を変更したりできます。
 
 >[!SUCCESS]
 >

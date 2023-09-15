@@ -3,10 +3,10 @@ title: モバイルアプリでのAdobe Experience Cloudの実装チュートリ
 description: Adobe Experience Cloudモバイルアプリケーションの実装方法を説明します。 このチュートリアルでは、サンプルの Swift アプリケーションでExperience Cloudアプリケーションを実装する手順を説明します。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 10%
+source-wordcount: '873'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Platform Mobile SDK を使用して、モバイルアプリに 
 
 Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド SDK です。 詳しくは、 [Adobe Experience Platform Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/) を参照してください。
 
-![ビルド設定](assets/data-collection-mobile-sdk.png)
+![アーキテクチャ](assets/architecture.png)
 
 
 このチュートリアルでは、Luma と呼ばれるサンプル小売アプリケーションで Platform Mobile SDK を実装する手順を説明します。 The [Luma アプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) には、現実的な実装を構築できる機能があります。 このチュートリアルを完了すると、すべてのマーケティングソリューションを、Experience Platformのモバイルアプリで Mobile SDK を通じて実装する準備が整います。
@@ -35,7 +35,6 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 * 次のAdobe Experience Cloudアプリケーション/拡張機能を追加します。
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [ライフサイクルデータの収集](lifecycle-data.md)
-   * [XDM 経由のAdobe Analytics](analytics.md)
    * [同意](consent.md)
    * [ID](identity.md)
    * [プロファイル](profile.md)
@@ -43,7 +42,7 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Journey Optimizerを使用したプッシュメッセージ](journey-optimizer-push.md)
-   * [Journey Optimizerを使用した Im-app メッセージ](journey-optimizer-inapp.md)
+   * [Journey Optimizerを使用したアプリ内メッセージ](journey-optimizer-inapp.md)
    * [Journey Optimizerとのオファー](journey-optimizer-offers.md)
    * [Target での A/B テスト](target.md)
 
@@ -70,13 +69,19 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * Real-Time CDP、Journey Optimizer、Customer Journey Analyticsなどの Platform ベースのアプリケーションを使用している場合は、次のこともおこなう必要があります。
       * **[!UICONTROL データ管理]** — データセットを管理および表示して完了する権限項目 _オプションの Platform の演習_ （ Platform ベースのアプリケーションのライセンスが必要です）。
       * 開発 **sandbox** このチュートリアルで使用できる
+
 * Adobe Analyticsの場合は、どちらかを知っておく必要があります。 **レポートスイート** を使用して、このチュートリアルを完了できます。
+
+* Adobe Targetの場合は、権限が適切に設定されている必要があります **役割**, **workspaces**、および **プロパティ** 説明に従って [ここ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ja).
+
+* Adobe Journey Optimizerの場合、 **プッシュ通知サービス** およびを作成するには、以下を実行します。 **アプリ表面**, a **ジャーニー**, a **メッセージ** および **メッセージプリセット**. 決定管理では、次の操作をおこなうための適切な権限が必要です。 **オファーを管理** および **決定** 説明に従って [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 すべてのExperience Cloudのお客様は、Mobile SDK のデプロイに必要な機能にアクセスできる必要があります。
 
+
 >[!NOTE]
 >
->iOSをプラットフォームとして使用します。 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用します。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 君は少し詳しいと思われる [!DNL Swift] および [!DNL SwiftUI]. コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+>このチュートリアルの一環として、スキーマ、データセット、ID などを作成します。 単一のサンドボックスに複数のユーザーを含むこのチュートリアルを実行する場合、または共有アカウントを使用する場合は、これらのオブジェクトを作成する際の命名規則の一部として ID を追加または前付けすることを検討します。 例えば、 ` - <your name or initials>` を、作成するように指示されるオブジェクトの名前に追加します。
 
 
 ## Luma アプリケーションのダウンロード
@@ -86,6 +91,11 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 
 1. [開始](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}：このチュートリアルで実践的な演習を完了するために必要な、Experience PlatformMobile SDK コードのほとんどに対して、コードがない、またはプレースホルダーコードが付いたプロジェクトです。
 1. [完了](https://git.corp.adobe.com/Luma){target="_blank"}：参照用に完全な実装を含むバージョン。
+
+>[!NOTE]
+>
+>iOSをプラットフォームとして使用します。 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用します。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 また、多くのユーザーは、以前のiOS/Swift(UI) エクスペリエンスをほとんど使用せずに、既にこのチュートリアルを完了しています。 コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+
 
 それでは、始めましょう。
 

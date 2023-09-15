@@ -2,9 +2,9 @@
 title: ライフサイクルデータ
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
 
 ## 前提条件
 
-* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
+* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。 このレッスンの一環として、既にライフサイクル監視を開始しています。 詳しくは、 [SDK のインストール — AppDelegate の更新](install-sdks.md#update-appdelegate) をクリックしてレビューします。
 * Assurance 拡張機能を登録しました ( [前のレッスン](install-sdks.md).
 
 ## 学習内容

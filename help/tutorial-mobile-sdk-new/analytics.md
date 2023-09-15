@@ -3,10 +3,10 @@ title: Analytics マッピング
 description: モバイルアプリでAdobe Analyticsのデータを収集する方法を説明します。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 1%
 モバイルデータをAdobe Analyticsにマッピングする方法を説明します。
 
 The [イベント](events.md) 以前のレッスンで収集し、Platform Edge Network に送信したデータは、Adobe Analyticsを含む、データストリームで設定されたサービスに転送されます。 データをレポートスイート内の正しい変数にマッピングします。
+
+![アーキテクチャ](assets/architecture-aa.png)
 
 ## 前提条件
 
@@ -186,7 +188,7 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >自動的にマッピングされた変数の一部は、処理ルールで使用できない場合があります。
 >
 >
->初めて UI で処理ルールにマッピングしたときに、XDM オブジェクトのコンテキストデータ変数が表示されません。 任意の値を選択する場合は、「保存」をクリックし、再び編集を開始します。 これで、すべての XDM 変数が表示されます。
+>初めて処理ルールにマッピングする場合、インターフェイスには XDM オブジェクトのコンテキストデータ変数が表示されません。 任意の値を選択する場合は、「保存」をクリックし、再び編集を開始します。 これで、すべての XDM 変数が表示されます。
 
 
 処理ルールとコンテキストデータに関する追加情報が見つかりました [ここ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).

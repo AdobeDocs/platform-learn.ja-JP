@@ -3,9 +3,9 @@ title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 4%
 
 ---
@@ -34,11 +34,7 @@ ht-degree: 4%
 
 ## アクセスを確認
 
-以下の手順を実行して、組織がアシュランスにアクセスできることを確認します。
-
-1. 訪問 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Adobe IDの資格情報を使用してログインし、Experience Cloudします。
-1. 次の項目が表示された場合、 **[!UICONTROL セッション]** 画面が表示され、アクセス権が付与されます。 （ベータ版）アクセスページが表示された場合は、「 **[!UICONTROL 登録]** 登録する。
+組織がアシュランスにアクセスできることを確認します。 ユーザーは、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、 [ユーザーアクセス](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) （アシュランスガイド）を参照してください。
 
 ## 実装方法
 
@@ -70,7 +66,7 @@ Xcode でアプリケーションを初めて実行する前に、必ず署名�
 1. を選択します。 **署名と機能** タブをクリックします。
 1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**&#x200B;または、特定のApple開発プロビジョニングの詳細を使用します。
 
-   ![Xcode 署名機能](assets/xcode-signing-capabilities.png)
+   ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## ベース URL の設定
 

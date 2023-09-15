@@ -2,10 +2,10 @@
 title: イベント
 description: モバイルアプリでイベントデータを収集する方法を説明します。
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 1%
+source-wordcount: '1321'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
    * `commerce.productViews.id`：製品の SKU を表す文字列値
    * `commerce.productViews.value`：イベントの数値またはブール値。 ブール値 (Adobe Analyticsでは「カウンター」) の場合、値は常に 1 に設定されます。 数値イベントまたは通貨イベントの場合、値は 1 より大きい値になります。
 
-* スキーマ内で、コマース製品表示イベントに関連付けられた追加データを識別します。 この例では、 **[!UICONTROL productListItem]** コマース関連のイベントで使用される標準のフィールドセットです。
+* スキーマ内で、コマース製品表示イベントに関連付けられた追加データを識別します。 この例では、 **[!UICONTROL productListItems]** コマース関連のイベントで使用される標準のフィールドセットです。
 
   ![製品リスト項目スキーマ](assets/datacollection-prodListItems-schema.png)
    * 次の点に注意してください。 **[!UICONTROL productListItems]** は配列なので、複数の製品を提供できます。
@@ -123,7 +123,7 @@ var xdmData: [String: Any] = [
 * 表示：ユーザーが特定の製品を表示したときに発生します。
 * 買い物かごに追加：ユーザーがタップしたとき <img src="assets/addtocart.png" width="20" /> 製品の詳細画面で、
 * 後で使用するために保存：ユーザーがタップしたとき <img src="assets/saveforlater.png" width="15" /> 製品の詳細画面で、
-* 購入：ユーザーがタップしたとき <img src="assets/purchase.png" width="20" /> 製品の詳細画面で、
+* purchase：ユーザーがタップしたとき <img src="assets/purchase.png" width="20" /> 製品の詳細画面で、
 
 コマース関連のエクスペリエンスイベントの送信を再利用可能な方法で実装するには、専用の関数を使用します。
 
@@ -189,6 +189,11 @@ var xdmData: [String: Any] = [
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Android 向けに開発する場合は、Map (`java.util.Map`) を XDM ペイロードを構築するための基本的なインターフェイスとして使用します。
+
 
 ### カスタムフィールドグループ
 
@@ -339,15 +344,7 @@ var xdmData: [String: Any] = [
 1. アプリを実行し、ログインして製品を操作します。
 
    1. アシュランスアイコンを左に移動します。
-   1. 選択 **[!UICONTROL ホーム]** 」をクリックします。
-   1. Select the <img src="assets/login.png" width="15" /> ボタンをクリックして、ログインシートを開きます。
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. Select the <img src="assets/insert.png" width="15" /> ボタンを使用して、ランダムな電子メールと顧客 id を挿入できます。
-   1. 選択 **[!UICONTROL ログイン]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. 選択 **[!UICONTROL ホーム]** をクリックし、 **[!UICONTROL ECID]**, **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]** 」と入力します。
    1. 選択 **[!UICONTROL 製品]** 」をクリックします。
    1. 製品を選択します。
    1. 選択 <img src="assets/saveforlater.png" width="15" />。

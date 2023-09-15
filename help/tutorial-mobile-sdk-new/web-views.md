@@ -3,9 +3,9 @@ title: WebViews を処理
 description: モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
 jira: KT-6987
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 望ましくない状況を解決するには、アプリのネイティブ部分からアプリで使用したい WebView にユーザーの ECID を渡すことが重要です。
 
-WebView のExperience CloudID サービス JavaScript 拡張機能は、新しい ID のリクエストをAdobeに送信する代わりに、URL から ECID を抽出します。 ID サービスは、この ECID を使用して訪問者を追跡します。
+WebView 内で使用される AEP Edge Identity Extension は、現在の ECID を収集し、新しい ID のリクエストをAdobeに送信する代わりに URL に追加します。 その後、実装はこの ECID を使用して URL をリクエストします。
 
 ## 実装
 

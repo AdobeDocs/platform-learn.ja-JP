@@ -5,10 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 3%
+source-wordcount: '1689'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,11 @@ ht-degree: 3%
 
 Experience PlatformMobile SDK とJourney Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法について説明します。
 
-Journey Optimizerでは、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizerでは、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerのキャンペーンは、様々なチャネルを使用して、特定のオーディエンスに 1 回限りのコンテンツを配信する場合に使用します。 キャンペーンでは、アクションは指定したスケジュールに基づいて同時にまたは即時に実行されます。ジャーニーを使用する場合 ( [Journey Optimizerプッシュ通知](journey-optimizer-push.md) レッスン ) では、アクションが順に実行されます。
+
+![アーキテクチャ](assets/architecture-ajo.png)
+
+Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -26,6 +30,7 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 ## 前提条件
 
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
+* アプリをAdobe Experience Platform用に設定します。
 * Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
    * キャンペーンを管理します。
 * 証明書、識別子、キーを作成するのに十分なアクセス権を持つ有料Apple開発者アカウント。
@@ -43,7 +48,7 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 * アプリ ID をAppleプッシュ通知サービス (APN) に登録します。
 * AJO でアプリサーフェスを作成します。
 * Journey Optimizerタグ拡張機能をインストールして設定します。
-* Journey Optimizerタグ拡張を含めるようにアプリを更新します。
+* アプリを更新して、Journey Optimizerタグ拡張を登録します。
 * アシュランスで設定を検証します。
 * Journey Optimizerで独自のキャンペーンとアプリ内メッセージエクスペリエンスを定義する。
 * アプリ内から独自のアプリ内メッセージを送信します。
@@ -96,7 +101,7 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 
 アプリがJourney Optimizerで動作するようにするには、タグプロパティを更新する必要があります。
 
-1. に移動します。 **[!UICONTROL タグ]** > **[!UICONTROL 拡張機能]** > **[!UICONTROL カタログ]**,
+1. に移動します。 **[!UICONTROL タグ]** > **[!UICONTROL 拡張機能]** > **[!UICONTROL カタログ]**.
 1. プロパティを開きます（例： ）。 **[!UICONTROL Luma モバイルアプリチュートリアル]**.
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
@@ -167,11 +172,12 @@ Journey Optimizerでは、ターゲットを絞ったオーディエンスにア
 独自のアプリ内メッセージを作成するには、発生したイベントに基づいてアプリ内メッセージをトリガーするキャンペーンをJourney Optimizerで定義する必要があります。 以下のイベントが発生します。
 
 * Adobe Experience Platformに送信されたデータ
-* Mobile Core の汎用 API を使用した、アクション、PII データの状態やコレクションなどのコアトラッキングイベント
+* Mobile Core の汎用 API を使用した、PII データのアクション、状態やコレクションなどのコアトラッキングイベント
 * アプリケーションのライフサイクルイベント（起動、インストール、アップグレード、閉じる、クラッシュなど）
 * 目標地点の入力や終了などの位置情報イベント。
 
-このチュートリアルでは、Mobile Core の汎用 API と拡張機能に依存しない API を使用して、ユーザー画面、アクション、PII データのイベントトラッキングを容易にします。 これらの API で生成されたイベントは、SDK イベントハブに公開され、拡張機能で使用できます。 例えば、Analytics 拡張機能がインストールされると、すべてのユーザーアクションとアプリ画面のイベントデータが、適切な Analytics レポートエンドポイントに送信されます。
+このチュートリアルでは、Mobile Core の汎用 API と拡張機能に依存しない API を使用します ( [Mobile Core 汎用 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) を使用して、ユーザー画面、アクションおよび PII データのイベント追跡を容易におこなえます。 これらの API で生成されたイベントは、SDK イベントハブに公開され、拡張機能で使用できます。 SDK イベントハブは、すべての AEP Mobile SDK 拡張機能に関連付けられたコアデータ構造を提供し、登録済み拡張機能と内部モジュールのリスト、登録済みイベントリスナーのリスト、共有状態データベースを維持します。
+SDK イベントハブは、登録済み拡張機能のイベントデータを公開および受け取り、Adobeやサードパーティソリューションとの統合を簡略化します。 例えば、 Optimize 拡張機能がインストールされている場合、Journey Optimizer - Decision Management オファーエンジンとのすべてのリクエストとインタラクションは、イベントハブによって処理されます。
 
 1. Journey Optimizer UI で、 **[!UICONTROL キャンペーン]** をクリックします。
 1. 選択 **[!UICONTROL キャンペーンを作成]**.
@@ -252,7 +258,7 @@ Assurance UI でアプリ内メッセージを検証できます。
 
 ## 次の手順
 
-これで、関連する場合、適用可能な場合に、Luma アプリにアプリ内メッセージを追加するためのすべてのツールが用意されました。 例えば、アプリ内で追跡した特定のインタラクションに基づいて製品をプロモーションする場合などです。
+これで、関連する適用可能なアプリ内メッセージの追加を開始するためのすべてのツールが用意されました。  例えば、アプリ内で追跡している特定のインタラクションに基づいて製品をプロモーションする場合などです。
 
 >[!SUCCESS]
 >

@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2467'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,13 @@ ht-degree: 3%
 
 Experience PlatformMobile SDK を使用して、モバイルアプリでJourney Optimizer Decision Management のオファーを表示する方法について説明します。
 
-Journey Optimizer Decision Management は、あらゆるタッチポイントにわたって最適なオファーとエクスペリエンスを適切なタイミングで顧客に提供できるようにします。 設計が完了したら、パーソナライズされたオファーを使用してオーディエンスのターゲティングをおこないます。
+Journey Optimizer Decision Management は、すべてのタッチポイントにわたって最適なオファーとエクスペリエンスを、適切なタイミングで顧客に提供できるようにします。 設計が完了したら、パーソナライズされたオファーを使用してオーディエンスのターゲティングをおこないます。
+
+![アーキテクチャ](assets/architecture-od.png)
 
 決定管理を使用すると、Adobe Experience Platformで作成されたリッチなリアルタイムプロファイルにルールと制約を適用するマーケティングオファーの一元化されたライブラリと決定エンジンで、パーソナライゼーションを容易におこなえます。 その結果、顧客に適切なオファーを適切なタイミングで送信できます。 詳しくは、 [決定管理について](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) を参照してください。
+
+
 
 
 >[!NOTE]
@@ -29,6 +33,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 ## 前提条件
 
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
+* アプリをAdobe Experience Platform用に設定します。
 * Journey Optimizerへのアクセス — オファーと決定を管理する適切な権限を持つ、説明に従った決定管理 [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -41,7 +46,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 * 提案イベントをキャプチャするためにスキーマを更新します。
 * アシュランスで設定を検証します。
 * Journey Optimizer — 決定管理でのオファーに基づいて、オファーの決定を作成します。
-* Optimizer 拡張機能を含めるようにアプリを更新します。
+* Optimizer 拡張機能を登録するには、アプリを更新します。
 * アプリに、決定管理からオファーを実装します。
 
 
@@ -51,7 +56,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 >
 >環境を既に [Target での A/B テストの設定](target.md) チュートリアル：スキップできます [Adobe Journey Optimizer - Decisioning タグ拡張機能のインストール](#install-adobe-journey-optimizer---decisioning-tags-extension) および [スキーマを更新](#update-your-schema).
 
-### Edge 設定を更新
+### データストリーム設定を更新
 
 モバイルアプリから Edge ネットワークに送信されるデータがJourney Optimizer — 決定管理に確実に転送されるようにするには、 Experience Edge 設定を更新します。
 
@@ -76,11 +81,11 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 
 ### スキーマを更新
 
-1. データ収集 UI に移動し、「 」を選択します。 **[!UICONTROL スキーマ]** をクリックします。
+1. データ収集インターフェイスに移動して、「 」を選択します。 **[!UICONTROL スキーマ]** をクリックします。
 1. 選択 **[!UICONTROL 参照]** 上部のバーから。
 1. スキーマを選択して開きます。
 1. スキーマエディターで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** をクリックします。
-1. Adobe Analytics の **[!UICONTROL フィールドグループを追加]** ダイアログ ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) を検索 `proposition`を選択します。 **[!UICONTROL エクスペリエンスイベント — 提案インタラクション]** を選択し、 **[!UICONTROL フィールドグループを追加]**.
+1. Adobe Analytics の **[!UICONTROL フィールドグループを追加]** ダイアログ ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) を検索 `proposition`を選択します。 **[!UICONTROL エクスペリエンスイベント — 提案インタラクション]** を選択し、 **[!UICONTROL フィールドグループを追加]**. このフィールドグループは、オファーに関連するエクスペリエンスイベントデータ、つまり提示されるオファーを、そのコレクション、決定、その他のパラメーターの一部として収集します（このレッスンの後半を参照）。 しかし、オファーに何が起きているかも、オファーは表示され、インタラクションがおこなわれ、却下されるなどです。
    ![提案](assets/schema-fieldgroup-proposition.png)
 1. 選択 **[!UICONTROL 保存]** をクリックして、スキーマに対する変更を保存します。
 
@@ -211,7 +216,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
 * 実施要件ルール：例えば、は特定のオーディエンスに対してのみ利用できるオファーです。
 * ランキング方法：複数のオファーを選択できる場合、どの方法を使用してランク付けするか（例：オファーの優先度、数式または AI モデルを使用する方法）。
 
-詳しくは、 [オファーを作成および管理するための主な手順](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 配置、ルール、ランキング、オファー、表示域、コレクション、決定などの方法をより深く理解したい場合は、相互にやり取りし、関係を持ち合わせます。 このチュートリアルでは、Journey Optimizer — 決定管理内で決定を柔軟に定義するのではなく、決定の出力の使用にのみ焦点を当てています。
+詳しくは、 [オファーを作成および管理するための主な手順](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 配置、ルール、ランキング、オファー、表示域、コレクション、決定などの方法をより深く理解したい場合は、相互にやり取りし、関係を持ち合わせます。 このレッスンでは、Journey Optimizer — 決定管理内で決定を柔軟に定義するのではなく、決定の出力の使用にのみ焦点を当てています。
 
 1. Journey Optimizer UI で、 **[!UICONTROL オファー]** をクリックします。
 1. 選択 **[!UICONTROL 決定]** 上部のバーから。
@@ -304,7 +309,7 @@ Journey Optimizer Decision Management は、あらゆるタッチポイントに
    この関数：
 
    * XDM 辞書の設定 `xdmData`：オファーを提示する必要があるプロファイルを識別する ECID が含まれます。
-   * 定義 `decisionScope`: Journey Optimizer - Decision Management UI で定義した決定に基づくオブジェクトで、次の場所からコピーした決定範囲を使用して定義されます。 [決定の作成](#create-a-decision).  Luma アプリは設定ファイル (`decisions.json`) を呼び出し、次の JSON 形式に基づいてスコープパラメーターを取得します。
+   * 定義 `decisionScope`: Journey Optimizer - Decision Management インターフェイスで定義した決定に基づくオブジェクトで、次の場所からコピーした決定スコープを使用して定義されます。 [決定の作成](#create-a-decision).  Luma アプリは設定ファイル (`decisions.json`) を呼び出し、次の JSON 形式に基づいてスコープパラメーターを取得します。
 
      ```swift
      "scopes": [

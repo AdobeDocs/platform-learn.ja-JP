@@ -3,10 +3,10 @@ title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 9%
+source-wordcount: '598'
+ht-degree: 10%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 9%
 データストリームを作成する方法については、Experience Platformを参照してください。
 
 データストリームは、Platform Edge ネットワーク上のサーバー側の設定です。 データストリームは、Platform Edge ネットワークへの受信データが、Adobe Experience Cloudのアプリケーションおよびサービスに適切にルーティングされるようにします。 詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja) またはこの [ビデオ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ja).
+
+![アーキテクチャ](assets/architecture.png)
 
 ## 前提条件
 
@@ -33,13 +35,18 @@ ht-degree: 9%
 
 データストリームは [!UICONTROL データ収集] を使用するインターフェイス [!UICONTROL Datastream] 設定ツールを使用します。 データストリームを作成する手順は、次のとおりです。
 
-1. データストリームはサンドボックスレベルで定義されるので、正しいExperience Platformサンドボックスにいることを確認してください。
+1. データストリームはサンドボックスレベルで定義されるので、正しいExperience Platformサンドボックス内にいることを確認してください。
 1. 選択 **[!UICONTROL データストリーム]** をクリックします。
 1. **[!UICONTROL 新しいデータストリーム]**&#x200B;を選択します。
 
    ![datastreams ホーム](assets/datastream-new.png)
 
 1. 次を提供： **[!UICONTROL 名前]**&#x200B;例： `Luma Mobile App` および **[!UICONTROL 説明]**&#x200B;例： `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >最終的な注意事項：単一のサンドボックスで複数のユーザーを使用する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加または前付けすることを検討してください。 例えば、`Luma Mobile App Event Dataset` の代わりに、`Luma Mobile App Event Dataset - Joe Smith` を使用します。詳しくは、 [概要](overview.md).
+
 1. 前のレッスンで作成したスキーマを **イベントスキーマ**&#x200B;リスト。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -62,7 +69,7 @@ ht-degree: 9%
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![Adobe Analytics as Datastream サービスの追加](assets/datastream-service-aa.png)
+   ![Adobe Analyticsをデータストリームサービスとして追加](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
@@ -83,7 +90,7 @@ ht-degree: 9%
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![Adobe Experience Platform as a Datastream サービスの追加](assets/datastream-service-aep.png)
+   ![Adobe Experience Platformをデータストリームサービスとして追加する](assets/datastream-service-aep.png)
 1. 最終的な設定は次のようになります。
 
    ![datastream の設定](assets/datastream-settings.png)

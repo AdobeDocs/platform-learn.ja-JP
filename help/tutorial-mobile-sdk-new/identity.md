@@ -3,9 +3,9 @@ title: ID
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 7%
 
 ---
@@ -108,7 +108,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 ## ID の削除
 
-以下を使用すると、 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 保存されたクライアント側 ID マップから ID を削除する API。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側のユーザープロファイルグラフまたは ID グラフから識別子が削除されることはありません。
+以下を使用すると、 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 保存されたクライアント側 ID マップから ID を削除する API。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側の ID グラフから識別子が削除されることはありません。 詳しくは、 [ID グラフの表示](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) id グラフについて詳しくは、を参照してください。
 
 1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
 
@@ -144,13 +144,13 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
       <img src="./assets/identity2.png" width="300">
 
 
-1. Assurance Web UI で **[!UICONTROL エッジ ID の更新 ID]** イベント **[!UICONTROL com.adobe.griffon.mobile]** ベンダー。
+1. Assurance Web インターフェイスで **[!UICONTROL エッジ ID の更新 ID]** イベント **[!UICONTROL com.adobe.griffon.mobile]** ベンダー。
 1. イベントを選択し、 **[!UICONTROL ACPExtensionEventData]** オブジェクト。 更新した ID が表示されます。
    ![id の更新を検証](assets/identity-validate-assurance.png)
 
 ## ID グラフで検証
 
-手順を完了したら、 [Experience Platformレッスン](platform.md)を使用すると、Platforms の ID グラフビューアで ID の取り込みを確認できます。
+手順を完了したら、 [Experience Platformレッスン](platform.md)を使用すると、Platforms の ID グラフビューアで ID の取得を確認できます。
 
 1. 選択 **[!UICONTROL ID]** （データ収集 UI）を参照してください。
 1. 選択 **[!UICONTROL ID グラフ]** 上部のバーから。

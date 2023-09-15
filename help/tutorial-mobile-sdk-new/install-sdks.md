@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '946'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 * タグライブラリが正常に構築され、 [前のレッスン](configure-tags.md).
 * からの開発環境ファイル ID [モバイルインストール手順](configure-tags.md#generate-sdk-install-instructions).
 * 空の [サンプルアプリ](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
-* の使用経験 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
+* の使用経験 [Xcode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 学習内容
 
@@ -39,20 +39,20 @@ Xcode では、 **[!UICONTROL ファイル]** > **[!UICONTROL パッケージを
 
 | パッケージ | 説明 |
 |---|---|
-| [AEP コア](https://github.com/adobe/aepsdk-core-ios.git) | The `AEPCore`, `AEPServices`、および `AEPIdentity` 拡張機能は、Adobe Experience Platform SDK の基盤を表します。SDK を使用するすべてのアプリには、これらを含める必要があります。 これらのモジュールには、すべての SDK 拡張機能で必要となる機能とサービスの共通セットが含まれています。<br/>`AEPCore` には、Event Hub の実装が含まれています。 イベントハブは、アプリと SDK の間でイベントを配信する際に使用されるメカニズムです。 イベントハブは、拡張機能間でのデータの共有にも使用されます。<br/>`AEPServices` は、ネットワーク、ディスクアクセス、データベース管理など、プラットフォームのサポートに必要な再利用可能な実装をいくつか提供します。<br/>`AEPIdentity` は、Adobe Experience Platform ID サービスとの統合を実装しています。<br/>`AEPSignal` は、マーケターがアプリに「シグナル」を送信して、外部の宛先にデータを送信したり、URL を開いたりできる、Adobe Experience Platform SDK のシグナル拡張機能を表します。<br/>`AEPLifecycle` は、アプリケーションのインストールまたはアップグレード情報、アプリケーションの起動とセッション情報、デバイス情報、アプリケーション開発者が提供する追加のコンテキストデータなど、アプリケーションのライフサイクル指標を収集するのに役立つAdobe Experience Platform SDK のライフサイクル拡張を表します。 |
-| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | Adobe Experience Platform Edge Network モバイル拡張機能を使用すると、モバイルアプリケーションからAdobe Edgeネットワークにデータを送信できます。 この拡張機能を使用すると、Adobe Experience Cloud機能をより堅牢な方法で実装し、1 回のAdobe呼び出しで複数のネットワークソリューションを提供し、同時にこの情報をAdobe Experience Platformに転送できます。<br/>Edge Network モバイル拡張機能は、Adobe Experience Platform SDK の拡張機能で、 `AEPCore` および `AEPServices` イベント処理用の拡張機能、および `AEPEdgeIdentity` id を取得するための拡張（ECID など）。 |
-| [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | AEP Edge Identity Mobile 拡張機能を使用すると、Adobe Experience Platform SDK と Edge Network 拡張機能を使用する際に、モバイルアプリケーションからのユーザー ID データを処理できます。 |
-| [AEP Edge の同意](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | AEP Consent Collection モバイル拡張機能を使用すると、Adobe Experience Platform SDK と Edge Network 拡張機能を使用する際に、モバイルアプリケーションから同意設定の収集を有効にできます。 |
-| [AEP ユーザープロファイル](https://github.com/adobe/aepsdk-userprofile-ios.git) | Adobe Experience Platform User Profile Mobile Extension は、Adobe Experience Platform SDK のユーザープロファイルを管理する拡張機能です。 |
-| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEPPlaces 拡張機能を使用すると、AdobePlaces UI とAdobeデータ収集タグルールで定義された位置情報イベントを追跡できます。 |
-| [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP Messaging 拡張機能を使用すると、プッシュ通知トークンとプッシュ通知クリックスルーフィードバックをAdobe Experience Platformに送信できます。 |
-| [AEP 最適化](https://github.com/adobe/aepsdk-optimize-ios) | AEP OptimizeOffer decisioning機能は、Adobe TargetまたはAdobe Journey Optimizer拡張機能を使用して、Adobe Experience Platform Mobile SDK でリアルタイムのパーソナライゼーションワークフローを有効にする API を提供します。 必要な情報 `AEPCore` および `AEPEdge` パーソナライゼーションクエリイベントを Experience Edge ネットワークに送信する拡張機能です。 |
-| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance(a.k.a. project Griffon) は、モバイルアプリでデータを収集したりエクスペリエンスを提供する方法を調査、配達確認、シミュレーション、検証するのに役立つ、新しい革新的な製品です。 この拡張機能を使用すると、アプリでアシュランスを有効にできます。 |
+| [AEP コア](https://github.com/adobe/aepsdk-core-ios.git) | The `AEPCore`, `AEPServices`、および `AEPIdentity` 拡張機能は、Adobe Experience Platform SDK の基盤を表します。SDK を使用するすべてのアプリには、これらを含める必要があります。 これらのモジュールには、すべての SDK 拡張機能で必要となる機能とサービスの共通セットが含まれています。<br/><ul><li>`AEPCore` には、Event Hub の実装が含まれています。 イベントハブは、アプリと SDK の間でイベントを配信する際に使用されるメカニズムです。 イベントハブは、拡張機能間でのデータの共有にも使用されます。</li><li>`AEPServices` は、ネットワーク、ディスクアクセス、データベース管理など、プラットフォームのサポートに必要な再利用可能な実装をいくつか提供します。</li><li>`AEPIdentity` は、Adobe Experience Platform ID サービスとの統合を実装しています。</li><li>`AEPSignal` は、マーケターがアプリに「シグナル」を送信して、外部の宛先にデータを送信したり、URL を開いたりできるAdobe Experience Platform SDK シグナル拡張機能を表します。</li><li>`AEPLifecycle` は、アプリケーションのインストールまたはアップグレード情報、アプリケーションの起動とセッション情報、デバイス情報、アプリケーション開発者が提供する追加のコンテキストデータなど、アプリケーションのライフサイクル指標を収集するのに役立つAdobe Experience Platform SDK の Lifecycle 拡張機能を表します。</li></ul> |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | Adobe Experience Platform Edge Network モバイル拡張機能 (`AEPEdge`) を使用すると、モバイルアプリケーションからAdobe Edge Network にデータを送信できます。 この拡張機能を使用すると、Adobe Experience Cloud機能をより堅牢な方法で実装し、1 回のAdobe呼び出しで複数のネットワークソリューションを提供し、同時にこの情報をAdobe Experience Platformに転送できます。<br/>Edge Network モバイル拡張機能は、Adobe Experience Platform SDK の拡張機能で、 `AEPCore` および `AEPServices` イベント処理用の拡張機能、および `AEPEdgeIdentity` id を取得するための拡張（ECID など）。 |
+| [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | AEP Edge Identity Mobile 拡張機能 (`AEPEdgeIdentity`) を使用すると、Adobe Experience Platform SDK と Edge Network 拡張機能を使用する際に、モバイルアプリケーションからユーザー ID データを処理できます。 |
+| [AEP Edge の同意](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | AEP Consent Collection モバイル拡張機能 (`AEPConsent`) は、Adobe Experience Platform SDK と Edge Network 拡張機能を使用する際に、モバイルアプリケーションから同意設定の収集を有効にします。 |
+| [AEP ユーザープロファイル](https://github.com/adobe/aepsdk-userprofile-ios.git) | Adobe Experience Platform User Profile Mobile 拡張機能 (`AEPUserProfile`) は、Adobe Experience Platform SDK のユーザープロファイルを管理する拡張機能です。 |
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEP Places 拡張機能 (`AEPPlaces`) を使用すると、Places インターフェイスおよびAdobeデータ収集Adobeルールで定義された位置情報イベントを追跡できます。 |
+| [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP メッセージ拡張機能 (`AEPMessaging`) を使用すると、プッシュ通知トークンとプッシュ通知クリックスルーフィードバックをAdobe Experience Platformに送信できます。 |
+| [AEP 最適化](https://github.com/adobe/aepsdk-optimize-ios) | AEP Optimize 拡張機能 (`AEPOptimize`) は、Adobe TargetまたはAdobe Journey OptimizerOffer decisioningを使用してAdobe Experience Platform Mobile SDK でリアルタイムのパーソナライゼーションワークフローを有効にする API を提供します。 必要な情報 `AEPCore` および `AEPEdge` パーソナライゼーションクエリイベントを Experience Edge ネットワークに送信する拡張機能です。 |
+| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (a.k.a. project Griffon) は、新しい革新的な拡張機能 (`AEPAssurance`) を使用して、モバイルアプリでデータを収集したりエクスペリエンスを提供する方法を調査、配達確認、シミュレーションおよび検証できます。 この拡張機能を使用すると、アプリでアシュランスを有効にできます。 |
 
 
 すべてのパッケージをインストールしたら、Xcode **[!UICONTROL パッケージの依存関係]** 画面は次のようになります。
 
-![Xcode パッケージの依存関係](assets/xcode-package-dependencies.png)
+![Xcode パッケージの依存関係](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
 
 
 ## 拡張機能のインポート
