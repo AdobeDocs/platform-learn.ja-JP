@@ -1,16 +1,16 @@
 ---
-title: ID
+title: ID データを収集
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 7%
+source-wordcount: '760'
+ht-degree: 6%
 
 ---
 
-# ID
+# ID データを収集
 
 モバイルアプリで ID データを収集する方法を説明します。
 
@@ -36,6 +36,13 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) id が関連するコンテキストのインジケーターとして機能する 例えば、`name@email.com` の値をメールアドレスとして、または `443522` を数値 CRM ID として区別します。
 
+>[!NOTE]
+>
+>Mobile SDK は、アプリがインストールされると、Experience CloudID(ECID) という名前の一意の ID を独自の名前空間に生成します。 この ECID はモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信されます。 ECID が削除されるのは、ユーザーがアプリをアンインストールしたとき、またはユーザーが Mobile SDK のグローバルプライバシーステータスを optedout に設定したときにです。 サンプルの Luma アプリで、アプリを削除してから再インストールし、独自の一意の ECID を持つ新しいプロファイルを作成する必要があります。
+
+
+新しい ID 名前空間を作成するには：
+
 1. データ収集インターフェイスで、「 」を選択します。 **[!UICONTROL ID]** をクリックします。
 1. 「**[!UICONTROL ID 名前空間を作成]**」を選択します。
 1. 次を提供： **[!UICONTROL 表示名]** / `Luma CRM ID` および **[!UICONTROL ID シンボル]** の値 `lumaCRMId`.
@@ -51,7 +58,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 ユーザーがアプリにログインする際に、標準 ID（電子メール）とカスタム ID(Luma CRM ID) の両方を更新する必要がある場合。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateIdentities(emailAddress: String, crmId: String)` 関数の実装。 次のコードを関数に追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateIdentities(emailAddress: String, crmId: String)` 関数の実装。 次のコードを関数に追加します。
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -93,7 +100,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. に移動します。 **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
 
    ```swift
    // Update identities
@@ -110,7 +117,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 以下を使用すると、 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 保存されたクライアント側 ID マップから ID を削除する API。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側の ID グラフから識別子が削除されることはありません。 詳しくは、 [ID グラフの表示](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) id グラフについて詳しくは、を参照してください。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -120,7 +127,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログアウト]** 」ボタンをクリックします。 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログアウト]** 」ボタンをクリックします。 次のコードを追加します。
 
    ```swift
    // Remove identities

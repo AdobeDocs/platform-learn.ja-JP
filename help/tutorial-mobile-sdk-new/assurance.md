@@ -3,14 +3,14 @@ title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 4%
+source-wordcount: '776'
+ht-degree: 3%
 
 ---
 
-# Assurance
+# アシュランスの設定
 
 モバイルアプリでAdobe Experience Platform Assurance を設定する方法を説明します。
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 
 一般 [SDK のインストール](install-sdks.md)前のレッスンで完了したiOSでは、アプリのアシュランスセッションを開始するために、以下の追加も必要です。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** をクリックします。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** をクリックします。
 
 1. 次のコードを `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>` に追加します。
 
@@ -61,18 +61,23 @@ ht-degree: 4%
 Xcode でアプリケーションを初めて実行する前に、必ず署名を更新してください。
 
 1. Xcode で  プロジェクトを開きます。
-1. 選択 **[!UICONTROL Luma]** をクリックします。
-1. を選択します。 **[!UICONTROL Luma]** ターゲット。
+1. 選択 **[!DNL Luma]** をクリックします。
+1. を選択します。 **[!DNL Luma]** ターゲット。
 1. を選択します。 **署名と機能** タブをクリックします。
 1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**&#x200B;または、特定のApple開発プロビジョニングの詳細を使用します。
+
+   >[!IMPORTANT]
+   >
+   >各バンドル識別子は一意である必要があるので、Start プロジェクトに既に入力したデフォルトの識別子とは異なる一意のバンドル識別子を選択してください。
+
 
    ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## ベース URL の設定
 
 1. Xcode でプロジェクトに移動します。
-1. 選択 **[!UICONTROL Luma]** をクリックします。
-1. を選択します。 **[!UICONTROL Luma]** ターゲット。
+1. 選択 **[!DNL Luma]** をクリックします。
+1. を選択します。 **[!DNL Luma]** ターゲット。
 1. を選択します。 **情報** タブをクリックします。
 1. ベース URL を追加するには、下にスクロールして **URL タイプ** をクリックし、 **+** 」ボタンをクリックします。
 1. 設定 **識別子** を、で設定したバンドル識別子に追加します。 [署名](#signing) 例： `com.adobe.luma.tutorial.swiftui`) をクリックし、 **URL スキーム**&#x200B;例： `lumatutorialswiftui`.
@@ -90,7 +95,7 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
 1. 選択 **[!UICONTROL アシュランス]** をデータ収集 UI の左側のパネルから削除します。
 1. 選択 **[!UICONTROL セッションを作成]**.
 1. 選択 **[!UICONTROL 開始]**.
-1. 次を提供： **[!UICONTROL セッション名]** 例： `Luma Mobile App Session` そして **[!UICONTROL ベース URL]**:Xcode で入力した URL スキームで、その後に `://`. 例：`lumatutorialswiftui://`。
+1. 次を提供： **[!UICONTROL セッション名]** 例： `Luma Mobile App Session` そして **[!UICONTROL ベース URL]**:Xcode で入力した URL スキームで、その後に `://` 例： `lumatutorialswiftui://`
 1. 「**[!UICONTROL 次へ]**」を選択します。
    ![アシュランス作成セッション](assets/assurance-create-session.png)
 1. Adobe Analytics の **[!UICONTROL 新しいセッションを作成]** モーダルダイアログ：

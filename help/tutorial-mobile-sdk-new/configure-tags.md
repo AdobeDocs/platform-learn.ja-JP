@@ -3,9 +3,9 @@ title: タグプロパティの設定
 description: タグのプロパティを設定する方法については、 [!UICONTROL データ収集] インターフェイス。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 8%
 
 ---
@@ -110,9 +110,9 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 1. 以下を使用します。 ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 検索]** 検索してインストールするフィールド **Adobe Experience Platform Edge Network** 拡張子。
 
-   1. In **[!UICONTROL データストリーム]** 「 」を選択します。 **[!UICONTROL Datastream]** 作成した [前の手順](create-datastream.md) 各環境の例 **[!UICONTROL Luma モバイルアプリ]**.
+   1. In **[!UICONTROL データストリーム]** 「 」を選択します。 **[!UICONTROL Datastream]** 作成した [前の手順](create-datastream.md) 各環境の例 **[!DNL Luma Mobile App]**.
 
-   1. 次を指定します。 **[!UICONTROL Edge Network ドメイン]** 範囲 **[!UICONTROL ドメイン設定]**. Edge Network ドメインは組織の名前で、その後にが続きます `data.adobedc.net`例： `techmarketingdemos.data.adobedc.net`.
+   1. まだ入力されていない場合は、 **[!UICONTROL Edge Network ドメイン]** 範囲 **[!UICONTROL ドメイン設定]**. Edge Network ドメインは組織の名前で、その後にが続きます `data.adobedc.net`例： `techmarketingdemos.data.adobedc.net`.
 
    1. 次から： **[!UICONTROL ライブラリに保存]** メニュー、選択 **[!UICONTROL ライブラリに保存してビルドする]**.
 

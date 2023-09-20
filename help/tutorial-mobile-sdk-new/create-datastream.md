@@ -3,10 +3,10 @@ title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 10%
+source-wordcount: '615'
+ht-degree: 9%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 10%
    >
    >最終的な注意事項：単一のサンドボックスで複数のユーザーを使用する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加または前付けすることを検討してください。 例えば、`Luma Mobile App Event Dataset` の代わりに、`Luma Mobile App Event Dataset - Joe Smith` を使用します。詳しくは、 [概要](overview.md).
 
-1. 前のレッスンで作成したスキーマを **イベントスキーマ**&#x200B;リスト。
+1. 前のレッスンで作成したスキーマを **イベントスキーマ** リスト。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
    ![新しいデータストリーム](assets/datastream-name.png)
@@ -55,7 +55,7 @@ ht-degree: 10%
 
 ## サービスを追加
 
-次に、Experience Cloudサービスをデータストリームに接続します。 Platform Mobile SDK が Edge ネットワークにデータを送信する場合、データストリームは次のサービスにデータを送信します。
+（オプション） [Analytics](analytics.md) および [Experience Platform](platform.md) このチュートリアルでは、データストリームにサービスを追加して、Platform Mobile SDK が Edge ネットワークにデータを送信する際に、データストリームが設定済みのサービスにそのデータを転送するようにします。
 
 ### Adobe Analytics
 

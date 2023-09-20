@@ -4,10 +4,10 @@ description: Adobe Experience Platformにデータを送信する方法を説明
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 7%
+source-wordcount: '1056'
+ht-degree: 8%
 
 ---
 
@@ -33,6 +33,7 @@ The [イベント](events.md), [ライフサイクル](lifecycle-data.md)、お�
 このレッスンでは、次の操作を実行します。
 
 * Experience Platformデータセットを作成する。
+* データをExperience Platformに転送するようにデータストリームを設定します。
 * データセット内のデータを検証します。
 * リアルタイム顧客プロファイルのスキーマとデータセットを有効にします。
 * リアルタイム顧客プロファイルでデータを検証します。
@@ -54,7 +55,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
    ![データセットホーム](assets/dataset-create.png)
 
 1. スキーマを検索します。 例えば、 `Luma Mobile` 」と入力します。
-1. スキーマを選択します（例： ）。 **[!UICONTROL Luma モバイルアプリイベントスキーマ]**.
+1. スキーマを選択します（例： ）。 **[!DNL Luma Mobile App Event Schema]**.
 
 1. 「**[!UICONTROL 次へ]**」を選択します。
    ![データセットの設定](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 1. 「**[!UICONTROL 完了]**」を選択します。
    ![データセットの完了](assets/dataset-finish.png)
 
-## データストリームの更新
 
-データセットを作成したら、必ず [データストリームの更新](create-datastream.md#adobe-experience-platform) をクリックしてAdobe Experience Platformを追加します。 この更新により、データが Platform に送られるようになります。
+## Adobe Experience Platform Datastream サービスの追加
+
+XDM データを Edge ネットワークからAdobe Experience Platformに送信するには、Adobe Experience Platformサービスを、 [データストリームの作成](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>Adobe Experience Platformサービスは、イベントデータセットを作成した場合にのみ有効にできます。
+
+1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]** お使いのデータストリーム。
+
+1. 次に、 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL サービスを追加]**.
+
+1. [!UICONTROL サービス]リストから&#x200B;**[!UICONTROL Adobe Experience Platform]** を選択します。
+
+1. 切り替えてサービスを有効にする **[!UICONTROL 有効]** オン。
+
+1. を選択します。 **[!UICONTROL イベントデータセット]** 前に作成したもの。例： **[!DNL Luma Mobile App Event Dataset]**.
+
+1. 「**[!UICONTROL 保存]**」を選択します。
+
+   ![Adobe Experience Platformをデータストリームサービスとして追加する](assets/datastream-service-aep.png)
+1. 最終的な設定は次のようになります。
+
+   ![datastream の設定](assets/datastream-settings.png)
+
 
 ## データセット内のデータの検証
 
@@ -89,7 +113,7 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 
 ### スキーマを有効にする
 
-1. スキーマを開きます（例： ）。 **[!UICONTROL Luma モバイルアプリイベントスキーマ]**.
+1. スキーマを開きます（例： ）。 **[!DNL Luma Mobile App Event Schema]**.
 1. 有効にする **[!UICONTROL プロファイル]**.
 1. 選択 **[!UICONTROL このスキーマのデータの identityMap フィールドには、プライマリ ID が含まれます。]** 」と入力します。
 1. ****&#x200B;スキーマの保存.
@@ -98,7 +122,7 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 
 ### データセットの有効化
 
-1. データセットを開きます（例： ）。 **[!UICONTROL Luma モバイルアプリイベントデータセット]**.
+1. データセットを開きます（例： ）。 **[!DNL Luma Mobile App Event Dataset]**.
 1. 有効にする **[!UICONTROL プロファイル]**.
 
    ![プロファイルのデータセットの有効化](assets/platform-profile-dataset.png)

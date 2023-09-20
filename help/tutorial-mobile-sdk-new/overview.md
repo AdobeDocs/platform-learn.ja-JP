@@ -3,7 +3,7 @@ title: モバイルアプリでのAdobe Experience Cloudの実装チュートリ
 description: Adobe Experience Cloudモバイルアプリケーションの実装方法を説明します。 このチュートリアルでは、サンプルの Swift アプリケーションでExperience Cloudアプリケーションを実装する手順を説明します。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 9%
@@ -103,4 +103,4 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 >
 >Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[XDM スキーマの作成](create-schema.md)**.
+次へ： **[XDM スキーマの作成](create-schema.md)**

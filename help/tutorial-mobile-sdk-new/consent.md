@@ -1,16 +1,16 @@
 ---
-title: 同意
+title: 同意の実装
 description: モバイルアプリに同意を実装する方法を説明します。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# 同意
+# 同意の実装
 
 モバイルアプリに同意を実装する方法を説明します。
 
@@ -36,7 +36,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 1. ユーザーに 1 回だけ問い合わせたい場合。 そのため、Mobile SDK の同意と、Appleを使用した追跡に必要な認証を組み合わせる必要があります [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). このアプリでは、ユーザーがトラッキングを承認する際に、そのユーザーがイベントの収集にも同意すると仮定します。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
 
    このコードを `updateConsent` 関数に置き換えます。
 
@@ -48,7 +48,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL 免責事項ビュー]** Xcode のプロジェクトナビゲーター。アプリケーションをインストールまたは再インストールして、初めてアプリを起動した後に表示されるビューです。 Appleの設定ごとにトラッキングを承認するように求められます。 [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). ユーザーが承認した場合は、同意も更新します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 免責事項ビュー]** Xcode のプロジェクトナビゲーター。アプリケーションをインストールまたは再インストールして、初めてアプリを起動した後に表示されるビューです。 Appleの設定ごとにトラッキングを承認するように求められます。 [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). ユーザーが承認した場合は、同意も更新します。
 
    次のコードを `ATTrackingManager.requestTrackingAuthorization { status in` クロージャ。
 
@@ -68,7 +68,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 同意モバイル拡張機能では、現在の同意値に基づいて、 / pends /を自動的に抑制し、トラッキングを許可します。 また、現在の同意状態に自分でアクセスすることもできます。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode のプロジェクトナビゲーター内。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode のプロジェクトナビゲーター内。
 
    次のコードを `getConsents` 関数：
 
@@ -82,7 +82,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    }
    ```
 
-2. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL HomeView]** Xcode のプロジェクトナビゲーター内。
+2. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** Xcode のプロジェクトナビゲーター内。
 
    次のコードを `.task` 修飾子：
 

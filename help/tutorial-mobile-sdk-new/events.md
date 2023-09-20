@@ -1,15 +1,15 @@
 ---
-title: イベント
+title: イベントデータの収集
 description: モバイルアプリでイベントデータを収集する方法を説明します。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 0%
+source-wordcount: '1309'
+ht-degree: 2%
 
 ---
 
-# イベント
+# イベントデータの収集
 
 モバイルアプリでイベントを追跡する方法を説明します。
 
@@ -127,7 +127,7 @@ var xdmData: [String: Any] = [
 
 コマース関連のエクスペリエンスイベントの送信を再利用可能な方法で実装するには、専用の関数を使用します。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、以下の内容を `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 関数に置き換えます。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、以下の内容を `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 関数に置き換えます。
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -158,7 +158,7 @@ var xdmData: [String: Any] = [
    * 辞書を使用してエクスペリエンスイベントを設定します。
    * は、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** Xcode プロジェクトナビゲーターで、 `sendCommerceExperienceEvent` 関数：
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** Xcode プロジェクトナビゲーターで、 `sendCommerceExperienceEvent` 関数：
 
    1. 次の場合： `.task` 修飾子、内 `ATTrackingManager.trackingAuthorizationStatus` クロージャ。 この `.task` 製品表示が初期化されて表示されると修飾子が呼び出されるので、特定の時点で製品表示イベントを送信できます。
 
@@ -263,7 +263,7 @@ var xdmData: [String: Any] = [
 
 ここでも、Xcode プロジェクトにこのコードを実装します。
 
-1. 利便性を考慮して、 **[!UICONTROL MobileSDK]**. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
+1. 利便性を考慮して、 **[!UICONTROL MobileSDK]**. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
 
    1. アプリのインタラクション用の 1 つ。 このコードを `func sendAppInteractionEvent(actionName: String)` 関数：
 
@@ -321,7 +321,7 @@ var xdmData: [String: Any] = [
       * 辞書を使用してエクスペリエンスイベントを設定します。
       * は、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL LoginSheet]**.
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
    1. 次のハイライト表示されたコードを [ ログイン ] ボタンのクロージャに追加します。
 
@@ -345,7 +345,7 @@ var xdmData: [String: Any] = [
 
    1. アシュランスアイコンを左に移動します。
    1. 選択 **[!UICONTROL ホーム]** をクリックし、 **[!UICONTROL ECID]**, **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]** 」と入力します。
-   1. 選択 **[!UICONTROL 製品]** 」をクリックします。
+   1. 選択 **[!DNL Products]** 」をクリックします。
    1. 製品を選択します。
    1. 選択 <img src="assets/saveforlater.png" width="15" />。
    1. 選択 <img src="assets/addtocart.png" width="20" />。
@@ -361,7 +361,7 @@ var xdmData: [String: Any] = [
 
 ## 次の手順
 
-これで、Luma アプリへのデータ収集の追加を開始するためのすべてのツールが用意されました。 ユーザーがアプリ内の製品をどのように操作するかに関するインテリジェンスを追加でき、さらに多くのアプリインタラクションや画面トラッキングコールをアプリに追加できます。
+これで、アプリへのデータ収集の追加を開始するためのすべてのツールが用意されました。 ユーザーがアプリ内の製品をどのように操作するかに関するインテリジェンスを追加でき、さらに多くのアプリインタラクションや画面トラッキングコールをアプリに追加できます。
 
 * 注文、チェックアウト、空のバスケット、その他の機能をアプリに実装し、関連するコマースエクスペリエンスイベントをこの機能に追加します。
 * への呼び出しを繰り返します。 `sendAppInteractionEvent` を適切なパラメーターに置き換えて、ユーザーによるその他のアプリの操作を追跡します。

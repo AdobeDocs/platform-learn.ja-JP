@@ -1,15 +1,15 @@
 ---
-title: Places
+title: 位置情報サービスを使用する
 description: モバイルアプリで Places の位置情報サービスを使用する方法について説明します。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 4%
 
 ---
 
-# Places
+# 位置情報サービスを使用する
 
 アプリで位置情報サービスを使用する方法を説明します。
 
@@ -72,7 +72,7 @@ Places サービスで目標地点を定義します。
 1. を閉じるには、以下を実行します。 **[!UICONTROL ライブラリを管理]** ダイアログ、選択 **[!UICONTROL 閉じる]**.
 1. 戻る **[!UICONTROL POI 管理]**&#x200B;を選択します。 **[!UICONTROL POI をインポート]**.
 1. 選択 **[!UICONTROL 開始]** t**で[!UICONTROL 場所をインポート]**ダイアログ。
-1. 選択 **[!UICONTROL Luma]** ライブラリのリストから、
+1. 選択 **[!DNL Luma]** ライブラリのリストから、
 1. 「**[!UICONTROL 次へ]**」を選択します。
    ![ライブラリを選択](assets/places-import-select-library.png)
 1. をダウンロードします。 [Luma POI ZIP ファイル](assets/luma_pois.csv.zip) コンピュータ上の場所に抽出します。
@@ -94,7 +94,7 @@ Places サービスで目標地点を定義します。
    ![判定拡張機能の追加](assets/tag-places-extension.png)
 
 1. Adobe Analytics の **[!UICONTROL 拡張機能のインストール]** ダイアログ：
-   1. 選択 **[!UICONTROL Luma]** から **[!UICONTROL ライブラリを選択]** リスト。
+   1. 選択 **[!DNL Luma]** から **[!UICONTROL ライブラリを選択]** リスト。
    1. 作業用ライブラリが選択されていることを確認します（例： ）。 **[!UICONTROL 初期ビルド]**.
    1. 選択 **[!UICONTROL ライブラリに保存してビルドする]** から **[!UICONTROL ライブラリに保存]**.
       ![Places 拡張機能のインストール](assets/places-install-extension.png).
@@ -268,7 +268,7 @@ Places サービスで目標地点を定義します。
 >
 
 1. Xcode で、 [AEP Places](https://github.com/adobe/aepsdk-places-ios) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 」をクリックします。
 1. 確認 `AEPPlaces` は、インポートのリストの一部です。
 
    `import AEPPlaces`
@@ -291,7 +291,7 @@ Places サービスで目標地点を定義します。
    ]
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 関数に追加します。次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 関数に追加します。次のコードを追加します。
 
    ```swift
    // Process geolocation event
@@ -300,7 +300,7 @@ Places サービスで目標地点を定義します。
 
    この [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API は、位置情報を Places サービスに通信します。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 場所]** > **[!UICONTROL GeofenceSheet]** Xcode のプロジェクトナビゲーター内。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** Xcode のプロジェクトナビゲーター内。
 
    1. 「入力」ボタンに、次のコードを入力します。
 

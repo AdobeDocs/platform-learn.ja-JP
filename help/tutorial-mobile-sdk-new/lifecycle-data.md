@@ -1,15 +1,15 @@
 ---
-title: ライフサイクルデータ
+title: ライフサイクルデータの収集
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
 
-# ライフサイクルデータ
+# ライフサイクルデータの収集
 
 モバイルアプリでライフサイクルデータを収集する方法を説明します。
 
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 これで、プロジェクトを更新して、ライフサイクルイベントを登録できます。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 」をクリックします。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** 」をクリックします。
 
 1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは、 `sceneWillEnterForeground:` delegate メソッドと、ライフサイクル開始イベントをトリガーする場所です。 このコードを `func sceneWillEnterForeground(_ scene: UIScene)`:
 

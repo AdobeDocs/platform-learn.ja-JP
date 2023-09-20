@@ -1,18 +1,18 @@
 ---
-title: Adobe Journey Optimizerオファー
+title: オファーの作成と表示
 description: Platform Mobile SDK とAdobe Journey Optimizer Decision Management を使用してオファーを作成および表示する方法について説明します。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 3%
+source-wordcount: '2443'
+ht-degree: 4%
 
 ---
 
-# Journey Optimizerオファー
+# オファーの作成と表示
 
 Experience PlatformMobile SDK を使用して、モバイルアプリでJourney Optimizer Decision Management のオファーを表示する方法について説明します。
 
@@ -54,18 +54,20 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 
 >[!TIP]
 >
->環境を既に [Target での A/B テストの設定](target.md) チュートリアル：スキップできます [Adobe Journey Optimizer - Decisioning タグ拡張機能のインストール](#install-adobe-journey-optimizer---decisioning-tags-extension) および [スキーマを更新](#update-your-schema).
+>環境を既に [Target での A/B テストの設定](target.md) レッスンでは、このセットアップセクションの手順の一部を既に実行している可能性があります。
 
 ### データストリーム設定を更新
 
 モバイルアプリから Edge ネットワークに送信されるデータがJourney Optimizer — 決定管理に確実に転送されるようにするには、 Experience Edge 設定を更新します。
 
-1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!UICONTROL Luma モバイルアプリ]**.
+1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
 1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
-1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Offer decisioning]**, **[!UICONTROL エッジのセグメント化]**, **[!UICONTROL パーソナライズ機能の宛先]**、および **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
+1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Offer decisioning]**, **[!UICONTROL エッジのセグメント化]**、および **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 Target のレッスンに従う場合は、「 **[!UICONTROL パーソナライズ機能の宛先]** 同様に。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
 1. データストリーム設定を保存するには、 **[!UICONTROL 保存]** .
 
-   ![AEP データストリーム設定](assets/datastream-aep-configuration.png)
+   ![AEP データストリーム設定](assets/datastream-aep-configuration-offers.png)
+
+
 
 
 ### Journey Optimizer - Decisioning タグ拡張機能のインストール
@@ -198,7 +200,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 1. 選択 **[!UICONTROL コレクション]** 上部のバーから。
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL コレクションを作成]**.
 1. Adobe Analytics の **[!UICONTROL 新しいコレクション]** ダイアログで、 **[!UICONTROL 名前]** コレクションの例： `Luma - Mobile App Collection`を選択します。 **[!UICONTROL 静的コレクションを作成]**&#x200B;をクリックし、 **[!UICONTROL 次へ]**.
-1. In **[!UICONTROL Luma — モバイルアプリコレクション]**」で、コレクションに含めるオファーを選択します。 このチュートリアルでは、作成した 5 つのオファーを選択します。 検索フィールドを使用して、例えば次のように入力することで、リストを簡単にフィルタリングできます。 **[!UICONTROL Luma]**.
+1. In **[!DNL Luma - Mobile App Collection]**」で、コレクションに含めるオファーを選択します。 このチュートリアルでは、作成した 5 つのオファーを選択します。 検索フィールドを使用して、例えば次のように入力することで、リストを簡単にフィルタリングできます。 **[!DNL Luma]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
 
    ![オファー — コレクション](assets/ajo-collection-offersselected.png)
@@ -228,14 +230,14 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 1. Adobe Analytics の **[!UICONTROL 決定範囲を追加]** 一歩 **[!UICONTROL 新しいオファーの決定を作成]**:
    1. 選択 **[!UICONTROL モバイル JSON]** から **[!UICONTROL 配置]** リスト。
    1. Adobe Analytics の **[!UICONTROL 評価条件]** タイル、選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]**.
-      1. Adobe Analytics の **[!UICONTROL オファーコレクションを追加]** ダイアログで、オファーコレクションを選択します。 例： **[!UICONTROL Luma — モバイルアプリコレクション]**.
+      1. Adobe Analytics の **[!UICONTROL オファーコレクションを追加]** ダイアログで、オファーコレクションを選択します。 例：**[!DNL Luma - Mobile App Collection]**。
       1. 「**[!UICONTROL 追加]**」を選択します。
          ![決定 — コレクションを選択](assets/ajo-decision-selectcollection.png)
    1. 以下を確認します。 **[!UICONTROL なし]** 次の項目が選択されています： **[!UICONTROL 適格要件]**、および **[!UICONTROL オファーの優先度]** が **[!UICONTROL ランキングメソッド]**.
    1. 「**[!UICONTROL 次へ]**」を選択します。
       ![決定範囲](assets/ajo-decision-scopes.png).
 1. Adobe Analytics の **[!UICONTROL フォールバックオファーを追加]** 一歩 **[!UICONTROL 新しいオファーの決定を作成]**:
-   1. フォールバックオファー ( 例えば、 **[!UICONTROL Luma — フォールバックオファー]**.
+   1. フォールバックオファー ( 例えば、 **[!DNL Luma - Fallback offer]**.
    1. 「**[!UICONTROL 次へ]**」を選択します。
 1. Adobe Analytics の **[!UICONTROL 概要]** 一歩 **[!UICONTROL 新しいオファーの決定を作成]**:
    1. 「**[!UICONTROL 完了]**」を選択します。
@@ -246,7 +248,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 
 1. Journey Optimizer UI で、 **[!UICONTROL オファー]**.
 1. 選択 **[!UICONTROL 決定]** 上部のバーから。
-1. 決定を選択します（例： ）。 **[!UICONTROL Luma — モバイルアプリの決定]**.
+1. 決定を選択します（例： ）。 **[!DNL Luma - Mobile App Decision]**.
 1. Adobe Analytics の **[!UICONTROL 決定範囲]** タイル、選択 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL コピー]**.
 1. コンテキストメニューで、「 」を選択します。 **[!UICONTROL 決定範囲]**.
    ![決定範囲をコピー](assets/ajo-copy-decisionscope.png)
@@ -269,7 +271,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 >
 
 1. Xcode で、 [AEP 最適化](https://github.com/adobe/aepsdk-messaging-ios.git) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
 1. 確認 `AEPOptimize` は、インポートのリストの一部です。
 
    `import AEPOptimize`
@@ -292,7 +294,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
    ]
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 関数に置き換えます。 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
    // set up the XDM dictionary, define decision scope and call update proposition API
@@ -325,14 +327,14 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
      ただし、あらゆる種類の実装を使用して、Optimize API が適切なパラメーター (`activityId`, `placementId` そして `itemCount`) を呼び出し、有効な [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) オブジェクトを設定します。
    * は、2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL EdgeOffersView]** 」をクリックします。 次を検索： `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 呼び出し (
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL EdgeOffersView]** 」をクリックします。 次を検索： `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 呼び出し (
 
    * は、(Journey Optimizer — 決定管理で定義した ) 決定範囲に基づいて、現在のプロファイルの提案を取得します。
    * 提案からオファーを取得します。
    * オファーのコンテンツをアプリに正しく表示できるようにアンラップし、
    * トリガー `displayed()` オファーが表示されたことを知らせるイベントを Edge ネットワークに送り返す、オファーに対するアクション。
 
-1. まだ **[!UICONTROL EdgeOffersView]**&#x200B;を使用して、次のコードを `.onFirstAppear` 修飾子 このコードにより、オファーを更新するためのコールバックが 1 回だけ登録されます。
+1. まだ **[!DNL EdgeOffersView]**&#x200B;を使用して、次のコードを `.onFirstAppear` 修飾子 このコードにより、オファーを更新するためのコールバックが 1 回だけ登録されます。
 
    ```swift
    // Invoke callback for offer updates
@@ -354,11 +356,11 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 
 1. デバイスまたはシミュレーターでアプリを開きます。
 
-1. 次に移動： **[!UICONTROL パーソナライズ]** タブをクリックします。
+1. 「**[!DNL Personalisation]**」タブに移動します。
 
-1. 選択 **[!UICONTROL Edge パーソナライゼーション]**.
+1. **[!DNL Edge Personalisation]** を選択します。
 
-1. 上部にスクロールすると、 **[!UICONTROL 決定 LUMA — モバイルアプリの決定]** タイル。
+1. 上部にスクロールすると、 **[!DNL DECISION LUMA - MOBILE APP DECISION]** タイル。
 
    <img src="assets/ajo-app-offers.png" width="300">
 

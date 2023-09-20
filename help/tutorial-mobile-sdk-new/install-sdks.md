@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -33,9 +33,12 @@ ht-degree: 1%
 
 ## Swift Package Manager
 
-CocoaPods を使用したり、Pod ファイルを使用する代わりに（モバイルインストールの手順で説明されているように）、 [SDK のインストール手順の生成](./configure-tags.md#generate-sdk-install-instructions)) を使用して、Xcode のネイティブ Swift パッケージマネージャーを使用して個々のパッケージを追加します。
+CocoaPods を使用したり、Pod ファイルを使用する代わりに（モバイルインストールの手順で説明されているように）、 [SDK のインストール手順の生成](./configure-tags.md#generate-sdk-install-instructions)) を使用して、Xcode のネイティブ Swift パッケージマネージャーを使用して個々のパッケージを追加します。 Xcode プロジェクトには、すべてのパッケージの依存関係が既に追加されています。 Xcode **[!UICONTROL パッケージの依存関係]** 画面は次のようになります。
 
-Xcode では、 **[!UICONTROL ファイル]** > **[!UICONTROL パッケージを追加…]** 次の表に示すすべてのパッケージをインストールします。 表内のパッケージのリンクを選択して、特定のパッケージの完全な URL を取得します。
+![Xcode パッケージの依存関係](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
+
+
+Xcode では、 **[!UICONTROL ファイル]** > **[!UICONTROL パッケージを追加…]** をクリックしてパッケージを追加します。 次の表に、パッケージの追加に使用する URL へのリンクを示します。 また、リンクから、各パッケージの詳細情報にアクセスできます。
 
 | パッケージ | 説明 |
 |---|---|
@@ -50,14 +53,9 @@ Xcode では、 **[!UICONTROL ファイル]** > **[!UICONTROL パッケージを
 | [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (a.k.a. project Griffon) は、新しい革新的な拡張機能 (`AEPAssurance`) を使用して、モバイルアプリでデータを収集したりエクスペリエンスを提供する方法を調査、配達確認、シミュレーションおよび検証できます。 この拡張機能を使用すると、アプリでアシュランスを有効にできます。 |
 
 
-すべてのパッケージをインストールしたら、Xcode **[!UICONTROL パッケージの依存関係]** 画面は次のようになります。
-
-![Xcode パッケージの依存関係](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
-
-
 ## 拡張機能のインポート
 
-Xcode で、に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 次のインポートがこのソースファイルに含まれていることを確認します。
+Xcode で、に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 次のインポートがこのソースファイルに含まれていることを確認します。
 
 ```swift
 // import AEP MobileSDK libraries
@@ -76,16 +74,16 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-同じ操作を次にも実行します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+同じ操作を次にも実行します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## AppDelegate を更新
 
-に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 」をクリックします。
+に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** 」をクリックします。
 
-1. を設定します。 `@AppStorage` 値 `environmentFileId` を、手順 6 でタグから取得した開発環境ファイル ID 値 ( [SDK のインストール手順の生成](configure-tags.md#generate-sdk-install-instructions).
+1. 次を `@AppStorage` 値 `YOUR_ENVIRONMENT_ID_GOES_HERE` 対象： `environmentFileId` を、手順 6 でタグから取得した開発環境ファイル ID 値 ( [SDK のインストール手順の生成](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
-   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
 1. 次のコードを `application(_, didFinishLaunchingWithOptions)` 関数に置き換えます。

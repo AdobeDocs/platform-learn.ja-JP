@@ -1,15 +1,15 @@
 ---
-title: プロファイル
+title: プロファイルデータを収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '601'
 ht-degree: 4%
 
 ---
 
-# プロファイル
+# プロファイルデータを収集
 
 モバイルアプリでプロファイルデータを収集する方法を説明します。
 
@@ -43,7 +43,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 アプリでのターゲティングやパーソナライゼーションに役立つのは、ユーザーが過去または最近に購入したかどうかをすばやく知ることです。 Luma アプリでセットアップしましょう。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    1. を使用します。 `profileMap` 辞書を `attributeDict` のパラメーター [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 呼び出し。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 製品]** > **[!UICONTROL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button). 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button). 次のコードを追加します。
 
    ```swift
    // Update attributes
@@ -72,7 +72,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ユーザーの属性を更新すると、他のAdobeSDK でも使用できるようになりますが、属性を明示的に取得して、アプリを好きなように動作させることもできます。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL HomeView]** Xcode プロジェクトナビゲーターで、 `.onAppear` 修飾子 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** Xcode プロジェクトナビゲーターで、 `.onAppear` 修飾子 次のコードを追加します。
 
    ```swift
    // Get attributes
@@ -111,7 +111,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
       <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. 選択 **[!UICONTROL 製品]** 」をクリックします。
+   1. 選択 **[!DNL Products]** 」をクリックします。
    1. 1 つの製品を選択します。
    1. 選択 <img src="assets/saveforlater.png" width="15" />。
    1. 選択 <img src="assets/addtocart.png" width="20" />。

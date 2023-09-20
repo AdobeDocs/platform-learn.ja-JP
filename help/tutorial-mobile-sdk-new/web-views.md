@@ -3,9 +3,9 @@ title: WebViews を処理
 description: モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ WebView 内で使用される AEP Edge Identity Extension は、現在の ECID �
 
 ## 実装
 
-に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 情報]** > **[!UICONTROL TermsOfServiceSheet]**&#x200B;をクリックし、 `func loadUrl()` 関数 `final class SwiftUIWebViewModel: ObservableObject` クラス。 次の呼び出しを追加して、Web ビューを処理します。
+に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**&#x200B;をクリックし、 `func loadUrl()` 関数 `final class SwiftUIWebViewModel: ObservableObject` クラス。 次の呼び出しを追加して、Web ビューを処理します。
 
 ```swift
 // Handle web view
@@ -68,7 +68,7 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
 コードを実行するには、次の手順に従います。
 
 1. 次に移動： **[!UICONTROL 設定]** アプリ内
-1. 次をタップします。 **[!UICONTROL 表示…]** ボタンをクリックして、 **[!UICONTROL 利用条件]**.
+1. 次をタップします。 **[!DNL View...]** ボタンをクリックして、 **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+残念ながら、Web セッションのデバッグは制限されています。例えば、Web ビューセッションのデバッグを続行する場合は、ブラウザーのAdobe Experience Platform Debuggerを使用できません。
 
 >[!NOTE]
 >

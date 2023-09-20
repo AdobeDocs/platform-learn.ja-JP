@@ -1,20 +1,20 @@
 ---
-title: Adobe Journey Optimizerプッシュメッセージ
-description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モバイルアプリへのプッシュメッセージを作成する方法について説明します。
+title: プッシュ通知の作成と送信
+description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モバイルアプリへのプッシュ通知を作成する方法について説明します。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '2241'
+source-wordcount: '2554'
 ht-degree: 4%
 
 ---
 
-# Journey Optimizerプッシュメッセージ
+# プッシュ通知の作成と送信
 
-Mobile SDK とJourney Optimizerを使用して、モバイルアプリ用のプッシュExperience Platformを作成する方法について説明します。
+Experience PlatformMobile SDK とJourney Optimizerを使用して、モバイルアプリ用のプッシュ通知を作成する方法について説明します。
 
 Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞ったオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのプッシュ通知データフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -22,7 +22,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 >[!NOTE]
 >
->このレッスンはオプションで、プッシュメッセージの送信を希望するJourney Optimizerユーザーにのみ適用されます。
+>このレッスンはオプションで、プッシュ通知の送信を希望するJourney Optimizerユーザーにのみ適用されます。
 
 
 ## 前提条件
@@ -56,13 +56,13 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 >[!TIP]
 >
->環境を既に [Journey Optimizerのアプリ内メッセージ](journey-optimizer-inapp.md) チュートリアルでは、この節をスキップできます。
+>環境を既に [Journey Optimizerのアプリ内メッセージ](journey-optimizer-inapp.md) レッスンでは、このセットアップセクションの手順の一部を既に実行している可能性があります。
 
 ### アプリ ID を APNs に登録
 
 次の手順は、Adobe Experience Cloud固有のものではなく、APNs 設定を順を追って説明するように設計されています。
 
-### 秘密鍵の作成
+#### 秘密鍵の作成
 
 1. Apple開発者ポータルで、に移動します。 **[!UICONTROL キー]**.
 1. キーを作成するには、「 」を選択します。 **[!UICONTROL +]**.
@@ -80,7 +80,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 追加のドキュメントは、 [ここにある](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-### データ収集にアプリのプッシュ資格情報を追加
+#### データ収集にアプリケーションサーフェスを追加する
 
 1. 次から： [データ収集インターフェイス](https://experience.adobe.com/data-collection/)を選択します。 **[!UICONTROL アプリのサーフェス]** をクリックします。
 1. 設定を作成するには、「 」を選択します。 **[!UICONTROL アプリサーフェスを作成]**.
@@ -96,12 +96,25 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
    ![アプリのサーフェス設定](assets/push-app-surface-config.png)
 
+### データストリーム設定を更新
+
+モバイルアプリから Edge ネットワークにデータが確実に送信されるようにするには、 Experience Edge 設定を更新します。
+
+1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
+1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
+1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
+1. データストリーム設定を保存するには、 **[!UICONTROL 保存]**.
+
+   ![AEP データストリーム設定](assets/datastream-aep-configuration.png)
+
+
+
 ### Journey Optimizer Tags 拡張機能のインストール
 
 アプリがJourney Optimizerで動作するようにするには、タグプロパティを更新する必要があります。
 
 1. に移動します。 **[!UICONTROL タグ]** > **[!UICONTROL 拡張機能]** > **[!UICONTROL カタログ]**,
-1. プロパティを開きます（例： ）。 **[!UICONTROL Luma モバイルアプリチュートリアル]**.
+1. プロパティを開きます（例： ）。 **[!DNL Luma Mobile App Tutorial]**.
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
 1. 拡張機能のインストール.
@@ -116,6 +129,49 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 >表示されない場合 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** 必要に応じて、カスタマーケアにお問い合わせください。
 >
 
+## アシュランスを使用して設定を検証
+
+1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
+1. 物理デバイスまたはシミュレーターにアプリをインストールします。
+1. Assurance で生成された URL を使用して、アプリを起動します。
+1. Assurance UI で、 **[!UICONTROL 設定]**.
+   ![クリックを設定](assets/push-validate-config.png)
+1. 選択 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL プッシュデバッグ]**.
+1. 「**[!UICONTROL 保存]**」を選択します。
+   ![保存](assets/push-validate-save.png)
+1. 選択 **[!UICONTROL プッシュデバッグ]** をクリックします。
+1. を選択します。 **[!UICONTROL 設定の検証]** タブをクリックします。
+1. 次の場所からデバイスを選択します。 **[!UICONTROL クライアント]** リスト。
+1. エラーが表示されていないことを確認します。
+   ![validate](assets/push-validate-confirm.png)
+1. を選択します。 **[!UICONTROL テストプッシュの送信]** タブをクリックします。
+1. （オプション）次のデフォルトの詳細を変更します： **[!UICONTROL タイトル]** および **[!UICONTROL 本文]**
+1. 選択 ![バグ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL テストプッシュ通知の送信]**.
+1. 次を確認します。 **[!UICONTROL テスト結果]**.
+1. アプリにテストプッシュ通知が表示されます。
+
+   <img src="assets/luma-app-push.png" width="300" />
+
+
+### アプリへのプッシュ通知機能の追加
+
+>[!IMPORTANT]
+>
+>iOSアプリでプッシュ通知を実装およびテストするには、 **有料** Apple開発者アカウント。 有料Apple開発者アカウントを持っていない場合は、このレッスンの残りをスキップできます。
+
+1. Xcode で、「 **[!DNL Luma]** から **[!UICONTROL ターゲット]** リストで、 **[!UICONTROL 署名と機能]** タブで、 **[!UICONTROL +機能]** 「 」ボタンをクリックし、「 **[!UICONTROL プッシュ通知]**. これにより、アプリがプッシュ通知を受信できるようになります。
+
+1. 次に、通知拡張機能をアプリに追加する必要があります。 に戻ります。 **[!DNL General]** 」タブで「 **[!UICONTROL +]** アイコン **[!UICONTROL ターゲット]** 」セクションに入力します。
+
+1. 新しいターゲットのテンプレートを選択するよう求めるプロンプトが表示されます。 選択 **[!UICONTROL 通知サービス拡張]** 次に、 **[!UICONTROL 次へ]**.
+
+1. 次のウィンドウで、 `NotificationExtension` 拡張機能の名前として追加し、「 **[!UICONTROL 完了]** 」ボタンをクリックします。
+
+これで、以下の画面のように、プッシュ通知拡張機能がアプリに追加されました。
+
+![PUSN 通知拡張機能](assets/xcode-signing-capabilities-pushnotifications.png)
+
+
 ### アプリでのJourney Optimizerの実装
 
 前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、メッセージング SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
@@ -126,7 +182,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 >
 
 1. Xcode で、 [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios.git) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
 1. 確認 `AEPMessaging` は、インポートのリストの一部です。
 
    `import AEPMessaging`
@@ -160,28 +216,9 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
    この関数は、アプリがインストールされているデバイスに固有のデバイストークンを取得します。 次に、設定済みの設定を使用し、Appleのプッシュ通知サービス (APNs) に依存するプッシュ通知配信用のトークンを設定します。
 
-## アシュランスを使用して設定を検証
-
-1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
-1. 物理デバイスまたはシミュレーターにアプリをインストールします。
-1. Assurance で生成された URL を使用して、アプリを起動します。
-1. Assurance UI で、 **[!UICONTROL 設定]**.
-   ![クリックを設定](assets/push-validate-config.png)
-1. 選択 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL プッシュデバッグ]**.
-1. 「**[!UICONTROL 保存]**」を選択します。
-   ![保存](assets/push-validate-save.png)
-1. 選択 **[!UICONTROL プッシュデバッグ]** をクリックします。
-1. を選択します。 **[!UICONTROL 設定の検証]** タブをクリックします。
-1. 次の場所からデバイスを選択します。 **[!UICONTROL クライアント]** リスト。
-1. エラーが表示されていないことを確認します。
-   ![validate](assets/push-validate-confirm.png)
-1. を選択します。 **[!UICONTROL テストプッシュの送信]** タブをクリックします。
-1. （オプション）次のデフォルトの詳細を変更します： **[!UICONTROL タイトル]** および **[!UICONTROL 本文]**
-1. 選択 ![バグ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL テストプッシュ通知の送信]**.
-1. 次を確認します。 **[!UICONTROL テスト結果]**.
-1. アプリにテストプッシュ通知が表示されます。
-
-   <img src="assets/luma-app-push.png" width="300" />
+>[!IMPORTANT]
+>
+>The `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` プッシュ通知を送信する際に、プッシュ通知が APNs サンドボックスを使用するか、本番サーバーを使用するかを決定します。 シミュレーターまたはデバイスでアプリをテストする際に、 `messaging.useSandbox` が `true` プッシュ通知を受け取るために使用します。 Apple Testflight を使用して実稼動用にアプリをデプロイしてテストする場合は、 `messaging.useSandbox` から `false` そうしないと、実稼動アプリはプッシュ通知を受け取れなくなります。
 
 
 ## 独自のプッシュ通知を作成する
@@ -194,7 +231,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 1. Journey Optimizer UI で、 **[!UICONTROL スキーマ]** をクリックします。
 1. 選択 **[!UICONTROL 参照]** 」をクリックします。
-1. スキーマを選択します（例： ）。 **[!UICONTROL Luma モバイルアプリイベントスキーマ]** をクリックして開きます。
+1. スキーマを選択します（例： ）。 **[!DNL Luma Mobile App Event Schema]** をクリックして開きます。
 1. スキーマエディターで、次の操作を実行します。
    1. を選択します。 **[!UICONTROL eventType]** フィールドに入力します。
    1. Adobe Analytics の **[!UICONTROL フィールドのプロパティ]** ウィンドウ領域を下にスクロールして、イベントタイプに使用可能な値のリストを表示します。 選択 **[!UICONTROL 行を追加]**、を追加します。 `application.test` として **[!UICONTROL 値]** および `[!UICONTROL Test event for push notification]` として `DISPLAY NAME`.
@@ -217,7 +254,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
    1. 入力 `LumaTestEvent` として **[!UICONTROL 名前]** イベントの。
    1. 次を提供： **[!UICONTROL 説明]**&#x200B;例： `Test event to trigger push notifications in Luma app`.
 
-   1. 前の手順で作成したモバイルアプリエクスペリエンスイベントスキーマを選択します。 [XDM スキーマの作成](create-schema.md) から **[!UICONTROL スキーマ]** 例えば、リスト **[!UICONTROL Luma モバイルアプリイベントスキーマ v.1]**.
+   1. 前の手順で作成したモバイルアプリエクスペリエンスイベントスキーマを選択します。 [XDM スキーマの作成](create-schema.md) から **[!UICONTROL スキーマ]** 例えば、リスト **[!DNL Luma Mobile App Event Schema v.1]**.
    1. 選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) の横 **[!UICONTROL フィールド]** リスト。
 
       ![イベントの手順 1 を編集](assets/ajo-edit-event1.png)
@@ -259,13 +296,13 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
    1. 「**[!UICONTROL OK]**」を選択します。
       ![ジャーニーのプロパティ](assets/ajo-journey-properties.png)
 
-1. ジャーニーキャンバスに戻る、 **[!UICONTROL イベント]**&#x200B;をドラッグ&amp;ドロップし、 ![イベント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL LumaTestEvent]** それが表示されるキャンバス上で **[!UICONTROL エントリイベントまたはオーディエンスの閲覧アクティビティを選択]**.
+1. ジャーニーキャンバスに戻る、 **[!UICONTROL イベント]**&#x200B;をドラッグ&amp;ドロップし、 ![イベント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]** それが表示されるキャンバス上で **[!UICONTROL エントリイベントまたはオーディエンスの閲覧アクティビティを選択]**.
 
    * Adobe Analytics の **[!UICONTROL イベント：LumaTestEvent]** パネル、 **[!UICONTROL ラベル]**&#x200B;例： `Luma Test Event`.
 
-1. 次から： **[!UICONTROL アクション]** ドロップダウン、ドラッグ&amp;ドロップ ![プッシュ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL プッシュ]** の ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) あなたの右に現れて **[!UICONTROL LumaTestEvent]** アクティビティ。 Adobe Analytics の **[!UICONTROL アクション：プッシュ]** ペイン：
+1. 次から： **[!UICONTROL アクション]** ドロップダウン、ドラッグ&amp;ドロップ ![プッシュ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL プッシュ]** の ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) あなたの右に現れて **[!DNL LumaTestEvent]** アクティビティ。 Adobe Analytics の **[!UICONTROL アクション：プッシュ]** ペイン：
 
-   1. 次を提供： **[!UICONTROL ラベル]**&#x200B;例： `Luma Test Push Notification`、 **[!UICONTROL 説明]**&#x200B;例： `Test push notification for Luma mobile app`を選択します。 **[!UICONTROL トランザクション]** から **[!UICONTROL カテゴリ]** リストと選択 **[!UICONTROL Luma]** から **[!UICONTROL 押し出しサーフェス]**.
+   1. 次を提供： **[!UICONTROL ラベル]**&#x200B;例： `Luma Test Push Notification`、 **[!UICONTROL 説明]**&#x200B;例： `Test push notification for Luma mobile app`を選択します。 **[!UICONTROL トランザクション]** から **[!UICONTROL カテゴリ]** リストと選択 **[!DNL Luma]** から **[!UICONTROL 押し出しサーフェス]**.
    1. 選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL コンテンツを編集]** 実際のプッシュ通知の編集を開始する場合。
       ![プッシュプロパティ](assets/ajo-push-properties.png)
 
@@ -287,7 +324,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 
 今回は、送信しようとしているエクスペリエンスイベントは、単純な XDM 辞書を構築して構築されていません。 次を使用します： `struct` プッシュ通知ペイロードを表します。 アプリケーションでエクスペリエンスイベントペイロードを作成する方法として、専用のデータタイプを定義する方法があります。
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL モデル]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** をクリックし、コードを調べます。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL モデル]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** をクリックし、コードを調べます。
 
    ```swift
    import Foundation
@@ -315,7 +352,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
    }
    ```
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードをに追加します。 `func sendTestPushEvent(applicationId: String, eventType: String)`:
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードをに追加します。 `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```swift
    // Create payload and send experience event
@@ -335,7 +372,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 
    このコードにより、 `testPushPayload` 関数に指定されたパラメーター (`applicationId` および `eventType`) と呼び出し `sendExperienceEvent` ペイロードを辞書に変換する際に発生した問題を修正しました。 また、このコードは、今回は、に基づく Swift の同時実行モデルを使用してAdobe Experience Platform SDK を呼び出す際の非同期的な側面も考慮します `await` および `async`.
 
-1. に移動します。 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 件数]** > **[!UICONTROL 一般]** > **[!UICONTROL ConfigView]** 」をクリックします。 プッシュ通知ボタンの定義で、次のコードを追加して、テストプッシュ通知エクスペリエンスイベントペイロードを、そのボタンがタップされるたびにジャーニーをトリガーに送信します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** 」をクリックします。 プッシュ通知ボタンの定義で、次のコードを追加して、テストプッシュ通知エクスペリエンスイベントペイロードを、そのボタンがタップされるたびにジャーニーをトリガーに送信します。
 
    ```swift
    // Setting parameters and calling function to send push notification
@@ -360,7 +397,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 
 ## 次の手順
 
-これで、アプリ内のプッシュ通知を処理するすべてのツールが用意されました。 例えば、アプリのユーザーがログインしたときにウェルカムプッシュ通知を送信するジャーニーをJourney Optimizerで構築できます。 または、ユーザーがアプリで製品を購入した際の確認プッシュメッセージ。 または、場所のジオフェンスを入力します ( [場所](places.md) レッスン )。
+これで、アプリ内のプッシュ通知を処理するすべてのツールが用意されました。 例えば、アプリのユーザーがログインしたときにウェルカムプッシュ通知を送信するジャーニーをJourney Optimizerで構築できます。 または、ユーザーがアプリで製品を購入した際の確認プッシュ通知。 または、場所のジオフェンスを入力します ( [場所](places.md) レッスン )。
 
 >[!SUCCESS]
 >
