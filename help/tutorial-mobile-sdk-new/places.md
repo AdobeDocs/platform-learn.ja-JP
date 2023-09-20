@@ -1,10 +1,10 @@
 ---
 title: 位置情報サービスを使用する
-description: モバイルアプリで Places の位置情報サービスを使用する方法について説明します。
+description: モバイルアプリで Places ジオロケーションサービスを使用する方法について説明します。
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 4%
 
 ---
@@ -33,24 +33,6 @@ Adobe Experience Platform Data Collection Places Service は、位置認識を�
 * アシュランスで設定を検証します。
 * アプリを更新して、Places 拡張機能を登録します。
 * アプリに Places サービスから位置情報トラッキングを実装します。
-
-
-## 前提条件
-
-* 適切な SDK が正常に構築され、設定された状態でアプリが実行されました。
-
-
-## 学習内容
-
-このレッスンでは、次の操作を行います
-
-* 決定管理のための Edge 設定を更新します。
-* Journey Optimizer - Decisioning 拡張機能でタグプロパティを更新します。
-* 提案イベントをキャプチャするためにスキーマを更新します。
-* アシュランスで設定を検証します。
-* Journey Optimizer — 決定管理でのオファーに基づいて、オファーの決定を作成します。
-* Optimizer 拡張機能を登録するには、アプリを更新します。
-* アプリに、決定管理からオファーを実装します。
 
 
 ## セットアップ

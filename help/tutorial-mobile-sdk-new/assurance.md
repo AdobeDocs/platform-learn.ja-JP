@@ -3,10 +3,10 @@ title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 3%
+source-wordcount: '775'
+ht-degree: 4%
 
 ---
 
@@ -68,7 +68,7 @@ Xcode でアプリケーションを初めて実行する前に、必ず署名�
 
    >[!IMPORTANT]
    >
-   >各バンドル識別子は一意である必要があるので、Start プロジェクトに既に入力したデフォルトの識別子とは異なる一意のバンドル識別子を選択してください。
+   >デフォルトでは別々の一意のバンドル識別子を使用します。 `com.adobe.luma.tutorial.swiftui`  各バンドル識別子は一意である必要があるので、開始プロジェクトに入力します。
 
 
    ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -139,4 +139,4 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
 >これで、このチュートリアルの残りの部分でアシュランスを使用するようにアプリを設定しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-次へ： **[同意](consent.md)**
+次へ： **[同意の実装](consent.md)**

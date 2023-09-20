@@ -3,9 +3,9 @@ title: ID データを収集
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '762'
 ht-degree: 6%
 
 ---
@@ -171,4 +171,4 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 >
 >これで、Edge ネットワーク内の ID を更新するアプリを設定し、（設定時に）Adobe Experience Platformで ID を更新するようになりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-次へ： **[プロファイル](profile.md)**
+次へ： **[プロファイルデータを収集](profile.md)**

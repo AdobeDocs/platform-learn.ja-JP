@@ -2,9 +2,9 @@
 title: ライフサイクルデータの収集
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -124,4 +124,4 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 >
 >これで、アプリの状態（フォアグラウンド、バックグラウンド）イベントをAdobe Experience Platform Edge Network と、データストリームで定義したすべてのサービスに送信するようにアプリを設定しました。<br>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-次へ： **[イベントの追跡](events.md)**
+次へ： **[イベントデータの追跡](events.md)**

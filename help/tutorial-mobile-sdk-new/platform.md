@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Platformにデータを送信
-description: Adobe Experience Platformにデータを送信する方法を説明します。
+title: データをExperience Platformに送信
+description: データをExperience Platformに送信する方法を説明します。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 8%
 
 ---
 
-# Adobe Experience Platformにデータを送信
+# データをExperience Platformに送信
 
 モバイルアプリデータをAdobe Experience Platformに送信する方法を説明します。
 
@@ -170,4 +170,4 @@ Platform インターフェイスで、
 >
 >これで、Edge ネットワークだけでなくAdobe Experience Platformにもデータを送信するアプリを設定しました。<br>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[Journey Optimizerを使用したプッシュメッセージ](journey-optimizer-push.md)**
+次へ： **[通知の作成とプッシュ](journey-optimizer-push.md)**

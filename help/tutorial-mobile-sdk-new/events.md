@@ -1,15 +1,15 @@
 ---
-title: イベントデータの収集
-description: モバイルアプリでイベントデータを収集する方法を説明します。
+title: イベントデータの追跡
+description: モバイルアプリでイベントデータを追跡する方法を説明します。
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 2%
 
 ---
 
-# イベントデータの収集
+# イベントデータの追跡
 
 モバイルアプリでイベントを追跡する方法を説明します。
 
@@ -380,4 +380,4 @@ var xdmData: [String: Any] = [
 >
 >これで、Adobe Experience Platform Edge Network と、データストリームで定義したすべてのサービスに対するコマース、アプリのインタラクション、画面のトラッキングイベントを追跡するアプリを設定しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[WebViews](web-views.md)**
+次へ： **[WebViews を処理](web-views.md)**

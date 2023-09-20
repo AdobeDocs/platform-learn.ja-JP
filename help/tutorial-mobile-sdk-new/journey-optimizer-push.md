@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 4%
@@ -403,5 +403,5 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 >
 >これで、Journey Optimizerと、Experience PlatformMobile SDK 用のJourney Optimizer拡張機能を使用して、アプリのプッシュ通知を有効にしました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[Journey Optimizerを使用したアプリ内メッセージ](journey-optimizer-inapp.md)**
+次へ： **[アプリ内メッセージの作成と送信](journey-optimizer-inapp.md)**
 
