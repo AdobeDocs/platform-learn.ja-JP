@@ -4,9 +4,9 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
+source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 43%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 43%
    + [Audience Portal と構成の概要](audiences/introduction-to-audience-portal-and-composition.md)
    + [オーディエンスのアップロード](audiences/upload-audiences.md)
    + [オーディエンスルールビルダーの概要](audiences/audience-rule-builder-overview.md)
-   + [オーディエンスの作成](audiences/create-audiences.md)
+   + [オーディエンスを作成](audiences/create-audiences.md)
    + [コンテンツベースのオーディエンスの作成](audiences/create-content-based-audiences.md)
    + [コンバージョンオーディエンスの作成](audiences/create-conversion-audiences.md)
    + [既存のオーディエンスからのオーディエンスの作成](audiences/create-audiences-from-existing-audiences.md)
@@ -112,6 +112,7 @@ ht-degree: 43%
    + [宛先への接続](/help/platform/destinations/connecting-to-destinations.md)
    + [宛先の作成とデータのアクティブ化](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [宛先へのプロファイルとセグメントのアクティブ化](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [データセットの書き出し先の設定](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Google Customer Match との統合](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Azure BLOB の宛先の設定](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Marketoの宛先の設定](/help/platform/destinations/configure-the-marketo-destination.md)
@@ -157,7 +158,7 @@ ht-degree: 43%
    + [和集合スキーマの概要](/help/platform/profiles/union-schemas-overview.md)
    + [アップサートを使用した特定の属性の更新](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + プライバシーとセキュリティ {#privacy}
-   + [Privacy Serviceの概要](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Privacy Service の概要](/help/platform/privacy/introduction-to-privacy-services.md)
    + [プライバシーリクエストの ID データ](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [プライバシー JavaScript ライブラリ](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analyticsのプライバシーラベル](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
