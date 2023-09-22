@@ -4,7 +4,8 @@ breadcrumb-title: チュートリアル
 user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
-source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
+auto-video-transcripts: true
+source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 43%
