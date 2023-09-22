@@ -6,10 +6,10 @@ level: Intermediate
 doc-type: Technical Video
 last-substantial-update: 2023-09-21T00:00:00Z
 jira: KT-13957
-source-git-commit: 3e01d4789c73686dde50ee65a46e705095fcb7fa
+source-git-commit: fd9ef1bfeea139dbb83d00f6ad4538524a7d00bc
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 11%
+source-wordcount: '99'
+ht-degree: 12%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 11%
 
 このビデオでは、データ収集でFacebook/Meta のクイックスタートワークフローを最大限に活用するための、次の 2 つの高度な使用例について説明します。
 
-1. ワークフローを使用した参照アカウントの作成 
-1. 新しいコンテンツを既存の実装にコピーできる。
+1. ワークフローを使用した参照オブジェクトの作成 
+1. 参照オブジェクトを既存の実装にコピーする。
 
 メタコンバージョン API のクイックスタートワークフローについて詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=ja#quick-start).
 
