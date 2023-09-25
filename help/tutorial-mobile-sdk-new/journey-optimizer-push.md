@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 4%
@@ -153,7 +153,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### アプリへのプッシュ通知機能の追加
+## アプリへのプッシュ通知機能の追加
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 ![PUSN 通知拡張機能](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### アプリでのJourney Optimizerの実装
+## アプリでのJourney Optimizerの実装
 
 前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、メッセージング SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
 
@@ -205,7 +205,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    ]
    ```
 
-### プッシュ通知用のデバイストークンの登録
+## プッシュ通知用のデバイストークンの登録
 
 1. 次を追加： [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) への API `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 関数に置き換えます。
 
