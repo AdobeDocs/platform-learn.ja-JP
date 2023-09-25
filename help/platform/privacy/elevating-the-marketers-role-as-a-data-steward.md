@@ -9,7 +9,7 @@ thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%
@@ -24,4 +24,4 @@ ht-degree: 18%
 * 消費者の信頼を促し、消費者の遍歴内でシームレスに統合する同意ベースの戦略を組み込む方法
 * マーケターの役割内での効率と信頼性を備えたデータ管理者の責任
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)

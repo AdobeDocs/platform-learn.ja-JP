@@ -1,7 +1,8 @@
 ---
 title: 移行の概要 | at.js 2.x から Web SDK への Target の移行
 description: at.js と Platform Web SDK の主な違いと、移行作業の計画方法について説明します。
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 1%
@@ -31,7 +32,7 @@ at.js から Platform Web SDK に移行する際の作業レベルは、現在�
 
 Platform Web SDK は、複数のライブラリアプリケーションの機能を組み合わせて、1 つのAdobeにします。 この統合されたアプローチは、健全な実装を確実におこなうために、チームをまたいだ責務とプロセスを検討する必要があることを意味します。
 
-|  | Target at.js 2.x | Platform Web SDK |
+| | Target at.js 2.x | Platform Web SDK |
 |---|---|---|
 | 所有権 | at.js ライブラリは、他のアプリケーションライブラリとは独立しています。 これらの異なるライブラリのカスタマイズと所有権は、組織内の異なるチームに合わせられる場合があります。 | Platform Web SDK ライブラリと渡されたデータは、すべてのプラットフォームアプリケーションで統合Adobeされます。 Platform Web SDK 実装の所有権は、すべてのダウンストリームアプリケーションの関係者を表す必要があります。 |
 | メンテナンス | Target や Analytics など、各Adobeアプリケーションの実装の強化について、個別のチームが作業する場合があります。 | Platform Web SDK の実装に影響を与える機能強化は、1 人のチームが担当するのが理想です。 |
@@ -42,20 +43,20 @@ Platform Web SDK は、複数のライブラリアプリケーションの機能
 
 Platform Web SDK は、Target at.js ライブラリの進化ではありません。 これは、Web チャネル用のすべてのAdobeアプリケーションを実装するための新しい統合されたアプローチです。 注意すべき技術的な違いがいくつかあります。
 
-|  | Target at.js 2.x | Platform Web SDK |
+| | Target at.js 2.x | Platform Web SDK |
 |---|---|---|
-| ライブラリ機能 | at.js が提供する Target 機能です。 Visitor.js および AppMeasurement.js によって提供される他のアプリケーションとの統合 | 単一の Platform Web SDK ライブラリが提供するすべてのAdobeアプリケーションの機能：alloy.js |
+| ライブラリ機能 | at.js が提供する Target 機能です。 Visitor.js およびAppMeasurement.js によって提供される他のアプリケーションとの統合 | 単一の Platform Web SDK ライブラリで提供されるすべてのAdobeアプリケーションの機能： alloy.js |
 | パフォーマンス | at.js は、アプリケーション間で適切に統合するために読み込む必要がある複数のライブラリの 1 つです。 この結果、最適な読み込み時間よりも短くなります。 | Platform Web SDK は、複数のアプリケーション専用ライブラリを不要にし、ページ読み込みパフォーマンスを向上させる、単一の軽量ライブラリです。 |
 | リクエスト | 各アプリケーションの呼び出しを個別にAdobeします。 Target 呼び出しは、他のネットワーク呼び出しとは大きく独立しています。 | すべてのAdobe・アプリケーションに対する 1 回の呼び出し。 これらの呼び出しで渡されるデータに対する変更は、複数のダウンストリームアプリケーションに影響を与える可能性があります。 |
 | 読み込み順序 | 他のAdobeアプリケーションと適切に統合するには、ライブラリとネットワーク呼び出しの特定の読み込み順序が必要です。 | 適切な統合は、異なるアプリケーション固有のネットワーク呼び出しからのデータを結び付けることに依存しないので、読み込み順序は問題になりません。 |
-| Edge Network | Adobe Experience Cloud Edge Network(tt.omtrdc.net) を使用します。オプションで、Target 固有の CNAME を使用します。 | Adobe Experience Platform Edge Network(edge.adobedc.net) を使用します。オプションで、単一の CNAME を使用します。 |
+| Edge Network | Adobe Experience Cloud Edge Network(tt.omtrdc.net) を使用し、必要に応じて Target 固有の CNAME を使用します。 | Adobe Experience Platform Edge Network(edge.adobedc.net) を使用し、必要に応じて単一の CNAME を使用します。 |
 | 基本用語 | at.js の命名： <br> - `mbox` <br> - `pageLoad` イベント（グローバル mbox） <br> - `offer` | Platform Web SDK に相当するもの： <br> - `decisionScope` <br> - `__view__` decisionScope <br> - `proposition` |
 
 ### ビデオの概要
 
 次のビデオでは、Adobe Experience Platform Web SDK とAdobe Experience Platform Edge Network の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on)
 
 これで、at.js と Platform Web SDK の大まかな違いを理解できました。 [移行の計画](plan-migration.md).
 

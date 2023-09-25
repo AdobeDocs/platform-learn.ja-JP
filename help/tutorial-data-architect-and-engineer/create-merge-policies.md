@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -31,11 +31,11 @@ Adobe Experience Platformでは、複数のソースのデータを組み合わ�
 **データアーキテクト** このチュートリアル以外で、結合ポリシーを作成する必要があります。
 
 演習を始める前に、次の短いビデオを見て結合ポリシーの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/330433?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## 必要な権限
 
-内 [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
@@ -45,11 +45,11 @@ Adobe Experience Platformでは、複数のソースのデータを組み合わ�
 
 ## 結合ポリシーと和集合スキーマについて
 
-バッチ取り込みに関するレッスンでは、同じ顧客に対して、少し異なる情報を持つ 2 つのレコードをアップロードしたことを思い出すかもしれません。 内 [!DNL Loyalty] データ、顧客の名は `Daniel` そして彼は住んでいた `New York City`が、CRM データでは、顧客の名は `Danny` そして彼は住んでいた `Portland`. 顧客データは時間の経過と共に変化します。 おそらく彼は `Portland` から `New York City`. 電話番号や電子メールアドレスなど、他の変更も加えられます。 結合ポリシーは、2 つのデータソースが同じユーザーに対して異なる情報を提供する場合に、これらのタイプの競合の処理方法を決定するのに役立ちます。
+バッチ取り込みに関するレッスンでは、同じ顧客に対して、少し異なる情報を持つ 2 つのレコードをアップロードしたことを思い出すかもしれません。 Adobe Analytics の [!DNL Loyalty] データ、お客様の名は `Daniel` そして彼は住んでいた `New York City`が、CRM データでは、顧客の名は `Danny` そして彼は住んでいた `Portland`. 顧客データは時間の経過と共に変化します。 おそらく彼は引っ越した `Portland` から `New York City`. 電話番号や電子メールアドレスなど、他の変更も加えられます。 結合ポリシーは、2 つのデータソースが同じユーザーに対して異なる情報を提供する場合に、これらのタイプの競合の処理方法を決定するのに役立ちます。
 
 だから、なぜそうしたのか。 `Danny` 名を勝ち取る？ 次を見てみましょう。
 
-1. Platform ユーザーインターフェイスで、「 **[!UICONTROL プロファイル]** 左のナビゲーション
+1. Platform ユーザーインターフェイスで、「 **[!UICONTROL プロファイル]** 左のナビゲーションで
 1. 次に移動： **[!UICONTROL ポリシーを結合]** タブ
 1. デフォルトの結合ポリシーのタイムスタンプが順序付けられています。 CRM データはロイヤルティデータの後にアップロードされたので、 `Danny` は、プロファイルの名として獲得しました。
 
@@ -66,8 +66,8 @@ ExperienceEvent クラスには和集合スキーマがないことに注意し�
 ## UI での結合ポリシーの作成
 
 1. 結合ポリシー画面で、「 **[!UICONTROL 結合ポリシーを作成]** ボタンを右上に
-1. を **[!UICONTROL 名前]**&#x200B;を入力して、 `Loyalty Prioritized`
-1. を **[!UICONTROL スキーマ]**&#x200B;を選択します。 **[!UICONTROL XDM プロファイル]** （カスタムクラスはレコードデータなので、結合ポリシーでも使用できます）
+1. を **[!UICONTROL 名前]**，と入力します。 `Loyalty Prioritized`
+1. を **[!UICONTROL スキーマ]**&#x200B;を選択します。 **[!UICONTROL XDM プロファイル]** （カスタムクラスはレコードデータなので、結合ポリシーでも使用できます）。
 1. の場合 **[!UICONTROL ID のステッチ]**&#x200B;を選択します。 **[!UICONTROL プライベートグラフ]**
 1. の場合 **[!UICONTROL 属性の結合]**&#x200B;を選択します。 **[!UICONTROL データセットの優先順位]**
 1. ドラッグ&amp;ドロップ `Luma Loyalty Dataset` および `Luma CRM Dataset` から **[!UICONTROL データセット]** パネル。
@@ -81,24 +81,24 @@ ExperienceEvent クラスには和集合スキーマがないことに注意し�
 結合ポリシーが期待どおりに動作しているかどうかを確認します。
 
 1. 次に移動： **[!UICONTROL 参照]** タブ
-1. を **[!UICONTROL 結合ポリシー]** 新しい `Loyalty Prioritized` ポリシー
-1. を **[!UICONTROL ID 名前空間]**、 `Luma CRM Id`
+1. 次を変更： **[!UICONTROL 結合ポリシー]** 新しい `Loyalty Prioritized` ポリシー
+1. を **[!UICONTROL ID 名前空間]**&#x200B;を使用する場合は、 `Luma CRM Id`
 1. を **[!UICONTROL ID 値]** use `112ca06ed53d3db37e4cea49cc45b71e`
 1. を選択します。 **[!UICONTROL プロファイルを表示]** ボタン
 1. `Daniel` 戻ってきた！
 
 ![別の結合ポリシーを持つプロファイルの表示](assets/mergepolicies-lookupProfileWithMergePolicy.png)
 
-## 制限されたデータセットを使用した結合ポリシーの作成
+## 制限されたデータセットを使用して結合ポリシーを作成する
 
 データセットの優先順位を使用して結合ポリシーを作成する場合、右側に含む同じ基本クラスのデータセットのみがプロファイルに含まれます。 別の結合ポリシーを設定しましょう
 
 1. 結合ポリシー画面で、「 **[!UICONTROL 結合ポリシーを作成]** ボタンを右上に
-1. を **[!UICONTROL 名前]**&#x200B;を入力して、  `Loyalty Only`
+1. を **[!UICONTROL 名前]**，と入力します。  `Loyalty Only`
 1. を **[!UICONTROL スキーマ]**&#x200B;を選択します。 **[!UICONTROL XDM プロファイル]**
 1. の場合 **[!UICONTROL ID のステッチ]**&#x200B;を選択します。 **[!UICONTROL なし]**
 1. の場合 **[!UICONTROL 属性の結合]**&#x200B;を選択します。 **[!UICONTROL データセットの優先順位]**
-1. ドラッグ&amp;ドロップできるのは `Luma Loyalty Dataset` から **[!UICONTROL 選択したデータセット]** パネル。
+1. ドラッグ&amp;ドロップは `Luma Loyalty Dataset` から **[!UICONTROL 選択したデータセット]** パネル。
 1. を選択します。 **[!UICONTROL 保存]** ボタン
 
 ![ロイヤルティのみの結合ポリシー](assets/mergepolicies-loyaltyOnly.png)
@@ -108,8 +108,8 @@ ExperienceEvent クラスには和集合スキーマがないことに注意し�
 次に、この結合ポリシーの機能を見てみましょう。
 
 1. 次に移動： **[!UICONTROL 参照]** タブ
-1. を **[!UICONTROL 結合ポリシー]** 新しい `Loyalty Only` ポリシー
-1. を **[!UICONTROL ID 名前空間]**、 `Luma CRM Id`
+1. 次を変更： **[!UICONTROL 結合ポリシー]** 新しい `Loyalty Only` ポリシー
+1. を **[!UICONTROL ID 名前空間]**&#x200B;を使用する場合は、 `Luma CRM Id`
 1. を **[!UICONTROL ID 値]** use `112ca06ed53d3db37e4cea49cc45b71e`
 1. を選択します。 **[!UICONTROL プロファイルを表示]** ボタン
 1. プロファイルが見つからないことを確認します。
@@ -117,7 +117,7 @@ ExperienceEvent クラスには和集合スキーマがないことに注意し�
 
 CRM ID は、 `Luma Loyalty Dataset`プロファイルの検索に使用できるのはプライマリ ID のみです。 では、プライマリ ID を使用してプロファイルを検索してみましょう。 `Luma Loyalty Id`&quot;
 
-1. を **[!UICONTROL ID 名前空間]** から `Luma Loyalty Id`
+1. 次を変更： **[!UICONTROL ID 名前空間]** から `Luma Loyalty Id`
 1. を **[!UICONTROL ID 値]** use `5625458`
 1. を選択します。 **[!UICONTROL プロファイルを表示]** ボタン
 1. プロファイル ID を選択してプロファイルを開きます

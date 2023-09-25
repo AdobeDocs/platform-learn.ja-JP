@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 38%
@@ -16,8 +16,6 @@ ht-degree: 38%
 
 # ソースの概要
 
-Adobe Experience Platformインターフェイスでソース（ソースコネクタ）を使用する方法について説明します。 ソースは、Adobe、ファーストパーティおよびサードパーティのアプリケーションから Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを取り込むための、簡単に設定可能な統合です。
+Adobe Experience Platformインターフェイスでソース（ソースコネクタ）を使用する方法について説明します。 ソースは、Adobe、ファーストパーティおよびサードパーティのアプリケーションから Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを取り込むための、簡単に設定可能な統合です。 詳しくは、 [ソースドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja).
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?quality=12&learn=on)
-
-詳しくは、 [ソースドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja).
+>[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on)

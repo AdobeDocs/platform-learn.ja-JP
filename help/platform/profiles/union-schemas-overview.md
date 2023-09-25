@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 19%
@@ -16,9 +16,6 @@ ht-degree: 19%
 
 # 和集合スキーマの概要
 
-このビデオでは、Adobe Experience Platformのリアルタイム顧客プロファイルで使用される和集合スキーマの概要を説明します。 和集合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドを統合して表示できます。 リアルタイム顧客プロファイルは、和集合スキーマを使用して、各顧客の全体像を作成します。
+このビデオでは、Adobe Experience Platformのリアルタイム顧客プロファイルで使用される和集合スキーマの概要を説明します。 和集合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドを統合して表示できます。 リアルタイム顧客プロファイルは、和集合スキーマを使用して、各顧客の全体像を作成します。 詳しくは、 [和集合スキーマドキュメント](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/329940?quality=12&learn=on)
-
-詳しくは、 [和集合スキーマドキュメント](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
-
+>[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on)

@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
@@ -25,11 +25,11 @@ Adobe Experience Platformクエリサービスを使用すると、標準の SQL
 **データアーキテクト** および **データエンジニア** このチュートリアル以外で、クエリサービスを使用する必要があります。
 
 演習を始める前に、次の短いビデオを見てクエリサービスの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## 必要な権限
 
-内 [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -41,7 +41,7 @@ Adobe Experience Platformクエリサービスを使用すると、標準の SQL
 
 簡単なクエリをいくつか開始します。
 
-1. Platform ユーザーインターフェイスで、に移動します。 **クエリ** 左のナビゲーション
+1. Platform ユーザーインターフェイスで、に移動します。 **クエリ** 左のナビゲーションで
 1. を選択します。 **クエリを作成** ボタンを使用して、クエリを実行および実行するためのテキストボックスを開きます。
 1. エディターで次のクエリを入力し、Shift + Enter キーまたは Shift + Return キーを押してクエリを実行します。
 
@@ -122,4 +122,4 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 * [クエリサービスドキュメント](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
 * [クエリサービス API リファレンス](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-そして最後の実践レッスンで [セグメントの作成](build-segments.md)!
+そして最後の実践レッスンでは [セグメントの作成](build-segments.md)!

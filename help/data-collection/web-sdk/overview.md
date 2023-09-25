@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 49%
@@ -20,7 +20,7 @@ ht-degree: 49%
 
 Adobe Experience Platform Web SDK および Edge Network により、1 つの JavaScript ライブラリと 1 つのビーコンを使用して、アドビアプリケーションやサードパーティの宛先にデータを送信する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
@@ -32,5 +32,5 @@ Adobe Experience Platform Web SDK および Edge Network により、1 つの Ja
 
 * [Adobe Experience Platform Web SDK ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)
 * [Adobe Experience Platform Web SDK によるカスタマーワークフローの簡素化に関するブログ投稿](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-* [Adobe Experience Platform Experience Edge とのクライアントとサーバーの統合の合理化のブログ投稿](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+* [Adobe Experience Platform Experience Edge とのクライアントとサーバーの統合の合理化に関するブログ投稿](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 * [Adobe Experience Platform Services とAdobe Experience Platform Web SDK の統合ブログ投稿](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)

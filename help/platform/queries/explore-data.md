@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-7684
 thumbnail: 333415.jpg
 exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 84%
@@ -16,8 +16,6 @@ ht-degree: 84%
 
 # データの調査
 
-SQL 関数を使用して、取り込んだデータを検証、データをプレビューし、データの統計的および分析的プロパティを調べる方法について説明します。
+SQL 関数を使用して、取り込んだデータを検証、データをプレビューし、データの統計的および分析的プロパティを調べる方法について説明します。詳しくは、 [クエリサービスドキュメント](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?quality=12&learn=on)
-
-詳しくは、 [クエリサービスドキュメント](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja).
+>[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on)

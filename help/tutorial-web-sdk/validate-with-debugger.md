@@ -3,7 +3,7 @@ title: Debugger を使用した Web SDK の実装のExperience Platform
 description: Adobe Experience Platform Debuggerを使用して Platform Web SDK の実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 6%
@@ -21,9 +21,9 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 
 以前のAdobe Experience Cloud Debugger とは異なるデバッガーを使用したことがない場合は、次の 5 分間の概要ビデオを視聴できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-このレッスンでは、 [Adobe Experience Cloud Debugger 拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) を、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) を独自のプロパティに追加します。
+このレッスンでは、 [Adobe Experience Cloud Debugger 拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) タグプロパティを [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) を独自のプロパティに追加します。
 
 この手法は環境の切り替えと呼ばれ、後で独自の Web サイトでタグを使用する際に役立ちます。 実稼働用 Web サイトをブラウザーに読み込むには、 *開発* タグ環境 この機能を使用すると、通常のコードリリースとは独立し、自信を持ってタグを変更し、検証できます。 結局、マーケティングタグリリースを通常のコードリリースから分離できることは、顧客がタグを最初に使用する主な理由の 1 つです。
 
@@ -59,12 +59,12 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 1. デバッガーが開き、ハードコードされた実装の詳細が表示されます。これは、このチュートリアルとは無関係です（デバッガーを開いた後に Luma サイトをリロードする必要が生じる場合があります）。
 1. デバッガーが「**[!UICONTROL Luma に接続済み]**」をクリックし、「**[!UICONTROL ロック]**「 」アイコンを使用して、デバッガーを Luma サイトにロックします。
 1. を選択します。 **[!UICONTROL ログイン]** ボタンをクリックし、AdobeID を使用してAdobe Experience Cloudにログインします。
-1. 次に移動： **[!UICONTROL Experience Platformタグ]** 左のナビゲーション
+1. 次に移動： **[!UICONTROL Experience Platformタグ]** 左のナビゲーションで
 
    ![Debugger タグ画面](assets/validate-launch-screen.png)
 
 1. を選択します。 **[!UICONTROL 設定]** タブ
-1. の右側に、 **[!UICONTROL ページ埋め込みコード]**、 **[!UICONTROL アクション]** ドロップダウンと選択 **[!UICONTROL 置換]**
+1. の右側に表示されます。 **[!UICONTROL ページ埋め込みコード]**&#x200B;をクリックし、 **[!UICONTROL アクション]** ドロップダウンと選択 **[!UICONTROL 置換]**
 
    ![アクション/置換を選択します。](assets/validate-switch-environment.png)
 
@@ -74,7 +74,7 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 
    ![代替タグのプロパティを選択](assets/validate-switch-selection.png)
 
-1. Luma Web サイトがリロードされます。 _タグプロパティを使用_.
+1. Luma Web サイトがリロードされます。 _をタグプロパティと共に使用_.
 
    ![タグプロパティが置き換えられました](assets/validate-switch-success.png)
 
@@ -93,11 +93,11 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 
    ![Adobe Experience Platform Web SDK リクエスト](assets/validate-aep-screen.png)
 
-1. 表示方法 `web.webpagedetails.pageView` イベントタイプの [!UICONTROL イベントの送信] アクション、および `AEP Web SDK ExperienceEvent Mixin` 形式
+1. 表示方法 `web.webpagedetails.pageView` イベントタイプを指定した [!UICONTROL イベントの送信] アクション、および `AEP Web SDK ExperienceEvent Mixin` 形式
 
    ![イベントの詳細](assets/validate-event-pageViews.png)
 
-1. 下にスクロールして `web` オブジェクトを選択し、開いて検査します。 `webPageDetails.name`, `webPageDetails.server`、および `webPageDetails.siteSection`. ホームページ上の対応する digitalData データレイヤー変数に一致する必要があります
+1. 下にスクロールして、 `web` オブジェクトを選択し、開いて検査します。 `webPageDetails.name`, `webPageDetails.server`、および `webPageDetails.siteSection`. ホームページ上の対応する digitalData データレイヤー変数に一致する必要があります。
 
    ![「ネットワーク」タブ](assets/validate-xdm-content.png)
 
@@ -107,7 +107,7 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 
 1. [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html)に戻ります。
 
-1. を開きます。 **[!UICONTROL Experience PlatformWeb SDK]** セクションを
+1. を開きます。 **[!UICONTROL Experience PlatformWeb SDK]** セクション（左側のナビゲーション）
 
    ![Debugger での Web SDK](assets/identity-debugger-websdk-dark.png)
 
@@ -119,7 +119,7 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
    ![Debugger での Web SDK](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
 
-## ブラウザー開発ツールで検証
+## ブラウザー開発ツールを使用した検証
 
 これらのタイプのリクエストの詳細は、ブラウザーの Web 開発者ツールにも表示されます **ネットワーク** 」タブ（Web サイトがタグライブラリを読み込むと仮定）に表示されます。
 

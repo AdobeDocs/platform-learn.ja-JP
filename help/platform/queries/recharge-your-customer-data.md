@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -17,13 +17,14 @@ ht-degree: 3%
 # 顧客データを充実させ、エクスペリエンスを実現
 
 オムニチャネルデータは、アクティベーションを調整し、結果として生じるカスタマージャーニーを測定するためにマーケターが使用する、実用的な顧客プロファイルを強化するための重要な要素です。 しかし、組織は、このデータの品質、規模、様々な管理に関して課題に直面しています。 低品質のデータの影響を軽減し、価値までの時間を短縮し、多くの用途に同じデータを使用して ROI を増やすために、合理化されたソリューションが必要です。
+詳しくは、 [クエリサービスドキュメント](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja).
 
 このビデオでは、次の内容について説明します。
 
 * Adobe Experience Platformのデータ準備機能
 * Adobe Real-Time CDP、Adobe Journey Optimizer、Customer Journey Analyticsによる ROI の向上
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
 
 ## SQL の例
 
@@ -45,8 +46,6 @@ AND timestamp > current_date - interval '4 day'
 GROUP BY customerId,sku
 order by price desc)D;
 ```
-
-詳しくは、 [クエリサービスドキュメント](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja).
 
 >[!NOTE]
 >

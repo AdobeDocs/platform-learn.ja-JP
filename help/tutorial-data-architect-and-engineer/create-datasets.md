@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 10%
@@ -26,11 +26,11 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 **データアーキテクト** このチュートリアル以外で、ではデータセットを作成する必要があります。
 
 演習を始める前に、次の短いビデオを見て、データセットの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 
 ## 必要な権限
 
-内 [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
@@ -116,13 +116,13 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 >
 > このリクエストをおこなう際に発生する一般的な問題と、おそらく次の修正点があります。
 >
-> * `400: There was a problem retrieving xdm schema`。上記のサンプルの ID を、独自の ID に置き換えていることを確認してください `Luma CRM Schema`
-> * 認証トークンがありません：を実行します。 **OAuth:アクセストークンをリクエスト** 新しいトークンを生成するリクエスト
-> * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`:を更新します。 **CONTAINER_ID** 次の環境変数： `global` から `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`:ユーザーの権限をAdmin Console
+> * `400: There was a problem retrieving xdm schema`。上記のサンプルの ID を、独自の ID に置き換えていることを確認してください。 `Luma CRM Schema`
+> * 認証トークンがありません： **OAuth：アクセストークンをリクエスト** 新しいトークンを生成するリクエスト
+> * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`：を更新します。 **CONTAINER_ID** 次の環境変数： `global` から `tenant`
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`：ユーザーでのユーザー権限のAdmin Console
 
 
-次に戻ると、 **[!UICONTROL データセット]** 画面を使用して、5 つのデータセットすべてが正常に作成されたことを確認できます。
+次の場所に戻ると、 **[!UICONTROL データセット]** 画面を使用して、5 つのデータセットすべてが正常に作成されたことを確認できます。
 ![5 つのデータセットが完了しました](assets/datasets-allComplete.png)
 
 

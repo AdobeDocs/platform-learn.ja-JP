@@ -8,15 +8,15 @@ jira: KT-11176
 thumbnail: 3409588.jpeg
 last-substantial-update: 2022-09-28T00:00:00Z
 exl-id: a10c72a2-8ed3-40da-bfdc-b1dc4492f8c4
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 84%
+source-wordcount: '40'
+ht-degree: 82%
 
 ---
 
 # データストリーム内の機密データの管理
 
-データストリームで機密データを管理する方法を説明します。詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja).
+データストリームで機密データを管理する方法を説明します。詳しくは、 [datastreams に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on)

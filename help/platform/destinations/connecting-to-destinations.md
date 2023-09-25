@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-10291
 thumbnail: 342471.jpg
 exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 37%
@@ -17,8 +17,6 @@ ht-degree: 37%
 
 # 宛先への接続
 
-Real-Time CDPから宛先パートナーにデータを送信する前に、まずそれらのパートナーに接続する必要があります。 このビデオでは、通常、管理者が行うこのプロセスを説明します。
+Real-Time CDPから宛先パートナーにデータを送信する前に、まずそれらのパートナーに接続する必要があります。 このビデオでは、通常、管理者が行うこのプロセスを説明します。詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?quality=12&learn=on)
-
-詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=ja)を参照してください。
+>[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on)

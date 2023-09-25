@@ -6,7 +6,7 @@ level: Intermediate
 jira: KT-6423
 thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 18%
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 # イベント転送ルールの作成
 
-データ収集でイベント転送ルールを作成する方法を説明します。
+データ収集でイベント転送ルールを作成する方法を説明します。 詳しくは、 [イベント転送ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -25,6 +25,4 @@ ht-degree: 18%
 > * Platform launchサーバー側が **[!DNL event forwarding]**
 > * エッジ設定が **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331942?quality=12&learn=on)
-
-詳しくは、 [イベント転送ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on)

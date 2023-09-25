@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '3344'
 ht-degree: 2%
@@ -31,9 +31,9 @@ ht-degree: 2%
 
 演習を開始する前に、次の 2 つの短いビデオを見て、ストリーミングデータ取り込みと Web SDK の詳細を確認してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ## 必要な権限
 
-内 [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Launch]** > **[!UICONTROL Property Rights]** > **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**
@@ -85,13 +85,13 @@ ht-degree: 2%
 1. にログインします。 [Experience Platformデータ収集ユーザーインターフェイス](https://experience.adobe.com/launch/)
    <!--when will the edge config go live?-->
 
-1. 選択 **[!UICONTROL データストリーム]** 左のナビゲーション
+1. 選択 **[!UICONTROL データストリーム]** 左のナビゲーションで
 1. を選択します。 **[!UICONTROL 新規データストリーム]** ボタンを右上に置く
 
    ![左側のナビゲーションでデータストリームを選択](assets/websdk-edgeConfig-clickNav.png)
 
 
-1. の **[!UICONTROL わかりやすい名前]**&#x200B;を入力して、 `Luma Platform Tutorial` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）
+1. の **[!UICONTROL わかりやすい名前]**，と入力します。 `Luma Platform Tutorial` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）。
 1. を選択します。 **[!UICONTROL 保存]** ボタン
 
    ![データストリームに名前を付けて保存する](assets/websdk-edgeConfig-name.png)
@@ -107,7 +107,7 @@ ht-degree: 2%
 
 エッジ設定が保存されると、開発、ステージング、実稼動用に 3 つの環境が作成されたことを示す画面が表示されます。 その他の開発環境を追加できます。
 ![各 Edge 設定には複数の環境を設定できます](assets/websdk-edgeConfig-environments.png)
-3 つの環境すべてに、入力した Platform の詳細が含まれます。 ただし、これらの詳細は、環境ごとに異なる設定が可能です。 例えば、各環境で異なる Platform サンドボックスにデータを送信するよう設定できます。 このチュートリアルでは、データストリームをさらにカスタマイズすることはしません。
+3 つの環境すべてに、入力した Platform の詳細が含まれます。 ただし、これらの詳細は、環境ごとに異なる設定が可能です。 例えば、各環境で異なる Platform サンドボックスにデータを送信するように設定できます。 このチュートリアルでは、データストリームをさらにカスタマイズすることはしません。
 
 ## Web SDK 拡張機能のインストール
 
@@ -117,11 +117,11 @@ ht-degree: 2%
 
 プロパティを作成するには：
 
-1. に移動します。 **[!UICONTROL プロパティ]** 左のナビゲーション
+1. に移動します。 **[!UICONTROL プロパティ]** 左のナビゲーションで
 1. を選択します。 **[!UICONTROL 新しいプロパティ]** ボタン
    ![新しいプロパティを追加](assets/websdk-property-addNewProperty.png)
-1. を **[!UICONTROL 名前]**&#x200B;を入力して、 `Luma Platform Tutorial` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）
-1. を **[!UICONTROL ドメイン]**&#x200B;を入力して、 `enablementadobe.com` （後述）
+1. を **[!UICONTROL 名前]**，と入力します。 `Luma Platform Tutorial` （会社の複数の担当者がこのチュートリアルを受け取る場合は、名前を末尾に追加します）。
+1. を **[!UICONTROL ドメイン]**，と入力します。 `enablementadobe.com` （後述）
 1. 「**[!UICONTROL 保存]**」を選択します
    ![プロパティの詳細](assets/websdk-property-propertyDetails.png)
 
@@ -152,14 +152,14 @@ Now switch back to your browser tab with the Data Collection interface still ope
 これで、プロパティが作成され、拡張機能を使用して Web SDK を追加できます。 拡張機能は、データ収集インターフェイスと機能を拡張するコードのパッケージです。 拡張機能を追加するには：
 
 1. タグプロパティを開く
-1. に移動します。 **[!UICONTROL 拡張機能]** 左のナビゲーション
+1. に移動します。 **[!UICONTROL 拡張機能]** 左のナビゲーションで
 1. 次に移動： **[!UICONTROL カタログ]** タブ
 1. タグには、多くの拡張機能を使用できます。 キーワードでカタログをフィルター `Web SDK`
-1. 内 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能の場合は、 **[!UICONTROL インストール]** ボタン
+1. Adobe Analytics の **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能の場合は、 **[!UICONTROL インストール]** ボタン
    ![Adobe Experience Platform Web SDK 拡張機能のインストール](assets/websdk-property-addExtension.png)
 1. Web SDK 拡張機能にはいくつかの設定を使用できますが、このチュートリアルで設定するのは 2 つだけです。 を更新します。 **[!UICONTROL Edge ドメイン]** から `data.enablementadobe.com`. この設定を使用すると、Web SDK の実装でファーストパーティ cookie を設定できます（推奨）。 このレッスンの後半では、 `enablementadobe.com` ドメインをタグプロパティに追加します。 の CNAME `enablementadobe.com` ドメインは既に次のように設定されています： `data.enablementadobe.com` がAdobeサーバーに転送されます。 独自の Web サイトに Web SDK を実装する場合、例えば、独自のデータ収集目的（例： ）で CNAME を作成する必要があります。 `data.YOUR_DOMAIN.com`
-1. 次の **[!UICONTROL Datastream]** ドロップダウンで、 `Luma Platform Tutorial` データストリーム。
-1. その他の設定オプションを自由に確認できます（ただし、変更しないでください）。 次に、 **[!UICONTROL 保存]**
+1. 次から： **[!UICONTROL Datastream]** ドロップダウンで、 `Luma Platform Tutorial` データストリーム。
+1. その他の設定オプションを自由に確認できます（ただし、変更しないでください）。 次に、「 **[!UICONTROL 保存]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -170,18 +170,18 @@ Now switch back to your browser tab with the Data Collection interface still ope
 
 次に、データを Platform に送信するルールを作成します。 ルールとは、タグに何らかの処理を指示するイベント、条件およびアクションを組み合わせたものです。 ルールを作成するには：
 
-1. に移動します。 **[!UICONTROL ルール]** 左のナビゲーション
+1. に移動します。 **[!UICONTROL ルール]** 左のナビゲーションで
 1. を選択します。 **[!UICONTROL 新規ルールの作成]** ボタン
    ![ルールの作成](assets/websdk-property-createRule.png)
 1. ルール名を設定します。`All Pages - Library Loaded`
 1. の下 **[!UICONTROL イベント]**&#x200B;を選択し、 **[!UICONTROL 追加]** ボタン
    ![ルールに名前を付けてイベントを追加する](assets/websdk-property-nameRule.png)
-1. 以下を使用： **[!UICONTROL コア]** **[!UICONTROL 拡張]** を選択し、 **[!UICONTROL 読み込まれたライブラリ（ページ上部）]** を **[!UICONTROL イベントタイプ]**. この設定は、Launch ライブラリがページに読み込まれるたびにルールが起動することを意味します。
+1. 以下を使用します。 **[!UICONTROL コア]** **[!UICONTROL 拡張]** を選択し、 **[!UICONTROL 読み込まれたライブラリ（ページ上部）]** として **[!UICONTROL イベントタイプ]**. この設定は、Launch ライブラリがページに読み込まれるたびにルールが起動することを意味します。
 1. 選択 **[!UICONTROL 変更を保持]** メインのルール画面に戻るには
    ![「Library Loaded」イベントの追加](assets/websdk-property-addEvent.png)
 1. 終了 **[!UICONTROL 条件]** 空の場合、このルールを指定した名前に従って、すべてのページで実行する必要があるので、
 1. の下 **[!UICONTROL アクション]**&#x200B;を選択し、 **[!UICONTROL 追加]** ボタン
-1. 以下を使用： **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 拡張]** を選択し、 **[!UICONTROL イベントの送信]** を **[!UICONTROL アクションタイプ]**
+1. 以下を使用します。 **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 拡張]** を選択し、 **[!UICONTROL イベントの送信]** として **[!UICONTROL アクションタイプ]**
 1. 右側で、「 」を選択します。 **[!UICONTROL web.webpagedetails.pageViews]** から **[!UICONTROL タイプ]** ドロップダウン。 これは、 `Luma Web Events Schema`
 1. 選択 **[!UICONTROL 変更を保持]** メインのルール画面に戻るには
    ![「イベントを送信」アクションの追加](assets/websdk-property-addAction.png)
@@ -230,23 +230,23 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 
 ライブラリを作成するには：
 
-1. に移動します。 **[!UICONTROL 公開フロー]** 左のナビゲーション
+1. に移動します。 **[!UICONTROL 公開フロー]** 左のナビゲーションで
 1. 選択 **[!UICONTROL ライブラリを追加]**
-   ![ライブラリを追加を選択](assets/websdk-property-pubAddNewLib.png)
-1. の **[!UICONTROL 名前]**&#x200B;を入力して、 `Luma Platform Tutorial`
+   ![「ライブラリを追加」を選択します。](assets/websdk-property-pubAddNewLib.png)
+1. の **[!UICONTROL 名前]**，と入力します。 `Luma Platform Tutorial`
 1. の **[!UICONTROL 環境]**&#x200B;を選択します。 `Development`
 1. を選択します。 **[!UICONTROL 変更されたリソースをすべて追加]** 」ボタンをクリックします。 ( [!UICONTROL Adobe Experience Platform Web SDK] 拡張機能と `All Pages - Library Loaded` ルールの場合は、 [!UICONTROL コア] 拡張機能が追加されました。この拡張機能には、すべての Launch Web プロパティで必要な基本 JavaScript が含まれています。)
 1. を選択します。 **[!UICONTROL 開発用に保存およびビルド]** ボタン
    ![ライブラリの作成とビルド](assets/websdk-property-buildLibrary.png)
 
 ライブラリのビルドには数分かかる場合があり、完了すると、ライブラリ名の左側に緑の点が表示されます。
-![ビルド完了](assets/websdk-property-buildComplete.png)
+![ビルドが完了しました](assets/websdk-property-buildComplete.png)
 
 ご覧のように [!UICONTROL 公開フロー] 画面、公開プロセスには、このチュートリアルの範囲外の多くの点があります。 開発環境で 1 つのライブラリを使用するだけです。
 
 ## リクエスト内のデータの検証
 
-### Adobe Experience Platform Debugger の追加
+### Adobe Experience Platform Debuggerを追加
 
 Experience Platformデバッガーは、Web ページに実装されているAdobeテクノロジーを確認するのに役立つ、Chrome および Firefox ブラウザーで使用できる拡張機能です。 使用するブラウザーのバージョンをダウンロードします。
 
@@ -255,7 +255,7 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 
 以前に Debugger を使用したことがなく、これが以前のAdobe Experience Cloud Debugger とは異なる場合は、この 5 分間の概要ビデオを視聴できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ### Luma の Web サイトを開きます。
 
@@ -264,7 +264,7 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 1. 新しいブラウザータブで、 [Luma Web サイト](https://luma.enablementadobe.com/content/luma/us/en.html).
 1. このチュートリアルの残りの部分で使用するページをブックマークに追加します。
 
-このホスト Web サイトは、 `enablementadobe.com` 内 [!UICONTROL ドメイン] 最初のタグプロパティ設定のフィールドと、使用理由 `data.enablementadobe.com` を [!UICONTROL Adobe Experience Platform Web SDK] 拡張子。 ほら、計画があったのよ！
+このホスト Web サイトは、 `enablementadobe.com` （内） [!UICONTROL ドメイン] 最初のタグプロパティ設定のフィールドと、使用理由 `data.enablementadobe.com` を [!UICONTROL Adobe Experience Platform Web SDK] 拡張子。 ほら、計画があったのよ！
 
 ![Luma のホームページ](assets/websdk-luma-homepage.png)
 
@@ -276,39 +276,39 @@ Experience PlatformDebugger には、既存のタグプロパティを別のタ�
 1. デバッガーが開き、ハードコードされた実装の詳細が表示されます。これは、このチュートリアルとは無関係です（デバッガーを開いた後に Luma サイトをリロードする必要が生じる場合があります）。
 1. デバッガーが「**[!UICONTROL Luma に接続済み]**」をクリックし、「**[!UICONTROL ロック]**「 」アイコンを使用して、デバッガーを Luma サイトにロックします。
 1. を選択します。 **[!UICONTROL ログイン]** ボタンをクリックして認証します。
-1. 次に移動： **[!UICONTROL 起動]** 左のナビゲーション
+1. 次に移動： **[!UICONTROL Launch]** 左のナビゲーションで
 1. 「設定」タブを選択します。
-1. の右側に、 **[!UICONTROL ページ埋め込みコード]**、 **[!UICONTROL アクション]** ドロップダウンと選択 **[!UICONTROL 置換]**
+1. の右側に表示されます。 **[!UICONTROL ページ埋め込みコード]**&#x200B;をクリックし、 **[!UICONTROL アクション]** ドロップダウンと選択 **[!UICONTROL 置換]**
    ![アクション/置換を選択します。](assets/websdk-debugger-replaceLibrary.png)
-1. 認証されているので、デバッガーは使用可能な Launch のプロパティと環境を取り込みます。 を選択します。 `Luma Platform Tutorial` プロパティ
+1. 認証されているので、デバッガーは使用可能な Launch のプロパティおよび環境を取り込みます。 を選択します。 `Luma Platform Tutorial` プロパティ
 1. を選択します。 `Development` 環境
 1. を選択します。 **[!UICONTROL 適用]** ボタン
    ![代替タグのプロパティを選択](assets/websdk-debugger-selectProperty.png)
-1. Luma Web サイトがリロードされます。 _タグプロパティを使用_. 助けて、私はハッキングされた！ 冗談です。
+1. Luma Web サイトがリロードされます。 _をタグプロパティと共に使用_. 助けて、私はハッキングされた！ 冗談です。
    ![タグプロパティが置き換えられました](assets/websdk-debugger-propertyReplaced.png)
-1. に移動します。 **[!UICONTROL 概要]** 左側のナビゲーションで、 [!UICONTROL 起動] プロパティ
+1. に移動します。 **[!UICONTROL 概要]** 左側のナビゲーションで、 [!UICONTROL Launch] プロパティ
    ![「概要」タブ](assets/websdk-debugger-summary.png)
 1. 次に移動： **[!UICONTROL AEP Web SDK]** 左側のナビゲーションで、 **[!UICONTROL ネットワークリクエスト]**
 1. を開きます。 **[!UICONTROL イベント]** 行
 
    ![Adobe Experience Platform Web SDK リクエスト](assets/websdk-debugger-platformNetwork.png)
-1. 表示方法 `web.webpagedetails.pageView` イベントタイプの [!UICONTROL イベントの送信] アクション、および `AEP Web SDK ExperienceEvent Mixin` 形式
+1. 表示方法 `web.webpagedetails.pageView` イベントタイプを指定した [!UICONTROL イベントの送信] アクション、および `AEP Web SDK ExperienceEvent Mixin` 形式
    ![イベントの詳細](assets/websdk-debugger-eventDetails.png)
-1. これらのタイプのリクエストの詳細は、ブラウザーの Web 開発者ツールにも表示されます **ネットワーク** タブをクリックします。 ページを開き、ページをリロードします。 次を含む呼び出しのフィルター `interact` 呼び出しを見つけるには、呼び出しを選択し、 **ヘッダー** タブ、 **リクエストペイロード** 領域
+1. これらのタイプのリクエストの詳細は、ブラウザーの Web 開発者ツールにも表示されます **ネットワーク** タブをクリックします。 ページを開き、ページをリロードします。 次を含む呼び出しのフィルター `interact` 呼び出しを見つけるには、呼び出しを選択し、 **ヘッダー** タブ、 **リクエストペイロード** 領域。
    ![「ネットワーク」タブ](assets/websdk-debugger-networkTab.png)
 1. 次に移動： **応答** 」タブに移動し、ECID 値が応答にどのように含まれるかを確認します。 この値をコピーします。次の演習では、この値を使用して縦断情報を検証します。
    ![「ネットワーク」タブ](assets/websdk-debugger-networkTab-response.png)
 
 
 
-## データの検証Experience Platform
+## データの検証のExperience Platform
 
-Platform でデータがランディングされていることを検証するには、 `Luma Web Events Dataset`. ( ストリーミングデータ取り込みと呼ばれていますが、今はバッチで届くと言っています！ リアルタイムでプロファイルにストリーミングされるので、リアルタイムのセグメント化やアクティブ化に使用できますが、15 分ごとにバッチでデータレイクに送信されます。
+Platform でデータがランディングされていることを検証するには、 `Luma Web Events Dataset`. ( ストリーミングデータ取り込みと呼ばれていますが、今はバッチで届くと言っています！ リアルタイムでプロファイルにストリーミングされるので、リアルタイムのセグメント化やアクティブ化に使用できますが、15 分ごとにバッチでデータレイクに送信されます。)
 
 データを検証するには、次の手順に従います。
 
-1. Platform ユーザーインターフェイスで、に移動します。 **[!UICONTROL データセット]** 左のナビゲーション
-1. を開きます。 `Luma Web Events Dataset` バッチが到着したことを確認します。 忘れずに、15 分ごとに送信されるので、バッチが表示されるのを待つ必要が生じる場合があります。
+1. Platform ユーザーインターフェイスで、に移動します。 **[!UICONTROL データセット]** 左のナビゲーションで
+1. を開きます。 `Luma Web Events Dataset` をクリックし、バッチが到着したことを確認します。 忘れずに、15 分ごとに送信されるので、バッチが表示されるのを待つ必要が生じる場合があります。
 1. を選択します。 **[!UICONTROL データセットをプレビュー]** ボタン
    ![データセットを開く](assets/websdk-platform-dataset.png)
 1. プレビューモーダルで、左側のスキーマの異なるフィールドを選択して、これらの特定のデータポイントをプレビューする方法に注意してください。
@@ -316,8 +316,8 @@ Platform でデータがランディングされていることを検証する�
 
 また、新しいプロファイルが表示されていることを確認することもできます。
 
-1. Platform ユーザーインターフェイスで、に移動します。 **[!UICONTROL プロファイル]** 左のナビゲーション
-1. を選択します。 **[!UICONTROL ECID]** 名前空間を作成し、ECID 値を検索します（応答からコピーします）。 プロファイルには、ECID とは別の独自の ID が含まれます。
+1. Platform ユーザーインターフェイスで、に移動します。 **[!UICONTROL プロファイル]** 左のナビゲーションで
+1. を選択します。 **[!UICONTROL ECID]** 名前空間を作成し、ECID 値を検索します（応答からコピーします）。 プロファイルには、ECID とは別に独自の ID が割り当てられます。
 1. を選択します。 **[!UICONTROL プロファイル ID]** プロファイルを開くには
    ![プロファイルを検索して開く](assets/websdk-platform-openProfile.png)
 1. を選択します。 **[!UICONTROL イベント]** タブをクリックして、表示したページを確認します。
@@ -328,16 +328,16 @@ Platform でデータがランディングされていることを検証する�
 
 ### ページ名のデータ要素の作成
 
-1. データ収集タグインターフェイスで、 `Luma Platform Tutorial` プロパティを開き、 **[!UICONTROL 作業ライブラリを選択]** ドロップダウンと選択 `Luma Platform Tutorial` ライブラリ。 この設定により、ライブラリに追加の更新を簡単に公開できます。
-1. 次に移動： **[!UICONTROL データ要素]** 左のナビゲーション
-1. を選択します。 **[!UICONTROL 新規データ要素の作成]** ボタン
+1. データ収集タグインターフェイスで、 `Luma Platform Tutorial` プロパティを開くには、 **[!UICONTROL 作業ライブラリを選択]** ドロップダウンを選択し、 `Luma Platform Tutorial` ライブラリ。 この設定により、ライブラリに追加の更新を簡単に公開できます。
+1. 次に移動： **[!UICONTROL データ要素]** 左のナビゲーションで
+1. を選択します。 **[!UICONTROL 新しいデータ要素を作成]** ボタン
 
-   ![新しいデータ要素を作成する](assets/websdk-property-createNewDataElement.png)
-1. を **[!UICONTROL 名前]**&#x200B;を入力して、 `Page Name`
+   ![新しいデータ要素の作成](assets/websdk-property-createNewDataElement.png)
+1. を **[!UICONTROL 名前]**，と入力します。 `Page Name`
 1. を **[!UICONTROL データ要素タイプ]**&#x200B;を選択します。 `JavaScript Variable`
-1. を **[!UICONTROL JavaScript 変数名]**&#x200B;を入力して、 `digitalData.page.pageInfo.pageName`
+1. を **[!UICONTROL JavaScript 変数名]**，と入力します。 `digitalData.page.pageInfo.pageName`
 1. 値の形式を標準化するのに役立つように、 **[!UICONTROL 強制的に小文字に変換値]** および **[!UICONTROL クリーンテキスト]**
-1. 必ず `Luma Platform Tutorial` が作業ライブラリとして選択されています
+1. 次を確認します。 `Luma Platform Tutorial` が作業ライブラリとして選択されています
 1. 選択 **[!UICONTROL ライブラリに保存]**
    ![ページ名のデータ要素の作成](assets/websdk-property-dataElement-pageName.png)
 
@@ -350,16 +350,16 @@ Platform でデータがランディングされていることを検証する�
 >このタスクを完了するには、ユーザーが最初に Prod サンドボックスにアクセスできることを確認する必要があります。 別の製品プロファイルから Prod Sandbox へのアクセス権をまだ持っていない場合は、すばやく `Luma Tutorial Platform` プロファイルを作成し、権限項目を追加する **[!UICONTROL サンドボックス]** > **[!UICONTROL Prod]**. その後、データ要素ページで Shift キーを押しながらリロードして、キャッシュをクリアします。
 >![製品サンドボックスの追加](assets/websdk-property-permissionToLoadSchema.png)
 
-の **[!UICONTROL データ要素]** ページ：
+次の日： **[!UICONTROL データ要素]** ページ：
 
-1. 新しいデータ要素を作成する
-1. を **[!UICONTROL 名前]**&#x200B;を入力して、 `XDM Object`
+1. 新しいデータ要素の作成
+1. を **[!UICONTROL 名前]**，と入力します。 `XDM Object`
 1. を **[!UICONTROL 拡張]**&#x200B;を選択します。 `Adobe Experience Platform Web SDK`
 1. を **[!UICONTROL データ要素タイプ]**&#x200B;を選択します。 `XDM object`
-1. を **[!UICONTROL サンドボックス]**&#x200B;を選択し、 `Luma Tutorial` サンドボックス
+1. を **[!UICONTROL サンドボックス]**&#x200B;を選択し、 `Luma Tutorial` sandbox
 1. を **[!UICONTROL スキーマ]**&#x200B;を選択し、 `Luma Web Events Schema`
 1. を選択します。 `web.webPageDetails.name` フィールド
-1. を **[!UICONTROL 値]**、アイコンを選択してデータ要素選択モーダルを開き、 `Page Name` データ要素
+1. を **[!UICONTROL 値]**、「 」アイコンを選択してデータ要素選択モーダルを開き、 `Page Name` データ要素
 1. 選択 **[!UICONTROL ライブラリに保存]**
    ![ページ名を XDM オブジェクトデータ要素にマッピングします](assets/websdk-property-dataElement-createXDMObject.png)
 
@@ -372,13 +372,13 @@ Platform でデータがランディングされていることを検証する�
 1. 次に移動： **[!UICONTROL ルール]** screen
 1. を開きます。 `All Pages - Library Loaded` ルール
 1. を開きます。 `Adobe Experience Platform Web SDK - Send Event` アクション
-1. を **[!UICONTROL XDM データ]**、アイコンを選択してデータ要素選択モーダルを開き、 `XDM Object` データ要素
+1. を **[!UICONTROL XDM データ]**、「 」アイコンを選択してデータ要素選択モーダルを開き、 `XDM Object` データ要素
 1. を選択します。 **[!UICONTROL 変更を保持]** ボタン
    ![「Send Event」アクションに XDM データを追加する](assets/websdk-property-addXDMtoSendEvent.png)
-1. さて、君は `Luma Platform Tutorial` 最後のいくつかの演習の作業用ライブラリとして選択されたので、最近の変更はライブラリに直接保存されました。 公開フロー画面で変更を公開する代わりに、青いボタンのドロップダウンを開いて「 」を選択するだけで済みます。 **[!UICONTROL ライブラリに保存してビルド]**
-   ![ライブラリに保存してビルド](assets/websdk-property-saveAndBuildUpdatedSendEvent.png)
+1. さて、君は `Luma Platform Tutorial` 最後のいくつかの演習の作業用ライブラリとして選択されたので、最近の変更はライブラリに直接保存されました。 公開フロー画面で変更を公開する代わりに、青いボタンのドロップダウンを開いて「 」を選択するだけで済みます。 **[!UICONTROL ライブラリに保存してビルドする]**
+   ![ライブラリに保存してビルドする](assets/websdk-property-saveAndBuildUpdatedSendEvent.png)
 
-これにより、先ほど 3 つの変更を加えた新しいタグライブラリの構築が開始されます。
+これにより、先ほど 3 つの変更を加えた新しいタグライブラリが構築されます。
 
 ### XDM データの検証
 
@@ -387,7 +387,7 @@ Platform でデータがランディングされていることを検証する�
 
 また、データセットとプロファイルをプレビューして、Platform で受け取ったページ名データを検証することもできます。
 
-## 追加 ID の送信
+## 追加の ID の送信
 
 Web SDK 実装では、Experience CloudID(ECID) を主識別子として持つイベントが送信されます。 ECID は Web SDK によって自動的に生成され、デバイスおよびブラウザーごとに一意です。 1 人の顧客が使用しているデバイスとブラウザーに応じて、複数の ECID を持つことができます。 では、この顧客の全体像を把握し、その顧客のオンラインアクティビティを CRM、ロイヤリティ、オフライン購入の各データにリンクさせるにはどうすればよいですか？ それには、セッション中に追加の ID を収集し、ID ステッチを通じてプロファイルを決定的にリンクします。
 
@@ -399,7 +399,7 @@ ECID と CRM ID を、 [ID をマッピング](map-identities.md) レッスン�
 
 1. タグインターフェイスで、という名前のデータ要素を追加します。 `CRM Id`
 1. を **[!UICONTROL データ要素タイプ]**&#x200B;を選択します。 **[!UICONTROL JavaScript 変数]**
-1. を **[!UICONTROL JavaScript 変数名]**&#x200B;を入力して、 `digitalData.user.0.profile.0.attributes.username`
+1. を **[!UICONTROL JavaScript 変数名]**，と入力します。 `digitalData.user.0.profile.0.attributes.username`
 1. を選択します。 **[!UICONTROL ライブラリに保存]** ボタン (`Luma Platform Tutorial` は、作業ライブラリである必要があります )
    ![CRM ID にデータ要素を追加](assets/websdk-property-dataElement-crmId.png)
 
@@ -410,15 +410,15 @@ CRM ID 値を取り込んだので、この値を、 [!UICONTROL ID マップ] �
 1. という名前のデータ要素を追加します。 `Identities`
 1. を **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. を **[!UICONTROL データ要素タイプ]**&#x200B;を選択します。 **[!UICONTROL ID マップ]**
-1. を **[!UICONTROL 名前空間]**&#x200B;を入力して、 `Luma CRM Id`( これは [!UICONTROL 名前空間] 前のレッスンで作成した
+1. を **[!UICONTROL 名前空間]**，と入力します。 `Luma CRM Id`( これは、 [!UICONTROL 名前空間] 前のレッスンで作成した
 
    >[!WARNING]
    >
    >Adobe Experience Platform Web SDK 拡張機能バージョン 2.2 では、Platform アカウント内の実際の値を使用して、事前入力されたドロップダウンから「 Namespace 」を選択できます。 残念ながら、この機能はまだ「サンドボックス対応」ではないので、 `Luma CRM Id` の値がドロップダウンに表示されない場合があります。 これにより、この演習を完了できなくなる場合があります。 確認後、回避策を投稿します。
 
-1. を **[!UICONTROL ID]**、アイコンを選択してデータ要素選択モーダルを開き、 `CRM Id` データ要素
-1. を **[!UICONTROL 認証状態]**&#x200B;を選択します。 **[!UICONTROL 認証済み]**
-1. 終了 **[!UICONTROL プライマリ]** _オフ_. Luma Web サイトのほとんどの訪問者には CRM ID が存在しないので、きっと _ECID をプライマリ識別子として上書きしない_. ECID 以外のものをプライマリ識別子として使用するのは、まれなケースです。 通常、これらの手順のデフォルトの設定は言及しませんが、後で独自の実装で頭痛を避けるために、この設定を呼び出しています。
+1. を **[!UICONTROL ID]**、「 」アイコンを選択してデータ要素選択モーダルを開き、 `CRM Id` データ要素
+1. を **[!UICONTROL 認証済み状態]**&#x200B;を選択します。 **[!UICONTROL 認証済み]**
+1. 終了 **[!UICONTROL プライマリ]** _オフ_. Luma Web サイトのほとんどの訪問者には CRM ID が存在しないので、間違いなく _ECID をプライマリ識別子として上書きしない_. ECID 以外のものをプライマリ識別子として使用するのは、まれなケースです。 通常、これらの手順のデフォルトの設定は言及しませんが、後で独自の実装で頭痛を避けるために、この設定を呼び出しています。
 1. を選択します。 **[!UICONTROL ライブラリに保存]** ボタン (`Luma Platform Tutorial` は、作業ライブラリである必要があります )
    ![CRM ID を ID マップデータ要素に追加する](assets/websdk-property-dataElement-identityMap.png)
 
@@ -432,8 +432,8 @@ CRM ID 値を取り込んだので、この値を、 [!UICONTROL ID マップ] �
 
 1. XDM オブジェクトデータ要素を開きます。
 1. IdentityMap XDM フィールドを開きます。
-1. を **[!UICONTROL データ要素]**、アイコンを選択してデータ要素選択モーダルを開き、 `Identities` データ要素
-1. さて、君は `Luma Platform Tutorial` 最後のいくつかの演習の作業用ライブラリとして選択されたので、最近の変更はライブラリに直接保存されました。 公開フロー画面で変更を公開する代わりに、青いボタンのドロップダウンを開いて、「 」を選択することもできます。 **[!UICONTROL ライブラリに保存してビルド]**
+1. を **[!UICONTROL データ要素]**、「 」アイコンを選択してデータ要素選択モーダルを開き、 `Identities` データ要素
+1. さて、君は `Luma Platform Tutorial` 最後のいくつかの演習の作業用ライブラリとして選択されたので、最近の変更はライブラリに直接保存されました。 公開フロー画面で変更を公開する代わりに、青いボタンのドロップダウンを開いて、「 」を選択することもできます。 **[!UICONTROL ライブラリに保存してビルドする]**
    ![XDM オブジェクトへの IdentityMap データ要素の追加](assets/websdk-property-dataElement-addIdentitiesToXDMObject.png)
 
 
@@ -445,7 +445,7 @@ Web SDK が CRM ID を送信していることを検証するには：
 1. 前述の手順に従って、デバッガーを使用してタグプロパティにマッピングします。
 1. を選択します。 **ログイン** Luma Web サイトの右上にあるリンク
 1. 資格情報を使用してログイン `test@adobe.com`/`test`
-1. 認証が完了したら、 Debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL ネットワークリクエスト]** > **[!UICONTROL イベント]** を参照 )、 `lumaCrmId`:
+1. 認証が完了したら、 Debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL ネットワークリクエスト]** > **[!UICONTROL イベント]** 」と表示されます )。 `lumaCrmId`:
    ![デバッガーでの ID の検証](assets/websdk-debugger-confirmIdentity.png)
 1. ECID 名前空間と値を使用してユーザープロファイルを再度検索します。 プロファイルには、CRM ID とロイヤリティ ID、および名前や電話番号などのプロファイルの詳細が表示されます。 すべての ID とデータが単一のリアルタイム顧客プロファイルに結び付けられました。
    ![Platform での ID の検証](assets/websdk-platform-lumaCrmIdProfile.png)
@@ -454,14 +454,14 @@ Web SDK が CRM ID を送信していることを検証するには：
 ## その他のリソース
 
 * [Web SDK を使用した Adobe Experience Cloud の実装](/help/tutorial-web-sdk/overview.md)
-* [ストリーミング取得ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ja)
+* [ストリーミング取り込みドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ja)
 * [ストリーミング取得 API リファレンス](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
-お疲れ様でした。これは、Web SDK および Launch に関する多くの情報でした。 本格的な実装にはさらに関わりがありますが、これらは、Platform での作業を開始し、結果を確認するのに役立つ基本です。
+お疲れ様でした。これは、Web SDK および Launch に関する多くの情報でした。 本格的な実装にはさらに関わりがありますが、これらは、Platform での作業を開始し、結果を確認するのに役立つ基本事項です。
 
 >[!NOTE]
 >
->これで、「ストリーミング取得」レッスンが完了したので、 [!UICONTROL Prod] から `Luma Tutorial Platform` 製品プロファイル
+>これで、「ストリーミング取得」レッスンが完了したので、 [!UICONTROL Prod] のサンドボックス `Luma Tutorial Platform` 製品プロファイル
 
 
 データエンジニア ( 必要に応じて、 [クエリ実行レッスン](run-queries.md).

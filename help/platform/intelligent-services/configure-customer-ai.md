@@ -8,9 +8,9 @@ level: Beginner
 jira: KT-4172
 thumbnail: 32665.jpg
 exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '75'
 ht-degree: 42%
 
 ---
@@ -23,6 +23,4 @@ ht-degree: 42%
 >
 >顧客 AI は、Adobe AnalyticsとAdobe Audience Managerの両方のデータセットをサポートします。消費者エクスペリエンスイベント (CEE) スキーマに準拠するためにデータを ETL する必要はありません。 詳しくは、 [インテリジェントサービスデータ準備ガイド](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/32665?quality=12&learn=on)
-
-詳しくは、 [顧客 AI ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=ja)
+>[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on)

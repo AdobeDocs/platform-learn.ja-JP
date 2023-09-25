@@ -1,5 +1,5 @@
 ---
-title: Real-Time CDPでのパートナーデータサポートの概要
+title: Real-Time CDP でのパートナーデータサポートの概要
 description: 詳しくは、 [!DNL Real-Time Customer Data Platform] は、ファーストパーティのデータエンリッチメント用にパートナーデータを使用したフルファネルマーケティングをサポートし、サードパーティ cookie の廃止は今後も続いているので、今後の使用例も見込み中です。 
 feature: Integrations
 topic: Integrations
@@ -8,10 +8,10 @@ level: Beginner
 jira: KT-13805
 thumbnail: 3422855.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
-source-git-commit: 1f68f72cc4e640cff16670e259982276668c9193
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
@@ -19,4 +19,4 @@ ht-degree: 0%
 
 詳しくは、 [!DNL Real-Time Customer Data Platform] は、ファーストパーティのデータエンリッチメント用にパートナーデータを使用したフルファネルマーケティングをサポートし、サードパーティ cookie の廃止は今後も続いているので、今後の使用例も見込み中です。 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

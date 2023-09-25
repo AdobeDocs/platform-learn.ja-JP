@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 8%
@@ -26,7 +26,7 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 **データアーキテクト** このチュートリアル以外で、id をマッピングする必要があります。
 
 演習を始める前に、Adobe Experience Platformの ID の詳細については、以下の短いビデオをご覧ください。
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 ## 必要な権限
 
-内 [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Identity Management]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
@@ -56,7 +56,7 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 まず、Luma ロイヤリティスキーマ用の名前空間を作成します。
 
-1. Platform ユーザーインターフェイスで、に移動します。 **[!UICONTROL ID]** 左のナビゲーション
+1. Platform ユーザーインターフェイスで、に移動します。 **[!UICONTROL ID]** 左のナビゲーションで
 1. 標準の ID 名前空間がいくつか使用できます。 を選択します。 **[!UICONTROL ID 名前空間を作成]** ボタン
 1. 次のように詳細を入力します
 
@@ -132,7 +132,7 @@ ID 名前空間を作成しましょう `Luma CRM Id`:
 1. を選択します。 `loyaltyId` フィールド
 1. 次を確認します。 **[!UICONTROL ID]** ボックス
 1. 次を確認します。 **[!UICONTROL プライマリID]** ボックス
-1. を選択します。 `Luma Loyalty Id` 名前空間 **[!UICONTROL ID 名前空間]** ドロップダウン
+1. を選択します。 `Luma Loyalty Id` 名前空間： **[!UICONTROL ID 名前空間]** ドロップダウン
 1. 選択 **[!UICONTROL 適用]**
 1. 「**[!UICONTROL 保存]**」を選択します
 
@@ -140,15 +140,15 @@ ID 名前空間を作成しましょう `Luma CRM Id`:
 
 他のスキーマの一部に対して、次の手順を繰り返します。
 
-1. 内 `Luma CRM Schema`、ラベル `crmId` を使用して、プライマリ id としてフィールドを `Luma CRM Id` 名前空間
-1. 内 `Luma Offline Purchase Events Schema`、ラベル `loyaltyId` を使用して、プライマリ id としてフィールドを `Luma Loyalty Id` 名前空間
-1. 内 `Luma Product Catalog Schema`、ラベル `productSku` を使用して、プライマリ id としてフィールドを `Luma Product SKU` 名前空間
+1. Adobe Analytics の `Luma CRM Schema`、ラベル `crmId` を使用して、プライマリ id としてフィールドを `Luma CRM Id` 名前空間
+1. Adobe Analytics の `Luma Offline Purchase Events Schema`、ラベル `loyaltyId` を使用して、プライマリ id としてフィールドを `Luma Loyalty Id` 名前空間
+1. Adobe Analytics の `Luma Product Catalog Schema`、ラベル `productSku` を使用して、プライマリ id としてフィールドを `Luma Product SKU` 名前空間
 
 >[!NOTE]
 >
 >Web SDK で収集されるデータは、スキーマの ID フィールドにラベルを付ける一般的な方法の例外です。 Web SDK は、 ID マップを使用して ID にラベルを付けます *実装側で* したがって、 `Luma Web Events Schema` Web SDK を Luma の Web サイトに実装する際に使用します。 この後のレッスンでは、Experience Cloud訪問者 ID(ECID) をプライマリ ID として、crmId をセカンダリ ID として収集します。
 
-プライマリ ID を選択すると、 `Luma CRM Schema` は、 `Luma Offline Purchase Events Schema` どちらも `loyaltyId` を識別子として設定します。 しかし、オフラインでの購入とオンラインでの行動を結び付けるにはどうすればよいのでしょうか。 製品カタログと共に購入した製品を分類するにはどうすればよいですか？ 追加の ID フィールドとスキーマの関係を使用します。
+プライマリ ID を選択すると、 `Luma CRM Schema` は、次の場所に接続できます： `Luma Offline Purchase Events Schema` 両方ともが `loyaltyId` を識別子として設定します。 しかし、オフラインでの購入とオンラインでの行動を結び付けるにはどうすればよいのでしょうか？ 製品カタログと共に購入した製品を分類するにはどうすればよいですか？ 追加の ID フィールドとスキーマの関係を使用します。
 
 <!--use a visual-->
 
@@ -160,7 +160,7 @@ ID 名前空間を作成しましょう `Luma CRM Id`:
 1. 選択 `Luma Identity Profile Field group`
 1. 選択 `crmId` フィールド
 1. 次を確認します。 **[!UICONTROL ID]** ボックス
-1. を選択します。 `Luma CRM Id` 名前空間 **[!UICONTROL ID 名前空間]** ドロップダウン
+1. を選択します。 `Luma CRM Id` 名前空間： **[!UICONTROL ID 名前空間]** ドロップダウン
 1. 選択 **[!UICONTROL 適用]** 次に、 **[!UICONTROL 保存]** ボタンをクリックして変更を保存します。
 
    ![セカンダリID](assets/identity-loyalty-secondaryId.png)
@@ -173,7 +173,7 @@ ID 名前空間を作成しましょう `Luma CRM Id`:
 1. 選択 **[!UICONTROL コマースの詳細]** フィールドグループ
 1. 選択 **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** フィールド
 1. 次を確認します。 **[!UICONTROL 関係]** ボックス
-1. 選択 `Luma Product Catalog Schema` を **[!UICONTROL 参照スキーマ]**
+1. 選択 `Luma Product Catalog Schema` として **[!UICONTROL 参照スキーマ]**
 1. `Luma Product SKU` は、 **[!UICONTROL 参照 ID 名前空間]**
 1. 選択 **[!UICONTROL 適用]**
 1. 「**[!UICONTROL 保存]**」を選択します

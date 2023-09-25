@@ -11,7 +11,7 @@ jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 6%
@@ -26,13 +26,13 @@ ht-degree: 6%
 
 テンプレートワークフローを使用してMarketo用のソースコネクタを設定する方法について説明します。 このワークフローは、Marketoデータの取り込みに必要なアセットをテンプレートに基づいて自動生成します。 事前の時間を節約でき、必要に応じてアセットをカスタマイズできます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on)
 
 ## 標準ワークフロー
 
 標準ワークフローを使用してMarketo用のソースコネクタを設定する方法を説明します。 標準ワークフローでは、スキーマと ID 名前空間を事前に作成する必要があります。
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 詳しくは、次のドキュメントを参照してください。
 * [Marketo Engageソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

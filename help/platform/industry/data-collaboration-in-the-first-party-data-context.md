@@ -8,7 +8,7 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 36%
@@ -19,7 +19,7 @@ ht-degree: 36%
 
 アクセスするデータを少なく抑え、エクスペリエンスプロミスで配信します。広告主、発行者、代理店を問わず、このウェビナーは、サードパーティ Cookie を使用しない将来のデータコラボレーションの機会を解放するのに役立ちます。
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
 ## 重要な留意点:
 

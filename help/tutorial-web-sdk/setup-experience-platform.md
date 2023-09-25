@@ -2,9 +2,9 @@
 title: Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
 description: Web SDK を使用して、Web データをAdobe Experience Platformにストリーミングする方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1606'
 ht-degree: 10%
 
 ---
@@ -23,20 +23,20 @@ Experience Platformは、前に作成したのと同じ XDM スキーマを使�
 
 * Adobe Experience Platform内でのデータセットの作成
 * Web SDK データをAdobe Experience Platformに送信するためのデータストリームの設定
-* リアルタイム顧客プロファイルのストリーミング Web データの有効化
+* リアルタイム顧客プロファイルのストリーミング Web データを有効にする
 * データが Platform データセットとリアルタイム顧客プロファイルの両方にランディングしたことを検証します。
 
 ## 前提条件
 
 次のレッスンを既に完了していること。
 
-* この **初期設定** レッスン：
+* The **初期設定** レッスン：
    * [権限の設定](configure-permissions.md)
    * [XDM スキーマの設定](configure-schemas.md)
    * [データストリームの設定](configure-datastream.md)
    * [ID 名前空間の設定](configure-identities.md)
 
-* この **タグ設定** レッスン：
+* The **タグ設定** レッスン：
    * [Web SDK 拡張機能のインストール](install-web-sdk.md)
    * [データ要素の作成](create-data-elements.md)
    * [タグルールの作成](create-tag-rule.md)
@@ -64,11 +64,11 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
    ![スキーマからのデータセットの作成](assets/experience-platform-create-dataset-schema.png)
 
-1. を選択します。 `Luma Web Event Data` スキーマが [前のレッスン](configure-schemas.md) 次に、 **[!UICONTROL 次へ]**
+1. を選択します。 `Luma Web Event Data` スキーマが [前のレッスン](configure-schemas.md) 次に、「 **[!UICONTROL 次へ]**
 
    ![データセット、スキーマを選択](assets/experience-platform-create-dataset-schema-selection.png)
 
-1. 次を提供： **[!UICONTROL 名前]** およびオプション **[!UICONTROL 説明]** 」を設定します。 この練習では、 `Luma Web Event Data`を選択し、「 **[!UICONTROL 完了]**
+1. 次を提供： **[!UICONTROL 名前]** およびオプション **[!UICONTROL 説明]** 」と表示されます。 この練習では、 `Luma Web Event Data`を選択し、「 **[!UICONTROL 完了]**
 
    ![データセット名 ](assets/experience-platform-create-dataset-schema-name.png)
 
@@ -78,23 +78,22 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 次に、 [!UICONTROL datastream] にデータを送信 [!UICONTROL Adobe Experience Platform]. datastream は、タグのプロパティ、Platform Edge Network およびExperience Platformデータセット間のリンクです。
 
-1. を開きます。 [データ収集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} インターフェイス
+1. を開きます。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 選択 **[!UICONTROL データストリーム]** 左のナビゲーションから
 1. で作成したデータストリームを開きます。 [データストリームの設定](configure-datastream.md) 教訓 `Luma Web SDK`
 
    ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk.png)
 
-1. 選択 **[!UICONTROL サービスを追加]**
-
+1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームにサービスを追加する](assets/experience-platform-addService.png)
-1. 選択 **[!UICONTROL Adobe Experience Platform]** を **[!UICONTROL サービス]**
-1. 選択 `Luma Web Event Data` を **[!UICONTROL イベントデータセット]**
+1. 選択 **[!UICONTROL Adobe Experience Platform]** として **[!UICONTROL サービス]**
+1. 選択 `Luma Web Event Data` として **[!UICONTROL イベントデータセット]**
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
    ![データストリーム設定](assets/experience-platform-datastream-config.png)
 
-で [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) タグプロパティにマッピングされると、データセットがExperience Platformに入力されます。
+でトラフィックを生成する際、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) タグプロパティにマッピングされると、データセットがExperience Platformに入力されます。
 
 ## データセットの検証
 
@@ -110,7 +109,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 1. を開きます。 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) をクリックし、 [!UICONTROL Experience Platformデバッガー] 拡張機能アイコン
 
-1. タグプロパティをにマッピングするように Debugger を設定します。 *あなたの* 開発環境 ( [Debugger を使用した検証](validate-with-debugger.md) レッスン
+1. タグプロパティをにマッピングするように Debugger を設定します。 *あなたの* 開発環境 (「 [Debugger を使用した検証](validate-with-debugger.md) レッスン
 
    ![デバッガーに表示される Launch 開発環境](assets/experience-platform-debugger-dev.png)
 
@@ -125,23 +124,23 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 1. ポップアップ内で「identityMap」を検索します。 ここに、authenticatedState、id、primary の 3 つのキーを持つ lumaCrmId が表示されます
    ![Debugger での Web SDK](assets/experience-platform-debugger-dev-idMap.png)
 
-データを `Luma Web Event Data` データセットを作成し、「プレビューデータセット」検証の準備を整えます。
+これで、データが `Luma Web Event Data` データセットを作成し、「プレビューデータセット」検証の準備を整えます。
 
 ### データセットのプレビュー
 
-データが Platform のデータレイクにランディングしたことを確認するには、 **[!UICONTROL データセットをプレビュー]** 機能。 Web SDK データは、データレイクにマイクロバッチされ、Platform インターフェイスで定期的に更新されます。 生成したデータが表示されるまでに 10 ～ 15 分かかる場合があります。
+データが Platform のデータレイクにランディングしたことを確認するには、次の方法を使用します。 **[!UICONTROL データセットをプレビュー]** 機能。 Web SDK データは、データレイクにマイクロバッチされ、Platform インターフェイスで定期的に更新されます。 生成したデータが表示されるまでに 10 ～ 15 分かかる場合があります。
 
-1. 内 [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL データセット]** 左側のナビゲーションで **[!UICONTROL データセット]** ダッシュボード。
+1. Adobe Analytics の [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL データセット]** 左側のナビゲーションで、 **[!UICONTROL データセット]** ダッシュボード。
 
    ダッシュボードリストは、組織で使用可能なすべてのデータセットを管理します。リストに表示された各データセットに関する詳細（名前、データセットが適用されるスキーマ、最新の取得実行のステータスなど）が表示されます。
 
-1. を選択します。 `Luma Web Event Data` 開くデータセット **[!UICONTROL データセットアクティビティ]** 画面
+1. を選択します。 `Luma Web Event Data` データセットを開きます。 **[!UICONTROL データセットアクティビティ]** 画面。
 
    ![データセット Luma Web イベント](assets/experience-platform-dataset-validation-lumaSDK.png)
 
    アクティビティ画面には、消費されるメッセージの割合を視覚化したグラフと、成功および失敗したバッチのリストが含まれます。
 
-1. 次の **[!UICONTROL データセットアクティビティ]** 画面、選択 **[!UICONTROL データセットをプレビュー]** 画面の右上隅付近にあり、最大 100 行のデータをプレビューできます。 データセットが空の場合、プレビューリンクは非アクティブになります。
+1. 次から： **[!UICONTROL データセットアクティビティ]** 画面、選択 **[!UICONTROL データセットをプレビュー]** 画面の右上隅付近にあり、最大 100 行のデータをプレビューできます。 データセットが空の場合、プレビューリンクは非アクティブになります。
 
    ![データセットのプレビュー](assets/experience-platform-dataset-preview.png)
 
@@ -158,7 +157,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 次の手順では、リアルタイム顧客プロファイルのデータセットとスキーマを有効にします。 Web SDK からのデータストリーミングは、Platform に取り込まれる多数のデータソースの 1 つで、Web データを他のデータソースと結合して、360 度の顧客プロファイルを作成したいと考えます。 リアルタイム顧客プロファイルの詳細については、次の短いビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -173,7 +172,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
    ![プロファイル切り替え](assets/setup-experience-platform-profile.png)
 
-1. 次の操作を確認します **[!UICONTROL 有効にする]** データセット
+1. 次の操作を確認します。 **[!UICONTROL 有効にする]** データセット
 
    ![プロファイル有効切り替え](assets/setup-experience-platform-profile-enable.png)
 
@@ -213,14 +212,13 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 > * データの再取り込み
 
 
-
 ### プロファイルの検証
 
 Platform インターフェイス ( またはJourney Optimizerインターフェイス ) で顧客プロファイルを検索し、データがリアルタイム顧客プロファイルにランディングしたことを確認できます。 名前が示すように、プロファイルはリアルタイムで入力されるので、データセット内のデータの検証と同様に遅延はありません。
 
 まず、より多くのサンプルデータを生成する必要があります。 このレッスンで前述の手順を繰り返し、タグプロパティにマッピングされた Luma Web サイトにログインします。 Inspect Platform Web SDK リクエストを使用して、 `lumaCRMId`.
 
-1. 内 [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL プロファイル]** 左側のナビゲーション
+1. Adobe Analytics の [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL プロファイル]** 左側のナビゲーションで
 
 1. を **[!UICONTROL ID 名前空間]** use `lumaCRMId`
 1. 次の値をコピー&amp;ペースト： `lumaCRMId` を渡し、Experience Platformデバッガーで調べた呼び出し ( `112ca06ed53d3db37e4cea49cc45b71e`) をクリックします。
@@ -231,11 +229,11 @@ Platform インターフェイス ( またはJourney Optimizerインターフェ
 
    ![プロファイル](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. をクリックして、 [!UICONTROL プロファイル ID] および [!UICONTROL 顧客プロファイル] コンソールが設定されます。 ここで、 `lumaCRMId`例： `ECID`:
+1. をクリックして、 [!UICONTROL プロファイル ID] および [!UICONTROL 顧客プロファイル] コンソールが設定されます。 ここに、 `lumaCRMId`例： `ECID`:
 
    ![顧客プロファイル](assets/experience-platform-validate-dataset-custProfile.png)
 
-これで、Experience Platform( およびReal-Time CDP! Customer Journey Analytics! Journey Optimizer!)!
+これで、Experience Platform( およびReal-Time CDP! そしてCustomer Journey Analytics! JOURNEY OPTIMIZER!)
 
 
 [次へ： ](setup-analytics.md)

@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 3%
@@ -33,11 +33,11 @@ ht-degree: 3%
 **データアーキテクト** このチュートリアル以外で、リアルタイム顧客プロファイルを有効にする必要があります。
 
 演習を始める前に、次の短いビデオを見てリアルタイム顧客プロファイルの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## 必要な権限
 
-内 [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -51,7 +51,7 @@ ht-degree: 3%
 
 まず、スキーマを有効にする簡単なタスクを見てみましょう。
 
-1. Platform ユーザーインターフェイスで、 **Luma ロイヤルティスキーマ**
+1. Platform ユーザーインターフェイスで、 **Luma ロイヤリティスキーマ**
 1. In **[!UICONTROL スキーマのプロパティ]**、切り替え **プロファイル** スイッチ
 1. 確認モーダルで、 **[!UICONTROL 有効にする]** ボタンをクリック
 1. を選択します。 **[!UICONTROL 保存]** ボタンをクリックして変更を保存します。
@@ -78,7 +78,7 @@ ht-degree: 3%
 
 ## Platform API を使用したリアルタイム顧客プロファイルのスキーマの有効化
 
-次に、 `Luma CRM Schema` を使用します。 この演習をスキップし、ユーザーインターフェイスで有効にする場合は、先に進んでください。
+次に、 `Luma CRM Schema` と API が同時に使用されます。 この演習をスキップし、ユーザーインターフェイスで有効にする場合は、先に進んでください。
 
 ### スキーマの meta:altId を取得します。
 
@@ -92,13 +92,13 @@ ht-degree: 3%
 1. レスポンスで `Luma CRM Schema` 項目を選択し、 `meta:altId` 値
    ![meta:altId をコピーします。](assets/profile-crm-getMetaAltId.png)
 
-### スキーマの有効化
+### スキーマを有効にする
 
 これで、スキーマの meta:altId が取得されたので、プロファイルに対して有効にできます。
 
 1. リクエストを開く **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
-1. 内 **パラメーター** 貼り付け `meta:altId` の値を `SCHEMA_ID` パラメーター値
-1. 内 **本文** 」タブに、次のコードを貼り付けます。
+1. Adobe Analytics の **パラメーター** 貼り付け `meta:altId` の値を `SCHEMA_ID` パラメーター値
+1. Adobe Analytics の **本文** 」タブに、次のコードを貼り付けます。
 
    ```json
    [{
@@ -114,7 +114,7 @@ ht-degree: 3%
    ![SCHEMA_ID パラメーターとして使用するカスタム meta:altId を使用して、プロファイルの CRM スキーマを有効にします。](assets/profile-crm-enableProfile.png)
 
 ユーザーインターフェイスで、5 つのスキーマすべてがプロファイルに対して有効になっていることを確認できます（確認するには、Shift キーを押しながらリロードする必要がある場合があります）。 `Luma CRM Schema` は有効です。
-![すべてのスキーマが有効](assets/profile-allSchemasEnabled.png)
+![すべてのスキーマが有効です](assets/profile-allSchemasEnabled.png)
 
 
 ## Platform ユーザーインターフェイスを使用したリアルタイム顧客プロファイルのデータセットの有効化
@@ -158,8 +158,8 @@ ht-degree: 3%
 データセットの ID が揃ったので、プロファイルに対して有効にできます。
 
 1. リクエストを開く **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
-1. 内 **パラメーター** を更新します。 `DATASET_ID` 自分の価値
-1. 内 **本文** 「 」タブに、次のコードを貼り付けます。 最初の 2 つの値は、前の応答で表示される既存のタグです。 追加する 2 つの新しいタグに加えて、本文に含める必要があります。
+1. Adobe Analytics の **パラメーター** を更新します。 `DATASET_ID` 自分自身の価値
+1. Adobe Analytics の **本文** 「 」タブに、次のコードを貼り付けます。 最初の 2 つの値は、前の応答で表示される既存のタグです。 追加する 2 つの新しいタグに加えて、本文に含める必要があります。
 
    ```json
    {
@@ -190,5 +190,5 @@ ht-degree: 3%
 * [リアルタイム顧客プロファイル API リファレンス](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**データエンジニア** は [データ取り込みイベントへのサブスクライブ](subscribe-to-data-ingestion-events.md) レッスン。
+**データエンジニア** は、 [データ取り込みイベントへのサブスクライブ](subscribe-to-data-ingestion-events.md) レッスン。
 **データアーキテクト** _先に進む_ そして、 [バッチ取得レッスン](ingest-batch-data.md).

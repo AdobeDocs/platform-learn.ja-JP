@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 8%
@@ -24,9 +24,9 @@ ht-degree: 8%
 Adobe Experience Platform データガバナンスを使用すると、顧客データを管理し、データの使用に適用される規制、制限、ポリシーへのコンプライアンスを確保できます。データの使用制御など、様々なレベルでExperience Platform内で重要な役割を果たします。
 
 この演習を始める前に、データガバナンスに関する以下の短いビデオをご覧ください。
->[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
 
 <!--
 ## Permissions required
@@ -47,21 +47,21 @@ Luma は、ロイヤルティデータをサードパーティと共有しない
 
 データガバナンスプロセスの最初の手順は、データにガバナンスラベルを適用することです。 その前に、使用可能なラベルについて簡単に説明します。
 
-1. Platform ユーザーインターフェイスで、「 **[!UICONTROL ポリシー]** 左のナビゲーション
+1. Platform ユーザーインターフェイスで、「 **[!UICONTROL ポリシー]** 左のナビゲーションで
 1. 次に移動： **[!UICONTROL ラベル]** タブをクリックして、アカウントのすべてのラベルを表示します。
 
-すぐに使用できるラベルは多数ありますが、 [!UICONTROL ラベルを作成] 」ボタンをクリックします。 主に次の 3 つのタイプがあります。 [!UICONTROL 契約ラベル], [!UICONTROL ID ラベル]、および [!UICONTROL 機密ラベル] 一般的な原因データに対応するデータが制限される場合があります。 各ラベルには [!UICONTROL わかりやすい名前] 短い [!UICONTROL 名前] これはタイプと数字の略語に過ぎません。 例えば、 [!DNL C1] ラベルは、ロイヤリティポリシーに必要な「サードパーティの書き出しなし」のものです。
+すぐに使用できるラベルは多数ありますが、 [!UICONTROL ラベルを作成] 」ボタンをクリックします。 主に次の 3 つのタイプがあります。 [!UICONTROL 契約ラベル], [!UICONTROL ID ラベル]、および [!UICONTROL 機密ラベル] 一般的な原因データに対応するデータが制限される場合があります。 各ラベルには、 [!UICONTROL わかりやすい名前] そして短い [!UICONTROL 名前] これは、型と数字の略語に過ぎません。 例えば、 [!DNL C1] ラベルは、ロイヤリティポリシーに必要な「サードパーティの書き出しなし」のものです。
 
 ![データガバナンスラベル](assets/governance-policies.png)
 
 次に、使用を制限するデータにラベルを付けます。
 
-1. Platform ユーザーインターフェイスで、「 **[!UICONTROL データセット]** 左のナビゲーション
+1. Platform ユーザーインターフェイスで、「 **[!UICONTROL データセット]** 左のナビゲーションで
 1. `Luma Loyalty Dataset` を開きます
 1. 次に移動： **[!UICONTROL データガバナンス]** タブ
 1. ラベルを個々のフィールドに適用するか、データセット全体に適用できます。 データセット全体にラベルを適用します。 鉛筆アイコンをクリックします。 このアイコンが表示されない場合は、ブラウザーを広げるか、中央のパネルを右にスクロールしてみてください。
    ![データガバナンス](assets/governance-dataset.png)
-1. モーダルで、を展開します。 **[!UICONTROL 契約ラベル]** セクションで、 **[!UICONTROL C2]** ラベル
+1. モーダルで、を展開します。 **[!UICONTROL 契約ラベル]** 」セクションで、 **[!UICONTROL C2]** ラベル
 1. を選択します。 **[!UICONTROL 変更を保存]** ボタン
    ![データガバナンス](assets/governance-applyLabel.png)
 1. メインに戻る [!UICONTROL データガバナンス] 画面、 **[!UICONTROL 継承されたラベルを表示]** オンにすると、データセット内のすべてのフィールドにラベルがどのように適用されたかを確認できます。
@@ -75,9 +75,9 @@ Luma は、ロイヤルティデータをサードパーティと共有しない
 
 データにラベルが付いたので、ポリシーを作成できます。
 
-1. Platform ユーザーインターフェイスで、「 **[!UICONTROL ポリシー]** 左のナビゲーション
+1. Platform ユーザーインターフェイスで、「 **[!UICONTROL ポリシー]** 左のナビゲーションで
 1. 「参照」タブには、C2 ラベルをマーケティングアクションに関連付ける、「サードパーティの書き出し制限」と呼ばれる既製のポリシーが既に存在します [!UICONTROL サードパーティに書き出し] — まさに必要なものを！
-1. ポリシーを選択し、 **[!UICONTROL ポリシーのステータス]** 切り替え
+1. ポリシーを選択し、 **[!UICONTROL ポリシーのステータス]** トグル
    ![データガバナンス](assets/governance-enablePolicy.png)
 
 独自のポリシーを作成するには、 **[!UICONTROL ポリシーを作成]** 」ボタンをクリックします。 ウィザードが開き、複数のラベルとマーケティングアクションの制限を組み合わせることができます。
