@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
+exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2607'
 ht-degree: 4%
 
 ---
@@ -102,8 +103,13 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
 1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
-1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
-1. データストリーム設定を保存するには、 **[!UICONTROL 保存]**.
+1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 画面：
+
+   1. まだ選択していない場合は、「 」を選択します。 **[!UICONTROL AJO プッシュプロファイルデータセット]** から **[!UICONTROL プロファイルデータセット]**. このプロファイルデータセットは、 `MobileCore.setPushIdentifier` API 呼び出し ( [プッシュ通知用のデバイストークンの登録](#register-device-token-for-push-notifications)) と呼ばれ、プッシュ通知の一意の識別子（プッシュ識別子）が、ユーザーのプロファイルの一部として保存されます。
+
+   1. **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
+
+   1. データストリーム設定を保存するには、 **[!UICONTROL 保存]**.
 
    ![AEP データストリーム設定](assets/datastream-aep-configuration.png)
 
@@ -131,9 +137,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 ## アシュランスを使用して設定を検証
 
-1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
-1. 物理デバイスまたはシミュレーターにアプリをインストールします。
-1. Assurance で生成された URL を使用して、アプリを起動します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. Assurance UI で、 **[!UICONTROL 設定]**.
    ![クリックを設定](assets/push-validate-config.png)
 1. 選択 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL プッシュデバッグ]**.
@@ -386,7 +390,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 
 ## アプリを使用した検証
 
-1. デバイスまたはシミュレーターでアプリを開きます。
+1. を使用して、シミュレーターまたは Xcode の物理デバイスでアプリを再構築し、実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 次に移動： **[!UICONTROL 設定]** タブをクリックします。
 
@@ -404,4 +408,3 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 >これで、Journey Optimizerと、Experience PlatformMobile SDK 用のJourney Optimizer拡張機能を使用して、アプリのプッシュ通知を有効にしました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[アプリ内メッセージの作成と送信](journey-optimizer-inapp.md)**
-

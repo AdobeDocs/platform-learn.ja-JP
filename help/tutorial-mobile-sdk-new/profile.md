@@ -2,10 +2,11 @@
 title: プロファイルデータを収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 4%
+source-wordcount: '597'
+ht-degree: 3%
 
 ---
 
@@ -64,7 +65,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ## アシュランスで検証
 
-1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
-1. AEM Desktop App をインストールします。
-1. Assurance で生成された URL を使用して、アプリを起動します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. アプリを実行してログインし、製品とやり取りします。
 
    1. アシュランスアイコンを左に移動します。
@@ -132,4 +131,4 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 >
 >これで、Edge ネットワーク内のプロファイルの属性を更新するアプリを設定し、（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようになりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[位置情報サービスを使用する](places.md)**
+次へ： **[場所を使用](places.md)**

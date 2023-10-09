@@ -2,10 +2,11 @@
 title: イベントデータの追跡
 description: モバイルアプリでイベントデータを追跡する方法を説明します。
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: b926480b-b431-4db8-835c-fa1db6436a93
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 2%
+source-wordcount: '1390'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +68,6 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
       "eventType": "commerce.productViews",
       "commerce": [
           "productViews": [
-            "id": sku,
             "value": 1
           ]
       ]
@@ -75,7 +75,6 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
   ```
 
    * `eventType`：発生したイベントを記述します。 [既知の値](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 可能な場合は。
-   * `commerce.productViews.id`：製品の SKU を表す文字列値
    * `commerce.productViews.value`：イベントの数値またはブール値。 ブール値 (Adobe Analyticsでは「カウンター」) の場合、値は常に 1 に設定されます。 数値イベントまたは通貨イベントの場合、値は 1 より大きい値になります。
 
 * スキーマ内で、コマース製品表示イベントに関連付けられた追加データを識別します。 この例では、 **[!UICONTROL productListItems]** コマース関連のイベントで使用される標準のフィールドセットです。
@@ -85,25 +84,24 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
 
 * このデータを追加するには、 `xdmData` 補足データを含むオブジェクト：
 
-```swift
-var xdmData: [String: Any] = [
-    "eventType": "commerce.productViews",
-        "commerce": [
-        "productViews": [
-            "id": sku,
-            "value": 1
-        ]
-    ],
-    "productListItems": [
-        [
-            "name":  productName,
-            "SKU": sku,
-            "priceTotal": priceString,
-            "quantity": 1
-        ]
-    ]
-]
-```
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+          "commerce": [
+          "productViews": [
+              "value": 1
+          ]
+      ],
+      "productListItems": [
+          [
+              "name":  productName,
+              "SKU": sku,
+              "priceTotal": priceString,
+              "quantity": 1
+          ]
+      ]
+  ]
+  ```
 
 * これで、このデータ構造を使用して `ExperienceEvent`:
 
@@ -116,6 +114,8 @@ var xdmData: [String: Any] = [
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
+
+The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API は、 [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API 呼び出し。 詳しくは、 [Analytics モバイル拡張機能からAdobe Experience Platform Edge Network への移行](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) を参照してください。
 
 次に、このコードを Xcode プロジェクトに実際に実装します。
 アプリに異なるコマース製品関連のアクションがあり、ユーザーが実行したこれらのアクションに基づいてイベントを送信したい場合は、次の手順に従います。
@@ -135,7 +135,6 @@ var xdmData: [String: Any] = [
        "eventType": "commerce." + commerceEventType,
        "commerce": [
            commerceEventType: [
-               "id": product.sku,
                "value": 1
            ]
        ],
@@ -328,7 +327,6 @@ var xdmData: [String: Any] = [
       ```swift
       // Send app interaction event
       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-      dismiss()
       ```
 
    1. 次のハイライト表示されたコードをに追加します。 `onAppear` 修飾子：
@@ -340,8 +338,7 @@ var xdmData: [String: Any] = [
 
 ## 検証
 
-1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
-1. アプリを実行し、ログインして製品を操作します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 
    1. アシュランスアイコンを左に移動します。
    1. 選択 **[!UICONTROL ホーム]** をクリックし、 **[!UICONTROL ECID]**, **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]** 」と入力します。
@@ -355,7 +352,8 @@ var xdmData: [String: Any] = [
 
 
 1. Assurance UI で、 **[!UICONTROL hitReceived]** イベント **[!UICONTROL com.adobe.edge.conductor]** ベンダー。
-1. イベントを選択し、 **[!UICONTROL メッセージ]** オブジェクト。
+1. イベントを選択し、 **[!UICONTROL メッセージ]** オブジェクト。 または、 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 生のイベントをコピー]** を貼り付け、イベントを調べるには、好みのテキストエディターまたはコードエディターを使用します。
+
    ![データ収集の検証](assets/datacollection-validation.png)
 
 
@@ -374,7 +372,7 @@ var xdmData: [String: Any] = [
 
 ## Analytics と Platform へのイベントの送信
 
-これで、イベントを収集して Platform Edge ネットワークに送信したので、イベントは、 [datastream](create-datastream.md). 後のレッスンでは、このデータをにマッピングします。 [Adobe Analytics](analytics.md) および [Adobe Experience Platform](platform.md).
+これで、イベントを収集して Platform Edge ネットワークに送信したので、イベントは、 [datastream](create-datastream.md). 後のレッスンでは、このデータをにマッピングします。 [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) などの他のAdobe Experience Cloudソリューション [Adobe Target](target.md) Adobe Journey Optimizer
 
 >[!SUCCESS]
 >

@@ -3,10 +3,11 @@ title: 同意の実装
 description: モバイルアプリに同意を実装する方法を説明します。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 チュートリアルを最初から実行した場合は、同意拡張機能のデフォルトの同意がに設定されていることを覚えておく必要があります。 **[!UICONTROL 保留中 — ユーザーが同意設定を提供する前に発生したイベントをキューに入れます。]**
 
-データの収集を開始するには、ユーザーから同意を得る必要があります。 このチュートリアルでは、単にアラートで要求するだけで、ユーザーの同意を得ることができます。 実際のアプリでは、自分の地域の同意に関するベストプラクティスを参考にする必要があります。
+データの収集を開始するには、ユーザーから同意を得る必要があります。 実際のアプリでは、お住まいの地域の同意に関するベストプラクティスを参照してください。 このチュートリアルでは、次のアラートを使用して要求するだけで、ユーザーの同意を得ることができます。
 
-1. ユーザーに 1 回だけ問い合わせたい場合。 そのため、Mobile SDK の同意と、Appleを使用した追跡に必要な認証を組み合わせる必要があります [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). このアプリでは、ユーザーがトラッキングを承認する際に、そのユーザーがイベントの収集にも同意すると仮定します。
+1. ユーザーに同意を求めるのは 1 回だけです。 そのため、Mobile SDK の同意と、Appleを使用した追跡に必要な認証を組み合わせる必要があります [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). このアプリでは、ユーザーがトラッキングを承認する際に、そのユーザーがイベントの収集にも同意すると仮定します。
 
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
 
@@ -95,9 +96,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 ## アシュランスで検証
 
-1. 以下を確認します。 [アシュランス](assurance.md) レッスン。
-1. AEM Desktop App をインストールします。
-1. アシュランスで生成された URL を使用して、アプリを起動します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. 上記のコードを正しく追加した場合は、同意するよう求められます。
 
    選択 **[!UICONTROL 続行…]** 次に、「 **[!UICONTROL 許可]**.
@@ -107,6 +106,17 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 1. 次のように表示されます。 **[!UICONTROL 同意応答を取得]** イベントが Assurance UI に表示されます。
    ![同意を検証](assets/consent-update.png)
+
+
+## 同意をリセット
+
+同意をリセットする場合：
+
+1. に移動します。 **[!UICONTROL 設定]** 」と入力します。
+
+1. 選択 **[!UICONTROL アプリ設定…]** iOS Settings アプリで Luma アプリの設定が開きます。
+
+1. 切り替え **[!UICONTROL トラッキングを許可]** オフ。
 
 
 

@@ -3,10 +3,11 @@ title: データを Analytics データにマッピングする
 description: モバイルアプリでAdobe Analyticsのデータを収集し、マッピングする方法を説明します。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 2%
+source-wordcount: '901'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +23,7 @@ The [イベント](events.md) 以前のレッスンで収集し、Platform Edge 
 
 * ExperienceEvent 追跡について理解します。
 * サンプルアプリに XDM データが正常に送信されました。
-* Adobe Analyticsに設定されたデータストリーム
+* このレッスンで使用できるAdobe Analyticsレポートスイート。
 
 ## 学習内容
 
@@ -128,9 +129,11 @@ s.events = "scAdd:321435"
 
 ## アシュランスで検証
 
-の使用 [アシュランス](assurance.md) エクスペリエンスイベントの送信中で、XDM データが正しく、Analytics のマッピングが期待どおりにおこなわれていることを確認できます。 以下に例を示します。
+の使用 [アシュランス](assurance.md) エクスペリエンスイベントの送信中で、XDM データが正しく、Analytics のマッピングが期待どおりにおこなわれていることを確認できます。
 
-1. productListAdds イベントを送信します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
+
+1. を送信します。 **[!UICONTROL productListAdds]** イベント（製品をバスケットに追加）を追加します。
 
 1. ExperienceEvent ヒットを表示します。
 
@@ -149,7 +152,6 @@ s.events = "scAdd:321435"
    "eventType" : "commerce.productListAdds",
    "commerce" : {
      "productListAdds" : {
-       "id" : "LLWS05.1-XS",
        "value" : 1
      }
    }
@@ -193,38 +195,45 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >`_techmarketingdemos` は組織の一意の値に置き換えられます。
 
+
+
 この XDM コンテキストデータをレポートスイートの Analytics データにマッピングするには、次の操作を実行します。
+
+### フィールドグループを使用する
 
 * 次を追加： **[!UICONTROL Adobe Analytics ExperienceEvent Full 拡張機能]** フィールドグループをスキーマに追加します。
 
   ![Analytics ExperienceEvent FullExtension フィールドグループ](assets/schema-analytics-extension.png)
-* 「 Tags 」プロパティでルールを作成し、コンテキストデータを「 Adobe Analytics ExperienceEvent Full Extension 」フィールドグループのフィールドにマッピングします。 例：map `_techmarketingdemo.appinformation.appstatedetails.screenname` から `_experience.analytics.customDimensions.eVars.eVar2`.
 
-<!-- Old processing rules section
-Here is what a processing rule using this data might look like:
+* Adobe Analytics ExperienceEvent Full Extension フィールドグループに従って、アプリで XDM ペイロードを作成します。これは、 [イベントデータの追跡](events.md) レッスンまたは
+* ルールアクションを使用してAdobe Analytics ExperienceEvent Full Extension フィールドグループにデータを添付または変更する、Tags プロパティでルールを作成します。 詳細は、を参照してください。 [SDK イベントへのデータのアタッチ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) または [SDK イベントのデータを変更する](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
-* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
 
-* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+### 処理ルールの使用
 
-![analytics processing rules](assets/analytics-processing-rules.png)
+このデータを使用する処理ルールは次のようになります。
+
+* あなた **[!UICONTROL の値を上書き]** 1) **[!UICONTROL アプリの画面名 (eVar2)]** (2) **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** 4) **[!UICONTROL 設定済み]** (5)
+
+* あなた **[!UICONTROL イベントを設定]** (6) **[!UICONTROL ウィッシュリストに追加（イベント 3）]** (7) から **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL 設定済み]** (10).
+
+![分析処理ルール](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Some of the automatically mapped variables may not be available for use in processing rules.
+>自動的にマッピングされた変数の一部は、処理ルールで使用できない場合があります。
 >
 >
->The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
+>初めて処理ルールにマッピングする場合、インターフェイスには XDM オブジェクトのコンテキストデータ変数が表示されません。 任意の値を選択する場合は、「保存」をクリックし、再び編集を開始します。 これで、すべての XDM 変数が表示されます。
 
 
-Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+処理ルールとコンテキストデータに関する追加情報が見つかりました [ここ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+>以前のモバイルアプリの実装とは異なり、ページ/画面ビューと他のイベントとは区別されません。 代わりに、 **[!UICONTROL ページビュー]** 指標を設定して **[!UICONTROL ページ名]** ディメンションが含まれています。 カスタム `screenName` チュートリアルのフィールドでは、画面名を **[!UICONTROL ページ名]** 」と表示されます。
 
--->
 
 >[!SUCCESS]
 >

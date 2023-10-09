@@ -3,9 +3,10 @@ title: XDM スキーマの作成
 description: モバイルアプリイベント用の XDM スキーマを作成する方法を説明します。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 16%
 
 ---
@@ -96,9 +97,22 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 選択 **[!UICONTROL スキーマを作成]**.
 
-1. 選択 **[!UICONTROL XDM ExperienceEvent]** を選択します。
+1. Adobe Analytics の **[!UICONTROL クラスを選択]** の手順 **[!UICONTROL スキーマを作成]** ウィザード、選択 **[!UICONTROL エクスペリエンスイベント]** underthen **[!UICONTROL このスキーマの基本クラスを選択]**.
 
-   ![ドロップダウンから ExperienceEvent を選択する](assets/schema-create.png)
+1. 「**[!UICONTROL 次へ]**」を選択します。
+
+   ![スキーマウィザードの基本クラス](assets/schema-wizard-base-class.png)
+
+1. Adobe Analytics の **[!UICONTROL 名前とレビュー]** の手順 **[!UICONTROL スキーマを作成]** ウィザード、 **[!UICONTROL スキーマの表示名]**&#x200B;例： `Luma Mobile Event Schema` および [!UICONTROL 説明]例： `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >単一のサンドボックスに複数のユーザーを配置する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加するか、事前に付加することを検討してください。 例えば、`Luma Mobile App Event Schema` の代わりに、`Luma Mobile App Event Schema - Joe Smith` を使用します。詳しくは、 [概要](overview.md).
+
+1. 選択 **[!UICONTROL 完了]** 」をクリックしてウィザードを終了します。
+
+   ![スキーマ名とレビュー](assets/schema-wizard-name-and-review.png)
+
 
 1. 選択 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **追加** 次の **[!UICONTROL フィールドグループ]**.
 
@@ -116,16 +130,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    メインスキーマの構成画面に戻り、使用可能なフィールドがすべて表示されます。
 
-1. 「 」を選択して、スキーマに名前を付けます。 **[!UICONTROL 名称未設定のスキーマ]** から **[!UICONTROL 構成]** ペイン（下） **[!UICONTROL スキーマ]**) と、 **[!UICONTROL 表示名]** &amp; **[!UICONTROL 説明]**&#x200B;例： `Luma Mobile App Event Schema` および `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >単一のサンドボックスに複数のユーザーを配置する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加するか、事前に付加することを検討してください。 例えば、`Luma Mobile App Event Schema` の代わりに、`Luma Mobile App Event Schema - Joe Smith` を使用します。詳しくは、 [概要](overview.md).
-
-
 1. 「**[!UICONTROL 保存]**」を選択します。
-
-   ![適用の選択](assets/schema-name-save.png)
 
 >[!NOTE]
 >

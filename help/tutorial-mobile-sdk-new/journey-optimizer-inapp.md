@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 5%
 
 ---
@@ -32,7 +33,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
 * アプリをAdobe Experience Platform用に設定します。
 * Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
-   * キャンペーンを管理します。
+   * キャンペーンの管理.
 * 証明書、識別子、キーを作成するのに十分なアクセス権を持つ有料Apple開発者アカウント。
 * 物理iOSデバイスまたはテスト用のシミュレーター。
 
@@ -136,9 +137,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 ## アシュランスを使用して設定を検証
 
-1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
-1. 物理デバイスまたはシミュレーターにアプリをインストールします。
-1. Assurance で生成された URL を使用して、アプリを起動します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. Assurance UI で、 **[!UICONTROL 設定]**.
    ![クリックを設定](assets/push-validate-config.png)
 1. を選択します。 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 隣のボタン **[!UICONTROL アプリ内メッセージ]**.
@@ -159,7 +158,8 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 * アプリケーションのライフサイクルイベント（起動、インストール、アップグレード、閉じる、クラッシュなど）
 * 目標地点の入力や終了などの位置情報イベント。
 
-このチュートリアルでは、Mobile Core の汎用 API と拡張機能に依存しない API を使用します ( [Mobile Core 汎用 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) を使用して、ユーザー画面、アクションおよび PII データのイベント追跡を容易におこなえます。 これらの API で生成されたイベントは、SDK イベントハブに公開され、拡張機能で使用できます。 SDK イベントハブは、すべての AEP Mobile SDK 拡張機能に関連付けられたコアデータ構造を提供し、登録済み拡張機能と内部モジュールのリスト、登録済みイベントリスナーのリスト、共有状態データベースを維持します。
+このチュートリアルでは、Mobile Core の汎用 API と拡張機能に依存しない API を使用します ( [Mobile Core 汎用 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) を使用して、ユーザー画面、アクションおよび PII データのイベント追跡を容易におこなえます。 これらの API で生成されたイベントは、SDK イベントハブに公開され、拡張機能で使用できます。 SDK イベントハブは、すべての Mobile Platform SDK 拡張機能に関連付けられたコアデータ構造を提供し、登録された拡張機能と内部モジュールのリスト、登録されたイベントリスナーのリスト、共有状態データベースを維持します。
+
 SDK イベントハブは、登録済み拡張機能のイベントデータを公開および受け取り、Adobeやサードパーティソリューションとの統合を簡略化します。 例えば、 Optimize 拡張機能がインストールされている場合、Journey Optimizer - Decision Management オファーエンジンとのすべてのリクエストとインタラクションは、イベントハブによって処理されます。
 
 1. Journey Optimizer UI で、 **[!UICONTROL キャンペーン]** をクリックします。
@@ -219,7 +219,7 @@ SDK イベントハブは、登録済み拡張機能のイベントデータを�
 
 ## アプリを使用した検証
 
-1. デバイスまたはシミュレーターでアプリを開きます。
+1. を使用して、シミュレーターまたは Xcode の物理デバイスでアプリを再構築し、実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 次に移動： **[!UICONTROL 設定]** タブをクリックします。
 
@@ -232,6 +232,7 @@ SDK イベントハブは、登録済み拡張機能のイベントデータを�
 
 Assurance UI でアプリ内メッセージを検証できます。
 
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. 選択 **[!UICONTROL アプリ内メッセージ]**.
 1. 選択 **[!UICONTROL イベントリスト]**.
 1. を選択します。 **[!UICONTROL メッセージを表示]** エントリ。

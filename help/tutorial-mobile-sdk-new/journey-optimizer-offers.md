@@ -5,14 +5,15 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 4%
+source-wordcount: '2618'
+ht-degree: 3%
 
 ---
 
-# オファーの作成と表示
+# 決定管理を使用したオファーの作成と表示
 
 Experience PlatformMobile SDK を使用して、モバイルアプリでJourney Optimizer Decision Management のオファーを表示する方法について説明します。
 
@@ -101,6 +102,27 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 選択 **[!UICONTROL 設定の検証]** をクリックします。 アプリケーションのデータストリーム設定と SDK 設定の両方が検証されます。
    ![AJO 判定の検証](assets/ajo-decisioning-validation.png)
+
+
+## 配置を作成
+
+実際にオファーを作成する前に、モバイルアプリでこれらのオファーを配置する方法と場所を定義する必要があります。 決定管理では、この目的の配置を定義し、JSON ペイロードをサポートするモバイルチャネルの配置を定義します。
+
+1. Journey Optimizer UI で、「 」を選択します。 ![コンポーネント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL コンポーネント]** から **[!UICONTROL 決定管理]** をクリックします。
+
+1. 選択 **[!UICONTROL 配置]** 上部のバーから。
+
+1. 名前の配置がない場合 **[!UICONTROL モバイル JSON]**,  **[!UICONTROL モバイル]** as **[!UICONTROL チャネルタイプ]** および **[!UICONTROL JSON]** as **[!UICONTROL コンテンツタイプ]** が表示されたら、配置を作成する必要があります。 それ以外の場合は、 [オファーの作成](#create-offers).
+
+Mobile JSON 配置を作成するには：
+
+1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 配置を作成します。
+
+   1. （内） **[!UICONTROL 詳細]** セクションに入力 `Mobile JSON` として **[!UICONTROL 名前]**&#x200B;を選択します。 **[!UICONTROL モバイル]** から **[!UICONTROL チャネルタイプ]** および **[!UICONTROL JSON]** から **[!UICONTROL コンテンツタイプ]**.
+   1. 選択 **[!UICONTROL 保存]** をクリックして配置を保存します。
+
+   ![配置を作成](assets/ajo-create-placement.png)
+
 
 
 ## オファーの作成
@@ -354,7 +376,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 
 ## アプリを使用した検証
 
-1. デバイスまたはシミュレーターでアプリを開きます。
+1. を使用して、シミュレーターまたは Xcode の物理デバイスでアプリを再構築し、実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 「**[!DNL Personalisation]**」タブに移動します。
 
@@ -371,7 +393,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 
 アシュランスでオファーの実装を検証するには、次の手順に従います。
 
-1. Assurance UI に移動します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. 選択 **[!UICONTROL 設定]** 左側のパネルで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL レビューとシミュレーション]** underthen **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 選択 **[!UICONTROL レビューとシミュレーション]** をクリックします。 データストリームの設定と、アプリケーションでの SDK の設定の両方が検証されます。

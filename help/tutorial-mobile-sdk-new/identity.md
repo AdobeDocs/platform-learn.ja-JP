@@ -3,10 +3,11 @@ title: ID データを収集
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 6%
+source-wordcount: '860'
+ht-degree: 5%
 
 ---
 
@@ -103,7 +104,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. に移動します。 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 以下を使用すると、 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 保存されたクライアント側 ID マップから ID を削除する API。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側の ID グラフから識別子が削除されることはありません。 詳しくは、 [ID グラフの表示](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) id グラフについて詳しくは、を参照してください。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 ## アシュランスで検証
 
-1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. Luma アプリ内
-   1. を選択します。 **[!UICONTROL ホーム]** タブをクリックします。
+   1. を選択します。 **[!UICONTROL ホーム]** タブをクリックし、アシュランスアイコンを左に移動します。
    1. Select the <img src="assets/login.png" width="15" /> アイコンを右上に表示します。
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. 次のように表示されます。 **[!UICONTROL ID]** リストに表示されました。
 
    ![id グラフを検証](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>ECID をリセットするコードがアプリにない。つまり、アプリケーションのアンインストールと再インストールを通じてのみ、ECID をリセット（およびデバイス上の新しい ECID で新しいプロファイルを効果的に作成）できます。 識別子のリセットを実装するには、 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) および [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 呼び出し。 ただし、プッシュ通知識別子を使用する場合は、 [プッシュ通知の送信](journey-optimizer-push.md)) の代わりに使用され、その識別子がデバイス上の別の「スティッキー」プロファイル識別子になります。
 
 
 >[!SUCCESS]

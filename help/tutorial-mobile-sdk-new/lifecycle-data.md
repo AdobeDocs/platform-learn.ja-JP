@@ -2,9 +2,10 @@
 title: ライフサイクルデータの収集
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -66,13 +67,11 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## アシュランスで検証
 
-1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
-1. アプリを起動します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. アプリをバックグラウンドに送信します。 次を確認 **[!UICONTROL LifecyclePause]** イベントを含めることができます。
 1. アプリをフォアグラウンドに移動します。 次を確認 **[!UICONTROL LifecycleResume]** イベントを含めることができます。
    ![ライフサイクルを検証](assets/lifecycle-lifecycle-assurance.png)
@@ -82,7 +81,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 前の演習では、フォアグラウンドイベントとバックグラウンドイベントをAdobe Experience Platform Mobile SDK にディスパッチします。 これらのイベントを Platform Edge Network に転送するには：
 
-1. 選択 **[!UICONTROL ルール]** （データ収集 UI）を参照してください。
+1. 選択 **[!UICONTROL ルール]** 」と入力します。
    ![ルールを作成](assets/rule-create.png)
 1. 選択 **[!UICONTROL 初期ビルド]** を使用するライブラリとして追加しました。
 1. 「**[!UICONTROL 新規ルールを作成]**」を選択します。

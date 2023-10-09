@@ -5,17 +5,17 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 4%
+source-wordcount: '1921'
+ht-degree: 3%
 
 ---
 
+# Adobe Targetでの最適化とパーソナライズ
 
-# A/B テストの実行
-
-Platform Mobile SDK およびAdobe Targetを使用して、モバイルアプリで A/B テストを実行する方法を説明します。
+Platform Mobile SDK およびAdobe Targetを使用して、モバイルアプリのエクスペリエンスを最適化およびパーソナライズする方法について説明します。
 
 Target は、顧客体験をカスタマイズし、パーソナライズする必要のあるすべてのものを提供します。 Target は、Web サイト、モバイルサイト、アプリ、ソーシャルメディア、その他のデジタルチャネルに関する売上高を最大化するのに役立ちます。 Target は、A/B テスト、多変量分析テスト、製品とコンテンツのレコメンデーション、Target コンテンツ、AI を使用したコンテンツの自動パーソナライズなどを実行できます。 このレッスンでは、Target の A/B テスト機能に焦点を当てます。  詳しくは、 [A/B テストの概要](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) を参照してください。
 
@@ -36,7 +36,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
 ## 学習内容
 
-このレッスンでは、次の操作を行います
+このレッスンでは、次の操作を実行します。
 
 * Target 統合用にデータストリームを更新します。
 * Journey Optimizer - Decisioning 拡張機能でタグプロパティを更新します。
@@ -56,7 +56,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
 ### データストリーム設定を更新
 
-### Adobe Target
+#### Adobe Target
 
 モバイルアプリからExperience PlatformEdge ネットワークにデータを確実に送信するために、Adobe Targetにデータストリーム設定を更新する必要があります。
 
@@ -66,6 +66,10 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
    プロパティは、Target UI の **[!UICONTROL 管理]** > **[!UICONTROL プロパティ]**. 選択 ![コード](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) をクリックして、使用するプロパティのプロパティトークンを表示します。 プロパティトークンの形式は次のとおりです。 `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；値のみを入力する必要があります `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
+   オプションで、Target 環境 ID を指定できます。 Target では、環境を使用してサイトを整理し、実稼動前の環境を整理して、管理とレポートの分離を容易にします。 プリセット環境には、実稼動、ステージング、開発が含まれます。 詳しくは、 [環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) および [Target 環境 ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) を参照してください。
+
+   必要に応じて、ID 名前空間（CRM ID など）でのプロファイル同期をサポートするために、Target のサードパーティ ID 名前空間を指定できます。 詳しくは、 [Target サードパーティ ID 名前空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) を参照してください。
+
 1. 「**[!UICONTROL 保存]**」を選択します。
 
    ![Target を datastream に追加](assets/edge-datastream-target.png)
@@ -73,7 +77,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
 #### Adobe Journey Optimizer
 
-モバイルアプリから Edge ネットワークに送信されるデータがJourney Optimizer — 決定管理に確実に転送されるようにするには、 Experience Edge 設定を更新します。
+モバイルアプリから Edge ネットワークに送信されるデータをJourney Optimizer - Decision Management に確実に転送するには、データストリーム設定を更新します。
 
 1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
 1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
@@ -214,6 +218,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** 」をクリックします。 次を検索： ` func updatePropositionAT(ecid: String, location: String) async` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
    Task {
        let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
        let identityMap = ["identityMap" : ecid]
@@ -229,7 +234,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
    * XDM 辞書の設定 `xdmData`:A/B テストを提示する必要があるプロファイルを識別する ECID を含み、
    * を定義します。 `decisionScope`:A/B テストを提示する場所の配列。
 
-   次に、関数は 2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
+   次に、関数は 2 つの API を呼び出します。 [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。 このコンテキストの提案は、Target アクティビティ（A/B テスト）から選択され、 [A/B テストの作成](#create-an-ab-test).
 
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** 」をクリックします。 次を検索： `func onPropositionsUpdateAT(location: String) async {` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 呼び出し。次のものが含まれます。
    * は、決定範囲（A/B テストで定義した場所）に基づいて、現在のプロファイルの提案を取得します。
@@ -258,11 +263,9 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
 ## アプリを使用した検証
 
-1. デバイスまたはシミュレーターでアプリを開きます。
+1. を使用して、シミュレーターまたは Xcode の物理デバイスでアプリを再構築し、実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 次に移動： **[!UICONTROL パーソナライズ]** タブをクリックします。
-
-1. 選択 **[!UICONTROL Edge パーソナライゼーション]**.
 
 1. 下にスクロールすると、A/B テストで定義した 2 つのオファーの 1 つが、 **[!UICONTROL TARGET]** タイル。
 
@@ -273,7 +276,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
 Assurance で A/B テストを検証するには、次の手順に従います。
 
-1. Assurance UI に移動します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. 選択 **[!UICONTROL 設定]** 左側のパネルで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL レビューとシミュレーション]** underthen **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 選択 **[!UICONTROL レビューとシミュレーション]** をクリックします。 データストリームの設定と、アプリケーションでの SDK の設定の両方が検証されます。

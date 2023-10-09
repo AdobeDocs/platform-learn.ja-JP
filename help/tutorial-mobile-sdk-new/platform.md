@@ -4,9 +4,10 @@ description: データをExperience Platformに送信する方法を説明しま
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 8%
 
 ---
@@ -98,7 +99,7 @@ XDM データを Edge ネットワークからAdobe Experience Platformに送信
 
 アプリを開き、イベントを追跡している画面に移動します。 また、ライフサイクル指標をトリガーすることもできます。
 
-Platform インターフェイスでデータセットを開きます。 データセットにバッチで到着したデータを確認する必要があります
+Platform インターフェイスでデータセットを開きます。 データセットにバッチで送信されたデータが表示されます。 データは通常、15 分ごとにマイクロバッチで届くので、データがすぐには表示されない場合があります。
 
 ![データランディング Platform データセットバッチの検証](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Platform インターフェイスで、
 >
 >これで、Edge ネットワークだけでなくAdobe Experience Platformにもデータを送信するアプリを設定しました。<br>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-次へ： **[通知の作成とプッシュ](journey-optimizer-push.md)**
+次へ： **[プッシュ通知の作成と送信](journey-optimizer-push.md)**

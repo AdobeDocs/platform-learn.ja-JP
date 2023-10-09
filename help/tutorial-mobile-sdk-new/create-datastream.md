@@ -3,13 +3,13 @@ title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 9%
+source-wordcount: '459'
+ht-degree: 8%
 
 ---
-
 
 # データストリームの作成
 
@@ -55,45 +55,49 @@ ht-degree: 9%
 
 ## サービスを追加
 
-（オプション） [Analytics](analytics.md) および [Experience Platform](platform.md) このチュートリアルでは、データストリームにサービスを追加して、Platform Mobile SDK が Edge ネットワークにデータを送信する際に、データストリームが設定済みのサービスにそのデータを転送するようにします。
+（オプション） [Analytics](analytics.md) および [Experience Platform](platform.md) このチュートリアルでは、サービスをデータストリームに追加して、Platform Mobile SDK が Edge ネットワークにデータを送信する際に、データストリームが設定済みのサービスにそのデータを転送するようにします。
+
+<!--
 
 ### Adobe Analytics
 
-1. 「**[!UICONTROL サービスを追加]**」を選択します。
+1. Select **[!UICONTROL Add Service]**.
 
-1. 追加 **[!UICONTROL Adobe Analytics]** から [!UICONTROL サービス] リスト
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. 使用するレポートサイトの名前を入力します。 **[!UICONTROL レポートスイート ID]**.
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. 切り替えてサービスを有効にする **[!UICONTROL 有効]** オン。
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. 「**[!UICONTROL 保存]**」を選択します。
+1. Select **[!UICONTROL Save]**.
 
-   ![Adobe Analyticsをデータストリームサービスとして追加](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
 
-また、Adobe Experience Platformサービスを有効にすることもできます。
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->Adobe Experience Platformサービスは、イベントデータセットを作成した場合にのみ有効にできます。 イベントデータセットをまだ作成していない場合は、の手順に従ってください。 [ここ](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. クリック ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL サービスを追加]** をクリックして別のサービスを追加します。
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. [!UICONTROL サービス]リストから&#x200B;**[!UICONTROL Adobe Experience Platform]** を選択します。
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. 切り替えてサービスを有効にする **[!UICONTROL 有効]** オン。
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. を選択します。 **[!UICONTROL イベントデータセット]** を [データセットの作成](platform.md#create-a-dataset) 手順、例： **Luma モバイルアプリイベントデータセット**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. 「**[!UICONTROL 保存]**」を選択します。
+1. Select **[!UICONTROL Save]**.
 
-   ![Adobe Experience Platformをデータストリームサービスとして追加する](assets/datastream-service-aep.png)
-1. 最終的な設定は次のようになります。
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![datastream の設定](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]

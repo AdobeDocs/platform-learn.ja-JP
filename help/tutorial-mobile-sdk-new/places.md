@@ -1,19 +1,20 @@
 ---
-title: 位置情報サービスを使用する
+title: 場所を使用
 description: モバイルアプリで Places ジオロケーションサービスを使用する方法について説明します。
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 4%
 
 ---
 
-# 位置情報サービスを使用する
+# 場所を使用
 
-アプリで位置情報サービスを使用する方法を説明します。
+アプリで Places ジオロケーションサービスを使用する方法について説明します。
 
-Adobe Experience Platform Data Collection Places Service は、位置認識を持つモバイルアプリで場所のコンテキストを理解できるようにする位置情報サービスです。 このサービスは、柔軟な目標地点 (POI) データベースに加えて、豊富で使いやすい SDK インターフェイスを使用しています。
+Adobe Experience Platform Data Collection Places Service は、位置認識を持つモバイルアプリで位置コンテキストを理解できる位置情報サービスです。 このサービスは、柔軟な目標地点 (POI) データベースに加えて、豊富で使いやすい SDK インターフェイスを使用しています。
 
 ## 前提条件
 
@@ -81,7 +82,7 @@ Places サービスで目標地点を定義します。
    1. 選択 **[!UICONTROL ライブラリに保存してビルドする]** から **[!UICONTROL ライブラリに保存]**.
       ![Places 拡張機能のインストール](assets/places-install-extension.png).
 
-1. ライブラリを再構築します。
+1. ライブラリが再構築されました。
 
 
 ### スキーマの検証
@@ -96,7 +97,7 @@ Places サービスで目標地点を定義します。
    ![スキーマの場所](assets/schema-places-context.png).
 
 
-### タグを更新する
+### タグプロパティを更新する
 
 タグの Places 拡張機能は、位置情報イベントを監視する機能を提供し、これらのイベントに基づいてアクションをトリガー化できます。 この機能を使用して、アプリケーションに実装する必要のある API コーディングを最小限に抑えることができます。
 
@@ -132,7 +133,7 @@ Places サービスで目標地点を定義します。
 
 次に、これらのデータ要素を使用するルールを定義します。
 
-1. タグプロパティ内。 選択 **[!UICONTROL ルール]** をクリックします。
+1. タグプロパティで、「 」を選択します。 **[!UICONTROL ルール]** をクリックします。
 1. 選択 **[!UICONTROL ルールを追加]**.
 1. Adobe Analytics の **[!UICONTROL ルールを作成]** 画面で、ルールの名前を入力します。例： `POI - Entry`.
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL イベント]**.
@@ -215,6 +216,10 @@ Places サービスで目標地点を定義します。
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横 **[!UICONTROL Mobile Core — データを添付]** アクション。
    1. 選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL イベントを Edge ネットワークに転送する]**.
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
+1. ルールを保存するには、「 **[!UICONTROL ライブラリに保存]**.
+
+   ![規則](assets/tags-rule-poi-exit.png)
 
 
 タグ内のすべての変更が確実に公開されるようにするには
@@ -302,18 +307,15 @@ Places サービスで目標地点を定義します。
    }
    ```
 
-このレッスンでは、iOS内のロケーションマネージャー実装の詳細について説明します。
-
-
 ## アプリを使用した検証
 
 1. デバイスまたはシミュレーターでアプリを開きます。
 
 1. 次に移動： **[!UICONTROL 場所]** タブをクリックします。
 
-1. マップを動かして、中央の青い円が POI の 1 つ（例：ロンドン）の上にあることを確認します。
+1. マップを移動（ドラッグ）して、青い中央の円が POI の 1 つ（例：ロンドン）の上にあることを確認します。
 
-1. タップ <img src="assets/geobutton.png" width="20" /> 右下にカテゴリと名前が表示されるまで繰り返し繰り返し実行します。
+1. タップ <img src="assets/geobutton.png" width="20" /> カテゴリと名前が、ピン付きの赤い位置のラブルに表示されるまでです。
 
 1. POI のラベルをタップすると、 **[!UICONTROL 近くの POI]** シート。
 
