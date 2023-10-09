@@ -5,7 +5,7 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
+source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 44%
@@ -38,8 +38,8 @@ ht-degree: 44%
 + [ Experience Platform へのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [アラートを使用](/help/platform/admin/use-alerts.md)
-   + [サンドボックスの使用](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/use-sandboxes.md)
+   + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
+   + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [製品プロファイルの管理](/help/platform/admin/managing-product-profiles.md)
