@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1690'
 ht-degree: 5%
 
 ---
@@ -100,6 +100,27 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 >
 >表示されない場合 `AJO Push Tracking Experience Event Dataset` 必要に応じて、カスタマーケアにお問い合わせください。
 >
+
+
+## 署名
+
+Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-optimizer-push.md) そして [アプリ内メッセージの作成と送信](journey-optimizer-inapp.md) このチュートリアルのレッスン。 これらのレッスンでは、Appleプロビジョニングプロファイルを必要とします。 **には有料のApple開発者アカウントが必要です**.
+
+アプリの署名を更新するには：
+
+1. Xcode でアプリに移動します。
+1. 選択 **[!DNL Luma]** をクリックします。
+1. を選択します。 **[!DNL Luma]** ターゲット。
+1. を選択します。 **署名と機能** タブをクリックします。
+1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**&#x200B;または、特定のApple開発プロビジョニングの詳細を使用します。
+
+   >[!IMPORTANT]
+   >
+   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. このチュートリアルの完成版（例： ）は、を使用します。 `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+
 
 ### アプリでのJourney Optimizerの実装
 
@@ -213,7 +234,7 @@ SDK イベントハブは、登録済み拡張機能のイベントデータを�
    ```swift
    // Setting parameters and calling function to send in-app message
    Task {
-       AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
+       MobileSDK.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
    ```
 

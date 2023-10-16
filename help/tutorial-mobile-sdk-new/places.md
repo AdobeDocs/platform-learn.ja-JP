@@ -3,9 +3,9 @@ title: 場所を使用
 description: モバイルアプリで Places ジオロケーションサービスを使用する方法について説明します。
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 4%
 
 ---
@@ -239,7 +239,10 @@ Places サービスで目標地点を定義します。
 1. 左側のパネルでまだ使用できない場合は、「 」を選択します。 **[!UICONTROL 設定]** 左側のパネルで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL イベント]** および **[!UICONTROL マップとシミュレーション]** underthen **[!UICONTROL PLACES SERVICE]**.
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 選択 **[!UICONTROL マップとシミュレーション]** をクリックします。
-1. Places サービスで定義された POI の 1 つを選択し、ポップアップから次を選択します ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL エントリイベントをシミュレート]**.
+1. マップを POI の 1 つの場所に移動します。
+1. 選択 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) POI の負荷をシミュレートします。  POI は、円とピンを使用して識別されます。
+1. POI を選択します。
+1. ポップアップからを選択します。 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL エントリイベントをシミュレート]**.
    ![エントリイベントをシミュレート](assets/places-simulate.png)
 1. 選択 **[!UICONTROL イベント]** 左側のパネルから、シミュレーションしたイベントが表示されます。
    ![AJO 判定の検証](assets/places-events.png)
@@ -258,7 +261,9 @@ Places サービスで目標地点を定義します。
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 」をクリックします。
 1. 確認 `AEPPlaces` は、インポートのリストの一部です。
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. 確認 `Places.self` は、登録する拡張機能の配列の一部です。
 

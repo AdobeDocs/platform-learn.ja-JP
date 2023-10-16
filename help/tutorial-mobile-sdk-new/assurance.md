@@ -4,10 +4,10 @@ description: モバイルアプリに Assurance 拡張機能を実装する方�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 3%
+source-wordcount: '976'
+ht-degree: 2%
 
 ---
 
@@ -57,22 +57,28 @@ ht-degree: 3%
 
 詳細はこちらをご覧ください [ここ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-## 署名
+<!-- not initially required
 
-Xcode でアプリケーションを初めて実行する前に、必ず署名を更新してください。
+## Signing
 
-1. Xcode で  プロジェクトを開きます。
-1. 選択 **[!DNL Luma]** をクリックします。
-1. を選択します。 **[!DNL Luma]** ターゲット。
-1. を選択します。 **署名と機能** タブをクリックします。
-1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**&#x200B;または、特定のApple開発プロビジョニングの詳細を使用します。
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
 
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
    >[!IMPORTANT]
    >
-   >必ず _ユニーク_ バンドル識別子を置き換えます。 `Luma` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. このチュートリアルの完成版（例： ）は、を使用します。 `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## ベース URL の設定
 
@@ -81,9 +87,13 @@ Xcode でアプリケーションを初めて実行する前に、必ず署名�
 1. を選択します。 **[!DNL Luma]** ターゲット。
 1. を選択します。 **情報** タブをクリックします。
 1. ベース URL を追加するには、下にスクロールして **URL タイプ** をクリックし、 **+** 」ボタンをクリックします。
-1. 設定 **識別子** を、で設定したバンドル識別子に追加します。 [署名](#signing) 例： `com.adobe.luma.tutorial.swiftui`) をクリックし、 **URL スキーム**&#x200B;例： `lumatutorialswiftui`.
+1. 設定 **識別子** を任意のバンドル識別子に追加し、 **URL スキーム** を選択します。
 
    ![アシュアランス url](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`.<br/>同様に、一意の URL スキームを使用し、既に指定されている `lumatutorialswiftui` を使用して、一意の URL スキームを設定します。
 
 iOSでの URL スキームについて詳しくは、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -92,8 +102,31 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
 
 ## セッションへの接続
 
-1. を使用して、シミュレーターまたは Xcode の物理デバイスでアプリを再構築し、実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. 選択 **[!UICONTROL アシュランス]** をデータ収集 UI の左側のパネルから削除します。
+Xcode の場合：
+
+1. を使用して、シミュレーターまたは Xcode の物理デバイスで、アプリをビルドまたはリビルドして実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. Adobe Analytics の **[!UICONTROL 「Luma アプリ」でロケーションを使用することを許可]** ダイアログ、選択 **[!UICONTROL アプリの使用中に許可]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. Adobe Analytics の **[!UICONTROL 「Luma アプリ」が通知を送信します]** ダイアログ、選択 **[!UICONTROL 許可]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. 選択 **[!UICONTROL 続行…]** ：アプリがアクティビティを追跡できるようにします。
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. Adobe Analytics の **[!UICONTROL 「Luma アプリ」で、他の会社のアプリや Web サイトをまたいでアクティビティを追跡できるようにします]** ダイアログ、選択 **[!UICONTROL 許可]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+ブラウザーで、以下の操作を実行します。
+
+1. データ収集 UI に移動します。
+1. 選択 **[!UICONTROL アシュランス]** をクリックします。
 1. 選択 **[!UICONTROL セッションを作成]**.
 1. 選択 **[!UICONTROL 開始]**.
 1. 次を提供： **[!UICONTROL セッション名]** 例： `Luma Mobile App Session` そして **[!UICONTROL ベース URL]**:Xcode で入力した URL スキームで、その後に `://` 例： `lumatutorialswiftui://`

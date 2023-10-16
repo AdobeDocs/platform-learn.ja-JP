@@ -3,9 +3,9 @@ title: プロファイルデータを収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '593'
 ht-degree: 3%
 
 ---
@@ -26,11 +26,6 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 ## 前提条件
 
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
-* プロファイル SDK を読み込みました。
-
-  ```swift
-  import AEPUserProfile
-  ```
 
 ## 学習内容
 
@@ -78,11 +73,13 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    ```swift
    // Get attributes
    UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-       if attributes?["isPaidUser"] as! String == "yes" {
-           showBadgeForUser = true
-       }
-       else {
-           showBadgeForUser = false
+       if attributes?.count ?? 0 > 0 {
+           if attributes?["isPaidUser"] as? String == "yes" {
+               showBadgeForUser = true
+           }
+           else {
+               showBadgeForUser = false
+           }
        }
    }
    ```

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2734'
 ht-degree: 4%
 
 ---
@@ -155,6 +155,26 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. アプリにテストプッシュ通知が表示されます。
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## 署名
+
+Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-optimizer-push.md) そして [アプリ内メッセージの作成と送信](journey-optimizer-inapp.md) このチュートリアルのレッスン。 これらのレッスンでは、Appleプロビジョニングプロファイルを必要とします。 **には有料のApple開発者アカウントが必要です**.
+
+アプリの署名を更新するには：
+
+1. Xcode でアプリに移動します。
+1. 選択 **[!DNL Luma]** をクリックします。
+1. を選択します。 **[!DNL Luma]** ターゲット。
+1. を選択します。 **署名と機能** タブをクリックします。
+1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**&#x200B;または、特定のApple開発プロビジョニングの詳細を使用します。
+
+   >[!IMPORTANT]
+   >
+   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. このチュートリアルの完成版（例： ）は、を使用します。 `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 
 ## アプリへのプッシュ通知機能の追加

@@ -3,13 +3,13 @@ title: WebViews を処理
 description: モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # WebViews を処理
 
@@ -67,6 +67,7 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
 
 コードを実行するには、次の手順に従います。
 
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. 次に移動： **[!UICONTROL 設定]** アプリ内
 1. 次をタップします。 **[!DNL View...]** ボタンをクリックして、 **[!DNL Terms of Use]**.
 

@@ -4,9 +4,9 @@ description: モバイルアプリに同意を実装する方法を説明しま�
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '542'
 ht-degree: 1%
 
 ---
@@ -96,28 +96,10 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 ## アシュランスで検証
 
+1. デバイスまたはシミュレーターからアプリケーションを削除します。これは、トラッキングと同意を適切にリセットして初期化する場合に必要です。
 1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
-1. 上記のコードを正しく追加した場合は、同意するよう求められます。
-
-   選択 **[!UICONTROL 続行…]** 次に、「 **[!UICONTROL 許可]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. 次のように表示されます。 **[!UICONTROL 同意応答を取得]** イベントが Assurance UI に表示されます。
+1. 次の場所からアプリ内を移動するとき： **[!UICONTROL ホーム]** 画面に表示 **[!UICONTROL 製品]** 画面と戻る **[!UICONTROL ホーム]** 画面に、 **[!UICONTROL 同意応答を取得]** イベントが Assurance UI に表示されます。
    ![同意を検証](assets/consent-update.png)
-
-
-## 同意をリセット
-
-同意をリセットする場合：
-
-1. に移動します。 **[!UICONTROL 設定]** 」と入力します。
-
-1. 選択 **[!UICONTROL アプリ設定…]** iOS Settings アプリで Luma アプリの設定が開きます。
-
-1. 切り替え **[!UICONTROL トラッキングを許可]** オフ。
-
 
 
 >[!SUCCESS]
