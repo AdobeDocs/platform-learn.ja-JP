@@ -4,10 +4,10 @@ description: Adobe Experience Platformの詳細
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: dcd7219ad6073727f66a8d1f30e67ce98f1b8a73
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 40%
+ht-degree: 48%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Experience Platform は、顧客体験を促進する完全なソリュー
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="顧客体験 (Experience Platformビデオ )" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="顧客体験 (Experience Platformビデオを活用 )" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
@@ -42,16 +42,16 @@ Adobe Experience Platform は、顧客体験を促進する完全なソリュー
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja">
       <img alt="「データアーキテクトおよびデータエンジニア向けスタートガイド」チュートリアルのサムネール画像" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja">
     <strong>データアーキテクトおよびデータエンジニア向けスタートガイド</strong>
     </a>
     </div>
     <p>
-    <em>実践演習を開始する</em>
+    <em>実践型の演習を開始する</em>
     <p>
   </td>
   <td>

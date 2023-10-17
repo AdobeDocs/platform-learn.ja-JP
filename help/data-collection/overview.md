@@ -3,9 +3,9 @@ title: データ収集チュートリアル
 description: データ収集の強力なユーザーになるためのハウツービデオとチュートリアル
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 37%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 37%
 
 ## 最新情報
 
-* **[サーバー API の概要（ビデオ）](server-api/overview.md)**
+* **[Server API の概要（ビデオ）](server-api/overview.md)**
   *認証済みのセキュアなサーバー API を使用してデータを送信します。*
 * **[モバイルアプリでのAdobe Experience Cloudの実装（チュートリアル）](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)**
   *Mobile SDK を使用してExperience Cloudアプリケーションを実装します。*
@@ -64,6 +64,19 @@ ht-degree: 37%
     </div>
     <p>
     <em>タグを使用した Platform Mobile SDK の実装</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=ja" target="_blank">
+      <img alt="Web SDK への Target の移行" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=ja" target="_blank">
+    <strong>Adobe Targetから Web SDK への移行</strong>
+    </a>
+    </div>
+    <p>
+    <em>at.js から Web SDK への移行</em>
     <p>
   </td>
 </tr>
