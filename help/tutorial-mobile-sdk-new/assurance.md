@@ -4,9 +4,9 @@ description: モバイルアプリに Assurance 拡張機能を実装する方�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -105,6 +105,11 @@ iOSでの URL スキームについて詳しくは、 [Appleドキュメント](
 Xcode の場合：
 
 1. を使用して、シミュレーターまたは Xcode の物理デバイスで、アプリをビルドまたはリビルドして実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >必要に応じて、特に予期しない結果が表示された場合に、ビルドを「クリーンアップ」することができます。 それには、「 」を選択します。 **[!UICONTROL ビルドフォルダーをクリーンアップ…]** Xcode から **[!UICONTROL 製品]** メニュー。
+
 
 1. Adobe Analytics の **[!UICONTROL 「Luma アプリ」でロケーションを使用することを許可]** ダイアログ、選択 **[!UICONTROL アプリの使用中に許可]**.
 
