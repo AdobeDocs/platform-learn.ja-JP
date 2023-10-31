@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1002'
 ht-degree: 44%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 44%
    + [Marketoの宛先の設定](/help/platform/destinations/configure-the-marketo-destination.md)
    + [ファイルベースのクラウドストレージまたは電子メールマーケティングの宛先の設定](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [ソーシャルの宛先の設定](/help/platform/destinations/configure-a-social-destination.md)
+   + [LiveRamp の宛先を使用してアクティブ化](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Targetとカスタムパーソナライゼーション{#target}
       + [Adobe Targetを使用した次ヒットのパーソナライゼーション](/help/platform/destinations/target/next-hit-personalization.md)
       + [Adobe Targetの宛先の設定](/help/platform/destinations/target/configure-the-target-destination.md)
