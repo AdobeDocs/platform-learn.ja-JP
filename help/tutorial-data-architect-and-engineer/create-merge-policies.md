@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
 
 ExperienceEvent クラスには和集合スキーマがないことに注意してください。 時系列ベースなので、ExperienceEvent データは引き続きプロファイルに含まれますが、各イベントにはタイムスタンプと ID が含まれ、競合は問題になりません。
 
-デフォルトの結合ポリシーが気に入らない場合は、どうすればよいですか？ 競合が発生した場合、Luma が CRM システムを真実の源と判断した場合はどうなりますか？ それには、結合ポリシーを作成します。
+デフォルトの結合ポリシーが気に入らない場合は、どうすればよいですか？ 競合が発生した場合、Luma がロイヤリティーシステムを真実の源として使用する必要があると判断した場合はどうなりますか？ それには、結合ポリシーを作成します。
 
 ## UI での結合ポリシーの作成
 
