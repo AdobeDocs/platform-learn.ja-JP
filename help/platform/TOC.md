@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
+source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 44%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 44%
    + [バックグラウンド：Experience Platformを活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform の概要](/help/platform/intro-to-platform/overview.md)
    + [主な機能](/help/platform/intro-to-platform/key-capabilities.md)
-   + [アプリケーションとインテリジェントサービス](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+   + [プラットフォームベースのアプリケーション](/help/platform/intro-to-platform/native-applications.md)
    + [Experience Cloud・アプリケーションとの統合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主なユースケース](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本的なアーキテクチャ](/help/platform/intro-to-platform/basic-architecture.md)
