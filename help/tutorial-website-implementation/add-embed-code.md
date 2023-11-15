@@ -2,9 +2,9 @@
 title: 埋め込みコードの追加
 description: タグプロパティの埋め込みコードを取得し、Web サイトに実装する方法を説明します。 このレッスンは、「 Web サイトでのExperience Cloudの実装」チュートリアルの一部です。
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1056'
 ht-degree: 49%
 
 ---
@@ -17,10 +17,9 @@ ht-degree: 49%
 >
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意が必要な、いくつかの用語の変更がインターフェイスにロールアウトされました。
 >
-> * platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
-> * platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
+> * Platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * エッジ設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)**
-
 
 ## 学習内容
 
@@ -33,9 +32,9 @@ ht-degree: 49%
 
 ## 埋め込みコードをコピーする。
 
-埋め込みコードは `<script>` タグを使用します。 ライブラリを非同期で読み込むと、ブラウザーはページの読み込みを続行してタグライブラリを取得し、並行して実行します。 この場合、`<head>` に配置する埋め込みコードは 1 つだけです。( タグが同期的にデプロイされた場合は 2 つの埋め込みコードがあります。1 つは `<head>` そしてもう一つ君が前に置いた `</body>`) をクリックします。
+埋め込みコードは、 `<script>` タグを使用します。 ライブラリを非同期で読み込むと、ブラウザーはページの読み込みを続行してタグライブラリを取得し、並行して実行します。 この場合、`<head>` に配置する埋め込みコードは 1 つだけです。( タグが同期的にデプロイされた場合は 2 つの埋め込みコードがあります。1 つは `<head>` そしてもう一つ君が前に置いた `</body>`) をクリックします。
 
-プロパティの概要画面で、 **[!UICONTROL 環境]** 左側のナビゲーションで、環境ページに移動します。 開発環境、ステージング環境、および実稼動環境は、事前に作成されています。
+プロパティの概要画面で、「 **[!UICONTROL 環境]** 左側のナビゲーションで、環境ページに移動します。 開発環境、ステージング環境、および実稼動環境は、事前に作成されています。
 
 ![上部のナビゲーションで「環境」をクリックする](images/launch-environments.png)
 
@@ -61,7 +60,56 @@ ht-degree: 49%
 
 埋め込みコードは、プロパティを共有するすべての HTML ページの `<head>` 要素に実装する必要があります。1 つまたは複数のテンプレートファイルを使用して、 `<head>` サイト全体にわたってグローバルに追加できるので、タグの追加プロセスが簡単になります。
 
-まだダウンロードしていない場合は、 [サンプルの html ページ](https://www.enablementadobe.com/multi/web/basic-sample.html) （このリンクを右クリックし、「リンクに名前を付けて保存」をクリック）し、コードエディターで開きます。 エディターが必要な場合、[Brackets](https://brackets.io/)は、オープンソースの無料エディターです。
+まだの場合、サンプルの HTML ページコードをコピーして、コードエディターに貼り付けます。 エディターが必要な場合、[Brackets](https://brackets.io/)は、オープンソースの無料エディターです。
+
++++サンプル HTML ページコード
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+```
+
++++
 
 34 行目またはその周辺にある既存の埋め込みコードを、クリップボードのコードと置き換えてページを保存します。次に、Web ブラウザーでページを開きます。`file://` プロトコルを使用してページを読み込む場合は、コードエディターで、埋め込みコード URL の先頭に「https:」を付ける必要があります）。サンプルページの 33～36 行は次のようになります。
 
@@ -92,7 +140,7 @@ Web ブラウザーの開発者ツールを開き、「ネットワーク」タ�
 
 * **preconnect および dns-prefetch**：ページの読み込み時間を改善するには preconnect および dns-prefetch を使用します。参照：[/](https://w3c.github.io/resource-hints/)https://w3c.github.io/resource-hints/
 
-* **非同期 Target 実装用のスニペットを事前に非表示にする**:詳しくは、 Target レッスンを参照してください。ただし、非同期タグ埋め込みコードを使用して Target をデプロイする場合、コンテンツのちらつきを管理するには、タグ埋め込みコードの前に、ページに事前非表示のスニペットをハードコードする必要があります
+* **非同期 Target 実装用のスニペットを事前に非表示にする**：この点について詳しくは、 Target レッスンを参照してください。ただし、非同期タグ埋め込みコードを使用して Target をデプロイする場合は、コンテンツのちらつきを管理するために、タグ埋め込みコードの前に、ページに事前非表示スニペットをハードコードする必要があります
 
 これらのベストプラクティスについて、推奨順にまとめました。アカウント固有の詳細を示すプレースホルダーがいくつかあります。
 

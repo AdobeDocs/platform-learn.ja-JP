@@ -1,12 +1,12 @@
 ---
 title: タグ付き Web サイトへのExperience Cloudの実装
-description: Web サイトにタグを使用してExperience Cloudを実装することは、Web サイトにAdobe Experience Cloudソリューションを実装する方法を学びたいフロントエンド開発者やテクニカルマーケターにとって最適な出発点です。
+description: Web サイトにタグを使用してExperience Cloudを実装することは、Web サイトにAdobe Experience Cloudソリューションを実装する方法を学びたいフロントエンド開発者や技術マーケターにとって最適な出発点です。
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 44%
+source-wordcount: '897'
+ht-degree: 42%
 
 ---
 
@@ -18,7 +18,7 @@ _タグ付き Web サイトへのExperience Cloudの実装_ は、自社の Web 
 
 >[!INFO]
 >
->このチュートリアルでは、アプリケーション固有の拡張機能とライブラリ (Adobe Analytics用 AppMeasurement.js、Adobe Target用 at.js) を使用します。 Adobe Experience Platform Web SDK を実装する場合は、 [Web SDK を使用したAdobe Experience Cloudの実装](/help/tutorial-web-sdk/overview.md) チュートリアル
+>このチュートリアルでは、アプリケーション固有の拡張機能とライブラリ (Adobe Analyticsの場合はAppMeasurement.js、Adobe Targetの場合は at.js) を使用します。 Adobe Experience Platform Web SDK を実装する場合は、 [Web SDK を使用したAdobe Experience Cloudの実装](/help/tutorial-web-sdk/overview.md) チュートリアル
 
 
 このチュートリアルでは、以下の内容について学習します。
@@ -43,10 +43,9 @@ _タグ付き Web サイトへのExperience Cloudの実装_ は、自社の Web 
 >
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意が必要な、いくつかの用語の変更がインターフェイスにロールアウトされました。
 >
-> * platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
-> * platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
+> * Platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * エッジ設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)**
-
 
 >[!NOTE]
 >
@@ -66,7 +65,7 @@ _タグ付き Web サイトへのExperience Cloudの実装_ は、自社の Web 
 
 Adobe Experience Platformのタグ機能は、Adobeが提供する次世代型の Web サイトタグおよびモバイル SDK の管理機能です。 タグを使用すると、顧客体験の実現に必要なすべての分析、マーケティングおよび広告のソリューションをデプロイおよび管理するためのシンプルな手段を提供します。 タグに関しては、追加料金はかかりません。 Adobe Experience Cloud のお客様は、Launch を利用できます。
 
-Web サイトのタグを使用すると、デスクトップおよびモバイルサイトで使用される分析、マーケティング、広告の各ソリューションに関するすべての JavaScript を一元的に管理できます。 例えば、Adobe Analyticsをデプロイする場合、タグは AppMeasurement JavaScript ライブラリを管理し、変数を設定し、リクエストを実行します。
+Web サイトのタグを使用すると、デスクトップおよびモバイルサイトで使用される分析、マーケティング、広告の各ソリューションに関するすべての JavaScript を一元的に管理できます。 例えば、Adobe Analyticsをデプロイする場合、タグはAppMeasurementJavaScript ライブラリを管理し、変数を設定し、要求を実行します。
 
 カスタムコードを含む、コンテナのコンテンツが縮小されます。すべてがモジュラー式です。項目が不要な場合は、ライブラリに含まれません。その結果、高速でコンパクトな実装になります。
 
@@ -82,7 +81,57 @@ Web サイトのタグを使用すると、デスクトップおよびモバイ�
 
 1. 拡張機能にはブラウザー固有のものがあるため、[Chrome Web ブラウザー](https://www.google.com/chrome/)を使用してチュートリアルを完了することをお勧めします。
 1. [Adobe Experience Cloud デバッガー](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)拡張機能を Chrome ブラウザーに追加します。
-1. [サンプル HTML ページ](https://www.enablementadobe.com/multi/web/basic-sample.html)のダウンロード（このリンクを右クリックして「名前を付けて保存」をクリック）します。
+1. サンプルの HTML ページコードをコピーする
+
++++サンプル HTML ページコード
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+```
+
++++
+
 1. サンプルの HTML ページを変更できるテキストエディターを取得します。（エディターがない場合は、[Brackets](https://brackets.io/) を試すことをお勧めします）。
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)をブックマークします。
 
