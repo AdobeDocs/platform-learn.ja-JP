@@ -2,16 +2,20 @@
 title: ライフサイクルデータ
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 1%
+source-wordcount: '508'
+ht-degree: 2%
 
 ---
 
 # ライフサイクルデータ
 
 モバイルアプリでライフサイクルデータを収集する方法を説明します。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、モバイルアプリからの収集のライフサイクルデータを有効にします。 Adobe Experience Platform Edge Network 拡張機能は、このライフサイクルデータを Platform Edge Network に送信し、そこで、データストリーム設定に従って、他のアプリケーションやサービスに転送されます。 詳しくは、 [ライフサイクル拡張](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) （製品ドキュメント内）。
 
@@ -21,9 +25,9 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
 * Assurance SDK を読み込みました。
 
-   ```swift
-   import AEPAssurance
-   ```
+  ```swift
+  import AEPAssurance
+  ```
 
 * Assurance 拡張機能を登録しました ( [前のレッスン](install-sdks.md).
 
@@ -53,9 +57,9 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
 
 ## 実装の変更
 
-次に、 `AppDelegate.swift` ライフサイクルイベントを登録するには：
+次に、を更新できます。 `AppDelegate.swift` ライフサイクルイベントを登録するには：
 
-1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは `applicationWillEnterForeground:` delegate メソッド。 追加 `lifecycleStart:`
+1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは、 `applicationWillEnterForeground:` delegate メソッド。 追加 `lifecycleStart:`
 
    ```swift
    MobileCore.lifecycleStart(additionalContextData: nil)
@@ -75,8 +79,8 @@ Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、
 
 1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
 1. アプリを起動します。
-1. アプリをバックグラウンドに送信します。 確認 `LifecyclePause`.
-1. アプリをフォアグラウンドに移動します。 確認 `LifecycleResume`.
+1. アプリをバックグラウンドに送信します。 次を確認 `LifecyclePause`.
+1. アプリをフォアグラウンドに移動します。 次を確認 `LifecycleResume`.
    ![ライフサイクルを検証](assets/mobile-lifecycle-lifecycle-assurance.png)
 
 

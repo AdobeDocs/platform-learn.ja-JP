@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '899'
 ht-degree: 7%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 7%
 # Adobe Journey Optimizerプッシュメッセージ
 
 Platform Mobile SDK とAdobe Journey Optimizerを使用して、モバイルアプリ用のプッシュメッセージを作成する方法について説明します。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞ったオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Adobe Journey Optimizerのプッシュ通知データフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -39,8 +43,8 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 このレッスンでは、次の操作を実行します。
 
 * アプリ ID をApple Push Notification service(APN) に登録します。
-* の作成 **[!UICONTROL アプリサーフェス]** AJO 内で
-* の更新 **[!UICONTROL スキーマ]** プッシュメッセージフィールドを含めるには
+* の作成 **[!UICONTROL アプリサーフェス]** AJO 内で使用できます。
+* を更新します。 **[!UICONTROL スキーマ]** プッシュメッセージフィールドを含めるには
 * をインストールして設定します。 **[!UICONTROL Adobe Journey Optimizer]** タグ拡張。
 * AJO タグ拡張を含めるようにアプリを更新します。
 * アシュランスで設定を検証します。
@@ -63,7 +67,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    ![新しいキーを設定](assets/mobile-push-apple-dev-config-key.png)
 1. 設定を確認し、「 」を選択します。 **[!UICONTROL 登録]**.
 1. をダウンロードします。 `.p8` 秘密鍵。 これは、App Surface 設定で使用されます。
-1. をメモして **[!UICONTROL キー ID]**. これは、App Surface 設定で使用されます。
+1. 次の項目をメモします。 **[!UICONTROL キー ID]**. これは、App Surface 設定で使用されます。
 
 追加のドキュメントは、 [ここにある](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
@@ -74,11 +78,11 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 ## データ収集にアプリのプッシュ資格情報を追加
 
-1. 次の [データ収集インターフェイス](https://experience.adobe.com/data-collection/)をクリックし、左側のパネルで「 App Surfaces 」タブを選択します。
-1. 選択 **[!UICONTROL アプリのサーフェスを作成]** 設定を作成します。
+1. 次から： [データ収集インターフェイス](https://experience.adobe.com/data-collection/)をクリックし、左側のパネルで「 App Surfaces 」タブを選択します。
+1. 選択 **[!UICONTROL アプリのサーフェスを作成]** をクリックして設定を作成します。
    ![アプリのサーフェスホーム](assets/mobile-push-app-surface.png)
-1. を入力します。 **[!UICONTROL 名前]** （例： ） `Luma App Tutorial`  .
-1. 「モバイルアプリケーション設定」から、 **[!UICONTROL Apple iOS]**.
+1. を入力します。 **[!UICONTROL 名前]** 設定の場合、例： `Luma App Tutorial`  .
+1. 「モバイルアプリケーション設定」で、「 **[!UICONTROL Apple iOS]**.
 1. 「アプリ ID（iOS バンドル ID）」フィールドにモバイルアプリのバンドル ID を入力します。Luma アプリと共にフォローしている場合、その値は `com.adobe.luma.tutorial`.
 1. をオンにします。 **[!UICONTROL プッシュ認証情報]** ボタンをクリックして、資格情報を追加します。
 1. をドラッグ&amp;ドロップします。 `.p8` **Appleプッシュ通知認証キー** ファイル。
@@ -92,15 +96,15 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. に移動します。 [!UICONTROL タグ] > [!UICONTROL 拡張機能] > [!UICONTROL カタログ]をクリックし、 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
 1. 拡張機能のインストール.
    ![ajo 拡張機能をインストールする](assets/mobile-push-tags-install.png)
-1. 選択 `CJM Push Tracking Experience Event Dataset` Adobe Experience Platformデータセット
+1. 選択 `CJM Push Tracking Experience Event Dataset` Adobe Experience Platformデータセット。
    ![AJO 拡張機能の設定](assets/mobile-push-tags-ajo.png)
-1. 選択 **[!UICONTROL ライブラリに保存してビルド]**.
+1. 選択 **[!UICONTROL ライブラリに保存してビルドする]**.
 
 >[!NOTE]
 >「CJM プッシュトラッキングエクスペリエンスイベントデータセット」がオプションとして表示されない場合は、カスタマーケアにお問い合わせください。
 >
 
-## アプリにAdobe Journey Optimizerを実装
+## アプリにAdobe Journey Optimizerを実装する
 
 前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、メッセージング SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
 
@@ -112,10 +116,10 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
    `pod 'AEPMessaging', '~>1'`
 1. ターミナルを開き、 `Podfile`.
-1. コマンドを実行して SDK をインストールします `pod install`.
+1. コマンドを実行して SDK をインストールします。 `pod install`.
    ![同意を検証](assets/mobile-push-terminal-install.png)
 1. Xcode を開き、に移動します。 `AppDelegate.swift`.
-1. インポートのリストに次を追加します。
+1. インポートのリストに次の内容を追加します。
 
    `import AEPMessaging`
 1. 追加 `Messaging.self` を登録する拡張機能の配列に追加します。
@@ -141,7 +145,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. 「**[!UICONTROL 保存]**」を選択します。
    ![保存](assets/mobile-push-validate-save.png)
 1. 選択 **[!UICONTROL プッシュデバッグ]** をクリックします。
-1. デバイスを **[!UICONTROL クライアントリスト]**.
+1. 次の場所からデバイスを選択します。 **[!UICONTROL クライアントリスト]**.
 1. エラーが表示されていないことを確認します。
    ![validate](assets/mobile-push-validate-confirm.png)
 1. 下にスクロールして、「 」を選択します。 **[!UICONTROL テストプッシュ通知の送信]**.

@@ -2,9 +2,9 @@
 title: プロファイル
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 2%
 # プロファイル
 
 モバイルアプリでプロファイルデータを収集する方法を説明します。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 Profile 拡張機能を使用して、ユーザーに関する属性をクライアントに保存できます。 この情報を後で使用して、オンラインまたはオフラインのシナリオでメッセージのターゲティングやパーソナライズをおこなうことができます。最適なパフォーマンスを得るために、サーバーに接続する必要はありません。 Profile 拡張機能は、クライアントサイド操作プロファイル (CSOP) を管理し、API への対応、ユーザープロファイル属性の更新、ユーザープロファイル属性の他のシステムとの生成イベントとしての共有をおこなう方法を提供します。
 
@@ -27,9 +31,9 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
 * プロファイル SDK を読み込みました。
 
-   ```swift
-   import AEPUserProfile
-   ```
+  ```swift
+  import AEPUserProfile
+  ```
 
 ## 学習内容
 
@@ -41,7 +45,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ## 設定と更新
 
-ターゲティングやパーソナライゼーションでは、ユーザーが以前にアプリで購入したかどうかをすばやく把握すると便利です。 Luma アプリで設定しましょう。
+ターゲティングやパーソナライゼーションでは、ユーザーが以前にアプリで購入したかどうかをすばやく把握すると便利です。 Luma アプリでセットアップしましょう。
 
 1. `Cart.swift` に移動します。
 
@@ -53,7 +57,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-また、パーソナライゼーションチームは、ユーザーの忠誠度に基づいてターゲットを設定することもできます。 Luma アプリで設定しましょう。
+また、パーソナライゼーションチームは、ユーザーの忠誠度に基づいてターゲットを設定することもできます。 Luma アプリでセットアップしましょう。
 
 1. `Account.swift` に移動します。
 
@@ -65,7 +69,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-追加 `updateUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+その他 `updateUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## 取得
 
@@ -78,16 +82,16 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-追加 `getUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+その他 `getUserAttributes` ドキュメントを参照してください [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## アシュランスで検証
 
 1. 以下を確認します。 [設定手順](assurance.md) 」セクションに入力します。
 1. AEM Desktop App をインストールします。
 1. Assurance で生成された URL を使用して、アプリを起動します。
-1. 「アカウント」アイコンを選択し、「ログイン」を選択します。 注意：資格情報を指定していません。
-1. ログインメニューを閉じ、アカウントアイコンを再度選択します。 アカウントの詳細画面が表示されます。この画面で `loyaltyLevel` が設定されている。
-1. 次のように表示されます。 **[!UICONTROL UserProfileUpdate]** イベントを更新した `profileMap` の値です。
+1. 「アカウント」アイコンを選択し、「ログイン」を選択します。 注意：資格情報を入力していません。
+1. ログインメニューを閉じ、アカウントアイコンを再度選択します。 アカウントの詳細画面が表示されます。この画面で、 `loyaltyLevel` が設定されている。
+1. 次のように表示されます。 **[!UICONTROL UserProfileUpdate]** イベントを更新し、 `profileMap` の値です。
    ![プロファイルを検証](assets/mobile-profile-validate.png)
 
 次へ： **[データをAdobe Analyticsにマッピング](analytics.md)**

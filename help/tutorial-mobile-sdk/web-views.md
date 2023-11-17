@@ -3,9 +3,9 @@ title: WebViews を処理
 description: モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # WebViews を処理
 
 モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 ## 前提条件
 
@@ -76,13 +80,13 @@ if var urlString = url?.absoluteString {
 
 ## 検証
 
-次の [設定手順](assurance.md) セクションを開き、シミュレーターまたはデバイスを Assurance に接続し、WebView を読み込んで、 `Edge Identity Response URL Variables` イベント `com.adobe.griffon.mobile` ベンダー。
+レビュー後 [設定手順](assurance.md) セクションを開き、シミュレーターまたはデバイスを Assurance に接続し、WebView を読み込んで、 `Edge Identity Response URL Variables` イベント `com.adobe.griffon.mobile` ベンダー。
 
 WebView を読み込むには、Luma アプリのホーム画面に移動し、「アカウント」アイコンを選択し、フッターの「利用条件」を選択します。
 
 WebView の読み込み後、イベントを選択し、 `urlvariables` フィールド `ACPExtensionEventData` オブジェクトの URL に次のパラメーターが存在することを確認します。 `adobe_mc`, `mcmid`、および `mcorgid`.
 
-![webview 検証](assets/mobile-webview-validation.png)
+![Web ビュー検証](assets/mobile-webview-validation.png)
 
 サンプル `urvariables` フィールドは次のように表示されます。
 

@@ -3,7 +3,7 @@ title: イベントデータの追跡
 description: モバイルアプリでイベントデータを追跡する方法を説明します。
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 3%
@@ -367,7 +367,7 @@ The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edg
 
 >[!TIP]
 >
->以下を確認します。 [アプリの完了](https://git.corp.adobe.com/rmaur/Luma) その他の例を参照してください。
+>以下を確認します。 [アプリの完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) その他の例を参照してください。
 
 
 ## Analytics と Platform へのイベントの送信

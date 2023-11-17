@@ -2,9 +2,9 @@
 title: イベント
 description: モバイルアプリでイベントデータを収集する方法を説明します。
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # イベント
 
 モバイルアプリでイベントを追跡する方法を説明します。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 Edge Network 拡張機能は、Experience Events を Platform Edge Network に送信する API を提供します。 エクスペリエンスイベントは、XDM ExperienceEvent スキーマ定義に準拠したデータを含むオブジェクトです。 より簡単に言えば、モバイルアプリでのユーザーの行動を取り込みます。 Platform Edge Network がデータを受信すると、Adobe AnalyticsやExperience Platformなど、データストリームで設定されたアプリケーションやサービスにデータを転送できます。 詳しくは、 [エクスペリエンスイベント](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) （製品ドキュメント内）。
 
@@ -73,8 +77,8 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
    ]
    ```
 
-   * eventType:発生したイベントを記述します。 [既知の値](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 可能な場合は。
-   * commerce.productViews.value:イベントの数値を指定します。 ブール値 (Adobe Analyticsの場合は「カウンター」) の場合、値は常に 1 になります。 数値イベントまたは通貨イベントの場合、値は 1 より大きい値になります。
+   * eventType：発生したイベントを表します。 [既知の値](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 可能な場合は。
+   * commerce.productViews.value：イベントの数値を指定します。 ブール値 (Adobe Analyticsの場合は「カウンター」) の場合、値は常に 1 になります。 数値イベントまたは通貨イベントの場合、値は 1 より大きい値になります。
 
 1. スキーマ内で、イベントに関連付けられている追加データを特定します。 この例では、 `productListItems` コマース関連のイベントで使用される標準のフィールドセットです。
    ![製品リスト項目スキーマ](assets/mobile-datacollection-prodListItems-schema.png)
@@ -197,7 +201,7 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
            Edge.sendEvent(experienceEvent: experienceEvent)
    ```
 
-1. アプリの各画面で、を更新して繰り返します。 `stateName` 行く時に
+1. アプリの各画面で、を更新して繰り返します。 `stateName` 君が行く時
 
 
 
@@ -218,16 +222,16 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
 * 製品#2 — 水瓶。
    * $10.00 x3
    * SKU:9841
-* 注文合計：$79.99
-* 一意の注文 ID :298234720
-* 支払いタイプ：Visa Credit Card
-* 一意の支払トランザクション ID :847361
+* 注文合計： 79.99 ドル
+* 一意の注文 ID: 298234720
+* 支払いタイプ：ビザクレジットカード
+* 一意の支払トランザクション ID: 847361
 
 #### スキーマ
 
 使用する関連するスキーマフィールドを次に示します。
 
-* eventType:&quot;commerce.purchases&quot;
+* eventType: &quot;commerce.purchases&quot;
 * commerce.purchases
 * commerce.order
 * productsListItems
@@ -316,21 +320,21 @@ Edge.sendEvent(experienceEvent: experienceEvent)
 Luma サンプルアプリケーションへのデータ収集の追加を開始するには、すべてのツールが必要です。 以下に、従うことができる仮の追跡要件のリストを示します。
 
 * 各画面ビューを追跡します。
-   * スキーマフィールド：screenType, screenName, screenView
+   * スキーマフィールド： screenType、screenName、screenView
 * 非コマースアクションを追跡します。
-   * スキーマフィールド：appInteraction.name, appAction
+   * スキーマフィールド： appInteraction.name、appAction
 * コマースアクション：
-   * 製品ページ：productViews
-   * 買い物かごに追加：productListAdds
-   * 買い物かごから削除：productListRemovals
-   * チェックアウトを開始：checkouts
-   * 買い物かごを表示：productListViews
-   * ウィッシュリストに追加：saveForLaters
+   * 製品ページ： productViews
+   * 買い物かごに追加： productListAdds
+   * 買い物かごから削除： productListRemovals
+   * チェックアウトを開始：チェックアウト
+   * 買い物かごの表示： productListViews
+   * ウィッシュリストに追加： saveForLaters
    * 購入：購入、注文
 
 >[!TIP]
 >
->以下を確認します。 [完全に実装されたアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) その他の例
+>以下を確認します。 [完全に実装されたアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) その他の例を参照してください。
 
 ### 検証
 

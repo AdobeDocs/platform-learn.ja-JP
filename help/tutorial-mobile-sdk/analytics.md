@@ -3,10 +3,10 @@ title: Analytics マッピング
 description: モバイルアプリでAdobe Analyticsのデータを収集する方法を説明します。
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 2%
+source-wordcount: '609'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,12 @@ ht-degree: 2%
 
 モバイルデータをAdobe Analyticsにマッピングする方法を説明します。
 
-この [イベント](events.md) 以前のレッスンで収集し、Platform Edge Network に送信したデータは、Adobe Analyticsを含む、データストリームで設定されたサービスに転送されます。 データをレポートスイート内の正しい変数にマッピングするだけです。
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
+
+
+The [イベント](events.md) 以前のレッスンで収集し、Platform Edge Network に送信したデータは、Adobe Analyticsを含む、データストリームで設定されたサービスに転送されます。 データをレポートスイート内の正しい変数にマッピングするだけです。
 
 ## 前提条件
 
@@ -64,11 +69,11 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 >[!NOTE]
 >
->現在 `productListItems[N].SKU` は、自動マッピングで無視されます。
+>現在 `productListItems[N].SKU` は、自動マッピングでは無視されます。
 
 ### 例#2 - scAdd
 
-よく見ると、すべてのイベントには 2 つのフィールドがあります `value` （必須）および `id` （オプション）。 この `value` フィールドを使用して、イベント数を増分します。 この `id` フィールドはシリアル化に使用されます。
+よく見ると、すべてのイベントには 2 つのフィールドがあります `value` （必須）および `id` （オプション）。 The `value` フィールドを使用して、イベント数を増分します。 The `id` フィールドはシリアル化に使用されます。
 
 このオブジェクト：
 
@@ -105,7 +110,7 @@ s.events = "scAdd:321435"
 
 ## アシュランスで検証
 
-の使用 [アシュランス QA ツール](assurance.md) ExperienceEvent の送信中で、XDM データが正しく、Analytics のマッピングが期待どおりにおこなわれていることを確認できます。 以下に例を示します。
+の使用 [アシュランス QA ツール](assurance.md) ExperienceEvent の送信中で、XDM データが正しく、Analytics のマッピングが期待どおりに実行されていることを確認できます。 以下に例を示します。
 
 1. productListAdds イベントを送信します。
 
@@ -159,14 +164,14 @@ s.events = "scAdd:321435"
 
 Analytics マッピングでは、次の点に注意してください。
 
-* 「イベント」が `commerce.productListAdds`.
+* 「イベント」に、 `commerce.productListAdds`.
 * &#39;pl&#39; （products 変数）は、 `productListItems`.
 * このイベントには、すべてのコンテキストデータを含む他の興味深い情報が含まれています。
 
 
 ## コンテキストデータを使用したマッピング
 
-Analytics に転送された XDM データは、 [コンテキストデータ](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en) 標準フィールドとカスタムフィールドの両方を含む
+Analytics に転送された XDM データは、 [コンテキストデータ](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en) 標準フィールドとカスタムフィールドの両方を含む。
 
 コンテキストデータキーは、次の構文に従って生成されます。
 
@@ -207,7 +212,7 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 >[!TIP]
 >
->以前のモバイルアプリの実装とは異なり、ページ/画面ビューと他のイベントとは区別されません。 代わりに、 **[!UICONTROL ページビュー]** 指標を設定 **[!UICONTROL ページ名]** ディメンションが含まれています。 カスタム `screenName` チュートリアルのフィールドでは、次のようにマッピングすることを強くお勧めします。 **[!UICONTROL ページ名]** 」と入力します。
+>以前のモバイルアプリの実装とは異なり、ページ/画面ビューと他のイベントとは区別されません。 代わりに、 **[!UICONTROL ページビュー]** 指標を設定して **[!UICONTROL ページ名]** ディメンションが含まれています。 カスタム `screenName` チュートリアルのフィールドでは、次のようにマッピングすることを強くお勧めします。 **[!UICONTROL ページ名]** 」と表示されます。
 
 
 次へ： **[Experience Platform](platform.md)**

@@ -3,9 +3,9 @@ title: ID
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 3%
 
 ---
@@ -14,9 +14,13 @@ ht-degree: 3%
 
 モバイルアプリで ID データを収集する方法を説明します。
 
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
+
 Adobe Experience Platform ID サービスを使用すると、デバイスやシステム間で ID を結び付け、顧客とその行動をより良く把握でき、効果的な個人のデジタルエクスペリエンスをリアルタイムで提供できます。 ID フィールドと名前空間は、異なるデータソースを結合して、360 度のリアルタイム顧客プロファイルを構築するための接着剤です。
 
-詳しくは、 [ID 拡張](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) そして [id サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) 」を参照してください。
+詳しくは、 [ID 拡張機能](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) そして [id サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) 」を参照してください。
 
 ## 前提条件
 
@@ -47,13 +51,13 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
    ```
 
-1. を `IdentityItem` から `IdentityMap`
+1. 次を追加： `IdentityItem` から `IdentityMap`
 
    ```swift
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    ```
 
-1. 呼び出し `updateIdentities` を使用して、データを Platform Edge ネットワークに送信します。
+1. 通話 `updateIdentities` を使用して、データを Platform Edge ネットワークに送信します。
 
    ```swift
    Identity.updateIdentities(with: identityMap)
@@ -68,9 +72,9 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) id が関連するコンテキストのインジケーターとして機能する 例えば、「name@email.com」の値を電子メールアドレスとして、または「443522」を数値 CRM ID として区別します。
 
-1. 「データ収集」インターフェイスで、「 **[!UICONTROL ID]** をクリックします。
+1. データ収集インターフェイスで、「 」を選択します。 **[!UICONTROL ID]** をクリックします。
 1. 「**[!UICONTROL ID 名前空間を作成]**」を選択します。
-1. 次を提供： **[!UICONTROL 表示名]** / `Luma CRM ID` および **[!UICONTROL ID シンボル]** 値 `lumaCrmId`.
+1. 次を提供： **[!UICONTROL 表示名]** / `Luma CRM ID` および **[!UICONTROL ID シンボル]** の値 `lumaCrmId`.
 1. 選択 **[!UICONTROL クロスデバイス ID]**.
 1. 「**[!UICONTROL 作成]**」を選択します。
 
@@ -122,7 +126,7 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 ## アシュランスで検証
 
 1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
-1. アプリで、右下の「アカウント」アイコンを選択します。
+1. デスクトップアプリケーションで、右下の「アカウント」アイコンを選択します。
 
    ![luma アプリアカウント](assets/mobile-identity-login.png)
 1. を選択します。 **ログイン** 」ボタンをクリックします。

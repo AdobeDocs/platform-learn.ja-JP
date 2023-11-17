@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '591'
 ht-degree: 2%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 2%
 # Adobe Experience Platform Mobile SDK のインストール
 
 モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 ## 前提条件
 
@@ -85,11 +89,11 @@ pod 'AEPSignal', '~>3'
 
 ## CocoaPods の作成
 
-CocoaPods を構築するには、を開きます。 `Luma.xcworkspace`を選択し、 **製品**&#x200B;に続いて **ビルドフォルダをクリーンアップ**.
+CocoaPods を構築するには、を開きます。 `Luma.xcworkspace`をクリックし、次を選択します。 **製品**&#x200B;に続いて **ビルドフォルダをクリーンアップ**.
 
 >[!NOTE]
 >
-> 場合によっては、 **アクティブなアーキテクチャのみを構築** から **いいえ**. これをおこなうには、プロジェクトナビゲーターから Pods プロジェクトを選択し、「 **ビルド設定**、および **アクティブなアーキテクチャの構築** から **いいえ**.
+> 次の設定が必要な場合は、 **アクティブなアーキテクチャのみを構築** から **いいえ**. これをおこなうには、プロジェクトナビゲーターから Pods プロジェクトを選択し、「 **ビルド設定**&#x200B;をクリックし、 **アクティブなアーキテクチャの構築** から **いいえ**.
 
 これで、プロジェクトを構築して実行できます。
 
@@ -122,7 +126,7 @@ import AEPServices
 
 ## AppDelegate を更新
 
-内 `AppDelegate.swift` ファイルで、次のコードを `didFinishLaunchingWithOptions`. currentAppId を、のタグから取得した開発環境ファイル ID 値に置き換えます。 [前のレッスン](configure-tags.md).
+Adobe Analytics の `AppDelegate.swift` ファイルで、次のコードを `didFinishLaunchingWithOptions`. currentAppId を、のタグから取得した開発環境ファイル ID 値に置き換えます。 [前のレッスン](configure-tags.md).
 
 ```swift
 let currentAppId = "b5cbd1a1220e/bae66382cce8/launch-88492c6dcb6e-development"
@@ -146,6 +150,7 @@ MobileCore.registerExtensions(extensions, {
 
 >[!IMPORTANT]
 >実稼動アプリケーションでは、現在の環境 (dev/stag/prod) に基づいて AppId を切り替える必要があります。
+>
 
 次へ： **[アシュランスの設定](assurance.md)**
 

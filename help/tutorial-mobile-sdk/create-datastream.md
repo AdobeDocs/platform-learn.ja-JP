@@ -3,9 +3,9 @@ title: データストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '426'
 ht-degree: 8%
 
 ---
@@ -14,11 +14,15 @@ ht-degree: 8%
 
 データストリームを作成する方法については、Experience Platformを参照してください。
 
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
+
 データストリームは、Platform Edge ネットワーク上のサーバー側の設定です。  データストリームは、Platform Edge ネットワークへの受信データが、Adobe Experience Cloudのアプリケーションおよびサービスに適切にルーティングされるようにします。 詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja) またはこの [ビデオ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ja).
 
 ## 前提条件
 
-データストリームを作成するには、データ収集インターフェイス ( 以前の [!UICONTROL 起動]を参照 )、 [!UICONTROL Experience Platform] > [!UICONTROL データ収集] > **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームの表示]**.
+データストリームを作成するには、データ収集インターフェイス ( 旧称： [!UICONTROL Launch]) を使用し、 [!UICONTROL Experience Platform] > [!UICONTROL データ収集] > **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームの表示]**.
 
 ## 学習内容
 
@@ -30,7 +34,7 @@ ht-degree: 8%
 
 ## データストリームの作成
 
-データストリームは [!UICONTROL データ収集] インターフェイス [!UICONTROL Datastream] 設定ツールを使用します。 データストリームを作成する手順は、次のとおりです。
+データストリームは [!UICONTROL データ収集] を使用するインターフェイス [!UICONTROL Datastream] 設定ツールを使用します。 データストリームを作成する手順は、次のとおりです。
 
 1. 正しい Platform サンドボックス内にあることを確認します。
 1. **[!UICONTROL 新しいデータストリーム]**&#x200B;を選択します。
@@ -41,7 +45,7 @@ ht-degree: 8%
 1. 前のレッスンで作成したスキーマを選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![新規データストリーム](assets/mobile-datastream-name.png)
+   ![新しいデータストリーム](assets/mobile-datastream-name.png)
 
 
 ## サービスを追加
@@ -53,7 +57,7 @@ ht-degree: 8%
 1. 有効にする **[!UICONTROL Adobe Audience Manager]** （オプション）。
 
 1. 有効にする **[!UICONTROL Adobe Experience Platform]** および **[!UICONTROL データセット]** （オプション）。
-   * データセットがまだ作成されていない場合は、の手順に従ってください [ここ](platform.md).
+   * データセットがまだ作成されていない場合は、の手順に従ってください。 [ここ](platform.md).
 
 1. 最終的な設定は次のようになります。
    ![datastream の設定](assets/mobile-datastream-settings.png)
@@ -61,7 +65,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->組織が使用する各サービスを有効にすると、モバイルアプリで収集されたデータをどこでも使用できるようになります。 データストリーム設定の詳細については、ドキュメントを参照してください [ここ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>組織が使用する各サービスを有効にすると、モバイルアプリで収集されたデータをどこでも使用できるようになります。 データストリーム設定の詳細については、ドキュメントを参照してください。 [ここ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
 お客様の Web サイトに Platform Mobile SDK を実装する場合、3 つのデータストリームを作成して、3 つのタグ環境（開発、ステージング、実稼動）にマッピングする必要があります。 Adobe Real-time Customer Data PlatformやAdobe Journey Optimizerなどのプラットフォームベースのアプリケーションで Platform Mobile SDK を使用している場合は、適切な Platform サンドボックスにこれらのデータストリームを作成する必要があります。
 

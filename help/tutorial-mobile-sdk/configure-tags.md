@@ -1,18 +1,22 @@
 ---
 title: タグプロパティの設定
-description: タグプロパティを [!UICONTROL データ収集] インターフェイス。
+description: タグのプロパティを設定する方法については、 [!UICONTROL データ収集] インターフェイス。
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 12%
+source-wordcount: '733'
+ht-degree: 11%
 
 ---
 
 # タグプロパティの設定
 
-タグプロパティを [!UICONTROL データ収集] インターフェイス。
+タグのプロパティを設定する方法については、 [!UICONTROL データ収集] インターフェイス。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ管理機能です。タグを使用すると、関連する顧客体験を強化するために必要なすべての分析、マーケティング、広告などのタグを、簡単にデプロイして管理できます。詳細情報： [タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) （製品ドキュメント内）。
 
@@ -22,7 +26,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 >[!NOTE]
 >
-> platform launch（クライアント側）が [タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)
+> Platform launch（クライアント側）が [タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)
 
 ## 学習内容
 
@@ -34,10 +38,10 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 ## 初期設定
 
 1. 新しいモバイルタグプロパティを作成します。
-   1. 内 [データ収集インターフェイス](https://experience.adobe.com/data-collection/){target="_blank"}を選択します。 **[!UICONTROL タグ]** 左のナビゲーション
+   1. Adobe Analytics の [データ収集インターフェイス](https://experience.adobe.com/data-collection/){target="_blank"}を選択します。 **[!UICONTROL タグ]** 左のナビゲーションで
    1. 選択 **[!UICONTROL 新しいプロパティ]**
-      ![タグプロパティの作成](assets/mobile-tags-new-property.png).
-   1. の **[!UICONTROL 名前]**&#x200B;を入力して、 `Mobile SDK Course`.
+      ![タグプロパティを作成する](assets/mobile-tags-new-property.png).
+   1. の **[!UICONTROL 名前]**，と入力します。 `Mobile SDK Course`.
    1. の **[!UICONTROL Platform]**&#x200B;を選択します。 **[!UICONTROL モバイル]**.
    1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -54,9 +58,9 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
    1. に移動します。 **[!UICONTROL 公開フロー]** をクリックします。
    1. 選択 **[!UICONTROL ライブラリを追加]**.
 
-      ![ライブラリを追加を選択](assets/mobile-tags-create-library.png)
+      ![「ライブラリを追加」を選択します。](assets/mobile-tags-create-library.png)
 
-   1. の **[!UICONTROL 名前]**&#x200B;を入力して、 `Initial Build`.
+   1. の **[!UICONTROL 名前]**，と入力します。 `Initial Build`.
    1. の **[!UICONTROL 環境]**&#x200B;を選択します。 **[!UICONTROL 開発]**.
    1. 選択  **[!UICONTROL 変更されたリソースをすべて追加]**.
    1. 選択 **[!UICONTROL 開発用に保存およびビルド]**.
@@ -73,23 +77,23 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
    ![初期設定](assets/mobile-tags-starting.png)
 
-1. 以下を使用： [!UICONTROL 検索] 次の拡張機能をインストールする機能。 これらの拡張機能のどちらにも設定は必要ありません。
+1. 以下を使用します。 [!UICONTROL 検索] 次の拡張機能をインストールする機能。 これらの拡張機能のどちらにも設定は必要ありません。
    * ID
    * AEP Assurance
 
 ## 拡張機能の設定
 
-1. のインストール **同意** 拡張子。
+1. をインストールします。 **同意** 拡張子。
 
    このチュートリアルの目的で、 **[!UICONTROL 保留中]**. の同意拡張機能について詳しくは、 [ドキュメント](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
 
    ![同意設定](assets/mobile-tags-extension-consent.png)
 
-1. のインストール **Adobe Experience Platform Edge Network** 拡張子。
+1. をインストールします。 **Adobe Experience Platform Edge Network** 拡張子。
 
-   内 **[!UICONTROL Edge 設定]** ドロップダウンから、 [前の手順](create-datastream.md).
+   Adobe Analytics の **[!UICONTROL Edge 設定]** ドロップダウンから、 [前の手順](create-datastream.md).
 
-1. 選択 **[!UICONTROL ライブラリに保存してビルド]**.
+1. 選択 **[!UICONTROL ライブラリに保存してビルドする]**.
 
    ![エッジネットワーク設定](assets/mobile-tags-extension-edge.png)
 
@@ -112,9 +116,9 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
    追加情報を見つけることができます [ここ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-   * **[!UICONTROL 環境ファイル ID]**:この一意の ID は開発環境を指します。この値をメモしておきます。 実稼動/ステージング/開発には、すべて異なる ID 値が設定されます。
+   * **[!UICONTROL 環境ファイル ID]**：この一意の ID は開発環境を指します。この値をメモしておきます。 実稼動/ステージング/開発には、すべて異なる ID 値が割り当てられます。
    * **[!UICONTROL ポッドファイル]**:CocoaPods は、SDK のバージョンとダウンロードの管理に使用されます。 詳しくは、 [ドキュメント](https://cocoapods.org/).
-   * **[!UICONTROL 初期化コード]**:このコードブロックは、必要な SDK を読み込んで、起動時に拡張機能を登録する方法を示します。
+   * **[!UICONTROL 初期化コード]**：このコードブロックは、必要な SDK を読み込んで、起動時に拡張機能を登録する方法を示します。
 
 >[!NOTE]
 >インストール手順は、最初の段階と見なされ、最終的なドキュメントではありません。 最新の SDK バージョンおよびコードサンプルは、公式の [ドキュメント](https://developer.adobe.com/client-sdks/documentation/).

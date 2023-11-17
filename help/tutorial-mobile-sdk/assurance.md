@@ -3,9 +3,9 @@ title: アシュランスの設定
 description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '603'
 ht-degree: 4%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 4%
 # Assurance
 
 モバイルアプリでAdobe Experience Platform Assurance を設定する方法を説明します。
+
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 アシュランス（正式には Project Griffon と呼ばれます）は、データ収集やモバイルアプリでのエクスペリエンス提供の方法を調査、配達確認、シミュレーション、検証するのに役立つように設計されています。
 
@@ -51,7 +55,7 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 }
 ```
 
-このチュートリアルで提供されるサンプル Luma は、iOS 12.0 を使用しています。iOS 13 以降を使用して独自のシーンベースのアプリケーションに従う場合は、 `UISceneDelegate's scene(_:openURLContexts:)` メソッドを次に示します。
+このチュートリアルで提供されているサンプル Luma は、iOS 12.0 を使用しています。iOS 13 以降を使用して独自のシーンベースのアプリケーションと共にフォローする場合は、 `UISceneDelegate's scene(_:openURLContexts:)` メソッドを次に示します。
 
 ```swift
 func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
@@ -91,9 +95,9 @@ iOSでの URL スキームの詳細については、 [Appleドキュメント](
    ![アシュランスピンを入力](assets/mobile-assurance-enter-pin.png)
 1. 接続に成功した場合は、アシュランス Web UI にイベントが表示され、アプリに浮動保証アイコンが表示されます。
    * アシュランスアイコンフローティング。
-     ![保証モーダル](assets/mobile-assurance-modal.png)
+     ![アシュランスモーダル](assets/mobile-assurance-modal.png)
    * Web UI で取得されるExperience Cloudイベント。
-     ![保証イベント](assets/mobile-assurance-events.png)
+     ![アシュランスイベント](assets/mobile-assurance-events.png)
 
 問題が発生した場合は、 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja){target="_blank"}.
 

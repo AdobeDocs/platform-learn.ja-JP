@@ -3,9 +3,9 @@ title: 同意
 description: モバイルアプリに同意を実装する方法を説明します。
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '391'
 ht-degree: 6%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 6%
 
 モバイルアプリに同意を実装する方法を説明します。
 
-Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience Platform Mobile SDK と Edge Network 拡張機能を使用する場合に、モバイルアプリから同意設定を収集できます。 詳しくは、 [同意拡張](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)（ドキュメント内）
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
+
+Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience Platform Mobile SDK と Edge Network 拡張機能を使用する際に、モバイルアプリから同意設定を収集できます。 詳しくは、 [同意拡張](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)（ドキュメント内）
 
 ## 前提条件
 
@@ -32,7 +36,7 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
 
 最初からチュートリアルに従った場合は、 **[!UICONTROL デフォルトの同意レベル]** を「保留中」に設定します。 データの収集を開始するには、ユーザーから同意を得る必要があります。 このチュートリアルでは、地域の同意のベストプラクティスを参照する実際のアプリで、アラートを使用して単に尋ねることで同意を得ます。
 
-1. ユーザーに 1 回だけ問い合わせたい場合。 これを管理する簡単な方法の 1 つは、 `UserDefaults`.
+1. ユーザーに 1 回だけ問い合わせたい場合。 を簡単に管理するには、 `UserDefaults`.
 1. `Home.swift` に移動します。
 1. `viewDidLoad()` に次のコードを追加します。
 

@@ -1,23 +1,27 @@
 ---
-title: Adobe Experience Platformへのデータ送信
+title: Adobe Experience Platformにデータを送信
 description: Adobe Experience Platformにデータを送信する方法を説明します。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '862'
 ht-degree: 11%
 
 ---
 
-# Adobe Experience Platformへのデータ送信
+# Adobe Experience Platformにデータを送信
 
 Adobe Experience Platformにデータを送信する方法を説明します。
 
+>[!INFO]
+>
+> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
+
 このオプションのレッスンは、Real-time Customer Data Platform(Real-Time CDP)、Journey OptimizerおよびCustomer Journey Analyticsのすべてのお客様に関連しています。 Experience Platformは、AdobeとAdobe以外のすべてのデータを、リアルタイムで更新する堅牢な顧客プロファイルに変換し、AI に基づくインサイトを使用して、あらゆるチャネルで適切なエクスペリエンスを提供するオープンシステムです。
 
-この [イベント](events.md), [ライフサイクル](lifecycle-data.md)、および [id](identity.md) 以前のレッスンで収集し、Platform Edge Network に送信したデータは、Adobe Experience Platformを含む、データストリームで設定されたサービスに転送されます。
+The [イベント](events.md), [ライフサイクル](lifecycle-data.md)、および [id](identity.md) 以前のレッスンで収集し、Platform Edge Network に送信したデータは、Adobe Experience Platformを含む、データストリームで設定されたサービスに転送されます。
 
 
 ## 前提条件
@@ -57,12 +61,12 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 1. 「**[!UICONTROL 次へ]**」を選択します。
    ![データセットの設定](assets/mobile-dataset-configure.png)
 
-1. 次を提供： **[!UICONTROL 名前]**, **[!UICONTROL 説明]**&#x200B;を選択し、 **[!UICONTROL 完了]**.
+1. 次を提供： **[!UICONTROL 名前]**, **[!UICONTROL 説明]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL 完了]**.
    ![データセットの完了](assets/mobile-dataset-finish.png)
 
 ## データストリームの更新
 
-データセットを作成したら、必ず [データストリームの更新](create-datastream.md) Adobe Experience Platformを追加します。 この更新により、データが Platform に送られるようになります。
+データセットを作成したら、必ず [データストリームの更新](create-datastream.md) をクリックしてAdobe Experience Platformを追加します。 この更新により、データが Platform に送られるようになります。
 
 ## データセット内のデータの検証
 
@@ -83,7 +87,7 @@ Platform インターフェイスでデータセットを開きます。 デー�
 
 Experience Platformのリアルタイム顧客プロファイルを使用すると、オンライン、オフライン、CRM、サードパーティデータなど、複数のチャネルのデータを組み合わせた、各顧客の全体像を構築できます。 プロファイルを使用すると、個別の顧客データを統合ビューに統合し、顧客のやり取りごとに実用的なタイムスタンプ付きの説明を提供できます。
 
-### スキーマの有効化
+### スキーマを有効にする
 
 1. スキーマを開く
 1. 有効にする **[!UICONTROL プロファイル]**
@@ -103,23 +107,23 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 
 アプリを開き、イベントを追跡している画面に移動します。 Luma アプリにログインし、購入します。
 
-アシュランスを使用して、identityMap に渡される ID(Email、lumaCrmId、ECID) の 1 つを検索します。
+アシュランスを使用して、identityMap に渡される ID(Email、lumaCrmId、ECID) の 1 つを見つけます。
 
 >[!TIP]
 >
->   の値 `lumaCrmId` が `112ca06ed53d3db37e4cea49cc45b71e`
+>   の値 `lumaCrmId` 次に該当 `112ca06ed53d3db37e4cea49cc45b71e`
 
 
 ![アイデンティティ値を得る](assets/mobile-platform-identity.png)
 
-Platform インターフェイスで、に移動します。 **[!UICONTROL プロファイル]** > **[!UICONTROL 参照]**&#x200B;をクリックし、取得した id 値を参照して、プロファイルを開きます。
+Platform インターフェイスで、に移動します。 **[!UICONTROL プロファイル]** > **[!UICONTROL 参照]**」をクリックし、取得した id 値を参照して、プロファイルを開きます。
 
 ![id 値の検索](assets/mobile-platform-profile-lookup.png)
 
-の **[!UICONTROL 詳細]** 画面には、 **[!UICONTROL **&#x200B;リンクされた ID **]**:
+次の日： **[!UICONTROL 詳細]** 画面には、 **[!UICONTROL **&#x200B;リンクされた ID **]**:
 ![プロファイルの詳細](assets/mobile-platform-profile-details.png)
 
-の **[!UICONTROL イベント]**&#x200B;を使用すると、このユーザーのモバイルアプリ実装から収集されたイベントを表示できます。
+次の日： **[!UICONTROL イベント]**&#x200B;を使用すると、このユーザーのモバイルアプリ実装から収集されたイベントを表示できます。
 
 ![プロファイルイベント](assets/mobile-platform-profile-events.png)
 
