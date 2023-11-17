@@ -3,7 +3,7 @@ title: イベントデータの追跡
 description: モバイルアプリでイベントデータを追跡する方法を説明します。
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 3%
@@ -171,7 +171,7 @@ The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edg
       1. の場合 <img src="assets/saveforlater.png" width="15" />：
 
          ```swift
-         // Send saveForLaters commerce experience event
+         // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -185,13 +185,13 @@ The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edg
       1. の場合 <img src="assets/purchase.png" width="20" />：
 
          ```swift
-         // Send purchases commerce experience event
+         // Send purchase commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
 >[!TIP]
 >
->Android 向けに開発する場合は、Map (`java.util.Map`) を XDM ペイロードを構築するための基本的なインターフェイスとして使用します。
+>Android™用に開発する場合は、マップ (`java.util.Map`) を XDM ペイロードを構築するための基本的なインターフェイスとして使用します。
 
 
 ### カスタムフィールドグループ
@@ -205,9 +205,9 @@ The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edg
 
   >[!NOTE]
   >
-  >* 標準フィールドグループは、常にオブジェクトルートから始まります。
+  * 標準フィールドグループは、常にオブジェクトルートから始まります。
   >
-  >* カスタムフィールドグループは、常にExperience Cloud組織に固有のオブジェクトの下で開始します。 `_techmarketingdemos` この例では、
+  * カスタムフィールドグループは、常にExperience Cloud組織に固有のオブジェクトの下で開始します。 `_techmarketingdemos` この例では、
 
   アプリのインタラクションイベントの場合は、次のようなオブジェクトを作成します。
 
@@ -338,10 +338,10 @@ The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edg
 
 ## 検証
 
-1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) 「 」セクションを使用して、シミュレーターまたはデバイスを Assurance に接続します。
 
    1. アシュランスアイコンを左に移動します。
-   1. 選択 **[!UICONTROL ホーム]** をクリックし、 **[!UICONTROL ECID]**, **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]** 」と入力します。
+   1. 選択 **[!UICONTROL ホーム]** をクリックし、 **[!UICONTROL ECID]**, **[!UICONTROL 電子メール]**、および **[!UICONTROL CRM ID]** 」と入力します。
    1. 選択 **[!DNL Products]** 」をクリックします。
    1. 製品を選択します。
    1. 選択 <img src="assets/saveforlater.png" width="15" />。
@@ -367,15 +367,17 @@ The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edg
 
 >[!TIP]
 >
->以下を確認します。 [アプリの完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) その他の例を参照してください。
+以下を確認します。 [アプリの完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) その他の例を参照してください。
 
 
 ## Analytics と Platform へのイベントの送信
 
-これで、イベントを収集して Platform Edge ネットワークに送信したので、イベントは、 [datastream](create-datastream.md). 後のレッスンでは、このデータをにマッピングします。 [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) などの他のAdobe Experience Cloudソリューション [Adobe Target](target.md) Adobe Journey Optimizer
+これで、イベントを収集して Platform Edge ネットワークに送信したので、イベントは、 [datastream](create-datastream.md). 後のレッスンでは、このデータをにマッピングします。 [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md)などの他のAdobe Experience Cloudソリューション [Adobe Target](target.md) Adobe Journey Optimizer
 
 >[!SUCCESS]
 >
->これで、Adobe Experience Platform Edge Network と、データストリームで定義したすべてのサービスに対するコマース、アプリのインタラクション、画面のトラッキングイベントを追跡するアプリを設定しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+これで、Adobe Experience Platform Edge Network と、データストリームで定義したすべてのサービスに対するコマース、アプリのインタラクション、画面のトラッキングイベントを追跡するアプリを設定しました。
+>
+Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[WebViews を処理](web-views.md)**

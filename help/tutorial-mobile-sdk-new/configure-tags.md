@@ -3,9 +3,10 @@ title: タグプロパティの設定
 description: タグのプロパティを設定する方法については、 [!UICONTROL データ収集] インターフェイス。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1090'
 ht-degree: 8%
 
 ---
@@ -45,7 +46,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
       >[!NOTE]
       >
-      > このレッスンでおこなう操作は、 [!UICONTROL 同意拡張] そして、 [!UICONTROL プライバシー] の設定を使用して、タグプロパティの設定を行います。 このレッスンの後半で、同意拡張機能を追加して設定します。 詳しくは、 [ドキュメント](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > このレッスンでおこなう操作は、 [!UICONTROL 同意拡張] そして、 [!UICONTROL プライバシー] の設定を使用して、タグプロパティの設定を行います。 このレッスンの後半で、同意拡張機能を追加して設定します。 詳しくは、 [ドキュメント](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. 新しいプロパティを開きます。
@@ -131,7 +132,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 1. Adobe Analytics の **[!UICONTROL モバイルインストール手順]** ダイアログで、 **[!UICONTROL iOS]** タブをクリックします。
 
-1. コピー可能 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) CocoaPods を使用してプロジェクトを設定する手順 CocoaPods は、SDK のバージョンとダウンロードの管理に使用されます。 詳しくは、 [Cocoapods ドキュメント](https://cocoapods.org/). Android を開発プラットフォームとして使用している場合、Gradle は SDK のバージョン、ダウンロード、依存関係を管理するためのツールです。 詳しくは、 [Gradle ドキュメント](https://gradle.org/)
+1. コピー可能 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) CocoaPods を使用してプロジェクトを設定する手順 CocoaPods は、SDK のバージョンとダウンロードの管理に使用されます。 詳しくは、 [CocoaPods ドキュメント](https://cocoapods.org/). Android™を開発プラットフォームとして使用している場合、Gradle は SDK のバージョン、ダウンロード、依存関係を管理するためのツールです。 詳しくは、 [Gradle ドキュメント](https://gradle.org/)
 
    インストール手順は、導入の出発点として適しています。 追加情報を見つけることができます [ここ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -148,7 +149,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 >[!NOTE]
 >
->インストール手順は、最初の段階と見なされ、最終的なドキュメントではありません。 最新の SDK バージョンおよびコードサンプルは、公式の [ドキュメント](https://developer.adobe.com/client-sdks/documentation/).
+>インストール手順は、最初の段階と見なされ、最終的なドキュメントではありません。 最新の SDK バージョンおよびコードサンプルは、公式の [ドキュメント](https://developer.adobe.com/client-sdks/home/).
 
 ## モバイルタグのアーキテクチャ
 
@@ -156,10 +157,12 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 * Web 上では、タグプロパティが JavaScript にレンダリングされ、JavaScript は（通常は）クラウドでホストされます。 この JavaScript ファイルが Web サイトで直接参照されます。
 
-* モバイルタグプロパティでは、ルールと設定は、クラウドでホストされる JSON ファイルにレンダリングされます。 この JSON ファイルがダウンロードされ、モバイルアプリの Mobile Core 拡張機能によって読み取られます。 拡張機能は、連携する個別の SDK です。 タグプロパティに拡張機能を追加する場合は、アプリも更新する必要があります。 拡張機能の設定を変更したり、ルールを作成したりすると、更新されたタグライブラリを公開すると、それらの変更がアプリに反映されます。 この柔軟性により、アプリのコードを変更したり、アプリをアプリストアに再送信する必要なく、設定 (Adobe分析レポート（ID など）を変更したり、アプリの動作（後のレッスンで確認できるデータ要素とルールを使用）を変更したりできます。
+* モバイルタグプロパティでは、ルールと設定は、クラウドでホストされる JSON ファイルにレンダリングされます。 この JSON ファイルがダウンロードされ、モバイルアプリの Mobile Core 拡張機能によって読み取られます。 拡張機能は、連携する個別の SDK です。 タグプロパティに拡張機能を追加する場合は、アプリも更新する必要があります。 拡張機能の設定を変更したり、ルールを作成したりすると、更新されたタグライブラリを公開すると、それらの変更がアプリに反映されます。 この柔軟性により、アプリ内のコードを変更してアプリストアを再送信する必要なく、設定 (Adobe Analyticsレポートスイート ID など ) を変更したり、アプリの動作（後のレッスンで確認するように、データ要素とルールを使用）を変更したりできます。
 
 >[!SUCCESS]
 >
->これで、このチュートリアルの残りの部分で使用するモバイルタグプロパティが作成されました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>これで、このチュートリアルの残りの部分で使用するモバイルタグプロパティが作成されました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 次へ： **[SDK のインストール](install-sdks.md)**

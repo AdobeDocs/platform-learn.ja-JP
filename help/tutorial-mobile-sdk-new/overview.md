@@ -4,10 +4,10 @@ description: Adobe Experience Cloudモバイルアプリケーションの実装
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 9%
+source-wordcount: '821'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Adobe Experience Platform Mobile SDK を使用して、モバイルアプリに Adobe Experience Cloud アプリケーションを実装する方法を説明します。
 
-Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド SDK です。 詳しくは、 [Adobe Experience Platform Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/) を参照してください。
+Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド SDK です。 詳しくは、 [Adobe Experience Platform Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/home/) を参照してください。
 
 ![アーキテクチャ](assets/architecture.png)
 
@@ -41,11 +41,11 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * [プロファイル](profile.md)
    * [Places](places.md)
    * [Analytics](analytics.md)
-   * [Adobe Experience Platform](platform.md)
+   * [Experience Platform](platform.md)
    * [Journey Optimizerを使用したプッシュメッセージ](journey-optimizer-push.md)
    * [Journey Optimizerを使用したアプリ内メッセージ](journey-optimizer-inapp.md)
-   * [Journey Optimizerとのオファー](journey-optimizer-offers.md)
-   * [Target での A/B テスト](target.md)
+   * [Journey Optimizerを使用した決定管理](journey-optimizer-offers.md)
+   * [Target](target.md)
 
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 
 ## 前提条件
 
-このレッスンでは、練習を完了するために必要な Adobe ID と権限があることを前提としています。アクセスできない場合は、Adobe管理者に問い合わせて、アクセス権を要求する必要があります。
+このレッスンでは、練習を完了するために必要なAdobeID とユーザーレベルの権限があることを前提としています。 アクセスできない場合は、Adobe管理者に問い合わせて、アクセス権を要求する必要があります。
 
 * データ収集には、以下が必要です。
    * **[!UICONTROL プラットフォーム]** — 権限項目 **[!UICONTROL モバイル]**
@@ -67,22 +67,20 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * **[!UICONTROL Identity Management]**—id 名前空間を管理および表示する権限項目です。
    * **[!UICONTROL データ収集]** — データストリームを管理および表示する権限項目。
 
-   * Real-Time CDP、Journey Optimizer、Customer Journey Analyticsなどの Platform ベースのアプリケーションを使用している場合は、次のこともおこなう必要があります。
-      * **[!UICONTROL データ管理]** — データセットを管理および表示して完了する権限項目 _オプションの Platform の演習_ （ Platform ベースのアプリケーションのライセンスが必要です）。
+   * Real-Time CDP、Journey Optimizer、Customer Journey Analyticsなどの Platform ベースのアプリケーションをご利用のお客様は、次の関連レッスンをおこなう必要があります。
+      * **[!UICONTROL データ管理]** — データセットを管理および表示する権限項目。
       * 開発 **sandbox** このチュートリアルで使用できる
+
+   * Journey Optimizerのレッスンでは、 **プッシュ通知サービス** およびを作成するには、以下を実行します。 **アプリ表面**, a **ジャーニー**, a **メッセージ**、および **メッセージプリセット**. 決定管理では、次の操作をおこなうための適切な権限が必要です。 **オファーを管理** および **決定** 説明に従って [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 * Adobe Analyticsの場合は、どちらかを知っておく必要があります。 **レポートスイート** を使用して、このチュートリアルを完了できます。
 
-* Adobe Targetの場合は、権限が適切に設定されている必要があります **役割**, **workspaces**、および **プロパティ** 説明に従って [ここ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ja).
-
-* Adobe Journey Optimizerの場合、 **プッシュ通知サービス** およびを作成するには、以下を実行します。 **アプリ表面**, a **ジャーニー**, a **メッセージ** および **メッセージプリセット**. 決定管理では、次の操作をおこなうための適切な権限が必要です。 **オファーを管理** および **決定** 説明に従って [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
-
-すべてのExperience Cloudのお客様は、Mobile SDK のデプロイに必要な機能にアクセスできる必要があります。
+* Adobe Targetの場合、アクティビティを作成およびアクティブ化する権限が必要です。
 
 
 >[!NOTE]
 >
->このチュートリアルの一環として、スキーマ、データセット、ID などを作成します。 単一のサンドボックスに複数のユーザーを含むこのチュートリアルを実行する場合、または共有アカウントを使用する場合は、これらのオブジェクトを作成する際の命名規則の一部として ID を追加または前付けすることを検討します。 例えば、 ` - <your name or initials>` を、作成するように指示されるオブジェクトの名前に追加します。
+>このチュートリアルの一部として、スキーマ、データセット、ID などを作成します。 複数のユーザーが単一のサンドボックスでこのチュートリアルを実行する場合は、これらのオブジェクトを作成する際に、命名規則の一部として識別を追加するか、事前に付加することを検討してください。 例えば、 ` - <your name or initials>` を、作成するように指示されるオブジェクトの名前に追加します。
 
 
 ## Luma アプリケーションのダウンロード
@@ -93,15 +91,16 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：このチュートリアルで実践的な演習を完了するために必要な、Experience PlatformMobile SDK コードのほとんどに対して、コードがない、またはプレースホルダーコードが付いたプロジェクトです。
 1. [完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：参照用に完全な実装を含むバージョン。
 
+
 >[!NOTE]
 >
->iOSをプラットフォームとして使用します。 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用します。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 また、多くのユーザーは、以前のiOS/Swift(UI) エクスペリエンスをほとんど使用せずに、既にこのチュートリアルを完了しています。 コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+>プラットフォームとしてiOSを使用し、 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用する。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 多くのユーザーは、以前のiOS/Swift(UI) 操作をほとんどあるいはまったく使用せずに、既にこのチュートリアルを完了しています。 コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
 
 
 それでは、始めましょう。
 
 >[!SUCCESS]
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[XDM スキーマの作成](create-schema.md)**

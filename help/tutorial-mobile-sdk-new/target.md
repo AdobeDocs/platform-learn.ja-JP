@@ -6,9 +6,9 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1911'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 Platform Mobile SDK およびAdobe Targetを使用して、モバイルアプリのエクスペリエンスを最適化およびパーソナライズする方法について説明します。
 
-Target は、顧客体験をカスタマイズし、パーソナライズする必要のあるすべてのものを提供します。 Target は、Web サイト、モバイルサイト、アプリ、ソーシャルメディア、その他のデジタルチャネルに関する売上高を最大化するのに役立ちます。 Target は、A/B テスト、多変量分析テスト、製品とコンテンツのレコメンデーション、Target コンテンツ、AI を使用したコンテンツの自動パーソナライズなどを実行できます。 このレッスンでは、Target の A/B テスト機能に焦点を当てます。  詳しくは、 [A/B テストの概要](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) を参照してください。
+Target は、顧客体験をカスタマイズし、パーソナライズする必要のあるすべてのものを提供します。 Target は、Web サイト、モバイルサイト、アプリ、ソーシャルメディア、その他のデジタルチャネルに関する売上高を最大化するのに役立ちます。 Target は、A/B テスト、多変量分析テスト、製品とコンテンツのレコメンデーション、Target コンテンツ、AI を使用したコンテンツの自動パーソナライズなどを実行できます。 このレッスンでは、Target の A/B テスト機能に焦点を当てます。 詳しくは、 [A/B テストの概要](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) を参照してください。
 
 ![アーキテクチャ](assets/architecture-at.png)
 
@@ -66,7 +66,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
    プロパティは、Target UI の **[!UICONTROL 管理]** > **[!UICONTROL プロパティ]**. 選択 ![コード](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) をクリックして、使用するプロパティのプロパティトークンを表示します。 プロパティトークンの形式は次のとおりです。 `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；値のみを入力する必要があります `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
-   オプションで、Target 環境 ID を指定できます。 Target では、環境を使用してサイトを整理し、実稼動前の環境を整理して、管理とレポートの分離を容易にします。 プリセット環境には、実稼動、ステージング、開発が含まれます。 詳しくは、 [環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) および [Target 環境 ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) を参照してください。
+   オプションで、Target 環境 ID を指定できます。 Target では、環境を使用してサイトを整理し、実稼動前の環境を整理して、管理を容易にし、個別のレポートを作成できます。 プリセット環境には、実稼動、ステージング、開発が含まれます。 詳しくは、 [環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) および [Target 環境 ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) を参照してください。
 
    必要に応じて、ID 名前空間（CRM ID など）でのプロファイル同期をサポートするために、Target のサードパーティ ID 名前空間を指定できます。 詳しくは、 [Target サードパーティ ID 名前空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) を参照してください。
 
@@ -81,7 +81,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
 1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
 1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
-1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Offer decisioning]**, **[!UICONTROL エッジのセグメント化]**、および **[!UICONTROL パーソナライズ機能の宛先]** が選択されている。 Journey Optimizerのレッスンにも従う場合は、「 **[!UICONTROL Adobe Journey Optimizer]** 同様に。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
+1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、 **[!UICONTROL Offer decisioning]**, **[!UICONTROL エッジのセグメント化]**、および **[!UICONTROL パーソナライズ機能の宛先]** が選択されている。 Journey Optimizerのレッスンにも従う場合は、「 **[!UICONTROL Adobe Journey Optimizer]**. 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
 1. データストリーム設定を保存するには、 **[!UICONTROL 保存]** .
 
    ![AEP データストリーム設定](assets/datastream-aep-configuration-target.png)
@@ -104,7 +104,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 1. 選択 **[!UICONTROL 参照]** 上部のバーから。
 1. スキーマを選択して開きます。
 1. スキーマエディターで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** 次の **[!UICONTROL フィールドグループ]**.
-1. フィールドグループを追加ダイアログで、を検索します。 `proposition`を選択します。 **[!UICONTROL エクスペリエンスイベント — 提案インタラクション]** を選択し、 **[!UICONTROL フィールドグループを追加]**.
+1. Adobe Analytics の **[!UICONTROL フィールドグループを追加]** ダイアログ、検索する `proposition`を選択します。 **[!UICONTROL エクスペリエンスイベント — 提案インタラクション]** を選択し、 **[!UICONTROL フィールドグループを追加]**.
    ![提案](assets/schema-fieldgroup-proposition.png)
 1. スキーマに対する変更を保存するには、「 」を選択します。 **[!UICONTROL 保存]**.
 
@@ -121,7 +121,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 
 ## A/B テストの作成
 
-概要で説明したように、Adobe Targetで作成してモバイルアプリに実装できるアクティビティには、様々なタイプがあります。 このレッスンでは、A/B テストの実装に焦点を当てます。
+概要で説明したように、Adobe Targetで作成してモバイルアプリに実装できるアクティビティには、様々なタイプがあります。 このレッスンでは、A/B テストを実装します。
 
 1. Target UI で、 **[!UICONTROL アクティビティ]** 上部のバーから。
 1. 選択 **[!UICONTROL アクティビティを作成]** および **[!UICONTROL A/B テスト]** を選択します。
@@ -191,7 +191,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 >以下を完了した場合、 [SDK のインストール](install-sdks.md) 」セクションに移動した場合は、SDK が既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、 [AEP 最適化](https://github.com/adobe/aepsdk-messaging-ios.git) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Xcode で、 [AEP 最適化](https://github.com/adobe/aepsdk-messaging-ios) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 」をクリックします。
 1. 確認 `AEPOptimize` は、インポートのリストの一部です。
 
@@ -240,9 +240,9 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
    * は、決定範囲（A/B テストで定義した場所）に基づいて、現在のプロファイルの提案を取得します。
    * 提案からオファーを取得します。
    * オファーのコンテンツをアプリに正しく表示できるようにアンラップし、
-   * トリガー `displayed()` オファーが表示されたことを知らせるイベントを Edge ネットワークに送り返す、オファーに対するアクション。
+   * トリガー `displayed()` オファーが表示されたことを通知するイベントを Platform Edge Network に返すオファーに対するアクション。
 
-1. まだ **[!DNL TargetOffersView]**&#x200B;を使用して、次のコードを `.onFirstAppear` 修飾子 このコードにより、オファーを更新するためのコールバックが 1 回だけ登録されます。
+1. まだ **[!DNL TargetOffersView]**&#x200B;を使用して、次のコードを `.onFirstAppear` 修飾子 このコードは、オファーを更新するためのコールバックが 1 回だけ登録されるようにします。
 
    ```swift
    // Invoke callback for offer updates
@@ -291,6 +291,8 @@ Assurance で A/B テストを検証するには、次の手順に従います�
 
 >[!SUCCESS]
 >
->アプリの A/B テストを有効にし、Adobe TargetおよびAdobe Experience Platform Mobile SDK 用のAdobe Journey Optimizer - Decisioning 拡張機能を使用して A/B テストの結果を表示しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>アプリの A/B テストを有効にし、Adobe Targetでの A/B テストの結果と、Adobe Experience Platform Mobile SDK 用のAdobe Journey Optimizer - Decisioning 拡張機能を表示した。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[まとめと次のステップ](conclusion.md)**

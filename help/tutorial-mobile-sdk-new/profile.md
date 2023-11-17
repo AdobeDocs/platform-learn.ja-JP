@@ -3,9 +3,9 @@ title: プロファイルデータを収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 アプリでのターゲティングやパーソナライゼーションに役立つのは、ユーザーが過去または最近に購入したかどうかをすばやく知ることです。 Luma アプリでセットアップしましょう。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttributes(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -56,11 +56,11 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    1. を使用します。 `profileMap` 辞書を `attributeDict` のパラメーター [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 呼び出し。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> button). 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> 」ボタン ) をクリックします。 次のコードを追加します。
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -98,11 +98,11 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    1. アシュランスアイコンを左に移動します。
    1. 選択 **[!UICONTROL ホーム]** 」をクリックします。
-   1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> button.
+   1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> 」ボタンをクリックします。
 
       <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. ランダムな電子メールと顧客 ID を挿入するには、 <img src="assets/insert.png" width="15" /> button .
+   1. ランダムな電子メールと顧客 ID を挿入するには、 <img src="assets/insert.png" width="15" /> ボタンをクリックします。
    1. 選択 **[!UICONTROL ログイン]**.
 
       <img src="./assets/mobile-app-events-2.png" width="300">
@@ -115,7 +115,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. に戻る **[!UICONTROL ホーム]** 画面。 バッジが追加されます <img src="assets/person-badge-icon.png" width="15" />。
+   1. に戻る **[!UICONTROL ホーム]** 画面。 バッジが追加されたことがわかります。 <img src="assets/person-badge-icon.png" width="15" />。
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 >[!SUCCESS]
 >
->これで、Edge ネットワーク内のプロファイルの属性を更新するアプリを設定し、（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようになりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>これで、Edge ネットワーク内のプロファイルの属性を更新するアプリを設定し、（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようになりました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[場所を使用](places.md)**

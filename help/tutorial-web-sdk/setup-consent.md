@@ -3,9 +3,9 @@ title: Platform Web SDK を使用した同意の設定
 description: Web SDK タグ拡張機能のプライバシー設定のExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Web SDK タグ拡張機能のプライバシー設定のExperience Platform方�
 
 >[!NOTE]
 > 
->デモ用に、このチュートリアルではを使用します。 [クラロ](https://heyklaro.com/) CMP として Klaro や、Web サイトで使用する CMP を使用して、フォローを進めていただければ幸いです。
+>デモ用に、このチュートリアルではを使用します。 [クラロ](https://heyklaro.com/) CMP として。 Klaro や、Web サイトで使用する CMP を使用して、フォローを進めていただければ幸いです。
 
 
 ## 学習内容
@@ -25,7 +25,7 @@ Web SDK タグ拡張機能のプライバシー設定のExperience Platform方�
 
 * タグを使用して CMP を読み込む
 * Experience PlatformWeb SDK タグ拡張機能でプライバシー設定を指定する
-* 訪問者のアクションに基づいて、Experience PlatformWeb SDK に同意を設定します
+* 訪問者のアクションに基づいて、Experience PlatformWeb SDK に同意を設定する
 
 ## 前提条件
 
@@ -44,9 +44,9 @@ Web SDK タグ拡張機能のプライバシー設定のExperience Platform方�
 
 1. 訪問 [クラロ](https://heyklaro.com/) アカウントを設定します。
 1. に移動します。 **プライバシーマネージャー** 手順に従ってインスタンスを作成します。
-1. 以下を使用： **統合コード** タグプロパティに Klaro を挿入する方法（手順は次の演習で説明します）。
+1. 以下を使用します。 **統合コード** タグプロパティに Klaro を挿入する方法（手順は次の演習で説明します）。
 1. スキップ **スキャン** セクションに追加する必要があります。これは、このチュートリアル用に作成したタグではなく、Luma デモ Web サイトでハードコードされたタグプロパティを検出するためです。
-1. 次の名前のサービスを追加 `aep web sdk` をオンにし、 **サービスのデフォルトの状態**. オンにすると、デフォルトの同意値は次のようになります。 `true`、それ以外の場合は `false`. この設定は、Web アプリケーションに対して（訪問者の同意前の）デフォルトの同意状態を決定する場合に便利です。 以下に例を示します。
+1. 次の名前のサービスを追加 `aep web sdk` をオンにし、オンに切り替えます。 **サービスのデフォルトの状態**. オンにすると、デフォルトの同意値は次のようになります。 `true`、それ以外の場合は `false`. この設定は、Web アプリケーションに対して（訪問者の同意前の）デフォルトの同意状態を決定する場合に便利です。 以下に例を示します。
    * CCPA の場合、デフォルトの同意は一般的に次のように設定されます。 `true`. このシナリオを次のように参照します： **暗黙のオプトイン** このチュートリアル全体
    * GDPR の場合、デフォルトの同意は一般に `false`. このシナリオを次のように参照します： **暗黙のオプトアウト** このチュートリアル全体を通して
 
@@ -57,17 +57,17 @@ Web SDK タグ拡張機能のプライバシー設定のExperience Platform方�
     >
     > 通常、上記の手順は、OneTrust や TrustArc などの CMP の処理を担当するチームまたは個人がおこない、慎重におこないます。
 
-## CMP を挿入
+## CMP を挿入する
 
 >[!WARNING]
 >
->同意管理プラットフォームを実装するベストプラクティスは、通常、CMP を読み込むことです _前_ タグマネージャーの読み込み中。 このチュートリアルを容易にするために、CMP を読み込みます _と_ タグマネージャー このレッスンは、Platform Web SDK の同意機能の使用方法を示すように設計されており、Klaro やその他の CMP を正しく設定するためのガイドとして使用しないでください。
+>同意管理プラットフォームを実装するベストプラクティスは、通常、CMP を読み込むことです _前_ タグマネージャーの読み込み中。 このチュートリアルを容易にするために、CMP を読み込みます _次を使用_ タグマネージャー このレッスンは、Platform Web SDK の同意機能の使用方法を示すように設計されており、Klaro やその他の CMP を正しく設定するためのガイドとして使用しないでください。
 
 
 Klaro の設定が完了したら、次の設定を含むタグルールを作成します。
 
 * [!UICONTROL 名前]: `all pages - library load - Klaro`
-* [!UICONTROL イベント]: [!UICONTROL 読み込まれたライブラリ（ページ上部）] と [!UICONTROL 詳細オプション] > [!UICONTROL 注文] 1 に設定
+* [!UICONTROL イベント]: [!UICONTROL 読み込まれたライブラリ（ページ上部）] 次を使用 [!UICONTROL 詳細オプション] > [!UICONTROL 注文] 1 に設定
 * [!UICONTROL アクション]: [!UICONTROL カスタムコード], [!UICONTROL 言語]:CMP スクリプトを読み込むHTML。
 
 ![CMP ルールを挿入](assets/consent-cmp-inject-rule-1.png)
@@ -90,7 +90,7 @@ Klaro の設定が完了したら、次の設定を含むタグルールを作�
 
 また、訪問者の同意値が格納されるので、このチュートリアルの実行中に、Cookie とローカルストレージを複数回クリアする必要が生じる場合があります。 次のように簡単に実行できます。
 
-![ストレージの消去](assets/consent-clearning-cookies.png)
+![ストレージをクリア中](assets/consent-clearning-cookies.png)
 
 ## 同意シナリオ
 
@@ -98,22 +98,22 @@ GDPR、CCPA などのプライバシー行為は、同意の実装を設計す�
 ![同意シナリオ](assets/consent-scenarios.jpeg)
 
 
-### シナリオ 1:暗黙のオプトイン
+### シナリオ 1：暗黙のオプトイン
 
 暗黙のオプトインは、ビジネスがデータを収集する前に訪問者の同意（または「オプトイン」）を取得する必要がないことを意味します。したがって、Web サイトへのすべての訪問者はデフォルトでオプトインとして扱われます。 ただし、訪問者は、同意バナーから Cookie を拒否することでオプトアウトできます。 この使用例は、CCPA に似ています。
 
 次に、このシナリオに対する同意を設定および実装します。
 
-1. 内 **[!UICONTROL プライバシー]** Experience PlatformWeb SDK タグ拡張のセクションで、  **[!UICONTROL デフォルトの同意]** が **[!UICONTROL In]** :
+1. Adobe Analytics の **[!UICONTROL プライバシー]** Experience PlatformWeb SDK タグ拡張のセクションで、  **[!UICONTROL デフォルトの同意]** が **[!UICONTROL In]** :
 
 
    ![同意 AEP 拡張機能のプライバシー設定](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
-   >動的ソリューションの場合は、「データ要素を指定」オプションを選択し、 ```klaro.getManager().consents```
+   >動的ソリューションの場合、「データ要素を指定」オプションを選択し、 ```klaro.getManager().consents```
    >
-   >このオプションは、CMP がソースコードに挿入される場合に使用されます *前* タグの埋め込みコードを使用して、Experience PlatformWeb SDK 拡張機能の読み込みを開始する前にデフォルトの同意を利用できるようにします。 この例では、CMP がタグで読み込まれ、タグの前ではなくなるので、このオプションを使用できません。
+   >このオプションは、CMP がソースコードに挿入される場合に使用されます。 *前* タグの埋め込みコードを使用して、Experience PlatformWeb SDK 拡張機能の読み込みを開始する前にデフォルトの同意を利用できるようにします。 この例では、CMP がタグで読み込まれ、タグの前ではなくなるので、このオプションを使用できません。
 
 
 
@@ -158,7 +158,7 @@ GDPR、CCPA などのプライバシー行為は、同意の実装を設計す�
 
    ![同意ルールのオプトアウトアクション](assets/consent-rule-optout-action.png)
 
-1. 選択 **[!UICONTROL ライブラリに保存してビルド]**:
+1. 選択 **[!UICONTROL ライブラリに保存してビルドする]**:
 
    ![ライブラリを保存してビルドする](assets/consent-rule-optout-saveAndBuild.png)
 
@@ -166,7 +166,7 @@ GDPR、CCPA などのプライバシー行為は、同意の実装を設計す�
 
 Luma デモサイトに移動して cookie を拒否し、オプトアウト後に Web SDK リクエストが実行されないことを確認して検証します。
 
-### シナリオ 2:暗黙のオプトアウト
+### シナリオ 2：暗黙のオプトアウト
 
 
 暗黙的なオプトアウトとは、訪問者がデフォルトでオプトアウト済みとして扱われ、cookie を設定しないことを意味します。 Web SDK リクエストは、訪問者が同意バナーを通じて Cookie を受け入れ、手動でオプトインすることにした場合を除き、実行しないでください。 GDPR が適用される欧州連合地域では、このような使用例に対処する必要が生じる場合があります。
@@ -204,7 +204,7 @@ Luma デモサイトに移動して cookie を拒否し、オプトアウト後�
 
    ここで注意すべきことの 1 つは、 [!UICONTROL 同意の設定] アクションは、送信され、id を確立する最初のリクエストになります。 このため、最初のリクエスト自体で ID を同期することが重要な場合があります。 ID マップは、 [!UICONTROL 同意の設定] id タイプのデータ要素を渡すアクションを実行する。
 
-1. 選択 **[!UICONTROL ライブラリに保存してビルド]**:
+1. 選択 **[!UICONTROL ライブラリに保存してビルドする]**:
 
    ![同意ルールのオプトアウト](assets/consent-rule-optin-saveAndBuild.png)
 
@@ -224,4 +224,4 @@ Web SDK での同意について詳しくは、 [顧客の同意設定のサポ�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

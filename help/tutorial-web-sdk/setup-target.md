@@ -3,9 +3,9 @@ title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '3801'
+source-wordcount: '3800'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
 * 非同期タグ埋め込みコードで Target を使用する際にちらつきを防ぐために、Platform Web SDK の事前非表示スニペットを追加する方法を説明します。
-* データストリームの設定で Target 機能を有効にします
+* データストリームの設定で Target の機能を有効にします
 * ページ読み込み時に視覚的なパーソナライゼーションの決定をレンダリングする（以前は「グローバル mbox」と呼ばれていました）
 * XDM データを Target に渡し、Target パラメーターへのマッピングについて理解する
 * プロファイルやエンティティのパラメーターなど、カスタムデータを Target に渡す
@@ -39,7 +39,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
 
 * データ要素やルールの設定を含め、Platform Web SDK の初期設定に関するすべてのレッスンを完了していること。
 * 次の項目があることを確認します。 [編集者または承認者の役割](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80).
-* のインストール [Visual Experience Composer ヘルパー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) (Google Chrome ブラウザーを使用している場合 )
+* をインストールします。 [Visual Experience Composer ヘルパー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) (Google Chrome ブラウザーを使用している場合 )。
 * Target でアクティビティを設定する方法を説明します。 リフレッシャーが必要な場合、このレッスンで役立つチュートリアルとガイドを次に示します。
    * [Visual Experience Composer(VEC) ヘルパー拡張の使用](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)
    * [Visual Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
@@ -92,7 +92,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
 
    >[!NOTE]
    >
-   >Platform Web SDK 拡張機能からコピーされたデフォルトの事前非表示スニペットには、サイトに存在しない CSS 定義（例： ）が含まれている場合があります `.personalization-container { opacity: 0 !important }`. 事前に非表示になっているスニペットを、サイトに合わせて適切に確認および変更してください。
+   >Platform Web SDK 拡張機能からコピーされたデフォルトの事前非表示スニペットには、サイトに存在しない CSS 定義（例： ）が含まれている場合があります。 `.personalization-container { opacity: 0 !important }`. 事前に非表示になっているスニペットを、サイトに合わせて適切に確認および変更してください。
 
 ### 同期実装
 
@@ -120,7 +120,7 @@ Platform Web SDK でちらつきを制御する方法について詳しくは、
 
 Platform Web SDK から Target アクティビティを配信する前に、Target をデータストリーム設定で有効にする必要があります。
 
-データストリームで Target を設定するには：
+データストリームで Target を設定するには、次の手順に従います。
 
 1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
@@ -128,12 +128,11 @@ Platform Web SDK から Target アクティビティを配信する前に、Targ
 
    ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk.png)
 
-1. 選択 **[!UICONTROL サービスを追加]**
-
+1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームにサービスを追加する](assets/target-datastream-addService.png)
-1. 選択 **[!UICONTROL Adobe Target]** を **[!UICONTROL サービス]**
+1. 選択 **[!UICONTROL Adobe Target]** として **[!UICONTROL サービス]**
 1. 必要に応じて、次のガイダンスに従って、Target 実装に関するオプションの詳細を入力します。
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![Target データストリーム設定](assets/target-datastream.png)
 
@@ -141,7 +140,7 @@ Platform Web SDK から Target アクティビティを配信する前に、Targ
 
 Target Premium のお客様は、プロパティを使用してユーザー権限を管理することができます。 Target プロパティを使用すると、ユーザーが Target アクティビティを実行できる場所を境界で指定できます。 詳しくは、 [Enterprise 権限](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=ja) の節を参照してください。
 
-プロパティトークンを設定または検索するには、 **Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL プロパティ]**. この `</>` アイコンに実装コードが表示されます。 この `at_property` 値は、データストリームで使用するプロパティトークンです。
+プロパティトークンを設定または検索するには、 **Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL プロパティ]**. The `</>` アイコンに実装コードが表示されます。 The `at_property` 値は、データストリームで使用するプロパティトークンです。
 
 ![Target プロパティトークン](assets/target-admin-properties.png)
 
@@ -172,7 +171,7 @@ ID 記号は、の ID リストにあります。 **データ収集** > **[!UICO
 
 ![ID リスト](assets/target-identities.png)
 
-Luma サイトを使用するこのチュートリアルの目的では、ID シンボルを使用します。 `lumaCrmId` ～に関する授業中に立ち上がる [ID](configure-identities.md).
+Luma サイトを使用するこのチュートリアルの目的では、ID シンボルを使用します。 `lumaCrmId` ～に関する授業中に設立する [ID](configure-identities.md).
 
 
 ## 視覚的なパーソナライゼーションの決定をレンダリング
@@ -182,17 +181,17 @@ Luma サイトを使用するこのチュートリアルの目的では、ID シ
 * **アクティビティ**:1 つ以上のオーディエンスをターゲットにしたエクスペリエンスのセット。 例えば、単純な A/B テストは、2 つのエクスペリエンスを持つアクティビティにすることができます。
 * **エクスペリエンス**:1 つ以上の場所または決定範囲をターゲットとする一連のアクション。
 * **決定範囲**:Target エクスペリエンスが配信される場所。 古いバージョンの Target の使用に詳しい場合、決定範囲は「mbox」と同じです。
-* **パーソナライズの決定**:サーバーが決定したアクションを適用する必要があります。 これらの決定は、オーディエンスの条件と Target のアクティビティの優先順位付けに基づく場合があります。
-* **提案**:Platform Web SDK の応答で配信される、サーバーによる決定の結果です。 例えば、バナー画像を置き換えることは提案です。
+* **パーソナライズの決定**：サーバーが決定したアクションを適用する必要があります。 これらの決定は、オーディエンスの条件と Target のアクティビティの優先順位付けに基づく場合があります。
+* **提案**：サーバーが下した決定の結果です。この決定は Platform Web SDK の応答で配信されます。 例えば、バナー画像を置き換えることは提案です。
 
 ### ページ型ルールの更新
 
 Target がデータストリームで有効になっている場合、Target からの視覚的なパーソナライゼーションの決定は、Platform Web SDK によって配信されます。 しかし、 _これらは、自動的にはレンダリングされません_. 自動レンダリングを有効にするには、グローバルページ型ルールを変更する必要があります。
 
-1. 内 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイスで、このチュートリアルで使用するタグプロパティを開きます。
+1. Adobe Analytics の [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイスで、このチュートリアルで使用するタグプロパティを開きます。
 1. を開きます。 `all pages - library load - AA & AT` ルール
 1. を選択します。 `Adobe Experience Platform Web SDK - Send event` アクション
-1. 有効にする **[!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング]** チェックボックスを使用
+1. 有効にする **[!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング]** 「 」チェックボックスをオンにして
 
    ![視覚的なパーソナライゼーションの決定のレンダリングを有効にする](assets/target-rule-enable-visual-decisions.png)
 
@@ -246,7 +245,7 @@ Target がデータストリームで有効になっている場合、Target か
 
 1. Adobe Experience Platform Debugger ブラウザー拡張機能を開きます。
 1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) デバッガーを使用して、 [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. ページを再読み込み
+1. ページをリロード
 1. を選択します。 **[!UICONTROL ネットワーク]** デバッガーのツール
 1. フィルター条件 **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. 最初の呼び出しのイベント行の値を選択
@@ -262,7 +261,7 @@ Target がデータストリームで有効になっている場合、Target か
 
    ![Target アクティビティのインプレッション](assets/target-debugger-activity-impression.png)
 
-## カスタム決定範囲の設定とレンダリング
+## カスタムの決定範囲の設定とレンダリング
 
 カスタムの判定範囲（旧称「mbox」）は、Target フォームベースの Experience Composer を使用し、構造化された方法でHTMLまたは JSON コンテンツを配信するために使用できます。 これらのカスタムスコープの 1 つに配信されるコンテンツは、Platform Web SDK では自動的にはレンダリングされません。
 
@@ -280,16 +279,16 @@ Target がデータストリームで有効になっている場合、Target か
 
 >[!TIP]
 >
->このチュートリアルでは、デモ目的で、手動で定義した 1 つのスコープを使用します。 特定のページを対象とする複数の決定範囲を使用する場合は、ページパスに応じて条件に応じてスコープの配列を返すデータ要素の使用を検討する必要があります。 このアプローチは、実装をシンプルで拡張性の高いものにします。
+>このチュートリアルでは、デモ目的で、手動で定義した 1 つのスコープを使用します。 特定のページを対象とする複数の決定範囲を使用する場合は、ページパスに応じて条件に応じてスコープの配列を返すデータ要素を使用することを検討する必要があります。 このアプローチは、実装をシンプルで拡張性の高いものにします。
 
 ### Target からの応答を処理します
 
-これで、 `homepage-hero` 範囲を指定する場合は、応答で何らかの処理をおこなう必要があります。 Platform Web SDK タグ拡張機能は、 [!UICONTROL イベント送信完了] イベント。 [!UICONTROL イベントの送信] アクションを受け取りました。
+これで、Platform Web SDK を設定し、 `homepage-hero` 範囲を指定する場合は、応答で何らかの処理をおこなう必要があります。 Platform Web SDK タグ拡張機能は、 [!UICONTROL イベント送信完了] イベント。 [!UICONTROL イベントの送信] アクションを受け取りました。
 
 1. という名前のルールを作成します。 `homepage - send event complete - render homepage-hero`.
-1. イベントをルールに追加します。 以下を使用： **Adobe Experience Platform Web SDK** 拡張機能と **[!UICONTROL イベント送信完了]** イベントタイプ。
+1. イベントをルールに追加します。 以下を使用します。 **Adobe Experience Platform Web SDK** 拡張機能と **[!UICONTROL イベント送信完了]** イベントタイプ。
 1. ルールを Luma ホームページに制限する条件を追加します（クエリ文字列を含まないパスは「次に等しい」です）。 `/content/luma/us/en.html`) をクリックします。
-1. ルールにアクションを追加します。 以下を使用： **コア** 拡張と **カスタムコード** アクションタイプ。
+1. ルールにアクションを追加します。 以下を使用します。 **コア** 拡張と **カスタムコード** アクションタイプ。
 
    ![ホームページのヒーロールールをレンダリング](assets/target-rule-render-hero.png)
 
@@ -363,7 +362,7 @@ Target がデータストリームで有効になっている場合、Target か
 カスタムの決定範囲を手動でレンダリングするルールが作成されたので、Target で別のエクスペリエンスターゲット設定 (XT) アクティビティを作成できます。 今回は、フォームベースの Experience Composer を使用します。
 
 1. 開く [Adobe Target](https://experience.adobe.com/target)
-1. 前のレッスンで使用したアクティビティを非アクティブ化します
+1. 前のレッスンで使用したアクティビティを非アクティブ化します。
 1. フォームベースの Experience Composer オプションを使用して、エクスペリエンスのターゲット設定 (XT) アクティビティを作成する
 
    ![新しい XT アクティビティの作成](assets/target-xt-create-form-activity.png)
@@ -388,14 +387,14 @@ Target がデータストリームで有効になっている場合、Target か
    </div>
    ```
 
-1. の [!UICONTROL 目標と設定] 手順、レポートソースとしてAdobe Targetを選択し、 [!UICONTROL エンゲージメント] > [!UICONTROL ページビュー数] 目標として
+1. 次の日： [!UICONTROL 目標と設定] 手順、レポートソースとしてAdobe Targetを選択し、 [!UICONTROL エンゲージメント] > [!UICONTROL ページビュー数] 目標として
 1. アクティビティを保存
 1. 変更に慣れた場合は、アクティビティをアクティブ化できます。 アクティブ化せずにエクスペリエンスをプレビューする場合は、 [QA プレビュー URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
 1. Luma のホームページを読み込むと、変更が適用されているのが確認できます。
 
 >[!NOTE]
 >
->「mbox をクリックしました」のコンバージョン目標は、自動的には機能しません。 Platform Web SDK は、カスタムスコープを自動的にレンダリングしないので、コンテンツの適用先として選択した場所へのクリック数は追跡しません。 「クリック」を使用して、各範囲に対して独自のクリック追跡を作成できます `eventType` 該当する `_experience` 詳細は `sendEvent` アクション。
+>「mbox をクリックしました」のコンバージョン目標は、自動的には機能しません。 Platform Web SDK は、カスタムスコープを自動的にレンダリングしないので、コンテンツの適用先として選択した場所へのクリック数は追跡しません。 「クリック」を使用して、各範囲に対して独自のクリック追跡を作成できます。 `eventType` 適用可能な `_experience` 詳細は、 `sendEvent` アクション。
 
 ### デバッガーを使用した検証
 
@@ -403,7 +402,7 @@ Target がデータストリームで有効になっている場合、Target か
 
 1. Adobe Experience Platform Debugger ブラウザー拡張機能を開きます。
 1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) デバッガーを使用して、 [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. ページを再読み込み
+1. ページをリロード
 1. を選択します。 **[!UICONTROL ネットワーク]** デバッガーのツール
 1. フィルター条件 **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. 最初の呼び出しのイベント行の値を選択
@@ -428,40 +427,40 @@ XDM オブジェクトからマッピングされていない Target に役立�
 * [プロファイル属性](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes.html?lang=en)
 * [Recommendationsエンティティの属性](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=en)
 * [Recommendations予約パラメーター](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
-* カテゴリの値 [カテゴリ親和性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
+* カテゴリの値 [カテゴリの親和性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
 ### Target パラメーターのデータ要素の作成
 
 まず、プロファイル属性、エンティティ属性、カテゴリ値に対して追加のデータ要素を設定し、 `data` XDM 以外のデータを渡すために使用されるオブジェクト：
 
-* **`target.entity.id`** マッピング先 `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** マッピング先 `digitalData.product.0.productInfo.title`
+* **`target.entity.id`** マッピング先： `digitalData.product.0.productInfo.sku`
+* **`target.entity.name`** マッピング先： `digitalData.product.0.productInfo.title`
 * **`target.user.categoryId`** 次のカスタムコードを使用して、トップレベルカテゴリのサイト URL を解析します。
 
-   ```javascript
-   var cat = location.pathname.split(/[/.]+/);
-   if (cat[5] == 'products') {
-      return (cat[6]);
-   } else if (cat[5] != 'html') { 
-      return (cat[5]);
-   }
-   ```
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
 
 * **`data.content`** 次のカスタムコードを使用する。
 
-   ```javascript
-   var data = {
-      __adobe: {
-         target: {
-            "entity.id": _satellite.getVar("target.entity.id"),
-            "entity.name": _satellite.getVar("target.entity.name"),
-            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-            "user.categoryId": _satellite.getVar("target.user.categoryId")
-         }
-      }
-   }
-   return data;
-   ```
+  ```javascript
+  var data = {
+     __adobe: {
+        target: {
+           "entity.id": _satellite.getVar("target.entity.id"),
+           "entity.name": _satellite.getVar("target.entity.name"),
+           "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
+           "user.categoryId": _satellite.getVar("target.user.categoryId")
+        }
+     }
+  }
+  return data;
+  ```
 
 ### ページ型ルールの更新
 
@@ -469,7 +468,7 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 
 1. を開きます。 `all pages - library load - AA & AT` ルール
 1. を選択します。 `Adobe Experience Platform Web SDK - Send event` アクション
-1. を `data.content` データ要素をデータフィールドに追加します。
+1. 次を追加： `data.content` データ要素を「データ」フィールドに追加します。
 
    ![ルールに Target データを追加](assets/target-rule-data.png)
 
@@ -482,13 +481,13 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 
 ### デバッガーを使用した検証
 
-ルールが更新されたので、Debugger を使用して、データが正しく渡されているかどうかをAdobeで検証できます。
+ルールが更新されたので、Adobe Debuggerを使用して、データが正しく渡されているかどうかを検証できます。
 
-1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) 電子メールでログイン `test@adobe.com` およびパスワード `test`
+1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) 電子メールでログインします。 `test@adobe.com` およびパスワード `test`
 1. 製品の詳細ページに移動します。
 1. Adobe Experience Platform Debugger ブラウザー拡張機能を開き、 [タグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. ページを再読み込み
-1. を選択します。 **ネットワーク** ツールを使用して **Adobe Experience Platform Web SDK**
+1. ページをリロード
+1. を選択します。 **ネットワーク** ツールを使用し、次のようにフィルターします。 **Adobe Experience Platform Web SDK**
 1. 最初の呼び出しのイベント行の値を選択
 1. の下にキーがあることに注意してください。 `data` > `__adobe` > `target` また、製品、カテゴリ、ログイン状態に関する情報が入力されます。
 
@@ -501,7 +500,7 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 1. 開く [Adobe Target](https://experience.adobe.com/target)
 1. 次に移動： **[!UICONTROL オーディエンス]** セクション
 1. オーディエンスを作成し、 **[!UICONTROL カスタム]** 属性タイプ
-1. 検索 **[!UICONTROL パラメータ]** ～のフィールド `web`. ドロップダウンメニューに、Web ページの詳細に関連するすべての XDM フィールドが表示されます。
+1. を検索します。 **[!UICONTROL パラメーター]** ～のためのフィールド `web`. ドロップダウンメニューに、Web ページの詳細に関連するすべての XDM フィールドが表示されます。
 
 次に、ログイン状態のプロファイル属性が正常に渡されたことを検証します。
 
@@ -511,7 +510,7 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 Target Premium を使用している場合は、エンティティデータが正しく渡され、製品データがRecommendations製品カタログに書き込まれたことを検証することもできます。
 
 1. 次に移動： **[!UICONTROL Recommendations]** セクション
-1. 選択 **[!UICONTROL カタログ検索]** 左側のナビゲーション
+1. 選択 **[!UICONTROL カタログ検索]** 左側のナビゲーションで
 1. Luma サイトで以前に訪問した製品 SKU または製品名を検索します。 商品が商品カタログに表示されます。 新しい製品がRecommendationsの製品カタログで検索できるようになるまで、数分かかる場合があります。
 
 このレッスンが完了したら、Platform Web SDK を使用した、Adobe Targetの実装を実装する必要があります。
@@ -520,4 +519,4 @@ Target Premium を使用している場合は、エンティティデータが�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

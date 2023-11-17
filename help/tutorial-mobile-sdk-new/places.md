@@ -3,9 +3,9 @@ title: 場所を使用
 description: モバイルアプリで Places ジオロケーションサービスを使用する方法について説明します。
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ Places サービスで目標地点を定義します。
    ![ライブラリを作成](assets/places-create-library.png)
 1. を閉じるには、以下を実行します。 **[!UICONTROL ライブラリを管理]** ダイアログ、選択 **[!UICONTROL 閉じる]**.
 1. 戻る **[!UICONTROL POI 管理]**&#x200B;を選択します。 **[!UICONTROL POI をインポート]**.
-1. 選択 **[!UICONTROL 開始]** t**で[!UICONTROL 場所をインポート]**ダイアログ。
+1. 選択 **[!UICONTROL 開始]** （内） **[!UICONTROL 場所を読み込み]** ダイアログ。
 1. 選択 **[!DNL Luma]** ライブラリのリストから、
 1. 「**[!UICONTROL 次へ]**」を選択します。
    ![ライブラリを選択](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Places サービスで目標地点を定義します。
       ![タグアクション](assets/tags-action-mobile-core.png)
 
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横 **[!UICONTROL Mobile Core — データを添付]** アクション。
-   1. 選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL イベントを Edge ネットワークに転送する]**. このアクションは、イベントと追加のペイロードデータが Edge ネットワークに確実に転送されるようにします。
+   1. 選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL イベントを Edge ネットワークに転送する]**. このアクションは、イベントと追加のペイロードデータが Platform Edge ネットワークに確実に転送されるようにします。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 
 1. ルールを保存するには、「 **[!UICONTROL ライブラリに保存]**.
@@ -240,9 +240,9 @@ Places サービスで目標地点を定義します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 選択 **[!UICONTROL マップとシミュレーション]** をクリックします。
 1. マップを POI の 1 つの場所に移動します。
-1. 選択 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) POI の負荷をシミュレートします。  POI は、円とピンを使用して識別されます。
+1. 選択 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) POI の負荷をシミュレートします。 POI は、円とピンを使用して識別されます。
 1. POI を選択します。
-1. ポップアップからを選択します。 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL エントリイベントをシミュレート]**.
+1. ポップアップから、 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL エントリイベントをシミュレート]**.
    ![エントリイベントをシミュレート](assets/places-simulate.png)
 1. 選択 **[!UICONTROL イベント]** 左側のパネルから、シミュレーションしたイベントが表示されます。
    ![AJO 判定の検証](assets/places-events.png)
@@ -283,7 +283,7 @@ Places サービスで目標地点を定義します。
    ]
    ```
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 関数に追加します。次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
    // Process geolocation event
@@ -320,7 +320,7 @@ Places サービスで目標地点を定義します。
 
 1. マップを移動（ドラッグ）して、青い中央の円が POI の 1 つ（例：ロンドン）の上にあることを確認します。
 
-1. タップ <img src="assets/geobutton.png" width="20" /> カテゴリと名前が、ピン付きの赤い位置のラブルに表示されるまでです。
+1. タップ <img src="assets/geobutton.png" width="20" /> カテゴリと名前が、ピン付きの赤い位置のラベルに表示されるまでです。
 
 1. POI のラベルをタップすると、 **[!UICONTROL 近くの POI]** シート。
 
@@ -344,6 +344,8 @@ Places サービスで目標地点を定義します。
 
 >[!SUCCESS]
 >
->これで、Experience PlatformMobile SDK の Places 拡張機能を使用して、アプリの位置情報サービスを有効にしました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>これで、Experience PlatformMobile SDK の Places 拡張機能を使用して、アプリの位置情報サービスを有効にしました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[データをAdobe Analyticsにマッピング](analytics.md)**

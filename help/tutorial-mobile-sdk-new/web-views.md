@@ -4,9 +4,9 @@ description: モバイルアプリで WebViews を使用してデータ収集を
 jira: KT-6987
 hide: true
 exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 このレッスンでは、次の操作を実行します。
 
-* アプリケーションで WebViews に関する特別な考慮事項を考慮する必要がある理由を理解します。
+* アプリケーションで WebViews を特に考慮する必要がある理由を理解します。
 * トラッキングの問題を防ぐために必要なコードを理解します。
 
 ## トラッキングの問題の可能性
@@ -92,7 +92,7 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
 
-残念ながら、Web セッションのデバッグは制限されています。例えば、Web ビューセッションのデバッグを続行する場合は、ブラウザーのAdobe Experience Platform Debuggerを使用できません。
+残念ながら、Web セッションのデバッグは制限されています。 例えば、ブラウザーでAdobe Experience Platform Debuggerを使用して Web ビューセッションのデバッグを続行することはできません。
 
 >[!NOTE]
 >
@@ -101,6 +101,8 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
 
 >[!SUCCESS]
 >
->これで、Adobe Experience Platform Mobile SDK が既に発行した ECID と同じ ECID を使用して、Web ビューの URL に基づいてコンテンツを表示するアプリを設定しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>これで、Adobe Experience Platform Mobile SDK が既に発行した ECID と同じ ECID を使用して、Web ビューの URL に基づいてコンテンツを表示するアプリを設定しました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 次へ： **[ID](identity.md)**

@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
 exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 8%
 
 ---
@@ -69,7 +69,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 ## Adobe Experience Platform Datastream サービスの追加
 
-XDM データを Edge ネットワークからAdobe Experience Platformに送信するには、Adobe Experience Platformサービスを、 [データストリームの作成](create-datastream.md).
+Edge ネットワークからAdobe Experience Platformに XDM データを送信するには、Adobe Experience Platformサービスを、 [データストリームの作成](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -117,7 +117,7 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 1. スキーマを開きます（例： ）。 **[!DNL Luma Mobile App Event Schema]**.
 1. 有効にする **[!UICONTROL プロファイル]**.
 1. 選択 **[!UICONTROL このスキーマのデータの identityMap フィールドには、プライマリ ID が含まれます。]** 」と入力します。
-1. ****&#x200B;スキーマの保存.
+1. **[!UICONTROL スキーマを保存します。]**
 
    ![プロファイルのスキーマの有効化](assets/platform-profile-schema.png)
 
@@ -169,6 +169,6 @@ Platform インターフェイスで、
 
 >[!SUCCESS]
 >
->これで、Edge ネットワークだけでなくAdobe Experience Platformにもデータを送信するアプリを設定しました。<br>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>これで、Edge ネットワークだけでなくAdobe Experience Platformにもデータを送信するアプリを設定しました。<br>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[プッシュ通知の作成と送信](journey-optimizer-push.md)**

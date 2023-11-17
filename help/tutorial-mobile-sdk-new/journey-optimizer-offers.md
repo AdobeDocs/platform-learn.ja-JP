@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2618'
+source-wordcount: '2630'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Experience PlatformMobile SDK を使用して、モバイルアプリでJourney 
 
 Journey Optimizer Decision Management は、すべてのタッチポイントにわたって最適なオファーとエクスペリエンスを、適切なタイミングで顧客に提供できるようにします。 設計が完了したら、パーソナライズされたオファーを使用してオーディエンスのターゲティングをおこないます。
 
-![アーキテクチャ](assets/architecture-od.png)
+![アーキテクチャ](assets/architecture-ajo.png)
 
 決定管理を使用すると、Adobe Experience Platformで作成されたリッチなリアルタイムプロファイルにルールと制約を適用するマーケティングオファーの一元化されたライブラリと決定エンジンで、パーソナライゼーションを容易におこなえます。 その結果、顧客に適切なオファーを適切なタイミングで送信できます。 詳しくは、 [決定管理について](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) を参照してください。
 
@@ -59,11 +59,11 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 
 ### データストリーム設定を更新
 
-モバイルアプリから Edge ネットワークに送信されるデータがJourney Optimizer — 決定管理に確実に転送されるようにするには、 Experience Edge 設定を更新します。
+モバイルアプリから Platform Edge ネットワークに送信されたデータをJourney Optimizer — 決定管理に確実に転送するには、データストリームを更新します。
 
 1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
 1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
-1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Offer decisioning]**, **[!UICONTROL エッジのセグメント化]**、および **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 Target のレッスンに従う場合は、「 **[!UICONTROL パーソナライズ機能の宛先]** 同様に。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
+1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Offer decisioning]**, **[!UICONTROL エッジのセグメント化]**、および **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 Target のレッスンを実行する場合は、 **[!UICONTROL パーソナライズ機能の宛先]**、も参照してください。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
 1. データストリーム設定を保存するには、 **[!UICONTROL 保存]** .
 
    ![AEP データストリーム設定](assets/datastream-aep-configuration-offers.png)
@@ -88,7 +88,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 1. 選択 **[!UICONTROL 参照]** 上部のバーから。
 1. スキーマを選択して開きます。
 1. スキーマエディターで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** をクリックします。
-1. Adobe Analytics の **[!UICONTROL フィールドグループを追加]** ダイアログ ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) を検索 `proposition`を選択します。 **[!UICONTROL エクスペリエンスイベント — 提案インタラクション]** を選択し、 **[!UICONTROL フィールドグループを追加]**. このフィールドグループは、オファーに関連するエクスペリエンスイベントデータ、つまり提示されるオファーを、そのコレクション、決定、その他のパラメーターの一部として収集します（このレッスンの後半を参照）。 しかし、オファーに何が起きているかも、オファーは表示され、インタラクションがおこなわれ、却下されるなどです。
+1. Adobe Analytics の **[!UICONTROL フィールドグループを追加]** ダイアログ ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) を検索 `proposition`を選択します。 **[!UICONTROL エクスペリエンスイベント — 提案インタラクション]** を選択し、 **[!UICONTROL フィールドグループを追加]**. このフィールドグループは、オファーに関連するエクスペリエンスイベントデータ、つまり提示されるオファーを、そのコレクション、決定、その他のパラメーターの一部として収集します（このレッスンの後半を参照）。 しかし、オファーに関しても何が起こっているのでしょうか？ 表示されるか、操作されるか、閉じられるかなど。
    ![提案](assets/schema-fieldgroup-proposition.png)
 1. 選択 **[!UICONTROL 保存]** をクリックして、スキーマに対する変更を保存します。
 
@@ -108,7 +108,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 
 実際にオファーを作成する前に、モバイルアプリでこれらのオファーを配置する方法と場所を定義する必要があります。 決定管理では、この目的の配置を定義し、JSON ペイロードをサポートするモバイルチャネルの配置を定義します。
 
-1. Journey Optimizer UI で、「 」を選択します。 ![コンポーネント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL コンポーネント]** から **[!UICONTROL 決定管理]** をクリックします。
+1. Journey Optimizer UI で、 ![コンポーネント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL コンポーネント]** から **[!UICONTROL 決定管理]** をクリックします。
 
 1. 選択 **[!UICONTROL 配置]** 上部のバーから。
 
@@ -145,7 +145,7 @@ Mobile JSON 配置を作成するには：
          ```json
          { 
              "title": "Juno Jacket",
-             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
+             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
              "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
          }  
          ```
@@ -178,35 +178,33 @@ Mobile JSON 配置を作成するには：
       | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma - Desire Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
       | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-      | Luma - Aero Daily Fitness Tee | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+      | Luma - Aero Daily Fitness Tee | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
 
       {style="table-layout:fixed"}
 
 1. 最後の手順では、フォールバックオファーを作成する必要があります。これは、他のオファーを受ける資格がない場合に顧客に送信されるオファーです。
    1. 選択 **[!UICONTROL オファーを作成]**.
-   1. Adobe Analytics の **[!UICONTROL 詳細]** 一歩 **[!UICONTROL 新しくパーソナライズされたオファーを作成]**:
-   1. を入力します。 **[!UICONTROL 名前]** （例：オファー） `Luma - Fallback Offer`をクリックし、 **[!UICONTROL 開始日時]** および **[!UICONTROL 終了日時]**.
-   1. 「**[!UICONTROL 次へ]**」を選択します。
+   1. Adobe Analytics の **[!UICONTROL 新しいオファー]** ダイアログ、選択 **[!UICONTROL パーソナライズされたオファー]** を選択し、 **[!UICONTROL 次へ]**.
+   1. Adobe Analytics の **[!UICONTROL 詳細]** 一歩 **[!UICONTROL 新しいフォールバックオファーを作成]**、 **[!UICONTROL 名前]** （例：オファー） `Luma - Fallback Offer`をクリックし、次を選択します。 **[!UICONTROL 次へ]**.
 
-1. Adobe Analytics の **[!UICONTROL 表示域を追加]** の手順 **[!UICONTROL 新しくパーソナライズされたオファーを作成]** 画面：
-   1. 選択 ![モバイル](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL モバイル]** から **[!UICONTROL チャネル]** リストと選択 **[!UICONTROL モバイル JSON]** から **[!UICONTROL 配置]** リスト。
-   1. 選択 **[!UICONTROL カスタム]** 対象： **[!UICONTROL コンテンツ]**.
-   1. 選択 **[!UICONTROL コンテンツを追加]**. Adobe Analytics の **[!UICONTROL パーソナライゼーションを追加]** ダイアログ：
-      1. 次の JSON を入力します。
+   1. Adobe Analytics の **[!UICONTROL 表示域を追加]** 一歩  **[!UICONTROL 新しいフォールバックオファーを作成]**:
+      1. 選択 ![モバイル](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL モバイル]** から **[!UICONTROL チャネル]** リストと選択 **[!UICONTROL モバイル JSON]** から **[!UICONTROL 配置]** リスト。
+      1. 選択 **[!UICONTROL カスタム]** 対象： **[!UICONTROL コンテンツ]**.
+      1. 選択 **[!UICONTROL コンテンツを追加]**.
+      1. Adobe Analytics の **[!UICONTROL パーソナライゼーションを追加]** ダイアログで、次の JSON を入力して、 **[!UICONTROL 保存]**:
 
          ```json
          {  
-             "title": "Luma",
-             "text": "Your store for sports wear and equipment.", 
-             "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+            "title": "Luma",
+            "text": "Your store for sports wear and equipment.", 
+            "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
          }  
          ```
 
-      1. 「**[!UICONTROL 保存]**」を選択します。
-   1. 「**[!UICONTROL 次へ]**」を選択します。
+      1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. Adobe Analytics の **[!UICONTROL レビュー]** 一歩 **[!UICONTROL 新しくパーソナライズされたを作成]** オファー：
+1. Adobe Analytics の **[!UICONTROL レビュー]** 一歩 **[!UICONTROL 新しいフォールバックを作成]** オファー：
    1. オファーを確認し、「 」を選択します。 **[!UICONTROL 完了]**.
    1. Adobe Analytics の **[!UICONTROL オファーを保存]** ダイアログ、選択 **[!UICONTROL 保存して承認]**.
 
@@ -292,7 +290,7 @@ Mobile JSON 配置を作成するには：
 >以下を完了した場合、 [SDK のインストール](install-sdks.md) 」セクションに移動した場合は、SDK が既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、 [AEP 最適化](https://github.com/adobe/aepsdk-messaging-ios.git) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Xcode で、 [AEP 最適化](https://github.com/adobe/aepsdk-messaging-ios) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
 1. 確認 `AEPOptimize` は、インポートのリストの一部です。
 
@@ -317,6 +315,8 @@ Mobile JSON 配置を作成するには：
        Assurance.self
    ]
    ```
+
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL 決定]** 」をクリックします。 を更新します。 `activityId` および `placementId` 値と、Journey Optimizerインターフェイスからコピーした決定範囲の詳細。
 
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 関数に置き換えます。 次のコードを追加します。
 
@@ -356,9 +356,9 @@ Mobile JSON 配置を作成するには：
    * は、(Journey Optimizer — 決定管理で定義した ) 決定範囲に基づいて、現在のプロファイルの提案を取得します。
    * 提案からオファーを取得します。
    * オファーのコンテンツをアプリに正しく表示できるようにアンラップし、
-   * トリガー `displayed()` オファーが表示されたことを知らせるイベントを Edge ネットワークに送り返す、オファーに対するアクション。
+   * トリガー `displayed()` オファーが表示されたことを通知するイベントを Edge ネットワークに送り返す、オファーに対するアクション。
 
-1. まだ **[!DNL EdgeOffersView]**&#x200B;を使用して、次のコードを `.onFirstAppear` 修飾子 このコードにより、オファーを更新するためのコールバックが 1 回だけ登録されます。
+1. まだ **[!DNL EdgeOffersView]**&#x200B;を使用して、次のコードを `.onFirstAppear` 修飾子 このコードにより、オファーを更新するためのコールバックが 1 回だけ登録されるようになります。
 
    ```swift
    // Invoke callback for offer updates
@@ -414,6 +414,8 @@ Mobile JSON 配置を作成するには：
 
 >[!SUCCESS]
 >
->Experience PlatformMobile SDK のJourney Optimizer - Decisioning 拡張機能を使用して、アプリにオファーを表示できるようにしました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Experience PlatformMobile SDK のJourney Optimizer - Decisioning 拡張機能を使用して、アプリにオファーを表示できるようにしました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[A/B テストの実行](target.md)**

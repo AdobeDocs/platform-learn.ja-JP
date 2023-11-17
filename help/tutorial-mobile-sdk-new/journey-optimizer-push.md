@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2701'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Experience PlatformMobile SDK とJourney Optimizerを使用して、モバイルアプリ用のプッシュ通知を作成する方法について説明します。
 
-Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞ったオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのプッシュ通知データフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞ったオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのプッシュ通知データフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
 
 ![アーキテクチャ](assets/architecture-ajo.png)
 
@@ -30,12 +30,12 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 * SDK が正常にビルドされ、インストールされ、設定された状態でアプリを実行しました。
 * アプリをAdobe Experience Platform用に設定します。
-* Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
+* Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
    * アプリケーションサーフェスを作成します。
    * ジャーニーの作成.
    * メッセージを作成。
    * メッセージプリセットの作成.
-* 証明書、識別子、キーを作成するのに十分なアクセス権を持つ有料Apple開発者アカウント。
+* **有料Apple開発者アカウント** 証明書、識別子、キーを作成するのに十分なアクセス権を持つ
 * 物理iOSデバイスまたはテスト用のシミュレーター。
 
 ## 学習内容
@@ -159,7 +159,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 
 ## 署名
 
-Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-optimizer-push.md) そして [アプリ内メッセージの作成と送信](journey-optimizer-inapp.md) このチュートリアルのレッスン。 これらのレッスンでは、Appleプロビジョニングプロファイルを必要とします。 **には有料のApple開発者アカウントが必要です**.
+プッシュ通知を送信するには、Luma アプリへの署名が必要で、 **には有料のApple開発者アカウントが必要です**.
 
 アプリの署名を更新するには：
 
@@ -183,15 +183,15 @@ Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-
 >
 >iOSアプリでプッシュ通知を実装およびテストするには、 **有料** Apple開発者アカウント。 有料Apple開発者アカウントを持っていない場合は、このレッスンの残りをスキップできます。
 
-1. Xcode で、「 **[!DNL Luma]** から **[!UICONTROL ターゲット]** リストで、 **[!UICONTROL 署名と機能]** タブで、 **[!UICONTROL +機能]** 「 」ボタンをクリックし、「 **[!UICONTROL プッシュ通知]**. これにより、アプリがプッシュ通知を受信できるようになります。
+1. Xcode で、「 **[!DNL Luma]** から **[!UICONTROL ターゲット]** リストで、 **[!UICONTROL 署名と機能]** タブで、 **[!UICONTROL +機能]** 「 」ボタンをクリックし、「 **[!UICONTROL プッシュ通知]**. これにより、アプリがプッシュ通知を受け取れるようになります。
 
 1. 次に、通知拡張機能をアプリに追加する必要があります。 に戻ります。 **[!DNL General]** 」タブで「 **[!UICONTROL +]** アイコン **[!UICONTROL ターゲット]** 」セクションに入力します。
 
-1. 新しいターゲットのテンプレートを選択するよう求めるプロンプトが表示されます。 選択 **[!UICONTROL 通知サービス拡張]** 次に、 **[!UICONTROL 次へ]**.
+1. 新しいターゲットのテンプレートを選択するよう求められます。 選択 **[!UICONTROL 通知サービス拡張]** 次に、 **[!UICONTROL 次へ]**.
 
 1. 次のウィンドウで、 `NotificationExtension` 拡張機能の名前として追加し、「 **[!UICONTROL 完了]** 」ボタンをクリックします。
 
-これで、以下の画面のように、プッシュ通知拡張機能がアプリに追加されました。
+これで、以下の画面のようなプッシュ通知拡張機能がアプリに追加されました。
 
 ![PUSN 通知拡張機能](assets/xcode-signing-capabilities-pushnotifications.png)
 
@@ -205,7 +205,7 @@ Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-
 >以下を完了した場合、 [SDK のインストール](install-sdks.md) 」セクションに移動した場合は、SDK が既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、 [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios.git) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Xcode で、 [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
 1. 確認 `AEPMessaging` は、インポートのリストの一部です。
 
@@ -251,7 +251,7 @@ Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-
 
 ### スキーマを更新
 
-新しいイベントタイプを定義します。スキーマで定義されているイベントのリストの一部として、まだ使用できません。 後でプッシュ通知をトリガーする際に、このイベントタイプを使用します。
+新しいイベントタイプを定義します。スキーマで定義されているイベントのリストの一部として、まだ使用できません。 このイベントタイプは、後でプッシュ通知をトリガーする際に使用します。
 
 1. Journey Optimizer UI で、 **[!UICONTROL スキーマ]** をクリックします。
 1. 選択 **[!UICONTROL 参照]** 」をクリックします。
@@ -304,7 +304,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
    1. 「**[!UICONTROL 保存]**」を選択します。
       ![イベントの手順 2 を編集](assets/ajo-edit-event2.png)
 
-このチュートリアルの一部として前に作成したモバイルアプリエクスペリエンスイベントスキーマに基づくイベント設定を作成しました。 このイベント設定は、特定のイベントタイプ (`application.test`) を使用する場合、次の手順で構築するジャーニーをトリガーにできるのは、モバイルアプリから開始した特定のタイプを持つイベントのみです。 実際のシナリオでは、外部サービスからプッシュ通知を送信する場合も同じ概念が当てはまります。外部アプリケーションから、ジャーニーをトリガーする前に、特定のフィールドを持つExperience Platformにエクスペリエンスイベントを送信します。
+このチュートリアルの一部として前に作成したモバイルアプリエクスペリエンスイベントスキーマに基づくイベント設定を作成しました。 このイベント設定は、特定のイベントタイプ (`application.test`) の場合、その特定のタイプを持つイベントのみがモバイルアプリから開始され、次の手順で構築したジャーニーをトリガーにします。 実際のシナリオでは、外部サービスからプッシュ通知を送信する場合も同じ概念が当てはまります。外部アプリケーションから、ジャーニーをトリガーする前に、特定のフィールドを持つExperience Platformにエクスペリエンスイベントを送信します。
 
 ### ジャーニーの作成
 
@@ -425,6 +425,8 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
 
 >[!SUCCESS]
 >
->これで、Journey Optimizerと、Experience PlatformMobile SDK 用のJourney Optimizer拡張機能を使用して、アプリのプッシュ通知を有効にしました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>これで、Journey Optimizerと、Experience PlatformMobile SDK 用のJourney Optimizer拡張機能を使用して、アプリのプッシュ通知を有効にしました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[アプリ内メッセージの作成と送信](journey-optimizer-inapp.md)**

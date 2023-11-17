@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 5%
+source-wordcount: '1546'
+ht-degree: 6%
 
 ---
 
@@ -32,9 +32,8 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
 * アプリをAdobe Experience Platform用に設定します。
-* Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
+* Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). また、次のJourney Optimizer機能に対する十分な権限が必要です。
    * キャンペーンの管理.
-* 証明書、識別子、キーを作成するのに十分なアクセス権を持つ有料Apple開発者アカウント。
 * 物理iOSデバイスまたはテスト用のシミュレーター。
 
 
@@ -67,16 +66,19 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 1. 「**[!UICONTROL アプリ ID（iOS バンドル ID）]**」フィールドにモバイルアプリのバンドル ID を入力します。例：`com.adobe.luma.tutorial.swiftui`。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![アプリのサーフェス設定](assets/push-app-surface-config.png)
+   ![アプリのサーフェス設定](assets/push-app-surface-config-inapp.png)
 
 ### データストリーム設定を更新
 
-モバイルアプリから Edge ネットワークにデータが確実に送信されるようにするには、 Experience Edge 設定を更新します。
+モバイルアプリから Edge ネットワークにデータが確実に送信されるようにするには、Experience Edge の設定を更新します。
+
+
 
 1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
 1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
 1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
 1. データストリーム設定を保存するには、 **[!UICONTROL 保存]**.
+
 
    ![AEP データストリーム設定](assets/datastream-aep-configuration.png)
 
@@ -101,27 +103,6 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 >表示されない場合 `AJO Push Tracking Experience Event Dataset` 必要に応じて、カスタマーケアにお問い合わせください。
 >
 
-
-## 署名
-
-Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-optimizer-push.md) そして [アプリ内メッセージの作成と送信](journey-optimizer-inapp.md) このチュートリアルのレッスン。 これらのレッスンでは、Appleプロビジョニングプロファイルを必要とします。 **には有料のApple開発者アカウントが必要です**.
-
-アプリの署名を更新するには：
-
-1. Xcode でアプリに移動します。
-1. 選択 **[!DNL Luma]** をクリックします。
-1. を選択します。 **[!DNL Luma]** ターゲット。
-1. を選択します。 **署名と機能** タブをクリックします。
-1. 設定 **[!UICONTROL 署名を自動管理]**, **[!UICONTROL チーム]**、および **[!UICONTROL バンドル識別子]**&#x200B;または、特定のApple開発プロビジョニングの詳細を使用します。
-
-   >[!IMPORTANT]
-   >
-   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. このチュートリアルの完成版（例： ）は、を使用します。 `com.adobe.luma.tutorial.swiftui`.
-
-
-   ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
-
-
 ### アプリでのJourney Optimizerの実装
 
 前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、メッセージング SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
@@ -131,7 +112,7 @@ Luma アプリへの署名は、 [プッシュ通知の作成と送信](journey-
 >以下を完了した場合、 [SDK のインストール](install-sdks.md) 」セクションに移動した場合は、SDK が既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、 [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios.git) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Xcode で、 [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
 1. 確認 `AEPMessaging` は、インポートのリストの一部です。
 
@@ -263,10 +244,12 @@ Assurance UI でアプリ内メッセージを検証できます。
 
 ## 次の手順
 
-これで、関連する適用可能なアプリ内メッセージの追加を開始するためのすべてのツールが用意されました。  例えば、アプリ内で追跡している特定のインタラクションに基づいて製品をプロモーションする場合などです。
+これで、関連する適用可能なアプリ内メッセージの追加を開始するためのすべてのツールが用意されました。 例えば、アプリ内で追跡している特定のインタラクションに基づいて製品をプロモーションする場合などです。
 
 >[!SUCCESS]
 >
->アプリでアプリ内メッセージを有効にし、Experience PlatformMobile SDK 用のJourney OptimizerとJourney Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>アプリでアプリ内メッセージを有効にし、Experience PlatformMobile SDK 用のJourney OptimizerとJourney Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[オファーの作成と表示](journey-optimizer-offers.md)**

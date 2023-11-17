@@ -3,9 +3,9 @@ title: チュートリアルの権限の設定
 description: Experience PlatformWeb SDK へのアクセスをリクエストする方法と、「 Web SDK を使用したAdobe Experience Cloudの実装」チュートリアルを完了するために必要な権限の設定方法について説明します。
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ Experience PlatformWeb SDK へのアクセスをリクエストする方法と�
 ## データ収集
 
 * 次の権限を持っている： **[!UICONTROL 開発]**, **[!UICONTROL 編集]**, **[!UICONTROL 承認]**, **[!UICONTROL 公開]**, **[!UICONTROL 拡張機能の管理]**, **[!UICONTROL 環境の管理]**、および **[!UICONTROL プロパティを管理]**. タグ権限について詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja).
-* オプションのイベント転送レッスンを完了する場合は、エッジ転送と権限項目を含む製品ライセンスをお持ちください **[!UICONTROL プラットフォーム]** > **[!UICONTROL Edge]**
+* オプションのイベント転送レッスンを完了する場合は、エッジ転送と権限項目を含む製品ライセンスをお持ちください。 **[!UICONTROL プラットフォーム]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
@@ -36,11 +36,11 @@ Platform のアクセス制御について詳しくは、 [ドキュメント](h
 
 ## Adobe Analytics
 
-オプションのAdobe Analyticsレッスンでは、 [レポートスイート設定、処理ルールおよびAnalysis Workspaceへの管理者アクセス権](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
+オプションのAdobe Analyticsレッスンの場合、 [レポートスイート設定、処理ルールおよびAnalysis Workspaceへの管理者アクセス権](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
 
 ## Adobe Target
 
-オプションのAdobe Targetレッスンでは、 [編集者または承認者](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) にアクセスします。
+オプションのAdobe Targetレッスンの場合、 [編集者または承認者](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) にアクセスします。
 
 ## Adobe Audience Manager
 
@@ -52,4 +52,4 @@ Platform のアクセス制御について詳しくは、 [ドキュメント](h
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

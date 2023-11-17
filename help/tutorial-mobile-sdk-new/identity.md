@@ -4,9 +4,9 @@ description: モバイルアプリで ID データを収集する方法を説明
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 >[!NOTE]
 >
->Mobile SDK は、アプリがインストールされると、Experience CloudID(ECID) という名前の一意の ID を独自の名前空間に生成します。 この ECID はモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信されます。 ECID が削除されるのは、ユーザーがアプリをアンインストールしたとき、またはユーザーが Mobile SDK のグローバルプライバシーステータスを optedout に設定したときにです。 サンプルの Luma アプリで、アプリを削除してから再インストールし、独自の一意の ECID を持つ新しいプロファイルを作成する必要があります。
+>Mobile SDK は、アプリがインストールされると、Experience CloudID(ECID) という名前の一意の ID を独自の名前空間に生成します。 この ECID はモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信されます。 ECID が削除されるのは、ユーザーがアプリをアンインストールしたとき、またはユーザーが Mobile SDK のグローバルプライバシーステータスをオプトアウトに設定したときです。 サンプルの Luma アプリで、アプリを削除してから再インストールし、独自の一意の ECID を持つ新しいプロファイルを作成する必要があります。
 
 
 新しい ID 名前空間を作成するには：
@@ -101,10 +101,10 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. に移動します。 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
 
    ```swift
-   // Call updateIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -169,11 +169,13 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 >[!INFO]
 >
->ECID をリセットするコードがアプリにない。つまり、アプリケーションのアンインストールと再インストールを通じてのみ、ECID をリセット（およびデバイス上の新しい ECID で新しいプロファイルを効果的に作成）できます。 識別子のリセットを実装するには、 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) および [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 呼び出し。 ただし、プッシュ通知識別子を使用する場合は、 [プッシュ通知の送信](journey-optimizer-push.md)) の代わりに使用され、その識別子がデバイス上の別の「スティッキー」プロファイル識別子になります。
+>ECID をリセットするコードがアプリにないので、ECID をアンインストールして再インストールするだけで、ECID をリセット（新しい ECID で新しいプロファイルを効果的に作成）できます。 識別子のリセットを実装するには、 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) および [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 呼び出し。 ただし、プッシュ通知識別子を使用する場合は、 [プッシュ通知の送信](journey-optimizer-push.md)) の代わりに使用され、その識別子がデバイス上の別の「スティッキー」プロファイル識別子になります。
 
 
 >[!SUCCESS]
 >
->これで、Edge ネットワーク内の ID を更新するアプリを設定し、（設定時に）Adobe Experience Platformで ID を更新するようになりました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>これで、Edge ネットワーク内の ID を更新するアプリを設定し、（設定時に）Adobe Experience Platformで ID を更新するようになりました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 次へ： **[プロファイルデータを収集](profile.md)**

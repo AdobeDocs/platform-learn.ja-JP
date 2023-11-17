@@ -4,9 +4,9 @@ description: モバイルアプリイベント用の XDM スキーマを作成�
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 16%
 
 ---
@@ -134,7 +134,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 >[!NOTE]
 >
->グループ内のすべてのフィールドを使用する必要はないことに注意してください。 また、スキーマの簡潔さと理解しやすい内容を維持するのに役立つ場合は、フィールドを削除できます。 役立つ場合は、スキーマを空のデータレイヤーと考えることができます。 アプリでは、適切な時間に関連する値を設定します。
+>グループ内のすべてのフィールドを使用する必要はないことに注意してください。 また、フィールドを削除して、スキーマを簡潔かつ理解しやすくすることもできます。 役立つ場合は、スキーマを空のデータレイヤーと考えることができます。 アプリでは、適切な時間に関連する値を設定します。
 
 The [!UICONTROL 消費者エクスペリエンスイベント] フィールドグループのデータタイプは [!UICONTROL Web 情報]：ページビューやリンククリックなどのイベントを表します。 書き込み時には、この機能に対するモバイルアプリの同等性がないので、独自のを作成します。
 
@@ -234,6 +234,8 @@ The [!UICONTROL 消費者エクスペリエンスイベント] フィールド�
 
 >[!SUCCESS]
 >
->これで、このチュートリアルの残りの部分で使用するスキーマが作成されました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>これで、このチュートリアルの残りの部分で使用するスキーマが作成されました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[の作成 [!UICONTROL datastream]](create-datastream.md)**

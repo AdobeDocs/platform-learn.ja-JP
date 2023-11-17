@@ -3,16 +3,16 @@ title: Experience PlatformWeb SDK を使用したAdobe Analyticsのセットア�
 description: Experience PlatformWeb SDK を使用したAdobe Analyticsの設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 17b87daf399b11fb698d34bd6f1b93fa8cbaa1d4
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '3554'
-ht-degree: 1%
+source-wordcount: '3545'
+ht-degree: 2%
 
 ---
 
 # Platform Web SDK でのAdobe Analyticsの設定
 
-次を使用してAdobe Analyticsを設定する方法を説明します。 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)では、タグルールを作成してAdobe Analyticsにデータを送信し、Analytics が期待どおりにデータをキャプチャしていることを検証します。
+次を使用してAdobe Analyticsを設定する方法を説明します。 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=ja)では、タグルールを作成してAdobe Analyticsにデータを送信し、Analytics が期待どおりにデータをキャプチャしていることを検証します。
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ja) は、顧客像を把握し、顧客インテリジェンスを活用してビジネスを導く力をユーザーに提供する、業界最先端のアプリケーションです。
 
@@ -20,18 +20,18 @@ ht-degree: 1%
 
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
-* Adobe Analytics用の XDM スキーマの設定と、自動マッピングと Analytics 用の手動でマッピングされた XDM 変数の違いについて説明します
+* Adobe Analytics用の XDM スキーマの設定と、自動マッピングと Analytics 用の手動でマッピングされた XDM 変数の違いについて説明します。
 * Adobe Analyticsを有効にするためのデータストリームの設定
 * 個々のデータ要素または配列全体のデータ要素を XDM オブジェクトにマッピングする
 * XDM オブジェクトを使用してAdobe Analyticsでページビューをキャプチャします
 * Adobe Analytics製品文字列の XDM オブジェクトを使用した e コマースデータのキャプチャ
-* Adobe Analytics変数が XDM オブジェクトで設定されていることを検証するには、Experience PlatformDebugger を使用します
+* Adobe Analytics変数が XDM オブジェクトで設定されていることを検証するには、Experience PlatformDebugger を使用します。
 * Adobe Analyticsの処理ルールを使用したカスタム変数の設定
 * リアルタイムレポートを使用して、Adobe Analyticsがデータを取得したことを検証する
 
 ## 前提条件
 
-タグ、Adobe Analytics、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} ログインおよびショッピング機能。
+タグ、Adobe Analytics、および [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} ログイン機能とショッピング機能
 
 テスト/開発レポートスイート ID が少なくとも 1 つ必要です。 このチュートリアルで使用できるテスト/開発用レポートスイートがない場合は、 [1 つを作成してください](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja).
 
@@ -74,8 +74,8 @@ Adobe Analyticsに自動マッピングされる XDM 変数については、 [A
 | `commerce.purchases.value` | 購入 |
 | `commerce.order.currencyCode` | s.currencyCode |
 | `commerce.order.purchaseID` | s.purchaseID |
-| `productListItems[].SKU` | s.products=;product name;;;（プライマリ — 後述の注意を参照） |
-| `productListItems[].name` | s.products=;product name;;;（フォールバック — 以下の注意を参照） |
+| `productListItems[].SKU` | s.products=;product name;;;;（primary — 後述の注意を参照） |
+| `productListItems[].name` | s.products=;product name;;;;（フォールバック — 後述の注意を参照） |
 | `productListItems[].quantity` | s.products=;;product quantity;; |
 | `productListItems[].priceTotal` | s.product=;;;product price;; |
 
@@ -91,18 +91,17 @@ Adobe Analyticsに自動マッピングされる XDM 変数については、 [A
 
 Platform Web SDK は、Web サイトから Platform Edge Network にデータを送信します。 次に、データストリームが Platform Edge Network に対し、そのデータを転送する場所 ( この場合はAdobe Analyticsレポートスイート ) を伝えます。
 
-1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} インターフェイス
+1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
 1. 以前に作成したを選択 `Luma Web SDK` datastream
 
    ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk.png)
 
-1. 選択 **[!UICONTROL サービスを追加]**
-
+1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームにサービスを追加する](assets/analytics-addService.png)
-1. 選択 **[!UICONTROL Adobe Analytics]** を **[!UICONTROL サービス]**
+1. 選択 **[!UICONTROL Adobe Analytics]** として **[!UICONTROL サービス]**
 1. 次を入力します。  **[!UICONTROL レポートスイート ID]** （開発レポートスイートの）
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データストリーム保存分析](assets/analytics-datastream-save.png)
 
@@ -121,15 +120,15 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 ### e コマースデータ要素の作成
 
-「データ要素の作成」レッスンでは、次の操作をおこないます。 [JavaScript データ要素の作成](create-data-elements.md#create-data-elements-to-capture-the-data-layer) がキャプチャしたコンテンツと id の詳細。 次に、e コマースデータをキャプチャするための追加のデータ要素を作成します。 これは、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} は、買い物かご内の製品詳細ページと製品に異なるデータレイヤー構造を使用します。各シナリオのデータ要素を作成する必要があります。 Luma データレイヤーから必要なものを取得するには、いくつかのカスタムコードデータ要素を作成する必要があります。独自のサイトにを実装する際に必要になる場合と不要な場合があります。 この場合、買い物かごの項目の配列をループして、各製品の特定の詳細を取得する必要があります。 以下の提供されているコードスニペットを使用します。
+「データ要素の作成」レッスンでは、次の操作をおこないます。 [JavaScript データ要素の作成](create-data-elements.md#create-data-elements-to-capture-the-data-layer) がキャプチャしたコンテンツと id の詳細。 次に、e コマースデータをキャプチャするための追加のデータ要素を作成します。 これは、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} は、買い物かご内の製品詳細ページと製品に異なるデータレイヤー構造を使用します。各シナリオのデータ要素を作成する必要があります。 Luma データレイヤーから必要なものを取得するには、いくつかのカスタムコードデータ要素を作成する必要があります。独自のサイトにを実装する際に必要になる場合と不要な場合があります。 この場合、買い物かごの項目の配列をループして、各製品の特定の詳細を取得する必要があります。 以下の提供されているコードスニペットを使用します。
 
 1. チュートリアルに使用するタグプロパティを開きます。
 1. に移動します。 **[!UICONTROL データ要素]**
 1. 選択 **[!UICONTROL データ要素を追加]**
 1. 名前を付ける **`product.productInfo.sku`**
-1. 以下を使用： **[!UICONTROL カスタムコード]** **[!UICONTROL データ要素タイプ]**
-1. 次のチェックボックスをオンにします。 **[!UICONTROL 強制的に小文字に変換値]** および **[!UICONTROL クリーンテキスト]** オフ
-1. 終了 `None` を **[!UICONTROL ストレージ期間]** の設定は、ページごとにこの値が異なるので、
+1. 以下を使用します。 **[!UICONTROL カスタムコード]** **[!UICONTROL データ要素タイプ]**
+1. 次のチェックボックスをオンにしておきます。 **[!UICONTROL 強制的に小文字に変換値]** および **[!UICONTROL クリーンテキスト]** オフ
+1. 終了 `None` として **[!UICONTROL ストレージ期間]** の設定は、ページごとにこの値が異なるので、
 1. 選択 **[!UICONTROL 編集画面を開く]**
 
    ![カスタムコードデータ要素](assets/data-element-open-editor.jpg)
@@ -155,32 +154,32 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 * **`product.productInfo.title`**
 
-   ```javascript
-   var cart = digitalData.product;
-   var cartItem;
-   cart.forEach(function(item){
-   cartItem = item.productInfo.title;
-   });
-   return cartItem;
-   ```
+  ```javascript
+  var cart = digitalData.product;
+  var cartItem;
+  cart.forEach(function(item){
+  cartItem = item.productInfo.title;
+  });
+  return cartItem;
+  ```
 
 * **`cart.productInfo`**
 
-   ```javascript
-   var cart = digitalData.cart.cartEntries;
-   var cartItem = [];
-   cart.forEach(function(item, index, array){
-   var qty = parseInt(item.qty);
-   var price = parseInt(item.price);
-   cartItem.push({
-   "SKU": item.sku,
-   "name":item.title,
-   "quantity":qty,
-   "priceTotal":price
-   });
-   });
-   return cartItem;
-   ```
+  ```javascript
+  var cart = digitalData.cart.cartEntries;
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "name":item.title,
+  "quantity":qty,
+  "priceTotal":price
+  });
+  });
+  return cartItem;
+  ```
 
 これらのデータ要素を追加し、 [データ要素の作成](create-data-elements.md) レッスンでは、次のデータ要素が必要になります。
 
@@ -200,11 +199,10 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 >[!IMPORTANT]
 >
->このチュートリアルでは、イベントごとに異なる XDM オブジェクトを作成します。 つまり、ページ名や identityMap など、すべてのヒットで「グローバル」に使用可能と見なされる変数を再マッピングする必要があります。 ただし、 [オブジェクトのマージ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html#merged-objects) または [マッピングテーブル](https://exchange.adobe.com/experiencecloud.details.103136.mapping-table.html) 実際の状況で XDM オブジェクトをより効率的に管理する。 このレッスンでは、グローバル変数を次のように扱います。
+>このチュートリアルでは、イベントごとに異なる XDM オブジェクトを作成します。 つまり、ページ名や identityMap など、すべてのヒットで「グローバル」に使用可能と見なされる変数を再マッピングする必要があります。 ただし、 [オブジェクトのマージ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html#merged-objects) または、 [マッピングテーブル](https://exchange.adobe.com/experiencecloud.details.103136.mapping-table.html) 実際の状況で XDM オブジェクトをより効率的に管理する。 このレッスンでは、グローバル変数を次のように扱います。
 >
->* **[!UICONTROL identityMap]** を使用して、 [ID マップデータ要素の作成](create-data-elements.md#create-identity-map-data-element) 運動 [データ要素の作成](create-data-elements.md) レッスン。
->* **[!UICONTROL web]** 次のようにコンテンツをキャプチャするオブジェクト [content XDM オブジェクト](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) 運動 [データ要素の作成](create-data-elements.md) 上記のすべてのデータ要素に関するレッスンです。
-
+>* **[!UICONTROL identityMap]** を使用して、 [ID マップデータ要素の作成](create-data-elements.md#create-identity-map-data-element) ～の運動 [データ要素の作成](create-data-elements.md) レッスン。
+>* **[!UICONTROL web]** 次のようにコンテンツをキャプチャするオブジェクト [content XDM オブジェクト](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) ～の運動 [データ要素の作成](create-data-elements.md) 上記のすべてのデータ要素に関するレッスンです。
 
 ### ページビュー数を増分
 
@@ -214,21 +212,21 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 1. 下にスクロールし、を選択して開くまで待ちます。 `web.webPageDetails`
 1. を選択して、 **[!UICONTROL pageViews]** object
 1. 設定 **[!UICONTROL 値]** から `1`
-1. 選択 [!UICONTROL **保存**]
+1. 「[!UICONTROL **保存**]」を選択します
 
    ![ページビュー XDM オブジェクト](assets/analytics-xdm-pageviews.png)
 
 >[!TIP]
 >
->このフィールドは、 **`s.t()`** を使用する Analytics のページビュービーコン `AppMeasurement.js`. リンククリックビーコンの場合、 `webInteraction.linkClicks.value` から `1`
+>このフィールドは、 **`s.t()`** 次を使用する Analytics のページビュービーコン `AppMeasurement.js`. リンククリックビーコンの場合、 `webInteraction.linkClicks.value` から `1`
 
 
 ### 製品文字列の設定
 
-製品文字列にマッピングする前に、Adobe Analyticsと特別な関係を持つ e コマースデータを取得するために使用される、XDM スキーマ内に 2 つの主なオブジェクトがあることを理解しておくことが重要です。
+製品文字列にマッピングする前に、XDM スキーマ内に、Adobe Analyticsと特別な関係を持つ e コマースデータを取り込むために使用される、次の 2 つの主なオブジェクトがあることを理解しておくことが重要です。
 
-1. この `commerce` オブジェクトは、次のような Analytics イベントを設定します。 `prodView`, `scView`、および `purchase`
-1. この `productListItems` オブジェクトセット Analytics のディメンション ( 例： `productID`.
+1. The `commerce` オブジェクトは、次のような Analytics イベントを設定します。 `prodView`, `scView`、および `purchase`
+1. The `productListItems` オブジェクトセット Analytics のディメンション（例： ） `productID`.
 
 詳しくは、 [コマースおよび製品データの収集](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) を参照してください。
 
@@ -260,7 +258,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
    >[!CAUTION]
    >
-   >この **`productListItems`** は `array` データ型を使用することをお勧めします。 Luma デモサイトのデータレイヤー構造と、Luma サイトでは一度に 1 つの製品のみ表示できるので、項目を個別に追加します。 独自の Web サイトにを実装する場合、データレイヤーの構造に応じて、配列全体を提供できる場合があります。
+   >The **`productListItems`** は `array` データ型を使用することをお勧めします。 Luma デモサイトのデータレイヤー構造と、Luma サイトでは一度に 1 つの製品のみ表示できるので、項目を個別に追加します。 独自の Web サイトにを実装する場合、データレイヤーの構造に応じて、配列全体を提供できる場合があります。
 
 1. 選択して開く **[!UICONTROL 項目 1]**
 1. 次の XDM 変数をデータ要素にマッピングします
@@ -275,17 +273,17 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
    >この XDM オブジェクトを保存する前に、「グローバル」変数とページビュー増分も設定してください。
    >![XDM でのグローバル変数の再設定](assets/analytics-global-xdm.png)
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
 ### 配列全体の XDM オブジェクトへのマッピング
 
-前述のように、Luma デモサイトでは、買い物かご内の製品に異なるデータレイヤー構造を使用しています。 カスタムコードデータ要素 `cart.productInfo` 以前作成したデータ要素は、 `digitalData.cart.cartEntries` データレイヤーオブジェクトを作成し、必要な XDM オブジェクトスキーマに変換します。 新しい形式 **完全に一致する必要があります** で定義されたスキーマ `productListItems` XDM スキーマのオブジェクト。
+前述のように、Luma デモサイトでは、買い物かご内の製品に異なるデータレイヤー構造を使用しています。 カスタムコードデータ要素 `cart.productInfo` 以前に作成したデータ要素は、 `digitalData.cart.cartEntries` データレイヤーオブジェクトを作成し、必要な XDM オブジェクトスキーマに変換します。 新しい形式 **完全に一致する必要があります** で定義されたスキーマ `productListItems` XDM スキーマのオブジェクト。
 
 例として、Luma サイトのデータレイヤー（左）と翻訳済みのデータ要素（右）の比較を参照してください。
 
 ![XDM オブジェクト配列の形式](assets/data-element-xdm-array.png)
 
-データ要素と `productListItems` 構造（ヒント、一致する必要があります）。
+データ要素との比較 `productListItems` 構造（ヒント、一致する必要があります）。
 
 >[!IMPORTANT]
 >
@@ -314,9 +312,9 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
    >この XDM オブジェクトを保存する前に、「グローバル」変数とページビュー増分も設定してください。
    >![XDM でのグローバル変数の再設定](assets/analytics-global-xdm.png)
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
-別の **[!UICONTROL XDM オブジェクト]**  **[!UICONTROL データ要素タイプ]** チェックアウトの対象： `xdm.commerce.checkout`. 今回は、 **[!UICONTROL commerce.checkouts.value]** から `1`，マップ **[!UICONTROL productListItems]** から **`cart.productInfo`** 先ほどおこなったように、「グローバル」変数とページビューカウンターを追加します。
+別のを作成 **[!UICONTROL XDM オブジェクト]**  **[!UICONTROL データ要素タイプ]** チェックアウトの対象： `xdm.commerce.checkout`. 今回は、 **[!UICONTROL commerce.checkouts.value]** から `1`，マップ **[!UICONTROL productListItems]** から **`cart.productInfo`** 先ほどおこなったように、「グローバル」変数とページビューカウンターを追加します。
 
 >[!TIP]
 >
@@ -325,11 +323,11 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 を取得するための追加の手順があります。 `purchase` イベント：
 
-1. 別の  **[!UICONTROL XDM オブジェクト]**  **[!UICONTROL データ要素タイプ]** 次の購入： `xdm.commerce.purchase`
+1. 別のを作成  **[!UICONTROL XDM オブジェクト]**  **[!UICONTROL データ要素タイプ]** 次の購入： `xdm.commerce.purchase`
 1. 開く **[!UICONTROL commerce]** object
 1. を開きます。 **[!UICONTROL 注文]** object
 1. マップ **[!UICONTROL purchaseID]** から `cart.orderId` データ要素
-1. 設定 **[!UICONTROL currencyCode]** ハードコードされた値に `USD`
+1. 設定 **[!UICONTROL currencyCode]** をハードコードされた値に `USD`
 
    ![Analytics 用の purchaseID の設定](assets/analytics-commerce-purchaseID.png)
 
@@ -347,7 +345,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
    >この XDM オブジェクトを保存する前に、「グローバル」変数とページビュー増分も設定してください。
    >![XDM でのグローバル変数の再設定](assets/analytics-global-xdm.png)
 
-1. 選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
 これらの手順の最後に、次の 5 つの XDM オブジェクトデータ要素を作成する必要があります。
 
@@ -365,7 +363,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 複数の XDM オブジェクトデータ要素を作成したら、ルールを使用してビーコンを設定する準備が整いました。 この演習では、e コマースイベントごとに個々のルールを作成し、適切なページでルールが実行されるように条件を使用します。 まず、製品表示イベントを開始します。
 
-1. 左側のナビゲーションから、 **[!UICONTROL ルール]** 次に、 **[!UICONTROL ルールを追加]**
+1. 左側のナビゲーションから、「 」を選択します。 **[!UICONTROL ルール]** 次に、「 **[!UICONTROL ルールを追加]**
 1. 名前を付ける  [!UICONTROL `product view - library load - AA`]
 1. の下 **[!UICONTROL イベント]**&#x200B;を選択します。 **[!UICONTROL 読み込まれたライブラリ（ページ上部）]**
 1. の下 **[!UICONTROL 条件]**&#x200B;を選択して、 **[!UICONTROL 追加]**
@@ -375,8 +373,8 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 1. 終了 **[!UICONTROL 論理タイプ]** as **[!UICONTROL 標準]**
 1. 終了 **[!UICONTROL 拡張機能]** as **[!UICONTROL コア]**
 1. 選択 **[!UICONTROL 条件タイプ]** as **[!UICONTROL Path Without Query String]**
-1. 右側で、 **[!UICONTROL 正規表現]** 切り替え
-1. の下 **[!UICONTROL パスが等しい]** 設定 `/products/`. Luma デモサイトの場合、ルールは製品ページ上のトリガーのみを確認します。
+1. 右側で、 **[!UICONTROL Regex]** トグル
+1. の下 **[!UICONTROL パスが次と等しい]** 設定 `/products/`. Luma デモサイトの場合、ルールは製品ページ上のトリガーのみを確認します。
 1. 選択 **[!UICONTROL 変更を保持]**
 
    ![Analytics XDM ルール](assets/analytics-tags-prodView.png)
@@ -384,7 +382,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 1. の下 **[!UICONTROL アクション]** 選択 **[!UICONTROL 追加]**
 1. 選択 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張
 1. 選択 **[!UICONTROL アクションタイプ]** as **[!UICONTROL イベントを送信]**
-1. この **[!UICONTROL タイプ]** フィールドには、選択する値のドロップダウンリストが含まれます。 選択 `[!UICONTROL commerce.productViews]`
+1. The **[!UICONTROL タイプ]** フィールドには、選択する値のドロップダウンリストが含まれます。 選択 `[!UICONTROL commerce.productViews]`
 
    >[!TIP]
    >
@@ -395,32 +393,32 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
    ![Analytics XDM ルール](assets/analytics-rule-commerce-productViews.png)
 
-1. ルールは次のようになります。 選択 **[!UICONTROL 保存]**
+1. ルールは次のようになります。 「**[!UICONTROL 保存]**」を選択します
 
    ![Analytics XDM ルール](assets/analytics-rule-product-view.png)
 
 
 次のパラメーターを使用して、他のすべての e コマースイベントに対しても同じ手順を繰り返します。
 
-**ルール名**:買い物かご表示 — ライブラリ読み込み — AA
+**ルール名**：買い物かご表示 — ライブラリ読み込み — AA
 
-* **[!UICONTROL イベントタイプ]**:読み込まれたライブラリ（ページ上部）
-* **[!UICONTROL 条件]**:/content/luma/us/en/user/cart.html
-* **「Web SDK - Send Action」の値を入力します。**:commerce.productListViews
+* **[!UICONTROL イベントタイプ]**：読み込まれたライブラリ（ページ上部）
+* **[!UICONTROL 条件]**: /content/luma/us/en/user/cart.html
+* **「Web SDK - Send Action」の値を入力します。**: commerce.productListViews
 * **Web SDK — 送信アクションの XDM データ：** `%xdm.commerce.cartView%`
 
-**ルール名**:checkout - library load - AA
+**ルール名**: checkout - library load - AA
 
-* **[!UICONTROL イベントタイプ]**:読み込まれたライブラリ（ページ上部）
+* **[!UICONTROL イベントタイプ]**：読み込まれたライブラリ（ページ上部）
 * **[!UICONTROL 条件]** /content/luma/us/en/user/checkout.html
-* **Web SDK のタイプ — 送信アクション**:commerce.checkouts
+* **Web SDK のタイプ — 送信アクション**: commerce.checkouts
 * **Web SDK — 送信アクションの XDM データ：** `%xdm.commerce.checkout%`
 
-**ルール名**:purchase - library load - AA
+**ルール名**: purchase - library load - AA
 
-* **[!UICONTROL イベントタイプ]**:読み込まれたライブラリ（ページ上部）
+* **[!UICONTROL イベントタイプ]**：読み込まれたライブラリ（ページ上部）
 * **[!UICONTROL 条件]** /content/luma/us/en/user/checkout/order/thank-you.html
-* **Web SDK のタイプ — 送信アクション**:commerce.purchases
+* **Web SDK のタイプ — 送信アクション**: commerce.purchases
 * **Web SDK — 送信アクションの XDM データ：** `%xdm.commerce.purchase%`
 
 完了したら、次のルールが作成されます。
@@ -434,7 +432,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 ## Adobe Analytics for Platform Web SDK の検証
 
-内 [デバッガー](validate-with-debugger.md) レッスンでは、Platform Debugger とブラウザー開発者コンソールを使用して、クライアント側 XDM オブジェクトビーコンを検査する方法を学びました。これは、 `AppMeasurement.js` Analytics の実装。 Platform Web SDK を使用して Analytics がデータを適切にキャプチャしていることを検証するには、次の 2 つの手順に従う必要があります。
+Adobe Analytics の [デバッガー](validate-with-debugger.md) レッスンでは、Platform Debugger とブラウザー開発者コンソールを使用して、クライアント側 XDM オブジェクトビーコンを検査する方法を学びました。これは、 `AppMeasurement.js` Analytics の実装。 Platform Web SDK を使用して Analytics がデータを適切にキャプチャしていることを検証するには、次の 2 つの手順に従う必要があります。
 
 1. Platform Edge Network 上の XDM オブジェクトによってデータが処理される方法を検証するには、Experience Platformデバッガーの Edge Trace 機能を使用します。
 1. 処理ルールとリアルタイムレポートを使用して、Analytics でのデータの処理方法を検証します。
@@ -445,16 +443,15 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
 ### Experience CloudID の検証
 
-1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} を使用し、Experience Platformデバッガーを [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} とExperience PlatformDebugger を使用して [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
    >[!WARNING]
    >
    >続行する前に、Luma サイトにログインしていることを確認します。  ログインしていない場合、Luma サイトではチェックアウトできません。
    >
-   > 1. Luma で、右上のログインボタンを選択し、資格情報を使用します。 **u:test@adobe.com p:テスト** 認証する
+   > 1. Luma で、右上のログインボタンを選択し、資格情報を使用します。 **u: test@adobe.com p: test** 認証を行う
    >
    > 1. 自動的に [Didi Sport Watch 製品ページ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 次のページ読み込み時
-
 
 1. エッジトレースを有効にするには、「Experience Platformデバッガー」に移動し、左側のナビゲーションでを選択します。 **[!UICONTROL ログ]**&#x200B;を選択し、 **[!UICONTROL Edge]** 「 」タブで「 」を選択します。 **[!UICONTROL 接続]**
 
@@ -473,14 +470,14 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
    >
    >2 番目のドロップダウンは、データの送信先の Analytics レポートスイート ID に対応しています。 スクリーンショットに示されているレポートスイートではなく、お客様独自のレポートスイートと一致する必要があります。
 
-1. 下にスクロールして検索 `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. ECID を取り込むコンテキストデータ変数です
+1. 下にスクロールして検索 `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. ECID を取り込むコンテキストデータ変数です。
 1. Analytics が表示されるまで下にスクロールし続けます `[!UICONTROL mid]` 変数を使用します。 両方の ID がデバイスのExperience CloudID と一致します。
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
    >[!NOTE]
    >
-   >ログインしているので、認証済み ID を検証するために少し時間をかけます `112ca06ed53d3db37e4cea49cc45b71e` （ユーザー向け） **test@adobe.com** が `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
+   >ログインしているので、認証済み ID を検証するために少し時間をかけます `112ca06ed53d3db37e4cea49cc45b71e` （ユーザー向け） **test@adobe.com** は、 `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
 
 ### コンテンツページビュー数
@@ -488,7 +485,7 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 同じビーコンを使用して、Analytics がコンテンツページビューを取り込んだことを検証します。
 
 1. を探す `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. これは、 `s.t()` ページビュービーコンが Analytics に送信されています
-1. 下にスクロールして、 `[!UICONTROL gn]` 変数を使用します。 これは、 `[!UICONTROL s.pageName]` 変数を使用します。 データレイヤーからページ名を取り込みます。
+1. 下にスクロールして、 `[!UICONTROL gn]` 変数を使用します。 これは、Analytics の動的構文で、 `[!UICONTROL s.pageName]` 変数を使用します。 データレイヤーからページ名を取り込みます。
 
    ![Analytics 製品文字列](assets/analytics-debugger-edge-page-view.png)
 
@@ -503,24 +500,24 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
    ![Analytics 製品文字列](assets/analytics-debugger-prodstring.png)
 
-Edge Trace はを処理します。 `commerce` ～とは少し異なるイベント `productList` ディメンション。 マッピングされた製品名を確認するのと同じ方法でマッピングされたコンテキストデータ変数が表示されません `[!UICONTROL c.a.x.productlistitem.[0].name]` 上 代わりに、Edge Trace は Analytics で最終的なイベントの自動マッピングを表示します `event` 変数を使用します。 適切な XDM にマッピングしている限り、Platform Edge Network はそれに応じてマッピングします `commerce` 変数 [Adobe Analytics用のスキーマの設定](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics);この場合 `commerce.productViews.value=1`.
+Edge Trace はを処理します。 `commerce` ～とは少し異なるイベント `productList` ディメンション。 マッピングされた製品名を確認するのと同じ方法でマッピングされたコンテキストデータ変数が表示されません `[!UICONTROL c.a.x.productlistitem.[0].name]` 上記の 代わりに、Edge Trace は Analytics で最終的なイベントの自動マッピングを表示します `event` 変数を使用します。 適切な XDM にマッピングしている限り、Platform Edge Network はそれに応じてマッピングします `commerce` 変数 [Adobe Analytics用のスキーマの設定](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)；この場合、 `commerce.productViews.value=1`.
 
-1. 「Experience Platformデバッガー」ウィンドウに戻り、 `[!UICONTROL event]` 変数の場合は、 `[!UICONTROL prodView]`
+1. 「Experience Platformデバッガー」ウィンドウに戻り、 `[!UICONTROL event]` 変数の場合は、に設定されます。 `[!UICONTROL prodView]`
 
    ![Analytics 製品表示](assets/analytics-debugger-prodView.png)
 
 残りの e コマースイベントと製品文字列が Analytics に設定されていることを検証します。
 
-1. 追加 [Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 買い物かごに
-1. 次に移動： [買い物かごページ](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), Edge Trace for をチェック `[!UICONTROL events: "scView"]` と製品文字列
+1. 追加 [Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) カートに
+1. 次に移動： [買い物かごページ](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), Edge Trace for をチェックします `[!UICONTROL events: "scView"]` と製品文字列
 
    ![Analytics 買い物かご表示](assets/analytics-debugger-cartView.png)
 
-1. チェックアウトに進み、 Edge Trace for `[!UICONTROL events: "scCheckout"]` と製品文字列
+1. チェックアウトに進み、 Edge Trace for を確認します。 `[!UICONTROL events: "scCheckout"]` と製品文字列
 
    ![Analytics チェックアウト](assets/analytics-debugger-checkout.png)
 
-1. 次の項目だけを入力します。 **名** および **姓** 配送先フォームのフィールドと **続行**. 次のページで、 **発注**
+1. 次の項目だけを入力します。 **名** および **姓** 配送先フォームのフィールドと、 **続行**. 次のページで、 **発注**
 1. 確認ページで、「Edge Trace for 」をオンにします。
 
    * 設定中の購入イベント `[!UICONTROL events: "purchase"]`
@@ -538,12 +535,12 @@ Edge Trace はを処理します。 `commerce` ～とは少し異なるイベン
 
 この演習では、1 つの XDM 変数を prop にマッピングし、リアルタイムレポートで表示できるようにします。 すべてのカスタムマッピングに対して同じ手順を実行します。 `eVar`, `prop`, `event`、または処理ルールからアクセス可能な変数。
 
-1. Analytics UI で、に移動します。 [!UICONTROL 管理者] > [!UICONTROL 管理ツール] > [!UICONTROL レポートスイート ]
+1. Analytics UI で、に移動します。 [!UICONTROL 管理者] > [!UICONTROL 管理ツール] > [!UICONTROL レポートスイート]
 1. チュートリアルで使用する開発/テストレポートスイートを選択します。 > [!UICONTROL 設定を編集] > [!UICONTROL 一般] > [!UICONTROL 処理ルール]
 
    ![Analytics の購入](assets/analytics-process-rules.png)
 
-1. ルールを作成して **[!UICONTROL 値を上書き]** `[!UICONTROL Product Name (prop1)]` から `a.x.productlistitems.0.name`. ルールを作成する理由を忘れずにメモを追加し、ルールのタイトルに名前を付けてください。 選択 **[!UICONTROL 保存]**
+1. ルールを作成して **[!UICONTROL の値を上書き]** `[!UICONTROL Product Name (prop1)]` から `a.x.productlistitems.0.name`. ルールを作成する理由を忘れずにメモを追加し、ルールのタイトルに名前を付けてください。 「**[!UICONTROL 保存]**」を選択します
 
    ![Analytics の購入](assets/analytics-set-processing-rule.png)
 
@@ -551,7 +548,7 @@ Edge Trace はを処理します。 `commerce` ～とは少し異なるイベン
    >
    >最初に処理ルールにマッピングしたとき、UI には XDM オブジェクトのコンテキストデータ変数が表示されません。 任意の値を選択する場合は、「保存」をクリックし、再び編集を開始します。 これで、すべての XDM 変数が表示されます。
 
-1. に移動します。 [!UICONTROL 設定を編集] >  [!UICONTROL リアルタイム]. コンテンツページビュー、製品ビュー、購入を検証できるよう、3 つすべてを以下に示すパラメーターで設定します
+1. に移動します。 [!UICONTROL 設定を編集] >  [!UICONTROL リアルタイム]. コンテンツページビュー、製品ビュー、購入を検証できるよう、3 つすべてのを以下に示すパラメーターで設定します
 
    ![Analytics の購入](assets/analytics-debugger-real-time.png)
 
@@ -578,4 +575,4 @@ XDM フィールドと Analytics 変数のマッピングについて詳しく�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

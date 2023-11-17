@@ -3,9 +3,9 @@ title: Web SDK を使用した Adobe Experience Cloud 実装のチュートリ�
 description: Adobe Experience Platform Web SDK を使用して、Experience Cloud アプリケーションを実装する方法について説明します。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 25%
 
 ---
@@ -37,7 +37,7 @@ Experience PlatformWeb SDK は、Adobe Experience Cloudのお客様がAdobe Expe
 
 * タグルールと XDM オブジェクトのデータ要素を作成して、データをAdobeアプリケーションに送信する
 
-* Adobe Experience Platform Debugger を使用した実装の検証
+* Adobe Experience Platform Debuggerを使用した実装の検証
 
 * ユーザーの同意を取得する
 
@@ -45,7 +45,7 @@ Experience PlatformWeb SDK は、Adobe Experience Cloudのお客様がAdobe Expe
 
 >[!NOTE]
 >
->同様のマルチソリューションチュートリアルを [モバイル SDK](../tutorial-mobile-sdk/overview.md).
+>同様のマルチソリューションチュートリアルを、 [モバイル SDK](../tutorial-mobile-sdk/overview.md).
 
 ## 前提条件
 
@@ -61,4 +61,4 @@ Experience PlatformWeb SDK は、Adobe Experience Cloudのお客様がAdobe Expe
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

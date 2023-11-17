@@ -3,20 +3,20 @@ title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 5%
+source-wordcount: '1201'
+ht-degree: 6%
 
 ---
 
 # データ要素の作成
 
-Experience PlatformWeb SDK を使用して、データを取得するために必要な基本的なデータ要素を作成する方法について説明します。 のコンテンツと ID データの両方を [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 前に作成した XDM スキーマを使用し、XDM オブジェクトと呼ばれる新しいデータ要素タイプを通じて、Platform Web SDK を使用してデータを収集する方法について説明します。
+Experience PlatformWeb SDK を使用して、データを取得するために必要な基本的なデータ要素を作成する方法について説明します。 でのコンテンツと ID データの両方をキャプチャします。 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 前に作成した XDM スキーマを使用し、XDM オブジェクトと呼ばれる新しいデータ要素タイプを通じて、Platform Web SDK を使用してデータを収集する方法について説明します。
 
 >[!NOTE]
 >
-> デモの目的で、このレッスンの演習は、 [スキーマの設定](configure-schemas.md) ステップ表示されたコンテンツと、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html).
+> デモの目的で、このレッスンの演習は、 [スキーマの設定](configure-schemas.md) 手順：表示されたコンテンツと、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
@@ -57,22 +57,22 @@ Platform Web SDK に関係なく、Web サイトのデータ収集変数 ( デ�
 
 >[!IMPORTANT]
 >
->この [Experience CloudID サービス拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) は、Adobe Experience Platform Web SDK を実装する際には必要ありません。ID サービス機能は、Platform Web SDK に組み込まれているからです。
+>The [Experience CloudID サービス拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) は、Adobe Experience Platform Web SDK を実装する際には必要ありません。ID サービス機能は、Platform Web SDK に組み込まれているからです。
 
 ## データレイヤーを取り込むためのデータ要素の作成
 
 XDM オブジェクトの作成を開始する前に、次の一連のデータ要素マッピングを作成し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤー：
 
-1. に移動します。 **[!UICONTROL データ要素]** を選択し、 **[!UICONTROL データ要素を追加]** ( または **[!UICONTROL 新規データ要素の作成]** タグプロパティに既存のデータ要素がない場合 )
+1. に移動します。 **[!UICONTROL データ要素]** を選択し、 **[!UICONTROL データ要素を追加]** ( または **[!UICONTROL 新しいデータ要素を作成]** （タグプロパティに既存のデータ要素がない場合）
 
    ![データ要素を作成](assets/data-element-create.jpg)
 
 1. データ要素に「`page.pageInfo.pageName`」と名前を付けます。
-1. 以下を使用： **[!UICONTROL JavaScript 変数]** **[!UICONTROL データ要素タイプ]** を指定して、Luma のデータレイヤーの値を指定します。 `digitalData.page.pageInfo.pageName`
+1. 以下を使用します。 **[!UICONTROL JavaScript 変数]** **[!UICONTROL データ要素のタイプ]** を指定して、Luma のデータレイヤーの値を指定します。 `digitalData.page.pageInfo.pageName`
 
 1. 「**[!UICONTROL 強制的に値を小文字に変換]**」および「**[!UICONTROL クリーンテキスト]**」のチェックボックスをオンして大文字と小文字を標準化し、不要なスペースを削除します。
 
-1. 終了 `None` を **[!UICONTROL ストレージ期間]** の設定は、ページごとにこの値が異なるので、
+1. 終了 `None` として **[!UICONTROL ストレージ期間]** の設定は、ページごとにこの値が異なるので、
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
@@ -80,24 +80,24 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 同じ手順に従って、次の 4 つの追加データ要素を作成します。
 
-* **`page.pageInfo.server`**  マッピング先
+* **`page.pageInfo.server`**  マッピング先：
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**  マッピング先
+* **`page.pageInfo.hierarchie1`**  マッピング先：
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**  マッピング先
+* **`user.profile.attributes.username`**  マッピング先：
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`** マッピング先
+* **`user.profile.attributes.loggedIn`** マッピング先：
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** マッピング先 `digitalData.cart.orderId` ( この [Analytics を設定](setup-analytics.md) レッスン )
+* **`cart.orderId`** マッピング先： `digitalData.cart.orderId` ( この [Analytics を設定](setup-analytics.md) レッスン )
 
 
 >[!CAUTION]
 >
->この [!UICONTROL JavaScript 変数] データ要素タイプは、配列参照を括弧ではなくドットとして扱うので、ユーザー名データ要素を `digitalData.user[0].profile[0].attributes.username` **動作しない**.
+>The [!UICONTROL JavaScript 変数] データ要素タイプは、配列参照を括弧ではなくドットとして扱うので、ユーザー名データ要素を `digitalData.user[0].profile[0].attributes.username` **動作しない**.
 
 ## ID マップデータ要素の作成
 
@@ -119,9 +119,9 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
    >[!NOTE]
    >
-   >    もし、 `Luma CRM Id` 名前空間で、デフォルトの実稼動サンドボックスでも作成したことを確認してください。 デフォルトの実稼動サンドボックスで作成された名前空間のみが、「名前空間」ドロップダウンに現在表示されます。
+   >    見えない場合は、 `Luma CRM Id` 名前空間で、デフォルトの実稼動サンドボックスでも作成したことを確認してください。 デフォルトの実稼動サンドボックスで作成された名前空間のみが、「名前空間」ドロップダウンに現在表示されます。
 
-1. 次の期間の後 **[!UICONTROL 名前空間]** が選択されている場合は、ID を設定する必要があります。 を選択します。 `user.profile.attributes.username` このレッスンで作成したデータ要素。ユーザーが Luma サイトにログインしたときに ID を取り込みます。
+1. 次の期間の後に **[!UICONTROL 名前空間]** が選択されている場合は、ID を設定する必要があります。 を選択します。 `user.profile.attributes.username` このレッスンで作成したデータ要素。ユーザーが Luma サイトにログインしたときに ID を取り込みます。
 
 <!--  >[!TIP]
    >
@@ -130,7 +130,7 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
    >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
 -->
 
-1. を **[!UICONTROL 認証状態]**&#x200B;を選択します。 **[!UICONTROL 認証済み]**
+1. を **[!UICONTROL 認証済み状態]**&#x200B;を選択します。 **[!UICONTROL 認証済み]**
 1. 選択 **[!UICONTROL プライマリ]**
 
 1. 「**[!UICONTROL 保存]**」を選択します
@@ -139,9 +139,9 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 >[!TIP]
 >
-> Adobeでは、人物を表す ID（例： ）を送信することをお勧めします。 `Luma CRM Id`、 [!UICONTROL プライマリ] id.
+> Adobeでは、人物を表す ID（例： ）を送信することをお勧めします。 `Luma CRM Id`、 [!UICONTROL プライマリ] ID。
 >
-> ID マップに人物識別子 ( 例： `Luma CRM Id`) の場合、個人識別子が [!UICONTROL プライマリ] id. それ以外の場合は、 `ECID` が [!UICONTROL プライマリ] id.
+> ID マップに人物識別子 ( 例： `Luma CRM Id`) の場合、ユーザー ID が [!UICONTROL プライマリ] ID。 それ以外の場合は、 `ECID` が [!UICONTROL プライマリ] ID。
 
 
 
@@ -166,7 +166,7 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 作成するすべてのデータ要素は、XDM オブジェクトにマッピングされている必要があります。 このオブジェクトは、 [スキーマの設定](configure-schemas.md) レッスン。
 
-データ要素を XDM オブジェクトフィールドにマッピングする方法は異なります。 データ要素が XDM オブジェクトに存在するキー値ペアのスキーマと完全に一致する限り、個々のデータ要素を個々の XDM フィールドにマップしたり、データ要素を XDM オブジェクト全体にマップしたりできます。 このレッスンでは、個々のフィールドにマッピングしてコンテンツデータをキャプチャします。 次の方法を学習します。 [データ要素を XDM オブジェクト全体にマッピングする](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) 内 [Analytics を設定](setup-analytics.md) レッスン。
+データ要素を XDM オブジェクトフィールドにマッピングする方法は異なります。 データ要素が XDM オブジェクトに存在するキー値ペアのスキーマと完全に一致する限り、個々のデータ要素を個々の XDM フィールドにマップしたり、データ要素を XDM オブジェクト全体にマップしたりできます。 このレッスンでは、個々のフィールドにマッピングしてコンテンツデータをキャプチャします。 次の方法を学習します。 [データ要素を XDM オブジェクト全体にマッピングする](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) （内） [Analytics を設定](setup-analytics.md) レッスン。
 
 コンテンツデータをキャプチャする XDM オブジェクトを作成します。
 
@@ -185,7 +185,7 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
    >サンドボックスは、Experience Platformを作成したスキーマサンドボックスに対応します。 Experience Platformインスタンスでは複数のサンドボックスを使用できるので、必ず正しいサンドボックスを選択してください。 常に最初に開発で作業し、次に実稼動で作業します。
 
 1. 下にスクロールして、 **`web`** object
-1. 選択して開きます
+1. 選択して開きます。
 
    ![Web オブジェクト](assets/data-element-pageviews-xdm-object.png)
 
@@ -226,4 +226,4 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

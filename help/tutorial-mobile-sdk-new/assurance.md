@@ -4,9 +4,9 @@ description: モバイルアプリに Assurance 拡張機能を実装する方�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 2%
    }
    ```
 
-   このコードは、アプリがバックグラウンドになっていて、ディープリンクを使用して開いたときに保証セッションを開始します。
+   このコードは、アプリがバックグラウンドになっていて、ディープリンクを使用して開いたときに、保証セッションを開始します。
 
 詳細はこちらをご覧ください [ここ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
@@ -141,7 +141,7 @@ Xcode の場合：
 
    物理デバイスを使用している場合：
 
-   * 選択 **[!UICONTROL QR コードをスキャン]**. 物理デバイスでカメラを使用して QR コードをスキャンし、リンクをタップしてアプリを開きます。
+   * 選択 **[!UICONTROL QR コードをスキャン]**. アプリを開くには、物理デバイスのカメラを使用して QR コードをスキャンし、リンクをタップします。
 
      ![アシュランス qa コード](assets/assurance-qr-code.png)
 
@@ -186,16 +186,16 @@ Xcode の場合：
 
    ![拡張機能のバージョンの設定](assets/assurance-configure-extension-versions.png)
 
-1. 選択 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能のバージョン]**. 利用可能な最新の拡張機能と、お使いのバージョンのアプリで使用されている拡張機能の概要が表示されます。
+1. 選択 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能のバージョン]** を参照して、利用可能な最新の拡張機能と、アプリのバージョンで使用される拡張機能の概要を確認してください。
 
    ![拡張機能のバージョン](assets/assurance-extension-versions.png)
 
-1. 拡張機能のバージョンを更新するには、以下を実行します。 **[!UICONTROL メッセージ]** および **[!UICONTROL 最適化]**) を選択し、Xcode で、アップグレードが必要な特定の拡張機能に対して、次の中からパッケージ（拡張）を選択します。 **[!UICONTROL パッケージの依存関係]** ( 例： **[!UICONTROL AEPMessaging]**) を選択し、コンテキストメニューから「 」を選択します。 **[!UICONTROL パッケージを更新]**. Xcode はパッケージの依存関係を更新します。
+1. 拡張機能のバージョンを更新するには ( 例： **[!UICONTROL メッセージ]** および **[!UICONTROL 最適化]**) パッケージ（拡張）を次の中から選択します。 **[!UICONTROL パッケージの依存関係]** ( 例： **[!UICONTROL AEPMessaging]**) を選択し、コンテキストメニューから「 」を選択します。 **[!UICONTROL パッケージを更新]**. Xcode はパッケージの依存関係を更新します。
 
 
 >[!NOTE]
 >
->Xcode で拡張機能（パッケージ）を更新したら、現在のセッションを閉じて削除し、からすべての手順を繰り返す必要があります。 [セッションへの接続](#connecting-to-a-session) および [拡張機能の検証](#verify-extensions) アシュランスが、新しいアシュランスセッションで適切な拡張を適切に報告するようにする。
+>Xcode で拡張機能（パッケージ）を更新したら、現在のセッションを閉じてから削除し、 [セッションへの接続](#connecting-to-a-session) および [拡張機能の検証](#verify-extensions) アシュランスが、新しいアシュランスセッションで適切な拡張を適切に報告するようにする。
 
 
 
@@ -203,7 +203,9 @@ Xcode の場合：
 
 >[!SUCCESS]
 >
->これで、このチュートリアルの残りの部分でアシュランスを使用するようにアプリを設定しました。<br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>これで、このチュートリアルの残りの部分でアシュランスを使用するようにアプリを設定しました。
+>
+>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 次へ： **[同意の実装](consent.md)**
