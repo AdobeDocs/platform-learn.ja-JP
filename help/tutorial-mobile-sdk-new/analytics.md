@@ -4,7 +4,7 @@ description: モバイルアプリでAdobe Analyticsのデータを収集し、�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -54,7 +54,7 @@ XDM データを Edge ネットワークからAdobe Analyticsに送信するに�
 
 ## 自動マッピング
 
-標準 XDM フィールドの多くは、Analytics 変数に自動的にマッピングされます。 完全なリストについては、[こちら](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en)を参照してください。
+標準 XDM フィールドの多くは、Analytics 変数に自動的にマッピングされます。 完全なリストについては、[こちら](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en)を参照してください。
 
 ### 例#1 - s.products
 
@@ -199,7 +199,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 この XDM コンテキストデータをレポートスイートの Analytics データにマッピングするには、次の操作を実行します。
 
-### フィールドグループを使用する
+### フィールドグループを使用
 
 * 次を追加： **[!UICONTROL Adobe Analytics ExperienceEvent Full 拡張機能]** フィールドグループをスキーマに追加します。
 
@@ -237,6 +237,6 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 >[!SUCCESS]
 >
->Experience Edge XDM オブジェクトをAdobe Analytics変数にマッピングするアプリを設定し、データストリームでAdobe Analyticsサービスを有効にし、必要に応じて処理ルールを使用します。<br/> Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Experience Edge XDM オブジェクトをAdobe Analytics変数にマッピングするアプリを設定し、データストリームでAdobe Analyticsサービスを有効にし、必要に応じて処理ルールを使用します。<br/> Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 次へ： **[データをExperience Platformに送信](platform.md)**
