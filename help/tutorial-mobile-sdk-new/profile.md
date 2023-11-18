@@ -3,7 +3,7 @@ title: プロファイルデータを収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 アプリでのターゲティングやパーソナライゼーションに役立つのは、ユーザーが過去または最近に購入したかどうかをすばやく知ることです。 Luma アプリでセットアップしましょう。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttributes(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -86,7 +86,7 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
    このコードは次を実行します。
 
-   1. 呼び出し [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を使用した API `iPaidUser` 属性名を `attributeNames` 配列。
+   1. 呼び出し [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を使用した API `isPaidUser` 属性名を `attributeNames` 配列。
    1. 次に、 `isPaidUser` 属性とタイミング `yes`をクリックし、 <img src="assets/paiduser.png" width="20" /> アイコンを使用して、アイコンをクリックします。
 
 その他のドキュメントも参照できます。 [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
