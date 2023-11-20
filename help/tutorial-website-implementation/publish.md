@@ -2,10 +2,10 @@
 title: タグプロパティを公開する
 description: 開発環境からステージングおよび実稼動環境にタグプロパティを公開する方法について説明します。 このレッスンは、「 Web サイトでのExperience Cloudの実装」チュートリアルの一部です。
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 72%
+source-wordcount: '597'
+ht-degree: 69%
 
 ---
 
@@ -17,10 +17,9 @@ ht-degree: 72%
 >
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意が必要な、いくつかの用語の変更がインターフェイスにロールアウトされました。
 >
-> * platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
-> * platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
+> * Platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * エッジ設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)**
-
 
 ## 学習内容
 
@@ -70,20 +69,20 @@ ht-degree: 72%
 
 1. Chrome ブラウザーで [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. ![デバッガーアイコン](images/icon-debugger.png) アイコンをクリックして、[Experience Cloud デバッガー拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)を開きます。
+1. を開きます。 [Experience Platformデバッガー拡張機能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) クリックして ![デバッガーアイコン](images/icon-debugger.png) アイコン
 
    ![デバッガーアイコンをクリックする](images/switchEnvironments-openDebugger.png)
 
 1. 「ツール」タブに移動します。
 
-1. 内 **[!UICONTROL AdobeLaunch / Launch 埋め込みコードの置き換え]** 「 」セクションで、クリップボードにあるステージング埋め込みコードを貼り付けます。
-1. をオンにします。 **[!UICONTROL luma.enablementadobe.com 全体で適用]** スイッチ
+1. Adobe Analytics の **[!UICONTROL AdobeLaunch / Launch 埋め込みコードの置き換え]** 「 」セクションで、クリップボードにあるステージング埋め込みコードを貼り付けます。
+1. をオンにします。 **[!UICONTROL luma.enablementadobe.comに適用]** スイッチ
 
 1. ディスクアイコンをクリックして保存します。
 
    ![Debugger に表示されるタグ環境](images/switchEnvironments-debugger-save.png)
 
-1. デバッガーの「概要」タブをリロードして確認します。「Launch」セクションの下に、ステージングプロパティが実装され、プロパティ名 (&quot;tags Tutorial&quot;、またはプロパティに指定した名前など )。
+1. デバッガーの「概要」タブをリロードして確認します。「Launch」セクションの下に、ステージングプロパティが実装され、プロパティ名（例：「tags Tutorial」またはプロパティに指定した名前）が表示されていることを確認します。
 
    ![Debugger に表示されるタグ環境](images/publishing-debugger-staging.png)
 
@@ -115,4 +114,4 @@ ht-degree: 72%
 
    ![パブリッシュ済み](images/publishing-published.png)
 
-これで全部です。チュートリアルを完了し、最初のプロパティをタグで公開しました。
+これで作業は完了です。チュートリアルを完了し、最初のプロパティをタグで公開しました。

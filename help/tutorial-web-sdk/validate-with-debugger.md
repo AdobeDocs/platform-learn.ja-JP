@@ -3,9 +3,9 @@ title: Debugger を使用した Web SDK の実装のExperience Platform
 description: Adobe Experience Platform Debuggerを使用して Platform Web SDK の実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1071'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-このレッスンでは、 [Adobe Experience Cloud Debugger 拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) タグプロパティを [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) を独自のプロパティに追加します。
+このレッスンでは、 [Adobe Experience Platform Debugger拡張](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) タグプロパティを [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) を独自のプロパティに追加します。
 
 この手法は環境の切り替えと呼ばれ、後で独自の Web サイトでタグを使用する際に役立ちます。 実稼働用 Web サイトをブラウザーに読み込むには、 *開発* タグ環境 この機能を使用すると、通常のコードリリースとは独立し、自信を持ってタグを変更し、検証できます。 結局、マーケティングタグリリースを通常のコードリリースから分離できることは、顧客がタグを最初に使用する主な理由の 1 つです。
 

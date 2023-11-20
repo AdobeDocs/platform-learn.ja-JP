@@ -3,10 +3,10 @@ title: タグ付き Web サイトへのExperience Cloudの実装
 description: Web サイトにタグを使用してExperience Cloudを実装することは、Web サイトにAdobe Experience Cloudソリューションを実装する方法を学びたいフロントエンド開発者や技術マーケターにとって最適な出発点です。
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 42%
+source-wordcount: '896'
+ht-degree: 40%
 
 ---
 
@@ -80,7 +80,7 @@ Web サイトのタグを使用すると、デスクトップおよびモバイ�
 ## ツールの取得
 
 1. 拡張機能にはブラウザー固有のものがあるため、[Chrome Web ブラウザー](https://www.google.com/chrome/)を使用してチュートリアルを完了することをお勧めします。
-1. [Adobe Experience Cloud デバッガー](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)拡張機能を Chrome ブラウザーに追加します。
+1. 次を追加： [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome ブラウザーの拡張機能
 1. サンプルの HTML ページコードをコピーする
 
    +++サンプル HTML ページコード
