@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1536'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,6 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 このレッスンでは、次の操作を行います
 
-* アプリ ID をAppleプッシュ通知サービス (APN) に登録します。
 * AJO でアプリサーフェスを作成します。
 * Journey Optimizerタグ拡張機能をインストールして設定します。
 * アプリを更新して、Journey Optimizerタグ拡張を登録します。

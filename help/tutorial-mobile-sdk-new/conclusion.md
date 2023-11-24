@@ -4,9 +4,9 @@ description: チュートリアルを完了した後の次の作業
 recommendations: display,noCatalog
 hide: true
 exl-id: be256529-fd4f-428b-b023-409b7a35c204
-source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '490'
 ht-degree: 8%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 8%
 * **Experience Platformの詳細**. 他のソースからデータを取り込み、それを Mobile SDK データと組み合わせる方法について詳しくは、 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja)
 
 
->[!NOTE]
+>[!SUCCESS]
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>**おめでとうございます。** このExperience PlatformMobile SDK チュートリアルは完了です。 定期的にチュートリアルを再度ご覧ください。定期的に更新を行い、時間の経過と共にコンテンツを追加します。<br/><br/>Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+

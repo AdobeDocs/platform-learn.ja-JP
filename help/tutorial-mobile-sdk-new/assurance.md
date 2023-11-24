@@ -4,9 +4,9 @@ description: モバイルアプリに Assurance 拡張機能を実装する方�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 2%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. 選択 **[!DNL Luma]** をクリックします。
 1. を選択します。 **[!DNL Luma]** ターゲット。
 1. を選択します。 **情報** タブをクリックします。
-1. ベース URL を追加するには、下にスクロールして **URL タイプ** をクリックし、 **+** 」ボタンをクリックします。
+1. 下にスクロールして **URL タイプ (1)** を開き、まだ開いていない場合は山形記号 (>) を使用してセクションを開きます。
 1. 設定 **識別子** を任意のバンドル識別子に追加し、 **URL スキーム** を選択します。
 
    ![アシュアランス url](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`.<br/>同様に、一意の URL スキームを使用し、既に指定されている `lumatutorialswiftui` を使用して、一意の URL スキームを設定します。
+   >必ず _ユニーク_ バンドル識別子。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`.<br/>同様に、一意の URL スキームを使用するので、既に指定されている `lumatutorialswiftui` を使用して、一意の URL スキームを設定します。
 
 iOSでの URL スキームについて詳しくは、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

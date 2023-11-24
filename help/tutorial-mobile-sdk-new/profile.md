@@ -3,7 +3,7 @@ title: プロファイルデータを収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 3%
@@ -96,8 +96,8 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. アプリを実行してログインし、製品とやり取りします。
 
-   1. アシュランスアイコンを左に移動します。
    1. 選択 **[!UICONTROL ホーム]** 」をクリックします。
+   1. アシュランスアイコンを左に移動します。
    1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> 」ボタンをクリックします。
 
       <img src="./assets/mobile-app-events-1.png" width="300">

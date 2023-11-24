@@ -3,9 +3,9 @@ title: イベントデータの追跡
 description: モバイルアプリでイベントデータを追跡する方法を説明します。
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1388'
 ht-degree: 3%
 
 ---
@@ -322,7 +322,7 @@ The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edg
 
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
-   1. 次のハイライト表示されたコードを [ ログイン ] ボタンのクロージャに追加します。
+   1. 次のハイライト表示されたコードを `Button("Login") {` 閉鎖：
 
       ```swift
       // Send app interaction event

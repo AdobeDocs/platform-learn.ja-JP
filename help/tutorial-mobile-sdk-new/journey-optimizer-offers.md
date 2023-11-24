@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2672'
 ht-degree: 3%
 
 ---
@@ -140,6 +140,7 @@ Mobile JSON 配置を作成するには：
    1. 選択 ![モバイル](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL モバイル]** から **[!UICONTROL チャネル]** リストと選択 **[!UICONTROL モバイル JSON]** から **[!UICONTROL 配置]** リスト。
    1. 選択 **[!UICONTROL カスタム]** 対象： **[!UICONTROL コンテンツ]**.
    1. 選択 **[!UICONTROL コンテンツを追加]**. Adobe Analytics の **[!UICONTROL パーソナライゼーションを追加]** ダイアログ：
+      1. 例： [!UICONTROL モード] セレクターが使用可能な場合は、 **[!UICONTROL JSON]**.
       1. 次の JSON を入力します。
 
          ```json
@@ -348,7 +349,8 @@ Mobile JSON 配置を作成するには：
      ]
      ```
 
-     ただし、あらゆる種類の実装を使用して、Optimize API が適切なパラメーター (`activityId`, `placementId` そして `itemCount`) を呼び出し、有効な [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) オブジェクトを設定します。
+     ただし、あらゆる種類の実装を使用して、Optimize API が適切なパラメーター (`activityId`, `placementId` そして `itemCount`) を呼び出し、有効な [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) オブジェクトを設定します。 <br/>使用する情報： `decisions.json` ファイルは将来の使用のためのもので、このレッスンでは現在、チュートリアルの一部として使用されています。
+
    * は、2 つの API を呼び出します。 [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  および [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  これらの関数は、キャッシュされた提案をすべて消去し、このプロファイルの提案を更新します。
 
 1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL パーソナライズ]** > **[!UICONTROL EdgeOffersView]** 」をクリックします。 次を検索： `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 関数を参照し、この関数のコードを調べます。 この関数の最も重要な部分は、 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 呼び出し (

@@ -4,9 +4,9 @@ description: モバイルアプリで ID データを収集する方法を説明
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '919'
 ht-degree: 5%
 
 ---
@@ -66,7 +66,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. 設定 `IdentityItem` 電子メール ID と CRM ID 用のオブジェクト。
+   1. 設定 `IdentityItem` 電子メール ID と CRM ID 用のオブジェクト。 Adobeでは、Luma CRM ID など、個人を表す ID をプライマリ ID として送信することをお勧めします。 ID マップに人物識別子（Luma CRM Id など）が含まれる場合、人物識別子はプライマリ ID になります。 それ以外の場合、ECID がプライマリ ID になります。 ユーザー ID をプライマリ ID として設定すると、以降の API 呼び出しでプロファイルをより効率的に検索できるようになります。
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. 追加 `IdentityItem` オブジェクトを `IdentityMap` オブジェクト。
 
