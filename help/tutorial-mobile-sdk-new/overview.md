@@ -4,9 +4,9 @@ description: Adobe Experience Cloudモバイルアプリケーションの実装
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
+source-git-commit: 8810829ec80b38afafbd4384005f5e145c5b5999
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 6%
 
 ---
@@ -82,6 +82,10 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 >
 >このチュートリアルの一部として、スキーマ、データセット、ID などを作成します。 複数のユーザーが単一のサンドボックスでこのチュートリアルを実行する場合は、これらのオブジェクトを作成する際に、命名規則の一部として識別を追加するか、事前に付加することを検討してください。 例えば、 ` - <your name or initials>` を、作成するように指示されるオブジェクトの名前に追加します。
 
+>[!NOTE]
+>
+>プラットフォームとしてiOSを使用し、 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用する。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 多くのユーザーは、以前のiOS/Swift(UI) 操作をほとんどあるいはまったく使用せずに、既にこのチュートリアルを完了しています。 コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+
 
 ## Luma アプリケーションのダウンロード
 
@@ -91,15 +95,9 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：このチュートリアルで実践的な演習を完了するために必要な、Experience PlatformMobile SDK コードのほとんどに対して、コードがない、またはプレースホルダーコードが付いたプロジェクトです。
 1. [完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：参照用に完全な実装を含むバージョン。
 
->[!NOTE]
->
->プラットフォームとしてiOSを使用し、 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用する。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 多くのユーザーは、以前のiOS/Swift(UI) 操作をほとんどあるいはまったく使用せずに、既にこのチュートリアルを完了しています。 コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+最終的なアプリを試すだけの場合は、Apple App Storeから直接アプリをダウンロードすることもできます。
 
->[!INFO]
->
->最終的なアプリを試すだけの場合は、Apple App Storeから直接アプリをダウンロードすることもできます。
->[![ダウンロード](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
-
+[<img src="assets/download-app.svg">](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 それでは、始めましょう。
 
