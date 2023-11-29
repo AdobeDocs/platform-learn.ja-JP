@@ -1,35 +1,31 @@
 ---
-title: イベント
-description: モバイルアプリでイベントデータを収集する方法を説明します。
+title: Platform Mobile SDK を使用したモバイルアプリのイベントデータの追跡
+description: モバイルアプリでイベントデータを追跡する方法を説明します。
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 1%
+source-wordcount: '1397'
+ht-degree: 3%
 
 ---
 
-# イベント
+# イベントデータの追跡
 
 モバイルアプリでイベントを追跡する方法を説明します。
-
->[!INFO]
->
-> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 Edge Network 拡張機能は、Experience Events を Platform Edge Network に送信する API を提供します。 エクスペリエンスイベントは、XDM ExperienceEvent スキーマ定義に準拠したデータを含むオブジェクトです。 より簡単に言えば、モバイルアプリでのユーザーの行動を取り込みます。 Platform Edge Network がデータを受信すると、Adobe AnalyticsやExperience Platformなど、データストリームで設定されたアプリケーションやサービスにデータを転送できます。 詳しくは、 [エクスペリエンスイベント](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) （製品ドキュメント内）。
 
 ## 前提条件
 
-* 必要な SDK を追加して PodFile を更新しました。
-* AppDelegate に登録された拡張機能。
-* 開発用 AppId を使用するように MobileCore を設定しました。
+* パッケージの依存関係はすべて、Xcode プロジェクトに配置されます。
+* の登録済み拡張機能 **[!UICONTROL AppDelegate]**.
+* 開発を使用するように MobileCore 拡張機能を設定しました。 `appId`.
 * SDK が読み込まれました。
 * 上記の変更を含むアプリが正常にビルドされ、実行されました。
 
 ## 学習内容
 
-このレッスンでは、次の操作を実行します。
+このレッスンでは、次の操作を行います
 
 * スキーマに基づいて XDM データを構造化する方法を説明します。
 * 標準フィールドグループに基づいて XDM イベントを送信します。
@@ -55,302 +51,332 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
 
 1. 検証.
 
-いくつか例を見てみましょう。
 
-### 例#1 — 標準フィールドグループ
+### 標準フィールドグループ
 
-サンプルアプリケーションに実装せずに、次の例を確認します。
+標準フィールドグループの場合、処理は次のようになります。
 
-1. スキーマで、収集しようとしているイベントを識別します。この例では、製品表示を追跡しています。
-   ![製品表示スキーマ](assets/mobile-datacollection-prodView-schema.png)
+* スキーマで、収集しようとしているイベントを特定します。 この例では、製品表示 (**[!UICONTROL productViews]**) イベントに関連付けられます。
 
-1. オブジェクトの構築を開始します。
+  ![製品表示スキーマ](assets/datacollection-prodView-schema.png)
+
+* アプリ内でエクスペリエンスイベントデータを含むオブジェクトを作成するには、次のようなコードを使用します。
+
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+      "commerce": [
+          "productViews": [
+            "value": 1
+          ]
+      ]
+  ]
+  ```
+
+   * `eventType`：発生したイベントを記述します。 [既知の値](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 可能な場合は。
+   * `commerce.productViews.value`：イベントの数値またはブール値。 ブール値 (Adobe Analyticsでは「カウンター」) の場合、値は常に 1 に設定されます。 数値イベントまたは通貨イベントの場合、値は 1 より大きい値になります。
+
+* スキーマ内で、コマース製品表示イベントに関連付けられた追加データを識別します。 この例では、 **[!UICONTROL productListItems]** コマース関連のイベントで使用される標準のフィールドセットです。
+
+  ![製品リスト項目スキーマ](assets/datacollection-prodListItems-schema.png)
+   * 次の点に注意してください。 **[!UICONTROL productListItems]** は配列なので、複数の製品を提供できます。
+
+* このデータを追加するには、 `xdmData` 補足データを含むオブジェクト：
+
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+          "commerce": [
+          "productViews": [
+              "value": 1
+          ]
+      ],
+      "productListItems": [
+          [
+              "name":  productName,
+              "SKU": sku,
+              "priceTotal": priceString,
+              "quantity": 1
+          ]
+      ]
+  ]
+  ```
+
+* これで、このデータ構造を使用して `ExperienceEvent`:
+
+  ```swift
+  let productViewEvent = ExperienceEvent(xdm: xdmData)
+  ```
+
+* 次に、 `sendEvent` API:
+
+  ```swift
+  Edge.sendEvent(experienceEvent: productViewEvent)
+  ```
+
+The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API は、 [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API 呼び出し。 詳しくは、 [Analytics モバイル拡張機能からAdobe Experience Platform Edge Network への移行](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) を参照してください。
+
+次に、このコードを Xcode プロジェクトに実際に実装します。
+アプリに異なるコマース製品関連のアクションがあり、ユーザーが実行したこれらのアクションに基づいてイベントを送信したい場合は、次の手順に従います。
+
+* 表示：ユーザーが特定の製品を表示したときに発生します。
+* 買い物かごに追加：ユーザーがタップしたとき <img src="assets/addtocart.png" width="20" /> 製品の詳細画面で、
+* 後で使用するために保存：ユーザーがタップしたとき <img src="assets/saveforlater.png" width="15" /> 製品の詳細画面で、
+* purchase：ユーザーがタップしたとき <img src="assets/purchase.png" width="20" /> 製品の詳細画面で、
+
+コマース関連のエクスペリエンスイベントの送信を再利用可能な方法で実装するには、専用の関数を使用します。
+
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、以下の内容を `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 関数に置き換えます。
 
    ```swift
-   var xdmData: [String: Any] = [
-       "eventType": "commerce.productViews",
+   // Set up a data dictionary, create an experience event and send the event.
+   let xdmData: [String: Any] = [
+       "eventType": "commerce." + commerceEventType,
        "commerce": [
-           "productViews": [
-           "value": 1
-           ]
-       ]
-   ]
-   ```
-
-   * eventType：発生したイベントを表します。 [既知の値](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 可能な場合は。
-   * commerce.productViews.value：イベントの数値を指定します。 ブール値 (Adobe Analyticsの場合は「カウンター」) の場合、値は常に 1 になります。 数値イベントまたは通貨イベントの場合、値は 1 より大きい値になります。
-
-1. スキーマ内で、イベントに関連付けられている追加データを特定します。 この例では、 `productListItems` コマース関連のイベントで使用される標準のフィールドセットです。
-   ![製品リスト項目スキーマ](assets/mobile-datacollection-prodListItems-schema.png)
-   * 次の点に注意してください。 `productListItems` は配列なので、複数の製品を提供できます。
-
-1. xdmData オブジェクトを展開して、補足データを含めます。
-
-   ```swift
-   var xdmData: [String: Any] = [
-       "eventType": "commerce.productViews",
-           "commerce": [
-           "productViews": [
+           commerceEventType: [
                "value": 1
            ]
        ],
        "productListItems": [
            [
-               "name":  productName,
-               "SKU": sku,
-               "priceTotal": priceString,
-               "quantity": 1
+               "name": product.name,
+               "priceTotal": product.price,
+               "SKU": product.sku
            ]
        ]
    ]
+   
+   let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: commerceExperienceEvent)
    ```
 
-1. データ構造を使用して `ExperienceEvent`:
+   この関数は、コマースエクスペリエンスのイベントタイプと製品をパラメーターとして、および
 
-   ```swift
-   let productViewEvent = ExperienceEvent(xdm: xdmData)
-   ```
+   * 関数のパラメーターを使用して、XDM ペイロードをディクショナリとして設定します。
+   * 辞書を使用してエクスペリエンスイベントを設定します。
+   * は、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. イベントとデータを Platform Edge Network に送信します。
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** Xcode プロジェクトナビゲーターで、 `sendCommerceExperienceEvent` 関数：
 
-   ```swift
-   Edge.sendEvent(experienceEvent: productViewEvent)
-   ```
+   1. 次の場合： `.task` 修飾子、内 `ATTrackingManager.trackingAuthorizationStatus` クロージャ。 この `.task` 製品表示が初期化されて表示されると修飾子が呼び出されるので、特定の時点で製品表示イベントを送信できます。
 
-### 例#2 — カスタムフィールドグループ
+      ```swift
+      // Send productViews commerce experience event
+      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
+      ```
 
-サンプルアプリケーションに実装せずに、次の例を確認します。
+   1. 各ボタン (<img src="assets/saveforlater.png" width="15" />、 <img src="assets/addtocart.png" width="20" /> および <img src="assets/purchase.png" width="20" />) をツールバーの `ATTrackingManager.trackingAuthorizationStatus == .authorized` 閉鎖：
 
-1. スキーマで、収集しようとしているイベントを特定します。 この例では、アプリアクションイベントと名前で構成される「アプリインタラクション」を追跡します。
-   ![アプリインタラクションスキーマ](assets/mobile-datacollection-appInteraction-schema.png)
+      1. の場合 <img src="assets/saveforlater.png" width="15" />：
 
-1. オブジェクトの作成を開始します。
+         ```swift
+         // Send saveForLater commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
+         ```
 
-   >[!NOTE]
-   >
-   >  標準フィールドグループは、常にオブジェクトルートから始まります。
-   >
-   >  カスタムフィールドグループは、常にExperience Cloud組織に固有のオブジェクト（この例では「_techmarketingdemos」）の下で開始します。
+      1. の場合 <img src="assets/addtocart.png" width="20" />：
 
-   ```swift
-   var xdmData: [String: Any] = [
-   "_techmarketingdemos": [
-       "appInformation": [
-           "appInteraction": [
-               "name": actionName,
-               "appAction": [
-                   "value": 1
-                   ]
-               ]
-           ]
-       ]
-   ]
-   ```
+         ```swift
+         // Send productListAdds commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
+         ```
 
-   あるいは…
+      1. の場合 <img src="assets/purchase.png" width="20" />：
 
-   ```swift
-   var xdmData: [String: Any] = [:]
-   xdmData["_techmarketingdemos"] = [
-       "appInformation": [
-           "appInteraction": [
-               "name": actionName,
-               "appAction": [
-                   "value": 1
-               ]
-           ]
-       ]
-   ]
-   ```
-
-1. データ構造を使用して `ExperienceEvent`.
-
-   ```swift
-   let appInteractionEvent = ExperienceEvent(xdm: xdmData)
-   ```
-
-1. イベントとデータを Platform Edge Network に送信します。
-
-   ```swift
-   Edge.sendEvent(experienceEvent: appInteractionEvent)
-   ```
-
-### Luma アプリへの画面ビュートラッキングの追加
-
-上記の例では、XDM データオブジェクトを構築する際の考え方のプロセスを説明していると思います。 次に、Luma アプリに画面ビュートラッキングを追加します。
-
-1. `Home.swift` に移動します。
-1. `viewDidAppear(...)` に次のコードを追加します。
-
-   ```swift
-           let stateName = "luma: content: ios: us: en: home"
-           var xdmData: [String: Any] = [:]
-           //Page View
-           xdmData["_techmarketingdemos"] = [
-               "appInformation": [
-                   "appStateDetails": [
-                       "screenType": "App",
-                       "screenName": stateName,
-                       "screenView": [
-                           "value": 1
-                       ]
-                   ]
-               ]
-           ]
-           let experienceEvent = ExperienceEvent(xdm: xdmData)
-           Edge.sendEvent(experienceEvent: experienceEvent)
-   ```
-
-1. アプリの各画面で、を更新して繰り返します。 `stateName` 君が行く時
-
-
-
-### 検証
-
-1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
-1. アクションを実行し、 `hitReceived` イベント `com.adobe.edge.konductor` ベンダー。
-1. イベントを選択し、 `messages` オブジェクト。
-   ![データ収集の検証](assets/mobile-datacollection-validation.png)
-
-### 例#3 - purchase
-
-この例では、ユーザーが次の購入を正常に行ったとします。
-
-* 製品#1 — ヨガマット。
-   * $49.99 x1
-   * SKU:5829
-* 製品#2 — 水瓶。
-   * $10.00 x3
-   * SKU:9841
-* 注文合計： 79.99 ドル
-* 一意の注文 ID: 298234720
-* 支払いタイプ：ビザクレジットカード
-* 一意の支払トランザクション ID: 847361
-
-#### スキーマ
-
-使用する関連するスキーマフィールドを次に示します。
-
-* eventType: &quot;commerce.purchases&quot;
-* commerce.purchases
-* commerce.order
-* productsListItems
-* _techmarketingdemos.appStateDetails （カスタム）
+         ```swift
+         // Send purchase commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
+         ```
 
 >[!TIP]
 >
->カスタムフィールドグループは、常にExperience Cloud組織 ID の下に配置されます。
->
->「_techmarketingdemos」は組織の一意の値に置き換えられます。
-
-![購入スキーマ](assets/mobile-datacollection-purchase-schema.png)
+>Android™用に開発する場合は、マップ (`java.util.Map`) を XDM ペイロードを構築するための基本的なインターフェイスとして使用します。
 
 
-#### コード
+### カスタムフィールドグループ
 
-次に、アプリで XDM オブジェクトを作成して送信する方法を示します。
+アプリ自体の画面ビューやインタラクションを追跡するとします。 このタイプのイベントに対してカスタムフィールドグループを定義したことを忘れないでください。
 
-```swift
-let stateName = "luma: content: ios: us: en: orderconfirmation"
-let currencyCode = "USD"
-let orderTotal = "79.99"
-let paymentType = "Visa Credit Card"
-let orderId = "298234720"
-let paymentTransactionId = "847361"
-var xdmData: [String: Any] = [
-  "eventType": "commerce.purchases",
-  "commerce": [
-    "purchases": [
-      "value": 1
-    ],
-    "order": [
-      "currencyCode": currencyCode,
-      "priceTotal": orderTotal,
-      "purchaseID": orderId,
-      "purchaseOrderNumber": orderId,
-      "payments": [ //Assuming only 1 payment type is used
-        [
-          "currencyCode": currencyCode,
-          "paymentAmount": orderTotal,
-          "paymentType": paymentType,
-          "transactionID": paymentTransactionId
+* スキーマで、収集しようとしているイベントを特定します。
+  ![アプリインタラクションスキーマ](assets/datacollection-appInteraction-schema.png)
+
+* オブジェクトの作成を開始します。
+
+  >[!NOTE]
+  >
+  * 標準フィールドグループは、常にオブジェクトルートから始まります。
+  >
+  * カスタムフィールドグループは、常にExperience Cloud組織に固有のオブジェクトの下で開始します。 `_techmarketingdemos` この例では、
+
+  アプリのインタラクションイベントの場合は、次のようなオブジェクトを作成します。
+
+  ```swift
+  let xdmData: [String: Any] = [
+    "eventType": "application.interaction",
+    "_techmarketingdemos": [
+      "appInformation": [
+          "appInteraction": [
+              "name": "login",
+              "appAction": [
+                  "value": 1
+                  ]
+              ]
+          ]
+      ]
+  ]
+  ```
+
+  画面追跡イベントの場合は、次のようなオブジェクトを作成します。
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "eventType": "application.scene",
+    "_techmarketingdemos": [
+        "appInformation": [
+            "appStateDetails": [
+                "screenType": "App",
+                    "screenName": "luma: content: ios: us: en: login",
+                    "screenView": [
+                        "value": 1
+                    ]
+                ]
+            ] 
         ]
-      ]
-    ]
-  ],
-  "productListItems": [
-      [
-          "name":  "Yoga Mat",
-          "SKU": "5829",
-          "priceTotal": "49.99",
-          "quantity": 1
-      ],
-      [
-        "name":  "Water Bottle",
-        "SKU": "9841",
-        "priceTotal": "30.00",
-        "quantity": 3
-      ]
   ]
-]
+  ```
 
-//Custom field group
-xdmData["_techmarketingdemos"] = [
-  "appInformation": [
-    "appStateDetails": [
-      "screenType": "App",
-      "screenName": stateName,
-      "screenView": [
-        "value": 1
+
+* これで、このデータ構造を使用して `ExperienceEvent`.
+
+  ```swift
+  let event = ExperienceEvent(xdm: xdmData)
+  ```
+
+* イベントとデータを Platform Edge Network に送信します。
+
+  ```swift
+  Edge.sendEvent(experienceEvent: event)
+  ```
+
+
+ここでも、Xcode プロジェクトにこのコードを実装します。
+
+1. 利便性を考慮して、 **[!UICONTROL MobileSDK]**. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
+
+   1. アプリのインタラクション用の 1 つ。 このコードを `func sendAppInteractionEvent(actionName: String)` 関数：
+
+      ```swift
+      // Set up a data dictionary, create an experience event and send the event.
+      let xdmData: [String: Any] = [
+          "eventType": "application.interaction",
+          tenant : [
+              "appInformation": [
+                  "appInteraction": [
+                      "name": actionName,
+                      "appAction": [
+                          "value": 1
+                      ]
+                  ]
+              ]
+          ]
       ]
-    ]
-  ]
-]
-let experienceEvent = ExperienceEvent(xdm: xdmData)
-Edge.sendEvent(experienceEvent: experienceEvent)
-```
+      let appInteractionEvent = ExperienceEvent(xdm: xdmData)
+      Edge.sendEvent(experienceEvent: appInteractionEvent)
+      ```
 
->[!NOTE]
->
->明確にするために、すべての値がハードコードされています。 実際の状況では、値は動的に設定されます。
+      この関数では、アクション名をパラメーターとして使用し、
+
+      * 関数のパラメーターを使用して、XDM ペイロードをディクショナリとして設定します。
+      * 辞書を使用してエクスペリエンスイベントを設定します。
+      * は、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 
-### Luma アプリケーションでの実装
+   1. 画面追跡用のもの。 このコードを `func sendTrackScreenEvent(stateName: String) ` 関数：
 
-Luma サンプルアプリケーションへのデータ収集の追加を開始するには、すべてのツールが必要です。 以下に、従うことができる仮の追跡要件のリストを示します。
+      ```swift
+      // Set up a data dictionary, create an experience event and send the event.
+      let xdmData: [String: Any] = [
+          "eventType": "application.scene",
+          tenant : [
+              "appInformation": [
+                  "appStateDetails": [
+                      "screenType": "App",
+                      "screenName": stateName,
+                      "screenView": [
+                          "value": 1
+                      ]
+                  ]
+              ]
+          ]
+      ]
+      let trackScreenEvent = ExperienceEvent(xdm: xdmData)
+      Edge.sendEvent(experienceEvent: trackScreenEvent)
+      ```
 
-* 各画面ビューを追跡します。
-   * スキーマフィールド： screenType、screenName、screenView
-* 非コマースアクションを追跡します。
-   * スキーマフィールド： appInteraction.name、appAction
-* コマースアクション：
-   * 製品ページ： productViews
-   * 買い物かごに追加： productListAdds
-   * 買い物かごから削除： productListRemovals
-   * チェックアウトを開始：チェックアウト
-   * 買い物かごの表示： productListViews
-   * ウィッシュリストに追加： saveForLaters
-   * 購入：購入、注文
+      この関数では、状態名をパラメーターとして使用し、
+
+      * 関数のパラメーターを使用して、XDM ペイロードをディクショナリとして設定します。
+      * 辞書を使用してエクスペリエンスイベントを設定します。
+      * は、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+
+1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
+
+   1. 次のハイライト表示されたコードを [ ログイン ] ボタンのクロージャに追加します。
+
+      ```swift
+      // Send app interaction event
+      MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
+      ```
+
+   1. 次のハイライト表示されたコードをに追加します。 `onAppear` 修飾子：
+
+      ```swift
+      // Send track screen event
+      MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
+      ```
+
+## 検証
+
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) 「 」セクションを使用して、シミュレーターまたはデバイスを Assurance に接続します。
+
+   1. アシュランスアイコンを左に移動します。
+   1. 選択 **[!UICONTROL ホーム]** をクリックし、 **[!UICONTROL ECID]**, **[!UICONTROL 電子メール]**、および **[!UICONTROL CRM ID]** 」と入力します。
+   1. 選択 **[!DNL Products]** 」をクリックします。
+   1. 製品を選択します。
+   1. 選択 <img src="assets/saveforlater.png" width="15" />。
+   1. 選択 <img src="assets/addtocart.png" width="20" />。
+   1. 選択 <img src="assets/purchase.png" width="15" />。
+
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
+
+1. Assurance UI で、 **[!UICONTROL hitReceived]** イベント **[!UICONTROL com.adobe.edge.conductor]** ベンダー。
+1. イベントを選択し、 **[!UICONTROL メッセージ]** オブジェクト。 または、 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 生のイベントをコピー]** を貼り付け、イベントを調べるには、好みのテキストエディターまたはコードエディターを使用します。
+
+   ![データ収集の検証](assets/datacollection-validation.png)
+
+
+## 次の手順
+
+これで、アプリへのデータ収集の追加を開始するためのすべてのツールが用意されました。 ユーザーがアプリ内の製品をどのように操作するかに関するインテリジェンスを追加でき、さらに多くのアプリインタラクションや画面トラッキングコールをアプリに追加できます。
+
+* 注文、チェックアウト、空のバスケット、その他の機能をアプリに実装し、関連するコマースエクスペリエンスイベントをこの機能に追加します。
+* への呼び出しを繰り返します。 `sendAppInteractionEvent` を適切なパラメーターに置き換えて、ユーザーによるその他のアプリの操作を追跡します。
+* への呼び出しを繰り返します。 `sendTrackScreenEvent` を適切なパラメーターに設定して、アプリ内でユーザーが表示した画面を追跡します。
 
 >[!TIP]
 >
->以下を確認します。 [完全に実装されたアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) その他の例を参照してください。
+以下を確認します。 [アプリの完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) その他の例を参照してください。
 
-### 検証
-
-1. 以下を確認します。 [設定手順](assurance.md) を参照し、シミュレーターまたはデバイスを Assurance に接続します。
-
-1. アクションを実行し、 `hitReceived` イベント `com.adobe.edge.konductor` ベンダー。
-
-1. イベントを選択し、 `messages` オブジェクト。
-   ![データ収集の検証](assets/mobile-datacollection-validation.png)
 
 ## Analytics と Platform へのイベントの送信
 
-これで、イベントを収集して Platform Edge ネットワークに送信したので、イベントは、 [datastream](create-datastream.md). 後のレッスンでは、このデータをにマッピングします。 [Adobe Analytics](analytics.md) および [Adobe Experience Platform](platform.md).
+これで、イベントを収集して Platform Edge ネットワークに送信したので、イベントは、 [datastream](create-datastream.md). 後のレッスンでは、このデータをにマッピングします。 [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md)などの他のAdobe Experience Cloudソリューション [Adobe Target](target.md) Adobe Journey Optimizer
 
-次へ： **[WebViews](web-views.md)**
-
->[!NOTE]
+>[!SUCCESS]
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+これで、Adobe Experience Platform Edge Network と、データストリームで定義したすべてのサービスに対するコマース、アプリのインタラクション、画面のトラッキングイベントを追跡するアプリを設定しました。
+>
+Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+次へ： **[WebViews を処理](web-views.md)**

@@ -1,11 +1,11 @@
 ---
-title: WebViews を処理
+title: Platform Mobile SDK で WebViews を処理する
 description: モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # WebViews を処理
 
 モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
-
->[!INFO]
->
-> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
 
 ## 前提条件
 
@@ -26,85 +22,86 @@ ht-degree: 0%
 
 このレッスンでは、次の操作を実行します。
 
-* WebViews に関する特別な考慮事項を考慮する必要がある理由を理解します。
+* アプリケーションで WebViews を特に考慮する必要がある理由を理解します。
 * トラッキングの問題を防ぐために必要なコードを理解します。
 
 ## トラッキングの問題の可能性
 
-アプリのネイティブ部分と WebView からデータを送信する場合、それぞれが独自のExperience CloudID(ECID) を生成します。 その結果、ヒットが切断され、訪問/訪問者のデータが水増しされます。 ECID について詳しくは、 [ECID の概要](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+アプリのネイティブ部分とアプリ内の WebView からデータを送信する場合、それぞれが独自のExperience CloudID(ECID) を生成します。これにより、ヒットが切断され、訪問/訪問者データが水増しされます。 ECID について詳しくは、 [ECID の概要](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
-その望ましくない状況を解決するには、ユーザーの ECID をネイティブ部分から WebView に渡すことが重要です。
+望ましくない状況を解決するには、アプリのネイティブ部分からアプリで使用したい WebView にユーザーの ECID を渡すことが重要です。
 
-WebView のExperience CloudID サービス JavaScript 拡張機能は、新しい ID のリクエストをAdobeに送信する代わりに、URL から ECID を抽出します。 ID サービスは、この ECID を使用して訪問者を追跡します。
+WebView 内で使用される AEP Edge Identity Extension は、現在の ECID を収集し、新しい ID のリクエストをAdobeに送信する代わりに URL に追加します。 その後、実装はこの ECID を使用して URL をリクエストします。
 
 ## 実装
 
-Luma サンプルアプリで、 `TermsOfService.swift` ファイル ( `Intro-Login_SignUp` フォルダー ) を探し、次のコードを探します。
+に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**&#x200B;をクリックし、 `func loadUrl()` 関数 `final class SwiftUIWebViewModel: ObservableObject` クラス。 次の呼び出しを追加して、Web ビューを処理します。
 
 ```swift
-// Show tou.html
-let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-let myRequest = URLRequest(url: url!)
-self.webView.load(myRequest)
-```
-
-これは、WebView を読み込む簡単な方法です。 この場合、ローカルファイルですが、リモートページにも同じ概念が適用されます。
-
-次に示すように、Web ビューコードをリファクタリングします。
-
-```swift
-let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-if var urlString = url?.absoluteString {
-    // Adobe Experience Platform - Handle Web View
-    AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
-        if let error = error {
-            self.simpleAlert("\(error.localizedDescription)")
-            return;
-        }
-
-        if let urlVariables: String = urlVariables {
-            urlString.append("?" + urlVariables)
-        }
-
-        DispatchQueue.main.async {
-            self.webView.load(URLRequest(url: URL(string: urlString)!))
-        }
-        print("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
+// Handle web view
+AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
+    if let error = error {
+        print("Error with Webview", error)
+        return;
     }
-} else {
-    self.simpleAlert("Failed to create URL for webView")
+    
+    if let urlVariables: String = urlVariables {
+        urlString.append("?" + urlVariables)
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.webView.load(URLRequest(url: url))
+        }
+    }
+    Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
 }
 ```
+
+The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API は、ECID などのすべての関連情報を含めるために URL の変数を設定します。 この例では、ローカルファイルを使用していますが、リモートページにも同じ概念が適用されます。
 
 詳しくは、 `Identity.getUrlVariables` の API [Edge Network 拡張機能 API リファレンスガイドの ID](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
 ## 検証
 
-レビュー後 [設定手順](assurance.md) セクションを開き、シミュレーターまたはデバイスを Assurance に接続し、WebView を読み込んで、 `Edge Identity Response URL Variables` イベント `com.adobe.griffon.mobile` ベンダー。
+コードを実行するには、次の手順に従います。
 
-WebView を読み込むには、Luma アプリのホーム画面に移動し、「アカウント」アイコンを選択し、フッターの「利用条件」を選択します。
+1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
+1. 次に移動： **[!UICONTROL 設定]** アプリ内
+1. 次をタップします。 **[!DNL View...]** ボタンをクリックして、 **[!DNL Terms of Use]**.
 
-WebView の読み込み後、イベントを選択し、 `urlvariables` フィールド `ACPExtensionEventData` オブジェクトの URL に次のパラメーターが存在することを確認します。 `adobe_mc`, `mcmid`、および `mcorgid`.
+   <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
-![Web ビュー検証](assets/mobile-webview-validation.png)
+1. Assurance UI で、 **[!UICONTROL エッジ ID 応答 URL 変数]** イベント **[!UICONTROL com.adobe.griffon.mobile]** ベンダー。
+1. イベントを選択し、 **[!UICONTROL urlvariable]** フィールド **[!UICONTROL ACPExtensionEventData]** オブジェクトの URL に次のパラメーターが存在することを確認します。 `adobe_mc`, `mcmid`、および `mcorgid`.
 
-サンプル `urvariables` フィールドは次のように表示されます。
+   ![Web ビュー検証](assets/webview-validation.png)
 
-```html
-// Original (with escaped characters)
-adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
+   サンプル `urvariables` フィールドは次のように表示されます。
 
-// Beautified
-adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
-```
+   * 元の文字（エスケープ文字を使用）
+
+     ```html
+     adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
+     ```
+
+   * 美化
+
+     ```html
+     adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
+     ```
+
+残念ながら、Web セッションのデバッグは制限されています。 例えば、ブラウザーでAdobe Experience Platform Debuggerを使用して Web ビューセッションのデバッグを続行することはできません。
 
 >[!NOTE]
 >
->現在、これらの URL パラメーターを使用した訪問者のステッチは、Platform Web SDK( バージョン2.11.0以降 ) および `VisitorAPI.js`.
+>これらの URL パラメーターを使用した訪問者のステッチは、Platform Web SDK( バージョン2.11.0以降 ) で、 `VisitorAPI.js`.
 
 
-次へ： **[ID](identity.md)**
-
->[!NOTE]
+>[!SUCCESS]
+>
+>これで、Adobe Experience Platform Mobile SDK が既に発行した ECID と同じ ECID を使用して、Web ビューの URL に基づいてコンテンツを表示するアプリを設定しました。
 >
 >Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+次へ： **[ID](identity.md)**

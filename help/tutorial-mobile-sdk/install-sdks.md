@@ -2,10 +2,10 @@
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -13,147 +13,133 @@ ht-degree: 2%
 
 モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
 
->[!INFO]
->
-> このチュートリアルは、2023 年 11 月後半に新しいサンプルモバイルアプリを使用した新しいチュートリアルに置き換えられます
-
 ## 前提条件
 
 * タグライブラリが正常に構築され、 [前のレッスン](configure-tags.md).
 * からの開発環境ファイル ID [モバイルインストール手順](configure-tags.md#generate-sdk-install-instructions).
-* ダウンロード済み、空 [サンプルアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
-* の使用経験 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
-* 基本 [コマンドライン](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} 知識
+* 空の [サンプルアプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* の使用経験 [Xcode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 学習内容
 
 このレッスンでは、次の操作を実行します。
 
-* CocoaPod ファイルを更新します。
-* 必要な SDK をインポートします。
+* Swift パッケージマネージャーを使用して、必要な SDK をプロジェクトに追加します。
 * 拡張機能を登録します。
 
 >[!NOTE]
 >
 >モバイルアプリの実装では、「拡張機能」と「SDK」という用語はほぼ互換性があります。
 
+## Swift Package Manager
 
-## PodFile を更新
+CocoaPods と POD ファイルを使用する代わりに、 [SDK のインストール手順の生成](./configure-tags.md#generate-sdk-install-instructions)) を使用して、Xcode のネイティブ Swift パッケージマネージャーを使用して個々のパッケージを追加します。 Xcode プロジェクトには、すべてのパッケージの依存関係が既に追加されています。 Xcode **[!UICONTROL パッケージの依存関係]** 画面は次のようになります。
 
->[!NOTE]
->
-> CocoaPods に詳しくない場合は、公式の [入門ガイド](https://guides.cocoapods.org/using/getting-started.html).
+![Xcode パッケージの依存関係](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
 
-Install は通常、次の簡単な sudo コマンドです。
 
-```console
-sudo gem install cocoapods
-```
+Xcode では、 **[!UICONTROL ファイル]** > **[!UICONTROL パッケージを追加…]** をクリックしてパッケージを追加します。 次の表に、パッケージの追加に使用する URL へのリンクを示します。 また、リンクから、各パッケージの詳細情報にアクセスできます。
 
-CocoaPods がインストールされたら、ポッドファイルを開きます。
+| パッケージ | 説明 |
+|---|---|
+| [AEP コア](https://github.com/adobe/aepsdk-core-ios) | The `AEPCore`, `AEPServices`、および `AEPIdentity` 拡張機能は、Adobe Experience Platform SDK の基盤を表します。SDK を使用するすべてのアプリには、これらを含める必要があります。 これらのモジュールには、すべての SDK 拡張機能で必要となる機能とサービスの共通セットが含まれています。<br/><ul><li>`AEPCore` には、Event Hub の実装が含まれています。 イベントハブは、アプリと SDK の間でイベントを配信する際に使用されるメカニズムです。 イベントハブは、拡張機能間でのデータの共有にも使用されます。</li><li>`AEPServices` は、ネットワーク、ディスクアクセス、データベース管理など、プラットフォームのサポートに必要な再利用可能な実装をいくつか提供します。</li><li>`AEPIdentity` は、Adobe Experience Platform ID サービスとの統合を実装しています。</li><li>`AEPSignal` は、マーケターがアプリに「シグナル」を送信して、外部の宛先にデータを送信したり、URL を開いたりできるAdobe Experience Platform SDK シグナル拡張機能を表します。</li><li>`AEPLifecycle` は、アプリケーションのインストールまたはアップグレード情報、アプリケーションの起動とセッション情報、デバイス情報、アプリケーション開発者が提供する追加のコンテキストデータなど、アプリケーションのライフサイクル指標を収集するのに役立つAdobe Experience Platform SDK の Lifecycle 拡張機能を表します。</li></ul> |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios) | Adobe Experience Platform Edge Network モバイル拡張機能 (`AEPEdge`) を使用すると、モバイルアプリケーションからAdobe Edge Network にデータを送信できます。 この拡張機能を使用すると、Adobe Experience Cloud機能をより堅牢な方法で実装し、1 回のAdobe呼び出しで複数のネットワークソリューションを提供し、同時にこの情報をAdobe Experience Platformに転送できます。<br/>Edge Network モバイル拡張機能は、Adobe Experience Platform SDK の拡張機能で、 `AEPCore` および `AEPServices` イベント処理用の拡張機能、および `AEPEdgeIdentity` id を取得するための拡張（ECID など）。 |
+| [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios) | AEP Edge Identity Mobile 拡張機能 (`AEPEdgeIdentity`) を使用すると、Adobe Experience Platform SDK と Edge Network 拡張機能を使用する際に、モバイルアプリケーションからユーザー ID データを処理できます。 |
+| [AEP Edge の同意](https://github.com/adobe/aepsdk-edgeconsent-ios) | AEP Consent Collection モバイル拡張機能 (`AEPConsent`) は、Adobe Experience Platform SDK と Edge Network 拡張機能を使用する際に、モバイルアプリケーションから同意設定の収集を有効にします。 |
+| [AEP ユーザープロファイル](https://github.com/adobe/aepsdk-userprofile-ios) | Adobe Experience Platform User Profile Mobile 拡張機能 (`AEPUserProfile`) は、Adobe Experience Platform SDK のユーザープロファイルを管理する拡張機能です。 |
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEP Places 拡張機能 (`AEPPlaces`) を使用すると、Places インターフェイスおよびAdobeデータ収集Adobeルールで定義された位置情報イベントを追跡できます。 |
+| [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios) | AEP メッセージ拡張機能 (`AEPMessaging`) を使用すると、プッシュ通知トークンとプッシュ通知クリックスルーフィードバックをAdobe Experience Platformに送信できます。 |
+| [AEP 最適化](https://github.com/adobe/aepsdk-optimize-ios) | AEP Optimize 拡張機能 (`AEPOptimize`) は、Adobe TargetまたはAdobe Journey OptimizerOffer decisioningを使用してAdobe Experience Platform Mobile SDK でリアルタイムのパーソナライゼーションワークフローを有効にする API を提供します。 必要な情報 `AEPCore` および `AEPEdge` パーソナライゼーションクエリイベントを Experience Edge ネットワークに送信する拡張機能です。 |
+| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios) | Assurance (a.k.a. project Griffon) は、新しい革新的な拡張機能 (`AEPAssurance`) を使用して、モバイルアプリでデータを収集したりエクスペリエンスを提供する方法を調査、配達確認、シミュレーションおよび検証できます。 この拡張機能を使用すると、アプリでアシュランスを有効にできます。 |
 
-![初期ポッドファイル](assets/mobile-install-initial-podfile.png)
-
-ファイルを更新して、次のポッドを含めます。
-
-```swift
-pod 'AEPCore', '~> 3'
-pod 'AEPEdge', '~> 1'
-pod 'AEPUserProfile', '~> 3'
-pod 'AEPAssurance', '~> 3'
-pod 'AEPServices', '~> 3'
-pod 'AEPEdgeConsent', '~> 1'
-pod 'AEPLifecycle', '~>3'
-pod 'AEPMessaging', '~>1'
-pod 'AEPEdgeIdentity', '~>1'
-pod 'AEPSignal', '~>3'
-```
-
->[!NOTE]
->
-> `AEPMessaging` は、Adobe Journey Optimizerを使用してプッシュメッセージを実装する予定がある場合にのみ必要です。 次のチュートリアルをお読みください： [Adobe Journey Optimizerでのプッシュメッセージの実装](journey-optimizer-push.md) を参照してください。
-
-ポッドファイルへの変更を保存したら、プロジェクトのあるフォルダーに移動し、 `pod install` 」コマンドを使用して変更をインストールします。
-
-![ポッドのインストール](assets/mobile-install-podfile-install.png)
-
->[!NOTE]
->
-> 「プロジェクトディレクトリにポッドファイルが見つかりません」と表示された場合は、 エラーが発生しました。ターミナルが間違ったフォルダーにあります。 更新したポッドファイルが含まれるフォルダーに移動し、再度お試しください。
-
-最新バージョンにアップグレードする場合は、 `pod update` コマンドを使用します。
-
->[!INFO]
->
->自分のアプリで CocoaPods を使用できない場合は、他の情報を参照できます [サポートされる実装](https://github.com/adobe/aepsdk-core-ios#binaries) を GitHub プロジェクトに追加します。
-
-## CocoaPods の作成
-
-CocoaPods を構築するには、を開きます。 `Luma.xcworkspace`をクリックし、次を選択します。 **製品**&#x200B;に続いて **ビルドフォルダをクリーンアップ**.
-
->[!NOTE]
->
-> 次の設定が必要な場合は、 **アクティブなアーキテクチャのみを構築** から **いいえ**. これをおこなうには、プロジェクトナビゲーターから Pods プロジェクトを選択し、「 **ビルド設定**&#x200B;をクリックし、 **アクティブなアーキテクチャの構築** から **いいえ**.
-
-これで、プロジェクトを構築して実行できます。
-
-![ビルド設定](assets/mobile-install-build-settings.png)
-
->[!NOTE]
->
->Luma プロジェクトは、M1 チップセット上で Xcode v12.5 を使用して構築され、iOSシミュレーター上で動作します。 別の設定を使用している場合は、アーキテクチャを反映するためにビルド設定を変更する必要が生じる場合があります。
->
->ビルドが成功しなかった場合は、 **アクティブなアーキテクチャの構築** > **デバッグ** に戻す **はい**.
->
->このチュートリアルの作成時に、シミュレーター設定「iPod touch（7 世代）」が使用されました。
 
 ## 拡張機能のインポート
 
-各 `.swift` ファイルに次のインポートを追加します。 まず、 `AppDelegate.swift`.
+Xcode で、に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 次のインポートがこのソースファイルに含まれていることを確認します。
 
 ```swift
-import AEPUserProfile
-import AEPAssurance
-import AEPEdge
+// import AEP MobileSDK libraries
 import AEPCore
+import AEPServices
+import AEPIdentity
+import AEPSignal
+import AEPLifecycle
+import AEPEdge
 import AEPEdgeIdentity
 import AEPEdgeConsent
-import AEPLifecycle
-import AEPMessaging //Optional, used for AJO push messaging
-import AEPSignal
-import AEPServices
+import AEPUserProfile
+import AEPPlaces
+import AEPMessaging
+import AEPOptimize
+import AEPAssurance
 ```
+
+同じ操作を次にも実行します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## AppDelegate を更新
 
-Adobe Analytics の `AppDelegate.swift` ファイルで、次のコードを `didFinishLaunchingWithOptions`. currentAppId を、のタグから取得した開発環境ファイル ID 値に置き換えます。 [前のレッスン](configure-tags.md).
+に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** 」をクリックします。
 
-```swift
-let currentAppId = "b5cbd1a1220e/bae66382cce8/launch-88492c6dcb6e-development"
+1. 次を `@AppStorage` 値 `YOUR_ENVIRONMENT_ID_GOES_HERE` 対象： `environmentFileId` を、のタグから取得した開発環境ファイル ID 値に追加します。 [SDK のインストール手順の生成](configure-tags.md#generate-sdk-install-instructions).
 
-let extensions = [Edge.self, Assurance.self, Lifecycle.self, UserProfile.self, Consent.self, AEPEdgeIdentity.Identity.self, Messaging.self]
+   ```swift
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
+   ```
 
-MobileCore.setLogLevel(.trace)
+1. 次のコードを `application(_, didFinishLaunchingWithOptions)` 関数に置き換えます。
 
-MobileCore.registerExtensions(extensions, {
-    MobileCore.configureWith(appId: currentAppId)
-})
-```
-
-`Messaging.self` は、説明に従って、Adobe Journey Optimizerを介してプッシュメッセージを実装する予定がある場合にのみ必要です [ここ](journey-optimizer-push.md).
+   ```swift
+   // Define extensions
+   let extensions = [
+       AEPIdentity.Identity.self,
+       Lifecycle.self,
+       Signal.self,
+       Edge.self,
+       AEPEdgeIdentity.Identity.self,
+       Consent.self,
+       UserProfile.self,
+       Places.self,
+       Messaging.self,
+       Optimize.self,
+       Assurance.self
+   ]
+   
+   // Register extensions
+   MobileCore.registerExtensions(extensions, {
+       // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
+       Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
+       MobileCore.configureWith(appId: self.environmentFileId)
+   
+       // set this to false or comment it when deploying to TestFlight (default is false),
+       // set this to true when testing on your device.
+       MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])
+       if appState != .background {
+           // only start lifecycle if the application is not in the background
+           MobileCore.lifecycleStart(additionalContextData: nil)
+       }
+   
+       // assume unknown, adapt to your needs.
+       MobileCore.setPrivacyStatus(.unknown)
+   })
+   ```
 
 上記のコードでは、次の処理をおこないます。
 
-* 必要な拡張機能を登録します。
-* タグプロパティ設定を使用するように MobileCore および他の拡張機能を設定します。
-* デバッグログを有効にします。 詳細およびオプションについては、 [Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. 必要な拡張機能を登録します。
+1. タグプロパティ設定を使用するように MobileCore および他の拡張機能を設定します。
+1. デバッグログを有効にします。 詳細およびオプションについては、 [Adobe Experience Platform Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. ライフサイクル監視を開始します。 詳しくは、 [ライフサイクル](lifecycle-data.md) 詳しくは、チュートリアルの手順を参照してください。
+1. デフォルトの同意を不明に設定します。 詳しくは、 [同意](consent.md) 詳しくは、チュートリアルの手順を参照してください。
 
 >[!IMPORTANT]
->実稼動アプリケーションでは、現在の環境 (dev/stag/prod) に基づいて AppId を切り替える必要があります。
+>
+>を必ず更新してください `MobileCore.configureWith(appId: self.environmentFileId)` と `appId` 基準： `environmentFileId` 作成するタグ環境（開発、ステージングまたは実稼動）から。
 >
 
-次へ： **[アシュランスの設定](assurance.md)**
-
->[!NOTE]
+>[!SUCCESS]
+>
+>これで、必要なパッケージをインストールし、プロジェクトを更新して、チュートリアルの残りの部分で使用する必要なAdobe Experience Platform Mobile SDK 拡張機能を適切に登録しました。
 >
 >Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+次へ： **[アシュランスの設定](assurance.md)**
