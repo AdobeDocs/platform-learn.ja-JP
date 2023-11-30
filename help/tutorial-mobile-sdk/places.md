@@ -2,7 +2,7 @@
 title: Places を Platform Mobile SDK で使用する
 description: モバイルアプリで Places ジオロケーションサービスを使用する方法について説明します。
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 4%
@@ -182,7 +182,7 @@ Places サービスで目標地点を定義します。
 
 1. Adobe Analytics の **[!UICONTROL ルールを作成]** 画面で、ルールの名前を入力します。例： `POI - Exit`.
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL イベント]**.
-   1. 選択 **[!UICONTROL 場所]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL POI を入力]** から **[!UICONTROL イベントタイプ]** リスト。
+   1. 選択 **[!UICONTROL 場所]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL 出口 POI]** から **[!UICONTROL イベントタイプ]** リスト。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL アクション]**.
    1. 選択 **[!UICONTROL Mobile Core]** から **[!UICONTROL 拡張]** リスト、選択 **[!UICONTROL データを添付]** から **[!UICONTROL アクションタイプ]** リスト。
