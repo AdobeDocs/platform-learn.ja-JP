@@ -1,12 +1,12 @@
 ---
-title: ベンダータグをイベント転送に移動することを検討します
+title: ベンダータグをイベント転送に移動することを検討します。
 description: サーバー側のデータ配布のためのクライアント側のベンダータグを評価する方法について説明します。
 feature: Event Forwarding, Tags, Integrations
 role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
 jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 6%
@@ -31,14 +31,14 @@ ht-degree: 6%
 
 ## 使用例とデータ {#use-cases-data}
 
-最初の手順は、クライアント側のベンダータグで実装されるユースケースを定義することです。 例えば、Facebook(Meta) ピクセルについて考えてみましょう。 サイトからに移動する [Facebook Conversions API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) イベント転送拡張機能を使用する場合は、特定の使用例を最初にドキュメント化することを意味します。
+最初の手順は、クライアント側のベンダータグで実装されるユースケースを定義することです。 例えば、Facebook(Meta) ピクセルについて考えてみましょう。 サイトからに移動する [メタ変換 API](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) イベント転送拡張機能を使用する場合は、特定の使用例を最初にドキュメント化することを意味します。
 
 現在のクライアント側ベンダーコードの場合：
 
 - クライアント側タグに公開および渡される特定のイベントやその他のデータポイントは何ですか？
 - そのデータ転送は、いつどこでおこなわれますか？
 
-この評価を記録するデータやイベントのシーケンスを、たとえ自分で使用する場合でも、リスト、スプレッドシート、図、またはその他の記録を作成すると便利です。 データソースのラベルを必ず含めてください。ラベルはどこから取得されますか。 目的地 — どこへ行くのか？ 変換 — ソースと宛先の間で何が起こるか。
+この評価を記録するデータやイベントのシーケンスを、たとえ自分で使用する場合でも、リスト、スプレッドシート、図、またはその他の記録を作成すると便利です。 データソースのラベルを必ず含めてください。ラベルはどこから取得されますか。 目的地 — どこへ行くのか？ 変換 — ソースと宛先の間で何が起こるのでしょうか。
 
 この例では、訪問者がFacebook広告を表示した後にサイトとやり取りした際に、Facebookピクセルを使用してコンバージョンを追跡しています。 また、別のソーシャルプラットフォームで関連する広告を表示した後で、サイトとやり取りすることもできます。 これらのコンバージョンをFacebookの広告ツールおよびレポートで確認するには、必要なデータをFacebookに送信する必要があります。 このデータには、ダウンロード、登録、「いいね！」、購入などのコンバージョンイベントが含まれる場合があります。
 
@@ -49,7 +49,7 @@ ht-degree: 6%
 - すべてのイベントにベンダーユーザー ID が必要ですか？
 - その場合、クライアント側タグを使用せずに、どのようにして収集または生成できますか。
 - ベンダーは実行時に特にクライアント側コードを必要としますか。
-- その他に必要なデータは何ですか？ そのデータはどこから得られますか？
+- その他に必要なデータは何ですか？ そのデータはどこから取得されますか？
 
 ほとんどのクライアント側ベンダータグは、特定の使用例に対して多くのデータポイントを必要としませんが、これらの評価の際には、使用例と必要なデータをメモしておくと役に立ちます。
 
@@ -70,7 +70,7 @@ ht-degree: 6%
 - 必要なデータを送信するために API エンドポイントは存在しますか。 使用例をサポートするエンドポイントを見つけるには、ベンダーの開発者または API のドキュメントを参照してください。
 - イベントデータのストリーミングを許可していますか、それともバッチデータのみを許可していますか。
 - どの認証方法をサポートしていますか？ トークン、HTTP、OAuth クライアント資格情報のバージョン、その他のバージョンは？ 詳しくは、 [ここ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) イベント転送でサポートされるメソッドの場合。
-- API の更新オフセットは何ですか？ その制限はイベント転送の最小値と互換性がありますか。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
+- API の更新オフセットは何ですか？ その制限はイベント転送の最小値と互換性がありますか？ 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - 関連するエンドポイントに必要なデータは何ですか？
 - エンドポイントへの呼び出しごとに、ベンダー固有のユーザー識別子が必要か。
 - その識別子が必要な場合、クライアント側のコードなしで、どこで、どのように生成または取り込むことができますか。
@@ -91,16 +91,16 @@ API を持っているが、API 呼び出しごとに一意の訪問者 ID や�
 
 ベンダーが独自のクライアント側タグでのみ生成またはアクセスできるデータ（ベンダー固有の一意の ID など）を必要とする場合、そのベンダータグは移動に適した候補とはならない可能性が高くなります。 _適切な API を使用せずにデータ収集をイベント転送に移動するという考えでクライアント側タグのリバースエンジニアリングを試みることはお勧めしません。_
 
-この [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) 拡張機能は、必要に応じて、サーバー間イベントデータ転送に適した API を持つベンダーと共に HTTP リクエストを実行できます。 ベンダー固有の拡張機能は非常に役に立ち、現在、より多くの拡張機能がアクティブな開発中ですが、追加のベンダー拡張機能を待たずに、Cloud Connector 拡張機能を使用して今日のイベント転送ルールを実装できます。
+The [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) 拡張機能は、必要に応じて、サーバー間イベントデータ転送に適した API を持つベンダーと共に HTTP リクエストを実行できます。 ベンダー固有の拡張機能は非常に役に立ち、現在、より多くの拡張機能がアクティブな開発中ですが、追加のベンダー拡張機能を待たずに、Cloud Connector 拡張機能を使用して今日のイベント転送ルールを実装できます。
 
 ## ツール {#tools}
 
-ベンダー API エンドポイントの調査とテストは、 [Postman](https://www.postman.com/)、または Visual Studio Code などのテキストエディター拡張機能 [Thunder クライアント](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)または [HTTP クライアント](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
+ベンダー API エンドポイントの調査とテストは、 [Postman](https://www.postman.com/)、または Visual Studio Code などのテキストエディター拡張機能。 [Thunder クライアント](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)または [HTTP クライアント](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
 
 ## 次の手順 {#next-steps}
 
 この記事では、ベンダーのクライアント側タグを評価し、イベント転送プロパティでサーバー側に移動する可能性のある一連の手順を説明しました。 関連トピックについて詳しくは、次のリンクを参照してください。
 
 - [タグ管理](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) Adobe Experience Platform
-- [イベント転送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) （サーバーサイド処理用）
+- [イベントの転送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) （サーバーサイド処理用）
 - [用語の更新](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja) データ収集
