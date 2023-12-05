@@ -2,11 +2,12 @@
 title: Platform Mobile SDK 実装用のデータストリームの設定
 description: データストリームを作成する方法については、Experience Platformを参照してください。
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 9%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +28,8 @@ ht-degree: 9%
 このレッスンでは、次の操作を実行します。
 
 * データストリームをいつ使用すればよいかを把握します。
-* データストリームの作成.
-* データストリームの設定.
+* データストリームを作成します。
+* データストリームを設定します。
 
 ## データストリームの作成
 
@@ -44,7 +45,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >最終的な注意事項：単一のサンドボックスで複数のユーザーを使用する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加または前付けすることを検討してください。 例えば、`Luma Mobile App Event Dataset` の代わりに、`Luma Mobile App Event Dataset - Joe Smith` を使用します。詳しくは、 [概要](overview.md).
+   >最終的な注意事項：単一のサンドボックスで複数のユーザーを使用する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加または前付けすることを検討してください。 例えば、の代わりに `Luma Mobile App Event Dataset`，使用 `Luma Mobile App Event Dataset - Joe Smith`. 詳しくは、 [概要](overview.md).
 
 1. 前のレッスンで作成したスキーマを **イベントスキーマ** リスト。
 1. 「**[!UICONTROL 保存]**」を選択します。

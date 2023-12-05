@@ -4,11 +4,12 @@ description: Platform Mobile SDK とAdobe Journey Optimizer Decision Management 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 3%
+source-wordcount: '2470'
+ht-degree: 2%
 
 ---
 
@@ -76,7 +77,7 @@ Journey Optimizer Decision Management は、すべてのタッチポイントに
 1. 選択 **[!UICONTROL 拡張機能]**.
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL Adobe Journey Optimizer — 判定]** 拡張子。
-1. 拡張機能のインストール. 拡張機能に追加の設定は必要ありません。
+1. 拡張機能をインストールします。 拡張機能に追加の設定は必要ありません。
 
    ![判定拡張機能の追加](assets/tag-add-decisioning-extension.png)
 

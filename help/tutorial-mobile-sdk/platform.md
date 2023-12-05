@@ -3,11 +3,12 @@ title: Platform Mobile SDK を使用したExperience Platformへのデータ送�
 description: データをExperience Platformに送信する方法を説明します。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
+jira: KT-14637
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 8%
+source-wordcount: '1032'
+ht-degree: 6%
 
 ---
 
@@ -116,7 +117,7 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 1. スキーマを開きます（例： ）。 **[!DNL Luma Mobile App Event Schema]**.
 1. 有効にする **[!UICONTROL プロファイル]**.
 1. 選択 **[!UICONTROL このスキーマのデータの identityMap フィールドには、プライマリ ID が含まれます。]** 」と入力します。
-1. **[!UICONTROL スキーマを保存します。]**
+1. **[!UICONTROL 保存]** スキーマ。
 
    ![プロファイルのスキーマの有効化](assets/platform-profile-schema.png)
 

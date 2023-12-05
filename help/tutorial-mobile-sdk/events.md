@@ -1,11 +1,12 @@
 ---
 title: Platform Mobile SDK を使用したモバイルアプリのイベントデータの追跡
 description: モバイルアプリでイベントデータを追跡する方法を説明します。
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 3%
+source-wordcount: '1328'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +50,7 @@ Adobe Experience Platform Edge 拡張機能は、以前に定義した XDM ス�
 
 1. イベントを作成して送信します。
 
-1. 検証.
+1. 検証します。
 
 
 ### 標準フィールドグループ

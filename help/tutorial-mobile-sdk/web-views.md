@@ -1,11 +1,11 @@
 ---
 title: Platform Mobile SDK で WebViews を処理する
 description: モバイルアプリで WebViews を使用してデータ収集を処理する方法を説明します。
-jira: KT-6987
+jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---

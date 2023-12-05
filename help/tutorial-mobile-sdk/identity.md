@@ -2,11 +2,12 @@
 title: モバイル SDK を使用したモバイルアプリでの ID データの収集
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 5%
+source-wordcount: '815'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +35,7 @@ Adobe Experience Platform ID サービスを使用すると、デバイスやシ
 
 ## カスタム ID 名前空間の設定
 
-ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) id が関連するコンテキストのインジケーターとして機能する 例えば、`name@email.com` の値をメールアドレスとして、または `443522` を数値 CRM ID として区別します。
+ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) id が関連するコンテキストのインジケーターとして機能する 例えば、 `name@email.com` 電子メールアドレスとして、または `443522` を数値 CRM ID として設定します。
 
 >[!NOTE]
 >
@@ -140,7 +141,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
 1. Luma アプリ内
    1. を選択します。 **[!UICONTROL ホーム]** タブをクリックし、アシュランスアイコンを左に移動します。
-   1. Select the <img src="assets/login.png" width="15" /> アイコンを右上に表示します。
+   1. を選択します。 <img src="assets/login.png" width="15" /> アイコンを右上に表示します。
 
       <img src="./assets/identity1.png" width="300">
 

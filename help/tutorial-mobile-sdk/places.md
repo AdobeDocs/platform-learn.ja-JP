@@ -1,11 +1,12 @@
 ---
 title: Places を Platform Mobile SDK で使用する
 description: モバイルアプリで Places ジオロケーションサービスを使用する方法について説明します。
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 4%
+source-wordcount: '1588'
+ht-degree: 3%
 
 ---
 
@@ -71,7 +72,7 @@ Places サービスで目標地点を定義します。
 1. 選択 **[!UICONTROL 拡張機能]**.
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL 場所]** 拡張子。
-1. 拡張機能のインストール.
+1. 拡張機能をインストールします。
 
    ![判定拡張機能の追加](assets/tag-places-extension.png)
 
@@ -176,7 +177,7 @@ Places サービスで目標地点を定義します。
 
 1. ルールを保存するには、「 **[!UICONTROL ライブラリに保存]**.
 
-   ![規則](assets/tags-rule-poi-entry.png)
+   ![ルール](assets/tags-rule-poi-entry.png)
 
 別のルールを作成しましょう
 
@@ -218,7 +219,7 @@ Places サービスで目標地点を定義します。
 
 1. ルールを保存するには、「 **[!UICONTROL ライブラリに保存]**.
 
-   ![規則](assets/tags-rule-poi-exit.png)
+   ![ルール](assets/tags-rule-poi-exit.png)
 
 
 タグ内のすべての変更が確実に公開されるようにするには

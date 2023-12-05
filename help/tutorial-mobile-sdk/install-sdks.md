@@ -1,11 +1,12 @@
 ---
 title: Adobe Experience Platform Mobile SDK のインストール
 description: モバイルアプリにAdobe Experience Platform Mobile SDK を実装する方法について説明します。
+jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 1%
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +51,7 @@ Xcode では、 **[!UICONTROL ファイル]** > **[!UICONTROL パッケージを
 | [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEP Places 拡張機能 (`AEPPlaces`) を使用すると、Places インターフェイスおよびAdobeデータ収集Adobeルールで定義された位置情報イベントを追跡できます。 |
 | [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios) | AEP メッセージ拡張機能 (`AEPMessaging`) を使用すると、プッシュ通知トークンとプッシュ通知クリックスルーフィードバックをAdobe Experience Platformに送信できます。 |
 | [AEP 最適化](https://github.com/adobe/aepsdk-optimize-ios) | AEP Optimize 拡張機能 (`AEPOptimize`) は、Adobe TargetまたはAdobe Journey OptimizerOffer decisioningを使用してAdobe Experience Platform Mobile SDK でリアルタイムのパーソナライゼーションワークフローを有効にする API を提供します。 必要な情報 `AEPCore` および `AEPEdge` パーソナライゼーションクエリイベントを Experience Edge ネットワークに送信する拡張機能です。 |
-| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios) | Assurance (a.k.a. project Griffon) は、新しい革新的な拡張機能 (`AEPAssurance`) を使用して、モバイルアプリでデータを収集したりエクスペリエンスを提供する方法を調査、配達確認、シミュレーションおよび検証できます。 この拡張機能を使用すると、アプリでアシュランスを有効にできます。 |
+| [AEP アシュランス](https://github.com/adobe/aepsdk-assurance-ios) | Assurance (a.k.a. project Griffon) は、新しい革新的な拡張機能 (`AEPAssurance`) を使用して、モバイルアプリでデータを収集したりエクスペリエンスを提供する方法を調査、配達確認、シミュレーションおよび検証できます。 この拡張機能を使用すると、アプリでアシュランスを有効にできます。 |
 
 
 ## 拡張機能のインポート

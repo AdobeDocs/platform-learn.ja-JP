@@ -2,11 +2,12 @@
 title: Platform Mobile SDK で収集したデータをAdobe Analyticsにマッピングする
 description: モバイルアプリでAdobe Analyticsのデータを収集し、マッピングする方法を説明します。
 solution: Data Collection,Experience Platform,Analytics
+jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 2%
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
@@ -86,7 +87,7 @@ s.products = ";5829,1,49.99;9841,3,30.00"
 
 >[!NOTE]
 >
->`productListItems[].SKU` と `productListItems[].name` の両方にデータが含まれている場合、`productListItems[].SKU` の値が使用されます。詳しくは、 [Analytics Experience Edge での Analytics 変数のマッピングAdobe](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) を参照してください。
+>次の場合 `productListItems[].SKU` および `productListItems[].name` 両方にデータが含まれ、 `productListItems[].SKU` が使用されます。 詳しくは、 [Analytics Experience Edge での Analytics 変数のマッピングAdobe](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) を参照してください。
 
 
 ### 例#2 - scAdd

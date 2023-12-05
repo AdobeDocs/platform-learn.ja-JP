@@ -4,11 +4,12 @@ description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モ
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 4%
+source-wordcount: '2556'
+ht-degree: 1%
 
 ---
 
@@ -31,9 +32,9 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 * アプリをAdobe Experience Platform用に設定します。
 * Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). また、次のJourney Optimizer機能に対する十分な権限が必要です。
    * アプリケーションサーフェスを作成します。
-   * ジャーニーの作成.
-   * メッセージを作成。
-   * メッセージプリセットの作成.
+   * ジャーニーを作成します。
+   * メッセージを作成します。
+   * メッセージプリセットを作成します。
 * **有料Apple開発者アカウント** 証明書、識別子、キーを作成するのに十分なアクセス権を持つ
 * 物理iOSデバイスまたはテスト用のシミュレーター。
 
@@ -87,7 +88,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
    ![アプリのサーフェスホーム](assets/push-app-surface.png)
 1. を入力します。 **[!UICONTROL 名前]** 設定の場合、例： `Luma App Tutorial`  .
 1. 送信者 **[!UICONTROL モバイルアプリケーション設定]**&#x200B;を選択します。 **[!UICONTROL Apple iOS]**.
-1. 「**[!UICONTROL アプリ ID（iOS バンドル ID）]**」フィールドにモバイルアプリのバンドル ID を入力します。例：`com.adobe.luma.tutorial.swiftui`。
+1. にモバイルアプリのバンドル ID を入力します。 **[!UICONTROL アプリ ID (iOS Bundle ID)]** フィールドに入力します。 例：  `com.adobe.luma.tutorial.swiftui`.
 1. をオンにします。 **[!UICONTROL プッシュ認証情報]** を切り替えて、資格情報を追加します。
 1. をドラッグ&amp;ドロップします。 `.p8` **Appleプッシュ通知認証キー** ファイル。
 1. 次を提供： **[!UICONTROL キー ID]**: `p8` 認証キー。 これは、 **[!UICONTROL キー]** 」タブをクリックします。 **証明書、識別子、およびプロファイル** Apple Developer Portal ページのページ。 関連トピック [秘密鍵の作成](#create-a-private-key).
@@ -122,7 +123,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットを絞っ
 1. プロパティを開きます（例： ）。 **[!DNL Luma Mobile App Tutorial]**.
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
-1. 拡張機能のインストール.
+1. 拡張機能をインストールします。
 1. Adobe Analytics の **[!UICONTROL 拡張機能のインストール]** ダイアログ
    1. 環境を選択します（例： ）。 **[!UICONTROL 開発]**.
    1. を選択します。 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセット **[!UICONTROL イベントデータセット]** リスト。

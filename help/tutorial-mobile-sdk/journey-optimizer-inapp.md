@@ -4,11 +4,12 @@ description: Platform Mobile SDK およびAdobe Journey Optimizerを使用して
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 6%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 Experience PlatformMobile SDK とJourney Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法について説明します。
 
-Journey Optimizerでは、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerのキャンペーンは、様々なチャネルを使用して、特定のオーディエンスに 1 回限りのコンテンツを配信する場合に使用します。 キャンペーンでは、アクションは指定したスケジュールに基づいて同時にまたは即時に実行されます。ジャーニーを使用する場合 ( [Journey Optimizerプッシュ通知](journey-optimizer-push.md) レッスン ) では、アクションが順に実行されます。
+Journey Optimizerでは、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerのキャンペーンは、様々なチャネルを使用して、特定のオーディエンスに 1 回限りのコンテンツを配信する場合に使用します。 キャンペーンでは、アクションは即座に、または指定したスケジュールに基づいて、同時に実行されます。 ジャーニーを使用する場合 ( [Journey Optimizerプッシュ通知](journey-optimizer-push.md) レッスン ) では、アクションが順に実行されます。
 
 ![アーキテクチャ](assets/architecture-ajo.png)
 
@@ -32,7 +33,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 * SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
 * アプリをAdobe Experience Platform用に設定します。
 * Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). また、次のJourney Optimizer機能に対する十分な権限が必要です。
-   * キャンペーンの管理.
+   * キャンペーンを管理します。
 * 物理iOSデバイスまたはテスト用のシミュレーター。
 
 
@@ -61,7 +62,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
    ![アプリのサーフェスホーム](assets/push-app-surface.png)
 1. を入力します。 **[!UICONTROL 名前]** 設定の場合、例： `Luma App Tutorial`  .
 1. 送信者 **[!UICONTROL モバイルアプリケーション設定]**&#x200B;を選択します。 **[!UICONTROL Apple iOS]**.
-1. 「**[!UICONTROL アプリ ID（iOS バンドル ID）]**」フィールドにモバイルアプリのバンドル ID を入力します。例：`com.adobe.luma.tutorial.swiftui`。
+1. にモバイルアプリのバンドル ID を入力します。 **[!UICONTROL アプリ ID (iOS Bundle ID)]** フィールドに入力します。 例：  `com.adobe.luma.tutorial.swiftui`.
 1. 「**[!UICONTROL 保存]**」を選択します。
 
    ![アプリのサーフェス設定](assets/push-app-surface-config-inapp.png)
@@ -89,7 +90,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 1. プロパティを開きます（例： ）。 **[!DNL Luma Mobile App Tutorial]**.
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
-1. 拡張機能のインストール.
+1. 拡張機能をインストールします。
 1. Adobe Analytics の **[!UICONTROL 拡張機能のインストール]** ダイアログ
    1. 環境を選択します（例： ）。 **[!UICONTROL 開発]**.
    1. を選択します。 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセット **[!UICONTROL イベントデータセット]** リスト。

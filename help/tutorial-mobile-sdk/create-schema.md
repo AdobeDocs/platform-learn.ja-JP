@@ -2,11 +2,12 @@
 title: Platform Mobile SDK 実装用の XDM スキーマの作成
 description: モバイルアプリイベント用の XDM スキーマを作成する方法を説明します。
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 16%
+source-wordcount: '1414'
+ht-degree: 14%
 
 ---
 
@@ -106,7 +107,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    >[!NOTE]
    >
-   >単一のサンドボックスに複数のユーザーを配置する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加するか、事前に付加することを検討してください。 例えば、`Luma Mobile App Event Schema` の代わりに、`Luma Mobile App Event Schema - Joe Smith` を使用します。詳しくは、 [概要](overview.md).
+   >単一のサンドボックスに複数のユーザーを配置する場合、または共有アカウントを使用する場合は、命名規則の一部として ID を追加するか、事前に付加することを検討してください。 例えば、の代わりに `Luma Mobile App Event Schema`，使用 `Luma Mobile App Event Schema - Joe Smith`. 詳しくは、 [概要](overview.md).
 
 1. 選択 **[!UICONTROL 完了]** 」をクリックしてウィザードを終了します。
 

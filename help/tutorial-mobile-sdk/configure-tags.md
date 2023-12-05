@@ -2,11 +2,12 @@
 title: Platform Mobile SDK 実装用のタグプロパティの設定
 description: タグのプロパティを設定する方法については、 [!UICONTROL データ収集] インターフェイス。
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 8%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +40,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
       ![タグプロパティを作成する](assets/tags-new-property.png).
    1. の **[!UICONTROL 名前]**，と入力します。 `Luma Mobile App Tutorial`.
    1. の **[!UICONTROL Platform]**&#x200B;を選択します。 **[!UICONTROL モバイル]**.
-   1. 「**[!UICONTROL 保存]**」を選択します。
+   1. 選択  **[!UICONTROL 保存]**.
 
       ![タグプロパティの設定](assets/tags-property-config.png)
 
@@ -49,7 +50,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 
 1. 新しいプロパティを開きます。
-1. ライブラリの作成:
+1. ライブラリの作成：
 
    1. に移動します。 **[!UICONTROL 公開フロー]** をクリックします。
    1. 選択 **[!UICONTROL ライブラリを追加]**.

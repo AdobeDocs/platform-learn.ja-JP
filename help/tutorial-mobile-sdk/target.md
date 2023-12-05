@@ -4,11 +4,12 @@ description: Platform Mobile SDK とAdobe Targetを使用して、モバイル�
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +93,7 @@ Target で A/B テストを実行する前に、適切な設定と統合がお�
 1. 選択 **[!UICONTROL 拡張機能]**.
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL Adobe Journey Optimizer — 判定]** 拡張子。
-1. 拡張機能のインストール. 拡張機能に追加の設定は必要ありません。
+1. 拡張機能をインストールします。 拡張機能に追加の設定は必要ありません。
 
    ![判定拡張機能の追加](assets/tag-add-decisioning-extension.png)
 
