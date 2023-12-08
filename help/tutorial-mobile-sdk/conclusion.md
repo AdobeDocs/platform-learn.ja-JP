@@ -2,11 +2,12 @@
 title: Platform Mobile SDK チュートリアルの完了後のまとめと次の手順
 description: チュートリアルを完了した後の次の作業
 recommendations: display,noCatalog
+jira: KT-14642
 exl-id: 69db6cf3-0d5d-4864-aac2-e5e1aea4c02e
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 8%
 私たちはあなたが達成したすべてを素早くレビューしましょう。 以下があります。
 
 * 標準フィールドグループとカスタムフィールドグループを使用してスキーマを作成しました。
-* データストリームの設定.
+* データストリームを設定します。
 * モバイルタグプロパティを設定しました。
 * アプリにタグ拡張機能をインストールし、実装しました。
 * アプリに次の機能を実装しました。
@@ -39,7 +40,7 @@ ht-degree: 8%
 
 そして、常に学ぶべきことが多い！ 実装に基づいて構築するために、調査する他のコンテンツの推奨事項を以下に示します。
 
-* **イベント転送の有効化**. イベント転送は、データストリームで簡単に有効にできます。 こちらが [イベントの転送を設定するための実践レッスン](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) Web SDK チュートリアルから。 モバイル実装用に作成されたリソースを使用し、アプリで実装した XDM フィールドを選択します。
+* **イベント転送を有効にする**. イベント転送は、データストリームで簡単に有効にできます。 こちらが [イベントの転送を設定するための実践レッスン](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) Web SDK チュートリアルから。 モバイル実装用に作成されたリソースを使用し、アプリで実装した XDM フィールドを選択します。
 * **接続Customer Journey Analytics**. 作成した [Platform データセット](platform.md)を使用すると、データセットをCustomer Journey Analyticsに接続できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=ja)
 * **データストリームのAudience Managerを有効にする**. XDM エクスペリエンスイベントをAudience Managerに送信し、モバイルアプリエンゲージメントAudience Managerに基づいてセグメントの作成を開始します。
 * **Platform でのセグメントの作成**. を有効にした場合、 [リアルタイム顧客プロファイルのスキーマとデータセット](platform.md)を使用すると、モバイルアプリイベントに基づいてセグメントを構築し、それらを他のソースのデータと組み合わせて、Real-time Customer Data Platformの宛先に送信することができます。 セグメントビルダーの詳細については、この節を参照してください [ビデオチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html).

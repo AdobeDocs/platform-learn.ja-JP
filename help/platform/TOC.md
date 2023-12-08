@@ -5,17 +5,17 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 44%
+source-wordcount: '847'
+ht-degree: 21%
 
 ---
 
 
 # Adobe Experience Platform のチュートリアル {#tutorials}
 
-+ [Platform チュートリアル](/help/platform/overview.md)
++ [PlatformTutorials](/help/platform/overview.md)
 + Platform の概要 {#intro-to-platform}
    + [Experience Platformを活用した顧客体験](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [バックグラウンド：Experience Platformを活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
@@ -34,15 +34,15 @@ ht-degree: 44%
    + [B2B エディションの概要](/help/platform/rtcdp/b2b-overview.md)
    + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [はじめに：データアーキテクトとデータエンジニア](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja){target="_blank"}
-+ [Experience Platform API に対する認証](/help/platform/authentication/platform-api-authentication.md)
-+ [ Experience Platform へのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
++ [Experience PlatformAPI に対する認証](/help/platform/authentication/platform-api-authentication.md)
++ [サンプルデータをExperience Platformに読み込む](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [アラートを使用](/help/platform/admin/use-alerts.md)
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
    + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [ユーザーの追加](/help/platform/admin/add-users.md)
+   + [製品管理者の追加](/help/platform/admin/add-product-administrators.md)
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
-   + [Admin Console](/help/platform/admin/admin-console.md)
-   + [製品プロファイルの管理](/help/platform/admin/managing-product-profiles.md)
 + オーディエンスとセグメント化 {#audiences}
    + [Audience Portal と構成の概要](audiences/introduction-to-audience-portal-and-composition.md)
    + [オーディエンスのアップロード](audiences/upload-audiences.md)
@@ -56,13 +56,13 @@ ht-degree: 44%
    + [複数エンティティのオーディエンスの作成](audiences/create-multi-entity-audiences.md)
    + [B2B データを使用したオーディエンスの作成](audiences/create-audiences-with-b2b-data.md)
    + [ストリーミングセグメント化のデモ](/help/platform/audiences/streaming-segmentation-demo.md)
-   + [オーディエンスルールの評価](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=ja){target="_blank"}
-   + [データを書き出すデータセットの作成](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-   + [セグメントの一致の接続設定](/help/platform/segments/segment-match-connection-setup.md)
-   + [セグメントの一致のデータガバナンス](/help/platform/segments/segment-match-data-governance.md)
-   + [セグメントの一致の設定フロー](/help/platform/segments/segment-match-configuration-flow.md)
-   + [セグメントの一致によるインサイトの事前共有](/help/platform/segments/segment-match-pre-share-insights.md)
-   + [受信データのセグメント一致](/help/platform/segments/segment-match-receiving-data.md)
+   + [オーディエンスルールの評価](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [データを書き出すデータセットを作成する](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [セグメントマッチの接続設定](/help/platform/segments/segment-match-connection-setup.md)
+   + [セグメント一致データガバナンス](/help/platform/segments/segment-match-data-governance.md)
+   + [セグメント一致設定フロー](/help/platform/segments/segment-match-configuration-flow.md)
+   + [セグメント一致の事前共有インサイト](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [データを受け取るセグメントマッチ](/help/platform/segments/segment-match-receiving-data.md)
 + [監査ログ](/help/platform/governance/audit-logs.md)
 + [データ収集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja){target="_blank"}
 + ダッシュボード {#dashboards}
@@ -70,12 +70,12 @@ ht-degree: 44%
 + データガバナンス {#data-governance}
    + [概要](/help/platform/governance/understanding-data-governance.md)
    + [エンドツーエンドのデモ](/help/platform/governance/introduction-to-data-governance.md)
-   + [ラベルを使用したデータの分類](/help/platform/governance/classify-data-using-labels.md)
+   + [ラベルを使用してデータを分類する](/help/platform/governance/classify-data-using-labels.md)
    + [データ使用ポリシーの作成](/help/platform/governance/create-data-usage-policies.md)
    + [データ使用ポリシーの作成](/help/platform/governance/enforce-data-usage-policies.md)
    + [同意の実施](/help/platform/governance/enforce-consent.md)
    + [IAB Transparency and Consent Framework 2.0 との統合](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
-+ データハイジーン {#data-hygiene}
++ データの衛生状態 {#data-hygiene}
    + [データセットの削除](/help/platform/data-hygiene/delete-datasets.md)
 + データ取り込み {#data-ingestion}
    + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -97,7 +97,7 @@ ht-degree: 44%
    + [概要](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [アーキテクチャ](data-science-workspace/architecture-overview.md)
    + [コーススキーマとデータセットの作成](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [JupyterLab ノートブックにデータを読み込む](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
+   + [JupyterLab ノートブックへのデータの読み込み](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
    + [JupyterLab ノートブックでのデータのクエリと検出](data-science-workspace/dsw-query-service.md)
    + [探索的データ分析](data-science-workspace/eda.md)
    + [レシピ、モデル、サービスの概要](data-science-workspace/recipes-models-services-overview.md)
@@ -107,8 +107,8 @@ ht-degree: 44%
    + [サービスの自動トレーニングとスコアリングのスケジュール設定](data-science-workspace/schedule-training-scoring.md)
    + [機械学習のインサイトによるリアルタイム顧客プロファイルの強化](data-science-workspace/dsw-profile-segmentation.md)
    + [ソースファイルのレシピへのパッケージ化](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [パッケージ化されたレシピ（UI）の読み込み](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [パッケージ化されたレシピ（API）の読み込み](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
+   + [パッケージ化されたレシピの読み込み (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [パッケージ化されたレシピの読み込み (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 宛先 {#destinations}
    + [宛先の概要](/help/platform/destinations/understanding-destinations.md)
    + [宛先への接続](/help/platform/destinations/connecting-to-destinations.md)
@@ -142,7 +142,7 @@ ht-degree: 44%
    + [顧客 AI 値](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Customer AI の設定](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Customer AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ 監視 {#monitoring}
++ 監視{#monitoring}
    + [データ取得の監視](/help/platform/monitoring/monitoring-dashboard.md)
    + [セグメントのアクティベーションの監視](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [データフローのモニタリング](/help/platform/monitoring/data-monitoring.md)
@@ -159,15 +159,16 @@ ht-degree: 44%
    + [アカウントプロファイルの表示](/help/platform/profiles/view-account-profiles.md)
    + [結合ポリシーの作成](/help/platform/profiles/create-merge-policies.md)
    + [和集合スキーマの概要](/help/platform/profiles/union-schemas-overview.md)
+   + [計算済み属性の作成](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
    + [アップサートを使用した特定の属性の更新](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + プライバシーとセキュリティ {#privacy}
-   + [Privacy Service の概要](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Privacy Serviceの概要](/help/platform/privacy/introduction-to-privacy-services.md)
    + [プライバシーリクエストの ID データ](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [プライバシー JavaScript ライブラリ](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analyticsのプライバシーラベル](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy ServiceAPI の概要](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [Privacy ServiceUI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [Privacy ServiceAPI](/help/platform/privacy/using-the-privacy-service-api.md)
    + [プライバシーイベントへの購読](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [顧客管理キーの設定](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [責任ある顧客データ管理に関する 10 の考慮事項](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
@@ -178,30 +179,30 @@ ht-degree: 44%
    + [クエリサービス API](/help/platform/queries/query-service-api.md)
    + [データを見る](/help/platform/queries/explore-data.md)
    + [データを準備](/help/platform/queries/prepare-data.md)
-   + [Adobe 定義関数](/help/platform/queries/adobe-defined-functions.md)
+   + [Adobe定義関数](/help/platform/queries/adobe-defined-functions.md)
    + [データ使用パターン](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [クエリを実行](/help/platform/queries/run-queries.md)
-   + [データセットをクエリ結果から生成する](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+   + [クエリ結果からデータセットを生成](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [データの分析と視覚化](/help/platform/queries/analyze-and-visualize.md)
    + [BI ツールを使用したダッシュボードの作成](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [顧客データを再充電する](/help/platform/queries/recharge-your-customer-data.md)
-   + [クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [クエリサービスにクライアントを接続する](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [データレイク内のデータの検証](/help/platform/queries/validate-data-in-the-datalake.md)
 + スキーマ {#schemas}
    + [概要](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [構築ブロック](/help/platform/schemas/schema-building-blocks.md)
-   + [データモードの計画](/help/platform/schemas/plan-your-data-model.md)
+   + [データモデルの計画](/help/platform/schemas/plan-your-data-model.md)
    + [データモデルを XDM に変換する](/help/platform/schemas/convert-your-data-model-to-xdm.md)
    + [スキーマの作成](/help/platform/schemas/create-schemas.md)
    + [B2B データのスキーマの作成](/help/platform/schemas/create-schemas-for-b2b-data.md)
-   + [クラスの作成](/help/platform/schemas/create-classes.md)
+   + [クラスを作成](/help/platform/schemas/create-classes.md)
    + [フィールドグループの作成](/help/platform/schemas/create-schema-field-groups.md)
    + [データタイプの作成](/help/platform/schemas/create-data-types.md)
    + [スキーマ間の関係の設定](/help/platform/schemas/configure-relationships-between-schemas.md)
    + [列挙フィールドと推奨値を使用する](/help/platform/schemas/use-enumerated-fields.md)
    + [サンドボックス間でのスキーマのコピー](/help/platform/schemas/copy-schemas-between-sandboxes.md)
-   + [スキーマの更新](/help/platform/schemas/update-schemas.md)
+   + [スキーマを更新](/help/platform/schemas/update-schemas.md)
    + [アドホックスキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + ソース {#sources}
    + [ソースの概要](/help/platform/sources/overview.md)
@@ -210,11 +211,11 @@ ht-degree: 44%
    + [Marketoからのデータの取り込み](/help/platform/sources/ingest-data-from-marketo.md)
    + [クラウドストレージからのデータの取り込み](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [CRM からのデータの取り込み](/help/platform/sources/ingest-data-from-crm.md)
-   + [データベースからのデータ取得](/help/platform/sources/ingest-data-from-databases.md)
+   + [データベースからのデータの取り込み](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
    + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [トラブルシューティング：SFTP コネクタ](/help/platform/sources/troubleshoot-sftp-connector.md)
-+ Experience Cloud の統合 {#experience-cloud}
++ Experience Cloudの統合 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
@@ -222,7 +223,7 @@ ht-degree: 44%
    + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + 業界トレンド {#industry}
    + [データ管理の将来と変化する環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
-   + [2 つの視点 - ブランドと消費者](/help/platform/industry/brands-vs-consumers.md)
+   + [ブランドと消費者の 2 つの認識の物語](/help/platform/industry/brands-vs-consumers.md)
    + [Audience Center of Excellence の進化](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [顧客プロファイルを使用したより優れたエクスペリエンスの構築](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [ファーストパーティデータコンテキストでのデータ共同作業](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
