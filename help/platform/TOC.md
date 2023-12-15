@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 21%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 21%
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
    + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [ユーザーの追加](/help/platform/admin/add-users.md)
+   + [開発者の追加](/help/platform/admin/add-developers.md)
    + [製品管理者の追加](/help/platform/admin/add-product-administrators.md)
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
 + オーディエンスとセグメント化 {#audiences}
