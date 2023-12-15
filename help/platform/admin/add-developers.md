@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 4d1a0ff598b822e2228d8719488b9dbb91c9870d
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Real-time Customer Data PlatformやJourney Optimizerなど、Adobe Experience Platformベースのアプリケーションに開発者を追加する方法を説明します。 開発者はまず、Admin Consoleに追加されます。 開発者コンソールで Platform プロジェクトを作成した後、その API 資格情報には、Platform またはJourney Optimizerインターフェイスでの権限が割り当てられます。 詳しくは、 [アクセス制御に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja).
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
 >[!ADMIN]
 >
