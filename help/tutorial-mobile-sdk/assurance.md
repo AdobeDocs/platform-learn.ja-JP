@@ -4,9 +4,9 @@ description: モバイルアプリに Assurance 拡張機能を実装する方�
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '1021'
 ht-degree: 1%
 
 ---
@@ -57,28 +57,25 @@ ht-degree: 1%
 
 詳細はこちらをご覧ください [ここ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-<!-- not initially required
 
-## Signing
 
-Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+## バンドル識別子を定義
 
-To update the signing for the lessons that require that you sign the application:
+アプリに一意のバンドル識別子を提供する必要があります。
 
-1. Open the project in Xcode.
-1. Select **[!DNL Luma]** in the Project navigator.
-1. Select the **[!DNL Luma]** target.
-1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
- 
+1. Xcode でプロジェクトを開きます。
+1. 選択 **[!DNL Luma]** をクリックします。
+1. を選択します。 **[!DNL Luma]** ターゲット。
+1. を選択します。 **署名と機能** タブをクリックします。
+1. を定義 **[!UICONTROL バンドル識別子]**.
+
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. このチュートリアルの完成版（例： ）は、を使用します。 `com.adobe.luma.tutorial.swiftui`.
 
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+   ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
--->
 
 ## ベース URL の設定
 
@@ -93,7 +90,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`.<br/>同様に、一意の URL スキームを使用し、既に指定されている `lumatutorialswiftui` を使用して、一意の URL スキームを設定します。
+   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. 以前に使用したのと同じバンドル識別子を使用できます。 [バンドル識別子を定義](#define-bundle-identifier).<br/>同様に、一意の URL スキームを使用し、既に指定されている `lumatutorialswiftui` を使用して、一意の URL スキームを設定します。
 
 iOSでの URL スキームについて詳しくは、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
