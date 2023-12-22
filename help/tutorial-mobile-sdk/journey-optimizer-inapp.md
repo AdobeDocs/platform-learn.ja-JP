@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 1. データストリーム設定を保存するには、 **[!UICONTROL 保存]**.
 
 
-   ![AEP データストリーム設定](assets/datastream-aep-configuration.png)
+   ![AEP データストリーム設定](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Journey Optimizer Tags 拡張機能のインストール
@@ -91,16 +91,9 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 1. 選択 **[!UICONTROL カタログ]**.
 1. を検索します。 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
 1. 拡張機能をインストールします。
-1. Adobe Analytics の **[!UICONTROL 拡張機能のインストール]** ダイアログ
-   1. 環境を選択します（例： ）。 **[!UICONTROL 開発]**.
-   1. を選択します。 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセット **[!UICONTROL イベントデータセット]** リスト。
-   1. 選択 **[!UICONTROL ライブラリに保存してビルドする]**.
-      ![AJO 拡張機能の設定](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->表示されない場合 `AJO Push Tracking Experience Event Dataset` 必要に応じて、カスタマーケアにお問い合わせください。
->
+条件 *のみ* アプリ内でのアプリ内メッセージの使用、 **[!UICONTROL 拡張機能のインストール]** または **[!UICONTROL 拡張機能の設定]**&#x200B;に値を指定する場合、何も設定する必要はありません。 ただし、既に [プッシュ通知](journey-optimizer-push.md) このチュートリアルでは、 **[!UICONTROL 開発]** 環境、 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセットが次から選択されました： **[!UICONTROL イベントデータセット]** リスト。
+
 
 ### アプリでのJourney Optimizerの実装
 

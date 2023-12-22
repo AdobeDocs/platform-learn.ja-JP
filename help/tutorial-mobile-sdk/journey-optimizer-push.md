@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2584'
 ht-degree: 1%
 
 ---
@@ -333,6 +333,7 @@ Journey Optimizerのイベントを使用すると、ジャーニーを一元的
       Adobe Analytics の **[!UICONTROL プッシュ通知]** 編集者：
 
       1. を入力します。 **[!UICONTROL タイトル]**&#x200B;例： `Luma Test Push Notification` を入力し、 **[!UICONTROL 本文]**&#x200B;例： `Test push notification for Luma mobile app`.
+      1. オプションで、画像（.png または.jpg）へのリンクを **[!UICONTROL メディアを追加]**. その場合、画像はプッシュ通知の一部になります。
       1. エディターを保存して終了するには、「 」を選択します。 ![シェブロン左](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
          ![プッシュエディター](assets/ajo-push-editor.png)
 
