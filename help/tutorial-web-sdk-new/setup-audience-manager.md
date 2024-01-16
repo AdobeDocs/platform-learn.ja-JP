@@ -2,7 +2,7 @@
 title: Platform Web SDK でのAudience Managerの設定
 description: Platform Web SDK を使用してAdobe Audience Managerを設定し、Cookie の宛先を使用して実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 2%
@@ -85,7 +85,7 @@ Platform Web SDK を使用したAudience Manager実装は、 [サーバー側転
 1. を選択します。 **[!UICONTROL データソース]** 前の節で作成した内容。
 1. **[!UICONTROL フォルダーを選択]** 右側のパネルに特性を保存する場所です。 次の方法でフォルダーを作成できます。 **「+」アイコンの選択** 既存の親フォルダーの横に表示されます。 この新しいフォルダーに名前を付けることができます `Platform Web SDK tutorial`.
 1. を展開します。 **[!UICONTROL 特性式]** キャレットと選択 **[!UICONTROL 式ビルダー]** ホームページの訪問を示すキー値ペアを指定する必要があります。
-1. を開きます。 [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html) （タグプロパティにマッピング）および **Platform Web SDK Debugger** をクリックし、ページを更新します。
+1. を開きます。 [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html) （タグプロパティにマッピング）および **Adobe Experience Platform Debugger** をクリックし、ページを更新します。
 1. Platform Web SDK のネットワークリクエストとイベントの詳細を確認して、ホームページのキーと名前の値を見つけます。
    ![Adobe Experience PlatformAudience ManagerXDM データ](assets/xdm-keyvalue.jpg)
 1. Audience ManagerUI の式ビルダーに戻り、キーに「 」と入力します。 **`web.webPageDetails.name`** そして、 **`content:luma:us:en`**. この手順により、ホームページを読み込むたびに特性を実行できます。
@@ -100,7 +100,8 @@ Platform Web SDK を使用したAudience Manager実装は、 [サーバー側転
 1. 選択 **[!UICONTROL 新規追加]** （ページの左上）をクリックして、セグメントビルダーを開きます。
 1. セグメントにわかりやすい名前と説明（例： ）を付けます。 `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL フォルダーを選択]** セグメントが保存される場所を右側のパネルに示します。 次の方法でフォルダーを作成できます。 **「+」アイコンの選択** 既存の親フォルダーの横に表示されます。 この新しいフォルダーに名前を付けることができます `Platform Web SDK tutorial`.
-1. 統合コードを追加します。この場合は、乱数セットです。 1. **[!UICONTROL データソース]** セクション、選択 **[!UICONTROL Audience Manager]** と、前に作成したデータソース
+1. 統合コードを追加します。この場合は、乱数セットです。
+1. Adobe Analytics の **[!UICONTROL データソース]** セクション、選択 **[!UICONTROL Audience Manager]** と、前に作成したデータソース
 1. を展開します。 **[!UICONTROL 特性]** セクションで、作成した特性を検索します。
 1. 選択 **[!UICONTROL 特性を追加]**.
 1. 選択 **[!UICONTROL 保存]** ページの下部に
@@ -181,4 +182,4 @@ Platform Web SDK を使用したAudience Manager実装は、 [サーバー側転
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

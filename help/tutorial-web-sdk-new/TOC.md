@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 38%
+source-wordcount: '96'
+ht-degree: 32%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 38%
 + タグ設定 {#tags-configuration}
    + [Web SDK 拡張機能のインストール](install-web-sdk.md)
    + [データ要素の作成](create-data-elements.md)
+   + [ID の作成](create-identities.md)
    + [タグルールの作成](create-tag-rule.md)
    + [Debugger を使用した検証](validate-with-debugger.md)
 
@@ -37,6 +38,9 @@ ht-degree: 38%
    + [Adobe Analyticsの設定](setup-analytics.md)
    + [設定Audience Manager](setup-audience-manager.md)
    + [Target のセットアップ](setup-target.md)
+   + Journey Optimizer機能の設定 {#journey-optimizer}
+      + [Web チャネルの設定](journey-optimizer/setup-web-channel.md)
+      + [決定管理の設定](journey-optimizer/setup-decision-management.md)
 
 + 同意管理 {#consent-management}
    + [同意の設定](setup-consent.md)

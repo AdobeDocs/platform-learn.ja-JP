@@ -2,16 +2,16 @@
 title: Adobe Experience Platform Web SDK タグ拡張機能のインストールと設定
 description: データ収集インターフェイスで Platform Web SDK タグ拡張機能をインストールして設定する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 14%
 
 ---
 
 # Adobe Experience Platform Web SDK タグ拡張機能のインストール
 
-データ収集インターフェイスで Platform Web SDK タグ拡張機能をインストールして設定する方法について説明します。 このタグ拡張は、 _タグ拡張のみ_ にデータを送信する必要がある _すべてのAdobe Experience Cloudアプリケーション_&#x200B;を含む [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data PlatformとJourney Optimizer!
+Platform Web SDK タグ拡張機能をインストールして設定する方法について説明します。 Web SDK を実装する最も簡単な方法は、Adobeのタグマネージャー（タグ）( タグ（旧称 Launch）) を使用する方法です。 Platform Web SDK タグ拡張機能は、 _タグ拡張のみ_ にデータを送信する必要がある _すべてのAdobe Experience Cloudアプリケーション_&#x200B;を含む [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data PlatformとJourney Optimizer!
 
 ## 学習内容
 
@@ -25,9 +25,6 @@ ht-degree: 14%
 
 このチュートリアルの前のレッスンを完了している。
 
-* [権限の設定](configure-permissions.md)
-* [XDM スキーマの設定](configure-schemas.md)
-* [ID 名前空間の設定](configure-identities.md)
 * [データストリームの設定](configure-datastream.md)
 
 ## Experience PlatformWeb SDK 拡張機能のインストール
@@ -66,6 +63,7 @@ XDM スキーマ、データストリームおよびタグプロパティが作�
 1. の下 **[!UICONTROL データストリーム]**&#x200B;を選択し、 **[!UICONTROL リストから選択]** 入力メソッド
 1. 前に作成したデータストリームを選択します。 `Luma Web SDK`
 1. 「**[!UICONTROL 保存]**」を選択します
+
    >[!NOTE]
    >
    > データストリームが見つからない場合は、 [データストリームの設定](configure-datastream.md) レッスンを受け、手順に従って 1 つを作成します。
@@ -76,9 +74,7 @@ XDM スキーマ、データストリームおよびタグプロパティが作�
 
 >[!NOTE]
 >
->このチュートリアルでは、1 つのデータストリームのみを設定し、それをすべてのタグ環境（開発、ステージング、実稼動）に関連付けます。 独自の Web サイトに Platform Web SDK を実装する場合は、各環境に対して個別のデータストリームを設定し、 **[!UICONTROL 入力メソッド]** > **[!UICONTROL 値を入力]**
->
->![データストリーム選択](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>このチュートリアルでは、1 つのデータストリームのみを設定し、それをすべてのタグ環境（開発、ステージング、実稼動）に関連付けます。 独自の Web サイトに Platform Web SDK を実装する場合は、各環境に対して個別のデータストリームを設定し、タグ環境にマッピングする必要があります。
 
 >[!NOTE]
 >
@@ -92,4 +88,4 @@ XDM スキーマ、データストリームおよびタグプロパティが作�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,9 +2,9 @@
 title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '3582'
+source-wordcount: '4183'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
 * XDM データを Target に渡し、Target パラメーターへのマッピングについて理解する
 * プロファイルやエンティティのパラメーターなど、カスタムデータを Target に渡す
 * Platform Web SDK を使用した Target 実装の検証
+* Adobe Analyticsリクエストとは別の Target 提案リクエストを送信し、後でその表示イベントを解決する
 
 >[!TIP]
 >
@@ -37,7 +38,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
 この節のレッスンを完了するには、まず以下をおこなう必要があります。
 
 * データ要素やルールの設定を含め、Platform Web SDK の初期設定に関するすべてのレッスンを完了していること。
-* 次の項目があることを確認します。 [編集者または承認者の役割](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80).
+* 次の項目があることを確認します。 [編集者または承認者の役割](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) Adobe Targetで
 * をインストールします。 [Visual Experience Composer ヘルパー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) (Google Chrome ブラウザーを使用している場合 )。
 * Target でアクティビティを設定する方法を説明します。 リフレッシャーが必要な場合、このレッスンで役立つチュートリアルとガイドを次に示します。
    * [Visual Experience Composer(VEC) ヘルパー拡張の使用](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)
@@ -167,6 +168,15 @@ Adobeでは、開発、ステージングおよび実稼動の各データスト
 このオプションの設定では、Target サードパーティ ID に使用する ID シンボルを指定できます。 Target では、1 つの ID シンボルまたは名前空間でのプロファイルの同期のみサポートしています。 詳しくは、 [mbox3rdPartyId のリアルタイムプロファイル同期](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ja) 」の節を参照してください。
 
 ID 記号は、の ID リストにあります。 **データ収集** > **[!UICONTROL 顧客]** > **[!UICONTROL ID]**.
+<a id="advanced-pto"></a>
+
+### 高度なプロパティトークンの上書き
+
+詳細セクションには、「プロパティトークンの上書き」のフィールドが含まれ、設定で定義したプライマリプロパティトークンを置き換えるプロパティトークンを指定できます。
+
+![ID リスト](assets/advanced-property-token.png)
+
+ID 記号は、の ID リストにあります。 **データ収集** > **[!UICONTROL 顧客]** > **[!UICONTROL ID]**.
 
 ![ID リスト](assets/target-identities.png)
 
@@ -194,6 +204,10 @@ Target がデータストリームで有効になっている場合、Target か
 
    ![視覚的なパーソナライゼーションの決定のレンダリングを有効にする](assets/target-rule-enable-visual-decisions.png)
 
+1. **[!UICONTROL データストリーム設定の上書き**] の **[!UICONTROL Target プロパティトークン]** は、静的な値またはデータ要素で上書きできます。 で定義されたプロパティトークンのみ [**高度なプロパティトークンの上書き**](#advanced-pto) のセクション **データストリーム設定** は結果を返します。
+
+   ![プロパティトークンを上書き](assets/target-property-token-ovrrides.png)
+
 1. 変更を保存し、ライブラリにビルドします。
 
 レンダリングの視覚的なパーソナライゼーションの決定の設定では、Target Visual Experience Composer または「グローバル mbox」を使用して指定された変更が Platform Web SDK に自動的に適用されます。
@@ -203,6 +217,7 @@ Target がデータストリームで有効になっている場合、Target か
 >通常、 [!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング] の設定は、完全なページ読み込みごとに 1 つのイベント送信アクションに対してのみ有効にする必要があります。 複数のイベント送信アクションでこの設定が有効になっている場合、以降のレンダリング要求は無視されます。
 
 カスタムコードを使用して、これらの決定に対するレンダリングやアクションを自分でおこなう場合は、 [!UICONTROL 視覚的なパーソナライゼーションの決定をレンダリング] 設定が無効です。 Platform Web SDK は柔軟性が高く、この機能を使用して完全に制御できます。 詳しくは、ガイドを参照してください。 [パーソナライズされたコンテンツの手動レンダリング](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+
 
 ### Visual Experience Composer での Target アクティビティの設定
 
@@ -217,11 +232,17 @@ Target がデータストリームで有効になっている場合、Target か
 
    ![新しい XT アクティビティの作成](assets/target-xt-create-activity.png)
 
-1. ページを変更します（例えば、ホームページのバナーのテキストを変更します）。
+1. ページを変更します。例えば、ホームページのヒーローバナーのテキストを変更します。  終了したら、「 」を選択します。 **[!UICONTROL 保存]** その後 **[!UICONTROL 次へ]**.
 
    ![Target VEC の変更](assets/target-xt-vec-modification.png)
 
+1. イベント名を更新し、「 」を選択します。 **[!UICONTROL 次へ]**.
+
+   ![Target VEC 更新イベント](assets/target-xt-vec-updateevent.png)
+
 1. 適切なレポートスイートを使用してレポートソースとしてAdobe Analyticsを選択し、目標として注文指標を選択します。
+
+   ![Target VEC レポートソース](assets/target-xt-vec-reportingsource.png)
 
    >[!NOTE]
    >
@@ -236,7 +257,7 @@ Target がデータストリームで有効になっている場合、Target か
 
 ### デバッガーを使用した検証
 
-アクティビティを設定すると、ページ上にコンテンツがレンダリングされます。 ただし、アクティビティがライブになっていない場合でも、イベントを送信ネットワーク呼び出しを調べて、Target が正しく設定されていることを確認することもできます。
+アクティビティを設定すると、ページ上にコンテンツがレンダリングされて表示されます。 ただし、アクティビティがライブになっていない場合でも、イベントを送信ネットワーク呼び出しを調べて、Target が正しく設定されていることを確認することもできます。
 
 >[!CAUTION]
 >
@@ -253,7 +274,7 @@ Target がデータストリームで有効になっている場合、Target か
 
 1. の下にキーがあることに注意してください。 `query` > `personalization` および  `decisionScopes` の値は `__view__`. このスコープは、Target の「グローバル mbox」と同じです。 この Platform Web SDK 呼び出しは、Target からリクエストされた決定です。
 
-   ![__表示__ decisionScope リクエスト](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope リクエスト](assets/target-debugger-view-scope.png)
 
 1. オーバーレイを閉じ、2 回目のネットワーク呼び出しのイベントの詳細を選択します。 この呼び出しは、Target がアクティビティを返した場合にのみ存在します。
 1. Target から返されるアクティビティとエクスペリエンスに関する詳細があることに注意してください。 この Platform Web SDK 呼び出しは、Target アクティビティがユーザーにレンダリングされたという通知を送信し、インプレッションを増分します。
@@ -287,7 +308,7 @@ Target がデータストリームで有効になっている場合、Target か
 1. という名前のルールを作成します。 `homepage - send event complete - render homepage-hero`.
 1. イベントをルールに追加します。 以下を使用します。 **Adobe Experience Platform Web SDK** 拡張機能と **[!UICONTROL イベント送信完了]** イベントタイプ。
 1. ルールを Luma ホームページに制限する条件を追加します（クエリ文字列を含まないパスは「次に等しい」です）。 `/content/luma/us/en.html`) をクリックします。
-1. ルールにアクションを追加します。 以下を使用します。 **コア** 拡張と **カスタムコード** アクションタイプ。
+1. ルールにアクションを追加します。 以下を使用します。 **Adobe Experience Platform Web SDK** 拡張と **提案を適用** アクションタイプ。
 
    ![ホームページのヒーロールールをレンダリング](assets/target-rule-render-hero.png)
 
@@ -295,63 +316,13 @@ Target がデータストリームで有効になっている場合、Target か
    >
    >デフォルトの名前を使用する代わりに、ルールのイベント、条件、アクションにわかりやすい名前を付けます。 堅牢なルールコンポーネント名により、検索結果がより役に立ちます。
 
-1. Platform Web SDK の応答から返された提案を読み取り、アクションを実行するためのカスタムコードを入力します。 この例のカスタムコードでは、ガイドで概要を説明している方法を使用して、 [パーソナライズされたコンテンツの手動レンダリング](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=en#manually-rendering-content). コードは、 `homepage-hero` タグルールアクションを使用するスコープの例。
+1. 入力 `%event.propositions%` を「提案」フィールドに入力します。これは、「イベント完了を送信」イベントをこのルールのトリガーとして使用する場合です。
+1. 「提案メタデータ」セクションで、 **[!UICONTROL フォームを使用]**
+1. 「スコープ」フィールドの入力 `homepage-hero`
+1. セレクターフィールドの入力用 `div.heroimage`
+1. アクションタイプを「 」のままにします。 `Set HTML`
 
-   ```javascript
-   var propositions = event.propositions;
-   
-   var heroProposition;
-   if (propositions) {
-      // Find the hero proposition, if it exists.
-      for (var i = 0; i < propositions.length; i++) {
-         var proposition = propositions[i];
-         if (proposition.scope === "homepage-hero") {
-            heroProposition = proposition;
-            break;
-         }
-      }
-   }
-   
-   var heroHtml;
-   if (heroProposition) {
-      // Find the item from proposition that should be rendered.
-      // Rather than assuming there a single item that has HTML
-      // content, find the first item whose schema indicates
-      // it contains HTML content.
-      for (var j = 0; j < heroProposition.items.length; j++) {
-         var heroPropositionItem = heroProposition.items[j];
-         if (heroPropositionItem.schema === "https://ns.adobe.com/personalization/html-content-item") {
-            heroHtml = heroPropositionItem.data.content;
-            break;
-         }
-      }
-   }
-   
-   if (heroHtml) {
-      // Hero HTML exists. Time to render it.
-      var heroElement = document.querySelector(".heroimage");
-      heroElement.innerHTML = heroHtml;
-      // For this example, we assume there is only a signle place to update in the HTML.
-   }
-   
-   // Send a "display" event 
-   alloy("sendEvent", {
-      xdm: {
-         eventType: "propositionDisplay",
-         _experience: {
-            decisioning: {
-               propositions: [
-                  {
-                     id: heroProposition.id,
-                     scope: heroProposition.scope,
-                     scopeDetails: heroProposition.scopeDetails
-                  }
-               ]
-            }
-         }
-      }
-   });
-   ```
+![ホームページのヒーローアクションをレンダリング](assets/target-action-render-hero.png)
 
 1. 変更を保存し、ライブラリにビルドします。
 1. Luma のホームページを数回読み込みます。これは、新しい `homepage-hero` Target インターフェイスの決定範囲の登録。
@@ -402,7 +373,7 @@ Target がデータストリームで有効になっている場合、Target か
 1. Adobe Experience Platform Debugger ブラウザー拡張機能を開きます。
 1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) デバッガーを使用して、 [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. ページをリロード
-1. を選択します。 **[!UICONTROL ネットワーク]** デバッガーのツール
+1. を選択します。 **[!UICONTROL ネットワーク]** Debugger のツール
 1. フィルター条件 **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. 最初の呼び出しのイベント行の値を選択
 
@@ -410,7 +381,7 @@ Target がデータストリームで有効になっている場合、Target か
 
 1. の下にキーがあることに注意してください。 `query` > `personalization` および  `decisionScopes` の値は `__view__` 前と同じように、今もある `homepage-hero` 範囲を含む。 この Platform Web SDK 呼び出しは、VEC と特定の `homepage-hero` 場所。
 
-   ![__表示__ decisionScope リクエスト](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope リクエスト](assets/target-debugger-view-scope.png)
 
 1. オーバーレイを閉じ、2 回目のネットワーク呼び出しのイベントの詳細を選択します。 この呼び出しは、Target がアクティビティを返した場合にのみ存在します。
 1. Target から返されるアクティビティとエクスペリエンスに関する詳細があることに注意してください。 この Platform Web SDK 呼び出しは、Target アクティビティがユーザーにレンダリングされたという通知を送信し、インプレッションを増分します。
@@ -478,6 +449,29 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 >
 >上記の例では、 `data` オブジェクトに含める必要があります。 タグはこの状況を適切に処理し、値が未定義のキーは除外します。 例： `entity.id` および `entity.name` 製品の詳細以外のページでは渡されませんでした。
 
+
+## パーソナライゼーションの決定と Analytics コレクションイベントの分割
+
+判定提案リクエストと Analytics データ収集リクエストを個別に送信できます。 この方法でイベントルールを分類すると、Target Decisioning イベントをできるだけ早く実行できます。 Analytics イベントは、データレイヤーオブジェクトが入力されるまで待つことができます。
+
+1. という名前のルールを作成します。 `all pages - page top - request decisions`.
+2. イベントをルールに追加します。 以下を使用します。 **コア** 拡張機能と **[!UICONTROL 読み込まれたライブラリ（ページ上部）]** イベントタイプ。
+3. ルールにアクションを追加します。 以下を使用します。 **Adobe Experience Platform Web SDK** 拡張と **イベントを送信** アクションタイプ。
+4. Adobe Analytics の **ガイド付きイベントスタイル** セクションで、 **[!UICONTROL ページの上部のイベント — パーソナライゼーションの決定をリクエストします。]** ラジオボタン
+5. これにより、 **タイプ** as **[!UICONTROL 判定の提案の取得]**
+
+![send_decision_request_alone](assets/target-decision-request.png)
+
+1. を作成する際に、 `Adobe Analytics Send Event rule` を使用します。 **ガイド付きイベントスタイル** セクション選択 **[!UICONTROL ページイベントの下部 — 分析を収集]** ラジオボタン
+1. これにより、 **[!UICONTROL 保留中の表示通知を含める]** チェックボックスが選択され、判定リクエストのキューに登録された表示通知が送信されます。
+
+![send_decision_request_alone](assets/target-aa-request-guided.png)
+
+>[!TIP]
+>
+>判定の提案を取得しようとしているイベントにAdobe Analyticsイベントが続かない場合は、 **ガイド付きイベントスタイル** **[!UICONTROL ガイドなし — すべてのフィールドを表示]**. すべてのオプションを手動で選択する必要がありますが、 **[!UICONTROL 自動的に表示通知を送信する]** 取得リクエストと共に使用します。
+
+
 ### デバッガーを使用した検証
 
 ルールが更新されたので、Adobe Debuggerを使用して、データが正しく渡されているかどうかを検証できます。
@@ -490,7 +484,7 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 1. 最初の呼び出しのイベント行の値を選択
 1. の下にキーがあることに注意してください。 `data` > `__adobe` > `target` また、製品、カテゴリ、ログイン状態に関する情報が入力されます。
 
-   ![__表示__ decisionScope リクエスト](assets/target-debugger-data.png)
+   ![`__view__` decisionScope リクエスト](assets/target-debugger-data.png)
 
 ### Target インターフェイスでの検証
 
@@ -501,10 +495,14 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 1. オーディエンスを作成し、 **[!UICONTROL カスタム]** 属性タイプ
 1. を検索します。 **[!UICONTROL パラメーター]** ～のためのフィールド `web`. ドロップダウンメニューに、Web ページの詳細に関連するすべての XDM フィールドが表示されます。
 
+   ![Target カスタム属性での検証](assets/validate-in-target-customattribute.png)
+
 次に、ログイン状態のプロファイル属性が正常に渡されたことを検証します。
 
 1. を選択します。 **[!UICONTROL 訪問者プロファイル]** 属性タイプ
-1. `loggedIn` を検索します。ドロップダウンメニューで属性が使用できる場合、その属性が Target に正しく渡されていました。 新しい属性が Target UI で使用できるようになるまでに数分かかる場合があります。
+2. `loggedIn` を検索します。ドロップダウンメニューで属性が使用できる場合、その属性が Target に正しく渡されていました。 新しい属性が Target UI で使用できるようになるまでに数分かかる場合があります。
+
+   ![Target プロファイルで検証](assets/validate-in-target-profile.png)
 
 Target Premium を使用している場合は、エンティティデータが正しく渡され、製品データがRecommendations製品カタログに書き込まれたことを検証することもできます。
 
@@ -512,10 +510,41 @@ Target Premium を使用している場合は、エンティティデータが�
 1. 選択 **[!UICONTROL カタログ検索]** 左側のナビゲーションで
 1. Luma サイトで以前に訪問した製品 SKU または製品名を検索します。 商品が商品カタログに表示されます。 新しい製品がRecommendationsの製品カタログで検索できるようになるまで、数分かかる場合があります。
 
+   ![Target カタログ検索で検証](assets/validate-in-target-catalogsearch.png)
+
+### アシュランスで検証
+
+さらに、Target 判定リクエストが正しいデータを取得し、サーバー側の変換が正しく実行されていることを確認するのに適切な場合は、Assuance を使用できます。 また、Target Decisioning とAdobe Analyticsの呼び出しが別々に送信された場合でも、Adobe Analyticsの呼び出しにキャンペーンとエクスペリエンスの情報が含まれていることを確認できます。
+
+1. 開く [アシュランス](https://experience.adobe.com/assurance)
+1. 新しいアシュランスセッションを開始し、 **[!UICONTROL セッション名]** をクリックし、 **[!UICONTROL ベース url]** サイトまたはテストしている他のページの
+1. 「**[!UICONTROL 次へ]**」をクリックします。
+
+   ![アシュランスの新しいセッションで検証](assets/validate-in-assurance-newsession.png)
+
+1. 接続方法を選択します。この場合は、 **[!UICONTROL リンクをコピー]**
+1. リンクをコピーして、新しいブラウザータブに貼り付けます。
+1. クリック **[!UICONTROL 完了]**
+
+   ![アシュランスでのコピーリンクによる接続で検証](assets/validate-in-assurance-copylink.png)
+
+1. アシュランスセッションが開始すると、「イベント」タブに
+1. 「tnta」でフィルター
+1. 最新の呼び出しを選択し、メッセージを展開して正しく入力されていることを確認し、「tnta」値をメモします。
+
+   ![保証ターゲットヒットでの検証](assets/validate-in-assurance-targetevent.png)
+
+1. 次に、「tnta」フィルターを保持し、先ほど表示したターゲットイベントの後に発生する analytics.mapping イベントを選択します。
+1. 「context.mappedQueryParams」を調べます。\&lt;yourschemaname>&quot;確認する値。前の target イベントにある「tnta」値に一致する連結された文字列を持つ「tnta」属性が含まれています。
+
+   ![Assurance Analytics ヒットでの検証](assets/validate-in-assurance-analyticsevent.png)
+
+これにより、ページ上で後から Analytics トラッキングコールが実行された際に、Target Decisiong コールをおこなったときに、後で送信するためにキューに入れられた A4T 情報が正しく送信されたことが確認できます。
+
 このレッスンが完了したら、Platform Web SDK を使用した、Adobe Targetの実装を実装する必要があります。
 
 [次へ： ](setup-consent.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

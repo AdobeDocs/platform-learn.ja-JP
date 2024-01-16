@@ -2,9 +2,9 @@
 title: イベント転送プロパティの設定
 description: イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 4%
 
 ---
@@ -59,6 +59,7 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 
       * [Web SDK 拡張機能のインストール](install-web-sdk.md)
       * [データ要素の作成](create-data-elements.md)
+      * [ID の作成](create-identities.md)
       * [タグルールの作成](create-tag-rule.md)
       * [Adobe Experience Platform Debugger を使用した検証](validate-with-debugger.md)
 
@@ -320,4 +321,4 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 >[!NOTE]
 >
-Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

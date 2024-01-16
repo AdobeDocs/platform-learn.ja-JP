@@ -1,9 +1,9 @@
 ---
 title: Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
 description: Web SDK を使用して、Web データをAdobe Experience Platformにストリーミングする方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1601'
 ht-degree: 8%
 
 ---
@@ -30,7 +30,6 @@ Experience Platformは、前に作成したのと同じ XDM スキーマを使�
 次のレッスンを既に完了していること。
 
 * The **初期設定** レッスン：
-   * [権限の設定](configure-permissions.md)
    * [XDM スキーマの設定](configure-schemas.md)
    * [データストリームの設定](configure-datastream.md)
    * [ID 名前空間の設定](configure-identities.md)
@@ -38,6 +37,7 @@ Experience Platformは、前に作成したのと同じ XDM スキーマを使�
 * The **タグ設定** レッスン：
    * [Web SDK 拡張機能のインストール](install-web-sdk.md)
    * [データ要素の作成](create-data-elements.md)
+   * [ID の作成](create-identities.md)
    * [タグルールの作成](create-tag-rule.md)
 
 
@@ -54,7 +54,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 1. 次に移動： [Experience Platform界面](https://experience.adobe.com/platform/)
 1. このチュートリアルで使用している開発用サンドボックス内にいることを確認します。
-1. 開く **[!UICONTROL データセット]** 左のナビゲーションから
+1. 開く **[!UICONTROL データ管理/データセット]** 左のナビゲーションから
 1. 選択 **[!UICONTROL データセットを作成]**
 
    ![スキーマを作成](assets/experience-platform-create-dataset.png)
@@ -92,7 +92,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
    ![データストリーム設定](assets/experience-platform-datastream-config.png)
 
-でトラフィックを生成する際、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) タグプロパティにマッピングされると、データセットがExperience Platformに入力されます。
+次の場所で [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) タグプロパティにマッピングされると、データセットがExperience Platformに入力されます。
 
 ## データセットの検証
 
@@ -129,7 +129,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 データが Platform のデータレイクにランディングしたことを確認するには、次の方法を使用します。 **[!UICONTROL データセットをプレビュー]** 機能。 Web SDK データは、データレイクにマイクロバッチされ、Platform インターフェイスで定期的に更新されます。 生成したデータが表示されるまでに 10 ～ 15 分かかる場合があります。
 
-1. Adobe Analytics の [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL データセット]** 左側のナビゲーションで、 **[!UICONTROL データセット]** ダッシュボード。
+1. Adobe Analytics の [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL データ管理/データセット]** 左側のナビゲーションで、 **[!UICONTROL データセット]** ダッシュボード。
 
    ダッシュボードリストは、組織で使用可能なすべてのデータセットを管理します。リストに表示された各データセットに関する詳細（名前、データセットが適用されるスキーマ、最新の取得実行のステータスなど）が表示されます。
 
@@ -220,7 +220,7 @@ Platform インターフェイス ( またはJourney Optimizerインターフェ
 1. Adobe Analytics の [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL プロファイル]** 左側のナビゲーションで
 
 1. を **[!UICONTROL ID 名前空間]** use `lumaCRMId`
-1. 次の値をコピー&amp;ペースト： `lumaCRMId` を渡し、Experience Platformデバッガーで調べた呼び出し ( `112ca06ed53d3db37e4cea49cc45b71e`) をクリックします。
+1. 次の値をコピー&amp;ペースト： `lumaCRMId` は、Debugger で調べた呼び出し ( この場合はExperience Platform) で渡されます。 `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![プロファイル](assets/experience-platform-validate-dataset-profile.png)
 
@@ -228,15 +228,22 @@ Platform インターフェイス ( またはJourney Optimizerインターフェ
 
    ![プロファイル](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. をクリックして、 [!UICONTROL プロファイル ID] および [!UICONTROL 顧客プロファイル] コンソールが設定されます。 ここに、 `lumaCRMId`例： `ECID`:
+1. フルを表示するには **[!UICONTROL 顧客プロファイル]** ID ごとに、 **[!UICONTROL プロファイル ID]** をクリックします。
+
+   >[!NOTE]
+   >
+   >プロファイル ID のハイパーリンクを選択できます。または、行を選択すると、右側のメニューが開き、「プロファイル ID 」ハイパーリンクを選択できます。
+   > ![顧客プロファイル](assets/experience-platform-select-profileId.png)
+
+   ここに、 `lumaCRMId`例： `ECID`.
 
    ![顧客プロファイル](assets/experience-platform-validate-dataset-custProfile.png)
 
-これで、Experience Platform( およびReal-Time CDP! そしてCustomer Journey Analytics! JOURNEY OPTIMIZER!)
+これで、Experience Platform( およびReal-Time CDP! JOURNEY OPTIMIZER!)
 
 
 [次へ： ](setup-analytics.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
