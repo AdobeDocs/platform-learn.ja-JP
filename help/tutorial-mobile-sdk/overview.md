@@ -4,14 +4,14 @@ description: Adobe Experience Cloudモバイルアプリケーションの実装
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
+source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 6%
+source-wordcount: '826'
+ht-degree: 4%
 
 ---
 
-# モバイルアプリでの Adobe Experience Cloud の実装のチュートリアル
+# モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル
 
 Adobe Experience Platform Mobile SDK を使用して、モバイルアプリに Adobe Experience Cloud アプリケーションを実装する方法を説明します。
 
@@ -27,7 +27,7 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 このチュートリアルでは、次の内容について学習します。
 
 * 標準フィールドグループとカスタムフィールドグループを使用してスキーマを作成します。
-* データストリームの設定.
+* データストリームを設定します。
 * モバイルタグプロパティを設定します。
 * Experience Platformデータセットを設定します（オプション）。
 * アプリにタグ拡張機能をインストールして実装します。
@@ -95,10 +95,14 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
 1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：このチュートリアルで実践的な演習を完了するために必要な、Experience PlatformMobile SDK コードのほとんどに対して、コードがない、またはプレースホルダーコードが付いたプロジェクトです。
 1. [完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：参照用に完全な実装を含むバージョン。
 
-
 >[!NOTE]
 >
 >プラットフォームとしてiOSを使用し、 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用する。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 多くのユーザーは、以前のiOS/Swift(UI) 操作をほとんどあるいはまったく使用せずに、既にこのチュートリアルを完了しています。 コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+
+
+最終的に製品化されたバージョンのアプリをApp Storeからダウンロードできます。
+
+[![](assets/download-app.svg) のダウンロード](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 それでは、始めましょう。
