@@ -3,9 +3,9 @@ title: Platform Web SDK を使用した同意の設定
 description: Web SDK タグ拡張機能のプライバシー設定のExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Web SDK タグ拡張機能のプライバシー設定のExperience Platform方�
 
 >[!NOTE]
 > 
->デモ用に、このチュートリアルではを使用します。 [クラロ](https://heyklaro.com/) CMP として。 Klaro や、Web サイトで使用する CMP を使用して、フォローを進めていただければ幸いです。
+>デモ用に、このチュートリアルではを使用します。 [クラロ](https://heyklaro.com/){target="_blank"} CMP として。 Klaro や、Web サイトで使用する CMP を使用して、フォローを進めていただければ幸いです。
 
 
 ## 学習内容
@@ -66,7 +66,7 @@ Web SDK タグ拡張機能のプライバシー設定のExperience Platform方�
 
 Klaro の設定が完了したら、次の設定を含むタグルールを作成します。
 
-* [!UICONTROL 名前]: `all pages - library load - Klaro`
+* [!UICONTROL 名前]：`all pages - library load - Klaro`
 * [!UICONTROL イベント]: [!UICONTROL 読み込まれたライブラリ（ページ上部）] 次を使用 [!UICONTROL 詳細オプション] > [!UICONTROL 注文] 1 に設定
 * [!UICONTROL アクション]: [!UICONTROL カスタムコード], [!UICONTROL 言語]:CMP スクリプトを読み込むHTML。
 
