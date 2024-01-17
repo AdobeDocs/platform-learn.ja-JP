@@ -3,10 +3,10 @@ title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 6%
+source-wordcount: '1174'
+ht-degree: 2%
 
 ---
 
@@ -70,7 +70,7 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 1. データ要素に「`page.pageInfo.pageName`」と名前を付けます。
 1. 以下を使用します。 **[!UICONTROL JavaScript 変数]** **[!UICONTROL データ要素のタイプ]** を指定して、Luma のデータレイヤーの値を指定します。 `digitalData.page.pageInfo.pageName`
 
-1. 「**[!UICONTROL 強制的に値を小文字に変換]**」および「**[!UICONTROL クリーンテキスト]**」のチェックボックスをオンして大文字と小文字を標準化し、不要なスペースを削除します。
+1. 次のチェックボックスをオンにします。 **[!UICONTROL 強制的に小文字に変換値]** および **[!UICONTROL クリーンテキスト]** 大文字と小文字を標準化し、余分なスペースを削除するには
 
 1. 終了 `None` として **[!UICONTROL ストレージ期間]** の設定は、ページごとにこの値が異なるので、
 
@@ -166,13 +166,13 @@ XDM オブジェクトの作成を開始する前に、次の一連のデータ�
 
 作成するすべてのデータ要素は、XDM オブジェクトにマッピングされている必要があります。 このオブジェクトは、 [スキーマの設定](configure-schemas.md) レッスン。
 
-データ要素を XDM オブジェクトフィールドにマッピングする方法は異なります。 データ要素が XDM オブジェクトに存在するキー値ペアのスキーマと完全に一致する限り、個々のデータ要素を個々の XDM フィールドにマップしたり、データ要素を XDM オブジェクト全体にマップしたりできます。 このレッスンでは、個々のフィールドにマッピングしてコンテンツデータをキャプチャします。 次の方法を学習します。 [データ要素を XDM オブジェクト全体にマッピングする](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) （内） [Analytics を設定](setup-analytics.md) レッスン。
+データ要素を XDM オブジェクトフィールドにマッピングする方法は異なります。 データ要素が XDM オブジェクトに存在するキー値ペアのスキーマと完全に一致する限り、個々のデータ要素を個々の XDM フィールドにマップしたり、データ要素を XDM オブジェクト全体にマップしたりできます。 このレッスンでは、個々のフィールドにマッピングして、コンテンツデータをキャプチャします。 次の方法を学習します。 [データ要素を XDM オブジェクト全体にマッピングする](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) （内） [Analytics を設定](setup-analytics.md) レッスン。
 
 コンテンツデータをキャプチャする XDM オブジェクトを作成します。
 
 1. 左側のナビゲーションで、「 **[!UICONTROL データ要素]**
 1. 選択 **[!UICONTROL データ要素を追加]**
-1. ****&#x200B;データ要素に「」と名前を付けます。**`xdm.content`**
+1. **[!UICONTROL 名前]** データ要素 **`xdm.content`**
 1. を **[!UICONTROL 拡張]** 選択 `Adobe Experience Platform Web SDK`
 1. を **[!UICONTROL データ要素タイプ]** 選択 `XDM object`
 1. プラットフォームを選択 **[!UICONTROL サンドボックス]** で XDM スキーマを作成したとき、 [XDM スキーマの設定](configure-schemas.md) レッスン：この例 `DEVELOPMENT Mobile and Web SDK Courses`
