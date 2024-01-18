@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 21%
+source-wordcount: '855'
+ht-degree: 20%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 21%
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
    + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [ユーザーの追加](/help/platform/admin/add-users.md)
+   + [データ収集にユーザーを追加](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [開発者の追加](/help/platform/admin/add-developers.md)
    + [製品管理者の追加](/help/platform/admin/add-product-administrators.md)
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)

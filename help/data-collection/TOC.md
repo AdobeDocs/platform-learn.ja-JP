@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 48%
+source-wordcount: '185'
+ht-degree: 34%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 48%
 # データ収集チュートリアル{#data-collection}
 
 + [データ収集チュートリアル](overview.md)
++ [ユーザーと権限](admin/users-and-permissions.md)
 + タグ{#tags}
    + [概要とプロパティの作成](tags/create-a-property.md)
    + [ホスティングオプションを選択](tags/choose-a-hosting-option.md)
@@ -25,7 +26,6 @@ ht-degree: 48%
    + [データ要素の作成](tags/create-data-elements.md)
    + [ルールの作成](tags/build-rules.md)
    + [ライブラリのビルドと公開](tags/build-and-publish-a-library.md)
-   + [ユーザーと権限](tags/users-and-permissions.md)
    + [Web SDK を使用した Web サイトでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
    + [ソリューション SDK を使用した Web サイトでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ja){target="_blank"}
    + [モバイルアプリでの実装](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja){target="_blank"}
@@ -64,5 +64,5 @@ ht-degree: 48%
    + [データ準備](edge/data-prep.md)
    + [機密データの管理](edge/manage-sensitive-data-in-datastreams.md)
    + [ファーストパーティデバイス ID](edge/generate-first-party-device-ids.md)
-+ Debugger{#debugger}
++ デバッガー{#debugger}
    + [概要](debugger/overview.md)

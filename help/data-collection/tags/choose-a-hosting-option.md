@@ -4,8 +4,9 @@ description: タグライブラリに最適なホスティングオプション�
 feature: Tags
 level: Beginner
 jira: KT-3526
+last-substantial-update: 2023-12-19T00:00:00Z
 exl-id: adc00363-7490-44ab-95e2-46f9f630021c
-source-git-commit: a4322927ec27044fa65f0ffc7e83e9590bd29f5b
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 0%
