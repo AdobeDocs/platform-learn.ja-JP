@@ -3,10 +3,10 @@ title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
 workflow-type: tm+mt
-source-wordcount: '3800'
-ht-degree: 2%
+source-wordcount: '3582'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -151,7 +151,7 @@ Target Premium のお客様は、プロパティを使用してユーザー権�
 
 ### Target 環境 ID
 
-[](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) Target の環境を使用すると、開発のすべてのステージを通じて実装を管理できます。このオプションの設定では、各データストリームで使用する Target 環境を指定します。
+[環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) (Target) は、あらゆる開発段階を通じて実装を管理する際に役立ちます。 このオプションの設定では、各データストリームで使用する Target 環境を指定します。
 
 Adobeでは、開発、ステージングおよび実稼動の各データストリームに対して、ターゲット環境 ID の設定を変更し、シンプルさを維持することをお勧めします。
 
