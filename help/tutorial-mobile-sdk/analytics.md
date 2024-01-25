@@ -4,9 +4,9 @@ description: モバイルアプリでAdobe Analyticsのデータを収集し、�
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ XDM データを Edge ネットワークからAdobe Analyticsに送信するに�
 結果：
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -207,6 +207,79 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 * Adobe Analytics ExperienceEvent Full Extension フィールドグループに従って、アプリで XDM ペイロードを作成します。これは、 [イベントデータの追跡](events.md) レッスンまたは
 * ルールアクションを使用してAdobe Analytics ExperienceEvent Full Extension フィールドグループにデータを添付または変更する、Tags プロパティでルールを作成します。 詳細は、を参照してください。 [SDK イベントへのデータのアタッチ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) または [SDK イベントのデータを変更する](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### マーチャンダイジング eVar
+
+を使用している場合、 [マーチャンダイジング eVar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) を使用して、例えば `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`の場合は、で定義した XDM ペイロードを拡張する必要があります [イベントデータの追跡](events.md) を使用してマーチャンダイジング情報を取り込みます。
+
+* JSON の場合：
+
+  ```json
+  {
+    "productListItems": [
+        {
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
+  ```
+
+* コード内：
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
 
 
 ### 処理ルールの使用
