@@ -2,9 +2,9 @@
 title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4183'
+source-wordcount: '4282'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -122,7 +122,7 @@ Platform Web SDK から Target アクティビティを配信する前に、Targ
 
 データストリームで Target を設定するには、次の手順に従います。
 
-1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
+1. 次に移動： [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
 1. 以前に作成したを選択 `Luma Web SDK` datastream
 
@@ -144,16 +144,17 @@ Target Premium のお客様は、プロパティを使用してユーザー権�
 
 ![Target プロパティトークン](assets/target-admin-properties.png)
 
->[!NOTE]
->
->1 つのデータストリームにつき 1 つのプロパティトークンのみ指定できます。
+<a id="advanced-pto"></a>
 
+1 つのデータストリームにつき 1 つのプロパティトークンのみを指定できますが、プロパティトークンのオーバーライドを使用すると、代替のプロパティトークンを指定して、データストリームで定義されたプライマリプロパティトークンを置き換えることができます。 の更新 `sendEvent` また、datastream を上書きするには、アクションが必要です。
+
+![ID リスト](assets/advanced-property-token.png)
 
 ### Target 環境 ID
 
 [環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) (Target) は、あらゆる開発段階を通じて実装を管理する際に役立ちます。 このオプションの設定では、各データストリームで使用する Target 環境を指定します。
 
-Adobeでは、開発、ステージングおよび実稼動の各データストリームに対して、ターゲット環境 ID の設定を変更し、シンプルさを維持することをお勧めします。
+Adobeでは、開発、ステージングおよび実稼動の各データストリームに対して、ターゲット環境 ID の設定を変更し、シンプルさを維持することをお勧めします。 または、 [ホスト](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ja) 機能。
 
 環境 ID を設定または検索するには、 **Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 環境]**.
 
@@ -168,19 +169,12 @@ Adobeでは、開発、ステージングおよび実稼動の各データスト
 このオプションの設定では、Target サードパーティ ID に使用する ID シンボルを指定できます。 Target では、1 つの ID シンボルまたは名前空間でのプロファイルの同期のみサポートしています。 詳しくは、 [mbox3rdPartyId のリアルタイムプロファイル同期](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ja) 」の節を参照してください。
 
 ID 記号は、の ID リストにあります。 **データ収集** > **[!UICONTROL 顧客]** > **[!UICONTROL ID]**.
-<a id="advanced-pto"></a>
-
-### 高度なプロパティトークンの上書き
-
-詳細セクションには、「プロパティトークンの上書き」のフィールドが含まれ、設定で定義したプライマリプロパティトークンを置き換えるプロパティトークンを指定できます。
-
-![ID リスト](assets/advanced-property-token.png)
-
-ID 記号は、の ID リストにあります。 **データ収集** > **[!UICONTROL 顧客]** > **[!UICONTROL ID]**.
 
 ![ID リスト](assets/target-identities.png)
 
 Luma サイトを使用するこのチュートリアルの目的では、ID シンボルを使用します。 `lumaCrmId` ～に関する授業中に設立する [ID](configure-identities.md).
+
+
 
 
 ## 視覚的なパーソナライゼーションの決定をレンダリング
@@ -263,7 +257,7 @@ Target がデータストリームで有効になっている場合、Target か
 >
 >Google Chrome を使用し、 [Visual Experience Composer(VEC) ヘルパー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) インストール済み、 **Target ライブラリを挿入** の設定は無効です。 この設定を有効にすると、追加の Target リクエストが発生します。
 
-1. Adobe Experience Platform Debugger ブラウザー拡張機能を開きます。
+1. Adobe Experience Platform Debuggerブラウザー拡張機能を開く
 1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) デバッガーを使用して、 [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. ページをリロード
 1. を選択します。 **[!UICONTROL ネットワーク]** デバッガーのツール
@@ -318,11 +312,11 @@ Target がデータストリームで有効になっている場合、Target か
 
 1. 入力 `%event.propositions%` を「提案」フィールドに入力します。これは、「イベント完了を送信」イベントをこのルールのトリガーとして使用する場合です。
 1. 「提案メタデータ」セクションで、 **[!UICONTROL フォームを使用]**
-1. 「スコープ」フィールドの入力 `homepage-hero`
-1. セレクターフィールドの入力用 `div.heroimage`
-1. アクションタイプを「 」のままにします。 `Set HTML`
+1. の **[!UICONTROL 範囲]** フィールド入力 `homepage-hero`
+1. の **[!UICONTROL セレクター]** フィールド入力 `div.heroimage`
+1. の場合 **[!UICONTROL アクションタイプ]** 選択 **[!UICONTROL 設定HTML]**
 
-![ホームページのヒーローアクションをレンダリング](assets/target-action-render-hero.png)
+   ![ホームページのヒーローアクションをレンダリング](assets/target-action-render-hero.png)
 
 1. 変更を保存し、ライブラリにビルドします。
 1. Luma のホームページを数回読み込みます。これは、新しい `homepage-hero` Target インターフェイスの決定範囲の登録。
@@ -452,15 +446,16 @@ XDM オブジェクト外で Target の追加データを渡すには、適用�
 
 ## パーソナライゼーションの決定と Analytics コレクションイベントの分割
 
-判定提案リクエストと Analytics データ収集リクエストを個別に送信できます。 この方法でイベントルールを分類すると、Target Decisioning イベントをできるだけ早く実行できます。 Analytics イベントは、データレイヤーオブジェクトが入力されるまで待つことができます。
+Luma サイトのデータレイヤーは、タグ埋め込みコードの前に完全に定義されます。 これにより、1 回の呼び出しを使用して、パーソナライズされたコンテンツ ( 例：Adobe Targetから ) を取得し、分析データ ( 例：Adobe Analyticsに ) を送信できます。 多くの Web サイトでは、データレイヤーをパーソナライゼーションアプリケーションでの使用に適した早期または迅速に読み込むことはできません。 この場合、2 つの `sendEvent` は単一のページ読み込みでを呼び出し、最初のをパーソナライゼーションに使用し、2 番目を analytics に使用します。 この方法でイベントルールを分類すると、Target Decisioning イベントをできるだけ早く実行できます。 Analytics イベントは、データレイヤーオブジェクトが入力されるまで待つことができます。 これは、Adobe Targetが `target-global-mbox` をクリックすると、Adobe Analyticsは `s.t()` ページ下部のを呼び出します。
 
-1. という名前のルールを作成します。 `all pages - page top - request decisions`.
-2. イベントをルールに追加します。 以下を使用します。 **コア** 拡張機能と **[!UICONTROL 読み込まれたライブラリ（ページ上部）]** イベントタイプ。
-3. ルールにアクションを追加します。 以下を使用します。 **Adobe Experience Platform Web SDK** 拡張と **イベントを送信** アクションタイプ。
-4. Adobe Analytics の **ガイド付きイベントスタイル** セクションで、 **[!UICONTROL ページの上部のイベント — パーソナライゼーションの決定をリクエストします。]** ラジオボタン
-5. これにより、 **タイプ** as **[!UICONTROL 判定の提案の取得]**
 
-![send_decision_request_alone](assets/target-decision-request.png)
+1. という名前のルールを作成します。 `all pages - page top - request decisions`
+1. イベントをルールに追加します。 以下を使用します。 **コア** 拡張機能と **[!UICONTROL 読み込まれたライブラリ（ページ上部）]** イベントタイプ
+1. ルールにアクションを追加します。 以下を使用します。 **Adobe Experience Platform Web SDK** 拡張と **イベントを送信** アクションタイプ
+1. 選択 **[!UICONTROL ガイド付きイベントの使用]** 次に、「 **[!UICONTROL パーソナライゼーションをリクエスト]**
+1. これにより、 **タイプ** as **[!UICONTROL 判定の提案の取得]**
+
+   ![send_decision_request_alone](assets/target-decision-request.png)
 
 1. を作成する際に、 `Adobe Analytics Send Event rule` を使用します。 **ガイド付きイベントスタイル** セクション選択 **[!UICONTROL ページイベントの下部 — 分析を収集]** ラジオボタン
 1. これにより、 **[!UICONTROL 保留中の表示通知を含める]** チェックボックスが選択され、判定リクエストのキューに登録された表示通知が送信されます。
@@ -514,7 +509,7 @@ Target Premium を使用している場合は、エンティティデータが�
 
 ### アシュランスで検証
 
-さらに、Target 判定リクエストが正しいデータを取得し、サーバー側の変換が正しく実行されていることを確認するのに適切な場合は、Assuance を使用できます。 また、Target Decisioning とAdobe Analyticsの呼び出しが別々に送信された場合でも、Adobe Analyticsの呼び出しにキャンペーンとエクスペリエンスの情報が含まれていることを確認できます。
+さらに、Assurance を適切な場合に使用して、Target の判定リクエストが正しいデータを取得し、サーバー側の変換が正しく行われていることを確認できます。 また、Target Decisioning とAdobe Analyticsの呼び出しが別々に送信された場合でも、Adobe Analyticsの呼び出しにキャンペーンとエクスペリエンスの情報が含まれていることを確認できます。
 
 1. 開く [アシュランス](https://experience.adobe.com/assurance)
 1. 新しいアシュランスセッションを開始し、 **[!UICONTROL セッション名]** をクリックし、 **[!UICONTROL ベース url]** サイトまたはテストしている他のページの
@@ -539,7 +534,7 @@ Target Premium を使用している場合は、エンティティデータが�
 
    ![Assurance Analytics ヒットでの検証](assets/validate-in-assurance-analyticsevent.png)
 
-これにより、ページ上で後から Analytics トラッキングコールが実行された際に、Target Decisiong コールをおこなったときに、後で送信するためにキューに入れられた A4T 情報が正しく送信されたことが確認できます。
+これにより、ページで後から Analytics トラッキングコールが実行された際に、Target Decisiong コールを実行したときに、後で送信するためにキューに入れられた A4T 情報が適切に送信されたことが確認できます。
 
 このレッスンが完了したら、Platform Web SDK を使用した、Adobe Targetの実装を実装する必要があります。
 

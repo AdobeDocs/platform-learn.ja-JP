@@ -4,10 +4,10 @@ description: Platform Web SDK を使用して Web チャネルを実装する方
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2463'
-ht-degree: 1%
+source-wordcount: '2444'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Platform Web SDK を使用して Web チャネルを実装する方法につい�
 
 この節のレッスンを完了するには、まず以下をおこなう必要があります。
 
-* AEP Web SDK のバージョンが 2.16 以降であることを確認します。
+* Adobe Experience Platform Web SDK タグ拡張機能のバージョンが 2.16 以降であることを確認します。
 * Journey Optimizer Web デザイナーを使用して Web チャネルエクスペリエンスを作成する場合は、Google Chrome またはMicrosoft® Edge ブラウザーを使用していることを確認します。
 * また、Adobe Experience Cloud Visual Editing Helper ブラウザー拡張機能もダウンロード済みであることを確認します。 Web チャネルエクスペリエンスを作成する前に、ブラウザーのツールバーで Visual Editing Helper ブラウザー拡張を有効にします。
    * Journey Optimizer Web デザイナーでは、次のいずれかの理由で、特定の Web サイトを確実に開くことができない場合があります。
@@ -46,7 +46,7 @@ Platform Web SDK を使用して Web チャネルを実装する方法につい�
 * コンテンツ実験機能を使用する場合は、Web データセットがレポート設定にも含まれていることを確認します。
 * 現在、Web プロパティで Web チャネルキャンペーンのオーサリングと配信を有効にする際に、次の 2 種類の実装がサポートされています。
    * クライアント側のみ：Web サイトを変更するには、Adobe Experience Platform Web SDK を実装する必要があります。
-   * ハイブリッドモード：AEP Edge Network Server API を利用して、パーソナライゼーションサーバーサイドをリクエストできます。 次に、API からの応答がAdobe Experience Platform Web SDK に提供され、クライアント側で変更をレンダリングできます。 詳しくは、 Adobe Experience Platform Edge Network Server API のドキュメントを参照してください。 ハイブリッドモードの追加の詳細と実装例については、このブログ投稿を参照してください。
+   * ハイブリッドモード： Platform Edge Network Server API を利用して、パーソナライゼーションサーバーサイドをリクエストできます。 次に、API からの応答がAdobe Experience Platform Web SDK に提供され、クライアント側で変更をレンダリングできます。 詳しくは、 Adobe Experience Platform Edge Network Server API のドキュメントを参照してください。 ハイブリッドモードの追加の詳細と実装例については、このブログ投稿を参照してください。
 
 >[!NOTE]
 >
@@ -76,39 +76,39 @@ Platform Web SDK を使用して Web チャネルを実装する方法につい�
 
 データストリーム内のAdobe Journey Optimizerを設定するには、次の手順に従います。
 
-1. データ収集インターフェイスに移動します。
-1. 左側のナビゲーションで、「 **データストリーム**.
+1. 次に移動： [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス。
+1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**.
 1. 前に作成した Luma Web SDK データストリームを選択します。
 
    ![データストリームを選択](../assets/web-channel-select-datastream.png)
 
-1. 選択 **編集** をAdobe Experience Platform Service 内に追加します。
+1. 選択 **[!UICONTROL 編集]** をAdobe Experience Platform Service 内に追加します。
 
    ![データストリームを編集](../assets/web-channel-edit-datastream.png)
 
-1. 次を確認します。 **Adobe Journey Optimizer** ボックス。
+1. 次を確認します。 **[!UICONTROL Adobe Journey Optimizer]** ボックス。
 
    ![AJO ボックスをオンにする](../assets/web-channel-check-ajo-box.png)
 
-1. 「**保存**」を選択します。
+1. 「**[!UICONTROL 保存]**」を選択します。
 
 これにより、Journey OptimizerのインバウンドイベントがAdobe Experience Platform Edge で正しく処理されます。
 
 ## 結合ポリシーを設定する
 
-結合ポリシーが **エッジ上でのアクティブな結合ポリシー** オプションが有効です。 この結合ポリシーオプションは、Journey Optimizerのインバウンドチャネルで採用され、インバウンドキャンペーンの正確なアクティベーションと公開をエッジで確実におこなえます。
+結合ポリシーが **[!UICONTROL エッジ上でのアクティブな結合ポリシー]** オプションが有効です。 この結合ポリシーオプションは、Journey Optimizerのインバウンドチャネルで採用され、インバウンドキャンペーンの正確なアクティベーションと公開をエッジで確実におこなえます。
 
 結合ポリシーでオプションを設定するには：
 
-1. 次に移動： **顧客/プロファイル** インターフェイス。
-1. ナビゲーション内で、 **結合ポリシー**.
-1. ポリシーを選択し、 **エッジ上でのアクティブな結合ポリシー** オプションを **設定** 手順
+1. 次に移動： **[!UICONTROL 顧客]** > **[!UICONTROL プロファイル]** ページを使用して、Experience PlatformまたはJourney Optimizerインターフェイスに表示できます。
+1. を選択します。 **[!UICONTROL 結合ポリシー]** タブをクリックします。
+1. ポリシーを選択し、 **[!UICONTROL エッジ上でのアクティブな結合ポリシー]** オプションを **[!UICONTROL 設定]** 手順
 
    ![結合ポリシーを切り替え](..//assets/web-channel-active-on-edge-merge-policy.png)
 
 ## コンテンツ実験用の Web データセットの設定
 
-Web チャネルキャンペーン内でコンテンツ実験を使用するには、使用する Web データセットもレポート設定に含める必要があります。 Journey Optimizerのレポートシステムは、データセットを読み取り専用で使用し、OOTB コンテンツ実験レポートに入力します。
+Web チャネルキャンペーン内でコンテンツ実験を使用するには、使用する Web データセットもレポート設定に含める必要があります。 Journey Optimizerのレポートシステムは、データセットを読み取り専用方法で使用し、標準のコンテンツ実験レポートを生成します。
 
 [コンテンツ実験レポート用のデータセットの追加について詳しくは、この節を参照してください。](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=en#add-datasets).
 
@@ -120,7 +120,7 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
 >[!NOTE]
 >
->このチュートリアルは実装者を対象としているので、このレッスンでは AJO での大幅な UI 作業を含むことに注意する必要があります。 このような UI タスクは通常マーケターが処理しますが、最終的に Web チャネルキャンペーンの作成に責任を負わない場合でも、実装者がプロセスに関するインサイトを得ると便利です。
+>このチュートリアルは実装者を対象としているので、このレッスンにはJourney Optimizerでの実質的なインターフェイス作業が含まれることに注意する必要があります。 このようなインターフェイスタスクは通常マーケターが処理しますが、Web チャネルキャンペーンの作成に責任がない場合でも、実装者がプロセスに関するインサイトを得ると便利です。
 
 ### ロイヤルティ報酬キャンペーンの作成
 
@@ -128,73 +128,73 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
 サンプルキャンペーンを作成するには：
 
-1. 左のナビゲーションで、ジャーニー管理/キャンペーンに移動します。
-1. クリック **キャンペーンを作成** を右上に表示します。
-1. 「**プロパティ**」セクションで、キャンペーンを実行する方法を指定します。「ロイヤルティ報酬」の使用例では、 **Scheduled**.
+1. に移動します。 **[!UICONTROL ジャーニー管理]** > **[!UICONTROL キャンペーン]** 左のナビゲーションで
+1. クリック **[!UICONTROL キャンペーンを作成]** を右上に表示します。
+1. 「**[!UICONTROL プロパティ]**」セクションで、キャンペーンを実行する方法を指定します。「ロイヤルティ報酬」の使用例では、 **Scheduled**.
 
    ![予定キャンペーン](../assets/web-channel-campaign-properties-scheduled.png)
 
-1. Adobe Analytics の **アクション** セクションで、 **Web チャネル**. この段階で、Web サーフェスも選択します。
+1. Adobe Analytics の **[!UICONTROL アクション]** セクションで、 **[!UICONTROL Web チャネル]**. を  **[!UICONTROL Web サーフェス]**&#x200B;を選択します。 **[!UICONTROL ページ URL]**.
 
 >[!NOTE]
 >
 >Web サーフェスは、コンテンツが配信される URL で識別される Web プロパティを指します。 1 つのページの URL に対応させたり、複数のページを囲んだりでき、1 つまたは複数の Web ページに変更を適用できます。
 
-を選択します。 **ページ URL** このキャンペーンの 1 つのページにエクスペリエンスをデプロイするための Web サーフェスオプション。 Luma ページの URL を入力します。
+を選択します。 **[!UICONTROL ページ URL]** このキャンペーンの 1 つのページにエクスペリエンスをデプロイするための Web サーフェスオプション。 Luma ページの URL を入力します。
 
-1. Web サーフェスを定義したら、「 」を選択します。 **作成**.
+1. Web サーフェスを定義したら、「 」を選択します。 **[!UICONTROL 作成]**.
 
    ![Web サーフェスを選択](../assets/web-channel-web-surface.png)
 
-1. 次に、新しい Web チャネルキャンペーンに詳細を追加します。 まず、キャンペーンに名前を付けます。 呼び出し&#39;*Luma ロイヤリティー報酬 — ゴールドステータス — 2023 年 10 月*&#39;. オプションで、キャンペーンに説明を追加できます。 また、 **タグ** ：キャンペーンの分類全体を改善します。
+1. 次に、新しい Web チャネルキャンペーンに詳細を追加します。 まず、キャンペーンに名前を付けます。 呼び出し `Luma Loyalty Rewards – Gold Status – October 2023`. オプションで、キャンペーンに説明を追加できます。 また、 **[!UICONTROL タグ]** ：キャンペーンの分類全体を改善します。
 
    ![キャンペーンに名前を付ける](../assets/web-channel-campaign-name.png)
 
-1. デフォルトでは、このキャンペーンはすべてのサイト訪問者に対してアクティブになっています。 この使用例の目的では、ゴールドステータスの報酬メンバーのみがエクスペリエンスを表示する必要があります。 これを有効にするには、 **オーディエンスを選択** をクリックし、「*Luma ロイヤリティー報酬 — ゴールドステータス*&#39;オーディエンス。
+1. デフォルトでは、このキャンペーンはすべてのサイト訪問者に対してアクティブになっています。 この使用例の目的では、ゴールドステータスの報酬メンバーのみがエクスペリエンスを表示する必要があります。 これを有効にするには、 **[!UICONTROL オーディエンスを選択]** を選択し、 `Luma Loyalty Rewards – Gold Status` オーディエンス。
 
-1. Adobe Analytics の **ID 名前空間** 「 」フィールドで、選択したセグメント内の個人を識別するための名前空間を選択します。 Luma サイトにキャンペーンをデプロイするので、ECID 名前空間を選択できます。 「 」内のプロファイル&#x200B;*Luma ロイヤリティー報酬 — ゴールドステータス*「 」オーディエンスの様々な ID の中に ECID 名前空間がない場合、web チャネルキャンペーンのターゲットになりません。
+1. Adobe Analytics の **[!UICONTROL ID 名前空間]** 「 」フィールドで、選択したセグメント内の個人を識別するための名前空間を選択します。 Luma サイトにキャンペーンをデプロイするので、ECID 名前空間を選択できます。 内のプロファイル `Luma Loyalty Rewards – Gold Status` 様々な id の中で ECID 名前空間に欠落しているオーディエンスは、web チャネルキャンペーンのターゲットになりません。
 
    ![ID タイプを選択](../assets/web-channel-indentity-type.png)
 
-1. キャンペーンの開始を 12 月 1 日 (PT) にスケジュールするには、 **キャンペーン開始** オプションを選択し、12 月 31 日に終了する場合は、 **キャンペーン終了** オプション。
+1. キャンペーンの開始を 12 月 1 日 (PT) にスケジュールするには、 **[!UICONTROL キャンペーン開始]** オプションを選択し、12 月 31 日に終了する場合は、 **[!UICONTROL キャンペーン終了]** オプション。
 
    ![キャンペーンスケジュール](../assets/web-channel-campaign-schedule.png)
 
 >[!NOTE]
 >
->Web チャネルキャンペーンの場合、訪問者がページを開くと Web エクスペリエンスが表示されます。 したがって、Adobe Journey Optimizerの他のタイプのキャンペーンとは異なり、 **アクショントリガー** セクションは設定できません。
+>Web チャネルキャンペーンの場合、訪問者がページを開くと Web エクスペリエンスが表示されます。 したがって、Adobe Journey Optimizerの他のタイプのキャンペーンとは異なり、 **[!UICONTROL アクショントリガー]** セクションは設定できません。
 
 ### ロイヤルティ報酬コンテンツの実験
 
-Adobe Analytics の **アクション** セクションに、「 」に対してどのコンテンツが適しているかをテストする実験を作成することもできます&#x200B;*Luma ロイヤリティー報酬 — ゴールドステータス*&#39;オーディエンス。 キャンペーン設定のコンポーネントとして、2 つのトリートメントを作成し、テストしてみましょう。
+Adobe Analytics の **[!UICONTROL アクション]** 「 」セクションでは、必要に応じて実験を作成し、 `Luma Loyalty Rewards – Gold Status` オーディエンス。 キャンペーン設定のコンポーネントとして、2 つのトリートメントを作成し、テストしてみましょう。
 
 コンテンツ実験を作成するには：
 
-1. クリック **実験を作成**.
+1. クリック **[!UICONTROL 実験を作成]**.
 
    ![実験を作成](../assets/web-channel-create-content-experiment.png)
 
-1. 最初に、 **成功指標**. これは、コンテンツの効果を判断するための指標です。 選択 **個別インバウンドクリック数**&#x200B;を使用して、web エクスペリエンス CTA でどのコンテンツ処理がより多くのクリックを生み出しているかを確認します。
+1. 最初に、 **[!UICONTROL 成功指標]**. これは、コンテンツの効果を判断するための指標です。 選択 **[!UICONTROL 個別インバウンドクリック数]**&#x200B;を使用して、web エクスペリエンス CTA でどのコンテンツ処理がより多くのクリックを生み出しているかを確認します。
 
    ![成功指標を選択](../assets/web-channel-content-experiment-metric.png)
 
-1. Web チャネルを使用して実験を設定し、 **インバウンドクリック数**, **個別インバウンドクリック数**, **ページビュー数**&#x200B;または **個別ページビュー数** 指標、 **クリックアクション** ドロップダウンを使用すると、特定のページのクリック数やビュー数を正確に追跡および監視できます。
+1. Web チャネルを使用して実験を設定し、 **[!UICONTROL インバウンドクリック数]**, **[!UICONTROL 個別インバウンドクリック数]**, **[!UICONTROL ページビュー数]**&#x200B;または **[!UICONTROL 個別ページビュー数]** 指標、 **[!UICONTROL クリックアクション]** ドロップダウンを使用すると、特定のページのクリック数やビュー数を正確に追跡および監視できます。
 
-1. オプションで、 **除外** 2 つの治療のどちらも受けていません 現時点では、このチェックボックスをオフにしておきます。
+1. オプションで、 **[!UICONTROL 除外]** 2 つの治療のどちらも受けていません 現時点では、このチェックボックスをオフにしておきます。
 
-1. また、オプションで、次を選択します。 **等しく分布**. 治療の分割が常に均等に分割されるようにするには、このオプションを選択します。
+1. また、オプションで、次を選択します。 **[!UICONTROL 等しく分布]**. 治療の分割が常に均等に分割されるようにするには、このオプションを選択します。
 
 [Adobe Journey Optimizer Web Channel でのコンテンツ実験の詳細](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
 
 ### Visual Helper を使用してコンテンツを編集する
 
-次に、Web チャネルのエクスペリエンスを作成します。 これをおこなうには、Adobe Experience Cloud **Visual Helper**. このツールは、Google Chrome およびMicrosoft® Edge と互換性のあるブラウザー拡張機能です。 エクスペリエンスを構築する前に、拡張機能をダウンロードしていることを確認してください。 また、Web ページに Web SDK が含まれていることを確認します。
+次に、Web チャネルのエクスペリエンスを作成します。 これをおこなうには、Adobe Experience Cloud **[!UICONTROL Visual Helper]**. このツールは、Google Chrome およびMicrosoft® Edge と互換性のあるブラウザー拡張機能です。 エクスペリエンスを構築する前に、拡張機能をダウンロードしていることを確認してください。 また、Web ページに Web SDK が含まれていることを確認します。
 
-1. 内 **アクション** キャンペーンの「 」タブで、「 **コンテンツを編集**. 単一ページの URL をサーフェスとして入力したので、コンポーザーで作業を開始する準備が整いました。
+1. 内 **[!UICONTROL アクション]** キャンペーンの「 」タブで、「 **[!UICONTROL コンテンツを編集]**. 単一ページの URL をサーフェスとして入力したので、コンポーザーで作業を開始する準備が整いました。
 
    ![コンテンツの編集](../assets/web-channel-edit-content.png)
 
-1. 今すぐクリック **Web ページを編集** をクリックしてオーサリングを開始します。
+1. 今すぐクリック **[!UICONTROL Web ページを編集]** をクリックしてオーサリングを開始します。
 
    ![Web ページを編集](../assets/web-channel-edit-web-page.png)
 
@@ -202,32 +202,32 @@ Adobe Analytics の **アクション** セクションに、「 」に対して
 
    ![コンテキスト編集の追加](../assets/web-channel-some-contextual-edit.png)
 
-1. また、 **式エディター**.
+1. また、 **[!UICONTROL 式エディター]**.
 
    ![パーソナライゼーションの追加](../assets/web-channel-add-basic-personalization.png)
 
-1. クリックに対してエクスペリエンスが適切に追跡されるようにします。 選択 **追跡要素をクリック** を選択します。
+1. クリックに対してエクスペリエンスが適切に追跡されるようにします。 選択 **[!UICONTROL 追跡要素をクリック]** を選択します。
 
    ![クリック追跡](../assets/web-channel-click-tracking.png)
 
-1. 以下を使用します。 **オファーの決定コンポーネント** をクリックして、web ページにオファーを挿入します。 このコンポーネントは、 **決定管理** :Luma 訪問者に配信する最適なオファーを選択します。
+1. 以下を使用します。 **[!UICONTROL オファーの決定コンポーネント]** をクリックして、web ページにオファーを挿入します。 このコンポーネントは、 **[!UICONTROL 決定管理]** :Luma 訪問者に配信する最適なオファーを選択します。
 
 
 ### HTMLデザインの変更
 
 より高度な変更や、ロイヤリティー報酬キャンペーンのコンポーネントとしてサイトにカスタムの変更を加える場合は、いくつかの方法を使用できます。
 
-以下を使用します。 **コンポーネント** ウィンドウを使用して、HTMLまたは他のコンテンツを Luma サイトに直接追加します。
+以下を使用します。 **[!UICONTROL コンポーネント]** ウィンドウを使用して、HTMLまたは他のコンテンツを Luma サイトに直接追加します。
 
 ![コンポーネントパネルの参照](../assets/web-channel-components-pane.png)
 
-新しいHTMLコンポーネントをページ上部に追加します。 デザインインターフェイスからHTMLを編集するか、または **コンテキスト** ウィンドウ
+新しいHTMLコンポーネントをページ上部に追加します。 デザインインターフェイスからHTMLを編集するか、または **[!UICONTROL コンテキスト]** ウィンドウ
 
 ![カスタムHTMLを追加](../assets/web-channel-add-html-component.png)
 
-または、 **変更** ウィンドウ このウィンドウでは、ページ上のコンポーネントを選択し、デザイナーインターフェイスから編集できます。
+または、 **[!UICONTROL 変更]** ウィンドウ このウィンドウでは、ページ上のコンポーネントを選択し、デザイナーインターフェイスから編集できます。
 
-エディター内で、「*Luma ロイヤリティー報酬 — ゴールドステータス*&#39;オーディエンス。 「**ターゲットの承認**」をクリックします。
+エディター内で、 `Luma Loyalty Rewards – Gold Status` オーディエンス。 選択 **[!UICONTROL 検証]**.
 
 ![検証HTML](../assets/web-channel-add-custom-html-validate.png)
 
@@ -235,7 +235,7 @@ Adobe Analytics の **アクション** セクションに、「 」に対して
 
 ![カスタムHTMLの確認](../assets/web-channel-review-custom-html.png)
 
-を使用して特定のコンポーネントを編集する **CSS セレクターのタイプ** 変更。
+を使用して特定のコンポーネントを編集する **[!UICONTROL CSS セレクターのタイプ]** 変更。
 
 ![CSS を変更](../assets/web-channel-css-selector.png)
 
@@ -243,7 +243,7 @@ Adobe Analytics の **アクション** セクションに、「 」に対して
 
 ![ヘッドを修正](../assets/web-channel-page-head-modification.png)
 
-可能性は、 **Visual Helper**.
+可能性は、 **[!UICONTROL Visual Helper]**.
 
 ### ロイヤルティ報酬の内容をシミュレート
 
@@ -251,11 +251,11 @@ Adobe Analytics の **アクション** セクションに、「 」に対して
 
 エクスペリエンスをシミュレートするには：
 
-1. 選択 **コンテンツをシミュレート** キャンペーン内で使用できます。
+1. 選択 **[!UICONTROL コンテンツをシミュレート]** キャンペーン内で使用できます。
 
    ![コンテンツをシミュレート](../assets/web-channel-simulate-content.png)
 
-1. シミュレーションを受け取るテストプロファイルを選択します。 テストプロファイルは、*Luma ロイヤリティー報酬 — ゴールドステータス*&#39;適切な治療を受けるオーディエンス。
+1. シミュレーションを受け取るテストプロファイルを選択します。 テストプロファイルは、 `Luma Loyalty Rewards – Gold Status` 適切な治療を受ける聴衆。
 
 1. テストプロファイルのプレビューが表示されます。
 
@@ -265,11 +265,11 @@ Adobe Analytics の **アクション** セクションに、「 」に対して
 
 1. 選択 **有効化するレビュー**.
 
-1. 最終的に、キャンペーンの詳細を確認するメッセージが表示されます。 選択 **有効化**. キャンペーンがサイト上で有効になるまでに最大 15 分かかる場合があります。
+1. 最終的に、キャンペーンの詳細を確認するメッセージが表示されます。 選択 **[!UICONTROL 有効化]**. キャンペーンがサイト上で有効になるまでに最大 15 分かかる場合があります。
 
 ### ロイヤルティ報酬 QA
 
-ベストプラクティスとして、 **Web** キャンペーン固有の KPI に関する、キャンペーンのライブレポートおよびグローバルレポートの「 」タブ。 このキャンペーンの場合は、エクスペリエンスのインプレッション数を監視し、クリック率を示します。
+ベストプラクティスとして、 **[!UICONTROL Web]** キャンペーン固有の KPI に関する、キャンペーンのライブレポートおよびグローバルレポートの「 」タブ。 このキャンペーンの場合は、エクスペリエンスのインプレッション数を監視し、クリック率を示します。
 
 ![Web レポートを表示](../assets/web-channel-web-report.png)
 
@@ -287,11 +287,11 @@ Luma サイトのデバッガーを使用して、実稼動環境での Web チ�
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Web ページで、 **Adobe Experience Platform debugger**.
+1. Web ページで、 **[!UICONTROL Adobe Experience Platform Debugger]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. に移動します。 **概要**. 次を確認します。 **Datastream ID** が **datastream** in **Adobeデータ収集** Adobe Journey Optimizerを有効にした
+1. に移動します。 **概要**. 次を確認します。 **[!UICONTROL Datastream ID]** が **[!UICONTROL datastream]** in **[!UICONTROL Adobeデータ収集]** Adobe Journey Optimizerを有効にした
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -299,15 +299,15 @@ Luma サイトのデバッガーを使用して、実稼動環境での Web チ�
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. の下 **ソリューション** に移動します。 **Experience PlatformWeb SDK**.
+1. の下 **[!UICONTROL ソリューション]** に移動します。 **[!UICONTROL Experience PlatformWeb SDK]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 内 **設定** タブ、切り替えオン **デバッグを有効にする**. これにより、 **Adobe Experience Platform Assurance** セッション。
+1. 内 **設定** タブ、切り替えオン **[!UICONTROL デバッグを有効にする]**. これにより、 **[!UICONTROL Adobe Experience Platform Assurance]** セッション。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 様々な Luma ロイヤリティーアカウントを使用してサイトにログインし、デバッガーを使用して **Adobe Experience Platform Edge ネットワーク**. これらのリクエストはすべて、 **アシュランス** ログ追跡用。
+1. 様々な Luma ロイヤリティーアカウントを使用してサイトにログインし、デバッガーを使用して **[!UICONTROL Adobe Experience Platform Edge ネットワーク]**. これらのリクエストはすべて、 **[!UICONTROL アシュランス]** ログ追跡用。
 <!--
    ![ADD SCREENSHOT](#)
 -->

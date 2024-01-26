@@ -4,9 +4,9 @@ description: Platform Web SDK を使用して決定管理を実装する方法�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Platform Web SDK を使用して決定管理を実装する方法について説明します。 このガイドでは、基本的な決定管理の前提条件、設定の詳細な手順、ロイヤルティステータスを中心とした使用例の詳細について説明します。
 
-このドキュメントに従うことで、Journey Optimizerのユーザーは、offer decisioning機能を効果的に適用し、顧客インタラクションのパーソナライゼーションと関連性を強化する機能を備えています。
+このチュートリアルに従うことで、Journey Optimizerのユーザーは、offer decisioning機能を効果的に適用し、顧客インタラクションのパーソナライゼーションと関連性を強化する機能を備えています。
 
 ## 学習内容
 
@@ -24,7 +24,7 @@ Platform Web SDK を使用して決定管理を実装する方法について説
 
 * Adobe Journey Optimizer内での決定管理の中心概念と、Adobe Experience Platform Web SDK との統合を把握します。
 
-* Web SDK をOffer decisioning用に設定し、AJO とのシームレスな統合を確実におこなう手順を説明します。
+* Journey Optimizerとのシームレスな統合を確実におこなう、Offer decisioning用の Web SDK の設定手順を説明します。
 
 * ロイヤリティステータスオファーを中心とした詳細な使用例を参照し、オファー、決定、配置の効果的な作成と管理に関するインサイトを得ます。
 
@@ -38,13 +38,11 @@ Platform Web SDK を使用して決定管理を実装する方法について説
 
 この節のレッスンを完了するには、まず以下をおこなう必要があります。
 
-* 組織がAdobe Journey Optimizer Ultimate(AJO およびOffer decisioning) またはAdobe Experience PlatformとOffer decisioningアプリケーションサービスのアドオンにアクセスできることを確認します。
+* 組織がAdobe Journey Optimizer Ultimate(Journey OptimizerおよびOffer decisioning) またはAdobe Experience PlatformおよびOffer decisioningアプリケーションサービスのアドオンにアクセスできることを確認します。
 
 * Platform Web SDK の初期設定に関するすべてのレッスンを完了していること。
 
 * 組織で Edge Decisioning を有効にします。
-
-* データストリームを公開します。
 
 * 配置を設定し、決定スコープ JSON 内で配置とアクティビティ ID をインスタンス化する方法を説明します。
 
@@ -64,7 +62,7 @@ Offer decisioningは、 **datastream** Platform Web SDK によって判定管理
 
 データストリーム内のOffer decisioningを構成する手順は、次のとおりです。
 
-1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection) インターフェイス。
+1. 次に移動： [データ収集](https://experience.adobe.com/#/data-collection) インターフェイス。
 
 1. 左側のナビゲーションで、「 **データストリーム**.
 
@@ -143,7 +141,7 @@ Offer decisioningは、 **datastream** Platform Web SDK によって判定管理
 
 >[!NOTE]
 >
-> このチュートリアルは実装者を対象としているので、このレッスンでは AJO での大幅な UI 作業を含むことに注意する必要があります。 このような UI タスクは通常マーケターが処理しますが、長期的に意思決定管理キャンペーンの作成に責任がない場合でも、実装者がプロセスに関するインサイトを得ると便利です。
+> このチュートリアルは実装者を対象としているので、このレッスンにはJourney Optimizerでの実質的なインターフェイス作業が含まれることに注意する必要があります。 このようなインターフェイスタスクは通常マーケターによって処理されますが、長期的に意思決定管理キャンペーンの作成に責任を負わない場合でも、実装者がプロセスに関するインサイトを得ると便利です。
 
 ## コンポーネント
 
@@ -173,7 +171,7 @@ Offer decisioningは、 **datastream** Platform Web SDK によって判定管理
 
 1. 「**保存**」をクリックします。
 1. 配置が作成されると、配置リストに表示されます。
-1. 決定範囲内での設定に必要な場合があるので、プレースメント ID を控えておきます。
+1. 新しい配置を含む行を選択し、配置 ID をメモします。これは、決定範囲内での設定に必要な場合があるからです。
 
    ![プレースメント ID を参照してください。 ](../assets/decisioning-placement-id.png)
 
@@ -189,7 +187,7 @@ Offer decisioningは、 **datastream** Platform Web SDK によって判定管理
 
    ![ルールの作成](../assets/decisioning-create-rule.png)
 
-1. 最初のルールに名前を付けましょう&#39;*ゴールドロイヤリティステータスルール*&#39;. XDM フィールドを使用して、ルールを定義できます。 ザAdobe Experience Platform **セグメントビルダー** は、ルール条件の構築に使用できる直感的な UI です。
+1. 最初のルールに名前を付けましょう&#39;*ゴールドロイヤリティステータスルール*&#39;. XDM フィールドを使用して、ルールを定義できます。 ザAdobe Experience Platform **セグメントビルダー** は、ルール条件の作成に使用できる直感的なインターフェイスです。
 
    ![ルールを定義](../assets/decisioning-define-rule.png)
 

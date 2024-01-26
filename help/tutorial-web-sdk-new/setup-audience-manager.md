@@ -2,7 +2,7 @@
 title: Platform Web SDK でのAudience Managerの設定
 description: Platform Web SDK を使用してAdobe Audience Managerを設定し、Cookie の宛先を使用して実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Audience Manager
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Platform Web SDK を使用したAudience Manager実装は、 [サーバー側転
 
    ![Adobe Experience PlatformAudience Managerデータソース](assets/data-sources-list.jpg)
 
-1. データソースにわかりやすい名前と説明を付けます。 初期設定では、この名前を`Platform Web SDK tutorial`.
+1. データソースにわかりやすい名前と説明を付けます。 初期設定では、この名前を `Platform Web SDK tutorial`.
 1. 設定 **[!UICONTROL ID Type]** から **[!UICONTROL Cookie]**
 1. Adobe Analytics の **[!UICONTROL データ書き出しコントロール]** セクション、選択 **[!UICONTROL 制限なし]**
 

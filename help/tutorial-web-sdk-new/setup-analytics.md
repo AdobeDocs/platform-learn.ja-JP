@@ -2,9 +2,9 @@
 title: Experience PlatformWeb SDK を使用したAdobe Analyticsのセットアップ
 description: Experience PlatformWeb SDK を使用したAdobe Analyticsの設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Analytics
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4675'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
    * [タグルールの作成](create-tag-rule.md)
    * [Adobe Experience Platform Debugger を使用した検証](validate-with-debugger.md)
 
-また、 [Adobe Experience Platform Assurance へのユーザーアクセスを有効にする](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) Adobe Experience Platform Assurance を使用してAdobe Analyticsデータを検証できるようにするため。
+また、 [Adobe Experience Platform Assurance へのユーザーアクセスを有効にする](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) Adobe Experience Platform Assurance を使用してAdobe Analyticsデータを検証できるようにするため。 （アクセススキーマ、ID 名前空間およびデータストリームを持っている場合、Assurance に対するアクセス権が既にあります）
 
 ## XDM スキーマと Analytics 変数
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
 
-1. **製品に依存しない XDM**：セマンティックキー値ペア XDM スキーマの維持と使用 [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) XDM フィールドを eVar や prop などにマッピングするために使用します。
+1. **製品に依存しない XDM**：セマンティックキー値ペア XDM スキーマの維持と使用 [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) XDM フィールドを eVar や prop などにマッピングするために使用します。 セマンティック XDM スキーマでは、フィールド名自体に意味があるという意味です。 例えば、フィールド名 `web.webPageDetails.pageName` 言うよりも意味がある `prop1` または `evar3`.
 
    >[!IMPORTANT]
    >
@@ -140,7 +140,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 訪問者が特定のページを閲覧している場合に、どのAdobe Analyticsレポートスイートデータを送信するかを変更することができます。 Adobe Analyticsのデータストリーム上書き設定を構成するには、次の手順に従います。
 
-1. を編集します。 **[!UICONTROL Adobe Analytics]** shish-kabab メニューを開き、次に「 」を選択することによる設定 **[!UICONTROL 編集]**
+1. を編集します。 **[!UICONTROL Adobe Analytics]** 設定を行うには、 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) メニューと選択 **[!UICONTROL 編集]**
 
    ![データストリームを上書き](assets/datastream-edit-analytics.png)
 
@@ -306,19 +306,16 @@ Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスン�
 
 ### ページビュー数を増分
 
-現在はAdobe Analyticsにデータを送信しているので、追加の XDM フィールドもマッピングして、ビーコンが Analytics ページビューとして処理される必要があることを示す必要があります。
+現在はAdobe Analyticsにデータを送信しているので、ページビューを示すために追加の XDM フィールドをマッピングすることをお勧めします。 技術的には、Analytics がビーコンをページビューとして処理するために必要ではありませんが、他のダウンストリームアプリケーションのページビューを示す標準的な方法が役立ちます。
 
 1. を開きます。 `all pages global content variables - page bottom - AA (order 1)` ルール
+1. を開きます。 **[!UICONTROL 変数を更新]** アクション
 1. 下にスクロールし、を選択して開くまで待ちます。 `web.webPageDetails`
 1. を選択して、 **[!UICONTROL pageViews]** object
 1. 設定 **[!UICONTROL 値]** から `1`
 1. 選択 **[!UICONTROL 変更を保持]**
 
    ![ページビュー XDM オブジェクト](assets/set-up-analytics-pageviews.png)
-
-   >[!TIP]
-   >
-   >このフィールドは、 **`s.t()`** 次を使用する Analytics のページビュービーコン `AppMeasurement.js`. リンククリックビーコンの場合、 `webInteraction.linkClicks.value` から `1`
 
 
 ### データストリームの上書きを使用して、ページビューを別のレポートスイートに送信します
@@ -381,9 +378,9 @@ Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスン�
 1. の下 **[!UICONTROL レポートスイート]**&#x200B;に設定し、上書きに使用するレポートサイトを選択します。 この場合は、`tmd-websdk-course-stg`です。
 
 
->[!TIP]
->
->ここに表示されるレポートスイートのリストは、 [データストリームレポートスイートの上書きの設定](configure-datastream.md###configure-a-datastream-report-suite-override) 手順 レポートスイートの追加は、複数のスイートタグ付けと同じです。
+   >[!TIP]
+   >
+   >ここに表示されるレポートスイートのリストは、 [データストリームレポートスイートの上書きの設定](configure-datastream.md###configure-a-datastream-report-suite-override) 手順 レポートスイートの追加は、複数のスイートタグ付けと同じです。
 
 1. 選択 **[!UICONTROL 変更を保持]**
 
@@ -415,6 +412,7 @@ Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスン�
 
 1. 左側のナビゲーションから、「 」を選択します。 **[!UICONTROL ルール]** 次に、「 **[!UICONTROL ルールを追加]**
 1. 名前を付ける  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
 1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
 1. 名前を付ける `Core - Page Bottom - order 20`
@@ -520,6 +518,7 @@ Luma のデータレイヤー構造により、個々の変数にマッピング
 次に、XDM オブジェクトを配列全体にマッピングします。 同じ手順を繰り返して、 `ecommerce - pdp page bottom - AA (order 20)` ルール：
 
 1. 名前を付ける  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
 1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
 1. 名前を付ける `Core - Page Bottom - order 20`
@@ -656,7 +655,7 @@ Repeat the same for all other e-commerce events using the following parameters:
 
 ## Adobe Analytics for Platform Web SDK の検証
 
-Adobe Analytics の [デバッガー](validate-with-debugger.md) レッスンでは、Platform Debugger とブラウザーの開発者コンソールを使用して、クライアント側の XDM リクエストを検査する方法を学びました。これは、 `AppMeasurement.js` Analytics の実装。 また、Adobeアプリケーションに送信される Platform Edge Network のサーバー側リクエストの検証と、Assurance を使用した完全に処理されたペイロードの表示方法についても学習しました。
+Adobe Analytics の [デバッガー](validate-with-debugger.md) レッスンでは、Platform Debugger とブラウザーの開発者コンソールを使用して、クライアント側の XDM リクエストを検査する方法を学びました。これは、 `AppMeasurement.js` Analytics の実装。 また、Adobeアプリケーションに送信される Platform Edge Network サーバー側リクエストの検証と、Assurance を使用した完全に処理されたペイロードの表示方法についても学習しました。
 
 Experience PlatformWeb SDK を使用して Analytics がデータを適切にキャプチャしていることを検証するには、次の 2 つの手順に従う必要があります。
 
@@ -670,16 +669,10 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
 ### Experience CloudID の検証
 
-1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} とExperience PlatformDebugger を使用して [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 次に移動： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. 右上のログインボタンを選択し、資格情報 u: test@adobe.com p: test を使用して認証します。
+1. デバッガーを開き、Experience Platformを開きます。 [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
-
-   >[!WARNING]
-   >
-   >続行する前に、Luma サイトにログインしていることを確認します。  ログインしていない場合、Luma サイトではチェックアウトできません。
-   >
-   > 1. Luma で、右上のログインボタンを選択し、資格情報を使用します。 **u: `test@adobe.com` p：テスト** 認証を行う
-   >
-   > 1. 自動的に [Didi Sport Watch 製品ページ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 次のページ読み込み時
 
 1. エッジトレースを有効にするには、「Experience Platformデバッガー」に移動し、左側のナビゲーションでを選択します。 **[!UICONTROL ログ]**&#x200B;を選択し、 **[!UICONTROL Edge]** 「 」タブで「 」を選択します。 **[!UICONTROL 接続]**
 
@@ -689,7 +682,7 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
    ![接続エッジトレース](assets/analytics-debugger-edge-connected.png)
 
-1. 次を更新： [Didi Sport Watch 製品ページ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 「Experience Platformデバッガー」を再度チェックすると、データが表示されます。 次で始まる行 **[!UICONTROL Analytics 自動マッピング]** はAdobe Analyticsビーコンです
+1. Luma ページを更新し、「Experience Platformデバッガー」を再度オンにします。データが表示されます。 次で始まる行 **[!UICONTROL Analytics 自動マッピング]** はAdobe Analyticsビーコンです
 1. を選択して、両方の `[!UICONTROL mappedQueryParams]` ドロップダウンと、Analytics 変数を表示する 2 番目のドロップダウン
 
    ![Analytics ビーコンの Edge Trace](assets/analytics-debugger-edge-analytics.png)
@@ -700,6 +693,7 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
 1. 下にスクロールして検索 `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. ECID を取り込むコンテキストデータ変数です。
 1. Analytics が表示されるまで下にスクロールし続けます `[!UICONTROL mid]` 変数を使用します。 両方の ID がデバイスのExperience CloudID と一致します。
+1. Luma サイトで、
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -711,7 +705,7 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
 上で、 [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html).  この設定を検証するには、以下を実行します。
 
-1. 次を含む行を探します。 **[!UICONTROL 上書き後のデータストリーム設定が適用されました。]**。ここには、プライマリレポートスイートと、レポートスイートの上書き用に設定された追加のレポートスイートが表示されます。
+1. 次を含む行を探します。 **[!UICONTROL 上書き後のデータストリーム設定が適用されました]**. ここには、プライマリレポートスイートと、レポートスイートの上書き用に設定された追加のレポートスイートが表示されます。
 
    ![Analytics レポートスイート上書きリストの検証](assets/aep-debugger-datastream-override.png)
 
@@ -721,9 +715,9 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
 ### コンテンツページビュー数
 
-に戻ります。 [Didi Sport Watch 製品ページ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  今回は、コンテンツページビューが Analytics によって取り込まれたことを検証します。
+次のような製品ページに移動します。 [Didi Sport Watch 製品ページ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  コンテンツページビューが Analytics によって取り込まれたことを検証します。
 
-1. を探す `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. これは、 `s.t()` ページビュービーコンが Analytics に送信されています
+1. を探す `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. 下にスクロールして、 `[!UICONTROL gn]` 変数を使用します。 これは、Analytics の動的構文で、 `[!UICONTROL s.pageName]` 変数を使用します。 データレイヤーからページ名を取り込みます。
 
    ![Analytics 製品文字列](assets/analytics-debugger-edge-page-view.png)
@@ -737,7 +731,7 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 1. を探す `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. 変数は、 `productListItems.item1.sku` このレッスンの前の
 1. また、 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]`. 変数は、マッピング先のデータ要素の値を取得します `productListItems.item1._experience.analytics.customdimensions.evars.evar1`
 1. 下にスクロールして、 `[!UICONTROL pl]` 変数を使用します。 これは、Analytics 製品文字列変数の動的構文です。
-1. データレイヤーの製品名は、 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` そして `[!UICONTROL product]` 実稼動文字列のパラメーター。  さらに、データレイヤーの製品タイトルが実稼動文字列のマーチャンダイジング evar1 にマッピングされます。
+1. データレイヤーの製品名は、 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` そして `[!UICONTROL product]` 製品文字列のパラメーター。  さらに、データレイヤーの製品タイトルが製品文字列のマーチャンダイジング evar1 にマッピングされます。
 
    ![Analytics 製品文字列](assets/analytics-debugger-prodstring.png)
 
@@ -840,9 +834,9 @@ Adobe Experience Platform Assurance は、Adobe Experience Cloudがデータを�
 
 アシュランスにアクセスするには、いくつかの方法があります。
 
-1. Adobe Experience Platformを通じたアシュランスへのアクセス
-1. Adobe Experience Platform Data Collection を使用したアクセス保証
-1. Adobe Experience Platform Debugger内のログを通じてアシュランスにアクセス
+1. Adobe Experience Platformインターフェイスを使用
+1. Adobe Experience Platform Data Collection インターフェイスを使用する
+1. Adobe Experience Platform Debugger内のログ（推奨）
 
 Adobe Experience Platformからアシュランスにアクセスするには、下にスクロールしてを選択します。 **[!UICONTROL アシュランス]** の下の左側のレールナビゲーションで、 **[!UICONTROL データ収集]**.  を選択します。 **[!UICONTROL &quot;Web SDK チュートリアル 3&quot;]** セッションを使用して、前の節で生成したイベントにアクセスする必要があります。
 ![Adobe Experience Platformを通じたアシュランス](assets/assurance-open-aep.png)
@@ -850,7 +844,7 @@ Adobe Experience Platformからアシュランスにアクセスするには、�
 Adobe Experience Platformのデータ収集を通じてアシュランスにアクセスするには、 **[!UICONTROL アシュランス]** の下の左側のレールナビゲーションで、 **[!UICONTROL データ収集]**.  を選択します。 **[!UICONTROL &quot;Web SDK チュートリアル 3&quot;]** セッションを使用して、前の節で生成したイベントにアクセスする必要があります。\
 ![Adobe Experience Platform Data Collection を通じたアシュランス](assets/assurance-open-data-collection.png)
 
-Adobe Experience Platform Debuggerからアシュランスにアクセスするには、Experience Platformデバッガーに移動し、左側のナビゲーションでを選択します。 **[!UICONTROL ログ]**&#x200B;を選択し、 **[!UICONTROL Edge]** 「 」タブで「 」を選択します。 **[!UICONTROL 接続]**.  Edge ネットワークへの接続が確立されたら、外部リンクアイコンを選択します。\
+Adobe Experience Platform Debuggerからアシュランスにアクセスするには、Experience Platformデバッガーに移動し、左側のナビゲーションでを選択します。 **[!UICONTROL ログ]**&#x200B;を選択し、 **[!UICONTROL Edge]** 「 」タブで「 」を選択します。 **[!UICONTROL 接続]**.  Edge ネットワークへの接続が確立されたら、外部リンクアイコンを選択します。 現在デバッガーから Web セッションを開始する必要があるので、デバッガーからアシュランスにアクセスすることをお勧めします。
 ![Adobe Experience Platform Data Collection を通じたアシュランス](assets/assurance-open-aep-debugger.png)
 
 内 **[!UICONTROL &quot;Web SDK チュートリアル 3&quot;]** アシュランスセッションの開始 **[!UICONTROL &quot;hitdebugger&quot;]** をイベント検索バーに追加して、結果を Analytics の後処理されたAdobeにフィルタリングします。
