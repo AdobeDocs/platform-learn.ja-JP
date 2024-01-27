@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 20%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 20%
    + [スキーマを更新](/help/platform/schemas/update-schemas.md)
    + [アドホックスキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + ソース {#sources}
-   + [ソースの概要](/help/platform/sources/overview.md)
+   + [概要](/help/platform/sources/overview.md)
    + [Adobe Analyticsからのデータの取り込み](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [データをAudience Managerから取り込む](/help/platform/sources/ingest-data-from-aam.md)
    + [Marketoからのデータの取り込み](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 20%
    + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
    + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [トラブルシューティング：SFTP コネクタ](/help/platform/sources/troubleshoot-sftp-connector.md)
++ ユースケースプレイブック {#use-case-playbooks}
+   + [概要](/help/platform/use-case-playbooks/overview.md)
+   + [プレイブックサンドボックスの設定](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [プレイブックインスタンスの作成と公開](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloudの統合 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
