@@ -5,16 +5,16 @@ feature: Tags
 level: Beginner
 jira: KT-3529
 exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 4%
+source-wordcount: '75'
+ht-degree: 5%
 
 ---
 
 # データ要素の作成
 
-データレイヤーから取り込んだ値を保存し、タグプロパティのルールや拡張機能で使用できるようにするデータ要素の作成方法を説明します。
+データレイヤーから取り込んだ値を保存し、タグプロパティのルールや拡張機能で使用できるようにするデータ要素の作成方法を説明します。 詳しくは、 [データ要素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja) ドキュメント。
 
 >[!NOTE]
 >

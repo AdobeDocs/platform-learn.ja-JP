@@ -5,16 +5,16 @@ feature: Tags
 level: Beginner
 jira: KT-3531
 exl-id: 877b92e1-9b93-4abe-99e4-f80a3e353681
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 1%
 
 ---
 
 # タグライブラリの構築と公開
 
-タグプロパティでライブラリを作成し、開発環境、ステージング環境、実稼動環境を通じて変更をプッシュする方法について説明します。 複数の開発環境を使用して、複数のチームが並行したワークストリームでプロパティを更新する方法を説明します。
+タグプロパティでライブラリを作成し、開発環境、ステージング環境、実稼動環境を通じて変更をプッシュする方法について説明します。 複数の開発環境を使用して、複数のチームが並行したワークストリームでプロパティを更新する方法を説明します。 詳しくは、 [公開](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja) ドキュメント。
 
 >[!NOTE]
 >

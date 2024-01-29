@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 34%
+source-wordcount: '188'
+ht-degree: 33%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 34%
 + タグ{#tags}
    + [概要とプロパティの作成](tags/create-a-property.md)
    + [ホスティングオプションを選択](tags/choose-a-hosting-option.md)
-   + [環境の使用](tags/use-environments.md)
+   + [環境と埋め込みコードの使用](tags/use-environments-and-embed-codes.md)
    + [拡張機能の追加と設定](tags/add-and-configure-extensions.md)
    + [データ要素の作成](tags/create-data-elements.md)
    + [ルールの作成](tags/build-rules.md)

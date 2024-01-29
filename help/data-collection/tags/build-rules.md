@@ -5,16 +5,16 @@ feature: Tags
 level: Beginner
 jira: KT-3530
 exl-id: 789ce4d8-4c20-4690-9907-57e924a0c586
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 0%
+source-wordcount: '72'
+ht-degree: 1%
 
 ---
 
 # タグルールの作成
 
-タグ内のコマンドを実行できるようにルールを作成する方法を説明します。 イベントと条件によって決まります *when* 行動が決まる間に物事を行う *what* 実行する必要があります。
+タグ内のコマンドを実行できるようにルールを作成する方法を説明します。 イベントと条件によって決まります *when* 行動が決まる間に物事を行う *what* 実行する必要があります。 詳しくは、 [ルール](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=ja) ドキュメント。
 
 >[!NOTE]
 >
