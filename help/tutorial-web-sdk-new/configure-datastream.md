@@ -2,9 +2,9 @@
 title: データストリームの設定
 description: データストリームを有効にし、設定ソリューションをExperience Cloudする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 5%
 データストリームを有効にし、アプリケーションアプリケーションをExperience Cloudする方法を説明します。
 
 データストリームは、Adobe Experience Platform Edge Network に対し、Platform Web SDK が収集したデータの送信先を伝えます。 データストリーム設定で、Experience Cloudアプリケーション、Experience Platformアカウント、イベント転送を有効にします。 詳しくは、 [データストリームの設定の基本](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja) を参照してください。
+
+
+![Web SDK、データストリームおよび Edge ネットワークの図](assets/dc-websdk-datastreams.png)
 
 ## 学習内容
 

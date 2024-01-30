@@ -2,9 +2,9 @@
 title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '4282'
+source-wordcount: '4288'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ Platform Web SDK を使用したAdobe Targetの実装方法について説明し
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja) は、顧客のエクスペリエンスをカスタマイズおよびパーソナライズするために必要なすべてを提供するAdobe Experience Cloudアプリケーションです。web、モバイルサイト、アプリ、その他のデジタルチャネルでの売上高を最大化できます。
 
+![Web SDK とAdobe Targetの図](assets/dc-websdk-at.png)
 
 ## 学習内容
 

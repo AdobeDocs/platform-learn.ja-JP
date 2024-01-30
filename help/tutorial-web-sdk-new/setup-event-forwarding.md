@@ -2,9 +2,9 @@
 title: イベント転送プロパティの設定
 description: イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 4%
 イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。
 
 イベント転送は、新しいタイプのプロパティで、データ収集で使用できます。 イベント転送を使用すると、従来のクライアント側ブラウザーではなく、サードパーティの非Adobeベンダーに対して、Adobe Experience Platform Edge Network から直接データを送信できます。 イベント転送の利点について詳しくは、 [イベント転送の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK とイベントの転送図](assets/dc-websdk-eventforwarding.png)
 
 Adobe Experience Platformでイベント転送を使用するには、次の 3 つのオプションの 1 つ以上を使用して、まずAdobe Experience Platform Edge Network にデータを送信する必要があります。
 
@@ -50,7 +53,6 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 
    * 初期設定
 
-      * [権限の設定](configure-permissions.md)
       * [XDM スキーマの設定](configure-schemas.md)
       * [ID 名前空間の設定](configure-identities.md)
       * [データストリームの設定](configure-datastream.md)
