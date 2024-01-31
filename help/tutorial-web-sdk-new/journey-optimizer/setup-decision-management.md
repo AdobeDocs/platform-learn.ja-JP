@@ -4,9 +4,9 @@ description: Platform Web SDK を使用して決定管理を実装する方法�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2470'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 3%
 Platform Web SDK を使用して決定管理を実装する方法について説明します。 このガイドでは、基本的な決定管理の前提条件、設定の詳細な手順、ロイヤルティステータスを中心とした使用例の詳細について説明します。
 
 このチュートリアルに従うことで、Journey Optimizerのユーザーは、offer decisioning機能を効果的に適用し、顧客インタラクションのパーソナライゼーションと関連性を強化する機能を備えています。
+
+
+![Web SDK とAdobe Analyticsの図](../assets/dc-websdk-ajo.png)
 
 ## 学習内容
 

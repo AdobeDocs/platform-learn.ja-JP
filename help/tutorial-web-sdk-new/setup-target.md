@@ -2,9 +2,9 @@
 title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -394,22 +394,9 @@ XDM オブジェクトからマッピングされていない Target に役立�
 * [Recommendations予約パラメーター](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * カテゴリの値 [カテゴリの親和性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Target パラメーターのデータ要素の作成
+### 特別な Target パラメーター用のデータ要素の作成
 
-まず、プロファイル属性、エンティティ属性、カテゴリ値に対して追加のデータ要素を設定し、 `data` XDM 以外のデータを渡すために使用されるオブジェクト：
-
-* **`target.entity.id`** マッピング先： `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** マッピング先： `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** 次のカスタムコードを使用して、トップレベルカテゴリのサイト URL を解析します。
-
-  ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
-  ```
+まず、 [データ要素の作成](create-data-elements.md) 組み立ての教訓 `data` XDM 以外のデータを渡すために使用されるオブジェクト：
 
 * **`data.content`** 次のカスタムコードを使用する。
 
@@ -417,10 +404,10 @@ XDM オブジェクトからマッピングされていない Target に役立�
   var data = {
      __adobe: {
         target: {
-           "entity.id": _satellite.getVar("target.entity.id"),
-           "entity.name": _satellite.getVar("target.entity.name"),
+           "entity.id": _satellite.getVar("product.productInfo.sku"),
+           "entity.name": _satellite.getVar("product.productInfo.title"),
            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("target.user.categoryId")
+           "user.categoryId": _satellite.getVar("product.category")
         }
      }
   }

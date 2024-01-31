@@ -2,10 +2,10 @@
 title: ID の作成
 description: XDM で ID を作成し、ID マップデータ要素を使用してユーザー ID を取得する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 2%
+source-wordcount: '858'
+ht-degree: 1%
 
 ---
 
@@ -13,14 +13,7 @@ ht-degree: 2%
 
 Experience PlatformWeb SDK を使用して ID を取得する方法について説明します。 未認証 ID データと認証 ID データの両方を [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). ID マップと呼ばれる Platform Web SDK データ要素タイプで、認証済みデータを収集するために前の手順で作成したデータ要素を使用する方法について説明します。
 
-Platform Web SDK タグ拡張機能で導入される 4 つの新しいデータ要素タイプがあります。
-
-1. イベント結合 ID
-1. ID マップ
-1. Variable
-1. XDM オブジェクト
-
-このレッスンでは、 ID マップのデータ要素に焦点を当てます。 認証済みユーザー ID と認証ステータスを含むデータ要素を XDM にマッピングします。
+このレッスンでは、 Adobe Experience Platform Web SDK タグ拡張機能で使用できる ID マップデータ要素に焦点を当てます。 認証済みユーザー ID と認証ステータスを含むデータ要素を XDM にマッピングします。
 
 ## 学習内容
 
@@ -32,7 +25,7 @@ Platform Web SDK タグ拡張機能で導入される 4 つの新しいデータ
 
 ## 前提条件
 
-データレイヤーとは何かを把握し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーを参照し、タグ内のデータ要素を参照する方法を理解している必要があります。 このチュートリアルの前の手順を完了している。
+データレイヤーとは何かを把握し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーを参照し、タグ内のデータ要素を参照する方法を理解している必要があります。 このチュートリアルの前のレッスンで、以下の内容を習得している必要があります。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
@@ -40,14 +33,10 @@ Platform Web SDK タグ拡張機能で導入される 4 つの新しいデータ
 * [タグプロパティにインストールされる Web SDK 拡張機能](install-web-sdk.md)
 * [データ要素の作成](create-data-elements.md)
 
->[!IMPORTANT]
->
->The [Experience CloudID サービス拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) は、Adobe Experience Platform Web SDK を実装する際には必要ありません。ID サービス機能は、Platform Web SDK に組み込まれているからです。
 
 ## Experience Cloud ID
 
-The [Experience CloudID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) は、Adobe Experience PlatformおよびAdobe Experience Cloudアプリケーションで使用される共有 id 名前空間です。 ECID は、顧客 ID の基盤を提供し、デジタルプロパティのデフォルト ID です。 これにより、ECID が、常に存在するので、認証されていないユーザー行動の追跡に最適な識別子になります。
-
+The [Experience CloudID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) は、Adobe Experience PlatformおよびAdobe Experience Cloudアプリケーションで使用される共有 id 名前空間です。 ECID は、顧客 ID の基盤を提供し、デジタルプロパティのデフォルト ID です。 これにより、ECID が常に存在するので、認証されていないユーザー行動の追跡に最適な識別子になります。
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -59,6 +48,10 @@ The [Experience CloudID (ECID)](https://experienceleague.adobe.com/docs/experien
 詳しくは、 [ECID は Platform Web SDK を使用して追跡されます](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 ECID は、ファーストパーティ Cookie と Platform Edge ネットワークの組み合わせを使用して設定されます。 デフォルトでは、ファーストパーティ Cookie は Web SDK によって設定されます。 cookie の有効期間に関するブラウザーの制限を考慮するには、代わりに、独自のファーストパーティ cookie の設定と管理を選択できます。 これらはファーストパーティデバイス ID(FPID) と呼ばれます。
+
+>[!IMPORTANT]
+>
+>The [Experience CloudID サービス拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) は、Adobe Experience Platform Web SDK を実装する際には必要ありません。ID サービス機能は、Platform Web SDK に組み込まれているからです。
 
 ## ファーストパーティデバイス ID(FPID)
 

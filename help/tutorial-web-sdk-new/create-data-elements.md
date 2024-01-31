@@ -2,43 +2,22 @@
 title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
 
 # データ要素の作成
 
-Experience PlatformWeb SDK を使用して、データを取得するために必要な基本的なデータ要素を作成する方法について説明します。 でのコンテンツと ID データの両方をキャプチャします。 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 先ほど作成した XDM スキーマを、変数と呼ばれる Platform Web SDK データ要素タイプを使用してデータを収集するために使用する方法について説明します。
+コンテンツ、コマースおよび ID データのタグにデータ要素を作成する方法については、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 次に、変数データ要素タイプを使用して、XDM スキーマのフィールドに値を入力します。
 
->[!NOTE]
->
-> デモの目的で、このレッスンの演習は、 [スキーマの設定](configure-schemas.md) 手順：表示されたコンテンツと、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
 >このレッスンのデータは、 `[!UICONTROL digitalData]` Luma サイトのデータレイヤー。 データレイヤーを表示するには、デベロッパーコンソールを開き、「 」と入力します。 `[!UICONTROL digitalData]` をクリックして、使用可能なデータレイヤー全体を確認します。![digitalData データレイヤー](assets/data-element-data-layer.png)
 
-
-Platform Web SDK に関係なく、Web サイトのデータ収集変数 ( データレイヤー、HTML属性など ) にマッピングするデータ要素を、tags プロパティ内で引き続き作成する必要があります。 これらのデータ要素を作成したら、それらを、 [スキーマの設定](configure-schemas.md) レッスン。 したがって、データ要素の作成は、次の 2 つのアクションで構成されます。
-
-1. Web サイト変数のデータ要素へのマッピングおよび
-1. これらのデータ要素の XDM オブジェクトへのマッピング
-
-手順 1 では、コアタグ拡張機能のデータ要素タイプのいずれかを使用して、現在の方法でデータレイヤーをデータ要素に引き続きマッピングします。 手順 2 では、Platform Web SDK 拡張機能では、次のデータ要素タイプを使用できます。
-
-* イベント結合 ID
-* ID マップ
-* Variable
-* XDM オブジェクト
-
-このレッスンでは、変数データ要素タイプに焦点を当てます。 Luma サイト上の使用可能なデータレイヤーに基づいて、Luma の訪問者のアクティビティをキャプチャするためのデータ要素を作成します。 次のレッスンでは、ID マップについて学びます。
-
->[!NOTE]
->
-> イベント結合 ID と XDM オブジェクトデータ要素タイプは、エッジケースではほとんど使用されません。
 
 ## 学習内容
 
@@ -51,16 +30,12 @@ Platform Web SDK に関係なく、Web サイトのデータ収集変数 ( デ�
 
 ## 前提条件
 
-データレイヤーとは何かを把握し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーを参照し、タグ内のデータ要素を参照する方法を理解している必要があります。 このチュートリアルの前の手順を完了している。
+データレイヤーの概要を理解し、このチュートリアルの次の前のレッスンを完了している。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
 * [データストリームの設定](configure-datastream.md)
 * [タグプロパティにインストールされる Web SDK 拡張機能](install-web-sdk.md)
-
->[!IMPORTANT]
->
->The [Experience CloudID サービス拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) は、Adobe Experience Platform Web SDK を実装する際には必要ありません。ID サービス機能は、Platform Web SDK に組み込まれているからです。
 
 ## データレイヤーのアプローチ
 
@@ -192,7 +167,7 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 
    ![ページ名データ要素](assets/data-element-pageName.jpg)
 
-同じ手順に従って、次の 4 つの追加データ要素を作成します。
+同じ手順に従って、これらの追加のデータ要素を作成します。
 
 * **`page.pageInfo.server`**  マッピング先：
   `digitalData.page.pageInfo.server`
@@ -206,7 +181,70 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 * **`user.profile.attributes.loggedIn`** マッピング先：
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** マッピング先： `digitalData.cart.orderId` ( この [Analytics を設定](setup-analytics.md) レッスン )
+* **`product.productInfo.sku`** マッピング先： `digitalData.product.0.productInfo.sku`
+<!--digitalData.product.0.productInfo.sku
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.sku;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.productInfo.title`** マッピング先： `digitalData.product.0.productInfo.title`
+* **`cart.orderId`** マッピング先： `digitalData.cart.orderId`
+<!--
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.title;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.category`** の使用 **[!UICONTROL カスタムコード]** **[!UICONTROL データ要素のタイプ]** および次のカスタムコードを使用して、トップレベルカテゴリのサイト URL を解析します。
+
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
+
+* **`cart.productInfo`** 次のカスタムコードを使用する。
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  cartItem.push({
+  "SKU": item.sku
+  });
+  });
+  return cartItem; 
+  ```
+
+* **`cart.productInfo.purchase`** 次のカスタムコードを使用する。
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "quantity": qty,
+  "priceTotal": price
+  });
+  });
+  return cartItem; 
+  ```
+
 
 
 >[!CAUTION]
@@ -229,59 +267,21 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 
    ![変数データ要素](assets/analytics-tags-data-element-xdm-variable.png)
 
-<!-- There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
-
-Create an XDM object to capture content data:
-
-1. In the left navigation, select **[!UICONTROL Data Elements]**
-1. Select **[!UICONTROL Add Data Element]**
-1. **[!UICONTROL Name]** the data element **`xdm.content`**
-1. As the **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
-1. As the **[!UICONTROL Data Element Type]** select `XDM object`
-1. Select the Platform **[!UICONTROL Sandbox]** in which you created the XDM schema in during the [Configure an XDM Schema](configure-schemas.md) lesson, in this example `DEVELOPMENT Mobile and Web SDK Courses`
-1. As the **[!UICONTROL Schema]**, select your `Luma Web Event Data` schema:
-
-    ![XDM object](assets/data-element-xdm.content-fields.png)
-
-    >[!NOTE]
-    >
-    >The sandbox corresponds to the Experience Platform sandbox in which you created the schema. There can be multiple sandboxes available in your Experience Platform instance, so make sure to select the right one. Always work in development first, then production.
-
-1. Scroll down until you reach the **`web`** object
-1. Select to open it
-
-    ![Web Object](assets/data-element-pageviews-xdm-object.png)
-
-
-1. Map the following web XDM variables to data elements
-
-    * **`web.webPageDetials.name`** to `%page.pageInfo.pageName%`
-    * **`web.webPageDetials.server`** to `%page.pageInfo.server%`
-    * **`web.webPageDetials.siteSection`** to `%page.pageInfo.hierarchie1%`
-
-    ![XDM object](assets/data-element-xdm.content.png)
-
-1. Next, find the `identityMap` object in the schema and select it
- 
-1. Map to the `identityMap.loginID` data element
-
-1. Select **[!UICONTROL Save]**
-
-   ![Data Collection interface](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
-
--->
 
 これらの手順の最後に、次のデータ要素を作成する必要があります。
 
 | CORE 拡張機能のデータ要素 | Platform Web SDK のデータ要素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
+| `cart.productInfo` | |
+| `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
-
 
 >[!TIP]
 >

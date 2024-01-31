@@ -4,9 +4,9 @@ description: Platform Web SDK を使用して Web チャネルを実装する方
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Platform Web SDK を使用して Web チャネルを実装する方法について説明します。 このガイドでは、基本的な Web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づく使用例の詳細について説明します。
 
 このガイドに従うことで、Journey Optimizerのユーザーは、Journey Optimizer Web Designer を使用して、高度なオンラインパーソナライゼーション用の Web チャネルを効果的に適用する装備が整います。
+
+![Web SDK とAdobe Analyticsの図](../assets/dc-websdk-ajo.png)
 
 ## 学習内容
 

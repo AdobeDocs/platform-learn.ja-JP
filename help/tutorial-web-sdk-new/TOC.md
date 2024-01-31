@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 32%
+source-wordcount: '97'
+ht-degree: 29%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 32%
 
 + [チュートリアルの概要](overview.md)
 + 初期設定 {#initial-configuration}
-   + [権限の設定](configure-permissions.md)
    + [XDM スキーマの設定](configure-schemas.md)
    + [ID 名前空間の設定](configure-identities.md)
    + [データストリームの設定](configure-datastream.md)
@@ -32,6 +31,7 @@ ht-degree: 32%
    + [ID の作成](create-identities.md)
    + [タグルールの作成](create-tag-rule.md)
    + [Debugger を使用した検証](validate-with-debugger.md)
+   + [アシュランスで検証](validate-with-assurance.md)
 
 + アプリケーション設定 {#applications-setup}
    + [設定Experience Platform](setup-experience-platform.md)
