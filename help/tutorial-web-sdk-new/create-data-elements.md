@@ -2,7 +2,7 @@
 title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 2%
@@ -154,7 +154,7 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 
 1. に移動します。 **[!UICONTROL データ要素]** を選択し、 **[!UICONTROL データ要素を追加]** ( または **[!UICONTROL 新しいデータ要素を作成]** （タグプロパティに既存のデータ要素がない場合）
 
-   ![データ要素を作成](assets/data-element-create.jpg)
+   ![データ要素を作成](assets/data-element-create.png)
 
 1. データ要素に「`page.pageInfo.pageName`」と名前を付けます。
 1. 以下を使用します。 **[!UICONTROL JavaScript 変数]** **[!UICONTROL データ要素のタイプ]** を指定して、Luma のデータレイヤーの値を指定します。 `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![ページ名データ要素](assets/data-element-pageName.jpg)
+   ![ページ名データ要素](assets/data-element-pageName.png)
 
 同じ手順に従って、これらの追加のデータ要素を作成します。
 

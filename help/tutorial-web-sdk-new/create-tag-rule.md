@@ -2,7 +2,7 @@
 title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 1%
@@ -80,7 +80,7 @@ ht-degree: 1%
 
    ![ルールの作成](assets/rules-create.png)
 
-1. ルール名を設定します。`all pages global content variables - page bottom - AA (order 1)`
+1. ルール名を設定します。`all pages global content variables - library loaded - AA (order 1)`
 
 1. Adobe Analytics の **[!UICONTROL イベント]** セクション、選択 **[!UICONTROL 追加]**
 
@@ -173,12 +173,12 @@ ht-degree: 1%
 まず、Luma の製品の詳細ページで製品表示を追跡します。
 
 1. 選択 **[!UICONTROL ルールを追加]**
-1. 名前を付ける  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 名前を付ける  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
 1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
 1. 名前を付ける `Core - Page Bottom - order 20`
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages global content variables - page bottom - AA (order 1)` グローバルコンテンツ変数を設定しますが、 `all pages send event - page bottom - AA (order 50)` XDM イベントを送信する
+1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages global content variables - library loaded - AA (order 1)` グローバルコンテンツ変数を設定しますが、 `all pages send event - library loaded - AA (order 50)` XDM イベントを送信する
 
    ![Analytics XDM ルール](assets/set-up-analytics-pdp.png)
 
@@ -247,7 +247,7 @@ ht-degree: 1%
 次に、配列を XDM オブジェクトにマッピングしましょう」
 
 
-1. という名前の新しいルールを作成します。 `ecommerce - cart page bottom - AA (order 20)`
+1. という名前の新しいルールを作成します。 `ecommerce - cart library loaded - AA (order 20)`
 1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
 1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
@@ -295,7 +295,7 @@ ht-degree: 1%
 
 以下の違いを持つ同じパターンに従って、他の 2 つのチェックアウトと購入のルールを作成します。
 
-**ルール名**: `ecommerce - checkout page bottom - AA (order 20)`
+**ルール名**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout.html
 * `eventType` を `commerce.checkouts` に設定します。
@@ -305,7 +305,7 @@ ht-degree: 1%
   >
   >これは、 `scCheckout` Analytics のイベント
 
-**ルール名**: `ecommerce - purchase page bottom - AA (order 20)`
+**ルール名**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * `eventType` を `commerce.purchases` に設定します。
@@ -345,7 +345,7 @@ ht-degree: 1%
 
 1. 右側で、「 」を選択して、 **[!UICONTROL ルールを追加]** 別の規則を作成するには
 
-1. ルール名を設定します。`all pages send event - page bottom - AA (order 50)`
+1. ルール名を設定します。`all pages send event - library loaded - AA (order 50)`
 
 1. Adobe Analytics の **[!UICONTROL イベント]** セクション、選択 **[!UICONTROL 追加]**
 
@@ -390,7 +390,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >    Adobe Experience Platform Web SDK 拡張機能および `all pages global content variables - page bottom - AA (order 50)` ルールには、前のレッスンで作成したタグコンポーネントが表示されます。 Core 拡張機能には、すべての Web タグプロパティで必要となる基本 JavaScript が含まれています。
+   >    Adobe Experience Platform Web SDK 拡張機能および `all pages global content variables - library loaded - AA (order 50)` ルールには、前のレッスンで作成したタグコンポーネントが表示されます。 Core 拡張機能には、すべての Web タグプロパティで必要となる基本 JavaScript が含まれています。
 
 1. 選択 **[!UICONTROL 開発用に保存およびビルド]**
 

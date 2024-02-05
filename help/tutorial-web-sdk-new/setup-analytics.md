@@ -2,7 +2,7 @@
 title: Experience PlatformWeb SDK を使用したAdobe Analyticsのセットアップ
 description: Experience PlatformWeb SDK を使用したAdobe Analyticsの設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Analytics
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4681'
 ht-degree: 1%
@@ -304,13 +304,13 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 
 ## 追加のルールの作成
 
-Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスンでは、 `all pages global content variables - page bottom - AA (order 1)` ～を支配する [を使用してベースライン XDM オブジェクトを作成しました。 **[!UICONTROL 変数を更新]** **[!UICONTROL アクションタイプ]**](create-tag-rule.md#create-tag-rule). 次の演習では、XDM オブジェクトを強化して、特定のページに固有の追加データを取り込みます。
+Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスンでは、 `all pages global content variables - library loaded - AA (order 1)` ～を支配する [を使用してベースライン XDM オブジェクトを作成しました。 **[!UICONTROL 変数を更新]** **[!UICONTROL アクションタイプ]**](create-tag-rule.md#create-tag-rule). 次の演習では、XDM オブジェクトを強化して、特定のページに固有の追加データを取り込みます。
 
 ### ページビュー数を増分
 
 現在はAdobe Analyticsにデータを送信しているので、ページビューを示すために追加の XDM フィールドをマッピングすることをお勧めします。 技術的には、Analytics がビーコンをページビューとして処理するために必要ではありませんが、他のダウンストリームアプリケーションのページビューを示す標準的な方法が役立ちます。
 
-1. を開きます。 `all pages global content variables - page bottom - AA (order 1)` ルール
+1. を開きます。 `all pages global content variables - library loaded - AA (order 1)` ルール
 1. を開きます。 **[!UICONTROL 変数を更新]** アクション
 1. 下にスクロールし、を選択して開くまで待ちます。 `web.webPageDetails`
 1. を選択して、 **[!UICONTROL pageViews]** object
@@ -324,17 +324,17 @@ Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスン�
 
 追加のページビュー呼び出しを別のレポートスイートに送信するルールを作成します。 データストリームの上書き機能を使用して、 **[!UICONTROL イベントの送信]** アクション。
 
-1. 新しいルールを作成し、名前を付けます。 `homepage report suite override - page bottom - AA (order 51)`
+1. 新しいルールを作成し、名前を付けます。 `homepage report suite override - library loaded - AA (order 51)`
 
 1. の下のプラス記号を選択します。 **[!UICONTROL イベント]** 新しいトリガー
 
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
 
-1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
+1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL ライブラリ読み込み済み]**
 
-1. 名前を付ける `Core - Page Bottom - order 51`
+1. 名前を付ける `Core - library loaded - order 51`
 
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `51`. これにより、ルールが `all pages global content variables - page bottom - AA (order 50)` ベースライン XDM を **[!UICONTROL 変数を更新]** アクションタイプ。
+1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `51`. これにより、ルールが `all pages global content variables - library loaded - AA (order 50)` ベースライン XDM を **[!UICONTROL 変数を更新]** アクションタイプ。
 
    ![Analytics レポートスイートの上書き](assets/set-up-analytics-rs-override.png)
 
@@ -392,7 +392,7 @@ Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスン�
 
 ### 変数の更新を使用した XDM オブジェクトのエンリッチメント
 
-の使用 **[!UICONTROL 変数を更新]** アクションタイプ：「グローバルコンテンツ XDM」をエンリッチメントしてからに送信する前に、追加のルールを作成できます。 [!UICONTROL Platform Edge Network]. これを実現するには、 `all pages send event - page bottom - AA (order 50)` イベントを送信する [!UICONTROL Platform Edge Network].
+の使用 **[!UICONTROL 変数を更新]** アクションタイプ：「グローバルコンテンツ XDM」をエンリッチメントしてからに送信する前に、追加のルールを作成できます。 [!UICONTROL Platform Edge Network]. これを実現するには、 `all pages send event - library loaded - AA (order 50)` イベントを送信する [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
@@ -413,12 +413,12 @@ Adobe Analytics の [タグルールの作成](create-tag-rule.md) レッスン�
 まず、Luma の製品の詳細ページで製品表示を追跡します。
 
 1. 左側のナビゲーションから、「 」を選択します。 **[!UICONTROL ルール]** 次に、「 **[!UICONTROL ルールを追加]**
-1. 名前を付ける  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 名前を付ける  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
-1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
-1. 名前を付ける `Core - Page Bottom - order 20`
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages global content variables - page bottom - AA (order 1)` グローバルコンテンツ変数を設定しますが、 `all pages send event - page bottom - AA (order 50)` XDM イベントを送信する
+1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL ライブラリ読み込み済み]**
+1. 名前を付ける `Core - library loaded - order 20`
+1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages global content variables - library loaded - AA (order 1)` グローバルコンテンツ変数を設定しますが、 `all pages send event - library loaded - AA (order 50)` XDM イベントを送信する
 
    ![Analytics XDM ルール](assets/set-up-analytics-pdp.png)
 
@@ -517,13 +517,13 @@ Luma のデータレイヤー構造により、個々の変数にマッピング
 >数値変数の変換方法に注意してください。データレイヤーには次のような文字列値があります。 `price` および `qty` データ要素の数値の形式に戻しました。 これらの形式の要件は、Platform のデータの整合性に重要で、 [スキーマの設定](configure-schemas.md) 手順 この例では、 **[!UICONTROL 量]** は **[!UICONTROL 整数]** データタイプ。
 > ![XDM スキーマのデータタイプ](assets/set-up-analytics-quantity-integer.png)
 
-次に、XDM オブジェクトを配列全体にマッピングします。 同じ手順を繰り返して、 `ecommerce - pdp page bottom - AA (order 20)` ルール：
+次に、XDM オブジェクトを配列全体にマッピングします。 同じ手順を繰り返して、 `ecommerce - pdp library loaded - AA (order 20)` ルール：
 
-1. 名前を付ける  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. 名前を付ける  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
 1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
-1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
-1. 名前を付ける `Core - Page Bottom - order 20`
+1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL ライブラリ読み込み済み]**
+1. 名前を付ける `Core - library loaded - order 20`
 1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`
 1. 選択 **[!UICONTROL 変更を保持]**
 
@@ -574,7 +574,7 @@ Luma のデータレイヤー構造により、個々の変数にマッピング
 
 以下の違いを持つ同じパターンに従って、他の 2 つのチェックアウトと購入のルールを作成します。
 
-**ルール名**: `ecommerce - checkout page bottom - AA (order 20)`
+**ルール名**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout.html
 * `eventType` を `commerce.checkouts` に設定します。
@@ -584,7 +584,7 @@ Luma のデータレイヤー構造により、個々の変数にマッピング
   >
   >これは、 `scCheckout` Analytics のイベント
 
-**ルール名**: `ecommerce - purchase page bottom - AA (order 20)`
+**ルール名**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * `eventType` を `commerce.purchases` に設定します。
@@ -745,7 +745,7 @@ Experience Platformデバッガーの Edge Trace 機能を使用して、Adobe A
 
    >[!TIP]
    >
-   > The `ecommerce - pdp page bottom - AA (order 20)` ルールは `eventType` 設定元 `all pages global content variables - page bottom - AA (order 1)` ルールを設定します ( シーケンスの後半でトリガーに設定されます )。
+   > The `ecommerce - pdp library loaded - AA (order 20)` ルールは `eventType` 設定元 `all pages global content variables - library loaded - AA (order 1)` ルールを設定します ( シーケンスの後半でトリガーに設定されます )。
 
 
    ![Analytics 製品表示](assets/analytics-debugger-prodView.png)

@@ -2,7 +2,7 @@
 title: イベント転送プロパティの設定
 description: イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 4%
@@ -88,9 +88,9 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 
 1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
-1. 以前に作成したを選択 `Luma Web SDK` datastream
+1. 以前に作成したを選択 `Luma Web SDK: Development Environment` datastream
 
-   ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk.png)
+   ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk-development.png)
 
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームにサービスを追加する](assets/event-forwarding-datastream-addService.png)

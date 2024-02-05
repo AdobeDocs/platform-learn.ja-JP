@@ -2,7 +2,7 @@
 title: Platform Web SDK でのAudience Managerの設定
 description: Platform Web SDK を使用してAdobe Audience Managerを設定し、Cookie の宛先を使用して実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Audience Manager
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 2%
@@ -38,9 +38,9 @@ Platform Web SDK を使用したAudience Manager実装は、 [サーバー側転
 
 1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
-1. 以前に作成したを選択 `Luma Web SDK` datastream
+1. 以前に作成したを選択 `Luma Web SDK: Development Environment` datastream
 
-   ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk.png)
+   ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk-development.png)
 
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームにサービスを追加する](assets/aam-datastream-addService.png)
