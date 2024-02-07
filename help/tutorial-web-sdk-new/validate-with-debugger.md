@@ -2,9 +2,9 @@
 title: Debugger を使用した Web SDK の実装のExperience Platform
 description: Adobe Experience Platform Debuggerを使用して Platform Web SDK の実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Debugger
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 
 ## 前提条件
 
-データ収集タグと [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} とは、このチュートリアルの以前のレッスンを完了していること。
+データ収集タグと [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} チュートリアルの前のレッスンを完了していること。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
@@ -49,14 +49,10 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 
 ## Debugger を使用した代替タグライブラリの読み込み
 
-このチュートリアルでは、公開ホストバージョンの [Luma デモ Web サイト](https://luma.enablementadobe.com/content/luma/us/en.html). ホームページを開き、ブックマークします。
-
-![Luma のホームページ](assets/validate-luma-site.png)
-
 Experience Platformデバッガーには、既存のタグライブラリを別のタグライブラリに置き換えることができるクールな機能があります。 この手法は検証に役立ち、このチュートリアルで多くの実装手順をスキップできます。
 
-1. Luma サイトが開いていることを確認し、「デバッガー拡張機能」Experience Platformを選択します。
-1. デバッガーが開き、ハードコードされた実装の詳細が表示されます。これは、このチュートリアルとは無関係です（デバッガーを開いた後に Luma サイトをリロードする必要が生じる場合があります）。
+1. 次の項目を確認します。 [Luma デモ Web サイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} を開き、「 Debugger 拡張機能」Experience Platformを選択します。
+1. デバッガーが開き、ハードコードされた実装の詳細が表示されます（デバッガーを開いた後に Luma サイトを再読み込みする必要が生じる場合があります）。
 1. デバッガーが「**[!UICONTROL Luma に接続済み]**」をクリックし、「**[!UICONTROL ロック]**「 」アイコンを使用して、デバッガーを Luma サイトにロックします。
 1. を選択します。 **[!UICONTROL ログイン]** ボタンをクリックし、AdobeID を使用してAdobe Experience Cloudにログインします。
 1. 次に移動： **[!UICONTROL Experience Platformタグ]** 左のナビゲーションで
@@ -78,7 +74,7 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 
    ![タグプロパティが置き換えられました](assets/validate-switch-success.png)
 
-チュートリアルを続ける際は、この方法を使用して、Luma サイトを独自のタグプロパティにマッピングし、Platform Web SDK 実装を検証します。 実稼動用 Web サイトでタグの使用を開始する場合、同じ方法を使用して変更を検証できます。
+チュートリアルを続ける際は、この方法を使用して、Luma サイトを独自のタグプロパティにマッピングし、Platform Web SDK 実装を検証します。 実稼動用 Web サイトでタグの使用を開始する場合、この同じ方法を使用して、タグの開発環境で変更を行う場合と同じ方法で変更を検証できます。
 
 ## Debugger を使用したクライアント側ネットワークリクエストのExperience Platform
 
@@ -138,18 +134,20 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 
    ![「Network」タブ](assets/validate-dev-console-ecid.png)
 
+   >[!NOTE]
+   >
+   > ECID 値は、ネットワーク応答で表示されます。 これは、 `identityMap` の一部を含める必要があります。また、この形式で cookie に保存されることもありません。
 
 ## Debugger を使用したサーバー側ネットワークリクエストのExperience Platform
 
-あなたが [データストリームの設定](configure-datastream.md) レッスンでは、Platform Web SDK は、まずデジタルプロパティから Platform Edge Network にデータを送信します。 次に、Platform Edge Network は、データストリームで有効になっている対応するサービスに対して、追加のサーバー側リクエストをおこないます。
+あなたが [データストリームの設定](configure-datastream.md) レッスンでは、Platform Web SDK は、まずデジタルプロパティから Platform Edge Network にデータを送信します。 次に、Platform Edge Network は、データストリームで有効になっている対応するサービスに対して、追加のサーバー側リクエストをおこないます。 デバッガーで Edge Trace を使用して、Platform Edge Network によっておこなわれたサーバー側リクエストを検証できます。
 
-デバッガーで Edge Trace を有効にすることで、サーバー側のリクエストを検証できます。 さらに、を使用して、Adobeアプリケーションに到達した後に、完全に処理されたペイロードを検証することもできます。 [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-次の 2 つの演習では、Edge Trace を有効にし、Assurance を使用して Platform Edge Network から生成されたExperience CloudID を表示します。
 
 ### エッジトレースを有効にする
 
-Edge Trace を有効にするには
+エッジトレースを有効にするには：
 
 1. の左側のナビゲーション **[!UICONTROL Experience Platformデバッガー]** 選択 **[!UICONTROL ログ]**
 1. を選択します。 **[!UICONTROL Edge]** 「 」タブで「 」を選択します。 **[!UICONTROL 接続]**
@@ -164,37 +162,9 @@ Edge Trace を有効にするには
 
    ![Analytics ビーコンの Edge Trace](assets/validate-edge-trace.png)
 
-この時点では、データストリームでを有効にしていないので、Adobeアプリケーションに送信される Platform Edge Network リクエストを表示できません。 今後のレッスンでは、Edge Trace を使用して、サーバーアプリケーションに対して送信されるサーバー側リクエストをAdobeします。 ただし、Assurance を使用すると、Platform Edge Network で生成されたExperience CloudID を表示できます。
+この時点では、データストリームでを有効にしていないので、Adobeアプリケーションに送信される Platform Edge Network リクエストを表示できません。 今後のレッスンでは、Edge Trace を使用して、Adobeアプリケーションおよびイベント転送に対するサーバー側のリクエストを表示します。 まず、Platform Edge Network(Adobe Experience Platform Assurance) がおこなったサーバー側リクエストを検証する別のツールについて学びます。
 
-### アシュランスセッションを開始する
-
-Adobe Experience Platform Assurance は、Adobe Experience Cloudがデータを収集したりエクスペリエンスを提供する方法を調査、配達確認、シミュレーションおよび検証する際に役立つ製品です。
-
-詳細を表示： [Adobe保証](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
-
-Edge Trace を有効にするたびに、アシュランスセッションがバックグラウンドで開始されます。
-
-アシュランスセッションを表示するには、
-
-1. Edge Trace を有効にすると、上部に発信リンクアイコンが表示されます。 アイコンを選択してアシュランスを開きます。 ブラウザーに新しいタブが開きます。
-
-   ![アシュランスセッションを開始](assets/validate-debugger-start-assurnance.png)
-
-1. イベント応答ハンドルというイベントを含むAdobeを選択します。
-1. 右側にメニューが表示されます。 を選択します。 `+` ～の隣に署名する `[!UICONTROL ACPExtensionEvent]`
-1. 選択によるドリルダウン `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 最後の `0` は、 `ECID`. は、の下に表示される値によってわかります。 `namespace` 一致 `ECID`
-
-   ![アシュランス検証 ECID](assets/validate-assurance-ecid.png)
-
-   >[!CAUTION]
-   >
-   >ウィンドウの幅が原因で、ECID 値が切り捨てられている場合があります。 インターフェイスのハンドルバーを選択し、左にドラッグして ECID 全体を表示します。
-
-今後のレッスンでは、アシュランスを使用して、データストリームで有効なAdobeアプリケーションに到達する、完全に処理されたペイロードを検証します。
-
-ページで XDM オブジェクトが実行されるようになりました。また、データ収集の検証方法を知っていれば、Platform Web SDK を使用して個々のAdobeアプリケーションを設定する準備が整いました。
-
-[次へ： ](setup-experience-platform.md)
+[次へ： ](validate-with-assurance.md)
 
 >[!NOTE]
 >

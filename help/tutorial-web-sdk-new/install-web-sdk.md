@@ -2,7 +2,7 @@
 title: Adobe Experience Platform Web SDK タグ拡張機能のインストールと設定
 description: データ収集インターフェイスで Platform Web SDK タグ拡張機能をインストールして設定する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 14%
@@ -11,7 +11,7 @@ ht-degree: 14%
 
 # Adobe Experience Platform Web SDK タグ拡張機能のインストール
 
-Platform Web SDK タグ拡張機能をインストールして設定する方法について説明します。 Web SDK を実装する最も簡単な方法は、Adobeのタグマネージャー（タグ）( タグ（旧称 Launch）) を使用する方法です。 Platform Web SDK タグ拡張機能は、 _タグ拡張のみ_ にデータを送信する必要がある _すべてのAdobe Experience Cloudアプリケーション_&#x200B;を含む [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data PlatformとJourney Optimizer!
+Platform Web SDK タグ拡張機能をインストールして設定する方法について説明します。 Web SDK を実装する最も簡単な方法は、Adobeのタグマネージャー（タグ）( タグ（旧称 Launch）) を使用する方法です。 Platform Web SDK タグ拡張機能は、 _タグ拡張のみ_ にデータを送信する必要がある _すべてのAdobe Experience Cloudアプリケーション_&#x200B;を含む [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform、および [Journey Optimizer](journey-optimizer/setup-web-channel.md)!
 
 ## 学習内容
 

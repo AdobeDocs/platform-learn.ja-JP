@@ -2,9 +2,9 @@
 title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 2%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 2%
 このレッスンを最後まで学習すると、次のことが可能になります。
 
 * データレイヤーを XDM にマッピングするための様々なアプローチについて理解する
-* コンテンツデータをキャプチャするためのデータ要素を作成する
-* データ要素を XDM オブジェクトデータ要素にマッピングする
+* データを取り込むためのデータ要素を作成する
+* データ要素の XDM オブジェクトへのマッピング
 
 
 ## 前提条件
 
-データレイヤーの概要を理解し、このチュートリアルの次の前のレッスンを完了している。
+データレイヤーの概要と、このチュートリアルの前のレッスンを完了していることを理解している。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
@@ -41,9 +41,9 @@ ht-degree: 2%
 
 Adobe Experience Platformのタグ機能を使用してデータレイヤーから XDM にデータをマッピングする方法は複数あります。 次に、3 つの異なるアプローチの長所と短所をいくつか示します。
 
-* [データレイヤーでの XDM の実装](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [データストリーム内の XDM にマッピング](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [タグで XDM にマッピング](create-data-elements.md#map-data-layer-in-tags)
+1. データレイヤーでの XDM の実装
+1. タグで XDM にマッピング
+1. データストリーム内の XDM にマッピング
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Adobe Experience Platformのタグ機能を使用してデータレイヤーか�
 
 ### データレイヤーでの XDM の実装
 
-この方法では、完全に定義された XDM オブジェクトをデータレイヤーの構造として使用する必要があります。 次に、データレイヤー全体をタグで XDM オブジェクトデータ要素にAdobeします。 タグマネージャーを使用しない実装の場合、この方法は理想的です。これは、を使用して、アプリケーションから直接 XDM にデータを送信できるからです。 [XDM sendEvent コマンド](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Adobeタグを使用する場合、データレイヤー全体をパススルー JSON オブジェクトとして XDM にキャプチャするカスタムコードデータ要素を作成できます。 次に、「イベントを送信」アクションの「XDM オブジェクト」フィールドにパススルー JSON をマッピングします。
+この方法では、完全に定義された XDM オブジェクトをデータレイヤーの構造として使用する必要があります。 次に、データレイヤー全体をタグで XDM オブジェクトデータ要素にマッピングします。 タグマネージャーを使用しない実装の場合、この方法は理想的です。これは、を使用して、アプリケーションから直接 XDM にデータを送信できるからです。 [XDM sendEvent コマンド](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). タグを使用する場合、データレイヤー全体をパススルー JSON オブジェクトとして XDM にキャプチャするカスタムコードデータ要素を作成できます。 次に、「イベントを送信」アクションの「XDM オブジェクト」フィールドにパススルー JSON をマッピングします。
 
 データレイヤーがAdobeクライアントデータレイヤー形式を使用した場合の例を以下に示します。
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 長所
 
-* 個々のデータレイヤー変数を XDM にマッピングする手順をスキップします。
+* XDM に対するデータレイヤー変数に再マッピングする追加手順を排除
 * 開発チームがタグ付けのデジタル動作を所有している場合は、デプロイが迅速におこなえます。
 
 短所
@@ -108,41 +108,44 @@ window.adobeDataLayer.push({
 * サードパーティのピクセルに対してデータレイヤーを使用できません
 * データレイヤーと XDM の間でデータを変換できない
 
-### データストリーム内の XDM にマッピング
-
-このアプローチは、データストリーム設定に組み込まれている機能を使用します。 [データ収集用のデータ準備](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) とは、データレイヤー変数の XDM へのマッピングをタグ内でスキップします。
-
-長所
-
-* 個々の変数を XDM にマッピングできる柔軟性
-* 次の機能を持つ [新しい値を計算](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=ja) または [データタイプを変換](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) XDM に送られる前にデータレイヤーから
-* 以下を実現するには、 [マッピング UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) ポイント&amp;クリック UI を使用してソースデータ内のフィールドを XDM にマッピングするには
-
-短所
-
-* データレイヤー変数をクライアントサイドのサードパーティピクセルのデータ要素として使用することはできませんが、Adobeタグのイベント転送で使用することはできます
-* Adobe Experience Platformのタグ機能の削除機能を使用できません
-* タグとデータストリームの両方でデータレイヤーをマッピングすると、メンテナンスの複雑さが増します
-
 ### タグ内のデータレイヤーをマッピングする
 
 この方法では、個々のデータレイヤー変数（またはデータレイヤーオブジェクト）をタグ内のデータ要素にマッピングし、最終的には XDM にマッピングします。 これは、タグ管理システムを使用した従来の実装アプローチです。
 
-長所
+#### 長所
 
 * 個々の変数を制御し、XDM に到達する前にデータを変換できる、最も柔軟なアプローチです
 * Adobeタグのトリガーとスクレーピング機能を使用して、データを XDM に渡すことができます。
 * データ要素をクライアントサイドでサードパーティピクセルにマッピングできる
 
-短所
+#### 短所
 
-* の実装に時間がかかる場合があります
+* データ要素としてデータレイヤーを再構築するのに時間がかかる
+
 
 >[!TIP]
 >
 > Google Data Layer
 > 
-> 組織が既にGoogle Analyticsを使用しており、Web サイトに従来のGoogle dataLayer オブジェクトがある場合、 [Google Data Layer 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) Adobeタグ。 これにより、IT チームにサポートを依頼することなく、Adobeテクノロジーを迅速に導入できます。 Googleデータレイヤーを XDM にマッピングする場合は、上記と同じ手順に従います。
+> 組織が既にGoogle Analyticsを使用しており、Web サイトに従来のGoogle dataLayer オブジェクトがある場合、 [Google Data Layer 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) （タグ内） これにより、IT チームにサポートを依頼することなく、Adobeテクノロジーを迅速に導入できます。 Googleデータレイヤーを XDM にマッピングする場合は、上記と同じ手順に従います。
+
+### データストリーム内の XDM にマッピング
+
+このアプローチは、データストリーム設定に組み込まれている機能を使用します。 [データ収集用のデータ準備](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) とは、データレイヤー変数の XDM へのマッピングをタグ内でスキップします。
+
+#### 長所
+
+* 個々の変数を XDM にマッピングできる柔軟性
+* 次の機能を持つ [新しい値を計算](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=ja) または [データタイプを変換](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) XDM に送られる前にデータレイヤーから
+* 以下を実現するには、 [マッピング UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) ポイント&amp;クリック UI を使用してソースデータ内のフィールドを XDM にマッピングするには
+
+#### 短所
+
+* データレイヤー変数は、クライアントサイドのサードパーティピクセルのデータ要素としては使用できませんが、イベント転送で使用することはできます
+* Adobe Experience Platformのタグ機能の削除機能を使用できません
+* タグとデータストリームの両方でデータレイヤーをマッピングすると、メンテナンスの複雑さが増します
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 
 これらの手順の最後に、次のデータ要素を作成する必要があります。
 
-| CORE 拡張機能のデータ要素 | Platform Web SDK のデータ要素 |
+| Core 拡張機能のデータ要素 | Platform Web SDK 拡張機能のデータ要素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 
 >[!TIP]
 >
->将来 [タグルールの作成](create-tag-rule.md) レッスンを学ぶには、 **[!UICONTROL 変数]** データ要素を使用すると、タグ内で複数のルールを積み重ねることができます。 **[!UICONTROL 変数アクションタイプを更新]**. その後、別の **[!UICONTROL イベント送信アクションタイプ]**.
+>将来 [タグルールの作成](create-tag-rule.md) レッスンを学ぶには、 **[!UICONTROL 変数]** データ要素を使用すると、タグ内で複数のルールを積み重ねることができます。 **[!UICONTROL 変数アクションタイプを更新]**.
 
 これらのデータ要素が配置されたら、タグルールを使用して Platform Edge Network へのデータ送信を開始する準備が整いました。 まず、Web SDK を使用して ID を収集する方法について説明します。
 

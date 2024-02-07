@@ -2,9 +2,9 @@
 title: データストリームの設定
 description: データストリームを有効にし、設定ソリューションをExperience Cloudする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >Real-Time CDPなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
+   >Real-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーションをご利用の場合は、このチュートリアルで開発用サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
 
 1. に移動します。 **[!UICONTROL データストリーム]** 左のナビゲーションで
 1. 選択 **[!UICONTROL 新規データストリーム]** をクリックします。
@@ -52,13 +52,6 @@ ht-degree: 5%
 1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データストリームの作成](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >マッピング機能は、後日このチュートリアルに組み込まれます。
-
-
-
 
 次の画面では、Adobeアプリケーションなどのサービスをデータストリームに追加できますが、この時点ではサービスを追加しません。 その場合は、レッスンの後半でおこないます。 [設定Experience Platform](setup-experience-platform.md), [Analytics の設定](setup-analytics.md), [設定Audience Manager](setup-audience-manager.md), [Target の設定](setup-target.md)または [イベント転送](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ ht-degree: 5%
 1. まず、データストリーム設定でデータストリームの上書きを定義します。 これは、上書きするAdobeアプリケーションごとにおこなう必要があります。
 1. 次に、Web SDK の「Send Event Action」または Web SDK タグ拡張の設定で、オーバーライドを Edge Network に送信します。
 
-詳しくは、 [datastream 設定はドキュメントを上書きします](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) データストリーム設定を上書きする方法の詳細な手順については、を参照してください。
+Adobe Analytics の [Adobe Analyticsの設定](setup-analytics.md) レッスンでは、Platform Web SDK の「Send Event Action」を使用して、ページのレポートスイートを上書きする方法について説明します。
 
-「 Adobe Analyticsの設定」レッスンでは、次の操作をおこないます。 [Platform Web SDK Send Event Action を使用して、ページのレポートスイートを上書きします。](setup-analytics.md).
+詳しくは、 [datastream 設定はドキュメントを上書きします](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) データストリーム設定を上書きする方法の詳細な手順については、を参照してください。
 
 これで、タグプロパティに Platform Web SDK 拡張機能をインストールする準備が整いました。
 

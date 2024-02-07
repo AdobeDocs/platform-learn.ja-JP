@@ -2,9 +2,9 @@
 title: ID の作成
 description: XDM で ID を作成し、ID マップデータ要素を使用してユーザー ID を取得する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Experience PlatformWeb SDK を使用して ID を取得する方法について�
 
 このレッスンを最後まで学習すると、次のことが可能になります。
 
-* Experience CloudID(ECID) とファーストパーティデバイス ID の違いについて
+* Experience CloudID(ECID) とファーストパーティデバイス ID(FPID) の関係について
 * 未認証 ID と認証済み ID の違いについて
 * ID マップデータ要素の作成
 
 ## 前提条件
 
-データレイヤーとは何かを把握し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーを参照し、タグ内のデータ要素を参照する方法を理解している必要があります。 このチュートリアルの前のレッスンで、以下の内容を習得している必要があります。
+データレイヤーとは何かを把握し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーを参照し、タグ内のデータ要素を参照する方法を理解している必要があります。 チュートリアルの前のレッスンを完了していること。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
@@ -55,11 +55,11 @@ ECID は、ファーストパーティ Cookie と Platform Edge ネットワー�
 
 ## ファーストパーティデバイス ID(FPID)
 
-FPID はファーストパーティ Cookie です。 _独自の Web サーバーを使用して設定_ この Cookie は、Web SDK によって設定されるファーストパーティ cookie を使用する代わりに、を使用して ECID を設定します。 ファーストパーティ cookie は、DNS CNAME または JavaScript コードとは対照的に、DNS A レコード（IPv4 の場合）または AAAA レコード（IPv6 の場合）を利用するサーバーを使用して設定される場合に最も効果的です。
+FPID はファーストパーティ Cookie です。 _独自の Web サーバーを使用して設定_ この Cookie は、Web SDK によって設定されるファーストパーティ cookie を使用する代わりに、を使用して ECID を作成します。 ブラウザーのサポートは異なる場合がありますが、DNS CNAME または JavaScript コードで設定される場合とは異なり、DNS A レコード（IPv4 用）または AAA レコード（IPv6 用）を利用するサーバーで設定される場合、ファーストパーティ cookie の耐久性が向上します。
 
 FPID Cookie が設定されると、その値を取得し、イベントデータの収集時にAdobeに送信できます。 収集された FPID は、Platform Edge Network 上で ECID を生成するシードとして使用されます。これは、引き続きAdobe Experience Cloudアプリケーションのデフォルトの識別子になります。
 
-詳細を表示： [Platform Web SDK のファーストパーティデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja)
+このチュートリアルでは FPID は使用しませんが、独自の Web SDK 実装で FPID を使用することをお勧めします。 詳細を表示： [Platform Web SDK のファーストパーティデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ FPID Cookie が設定されると、その値を取得し、イベントデー�
 
 上記のように、デジタルプロパティへのすべての訪問者には、Platform Web SDK を使用する際に、Adobe別に ECID が割り当てられます。 これにより、ECID が、未認証のデジタル行動を追跡するためのデフォルトの ID になります。
 
-また、認証済みユーザー ID を送信して、Platform が [ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ja)の場合、Target はサードパーティを設定できます。 これは、 [!UICONTROL ID マップ] データ要素のタイプ。
+また、認証済みユーザー ID を送信して、Platform が [ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ja) と Target は、 [サードパーティ ID](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ja). これは、 [!UICONTROL ID マップ] データ要素のタイプ。
 
 次の手順で [!UICONTROL ID マップ] データ要素：
 
@@ -133,12 +133,17 @@ FPID Cookie が設定されると、その値を取得し、イベントデー�
 
 これらの手順の最後に、次のデータ要素を作成する必要があります。
 
-| CORE 拡張機能のデータ要素 | Platform Web SDK のデータ要素 |
+| Core 拡張機能のデータ要素 | Platform Web SDK 拡張機能のデータ要素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 

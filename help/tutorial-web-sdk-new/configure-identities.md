@@ -2,9 +2,9 @@
 title: ID 名前空間の設定
 description: Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Identities
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '640'
 ht-degree: 7%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 7%
 
 Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法について説明します。
 
-The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、アプリケーション間でのオーディエンス共有などのExperience Cloud機能を強化するために、Adobeアプリケーション間で共通の訪問者 ID を設定します。 また、クロスデバイスでのターゲティングを可能にし、顧客関係管理 (CRM) システムなど他のシステムとの統合を可能にするために、独自の顧客 ID をサービスに送信することもできます。
+The [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、アプリケーション間でのオーディエンス共有などのExperience Cloud機能を強化するために、SDK ベースのAdobeアプリケーション間で共通の訪問者 ID(ECID) を設定します。 また、クロスデバイスでのターゲティングを可能にし、顧客関係管理 (CRM) システムなど他のシステムとの統合を可能にするために、独自の顧客 ID をサービスに送信することもできます。
 
-Web サイトで、Experience CloudAPI またはExperience CloudID サービスタグ拡張機能を通じて、既に Web サイト上で訪問者 ID サービスを使用していて、Adobe Experience Platform Web SDK への移行中に引き続き使用する場合は、訪問者 API の最新バージョンまたはExperience CloudID サービスタグ拡張を使用する必要があります。 詳しくは、 [ID の移行](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) を参照してください。
+The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) （はい、2 人です！） は、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できます。
+
+
 
 >[!NOTE]
 >
-> デモ目的で、このレッスンでは、架空の顧客が [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) 資格情報を使用して、 **ユーザー： `test@adobe.com` / password: test**. これらの手順を使用して、独自の目的で異なる ID を作成できますが、データ収集インターフェイスの ID マップの機能を学ぶには、まず ID の例を取り込むことをお勧めします。
+> デモ目的で、このレッスンでは、架空の顧客が [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) 資格情報を使用して、 **ユーザー： `test@adobe.com` / password: test**.
 
 ## 学習内容
 
@@ -38,6 +40,8 @@ Web サイトで、Experience CloudAPI またはExperience CloudID サービス�
 >[!IMPORTANT]
 >
 >The [Experience CloudID 拡張](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) は、Adobe Experience Platform Web SDK を実装する際には必要ありません。Web SDK JavaScript ライブラリには訪問者 ID サービス機能が含まれているからです。
+>
+> Web サイトで、Experience CloudAPI またはExperience CloudID サービスタグ拡張機能を通じて、既に Web サイト上で訪問者 ID サービスを使用していて、Adobe Experience Platform Web SDK への移行中に引き続き使用する場合は、訪問者 API の最新バージョンまたはExperience CloudID サービスタグ拡張を使用する必要があります。 詳しくは、 [ID の移行](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) を参照してください。
 
 ## ID 名前空間の作成
 
@@ -54,12 +58,12 @@ Web サイトで、Experience CloudAPI またはExperience CloudID サービス�
 
    >[!NOTE]
    >
-   >Real-Time CDPなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
+   >Real-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーションをご利用の場合は、このチュートリアルで開発用サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
 
 1. 選択 **[!UICONTROL ID]** 左のナビゲーションで
 1. 選択 **[!UICONTROL 参照]**
 
-   ID 名前空間のリストがページのメインインターフェイスに表示され、名前、ID 記号、最終更新日、および標準名前空間とカスタム名前空間のどちらであるかが示されます。 右側のレールには、ID グラフの強さに関する情報が含まれています。
+   ID 名前空間のリストがページのメインインターフェイスに表示され、名前、ID 記号、最終更新日、および標準名前空間とカスタム名前空間のどちらであるかが示されます。 右側のレールには、 [!UICONTROL ID グラフの強さ].
 
 1. 選択 **[!UICONTROL ID 名前空間を作成]**
 

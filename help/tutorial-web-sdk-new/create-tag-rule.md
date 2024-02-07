@@ -2,20 +2,20 @@
 title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 1%
+source-wordcount: '2006'
+ht-degree: 2%
 
 ---
 
 # タグルールの作成
 
-タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 タグルールは、タグプロパティに何らかの処理を指示するイベント、条件およびアクションを組み合わせたものです。
+タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 タグルールは、タグプロパティに何らかの処理を指示するイベント、条件およびアクションを組み合わせたものです。 Platform Web SDK では、ルールを使用して、適切な XDM フィールドを持つ Platform Edge Network にイベントを送信します。
 
 >[!NOTE]
 >
-> デモの目的で、このレッスンの演習は、 [ID の作成](create-identities.md) 手順： [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html).
+> デモ用に、このレッスンの演習は、前のレッスンに基づいて構築され、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
 
 
 ## 学習内容
@@ -29,12 +29,12 @@ ht-degree: 1%
 
 ## 前提条件
 
-データ収集タグと [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html)で、このチュートリアルの前のレッスンで、以下の作業を完了している必要があります。
+データ収集タグと [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) チュートリアルの前のレッスンを完了していること。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
 * [データストリームの設定](configure-datastream.md)
-* [タグプロパティにインストールされる Web SDK 拡張機能](install-web-sdk.md)
+* [Web SDK 拡張機能のインストール](install-web-sdk.md)
 * [データ要素の作成](create-data-elements.md)
 * [ID の作成](create-identities.md)
 
@@ -59,16 +59,17 @@ ht-degree: 1%
 * **[!UICONTROL 変数を更新]** データ要素を XDM フィールドにマッピングします。
 * **[!UICONTROL イベントの送信]** は XDM オブジェクトを Network EdgeExperience Platformに送信します。
 
-まず、 **[!UICONTROL 変数を更新]** アクション。サイトのすべてのページ（ページ名など）で送信する XDM フィールドの「グローバル設定」を定義します。
+まず、 **[!UICONTROL 変数を更新]** アクション。
 
-その後、 **[!UICONTROL 変数を更新]** 特定の条件でのみ使用可能な追加のフィールド（例えば、製品ページに製品の詳細を追加する）でグローバル XDM フィールドを補完するアクション。
+次に、以下を含む追加のルールを定義します。 **[!UICONTROL 変数を更新]** 「グローバル設定」を、特定の条件でのみ使用可能な追加の XDM フィールドで補足する（例えば、製品ページに製品の詳細を追加する）。
 
 最後に、 **[!UICONTROL イベントの送信]** 完全な XDM オブジェクトをAdobe Experience Platform Edge Network に送信するアクション。
 
+これらのルールはすべて、[!UICONTROL 注文]&quot;オプション。
 
 ### 変数ルールの更新
 
-#### グローバルフィールド
+#### グローバル設定
 
 グローバル XDM フィールドのタグルールを作成するには：
 
@@ -94,7 +95,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > 入力する数が多いほど、後でトリガーする操作の全体的な順序になります。
+   > 順序の数が低いほど、早く実行されます。 したがって、「グローバル設定」には低い順番を付けます。
 
 1. 選択 **[!UICONTROL 変更を保持]** メインのルール画面に戻るには
    ![「Select Page Bottom」トリガー](assets/create-tag-rule-trigger-bottom.png)
@@ -115,6 +116,25 @@ ht-degree: 1%
 > 
 > 個々のプロパティまたはオブジェクト全体にマップできます。 この例では、個々のプロパティにマッピングします。
 
+1. 「 eventType 」フィールドを見つけて選択します。
+
+1. 値を入力 `web.webpagedetails.pageViews`
+
+   >[!TIP]
+   >
+   > に入力する値を理解するには、以下を実行します。 `eventType` 」フィールドに値を入力するには、スキーマページに移動して、 `eventType` 「 」フィールドを使用して、右側のパネルに推奨値を表示します。
+   > ![eventType スキーマページで推奨される値](assets/create-tag-rule-eventType.png)
+
+1. 次に、 `identityMap` オブジェクトを選択して選択します。
+
+1. にマッピング `identityMap.loginID` データ要素
+
+   ![変数 ID マップを更新](assets/create-rule-variable-identityMap.png)
+
+
+   >[!TIP]
+   >
+   > データ要素が null の場合、XDM フィールドはネットワークリクエストに含まれません。 したがって、ユーザーが認証されていない場合、また `identityMap.loginID` データ要素が null の場合、 `identityMap` オブジェクトは送信されません。 これが、「グローバル設定」で定義できる理由です。
 
 1. 下にスクロールして、 **`web`** object
 
@@ -130,45 +150,23 @@ ht-degree: 1%
 
    ![変数コンテンツを更新](assets/create-rule-xdm-variable-content.png)
 
-1. 次に、 `identityMap` オブジェクトを選択して選択します。
-
-1. にマッピング `identityMap.loginID` データ要素
-
-   ![変数 ID マップを更新](assets/create-rule-variable-identityMap.png)
-
-1. 次に、「 eventType 」フィールドを見つけて選択します。
-
-1. 値を入力 `web.webpagedetails.pageViews`
-
-   >[!WARNING]
-   >
-   > このドロップダウンには、 **`xdm.eventType`** 変数を使用して、XDM オブジェクトに格納します。 このフィールドには自由形式のラベルを入力することもできますが、 **しない** プラットフォームに悪影響を及ぼすので
-
    >[!TIP]
    >
-   > に入力する値を理解するには、以下を実行します。 `eventType` 」フィールドに値を入力するには、スキーマページに移動して、 `eventType` 「 」フィールドを使用して、右側のパネルに推奨値を表示します。
-
-   >[!TIP]
-   >
-   > 一方でも `web.webPageDetials.pageViews.value` nor `eventType` に設定 `web.webpagedetails.pageViews` は、Adobe Analyticsでビーコンをページビューとして処理するために必要です。他のダウンストリームアプリケーションのページビューを示す標準的な方法が役立ちます。
-
-   ![変数 ID マップを更新](assets/create-tag-rule-eventType.png)
+   > 一方でも `eventType` に設定 `web.webpagedetails.pageViews` nor `web.webPageDetials.pageViews.value` は、Adobe Analyticsでビーコンをページビューとして処理するために必要です。他のダウンストリームアプリケーションのページビューを示す標準的な方法が役立ちます。
 
 
 1. 選択 **[!UICONTROL 変更を保持]** その後 **[!UICONTROL 保存]** ルールの作成を終了するための次の画面のルール
 
 
-#### 「Update variable」アクションで追加のルールを使用した XDM オブジェクトのエンリッチメント
+#### 製品ページのフィールド
 
-以下を使用できます。 **[!UICONTROL 変数を更新]**  に送信する前に XDM オブジェクトをエンリッチメントするための複数の順番付きルール [!UICONTROL Platform Edge Network].
+次に、使用を開始します。 **[!UICONTROL 変数を更新]** に送信する前に XDM オブジェクトをエンリッチメントするための複数の順番付きルール [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
 >ルールの順序は、イベントがトリガーされたときに最初に実行されるルールを決定します。 2 つのルールのイベントタイプが同じ場合、一番小さい数のルールが最初に実行されます。
 > 
 >![rule-order](assets/set-up-analytics-sequencing.png)
-
-##### 製品ページのフィールド
 
 まず、Luma の製品の詳細ページで製品表示を追跡します。
 
@@ -178,13 +176,13 @@ ht-degree: 1%
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
 1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
 1. 名前を付ける `Core - Page Bottom - order 20`
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages global content variables - library loaded - AA (order 1)` グローバルコンテンツ変数を設定しますが、 `all pages send event - library loaded - AA (order 50)` XDM イベントを送信する
+1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages global content variables - library loaded - AA (order 1)` グローバルコンテンツ変数を設定する
 
    ![Analytics XDM ルール](assets/set-up-analytics-pdp.png)
 
 1. の下 **[!UICONTROL 条件]**&#x200B;を選択して、 **[!UICONTROL 追加]**
 1. 終了 **[!UICONTROL 論理タイプ]** as **[!UICONTROL 標準]**
-1. 終了 **[!UICONTROL 拡張機能]** as **[!UICONTROL コア]**
+1. 終了 **[!UICONTROL 拡張]** as **[!UICONTROL コア]**
 1. 選択 **[!UICONTROL 条件タイプ]** as **[!UICONTROL Path Without Query String]**
 1. 右側で、 **[!UICONTROL Regex]** トグル
 1. の下 **[!UICONTROL パスが次と等しい]** 設定 `/products/`. Luma デモサイトの場合、ルールは製品ページ上のトリガーのみを確認します。
@@ -195,7 +193,7 @@ ht-degree: 1%
 1. の下 **[!UICONTROL アクション]** 選択 **[!UICONTROL 追加]**
 1. 選択 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張
 1. 選択 **[!UICONTROL アクションタイプ]** as **[!UICONTROL 変数を更新]**
-1. 下にスクロールして、 `commerce` オブジェクトを選択して開きます。
+1. 下にスクロールして、 `commerce` object
 1. を開きます。 **[!UICONTROL productViews]** オブジェクトとセット **[!UICONTROL 値]** から `1`
 
    ![製品表示のセットアップ](assets/set-up-analytics-prodView.png)
@@ -204,6 +202,11 @@ ht-degree: 1%
    >
    >XDM で commerce.productViews.value=1 を設定すると、 `prodView` Analytics のイベント
 
+1. 下にスクロールして `eventType` を設定し、 `commerce.productViews`
+
+   >[!NOTE]
+   >
+   >このルールの順序は高いので、 `eventType` 「グローバル設定」ルールで設定します。 `eventType` には 1 つの値のみを含めることができます。最も大きい値のイベントを使用して設定することをお勧めします。
 
 1. 下にスクロールして、「 」を選択します。 `productListItems` 配列
 1. 選択 **[!UICONTROL 個々の項目を指定]**
@@ -220,16 +223,12 @@ ht-degree: 1%
 
    ![製品 SKU XDM オブジェクト変数](assets/set-up-analytics-sku.png)
 
-1. 検索文字列 `eventType` を設定し、 `commerce.productViews`
-
 1. 選択 **[!UICONTROL 変更を保持]**
 
 1. 選択 **[!UICONTROL 保存]** ルールを保存するには
 
 
-
-
-### 買い物かごのフィールド
+#### 買い物かごのフィールド
 
 配列が XDM スキーマの形式と一致する場合は、配列全体を XDM オブジェクトにマッピングできます。 カスタムコードデータ要素 `cart.productInfo` 以前のループを作成した場合は、 `digitalData.cart.cartEntries` Luma 上のデータレイヤーオブジェクトを作成し、 `productListItems` XDM スキーマのオブジェクト。
 
@@ -244,7 +243,7 @@ ht-degree: 1%
 >数値変数の変換方法に注意してください。データレイヤーには次のような文字列値があります。 `price` および `qty` データ要素の数値の形式に戻しました。 これらの形式の要件は、Platform のデータの整合性に重要で、 [スキーマの設定](configure-schemas.md) 手順 この例では、 **[!UICONTROL 量]** は **[!UICONTROL 整数]** データタイプ。
 > ![XDM スキーマのデータタイプ](assets/set-up-analytics-quantity-integer.png)
 
-次に、配列を XDM オブジェクトにマッピングしましょう」
+次に、配列を XDM オブジェクトにマッピングします。
 
 
 1. という名前の新しいルールを作成します。 `ecommerce - cart library loaded - AA (order 20)`
@@ -279,15 +278,13 @@ ht-degree: 1%
    >
    >XDM で commerce.productListViews.value=1 を設定すると、 `scView` Analytics のイベント
 
-
+1. 選択 `eventType` に設定し、 `commerce.productListViews`
 
 1. 下にスクロールして、「 」を選択します。 **[!UICONTROL productListItems]** 配列
 
 1. 選択 **[!UICONTROL アレイ全体を提供]**
 
 1. マッピング先 **`cart.productInfo`** データ要素
-
-1. 選択 `eventType` に設定し、 `commerce.productListViews`
 
 1. 選択 **[!UICONTROL 変更を保持]**
 
@@ -297,37 +294,33 @@ ht-degree: 1%
 
 **ルール名**: `ecommerce - checkout library loaded - AA (order 20)`
 
-* **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout.html
-* `eventType` を `commerce.checkouts` に設定します。
-* 設定 **XDM コマースイベント**: commerce.checkout.value をに設定します。 `1`
+1. **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout.html
+1. `eventType` を `commerce.checkouts` に設定します。
+1. `commerce.checkout.value` を `1` に設定します。
 
-  >[!TIP]
-  >
-  >これは、 `scCheckout` Analytics のイベント
+   >[!TIP]
+   >
+   >これは、 `scCheckout` Analytics のイベント
+
 
 **ルール名**: `ecommerce - purchase library loaded - AA (order 20)`
 
-* **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout/order/thank-you.html
-* `eventType` を `commerce.purchases` に設定します。
-* 設定 **XDM コマースイベント**: commerce.purchases.value をに設定します。 `1`
+1. **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout/order/thank-you.html
+1. `eventType` を `commerce.purchases` に設定します。
+1. `commerce.purchases.value` を `1` に設定します。
 
-  >[!TIP]
-  >
-  >これは、 `purchase` Analytics のイベント
+   >[!TIP]
+   >
+   >これは、 `purchase` Analytics のイベント
 
-必要なすべての `purchase` イベント変数：
-
-1. 開く **[!UICONTROL commerce]** object
-1. を開きます。 **[!UICONTROL 注文]** object
-1. マップ **[!UICONTROL purchaseID]** から `cart.orderId` データ要素
-1. 設定 **[!UICONTROL currencyCode]** をハードコードされた値に `USD`
+1. 設定 `commerce.order.purchaseID` から `cart.orderId` データ要素
+1. 設定 `commerce.order.currencyCode` をハードコードされた値に `USD`
 
    ![Analytics 用の purchaseID の設定](assets/set-up-analytics-purchase.png)
 
    >[!TIP]
    >
    >これは、 `s.purchaseID` および `s.currencyCode` Analytics の変数
-
 
 1. 下にスクロールして、「 」を選択します。 **[!UICONTROL productListItems]** 配列
 1. 選択 **[!UICONTROL アレイ全体を提供]**
@@ -339,11 +332,11 @@ ht-degree: 1%
 ![Analytics XDM ルール](assets/set-up-analytics-rules.png)
 
 
-### イベントを送信
+### イベントルールを送信
 
-これで変数を設定したので、2 つ目のルールを作成して、 **[!UICONTROL イベントを送信]** アクションタイプ。
+これで変数を設定したので、ルールを作成して、完全な XDM オブジェクトを、 **[!UICONTROL イベントを送信]** アクション。
 
-1. 右側で、「 」を選択して、 **[!UICONTROL ルールを追加]** 別の規則を作成するには
+1. 右側で、「 」を選択します。 **[!UICONTROL ルールを追加]** 別の規則を作成するには
 
 1. ルール名を設定します。`all pages send event - library loaded - AA (order 50)`
 
