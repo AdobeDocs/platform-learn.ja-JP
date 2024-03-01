@@ -1,23 +1,22 @@
 ---
-title: パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズ
-description: ' [!DNL Adobe Experience Platform Web SDK]    からサードパーティ属性を収集し、パートナー支援の訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする方法を説明します。'
+title: パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする
+description: からサードパーティ属性を収集する方法を学ぶ [!DNL Adobe Experience Platform Web SDK] およびは、パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズします。
 feature: Integrations
 topic: Integrations
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13831
-thumbnail: 3423076.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+exl-id: 87600927-d5bd-4edf-9332-f401b01c782f
+source-git-commit: 3e8f68c89b5ab94045ec1120a95b1e2cc1d1c97a
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 72%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
-# パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズ
+# パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする
 
-[!DNL Adobe Experience Platform Web SDK]   からサードパーティ属性を収集し、パートナー支援の訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする方法を説明します。詳しくは、 [パートナーの支援による訪問者認識を使用して、オンサイトエクスペリエンスをパーソナライズする](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) ドキュメント。
+からサードパーティ属性を収集する方法を学ぶ [!DNL Adobe Experience Platform Web SDK] およびは、パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズします。 詳しくは、 [パートナーの支援による訪問者認識を使用して、オンサイトエクスペリエンスをパーソナライズする](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) ドキュメント。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)
-
