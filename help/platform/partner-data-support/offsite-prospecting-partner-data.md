@@ -3,12 +3,13 @@ title: でのパートナーデータを使用して、オフサイトの予測�
 description: 新しい見込み客を [!DNL Real-Time CDP] （訪問前のターゲティング用）。 
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13827
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 58427feb-ed4e-43fe-921b-8deb24e2c531
-source-git-commit: 3e8f68c89b5ab94045ec1120a95b1e2cc1d1c97a
+source-git-commit: c0ad9603e3e954eb8438418062657f41b3d91b67
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%

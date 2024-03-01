@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '869'
 ht-degree: 20%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 20%
    + [順次オーディエンスの作成](audiences/create-sequential-audiences.md)
    + [動的オーディエンスの作成](audiences/create-dynamic-audiences.md)
    + [複数エンティティのオーディエンスの作成](audiences/create-multi-entity-audiences.md)
-   + [B2B データを使用したオーディエンスの作成](audiences/create-audiences-with-b2b-data.md)
+   + [アカウントオーディエンスの作成と有効化 (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [ストリーミングセグメント化のデモ](/help/platform/audiences/streaming-segmentation-demo.md)
    + [オーディエンスルールの評価](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [データを書き出すデータセットを作成する](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
