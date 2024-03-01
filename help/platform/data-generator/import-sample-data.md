@@ -1,21 +1,20 @@
 ---
-title: Adobe Experience Platform へのサンプルデータの読み込み
+title: サンプルデータをAdobe Experience Platformにインポート
 description: 一部のサンプルデータを使用してExperience Platformサンドボックス環境を設定する方法について説明します。
 feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 8%
+source-wordcount: '1776'
+ht-degree: 6%
 
 ---
 
-# Adobe Experience Platform へのサンプルデータの読み込み
+# サンプルデータをAdobe Experience Platformにインポート
 
 サンプルデータを使用して Experience Platform サンドボックス環境をセットアップする方法を説明します。Postman Collection を使用すると、フィールドグループ、スキーマ、データセットを作成して、Experience Platform にサンプルデータをインポートできます。
 
@@ -129,7 +128,7 @@ Experience Platformのビジネスユーザーは、多くの場合、Experience
 
 1. 環境変数を確認し、 `ACCESS_TOKEN` が設定されました。
 
-### データのインポート
+### データの読み込み
 
 これで、データを準備し、Platform サンドボックスに読み込むことができます。 読み込んだPostmanのコレクションが、すべての重い作業を実行します。
 
