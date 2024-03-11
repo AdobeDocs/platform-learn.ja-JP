@@ -3,14 +3,19 @@ title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
 
 # データ要素の作成
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 Experience PlatformWeb SDK を使用して、データを取得するために必要な基本的なデータ要素を作成する方法について説明します。 でのコンテンツと ID データの両方をキャプチャします。 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 前に作成した XDM スキーマを使用し、XDM オブジェクトと呼ばれる新しいデータ要素タイプを通じて、Platform Web SDK を使用してデータを収集する方法について説明します。
 

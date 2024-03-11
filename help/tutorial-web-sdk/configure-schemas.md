@@ -3,14 +3,19 @@ title: Web データ用の XDM スキーマの作成
 description: データ収集インターフェイスで Web データ用の XDM スキーマを作成する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 6%
+source-wordcount: '1093'
+ht-degree: 2%
 
 ---
 
 # Web データ用の XDM スキーマの作成
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 データ収集インターフェイスで Web データ用の XDM スキーマを作成する方法を説明します。
 
@@ -55,7 +60,7 @@ XDM スキーマは、Experience Platform内のデータを記述する標準的
 
 ![スキーマエクスペリエンスイベント](assets/schema-XDM-experience-event.jpg)
 
-## フィールドグループの追加
+## フィールドグループを追加
 
 前述したように、XDM は、ダウンストリームAdobe Experience Platformサービスで使用する共通の構造と定義を提供することで、顧客体験データを標準化する中核的なフレームワークです。 XDM 標準に準拠することで、 _すべての顧客体験データ_ は、共通の表現に組み込むことができます。 このアプローチを使用すると、顧客の行動から有益なインサイトを得たり、セグメントを通じて顧客のオーディエンスを定義したり、複数のソースのデータを使用してパーソナライズ機能を目的として顧客属性を表したりできます。 詳しくは、 [データモデリングのベストプラクティス](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) を参照してください。
 

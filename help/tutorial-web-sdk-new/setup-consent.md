@@ -2,9 +2,9 @@
 title: Platform Web SDK を使用した同意の設定
 description: Web SDK タグ拡張機能のプライバシー設定のExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Consent
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Web SDK タグ拡張機能のプライバシー設定のExperience Platform方�
 >同意管理プラットフォームを実装するベストプラクティスは、通常、CMP を読み込むことです _前_ タグマネージャーの読み込み中。 このチュートリアルを容易にするために、CMP を読み込みます _次を使用_ タグマネージャー このレッスンは、Platform Web SDK の同意機能の使用方法を示すように設計されており、Klaro やその他の CMP を正しく設定するためのガイドとして使用しないでください。
 
 
-Klaro の設定が完了したら、次の設定を含むタグルールを作成します。
+Klaro の設定が完了したら、次の設定でタグルールを作成します。
 
 * [!UICONTROL 名前]：`all pages - library load - Klaro`
 * [!UICONTROL イベント]: [!UICONTROL 読み込まれたライブラリ（ページ上部）] 次を使用 [!UICONTROL 詳細オプション] > [!UICONTROL 注文] 1 に設定

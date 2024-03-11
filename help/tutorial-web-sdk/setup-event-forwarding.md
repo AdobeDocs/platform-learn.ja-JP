@@ -3,14 +3,19 @@ title: イベント転送プロパティの設定
 description: イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 6%
+source-wordcount: '1893'
+ht-degree: 4%
 
 ---
 
 # イベント転送プロパティの設定
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。
 
@@ -73,7 +78,7 @@ Adobe Experience Platformでイベント転送を使用するには、次の 3 �
 1. 「**[!UICONTROL 新しいプロパティ]**」を選択します。
    ![イベント転送のプロパティ](assets/event-forwarding-new.png)
 
-1. プロパティに名前を付けます。この場合、 `Server-Side - Web SDK Course`
+1. プロパティに名前を付けます。 この場合、 `Server-Side - Web SDK Course`
 
 1. 「**[!UICONTROL 保存]**」を選択します。
    ![イベント転送プロパティの保存](assets/event-forwarding-save.png)
@@ -149,7 +154,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
    ![イベント転送の新しいデータ要素](assets/event-forwarding-new-dataelement.png)
 
-1. ****&#x200B;データ要素に「」と名前を付けます。`environment.browserDetails.viewportHeight`
+1. **[!UICONTROL 名前]** データ要素 `environment.browserDetails.viewportHeight`
 
 1. の下 **[!UICONTROL 拡張]**&#x200B;を終了します。 `CORE`
 
@@ -183,8 +188,8 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
    >[!TIP]
    >
-   独自の Web サイトで作業する際には、Web ブラウザーのネットワークツールを使用した XDM オブジェクトパスを見つけ、次のフィルタリングをおこないます。 `/ee` リクエスト、ビーコンを開く [!UICONTROL **ペイロード**] をクリックし、目的の変数にドリルダウンします。 次に、マウスで右クリックし、「プロパティのパスをコピー」を選択します。 ブラウザビューポートの高さの例を次に示します。
-   ![イベント転送 XDM パス](assets/event-forwarding-xdm-path.png)
+   >独自の Web サイトで作業する際には、Web ブラウザーのネットワークツールを使用した XDM オブジェクトパスを見つけ、次のフィルタリングをおこないます。 `/ee` リクエスト、ビーコンを開く [!UICONTROL **ペイロード**] をクリックし、目的の変数にドリルダウンします。 次に、マウスで右クリックし、「プロパティのパスをコピー」を選択します。 ブラウザビューポートの高さの例を次に示します。
+   > ![イベント転送 XDM パス](assets/event-forwarding-xdm-path.png)
 
 ### AdobeCloud Connector 拡張機能のインストール
 
@@ -215,9 +220,9 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
    * **イベントの転送**：データ要素名は、 `{{` 最初に `}}` ：データ要素名の末尾に配置します（ルールで使用される場合）。 例：`{{viewportHeight}}`。
 
-* **ルールアクションのシーケンス**:
+* **一連のルールアクション**:
 
-   * イベント転送ルールのアクションセクションは常に順番に実行されます。ルールを保存する際に、アクションの順序が正しいことを確認します。この実行シーケンスは、タグの場合のように非同期で実行することはできません。
+   * イベント転送ルールの「アクション」セクションは、常に順番に実行されます。 ルールを保存する際に、アクションの順序が正しいことを確認します。この実行シーケンスは、タグの場合のように非同期で実行することはできません。
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -278,7 +283,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 >[!NOTE]
 >
-ステージングおよび実稼動のイベント転送プロパティをデータストリームにリンクしていない場合、ライブラリを構築する唯一のオプションとして開発環境が表示されます。
+>ステージングおよび実稼動のイベント転送プロパティをデータストリームにリンクしていない場合、ライブラリを構築する唯一のオプションとして開発環境が表示されます。
 
 ![イベント転送ルールを保存する](assets/event-forwarding-initial-build.png)
 
@@ -321,4 +326,4 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 >[!NOTE]
 >
-Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

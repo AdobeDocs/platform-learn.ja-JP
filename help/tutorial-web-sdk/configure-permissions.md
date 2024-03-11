@@ -3,14 +3,19 @@ title: チュートリアルの権限の設定
 description: Experience PlatformWeb SDK へのアクセスをリクエストする方法と、「 Web SDK を使用したAdobe Experience Cloudの実装」チュートリアルを完了するために必要な権限の設定方法について説明します。
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 7%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # チュートリアルの権限の設定
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 Experience PlatformWeb SDK へのアクセスをリクエストする方法と、このチュートリアルを完了するために必要な権限を設定する方法について説明します。 データ収集インターフェイスのタグを使用して Platform Web SDK を実装するには、 [Admin Console](https://adminconsole.adobe.com).
 

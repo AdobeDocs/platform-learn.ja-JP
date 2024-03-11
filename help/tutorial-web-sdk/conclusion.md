@@ -3,14 +3,19 @@ title: まとめと次のステップ
 description: チュートリアルを完了した後の次の作業
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 8%
+source-wordcount: '427'
+ht-degree: 3%
 
 ---
 
 # まとめと次のステップ
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 おめでとうございます。「Web SDK を使用したAdobe Experience Cloudの実装」チュートリアルが完了しました。
 
@@ -35,7 +40,7 @@ ht-degree: 8%
 
 
 * **Journey Optimizerでのジャーニーのトリガー**. Luma の Web サイトに実装したイベントは、ジャーニーのトリガーに使用できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html?lang=ja).
-* **接続Customer Journey Analytics**. 作成した [Platform データセット](setup-experience-platform.md)を使用すると、データセットをCustomer Journey Analyticsに接続できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=ja)
+* **接続Customer Journey Analytics**. 作成した [Platform データセット](setup-experience-platform.md)を使用すると、データセットをCustomer Journey Analyticsに接続できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
 * **Platform でのセグメントの作成**. を有効にした場合、 [リアルタイム顧客プロファイルのスキーマとデータセット](setup-experience-platform.md)では、Web イベントに基づいてセグメントを構築し、それらを他のソースのデータと組み合わせて、Real-time Customer Data Platformの宛先に送信することができます。 セグメントビルダーの詳細については、この節を参照してください [ビデオチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
 * **Platform Mobile SDK の実装**. 1 つの SDK を習得したら、もう 1 つ学習しましょう。 Adobe Experience Platform Mobile SDK は、モバイルアプリでExperience Cloudとサードパーティのサービスを強化するために使用します。 似たようなものがある [Mobile SDK の実践チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja). 両方を完了し、デバイス間でプロファイルが結合されるのを確認します。
 * **Experience Platformの詳細**. 他のソースからデータを取り込み、それを Web SDK データと組み合わせる方法について詳しくは、 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja)

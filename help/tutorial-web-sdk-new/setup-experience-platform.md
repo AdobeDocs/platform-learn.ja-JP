@@ -1,10 +1,10 @@
 ---
 title: Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
 description: Web SDK を使用して、Web データをAdobe Experience Platformにストリーミングする方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 8%
+source-wordcount: '1587'
+ht-degree: 7%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 8%
 Platform Web SDK を使用して、Web データをAdobe Experience Platformにストリーミングする方法について説明します。
 
 Experience Platformは、Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics、Adobe Journey Optimizerなど、すべての新しいExperience Cloudアプリケーションの中心です。 これらのアプリケーションは、Platform Web SDK を Web データ収集の最適な方法として使用するように設計されています。
-
 
 ![Web SDK とAdobe Experience Platformの図](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ Experience Platformは、前に作成したのと同じ XDM スキーマを使�
 
 ## 前提条件
 
-次のレッスンを既に完了していること。
+このレッスンを完了するには、まず次の手順を実行する必要があります。
 
-* The **初期設定** レッスン：
-   * [XDM スキーマの設定](configure-schemas.md)
-   * [データストリームの設定](configure-datastream.md)
-   * [ID 名前空間の設定](configure-identities.md)
-
-* The **タグ設定** レッスン：
-   * [Web SDK 拡張機能のインストール](install-web-sdk.md)
-   * [データ要素の作成](create-data-elements.md)
-   * [ID の作成](create-identities.md)
-   * [タグルールの作成](create-tag-rule.md)
+* Real-time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platformアプリケーションにアクセスできる
+* このチュートリアルの「初期設定」および「タグの設定」節の前のレッスンを完了していること。
 
 
 ## データセットの作成
 
 Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) は、スキーマ（列）とフィールド（行）を含むテーブルなど、データのコレクションのストレージと管理の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
-この演習では、データセットを作成して、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->既に `Luma Web Event Data` スキーマ（前のレッスンで説明したとおり） [XDM スキーマの設定](configure-schemas.md).
+次に、Luma Web イベントデータのデータセットを設定します。
 
 
 1. 次に移動： [Experience Platform界面](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 > * まず、データをデータセットに取り込みます。
 > * データ取り込みプロセス中に発生した問題（データ検証やマッピングの問題など）に対処します。
 > * プロファイルのデータセットとスキーマの有効化
-> * データの再取り込み
+> * 必要に応じて、データを再取り込みします。
 
 
 ### プロファイルの検証

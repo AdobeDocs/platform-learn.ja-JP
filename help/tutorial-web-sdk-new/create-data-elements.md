@@ -2,22 +2,16 @@
 title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでそのオブジェクトにデータ要素をマッピングする方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 2%
 
 ---
 
 # データ要素の作成
 
-コンテンツ、コマースおよび ID データのタグにデータ要素を作成する方法については、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 次に、変数データ要素タイプを使用して、XDM スキーマのフィールドに値を入力します。
-
-
->[!IMPORTANT]
->
->このレッスンのデータは、 `[!UICONTROL digitalData]` Luma サイトのデータレイヤー。 データレイヤーを表示するには、デベロッパーコンソールを開き、「 」と入力します。 `[!UICONTROL digitalData]` をクリックして、使用可能なデータレイヤー全体を確認します。![digitalData データレイヤー](assets/data-element-data-layer.png)
-
+コンテンツ、コマースおよび ID データのタグにデータ要素を作成する方法については、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 次に、Platform Web SDK 拡張機能の変数データ要素タイプを使用して、XDM スキーマのフィールドに値を入力します。
 
 ## 学習内容
 
@@ -37,9 +31,15 @@ ht-degree: 2%
 * [データストリームの設定](configure-datastream.md)
 * [タグプロパティにインストールされる Web SDK 拡張機能](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>このレッスンのデータは、 `[!UICONTROL digitalData]` Luma サイトのデータレイヤー。 データレイヤーを表示するには、デベロッパーコンソールを開き、「 」と入力します。 `[!UICONTROL digitalData]` をクリックして、使用可能なデータレイヤー全体を確認します。![digitalData データレイヤー](assets/data-element-data-layer.png)
+
+
 ## データレイヤーのアプローチ
 
-Adobe Experience Platformのタグ機能を使用してデータレイヤーから XDM にデータをマッピングする方法は複数あります。 次に、3 つの異なるアプローチの長所と短所をいくつか示します。
+Adobe Experience Platformのタグ機能を使用してデータレイヤーから XDM にデータをマッピングする方法は複数あります。 次に、3 つの異なるアプローチの長所と短所をいくつか示します。 必要に応じて、次の方法を組み合わせることができます。
 
 1. データレイヤーでの XDM の実装
 1. タグで XDM にマッピング
@@ -104,7 +104,7 @@ window.adobeDataLayer.push({
 
 * XDM に送信するデータを更新するための開発チームと開発サイクルに完全に依存
 * XDM がデータレイヤーから正確なペイロードを受け取るので、柔軟性は限られています
-* 迅速なデプロイメントのために、スクレーピング、永続性、機能などの組み込み機能は使用できません
+* 組み込みのタグ機能（廃棄、永続化、機能など）を使用して迅速なデプロイメントを行うことはできません。
 * サードパーティのピクセルに対してデータレイヤーを使用できません
 * データレイヤーと XDM の間でデータを変換できない
 
@@ -184,7 +184,7 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
 * **`user.profile.attributes.loggedIn`** マッピング先：
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`product.productInfo.sku`** マッピング先： `digitalData.product.0.productInfo.sku`
+* **`product.productInfo.sku`**（`digitalData.product.0.productInfo.sku` にマッピング）
 <!--digitalData.product.0.productInfo.sku
     ```javascript
     var cart = digitalData.product;
@@ -195,8 +195,8 @@ XDM オブジェクトを作成する前に、に対して次の一連のデー�
     return cartItem;
     ```
     -->
-* **`product.productInfo.title`** マッピング先： `digitalData.product.0.productInfo.title`
-* **`cart.orderId`** マッピング先： `digitalData.cart.orderId`
+* **`product.productInfo.title`**（`digitalData.product.0.productInfo.title` にマッピング）
+* **`cart.orderId`**（`digitalData.cart.orderId` にマッピング）
 <!--
     ```javascript
     var cart = digitalData.product;

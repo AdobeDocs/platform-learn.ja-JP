@@ -3,14 +3,19 @@ title: Experience PlatformWeb SDK を使用したAdobe Analyticsのセットア�
 description: Experience PlatformWeb SDK を使用したAdobe Analyticsの設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 2%
+source-wordcount: '3473'
+ht-degree: 1%
 
 ---
 
 # Platform Web SDK でのAdobe Analyticsの設定
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 次を使用してAdobe Analyticsを設定する方法を説明します。 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=ja)では、タグルールを作成してAdobe Analyticsにデータを送信し、Analytics が期待どおりにデータをキャプチャしていることを検証します。
 
@@ -382,7 +387,7 @@ Platform Web SDK は、Web サイトから Platform Edge Network にデータを
 1. の下 **[!UICONTROL アクション]** 選択 **[!UICONTROL 追加]**
 1. 選択 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張
 1. 選択 **[!UICONTROL アクションタイプ]** as **[!UICONTROL イベントを送信]**
-1. The **[!UICONTROL タイプ]** フィールドには、選択する値のドロップダウンリストが含まれます。 選択 `[!UICONTROL commerce.productViews]`
+1. The **[!UICONTROL タイプ]** フィールドには、選択する値のドロップダウンリストが含まれます。 `[!UICONTROL commerce.productViews]` を選択します。
 
    >[!TIP]
    >
@@ -557,7 +562,7 @@ Edge Trace はを処理します。 `commerce` ～とは少し異なるイベン
    **ページビュー数**
    ![リアルタイムコンテンツ](assets/analytics-real-time-content.png)
 
-   **製品表示**
+   **製品表示回数**
    ![リアルタイムの製品表示](assets/analytics-real-time-prodView.png)
 
    **購入**

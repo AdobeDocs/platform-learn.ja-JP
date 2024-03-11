@@ -2,9 +2,9 @@
 title: Debugger を使用した Web SDK の実装のExperience Platform
 description: Adobe Experience Platform Debuggerを使用して Platform Web SDK の実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ Experience Platformデバッガーは、Web ページに実装されているAdo
 * 代替タグライブラリの読み込み
 * クライアント側の XDM イベントがデータをキャプチャし、期待どおりに Platform Edge Network に送信していることを検証します。
 * Edge Trace を有効にして、Platform Edge Network から送信されたサーバー側のリクエストを表示します
-* Adobe Experience Platform Assurance セッションを開始して、Platform Edge Network で生成されたExperience CloudID を表示します
 
 ## 前提条件
 

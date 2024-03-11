@@ -2,9 +2,9 @@
 title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2009'
 ht-degree: 2%
 
 ---
@@ -40,15 +40,16 @@ ht-degree: 2%
 
 ## 命名規則
 
-タグ内のルールの管理を強化するには、標準の命名規則に従うことをお勧めします。 このチュートリアルでは、次の 3 つの部分で構成される命名規則を使用します。
+タグ内のルールの管理を強化するには、標準の命名規則に従うことをお勧めします。 このチュートリアルでは、次の 5 つの部分で構成される命名規則を使用します。
 
-* [**場所**] - [**イベント**] - [**ツール**] (**シーケンス**)
+* [**場所**] - [**イベント**] - [**目的**] - [**ツール**] - [**注文**]
 
 そこで
 
 1. **場所** は、ルールが実行されるサイトのページです
 1. **イベント** は、ルールのトリガーです
-1. **ツール** は、そのルールのアクションステップで使用される特定のアプリケーションまたはアプリケーションです
+1. **目的** は、ルールで実行される主なアクションです
+1. **ツール** は、そのルールのアクションステップで使用される特定のアプリケーションまたはアプリケーションです。Web SDK ではまれに使用されます
 1. **シーケンス** は、他のルールとの関連でルールを実行する順序です
 <!-- minor update -->
 
@@ -59,13 +60,19 @@ ht-degree: 2%
 * **[!UICONTROL 変数を更新]** データ要素を XDM フィールドにマッピングします。
 * **[!UICONTROL イベントの送信]** は XDM オブジェクトを Network EdgeExperience Platformに送信します。
 
-まず、 **[!UICONTROL 変数を更新]** アクション。
+このレッスンの残りの部分では、以下をおこないます。
 
-次に、以下を含む追加のルールを定義します。 **[!UICONTROL 変数を更新]** 「グローバル設定」を、特定の条件でのみ使用可能な追加の XDM フィールドで補足する（例えば、製品ページに製品の詳細を追加する）。
+1. XDM フィールドの「グローバル設定」を定義するルールの作成 ( [!UICONTROL 変数を更新] を使用して、Web サイトのすべてのページ（ページ名など）に送信する **[!UICONTROL 変数を更新]** アクション。
 
-最後に、 **[!UICONTROL イベントの送信]** 完全な XDM オブジェクトをAdobe Experience Platform Edge Network に送信するアクション。
+1. 「グローバル設定」を上書きする追加のルールを作成するか、追加の XDM フィールドを投稿します ( [!UICONTROL 変数を更新] （再び）) と同じで、特定の条件（製品のページに製品の詳細を追加するなど）でのみ関連します。
+
+1. を使用して別のルールを作成します。 **[!UICONTROL イベントの送信]** 完全な XDM オブジェクトをAdobe Experience Platform Edge Network に送信するアクション。
 
 これらのルールはすべて、[!UICONTROL 注文]&quot;オプション。
+
+このビデオでは、プロセスの概要を説明します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
 ### 変数ルールの更新
 
@@ -81,24 +88,22 @@ ht-degree: 2%
 
    ![ルールの作成](assets/rules-create.png)
 
-1. ルール名を設定します。`all pages global content variables - library loaded - AA (order 1)`
+1. ルール名を設定します。`all pages - library loaded - set global variables - 1`
 
 1. Adobe Analytics の **[!UICONTROL イベント]** セクション、選択 **[!UICONTROL 追加]**
 
    ![ルールに名前を付けてイベントを追加する](assets/rule-name-new.png)
 
-1. 以下を使用します。 **[!UICONTROL Core 拡張機能]** を選択し、 `Page Bottom` として **[!UICONTROL イベントタイプ]**
+1. 以下を使用します。 **[!UICONTROL Core 拡張機能]** を選択し、 **[!UICONTROL 読み込まれたライブラリ（ページ上部）]** として **[!UICONTROL イベントタイプ]**
 
-1. の下 **[!UICONTROL 名前]** フィールドに名前を付けます。 `Core - Page Bottom - order 1`. これは、意味のある名前でトリガーを説明するのに役立ちます。
-
-1. 選択 **[!UICONTROL 詳細]** ドロップダウンと入力 `1` in **[!UICONTROL 注文]**
+1. 選択 **[!UICONTROL 詳細]** ドロップダウンと入力 `1` として **[!UICONTROL 注文]**
 
    >[!NOTE]
    >
    > 順序の数が低いほど、早く実行されます。 したがって、「グローバル設定」には低い順番を付けます。
 
 1. 選択 **[!UICONTROL 変更を保持]** メインのルール画面に戻るには
-   ![「Select Page Bottom」トリガー](assets/create-tag-rule-trigger-bottom.png)
+   ![「Select Library Loaded」トリガー](assets/create-tag-rule-trigger-bottom.png)
 
 1. Adobe Analytics の **[!UICONTROL アクション]** セクション、選択 **[!UICONTROL 追加]**
 
@@ -122,7 +127,7 @@ ht-degree: 2%
 
    >[!TIP]
    >
-   > に入力する値を理解するには、以下を実行します。 `eventType` 」フィールドに値を入力するには、スキーマページに移動して、 `eventType` 「 」フィールドを使用して、右側のパネルに推奨値を表示します。
+   > に入力する値を理解するには、以下を実行します。 `eventType` 」フィールドに値を入力するには、スキーマページに移動して、 `eventType` 「 」フィールドを使用して、右側のパネルに推奨値を表示します。 必要に応じて、新しい値を入力することもできます。
    > ![eventType スキーマページで推奨される値](assets/create-tag-rule-eventType.png)
 
 1. 次に、 `identityMap` オブジェクトを選択して選択します。
@@ -160,7 +165,7 @@ ht-degree: 2%
 
 #### 製品ページのフィールド
 
-次に、使用を開始します。 **[!UICONTROL 変数を更新]** に送信する前に XDM オブジェクトをエンリッチメントするための複数の順番付きルール [!UICONTROL Platform Edge Network].
+次に、使用を開始します。 **[!UICONTROL 変数を更新]** をに送信する前に XDM オブジェクトをエンリッチメントするための順番付きルールを追加しました。 [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
@@ -171,12 +176,11 @@ ht-degree: 2%
 まず、Luma の製品の詳細ページで製品表示を追跡します。
 
 1. 選択 **[!UICONTROL ルールを追加]**
-1. 名前を付ける  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
+1. 名前を付ける  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
 1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
-1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
-1. 名前を付ける `Core - Page Bottom - order 20`
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages global content variables - library loaded - AA (order 1)` グローバルコンテンツ変数を設定する
+1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL 読み込まれたライブラリ（ページ上部）]**
+1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが `all pages - library loaded - set global variables - 1` グローバル設定を設定する
 
    ![Analytics XDM ルール](assets/set-up-analytics-pdp.png)
 
@@ -246,11 +250,10 @@ ht-degree: 2%
 次に、配列を XDM オブジェクトにマッピングします。
 
 
-1. という名前の新しいルールを作成します。 `ecommerce - cart library loaded - AA (order 20)`
+1. という名前の新しいルールを作成します。 `ecommerce - library loaded - set shopping cart variables - 20`
 1. を選択します。 ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) イベントの下で新しいトリガーを追加
 1. の下 **[!UICONTROL 拡張]**&#x200B;を選択します。 **[!UICONTROL コア]**
-1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL Page Bottom]**
-1. 名前を付ける `Core - Page Bottom - order 20`
+1. の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択します。 **[!UICONTROL 読み込まれたライブラリ（ページ上部）]**
 1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`
 1. 選択 **[!UICONTROL 変更を保持]**
 
@@ -292,7 +295,7 @@ ht-degree: 2%
 
 以下の違いを持つ同じパターンに従って、他の 2 つのチェックアウトと購入のルールを作成します。
 
-**ルール名**: `ecommerce - checkout library loaded - AA (order 20)`
+**ルール名**: `ecommerce  - library loaded - set checkout variables - 20`
 
 1. **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout.html
 1. `eventType` を `commerce.checkouts` に設定します。
@@ -303,7 +306,7 @@ ht-degree: 2%
    >これは、 `scCheckout` Analytics のイベント
 
 
-**ルール名**: `ecommerce - purchase library loaded - AA (order 20)`
+**ルール名**: `ecommerce - library loaded - set purchase variables -  20`
 
 1. **[!UICONTROL 条件]**: /content/luma/us/en/user/checkout/order/thank-you.html
 1. `eventType` を `commerce.purchases` に設定します。
@@ -338,18 +341,16 @@ ht-degree: 2%
 
 1. 右側で、「 」を選択します。 **[!UICONTROL ルールを追加]** 別の規則を作成するには
 
-1. ルール名を設定します。`all pages send event - library loaded - AA (order 50)`
+1. ルール名を設定します。`all pages - library loaded - set send event - 50`
 
 1. Adobe Analytics の **[!UICONTROL イベント]** セクション、選択 **[!UICONTROL 追加]**
 
-1. 以下を使用します。 **[!UICONTROL Core 拡張機能]** を選択し、 `Page Bottom` として **[!UICONTROL イベントタイプ]**
-
-1. の下 **[!UICONTROL 名前]** フィールドに名前を付けます。 `Core - Page Bottom - order 50`. これは、意味のある名前でトリガーを説明するのに役立ちます。
+1. 以下を使用します。 **[!UICONTROL Core 拡張機能]** を選択し、 `Library Loaded (Page Top)` として **[!UICONTROL イベントタイプ]**
 
 1. 選択 **[!UICONTROL 詳細]** ドロップダウンと入力 `50` in **[!UICONTROL 注文]**. これにより、最初に「トリガー」に設定したルールの後に、2 番目のルールトリガーが確実に適用されます。 `1`.
 
 1. 選択 **[!UICONTROL 変更を保持]** メインのルール画面に戻るには
-   ![「Select Page Bottom」トリガー](assets/create-tag-rule-trigger-bottom-send.png)
+   ![「Select Library Loaded」トリガー](assets/create-tag-rule-trigger-bottom-send.png)
 
 1. Adobe Analytics の **[!UICONTROL アクション]** セクション、選択 **[!UICONTROL 追加]**
 
@@ -383,7 +384,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >    Adobe Experience Platform Web SDK 拡張機能および `all pages global content variables - library loaded - AA (order 50)` ルールには、前のレッスンで作成したタグコンポーネントが表示されます。 Core 拡張機能には、すべての Web タグプロパティで必要となる基本 JavaScript が含まれています。
+   >    前のレッスンで作成したすべてのタグコンポーネントが表示されます。 Core 拡張機能には、すべての Web タグプロパティで必要となる基本 JavaScript が含まれています。
 
 1. 選択 **[!UICONTROL 開発用に保存およびビルド]**
 

@@ -3,14 +3,19 @@ title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 5%
+source-wordcount: '871'
+ht-degree: 3%
 
 ---
 
 # タグルールの作成
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 タグルールは、タグプロパティに何らかの処理を指示するイベント、条件およびアクションを組み合わせたものです。
 
@@ -45,7 +50,7 @@ ht-degree: 5%
 
 * [場所] - [イベント] - [ツール]
 
-条件;
+そこで
 
 1. 場所は、ルールが起動するサイトの 1 つ以上のページです
 1. イベントは、ビーコンを起動するトリガーです。

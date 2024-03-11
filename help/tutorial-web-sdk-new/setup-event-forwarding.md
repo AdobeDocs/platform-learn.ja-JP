@@ -2,9 +2,9 @@
 title: イベント転送プロパティの設定
 description: イベント Web SDK データを使用したイベント転送プロパティのExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 4%
 
 ---
@@ -185,8 +185,8 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
    >[!TIP]
    >
-   独自の Web サイトで作業する際には、Web ブラウザーのネットワークツールを使用した XDM オブジェクトパスを見つけ、次のフィルタリングをおこないます。 `/ee` リクエスト、ビーコンを開く [!UICONTROL **ペイロード**] をクリックし、目的の変数にドリルダウンします。 次に、マウスで右クリックし、「プロパティのパスをコピー」を選択します。 ブラウザビューポートの高さの例を次に示します。
-   ![イベント転送 XDM パス](assets/event-forwarding-xdm-path.png)
+   >独自の Web サイトで作業する際には、Web ブラウザーのネットワークツールを使用した XDM オブジェクトパスを見つけ、次のフィルタリングをおこないます。 `/ee` リクエスト、ビーコンを開く [!UICONTROL **ペイロード**] をクリックし、目的の変数にドリルダウンします。 次に、マウスで右クリックし、「プロパティのパスをコピー」を選択します。 ブラウザビューポートの高さの例を次に示します。
+   > ![イベント転送 XDM パス](assets/event-forwarding-xdm-path.png)
 
 ### AdobeCloud Connector 拡張機能のインストール
 
@@ -280,7 +280,7 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 >[!NOTE]
 >
-ステージングおよび実稼動のイベント転送プロパティをデータストリームにリンクしていない場合、ライブラリを構築する唯一のオプションとして開発環境が表示されます。
+>ステージングおよび実稼動のイベント転送プロパティをデータストリームにリンクしていない場合、ライブラリを構築する唯一のオプションとして開発環境が表示されます。
 
 ![イベント転送ルールを保存する](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ Platform Web SDK タグ拡張を使用して以前に設定した XDM オブジ�
 
 >[!NOTE]
 >
-Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、こちらで共有してください [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

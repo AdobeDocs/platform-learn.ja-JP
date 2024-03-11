@@ -3,14 +3,19 @@ title: Platform Web SDK を使用した同意の設定
 description: Web SDK タグ拡張機能のプライバシー設定のExperience Platform方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1640'
 ht-degree: 0%
 
 ---
 
 # Platform Web SDK を使用した同意の設定
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 Web SDK タグ拡張機能のプライバシー設定のExperience Platform方法について説明します。 訪問者が同意管理プラットフォーム (CMP) のバナーとやり取りすることに基づいて同意を設定します。
 

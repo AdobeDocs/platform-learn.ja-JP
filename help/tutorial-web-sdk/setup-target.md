@@ -3,14 +3,19 @@ title: Platform Web SDK でのAdobe Targetの設定
 description: Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3582'
-ht-degree: 0%
+source-wordcount: '3620'
+ht-degree: 1%
 
 ---
 
 # Platform Web SDK でのAdobe Targetの設定
+
+
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
 
 Platform Web SDK を使用したAdobe Targetの実装方法について説明します。 エクスペリエンスを配信する方法と、追加のパラメーターを Target に渡す方法について説明します。
 
@@ -433,8 +438,8 @@ XDM オブジェクトからマッピングされていない Target に役立�
 
 まず、プロファイル属性、エンティティ属性、カテゴリ値に対して追加のデータ要素を設定し、 `data` XDM 以外のデータを渡すために使用されるオブジェクト：
 
-* **`target.entity.id`** マッピング先： `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** マッピング先： `digitalData.product.0.productInfo.title`
+* **`target.entity.id`**（`digitalData.product.0.productInfo.sku` にマッピング）
+* **`target.entity.name`**（`digitalData.product.0.productInfo.title` にマッピング）
 * **`target.user.categoryId`** 次のカスタムコードを使用して、トップレベルカテゴリのサイト URL を解析します。
 
   ```javascript

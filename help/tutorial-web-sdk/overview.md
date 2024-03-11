@@ -1,22 +1,27 @@
 ---
 title: Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル
-description: Adobe Experience Platform Web SDK を使用して、Experience Cloud アプリケーションを実装する方法について説明します。
+description: Adobe Experience Platform Web SDK を使用してExperience Cloudアプリケーションを実装する方法について説明します。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 25%
+source-wordcount: '434'
+ht-degree: 11%
 
 ---
 
 # Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル
 
-Adobe Experience Platform Web SDK を使用して、Experience Cloud アプリケーションを実装する方法について説明します。
+>[!CAUTION]
+>
+>このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
+
+
+Adobe Experience Platform Web SDK を使用してExperience Cloudアプリケーションを実装する方法について説明します。
 
 Experience PlatformWeb SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できる、クライアントサイド JavaScript ライブラリです。 詳しくは、 [Adobe Experience Platform Web SDK の概要](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) を参照してください。
 
-このチュートリアルでは、Luma と呼ばれるサンプルの小売 Web サイトで Platform Web SDK を実装する手順を説明します。 [](https://luma.enablementadobe.com/content/luma/us/en.html)Luma サイトには、現実的な実装を構築できる豊富なデータレイヤーと機能があります。このチュートリアルを完了すると、すべてのマーケティングソリューションを、お客様独自の Web サイト上で Platform Web SDK を通じて実装する準備が整います。
+このチュートリアルでは、Luma と呼ばれるサンプルの小売 Web サイトで Platform Web SDK を実装する手順を説明します。 The [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html) には、現実的な実装を構築できる豊富なデータレイヤーと機能があります。 このチュートリアルを完了すると、すべてのマーケティングソリューションを、お客様独自の Web サイト上で Platform Web SDK を通じて実装する準備が整います。
 
 [![Luma Web サイト](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
