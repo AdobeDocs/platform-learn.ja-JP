@@ -2,9 +2,9 @@
 title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトを使用して Platform Edge Network にイベントを送信する方法を説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 2%
 このレッスンを最後まで学習すると、次のことが可能になります。
 
 * タグ内のルールを管理するための命名規則を使用する
-* タグルールで「Update Variable」アクションタイプと「Send Event」アクションタイプを使用して XDM イベントを送信します
+* 「変数を更新」アクションと「イベントを送信」アクションを使用して、XDM フィールドでイベントを送信します
+* 複数のルールをまたいで複数の XDM フィールドセットを積み重ねる
+* 個々のデータ要素または配列全体のデータ要素を XDM オブジェクトにマッピングする
 * 開発ライブラリへのタグルールの公開
 
 

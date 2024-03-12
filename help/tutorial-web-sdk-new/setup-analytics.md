@@ -2,9 +2,9 @@
 title: Experience PlatformWeb SDK を使用したAdobe Analyticsのセットアップ
 description: Experience PlatformWeb SDK を使用したAdobe Analyticsの設定方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3024'
 ht-degree: 1%
 
 ---
@@ -21,16 +21,12 @@ ht-degree: 1%
 
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
-* Adobe Analytics用の XDM スキーマの設定
-* Analytics での自動マッピングと手動でマッピングされた XDM 変数の違いの理解
 * Adobe Analyticsを有効にするためのデータストリームの設定
-* 別のAdobe Analyticsレポートスイートにデータを送信するためのデータストリームの上書き
-* 個々のデータ要素または配列全体のデータ要素を XDM オブジェクトにマッピングする
-* 「Update variable rule」アクションタイプを使用して、複数のルールを 1 つの XDM イベントに積み重ねます。
-* XDM オブジェクトを使用してAdobe Analyticsでページビューをキャプチャします
-* Adobe Analytics製品文字列の XDM オブジェクトを使用した e コマースデータのキャプチャ
+* Analytics での自動マッピングと手動でマッピングされた XDM 変数の違いの理解
+* Adobe Analytics固有の変数用の XDM スキーマの設定
 * XDM を使用した製品構文マーチャンダイジングeVarの設定
-* Adobe Analytics変数が XDM オブジェクトで設定されていることを検証するには、Experience PlatformDebugger を使用します。
+* 別のAdobe Analyticsレポートスイートにデータを送信するためのデータストリームの上書き
+* Debugger を使用したAdobe Analytics変数のExperience Platform
 * Adobe Analyticsの処理ルールを使用したカスタム変数の設定
 * Adobe Experience Platform Assurance を使用して、Adobe Analyticsがデータを取り込んだことを検証する
 * リアルタイムレポートを使用して、Adobe Analyticsがデータを取得したことを検証する
