@@ -11,16 +11,16 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13122
-exl-id: 7283134f-049e-4671-8c47-1d58629817cd
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+exl-id: afcbdfcc-cd98-42bc-a3a1-2f040e5bdf58
+source-git-commit: 630c96eb70725e8437058e61ba22750ab5702a14
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 2%
 
 ---
 
 # Real-time Customer Data PlatformでのAdobe Targetの宛先の設定
 
-Real-time Customer Data PlatformでAdobe Targetの宛先を設定し、セグメントとプロファイル属性をReal-Time CDPから Target に送信する方法について説明します。 詳しくは、 [Adobe Target connection のドキュメント](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=ja).
+Adobe TargetとReal-time Customer Data Platformを統合して、セグメントとプロファイル属性のReal-Time CDPから Target への送信を開始する方法について説明します。 詳しくは、 [Adobe Target connection のドキュメント](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=ja).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on)
