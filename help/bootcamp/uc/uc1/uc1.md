@@ -1,20 +1,20 @@
 ---
-title: Bootcamp — 獲得
-description: Bootcamp — 獲得
+title: Bootcamp – 獲得
+description: Bootcamp – 獲得
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-feature: Profiles, Segments, Integrations, Destinations
+feature: Profiles, Audiences, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 0474808b42925bf95529e10a42a0563f0ecc43b8
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
-# 1.獲得
+# 1.買収
 
 ## 学習内容
 
@@ -26,28 +26,28 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->このチュートリアルは、特定の bootcamp 形式を容易にするために作成されました。 アクセスできない特定のシステムおよびアカウントを使用します。 アクセスがなくても、この非常に詳細な内容を読むことで、多くを学ぶことができると思います。 ブートキャンプの参加者で、アクセス資格情報が必要な場合は、Adobe担当者に連絡し、必要な情報を伝えてもらってください。
+>このチュートリアルは、特定の Bootcamp 形式を容易にするために作成されました。 アクセス権がない可能性のある特定のシステムとアカウントを使用します。 アクセス権がなくても、この非常に詳細なコンテンツを読むことで、多くのことを学べると思います。 ブートキャンプのいずれかの参加者でアクセス資格情報が必要な場合は、Adobe担当者に問い合わせてください。担当者からは必要な情報が提供されます。
 
 ## 演習
 
-[1.1 Web サイトへのアクセス](./ex1.md)
+[1.1 ウェブサイトを見る](./ex1.md)
 
-この練習では、スクリプトに従って Web サイトを順を追って進みます。
+この演習では、スクリプトに従って web サイトを確認します。
 
-[1.2 自身のリアルタイム顧客プロファイルの視覚化 — UI](./ex2.md)
+[1.2 独自のリアルタイム顧客プロファイルの視覚化 – UI](./ex2.md)
 
-この演習では、Adobe Experience Platformにログインし、UI に独自のリアルタイム顧客プロファイルを表示します。
+この演習では、Adobe Experience Platformにログインし、独自のリアルタイム顧客プロファイルを UI に表示します。
 
-[1.3 セグメントの作成 — UI](./ex3.md)
+[1.3 オーディエンスの作成 – UI](./ex3.md)
 
-この演習では、Adobe Experience Platformのセグメントビルダーを使用してセグメントを作成します。
+この演習では、Adobe Experience Platform Audience Builder を使用してオーディエンスを作成します。
 
-[1.4 措置をとる：セグメントをAdobe Targetに送信](./ex4.md)
+[1.4 アクションの実行：オーディエンスをAdobe Targetに送信します](./ex4.md)
 
-演習 1.1 で作成したセグメントを使用して、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定します。
+演習 1.1 で作成したオーディエンスを使用して、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定します。
 
-[1.5 措置をとる：セグメントをFacebookに送信](./ex5.md)
+[1.5 アクションの実行：オーディエンスをFacebookに送信します](./ex5.md)
 
-演習 1.1 で作成したセグメントを宛先Facebookに接続します。
+演習 1.1 で作成したオーディエンスを宛先Facebookに接続します。
 
 [すべてのモジュールに戻る](../../overview.md)
