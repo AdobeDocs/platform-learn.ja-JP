@@ -3,9 +3,9 @@ title: Experience Platformアシュランスを使用した Web SDK 実装の検
 description: Adobe Experience Platform Assurance を使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 3%
 
 ---
@@ -61,13 +61,16 @@ Adobe Experience Platform Debuggerで Edge Trace を有効にするたびに、�
 1. を開きます [データ収集インターフェイス](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. 左側のナビゲーションの「Assurance」を選択します
 1. Create Session を選択します。
+   ![Assurance セッションの作成](assets/assurance-create-session.png)
 1. 開始を選択
 1. セッションに名前を付けます。例： `Luma Web SDK validation`
 1. として **[!UICONTROL ベース URL]** enter `https://luma.enablementadobe.com/`
+   ![Assurance セッションに名前を付ける](assets/assurance-name-session.png)
 1. 次の画面で、を選択します。 **[!UICONTROL リンクをコピー]**
 1. アイコンを選択して、クリップボードにリンクをコピーします
 1. URL をブラウザーに貼り付けます。これにより、特別な URL パラメーターを使用して Luma web サイトが開きます `adb_validation_sessionid` セッションを開始します
 1. Assurance インターフェイスには、セッションに正常に接続されたことを示すメッセージが表示され、Assurance インターフェイスで取得されたイベントが表示されます。
+   ![Assurance セッションが接続されました](assets/assurance-success.png)
 
 ## Web SDK 実装の現在の状態の検証
 
