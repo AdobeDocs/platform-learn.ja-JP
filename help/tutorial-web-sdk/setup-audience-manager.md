@@ -1,141 +1,141 @@
 ---
-title: Platform Web SDK でのAudience Managerの設定
-description: Platform Web SDK を使用してAdobe Audience Managerを設定し、Cookie の宛先を使用して実装を検証する方法について説明します。 このレッスンは、「 Adobe Experience Cloudと Web SDK の実装」チュートリアルの一部です。
+title: Platform Web SDK を使用したAudience Managerの設定
+description: Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の宛先を使用して実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 2%
 
 ---
 
-# Platform Web SDK でのAudience Managerの設定
+# Platform Web SDK を使用したAudience Managerの設定
 
 
 >[!CAUTION]
 >
->このチュートリアルに対する大きな変更は、2024 年 3 月 15 日（金）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、チュートリアルを最初から再起動する必要が生じる場合があります。
+>このチュートリアルの大きな変更は、2024 年 4 月 23 日火曜日（PT）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、最初からチュートリアルを再開する必要が生じる場合があります。
 
-Platform Web SDK を使用してAdobe Audience Managerを設定し、Cookie の宛先を使用して実装を検証する方法について説明します。
+Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の宛先を使用して実装を検証する方法を説明します。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=ja) は、サイト訪問者に関する商業的に関連性のある情報を収集し、マーケティング可能なセグメントを作成し、ターゲットを絞った広告やコンテンツを適切なオーディエンスに提供するために必要なあらゆる情報を提供するAdobe Experience Cloudソリューションです。
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=ja) は、サイト訪問者に関する商業的に関連性のある情報を収集し、市場性のあるセグメントを作成し、ターゲット広告やコンテンツを適切なオーディエンスに提供するために必要なすべてを提供するAdobe Experience Cloud ソリューションです。
 
 
-## 学習内容
+## 学習目標
 
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
 * データストリームを設定してAudience Managerを有効にする
-* Audience Managerでの Cookie の宛先の有効化
-* Adobe Experience Platform DebuggerでAudience Managerの選定を確認し、オーディエンスの実装を検証する
+* Audience Managerでの cookie の宛先の有効化
+* Adobe Experience Platform Debuggerでオーディエンスの選定を確認して、Audience Manager実装を検証します。
 
 ## 前提条件
 
-このレッスンを完了するには、まず次の手順を実行する必要があります。
+このレッスンを完了するには、まず次の操作を行う必要があります。
 
-* このチュートリアルの「初期設定」および「タグの設定」節の前のレッスンを完了していること。
-* Adobe Audience Managerへのアクセス権と、特性、セグメントおよび宛先の作成、読み取り、書き込みをおこなうための適切な権限を持っています。 詳しくは、 [Audience Managerの役割に基づくアクセス制御](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
+* Adobe Audience Managerへのアクセス権と、特性、セグメントおよび宛先を作成、読み取りおよび書き込むための適切な権限を持っています。 詳しくは、を参照してください。 [Audience Managerの役割ベースのアクセス制御](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
 
 ## データストリームの設定
 
-Platform Web SDK を使用したAudience Manager実装は、 [サーバー側転送 (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=ja). サーバー側転送は、Adobe AnalyticsリクエストデータをAudience Managerに渡します。 Platform Web SDK の実装は、Platform Edge Network に送信された XDM データをAudience Managerに渡します。 Audience Managerは datastream で有効になっています。
+Platform Web SDK を使用したAudience Manager実装は、を使用した実装とは異なります [サーバーサイド転送（SSF）](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=ja). サーバーサイド転送は、Adobe Analytics リクエストデータをAudience Managerに渡します。 Platform Web SDK 実装は、Platform Edge Networkに送信された XDM データをAudience Managerに渡します。 データストリームでAudience Managerが有効になっています。
 
-1. に移動します。 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
-1. 左側のナビゲーションで、「 **[!UICONTROL データストリーム]**
-1. 以前に作成したを選択 `Luma Web SDK` datastream
+1. に移動 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
+1. 左側のナビゲーションで「」を選択します **[!UICONTROL データストリーム]**
+1. 以前に作成したを選択します `Luma Web SDK` データストリーム
 
-   ![Luma Web SDK データストリームを選択します。](assets/datastream-luma-web-sdk.png)
+   ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk.png)
 
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
-   ![データストリームにサービスを追加する](assets/aam-datastream-addService.png)
-1. 選択 **[!UICONTROL Adobe Audience Manager]** として **[!UICONTROL サービス]**
-1. 確認 **[!UICONTROL Cookie の宛先が有効になっています]** および **[!UICONTROL URL の宛先が有効になっています]** が選択されています
+   ![データストリームへのサービスの追加](assets/aam-datastream-addService.png)
+1. を選択 **[!UICONTROL Adobe Audience Manager]** as the **[!UICONTROL サービス]**
+1. を確認します。 **[!UICONTROL Cookie 宛先が有効]** および **[!UICONTROL URL 宛先が有効]** が選択されました
 1. 「**[!UICONTROL 保存]**」を選択します
-   ![Audience Managerデータストリーム設定を確認し、保存します。](assets/aam-datastream-save.png)
+   ![Audience Managerデータストリームの設定を確定し、保存します。](assets/aam-datastream-save.png)
 
 ## データソースの作成
 
-次に、 [データソース](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=ja)を使用すると、Audience Manager内のデータを整理するための基本的なツールです。
+次に、を作成します [データソース](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=ja):Audience Manager内のデータを整理するための基本的なツール：
 
-1. 次に移動： [Audience Manager](https://experience.adobe.com/#/audience-manager/) インターフェイス
-1. 選択 **[!UICONTROL オーディエンスデータ]** 上部ナビゲーションから
-1. を選択します。 **[!UICONTROL データソース]** ドロップダウンメニューから
-1. を選択します。 **[!UICONTROL 新規追加]** ボタンをクリックします。
+1. に移動します [Audience Manager](https://experience.adobe.com/#/audience-manager/) インターフェイス
+1. を選択 **[!UICONTROL オーディエンスデータ]** 上部ナビゲーションから
+1. 「」を選択します **[!UICONTROL データソース]** ドロップダウンメニューから
+1. 「」を選択します **[!UICONTROL 新規を追加]** 「データソース」ページの上部にあるボタン
 
-   ![Adobe Experience PlatformAudience Managerデータソース](assets/data-sources-list.jpg)
+   ![Adobe Experience Platform Audience Managerのデータソース](assets/data-sources-list.jpg)
 
-1. データソースにわかりやすい名前と説明を付けます。 初期設定では、この名前を`Platform Web SDK tutorial`.
-1. 設定 **[!UICONTROL ID Type]** から **[!UICONTROL Cookie]**
-1. Adobe Analytics の **[!UICONTROL データ書き出しコントロール]** セクション、選択 **[!UICONTROL 制限なし]**
+1. データソースにわかりやすい名前と説明を付けます。 初期設定では、この名前を付けることができます`Platform Web SDK tutorial`.
+1. を設定 **[!UICONTROL ID タイプ]** 対象： **[!UICONTROL Cookie]**
+1. が含まれる **[!UICONTROL データ書き出しコントロール]** セクションで選択 **[!UICONTROL 制限なし]**
 
-   ![Adobe Experience PlatformAudience Managerデータソースの設定](assets/data-source-details.png)
+   ![Adobe Experience Platform Audience Managerデータソースのセットアップ](assets/data-source-details.png)
 
 1. **[!UICONTROL 保存]** データソース
 
 
 ## 特性の作成
 
-データソースを保存したら、 [trait](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=ja). 特性は、Audience Manager内の 1 つ以上のシグナルの組み合わせです。 ホームページ訪問者用の特性を作成します。
+データソースを保存した後、 [特性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=ja). 特性は、Audience Managerにおける 1 つ以上のシグナルの組み合わせです。 ホームページ訪問者の特性を作成します。
 
 >[!NOTE]
 >
->データストリームで有効になっている場合、すべての XDM データがAudience Managerに送信されますが、未使用シグナルレポートで使用できるようになるまで、データには 24 時間かかる場合があります。 この演習で説明するように、Audience Managerですぐに使用する XDM データの明示的な特性を作成します。
+>データストリームですべての XDM データが有効な場合、Audience Managerに送信されますが、未使用のシグナル レポートで使用できるようになるまで 24 時間かかる場合があります。 この演習で説明しているように、Audience Managerですぐに使用する XDM データの明示的な特性を作成します。
 
-1. 選択 **[!UICONTROL オーディエンスデータ]** >  **[!UICONTROL 特性]**
-1. 選択 **[!UICONTROL 新規追加]** >  **[!UICONTROL ルールベース]** trait
+1. を選択 **[!UICONTROL オーディエンスデータ]** >  **[!UICONTROL 特性]**
+1. を選択 **[!UICONTROL 新規を追加]** >  **[!UICONTROL ルールベース]** 特性
 
-   ![Adobe Experience PlatformAudience Managerルールベースの特性](assets/rule-based-trait.jpg)
+   ![Adobe Experience PlatformAudience Managerのルールベースの特性](assets/rule-based-trait.jpg)
 
-1. 特性のわかりやすい名前と説明を入力します。 `Luma homepage view`
-1. を選択します。 **[!UICONTROL データソース]** 前の節で作成した内容。
-1. **[!UICONTROL フォルダーを選択]** 右側のパネルに特性を保存する場所です。 次の方法でフォルダーを作成できます。 **「+」アイコンの選択** 既存の親フォルダーの横に表示されます。 この新しいフォルダーに名前を付けることができます `Platform Web SDK tutorial`.
-1. を展開します。 **[!UICONTROL 特性式]** キャレットと選択 **[!UICONTROL 式ビルダー]** ホームページの訪問を示すキー値ペアを指定する必要があります。
-1. を開きます。 [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html) （タグプロパティにマッピング）および **Platform Web SDK Debugger** をクリックし、ページを更新します。
-1. Platform Web SDK のネットワークリクエストとイベントの詳細を確認して、ホームページのキーと名前の値を見つけます。
-   ![Adobe Experience PlatformAudience ManagerXDM データ](assets/xdm-keyvalue.jpg)
-1. Audience ManagerUI の式ビルダーに戻り、キーに「 」と入力します。 **`web.webPageDetails.name`** そして、 **`content:luma:us:en`**. この手順により、ホームページを読み込むたびに特性を実行できます。
+1. 特性にわかりやすい名前と説明を付けます。 `Luma homepage view`
+1. 「」を選択します **[!UICONTROL データソース]** 前の節で作成しました。
+1. **[!UICONTROL フォルダーを選択]** 右側のパネルに特性を保存する場所。 次の方法でフォルダーを作成できます。 **「+」アイコンを選択** 既存の親フォルダーの横。 この新しいフォルダーに名前を付けることができます `Platform Web SDK tutorial`.
+1. を展開します。 **[!UICONTROL 特性式]** キャレットと選択 **[!UICONTROL 式ビルダー]** ホームページの訪問を示すキーと値のペアを指定する必要があります。
+1. を開きます [Luma ホームページ](https://luma.enablementadobe.com/content/luma/us/en.html) （タグプロパティにマッピング）および **Platform Web SDK デバッガー** ページを更新します。
+1. Platform Web SDK のネットワークリクエストとイベントの詳細を調べて、ホームページのキーと名前の値を見つけます。
+   ![Adobe Experience Platform Audience Manager XDM Data](assets/xdm-keyvalue.jpg)
+1. Audience ManagerUI の式ビルダーに戻り、キーをに入力します **`web.webPageDetails.name`** およびの値 **`content:luma:us:en`**. この手順により、ホームページを読み込むたびに特性を実行するようにします。
 1. **[!UICONTROL 保存]** 特性。
 
 
 ## セグメントの作成
 
-次の手順は、 **セグメント**&#x200B;をクリックし、新しく定義した特性をこのセグメントに割り当てます。
+次の手順では、を作成します **セグメント**&#x200B;を選択し、新しく定義した特性をこのセグメントに割り当てます。
 
-1. 選択 **[!UICONTROL オーディエンスデータ]** 上部のナビゲーションで、「 」を選択します。 **[!UICONTROL セグメント]**
-1. 選択 **[!UICONTROL 新規追加]** （ページの左上）をクリックして、セグメントビルダーを開きます。
-1. セグメントにわかりやすい名前と説明（例： ）を付けます。 `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL フォルダーを選択]** セグメントが保存される場所を右側のパネルに示します。 次の方法でフォルダーを作成できます。 **「+」アイコンの選択** 既存の親フォルダーの横に表示されます。 この新しいフォルダーに名前を付けることができます `Platform Web SDK tutorial`.
-1. 統合コードを追加します。この場合は、乱数セットです。 1. **[!UICONTROL データソース]** セクション、選択 **[!UICONTROL Audience Manager]** と、前に作成したデータソース
-1. を展開します。 **[!UICONTROL 特性]** セクションで、作成した特性を検索します。
-1. 選択 **[!UICONTROL 特性を追加]**.
-1. 選択 **[!UICONTROL 保存]** ページの下部に
+1. を選択 **[!UICONTROL オーディエンスデータ]** 上部のナビゲーションでを選択し、 **[!UICONTROL セグメント]**
+1. を選択 **[!UICONTROL 新規を追加]** ページの左上でセグメントビルダーを開く
+1. 次のように、セグメントにわかりやすい名前と説明を指定します `Platform Web SDK - Homepage visitors`
+1. **[!UICONTROL フォルダーを選択]** ここで、セグメントは右側のパネルに保存されます。 次の方法でフォルダーを作成できます。 **「+」アイコンを選択** 既存の親フォルダーの横。 この新しいフォルダーに名前を付けることができます `Platform Web SDK tutorial`.
+1. 統合コードを追加します。この場合は、数字のランダムセットです。 1.現在 **[!UICONTROL データソース]** セクションで選択 **[!UICONTROL Audience Manager]** と、前の手順で作成したデータソース
+1. を展開します。 **[!UICONTROL 特性]** をクリックし、作成した特性を検索します
+1. を選択 **[!UICONTROL 特性を追加]**.
+1. を選択 **[!UICONTROL 保存]** ページの下部
 
-   ![Adobe Experience PlatformAudience ManagerAdd Trait](assets/add-trait-segment.jpg)
+   ![Adobe Experience Platform Audience Manager追加特性](assets/add-trait-segment.jpg)
 
-   ![Adobe Experience PlatformAudience ManagerAdd Trait](assets/saved-segment.jpg)
+   ![Adobe Experience Platform Audience Manager追加特性](assets/saved-segment.jpg)
 
 ## 宛先の作成
 
-次に、 **Cookie ベースの宛先** の使用 **宛先ビルダー**. Destination Builder を使用すると、Cookie、URL、サーバー間の各宛先を作成および管理できます。
+次に、を作成します **cookie ベースの宛先** の使用 **宛先ビルダー**. 宛先ビルダーを使用すると、Cookie、URL およびサーバー間の宛先を作成および管理できます。
 
-1. 次を選択して Destination Builder を開く **[!UICONTROL 宛先]** 内 **オーディエンスデータ** 上部のナビゲーションのメニュー
-1. 選択 **[!UICONTROL 宛先を作成]**
+1. 次を選択して、宛先ビルダーを開きます **[!UICONTROL 宛先]** 内 **オーディエンスデータ** 上部ナビゲーションのメニュー
+1. を選択 **[!UICONTROL 宛先を作成]**
 1. 名前と説明を入力します。 `Platform Web SDK tutorial`
-1. を **[!UICONTROL カテゴリ]**&#x200B;を選択します。 **[!UICONTROL カスタム]**
-1. を **[!UICONTROL タイプ]**&#x200B;を選択します。 **[!UICONTROL Cookie]**
+1. として **[!UICONTROL カテゴリ]**&#x200B;を選択 **[!UICONTROL カスタム]**
+1. として **[!UICONTROL タイプ]**&#x200B;を選択 **[!UICONTROL Cookie]**
 
-   ![Adobe Experience PlatformAudience ManagerAdd Trait](assets/destination-settings.jpg)
+   ![Adobe Experience Platform Audience Manager追加特性](assets/destination-settings.jpg)
 
-1. を開きます。 **[!UICONTROL 設定]** セクションを使用して、Cookie の宛先に関する詳細を入力します。
-1. cookie にわかりやすい名前を付けます。 `platform_web_sdk_tutorial`
-1. を **[!UICONTROL Cookie ドメイン]**、統合を計画しているサイトのドメインを追加します。このチュートリアルでは、Luma ドメインを入力します。 `luma.enablementadobe.com`
-1. を **[!UICONTROL にデータを公開]** オプション、選択 **[!UICONTROL 選択したドメインのみ]**
-1. ドメインを選択します（まだ追加されていない場合）
-1. を **[!UICONTROL データフォーマット]**&#x200B;を選択します。 **[!UICONTROL 単一キー]** クッキーに鍵を渡してください。 このチュートリアルでは、 `segment` をキー値として使用します。
-1. 最後に、 **[!UICONTROL 保存]** をクリックして、宛先の設定の詳細を保存します。
+1. を開きます **[!UICONTROL 設定]** cookie の宛先に関する詳細を入力するセクション
+1. cookie にわかりやすい名前を付け、 `platform_web_sdk_tutorial`
+1. として **[!UICONTROL Cookie ドメイン]**&#x200B;を開き、統合を計画しているサイトのドメインを追加します。チュートリアルでは Luma ドメインを入力します。 `luma.enablementadobe.com`
+1. として **[!UICONTROL へのデータの公開]** オプション、を選択 **[!UICONTROL 選択したドメインのみ]**
+1. まだ追加していない場合は、ドメインを選択します
+1. として **[!UICONTROL データ形式]**&#x200B;を選択 **[!UICONTROL 単一のキー]** cookie にキーを渡します。 このチュートリアルではを使用します `segment` キー値として。
+1. 最後に、を選択します **[!UICONTROL 保存]** 宛先設定の詳細を保存します。
 
-   ![Audience Managerの宛先の設定セクション](assets/aam-destination-config-dw.png)
+   ![Audience Manager先の設定セクション](assets/aam-destination-config-dw.png)
 
 <!--
    ![Adobe Experience Platform Audience Manager Add Trait](assets/aam-destination-config.jpg)
@@ -144,47 +144,47 @@ Platform Web SDK を使用したAudience Manager実装は、 [サーバー側転
    ![Adobe Experience Platform Audience Manager Add Trait](assets/cookie-destination-config.jpg)
 -->
 
-1. Adobe Analytics の **[!UICONTROL Segment Mappings]** セクションで、 **[!UICONTROL セグメントの検索と追加]** 以前に作成した `Platform Web SDK - Homepage visitors` を選択し、 **[!UICONTROL 追加]**.
+1. が含まれる **[!UICONTROL セグメントマッピング]** セクションで、 **[!UICONTROL セグメントの検索と追加]** 以前に作成したを検索する機能 `Platform Web SDK - Homepage visitors` を選択して、 **[!UICONTROL 追加]**.
 
 
-1. セグメントを追加すると、ポップアップが開き、Cookie に期待される値を指定する必要があります。 この演習では、値&quot;hpvisitor&quot;を入力します。
+1. セグメントを追加すると、ポップアップが開き、Cookie に対する期待値を指定する必要があります。 この演習では、「hpvisitor」という値を入力します。
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
-1. 選択 **[!UICONTROL 完了]**
-   ![Adobe Experience PlatformAudience ManagerAdd Trait](assets/luma-cookie-segment-dw.png)
+1. を選択 **[!UICONTROL 完了]**
+   ![Adobe Experience Platform Audience Manager追加特性](assets/luma-cookie-segment-dw.png)
 
-セグメントマッピング期間を有効にするには、数時間かかります。 完了したら、Audience Managerインターフェイスを更新し、 **マッピングされたセグメント** リストが更新されました。
+セグメントマッピング期間をアクティブ化するには数時間かかります。 完了したら、Audience Managerインターフェイスを更新して、 **マッピングされたセグメント** リストが更新されました。
 
 ## セグメントの検証
 
-セグメントの初期作成から数時間後に、セグメントが正しく動作していることを検証できます。
+セグメントの最初の作成から数時間後に、セグメントが正しく動作していることを検証できます。
 
-まず、セグメントの条件を満たしていることを確認します。
+まず、セグメントに適合できることを確認します
 
-1. を開きます。 [Luma デモサイトのホームページ](https://luma.enablementadobe.com/content/luma/us/en.html) をタグプロパティにマッピングし、新しく作成したセグメントの対象として認定されます。
-1. ブラウザーの **開発者ツール**  > **ネットワーク** タブ
-1. 次を使用して、Platform Web SDK リクエストにフィルターを適用する `interact` をテキストフィルターとして使用する
-1. 呼び出しを選択し、 **プレビュー** タブに応答の詳細を表示します
-1. を展開します。 **ペイロード** をクリックして、Audience Managerで事前に設定された、期待される cookie の詳細を表示します。 この例では、期待される cookie 名が表示されます。 `platform_web_sdk_tutorial`.
+1. を開きます [Luma デモサイトのホームページ](https://luma.enablementadobe.com/content/luma/us/en.html) を新しく作成したセグメントに適合するように、タグプロパティにマッピングします。
+1. ブラウザーのを開きます **開発者ツール**  > **ネットワーク** タブ
+1. を使用して、Platform Web SDK リクエストにフィルタリングします。 `interact` テキストフィルターとして
+1. 呼び出しを選択し、 **プレビュー** tab キーを押すと応答の詳細を表示できます
+1. を展開します。 **ペイロード** で以前にAudience Managerで設定したように、想定される cookie の詳細を表示します。 この例では、想定される cookie 名が表示されます `platform_web_sdk_tutorial`.
 
-   ![Adobe Experience PlatformAudience ManagerAdd Trait](assets/segment-validate-response.jpg)
+   ![Adobe Experience Platform Audience Manager追加特性](assets/segment-validate-response.jpg)
 
-1. を開きます。 **アプリ** タブをクリックして、を開きます。 **Cookie** から **ストレージ** メニュー。
-1. を選択します。 **`https://luma.enablementadobe.com`** ドメインを開き、cookie がリストに適切に書き込まれていることを確認します。
+1. を開きます **用途** tab キーを押して開きます **の Cookie** から **ストレージ** メニュー。
+1. 「」を選択します **`https://luma.enablementadobe.com`** をドメインに登録し、cookie がリストに適切に記述されていることを確認します
 
-   ![Adobe Experience PlatformAudience ManagerAdd Trait](assets/validate-cookie.jpg)
-
-
-最後に、セグメントインターフェイスでセグメントをAudience Managerし、 **Segment Populations** は増分されました。
-
-![Adobe Experience PlatformAudience ManagerAdd Trait](assets/segment-population.jpg)
+   ![Adobe Experience Platform Audience Manager追加特性](assets/validate-cookie.jpg)
 
 
-このレッスンを完了すると、Platform Web SDK がAudience Managerにデータを渡す方法を確認でき、Cookie の宛先を使用してセグメント固有のファーストパーティ Cookie を設定できるようになります。
+最後に、Audience Managerインターフェイスでセグメントを開き、次のことを確認する必要があります **セグメント母集団** が増分しました：
+
+![Adobe Experience Platform Audience Manager追加特性](assets/segment-population.jpg)
+
+
+このレッスンを完了すると、Platform Web SDK がデータをAudience Managerに渡す方法を確認し、cookie の送信先を使用してセグメント固有のファーストパーティ cookie を設定できるようになります。
 
 [次へ： ](setup-target.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、将来のコンテンツに関する提案がある場合は、このページで共有します [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
