@@ -3,7 +3,7 @@ title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Tags
 exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: 0220f5dbe8e34e92cf584380629ecc29a549dabd
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 2%
@@ -344,7 +344,7 @@ ht-degree: 2%
 
 1. 右側で、を選択します **[!UICONTROL ルールを追加]** 別のルールを作成するには
 
-1. ルール名を設定します。`all pages - library loaded - set send event - 50`
+1. ルール名を設定します。`all pages - library loaded - send event - 50`
 
 1. が含まれる **[!UICONTROL イベント]** セクションで選択 **[!UICONTROL 追加]**
 

@@ -1,20 +1,20 @@
 ---
-title: Bootcamp - Real-time CDP - オーディエンスの作成とアクションの実行 – オーディエンスを DV360 に送信する
-description: Bootcamp - Real-time CDP - オーディエンスの作成とアクションの実行 – オーディエンスを DV360 に送信する
+title: Bootcamp - Real-time CDP - セグメントの作成とアクションの実行 – セグメントを DV360 に送信します
+description: Bootcamp - Real-time CDP - セグメントの作成とアクションの実行 – セグメントを DV360 に送信します
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 feature: Destinations
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
-source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
 
 ---
 
-# 1.5 アクションの実行：オーディエンスをFacebookに送信します
+# 1.5 アクションの実行：セグメントをFacebookに送信します
 
 に移動 [Adobe Experience Platform](https://experience.adobe.com/platform). ログインすると、Adobe Experience Platformのホームページが表示されます。
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ![データ取得](./images/sb1.png)
 
-左側のメニューで、に移動します。 **宛先**&#x200B;に移動します。 **カタログ**. 「」が表示されます。 **宛先カタログ**. 対象： **宛先**&#x200B;を選択し、 **オーディエンスをアクティベート** 日 **Facebook カスタムオーディエンス** カード。
+左側のメニューで、に移動します。 **宛先**&#x200B;に移動します。 **カタログ**. 「」が表示されます。 **宛先カタログ**. 対象： **宛先**&#x200B;を選択し、 **セグメントのアクティブ化** 日 **Facebook カスタムオーディエンス** カード。
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-使用可能なオーディエンスのリストで、前の演習で作成したオーディエンスを選択します。 「**次へ**」をクリックします。
+使用可能なセグメントのリストで、前の演習で作成したセグメントを選択します。 「**次へ**」をクリックします。
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-日 **オーディエンススケジュール** ページで、 **オーディエンスの接触チャネル** およびを設定します **顧客から直接**. 「**次へ**」をクリックします。
+日 **セグメントスケジュール** ページで、 **オーディエンスの接触チャネル** およびを設定します **顧客から直接**. 「**次へ**」をクリックします。
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
@@ -48,9 +48,9 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-これで、オーディエンスがFacebook カスタムオーディエンスにリンクされました。 お客様がこのオーディエンスの資格を得るたびに、シグナルがFacebook サーバーサイドに送信され、そのお客様がFacebook サイドのカスタムオーディエンスに含まれます。
+これで、セグメントがFacebook カスタムオーディエンスにリンクされました。 お客様がこのセグメントの資格を得るたびに、シグナルがFacebook サーバーサイドに送信され、その顧客がFacebook サイドのカスタムオーディエンスに含まれます。
 
-facebookでは、「カスタムオーディエンス」の下にAdobe Experience Platformのオーディエンスが表示されます。
+facebookでは、「カスタムオーディエンス」の下にAdobe Experience Platformからのセグメントがあります。
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
