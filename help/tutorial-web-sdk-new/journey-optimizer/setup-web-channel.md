@@ -5,10 +5,10 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+source-git-commit: 43eb66edecb9dce59dbb4995230181c9f2cbce5b
 workflow-type: tm+mt
-source-wordcount: '2587'
-ht-degree: 0%
+source-wordcount: '2675'
+ht-degree: 1%
 
 ---
 
@@ -127,10 +127,29 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
 ### ロイヤルティスキーマの作成とサンプルデータの取り込み
 
-Web SDK データがAdobe Experience Platformに取り込まれると、取り込んだ他のすべてのデータによってエンリッチメントされる可能性があります。 ユーザーが Luma サイトに認証され、認証された ID が Luma の CRM システムの ID を表す Platform に送信されます。 ID グラフはExperience Platformで構成され、その他すべてのプロファイル対応データセットには、も使用する ID が含まれています `lumaCrmId` 名前空間を結合して、リアルタイム顧客プロファイルを作成できます。 Adobe Experience Platformで別のデータセットをすばやく作成し、いくつかのサンプルロイヤルティデータを使用して、Journey Optimizer web キャンペーンでリアルタイム顧客プロファイルをどのように使用できるかを示します。 あなたは既に同様の演習を行ったので、指示は簡単になります。
+Web SDK データを Platform に取り込むと、Adobe Experience Platformに取り込んだ他のデータソースによってデータを強化できます。 例えば、ユーザーが Luma サイトにログインすると、 `lumaCrmId` は、Luma の CRM システムの ID を表す Platform に送信されます。 ID グラフはExperience Platformで作成され、他のすべてのプロファイル対応データセットを結合してリアルタイム顧客プロファイルを作成できる可能性があります。 Adobe Experience Platformで別のデータセットをすばやく作成し、いくつかのサンプルロイヤルティデータを使用して、Journey Optimizer web キャンペーンでリアルタイム顧客プロファイルをどのように使用できるかを示します。 あなたは既に同様の演習を行ったので、指示は簡単になります。
 
+スキーマを作成するには：
 
+1. 新しいスキーマの作成
+1. を選択 **[!UICONTROL 個人プロファイル]** as the [!UICONTROL 基本クラス]
+1. スキーマに名前を付ける `Luma Loyalty Schema`
+1. 「」を選択します `personID` フィールドとマークはです [!UICONTROL ID] および [!UICONTROL プライマリ ID] の使用 `Luma CRM Id` [!UICONTROL ID 名前空間].
+1. を追加 [!UICONTROL ロイヤルティの詳細] フィールドグループ
+1. のスキーマを有効にする [!UICONTROL Profile]
 
+スキーマのスクリーンショット
+
+データセットを作成してサンプルデータを取り込むには：
+
+1. から新しいデータセットを作成 `Luma Loyalty Schema`
+1. データセットに名前を付ける `Luma Loyalty Dataset`
+1. のデータセットを有効にする [!UICONTROL Profile]
+1. サンプル LoyaltyWebSDK.json ファイルをダウンロードします
+1. ファイルをデータセットにドラッグ&amp;ドロップします
+1. データが正常に取り込まれていることを確認します
+
+データセットと確認のスクリーンショット
 
 ### ロイヤルティ報酬キャンペーンの作成
 

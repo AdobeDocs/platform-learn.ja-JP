@@ -2,9 +2,10 @@
 title: Platform Web SDK を使用したAdobe Targetの設定
 description: Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Platform Web SDK を使用してAdobe Targetを実装する方法について説
 
 ## 学習目標
 
-このレッスンを最後まで学習すると、以下の内容を習得できます。
+このレッスンの最後では、Target の Web SDK 実装を使用して、次の操作を実行できるようになります。
 
-* 非同期タグ埋め込みコードで Target を使用する際に、ちらつきを防ぐために Platform Web SDK をあらかじめ非表示にするスニペットを追加する方法を説明します
+* ちらつきを防ぐために、事前非表示のスニペットを追加
 * データストリームの設定による Target 機能の有効化
 * Visual experience composer アクティビティのレンダリング
 * フォームコンポーザーアクティビティのレンダリング
 * XDM データを Target に渡し、Target パラメーターへのマッピングを理解します。
 * プロファイルやエンティティパラメーターなどのカスタムデータを Target に渡す
-* Platform Web SDK を使用した Target 実装の検証
-* Target の提案リクエストをAdobe Analytics リクエストとは別に送信し、後で表示イベントを解決します
+* Target 実装の検証
+* パーソナライゼーションリクエストと Analytics リクエストの分離
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Platform Web SDK を使用してAdobe Targetを実装する方法について説
    * [フォームベースの Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [エクスペリエンスのターゲット設定アクティビティの作成](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## フリッカーの軽減を追加
+## ちらつき処理の追加
 
 開始する前に、タグライブラリの読み込み方法に応じて、追加のちらつき処理ソリューションが必要かどうかを確認します。
 
@@ -59,7 +60,7 @@ Platform Web SDK を使用してAdobe Targetを実装する方法について説
 
 ### 非同期実装
 
-タグライブラリが非同期で読み込まれると、Target がコンテンツの入れ替えを実行する前に、ページのレンダリングが終了する場合があります。 この動作により、Target で指定し、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示される、「ちらつき」と呼ばれる現象が発生する可能性があります。 このちらつきを回避するには、Adobeでは、非同期タグ埋め込みコードの直前に、事前に非表示になる特別なスニペットを追加することをお勧めします。
+タグライブラリが非同期で読み込まれると、Target がデフォルトのコンテンツをパーソナライズされたコンテンツに置き換える前に、ページのレンダリングが終了する場合があります。 この動作により、Target で指定し、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示される、「ちらつき」と呼ばれる現象が発生する可能性があります。 このちらつきを回避するには、Adobeでは、非同期タグ埋め込みコードの直前に、事前に非表示になる特別なスニペットを追加することをお勧めします。
 
 このスニペットは既に Luma サイトに存在しますが、このコードの機能を詳しく見ていきます。
 
@@ -181,7 +182,7 @@ Luma サイトを使用したこのチュートリアルでは、ID シンボル
 
 ## ビジュアルパーソナライゼーションの決定のレンダリング
 
-まず、Target インターフェイスとタグインターフェイスで使用される用語を理解する必要があります。
+Visual Personalization の決定とは、Adobe Targetの visual experience composer で作成されるエクスペリエンスを指します。 まず、Target インターフェイスとタグインターフェイスで使用される用語を理解する必要があります。
 
 * **Activity**:1 つ以上のオーディエンスをターゲットとした一連のエクスペリエンス。 例えば、単純な A/B テストは、2 つのエクスペリエンスを持つアクティビティにすることができます。
 * **経験**:1 つ以上の場所または決定範囲をターゲットとしたアクションのセット。
