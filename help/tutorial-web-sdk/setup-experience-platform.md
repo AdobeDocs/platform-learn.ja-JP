@@ -2,23 +2,20 @@
 title: Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
 description: Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 8%
+source-wordcount: '1587'
+ht-degree: 7%
 
 ---
 
 # Web SDK を使用したExperience Platformへのデータのストリーミング
 
-
->[!CAUTION]
->
->このチュートリアルの大きな変更は、2024 年 4 月 23 日火曜日（PT）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、最初からチュートリアルを再開する必要が生じる場合があります。
-
 Platform Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法について説明します。
 
 Experience Platformは、Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics、Adobe Journey Optimizerなど、すべての新しいExperience Cloudアプリケーションのバックボーンです。 これらのアプリケーションは、web データ収集の最適な方法として Platform Web SDK を使用するように設計されています。
+
+![Web SDK とAdobe Experience Platformの図](assets/dc-websdk-aep.png)
 
 Experience Platformは、以前に作成したのと同じ XDM スキーマを使用して、Luma web サイトからイベントデータを取得します。 そのデータが Platform Edge Networkに送信されると、データストリーム設定はデータをExperience Platformに転送できます。
 
@@ -33,34 +30,22 @@ Experience Platformは、以前に作成したのと同じ XDM スキーマを�
 
 ## 前提条件
 
-次のレッスンを完了している必要があります。
+このレッスンを完了するには、まず次の操作を行う必要があります。
 
-* この **初期設定** レッスン：
-   * [権限の設定](configure-permissions.md)
-   * [XDM スキーマの設定](configure-schemas.md)
-   * [データストリームの設定](configure-datastream.md)
-   * [ID 名前空間の設定](configure-identities.md)
-
-* この **タグの設定** レッスン：
-   * [Web SDK 拡張機能のインストール](install-web-sdk.md)
-   * [データ要素の作成](create-data-elements.md)
-   * [タグルールの作成](create-tag-rule.md)
+* Real-time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform アプリケーションにアクセスできる
+* このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
 
 
 ## データセットの作成
 
 Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) は、スキーマ（列）とフィールド（行）を含んだデータコレクション（通常はテーブル）のストレージおよび管理用の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
-この演習では、のコンテンツと e コマースの詳細を追跡するデータセットを作成します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->を既に作成している必要があります `Luma Web Event Data` 前のレッスンで説明したように、スキーマは次のとおりです。 [XDM スキーマの設定](configure-schemas.md).
+Luma web イベントデータのデータセットを設定しましょう。
 
 
 1. に移動します [Experience Platformインターフェイス](https://experience.adobe.com/platform/)
 1. このチュートリアルに使用する開発用サンドボックスに属していることを確認します
-1. 開く **[!UICONTROL データセット]** 左側のナビゲーションから
+1. 開く **[!UICONTROL データ管理/ データセット]** 左側のナビゲーションから
 1. を選択 **[!UICONTROL データセットを作成]**
 
    ![スキーマを作成](assets/experience-platform-create-dataset.png)
@@ -87,7 +72,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 1. を選択 **[!UICONTROL データストリーム]** 左側のナビゲーションから
 1. で作成したデータストリームを開きます。 [データストリームの設定](configure-datastream.md) レッスン、 `Luma Web SDK`
 
-   ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk.png)
+   ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk-development.png)
 
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームへのサービスの追加](assets/experience-platform-addService.png)
@@ -135,7 +120,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 データが Platform のデータレイクに到達したことを確認するには、を使用する簡単なオプションがあります **[!UICONTROL データセットをプレビュー]** 機能 Web SDK データは、データレイクにマイクロバッチされ、Platform インターフェイスで定期的に更新されます。 生成したデータが表示されるまで、10～15 分かかる場合があります。
 
-1. が含まれる [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL データセット]** 左側のナビゲーションでを開きます **[!UICONTROL データセット]** ダッシュボード。
+1. が含まれる [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL データ管理/ データセット]** 左側のナビゲーションでを開きます **[!UICONTROL データセット]** ダッシュボード。
 
    ダッシュボードリストは、組織で使用可能なすべてのデータセットを管理します。リストに表示された各データセットに関する詳細（名前、データセットが適用されるスキーマ、最新の取得実行のステータスなど）が表示されます。
 
@@ -214,7 +199,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 > * まず、データセットにデータを取り込みます。
 > * データ取り込みプロセス中に発生した問題（データの検証やマッピングの問題など）に対処します。
 > * プロファイル用のデータセットとスキーマの有効化
-> * データの再取り込み
+> * 必要に応じて、データを再度取り込みます。
 
 
 ### プロファイルの検証
@@ -226,7 +211,7 @@ Platform インターフェイス（またはJourney Optimizer インターフ�
 1. が含まれる [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL プロファイル]** 左側のナビゲーションで
 
 1. として **[!UICONTROL ID 名前空間]** use `lumaCRMId`
-1. の値をコピー&amp;ペースト `lumaCRMId` Experience Platformデバッガーで調べた呼び出しで渡されます（通常は `112ca06ed53d3db37e4cea49cc45b71e`）に設定します。
+1. の値をコピー&amp;ペースト `lumaCRMId` Experience Platformデバッガーで調べた呼び出しで渡されます（ここでは）。 `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![プロファイル](assets/experience-platform-validate-dataset-profile.png)
 
@@ -234,15 +219,22 @@ Platform インターフェイス（またはJourney Optimizer インターフ�
 
    ![プロファイル](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. をクリック [!UICONTROL プロファイル ID] および [!UICONTROL 顧客プロファイル] コンソールにデータが入力されます。 ここでは、にリンクされているすべての ID を確認できます `lumaCRMId`、例： `ECID`:
+1. 完全な **[!UICONTROL 顧客プロファイル]** 各 ID に対して、 **[!UICONTROL プロファイル ID]** メインウィンドウで。
+
+   >[!NOTE]
+   >
+   >プロファイル ID のハイパーリンクを選択できます。行を選択すると、右側のメニューが開き、プロファイル ID のハイパーリンクを選択できます
+   > ![顧客プロファイル](assets/experience-platform-select-profileId.png)
+
+   ここでは、にリンクされているすべての ID を確認できます `lumaCRMId`、例： `ECID`.
 
    ![顧客プロファイル](assets/experience-platform-validate-dataset-custProfile.png)
 
-これで、Experience Platform（およびReal-Time CDPの Platform Web SDK が有効になりました。 そしてCustomer Journey Analytics! そしてJourney Optimizer!）
+これで、Experience Platform（およびReal-Time CDPの Platform Web SDK が有効になりました。 そしてJourney Optimizer!）
 
 
 [次へ： ](setup-analytics.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、将来のコンテンツに関する提案がある場合は、このページで共有します [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

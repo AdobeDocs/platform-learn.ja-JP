@@ -3,21 +3,16 @@ title: Adobe Experience Platform Web SDK タグ拡張機能のインストール
 description: データ収集インターフェイスで Platform Web SDK タグ拡張機能をインストールして設定する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 13%
+source-wordcount: '604'
+ht-degree: 14%
 
 ---
 
 # Adobe Experience Platform Web SDK タグ拡張機能のインストール
 
-
->[!CAUTION]
->
->このチュートリアルの大きな変更は、2024 年 4 月 23 日火曜日（PT）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、最初からチュートリアルを再開する必要が生じる場合があります。
-
-データ収集インターフェイスで Platform Web SDK タグ拡張機能をインストールして設定する方法を説明します。 このタグ拡張機能は _唯一のタグ拡張機能_ データをに送信するために必要です _すべてのAdobe Experience Cloud アプリケーション_&#x200B;を含む [Analytics](setup-analytics.md), [ターゲット](setup-target.md), [Audience Manager](setup-audience-manager.md)Real-time Customer Data PlatformとJourney Optimizerだ！
+Platform Web SDK タグ拡張機能をインストールおよび設定する方法について説明します。 Web SDK を実装する最も簡単な方法は、Adobeのタグマネージャー、タグ（以前の Launch）を使用することです。 Platform Web SDK タグ拡張機能は _唯一のタグ拡張機能_ データをに送信するために必要です _すべてのAdobe Experience Cloud アプリケーション_&#x200B;を含む [Analytics](setup-analytics.md), [ターゲット](setup-target.md), [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platformおよび [Journey Optimizer](setup-web-channel.md)!
 
 ## 学習目標
 
@@ -31,9 +26,6 @@ ht-degree: 13%
 
 このチュートリアルの前のレッスンを完了している必要があります。
 
-* [権限の設定](configure-permissions.md)
-* [XDM スキーマの設定](configure-schemas.md)
-* [ID 名前空間の設定](configure-identities.md)
 * [データストリームの設定](configure-datastream.md)
 
 ## Experience Platform Web SDK 拡張機能のインストール
@@ -62,7 +54,7 @@ ht-degree: 13%
 1. `Adobe Experience Platform Web SDK` を検索します
 1. を選択 **[!UICONTROL インストール]**
 
-   ![Web SDK 拡張機能のインストール](assets/extension-platform-web-sdk.jpg)
+   ![Web SDK 拡張機能のインストール](assets/extension-platform-web-sdk.png)
 
 
 ## Platform Web SDK をデータストリームにリンクする
@@ -72,6 +64,7 @@ ht-degree: 13%
 1. 次の下 **[!UICONTROL データストリーム]**&#x200B;を選択し、 **[!UICONTROL リストから選択]** 入力方法
 1. 前に作成したデータストリームを選択します。 `Luma Web SDK`
 1. 「**[!UICONTROL 保存]**」を選択します
+
    >[!NOTE]
    >
    > データストリームが見つからない場合は、 [データストリームの設定](configure-datastream.md) レッスンと手順に従って作成します
@@ -82,9 +75,7 @@ Platform Web SDK をインストールし、データストリームに関連付
 
 >[!NOTE]
 >
->このチュートリアルでは、1 つのデータストリームのみを設定し、すべてのタグ環境（開発、ステージ、実稼動）に関連付けます。 Platform Web SDK を独自の web サイトに実装する場合は、環境ごとに個別のデータストリームを設定し、を使用してタグ環境にマッピングする必要があります **[!UICONTROL 入力方法]** > **[!UICONTROL 値を入力]**
->
->![データストリームの選択](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>このチュートリアルでは、1 つのデータストリームのみを設定し、すべてのタグ環境（開発、ステージ、実稼動）に関連付けます。 Platform Web SDK を独自の web サイトに実装する場合は、環境ごとに個別のデータストリームを設定して、タグ環境にマッピングする必要があります。
 
 >[!NOTE]
 >
@@ -98,4 +89,4 @@ Platform Web SDK をインストールし、データストリームに関連付
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、将来のコンテンツに関する提案がある場合は、このページで共有します [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

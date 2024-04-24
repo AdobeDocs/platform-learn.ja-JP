@@ -2,26 +2,20 @@
 title: チュートリアルの権限の設定
 description: Experience Platform Web SDK へのアクセスをリクエストする方法と、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルを完了するために必要な権限を設定する方法について説明します。
 feature: Web SDK,Tags,Access Control
-exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 3%
+source-wordcount: '367'
+ht-degree: 4%
 
 ---
 
 # チュートリアルの権限の設定
 
-
->[!CAUTION]
->
->このチュートリアルの大きな変更は、2024 年 4 月 23 日火曜日（PT）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、最初からチュートリアルを再開する必要が生じる場合があります。
-
 Experience Platform Web SDK へのアクセスをリクエストする方法と、このチュートリアルを完了するために必要な権限を設定する方法について説明します。 データ収集インターフェイスのタグを使用して Platform Web SDK を実装するには、で適切なユーザー権限を設定する必要があります。 [Admin Console](https://adminconsole.adobe.com).
 
 ## データ収集
 
-* ～する権限がある **[!UICONTROL 開発]**, **[!UICONTROL 編集]**, **[!UICONTROL 承認]**, **[!UICONTROL 公開]**, **[!UICONTROL 拡張機能の管理]**, **[!UICONTROL 環境の管理]**、および **[!UICONTROL プロパティの管理]**. タグの権限について詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja).
+* ～する権限がある **[!UICONTROL 開発]**, **[!UICONTROL 編集]**, **[!UICONTROL 承認]**, **[!UICONTROL 公開]**, **[!UICONTROL 拡張機能の管理]**, **[!UICONTROL 環境の管理]**、および **[!UICONTROL プロパティの管理]**. タグの権限について詳しくは、を参照してください。 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja).
 * オプションのイベント転送レッスンを完了する場合は、エッジ転送と権限項目を含む製品ライセンスを保有しています **[!UICONTROL プラットフォーム]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -29,9 +23,9 @@ Experience Platform Web SDK へのアクセスをリクエストする方法と�
 Real-Time CDPのようなプラットフォームベースのアプリケーションのお客様でなくても、すべてのExperience Cloudのお客様がこれらの機能を利用できます。
 
 * アクセス （への） **デフォルトの実稼動**, **「Prod」** サンドボックス。
-* アクセス先 **[!UICONTROL スキーマの管理]** および **[!UICONTROL スキーマの表示]** 未満 **[!UICONTROL データモデリング]**
-* アクセス先 **[!UICONTROL ID 名前空間の管理]** および **[!UICONTROL ID 名前空間の表示]** 未満 **[!UICONTROL Identity Management]**
-* アクセス先 **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームを表示]** 未満 **[!UICONTROL データ収集]**
+* アクセス先 **[!UICONTROL スキーマの管理]** および **[!UICONTROL スキーマの表示]** 未満 **[!UICONTROL データモデリング]**.
+* アクセス先 **[!UICONTROL ID 名前空間の管理]** および **[!UICONTROL ID 名前空間の表示]** 未満 **[!UICONTROL Identity Management]**.
+* アクセス先 **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームを表示]** 未満 **[!UICONTROL データ収集]**.
 * Platform ベースのアプリケーションの顧客が、 [Experience Platformの設定](setup-experience-platform.md) レッスンでは、次の内容も習得する必要があります。
    * アクセス権限 **開発** サンドボックス。
    * の下のすべての権限項目 **[!UICONTROL データ管理]**、および **[!UICONTROL プロファイル管理]**:
@@ -57,4 +51,4 @@ Platform のアクセス制御について詳しくは、を参照してくだ�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、将来のコンテンツに関する提案がある場合は、このページで共有します [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

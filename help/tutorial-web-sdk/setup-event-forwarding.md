@@ -3,23 +3,21 @@ title: イベント転送プロパティの設定
 description: Experience Platform Web SDK data を使用したイベント転送プロパティの使用方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 4%
 
 ---
 
 # イベント転送プロパティの設定
 
-
->[!CAUTION]
->
->このチュートリアルの大きな変更は、2024 年 4 月 23 日火曜日（PT）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、最初からチュートリアルを再開する必要が生じる場合があります。
-
 Experience Platform Web SDK data を使用したイベント転送プロパティの使用方法を説明します。
 
 イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、を参照してください [イベント転送の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK とイベント転送の図](assets/dc-websdk-eventforwarding.png)
 
 Adobe Experience Platformでイベント転送を使用するには、まず次の 3 つのオプションの 1 つ以上を使用して、データをAdobe Experience Platform Edge Networkに送信する必要があります。
 
@@ -56,7 +54,6 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
    * 初期設定
 
-      * [権限の設定](configure-permissions.md)
       * [XDM スキーマの設定](configure-schemas.md)
       * [ID 名前空間の設定](configure-identities.md)
       * [データストリームの設定](configure-datastream.md)
@@ -65,6 +62,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
       * [Web SDK 拡張機能のインストール](install-web-sdk.md)
       * [データ要素の作成](create-data-elements.md)
+      * [ID の作成](create-identities.md)
       * [タグルールの作成](create-tag-rule.md)
       * [Adobe Experience Platform Debugger での検証](validate-with-debugger.md)
 
@@ -91,9 +89,9 @@ Edge Network に送信するデータをイベント転送で使用するには�
 
 1. に移動 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで「」を選択します **[!UICONTROL データストリーム]**
-1. 以前に作成したを選択します `Luma Web SDK` データストリーム
+1. 以前に作成したを選択します `Luma Web SDK: Development Environment` データストリーム
 
-   ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk.png)
+   ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk-development.png)
 
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームへのサービスの追加](assets/event-forwarding-datastream-addService.png)
@@ -326,4 +324,4 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、将来のコンテンツに関する提案がある場合は、このページで共有します [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

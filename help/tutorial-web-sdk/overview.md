@@ -3,50 +3,35 @@ title: Web SDK を使用した Adobe Experience Cloud 実装のチュートリ�
 description: Adobe Experience Platform Web SDK を使用してExperience Cloudアプリケーションを実装する方法について説明します。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 11%
+source-wordcount: '717'
+ht-degree: 4%
 
 ---
 
 # Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル
 
->[!CAUTION]
->
->このチュートリアルの大きな変更は、2024 年 4 月 23 日火曜日（PT）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、最初からチュートリアルを再開する必要が生じる場合があります。
-
-
 Adobe Experience Platform Web SDK を使用してExperience Cloudアプリケーションを実装する方法について説明します。
 
 Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Networkを通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド JavaScript ライブラリです。 参照： [Adobe Experience Platform Web SDK の概要](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) を参照してください。
 
-このチュートリアルでは、Luma と呼ばれるサンプルの小売 web サイトでの Platform Web SDK の実装について説明します。 この [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html) には、現実的な実装を構築できる豊富なデータレイヤーと機能があります。 このチュートリアルを完了すると、Platform Web SDK を使用してすべてのマーケティングソリューションの実装を独自の web サイトで開始する準備が整います。
+![Experience Platform Web SDK アーキテクチャ](assets/dc-websdk.png)
 
-[![Luma web サイト](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+このチュートリアルでは、Luma と呼ばれるサンプルの小売 web サイトでの Platform Web SDK の実装について説明します。 この [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html) には、現実的な実装を構築できる豊富なデータレイヤーと機能があります。 このチュートリアルでは、次の操作を行います。
 
-
-## 学習目標
-
-このチュートリアルを完了すると、次の操作を実行できるようになります。
-
-* データストリームの設定
-
-* XDM スキーマの作成
-
+* Luma web サイトの Platform Web SDK 実装を使用して、独自のアカウントに独自のタグプロパティを作成します。
+* データストリーム、スキーマ、ID 名前空間など、Web SDK 実装のすべてのデータ収集機能を設定します。
 * 次のAdobe Experience Cloud アプリケーションを追加します。
    * **[Adobe Experience Platform](setup-experience-platform.md)** （およびAdobe Real-time Customer Data Platform、Adobe Journey Optimizer、Adobe Customer Journey Analyticsなどの Platform 上に構築されたアプリケーション）
    * **[Adobe Analytics](setup-analytics.md)**
    * **[Adobe Audience Manager](setup-audience-manager.md)**
    * **[Adobe Target](setup-target.md)**
+* イベント転送を実装して、Web SDK で収集されたデータをAdobe以外の宛先に送信します。
+* Platform Debugger と Assurance を使用して独自のExperience Platform Web SDK 実装を検証します。
 
-* タグルールと XDM オブジェクトデータ要素を作成して、Adobeアプリケーションにデータを送信する
+このチュートリアルを完了すると、Platform Web SDK を使用してすべてのマーケティングアプリケーションの実装を独自の web サイトで開始する準備が整います。
 
-* Adobe Experience Platform Debuggerを使用した実装の検証
-
-* ユーザーの同意の取得
-
-* イベント転送を使用したサードパーティへのデータ転送
 
 >[!NOTE]
 >
@@ -56,14 +41,54 @@ Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Exp
 
 すべてのExperience Cloudユーザーは、Platform Web SDK を使用できます。 Web SDK を使用する場合、Real-time Customer Data PlatformやJourney Optimizerなどのプラットフォームベースのアプリケーションのライセンスを取得する必要はありません。
 
-これらのレッスンでは、Adobeアカウントと [必要な権限](configure-permissions.md) レッスンを完了します。 そうでない場合、Experience Cloud管理者に問い合わせてアクセスをリクエストする必要があります。
+これらのレッスンでは、Adobeアカウントと、レッスンを完了するために必要なパーミッションがあることを前提としています。 そうでない場合、アクセス権を取得するには、会社のExperience Cloud管理者に問い合わせる必要があります。
 
-また、HTML や JavaScript などのフロントエンド開発言語に精通していることを前提としています。これらの言語のエキスパートである必要はありませんが、コードを読んで理解できれば、このチュートリアルをさらに活用できます。
+* の場合 **データ収集**&#x200B;には、次が必要です。
+   * **[!UICONTROL プラットフォーム]** – の権限 **[!UICONTROL Web]** ライセンスがある場合は、 **[!UICONTROL Edge]**
+   * **[!UICONTROL プロパティ権限]** – に対する権限 **[!UICONTROL 承認]**, **[!UICONTROL 開発]**, **[!UICONTROL プロパティを編集]**, **[!UICONTROL 環境の管理]**, **[!UICONTROL 拡張機能の管理]**、および **[!UICONTROL 公開]**,
+   * **[!UICONTROL 会社権限]** – に対する権限 **[!UICONTROL プロパティの管理]**
 
-それでは、始めましょう。
+     タグの権限について詳しくは、を参照してください。 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja).
 
-[次へ： ](configure-permissions.md)
+* の場合 **Experience Platform**&#x200B;には、次が必要です。
+
+   * アクセス （への） **デフォルトの実稼動**, **「Prod」** サンドボックス。
+   * アクセス先 **[!UICONTROL スキーマの管理]** および **[!UICONTROL スキーマの表示]** 未満 **[!UICONTROL データモデリング]**.
+   * アクセス先 **[!UICONTROL ID 名前空間の管理]** および **[!UICONTROL ID 名前空間の表示]** 未満 **[!UICONTROL Identity Management]**.
+   * アクセス先 **[!UICONTROL データストリームの管理]** および **[!UICONTROL データストリームを表示]** 未満 **[!UICONTROL データ収集]**.
+   * Platform ベースのアプリケーションの顧客が、 [Experience Platformの設定](setup-experience-platform.md) レッスンでは、次の内容も習得する必要があります。
+      * アクセス権限 **開発** サンドボックス。
+      * の下のすべての権限項目 **[!UICONTROL データ管理]**、および **[!UICONTROL プロファイル管理]**:
+
+     Real-Time CDPのようなプラットフォームベースのアプリケーションのお客様でなくても、すべてのExperience Cloudのお客様が必要な機能を利用できる必要があります。
+
+     Platform のアクセス制御について詳しくは、を参照してください。 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja).
+
+* オプションの場合 **Adobe Analytics** 教訓、あなたは持っている必要があります [レポートスイート設定、処理ルールおよびAnalysis Workspaceへの管理者アクセス](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
+
+* オプションの場合 **Adobe Target** 教訓、あなたは持っている必要があります [編集者または承認者](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) アクセス。
+
+* オプションの場合 **Audience Manager** 特性、セグメントおよび宛先を作成、読み取り、書き込むためのアクセス権が必要です。 詳しくは、のチュートリアルを参照してください。 [Audience Managerの役割ベースのアクセス制御](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、将来のコンテンツに関する提案がある場合は、このページで共有します [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>HTMLや JavaScript などのフロントエンド開発言語に精通していることを前提としています。 これらの言語のエキスパートである必要はありませんが、コードを読んで理解できれば、このチュートリアルをさらに活用できます。
+
+## 更新
+
+* 2024 年 4 月 24 日：変数の設定/変数の更新、分割パーソナライゼーションおよび分析リクエストの追加を含む大規模な更新、Journey Optimizerの賃貸事業者
+
+## Luma web サイトを読み込みます
+
+を読み込みます [Luma web サイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 別のブラウザータブでブックマークに追加しておくと、チュートリアル中に必要に応じて簡単に読み込むことができます。 ホストされている実稼動サイトを読み込める以外に、Luma への追加アクセスは必要ありません。
+
+[![Luma web サイト](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}
+
+それでは、始めましょう。
+
+[次へ： ](configure-schemas.md)
+
+>[!NOTE]
+>
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

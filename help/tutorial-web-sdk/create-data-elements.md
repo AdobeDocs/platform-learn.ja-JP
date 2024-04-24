@@ -3,74 +3,162 @@ title: データ要素の作成
 description: XDM オブジェクトを作成し、タグでデータ要素をマッピングする方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1199'
 ht-degree: 2%
 
 ---
 
 # データ要素の作成
 
+で、コンテンツ、コマース、ID データ用のタグでデータ要素を作成する方法を説明します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 次に、XDM スキーマのフィールドに Platform Web SDK 拡張機能の変数データ要素タイプを入力します。
 
->[!CAUTION]
->
->このチュートリアルの大きな変更は、2024 年 4 月 23 日火曜日（PT）に公開される予定です。 その後、多くの演習が変更され、すべてのレッスンを完了するには、最初からチュートリアルを再開する必要が生じる場合があります。
+## 学習目標
 
-Experience Platform Web SDK を使用してデータを取得するために必要な、基本的なデータ要素を作成する方法を説明します。 上でコンテンツデータと ID データの両方をキャプチャ [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). XDM オブジェクトと呼ばれる新しいデータ要素タイプを通じて、Platform Web SDK を使用してデータを収集するために以前作成した XDM スキーマを使用する方法を説明します。
+このレッスンを終了すると、次の操作を実行できます。
 
->[!NOTE]
->
-> デモ目的で、このレッスンの演習は、で使用する例に基づいて構築されています [スキーマの設定](configure-schemas.md) 手順；で表示されるコンテンツとユーザーの ID をキャプチャする XDM オブジェクトの例の作成 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html).
+* データレイヤーを XDM にマッピングする様々なアプローチを理解する
+* データをキャプチャするデータ要素の作成
+* XDM オブジェクトへのデータ要素のマッピング
+
+
+## 前提条件
+
+データレイヤーとは何かを理解し、チュートリアルの前のレッスンを完了しました。
+
+* [XDM スキーマの設定](configure-schemas.md)
+* [ID 名前空間の設定](configure-identities.md)
+* [データストリームの設定](configure-datastream.md)
+* [タグプロパティにインストールされている Web SDK 拡張機能](install-web-sdk.md)
+
 
 >[!IMPORTANT]
 >
 >このレッスンのデータは、 `[!UICONTROL digitalData]` luma サイト上のデータレイヤー。 データレイヤーを表示するには、開発者コンソールを開いてと入力します。 `[!UICONTROL digitalData]` 使用可能な完全なデータレイヤーを確認するには、![digitalData データレイヤー](assets/data-element-data-layer.png)
 
 
-Platform Web SDK に関係なく、web サイトからのデータ収集変数にマッピングするタグプロパティ内に、データレイヤー、HTML属性など、引き続きデータ要素を作成する必要があります。 これらのデータ要素を作成したら、次の作業で作成した XDM スキーマにマッピングする必要があります [スキーマの設定](configure-schemas.md) レッスン： これを行うために、Platform Web SDK 拡張機能では、XDM オブジェクトと呼ばれる新しいデータ要素タイプを使用可能にします。 したがって、データ要素の作成は次の 2 つのアクションで構成されます。
+## データレイヤーのアプローチ
 
-1. データ要素への web サイト変数のマッピング
-1. これらのデータ要素の XDM オブジェクトへのマッピング
+Adobe Experience Platformのタグ機能を使用して、データレイヤーから XDM にデータをマッピングする方法は複数あります。 次に、3 つの異なるアプローチの長所と短所をいくつか示します。 必要に応じて、次の方法を組み合わせることができます。
 
-手順 1 では、引き続き、コアタグ拡張機能の任意のデータ要素タイプを使用して、現在の方法でデータレイヤーをデータ要素にマッピングします。 手順 2 の場合、Platform Web SDK 拡張機能は、以前は使用できなかった新しいデータ要素タイプのセットを作成します。
+1. データレイヤーへの XDM の実装
+1. タグの XDM へのマッピング
+1. データストリームの XDM へのマッピング
 
-* イベント結合 ID
-* ID マップ
-* XDM オブジェクト
-
-このレッスンでは、XDM オブジェクトと ID マップのデータ要素タイプに焦点を当てます。 Luma 訪問者のアクティビティと認証ステータスを取得する XDM オブジェクトを作成します。
-
-## 学習目標
-
-このレッスンを終了すると、次の操作を実行できます。
-
-* コンテンツとユーザーログイン ID のデータを取り込むためのデータ要素の作成
-* ID マップデータ要素の作成
-* データ要素を XDM オブジェクトデータ要素にマッピングする
+>[!NOTE]
+>
+>このチュートリアルの例では、タグで XDM にマッピングするアプローチに従っています。
 
 
-## 前提条件
+### データレイヤーへの XDM の実装
 
-データレイヤーとは何かを理解し、 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーを使用し、タグでデータ要素を参照する方法を理解する。 チュートリアルの次の前の手順を完了している必要があります
+このアプローチでは、完全に定義された XDM オブジェクトをデータレイヤーの構造として使用します。 次に、データレイヤー全体をタグの XDM オブジェクトデータ要素にマッピングします。 実装でタグマネージャーを使用していない場合、を使用してアプリケーションから直接 XDM にデータを送信できるので、この方法は理想的です。 [XDM sendEvent コマンド](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). タグを使用する場合は、データレイヤー全体をパススルー JSON オブジェクトとして XDM に取り込むカスタムコードデータ要素を作成できます。 次に、パススルー JSON をイベント送信アクションの XDM オブジェクトフィールドにマッピングします。
 
-* [権限の設定](configure-permissions.md)
-* [XDM スキーマの設定](configure-schemas.md)
-* [ID 名前空間の設定](configure-identities.md)
-* [データストリームの設定](configure-datastream.md)
-* [タグプロパティにインストールされている Web SDK 拡張機能](install-web-sdk.md)
+以下に、Adobeのクライアントデータレイヤー形式を使用したデータレイヤーの表示例を示します。
+
+データレイヤー内の+++XDM の例
+
+```JSON
+window.adobeDataLayer.push({
+"eventType": "web.webPageDetails.pageViews",
+"web":{
+         "webInteraction":{
+            "linkClicks":{
+               "id":"",
+               "value":""
+            },
+            "URL":"",
+            "name":"",
+            "region":"",
+            "type":""
+         },
+         "webPageDetails":{
+            "pageViews":{
+               "id":"",
+               "value":"1"
+            },
+            "URL":"https://luma.enablementadobe.com/",
+            "isErrorPage":"",
+            "isHomePage":"",
+            "name":"luma:home",
+            "server":"enablementadobe.com",
+            "siteSection":"home",
+            "viewName":""
+         },
+         "webReferrer":{
+            "URL":"",
+            "type":""
+         }
+      }
+});
+```
+
++++
+
+長所
+
+* データレイヤー変数から XDM への再マッピングの追加手順を不要にします
+* 開発チームがタグ付けデジタル動作を所有している場合は、をデプロイする方が早い場合があります
+
+短所
+
+* XDM に送信するデータを更新するために、開発チームと開発サイクルに完全に依存している
+* XDM はデータレイヤーから正確なペイロードを受け取るので、柔軟性は限られています
+* スクレーピング、永続性、迅速なデプロイメントのための機能など、ビルトインのタグ機能は使用できません
+* サードパーティのピクセルにはデータレイヤーを使用できません
+* データレイヤーと XDM の間でデータを変換できない
+
+### タグ内のデータレイヤーのマッピング
+
+このアプローチでは、個々のデータレイヤー変数またはデータレイヤーオブジェクトをタグのデータ要素にマッピングし、最終的には XDM にマッピングします。 これは、タグ管理システムを使用した実装に対する従来のアプローチです。
+
+#### 長所
+
+* XDM に到達する前に個々の変数を制御し、データを変換できるため、最も柔軟なアプローチ
+* Adobeタグトリガーとスクレーピング機能を使用して、データを XDM に渡すことができます。
+* データ要素をサードパーティのピクセルにクライアントサイドでマッピングできます。
+
+#### 短所
+
+* データレイヤーをデータ要素として再構築するのに時間がかかる
+
+
+>[!TIP]
+>
+> Google データレイヤー
+> 
+> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、 [Google データレイヤーの拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) タグ内。 これにより、IT チームのサポートを依頼しなくても、Adobeテクノロジを迅速に導入できます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
+
+### データストリームの XDM へのマッピング
+
+このアプローチでは、と呼ばれるデータストリーム設定に組み込まれた機能を使用します [データ収集のためのデータ準備](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) データレイヤー変数をタグの XDM にマッピングするをスキップします。
+
+#### 長所
+
+* 個々の変数を XDM にマッピングできるので、柔軟性があります
+* ～する能力 [新しい値を計算](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=ja) または [変換データタイプ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) データレイヤーから XDM に移動する前に
+* を活用 [マッピング UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) ポイントアンドクリック UI を使用してソースデータのフィールドを XDM にマッピングするには
+
+#### 短所
+
+* データレイヤー変数をクライアントサイドのサードパーティピクセルのデータ要素として使用することはできませんが、イベント転送では使用できます
+* Adobe Experience Platformのタグ機能のスクレーピング機能を使用できない
+* タグとデータストリームの両方でデータレイヤーをマッピングすると、メンテナンスが複雑になります
+
+
 
 >[!IMPORTANT]
 >
->この [Experience CloudID サービス拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) id サービス機能はAdobe Experience Platform Web SDK に組み込まれているので、Platform Web SDK を実装する場合は必要ありません。
+>前述のように、このチュートリアルの例では、タグアプローチでの XDM へのマッピングに従います。
 
 ## データ要素を作成してデータレイヤーをキャプチャする
 
-XDM オブジェクトの作成を開始する前に、にマッピングする次のデータ要素セットを作成します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤー：
+XDM オブジェクトを作成する前に、次のデータ要素のセットを作成します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤー：
 
 1. に移動 **[!UICONTROL データ要素]** を選択して、 **[!UICONTROL データ要素を追加]** （または **[!UICONTROL 新しいデータ要素の作成]** タグプロパティに既存のデータ要素がない場合）
 
-   ![データ要素の作成](assets/data-element-create.jpg)
+   ![データ要素の作成](assets/data-element-create.png)
 
 1. データ要素に「`page.pageInfo.pageName`」と名前を付けます。
 1. の使用 **[!UICONTROL JavaScript 変数]** **[!UICONTROL データ要素タイプ]** luma のデータレイヤーの値を指すようにするには： `digitalData.page.pageInfo.pageName`
@@ -81,9 +169,9 @@ XDM オブジェクトの作成を開始する前に、にマッピングする�
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![ページ名データ要素](assets/data-element-pageName.jpg)
+   ![ページ名データ要素](assets/data-element-pageName.png)
 
-同じ手順に従って、次の 4 つの追加データ要素を作成します。
+同じ手順に従って、これらの追加のデータ要素を作成します。
 
 * **`page.pageInfo.server`**  マッピング先
   `digitalData.page.pageInfo.server`
@@ -97,138 +185,117 @@ XDM オブジェクトの作成を開始する前に、にマッピングする�
 * **`user.profile.attributes.loggedIn`** マッピング先
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** マッピング先 `digitalData.cart.orderId` （これは、 [Analytics のセットアップ](setup-analytics.md) レッスン）
+* **`product.productInfo.sku`**（`digitalData.product.0.productInfo.sku` にマッピング）
+<!--digitalData.product.0.productInfo.sku
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.sku;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.productInfo.title`**（`digitalData.product.0.productInfo.title` にマッピング）
+* **`cart.orderId`**（`digitalData.cart.orderId` にマッピング）
+<!--
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.title;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.category`** の使用 **[!UICONTROL カスタムコード]** **[!UICONTROL データ要素タイプ]** 次のカスタムコードを使用して、トップレベルカテゴリのサイト URL を解析します。
+
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
+
+* **`cart.productInfo`** 次のカスタムコードを使用します。
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  cartItem.push({
+  "SKU": item.sku
+  });
+  });
+  return cartItem; 
+  ```
+
+* **`cart.productInfo.purchase`** 次のカスタムコードを使用します。
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "quantity": qty,
+  "priceTotal": price
+  });
+  });
+  return cartItem; 
+  ```
+
 
 
 >[!CAUTION]
 >
 >この [!UICONTROL JavaScript 変数] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素はとして参照します `digitalData.user[0].profile[0].attributes.username` **動作しない**.
 
-## Id マップデータ要素の作成
+## 変数データ要素の作成
 
-次に、ID マップデータ要素を作成します。
+データ要素を作成したら、を使用して XDM にマッピングします **[!UICONTROL 変数]** xdm オブジェクトに使用されるスキーマを定義するデータ要素。 このオブジェクトは、次の作業の際に作成した XDM スキーマに準拠している必要があります [スキーマの設定](configure-schemas.md) レッスン：
 
-1. に移動 **[!UICONTROL データ要素]** を選択して、 **[!UICONTROL データ要素を追加]**
+変数データ要素を作成するには：
 
-1. **[!UICONTROL 名前]** データ要素 `identityMap.loginID`
-
-1. として **[!UICONTROL 拡張機能]**&#x200B;を選択 `Adobe Experience Platform Web SDK`
-
-1. として **[!UICONTROL データ要素タイプ]**&#x200B;を選択 `Identity map`
-
-1. 内で画面領域の右側が表示されます **[!UICONTROL データ収集インターフェイス]** id を設定するには：
-
-   ![データ収集インターフェイス](assets/identity-identityMap-setup.png)
-
-1. として  **[!UICONTROL 名前空間]**&#x200B;を選択し、 `Luma CRM Id` で以前に作成した名前空間 [Id の設定](configure-identities.md) レッスン：
-
-   >[!NOTE]
-   >
-   >    表示されない場合 `Luma CRM Id` 名前空間。デフォルトの実稼動サンドボックスでも作成したことを確認してください。 現在、名前空間ドロップダウンに表示されるのは、デフォルトの実稼動サンドボックスで作成された名前空間のみです。
-
-1. 後 **[!UICONTROL 名前空間]** を選択しました。ID を設定する必要があります。 「」を選択します `user.profile.attributes.username` このレッスンの前半で作成したデータ要素。ユーザーが Luma サイトにログインしたときに ID を取得します。
-
-<!--  >[!TIP]
-   >
-   >You can verify the **[!UICONTROL Luma CRM ID]** is collected in a data element on the web property by going to the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en.html), logging in, [switching the tag environment](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) to your own, and typing `_satellite.getVar("user.profile.attributes.username")` in the web browser developer console.
-   >
-   >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
--->
-
-1. として **[!UICONTROL 認証状態]**&#x200B;を選択 **[!UICONTROL 認証済み]**
-1. を選択 **[!UICONTROL プライマリ]**
-
-1. 「**[!UICONTROL 保存]**」を選択します
-
-   ![データ収集インターフェイス](assets/identity-id-namespace.png)
-
->[!TIP]
->
-> Adobeでは、次のような、人物を表す ID を送信することをお勧めします `Luma CRM Id`、として [!UICONTROL プライマリ] id。
->
-> ID マップに人物識別子が含まれる場合（例： `Luma CRM Id`）に設定すると、人物識別子はになります [!UICONTROL プライマリ] id。 そうでない場合、 `ECID` がになります [!UICONTROL プライマリ] id。
-
-
-
-
-
-<!--
-1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
-   
-   
-   ```
-   _satellite.getVar('identityMap.loginID')
-   ```  
-
-   ![Data Collection interface](assets/identity-consoleIdentityDataElement.png)
-   
-   >[!NOTE]
-   >
-   >ECID identifier will NOT populate in the Data Element, as this is configured already with Platform Web SDK.   
--->
-
-## データ要素の XDM オブジェクトへのマッピング
-
-作成するすべてのデータ要素は、XDM オブジェクトにマッピングする必要があります。 このオブジェクトは、次の作業の際に作成した XDM スキーマに準拠している必要があります [スキーマの設定](configure-schemas.md) レッスン：
-
-データ要素を XDM オブジェクトフィールドにマッピングするには、様々な方法があります。 データ要素が XDM オブジェクトに存在する正確なキーと値のペアのスキーマに一致する限り、個々のデータ要素を個々の XDM フィールドにマッピングしたり、データ要素を XDM オブジェクト全体にマッピングしたりできます。 このレッスンでは、個々のフィールドにマッピングしてコンテンツ データをキャプチャします。 以下の方法について説明します [データ要素を XDM オブジェクト全体にマッピング](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) が含まれる [Analytics のセットアップ](setup-analytics.md) レッスン：
-
-コンテンツデータを取得する XDM オブジェクトを作成します。
-
-1. 左側のナビゲーションで、を選択します。 **[!UICONTROL データ要素]**
 1. を選択 **[!UICONTROL データ要素を追加]**
-1. **[!UICONTROL 名前]** データ要素 **`xdm.content`**
-1. として **[!UICONTROL 拡張機能]** 選択 `Adobe Experience Platform Web SDK`
-1. として **[!UICONTROL データ要素タイプ]** 選択 `XDM object`
-1. プラットフォームを選択 **[!UICONTROL Sandbox]** で処理中に XDM スキーマを作成した [XDM スキーマの設定](configure-schemas.md) レッスン（この例では） `DEVELOPMENT Mobile and Web SDK Courses`
-1. として **[!UICONTROL スキーマ]**&#x200B;を選択します `Luma Web Event Data` スキーマ：
-
-   ![XDM オブジェクト](assets/data-element-xdm.content-fields.png)
-
-   >[!NOTE]
-   >
-   >サンドボックスは、スキーマを作成したExperience Platformサンドボックスに対応しています。 Experience Platformインスタンスでは複数のサンドボックスを使用できるので、必ず適切なサンドボックスを選択してください。 必ず開発、次に実稼動で作業してください。
-
-1. に到達するまで下にスクロールします。 **`web`** オブジェクト
-1. 選択して開きます
-
-   ![Web オブジェクト](assets/data-element-pageviews-xdm-object.png)
-
-
-1. 次の web XDM 変数をデータ要素にマッピングします
-
-   * **`web.webPageDetials.name`**&#x200B;コピー先：`%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`**&#x200B;コピー先：`%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`**&#x200B;コピー先：`%page.pageInfo.hierarchie1%`
-
-   ![XDM オブジェクト](assets/data-element-xdm.content.png)
-
-1. 次に、を見つけます `identityMap` スキーマ内のオブジェクトを選択し、以下の手順を実行します
-
-1. をにマッピングします `identityMap.loginID` データ要素
-
+1. データ要素に名前を付ける `xdm.variable.content`. タグプロパティを整理しやすくするために、XDM に固有のデータ要素を「xdm」というプレフィックスを付けることをお勧めします
+1. 「」を選択します **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL 拡張機能]**
+1. 「」を選択します **[!UICONTROL 変数]** as the **[!UICONTROL データ要素タイプ]**
+1. 適切なExperience Platformを選択します **[!UICONTROL Sandbox]**
+1. 適切なを選択します **[!UICONTROL スキーマ]**、この場合は `Luma Web Event Data`
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![データ収集インターフェイス](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
-
-
+   ![可変データ要素](assets/analytics-tags-data-element-xdm-variable.png)
 
 
 これらの手順の最後で、次のデータ要素が作成されているはずです。
 
-| CORE 拡張機能のデータ要素 | Platform Web SDK データ要素 |
+| コア拡張機能のデータ要素 | Platform Web SDK 拡張機能のデータ要素 |
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.content` |
+| `cart.orderId` | `xdm.variable.content` |
+| `cart.productInfo` | |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-これらのデータ要素を配置すると、タグにルールを作成することで、XDM オブジェクトを介して Platform Edge Networkへのデータ送信を開始する準備が整います。
+>[!TIP]
+>
+>今後 [タグルールの作成](create-tag-rule.md) レッスンでは、次のことを学習します **[!UICONTROL 変数]** データ要素を使用すると、 **[!UICONTROL 変数アクションタイプを更新]**.
 
-[次へ： ](create-tag-rule.md)
+これらのデータ要素を配置すると、タグルールを使用して Platform Edge Networkへのデータ送信を開始する準備が整います。 ただし、最初に、Web SDK を使用して ID を収集する方法について説明します。
+
+[次へ： ](create-identities.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、将来のコンテンツに関する提案がある場合は、このページで共有します [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
