@@ -3,10 +3,10 @@ title: データストリームの設定
 description: データストリームを有効にし、Experience Cloudソリューションを設定する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 データストリームを有効にし、Experience Cloudアプリケーションを設定する方法を説明します。
 
-データストリームは、Platform Web SDK で収集されたデータの送信先をAdobe Experience Platform Edge Networkに伝えます。 データストリーム設定では、Experience Cloudアプリケーション、Experience Platformアカウント、イベント転送を有効にします。 を参照してください。 [データストリームの設定の基本](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja) を参照してください。
+データストリームは、Platform Web SDK で収集されたデータの送信先をAdobe Experience Platform Edge Networkに伝えます。 データストリーム設定では、Experience Cloudアプリケーション、Experience Platformアカウント、イベント転送を有効にします。 を参照してください。 [データストリームの設定の基本](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) を参照してください。
 
 
 ![Web SDK、データストリームおよびEdge Network図](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ ht-degree: 5%
 
 が含まれる [Adobe Analyticsの設定](setup-analytics.md) レッスン :Platform Web SDK のイベント送信アクションを使用して、ページのレポートスイートを上書きします。
 
-を参照してください。 [データストリーム設定の上書きに関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) データストリーム設定を上書きする方法の詳細な手順については、を参照してください。
+を参照してください。 [データストリーム設定の上書きに関するドキュメント](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) データストリーム設定を上書きする方法の詳細な手順については、を参照してください。
 
 これで、タグプロパティに Platform Web SDK 拡張機能をインストールする準備が整いました。
 

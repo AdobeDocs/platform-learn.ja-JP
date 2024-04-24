@@ -3,7 +3,7 @@ title: Experience Platformデバッガーを使用した Web SDK 実装の検証
 description: Adobe Experience Platform Debuggerを使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -142,7 +142,7 @@ ID マップの詳細を検証することもできます。
 
 で学んだように [データストリームの設定](configure-datastream.md) レッスン : Platform Web SDK は、最初にデジタルプロパティから Platform Edge Networkにデータを送信します。 次に、Platform Edge Networkは、データストリームで有効になっている対応するサービスに対して、サーバーサイドのリクエストを追加します。 Platform Debugger で Edge Trace を使用すると、Platform Edge Networkによって行われたサーバーサイドリクエストを検証できます。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Edge Trace を有効にする

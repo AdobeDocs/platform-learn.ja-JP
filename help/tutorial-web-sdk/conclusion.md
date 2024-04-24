@@ -3,10 +3,10 @@ title: まとめ、次のステップ
 description: チュートリアルの完了後に行うこと
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 3%
 そして、学ぶべきことは常に多くあります！ 実装環境に基づいて作成するその他のコンテンツの推奨事項を次に示します。
 
 
-* **Journey Optimizerでのジャーニーのトリガー**. Luma web サイトに実装したイベントは、ジャーニーのトリガーに使用できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html?lang=ja).
-* **Customer Journey Analyticsを接続**. 作成した場合 [Platform データセット](setup-experience-platform.md)を選択すると、データセットをCustomer Journey Analyticsに接続できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
-* **Platform でのセグメントの作成**. を有効にした場合 [リアルタイム顧客プロファイルのスキーマとデータセット](setup-experience-platform.md)を使用すると、web イベントに基づいてセグメントを作成し、それらを他のソースのデータと組み合わせて、Real-time Customer Data Platform内の宛先に送信できます。 セグメントビルダーの詳細については、こちらを参照してください [ビデオチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
-* **Platform Mobile SDK の実装**. ある SDK をマスターしたので、別の SDK を学びましょう。 Adobe Experience Platform Mobile SDK は、モバイルアプリでExperience Cloudおよびサードパーティサービスを強化するために使用されます。 似たものがあります [mobile SDK の実践チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja). 両方を完了して、デバイス間でのプロファイルの結合を確認します。
-* **Experience Platformの詳細情報**. で、他のソースからデータを取り込み、それを Web SDK データと組み合わせる方法について説明します。 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja)
+* **Journey Optimizerでのジャーニーのトリガー**. Luma web サイトに実装したイベントは、ジャーニーのトリガーに使用できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey).
+* **Customer Journey Analyticsを接続**. 作成した場合 [Platform データセット](setup-experience-platform.md)を選択すると、データセットをCustomer Journey Analyticsに接続できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **Platform でのセグメントの作成**. を有効にした場合 [リアルタイム顧客プロファイルのスキーマとデータセット](setup-experience-platform.md)を使用すると、web イベントに基づいてセグメントを作成し、それらを他のソースのデータと組み合わせて、Real-time Customer Data Platform内の宛先に送信できます。 セグメントビルダーの詳細については、こちらを参照してください [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/segments/create-segments).
+* **Platform Mobile SDK の実装**. ある SDK をマスターしたので、別の SDK を学びましょう。 Adobe Experience Platform Mobile SDK は、モバイルアプリでExperience Cloudおよびサードパーティサービスを強化するために使用されます。 似たものがあります [mobile SDK の実践チュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview). 両方を完了して、デバイス間でのプロファイルの結合を確認します。
+* **Experience Platformの詳細情報**. で、他のソースからデータを取り込み、それを Web SDK データと組み合わせる方法について説明します。 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
 
 
 >[!NOTE]

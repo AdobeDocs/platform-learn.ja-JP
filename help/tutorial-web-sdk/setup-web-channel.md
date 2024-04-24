@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2885'
 ht-degree: 1%
@@ -249,7 +249,7 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
 1. また、オプションで、次のオプションを選択します **[!UICONTROL 均等に配分]**. このオプションを選択すると、処理の分割が常に均等に分割されます。
 
-[Adobe Journey Optimizer web チャネルでのコンテンツ実験の詳細を学ぶ](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[Adobe Journey Optimizer web チャネルでのコンテンツ実験の詳細を学ぶ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### Visual Helper を使用したコンテンツの編集
 
@@ -350,7 +350,7 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
 Luma サイトでデバッガーを使用すると、実稼動環境での web チャネルエクスペリエンスを検証できます。 これは、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
-[こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 デバッガーを使用して検証を開始するには：
 

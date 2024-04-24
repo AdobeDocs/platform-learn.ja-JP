@@ -2,7 +2,7 @@
 title: Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
 description: Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 7%
@@ -38,7 +38,7 @@ Experience Platformは、以前に作成したのと同じ XDM スキーマを�
 
 ## データセットの作成
 
-Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) は、スキーマ（列）とフィールド（行）を含んだデータコレクション（通常はテーブル）のストレージおよび管理用の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) は、スキーマ（列）とフィールド（行）を含んだデータコレクション（通常はテーブル）のストレージおよび管理用の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
 Luma web イベントデータのデータセットを設定しましょう。
 
@@ -140,7 +140,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
 >[!INFO]
 >
->Adobe Experience Platformのクエリサービスは、レイク内のデータを検証するためのより堅牢な方法ですが、このチュートリアルの範囲を超えています。 詳しくは、 [データの調査](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=ja) を参照してください。
+>Adobe Experience Platformのクエリサービスは、レイク内のデータを検証するためのより堅牢な方法ですが、このチュートリアルの範囲を超えています。 詳しくは、 [データの調査](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) を参照してください。
 
 
 ## リアルタイム顧客プロファイルのデータセットとスキーマを有効にする

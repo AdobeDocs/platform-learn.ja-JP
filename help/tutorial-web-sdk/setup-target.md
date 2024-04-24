@@ -3,7 +3,7 @@ title: Platform Web SDK を使用したAdobe Targetの設定
 description: Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '4307'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 エクスペリエンスを配信する方法と、追加のパラメーターを Target に渡す方法について説明します。
 
-[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja) は、顧客のエクスペリエンスのカスタマイズやパーソナライズに必要なすべてのツールを提供するAdobe Experience Cloud アプリケーションです。Web サイト、モバイルサイト、アプリおよびその他のデジタルチャネルでの収益性を最大化できます。
+[Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) は、顧客のエクスペリエンスのカスタマイズやパーソナライズに必要なすべてのツールを提供するAdobe Experience Cloud アプリケーションです。Web サイト、モバイルサイト、アプリおよびその他のデジタルチャネルでの収益性を最大化できます。
 
 ![Web SDK とAdobe Targetの図](assets/dc-websdk-at.png)
 
@@ -42,12 +42,12 @@ Platform Web SDK を使用してAdobe Targetを実装する方法について説
 
 * データ要素とルールの設定を含む、Platform Web SDK の初期設定に関するすべてのレッスンを完了します。
 * 次を確保します [編集者または承認者の役割](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) Adobe Targetで。
-* のインストール [Visual Experience Composer ヘルパー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) Google Chrome ブラウザーを使用している場合。
+* のインストール [Visual Experience Composer ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) Google Chrome ブラウザーを使用している場合。
 * Target でアクティビティを設定する方法を理解する 復習が必要な場合は、次のチュートリアルとガイドがこのレッスンに役立ちます。
-   * [Visual Experience Composer （VEC） Helper 拡張機能の使用](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)
-   * [Visual Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [フォームベースの Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [エクスペリエンスのターゲット設定アクティビティの作成](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [Visual Experience Composer （VEC） Helper 拡張機能の使用](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [Visual Experience Composer の使用](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [フォームベースの Experience Composer の使用](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [エクスペリエンスのターゲット設定アクティビティの作成](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## ちらつき処理の追加
 
@@ -116,7 +116,7 @@ Adobeでは、Luma サイトで示されているように、タグを非同期�
 >
 >事前非表示のスタイル設定は、同期実装でのみ使用されます。 タグの非同期実装を使用している場合、このスタイルは空白にするかコメントアウトする必要があります。
 
-Platform Web SDK でちらつきを管理する方法について詳しくは、ガイドの節を参照してください。 [パーソナライズされたエクスペリエンス向けのちらつきの管理](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html).
+Platform Web SDK でちらつきを管理する方法について詳しくは、ガイドの節を参照してください。 [パーソナライズされたエクスペリエンス向けのちらつきの管理](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker).
 
 
 ## データストリームの設定
@@ -141,7 +141,7 @@ Platform Web SDK で Target アクティビティを配信するには、事前�
 
 ### プロパティトークン
 
-Target Premium のお客様は、プロパティを使用してユーザー権限を管理できます。 Target プロパティを使用すると、ユーザーが Target アクティビティを実行できる場所の境界を確立できます。 を参照してください。 [Enterprise 権限](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=ja) 詳しくは、Target ドキュメントのの節を参照してください。
+Target Premium のお客様は、プロパティを使用してユーザー権限を管理できます。 Target プロパティを使用すると、ユーザーが Target アクティビティを実行できる場所の境界を確立できます。 を参照してください。 [Enterprise 権限](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview) 詳しくは、Target ドキュメントのの節を参照してください。
 
 プロパティトークンを設定または検索するには、に移動します。 **Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL プロパティ]**. この `</>` アイコン実装コードを表示します。 この `at_property` 値は、データストリームで使用するプロパティトークンです。
 
@@ -155,9 +155,9 @@ Target Premium のお客様は、プロパティを使用してユーザー権�
 
 ### ターゲット環境 ID
 
-[環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) target では、開発のすべてのステージを通じて実装を管理するのに役立ちます。 このオプション設定は、各データストリームで使用しようとしている Target 環境を指定します。
+[環境](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) target では、開発のすべてのステージを通じて実装を管理するのに役立ちます。 このオプション設定は、各データストリームで使用しようとしている Target 環境を指定します。
 
-Adobeでは、物事をシンプルに保つために、開発環境、ステージング環境、実稼動のデータストリームごとにターゲット環境 ID を異なる方法で設定することをお勧めします。 または、Target インターフェイスで以下を使用して環境を整理することもできます。 [ホスト](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ja) 機能
+Adobeでは、物事をシンプルに保つために、開発環境、ステージング環境、実稼動のデータストリームごとにターゲット環境 ID を異なる方法で設定することをお勧めします。 または、Target インターフェイスで以下を使用して環境を整理することもできます。 [ホスト](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts) 機能
 
 環境 ID を設定または検索するには、次に移動します： **Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 環境]**.
 
@@ -169,7 +169,7 @@ Adobeでは、物事をシンプルに保つために、開発環境、ステー
 
 ### Target サードパーティ ID 名前空間
 
-このオプション設定を使用すると、ターゲットサードパーティ ID に使用する ID 記号を指定できます。 Target は、単一の ID 記号または名前空間でのプロファイル同期のみをサポートします。 詳細については、を参照してください [mbox3rdPartyId のリアルタイムプロファイル同期](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=ja) この Target ガイドの節を参照してください。
+このオプション設定を使用すると、ターゲットサードパーティ ID に使用する ID 記号を指定できます。 Target は、単一の ID 記号または名前空間でのプロファイル同期のみをサポートします。 詳細については、を参照してください [mbox3rdPartyId のリアルタイムプロファイル同期](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) この Target ガイドの節を参照してください。
 
 ID 記号は、の下の ID リストにあります **データ収集** > **[!UICONTROL 顧客]** > **[!UICONTROL ID]**.
 
@@ -215,16 +215,16 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 >
 >通常、は [!UICONTROL ビジュアルパーソナライゼーションの決定のレンダリング] 設定は、完全なページ読み込みごとに 1 つの送信イベント アクションに対してのみ有効にする必要があります。 この設定が有効になっている送信イベント アクションが複数ある場合、以降のレンダリング要求は無視されます。
 
-カスタムコードを使用して、これらの決定に対するレンダリングやアクションを自分で行う場合は、 [!UICONTROL ビジュアルパーソナライゼーションの決定のレンダリング] 設定が無効です。 Platform Web SDK は柔軟性が高く、完全に制御するためにこの機能を提供します。 について詳しくは、ガイドを参照してください [パーソナライズされたコンテンツの手動レンダリング](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+カスタムコードを使用して、これらの決定に対するレンダリングやアクションを自分で行う場合は、 [!UICONTROL ビジュアルパーソナライゼーションの決定のレンダリング] 設定が無効です。 Platform Web SDK は柔軟性が高く、完全に制御するためにこの機能を提供します。 について詳しくは、ガイドを参照してください [パーソナライズされたコンテンツの手動レンダリング](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Visual Experience Composer を使用した Target アクティビティの設定
 
-これで基本実装部分が完了したので、Target でエクスペリエンスのターゲット設定（XT）アクティビティを作成して、すべてが正しく動作していることを検証します。 については、Target のチュートリアルを参照してください。 [エクスペリエンスのターゲット設定アクティビティの作成](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html) サポートが必要な場合
+これで基本実装部分が完了したので、Target でエクスペリエンスのターゲット設定（XT）アクティビティを作成して、すべてが正しく動作していることを検証します。 については、Target のチュートリアルを参照してください。 [エクスペリエンスのターゲット設定アクティビティの作成](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities) サポートが必要な場合
 
 >[!NOTE]
 >
->Google Chrome をブラウザーとして使用している場合、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) は、VEC で編集するために適切にサイトを読み込む必要があります。
+>Google Chrome をブラウザーとして使用している場合、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) は、VEC で編集するために適切にサイトを読み込む必要があります。
 
 1. Adobe Target インターフェイスに移動します
 1. アクティビティ URL の Luma ホームページを使用して、エクスペリエンスのターゲット設定（XT）アクティビティを作成します
@@ -248,9 +248,9 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
    >Adobe Analyticsを使用しない場合は、レポートソースとして Target を選択し、次のように別の指標を選択します **エンゲージメント > ページビュー** その代わり。 アクティビティを保存およびプレビューするには、目標指標が必要です。
 
 1. アクティビティの保存
-1. 変更に慣れている場合は、アクティビティをアクティブ化できます。 有効にせずにエクスペリエンスをプレビューする場合は、をコピーできます [QA プレビュー URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+1. 変更に慣れている場合は、アクティビティをアクティブ化できます。 有効にせずにエクスペリエンスをプレビューする場合は、をコピーできます [QA プレビュー URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Luma ホームページを読み込むと、変更が適用されていることがわかります
-1. 数時間後に、Adobe Analyticsで Target アクティビティのデータとコンバージョンを確認できます。 以下について詳しくは、Target ガイドを参照してください [Analytics for Target （A4T）レポート](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/reporting.html?lang=en).
+1. 数時間後に、Adobe Analyticsで Target アクティビティのデータとコンバージョンを確認できます。 以下について詳しくは、Target ガイドを参照してください [Analytics for Target （A4T）レポート](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting).
 
 
 
@@ -260,7 +260,7 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 >[!CAUTION]
 >
->Google Chrome を使用していて、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) インストール済みです。次のことを確認してください **Target ライブラリの挿入** 設定は無効です。 この設定を有効にすると、追加の Target リクエストが発生します。
+>Google Chrome を使用していて、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) インストール済みです。次のことを確認してください **Target ライブラリの挿入** 設定は無効です。 この設定を有効にすると、追加の Target リクエストが発生します。
 
 1. Adobe Experience Platform Debuggerブラウザー拡張機能を開く
 1. に移動します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) デバッガーを使用して次の操作を行います [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
@@ -358,7 +358,7 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 1. 日 [!UICONTROL 目標と設定] 手順で、レポートソースとして「Adobe Target」を選択し、 [!UICONTROL エンゲージメント] > [!UICONTROL ページビュー] 目標として
 1. アクティビティの保存
-1. 変更に慣れている場合は、アクティビティをアクティブ化できます。 有効にせずにエクスペリエンスをプレビューする場合は、をコピーできます [QA プレビュー URL](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+1. 変更に慣れている場合は、アクティビティをアクティブ化できます。 有効にせずにエクスペリエンスをプレビューする場合は、をコピーできます [QA プレビュー URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Luma ホームページを読み込むと、変更が適用されていることがわかります
 
 >[!NOTE]
@@ -401,10 +401,10 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 XDM オブジェクトからマッピングされていない Target に役立つデータポイントがいくつかあります。 これらの特別な Target パラメーターには、以下が含まれます。
 
-* [プロファイル属性](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes.html?lang=en)
-* [Recommendations エンティティの属性](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=en)
-* [Recommendationsの予約済みパラメーター](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
-* のカテゴリ値 [カテゴリ親和性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
+* [プロファイル属性](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [Recommendations エンティティの属性](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
+* [Recommendationsの予約済みパラメーター](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* のカテゴリ値 [カテゴリ親和性](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
 
 これらのパラメーターは、 `data` の代わりにのオブジェクト `xdm` オブジェクト。 また、page （または mbox）パラメーターをに含めることもできます `data` オブジェクト。
 

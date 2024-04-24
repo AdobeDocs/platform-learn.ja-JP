@@ -3,10 +3,10 @@ title: Platform Web SDK を使用したAudience Managerの設定
 description: Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の宛先を使用して実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の宛先を使用して実装を検証する方法を説明します。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=ja) は、サイト訪問者に関する商業的に関連性のある情報を収集し、市場性のあるセグメントを作成し、ターゲット広告やコンテンツを適切なオーディエンスに提供するために必要なすべてを提供するAdobe Experience Cloud ソリューションです。
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) は、サイト訪問者に関する商業的に関連性のある情報を収集し、市場性のあるセグメントを作成し、ターゲット広告やコンテンツを適切なオーディエンスに提供するために必要なすべてを提供するAdobe Experience Cloud ソリューションです。
 
 ![Web SDK とAdobe Audience Managerの図](assets/dc-websdk-aam.png)
 
@@ -31,11 +31,11 @@ Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の�
 このレッスンを完了するには、まず次の操作を行う必要があります。
 
 * このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
-* Adobe Audience Managerへのアクセス権と、特性、セグメントおよび宛先を作成、読み取りおよび書き込むための適切な権限を持っています。 詳しくは、を参照してください。 [Audience Managerの役割ベースのアクセス制御](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Adobe Audience Managerへのアクセス権と、特性、セグメントおよび宛先を作成、読み取りおよび書き込むための適切な権限を持っています。 詳しくは、を参照してください。 [Audience Managerの役割ベースのアクセス制御](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## データストリームの設定
 
-Platform Web SDK を使用したAudience Manager実装は、を使用した実装とは異なります [サーバーサイド転送（SSF）](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=ja). サーバーサイド転送は、Adobe Analytics リクエストデータをAudience Managerに渡します。 Platform Web SDK 実装は、Platform Edge Networkに送信された XDM データをAudience Managerに渡します。 データストリームでAudience Managerが有効になっています。
+Platform Web SDK を使用したAudience Manager実装は、を使用した実装とは異なります [サーバーサイド転送（SSF）](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). サーバーサイド転送は、Adobe Analytics リクエストデータをAudience Managerに渡します。 Platform Web SDK 実装は、Platform Edge Networkに送信された XDM データをAudience Managerに渡します。 データストリームでAudience Managerが有効になっています。
 
 1. に移動 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで「」を選択します **[!UICONTROL データストリーム]**
@@ -52,7 +52,7 @@ Platform Web SDK を使用したAudience Manager実装は、を使用した実�
 
 ## データソースの作成
 
-次に、を作成します [データソース](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=ja):Audience Manager内のデータを整理するための基本的なツール：
+次に、を作成します [データソース](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings):Audience Manager内のデータを整理するための基本的なツール：
 
 1. に移動します [Audience Manager](https://experience.adobe.com/#/audience-manager/) インターフェイス
 1. を選択 **[!UICONTROL オーディエンスデータ]** 上部ナビゲーションから
@@ -72,7 +72,7 @@ Platform Web SDK を使用したAudience Manager実装は、を使用した実�
 
 ## 特性の作成
 
-データソースを保存した後、 [特性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=ja). 特性は、Audience Managerにおける 1 つ以上のシグナルの組み合わせです。 ホームページ訪問者の特性を作成します。
+データソースを保存した後、 [特性](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). 特性は、Audience Managerにおける 1 つ以上のシグナルの組み合わせです。 ホームページ訪問者の特性を作成します。
 
 >[!NOTE]
 >

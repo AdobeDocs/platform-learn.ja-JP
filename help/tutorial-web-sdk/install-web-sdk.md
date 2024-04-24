@@ -3,10 +3,10 @@ title: Adobe Experience Platform Web SDK タグ拡張機能のインストール
 description: データ収集インターフェイスで Platform Web SDK タグ拡張機能をインストールして設定する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
@@ -81,7 +81,7 @@ Platform Web SDK をインストールし、データストリームに関連付
 >
 >で CNAME を設定していませんが [!UICONTROL Edge ドメイン] 設定このレッスンでは、Adobeの web サイトに Platform Web SDK を実装する際に CNAME を使用することをお勧めします。 CNAME 実装には Cookie の有効期間に関するメリットはありませんが、他にもメリットがある場合があります。これらのメリットには、広告ブロッカーや、データがトラッカーとして分類するドメインに送信されるのを防ぐ一般的でないブラウザーなどが含まれます。このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
 
-拡張機能の各セクションについて詳しくは、を参照してください [Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=ja)
+拡張機能の各セクションについて詳しくは、を参照してください [Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
 
 
 

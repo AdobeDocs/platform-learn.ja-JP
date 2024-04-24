@@ -3,7 +3,7 @@ title: Experience Platform Web SDK を使用したAdobe Analyticsの設定
 description: Experience PlatformWeb SDK を使用してAdobe Analyticsをセットアップする方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 1%
@@ -12,9 +12,9 @@ ht-degree: 1%
 
 # Platform Web SDK を使用したAdobe Analyticsの設定
 
-を使用したAdobe Analyticsの設定方法を説明します [Web SDK のExperience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=ja)を選択し、タグルールを作成して Analytics にデータを送信し、Adobe Analyticsが期待どおりにデータをキャプチャしていることを検証します。
+を使用したAdobe Analyticsの設定方法を説明します [Web SDK のExperience Platform](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)を選択し、タグルールを作成して Analytics にデータを送信し、Adobe Analyticsが期待どおりにデータをキャプチャしていることを検証します。
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ja) は、顧客を人物として理解し、顧客インテリジェンスを使用してビジネスを導く力を与える、業界をリードするアプリケーションです。
+[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) は、顧客を人物として理解し、顧客インテリジェンスを使用してビジネスを導く力を与える、業界をリードするアプリケーションです。
 
 ![Web SDK からAdobe Analyticsへの図](assets/dc-websdk-aa.png)
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 * Adobe Analyticsに詳しく、アクセスできます。
 
-* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合、 [作成してください](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja).
+* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合、 [作成してください](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
 
 * このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
 
@@ -81,9 +81,9 @@ Platform Web SDK は、web サイトから Platform Edge Networkにデータを�
 1. Automatically mapped variables using reserved XDM fields
 1. Manually mapped variables using Analytics Processing Rules
 
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. 
+To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). Any variable that is not auto-mapped must be manually mapped. 
 
- 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
+ 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
 
 
  1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
@@ -119,7 +119,7 @@ Analytics 製品文字列の個々のセクションは、の下の様々な XDM
 >設定された値 `productListItems[].name` 次の場合にのみ、製品名にマッピングされます `productListItems[].SKU` が存在しない。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
 >に空の文字列や null を設定しないでください。  `productListItems[].SKU`. これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
-最新のマッピングのリストについては、を参照してください。 [AdobeExperience Edge での Analytics 変数のマッピング](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=ja).
+最新のマッピングのリストについては、を参照してください。 [AdobeExperience Edge での Analytics 変数のマッピング](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 
 ### 処理ルールを使用した Analytics 変数へのマッピング

@@ -3,7 +3,7 @@ title: Platform Web SDK を使用した同意の設定
 description: Experience PlatformWeb SDK タグ拡張機能のプライバシー設定の指定方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 0%
@@ -215,10 +215,10 @@ Luma デモサイトに移動して検証し、Cookie を拒否し、オプト�
 ![訪問者の同意後のオプション](assets/consent-post-user-optin.png)
 
 
-Web SDK の同意について詳しくは、次を参照してください： [顧客の同意環境設定のサポート](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+Web SDK の同意について詳しくは、次を参照してください： [顧客の同意環境設定のサポート](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-の詳細 [!UICONTROL 同意を設定] アクション、を参照 [同意を設定](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+の詳細 [!UICONTROL 同意を設定] アクション、を参照 [同意を設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [次へ： ](setup-event-forwarding.md)
 

@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 3%
@@ -57,7 +57,7 @@ Platform Web SDK を使用して意思決定管理を実装する方法を説明
 
 ## 意思決定管理へのアクセスの許可
 
-意思決定管理機能へのアクセスを許可するには、以下を作成する必要があります。 **製品プロファイル** 対応する権限をユーザーに割り当てます。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+意思決定管理機能へのアクセスを許可するには、以下を作成する必要があります。 **製品プロファイル** 対応する権限をユーザーに割り当てます。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## データストリームの設定
 
@@ -340,7 +340,7 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
 
 ### ロイヤルティオファーのテスト
 
-1. シミュレーションに使用するテストプロファイルを選択します。 クリック **プロファイルを管理**. [オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください。](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. シミュレーションに使用するテストプロファイルを選択します。 クリック **プロファイルを管理**. [オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください。](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
 
 Luma サイトでデバッガーを使用して、実稼動環境で意思決定ロジックを検証できます。 これは、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
-[こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 デバッガーを使用して検証を開始するには：
 

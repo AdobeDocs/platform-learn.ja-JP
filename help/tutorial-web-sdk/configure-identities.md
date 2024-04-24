@@ -3,7 +3,7 @@ title: ID 名前空間の設定
 description: Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 7%
@@ -14,9 +14,9 @@ ht-degree: 7%
 
 Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する方法について説明します。
 
-この [Adobe Experience Cloud ID サービス](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、SDK ベースのAdobeアプリケーション間で共通の訪問者 ID （ECID）を設定して、アプリケーション間のオーディエンス共有などのExperience Cloud機能を強化します。 また、独自の顧客 ID をサービスに送信して、クロスデバイスターゲティングや、顧客関係管理（CRM）システムなどの他のシステムとの統合を有効にすることもできます。
+この [Adobe Experience Cloud ID サービス](https://experienceleague.adobe.com/en/docs/id-service/using/home) は、SDK ベースのAdobeアプリケーション間で共通の訪問者 ID （ECID）を設定して、アプリケーション間のオーディエンス共有などのExperience Cloud機能を強化します。 また、独自の顧客 ID をサービスに送信して、クロスデバイスターゲティングや、顧客関係管理（CRM）システムなどの他のシステムとの統合を有効にすることもできます。
 
-この [Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) （はい、2 つあります。） では、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できるようにします。
+この [Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （はい、2 つあります。） では、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できるようにします。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する
 >
 >この [Experience CloudID 拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) Web SDK JavaScript ライブラリには訪問者 ID サービス機能が含まれているので、Adobe Experience Platform Web SDK を実装する場合は必要ありません。
 >
-> Web サイトで、訪問者 API またはExperience CloudID サービスタグ拡張機能を通じて既にExperience CloudID サービスを使用している場合、Adobe Experience Platform Web SDK への移行中も引き続き使用するには、最新版の訪問者 API またはExperience CloudID サービスタグ拡張機能を使用する必要があります。 参照： [ID の移行](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) を参照してください。
+> Web サイトで、訪問者 API またはExperience CloudID サービスタグ拡張機能を通じて既にExperience CloudID サービスを使用している場合、Adobe Experience Platform Web SDK への移行中も引き続き使用するには、最新版の訪問者 API またはExperience CloudID サービスタグ拡張機能を使用する必要があります。 参照： [ID の移行](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) を参照してください。
 
 ## ID 名前空間の作成
 

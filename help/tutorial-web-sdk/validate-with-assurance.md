@@ -3,7 +3,7 @@ title: Experience Platformアシュランスを使用した Web SDK 実装の検
 description: Adobe Experience Platform Assurance を使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Experience Platformアシュランスを使用した Web SDK 実装の検証
 
-Adobe Experience Platform Assurance は、データの収集やエクスペリエンスの提供の方法を調査、配達確認、シミュレートおよび検証するのに役立つ、Adobe Experience Cloudの製品です。 詳細を読む： [Adobe保証](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+Adobe Experience Platform Assurance は、データの収集やエクスペリエンスの提供の方法を調査、配達確認、シミュレートおよび検証するのに役立つ、Adobe Experience Cloudの製品です。 詳細を読む： [Adobe保証](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## 学習目標

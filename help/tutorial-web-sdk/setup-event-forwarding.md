@@ -3,7 +3,7 @@ title: イベント転送プロパティの設定
 description: Experience Platform Web SDK data を使用したイベント転送プロパティの使用方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Experience Platform Web SDK data を使用したイベント転送プロパティの使用方法を説明します。
 
-イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、を参照してください [イベント転送の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、を参照してください [イベント転送の概要](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
 ![Web SDK とイベント転送の図](assets/dc-websdk-eventforwarding.png)
@@ -23,7 +23,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/documentation/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
