@@ -2,28 +2,29 @@
 title: Experience Platformデバッガーを使用した Web SDK 実装の検証
 description: Adobe Experience Platform Debuggerを使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Debugger
+jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
 
 # Experience Platformデバッガーを使用した Web SDK 実装の検証
 
-Adobe Experience Platform Debuggerを使用して Platform Web SDK 実装を検証する方法を説明します。
+Adobe Experience Platform Debuggerを使用してAdobe Experience Platform Web SDK 実装を検証する方法を説明します。
 
 Experience Platformーデバッガーは、Chrome および Firefox ブラウザーで使用できる拡張機能で、web ページに実装されたAdobeーテクノロジーを確認するのに役立ちます。 使用するブラウザーのバージョンをダウンロードします。
 
 * [Firefox 拡張機能](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
-* [Chrome 拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Chrome 拡張機能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 デバッガーをまだ使用したことがない場合は、次の 5 分間の概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-このレッスンでは、 [Adobe Experience Cloud Debugger 拡張機能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) でハードコードされたタグプロパティを [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) 自分のプロパティを持つ。
+このレッスンでは、 [Adobe Experience Platform Debugger拡張機能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) でハードコードされたタグプロパティを [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) 自分のプロパティを持つ。
 
 この手法は環境の切り替えと呼ばれるもので、後で自分の web サイトでタグを使用する際に役立ちます。 これにより、ブラウザーに実稼動用 web サイトを読み込むことができますが、その際に *開発* タグライブラリ。 この機能を使用すると、通常のコードリリースとは別に、タグの変更を自信を持って行い、検証できます。 結局のところ、マーケティングタグリリースと通常のコードリリースの分離は、顧客がそもそもタグを使用する主な理由の 1 つです。
 
@@ -55,7 +56,7 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 1. デバッガーが開き、ハードコーディングされた実装の詳細が表示されます（デバッガーを開いた後に Luma サイトをリロードする必要が生じる場合があります）
 1. デバッガーが「」であることを確認します。**[!UICONTROL Luma に接続]**&#x200B;次の図のように「」を選択してから、「」を選択します&#x200B;**[!UICONTROL ロック]**「アイコンでデバッガーを Luma サイトにロックします。
 1. 「」を選択します **[!UICONTROL ログイン]** ボタンを押し、AdobeID を使用してAdobe Experience Cloudにログインします。
-1. 次に進む **[!UICONTROL Experience Platformタグ]** 左側のナビゲーションで
+1. さあ、行きなさい **[!UICONTROL Experience Platformタグ]** 左側のナビゲーションで
 
    ![Debugger タグ画面](assets/validate-launch-screen.png)
 
@@ -84,7 +85,7 @@ Debugger を使用して、Platform Web SDK 実装からトリガーされたク
 
    ![「概要」タブ](assets/validate-summary.png)
 
-1. 次に進む **[!UICONTROL Web SDK のExperience Platform]** 左側のナビゲーションでを表示します **[!UICONTROL ネットワークリクエスト]**
+1. さあ、行きなさい **[!UICONTROL Web SDK のExperience Platform]** 左側のナビゲーションでを表示します **[!UICONTROL ネットワークリクエスト]**
 1. を開きます **[!UICONTROL イベント]** 行
 
    ![Adobe Experience Platform Web SDK リクエスト](assets/validate-aep-screen.png)
@@ -168,4 +169,4 @@ Edge Trace を有効にするには：
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

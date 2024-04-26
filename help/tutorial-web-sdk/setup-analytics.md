@@ -2,19 +2,20 @@
 title: Experience Platform Web SDK を使用したAdobe Analyticsの設定
 description: Experience PlatformWeb SDK を使用してAdobe Analyticsをセットアップする方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Analytics
+jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2810'
 ht-degree: 1%
 
 ---
 
-# Platform Web SDK を使用したAdobe Analyticsの設定
+# Adobe Experience Platform Web SDK を使用したAdobe Analyticsの設定
 
-を使用したAdobe Analyticsの設定方法を説明します [Web SDK のExperience Platform](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)を選択し、タグルールを作成して Analytics にデータを送信し、Adobe Analyticsが期待どおりにデータをキャプチャしていることを検証します。
+を使用したAdobe Analyticsの設定方法を説明します [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)を選択し、タグルールを作成して Analytics にデータを送信し、Adobe Analyticsが期待どおりにデータをキャプチャしていることを検証します。
 
-[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) は、顧客を人物として理解し、顧客インテリジェンスを使用してビジネスを導く力を与える、業界をリードするアプリケーションです。
+[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics) は、顧客を人物として理解し、顧客インテリジェンスを使用してビジネスを導く力を与える、業界をリードするアプリケーションです。
 
 ![Web SDK からAdobe Analyticsへの図](assets/dc-websdk-aa.png)
 
@@ -23,7 +24,7 @@ ht-degree: 1%
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
 * データストリームの設定によるAdobe Analyticsの有効化
-* Analytics 変数に自動マッピングする標準 XDM フィールドがわかる
+* Analytics 変数に自動マッピングされる標準 XDM フィールドを把握する
 * 「Adobe Analytics ExperienceEvent テンプレート」フィールドグループまたは処理ルールを使用して、カスタム Analytics 変数を設定します
 * データストリームを上書きして、別のレポートスイートにデータを送信する
 * Debugger と Assurance を使用したAdobe Analytics変数の検証
@@ -34,13 +35,13 @@ ht-degree: 1%
 
 * Adobe Analyticsに詳しく、アクセスできます。
 
-* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合、 [作成してください](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合、 [作成してください](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
 
 ## データストリームの設定
 
-Platform Web SDK は、web サイトから Platform Edge Networkにデータを送信します。 次に、データストリームは、データの転送先のAdobe Analytics レポートスイートを Platform Edge Networkに伝えます。
+Platform Web SDK は、web サイトから Platform Edge Networkにデータを送信します。 次に、データストリームは、データの送信先のAdobe Analytics レポートスイートを Platform Edge Networkに伝えます。
 
 1. に移動 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで「」を選択します **[!UICONTROL データストリーム]**
@@ -51,7 +52,7 @@ Platform Web SDK は、web サイトから Platform Edge Networkにデータを�
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![データストリームへのサービスの追加](assets/datastream-analytics-addService.png)
 1. を選択 **[!UICONTROL Adobe Analytics]** as the **[!UICONTROL サービス]**
-1. を入力  **[!UICONTROL レポートスイート ID]** 開発レポートスイートの
+1. を入力 **[!UICONTROL レポートスイート ID]** 開発レポートスイートの
 1. 「**[!UICONTROL 保存]**」を選択します
 
    ![データストリーム保存分析](assets/datastream-add-analytics.png)
@@ -62,7 +63,7 @@ Platform Web SDK は、web サイトから Platform Edge Networkにデータを�
 
 >[!WARNING]
 >
->このチュートリアルでは、開発環境のAdobe Analytics レポートスイートのみを設定します。 独自の web サイト用にデータストリームを作成する場合は、ステージング環境と実稼動環境用に追加のデータストリームとレポートスイートを作成します。
+>このチュートリアルでは、開発環境のAdobe Analytics レポートスイートのみを設定します。 独自の web サイト用にデータストリームを作成する場合、ステージング環境と実稼動環境用に追加のデータストリームおよびレポートスイートを作成する必要があります。
 
 ## XDM スキーマと Analytics 変数
 
@@ -117,7 +118,7 @@ The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, 
 Analytics 製品文字列の個々のセクションは、の下の様々な XDM 変数を介して設定されます `productListItems` オブジェクト。
 >2022 年 8 月 18 日現在、 `productListItems[].SKU` s.products 変数内の製品名へのマッピングを優先します。
 >設定された値 `productListItems[].name` 次の場合にのみ、製品名にマッピングされます `productListItems[].SKU` が存在しない。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
->に空の文字列や null を設定しないでください。  `productListItems[].SKU`. これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
+>に空の文字列や null を設定しないでください。 `productListItems[].SKU`. これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
 最新のマッピングのリストについては、を参照してください。 [AdobeExperience Edge での Analytics 変数のマッピング](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
@@ -126,7 +127,7 @@ Analytics 製品文字列の個々のセクションは、の下の様々な XDM
 
 XDM スキーマのすべてのフィールドは、次のプレフィックスを持つコンテキストデータ変数としてAdobe Analyticsで使用できるようになります `a.x.`. 例：`a.x.web.webinteraction.region`
 
-この演習では、1 つの XDM 変数を prop にマッピングします。 カスタムマッピングで実行する必要がある場合は、同じ手順に従います `eVar`, `prop`, `event`、または処理ルールからアクセスできる変数。
+この演習では、1 つの XDM 変数を prop にマッピングします。 カスタムマッピングに対して実行する必要がある同じ手順に従います `eVar`, `prop`, `event`、または処理ルールからアクセスできる変数。
 
 1. Analytics インターフェイスに移動します
 1. に移動 [!UICONTROL Admin] > [!UICONTROL 管理ツール] > [!UICONTROL レポートスイート]
@@ -229,7 +230,7 @@ XDM スキーマのすべてのフィールドは、次のプレフィックス�
 
 1. 右側で、 **[!UICONTROL 正規表現]** 無効の切り替え
 
-1. 次の下 **[!UICONTROL パスがと等しい]** set `/content/luma/us/en.html`. Luma デモサイトの場合、ルールがホームページのトリガーのみになります
+1. 次の下 **[!UICONTROL パスがと等しい]** set `/content/luma/us/en.html`. Luma デモサイトの場合、ルールがホームページにのみトリガーされるようにします
 
 1. を選択 **[!UICONTROL 変更を保持]**
 
@@ -243,7 +244,7 @@ XDM スキーマのすべてのフィールドは、次のプレフィックス�
 
 1. として **[!UICONTROL タイプ]**&#x200B;を選択 `web.webpagedetails.pageViews`
 
-1. として **[!UICONTROL XDM データ]**&#x200B;を選択し、 `xdm.variable.content` 「」に作成しました [データ要素の作成](create-data-elements.md) レッスン
+1. として **[!UICONTROL XDM データ]**&#x200B;を選択し、 `xdm.variable.content` で作成したデータ要素 [データ要素の作成](create-data-elements.md) レッスン
 
    ![Analytics データストリームの上書き](assets/set-up-analytics-datastream-override-1.png)
 
@@ -406,7 +407,7 @@ Adobe Experience Platform Assurance は、web サイトやモバイルアプリ�
 で学んだように [Assurance](validate-with-assurance.md) 「Assurance セッションを開始するには、いくつかの方法があります。」 前の演習から開始された Edge Trace セッションで既にAdobe Experience Platform Debuggerを開いているので、Debugger を使用して Assurance にアクセスすることをお勧めします。
 ![Adobe Experience Platform Data Collection による Assurance](assets/assurance-open-aep-debugger.png)
 
-内 **[!UICONTROL &quot;Web SDK チュートリアル 3&quot;]** Assurance Session enter **[!UICONTROL &quot;hitdebugger&quot;]** をイベント検索バーに移動し、結果を「Adobe分析」「処理後のデータ」でフィルタリングします。
+内 **[!UICONTROL &quot;Web SDK チュートリアル 3&quot;]** Assurance Session enter **[!UICONTROL &quot;hitdebugger&quot;]** をイベント検索バーに移動し、結果をAdobe Analyticsの後処理済みデータにフィルタリングします。
 ![Assurance Adobe分析で処理後のデータを分析](assets/assurance-hitdebugger.png)
 
 ### Experience CloudID の検証
@@ -452,4 +453,4 @@ Scroll down to **[!UICONTROL pageName]** を検証します `Page Name` は正�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

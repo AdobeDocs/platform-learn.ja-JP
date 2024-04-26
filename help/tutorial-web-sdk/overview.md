@@ -3,7 +3,7 @@ title: Web SDK を使用した Adobe Experience Cloud 実装のチュートリ�
 description: Adobe Experience Platform Web SDK を使用してExperience Cloudアプリケーションを実装する方法について説明します。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -66,7 +66,7 @@ Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Exp
 
 * オプションの場合 **Adobe Analytics** 教訓、あなたは持っている必要があります [レポートスイート設定、処理ルールおよびAnalysis Workspaceへの管理者アクセス](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* オプションの場合 **Adobe Target** 教訓、あなたは持っている必要があります [編集者または承認者](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) アクセス。
+* オプションの場合 **Adobe Target** 教訓、あなたは持っている必要があります [編集者または承認者](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) アクセス。
 
 * オプションの場合 **Audience Manager** 特性、セグメントおよび宛先を作成、読み取り、書き込むためのアクセス権が必要です。 詳しくは、のチュートリアルを参照してください。 [Audience Managerの役割ベースのアクセス制御](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -77,7 +77,7 @@ Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Exp
 
 ## 更新
 
-* 2024 年 4 月 24 日：変数の設定/変数の更新、分割パーソナライゼーションおよび分析リクエストの追加を含む大規模な更新、Journey Optimizerの賃貸事業者
+* 2024 年 4 月 24 日：変数の設定/変数の更新、パーソナライゼーションおよび分析リクエストの分割、Journey Optimizerのレッスンを含む大幅な更新
 
 ## Luma web サイトを読み込みます
 
@@ -91,4 +91,4 @@ Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Exp
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

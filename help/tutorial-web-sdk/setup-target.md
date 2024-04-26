@@ -2,17 +2,18 @@
 title: Platform Web SDK を使用したAdobe Targetの設定
 description: Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4305'
 ht-degree: 0%
 
 ---
 
 # Platform Web SDK を使用したAdobe Targetの設定
 
-Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 エクスペリエンスを配信する方法と、追加のパラメーターを Target に渡す方法について説明します。
+Adobe Experience Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 エクスペリエンスを配信する方法と、追加のパラメーターを Target に渡す方法について説明します。
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) は、顧客のエクスペリエンスのカスタマイズやパーソナライズに必要なすべてのツールを提供するAdobe Experience Cloud アプリケーションです。Web サイト、モバイルサイト、アプリおよびその他のデジタルチャネルでの収益性を最大化できます。
 
@@ -20,7 +21,7 @@ Platform Web SDK を使用してAdobe Targetを実装する方法について説
 
 ## 学習目標
 
-このレッスンの最後では、Target の Web SDK 実装を使用して、次の操作を実行できるようになります。
+このレッスンの最後では、Target の Web SDK 実装を使用して、次の操作を実行できます。
 
 * ちらつきを防ぐために、事前非表示のスニペットを追加
 * データストリームの設定による Target 機能の有効化
@@ -41,7 +42,7 @@ Platform Web SDK を使用してAdobe Targetを実装する方法について説
 このセクションのレッスンを完了するには、まず次の操作を行う必要があります。
 
 * データ要素とルールの設定を含む、Platform Web SDK の初期設定に関するすべてのレッスンを完了します。
-* 次を確保します [編集者または承認者の役割](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) Adobe Targetで。
+* 次を確保します [編集者または承認者の役割](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) Adobe Targetで。
 * のインストール [Visual Experience Composer ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) Google Chrome ブラウザーを使用している場合。
 * Target でアクティビティを設定する方法を理解する 復習が必要な場合は、次のチュートリアルとガイドがこのレッスンに役立ちます。
    * [Visual Experience Composer （VEC） Helper 拡張機能の使用](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ Platform Web SDK を使用してAdobe Targetを実装する方法について説
 
 >[!NOTE]
 >
->このチュートリアルでは、を使用します [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html) には、タグおよびちらつきの軽減が非同期で実装されています。 この節では、ちらつきの軽減が Platform Web SDK でどのように機能するかを説明します。
+>このチュートリアルでは、を使用します [Luma web サイト](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}には、タグおよびちらつきの軽減が非同期で実装されています。 この節では、ちらつきの軽減が Platform Web SDK でどのように機能するかを説明します。
 
 
 ### 非同期実装
 
-タグライブラリが非同期で読み込まれると、Target がデフォルトのコンテンツをパーソナライズされたコンテンツに置き換える前に、ページのレンダリングが終了する場合があります。 この動作により、Target で指定し、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示される、「ちらつき」と呼ばれる現象が発生する可能性があります。 このちらつきを回避するには、Adobeでは、非同期タグ埋め込みコードの直前に、事前に非表示になる特別なスニペットを追加することをお勧めします。
+タグライブラリが非同期で読み込まれると、Target がデフォルトのコンテンツをパーソナライズされたコンテンツに置き換える前に、ページのレンダリングが終了する場合があります。 この動作により、「ちらつき」と呼ばれる現象が発生する可能性があり、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示されます。 このちらつきを回避するには、Adobeでは、非同期タグ埋め込みコードの直前に、事前に非表示になる特別なスニペットを追加することをお勧めします。
 
 このスニペットは既に Luma サイトに存在しますが、このコードの機能を詳しく見ていきます。
 
@@ -182,13 +183,13 @@ Luma サイトを使用したこのチュートリアルでは、ID シンボル
 
 ## ビジュアルパーソナライゼーションの決定のレンダリング
 
-Visual Personalization の決定とは、Adobe Targetの visual experience composer で作成されるエクスペリエンスを指します。 まず、Target インターフェイスとタグインターフェイスで使用される用語を理解する必要があります。
+Visual Personalization の決定は、Adobe Targetの visual experience composer で作成されたエクスペリエンスを参照します。 まず、Target インターフェイスとタグインターフェイスで使用される用語を理解する必要があります。
 
 * **Activity**:1 つ以上のオーディエンスをターゲットとした一連のエクスペリエンス。 例えば、単純な A/B テストは、2 つのエクスペリエンスを持つアクティビティにすることができます。
 * **経験**:1 つ以上の場所または決定範囲をターゲットとしたアクションのセット。
 * **決定範囲**:Target エクスペリエンスが配信される場所。 古いバージョンの Target の使用に詳しい場合、決定範囲は「mbox」と同等です。
 * **パーソナライズの決定**：サーバーが適用する必要があると判断したアクション。 これらの決定は、オーディエンスの条件や、ターゲットアクティビティの優先順位に基づいて行われます。
-* **提案**:Platform Web SDK 応答で配信される、サーバーによる決定の結果。 例えば、バナー画像を入れ替えると、提案になります。
+* **提案**：サーバーによる決定の結果で、Platform Web SDK 応答で配信されます。 例えば、バナー画像を入れ替えると、提案になります。
 
 ### を更新 [!UICONTROL イベントを送信] アクション
 
@@ -302,7 +303,7 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 ### Target からの応答を処理
 
-これで、のコンテンツをリクエストするように Platform Web SDK を設定しました `homepage-hero` スコープでは、応答で何らかの処理を行う必要があります。 Platform Web SDK タグ拡張機能は、を提供します [!UICONTROL イベント完了の送信] からの応答があった場合に新しいルールにすぐにトリガーを付けるために使用できるイベント。 [!UICONTROL イベントを送信] アクションを受信しました。
+これで、のコンテンツをリクエストするように Platform Web SDK を設定しました `homepage-hero` スコープでは、応答で何らかの処理を行う必要があります。 Platform Web SDK タグ拡張機能は、を提供します [!UICONTROL イベント完了の送信] イベント。から応答があった場合に、新しいルールにすぐにトリガーを付けるために使用できます。 [!UICONTROL イベントを送信] アクションを受信しました。
 
 1. という名前のルールの作成 `homepage - send event complete - render homepage-hero`.
 1. ルールにイベントを追加します。 の使用 **Adobe Experience Platform Web SDK** 拡張機能と **[!UICONTROL 送信イベントの完了]** イベントタイプ。
@@ -393,7 +394,7 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 ### ページ（mbox）パラメーターと XDM
 
-すべての XDM フィールドは、次のように自動的に Target に渡されます [ページのパラメーター](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) または mbox パラメーター。
+すべての XDM フィールドは、次のように自動的に Target に渡されます [ページのパラメーター](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) または mbox パラメーター。
 
 これらの XDM フィールドの一部は、Target のバックエンドの特別なオブジェクトにマッピングされます。 例： `web.webPageDetails.URL` は、URL ベースのターゲティング条件を作成したり、として自動的に使用できるようになります `page.url` プロファイルスクリプトの作成時はオブジェクト。
 
@@ -401,7 +402,7 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 XDM オブジェクトからマッピングされていない Target に役立つデータポイントがいくつかあります。 これらの特別な Target パラメーターには、以下が含まれます。
 
-* [プロファイル属性](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [プロファイル属性](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Recommendations エンティティの属性](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Recommendationsの予約済みパラメーター](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * のカテゴリ値 [カテゴリ親和性](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -543,7 +544,7 @@ Target Premium を使用している場合は、エンティティデータが�
 
    ![Assurance Analytics ヒットで検証](assets/validate-in-assurance-analyticsevent.png)
 
-これは、Analytics トラッキングコールが後でページで発生したときに、target Decisioning 呼び出しを行ったときに後で送信するためにキューに入れられた A4T 情報が、正しく送信されたことを確認します。
+これは、Target Decisioning 呼び出しを行ったときに後で送信するためにキューに入れられた A4T 情報が、Analytics トラッキングコールが後でページで実行されたときに正しく送信されたことを確認します。
 
 このレッスンを完了したので、Platform Web SDK を使用したAdobe Targetの実用的な実装が得られます。
 
@@ -551,4 +552,4 @@ Target Premium を使用している場合は、エンティティデータが�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

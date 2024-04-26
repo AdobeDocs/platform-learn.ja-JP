@@ -1,12 +1,12 @@
 ---
-title: まとめ、次のステップ
-description: チュートリアルの完了後に行うこと
+title: Web SDK チュートリアルの結論と次の手順
+description: Web SDK チュートリアルを完了した後の作業
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '382'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,8 @@ ht-degree: 2%
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Platform Edge Networkから Web フックにデータを送信するために、イベント転送を使用しました。
+   * Adobe Journey Optimizer
+* イベント転送で、Platform Edge Networkから Web フックにデータを転送しました。
 * Adobe Experience Platform Debuggerを使用して実装を検証しました。
 
 ジャーニーの次の段階である、独自の web サイトへのAdobe Experience Cloudの実装を開始する準備が整いました。
@@ -35,12 +36,12 @@ ht-degree: 2%
 
 
 * **Journey Optimizerでのジャーニーのトリガー**. Luma web サイトに実装したイベントは、ジャーニーのトリガーに使用できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey).
-* **Customer Journey Analyticsを接続**. 作成した場合 [Platform データセット](setup-experience-platform.md)を選択すると、データセットをCustomer Journey Analyticsに接続できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform)
-* **Platform でのセグメントの作成**. を有効にした場合 [リアルタイム顧客プロファイルのスキーマとデータセット](setup-experience-platform.md)を使用すると、web イベントに基づいてセグメントを作成し、それらを他のソースのデータと組み合わせて、Real-time Customer Data Platform内の宛先に送信できます。 セグメントビルダーの詳細については、こちらを参照してください [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/segments/create-segments).
+* **Customer Journey Analyticsを接続**. 作成した場合 [Platform データセット](setup-experience-platform.md)を選択すると、データセットをCustomer Journey Analyticsに接続できます。 詳しくは、こちらを参照してください。 [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **Platform でのセグメントの作成**. を有効にした場合 [リアルタイム顧客プロファイルのスキーマとデータセット](setup-experience-platform.md)を使用すると、web イベントに基づいてセグメントを作成し、これらのセグメントをReal-time Customer Data Platformの宛先に送信できます。 セグメントビルダーの詳細については、こちらを参照してください [ビデオチュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences).
 * **Platform Mobile SDK の実装**. ある SDK をマスターしたので、別の SDK を学びましょう。 Adobe Experience Platform Mobile SDK は、モバイルアプリでExperience Cloudおよびサードパーティサービスを強化するために使用されます。 似たものがあります [mobile SDK の実践チュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview). 両方を完了して、デバイス間でのプロファイルの結合を確認します。
-* **Experience Platformの詳細情報**. で、他のソースからデータを取り込み、それを Web SDK データと組み合わせる方法について説明します。 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
+* **Experience Platformの詳細情報**. で他のソースからデータを取り込む方法を説明します。 [データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
 
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

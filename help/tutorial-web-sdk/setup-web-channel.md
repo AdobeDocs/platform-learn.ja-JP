@@ -4,20 +4,21 @@ description: Platform Web SDK を使用してJourney Optimizer web チャネル�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 1%
 
 ---
 
 
-# Journey Optimizer web チャンネルの設定
+# Web SDK を使用したJourney Optimizer web チャネルの設定
 
-Journey Optimizerの実装方法を学ぶ [web チャネル](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Platform Web SDK を使用します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
+Adobe Journey Optimizerの実装方法を学ぶ [web チャネル](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK を使用します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
 
-このレッスンに従うと、Journey Optimizerのユーザーは、Journey Optimizer Web Designer を使用して、web チャネルを高度なオンラインパーソナライゼーションに効果的に適用できます。
+このレッスンに従うと、Journey Optimizerのユーザーは、Journey Optimizer web デザイナーを使用した高度なオンラインパーソナライゼーションのために web チャネルを使用できるようになります。
 
 ![Web SDK とAdobe Analyticsの図](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ Journey Optimizerの実装方法を学ぶ [web チャネル](https://experiencel
   > 1. web サイトは iframe 内に埋め込まれます。
   > 1. 顧客の QA またはステージサイトは、外部からアクセスできません（内部サイトです）。
 
-* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合、次の操作が必要です [このコンテンツを公開するためのサブドメインを設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合、次の操作が必要です [このコンテンツを公開するためのサブドメインを設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * コンテンツ実験機能を使用する場合は、web データセットもレポート設定に含まれていることを確認してください。
 * 現在、web プロパティで web チャネルキャンペーンのオーサリングと配信を可能にする、次の 2 種類の実装がサポートされています。
    * クライアント側のみ：web サイトを変更するには、Adobe Experience Platform Web SDK を実装する必要があります。
@@ -259,7 +260,7 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
    ![コンテンツの編集](assets/web-channel-edit-content.png)
 
-1. 次に、 **[!UICONTROL Web ページを編集]** オーサリングを開始します。
+1. 次に、をクリックします **[!UICONTROL Web ページを編集]** オーサリングを開始します。
 
    ![Web ページを編集](assets/web-channel-edit-web-page.png)
 
@@ -387,4 +388,4 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

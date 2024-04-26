@@ -1,22 +1,23 @@
 ---
-title: Platform Web SDK を使用した意思決定管理の設定
+title: Platform Web SDK を使用したJourney Optimizer意思決定管理の設定
 description: Platform Web SDK を使用して意思決定管理を実装する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 3%
 
 ---
 
 # Platform Web SDK を使用した意思決定管理の設定
 
-Platform Web SDK を使用して意思決定管理を実装する方法を説明します。 このガイドでは、基本的な意思決定管理の前提条件、設定の詳細な手順およびロイヤルティステータスに基づくユースケースを詳しく説明します。
+Platform Web SDK を使用して、Adobe Journey Optimizerの意思決定管理機能を実装する方法を説明します。 このガイドでは、基本的な意思決定管理の前提条件、設定の詳細な手順およびロイヤルティステータスに基づくユースケースを詳しく説明します。
 
-このチュートリアルに従うと、Journey Optimizerのユーザーは、offer decisioning機能を効果的に適用し、顧客とのやり取りのパーソナライゼーションと関連性を高めることができます。
+このチュートリアルに従うと、Journey Optimizer ユーザーは意思決定管理機能を使用できるようになり、顧客とのやり取りのパーソナライズ機能と関連性が高まります。
 
 
 ![Web SDK とAdobe Analyticsの図](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ Platform Web SDK を使用して意思決定管理を実装する方法を説明
 
 ## 制限事項
 
-次の制限事項に注意してください。
-
-* イベントベースのオファーは、現在Adobe Journey Optimizerではサポートされていません。 イベントに基づいて決定ルールを作成した場合、それをオファーに適用することはできません。
+イベントベースのオファーは、現在Adobe Journey Optimizerではサポートされていません。 イベントに基づいて決定ルールを作成した場合、それをオファーに適用することはできません。
 
 ## 意思決定管理へのアクセスの許可
 
@@ -140,7 +139,7 @@ Platform Web SDK を使用して意思決定管理を実装する方法を説明
 
 このレッスンでは、サンプルのロイヤルティ報酬ユースケースを実装して、Web SDK を使用した意思決定管理を理解します。
 
-この使用例では、一元化されたオファーライブラリとオファー決定エンジンを利用して、Journey Optimizerが顧客に最適なオファーを提供する方法をより深く理解できます。
+この使用例では、一元化されたオファーライブラリと意思決定管理の意思決定エンジンを利用して、Journey Optimizerが顧客に最適なオファーを提供する方法をより深く理解できます。
 
 >[!NOTE]
 >
@@ -307,11 +306,11 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 次に、 **決定範囲**. まず、プレースメントを選択します。 以前に作成したを使用できます&#39;*ホームページバナー*&#39;.
+1. ここで、以下を定義する必要があります **決定範囲**. まず、プレースメントを選択します。 以前に作成したを使用できます&#39;*ホームページバナー*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 次に、以下を追加する必要があります **評価条件** を決定範囲に使用します。 クリック **追加** 以前に作成した「」を選択します。*ロイヤルティ報酬*&#39; **collection** 考慮するすべてのロイヤルティオファーが含まれます。
+1. 次に、以下を追加する必要があります **評価条件** を決定範囲に使用します。 クリック **追加** 以前に作成した「」を選択します。*ロイヤルティ報酬*&#x200B;考慮するすべてのロイヤルティオファーを含む「**collection。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
 
 ## シミュレーション
 
-ベストプラクティスとして、Luma ロイヤルティ決定ロジックを検証して、適切なオファーが適切なロイヤルティオーディエンスに確実に配信されるようにする必要があります。 これを行うには、を使用します。 **テストプロファイル**. 新しいオファーバージョンを実稼動環境にプッシュする前に、テストプロファイルを通じてオファーへの変更をテストすることもお勧めします。
+ベストプラクティスとして、Luma ロイヤルティ決定ロジックを検証して、適切なオファーが適切なロイヤルティオーディエンスに配信されるようにします。 この検証を行うには、以下を使用します。 **テストプロファイル**. 新しいオファーバージョンを実稼動環境にプッシュする前に、テストプロファイルを通じてオファーへの変更をテストすることもお勧めします。
 
 テストを開始するには、 **シミュレーション** tab キーを押して **オファー** メニュー。
 
@@ -370,7 +369,7 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
 
 この **Adobe Experience Platform Debugger** この拡張機能は Chrome と Firefox の両方で使用でき、web ページを分析してAdobe Experience Cloud ソリューションの実装の問題を特定します。
 
-Luma サイトでデバッガーを使用して、実稼動環境で意思決定ロジックを検証できます。 これは、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
+Luma サイトでデバッガーを使用して、実稼動環境で意思決定ロジックを検証できます。 この検証は、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
 [こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ Luma サイトでデバッガーを使用して、実稼動環境で意思決定
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

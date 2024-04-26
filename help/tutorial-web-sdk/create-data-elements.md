@@ -1,18 +1,19 @@
 ---
-title: データ要素の作成
+title: Platform Web SDK のデータ要素の作成
 description: XDM オブジェクトを作成し、タグでデータ要素をマッピングする方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 2%
 
 ---
 
 # データ要素の作成
 
-で、コンテンツ、コマース、ID データ用のタグでデータ要素を作成する方法を説明します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 次に、XDM スキーマのフィールドに Platform Web SDK 拡張機能の変数データ要素タイプを入力します。
+で、コンテンツ、コマース、ID データ用のタグでデータ要素を作成する方法を説明します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 次に、XDM スキーマのフィールドにAdobe Experience Platform Web SDK 拡張機能の変数データ要素タイプを入力します。
 
 ## 学習目標
 
@@ -138,7 +139,7 @@ window.adobeDataLayer.push({
 
 * 個々の変数を XDM にマッピングできるので、柔軟性があります
 * ～する能力 [新しい値を計算](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) または [変換データタイプ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) データレイヤーから XDM に移動する前に
-* を活用 [マッピング UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) ポイントアンドクリック UI を使用してソースデータのフィールドを XDM にマッピングするには
+* を活用 [マッピング UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) ポイントアンドクリック UI を使用してソースデータのフィールドを XDM にマッピングするには
 
 #### 短所
 
@@ -298,4 +299,4 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

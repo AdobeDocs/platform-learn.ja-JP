@@ -1,18 +1,19 @@
 ---
-title: イベント転送プロパティの設定
+title: Platform Web SDK データを使用したイベント転送の設定
 description: Experience Platform Web SDK data を使用したイベント転送プロパティの使用方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1873'
 ht-degree: 4%
 
 ---
 
-# イベント転送プロパティの設定
+# Platform Web SDK データを使用したイベント転送の設定
 
-Experience Platform Web SDK data を使用したイベント転送プロパティの使用方法を説明します。
+Adobe Experience Platform Web SDK データでイベント転送を使用する方法を説明します。
 
 イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、を参照してください [イベント転送の概要](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ Experience Platform Web SDK data を使用したイベント転送プロパテ�
 Adobe Experience Platformでイベント転送を使用するには、まず次の 3 つのオプションの 1 つ以上を使用して、データをAdobe Experience Platform Edge Networkに送信する必要があります。
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -46,11 +47,11 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 ## 前提条件
 
 * イベント転送を含むソフトウェアライセンス。 イベント転送は、データ収集の有料機能です。 詳しくは、Adobeアカウントチームにお問い合わせください。
-* Experience Cloud組織でイベント転送が有効になりました。
+* Experience Cloud組織でイベント転送が有効になっている。
 * イベント転送のユーザー権限。 （中） [Admin Console](https://adminconsole.adobe.com/)のAdobe Experience Platform Launch製品で、次に対する権限項目[!UICONTROL プラットフォーム] > [!UICONTROL Edge] およびすべて [!UICONTROL プロパティ権限]）に設定します。 付与されると、次のように表示されます [!UICONTROL イベントの転送] データ収集インターフェイスの左側のナビゲーションで、次の操作を行います。
   ![イベント転送のプロパティ](assets/event-forwarding-menu.png)
 
-* Edge Networkにデータを送信するように設定されたAdobe Experience Platform Web または Mobile SDK。 このチュートリアルの次のレッスンを完了している必要があります。
+* Adobe Experience Platform Web SDK または Mobile SDK は、Edge Networkにデータを送信するように設定されています。 このチュートリアルの次のレッスンを完了している必要があります。
 
    * 初期設定
 
@@ -76,14 +77,14 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 1. 「**[!UICONTROL 新しいプロパティ]**」を選択します。
    ![イベント転送のプロパティ](assets/event-forwarding-new.png)
 
-1. プロパティに名前を付けます。 この場合 `Server-Side - Web SDK Course`
+1. プロパティに名前を付けます。 この場合、 `Server-Side - Web SDK Course`
 
 1. 「**[!UICONTROL 保存]**」を選択します。
    ![イベント転送プロパティの保存](assets/event-forwarding-save.png)
 
 ## データストリームの設定
 
-Edge Network に送信するデータをイベント転送で使用するには、新しく作成したイベント転送プロパティを、Adobeソリューションにデータを送信するために使用されるのと同じデータストリームにリンクする必要があります。
+イベント転送で Platform Edge Networkに送信するデータを使用するには、新しく作成したイベント転送プロパティを、Adobeソリューションにデータを送信するために使用されるのと同じデータストリームにリンクする必要があります。
 
 データストリームで Target を設定するには：
 
@@ -220,7 +221,7 @@ Platform Web SDK タグ拡張機能を使用して以前に設定した XDM オ�
 
 * **ルールアクションのシーケンス**:
 
-   * イベント転送ルールのアクション セクションは常に順番に実行されます。 ルールを保存する際に、アクションの順序が正しいことを確認します。この実行シーケンスは、タグの場合のように非同期で実行することはできません。
+   * イベント転送ルールのアクション セクションは常に順番に実行されます。 ルールを保存する際は、アクションの順序が正しいことを確認してください。 この実行シーケンスは、タグの場合のように非同期で実行することはできません。
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -231,7 +232,7 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 1. に移動 [Webhook.site](https://webhook.site)
 
-1. 検索 **一意の URL**&#x200B;を設定する場合は、これをイベント転送ルールの URL リクエストとして使用します
+1. 検索 **一意の URL**&#x200B;これをイベント転送ルールの URL リクエストとして使用します
 
 1. を選択 **[!UICONTROL クリップボードにコピー]**
 
@@ -324,4 +325,4 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,17 +2,18 @@
 title: Web データ用の XDM スキーマの作成
 description: データ収集インターフェイスで web データの XDM スキーマを作成する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1498'
 ht-degree: 1%
 
 ---
 
 # Web データ用の XDM スキーマの作成
 
-データ収集インターフェイスで web データの XDM スキーマを作成する方法を説明します。
+Adobe Experience Platform データ収集インターフェイスで web データの XDM スキーマを作成する方法を説明します。
 
 エクスペリエンスデータモデル（XDM）スキーマは、Adobe Experience Platformでデータを収集するための構成要素、原則およびベストプラクティスです。
 
@@ -111,7 +112,7 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 >この演習では、web データ収集に推奨される事前定義済みのフィールドグループを追加します。 _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ および _**[!UICONTROL 消費者エクスペリエンスイベント]**_.
 >
 >
-> 実装のみを行う場合 **Adobe Analytics** Web SDK を使用し、にデータを送信しない **Experience Platform**、を使用します [!UICONTROL Adobe Analytics ExperienceEvent テンプレート] xdm スキーマを定義するためのフィールドグループ。 これは、 [Analytics のセットアップ](setup-analytics.md) レッスン：
+> 実装のみを行う場合 **Adobe Analytics** Web SDK を使用し、にデータを送信しない **Experience Platform**、を使用します [!UICONTROL Adobe Analytics ExperienceEvent テンプレート] xdm スキーマを定義するためのフィールドグループ。 これは [Analytics のセットアップ](setup-analytics.md) レッスン：
 
 1. が含まれる **[!UICONTROL フィールドグループ]** セクションで選択 **[!UICONTROL 追加]**
 
@@ -125,7 +126,7 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 
    ![フィールドグループを追加](assets/schema-add-field-group.png)
 
-両方のフィールドグループを使用すると、web 上のデータ収集に必要な最も一般的に使用されるキーと値のペアにアクセスできます。 この [!UICONTROL 表示名] の各フィールドは、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、標準フィールドの表示名を必要に応じて変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、それに属するキーと値のペアのグループがインターフェイスで強調表示されます。 以下の例では、どのグループが属しているのかがわかります **[!UICONTROL 消費者エクスペリエンスイベント]**.
+両方のフィールドグループを使用すると、web 上のデータ収集に必要な最も一般的に使用されるキーと値のペアにアクセスできます。 この [!UICONTROL 表示名] の各フィールドは、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、標準フィールドの表示名を必要に応じて変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、それに属するキーと値のペアのグループがインターフェイスで強調表示されます。 以下の例では、どのフィールドが属しているのかがわかります **[!UICONTROL 消費者エクスペリエンスイベント]**.
 
 ![スキーマフィールドグループ](assets/schema-consumer-experience-event.png)
 
@@ -143,7 +144,7 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 
 >[!IMPORTANT]
 >
-> を有効にすることができます **[!UICONTROL Profile]** （スキーマを保存する前のスキーマ）。 **実行しない** この時点で有効にします。 プロファイルに対してスキーマを有効にすると、そのスキーマを無効にしたり削除したりできなくなります。 この時点では、フィールドをスキーマから削除することもできませんが、削除することは可能です [UI でのフィールドの非推奨化](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). これらの影響は、実稼動環境で独自のデータを操作する際に後で留意することが重要です。
+> を有効にすることができます **[!UICONTROL Profile]** （スキーマを保存する前のスキーマ）。 **実行しない** この時点で有効にします。 プロファイルでスキーマを有効にした後は、サンドボックス全体をリセットしないと、そのスキーマを無効にしたり削除したりすることはできません。 この時点では、フィールドをスキーマから削除することもできませんが、削除することは可能です [UI でのフィールドの非推奨化](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). これらの影響は、実稼動環境で独自のデータを操作する際に後で留意することが重要です。
 >
 >
 >この設定については、 [Experience Platformを設定](setup-experience-platform.md) レッスン：
@@ -161,4 +162,4 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

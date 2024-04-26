@@ -1,10 +1,11 @@
 ---
-title: Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
+title: Platform Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
 description: Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1592'
 ht-degree: 7%
 
 ---
@@ -38,7 +39,7 @@ Experience Platformは、以前に作成したのと同じ XDM スキーマを�
 
 ## データセットの作成
 
-Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) は、スキーマ（列）とフィールド（行）を含んだデータコレクション（通常はテーブル）のストレージおよび管理用の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) は、データのコレクション用のストレージおよび管理構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
 Luma web イベントデータのデータセットを設定しましょう。
 
@@ -83,7 +84,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
    ![データストリーム設定](assets/experience-platform-datastream-config.png)
 
-でトラフィックを生成する場合 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) タグプロパティにマッピングされた場合、データはExperience Platformのデータセットに入力します。
+でトラフィックを生成する場合 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) タグプロパティにマッピングされたデータが、Experience Platformのデータセットに入力されます。
 
 ## データセットの検証
 
@@ -114,7 +115,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 1. ポップアップ内で「identityMap」を検索します。 authenticatedState、id、および primary の 3 つのキーを持つ lumaCrmId が表示されます
    ![デバッガーの Web SDK](assets/experience-platform-debugger-dev-idMap.png)
 
-これで、 `Luma Web Event Data` データセットで、「データセットをプレビュー」検証の準備が整いました。
+これで、にデータを入力する必要があります `Luma Web Event Data` データセットで、「データセットをプレビュー」検証の準備が整いました。
 
 ### データセットのプレビュー
 
@@ -237,4 +238,4 @@ Platform インターフェイス（またはJourney Optimizer インターフ�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

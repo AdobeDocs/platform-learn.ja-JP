@@ -1,18 +1,19 @@
 ---
-title: タグルールの作成
+title: Platform Web SDK 用のタグルールの作成
 description: タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Tags
+jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1963'
 ht-degree: 2%
 
 ---
 
 # タグルールの作成
 
-タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 タグルールは、イベント、条件、アクションを組み合わせたルールで、タグプロパティに対し、アクションの実行を指示します。 Platform Web SDK では、ルールを使用して、適切なデータで Platform Edge Networkにイベントを送信します。
+タグルールを使用して、XDM オブジェクトと共にイベントをAdobe Experience Platform Edge Networkに送信する方法を説明します。 タグルールは、イベント、条件、アクションを組み合わせたルールで、タグプロパティに対し、アクションの実行を指示します。 Platform Web SDK では、ルールを使用して、適切なデータで Platform Edge Networkにイベントを送信します。
 
 ## 学習目標
 
@@ -38,7 +39,7 @@ ht-degree: 2%
 
 ## 命名規則
 
-タグのルールをより適切に管理するには、標準の命名規則に従うことをお勧めします。 このチュートリアルでは、5 つのパートで構成される命名規則を使用します。
+タグでルールを管理するには、標準の命名規則に従うことをお勧めします。 このチュートリアルでは、5 つのパートで構成される命名規則を使用します。
 
 * [**場所**] - [**イベント**] - [**目的**] - [**順序**]
 
@@ -63,7 +64,7 @@ ht-degree: 2%
 
 1. を使用して追加のルールを作成 **[!UICONTROL 変数を更新]** 「グローバル設定」をオーバーライドし、特定の条件下（例えば、製品ページに製品の詳細を追加する場合）で追加の XDM フィールドを提供するアクション。
 
-1. 別のルールを作成するには **[!UICONTROL イベントを送信]** xdm オブジェクト全体をAdobe Experience Platform Edge Networkに送信するアクション。
+1. 別のルールを作成するには **[!UICONTROL イベントを送信]** XDM オブジェクト全体をAdobe Experience Platform Edge Networkに送信するアクション。
 
 これらのルールはすべて、「[!UICONTROL 順序]」オプションを選択します。
 
@@ -171,7 +172,7 @@ ht-degree: 2%
 1. 「」を選択します ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 「イベント」で新しいトリガーを追加
 1. 次の下 **[!UICONTROL 拡張機能]**&#x200B;を選択 **[!UICONTROL コア]**
 1. 次の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択 **[!UICONTROL ライブラリが読み込まれました（ページのトップ）]**
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. これにより、ルールが次の後に実行されます `all pages - library loaded - set global variables - 1` グローバル設定を設定します。
+1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. この順序値によって、ルールがの後に実行されます `all pages - library loaded - set global variables - 1` グローバル設定を設定します。
 
    ![Analytics XDM ルール](assets/set-up-analytics-pdp.png)
 
@@ -345,9 +346,9 @@ ht-degree: 2%
 
 1. が含まれる **[!UICONTROL アクション]** セクションで選択 **[!UICONTROL 追加]**
 
-1. として **[!UICONTROL 拡張機能]**&#x200B;を選択  **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. として **[!UICONTROL 拡張機能]**&#x200B;を選択 **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. として  **[!UICONTROL アクションタイプ]**&#x200B;を選択  **[!UICONTROL イベントを送信]**
+1. として  **[!UICONTROL アクションタイプ]**&#x200B;を選択 **[!UICONTROL イベントを送信]**
 
 1. として **[!UICONTROL XDM]**&#x200B;を選択し、 `xdm.variable.content` 前のレッスンで作成したデータ要素
 
@@ -358,7 +359,7 @@ ht-degree: 2%
 
    ![ルールの保存](assets/create-rule-save-rule.png)
 
-## ライブラリへのルールの公開
+## ライブラリでのルールの公開
 
 次に、ルールを開発環境に公開して、ルールが機能することを検証します。
 
@@ -385,7 +386,7 @@ ht-degree: 2%
 
 ![ビルド完了](assets/create-rule-development-success.png)
 
-ご覧のように [!UICONTROL 公開フロー] 画面では、このチュートリアルの範囲外にある公開プロセスについて詳しく説明します。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
+ご覧のように [!UICONTROL 公開フロー] 画面では、公開プロセスについて詳しく説明します。これは、このチュートリアルの範囲外です。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
 
 これで、Adobe Experience Platform Debuggerを使用してリクエスト内のデータを検証する準備が整いました。
 
@@ -393,4 +394,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

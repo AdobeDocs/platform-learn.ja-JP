@@ -2,17 +2,18 @@
 title: Platform Web SDK を使用したAudience Managerの設定
 description: Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の宛先を使用して実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 # Platform Web SDK を使用したAudience Managerの設定
 
-Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の宛先を使用して実装を検証する方法を説明します。
+Adobe Experience Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の宛先を使用して実装を検証する方法を説明します。
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) は、サイト訪問者に関する商業的に関連性のある情報を収集し、市場性のあるセグメントを作成し、ターゲット広告やコンテンツを適切なオーディエンスに提供するために必要なすべてを提供するAdobe Experience Cloud ソリューションです。
 
@@ -35,7 +36,7 @@ Platform Web SDK を使用してAdobe Audience Managerを設定し、cookie の�
 
 ## データストリームの設定
 
-Platform Web SDK を使用したAudience Manager実装は、を使用した実装とは異なります [サーバーサイド転送（SSF）](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). サーバーサイド転送は、Adobe Analytics リクエストデータをAudience Managerに渡します。 Platform Web SDK 実装は、Platform Edge Networkに送信された XDM データをAudience Managerに渡します。 データストリームでAudience Managerが有効になっています。
+Platform Web SDK を使用したAudience Manager実装は、を使用した実装とは異なります [サーバーサイド転送（SSF）](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). サーバーサイド転送は、Adobe Analytics リクエストデータをAudience Managerに渡します。 Platform Web SDK 実装は、Platform Edge Networkに送信された XDM データをAudience Managerに渡します。 データストリームでAudience Managerが有効になっています。
 
 1. に移動 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
 1. 左側のナビゲーションで「」を選択します **[!UICONTROL データストリーム]**
@@ -96,7 +97,7 @@ Platform Web SDK を使用したAudience Manager実装は、を使用した実�
 
 ## セグメントの作成
 
-次の手順では、を作成します **セグメント**&#x200B;を選択し、新しく定義した特性をこのセグメントに割り当てます。
+次の手順では、を作成します **セグメント** そして、新しく定義した特性をこのセグメントに割り当てます。
 
 1. を選択 **[!UICONTROL オーディエンスデータ]** 上部のナビゲーションでを選択し、 **[!UICONTROL セグメント]**
 1. を選択 **[!UICONTROL 新規を追加]** ページの左上でセグメントビルダーを開く
@@ -104,7 +105,7 @@ Platform Web SDK を使用したAudience Manager実装は、を使用した実�
 1. **[!UICONTROL フォルダーを選択]** ここで、セグメントは右側のパネルに保存されます。 次の方法でフォルダーを作成できます。 **「+」アイコンを選択** 既存の親フォルダーの横。 この新しいフォルダーに名前を付けることができます `Platform Web SDK tutorial`.
 1. 統合コードを追加します。この場合は、数字のランダムセットです。
 1. が含まれる **[!UICONTROL データソース]** セクションで選択 **[!UICONTROL Audience Manager]** と、前の手順で作成したデータソース
-1. を展開します。 **[!UICONTROL 特性]** をクリックし、作成した特性を検索します
+1. を展開します。 **[!UICONTROL 特性]** を選択し、作成した特性を検索します
 1. を選択 **[!UICONTROL 特性を追加]**.
 1. を選択 **[!UICONTROL 保存]** ページの下部
 
@@ -184,4 +185,4 @@ Platform Web SDK を使用したAudience Manager実装は、を使用した実�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

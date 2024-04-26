@@ -2,21 +2,22 @@
 title: Platform Web SDK を使用した同意の設定
 description: Experience PlatformWeb SDK タグ拡張機能のプライバシー設定の指定方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # Platform Web SDK を使用した同意の設定
 
-Experience PlatformWeb SDK タグ拡張機能のプライバシー設定の指定方法について説明します。 訪問者による同意管理プラットフォーム（CMP）のバナーとのインタラクションに基づいて同意を設定します。
+Adobe Experience Platform Web SDK タグ拡張機能のプライバシー設定の指定方法について説明します。 訪問者による同意管理プラットフォーム（CMP）のバナーとのインタラクションに基づいて同意を設定します。
 
 >[!NOTE]
 > 
->このチュートリアルでは、デモンストレーションの目的で、を使用します [クラロ](https://heyklaro.com/) cmp として。 Klaro または Web サイトで使用する CMP を使用して進めることができます。
+>このチュートリアルでは、デモンストレーションの目的で、を使用します [クラロ](https://klaro.org/) cmp として。 Klaro または Web サイトで使用する CMP を使用して進めることができます。
 
 
 ## 学習目標
@@ -32,20 +33,21 @@ Experience PlatformWeb SDK タグ拡張機能のプライバシー設定の指�
 タグの知識と、ルールやデータ要素の作成、環境へのライブラリのビルド、Experience Platformデバッガーを使用したタグライブラリの切り替えの手順を理解している必要があります。
 
 プライバシー設定の設定と同意を設定するためのルールの作成を開始する前に、同意管理プラットフォームスクリプトが web サイトに挿入され、正しく機能していることを確認します。 CMP は、サイト開発者の助けを借りてソースコード内に直接読み込むか、タグ自体を介して読み込むことができます。 このレッスンでは、後者のアプローチを示します。
+
 >[!NOTE]
 > 
 >1. 同意管理プラットフォーム（CMP）は、web サイトやアプリなどのオンラインソースから訪問者データを収集、共有または販売する前に、訪問者の同意オプションを法的にドキュメント化および管理するために組織で使用されます。
 >
->2. CMP を挿入する方法として推奨されるのは、タグマネージャースクリプトの前にソースコードを直接実行する方法です。
+>2. CMP を挿入する方法として推奨されるのは、ソースコードを直接実行してからタグマネージャースクリプトを実行する方法です。
 
 ### Klaro の設定
 
 タグ設定に進む前に、このチュートリアルの Klaro で使用する同意管理プラットフォームの詳細を確認してください。
 
-1. 訪問 [クラロ](https://heyklaro.com/) そして、アカウントを設定します。
+1. 訪問 [クラロ](https://klaro.org/) そして、アカウントを設定します。
 1. に移動 **プライバシーマネージャー** 指示に従ってインスタンスを作成します。
 1. の使用 **統合コード** で、タグプロパティに Klaro を挿入します（手順は次の演習で説明します）。
-1. をスキップ **スキャン** セクションを参照してください。タグプロパティは、Luma デモ web サイトでハードコードされており、このチュートリアル用に作成したものではないことが検出されます。
+1. をスキップ **スキャン** セクションを選択します。ここでは、Luma デモ web サイト上にハードコードされているタグプロパティを検出しており、このチュートリアル用に作成したものではありません。
 1. というサービスを追加します。 `aep web sdk` を切り替えます。 **サービスの既定の状態**. オンにすると、デフォルトの同意値はになります `true`そうでない場合は、 `false`. この設定は、web アプリケーションに対する（訪問者の同意の前の）デフォルトの同意状態を決定する場合に便利です。 例：
    * CCPA の場合、通常、デフォルトの同意は次のように設定されています。 `true`. このシナリオは、次のように参照します **暗黙のオプトイン** このチュートリアル全体を通して
    * GDPR の場合、デフォルトの同意は通常、次のように設定されています。 `false`. このシナリオは、次のように参照します **暗黙のオプトアウト** このチュートリアル全体を通して。
@@ -218,10 +220,10 @@ Luma デモサイトに移動して検証し、Cookie を拒否し、オプト�
 Web SDK の同意について詳しくは、次を参照してください： [顧客の同意環境設定のサポート](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-の詳細 [!UICONTROL 同意を設定] アクション、を参照 [同意を設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+の詳細 [!UICONTROL 同意を設定] アクション、を参照 [同意を設定](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [次へ： ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

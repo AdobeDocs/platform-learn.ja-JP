@@ -2,11 +2,12 @@
 title: ID 名前空間の設定
 description: Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Identities
+jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 8%
 
 ---
 
@@ -38,9 +39,9 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する
 
 >[!IMPORTANT]
 >
->この [Experience CloudID 拡張機能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) Web SDK JavaScript ライブラリには訪問者 ID サービス機能が含まれているので、Adobe Experience Platform Web SDK を実装する場合は必要ありません。
+>この [Experience CloudID 拡張機能](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) Web SDK JavaScript ライブラリには訪問者 ID サービス機能が含まれているので、Adobe Experience Platform Web SDK を実装する場合は必要ありません。
 >
-> Web サイトで、訪問者 API またはExperience CloudID サービスタグ拡張機能を通じて既にExperience CloudID サービスを使用している場合、Adobe Experience Platform Web SDK への移行中も引き続き使用するには、最新版の訪問者 API またはExperience CloudID サービスタグ拡張機能を使用する必要があります。 参照： [ID の移行](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) を参照してください。
+> Web サイトで既に（Visitor API または Visitor ID Service Tag extension を通じて）Experience CloudID サービスを使用しており、Adobe Experience Platform Web SDK への移行中もそのExperience CloudID サービスを引き続き使用する場合は、最新バージョンの Visitor API またはExperience CloudID Service Tag extension を使用する必要があります。 参照： [ID の移行](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) を参照してください。
 
 ## ID 名前空間の作成
 
@@ -68,7 +69,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する
 
    ![ID の表示](assets/configure-identities-screen.png)
 
-1. 以下のように詳細を入力して、選択します **[!UICONTROL 作成]**.
+1. 詳細を以下のように指定して、を選択します **[!UICONTROL 作成]**.
 
    | フィールド | 値 |
    |---------------|-----------|
@@ -89,14 +90,10 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する
 >
 > が含まれる [Id の作成](create-identities.md) レッスンでは、Platform Edge Networkに ID を送信する際にこの名前空間を使用する方法を学びます。
 
-## 実稼動サンドボックスでの ID 名前空間の作成
-
-Web SDK 拡張機能の現在の制限により、名前空間を使用してデータを開発用サンドボックスに送信するには、ID 名前空間も実稼動サンドボックスで作成する必要があります。 したがって、このチュートリアルで開発用サンドボックスを使用している場合は、も作成してください。 `Luma CRM ID` 実稼動サンドボックスの名前空間。
-
 ID が配置されたので、データストリームを設定できます。
 
 [次へ： ](configure-datastream.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
