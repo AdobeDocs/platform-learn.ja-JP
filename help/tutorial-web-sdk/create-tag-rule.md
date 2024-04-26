@@ -3,21 +3,16 @@ title: タグルールの作成
 description: タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 2%
 
 ---
 
 # タグルールの作成
 
-タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 タグルールは、イベント、条件、アクションを組み合わせたルールで、タグプロパティに対し、アクションの実行を指示します。 Platform Web SDK では、ルールを使用して、適切な XDM フィールドで Platform Edge Networkにイベントを送信します。
-
->[!NOTE]
->
-> デモ目的で、このレッスンの演習は、前のレッスンを基に、上でユーザーからイベントを送信します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 タグルールは、イベント、条件、アクションを組み合わせたルールで、タグプロパティに対し、アクションの実行を指示します。 Platform Web SDK では、ルールを使用して、適切なデータで Platform Edge Networkにイベントを送信します。
 
 ## 学習目標
 
@@ -45,29 +40,28 @@ ht-degree: 2%
 
 タグのルールをより適切に管理するには、標準の命名規則に従うことをお勧めします。 このチュートリアルでは、5 つのパートで構成される命名規則を使用します。
 
-* [**場所**] - [**イベント**] - [**目的**] - [**ツール**] - [**順序**]
+* [**場所**] - [**イベント**] - [**目的**] - [**順序**]
 
 ここで、
 
 1. **場所** は、ルールが起動するサイトの 1 つまたは複数のページです
 1. **イベント** ルールのトリガーです
 1. **目的** ルールによって実行される主なアクションです
-1. **ツール** は、そのルールのアクションステップで使用される特定のアプリケーションです。Web SDK ではまれです
-1. **シーケンス** は、他のルールと関連してルールを実行する順序です
+1. **順序** は、他のルールと関連してルールを実行する順序です
 <!-- minor update -->
 
 ## タグルールの作成
 
 タグでは、ルールを使用して、様々な条件下でアクション（呼び出し実行）を実行します。 Platform Web SDK タグ拡張機能には、このレッスンで使用する 2 つのアクションが含まれています。
 
-* **[!UICONTROL 変数を更新]** データ要素を XDM フィールドにマッピングします
+* **[!UICONTROL 変数を更新]** データ要素を XDM オブジェクトのプロパティにマッピングします
 * **[!UICONTROL イベントを送信]** xdm オブジェクトをExperience PlatformEdge Networkに送信します
 
 このレッスンの残りの部分では、以下を行います。
 
-1. XDM フィールドの「グローバル設定」を定義するルールを作成します（を使用） [!UICONTROL 変数を更新] web サイトのすべてのページ（ページ名など）で次を使用して送信する **[!UICONTROL 変数を更新]** アクション。
+1. を使用したルールの作成 **[!UICONTROL 変数を更新]** xdm フィールドの「グローバル設定」を定義するアクション。
 
-1. 「グローバル設定」をオーバーライドする追加ルールを作成するか、追加の XDM フィールドを提供します（を使用） [!UICONTROL 変数を更新] ここでも）、特定の条件下でのみ関連します（例えば、製品ページに製品の詳細を追加するなど）。
+1. を使用して追加のルールを作成 **[!UICONTROL 変数を更新]** 「グローバル設定」をオーバーライドし、特定の条件下（例えば、製品ページに製品の詳細を追加する場合）で追加の XDM フィールドを提供するアクション。
 
 1. 別のルールを作成するには **[!UICONTROL イベントを送信]** xdm オブジェクト全体をAdobe Experience Platform Edge Networkに送信するアクション。
 
@@ -77,9 +71,7 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### 変数ルールを更新
-
-#### グローバル設定
+### グローバル設定フィールド
 
 グローバル XDM フィールドのタグルールを作成するには：
 
@@ -118,11 +110,7 @@ ht-degree: 2%
 
    ![変数スキーマの更新](assets/create-rule-update-variable.png)
 
-次に、 [!UICONTROL データ要素] に [!UICONTROL スキーマ] xdm オブジェクトで使用されます。
-
->[!NOTE]
-> 
-> 個々のプロパティまたはオブジェクト全体にマッピングできます。 この例では、個々のプロパティにマッピングします。
+次に、 [!UICONTROL データ要素] に [!UICONTROL スキーマ] xdm オブジェクトで使用されます。 個々のプロパティまたはオブジェクト全体にマッピングできます。 この例では、個々のプロパティにマッピングします。
 
 1. eventType フィールドを見つけて選択します
 
@@ -160,13 +148,13 @@ ht-degree: 2%
 
    >[!TIP]
    >
-   > も `eventType` をに設定 `web.webpagedetails.pageViews` nor `web.webPageDetials.pageViews.value` Adobe Analyticsがビーコンをページビューとして処理する際に必要です。他のダウンストリームアプリケーションのページビューを示す標準的な手段があると便利です。
+   > も `eventType` をに設定 `web.webpagedetails.pageViews` nor `web.webPageDetails.pageViews.value` Adobe Analyticsがビーコンをページビューとして処理する際に必要です。他のダウンストリームアプリケーションのページビューを示す標準的な手段があると便利です。
 
 
 1. を選択 **[!UICONTROL 変更を保持]** その後 **[!UICONTROL 保存]** ルールの作成を完了するための次の画面のルール
 
 
-#### 製品ページフィールド
+### 製品ページフィールド
 
 次に、を使用します **[!UICONTROL 変数を更新]** さらに、XDM オブジェクトをに送信する前に強化する順序付きルール [!UICONTROL Platform Edge Network].
 
@@ -235,7 +223,7 @@ ht-degree: 2%
 1. を選択 **[!UICONTROL 保存]** ルールを保存するには
 
 
-#### 買い物かごフィールド
+### 買い物かごフィールド
 
 配列が XDM スキーマの形式と一致する場合は、配列全体を XDM オブジェクトにマッピングできます。 カスタムコードデータ要素 `cart.productInfo` 前の手順で、 `digitalData.cart.cartEntries` luma 上のデータレイヤーオブジェクトで、の必要な形式に変換します `productListItems` xdm スキーマのオブジェクト。
 

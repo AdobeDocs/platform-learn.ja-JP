@@ -3,9 +3,9 @@ title: ID の作成
 description: XDM で ID を作成する方法、および ID マップデータ要素を使用してユーザー ID を取得する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '890'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-これらのデータ要素を配置すると、タグにルールを作成することで、XDM オブジェクトを介して Platform Edge Networkへのデータ送信を開始する準備が整います。
+これらのデータ要素を配置すると、タグにルールを作成することで、Platform Edge Networkへのデータ送信を開始する準備が整います。
 
 [次へ： ](create-tag-rule.md)
 

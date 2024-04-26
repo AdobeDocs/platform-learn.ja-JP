@@ -3,10 +3,10 @@ title: Adobe Experience Platform Web SDK タグ拡張機能のインストール
 description: データ収集インターフェイスで Platform Web SDK タグ拡張機能をインストールして設定する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 13%
+source-wordcount: '589'
+ht-degree: 14%
 
 ---
 
@@ -28,9 +28,7 @@ Platform Web SDK タグ拡張機能をインストールおよび設定する方
 
 * [データストリームの設定](configure-datastream.md)
 
-## Experience Platform Web SDK 拡張機能のインストール
-
-### プロパティを追加
+### タグプロパティの追加
 
 まず、タグプロパティが必要です。 プロパティは、web ページから詳細を収集して様々な場所に送信するために必要なすべての JavaScript、ルール、その他の機能のコンテナです。
 
@@ -57,7 +55,7 @@ Platform Web SDK タグ拡張機能をインストールおよび設定する方
    ![Web SDK 拡張機能のインストール](assets/extension-platform-web-sdk.png)
 
 
-## Platform Web SDK をデータストリームにリンクする
+## 拡張機能のデータストリームへのリンク
 
 ほとんどの設定はデフォルトのままにし、必要に応じて後で更新します。 ここで行う必要があるのは、拡張機能をデータストリームにリンクすることです。
 
@@ -71,19 +69,17 @@ Platform Web SDK タグ拡張機能をインストールおよび設定する方
 
    ![データストリームの選択](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Platform Web SDK をインストールし、データストリームに関連付けたら、作成したスキーマを使用して、データ要素から XDM オブジェクトへのマッピングを開始します。
-
->[!NOTE]
->
->このチュートリアルでは、1 つのデータストリームのみを設定し、すべてのタグ環境（開発、ステージ、実稼動）に関連付けます。 Platform Web SDK を独自の web サイトに実装する場合は、環境ごとに個別のデータストリームを設定して、タグ環境にマッピングする必要があります。
+拡張機能の各セクションについて詳しくは、を参照してください [Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
 >で CNAME を設定していませんが [!UICONTROL Edge ドメイン] 設定このレッスンでは、Adobeの web サイトに Platform Web SDK を実装する際に CNAME を使用することをお勧めします。 CNAME 実装には Cookie の有効期間に関するメリットはありませんが、他にもメリットがある場合があります。これらのメリットには、広告ブロッカーや、データがトラッカーとして分類するドメインに送信されるのを防ぐ一般的でないブラウザーなどが含まれます。このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
 
-拡張機能の各セクションについて詳しくは、を参照してください [Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
+>[!NOTE]
+>
+>このチュートリアルでは、1 つのデータストリームのみを設定し、すべてのタグ環境（開発、ステージ、実稼動）に関連付けます。 Platform Web SDK を独自の web サイトに実装する場合は、環境ごとに個別のデータストリームを設定し、拡張機能の設定に応じてマッピングする必要があります。
 
-
+Platform Web SDK をインストールし、それをデータストリームに関連付けたら、データの収集を開始する準備が整います。
 
 [次へ： ](create-data-elements.md)
 

@@ -3,16 +3,16 @@ title: Experience Platformアシュランスを使用した Web SDK 実装の検
 description: Adobe Experience Platform Assurance を使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 3%
 
 ---
 
 # Experience Platformアシュランスを使用した Web SDK 実装の検証
 
-Adobe Experience Platform Assurance は、データの収集やエクスペリエンスの提供の方法を調査、配達確認、シミュレートおよび検証するのに役立つ、Adobe Experience Cloudの製品です。 詳細を読む： [Adobe保証](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance は、データの収集方法やエクスペリエンスの提供方法を検査、配達確認、シミュレートおよび検証するのに役立つ機能です。 詳細を読む： [Adobe保証](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## 学習目標
@@ -51,10 +51,11 @@ Adobe Experience Platform Debuggerで Edge Trace を有効にするたびに、�
 1. 「」を選択します **[!UICONTROL Edge]** tab キーを押して、 **[!UICONTROL 接続]**
 
    ![Edge Trace の接続](assets/analytics-debugger-edgeTrace.png)
-1. Edge Trace を有効にすると、上部に送信リンクアイコンが表示されます。 アイコンを選択して、Assurance を開きます。 ブラウザーに新しいタブが開きます。
+1. Edge Trace を有効にすると、上部に送信リンクアイコンが表示されます。 アイコンを選択して、Assurance を開きます。
 
    ![Assurance セッションの開始](assets/validate-debugger-start-assurnance.png)
 
+1. Assurance インターフェイスを含む新しいブラウザータブが開きます。
 
 ### Assurance インターフェイスからの Assurance セッションの開始
 
@@ -88,7 +89,7 @@ Adobe Experience Platform Debuggerで Edge Trace を有効にするたびに、�
 
 今後のレッスンでは、Assurance を使用して、データストリームで有効になっているAdobeアプリケーションに到達する完全に処理されたペイロードを検証します。
 
-XDM オブジェクトがページで実行され、データ収集の検証方法がわかったので、Platform Web SDK を使用して個々のAdobeアプリケーションを設定する準備が整いました。
+XDM オブジェクトがページで実行され、データ収集の検証方法がわかったので、Platform Web SDK を使用してExperience Platformと個々のAdobeアプリケーションを設定する準備が整いました。
 
 [次へ： ](setup-experience-platform.md)
 
