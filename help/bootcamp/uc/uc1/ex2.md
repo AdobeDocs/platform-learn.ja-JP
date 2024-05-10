@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 2%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -39,12 +39,6 @@ ht-degree: 2%
 Web サイトのプロファイルビューアパネルで、ID の概要を確認できます。 すべての ID が名前空間にリンクされています。
 
 ![顧客プロファイル](./images/identities.png)
-
-現在、プロファイルビューアパネルでは、次の ID を表示できます。
-
-| 名前空間 | ID |
-|:-------------:| :---------------:|
-| Experience Cloud ID（ECID） | 19428085896177382402834560825640259081 |
 
 Adobe Experience Platformでは、すべての ID が同じように重要です。 以前は、ECID はAdobeコンテキストで最も重要な ID であり、他のすべての ID は階層的な関係で ECID にリンクされていました。 Adobe Experience Platformでは、これは該当しなくなり、すべての ID がプライマリ識別情報と見なすことができます。
 
