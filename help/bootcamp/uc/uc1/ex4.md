@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Real-time CDP - セグメントを作成してアクションを実行 – セグメントをAdobe Targetに送信します
-description: Bootcamp - Real-time CDP - セグメントを作成してアクションを実行 – セグメントをAdobe Targetに送信します
+title: Bootcamp - Real-time CDP - オーディエンスの作成とアクションの実行 – オーディエンスをAdobe Targetに送信します
+description: Bootcamp - Real-time CDP - オーディエンスの作成とアクションの実行 – オーディエンスをAdobe Targetに送信します
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
@@ -8,14 +8,14 @@ activity: develop
 solution: Experience Platform, Target
 feature: Audiences, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 2%
 
 ---
 
-# 1.4 アクションの実行：セグメントをAdobe Targetに送信します
+# 1.4 アクションの実行：オーディエンスをAdobe Targetに送信します
 
 に移動 [Adobe Experience Platform](https://experience.adobe.com/platform). ログインすると、Adobe Experience Platformのホームページが表示されます。
 
@@ -25,11 +25,11 @@ ht-degree: 2%
 
 ![データ取得](./images/sb1.png)
 
-## 1.4.1 Adobe Target宛先へのセグメントのアクティブ化
+## 1.4.1 Adobe Targetの宛先に対するオーディエンスのアクティブ化
 
 Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を設定するには、以下に移動します **宛先**、終了 **カタログ**.
 
-クリック **Personalization** が含まれる **カテゴリ** メニュー。 「」が表示されます。 **Adobe Target** 宛先カード。 クリック **セグメントのアクティブ化**.
+クリック **Personalization** が含まれる **カテゴリ** メニュー。 「」が表示されます。 **Adobe Target** 宛先カード。 クリック **オーディエンスをアクティベート**.
 
 ![時刻](./images/atdest1.png)
 
@@ -37,7 +37,7 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 
 ![時刻](./images/atdest3.png)
 
-使用可能なセグメントのリストで、作成したセグメントを選択します [1.3 セグメントの作成](./ex3.md)。この名前は `yourLastName - Interest in Real-Time CDP`. 次に、「**次へ**」をクリックします。
+使用可能なオーディエンスのリストで、作成したオーディエンスを選択します [1.3 オーディエンスの作成](./ex3.md)。この名前は `yourLastName - Interest in Real-Time CDP`. 次に、「**次へ**」をクリックします。
 
 ![時刻](./images/atdest8.png)
 
@@ -49,17 +49,17 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 
 ![時刻](./images/atdest10.png)
 
-これで、Adobe Targetに対してセグメントがアクティブ化されました。
+これで、オーディエンスがAdobe Targetに対してアクティブ化されました。
 
 ![時刻](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Adobe Targetの宛先をReal-Time CDPで作成した後、宛先が有効になるまで最大 1 時間かかる場合があります。 バックエンド設定が原因で、これは 1 回限りの待機時間です。 最初の 1 時間の待ち時間とバックエンド設定が完了すると、Adobe Targetの宛先に送信される新しく追加されたエッジセグメントを、リアルタイムでターゲティングできるようになります。
+>Adobe Targetの宛先をReal-Time CDPで作成した後、宛先が有効になるまで最大 1 時間かかる場合があります。 バックエンド設定が原因で、これは 1 回限りの待機時間です。 最初の 1 時間の待機時間とバックエンド設定が完了すると、Adobe Targetの宛先に送信される新しく追加されたエッジオーディエンスを、リアルタイムでターゲティングできるようになります。
 
 ## 1.4.2 Adobe Target フォームベースのアクティビティの設定
 
-Real-Time CDP セグメントがAdobe Targetに送信されるように設定されたので、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定できます。 この演習では、Visual Experience Composer ベースのアクティビティを設定します。
+Real-Time CDP オーディエンスがAdobe Targetに送信されるように設定されたので、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定できます。 この演習では、Visual Experience Composer ベースのアクティビティを設定します。
 
 に移動して、Adobe Experience Cloud ホームページに移動します。 [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). クリック **ターゲット** をクリックして開きます。
 
@@ -98,11 +98,11 @@ Visual Experience Composer が表示されます。 Web サイトが完全に読
 
 ![RTCDP](./images/atform3.png)
 
-これで、使用可能なオーディエンスのリストが表示され、以前に作成してAdobe Targetに送信したAdobe Experience Platform セグメントが、このリストの一部になりました。 以前にAdobe Experience Platformで作成したセグメントを選択します。 クリック **オーディエンスを割り当て**.
+これで、使用可能なオーディエンスのリストが表示され、以前に作成してAdobe Targetに送信したAdobe Experience Platform オーディエンスが、このリストの一部になりました。 Adobe Experience Platformで以前作成したオーディエンスを選択します。 クリック **オーディエンスを割り当て**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Adobe Experience Platform セグメントは、この「エクスペリエンスのターゲット設定」アクティビティに含まれるようになります。
+Adobe Experience Platform オーディエンスは、このエクスペリエンスのターゲット設定アクティビティに含まれるようになりました。
 
 ![RTCDP](./images/atform4.png)
 
@@ -170,7 +170,7 @@ Adobe Experience Platform セグメントは、この「エクスペリエンス
 
 これでアクティビティが有効になり、bootcamp web サイトでテストできます。
 
-デモ Web サイトに戻って、の製品ページにアクセスする場合 **Real-Time CDP**&#x200B;を選択すると、作成したセグメントにすぐに適合し、Adobe Target アクティビティがホームページにリアルタイムで表示されます。
+デモ Web サイトに戻って、の製品ページにアクセスする場合 **Real-Time CDP**&#x200B;を選択すると、作成したオーディエンスの資格が即座に得られ、Adobe Target アクティビティがホームページにリアルタイムで表示されます。
 
 >[!IMPORTANT]
 >
@@ -182,7 +182,7 @@ Adobe Experience Platform セグメントは、この「エクスペリエンス
 
 ![RTCDP](./images/atform12a.png)
 
-次の手順： [1.5 アクションの実行：セグメントをFacebookに送信します](./ex5.md)
+次の手順： [1.5 アクションの実行：オーディエンスをFacebookに送信します](./ex5.md)
 
 [ユーザーフロー 1 に戻る](./uc1.md)
 
