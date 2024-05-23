@@ -1,22 +1,22 @@
 ---
-user-guide-title: モバイルアプリでの Experience Cloud の実装：チュートリアル
+user-guide-title: モバイルアプリでのExperience Cloudの実装のチュートリアル
 breadcrumb-title: モバイルアプリチュートリアル
-user-guide-description: Experience Platform Mobile SDK を使用して、モバイルアプリで Adobe Experience Cloud アプリケーションを実装する方法について説明します。
+user-guide-description: Experience Platformの Mobile SDK を使用して、モバイルアプリにAdobe Experience Cloud アプリケーションを実装する方法について説明します。
 solution: Data Collection
 feature: Mobile SDK
 role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 8c588f7aeefe0d4e4b17cf5f34268dcca943e2a0
+source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 76%
+source-wordcount: '78'
+ht-degree: 34%
 
 ---
 
 
-# モバイルアプリにExperience Cloudを実装する {#implement-mobile-sdk}
+# モバイルアプリへのExperience Cloudの実装 {#implement-mobile-sdk}
 
 + [チュートリアルの概要](overview.md)
 + 初期設定 {#initial-configuration}
@@ -29,7 +29,7 @@ ht-degree: 76%
    + [同意](consent.md)
    + [ライフサイクルデータ](lifecycle-data.md)
    + [イベントデータ](events.md)
-   + [WebViews](web-views.md)
+   + [Web ビュー](web-views.md)
    + [ID](identity.md)
    + [プロファイル](profile.md)
    + [Places](places.md)
@@ -41,5 +41,6 @@ ht-degree: 76%
       + [アプリ内メッセージ](journey-optimizer-inapp.md)
       + [意思決定管理](journey-optimizer-offers.md)
    + [Target](target.md)
+   + [Customer Journey Analytics](customer-journey-analytics.md)
 + [まとめ](conclusion.md)
 
