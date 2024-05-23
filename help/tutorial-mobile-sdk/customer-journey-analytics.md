@@ -4,9 +4,9 @@ description: Customer Journey Analyticsを使用してモバイルアプリと�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 2%
 
 ---
@@ -85,9 +85,9 @@ Customer Journey Analytics内の接続は、データセット（およびこれ
          | ODE DecisionEvents - *サンドボックス名* 決定 | identityMap | タイムスタンプ | モバイルアプリデータ | enable | enable |
          | AJO プッシュトラッキングエクスペリエンスイベントデータセット | identityMap | タイムスタンプ | モバイルアプリデータ | enable | enable |
 
-         ![CJA 接続 3](assets/cja-connections-3.png)
-
       1. を選択 **[!UICONTROL データセットを追加]**.
+
+         ![CJA 接続 3](assets/cja-connections-3.png)
 
 1. 戻る **[!UICONTROL 接続]** > **[!UICONTROL Luma アプリ - AEP Mobile SDK チュートリアル接続]**&#x200B;を選択 **[!UICONTROL 保存]** ：接続を保存します。
 
@@ -156,8 +156,6 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
       ![CJA データ表示コンポーネントの設定](assets/cja-dataview-component-settings.png)
 
    1. これで、データビューにフィールドを追加し、結果のコンポーネントを設定する方法を理解できたので、以下の表をスキーマフィールドのリストに使用して、指標またはディメンションとして追加します。 の使用 **スキーマパス** 以下のテーブルの列の値で、特定のスキーマフィールドを検索またはトラバースします。 ドラッグ&amp;ドロップしたら、 **コンポーネント設定** コンポーネントの変更など、特定の設定がコンポーネントに必要かどうかを表で確認する列の値 **[!UICONTROL コンポーネント名]** または定義中 **[!UICONTROL 値を含める/除外]**.
-
-      ![CJA データ表示コンポーネントの設定](assets/cja-dataview-component-settings.png)
 
       **指標**
 
@@ -232,9 +230,9 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 
    1. を選択 **[!UICONTROL 空のワークスペースプロジェクト]** ポップアップダイアログから。
 
-      ![CJA プロジェクト - 1](assets/cja-projects-1.png)
-
    1. 「**[!UICONTROL 作成]**」を選択します。
+
+      ![CJA プロジェクト - 1](assets/cja-projects-1.png)
 
 1. 「」が表示されます **[!UICONTROL 新規プロジェクト]** インターフェイス。 このインターフェイスでは、レポートとビジュアライゼーションを作成します。
 
@@ -357,8 +355,10 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
    ![CJA プロジェクト 18](assets/cja-projects-18.png)
 または、をドラッグ&amp;ドロップできます **[!UICONTROL 製品ビュー]** 次の下のディメンション **[!UICONTROL すべてのユーザー]** のディメンション **[!UICONTROL フォールアウト]** ビジュアライゼーション。
 
-1. について、上記の手順を繰り返します **[!UICONTROL リストへの製品追加]** および **[!UICONTROL 購入数]** ディメンション。 あなたの **[!UICONTROL フォールアウト]** ビジュアライゼーションで、製品のコンバージョンファネルが視覚的に表示されるようになりました。
-   ![CJA プロジェクト 19](assets/cja-projects-19.png)
+1. について、上記の手順を繰り返します **[!UICONTROL リストへの製品追加]** および **[!UICONTROL 購入数]** ディメンション。
+
+あなたの **[!UICONTROL フォールアウト]** ビジュアライゼーションで、製品のコンバージョンファネルが視覚的に表示されるようになりました。
+![CJA プロジェクト 19](assets/cja-projects-19.png)
 
 プロジェクトを保存することを忘れないでください。
 
