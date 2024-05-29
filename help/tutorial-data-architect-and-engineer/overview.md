@@ -8,10 +8,10 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
+source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 0%
 
 ---
 
@@ -19,64 +19,64 @@ ht-degree: 1%
 
 <!--5min-->
 
-_データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要_ は、Experience Platformを実践するための最適な出発点です。
+_データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要_ は、Experience Platformを実際に体験するための最適な出発点です。
 
 
 <!--How do we address ETL-->
 
 ## 学習内容
 
-データアーキテクトとデータエンジニアは、データのデプロイメントを成功させるために、緊密にExperience Platformを組む必要があります。 この実践チュートリアルでは、が実行する主なタスクについて説明します。 _両方の役割_ お客様自身のビジネスに合わせて Platform の実装を開始する方法を理解している必要があります。 演習では、Experience Platformの主要な用語、機能、インターフェイス、API について説明します。 また、Real-time Customer Data Platform、Customer Journey Analytics、Journey OptimizerなどのAdobe Experience Cloudアプリケーションのお客様は、Platform サービスがこれらのアプリケーションの重要な基礎となるので、このコンテンツも役に立つと考えます。
+データアーキテクトとデータエンジニアが緊密に連携して、Experience Platformの導入を成功させる必要があります。 この実践チュートリアルでは、が実行する主なタスクについて説明します _両方の役割_ したがって、お客様のビジネスに合わせて Platform の実装を開始する方法がわかります。 Experience Platformの主な用語、機能、インターフェイス、API を紹介する演習を通じてガイドされます。 Real-time Customer Data Platform、Customer Journey Analytics、Journey OptimizerなどのAdobe Experience Cloud アプリケーションのお客様も、Platform サービスがこれらのアプリケーションの重要な基盤となるので、このコンテンツが役立つことに気付くでしょう。
 
-![このチュートリアルで扱う Platform サービス（ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス）を重点的に解説するAdobe Experience Cloud Marketecture](assets/marketecture.png)
+![このチュートリアルで扱う Platform サービスを重点的に解説したAdobe Experience Cloudのマーケティング機能 – ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス](assets/marketecture.png)
 
 トピックは次のとおりです。
 
 * ユーザー権限の設定
 * サンドボックスの作成
 * Developer Console プロジェクトの設定と Platform API の使用
-* データ管理 — スキーマ、データセット、ID、結合ポリシー、データガバナンスの作成を含む
+* データ管理（スキーマ、データセット、ID、結合ポリシー、データガバナンスの作成を含む）
 * バッチモードとストリーミングモードを使用したデータ取り込み
-* Adobe Experience Platform Web SDK を使用した Web データのキャプチャ
+* Adobe Experience Platform Web SDK を使用した web データのキャプチャ
 * リアルタイム顧客プロファイルの作成
-* クエリサービスを使用したデータの検証とデータの抽出
+* クエリサービスを使用したデータの検証と抽出
 * セグメントの作成
 
 ## ビジネスシナリオ
 
-Adobe Experience Platformは、マーケティング目標の達成を支援するように設計された技術プラットフォームです。 ビジネス上の使用例は、テクノロジーの設計と実装の方法を促進する必要があります。 このチュートリアルでは、Luma という架空の小売ブランドに焦点を当てています。 Luma は、複数の国で実店舗を運営しており、Web サイトやモバイルアプリとのオンラインプレゼンスも備えています。 ロイヤリティー、CRM、Web、オフラインの購入データをリアルタイムの顧客プロファイルに組み合わせ、これらのプロファイルをアクティブ化して、マーケティングを次のレベルに引き上げます。 Luma のビジネス目標は、会社の目標と一致する場合と一致しない場合がありますが、このチュートリアルの実践手順を独自のビジネス目標に関連付けることができます。
+Adobe Experience Platformは、マーケティング目標の達成を支援するように設計されたテクニカルプラットフォームです。 ビジネスユースケースでは、テクノロジーの設計および実装方法を推進する必要があります。 このチュートリアルでは、Luma と呼ばれる架空の小売ブランドに焦点を当てます。 Luma は、複数の国で実店舗を運営しているほか、web サイトやモバイルアプリを備えたオンラインプレゼンスもあります。 ロイヤルティ、CRM、web、オフラインの購入データをリアルタイムの顧客プロファイルに結合し、これらのプロファイルをアクティブ化してマーケティングを次のレベルに引き上げるために、Adobe Experience Platformへの投資を進めています。 Luma のビジネス目標は、会社の目標と一致する場合もあれば、一致しない場合もありますが、このチュートリアルの実践的な手順を独自のビジネス目標に関連付けることができます。
 
 ## 前提条件
 
-* これで、 [Adobe Experience Platformコースの概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=ja) を使用し、Platform の機能に精通していること
-* Adobe Experience Platform( またはReal-Time CDPやJourney Optimizerなどのプラットフォームベースのアプリケーション ) とデータ収集（旧称 Launch）でプロビジョニングされたアカウントにアクセスできます。
-* このアカウントのシステム管理者であるか、または [ユーザー権限の設定](configure-permissions.md) あなたのために。
+* が完了しました [Adobe Experience Platform コースの概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=ja) Experience League上にあり、Platform の機能に精通している
+* Adobe Experience Platform（またはReal-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーション）とデータ収集（以前の Launch）でプロビジョニングされたアカウントにアクセスできます。
+* このアカウントのシステム管理者であるか、持つことができます [ユーザー権限の設定](configure-permissions.md) あなたのために。
 
 ## このチュートリアルの使用
 
-このチュートリアルでは、データエンジニアとデータアーキテクトの両方のタスクを組み合わせます。 これは入門レベルのチュートリアルなので、両方の役割のタスクを完了できるはずです。 レッスンの多くは、以前のレッスンで実装された内容に基づいて構築されているので、順を追ってレッスンを進める必要があります。 私はどのレッスンをスキップできるかを呼び出します。
+このチュートリアルでは、データエンジニアとデータアーキテクトの両方のタスクを組み合わせます。 これは初級レベルのチュートリアルなので、両方の役割のタスクを完了できます。 多くのレッスンは、以前のレッスンで実装されたものに基づいて構築されているので、順番にレッスンを進める必要があります。 どの授業を省略してよいか私が注意します。
 
-このチュートリアルでは、様々な Platform 要素を作成するので、できる限り推奨する名前を付けるようにします。 ただし、組織内の複数のユーザーが同時にこのチュートリアルを受け取る場合に備えて、カスタマイズする必要がある高レベルの要素名がいくつかあります。 例えば、Platform サンドボックスに、「Luma Tutorial Platform」ではなく、「Luma Tutorial Platform - Ignatius J Reilly」という名前を付けることができます。
+このチュートリアルで様々な Platform 要素を作成する際は、できるだけ推奨する名前に従ってください。 ただし、組織で複数のユーザーが同時にこのチュートリアルを実行する場合に備えて、カスタマイズした高レベルの要素名がいくつかあります。 例えば、Platform サンドボックスに、単に「Luma チュートリアルプラットフォーム」ではなく「Luma チュートリアルプラットフォーム - Ignatius J Reilly」という名前を付けることができます。
 
-動かなくなった場合は、まず手順を読み直してから、 ![問題のログ](https://experienceleague.adobe.com/assets/img/feedback.svg) 各ページのサイドバーにあるリンクを使用して、私に連絡します。
+スタックした場合は、最初に手順を再度読んでから、 ![問題を記録](https://experienceleague.adobe.com/assets/img/feedback.svg) 各ページのサイドバーにあるリンクから連絡してください。
 
 ## テクニカルノート
 
 ### サンドボックス環境
 
-このチュートリアルでは、サンドボックス環境を作成し、それを使用して演習を完了します。 サンドボックス環境を使用すると、実稼動データを妥協することなく、演習や実験を完了して安全におこなうことができます。
+このチュートリアルでは、サンドボックス環境を作成し、それを使用して演習を完了します。 サンドボックス環境を使用すると、実稼動データの妥協を気にすることなく、安全に演習と実験を完了できます。
 
 ### API
 
-Platform は、API を使用して最初に構築されます。 インターフェイスワークフローはすべての主要な Platform ワークフローに対して存在し、主に使用されますが、このチュートリアルでは、API に関する演習をいくつか含んでいます。 Adobe Developer Console での基本的なプロジェクト設定手順を説明し、 [!DNL Postman] 環境とコレクションを参照してください。 チュートリアルを完了すると、Platform API に詳しく、独自のデプロイメントで使用すると便利です。
+Platform は、API ファーストで構築されています。 インターフェイスワークフローは、すべての主要な Platform ワークフローに存在し、主に使用されますが、チュートリアルには API 指向の演習がいくつか含まれています。 Adobe Developer コンソールの基本的なプロジェクト設定を順を追って説明し、次の機能を提供します [!DNL Postman] platform API を使い始めるための環境とコレクション。 チュートリアルを完了すると、Platform API を熟知して、独自のデプロイメントで使用できることが役に立つ場合があります。
 
 ### サードパーティのテクノロジー
 
-このチュートリアルでは複数のテクノロジーを使用しますが、テクノロジーエコシステムのほぼ完全なAdobeを維持します。 独自の Platform 実装では、Platform を特定のサードパーティテクノロジーと統合する可能性が高くなります。 このチュートリアルをすべてのお客様に対して適切に保つために、より一般的な実装を使用します。
+このチュートリアルでは複数のテクノロジーを使用しますが、ほぼ完全にAdobeエコシステム内に残ります。 お客様の Platform 実装では、Platform を特定のサードパーティテクノロジーと統合する可能性が高くなります。 このチュートリアルをすべてのお客様に適切なものにするために、より一般的な実装を使用します。
 
-## チュートリアルの更新
+## チュートリアルの最新情報
 
-* 2023 年 6 月：新しい権限ワークフローを追加し、OAuth Server-to-Server API 資格情報を使用するように更新しました。
+* 2023 年 6 月：新しい権限ワークフローを含み、OAuth サーバー間 API 資格情報を使用するように更新されました
 
 
-では、最初のレッスンに進みましょう —[権限の設定](configure-permissions.md).
+それでは、最初の授業に移りましょう。[権限の設定](configure-permissions.md).
