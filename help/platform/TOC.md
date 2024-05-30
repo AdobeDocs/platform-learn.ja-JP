@@ -5,9 +5,9 @@ user-guide-description: Experience Platformの多くのコンポーネントに�
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '890'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,10 @@ ht-degree: 19%
    + [同意の適用](/help/platform/governance/enforce-consent.md)
    + [IAB Transparency and Consent Framework 2.0 との統合](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + データハイジーン {#data-hygiene}
-   + [偽名プロファイルとイベントの有効期限](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [偽名プロファイルとイベントの有効期限（TTL）](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [データハイジーンのためのデータ準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [データセットの有効期限](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [プロファイル属性の更新](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + データ取り込み {#data-ingestion}
    + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [バッチ取り込みの概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
