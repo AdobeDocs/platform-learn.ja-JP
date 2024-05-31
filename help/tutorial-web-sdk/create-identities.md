@@ -1,19 +1,19 @@
 ---
 title: Platform Web SDK の ID の作成
-description: XDM で ID を作成する方法、および ID マップデータ要素を使用してユーザー ID を取得する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: XDM で ID を作成する方法、および ID マップデータ要素を使用してユーザー ID を取得する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 # ID の作成
 
-Adobe Experience Platform Web SDK を使用して ID を取得する方法を説明します。 で未認証と認証済みの両方の ID データを取得 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). ID マップと呼ばれる Platform Web SDK データ要素タイプを使用して認証済みデータを収集するために、前の手順で作成したデータ要素を使用する方法を説明します。
+Adobe Experience Platform Web SDK を使用して ID を取得する方法について説明します。で未認証と認証済みの両方の ID データを取得 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). ID マップと呼ばれる Platform Web SDK データ要素タイプを使用して認証済みデータを収集するために、前の手順で作成したデータ要素を使用する方法を説明します。
 
 このレッスンでは、Adobe Experience Platform Web SDK タグ拡張機能で使用できる ID マップデータ要素に焦点を当てます。 認証済みユーザー ID と認証ステータスを含むデータ要素を XDM にマッピングします。
 
@@ -101,7 +101,7 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 1. として **[!UICONTROL 認証状態]**&#x200B;を選択 **[!UICONTROL 認証済み]**
 1. を選択 **[!UICONTROL プライマリ]**
 
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 保存]**
 
    ![データ収集インターフェイス](assets/identity-id-namespace.png)
 
@@ -133,9 +133,9 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 
 | コア拡張機能のデータ要素 | Platform Web SDK 拡張機能のデータ要素 |
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `cart.productInfo` | `xdm.variable.content` |
-| `cart.productInfo.purchase` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `identityMap.loginID` |
+| `cart.productInfo.purchase` | `xdm.variable.content` |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |

@@ -1,14 +1,14 @@
 ---
 title: Platform Web SDK を使用したJourney Optimizer意思決定管理の設定
-description: Platform Web SDK を使用して意思決定管理を実装する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Platform Web SDK を使用して意思決定管理を実装する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '2515'
+source-wordcount: '2513'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ Platform Web SDK を使用して、Adobe Journey Optimizerの意思決定管理�
 
 このセクションのレッスンを完了するには、まず次の操作を行う必要があります。
 
-* Adobe Journey Optimizer Ultimate （Journey OptimizerとOffer decisioning）またはAdobe Experience PlatformおよびOffer decisioningアプリケーションサービスのアドオンへのアクセス権が組織にあることを確認します。
+* Adobe Journey Optimizer Ultimate （Journey OptimizerとOffer decisioning）またはAdobe Experience PlatformおよびOffer decisioningアドオンへのアクセス権が組織にあることを確認します。
 
 * Platform Web SDK の初期設定について、すべてのレッスンを完了してください。
 
@@ -153,7 +153,7 @@ Platform Web SDK を使用して、Adobe Journey Optimizerの意思決定管理�
 
 **Placements** は、オファーの紹介に使用するコンテナです。 この例では、Luma サイトの上部にプレースメントを作成します。
 
-プレースメントのリストには&#x200B;**コンポーネント**&#x200B;メニューからアクセスできます。フィルターは、特定のチャネルやコンテンツに従ってプレースメントを取得するのに役立ちます。
+プレースメントのリストには&#x200B;**コンポーネント**&#x200B;メニューからアクセスできます。フィルターは、特定のチャネルまたはコンテンツに従ってプレースメントを取得するのに役立ちます。
 
 ![プレースメントを表示](assets/decisioning-placements-list.png)
 

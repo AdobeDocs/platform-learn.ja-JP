@@ -1,18 +1,18 @@
 ---
 title: Platform Web SDK を使用したAdobe Experience Platformへのデータのストリーミング
-description: Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1940'
 ht-degree: 7%
 
 ---
 
 # Web SDK を使用したExperience Platformへのデータのストリーミング
 
-Platform Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法について説明します。
+Platform Web SDK を使用して Adobe Experience Platform に web データをストリーミングする方法について説明します。
 
 Experience Platformは、Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics、Adobe Journey Optimizerなど、すべての新しいExperience Cloudアプリケーションのバックボーンです。 これらのアプリケーションは、web データ収集の最適な方法として Platform Web SDK を使用するように設計されています。
 
@@ -39,7 +39,7 @@ Experience Platformは、以前に作成したのと同じ XDM スキーマを�
 
 ## データセットの作成
 
-Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) は、データのコレクション用のストレージおよび管理構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 A [データセット](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview) は、データのコレクション用のストレージおよび管理構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
 Luma web イベントデータのデータセットを設定しましょう。
 
@@ -75,7 +75,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
    ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk-development.png)
 
-1. 「**[!UICONTROL サービスを追加]**」を選択します。
+1. を選択 **[!UICONTROL サービスを追加]**
    ![データストリームへのサービスの追加](assets/experience-platform-addService.png)
 1. を選択 **[!UICONTROL Adobe Experience Platform]** as the **[!UICONTROL サービス]**
 1. を選択 `Luma Web Event Data` as the **[!UICONTROL イベントデータセット]**
@@ -232,6 +232,57 @@ Platform インターフェイス（またはJourney Optimizer インターフ�
    ![顧客プロファイル](assets/experience-platform-validate-dataset-custProfile.png)
 
 これで、Experience Platform（およびReal-Time CDPの Platform Web SDK が有効になりました。 Journey Optimizer! とCustomer Journey Analytics!）。
+
+### ロイヤルティスキーマの作成とサンプルデータの取り込み
+
+この演習は、Real-time Customer Data PlatformおよびJourney Optimizerのお客様が修了すると想定されています。
+
+Web SDK データを Platform に取り込むと、Adobe Experience Platformに取り込んだ他のデータソースによってデータを強化できます。 例えば、ユーザーが Luma サイトにログインすると、ID グラフがExperience Platformに作成され、他のすべてのプロファイル対応データセットを結合してリアルタイム顧客プロファイルを作成できる場合があります。 これを実際に確認するには、サンプルのロイヤルティデータを含む別のデータセットをAdobe Experience Platformですばやく作成して、Real-time Customer Data PlatformとJourney Optimizerでリアルタイム顧客プロファイルを使用できるようにします。 あなたはすでに同様の演習をしたので、指示は簡単になります。
+
+ロイヤルティスキーマを作成します。
+
+1. 新しいスキーマの作成
+1. を選択 **[!UICONTROL 個人プロファイル]** as the [!UICONTROL 基本クラス]
+1. スキーマに名前を付ける `Luma Loyalty Schema`
+1. を追加 [!UICONTROL ロイヤルティの詳細] フィールドグループ
+1. を追加 [!UICONTROL 人口統計の詳細] フィールドグループ
+1. 「」を選択します `Person ID` フィールドに入力し、 [!UICONTROL ID] および [!UICONTROL プライマリ ID] の使用 `Luma CRM Id` [!UICONTROL ID 名前空間].
+1. のスキーマを有効にする [!UICONTROL Profile]
+
+   ![ロイヤルティスキーマ](assets/web-channel-loyalty-schema.png)
+
+データセットを作成してサンプルデータを取り込むには：
+
+1. から新しいデータセットを作成 `Luma Loyalty Schema`
+1. データセットに名前を付ける `Luma Loyalty Dataset`
+1. のデータセットを有効にする [!UICONTROL Profile]
+1. サンプルファイルをダウンロードします。 [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. ファイルをデータセットにドラッグ&amp;ドロップします
+1. データが正常に取り込まれていることを確認します
+
+   ![ロイヤルティスキーマ](assets/web-channel-loyalty-dataset.png)
+
+### オーディエンスの作成
+
+オーディエンスは、プロファイルを共通の特性に基づいてグループ化します。 Web キャンペーンで使用できるクイックオーディエンスを作成します。
+
+1. Experience Platformインターフェイスで、に移動します **[!UICONTROL オーディエンス]** 左側のナビゲーションで
+1. を選択 **[!UICONTROL オーディエンスを作成]**
+1. を選択 **[!UICONTROL ルールを作成]**
+1. を選択 **[!UICONTROL 作成]**
+
+   ![オーディエンスの作成](assets/web-campaign-create-audience.png)
+
+1. を選択 **[!UICONTROL 属性]**
+1. の検索 **[!UICONTROL ロイヤルティ]** > **[!UICONTROL 層]** フィールドにドラッグし、 **[!UICONTROL 属性]** セクション
+1. オーディエンスを次のユーザーとして定義 `tier` 等しい `gold`
+1. オーディエンスに名前を付ける `Luma Loyalty Rewards – Gold Status`
+1. を選択 **[!UICONTROL Edge]** as the **[!UICONTROL 評価方法]**
+1. を選択 **[!UICONTROL 保存]**
+
+   ![オーディエンスの定義](assets/web-campaign-define-audience.png)
+
+これは非常に単純なオーディエンスなので、エッジ評価方法を使用できます。 エッジオーディエンスはエッジで評価されるので、Web SDK が Platform 定義に対して行うのと同じリクエストで、オーディエンスEdge Networkを評価し、ユーザーが適格かどうかを直ちに確認できます。
 
 
 [次へ： ](setup-analytics.md)

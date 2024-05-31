@@ -1,23 +1,27 @@
 ---
 title: Web データ用の XDM スキーマの作成
-description: データ収集インターフェイスで web データの XDM スキーマを作成する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: データ収集インターフェイスで web データの XDM スキーマを作成する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
 # Web データ用の XDM スキーマの作成
 
-Adobe Experience Platform データ収集インターフェイスで web データの XDM スキーマを作成する方法を説明します。
+Adobe Experience Platform データ収集インターフェイスで web データの XDM スキーマを作成する方法について説明します。
 
 エクスペリエンスデータモデル（XDM）スキーマは、Adobe Experience Platformでデータを収集するための構成要素、原則およびベストプラクティスです。
 
 Platform Web SDK は、スキーマを使用して web イベントデータを標準化し、Platform Edge Networkに送信し、最終的にデータストリームで設定されたExperience Cloudアプリケーションにデータを転送します。 この手順は、カスタマーエクスペリエンスデータをExperience Platformに取り込むために必要な標準データモデルを定義し、これらの標準に基づいて構築されたダウンストリームのサービスとアプリケーションを可能にするので、重要です。
+
+>[!NOTE]
+>
+>XDM スキーマは _不要_ web SDK を使用してAdobe Analytics、Adobe TargetまたはAdobe Audience Managerを実装する場合（データは `data` の代わりにのオブジェクト `xdm` オブジェクトです（後で確認します）。 XDM スキーマは、Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analyticsなどの Platform ネイティブアプリケーションの最もパフォーマンスの高い実装に必要です。 独自の実装で XDM スキーマを使用しないことにすることもできますが、このチュートリアルの一部としてこれを行うことが想定されます。
 
 ## データをモデル化する理由
 
@@ -70,7 +74,7 @@ XDM スキーマについて詳しくは、コースを参照してください 
 
 ## XDM スキーマの作成
 
-XDM スキーマはExperience Platformでデータを記述する標準的な方法であり、スキーマに適合するすべてのデータを組織間で競合なく再利用したり、複数の組織間で共有したりできます。 詳しくは、 [スキーマ構成の基本](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
+XDM スキーマはExperience Platformでデータを記述する標準的な方法であり、スキーマに適合するすべてのデータを組織間で競合なく再利用したり、複数の組織間で共有したりできます。 詳しくは、 [スキーマ構成の基本](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition).
 
 この演習では、で web イベントデータをキャプチャするための推奨ベースラインフィールドグループを使用して、XDM スキーマを作成します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
@@ -101,7 +105,7 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 
    ![スキーマエクスペリエンスイベント検索](assets/schema-name-schema.png)
 
-## フィールドグループの追加
+## フィールドグループを追加
 
 前述したように、XDM は、ダウンストリーム Adobe Experience Platform サービスで使用する共通の構造と定義を提供することで、顧客体験データを標準化するコアフレームワークです。 XDM 標準に準拠することにより、 _すべての顧客体験データ_ 共通の表現に組み込むことができます。 このアプローチにより、顧客の行動から有益なインサイトを得たり、セグメントを通じて顧客オーディエンスを定義したり、複数のソースのデータを使用してパーソナライゼーション目的で顧客属性を表現したりできます。 参照： [データモデリングのベストプラクティス](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) を参照してください。
 
@@ -111,16 +115,15 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 > 
 >この演習では、web データ収集に推奨される事前定義済みのフィールドグループを追加します。 _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ および _**[!UICONTROL 消費者エクスペリエンスイベント]**_.
 >
->
-> 実装のみを行う場合 **Adobe Analytics** Web SDK を使用し、にデータを送信しない **Experience Platform**、を使用します [!UICONTROL Adobe Analytics ExperienceEvent テンプレート] xdm スキーマを定義するためのフィールドグループ。 これは [Analytics のセットアップ](setup-analytics.md) レッスン：
+
 
 1. が含まれる **[!UICONTROL フィールドグループ]** セクションで選択 **[!UICONTROL 追加]**
 
    ![新規フィールドグループ](assets/schema-new-field-group.png)
 
-1. [!UICONTROL `AEP Web SDK ExperienceEvent`] を検索します
+1. を検索 [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. チェックボックスをオンにする
-1. [!UICONTROL `Consumer Experience Event`] を検索します
+1. を検索 [!UICONTROL `Consumer Experience Event`]
 1. チェックボックスをオンにする
 1. を選択 **[!UICONTROL フィールドグループの追加]**
 

@@ -1,14 +1,14 @@
 ---
 title: Platform Web SDK を使用したJourney Optimizer web チャネルの設定
-description: Platform Web SDK を使用してJourney Optimizer web チャネルを実装する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Platform Web SDK を使用してJourney Optimizer web チャネルを実装する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 1%
 
 ---
@@ -133,55 +133,6 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
 このチュートリアルは実装者向けなので、このレッスンにはJourney Optimizerでの実質的なインターフェイス作業が含まれていることは注目に値します。 このようなインターフェイスタスクは通常マーケターが処理しますが、web チャネルキャンペーンの作成を通常担当していない実装者でも、プロセスに関するインサイトを得ることが有益な場合があります。
 
-### ロイヤルティスキーマの作成とサンプルデータの取り込み
-
-Web SDK データを Platform に取り込むと、Adobe Experience Platformに取り込んだ他のデータソースによってデータを強化できます。 例えば、ユーザーが Luma サイトにログインすると、ID グラフがExperience Platformに作成され、他のすべてのプロファイル対応データセットを結合してリアルタイム顧客プロファイルを作成できる場合があります。 これを実際に確認するには、サンプルのロイヤルティデータを含む別のデータセットをAdobe Experience Platformですばやく作成して、Journey Optimizer web キャンペーンでリアルタイム顧客プロファイルを使用できるようにします。 あなたは既に同様の演習を行ったので、指示は簡単になります。
-
-ロイヤルティスキーマを作成します。
-
-1. 新しいスキーマの作成
-1. を選択 **[!UICONTROL 個人プロファイル]** as the [!UICONTROL 基本クラス]
-1. スキーマに名前を付ける `Luma Loyalty Schema`
-1. を追加 [!UICONTROL ロイヤルティの詳細] フィールドグループ
-1. を追加 [!UICONTROL 人口統計の詳細] フィールドグループ
-1. 「」を選択します `Person ID` フィールドに入力し、 [!UICONTROL ID] および [!UICONTROL プライマリ ID] の使用 `Luma CRM Id` [!UICONTROL ID 名前空間].
-1. のスキーマを有効にする [!UICONTROL Profile]
-
-   ![ロイヤルティスキーマ](assets/web-channel-loyalty-schema.png)
-
-データセットを作成してサンプルデータを取り込むには：
-
-1. から新しいデータセットを作成 `Luma Loyalty Schema`
-1. データセットに名前を付ける `Luma Loyalty Dataset`
-1. のデータセットを有効にする [!UICONTROL Profile]
-1. サンプルファイルをダウンロードします。 [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. ファイルをデータセットにドラッグ&amp;ドロップします
-1. データが正常に取り込まれていることを確認します
-
-   ![ロイヤルティスキーマ](assets/web-channel-loyalty-dataset.png)
-
-### オーディエンスの作成
-
-オーディエンスは、プロファイルを共通の特性に基づいてグループ化します。 Web キャンペーンで使用できるクイックオーディエンスを作成します。
-
-1. Experience Platformインターフェイスで、に移動します **[!UICONTROL オーディエンス]** 左側のナビゲーションで
-1. を選択 **[!UICONTROL オーディエンスを作成]**
-1. を選択 **[!UICONTROL ルールを作成]**
-1. 「**[!UICONTROL 作成]**」を選択します。
-
-   ![オーディエンスの作成](assets/web-campaign-create-audience.png)
-
-1. を選択 **[!UICONTROL 属性]**
-1. の検索 **[!UICONTROL ロイヤルティ]** > **[!UICONTROL 層]** フィールドにドラッグし、 **[!UICONTROL 属性]** セクション
-1. オーディエンスを次のユーザーとして定義 `tier` 等しい `gold`
-1. オーディエンスに名前を付ける `Luma Loyalty Rewards – Gold Status`
-1. を選択 **[!UICONTROL Edge]** as the **[!UICONTROL 評価方法]**
-1. 「**[!UICONTROL 保存]**」を選択します
-
-   ![オーディエンスの定義](assets/web-campaign-define-audience.png)
-
-これは非常に単純なオーディエンスなので、エッジ評価方法を使用できます。 エッジオーディエンスはエッジで評価されるので、Web SDK が Platform 定義に対して行うのと同じリクエストで、オーディエンスEdge Networkを評価し、ユーザーが適格かどうかを直ちに確認できます。
-
 ### ロイヤルティ報酬キャンペーンの作成
 
 サンプルロイヤルティデータを取り込んでセグメントを作成したら、Adobe Journey Optimizerでロイヤルティ報酬 web チャネルキャンペーンを作成します。
@@ -258,7 +209,7 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
 1. 内 **[!UICONTROL アクション]** キャンペーンのタブで、 **[!UICONTROL コンテンツを編集]**. サーフェスとして 1 ページの URL を入力したので、コンポーザーで作業を開始する準備が整っています。
 
-   ![コンテンツの編集](assets/web-channel-edit-content.png)
+   ![コンテンツを編集](assets/web-channel-edit-content.png)
 
 1. 次に、をクリックします **[!UICONTROL Web ページを編集]** オーサリングを開始します。
 
@@ -270,7 +221,7 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
 1. また、を使用してコンテナにパーソナライゼーションを追加します **[!UICONTROL 式エディター]**.
 
-   ![パーソナライゼーションの追加](assets/web-channel-add-basic-personalization.png)
+   ![パーソナライゼーションを追加](assets/web-channel-add-basic-personalization.png)
 
 1. クリック数に関してエクスペリエンスが適切に追跡されていることを確認します。 を選択 **[!UICONTROL クリック追跡要素]** コンテキストメニューから。
 

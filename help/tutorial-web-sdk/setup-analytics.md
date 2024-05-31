@@ -1,12 +1,12 @@
 ---
 title: Experience Platform Web SDK を使用したAdobe Analyticsの設定
-description: Experience PlatformWeb SDK を使用してAdobe Analyticsをセットアップする方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Experience PlatformWeb SDK を使用してAdobe Analyticsをセットアップする方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2810'
+source-wordcount: '2735'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 * データストリームの設定によるAdobe Analyticsの有効化
 * Analytics 変数に自動マッピングされる標準 XDM フィールドを把握する
-* 「Adobe Analytics ExperienceEvent テンプレート」フィールドグループまたは処理ルールを使用して、カスタム Analytics 変数を設定します
+* データオブジェクトへの Analytics 変数の設定
 * データストリームを上書きして、別のレポートスイートにデータを送信する
 * Debugger と Assurance を使用したAdobe Analytics変数の検証
 
@@ -49,11 +49,11 @@ Platform Web SDK は、web サイトから Platform Edge Networkにデータを�
 
    ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk-development.png)
 
-1. 「**[!UICONTROL サービスを追加]**」を選択します。
+1. を選択 **[!UICONTROL サービスを追加]**
    ![データストリームへのサービスの追加](assets/datastream-analytics-addService.png)
 1. を選択 **[!UICONTROL Adobe Analytics]** as the **[!UICONTROL サービス]**
 1. を入力 **[!UICONTROL レポートスイート ID]** 開発レポートスイートの
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 保存]**
 
    ![データストリーム保存分析](assets/datastream-add-analytics.png)
 
@@ -65,38 +65,24 @@ Platform Web SDK は、web サイトから Platform Edge Networkにデータを�
 >
 >このチュートリアルでは、開発環境のAdobe Analytics レポートスイートのみを設定します。 独自の web サイト用にデータストリームを作成する場合、ステージング環境と実稼動環境用に追加のデータストリームおよびレポートスイートを作成する必要があります。
 
-## XDM スキーマと Analytics 変数
+## Analytics 変数の設定
 
-おめでとうございます。でAdobe Analyticsと互換性のあるスキーマを既に設定しています [スキーマの設定](configure-schemas.md) レッスン！
+Web SDK 実装で Analytics 変数を設定する方法はいくつかあります。
 
-しかし、あなたはどのように私はすべての prop、evar やイベントを設定するか、疑問に思うかもしれません？
+1. XDM フィールドの Analytics 変数への自動マッピング（自動）。
+1. でのフィールドの設定 `data` オブジェクト （推奨）。
+1. XDM フィールドを Analytics 処理ルールの Analytics 変数にマッピングします（推奨されなくなりました）。
+1. XDM スキーマで Analytics 変数に直接マッピングします（推奨されなくなりました）。
 
-同時に使用できる方法はいくつかあります。
-
-1. 標準 XDM フィールドを設定すると、一部のフィールドが Analytics 変数に自動的にマッピングされます。
-1. 追加の XDM フィールドを Analytics 処理ルールの Analytics 変数にマッピングします。
-1. XDM スキーマの Analytics 変数に直接マッピングします。
-
-<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
-
-1. Automatically mapped variables using reserved XDM fields
-1. Manually mapped variables using Analytics Processing Rules
-
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). Any variable that is not auto-mapped must be manually mapped. 
-
- 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
-
-
- 1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
- 
-The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, because it skips the mapping step in the Adobe Analytics Processing Rules interface. The steps in this lesson use the **Analytics-specific XDM** approach.
--->
+2024 年 5 月をもって、Platform Web SDK を使用してAdobe Analyticsを実装するための XDM スキーマを作成する必要がなくなりました。 この `data` オブジェクト （および `data.variable` このチュートリアルで作成したデータ要素）を使用して、すべてのカスタム Analytics 変数を設定できます。 データオブジェクトでこれらの変数を設定すると、既存の Analytics のお客様がよく知ることができ、処理ルールインターフェイスを使用するよりも効率的で、リアルタイム顧客プロファイルで不要なデータが領域を占有するのを防ぐことができます（Real-time Customer Data PlatformまたはJourney Optimizerを使用している場合に重要です）。
 
 ### 自動的にマッピングされたフィールド
 
-多くの XDM フィールドは、Analytics 変数に自動的にマッピングされます。
+多くの XDM フィールドは、Analytics 変数に自動的にマッピングされます。 最新のマッピングのリストについては、を参照してください。 [AdobeExperience Edge での Analytics 変数のマッピング](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-で作成されたスキーマ [スキーマの設定](configure-schemas.md) このレッスンには、次の表に示すように、Analytics 変数に自動マッピングされるいくつかの項目が含まれます。
+これは、次の場合に発生します _カスタムスキーマを定義していない場合でも_. Experience Platform Web SDK は、一部のデータを自動的に収集し、XDM フィールドとして Platform Edge Networkに送信します。 例えば、Web SDK は現在のページの URL を読み取り、次のように送信します `web.webPageDetails.URL`. このフィールドはAdobe Analyticsに転送され、Adobe Analyticsのページ URL レポートに自動入力されます。
+
+Analytics および Platform ベースのアプリケーション用に Web SDK を実装する場合は、このチュートリアルの内にあるように、カスタム XDM スキーマを作成します [スキーマの設定](configure-schemas.md) レッスン： 次の表に示すように、Analytics 変数への自動マッピングを実装した XDM フィールドの一部を次に示します。
 
 | XDM から Analytics への自動マッピング変数 | Adobe Analytics変数 |
 |-------|---------|
@@ -116,71 +102,90 @@ The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, 
 | `productListItems[].priceTotal` | s.product=;;；製品価格；; |
 
 Analytics 製品文字列の個々のセクションは、の下の様々な XDM 変数を介して設定されます `productListItems` オブジェクト。
+
 >2022 年 8 月 18 日現在、 `productListItems[].SKU` s.products 変数内の製品名へのマッピングを優先します。
 >設定された値 `productListItems[].name` 次の場合にのみ、製品名にマッピングされます `productListItems[].SKU` が存在しない。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
 >に空の文字列や null を設定しないでください。 `productListItems[].SKU`. これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
-最新のマッピングのリストについては、を参照してください。 [AdobeExperience Edge での Analytics 変数のマッピング](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+### データオブジェクトに変数を設定
+
+での変数の設定 `data` web SDK で Analytics 変数を設定する場合は、オブジェクトを使用することをお勧めします。 データオブジェクトで変数を設定すると、自動的にマッピングされた変数もすべて上書きされる可能性があります。
+
+まず、とは何ですか `data` 対象？ どの Web SDK イベントでも、カスタムデータを含んだ 2 つのオブジェクトを送信できます。 `data` オブジェクトと `xdm` オブジェクト。 両方とも Platform Edge Networkに送信されますが、 `xdm` オブジェクトがExperience Platformデータセットに送信されます。 プロパティ： `data` オブジェクトはエッジ上でにマッピングできます。 `xdm` データ収集のためのデータ準備機能を使用するフィールドですが、それ以外のフィールドはExperience Platformに送信されません。 そのため、Experience Platform上でネイティブに構築されていない Analytics などのアプリケーションにデータを送信するのに最適な方法です。
+
+汎用 Web SDK 呼び出しの 2 つのオブジェクトは次のとおりです。
+
+![データおよび xdm オブジェクト](assets/analytics-data-object-intro.png)
+
+プロパティを検索するようにAdobe Analyticsが設定されている `data.__adobe.analytics` オブジェクトを作成して、Analytics 変数に使用します。
+
+それでは、これをやりましょう。
+
+を使用します `data.variable` データ要素 t
 
 
-### 処理ルールを使用した Analytics 変数へのマッピング
-
-XDM スキーマのすべてのフィールドは、次のプレフィックスを持つコンテキストデータ変数としてAdobe Analyticsで使用できるようになります `a.x.`. 例：`a.x.web.webinteraction.region`
-
-この演習では、1 つの XDM 変数を prop にマッピングします。 カスタムマッピングに対して実行する必要がある同じ手順に従います `eVar`, `prop`, `event`、または処理ルールからアクセスできる変数。
-
-1. Analytics インターフェイスに移動します
-1. に移動 [!UICONTROL Admin] > [!UICONTROL 管理ツール] > [!UICONTROL レポートスイート]
-1. チュートリアルで使用する開発/テストレポートスイートを選択します。 [!UICONTROL 設定を編集] > [!UICONTROL 一般] > [!UICONTROL 処理ルール]
-
-   ![Analytics 購入](assets/analytics-process-rules.png)
-
-1. ルールを作成して **[!UICONTROL 値を上書き]** `[!UICONTROL Product SKU (prop1)]` 対象： `a.x.productlistitems.0.sku`. ルールを作成する理由についてのメモを忘れずに追加し、ルールのタイトルに名前を付けてください。 「**[!UICONTROL 保存]**」を選択します
-
-   ![Analytics 購入](assets/analytics-set-processing-rule.png)
-
-   >[!IMPORTANT]
-   >
-   >処理ルールに初めてマッピングする場合、UI には XDM オブジェクトからのコンテキストデータ変数は表示されません。 この問題を修正するには、任意の値を選択し、保存してから、編集に戻ります。 すべての XDM 変数が表示されます。
-
-### Adobe Analytics フィールドグループを使用した Analytics 変数へのマッピング
-
-処理ルールの代わりに、を使用して XDM スキーマの Analytics 変数にマッピングすることもできます `Adobe Analytics ExperienceEvent Template` フィールドグループ。 このアプローチは、多くのユーザーが処理ルールを設定するよりも簡単だと思うようになったため、人気が高まりました。ただし、XDM ペイロードのサイズを増やすと、Real-Time CDPなどの他のアプリケーションでプロファイルサイズを増やすことができます。
-
-を追加します `Adobe Analytics ExperienceEvent Template` フィールドグループをスキーマに追加します。
-
-1. を開きます [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
-1. を選択 **[!UICONTROL スキーマ]** 左側のナビゲーションから
-1. チュートリアルで使用しているサンドボックスに属していることを確認します
-1. を開きます `Luma Web Event Data` スキーマ
-1. が含まれる **[!UICONTROL フィールドグループ]** セクションで選択 **[!UICONTROL 追加]**
-1. の検索 `Adobe Analytics ExperienceEvent Template` フィールドグループを作成してスキーマに追加します
+<!--
 
 
-次に、製品文字列にマーチャンダイジングeVarを設定します。 （を使用） `Adobe Analytics ExperienceEvent Template` フィールドグループを使用すると、製品文字列内のマーチャンダイジング eVar またはイベントに変数をマッピングできます。 これは、設定とも呼ばれます **製品構文マーチャンダイジング**.
+### Map to Analytics variables with processing rules
 
-1. タグプロパティに戻る
+All fields in the XDM schema become available to Adobe Analytics as Context Data Variables with the following prefix `a.x.`. For example, `a.x.web.webinteraction.region`
 
-1. ルールを開きます `ecommerce - library loaded - set product details variables - 20`
+In this exercise, you map one XDM variable to a prop. Follow these same steps for any custom mapping that you must do for any `eVar`, `prop`, `event`, or variable accessible via Processing Rules.
 
-1. を開きます **[!UICONTROL 変数を設定]** アクション
+1. Go to the Analytics interface
+1. Go to [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites ]
+1. Select the dev/test report suite that you are using for the tutorial > [!UICONTROL Edit Settings] > [!UICONTROL General] > [!UICONTROL Processing Rules]
 
-1. 選択して開く `_experience > analytics > customDimensions > eVars > eVar1`
+    ![Analytics Purchase](assets/analytics-process-rules.png)   
 
-1. を **[!UICONTROL 値]** 対象： `%product.productInfo.title%`
+1. Create a rule to **[!UICONTROL Overwrite value of]** `[!UICONTROL Product SKU (prop1)]` to `a.x.productlistitems.0.sku`. Remember to add a note about why you are creating the rule and name your rule title. Select **[!UICONTROL Save]**
 
-1. を選択 **[!UICONTROL 変更を保持]**
+    ![Analytics Purchase](assets/analytics-set-processing-rule.png)   
 
-   ![製品 SKU XDM オブジェクト変数](assets/set-up-analytics-product-merchandising.png)
+    >[!IMPORTANT]
+    >
+    >The first time you map to a processing rule, the UI does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
-1. を選択 **[!UICONTROL 保存]** ルールを保存するには
+### Map to Analytics variables using the Adobe Analytics field group
 
-ご覧のように、基本的にすべての Analytics 変数は `Adobe Analytics ExperienceEvent Template` フィールドグループ。
+An alternative to processing rules is to map to Analytics variables in the XDM schema using the `Adobe Analytics ExperienceEvent Template` field group. This approach has gained popularity because many users find it simpler than configuring processing rules, however, by increasing the size of the XDM payload it could in turn increase the profile size in other applications like Real-Time CDP.
+
+To add the `Adobe Analytics ExperienceEvent Template` field group to your schema:
+
+1. Open the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
+1. Select **[!UICONTROL Schemas]** from the left navigation
+1. Make sure you are in the sandbox you are using from the tutorial
+1. Open your `Luma Web Event Data` schema
+1. In the **[!UICONTROL Field Groups]** section, select **[!UICONTROL Add]**
+1. Find the `Adobe Analytics ExperienceEvent Template` field group and add it to your schema
+
+
+Now, set a merchandising eVar in the product string. With the `Adobe Analytics ExperienceEvent Template` field group, you are able to map variables to merchandising eVars or events within the product string. This is also known as setting **Product Syntax Merchandising**. 
+
+1. Go back to your tag property
+
+1. Open the rule `ecommerce - library loaded - set product details variables - 20`
+
+1. Open the **[!UICONTROL Set Variable]** action
+
+1. Select to open `_experience > analytics > customDimensions > eVars > eVar1`
+
+1. Set the **[!UICONTROL Value]** to `%product.productInfo.title%`
+
+1. Select **[!UICONTROL Keep Changes]**
+
+    ![Product SKU XDM object Variable](assets/set-up-analytics-product-merchandising.png)
+
+1. Select **[!UICONTROL Save]** to save the rule
+
+As you just saw, basically all of the Analytics variables can be set in the `Adobe Analytics ExperienceEvent Template` field group.
 
 >[!NOTE]
 >
-> に注意してください。 `_experience` 下のオブジェクト `productListItems` > `Item 1`. この下の任意の変数の設定 [!UICONTROL オブジェクト] product 構文の eVar またはイベントを設定します。
+> Notice the `_experience` object under `productListItems` > `Item 1`. Setting any variable under this [!UICONTROL object] sets Product Syntax eVars or Events.
 
+-->
 
 ## 別のレポートスイートへのデータの送信
 
@@ -199,7 +204,7 @@ XDM スキーマのすべてのフィールドは、次のプレフィックス�
 
 1. 上書きするレポートスイートを選択します。 この場合、 `Web SDK Course Dev` および `Web SDK Course Stg`
 
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 保存]**
 
    ![データストリームを上書き](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
@@ -259,7 +264,7 @@ XDM スキーマのすべてのフィールドは、次のプレフィックス�
 
 1. 「」を選択します **[!UICONTROL データストリーム]**、この場合は `Luma Web SDK: Development Environment`
 
-1. 次の下 **[!UICONTROL レポートスイート]**&#x200B;で、上書きするために使用するレポートサイトを選択します。 この場合は、`tmd-websdk-course-stg`です。
+1. 次の下 **[!UICONTROL レポートスイート]**&#x200B;で、上書きするために使用するレポートサイトを選択します。 この場合、 `tmd-websdk-course-stg`.
 
 1. を選択 **[!UICONTROL 変更を保持]**
 
@@ -371,7 +376,7 @@ Experience Platform Web SDK を使用して Analytics がデータを適切に�
 1. 追加 [ディディスポーツウォッチ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) カートに
 1. に移動します [買い物かごページ](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), Edge Trace をチェックします
 
-   * `eventType` を `commerce.productListViews` に設定
+   * `eventType` をに設定 `commerce.productListViews`
    * `[!UICONTROL events: "scView"]`、および
    * 製品文字列が設定されます
 
@@ -379,7 +384,7 @@ Experience Platform Web SDK を使用して Analytics がデータを適切に�
 
 1. チェックアウトに進み、Edge Trace でを確認します
 
-   * `eventType` を `commerce.checkouts` に設定
+   * `eventType` をに設定 `commerce.checkouts`
    * `[!UICONTROL events: "scCheckout"]`、および
    * 製品文字列が設定されます
 
@@ -388,7 +393,7 @@ Experience Platform Web SDK を使用して Analytics がデータを適切に�
 1. を記入します。 **名前（名）** および **名前（姓）** 配送フォームのフィールドと選択 **続行**. 次のページで、 **注文する**
 1. 確認ページで、「」の Edge Trace を確認します
 
-   * `eventType` を `commerce.purchases` に設定
+   * `eventType` をに設定 `commerce.purchases`
    * 購入イベントを設定中 `[!UICONTROL events: "purchase"]`
    * 設定されている通貨コード変数 `[!UICONTROL cc: "USD"]`
    * で設定されている購入 ID `[!UICONTROL pi]`

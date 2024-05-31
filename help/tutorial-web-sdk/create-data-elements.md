@@ -1,12 +1,12 @@
 ---
 title: Platform Web SDK のデータ要素の作成
-description: XDM オブジェクトを作成し、タグでデータ要素をマッピングする方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: XDM オブジェクトを作成し、タグでデータ要素をマッピングする方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1306'
 ht-degree: 2%
 
 ---
@@ -168,7 +168,7 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
 
 1. 移動 `None` as the **[!UICONTROL ストレージ期間]** この値はページごとに異なるので、を設定します
 
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 保存]**
 
    ![ページ名データ要素](assets/data-element-pageName.png)
 
@@ -186,7 +186,7 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
 * **`user.profile.attributes.loggedIn`** マッピング先
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`product.productInfo.sku`**（`digitalData.product.0.productInfo.sku` にマッピング）
+* **`product.productInfo.sku`** マッピング先 `digitalData.product.0.productInfo.sku`
 <!--digitalData.product.0.productInfo.sku
     ```javascript
     var cart = digitalData.product;
@@ -197,8 +197,8 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
     return cartItem;
     ```
     -->
-* **`product.productInfo.title`**（`digitalData.product.0.productInfo.title` にマッピング）
-* **`cart.orderId`**（`digitalData.cart.orderId` にマッピング）
+* **`product.productInfo.title`** マッピング先 `digitalData.product.0.productInfo.title`
+* **`cart.orderId`** マッピング先 `digitalData.cart.orderId`
 <!--
     ```javascript
     var cart = digitalData.product;
@@ -256,29 +256,41 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
 >
 >この [!UICONTROL JavaScript 変数] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素はとして参照します `digitalData.user[0].profile[0].attributes.username` **動作しない**.
 
-## 変数データ要素の作成
+## XDM およびデータオブジェクト用の変数データ要素の作成
 
-データ要素を作成したら、を使用して XDM にマッピングします **[!UICONTROL 変数]** xdm オブジェクトに使用されるスキーマを定義するデータ要素。 このオブジェクトは、次の作業の際に作成した XDM スキーマに準拠している必要があります [スキーマの設定](configure-schemas.md) レッスン：
+作成したデータ要素は、XDM オブジェクト（Platform アプリケーション用）とデータオブジェクト（Analytics、Target およびAudience Manager用）の作成に使用されます。 これらのオブジェクトには、と呼ばれる独自の特別なデータ要素があります **[!UICONTROL 変数]** 作成が非常に簡単なデータ要素。
 
-変数データ要素を作成するには：
+XDM の変数データ要素を作成するには、で作成したスキーマに関連付けます。 [スキーマの設定](configure-schemas.md) レッスン :
 
 1. を選択 **[!UICONTROL データ要素を追加]**
 1. データ要素に名前を付ける `xdm.variable.content`. タグプロパティを整理しやすくするために、XDM に固有のデータ要素を「xdm」というプレフィックスを付けることをお勧めします
 1. 「」を選択します **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL 拡張機能]**
 1. 「」を選択します **[!UICONTROL 変数]** as the **[!UICONTROL データ要素タイプ]**
+1. を選択 **[!UICONTROL XDM]** as the **[!UICONTROL プロパティ]**
 1. 適切なExperience Platformを選択します **[!UICONTROL Sandbox]**
 1. 適切なを選択します **[!UICONTROL スキーマ]**、この場合は `Luma Web Event Data`
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 保存]**
 
-   ![可変データ要素](assets/analytics-tags-data-element-xdm-variable.png)
+   ![XDM 用の変数データ要素](assets/analytics-tags-data-element-xdm-variable.png)
+
+次に、データオブジェクトの変数データ要素を作成します。
+
+1. を選択 **[!UICONTROL データ要素を追加]**
+1. データ要素に名前を付ける `data.variable`. タグプロパティを整理しやすくするために、データオブジェクトに固有のデータ要素に「data」というプレフィックスを付けることをお勧めします
+1. 「」を選択します **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL 拡張機能]**
+1. 「」を選択します **[!UICONTROL 変数]** as the **[!UICONTROL データ要素タイプ]**
+1. を選択 **[!UICONTROL データ]** as the **[!UICONTROL プロパティ]**
+1. を選択 **[!UICONTROL 保存]**
+
+   ![データオブジェクトの可変データ要素](assets/data-element-data-variable.png.png)
 
 
 これらの手順の最後で、次のデータ要素が作成されているはずです。
 
 | コア拡張機能のデータ要素 | Platform Web SDK 拡張機能のデータ要素 |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -291,7 +303,7 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
 
 >[!TIP]
 >
->今後 [タグルールの作成](create-tag-rule.md) レッスンでは、次のことを学習します **[!UICONTROL 変数]** データ要素を使用すると、 **[!UICONTROL 変数アクションタイプを更新]**.
+>今後 [タグルールの作成](create-tag-rule.md) レッスンでは、次のことを学習します **[!UICONTROL 変数]** データ要素を使用すると、タグ内で複数のルールをスタックできます。 **[!UICONTROL 変数アクションタイプを更新]**.
 
 これらのデータ要素を配置すると、タグルールを使用して Platform Edge Networkへのデータ送信を開始する準備が整います。 ただし、最初に、Web SDK を使用して ID を収集する方法について説明します。
 

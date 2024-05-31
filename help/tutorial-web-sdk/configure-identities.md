@@ -1,23 +1,27 @@
 ---
 title: ID 名前空間の設定
-description: Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # ID 名前空間の設定
 
-Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する方法について説明します。
+Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法について説明します。
 
 この [Adobe Experience Cloud ID サービス](https://experienceleague.adobe.com/en/docs/id-service/using/home) は、SDK ベースのAdobeアプリケーション間で共通の訪問者 ID （ECID）を設定して、アプリケーション間のオーディエンス共有などのExperience Cloud機能を強化します。 また、独自の顧客 ID をサービスに送信して、クロスデバイスターゲティングや、顧客関係管理（CRM）システムなどの他のシステムとの統合を有効にすることもできます。
 
 この [Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （はい、2 つあります。） では、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できるようにします。
+
+>[!NOTE]
+>
+>カスタム ID 名前空間は _不要_ web SDK を使用してAdobe Analytics、Adobe TargetまたはAdobe Audience Managerを実装するには（認証済み ID は、 `data` の代わりにのオブジェクト `xdm` オブジェクトです（後で確認します）。 ID 名前空間は、Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analyticsなどの Platform ネイティブアプリケーションに必要です。 独自の実装で ID 名前空間を使用しないことにすることもできますが、このチュートリアルの一部としてこれを行う必要があります。
 
 >[!NOTE]
 >
@@ -75,7 +79,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する
    |---------------|-----------|
    | 表示名 | Luma CRM ID |
    | ID シンボル | lumaCrmId |
-   | タイプ | 個々のクロスデバイス ID |
+   | タイプ | 個人のクロスデバイス ID |
 
 
    ![名前空間の作成](assets/identities-create-namespace.png)
