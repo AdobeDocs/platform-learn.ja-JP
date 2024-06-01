@@ -4,9 +4,9 @@ description: Experience PlatformWeb SDK を使用してAdobe Analyticsをセッ�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -74,15 +74,15 @@ Web SDK 実装で Analytics 変数を設定する方法はいくつかありま�
 1. XDM フィールドを Analytics 処理ルールの Analytics 変数にマッピングします（推奨されなくなりました）。
 1. XDM スキーマで Analytics 変数に直接マッピングします（推奨されなくなりました）。
 
-2024 年 5 月をもって、Platform Web SDK を使用してAdobe Analyticsを実装するための XDM スキーマを作成する必要がなくなりました。 この `data` オブジェクト （および `data.variable` このチュートリアルで作成したデータ要素）を使用して、すべてのカスタム Analytics 変数を設定できます。 データオブジェクトでこれらの変数を設定すると、既存の Analytics のお客様がよく知ることができ、処理ルールインターフェイスを使用するよりも効率的で、リアルタイム顧客プロファイルで不要なデータが領域を占有するのを防ぐことができます（Real-time Customer Data PlatformまたはJourney Optimizerを使用している場合に重要です）。
+2024 年 5 月をもって、Platform Web SDK を使用してAdobe Analyticsを実装するための XDM スキーマを作成する必要がなくなりました。 この `data` オブジェクト （および `data.variable` で作成したデータ要素 [データ要素の作成](create-data-elements.md) レッスン）を使用すると、すべてのカスタム Analytics 変数を設定できます。 データオブジェクトでこれらの変数を設定すると、既存の Analytics のお客様がよく知ることができ、処理ルールインターフェイスを使用するよりも効率的で、リアルタイム顧客プロファイルで不要なデータが領域を占有するのを防ぐことができます（Real-time Customer Data PlatformまたはJourney Optimizerを使用している場合に重要です）。
 
 ### 自動的にマッピングされたフィールド
 
 多くの XDM フィールドは、Analytics 変数に自動的にマッピングされます。 最新のマッピングのリストについては、を参照してください。 [AdobeExperience Edge での Analytics 変数のマッピング](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-これは、次の場合に発生します _カスタムスキーマを定義していない場合でも_. Experience Platform Web SDK は、一部のデータを自動的に収集し、XDM フィールドとして Platform Edge Networkに送信します。 例えば、Web SDK は現在のページの URL を読み取り、次のように送信します `web.webPageDetails.URL`. このフィールドはAdobe Analyticsに転送され、Adobe Analyticsのページ URL レポートに自動入力されます。
+これは、次の場合に発生します _カスタムスキーマを定義していない場合でも_. Experience Platform Web SDK は、一部のデータを自動的に収集し、XDM フィールドとして Platform Edge Networkに送信します。 例えば、Web SDK は現在のページ URL を読み取り、XDM フィールドとして送信します `web.webPageDetails.URL`. このフィールドはAdobe Analyticsに転送され、Adobe Analyticsのページ URL レポートに自動的に入力されます。
 
-Analytics および Platform ベースのアプリケーション用に Web SDK を実装する場合は、このチュートリアルの内にあるように、カスタム XDM スキーマを作成します [スキーマの設定](configure-schemas.md) レッスン： 次の表に示すように、Analytics 変数への自動マッピングを実装した XDM フィールドの一部を次に示します。
+このチュートリアルのように、XDM スキーマでAdobe Analyticsの Web SDK を実装する場合、次の表に示すように、Analytics 変数への自動マッピングがカスタム実装された XDM フィールドの一部が用意されています。
 
 | XDM から Analytics への自動マッピング変数 | Adobe Analytics変数 |
 |-------|---------|
@@ -103,15 +103,18 @@ Analytics および Platform ベースのアプリケーション用に Web SDK 
 
 Analytics 製品文字列の個々のセクションは、の下の様々な XDM 変数を介して設定されます `productListItems` オブジェクト。
 
+>[!NOTE]
+>
 >2022 年 8 月 18 日現在、 `productListItems[].SKU` s.products 変数内の製品名へのマッピングを優先します。
 >設定された値 `productListItems[].name` 次の場合にのみ、製品名にマッピングされます `productListItems[].SKU` が存在しない。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
 >に空の文字列や null を設定しないでください。 `productListItems[].SKU`. これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
+
 ### データオブジェクトに変数を設定
 
-での変数の設定 `data` web SDK で Analytics 変数を設定する場合は、オブジェクトを使用することをお勧めします。 データオブジェクトで変数を設定すると、自動的にマッピングされた変数もすべて上書きされる可能性があります。
+evar、prop、event についてはどうでしょうか。 での変数の設定 `data` web SDK でこれらの Analytics 変数を設定する場合は、オブジェクトを使用することをお勧めします。 データオブジェクトで変数を設定すると、自動的にマッピングされた変数もすべて上書きされる可能性があります。
 
-まず、とは何ですか `data` 対象？ どの Web SDK イベントでも、カスタムデータを含んだ 2 つのオブジェクトを送信できます。 `data` オブジェクトと `xdm` オブジェクト。 両方とも Platform Edge Networkに送信されますが、 `xdm` オブジェクトがExperience Platformデータセットに送信されます。 プロパティ： `data` オブジェクトはエッジ上でにマッピングできます。 `xdm` データ収集のためのデータ準備機能を使用するフィールドですが、それ以外のフィールドはExperience Platformに送信されません。 そのため、Experience Platform上でネイティブに構築されていない Analytics などのアプリケーションにデータを送信するのに最適な方法です。
+まず、とは何ですか `data` 対象？ どの Web SDK イベントでも、カスタムデータを含んだ 2 つのオブジェクトを送信できます。 `xdm` オブジェクトと `data` オブジェクト。 両方とも Platform Edge Networkに送信されますが、 `xdm` オブジェクトがExperience Platformデータセットに送信されます。 プロパティ： `data` オブジェクトはエッジ上でにマッピングできます。 `xdm` データ収集のためのデータ準備機能を使用するフィールドですが、それ以外のフィールドはExperience Platformに送信されません。 そのため、Experience Platform上でネイティブに構築されていない Analytics などのアプリケーションにデータを送信するのに最適な方法です。
 
 汎用 Web SDK 呼び出しの 2 つのオブジェクトは次のとおりです。
 
@@ -119,9 +122,28 @@ Analytics 製品文字列の個々のセクションは、の下の様々な XDM
 
 プロパティを検索するようにAdobe Analyticsが設定されている `data.__adobe.analytics` オブジェクトを作成して、Analytics 変数に使用します。
 
-それでは、これをやりましょう。
+次に、この仕組みを見てみましょう。 設定しましょう `eVar1` および `prop1` ページ名を使用し、XDM マッピングされた値を上書きする方法を確認します
 
-を使用します `data.variable` データ要素 t
+1. タグルールを開く `all pages - library loaded - set global variables - 1`
+1. 新しいを追加 **[!UICONTROL アクション]**
+1. を選択 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張子
+1. を選択 **[!UICONTROL アクションタイプ]** as **[!UICONTROL 変数を更新]**
+1. を選択 `data.variable` as the **[!UICONTROL データ要素]**
+1. 「」を選択します **[!UICONTROL analytics]** オブジェクト
+1. を設定 `eVar1` as the `page.pageInfo.pageName` データ要素
+1. を設定 `prop1` 次の値をコピーします `eVar1`
+1. XDM にマッピングされた値の上書きをテストするには、を使用します。 **[!UICONTROL 追加のプロパティ]** セクションでページ名を静的な値として設定 `test`
+1. ルールの保存
+
+
+ここで、送信イベントルールにデータオブジェクトを含める必要があります。
+
+1. タグルールを開く `all pages - library loaded - send event - 50`
+1. を開きます **[!UICONTROL イベントを送信]** アクション
+1. を選択 `data.variable` as the **[!UICONTROL データ]**
+1. を選択 **[!UICONTROL 変更を保持]**
+1. を選択 **[!UICONTROL 保存]**
+
 
 
 <!--
@@ -200,7 +222,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    ![データストリームを上書き](assets/datastream-edit-analytics.png)
 
-1. 「」を選択します **[!UICONTROL 詳細オプション]** 開く **[!UICONTROL レポートスイートの上書き]**
+1. を選択 **[!UICONTROL 詳細オプション]** 開く **[!UICONTROL レポートスイートの上書き]**
 
 1. 上書きするレポートスイートを選択します。 この場合、 `Web SDK Course Dev` および `Web SDK Course Stg`
 
@@ -219,9 +241,10 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 次の下 **[!UICONTROL 拡張機能]**&#x200B;を選択 **[!UICONTROL コア]**
 
-1. 次の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択 **[!UICONTROL ライブラリ読み込み]**
+1. 次の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択 **[!UICONTROL ライブラリが読み込まれました（ページのトップ）]**
 
 1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `51`. これにより、ルールが次の後に実行されます `all pages - library loaded - send event - 50` これにより、ベースライン XDM に **[!UICONTROL 変数を更新]** アクションタイプ。
+1. を選択 **[!UICONTROL 変更を保持]**
 
    ![Analytics レポートスイートのオーバーライド](assets/set-up-analytics-rs-override.png)
 
@@ -247,9 +270,9 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. として **[!UICONTROL アクションタイプ]**&#x200B;を選択 **[!UICONTROL イベントを送信]**
 
-1. として **[!UICONTROL タイプ]**&#x200B;を選択 `web.webpagedetails.pageViews`
-
 1. として **[!UICONTROL XDM データ]**&#x200B;を選択し、 `xdm.variable.content` で作成したデータ要素 [データ要素の作成](create-data-elements.md) レッスン
+
+1. として **[!UICONTROL データ]**&#x200B;を選択し、 `data.variable` で作成したデータ要素 [データ要素の作成](create-data-elements.md) レッスン
 
    ![Analytics データストリームの上書き](assets/set-up-analytics-datastream-override-1.png)
 
@@ -261,7 +284,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
    >
    >    このタブは、上書きされるタグ環境を決定します。 この演習では開発環境のみを指定しますが、実稼動環境にデプロイする場合は、必ず **[!UICONTROL 実稼動]** 環境。
 
-
+1. 「」を選択します **[!UICONTROL Sandbox]** チュートリアルでを使用している
 1. 「」を選択します **[!UICONTROL データストリーム]**、この場合は `Luma Web SDK: Development Environment`
 
 1. 次の下 **[!UICONTROL レポートスイート]**&#x200B;で、上書きするために使用するレポートサイトを選択します。 この場合、 `tmd-websdk-course-stg`.
@@ -275,7 +298,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 ## 開発環境の構築
 
-新しいデータ要素とルールをに追加します `Luma Web SDK Tutorial` ライブラリをタグ付けし、開発環境を再構築します。
+更新したルールを `Luma Web SDK Tutorial` ライブラリをタグ付けし、開発環境を再構築します。
 
 おめでとうございます。次の手順では、Experience Platform Web SDK を使用してAdobe Analytics実装を検証します。
 

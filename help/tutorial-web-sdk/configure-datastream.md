@@ -1,21 +1,21 @@
 ---
 title: Platform Web SDK のデータストリームの設定
-description: データストリームを有効にし、Experience Cloudソリューションを設定する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: データストリームを有効にし、Experience Cloudソリューションを設定する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 9%
 
 ---
 
 # データストリームの設定
 
-Adobe Experience Platform Web SDK のデータストリームを設定する方法について説明します。
+Adobe Experience Platform Web SDK 用データストリームの設定方法について説明します。
 
-[データストリーム](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) platform Web SDK で収集されたデータの送信先をAdobe Experience Platform Edge Networkに指示します。 データストリーム設定では、Experience Cloudアプリケーション、Experience Platformアカウント、イベント転送を有効にします。
+[データストリーム](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) platform Web SDK で収集されたデータの送信先をAdobe Experience Platform Edge Networkに指示します。 データストリーム設定では、Experience Cloudアプリケーション、Experience Platformアカウント、イベント転送を有効にします。
 
 ![Web SDK、データストリームおよびEdge Network図](assets/dc-websdk-datastreams.png)
 
@@ -49,15 +49,15 @@ Adobe Experience Platform Web SDK のデータストリームを設定する方�
 1. に移動 **[!UICONTROL データストリーム]** 左側のナビゲーションで
 1. を選択 **[!UICONTROL 新規データストリーム]**
 1. Enter `Luma Web SDK: Development Environment` as the **[!UICONTROL 名前]**. この名前は、後でタグプロパティに Web SDK 拡張機能を設定するときに参照されます。
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 保存]**
 
    ![データストリームの作成](assets/datastream-create-new-datastream.png)
 
    >[!NOTE]
    >
-   >スキーマを選択する必要があるのは、 [データ収集のためのデータ準備](/help/data-collection/edge/data-prep.md) 機能
+   >スキーマを選択する必要はありません。 スキーマの選択は、を使用する場合にのみ必要です [データ収集のためのデータ準備](/help/data-collection/edge/data-prep.md) 機能
 
-次の画面では、Adobeアプリケーションなどのサービスをデータストリームに追加できますが、チュートリアルのこの時点ではサービスを追加しません。 それは後の授業で行います [Experience Platformの設定](setup-experience-platform.md), [Analytics の設定](setup-analytics.md), [Audience Managerの設定](setup-audience-manager.md), [ターゲットを設定](setup-target.md)、または [イベントの転送](setup-event-forwarding.md).
+次の画面では、Adobeアプリなどのサービスをデータストリームに追加できますが、現時点ではサービスを追加しません。 それは後の授業で行います [Experience Platformの設定](setup-experience-platform.md), [Analytics の設定](setup-analytics.md), [Audience Managerの設定](setup-audience-manager.md), [ターゲットを設定](setup-target.md)、または [イベントの転送](setup-event-forwarding.md).
 
 >[!NOTE]
 >

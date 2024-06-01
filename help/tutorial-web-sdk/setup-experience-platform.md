@@ -3,9 +3,9 @@ title: Platform Web SDK を使用したAdobe Experience Platformへのデータ�
 description: Web SDK を使用して web データをAdobe Experience Platformにストリーミングする方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2107'
 ht-degree: 7%
 
 ---
@@ -28,6 +28,8 @@ Experience Platformは、以前に作成したのと同じ XDM スキーマを�
 * Web SDK データをAdobe Experience Platformに送信するようにデータストリームを設定します
 * リアルタイム顧客プロファイル用のストリーミング web データを有効にする
 * データが Platform データセットとリアルタイム顧客プロファイルの両方に到達したことを検証します
+* Platform へのサンプルロイヤルティプログラムデータの取り込み
+* シンプルな Platform オーディエンスの作成
 
 ## 前提条件
 
@@ -36,6 +38,9 @@ Experience Platformは、以前に作成したのと同じ XDM スキーマを�
 * Real-time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform アプリケーションにアクセスできる
 * このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
 
+>[!NOTE]
+>
+>Platform アプリケーションがない場合は、このレッスンをスキップするか、先に読み進めることができます。
 
 ## データセットの作成
 
@@ -44,7 +49,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 Luma web イベントデータのデータセットを設定しましょう。
 
 
-1. に移動します [Experience Platformインターフェイス](https://experience.adobe.com/platform/)
+1. に移動します [Experience Platform](https://experience.adobe.com/platform/) または [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) インターフェイス
 1. このチュートリアルに使用する開発用サンドボックスに属していることを確認します
 1. 開く **[!UICONTROL データ管理/ データセット]** 左側のナビゲーションから
 1. を選択 **[!UICONTROL データセットを作成]**
@@ -139,14 +144,28 @@ Luma web イベントデータのデータセットを設定しましょう。
 
    ![データセットプレビュー 1](assets/experience-platform-dataset-preview-1.png)
 
+
+### データのクエリ
+
+1. が含まれる [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL データ管理 > Queroes]** 左側のナビゲーションでを開きます **[!UICONTROL クエリ]** 画面。
+1. を選択 **[!UICONTROL クエリを作成]**
+1. まず、クエリを実行して、データレイク内のテーブルのすべての名前を表示します。 Enter `SHOW TABLES` クエリエディターで、再生アイコンをクリックしてクエリを実行します。
+1. 結果で、テーブルの名前が次のようになります `luma_web_event_data`
+1. 次に、テーブルを参照する単純なクエリでテーブルをクエリします（デフォルトでは、クエリは 100 件の結果に制限されます）。 `SELECT * FROM "luma_web_event_data"`
+1. しばらくすると、web データのサンプルレコードが表示されます。
+
+>[!ERROR]
+>
+>「テーブルがプロビジョニングされていません」というエラーが発生した場合は、テーブルの名前を再度確認します。 また、データのマイクロバッチがまだデータレイクに到達していない可能性もあります。 10～15 分後にもう一度試してください。
+
 >[!INFO]
 >
->Adobe Experience Platformのクエリサービスは、レイク内のデータを検証するためのより堅牢な方法ですが、このチュートリアルの範囲を超えています。 詳しくは、 [データの調査](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) を参照してください。
+>  Adobe Experience Platformのクエリサービスについて詳しくは、 [データの調査](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) を参照してください。
 
 
 ## リアルタイム顧客プロファイルのデータセットとスキーマを有効にする
 
-次の手順では、リアルタイム顧客プロファイルのデータセットとスキーマを有効にします。 Web SDK からのデータストリーミングは、Platform に流入する多数のデータソースの 1 つになり、web データを他のデータソースと結合して 360 度の顧客プロファイルを作成する必要があります。 リアルタイム顧客プロファイルについて詳しくは、次の短いビデオをご覧ください。
+Real-time Customer Data PlatformおよびJourney Optimizerのお客様に対して、次の手順では、リアルタイム顧客プロファイルのデータセットとスキーマを有効にします。 Web SDK からのデータストリーミングは、Platform に流入する多数のデータソースの 1 つになり、web データを他のデータソースと結合して 360 度の顧客プロファイルを作成する必要があります。 リアルタイム顧客プロファイルについて詳しくは、次の短いビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -179,7 +198,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
    >[!IMPORTANT]
    >
-   >    リアルタイムプライマリプロファイルに送信されるすべてのレコードに顧客 ID が必要です。 通常、ID フィールドは、スキーマ内でラベル付けされます。 ただし、ID マップを使用する場合、ID フィールドはスキーマ内に表示されません。 このダイアログは、プライマリ ID を念頭に置いており、データの送信時に ID マップでプライマリ ID を指定することを確認するためのものです。 ご存知のように、Web SDK は ID マップを使用し、Experience Cloud ID （ECID）はデフォルトのプライマリ ID です。
+   >    リアルタイムプライマリプロファイルに送信されるすべてのレコードに顧客 ID が必要です。 通常、ID フィールドは、スキーマ内でラベル付けされます。 ただし、ID マップを使用する場合、ID フィールドはスキーマ内に表示されません。 このダイアログは、プライマリ ID を念頭に置いており、データの送信時に ID マップでプライマリ ID を指定することを確認するためのものです。 ご存知のように、Web SDK は、Experience CloudID （ECID）をデフォルトのプライマリ ID として使用し、認証済み ID を利用可能な場合はプライマリ ID として使用する ID マップを使用します。
 
 
 1. を選択 **[!UICONTROL Enable （有効）]**
@@ -192,7 +211,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
 >[!IMPORTANT]
 >
->    プロファイルに対してスキーマを有効にすると、そのスキーマを無効にしたり削除したりできなくなります。 また、この時点より後にフィールドをスキーマから削除することはできません。 これらの影響は、実稼動環境で独自のデータを操作する際に後で留意することが重要です。 このチュートリアルでは開発用サンドボックスを使用する必要がありますが、このサンドボックスはいつでも削除できます。
+>    プロファイルに対してスキーマを有効にすると、サンドボックス全体をリセットまたは削除しない限り、スキーマを無効または削除することはできません。 また、この時点より後にフィールドをスキーマから削除することはできません。
 >
 >   
 > 独自のデータを操作する場合は、次の順序で作業を行うことをお勧めします。
@@ -209,7 +228,7 @@ Platform インターフェイス（またはJourney Optimizer インターフ�
 
 最初に、サンプルデータをさらに生成する必要があります。 このレッスンの前の手順を繰り返し、タグプロパティにマッピングされたときに Luma web サイトにログインします。 Platform Web SDK リクエストをInspectして、でデータが送信されることを確認します。 `lumaCRMId`.
 
-1. が含まれる [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL プロファイル]** 左側のナビゲーションで
+1. が含まれる [Experience Platform](https://experience.adobe.com/platform/) インタフェース、選択 **[!UICONTROL 顧客]** > **[!UICONTROL プロファイル]** 左側のナビゲーションで
 
 1. として **[!UICONTROL ID 名前空間]** use `lumaCRMId`
 1. の値をコピー&amp;ペースト `lumaCRMId` Experience Platformデバッガーで調べた呼び出しで渡されます（ここでは）。 `112ca06ed53d3db37e4cea49cc45b71e`.
@@ -247,7 +266,8 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 1. を追加 [!UICONTROL ロイヤルティの詳細] フィールドグループ
 1. を追加 [!UICONTROL 人口統計の詳細] フィールドグループ
 1. 「」を選択します `Person ID` フィールドに入力し、 [!UICONTROL ID] および [!UICONTROL プライマリ ID] の使用 `Luma CRM Id` [!UICONTROL ID 名前空間].
-1. のスキーマを有効にする [!UICONTROL Profile]
+1. のスキーマを有効にする [!UICONTROL Profile]. 「プロファイル」切替スイッチが見つからない場合は、左上のスキーマ名をクリックしてみてください。
+1. スキーマの保存
 
    ![ロイヤルティスキーマ](assets/web-channel-loyalty-schema.png)
 
@@ -266,7 +286,7 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
 オーディエンスは、プロファイルを共通の特性に基づいてグループ化します。 Web キャンペーンで使用できるクイックオーディエンスを作成します。
 
-1. Experience Platformインターフェイスで、に移動します **[!UICONTROL オーディエンス]** 左側のナビゲーションで
+1. Experience PlatformまたはJourney Optimizerのインターフェイスで、に移動します。 **[!UICONTROL 顧客]** > **[!UICONTROL オーディエンス]** 左側のナビゲーションで
 1. を選択 **[!UICONTROL オーディエンスを作成]**
 1. を選択 **[!UICONTROL ルールを作成]**
 1. を選択 **[!UICONTROL 作成]**

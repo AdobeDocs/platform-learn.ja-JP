@@ -1,13 +1,13 @@
 ---
 title: Experience Platformアシュランスを使用した Web SDK 実装の検証
-description: Adobe Experience Platform Assurance を使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Adobe Experience Platform アシュランスを使用して Platform Web SDK の実装を検証する方法について説明します。このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 3%
+source-wordcount: '606'
+ht-degree: 7%
 
 ---
 
@@ -78,8 +78,8 @@ Adobe Experience Platform Debuggerで Edge Trace を有効にするたびに、�
 
 実装のこの段階では、表示できる情報は限られています。 表示される値の 1 つは、Platform Edge Networkで生成されるExperience CloudID （ECID）です。
 
-1. 「Adobeレスポンス・ハンドル」というイベントを持つ行を選択します。
-1. メニューが右側に表示されます。 「」を選択します `+` 次の隣に署名 `[!UICONTROL ACPExtensionEvent]`
+1. イベントがという行を選択します。 `Alloy Response Handle`.
+1. メニューが右側に表示されます。 「」を選択します `+` 次の隣に署名 `[!UICONTROL ACPExtensionEventData]`
 1. 次を選択してドリルダウン `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 最後の下に表示される ID `0` 次に対応 `ECID`. 下に表示される値によってわかります `namespace` 一致 `ECID`
 
    ![Assurance 検証 ECID](assets/validate-assurance-ecid.png)

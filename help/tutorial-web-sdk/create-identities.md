@@ -4,9 +4,9 @@ description: XDM で ID を作成する方法、および ID マップデータ�
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '876'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 
 ## 認証済み Id
 
-上記のように、Platform Web SDK を使用する場合、デジタルプロパティへのすべての訪問者には、Adobeによって ECID が割り当てられます。 ECID 未認証のデジタル行動をトラッキングするデフォルト ID。
+上記のように、Platform Web SDK を使用する場合、デジタルプロパティへのすべての訪問者には、Adobeによって ECID が割り当てられます。 ECID は、未認証のデジタル行動を追跡するためのデフォルト ID です。
 
 また、Platform が以下を作成できるように、認証済みユーザー ID を送信することもできます [ID グラフ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) Target で設定可能 [サードパーティ Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). 認証済み ID の設定は、 [!UICONTROL ID マップ] データ要素タイプ。
 

@@ -4,9 +4,9 @@ description: XDM オブジェクトを作成し、タグでデータ要素をマ
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1337'
 ht-degree: 2%
 
 ---
@@ -100,14 +100,14 @@ window.adobeDataLayer.push({
 長所
 
 * データレイヤー変数から XDM への再マッピングの追加手順を不要にします
-* 開発チームがタグ付けデジタル動作を所有している場合は、をデプロイする方が早い場合があります
+* タグ付けデジタル動作も web 開発チームが所有している場合は、のデプロイが早くなる可能性があります
 
 短所
 
 * XDM に送信するデータを更新するために、開発チームと開発サイクルに完全に依存している
 * XDM はデータレイヤーから正確なペイロードを受け取るので、柔軟性は限られています
 * スクレーピング、永続性、迅速なデプロイメントのための機能など、ビルトインのタグ機能は使用できません
-* サードパーティのピクセルにはデータレイヤーを使用できません
+* サードパーティのピクセルに対してデータレイヤーを使用するのが難しい（ただし、これらのピクセルをに移動したい場合があります） [イベント転送](setup-event-forwarding.md)!
 * データレイヤーと XDM の間でデータを変換できない
 
 ### タグ内のデータレイヤーのマッピング
@@ -267,7 +267,7 @@ XDM の変数データ要素を作成するには、で作成したスキーマ�
 1. 「」を選択します **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL 拡張機能]**
 1. 「」を選択します **[!UICONTROL 変数]** as the **[!UICONTROL データ要素タイプ]**
 1. を選択 **[!UICONTROL XDM]** as the **[!UICONTROL プロパティ]**
-1. 適切なExperience Platformを選択します **[!UICONTROL Sandbox]**
+1. 「」を選択します **[!UICONTROL Sandbox]** スキーマの作成対象
 1. 適切なを選択します **[!UICONTROL スキーマ]**、この場合は `Luma Web Event Data`
 1. を選択 **[!UICONTROL 保存]**
 
@@ -280,6 +280,7 @@ XDM の変数データ要素を作成するには、で作成したスキーマ�
 1. 「」を選択します **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL 拡張機能]**
 1. 「」を選択します **[!UICONTROL 変数]** as the **[!UICONTROL データ要素タイプ]**
 1. を選択 **[!UICONTROL データ]** as the **[!UICONTROL プロパティ]**
+1. このチュートリアルの一部として実装するExperience Cloudソリューションを選択します
 1. を選択 **[!UICONTROL 保存]**
 
    ![データオブジェクトの可変データ要素](assets/data-element-data-variable.png.png)

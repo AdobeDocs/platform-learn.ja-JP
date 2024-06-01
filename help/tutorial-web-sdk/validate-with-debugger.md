@@ -1,19 +1,19 @@
 ---
 title: Experience Platformデバッガーを使用した Web SDK 実装の検証
-description: Adobe Experience Platform Debuggerを使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Adobe Experience Platform Debuggerを使用して Platform Web SDK 実装を検証する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # Experience Platformデバッガーを使用した Web SDK 実装の検証
 
-Adobe Experience Platform Debuggerを使用してAdobe Experience Platform Web SDK 実装を検証する方法を説明します。
+Adobe Experience Platform デバッガ―を使用して Adobe Experience Platform Web SDK 実装を検証する方法について説明します。
 
 Experience Platformーデバッガーは、Chrome および Firefox ブラウザーで使用できる拡張機能で、web ページに実装されたAdobeーテクノロジーを確認するのに役立ちます。 使用するブラウザーのバージョンをダウンロードします。
 
@@ -75,7 +75,7 @@ Experience Platformデバッガーには、既存のタグライブラリを別�
 
    ![タグプロパティが置き換えられました](assets/validate-switch-success.png)
 
-チュートリアルを続ける際は、この手法を使用して、Luma サイトを独自のタグプロパティにマッピングし、Platform Web SDK 実装を検証します。 実稼動 web サイトでタグの使用を開始する場合は、タグの開発環境で行うのと同じ方法を使用して変更を検証できます。
+チュートリアルを続ける際は、この手法を使用して、Luma サイトを独自のタグプロパティにマッピングし、Platform Web SDK 実装を検証します。 独自の web サイトでタグを使用する場合、これと同じ手法を使用して、実稼動 web サイトで開発タグライブラリを検証できます。
 
 ## Experience Platform Debugger を使用したクライアントサイドのネットワークリクエストの検証
 
@@ -131,7 +131,7 @@ ID マップの詳細を検証することもできます。
 
    ![「ネットワーク」タブ](assets/validate-dev-console.png)
 
-1. に移動します **応答** タブをクリックし、ECID 値が応答にどのように含まれるかを確認します。 この値をコピーします。次の演習では、この値を使用してプロファイル情報を検証します
+1. に移動します **応答** タブをクリックし、ECID 値が応答にどのように含まれるかを確認します。
 
    ![「ネットワーク」タブ](assets/validate-dev-console-ecid.png)
 

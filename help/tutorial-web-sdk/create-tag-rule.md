@@ -1,12 +1,12 @@
 ---
 title: Platform Web SDK 用のタグルールの作成
-description: タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1983'
 ht-degree: 2%
 
 ---
@@ -139,9 +139,9 @@ ht-degree: 2%
 
 1. 次のデータ要素を対応するにマッピングします `web` XDM 変数
 
-   * **`web.webPageDetials.name`**&#x200B;コピー先：`%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`**&#x200B;コピー先：`%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`**&#x200B;コピー先：`%page.pageInfo.hierarchie1%`
+   * **`web.webPageDetials.name`** 対象： `%page.pageInfo.pageName%`
+   * **`web.webPageDetials.server`** 対象： `%page.pageInfo.server%`
+   * **`web.webPageDetials.siteSection`** 対象： `%page.pageInfo.hierarchie1%`
 
 1. `web.webPageDetials.pageViews.value` を `1` に設定します。
 
@@ -163,7 +163,6 @@ ht-degree: 2%
 >
 >ルールの順序は、イベントがトリガーされたときに最初に実行されるルールを決定します。 2 つのルールのイベントタイプが同じ場合は、最も数字が小さいルールが最初に実行されます。
 > 
->![ルールの順序](assets/set-up-analytics-sequencing.png)
 
 まず、Luma の製品詳細ページで製品表示を追跡します。
 
@@ -172,7 +171,8 @@ ht-degree: 2%
 1. 「」を選択します ![+記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 「イベント」で新しいトリガーを追加
 1. 次の下 **[!UICONTROL 拡張機能]**&#x200B;を選択 **[!UICONTROL コア]**
 1. 次の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択 **[!UICONTROL ライブラリが読み込まれました（ページのトップ）]**
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. この順序値によって、ルールがの後に実行されます `all pages - library loaded - set global variables - 1` グローバル設定を設定します。
+1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `20`. この順序値によって、ルールが確実に実行されます _後_ この `all pages - library loaded - set global variables - 1` グローバル設定を設定します。
+1. を選択 **[!UICONTROL 変更を保持]**
 
    ![Analytics XDM ルール](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ ht-degree: 2%
 1. 次の下 **[!UICONTROL アクション]** 選択 **[!UICONTROL 追加]**
 1. を選択 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張子
 1. を選択 **[!UICONTROL アクションタイプ]** as **[!UICONTROL 変数を更新]**
+1. を選択 `xdm.variable.content` as the **[!UICONTROL データ要素]**
 1. にスクロール ダウンします。 `commerce` オブジェクト
 1. を開きます **[!UICONTROL productViews]** オブジェクトとセット **[!UICONTROL value]** 対象： `1`
 
@@ -202,7 +203,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >このルールは優先順位が高いので、次を上書きします `eventType` 「グローバル設定」ルールで設定します。 `eventType` には 1 つの値のみを含めることができます。最も高い値のイベントに設定することをお勧めします。
+   >このルールは優先順位が高いので、次を上書きします `eventType` 「グローバル設定」ルールで設定します。 `eventType` には 1 つの値のみを含めることができ、最も価値のあるイベントで設定することをお勧めします。
 
 1. にスクロールし、を選択します。 `productListItems` 配列
 1. を選択 **[!UICONTROL 個々の項目を指定]**
@@ -215,7 +216,7 @@ ht-degree: 2%
    >この **`productListItems`** は `array` データタイプを使用すると、データは要素の集まりとして取り込まれます。 Luma デモサイトのデータレイヤー構造と、Luma サイトで一度に 1 つの製品しか表示できないので、項目を個別に追加します。 独自の web サイトに実装する場合、データレイヤーの構造によっては、配列全体を指定できる場合があります。
 
 1. 選択して開く **[!UICONTROL 項目 1]**
-1. **`productListItems.item1.SKU`** を `%product.productInfo.sku%` にマッピングします
+1. マップ **`productListItems.item1.SKU`** 対象： `%product.productInfo.sku%`
 
    ![製品 SKU XDM オブジェクト変数](assets/set-up-analytics-sku.png)
 
@@ -264,6 +265,7 @@ ht-degree: 2%
 1. 次の下 **[!UICONTROL アクション]** 選択 **[!UICONTROL 追加]**
 1. を選択 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張子
 1. を選択 **[!UICONTROL アクションタイプ]** as **[!UICONTROL 変数を更新]**
+1. を選択 `xdm.variable.content` as the **[!UICONTROL データ要素]**
 1. にスクロール ダウンします。 `commerce` オブジェクトを選択し、をクリックして開きます。
 1. を開きます **[!UICONTROL productListViews]** オブジェクトとセット **[!UICONTROL value]** 対象： `1`
 
@@ -320,7 +322,8 @@ ht-degree: 2%
 1. にスクロールし、を選択します。 **[!UICONTROL productListItems]** 配列
 1. を選択 **[!UICONTROL アレイ全体を提供]**
 1. マッピング先 **`cart.productInfo.purchase`** データ要素
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 変更を保持]**
+1. を選択 **[!UICONTROL 保存]**
 
 完了すると、次のルールが作成されます。
 
@@ -339,7 +342,7 @@ ht-degree: 2%
 
 1. の使用 **[!UICONTROL Core 拡張機能]** を選択して、 `Library Loaded (Page Top)` as the **[!UICONTROL イベントタイプ]**
 
-1. を選択 **[!UICONTROL 詳細]** ドロップダウンと入力 `50` 。対象： **[!UICONTROL 順序]**. これにより、トリガーにトリガーした最初のルールの後に、2 番目のルールの設定が保証されます `1`.
+1. を選択 **[!UICONTROL 詳細]** ドロップダウンと入力 `50` 。対象： **[!UICONTROL 順序]**. これにより、設定した他のすべてのルール（以下を設定）の後で、このルールが確実に起動します `1` または `20` as their [!UICONTROL 順序]）に設定します。
 
 1. を選択 **[!UICONTROL 変更を保持]** ルールのメイン画面に戻るには
    ![ライブラリの読み込みトリガーを選択](assets/create-tag-rule-trigger-loaded-send.png)
@@ -390,7 +393,7 @@ ht-degree: 2%
 
 これで、Adobe Experience Platform Debuggerを使用してリクエスト内のデータを検証する準備が整いました。
 
-[次 ](validate-with-debugger.md)
+[次へ ](validate-with-debugger.md)
 
 >[!NOTE]
 >
