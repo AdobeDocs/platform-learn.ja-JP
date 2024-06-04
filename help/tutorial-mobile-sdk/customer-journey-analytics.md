@@ -4,9 +4,9 @@ description: Customer Journey Analyticsを使用してモバイルアプリと�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
+source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
 workflow-type: tm+mt
-source-wordcount: '3410'
+source-wordcount: '3291'
 ht-degree: 2%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 2%
 
 モバイルアプリとCustomer Journey Analyticsとのやり取りをレポートおよび分析する方法について説明します。
 
-以前のレッスンで Platform Edge Networkに収集して送信したモバイルアプリのイベントデータは、データストリームで設定されたサービスに転送されます。 を実行した場合 [Experience Platformへのデータの送信](platform.md) このレッスンでは、データはExperience Platformのデータレイクにデータセットとして保存されるようになりました。 その後、そのデータをCustomer Journey Analyticsで使用して、レポートや分析に使用できます。
+以前のレッスンで Platform Edge Networkに収集して送信したモバイルアプリのイベントデータは、データストリームで設定されたサービスに転送されます。 を実行した場合 [Experience Platformへのデータの送信](platform.md) このレッスンでは、データはExperience Platformのデータレイクにデータセットとして保存されるようになりました。 この時点で、データをCustomer Journey Analyticsで使用して、レポートや分析に使用できるようになりました。
 
-Adobe Analyticsとは異なり、Customer Journey Analyticsとは次のような用途です *使用* Experience Platformで作成したデータセットから、アプリがデータを送信するデータです。 Adobe Experience Platform Mobile SDK を使用する場合、データをCustomer Journey Analyticsに直接送信しません。 代わりに、Customer Journey AnalyticsはExperience Platformのデータセットのデータを使用します。
+Adobe Analyticsに反して、Customer Journey Analytics *使用* Experience Platformで作成されたデータセットのデータ。 データはAdobe Experience Platform Mobile SDK を使用してCustomer Journey Analyticsに直接送信されるのではなく、データセットに送信されます。 その後、接続はCustomer Journey Analyticsで設定され、Reporting and Analysis プロジェクトで使用するデータセットを選択します。
 
-チュートリアルのこのレッスンでは、Luma チュートリアルアプリから取得したデータのレポートと分析に焦点を当てています。 Customer Journey Analyticsのユニークな機能の 1 つは、複数のソース（CRM、POS、ロイヤルティアプリケーション、コールセンター）とチャネル（web、モバイル、オフライン）のデータを組み合わせて、カスタマージャーニーに関する深いインサイトを提供することです。 この機能はこのレッスンの範囲外です。 参照： [Customer Journey Analyticsの概要](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) を参照してください。
+チュートリアルのこのレッスンでは、Luma チュートリアルアプリから取得したデータのレポートと分析に焦点を当てています。 Customer Journey Analyticsのユニークな機能の 1 つは、複数のソース（CRM、POS、ロイヤルティアプリケーション、コールセンター）とチャネル（web、モバイル、オフライン）のデータを組み合わせて、カスタマージャーニーに関する深いインサイトを得ることです。 この機能はこのレッスンの範囲外です。 参照： [Customer Journey Analyticsの概要](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) を参照してください。
 
 
 ## 前提条件
 
-組織にCustomer Journey Analyticsをプロビジョニングし、権限を付与する必要があります。 Customer Journey Analyticsへの管理アクセス権が必要です。
+組織にCustomer Journey Analyticsをプロビジョニングし、権限を付与する必要があります。 Customer Journey Analyticsへの管理者アクセス権が必要です。
 
 
 ## 学習目標
@@ -35,7 +35,7 @@ Adobe Analyticsとは異なり、Customer Journey Analyticsとは次のような
 - データビューを作成して、レポートおよび分析用にデータセットからデータを準備します
 - プロジェクトを作成してレポートとビジュアライゼーションを作成し、モバイルアプリからデータを分析できるようにします。
 
-この注文はわざとです。 Customer Journey Analyticsすると、Analysis Workspaceのレポートは、データビューに応じて異なります。 また、データビューは接続に依存します。
+この順序は意図的に行われます。 接続ではデータセットを使用し、データビューでは接続を使用します。
 
 
 ## 接続の作成
@@ -112,7 +112,7 @@ Customer Journey Analytics内の接続は、データセット（およびこれ
 
 データセットからCustomer Journey Analyticsにレコードを追加したら、データビューを作成して、レポートするデータのコンポーネントを定義できます。
 
-データビューはCustomer Journey Analyticsに特有のコンテナで、接続からデータを解釈する方法を決定できます。 標準フィールドとスキーマフィールドは、Analysis Workspaceのコンポーネント（ディメンション、指標）として、接続で定義した任意のデータセットから設定できます。
+データビューはCustomer Journey Analyticsに特有のコンテナで、接続からデータを解釈する方法を決定できます。 Analysis Workspaceで、接続でコンポーネント（ディメンション、指標）として定義した任意のデータセットから、標準フィールドとスキーマフィールドを設定できます。
 
 Customer Journey Analyticsのデータビューは、接続からのデータを適切に設定および定義する際に、非常に柔軟です。 このチュートリアルでは、レポートおよび分析に必要な機能のみを使用します。 参照： [データビュー](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) を参照してください。
 
@@ -131,7 +131,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
       ![CJA データビュー 1](assets/cja-dataview-1.png)
 
-1. が含まれる **[!UICONTROL Components]** タブ **[!UICONTROL Luma アプリ - AEP Mobile SDK チュートリアルデータビュー]**&#x200B;を参照し、モバイルアプリでレポートを作成する際に使用する指標とディメンションを定義します。 デフォルトでは、多数の標準指標およびディメンション（コンポーネントと総称）がデータビューに既に設定されています。 ただし、データビューには、より多くのコンポーネントが必要です。 <br/>以前に定義したスキーマまたは標準スキーマからスキーマフィールドを追加するには（を参照） [スキーマの作成](create-schema.md) レッスン）の場合、コンポーネント（ディメンションまたは指標）として次の操作を行います。
+1. が含まれる **[!UICONTROL Components]** タブ **[!UICONTROL Luma アプリ - AEP Mobile SDK チュートリアルデータビュー]**&#x200B;を参照し、モバイルアプリでレポートを作成する際に使用する指標とディメンションを定義します。 デフォルトでは、多数の標準指標およびディメンション（コンポーネントと総称）がデータビューに既に設定されています。 ただし、データビューには、より多くのコンポーネントが必要です。 <br/>以前に定義したスキーマや標準スキーマからスキーマフィールドを追加するには（を参照） [スキーマの作成](create-schema.md) レッスン）の場合、コンポーネント（ディメンションまたは指標）として次の操作を行います。
 
    1. スキーマフィールドを見つけます。
 
@@ -155,7 +155,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
       ![CJA データ表示コンポーネントの設定](assets/cja-dataview-component-settings.png)
 
-   1. これで、データビューにフィールドを追加し、結果のコンポーネントを設定する方法を理解できたので、以下の表をスキーマフィールドのリストに使用して、指標またはディメンションとして追加します。 の使用 **スキーマパス** 以下のテーブルの列の値で、特定のスキーマフィールドを検索またはトラバースします。 ドラッグ&amp;ドロップしたら、 **コンポーネント設定** コンポーネントの変更など、特定の設定がコンポーネントに必要かどうかを表で確認する列の値 **[!UICONTROL コンポーネント名]** または定義中 **[!UICONTROL 値を含める/除外]**.
+   1. これで、データビューにフィールドを追加し、結果のコンポーネントを設定する方法を理解できたので、以下の表を使用して、スキーマフィールドのリストを追加し、指標またはディメンションとして追加します。 の使用 **スキーマパス** 以下のテーブルの列の値で、特定のスキーマフィールドを検索またはトラバースします。 指標とディメンションを追加したら、 **コンポーネント設定** コンポーネントに特定の設定が必要かどうか（例：そのコンポーネントの **[!UICONTROL コンポーネント名]** または定義中 **[!UICONTROL 値を含める/除外]**.
 
       **指標**
 
@@ -177,9 +177,12 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
       {style="table-layout:auto"}
 
-      「ロケーションイベント」指標のスキーマフィールドがどのように使用されているかを確認します **[!UICONTROL 値を含める/除外]** が含まれるイベントタイプをカウントするには `location`.
+      >[!NOTE]
+      >
+      >「ロケーションイベント」指標のスキーマフィールドがどのように使用されているかを確認します **[!UICONTROL 値を含める/除外]** が含まれるイベントタイプをカウントするには `location`.
 
-      上記の表のすべてのスキーマフィールドを指標コンポーネントとして追加したら、次のデータ表示設定を行います **[!UICONTROL 指標]** 次のようになります。
+
+      のデータビュー設定 **[!UICONTROL 指標]** 上記のテーブルのすべてのスキーマフィールドを指標コンポーネントとして追加したら、次と一致する必要があります。
 
       ![CJA データビュー 4](assets/cja-dataview-4.png)
 
@@ -197,7 +200,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
       {style="table-layout:auto"}
 
-      上記のテーブルのすべてのスキーマフィールドをディメンションコンポーネントとして追加したら、次のデータ表示設定を行います **[!UICONTROL DIMENSION]** 次のようになります。
+      のデータビュー設定 **[!UICONTROL DIMENSION]** 上記のテーブルのすべてのスキーマフィールドをディメンションコンポーネントとして追加した場合は、以下に一致する必要があります。
 
       ![CJA データビュー 4](assets/cja-dataview-5.png)
 
@@ -211,7 +214,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
 ## プロジェクトの作成
 
-Customer Journey Analyticsで Workspace プロジェクトを使用して、レポートとビジュアライゼーションを作成します。 包括的なレポートと魅力的なビジュアライゼーションを作成する方法は多数ありますが、それらはすべて、このチュートリアルの範囲外です。 参照： [Workspace の概要](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) および [新しいプロジェクトの作成](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) を参照してください。
+Workspace プロジェクトは、Customer Journey Analyticsでレポートとビジュアライゼーションを作成するために使用されます。 包括的なレポートと魅力的なビジュアライゼーションを作成する方法は多数ありますが、これはこのチュートリアルの範囲外です。 参照： [Workspace の概要](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) および [新しいプロジェクトの作成](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) を参照してください。
 
 レッスンのこのセクションでは、次の場所でレポートとビジュアライゼーションを表示するプロジェクトを作成します。
 
@@ -250,23 +253,22 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 >
 >   必ずプロジェクトを定期的に保存してください。そうしないと、変更内容が失われます。 を使用して、プロジェクトをすばやく保存できます **[!UICONTROL ctrl + s]** （Windows）または **[!UICONTROL ⌘ （cmd） + s]** （macOS）。
 
-これで、プロジェクトの設定が完了しました。 既に、フリーフォームテーブルを含むフリーフォームパネルがメインキャンバスに存在します。 間もなくコンポーネントをこのテーブルに追加しますが、最初に、フリーフォームパネルで正しいデータビューと正しい期間が使用されていることを確認する必要があります。
-
+これで、プロジェクトの設定が完了しました。 デフォルトでは、フリーフォームテーブルが提供されます。 コンポーネントを追加する前に、フリーフォームパネルで正しいデータビューと期間が使用されていることを確認します。
 
 1. ドロップダウンリストからデータ表示を選択します。 例： **[!UICONTROL Luma アプリ - AEP Mobile SDK チュートリアルデータビュー]**. リストにデータビューが表示されない場合は、次を選択します **[!UICONTROL すべてを表示]** ドロップダウンリストの下部。
    ![CJA プロジェクト 5](assets/cja-projects-5.png)
 
-1. パネルに適した期間を定義するには、デフォルト値を選択します **[!UICONTROL 今月]** ポップアップパネルで、開始日と終了日を定義します。 または **[!UICONTROL プリセット]**、など **[!UICONTROL 過去 6 ヶ月]** を選択して、 **[!UICONTROL 適用]**.
+1. パネルに適した期間を定義するには、デフォルトプリセットを選択します **[!UICONTROL 今月]** カスタムの開始日と終了日を入力するか、 **[!UICONTROL プリセット]** （like **[!UICONTROL 過去 6 ヶ月]**）に設定し、 **[!UICONTROL 適用]**.
    ![CJA プロジェクト 6](assets/cja-projects-6.png)
 
 
 ### アプリの使用状況
 
-アプリの使用状況をレポートします。 アプリのインタラクションと、アプリで使用される画面を登録するために必要なコードをアプリに追加しました（ [トラックイベント](events.md) レッスン）を選択し、このデータについてレポートします。
+アプリの使用状況をレポートする準備が整いました。 アプリのインタラクションと、アプリで使用される画面を登録するために必要なコードをアプリに追加しました（ [トラックイベント](events.md) レッスン）を選択し、このデータについてレポートします。
 
 #### 画面名
 
-最初に、アプリで表示された画面に関するレポートを作成します。
+アプリで表示された画面に関するレポートを作成するには：
 
 1. の名前を変更 **[!UICONTROL フリーフォーム]** パネル先 `App Usage`.
 
@@ -276,7 +278,7 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 
 1. をドラッグ&amp;ドロップ **[!UICONTROL 画面ビュー]** コンポーネントをオン [!UICONTROL _ドロップ a **指標**ここ（または他のコンポーネント_）].
    ![CJA プロジェクト 7](assets/cja-projects-7.png)
-フリーフォームテーブルに、選択した期間の日の画面ビューが表示されるようになりました。 ただし、アプリで使用される様々な画面の画面ビューを表示する必要があります。
+フリーフォームテーブルに、選択した期間の各日の画面ビューが表示されるようになりました。 ただし、アプリで使用される様々な画面ごとの画面ビュー数を表示する必要があります。
 
 1. を表示するには **[!UICONTROL DIMENSION]** コンポーネントのリスト、選択 ![間](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) を削除します ![イベント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL 指標]** コンポーネントパネルからフィルタリングします。
    ![CJA プロジェクト 8](assets/cja-projects-8.png)
@@ -286,15 +288,18 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 1. をドラッグ&amp;ドロップ **[!UICONTROL 画面名]** 上のコンポーネント **[!UICONTROL 日]** ヘッダー。 操作が表示されます ![切り替え](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL 置換]** 寸法の置き換えを示します。
    ![CJA プロジェクト 9](assets/cja-projects-9.png)
 
-最初のレポートの準備が整いました。アプリで定義した様々な画面名の画面ビューを表示します。
+レポート内の最初のフリーフォームテーブルが完成します。
 
 ![CJA プロジェクト 10](assets/cja-projects-10.png)
 
-プロジェクトを保存することを忘れないでください。
+>[!NOTE]
+>
+>続行する前にプロジェクトを保存してください。
+
 
 #### アプリのインタラクション
 
-また、ユーザーによるアプリの操作に関するレポートも作成します。
+次に、フリーフォームテーブルを作成して、ユーザーによるアプリの操作をレポートします。
 
 1. を選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ポップアップから ![フリーフォームテーブル](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) 新しいフリーフォームテーブルを追加する場合
    ![CJA プロジェクト 11](assets/cja-projects-11.png)
@@ -310,7 +315,9 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 
 情報が制限される主な理由は、を実装したことです `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` API 呼び出しは、ログイン画面でのみ行います。 この API 呼び出しをアプリのより多くの画面に追加すると、このレポートはより多くの情報を提供します。
 
-プロジェクトを保存することを忘れないでください。
+>[!NOTE]
+>
+>続行する前にプロジェクトを保存してください。
 
 
 ### Commerce
@@ -340,14 +347,17 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 
 1. をドラッグ&amp;ドロップ **[!UICONTROL 月]** 上部のディメンション **[!UICONTROL 日]** レポートを日次から月次に変更するディメンション。
 
-あなたの **[!UICONTROL Commerce イベント]** レポートの準備が完了し、ユーザーが商品を閲覧した方法、ウィッシュリストに商品を追加した方法、後で商品を保存した方法、または商品を購入した方法を表示できるようになりました。
+Commerceのイベントレポートが完成しました。
+
 ![CJA プロジェクト 16](assets/cja-projects-16.png)
 
-プロジェクトを保存することを忘れないでください。
+>[!NOTE]
+>
+>続行する前にプロジェクトを保存してください。
 
 #### フォールアウト
 
-前のレポートに基づいて、コマースファネルのフォールアウトを視覚化します。製品を表示したユーザーの数が、買い物かごにも製品を追加しました。 また、買い物かごに製品を追加したユーザーのうち、後で使用するためにこれらの製品を保存したユーザーの数。 その他。
+次に、コマースファネルのフォールアウトビジュアライゼーションを作成します。このビジュアライゼーションでは、商品を閲覧したユーザーのうち何人が買い物かごに商品を追加したかを表示し、そこから後で購入するために商品を保存したユーザーの数を表示します。
 
 1. を選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 内 **[!UICONTROL コマース]** パネルと、ポップアップからを選択します ![フォールアウト](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) （フォールアウトビジュアライゼーションを表す）。
 
@@ -357,10 +367,12 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 
 1. について、上記の手順を繰り返します **[!UICONTROL リストへの製品追加]** および **[!UICONTROL 購入数]** ディメンション。
 
-あなたの **[!UICONTROL フォールアウト]** ビジュアライゼーションで、製品のコンバージョンファネルが視覚的に表示されるようになりました。
+フォールアウトビジュアライゼーションレポートが完成しました。
 ![CJA プロジェクト 19](assets/cja-projects-19.png)
 
-プロジェクトを保存することを忘れないでください。
+>[!NOTE]
+>
+>続行する前にプロジェクトを保存してください。
 
 
 ### オファー
@@ -383,10 +395,13 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 
 1. をドラッグ&amp;ドロップ **[!UICONTROL 月]** のディメンション **[!UICONTROL 日]** ディメンションを置き換える列。
 
-これで、アプリでユーザーに表示された月次オファーを示すレポートが作成されました。
+オファーの毎月の概要が完了しました。
+
 ![CJA プロジェクト 20](assets/cja-projects-20.png)
 
-プロジェクトを保存することを忘れないでください。
+>[!NOTE]
+>
+>続行する前にプロジェクトを保存してください。
 
 
 #### 人物に対するオファー
@@ -406,10 +421,13 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 1. コンテキストメニューから、 **[!UICONTROL 分類]** > **[!UICONTROL Dimension]** > **[!UICONTROL オファー名]**. これを選択すると、アクティビティ名ディメンションがオファー名に分類されます。
    ![CJA プロジェクト 20b](assets/cja-projects-20b.png)
 
-これで、選択した期間のこのオファー決定に対して表示される個々のオファーを示すレポートが、アプリのユーザーに作成されました。
+オファーから人物へのレポートが完了しました。
+
 ![CJA プロジェクト 21](assets/cja-projects-21.png)
 
-プロジェクトを保存することを忘れないでください。
+>[!NOTE]
+>
+>続行する前にプロジェクトを保存してください。
 
 
 ### ストアの訪問回数
@@ -438,7 +456,7 @@ Customer Journey Analyticsで Workspace プロジェクトを使用して、レ�
 
 1. テーブル内のすべての行を選択して右クリックし、コンテキストメニューから分類/Dimension/イベントタイプを選択します。
 
-次に、ユーザーがストアの場所の近く内外にいることを示すレポートを作成します（これらの場所を [場所](places.md) レッスン）。
+ストア訪問レポートが完了しました。 次に、ユーザーがストアの場所の近く内外にいることを示すレポートを作成します（これらの場所を [場所](places.md) レッスン）。
 
 ![CJA プロジェクト 23](assets/cja-projects-23.png)
 
