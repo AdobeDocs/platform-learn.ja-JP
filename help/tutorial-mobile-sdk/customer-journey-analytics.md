@@ -4,9 +4,10 @@ description: Customer Journey Analyticsを使用してモバイルアプリと�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
+source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3282'
 ht-degree: 2%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 モバイルアプリとCustomer Journey Analyticsとのやり取りをレポートおよび分析する方法について説明します。
 
-以前のレッスンで Platform Edge Networkに収集して送信したモバイルアプリのイベントデータは、データストリームで設定されたサービスに転送されます。 を実行した場合 [Experience Platformへのデータの送信](platform.md) このレッスンでは、データはExperience Platformのデータレイクにデータセットとして保存されるようになりました。 この時点で、データをCustomer Journey Analyticsで使用して、レポートや分析に使用できるようになりました。
+以前のレッスンで Platform Edge Networkに収集して送信したモバイルアプリのイベントデータは、データストリームで設定されたサービスに転送されます。 を実行した場合 [Experience Platformへのデータの送信](platform.md) この結果、データがExperience Platformデータセットに保存され、Customer Journey Analyticsでレポートや分析に使用できるようになりました。
 
 Adobe Analyticsに反して、Customer Journey Analytics *使用* Experience Platformで作成されたデータセットのデータ。 データはAdobe Experience Platform Mobile SDK を使用してCustomer Journey Analyticsに直接送信されるのではなく、データセットに送信されます。 その後、接続はCustomer Journey Analyticsで設定され、Reporting and Analysis プロジェクトで使用するデータセットを選択します。
 
@@ -155,7 +156,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
       ![CJA データ表示コンポーネントの設定](assets/cja-dataview-component-settings.png)
 
-   1. これで、データビューにフィールドを追加し、結果のコンポーネントを設定する方法を理解できたので、以下の表を使用して、スキーマフィールドのリストを追加し、指標またはディメンションとして追加します。 の使用 **スキーマパス** 以下のテーブルの列の値で、特定のスキーマフィールドを検索またはトラバースします。 指標とディメンションを追加したら、 **コンポーネント設定** コンポーネントに特定の設定が必要かどうか（例：そのコンポーネントの **[!UICONTROL コンポーネント名]** または定義中 **[!UICONTROL 値を含める/除外]**.
+   1. これで、データビューにフィールドを追加し、結果のコンポーネントを設定する方法を理解できたので、以下の表を使用してスキーマフィールドのリストを追加し、指標またはディメンションとして追加します。 の使用 **スキーマパス** 以下のテーブルの列の値で、特定のスキーマフィールドを検索またはトラバースします。 指標とディメンションを追加したら、 **コンポーネント設定** コンポーネントに特定の設定が必要かどうか（例：そのコンポーネントの **[!UICONTROL コンポーネント名]** または定義中 **[!UICONTROL 値を含める/除外]**.
 
       **指標**
 
