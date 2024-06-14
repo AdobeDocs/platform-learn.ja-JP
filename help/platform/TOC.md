@@ -5,10 +5,10 @@ user-guide-description: Experience Platformの多くのコンポーネントに�
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 19%
+source-wordcount: '896'
+ht-degree: 18%
 
 ---
 
@@ -80,6 +80,7 @@ ht-degree: 19%
 + データハイジーン {#data-hygiene}
    + [偽名プロファイルとイベントの有効期限（TTL）](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [データハイジーンのためのデータ準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [データセットとバッチの削除](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [データセットの有効期限](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [プロファイル属性の更新](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + データ取り込み {#data-ingestion}
@@ -167,6 +168,7 @@ ht-degree: 19%
    + [結合ポリシーの作成](/help/platform/profiles/create-merge-policies.md)
    + [結合スキーマの概要](/help/platform/profiles/union-schemas-overview.md)
    + [計算属性の作成](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [プロファイルの削除](/help/platform/profiles/delete-profiles.md)
    + [アップサートを使用した特定の属性の更新](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + プライバシーとセキュリティ {#privacy}
    + [Privacy Serviceの概要](/help/platform/privacy/introduction-to-privacy-services.md)
