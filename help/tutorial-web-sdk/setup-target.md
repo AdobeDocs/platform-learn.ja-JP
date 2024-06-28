@@ -1,19 +1,19 @@
 ---
 title: Platform Web SDK を使用したAdobe Targetの設定
-description: Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 このレッスンは、Web SDK を使用したAdobe Experience Cloudの実装チュートリアルの一部です。
+description: Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
+source-git-commit: e7bb1a7856d04c30da63cc013c2d5a5fea3d718e
 workflow-type: tm+mt
-source-wordcount: '4305'
-ht-degree: 0%
+source-wordcount: '4363'
+ht-degree: 1%
 
 ---
 
 # Platform Web SDK を使用したAdobe Targetの設定
 
-Adobe Experience Platform Web SDK を使用してAdobe Targetを実装する方法について説明します。 エクスペリエンスを配信する方法と、追加のパラメーターを Target に渡す方法について説明します。
+Adobe Experience Platform Web SDK を使用してAdobe Target を実装する方法について説明します。エクスペリエンスを配信する方法と、追加パラメーターを Target に渡す方法について説明します。
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) は、顧客のエクスペリエンスのカスタマイズやパーソナライズに必要なすべてのツールを提供するAdobe Experience Cloud アプリケーションです。Web サイト、モバイルサイト、アプリおよびその他のデジタルチャネルでの収益性を最大化できます。
 
@@ -132,11 +132,11 @@ Platform Web SDK で Target アクティビティを配信するには、事前�
 
    ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk-development.png)
 
-1. 「**[!UICONTROL サービスを追加]**」を選択します。
+1. を選択 **[!UICONTROL サービスを追加]**
    ![データストリームへのサービスの追加](assets/target-datastream-addService.png)
 1. を選択 **[!UICONTROL Adobe Target]** as the **[!UICONTROL サービス]**
 1. 必要に応じて、以下のガイダンスに従って、Target 実装に関するオプションの詳細を入力します。
-1. 「**[!UICONTROL 保存]**」を選択します
+1. を選択 **[!UICONTROL 保存]**
 
    ![ターゲットデータストリーム設定](assets/target-datastream.png)
 
@@ -188,7 +188,7 @@ Visual Personalization の決定は、Adobe Targetの visual experience composer
 * **Activity**:1 つ以上のオーディエンスをターゲットとした一連のエクスペリエンス。 例えば、単純な A/B テストは、2 つのエクスペリエンスを持つアクティビティにすることができます。
 * **経験**:1 つ以上の場所または決定範囲をターゲットとしたアクションのセット。
 * **決定範囲**:Target エクスペリエンスが配信される場所。 古いバージョンの Target の使用に詳しい場合、決定範囲は「mbox」と同等です。
-* **パーソナライズの決定**：サーバーが適用する必要があると判断したアクション。 これらの決定は、オーディエンスの条件や、ターゲットアクティビティの優先順位に基づいて行われます。
+* **Personalization決定**：サーバーが適用する必要があると判断したアクション。 これらの決定は、オーディエンスの条件や、ターゲットアクティビティの優先順位に基づいて行われます。
 * **提案**：サーバーによる決定の結果で、Platform Web SDK 応答で配信されます。 例えば、バナー画像を入れ替えると、提案になります。
 
 ### を更新 [!UICONTROL イベントを送信] アクション
@@ -225,7 +225,7 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 >[!NOTE]
 >
->Google Chrome をブラウザーとして使用している場合、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) は、VEC で編集するために適切にサイトを読み込む必要があります。
+>Google Chromeをブラウザーとして使用している場合、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) は、VEC で編集するために適切にサイトを読み込む必要があります。
 
 1. Adobe Target インターフェイスに移動します
 1. アクティビティ URL の Luma ホームページを使用して、エクスペリエンスのターゲット設定（XT）アクティビティを作成します
@@ -261,13 +261,13 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 >[!CAUTION]
 >
->Google Chrome を使用していて、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) インストール済みです。次のことを確認してください **Target ライブラリの挿入** 設定は無効です。 この設定を有効にすると、追加の Target リクエストが発生します。
+>Google Chromeを使用していて、 [Visual Experience Composer （VEC）ヘルパー拡張機能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) インストール済みです。次のことを確認してください **Target ライブラリの挿入** 設定は無効です。 この設定を有効にすると、追加の Target リクエストが発生します。
 
 1. Adobe Experience Platform Debuggerブラウザー拡張機能を開く
 1. に移動します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) デバッガーを使用して次の操作を行います [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. ページをリロードします。
 1. 「」を選択します **[!UICONTROL ネットワーク]** デバッガー内のツール
-1. フィルター条件 **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. フィルター条件 **[!UICONTROL Web SDK のExperience Platform]**
 1. 最初の呼び出しのイベント行の値を選択
 
    ![Adobe Experience Platform Debugger のネットワーク呼び出し](assets/target-debugger-network.png)
@@ -321,11 +321,57 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 1. の場合 **[!UICONTROL 範囲]** フィールド入力 `homepage-hero`
 1. の場合 **[!UICONTROL セレクター]** フィールド入力 `div.heroimage`
 1. の場合 **[!UICONTROL アクションタイプ]** 選択 **[!UICONTROL HTMLを設定]**
+1. を選択 **[!UICONTROL 変更を保持]**
 
    ![ホームページのヒーローアクションのレンダリング](assets/target-action-render-hero.png)
 
+   アクティビティのレンダリングに加えて、Target を追加呼び出して、フォームベースのアクティビティがレンダリングされたことを示す必要があります。
+
+1. ルールに別のアクションを追加します。 の使用 **コア** 拡張機能と **[!UICONTROL カスタムコード]** アクションの種類：
+1. 次の JavaScript コードを貼り付けます。
+
+   ```javascript
+   var propositions = event.propositions;
+   var heroProposition;
+   if (propositions) {
+      // Find the hero proposition, if it exists.
+      for (var i = 0; i < propositions.length; i++) {
+         var proposition = propositions[i];
+         if (proposition.scope === "homepage-hero") {
+            heroProposition = proposition;
+            break;
+         }xw
+      }
+   }
+   // Send a "display" event
+   if (heroProposition !== undefined){
+      alloy("sendEvent", {
+         xdm: {
+            eventType: "display",
+            _experience: {
+               decisioning: {
+                  propositions: [{
+                     id: heroProposition.id,
+                     scope: heroProposition.scope,
+                     scopeDetails: heroProposition.scopeDetails
+                  }]
+               }
+            }
+         }
+      });
+   }
+   ```
+
+   ![ホームページのヒーローアクションのレンダリング](assets/target-action-fire-display.png)
+
+1. を選択 **[!UICONTROL 変更を保持]**
+
 1. 変更を保存し、ライブラリにビルドします
 1. Luma ホームページを数回読み込みます。これは、新しいを作成するのに十分です。 `homepage-hero` 決定範囲 Target インターフェイスで登録します。
+
+
+
+
 
 ### フォームベースの Experience Composer を使用した Target アクティビティの設定
 
@@ -381,10 +427,10 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 
 1. の下にキーがあります `query` > `personalization` および  `decisionScopes` の値はです `__view__` 以前と同様ですが、現在はもあります `homepage-hero` スコープが含まれます。 この Platform Web SDK 呼び出しでは、VEC およびを使用して行われた変更に関する決定が Target からリクエストされました `homepage-hero` 場所。
 
-   ![`__view__` decisionScope リクエスト](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope リクエスト](assets/target-debugger-view-custom-scope.png)
 
 1. オーバーレイを閉じ、2 番目のネットワーク呼び出しのイベントの詳細を選択します。 この呼び出しは、Target がアクティビティを返した場合にのみ存在します。
-1. Target から返されるアクティビティとエクスペリエンスに関する詳細があることに注意してください。 この Platform Web SDK 呼び出しでは、Target アクティビティがユーザーにレンダリングされたことを示す通知が送信され、インプレッションが増分されます。
+1. Target から返されるアクティビティとエクスペリエンスに関する詳細があることに注意してください。 この Platform Web SDK 呼び出しでは、Target アクティビティがユーザーにレンダリングされたことを示す通知が送信され、インプレッションが増分されます。 これは、以前に追加したカスタムコードアクションアクションによって開始されました。
 
    ![ターゲットアクティビティのインプレッション](assets/target-debugger-activity-impression.png)
 
@@ -397,6 +443,8 @@ Visual Personalization 決定のレンダリング設定では、Target Visual E
 すべての XDM フィールドは、次のように自動的に Target に渡されます [ページのパラメーター](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) または mbox パラメーター。
 
 これらの XDM フィールドの一部は、Target のバックエンドの特別なオブジェクトにマッピングされます。 例： `web.webPageDetails.URL` は、URL ベースのターゲティング条件を作成したり、として自動的に使用できるようになります `page.url` プロファイルスクリプトの作成時はオブジェクト。
+
+また、データオブジェクトを使用してページパラメーターを追加することもできます。
 
 ### 特殊パラメーターおよびデータオブジェクト
 
@@ -440,14 +488,13 @@ XDM オブジェクトの外部で Target に追加データを渡すには、�
    ![ルールにターゲットデータを追加](assets/target-rule-data.png)
 
 1. 変更を保存し、ライブラリにビルドします
-1. について、手順 1 ～ 4 を繰り返します **e コマース – ライブラリの読み込み – 製品詳細変数の設定 – 20** ルール
 
 >[!NOTE]
 >
 >上記の例では、を使用しています。 `data` すべてのページタイプに完全には入力されていないオブジェクト。 タグはこの状況を適切に処理し、未定義の値を持つキーを省略します。 例： `entity.id` および `entity.name` は、製品の詳細以外のページには渡されません。
 
 
-## Personalization 要求と Analytics 要求の分割
+## Personalizationおよび Analytics リクエストの分割
 
 Luma サイトのデータレイヤーは、タグ埋め込みコードの前に完全に定義されます。 これにより、1 回の呼び出しを使用して、パーソナライズされたコンテンツの取得（Adobe Targetからなど）と、分析データの送信（Adobe Analyticsへなど）の両方を行うことができます。
 
@@ -505,7 +552,7 @@ Analytics-on-bottom リクエストを作成するには：
 次に、ログイン状態プロファイル属性が正常に渡されたことを検証します。
 
 1. を選択します。 **[!UICONTROL 訪問者プロファイル]** 属性タイプ
-2. `loggedIn` を検索します。属性がドロップダウンメニューで使用可能な場合、その属性は Target に正しく渡されました。 新しい属性が Target UI で使用可能になるまで数分かかる場合があります。
+2. を検索 `loggedIn`. 属性がドロップダウンメニューで使用可能な場合、その属性は Target に正しく渡されました。 新しい属性が Target UI で使用可能になるまで数分かかる場合があります。
 
    ![Target プロファイルでの検証](assets/validate-in-target-profile.png)
 
@@ -517,7 +564,7 @@ Target Premium を使用している場合は、エンティティデータが�
 
    ![Target カタログ検索での検証](assets/validate-in-target-catalogsearch.png)
 
-### Assurance で検証
+### Assurance での検証
 
 さらに、必要に応じて Assurance を使用して、Target 判定リクエストが正しいデータを取得し、サーバー側の変換が正しく行われていることを確認できます。 Target Decisioning とAdobe Analyticsの呼び出しが別々に送信された場合でも、キャンペーンとエクスペリエンスの情報がAdobe Analyticsの呼び出しに含まれていることを確認することもできます。
 
@@ -529,7 +576,7 @@ Target Premium を使用している場合は、エンティティデータが�
 
 1. 接続方法を選択します。ここでは、を使用します **[!UICONTROL リンクをコピー]**
 1. リンクをコピーして、新しいブラウザータブに貼り付けます
-1. 「**[!UICONTROL 完了]**」をクリックします。
+1. クリック **[!UICONTROL 完了]**
 
    ![Assurance でコピーリンクで接続を検証](assets/validate-in-assurance-copylink.png)
 
