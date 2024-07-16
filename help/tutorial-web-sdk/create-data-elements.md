@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # データ要素の作成
 
-で、コンテンツ、コマース、ID データ用のタグでデータ要素を作成する方法を説明します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). 次に、XDM スキーマのフィールドにAdobe Experience Platform Web SDK 拡張機能の変数データ要素タイプを入力します。
+[Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) で、コンテンツ、コマース、ID データのタグでデータ要素を作成する方法を説明します。 次に、XDM スキーマのフィールドにAdobe Experience Platform Web SDK 拡張機能の変数データ要素タイプを入力します。
 
 ## 学習目標
 
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->このレッスンのデータは、 `[!UICONTROL digitalData]` luma サイト上のデータレイヤー。 データレイヤーを表示するには、開発者コンソールを開いてと入力します。 `[!UICONTROL digitalData]` 使用可能な完全なデータレイヤーを確認するには、![digitalData データレイヤー](assets/data-element-data-layer.png)
+>このレッスンのデータは、Luma サイトの `[!UICONTROL digitalData]` データレイヤーから得られます。 データレイヤーを表示するには、開発者コンソールを開き、`[!UICONTROL digitalData]` と入力して、使用可能な完全なデータレイヤーを表示します。![digitalData データレイヤー ](assets/data-element-data-layer.png)
 
 
 ## データレイヤーのアプローチ
@@ -54,7 +54,7 @@ Adobe Experience Platformのタグ機能を使用して、データレイヤー�
 
 ### データレイヤーへの XDM の実装
 
-このアプローチでは、完全に定義された XDM オブジェクトをデータレイヤーの構造として使用します。 次に、データレイヤー全体をタグの XDM オブジェクトデータ要素にマッピングします。 実装でタグマネージャーを使用していない場合、を使用してアプリケーションから直接 XDM にデータを送信できるので、この方法は理想的です。 [XDM sendEvent コマンド](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). タグを使用する場合は、データレイヤー全体をパススルー JSON オブジェクトとして XDM に取り込むカスタムコードデータ要素を作成できます。 次に、パススルー JSON をイベント送信アクションの XDM オブジェクトフィールドにマッピングします。
+このアプローチでは、完全に定義された XDM オブジェクトをデータレイヤーの構造として使用します。 次に、データレイヤー全体をタグの XDM オブジェクトデータ要素にマッピングします。 実装でタグマネージャーを使用していない場合、[XDM sendEvent コマンド ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data) を使用してアプリケーションから直接 XDM にデータを送信できるので、このアプローチは理想的です。 タグを使用する場合は、データレイヤー全体をパススルー JSON オブジェクトとして XDM に取り込むカスタムコードデータ要素を作成できます。 次に、パススルー JSON をイベント送信アクションの XDM オブジェクトフィールドにマッピングします。
 
 以下に、Adobeのクライアントデータレイヤー形式を使用したデータレイヤーの表示例を示します。
 
@@ -107,7 +107,7 @@ window.adobeDataLayer.push({
 * XDM に送信するデータを更新するために、開発チームと開発サイクルに完全に依存している
 * XDM はデータレイヤーから正確なペイロードを受け取るので、柔軟性は限られています
 * スクレーピング、永続性、迅速なデプロイメントのための機能など、ビルトインのタグ機能は使用できません
-* サードパーティのピクセルに対してデータレイヤーを使用するのが難しい（ただし、これらのピクセルをに移動したい場合があります） [イベント転送](setup-event-forwarding.md)!
+* サードパーティのピクセルにデータレイヤーを使用するのは難しいです（ただし、これらのピクセルを [ イベント転送 ](setup-event-forwarding.md) に移動する必要がある場合があります。
 * データレイヤーと XDM の間でデータを変換できない
 
 ### タグ内のデータレイヤーのマッピング
@@ -129,17 +129,17 @@ window.adobeDataLayer.push({
 >
 > Google データレイヤー
 > 
-> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、 [Google データレイヤーの拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) タグ内。 これにより、IT チームのサポートを依頼しなくても、Adobeテクノロジを迅速に導入できます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
+> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、タグの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)0}Google Data Layer extension} を使用できます。 [これにより、IT チームのサポートを依頼しなくても、Adobeテクノロジを迅速に導入できます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
 
 ### データストリームの XDM へのマッピング
 
-このアプローチでは、と呼ばれるデータストリーム設定に組み込まれた機能を使用します [データ収集のためのデータ準備](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) データレイヤー変数をタグの XDM にマッピングするをスキップします。
+このアプローチでは、[ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) と呼ばれるデータストリーム設定に組み込まれた機能を使用し、タグの XDM へのデータレイヤー変数のマッピングをスキップします。
 
 #### 長所
 
 * 個々の変数を XDM にマッピングできるので、柔軟性があります
-* ～する能力 [新しい値を計算](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) または [変換データタイプ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) データレイヤーから XDM に移動する前に
-* を活用 [マッピング UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) ポイントアンドクリック UI を使用してソースデータのフィールドを XDM にマッピングするには
+* XDM に送信する前にデータレイヤーから [ 新しい値を計算 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) または [ データタイプを変換 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) する機能
+* [ マッピング UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) を活用して、ポイントアンドクリック UI でソースデータのフィールドを XDM にマッピングします
 
 #### 短所
 
@@ -155,38 +155,38 @@ window.adobeDataLayer.push({
 
 ## データ要素を作成してデータレイヤーをキャプチャする
 
-XDM オブジェクトを作成する前に、次のデータ要素のセットを作成します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤー：
+XDM オブジェクトを作成する前に、[Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} データレイヤーに次のデータ要素のセットを作成します。
 
-1. に移動 **[!UICONTROL データ要素]** を選択して、 **[!UICONTROL データ要素を追加]** （または **[!UICONTROL 新しいデータ要素の作成]** タグプロパティに既存のデータ要素がない場合）
+1. **[!UICONTROL データ要素]** に移動し、「**[!UICONTROL データ要素を追加]** （タグプロパティに既存のデータ要素がない場合は「**[!UICONTROL 新しいデータ要素を作成]**」を選択します
 
-   ![データ要素の作成](assets/data-element-create.png)
+   ![ データ要素の作成 ](assets/data-element-create.png)
 
 1. データ要素に「`page.pageInfo.pageName`」と名前を付けます。
-1. の使用 **[!UICONTROL JavaScript 変数]** **[!UICONTROL データ要素タイプ]** luma のデータレイヤーの値を指すようにするには： `digitalData.page.pageInfo.pageName`
+1. **[!UICONTROL JavaScript変数]** **[!UICONTROL データ要素タイプ]** を使用して、Luma のデータレイヤーの値を指すようにします。`digitalData.page.pageInfo.pageName`
 
-1. チェックボックスをオンにする **[!UICONTROL 小文字の値を強制]** および **[!UICONTROL テキストをクリーン]** 大文字と小文字を統一し、余分なスペースを削除するには
+1. 「**[!UICONTROL 小文字を強制]**」および「**[!UICONTROL テキストをクリーン]**」チェックボックスをオンにして大文字と小文字を区別し、不要なスペースを削除します
 
-1. 移動 `None` as the **[!UICONTROL ストレージ期間]** この値はページごとに異なるので、を設定します
+1. この値はページごとに異なるので、`None` を **[!UICONTROL ストレージ期間]** 設定のままにします
 
-1. を選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![ページ名データ要素](assets/data-element-pageName.png)
+   ![ ページ名データ要素 ](assets/data-element-pageName.png)
 
 同じ手順に従って、これらの追加のデータ要素を作成します。
 
-* **`page.pageInfo.server`**  マッピング先
+* **`page.pageInfo.server`** マッピング先
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**  マッピング先
+* **`page.pageInfo.hierarchie1`** マッピング先
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**  マッピング先
+* **`user.profile.attributes.username`** マッピング先
   `digitalData.user.0.profile.0.attributes.username`
 
 * **`user.profile.attributes.loggedIn`** マッピング先
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`product.productInfo.sku`** マッピング先 `digitalData.product.0.productInfo.sku`
+* `digitalData.product.0.productInfo.sku` にマッピングされた **`product.productInfo.sku`**
 <!--digitalData.product.0.productInfo.sku
     ```javascript
     var cart = digitalData.product;
@@ -197,8 +197,8 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
     return cartItem;
     ```
     -->
-* **`product.productInfo.title`** マッピング先 `digitalData.product.0.productInfo.title`
-* **`cart.orderId`** マッピング先 `digitalData.cart.orderId`
+* `digitalData.product.0.productInfo.title` にマッピングされた **`product.productInfo.title`**
+* `digitalData.cart.orderId` にマッピングされた **`cart.orderId`**
 <!--
     ```javascript
     var cart = digitalData.product;
@@ -209,7 +209,7 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
     return cartItem;
     ```
     -->
-* **`product.category`** の使用 **[!UICONTROL カスタムコード]** **[!UICONTROL データ要素タイプ]** 次のカスタムコードを使用して、トップレベルカテゴリのサイト URL を解析します。
+* **[!UICONTROL カスタムコード]** **[!UICONTROL データ要素タイプ]** と次のカスタムコードを使用して、トップレベルカテゴリのサイト URL を解析で **`product.category`** ます。
 
   ```javascript
   var cat = location.pathname.split(/[/.]+/);
@@ -220,7 +220,7 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
   }
   ```
 
-* **`cart.productInfo`** 次のカスタムコードを使用します。
+* 次のカスタムコードを使用して **`cart.productInfo`** きます。
 
   ```javascript
   var cart = digitalData.cart.cartEntries; 
@@ -233,7 +233,7 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
   return cartItem; 
   ```
 
-* **`cart.productInfo.purchase`** 次のカスタムコードを使用します。
+* 次のカスタムコードを使用して **`cart.productInfo.purchase`** きます。
 
   ```javascript
   var cart = digitalData.cart.cartEntries; 
@@ -254,36 +254,36 @@ XDM オブジェクトを作成する前に、次のデータ要素のセット�
 
 >[!CAUTION]
 >
->この [!UICONTROL JavaScript 変数] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素はとして参照します `digitalData.user[0].profile[0].attributes.username` **動作しない**.
+>[!UICONTROL JavaScript変数 ] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素を `digitalData.user[0].profile[0].attributes.username` **として参照することは機能しません**。
 
 ## XDM およびデータオブジェクト用の変数データ要素の作成
 
-作成したデータ要素は、XDM オブジェクト（Platform アプリケーション用）とデータオブジェクト（Analytics、Target およびAudience Manager用）の作成に使用されます。 これらのオブジェクトには、と呼ばれる独自の特別なデータ要素があります **[!UICONTROL 変数]** 作成が非常に簡単なデータ要素。
+作成したデータ要素は、XDM オブジェクト（Platform アプリケーション用）とデータオブジェクト（Analytics、Target およびAudience Manager用）の作成に使用されます。 これらのオブジェクトには、非常に簡単に作成できる **[!UICONTROL 変数]** データ要素と呼ばれる独自の特別なデータ要素があります。
 
-XDM の変数データ要素を作成するには、で作成したスキーマに関連付けます。 [スキーマの設定](configure-schemas.md) レッスン :
+XDM の変数データ要素を作成するには、[ スキーマの設定 ](configure-schemas.md) レッスンで作成したスキーマに関連付けます。
 
-1. を選択 **[!UICONTROL データ要素を追加]**
-1. データ要素に名前を付ける `xdm.variable.content`. タグプロパティを整理しやすくするために、XDM に固有のデータ要素を「xdm」というプレフィックスを付けることをお勧めします
-1. 「」を選択します **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL 拡張機能]**
-1. 「」を選択します **[!UICONTROL 変数]** as the **[!UICONTROL データ要素タイプ]**
-1. を選択 **[!UICONTROL XDM]** as the **[!UICONTROL プロパティ]**
-1. 「」を選択します **[!UICONTROL Sandbox]** スキーマの作成対象
-1. 適切なを選択します **[!UICONTROL スキーマ]**、この場合は `Luma Web Event Data`
-1. を選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL データ要素を追加]**」を選択します。
+1. データ要素に `xdm.variable.content` という名前を付けます。 タグプロパティを整理しやすくするために、XDM に固有のデータ要素を「xdm」というプレフィックスを付けることをお勧めします
+1. **[!UICONTROL Extension]** として **[!UICONTROL Adobe Experience Platform Web SDK]** を選択します
+1. **[!UICONTROL データ要素タイプ]** として **[!UICONTROL 変数]** を選択します。
+1. **[!UICONTROL プロパティ]** として **[!UICONTROL XDM]** を選択します
+1. スキーマを作成した **[!UICONTROL サンドボックス]** を選択します
+1. 適切な **[!UICONTROL スキーマ]** を選択します。ここでは `Luma Web Event Data` です
+1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![XDM 用の変数データ要素](assets/analytics-tags-data-element-xdm-variable.png)
+   ![XDM の変数データ要素 ](assets/analytics-tags-data-element-xdm-variable.png)
 
 次に、データオブジェクトの変数データ要素を作成します。
 
-1. を選択 **[!UICONTROL データ要素を追加]**
-1. データ要素に名前を付ける `data.variable`. タグプロパティを整理しやすくするために、データオブジェクトに固有のデータ要素に「data」というプレフィックスを付けることをお勧めします
-1. 「」を選択します **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL 拡張機能]**
-1. 「」を選択します **[!UICONTROL 変数]** as the **[!UICONTROL データ要素タイプ]**
-1. を選択 **[!UICONTROL データ]** as the **[!UICONTROL プロパティ]**
+1. 「**[!UICONTROL データ要素を追加]**」を選択します。
+1. データ要素に `data.variable` という名前を付けます。 タグプロパティを整理しやすくするために、データオブジェクトに固有のデータ要素に「data」というプレフィックスを付けることをお勧めします
+1. **[!UICONTROL Extension]** として **[!UICONTROL Adobe Experience Platform Web SDK]** を選択します
+1. **[!UICONTROL データ要素タイプ]** として **[!UICONTROL 変数]** を選択します。
+1. **[!UICONTROL data]** を **[!UICONTROL property]** として選択します
 1. このチュートリアルの一部として実装するExperience Cloudソリューションを選択します
-1. を選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![データオブジェクトの可変データ要素](assets/data-element-data-variable.png.png)
+   ![ データオブジェクトの可変データ要素 ](assets/data-element-data-variable.png.png)
 
 
 これらの手順の最後で、次のデータ要素が作成されているはずです。
@@ -304,7 +304,7 @@ XDM の変数データ要素を作成するには、で作成したスキーマ�
 
 >[!TIP]
 >
->今後 [タグルールの作成](create-tag-rule.md) レッスンでは、次のことを学習します **[!UICONTROL 変数]** データ要素を使用すると、タグ内で複数のルールをスタックできます。 **[!UICONTROL 変数アクションタイプを更新]**.
+>今後の [ タグルールの作成 ](create-tag-rule.md) レッスンでは、**[!UICONTROL 変数]** データ要素を使用して、**[!UICONTROL 変数を更新アクションタイプ]** を使用してタグ内で複数のルールをスタックする方法を学習します。
 
 これらのデータ要素を配置すると、タグルールを使用して Platform Edge Networkへのデータ送信を開始する準備が整います。 ただし、最初に、Web SDK を使用して ID を収集する方法について説明します。
 
@@ -312,4 +312,4 @@ XDM の変数データ要素を作成するには、で作成したスキーマ�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

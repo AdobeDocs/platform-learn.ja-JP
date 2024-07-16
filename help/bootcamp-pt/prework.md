@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Prework — ブラジル
-description: Bootcamp - Prework — ブラジル
+title: Bootcamp – 前作業 – ブラジル
+description: Bootcamp – 前作業 – ブラジル
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 ---
 
-# 事前作業
+# 前作業
 
 ## コンテキスト
 

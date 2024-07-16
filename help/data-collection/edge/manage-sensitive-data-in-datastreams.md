@@ -10,13 +10,13 @@ last-substantial-update: 2022-09-28T00:00:00Z
 exl-id: a10c72a2-8ed3-40da-bfdc-b1dc4492f8c4
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 82%
+source-wordcount: '34'
+ht-degree: 26%
 
 ---
 
 # データストリーム内の機密データの管理
 
-データストリームで機密データを管理する方法を説明します。詳しくは、 [datastreams に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja).
+データストリームで機密データを管理する方法を説明します。  詳しくは、[ データストリームのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on)

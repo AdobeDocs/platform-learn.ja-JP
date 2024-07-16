@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # Attribution AI の設定
 
-Attribution AIのインスタンスを作成して、マーケティングチャネルやキャンペーンが及ぼす影響を把握する方法について説明します。 詳しくは、 [Attribution AIドキュメント](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Attribution AIのインスタンスを作成して、マーケティングチャネルやキャンペーンが及ぼす影響を把握する方法について説明します。 詳しくは、[Attribution AIに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on)

@@ -1,20 +1,21 @@
 ---
-title: 購入の合計に対して計算済みの属性を作成する
-description: 計算済み属性を使用して、複数の販売チャネルをまたいでユーザーの購入金額を合計する方法を説明します。
+title: 購入合計の計算属性を作成
+description: 計算属性を使用して、ユーザーが複数の販売チャネルで行った購入金額を合計する方法を説明します。
 feature: Profiles
 role: User
 level: Intermediate
 last-substantial-update: 2023-12-08T00:00:00Z
 jira: KT-14615
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+exl-id: e9c0541c-f674-4f50-8ed4-5048fd3dec5d
+source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
-# 購入の合計に対して計算済みの属性を作成する
+# 購入合計の計算属性を作成
 
-計算済み属性を使用して、複数の販売チャネルをまたいでユーザーの購入金額を合計する方法を説明します。 1 人の顧客が Web サイト、モバイルアプリ、実店舗で買い物をする場合があります。 計算済み属性機能を使用すると、これらのチャネルをまたいで顧客による購入金額を合計し、この合計を使用してオーディエンスや他のパーソナライゼーションを定義できます。 詳しくは、 [計算済み属性 UI ガイド](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?).
+計算属性を使用して、複数の販売チャネルをまたいでユーザーが行った購入額を合計する方法を説明します。 Web サイト、モバイルアプリ、実店舗で 1 人の顧客が購入する場合もあります。 計算済み属性機能を使用すると、これらのチャネルをまたいで顧客の購入額を合計し、この合計を使用してオーディエンスを定義したり、他のパーソナライゼーションを行ったりできます。 詳しくは、[ 計算属性 UI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on)

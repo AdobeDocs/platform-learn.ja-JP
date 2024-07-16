@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Adobe Experience Platform Web SDK タグ拡張機能のインストール
 
-Adobe Experience Platform Web SDK タグ拡張機能をインストールして設定する方法を説明します。 Web SDK を実装する最も簡単な方法は、Adobeのタグマネージャー、タグ（以前の Launch）を使用することです。 Platform Web SDK タグ拡張機能は _唯一のタグ拡張機能_ データをに送信するために必要です _すべてのAdobe Experience Cloud アプリケーション_&#x200B;を含む [Analytics](setup-analytics.md), [ターゲット](setup-target.md), [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platformおよび [Journey Optimizer](setup-web-channel.md)!
+Adobe Experience Platform Web SDK タグ拡張機能をインストールして設定する方法を説明します。 Web SDK を実装する最も簡単な方法は、Adobeのタグマネージャー、タグ（以前の Launch）を使用することです。 Platform Web SDK タグ拡張機能は _唯一のタグ拡張機能_[Analytics](setup-analytics.md) [ ](setup-target.md)、{Target _、[Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform、[Journey Optimizer](setup-web-channel.md) など、{ すべてのAdobe Experience Cloud アプリケーション_ にデータを送信するために必要です。
 
 ## 学習目標
 
@@ -31,51 +31,51 @@ Adobe Experience Platform Web SDK タグ拡張機能をインストールして�
 
 ### タグプロパティの追加
 
-まず、タグプロパティが必要です。 プロパティは、web ページから詳細を収集して様々な場所に送信するために必要なすべての JavaScript、ルール、その他の機能のコンテナです。
+まず、タグプロパティが必要です。 プロパティは、web ページから詳細を収集して様々な場所に送信するために必要なすべてのJavaScript、ルール、その他の機能のコンテナです。
 
 チュートリアル用に新しいタグプロパティを作成します。
 
-1. を開きます [データ収集インターフェイス](https://launch.adobe.com/){target="_blank"}
-1. を選択 **[!UICONTROL タグ]** 左側のナビゲーションで
-1. 「」を選択します **[!UICONTROL 新しいプロパティ]** ボタン
-   ![新しいプロパティを追加](assets/websdk-property-addNewProperty.png)
-1. として **[!UICONTROL 名前]**、と入力します `Web SDK Course` （会社の複数のユーザーがこのチュートリアルを受ける場合は、最後に名前を追加します）
-1. として **[!UICONTROL ドメイン]**、と入力します `enablementadobe.com` （後述）
-1. を選択 **[!UICONTROL 保存]**
-   ![プロパティの詳細](assets/websdk-property-propertyDetails.png)
+1. [ データ収集インターフェイス ](https://launch.adobe.com/){target="_blank"} を開きます。
+1. 左側のナビゲーションで **[!UICONTROL タグ]** を選択します
+1. 「**[!UICONTROL 新しいプロパティ]**」ボタンを選択します
+   ![ 新しいプロパティを追加 ](assets/websdk-property-addNewProperty.png)
+1. **[!UICONTROL 名前]** として、`Web SDK Course` と入力します（会社の複数のユーザーがこのチュートリアルを受講している場合は、最後に名前を追加します）。
+1. **[!UICONTROL ドメイン]** として、`enablementadobe.com` と入力します（後で説明します）。
+1. 「**[!UICONTROL 保存]**」を選択します
+   ![ プロパティの詳細 ](assets/websdk-property-propertyDetails.png)
 
 ## Web SDK 拡張機能の追加
 
 これで、XDM スキーマ、データストリーム、タグプロパティが作成されたので、Platform Web SDK 拡張機能をインストールする準備が整いました。
 
 1. 新しいタグプロパティを開きます
-1. に移動 **[!UICONTROL 拡張機能]** > **[!UICONTROL カタログ]**
-1. を検索 `Adobe Experience Platform Web SDK`
-1. を選択 **[!UICONTROL インストール]**
+1. **[!UICONTROL 拡張機能]**/**[!UICONTROL カタログ]** に移動します。
+1. `Adobe Experience Platform Web SDK` を検索
+1. 「**[!UICONTROL インストール]**」を選択します。
 
-   ![Web SDK 拡張機能のインストール](assets/extension-platform-web-sdk.png)
+   ![Web SDK 拡張機能のインストール ](assets/extension-platform-web-sdk.png)
 
 
 ## 拡張機能のデータストリームへのリンク
 
 ほとんどの設定はデフォルトのままにし、必要に応じて後で更新します。 ここで行う必要があるのは、拡張機能をデータストリームにリンクすることです。
 
-1. 次の下 **[!UICONTROL データストリーム]**&#x200B;を選択し、 **[!UICONTROL リストから選択]** 入力方法
+1. **[!UICONTROL データストリーム]** で、**[!UICONTROL リストから選択]** 入力メソッドを選択します
 1. スキーマ、ID 名前空間、データストリームを作成したサンドボックスを選択します
-1. 前に作成したデータストリームを選択します。 `Luma Web SDK`
-1. を選択 **[!UICONTROL 保存]**
+1. 前に作成したデータストリームを選択します `Luma Web SDK`
+1. 「**[!UICONTROL 保存]**」を選択します
 
    >[!NOTE]
    >
-   > データストリームが見つからない場合は、 [データストリームの設定](configure-datastream.md) レッスンと手順に従って作成します
+   > データストリームが見つからない場合は、[ データストリームの設定 ](configure-datastream.md) のレッスンに移動し、手順に従って作成します
 
-   ![データストリームの選択](assets/extension-luma-web-sdk-datastream-extension.png)
+   ![ データストリーム選択 ](assets/extension-luma-web-sdk-datastream-extension.png)
 
-拡張機能の各セクションについて詳しくは、を参照してください [Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+拡張機能の各セクションについて詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
 
 >[!NOTE]
 >
->で CNAME を設定していませんが [!UICONTROL Edge ドメイン] 設定このレッスンでは、Adobeの web サイトに Platform Web SDK を実装する際に CNAME を使用することをお勧めします。 CNAME 実装には Cookie の有効期間に関するメリットはありませんが、他にもメリットがある場合があります。これらのメリットには、広告ブロッカーや、トラッカーとして分類するドメインにデータが送信されるのを防ぐ一般的でないブラウザーなどが含まれます。 このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
+>このレッスンの [!UICONTROL Edge ドメイン ] 設定では CNAME を設定しませんでしたが、Adobeでは、独自の web サイトに Platform Web SDK を実装する際に CNAME を使用することをお勧めします。 CNAME 実装には Cookie の有効期間に関するメリットはありませんが、他にもメリットがある場合があります。これらのメリットには、広告ブロッカーや、トラッカーとして分類するドメインにデータが送信されるのを防ぐ一般的でないブラウザーなどが含まれます。 このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ Platform Web SDK をインストールし、データストリームに関連付
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -17,10 +17,10 @@ ht-degree: 5%
 
 # AI アシスタント
 
-Real-time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform ベースのアプリケーションで AI アシスタントを使用して実行できることを説明します。 詳しくは、 [AI アシスタントのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home).
+Real-time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform ベースのアプリケーションで AI アシスタントを使用して実行できることを説明します。 詳しくは、[AI アシスタントのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on)
 
 >[!IMPORTANT]
 >
-> この機能を使用するには、ユーザーの AI アスタント権限項目を有効にする必要があります。 詳しくは、 [AI アシスタントのアクセスドキュメント](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access) を参照してください。
+> この機能を使用するには、ユーザーの AI アスタント権限項目を有効にする必要があります。 詳しくは、[AI Assistant のアクセスドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access) を参照してください。

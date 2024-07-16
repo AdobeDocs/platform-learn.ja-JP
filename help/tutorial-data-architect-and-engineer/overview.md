@@ -19,16 +19,16 @@ ht-degree: 0%
 
 <!--5min-->
 
-_データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要_ は、Experience Platformを実際に体験するための最適な出発点です。
+_データアーキテクトおよびデータエンジニア向けAdobe Experience Platform使用の手引き_ は、Experience Platformを実際に体験するための最適な出発点です。
 
 
 <!--How do we address ETL-->
 
 ## 学習内容
 
-データアーキテクトとデータエンジニアが緊密に連携して、Experience Platformの導入を成功させる必要があります。 この実践チュートリアルでは、が実行する主なタスクについて説明します _両方の役割_ したがって、お客様のビジネスに合わせて Platform の実装を開始する方法がわかります。 Experience Platformの主な用語、機能、インターフェイス、API を紹介する演習を通じてガイドされます。 Real-time Customer Data Platform、Customer Journey Analytics、Journey OptimizerなどのAdobe Experience Cloud アプリケーションのお客様も、Platform サービスがこれらのアプリケーションの重要な基盤となるので、このコンテンツが役立つことに気付くでしょう。
+データアーキテクトとデータエンジニアが緊密に連携して、Experience Platformの導入を成功させる必要があります。 この実践チュートリアルでは、_両方の役割_ で実行される主なタスクについて説明するので、自分のビジネスに Platform を実装する方法を理解できます。 Experience Platformの主な用語、機能、インターフェイス、API を紹介する演習を通じてガイドされます。 Real-time Customer Data Platform、Customer Journey Analytics、Journey OptimizerなどのAdobe Experience Cloud アプリケーションのお客様も、Platform サービスがこれらのアプリケーションの重要な基盤となるので、このコンテンツが役立つことに気付くでしょう。
 
-![このチュートリアルで扱う Platform サービスを重点的に解説したAdobe Experience Cloudのマーケティング機能 – ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス](assets/marketecture.png)
+![ このチュートリアルで扱う Platform サービスを重点的に解説したAdobe Experience Cloud マーケテクチャ - ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス ](assets/marketecture.png)
 
 トピックは次のとおりです。
 
@@ -48,9 +48,9 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 ## 前提条件
 
-* が完了しました [Adobe Experience Platform コースの概要](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=ja) Experience League上にあり、Platform の機能に精通している
+* あなたは、Platform の [Adobe Experience Platformの概要 ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=ja) コースを完了し、Experience Leagueの機能を熟知しています
 * Adobe Experience Platform（またはReal-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーション）とデータ収集（以前の Launch）でプロビジョニングされたアカウントにアクセスできます。
-* このアカウントのシステム管理者であるか、持つことができます [ユーザー権限の設定](configure-permissions.md) あなたのために。
+* そのアカウントのシステム管理者であるか、1 つの [ ユーザー権限の設定 ](configure-permissions.md) を持つことができます。
 
 ## このチュートリアルの使用
 
@@ -58,7 +58,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 このチュートリアルで様々な Platform 要素を作成する際は、できるだけ推奨する名前に従ってください。 ただし、組織で複数のユーザーが同時にこのチュートリアルを実行する場合に備えて、カスタマイズした高レベルの要素名がいくつかあります。 例えば、Platform サンドボックスに、単に「Luma チュートリアルプラットフォーム」ではなく「Luma チュートリアルプラットフォーム - Ignatius J Reilly」という名前を付けることができます。
 
-スタックした場合は、最初に手順を再度読んでから、 ![問題を記録](https://experienceleague.adobe.com/assets/img/feedback.svg) 各ページのサイドバーにあるリンクから連絡してください。
+問題が発生した場合は、最初に手順を再度読んでから、各ページのサイドバーにある ![ 問題を記録 ](https://experienceleague.adobe.com/assets/img/feedback.svg) リンクを使用して連絡してください。
 
 ## テクニカルノート
 
@@ -68,7 +68,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 ### API
 
-Platform は、API ファーストで構築されています。 インターフェイスワークフローは、すべての主要な Platform ワークフローに存在し、主に使用されますが、チュートリアルには API 指向の演習がいくつか含まれています。 Adobe Developer コンソールの基本的なプロジェクト設定を順を追って説明し、次の機能を提供します [!DNL Postman] platform API を使い始めるための環境とコレクション。 チュートリアルを完了すると、Platform API を熟知して、独自のデプロイメントで使用できることが役に立つ場合があります。
+Platform は、API ファーストで構築されています。 インターフェイスワークフローは、すべての主要な Platform ワークフローに存在し、主に使用されますが、チュートリアルには API 指向の演習がいくつか含まれています。 Adobe Developer Consoleの基本的なプロジェクト設定を順を追って説明し、Platform API を使い始めるための環境とコレクション [!DNL Postman] 提供します。 チュートリアルを完了すると、Platform API を熟知して、独自のデプロイメントで使用できることが役に立つ場合があります。
 
 ### サードパーティのテクノロジー
 
@@ -79,4 +79,4 @@ Platform は、API ファーストで構築されています。 インターフ
 * 2023 年 6 月：新しい権限ワークフローを含み、OAuth サーバー間 API 資格情報を使用するように更新されました
 
 
-それでは、最初の授業に移りましょう。[権限の設定](configure-permissions.md).
+次に、最初のレッスンである [ 権限の設定 ](configure-permissions.md) に進みます。

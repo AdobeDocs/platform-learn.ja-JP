@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platformを活用したカスタマーエクスペリエンス
-description: 顧客の観点から見たように、Adobe Experience Platformで構築された仮想的なエクスペリエンスを見る。 Experience Platformがリッチで関連性の高いリアルタイムエクスペリエンスを作成する方法を説明します。
+description: お客様の観点から見て、Adobe Experience Platformで構築された架空のエクスペリエンスをご覧ください。 Experience Platformがリッチで関連性の高いリアルタイムエクスペリエンスを作成する方法を説明します。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 jira: KT-4339
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Adobe Experience Platformを活用したカスタマーエクスペリエンス
 
-顧客の観点から見たように、Adobe Experience Platformで構築された仮想的なエクスペリエンスを見る。 Experience Platformがリッチで関連性の高いリアルタイムエクスペリエンスを作成する方法を説明します。
+お客様の観点から見て、Adobe Experience Platformで構築された架空のエクスペリエンスをご覧ください。 Experience Platformがリッチで関連性の高いリアルタイムエクスペリエンスを作成する方法を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on)
 

@@ -26,7 +26,7 @@ Customer Journey Analyticsは、ビジネスインテリジェンスおよびデ
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Customer Journey Analyticsの詳細については、こちらを参照してください [こちら](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Customer Journey Analyticsについて詳しくは、[ こちら ](https://spark.adobe.com/page/t62eiRu9l6iWJ/) を参照してください。
 
 ## 学習内容
 
@@ -39,7 +39,7 @@ Customer Journey Analyticsの詳細については、こちらを参照してく
 ## 前提条件
 
 - Analysis Workspaceに関する知識がある程度必要ですが、必須ではありません
-- Adobe Experience Platformへのアクセス： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Customer Journey Analyticsアプリケーションへのアクセス
 
 >[!IMPORTANT]

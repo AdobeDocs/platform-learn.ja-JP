@@ -1,75 +1,75 @@
 ---
-title: Adobe Experience Cloud Debugger でのタグ環境の切り替え
-description: Experience Cloud Debuggerを使用して様々なタグ埋め込みコードを読み込む方法を説明します。 このレッスンは、「 Web サイトでのExperience Cloudの実装」チュートリアルの一部です。
+title: Adobe Experience Cloud Debugger を使用したタグ環境の切り替え
+description: タグを使用して、様々なExperience Cloud Debugger埋め込みコードを読み込む方法を説明します。 このレッスンは、web サイトでのExperience Cloudの実装チュートリアルの一部です。
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 36%
+source-wordcount: '588'
+ht-degree: 24%
 
 ---
 
-# タグ環境をExperience Cloud Debugger
+# Experience Cloud Debuggerを使用したタグ環境の切り替え
 
-このレッスンでは、 [Adobe Experience Platform Debugger拡張](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) タグプロパティを [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html) を独自のプロパティに追加します。
+このレッスンでは、[Adobe Experience Platform Debugger拡張機能 ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) を使用して、[Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) でハードコードされたタグプロパティを独自のプロパティに置き換えます。
 
-この手法は環境の切り替えと呼ばれ、後で独自の Web サイトでタグを使用する際に役立ちます。 実稼動用 Web サイトをブラウザーに読み込むには、 *開発* タグ環境を使用します。 これにより、通常のコードリリースとは独立し、自信を持ってタグを変更し、検証できます。  結局、マーケティングタグリリースを通常のコードリリースから分離できることは、顧客がタグを最初に使用する主な理由の 1 つです。
+この手法は環境の切り替えと呼ばれるもので、後で自分の web サイトでタグを使用する際に役立ちます。 実稼動 web サイトをブラウザーに読み込むことができますが、その際には *開発* タグ環境を使用します。 これにより、通常のコードリリースとは別に、タグの変更を自信を持って行い、検証することができます。  結局のところ、マーケティングタグリリースと通常のコードリリースの分離は、顧客がそもそもタグを使用する主な理由の 1 つです。
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意が必要な、いくつかの用語の変更がインターフェイスにロールアウトされました。
+>Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
 >
-> * Platform launch（クライアント側）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)**
-> * Platform launchサーバー側が **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * エッジ設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)**
+> * Platform launch（クライアントサイド）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
+> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** になりました
+> * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
 
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
-* デバッガーを使用した代替タグ環境の読み込み
-* デバッガーを使用して、代替タグ環境を読み込んだことを検証する。
+* デバッガーを使用して、代替タグ環境を読み込みます
+* デバッガーを使用して、代替タグ環境が読み込まれていることを検証します
 
 ## 開発環境 URL の取得
 
-1. タグプロパティで、 `Environments` ページ
+1. タグプロパティで、`Environments` ページを開きます
 
-1. **[!UICONTROL 開発]**&#x200B;行で、インストールアイコン![インストールアイコン](images/launch-installIcon.png)をクリックして、モーダルを開きます。
+1. **[!UICONTROL 開発]** 行で、「インストール」アイコン ![ 「インストール」アイコン ](images/launch-installIcon.png) をクリックしてモーダルを開きます
 
 1. コピーアイコン![コピーアイコン](images/launch-copyIcon.png)をクリックして、埋め込みコードをクリップボードにコピーします。
 
-1. **[!UICONTROL 閉じる]**&#x200B;をクリックしてモーダルを閉じます。
+1. 「**[!UICONTROL 閉じる]**」をクリックしてモーダルを閉じます
 
    ![インストールアイコン](images/launch-copyInstallCode.png)
 
-## Luma デモサイトのタグ URL を置き換えます。
+## Luma デモサイトのタグ URL を置換
 
 1. Chrome ブラウザーで [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. を開きます。 [Experience Platformデバッガー拡張機能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) クリックして ![デバッガーアイコン](images/icon-debugger.png) アイコン
+1. ![ デバッガーアイコン ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、[Experience Platformデバッガー拡張機能を開 ](images/icon-debugger.png) ます
 
    ![デバッガーアイコンをクリックする](images/switchEnvironments-openDebugger.png)
 
-1. 現在実装されているタグプロパティは、「概要」タブに表示されます。
+1. 現在実装されているタグプロパティは、「概要」タブに表示されます
 
-   ![Debugger に表示されるタグ環境](images/switchEnvironments-debuggerOnWeRetail-prod.png)
+   ![Debugger に表示されるタグ環境 ](images/switchEnvironments-debuggerOnWeRetail-prod.png)
 
 1. 「ツール」タブに移動します。
-1. **[!UICONTROL Launch 埋め込みコードを置換]**&#x200B;セクションまでスクロールします。
-1. Luma サイトの「Chrome」タブがデバッガーの背後にあることを確認します（このチュートリアルのタブやデータ収集インターフェイスのタブではなく）。  クリップボードにある埋め込みコードを入力フィールドに貼り付けます。
-1. 「luma.enablementadobe.com 全体で適用」機能をオンにして、Luma サイトのすべてのページがタグプロパティにマッピングされるようにします。
-1. 「**[!UICONTROL 保存]**」ボタンをクリックします。
+1. 「Launch 埋め込みコードの置換 **[!UICONTROL のセクションまでスクロールします]**
+1. Luma サイトを含む「Chrome」タブが、（このチュートリアルのタブやデータ収集インターフェイスのタブではなく）デバッガーの背後にフォーカスされていることを確認します。  クリップボードにある埋め込みコードを入力フィールドに貼り付けます。
+1. 「luma.enablementadobe.com 全体で適用」機能をオンにして、Luma サイト上のすべてのページがタグプロパティにマッピングされるようにします
+1. 「**[!UICONTROL 保存]** ボタンをクリックします
 
-   ![Debugger に表示されるタグ環境](images/switchEnvironments-debugger-save.png)
+   ![Debugger に表示されるタグ環境 ](images/switchEnvironments-debugger-save.png)
 
 1. Luma サイトを再読み込みし、デバッガーの「概要」タブを確認します。Launch セクションには、使用中の開発プロパティが表示されます。プロパティ名がユーザーと一致し、環境が「開発」となっていることを確認します。
 
-   ![Debugger に表示されるタグ環境](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Debugger に表示されるタグ環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 >[!NOTE]
 >
->デバッガーはこの設定を保存し、Luma サイトに戻るたびにタグ埋め込みコードを置き換えます。 他の開いているタブでアクセスする他のサイトには影響しません。デバッガーによる埋め込みコードの置き換えを停止するには、デバッガーの「ツール」タブの埋め込みコードの横にある&#x200B;**[!UICONTROL 削除]**&#x200B;をクリックします。
+>Debugger は、Luma サイトに戻るたびにこの設定を保存し、タグ埋め込みコードを置き換えます。 他の開いているタブでアクセスする他のサイトには影響しません。埋め込みコードがデバッガーで置き換えられないようにするには、デバッガーの「ツール」タブで埋め込みコードの横にある **[!UICONTROL 削除]** ボタンをクリックします。
 
-チュートリアルを続ける際には、この方法を使用して、Luma サイトを独自のタグプロパティにマッピングし、タグの実装を検証します。 実稼動用 Web サイトでタグの使用を開始する場合、同じ方法を使用して変更を検証できます。
+チュートリアルを続ける際は、この手法を使用して、Luma サイトを独自のタグプロパティにマッピングし、タグ実装を検証します。 実稼動 web サイトでタグの使用を開始する場合は、これと同じ方法を使用して変更を検証できます。
 
-[次：「Adobe Experience Platform ID サービスの追加」>](id-service.md)
+[次に「Adobe Experience Platform ID サービスを追加」します。](id-service.md)

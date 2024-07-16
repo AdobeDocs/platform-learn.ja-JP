@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platformの概要
-description: Experience Platformの概要と解決するビジネス上の課題を把握します。
+description: Experience Platformの概要と、解決するビジネス上の課題の概要を説明します。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-14T00:00:00Z
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Adobe Experience Platformの概要
 
-Experience Platformの概要と解決するビジネス上の課題を把握します。
+Experience Platformの概要と、解決するビジネス上の課題の概要を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on)
 

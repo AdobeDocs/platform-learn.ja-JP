@@ -1,30 +1,31 @@
 ---
-title: at.js 2.x から Web SDK への Target の移行
-description: Adobe Target実装を at.js 2.x からAdobe Experience Platform Web SDK に移行する方法について説明します。 トピックには、ライブラリの概要、実装の違い、その他の重要な注意事項が含まれます。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: Target を at.js 2.x から Web SDK に移行する
+description: at.js 2.x からAdobe Experience Platform Web SDK にAdobe Target実装を移行する方法を説明します。 トピックには、ライブラリの概要、実装の違い、その他の注目すべきコールアウトが含まれます。
+exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 2%
+source-wordcount: '400'
+ht-degree: 1%
 
 ---
 
-# フォームベースのコンポーザーを使用する Render Target アクティビティ
+# フォームベースのコンポーザーを使用する Target アクティビティのレンダリング
 
-一部の Target 実装では、リージョナル mbox（現在は「スコープ」）を使用して、フォームベースの Experience Composer を使用するアクティビティからコンテンツを配信する場合があります。 at.js Target の実装で mbox を使用する場合は、次の手順を実行する必要があります。
+一部の Target 実装では、地域の mbox （現在は「範囲」）を使用して、フォームベースの Experience Composer を使用するアクティビティからコンテンツを配信する場合があります。 at.js Target 実装で mbox を使用する場合は、次の操作を行う必要があります。
 
-* を使用する at.js 実装の参照を更新します。 `getOffer()` または `getOffers()` を同等の Platform Web SDK メソッドに追加します。
-* トリガーa にコードを追加 `propositionDisplay` イベントを設定して、インプレッションをカウントします。
+* at.js 実装からの参照で、`getOffer()` または `getOffers()` を同等の Platform Web SDK メソッドに使用するもの更新します。
+* インプレッションがカウントされるように、`propositionDisplay` イベントをトリガーにするコードを追加します。
 
-## コンテンツをオンデマンドでリクエストし適用
+## オンデマンドでのコンテンツのリクエストと適用
 
-Target のフォームベースのコンポーザーを使用して作成され、リージョナル mbox に配信されたアクティビティは、Platform Web SDK では自動的にレンダリングできません。 at.js と同様、特定の Target の場所に配信されるオファーは、オンデマンドでレンダリングする必要があります。
+Target のフォームベースのコンポーザーを使用して作成され、地域の mbox に配信されたアクティビティは、Platform Web SDK では自動的にレンダリングできません。 at.js と同様に、特定の Target の場所に配信されるオファーは、オンデマンドでレンダリングする必要があります。
 
 
-+++at.js の使用例 `getOffer()` および `applyOffer()`:
++++`getOffer()` と `applyOffer()` を使用した at.js の例：
 
-1. 実行 `getOffer()` 場所を申し出る
-1. 実行 `applyOffer()` 指定したセレクターにオファーをレンダリングするには
-1. アクティビティのインプレッションは、 `getOffer()` リクエスト
+1. `getOffer()` を実行して、場所のオファーをリクエストします
+1. `applyOffer()` を実行して、指定したセレクターにオファーをレンダリングします
+1. アクティビティのインプレッションは、リク `getOffer()` ストの時点で自動的に増加します
 
 ```JavaScript
 // Retrieve an offer for the homepage-hero location
@@ -48,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++ `applyPropositions` コマンド：
++++`applyPropositions` コマンドを使用した Platform Web SDK と同等のもの：
 
-1. 実行 `sendEvent` 1 つ以上の場所（スコープ）のオファー（提案）を要求するコマンド
-1. 実行 `applyPropositions` コマンドと、各スコープのページにコンテンツを適用する方法を示すメタデータオブジェクト
-1. 実行 `sendEvent` コマンドと eventType `decisioning.propositionDisplay` 印象を追う
+1. コマンド `sendEvent` 実行して、1 つ以上の場所（スコープ）のオファー（提案）をリクエストします
+1. 各範囲 `applyPropositions` ページにコンテンツを適用する方法を指定するメタデータオブジェクトを使用してコマンドを実行します
+1. `decisioning.propositionDisplay``sendEvent`eventType を指定してコマンドを実行し、インプレッションを追跡します
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -91,21 +92,21 @@ alloy("sendEvent", {
 
 +++
 
-Platform Web SDK は、 `applyPropositions` 命令 `actionType` 指定：
+Platform Web SDK は、`applyPropositions` コマンドで `actionType` を指定することで、フォームベースのアクティビティをページに適用する際の制御を強化しています。
 
 | `actionType` | 説明 | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
-| `setHtml` | コンテナのコンテンツをクリアしてから、コンテナにオファーを追加します | はい（常に使用） | ○ |
-| `replaceHtml` | コンテナを削除し、オファーに置き換えます | × | ○ |
+| `setHtml` | コンテナの内容をクリアして、そのコンテナにオファーを追加します | はい（常に使用） | ○ |
+| `replaceHtml` | コンテナを削除してオファーに置き換えます | × | ○ |
 | `appendHtml` | 指定されたセレクターの後にオファーを追加します | × | ○ |
 
-詳しくは、 [専用ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) レンダリングのその他のオプションおよび例については、Platform Web SDK を使用したコンテンツのレンダリングについてを参照してください。
+追加のレンダリングオプションと例については、Platform Web SDK を使用したコンテンツのレンダリングに関する [ 専用のドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) を参照してください。
 
-## 実装例
+## 実装の例
 
-以下の例では、前の節で説明した実装に基づいて構築されます。ただし、 `sendEvent` コマンドを使用します。
+次のページ例は、前の節で説明した実装に基づいて構築されており、`sendEvent` コマンドにスコープを追加するだけです。
 
-+++複数のスコープを持つ Platform Web SDK の例
++++複数の範囲を持つ Platform Web SDK の例
 
 ```HTML
 <!doctype html>
@@ -196,8 +197,8 @@ Platform Web SDK は、 `applyPropositions` 命令 `actionType` 指定：
 </html>
 ```
 
-次に、 [Platform Web SDK を使用して Target パラメーターを渡す](send-parameters.md).
+次に、[Platform Web SDK を使用して Target パラメーターを渡す ](send-parameters.md) 方法について説明します。
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

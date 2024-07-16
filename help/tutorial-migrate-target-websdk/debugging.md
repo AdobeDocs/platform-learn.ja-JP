@@ -1,183 +1,184 @@
 ---
-title: デバッグ | at.js 2.x から Web SDK への Target の移行
-description: Adobe Experience Platform Web SDK を使用したAdobe Target実装のデバッグ方法について説明します。 トピックには、デバッグオプション、ブラウザー拡張機能、at.js と Platform Web SDK の違いが含まれます。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: デバッグ | Target を at.js 2.x から Web SDK に移行
+description: Adobe Experience Platform Web SDK を使用してAdobe Target実装をデバッグする方法について説明します。 デバッグオプション、ブラウザー拡張機能、at.js と Platform Web SDK の違いに関するトピックが含まれています。
+exl-id: 20699551-a708-469a-8980-67586db82787
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1492'
 ht-degree: 3%
 
 ---
 
-# Platform Web SDK での Target のデバッグ
+# Platform Web SDK を使用した Target のデバッグ
 
-Target アクティビティを検証し、Web SDK をデバッグして、実装、コンテンツ配信、オーディエンス資格認定に関する問題のトラブルシューティングをおこないます。 この移行ガイドのページでは、at.js によるデバッグと Platform Web SDK によるデバッグの違いについて説明します。
+Target アクティビティの検証と Web SDK のデバッグによる、実装、コンテンツ配信またはオーディエンスの選定の問題のトラブルシューティング。 移行ガイドのこのページでは、at.js を使用したデバッグと Platform Web SDK のデバッグの違いについて説明します。
 
-次の表に、テストおよびデバッグアプローチの機能とサポートの概要を示します。
+次の表に、テストとデバッグのアプローチの機能とサポートの概要を示します。
 
-| 機能またはツール | at.js のサポート | Platform Web SDK のサポート |
+| 機能またはツール | at.js のサポート | Platform Web SDK サポート |
 | --- | --- | --- |
 | アクティビティ QA URL | ○ | ○ |
-| `mboxDisable` URL パラメーター | ○ | 以下の情報を参照してください： [Target 機能の無効化](#disable-target-functionality) |
-| `mboxDebug` URL パラメーター | ○ | 用途 `alloy_debug` 類似のデバッグ情報のパラメーター |
-| `mboxTrace` URL パラメーター | ○ | Debugger ブラウザー拡張機能のExperience Platform |
-| Adobe Experience Platform Debugger 拡張機能 | ○ | ○ |
-| `alloy_debug` URL パラメーター | 適用なし | ○ |
-| Adobe Experience Platform Assurance | 適用なし | ○ |
+| `mboxDisable` URL パラメーター | ○ | 詳しくは、以下の情報を参照してください [Target 機能の無効化 ](#disable-target-functionality) |
+| `mboxDebug` URL パラメーター | ○ | 同様 `alloy_debug` デバッグ情報にはパラメーターを使用してください |
+| `mboxTrace` URL パラメーター | ○ | Experience Platformデバッガーブラウザー拡張機能の使用 |
+| Adobe Experience Platform Debugger拡張機能 | ○ | ○ |
+| `alloy_debug` URL パラメーター | 該当なし | ○ |
+| Adobe Experience Platform Assurance | 該当なし | ○ |
 
-## Adobe Experience Platform Debugger ブラウザー拡張機能
+## Adobe Experience Platform Debuggerブラウザー拡張機能
 
-Chrome および Firefox 用Adobe Experience Platform Debugger 拡張機能は Web ページを調べ、Adobe Experience Cloud実装の検証を支援します。
+Chromeおよび Firefox 用のAdobe Experience Platform Debugger拡張機能は web ページを調べ、Adobe Experience Cloud実装の検証に役立ちます。
 
-Web ページ上で Platform Debugger を実行できます。拡張機能は公開データにアクセスできます。 Target トレース情報などの拡張機能を使用して非公開データにアクセスするには、 **[!UICONTROL ログイン]** リンク。
+任意の web ページで Platform Debugger を実行できます。拡張機能は公開データにアクセスできます。 Target トレース情報などの拡張機能を使用して非公開データにアクセスするには、「**[!UICONTROL ログイン]**」リンクを介してExperience Cloudの認証を受ける必要があります。
 
-### Adobe Experience Platform Debugger の取得とインストール
+### Adobe Experience Platform Debuggerの取得とインストール
 
-Adobe Experience Platform Debugger は、Google Chrome または Mozilla Firefox ブラウザーにインストールできます。 次の適切なリンクに従って、目的のブラウザーに拡張機能をインストールします。
+このAdobe Experience Platform Debuggerは、Google Chromeまたは Mozilla Firefox ブラウザーにインストールできます。 次の適切なリンクに従って、目的のブラウザーに拡張機能をインストールします。
 
 - [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 - [Firefox](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
 
-Chrome 拡張機能または Firefox アドオンをインストールすると、アイコン (![](assets/start-icon.jpg)) が拡張機能バーに追加されます。 このアイコンを選択して、拡張機能を開きます。
+Chrome拡張機能または Firefox アドオンをインストールすると、拡張機能バーにアイコン（![](assets/start-icon.jpg)）が追加されます。 このアイコンを選択して、拡張機能を開きます。
 
-詳しくは、該当するガイドを参照してください。 [Adobe Experience Platform Debugger 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) およびすべてのAdobeWeb アプリケーションのデバッグ方法。
+[Adobe Experience Platform Debugger拡張機能の詳細と、すべてのAdobe web アプリケーションをデバッグする方法については ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 専用ガイドを参照してください。
 
-## QA URL を使用した Target アクティビティのプレビュー
+## QA URL で Target アクティビティをプレビューする
 
-at.js と Platform Web SDK の両方で、Target QA URL を使用して Target アクティビティをプレビューできます。また、両方の実装方法で同じ QA 機能がサポートされています。
+at.js と Platform Web SDK の両方で、Target QA URL を使用して Target アクティビティをプレビューできます。また、両方の実装方法で同じ QA 機能をサポートしています。
 
-at.js または Platform Web SDK に対して、という名前のブラウザーに特定の Cookie を書き込むよう指示することで、Target QA URL が機能します。 `at_qa_mode`. この cookie は、特定のアクティビティおよびエクスペリエンスの認定を強制するために使用されます。
+at.js または Platform Web SDK に対し、`at_qa_mode` という名前のブラウザーに特定の Cookie を書き込むよう指示することで、Target QA URL が機能する。 この cookie は、特定のアクティビティおよびエクスペリエンスの選定を強制するために使用されます。
 
 >[!CAUTION]
 >
->Target QA モード機能は、Platform Web SDK バージョン2.13.0以降でサポートされます。 Target QA モードは、 `xdm.web.webPageDetails.URL` 渡された値 `sendEvent` 呼び出し。 この値に対してすべての文字の小文字を変更した場合、Target QA モードが正しく動作しない可能性があります。
+>Target の QA モード機能は、Platform Web SDK バージョン 2.13.0 以降でサポートされています。 ターゲット QA モードは、`sendEvent` 呼び出しで渡された `xdm.web.webPageDetails.URL` 値に基づいて有効になります。 この値を変更（すべての文字を小文字にするなど）すると、Target QA モードが正しく動作しなくなる可能性があります。
 
-詳しくは、該当するガイドを参照してください。 [Target アクティビティ QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+[ ターゲットアクティビティ QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) について詳しくは、専用ガイドを参照してください。
 
-## Target の実装のデバッグ
+## Target 実装のデバッグ
 
-次の表に、at.js と Platform Web SDK のデバッグ戦術の違いを示します。
+次の表に、at.js と Platform Web SDK デバッグ戦術の違いの概要を示します。
 
-| at.js の機能 | Platform Web SDK：対応する SDK |
+| at.js の機能 | Platform Web SDK の同等機能 |
 | --- | --- |
-| **Mbox 無効化** - Target の取得およびレンダリングを無効にして、Target とのやり取りなしでページが壊れているかどうかを確認します<br><br>次の URL パラメーターを含むページを読み込みます。 `mboxDisable=true` | 直接同等のものはありません。 ブラウザーの開発者ツールを使用して、すべての Platform Web SDK リクエストをブロックできます。 |
-| **Mbox のデバッグ**  — ブラウザーのコンソールにすべての at.js アクションを記録して、レンダリングの問題のトラブルシューティングに役立てます。<br><br>次の URL パラメーターを含むページを読み込みます。 `mboxDebug=true` | **Alloy デバッグ** :Target のパーソナライゼーションアクションなど、SDK の詳細なアクションを記録します。<br><br>次の URL パラメーターを含むページを読み込みます。 `alloy_debug=true`  <br /><br />または、 `alloy("setDebug", { "enabled": true });` （デベロッパーコンソール内） |
-| **ターゲットトレース** - Target UI で生成された mbox トレーストークンを使用すると、判定プロセスに関係する詳細を含むトレースオブジェクトを、以下で使用できます。 `window.___target_trace` オブジェクト。<br><br>次の URL パラメーターを含むページを読み込みます。 `mboxTrace=window&authorization={TOKEN}` | Adobe Experience Platform Debugger 拡張機能または Platform Assurance を使用します。 |
+| **mbox 無効化** - Target は取得とレンダリングから無効にし、Target のインタラクション <br><br>URL パラメーター `mboxDisable=true` を含むページの読み込みを行わずにページが壊れているかどうかを確認します | 直接同等の手段はありません。 ブラウザーの開発者ツールを使用して、すべての Platform Web SDK リクエストをブロックできます。 |
+| **mbox デバッグ** - ブラウザーのコンソールにすべての at.js アクションを記録して、レンダリングの問題のトラブルシューティングに役立てます <br><br>URL パラメーターを含むページを読み込み：`mboxDebug=true` | **Alloy のデバッグ** - Target のパーソナライゼーションアクションを含むがこれに限定されない、SDK の詳細なアクションをログに記録します。<br><br>URL パラメーターを使用してページを読み込む：`alloy_debug=true` <br /><br /> または、開発者コンソールで `alloy("setDebug", { "enabled": true });` を実行します |
+| **Target トレース** - Target UI で生成された mbox トレーストークンを使用すると、決定プロセスに関与した詳細を含むトレースオブジェクトをオブジェクトの下で使用でき `window.___target_trace` す。<br><br>URL パラメーターを持つページを読み込む：`mboxTrace=window&authorization={TOKEN}` | Adobe Experience Platform Debugger 拡張機能または Platform Assurance を使用します。 |
 
 >[!NOTE]
 >
->上記の at.js のデバッグ機能はすべて、Adobe Experience Platform Debugger の機能強化で使用できます。
+>上記のすべての at.js デバッグ機能は、Adobe Experience Platform Debuggerの拡張機能で利用できます。
 
 ### Target 機能の無効化
 
-Platform Web SDK には、現在、Target 応答を選択的に抑制する機能はありません。 ただし、ブラウザーの開発者ツール、様々なブラウザー拡張機能、またはサードパーティアプリケーションを使用して、Platform Web SDK リクエストを抑制することができます。 例えば、Google Chrome で Platform Web SDK をブロックするには、次のようにします。
+Platform Web SDK には、現在、Target 応答を選択的に抑制する機能がありません。 ただし、ブラウザーの開発者ツール、様々なブラウザー拡張機能、サードパーティアプリケーションを使用して、Platform Web SDK リクエストを抑制することは可能です。 例えば、Google Chromeで Platform Web SDK をブロックするには、次の手順を実行します。
 
-1. ページ上の任意の場所を右クリックし、「 」を選択します。 **Inspect**
-1. を選択します。 **ネットワーク** タブ
-1. 文字列でフィルター `//ee//` :Platform Web SDK 呼び出しのみを表示します
-1. ページを再読み込み
-1. フィルターを適用したネットワークリクエストの 1 つを右クリックし、「 」を選択します。 **要求ドメインをブロック**
-1. ページを再読み込みし、ネットワーク要求がブロックされていることを確認します。
-1. デバッグが終了したら、ブロックされたネットワークリクエストを右クリックし、「 」を選択します。 **ブロック解除**&#x200B;または、デベロッパーツールパネルを閉じます。
+1. ページ上を右クリックして、「**Inspect**」を選択します
+1. 「**ネットワーク**」タブを選択します。
+1. 文字列 `//ee//` でフィルタリングして、Platform Web SDK 呼び出しのみを表示します
+1. ページをリロードします。
+1. フィルタリングされたネットワークリクエストの 1 つを右クリックし、「**リクエストドメインをブロック**」を選択します。
+1. ページをリロードし、ネットワークリクエストがブロックされていることを確認します
+1. デバッグが完了したら、ブロックされたネットワークリクエストを右クリックして「**ブロック解除**」を選択するか、開発者ツールパネルを閉じます
 
-### デバッグログを表示
+### デバッグログの表示
 
-を使用した at.js のデバッグログ `mboxDebug=true` URL パラメーターは、各 Target リクエスト、応答、およびページへのコンテンツのレンダリング試行に関する詳細情報を表示します。 Platform Web SDK は、 `alloy_debug=true` URL パラメーター。
+`mboxDebug=true` URL パラメーターを使用した at.js のデバッグログには、各 Target リクエスト、応答、およびコンテンツをページにレンダリングしようとする試みに関する詳細情報が表示されます。 Platform Web SDK には、`alloy_debug=true` URL パラメーターを使用した同様のデバッグログがあります。
 
-| 記録された情報 | at.js (`mboxDebug=true`) | Platform Web SDK (`alloy_debug=true`) |
+| ログ情報 | at.js （`mboxDebug=true`） | Platform Web SDK （`alloy_debug=true`） |
 | --- | --- | --- |
 | フィルタリング用のログプレフィックス | `AT:` | `[alloy]` |
-| ページ読み込み要求の詳細 | ○ | ○ |
-| mbox またはスコープのリクエストの詳細 | ○ | ○ |
-| リクエストステータス | ○ | ○ |
+| ページ読み込みリクエストの詳細 | ○ | ○ |
+| mbox またはスコープリクエストの詳細 | ○ | ○ |
+| リクエストのステータス | ○ | ○ |
 | 応答の詳細 | ○ | ○ |
 | レンダリングステータス | 成功とエラー | エラーのみ |
 | レンダリングの詳細 | ○ | ○ |
 
 >[!NOTE]
 >
->at.js および Platform Web SDK のデバッグログは、同様の詳細レベルを提供しますが、Web SDK は無効なセレクターによるレンダリングエラーのみを通知する点が大きな例外です。 現在、デバッグログは、レンダリングが成功したことを確認しません。
+>at.js および Platform Web SDK のデバッグログは、同様の詳細レベルを提供しますが、注目すべき例外は、Web SDK が無効なセレクターに起因するレンダリングエラーのみを通知することです。 デバッグログは、現在のところ、レンダリングが成功したことを確認するものではありません。
 
-### Target トレースを表示
+### ターゲットトレースの表示
 
-Target トレースは、アクティビティの選定と訪問者の Target プロファイルに関する詳細情報を提供します。 Target トレースには公開されていない情報が含まれているので、トレースを表示するには、Adobe Experience Platform Debugger ブラウザー拡張ウィンドウ内で認証をおこなう必要があります。
+Target トレースは、アクティビティ選定および訪問者の Target プロファイルに関する詳細情報を提供します。 Target トレースには、公開されていない情報が含まれているので、それらを表示するには、認証トークンまたはAdobe Experience Platform Debuggerブラウザー拡張機能ウィンドウ内での認証が必要です。
 
-| Target トレースメソッド | at.js | Platform Web SDK |
+| ターゲットトレース方法 | at.js | Platform Web SDK |
 | --- | --- | --- |
 | `mboxTrace` URL パラメーター | ○ | × |
-| Adobe Experience Platform Debugger ブラウザー拡張機能 | ○ | ○ |
+| Adobe Experience Platform Debuggerブラウザー拡張機能 | ○ | ○ |
 | Adobe Experience Platform Assurance | × | ○ |
 
 
-Adobe Experience Platform Debugger で Platform Web SDK Target トレースを表示するには、以下の手順を実行します。
+Adobe Experience Platform Debuggerで Platform Web SDK Target トレースを表示するには、次の手順を実行します。
 
-1. Platform Web SDK で Target が実装されているサイトのページに移動します。
-1. アイコン (![](assets/start-icon.jpg)) をブラウザーナビゲーションバーに表示します。
-1. を選択します。 **[!UICONTROL ログイン]** リンク
-1. Adobe Experience Cloudログインを使用した認証
-1. を選択します。 **[!UICONTROL ログ]** 左側のタブ
-1. を選択します。 **[!UICONTROL Edge]** 上部のタブ
-1. オプションで、デバッグセッションに名前を付け、 **[!UICONTROL 接続]** ボタン
-1. ページを再読み込みし、エッジネットワークでのやり取りに関する詳細情報がログに記録されます
-1. 説明の「Target Traces」で始まるログエントリにフォーカスし、を選択します。 **[!UICONTROL 表示]** Target のトレースの詳細を表示するには
+1. Platform Web SDK で Target が実装されているページに移動します
+1. ブラウザーのナビゲーションバーのアイコン（![](assets/start-icon.jpg)）を選択して、Adobe Experience Platform Debugger拡張機能を開きます
+1. **[!UICONTROL ログイン]** リンクを選択します
+1. Adobe Experience Cloud ログインを使用した認証
+1. 左側の「**[!UICONTROL ログ]**」タブを選択します
+1. 上部の「**[!UICONTROL Edge]**」タブを選択します
+1. 必要に応じて、デバッグセッションに名前を付け、「**[!UICONTROL 接続]**」ボタンをクリックします
+1. ページをリロードすると、ログにエッジネットワークインタラクションに関する詳細情報が表示されます
+1. 説明に「Target Traces」で始まるログエントリに焦点を当て、「表示 **[!UICONTROL を選択して Target Trace の詳細を確認し]** す
 
-![Adobe Experience Platform Debugger を使用して Target トレースを表示する方法](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
+![Adobe Experience Platform Debuggerで Target トレースを表示する方法 ](assets/target-trace-debugger.png){zoomable="yes"}
 
-選択後 **[!UICONTROL 表示]**&#x200B;に値を指定すると、オーバーレイが表示され、リクエストに関連する次の情報を確認できます。
+「**[!UICONTROL 表示]**」を選択すると、オーバーレイが表示され、リクエストに関連する次の情報を確認できます。
 
 - 一致したアクティビティ
-- 不一致のアクティビティ
+- 比類のないアクティビティ
 - リクエストの詳細
 - プロファイルスナップショット
 
-該当する [Target コンテンツ配信のデバッグ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) を参照してください。
+Target のトレースについて詳しくは、[Target コンテンツ配信のデバッグ ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) に関する専用ガイドを参照してください。
 
-### アシュランスを使用したトラブルシューティング
+### Assurance を使用したトラブルシューティング
 
-Target のトレース情報は、Adobe Experience Platform Debugger ブラウザー拡張機能と、Assurance アプリケーション（旧称 Project Griffon）の両方で表示できます。 アシュランス内で Target トレースを表示するには、以下の手順を実行します。
+Target Trace 情報は、Adobe Experience Platform Debuggerブラウザー拡張機能と Assurance アプリケーション（旧称 Project Griffon）内の両方で表示できます。 Assurance 内のターゲット・トレースを表示するには、次の手順を実行します。
 
-1. Adobe Experience Platform Debugger ブラウザー拡張機能を開き、前述のようにリモートデバッグセッションに接続します。
-1. デバッグログの上にあるセッション名を含むリンクを選択します
-1. Platform Assurance は、実装のデータストリームで設定されたすべてのAdobeアプリケーションの詳細なログを読み込んで表示します
-1. 次の条件でログをフィルター `adobe.target`
-1. タイプのログエントリを選択 `com.adobe.target.trace`
-1. ペイロードの詳細を展開し、以下の情報を表示します。 `context > targetTrace`
+1. Adobe Experience Platform Debuggerブラウザー拡張機能を開き、前述のようにリモートデバッグセッションを接続します
+1. デバッグログの上にある、セッション名を持つリンクを選択します
+1. Platform Assurance は、データストリームで設定されたすべてのAdobeアプリケーションに関する詳細なログを読み込んで表示します
+1. `adobe.target` でログをフィルタリングします
+1. タイプが「`com.adobe.target.trace`」のログエントリを選択します
+1. ペイロードの詳細を展開し、`context > targetTrace` の下の情報を表示します
 
-![アシュランスを使用して Target トレースを表示する方法](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
+![Assurance でターゲットトレースを表示する方法 ](assets/target-trace-assurance.png){zoomable="yes"}
 
-## ネットワークリクエストと応答の検証
+## ネットワーク要求と応答を調べる
 
-Platform Web SDK のリクエストペイロードと応答 `sendEvent` 呼び出しは at.js とは異なります。 以下の概要は、ブラウザーの開発者ツールを使用してネットワーク呼び出しを調べる際に、リクエストと応答の構造を理解するのに役立ちます。
+Platform Web SDK `sendEvent` 呼び出しのリクエストペイロードと応答は、at.js とは異なります。 以下の概要は、ブラウザーの開発者ツールを使用してネットワーク呼び出しを調べる際に、リクエストと応答の構造を理解するのに役立ちます。
 
 ### コンテンツリクエストペイロード
 
-![Platform Web SDK ペイロードの Target 固有の要素](assets/target-payload.png){zoomable=&quot;yes&quot;}
+![Platform Web SDK ペイロードの Target 固有の要素 ](assets/target-payload.png){zoomable="yes"}
 
-- プロファイル、エンティティ、およびその他の非 mbox パラメーターは、 `data.__adobe.target`
-- 決定範囲は、 `query.personalization.decisionScopes`
-- ダウンストリームの mbox パラメーターにマッピングされる XDM データは、以下のイベント配列に配置されます。 `xdm`
+- プロファイル、エンティティ、その他の mbox 以外のパラメーターは、`data.__adobe.target` のイベント配列で渡されます
+- 決定範囲は、`query.personalization.decisionScopes` の下のイベント配列にあります
+- mbox パラメーターのダウンストリームにマッピングされる XDM データは、`xdm` の下のイベント配列にあります
 
 ### コンテンツ応答本文
 
-![Platform Web SDK の応答本文の Target 固有の要素](assets/target-response.png){zoomable=&quot;yes&quot;}
+![Platform Web SDK 応答本文の Target 固有の要素 ](assets/target-response.png){zoomable="yes"}
 
-- Platform Web SDK は、 `handle` object
-- この `personalization:decisions` アクションは、Target またはoffer decisioningからの応答を示します
-- ターゲットの提案は配列として表され、それぞれにはプレフィックスが付いた一意の提案 ID が付きます。 `AT:`
-- 決定範囲とアクティビティの詳細は、提案配列内に配置されます
-- オファーの詳細は、 `items` 配列の下 `data`
-- レスポンストークンは、 `items` 配列の下 `meta`
+- Platform Web SDK は、`handle` オブジェクト下のすべてのAdobeアプリケーションに対するアクションを返します
+- `personalization:decisions` アクションは、ターゲットまたはoffer decisioningからの応答を示します
+- ターゲットの提案は配列として提示され、それぞれに `AT:` というプレフィックスが付いた一意の提案 ID が割り当てられます
+- 決定範囲とアクティビティの詳細は、提案の配列内にあります
+- オファーの詳細は、`data` の下の `items` 配列にあります
+- 応答トークンは、`meta` の下の `items` 配列にあります
 
-### 提案イベントのペイロード
+### 提案イベントペイロード
 
-![ターゲットの提案イベントの例](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
+![Target の提案イベントの例 ](assets/target-proposition-event.png){zoomable="yes"}
 
-- Target 固有の SDK イベントは、 `decisioning.propositionDisplay` 印象や `decisioning.propositionInteract` クリックなどのインタラクションの場合
-- 提案イベントの詳細は、のイベント配列にあります。 `xdm._experience.decisioning`
-- 表示またはインタラクションイベントの提案 ID は、Target から返されるコンテンツの提案 ID と一致する必要があります
+- Target 固有の SDK イベントは、インプレッションの場合は `decisioning.propositionDisplay`、クリックなどのインタラクションの場合は `decisioning.propositionInteract` です
+- 提案イベントの詳細は、`xdm._experience.decisioning` の下のイベント配列にあります
+- ディスプレイまたはインタラクションイベントの提案 ID は、Target から返されるコンテンツの提案 ID と一致する必要があります
 
 
-おめでとうございます。チュートリアルの最後に達しました。 Adobe Target実装を Web SDK に移行していただき、誠にありがとうございます。
+チュートリアルが終了しました。 Adobe Target実装の Web SDK への移行にご協力ください。
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

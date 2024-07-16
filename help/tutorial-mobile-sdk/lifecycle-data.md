@@ -1,5 +1,5 @@
 ---
-title: Platform Mobile SDK でライフサイクルデータを収集する
+title: Platform Mobile SDK を使用したライフサイクルデータの収集
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
@@ -14,24 +14,24 @@ ht-degree: 2%
 
 モバイルアプリでライフサイクルデータを収集する方法を説明します。
 
-Adobe Experience Platform Mobile SDK Lifecycle 拡張機能を使用すると、モバイルアプリからの収集のライフサイクルデータを有効にします。 Adobe Experience Platform Edge Network 拡張機能は、このライフサイクルデータを Platform Edge Network に送信し、そこで、データストリーム設定に従って、他のアプリケーションやサービスに転送されます。 詳しくは、 [ライフサイクル拡張](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) （製品ドキュメント内）。
+Adobe Experience Platform Mobile SDK ライフサイクル拡張機能を使用すると、モバイルアプリからライフサイクルデータを収集できます。 Adobe Experience Platform Edge Network拡張機能は、このライフサイクルデータを Platform Edge Networkに送信し、そこでデータストリーム設定に従って他のアプリケーションやサービスに転送されます。 [ ライフサイクル拡張 ](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) について詳しくは、製品ドキュメントを参照してください。
 
 
 ## 前提条件
 
-* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。 このレッスンの一環として、既にライフサイクル監視を開始しています。 詳しくは、 [SDK のインストール — AppDelegate の更新](install-sdks.md#update-appdelegate) をクリックしてレビューします。
-* Assurance 拡張機能を登録しました ( [前のレッスン](install-sdks.md).
+* SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。 このレッスンでは、すでにライフサイクルの監視を開始しています。 確認するには、[SDK のインストール - AppDelegate の更新 ](install-sdks.md#update-appdelegate) を参照してください。
+* [ 前のレッスン ](install-sdks.md) で説明したように、Assurance 拡張機能を登録しました。
 
-## 学習内容
+## 学習目標
 
-このレッスンでは、次の操作を実行します。
+このレッスンでは、次の操作を行います。
 
 <!--
 * Add lifecycle field group to the schema.
 * -->
-* アプリがフォアグラウンドとバックグラウンドの間を移動する際に正しく開始/一時停止することで、正確なライフサイクル指標を有効にします。
-* アプリから Platform Edge ネットワークにデータを送信します。
-* アシュランスで検証します。
+* アプリがフォアグラウンドとバックグラウンドの間を移動するときに正しく開始/一時停止することで、正確なライフサイクル指標を有効にします。
+* アプリから Platform Edge Networkにデータを送信します。
+* Assurance で検証します。
 
 <!--
 ## Add lifecycle field group to schema
@@ -51,78 +51,78 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## 実装の変更
 
-これで、プロジェクトを更新して、ライフサイクルイベントを登録できます。
+これで、プロジェクトを更新してライフサイクルイベントを登録できます。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** 」をクリックします。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** に移動します。
 
-1. アプリが起動されたときにバックグラウンド状態から再開されている場合、iOSは、 `sceneWillEnterForeground:` delegate メソッドと、ライフサイクル開始イベントをトリガーする場所です。 このコードを `func sceneWillEnterForeground(_ scene: UIScene)`:
+1. アプリケーションがバックグラウンドステートから再開される場合、iOSがローンチ時に `sceneWillEnterForeground:` デリゲートメソッドを呼び出す可能性があります。ここで、ライフサイクル開始イベントをトリガーにします。 `func sceneWillEnterForeground(_ scene: UIScene)` に次のコードを追加します。
 
    ```swift
    // When in foreground start lifecycle data collection
    MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. アプリがバックグラウンドに入ると、アプリの `sceneDidEnterBackground:` delegate メソッド。 このコードを  `func sceneDidEnterBackground(_ scene: UIScene)`:
+1. アプリがバックグラウンドに入ると、アプリの `sceneDidEnterBackground:` デリゲートメソッドからライフサイクルデータ収集を一時停止する必要があります。 `func sceneDidEnterBackground(_ scene: UIScene)` に次のコードを追加します。
 
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
 
-## アシュランスで検証
+## Assurance での検証
 
-1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
-1. アプリをバックグラウンドに送信します。 次を確認 **[!UICONTROL LifecyclePause]** イベントを含めることができます。
-1. アプリをフォアグラウンドに移動します。 次を確認 **[!UICONTROL LifecycleResume]** イベントを含めることができます。
-   ![ライフサイクルを検証](assets/lifecycle-lifecycle-assurance.png)
+1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
+1. アプリをバックグラウンドに送信します。 Assurance UI で **[!UICONTROL LifecyclePause]** イベントを確認します。
+1. アプリをフォアグラウンドに移動します。 Assurance UI で **[!UICONTROL LifecycleResume]** イベントを確認します。
+   ![ ライフサイクルの検証 ](assets/lifecycle-lifecycle-assurance.png)
 
 
-## データを Platform Edge ネットワークに転送する
+## Platform Edge Networkへのデータの転送
 
-前の演習では、フォアグラウンドイベントとバックグラウンドイベントをAdobe Experience Platform Mobile SDK にディスパッチします。 これらのイベントを Platform Edge Network に転送するには：
+前の演習では、フォアグラウンドおよびバックグラウンドイベントをAdobe Experience Platform Mobile SDK にディスパッチします。 これらのイベントを Platform Edge Networkに転送するには：
 
-1. 選択 **[!UICONTROL ルール]** 」と入力します。
-   ![ルールを作成](assets/rule-create.png)
-1. 選択 **[!UICONTROL 初期ビルド]** を使用するライブラリとして追加しました。
-1. 「**[!UICONTROL 新規ルールを作成]**」を選択します。
-   ![新規ルールの作成](assets/rules-create-new.png)
-1. Adobe Analytics の **[!UICONTROL ルールを作成]** 画面、入力 `Application Status` 対象： **[!UICONTROL 名前]**.
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** below **[!UICONTROL イベント]**.
-   ![ルールを作成ダイアログ](assets/rule-create-name.png)
-1. Adobe Analytics の **[!UICONTROL イベント設定]** 手順：
-   1. 選択 **[!UICONTROL Mobile Core]** として **[!UICONTROL 拡張]**.
-   1. 選択 **[!UICONTROL 前景]** として **[!UICONTROL イベントタイプ]**.
+1. タグプロパティで **[!UICONTROL ルール]** を選択します。
+   ![ ルールの作成 ](assets/rule-create.png)
+1. 使用するライブラリとして **[!UICONTROL 初期ビルド]** を選択します。
+1. **[!UICONTROL 新規ルールを作成]** を選択します。
+   ![ 新しいルールの作成 ](assets/rules-create-new.png)
+1. **[!UICONTROL ルールの作成]** 画面で、「**[!UICONTROL 名前]**」に `Application Status` と入力します。
+1. **[!UICONTROL EVENTS]** の下の ![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 追加]** を選択します。
+   ![ ルールを作成ダイアログ ](assets/rule-create-name.png)
+1. **[!UICONTROL イベント設定]** 手順で、次の操作を行います。
+   1. **[!UICONTROL 拡張機能]** として **[!UICONTROL Mobile Core]** を選択します。
+   1. **[!UICONTROL イベントタイプ]** として **[!UICONTROL フォアグラウンド]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![ルールイベント設定](assets/rule-event-configuration.png)
-1. 戻る **[!UICONTROL ルールを作成]** 画面、選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** 次の **[!UICONTROL Mobile Core - Foreground]**.
-   ![次のイベント設定](assets/rule-event-configuration-next.png)
-1. Adobe Analytics の **[!UICONTROL イベント設定]** 手順：
-   1. 選択 **[!UICONTROL Mobile Core]** として **[!UICONTROL 拡張]**.
-   1. 選択 **[!UICONTROL 背景]** として **[!UICONTROL イベントタイプ]**.
+      ![ ルールイベントの設定 ](assets/rule-event-configuration.png)
+1. **[!UICONTROL ルールを作成]** 画面に戻り、![ モバイルコア – 前景 **[!UICONTROL の横にある**[!UICONTROL  追加 ]**](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加]** を選択します。
+   ![ 次のイベントの設定 ](assets/rule-event-configuration-next.png)
+1. **[!UICONTROL イベント設定]** 手順で、次の操作を行います。
+   1. **[!UICONTROL 拡張機能]** として **[!UICONTROL Mobile Core]** を選択します。
+   1. **[!UICONTROL イベントタイプ]** として **[!UICONTROL 背景]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![ルールイベント設定](assets/rule-event-configuration-background.png)
-1. 戻る **[!UICONTROL ルールを作成]** 画面、選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]** underthen **[!UICONTROL アクション]**.
-   ![ルール追加アクション](assets/rule-action-button.png)
-1. Adobe Analytics の **[!UICONTROL アクションの設定]** 手順：
-   1. 選択 **[!UICONTROL AdobeExperience Edge ネットワーク]** として **[!UICONTROL 拡張]**.
-   1. 選択 **[!UICONTROL イベントを Edge ネットワークに転送する]** として **[!UICONTROL アクションタイプ]**.
+      ![ ルールイベントの設定 ](assets/rule-event-configuration-background.png)
+1. **[!UICONTROL ルールを作成]** 画面に戻り、「**[!UICONTROL ACTIONS]** の下の ![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 追加]** を選択します。
+   ![ ルール追加アクション ](assets/rule-action-button.png)
+1. **[!UICONTROL アクションの設定]** 手順で、次の操作を行います。
+   1. **[!UICONTROL Extension]** として ]**0}AdobeエクスペリエンスEdge Network} を選択します。**[!UICONTROL 
+   1. **[!UICONTROL アクションタイプ]** として「**[!UICONTROL Edge Networkにイベントを転送]**」を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![ルールアクションの設定](assets/rule-action-configuration.png)
-1. 選択 **[!UICONTROL ライブラリに保存]**.
-   ![ルール — ライブラリに保存](assets/rule-save-to-library.png)
-1. 選択 **[!UICONTROL ビルド]** ライブラリを再構築します。
-   ![ルール — ビルド](assets/rule-build.png)
+      ![ ルールアクションの設定 ](assets/rule-action-configuration.png)
+1. **[!UICONTROL ライブラリに保存]** を選択します。
+   ![ ルール – ライブラリに保存 ](assets/rule-save-to-library.png)
+1. **[!UICONTROL ビルド]** を選択して、ライブラリを再構築します。
+   ![ ルール – ビルド ](assets/rule-build.png)
 
-プロパティが正常に構築されると、イベントは Platform Edge ネットワークに送信され、イベントはデータストリーム設定に従って他のアプリケーションやサービスに転送されます。
+プロパティの作成が完了すると、イベントは Platform Edge Networkに送信され、データストリームの設定に従って他のアプリケーションやサービスに転送されます。
 
-次のようになります。 **[!UICONTROL アプリケーションの終了（背景）]** および **[!UICONTROL アプリケーション起動（フォアグラウンド）]** アシュランスに XDM データを含むイベント。
+Assurance に XDM データを含む **[!UICONTROL アプリケーション終了（バックグラウンド）]** および **[!UICONTROL アプリケーション起動（フォアグラウンド）]** イベントが表示されます。
 
-![Platform Edge に送信されるライフサイクルの検証](assets/lifecycle-edge-assurance.png)
+![Platform Edgeに送信されたライフサイクルを検証 ](assets/lifecycle-edge-assurance.png)
 
 >[!SUCCESS]
 >
->これで、アプリの状態（フォアグラウンド、バックグラウンド）イベントをAdobe Experience Platform Edge Network と、データストリームで定義したすべてのサービスに送信するようにアプリを設定しました。
+>これで、アプリケーションステート（フォアグラウンド、バックグラウンド）イベントをAdobe Experience Platform Edge Networkと、データストリームで定義したすべてのサービスに送信するようにアプリを設定しました。
 >
-> Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+> Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-次へ： **[イベントデータの追跡](events.md)**
+次のトピック：**[イベント・データの追跡](events.md)**

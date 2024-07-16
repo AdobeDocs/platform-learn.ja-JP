@@ -1,13 +1,13 @@
 ---
 title: モバイルアプリでのAdobe Experience Cloudの実装チュートリアルの概要
-description: Adobe Experience Cloudモバイルアプリケーションの実装方法を説明します。 このチュートリアルでは、サンプルの Swift アプリケーションでExperience Cloudアプリケーションを実装する手順を説明します。
+description: Adobe Experience Cloud モバイルアプリケーションの実装方法を説明します。 このチュートリアルでは、サンプル Swift アプリでのExperience Cloudアプリケーションの実装について説明します。
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
 source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 4%
 
 Adobe Experience Platform Mobile SDK を使用して、モバイルアプリに Adobe Experience Cloud アプリケーションを実装する方法を説明します。
 
-Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド SDK です。 詳しくは、 [Adobe Experience Platform Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/home/) を参照してください。
+Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Networkを介してAdobeアプリケーションとサードパーティのサービスの両方を操作できるようにするクライアントサイド SDK です。 詳しくは、[Adobe Experience Platform Mobile SDK ドキュメント ](https://developer.adobe.com/client-sdks/home/) を参照してください。
 
 ![アーキテクチャ](assets/architecture.png)
 
 
-このチュートリアルでは、Luma と呼ばれるサンプル小売アプリケーションで Platform Mobile SDK を実装する手順を説明します。 The [Luma アプリ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) には、現実的な実装を構築できる機能があります。 このチュートリアルを完了すると、すべてのマーケティングソリューションを、Experience Platformのモバイルアプリで Mobile SDK を通じて実装する準備が整います。
+このチュートリアルでは、Luma と呼ばれるサンプルの小売アプリでの Platform Mobile SDK の実装を順を追って説明します。 [Luma アプリ ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) には、現実的な実装を構築できる機能があります。 このチュートリアルを完了すると、独自のモバイルアプリでExperience Platformモバイル SDK を使用してすべてのマーケティングソリューションの実装を開始する準備が整います。
 
-このレッスンはiOS向けに設計され、Swift/SwiftUI で記述されていますが、概念の多くは Android™にも当てはまります。
+レッスンはiOS向けに設計され、Swift/SwiftUI で記述されていますが、多くのコンセプトはAndroid™ にも当てはまります。
 
-このチュートリアルでは、次の内容について学習します。
+このチュートリアルを完了すると、次の操作を実行できるようになります。
 
 * 標準フィールドグループとカスタムフィールドグループを使用してスキーマを作成します。
 * データストリームを設定します。
 * モバイルタグプロパティを設定します。
 * Experience Platformデータセットを設定します（オプション）。
 * アプリにタグ拡張機能をインストールして実装します。
-* にExperience Cloudパラメーターを正しく渡す [webview](web-views.md).
-* を使用して実装を検証する [Adobe Experience Platform Assurance](assurance.md).
-* 次のAdobe Experience Cloudアプリケーション/拡張機能を追加します。
-   * [Adobe Experience Platform Edge (XDM)](events.md)
-   * [ライフサイクルデータの収集](lifecycle-data.md)
+* Experience Cloudパラメーターを [webview](web-views.md) に正しく渡してください。
+* [Adobe Experience Platform Assurance](assurance.md) を使用して実装を検証します。
+* 次のAdobe Experience Cloud アプリケーション/拡張機能を追加します。
+   * [Adobe Experience Platform Edge（XDM）](events.md)
+   * [ライフサイクルデータ収集](lifecycle-data.md)
    * [同意](consent.md)
    * [ID](identity.md)
    * [プロファイル](profile.md)
@@ -44,71 +44,71 @@ Experience Platformモバイル SDK は、Adobe Experience Cloudのお客様がA
    * [Experience Platform](platform.md)
    * [Journey Optimizerを使用したプッシュメッセージ](journey-optimizer-push.md)
    * [Journey Optimizerを使用したアプリ内メッセージ](journey-optimizer-inapp.md)
-   * [Journey Optimizerを使用した決定管理](journey-optimizer-offers.md)
+   * [Journey Optimizerによる意思決定管理](journey-optimizer-offers.md)
    * [Target](target.md)
 
 
 >[!NOTE]
 >
->同様のマルチソリューションチュートリアルを、 [Web SDK](../tutorial-web-sdk/overview.md).
+>[Web SDK](../tutorial-web-sdk/overview.md) についても、同様のマルチソリューションチュートリアルが利用できます。
 
 ## 前提条件
 
-このレッスンでは、練習を完了するために必要なAdobeID とユーザーレベルの権限があることを前提としています。 アクセスできない場合は、Adobe管理者に問い合わせて、アクセス権を要求する必要があります。
+これらのレッスンでは、AdobeID と、演習を完了するために必要なユーザーレベルの権限があることを前提としています。 そうでない場合は、Adobe管理者に問い合わせて、アクセスをリクエストしてください。
 
-* データ収集には、以下が必要です。
-   * **[!UICONTROL プラットフォーム]** — 権限項目 **[!UICONTROL モバイル]**
-   * **[!UICONTROL プロパティ権限]** — 許可する項目 **[!UICONTROL 開発]**, **[!UICONTROL 承認]**, **[!UICONTROL 公開]**, **[!UICONTROL 拡張機能の管理]**、および **[!UICONTROL 環境の管理]**.
-   * **[!UICONTROL 会社権限]** — 許可する項目 **[!UICONTROL プロパティを管理]** また、オプションのプッシュメッセージレッスンを完了している場合は、 **[!UICONTROL アプリ設定を管理]**
+* データ収集には、次が必要です。
+   * **[!UICONTROL Platforms]** – 権限項目 **[!UICONTROL モバイル]**
+   * **[!UICONTROL プロパティ権限]** - **[!UICONTROL 開発]**、**[!UICONTROL 承認]**、**[!UICONTROL Publish]**、**[!UICONTROL 拡張機能の管理]**、および **[!UICONTROL 環境の管理]** に対する権限項目。
+   * **[!UICONTROL 会社権限]** - **[!UICONTROL プロパティの管理]** に対する権限項目と、オプションのプッシュメッセージレッスンを完了している場合は **[!UICONTROL アプリ設定の管理]**
 
-     タグ権限について詳しくは、 [タグのユーザー権限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja){target="_blank"} （製品ドキュメント内）。
-* Experience Platformでは、次が必要です。
-   * **[!UICONTROL データモデリング]** — スキーマを管理および表示する権限項目です。
-   * **[!UICONTROL Identity Management]**—id 名前空間を管理および表示する権限項目です。
-   * **[!UICONTROL データ収集]** — データストリームを管理および表示する権限項目。
+     タグ権限について詳しくは、製品ドキュメントの [ タグのユーザー権限 ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja){target="_blank"} を参照してください。
+* Experience Platformには、以下が必要です。
+   * **[!UICONTROL データモデリング]** - スキーマを管理および表示する権限項目。
+   * **[!UICONTROL Identity Management]** - ID 名前空間を管理および表示する権限項目です。
+   * **[!UICONTROL データ収集]** - データストリームを管理および表示する権限項目。
 
-   * Real-Time CDP、Journey Optimizer、Customer Journey Analyticsなどの Platform ベースのアプリケーションをご利用のお客様は、次の関連レッスンをおこなう必要があります。
-      * **[!UICONTROL データ管理]** — データセットを管理および表示する権限項目。
-      * 開発 **sandbox** このチュートリアルで使用できる
+   * Real-Time CDP、Journey Optimizer、Customer Journey Analyticsなどの Platform ベースのアプリケーションのユーザーは、関連する次のレッスンも受けます。
+      * **[!UICONTROL データ管理]** - データセットを管理および表示する権限項目。
+      * このチュートリアルに使用できる開発 **サンドボックス**。
 
-   * Journey Optimizerのレッスンでは、 **プッシュ通知サービス** およびを作成するには、以下を実行します。 **アプリ表面**, a **ジャーニー**, a **メッセージ**、および **メッセージプリセット**. 決定管理では、次の操作をおこなうための適切な権限が必要です。 **オファーを管理** および **決定** 説明に従って [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+   * Journey Optimizerのレッスンでは、**プッシュ通知サービス** を設定し、**アプリサーフェス**、**ジャーニー**、**メッセージ** および **メッセージプリセット** を作成するための権限が必要です。 意思決定管理の場合、（こちら **で説明しているように、** オファーの管理 [ および **決定** に対する適切な権限が必要 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions) す。
 
-* Adobe Analyticsの場合は、どちらかを知っておく必要があります。 **レポートスイート** を使用して、このチュートリアルを完了できます。
+* Adobe Analyticsの場合、このチュートリアルを完了するために使用できる **レポートスイート** がわかっている必要があります。
 
-* Adobe Targetの場合、アクティビティを作成およびアクティブ化する権限が必要です。
+* Adobe Targetの場合、アクティビティを作成してアクティブ化する権限が必要です。
 
 
 >[!NOTE]
 >
->このチュートリアルの一部として、スキーマ、データセット、ID などを作成します。 複数のユーザーが単一のサンドボックスでこのチュートリアルを実行する場合は、これらのオブジェクトを作成する際に、命名規則の一部として識別を追加するか、事前に付加することを検討してください。 例えば、 ` - <your name or initials>` を、作成するように指示されるオブジェクトの名前に追加します。
+>このチュートリアルの一部として、スキーマ、データセット、ID などを作成します。 このチュートリアルを 1 つのサンドボックスで複数のユーザーが行う場合は、これらのオブジェクトを作成する際の命名規則の一部として、ID を追加または先頭に追加することを検討してください。 例えば、作成するように指示されたオブジェクトの名前に ` - <your name or initials>` を追加します。
 
 ## バージョン履歴
 
-* 2023 年 11 月 29 日：新しいサンプルアプリと、アプリ内メッセージ、決定管理、Adobe Targetに関する新しいレッスンによる大規模な見直し。
+* 2023 年 11 月 29 日（PT）：新しいサンプルアプリと、アプリ内メッセージ、意思決定管理、Adobe Targetに関する新しいレッスンを含む大幅な見直し。
 * 2022 年 3 月 9 日：初回公開
 
-## Luma アプリケーションのダウンロード
+## Luma アプリのダウンロード
 
-サンプルアプリケーションの 2 つのバージョンをダウンロードできます。 両方のバージョンをダウンロード/複製できます [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). 次の 2 つのフォルダーがあります。
+2 つのバージョンのサンプルアプリをダウンロードできます。 どちらのバージョンも、[Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) からダウンロードまたはクローン作成できます。 次の 2 つのフォルダーがあります。
 
 
-1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：このチュートリアルで実践的な演習を完了するために必要な、Experience PlatformMobile SDK コードのほとんどに対して、コードがない、またはプレースホルダーコードが付いたプロジェクトです。
-1. [完了](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：参照用に完全な実装を含むバージョン。
+1. [ 開始 ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：このチュートリアルの実践的な演習を完了するために必要なExperience PlatformMobile SDK コードのほとんどに対して、コードのないプロジェクトまたはプレースホルダーコードを含むプロジェクト。
+1. [ 完了 ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：参照用に完全な実装を持つバージョン。
 
 >[!NOTE]
 >
->プラットフォームとしてiOSを使用し、 [!DNL Swift] プログラミング言語として [!DNL SwiftUI] UI フレームワークとして、および [!DNL Xcode] を統合開発環境 (IDE) として使用する。 ただし、説明されている実装概念の多くは、他の開発プラットフォームと同様です。 多くのユーザーは、以前のiOS/Swift(UI) 操作をほとんどあるいはまったく使用せずに、既にこのチュートリアルを完了しています。 コードを快適に読んで理解できれば、レッスンを完了するのに専門家である必要はありませんが、レッスンを最大限活用することができます。
+>iOSをプラットフォーム、プログラミング言語、UI フレームワーク、統合開発環境（IDE） [!DNL SwiftUI] して使用し [!DNL Xcode] す [!DNL Swift]。 ただし、説明されている実装概念の多くは、他の開発プラットフォームでも似ています。 多くのユーザーは、このチュートリアルを既にほとんど、またはまったく以前のiOS/Swift （UI）の経験を持たずに完了しています。 レッスンを完了するために専門家である必要はありませんが、コードを快適に読んで理解できれば、レッスンからより多くを得ることができます。
 
 
-最終的に製品化されたバージョンのアプリをApp Storeからダウンロードできます。
+製品化された最終的なバージョンのアプリは、App Storeからダウンロードできます。
 
-[![](assets/download-app.svg) のダウンロード](https://apps.apple.com/us/app/luma-app/id6466588487)
+[![ ダウンロード ](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 それでは、始めましょう。
 
 >[!SUCCESS]
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
-次へ： **[XDM スキーマの作成](create-schema.md)**
+次のトピック：**[XDM スキーマの作成](create-schema.md)**

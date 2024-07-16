@@ -14,7 +14,7 @@ ht-degree: 80%
 
 ---
 
-# Adobe Experience Platformの基本アーキテクチャ
+# Adobe Experience Platformの基本的なアーキテクチャ
 
 概要図のガイド付きウォークスルーから、Adobe Experience Platform のアーキテクチャの概要を学習します。
 

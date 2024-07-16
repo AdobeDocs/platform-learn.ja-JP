@@ -1,6 +1,6 @@
 ---
-title: 主な使用例
-description: Experience Platform&mdash、インテリジェントな再エンゲージメント、キャンペーンの損失を防ぐ、顧客コンバージョンの最適化、コンテキスト認識、ライフタイム値に対する 1 回限りの価値の 5 つの主な使用例の概要を説明します。
+title: 主なユースケース
+description: Experience Platform&mdash；インテリジェントな再エンゲージメント、キャンペーンの損失なし、カスタマーコンバージョンの最適化、コンテキスト認識、ライフタイム値への 1 回限りの値の 5 つの主要なユースケースの概要を説明します。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Adobe Experience Platformの主な使用例
+# Adobe Experience Platformの主なユースケース
 
-Experience Platformの 5 つの主な使用例（インテリジェントな再エンゲージメント、「損失しない」キャンペーン、顧客コンバージョンの最適化、コンテキスト認識、ライフタイム値に対する 1 回限りの価値）の概要を説明します。
+Experience Platformの 5 つの主要なユースケース（インテリジェントな再エンゲージメント、「Don&#39;t Lose」キャンペーン、カスタマー・コンバージョン最適化、コンテキスト認識、ライフタイム・バリューに対する 1 回限りの価値）の概要を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
 

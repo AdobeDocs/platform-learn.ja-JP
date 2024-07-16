@@ -16,19 +16,19 @@ ht-degree: 3%
 
 # 1.5 アクションの実行：オーディエンスをFacebookに送信します
 
-に移動 [Adobe Experience Platform](https://experience.adobe.com/platform). ログインすると、Adobe Experience Platformのホームページが表示されます。
+[Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
 ![データ取得](./images/home.png)
 
-続行する前に、を選択する必要があります **sandbox**. 選択するサンドボックスの名前はです ``Bootcamp``. それには、テキストをクリックします **[!UICONTROL 実稼動製品]** 画面上部の青い線 適切なを選択した後 [!UICONTROL sandbox]画面が変わり、専用の画面が表示されます [!UICONTROL sandbox].
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``Bootcamp`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./images/sb1.png)
 
-左側のメニューで、に移動します。 **宛先**&#x200B;に移動します。 **カタログ**. 「」が表示されます。 **宛先カタログ**. 対象： **宛先**&#x200B;を選択し、 **オーディエンスをアクティベート** 日 **Facebook カスタムオーディエンス** カード。
+左側のメニューで **宛先** に移動し、**カタログ** に移動します。 **宛先カタログ** が表示されます。 **宛先** で、**Facebook カスタムオーディエンス** カードの **オーディエンスをアクティブ化** をクリックします。
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-宛先を選択 **bootcamp-facebook** をクリックして、 **次**.
+宛先 **bootcamp-facebook** を選択し、「**次へ**」をクリックします。
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
@@ -36,15 +36,15 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-日 **マッピング** ページの場合、必ず **変換を適用** チェックボックスが有効になっています。 「**次へ**」をクリックします。
+**マッピング** ページで、「**変換を適用**」チェックボックスが有効になっていることを確認します。 「**次へ**」をクリックします。
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-日 **オーディエンススケジュール** ページで、 **オーディエンスの接触チャネル** およびを設定します **顧客から直接**. 「**次へ**」をクリックします。
+**オーディエンススケジュール** ページで、「**オーディエンスの接触チャネル** を選択し、「**顧客から直接**」に設定します。 「**次へ**」をクリックします。
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-最後に、 **レビュー** ページ、クリック **終了**.
+最後に、「レビュー **ページで** 「終了 **をクリック** します。
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

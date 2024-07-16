@@ -1,6 +1,6 @@
 ---
-title: Bootcamp -Customer Journey Analytics-Customer Journey Analyticsを使用したビジュアライゼーション — ブラジル
-description: Bootcamp -Customer Journey Analytics-Customer Journey Analyticsを使用したビジュアライゼーション — ブラジル
+title: Bootcamp - Customer Journey Analytics - Customer Journey Analyticsを使用したビジュアライゼーション – ブラジル
+description: Bootcamp - Customer Journey Analytics - Customer Journey Analyticsを使用したビジュアライゼーション – ブラジル
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,319 +11,319 @@ feature: Visualizations
 exl-id: eb5eac54-22d8-428b-acac-16570f75085e
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 1%
+source-wordcount: '1569'
+ht-degree: 0%
 
 ---
 
-# 4.5Customer Journey Analytics
+# 4.5 Visualização usando Customer Journey Analytics
 
-## Objectivos
+## Objetivos
 
-- UI を拡張してAnalysis Workspace
-- Conheça alguns recursos que tornam o Analysis Workspace tão diferente.
-- Analysis Workspaceのアナリサルの CJA ユサンド
+- UI do Analysis Workspaceへの参加
+- Conheça alguns recursos que tornam o Analysis Workspace tão diferente.（フランス語でフランス語で「フランス語でフランス語でフランス語を発音」）
+- アパルンダ ア アナリサル ノ CJA ウサンド オ Analysis Workspace
 
 ## Contexto
 
-Neste expercício, vocêusará o Analysis Workspace no CJA para analizar visualizaçoes de productos, funis de productos, rotatividade など
+Neste exercício, você usará o Analysis Workspace no CJA para analisar visualizaçóes de produtos, funis de produtos, rotatividade など
 
-Vamos usar o projeto que vocriou em  [4.4 Prepação de dados no Analysis Workspace](./ex4.md)，エンタンアセス [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projeto que você criou em [4.4 Preparação de dados no Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
-![デモ](./images/prohome.png)
+![ デモ ](./images/prohome.png)
 
-アブラ・セウ・プロジェト `yourLastName - Omnichannel Analysis`.
+Abra seu projeto `yourLastName - Omnichannel Analysis`.（アブラスー・プロエト）
 
-Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, vocêestá pronto para comçar a construir suas primeirs visualizaçoes
+Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está prolonto para começar a construir suas primeiras visualizaçóes.
 
-![デモ](./images/prodataView1.png)
+![ デモ ](./images/prodataView1.png)
 
-## Quantas の視覚化 de productos temos diariamente?
+## Quantas visualizaçóes de produtos temos diariamente?
 
-datas certas para analisar os dados としての Em primeiro lugar, precisamos selecionar。 Acesse o menu suspenso do calendarrio no lado direito da tela. Clique nele selecione o intervalo de datas applicável.
+Em primeiro lugar, precisamos selecionar as datas certas para analisar os dados.（ダドスのパラナリサールとして選ばれたプレシサモス） Acesse o menu suspenso do calendário no lado direito da tela. （カレンダリオのラド・ディレイト・ダ・テラ） Clique nele e selecione o intervalo de datas aplicável.
 
 >[!IMPORTANT]
 >
->Selecione um intervalo de datas como **今週** ou **今月**. Os dados disponíveis mais recentes for am absovidos em 19 de setembro de 2022.
+>Selecione um intervalo de datas como **今週** ou **今月**。 Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022.
 
-![デモ](./images/pro1.png)
-メトリカスカルカダとしてエンコントロールする、ラドエスカルド（アレアデコンポーネント）のメニューなし **製品表示**. セレシオネアス e アレスト e solte solte na tela, no canto superior direito da tabela de forma livre.
+![ デモ ](./images/pro1.png)
+No menu do lado esquerdo （área de componentes）, contre as métricas calculadas **Product Views**. セレシオーネ – as e arraste e solte na tela, no canto superior direito da tabela de forma livre. セレシオーネ・アラースト・エ・ソルト・ナ・テラ（e arraste e solte na tela, no canto superior direito da tabela de forma）
 
-![デモ](./images/pro2.png)
+![ デモ ](./images/pro2.png)
 
-ディメンションを自動的に変更 **日** セラ・アディシオナダ・パラ・クリア・スア・プリメイラ・タベラ アゴラヴォークドバースアペルガンタレスポンディダイメディアタンテ。
+Automaticamente a dimensão **日** será adicionada para criar sua primeira tabela （サドマイラ・タベラ） アゴラ ボーケ ポデ ヴァー sua pergunta respondida imediatamente.
 
-![デモ](./images/pro3.png)
+![ デモ ](./images/pro3.png)
 
-エムセギダ、クリック com o botão direito do mouse no resumo da métrica.
+Em seguida, clique com o bothão direito do mouse no resumo da métrica. （エム・セギダ、クリーク・コム・オ・ボト・ディレイト・ド・マウス・ノ・レジュモ・ダ・メトリカ）
 
-![デモ](./images/pro4.png)
+![ デモ ](./images/pro4.png)
 
-クリック **視覚化** e セレクション **線** como visualizationção.
+Clique em **Visualize** e selecione **Line** como visualização.
 
-![デモ](./images/pro5.png)
+![ デモ ](./images/pro5.png)
 
-Vocêverá as suas visualizaçoes de producto por dia.
+Você verá as suas visualizaçóes de produto por dia.
 
-![デモ](./images/pro6.png)
+![ デモ ](./images/pro6.png)
 
-ヴォーチュポーデアルターオエスコポデテンポパラオディアクリカンドエム **設定** na visualização.
+Você pode alterar o escopo de tempo para o dia clicando em **設定** na visualização.
 
-![デモ](./images/pro7.png)
+![ デモ ](./images/pro7.png)
 
-クリケノポントアオラドデ **線** e **データソースを管理**.
+Clique no ponto ao lado de **Line** e **データSourceの管理**.
 
-![デモ](./images/pro7a.png)
+![ デモ ](./images/pro7a.png)
 
-Em seguida、clique em **選択をロック** e セレクション **選択した項目** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizaçoes de produtos
+Em seguida, clique em **選択をロック** e selectione **選択された項目** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizaçóes de produtos.
 
-![デモ](./images/pro7b.png)
+![ デモ ](./images/pro7b.png)
 
-## 5 個の製品メイス訪問者
+## メイス・ヴィストス・プロドトス 5 本
 
-クアサオ 5 製品マイス・ビストス？
+ケイス・サンオス 5 プロドトス・メイス・ヴィストス？
 
-Lembre-se de salvar o projoto de tempos em tempos.
+テンポスのテンポスに対する抗議活動の実施。
 
 | OS | ショートカット |
 | ----------------- |-------------| 
-| Windows | Ctrl + S |
+| Windows | コントロール + S |
 | Mac | Command + S |
 
-Vamos começar a contrar os 5 produtos mais vistos. No menu do lado esquerdo, encontre o Nome do produto - Dimensiono.
+Vamos começar a encontrar os os 5 produtos mais vistos. No menu do lado esquerdo, encontre o Nome do produto - Dimensão.いいえメニューはエスカレードを行いません。
 
-![デモ](./images/pro8.png)
+![ デモ ](./images/pro8.png)
 
-アゴラアレステエソルテ **製品名** パラは次元を置き換える **日**:
+アゴラ アラースト エ ソルト **製品名** para substituir a dimensão **日**:
 
-エステセラオレスルタド。
+エステ・セラ・オ・レスルタド。
 
-![デモ](./images/pro10a.png)
+![ デモ ](./images/pro10a.png)
 
-Em seguida、tente dividir um dos produtos por Nome da marca. ペスク **brandName** アラースト・パラ・バイクソ・ド・プリメイロ・ノーム・ド・プロドト
+Em seguida, tente dividir um dos produtos por Nome da marca.（エム・セギダ、テンテ・ディヴィディル・ウム・ドス・プロドトス・ポル・ノーム・ダ・マルカ） Pesquise **brandName** e arraste para baixo do primeiro nome do produto.
 
-![デモ](./images/pro13.png)
+![ デモ ](./images/pro13.png)
 
-エム・セギダ、ファサ・ム・デタラメント・ウサンド・オ・アンテ・デ・ウサリオ。 ペスク **ユーザーエージェント** arraste-o para baixo do nome da marca
+Em seguida, faça um detalhamento usando Agente de usuário.（エム・セギダ、ファサ・アム・デタルハメント・ウサンド） Pesquise **ユーザーエージェント** e arraste-o para baixo do nome da marca.
 
-![デモ](./images/pro15.png)
+![ デモ ](./images/pro15.png)
 
-Em seguida, será exibida a tela abaixo:
+Em seguida, será exibida a a tela abaixo （エム・セギダ、セラ・エクシビダ・ア・テラ・アバイキソ）
 
-![デモ](./images/pro15a.png)
+![ デモ ](./images/pro15a.png)
 
-Por fim, voce pode adicionar mais visualizaçoes. lado esquerdo, em visualizaçoes, pesquise がありません `Donut`. ペグ `Donut`, arratese e solte na tela sob a visualização **線** 
+Por fim, você pode adicionar mais visualizaçóes. lado esquerdo, em visualizaçóes, pesquise `Donut` はありません。 Pegue `Donut`, arraste e e solte na tela sob a visualização **折れ線グラフ** 
 
-![デモ](./images/pro18.png)
+![ デモ ](./images/pro18.png)
 
-次に、表で最初の 5 つを選択します。 **ユーザーエージェント**  行を **Google Pixel XL 32GB ブラックスマートフォン** > **シティ信号**. 5 行を選択する際、 **CTRL** ボタン（Windows の場合）または **コマンド** ボタン (Mac)
+次に、テーブルで、**Google Pixel XL 32GB Black Smartphone** > **Citi Signal** の分類から最初の 5 つの **User Agent** 行を選択します。 5 行を選択している間、**Ctrl** ボタン（Windows の場合）または **Command** ボタン（Macの場合）を押したままにします。
 
-Em seguida, na Tabela, selecione as primeiras 5 linhad de **ユーザーエージェント** デタラメントク・フィゼモス・エム **Google Pixel XL 32GB ブラックスマートフォン** > **シティ信号**. Ao セレオナーを 5 リニャス、segure o botão **CTRL** （Windows なし） o botão **コマンド** (Macなし )。
+Em seguida, na Tabela, selecione as primeiras 5 linhas de **ユーザーエージェント** do detalhamento que fizemos em **Google Pixel XL 32GB Black Smartphone** > **シティ信号**. Ao selecionar as 5 linhas, segure o botão **CTRL** （ウィンドウなし） ou o botão **コマンド** （Macなし）.
 
-![デモ](./images/pro20.png)
+![ デモ ](./images/pro20.png)
 
-Vocêverá o gráfico de donut alterado:
+Você verá o gráfico de donut alterado:
 
-![デモ](./images/pro21.png)
+![ デモ ](./images/pro21.png)
 
-Vocêpode até adaptar o design para ser mais legível, tornando o gráfico de **線** オグラフィコデ **ドーナツ** um poco menor para que sejam exibidos lado a lado
+Você pode até adaptar o design para ser mais legível, tornando o gráfico de **Line** e o gráfico de **Donut** um pouco menor para que sejam exibibidos lado a lado:
 
-![デモ](./images/pro22.png)
+![ デモ ](./images/pro22.png)
 
-クリケノポントアオラドデ *ドーナツ** para **データソースを管理**. Em seguida、clique em **選択をロック** para bloquear essa visualização para que sempre exiba uma linha do tempo de Visualizaçoes de produto
+Clique no ponto ao lado de *ドーナツ** para **データSourceの管理**. Em seguida, clique em **Lock Selection** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizaçóes de produto. （英語のみ）
 
-![デモ](./images/pro22b.png)
+![ デモ ](./images/pro22b.png)
 
-Saiba mais sobre visualizaçoes usando o Analysis Workspace em:
+Saiba mais sobre visualizaçóes usando Analysis Workspace em:
 
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ja](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ja)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Funil de interação do produto, da visualizaçãoà compra
+## Funil de interação do produto, da visualização à compra
 
-Existem muitas formas de resolver esta questão. Uma delasé usar o Tipo de Interação de Produto e usá-lo em uma tabela de formato livre. Outra formaé usar uma **フォールアウトビジュアライゼーション**. Vamos usar oúltimo, pois queremos 視覚化 e analisar ao mesmo テンポ。
+Existem muitas formas de resolver esta questão. Uma delas é usar o Tipo de Interação de Produto e usá-lo em umtabela de formato livre.（ウマデラス・デ・ウサール・デ・ティポ・デ・ティポ・デ・プロドゥート） Outra forma é usar **フォールアウトビジュアライゼーション**。 Vamos usar o último, pois queremos visualizar e analisar ao mesmo tempo.
 
-Feche o painel の実際のクリカンド・アクイ：
+ペネル・アタル・クリカンド・アクイのフェシェ：
 
-![デモ](./images/pro23.png)
+![ デモ ](./images/pro23.png)
 
-アゴラ・アディシオネ・ム・ノボ・ペイン・ブランコ・クリカンド・エム **+空のパネルを追加**.
+Agora adicione um novo painel em branco clicando em **+ Add Blank Panel**.（アゴラ アドシオネ・ム・ノボ・ペネル・エム・ブランコ・クリカンド・エム・エム+ブランク・パネルの追加）
 
-![デモ](./images/pro24.png)
+![ デモ ](./images/pro24.png)
 
 Clique na visualização de **フォールアウト**.
 
-![デモ](./images/pro25.png)
+![ デモ ](./images/pro25.png)
 
-Selecione o mesmo intervalo de datas do exercício anteror.
+Selicione o mesmo intervalo de datas do exercício anterior.この記事の内容は以下の通りです。
 
-![デモ](./images/prodatef.png)
+![ デモ ](./images/prodatef.png)
 
-Em seguida, vocêverá:
+Em seguida, você verá:
 
-![デモ](./images/prodatefa.png)
+![ デモ ](./images/prodatefa.png)
 
-ディメンションのエンコントロール **イベントタイプ** nos コンポーネントは、lado esquerdo ではありません。
+Encontre a dimensão **イベントタイプ** nos componentes no lado esquerdo:
 
-![デモ](./images/pro26.png)
+![ デモ ](./images/pro26.png)
 
-ディメンションの Clique na seta para a brigur a dimension:
+ディメンソンのクリケ・ナ・セタ・パラ・アビール：
 
-![デモ](./images/pro27.png)
+![ デモ ](./images/pro27.png)
 
-Voêverá todos os Tipos de eventos disponíveis.
+Você verá todos os Tipos de eventos disponíveis （エヴォ・ヴェラ・トドス・オス・ティポス・デ・エヴントス・ディスポニヴェイス）
 
-![デモ](./images/pro28.png)
+![ デモ ](./images/pro28.png)
 
-項目を 1 つ選択 **commerce.productViews** e arraste e solte o no campo **タッチポイントを追加** デントロダ **フォールアウトビジュアライゼーション**.
+項目 **commerce.productViews** e arraste e solte-o no campo **タッチポイントの追加** dentro da **フォールアウトビジュアライゼーション** を選択します。
 
-![デモ](./images/pro29.png)
+![ デモ ](./images/pro29.png)
 
-Faça o mesmo com **commerce.productListAdds** および **commerce.purchases** e solte-os no campo **タッチポイントを追加** デントロダ  **フォールアウトビジュアライゼーション**. Sua visualização agora deve ser semelhante ao seguinte:
+Faça o mesmo com **commerce.productListAdds** and **commerce.purchases** e solte-os no campo **タッチポイントの追加** dentro da **フォールアウトビジュアライゼーション**. Sua visualização agora deve ser semelhante ao seguinte:
 
-![デモ](./images/props1.png)
+![ デモ ](./images/props1.png)
 
-ボーチュポードファザームイタスコイサアクイ。 アルゴリズムの終了：比較 ao longo do tempo, comparar cada passo por dispositivo ou comparar por fidelidade No entanto, se quisermos analisar coisas interressantes como porque os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA:com o botão direito をクリックします。
+Você pode fazer muitas coisas aqui.（ボーケ・ポデ・ファザー・ムイタス・コイサ・アクイ） Alguns の exemplos：同類の ao longo do tempo、同類の cada passo por dispositivo ou 同類の por fidelidade。 No entanto, se quisermos analisar coisas interessantes como porque os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA: clicar com o botão direito.
 
-Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Em seguida、clique em **このタッチポイントでのフォールアウトを分類**.
+Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Em seguida、clique em **このタッチポイントでのフォールアウトの分類**。
 
-![デモ](./images/pro32.png)
+![ デモ ](./images/pro32.png)
 
-ウマノヴァ・タベラ・デ・フォルマト・リヴル・セラ・クリアダ・パラ・アナリサル・クエ・ア・ペソアス・フィゼラム・セ・ナン・コンプララム。
+Uma nova tabela de formato livre será criada para analisar o que as pessoas fizeram se não compraam （マノヴァ・タベラ・デ・フォレイト・リヴル・セラ・クリアダ・パラ・アナリサール・オケ）
 
-![デモ](./images/pro33.png)
+![ デモ ](./images/pro33.png)
 
-代替 **イベントタイプ** 作成者 **ページ名**, na nova tabela de formato livre, para ver em quainas eles estão indo, em vez da Página de confirmação de compra
+Altere o **イベントタイプ** by **ページ名**, na nova tabela de formato livre, para ver em quais páginas eles estão indo, em vez da Página de confirmação de compra.
 
-![デモ](./images/pro34.png)
+![ デモ ](./images/pro34.png)
 
-## ペソア・ファゼムのサイト・アンテス・デ・アセサール・パギナ・キャンセル・サービスコ？
+## ペッソアス・ファゼムのサイトはパジーナ・カンセラルのセルヴィソに antes de acessar ありませんか？
 
-ノバメンテ， há muitas formas de realizar essa análise. Vamos usar a análise de fluxo para iniciar parte da descoberta.
+Novamente, há muitas formas de realizar essa análise.（ノバメンテ、ハムイタス・フォルマス・デ・レアリザル・エッサ・アナリゼ） Vamos usar a análise de fluxo para iniciar parte da descoberta.（ヴァモス・ウサール）
 
-Feche o painel の実際のクリカンド・アクイ：
+ペネル・アタル・クリカンド・アクイのフェシェ：
 
-![デモ](./images/pro0.png)
+![ デモ ](./images/pro0.png)
 
-アゴラ・アディシオネ・ム・ノボ・ペイン・ブランコ・クリカンド・エム **+空のパネルを追加**.
+Agora adicione um novo painel em branco clicando em **+ Add Blank Panel**.（アゴラ アドシオネ・ム・ノボ・ペネル・エム・ブランコ・クリカンド・エム・エム+ブランク・パネルの追加）
 
-![デモ](./images/pro0a.png)
+![ デモ ](./images/pro0a.png)
 
 Clique na visualização **フロー**.
 
-![デモ](./images/pro35.png)
+![ デモ ](./images/pro35.png)
 
-Em seguida, será exibido:
+エム・セギダ、セラ・エクスビド：
 
-![デモ](./images/pro351.png)
+![ デモ ](./images/pro351.png)
 
-Selecione o mesmo intervalo de datas do exercício anteror.
+Selicione o mesmo intervalo de datas do exercício anterior.この記事の内容は以下の通りです。
 
-![デモ](./images/pro0b.png)
+![ デモ ](./images/pro0b.png)
 
-ディメンションのエンコントロール **ページ名** nos コンポーネントは、lado esquerdo ではありません。
+Encontre a dimensão **ページ名** nos componentes no lado esquerdo:
 
-![デモ](./images/pro36.png)
+![ デモ ](./images/pro36.png)
 
-ディメンションの Clique na seta para a brigur a dimension:
+ディメンソンのクリケ・ナ・セタ・パラ・アビール：
 
-![デモ](./images/pro37.png)
+![ デモ ](./images/pro37.png)
 
-パギナス・ヴィスタとしてのヴォーチェ・エンコントララ・トダス。 ノーム・ダ・パギナのエンコントレ： **サービスをキャンセル**.
-ソルトを整列 **サービスをキャンセル** na Visualização de fluxo no campo do meio:
+ボーシェ・エンコントララ・トダス・アズ・パギナス・ヴィスタス Encontre o nome da página: **サービスをキャンセル** します。
+Arraste e e solte **サービスをキャンセル** na Visualização de fluxo no campo do meio:
 
-![デモ](./images/pro38.png)
+![ デモ ](./images/pro38.png)
 
-Em seguida, será exibido:
+エム・セギダ、セラ・エクスビド：
 
-![デモ](./images/pro40.png)
+![ デモ ](./images/pro40.png)
 
-Vamos agaora analisar se os clientes que visitaram a página C **サービスをキャンセル** サイト também ligaram para o コールセンター e qual foi o resultado はありません。
+Vamos agora analisar se os clientes que visitaram a página C **Cancel Service** no site também ligaram para o call center e qual foi o resultado.
 
-Nas ディメンション、レトルン e エンコントロールティポデインタラサオデシャマダ。 ソルトを整列 **呼び出しインタラクションタイプ** primeira interaçãoà direita em に代わる para 置き換え **フロービジュアライゼーション**.
+Nas dimensóes, retorne e encontre Tipo de interação de chamada.（スペイン語でイタリア語でイタリア語でフランス語で「フランス語でフランス語でフランス語でフランス語でフランス語でフランス語でフランス語でフランス語でフランス語を意味する） Arraste e solte **コールインタラクションタイプ** para substituir a primeira interação à direita em **フロービジュアライゼーション**.
 
-![デモ](./images/pro43.png)
+![ デモ ](./images/pro43.png)
 
-アゴラヴォーカルの視覚化チケット・デ・サポルテ・ドス・クリエンテ・リガラム・パラ中央デ・アテンディメントにパギナのデポワ・デ・ヴィジタルをデポワに **サービスをキャンセル**.
+Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atendimento depois de visitar a página **サービスをキャンセル**.
 
-![デモ](./images/pro44.png)
+![ デモ ](./images/pro44.png)
 
-Em seguida, nas dimensions, procure **通話感**. Arraste e solte para は primeira interação a direita na visualização de fluxo に置き換わります。
+Em seguida, nas dimensóes, procure **Call Feeling**. Arraste e e solte para substituir a primeira interação à direita na visualização de fluxo. （英語）
 
-![デモ](./images/pro46.png)
+![ デモ ](./images/pro46.png)
 
-Em seguida, será exibido:
+エム・セギダ、セラ・エクスビド：
 
-![デモ](./images/flow.png)
+![ デモ ](./images/flow.png)
 
-コモポード ver, execuamos uma análise omnichannel usando ビジュアライゼーション ação de fluxo. Graças a isso, descobrimos que alguns clientes que estavam pensando em cancelar o serviço tiveram avaliação positiva depois de ligar para o call center. タルヴェス・テナモスムダド・デ・イデイア comuma promoção?
+Como pode ver, executamos uma análise omnichannel usando a visualização de fluxo.（コモポデと言う言葉） Graças a isso, descobrimos que alguns clientes que estavam pensando em cancelar o serviço tiveram uma avaliação positiva depois de ligar para o call center. （イッソ、デスコブリモスのアルガンの例） タルベス・テンハモス・ムダド・デ・イデア・コム uma promoção?
 
-## Qualé o desempenho dos clientes com um contato de Call center Positivo em relação aos principais KPIs?
+## Qual é o desempenho dos clientes com um contato de Call center Positivo em relção aos principais KPIs?
 
-Primeiramente, vamos segmentar os dados para obter apenas usários com chamadas **陽性**. CJA、os Segmentos サンシャマドス・デ・フィルトロス。 Acesse para filtros na area de componentes (no lado esquerdo) e clique **+**.
+Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **ポジティブ**. CJA やオスセグメントス・サンシャマドス・デ・フィルトロスは対象外です。 Acesse para filtros na área de componentes （no lado esquerdo） e clique em **+**. （英語）
 
-![デモ](./images/pro58.png)
+![ デモ ](./images/pro58.png)
 
-デントロドコンストラクターデフィルター、dêum nome ao フィルター
+デントロ・ド・コンストレータ・ド・フィルトロ（dê um nome ao filtro）
 
 | 名前 | 説明 |
 | ----------------- |-------------| 
-| 通話感 — ポジティブ | 通話感 — ポジティブ |
+| 呼び出し時の操作性 – ポジティブ | 呼び出し時の操作性 – ポジティブ |
 
-![デモ](./images/pro47.png)
+![ デモ ](./images/pro47.png)
 
-NOS コンポーネント (dentro do Construtor de filtor), encontre **通話感** e arraste e solte na definição do construtor de filter.
+Nos 成分（dentro do Construtor de filtro）, encontre **コール・フィーリング** e arraste e solte na Definição do construtor de filtro.
 
-![デモ](./images/pro48.png)
+![ デモ ](./images/pro48.png)
 
-アゴラセレオネ **陽性** コモバローパラフィルター
+アゴラセレシオン **陽性** como valor para o filtro.
 
-![デモ](./images/pro49.png)
+![ デモ ](./images/pro49.png)
 
-Altere o escopo para o nível **人物**.
+Altere o escopo para o nível **人**.
 
-![デモ](./images/pro50.png)
+![ デモ ](./images/pro50.png)
 
-Para 最終処理、Basta Clicar Em **保存**.
+Para finalizar, basta clicar em **保存**.
 
-![デモ](./images/pro51.png)
+![ デモ ](./images/pro51.png)
 
-エンタオ、ヴォーチラ・レトルナ・パラ・エスタ・テラ。 Se ainda não retornou, feche o painel antero.
+Então, você irá retornar para esta tela. （エンタン、ボーシェ・イラー、レトルナー・パラ・エスタ・テラ） Se ainda não retornou, feche o o painel anterior.（セアインダ・ナン・レトルヌ、フェシェ・オ・ペネル・アンフォーラル）
 
-![デモ](./images/pro0c.png)
+![ デモ ](./images/pro0c.png)
 
-アゴラ・アディシオネ・ム・ノボ・ペイン・ブランコ・クリカンド・エム **+空のパネルを追加**.
+Agora adicione um novo painel em branco clicando em **+ Add Blank Panel**.（アゴラ アドシオネ・ム・ノボ・ペネル・エム・ブランコ・クリカンド・エム・エム+ブランク・パネルの追加）
 
-![デモ](./images/pro24c.png)
+![ デモ ](./images/pro24c.png)
 
-Selecione o mesmo intervalo de datas do exercício anteror.
+Selicione o mesmo intervalo de datas do exercício anterior.この記事の内容は以下の通りです。
 
-![デモ](./images/pro24d.png)
+![ デモ ](./images/pro24d.png)
 
-クリック **フリーフォームテーブル**.
+「em **フリーフォームテーブル**」をクリックします。
 
-![デモ](./images/pro52.png)
+![ デモ ](./images/pro52.png)
 
-アゴラアレスト e solte o filtoro que vacabou de criar。
+アゴラの荒地 e solte o filtro que você acabou de criar.
 
-![デモ](./images/pro53.png)
+![ デモ ](./images/pro53.png)
 
-オラ・デ・アディシオナール・アルグマ・メトリカス。 Comece com **製品表示**. Arraste e solte na tabela de forma liver. ボーチャンベムポーデはメトリカを除く **イベント**.
+Hora de adicionar algumas métricas.（ホラ・デ・アドシオナル・アルグマ・メトリカス） Comece com **製品表示**。 Arraste e e solte na tabela de forma livre. （アルラスト・ソルト・ナ・タベラ・デ・フォルマ・リーヴル） Você também pode excluir a métrica **イベント**.
 
-![デモ](./images/pro54.png)
+![ デモ ](./images/pro54.png)
 
-Faça o mesmo com **人**, **買い物かごに追加** e **購入**. ヴァイアカバーコムウマタベラコモセギンテ。
+Faça o mesmo com **人物**, **買い物かごに追加** e **購入**. Você vai acabar com uma tabela como a seguinte.
 
-![デモ](./images/pro55.png)
+![ デモ ](./images/pro55.png)
 
-Graças a primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos criar esta tabela e verificar alguns KPIs em segmento para responder a essa pergunta. Como voce ver, o tempo de insighté muis rápido do que usar SQL ou usar ousars soluçoes de BI.
+Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos criar esta tabela e verificar alguns KPIs em um segmento para responder a essa pergunta. （英語） Como você pode ver, o tempo de insight é é muito mais rápido do que usar SQL ou usar outras soluthores de BI.
 
-## Recapitulação do Analysis Workspace e doCustomer Journey Analytics
+## リカピトゥラサン ド Analysis Workspace エ ド Customer Journey Analytics
 
-O Analysis Workspaceは、Analytics を使用してトダを削除します。 Ele forene uma tela lobsta e flexível para criar projectos de analytics personalizados. Arraste e solte qualte qualquer número de tabelas de dados, visualizaçoes e componentes (dimensions, métricas, segmentos e granuridades de tempo) para um projeto. Vocepode criar de forma instantânea filtros e analises, gráficos de coorte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamento para compartilhar com quer peso aem seu negio
+Analysis Workspaceは todas を limitaçóóes típicas de um relatório do Analytics として削除します。 Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados.（エレ・フォルネセ・ウマ・テラ・ロブスタ・エ・フレキシベル・パラ・クリアー・プロジェトス・デ・アナリティクス・ペルソナリザドス） Arraste e e solte qualquer número de tabelas de dados, visualizaçóes e componentes （dimensóes, métricas, segmentos e granularidadadades de tempo） para um projeto. （英語） Você pode criar de forma instantânea filtros e analises, gráficos de coorte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamento para compartillhar com qualquer pessoa em seu negócio.
 
-プロクシマエタパ： [4.6 De insights a ação](./ex6.md)
+Próxima etapa: [4.6 De insights a ação](./ex6.md)
 
-[レトルナルパラフルクソデウサリオ 4](./uc4.md)
+[レトルナル パラ フルクソ デ ウスアリオ 4](./uc4.md)
 
-[レトルナーパラトドスオスモドゥロス](./../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](./../../overview.md)

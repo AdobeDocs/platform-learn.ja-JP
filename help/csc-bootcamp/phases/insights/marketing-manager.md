@@ -1,130 +1,131 @@
 ---
-title: CSC ブートキャンプ — マーケティングマネージャーに関するインサイト
-description: CSC ブートキャンプ — マーケティングマネージャーに関するインサイト
+title: CSC Bootcamp - マーケティングマネージャー向けインサイト
+description: CSC Bootcamp - マーケティングマネージャー向けインサイト
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
 # マーケティングマネージャーのインサイト
 
-## プロジェクトリーダーの週別表示
+## プロジェクト リーダーの週単位ビュー
 
 左側の列で、「プロジェクトリーダーの週別表示」をクリックします。
 
-![プロジェクトリーダーの週単位の表示](./images/weekly-view.png)
+![ プロジェクトリーダーの週別表示 ](./images/weekly-view.png)
 
-ここでは、様々なレポートを扱います。詳しくは、常にクリック可能で実用的です。
+これには、豊富なレポートが含まれ、常にクリック可能またはアクションにつながる方法で詳細を確認できます。
 
-- この **プロジェクト別の今週のタスク**
+- **プロジェクト別の今週が期限のタスク**
 
-![今週](./images/tasks-due.png)
+![ 今週中 ](./images/tasks-due.png)
 
-- この **プロジェクト管理の今後のマイルストーン** :
+- **プロジェクト管理の今後のマイルストーン**:
 
-![今後のマイルストーン](./images/upcoming-milestones.png)
+![ 今後のマイルストーン ](./images/upcoming-milestones.png)
 
-- この **優先度別の未解決の問題**
+- **優先度別のオープン問題**
 
-![優先課題](./images/open-issues.png)
+![ 優先度別の問題 ](./images/open-issues.png)
 
-- この **部門別遅延タスク**
+- **部門別の遅延タスク**
 
-![遅延タスク](./images/late-tasks.png)
+![ 遅延タスク ](./images/late-tasks.png)
 
-- この **個人別遅延タスク**
+- **個人ごとの遅延タスク**
 
-![遅れたタスク](./images/individual-late-tasks.png)
+![ 個々の遅延タスク ](./images/individual-late-tasks.png)
 
-## SCRUM 関連のインサイト
+## スクラム関連のインサイト
 
-左の列で、「反復ステータス」をクリックします。
+左側の列で、「反復ステータス」をクリックします
 
-![反復ステータスをクリック](./images/iteration-status.png)
+![ イテレーションステータスをクリック ](./images/iteration-status.png)
 
-チームが SCRUM 手法を扱う場合、これは興味深い一連のレポート管理です。
+チームがスクラム手法を使用している場合、これは興味深い管理レポートセットです。
 
-- **反復ごとの速度**
+- **反復による速度**
 
-![速度](./images/velocity.png)
+![ 速度 ](./images/velocity.png)
 
 - **チーム別平均速度**
 
-![平均速度](./images/average-velocity.png)
+![ 平均速度 ](./images/average-velocity.png)
 
-- **担当者別の現在の反復完了時間合計**
+- **現在の反復の完了時間の合計（担当者別）**
 
-![完了時間合計](./images/iteration-status.png)
+![ 完了時間の合計 ](./images/iteration-status.png)
 
-- **チーム別の反復**
+- **チーム別イテレーション**
 
-![チームごとの繰り返し](./images/iterations-by-team.png)
+![ チームによるイテレーション ](./images/iterations-by-team.png)
 
 ## 効率レポート
 
-左の列で、「効率」をクリックします。
+左側の列に残り、「効率性」をクリックします。
 
-![クリック効率](./images/efficiency.png)
+![ クリックの効率 ](./images/efficiency.png)
 
-- **計画済/未計画比率** （仕事が終わった時）
+- **計画/未計画の比率** （完了した作業の）
 
-![計画済み/計画外比率](./images/planned-unplanned.png)
+![ 予定/予定外比率 ](./images/planned-unplanned.png)
 
-- **完了したリクエスト（週別）**
+- **完了したリクエスト （週別）**
 
-![完了リクエスト](./images/completed-requests.png)
+![ 完了したリクエスト ](./images/completed-requests.png)
 
-## 飛行中のプロジェクトインサイト
+## 進行中のプロジェクトインサイト
 
-左側の列で、「マーケティング — プロジェクトインフライト」をクリックします。
+左側の列のまま、「マーケティング – プロジェクトが進行中」をクリックします。
 
-- **飛行中の事業の状況**
+- **作業中の事業の状況**
 
-![飛行中のプロジェクト](./images/inflight-projects.png)
+![ 進行中のプロジェクト ](./images/inflight-projects.png)
 
-- **月別条件別プロジェクト**
+- **プロジェクト （状況別、月別）**
 
-![条件によるプロジェクト](./images/project-by-condition.png)
+![ 状況別プロジェクト ](./images/project-by-condition.png)
 
-- 次の項目のリスト、進捗、財務の詳細 **飛行中のプロジェクト**
+- **進行中のプロジェクト** のリスト、進捗状況および財務の詳細
 
-![財務詳細](./images/inflights-projects.png)
+![ 財務の詳細 ](./images/inflights-projects.png)
 
-## ビジュアライズ（プロジェクト間）依存関係
+## （プロジェクト間の）依存関係の視覚化
 
-「PIN」行に戻り、「Portfolioガントビュー」をクリックします。
+「PIN」ラインに戻り、「Portfolioの切り子面」をクリックします。
 
-![ポートフォリオ gant ビューをクリック](./images/gant-view.png)
+![ ポートフォリオ ガント ビューのクリック ](./images/gant-view.png)
 
-こちらに **プロジェクトのグループのガントチャート表示** プロジェクト間の依存関係（先行タスク）
+ここでは、プロジェクト間で考えられる依存関係（先行タスク）を含む **プロジェクトのグループの** ガント チャート ビュー）を示します
 
-![プロジェクト間の依存関係](./images/gant-chart.png)
+![ プロジェクト間の依存関係 ](./images/gant-chart.png)
 
-## サードパーティ統合インサイト
+## サードパーティの統合インサイト
 
 >[!NOTE]
 >
-> これは、サードパーティのソフトウェアとの統合の例です。 これは、Adobe Campaignとの統合を図として示しています。 Adobe Campaigns で完了したキャンペーンの結果をインポートします。
+> これは、サードパーティのソフトウェアとの統合の例です。 これは、例としてAdobe Campaignとの統合です。 完了したキャンペーンの結果を Adobe Campaigns に読み込みます。
 
-「PIN」行で、「キャンペーンの概要」をクリックします。
+「PIN」行で「キャンペーンの概要」をクリックします。
 
-- **Adobe Campaign概要**
+- **Adobe Campaignの概要**
 
 ![概要](./images/campaign-summary.png)
 
+- **Adobe Campaignが開封数に送信されました**
+
+![ 開封に送信済み ](./images/sent-to-open.png)
+
 - **Adobe Campaignの開封数**
 
-![送信して開く](./images/sent-to-open.png)
+![ 開いてクリック ](./images/open-to-click.png)
 
-- **Adobe Campaignのクリック数の開封数**
+次のステップ：[ まとめ ](../../conclusion.md)
 
-![クリックして開く](./images/open-to-click.png)
-
-次のステップ： [まとめ](../../conclusion.md)
-
-[フェーズ 4 に戻る — プロジェクトマネージャーのインサイト](./project-manager.md)
+[フェーズ 4 - プロジェクトマネージャーのインサイトに戻る](./project-manager.md)
 
 [すべてのモジュールに戻る](../../overview.md)

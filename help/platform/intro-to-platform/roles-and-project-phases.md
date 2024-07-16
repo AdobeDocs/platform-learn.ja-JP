@@ -1,6 +1,6 @@
 ---
 title: 役割とプロジェクトのフェーズ
-description: Experience Platformプロジェクトの成功に関わる役割、フェーズ、主な成果について説明します。
+description: Experience Platformプロジェクトを成功に導くための役割、フェーズ、重要な成果について説明します。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 jira: KT-4338
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 役割とプロジェクトのフェーズ
 
-Experience Platformプロジェクトの成功に関わる役割、フェーズ、主な成果について説明します。
+Experience Platformプロジェクトを成功に導くための役割、フェーズ、重要な成果について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on)
 

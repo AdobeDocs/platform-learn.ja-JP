@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Experience Platform上に構築されたアプリケーション
+# Experience Platformに基づいて構築されたアプリケーション
 
-Adobe Experience Platform上でネイティブに構築されたアプリケーション (Customer Journey Analytics、Real-time Customer Data Platform、Journey Optimizer、Mix Modeler) について説明します。
+Adobe Experience Platform上でネイティブに構築されたアプリケーション（Customer Journey Analytics、Real-time Customer Data Platform、Journey Optimizer、Mix Modeler）について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on)
 

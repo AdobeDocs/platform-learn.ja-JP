@@ -1,6 +1,6 @@
 ---
-title: データをMarketo Engageから取り込む
-description: 標準ワークフローとテンプレートワークフローを使用して、ソースコネクタを使用してMarketo Engageからデータを取り込む方法を説明します。
+title: Marketo Engageからのデータの取り込み
+description: 標準ワークフローとテンプレートワークフローで、ソースコネクタを使用してMarketo Engageからデータを取り込む方法を説明します。
 solution: Real-Time Customer Data Platform
 feature: Sources
 topic: Integrations
@@ -13,27 +13,27 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 6%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
-# データをMarketo Engageから取り込む
+# Marketo Engageからのデータの取り込み
 
-2 つのワークフローを使用して、ソースコネクタを使用して、Marketo EngageからReal-time Customer Data Platform、B2B Edition およびAdobe Experience Platformに簡単にデータを取り込む方法を説明します。
+2 つのワークフローを使用するソースコネクタを使用して、Marketo Engage から Real-time Customer Data Platform、B2B Edition および Adobe Experience Platform に簡単にデータを取り込む方法を説明します。
 
 ## テンプレートワークフロー
 
-テンプレートワークフローを使用してMarketo用のソースコネクタを設定する方法について説明します。 このワークフローは、Marketoデータの取り込みに必要なアセットをテンプレートに基づいて自動生成します。 事前の時間を節約でき、必要に応じてアセットをカスタマイズできます。
+テンプレートワークフローを使用してMarketoのソースコネクタを設定する方法について説明します。 このワークフローは、テンプレートに基づいてMarketo データを取り込むために必要なアセットを自動生成します。 これにより、事前の時間を節約し、必要に応じてアセットをカスタマイズできます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on)
 
 ## 標準ワークフロー
 
-標準ワークフローを使用してMarketo用のソースコネクタを設定する方法を説明します。 標準ワークフローでは、スキーマと ID 名前空間を事前に作成する必要があります。
+標準のワークフローを使用してMarketoのソースコネクタを設定する方法について説明します。 標準ワークフローでは、スキーマおよび ID 名前空間を事前に作成する必要があります。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 詳しくは、次のドキュメントを参照してください。
-* [Marketo Engageソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [UI のテンプレートを使用してソースのデータフローを作成する](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Marketo Engageソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html)。
+* [UI のテンプレートを使用したソースデータフローの作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

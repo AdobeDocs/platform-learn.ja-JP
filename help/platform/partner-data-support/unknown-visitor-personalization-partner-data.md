@@ -1,6 +1,6 @@
 ---
-title: パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする
-description: からサードパーティ属性を収集する方法を学ぶ [!DNL Adobe Experience Platform Web SDK] およびは、パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズします。
+title: パートナー支援の訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする
+description: からサードパーティ属性を収集する方法や、パートナー支援の訪問者認識を使用して  [!DNL Adobe Experience Platform Web SDK]  不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする方法について説明します。
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする
+# パートナー支援の訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズする
 
-からサードパーティ属性を収集する方法を学ぶ [!DNL Adobe Experience Platform Web SDK] およびは、パートナー支援による訪問者認識を使用して、不明な訪問者に対するオンサイトエクスペリエンスをパーソナライズします。 詳しくは、 [パートナーの支援による訪問者認識を使用して、オンサイトエクスペリエンスをパーソナライズする](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) ドキュメント。
+[!DNL Adobe Experience Platform Web SDK] ークフローからサードパーティ属性を収集し、パートナー支援訪問者認識を使用して未知の訪問者に対するオンサイトエクスペリエンスをパーソナライズする方法を説明します。 詳しくは、[ パートナー支援型訪問者認識を使用してオンサイトエクスペリエンスをパーソナライズする ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)

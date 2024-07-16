@@ -10,8 +10,8 @@ thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 3%
+source-wordcount: '1089'
+ht-degree: 2%
 
 ---
 
@@ -20,24 +20,24 @@ ht-degree: 3%
 <!-- 15min-->
 このレッスンでは、リアルタイム顧客プロファイルのスキーマとデータセットを有効にします。
 
-さて、データセットのレッスンはこのチュートリアルで最も短いレッスンだと言った時に嘘をつきました。これはより短い時間で済むはずです。 文字通りトグルを大きく変えるだけです しかし、これらのトグルを反転させると何が起こるかは、 _本当に_ 重要なので、1 ページ全体をそれに捧げたかったのです。
+データセットのレッスンはこのチュートリアルの最短のレッスンだと言ったら、嘘をつきました。このレッスンの時間はさらに短いはずです。 文字通りあなたがしようとしているのは、たくさんのトグルをフリップすることです。 しかし、これらの切り替えを反転させるとどうなるかは _本当に_ 重要なので、ページ全体を専用にしたいと思いました。
 
-リアルタイム顧客プロファイルを使用すると、オンライン、オフライン、CRM、サードパーティデータなど、複数のチャネルのデータを組み合わせた、各顧客の全体像を確認できます。 プロファイルを使用すると、個別の顧客データを統合ビューに統合し、顧客のやり取りごとに実用的なタイムスタンプ付きの説明を提供できます。
+リアルタイム顧客プロファイルを使用すると、オンライン、オフライン、CRM、サードパーティデータなど、複数のチャネルのデータを組み合わせて、各顧客の全体像を確認できます。 プロファイルを使用すると、個別の顧客データを統合ビューに統合し、顧客のやり取りごとに実用的なタイムスタンプ付きの説明を提供できます。
 
-他のすべての音と同様に、アクティブ化する必要はありません *すべてのデータ* （プロファイル用） 実際、アクティブ化の使用例に必要なデータのみを有効にする必要があります。 堅牢な顧客プロファイルへの迅速なアクセスが必要なマーケティングの使用例、コールセンター統合などに使用するデータを有効にします。 データを分析用にのみアップロードする場合は、プロファイルに対して有効にしないでください。
+驚くべきことに、プロファイルに対して *すべてのデータ* をアクティブ化する必要はありません。 実際には、アクティベーションのユースケースに必要なデータのみを有効にしてください。 堅牢な顧客プロファイルにすばやくアクセスする必要があるマーケティングのユースケース、コールセンターの統合などに使用したいデータを有効にします。 分析用のデータのみをアップロードしている場合は、プロファイルに対してデータを有効にしないでください。
 
-重要な点があります [リアルタイム顧客プロファイルデータのガードレール](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) プロファイルに対して有効にするデータを決定する際に確認する必要がある情報です。
+リアルタイム顧客プロファイルデータには重要な [ ガードレール ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) があり、プロファイルに対して有効にする必要がある独自のデータを決定する際に確認する必要があります。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**データアーキテクト** このチュートリアル以外で、リアルタイム顧客プロファイルを有効にする必要があります。
+**データアーキテクト** は、このチュートリアル以外でリアルタイム顧客プロファイルを有効にする必要があります。
 
-演習を始める前に、次の短いビデオを見てリアルタイム顧客プロファイルの詳細を確認してください。
+演習を開始する前に、この短いビデオを視聴してリアルタイム顧客プロファイルの詳細を確認してください。
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## 必要な権限
 
-Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -49,56 +49,56 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
 
 ## Platform ユーザーインターフェイスを使用したリアルタイム顧客プロファイルのスキーマの有効化
 
-まず、スキーマを有効にする簡単なタスクを見てみましょう。
+まず、スキーマを有効にする簡単なタスクから始めましょう。
 
-1. Platform ユーザーインターフェイスで、 **Luma ロイヤリティスキーマ**
-1. In **[!UICONTROL スキーマのプロパティ]**、切り替え **プロファイル** スイッチ
-1. 確認モーダルで、 **[!UICONTROL 有効にする]** ボタンをクリック
-1. を選択します。 **[!UICONTROL 保存]** ボタンをクリックして変更を保存します。
+1. Platform ユーザーインターフェイスで、**Luma ロイヤルティスキーマ** を開きます。
+1. **[!UICONTROL スキーマプロパティ]** で **プロファイル** スイッチを切り替えます
+1. 確認モーダルで、「**[!UICONTROL 有効]** ボタンを押して確認します
+1. 「**[!UICONTROL 保存]** ボタンを選択して、変更を保存します
 
    >[!IMPORTANT]
    >
-   >プロファイルに対してスキーマを有効にすると、無効にしたり削除したりすることはできません。 また、この時点以降は、フィールドをスキーマから削除できません。 実稼動環境で独自のデータを使用する際には、後で注意する必要があります。 このチュートリアルでは、開発用サンドボックスを使用する必要があります。開発用サンドボックスは、いつでも削除できます。
+   >プロファイルに対してスキーマを有効にすると、そのスキーマを無効にしたり削除したりできなくなります。 また、この時点より後にフィールドをスキーマから削除することはできません。 これらの影響は、実稼動環境で独自のデータを操作する際に後で留意することが重要です。 このチュートリアルでは開発用サンドボックスを使用する必要がありますが、このサンドボックスはいつでも削除できます。
    >
-   >このチュートリアルの制御環境で、プロファイルのスキーマとデータセットを有効にします。 _データを取り込む前に_. 独自のデータを使用する場合は、次の順序でおこなうことをお勧めします。
+   >このチュートリアルの制御された環境では、（データを取り込む前に _プロファイルのスキーマとデータセットを有効に_ します。 独自のデータを操作する場合は、次の順序で作業を行うことをお勧めします。
    >
-   > 1. まず、データをデータセットに取り込みます。
-   > 1. データ取り込みプロセス中に発生した問題（データ検証やマッピングの問題など）に対処します。
-   > 1. プロファイルのデータセットとスキーマの有効化
-   > 1. データの再取り込み
+   > 1. まず、データセットにデータを取り込みます。
+   > 1. データ取り込みプロセス中に発生した問題（データの検証やマッピングの問題など）に対処します。
+   > 1. プロファイル用のデータセットとスキーマの有効化
+   > 1. データの取り込み
 
 
-   ![プロファイル切り替え](assets/profile-loyalty-enableSchema.png)
+   ![ プロファイル切り替え ](assets/profile-loyalty-enableSchema.png)
 
-簡単でしょ？ 上記の手順を、他のスキーマに対して繰り返します。
+簡単だろ？ その他のスキーマに対して、上記の手順を繰り返します。
 
 1. Luma 製品カタログスキーマ
 1. Luma オフライン購入イベントスキーマ
-1. Luma Web Events スキーマ（確認モーダルで、「このスキーマのデータは、identityMap フィールドにプライマリ ID を含みます」チェックボックスをオンにします）。
+1. Luma web イベントスキーマ（確認モーダルで、「このスキーマのデータには、identityMap フィールドにプライマリ ID が含まれます」チェックボックスをオンにします）。
 
 ## Platform API を使用したリアルタイム顧客プロファイルのスキーマの有効化
 
-次に、 `Luma CRM Schema` と API が同時に使用されます。 この演習をスキップし、ユーザーインターフェイスで有効にする場合は、先に進んでください。
+次に、API を使用して `Luma CRM Schema` を有効にします。 この演習をスキップしてユーザーインターフェイスで有効にするだけの場合は、先に進んでください。
 
-### スキーマの meta:altId を取得します。
+### スキーマの meta:altId の取得
 
-まず、 `meta:altId` の `Luma CRM Schema`:
+まず、`Luma CRM Schema` の `meta:altId` を取得します。
 
-1. オープン [!DNL Postman]
-1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
-1. リクエストを開く **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. を選択します。 **送信** ボタン
-1. 200 件の応答が返されます
-1. レスポンスで `Luma CRM Schema` 項目を選択し、 `meta:altId` 値
-   ![meta:altId をコピーします。](assets/profile-crm-getMetaAltId.png)
+1. Open [!DNL Postman]
+1. アクセストークンがない場合は、[!DNL Postman] のレッスンと同様に、リクエスト **[!DNL OAuth: Request Access Token]** を開き、「**送信**」を選択して新しいアクセストークンをリクエストします。
+1. リクエスト **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** を開きます。
+1. 「**送信** ボタンを選択します
+1. 200 の応答が返されます。
+1. `Luma CRM Schema` 項目の応答を探し、`meta:altId` の値をコピーします
+   ![meta:altId をコピー ](assets/profile-crm-getMetaAltId.png)
 
-### スキーマを有効にする
+### スキーマの有効化
 
-これで、スキーマの meta:altId が取得されたので、プロファイルに対して有効にできます。
+スキーマの meta:altId を取得したので、これをプロファイルに対して有効にします。
 
-1. リクエストを開く **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
-1. Adobe Analytics の **パラメーター** 貼り付け `meta:altId` の値を `SCHEMA_ID` パラメーター値
-1. Adobe Analytics の **本文** 」タブに、次のコードを貼り付けます。
+1. リクエスト **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** を開きます。
+1. **Params** に、`meta:altId` 値を `SCHEMA_ID` のパラメーター値として貼り付けます
+1. 「**本文**」タブに、次のコードをペーストします。
 
    ```json
    [{
@@ -108,26 +108,26 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
    }]
    ```
 
-1. を選択します。 **送信** ボタン
-1. 200 件の応答が返されます
+1. 「**送信** ボタンを選択します
+1. 200 の応答が返されます。
 
-   ![SCHEMA_ID パラメーターとして使用するカスタム meta:altId を使用して、プロファイルの CRM スキーマを有効にします。](assets/profile-crm-enableProfile.png)
+   ![ カスタムの meta:altId を SCHEMA_ID パラメーターとして使用して、プロファイルの CRM スキーマを有効にします ](assets/profile-crm-enableProfile.png)
 
-ユーザーインターフェイスで、5 つのスキーマすべてがプロファイルに対して有効になっていることを確認できます（確認するには、Shift キーを押しながらリロードする必要がある場合があります）。 `Luma CRM Schema` は有効です。
-![すべてのスキーマが有効です](assets/profile-allSchemasEnabled.png)
+ユーザーインターフェイスに、5 つのスキーマすべてがプロファイルに対して有効になっていることを確認できます（`Luma CRM Schema` が有効になっていることを確認するには、SHIFT キーを押しながら再読み込みが必要な場合があります）。
+![All schemas enabled](assets/profile-allSchemasEnabled.png)
 
 
 ## Platform ユーザーインターフェイスを使用したリアルタイム顧客プロファイルのデータセットの有効化
 
-データセットはプロファイルに対しても有効にする必要があり、プロセスはさらに簡単です。
+データセットもプロファイルに対して有効にする必要があり、プロセスはさらに簡単です。
 
-1. Platform ユーザーインターフェイスで、 `Luma Loyalty Dataset`
-1. 切り替え **[!UICONTROL プロファイル]** スイッチ
-1. 確認モーダルで、 **[!UICONTROL 有効にする]** ボタンをクリック
+1. Platform ユーザーインターフェイスで、`Luma Loyalty Dataset` を開きます
+1. **[!UICONTROL プロファイル]** スイッチを切り替えます
+1. 確認モーダルで、「**[!UICONTROL 有効]** ボタンを押して確認します
 
-   ![ プロファイル切り替え](assets/profile-loyalty-enableDataset.png)
+   ![ プロファイルの切り替え ](assets/profile-loyalty-enableDataset.png)
 
-これらの他のデータセットに対して、上記の手順を繰り返します。
+その他のデータセットに対して、上記の手順を繰り返します。
 
 1. Luma 製品カタログデータセット
 1. Luma オフライン購入イベントデータセット
@@ -135,31 +135,31 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
 
 >[!NOTE]
 >
->スキーマとは異なり、プロファイルからデータセットを無効にできますが、以前に取り込まれたデータはすべてプロファイルに残ります。
+>スキーマとは異なり、プロファイルからデータセットを無効にすることができますが、以前に取り込んだデータはすべてプロファイルに残ります。
 
 ## Platform API を使用したリアルタイム顧客プロファイルのデータセットの有効化
 
-次に、API を使用して、プロファイルのデータセットを有効にします。 上記の方法を使用してユーザーインターフェイスで有効にしたい場合も、それは問題ありません。
+次に、API を使用してプロファイルのデータセットを有効にします。 ここでも、上記の方法を使用してユーザーインターフェイスを介して有効にする場合は、それも問題ありません。
 
-### データセットの ID を取得する
+### データセットの ID の取得
 
-まず、 `id` の `Luma CRM Dataset`:
+まず、`Luma CRM Dataset` の `id` を取得する必要があります。
 
-1. オープン [!DNL Postman]
-1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
-1. リクエストを開く **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. を選択します。 **送信** ボタン
-1. 200 件の応答が返されます
-1. レスポンスで `Luma CRM Dataset` 項目を選択し、id をコピーします。
-   ![ID をコピーする](assets/profile-crm-copyDatasetId.png)
+1. Open [!DNL Postman]
+1. アクセストークンがない場合は、[!DNL Postman] のレッスンと同様に、リクエスト **[!DNL OAuth: Request Access Token]** を開き、「**送信**」を選択して新しいアクセストークンをリクエストします。
+1. リクエスト **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** を開きます。
+1. 「**送信** ボタンを選択します
+1. 200 の応答が返されます。
+1. `Luma CRM Dataset` の項目の応答を探し、id をコピーします。
+   ![ID をコピー ](assets/profile-crm-copyDatasetId.png)
 
 ### データセットの有効化
 
-データセットの ID が揃ったので、プロファイルに対して有効にできます。
+データセットの ID を取得したので、これをプロファイルに対して有効にします。
 
-1. リクエストを開く **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
-1. Adobe Analytics の **パラメーター** を更新します。 `DATASET_ID` 自分自身の価値
-1. Adobe Analytics の **本文** 「 」タブに、次のコードを貼り付けます。 最初の 2 つの値は、前の応答で表示される既存のタグです。 追加する 2 つの新しいタグに加えて、本文に含める必要があります。
+1. リクエスト **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]** を開きます。
+1. **Params** で `DATASET_ID` の値を独自の値に更新します
+1. 「**本文**」タブに、次のコードを貼り付けます。 最初の 2 つの値は、以前の応答に表示される既存のタグです。 追加する 2 つの新しいタグに加えて、本文に含める必要があります。
 
    ```json
    {
@@ -172,23 +172,23 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
    }
    ```
 
-1. を選択します。 **送信** ボタン
-1. 200 件の応答が返されます
+1. 「**送信** ボタンを選択します
+1. 200 の応答が返されます。
 
-   ![プロファイルの CRM データセットを有効にし、カスタムデータセット ID を DATASET_ID パラメーターとして使用するようにします。](assets/profile-crm-enableDataset.png)
+   ![ プロファイルの CRM データセットを有効にします。カスタムデータセット ID を DATASET_ID パラメーターとして使用してください ](assets/profile-crm-enableDataset.png)
 
-また、ユーザーインターフェイスに有効なデータセットが表示されていることを確認することもできます。
-![確認](assets/profile-crm-confirmEnabled.png)
+また、ユーザーインターフェイスでデータセットが有効になっていることを確認できます。
+![ 確認 ](assets/profile-crm-confirmEnabled.png)
 
 >[!IMPORTANT]
 >
-> データを取り込んでからプロファイルのスキーマとデータセットを有効にした場合は、後でそのデータを再度取り込む必要があります。
+> プロファイルのスキーマとデータセットを有効にする前にデータを取り込んだ場合は、後でそのデータを再度取り込む必要があります。
 
 ## その他のリソース
 
-* [リアルタイム顧客プロファイルドキュメント](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
-* [リアルタイム顧客プロファイル API リファレンス](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
+* [ リアルタイム顧客プロファイル API リファレンス ](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**データエンジニア** は、 [データ取り込みイベントへのサブスクライブ](subscribe-to-data-ingestion-events.md) レッスン。
-**データアーキテクト** _先に進む_ そして、 [バッチ取得レッスン](ingest-batch-data.md).
+**データエンジニア** は、引き続き [ データ取り込みイベントの購読 ](subscribe-to-data-ingestion-events.md) レッスンに進んでください。
+**データアーキテクト**_スキップして先に進み_[ バッチ取り込みレッスン ](ingest-batch-data.md) に進むことができます。

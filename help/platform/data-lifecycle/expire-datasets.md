@@ -19,11 +19,11 @@ ht-degree: 1%
 
 Adobe Experience Platformのデータハイジーン機能を使用して、データセットの削除をスケジュールする方法を説明します。
 
-データセット削除を使用すると、データスチュワードとデータエンジニアがデータセットの有効期限を設定できます。 詳しくは、 [データハイジーンに関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=ja).
+データセット削除を使用すると、データスチュワードとデータエンジニアがデータセットの有効期限を設定できます。 詳しくは、[ データハイジーンのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=ja) を参照してください。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
 
 >[!NOTE]
 >
-> Platform のお客様は誰でも、 [オンデマンドでデータセットを削除](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). データセット削除のスケジュールは、現在、Healthcare Shield またはプライバシーとセキュリティシールドのお客様のみが利用できます。
+> すべての Platform 顧客は [ データセットをオンデマンドで削除 ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete) できます。 データセット削除のスケジュールは、現在、Healthcare Shield またはプライバシーとセキュリティシールドのお客様のみが利用できます。

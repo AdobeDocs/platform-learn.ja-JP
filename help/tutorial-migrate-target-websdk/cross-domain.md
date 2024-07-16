@@ -1,46 +1,47 @@
 ---
-title: クロスドメインサポートの有効化 | at.js 2.x から Web SDK への Target の移行
-description: Experience PlatformWeb SDK を使用して、クロスドメインおよびモバイルアプリ用にAdobe Targetを Web ブラウザーシナリオに設定する方法について説明します。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: クロスドメインサポートの有効化 | Target を at.js 2.x から Web SDK に移行
+description: Experience Platform Web SDK を使用して、クロスドメインおよびモバイルアプリから web ブラウザーへのシナリオに対応するようにAdobe Targetを設定する方法について説明します。
+exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 1%
+source-wordcount: '455'
+ht-degree: 0%
 
 ---
 
-# クロスドメインの訪問者プロファイルの有効化
+# クロスドメイン訪問者プロファイルの有効化
 
-Platform Web SDK は、訪問者 ID 共有機能をサポートします。この機能を使用すると、ドメインをまたいで、パーソナライズされたエクスペリエンスをより正確に配信できます。 この機能を使用すると、サードパーティ cookie に依存することなく、ドメイン間で一貫したパーソナライゼーションを提供し、訪問者のアクティビティレポートの精度を高めることができます。
+Platform Web SDK は、訪問者 ID 共有機能をサポートしており、ドメインをまたいで、パーソナライズされたエクスペリエンスを顧客がより正確に提供できるようにします。 この機能を使用すると、サードパーティの Cookie に依存することなく、ドメイン間で一貫したパーソナライゼーションを提供し、訪問者アクティビティレポートの精度を高めることができます。
 
 ## 前提条件
 
-クロスドメイン ID 共有を使用するには、Platform Web SDK バージョン2.11.0以降を使用する必要があります。 この機能は、VisitorAPI.js バージョン 1.7.0 以降とも互換性があります。
+クロスドメイン ID 共有を使用するには、Platform Web SDK バージョン 2.11.0 以降を使用する必要があります。 この機能は、VisitorAPI.js バージョン 1.7.0 以降とも互換性があります。
 
-クロスドメイン ID 共有は、特別な `adobe_mc` 宛先ドメインの URL へのクエリー文字列パラメーター。 このパラメーターは、新しい ID を生成したり、既存の ID を使用したりする代わりに、訪問者 ID を指定するために使用されます。
+クロスドメイン ID 共有は、宛先ドメインの URL に特別な `adobe_mc` クエリ文字列パラメーターを追加することで機能します。 このパラメーターは、新しい ID を生成したり、既存の ID を使用したりせずに、訪問者 ID を指定するために使用されます。
 
-を処理するには、宛先ドメインがクロスドメイン ID 共有にこれらのライブラリのいずれかを使用する必要があります `adobe_mc` パラメーターを使用し、訪問者 ID を適切に共有する必要があります。
+`adobe_mc` パラメーターを処理して訪問者 ID を適切に共有するには、宛先ドメインがクロスドメイン ID の共有にこれらのライブラリのいずれかを使用する必要があります。
 
 ## アプローチの比較
 
-実装する前に、まず、既存の実装が `visitor.appendVisitorIDsTo()` 関数に置き換えます。 この関数を使用するカスタムコードは、新しい `appendIdentityToUrl` Web SDK コマンド。
+実装する前に、まず、既存の実装が `visitor.appendVisitorIDsTo()` 関数を使用しているかどうかを判断します。 この関数を使用しているカスタムコードは、新しい `appendIdentityToUrl` Web SDK コマンドを使用するように更新する必要があります。
 
 | VisitorAPI.js | Platform Web SDK |
 | --- | --- |
 | `visitor.appendVisitorIDsTo(*url*)` | `alloy("appendIdentityToUrl", { url: *url* })` |
 
-## の使用 `appendIdentityToURL` command
+## `appendIdentityToURL` コマンドの使用
 
-クロスドメイン ID 共有の場合、Web SDK バージョン2.11.0では、 `appendIdentityToUrl` コマンドを使用します。 このコマンドを使用すると、 `adobe_mc` クエリー文字列パラメーター。
+クロスドメイン ID 共有の場合、Web SDK バージョン 2.11.0 では、`appendIdentityToUrl` コマンドのサポートが追加されました。 このコマンドを使用すると、`adobe_mc` のクエリ文字列パラメーターが生成されます。
 
-このコマンドは、1 つのプロパティを持つオブジェクトを受け入れます。 `url`を返し、プロパティ url を持つオブジェクトを返します。
+このコマンドは、1 つのプロパティ `url` を持つオブジェクトを受け入れ、プロパティ url を持つオブジェクトを返します。
 
-このコマンドは、同意の更新を待ちません。 同意が提供されていない場合、URL は変更されずに返されます。
+このコマンドは、同意の更新を待ちません。 同意が指定されていない場合、URL は変更されずに返されます。
 
-ECID を指定しない場合、 `/acquire` エンドポイントが呼び出されて、ECID が生成されます。
+ECID が指定されていない場合は、`/acquire` エンドポイントが呼び出されて、ECID が生成されます。
 
-クロスドメイン ID 共有の実装方法の例を以下に示します。
+クロスドメイン ID 共有を実装する方法の例を以下に示します。
 
-このコードは、ページ上のすべてのクリックに対してイベントリスナーを追加します。 一致するドメイン（この場合は adobe.com または behance.com）へのリンクをクリックした場合、ID が URL に追加され、そこでユーザーにリダイレクトされます。
+このコードは、ページ上のすべてのクリックに対してイベントリスナーを追加します。 クリックが一致するドメイン（この場合はadobe.comまたはbehance.com）へのリンクであった場合、ID を URL に追加し、その URL にあるユーザーをリダイレクトします。
 
 ```Javascript
 document.addEventListener("click", event => {
@@ -61,14 +62,14 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->タグ機能（旧称 Launch）を使用して Web SDK を実装する場合、クロスドメイン ID 共有は、カスタムコードを使用しなくても実行できます。 詳しくは、 [専用ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) を参照してください。
+>タグ機能（旧称 Launch）を使用して Web SDK を実装する場合、カスタムコードを使用しなくても、クロスドメイン ID 共有を実現できます。 詳しくは、[ 専用ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) を参照してください。
 
 >[!NOTE]
 >
->Platform Web SDK では、ネイティブのモバイルアプリの使用例に対して、モバイルから Web への ID 共有もサポートしています。 詳しくは、 [モバイルから Web への ID の共有とクロスドメイン ID の共有](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
+>Platform Web SDK は、ネイティブモバイルアプリのユースケースでモバイルから web への ID 共有もサポートしています。 詳しくは、モバイルから web およびクロスドメインでの ID の共有 [ に関する専用ドキュメントを参照し ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html) ください。
 
-次に、 [オーディエンスとプロファイルスクリプトの更新](update-audiences.md) を使用して、Platform Web SDK との互換性を確保します。
+次に、Platform Web SDK との互換性を確保するために [ オーディエンスとプロファイルスクリプトを更新 ](update-audiences.md) する方法について説明します。
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

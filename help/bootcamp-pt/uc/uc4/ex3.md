@@ -1,6 +1,6 @@
 ---
-title: Bootcamp -Customer Journey Analytics — データビューの作成 — ブラジル
-description: Customer Journey Analytics — データビューの作成 — ブラジル
+title: Bootcamp - Customer Journey Analytics - データビューの作成 – ブラジル
+description: Customer Journey Analytics - データビューの作成 – ブラジル
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,293 +11,293 @@ feature: Data Views
 exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1667'
 ht-degree: 2%
 
 ---
 
-# 4.3 Crie uma Visualização de Dados
+# 4.3 クリエ ウマ ビジュアライザソン デ ダドス
 
-## Objectivos
+## Objetivos
 
 - Entenda a UI de Visualização de Dados
-- Compreenda as configuraçoes básicas de definição de visita
-- Compreenda a attribução e a Persistência em uma Visualização de
+- Compreenda as configuraçóui es básicas de definição de visita （デヴィシータの設定）
+- Compreenda atribuição e a Persistência em uma Visualização de
 
-## 4.3.1 Visualização de Dados
+## 4.3.1 ビジュアライザカオ・デ・ダドス
 
-アゴラ、com sua conexão の結論，é 占領プログレディルパラ影響者は、ビジュアライゼーションをサンドル。 Uma diferença entre o Adobe Analytics e o CJAé que o CJA precisa de uma visualização de dados para limpar e preparar os dados antes da visualização.
+Agora, com sua conexão concluída, é possível progredir para influenciar a visualização. Uma diferença entre o Adobe Analytics e o CJA é que o CJA precisa de uma visualização de dados parlimpar e preparar os dados antes da visualização. （原題：英語）
 
-Uma Visualização de Dadosé semelhante ao ae mitconto de Virtual Report Suites no Adobe Analytics, onde vocelece as definitiones de visita com reconchemento de contexto, filteragem e também comoponents tos santes sados sados
+Uma Visualização de Dados é semelhante ao conceito de Virtual Report Suites no Adobe Analytics, onde você estabelece as definiçóes de visita com reconhecimento de contexto, filtragem e também como os componentes são chamados.
 
-Será nesário, no mínimo, uma Visualização de Dados por conexão. No entanto, para alguns casos de uso,éótimo ter múltiplas Visualizaçoes de Dados para a mesma conexão, com o objetivo de fornecer insights diferentes para iples distintas distas. Se você deseja que sua empresa seja orientada por dados, deve adaptar a forma como os dados ssano vistos em cada equipe. アルゴリズムの終了：
+Será nerecário, no mínimo, uma Visualização de Dados por conexão （セラー・デザリオ、ノーマイニモ） No entanto, para alguns casos de uso, é ótimo ter múltiplas Visualizaçóes de Dados para a mesma conexão, com o objetivo de fornecer insights diferentes para equipes distintas. （英語） Se você deseja que sua empresa seja orientada por dados, deve adaptar a forma como os dados são vistos em cada equipe. （英語） Alguns の解説：
 
-- Métricas de UX apenas para a eupide de UX デザイン
-- os mesmos nomes para KPIs e metricas para o metricas para oGoogle Analyticse para oCustomer Journey Analytics、para que a epuide de análise digital fale apenas 1 idioma を使用します。
-- Visualização de Dados フィルタのパラモストラ、por エグザンプロ、dados para apenas um mercado、ou marca、ou apenas para Dispositivos mvois。
+- Métricas de UX apenas para a equipe de UX デザイン
+- KPIs e métricas para o Google Analytics e paro Customer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma.
+- Visualização de Dados filtrada para mostrar, por exempo, dados para apenas um mercado, ou uma marca, ou apenas para Dispositivos móveis （ダドス・パラ・アペナス・パラアペナス・マルカ）.
 
-ナテラデ **接続** marque caixa de seleção da conexão que vocabou de criar クリック  **データビューを作成**.
+Na tela de **Connections** marque a caixa de seleção da conexão que você acabou de criar.（接続） **データビューを作成** をクリックします。
 
-![デモ](./images/exta.png)
+![ デモ ](./images/exta.png)
 
-Vocêserá redirectionado para o fluxo de trabalho **データビューを作成** ワークフロー。
+Você será redirectionado para o fluxo de trabalho **データビューを作成** ワークフロー
 
-![デモ](./images/0-v2.png)
+![ デモ ](./images/0-v2.png)
 
-## 4.3.2 Definição de Visualização de Dados
+## 4.3.2 デ・ダドスのビジュアライゼーション
 
-アゴラヴォーコードは、定義として設定されます。
+Agora você pode configurar as definiçóes básicas para sua Visualização de dados.（アゴラ・ボーケ・ポデ・コンフィギュラー）
 
-![デモ](./images/0-v2.png)
+![ デモ ](./images/0-v2.png)
 
-A **接続** que vocriou no expercicio anterior já está selecionada スアコネサンセチャマ `yourLastName – Omnichannel Data Connection`.
+A **Connection** que você criou no exercício anterior já está selecionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`。
 
-![デモ](./images/ext5.png)
+![ デモ ](./images/ext5.png)
 
-Em seguida, dêum nome ua Visualização de Dados seguindo este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
+Em seguida, dê um nome à sua Visualização de Dados seguindo este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
 
-メズモの内側のバラは descrição: `yourLastName – Omnichannel Data View`.
+Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data View`.
 
 | 名前 | 説明 |
 | ----------------- |-------------| 
 | `yourLastName – Omnichannel Data View` | `yourLastName – Omnichannel Data View` |
 
-![デモ](./images/1-v2.png)
+![ デモ ](./images/1-v2.png)
 
-パラ **タイムゾーン**，セレオネオフソホラリオ **ベルリム、エストコルモ、ローマ、ベルナ、ブルクセラス、ヴィエナ、アムステルダン GMT+01:00**. エステ・アム・セナリオ・レアメンテ・インテレスサンテ、ポイス・アルグマ・エンプレサス・オペラム・ディフェレンテス・パイセ・エ・ジオグラフィアス。 Alocar o fuso horario certo para cada país evitara erros típicos de dados, como, por exemgno, acreditar ce a maioria das pessoas compra camisetasàs 4h no Peru.
+Para **タイムゾーン**、セレクオネ・オ・フソ・ホラーリオ **ベリム、エストコルモ、ロマ、ベルナ、ブルクセラス、ヴィエナ、Amsterd GMT+01:00**。 Este é um cenário realmente interessante, pois algumas empressas operam em diferentes países e geografias.（エスティ・エ・セナリオ・アルメンテ・インテレサンテ、ポア・アルグマ・エムプレサス・オペラム・エム・ディファレンテス・エム・ディファレンテス・エ・ジオグラフィアス） Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por exempo, acreditar que a maioria das pessoas compra camisetas âs 4h no Peru. （ペルーの風刺画）
 
-![デモ](./images/ext7.png)
+![ デモ ](./images/ext7.png)
 
-Voce também pode modificar nomenclatura das métricas principais (Pessoa, Sessão e Evento). イッソナンエオブリガトリオ、マスアルガンクリエンテスゴスタムドゥユサルペソア、ヴィシタスエアセソエムベゾデペソア、セッサオエイベントス (convenção de nomenclatura padro doCustomer Journey Analytics)。
+Você também pode modificar a nomenclatura das métricas principais （Pessoa, Sessão e Evento）. Isso não é obrigatório, mas alguns clientes gostam de usar Pessoas, Visitas e Acessos em vez de Pessoa, Sessão e Eventos （convenção de nomenclatura padrão do Customer Journey Analytics）.
 
-seguintes configuraçoes definidas としてのアゴラ語の vodeve ter:
+Agora você deve ter as seguintes configuraçóes definidas:
 
-![デモ](./images/1-v2.png)
+![ デモ ](./images/1-v2.png)
 
-クリック **保存して続行**.
+「**保存して続行**」をクリックします。
 
-![デモ](./images/12-v2.png)
+![ デモ ](./images/12-v2.png)
 
-## 4.3.3 コンポーネント da ビジュアライゼーション dados
+## 4.3.3 ダドスの可視化
 
-Neste expercício, vocêirá configurar os componentsesários para analisar os dados e visualizá-los usando o Analysis Workspace. ネスタ IU, há três areas principais:
+Neste exercício, você irá configurar os componentes necários para analisar os dados e visualizá-los usando o Analysis Workspace. Nesta IU, há três áreas principais:
 
-- ラド・エスカード：コンポーネント disponíveis dos データセットセレクション
-- 明王：Components adicionados a Visualização de Dados
-- ラド・ディレイト：コンポーネントの構成
+- Lado esquerdo: Componentes disponíveis dos datasets selecionados
+- メイオ：Componentes adicionados à Visualização de Dados
+- Lado direito: Configuraçóes do component
 
-![デモ](./images/2-v2.png)
+![ デモ ](./images/2-v2.png)
 
 >[!IMPORTANT]
 >
->Se vocé não encontruma métrica ou dimensiospecica, verifique se o campo `Contains data` foi removido de sua visualização de dados カソ・コントラリオ、除外エッセ・カンポ。
+>デ・ダドスのデ・デ・ダドスのデ・サン・デ・エスペシフィカ `Contains data` デ・サン・デ・サン・デ・サン・デ・サン・デ・サン・サン・デ・サン・デ・サン・デ・サン・サン・サン・デ・サン・デ・サン・サン・デ・サン・サン・サン・サン・デ・サン・サン・サン・デ・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サンは、デ・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サン・サンにをにににを置いています。 カソ・コントラリオ、エククラ・エスセ・カンポ。
 >
->![デモ](./images/2-v2a.png)
+>![ デモ ](./images/2-v2a.png)
 
-アゴラ・ヴォーチェ・プレシャ・アラスター・ソルター・オス・コンポーネント (Agora vocarastar e soltar os components) 必要性パラ・アナリセ・ノス (Anarise nos) **追加されたコンポーネント**. Para isso, você deve selecionar os コンポーネント no menu a esquerda e arrastá-los e soltá-los na tela no meio.
+Agora você precisa arrastar e soltar os componentes necários para a análise nos **コンポーネント追加**. Para isso, você deve selecionar os componentes no menu à esquerda e arrastá-los e soltá-los na tela no meio.
 
-Vamos começar com o primeiro componente: **名前 (web.webPageDetails.name)**. Pesquise esse componente e arraste-o e solte-o na tela.
+Vamos começar com o primeiro componente: **Name （web.webPageDetails.name）**. Pesquise esse componente e arraste-o e solte-o na tela. （英語）日本語で説明します。
 
-![デモ](./images/3-v2.png)
+![ デモ ](./images/3-v2.png)
 
-Esse componenteé o nome da página, como voce derivar da leitura do campo do schema `(web.webPageDetails.name)`.
+Esse componente é o nome da página, como você pode derivar da leitura do campo do schema `(web.webPageDetails.name)`. （英語）
 
-エンタント、ユサル **名前** como o nome nãoé a melhor convenção de nomenclatura para um usuário corporatevo compreender rapidamente essa dimensiono
+No entanto, usar **名前** como o nome não é a melhor convenção de nomenclatura para um usuário corporativo compreender rapidamente essa dimensão. （英語）
 
-バモス・ムダル・オ・ノーム・パラ **ページ名**. クリケノコンポーネント e o renomeie na area **コンポーネント設定**.
+Vamos mudar o nome para **ページ名**. Clique no componente e o renomieie na área **コンポーネント設定**.
 
-![デモ](./images/3-0-v2.png)
+![ デモ ](./images/3-0-v2.png)
 
-Configuraçoes de persistência são として **永続性設定**. Os concietos de eVars e prop não existem no CJA, mas as configuraçoes de Persistência possibilitam um comportamento semelhante.
+Configuraçôes de persistência são **永続性設定** として設定されます。 Os conceitos de eVars e prop não existem no CJA, mas as configuraçóes de Persistência possibilitam um um comportamento semelhante.（英語）
 
-![デモ](./images/3-0-v21.png)
+![ デモ ](./images/3-0-v21.png)
 
-Se vocênão alterar essas configuraçoes, o CJA irá interpretar a dimensionsão como um **Prop** (nivel de ocorrência)。 Além disso, podemos alterar a Persistência para tornar a dimensionuma **eVar** （パルシャロ・ヴァロ・アオ・ロンゴ・ダ・ヨルナダ）。
+Se você não alterar essas configuraçóes, o CJA irá interpretar a dimensão como um **Prop** （nível de ocorrência）. アレム・ディスソ、ポデモスはオルタラーのペルシスタテンシア・パラ・トルナーはディメンソン・ウマの **eVar** （persistir o valor ao longo da jornada）。
 
-Se vocênão estiver familizado com eVars e Props, [leia mais sob isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)...
+Se você não estiver familiarizado com eVars e Props, [leia mais sobre isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
 
-Vamos deixar o Nome da Página como Prop. デッサフォルマ、ヴォークナンプレシサオルタルネヌマ **永続化設定**.
+Vamos deixar o Nome da Página como Prop.（バモス・デイシャ・オ・ノーム・ダ・パジーナ・コモ） Dessa forma, você não precisa alterar nenhuma **永続性設定**.
 
-| 検索するコンポーネント名 | 新しい名前 | 永続化設定 |
+| 検索するコンポーネント名 | 新しい名前 | 永続性の設定 |
 | ----------------- |-------------| --------------------| 
-| 名前 (web.webPageDetails.name) | ページ名 |          |
+| 名前（web.webPageDetails.name） | ページ名 |          |
 
-Em seguida, escolha a dimensiono **phoneNumber** solte-a na tela を使用します。 O novo nome deve ser **電話番号**.
+Em seguida, escolha a dimensão **phoneNumber** e solte-a na tela. O novo nome deve ser **電話番号**。
 
-![デモ](./images/3-1-v2.png)
+![ デモ ](./images/3-1-v2.png)
 
-Configuraçoes de persistência, pois o Número de Celular deve persicale no nível do usário のように Por フィム、ヴァモスアルター。
+Por fim, vamos alterar as Configuraçóes de persistência, pois o Número do Celular deve persistir no nível do usuário. （プール・フィム、ワモスの代わりに、ペルシステス・デ・ペルシステイニャと呼ぶ）
 
-Para alterar a Persistência, role para baixo no menu a direita e abra a aba **永続性**:
+Para alterar a Persistência, role para baixo no menu à direita e abra a aba **永続性**:
 
-![デモ](./images/5-v2.png)
+![ デモ ](./images/5-v2.png)
 
-caixa de seleção para modificar a configuraçoes de persistência として Marque a caixa de seleção para modificar。 選択 **最新** e o escopo **担当者（レポートウィンドウ）**, pois nos preocupamos apenas com oúltimo número de celular da pessoa. Se o cliente não preencher o celular em visitas futuras, vocainda verá esse valor preenchido.
+Marque a caixa de seleção para modificar as configuraçóes de persistência.（マルケ・ア・カイサ・デ・セレサン・パラ・モディフィカル） Selecione **最新** e o escopo **Person （レポートウィンドウ）**, pois nos preocupamos apenas com o último número de celular da pessoa. セオ・クライアンテ・ナン・プレンシェ・オ・セルーラ・エ・ヴィシタス・フューチュラス、ボーケ・アインダ・ヴェラ・セヴァラー・プレンチド。
 
-![デモ](./images/6-v2.png)
+![ デモ ](./images/6-v2.png)
 
-| 検索するコンポーネント名 | 新しい名前 | 永続化設定 |
+| 検索するコンポーネント名 | 新しい名前 | 永続性の設定 |
 | ----------------- |-------------| --------------------| 
-| phoneNumber | 電話番号 | 最新、担当者（レポートウィンドウ） |
+| phoneNumber | 電話番号 | 最新、個人（レポートウィンドウ） |
 
-オプロキシモ成分 `web.webPageDetails.pageViews.value`.
+O próximo componente é `web.webPageDetails.pageViews.value`.
 
-メニューの追加、ペスキー `web.webPageDetails.pageViews.value`. アレステ・ソルテ・エッサ・メトリカ・ナ・テラ。
+メニューはありませんエスクエルダ、pesquise`web.webPageDetails.pageViews.value`。 ある特定の国家の法律
 
-ノームパラの変更 **ページビュー数** の下に **コンポーネント設定**.
+「コンポーネント設定 **の下の** ページビュー **以外のパラ** も使用します。
 
-| 検索するコンポーネント名 | 新しい名前 | 属性設定 |
+| 検索するコンポーネント名 | 新しい名前 | アトリビューション設定 |
 | ----------------- |-------------| --------------------| 
 | web.webPageDetails.pageViews.value | ページビュー数 |         |
 
-![デモ](./images/7-v2.png)
+![ デモ ](./images/7-v2.png)
 
-Para as configuraçoes de attribução, deixaremos em branco.
+Para as configuraçóui es de atribuição, deixaremos em branco.（パラアール・アール・フォルト・デ・アトリブイソン、ディキサレモス・エム・ブランコ）
 
-Observação:設定のとおり、 de persistência nas métricas também podem ser alteradas no Analysis Workspace. エムアルグンカソス、ボークポデオプタルポーココンフィギュラララスアクイパラエヴィタルクオススウサリオスデネゴシオステナムペンサルクアルエオメルホルモデロデペルシステンシア。
+Observação: As configuraçóíes de persistência nas métricas também podem ser alteradas no Analysis Workspace. アルガンカジノ、ボーシェ・ポデ・オッタル・ポル・コンフィギュラ – ラス・アクイ・パラ・エビタル ケ os usuários de negócios tenham que pensar qual é o melhor modelo de persistência.
 
-エムセギダ、ヴォクテラ・ク・コフィュラヴァリアスディメンソエメトリカス、コンフォーメ・インディカドナ・タベラ・アバイクソ。
+Em seguida, você terá que configurar várias Dimensóes e Métricas, conforme indicado na tabela abaixo （英語）
 
 ### 寸法
 
-| 検索するコンポーネント名 | 新しい名前 | 永続化設定 |
+| 検索するコンポーネント名 | 新しい名前 | 永続性の設定 |
 | ----------------- |-------------| --------------------| 
 | brandName | ブランド名 | 最新、セッション |
-| 冷感 | 通話感 |          |
+| 冷感 | 呼び出し感 |          |
 | 呼び出し ID | 呼び出しインタラクションタイプ |          |
-| callTopic | トピックを呼び出し | 最新、セッション |
-| ecid | ECID | 最新、担当者（レポートウィンドウ） |
-| メール | 電子メール ID | 最新、担当者（レポートウィンドウ） |
+| callTopic | トピックの呼び出し | 最新、セッション |
+| ecid | ECID | 最新、個人（レポートウィンドウ） |
+| メール | メール ID | 最新、個人（レポートウィンドウ） |
 | 支払タイプ | 支払タイプ |          |
-| 製品追加メソッド | 製品追加メソッド | 最新、セッション |
+| 商品追加方法 | 商品追加方法 | 最新、セッション |
 | イベントタイプ | イベントタイプ |         |
-| 名前 (productListItems.name) | 製品名 |         |
-| SKU | SKU（セッション） | 最新、セッション |
+| 名前（productListItems.name） | 製品名 |         |
+| SKU | SKU （セッション） | 最新、セッション |
 | トランザクション ID | トランザクション ID |         |
-| URL (web.webPageDetails.URL) | URL |         |
+| URL （web.webPageDetails.URL） | URL |         |
 | ユーザーエージェント | ユーザーエージェント | 最新、セッション |
 
 ### メトリカ
 
-| 検索するコンポーネント名 | 新しい名前 | 属性設定 |
+| 検索するコンポーネント名 | 新しい名前 | アトリビューション設定 |
 | ----------------- |-------------| --------------------| 
 | 数量 | 数量 |          |
-| commerce.order.priceTotal | 売上高 |         |
+| commerce.order.priceTotal | 収益 |         |
 
 Sua configuração deve ser semelhante ao seguinte:
 
-![デモ](./images/11-v2.png)
+![ デモ ](./images/11-v2.png)
 
-サンセエスケサデサルバルスアビジュアライゼーショデダドス エントンクリケ **保存**.
+Não se esqueça de Salvar sua Visualização de Dados. Então clique em **保存**。
 
-![デモ](./images/12-v2s.png)
+![ デモ ](./images/12-v2s.png)
 
-## 4.3.4 メトリカスカルカダ
+## 4.3.4 メトリカ結石
 
-Embora tenhamos organizado todos componentes na Visualização de dados, vocainda deve adaptar alguns deles para que os usários de negcios estejam prontos para iniciar suas análises.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar alguns deles parque os usuários de negócios estestjam prontos para iniciar suas análises.
 
-Se vocêse lembra, não troxemo 特別な Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados. エンタント、テモスマディメンションシャマダ： **イベントタイプ**. Então, vamos 誘導体は tipos de interação criando 3 métricas calculadas 。
+Se você se lembra, não trouxemos especificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados. （英語） No entanto, temos uma dimensão chamada: **イベントタイプ**. Então, vamos derivar settes tipos de interação criando 3 métricas calculadas. （アンタン、バモス デリヴァル）
 
-Vamos começar com a primeira Métrica: **製品表示**.
+Vamos começar com a primeira Métrica: **Product Views**.
 
-ラド・エスカード、ペスキースはいりません **イベントタイプ** ディメンションを選択します。 Em seguida, arraste-o e solte-o na tela **含まれるコンポーネント**.
+No lado esquerdo, pesquise **イベントタイプ** e selecione a dimensão. Em seguida, arraste-o e solte-o na tela **付属コンポーネント**.
 
-![デモ](./images/calcmetr1.png)
+![ デモ ](./images/calcmetr1.png)
 
-ノバメトリカのクリック・パラ・セレシオナー **イベントタイプ**.
+Clique para selecionar a nova métrica **イベントタイプ**.
 
-![デモ](./images/calcmetr2.png)
+![ デモ ](./images/calcmetr2.png)
 
-Agora altere o nome e は、descrição do componente para os seguintes valores:
+Agora altere o nome e a descrição do componente para os seguintes valores:
 
-| コンポーネント名 | コンポーネント説明 |
+| コンポーネント名 | コンポーネントの説明 |
 | ----------------- |-------------| 
 | 製品表示 | 製品表示 |
 
-![デモ](./images/calcmetr3.png)
+![ デモ ](./images/calcmetr3.png)
 
-アゴラヴァモスコンタルアペナスイベントデ **製品表示**. Para fazer isso、役割パラバイクソエム **コンポーネント設定** アテヴァヴァロレス・デ **除外する値を含める**. Certifique-se de habiliar a opção **値を含める/除外する**.
+Agora vamos contar apenas eventos de **製品表示**. Para fazer isso, role para baixo em **コンポーネント設定** até ver Valores de **除外値を含む**. Certifique-se de habilitar a opção **Set include/exclude values**.
 
-![デモ](./images/calcmetr4.png)
+![ デモ ](./images/calcmetr4.png)
 
-コモケリモスコンタルアペナス **製品表示**、特に **commerce.productViews** クリテリオス諸島
+Como queremos contar apenas **Product Views**、特に **commerce.productViews** nos critérios。
 
-![デモ](./images/calcmetr5.png)
+![ デモ ](./images/calcmetr5.png)
 
-アゴラアスアメトリカカルカダエスタ・エストナ・プロンタ！
+アゴラ ア スア・メトリカ・エレスタ・プロンタ！
 
-Em seguida, repita o mesmo processo para os eventos **買い物かごに追加** e **購入**.
+Em seguida, repita o mesmo processo para os eventos **買い物かごに追加** e **購入**.
 
-### 買い物かごに追加
+### カートに追加
 
-Primeiro, arraste e solte a mesma dimensionsão **イベントタイプ**.
+Primeiro, arraste e e solte a mesma dimensão **イベントタイプ**.
 
-![デモ](./images/calcmetr1.png)
+![ デモ ](./images/calcmetr1.png)
 
-Vocêverá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma varivel. クリック **強制的に追加**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. （英語） Clique em **とにかく追加**:
 
-![デモ](./images/calcmetr6.png)
+![ デモ ](./images/calcmetr6.png)
 
-Agora, siga o mesmo processo que fizemos para a métrica Visualizaçoes de produto:
-- Primeiro altere o nome e descrição.
-- ポール・フィム、アディシオネ **commerce.productListAdds** como critério para contar apenas Add To Cart
+Agora, siga o mesmo processo que fizemos para a métrica Visualizaçóes de produto:
+- Primeiro altere o nome e a descrição.（プリメイロ・アルテレ・オ・ノーム・ア・デ・スクリサオ）
+- Por fim, adicione **commerce.productListAdds** como critério para contar apenas 買い物かごに追加
 
 | 名前 | 説明 | 条件 |
 | ----------------- |-------------| -------------|
-| 買い物かごに追加 | 買い物かごに追加 | commerce.productListAdds |
+| カートに追加 | カートに追加 | commerce.productListAdds |
 
-![デモ](./images/calcmetr6a.png)
+![ デモ ](./images/calcmetr6a.png)
 
 ### 購入
 
-Primeiro, arraste e solte a mesma dimensionsão **イベントタイプ** duas métricas anteriores としての como fizemos para 。
+Primeiro, arraste e solte a mesma dimensão **イベントタイプ** como fizemos para as duas métricas anteriores.
 
-![デモ](./images/calcmetr1.png)
+![ デモ ](./images/calcmetr1.png)
 
-Vocêverá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma varivel. クリック **強制的に追加**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. （英語） Clique em **とにかく追加**:
 
-![デモ](./images/calcmetr7.png)
+![ デモ ](./images/calcmetr7.png)
 
-Agora, siga o mesmo processo que fizemos para as metricas 製品表示 e 買い物かごに追加：
-- Primeiro altere o nome e descrição.
-- ポール・フィム、アディシオネ **commerce.purchases** コンプラスとしての critérios para contabilizar apenas
+Agora, siga o mesmo processo que fizemos para as métricas 製品表示回数 e カートに追加：
+- Primeiro altere o nome e a descrição.（プリメイロ・アルテレ・オ・ノーム・ア・デ・スクリサオ）
+- Por fim, adicione **commerce.purchases** como critérios para contabilizar apenas Compras
 
 | 名前 | 説明 | 条件 |
 | ----------------- |-------------| -------------|
 | 購入 | 購入 | commerce.purchases |
 
-![デモ](./images/calcmetr7a.png)
+![ デモ ](./images/calcmetr7a.png)
 
-Sua configuração final deve semelhante ao seguinte. クリック **保存して続行**.
+Sua configuração final deve ser semelhante ao seguinte.（スア構成局の最終決定） 「**保存して続行**」をクリックします。
 
-![デモ](./images/calcmetr8.png)
+![ デモ ](./images/calcmetr8.png)
 
-## 4.3.5 コンポーネント da Configuração de Dados
+## 4.3.5 構成要素ダ・コンフィギュラソン・デ・ダドス
 
-Vocedeve ser redirectionado para esta tela:
+Você deve ser redirectionado para esta tela 氏：
 
-![デモ](./images/8-v2.png)
+![ デモ ](./images/8-v2.png)
 
-Nesta aba, vocêpode modificar algumas configuraçoes importantes para alterar a forma como os dados sano processados. Vamos começar defindo o **セッションタイムアウト** 30 分 Graças ao registro de data e hora de cada evento de experiência, voce pode estender o canto de uma sessão em todos canais. エグザンプロ、o que acontese um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão personalizados, vocêtem muita flexidade para decidir o que uma sessão e como essa essão irá mesclar os dados.
+Nesta aba, você pode modificar algumas configuraçóes importantes para alterar a forma como os dados são processados. Vamos começar definindo o **セッションタイムアウト** como 30 分 Graças ao registro de data e hora de cada evento de experiência, você pode estender o conceito de uma sessão em todos os canais. （英語） Por exexampo, o que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão personalizados, você tem muita flexibilidade para decidir o que é ma sessão e como essa sessão irá mesclar os dados.
 
-![デモ](./images/ext8.png)
+![ デモ ](./images/ext8.png)
 
-Nesta aba voceêpode modificar autoas coisas como filtor os dados usando um segmento/filto. Voê não precisara fazer isso neste expercício.
+Nesta aba você pode modificar outras coisas como filtrar os dados usando um segmento/filtro. （英語） Você não precisará fazer isso neste exercício （ボーシェ・ナン・プレシサラ・ファツァー・イッソ・ネステ・エクセシオ）
 
-![デモ](./images/10-v2.png)
+![ デモ ](./images/10-v2.png)
 
-Quando の用語、クリック・エム **保存して終了**.
+Quando terminar, clique em **保存して終了**.
 
-![デモ](./images/13-v2.png)
+![ デモ ](./images/13-v2.png)
 
 >[!NOTE]
 >
->Voce pode voltar a esta Visualização de dados postermente e アルターを configuraçoes e os コンポーネントとしてクォルマーモメントに設定します。 もう一つは afetarão a forma como os dados históricos são mostrados です。
+>Você pode voltar a esta Visualização de dados posteriormente e e alterar as configuraçóes e os components は、クアルクエ モメントを意味します。 As alteraçóes afetarão a forma como os dados históricos são mostrados.
 
-アゴラヴォーポード継続 com a parte de visualização e análise!
+Agora você pode continuar com a parte de visualização e análise!
 
-プロクシマエタパ： [4.4 Prepação de dados emCustomer Journey Analytics](./ex4.md)
+Próxima etapa: [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 
-[レトルナルパラフルクソデウサリオ 4](./uc4.md)
+[レトルナル パラ フルクソ デ ウスアリオ 4](./uc4.md)
 
-[レトルナーパラトドスオスモドゥロス](./../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](./../../overview.md)

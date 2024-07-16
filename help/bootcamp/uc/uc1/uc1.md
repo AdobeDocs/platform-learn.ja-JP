@@ -20,8 +20,8 @@ ht-degree: 2%
 
 ## 前提条件
 
-- Adobe Experience Platformへのアクセス： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform Data Collection へのアクセス： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform Data Collection へのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - デモ Web サイトへのアクセス
 
 >[!IMPORTANT]

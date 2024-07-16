@@ -21,13 +21,13 @@ Platform Web SDK は、スキーマを使用して web イベントデータを�
 
 >[!NOTE]
 >
->XDM スキーマは _不要_ web SDK を使用してAdobe Analytics、Adobe TargetまたはAdobe Audience Managerを実装する場合（データは `data` の代わりにのオブジェクト `xdm` オブジェクトです（後で確認します）。 XDM スキーマは、Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analyticsなどの Platform ネイティブアプリケーションの最もパフォーマンスの高い実装に必要です。 独自の実装で XDM スキーマを使用しないことにすることもできますが、このチュートリアルの一部としてこれを行うことが想定されます。
+>Web SDK を使用してAdobe Analytics、Adobe Target、Adobe Audience Managerを実装する場合、XDM スキーマは _必須ではありません_ （データは、後で示すように、`xdm` オブジェクトではなく、`data` オブジェクトで渡すことができます）。 XDM スキーマは、Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analyticsなどの Platform ネイティブアプリケーションの最もパフォーマンスの高い実装に必要です。 独自の実装で XDM スキーマを使用しないことにすることもできますが、このチュートリアルの一部としてこれを行うことが想定されます。
 
 ## データをモデル化する理由
 
 企業には、ドメインについてコミュニケーションを行うための独自の言語があります。 自動車の販売店はメーカー、モデル、シリンダーを扱っています。 航空会社は便名、サービス区分、座席割り当てを扱っています。 これらの用語には、特定の会社に固有のものや、業界別で共有されているものや、ほとんどすべての企業で共有されているものがあります。 業界横断的な用語や、より広範な用語を共有する用語の場合、共通の方法で用語に名前を付けて構造化することで、データを活用して強力な処理を開始できます。
 
-例えば、多くの企業が注文を扱っています。 これらの企業が同様の方法で注文をモデル化すると判断した場合はどうなりますか？ 例えば、データモデルが、で構成されたオブジェクトで構成されている場合 `priceTotal` 注文の合計金額を表すプロパティ？ そのオブジェクトにという名前のプロパティも含まれている場合 `currencyCode` および `purchaseOrderNumber`? order オブジェクトにという名前のプロパティが含まれている場合があります。 `payments` これは、支払いオブジェクトの配列になります。 各オブジェクトは、注文の支払いを表します。 例えば、顧客が注文の一部をギフトカードで支払い、残りをクレジットカードで支払った場合を考えてみましょう。 次のようなモデルの作成を開始できます。
+例えば、多くの企業が注文を扱っています。 これらの企業が同様の方法で注文をモデル化すると判断した場合はどうなりますか？ 例えば、データモデルが、注文の合計価格を表す `priceTotal` プロパティを持つオブジェクトで構成されていた場合、どうなりますか？ そのオブジェクトに `currencyCode` と `purchaseOrderNumber` という名前のプロパティも含まれている場合はどうなりますか？ order オブジェクトには、支払いオブジェクトの配列となる `payments` という名前のプロパティが含まれている場合があります。 各オブジェクトは、注文の支払いを表します。 例えば、顧客が注文の一部をギフトカードで支払い、残りをクレジットカードで支払った場合を考えてみましょう。 次のようなモデルの作成を開始できます。
 
 ```json
 {
@@ -49,16 +49,16 @@ Platform Web SDK は、スキーマを使用して web イベントデータを�
 }
 ```
 
-注文を扱うすべての企業が、業界で一般的な用語について一貫した方法で注文データをモデル化することを決定した場合、不思議なことが起こり始める可能性があります。 データ（prop や evar、誰でも）を絶えず解釈したり翻訳したりしなくても、組織内や組織外でより流動的に情報を交換できます。 機械学習を使用すると、データの内容をより簡単に理解できます _手段_ 実用的なインサイトを提供します。 関連するデータを表示するためのユーザーインターフェイスが、より直感的になる可能性があります。 データは、同じモデリングに従っているパートナーやベンダーとシームレスに統合できます。
+注文を扱うすべての企業が、業界で一般的な用語について一貫した方法で注文データをモデル化することを決定した場合、不思議なことが起こり始める可能性があります。 データ（prop や evar、誰でも）を絶えず解釈したり翻訳したりしなくても、組織内や組織外でより流動的に情報を交換できます。 機械学習を使用すると、データ _意味_ をより簡単に理解し、実用的なインサイトを提供できます。 関連するデータを表示するためのユーザーインターフェイスが、より直感的になる可能性があります。 データは、同じモデリングに従っているパートナーやベンダーとシームレスに統合できます。
 
-これがAdobeの目標です [エクスペリエンスデータモデル](https://business.adobe.com/products/experience-platform/experience-data-model.html). XDM は、業界で一般的なデータの規範的なモデリングを提供すると同時に、特定のニーズに合わせてモデルを拡張することもできます。 Adobe Experience Platformは XDM を中心に構築されているので、Experience Platformに送信されるデータは XDM 内にある必要があります。 データを翻訳に送信する前に、現在のデータモデルを XDM に変換する場所と方法を考えるのではなく、Experience Platformが必要とすることがほとんどないよう、組織全体で XDM を採用することを検討してください。
+これがAdobeの [ エクスペリエンスデータモデル ](https://business.adobe.com/products/experience-platform/experience-data-model.html) の目標です。 XDM は、業界で一般的なデータの規範的なモデリングを提供すると同時に、特定のニーズに合わせてモデルを拡張することもできます。 Adobe Experience Platformは XDM を中心に構築されているので、Experience Platformに送信されるデータは XDM 内にある必要があります。 データを翻訳に送信する前に、現在のデータモデルを XDM に変換する場所と方法を考えるのではなく、Experience Platformが必要とすることがほとんどないよう、組織全体で XDM を採用することを検討してください。
 
 
 >[!NOTE]
 >
-> デモ目的で、このレッスンの演習では、で顧客が表示したコンテンツと購入した製品をキャプチャするサンプルスキーマを作成します。 [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html). これらの手順を使用して、異なるスキーマを独自の用途で作成できますが、まずは、サンプルスキーマの作成方法を追ってスキーマエディターの機能を理解することをお勧めします。
+> デモ目的で、このレッスンの演習では、顧客が閲覧したコンテンツと購入した製品を [Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) でキャプチャするサンプルスキーマを作成します。 これらの手順を使用して、異なるスキーマを独自の用途で作成できますが、まずは、サンプルスキーマの作成方法を追ってスキーマエディターの機能を理解することをお勧めします。
 
-XDM スキーマについて詳しくは、コースを参照してください [XDM を使用したカスタマーエクスペリエンスデータのモデル化](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja) または、を参照してください。 [XDM システムの概要](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+XDM スキーマについて詳しくは、[XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja) コースまたは [XDM システムの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) を参照してください。
 
 ## 学習目標
 
@@ -70,31 +70,31 @@ XDM スキーマについて詳しくは、コースを参照してください 
 
 ## 前提条件
 
-データ収集とAdobe Experience Platformに必要なすべてのプロビジョニングとユーザー権限については、を参照してください。 [の概要](overview.md) ページ。
+データ収集とAdobe Experience Platformに必要なすべてのプロビジョニングとユーザー権限については、[ 概要 ](overview.md) ページで説明します。
 
 ## XDM スキーマの作成
 
-XDM スキーマはExperience Platformでデータを記述する標準的な方法であり、スキーマに適合するすべてのデータを組織間で競合なく再利用したり、複数の組織間で共有したりできます。 詳しくは、 [スキーマ構成の基本](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition).
+XDM スキーマはExperience Platformでデータを記述する標準的な方法であり、スキーマに適合するすべてのデータを組織間で競合なく再利用したり、複数の組織間で共有したりできます。 詳しくは、[ スキーマ構成の基本 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition) を参照してください。
 
-この演習では、で web イベントデータをキャプチャするための推奨ベースラインフィールドグループを使用して、XDM スキーマを作成します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
+この演習では、[Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} で web イベントデータを取得するための推奨ベースラインフィールドグループを使用して XDM スキーマを作成します。
 
-1. を開きます [データ収集インターフェイス](https://launch.adobe.com/){target="_blank"}
+1. [ データ収集インターフェイス ](https://launch.adobe.com/){target="_blank"} を開きます。
 1. 正しいサンドボックスにいることを確認します。 右上隅にあるサンドボックスを見つけます
 
    >[!NOTE]
    >
-   >Real-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発用サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
+   >Real-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発用サンドボックスを使用することをお勧めします。 そうでない場合は、**[!UICONTROL Prod]** サンドボックスを使用します。
 
-1. に移動 **[!UICONTROL スキーマ]** 左側のナビゲーションで
-1. 「」を選択します **[!UICONTROL スキーマを作成]** 右上のボタン
+1. 左側のナビゲーションの **[!UICONTROL スキーマ]** に移動します
+1. 右上の **[!UICONTROL スキーマを作成]** ボタンを選択します
 
-   ![スキーマを作成](assets/schema-xdm-create-schema.png)
-1. を選択 **[!UICONTROL エクスペリエンスイベント]** 次の画面で、
-1. を選択 **[!UICONTROL 次]**
+   ![ スキーマを作成 ](assets/schema-xdm-create-schema.png)
+1. 次の画面で **[!UICONTROL エクスペリエンスイベント]** を選択します
+1. 「**[!UICONTROL 次へ]**」を選択します。
 
-   ![スキーマエクスペリエンスイベント](assets/schema-experience-event.png)
+   ![ スキーマエクスペリエンスイベント ](assets/schema-experience-event.png)
 
-1. の下にスキーマの名前を入力 **[!UICONTROL スキーマの表示名]** フィールド（この場合は） `Luma Web Event Data`
+1. 「**[!UICONTROL スキーマ表示名]**」フィールドにスキーマの名前を入力します。この場合は `Luma Web Event Data` です。
 
    >[!TIP]
    >
@@ -103,59 +103,59 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 
 1. 「終了」を選択します
 
-   ![スキーマエクスペリエンスイベント検索](assets/schema-name-schema.png)
+   ![ スキーマエクスペリエンスイベント検索 ](assets/schema-name-schema.png)
 
 ## フィールドグループを追加
 
-前述したように、XDM は、ダウンストリーム Adobe Experience Platform サービスで使用する共通の構造と定義を提供することで、顧客体験データを標準化するコアフレームワークです。 XDM 標準に準拠することにより、 _すべての顧客体験データ_ 共通の表現に組み込むことができます。 このアプローチにより、顧客の行動から有益なインサイトを得たり、セグメントを通じて顧客オーディエンスを定義したり、複数のソースのデータを使用してパーソナライゼーション目的で顧客属性を表現したりできます。 参照： [データモデリングのベストプラクティス](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) を参照してください。
+前述したように、XDM は、ダウンストリーム Adobe Experience Platform サービスで使用する共通の構造と定義を提供することで、顧客体験データを標準化するコアフレームワークです。 XDM 標準規格に準拠しているので、_すべての顧客体験データ_ を共通の表現に組み込むことができます。 このアプローチにより、顧客の行動から有益なインサイトを得たり、セグメントを通じて顧客オーディエンスを定義したり、複数のソースのデータを使用してパーソナライゼーション目的で顧客属性を表現したりできます。 詳しくは、[ データモデリングのベストプラクティス ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) を参照してください。
 
-可能であれば、既存のフィールドグループを使用し、製品に依存しないモデルと命名規則に従うことをお勧めします。 上記の事前定義済みのフィールドグループに適合しない、組織に固有の任意のデータの場合は、カスタムフィールドグループを作成できます。 参照： [スキーマエディターを使用したスキーマの作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) カスタムスキーマの詳細な手順については、を参照してください。
+可能であれば、既存のフィールドグループを使用し、製品に依存しないモデルと命名規則に従うことをお勧めします。 上記の事前定義済みのフィールドグループに適合しない、組織に固有の任意のデータの場合は、カスタムフィールドグループを作成できます。 カスタムスキーマの手順について詳しくは、[ スキーマエディターを使用したスキーマの作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) を参照してください。
 
 >[!TIP]
 > 
->この演習では、web データ収集に推奨される事前定義済みのフィールドグループを追加します。 _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ および _**[!UICONTROL 消費者エクスペリエンスイベント]**_.
+>この演習では、web データ収集用の推奨される事前定義済みフィールドグループである _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ および _**[!UICONTROL Consumer Experience Event]**_ を追加します。
 >
 
 
-1. が含まれる **[!UICONTROL フィールドグループ]** セクションで選択 **[!UICONTROL 追加]**
+1. 「**[!UICONTROL フィールドグループ]**」セクションで、「**[!UICONTROL 追加]**」を選択します
 
-   ![新規フィールドグループ](assets/schema-new-field-group.png)
+   ![ 新しいフィールドグループ ](assets/schema-new-field-group.png)
 
-1. を検索 [!UICONTROL `AEP Web SDK ExperienceEvent`]
+1. [!UICONTROL `AEP Web SDK ExperienceEvent`] を検索
 1. チェックボックスをオンにする
-1. を検索 [!UICONTROL `Consumer Experience Event`]
+1. [!UICONTROL `Consumer Experience Event`] を検索
 1. チェックボックスをオンにする
-1. を選択 **[!UICONTROL フィールドグループの追加]**
+1. 「**[!UICONTROL フィールドグループを追加]**」を選択します
 
-   ![フィールドグループを追加](assets/schema-add-field-group.png)
+   ![ フィールドグループを追加 ](assets/schema-add-field-group.png)
 
-両方のフィールドグループを使用すると、web 上のデータ収集に必要な最も一般的に使用されるキーと値のペアにアクセスできます。 この [!UICONTROL 表示名] の各フィールドは、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、標準フィールドの表示名を必要に応じて変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、それに属するキーと値のペアのグループがインターフェイスで強調表示されます。 以下の例では、どのフィールドが属しているのかがわかります **[!UICONTROL 消費者エクスペリエンスイベント]**.
+両方のフィールドグループを使用すると、web 上のデータ収集に必要な最も一般的に使用されるキーと値のペアにアクセスできます。 各フィールドの [!UICONTROL  表示名 ] は、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、標準フィールドの表示名を必要に応じて変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、それに属するキーと値のペアのグループがインターフェイスで強調表示されます。 以下の例では、どのようなフィールドが **[!UICONTROL 消費者エクスペリエンスイベント]** に属しているのかがわかります。
 
-![スキーマフィールドグループ](assets/schema-consumer-experience-event.png)
+![ スキーマフィールドグループ ](assets/schema-consumer-experience-event.png)
 
-このレッスンは、出発点にすぎません。 独自の web イベントスキーマを作成する場合は、ビジネス要件を調査し、文書化する必要があります。 このプロセスは、を作成する場合と似ています。 [ビジネス要件に関するドキュメント](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) および [ソリューションデザインリファレンス](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) Adobe Analyticsを実装する場合、の要件を含める必要があります。 _すべてのダウンストリームデータ受信者_ 例えば、Platform、Target、イベント転送の宛先などです。
+このレッスンは、出発点にすぎません。 独自の web イベントスキーマを作成する場合は、ビジネス要件を調査し、文書化する必要があります。 このプロセスは、Adobe Analyticsの実装の [ ビジネス要件ドキュメント ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) および [ ソリューション設計リファレンス ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) を作成する場合と似ていますが、Platform、Target、イベント転送の宛先など、_すべてのダウンストリームデータ受信者_ の要件を含める必要があります。
 
 
 ### identityMap オブジェクト
 
-という Web ユーザーの識別に使用する特別なフィールドがあります。 `[!UICONTROL identityMap]`.
+`[!UICONTROL identityMap]` と呼ばれる web ユーザーの識別に使用する特別なフィールドがあります。
 
-![Luma Web イベントデータ](assets/schema-identityMap.png)
+![Luma Web イベントデータ ](assets/schema-identityMap.png)
 
-これは、web 上のユーザーを識別するために必要なExperience Cloud ID を格納するので、web 関連のデータ収集の必須オブジェクトです。 また、認証済みユーザーに対して内部顧客 ID を設定する際にも重要です。 `[!UICONTROL identityMap]` 詳しくは、以下で説明します [Id の設定](configure-identities.md) レッスン： を使用するすべてのスキーマに自動的に含まれます **[!UICONTROL XDM ExperienceEvent]** クラス。
+これは、web 上のユーザーを識別するために必要なExperience Cloud ID を格納するので、web 関連のデータ収集の必須オブジェクトです。 また、認証済みユーザーに対して内部顧客 ID を設定する際にも重要です。 `[!UICONTROL identityMap]` については、[ID の設定 ](configure-identities.md) のレッスンで詳しく説明します。 **[!UICONTROL XDM ExperienceEvent]** クラスを使用するすべてのスキーマに自動的に含まれます。
 
 
 >[!IMPORTANT]
 >
-> を有効にすることができます **[!UICONTROL Profile]** （スキーマを保存する前のスキーマ）。 **実行しない** この時点で有効にします。 プロファイルでスキーマを有効にした後は、サンドボックス全体をリセットしないと、そのスキーマを無効にしたり削除したりすることはできません。 この時点では、フィールドをスキーマから削除することもできませんが、削除することは可能です [UI でのフィールドの非推奨化](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). これらの影響は、実稼動環境で独自のデータを操作する際に後で留意することが重要です。
+> スキーマを保存する前に、スキーマの **[!UICONTROL プロファイル]** を有効にすることができます。 **この時点では有効にしない** ください。 プロファイルでスキーマを有効にした後は、サンドボックス全体をリセットしないと、そのスキーマを無効にしたり削除したりすることはできません。 この時点ではフィールドをスキーマから削除することはできませんが、[UI でフィールドを非推奨（廃止予定 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate) することは可能です。 これらの影響は、実稼動環境で独自のデータを操作する際に後で留意することが重要です。
 >
 >
->この設定については、 [Experience Platformを設定](setup-experience-platform.md) レッスン：
->![プロファイルスキーマ](assets/schema-profile.png)
+>この設定については、[ セットアップ Experience Platform](setup-experience-platform.md) のレッスンで詳しく説明します。
+>![プロファイルスキーマ ](assets/schema-profile.png)
 
-このレッスンを完了するには、 **[!UICONTROL 保存]** 右上。
+このレッスンを完了するには、右上の **[!UICONTROL 保存]** を選択します。
 
-![スキーマを保存](assets/schema-select-save.png)
+![ スキーマを保存 ](assets/schema-select-save.png)
 
 
 これで、Web SDK 拡張機能をタグプロパティに追加する際に、このスキーマを参照できるようになります。
@@ -165,4 +165,4 @@ XDM スキーマはExperience Platformでデータを記述する標準的な方
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -15,9 +15,9 @@ ht-degree: 9%
 
 Adobe Experience Platform Web SDK 用データストリームの設定方法について説明します。
 
-[データストリーム](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) platform Web SDK で収集されたデータの送信先をAdobe Experience Platform Edge Networkに指示します。 データストリーム設定では、Experience Cloudアプリケーション、Experience Platformアカウント、イベント転送を有効にします。
+[ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) は、Platform Web SDK で収集されたデータの送信先をAdobe Experience Platform Edge Networkに伝えます。 データストリーム設定では、Experience Cloudアプリケーション、Experience Platformアカウント、イベント転送を有効にします。
 
-![Web SDK、データストリームおよびEdge Network図](assets/dc-websdk-datastreams.png)
+![Web SDK、データストリームおよびEdge Network図 ](assets/dc-websdk-datastreams.png)
 
 ## 学習目標
 
@@ -39,25 +39,25 @@ Adobe Experience Platform Web SDK 用データストリームの設定方法に�
 
 **データストリームを作成するには：**
 
-1. を開きます [データ収集インターフェイス](https://launch.adobe.com/){target="_blank"}
+1. [ データ収集インターフェイス ](https://launch.adobe.com/){target="_blank"} を開きます。
 1. 正しいサンドボックスにいることを確認します
 
    >[!NOTE]
    >
-   >Real-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発用サンドボックスを使用することをお勧めします。 そうでない場合は、 **[!UICONTROL Prod]** サンドボックス。
+   >Real-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーションを使用している場合は、このチュートリアルで開発用サンドボックスを使用することをお勧めします。 そうでない場合は、**[!UICONTROL Prod]** サンドボックスを使用します。
 
-1. に移動 **[!UICONTROL データストリーム]** 左側のナビゲーションで
-1. を選択 **[!UICONTROL 新規データストリーム]**
-1. Enter `Luma Web SDK: Development Environment` as the **[!UICONTROL 名前]**. この名前は、後でタグプロパティに Web SDK 拡張機能を設定するときに参照されます。
-1. を選択 **[!UICONTROL 保存]**
+1. 左側のナビゲーションの **[!UICONTROL データストリーム]** に移動します
+1. **[!UICONTROL 新規データストリーム]** を選択します。
+1. **[!UICONTROL 名前]** として `Luma Web SDK: Development Environment` と入力します。 この名前は、後でタグプロパティに Web SDK 拡張機能を設定するときに参照されます。
+1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![データストリームの作成](assets/datastream-create-new-datastream.png)
+   ![ データストリームの作成 ](assets/datastream-create-new-datastream.png)
 
    >[!NOTE]
    >
-   >スキーマを選択する必要はありません。 スキーマの選択は、を使用する場合にのみ必要です [データ収集のためのデータ準備](/help/data-collection/edge/data-prep.md) 機能
+   >スキーマを選択する必要はありません。 スキーマの選択は、[ データ収集のためのデータ準備 ](/help/data-collection/edge/data-prep.md) 機能を使用する場合にのみ必要です。
 
-次の画面では、Adobeアプリなどのサービスをデータストリームに追加できますが、現時点ではサービスを追加しません。 それは後の授業で行います [Experience Platformの設定](setup-experience-platform.md), [Analytics の設定](setup-analytics.md), [Audience Managerの設定](setup-audience-manager.md), [ターゲットを設定](setup-target.md)、または [イベントの転送](setup-event-forwarding.md).
+次の画面では、Adobeアプリなどのサービスをデータストリームに追加できますが、現時点ではサービスを追加しません。 これは、レッスン [Experience Platformの設定 ](setup-experience-platform.md)、[Analytics の設定 ](setup-analytics.md)、[Audience Managerの設定 ](setup-audience-manager.md)、[Target の設定 ](setup-target.md)、または [ イベント転送 ](setup-event-forwarding.md) の後半で行います。
 
 >[!NOTE]
 >
@@ -65,14 +65,14 @@ Adobe Experience Platform Web SDK 用データストリームの設定方法に�
 
 ## データストリームの上書き
 
-[データストリームの上書き](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) を使用すると、データストリームの追加設定を定義し、特定の条件下でデフォルトの設定を上書きできます。
+[ データストリームの上書き ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) を使用すると、データストリームの追加設定を定義し、特定の条件下でデフォルトの設定を上書きできます。
 
 データストリーム設定の上書きは、次の 2 つの手順で行います。
 
 1. 最初に、データストリームサービス設定でデータストリームの上書きを定義します。 例えば、上書きとして使用する代替の Analytics レポートスイート、Target ワークスペースまたは Platform データセットを定義できます。
 1. 次に、Web SDK send event アクションまたは Web SDK タグ拡張機能の設定によって、上書きをEdge Networkに送信します。
 
-が含まれる [Adobe Analyticsの設定](setup-analytics.md) レッスンでは、Platform Web SDK のイベント送信アクションを使用して、ページのレポートスイートを上書きします。
+[Adobe Analyticsの設定 ](setup-analytics.md) レッスンでは、Platform Web SDK のイベント送信アクションを使用して、ページのレポートスイートを上書きします。
 
 これで、タグプロパティに Platform Web SDK 拡張機能をインストールする準備が整いました。
 
@@ -80,4 +80,4 @@ Adobe Experience Platform Web SDK 用データストリームの設定方法に�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

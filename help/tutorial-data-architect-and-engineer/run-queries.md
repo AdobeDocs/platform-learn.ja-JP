@@ -1,8 +1,8 @@
 ---
-title: クエリを実行
+title: クエリの実行
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: クエリを実行
-description: このレッスンでは、取り込んだデータを検証するクエリを設定、書き込み、実行する方法について説明します。
+breadcrumb-title: クエリの実行
+description: このレッスンでは、クエリを設定、記述、実行して、取り込んだデータを検証する方法を学びます。
 role: Data Architect, Data Engineer
 feature: Queries
 jira: KT-4348
@@ -10,26 +10,26 @@ thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 4%
+source-wordcount: '314'
+ht-degree: 1%
 
 ---
 
-# クエリを実行
+# クエリの実行
 
 <!-- 15 min-->
-このレッスンでは、取り込んだデータを検証するクエリを設定、書き込み、実行する方法について説明します。
+このレッスンでは、クエリを設定、記述、実行して、取り込んだデータを検証する方法を学びます。
 
-Adobe Experience Platformクエリサービスを使用すると、標準の SQL を使用して Platform のデータに対してクエリを実行でき、データの意味を理解できます。 クエリサービスを使用すると、データレイク内の任意のデータセットを結合し、クエリ結果を新しいデータセットとして取り込み、レポート、機械学習、リアルタイム顧客プロファイルへの取り込みに使用できます。
+Adobe Experience Platform クエリサービスは、標準の SQL を使用して Platform でデータに対してクエリを実行できるようにすることで、データを把握するのに役立ちます。 クエリサービスを使用すると、データレイク内のデータセットを結合したり、クエリ結果を新しいデータセットとして取得したりして、レポートや機械学習で使用したり、リアルタイム顧客プロファイルに取り込んだりできます。
 
-**データアーキテクト** および **データエンジニア** このチュートリアル以外で、クエリサービスを使用する必要があります。
+**データアーキテクト** と **データエンジニア** は、このチュートリアル以外でクエリサービスを使用する必要があります。
 
-演習を始める前に、次の短いビデオを見てクエリサービスの詳細を確認してください。
+演習を開始する前に、この短いビデオを視聴してクエリサービスの詳細を確認してください。
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## 必要な権限
 
-Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -39,22 +39,22 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
 
 ## 単純なクエリ
 
-簡単なクエリをいくつか開始します。
+それでは、いくつかの単純なクエリから始めましょう。
 
-1. Platform ユーザーインターフェイスで、に移動します。 **クエリ** 左のナビゲーションで
-1. を選択します。 **クエリを作成** ボタンを使用して、クエリを実行および実行するためのテキストボックスを開きます。
-1. エディターで次のクエリを入力し、Shift + Enter キーまたは Shift + Return キーを押してクエリを実行します。
+1. Platform ユーザーインターフェイスの左側のナビゲーションで、**クエリ** に移動します
+1. 右上の **クエリを作成** ボタンを選択して、クエリを実行および実行するテキストボックスを開きます
+1. エディターに次のクエリを入力し、Shift + Enter キーまたは Shift + Return キーを押してクエリを実行します。
 
    ```
    SHOW TABLES
    ```
 
-1. 使用可能なテーブルのリストを表示します
+1. 使用可能なテーブルのリストが表示されます
 
-   ![テーブルクエリを表示](assets/queries-showTables.png)
+   ![ テーブル クエリの表示 ](assets/queries-showTables.png)
 
 
-1. 次に、このクエリを試してください。 `_techmarketingdemos` 独自のテナント名前空間を使用します。これを思い出したら、スキーマに表示されます。
+1. 次に、このクエリを試して、`_techmarketingdemos` を独自のテナント名前空間に置き換えます。この名前空間は、思い出すと、スキーマに表示されます。
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -62,14 +62,14 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
    WHERE loyalty.tier ='gold'
    ```
 
-   ![ロイヤルティデータセットからデータを選択](assets/queries-loyaltySelect.png)
+   ![ ロイヤルティデータセットからのデータの選択 ](assets/queries-loyaltySelect.png)
 
-1. エラーが発生した場合は、詳細なメッセージが **[!UICONTROL コンソール]** タブ、下の図のように
-   ![クエリでエラーが発生しました](assets/queries-error.png)
+1. エラーが発生した場合は、次の図のように、詳細なメッセージが **[!UICONTROL コンソール]** タブに表示されます
+   ![ クエリのエラー ](assets/queries-error.png)
 
-1. 成功したクエリで、 **[!UICONTROL 名前]** it `Luma Gold Level Customers`
-1. を選択します。 **[!UICONTROL 保存]** ボタン
-   ![クエリの保存](assets/queries-loyaltySelect-save.png)
+1. 正常に完了したクエリでは、**[!UICONTROL Name]** が `Luma Gold Level Customers` されます
+1. 「**[!UICONTROL 保存]** ボタンを選択します
+   ![ クエリの保存 ](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -80,9 +80,9 @@ FROM luma_loyalty_dataset
 GROUP BY _techmarketingdemos.systemIdentifier.loyaltyId
 HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
 
-## その他の演習
+## 追加の演習
 
-追加のクエリサービスの演習は、後日チュートリアルに追加されます。
+クエリサービスの演習は、後日チュートリアルに追加される予定です。
 <!--
 ## Join Datasets
 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## その他のリソース
 
-* [クエリサービスドキュメント](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
-* [クエリサービス API リファレンス](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [ クエリサービスドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
+* [ クエリサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-そして最後の実践レッスンでは [セグメントの作成](build-segments.md)!
+最後の実践レッスンとして、[ セグメントの作成 ](build-segments.md) を行います。

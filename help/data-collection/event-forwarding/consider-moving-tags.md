@@ -1,6 +1,6 @@
 ---
-title: ベンダータグをイベント転送に移動することを検討します。
-description: サーバー側のデータ配布のためのクライアント側のベンダータグを評価する方法について説明します。
+title: ベンダータグのイベント転送への移動の検討
+description: サーバーサイドのデータ配布用にクライアントサイドのベンダータグを評価する方法を説明します。
 feature: Event Forwarding, Tags, Integrations
 role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
@@ -8,99 +8,99 @@ jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
 source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 6%
+source-wordcount: '1279'
+ht-degree: 4%
 
 ---
 
 # クライアントサイドベンダータグのイベント転送への移動の検討
 
-クライアント側のベンダータグをブラウザーやデバイスからサーバーに移動することを検討するには、いくつかのやむを得ない理由があります。 この記事では、潜在的にイベント転送プロパティに移動するためにクライアント側のベンダータグを評価する方法について説明します。
+クライアントサイドベンダータグをブラウザーやデバイスからサーバーに移動することを検討すべき説得力のある理由がいくつかあります。 この記事では、イベント転送プロパティに移動する可能性のあるクライアントサイドベンダータグを評価する方法について説明します。
 
-この評価が必要なのは、クライアント側のベンダータグを削除し、イベント転送プロパティでサーバー側のデータ配布に置き換えることを検討している場合のみです。 この記事は、の基本を理解していることを前提としています。 [データ収集](https://experienceleague.adobe.com/docs/data-collection.html)、および [イベント転送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
-
->[!NOTE]
->
->Adobe Experience Platform Launch は、Adobe Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。 その結果、製品ドキュメント全体でいくつかの用語が変更されました。用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja)を参照してください。
-
-ブラウザーベンダーは、サードパーティ cookie の処理方法を変更しています。 広告やマーケティングのベンダーやテクノロジーでは、多くの場合、クライアント側タグを使用する必要があります。 これらの課題は、お客様がサーバー側のデータ配信を追加している理由の 2 つに過ぎません。
+この評価が必要になるのは、クライアントサイドのベンダータグを削除して、イベント転送プロパティのサーバーサイドのデータ配信に置き換えることを検討している場合のみです。 この記事は、[ データ収集 ](https://experienceleague.adobe.com/docs/data-collection.html) および [ イベント転送 ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) の基本に精通していることを前提としています。
 
 >[!NOTE]
 >
->`Tag` この記事では、通常、クライアントサイドコードを示します。訪問者がサイトやアプリを操作する際に、ブラウザーやデバイスでのデータ収集に使用されるベンダーの JavaScript を使用します。 `Website` または `site` ここでは、web サイト、web アプリケーションまたはモバイルデバイス用のアプリケーションを指します。 これらの目的の「タグ」は、多くの場合、ピクセルとも呼ばれます。
+>Adobe Experience Platform Launch は、Adobe Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。 その結果、製品ドキュメント全体でいくつかの用語が変更されました。用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html)を参照してください。
 
-## 使用例とデータ {#use-cases-data}
+ブラウザーベンダーはサードパーティ cookie の取り扱い方法を変えています。 Advertisingやマーケティングのベンダーやテクノロジーでは、多くの場合、クライアントサイドタグの使用が必要です。 これらの課題は、お客様がサーバーサイドのデータ配信を追加する理由として説得力のある 2 つしかありません。
 
-最初の手順は、クライアント側のベンダータグで実装されるユースケースを定義することです。 例えば、Facebook(Meta) ピクセルについて考えてみましょう。 サイトからに移動する [メタ変換 API](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) イベント転送拡張機能を使用する場合は、特定の使用例を最初にドキュメント化することを意味します。
+>[!NOTE]
+>
+>この記事で `Tag`、クライアントサイドのコードとは、通常、訪問者がサイトやアプリを操作している間にブラウザーまたはデバイスでデータ収集に使用される、ベンダーのJavaScriptを指します。 ここで `Website` または `site` は、web サイト、web アプリケーション、またはモバイルデバイス用のアプリケーションを指します。 これらの目的のための「タグ」は、多くの場合、ピクセルとも呼ばれます。
 
-現在のクライアント側ベンダーコードの場合：
+## ユースケースとデータ {#use-cases-data}
 
-- クライアント側タグに公開および渡される特定のイベントやその他のデータポイントは何ですか？
-- そのデータ転送は、いつどこでおこなわれますか？
+最初の手順は、クライアントサイドのベンダータグで実装されたユースケースを定義することです。 例えば、Facebook（Meta）ピクセルについて考えてみましょう。 イベント転送拡張機能を使用して、サイトから [Meta Conversions API](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) に移行するということは、最初に特定のユースケースをドキュメント化することを意味します。
 
-この評価を記録するデータやイベントのシーケンスを、たとえ自分で使用する場合でも、リスト、スプレッドシート、図、またはその他の記録を作成すると便利です。 データソースのラベルを必ず含めてください。ラベルはどこから取得されますか。 目的地 — どこへ行くのか？ 変換 — ソースと宛先の間で何が起こるのでしょうか。
+現在のクライアントサイドベンダーコードの場合：
 
-この例では、訪問者がFacebook広告を表示した後にサイトとやり取りした際に、Facebookピクセルを使用してコンバージョンを追跡しています。 また、別のソーシャルプラットフォームで関連する広告を表示した後で、サイトとやり取りすることもできます。 これらのコンバージョンをFacebookの広告ツールおよびレポートで確認するには、必要なデータをFacebookに送信する必要があります。 このデータには、ダウンロード、登録、「いいね！」、購入などのコンバージョンイベントが含まれる場合があります。
+- 公開されてクライアントサイドタグに渡される特定のイベントとその他のデータポイントはどれですか？
+- そのデータ転送はいつ、どこで行われますか。
+
+この評価を文書化するには、リスト、スプレッドシート、図、またはイベントのシーケンスのレコードを作成すると便利です。自分で使用する場合であっても同様です。 データソースのラベルを必ず含めてください。このラベルはどこから取得されるのでしょうか。 宛先 – どこに行きますか？ そして変換：ソースとデスティネーションの間で変換はどうなりますか。
+
+この例では、訪問者がFacebook広告を表示した後にサイトとやり取りする際の、Facebook ピクセルを使用したコンバージョンをトラッキングしています。 また、別のソーシャルプラットフォームで関連広告を表示した後に、サイトとやり取りすることもできます。 これらのコンバージョンをFacebook広告ツールおよびレポートで確認するには、必要なデータがFacebookに送信される必要があります。 このデータには、ダウンロード、登録、いいね、購入などのコンバージョンイベントが含まれる場合があります。
 
 ### データ {#data}
 
-既存のクライアント側タグを使用すると、サイトで実行または実行される際に、ユースケースのデータはどうなりますか？ ベンダータグを付けずに、クライアントで必要なデータを取り込むことができるので、イベント転送に送信できますか？ を使用する場合 [タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) または他のタグ管理システムでは、ほとんどの訪問者のインタラクションデータを収集および配信に使用できます。 しかし、ユースケースに必要なデータは、クライアント側のベンダータグを使用せずに、必要なとき、必要なとき、必要なとき、必要な形式で利用できますか？ その他の考慮すべきデータに関する質問を次に示します。
+既存のクライアントサイドタグを使用してサイト上で実行または実行する場合、ユースケースのデータはどうなりますか？ ベンダータグなしでクライアントで必要なデータを取得して、イベント転送に送信することはできますか？ [ タグ ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) またはその他のタグ管理システムを使用する場合、ほとんどの訪問者インタラクションデータを収集および配布に使用できます。 しかし、ユースケースに必要なデータは、クライアントサイドのベンダータグがなくても、必要なときに、必要な場所で、必要な形式で利用できますか？ 考慮すべきデータに関するその他の質問を次に示します。
 
-- すべてのイベントにベンダーユーザー ID が必要ですか？
-- その場合、クライアント側タグを使用せずに、どのようにして収集または生成できますか。
-- ベンダーは実行時に特にクライアント側コードを必要としますか。
-- その他に必要なデータは何ですか？ そのデータはどこから取得されますか？
+- すべてのイベントにベンダーユーザー ID は必要ですか？
+- その場合、クライアントサイドタグなしでどのように収集または生成できますか？
+- ベンダーは特に実行時にクライアントサイドのコードを必要としますか？
+- その他の必要なデータは何ですか？ そのデータはどこから取得されますか？
 
-ほとんどのクライアント側ベンダータグは、特定の使用例に対して多くのデータポイントを必要としませんが、これらの評価の際には、使用例と必要なデータをメモしておくと役に立ちます。
+ほとんどのクライアントサイドベンダータグは、特定のユースケースに対して多くのデータポイントを必要としませんが、これらの評価中にユースケースと必要なデータに注意すると便利です。
 
 ## ベンダー API {#vendor-apis}
 
-これで、実装する具体的なユースケース、必要なデータ、ソースから宛先へのイベントのシーケンスがわかりました。 このユースケースがイベント転送に適しているかどうかを判断するために、ベンダー API の詳細を調査できるようになりました。
+実装する具体的なユースケース、必要なデータおよびソースから宛先へのイベントのシーケンスについて確認しました。 このユースケースがイベント転送に適しているかどうかを判断するために、ベンダー API の詳細を調査できるようになりました。
 
 >[!IMPORTANT]
 >
->多くのベンダーはサーバー間転送で API を有効にしていますが、現在、これらの目的に適した API を持っていないベンダーも多数あります。
+>多くのベンダーがサーバー間の転送に API を有効にしていますが、現在これらの目的に適合する API を持たないベンダーも多くあります。
 
 ### API の調査 {#investigate-apis}
 
-ベンダー API エンドポイントを調査するために実行できる手順を以下に示します。
+ベンダー API エンドポイントを調査する手順を次に示します。
 
-ベンダーは、イベントデータのサーバー間転送を目的として設計された API を持っていますか。 まず、これらの特定の API エンドポイントの要件を見つけます。
+ベンダーは、イベントデータのサーバー間の転送のために設計された API を持っていますか？ まず、これらの特定の API エンドポイントの要件を見つけます。
 
-- 必要なデータを送信するために API エンドポイントは存在しますか。 使用例をサポートするエンドポイントを見つけるには、ベンダーの開発者または API のドキュメントを参照してください。
-- イベントデータのストリーミングを許可していますか、それともバッチデータのみを許可していますか。
-- どの認証方法をサポートしていますか？ トークン、HTTP、OAuth クライアント資格情報のバージョン、その他のバージョンは？ 詳しくは、 [ここ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) イベント転送でサポートされるメソッドの場合。
-- API の更新オフセットは何ですか？ その制限はイベント転送の最小値と互換性がありますか？ 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
-- 関連するエンドポイントに必要なデータは何ですか？
-- エンドポイントへの呼び出しごとに、ベンダー固有のユーザー識別子が必要か。
-- その識別子が必要な場合、クライアント側のコードなしで、どこで、どのように生成または取り込むことができますか。
+- 必要なデータを送信するための API エンドポイントが存在するか。 ユースケースをサポートするエンドポイントを見つけるには、ベンダーの開発者または API ドキュメントを参照してください。
+- イベントデータのストリーミングを許可しますか、それともバッチデータのみを許可しますか？
+- どの認証方法をサポートしていますか。 トークン、HTTP、OAuth クライアント資格情報のバージョンなど。 イベント転送でサポートされるメソッドについては、[ こちら ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) を参照してください。
+- API の更新オフセットはどれくらいですか？ この制限は、イベント転送の最小値と互換性がありますか？ 詳細 [ こちら ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
+- 関連するエンドポイントに必要なデータ
+- エンドポイントを呼び出すたびに、ベンダー固有のユーザー識別子が必要ですか？
+- その識別子が必要な場合、クライアントサイドのコードを使用せずに、どこでどのように生成または取得できますか？
 
 つまり、
 
-- ベンダーは、アドビのユースケースで必要な API エンドポイントを提供していますか？
-- イベント転送に対して互換性のある認証方法を使用しているか。
-- イベント転送の実装に必要なすべてのデータに（クライアント側から、または他の API 呼び出しから）アクセスできますか？
+- ベンダーはユースケースに必要な API エンドポイントを提供していますか？
+- イベント転送と互換性のある認証方法はありますか？
+- イベント転送の実装に必要なすべてのデータに（クライアントサイドから、または他の API 呼び出しから）アクセスできますか？
 
-これらの質問に対して「はい」と答えられる場合、このタグは、イベント転送プロパティでクライアントからアドビのサーバーに移行するのに適した候補です。
+このタグは、これらの質問に対して「はい」と答えられる場合、イベント転送プロパティでクライアントからサーバーに移動するのに適した候補です。
 
-ベンダーがアドビの使用例をサポートする API エンドポイントを持っていない場合、明らかに、ベンダータグは、クライアント側のベンダータグの代わりにイベント転送を使用するのに適した候補ではありません。
+ベンダーがユースケースをサポートする API エンドポイントを持っていない場合、明らかに、ベンダータグがクライアントサイドのベンダータグの代わりにイベント転送を使用するための良い候補ではありません。
 
-API を持っているが、API 呼び出しごとに一意の訪問者 ID やユーザー ID が必要な場合はどうなりますか？ サイトでベンダーのクライアント側コード（タグ）を実行していない場合、どうすればその ID にアクセスできますか？
+API が用意されていて、API 呼び出しごとに一意の訪問者またはユーザー ID も必要な場合は、どうすればよいですか？ サイトでベンダーのクライアントサイドコード（タグ）が実行されていない場合、その ID にはどのようにアクセスできますか？
 
-一部のベンダーは、サードパーティ Cookie を使用せずに新しい世界に合わせてシステムを変更しています。 これらの変更には、代替の一意の識別子 ( [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) またはその他 [顧客生成 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja). ベンダーが顧客生成 ID を許可している場合、Web または Mobile SDK を使用してクライアントから Platform Edge Network に送信するか、イベント転送の API 呼び出しから取得することができます。 イベント転送ルールでそのベンダーにデータを送信する場合は、必要に応じてその識別子を含めるだけです。
+一部のベンダーは、サードパーティ cookie を使用せずに新世界向けにシステムを変更しています。 これらの変更には、[UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) やその他の [ 顧客が生成した ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) など、別の一意の識別子の使用が含まれます。 ベンダーがお客様から生成された ID を許可している場合は、Web または Mobile SDK を使用してクライアントから Platform Edge Networkに ID を送信するか、イベント転送での API 呼び出しから ID を取得する可能性があります。 イベント転送ルールでそのベンダーにデータを送信する場合は、必要に応じて単にその識別子を含めます。
 
-ベンダーが独自のクライアント側タグでのみ生成またはアクセスできるデータ（ベンダー固有の一意の ID など）を必要とする場合、そのベンダータグは移動に適した候補とはならない可能性が高くなります。 _適切な API を使用せずにデータ収集をイベント転送に移動するという考えでクライアント側タグのリバースエンジニアリングを試みることはお勧めしません。_
+独自のクライアントサイドタグによってのみ生成またはアクセスできるデータ（ベンダー固有の一意の ID など）がベンダーから必要な場合、そのベンダータグは移動に適した候補ではない可能性が高くなります。 _適切な API を使用せずにデータ収集をイベント転送に移動するという考えで、クライアントサイドタグをリバースエンジニアリングすることは推奨されません_。
 
-The [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) 拡張機能は、必要に応じて、サーバー間イベントデータ転送に適した API を持つベンダーと共に HTTP リクエストを実行できます。 ベンダー固有の拡張機能は非常に役に立ち、現在、より多くの拡張機能がアクティブな開発中ですが、追加のベンダー拡張機能を待たずに、Cloud Connector 拡張機能を使用して今日のイベント転送ルールを実装できます。
+[Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) 拡張機能は、サーバー間イベントデータ転送に適した API を持つベンダーに対して、必要に応じて HTTP リクエストを行うことができます。 ベンダー固有の拡張機能は素晴らしいことで、現在、より多くの拡張機能が活発に開発されていますが、追加のベンダー拡張機能を待たずに、Cloud Connector 拡張機能を使用して現在イベント転送ルールを実装できます。
 
 ## ツール {#tools}
 
-ベンダー API エンドポイントの調査とテストは、 [Postman](https://www.postman.com/)、または Visual Studio Code などのテキストエディター拡張機能。 [Thunder クライアント](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)または [HTTP クライアント](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
+[Postman](https://www.postman.com/) などのツールや、Visual Studio Code [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) または [HTTP Client](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client) などのテキストエディター拡張機能を使用すると、ベンダー API エンドポイントの調査とテストが簡単になります。
 
 ## 次の手順 {#next-steps}
 
-この記事では、ベンダーのクライアント側タグを評価し、イベント転送プロパティでサーバー側に移動する可能性のある一連の手順を説明しました。 関連トピックについて詳しくは、次のリンクを参照してください。
+この記事では、ベンダーのクライアントサイドタグを評価し、イベント転送プロパティでサーバーサイドに移動する可能性がある一連の手順を説明しました。 関連トピックについて詳しくは、次のリンクを参照してください。
 
-- [タグ管理](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) Adobe Experience Platform
-- [イベントの転送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) （サーバーサイド処理用）
-- [用語の更新](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja) データ収集
+- Adobe Experience Platformの [Tag Management](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)
+- サーバーサイド処理の [ イベント転送 ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+- データ収集での [ 用語の更新 ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html)

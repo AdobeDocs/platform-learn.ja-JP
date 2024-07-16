@@ -1,22 +1,23 @@
 ---
-title: CSC ブートキャンプ — インサイト — 概要
-description: CSC ブートキャンプ — インサイト — 概要
+title: CSC Bootcamp - Insights – 概要
+description: CSC Bootcamp - Insights – 概要
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: b2522d95-7fd9-41c3-9f49-757aaee410b7
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
 
-# インサイト：概要
+# Insights：概要
 
-キャンペーンに関する優れたインサイトを得るためのレポートの数を見てみましょう。  これらは唯一の例です。  その他にも、すぐに使用できるものが多数あり、レポートの作成や変更は非常に簡単です。
+キャンペーンに関する優れたインサイトを提供する多数のレポートを見てみましょう。  これらは例に過ぎません。  他にも多くの機能が標準で用意されており、レポートの作成や変更が簡単にできます。
 
-覚えておく必要があるのは、プラットフォーム上に存在する（ネイティブまたはユーザーが作成した）フィールドは、レポートの一部にすることができる点です。  選択肢は事実上無限です
+覚えておく必要があるのは、プラットフォームに存在するすべてのフィールド（ネイティブで作成したフィールドや、カスタムフィールド）がレポートの一部になることです。  したがって、選択肢は事実上無限です。
 
-次のステップ： [フェーズ 4 — プロジェクトマネージャーに関するインサイト](./project-manager.md)
+次の手順：[ フェーズ 4 - プロジェクトマネージャーのためのインサイト ](./project-manager.md)
 
-[フェーズ 3 に戻る — 配信：移動/移動しない](../delivery/go-nogo.md)
+[フェーズ 3 に戻る – 配信：開始/終了](../delivery/go-nogo.md)
 
 [すべてのモジュールに戻る](../../overview.md)

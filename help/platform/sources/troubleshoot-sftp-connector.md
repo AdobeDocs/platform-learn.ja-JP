@@ -1,20 +1,21 @@
 ---
-title: トラブルシューティング — SFTP ソースコネクタに接続できません
-description: SFTP ソースコネクタの接続の問題を回避するためのベストプラクティスについて説明します。 SFTP サーバーをAdobe Experience Platformに正常に接続するための具体的なチェックポイントを確認します。
+title: トラブルシューティング - SFTP ソースコネクタに接続できない
+description: SFTP ソースコネクタの接続の問題を回避するためのベストプラクティスについて説明します。 特定のチェックポイントを確認して、SFTP サーバーをAdobe Experience Platformに正常に接続します。
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-11950
 last-substantial-update: 2023-07-26T00:00:00Z
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+exl-id: 50f7a50c-ab0d-4cc8-bf58-2e0c9fc373ad
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
-# トラブルシューティング：SFTP ソースコネクタに接続できません
+# トラブルシューティング：SFTP ソースコネクタに接続できない
 
-SFTP ソースコネクタの接続の問題を回避するためのベストプラクティスについて説明します。 SFTP サーバーをAdobe Experience Platformに正常に接続するための具体的なチェックポイントを確認します。 詳しくは、 [SFTP ソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html).
+SFTP ソースコネクタの接続の問題を回避するためのベストプラクティスについて説明します。 特定のチェックポイントを確認して、SFTP サーバーをAdobe Experience Platformに正常に接続します。 詳しくは、[SFTP ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on)

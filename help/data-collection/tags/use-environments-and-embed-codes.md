@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # タグ環境と埋め込みコードの使用
 
-開発環境、ステージング環境、実稼動環境を使用し、タグプロパティを開発および検証するための埋め込みコードの使用方法について説明します。 詳しくは、 [環境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ja) ドキュメント。
+開発環境、ステージング環境、実稼動環境および埋め込みコードを使用して、タグプロパティを開発および検証する方法について説明します。 詳しくは、[environments](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

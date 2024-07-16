@@ -8,13 +8,13 @@ thumbnail: 343999.jpeg
 exl-id: 15948005-53d7-413d-9379-0d7b5189b839
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 63%
+source-wordcount: '38'
+ht-degree: 28%
 
 ---
 
 # イベント転送の監視
 
-データ収集インターフェイスでイベント転送を監視する方法を説明します。詳しくは、 [イベント転送ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+データ収集インターフェイスでイベント転送を監視する方法を説明します。 詳しくは、[ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on)

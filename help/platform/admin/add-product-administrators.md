@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Platformベースのアプリケーションに製品管理者を追加
-description: Adobe Experience Platformおよび Platform ベースのアプリケーション用の製品管理者を追加する方法について説明します。
+title: Adobe Experience Platform ベースのアプリケーションの製品管理者を追加
+description: Adobe Experience Platformと Platform ベースのアプリケーションの製品管理者を追加する方法について説明します。
 feature: Access Control
 role: Admin
 level: Beginner
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # 製品管理者の追加
 
-Adobe Experience Platform用の製品管理者を追加する方法について説明します。 製品管理者は、Real-time Customer Data PlatformやJourney Optimizerなど、Platform ベースのアプリケーションのアクセス制御を管理します。 Admin Consoleでユーザー、開発者および追加の管理者を作成し、Platform またはJourney Optimizerインターフェイスでユーザー（および API 資格情報）の権限を付与できます。 詳しくは、 [アクセス制御に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja).
+Adobe Experience Platformの製品管理者を追加する方法について説明します。 製品管理者は、Real-time Customer Data PlatformやJourney Optimizerなどの Platform ベースのアプリケーションのアクセス制御を管理します。 ユーザー、デベロッパー、Admin Consoleの追加管理者を作成し、Platform またはJourney Optimizer インターフェイスでそれらのユーザー（および API 資格情報）に権限を付与できます。 詳しくは、[ アクセス制御ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
 
 >[!TIP]
 >
->また、製品管理者を **ユーザー** から `AEP-Default-All-Users` 製品プロファイルをAdmin Consoleに追加した後、Platform インターフェイスの権限画面でロールに追加します。 詳しくは、 [ユーザーを追加](add-users.md) を参照してください。
+>製品管理者を Platform の `AEP-Default-All-Users` 製品プロファイルに **ユーザー** として追加し、Admin Consoleインターフェイスの権限画面で役割に追加することもお勧めします。 詳しくは、[ ユーザーの追加 ](add-users.md) を参照してください。

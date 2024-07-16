@@ -1,6 +1,6 @@
 ---
-title: Bootcamp — プリワーク
-description: Bootcamp — プリワーク
+title: Bootcamp – 前作業
+description: Bootcamp – 前作業
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 ---
 
-# 事前作業
+# 前作業
 
 ## コンテキスト
 

@@ -1,6 +1,6 @@
 ---
-title: Bootcamp -Customer Journey Analytics- Analysis Workspaceでのデータの準備
-description: Bootcamp -Customer Journey Analytics- Analysis Workspaceでのデータの準備
+title: Bootcamp - Customer Journey Analytics - Analysis Workspaceでのデータ準備
+description: Bootcamp - Customer Journey Analytics - Analysis Workspaceでのデータ準備
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,151 +11,151 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 2%
+source-wordcount: '768'
+ht-degree: 1%
 
 ---
 
-# 4.4 Analysis Workspaceでのデータの準備
+# 4.4 Analysis Workspaceでのデータ準備
 
 ## 目標
 
 - CJA でのAnalysis Workspace UI について
-- Analysis Workspaceでのデータ準備の概念の理解
-- データ計算の実行方法を説明します
+- Analysis Workspaceのデータ準備の概念を理解する
+- データ計算の実行方法を学ぶ
 
-## 4.4.1 CJA でのAnalysis Workspace UI
+## 4.4.1 CJA のAnalysis Workspace UI
 
-Analysis Workspaceでは、単一の Analytics レポートの一般的な制限をすべて削除します。 堅牢で柔軟なキャンバスで、カスタム分析プロジェクトを作成できます。 任意の数のデータテーブル、ビジュアライゼーションおよびコンポーネント（ディメンション、指標、セグメントおよび時間の精度）をプロジェクトにドラッグ&amp;ドロップします。 即座に分類およびセグメントを作成し、分析用のコホートを作成し、アラートを作成し、セグメントを比較し、フローおよびフォールアウト分析を実行し、レポートをキュレーションおよびスケジュールして、会社の任意のユーザーと共有します。
+Analysis Workspaceでは、1 つの Analytics レポートに特有の制限がすべて取り除かれます。 カスタム分析プロジェクトを作成するための堅牢で柔軟なキャンバスを提供します。 任意の数のデータテーブル、ビジュアライゼーションおよびコンポーネント（ディメンション、指標、セグメントおよび時間精度）をプロジェクトにドラッグ&amp;ドロップします。 分類およびセグメントを即座に作成し、分析のコホートを作成し、アラートを作成し、セグメントを比較し、フローおよびフォールアウト分析を行い、ビジネス内の任意のユーザーと共有するためのレポートをキュレーションおよびスケジュールします。
 
-Customer Journey Analyticsは、このソリューションを Platform データに基づいて実現します。 次の 4 分間の概要ビデオをご覧いただくことを強くお勧めします。
+Customer Journey Analyticsにより、このソリューションが Platform データの上に置かれます。 この 4 分間の概要ビデオを視聴することを強くお勧めします。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-Analysis Workspaceを初めて使用する場合は、このビデオをご覧ください。
+これまでAnalysis Workspaceを使用したことがない場合は、このビデオを視聴することを強くお勧めします。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### プロジェクトを作成
+### プロジェクトの作成
 
 次に、最初の CJA プロジェクトを作成します。 CJA 内の「プロジェクト」タブに移動します。
-「**新規作成**」をクリックします。
+**新規作成** をクリックします。
 
-![デモ](./images/prmenu.png)
+![ デモ ](./images/prmenu.png)
 
-これが見えます 選択 **空のプロジェクト** 次に、 **作成**.
+その後、これが表示されます。 「**空のプロジェクト**」を選択し、「**作成**」をクリックします。
 
-![デモ](./images/prmenu1.png)
+![ デモ ](./images/prmenu1.png)
 
 その後、空のプロジェクトが表示されます。
 
-![デモ](./images/premptyprojects.png)
+![ デモ ](./images/premptyprojects.png)
 
-まず、画面の右上隅にある正しいデータビューを選択してください。 この例では、選択するデータビューはです。 `CJA Bootcamp - Omnichannel Data View`.
+最初に、画面の右上隅で正しいデータビューを選択してください。 この例では、選択するデータビューは `CJA Bootcamp - Omnichannel Data View` です。
 
 次に、プロジェクトを保存し、名前を付けます。 次のコマンドを使用して保存できます。
 
 | OS | ショートカット |
 | ----------------- |-------------| 
-| Windows | Ctrl + S |
+| Windows | コントロール + S |
 | Mac | Command + S |
 
 次のポップアップが表示されます。
 
-![デモ](./images/prsave.png)
+![ デモ ](./images/prsave.png)
 
-次の命名規則を使用してください：
+次の命名規則を使用してください。
 
 | 名前 | 説明 |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-次に、「 **保存**.
+次に、「**保存** をクリックします。
 
-![デモ](./images/prsave2.png)
+![ デモ ](./images/prsave2.png)
 
 ## 4.4.2 計算指標
 
-データビューのすべてのコンポーネントを整理しましたが、ビジネスユーザーが分析を開始できるように、一部のコンポーネントを調整する必要があります。 また、分析中に計算指標を作成して、インサイトの発見をさらに深くすることもできます。
+データビューのすべてのコンポーネントは整理していますが、ビジネスユーザーが分析を開始する準備を整えるために、一部のコンポーネントを調整する必要があります。 また、分析中に計算指標を作成して、インサイトの結果をさらに深く把握できます。
 
-例として、計算指標を作成します。 **コンバージョン率** の使用 **購入** データビューで定義した指標/イベント。
+例として、データビューで定義した **購入** 指標/イベントを使用して **コンバージョン率** を計算して作成します。
 
 ### コンバージョン率
 
-計算指標ビルダーを開きましょう。 をクリックします。 **+** をクリックして、Analysis Workspaceで最初の計算指標を作成します。
+計算指標ビルダーを開きます。 「**+**」をクリックして、Analysis Workspaceで最初の計算指標を作成します。
 
-![デモ](./images/pradd.png)
+![ デモ ](./images/pradd.png)
 
-この **計算指標ビルダー** が表示されます。
+**計算指標ビルダー** が表示されます。
 
-![デモ](./images/prbuilder.png)
+![ デモ ](./images/prbuilder.png)
 
-次を検索： **購入** をクリックします。 の下 **指標** クリック **すべて表示**
+左側のメニューの指標のリストで **購入** を見つけます。 **指標** で **すべて表示** をクリックします
 
-![デモ](./images/calcbuildercr1.png)
+![ デモ ](./images/calcbuildercr1.png)
 
-次に、 **購入** 指標を追加します。
+次に、**購入** 指標を計算指標の定義にドラッグ&amp;ドロップします。
 
-![デモ](./images/calcbuildercr2.png)
+![ デモ ](./images/calcbuildercr2.png)
 
-通常、コンバージョン率はを意味します。 **コンバージョン/セッション**. 計算指標の定義キャンバスでも同じ計算を行います。 次を検索： **セッション** 指標をドラッグし、定義ビルダーの「 **購入** イベント。
+通常、コンバージョン率は **コンバージョン / セッション** を意味します。 計算指標の定義キャンバスでも同じ計算を行います。 **セッション** 指標を見つけて、**購入** イベントの下の定義ビルダーにドラッグ&amp;ドロップします。
 
-![デモ](./images/calcbuildercr3.png)
+![ デモ ](./images/calcbuildercr3.png)
 
-除算演算子が自動的に選択されることに注意してください。
+除算演算子が自動的に選択されます。
 
-![デモ](./images/calcbuildercr4.png)
+![ デモ ](./images/calcbuildercr4.png)
 
-通常、コンバージョン率はパーセンテージで表されます。 形式をパーセンテージに変更し、2 桁の小数も選択します。
+コンバージョン率は通常、パーセンテージで表されます。 そのため、形式をパーセンテージに変更し、2 桁の小数も選択します。
 
-![デモ](./images/calcbuildercr5.png)
+![ デモ ](./images/calcbuildercr5.png)
 
 最後に、計算指標の名前と説明を変更します。
 
 | タイトル | 説明 |
 | ----------------- |-------------| 
-| yourLastName — コンバージョン率 | yourLastName — コンバージョン率 |
+| yourLastName - コンバージョン率 | yourLastName - コンバージョン率 |
 
-画面には次のような内容が表示されます。
+画面には次のようになります。
 
-![デモ](./images/calcbuildercr6.png)
+![ デモ ](./images/calcbuildercr6.png)
 
-忘れずに **保存** 計算指標。
+計算指標を **保存** することを忘れないでください。
 
-![デモ](./images/pr9.png)
+![ デモ ](./images/pr9.png)
 
-## 4.4.3 計算Dimension:フィルター（セグメント化）と日付範囲
+## 4.4.3 計算Dimension：フィルター（セグメント化）と日付範囲
 
 ### フィルター：計算Dimension
 
-計算は指標にのみ使用するものではありません。 分析を開始する前に、いくつかを作成するのも興味深い作業です。 **計算Dimension**. これは基本的に、 **セグメント** Adobe Analyticsに戻る Customer Journey Analyticsでは、これらのセグメントは **フィルター**.
+計算は、指標のみに使用するためのものではありません。 分析を始める前に、いくつかの **計算Dimension** を作成するのも興味深いです。 これは基本的に、Adobe Analyticsに戻ると **セグメント** を意味していました。 Customer Journey Analyticsでは、これらのセグメントは **フィルター** と呼ばれます。
 
-![デモ](./images/prfilters.png)
+![ デモ ](./images/prfilters.png)
 
-フィルターを作成すると、ビジネスユーザーは、役立つ計算ディメンションを使用して分析を開始できます。 これにより、いくつかのタスクを自動化し、導入部分を支援します。 次に例を示します。
+フィルターを作成すると、ビジネスユーザーは、いくつかの有用な計算ディメンションを使用して分析を開始できます。 これにより、一部のタスクが自動化され、導入の部分も支援されます。 次に例を示します。
 
 1. 所有メディア、有料メディア、
 2. 新規訪問と再訪問
-3. 買い物かごを放棄した顧客
+3. 放棄された買い物かごを持つ顧客
 
-これらのフィルタは、解析パーツの前または中に作成できます（次の演習で作成します）。
+これらのフィルターは、分析部分の前または実行中に作成できます（次の演習で行います）。
 
-### 日付範囲：計算時間Dimension
+### 日付範囲：計算されたDimension
 
-時間Dimensionは、別のタイプの計算ディメンションです。 既に作成済みのものもありますが、データ準備段階で独自のカスタム時間Dimensionを作成することもできます。
+時間Dimensionは、別のタイプの計算ディメンションです。 既に作成されているものもありますが、データ準備段階で独自のカスタム時間Dimensionを作成する機能もあります。
 
-これらの計算時間Dimensionは、アナリストやビジネスユーザーが重要な日付を記憶し、それらを使用してレポート時間をフィルタリングおよび変更するのに役立ちます。 分析を行う際に頭に浮かぶ典型的な質問や疑問：
+これらの計算時間のDimensionは、アナリストやビジネスユーザーが重要な日付を思い出し、それらを使用してレポート時間をフィルタリングおよび変更するのに役立ちます。 分析を行う際に頭に浮かぶ典型的な質問や疑問：
 
-- 昨年のブラック・フライデーはいつでしたか？ 21、29 日？
-- 私たちは 12 月にいつそのテレビキャンペーンを行いましたか？
-- 2018 年のサマーセールはいつからいつまで行われましたか。 私は 2019 年と比べたい。 ところで、2019 年の正確な日は分かりますか？
+- 去年のブラックフライデーはいつでしたか。 21 日から 29 日？
+- 12 月のテレビキャンペーンはいつ行われましたか？
+- 2018 年のサマーセールはいつからいつまで行われたのですか？ 2019 年と比較したい。 ところで、2019 年の正確な日を知っていますか。
 
-![デモ](./images/timedimensions.png)
+![ デモ ](./images/timedimensions.png)
 
-これで、CJA Analysis Workspaceを使用したデータ準備の演習が完了しました。
+これで、CJA Analysis Workspaceを使用したデータ準備演習が完了しました。
 
-次のステップ： [4.5Customer Journey Analytics](./ex5.md)
+次の手順：Customer Journey Analyticsを使用した [4.5 ビジュアライゼーション ](./ex5.md)
 
-[ユーザーフローに戻る 4](./uc4.md)
+[ユーザーフロー 4 に戻る](./uc4.md)
 
 [すべてのモジュールに戻る](./../../overview.md)

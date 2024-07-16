@@ -1,41 +1,42 @@
 ---
-title: CSC Bootcamp — ソーシャルメディア広告の作成
-description: CSC Bootcamp — ソーシャルメディア広告の作成
+title: CSC Bootcamp - ソーシャルメディア広告の作成
+description: CSC Bootcamp - ソーシャルメディア広告の作成
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: f22f52ac-13e6-428d-b081-da8cf769e6fc
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
 # ソーシャルメディア広告の作成
 
-Adobe Expressは、ターゲットオーディエンスに連絡を取ろうとしている企業でも、ビデオを共有しようとしている企業でも、あらゆるプラットフォーム向けに素晴らしいソーシャルメディア画像を作成するのに役立ちます。 アイデアが短い場合は、テンプレートライブラリを参照して、創造性を高めてください。 Adobe Expressには、下の例のようなプロフェッショナルなデザインのソーシャルメディアグラフィックと、デザインにドラッグ&amp;ドロップできる無料の画像、アイコン、グラフィックが搭載されています。
+Adobe Expressは、ターゲットオーディエンスにリーチする企業でも、個人が自分の雰囲気を分かち合う企業でも、あらゆるプラットフォームで素晴らしいソーシャルメディア画像を作成するのに役立ちます。 アイデアが少ない場合は、テンプレートライブラリを参照して、創造性を始動します。 Adobe Expressには、以下の例のようにプロフェッショナルがデザインした何千ものソーシャルメディアグラフィックが付属しています。無料の画像、アイコン、グラフィックをデザインにドラッグ&amp;ドロップできます。
 
-- に移動します。 [Adobe Express](https://www.adobe.com/express/create/social-media-graphic) 「今すぐソーシャルメディアのグラフィックを作成」ボタンをクリックして開始します。
+- [ Adobe Expressに移動し ](https://www.adobe.com/express/create/social-media-graphic) 「今すぐソーシャルメディアグラフィックを作成」ボタンをクリックして開始します。
 
-![Adobe Expressホーム](./images/prod-express-home.png)
+![Adobe Express ホーム ](./images/prod-express-home.png)
 
-- Adobe Expressを初めて使用する場合は、開始するためにポップアップ表示されるモーダルの「続行に同意する」ボタンをクリックします。
+- Adobe Expressを初めて使用する場合は、ポップアップ表示されるモーダルの「続行することに同意する」ボタンをクリックして開始します。
 
-![条件に同意する](./images/prod-express-terms.png)
+![ 条件に同意 ](./images/prod-express-terms.png)
 
-- 左側のサイドバーから、「無料」チェックボックスをオンにしてAdobe Expressの無料テンプレートの概要を表示し、チームで決めたグラフィックの種類を選択します。 ここでは、Instagramのポストを作る。エディターに読み込むテンプレートをクリックするだけです。
+- 左側のサイドバーから、「フリー」チェックボックスをオンにして、Adobe Expressのフリーテンプレートの概要を確認し、チームで決定したグラフィックの種類を選択します。 ここでは、Instagramの投稿を作成します。エディターに読み込むテンプレートをクリックするだけです。
 
-![クリエイティブテンプレート](./images/prod-express-templates.png)
+![ クリエイティブテンプレート ](./images/prod-express-templates.png)
 
-- 投稿に満足したら、右上の「ダウンロード」ボタンをクリックして、ソーシャルメディアの投稿を好みの形式でダウンロードします。 安全な場所に置いておけ、後で必要になる！
+- 投稿に満足したら、右上の「ダウンロード」ボタンをクリックして、ソーシャルメディアの投稿を好みの形式でダウンロードします。 後で必要になるので、安全な場所に保管してください。
 
-![終了結果](./images/prod-express-results.png)
+![ 最終結果 ](./images/prod-express-results.png)
 
 >[!NOTE]
 >
->**知ってたの？**\
->Adobe Expressは常に進化し、Adobeのすべての製品と同様に。 Adobe ExpressとAEM Assetsの統合を発表できることを大変嬉しく思っています。 これにより、ブランドのアセットをAdobe Expressで使用したり、結果を直接Adobe Expressに保存したりできます。
+>**ご存じでしたか？**\
+>Adobe Expressは常に進化し続けており、Adobeではすべての製品が進化しています。 だからこそ、Adobe ExpressとAEM Assetsの今後の統合についてお知らせします。 これにより、ブランドのアセットをAdobe Expressで使用できるほか、結果をAdobe Expressに直接保存できます。
 
-次のステップ： [フェーズ 2 — 実稼動：モバイルアプリコンテンツを作成](./app.md)
+次の手順：[ フェーズ 2 – 実稼動：モバイルアプリコンテンツの作成 ](./app.md)
 
-[フェーズ 2 — 実稼動に戻る：製品ホームページのバナーを作成](./banner.md)
+[フェーズ 2 に戻る – 実稼動：製品ホームページバナーを作成](./banner.md)
 
 [すべてのモジュールに戻る](../../overview.md)

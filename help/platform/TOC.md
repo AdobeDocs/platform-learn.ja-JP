@@ -1,14 +1,14 @@
 ---
 user-guide-title: Adobe Experience Platform のチュートリアル
 breadcrumb-title: チュートリアル
-user-guide-description: Experience Platformの多くのコンポーネントについて説明します。
+user-guide-description: Experience Platform の多くの要素について学びます。
 audience: all
 doc-type: video
 auto-video-transcripts: true
 source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 18%
 # Adobe Experience Platform のチュートリアル {#tutorials}
 
 + [Platform Tutorials](/help/platform/overview.md)
-+ Platform の概要 {#intro-to-platform}
++ Platform {#intro-to-platform} の概要
    + [Experience Platform を活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [バックグラウンド：Experience Platformを活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform の概要](/help/platform/intro-to-platform/overview.md)
@@ -27,13 +27,13 @@ ht-degree: 18%
    + [基本アーキテクチャ](/help/platform/intro-to-platform/basic-architecture.md)
    + [ユーザーインターフェイス](/help/platform/intro-to-platform/interface-tour.md)
    + [役割とプロジェクトのフェーズ](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ Real-Time CDPについて {#rtcdp}
++ Real-Time CDP {#rtcdp} の概要
    + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [エンドツーエンドのデモ](/help/platform/rtcdp/demo.md)
    + [ワークフロー](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [B2B Edition の概要](/help/platform/rtcdp/b2b-overview.md)
    + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [はじめに：データアーキテクトとデータエンジニア](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja){target="_blank"}
++ [ はじめに：データアーキテクトとデータエンジニア ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja){target="_blank"}
 + [Experience PlatformAPI に対する認証](/help/platform/authentication/platform-api-authentication.md)
 + [Experience Platformへのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
@@ -41,8 +41,8 @@ ht-degree: 18%
    + [アラートを使用](/help/platform/admin/use-alerts.md)
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
    + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [ユーザーを追加](/help/platform/admin/add-users.md)
-   + [データ収集へのユーザーの追加](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [ユーザーの追加](/help/platform/admin/add-users.md)
+   + [ データ収集へのユーザーの追加 ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [開発者を追加](/help/platform/admin/add-developers.md)
    + [製品管理者の追加](/help/platform/admin/add-product-administrators.md)
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
@@ -59,15 +59,15 @@ ht-degree: 18%
    + [マルチエンティティオーディエンスの作成](audiences/create-multi-entity-audiences.md)
    + [アカウントオーディエンスの作成とアクティブ化（B2B）](audiences/create-audiences-with-b2b-data.md)
    + [ストリーミングセグメント化のデモ](/help/platform/audiences/streaming-segmentation-demo.md)
-   + [オーディエンスルールの評価](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [データを書き出すデータセットの作成](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [ オーディエンスルールの評価 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [ データを書き出すデータセットの作成 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [セグメントの一致の接続設定](/help/platform/segments/segment-match-connection-setup.md)
    + [セグメントの一致のデータガバナンス](/help/platform/segments/segment-match-data-governance.md)
    + [セグメントの一致の設定フロー](/help/platform/segments/segment-match-configuration-flow.md)
    + [セグメントの一致によるインサイトの事前共有](/help/platform/segments/segment-match-pre-share-insights.md)
    + [受信データのセグメント一致](/help/platform/segments/segment-match-receiving-data.md)
 + [監査ログ](/help/platform/governance/audit-logs.md)
-+ [データ収集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [ データ収集 ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + ダッシュボード {#dashboards}
    + [ダッシュボードの作成](/help/platform/dashboards/create-a-dashboard.md)
 + データガバナンス {#data-governance}
@@ -81,28 +81,28 @@ ht-degree: 18%
 + データハイジーン {#data-hygiene}
    + [データハイジーンのためのデータ準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [データセットとバッチの削除](/help/platform/data-hygiene/delete-datasets-and-batches.md)
-   + [データセットの有効期限](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [ データセットの有効期限 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [偽名プロファイルとイベントの有効期限（TTL）](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [プロファイルの削除](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
-   + [プロファイル属性の更新](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
-+ データ取り込み {#data-ingestion}
+   + [ プロファイルの削除 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [ プロファイル属性の更新 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
++ データ取得 {#data-ingestion}
    + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [バッチ取り込みの概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [データセットの作成と入力](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [データセットとバッチの削除](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [CSV ファイルの XDM へのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
+   + [ データセットとバッチの削除 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
+   + [CSV ファイルの XDM へのマッピング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [ソースの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Adobe Analyticsからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
-   + [Audience Managerからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [クラウドストレージからのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ja)
-   + [CRM からのデータの取り込み](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ja)
+   + [Adobe Analyticsからのデータの取得 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
+   + [Audience Managerからのデータの取得 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [ クラウドストレージからのデータの取得 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ja)
+   + [CRM からのデータの取得 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ja)
    + [データベースからのデータ取得](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [ストリーミングインジェストの概要](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [HTTP API を使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=ja)
    + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ja)
-   + [Web SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [Mobile SDK チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=ja){target="_blank"}
-+ データライフサイクル {#data-lifecycle}
+   + [Web SDK チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Mobile SDK チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=ja){target="_blank"}
++ Data Lifecycle {#data-lifecycle}
    + [データセットの有効期限](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
    + [概要](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
@@ -117,9 +117,9 @@ ht-degree: 18%
    + [トレーニング済みモデル（UI）の作成と公開](data-science-workspace/create-model-ui.md)
    + [サービスの自動トレーニングとスコアリングのスケジュール設定](data-science-workspace/schedule-training-scoring.md)
    + [機械学習のインサイトによるリアルタイム顧客プロファイルのエンリッチメント](data-science-workspace/dsw-profile-segmentation.md)
-   + [ソースファイルのレシピへのパッケージ化](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [パッケージ化されたレシピ（UI）の読み込み](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [パッケージ化されたレシピ（API）の読み込み](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
+   + [ ソースファイルのレシピへのパッケージ化 ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [ パッケージ化されたレシピ（UI）のインポート ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [ パッケージ化されたレシピ（API）のインポート ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 宛先 {#destinations}
    + [宛先の概要](/help/platform/destinations/understanding-destinations.md)
    + [宛先への接続](/help/platform/destinations/connecting-to-destinations.md)
@@ -132,7 +132,7 @@ ht-degree: 18%
    + [ファイルベースのクラウドストレージまたは電子メールマーケティングの宛先の設定](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [ソーシャルの宛先の設定](/help/platform/destinations/configure-a-social-destination.md)
    + [LiveRamp 宛先を通じたアクティブ化](/help/platform/destinations/liveramp-destinations.md)
-   + Adobe Targetとカスタムパーソナライゼーション{#target}
+   + Adobe TargetとカスタムPersonalization{#target}
       + [Adobe Targetを使用した次のヒットのパーソナライゼーション](/help/platform/destinations/target/next-hit-personalization.md)
       + [Adobe Targetの宛先の設定](/help/platform/destinations/target/configure-the-target-destination.md)
       + [セグメントとプロファイル属性のアクティブ化](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
@@ -153,7 +153,7 @@ ht-degree: 18%
    + [顧客 AI の価値](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Customer AI の設定](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Customer AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ 監視 {#monitoring}
++ 監視{#monitoring}
    + [データ取得の監視](/help/platform/monitoring/monitoring-dashboard.md)
    + [セグメントの有効化の監視](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [データフローのモニタリング](/help/platform/monitoring/data-monitoring.md)
@@ -166,18 +166,18 @@ ht-degree: 18%
    + [リアルタイム顧客プロファイルについて](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [プロファイルの概要図](/help/platform/profiles/overview-diagram.md)
    + [データをプロファイルに取り込む](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [プロファイルビューの詳細のカスタマイズ](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+   + [ プロファイルビューの詳細のカスタマイズ ](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [アカウントプロファイルの表示](/help/platform/profiles/view-account-profiles.md)
    + [結合ポリシーの作成](/help/platform/profiles/create-merge-policies.md)
    + [結合スキーマの概要](/help/platform/profiles/union-schemas-overview.md)
    + [計算属性の作成](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
-   + [偽名プロファイル有効期限（TTL）](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
+   + [ 偽名プロファイルの有効期限（TTL） ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [プロファイルの削除](/help/platform/profiles/delete-profiles.md)
    + [アップサートを使用した特定の属性の更新](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
-+ プライバシーとセキュリティ {#privacy}
++ Privacy and Security {#privacy}
    + [Privacy Serviceの概要](/help/platform/privacy/introduction-to-privacy-services.md)
    + [プライバシーリクエストの ID データ](/help/platform/privacy/identity-data-in-privacy-requests.md)
-   + [プライバシー JavaScript ライブラリ](/help/platform/privacy/using-privacy-javascript-library.md)
+   + [プライバシーJavaScriptライブラリ](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analyticsのプライバシーラベル](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy ServiceAPI の概要](/help/platform/privacy/getting-started-with-privacy-services-api.md)
    + [PRIVACY SERVICEUI](/help/platform/privacy/using-privacy-services-ui.md)
@@ -195,12 +195,12 @@ ht-degree: 18%
    + [Adobe定義関数](/help/platform/queries/adobe-defined-functions.md)
    + [データ使用パターン](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [クエリの実行](/help/platform/queries/run-queries.md)
-   + [クエリ結果からのデータセット生成](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+   + [ クエリ結果からのデータセットの生成 ](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [データの分析と視覚化](/help/platform/queries/analyze-and-visualize.md)
    + [BI ツールを使用したダッシュボードの構築](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [顧客データの再充電](/help/platform/queries/recharge-your-customer-data.md)
-   + [クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [ クエリサービスへのクライアントの接続 ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [データレイク内のデータを検証](/help/platform/queries/validate-data-in-the-datalake.md)
 + スキーマ {#schemas}
    + [概要](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -216,7 +216,7 @@ ht-degree: 18%
    + [列挙フィールドと推奨値を使用する](/help/platform/schemas/use-enumerated-fields.md)
    + [サンドボックス間でのスキーマのコピー](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [スキーマの更新](/help/platform/schemas/update-schemas.md)
-   + [アドホックスキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
+   + [ アドホックスキーマの作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + ソース {#sources}
    + [概要](/help/platform/sources/overview.md)
    + [Adobe Analyticsからのデータの取り込み](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -226,7 +226,7 @@ ht-degree: 18%
    + [CRM からのデータの取り込み](/help/platform/sources/ingest-data-from-crm.md)
    + [データベースからのデータの取り込み](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API を使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-http-api.md)
-   + [ソースコネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
+   + [Source コネクタを使用したデータのストリーミング](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [トラブルシューティング：SFTP コネクタ](/help/platform/sources/troubleshoot-sftp-connector.md)
 + ユースケースプレイブック {#use-case-playbooks}
    + [概要](/help/platform/use-case-playbooks/overview.md)
@@ -243,4 +243,4 @@ ht-degree: 18%
    + [ブランドと消費者の 2 つの認識の物語](/help/platform/industry/brands-vs-consumers.md)
    + [オーディエンスのセンターオブエクセレンスの進化](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [顧客プロファイルを使用した優れたエクスペリエンスの構築](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [ファーストパーティデータコンテキストでのデータ共同作業](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
+   + [ファーストパーティデータコンテキストでのデータCollaboration](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)

@@ -1,29 +1,29 @@
 ---
-title: 開発者をAdobe Experience Platformベースのアプリケーションに追加する
-description: Adobe Experience Platformベースのアプリケーションに開発者を追加し、API 資格情報に権限を付与する方法を説明します。
+title: Adobe Experience Platform ベースのアプリケーションに開発者を追加
+description: Adobe Experience Platform ベースのアプリケーションにデベロッパーを追加し、API 資格情報に権限を付与する方法について説明します
 feature: Access Control
 role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
-source-git-commit: 4d1a0ff598b822e2228d8719488b9dbb91c9870d
+exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
+source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
 
 ---
 
-# 開発者を追加し、API 資格情報に対する権限を付与する
+# 開発者を追加し、API 資格情報に権限を付与します。
 
-Real-time Customer Data PlatformやJourney Optimizerなど、Adobe Experience Platformベースのアプリケーションに開発者を追加する方法を説明します。 開発者はまず、Admin Consoleに追加されます。 開発者コンソールで Platform プロジェクトを作成した後、その API 資格情報には、Platform またはJourney Optimizerインターフェイスでの権限が割り当てられます。 詳しくは、 [アクセス制御に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja).
+Real-time Customer Data PlatformやJourney OptimizerなどのAdobe Experience Platform ベースのアプリケーションに開発者を追加する方法について説明します。 開発者は、まずAdmin Consoleに追加されます。 Developer Consoleで Platform プロジェクトを作成すると、API 資格情報に Platform またはJourney Optimizer インターフェイスで権限が割り当てられます。 詳しくは、[ アクセス制御ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
 >[!ADMIN]
 >
->開発者を追加し、権限を API 資格情報に割り当てることができるのは、システム管理者のみです。 製品管理者はこれらのタスクを完了できません。
+>デベロッパーを追加し、API 資格情報に権限を割り当てることができるのは、システム管理者のみです。 製品管理者は、これらのタスクを完了できません。
 
 >[!TIP]
 >
->また、開発者を **ユーザー** から `AEP-Default-All-Users` 製品プロファイルをAdmin Consoleに追加し、API 資格情報と同じ役割の Platform インターフェイスに追加します。 これにより、必要に応じてインターフェイスを使用できます。 詳しくは、 [ユーザーを追加](add-users.md) を参照してください。
-
+>また、デベロッパーを **ユーザー** として Platform の `AEP-Default-All-Users` 製品プロファイルに追加し、Admin Consoleインターフェイスで API 資格情報と同じロールに追加することをお勧めします。 これにより、必要に応じてインターフェイスを使用できます。 詳しくは、[ ユーザーの追加 ](add-users.md) を参照してください。

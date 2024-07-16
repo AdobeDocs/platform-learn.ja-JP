@@ -10,7 +10,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 30%
+ht-degree: 25%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 30%
    + [ID 名前空間の設定](configure-identities.md)
    + [データストリームの設定](configure-datastream.md)
 
-+ タグの設定 {#tags-configuration}
++ タグ設定 {#tags-configuration}
    + [Web SDK 拡張機能のインストール](install-web-sdk.md)
    + [データ要素の作成](create-data-elements.md)
    + [ID の作成](create-identities.md)
    + [タグルールの作成](create-tag-rule.md)
    + [デバッガーでの検証](validate-with-debugger.md)
-   + [Assurance で検証](validate-with-assurance.md)
+   + [Assurance での検証](validate-with-assurance.md)
 
 + アプリケーション設定 {#applications-setup}
    + [Experience Platformの設定](setup-experience-platform.md)
@@ -42,7 +42,7 @@ ht-degree: 30%
 + 同意管理 {#consent-management}
    + [同意の設定](setup-consent.md)
 
-+ イベントの転送 {#event-forwarding}
++ イベント転送 {#event-forwarding}
    + [イベント転送の設定](setup-event-forwarding.md)
 
 + [まとめ](conclusion.md)

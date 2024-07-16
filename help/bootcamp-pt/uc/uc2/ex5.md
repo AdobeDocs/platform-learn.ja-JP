@@ -1,6 +1,6 @@
 ---
-title: Bootcamp — モバイルアプリをインストールして使用 — ブラジル
-description: Bootcamp — モバイルアプリをインストールして使用 — ブラジル
+title: Bootcamp - モバイルアプリのインストールと使用 – ブラジル
+description: Bootcamp - モバイルアプリのインストールと使用 – ブラジル
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -9,87 +9,87 @@ feature: Mobile SDK
 exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
-# 2.5 Instale e use o aplicativo móvel
+# 2.5 aplicativo móvel の使い方
 
 
-## Instale o aplicativo movel
+## Instale o aplicativo móvel
 
-Antes de instalar o applicativo,é nitário habilitar Rastreamento no seu dispositivo iOS. Para isso, acesse Configuraçoes > Privacidade e segurança > Rastreamento e confirme a opção Peritrir que os applicativos solicititem o rastreamento.
+Antes de instalar o aplicativo, é necário habilitar Rastreamento no seu dispositivoiOS. Para isso, acesse Configuraçóes > Privacidade e segurança > Rastreamento e confirme a opção Permitir que os aplicativos solicitem o rastreamento. （パライソ、アクセの構成法）
 
 ![DSN](./../uc3/images/app4.png)
 
-App Store・ダ・Apple・エペスク `aepmobile-bootcamp`.\
-クリック **Instalar** ou **ダウンロード**.
+App StoreダApplee ペスキーズ `aepmobile-bootcamp` ースにアクセスしてください。\
+Clique em **Instalar** ou **ダウンロード**。
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abrir**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-クリック **OK**.
+Em をクリックします **OK**。
 
 ![DSN](./../uc3/images/app9.png)
 
-クリック **権限**.
+Clique em **パーミテール**。
 
 ![DSN](./../uc3/images/app3.png)
 
-クリック **コンコルド**.
+Clique em **コンコルド**。
 
 ![DSN](./../uc3/images/app7.png)
 
-クリック **アプリの Permiter enquanto uso**.
+Clique em **Permitir enquanto uso o app**。
 
 ![DSN](./../uc3/images/app8.png)
 
-クリック **権限**.
+Clique em **パーミテール**。
 
 ![DSN](./../uc3/images/app5.png)
 
-アゴラヴォーケスタノ・アプリカティボ、ナ・パジナ・イニシャル、プロント (a) パラ・ヴェリフィカル・トダ・ヨルナダ・クライアンテ。
+Agora você está no aplicativo, na página inicial, pronto （a） para verificar toda a jornada do cliente. アゴラ・ヴォケ・エスタ・ノ・アプリカティボ、ナ・パージーナ・イニシアル、プロント（a）パラベリフィカル・トダ・ヨルナダ・ド・クリエンテ。
 
 ![DSN](./../uc3/images/app12.png)
 
-## フラクソダヨルナダドクライアンテ
+## フルクソ・ダ・ジョルナダ・ド・クライアント
 
-Primeiramente,é nepisario fazer o login. クリック **ログイン**.
+Primeiramente, é necário fazer o login. Clique em **ログイン**。
 
 ![DSN](./../uc3/images/app13.png)
 
-Depois de criar sua conta nos excios anteriores, issoé exibido no site. Agora nesario reutilizar o endreço de e-mail da conta cque voccrio uno applicativo para fazer o login.
+Depois de criar sua conta nos exercícios anteriores, isso é exibido no site （英語） Agora é necário reutilizar o endereco de e-mail da conta você criou no aplicativo para fazer o login. （英語）
 
 ![デモ](./../uc3/images/pv1.png)
 
-Digite o endreço de e-mail que vocêsou no site e clique em **ログイン**.
+Digite o endereco de e-mail que você usou no site e clique em **ログイン**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Vocêrecerbera uma confirmação de que está conectado e receberá uma notificação push.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-レトルネ・パラ・ア・パジナ・イニシャル・ド・アプリカティボ e os recursos adicionais irano apacerer.
+レトルネ・パラ・ア・パジナ・イニシアル・ド・aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./../uc3/images/app17.png)
 
-Acesse **製品**. Cliem qualquer producto、ネストされた例： **行くコーヒー**.
+Acesse **製品**。 Clique em qualquer produto, neste exexampo: **Coffee to go**.
 
 ![DSN](./images/app19.png)
 
-Voêverá a página do produto **行くコーヒー** アプリケーティボなし クリック **購入**.
+Você verá a página do produto **コーヒーを飲んで行く** no aplicativo. Clique em **購入**。
 
 ![DSN](./images/app20.png)
 
-アゴラヴォーカルテルミノーは、exercício e está pronto proximas atividades として設定します。
+Agora você terminou este exercício e está prolonto para as próximas atividades. （アゴラ・ボーケ・ターミョウエステ・エクスペリシオ・エ・エスタ・プロント・パラス・アオキシマス・アティヴィダデス）
 
-プロクシマエタパ： [ 2.6 Personalização no call center](./ex6.md)
+Próxima etapa: [ 2.6 Personalização no コールセンター ](./ex6.md)
 
-[レトルナルパラフルクソデウサリオ 2](./uc2.md)
+[レトルナル パラ フルクソ デ ウスアリオ 2](./uc2.md)
 
-[レトルナーパラトドスオスモドゥロス](../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](../../overview.md)

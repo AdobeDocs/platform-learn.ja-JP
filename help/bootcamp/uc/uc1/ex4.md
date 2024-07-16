@@ -11,47 +11,47 @@ exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
 source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # 1.4 アクションの実行：オーディエンスをAdobe Targetに送信します
 
-に移動 [Adobe Experience Platform](https://experience.adobe.com/platform). ログインすると、Adobe Experience Platformのホームページが表示されます。
+[Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
 ![データ取得](./images/home.png)
 
-続行する前に、を選択する必要があります **sandbox**. 選択するサンドボックスの名前はです ``Bootcamp``. それには、テキストをクリックします **[!UICONTROL 実稼動製品]** 画面上部の青い線 適切なを選択した後 [!UICONTROL sandbox]画面が変わり、専用の画面が表示されます [!UICONTROL sandbox].
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``Bootcamp`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./images/sb1.png)
 
 ## 1.4.1 Adobe Targetの宛先に対するオーディエンスのアクティブ化
 
-Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を設定するには、以下に移動します **宛先**、終了 **カタログ**.
+Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を設定するには、**Destinations**/**Catalog** に移動します。
 
-クリック **Personalization** が含まれる **カテゴリ** メニュー。 「」が表示されます。 **Adobe Target** 宛先カード。 クリック **オーディエンスをアクティベート**.
+**カテゴリ** メニューの **Personalization** をクリックします。 **Adobe Target** の宛先カードが表示されます。 **オーディエンスをアクティブ化** をクリックします。
 
-![時刻](./images/atdest1.png)
+![AT](./images/atdest1.png)
 
-宛先を選択 ``Bootcamp Target`` をクリックして、 **次**.
+宛先 ``Bootcamp Target`` を選択し、「**次へ**」をクリックします。
 
-![時刻](./images/atdest3.png)
+![AT](./images/atdest3.png)
 
-使用可能なオーディエンスのリストで、作成したオーディエンスを選択します [1.3 オーディエンスの作成](./ex3.md)。この名前は `yourLastName - Interest in Real-Time CDP`. 次に、「**次へ**」をクリックします。
+使用可能なオーディエンスのリストで、「[1.3 オーディエンスの作成 ](./ex3.md)」で作成したオーディエンス（「`yourLastName - Interest in Real-Time CDP`」という名前）を選択します。 次に、「**次へ**」をクリックします。
 
-![時刻](./images/atdest8.png)
+![AT](./images/atdest8.png)
 
-次のページ **次**.
+次のページで、「**次へ**」をクリックします。
 
-![時刻](./images/atdest9.png)
+![AT](./images/atdest9.png)
 
 「**完了**」をクリックします。
 
-![時刻](./images/atdest10.png)
+![AT](./images/atdest10.png)
 
 これで、オーディエンスがAdobe Targetに対してアクティブ化されました。
 
-![時刻](./images/atdest11.png)
+![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
@@ -61,30 +61,30 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 
 Real-Time CDP オーディエンスがAdobe Targetに送信されるように設定されたので、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定できます。 この演習では、Visual Experience Composer ベースのアクティビティを設定します。
 
-に移動して、Adobe Experience Cloud ホームページに移動します。 [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). クリック **ターゲット** をクリックして開きます。
+[https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/) にアクセスして、Adobe Experience Cloud ホームページに移動します。 **Target** をクリックして開きます。
 
 ![RTCDP](./images/excl.png)
 
-日 **Adobe Target** ホームページを開くと、既存のすべてのアクティビティが表示されます。
-クリック **+ アクティビティを作成** 新規アクティビティを作成します。
+**Adobe Target** のホームページには、既存のすべてのアクティビティが表示されます。
+「**+ アクティビティを作成**」をクリックして、新しいアクティビティを作成します。
 
 ![RTCDP](./images/exclatov.png)
 
-を選択 **エクスペリエンスのターゲット設定**.
+**エクスペリエンスのターゲット設定** を選択します。
 
 ![RTCDP](./images/exclatcrxt.png)
 
-を選択 **ビジュアル** を設定して、 **アクティビティ URL** 対象： `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`ただし、その前に、XX を 01～30 の数字に置き換えてください。
+**ビジュアル** を選択し、**アクティビティ URL** を `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html` に設定しますが、その前に XX を 01～30 の数字に置き換えてください。
 
 >[!IMPORTANT]
 >
->イネーブルメントのすべての参加者は、様々なAdobe Target エクスペリエンスの競合を避けるために、個別の web ページを使用する必要があります。 Web ページを選択して、次の場所で URL を見つけることができます。 [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>イネーブルメントのすべての参加者は、様々なAdobe Target エクスペリエンスの競合を避けるために、個別の web ページを使用する必要があります。 Web ページを選択して URL を見つけるには、[https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html) にアクセスしてください。
 >
 >ページはすべて同じベース URL を共有し、最後に参加者の数が表示されます。
 >
->例えば、参加者 1 は URL を使用する必要があります `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`、参加者 30 は URL を使用 `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>例えば、参加者 1 は URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html` を使用し、参加者 30 は URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html` を使用する必要があります。
 
-ワークスペースを選択します **AT Bootcamp**.
+ワークスペース **AT Bootcamp** を選択します。
 
 「**次へ**」をクリックします。
 
@@ -94,11 +94,11 @@ Visual Experience Composer が表示されます。 Web サイトが完全に読
 
 ![RTCDP](./images/atform1.png)
 
-現在、デフォルトオーディエンスはです **すべての訪問者**. 「」をクリック **3 ドット** 次の **すべての訪問者** をクリックして、 **オーディエンスを変更**.
+デフォルトオーディエンスは、現在 **すべての訪問者** です。 **すべての訪問者** の横にある **3 ドットをクリックし****オーディエンスを変更** をクリックします。
 
 ![RTCDP](./images/atform3.png)
 
-これで、使用可能なオーディエンスのリストが表示され、以前に作成してAdobe Targetに送信したAdobe Experience Platform オーディエンスが、このリストの一部になりました。 Adobe Experience Platformで以前作成したオーディエンスを選択します。 クリック **オーディエンスを割り当て**.
+これで、使用可能なオーディエンスのリストが表示され、以前に作成してAdobe Targetに送信したAdobe Experience Platform オーディエンスが、このリストの一部になりました。 Adobe Experience Platformで以前作成したオーディエンスを選択します。 **オーディエンスを割り当て** をクリックします。
 
 ![RTCDP](./images/exclatvecchaud.png)
 
@@ -106,25 +106,25 @@ Adobe Experience Platform オーディエンスは、このエクスペリエン
 
 ![RTCDP](./images/atform4.png)
 
-ヒーロー画像を変更する前に、をクリックする必要があります。 **すべて許可** cookie のバナーに表示されます。
+ヒーロー画像を変更する前に、Cookie バナーの **すべて許可** をクリックする必要があります。
 
-これを行うには、に移動します。 **参照**
+これを行うには、**参照** に移動します。
 
 ![RTCDP](./images/cook1.png)
 
-次に、 **すべて許可**.
+次に、「すべて許可 **をクリックし** す。
 
 ![RTCDP](./images/cook2.png)
 
-次に、に戻ります **作成**.
+次に、**作成** に戻ります。
 
 ![RTCDP](./images/cook3.png)
 
-次に、web サイトのホームページでヒーロー画像を変更します。 Web サイトでデフォルトのヒーロー画像をクリックし、 **Replace Content** を選択してから、 **画像**.
+次に、web サイトのホームページでヒーロー画像を変更します。 Web サイトでデフォルトのヒーロー画像をクリックし、「**コンテンツを置換**」をクリックして **画像** を選択します。
 
 ![RTCDP](./images/atform5.png)
 
-画像ファイルを検索 **rtcdp.png**. これを選択し、 **保存**.
+画像ファイル **rtcdp.png** を検索します。 選択して「**保存** をクリックします。
 
 ![RTCDP](./images/atform6.png)
 
@@ -148,19 +148,19 @@ Adobe Experience Platform オーディエンスは、このエクスペリエン
 
 ![RTCDP](./images/atform8a.png)
 
-日 **目標と設定** - ページ、に移動 **目標指標**.
+**目標と設定** - ページで、**目標指標** に移動します。
 
 ![RTCDP](./images/atform9.png)
 
-プライマリ目標を次に設定： **エンゲージメント** - **サイト滞在時間**. 「**保存して閉じる**」をクリックします。
+プライマリ目標を **エンゲージメント** - **オンサイト滞在時間** に設定します。 **保存して閉じる** をクリックします。
 
 ![RTCDP](./images/vec3.png)
 
-現在： **アクティビティの概要** ページ。 アクティビティをアクティベートする必要があります。
+**アクティビティの概要** ページが表示されます。 アクティビティをアクティベートする必要があります。
 
 ![RTCDP](./images/atform10.png)
 
-フィールドをクリック **Inactive** を選択して、 **Activate**.
+フィールド **非アクティブ** をクリックし、「**アクティブ化**」を選択します。
 
 ![RTCDP](./images/atform11.png)
 
@@ -170,19 +170,19 @@ Adobe Experience Platform オーディエンスは、このエクスペリエン
 
 これでアクティビティが有効になり、bootcamp web サイトでテストできます。
 
-デモ Web サイトに戻って、の製品ページにアクセスする場合 **Real-Time CDP**&#x200B;を選択すると、作成したオーディエンスの資格が即座に得られ、Adobe Target アクティビティがホームページにリアルタイムで表示されます。
+デモ Web サイトに戻って **Real-Time CDP** の商品ページにアクセスすると、作成したオーディエンスの資格が即座に得られ、Adobe Target アクティビティがホームページにリアルタイムで表示されます。
 
 >[!IMPORTANT]
 >
->イネーブルメントのすべての参加者は、様々なAdobe Target エクスペリエンスの競合を避けるために、個別の web ページを使用する必要があります。 Web ページを選択して、次の場所で URL を見つけることができます。 [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>イネーブルメントのすべての参加者は、様々なAdobe Target エクスペリエンスの競合を避けるために、個別の web ページを使用する必要があります。 Web ページを選択して URL を見つけるには、[https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html) にアクセスしてください。
 >
 >ページはすべて同じベース URL を共有し、最後に参加者の数が表示されます。
 >
->例えば、参加者 1 は URL を使用する必要があります `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`、参加者 30 は URL を使用 `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>例えば、参加者 1 は URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html` を使用し、参加者 30 は URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html` を使用する必要があります。
 
 ![RTCDP](./images/atform12a.png)
 
-次の手順： [1.5 アクションの実行：オーディエンスをFacebookに送信します](./ex5.md)
+次の手順：[1.5 対処：オーディエンスをFacebookに送信 ](./ex5.md)
 
 [ユーザーフロー 1 に戻る](./uc1.md)
 

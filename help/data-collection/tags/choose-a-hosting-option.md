@@ -1,6 +1,6 @@
 ---
 title: タグライブラリのホスティングオプションの選択
-description: タグライブラリに最適なホスティングオプションを選択する方法を説明します。
+description: タグライブラリに最適なホスティングオプションを選択する方法について説明します。
 feature: Tags
 level: Beginner
 duration: 333
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # ホスティングオプションを選択
 
-タグライブラリに最適なホスティングオプションを選択する方法を説明します。 詳しくは、 [ホスト](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) ドキュメント。
+タグライブラリに最適なホスティングオプションを選択する方法について説明します。 詳しくは、[hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on)

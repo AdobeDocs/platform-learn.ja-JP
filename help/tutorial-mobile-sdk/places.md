@@ -1,6 +1,6 @@
 ---
-title: Places を Platform Mobile SDK で使用する
-description: モバイルアプリで Places ジオロケーションサービスを使用する方法について説明します。
+title: Platform Mobile SDK での Places の使用
+description: モバイルアプリで Places geolocation サービスを使用する方法を説明します。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
 source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
@@ -12,137 +12,137 @@ ht-degree: 3%
 
 # 場所を使用
 
-アプリで Places ジオロケーションサービスを使用する方法について説明します。
+アプリで Places ジオロケーションサービスを使用する方法を説明します。
 
-Adobe Experience Platform Data Collection Places Service は、位置認識を持つモバイルアプリで位置コンテキストを理解できる位置情報サービスです。 このサービスは、柔軟な目標地点 (POI) データベースに加えて、豊富で使いやすい SDK インターフェイスを使用しています。
+Adobe Experience Platform Data Collection Places Service は、位置認識機能を備えたモバイルアプリが位置のコンテキストを理解できるようにする位置情報サービスです。 このサービスは、豊富で使いやすい SDK インターフェイスと、柔軟な目標地点（POI）データベースを使用しています。
 
 ## 前提条件
 
-* パッケージの依存関係はすべて、Xcode プロジェクトに配置されます。
-* AppDelegate に登録された拡張機能。
-* 開発 appId を使用するように MobileCore を設定しました。
-* SDK が読み込まれました。
-* 上記の変更を含むアプリが正常にビルドされ、実行されました。
+* すべてのパッケージの依存関係は、Xcode プロジェクトに配置されます。
+* AppDelegate に拡張機能を登録しました。
+* 開発 appId を使用するように MobileCore を設定します。
+* SDK を読み込みました。
+* 上記の変更を含むアプリが正常に作成され、実行されました。
 
-## 学習内容
+## 学習目標
 
 このレッスンでは、次の操作を行います
 
-* Places サービスで目標地点を定義する方法を説明します。
-* Places 拡張機能でタグプロパティを更新します。
-* スキーマを更新して位置情報イベントをキャプチャします。
-* アシュランスで設定を検証します。
+* Places サービスで目標地点を定義する方法を理解します。
+* 場所の拡張機能でタグプロパティを更新します。
+* 位置情報イベントを取り込むようにスキーマを更新します。
+* Assurance の設定を検証します。
 * アプリを更新して、Places 拡張機能を登録します。
-* アプリに Places サービスから位置情報トラッキングを実装します。
+* アプリの Places サービスから位置情報トラッキングを実装します。
 
 
 ## セットアップ
 
-Places サービスをアプリ内および Mobile SDK 内で動作させるには、いくつかの設定をおこなう必要があります。
+Places サービスがアプリ内および Mobile SDK 内で機能するには、いくつかの設定を行う必要があります。
 
 ### 場所を定義
 
-Places サービスで目標地点を定義します。
+Places サービスでいくつかの目標点を定義します。
 
-1. データ収集 UI で、「 」を選択します。 **[!UICONTROL 場所]**.
-1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg).
-1. コンテキストメニューから、「 」を選択します。 **[!UICONTROL ライブラリを管理]**.
-   ![ライブラリの管理](assets/places-manage-libraries.png)
-1. Adobe Analytics の **[!UICONTROL ライブラリを管理]** ダイアログ、選択 **[!UICONTROL 新規]**.
-1. Adobe Analytics の **[!UICONTROL ライブラリを作成]** ダイアログを入力 **[!UICONTROL 名前]**&#x200B;例： `Luma`.
-1. 選択 **[!UICONTROL 確認]**.
-   ![ライブラリを作成](assets/places-create-library.png)
-1. を閉じるには、以下を実行します。 **[!UICONTROL ライブラリを管理]** ダイアログ、選択 **[!UICONTROL 閉じる]**.
-1. 戻る **[!UICONTROL POI 管理]**&#x200B;を選択します。 **[!UICONTROL POI をインポート]**.
-1. 選択 **[!UICONTROL 開始]** （内） **[!UICONTROL 場所を読み込み]** ダイアログ。
-1. 選択 **[!DNL Luma]** ライブラリのリストから、
+1. データ収集 UI で、「**[!UICONTROL 場所]**」を選択します。
+1. ![ 詳細 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) を選択します。
+1. コンテキストメニューから、「**[!UICONTROL ライブラリを管理]**」を選択します。
+   ![ ライブラリの管理 ](assets/places-manage-libraries.png)
+1. **[!UICONTROL ライブラリを管理]** ダイアログで、「**[!UICONTROL 新規]**」を選択します。
+1. **[!UICONTROL ライブラリを作成]** ダイアログで **[!UICONTROL 名前]** を入力（例：`Luma`）。
+1. 「**[!UICONTROL 確認]**」を選択します。
+   ![ ライブラリを作成 ](assets/places-create-library.png)
+1. **[!UICONTROL ライブラリを管理]** ダイアログを閉じるには、「**[!UICONTROL 閉じる]**」を選択します。
+1. **[!UICONTROL POI 管理]** に戻り、「**[!UICONTROL POI を読み込み]**」を選択します。
+1. **[!UICONTROL 場所を読み込み]** ダイアログで **[!UICONTROL 開始]** を選択します。
+1. ライブラリのリストから **[!DNL Luma]** を選択します。
 1. 「**[!UICONTROL 次へ]**」を選択します。
-   ![ライブラリを選択](assets/places-import-select-library.png)
-1. をダウンロードします。 [Luma POI ZIP ファイル](assets/luma_pois.csv.zip) コンピュータ上の場所に抽出します。
-1. Adobe Analytics の **[!UICONTROL 場所を読み込み]** ダイアログで、抽出した `luma_pois.csv` ～について申し出る **[!UICONTROL CSV ファイルを選択 — ファイルをドラッグ&amp;ドロップします]**. 次のようになります。 **[!UICONTROL 検証成功]** - **[!UICONTROL CSV ファイルが正常に検証されました]**.
-1. 選択 **[!UICONTROL 読み込みを開始]**. 次のようになります。 **[!UICONTROL 成功]** - **[!UICONTROL 6 個の新しい POI が正常に追加されました]**.
+   ![ ライブラリを選択 ](assets/places-import-select-library.png)
+1. [Luma POI ZIP ファイルをダウンロードし ](assets/luma_pois.csv.zip) コンピューター上の場所に抽出します。
+1. **[!UICONTROL 場所を読み込み]** ダイアログで、抽出した `luma_pois.csv` ファイルをにドラッグ&amp;ドロップします **[!UICONTROL CSV ファイルを選択 – ファイルをドラッグ&amp;ドロップ]**。 **[!UICONTROL 検証成功]** - **[!UICONTROL CSV ファイルの検証に成功しました]** と表示されます。
+1. **[!UICONTROL 読み込みを開始]** を選択します。 **[!UICONTROL 成功]** - **[!UICONTROL 6 つの新しい POI が正常に追加されました]** が表示されます。
 1. 「**[!UICONTROL 完了]**」を選択します。
-1. In **[!UICONTROL POI 管理]**&#x200B;を探すと、6 つの新しい Luma ストアがリストに追加されています。 切り替え可能な ![リスト](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) リストと ![マップ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) マップビュー。
-   ![場所リスト](assets/places-list.png).
+1. **[!UICONTROL POI 管理]** で、6 つの新しい Luma ストアがリストに追加されます。 ![ リスト ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) リストと ![ マップ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) マップビューを切り替えることができます。
+   ![ 場所リスト ](assets/places-list.png)。
 
 
 ### Places 拡張機能のインストール
 
-1. に移動します。 **[!UICONTROL タグ]** モバイルタグプロパティを見つけて、プロパティを開きます。
-1. 選択 **[!UICONTROL 拡張機能]**.
-1. 選択 **[!UICONTROL カタログ]**.
-1. を検索します。 **[!UICONTROL 場所]** 拡張子。
+1. **[!UICONTROL タグ]** に移動し、モバイルタグプロパティを見つけてプロパティを開きます。
+1. **[!UICONTROL 拡張機能]** を選択します。
+1. **[!UICONTROL カタログ]** を選択します。
+1. **[!UICONTROL 場所]** 拡張機能を検索します。
 1. 拡張機能をインストールします。
 
-   ![判定拡張機能の追加](assets/tag-places-extension.png)
+   ![Decisioning 拡張機能の追加 ](assets/tag-places-extension.png)
 
-1. Adobe Analytics の **[!UICONTROL 拡張機能のインストール]** ダイアログ：
-   1. 選択 **[!DNL Luma]** から **[!UICONTROL ライブラリを選択]** リスト。
-   1. 作業用ライブラリが選択されていることを確認します（例： ）。 **[!UICONTROL 初期ビルド]**.
-   1. 選択 **[!UICONTROL ライブラリに保存してビルドする]** から **[!UICONTROL ライブラリに保存]**.
-      ![Places 拡張機能のインストール](assets/places-install-extension.png).
+1. **[!UICONTROL 拡張機能をインストール]** ダイアログで、次の手順を実行します。
+   1. **[!UICONTROL ライブラリを選択]** リストから「**[!DNL Luma]**」を選択します。
+   1. **[!UICONTROL 初期ビルド]** など、作業ライブラリが選択されていることを確認します。
+   1. **[!UICONTROL ライブラリに保存]** から **[!UICONTROL ライブラリとビルドに保存]** を選択します。
+      ![Places 拡張機能をインストール ](assets/places-install-extension.png) ます。
 
-1. ライブラリが再構築されました。
+1. ライブラリが再構築されます。
 
 
 ### スキーマの検証
 
-スキーマが [スキーマを作成](create-schema.md)は、POI および位置情報データを収集するために必要なフィールドグループとクラスを組み込みます。
+[ スキーマを作成 ](create-schema.md) で定義されているように、スキーマに POI およびジオロケーションデータを収集するために必要なフィールドグループとクラスが含まれているかどうかを確認します。
 
-1. データ収集インターフェイスに移動して、「 」を選択します。 **[!UICONTROL スキーマ]** をクリックします。
-1. 選択 **[!UICONTROL 参照]** 上部のバーから。
+1. データ収集インターフェイスに移動し、左パネルから **[!UICONTROL スキーマ]** を選択します。
+1. 上部のバーから **[!UICONTROL 参照]** を選択します。
 1. スキーマを選択して開きます。
-1. スキーマエディターで、「 」を選択します。 **[!UICONTROL 消費者エクスペリエンスイベント]**.
-1. 次のように表示されます。 **[!UICONTROL placeContext]** オブジェクトを、POI の操作と位置情報データを取り込むためのオブジェクトとフィールドで指定します。
-   ![スキーマの場所](assets/schema-places-context.png).
+1. スキーマエディターで、「**[!UICONTROL 消費者エクスペリエンスイベント]**」を選択します。
+1. POI インタラクションと位置情報データをキャプチャするオブジェクトとフィールドを持つ **[!UICONTROL placeContext]** オブジェクトが表示されます。
+   ![ スキーマの場所 ](assets/schema-places-context.png).
 
 
-### タグプロパティを更新する
+### タグプロパティの更新
 
-タグの Places 拡張機能は、位置情報イベントを監視する機能を提供し、これらのイベントに基づいてアクションをトリガー化できます。 この機能を使用して、アプリケーションに実装する必要のある API コーディングを最小限に抑えることができます。
+タグの Places 拡張機能は、位置情報イベントを監視する機能を提供し、それらのイベントに基づいてアクションをトリガーに設定できるようにします。 この機能を使用すると、アプリに実装する必要がある API コーディングを最小限に抑えることができます。
 
 **データ要素**
 
-最初に複数のデータ要素を作成します。
+最初に、複数のデータ要素を作成します。
 
-1. データ収集 UI でタグプロパティに移動します。
-1. 選択 **[!UICONTROL データ要素]** をクリックします。
+1. データ収集 UI のタグプロパティに移動します。
+1. 左パネルから **[!UICONTROL データ要素]** を選択します。
 1. 「**[!UICONTROL データ要素を追加]**」を選択します。
-1. Adobe Analytics の **[!UICONTROL データ要素を作成]** 画面（例： ） `Name - Entered`.
-1. 選択 **[!UICONTROL 場所]** から **[!UICONTROL 拡張]** リスト。
-1. 選択 **[!UICONTROL 名前]** から **[!UICONTROL データ要素タイプ]** リスト。
-1. 選択 **[!UICONTROL 現在の POI]** underthen **[!UICONTROL TARGET]**.
-1. 選択 **[!UICONTROL ライブラリに保存]**.
+1. **[!UICONTROL データ要素を作成]** 画面で、名前（例：`Name - Entered`）を入力します。
+1. **[!UICONTROL 拡張機能]** リストから「**[!UICONTROL 場所]**」を選択します。
+1. **[!UICONTROL データ要素タイプ]** リストから **[!UICONTROL 名前]** を選択します。
+1. **[!UICONTROL TARGET]** の下の **[!UICONTROL 現在の POI]** を選択します。
+1. **[!UICONTROL ライブラリに保存]** を選択します。
    ![データ要素](assets/tags-create-data-element.png)
 
-1. 次の表の情報を使用して手順 4 ～ 8 を繰り返し、追加のデータ要素を作成します。
+1. 以下の表の情報を使用して手順 4 ～ 8 を繰り返し、追加のデータ要素を作成します。
 
-   | 名前 | 拡張機能 | データ要素タイプ | TARGET |
+   | 名前 | 拡張機能 | データ要素タイプ | ターゲット |
    |---|---|---|---|
-   | `Name - Exited` | Places | 名前 | 前回の離脱 POI |
+   | `Name - Exited` | Places | 名前 | 前回離脱した POI |
    | `Category - Current` | Places | カテゴリ | 現在の POI |
-   | `Category - Exited` | Places | カテゴリ | 前回の離脱 POI |
+   | `Category - Exited` | Places | カテゴリ | 前回離脱した POI |
    | `City - Current` | Places | 市区町村 | 現在の POI |
-   | `City - Exited` | Places | 市区町村 | 前回の離脱 POI |
+   | `City - Exited` | Places | 市区町村 | 前回離脱した POI |
 
-   次のリストのデータ要素が必要です。
+   次のデータ要素のリストが表示されます。
 
-   ![データ要素のリスト](assets/tags-data-elements-list.png)
+   ![ データ要素のリスト ](assets/tags-data-elements-list.png)
 
 **ルール**
 
-次に、これらのデータ要素を使用するルールを定義します。
+次に、これらのデータ要素を操作するためのルールを定義します。
 
-1. タグプロパティで、「 」を選択します。 **[!UICONTROL ルール]** をクリックします。
-1. 選択 **[!UICONTROL ルールを追加]**.
-1. Adobe Analytics の **[!UICONTROL ルールを作成]** 画面で、ルールの名前を入力します。例： `POI - Entry`.
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL イベント]**.
-   1. 選択 **[!UICONTROL 場所]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL POI を入力]** から **[!UICONTROL イベントタイプ]** リスト。
+1. タグプロパティで、左パネルから **[!UICONTROL ルール]** を選択します。
+1. 「**[!UICONTROL ルールを追加]**」を選択します。
+1. **[!UICONTROL ルールを作成]** 画面で、ルールの名前（例：`POI - Entry`）を入力します。
+1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]** を選択します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を入力]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![タグイベント](assets/tags-event-mobile-core.png).
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL アクション]**.
-   1. 選択 **[!UICONTROL Mobile Core]** から **[!UICONTROL 拡張]** リスト、選択 **[!UICONTROL データを添付]** から **[!UICONTROL アクションタイプ]** リスト。 このアクションは、ペイロードデータを添付します。
-   1. Adobe Analytics の **[!UICONTROL JSON ペイロード]**、次のペイロードを貼り付けます。
+      ![ タグイベント ](assets/tags-event-mobile-core.png)。
+1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**[!UICONTROL  リストから ]**データを添付]** を選択します。 ペイロードデータを添付します。
+   1. **[!UICONTROL JSON ペイロード]** に、次のペイロードを貼り付けます。
 
       ```json
       {
@@ -166,28 +166,28 @@ Places サービスで目標地点を定義します。
       }
       ```
 
-      また、 `{%% ... %%}` JSON のデータ要素プレースホルダー値を選択するには、 ![データ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). ポップアップダイアログでは、作成したデータ要素を選択できます。
+      また、「![Data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)」 `{%% ... %%}` 選択すると、JSON にデータ要素のプレースホルダー値を挿入できます。 ポップアップダイアログが表示され、作成したデータ要素を選択できます。
 
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![タグアクション](assets/tags-action-mobile-core.png)
+      ![ タグアクション ](assets/tags-action-mobile-core.png)
 
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横 **[!UICONTROL Mobile Core — データを添付]** アクション。
-   1. 選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL イベントを Edge ネットワークに転送する]**. このアクションは、イベントと追加のペイロードデータが Platform Edge ネットワークに確実に転送されるようにします。
+1. ![ モバイルコア – データを添付 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) アクションの横にある **[!UICONTROL 追加]** を選択します。
+   1. **[!UICONTROL Edge Network]** リストから「**[!UICONTROL Adobe Experience Platform Edge Network]**」を選択し、「**[!UICONTROL 拡張機能にイベントを転送]**」を選択します。 これにより、イベントと追加のペイロードデータが Platform Edge Networkに転送されます。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 
-1. ルールを保存するには、「 **[!UICONTROL ライブラリに保存]**.
+1. ルールを保存するには、「**[!UICONTROL ライブラリに保存]**」を選択します。
 
-   ![ルール](assets/tags-rule-poi-entry.png)
+   ![ ルール ](assets/tags-rule-poi-entry.png)
 
 別のルールを作成しましょう
 
-1. Adobe Analytics の **[!UICONTROL ルールを作成]** 画面で、ルールの名前を入力します。例： `POI - Exit`.
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL イベント]**.
-   1. 選択 **[!UICONTROL 場所]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL 出口 POI]** から **[!UICONTROL イベントタイプ]** リスト。
+1. **[!UICONTROL ルールを作成]** 画面で、ルールの名前（例：`POI - Exit`）を入力します。
+1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]** を選択します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を終了]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underthen **[!UICONTROL アクション]**.
-   1. 選択 **[!UICONTROL Mobile Core]** から **[!UICONTROL 拡張]** リスト、選択 **[!UICONTROL データを添付]** から **[!UICONTROL アクションタイプ]** リスト。
-   1. Adobe Analytics の **[!UICONTROL JSON ペイロード]**、次のペイロードを貼り付けます。
+1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**[!UICONTROL  リストから ]**データを添付]** を選択します。
+   1. **[!UICONTROL JSON ペイロード]** に、次のペイロードを貼り付けます。
 
       ```json
       {
@@ -213,59 +213,59 @@ Places サービスで目標地点を定義します。
 
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横 **[!UICONTROL Mobile Core — データを添付]** アクション。
-   1. 選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から **[!UICONTROL 拡張]** リストと選択 **[!UICONTROL イベントを Edge ネットワークに転送する]**.
+1. ![ モバイルコア – データを添付 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) アクションの横にある **[!UICONTROL 追加]** を選択します。
+   1. **[!UICONTROL Edge Network]** リストから「**[!UICONTROL Adobe Experience Platform Edge Network]**」を選択し、「**[!UICONTROL 拡張機能にイベントを転送]**」を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 
-1. ルールを保存するには、「 **[!UICONTROL ライブラリに保存]**.
+1. ルールを保存するには、「**[!UICONTROL ライブラリに保存]**」を選択します。
 
-   ![ルール](assets/tags-rule-poi-exit.png)
-
-
-タグ内のすべての変更が確実に公開されるようにするには
-
-1. 選択 **[!UICONTROL 初期ビルド]** をビルドするライブラリとして使用します。
-1. 選択 **[!UICONTROL ビルド]**.
-   ![ライブラリの作成](assets/tags-build-library.png)
+   ![ ルール ](assets/tags-rule-poi-exit.png)
 
 
+タグ内のすべての変更が公開されていることを確認するには
+
+1. ビルドするライブラリとして **[!UICONTROL 初期ビルド]** を選択します。
+1. **[!UICONTROL ビルド]** を選択します。
+   ![ ライブラリを作成 ](assets/tags-build-library.png)
 
 
-## アシュランスでの設定の検証
 
-アシュランスで設定を検証するには、次の手順に従います。
+
+## Assurance での設定の検証
+
+Assurance で設定を検証するには：
 
 1. Assurance UI に移動します。
-1. 左側のパネルでまだ使用できない場合は、「 」を選択します。 **[!UICONTROL 設定]** 左側のパネルで、「 」を選択します。 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の **[!UICONTROL イベント]** および **[!UICONTROL マップとシミュレーション]** underthen **[!UICONTROL PLACES SERVICE]**.
+1. 左側のパネルに **[!UICONTROL まだ表示されていない場合は、左側のパネルの「]** 設定 ]**」を選択し、「イベント ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」の横の「![ 追加**[!UICONTROL  を選択し、「**[!UICONTROL PLACES SERVICE]**」の下の「**[!UICONTROL マップとシミュレート]** を選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
-1. 選択 **[!UICONTROL マップとシミュレーション]** をクリックします。
-1. マップを POI の 1 つの場所に移動します。
-1. 選択 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) POI の負荷をシミュレートします。 POI は、円とピンを使用して識別されます。
+1. 左パネルで「**[!UICONTROL マップとシミュレート]**」を選択します。
+1. POI のいずれかの場所にマップを移動します。
+1. 「![ 歯車 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 負荷 POI をシミュレート」を選択します。 POI は、円とピンを使用して識別されます。
 1. POI を選択します。
-1. ポップアップから、 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL エントリイベントをシミュレート]**.
-   ![エントリイベントをシミュレート](assets/places-simulate.png)
-1. 選択 **[!UICONTROL イベント]** 左側のパネルから、シミュレーションしたイベントが表示されます。
-   ![AJO 判定の検証](assets/places-events.png)
+1. ポップアップから、「![ 歯車 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 入力イベントをシミュレート]**」を選択します。
+   ![ エントリイベントをシミュレート ](assets/places-simulate.png)
+1. 左パネルから **[!UICONTROL イベント]** を選択すると、シミュレーションしたイベントが表示されます。
+   ![AJO Decisioning の検証 ](assets/places-events.png)
 
 
-## アプリに Places を実装します
+## アプリへの Places の実装
 
-前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、Places SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
+前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、Places SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、「SDK のインストール [ の節を参照し ](install-sdks.md) ください。
 
 >[!NOTE]
 >
->以下を完了した場合、 [SDK のインストール](install-sdks.md) 」セクションに移動した場合は、Places SDK が既にインストールされているので、この手順をスキップできます。
+>[SDK のインストール ](install-sdks.md) の節を完了した場合、Places SDK は既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、 [AEP Places](https://github.com/adobe/aepsdk-places-ios) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 」をクリックします。
-1. 確認 `AEPPlaces` は、インポートのリストの一部です。
+1. Xcode で、[AEP Places](https://github.com/adobe/aepsdk-places-ios) がパッケージの依存関係にあるパッケージのリストに追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL AppDelegate]** に移動します。
+1. `AEPPlaces` が読み込みのリストに含まれていることを確認します。
 
    ```swift
    import AEPPlaces
    ```
 
-1. 確認 `Places.self` は、登録する拡張機能の配列の一部です。
+1. `Places.self` が、登録している拡張機能の配列の一部であることを確認します。
 
    ```swift
    let extensions = [
@@ -283,18 +283,18 @@ Places サービスで目標地点を定義します。
    ]
    ```
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 関数に置き換えます。 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動し、`func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 関数を見つけます。 次のコードを追加します。
 
    ```swift
    // Process geolocation event
    Places.processRegionEvent(regionEvent, forRegion: region)
    ```
 
-   この [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API は、位置情報を Places サービスに通信します。
+   この [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API は、位置情報を Places サービスに送信します。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** Xcode のプロジェクトナビゲーター内。
+1. Xcode のプロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Location]**/**[!DNL GeofenceSheet]** に移動します。
 
-   1. 「入力」ボタンに、次のコードを入力します。
+   1. 「入力」ボタンに、次のコードを入力します
 
    ```swift
    // Simulate geofence entry event
@@ -303,7 +303,7 @@ Places サービスで目標地点を定義します。
    }
    ```
 
-   1. 「終了」ボタンに、次のコードを入力します。
+   1. 「終了」ボタンに、次のコードを入力します
 
    ```swift
    // Simulate geofence exit event
@@ -314,19 +314,19 @@ Places サービスで目標地点を定義します。
 
 ## アプリを使用した検証
 
-1. デバイスまたはシミュレーターでアプリを開きます。
+1. アプリをデバイスまたはシミュレーターで開きます。
 
-1. 次に移動： **[!UICONTROL 場所]** タブをクリックします。
+1. 「**[!UICONTROL Location]**」タブに移動します。
 
 1. マップを移動（ドラッグ）して、青い中央の円が POI の 1 つ（例：ロンドン）の上にあることを確認します。
 
-1. タップ <img src="assets/geobutton.png" width="20" /> カテゴリと名前が、ピン付きの赤い位置のラベルに表示されるまでです。
+1. タップ カテゴリと名前がラベルの赤い場所にピンと共に表示されるまで <img src="assets/geobutton.png" width="20" /> きます。
 
-1. POI のラベルをタップすると、 **[!UICONTROL 近くの POI]** シート。
+1. POI のラベルをタップすると、**[!UICONTROL 近くの POI]** シートが開きます。
 
    <img src="assets/appgeolocation.png" width="300" />
 
-1. を押します。 **[!UICONTROL 入口]** または **[!UICONTROL 終了]** ボタンを使用して、アプリからのジオフェンスエントリおよびジオフェンスの終了イベントをシミュレートします。
+1. **[!UICONTROL Entry]** または **[!UICONTROL Exit]** ボタンを押して、アプリからのジオフェンスの入口イベントと出口イベントをシミュレートします。
 
    <img src="assets/appentryexit.png" width="300" />
 
@@ -336,16 +336,16 @@ Places サービスで目標地点を定義します。
 
 ## 次の手順
 
-これで、アプリ内の位置情報機能に機能を追加するためのすべてのツールが用意できました。 イベントを Edge ネットワークに転送したとき、アプリを次のように設定したら、 [Experience Platform](platform.md)に設定すると、アプリで使用されているプロファイルに対してエクスペリエンスイベントが表示されます。
+これで、アプリのジオロケーション機能にさらに機能を追加するためのツールがすべて揃いました。 イベントをEdge Networkに転送したので、[Experience Platform](platform.md) 用にアプリを設定すると、アプリで使用されるプロファイルにエクスペリエンスイベントが表示されます。
 
-このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガー化できます ( [プッシュ通知](journey-optimizer-inapp.md) および [アプリ内メッセージ](journey-optimizer-push.md) (Journey Optimizer))。 例えば、アプリユーザーが物理ストアのジオフェンスに入ったときに、製品プロモーションを含むプッシュ通知をアプリユーザーに送信する通常の例です。
+このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガーJourney Optimizer化できることを確認します（[ プッシュ通知 ](journey-optimizer-inapp.md) および [ アプリ内メッセージ ](journey-optimizer-push.md) を参照）。 例えば、通常の例では、アプリユーザーが物理的なストアのジオフェンスに入ると、製品プロモーションを伴うプッシュ通知が送信されます。
 
-アプリの機能の実装は、主に Places サービス、タグプロパティで定義したデータ要素およびルールによって実行されています。 そのため、アプリ内のコードを最小限に抑えます。 または、 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API( [イベント](events.md) （詳しくは、を参照）、 `placeContext` オブジェクト。
+アプリの機能の実装は、ほとんどが Places サービスと、タグプロパティで定義したデータ要素およびルールによって駆動されています。 そのため、アプリ内のコードは最小限に抑えます。 または、入力された `placeContext` オブジェクトを含む XDM ペイロードで、[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API （詳しくは [ イベント ](events.md) を参照）を使用して、同じ機能をアプリに直接実装できます。
 
 >[!SUCCESS]
 >
->これで、Experience PlatformMobile SDK の Places 拡張機能を使用して、アプリの位置情報サービスを有効にしました。
+>これで、Experience PlatformMobile SDK の Places 拡張機能を使用して、アプリにジオロケーションサービスを有効にしました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
-次へ： **[データをAdobe Analyticsにマッピング](analytics.md)**
+次のトピック：**[Adobe Analyticsへのデータのマッピング](analytics.md)**

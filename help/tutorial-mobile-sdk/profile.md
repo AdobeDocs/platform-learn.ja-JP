@@ -1,35 +1,35 @@
 ---
-title: Platform Mobile SDK でのプロファイルデータの収集
+title: Platform Mobile SDK を使用したプロファイルデータの収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# プロファイルデータを収集
+# プロファイルデータの収集
 
 モバイルアプリでプロファイルデータを収集する方法を説明します。
 
-Profile 拡張機能を使用して、ユーザーに関する属性をクライアントに保存できます。 この情報を後で使用して、オンラインまたはオフラインのシナリオでメッセージのターゲティングやパーソナライズをおこなうことができます。最適なパフォーマンスを得るために、サーバーに接続する必要はありません。 Profile 拡張機能は、クライアントサイド操作プロファイル (CSOP) を管理し、API への対応、ユーザープロファイル属性の更新、ユーザープロファイル属性の他のシステムとの生成イベントとしての共有をおこなう方法を提供します。
+プロファイル拡張機能を使用して、クライアント上のユーザーに関する属性を保存できます。 この情報を後で使用すると、最適なパフォーマンスを得るためにサーバーに接続することなく、オンラインまたはオフラインのシナリオ中にメッセージをターゲットにしてパーソナライズできます。 プロファイル拡張機能は、クライアントサイド操作プロファイル（CSOP）の管理、API への対応方法の提供、ユーザープロファイル属性の更新、生成されたイベントとしてのシステムのその他の部分とのユーザープロファイル属性の共有を行います。
 
-プロファイルデータは、他の拡張機能によってプロファイル関連のアクションを実行するために使用されます。 例えば、プロファイルデータを使用し、プロファイルデータに基づいてルールを実行する Rules Engine 拡張機能があります。 詳しくは、 [Profile 拡張機能](https://developer.adobe.com/client-sdks/documentation/profile/) ドキュメント内
+プロファイルデータは、他の拡張機能でプロファイル関連のアクションを実行する際に使用されます。 例えば、プロファイルデータを使用し、プロファイルデータに基づいてルールを実行するルールエンジン拡張機能があります。 [ プロファイル拡張機能 ](https://developer.adobe.com/client-sdks/documentation/profile/) について詳しくは、ドキュメントを参照してください
 
 >[!IMPORTANT]
 >
->このレッスンで説明するプロファイル機能は、Adobe Experience Platformおよび Platform ベースのアプリケーションのリアルタイム顧客プロファイル機能とは別の機能です。
+>このレッスンで説明するプロファイル機能は、Adobe Experience Platformおよびプラットフォームベースのアプリケーションのリアルタイム顧客プロファイル機能とは別の機能です。
 
 
 ## 前提条件
 
-* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
+* SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 
-## 学習内容
+## 学習目標
 
-このレッスンでは、次の操作を実行します。
+このレッスンでは、次の操作を行います。
 
 * ユーザー属性を設定または更新します。
 * ユーザー属性を取得します。
@@ -37,9 +37,9 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ## ユーザー属性の設定と更新
 
-アプリでのターゲティングやパーソナライゼーションに役立つのは、ユーザーが過去または最近に購入したかどうかをすばやく知ることです。 Luma アプリでセットアップしましょう。
+ユーザーが過去または最近に購入したかどうかをアプリ内でターゲティングやパーソナライゼーションですばやく把握すると便利です。 これを Luma アプリで設定しましょう。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateUserAttribute(attributeName: String, attributeValue: String)` 関数に置き換えます。 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!DNL MobileSDK]** に移動し、`func updateUserAttribute(attributeName: String, attributeValue: String)` 関数を見つけます。 次のコードを追加します。
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -48,15 +48,15 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-   このコードは次を実行します。
+   このコード：
 
-   1. 次の名前の空の辞書を設定します： `profileMap`.
+   1. `profileMap` という名前の空の辞書を設定します。
 
-   1. を使用して辞書に要素を追加します。 `attributeName` 例： `isPaidUser`) および `attributeValue` 例： `yes`) をクリックします。
+   1. `attributeName` （例：`isPaidUser`）および `attributeValue` （例：`yes`）を使用して、要素を辞書に追加します。
 
-   1. を使用します。 `profileMap` 辞書を `attributeDict` のパラメーター [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 呼び出し。
+   1. `profileMap` ディクショナリを [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 呼び出しの `attributeDict` パラメーターへの値として使用します。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** をクリックし、 `updateUserAttributes` ( 購入に関するコード内 <img src="assets/purchase.png" width="15" /> 」ボタン ) をクリックします。 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Products]**/**[!DNL ProductView]** に移動し、（購入のコード内で） `updateUserAttributes` へのコールを見つけます <img src="assets/purchase.png" width="15" /> ボタン）を使用します。 次のコードを追加します。
 
    ```swift
    // Update attributes
@@ -66,9 +66,9 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
 
 ## ユーザー属性の取得
 
-ユーザーの属性を更新すると、他のAdobeSDK でも使用できるようになりますが、属性を明示的に取得して、アプリを好きなように動作させることもできます。
+ユーザーの属性を更新すると、他のAdobeSDK で使用できるようになりますが、属性を明示的に取得して、アプリが思いどおりに動作するようにすることもできます。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** Xcode プロジェクトナビゲーターで、 `.onAppear` 修飾子 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]** / **[!DNL Luma]** / **[!DNL Views]** / **[!DNL General]** / **[!DNL HomeView]** に移動し、`.onAppear` 修飾子を見つけます。 次のコードを追加します。
 
    ```swift
    // Get attributes
@@ -84,50 +84,50 @@ Profile 拡張機能を使用して、ユーザーに関する属性をクライ
    }
    ```
 
-   このコードは次を実行します。
+   このコード：
 
-   1. 呼び出し [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を使用した API `isPaidUser` 属性名を `attributeNames` 配列。
-   1. 次に、 `isPaidUser` 属性とタイミング `yes`をクリックし、 <img src="assets/paiduser.png" width="20" /> アイコンを使用して、アイコンをクリックします。
+   1. `isPaidUser` の属性名を持つ [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API を `attributeNames` 配列の単一の要素として呼び出します。
+   1. 次に、`isPaidUser` 属性の値をチェックし、`yes` の場合は 右上 <img src="assets/paiduser.png" width="20" /> ツールバーにあるアイコン。
 
-その他のドキュメントも参照できます。 [ここ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+その他のドキュメントについては、[ こちら ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を参照してください。
 
-## アシュランスで検証
+## Assurance での検証
 
-1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
+1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
 1. アプリを実行してログインし、製品とやり取りします。
 
-   1. アシュランスアイコンを左に移動します。
-   1. 選択 **[!UICONTROL ホーム]** 」をクリックします。
-   1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> 」ボタンをクリックします。
+   1. Assurance アイコンを左に移動します。
+   1. タブバーの **[!UICONTROL ホーム]** を選択します。
+   1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> ボタン。
 
       <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. ランダムな電子メールと顧客 ID を挿入するには、 <img src="assets/insert.png" width="15" /> ボタンをクリックします。
-   1. 選択 **[!UICONTROL ログイン]**.
+   1. ランダムなメールと顧客 ID を挿入するには、 「」ボタン <img src="assets/insert.png" width="15" /> クリックします。
+   1. **[!UICONTROL ログイン]** を選択します。
 
       <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. 選択 **[!DNL Products]** 」をクリックします。
-   1. 1 つの製品を選択します。
+   1. タブバーで「**[!DNL Products]**」を選択します。
+   1. 製品を 1 つ選択します。
    1. 選択 <img src="assets/saveforlater.png" width="15" />。
    1. 選択 <img src="assets/addtocart.png" width="20" />。
    1. 選択 <img src="assets/purchase.png" width="15" />。
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. に戻る **[!UICONTROL ホーム]** 画面。 バッジが追加されたことがわかります。 <img src="assets/person-badge-icon.png" width="15" />。
+   1. **[!UICONTROL ホーム]** 画面に戻ります。 バッジが追加されたことがわかります <img src="assets/person-badge-icon.png" width="15" />。
 
       <img src="./assets/personbadges.png" width="300">
 
 
 
-1. Assurance UI には、 **[!UICONTROL UserProfileUpdate]** および **[!UICONTROL getUserAttributes]** 更新された `profileMap` の値です。
-   ![プロファイルを検証](assets/profile-validate.png)
+1. Assurance UI で、更新された `profileMap` 値を持つ **[!UICONTROL UserProfileUpdate]** および **[!UICONTROL getUserAttributes]** イベントが表示されます。
+   ![ プロファイルを検証 ](assets/profile-validate.png)
 
 >[!SUCCESS]
 >
->これで、Edge ネットワーク内のプロファイルの属性を更新するアプリを設定し、（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようになりました。
+>これで、Edge Network内および（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようにアプリを設定しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
-次へ： **[場所を使用](places.md)**
+次のトピック：**[場所を使用](places.md)**

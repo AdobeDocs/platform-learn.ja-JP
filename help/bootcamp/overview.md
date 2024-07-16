@@ -26,25 +26,25 @@ ht-degree: 1%
 
 9:30: ウォークイン
 
-10:00: キックオフ/概要および Bootcamp チャレンジ
+10:00: キックオフ/イントロ&amp;ブートキャンプの挑戦
 
-11:00: 1-1 パーソナライゼーション、フリクションハンティング、サイロ、AdobePOV （ホワイトボード）
+11:00:1-1 パーソナライゼーション、フリクションハンティング、サイロ、AdobePOV （ホワイトボード）
 
-12:00: 一時停止
+12:00: ブレーク
 
 12:15: ソリューションアーキテクチャの分類（ホワイトボード）
 
 13:00: 昼食
 
-14:00: ユーザーフロー 1 - 「獲得」のチュートリアルと実践の詳細
+14:00: ユーザーフロー 1 - 「獲得」チュートリアルと実践の詳細
 
-15:30: 一時停止
+15:30: ブレーク
 
 16:00: Userflow 2 登録とオンボーディング
 
-17:30: ゴルフクリニック &amp; ボレル
+17:30: ゴルフクリニック&amp;ボレル
 
-19:30: 夕食
+19:30: ディナー
 
 ### 2 日目
 
@@ -71,9 +71,9 @@ ht-degree: 1%
 
 ## 前提条件
 
-- Adobe Experience Platformへのアクセス： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform Data Collection へのアクセス： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- のブートキャンプ web サイトへのアクセス [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform Data Collection へのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net) のブートキャンプ Web サイトにアクセスします
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 実践的な演習を開始する前に、このチュートリアルの背後にあるアーキテクチャを確認してください。 この Bootcamp では、Adobe Experience Platformの様々な機能について詳しく説明し、様々なソースや宛先にわたる複数の統合についても説明します。 このチュートリアルの背後にあるアーキテクチャや、大規模法人エコシステムにおけるAdobe Experience Platformの全体的な位置を適切に理解するには、アーキテクチャに関するビデオと図を確認することから始めます。
 
-に移動 [アーキテクチャ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+[ アーキテクチャ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en) に移動します。
 
 ## ビデオ
 
@@ -93,11 +93,11 @@ Experience Makers Bootcamp の主な目的は、大規模なパーソナライ�
 
 その他にも、bootcamp の要素や、Adobe Experience PlatformとAdobe以外のアプリケーションとの強力な統合機能を紹介するビデオがいくつか作成されています。 以下のリンクをクリックして、それらのビデオの概要を参照してください。
 
-に移動 [ビデオ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+[ ビデオ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en) に移動します。
 
 ## YouTube
 
-その他の興味深いビデオを見つけることができます [YouTubeチャンネルで](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+その他の興味深いビデオは [YouTube チャンネルで ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) 見つけることができます。
 
 ## ユーザーフロー
 
@@ -105,15 +105,15 @@ Experience Makers Bootcamp の主な目的は、大規模なパーソナライ�
 
 このユーザーフローでは、Real-Time CDPを使用して、既知の認証済みユーザーと共に、未認証の未知のユーザーに対して獲得に焦点を当てたユースケースを実装するために必要なすべての要素を理解します。
 
-[2. 登録とオンボーディング](./uc/uc2/uc2.md)
+[2. 登録とオンボーディング ](./uc/uc2/uc2.md)
 
 このユーザーフローでは、Real-Time CDPとAdobe Journey Optimizerを使用して、登録とオンボーディングのユースケースを実装するために必要なすべての要素を説明します。
 
-[3.フィジカルとデジタルの融合](./uc/uc3/uc3.md)
+[3.物理とデジタルの融合 ](./uc/uc3/uc3.md)
 
 このユーザーフローでは、Real-Time CDPとAdobe Journey Optimizerを使用して、一貫した方法でオンラインチャネルとオフラインチャネルにわたるカスタマーエクスペリエンスをパーソナライズします。
 
-[4. 顧客ジャーニーの分析](./uc/uc4/uc4.md)
+[4. カスタマージャーニー分析 ](./uc/uc4/uc4.md)
 
 このユーザーフローでは、Customer Journey Analyticsについて理解し、オンラインからオフライン、コールセンターなど、お客様がチャネル間でどのように変化しているかについて洞察を得ることができます。
 

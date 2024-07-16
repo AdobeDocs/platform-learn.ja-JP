@@ -1,7 +1,7 @@
 ---
-user-guide-title: at.js 2.x から Web SDK への Target の移行
-breadcrumb-title: at.js 2.x から Web SDK への Target の移行
-user-guide-description: at.js から Web SDK への移行を成功に導く方法を説明する、Target のお客様向けの実践チュートリアルです。
+user-guide-title: Target を at.js 2.x から Web SDK に移行する
+breadcrumb-title: Target を at.js 2.x から Web SDK に移行する
+user-guide-description: at.js から Web SDK 実装への移行に成功する方法を説明する、Target のお客様向けの実践チュートリアルです。
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# at.js 2.x から Platform Web SDK への Target の移行 {#migrate-target-to-websdk}
+# Target を at.js 2.x から Platform Web SDK に移行する {#migrate-target-to-websdk}
 
 + [チュートリアルの概要](introduction.md)
 
@@ -30,19 +30,19 @@ ht-degree: 5%
 
 + [初期設定の実行](initial-setup.md)
 
-+ [ライブラリの置き換えと事前非表示のアプローチ](replace-library.md)
++ [ライブラリの置換と事前非表示アプローチ](replace-library.md)
 
 + [VEC ベースのアクティビティのレンダリング](render-vec-activities.md)
 
-+ [フォームベースのアクティビティをレンダリング](render-form-based-activities.md)
++ [フォームベースのアクティビティのレンダリング](render-form-based-activities.md)
 
-+ [送信パラメーター](send-parameters.md)
++ [パラメーターの送信](send-parameters.md)
 
 + [コンバージョンイベントの追跡](track-events.md)
 
 + [クロスドメインサポートの有効化](cross-domain.md)
 
-+ [オーディエンスとプロファイルスクリプトを更新](update-audiences.md)
++ [オーディエンスとプロファイルスクリプトの更新](update-audiences.md)
 
 + [の実装を検証する](validate.md)
 

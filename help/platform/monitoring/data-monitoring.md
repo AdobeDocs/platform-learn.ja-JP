@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platformでのデータフローの監視
-description: ユーザーインターフェイスと API を使用して、Adobe Experience Platformに取り込まれたバッチデータとストリーミングデータを監視および追跡する方法について説明します
+description: ユーザーインターフェイスと API を使用して、Adobe Experience Platformに取り込まれたバッチデータとストリーミングデータを監視およびトラッキングする方法について説明します
 feature: Data Ingestion
 role: Data Engineer, Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Adobe Experience Platformでのデータフローの監視
 
-ユーザーインターフェイスと API を使用して、Adobe Experience Platformに取り込まれたバッチデータとストリーミングデータを監視および追跡する方法について説明します。
+ユーザーインターフェイスと API を使用して、Adobe Experience Platformに取り込まれたバッチデータとストリーミングデータを監視およびトラッキングする方法について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409475?learn=on)

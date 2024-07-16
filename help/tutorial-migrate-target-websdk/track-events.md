@@ -1,33 +1,33 @@
 ---
-title: イベントの追跡 | at.js 2.x から Web SDK への Target の移行
-description: Experience PlatformWeb SDK を使用してAdobe Targetコンバージョンイベントを追跡する方法について説明します。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: トラックイベント | Target を at.js 2.x から Web SDK に移行
+description: Experience Platform Web SDK を使用してAdobe Target コンバージョンイベントをトラッキングする方法について説明します。
+exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
 
-
 # Platform Web SDK を使用した Target コンバージョンイベントの追跡
 
-Target のコンバージョンイベントは、at.js と同様に、Platform Web SDK を使用して追跡できます。 コンバージョンイベントは通常、次のカテゴリに分類されます。
+Target のコンバージョンイベントは、at.js と同様に、Platform Web SDK で追跡できます。 コンバージョンイベントは通常、次のカテゴリに分類されます。
 
-* 設定が不要な、自動的に追跡されるイベント
-* ベストプラクティスの Platform Web SDK 実装に合わせて調整する必要がある購入コンバージョンイベント
-* コードの更新が必要な非購入コンバージョンイベント
+* 設定を必要としない自動的に追跡されたイベント
+* ベストプラクティス Platform Web SDK 実装に合わせて調整する必要がある購入コンバージョンイベント
+* コードの更新が必要な購入以外のコンバージョンイベント
 
 ## 目標トラッキングの比較
 
-次の表で、at.js と Platform Web SDK がコンバージョンイベントを追跡する方法を比較します
+次の表では、at.js と Platform Web SDK がコンバージョンイベントをどのように追跡するかを比較しています
 
-| アクティビティ目標 | Target at.js 2.x | Platform Web SDK |
+| アクティビティの目標 | Target at.js 2.x | Platform Web SDK |
 |---|---|---|
-| コンバージョン/ページが表示された | 自動的に追跡されます。 の値に基づく `context.address.url` at.js リクエストペイロード内で使用されます。 | 自動的に追跡されます。 の値に基づく `xdm.web.webPageDetails.URL` 内 `sendEvent` ペイロード |
-| コンバージョン/mbox が表示された | 表示 mbox の場所または通知のリクエストでトラッキングされ、 `trackEvent()` または `sendNotifications()` と `type` 値 `display`. | Platform Web SDK でトラッキングする `sendEvent` を使って呼び出す `eventType` / `decisioning.propositionDisplay`. |
-| コンバージョン/要素をクリック | VEC ベースのアクティビティで自動的に追跡されます。 は、 `notifications` オブジェクトをリクエストペイロードに追加し、 `type` 値 `click`. | VEC ベースのアクティビティで自動的に追跡されます。 Platform Web SDK として表示されます `sendEvent` を使って呼び出す `eventType` / `decisioning.propositionInteract`. |
-| エンゲージメント/ページビュー数 | 自動的に追跡 | 自動的に追跡 |
-| エンゲージメント/サイト滞在時間 | 自動的に追跡 | 自動的に追跡 |
+| コンバージョン > ページが表示された | 自動的に追跡されます。 at.js リクエストペイロードの `context.address.url` の値に基づいています。 | 自動的に追跡されます。 `sendEvent` ペイロードの `xdm.web.webPageDetails.URL` の値に基づく |
+| コンバージョン > mbox を表示 | ディスプレイ mbox の場所のリクエストまたは `trackEvent()` を使用した通知、または `type` 値が `display` の `sendNotifications()` でトラッキングされます。 | Platform Web SDK でトラッキングされ、`decisioning.propositionDisplay` の `eventType` を使用して `sendEvent` 呼び出します。 |
+| コンバージョン /要素をクリック | VEC ベースのアクティビティ用に自動的に追跡されます。 インリクエストペイロードに `notifications` オブジェクトを持ち、`type` 値が `click` の at.js ネットワーク呼び出しとして表示されます。 | VEC ベースのアクティビティ用に自動的に追跡されます。 `decisioning.propositionInteract` の `eventType` で呼び出され `sendEvent`Platform Web SDK として表示されます。 |
+| エンゲージメント > ページビュー | 自動的に追跡 | 自動的に追跡 |
+| エンゲージメント > サイト滞在時間 | 自動的に追跡 | 自動的に追跡 |
 
 <!--
 | Revenue > RPV, AOV, or Total Sales | Tracked based on the `orderTotal` parameter values for the specified mbox(es) | Tracked based on the `xdm.commerce.order.priceTotal` values. Its best to use the "any mbox" option in the goal setup. |
@@ -35,18 +35,18 @@ Target のコンバージョンイベントは、at.js と同様に、Platform W
 | Engagement > Custom Scoring | Tracked with the `mboxPageValue` parameter. Refer to the [dedicated documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) for more details. | Tracked with `data.__adobe.target.mboxPageValue` in the `sendEvent` payload |
 -->
 
-## 自動的に追跡されるイベント
+## 自動的に追跡されたイベント
 
-以下のコンバージョン目標では、実装を特定の調整をおこなう必要はありません。
+次のコンバージョン目標では、実装に対する特定の調整は必要ありません。
 
-* コンバージョン/ページが表示された
-* コンバージョン/要素をクリック
-* エンゲージメント/ページビュー数
-* エンゲージメント/サイト滞在時間
+* コンバージョン > ページが表示された
+* コンバージョン /要素をクリック
+* エンゲージメント > ページビュー
+* エンゲージメント > サイト滞在時間
 
 >[!NOTE]
 >
->Platform Web SDK を使用すると、リクエストペイロードで渡される値をより詳細に制御できます。 QA URL や「ページが表示されました」コンバージョン目標などの Target 機能が正しく機能することを確認するには、 `xdm.web.webPageDetails.URL` の値には、適切な文字列を含む完全なページ URL が含まれます。
+>Platform Web SDK を使用すると、リクエストペイロードで渡される値をより詳細に制御できます。 QA URL や「ページを閲覧」などの Target 機能が正しく動作することを確認するには、`xdm.web.webPageDetails.URL` の値に、大文字と小文字が適切に区別された完全なページ URL が含まれていることを確認します。
 
 <!--
 ## Purchase conversion events
@@ -65,24 +65,24 @@ The Platform Web SDK is a shared library for all Adobe applications and you may 
 For more information and an example, refer to the tutorial section about [sending purchase parameters to Target](send-parameters.md#purchase-parameters). 
 -->
 
-## カスタムで追跡したイベント
+## カスタムで追跡されるイベント
 
-Target の実装では、通常、カスタムコンバージョンイベントを使用してフォームベースのアクティビティのクリックを追跡し、フロー内のコンバージョンを示したり、新しいコンテンツを要求せずにパラメーターを渡したりします。
+Target 実装では、通常、カスタムコンバージョンイベントを使用して、フォームベースのアクティビティのクリック数を追跡したり、フロー内のコンバージョンを示したり、新しいコンテンツをリクエストせずにパラメーターを渡したりします。
 
-次の表に、at.js のアプローチと、一般的なコンバージョントラッキングの使用例で使用する Platform Web SDK と同等のものを示します。
+次の表に、いくつかの一般的なコンバージョントラッキングのユースケースに対する at.js アプローチと同等の Platform Web SDK の概要を示します。
 
 | ユースケース | Target at.js 2.x | Platform Web SDK |
 |---|---|---|
-| mbox の場所（範囲）のクリックコンバージョンイベントを追跡する | 実行 `trackEvent()` または `sendNotifications()` と `type` 値 `click` （特定の mbox の場所） | の実行 `sendEvent` イベントタイプが `decisioning.propositionInteract` |
-| 追加データを含む可能性のあるカスタムコンバージョンイベント（Target プロファイルパラメーターなど）を追跡する | 実行 `trackEvent()` または `sendNotifications()` と `type` 値 `display` （特定の mbox の場所） | の実行 `sendEvent` イベントタイプが `decisioning.propositionDisplay` |
+| mbox の場所（スコープ）のクリックコンバージョンイベントの追跡 | 特定の mbox の場所に対して、`type` 値 `click` の `trackEvent()` または `sendNotifications()` を実行します | イベントタイプを `decisioning.propositionInteract` にして `sendEvent` コマンドを実行します。 |
+| Target プロファイルパラメーターなどの追加データを含む可能性のあるカスタムコンバージョンイベントを追跡します | 特定の mbox の場所に対して、`type` 値 `display` の `trackEvent()` または `sendNotifications()` を実行します | イベントタイプを `decisioning.propositionDisplay` にして `sendEvent` コマンドを実行します。 |
 
 >[!NOTE]
 >
->ただし `decisioning.propositionDisplay` は、特定の範囲のインプレッション数の増分に最も一般的に使用されます。また、at.js の直接置き換えとしても使用する必要があります `trackEvent()` 通常は この `trackEvent()` 関数のデフォルト値は次のタイプです。 `display` 指定されていない場合は。 実装を確認し、定義したカスタムコンバージョンに正しいイベントタイプを使用していることを確認してください。
+>`decisioning.propositionDisplay` は、特定の範囲のインプレッション数を増やすために最も一般的に使用されますが、at.js の代わりに通常は `trackEvent()` も使用する必要があります。 指定しない場合、`trackEvent()` 関数はデフォルトで `display` 型に設定されます。 実装を調べ、定義したカスタムコンバージョンに対して正しいイベントタイプを使用していることを確認します。
 
-の使用方法の詳細については、該当する at.js ドキュメントを参照してください [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) および [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) （Target イベントを追跡するため）
+Target イベントのトラッキングに [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) と [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) の使用方法について詳しくは、専用の at.js ドキュメントを参照してください。
 
-at.js の使用例 `trackEvent()` mbox の場所のクリックを追跡するには、次の手順を実行します。
+`trackEvent()` を使用して mbox の場所のクリックを追跡する at.js の例：
 
 ```JavaScript
 adobe.target.trackEvent({
@@ -91,12 +91,12 @@ adobe.target.trackEvent({
 });
 ```
 
-Platform Web SDK の実装を使用すると、 `sendEvent` コマンド、 `_experience.decisioning.propositions` XDM フィールドグループと、 `eventType` を 2 つの値のいずれかに変更します。
+Platform Web SDK の実装を使用すると、`sendEvent` コマンドを呼び出し、`_experience.decisioning.propositions` XDM フィールドグループに入力し、`eventType` を 2 つの値のいずれかに設定することで、イベントとユーザーアクションを追跡できます。
 
-* `decisioning.propositionDisplay`:Target アクティビティのレンダリングを示します。
-* `decisioning.propositionInteract`:マウスのクリックと同様に、ユーザーがアクティビティを操作することを示します。
+* `decisioning.propositionDisplay`: Target アクティビティのレンダリングをシグナルで通知します。
+* `decisioning.propositionInteract`：マウスクリックなど、アクティビティに対するユーザーのインタラクションを示します。
 
-この `_experience.decisioning.propositions` XDM フィールドグループは、オブジェクトの配列です。 各オブジェクトのプロパティは、 `result.propositions` が `sendEvent` コマンド： `{ id, scope, scopeDetails }`
+`_experience.decisioning.propositions` XDM フィールドグループは、オブジェクトの配列です。 各オブジェクトのプロパティは、`sendEvent` のコマンドで返される `result.propositions` から派生します。`{ id, scope, scopeDetails }`
 
 ```JavaScript
 alloy("sendEvent", {
@@ -143,8 +143,8 @@ alloy("sendEvent", {
 });
 ```
 
-次に、 [クロスドメイン ID 共有の有効化](cross-domain.md) 一貫性のある訪問者プロファイルに対して
+次に、一貫性のある訪問者プロファイルを作成するための [ クロスドメイン ID 共有を有効にする ](cross-domain.md) 方法を説明します。
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

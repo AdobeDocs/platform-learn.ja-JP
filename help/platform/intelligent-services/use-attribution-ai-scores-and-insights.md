@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # Attribution AI スコアおよびインサイトの使用
 
-Attribution AIインサイトページを使用して、マーケティングチャネルとキャンペーンの ROI を把握する方法について説明します。 詳しくは、 [Attribution AIドキュメント](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Attribution AIインサイトページを使用して、マーケティングチャネルとキャンペーンの ROI を把握する方法について説明します。 詳しくは、[Attribution AIに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on)

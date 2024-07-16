@@ -1,34 +1,34 @@
 ---
-title: タグ付きAdobe Targetを追加
-description: at.js、ページ読み込みリクエスト、パラメーター、注文リクエスト、カスタムのヘッダー/フッターコードを含むタグを使用してAdobe Targetを実装する方法について説明します。 このレッスンは、「 Web サイトでのExperience Cloudの実装」チュートリアルの一部です。
+title: タグ付きAdobe Targetの追加
+description: at.js のタグ、ページ読み込みリクエスト、パラメーター、注文リクエスト、カスタムのヘッダー/フッターコードを使用してAdobe Targetを実装する方法について説明します。 このレッスンは、web サイトでのExperience Cloudの実装チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '4445'
-ht-degree: 75%
+source-wordcount: '4252'
+ht-degree: 68%
 
 ---
 
 # Adobe Target の追加
 
-このレッスンでは、ページ読み込みリクエストとカスタムパラメーターを使用して [Adobe Target 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ja)を実装します。
+このレッスンでは、ページ読み込みリクエストとカスタムパラメーターを使用して [Adobe Target 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html)を実装します。
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja) は、顧客のエクスペリエンスのカスタマイズやパーソナライズに必要なすべてのツールを提供する Adobe Experience Cloud ソリューションです。Web サイト、モバイルサイト、アプリケーション、ソーシャルメディアおよびその他のデジタルチャネルでの収益性を最大化することができます。
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意が必要な、いくつかの用語の変更がインターフェイスにロールアウトされました。
+>Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
 >
-> * Platform launch（クライアント側）が **[!DNL tags]**
-> * Platform launchサーバー側が **[!DNL event forwarding]**
-> * エッジ設定が **[!DNL datastreams]**
+> * Platform launch（クライアントサイド）が **[!DNL tags]** になりました
+> * Platform launchサーバーサイドが **[!DNL event forwarding]** になりました
+> * Edgeの設定が **[!DNL datastreams]** になりました
 
 ## 学習内容
 
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
-* 非同期タグ埋め込みコードにより、Target の使用時にちらつきの管理に使用する、事前に非表示になるスニペットを追加する。
+* 非同期のタグ埋め込みコードで Target を使用する場合のフリッカーの管理に使用する、事前非表示スニペットを追加しました
 * Target v2 拡張機能を追加する
 * ページ読み込み要求（旧称「グローバル mbox」）を実行する
 * ページ読み込み要求にパラメーターを追加する
@@ -39,11 +39,11 @@ ht-degree: 75%
 
 ## 前提条件
 
-この節のレッスンを完了するには、まず [タグの設定](create-a-property.md) および [ID サービスを追加する](id-service.md).
+この節のレッスンを完了するには、まず [ タグを設定 ](create-a-property.md) および [ID サービスを追加 ](id-service.md) のレッスンを完了する必要があります。
 
 ## Target 非表示スニペットを追加します。
 
-開始する前に、タグ埋め込みコードを少し更新する必要があります。 タグ埋め込みコードが非同期で読み込まれる場合、Target ライブラリを完全に読み込んでコンテンツの入れ替えを実行する前に、ページのレンダリングが完了する可能性があります。 これにより、Target で指定し、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示される、「ちらつき」と呼ばれる現象が発生することがあります。このちらつきを回避する場合は、タグの非同期埋め込みコードの直前に、特別な事前非表示スニペットをハードコーディングすることを強くお勧めします。
+開始する前に、タグ埋め込みコードを少し更新する必要があります。 タグ埋め込みコードが非同期で読み込まれる場合、Target ライブラリが完全に読み込まれてコンテンツの入れ替えが実行される前に、ページのレンダリングが終了する場合があります。 これにより、Target で指定し、パーソナライズされたコンテンツに置き換えられる前に、デフォルトのコンテンツが短時間表示される、「ちらつき」と呼ばれる現象が発生することがあります。このちらつきを回避するには、タグの非同期埋め込みコードの直前に、特別な事前非表示のスニペットをハードコーディングすることを強くお勧めします。
 
 これは既に Luma サイトでおこなわれていますが、実装を理解するために、サンプルページでおこないます。次のコード行をコピーします。
 
@@ -82,9 +82,9 @@ ht-degree: 75%
 </script>
 ```
 
-サンプルページを開き、以下の図のように、タグ埋め込みコードの直前に貼り付けます（行番号は異なっても大丈夫です）。 このスクリーンショットでは、事前非表示のスニペットが縮小されています。
+サンプルページを開き、以下に示すように、タグ埋め込みコードの直前に貼り付けます（行番号が異なっても心配ありません）。 このスクリーンショットでは、事前非表示のスニペットは縮小されています。
 
-![拡張機能にカーソルを合わせます。](images/target-prehidingSnippet.png)
+![ 拡張機能にポインタを合わせる ](images/target-prehidingSnippet.png)
 
 サンプルページを再度読み込みます。ページは、表示されるまでの 3 秒間、非表示になっています。この動作は一時的なもので、Target をデプロイすると消滅します。この事前非表示の動作は、スニペットの最後にある 2 つの設定で制御します。この設定は、カスタマイズすることもできますが、通常はデフォルト設定のまま残しておくのが最適です。
 
@@ -95,7 +95,7 @@ ht-degree: 75%
 
 ## Target 拡張機能の追加
 
-Adobe Target 拡張機能は、Target の最新の Web 用 JavaScript SDK、at.js を使用してクライアントサイド実装をサポートします。Target の古いライブラリである mbox.js、 [at.js 2.x にアップグレードする必要がある](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) タグを使用するために使用します。
+Adobe Target 拡張機能は、Target の最新の Web 用 JavaScript SDK、at.js を使用してクライアントサイド実装をサポートします。Target の古いライブラリ mbox.js を引き続き使用しているお客様は、タグを使用するために [at.js 2.x にアップグレードする必要があります ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html)。
 
 Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
@@ -110,15 +110,15 @@ Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
 **拡張機能を追加するには、以下を実行します。**
 
-1. **[!UICONTROL 拡張機能／カタログ]**&#x200B;に移動します。
+1. **[!UICONTROL 拡張機能/カタログ]** に移動します。
 1. Adobe Target の拡張機能をすばやく見つけるには、フィルターに `target` を入力します。Adobe Target と Adobe Target v2 の 2 つの拡張機能があります。このチュートリアルでは、従来の Web サイトとシングルページアプリケーション（SPA）の両方に最適な最新バージョンの at.js（現在は 2.x）を使用する拡張機能の v2 バージョンを使用します。
-1. **[!UICONTROL インストール]**&#x200B;をクリックします。
+1. 「**[!UICONTROL インストール]**」をクリックします。
 
    ![Target v2 拡張機能のインストール](images/target-installExtension.png)
 
 1. 拡張機能を追加すると、多くの at.js 設定が読み込まれますが、以下の図に示すように、すべての at.js 設定が Target インターフェイスから読み込まれる訳ではありません。読み込まれない設定の 1 つとして、タイムアウトがあります。これは常に、拡張機能を追加してから 3000 ミリ秒後となります。このチュートリアルでは、デフォルト設定をそのままにしておきます。左側には、現在のバージョンの拡張機能に付属している at.js バージョンが表示されます。
 
-1. **[!UICONTROL ライブラリに保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL ライブラリに保存]**」をクリックします
 
    ![拡張機能の保存](images/target-saveExtension.png)
 
@@ -126,7 +126,7 @@ Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
 >[!NOTE]
 >
->Target 拡張機能の各バージョンには、拡張機能の説明に記載されている特定のバージョンの at.js が付属しています。Target 拡張機能を更新すれば、at.js バージョンが更新されます。
+>Target 拡張機能の各バージョンには、拡張機能の説明に記載されている特定のバージョンの at.js が付属しています。 Target 拡張機能を更新すれば、at.js バージョンが更新されます。
 
 ## Target の読み込みとページ読み込み要求の実行
 
@@ -136,7 +136,7 @@ Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
 **ターゲットを読み込むには、以下を実行します。**
 
-1. 次に移動： **[!UICONTROL ルール]** 左側のナビゲーションで、 `All Pages - Library Loaded` ルールエディターを開くには、以下を実行します。
+1. 左側のナビゲーションで **[!UICONTROL ルール]** に移動し、「`All Pages - Library Loaded`」をクリックしてルールエディターを開きます
 
    ![すべてのページを開く — ライブラリ読み込み済みルール](images/target-editRule.png)
 
@@ -144,11 +144,11 @@ Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
    ![「+」アイコンをクリックし、新しいアクションを追加する](images/target-addLoadTargetAction.png)
 
-1. **[!UICONTROL 拡張機能／Adobe Target v2]** を選択します。
+1. **[!UICONTROL 拡張機能/Adobe Target v2]** を選択します。
 
-1. **[!UICONTROL アクションタイプ／ターゲットの読み込み]**&#x200B;を選択します。
+1. **[!UICONTROL アクションタイプ/ターゲットを読み込み]** を選択します。
 
-1. **[!UICONTROL 変更を保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 変更を保持]**」をクリックします
 
    ![変更を保存](images/target-addLoadTargetAction-keepChanges.png)をクリックします。
 
@@ -160,25 +160,25 @@ Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
    ![別のアクションを追加するには、プラスアイコンをクリックする。](images/target-addGlobalMboxAction.png)
 
-1. **[!UICONTROL 拡張機能／Adobe Target v2]** を選択します。
+1. **[!UICONTROL 拡張機能/Adobe Target v2]** を選択します。
 
-1. **[!UICONTROL アクションタイプ／ページ読み込みリクエストを実行]**&#x200B;を選択します。
+1. **[!UICONTROL アクションタイプ/ページ読み込みリクエストを実行]** を選択します。
 
 1. ページを非表示にするかどうかに関するページ読み込み要求で利用できる設定や、事前非表示に使用する CSS セレクターがあります。これらの設定は、ページ上でハードコードされた事前非表示スニペットと組み合わせて使用します。デフォルト設定はそのままにしておきます。
 
-1. **[!UICONTROL 変更を保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 変更を保持]**」をクリックします
 
    ![ページ読み込みリクエストアクションの実行](images/target-fireGlobalMbox.png)
 
 1. `Load Target`アクションの後に新しいアクションが順に追加され、アクションがこの順序で実行されます。アクションをドラッグ&amp;ドロップして順序を並べ替えることができますが、このシナリオでは `Load Target` は `Fire Page Load Request` より前に配置する必要があります。
 
-1. 「**[!UICONTROL ライブラリに保存してビルド]**」をクリックします。
+1. 「**[!UICONTROL ライブラリおよびビルドに保存]**」をクリックします
 
    ![保存してビルドする](images/target-fireGlobalMbox-saveAndBuild.png)
 
 ### ページ読み込み要求の検証
 
-これで、Target v2 拡張機能を追加し、 `Load Target` および `Fire Page Load Request` アクションを使用する場合、タグプロパティが使用されるすべてのページに対してページ読み込み要求が実行される必要があります。
+Target v2 拡張機能を追加し、`Load Target` アクションと `Fire Page Load Request` アクションを実行したので、タグプロパティが使用されているすべてのページにページ読み込みリクエストが行われている必要があります。
 
 **「ターゲットを読み込み」および「ページ読み込み要求を実行」アクションを検証するには、以下を実行します。**
 
@@ -186,9 +186,9 @@ Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. Debugger がタグプロパティをにマッピングしていることを確認します。 *あなたの* 開発環境 (「 [前のレッスン](switch-environments.md)
+1. [ 前のレッスン ](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
 
-   ![デバッガーに表示されるタグ開発環境](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「概要」タブに移動します。
 
@@ -206,7 +206,7 @@ Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
 ## パラメーターの追加
 
-Target リクエストにパラメーターを渡すと、ターゲティング、テスト、パーソナライゼーションアクティビティに強力な機能が追加されます。タグ拡張機能には、パラメーターを渡すための 2 つのアクションが用意されています。
+Target リクエストにパラメーターを渡すと、ターゲティング、テスト、パーソナライゼーションアクティビティに強力な機能が追加されます。タグ拡張機能には、パラメーターを渡す 2 つのアクションが用意されています。
 
 1. `Add Params to Page Load Request` は、ページ読み込みリクエストにパラメーターを追加します（[targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html)メソッドと同じ）。
 
@@ -215,7 +215,7 @@ Target リクエストにパラメーターを渡すと、ターゲティング�
 これらのアクションは、`Load Target` アクションの&#x200B;*前に*&#x200B;使用して、ルール設定に基づいて異なるページに異なるパラメーターを設定できます。ID サービスで顧客 ID を設定するときに使用したルール順序付け機能を使用して、ルールがページ読み込み要求を実行する前に `Library Loaded` イベントに追加のパラメーターを設定します。
 >[!TIP]
 >
-> ほとんどの実装ではアクティビティ配信にページ型リクエストが使用されるので、通常は `Add Params to Page Load Requests` アクションを使用するだけで十分です。
+>ほとんどの実装ではアクティビティ配信にページ読み込みリクエストを使用するので、通常は `Add Params to Page Load Requests` アクションのみを使用すれば十分です。
 
 ### 要求（mbox）パラメーター
 
@@ -225,7 +225,7 @@ Target リクエストにパラメーターを渡すと、ターゲティング�
 
 **要求パラメーターを追加するには、以下を実行します。**
 
-1. 次に移動： **[!UICONTROL ルール]** 左側のナビゲーションで、 `All Pages - Library Loaded` をクリックして、ルールエディターを開きます。
+1. 左側のナビゲーションで **[!UICONTROL ルール]** に移動し、「`All Pages - Library Loaded`」をクリックしてルールエディターを開きます。
 
    ![すべてのページを開く — ライブラリ読み込み済みルール](images/target-editRule.png)
 
@@ -233,27 +233,27 @@ Target リクエストにパラメーターを渡すと、ターゲティング�
 
    ![「+」アイコンをクリックし、新しいアクションを追加する](images/target-addParamsAction.png)
 
-1. **[!UICONTROL 拡張機能／Adobe Target v2]** を選択します。
+1. **[!UICONTROL 拡張機能/Adobe Target v2]** を選択します。
 
-1. **[!UICONTROL アクションタイプ／ページ読み込み要求にパラメーターを追加]**&#x200B;を選択します。
+1. **[!UICONTROL アクションタイプ/ページ読み込みリクエストにパラメーターを追加]** を選択します。
 
-1. `pageName`名前&#x200B;**[!UICONTROL として]** と入力します。
+1. **[!UICONTROL 名前]** として `pageName` と入力します
 
 1. ![データ要素アイコン](images/icon-dataElement.png)をクリックして、データ要素モーダルを開きます。
 
 1. `Page Name` データ要素をクリックします。
 
-1. 「**[!UICONTROL 選択]**」ボタンをクリックします。
+1. 「**[!UICONTROL 選択]** ボタンをクリックします
 
    ![「選択」ボタンをクリックする](images/target-mboxParam-pageName.png)
 
-1. **[!UICONTROL 変更を保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 変更を保持]**」をクリックします
 
    ![変更を保存](images/target-addPageName-keepChanges.png)をクリックします。
 
 1. `Add Params to Page Load Request` アクションの左端をクリック&amp;ドラッグして、`Fire Page Load Request` アクションの前に並べ替えます（`Load Target` アクションの前でも後でも可能）。
 
-1. 「**[!UICONTROL ライブラリに保存してビルド]**」をクリックします。
+1. 「**[!UICONTROL ライブラリおよびビルドに保存]**」をクリックします
 
    ![「ライブラリに保存してビルド」をクリックする](images/target-rearrangeActions.png)
 
@@ -263,7 +263,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 **pageName 要求パラメーターを検証するには、以下を実行します。**
 
-1. Luma サイトを再読み込みし、独自のタグプロパティにマッピングされていることを確認します。
+1. Luma サイトをリロードし、独自のタグプロパティにマッピングされていることを確認します
 1. ブラウザーの開発者ツールを開きます。
 1. 「ネットワーク」タブをクリックします。
 1. 要求を `tt.omtrdc` にフィルターします（または Target 要求の場合は CNAME ドメイン）
@@ -291,17 +291,17 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 1. 「最近閲覧した製品」や「最も多く閲覧された製品」など、レコメンデーションアルゴリズムを強化する訪問者行動を収集する場合。
 1. Recommendations カタログを生成する場合。Recommendations には、Web サイト上のすべての製品または記事のデータベースが含まれおり、それらを Recommendations オファーで使用することができます。例えば、製品をレコメンデーションする場合は一般的に、製品名（`entity.name`）や画像（`entity.thumbnailUrl`）などの属性を表示する必要があります。バックエンドフィードを使用してカタログに入力する顧客もいますが、Target リクエストのエンティティパラメーターを使用して入力することもできます。
 
-このチュートリアルではエンティティパラメーターを渡す必要はありませんが、ワークフローは、 `pageName` リクエストパラメーター — パラメーターに「entity」プレフィックスが付いた名前を付けます。 関連するデータ要素にマップします。メモ一部の一般的なエンティティには、使用する必要のある予約名（製品 sku のエンティティ ID など）があります。`Add Params to Page Load Request` アクションでエンティティパラメーターを設定すると、次のようになります。
+このチュートリアルではエンティティパラメーターを渡す必要はありませんが、ワークフローは、`pageName` リクエストパラメーターを渡す際に以前に行ったものと同じです。パラメーターに「entity」というプレフィックスがついた名前を付けるだけです。 関連するデータ要素にマップします。メモ一部の一般的なエンティティには、使用する必要のある予約名（製品 sku のエンティティ ID など）があります。`Add Params to Page Load Request` アクションでエンティティパラメーターを設定すると、次のようになります。
 
 ![エンティティパラメーターの追加](images/target-entityParameters.png)
 
 ### 顧客 ID パラメーターの追加
 
-Adobe Experience Platform ID サービスを使用して顧客 ID を収集すると、Adobe Experience Cloud の[顧客属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ja)機能を使用して CRM データを Target に簡単にインポートできます。また、[デバイスをまたいだ訪問者のステッチ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)も可能で、顧客がデバイス（ノート PC とモバイルデバイスなど）を切り替えても、一貫したユーザーエクスペリエンスを維持できます。
+Adobe Experience Platform ID サービスを使用して顧客 ID を収集すると、Adobe Experience Cloud の[顧客属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html)機能を使用して CRM データを Target に簡単にインポートできます。また、[デバイスをまたいだ訪問者のステッチ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)も可能で、顧客がデバイス（ノート PC とモバイルデバイスなど）を切り替えても、一貫したユーザーエクスペリエンスを維持できます。
 
 ページ読み込み要求を実行する前に、ID サービスの `Set Customer IDs` アクションに顧客 ID を設定する必要があります。そのためには、サイトに次の機能があることを確認します。
 
-* 顧客 ID は、タグ埋め込みコードの前に、ページ上で使用できる必要があります
+* 顧客 ID は、タグ埋め込みコードの前のページで使用できる必要があります
 * Adobe Experience Platform ID サービス拡張機能がインストールされている必要があります。
 * 「Library Loaded (Page Top)」イベントで実行するルールで、`Set Customer IDs` アクションを使用する必要があります。
 * 「Set Customer IDs」アクションの&#x200B;*後で*&#x200B;実行する「`Fire Page Load Request`」アクションを使用します。
@@ -316,9 +316,9 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. Debugger がタグプロパティをにマッピングしていることを確認します。 *あなたの* 開発環境 (「 [前のレッスン](switch-environments.md)
+1. [ 前のレッスン ](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
 
-   ![デバッガーに表示されるタグ開発環境](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. 資格情報（`test@adobe.com`／`test`）を使用して Luma サイトにログインします。
 1. [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html)に戻ります。
@@ -341,34 +341,34 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 >[!WARNING]
 >
-> Adobe Experience Platform ID サービスでは、複数の ID をサービスに送信できますが、最初の ID のみが Target に送信されます。
+>Adobe Experience Platform ID サービスを使用すると、複数の ID をサービスに送信できますが、最初の ID のみが Target に送信されます。
 
 ### プロパティトークンパラメーターの追加
 
 >[!NOTE]
 >
-> これは、Target Premium のお客様向けのオプションの演習です。
+>これは、Target Premium のお客様向けのオプションの演習です。
 
-プロパティトークンは、Target Premium の[エンタープライズユーザー権限](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ja)で使用される予約済みパラメーターです。異なるデジタルプロパティを定義するために使用され、Experience Cloud 組織のメンバーは、プロパティごとに異なる権限を割り当てることができます。例えば、1 つのユーザーグループが Web サイト上で Target アクティビティを設定でき、モバイルアプリケーション内では設定できないようにするとします。
+プロパティトークンは、Target Premium の[エンタープライズユーザー権限](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html)で使用される予約済みパラメーターです。異なるデジタルプロパティを定義するために使用され、Experience Cloud 組織のメンバーは、プロパティごとに異なる権限を割り当てることができます。例えば、1 つのユーザーグループが Web サイト上で Target アクティビティを設定でき、モバイルアプリケーション内では設定できないようにするとします。
 
-Target プロパティは、タグプロパティおよび Analytics レポートスイートに似ています。 複数のブランド、Web サイト、マーケティングチームの企業は、Web サイトやモバイルアプリごとに異なる Target プロパティ、タグプロパティ、Analytics レポートスイートを使用できます。 タグのプロパティは埋め込みコードで区別され、Analytics レポートスイートはレポートスイート ID で区別され、Target プロパティはプロパティトークンパラメーターで区別されます。
+Target のプロパティは、タグプロパティや Analytics レポートスイートに似ています。 複数のブランド、web サイト、マーケティングチームを持つ企業では、web サイトやモバイルアプリごとに異なる Target プロパティ、タグプロパティ、Analytics レポートスイートを使用する場合があります。 タグプロパティは埋め込みコードによって区別され、Analytics レポートスイートはレポートスイート ID によって区別され、Target プロパティはプロパティトークンパラメーターによって区別されます。
 
 
-プロパティトークンは、 `targetPageParams()` 関数に置き換えます。 単一のタグプロパティで異なる at_property 値を使用して、異なるを持つ複数のサイトを実装する場合、データ要素を介して at_property 値を管理できます。
+プロパティトークンは、`targetPageParams()` 関数を使用したタグのカスタムコードアクションを使用して実装する必要があります。 1 つのタグプロパティに異なる at_property 値を使用して、異なるサイトを複数に実装する場合は、データ要素を使用して at_property 値を管理できます。
 
 Target Premium のお客様がチュートリアルプロパティにプロパティトークンを実装する場合の、オプションの演習は次のとおりです。
 
 1. 別のタブで、Target ユーザーインターフェイスを開きます。
 
-1. に移動します。 **[!UICONTROL 管理/プロパティ]**
+1. **[!UICONTROL 管理/ プロパティ]** に移動します。
 
-1. 使用するプロパティを特定し、 **[!UICONTROL &lt;/>]** （または新しいプロパティを作成）
+1. 使用するプロパティを特定して、「**[!UICONTROL &lt;/>]** をクリックします（または新しいプロパティを作成します）
 
-1. 内でコードスニペットをコピーします。 `<script></script>` をクリップボードに追加します。
+1. `<script></script>` 内のコードスニペットをクリップボードにコピーします
 
    ![Adobe Target インターフェイスからのプロパティトークンの取得](images/target-addATProperty-targetProperties.png)
 
-1. 「タグ」タブで、 **[!UICONTROL ルール]** 左側のナビゲーションで、 `All Pages - Library Loaded` をクリックして、ルールエディターを開きます。
+1. 「タグ」タブで、左側のナビゲーションの **[!UICONTROL ルール]** に移動し、「`All Pages - Library Loaded`」をクリックしてルールエディターを開きます。
 
    ![すべてのページを開く — ライブラリ読み込み済みルール](images/target-editRule.png)
 
@@ -376,22 +376,22 @@ Target Premium のお客様がチュートリアルプロパティにプロパ�
 
    ![「ページ読み込みリクエストにパラメーターを追加」アクションを開く](images/target-openCustomCodeAction.png)
 
-1. コードエディターを開き、 `targetPageParams()` 関数
-1. 次をクリックします。 **[!UICONTROL 保存]** ボタン
+1. コードエディターを開き、`targetPageParams()` 関数を含む Target インターフェイスからコードをペーストします
+1. 「**[!UICONTROL 保存]** ボタンをクリックします
 
    ![「ページ読み込みリクエストにパラメーターを追加」アクションを開く](images/target-addATProperty.png)
 
-1. 次を確認します。 **[!UICONTROL グローバルに実行]** そのように `targetPageParams()` はグローバルスコープで宣言されます。
-1. **[!UICONTROL 変更を保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL グローバルに実行]**」ボックスをオンにして、`targetPageParams()` がグローバルスコープで宣言されるようにします
+1. 「**[!UICONTROL 変更を保持]**」をクリックします
 
    ![変更を保存](images/target-addATProperty-keepChanges.png)をクリックします。
 
-1. 「**[!UICONTROL ライブラリに保存してビルド]**」をクリックします。
+1. 「**[!UICONTROL ライブラリおよびビルドに保存]**」をクリックします
    ![「ライブラリに保存してビルド」をクリックする](images/target-addATProperty-save.png)
 
 >[!WARNING]
 >
->を追加しようとした場合、 `at_property` パラメーターを **[!UICONTROL パラメーターをページ読み込み要求に追加]** アクションの実行時に、パラメーターがネットワークリクエストに入力されますが、Target の Visual Experience Composer(VEC) はページの読み込み時に自動検出できません。 常に `at_property` の使用 `targetPageParams()` 関数を追加します。
+>**[!UICONTROL ページ読み込みリクエストにパラメーターを追加]** アクションで `at_property` パラメーターを追加しようとすると、パラメーターはネットワークリクエストに入力されますが、Target の Visual Experience Composer （VEC）はページを読み込む際に自動検出できません。 カスタムコードアクションの `targetPageParams()` 関数を使用して、常に `at_property` を入力します。
 
 #### プロパティトークンの検証
 
@@ -400,9 +400,9 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 **プロパティトークンパラメーターを検証するには、いかを実行します。**
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
-1. Debugger がタグプロパティをにマッピングしていることを確認します。 *あなたの* 開発環境 (「 [前のレッスン](switch-environments.md)
+1. [ 前のレッスン ](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
 
-   ![デバッガーに表示されるタグ開発環境](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. ブラウザーの開発者ツールを開きます。
 1. 「ネットワーク」タブをクリックします。
@@ -428,9 +428,9 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 1. バックグラウンドで異なるアルゴリズムを使用して、統計的信頼性を計算する
 1. 個々の注文詳細に対し、ダウンロード可能な特別監査レポートを作成する
 
-ベストプラクティスは、小売り以外のサイトでも注文確認リクエストを注文確認リクエストで使用することです。 例えば、リードジェネレーションサイトには通常、生成された一意の「リード ID」を持つリードファネルが最後にあります。これらのサイトでは、orderTotal に静的な値（「1」など）を使用して注文要求を実装する必要があります。
+ベストプラクティスは、小売以外のサイトであっても、すべての注文ファネルで注文確認リクエストを使用することです。 例えば、リードジェネレーションサイトには通常、生成された一意の「リード ID」を持つリードファネルが最後にあります。これらのサイトでは、orderTotal に静的な値（「1」など）を使用して注文要求を実装する必要があります。
 
-Analytics for Target(A4T) 統合をレポートのほとんどに使用しているお客様は、A4T をサポートしていないAutomated Personalizationアクティビティを使用する場合、注文要求を実装することも推奨されます。 さらに、注文要求は、購入行動に基づくアルゴリズムを支える、Recommendations 実装の重要な要素です。A4T のサポートに関する最新情報については、 [ドキュメント](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+ほとんどのレポートで Analytics for Target （A4T）統合を使用しているお客様は、A4T をサポートしていないAutomated Personalization アクティビティを使用している場合に注文リクエストを実装することもできます。 さらに、注文リクエストは、Recommendations実装において重要な要素であり、購入行動に基づいてアルゴリズムを強化します。 A4T サポートの最新情報については、[ ドキュメント ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA) を参照してください。
 
 注文確認要求は、注文確認ページまたはイベントでのみトリガーされるルールから実行する必要があります。多くの場合、注文確認要求は Adobe Analytics 購入イベントを設定するルールと組み合わせることができます。これは、コア拡張機能の「Custom Code」アクションで、適切なデータ要素を使用して orderId、orderTotal、productPurchasedId パラメーターを設定する適切なデータ要素を使用して設定する必要があります。
 
@@ -438,28 +438,29 @@ Luma サイトで注文確認リクエストを実行する必要があるデー
 
 **注文 ID のデータ要素を作成するには、以下を実行します。**
 
-1. クリック **[!UICONTROL データ要素]** 左のナビゲーションで
-1. **[!UICONTROL データ要素を追加]**&#x200B;をクリックします。
+1. 左側のナビゲーションで **[!UICONTROL データ要素]** をクリックします
+1. 「**[!UICONTROL データ要素を追加]**」をクリックします。
 1. データ要素に「`Order Id`」と名前を付けます。
-1. **[!UICONTROL データ要素の種類／JavaScript 変数]**&#x200B;を選択します。
+1. **[!UICONTROL データ要素タイプ/JavaScript変数]** を選択します。
 1. `digitalData.cart.orderId` を `JavaScript variable name` として使用します。
 1. `Clean text` オプションをオンにします。
-1. **[!UICONTROL ライブラリに保存]**&#x200B;をクリックします（注文確認要求のすべての変更をおこなうまで、ライブラリはビルドされません）。
+1. 「**[!UICONTROL ライブラリに保存]**」をクリックします
+（注文確認リクエストのすべての変更を行うまで、ライブラリはビルドされません）
 
 **買い物かごの金額のデータ要素を作成するには、以下を実行します。**
 
-1. **[!UICONTROL データ要素を追加]**&#x200B;をクリックします。
+1. 「**[!UICONTROL データ要素を追加]**」をクリックします。
 1. データ要素に「`Cart Amount`」と名前を付けます。
-1. **[!UICONTROL データ要素の種類／JavaScript 変数]**&#x200B;を選択します。
+1. **[!UICONTROL データ要素タイプ/JavaScript変数]** を選択します。
 1. `digitalData.cart.cartAmount` を `JavaScript variable name` として使用します。
 1. `Clean text` オプションをオンにします。
-1. **[!UICONTROL ライブラリに保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL ライブラリに保存]**」をクリックします
 
 **買い物かご SKU（Target）用データ要素を作成するには、以下を実行します。**
 
-1. **[!UICONTROL データ要素を追加]**&#x200B;をクリックします。
+1. 「**[!UICONTROL データ要素を追加]**」をクリックします。
 1. データ要素に「`Cart SKUs (Target)`」と名前を付けます。
-1. **[!UICONTROL データ要素の種類／カスタムコード]**&#x200B;を選択します。
+1. **[!UICONTROL データ要素タイプ/カスタムコード]** を選択します
 1. Target の場合、skus はコンマ区切りリストである必要があります。このカスタムコードでは、データレイヤー配列を適切な形式に変更します。カスタムコードエディターで、以下を貼り付けます。
 
    ```javascript
@@ -475,30 +476,30 @@ Luma サイトで注文確認リクエストを実行する必要があるデー
 
 1. `Force lowercase value` オプションをオンにします。
 1. `Clean text` オプションをオンにします。
-1. **[!UICONTROL ライブラリに保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL ライブラリに保存]**」をクリックします
 
 次に、これらのデータ要素を注文確認ページのパラメーターとして使用して注文確認リクエストを実行するルールを作成する必要があります。
 
 **注文確認ページのルールを作成するには、以下を実行します。**
 
-1. クリック **[!UICONTROL ルール]** 左のナビゲーションで
-1. **[!UICONTROL ルールを追加]**&#x200B;をクリックします。
+1. 左側のナビゲーションで「**[!UICONTROL ルール]**」をクリックします
+1. 「**[!UICONTROL ルールを追加]**」をクリックします
 1. ルール名を設定します。`Order Confirmation Page - Library Loaded - 60`
-1. **[!UICONTROL イベント／追加]**&#x200B;をクリックします。
-   1. **[!UICONTROL イベントの種類／Library Loaded (Page Top)]**&#x200B;を選択します。
-   1. の下 **[!UICONTROL 詳細オプション]**、 `Order` から `60` だから後で火がつく `Load Target` 行動 ( 私たちの `All Pages - Library Loaded` 規則を次に示します。 `Order` が `50`)
-   1. **[!UICONTROL 変更を保存]**&#x200B;をクリックします。
-1. **[!UICONTROL 条件／追加]**&#x200B;をクリックします。
-   1. **[!UICONTROL 条件の種類／クエリ文字列なしのパス]**&#x200B;を選択します。
+1. **[!UICONTROL イベント/追加]** をクリックします。
+   1. **[!UICONTROL イベントタイプ/ライブラリの読み込み（ページのトップ）]**
+   1. **[!UICONTROL 詳細オプション]** で、`Load Target` アクションの後に実行されるように、`Order` を `60` に変更します（これは、`Order` が `50` に設定されている `All Pages - Library Loaded` ルール内にあります）
+   1. 「**[!UICONTROL 変更を保持]**」をクリックします
+1. **[!UICONTROL 条件/追加]** をクリックします
+   1. **[!UICONTROL 条件タイプ/クエリ文字列を含まないパス]** を選択します。
    1. `Path equals` には `thank-you.html` を入力します。
    1. 「正規表現」オプションをオンにして、ロジックを `equals` から `contains` に変更します（`Test` 機能を使用して、URL のテストが合格することを確認できます）。`https://luma.enablementadobe.com/content/luma/us/en/user/checkout/order/thank-you.html`
 
       ![姓と名のダミー値を入力する](images/target-orderConfirm-test.png)
 
-   1. **[!UICONTROL 変更を保存]**&#x200B;をクリックします。
-1. **[!UICONTROL アクション／追加]**&#x200B;をクリックします。
-   1. **[!UICONTROL アクションの種類／カスタムコード]**&#x200B;を選択します。
-   1. **[!UICONTROL エディターを開く]**&#x200B;をクリックします。
+   1. 「**[!UICONTROL 変更を保持]**」をクリックします
+1. **[!UICONTROL アクション/追加]** をクリックします。
+   1. **[!UICONTROL アクションタイプ/カスタムコード]** を選択します。
+   1. **[!UICONTROL 編集画面を開く]** をクリックします
    1. 次のコードを、`Edit Code` モーダルに貼り付けます。
 
       ```javascript
@@ -521,9 +522,9 @@ Luma サイトで注文確認リクエストを実行する必要があるデー
       });
       ```
 
-   1. **[!UICONTROL 保存]**&#x200B;をクリックしてカスタムコードを保存します。
-   1. **[!UICONTROL 変更を保存]**&#x200B;をクリックして、アクションを保存します。
-1. 「**[!UICONTROL ライブラリに保存してビルド]**」をクリックします。
+   1. 「**[!UICONTROL 保存]**」をクリックして、カスタムコードを保存します
+   1. 「**[!UICONTROL 変更を保持]**」をクリックして、アクションを保持します
+1. 「**[!UICONTROL ライブラリおよびビルドに保存]**」をクリックします
 
 #### 注文確認要求の検証
 
@@ -531,9 +532,9 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. Debugger がタグプロパティをにマッピングしていることを確認します。 *あなたの* 開発環境 (「 [前のレッスン](switch-environments.md)
+1. [ 前のレッスン ](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
 
-   ![デバッガーに表示されるタグ開発環境](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. サイトを参照し、買い物かごに複数の製品を追加します。
 1. チェックアウトを続行します。
@@ -561,15 +562,15 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ### カスタムリクエスト
 
-まれに、ページ読み込みおよび注文確認要求以外の Target 要求を作成する必要があります。 例えば、パーソナライゼーションに使用する重要なデータは、ページの下部にハードコードされたり、非同期 API リクエストから返されたりするので、タグ埋め込みコードの前にページで定義されていない場合があります。 このデータは、追加のリクエストを使用して Target に送信できますが、ページが既に表示されているので、コンテンツ配信にこのリクエストを使用するのは最適ではありません。 このデータは、後で使用するための訪問者プロファイルの強化（プロファイルパラメーターを使用）、またはRecommendationsカタログへの入力に使用できます。
+ページの読み込みと注文確認リクエスト以外に、Target リクエストをおこなう必要がある場合はまれです。 例えば、パーソナライゼーションに使用する重要なデータが、タグ埋め込みコードの前のページで定義されていない場合があります。ページの下部でハードコードされている場合や、非同期 API リクエストから返される場合があります。 このデータは、追加のリクエストを使用して Target に送信できますが、ページが既に表示されるので、このリクエストをコンテンツ配信に使用することは最適ではありません。 このデータは、後で使用するために（プロファイルパラメーターを使用して）訪問者プロファイルをエンリッチメントしたり、Recommendations カタログに入力したりするために使用できます。
 
-このような状況では、コア拡張機能のカスタムコードアクションで、[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)／[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) および [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) メソッドを使用して要求を実行します。この操作は、[注文確認要求](#order-confirmation-request)の演習のときとよく似ていますが、異なる要求名を使用し、特別な注文パラメーターは使用しません。カスタムコードから Target 要求を実行する前に、必ず **[!UICONTROL Load Target]** アクションを使用してください。
+このような場合、コア拡張機能のカスタムコードアクションを使用して、[getOffer （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) および [trackEvent （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) メソッドを使用してリクエストを実行します。 これは、[ 注文確認リクエスト ](#order-confirmation-request) の演習で行ったものと非常によく似ていますが、別のリクエスト名を使用するだけであり、特別な注文パラメーターは使用しません。 カスタムコードから Target リクエストを実行する前に、必ず **[!UICONTROL ターゲットを読み込み]** アクションを使用してください。
 
 ## ライブラリのヘッダーとライブラリのフッター
 
 Target ユーザーインターフェイスの at.js 画面の編集画面には、at.js ファイルの直前または直後に実行するカスタム JavaScript を貼り付けることができます。ライブラリヘッダーは、[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 関数経由で at.js 設定を上書きしたり、[データプロバイダー](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)機能を使用してサードパーティからデータを渡したりする場合に使用されます。ライブラリフッターは、[at.js カスタムイベント](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html)リスナーの追加に使用される場合があります。
 
-この機能をタグで複製するには、Core 拡張機能の「Custom Code」アクションを使用して、「Load Target」アクションの前（ライブラリヘッダー）または後（ライブラリフッター）にアクションのシーケンスを設定するだけです。 これは、以下の図のように、 `Load Target` アクションと同じルールで実行することも、`Load Target` の前後に確実に実行するイベントや順序の設定を使用して別のルールで実行することもできます。
+この機能をタグにレプリケートするには、コア拡張機能のカスタムコードアクションを使用して、「ターゲットを読み込み」アクションの前（ライブラリヘッダー）または後（ライブラリフッター）にアクションを並べ替えます。 これは、以下の図のように、 `Load Target` アクションと同じルールで実行することも、`Load Target` の前後に確実に実行するイベントや順序の設定を使用して別のルールで実行することもできます。
 
 ![アクションシーケンスのライブラリヘッダーとフッター](images/target-libraryHeaderFooter.png)
 
@@ -579,4 +580,4 @@ Target ユーザーインターフェイスの at.js 画面の編集画面には
 * [dataProviders を実装してサードパーティデータを Adobe Target に統合する](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
 * [Adobe Target での応答トークンと at.js カスタムイベントの使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
-[次：「Adobe Analytics を追加」>](analytics.md)
+[次の「Adobe Analyticsの追加」 >](analytics.md)

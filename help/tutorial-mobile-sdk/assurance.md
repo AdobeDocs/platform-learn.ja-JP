@@ -1,47 +1,47 @@
 ---
-title: Platform Mobile SDK 実装の保証のセットアップ
-description: モバイルアプリに Assurance 拡張機能を実装する方法を説明します。
+title: Platform Mobile SDK 実装用の Assurance の設定
+description: モバイルアプリで Assurance 拡張機能を実装する方法を説明します。
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
 source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1022'
 ht-degree: 1%
 
 ---
 
-# アシュランスの設定
+# Assurance の設定
 
 モバイルアプリでAdobe Experience Platform Assurance を設定する方法を説明します。
 
-アシュランス（正式には Project Griffon と呼ばれます）は、データ収集やモバイルアプリでのエクスペリエンス提供の方法を調査、配達確認、シミュレーション、検証するのに役立つように設計されています。
+Assurance （旧称：プロジェクトグリフォン）は、モバイルアプリでデータを収集したりエクスペリエンスを提供したりする方法の検査、配達確認、シミュレートおよび検証を支援することを目的としています。
 
-保証は、Adobe Experience Platform Mobile SDK で生成された生の SDK イベントを調べるのに役立ちます。 SDK で収集されたすべてのイベントを調査できます。 SDK イベントは、時間順に並べ替えられたリストビューに読み込まれます。 各イベントには、詳細を示す詳細ビューがあります。 SDK 設定、データ要素、共有状態、SDK 拡張機能のバージョンを参照するための追加のビューも提供されます。 詳しくは、 [アシュランス](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja) （製品ドキュメント内）。
+Assurance は、Adobe Experience Platform Mobile SDK で生成された生の SDK イベントを調べるのに役立ちます。 SDK で収集されたすべてのイベントは、検査に使用できます。 SDK イベントは、時間順に並べ替えられたリスト表示で読み込まれます。 各イベントには、詳細を提供する詳細ビューがあります。 SDK 設定、データ要素、共有状態、SDK 拡張機能のバージョンを参照するための追加のビューも提供されます。 [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja) について詳しくは、製品ドキュメントを参照してください。
 
 
 ## 前提条件
 
-* SDK を使用したアプリが正常にセットアップされ、設定されました。
+* SDK がインストールおよび設定された状態で、アプリが正常にセットアップされました。
 
-## 学習内容
+## 学習目標
 
-このレッスンでは、次の操作を実行します。
+このレッスンでは、次の操作を行います。
 
 * 組織がアクセス権を持っていることを確認します（持っていない場合はリクエストします）。
 * ベース URL を設定します。
-* 必要なiOS固有のコードを追加します。
+* iOS固有の必須コードを追加します。
 * セッションに接続します。
 
 ## アクセスを確認
 
-組織がアシュランスにアクセスできることを確認します。 ユーザーは、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、 [ユーザーアクセス](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) （アシュランスガイド）を参照してください。
+組織が Assurance へのアクセス権を持っていることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) を参照してください。
 
 ## 実装方法
 
-一般 [SDK のインストール](install-sdks.md)前のレッスンで完了したiOSでは、アプリのアシュランスセッションを開始するために、以下の追加も必要です。
+前のレッスンで完了した [SDK の一般的なインストール ](install-sdks.md) に加えて、iOSでは、アプリの Assurance セッションを開始するために、以下の追加も必要です。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** をクリックします。
+1. Xcode のプロジェクトナビゲーターで **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** に移動します。
 
 1. 次のコードを `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>` に追加します。
 
@@ -53,146 +53,146 @@ ht-degree: 1%
    }
    ```
 
-   このコードは、アプリがバックグラウンドになっていて、ディープリンクを使用して開いたときに、保証セッションを開始します。
+   このコードは、アプリがバックグラウンドにあり、ディープリンクを使用して開かれたときに、アシュランスセッションを開始します。
 
-詳細はこちらをご覧ください [ここ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
+詳しくは、[ こちら ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"} を参照してください。
 
 
 
-## バンドル識別子を定義
+## バンドル識別子の定義
 
-アプリに一意のバンドル識別子を提供する必要があります。
+アプリに一意のバンドル ID を指定する必要があります。
 
 1. Xcode でプロジェクトを開きます。
-1. 選択 **[!DNL Luma]** をクリックします。
-1. を選択します。 **[!DNL Luma]** ターゲット。
-1. を選択します。 **署名と機能** タブをクリックします。
-1. を定義 **[!UICONTROL バンドル識別子]**.
+1. プロジェクト ナビゲータで [**[!DNL Luma]**] を選択します。
+1. **[!DNL Luma]** ターゲットを選択します。
+1. 「**署名と機能**」タブを選択します。
+1. **[!UICONTROL バンドル識別子]** を定義します。
 
    >[!IMPORTANT]
    >
-   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. このチュートリアルの完成版（例： ）は、を使用します。 `com.adobe.luma.tutorial.swiftui`.
+   >各バンドル ID は一意である必要があるので、_unique_ バンドル ID を使用し、`com.adobe.luma.tutorial.swiftui` バンドル ID を置き換えてください。 通常は、バンドル ID 文字列（`com.organization.brand.uniqueidentifier` など）に逆 DNS 形式を使用します。 たとえば、このチュートリアルの完成バージョンでは `com.adobe.luma.tutorial.swiftui` を使用します。
 
 
-   ![Xcode 署名機能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+   ![Xcode 署名機能 ](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 
 ## ベース URL の設定
 
-1. Xcode でプロジェクトに移動します。
-1. 選択 **[!DNL Luma]** をクリックします。
-1. を選択します。 **[!DNL Luma]** ターゲット。
-1. を選択します。 **情報** タブをクリックします。
-1. ベース URL を追加するには、下にスクロールして **URL タイプ** をクリックし、 **+** 」ボタンをクリックします。
-1. 設定 **識別子** を任意のバンドル識別子に追加し、 **URL スキーム** を選択します。
+1. Xcode のプロジェクトに移動します。
+1. プロジェクト ナビゲータで [**[!DNL Luma]**] を選択します。
+1. **[!DNL Luma]** ターゲットを選択します。
+1. 「**情報**」タブを選択します。
+1. ベース URL を追加するには、下にスクロールして **URL タイプ** を表示し、「**+**」ボタンを選択します。
+1. **識別子** を任意のバンドル識別子に設定し、任意の **URL スキーム** を設定します。
 
-   ![アシュアランス url](assets/assurance-url-type.png)
+   ![assurance url](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >必ず _ユニーク_ バンドル識別子を置き換えます。 `com.adobe.luma.tutorial.swiftui` バンドル識別子。各バンドル識別子は一意である必要があります。 通常、バンドル ID 文字列には逆引き DNS 形式を使用します ( 例： `com.organization.brand.uniqueidentifier`. 以前に使用したのと同じバンドル識別子を使用できます。 [バンドル識別子を定義](#define-bundle-identifier).<br/>同様に、一意の URL スキームを使用し、既に指定されている `lumatutorialswiftui` を使用して、一意の URL スキームを設定します。
+   >各バンドル ID は一意である必要があるので、_unique_ バンドル ID を使用し、`com.adobe.luma.tutorial.swiftui` バンドル ID を置き換えてください。 通常は、バンドル ID 文字列（`com.organization.brand.uniqueidentifier` など）に逆 DNS 形式を使用します。 [ バンドル識別子の定義 ](#define-bundle-identifier) で使用したのと同じバンドル識別子を使用できます。<br/> 同様に、一意の URL スキームを使用し、既に提供されている `lumatutorialswiftui` を一意の URL スキームに置き換えます。
 
-iOSでの URL スキームについて詳しくは、 [Appleドキュメント](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+iOSの URL スキームについて詳しくは、[Appleのドキュメント ](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"} を参照してください。
 
-アシュランスは、ブラウザーまたは QR コードを介して URL を開くことで機能します。 この URL は、アプリを開くベース URL で始まり、追加のパラメーターが含まれています。 これらの一意のパラメーターは、セッションの接続に使用されます。
+Assurance は、ブラウザーまたは QR コードを介して URL を開くことで機能します。 この URL は、アプリを開くベース URL で始まり、追加のパラメーターが含まれています。 これらの一意のパラメーターは、セッションへの接続に使用されます。
 
 
 ## セッションへの接続
 
-Xcode の場合：
+Xcode で：
 
-1. を使用して、シミュレーターまたは Xcode の物理デバイスで、アプリをビルドまたはリビルドして実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレータまたは Xcode の物理デバイスでアプリを構築または再構築して実行します。
 
    >[!TIP]
    >
-   >必要に応じて、特に予期しない結果が表示された場合に、ビルドを「クリーンアップ」することができます。 それには、「 」を選択します。 **[!UICONTROL ビルドフォルダーをクリーンアップ…]** Xcode から **[!UICONTROL 製品]** メニュー。
+   >必要に応じて、特に予期しない結果が発生した場合に、ビルドを「クリーンアップ」する必要がある場合があります。 これを行うには、Xcode **[!UICONTROL 製品]** メニューから「**[!UICONTROL ビルドフォルダーをクリーンアップ…]**」を選択します。
 
 
-1. Adobe Analytics の **[!UICONTROL 「Luma アプリ」でロケーションを使用することを許可]** ダイアログ、選択 **[!UICONTROL アプリの使用中に許可]**.
+1. **[!UICONTROL Luma アプリが場所を使用することを許可する]** ダイアログで、「アプリの使用中に許可 **[!UICONTROL を選択し]** す。
 
    <img src="assets/geolocation-permissions.png" width="300">
 
-1. Adobe Analytics の **[!UICONTROL 「Luma アプリ」が通知を送信します]** ダイアログ、選択 **[!UICONTROL 許可]**.
+1. **[!UICONTROL Luma アプリ」が通知を送信したい]** ダイアログで、「**[!UICONTROL 許可]**」を選択します。
 
    <img src="assets/notification-permissions.png" width="300">
 
-1. 選択 **[!UICONTROL 続行…]** ：アプリがアクティビティを追跡できるようにします。
+1. 「**[!UICONTROL 続行…]**」を選択し、アプリがアクティビティを追跡できるようにします。
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. Adobe Analytics の **[!UICONTROL 「Luma アプリ」で、他の会社のアプリや Web サイトをまたいでアクティビティを追跡できるようにします]** ダイアログ、選択 **[!UICONTROL 許可]**.
+1. **[!UICONTROL 「Luma アプリ」が他社のアプリや web サイトをまたいだアクティビティを追跡することを許可する」ダイアログで]** 「**[!UICONTROL 許可]**」を選択します。
 
    <img src="assets/tracking-allow.png" width="300">
 
 
-ブラウザーで、以下の操作を実行します。
+ブラウザーで以下を実行します。
 
 1. データ収集 UI に移動します。
-1. 選択 **[!UICONTROL アシュランス]** をクリックします。
-1. 選択 **[!UICONTROL セッションを作成]**.
-1. 選択 **[!UICONTROL 開始]**.
-1. 次を提供： **[!UICONTROL セッション名]** 例： `Luma Mobile App Session` そして **[!UICONTROL ベース URL]**:Xcode で入力した URL スキームで、その後に `://` 例： `lumatutorialswiftui://`
+1. 左パネルから「**[!UICONTROL Assurance]**」を選択します。
+1. **[!UICONTROL セッションを作成]** を選択します。
+1. **[!UICONTROL 開始]** を選択します。
+1. `Luma Mobile App Session` などの **[!UICONTROL セッション名]** と **[!UICONTROL ベース URL]** を指定します。これは、Xcode で入力した URL スキームであり、`://` の後に続きます。例：`lumatutorialswiftui://`
 1. 「**[!UICONTROL 次へ]**」を選択します。
-   ![アシュランス作成セッション](assets/assurance-create-session.png)
-1. Adobe Analytics の **[!UICONTROL 新しいセッションを作成]** モーダルダイアログ：
+   ![assurance 作成セッション ](assets/assurance-create-session.png)
+1. **[!UICONTROL 新規セッションを作成]** モーダルダイアログで、次の操作を行います。
 
    物理デバイスを使用している場合：
 
-   * 選択 **[!UICONTROL QR コードをスキャン]**. アプリを開くには、物理デバイスのカメラを使用して QR コードをスキャンし、リンクをタップします。
+   * 「**[!UICONTROL QR コードをスキャン]**」を選択します。 アプリを開くには、物理デバイスのカメラを使用して QR コードをスキャンし、リンクをタップします。
 
-     ![アシュランス qa コード](assets/assurance-qr-code.png)
+     ![assurance qa コード ](assets/assurance-qr-code.png)
 
-   シミュレーターを使用している場合は、次の手順に従います。
+   シミュレーターを使用する場合：
 
-   1. 選択 **[!UICONTROL リンクをコピー]**.
-   1. を使用してディープリンクをコピーする ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  ディープリンクを使用して、シミュレーターで Safari でアプリを開きます。
-      ![アシュランスコピーリンク](assets/assurance-copy-link.png)
+   1. **[!UICONTROL リンクをコピー]** を選択します。
+   1. ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用してディープリンクをコピーし、ディープリンクを使用してシミュレーターの Safari でアプリを開きます。
+      ![ アシュランスコピーリンク ](assets/assurance-copy-link.png)
 
-1. アプリが読み込まれると、手順 7 で示す PIN を入力するよう求めるモーダルダイアログが表示されます。
+1. アプリが読み込まれると、手順 7 に示すように、PIN を入力するよう求めるモーダルダイアログが表示されます。
 
    <img src="assets/assurance-enter-pin.png" width="300">
 
-   PIN を入力し、を選択します。 **[!UICONTROL 接続]**.
+   PIN を入力し、「**[!UICONTROL 接続]**」を選択します。
 
 
 1. 接続に成功した場合は、次のように表示されます。
-   * アプリの上に浮かぶアシュランスアイコン。
+   * Assurance アイコンがアプリの上に浮かんでいます。
 
      <img src="assets/assurance-modal.png" width="300">
 
-   * Assurance UI でのExperience Cloudの更新で、次の内容が表示されます。
+   * Assurance UI を使用して行われる次を示すExperience Cloudの更新。
 
-      1. アプリからのエクスペリエンスイベント。
+      1. アプリから発生するエクスペリエンスイベント。
       1. 選択したイベントの詳細。
       1. デバイスとタイムライン。
 
-         ![アシュランスイベント](assets/assurance-events.png)
+         ![assurance イベント ](assets/assurance-events.png)
 
-問題が発生した場合は、 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja){target="_blank"}.
+課題が発生した場合は、[ 技術ドキュメント ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} および [ 一般ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ja){target="_blank"} を確認してください。
 
 
 ## 拡張機能の検証
 
 アプリが最新の拡張機能を使用しているかどうかを確認するには：
 
-1. 選択 **[!UICONTROL 設定]**.
+1. **[!UICONTROL 設定]** を選択します。
 
-1. 選択 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 対象： ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能のバージョン]**.
+1. ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能バージョン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の場合は ![ 追加]** を選択します。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![拡張機能のバージョンの設定](assets/assurance-configure-extension-versions.png)
+   ![ 拡張機能のバージョンの設定 ](assets/assurance-configure-extension-versions.png)
 
-1. 選択 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能のバージョン]** を参照して、利用可能な最新の拡張機能と、アプリのバージョンで使用される拡張機能の概要を確認してください。
+1. ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能のバージョン]** を選択すると、使用可能な最新の拡張機能と、お使いのバージョンのアプリで使用されている拡張機能の概要が表示されます。
 
-   ![拡張機能のバージョン](assets/assurance-extension-versions.png)
+   ![ 拡張機能のバージョン ](assets/assurance-extension-versions.png)
 
-1. 拡張機能のバージョンを更新するには ( 例： **[!UICONTROL メッセージ]** および **[!UICONTROL 最適化]**) パッケージ（拡張）を次の中から選択します。 **[!UICONTROL パッケージの依存関係]** ( 例： **[!UICONTROL AEPMessaging]**) を選択し、コンテキストメニューから「 」を選択します。 **[!UICONTROL パッケージを更新]**. Xcode はパッケージの依存関係を更新します。
+1. 拡張機能のバージョン（例：**[!UICONTROL Messaging]** および **[!UICONTROL Optimize]**）を更新するには、**[!UICONTROL パッケージの依存関係]** （例：**[!UICONTROL AEPMessaging]**）からパッケージ（拡張機能）を選択し、コンテキストメニューから「**[!UICONTROL パッケージを更新]**」を選択します。 Xcode はパッケージの依存関係を更新します。
 
 
 >[!NOTE]
 >
->Xcode で拡張機能（パッケージ）を更新したら、現在のセッションを閉じてから削除し、 [セッションへの接続](#connecting-to-a-session) および [拡張機能の検証](#verify-extensions) アシュランスが、新しいアシュランスセッションで適切な拡張を適切に報告するようにする。
+>Xcode で拡張機能（パッケージ）を更新したら、現在のセッションを閉じて削除し、[ セッションへの接続 ](#connecting-to-a-session) および [ 拡張機能の検証 ](#verify-extensions) のすべての手順を繰り返して、Assurance が新しい Assurance セッションで正しい拡張機能を適切に報告していることを確認します。
 
 
 
@@ -200,9 +200,9 @@ Xcode の場合：
 
 >[!SUCCESS]
 >
->これで、このチュートリアルの残りの部分でアシュランスを使用するようにアプリを設定しました。
+>これで、チュートリアルの残りの部分で Assurance を使用するようにアプリを設定しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-次へ： **[同意の実装](consent.md)**
+次のトピック：**[同意の実装](consent.md)**

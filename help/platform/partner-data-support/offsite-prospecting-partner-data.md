@@ -1,6 +1,6 @@
 ---
-title: でのパートナーデータを使用して、オフサイトの予測用途の使用例をサポート [!DNL Real-Time CDP]
-description: 新しい見込み客を [!DNL Real-Time CDP] （訪問前のターゲティング用）。 
+title: ' [!DNL Real-Time CDP] のパートナーデータを使用したオフサイト予測ユースケースのサポート'
+description: 訪問前のターゲティング用に、でパートナーから新しい見込み客を取り込むために使用されるワークフロー  [!DNL Real-Time CDP]  ついて説明します。 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# でのパートナーデータを使用して、オフサイトの予測用途の使用例をサポート [!DNL Real-Time CDP]
+# [!DNL Real-Time CDP] のパートナーデータを使用したオフサイト予測ユースケースのサポート
 
-新しい見込み客を [!DNL Real-Time CDP] （訪問前のターゲティング用）。 詳しくは、 [見込み顧客の使用例を通じて新規顧客を惹きつけ、獲得する](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) ドキュメント。
+訪問前のターゲティングのために、[!DNL Real-Time CDP] でパートナーから新しい見込み客を取り込むために使用されるワークフローについて説明します。 詳しくは、[ 見込み客のユースケースを通じて新規顧客を獲得する ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on)

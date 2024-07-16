@@ -1,63 +1,64 @@
 ---
-title: はじめに | at.js 2.x から Web SDK への Target の移行
-description: Adobe Target実装を at.js 2.x からAdobe Experience Platform Web SDK に移行する方法について説明します。 トピックには、JavaScript ライブラリの読み込み、送信パラメーター、レンダリングアクティビティ、その他の注目すべき引き出し線が含まれます。
+title: はじめに | Target を at.js 2.x から Web SDK に移行
+description: at.js 2.x からAdobe Experience Platform Web SDK にAdobe Target実装を移行する方法を説明します。 JavaScript ライブラリの読み込み、パラメーターの送信、レンダリングアクティビティ、その他の注目すべきコールアウトについて説明します。
 last-substantial-update: 2023-02-23T00:00:00Z
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 5%
+source-wordcount: '557'
+ht-degree: 4%
 
 ---
 
-# at.js 2.x から Platform Web SDK への Target の移行
+# Target を at.js 2.x から Platform Web SDK に移行する
 
-このガイドは、経験豊富なAdobe Target実装者向けに、at.js 実装をAdobe Experience Platform Web SDK に移行する方法を学ぶためのものです。
+このガイドは、Adobe Targetの経験豊富な実装者向けに、at.js 実装をAdobe Experience Platform Web SDK に移行する方法を説明します。
 
-Adobe Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Network を通じてExperience Cloudサービスを操作できるようにする、クライアントサイド JavaScript ライブラリです。 この新しいライブラリは、個別のAdobeアプリケーションライブラリの機能を 1 つの軽量パッケージに組み合わせ、新しいAdobe Experience Platform機能を最大限に活用できます。
+Adobe Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Networkを通じてExperience Cloudサービスを操作できるようにする、クライアントサイド JavaScript ライブラリです。 この新しいライブラリは、個別のAdobeアプリケーションライブラリの機能を、Adobe Experience Platformの新機能を最大限に活用できる 1 つの軽量パッケージに組み合わせています。
 
 ## 主なメリット
 
-スタンドアロンの at.js ライブラリと比較した場合の Platform Web SDK のメリットには、次のものがあります。
+スタンドアロンの at.js ライブラリと比較した場合の Platform Web SDK の利点には、次のようなものがあります。
 
-* からのオーディエンスの共有を高速化 [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ja)
-* Target とJourney Optimizerの統合によるサポート [offer decisioning配信](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
-* 使用可能 [ファーストパーティ id](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=ja) 長期間の訪問者識別用に ECID を生成するには
+* [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ja) からのオーディエンスの共有を高速化
+* [Offer decisioning配信をサポートするための Target とJourney Optimizerの統合 ](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* [ ファーストパーティ ID](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=ja) を使用して ECID を生成する機能により、訪問者の識別を延長
 * Adobe・アプリケーション間のネットワーク・コールの統合
-* 小さいフットプリントでページ速度の指標を改善
-* Adobe Analyticsとのより緊密な統合で、別々のネットワーク呼び出しからの情報のステッチに依存しない
-* 開発者にとって柔軟性の高い実装
+* 設置面積の縮小によるページ速度指標の改善
+* Adobe Analyticsとの緊密な統合：個別のネットワーク呼び出しからの情報のステッチに依存しない
+* 開発者向けの実装の柔軟性の向上
 
-おそらく、Target のお客様にとっての移行の最大のメリットは、Real-time Customer Data Platformとの統合です。 Real-Time CDPは、Experience Platformに取り込まれるあらゆるデータとリアルタイム顧客プロファイル機能に基づいて、幅広いオーディエンス構築機能を提供します。 組み込みのデータガバナンスフレームワークにより、そのデータの責任を持つ使用が自動化されます。 顧客 AI を使用すると、機械学習モデルを簡単に使用して、傾向モデルと、その出力をAdobe Targetに共有できるチャーンモデルを構築できます。 さらに、オプションの医療およびプライバシーとセキュリティシールドのアドオンのお客様は、同意実施機能を使用して、個々のお客様の同意設定を容易に実施できます。 Platform Web SDK は、Web チャネルでこれらの RTCDP 機能を使用するための要件です。
+Target をご利用のお客様が移行する最大のメリットは、おそらくReal-time Customer Data Platformとの統合です。 Real-Time CDPは、Experience Platformに取り込まれるすべてのデータ範囲とリアルタイム顧客プロファイル機能に基づいて、オーディエンスを構築する途方もない機能を提供します。 ビルトインのデータガバナンスフレームワークにより、そのデータの責任ある使用が自動化されます。 顧客 AI を使用すると、機械学習モデルを簡単に使用して、傾向モデルとチャーンモデルを作成し、その出力をAdobe Targetに戻すことができます。 最後に、オプションのヘルスケアおよびプライバシーおよびセキュリティシールド アドオンのお客様は、同意強制機能を使用して、個々のお客様の同意設定を簡単に適用できます。 Platform Web SDK は、web チャネルでこれらの RTCDP 機能を使用するための要件です。
 
-## 学習内容
+## 学習目標
 
 このチュートリアルを最後まで学習すると、以下の内容を習得できます。
 
 * at.js と Platform Web SDK の Target 実装の違いについて
-* Target 機能の初期設定のセットアップ
-* at.js ライブラリを Platform Web SDK にアップグレードする
-* フォームベースのアクティビティと Visual Experience Composer アクティビティをレンダリングする
-* Target にパラメーターを渡す
+* Target 機能の初期設定の指定
+* at.js ライブラリを Platform Web SDK にアップグレードします
+* フォームベースと visual experience composer アクティビティのレンダリング
+* Target へのパラメーターの受け渡し
 * コンバージョンイベントの追跡
 * クロスドメインサポートの有効化
-* オーディエンスとプロファイルスクリプトを更新
+* オーディエンスとプロファイルスクリプトの更新
 * の実装を検証する
 * Target エクスペリエンス配信のデバッグ
 
 
 ## 前提条件
 
-このチュートリアルを完了するには、まず以下をおこなう必要があります。
+このチュートリアルを完了するには、まず次の操作を行う必要があります。
 
-* 現在の Target at.js の実装を技術的に理解する
-* 次の項目があることを確認します。 [編集者または発行者の役割](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) を Target インスタンスに追加し、独自の例を試せるようにします。
-* Adobe Targetでアクティビティを設定する方法を説明します。 リフレッシャーが必要な場合、このレッスンで役立つチュートリアルとガイドを次に示します。
+* 現在の Target at.js の実装の技術的な理解
+* Target インスタンスに [ 編集者または発行者の役割 ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) があることを確認して、例を自分で試せるようにします
+* Adobe Targetでアクティビティを設定する方法を理解する 復習が必要な場合は、次のチュートリアルとガイドがこのレッスンに役立ちます。
    * [Visual Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [フォームベースの Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [エクスペリエンスのターゲット設定アクティビティを作成](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [ フォームベースの Experience Composer の使用 ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
+   * [ エクスペリエンスのターゲット設定アクティビティの作成 ](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-準備が整ったら、移行を成功させるための最初の手順は、次のとおりです。 [移行プロセスの詳細](migration-overview.md) および at.js と Platform Web SDK の違いについて説明します。
+準備が整ったら、移行を成功させるための最初の手順は、[ 移行プロセスについて、および at.js と Platform Web SDK の違いについて説明 ](migration-overview.md) することです。
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

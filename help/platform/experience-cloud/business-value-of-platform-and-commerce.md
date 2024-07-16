@@ -1,6 +1,6 @@
 ---
-title: プラットフォームとコマースのビジネス価値
-description: このビデオでは、Adobe Experience PlatformをMagento Commerceと共に使用して、お客様の単一のビューを作成したり、デジタルストアフロントや様々なチャネルでのエクスペリエンスをインテリジェントにパーソナライズしたりできることを示します。
+title: Platform とCommerceの事業価値
+description: このビデオでは、Adobe Experience PlatformをMagento Commerceと共に使用して、顧客の単一のビューを作成し、デジタルストアフロントや複数のチャネルにわたってエクスペリエンスをインテリジェントにパーソナライズする方法を説明します。
 solution: Experience Platform, Commerce
 feature: Integrations
 topic: Integrations
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ---
 
-# プラットフォームとコマースのビジネス価値
+# Platform とCommerceの事業価値
 
-このビデオでは、Adobe Experience PlatformをAdobe Commerceと共に使用して、お客様の単一のビューを作成したり、デジタルストアフロントや様々なチャネルでのエクスペリエンスをインテリジェントにパーソナライズしたりできることを示します。
+このビデオでは、Adobe Experience PlatformをAdobe Commerceと共に使用して、顧客の単一のビューを作成し、デジタルストアフロントや複数のチャネルにわたってエクスペリエンスをインテリジェントにパーソナライズする方法を説明します。
 
 >[!NOTE]
 >
-> Magentoは、Adobe Commerceと呼ばれるようになりました。
+> Magentoは、現在Adobe Commerceと呼ばれています
 
 >[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on)
 

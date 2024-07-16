@@ -1,6 +1,6 @@
 ---
-title: Bootcamp — 物理とデジタルの組み合わせ — Journey Optimizerイベントを作成 — ブラジル
-description: Bootcamp — 物理とデジタルの組み合わせ — Journey Optimizerイベントを作成 — ブラジル
+title: Bootcamp – 物理的なコンテンツとデジタルなコンテンツを融合 – Journey Optimizer イベントを作成 – ブラジル
+description: Bootcamp – 物理的なコンテンツとデジタルなコンテンツを融合 – Journey Optimizer イベントを作成 – ブラジル
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -11,56 +11,56 @@ feature: Events
 exl-id: 2133b560-09d8-419d-bb99-05d0f3df52cc
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
 
-# 3.2 クリーセウエベント
+# 3.2 クリー・セウ・イベント
 
-Faça ログインのAdobe Journey Optimizerのアクセスサンド a [Adobe Experience Cloud]. クリック **Journey Optimizer**.
+Faça ログイン no Adobe Journey Optimizer acessando a [Adobe Experience Cloud]。 Em **Journey Optimizer** をクリックします。
 
 ![ACOP](./images/acophome.png)
 
-Vocêserá redirectionado para a **ホーム** Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. パラオルタナルドゥウムサンドボックスパラアウトロ、クリック EM **Prod** sandbox na lista からを選択します。 Neste エグザンプロ， o nome do sandboxé **Bootcamp**. Voêestará na visualização da **ホーム** サンドボックスを設定 `Bootcamp`.
+Você será redirectionado para a **ホーム** no Journey Optimizer Primeiro, verifique se você está usando o sandbox correto. （英語） O nome do sandbox que deve ser usado é `Bootcamp`.（オノーム・ド・サンドボックス・ケ・デヴ・サー・ウサド・デ・オノーム） Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste exexampo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-メニュー無し，ロールパラバイクソ e clique em **設定**. エム・セグイダ、クリケ・ノ・ボトン **管理** エム・イベントス。
+メニューはありません apa esquerda, role para baixo e clique em **設定**. Em seguida, clique no bothão **Manage** em Eventos.
 
 ![ACOP](./images/acopmenu.png)
 
-ヴァクヴェルア・ヴィサオ・ジェラル・デ・トドス・エベント・ディスポニヴェイス。 クリック **イベントを作成** para começar criar seu próprio evento
+Você verá uma visão geral de todos os eventos disponíveis （ヴォケ・ヴェラ・ウマ・ヴィサン・ジェラル・デ・トドス・エヴェントス・ディスポニヴィス） Clique em **イベントを作成** para começar a criar seu próprio evento.
 
 ![ACOP](./images/emptyevent.png)
 
-ウマ・ノヴァ・ジャネラ・デ・エヴェント・ヴァジア・イラ・アパレサー。
+Uma nova janela de evento vazia irá aparecer （ユマ ノヴァ ジャネラ デ イベント ヴァジア イラ アパーセル）
 
-Em primeiro lugar, dêum nome ao seu evento como, por exemplo: `yourLastNameBeaconEntryEvent` e adicione uma は以下のように、por エグザンプリを表します。 `Beacon Entry Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por exporpo: `yourLastNameBeaconEntryEvent` e adicione uma descrição como, por exporpo: `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Em seguida, certifique-se de que **タイプ** está definido como **単一** e, para a selção de **イベント ID タイプ**, selecone **生成されたシステム**.
+Em seguida, certifique-se de que **タイプ** está definido como **単一** e, para a seleção de **イベント ID タイプ**, selecione **システム生成**.
 
 ![ACOP](./images/eventidtype.png)
 
-etapa seguiné a seleção do スキーマ。 Um スキーマ foi 準備 para este expercício. スキーマの使用 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
+etapa seguinte é a seleção do スキーマ。 Um スキーマ フォイ プレパラド パラ エステ エクスペリシオ。 スキーマ `Demo System - Event Schema for Mobile App (Global v1.1) v.1` を使用します。
 
 ![ACOP](./images/eventschema.png)
 
-Depois de selecionar o Schema, vocêverá vários campos sendo selecionados na seção **フィールド**. アゴラボーデヴ・パサー、マウス、ソサオ **フィールド** e três icones ポップアップ serão exibidos クリケ・ノ・イコーネ・デ **編集**.
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **フィールド**. Agora você deve passar o mouse sobre a seção **Fields** e três ícones pop-up serão exibidos. Clique no ícone de **編集**.
 
 ![ACOP](./images/eventpayload.png)
 
-Voêverá uma janela pop-up de **フィールド**, onde vocede selecionar alguns dos campos que precisamos para personalizar a jornada Escolheremos outros attributos de perfil postermente, utizando os dados já existentes na Adobe Experience Platform
+ヴォケ・ヴェラ・ウマ・ジャネラのポップアップ **フィールド**、オンデ・ヴォケ・デヴ・セレクショナー・アルガンズ・ドス・カンポス・プレシサモス・パラ・ペルソナリザール・ア・ジョルナダ。 Escolheremos outros attributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform
 
 ![ACOP](./images/eventfields.png)
 
-ロール・パラ・バイクソ・アテ・バー・オブジェト `Place context` カイシャ・デ・セルサオをマルクに。 com isso, todo o contexto da localização do cliente será disponibilizado para a jornada. クリック **Ok** para salvar suas alteraçoes
+役割 para baixo até ver o objeto `Place context` e marque a caixa de seleção. Com isso, todo o contexto da localização do cliente será disponibilizado para a jornada. （英語） Clique em **OK** para salvar suas alteraçóes.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-Em seguida, você deverá ver a tela abaixo. クリック **保存** mais uma vez para salvar suas alteraçoes
+Em seguida, você deverá ver a tela abaixo （エム・セギダ、ボーケ・デヴェラ・バ・ア・テラ・アバイショ） Clique em **Save** mais uma vez para salvar suas alteraçóes.
 
 ![ACOP](./images/eventsave.png)
 
@@ -68,24 +68,24 @@ Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-クリケノセウエベントノバメンテパラテラ **イベントを編集** マイス・ウマ・ベス マウスの酔いが醒める **フィールド** para ver os 3 ícones(para ver os 3 ícones)。 クリケ・ノ・イコーネ **表示**.
+Clique no seu evento novamente para abrir a tela **イベントを編集** mais uma vez. Passe o mouse sobre **フィールド** para ver os 3 ícones. Clique no ícone **ビュー**.
 
 ![ACOP](./images/viewevent.png)
 
-Agora vocêverá um exemplo do payload esperado.
-Seu evento tem um eventID de orquestraçãoúnico, que vocêpode encontrar rolando para baixo nessa cargaútil visualiza `_experience.campaign.orchestration.eventID`.
+Agora você verá um expando do payload esperado （アゴラ ボーケ ヴェラ ウム エスペラド）
+Seu evento tem um eventID de orquestração único, que você pode encontrar rolando para baixo nessa carga útil até visualiza `_experience.campaign.orchestration.eventID`. （英語）
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventIDé o que deve ser envidaoà Adobe Experience Platform para acionar a jornada que você construirá em dos próximos expercícios. Lembre-se deste eventID、voce precisar dele postermente。
+イベント ID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos exercícios. イベント ID の削除、ポケ ポデ精度の削除（posteriormente）
 `"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
-クリック **Ok** e, em seguida, clique **キャンセル**.
+Clique em **OK** e, em seguida, clique em **Cancelar**.
 
-ヴォーテルミヌーはエキスペルシオをテストした。
+Você terminou este exercício.（ヴォケ・ターミョウ・エステ・エクセシオ）
 
-プロクシマエタパ： [3.3 クリースアヨルナダ電子通知のプッシュ](./ex3.md)
+Próxima etapa: [3.3 Crie sua jornada e notificação push](./ex3.md)
 
-[レトルナルパラフルクソデウサリオ 3](./uc3.md)
+[レトルナル パラ フルクソ デ ウスアリオ 3](./uc3.md)
 
-[レトルナーパラトドスオスモドゥロス](../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](../../overview.md)

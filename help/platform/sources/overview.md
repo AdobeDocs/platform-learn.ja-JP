@@ -9,13 +9,13 @@ thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 38%
+source-wordcount: '72'
+ht-degree: 34%
 
 ---
 
 # ソースの概要
 
-Adobe Experience Platformインターフェイスでソース（ソースコネクタ）を使用する方法について説明します。 ソースは、Adobe、ファーストパーティおよびサードパーティのアプリケーションから Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを取り込むための、簡単に設定可能な統合です。 詳しくは、 [ソースドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja).
+Adobe Experience Platform インターフェイスでソース（ソースコネクタ）を使用する方法を説明します。 ソースは、Adobe、ファーストパーティおよびサードパーティのアプリケーションから Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを取り込むことができる、簡単に設定できる統合です。 詳しくは、[ ソースのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on)

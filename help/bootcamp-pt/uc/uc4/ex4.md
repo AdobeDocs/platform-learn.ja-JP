@@ -1,6 +1,6 @@
 ---
-title: Bootcamp -Customer Journey Analytics- Analysis Workspaceでのデータの準備 — ブラジル
-description: Bootcamp -Customer Journey Analytics- Analysis Workspaceでのデータの準備 — ブラジル
+title: Bootcamp - Customer Journey Analytics - Analysis Workspaceでのデータ準備 – ブラジル
+description: Bootcamp - Customer Journey Analytics - Analysis Workspaceでのデータ準備 – ブラジル
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,105 +11,105 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
 
-# 4.4 Prepação de dados emCustomer Journey Analytics
+# 4.4 プレパラソン デ ダドス エム Customer Journey Analytics
 
-## Objectivos
+## Objetivos
 
-- Entenda a UO do Analysis Workspaceの CJA
-- Entenda concitios de preparação de dados no Analysis Workspace
-- アプレンダアファザーカルクロスデダドス
+- Entenda a UO do Analysis Workspace no CJA
+- エンテンダ オス コンセティトス デ プレパラソン デ ダドス ノ Analysis Workspace
+- アレンダ ア ファザー cálculos デ ダドス
 
-## 4.4.1 UI でのAnalysis Workspaceの CJA の実行
+## 4.4.1 UI do Analysis Workspace no CJA
 
-OAnalysis Workspaceは、Analytics の際にトダを削除します。 Ele forene uma tela lobsta e flexível para criar projectos de analytics personalizados. Arraste e solte qualte qualquer número de tabelas de dados, visualizaçoes e componentes (dimensions, métricas, segmentos e granuridades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo de falhase relatórios de curadoria e agendamento pa co compartilcom pqu co co co co com pquer quer pquer pquer pquer pquer peso e peso em esemenseom pa em seem seu
+Analysis Workspaceは todas を limitaçóóes típicas de um único relatório do Analytics として削除します。 Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados.（エレ・フォルネセ・ウマ・テラ・ロブスタ・エ・フレキシベル・パラ・クリアー・プロジェトス・デ・アナリティクス・ペルソナリザドス） Arraste e e solte qualquer número de tabelas de dados, visualizaçóes e componentes （dimensóes, métricas, segmentos e granularidadadades de tempo） para um projeto. （英語） Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo e falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-OCustomer Journey Analyticstraz essa solção além dos dados da plataforma. É altamente recomendável assisiar a este vídeo de visão geral de quatro minutos:
+Customer Journey Analytics・トラズ・エッサ・ソリュサオ・アレム・ドス・ダドス・ダ・プラタフォルマ É altamente recomendável assistir a este vídeo de visão geral de quatro minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-Se voce nunca usou o Analysis Workspace antes, recomendamos este vídeo:
+Se você nunca usou o Analysis Workspace antes, recomendamos este vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### クリーセウプロジェト
+### クリースープロエト
 
-アゴラエホラ・ド・クリアル・セウ・プリメイロ・プロジェトは CJA を行う。 Vá para a aba de projectos dentro do CJA. クリック **新規作成**.
+アゴラ・デ・ホラ・デ・クリアール・セウ・プリメイロ・プロジェト・ド・CJA。 Vá para a aba de projetos dentro do CJA （ヴァパラ ア ア ア ア ア ア デ プロジェトス デントロ ド CJA） 「**新規作成**」をクリックします。
 
-![デモ](./images/prmenu.png)
+![ デモ ](./images/prmenu.png)
 
-エムセギダ、vocêverá a tela abaixo。 選択 **空のプロジェクト** 東クリック **作成**.
+Em seguida, você verá a tela abaixo. （エム・セギダ、ボークレ・ヴェラ・ア・テラ・アバイショ） Selecione **空のプロジェクト** então clique em **作成**.
 
-![デモ](./images/prmenu1.png)
+![ デモ ](./images/prmenu1.png)
 
-Voêverá um projeto vazio.
+Você verá um projeto vazio.（ヴォケ・ヴェラ・ウム・プロエト・ヴァジオ）
 
-![デモ](./images/premptyprojects.png)
+![ デモ ](./images/premptyprojects.png)
 
-Primeiro, certifique-se de selecionar Visualização de dados correta no canto superior direito da tela. Neste エグザンプロ、Visualização de dados a ser selecionada `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. （ダドス・コレタのビジュアライゼーションの実態） Neste exempo, a Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.（ネスティ・エグゼモ、ダドスのビジュアライゼーション）
 
-![デモ](./images/prdv.png)
+![ デモ ](./images/prdv.png)
 
-エムセギダ、vocirá salvar seu projeto e dar um nome a ele. Vocêpode usar o seguinte comando para salvar:
+エム・セギダ、você irá salvar seu projeto e dar um nome a ele. ボーケ・ポデ・ウサー o seguinte comando para salvar:
 
 | OS | ショートカット |
 | ----------------- |-------------| 
-| Windows | Ctrl + S |
+| Windows | コントロール + S |
 | Mac | Command + S |
 
-Vocêverá este ポップアップ：
+Você verá este のポップアップ
 
-![デモ](./images/prsave.png)
+![ デモ ](./images/prsave.png)
 
-este modelo de nomenclatura を使用：
+este modelo de nomenclatura を使用します。
 
 | 名前 | 説明 |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Em seguida、clique em **保存**.
+Em seguida、clique em **保存**。
 
-![デモ](./images/prsave2.png)
+![ デモ ](./images/prsave2.png)
 
-## 4.4.2 メトリカスカルカダ
+## 4.4.2 メトリカ結石
 
-Embora tenhamos organizado todos componentes na Visualização de dados, vocainda deve adaptar alguns deles para que os usários de negcios estejam prontos para iniciar suas análises. Além disso, durante qualquer processo de analytics, voce pode criar métricas calculadas para aprofundar a de secoberta de insights.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar alguns deles parque os usuários de negócios estestjam prontos para iniciar suas análises. Além disso, durante qualquer processo de analytics, você pode criar métricas calculadas para aprofundar a descoberta de insights.
 
-Como 模範， criaremos uma Taxao de conversão calculada usando a métrica/evento Compras que definimos na Visualização de dados.
+Como exempo, criaremos uma Taxa de conversão calculada usando a métrica/evento Compras que definimos na Visualização de dados.（コモエグゼモ、コングレガモの分類法、およびコングレサオの分類法）
 
-## タクサデコンバオ
+## タサ デ コンヴェルサン
 
-Vamos começar は、コンストラクター・デ・メトリカス・カリカダのアブリエです。 クリック **+** パラクリアスアプリメイラメトリカカルカダのAnalysis Workspace
+「Vamos começar」は聖体結石の恐ろしさを示している。 Clique em **+** para criar sua primeira Métrica calculada no Analysis Workspace.（クリーク・エム・イラ+クリーク・パラクリアール・スア・プリメイラ・メトリカ・カリキュラダ・ノ・）
 
-![デモ](./images/pradd.png)
+![ デモ ](./images/pradd.png)
 
-O **計算指標ビルダー** irá aparecer:
+O **計算指標ビルダー** irá aprecer:
 
-![デモ](./images/prbuilder.png)
+![ デモ ](./images/prbuilder.png)
 
-強制 **購入** na lista de métricas no menu do lado esquerdo Em **指標** クリック **すべて表示**
+Encontre **購入** na lista de métricas no menu do lado esquerdo. Em **指標** clique em **すべて表示**
 
-![デモ](./images/calcbuildercr1.png)
+![ デモ ](./images/calcbuildercr1.png)
 
-アゴラアレステメトリカをソルテ **購入** ナ・エニファサン・ダ・メトリカ・カリキュラダ。
+Agora arraste e e solte a métrica **購入** na definição da métrica calculada.
 
-![デモ](./images/calcbuildercr2.png)
+![ デモ ](./images/calcbuildercr2.png)
 
-正常には、taxade conversão minia **コンバージョン/セッション**. エンサン，ヴァモスファザー o mesmo cálculo na tela de definição de métrica calculada. メトリカをエンコントロール **セッション** e arraste e solte a no criador de definição, no evento **購入**.
+Normalmente, taxa de conversão significa **コンバージョン / セッション**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calculada. （英語） Encontre a métrica **セッション** e arraste e solte-a no criador de definição, no evento **購入**.
 
-![デモ](./images/calcbuildercr3.png)
+![ デモ ](./images/calcbuildercr3.png)
 
-オペラドール・デ・デ・ディブサオ・セレオナドを自動的に使う。
+Que o operador de divisão é selecionado automaticamente をご覧ください。
 
-![デモ](./images/calcbuildercr4.png)
+![ デモ ](./images/calcbuildercr4.png)
 
-taxade conversãoé comumente は porcentagem を表します。 Então, vamos mudar o formato para porcentagem e selecionar 2 casas as decimais.
+A taxa de conversão é comumente representada em porcentagem （別名税） Então, vamos mudar o formato para porcentagem e selecionar 2 casas decimais.
 
-![デモ](./images/calcbuildercr5.png)
+![ デモ ](./images/calcbuildercr5.png)
 
 最後に、計算指標の名前と説明を変更します。
 
@@ -117,46 +117,46 @@ taxade conversãoé comumente は porcentagem を表します。 Então, vamos m
 | ----------------- |-------------| 
 | コンバージョン率 | コンバージョン率 |
 
-Por fim, altere o nome e a descrição da métrica calculada:
+原石とノームの代わりに原石の説明：
 
-![デモ](./images/calcbuildercr6.png)
+![ デモ ](./images/calcbuildercr6.png)
 
-ナンセエスケサデ **Salvar** メトリカカリキュラダ。
+Não se esqueça de **Salvar** Métrica calculada の略。
 
-![デモ](./images/pr9.png)
+![ デモ ](./images/pr9.png)
 
-## 4.4.3 寸法：Filtros (segmentatção) e intervalos de datas
+## 4.4.3 Dimensóes calculadas: Filtros （segmentação） e intervalos de datas
 
-### フィルタ：ディメンションエスカルカダ
+### フィルタ：Dimensóes calculadas
 
-オスカルクロスナンデベム、アペナスパラメトリカス。 アンテス・デ・イニシア・クァルケア・アナリス、タンベム・エ・インテレスサンテ・クリア・アルグマ **計算Dimension**. イッソ・シピラシア、エッセンシャルメンテ、 **セグメント** Adobe Analytics ノCustomer Journey Analyticsセグメントサンシャマドスデ **フィルター**.
+Os cálculos não devem ser apenas para métricas.（オスカルロス・ナン・デヴェム・サー・アペナス・パラ・メトリカス） Antes de iniciar qualquer análise, também é interessante criar algumas **計算Dimension**. Isso significa、essencialmente、**segments** no Adobe Analytics Customer Journey Analyticsなく、são chamados de **Filters** を評価します。
 
-![デモ](./images/prfilters.png)
+![ デモ ](./images/prfilters.png)
 
-A criação de filtros ajudará os usários de negócios a iniciar o analytics com algumas dimensions, es calcuadas valiosas. Isso irá automatizar algumas tarefas, além de ajudar na parte de adoção. Abaixo estão alguns exemployes:
+A criação de filtros ajudará os usuários de negócios a iniciar o analytics com algumas dimensóes calculadas valiosas. （英語） Isso irá automatiszar algumas tarefa, além de ajudar na parte de adoção （イッソ・イラ・オートマティザール・アルグマ・タレファ） Abaixo estão alguns の従業員：
 
-1. メディア・プロプリア、メディア・パガ
-2. Visitas novas x レコード
-3. Clientes com carrinho abondonado
+1. ミディア・パガ，Mídia Própria,
+2. ノヴァス・エクス・レコレンテス
+3. Clientes com carrinho abandonado
 
-Ess filtros podem ser criados antes ou durante a parte de análise (o que vocêfará no próximo exercício).
+フェルトロス・ポデム・セル・クリアドス・アンテス・ウ・ドゥランテ・ア・パルテ・デ・アナリゼ （o que você fará no próximo exercício）
 
-### データの間隔：ディメンションデテンポカルカダ
+### Intervalos de datas: Dimensóes de tempo calculadas
 
-As dimensions, es de tempo são outro tipo de dimensions, es calculadas. Alguns já foram criados, mas você também pode criar suas próprias Dimensoes de tempo personalizadas na fase de prepação de dados.
+As dimensóes de tempo são outro tipo de dimensóes calculadas.（ディメンソエス・デ・テンポ・デ・ディメンソエス・カラダス） アルガンズ・ヤ・フォラム・クリアドス、マ・ボーケ・タンベム・ポデ・クリアール・スアス・プロプリアス・ディメンサス・デ・テぺモ・ペルソナリザダス・ナ・ファセ・デ・プレパラサオ・デ・ダドス。
 
-Essas Dimensionsoes de tempo calculado ajudarão analistas e usários de negócios lembrar datas importantes e usá-las para filter e alteror o tempo de relatrio. ペルガンタ・エドゥヴィダ・ティピカス・クアンド・ファゼモス・アナリス：
+Essas Dimensóes de tempo calculado ajudarão analistas e usuários de negócios a lembrar datas importantes e usá-las para filtrar e alterar o tempo de relatório. （英語） Perguntas e dúvidas típicas quando fazemos análises:
 
-- Quando foi 黒金曜日 do ano passado? エントリー OS 21 e 29?
-- クアンド・ヴェイキュラモス・アクエラ・カンパーハ・デ・テレビエム・デザンブロ？
-- De quando a quando fizemos as vendas de verão de 2018? Quero comparar com 2019. 2019 年に、ボーケ・サベ・オス・ディアス・エクサトスエム？
+- Quando foi a ブラックフライデーは Ano Passado? エントル・オズ・ディアス 21e29?
+- カンド・ベイクラモス アクエラ・カンパンハ・デ・テレビ・デゼンボ？
+- 2018 年のヴェランデ・ヴェルダンはクアンドのフィゼモスですか？ Quero comparar com 2019。 2019 年のヴォケ・サベ・オス・ディアス・エクサトスは？
 
-![デモ](./images/timedimensions.png)
+![ デモ ](./images/timedimensions.png)
 
-アゴラのボーチュエオエクスペルシオデデプラファサオデダドスユサンドオAnalysis Workspaceド CJA。
+Agora você concluiu o exercício de preparação de dados usando o Analysis Workspace do CJA. （英語）
 
-プロクシマエタパ： [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
+Próxima etapa: [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
 
-[レトルナルパラフルクソデウサリオ 4](./uc4.md)
+[レトルナル パラ フルクソ デ ウスアリオ 4](./uc4.md)
 
-[レトルナーパラトドスオスモドゥロス](./../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](./../../overview.md)

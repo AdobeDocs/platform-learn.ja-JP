@@ -1,36 +1,37 @@
 ---
-title: オーディエンスとプロファイルスクリプトを更新 | at.js 2.x から Web SDK への Target の移行
-description: Adobe Target Web SDK との互換性を保つために、Web オーディエンスとプロファイルスクリプトを更新するExperience Platformについて説明します。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: オーディエンスとプロファイルスクリプトの更新 | Target を at.js 2.x から Web SDK に移行
+description: Experience Platform Web SDK と互換性を持たせるために、Adobe Target オーディエンスとプロファイルスクリプトを更新する方法を説明します。
+exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
-# Platform Web SDK の互換性を考慮した Target オーディエンスとプロファイルスクリプトの更新
+# Platform Web SDK の互換性に合わせた Target オーディエンスとプロファイルスクリプトの更新
 
-Target を Platform Web SDK に移行するためのテクニカルアップデートが完了したら、スムーズな移行を実現するために、オーディエンス、プロファイルスクリプトおよびアクティビティの一部を更新する必要が生じる場合があります。
+Target を Platform Web SDK に移行する技術的な更新を完了した後、スムーズな移行を確保するために、オーディエンス、プロファイルスクリプト、アクティビティの一部を更新する必要が生じる場合があります。
 
-すべての Target mbox パラメーターは、Platform Web SDK 実装を使用して XDM 形式で渡す必要があります。 変更を実稼動環境に公開する前に、次の操作を行う必要があります。
+すべての Target mbox パラメーターは、Platform Web SDK 実装を使用して、XDM 形式で渡す必要があります。 変更を実稼動環境に公開する前に、次を行う必要があります。
 
 * mbox パラメーターを使用するオーディエンスの更新
 * mbox パラメーターを使用するプロファイルスクリプトの更新
-* すべてのオファーおよびアクティビティを更新し、mbox パラメータートークンの置き換えを使用します ( 例： `${mbox.parameter_name}`)
+* mbox パラメータートークンの置き換え（`${mbox.parameter_name}` など）を使用して、オファーとアクティビティを更新します
 
-## オーディエンスを調整
+## オーディエンスの調整
 
-カスタム mbox パラメーターを使用するオーディエンスは、新しい XDM パラメーター名を使用するように更新する必要があります。 例えば、 `page_name` は、次のようにマッピングされる可能性が高くなります： `web.webpagedetails.pageName`.
+カスタム mbox パラメーターを使用するオーディエンスは、新しい XDM パラメーター名を使用するように更新してください。 例えば、`page_name` のカスタムパラメーターは、`web.webpagedetails.pageName` にマッピングされる可能性があります。
 
-at.js と Platform Web SDK の両方との互換性を確保する 1 つの方法は、関連するオーディエンスを更新して `OR` 条件は、次に示すように使用されます。
+at.js と Platform Web SDK の両方との互換性を確保する 1 つのアプローチは、以下に示すように、関連するオーディエンスを更新して、`OR` の条件が使用されるようにすることです。
 
-![Platform Web SDK の互換性を考慮した Target オーディエンスの更新を表示する方法](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
+![Platform Web SDK 互換性のターゲットオーディエンス更新の表示方法 ](assets/target-audience-update.png){zoomable="yes"}
 
 ## プロファイルスクリプトの編集
 
-プロファイルスクリプトを更新して、オーディエンスと同様に新しい XDM パラメーター名を参照する必要があります。 mbox パラメーター名の変更に加えて、at.js と Platform Web SDK 実装の間でのプロファイルスクリプトの動作に違いはありません。
+プロファイルスクリプトは、オーディエンスに類似した新しい XDM パラメーター名を参照するように更新する必要があります。 mbox パラメーター名の変更以外に、at.js と Platform Web SDK 実装の間でプロファイルスクリプトの動作方法に違いはありません。
 
-互換性を確保するための 1 つのアプローチは、 `OR` 条件を設定します。
+互換性を確保する 1 つのアプローチは、プロファイルスクリプトコードで `OR` 条件を使用することです。
 
 プロファイルスクリプトの例：
 
@@ -40,7 +41,7 @@ if(mbox.param('pageName') == 'Product Details'){
 }
 ```
 
-Platform Web SDK の互換性に関するプロファイルスクリプトを更新しました。
+Platform Web SDK 互換性のための更新されたプロファイルスクリプト：
 
 ```Javascript
 if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
@@ -48,13 +49,13 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-詳細およびベストプラクティスについては、 [プロファイルスクリプト](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).
+詳細とベストプラクティスについては、[ プロファイルスクリプト ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html) に関する専用ドキュメントを参照してください。
 
-## 動的コンテンツのパラメータートークンを更新
+## 動的コンテンツのパラメータートークンの更新
 
-を使用するオファー、レコメンデーションデザインまたはアクティビティがある場合 [動的コンテンツ置換](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html)の場合は、新しい XDM パラメーター名を考慮するために、適宜更新する必要がある場合があります。
+[ 動的コンテンツ置換 ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html) を使用するオファー、レコメンデーションデザインまたはアクティビティがある場合は、新しい XDM パラメーター名を考慮して、それに応じて更新する必要がある場合があります。
 
-mbox パラメーターにトークン置き換えを使用している方法に応じて、古いパラメーター名と新しいパラメーター名の両方を考慮して、既存の設定を拡張できます。 ただし、JSON オファーなど、カスタム JavaScript コードが使用できない状況では、移行が完了して実稼動サイトで稼働した後に、コピーを作成して更新する必要があります。
+mbox パラメーターのトークン置き換えの使用方法によっては、古いパラメーター名と新しいパラメーター名の両方が考慮されるように、既存の設定を強化できる場合があります。 ただし、JSON オファーなど、カスタム JavaScript コードが利用できない状況では、移行が完了して実稼動サイトに移行した後、コピーを作成して更新を行う必要があります。
 
 JSON オファーの例：
 
@@ -65,7 +66,7 @@ JSON オファーの例：
 }
 ```
 
-Platform Web SDK のパラメーター名を使用した JSON オファーの例：
+Platform Web SDK パラメーター名を使用した JSON オファーの例：
 
 ```JSON
 {
@@ -74,10 +75,10 @@ Platform Web SDK のパラメーター名を使用した JSON オファーの例
 }
 ```
 
-新しい XDM mbox パラメーター名を考慮に入れるように移行後に調整を行う場合は、訪問者にアクティビティの表示エラーが表示されないように、移行イベント中に影響を受けたアクティビティを必ず一時停止してください。
+移行後に調整を行って新しい XDM mbox パラメーター名を考慮する場合は、影響を受けるアクティビティを移行イベント中に一時停止して、訪問者にアクティビティ表示エラーが表示されないようにしてください。
 
-次に、 [Target の実装を検証する](validate.md).
+次に、[Target 実装の検証 ](validate.md) 方法を説明します。
 
 >[!NOTE]
 >
->at.js から Web SDK への Target の移行を成功に導くための支援に努めています。 移行時に障害が発生した場合や、このガイドに重要な情報が欠落していると思われる場合は、 [このコミュニティディスカッション](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

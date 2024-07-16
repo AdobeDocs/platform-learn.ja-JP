@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # 顧客管理キー（CMK）の設定
 
-独自の暗号化キーを使用して、保存データの暗号化を管理します。 詳しくは、 [顧客管理キーのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+独自の暗号化キーを使用して、保存データの暗号化を管理します。 詳しくは、[ 顧客管理キーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 

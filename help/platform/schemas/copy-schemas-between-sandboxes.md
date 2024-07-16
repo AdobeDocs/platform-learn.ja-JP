@@ -1,6 +1,6 @@
 ---
 title: サンドボックス間でのスキーマのコピー
-description: このビデオでは、Export/Import Schema API を使用して、Adobe Experience Platformのサンドボックス間でスキーマをコピーする方法を示します。
+description: このビデオでは、スキーマ API の書き出し/読み込みを使用して、Adobe Experience Platformのサンドボックス間でスキーマをコピーする方法を説明します。
 feature: Schemas, Sandboxes
 role: Data Architect, Developer
 level: Intermediate
@@ -16,10 +16,10 @@ ht-degree: 1%
 
 # サンドボックス間でのスキーマのコピー
 
-このビデオでは、Export/Import Schema API を使用して、Adobe Experience Platformのサンドボックス間でスキーマをコピーする方法を示します。 開発用サンドボックスでスキーマを作成してテストし、実稼動用にコピーします。 詳しくは、 [スキーマドキュメント](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja).
+このビデオでは、スキーマ API の書き出し/読み込みを使用して、Adobe Experience Platformのサンドボックス間でスキーマをコピーする方法を説明します。 開発用サンドボックスでスキーマを作成してテストし、実稼動用にコピーします。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
 >[!TIP]
 >
->スキーマや他のオブジェクトをサンドボックス間で移動する、より簡単なインターフェイス中心のプロセスが 2023 年後半に導入され、代わりにを使用することをお勧めします。 詳しくは、 [サンドボックス間でのオブジェクトのコピー](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=ja).
+>サンドボックス間でスキーマや他のオブジェクトを移動する、より簡単でインターフェイス中心のプロセスが 2023 年末に導入されました。代わりにを使用することをお勧めします。 [ サンドボックス間でのオブジェクトのコピー ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)

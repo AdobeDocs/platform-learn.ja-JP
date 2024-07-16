@@ -1,6 +1,6 @@
 ---
-title: Bootcamp — 登録とオンボーディング — ブラジル
-description: Bootcamp — 登録とオンボーディング — ブラジル
+title: Bootcamp – 登録とオンボーディング – ブラジル
+description: Bootcamp – 登録とオンボーディング – ブラジル
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -11,49 +11,49 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 21ca2a7a-fdf2-4cdf-97df-13c4e208d2ea
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 3%
+source-wordcount: '218'
+ht-degree: 1%
 
 ---
 
-# 2. Objetivos de aprendizado
+# 2 アペンディザード修道院
 
 ## 学習内容
 
-## Pré-requisitos
+## 前提条件
 
-- Adobe Experience Platform・アセソ： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso a coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Acesso ao site de demonstração
 
 >[!IMPORTANT]
 >
->Este チュートリアル foi criado para faciliar um formato specífico de bootcamp. Sistemas e contas specíficos quais vocais vocaê pode não ter acesso são utilizados neste チュートリアル Mesmo sem acesso, vocêainda pode aprender muito com a leitura deste conteúdo detalhado. Se vocé um particante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da representante daAdobepara recever as informationçoes nesárias.
+>Este チュートリアル foi criado para facilitar um formatto específico de bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste チュートリアル Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é é um participante de um bootcamp e precisa a das credenciais de acesso, entre em contato com seu representante da receber as informatshoóes necárias.この記事では、Adobeの現状を紹介します。
 
-## エクスペシオス
+## エクセシオ
 
-[2.1 サイトへの訪問 e crie sua conta](./ex1.md)
+[2.1 サイトを訪問する e crie sua conta](./ex1.md)
 
-Neste expercicio, vocêirá aprender como configurar um evento.
+Neste exercício, você irá aprender como configurar um evento.
 
-[2.2 クリーセウエベント](./ex2.md)
+[2.2 クリー・セウ・イベント](./ex2.md)
 
-Neste expercicio, vocêirá aprender como configurar um evento.
+Neste exercício, você irá aprender como configurar um evento.
 
-[2.3 クリスアヨルナダ電子メール](./ex3.md)
+[2.3 Crie sua jornada e mensagem de e-mail](./ex3.md)
 
-Neste expercício, vocêirá aprend como configurar uma jornade e uma mensagem de e-mail.
+Neste exercício, você irá aprender como configurar uma jornada e uma mensagem de e-mail.
 
-[2.4 テストスアヨルナダ](./ex4.md)
+[2.4 テステ スア ジョルナダ](./ex4.md)
 
-Neste expercicio, vocêirá testar a jornada que criu.
+Neste exercício, você irá testar a jornada que você criou.
 
-[2.5 Instale e use o aplicativo móvel](./ex5.md)
+[2.5 aplicativo móvel の使い方](./ex5.md)
 
-Neste expercicio, vocêirá instalar o applicativo mvovel.
+Neste exercício, você irá instalar o aplicativo móvel.
 
-[2.6 Personalização no call center](./ex6.md)
+[2.6 パーソナライザサオなしコールセンター](./ex6.md)
 
-Neste expercício, vocêverá como uma experiência de call center pode ser otimizada com base na inteligência da Adobe Experience Platform.
+Neste exercício, você verá como uma experiência de call center pode ser otimizada com base na integência da Adobe Experience Platform.
 
-[レトルナーパラトドスオスモドゥロス](../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](../../overview.md)

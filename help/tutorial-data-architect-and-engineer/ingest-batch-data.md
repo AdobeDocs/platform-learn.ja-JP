@@ -2,7 +2,7 @@
 title: バッチデータの取得
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: バッチデータの取得
-description: このレッスンでは、様々な方法を使用してバッチデータをExperience Platformに取り込みます。
+description: このレッスンでは、さまざまな方法でバッチ データをExperience Platformに取り込みます。
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
@@ -10,28 +10,28 @@ thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 1%
+source-wordcount: '2465'
+ht-degree: 0%
 
 ---
 
 # バッチデータの取得
 
 <!-- 1hr-->
-このレッスンでは、様々な方法を使用してバッチデータをExperience Platformに取り込みます。
+このレッスンでは、さまざまな方法でバッチ データをExperience Platformに取り込みます。
 
-バッチデータ取り込みを使用すると、大量のデータをAdobe Experience Platformに一度に取り込むことができます。 バッチデータは、Platform のインターフェイス内で 1 回アップロードするか、API を使用して取り込むことができます。 また、ソースコネクタを使用して、クラウドストレージサービスなどのサードパーティのサービスから、定期的にスケジュールされるバッチアップロードを設定することもできます。
+バッチデータ取り込みでは、大量のデータを一度にAdobe Experience Platformに取り込むことができます。 Platform のインターフェイス内または API を使用して、1 回だけアップロードでバッチデータを取り込むことができます。 Source コネクタを使用して、クラウドストレージサービスなどのサードパーティサービスから、定期的にスケジュールされたバッチアップロードを設定することもできます。
 
-**データエンジニア** このチュートリアル以外で、バッチデータを取り込む必要があります。
+**データエンジニア** は、このチュートリアル以外でバッチデータを取り込む必要があります。
 
-演習を始める前に、次の短いビデオを見て、データ取り込みの詳細を確認してください。
+演習を開始する前に、この短いビデオを視聴してデータ取り込みの詳細を確認してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 
 
 ## 必要な権限
 
-Adobe Analytics の [権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission item **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]**, **[!UICONTROL Manage Datasets]** and **[!UICONTROL Data Monitoring]**
@@ -42,45 +42,45 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-ソースに関する演習では、(S)FTP サーバまたはクラウドストレージソリューションにアクセスする必要があります。 回避策がない場合は、次の手順を実行します。
+ソースの演習では、（S） FTP サーバーまたはクラウドストレージソリューションにアクセスする必要があります。 対応策がない場合は、次の手順に従います。
 
-## Platform ユーザーインターフェイスを使用したバッチでのデータ取得
+## Platform ユーザーインターフェイスを使用したデータのバッチ取り込み
 
-データは、JSON および Parquet 形式でデータセット画面のデータセットに直接アップロードできます。 これは、
+データは、JSON および parquet 形式で、データセット画面のデータセットに直接アップロードできます。 これは、を作成した後に、一部のデータの取り込みをテストする優れた方法です。
 
-### データをダウンロードして準備する
+### データのダウンロードと準備
 
-まず、サンプルデータを取得し、テナント用にカスタマイズします。
+最初に、サンプルデータを取得して、テナントに合わせてカスタマイズします。
 
 >[!NOTE]
 >
->データは [luma-data.zip](assets/luma-data.zip) ファイルは架空のもので、デモ目的でのみ使用します。
+>[luma-data.zip](assets/luma-data.zip) ファイルに含まれるデータは架空のもので、デモ目的でのみ使用されます。
 
-1. ダウンロード [luma-data.zip](assets/luma-data.zip) を **Luma チュートリアルアセット** フォルダー。
-1. ファイルを解凍し、という名前のフォルダーを作成します。 `luma-data` このレッスンで使用する 4 つのデータファイルを含む
-1. 開く `luma-loyalty.json` テキストエディター内で、 `_techmarketingdemos` に、独自のアンダースコアテナント id を設定します。これは、独自のスキーマに表示されます。
-   ![アンダースコアテナント ID](assets/ingestion-underscoreTenant.png)
+1. [luma-data.zip](assets/luma-data.zip) を **Luma チュートリアルAssets** フォルダーにダウンロードします。
+1. ファイルを解凍し、`luma-data` というフォルダーを作成します。このフォルダーには、このレッスンで使用する 4 つのデータファイルが含まれています
+1. テキストエディターで `luma-loyalty.json` を開き、`_techmarketingdemos` のすべてのインスタンスを、独自のスキーマのように、独自のアンダースコア – テナント ID に置き換えます。
+   ![ アンダースコアのテナント ID](assets/ingestion-underscoreTenant.png)
 
-1. 更新したファイルを保存します。
+1. 更新したファイルを保存します
 
 ### データの取り込み
 
-1. Platform ユーザーインターフェイスで、「 **[!UICONTROL データセット]** 左のナビゲーションで
-1. を開きます。 `Luma Loyalty Dataset`
-1. 下にスクロールして、 **[!UICONTROL データを追加]** 右列の「 」セクション
-1. をアップロードします。 `luma-loyalty.json` ファイル。
+1. Platform ユーザーインターフェイスの左側のナビゲーションで **[!UICONTROL データセット]** を選択します
+1. `Luma Loyalty Dataset` を開きます
+1. 下にスクロールして、右側の列に **[!UICONTROL データの追加]** セクションを表示します
+1. `luma-loyalty.json` ファイルをアップロードします。
 1. ファイルがアップロードされると、バッチの行が表示されます
 1. 数分後にページを再読み込みすると、1,000 件のレコードと 1,000 件のプロファイルフラグメントを含むバッチが正常にアップロードされたことがわかります。
 
-   ![取り込み](assets/ingestion-loyalty-uploadJson.png)
+   ![ インジェスト ](assets/ingestion-loyalty-uploadJson.png)
    <!--do i need to explain error diagnostics and partial ingestion-->
 
 >[!NOTE]
 >
->いくつかのオプションがあります。 **[!UICONTROL エラー診断]** および **[!UICONTROL 部分取り込み]**&#x200B;を使用し、このレッスンの様々な画面に表示されます。 これらのオプションについては、このチュートリアルでは説明していません。 簡単な情報：
+>このレッスンでは、様々な画面に表示される **[!UICONTROL エラー診断]** オプションと **[!UICONTROL 部分取り込み]** オプションがいくつかあります。 これらのオプションについては、このチュートリアルでは説明しません。 次に、いくつかのクイック情報を示します。
 >
->* エラー診断を有効にすると、データの取り込みに関するデータが生成され、その後、データアクセス API を使用して確認できます。 詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* 部分取り込みを使用すると、エラーを含むデータを、指定可能な特定のしきい値まで取り込むことができます。 詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
+>* エラー診断を有効にすると、データの取り込みに関するデータが生成され、Data Access API を使用して確認できます。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html) を参照してください。
+>* 部分取り込みでは、エラーを含むデータを、指定できる特定のしきい値まで取り込むことができます。 詳しくは、ドキュメントを参照 [ てください ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### データの検証
 
@@ -88,69 +88,69 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
 
 #### Platform ユーザーインターフェイスでの検証
 
-データがデータセットに取り込まれたことを確認するには：
+データがデータセットに取り込まれたことを確認するには、次の手順を実行します。
 
-1. データを取り込んだページで、 **[!UICONTROL データセットをプレビュー]** 右上のボタン
-1. を選択します。 **プレビュー** ボタンをクリックすると、取り込んだデータの一部が表示されます。
+1. データを取り込んだのと同じページで、右上の「**[!UICONTROL データセットをプレビュー]**」ボタンを選択します
+1. 「**プレビュー**」ボタンを選択すると、取り込んだデータの一部が表示されます。
 
-   ![正常なデータセットのプレビュー](assets/ingestion-loyalty-preview.png)
+   ![ 成功したデータセットのプレビュー ](assets/ingestion-loyalty-preview.png)
 
 
-データがプロファイルにランディングしたことを確認するには（データが到着するまで数分かかる場合があります）:
+データがプロファイルに格納されたことを確認するには、次の手順を実行します（データが格納されるまで数分かかる場合があります）。
 
-1. に移動します。 **[!UICONTROL プロファイル]** 左のナビゲーションで
-1. の横にあるアイコンを選択します。 **[!UICONTROL ID 名前空間を選択]** モーダルを開くためのフィールド
-1. を選択します。 `Luma Loyalty Id` 名前空間
-1. 次に、 `loyaltyId` の値をデータセットから取得します。  `5625458`
-1. 選択 **[!UICONTROL 表示]**
-   ![データセットからのプロファイルの確認](assets/ingestion-loyalty-profile.png)
+1. 左側のナビゲーションの **[!UICONTROL プロファイル]** に移動します
+1. **[!UICONTROL ID 名前空間を選択]** フィールドの横にあるアイコンを選択して、モーダルを開きます
+1. `Luma Loyalty Id` 名前空間を選択
+1. 次に、データセットから `loyaltyId` のいずれかの値を入力します `5625458`
+1. **[!UICONTROL 表示]** を選択します。
+   ![ データセットからのプロファイルを確認 ](assets/ingestion-loyalty-profile.png)
 
 #### データ取り込みイベントを使用した検証
 
-前のレッスンでデータ取得イベントを購読した場合は、一意の webhook.site URL を確認します。 3 つのリクエストが次の順序で表示され、その間に時間が経過すると、以下のように表示されます。 `eventCode` 値：
+前のレッスンでデータ取り込みイベントを購読している場合は、一意の webhook.site URL を確認します。 3 つのリクエストが次の順序で表示され、その間に時間が置かれ、次の `eventCode` 値が表示されます。
 
-1. `ing_load_success` — 取り込まれたバッチ
-1. `ig_load_success` — バッチが id グラフに取り込まれました。
-1. `ps_load_success` — バッチがプロファイルサービスに取り込まれました。
+1. `ing_load_success` – 取り込まれたバッチ
+1. `ig_load_success` - バッチが ID グラフに取り込まれました
+1. `ps_load_success` - バッチがプロファイルサービスに取り込まれました
 
-![データ取り込み Webhook](assets/ingestion-loyalty-webhook.png)
+![ データ取得 Webhook](assets/ingestion-loyalty-webhook.png)
 
-詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) を参照してください。
+通知について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) を参照してください。
 
-## Platform API を使用したバッチでのデータの取得
+## Platform API を使用したデータのバッチ取り込み
 
 次に、API を使用してデータをアップロードします。
 
 >[!NOTE]
 >
->データアーキテクトは、ユーザーインターフェイスメソッドを使用して CRM データを自由にアップロードできます。
+>データアーキテクトは、ユーザーインターフェイスを使用して CRM データを自由にアップロードできます。
 
-### データをダウンロードして準備する
+### データのダウンロードと準備
 
-1. 既にダウンロードおよび解凍されているはずです。 [luma-data.zip](assets/luma-data.zip) を `Luma Tutorial Assets` フォルダー。
-2. 開く `luma-crm.json` テキストエディター内で、 `_techmarketingdemos` スキーマに表示される、独自のアンダースコアテナント id を使用します。
-3. 更新したファイルを保存します。
+1. [luma-data.zip](assets/luma-data.zip) を既にダウンロードして、`Luma Tutorial Assets` フォルダーに解凍している必要があります。
+2. テキストエディターで `luma-crm.json` を開き、`_techmarketingdemos` のすべてのインスタンスを、スキーマに表示される独自のアンダースコア – テナント id に置き換えます
+3. 更新したファイルを保存します
 
-### データセット ID を取得する
+### データセット ID の取得
 
-まず、データの取り込み先のデータセットのデータセット ID を取得します。
+まず、データを取り込むデータセットのデータセット ID を取得します。
 
-1. オープン [!DNL Postman]
-1. アクセストークンがない場合は、リクエストを開きます。 **[!DNL OAuth: Request Access Token]** を選択し、 **送信** をクリックして、 [!DNL Postman] レッスン。
-1. 環境変数を開き、 **CONTAINER_ID** まだ `tenant`
-1. リクエストを開く **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** を選択し、 **送信**
-1. 以下を受け取る必要があります。 `200 OK` 応答
-1. の ID をコピーします。 `Luma CRM Dataset` 応答本文から
-   ![データセット ID を取得する](assets/ingestion-crm-getDatasetId.png)
+1. Open [!DNL Postman]
+1. アクセストークンがない場合は、[!DNL Postman] のレッスンと同様に、リクエスト **[!DNL OAuth: Request Access Token]** を開き、「**送信**」を選択して新しいアクセストークンをリクエストします。
+1. 環境変数を開き、**CONTAINER_ID** の値がまだ `tenant` であることを確認します
+1. リクエスト **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** を開き、「**送信**」を選択します。
+1. `200 OK` しい応答が返されます
+1. 応答本文から `Luma CRM Dataset` の ID をコピーします
+   ![ データセット ID の取得 ](assets/ingestion-crm-getDatasetId.png)
 
 ### バッチの作成
 
-次に、データセット内にバッチを作成します。
+これで、データセットにバッチを作成できます。
 
-1. ダウンロード [データ取得 API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json) を `Luma Tutorial Assets` フォルダー
-1. コレクションの読み込み先 [!DNL Postman]
-1. リクエストを選択 **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]**
-1. 以下を **本文** リクエストの ***datasetId 値を独自の値に置き換える***:
+1. [ データ取得 API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json) を `Luma Tutorial Assets` フォルダーにダウンロードします
+1. コレクションの [!DNL Postman] への読み込み
+1. リクエスト **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]** を選択
+1. 次をリクエストの **本文** として貼り付けます。***datasetId の値を独自の値に置き換えます***。
 
    ```json
    {
@@ -161,187 +161,187 @@ Adobe Analytics の [権限の設定](configure-permissions.md) レッスンで�
    }
    ```
 
-1. を選択します。 **送信** ボタン
-1. 新しいバッチの ID を含む 201 作成済みの応答が返されます。
-1. をコピーします。 `id` 新しいバッチの
-   ![バッチ作成済み](assets/ingestion-crm-createBatch.png)
+1. 「**送信** ボタンを選択します
+1. 新しいバッチの ID を含んだ、201 Created レスポンスが得られます。
+1. 新しいバッチの `id` をコピー
+   ![ バッチが作成されました ](assets/ingestion-crm-createBatch.png)
 
 ### データの取り込み
 
-これで、データをバッチにアップロードできます。
+データをバッチにアップロードできるようになりました。
 
-1. リクエストを選択 **[!DNL Data Ingestion API > Batch Ingestion > Upload a file to a dataset in a batch.]**
-1. Adobe Analytics の **パラメーター** 「 」タブで、データセット id とバッチ id をそれぞれのフィールドに入力します。
-1. Adobe Analytics の **パラメーター** タブ、入力 `luma-crm.json` として **filePath**
-1. Adobe Analytics の **本文** タブで、 **バイナリ** オプション
-1. ダウンロードした `luma-crm.json` ローカルから `Luma Tutorial Assets` フォルダー
-1. 選択 **送信** 応答本文に「1」が含まれる 200 OK 応答が返されます。
+1. リクエスト **[!DNL Data Ingestion API > Batch Ingestion > Upload a file to a dataset in a batch.]** を選択
+1. 「**パラメーター**」タブで、データセット ID とバッチ ID をそれぞれのフィールドに入力します
+1. 「**Params**」タブで、**filePath** として `luma-crm.json` と入力します
+1. 「**本文**」タブで「**binary**」オプションを選択します。
+1. ダウンロードした `luma-crm.json` をローカルの `Luma Tutorial Assets` フォルダーから選択します
+1. **送信** を選択すると、応答本文に「1」が含まれる 200 OK の応答が返されます
 
-   ![アップロードされたデータ](assets/ingestion-crm-uploadFile.png)
+   ![ データがアップロードされました ](assets/ingestion-crm-uploadFile.png)
 
-この時点で、Platform ユーザーインターフェイスでバッチを確認すると、そのバッチが「[!UICONTROL 読み込み]&quot;ステータス：
-![バッチ読み込み](assets/ingestion-crm-loading.png)
+この時点で、Platform ユーザーインターフェイスでバッチを見ると、「[!UICONTROL  読み込み中 ]」ステータスであることがわかります。
+![ バッチ読み込み ](assets/ingestion-crm-loading.png)
 
-Batch API は多くの場合、複数のファイルのアップロードに使用されるので、バッチが完了したら Platform に通知する必要があります。これは、次の手順でおこないます。
+Batch API は複数のファイルをアップロードするためによく使用されるので、バッチが完了したら Platform に通知する必要があります。次の手順でこれを行います。
 
-### バッチを完了
+### バッチの完了
 
-バッチを完了するには、次の手順に従います。
+バッチを完了する手順は、次のとおりです。
 
-1. リクエストを選択 **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]**
-1. Adobe Analytics の **パラメーター** タブ、入力 `COMPLETE` として **アクション**
-1. Adobe Analytics の **パラメーター** 「 」タブで、バッチ id を入力します。 データセット ID や filePath が存在する場合は、心配しないでください。
-1. POSTの URL が `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` そして、 `datasetId` または `filePath`
-1. 選択 **送信** 応答本文に「1」が含まれる 200 OK 応答が返されます。
+1. リクエスト **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]** を選択
+1. 「**パラメーター**」タブで、**アクション** として `COMPLETE` と入力します
+1. 「**パラメーター**」タブで、バッチ ID を入力します。 データセット ID や filePath （存在する場合）について心配する必要はありません。
+1. POSTの URL が `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` であり、`datasetId` または `filePath` への不要な参照がないことを確認します
+1. **送信** を選択すると、応答本文に「1」が含まれる 200 OK の応答が返されます
 
-   ![バッチ完了](assets/ingestion-crm-complete.png)
+   ![ バッチ完了 ](assets/ingestion-crm-complete.png)
 
 ### データの検証
 
 #### Platform ユーザーインターフェイスでの検証
 
-データが Loyalty データセットと同様に、Platform ユーザーインターフェイスにランディングしたことを検証します。
+ロイヤルティデータセットの場合と同様に、データが Platform ユーザーインターフェイスに表示されたことを検証します。
 
-まず、バッチで、1000 件のレコードが取り込まれたことを確認します。
+まず、バッチが、1,000 件のレコードが取り込まれたことを示していることを確認します。
 
-![バッチ成功](assets/ingestion-crm-success.png)
+![ バッチ成功 ](assets/ingestion-crm-success.png)
 
-次に、プレビューデータセットを使用してバッチを確認します。
+次に、データセットをプレビューを使用してバッチを確認します。
 
-![バッチプレビュー](assets/ingestion-crm-preview.png)
+![ バッチプレビュー ](assets/ingestion-crm-preview.png)
 
-最後に、 `Luma CRM Id` 名前空間など `112ca06ed53d3db37e4cea49cc45b71e`
+最後に、`Luma CRM Id` 名前空間でプロファイルの 1 つを検索して（例：`112ca06ed53d3db37e4cea49cc45b71e`）、いずれかのプロファイルが作成されたことを確認します。
 
-![取り込まれたプロファイル](assets/ingestion-crm-profile.png)
+![ 取り込まれたプロファイル ](assets/ingestion-crm-profile.png)
 
-私が指摘したいことが一つ起こったところで面白い事があります。 開ける `Danny Wright` プロファイル。 プロファイルには `Lumacrmid` および `Lumaloyaltyid`. 次を記憶する： `Luma Loyalty Schema` には、Luma ロイヤリティ ID と CRM ID の 2 つの ID フィールドが含まれていました。 両方のデータセットをアップロードし、1 つのプロファイルに結合しました。 ロイヤリティデータには `Daniel` を名、を自宅住所として「New York City」、を CRM データには `Danny` を名として `Portland` を同じ Loyalty Id を持つ顧客の自宅住所として使用します。 ファーストネームが表示される理由に戻ります `Danny` （結合ポリシーに関するレッスン）
+ちょうど今起こったことに関して、一つ興味深い点を指摘したい。 その `Danny Wright` プロファイルを開きます。 プロファイルには、`Lumacrmid` と `Lumaloyaltyid` の両方があります。 `Luma Loyalty Schema` には、Luma ロイヤルティ ID と CRM ID の 2 つの ID フィールドが含まれていることに注意してください。 両方のデータセットをアップロードしたので、単一のプロファイルに結合しました。 ロイヤルティデータには `Daniel` が名で、自宅住所には「ニューヨーク市」が設定されているのに対して、CRM データには `Danny` が名、`Portland` が同じロイヤルティ ID を持つ顧客の自宅住所として設定されています。 最初の名前が結合ポリシーのレッスンで `Danny` と表示される理由に戻ります。
 
-おめでとうございます。プロファイルがマージされました。
+プロファイルが結合されました。
 
-![結合されたプロファイル ](assets/ingestion-crm-profileLinkedIdentities.png)
+![ プロファイル結合 ](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### データ取り込みイベントを使用した検証
 
-前のレッスンでデータ取得イベントを購読した場合は、一意の webhook.site URL を確認します。 次の 3 つのリクエストが、ロイヤルティデータと同様に送信されます。
+前のレッスンでデータ取り込みイベントを購読している場合は、一意の webhook.site URL を確認します。 ロイヤルティデータと同様に、次の 3 つのリクエストが送信されます。
 
-![データ取り込み Webhook](assets/ingestion-crm-webhook.png)
+![ データ取得 Webhook](assets/ingestion-crm-webhook.png)
 
-詳しくは、 [ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) を参照してください。
+通知について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) を参照してください。
 
-## ワークフローを使用したデータの取り込み
+## ワークフローでのデータの取り込み
 
-別のデータアップロード方法を見てみましょう。 ワークフロー機能を使用すると、XDM でまだモデル化されていない CSV データを取り込むことができます。
+データをアップロードする別の方法を見てみましょう。 ワークフロー機能を使用すると、XDM でまだモデル化されていない CSV データを取り込むことができます。
 
-### データをダウンロードして準備する
+### データのダウンロードと準備
 
-1. 既にダウンロードおよび解凍されているはずです。 [luma-data.zip](assets/luma-data.zip) を `Luma Tutorial Assets` フォルダー。
-1. 次の条件を満たしていることを確認します。`luma-products.csv`
+1. [luma-data.zip](assets/luma-data.zip) を既にダウンロードして、`Luma Tutorial Assets` フォルダーに解凍している必要があります。
+1. 次の確認を行います `luma-products.csv`
 
-### ワークフローを作成
+### ワークフローの作成
 
 次に、ワークフローを設定します。
 
-1. に移動します。 **[!UICONTROL ワークフロー]** 左のナビゲーションで
-1. 選択 **[!UICONTROL CSV を XDM スキーマにマッピング]** をクリックし、 **[!UICONTROL Launch]** ボタン
-   ![ワークフローを起動](assets/ingestion-products-launchWorkflow.png)
-1. を選択します。 `Luma Product Catalog Dataset` をクリックし、 **[!UICONTROL 次へ]** ボタン
-   ![データセットを選択](assets/ingestion-products-selectDataset.png)
-1. 次を追加： `luma-products.csv` ダウンロードしたファイルを選択し、 **[!UICONTROL 次へ]** ボタン
-   ![データセットを選択](assets/ingestion-products-selectData.png)
-1. これで、マッパーインターフェイスに入り、ソースデータからフィールドをマッピングできます ( `luma-products.csv` ファイル ) をターゲットスキーマの XDM フィールドに追加します。 この例では、列名は、マッパーで適切なマッピングを自動検出できるスキーマフィールド名に十分近いものです。 マッパーで正しいフィールドが自動検出できなかった場合は、ターゲットフィールドの右側にあるアイコンを選択して、正しい XDM フィールドを選択します。 また、CSV から列の 1 つを取り込まない場合は、マッパーから行を削除できます。 自由に操作して、 `luma-products.csv` を参照してください。
-1. を選択します。 **[!UICONTROL 完了]** ボタン
-   ![データセットを選択](assets/ingestion-products-mapper.png)
+1. 左側のナビゲーションで **[!UICONTROL ワークフロー]** に移動します
+1. 「**[!UICONTROL CSV を XDM スキーマにマッピング]**」を選択し、「**[!UICONTROL 起動]**」ボタンを選択します
+   ![ ワークフローの起動 ](assets/ingestion-products-launchWorkflow.png)
+1. `Luma Product Catalog Dataset` を選択し、「**[!UICONTROL 次へ]** ボタンを選択します
+   ![ データセットを選択 ](assets/ingestion-products-selectDataset.png)
+1. ダウンロードした `luma-products.csv` ファイルを追加し、「**[!UICONTROL 次へ]**」ボタンを選択します
+   ![ データセットを選択 ](assets/ingestion-products-selectData.png)
+1. マッパーインターフェイスが表示され、ソースデータ（`luma-products.csv` ファイル内の列名の 1 つ）からターゲットスキーマの XDM フィールドにフィールドをマッピングできます。 この例では、列名はスキーマフィールド名に十分に近く、マッパーは適切なマッピングを自動検出できます。 マッパーが適切なフィールドを自動検出できなかった場合は、ターゲットフィールドの右側にあるアイコンを選択して、正しい XDM フィールドを選択します。 また、CSV から列の 1 つを取り込まない場合は、マッパーから行を削除できます。 マッパーの仕組みを理解するために、`luma-products.csv` の列見出しを変更したり、自由に再生したりできます。
+1. 「**[!UICONTROL 終了]**」ボタンを選択します
+   ![ データセットを選択 ](assets/ingestion-products-mapper.png)
 
 ### データの検証
 
-バッチがアップロードされたら、データセットをプレビューしてアップロードを検証します。
+バッチがアップロードされたら、データセットをプレビューして、アップロードを確認します。
 
-以降 `Luma Product SKU` は人以外の名前空間で、製品 sku のプロファイルは表示されません。
+`Luma Product SKU` は非人物の名前空間なので、製品 SKU のプロファイルは表示されません。
 
-Webhook に対する 3 つのヒットが表示されます。
+Webhook に 3 つのヒットが表示されます。
 
 ## ソースを含むデータの取り込み
 
-よし、君は難しい方法で物事を行った。 さあ、約束の地に移ろう _自動_ バッチ取得！ 「設定して！」と言うと 「忘れろ！」と言うのです 「設定して！」 「忘れろ！」 「設定して！」 「忘れろ！」 冗談だけど、そんなことは絶対にしない！ はい、仕事に戻ります。 もう少しで終わりです。
+まあ、君は物事を難しい方法でやった。 次に、約束された _自動バッチ取り込み_ の国に進みましょう。 私が「設定」と言うとき、 あなたは「忘れなさい」と言うでしょう。 「始めて！」 「忘れろ！」 「始めて！」 「忘れろ！」 冗談よ、そんなこと、絶対にしないわよ。 はい、仕事に戻りなさい。 もうすぐ終わりです。
 
-に移動します。 **[!UICONTROL ソース]** 左側のナビゲーションで、「ソース」カタログを開きます。 ここでは、業界をリードするデータプロバイダーおよびストレージプロバイダーとの、標準搭載された様々な統合について説明します。
+左側のナビゲーションで **[!UICONTROL ソース]** に移動し、ソースカタログを開きます。 ここでは、業界をリードするデータおよびストレージプロバイダーとの様々な標準搭載の統合を確認できます。
 
-![ソースカタログ](assets/ingestion-offline-sourceCatalog.png)
+![Source カタログ ](assets/ingestion-offline-sourceCatalog.png)
 
-ソースコネクタを使用してデータを取り込みましょう。
+では、ソースコネクタを使用してデータを取り込みましょう。
 
-この練習は、自分の冒険スタイルを選ぶことになります。 FTP ソースコネクタを使用したワークフローを表示します。 会社で使用する別のクラウドストレージソースコネクタを使用することも、ロイヤルティデータと同様に、データセットユーザーインターフェイスを使用して json ファイルをアップロードすることもできます。
+この演習は、自分の冒険スタイルを選択します。 FTP ソースコネクタを使用したワークフローを表示します。 会社で使用している別のクラウドストレージソースコネクタを使用するか、ロイヤルティデータと同様に、データセット ユーザーインターフェイスを使用して json ファイルをアップロードできます。
 
-多くのソースには同様の設定ワークフローがあり、次のような設定ワークフローがあります。
+多くのソースには同様の設定ワークフローがあり、次のような特徴があります。
 
-1. 認証の詳細を入力
-1. 取り込むデータを選択
-1. 取り込む Platform データセットを選択します。
+1. 認証詳細を入力
+1. 取得するデータを選択します
+1. 取り込み先の Platform データセットを選択します
 1. フィールドを XDM スキーマにマッピングします
-1. その場所からデータを再取り込みする頻度を選択します
+1. その場所からデータを取得する頻度を選択します
 
 >[!NOTE]
 >
->この演習で使用するオフライン購入データには、日時データが含まれています。 日時データは次のいずれかにする必要があります [ISO 8061 形式の文字列](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000～08:00&quot;) または Unix 時間 ( ミリ秒 (1531263959000) で書式設定され、取得時にターゲット XDM タイプに変換されます。 データ変換およびその他の制約について詳しくは、 [バッチ取得 API のドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
+>この演習で使用するオフライン購入データには、日時データが含まれています。 日時データは、[ISO 8061 形式の文字列 ](https://www.iso.org/iso-8601-date-and-time-format.html) （&quot;2018-07-10T15:05:59.000-08:00&quot;）またはミリ秒単位の Unix 時間（1531263959000）で指定する必要があり、取り込み時にターゲット XDM タイプに変換されます。 データ変換およびその他の制約について詳しくは、[ バッチ取り込み API ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types) を参照してください。
 
-### データをダウンロード、準備、および目的のクラウドストレージベンダーにアップロード
+### データをダウンロード、準備、目的のクラウドストレージベンダーにアップロードします。
 
-1. 既にダウンロードおよび解凍されているはずです。 [luma-data.zip](assets/luma-data.zip) を `Luma Tutorial Assets` フォルダー。
-1. 開く `luma-offline-purchases.json` テキストエディター内で、 `_techmarketingdemos` スキーマに表示される、独自のアンダースコアテナント id を使用します。
-1. 過去 1 か月のイベントが発生するように、すべてのタイムスタンプを更新します ( 例： `"timestamp":"2022-06` とを置き換えます )。
-1. ご希望のクラウドストレージプロバイダーを選択し、 [!UICONTROL ソース] カタログ
-1. アップロード `luma-offline-purchases.json` を、お使いのクラウドストレージプロバイダー内の場所に追加します。
+1. [luma-data.zip](assets/luma-data.zip) を既にダウンロードして、`Luma Tutorial Assets` フォルダーに解凍している必要があります。
+1. テキストエディターで `luma-offline-purchases.json` を開き、`_techmarketingdemos` のすべてのインスタンスを、スキーマに表示される独自のアンダースコア – テナント id に置き換えます
+1. 先月にイベントが発生するようにすべてのタイムスタンプを更新します（例えば、`"timestamp":"2022-06` を検索して年と月を置き換える）
+1. [!UICONTROL  ソース ] カタログで使用できることを確認して、希望するクラウドストレージプロバイダーを選択します
+1. `luma-offline-purchases.json` を希望のクラウドストレージプロバイダーの場所にアップロードします
 
-### データを目的のクラウドストレージの場所に取り込む
+### 目的のクラウドストレージの場所にデータを取り込みます
 
-1. Platform ユーザーインターフェイスで、 [!UICONTROL ソース] カタログを次に **[!UICONTROL クラウドストレージ]**
-1. 以下のドキュメントに便利なリンクがあることに注意してください。 `...`
-1. お使いのクラウドストレージベンダーのボックスで、 **[!UICONTROL 設定]** ボタン
-   ![設定を選択](assets/ingestion-offline-selectFTP.png)
-1. **[!UICONTROL 認証]** が最初のステップです。 アカウントの名前を入力します（例： ）。 `Luma's FTP Account` および認証の詳細。 この手順は、すべてのクラウドストレージソースに対してかなり似ている必要がありますが、フィールドは若干異なる場合があります。 アカウントの認証の詳細を入力した後は、同じアカウント内の他のファイルと異なるスケジュールで異なるデータを送信する他のソース接続で、それらを再利用できます
-1. を選択します。 **[!UICONTROL ソースに接続ボタン]**
-1. Platform がソースに正常に接続したら、 **[!UICONTROL 次へ]** ボタン
-   ![ソースに対する認証](assets/ingestion-offline-authentication.png)
+1. Platform ユーザーインターフェイスで、[!UICONTROL Sources] カタログを **[!UICONTROL Cloud Storage]** にフィルタリングします
+1. `...` の下にはドキュメントへの便利なリンクがあります
+1. 目的のクラウドストレージベンダーのボックスで、「**[!UICONTROL 設定]**」ボタンを選択します
+   ![ 設定を選択 ](assets/ingestion-offline-selectFTP.png)
+1. **[!UICONTROL 認証]** は最初の手順です。 アカウントの名前（`Luma's FTP Account` や認証の詳細など）を入力します。 この手順は、すべてのクラウドストレージソースでほぼ同じですが、フィールドが若干異なる場合があります。 アカウントの認証の詳細を入力したら、同じアカウント内の他のファイルから異なるスケジュールで異なるデータを送信している可能性のある他のソース接続に対して、その詳細を再利用できます
+1. 「**[!UICONTROL ソースに接続]**」ボタンを選択します。
+1. Platform がSourceに正常に接続されたら、「**[!UICONTROL 次へ]**」ボタンを選択します
+   ![ ソースに対する認証 ](assets/ingestion-offline-authentication.png)
 
-1. 次の日： **[!UICONTROL データを選択]** 手順を実行すると、ユーザーインターフェイスは資格情報を使用してクラウドストレージソリューション上のフォルダーを開きます
-1. 取り込むファイルを選択します（例： ）。 `luma-offline-purchases.json`
-1. を **[!UICONTROL データフォーマット]**&#x200B;を選択します。 `XDM JSON`
-1. その後、ファイル内の json 構造とサンプルデータをプレビューできます
-1. を選択します。 **[!UICONTROL 次へ]** ボタン
-   ![データファイルを選択](assets/ingestion-offline-selectData.png)
+1. **[!UICONTROL データを選択]** 手順で、ユーザーインターフェイスは資格情報を使用してクラウドストレージソリューション上のフォルダーを開きます
+1. 取り込むファイルを選択します（例：`luma-offline-purchases.json`）。
+1. **[!UICONTROL データ形式]** として、「`XDM JSON`」を選択します
+1. その後、ファイルで JSON 構造とサンプルデータをプレビューできます
+1. 「**[!UICONTROL 次へ]**」ボタンを選択します
+   ![ データファイルを選択 ](assets/ingestion-offline-selectData.png)
 
-1. 次の日： **[!UICONTROL マッピング]** ステップ、 `Luma Offline Purchase Events Dataset` をクリックし、 **[!UICONTROL 次へ]** 」ボタンをクリックします。 取り込むデータは JSON ファイルなので、ソースフィールドをターゲットフィールドにマッピングするマッピング手順はありません。 JSON データは既に XDM に存在する必要があります。 CSV を取り込むと、この手順で完全マッピングユーザーインターフェイスが表示されます。
-   ![データセットを選択](assets/ingestion-offline-mapping.png)
-1. 次の日： **[!UICONTROL スケジュール]** 手順では、ソースからデータを再取り込みする頻度を選択します。 しばらく時間をかけて、オプションを確認します。 取り込みは 1 回だけなので、 **[!UICONTROL 頻度]** オン **[!UICONTROL 1 回]** をクリックし、 **[!UICONTROL 次へ]** ボタン：
-   ![データフローのスケジュール設定](assets/ingestion-offline-scheduling.png)
-1. 次の日： **[!UICONTROL データフローの詳細]** 手順では、データフローの名前を選択し、オプションの説明を入力し、エラー診断をオンにし、部分取り込みをおこなうことができます。 設定をそのままにし、「 **[!UICONTROL 次へ]** ボタン：
-   ![データフローの詳細を編集](assets/ingestion-offline-detail.png)
-1. 次の日： **[!UICONTROL レビュー]** 手順を実行すると、すべての設定を一緒に確認し、編集するか、 **[!UICONTROL 完了]** ボタン
-1. 保存すると、次のような画面が表示されます。
-   ![Complete](assets/ingestion-offline-complete.png)
+1. **[!UICONTROL マッピング]** ステップで、`Luma Offline Purchase Events Dataset` を選択して「**[!UICONTROL 次へ]**」ボタンを選択します。 のメッセージでは、取り込むデータは JSON ファイルなので、ソースフィールドをターゲットフィールドにマッピングするマッピング手順はありません。 JSON データは、既に XDM 内にある必要があります。 CSV を取り込む場合、この手順の完全なマッピングユーザーインターフェイスが表示されます。
+   ![ データセットを選択 ](assets/ingestion-offline-mapping.png)
+1. **[!UICONTROL スケジュール]** ステップでは、Sourceからデータを取り込む頻度を選択します。 オプションを確認してください。 1 回限りの取り込みを行うので、**[!UICONTROL Frequency]** を **[!UICONTROL Once]** のままにして、「**[!UICONTROL 次へ]**」ボタンを選択します。
+   ![ データフローのスケジュール設定 ](assets/ingestion-offline-scheduling.png)
+1. **[!UICONTROL データフローの詳細]** ステップでは、データフローの名前の選択、オプションの説明の入力、エラー診断のオン、部分取り込みを行うことができます。 設定をそのままにし、「**[!UICONTROL 次へ]** ボタンを選択します。
+   ![ データフローの詳細の編集 ](assets/ingestion-offline-detail.png)
+1. **[!UICONTROL レビュー]** ステップでは、すべての設定をまとめて確認し、編集するか、「**[!UICONTROL 完了]**」ボタンを選択できます
+1. 保存後、次のような画面が表示されます。
+   ![ 完了 ](assets/ingestion-offline-complete.png)
 
 ### データの検証
 
-バッチがアップロードされたら、データセットをプレビューしてアップロードを検証します。
+バッチがアップロードされたら、データセットをプレビューして、アップロードを確認します。
 
-Webhook に対する 3 つのヒットが表示されます。
+Webhook に 3 つのヒットが表示されます。
 
-値を使用してプロファイルを検索 `5625458` （内） `loyaltyId` 名前空間を再度開き、プロファイルに購入イベントがあるかどうかを確認します。 購入が 1 回表示されます。 購入の詳細を掘り下げるには、 **[!UICONTROL JSON を表示]**:
+`loyaltyId` 名前空間で値 `5625458` のプロファイルを再度検索して、プロファイルに購入イベントがあるかどうかを確認します。 1 つの購入が表示されます。 **[!UICONTROL JSON を表示]** を選択して、購入の詳細を調べることができます。
 
-![プロファイルの購入イベント](assets/ingestion-offline-eventInProfile.png)
+![ プロファイル内の購入イベント ](assets/ingestion-offline-eventInProfile.png)
 
 ## ETL ツール
 
-Adobeは、複数の ETL ベンダーと提携し、Experience Platformへのデータ取り込みをサポートします。 様々なサードパーティベンダーのため、ETL についてはこのチュートリアルでは説明しませんが、以下のリソースの一部を確認することをお勧めします。
+Adobeは、複数の ETL ベンダーと提携して、Experience Platformへのデータ取り込みをサポートしています。 このチュートリアルでは、様々なサードパーティ・ベンダーにより ETL が取り上げられていますが、これらのリソースの一部を確認することは可能です。
 
-* [Adobe Experience Platform 用 ETL 統合の開発](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Informatica Adobe Experience Platform Connector ページ (AdobeExchange)](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Adobe Experience Platform Connector の Informatica ドキュメント](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
-* [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
+* [Adobe Experience Platform用 ETL 統合の開発 ](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [Adobe Exchangeの Informatica Adobe Experience Platform Connector ページ ](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
+* [Adobe Experience Platform Connector の Informatica ドキュメント ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
+* [[!DNL Snaplogic] Adobe Experience Platformスナップパック ](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## その他のリソース
 
-* [バッチ取り込みドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [ バッチ取り込みのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [バッチ取り込み API リファレンス](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-次に、 [Web SDK を使用したデータのストリーミング](ingest-streaming-data.md)
+次に、Web SDK を使用してデータを [ ストリーミングしましょう ](ingest-streaming-data.md)

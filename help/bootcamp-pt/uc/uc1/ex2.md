@@ -1,6 +1,6 @@
 ---
-title: Bootcamp — リアルタイム顧客プロファイル — 自分のリアルタイム顧客プロファイルを視覚化 — UI — ブラジル
-description: Bootcamp — リアルタイム顧客プロファイル — 自分のリアルタイム顧客プロファイルを視覚化 — UI — ブラジル
+title: Bootcamp - リアルタイム顧客プロファイル – 独自のリアルタイム顧客プロファイルを視覚化 – UI - ブラジル
+description: Bootcamp - リアルタイム顧客プロファイル – 独自のリアルタイム顧客プロファイルを視覚化 – UI - ブラジル
 jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
@@ -9,67 +9,67 @@ feature: Profiles
 exl-id: 4eebb080-77fd-4162-aa64-d599f1274c93
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 2%
+source-wordcount: '540'
+ht-degree: 1%
 
 ---
 
-# 1.2 seu proprio perfil de cliente em tempo real - UI
+# 1.2 seu próprio perfil de cliente em tempo real の視覚化 – UI
 
-Neste expercício, vocêirá fazer login na Adobe Experience Platform e ビジュアライザー seu próprio Perfil de cliente em tempo real na UI.
+Neste exercício, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
 
-## ヒスタミン
+## ヒストリア
 
-No Perfil do cliente em tempo real, todos dados do perfil são exibidos juntamente com os dados do evento, além das associaçoes de segmentos existentes. Os dados mostrados podem vir de qualquer lugar, de aplicativos daAdobee solçoes externas. Essa a exibição mais poderosa da Adobe Experience Platform, o verdadeiro local do sistema de experiência.
+No Perfil do cliente em tempo real, todos os dados do perfil são exibidos juntamente com os dados do evento, além das associaçóes de segmentos existentes. Os dados mostrados podem vir de qualquer lugar, de aplicativos da Adobe e soluçóes externas. Essa é a exibisão mais poderosa da Adobe Experience Platform, o verdadeiro local do sistema de experiência. エッサ・エ・ア・エシビサン・メイス・ポデローサ・ダ・エシビサはヴェルダデイロの地元の地元の人たちです。
 
-## 1.2.1 ビジュアライゼーションの使用 (perfil do client a Adobe Experience Platform)
+## 1.2.1 Adobe Experience Platformを使う
 
-Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer ログイン， vocêirá acessar a página inicial da Adobe Experience Platform.
+アクセス [Adobe Experience Platform](https://experience.adobe.com/platform)。 Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![データ取得](./images/home.png)
 
-アンテス・デ・コニュナール、ヴォーチェ・プレシャ・セレクショナー・アム **サンドボックス**. 誰かがサンドボックスを選択し、Bootcamp を行うことはありません。 É porivel fazer isso clicando no texto **[!UICONTROL 実稼動版]** ナ・リンハ・アズール・ナ・パルテ・スーペリア・ダ・テラ Depois de selecionar o sandbox apporiado, você verá a tela mudando e agora vocestá em seu [!UICONTROL サンドボックス] 決め手
+Antes de continuar, você precisa selecionar um **sandbox**. Nome do sandbox a ser selecionado é Bootcamp. （ここがサンドボックスです） É possível fazer isso clicando no texto **[!UICONTROL 生産財]** na linha azul na parte superior da tela. Depois de selecionar o sandbox aapriado, você verá a tela mudanddo e agora você está em seu [!UICONTROL sandbox] dedicado.
 
 ![データ取得](./images/sb1.png)
 
-メニューが見つからない、アクセス **プロファイル** e **参照**.
+メニューなし apa esquerda, acesse **プロファイル** e **参照**.
 
-![顧客プロファイル](./images/homemenu.png)
+![ 顧客プロファイル ](./images/homemenu.png)
 
-No painel 視覚化アドールデペルフィルの no seu サイト、vocêpode encontrar visão geral da identidade。 Cada identidade está vinculada a um 名前空間。
+ペネル Visualizador de perfil no seu site, você pode encontrar a visão geral da identidade. ペネル Visualizador de perfil no seu サイトはありません。 Cada identidade está vinculada a um namespace.
 
-![顧客プロファイル](./images/identities.png)
+![ 顧客プロファイル ](./images/identities.png)
 
-No painel 視覚化アドールデペルフィル、agora ヴォーデオーバーマ識別セメランテセギンテ：
+No painel Visualizador de perfil, agora você pode ver uma identidade semelhante a seguinte:
 
 | 名前空間 | ID |
 |:-------------:| :---------------:|
-| Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
+| Experience CloudID （ECID） | 19428085896177382402834560825640259081 |
 
-com a Adobe Experience Platform, todos IDs são igualmente importantes. ID の ECID 時代の前触れは重要ではないコンテキストを daAdobeetodos outros IDs estavam vincluados ao ECID em uma relação hierqua. com a Adobe Experience Platform, isso mudou e cada ID のポードユム・イデンティファドール・プリマリオ。
+Com a Adobe Experience Platform, todos os IDs são igualmente importantes. Anteriormente, o ECID era o ID mais importante no contexto da Adobe e todos os outros IDs estavam vinculados ao ECID em uma relção hierárquica. Com a Adobe Experience Platform, isso mudou e cada ID pode ser considerado um identificador primário.
 
-標準，o identificador primário depende do contexto. Se você perguntar ao seu コールセンター： **ID の Qualé は重要ですか？** エレスはレスポンデランを提供します。 **ヌメロ・デ・テレフォン！** マス・セ・ヴォーペルガンタ・アスア (CRM)、エレス・レスポンデラオ： **endreço de e-mail!** Adobe Experience Platform・エンテンデ・エッサ・コンプレキシダーデ・ゲレンシア・イッソ・パラ・ヴォーチェ。 Cada aplicativo, seja um aplicativo daAdobeou não, se comunicará com a Adobe Experience Platform referindo-se ao ID que consideam principal. 簡単に言えばファンシオナ。
+Normalmente, o identificador primário dependent do contexto. Se você perguntar ao seu コールセンター：**Qual é o ID mais importante?** Eles provavelmente responderão: **o número de telefone!** Mas se você perguntar à sua equipe de CRM, eles responderão: **o endereco de e-mail!** Adobe Experience Platformentende essa complexidade e gerencia isso para você. Cada aplicativo, seja um aplicativo da Adobe ou não, se comunicará com a Adobe Experience Platform referindo-se ao ID que consideram principal. E simplesmente funciona.
 
-パラオカンポ **ID 名前空間**, selecone **ECID** e para o campo **ID 値** insira o ECID の個々のボーカルは、encontrar no painel 視覚化アドール・デ・ペルフィル do サイト do Bootcamp。 クリック **表示**. ボーヴェラ・セウ・ペルフィル・ナ・リスタ。 クリック番号 **プロファイル ID** para abrir seu perfil
+Para o campo **Identity namespace**, selecione **ECID** e para o campo **Identity Value** insira o ECID que você pode encontrar no painel Visualizador de perfil do site do Bootcamp. Em **表示** をクリックします。 ボーシェ ヴェラ セウ ペルフィル ナ リスタ。 Clique no **プロファイル ID** para abrir seu perfil.
 
-![顧客プロファイル](./images/popupecid.png)
+![ 顧客プロファイル ](./images/popupecid.png)
 
-アゴラヴォーテムマヴィサオジェラルデアルガン **アトリブトス・デ・ペルフィル** 輸入人はセウ・ペルフィル・ド・クライアンテを行う。
+アゴラ ボーケ tem uma visão geral de alguns **Atributos de perfil** importantes do seu perfil de cliente.
 
-![顧客プロファイル](./images/profile.png)
+![ 顧客プロファイル ](./images/profile.png)
 
-Acesse **イベント**, onde vocede ver as entradas de cada evento de experiência vinculado seu Perfil
+Acesse **イベント**, onde você pode ver as entradas de cada evento de experiêência vinculado ao seu Perfil.
 
-![顧客プロファイル](./images/profileee.png)
+![ 顧客プロファイル ](./images/profileee.png)
 
-por フィルム、opção de メニューにアクセス **セグメントのメンバーシップ**. アゴラヴォクラ・トドス・セグメントス・ケ・クァリフィカム・パラ・エステ・ペルフィル。
+Por fim, acesse a opção de menu **セグメントメンバーシップ**. Agora você verá todos os segmentos que se qualificam para este perfil.（アゴラ・ボーケ・ヴェラ・トドス・オース・セグメントス・ケ・セ・クアリフィカム・パラエステ・ペルフィル）
 
-![顧客プロファイル](./images/profileseg.png)
+![ 顧客プロファイル ](./images/profileseg.png)
 
-アゴラヴァモスクリアルムノヴォセグメントクペリティラクワクワクワクは、エクスペリエンスをパーソナライズする periência d cliente para cliente anonimo ou conhecido。
+Agora vamos criar um novo segmento que permitirá que você a personalization a experiêência do cliente para um cliente anônimo ou conhecido.（アゴラ・ヴァモス・クリアール・ノヴォ・セグメント・ケ・ペルミティラ・ケ・ボーケ・ボーケ）
 
-プロクシマエタパ： [1.3 Crieum segmento - UI](./ex3.md)
+Próxima etapa: [1.3 Crie um segmento - UI](./ex3.md)
 
-[レトルナルパラフルクソデウサリオ 1](./uc1.md)
+[レトルナル パラ フルクソ デ ウスアリオ 1](./uc1.md)
 
-[レトルナーパラトドスオスモドゥロス](../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](../../overview.md)

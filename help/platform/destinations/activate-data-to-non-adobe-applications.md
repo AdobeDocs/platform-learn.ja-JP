@@ -1,6 +1,6 @@
 ---
-title: 非アプリケーションに対するデータのAdobe化
-description: AdobeのReal-Time CDPが、オーディエンスに対する真のパーソナライゼーション戦略を作成するだけでなく、Microsoft、Google、Facebookの既存のエコシステムおよび非Adobeアプリケーションにどのように折り畳まれるかを説明します。
+title: Adobe以外のアプリケーションに対するデータのアクティブ化
+description: AdobeのReal-Time CDPを使用して、オーディエンスとの真のパーソナライゼーション戦略を構築できるだけでなく、既存のエコシステムやMicrosoft、Google、Facebookなどの非Adobeアプリケーションにどのように折り込まれるかを説明します。
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ---
 
-# 非アプリケーションに対するデータのAdobe化 Web セミナー
+# Adobe以外のアプリケーションへのデータのアクティベートウェビナー
 
-このウェビナーでは、AdobeのReal-Time CDPが、オーディエンスに対する真のパーソナライゼーション戦略を作成するだけでなく、Microsoft、Google、Facebookの既存のエコシステムおよび非Adobeアプリケーションにどのように折り畳むかを示します。
+このウェビナーでは、AdobeのReal-Time CDPが、オーディエンスと真のパーソナライゼーション戦略を築くだけでなく、Microsoft、Google、Facebookの既存のエコシステムおよび非Adobeアプリケーションにどのように折り込まれるかを示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331022/?learn=on)
 

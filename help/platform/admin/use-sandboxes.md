@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # サンドボックスの使用
 
-Experience Platformサンドボックスが、新規または既存の機能を試し、「フェイルファースト」アプローチで動作する独立した環境を提供する仕組みについて説明します。 開発環境をリセットおよび再起動し、API 呼び出しでサンドボックスを使用する方法を説明します。 詳しくは、 [サンドボックスユーザーガイド](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja).
+Experience Platformサンドボックスが、新規または既存の機能を試し、「フェイルファースト」アプローチで動作する独立した環境を提供する仕組みについて説明します。 開発環境をリセットおよび再起動し、API 呼び出しでサンドボックスを使用する方法を説明します。 詳しくは、[ サンドボックスユーザーガイド ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
 

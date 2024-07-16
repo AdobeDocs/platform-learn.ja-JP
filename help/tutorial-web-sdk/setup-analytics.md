@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Adobe Experience Platform Web SDK を使用したAdobe Analyticsの設定
 
-を使用したAdobe Analyticsの設定方法を説明します [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)を選択し、タグルールを作成して Analytics にデータを送信し、Adobe Analyticsが期待どおりにデータをキャプチャしていることを検証します。
+[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview) を使用してAdobe Analyticsを設定する方法、Adobe Analyticsにデータを送信するタグルールを作成する方法、Analytics が期待どおりにデータをキャプチャしていることを検証する方法について説明します。
 
-[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics) は、顧客を人物として理解し、顧客インテリジェンスを使用してビジネスを導く力を与える、業界をリードするアプリケーションです。
+[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics) は業界をリードするアプリケーションであり、ユーザーとして顧客を理解し、顧客インテリジェンスを活用してビジネスを導くことができます。
 
-![Web SDK からAdobe Analyticsへの図](assets/dc-websdk-aa.png)
+![Web SDK からAdobe Analyticsへの図 ](assets/dc-websdk-aa.png)
 
 ## 学習目標
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * Adobe Analyticsに詳しく、アクセスできます。
 
-* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合、 [作成してください](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合は [ 作成してください ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
 
@@ -43,23 +43,23 @@ ht-degree: 1%
 
 Platform Web SDK は、web サイトから Platform Edge Networkにデータを送信します。 次に、データストリームは、データの送信先のAdobe Analytics レポートスイートを Platform Edge Networkに伝えます。
 
-1. に移動 [データ収集](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイス
-1. 左側のナビゲーションで「」を選択します **[!UICONTROL データストリーム]**
-1. 以前に作成したを選択します `Luma Web SDK: Development Environment` データストリーム
+1. [ データ収集 ](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイスに移動
+1. 左側のナビゲーションで「**[!UICONTROL データストリーム]**」を選択します
+1. 以前に作成した `Luma Web SDK: Development Environment` データストリームを選択します
 
-   ![Luma Web SDK データストリームを選択](assets/datastream-luma-web-sdk-development.png)
+   ![Luma Web SDK データストリームを選択します ](assets/datastream-luma-web-sdk-development.png)
 
-1. を選択 **[!UICONTROL サービスを追加]**
-   ![データストリームへのサービスの追加](assets/datastream-analytics-addService.png)
-1. を選択 **[!UICONTROL Adobe Analytics]** as the **[!UICONTROL サービス]**
-1. を入力 **[!UICONTROL レポートスイート ID]** 開発レポートスイートの
-1. を選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL サービスを追加]**」を選択します。
+   ![ データストリームへのサービスの追加 ](assets/datastream-analytics-addService.png)
+1. **[!UICONTROL Adobe Analytics]** を **[!UICONTROL サービス]** として選択
+1. 開発レポートスイートの **[!UICONTROL レポートスイート ID]** を入力します
+1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![データストリーム保存分析](assets/datastream-add-analytics.png)
+   ![ データストリーム保存分析 ](assets/datastream-add-analytics.png)
 
    >[!TIP]
    >
-   >選択によるその他のレポートスイートの追加 **[!UICONTROL レポートスイートの追加]** は、マルチスイートタグ付けと同等です。
+   >**[!UICONTROL レポートスイートを追加]** を選択してさらにレポートスイートを追加することは、複数のスイートタグ付けと同等です。
 
 >[!WARNING]
 >
@@ -70,17 +70,17 @@ Platform Web SDK は、web サイトから Platform Edge Networkにデータを�
 Web SDK 実装で Analytics 変数を設定する方法はいくつかあります。
 
 1. XDM フィールドの Analytics 変数への自動マッピング（自動）。
-1. でのフィールドの設定 `data` オブジェクト （推奨）。
+1. `data` オブジェクトにフィールドを設定します（推奨）。
 1. XDM フィールドを Analytics 処理ルールの Analytics 変数にマッピングします（推奨されなくなりました）。
 1. XDM スキーマで Analytics 変数に直接マッピングします（推奨されなくなりました）。
 
-2024 年 5 月をもって、Platform Web SDK を使用してAdobe Analyticsを実装するための XDM スキーマを作成する必要がなくなりました。 この `data` オブジェクト （および `data.variable` で作成したデータ要素 [データ要素の作成](create-data-elements.md) レッスン）を使用すると、すべてのカスタム Analytics 変数を設定できます。 データオブジェクトでこれらの変数を設定すると、既存の Analytics のお客様がよく知ることができ、処理ルールインターフェイスを使用するよりも効率的で、リアルタイム顧客プロファイルで不要なデータが領域を占有するのを防ぐことができます（Real-time Customer Data PlatformまたはJourney Optimizerを使用している場合に重要です）。
+2024 年 5 月をもって、Platform Web SDK を使用してAdobe Analyticsを実装するための XDM スキーマを作成する必要がなくなりました。 `data` オブジェクト（および [ データ要素の作成 ](create-data-elements.md) のレッスンで作成した `data.variable` データ要素）を使用してすべてのカスタム Analytics 変数を設定できます。 データオブジェクトでこれらの変数を設定すると、既存の Analytics のお客様がよく知ることができ、処理ルールインターフェイスを使用するよりも効率的で、リアルタイム顧客プロファイルで不要なデータが領域を占有するのを防ぐことができます（Real-time Customer Data PlatformまたはJourney Optimizerを使用している場合に重要です）。
 
 ### 自動的にマッピングされたフィールド
 
-多くの XDM フィールドは、Analytics 変数に自動的にマッピングされます。 最新のマッピングのリストについては、を参照してください。 [AdobeExperience Edge での Analytics 変数のマッピング](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+多くの XDM フィールドは、Analytics 変数に自動的にマッピングされます。 Adobe最新のマッピングのリストについては、[Experience Edgeの Analytics 変数のマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars) を参照してください。
 
-これは、次の場合に発生します _カスタムスキーマを定義していない場合でも_. Experience Platform Web SDK は、一部のデータを自動的に収集し、XDM フィールドとして Platform Edge Networkに送信します。 例えば、Web SDK は現在のページ URL を読み取り、XDM フィールドとして送信します `web.webPageDetails.URL`. このフィールドはAdobe Analyticsに転送され、Adobe Analyticsのページ URL レポートに自動的に入力されます。
+この問題は _カスタムスキーマを定義していない場合でも_ 発生します。 Experience Platform Web SDK は、一部のデータを自動的に収集し、XDM フィールドとして Platform Edge Networkに送信します。 例えば、Web SDK は現在のページの URL を読み取り、XDM フィールド `web.webPageDetails.URL` として送信します。 このフィールドはAdobe Analyticsに転送され、Adobe Analyticsのページ URL レポートに自動的に入力されます。
 
 このチュートリアルのように、XDM スキーマでAdobe Analyticsの Web SDK を実装する場合、次の表に示すように、Analytics 変数への自動マッピングがカスタム実装された XDM フィールドの一部が用意されています。
 
@@ -101,48 +101,48 @@ Web SDK 実装で Analytics 変数を設定する方法はいくつかありま�
 | `productListItems[].quantity` | s.products=;;product quantity;; |
 | `productListItems[].priceTotal` | s.product=;;；製品価格；; |
 
-Analytics 製品文字列の個々のセクションは、の下の様々な XDM 変数を介して設定されます `productListItems` オブジェクト。
+Analytics 製品文字列の個々のセクションは、`productListItems` オブジェクトの下の様々な XDM 変数を介して設定されます。
 
 >[!NOTE]
 >
->2022 年 8 月 18 日現在、 `productListItems[].SKU` s.products 変数内の製品名へのマッピングを優先します。
->設定された値 `productListItems[].name` 次の場合にのみ、製品名にマッピングされます `productListItems[].SKU` が存在しない。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
->に空の文字列や null を設定しないでください。 `productListItems[].SKU`. これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
+>2022 年 8 月 18 日（PT）現在、`productListItems[].SKU` は、s.products 変数の製品名へのマッピングを優先しています。
+>`productListItems[].name` に設定された値は、`productListItems[].SKU` が存在しない場合にのみ、製品名にマッピングされます。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
+>`productListItems[].SKU` に空の文字列や null を設定しないでください。 これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
 
 ### データオブジェクトに変数を設定
 
-evar、prop、event についてはどうでしょうか。 での変数の設定 `data` web SDK でこれらの Analytics 変数を設定する場合は、オブジェクトを使用することをお勧めします。 データオブジェクトで変数を設定すると、自動的にマッピングされた変数もすべて上書きされる可能性があります。
+evar、prop、event についてはどうでしょうか。 Web SDK でこれらの Analytics 変数を設定する方法としては、`data` オブジェクトに変数を設定することをお勧めします。 データオブジェクトで変数を設定すると、自動的にマッピングされた変数もすべて上書きされる可能性があります。
 
-まず、とは何ですか `data` 対象？ どの Web SDK イベントでも、カスタムデータを含んだ 2 つのオブジェクトを送信できます。 `xdm` オブジェクトと `data` オブジェクト。 両方とも Platform Edge Networkに送信されますが、 `xdm` オブジェクトがExperience Platformデータセットに送信されます。 プロパティ： `data` オブジェクトはエッジ上でにマッピングできます。 `xdm` データ収集のためのデータ準備機能を使用するフィールドですが、それ以外のフィールドはExperience Platformに送信されません。 そのため、Experience Platform上でネイティブに構築されていない Analytics などのアプリケーションにデータを送信するのに最適な方法です。
+まず、`data` のオブジェクトは何ですか？ どの Web SDK イベントでも、カスタムデータを含んだ 2 つのオブジェクト（`xdm` オブジェクトと `data` オブジェクト）を送信できます。 両方とも Platform Edge Networkに送信されますが、Experience Platformデータセットに送信されるのは `xdm` オブジェクトのみです。 `data` オブジェクトのプロパティは、データ収集用のデータ準備機能を使用して、Edgeで `xdm` フィールドにマッピングできますが、それ以外のプロパティはExperience Platformに送信されません。 そのため、Experience Platform上でネイティブに構築されていない Analytics などのアプリケーションにデータを送信するのに最適な方法です。
 
 汎用 Web SDK 呼び出しの 2 つのオブジェクトは次のとおりです。
 
-![データおよび xdm オブジェクト](assets/analytics-data-object-intro.png)
+![ データおよび xdm オブジェクト ](assets/analytics-data-object-intro.png)
 
-プロパティを検索するようにAdobe Analyticsが設定されている `data.__adobe.analytics` オブジェクトを作成して、Analytics 変数に使用します。
+Adobe Analyticsは、`data.__adobe.analytics` オブジェクト内のプロパティを探し、それらを Analytics 変数に使用するように設定されています。
 
-次に、この仕組みを見てみましょう。 設定しましょう `eVar1` および `prop1` ページ名を使用し、XDM マッピングされた値を上書きする方法を確認します
+次に、この仕組みを見てみましょう。 `eVar1` と `prop1` をページ名で設定して、XDM マッピングされた値を上書きする方法を見てみましょう
 
-1. タグルールを開く `all pages - library loaded - set global variables - 1`
-1. 新しいを追加 **[!UICONTROL アクション]**
-1. を選択 **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張子
-1. を選択 **[!UICONTROL アクションタイプ]** as **[!UICONTROL 変数を更新]**
-1. を選択 `data.variable` as the **[!UICONTROL データ要素]**
-1. 「」を選択します **[!UICONTROL analytics]** オブジェクト
-1. を設定 `eVar1` as the `page.pageInfo.pageName` データ要素
-1. を設定 `prop1` 次の値をコピーします `eVar1`
-1. XDM にマッピングされた値の上書きをテストするには、を使用します。 **[!UICONTROL 追加のプロパティ]** セクションでページ名を静的な値として設定 `test`
+1. タグルール `all pages - library loaded - set global variables - 1` を開きます。
+1. 新しい **[!UICONTROL アクション]** を追加
+1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択
+1. **[!UICONTROL アクションタイプ]** を **[!UICONTROL 変数を更新]** として選択します
+1. **[!UICONTROL データ要素]** として `data.variable` を選択します
+1. **[!UICONTROL analytics]** オブジェクトを選択します
+1. `eVar1` を `page.pageInfo.pageName` データ要素として設定します
+1. `prop1` を設定して、`eVar1` の値をコピーします
+1. XDM マッピング値の上書きをテストするには、「**[!UICONTROL 追加のプロパティ]**」セクションで、ページ名を静的な値 `test` として設定します
 1. ルールの保存
 
 
 ここで、送信イベントルールにデータオブジェクトを含める必要があります。
 
-1. タグルールを開く `all pages - library loaded - send event - 50`
-1. を開きます **[!UICONTROL イベントを送信]** アクション
-1. を選択 `data.variable` as the **[!UICONTROL データ]**
-1. を選択 **[!UICONTROL 変更を保持]**
-1. を選択 **[!UICONTROL 保存]**
+1. タグルール `all pages - library loaded - send event - 50` を開きます。
+1. **[!UICONTROL イベントを送信]** アクションを開きます
+1. **[!UICONTROL Data]** として `data.variable` を選択します
+1. 「**[!UICONTROL 変更を保持]**」を選択します
+1. 「**[!UICONTROL 保存]**」を選択します
 
 
 
@@ -218,211 +218,211 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 データストリームでAdobe Analytics レポートスイートの上書き設定を指定するには：
 
 1. データストリームを開きます
-1. を編集する **[!UICONTROL Adobe Analytics]** を開くことによる設定 ![詳細](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) メニューから選択 **[!UICONTROL 編集]**
+1. ![ 詳細 ]**メニューを開いて**[!UICONTROL  編集 ]**を選択して、**[!UICONTROL  Adobe Analytics](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 設定を編集します
 
-   ![データストリームを上書き](assets/datastream-edit-analytics.png)
+   ![ データストリームを上書き ](assets/datastream-edit-analytics.png)
 
-1. を選択 **[!UICONTROL 詳細オプション]** 開く **[!UICONTROL レポートスイートの上書き]**
+1. **[!UICONTROL 詳細オプション]** を選択して、**[!UICONTROL レポートスイートの上書き]** を開きます
 
-1. 上書きするレポートスイートを選択します。 この場合、 `Web SDK Course Dev` および `Web SDK Course Stg`
+1. 上書きするレポートスイートを選択します。 この場合、`Web SDK Course Dev` と `Web SDK Course Stg`
 
-1. を選択 **[!UICONTROL 保存]**
+1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![データストリームを上書き](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
+   ![ データストリームを上書き ](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
 
 ### レポートスイートの上書きに対するルールの設定
 
-別のレポートスイートに追加のページビュー呼び出しを送信するルールを作成しましょう。 データストリームの上書き機能を使用して、ページのレポートスイートを **[!UICONTROL イベントを送信]** アクション。
+別のレポートスイートに追加のページビュー呼び出しを送信するルールを作成しましょう。 データストリームの上書き機能を使用して、「**[!UICONTROL イベントの送信]** アクションでページのレポートスイートを変更します。
 
-1. 新しいルールを作成し、名前を付ける `homepage - library loaded - AA report suite override - 51`
+1. 新しいルールを作成し、`homepage - library loaded - AA report suite override - 51` という名前を付けます
 
-1. の下のプラス記号を選択します **[!UICONTROL イベント]** 新しいトリガーを追加するには
+1. **[!UICONTROL イベント]** の下のプラス記号を選択して、新しいトリガーを追加します
 
-1. 次の下 **[!UICONTROL 拡張機能]**&#x200B;を選択 **[!UICONTROL コア]**
+1. **[!UICONTROL Extension]** で **[!UICONTROL Core]** を選択します。
 
-1. 次の下 **[!UICONTROL イベントタイプ]**&#x200B;を選択 **[!UICONTROL ライブラリが読み込まれました（ページのトップ）]**
+1. **[!UICONTROL イベントタイプ]** で、「ライブラリの読み込み（ページのトップ）」 **[!UICONTROL Library Loaded （Page Top）]** を選択します。
 
-1. 選択して開く **[!UICONTROL 詳細オプション]**，入力 `51`. これにより、ルールが次の後に実行されます `all pages - library loaded - send event - 50` これにより、ベースライン XDM に **[!UICONTROL 変数を更新]** アクションタイプ。
-1. を選択 **[!UICONTROL 変更を保持]**
+1. 選択して **[!UICONTROL 詳細オプション]** を開き、`51` を入力します。 これにより、**[!UICONTROL 変数を更新]** アクションタイプを使用してベースライン XDM を設定する `all pages - library loaded - send event - 50` の後にルールが実行されます。
+1. 「**[!UICONTROL 変更を保持]**」を選択します
 
-   ![Analytics レポートスイートのオーバーライド](assets/set-up-analytics-rs-override.png)
+   ![Analytics レポートスイートの上書き ](assets/set-up-analytics-rs-override.png)
 
-1. 次の下 **[!UICONTROL 条件]**、を選択 **[!UICONTROL 追加]**
+1. **[!UICONTROL 条件]** で、「追加 **[!UICONTROL を選択し]** す
 
-1. 移動 **[!UICONTROL 論理タイプ]** as **[!UICONTROL 標準]**
+1. **[!UICONTROL 論理タイプ]** は **[!UICONTROL 標準]** のままにします
 
-1. 移動 **[!UICONTROL 拡張機能]** as **[!UICONTROL コア]**
+1. **[!UICONTROL 拡張機能]** は **[!UICONTROL コア]** のままにします
 
-1. を選択 **[!UICONTROL 条件タイプ]** as **[!UICONTROL クエリ文字列を含まないパス]**
+1. **[!UICONTROL 条件タイプ]** を **[!UICONTROL クエリ文字列なしのパス]** として選択
 
-1. 右側で、 **[!UICONTROL 正規表現]** 無効の切り替え
+1. 右側で、「正規表現 **[!UICONTROL トグルを無効のままに]** ます
 
-1. 次の下 **[!UICONTROL パスがと等しい]** set `/content/luma/us/en.html`. Luma デモサイトの場合、ルールがホームページにのみトリガーされるようにします
+1. **[!UICONTROL path equals]** で `/content/luma/us/en.html` を設定します。 Luma デモサイトの場合、ルールがホームページにのみトリガーされるようにします
 
-1. を選択 **[!UICONTROL 変更を保持]**
+1. 「**[!UICONTROL 変更を保持]**」を選択します
 
-   ![Analytics レポートスイートの上書き条件](assets/set-up-analytics-override-condition.png)
+   ![Analytics レポートスイートの上書き条件 ](assets/set-up-analytics-override-condition.png)
 
-1. 次の下 **[!UICONTROL アクション]** 選択 **[!UICONTROL 追加]**
+1. **[!UICONTROL アクション]** で **[!UICONTROL 追加]** を選択します
 
-1. として **[!UICONTROL 拡張機能]**&#x200B;を選択 **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. **[!UICONTROL Extension]** として、「**[!UICONTROL Adobe Experience Platform Web SDK]**」を選択します
 
-1. として **[!UICONTROL アクションタイプ]**&#x200B;を選択 **[!UICONTROL イベントを送信]**
+1. **[!UICONTROL アクションタイプ]** として、「**[!UICONTROL イベントを送信]**」を選択します
 
-1. として **[!UICONTROL XDM データ]**&#x200B;を選択し、 `xdm.variable.content` で作成したデータ要素 [データ要素の作成](create-data-elements.md) レッスン
+1. **[!UICONTROL XDM データ]** として、[ データ要素の作成 ](create-data-elements.md) レッスンで作成した `xdm.variable.content` データ要素を選択します
 
-1. として **[!UICONTROL データ]**&#x200B;を選択し、 `data.variable` で作成したデータ要素 [データ要素の作成](create-data-elements.md) レッスン
+1. **[!UICONTROL データ]** として、[ データ要素の作成 ](create-data-elements.md) のレッスンで作成した `data.variable` データ要素を選択します
 
-   ![Analytics データストリームの上書き](assets/set-up-analytics-datastream-override-1.png)
+   ![Analytics データストリームの上書き ](assets/set-up-analytics-datastream-override-1.png)
 
-1. にスクロール ダウンします。 **[!UICONTROL データストリーム設定の上書き]** セクション
+1. **[!UICONTROL データストリーム設定の上書き]** セクションまでスクロールします
 
-1. を残す **[!UICONTROL 開発]** タブが選択されました。
+1. 「**[!UICONTROL 開発]**」タブは選択したままにします。
 
    >[!TIP]
    >
-   >    このタブは、上書きされるタグ環境を決定します。 この演習では開発環境のみを指定しますが、実稼動環境にデプロイする場合は、必ず **[!UICONTROL 実稼動]** 環境。
+   >    このタブは、上書きされるタグ環境を決定します。 この演習では開発環境のみを指定しますが、実稼動環境にデプロイする場合は、必ず **[!UICONTROL 実稼動]** 環境でも指定します。
 
-1. 「」を選択します **[!UICONTROL Sandbox]** チュートリアルでを使用している
-1. 「」を選択します **[!UICONTROL データストリーム]**、この場合は `Luma Web SDK: Development Environment`
+1. チュートリアルに使用する **[!UICONTROL サンドボックス]** を選択します
+1. **[!UICONTROL データストリーム]** （この場合は `Luma Web SDK: Development Environment`）を選択します。
 
-1. 次の下 **[!UICONTROL レポートスイート]**&#x200B;で、上書きするために使用するレポートサイトを選択します。 この場合、 `tmd-websdk-course-stg`.
+1. 「**[!UICONTROL レポートスイート]**」で、上書きに使用するレポートサイトを選択します。 この場合は、`tmd-websdk-course-stg` です。
 
-1. を選択 **[!UICONTROL 変更を保持]**
+1. 「**[!UICONTROL 変更を保持]**」を選択します
 
-1. および **[!UICONTROL 保存]** ルール
+1. ルールの **[!UICONTROL 保存]**
 
-   ![Analytics データストリームの上書き](assets/analytics-tags-report-suite-override.png)
+   ![Analytics データストリームの上書き ](assets/analytics-tags-report-suite-override.png)
 
 
 ## 開発環境の構築
 
-更新したルールを `Luma Web SDK Tutorial` ライブラリをタグ付けし、開発環境を再構築します。
+更新したルールを `Luma Web SDK Tutorial` タグライブラリに追加し、開発環境を再構築します。
 
 おめでとうございます。次の手順では、Experience Platform Web SDK を使用してAdobe Analytics実装を検証します。
 
 ## Debugger を使用したAdobe Analyticsの検証
 
-Experience Platformデバッガーのエッジトレース機能を使用して、Adobe Analyticsが ECID、ページビュー、商品文字列、e コマースイベントを取り込んでいることを検証する方法について説明します。
+Experience PlatformデバッガーのEdge Trace 機能を使用して、Adobe Analyticsが ECID、ページビュー、製品文字列、e コマースイベントを取り込んでいることを検証する方法について説明します。
 
-が含まれる [デバッガー](validate-with-debugger.md) 教訓として、Platform デバッガーとブラウザー開発者コンソールを使用して、クライアントサイドの XDM リクエストを検査する方法を学びました。これは、をデバッグする方法と似ています。 `AppMeasurement.js` Analytics の実装。 また、Adobeアプリケーションに送信される Platform Edge Networkサーバーサイドリクエストの検証と、Assurance を使用して完全に処理されたペイロードを表示する方法についても学びました。
+[ デバッガー ](validate-with-debugger.md) のレッスンでは、Platform デバッガーとブラウザー開発者コンソールを使用してクライアントサイドの XDM リクエストを検査する方法を学びました。これは、`AppMeasurement.js` Analytics 実装をデバッグする方法に似ています。 また、Adobeアプリケーションに送信される Platform Edge Networkサーバーサイドリクエストの検証と、Assurance を使用して完全に処理されたペイロードを表示する方法についても学びました。
 
 Experience Platform Web SDK を使用して Analytics がデータを適切に取得していることを検証するには、次の 2 つの手順を実行する必要があります。
 
-1. Experience Platformデバッガーのエッジトレース機能を使用して、Platform Edge Network上の XDM オブジェクトによってデータが処理される方法を検証します
+1. Experience PlatformデバッガーのEdge トレース機能を使用して、Platform Edge Network上の XDM オブジェクトによってデータが処理される方法を検証します
 1. Adobe Experience Platform Assurance を使用して Analytics でデータが完全に処理される方法を検証する
 
 ### Experience CloudID の検証
 
-1. に移動します [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. [Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} に移動
 1. 右上の「ログイン」ボタンを選択し、資格情報 u: test@adobe.com p: test を使用して認証します
-1. Experience Platformデバッガーを開き、 [サイトのタグプロパティを独自の開発プロパティに切り替える](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Experience Platformデバッガーを開き [ サイトのタグプロパティを独自の開発プロパティに切り替えます ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
-1. Edge Trace を有効にするには、Experience Platformデバッガーの左側のナビゲーションで「」を選択します **[!UICONTROL ログ]**&#x200B;を選択してから、 **[!UICONTROL Edge]** tab キーを押して、 **[!UICONTROL 接続]**
+1. Edge Trace を有効にするには、Experience Platformデバッガーに移動し、左側のナビゲーションで「**[!UICONTROL ログ]**」を選択してから、「**[!UICONTROL Edge]**」タブを選択し、「**[!UICONTROL 接続]**」を選択します
 
-   ![Edge Trace の接続](assets/analytics-debugger-edgeTrace.png)
+   ![Connect Edge Trace](assets/analytics-debugger-edgeTrace.png)
 
 1. 今のところ空になります
 
-   ![接続エッジ トレース](assets/analytics-debugger-edge-connected.png)
+   ![Connected Edge Trace](assets/analytics-debugger-edge-connected.png)
 
-1. Luma ページを更新し、Experience Platformデバッガーをもう一度確認します。データが入ってくることが確認できます。 で始まる行 **[!UICONTROL Analytics 自動マッピング]** はAdobe Analytics ビーコンです
-1. を選択して、両方の `[!UICONTROL mappedQueryParams]` ドロップダウンと 2 つ目のドロップダウンで Analytics 変数を表示
+1. Luma ページを更新し、Experience Platformデバッガーをもう一度確認します。データが入ってくることが確認できます。 **[!UICONTROL Analytics 自動マッピング]** で始まる行がAdobe Analytics ビーコンです
+1. `[!UICONTROL mappedQueryParams]` ドロップダウンと 2 番目のドロップダウンの両方を選択して開き、Analytics 変数を表示します
 
-   ![Analytics ビーコン Edge Trace](assets/analytics-debugger-edge-analytics.png)
+   ![Analytics ビーコンEdgeトレース ](assets/analytics-debugger-edge-analytics.png)
 
    >[!TIP]
    >
    >2 つ目のドロップダウンは、データの送信先の Analytics レポートスイート ID に対応します。 スクリーンショットではなく、独自のレポートスイートと一致する必要があります。
 
-1. 下にスクロールして見つける `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. ECID をキャプチャするコンテキストデータ変数です
-1. Analytics が表示されるまで下にスクロールします `[!UICONTROL mid]` 変数。 両方の ID がデバイスのExperience Cloud ID と一致します。
+1. 下にスクロールして `[!UICONTROL c.a.x.identitymap.ecid.[0].id]` を検索します。 ECID をキャプチャするコンテキストデータ変数です
+1. Analytics `[!UICONTROL mid]` 変数が表示されるまで下にスクロールします。 両方の ID がデバイスのExperience Cloud ID と一致します。
 1. Luma サイトで、
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
    >[!NOTE]
    >
-   >ログインしているため、認証済み ID を検証します `112ca06ed53d3db37e4cea49cc45b71e` ユーザー用 **`test@adobe.com`** も同様にキャプチャされます。 `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
+   >ログインしたので、`[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]` でも取得されたユーザーの認証済み ID `112ca06ed53d3db37e4cea49cc45b71e` を検証 **`test@adobe.com`** ます
 
 ### レポートスイート上書き検証
 
-上記で、のデータストリーム上書きを設定しました。 [Luma ホームページ](https://luma.enablementadobe.com/content/luma/us/en.html).  この設定を検証するには
+上記で、[Luma ホームページ ](https://luma.enablementadobe.com/content/luma/us/en.html) のデータストリーム上書きを設定しました。  この設定を検証するには
 
-1. 次を含む列を検索 **[!UICONTROL 上書き適用後のデータストリーム設定]**. ここには、プライマリレポートスイートと、レポートスイートの上書き用に設定された追加レポートスイートがあります。
+1. 上書きが適用された後、**[!UICONTROL データストリーム設定]** を含む行を探します。 ここには、プライマリレポートスイートと、レポートスイートの上書き用に設定された追加レポートスイートがあります。
 
-   ![Analytics レポートスイート上書きリストの検証](assets/aep-debugger-datastream-override.png)
+   ![Analytics レポートスイート上書きリストの検証 ](assets/aep-debugger-datastream-override.png)
 
-1. で始まる行まで下にスクロールします。 **[!UICONTROL Analytics 自動マッピング]**  を行い、 `[!UICONTROL reportSuiteIds]` 優先設定で指定したレポートスイートを表示します
+1. **[!UICONTROL Analytics 自動マッピング]** で始まる行まで下にスクロールし、上書き設定で指定したレポートスイートが `[!UICONTROL reportSuiteIds]` に表示されていることを確認します
 
-   ![Analytics レポートスイートの上書き呼び出しの検証](assets/aep-debugger-analytics-report-suite-override.png)
+   ![Analytics レポートスイート上書き呼び出しの検証 ](assets/aep-debugger-analytics-report-suite-override.png)
 
 ### コンテンツページビューの検証
 
-のような製品ページに移動します [Didi Sport Watch 製品ページ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  コンテンツページビューが Analytics によってキャプチャされていることを検証します。
+[Didi Sport Watch 製品ページ ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) などの製品ページに移動します。  コンテンツページビューが Analytics によってキャプチャされていることを検証します。
 
-1. を検索 `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
-1. 下にスクロールして、 `[!UICONTROL gn]` 変数。 次を行うための Analytics 動的構文です `[!UICONTROL s.pageName]` 変数。 ページ名をデータレイヤーからキャプチャします。
+1. `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1` を探します。
+1. 下にスクロールして、`[!UICONTROL gn]` 変数を表示します。 これは、`[!UICONTROL s.pageName]` 変数の Analytics 動的構文です。 ページ名をデータレイヤーからキャプチャします。
 
-   ![Analytics 製品文字列](assets/analytics-debugger-edge-page-view.png)
+   ![Analytics 製品文字列 ](assets/analytics-debugger-edge-page-view.png)
 
 ### 製品文字列および e コマースイベントの検証
 
-ユーザーは既に製品ページを開いているので、この演習では引き続き同じ Edge Trace を使用して、製品データが Analytics によって取得されることを検証します。 製品文字列イベントと e コマースイベントの両方が、XDM 変数として Analytics に自動的にマッピングされます。 適切にマッピングしている限り `productListItem` XDM 変数 while [Adobe Analytics用の XDM スキーマの設定](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)は、PlatformEdge Networkによって、データが適切な Analytics 変数へのマッピングが行われます。
+ユーザーは既に商品ページを開いているので、この演習では引き続き同じEdge Trace を使用して、商品データが Analytics によって取得されることを検証します。 製品文字列イベントと e コマースイベントの両方が、XDM 変数として Analytics に自動的にマッピングされます。 [Platform 用の XDM スキーマの設定 ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) 中に適切な `productListItem` XDM 変数にマッピングしている限り、Adobe Analytics Edge Networkはデータを適切な Analytics 変数へのマッピングを行います。
 
-**まず、を検証します `Product String` 設定済み**
+**最初に `Product String` が設定されていることを検証する**
 
-1. を検索 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. 変数は、にマッピングしたデータ要素の値を取得します `productListItems.item1.sku` このレッスンの前半
-1. また、次も探します `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]`. 変数は、マッピング先のデータ要素の値を取得します `productListItems.item1._experience.analytics.customdimensions.evars.evar1`
-1. 下にスクロールして、 `[!UICONTROL pl]` 変数。 これは、Analytics 製品文字列変数の動的構文です
-1. データレイヤーの製品名は、の両方にマッピングされます。 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` および `[!UICONTROL product]` 製品文字列のパラメーター。  さらに、データレイヤーの製品タイトルが製品文字列のマーチャンダイジング evar1 にマッピングされます。
+1. `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` を探します。 変数は、このレッスンの前に `productListItems.item1.sku` にマッピングしたデータ要素の値を取得します
+1. また、`[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]` も探します。 変数は、`productListItems.item1._experience.analytics.customdimensions.evars.evar1` にマッピングしたデータ要素の値を取得します
+1. 下にスクロールして、`[!UICONTROL pl]` 変数を表示します。 これは、Analytics 製品文字列変数の動的構文です
+1. データレイヤーの製品名は、製品文字列の `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` と `[!UICONTROL product]` パラメーターの両方にマッピングされます。  さらに、データレイヤーの製品タイトルが製品文字列のマーチャンダイジング evar1 にマッピングされます。
 
-   ![Analytics 製品文字列](assets/analytics-debugger-prodstring.png)
+   ![Analytics 製品文字列 ](assets/analytics-debugger-prodstring.png)
 
-   エッジトレースは、 `commerce` イベントの動作が `productList` ディメンション。 製品名のマッピング先とは異なり、コンテキストデータ変数はマッピングされません `[!UICONTROL c.a.x.productlistitem.[0].name]` 上。 代わりに、エッジトレースには、Analytics での最終的なイベント自動マッピングが表示されます `event` 変数。 適切な XDM にマッピングする限り、Platform Edge Networkはそれに応じてマッピングします `commerce` 変数 while [Adobe Analytics用のスキーマの設定](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)この場合は、 `commerce.productViews.value=1`.
+   Edge Trace では、`commerce` イベントの処理は `productList` ディメンションとは少し異なります。 上記でマッピングした製品名と同じ方法で、マッピングしたコンテキストデータ変数は表示さ `[!UICONTROL c.a.x.productlistitem.[0].name]` ません。 代わりに、Edge Trace は、Analytics `event` 変数に最終的なイベントの自動マッピングを表示します。 [Adobe Analytics用のスキーマの設定 ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) 時に適切な XDM `commerce` 変数にマッピングする限り、Platform Edge Networkはそれに応じてマッピングします。この場合、`commerce.productViews.value=1` です。
 
-1. Experience Platform Debugger ウィンドウに戻り、下にスクロールしてまで移動します。 `[!UICONTROL events]` 変数。に設定されます。 `[!UICONTROL prodView]`
+1. Experience Platformデバッガーウィンドウに戻り、`[!UICONTROL events]` 変数まで下にスクロールします。この変数は `[!UICONTROL prodView]` に設定されています。
 
-1. また、次のことにも注意してください `[!UICONTROL c.a.x.eventType]` はに設定されています。 `commerce.productViews` 製品ページを開いているため。
+1. また、製品ページを開いているので、`[!UICONTROL c.a.x.eventType]` は `commerce.productViews` に設定されていることにも注意してください。
 
    >[!TIP]
    >
-   > この `ecommerce - pdp library loaded - AA (order 20)` ルールがの値を上書きしています `eventType` によって設定 `all pages global content variables - library loaded - AA (order 1)` シーケンスの後半でトリガーに設定されるルール
+   > `ecommerce - pdp library loaded - AA (order 20)` ルールは、シーケンスの後半でトリガーに設定され `eventType` ので、`all pages global content variables - library loaded - AA (order 1)` ルールで設定された値を上書きします
 
 
-   ![Analytics 製品表示](assets/analytics-debugger-prodView.png)
+   ![Analytics 製品表示 ](assets/analytics-debugger-prodView.png)
 
-**残りの e コマースイベントと製品文字列が Analytics に設定されていることを検証します**
+**残りの e コマースイベントと製品文字列が Analytics に設定されていることを検証する**
 
-1. 追加 [ディディスポーツウォッチ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) カートに
-1. に移動します [買い物かごページ](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), Edge Trace をチェックします
+1. [Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) をカートに追加します
+1. [ 買い物かごページ ](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html) に移動し、次のEdge Trace を確認します
 
-   * `eventType` をに設定 `commerce.productListViews`
-   * `[!UICONTROL events: "scView"]`、および
+   * `eventType` を `commerce.productListViews` に設定
+   * `[!UICONTROL events: "scView"]` および
    * 製品文字列が設定されます
 
-   ![Analytics の買い物かご表示](assets/analytics-debugger-cartView.png)
+   ![Analytics の買い物かご表示 ](assets/analytics-debugger-cartView.png)
 
-1. チェックアウトに進み、Edge Trace でを確認します
+1. チェックアウトに進み、Edge Trace で
 
-   * `eventType` をに設定 `commerce.checkouts`
-   * `[!UICONTROL events: "scCheckout"]`、および
+   * `eventType` を `commerce.checkouts` に設定
+   * `[!UICONTROL events: "scCheckout"]` および
    * 製品文字列が設定されます
 
-   ![Analytics チェックアウト](assets/analytics-debugger-checkout.png)
+   ![Analytics チェックアウト ](assets/analytics-debugger-checkout.png)
 
-1. を記入します。 **名前（名）** および **名前（姓）** 配送フォームのフィールドと選択 **続行**. 次のページで、 **注文する**
-1. 確認ページで、「」の Edge Trace を確認します
+1. 発送フォームの **名** フィールドと **姓** フィールドのみに入力して、「**続行**」を選択します。 次のページで、「注文する **を選択し** す
+1. 確認ページで、「」のEdge Trace を確認します
 
-   * `eventType` をに設定 `commerce.purchases`
-   * 購入イベントを設定中 `[!UICONTROL events: "purchase"]`
-   * 設定されている通貨コード変数 `[!UICONTROL cc: "USD"]`
-   * で設定されている購入 ID `[!UICONTROL pi]`
-   * 製品文字列 `[!UICONTROL pl]` 製品名、数量および価格の設定
+   * `eventType` を `commerce.purchases` に設定
+   * `[!UICONTROL events: "purchase"]` に設定されている購入イベント
+   * `[!UICONTROL cc: "USD"]` に設定されている通貨コード変数
+   * `[!UICONTROL pi]` で設定されている購入 ID
+   * 製品名、数量および価格を設定するた `[!UICONTROL pl]` の製品文字列
 
-   ![Analytics 購入](assets/analytics-debugger-purchase.png)
+   ![Analytics 購入 ](assets/analytics-debugger-purchase.png)
 
 
 
@@ -430,49 +430,49 @@ Experience Platform Web SDK を使用して Analytics がデータを適切に�
 
 Adobe Experience Platform Assurance は、web サイトやモバイルアプリケーションでデータを収集したりエクスペリエンスを提供したりする方法を検査、配達確認、シミュレートおよび検証するのに役立ちます。
 
-前の演習では、Adobe AnalyticsがExperience Platformデバッガーのエッジトレース機能を使用して、ECID、ページビュー、製品文字列および e コマースイベントをキャプチャしていることを検証しました。  次に、Edge Trace で同じデータにアクセスするための代替インターフェイスであるAdobe Experience Platform Assurance を使用して、これらの同じイベントを検証します。
+前の演習では、Adobe AnalyticsがExperience PlatformデバッガーのEdge Trace 機能を使用して ECID、ページビュー、製品文字列および e コマースイベントをキャプチャしていることを検証しました。  次に、Edge Trace で同じデータにアクセスするための代替インターフェイスであるAdobe Experience Platform Assurance を使用して、これらの同じイベントを検証します。
 
-で学んだように [Assurance](validate-with-assurance.md) 「Assurance セッションを開始するには、いくつかの方法があります。」 前の演習から開始された Edge Trace セッションで既にAdobe Experience Platform Debuggerを開いているので、Debugger を使用して Assurance にアクセスすることをお勧めします。
-![Adobe Experience Platform Data Collection による Assurance](assets/assurance-open-aep-debugger.png)
+[Assurance](validate-with-assurance.md) のレッスンで学んだように、Assurance セッションを開始する方法はいくつかあります。 前の演習で開始したEdge Trace セッションで既にAdobe Experience Platform Debuggerを開いているので、Debugger を使用して Assurance にアクセスすることをお勧めします。
+![Adobe Experience Platform Data Collection によるアシュランス ](assets/assurance-open-aep-debugger.png)
 
-内 **[!UICONTROL &quot;Web SDK チュートリアル 3&quot;]** Assurance Session enter **[!UICONTROL &quot;hitdebugger&quot;]** をイベント検索バーに移動し、結果をAdobe Analyticsの後処理済みデータにフィルタリングします。
-![Assurance Adobe分析で処理後のデータを分析](assets/assurance-hitdebugger.png)
+**[!UICONTROL &quot;Web SDK Tutorial 3&quot;]** Assurance Session 内で、イベント検索バーに **[!UICONTROL &quot;hitdebugger&quot;]** と入力し、結果をAdobe Analytics Post処理済みデータにフィルタリングします。
+![Assurance Adobe分析Postで処理されたデータ ](assets/assurance-hitdebugger.png)
 
 ### Experience CloudID の検証
 
-Adobe Analyticsが ECID を取り込んでいることを検証するには、ビーコンを選択し、ペイロードを開きます。  このビーコンの「ベンダー」は、 **[!UICONTROL com.adobe.analytics.hitdebugger]**
-![Assurance を使用したAdobe Analytics検証](assets/assurance-hitdebugger-payload.png)
+Adobe Analyticsが ECID を取り込んでいることを検証するには、ビーコンを選択し、ペイロードを開きます。  このビーコンのベンダーは、**[!UICONTROL com.adobe.analytics.hitdebugger]** である必要があります。
+![Assurance によるAdobe Analytics検証 ](assets/assurance-hitdebugger-payload.png)
 
-次に、以下までスクロールします **[!UICONTROL mcvisId]** ECID が正しくキャプチャされていることを検証するには
-![Assurance によるExperience CloudID 検証](assets/assurance-hitdebugger-mcvisId.png)
+次に、**[!UICONTROL mcvisId]** まで下にスクロールして、ECID が正しく取り込まれていることを検証します
+![Assurance によるExperience Cloud ID 検証 ](assets/assurance-hitdebugger-mcvisId.png)
 
 ### コンテンツページビューの検証
 
 同じビーコンを使用して、コンテンツページビューが正しいAdobe Analytics変数にマッピングされていることを検証します。
-Scroll down to **[!UICONTROL pageName]** を検証します `Page Name` は正しくキャプチャされました
-![Assurance を使用したページ名の検証](assets/assurance-hitdebugger-content-pagename.png)
+**[!UICONTROL pageName]** まで下にスクロールして、`Page Name` が正しくキャプチャされていることを確認します
+![Assurance を使用したページ名の検証 ](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 製品文字列および e コマースイベントの検証
 
-上記のExperience Platformデバッガーで検証する場合と同じ検証ユースケースに従い、引き続き同じビーコンを使用して検証を行います `Ecommerce Events` および `Product String`.
+上記のExperience Platformデバッガーで検証する場合と同じ検証ユースケースに従い、同じビーコンを引き続き使用して `Ecommerce Events` と `Product String` を検証します。
 
-1. 次のようなペイロードを探します **[!UICONTROL イベント]** contain `prodView`
-   ![Assurance による製品文字列の検証](assets/assurance-hitdebugger-prodView-event.png)
-1. Scroll down to **[!UICONTROL product-string]** を検証します `Product String`.
-   * 「」に注目してください `Product SKU` および `Merchandizing eVar1`.
-1. さらに下にスクロールして、以下を検証します `prop1`前の節で処理ルールを使用して設定したには、が含まれています `Product SKU`\
-   ![Assurance を使用したマーチャンダイジング変数の検証を含む製品文字列](assets/assurance-hitdebugger-prodView-productString-merchVar.png)
+1. **[!UICONTROL events]** に `prodView` が含まれるペイロードを探します
+   ![Assurance による製品文字列の検証 ](assets/assurance-hitdebugger-prodView-event.png)
+1. **[!UICONTROL product-string]** までスクロールして、`Product String` を検証します。
+   * `Product SKU` と `Merchandizing eVar1` をメモしておきます。
+1. さらに下にスクロールして、前の節の処理ルールを使用して設定した `prop1` に `Product SKU` が含まれていることを確認します\
+   ![Assurance を使用したマーチャンダイジング変数の検証を含む製品文字列 ](assets/assurance-hitdebugger-prodView-productString-merchVar.png)
 
 買い物かご、チェックアウト、購入のイベントを確認して、実装の検証を続行します。
 
-1. 次のようなペイロードを探します **[!UICONTROL イベント]** contain `scView` 製品文字列を検証します。
-   ![Assurance による製品文字列の検証](assets/assurance-hitdebugger-scView-event.png)
-1. 次のようなペイロードを探します **[!UICONTROL イベント]** contain `scCheckout` 製品文字列を検証します。
-   ![Assurance による製品文字列の検証](assets/assurance-hitdebugger-scView-event.png)
-1. 次のようなペイロードを探します **[!UICONTROL イベント]** contain `purchase`
-   ![Assurance による製品文字列の検証](assets/assurance-hitdebugger-purchase-event.png)
-1. の検証時 `purchase` イベント名は、 `Product String` 次を含める必要があります `Product SKU`, `Product Quantity` 、および `Product Total Price`.
-1. さらに、以下の場合： `purchase` を検証します `purchase-id` および/または `purchaseId` 設定済み
+1. **[!UICONTROL events]** に `scView` が含まれているペイロードを探し、製品文字列を検証します。
+   ![Assurance による製品文字列の検証 ](assets/assurance-hitdebugger-scView-event.png)
+1. **[!UICONTROL events]** に `scCheckout` が含まれているペイロードを探し、製品文字列を検証します。
+   ![Assurance による製品文字列の検証 ](assets/assurance-hitdebugger-scView-event.png)
+1. **[!UICONTROL events]** に `purchase` が含まれるペイロードを探します
+   ![Assurance による製品文字列の検証 ](assets/assurance-hitdebugger-purchase-event.png)
+1. `purchase` イベントを検証する場合、`Product String` には、`Product SKU`、`Product Quantity` および `Product Total Price` が含まれている必要があります。
+1. さらに、の `purchase` では、`purchase-id` や `purchaseId` が設定されていることを検証します
 
 
 おめでとうございます。お前がやった！ これでレッスンは終了です。独自の web サイトに Platform Web SDK を使用してAdobe Analyticsを実装する準備が整いました。
@@ -481,4 +481,4 @@ Scroll down to **[!UICONTROL pageName]** を検証します `Page Name` は正�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または将来のコンテンツに関するご提案がある場合は、このページでお知らせください [Experience League コミュニティ ディスカッションの投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

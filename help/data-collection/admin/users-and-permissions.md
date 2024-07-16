@@ -1,6 +1,6 @@
 ---
 title: データ収集でのユーザーの追加と権限の管理
-description: Adobe Experience Platformのデータ収集機能のユーザーを追加し、権限を管理して、会社の従業員がジョブの実行に必要なアクセス権を持つようにする方法を説明します。
+description: 会社の従業員が業務に必要なアクセス権を取得できるように、Adobe Experience Platformのデータ収集機能のユーザーを追加し、権限を管理する方法について説明します。
 role: Admin
 feature: Tags
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # データ収集でのユーザーの追加と権限の管理
 
-Adobe Experience Platformのデータ収集機能のユーザーを追加し、権限を管理して、会社の従業員がジョブの実行に必要なアクセス権を持つようにする方法を説明します。
+会社の従業員が業務に必要なアクセス権を取得できるように、Adobe Experience Platformのデータ収集機能のユーザーを追加し、権限を管理する方法について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on)

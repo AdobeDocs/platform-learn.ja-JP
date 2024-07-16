@@ -1,6 +1,6 @@
 ---
 title: タグデータ要素の作成
-description: データレイヤーから取り込んだ値を保存し、タグプロパティのルールや拡張機能で使用できるようにするデータ要素の作成方法を説明します。
+description: データ要素を作成してデータレイヤーから取得した値を保存し、それらの値をタグプロパティのルールや拡張機能で使用できるようにする方法を説明します。
 feature: Tags
 level: Beginner
 duration: 588
@@ -10,12 +10,12 @@ exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
 source-git-commit: a72fd41c9673d06585dc787ffe8086e5c9ba23a0
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 5%
+ht-degree: 39%
 
 ---
 
 # データ要素の作成
 
-データレイヤーから取り込んだ値を保存し、タグプロパティのルールや拡張機能で使用できるようにするデータ要素の作成方法を説明します。 詳しくは、 [データ要素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja) ドキュメント。
+データ要素を作成して、データレイヤーから取り込まれた値を保存し、タグプロパティのルールや拡張機能で使用できるようにする方法を説明します。 詳しくは、[ データ要素 ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on)

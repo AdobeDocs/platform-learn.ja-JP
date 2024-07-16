@@ -20,17 +20,17 @@ ht-degree: 4%
 
 この演習では、モバイルアプリを使用して、誰かがビーコンに入ったときにトリガーされる必要があるジャーニーとメッセージを設定します。
 
-に移動してAdobe Journey Optimizerにログインします。 [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
+[Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerにログインします。 **Journey Optimizer** をクリックします。
 
 ![ACOP](./images/acophome.png)
 
-にリダイレクトされます **ホーム**  Journey Optimizerで表示します。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスはと呼ばれます `Bootcamp`. サンドボックスを変更するには、をクリックします。 **Prod** リストからサンドボックスを選択します。 この例では、サンドボックスの名前はです **Bootcamp**. その後、 **ホーム** サンドボックスの表示 `Bootcamp`.
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `Bootcamp` です。 サンドボックスを切り替えるには、「**Prod**」をクリックし、リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **Bootcamp** です。 その後、サンドボックス `Bootcamp` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./images/acoptriglp.png)
 
 ## 3.3.1 ジャーニーの作成
 
-左のメニューで、「**ジャーニー**」をクリックします。次に、 **ジャーニーを作成** 新規ジャーニーを作成します。
+左のメニューで、「**ジャーニー**」をクリックします。次に、「**ジャーニーを作成**」をクリックして、新規のジャーニーを作成します。
 
 ![ACOP](./images/createjourney.png)
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 ![ACOP](./images/journeyempty.png)
 
-前の演習では、新しい **イベント**. 次のような名前を付けました `yourLastNameBeaconEntryEvent` およびが置き換えられました `yourLastName` 姓で。 イベント作成の結果：
+前の演習では、新しい **イベント** を作成しました。 この `yourLastNameBeaconEntryEvent` のように名前を付け、`yourLastName` を姓に置き換えました。 イベント作成の結果：
 
 ![ACOP](./images/eventdone.png)
 
@@ -46,23 +46,23 @@ ht-degree: 4%
 
 ![ACOP](./images/eventlist.png)
 
-イベントを選択し、ジャーニーキャンバスにドラッグ&amp;ドロップします。 ジャーニーは次のようになります。 クリック **Ok** 変更を保存します。
+イベントを選択し、ジャーニーキャンバスにドラッグ&amp;ドロップします。 ジャーニーは次のようになります。 **OK** をクリックして、変更を保存します。
 
 ![ACOP](./images/journeyevent.png)
 
-ジャーニーの 2 番目の手順として、を追加する必要があります **プッシュ** アクション。 画面の左側に移動して、以下を行います **アクション**&#x200B;を選択し、 **プッシュ** アクションを実行してから、ジャーニーの 2 番目のノードにドラッグ&amp;ドロップします。
+ジャーニーの 2 番目の手順として、**プッシュ** アクションを追加する必要があります。 画面の左側に移動して **アクション** し、**プッシュ** アクションを選択して、ジャーニーの 2 番目のノードにドラッグ&amp;ドロップします。
 
 ![ACOP](./images/journeyactions.png)
 
 画面の右側で、プッシュ通知を作成する必要があります。
 
-を **カテゴリ** 対象： **Marketing** を選択し、プッシュ通知の送信を有効にするプッシュサーフェスを選択します。 この場合、選択するプッシュサーフェスはです。 **mmeeewis-app-mobile-bootcamp**.
+**カテゴリ** を **マーケティング** に設定し、プッシュ通知の送信を可能にするプッシュサーフェスを選択します。 この場合、選択するプッシュサーフェスは **mmeeewis-app-mobile-bootcamp** です。
 
 ![ACOP](./images/journeyactions1.png)
 
 ## 3.3.2 メッセージの作成
 
-クリック **コンテンツを編集**.
+**コンテンツを編集** をクリックします。
 
 ![ACOP](./images/emptymsg.png)
 
@@ -72,51 +72,51 @@ ht-degree: 4%
 
 プッシュ通知の内容を定義します。
 
-「」をクリックします **タイトル** テキストフィールド。
+「**タイトル**」テキストフィールドをクリックします。
 
 ![Journey Optimizer](./images/msg5.png)
 
-テキスト領域に書き込みを開始します **こんにちは**. パーソナライゼーションアイコンをクリックします。
+テキストエリアで書き始めます **こんにちは**。 パーソナライゼーションアイコンをクリックします。
 
 ![Journey Optimizer](./images/msg6.png)
 
-次に、フィールドのパーソナライゼーショントークンを取り込みます **名** に保存されます。 `profile.person.name.firstName`. 左側のメニューで、を選択します。 **プロファイル属性**、下にスクロールするか、に移動して見つけます。 **人物** フィールドに到達するまで深いレベルに行くために要素と矢印をクリック `profile.person.name.firstName`. 「」をクリックします **+** アイコンをクリックしてフィールドをキャンバスに追加します。 「**保存**」をクリックします。
+`profile.person.name.firstName` に保存されているフィールド **名** のパーソナライゼーショントークンを取り込みます。 左側のメニューで、「**プロファイル属性**」を選択し、下にスクロールして **人物** 要素を見つけ、矢印をクリックして、フィールド `profile.person.name.firstName` に到達するまでレベルの深さを移動します。 **+** アイコンをクリックして、キャンバスにフィールドを追加します。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/msg7.png)
 
-その後、ここに戻ります。 フィールドの横にあるパーソナライゼーションアイコンをクリックします **本文**.
+その後、ここに戻ります。 フィールド **本文** の横にあるパーソナライゼーションアイコンをクリックします。
 
 ![Journey Optimizer](./images/msg11.png)
 
-テキスト領域に、次のように入力します `Welcome at the `.
+テキスト領域に、`Welcome at the ` と入力します。
 
 ![Journey Optimizer](./images/msg12.png)
 
-次に、 **コンテキスト属性** その後 **Journey Orchestration**.
+次に、「コンテキスト属性 **、「** Journey Orchestration **」の順にクリックし** す。
 
 ![ACOP](./images/jomsg3.png)
 
-クリック **イベント**.
+**イベント** をクリックします。
 
 ![ACOP](./images/jomsg4.png)
 
-イベントの名前をクリックします。次のようになります。 **yourLastNameBeaconEntryEvent**.
+イベントの名前をクリックします。次のようになります。**yourLastNameBeaconEntryEvent**
 
 ![ACOP](./images/jomsg5.png)
 
-クリック **場所の背景**.
+**コンテキストを配置** をクリックします。
 
 ![ACOP](./images/jomsg6.png)
 
-クリック **POI インタラクション**.
+**POI インタラクション** をクリックします。
 
 ![ACOP](./images/jomsg7.png)
 
-クリック **POI の詳細**.
+**POI 詳細** をクリックします。
 
 ![ACOP](./images/jomsg8.png)
 
-「」をクリックします **+** アイコン オン **POI 名**.
+**POI 名** の「**+**」アイコンをクリックします。
 その後、これが表示されます。 「**保存**」をクリックします。
 
 ![ACOP](./images/jomsg9.png)
@@ -131,17 +131,17 @@ ht-degree: 4%
 
 ## 3.3.2 画面にメッセージを送信する
 
-ジャーニーの 3 番目の手順として、を追加する必要があります **sendMessageToScreen** アクション。 画面の左側に移動して、以下を行います **アクション**&#x200B;を選択し、 **sendMessageToScreen** アクションを実行してから、ジャーニーの 3 番目のノードにドラッグ&amp;ドロップします。 その後、これが表示されます。
+ジャーニーの 3 番目の手順として、**sendMessageToScreen** アクションを追加する必要があります。 画面の左側に移動して **アクション** し、**sendMessageToScreen** アクションを選択して、ジャーニーの 3 番目のノードにドラッグ&amp;ドロップします。 その後、これが表示されます。
 
 ![ACOP](./images/jomsg15.png)
 
-この **sendMessageToScreen** アクションは、店舗ディスプレイで使用されるエンドポイントにメッセージを公開するカスタムアクションです。 この **sendMessageToScreen** アクションでは、多数の変数を定義する必要があります。 表示されるまで下にスクロールすると、これらの変数を確認できます **アクションパラメーター**.
+**sendMessageToScreen** アクションは、ストア内表示で使用されるエンドポイントにメッセージを公開するカスタムアクションです。 **sendMessageToScreen** アクションには、複数の変数を定義する必要があります。 **アクションパラメーター** が表示されるまで下にスクロールすると、これらの変数を確認できます。
 
 ![ACOP](./images/jomsg16.png)
 
 次に、各アクションパラメーターの値を設定する必要があります。 次の表に、必要な値を示します。
 
-| パラメーター | value |
+| パラメーター | 値 |
 |:-------------:| :---------------:|
 | 配信 | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
@@ -155,11 +155,11 @@ ht-degree: 4%
 
 {style="table-layout:auto"}
 
-これらの値を設定するには、 **編集** アイコン。
+これらの値を設定するには、「**編集** アイコンをクリックします。
 
 ![ACOP](./images/jomsg17.png)
 
-次に、を選択します **詳細設定モード**.
+次に、「**詳細設定モード**」を選択します。
 
 ![ACOP](./images/jomsg18.png)
 
@@ -171,29 +171,29 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->フィールド ECID には、イベントへの参照があります `yourLastNameBeaconEntryEvent`. 必ずを `yourLastName` 姓で。
+>フィールド ECID には、イベント `yourLastNameBeaconEntryEvent` への参照があります。 必ず `yourLastName` を姓に置き換えてください。
 
 最終的な結果は次のようになります。
 
 ![ACOP](./images/jomsg20.png)
 
-上にスクロールして、 **Ok**.
+上にスクロールして、「**OK**」をクリックします。
 
 ![ACOP](./images/jomsg21.png)
 
-ジャーニーに名前を付ける必要があります。 それには、 **鉛筆** アイコンが画面の左上に表示されます。
+ジャーニーに名前を付ける必要があります。 画面の左上にある **鉛筆** アイコンをクリックすると、これを行うことができます。
 
 ![ACOP](./images/journeyname.png)
 
-ジャーニーの名前をここに入力できます。 を使用してください。 `yourLastName - Beacon Entry Journey`. 「**OK**」をクリックして変更を保存します。
+ジャーニーの名前をここに入力できます。 `yourLastName - Beacon Entry Journey` を使用してください。 「**OK**」をクリックして変更を保存します。
 
 ![ACOP](./images/journeyname1.png)
 
-次をクリックして、ジャーニーを公開できます。 **公開**.
+これで、**Publish** をクリックしてジャーニーを公開できます。
 
 ![ACOP](./images/publishjourney.png)
 
-クリック **公開** また。
+もう一度 **0}Publish} をクリックします。**
 
 ![ACOP](./images/publish1.png)
 
@@ -205,7 +205,7 @@ ht-degree: 4%
 
 これで、この演習が完了しました。
 
-次の手順： [3.4 ジャーニーのテスト](./ex4.md)
+次の手順：[3.4 ジャーニーのテスト ](./ex4.md)
 
 [ユーザーフロー 3 に戻る](./uc3.md)
 

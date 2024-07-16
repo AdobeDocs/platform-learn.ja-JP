@@ -10,47 +10,47 @@ last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 18%
+source-wordcount: '263'
+ht-degree: 10%
 
 ---
 
-# [!DNL Experience Platform]API の認証とアクセス
+# API の認証とアクセ [!DNL Experience Platform]
 
-Adobe Experience Platform API の使用を開始する方法を説明します。 このチュートリアルでは、認証資格情報を作成し、Experience PlatformAPI リクエストの作成を開始するプロセスについて説明します。
+Adobe Experience Platform API の使用を開始する方法を説明します。 このチュートリアルでは、Experience Platform資格情報を作成し、認証 API リクエストの作成を開始する手順について説明します。
 
-## Adobe Developer Console でプロジェクトを作成し、Postman環境を書き出す{#export-integration-details-to-postman}
+## Adobe Developer Consoleでプロジェクトを作成し、Postmanを書き出します{#export-integration-details-to-postman}
 
-[[!DNL Postman]](https://www.postman.com/) は、開発者がAdobe Experience Platform API をすばやく簡単に操作できるようにするサードパーティアプリケーションです。
+[[!DNL Postman]](https://www.postman.com/) は、デベロッパーがAdobe Experience Platform API を素早く簡単に操作するのに役立つサードパーティアプリケーションです。
 
-[Adobe Developer Console&#39;s](https://developer.adobe.com/console/home) **Postmanの詳細を書き出し** 機能を使用すると、Experience PlatformAPI へのアクセスと操作に必要なアカウントの詳細を 1 つのPostman環境ファイルに簡単に書き出せるので、Adobe DeveloperコンソールからPostmanに値をコピー&amp;ペーストする必要がありません。
+[Adobe Developer Consoleの ](https://developer.adobe.com/console/home)**Postmanの詳細をエクスポート** 機能を使用すると、1 つのPostman環境ファイルでExperience PlatformAPI へのアクセスと操作に必要なアカウントの詳細を簡単にエクスポートでき、Adobe Developer ConsoleからPostmanに値をコピー&amp;ペーストする必要がなくなります。
 
 >[!IMPORTANT]
 >
->次の手順で [Adobe Developer Console](https://developer.adobe.com/console/home)の場合は、 [システム管理者](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) または [開発者](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) （内） [Adobe Admin Console](https://adminconsole.adobe.com).
+>[Adobe Developer Console](https://developer.adobe.com/console/home) にアクセスするには、[Adobe Admin Console](https://adminconsole.adobe.com) で [ システム管理者 ](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) または [ 開発者 ](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) である必要があります。
 >
-> API 資格情報を作成した後、システム管理者は資格情報をExperience Platformの役割に関連付ける必要があります。
+> システム管理者は、API 認証情報を作成した後、認証情報をExperience Platformのロールに関連付ける必要があります。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on)
 
 ## Postmanでのアクセストークンの生成{#generate-an-access-token-with-postman}
 
-以下を使用します。 [AdobeIdentity Management Service API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) をクリックして、Adobe Experience Platform API にアクセスするためのアクセストークンを取得します。
+[AdobeIdentity Management サービス API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) を使用して、Adobe Experience Platform API にアクセスするためのアクセストークンを取得します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on)
 
 
 ## Postmanを使用したExperience PlatformAPI の操作
 
-を使用したAdobe Experience Platform API の操作の調査 [Adobeが提供するExperience PlatformAPI Postmanコレクション](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)その上に [Adobe Developer Console 環境変数](#export-integration-details-to-postman) および [生成されたアクセストークン](#generate-an-access-token-with-postman).
+[Adobe Experience PlatformExperience Platform変数 ](#export-integration-details-to-postman) および [ 生成されたアクセストークン ](#generate-an-access-token-with-postman) に基づいて、[Adobe提供の Environment API Postman コレクション ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) を使用してAdobe Developer Console API とのやり取りを調べます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on)
 
 
-## これらのビデオで参照されているリソース
+## これらのビデオで参照されるリソース
 
 * [Adobe 開発者コンソール](https://developer.adobe.com/console/home)
-* [Adobe Experience Platform Postmanのサンプル](https://github.com/adobe/experience-platform-postman-samples)
-   * [アクセストークン生成用のIdentity Management System Postmanコレクション](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
-   * [Adobe Experience Platform API Postmanコレクション](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
-* [Postmanをダウンロード](https://www.postman.com/)
+* [Adobe Experience Platform Postman サンプル ](https://github.com/adobe/experience-platform-postman-samples)
+   * [ アクセストークンを生成するためのIdentity Management System Postman コレクション ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
+   * [Adobe Experience Platform API Postman コレクション ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
+* [Postmanのダウンロード ](https://www.postman.com/)

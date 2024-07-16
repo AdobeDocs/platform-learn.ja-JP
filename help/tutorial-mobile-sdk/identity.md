@@ -1,5 +1,5 @@
 ---
-title: モバイル SDK を使用したモバイルアプリでの ID データの収集
+title: Mobile SDK を使用したモバイルアプリでの ID データの収集
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 jira: KT-14633
@@ -7,59 +7,59 @@ exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# ID データを収集
+# ID データの収集
 
 モバイルアプリで ID データを収集する方法を説明します。
 
-Adobe Experience Platform ID サービスを使用すると、デバイスやシステム間で ID を結び付け、顧客とその行動をより良く把握でき、効果的な個人のデジタルエクスペリエンスをリアルタイムで提供できます。 ID フィールドと名前空間は、異なるデータソースを結合して、360 度のリアルタイム顧客プロファイルを構築するための接着剤です。
+Adobe Experience Platform ID サービスを利用すると、デバイスやシステム間で ID を橋渡しすることで、顧客とその行動をよりよく把握できます。これによって、インパクトのある個人的なデジタル体験をリアルタイムで提供できます。 ID フィールドと名前空間は、異なるデータソースを結合して 360 度リアルタイム顧客プロファイルを作成する接着剤です。
 
-詳しくは、 [ID 拡張機能](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) そして [id サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) 」を参照してください。
+[ID 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) および [ID サービス ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) について詳しくは、ドキュメントを参照してください。
 
 ## 前提条件
 
-* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
+* SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 
-## 学習内容
+## 学習目標
 
-このレッスンでは、次の操作を実行します。
+このレッスンでは、次の操作を行います。
 
 * カスタム ID 名前空間を設定します。
 * ID を更新します。
 * ID グラフを検証します。
-* ECID やその他の ID を取得します。
+* ECID およびその他の ID を取得します。
 
 
 ## カスタム ID 名前空間の設定
 
-ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) id が関連するコンテキストのインジケーターとして機能する 例えば、 `name@email.com` 電子メールアドレスとして、または `443522` を数値 CRM ID として設定します。
+ID 名前空間は、ID の関連先コンテキストのインジケーターとして機能する [ID サービス ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) のコンポーネントです。 例えば、値 `name@email.com` をメールアドレスとして、または `443522` を数値 CRM ID として区別します。
 
 >[!NOTE]
 >
->Mobile SDK は、アプリがインストールされると、Experience CloudID(ECID) という名前の一意の ID を独自の名前空間に生成します。 この ECID はモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信されます。 ECID が削除されるのは、ユーザーがアプリをアンインストールしたとき、またはユーザーが Mobile SDK のグローバルプライバシーステータスをオプトアウトに設定したときです。 サンプルの Luma アプリで、アプリを削除してから再インストールし、独自の一意の ECID を持つ新しいプロファイルを作成する必要があります。
+>Mobile SDK は、アプリのインストール時にExperience CloudID （ECID）という名前の一意の ID を独自の名前空間で生成します。 この ECID は、モバイルデバイスの永続メモリに保存され、ヒットごとに送信されます。 ユーザーがアプリをアンインストールするとき、またはユーザーが Mobile SDK グローバルプライバシーステータスをオプトアウトに設定するとき、ECID は削除されます。 サンプル Luma アプリでは、アプリを削除して再インストールし、独自の一意の ECID を持つ新しいプロファイルを作成する必要があります。
 
 
-新しい ID 名前空間を作成するには：
+ID 名前空間を新規作成するには：
 
-1. データ収集インターフェイスで、「 」を選択します。 **[!UICONTROL ID]** をクリックします。
+1. データ収集インターフェイスで、左側のナビゲーションバーから **[!UICONTROL ID]** を選択します。
 1. 「**[!UICONTROL ID 名前空間を作成]**」を選択します。
-1. 次を提供： **[!UICONTROL 表示名]** / `Luma CRM ID` および **[!UICONTROL ID シンボル]** の値 `lumaCRMId`.
-1. 選択 **[!UICONTROL クロスデバイス ID]**.
+1. `Luma CRM ID` の **[!UICONTROL 表示名]** と `lumaCRMId` の **[!UICONTROL ID シンボル]** 値を指定します。
+1. **[!UICONTROL クロスデバイス ID]** を選択します。
 1. 「**[!UICONTROL 作成]**」を選択します。
 
-   ![id 名前空間を作成](assets/identity-create.png)
+   ![ID 名前空間を作成 ](assets/identity-create.png)
 
 
 
 
-## ID を更新
+## ID の更新
 
-ユーザーがアプリにログインする際に、標準 ID（電子メール）とカスタム ID(Luma CRM ID) の両方を更新する必要がある場合。
+ユーザーがアプリにログインしたときに、標準 ID （メール）とカスタム ID （Luma CRM ID）の両方を更新するとします。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode プロジェクトナビゲーターで、 `func updateIdentities(emailAddress: String, crmId: String)` 関数の実装。 次のコードを関数に追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動し、`func updateIdentities(emailAddress: String, crmId: String)` 関数の実装を見つけます。 関数に次のコードを追加します。
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -73,35 +73,35 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
    Identity.updateIdentities(with: identityMap)
    ```
 
-   このコードは次を実行します。
+   このコード：
 
-   1. 空を作成 `IdentityMap` オブジェクト。
+   1. 空の `IdentityMap` オブジェクトを作成します。
 
       ```swift
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. 設定 `IdentityItem` 電子メール ID と CRM ID 用のオブジェクト。
+   1. メールおよび CRM ID の `IdentityItem` オブジェクトを設定します。
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
       ```
 
-   1. 追加 `IdentityItem` オブジェクトを `IdentityMap` オブジェクト。
+   1. これらの `IdentityItem` オブジェクトを `IdentityMap` オブジェクトに追加します。
 
       ```swift
       identityMap.add(item:emailIdentity, withNamespace: "Email")
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. 送信する `IdentityItem` の一部としてのオブジェクト `Identity.updateIdentities` Edge ネットワークへの API 呼び出し。
+   1. `Identity.updateIdentities` API 呼び出しの一部として `IdentityItem` オブジェクトをEdge Networkに送信します。
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログイン]** 」ボタンをクリックします。 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL General]**/**[!UICONTROL LoginSheet]** に移動し、「**[!UICONTROL ログイン]**」ボタンを選択するときに実行するコードを見つけます。 次のコードを追加します。
 
    ```swift
    // Update identities
@@ -111,14 +111,14 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
 
 >[!NOTE]
 >
->1 回のみで複数の ID を送信できます `updateIdentities` を呼び出します。 また、以前に送信した ID を変更することもできます。
+>1 回の `updateIdentities` 呼び出しで複数の ID を送信できます。 以前に送信した ID を変更することもできます。
 
 
-## ID の削除
+## ID を削除
 
-以下を使用すると、 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 保存されたクライアント側 ID マップから ID を削除する API。 ID 拡張機能が Edge ネットワークへの識別子の送信を停止します。 この API を使用しても、サーバー側の ID グラフから識別子が削除されることはありません。 詳しくは、 [ID グラフの表示](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) id グラフについて詳しくは、を参照してください。
+[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、識別子のEdge Networkへの送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) を参照してください。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** をクリックし、次のコードを `func removeIdentities(emailAddress: String, crmId: String)` 関数：
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動し、`func removeIdentities(emailAddress: String, crmId: String)` 関数に次のコードを追加します。
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -128,7 +128,7 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** をクリックし、 **[!UICONTROL ログアウト]** 」ボタンをクリックします。 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL General]**/**[!UICONTROL LoginSheet]** に移動し、「**[!UICONTROL ログアウト]**」ボタンを選択するときに実行するコードを見つけます。 次のコードを追加します。
 
    ```swift
    // Remove identities
@@ -136,46 +136,46 @@ ID 名前空間は、 [ID サービス](https://experienceleague.adobe.com/docs/
    ```
 
 
-## アシュランスで検証
+## Assurance での検証
 
-1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
+1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
 1. Luma アプリ内
-   1. を選択します。 **[!UICONTROL ホーム]** タブをクリックし、アシュランスアイコンを左に移動します。
-   1. を選択します。 <img src="assets/login.png" width="15" /> アイコンを右上に表示します。
+   1. **[!UICONTROL ホーム]** タブを選択し、Assurance アイコンを左に移動します。
+   1. 「」を選択します アイコン <img src="assets/login.png" width="15" /> 右上から選択します。
 
       <img src="./assets/identity1.png" width="300">
 
-   1. 電子メールアドレスと CRM ID を入力するか、
-   1. 選択 <img src="assets/insert.png" width="15" /> ランダムに生成するには **[!UICONTROL 電子メール]** および **[!UICONTROL CRM ID]**.
-   1. 選択 **[!UICONTROL ログイン]**.
+   1. メールアドレスと CRM ID を入力する
+   1. 選択 **[!UICONTROL E メール]** および **[!UICONTROL CRM ID]** をランダムに生成で <img src="assets/insert.png" width="15" /> ません。
+   1. **[!UICONTROL ログイン]** を選択します。
 
       <img src="./assets/identity2.png" width="300">
 
 
-1. Assurance Web インターフェイスで **[!UICONTROL エッジ ID の更新 ID]** イベント **[!UICONTROL com.adobe.griffon.mobile]** ベンダー。
-1. イベントを選択し、 **[!UICONTROL ACPExtensionEventData]** オブジェクト。 更新した ID が表示されます。
-   ![id の更新を検証](assets/identity-validate-assurance.png)
+1. **[!UICONTROL com.adobe.griffon.mobile]** ベンダーの **[!UICONTROL Edge ID 更新 ID]** イベントの Assurance Web インターフェイスを確認します。
+1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトのデータを確認します。 更新した ID が表示されます。
+   ![id 更新の検証 ](assets/identity-validate-assurance.png)
 
-## ID グラフで検証
+## ID グラフを使用して検証
 
-手順を完了したら、 [Experience Platformレッスン](platform.md)を使用すると、Platforms の ID グラフビューアで ID の取得を確認できます。
+[Experience Platformのレッスン ](platform.md) の手順を完了すると、Platform ID グラフビューアで ID 取得を確認できます。
 
-1. 選択 **[!UICONTROL ID]** （データ収集 UI）を参照してください。
-1. 選択 **[!UICONTROL ID グラフ]** 上部のバーから。
-1. 入力 `Luma CRM ID` として **[!UICONTROL ID 名前空間]** と CRM ID（例： ） `24e620e255734d8489820e74f357b5c8`) を **[!UICONTROL ID 値]**.
-1. 次のように表示されます。 **[!UICONTROL ID]** リストに表示されました。
+1. データ収集 UI で **[!UICONTROL ID]** を選択します。
+1. 上部バーの「**[!UICONTROL ID グラフ]**」を選択します。
+1. **[!UICONTROL ID 名前空間]** として `Luma CRM ID` を入力し、**[!UICONTROL ID 値]** として CRM ID （例：`24e620e255734d8489820e74f357b5c8`）を入力します。
+1. **[!UICONTROL ID]** が表示されます。
 
-   ![id グラフを検証](assets/identity-validate-graph.png)
+   ![id グラフを検証 ](assets/identity-validate-graph.png)
 
 >[!INFO]
 >
->ECID をリセットするコードがアプリにないので、ECID をアンインストールして再インストールするだけで、ECID をリセット（新しい ECID で新しいプロファイルを効果的に作成）できます。 識別子のリセットを実装するには、 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) および [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 呼び出し。 ただし、プッシュ通知識別子を使用する場合は、 [プッシュ通知の送信](journey-optimizer-push.md)) の代わりに使用され、その識別子がデバイス上の別の「スティッキー」プロファイル識別子になります。
+>ECID をリセットするコードがアプリにありません。つまり、アプリケーションのアンインストールと再インストールを実行して、ECID をリセットするだけで、新しい ECID を持つ新しいプロファイルを効果的に作成できます。 識別子のリセットを実装するには、[`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) および [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 呼び出しを参照してください。 ただし、プッシュ通知識別子を使用する場合（[ プッシュ通知の送信 ](journey-optimizer-push.md) を参照）、その識別子は、デバイス上で別の「固定」プロファイル識別子になります。
 
 
 >[!SUCCESS]
 >
->これで、Edge ネットワーク内の ID を更新するアプリを設定し、（設定時に）Adobe Experience Platformで ID を更新するようになりました。
+>これで、Edge Network内および（設定時に）Adobe Experience Platformで ID を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-次へ： **[プロファイルデータを収集](profile.md)**
+次のトピック：**[プロファイル・データの収集](profile.md)**

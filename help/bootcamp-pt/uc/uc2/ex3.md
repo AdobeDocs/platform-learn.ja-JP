@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Journey Optimizerジャーニーとメールメッセージを作成する — ブラジル
-description: Bootcamp - Journey Optimizerジャーニーとメールメッセージを作成する — ブラジル
+title: Bootcamp - Journey Optimizer ジャーニーとメールメッセージの作成 – ブラジル
+description: Bootcamp - Journey Optimizer ジャーニーとメールメッセージの作成 – ブラジル
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -11,179 +11,179 @@ feature: Journeys
 exl-id: d486d1aa-7b8e-4301-91e6-4c84fba0c72a
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '944'
 ht-degree: 3%
 
 ---
 
-# 2.3 クリスアヨルナダ電子メール
+# 2.3 Crie sua jornada e mensagem de e-mail
 
-Neste expercício, vocêirá configurar a jornada quanda quando alguém criar uma conta no site de demonstração.
+Neste exercício, você irá configurar a jornada que precisa ser acionada quando alguém criar uma conta no site de demonstração. （英語）
 
-Faça ログインのAdobe Journey Optimizerのアクセスサンド a [Adobe Experience Cloud](https://experience.adobe.com). クリック **Journey Optimizer**.
+Faça ログイン no Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com)。 Em **Journey Optimizer** をクリックします。
 
 ![ACOP](./images/acophome.png)
 
-Vocêserá redirectionado para a visualização da **ホーム**  Journey Optimizer Primeiro, verifique se vocé está usando o sandbox correto. サンドボックスクエデヴ・ユサド・エ `Bootcamp`. パラオルタナルドゥウムサンドボックスパラアウトロ、クリック EM **Prod** sandbox na lista からを選択します。 Neste エグザンプロ， o nome do sandboxé **Bootcamp**. Voêestará na visualização da **ホーム** サンドボックスを設定 `Bootcamp`.
+Você será redirectionado para a visualização da **Home** no Journey Optimizer. Primeiro, verifique se você está usando o sandbox correto. （英語） O nome do sandbox que deve ser usado é `Bootcamp`.（オノーム・ド・サンドボックス・ケ・デヴ・サー・ウサド・デ・オノーム） Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste exexampo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1 クリー・ア・スア・ヨルナダ
+## 2.3.1 スア ジョルナダのクリエ
 
-メニューがなく、クリック **ジャーニー**. Em seguida、clique em **作成ジャーニー** パラクリアルマ・ノヴァ・ヨルナダ。
+メニューはありません、clique em **ジャーニー**。 Em seguida、clique em **ジャーニーを作成** para criar uma nova jornada。
 
 ![ACOP](./images/createjourney.png)
 
-ヴォクレヴェラウマテラデヨルナバジア。
+ヴォケ・ヴェラ・ウマ・テラ・デ・ジョルナダ・ヴァジア
 
 ![ACOP](./images/journeyempty.png)
 
-エクスペリシオ前部、ボークリウムノボ **イベント**. ベント語 `seuSobrenomeAccountCreationEvent` e 置換 `seuSobrenome` ペロ・セウ・ソブレノーム。 Este foi o resultado da criação do Evento:
+No exercício anterior, você criou um novo **イベント**. Você nomeou o evento `seuSobrenomeAccountCreationEvent` e substituiu `seuSobrenome` pelo seu sobrenome.（ボケ・ノミウ・オ・イベント・エ・スィーストゥイブ・エストゥイウ・エストゥイブ・エストゥイブ・エストゥイブ・エストゥイブ・エストゥイブ・エストゥイブ。 Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-アゴラのボーカは、思い切ってエステエベントをコモ・イニシオ・デスタ・ヨルナダ。 Vocêpode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
+Agora você deve considerar este evento como o início desta Jornada. （アゴラ・ボーケ・デヴ・コンシデラル・エスト・エスト・エスト・コモ・オ・イニシオ・デスタ・ヨルナダ） Você pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos. （英語）
 
 ![ACOP](./images/eventlist.png)
 
-セレクワンセウイベント、アレスト e solte o evento na tela de Jornada. Sua Jornada agora deve ser semelhante ao seginte:
+Selecione seu evento, arraste e e solte o evento na tela de Jornada. （セレシオーネ・スー・イベント、アラースト・ソルト・オ・イベント・ナ・テラ・デ・ジョルナダ） Sua Jornada agora deve ser semelhante ao seguinte:
 
 ![ACOP](./images/journeyevent.png)
 
-コモセグンダ・エタパ・ダ・ヨルナダ、ボーデヴ・アディシオナール・ウマ・エタパ・カルタ・デ・デ **待機**. Vá para o lado esquerdo da tela até a seção **Orchestration** para encontrar isso. Vocêusarara attributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real.
+Como segunda etapa da jornada, você deve additionar uma etapa curta de **Wait**. Vá para o lado esquerdo da tela até a seção **オーケストレーション** para encontrar isso. Você usará attributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real.
 
 ![ACOP](./images/journeywait.png)
 
-スアヨルナダアゴラは、セメルハンテアオセギンテに敬意を表します。 ラド・ディレイト・ダ・テラ・テレ・プレシサの設定は、テンポ・デ・エスペラの設定はありません。 コモ 1 ミヌトを定義。 イソダラバスタンテテンポパラオスアトリブトスドペルフィルエステジャム・ディスポニヴェス・アポスオ・ディスパロ・ド・イベント。
+Sua jornada agora deve ser semelhante ao seguinte.（スア・ヨルナダ・アゴラ・デヴ・セル・セメルハンテ・アオ・セギンテ） No lado direito da tela você precisa configurar o tempo de espera. （ラド ディレイト ダ テラ ボーカの設定なし） 定義コモ 1 分。 Isso dará bastante tempo para que os attributos do perfil estestam disponíveis após o disparo do evento （イッブトと呼ばれるスペイン語で書かれたスペイン語）
 
 ![ACOP](./images/journeywait1.png)
 
-クリック **Ok** para salvar suas alteraçoes
+Clique em **OK** para salvar suas alteraçóes.
 
-コモ・テルセイラ・エタパ・ダ・ヨルナダ、ボーディヴ・アディシオナルマ・アサオ **電子メール**. Vá para o lado esquerdo da tela para **アクション**, selection ação **電子メール** arraste e ソルト ação no segundo nó da sua jornada アゴラ・オ・セギンテ・セラ・エキシビド。
+Como terceira etapa da jornada, você deve additionar uma ação **メール**. Vá para o lado esquerdo da tela para **アクション**, selecione a ação **メール** e arraste e e solte a ação no segundo nó da sua jornada. アゴラ・オ・セギンテ・セラ・エクスビド。
 
 ![ACOP](./images/journeyactions.png)
 
-定義 **カテゴリ** コモ **マーケティング** e selecone uma **電子メール表面** que perito o envido de e-mail ネスカソ、a **電子メール表面** ユーザーセレクショナダ é 電子メール。 Certifique-se de que as caixas de seleção **メールのクリック数** e **メール開封数** エステジャム・マルカダス。
+**カテゴリ** コモ **マーケティング** e selecione uma **e-mail surface** que permita o envio de e-mail を定義します。 Nesse caso, a **e-mail surface** a ser selecionada é E-mail. Certifique-se de que as caixas de seleção **メールのクリック数** e **メールの開封数** estejam marcadas.
 
 ![ACOP](./images/journeyactions1.png)
 
-プロキシモ・エタパ・クリアル・スア・メンセージェム。 クリック・エム、パラ・イッソ **コンテンツを編集**.
+A próximo etapa é criar sua mensagem （原題） Para isso、クリックします **コンテンツを編集**。
 
 ![ACOP](./images/journeyactions2.png)
 
 ## 2.3.2 Crie a sua mensagem
 
-パラクリアスアメンセージェム、クリケ **コンテンツを編集**.
+Para criar sua mensagem、clique em **コンテンツを編集**。
 
 ![ACOP](./images/journeyactions2.png)
 
-O seguinte será exibido.
+O seguinte será exibido （セギンテ・セラ・エクスビド）
 
 ![ACOP](./images/journeyactions3.png)
 
-Clique no campo de texto **件名**.
+Clique no campo de texto **件名**。
 
 ![Journey Optimizer](./images/msg5.png)
 
-コメス・ナ・アレア・デ・テクスト **オラ**
+Na área de texto, comece **オラ**
 
 ![Journey Optimizer](./images/msg6.png)
 
-リンハ・デ・アスント・アインダ・アンオ・エスタ・プロンタ。 Em seguida, você precisa trazer o token de personalização para o **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニュー無し，役割 para baixo para encontrar o elemento **人物** e clique na seta para 視覚化器 mais campos
+A linha de assunto ainda não está pronta. （リンハ デ アスント アインダ ナン エスタ プロンタ） Em seguida, você precisa trazer o token de personalização para o **名** que está armazenado em `profile.person.name.firstName`. No menu à esquerda, role para baixo para encontrar o elemento **Person** e clique na seta para visualizar mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-エレメントアゴラエンコントロ **氏名** clique na seta para ビジュアライゼーション (mais campos)
+Agora encontre o elemento **フルネーム** e clique na seta para visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Por フィム、ローカライズ o campo **名** e clique no símbolo **+**  ラドデレ Vocêverá o token de personalização apacer no campo de texto。
+Por fim, localize o campo **名** e clique no símbolo **+** ao lado dele. Você verá o token de personalização aparecer no campo de texto. （英語）
 
 ![Journey Optimizer](./images/msg9.png)
 
-エム・セギダ、テキストの愛好家 **アグラデセモスはサアインヴァサン！**。クリック **保存**.
+Em seguida, adicione o texto, **agradecemos a sua inscrição!**。**保存** をクリックします。
 
 ![Journey Optimizer](./images/msg10.png)
 
-エンタオ、ヴォーチラ・レトルナ・パラ・エスタ・テラ。 クリック **メールデザイナー**  para criar o conteúdo do e-mail.
+Então, você irá retornar para esta tela. （エンタン、ボーシェ・イラー、レトルナー・パラ・エスタ・テラ） Clique em **メールDesigner** para criar o conteúdo e-mail.
 
 ![Journey Optimizer](./images/msg11.png)
 
-Na próxima tela, será selicitado que você forneça o conteúdo e-mail através de 3 métodos diferentes:
+Na próxima tela, será solicitado que você forneça o conteúdo e-mail através de 3 métodos diferentes:
 
-- **ゼロからデザイン**:comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo e-mail.
-- **独自のコーディング**:Crie seu proprio modelo de e-mail codificando usandoHTML
-- **インポートHTML**:um modeloHTMLの存在をインポート、que você poderá editar.
+- **ゼロからデザイン**:Comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo e-mail.
+- **独自のコードを作成**:Crie seu próprio modelo de e-mail codificando usandoHTML
+- **読み込みHTML**：モデルHTMLの存在を読み込みます。
 
-クリック **インポートHTML**.
+「em **読み込みHTML**」をクリックします。
 
 ![Journey Optimizer](./images/msg12.png)
 
-アルキボのアレステ・ソルテ **mailtemplatebootcamp.html**，固有のボーカルバイシャ [アクイ](../../assets/html/mailtemplatebootcamp.html.zip). Clique Importar.
+Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixa [aqui](../../assets/html/mailtemplatebootcamp.html.zip). Em インポーターをクリックします。
 
 ![Journey Optimizer](./images/msg13.png)
 
-Vocêverá este modelo de e-mail padrão:
+Você verá este modelo de e-mail padrão:
 
 ![Journey Optimizer](./images/msg14.png)
 
-Vamos のパーソナライズ機能と電子メール。 Clique ao lado do texto **オラ** e, em seguida, clique no icone **パーソナライゼーションを追加**.
+Vamos personalizar 電子メール。 Clique ao lado do texto **Olá** e, em seguida, clique no ícone **Personalizationを加える**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você precisa trazer o token de personalização **名** クエストアルマゼナドエム `profile.person.name.firstName`. メニューなし、要素をローカライズ **人物**, faça uma busca detalada no elemento **氏名** e clique no icone **+** para adicionar o campo **名** ao 編集者。
+Em seguida, você precisa trazer o token de personalização **名** que está armazenado em `profile.person.name.firstName`. No menu, localize o elemento **Person**, faça uma busca detalhada no elemento **Full Name** e clique no ícone **+** para adicionar o campo **First Name** ao editor.
 
-クリック **保存**.
+**保存** をクリックします。
 
 ![Journey Optimizer](./images/msg36.png)
 
-アゴラヴォクラコモオカンポデパーソナライズアサンフォイアディシオナドアオセウテキスト。
+Agora você verá como campo de personalização foi adicionado ao seu texto. （英語）
 
 ![Journey Optimizer](./images/msg37.png)
 
-クリック **保存** para salvar sua mensagem.
+Clique em **保存** para salvar sua mensagem。
 
 ![Journey Optimizer](./images/msg55.png)
 
-レトルネ・パラ・ド・メンサゲンス・クリカンドナ・セタ・ラド・ド・テキスト・ダ・リンハ・デ・アスント・ノ・カント・スーペリア・エスケルド。
+Retorne para o painel de mensagens clicando na seta ao lado do texto da linha de assunto no canto superior esquerdo （エスカルド岬）
 
 ![Journey Optimizer](./images/msg56.png)
 
-アゴラの声は、クリアサオ・ド・セウ電子メール・デ・カダストロを締めくくる。 クリケナセタノカントスーペリアスケルドパラレトルナーラスアヨルナダ。
+Agora você concluiu a criação do seu e-mail de cadastro.（アゴラ・ボーケはクリャソン・ド・セウのメールを締めくくっている） Clique na seta no canto superior esquerdo para retornar à sua jornada. （クリーク・ナ・セタ・ノ・カント・スーペリア・エスカルド・パラ・レトルナール・ア・スア・ジョルナダ）
 
 ![Journey Optimizer](./images/msg57.png)
 
-クリック **Ok**.
+**OK** をクリックします。
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 スアジャナラ語の公開
+## 2.3.3 スア ジョルナダの公開
 
-ヴォーチェ・アインダ・プレシサ・アム・ノーム・ア・スア・ヨルナダ。 ボーチュポーデ・ファザー・イッソ・クリカンド・ノ・イコーネ **プロパティ** 上等のディレイトダテラは無い。
+Você ainda precisa dar um Nome à sua jornada.（ボーシェ・アインダ・プレッサ・ダルーム・ノーム・ア・スア・ジョルナダ） Você pode fazer isso clicando no ícone **プロパティ** no canto superior direito da tela.
 
 ![ACOP](./images/journeyname.png)
 
-Vocêpode fazer isso clicando no item clicar no item &quot;Name&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. クリック **OK** mudanças としての para salvar
+Você pode fazer isso clicando no item clicar no item &quot;Name&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças.
 
 ![ACOP](./images/journeyname1.png)
 
-アゴラヴォーポードパブリカルスアヨルナ・クリカンド・エム **公開**.
+Agora você pode publicar sua jornada clicando em **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-クリック **公開**  ノバメンテ
+Clique em **Publish** novamente。
 
 ![ACOP](./images/publish1.png)
 
-Vocêverá uma barra de confirmação verde informando que sua jornaagora está Publicada.
+Você verá uma barra de confirmação verde informando que sua jornada agora está Publicada. （英語）
 
 ![ACOP](./images/published.png)
 
-ヴォーテルミヌーはエキスペルシオをテストした。
+Você terminou este exercício.（ヴォケ・ターミョウ・エステ・エクセシオ）
 
-プロクシマエタパ： [2.4 テストスアヨルナダ](./ex4.md)
+Próxima etapa: [2.4 Teste sua jornada](./ex4.md)
 
-[レトルナルパラフルクソデウサリオ 2](./uc2.md)
+[レトルナル パラ フルクソ デ ウスアリオ 2](./uc2.md)
 
-[レトルナーパラトドスオスモドゥロス](../../overview.md)
+[レトルナル パラ トドス オス モドゥロス](../../overview.md)

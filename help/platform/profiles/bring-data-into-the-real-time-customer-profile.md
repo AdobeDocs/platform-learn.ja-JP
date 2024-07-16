@@ -1,6 +1,6 @@
 ---
-title: データをリアルタイム顧客プロファイルに取り込む
-description: リアルタイム顧客プロファイルにより、カスタマージャーニーの各段階を通じて、チャネル間のパーソナライズ機能を大幅に実現します。リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にするには、スキーマと対応するデータセットの両方を有効にします。
+title: リアルタイム顧客プロファイルにデータを取り込む
+description: リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。
 feature: Profiles
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -9,13 +9,13 @@ thumbnail: 27301.jpg
 exl-id: fc7aad9e-8eaf-4101-b41e-a0d9b127f8be
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 27%
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
 
-# データをリアルタイム顧客プロファイルに取り込む
+# リアルタイム顧客プロファイルにデータを取り込む
 
-リアルタイム顧客プロファイルにより、カスタマージャーニーの各段階を通じて、チャネル間のパーソナライズ機能を大幅に実現します。バッチデータまたはストリーミングデータは、スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対して有効にできます。 製品ドキュメントについて詳しくは、 [リアルタイム顧客プロファイルへのデータの追加](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html) および [API を使用したプロファイルのデータセットの設定](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html).
+リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。 製品ドキュメントについて詳しくは、[ リアルタイム顧客プロファイルへのデータの追加 ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html) および [API を使用したプロファイルのデータセットの設定 ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on)

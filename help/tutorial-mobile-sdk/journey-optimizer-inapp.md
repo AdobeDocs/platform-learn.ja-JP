@@ -1,6 +1,6 @@
 ---
 title: Platform Mobile SDK を使用したアプリ内メッセージの作成と送信
-description: Platform Mobile SDK およびAdobe Journey Optimizerを使用して、アプリ内メッセージを作成し、モバイルアプリに送信する方法について説明します。
+description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、アプリ内メッセージを作成し、モバイルアプリに送信する方法について説明します。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
@@ -9,108 +9,108 @@ exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
 source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # アプリ内メッセージの作成と送信
 
-Experience PlatformMobile SDK とJourney Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法について説明します。
+Experience Platformの Mobile SDK とJourney Optimizerを使用して、モバイルアプリ用のアプリ内メッセージを作成する方法を説明します。
 
-Journey Optimizerでは、ターゲットを絞ったオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerのキャンペーンは、様々なチャネルを使用して、特定のオーディエンスに 1 回限りのコンテンツを配信する場合に使用します。 キャンペーンでは、アクションは即座に、または指定したスケジュールに基づいて、同時に実行されます。 ジャーニーを使用する場合 ( [Journey Optimizerプッシュ通知](journey-optimizer-push.md) レッスン ) では、アクションが順に実行されます。
+Journey Optimizerでは、ターゲットオーディエンスにアプリ内メッセージを送信するキャンペーンを作成できます。 Journey Optimizerのキャンペーンは、様々なチャネルを使用して、特定のオーディエンスに 1 回限りのコンテンツを配信するために使用します。 キャンペーンでは、アクションは指定したスケジュールに基づいて同時にまたは即時に実行されます。 ジャーニーを使用すると（[Journey Optimizerのプッシュ通知 ](journey-optimizer-push.md) レッスンを参照）、アクションが順番に実行されます。
 
 ![アーキテクチャ](assets/architecture-ajo.png)
 
-Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合がおこなわれていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、 [ドキュメント](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en) を参照してください。
 
 >[!NOTE]
 >
->このレッスンはオプションで、アプリ内メッセージの送信を希望するJourney Optimizerユーザーにのみ適用されます。
+>このレッスンはオプションで、アプリ内メッセージの送信を検討しているJourney Optimizer ユーザーにのみ適用されます。
 
 
 ## 前提条件
 
-* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
-* アプリをAdobe Experience Platform用に設定します。
-* Journey Optimizerへのアクセスと十分な権限（説明を参照） [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). また、次のJourney Optimizer機能に対する十分な権限が必要です。
-   * キャンペーンを管理します。
-* 物理iOSデバイスまたはテスト用のシミュレーター。
+* SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
+* Adobe Experience Platform用にアプリを設定します。
+* Journey Optimizerへのアクセスと、説明に従った十分な権限 [ こちら ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
+   * キャンペーンの管理。
+* テスト用の物理的なiOSデバイスまたはシミュレーター。
 
 
-## 学習内容
+## 学習目標
 
 このレッスンでは、次の操作を行います
 
-* AJO でアプリサーフェスを作成します。
-* Journey Optimizerタグ拡張機能をインストールして設定します。
-* アプリを更新して、Journey Optimizerタグ拡張を登録します。
-* アシュランスで設定を検証します。
-* Journey Optimizerで独自のキャンペーンとアプリ内メッセージエクスペリエンスを定義する。
+* AJOでアプリサーフェスを作成します。
+* Journey Optimizer タグ拡張機能をインストールして設定します。
+* アプリを更新して、Journey Optimizer タグ拡張機能を登録します。
+* Assurance の設定を検証します。
+* Journey Optimizerで独自のキャンペーンおよびアプリ内メッセージエクスペリエンスを定義します。
 * アプリ内から独自のアプリ内メッセージを送信します。
 
 ## セットアップ
 
 >[!TIP]
 >
->環境を既に [Journey Optimizerプッシュメッセージ](journey-optimizer-push.md) レッスンでは、このセットアップセクションの手順の一部を既に実行している可能性があります。
+>[Journey Optimizer プッシュメッセージ ](journey-optimizer-push.md) レッスンの一部として既に環境を設定している場合は、この設定の節の手順のいくつかが既に実行されている可能性があります。
 
 
-### データ収集にアプリケーションサーフェスを追加する
+### データ収集でのアプリサーフェスの追加
 
-1. 次から： [データ収集インターフェイス](https://experience.adobe.com/data-collection/)を選択します。 **[!UICONTROL アプリのサーフェス]** をクリックします。
-1. 設定を作成するには、「 」を選択します。 **[!UICONTROL アプリサーフェスを作成]**.
-   ![アプリのサーフェスホーム](assets/push-app-surface.png)
-1. を入力します。 **[!UICONTROL 名前]** 設定の場合、例： `Luma App Tutorial`  .
-1. 送信者 **[!UICONTROL モバイルアプリケーション設定]**&#x200B;を選択します。 **[!UICONTROL Apple iOS]**.
-1. にモバイルアプリのバンドル ID を入力します。 **[!UICONTROL アプリ ID (iOS Bundle ID)]** フィールドに入力します。 例：  `com.adobe.luma.tutorial.swiftui`.
+1. [ データ収集インターフェイス ](https://experience.adobe.com/data-collection/) で、左側のパネルの **[!UICONTROL アプリサーフェス]** を選択します。
+1. 設定を作成するには、「**[!UICONTROL アプリサーフェスを作成]**」を選択します。
+   ![ アプリサーフェスホーム ](assets/push-app-surface.png)
+1. 設定の **[!UICONTROL 名前]** を入力します（例：`Luma App Tutorial`）。
+1. **[!UICONTROL モバイルアプリケーション設定]** から、「**[!UICONTROL Apple iOS]**」を選択します。
+1. **[!UICONTROL アプリ ID （iOS バンドル ID）]** フィールドにモバイルアプリのバンドル ID を入力します。 例：`com.adobe.luma.tutorial.swiftui`。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![アプリのサーフェス設定](assets/push-app-surface-config-inapp.png)
+   ![ アプリサーフェスの設定 ](assets/push-app-surface-config-inapp.png)
 
 ### データストリーム設定を更新
 
-モバイルアプリから Edge ネットワークにデータが確実に送信されるようにするには、Experience Edge の設定を更新します。
+モバイルアプリからEdge Networkーへデータが確実にJourney Optimizerに転送されるようにするには、Experience Edgeの設定を更新します。
 
 
 
-1. データ収集 UI で、「 」を選択します。 **[!UICONTROL データストリーム]**&#x200B;を選択し、例えば、データストリームを選択します。 **[!DNL Luma Mobile App]**.
-1. 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 対象： **[!UICONTROL Experience Platform]** を選択し、 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
-1. Adobe Analytics の **[!UICONTROL データストリーム]** > ![フォルダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** スクリーン、確認する **[!UICONTROL Adobe Journey Optimizer]** が選択されている。 詳しくは、 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) を参照してください。
-1. データストリーム設定を保存するには、 **[!UICONTROL 保存]**.
+1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
+1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 「{ その他 ]**」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL  編集 ]**を選択します。**[!UICONTROL 
+1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Adobe Journey Optimizer]**」が選択されていることを確認します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 設定を参照してください。
+1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
 
-   ![AEP データストリーム設定](assets/datastream-ajo-inapp-configuration.png)
+   ![AEP データストリーム設定 ](assets/datastream-ajo-inapp-configuration.png)
 
 
-### Journey Optimizer Tags 拡張機能のインストール
+### Journey Optimizer タグ拡張機能のインストール
 
-アプリがJourney Optimizerで動作するようにするには、タグプロパティを更新する必要があります。
+アプリがJourney Optimizerと連携するには、タグプロパティを更新する必要があります。
 
-1. に移動します。 **[!UICONTROL タグ]** > **[!UICONTROL 拡張機能]** > **[!UICONTROL カタログ]**.
-1. プロパティを開きます（例： ）。 **[!DNL Luma Mobile App Tutorial]**.
-1. 選択 **[!UICONTROL カタログ]**.
-1. を検索します。 **[!UICONTROL Adobe Journey Optimizer]** 拡張子。
+1. **[!UICONTROL タグ]**/**[!UICONTROL 拡張機能]**/**[!UICONTROL カタログ]** に移動します。
+1. プロパティを開きます（例：**[!DNL Luma Mobile App Tutorial]**）。
+1. **[!UICONTROL カタログ]** を選択します。
+1. **[!UICONTROL Adobe Journey Optimizer]** 拡張機能を検索します。
 1. 拡張機能をインストールします。
 
-条件 *のみ* アプリ内でのアプリ内メッセージの使用、 **[!UICONTROL 拡張機能のインストール]** または **[!UICONTROL 拡張機能の設定]**&#x200B;に値を指定する場合、何も設定する必要はありません。 ただし、既に [プッシュ通知](journey-optimizer-push.md) このチュートリアルでは、 **[!UICONTROL 開発]** 環境、 **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセットが次から選択されました： **[!UICONTROL イベントデータセット]** リスト。
+*のみ* アプリでアプリ内メッセージを使用する場合、**[!UICONTROL 拡張機能のインストール]** または **[!UICONTROL 拡張機能の設定]** では、何も設定する必要はありません。 ただし、このチュートリアルの [ プッシュ通知 ](journey-optimizer-push.md) レッスンを既に完了している場合は、**[!UICONTROL 開発]** 環境で、**[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセットが **[!UICONTROL イベントデータセット]** リストから選択されていることがわかります。
 
 
-### アプリでのJourney Optimizerの実装
+### アプリへのJourney Optimizerの実装
 
-前のレッスンで説明したように、モバイルタグ拡張機能のインストールでは設定のみが提供されます。 次に、メッセージング SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、 [SDK のインストール](install-sdks.md) 」セクションに入力します。
+前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、Messaging SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、「SDK のインストール [ の節を参照し ](install-sdks.md) ください。
 
 >[!NOTE]
 >
->以下を完了した場合、 [SDK のインストール](install-sdks.md) 」セクションに移動した場合は、SDK が既にインストールされているので、この手順をスキップできます。
+>[SDK のインストール ](install-sdks.md) の節を完了した場合、SDK は既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、 [AEP メッセージ](https://github.com/adobe/aepsdk-messaging-ios) は、パッケージの依存関係にパッケージのリストに追加されます。 詳しくは、 [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 」をクリックします。
-1. 確認 `AEPMessaging` は、インポートのリストの一部です。
+1. Xcode で、[AEP メッセージ ](https://github.com/adobe/aepsdk-messaging-ios) がパッケージの依存関係のパッケージのリストに追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!UICONTROL AppDelegate]** に移動します。
+1. `AEPMessaging` が読み込みのリストに含まれていることを確認します。
 
    `import AEPMessaging`
 
-1. 確認 `Messaging.self` は、登録する拡張機能の配列の一部です。
+1. `Messaging.self` が、登録している拡張機能の配列の一部であることを確認します。
 
    ```swift
    let extensions = [
@@ -129,72 +129,72 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
    ```
 
 
-## アシュランスを使用して設定を検証
+## Assurance で設定を検証
 
-1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
-1. Assurance UI で、 **[!UICONTROL 設定]**.
-   ![クリックを設定](assets/push-validate-config.png)
-1. を選択します。 ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 隣のボタン **[!UICONTROL アプリ内メッセージ]**.
+1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
+1. Assurance UI で、「**[!UICONTROL 設定]**」を選択します。
+   ![ 設定クリック ](assets/push-validate-config.png)
+1. **[!UICONTROL アプリ内メッセージ]** の横にある「![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」ボタンを選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
-   ![保存](assets/assurance-in-app-config.png)
-1. 選択 **[!UICONTROL アプリ内メッセージ]** をクリックします。
-1. を選択します。 **[!UICONTROL 検証]** タブをクリックします。 エラーが表示されていないことを確認します。
+   ![ 保存 ](assets/assurance-in-app-config.png)
+1. 左側のナビゲーションから **[!UICONTROL アプリ内メッセージ]** を選択します。
+1. 「**[!UICONTROL 検証]**」タブを選択します。 エラーがないことを確認します。
 
-   ![アプリ内検証](assets/assurance-in-app-validate.png)
+   ![ アプリ内検証 ](assets/assurance-in-app-validate.png)
 
 
 ## 独自のアプリ内メッセージの作成
 
-独自のアプリ内メッセージを作成するには、発生したイベントに基づいてアプリ内メッセージをトリガーするキャンペーンをJourney Optimizerで定義する必要があります。 以下のイベントが発生します。
+独自のアプリ内メッセージを作成するには、発生したイベントに基づいてアプリ内メッセージをトリガーにするキャンペーンをJourney Optimizerで定義する必要があります。 次のイベントがあります。
 
-* Adobe Experience Platformに送信されたデータ
-* Mobile Core の汎用 API を使用した、PII データのアクション、状態やコレクションなどのコアトラッキングイベント
-* アプリケーションのライフサイクルイベント（起動、インストール、アップグレード、閉じる、クラッシュなど）
-* 目標地点の入力や終了などの位置情報イベント。
+* Adobe Experience Platformに送信されるデータ
+* mobile Core の汎用 API を使用した、アクションなどのコアトラッキングイベント、または PII データの状態や収集、
+* アプリケーション・ライフサイクル・イベント（起動、インストール、アップグレード、終了、クラッシュなど）
+* ジオロケーションイベント（目標点へのエントリや離脱など）。
 
-このチュートリアルでは、Mobile Core の汎用 API と拡張機能に依存しない API を使用します ( [Mobile Core 汎用 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) を使用して、ユーザー画面、アクションおよび PII データのイベント追跡を容易におこなえます。 これらの API で生成されたイベントは、SDK イベントハブに公開され、拡張機能で使用できます。 SDK イベントハブは、すべての Mobile Platform SDK 拡張機能に関連付けられたコアデータ構造を提供し、登録された拡張機能と内部モジュールのリスト、登録されたイベントリスナーのリスト、共有状態データベースを維持します。
+このチュートリアルでは、Mobile Core の汎用 API と拡張機能に依存しない API （[Mobile Core の汎用 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis) を参照）を使用して、ユーザー画面、アクション、PII データのイベントを簡単に追跡できるようにします。 これらの API で生成されたイベントは、SDK イベントハブに公開され、拡張機能で使用できます。 SDK イベントハブは、すべての Mobile Platform SDK 拡張機能に結び付けられたコアデータ構造を提供し、登録済みの拡張機能と内部モジュールのリスト、登録済みのイベントリスナーのリスト、および共有状態データベースを維持します。
 
-SDK イベントハブは、登録済み拡張機能のイベントデータを公開および受け取り、Adobeやサードパーティソリューションとの統合を簡略化します。 例えば、 Optimize 拡張機能がインストールされている場合、Journey Optimizer - Decision Management オファーエンジンとのすべてのリクエストとインタラクションは、イベントハブによって処理されます。
+SDK Event Hub は、登録された拡張機能からイベントデータを公開および受け取り、Adobeソリューションやサードパーティソリューションとの統合を容易にします。 例えば、「最適化」拡張機能がインストールされている場合、Journey Optimizer - Decision Management オファーエンジンに対するすべてのリクエストとインタラクションは、イベントハブで処理されます。
 
-1. Journey Optimizer UI で、 **[!UICONTROL キャンペーン]** をクリックします。
-1. 選択 **[!UICONTROL キャンペーンを作成]**.
-1. Adobe Analytics の **[!UICONTROL キャンペーンを作成]** 画面：
-   1. 選択 **[!UICONTROL アプリ内メッセージ]** をクリックし、 **[!UICONTROL アプリサーフェス]** 例えば、リスト **[!DNL Luma Mobile App]**.
-   1. 選択 **[!UICONTROL 作成]**
-      ![キャンペーンのプロパティ](assets/ajo-campaign-properties.png)
-1. キャンペーンの定義画面で、 **[!UICONTROL プロパティ]**、 **[!UICONTROL 名前]** （例：キャンペーン） `Luma - In-App Messaging Campaign`、および **[!UICONTROL 説明]**&#x200B;例： `In-app messaging campaign for Luma app`.
-   ![キャンペーン名](assets/ajo-campaign-properties-name.png)
-1. 下にスクロールして **[!UICONTROL アクション]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL コンテンツを編集]**.
-1. Adobe Analytics の **[!UICONTROL アプリ内メッセージ]** 画面：
-   1. 選択 **[!UICONTROL モーダル]** として **[!UICONTROL メッセージのレイアウト]**.
-   2. 入力 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` （の） **[!UICONTROL メディア URL]**.
-   3. を入力します。 **[!UICONTROL ヘッダー]**&#x200B;例： `Welcome to this Luma In-App Message` を入力し、 **[!UICONTROL 本文]**&#x200B;例： `Triggered by pushing that button in the app...`.
-   4. 入力 **[!UICONTROL 解除]** として **[!UICONTROL ボタン#1テキスト（プライマリ）]**.
-   5. プレビューの更新方法を確認します。
-   6. 選択 **[!UICONTROL 有効化するレビュー]**.
-      ![アプリ内エディター](assets/ajo-in-app-editor.png)
-1. Adobe Analytics の **[!UICONTROL 有効化のレビュー（Luma — アプリ内メッセージキャンペーン）]** 画面、選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) （内） **[!UICONTROL スケジュール]** タイル。
-   ![スケジュールを確認し、「スケジュール」を選択します。](assets/ajo-review-select-schedule.png)
-1. 戻る **[!DNL Luma - In-App Messaging Campaign]** 画面、選択 ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集トリガー]**.
-1. Adobe Analytics の **[!UICONTROL アプリ内メッセージトリガー]** ダイアログで、アプリ内メッセージをトリガーにするトラックアクションの詳細を設定します。
-   1. 削除するには **[!UICONTROL アプリケーション起動イベント]**&#x200B;を選択します。 ![閉じる](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
-   1. 用途 ![追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 条件を追加]** 次の論理を繰り返し構築する **[!UICONTROL 次の場合にメッセージを表示]**.
+1. Journey Optimizer UI の左パネルで「**[!UICONTROL キャンペーン]**」をクリックします。
+1. **[!UICONTROL キャンペーンを作成]** を選択します。
+1. **[!UICONTROL キャンペーンを作成]** 画面で、次の操作を行います。
+   1. 「**[!UICONTROL アプリ内メッセージ]**」を選択し、「**[!UICONTROL アプリサーフェス]**」リストからアプリサーフェス（例：**[!DNL Luma Mobile App]**）を選択します。
+   1. 「**[!UICONTROL 作成]**」を選択します。
+      ![ キャンペーンのプロパティ ](assets/ajo-campaign-properties.png)
+1. キャンペーン定義画面の **[!UICONTROL プロパティ]** で、キャンペーンの **[!UICONTROL 名前]** （例：`Luma - In-App Messaging Campaign`）と **[!UICONTROL 説明]** （例：`In-app messaging campaign for Luma app`）を入力します。
+   ![ キャンペーン名 ](assets/ajo-campaign-properties-name.png)
+1. **[!UICONTROL アクション]** までスクロールし、「**[!UICONTROL コンテンツを編集]**」を選択します。
+1. **[!UICONTROL アプリ内メッセージ]** 画面で、次の操作を行います。
+   1. **[!UICONTROL メッセージレイアウト]** として **[!UICONTROL モーダル]** を選択します。
+   2. **[!UICONTROL メディア URL]** の `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` を入力します。
+   3. **[!UICONTROL Header]** （例：`Welcome to this Luma In-App Message`）を入力し、**[!UICONTROL Body]** （例：`Triggered by pushing that button in the app...`）を入力します。
+   4. **[!UICONTROL ボタンの#1 のテキスト]** プライマリ） **** として「解除」と入力します。
+   5. プレビューの更新方法に注意してください。
+   6. 「**[!UICONTROL アクティブ化するレビュー]**」を選択します。
+      ![ アプリ内エディター ](assets/ajo-in-app-editor.png)
+1. **[!UICONTROL アクティブ化するレビュー（Luma - アプリ内メッセージキャンペーン）画面]****[!UICONTROL スケジュール ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) タイルの ![ 編集]** を選択します。
+   ![ レビューのスケジュールで「スケジュール」を選択 ](assets/ajo-review-select-schedule.png)
+1. **[!DNL Luma - In-App Messaging Campaign]** 画面に戻り、「![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL トリガーを編集]** を選択します。
+1. **[!UICONTROL アプリ内メッセージのトリガー]** ダイアログでは、アプリ内メッセージをトリガーにするトラックアクションの詳細を設定します。
+   1. **[!UICONTROL アプリケーションの起動イベント]** を削除するには、「![ 閉じる ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)」を選択します。
+   1. ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL Add 条件]** を繰り返し使用して、「次の場合にメッセージを表示 **[!UICONTROL のロジックを作成し]** す。
    1. 「**[!UICONTROL 完了]**」をクリックします。
-      ![トリガー論理](assets/ajo-trigger-logic.png)
+      ![トリガー ロジック ](assets/ajo-trigger-logic.png)
 
-   トラックアクションを定義し、 **[!UICONTROL アクション]** 次と等しい `in-app` そして **[!UICONTROL コンテキストデータ]** がのキーと値のペア `"showMessage" : "true"`.
+   **[!UICONTROL Action]** が `in-app` に等しく、**[!UICONTROL コンテキストデータ]** が `"showMessage" : "true"` のキー値ペアである追跡アクションを定義しました。
 
-1. 戻る **[!DNL Luma - In-App Messaging Campaign]** 画面、選択 **[!UICONTROL 有効化するレビュー]**.
-1. Adobe Analytics の **[!UICONTROL 有効化のレビュー（Luma — アプリ内メッセージキャンペーン）]** 画面、選択 **[!UICONTROL 有効化]**.
-1. 表示される **[!DNL Luma - In-App Messaging Campaign]** ステータス別 **[!UICONTROL ライブ]** （内） **[!UICONTROL キャンペーン]** リスト。
+1. **[!DNL Luma - In-App Messaging Campaign]** の画面に戻り、「アクティブ化するレビュー **[!UICONTROL を選択し]** す。
+1. **[!UICONTROL アクティブ化するレビュー（Luma - アプリ内メッセージキャンペーン）画面で]** 「**[!UICONTROL アクティブ化]**」を選択します。
+1. ステータスが **[!UICONTROL ライブ]** の **[!DNL Luma - In-App Messaging Campaign]** が **[!UICONTROL キャンペーン]** リストに表示されます。
    ![キャンペーンリスト](assets/ajo-campaign-list.png)
 
 
 ## アプリ内メッセージのトリガー
 
-アプリ内メッセージを送信するためのすべての材料が揃っています。 残りの点は、アプリでこのアプリ内メッセージにトリガーを設定する方法です。
+アプリ内メッセージを送信するための材料がすべて用意されています。 残っているのは、アプリにこのアプリ内メッセージをトリガーする方法です。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。 次を検索： `func sendTrackAction(action: String, data: [String: Any]?)` 関数を呼び出し、次のコードを追加します。このコードは、 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 関数、パラメーターに基づく `action` および `data`.
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動します。 `func sendTrackAction(action: String, data: [String: Any]?)` 関数を検索し、パラメーター `action` および `data` に基づいて [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 関数を呼び出す次のコードを追加します。
 
 
    ```swift
@@ -202,7 +202,7 @@ SDK イベントハブは、登録済み拡張機能のイベントデータを�
    MobileCore.track(action: action, data: data)
    ```
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** をクリックします。 アプリ内メッセージボタンのコードを探し、次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]** / **[!DNL Luma]** / **[!DNL Views]** / **[!DNL General]** / **[!UICONTROL ConfigView]** に移動します。 アプリ内メッセージ ボタンのコードを見つけて、次のコードを追加します。
 
    ```swift
    // Setting parameters and calling function to send in-app message
@@ -213,35 +213,35 @@ SDK イベントハブは、登録済み拡張機能のイベントデータを�
 
 ## アプリを使用した検証
 
-1. を使用して、シミュレーターまたは Xcode の物理デバイスでアプリを再構築し、実行します。 ![再生](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレータまたは Xcode の物理デバイスでアプリを再構築して実行します。
 
-1. 次に移動： **[!UICONTROL 設定]** タブをクリックします。
+1. 「**[!UICONTROL 設定]**」タブに移動します。
 
-1. タップ **[!UICONTROL アプリ内メッセージ]**. アプリ内メッセージがアプリに表示されます。
+1. **[!UICONTROL アプリ内メッセージ]** をタップします。 アプリ内メッセージがアプリに表示されます。
 
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## アシュランスでの実装の検証
+## Assurance での実装の検証
 
 Assurance UI でアプリ内メッセージを検証できます。
 
-1. 以下を確認します。 [設定手順](assurance.md#connecting-to-a-session) シミュレーターまたはデバイスを Assurance に接続するには、「 」セクションを参照してください。
-1. 選択 **[!UICONTROL アプリ内メッセージ]**.
-1. 選択 **[!UICONTROL イベントリスト]**.
-1. を選択します。 **[!UICONTROL メッセージを表示]** エントリ。
-1. Inspect未加工のイベント、特に `html`：アプリ内メッセージの完全なレイアウトとコンテンツを含む。
-   ![アプリ内メッセージのアシュランス](assets/assurance-in-app-display-message.png)
+1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
+1. 「**[!UICONTROL アプリ内メッセージ]**」を選択します。
+1. **[!UICONTROL イベントリスト]** を選択します。
+1. **[!UICONTROL メッセージを表示]** エントリを選択します。
+1. raw イベント（特に `html`）をInspectします。これには、アプリ内メッセージの完全なレイアウトとコンテンツが含まれます。
+   ![Assurance アプリ内メッセージ ](assets/assurance-in-app-display-message.png)
 
 
 ## 次の手順
 
-これで、関連する適用可能なアプリ内メッセージの追加を開始するためのすべてのツールが用意されました。 例えば、アプリ内で追跡している特定のインタラクションに基づいて製品をプロモーションする場合などです。
+これで、関連する該当する場合は、アプリ内メッセージの追加を開始するためのすべてのツールが用意できました。 例えば、アプリで追跡している特定のインタラクションに基づいて製品をプロモーションする場合などです。
 
 >[!SUCCESS]
 >
->アプリでアプリ内メッセージを有効にし、Experience PlatformMobile SDK 用のJourney OptimizerとJourney Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。
+>アプリ内メッセージ用にアプリを有効にし、Journey Optimizerと、Experience Platform Mobile SDK 用のJourney Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
-次へ： **[オファーの作成と表示](journey-optimizer-offers.md)**
+次のトピック：**[オファーの作成および表示](journey-optimizer-offers.md)**

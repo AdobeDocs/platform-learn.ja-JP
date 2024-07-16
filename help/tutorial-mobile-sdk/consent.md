@@ -1,45 +1,45 @@
 ---
-title: Platform Mobile SDK 実装の同意の実装
-description: モバイルアプリに同意を実装する方法を説明します。
+title: Platform Mobile SDK 実装に対する同意の実装
+description: モバイルアプリで同意を実装する方法を説明します。
 feature: Mobile SDK,Consent
 jira: KT-14629
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 同意の実装
 
-モバイルアプリに同意を実装する方法を説明します。
+モバイルアプリで同意を実装する方法を説明します。
 
-Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience Platform Mobile SDK と Edge Network 拡張機能を使用する際に、モバイルアプリから同意設定を収集できます。 詳しくは、 [同意拡張](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) 」を参照してください。
+Adobe Experience Platform同意モバイル拡張機能を使用すると、Adobe Experience Platform Mobile SDK およびEdge Network拡張機能を使用する際に、モバイルアプリから同意環境設定を収集できます。 [ 同意拡張機能 ](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) について詳しくは、ドキュメントを参照してください。
 
 ## 前提条件
 
-* SDK が正常に構築され、インストールされ、設定された状態でアプリが実行されました。
+* SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 
-## 学習内容
+## 学習目標
 
-このレッスンでは、次の操作を実行します。
+このレッスンでは、次の操作を行います。
 
-* ユーザーに同意を求めるプロンプトを表示します。
+* ユーザーに同意を求めます。
 * ユーザーの応答に基づいて拡張機能を更新します。
 * 現在の同意状態を取得する方法を説明します。
 
 ## 同意を求める
 
-チュートリアルを最初から実行した場合は、同意拡張機能のデフォルトの同意がに設定されていることを覚えておく必要があります。 **[!UICONTROL 保留中 — ユーザーが同意設定を提供する前に発生したイベントをキューに入れます。]**
+最初からチュートリアルに従った場合、同意拡張機能のデフォルトの同意を、ユーザーが同意環境設定を指定する前に発生する **[!UICONTROL 保留中 – キューのイベント]** に設定していることに注意してください。
 
-データの収集を開始するには、ユーザーから同意を得る必要があります。 実際のアプリでは、お住まいの地域の同意に関するベストプラクティスを参照してください。 このチュートリアルでは、次のアラートを使用して要求するだけで、ユーザーの同意を得ることができます。
+データの収集を開始するには、ユーザーの同意を得る必要があります。 実際のアプリでは、お住まいの地域に合わせた同意のベストプラクティスを参照する必要があります。 このチュートリアルでは、アラートを付けて要求するだけで、ユーザーから同意を得ます。
 
-1. ユーザーに同意を求めるのは 1 回だけです。 これをおこなうには、Mobile SDK の同意と、Apple Mobile Service を使用した追跡に必要な認証を組み合わせます [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). このアプリでは、ユーザーが追跡を許可する場合に、イベントの収集に同意すると想定します。
+1. ユーザーに同意を求めるのは 1 回だけです。 これを行うには、Mobile SDK の同意を、Apple [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency) を使用したトラッキングに必要な認証と組み合わせます。 このアプリでは、トラッキングを承認するユーザーが、イベントの収集に同意すると仮定します。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 」をクリックします。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動します。
 
-   このコードを `updateConsent` 関数に置き換えます。
+   このコードを `updateConsent` 関数に追加します。
 
    ```swift
    // Update consent
@@ -49,9 +49,9 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 免責事項ビュー]** Xcode のプロジェクトナビゲーター。アプリケーションをインストールまたは再インストールして、初めてアプリを起動した後に表示されるビューです。 Appleの設定ごとにトラッキングを承認するように求められます。 [App Tracking Transparency フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency). ユーザーが承認した場合は、同意も更新します。
+1. Xcode のプロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL General]**/**[!UICONTROL DisclaimerView]** に移動します。これは、アプリケーションをインストールまたは再インストールし、アプリを初めて起動した後に表示されるビューです。 Appleごとのトラッキングを認証するプロンプトが表示されます [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency)。 ユーザーが承認すると、同意も更新されます。
 
-   次のコードを `ATTrackingManager.requestTrackingAuthorization { status in` クロージャ。
+   `ATTrackingManager.requestTrackingAuthorization { status in` クロージャに次のコードを追加します。
 
    ```swift
    // Add consent based on authorization
@@ -65,13 +65,13 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    }
    ```
 
-## 現在の同意状態を取得する
+## 現在の同意状態を取得
 
-同意モバイル拡張機能では、現在の同意値に基づいて、 / pends /を自動的に抑制し、トラッキングを許可します。 また、現在の同意状態に自分でアクセスすることもできます。
+同意モバイル拡張機能は、現在の同意値に基づいて、トラッキングを自動的に抑制/保留/許可します。 現在の同意状態に自分でアクセスすることもできます。
 
-1. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode のプロジェクトナビゲーター内。
+1. Xcode のプロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動します。
 
-   次のコードを `getConsents` 関数：
+   `getConsents` 関数に次のコードを追加します。
 
    ```swift
    // Get consents
@@ -83,29 +83,29 @@ Adobe Experience Platform Consent モバイル拡張機能は、Adobe Experience
    }
    ```
 
-2. に移動します。 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** Xcode のプロジェクトナビゲーター内。
+2. Xcode のプロジェクトナビゲーターで、**[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL General]**/**[!UICONTROL HomeView]** に移動します。
 
-   次のコードを `.task` 修飾子：
+   `.task` 修飾子に次のコードを追加します。
 
    ```swift
    // Ask status of consents
    MobileSDK.shared.getConsents()   
    ```
 
-上記の例では、単に Xcode 内のコンソールに同意ステータスをログに記録するだけです。 実際のシナリオでは、これを使用して、ユーザーに表示されるメニューやオプションを変更できます。
+上記の例では、同意ステータスを Xcode のコンソールに記録するだけです。 実際のシナリオでは、ユーザーに表示するメニューやオプションを変更する場合に使用します。
 
-## アシュランスで検証
+## Assurance での検証
 
-1. デバイスまたはシミュレーターからアプリケーションを削除して、トラッキングと同意を適切にリセットおよび初期化します。
-1. シミュレーターまたはデバイスを Assurance に接続するには、 [設定手順](assurance.md#connecting-to-a-session) 」セクションに入力します。
-1. 次の場所からアプリ内を移動するとき： **[!UICONTROL ホーム]** 画面に表示 **[!UICONTROL 製品]** 画面と戻る **[!UICONTROL ホーム]** 画面に、 **[!UICONTROL 同意応答を取得]** イベントが Assurance UI に表示されます。
-   ![同意を検証](assets/consent-update.png)
+1. デバイスまたはシミュレーターからアプリケーションを削除して、トラッキングと同意を適切にリセットして初期化します。
+1. シミュレーターまたはデバイスを Assurance に接続するには、「セットアップ手順 [ セクションを確認し ](assurance.md#connecting-to-a-session) ください。
+1. アプリを **[!UICONTROL ホーム]** 画面から **[!UICONTROL 製品]** 画面に移動し、**[!UICONTROL ホーム]** 画面に戻ると、Assurance UI に **[!UICONTROL 同意応答を取得]** イベントが表示されます。
+   ![ 同意を検証 ](assets/consent-update.png)
 
 
 >[!SUCCESS]
 >
->これで、Adobe Experience Platform Mobile SDK を使用した同意を求めるメッセージが、インストール後（または再インストール後）の最初の起動時にアプリで有効になりました。
+>これで、Adobe Experience Platform Mobile SDK を使用して、インストール（または再インストール）後の最初の開始時に同意を求めるプロンプトをアプリで表示できるようになりました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を割いていただき、ありがとうございます。 ご質問がある場合、一般的なフィードバックを共有する場合、または今後のコンテンツに関する提案がある場合は、このドキュメントで共有します [Experience Leagueコミュニティディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-次へ： **[ライフサイクルデータの収集](lifecycle-data.md)**
+次のトピック：**[ライフサイクル・データの収集](lifecycle-data.md)**

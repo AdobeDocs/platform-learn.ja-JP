@@ -9,8 +9,8 @@ thumbnail: 331028.jpg
 exl-id: 2f9c3f6f-169a-431f-b697-a5ed86c274f5
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 37%
+source-wordcount: '89'
+ht-degree: 42%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 37%
 
 ## 追加情報
 
-* [API API ドキュメントを使用したストリーミング接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [ストリーミング取得 API ドキュメントを使用したレコードデータのストリーミング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [ストリーミング取得 API ドキュメントを使用した時系列データのストリーミング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [単一の HTTP リクエストドキュメントで複数のメッセージを送信](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [API ドキュメントを使用したストリーミング接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html)。
+* [ ストリーミング取得 API ドキュメントを使用したレコードデータのストリーミング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
+* [ ストリーミング取得 API ドキュメントを使用した時系列データのストリーミング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
+* [1 つの HTTP リクエストドキュメントでの複数メッセージの送信 ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)

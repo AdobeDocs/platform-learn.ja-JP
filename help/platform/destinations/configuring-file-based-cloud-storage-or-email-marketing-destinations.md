@@ -1,6 +1,6 @@
 ---
-title: ファイルベースのクラウドストレージまたはメールマーケティングの宛先の設定
-description: AdobeのReal-Time CDPでのファイルベースの宛先の設定に関するチュートリアルで、ヒントを説明します。 これは、クラウドストレージの宛先（S3 や SFTP など）および電子メールマーケティングの宛先にも当てはまります。
+title: ファイルベースのクラウドストレージまたは電子メールマーケティングの宛先の設定
+description: AdobeのReal-Time CDPでのファイルベースの宛先設定のウォークスルーからヒントを得ます。 これは、クラウドストレージの宛先（S3 や SFTP など）や、メールマーケティングの宛先にも当てはまります。
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -10,16 +10,16 @@ thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 10%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 
-# ファイルベースの設定 [!UICONTROL クラウドストレージ] または [!UICONTROL 電子メールマーケティング] 宛先
+# ファイルベースの [!UICONTROL  クラウドストレージ ] 宛先または [!UICONTROL  メールマーケティング ] 宛先の設定
 
-AdobeのReal-time Customer Data Platform(CDP) におけるファイルベースの宛先の設定に関するチュートリアルで、ヒントを紹介します。 これは次に当てはまります。 [!UICONTROL クラウドストレージ] 宛先（例： S3 や SFTP）および [!UICONTROL 電子メールマーケティング] 宛先。 製品ドキュメントの詳細については、以下を参照してください。
+AdobeのReal-time Customer Data Platform（CDP）におけるファイルベースの宛先設定のウォークスルーからヒントを得ます。 これは、[!UICONTROL  クラウドストレージ ] 宛先（S3 や SFTP など）および [!UICONTROL  メールマーケティング ] 宛先に適用されます。 製品ドキュメントについて詳しくは、以下を参照してください。
 
-* [プロファイルの一括書き出し先に対するオーディエンスデータのアクティブ化](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=ja) Experience PlatformUI を使用してバッチまたは電子メールマーケティングの宛先に対してデータをアクティブ化する方法について
-* [フローサービス API を使用してバッチ宛先に接続し、データをアクティブ化する](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) フローサービス API を使用してバッチまたは電子メールマーケティングの宛先に対してデータをアクティブ化する方法については、
+* Experience Platform UI を使用してバッチまたはメールマーケティングの宛先に対してデータをアクティブ化する方法については、[ プロファイル書き出しのバッチ宛先に対してオーディエンスデータをアクティブ化 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) を参照してください
+* [Flow Service API を使用してバッチまたはメールマーケティングの宛先に対してデータを有効化する方法については ](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html)Flow Service API を使用してバッチ宛先に接続しデータを有効化する方法を参照してください
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on)
