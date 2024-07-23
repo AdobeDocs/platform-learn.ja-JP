@@ -2,10 +2,10 @@
 title: タグを使用したExperience Cloud統合の実装
 description: Adobe Experience Cloud の実装で Audiences、A4T および顧客属性の統合を検証する方法について説明します。このレッスンは、web サイトでのExperience Cloudの実装チュートリアルの一部です。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ ht-degree: 86%
 >
 >これらの統合を完全に使用するために必要なユーザー権限の要件、アカウント設定、プロビジョニング手順は多数ありますが、それらはこのチュートリアルの範囲外ですので、ここでは扱いません。 Experience Cloud の現在の実装でこれらの統合をまだ使用していない場合は、以下を検討する必要があります。
 >
->* [コアサービス統合](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja)の完全な要件の確認
->* [Analytics for Target 統合](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)の完全な要件の確認
->* Experience Cloud 組織の管理者に、[これらの統合のプロビジョニングをリクエスト](https://www.adobe.com/go/audiences)してもらう
+>* [コアサービス統合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)の完全な要件の確認
+>* [Analytics for Target 統合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)の完全な要件の確認
 
 ## Audiences
 
-[Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) は、People コアサービスの一部で、ソリューション間でオーディエンスを共有するためのものです。例えば、Audience Manager でオーディエンスを作成し、それを使用して Target でパーソナライズされたコンテンツを提供することができます。
+[Audiences](https://experienceleague.adobe.com/ja/docs/core-services/interface/services/audiences/overview) は、People コアサービスの一部で、ソリューション間でオーディエンスを共有するためのものです。例えば、Audience Manager でオーディエンスを作成し、それを使用して Target でパーソナライズされたコンテンツを提供することができます。
 
 A4T の実装に必要な主な要件は、次のとおりです（既に済んでいます）。
 
