@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
+source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 19%
+source-wordcount: '917'
+ht-degree: 20%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 19%
 + オーディエンスとセグメント化 {#audiences}
    + [Audience Portal とコンポジションの概要](audiences/introduction-to-audience-portal-and-composition.md)
    + [オーディエンスのアップロード](audiences/upload-audiences.md)
+   + [Federated Audience コンポジションの概要](audiences/overview-of-federated-audience-composition.md)
    + [オーディエンスルールビルダーの概要](audiences/audience-rule-builder-overview.md)
    + [オーディエンスを作成](audiences/create-audiences.md)
    + [コンテンツベースのオーディエンスの作成](audiences/create-content-based-audiences.md)
@@ -83,13 +84,13 @@ ht-degree: 19%
    + [データセットとバッチの削除](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [ データセットの有効期限 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [偽名プロファイルとイベントの有効期限（TTL）](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [ プロファイルの削除 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [プロファイルの削除](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [ プロファイル属性の更新 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + データ取得 {#data-ingestion}
    + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [バッチ取り込みの概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [データセットの作成と入力](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [ データセットとバッチの削除 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
+   + [データセットとバッチの削除](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [CSV ファイルの XDM へのマッピング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [ソースの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Adobe Analyticsからのデータの取得 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
