@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
+source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '931'
 ht-degree: 20%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 20%
    + [Audience Portal とコンポジションの概要](audiences/introduction-to-audience-portal-and-composition.md)
    + [オーディエンスのアップロード](audiences/upload-audiences.md)
    + [Federated Audience コンポジションの概要](audiences/overview-of-federated-audience-composition.md)
+   + [Federated Audience コンポジションの接続と設定](audiences/connect-and-configure-federated-audience-composition.md)
+   + [Federated Audience コンポジションの作成](audiences/create-a-federated-audience-composition.md)
    + [オーディエンスルールビルダーの概要](audiences/audience-rule-builder-overview.md)
    + [オーディエンスを作成](audiences/create-audiences.md)
    + [時間制約の使用](audiences/time-constraints.md)
