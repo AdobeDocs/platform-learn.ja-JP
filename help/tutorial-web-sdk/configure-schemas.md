@@ -4,7 +4,7 @@ description: データ収集インターフェイスで web データの XDM ス
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Platform Web SDK は、スキーマを使用して web イベントデータを�
 >
 > デモ目的で、このレッスンの演習では、顧客が閲覧したコンテンツと購入した製品を [Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) でキャプチャするサンプルスキーマを作成します。 これらの手順を使用して、異なるスキーマを独自の用途で作成できますが、まずは、サンプルスキーマの作成方法を追ってスキーマエディターの機能を理解することをお勧めします。
 
-XDM スキーマについて詳しくは、[XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja) コースまたは [XDM システムの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) を参照してください。
+XDM スキーマについて詳しくは、プレイリスト [XDM を使用した顧客体験データのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) または [XDM システムの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) を参照してください。
 
 ## 学習目標
 

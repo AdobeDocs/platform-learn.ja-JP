@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 7%
@@ -47,7 +47,7 @@ Key terms:
 
 >[!TIP]
 >
-> Experience Platformでのデータモデリングについて詳しくは、Experience Leagueで無償で利用できる [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja) コースを受講することをお勧めします。
+> Experience Platformでのデータモデリングについて詳しくは、Experience Leagueで無償で利用できるプレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を視聴することをお勧めします。
 
 ## 必要な権限
 
@@ -86,7 +86,7 @@ Key terms:
 
 スキーマが作成されると、スキーマエディターにリダイレクトされ、スキーマにフィールドを追加できるようになります。 個々のフィールドをスキーマに直接追加したり、フィールドグループを使用したりできます。 個々のフィールドはすべて、引き続きクラスまたはフィールドグループに関連付けられています。 Adobeが提供する業界標準のフィールドグループの大規模なセットから選択するか、独自のフィールドグループを作成できます。 Adobeで独自のデータのモデリングを開始する際には、Experience Platformが提供する業界標準のフィールドグループに慣れておくとよいでしょう。 これらは顧客 AI、Attribution AI、Adobe Analyticsなどのダウンストリームサービスを強化する場合があるので、可能な限り使用することをお勧めします。
 
-独自のデータを操作する際に重要な手順は、Platform で取得する独自のデータはどれか、およびそのデータをどのようにモデル化するかを決定することです。 この大きなトピックについては、[XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=ja) のコースで詳しく説明します。 このチュートリアルでは、事前に決定されたスキーマの実装について説明します。
+独自のデータを操作する際に重要な手順は、Platform で取得する独自のデータはどれか、およびそのデータをどのようにモデル化するかを決定することです。 この大きなトピックについては、プレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) で詳しく説明します。 このチュートリアルでは、事前に決定されたスキーマの実装について説明します。
 
 フィールドグループを追加するには：
 

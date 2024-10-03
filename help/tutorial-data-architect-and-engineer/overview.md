@@ -8,7 +8,7 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 ## 前提条件
 
-* あなたは、Platform の [Adobe Experience Platformの概要 ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=ja) コースを完了し、Experience Leagueの機能を熟知しています
+* あなたはExperience Leagueーで [Adobe Experience Platform プレイリストの概要 ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) を見ており、Platform の機能をよく知っています
 * Adobe Experience Platform（またはReal-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーション）とデータ収集（以前の Launch）でプロビジョニングされたアカウントにアクセスできます。
 * そのアカウントのシステム管理者であるか、1 つの [ ユーザー権限の設定 ](configure-permissions.md) を持つことができます。
 
