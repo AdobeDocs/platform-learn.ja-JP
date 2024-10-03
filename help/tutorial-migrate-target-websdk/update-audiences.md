@@ -1,8 +1,8 @@
 ---
-title: オーディエンスとプロファイルスクリプトの更新 | Target を at.js 2.x から Web SDK に移行
+title: オーディエンスとプロファイルスクリプトの更新 – Target を at.js 2.x から Web SDK に移行します
 description: Experience Platform Web SDK と互換性を持たせるために、Adobe Target オーディエンスとプロファイルスクリプトを更新する方法を説明します。
 exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

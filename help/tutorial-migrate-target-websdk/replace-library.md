@@ -1,8 +1,8 @@
 ---
-title: ライブラリの置き換え | Target を at.js 2.x から Web SDK に移行
+title: ライブラリの置換 – Target を at.js 2.x から Web SDK に移行します
 description: at.js 2.x からAdobe Experience Platform Web SDK にAdobe Target実装を移行する方法を説明します。 トピックには、ライブラリの概要、実装の違い、その他の注目すべきコールアウトが含まれます。
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 3%

@@ -1,8 +1,8 @@
 ---
-title: Web SDK を使用した Target 実装の検証 | Target を at.js 2.x から Web SDK に移行
+title: Web SDK での Target 実装の検証 – Target を at.js 2.x から Web SDK に移行します
 description: Adobe Experience Platform Web SDK を使用してアクティビティを検証し、Adobe Target実装をデバッグする方法について説明します。
 exl-id: 09b4ebeb-fae9-470d-8ea9-f6e3c7d7da5e
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%

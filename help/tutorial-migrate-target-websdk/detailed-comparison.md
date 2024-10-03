@@ -1,8 +1,8 @@
 ---
-title: at.js 2.x と Web SDK の比較 | Target を at.js 2.x から Web SDK に移行
+title: at.js 2.x と Web SDK の比較 – Target を at.js 2.x から Web SDK に移行します
 description: at.js 2.x と Platform Web SDK の違い（機能、関数、設定、データフローなど）について説明します。
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 4%

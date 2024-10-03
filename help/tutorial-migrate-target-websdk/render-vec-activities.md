@@ -1,8 +1,8 @@
 ---
-title: VEC アクティビティのレンダリング | Target を at.js 2.x から Web SDK に移行
+title: Render VEC アクティビティ - Target を at.js 2.x から Web SDK に移行します
 description: Adobe Targetの Web SDK 実装を使用して visual experience composer アクティビティを取得および適用する方法について説明します。
 exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
