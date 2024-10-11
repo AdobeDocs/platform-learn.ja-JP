@@ -6,10 +6,10 @@ level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Cloud アプリケーションは、従来、次のような様
 1. ドメイン名の CNAME 設定を使用してAdobeサーバーによって設定されたファーストパーティ cookie
 1. JavaScriptによって設定されたファーストパーティ cookie
 
-最近のブラウザーの変更により、これらのタイプの cookie の有効期間が制限されます。 ファーストパーティ cookie は、DNS CNAME ではなく、DNS A/AAAA レコードを使用して顧客が所有するサーバーを使用して設定されている場合に最も効果的です。 ファーストパーティデバイス ID （FPID）機能を使用すると、Adobe Experience Platform Web SDK を実装しているお客様は、DNS A/AAAA レコードを使用して、サーバーからの cookie でデバイス ID を使用できます。 その後、これらの ID をAdobeに送信し、シードとして使用してExperience CloudID （ECID）を生成できます。ECID は、Adobe Experience Cloud アプリケーションの主な識別情報です。
+最近のブラウザーの変更により、これらのタイプの cookie の有効期間が制限されます。 ファーストパーティ cookie は、DNS CNAME ではなく、DNS A/AAAA レコードを使用して顧客が所有するサーバーを使用して設定されている場合に最も効果的です。 [ ファーストパーティデバイス ID （FPID）機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) により、Adobe Experience Platform Web SDK を実装しているお客様は、DNS A/AAAA レコードを使用して、サーバーからの Cookie でデバイス ID を使用できます。 その後、これらの ID をAdobeに送信し、シードとして使用してExperience CloudID （ECID）を生成できます。ECID は、Adobe Experience Cloud アプリケーションの主な識別情報です。
 
 次に、機能の仕組みの簡単な例を示します。
 
@@ -30,7 +30,9 @@ Adobe Experience Cloud アプリケーションは、従来、次のような様
 1. エンドユーザーのブラウザーが、顧客の web サーバーまたは CDN から web ページをリクエストします。
 1. 顧客が web サーバーまたは CDN でデバイス ID （FPID）を生成します（web サーバーはドメイン名の DNS A/AAAA レコードに結び付ける必要があります）。
 1. お客様は、ファーストパーティ cookie を設定して、エンドユーザーのブラウザーに FPID を保存します。
-1. 顧客のAdobe Experience Platform Web SDK 実装が、ID マップに FPID を含む Platform Edge Networkにリクエストを行います。
+1. お客様のAdobe Experience Platform Web SDK 実装が、Platform Edge Networkに対してリクエストを行い、次のいずれかを行います。
+   1. FPID を ID マップに含めます。
+   1. Web SDK リクエストの CNAME を設定し、FPID cookie の名前を使用してデータストリームを設定します。
 1. Experience PlatformEdge Networkは FPID を受け取り、それを使用してExperience CloudID （ECID）を生成します。
 1. Platform Web SDK 応答は、ECID をエンドユーザーのブラウザーに送り返します。
 1. `idMigrationEnabled=true` の場合、Platform Web SDK は、JavaScriptを使用して、ECID を `AMCV_` Cookie としてエンドユーザーのブラウザーに保存します。
