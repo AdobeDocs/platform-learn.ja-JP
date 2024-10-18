@@ -1,5 +1,5 @@
 ---
-user-guide-title: Mobile SDK の Target 実装を、Target 拡張機能から Optimize 拡張機能に移行します
+user-guide-title: Adobe TargetからAdobe Journey Optimizer - Decisioning Mobile 拡張機能への移行
 user-guide-description: Target のお客様向けの実践チュートリアルで、Mobile SDK の実装を Target 拡張機能から Optimizer 拡張機能に正常に移行する方法を説明します
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -10,15 +10,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: 4488bcc52d7c9a88d106777af968c131cdb4dac1
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '90'
 ht-degree: 5%
 
 ---
 
 
-# Mobile SDK の Target 実装を、Target 拡張機能から Optimize 拡張機能に移行します {#migrate-target-to-mobile-sdk-optimize}
+# Adobe TargetからAdobe Journey Optimizer - Decisioning Mobile 拡張機能への移行{#migrate-target-to-mobile-sdk-decisioning}
 
 + [チュートリアルの概要](overview.md)
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 + [移行の計画](plan-migration.md)
 
-+ [Target 拡張機能と最適化拡張機能の比較](detailed-comparison.md)
++ [Target 拡張機能と Decisioning 拡張機能の比較](detailed-comparison.md)
 
 + [初期設定の実行](initial-setup.md)
 

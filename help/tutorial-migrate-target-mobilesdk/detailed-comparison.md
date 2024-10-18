@@ -1,14 +1,14 @@
 ---
-title: Target 拡張機能と最適化拡張機能の比較
+title: Target 拡張機能と Decisioning 拡張機能の比較
 description: at.js 2.x と Platform Web SDK の違い（機能、関数、設定、データフローなど）について説明します。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 5%
 
 ---
 
-# Target 拡張機能と最適化拡張機能の比較
+# Target 拡張機能と Decisioning 拡張機能の比較
 
 スタンドアロンのAdobe Target at.js ライブラリは、Platform Web SDK とは大きく異なります。 次の表は、移行プロセスの間に注意が必要になる実装領域を評価する際に役立つリファレンスです。
 
@@ -23,7 +23,7 @@ Platform Web SDK を初めて使用する場合は、心配はいりません。
 
 ## 機能の比較
 
-| | ターゲット拡張機能 | 拡張機能の最適化（Edgeを使用した Target） | AJO コードベースのエクスペリエンス（Messaging SDK） |
+| | ターゲット拡張機能 | Decisioning 拡張機能（Edgeを介した Target） | AJO コードベースのエクスペリエンス（Messaging SDK） |
 |---|---|---|---|
 | プリフェッチ モード | サポートあり | サポートあり | サポートあり |
 | 実行モード | サポートあり | サポートなし | サポートなし |
@@ -47,19 +47,19 @@ Platform Web SDK を初めて使用する場合は、心配はいりません。
 >
 > at.js （および platform.js）実装を 1 ページずつAppMeasurement Web SDK に移行することが可能です。 この方法を使用する場合は、`configure` のコマンドで、[`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) および [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) オプションを `true` に設定することをお勧めします。
 
-## Target 拡張機能の機能と、拡張機能の同等の機能の最適化
+## Target 拡張機能と意思決定拡張機能の同等の機能
 
-多くの Target 拡張機能は、次の表に示す最適化拡張機能を使用して、同等のアプローチを持っています。 [functions](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/) について詳しくは、『Adobe Target開発者ガイド』を参照してください。
+多くの Target 拡張機能は、以下の表に示す意思決定拡張機能を使用して、同等のアプローチを持っています。 [functions](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/) について詳しくは、『Adobe Target開発者ガイド』を参照してください。
 
-| ターゲット拡張機能 | 拡張機能を最適化 |
+| ターゲット拡張機能 | Decisioning 拡張機能 |
 | --- | --- | 
 | |  |
 
-## Target 拡張機能の設定および拡張機能の同等の機能の最適化
+## Target 拡張機能の設定と Decisioning 拡張機能の同等の機能
 
 Target 拡張機能は、で様々な設定を指定してダウンロードできます。
 
-| ターゲット拡張機能 | 拡張機能を最適化 |
+| ターゲット拡張機能 | Decisioning 拡張機能 |
 | --- | --- | 
 | |  |
 
@@ -72,11 +72,11 @@ Target 拡張機能は、で様々な設定を指定してダウンロードで�
 
 
 
-### extensionsystem の図の最適化
+### 決定の拡張システム図
 
 
 
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能から Optimize 拡張機能へのモバイルターゲットの移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、Target 拡張機能から Decisioning 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

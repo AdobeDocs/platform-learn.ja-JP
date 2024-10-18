@@ -1,9 +1,9 @@
 ---
-title: 移行の概要 – Target を at.js 2.x から Web SDK に移行する
+title: 移行の概要 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
 description: at.js と Platform Web SDK の主な違いと、移行作業の計画方法について説明します。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '805'
 ht-degree: 1%
 
 ---
@@ -60,4 +60,4 @@ at.js と Platform Web SDK の大きな違いを理解したら、[ 移行を計
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能から Optimize 拡張機能へのモバイルターゲットの移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、Target 拡張機能から Decisioning 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

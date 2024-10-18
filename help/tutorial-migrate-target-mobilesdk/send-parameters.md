@@ -1,14 +1,14 @@
 ---
-title: パラメーターの送信 – Target を at.js 2.x から Web SDK に移行します
+title: パラメーターの送信 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
 description: Experience Platform Web SDK を使用して、mbox、プロファイル、エンティティパラメーターをAdobe Targetに送信する方法を説明します。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-# Platform Web SDK を使用した Target へのパラメーターの送信
+# Adobe Journey Optimizer - Decisioning モバイル拡張機能を使用した Target へのパラメーターの送信
 
 Target の実装は、サイトのアーキテクチャ、ビジネス要件、使用される機能により、web サイト間で異なります。 ほとんどの Target 実装には、コンテキスト情報、オーディエンスおよびコンテンツの推奨事項に関する様々なパラメーターの受け渡しが含まれています。
 
@@ -53,7 +53,7 @@ Target の実装は、サイトのアーキテクチャ、ビジネス要件、�
 
 ## 購入パラメーター
 
-購入パラメーターは、注文が成功した後、注文確認ページで渡され、Target のコンバージョンと最適化の目標に使用されます。 最適化拡張機能を使用した Platform Mobile SDK の実装では、これらのパラメーターとが、`commerce` フィールドグループの一部として渡された XDM データから自動的にマッピングされます。
+購入パラメーターは、注文が成功した後、注文確認ページで渡され、Target のコンバージョンと最適化の目標に使用されます。 Decisioning 拡張機能を使用した Platform Mobile SDK の実装では、これらのパラメーターとが、`commerce` フィールドグループの一部として渡される XDM データから自動的にマッピングされます。
 
 
 `commerce` フィールドグループが `1` に設定されている場合、購入情報 `purchases.value`Target に渡されます。 注文 ID と注文合計は、`order` オブジェクトから自動的にマッピングされます。 `productListItems` 配列が存在する場合、`SKU` の値が `productPurchasedId` に使用されます。
@@ -69,4 +69,4 @@ Target では、単一の顧客 ID を使用して、デバイスやシステム
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能から Optimize 拡張機能へのモバイルターゲットの移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、Target 拡張機能から Decisioning 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
