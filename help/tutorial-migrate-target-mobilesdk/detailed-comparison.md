@@ -1,41 +1,41 @@
 ---
 title: Target 拡張機能と Decisioning 拡張機能の比較
-description: at.js 2.x と Platform Web SDK の違い（機能、関数、設定、データフローなど）について説明します。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: 機能、機能、設定、データフローなど、Target 拡張機能と Decisioning 拡張機能の違いについて説明します。
+source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 5%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
 # Target 拡張機能と Decisioning 拡張機能の比較
 
-スタンドアロンのAdobe Target at.js ライブラリは、Platform Web SDK とは大きく異なります。 次の表は、移行プロセスの間に注意が必要になる実装領域を評価する際に役立つリファレンスです。
+Adobe Journey Optimizer - Decisioning 拡張機能は、モバイルアプリ用のAdobe Target拡張機能とは異なります。 次の表は、移行プロセスの間に注意が必要になる実装領域を評価する際に役立つリファレンスです。
 
-以下の情報を確認し、現在の at.js の技術的実装を評価すると、次のことを理解できるようになります。
+以下の情報を確認し、現在の Target 拡張機能の実装状況を評価すると、次のことを理解できます。
 
-- Platform Web SDK でサポートされている Target 機能
-- Platform Web SDK と同等の機能を持つ at.js 関数
-- Platform Web SDK での Target 設定の適用方法
-- at.js と Platform Web SDK のデータフローの違い
+- Adobe Journey Optimizerでサポートされている Target 機能 – Decisioning
+- Adobe Journey Optimizerを持つAdobe Target拡張機能はどれか – 決定の同等の機能
+- Adobe Journey Optimizerでの Target 設定の適用方法 – Decisioning
+- Adobe Target拡張機能とAdobe Journey Optimizer - Decisioning 拡張機能のデータフローの違い
 
 Platform Web SDK を初めて使用する場合は、心配はいりません。以下の項目については、このチュートリアル全体でより詳しく説明します。
 
 ## 機能の比較
 
-| | ターゲット拡張機能 | Decisioning 拡張機能（Edgeを介した Target） | AJO コードベースのエクスペリエンス（Messaging SDK） |
+| | ターゲット拡張機能 | Decisioning 拡張機能（Edgeを介した Target） |
 |---|---|---|---|
-| プリフェッチ モード | サポートあり | サポートあり | サポートあり |
-| 実行モード | サポートあり | サポートなし | サポートなし |
-| カスタムパラメーター | サポートあり | mbox ごとのパラメーターはサポートされていません | サポートなし |
-| 入口オーディエンス | サポートあり | サポートあり | キャンペーンのオーディエンスと実験の除外の設定でサポートされます |
-| モバイルライフサイクル指標を使用したオーディエンスのセグメント化 | サポートあり | データ収集ルールを使用したサポート | エクスペリエンスのターゲット設定は、現在サポートされていません |
-| thirdPartyId （mbox3rdPartyId） | データストリームの ID マップおよび名前空間設定を介してサポートされます | サポートなし |
-| 通知（表示、クリック） | サポートあり | サポートあり | サポートあり |
-| レスポンストークン | サポートあり | サポートあり | コンテンツ外で Campaign 固有のメタデータを返す場合に相当するものはありません |
-| ダイナミックオファー | サポートあり | サポートあり | コンテンツ内のプロファイルおよび決定項目関連のトークンレンダリングがサポートされています |
-| Analytics for Target（A4T） | クライアント側のみ | クライアントサイドとサーバーサイド | サポートなし |
-| モバイルプレビュー（QA モード） | サポートあり | 限定的なサポート | 処理中 |
+| プリフェッチ モード | サポートあり | サポートあり |
+| 実行モード | サポートあり | サポートなし |
+| カスタムパラメーター | サポートあり | mbox ごとのパラメーターはサポートされていません |
+| 入口オーディエンス | サポートあり | サポートあり |
+| モバイルライフサイクル指標を使用したオーディエンスのセグメント化 | サポートあり | データ収集ルールを使用したサポート |
+| thirdPartyId （mbox3rdPartyId） | データストリームの ID マップおよび名前空間設定を介してサポートされます |
+| 通知（表示、クリック） | サポートあり | サポートあり |
+| レスポンストークン | サポートあり | サポートあり |
+| ダイナミックオファー | サポートあり | サポートあり |
+| Analytics for Target（A4T） | クライアント側のみ | クライアントサイドとサーバーサイド |
+| モバイルプレビュー（QA モード） | サポートあり | 限定的なサポート |
 
 
 
@@ -66,13 +66,13 @@ Target 拡張機能は、で様々な設定を指定してダウンロードで�
 
 ## システム図の比較
 
-次の図は、at.js を使用した Target 実装と、Platform Web SDK を使用した実装のデータフローの違いを理解するのに役立ちます。
+次の図は、Adobe Journey Optimizer - Decisioning 拡張機能を使用した Target 実装とAdobe Target拡張機能を使用した実装の間のデータフローの違いを理解するのに役立ちます。
 
 ### ターゲット拡張機能のシステム図
 
 
 
-### 決定の拡張システム図
+### 意思決定拡張機能のシステム図
 
 
 
