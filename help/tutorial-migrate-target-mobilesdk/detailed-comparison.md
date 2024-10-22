@@ -1,9 +1,9 @@
 ---
 title: Target 拡張機能と Decisioning 拡張機能の比較
 description: 機能、機能、設定、データフローなど、Target 拡張機能と Decisioning 拡張機能の違いについて説明します。
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ Platform Web SDK を初めて使用する場合は、心配はいりません。
 
 ## 機能の比較
 
-| | ターゲット拡張機能 | Decisioning 拡張機能（Edgeを介した Target） |
-|---|---|---|---|
+| 機能 | ターゲット拡張機能 | Decisioning 拡張機能（Edgeを介した Target） |
+|---|---|---|
 | プリフェッチ モード | サポートあり | サポートあり |
 | 実行モード | サポートあり | サポートなし |
 | カスタムパラメーター | サポートあり | mbox ごとのパラメーターはサポートされていません |
