@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 20%
+source-wordcount: '934'
+ht-degree: 21%
 
 ---
 
@@ -31,13 +31,12 @@ ht-degree: 20%
    + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [エンドツーエンドのデモ](/help/platform/rtcdp/demo.md)
    + [ワークフロー](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [B2B Edition の概要](/help/platform/rtcdp/b2b-overview.md)
+   + [B2B editionの概要](/help/platform/rtcdp/b2b-overview.md)
    + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [ はじめに：データアーキテクトとデータエンジニア ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja){target="_blank"}
 + [Experience PlatformAPI に対する認証](/help/platform/authentication/platform-api-authentication.md)
 + [Experience Platformへのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
-   + [AI アシスタントを使用](/help/platform/admin/ai-assistant.md)
    + [アラートを使用](/help/platform/admin/use-alerts.md)
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
    + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 20%
    + [開発者を追加](/help/platform/admin/add-developers.md)
    + [製品管理者の追加](/help/platform/admin/add-product-administrators.md)
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
++ AI アシスタント {#ai-assistant}
+   + [概要](/help/platform/ai-assistant/overview.md)
+   + [オーディエンスのクリーンアップ](/help/platform/ai-assistant/find-unused-audiences.md)
 + オーディエンスとセグメント化 {#audiences}
    + [Audience Portal とコンポジションの概要](audiences/introduction-to-audience-portal-and-composition.md)
    + [オーディエンスのアップロード](audiences/upload-audiences.md)

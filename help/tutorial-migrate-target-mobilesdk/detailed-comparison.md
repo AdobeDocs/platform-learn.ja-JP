@@ -1,9 +1,9 @@
 ---
 title: Target 拡張機能と Decisioning 拡張機能の比較
 description: 機能、機能、設定、データフローなど、Target 拡張機能と Decisioning 拡張機能の違いについて説明します。
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Platform Web SDK を初めて使用する場合は、心配はいりません。
 | カスタムパラメーター | サポートあり | mbox ごとのパラメーターはサポートされていません |
 | 入口オーディエンス | サポートあり | サポートあり |
 | モバイルライフサイクル指標を使用したオーディエンスのセグメント化 | サポートあり | データ収集ルールを使用したサポート |
-| thirdPartyId （mbox3rdPartyId） | データストリームの ID マップおよび名前空間設定を介してサポートされます |
+| thirdPartyId （mbox3rdPartyId） | サポートあり | データストリームの ID マップおよび名前空間設定を介してサポートされます |
 | 通知（表示、クリック） | サポートあり | サポートあり |
 | レスポンストークン | サポートあり | サポートあり |
 | ダイナミックオファー | サポートあり | サポートあり |
