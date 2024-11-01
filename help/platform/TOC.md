@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 21%
+source-wordcount: '939'
+ht-degree: 20%
 
 ---
 
@@ -39,7 +39,8 @@ ht-degree: 21%
 + 管理 {#admin}
    + [アラートを使用](/help/platform/admin/use-alerts.md)
    + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
-   + [サンドボックス間でのオブジェクトのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [サンドボックス間でのパッケージのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [IMS 組織間でのパッケージの共有](/help/platform/admin/share-packages-across-orgs.md)
    + [ユーザーの追加](/help/platform/admin/add-users.md)
    + [ データ収集へのユーザーの追加 ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [開発者を追加](/help/platform/admin/add-developers.md)
