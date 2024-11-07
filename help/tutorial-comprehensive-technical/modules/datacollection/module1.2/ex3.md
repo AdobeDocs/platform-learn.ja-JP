@@ -1,0 +1,176 @@
+---
+title: Foundation - データ取得 – データセットの設定
+description: Foundation - データ取得 – データセットの設定
+kt: 5342
+doc-type: tutorial
+source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 7%
+
+---
+
+# 1.2.3 データセットの設定
+
+この演習では、プロファイル情報と顧客の行動を取得および保存するために必要なデータセットを設定します。 この手順で作成するすべてのデータセットで、前の手順で作成したスキーマのいずれかを使用します。
+
+## ストーリー
+
+質問に対する答えを定義した後 **この顧客は誰ですか？** と **この顧客の業務内容次**、その情報を使用するバケットを作成して、Adobe Experience Platformに送信されたデータを受け取り、検証する必要があります。
+
+## 1.2.3.1 - データセットの作成
+
+次に、2 つのデータセットを作成する必要があります。
+
+- 1 つのデータセット：**この顧客は誰か？** – 質問。
+- **この顧客は何をしますか？」という回答を返す情報をキャプチャする 1 つのデータセット** – 質問。
+
+URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
+
+ログインすると、Adobe Experience Platformのホームページが表示されます。
+
+![データ取得](./images/home.png)
+
+続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択するサンドボックスの名前は ``--module2sandbox--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+
+![データ取得](./images/sb1.png)
+
+Adobe Experience Platformで、画面左側のメニューにある **[!UICONTROL データセット]** をクリックします。  次の画面が表示されます。
+
+![データ取得](./images/menudatasets.png)
+
+まず、web サイトの登録情報を取り込むデータセットを作成します。
+
+新規データセットを作成する必要があります。 新しいデータセットを作成するには、「**[!UICONTROL + データセットを作成]**」ボタンをクリックします。
+
+![データ取得](./images/createdataset.png)
+
+「**[!UICONTROL + データセットを作成]**」ボタンをクリックすると、次の画面が表示されます。
+
+![データ取得](./images/datasetsetup.png)
+
+前の手順で定義したスキーマからデータセットを定義する必要があります。 **[!UICONTROL スキーマからデータセットを作成]** - オプションをクリックします。
+
+![データ取得](./images/datasetfromschema.png)
+
+次の画面では、1、`--demoProfileLdap-- - Demo System - Profile Schema for Website` で作成したスキーマを選択する必要があります。
+
+![データ取得](./images/schemaselection.png)
+
+スキーマを選択したら、「**[!UICONTROL 次へ]**」をクリックして続行します。
+
+![データ取得](./images/next.png)
+
+データセットに名前を付けましょう。
+
+データセットの名前として、次を使用します。
+
+`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+
+例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
+
+**[!UICONTROL vangeluw - デモシステム - Web サイトのプロファイルデータセット]**
+
+次のような情報が表示されます。
+
+![データ取得](./images/datasetname.png)
+
+「**[!UICONTROL 終了]**」をクリックして、データセットの設定を完了します。
+
+![データ取得](./images/finish.png)
+
+次の項目が表示されます。
+
+![データ取得](./images/dsoverview1.png)
+
+[!UICONTROL  データセット ] 概要に戻ります。 作成したデータセットが概要にポップアップ表示されます。
+
+![データ取得](./images/dsoverview2.png)
+
+次に、web サイトのインタラクションを取り込むための 2 つ目のデータセットを設定します。
+
+新規データセットを作成する必要があります。 新しいデータセットを作成するには、「**[!UICONTROL + データセットを作成]**」ボタンをクリックします。
+
+![データ取得](./images/createdataset.png)
+
+「**[!UICONTROL + データセットを作成]**」ボタンをクリックすると、次の画面が表示されます。
+
+![データ取得](./images/datasetsetup.png)
+
+前の手順で定義したスキーマからデータセットを定義する必要があります。 **[!UICONTROL スキーマからデータセットを作成]** - オプションをクリックします。
+
+![データ取得](./images/datasetfromschema.png)
+
+次の画面では、2.2`--demoProfileLdap-- - Demo System - Event Schema for Website` で作成したスキーマを選択する必要があります。
+
+![データ取得](./images/schemaselectionee.png)
+
+スキーマを選択したら、「**[!UICONTROL 次へ]**」をクリックして続行します。
+
+![データ取得](./images/next.png)
+
+データセットに名前を付けましょう。
+
+データセットの名前として、次を使用します。
+
+`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+
+例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
+
+**[!UICONTROL vangeluw - Demo System - Web サイトのイベントデータセット]**
+
+次のような情報が表示されます。
+
+![データ取得](./images/datasetnameee.png)
+
+「**[!UICONTROL 終了]**」をクリックして、データセットの設定を完了します。
+
+![データ取得](./images/finish.png)
+
+次の画面が表示されます。
+
+![データ取得](./images/finish1.png)
+
+[!UICONTROL  データセット ] 概要画面に戻ります。
+
+![データ取得](./images/datasetsoverview.png)
+
+次に、データセットをAdobe Experience Platformのリアルタイム顧客プロファイルの一部として使用できるようにする必要があります。
+
+Web サイトのデータセット `--demoProfileLdap--` - デモシステム – プロファイルデータセットをクリックして開きます。
+
+画面の右側にある [!UICONTROL  プロファイル ] 切り替えアイコンを見つけます。
+
+![データ取得](./images/ds1.png)
+
+[!UICONTROL  プロファイル ] 切り替えスイッチをクリックして、このデータセットを [!UICONTROL  プロファイル ] に対して有効にします。
+
+![データ取得](./images/ds2.png)
+
+**[!UICONTROL 有効にする]** をクリックします。
+
+![データ取得](./images/ds3.png)
+
+これで、データセットが [!UICONTROL  プロファイル ] に対して有効になりました。
+
+データセットの概要に戻り、Web サイトのデータセット `--demoProfileLdap-- - Demo System - Event Dataset` をクリックして開きます。
+
+画面の右側にある [!UICONTROL  プロファイル ] 切り替えアイコンを見つけます。
+
+![データ取得](./images/ds4.png)
+
+[!UICONTROL  プロファイル ] 切り替えスイッチをクリックして [!UICONTROL  プロファイル ] を有効にします。
+
+![データ取得](./images/ds2.png)
+
+**[!UICONTROL 有効にする]** をクリックします。
+
+![データ取得](./images/ds5.png)
+
+これで、データセットが [!UICONTROL  プロファイル ] に対して有効になりました。
+
+次の手順：[1.2.4 オフラインソースからのデータ取り込み ](./ex4.md)
+
+[モジュール 1.2 に戻る](./data-ingestion.md)
+
+[すべてのモジュールに戻る](../../../overview.md)
