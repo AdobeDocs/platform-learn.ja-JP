@@ -3,7 +3,7 @@ title: Kafka Connect とAdobe Experience Platformシンクコネクタのイン�
 description: Kafka Connect とAdobe Experience Platformシンクコネクタのインストールと設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Postmanを使用して Kafka Connect とやり取りできるようになりま�
 
 その後、これが表示されます。 2 つのフィールドを手動で更新する必要があります。
 
-- **_id**: `--demoProfileLdap--1234` のように、ランダムな id に設定してください
+- **_id**: `--aepUserLdap--1234` のように、ランダムな id に設定してください
 - **timestamp**：タイムスタンプを現在の日時に更新します
 - **phoneNumber**：デモ web サイトで作成したばかりのアカウントの phoneNumber を入力します。 これは、プロファイルビューアパネルの **ID** の下にあります。
 

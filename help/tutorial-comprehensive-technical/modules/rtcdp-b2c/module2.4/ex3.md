@@ -3,7 +3,7 @@ title: Microsoft Azure Event Hub へのセグメントのアクティベーシ�
 description: Microsoft Azure Event Hub へのセグメントのアクティベーション – ストリーミングセグメントの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 2%
@@ -44,7 +44,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -52,13 +52,13 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./images/seg.png)
 
-セグメント `--demoProfileLdap-- - Interest in Equipment` に名前を付け、ページ名エクスペリエンスイベントを追加します。
+セグメント `--aepUserLdap-- - Interest in Equipment` に名前を付け、ページ名エクスペリエンスイベントを追加します。
 
 **イベント** をクリックし、**XDM ExperienceEvent/Web/Web ページの詳細/名前** をドラッグ&amp;ドロップします。 値として **equipment** と入力します。
 
 ![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
 
-**XDM ExperienceEvent/`--aepTenantIdSchema--`/demoEnvironment/brandName** をドラッグ&amp;ドロップします。 値として `--demoProfileLdap--` と入力し、比較パラメーターを **次を含む** に設定して、「**保存**」をクリックします。
+**XDM ExperienceEvent/`--aepTenantId--`/demoEnvironment/brandName** をドラッグ&amp;ドロップします。 値として `--aepUserLdap--` と入力し、比較パラメーターを **次を含む** に設定して、「**保存**」をクリックします。
 
 ![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
 
@@ -67,7 +67,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 セグメントのPQLは次のようになります。
 
 ```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--demoProfileLdap--", false))])
+CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
 ```
 
 次の手順：[2.4.4 セグメントをアクティブ化 ](./ex4.md)

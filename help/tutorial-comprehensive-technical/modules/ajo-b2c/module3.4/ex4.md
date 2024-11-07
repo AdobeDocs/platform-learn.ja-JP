@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - iOS用のプッシュ通知の設定と使用
 description: iOSのプッシュ通知の設定と使用
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Adobe Journey Optimizerでプッシュ通知を使用するには、確認して
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -48,7 +48,7 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
 
-左側のメニューで、**[!UICONTROL データストリーム]** に移動し、[ 演習 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリーム（`--demoProfileLdap-- - Demo System Datastream (Mobile)` という名前）を検索します。 クリックして開きます。
+左側のメニューで、**[!UICONTROL データストリーム]** に移動し、[ 演習 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリーム（`--aepUserLdap-- - Demo System Datastream (Mobile)` という名前）を検索します。 クリックして開きます。
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1a.png)
 
@@ -169,7 +169,7 @@ AEP Assurance セッションを開始するには、[https://experience.adobe.c
 
 次の値を入力します。
 
-- セッション名：`--demoProfileLdap-- - push debugging` を使用して、ldap を ldap に置き換えます
+- セッション名：`--aepUserLdap-- - push debugging` を使用して、ldap を ldap に置き換えます
 - ベース URL: **dxdemo://default** を使用します
 
 「**次へ**」をクリックします。
@@ -232,7 +232,7 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 
 ![ACOP](./images/emptyevent.png)
 
-まず、イベントに `--demoProfileLdap--StoreEntryEvent` のような名前を付け、説明を `Store Entry Event` に設定します。
+まず、イベントに `--aepUserLdap--StoreEntryEvent` のような名前を付け、説明を `Store Entry Event` に設定します。
 
 ![ACOP](./images/eventname.png)
 
@@ -283,11 +283,11 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 
 ![DSN](./images/sjourney1.png)
 
-その後、これが表示されます。 ジャーニーに名前を付けます。 `--demoProfileLdap-- - Store Entry journey`.を使用します。「**OK**」をクリックします。
+その後、これが表示されます。 ジャーニーに名前を付けます。 `--aepUserLdap-- - Store Entry journey`.を使用します。「**OK**」をクリックします。
 
 ![DSN](./images/sjourney3.png)
 
-まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--demoProfileLdap--StoreEntryEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**OK**」をクリックします。
+まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--aepUserLdap--StoreEntryEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**OK**」をクリックします。
 
 ![DSN](./images/sjourney4.png)
 

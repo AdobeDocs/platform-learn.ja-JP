@@ -3,7 +3,7 @@ title: BigQuery Source コネクタを使用したAdobe Experience Platformで�
 description: BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取得と分析 – Customer Journey Analyticsを使用したGoogle Analyticsデータの分析
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Customer Journey Analyticsホームページで、「**連携**」に移動し�
 
 ![ デモ ](./images/5.png)
 
-まず、使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、`--aepSandboxId--` すサンドボックスを選択します。 この例では、使用するサンドボックスは **AEP イネーブルメント FY21** です。
+まず、使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、`--aepSandboxName--` すサンドボックスを選択します。 この例では、使用するサンドボックスは **AEP イネーブルメント FY21** です。
 
 ![ デモ ](./images/cjasb.png)
 

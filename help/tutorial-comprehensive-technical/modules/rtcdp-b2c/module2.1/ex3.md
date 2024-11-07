@@ -3,7 +3,7 @@ title: Foundation - リアルタイム顧客プロファイル – 独自のリ�
 description: Foundation - リアルタイム顧客プロファイル – 独自のリアルタイム顧客プロファイルを視覚化 – API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 1%
@@ -140,10 +140,10 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 ![Adobe I/Oの新規統合 ](./images/api14.png)
 
-統合の名前と説明を入力します。 命名規則として、`AEP API --demoProfileLdap--` を使用します。 ldap を自分の ldap に置き換えます。
+統合の名前と説明を入力します。 命名規則として、`AEP API --aepUserLdap--` を使用します。 ldap を自分の ldap に置き換えます。
 例えば、ldap が vangeluw の場合、統合の名前と説明は AEP API vangeluw になります。
 
-**プロジェクトタイトル** として `AEP API --demoProfileLdap--` と入力します。 「**保存**」をクリックします。
+**プロジェクトタイトル** として `AEP API --aepUserLdap--` と入力します。 「**保存**」をクリックします。
 
 ![Adobe I/Oの新規統合 ](./images/api15.png)
 
@@ -306,11 +306,11 @@ Postmanで、コレクション **_Adobe Experience Platform イネーブルメ�
 
 | キー | 値 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxId--` にしてください。
+>使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
 
 「**送信**」をクリックして、リクエストを Platform に送信します。
 
@@ -477,11 +477,11 @@ Postmanに戻り、コールセンターを紹介し、**Phone** の名前空間
 
 | キー | 値 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxId--` にしてください。
+>使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
 
 青い **送信** ボタンをクリックし、応答を確認します。
 
@@ -511,11 +511,11 @@ Postmanに戻り、コールセンターを紹介し、**Phone** の名前空間
 
 | キー | 値 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxId--` にしてください。
+>使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
 
 青い **送信** ボタンをクリックし、応答を確認します。
 
@@ -569,11 +569,11 @@ Postmanで、コレクション **_Adobe Experience Platform イネーブルメ�
 
 | キー | 値 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxId--` にしてください。
+>使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
 
 「**送信**」をクリックして、リクエストを Platform に送信します。
 

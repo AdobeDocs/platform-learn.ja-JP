@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど 
 description: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/emptyevent1.png)
 
-イベントの名前として、`--demoProfileLdap--GeofenceEntry` を使用します。 この例では、イベント名は `vangeluwGeofenceEntry` です。
+イベントの名前として、`--aepUserLdap--GeofenceEntry` を使用します。 この例では、イベント名は `vangeluwGeofenceEntry` です。
 
 説明を `Geofence Entry Event` に設定します。
 

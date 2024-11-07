@@ -4,9 +4,9 @@ description: Foundation - リアルタイム顧客プロファイル
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ ht-degree: 0%
 - [https://public.aepdemo.net](https://public.aepdemo.net) へのアクセス
 - **これらのアセットをダウンロードします**。
    - [Postman コレクション](./../../../assets/postman/postman_profile.zip)
-
->[!IMPORTANT]
->
->このチュートリアルは、特定のワークショップ形式を容易にするために作成されました。 アクセス権がない可能性のある特定のシステムとアカウントを使用します。 アクセス権がなくても、この非常に詳細なコンテンツを読むことで、多くのことを学べると思います。 いずれかのワークショップに参加していて、アクセス資格情報が必要な場合は、Adobe担当者に問い合わせてください。担当者から必要な情報が提供されます。
 
 >[!NOTE]
 >

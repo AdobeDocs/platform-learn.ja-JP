@@ -3,7 +3,7 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Experience Platform Data Collection の概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 9%
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 ![ プロパティページ ](./images/launch1.png)
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--demoProfileLdap--` を検索して見つけます。
+モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。
 
 ![ 検索ボックス ](./images/property6.png)
 
@@ -44,7 +44,7 @@ Adobe Experience Platform Web SDK へようこそ。 ここでは、[ 演習 0.2
 
 ![ 拡張機能ホーム ](./images/property9edgedomain.png)
 
-ここで、「**[!UICONTROL データストリーム]**」見出しの下の「**[!UICONTROL リストから選択]**」ラジオボタンが選択されていることを確認し、「**[!UICONTROL データストリーム]**」ボックスのリストから、`--demoProfileLdap-- - Demo System Datastream` という名前のデータストリームを選択します。
+ここで、「**[!UICONTROL データストリーム]**」見出しの下の「**[!UICONTROL リストから選択]**」ラジオボタンが選択されていることを確認し、「**[!UICONTROL データストリーム]**」ボックスのリストから、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを選択します。
 
 ![ 拡張機能ホーム ](./images/property9edge.png)
 

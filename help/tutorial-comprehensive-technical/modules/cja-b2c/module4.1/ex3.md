@@ -3,7 +3,7 @@ title: Customer Journey Analytics - データビューの作成
 description: Customer Journey Analytics - データビューの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 3%
@@ -45,17 +45,17 @@ ht-degree: 3%
 
 ![ デモ ](./images/0-v2.png)
 
-前の演習で作成した **接続** が既に選択されています。 接続名は `--demoProfileLdap-- – Omnichannel Data Connection` です。
+前の演習で作成した **接続** が既に選択されています。 接続名は `--aepUserLdap-- – Omnichannel Data Connection` です。
 
 ![ デモ ](./images/ext5.png)
 
-次に、データビューに次の命名規則に従った名前を付けます：`--demoProfileLdap-- – Omnichannel Data View`。
+次に、データビューに次の命名規則に従った名前を付けます：`--aepUserLdap-- – Omnichannel Data View`。
 
-説明に同じ値を入力します：`--demoProfileLdap-- – Omnichannel Data View`。
+説明に同じ値を入力します：`--aepUserLdap-- – Omnichannel Data View`。
 
 | 名前 | 説明 |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View` |
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
 
 ![ デモ ](./images/1-v2.png)
 

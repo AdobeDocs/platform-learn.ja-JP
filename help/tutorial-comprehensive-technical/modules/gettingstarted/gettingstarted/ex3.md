@@ -3,7 +3,7 @@ title: はじめに – データストリームの作成
 description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1a.png)
 
-画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxId--` にする必要があります）。
+画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1.png)
 
-**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--demoProfileLdap-- - Demo System Datastream` と入力します。 「イベントスキーマ」で、「**デモシステム - Web サイトのイベントスキーマ （グローバル v1.1）**」を選択します。 「**保存**」をクリックします。
+**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--aepUserLdap-- - Demo System Datastream` と入力します。 「イベントスキーマ」で、「**デモシステム - Web サイトのイベントスキーマ （グローバル v1.1）**」を選択します。 「**保存**」をクリックします。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig2.png)
 
@@ -72,7 +72,7 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig13.png)
 
-**データストリーム** が選択されていることを確認します。 ヒント：`--demoProfileLdap--` を入力することで、ドロップダウン内の結果を簡単にフィルタリングできます。
+**データストリーム** が選択されていることを確認します。 ヒント：`--aepUserLdap--` を入力することで、ドロップダウン内の結果を簡単にフィルタリングできます。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig14.png)
 
@@ -102,7 +102,7 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1a.png)
 
-画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxId--` にする必要があります）。
+画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
 
@@ -110,7 +110,7 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1.png)
 
-**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--demoProfileLdap-- - Demo System Datastream (Mobile)` と入力します。 「イベントスキーマ」で、「**デモシステム – モバイルアプリのイベントスキーマ （グローバル v1.1）**」を選択します。 「**保存**」をクリックします。
+**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--aepUserLdap-- - Demo System Datastream (Mobile)` と入力します。 「イベントスキーマ」で、「**デモシステム – モバイルアプリのイベントスキーマ （グローバル v1.1）**」を選択します。 「**保存**」をクリックします。
 
 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -144,7 +144,7 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig12m.png)
 
-その後、これが表示されます。 ここで、設定した正しいサンドボックスとデータストリームを選択する必要があります。 使用するサンドボックスは `--aepSandboxId--` で、データストリームは `--demoProfileLdap-- - Demo System Datastream (Mobile)` と呼ばれます。
+その後、これが表示されます。 ここで、設定した正しいサンドボックスとデータストリームを選択する必要があります。 使用するサンドボックスは `--aepSandboxName--` で、データストリームは `--aepUserLdap-- - Demo System Datastream (Mobile)` と呼ばれます。
 
 **Edge Network ドメイン** の場合は、既定のドメイン **edge.adobedc.net** を使用してください。
 

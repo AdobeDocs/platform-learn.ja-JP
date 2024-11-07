@@ -3,7 +3,7 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK extensio
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK extension のセットアップ - Adobe Experience Platformでの XDM スキーマ要件
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Web SDK と alloy.js でデータをAdobe Experience Platformに取り込める�
 
 ![AEP デバッガー ](./images/exp1.png)
 
-ログイン後、画面上部の青い線のテキスト **Production Prod** をクリックして、適切なサンドボックスを選択します。 サンドボックス `--aepSandboxId--` を選択します。
+ログイン後、画面上部の青い線のテキスト **Production Prod** をクリックして、適切なサンドボックスを選択します。 サンドボックス `--aepSandboxName--` を選択します。
 
 サンドボックスを選択すると、画面が変更され、サンドボックスに移動します。
 

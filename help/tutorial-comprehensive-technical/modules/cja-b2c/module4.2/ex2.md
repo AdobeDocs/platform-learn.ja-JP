@@ -3,7 +3,7 @@ title: BigQuery Source コネクタを使用したAdobe Experience Platformで�
 description: BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取得と分析 – BigQuery で最初のクエリを作成します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Google Analyticsデータが BigQuery の場合、ディメンション、指標
 
 | 名前付け | 例 |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
 
 ![ デモ ](./images/ex3/6.png)
 
@@ -254,19 +254,19 @@ GROUP BY
 
 | 名前付け | 例 |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
 テーブル名を入力する必要があります。 次の命名規則を使用してください。
 
 | 名前付け | 例 |
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 ![ デモ ](./images/ex3/16.png)
 
 **保存** をクリックします。
 
-作成したテーブルでデータが準備できるようになるまで、時間がかかる場合があります。 数分後、ブラウザーを更新します。 データセット内に、BigQuery プロジェクト内の **エクスプローラー** の下にある `--demoProfileLdap--_GAdataTableBigquery` テーブルが表示されます。
+作成したテーブルでデータが準備できるようになるまで、時間がかかる場合があります。 数分後、ブラウザーを更新します。 データセット内に、BigQuery プロジェクト内の **エクスプローラー** の下にある `--aepUserLdap--_GAdataTableBigquery` テーブルが表示されます。
 
 ![ デモ ](./images/ex3/19.png)
 

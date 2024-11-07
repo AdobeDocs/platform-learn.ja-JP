@@ -3,7 +3,7 @@ title: データ収集とイベント転送 – AWS エコシステムに対し�
 description: イベントをAWS エコシステムに転送
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Amazon Kinesisのデータストリームは、データストリームの取り
 
 **バケットを作成** 画面では、次の 2 つを設定する必要があります。
 
-- 名前：名前 `eventforwarding---demoProfileLdap--` を使用します。 例えば、この演習では、バケット名は **aepmodulertcdpvangeluw** です。
+- 名前：名前 `eventforwarding---aepUserLdap--` を使用します。 例えば、この演習では、バケット名は **aepmodulertcdpvangeluw** です。
 - 地域：地域 **EU （フランクフルト） eu-central-1** を使用します
 
 ![ETL](./images/bucketname.png)
@@ -78,7 +78,7 @@ Amazon Kinesisのデータストリームは、データストリームの取り
 
 ![ETL](./images/kinesis2.png)
 
-**データストリーム名** には、`--demoProfileLdap---datastream` を使用します。
+**データストリーム名** には、`--aepUserLdap---datastream` を使用します。
 
 ![ETL](./images/kinesis3.png)
 
@@ -246,7 +246,7 @@ HTTPS エンドポイントを介してKinesis データストリームをイン
 - プロトコルの選択：**REST** を選択します。
 - 新しい API を作成：「**新しい API**」を選択します
 - 設定：
-   - API 名：use `--demoProfileLdap---eventforwarding`
+   - API 名：use `--aepUserLdap---eventforwarding`
    - エンドポイントタイプ：**地域** を選択します
 
 **API を作成** をクリックします。
@@ -341,7 +341,7 @@ HTTPS エンドポイントを介してKinesis データストリームをイン
     "dynamicPartitioningKey": "v2"
   },
   "PartitionKey": "1",
-  "StreamName": "--demoProfileLdap---datastream"
+  "StreamName": "--aepUserLdap---datastream"
 }
 ```
 
@@ -370,14 +370,14 @@ curl --location --request POST 'https://vv1i5vwg2k.execute-api.us-west-2.amazona
 --header 'Content-Type: application/json' \
 --data-raw '{
     "Data": {
-        "userid": "--demoProfileLdap--@adobe.com",
-        "firstName":"--demoProfileLdap--",
+        "userid": "--aepUserLdap--@adobe.com",
+        "firstName":"--aepUserLdap--",
         "offerName":"10% off on outdoor gears",
         "offerCode": "10OFF-SPRING",
         "dynamicPartitioningKey": "campaign"
     },
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }'
 ```
 
@@ -470,7 +470,7 @@ return JSON.stringify(newObj);
 {
     "Data":{{awsDataObject}},
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }
 ```
 

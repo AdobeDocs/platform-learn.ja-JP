@@ -3,7 +3,7 @@ title: Offer decisioning – 意思決定のテスト
 description: Offer decisioning – 意思決定のテスト
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 1%
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 ## 3.3.3.1 データストリームの更新
 
-[ 演習 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--demoProfileLdap-- - Demo System Datastream` という名前を使用しました。
+[ 演習 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
 
 この演習では、**[!DNL Offer Decisioning]** と連携するように **[!UICONTROL データストリーム]** を設定する必要があります。
 
 その場合は、[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) にアクセスしてください。 その後、これが表示されます。 **[!UICONTROL データストリーム]** または **[!UICONTROL データストリーム（Beta）]** をクリックします。
 
-画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxId--` にする必要があります）。
+画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
 
-**[!UICONTROL Datastream]** を検索します。名前は `--demoProfileLdap-- - Demo System Datastream` です。 **[!UICONTROL データストリーム]** をクリックして開きます。
+**[!UICONTROL Datastream]** を検索します。名前は `--aepUserLdap-- - Demo System Datastream` です。 **[!UICONTROL データストリーム]** をクリックして開きます。
 
 ![WebSDK](./images/websdk1.png)
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 ## 3.3.3.2 パーソナライズされたオファーをリクエストするようにAdobe Experience Platform データ収集クライアントプロパティを設定する
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) の **[!UICONTROL Client]** に移動します。 `--demoProfileLdap-- - Demo System (DD/MM/YYYY)` という名前のデータ収集プロパティを検索します。 Web 用データ収集クライアントプロパティを開きます。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) の **[!UICONTROL Client]** に移動します。 `--aepUserLdap-- - Demo System (DD/MM/YYYY)` という名前のデータ収集プロパティを検索します。 Web 用データ収集クライアントプロパティを開きます。
 
 ![WebSDK](./images/launch1.png)
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -91,15 +91,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ### 3.3.3.2.2 [!UICONTROL  決定 ID] の取得
 
-[!UICONTROL  決定 ID] は、パーソナライズされたオファーとフォールバックオファーのどの組み合わせを使用したいかを識別します。 前の演習では、独自の [!UICONTROL  決定 ] を作成し、`--demoProfileLdap-- - Luma Decision` という名前を付けました。
+[!UICONTROL  決定 ID] は、パーソナライズされたオファーとフォールバックオファーのどの組み合わせを使用したいかを識別します。 前の演習では、独自の [!UICONTROL  決定 ] を作成し、`--aepUserLdap-- - Luma Decision` という名前を付けました。
 
-お使いの `--demoProfileLdap-- - Luma Decision` の [!UICONTROL  決定 ID] を見つけるには、[https://platform.adobe.com](https://platform.adobe.com) に移動します。
+お使いの `--aepUserLdap-- - Luma Decision` の [!UICONTROL  決定 ID] を見つけるには、[https://platform.adobe.com](https://platform.adobe.com) に移動します。
 
-次に、[!UICONTROL  オファー ] に移動し、[!UICONTROL  決定 ] に移動します。 クリックして、`--demoProfileLdap-- - Luma Decision` という名前の [!UICONTROL  決定 ] を選択します。
+次に、[!UICONTROL  オファー ] に移動し、[!UICONTROL  決定 ] に移動します。 クリックして、`--aepUserLdap-- - Luma Decision` という名前の [!UICONTROL  決定 ] を選択します。
 
 ![WebSDK](./images/launch7.png)
 
-上記の画像からわかるように、この例では [!UICONTROL  決定 ID] は `xcore:offer-activity:14c052382e1b6505` です。 次の演習で必要になるので、決定 `--demoProfileLdap-- - Luma Decision` に [!UICONTROL  決定 ID] を書き留めます。
+上記の画像からわかるように、この例では [!UICONTROL  決定 ID] は `xcore:offer-activity:14c052382e1b6505` です。 次の演習で必要になるので、決定 `--aepUserLdap-- - Luma Decision` に [!UICONTROL  決定 ID] を書き留めます。
 
 **[!UICONTROL 決定範囲]** の作成に必要な 2 つの要素を取得したので、次の手順に進むことができます。次の手順では、決定範囲をエンコードします。
 
@@ -120,11 +120,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
   ![WebSDK](./images/launch8.png)
 
-- Adobe Experience Platformから BASE64 エンコードされた文字列を取得します。 [!UICONTROL  決定 ] に移動し、クリックして [!UICONTROL  決定 ] を開きます。名前は `--demoProfileLdap-- - Luma Decision` です。
+- Adobe Experience Platformから BASE64 エンコードされた文字列を取得します。 [!UICONTROL  決定 ] に移動し、クリックして [!UICONTROL  決定 ] を開きます。名前は `--aepUserLdap-- - Luma Decision` です。
 
   ![WebSDK](./images/launch9.png)
 
-  `--demoProfileLdap-- - Luma Decision` を開くと、これが表示されます。 プレースメント [!UICONTROL Web – 画像 ] を見つけ、「**[!UICONTROL コピー]** ボタンをクリックします。 次に、「**[!UICONTROL エンコードされた決定範囲]**」をクリックします。 **[!UICONTROL 決定範囲]** がクリップボードにコピーされました。
+  `--aepUserLdap-- - Luma Decision` を開くと、これが表示されます。 プレースメント [!UICONTROL Web – 画像 ] を見つけ、「**[!UICONTROL コピー]** ボタンをクリックします。 次に、「**[!UICONTROL エンコードされた決定範囲]**」をクリックします。 **[!UICONTROL 決定範囲]** がクリップボードにコピーされました。
 
   ![WebSDK](./images/launch10.png)
 
@@ -152,7 +152,7 @@ Adobe Experience Platform Data Collection で、**[!UICONTROL 公開フロー]**
 
 ## 3.3.3.3 パーソナライズされたオファーを受信して適用するようにAdobe Experience Platform データ収集クライアントプロパティを設定する
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) の **[!UICONTROL プロパティ]** に移動します。 `--demoProfileLdap-- - Demo System (DD/MM/YYYY)` という名前のデータ収集プロパティを検索します。 Web のデータ収集プロパティを開きます。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) の **[!UICONTROL プロパティ]** に移動します。 `--aepUserLdap-- - Demo System (DD/MM/YYYY)` という名前のデータ収集プロパティを検索します。 Web のデータ収集プロパティを開きます。
 
 ![WebSDK](./images/launch1.png)
 

@@ -3,7 +3,7 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Edge Network、データストリームおよびサーバーサイドのデータ収集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1.png)
 
-`--demoProfileLdap-- - Demo System Datastream` という名前のデータストリームを検索します。
+`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを検索します。
 
 ![ データストリームに名前を付けて保存する ](./images/edgeconfig2.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 このデータストリームの場合…
 
-- 収集されたすべてのデータは、Adobe Experience Platformの `--aepSandboxId--` サンドボックスに保存されます
+- 収集されたすべてのデータは、Adobe Experience Platformの `--aepSandboxName--` サンドボックスに保存されます
 - すべてのエクスペリエンスイベントデータは、デフォルトでデータセット **デモシステム - Web サイトのイベントデータセット（グローバル v1.1）** に収集されます。
 - すべてのプロファイルデータは、デフォルトでデータセット **デモシステム - Web サイトのプロファイルデータセット （グローバル v1.1）** に収集されます（現在、Web SDK でプロファイルデータをネイティブに取り込む機能は、Web SDK ではまだサポートされておらず、後で利用できるようになります）
 - このデータストリームで **Offer decisioning** アプリケーションサービスを使用する場合は、Offer decisioningのチェックボックスをオンにする必要があります。 （これは、[ モジュール 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md) の一部です）

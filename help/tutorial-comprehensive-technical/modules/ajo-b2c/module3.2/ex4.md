@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer - Adobe Journey Optimizer内での SMS チ�
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 6%
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -40,7 +40,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 まず、ジャーニーに名前を付ける必要があります。
 
-ジャーニーの名前として、`--demoProfileLdap-- - Geofence Entry Journey` を使用します。 この例では、ジャーニー名は `vangeluw - Geofence Entry Journey` です。 現時点では、他の値を設定する必要はありません。 「**OK**」をクリックします。
+ジャーニーの名前として、`--aepUserLdap-- - Geofence Entry Journey` を使用します。 この例では、ジャーニー名は `vangeluw - Geofence Entry Journey` です。 現時点では、他の値を設定する必要はありません。 「**OK**」をクリックします。
 
 ![デモ](./images/joname.png)
 
@@ -76,7 +76,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 以下のコードを選択して、**詳細エディター** に貼り付けます。
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 10`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 10`
 
 その後、これが表示されます。
 
@@ -93,7 +93,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![デモ](./images/jo12.png)
 
-`--demoProfileLdap--GeofenceEntry.placeContext.geo.city` に移動すると、フィールドを見つけることができます。
+`--aepUserLdap--GeofenceEntry.placeContext.geo.city` に移動すると、フィールドを見つけることができます。
 
 そのフィールドをクリックすると、パラメーター `q` の動的な値として追加されます。 このフィールドには、例えばモバイルアプリに実装した geolocation-service が入力されます。 ここでは、デモ Web サイトの Admin Console を使用してこれをシミュレートします。 「**OK**」をクリックします。
 
@@ -119,7 +119,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 以下のコードを選択して、**詳細エディター** に貼り付けます。
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 10 and #{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 10 and #{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 25`
 
 その後、これが表示されます。
 
@@ -136,7 +136,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![デモ](./images/jo12.png)
 
-`--demoProfileLdap--GeofenceEntry.placeContext.geo.city` に移動すると、フィールドを見つけることができます。 そのフィールドをクリックすると、パラメーター **q** の動的な値として追加されます。 このフィールドには、例えばモバイルアプリに実装した geolocation-service が入力されます。 ここでは、デモ Web サイトの Admin Console を使用してこれをシミュレートします。 「**OK**」をクリックします。
+`--aepUserLdap--GeofenceEntry.placeContext.geo.city` に移動すると、フィールドを見つけることができます。 そのフィールドをクリックすると、パラメーター **q** の動的な値として追加されます。 このフィールドには、例えばモバイルアプリに実装した geolocation-service が入力されます。 ここでは、デモ Web サイトの Admin Console を使用してこれをシミュレートします。 「**OK**」をクリックします。
 
 ![デモ](./images/jo13.png)
 
@@ -163,7 +163,7 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 以下のコードを選択して、**詳細エディター** に貼り付けます。
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 25`
 
 その後、これが表示されます。
 
@@ -180,7 +180,7 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 ![デモ](./images/jo12.png)
 
-```--demoProfileLdap--GeofenceEntry.placeContext.geo.city``` に移動すると、フィールドを見つけることができます。 そのフィールドをクリックすると、パラメーター **q** の動的な値として追加されます。 このフィールドには、例えばモバイルアプリに実装した geolocation-service が入力されます。 ここでは、デモ Web サイトの Admin Console を使用してこれをシミュレートします。 「**OK**」をクリックします。
+```--aepUserLdap--GeofenceEntry.placeContext.geo.city``` に移動すると、フィールドを見つけることができます。 そのフィールドをクリックすると、パラメーター **q** の動的な値として追加されます。 このフィールドには、例えばモバイルアプリに実装した geolocation-service が入力されます。 ここでは、デモ Web サイトの Admin Console を使用してこれをシミュレートします。 「**OK**」をクリックします。
 
 ![デモ](./images/jo13.png)
 
@@ -254,7 +254,7 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 ![Journey Optimizer](./images/sms4b.png)
 
-左側のメニューで、「**アクション**」に戻り、「アクション」 `--demoProfileLdap--TextSlack` プションを選択して、「**メッセージ**」アクションの後にドラッグ&amp;ドロップします。
+左側のメニューで、「**アクション**」に戻り、「アクション」 `--aepUserLdap--TextSlack` プションを選択して、「**メッセージ**」アクションの後にドラッグ&amp;ドロップします。
 
 ![デモ](./images/joa18.png)
 
@@ -342,7 +342,7 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 ![デモ](./images/jop17.png)
 
-左側のメニューで、「**アクション**」に戻り、「アクション」 `--demoProfileLdap--TextSlack` プションを選択して、「**メッセージ**」アクションの後にドラッグ&amp;ドロップします。
+左側のメニューで、「**アクション**」に戻り、「アクション」 `--aepUserLdap--TextSlack` プションを選択して、「**メッセージ**」アクションの後にドラッグ&amp;ドロップします。
 
 ![デモ](./images/jop18.png)
 
@@ -430,7 +430,7 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 ![デモ](./images/jod17.png)
 
-左側のメニューで、「**アクション**」に戻り、「アクション」 `--demoProfileLdap--TextSlack` プションを選択して、「**メッセージ**」アクションの後にドラッグ&amp;ドロップします。
+左側のメニューで、「**アクション**」に戻り、「アクション」 `--aepUserLdap--TextSlack` プションを選択して、「**メッセージ**」アクションの後にドラッグ&amp;ドロップします。
 
 ![デモ](./images/jod18.png)
 

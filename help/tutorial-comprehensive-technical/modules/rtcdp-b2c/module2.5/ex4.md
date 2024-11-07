@@ -3,7 +3,7 @@ title: データ収集とリアルタイムサーバーサイド転送 – Googl
 description: Google Cloud 関数の作成と設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 次の選択を行います。
 
-- **関数名**: `--demoProfileLdap---event-forwarding`
+- **関数名**: `--aepUserLdap---event-forwarding`
 - **地域**：任意の地域を選択します。
 - **トリガーの種類**: **HTTP** を選択
 - **認証**:「未認証の呼び出しを許可 **を選択します**

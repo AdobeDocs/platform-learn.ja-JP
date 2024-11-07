@@ -3,7 +3,7 @@ title: Foundation - データ取り込み – スキーマの設定と識別子�
 description: Foundation - データ取り込み – スキーマの設定と識別子の設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3645'
 ht-degree: 5%
@@ -114,7 +114,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 次に、新しい **[!UICONTROL フィールドグループ]** に **[!UICONTROL 表示名]** と [!UICONTROL  説明 ] を入力する必要があります。
 
 スキーマの名前として、次を使用します。
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
 
@@ -287,7 +287,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 スキーマの名前として、次を使用します。
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 **[!UICONTROL ldap]** を特定の ldap に置き換えます。 例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
 
@@ -419,7 +419,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 フィールドグループの名前として、次を使用します。
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
 
@@ -528,7 +528,7 @@ ECID フィールドは型 **[!UICONTROL 文字列]** として定義され、�
 ![データ取得](./images/schemaname1ee.png)
 
 スキーマの名前として、次を使用します。
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
 

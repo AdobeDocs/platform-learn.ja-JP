@@ -3,7 +3,7 @@ title: Microsoft Azure Event Hub へのセグメントのアクティベーシ�
 description: Microsoft Azure Event Hub へのセグメントのアクティベーション - Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Azure Portal で **すべてのリソース** を選択します。
 
 ### イベントハブ
 
-前の演習で使用した命名規則に従って Event Hubs 名前空間を使用する場合は、リソースタイプ **Event Hubs 名前空間** のリソースを探し `--demoProfileLdap---aep-enablement` す。 それをメモしてください、あなたは次の演習でそれを必要とするでしょう。
+前の演習で使用した命名規則に従って Event Hubs 名前空間を使用する場合は、リソースタイプ **Event Hubs 名前空間** のリソースを探し `--aepUserLdap---aep-enablement` す。 それをメモしてください、あなたは次の演習でそれを必要とするでしょう。
 
 ![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
 
@@ -41,7 +41,7 @@ Event Hubs の名前空間名をクリックすると、詳細が表示されま
 
 ![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
 
-**Event Hubs** を選択して、Event Hubs 名前空間で定義されている Event Hubs のリストを取得します。前の演習で使用した命名規則に従っている場合は、`--demoProfileLdap---aep-enablement-event-hub` という名前の Event Hub があります。 それをメモしてください、あなたは次の演習でそれを必要とするでしょう。
+**Event Hubs** を選択して、Event Hubs 名前空間で定義されている Event Hubs のリストを取得します。前の演習で使用した命名規則に従っている場合は、`--aepUserLdap---aep-enablement-event-hub` という名前の Event Hub があります。 それをメモしてください、あなたは次の演習でそれを必要とするでしょう。
 
 ![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
 
@@ -69,8 +69,8 @@ Event Hubs の名前空間名をクリックすると、詳細が表示されま
 |---|---|---|
 | sasKeyName | SAS キー名 | RootManageSharedAccessKey |
 | sasKey | SAS キー値 | srREx9ShJG1Rv7f/.. |
-| 名前空間 | Event Hubs 名前空間 | `--demoProfileLdap---aep-enablement` |
-| eventHubName | イベントハブ | `--demoProfileLdap---aep-enablement-event-hub` |
+| 名前空間 | Event Hubs 名前空間 | `--aepUserLdap---aep-enablement` |
+| eventHubName | イベントハブ | `--aepUserLdap---aep-enablement-event-hub` |
 
 ## 2.4.2.2 Adobe Experience Platformでの Azure Event Hub の宛先の作成
 
@@ -80,7 +80,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -100,7 +100,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
 
-ここで、書式 `--demoProfileLdap---aep-enablement` に名前と説明を入力する必要があります。 **eventHubName** を入力し（前の演習を参照：`--demoProfileLdap---aep-enablement-event-hub`）、「**次へ**」をクリックします。
+ここで、書式 `--aepUserLdap---aep-enablement` に名前と説明を入力する必要があります。 **eventHubName** を入力し（前の演習を参照：`--aepUserLdap---aep-enablement-event-hub`）、「**次へ**」をクリックします。
 
 ![2-10-create-destination.png](./images/2-10-create-destination.png)
 

@@ -3,7 +3,7 @@ title: BigQuery Source コネクタを使用したAdobe Experience Platformで�
 description: BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析 – Google Cloud Platform アカウントの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Google アカウントが用意できたので、Google Cloud Platform 環境を
 
 | 条約 | 例 |
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | デライグル・グーグルクラウド |
+| `--aepUserLdap---googlecloud` | デライグル・グーグルクラウド |
 
 ![ デモ ](./images/ex1/3.png)
 
@@ -113,7 +113,7 @@ Google アカウントが用意できたので、Google Cloud Platform 環境を
 
 | 資格情報 | 名前付け | 例 |
 | ----------------- |-------------| -------------|
-| プロジェクト名 | `--demoProfileLdap---googlecloud` | vangeluw-googlecloud |
+| プロジェクト名 | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
 | プロジェクト ID | random | composed-task-306413 |
 
 上部のメニューバーで **プロジェクト名** をクリックすると、プロジェクト名とプロジェクト ID を確認できます。

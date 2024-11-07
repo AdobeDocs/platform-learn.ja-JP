@@ -3,7 +3,7 @@ title: Adobe Experience Platformで HTTP API エンドポイントを設定す�
 description: Adobe Experience Platformで HTTP API エンドポイントを設定する
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 8%
@@ -20,7 +20,7 @@ HTTP API Source コネクタを作成するには、次の URL に移動して�
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -28,7 +28,7 @@ HTTP API Source コネクタを作成するには、次の URL に移動して�
 
 ![データ取得](./images/kaep1.png)
 
-**新規アカウント** をクリックします。 HTTP API 接続の名前として、`--demoProfileLdap-- - Kafka` を使用します。この場合は **vangeluw - Kafka**。 **XDM 互換** のチェックボックスを有効にします。 **ソースに接続** をクリックします。
+**新規アカウント** をクリックします。 HTTP API 接続の名前として、`--aepUserLdap-- - Kafka` を使用します。この場合は **vangeluw - Kafka**。 **XDM 互換** のチェックボックスを有効にします。 **ソースに接続** をクリックします。
 
 ![データ取得](./images/kaep2.png)
 

@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - トリガーベースのジャーニーの設�
 description: この節では、トリガーベースのジャーニー – 注文確認を設定します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc32.png)
 
-まず、イベントに `--demoProfileLdap--PurchaseEvent` のような名前を付け、`Purchase Event` のような説明を追加します。
+まず、イベントに `--aepUserLdap--PurchaseEvent` のような名前を付け、`Purchase Event` のような説明を追加します。
 
 ![Journey Optimizer](./images/oc34.png)
 
@@ -100,11 +100,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc43.png)
 
-その後、これが表示されます。 ジャーニーに名前を付けます。 `--demoProfileLdap-- - Order Confirmation journey`.を使用します。「**OK**」をクリックします。
+その後、これが表示されます。 ジャーニーに名前を付けます。 `--aepUserLdap-- - Order Confirmation journey`.を使用します。「**OK**」をクリックします。
 
 ![Journey Optimizer](./images/oc45.png)
 
-まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--demoProfileLdap--PurchaseEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**OK**」をクリックします。
+まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--aepUserLdap--PurchaseEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**OK**」をクリックします。
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -266,7 +266,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc62.png)
 
-`--demoProfileLdap--PurchaseEvent` の横の矢印をクリックすると、ドリルの深さが表示されます。
+`--aepUserLdap--PurchaseEvent` の横の矢印をクリックすると、ドリルの深さが表示されます。
 
 ![Journey Optimizer](./images/oc63.png)
 
@@ -314,7 +314,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc722.png)
 
-`--demoProfileLdap--PurchaseEvent` の横の矢印をクリックすると、ドリルの深さが表示されます。
+`--aepUserLdap--PurchaseEvent` の横の矢印をクリックすると、ドリルの深さが表示されます。
 
 ![Journey Optimizer](./images/oc73.png)
 
@@ -379,7 +379,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![ プロパティページ ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--demoProfileLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../modules/datacollection/module1.1/images/property6.png)
 

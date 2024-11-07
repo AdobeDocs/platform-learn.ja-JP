@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど 
 description: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど – 調整されたカスタマージャーニーのトリガー
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ![ プロパティページ ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--demoProfileLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../modules/datacollection/module1.1/images/property6.png)
 

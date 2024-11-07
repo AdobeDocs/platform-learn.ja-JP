@@ -3,7 +3,7 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe AnalyticsとAdobe Audience Managerの実装
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Web SDK で収集したデータをAdobe AnalyticsとAdobe Audience Managerに�
 
 [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) に移動し、**データストリーム** に移動します。
 
-画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxId--` にする必要があります）。 特定のデータストリーム（`--demoProfileLdap-- - Demo System Datastream` という名前）を開きます。
+画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。 特定のデータストリーム（`--aepUserLdap-- - Demo System Datastream` という名前）を開きます。
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
 

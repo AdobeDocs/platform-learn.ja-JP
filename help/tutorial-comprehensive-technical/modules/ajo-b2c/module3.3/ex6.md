@@ -3,7 +3,7 @@ title: Offer decisioning- API を使用した決定のテスト
 description: API を使用した決定のテスト
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Postmanを開きます。 **[!UICONTROL インポート]** をクリックしま
 
 - プロパティ：`_instance.parentName==aepenablementfy22`
 
-このパラメーターで **[!UICONTROL aepenablementfy22]** は、Adobe Experience Platformで使用されるサンドボックスの名前です。 使用する必要があるサンドボックスは `--aepSandboxId--` です。 テキスト **[!UICONTROL aepenablementfy22]** を `--aepSandboxId--` で置き換えます。
+このパラメーターで **[!UICONTROL aepenablementfy22]** は、Adobe Experience Platformで使用されるサンドボックスの名前です。 使用する必要があるサンドボックスは `--aepSandboxName--` です。 テキスト **[!UICONTROL aepenablementfy22]** を `--aepSandboxName--` で置き換えます。
 
 サンドボックス名を置き換えたら、「**[!UICONTROL 送信]**」をクリックします。
 

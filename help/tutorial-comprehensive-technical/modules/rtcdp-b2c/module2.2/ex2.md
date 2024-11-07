@@ -3,7 +3,7 @@ title: インテリジェントサービス – 顧客 AI 新しいインスタ�
 description: 顧客 AI – 新しいインスタンスを作成（設定）
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 12%
@@ -30,7 +30,7 @@ Adobe Experience Platformで、左側のメニューの **サービス** をク�
 
 顧客 AI インスタンスに必要な詳細を入力します。
 
-- 名前：use `--demoProfileLdap-- Product Purchase Propensity`
+- 名前：use `--aepUserLdap-- Product Purchase Propensity`
 - 説明：使用：**顧客が製品を購入する可能性を予測する**
 - 傾向タイプ：**コンバージョン** を選択します
 

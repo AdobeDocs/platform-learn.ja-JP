@@ -3,7 +3,7 @@ title: Offer decisioning - オファーと意思決定 ID の設定
 description: Offer decisioning - オファーと意思決定 ID の設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 3%
@@ -18,10 +18,10 @@ ht-degree: 3%
 
 | 名前 | 日付範囲 | メールの画像リンク | Web の画像リンク | テキスト | 優先度 | 実施要件 | 言語 |
 |-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--demoProfileLdap-- - Nadia Elements Shell` | 今日 – 1 か月後 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all – 女性のお客様 | 英語（米国） |
-| `--demoProfileLdap-- - Radiant Tee` | 今日 – 1 か月後 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all – 女性のお客様 | 英語（米国） |
-| `--demoProfileLdap-- - Zeppelin Yoga Pant` | 今日 – 1 か月後 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all – 男性の顧客 | 英語（米国） |
-| `--demoProfileLdap-- - Proteus Fitness Jackshirt` | 今日 – 1 か月後 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all – 男性の顧客 | 英語（米国） |
+| `--aepUserLdap-- - Nadia Elements Shell` | 今日 – 1 か月後 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all – 女性のお客様 | 英語（米国） |
+| `--aepUserLdap-- - Radiant Tee` | 今日 – 1 か月後 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all – 女性のお客様 | 英語（米国） |
+| `--aepUserLdap-- - Zeppelin Yoga Pant` | 今日 – 1 か月後 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all – 男性の顧客 | 英語（米国） |
+| `--aepUserLdap-- - Proteus Fitness Jackshirt` | 今日 – 1 か月後 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all – 男性の顧客 | 英語（米国） |
 
 {style="table-layout:auto"}
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -45,7 +45,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/offers3.png)
 
-この場合、オファー `--demoProfileLdap-- - Nadia Elements Shell` を設定する必要があります。 上記のテーブルの情報を使用して、フィールドに入力します。 この例では、パーソナライズされたオファーの名前は **vangeluw - Nadia Elements Shell** です。 また、**開始日時** を昨日に、**終了日時** を今後 1 か月の日付に設定します。
+この場合、オファー `--aepUserLdap-- - Nadia Elements Shell` を設定する必要があります。 上記のテーブルの情報を使用して、フィールドに入力します。 この例では、パーソナライズされたオファーの名前は **vangeluw - Nadia Elements Shell** です。 また、**開始日時** を昨日に、**終了日時** を今後 1 か月の日付に設定します。
 
 完了したら、次のようになります。 「**次へ**」をクリックします。
 
@@ -182,7 +182,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/foffers3.png)
 
-フォールバックオファーの名前を入力：`--demoProfileLdap-- - Luma Fallback Offer`。 「**次へ**」をクリックします。
+フォールバックオファーの名前を入力：`--aepUserLdap-- - Luma Fallback Offer`。 「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/foffers4.png)
 
@@ -281,7 +281,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 このポップアップが表示されます。 このようにコレクションを設定します。 「**次へ**」をクリックします。
 
-- コレクション名：使用 `--demoProfileLdap-- - Luma Collection`
+- コレクション名：使用 `--aepUserLdap-- - Luma Collection`
 - **静的コレクションを作成** を選択します。
 
 ![ 決定ルール ](./images/createcollectionpopup1.png)
@@ -308,7 +308,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 このようなフィールドに入力します。 「**次へ**」をクリックします。
 
-- 名前：`--demoProfileLdap-- - Luma Decision`
+- 名前：`--aepUserLdap-- - Luma Decision`
 - 開始日時：昨日
 - 終了日時：今日+ 1 か月
 
@@ -322,7 +322,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/activity3.png)
 
-コレクション `--demoProfileLdap-- - Luma Collection` を選択し、「**追加**」をクリックします。
+コレクション `--aepUserLdap-- - Luma Collection` を選択し、「**追加**」をクリックします。
 
 ![ 決定ルール ](./images/activity4text.png)
 
@@ -330,15 +330,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/activity5text.png)
 
-プレースメント **Web – 画像** を選択し、評価条件の下にコレクション `--demoProfileLdap-- - Luma Collection` を追加します。 次に、「**+**」ボタンを再度クリックして、新しい決定範囲を追加します。
+プレースメント **Web – 画像** を選択し、評価条件の下にコレクション `--aepUserLdap-- - Luma Collection` を追加します。 次に、「**+**」ボタンを再度クリックして、新しい決定範囲を追加します。
 
 ![ 決定ルール ](./images/activity6text.png)
 
-プレースメント **メール – 画像** を選択し、評価条件の下でコレクション `--demoProfileLdap-- - Luma Collection` を追加します。 次に、「**次へ**」をクリックします。
+プレースメント **メール – 画像** を選択し、評価条件の下でコレクション `--aepUserLdap-- - Luma Collection` を追加します。 次に、「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/activity4.png)
 
-次に、`--demoProfileLdap-- - Luma Fallback Offer` という名前の **フォールバックオファー** を選択する必要があります。 「**次へ**」をクリックします。
+次に、`--aepUserLdap-- - Luma Fallback Offer` という名前の **フォールバックオファー** を選択する必要があります。 「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/activity10.png)
 

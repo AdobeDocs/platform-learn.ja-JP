@@ -3,7 +3,7 @@ title: Foundation - データ取得 – データセットの設定
 description: Foundation - データ取得 – データセットの設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ![データ取得](./images/datasetfromschema.png)
 
-次の画面では、1、`--demoProfileLdap-- - Demo System - Profile Schema for Website` で作成したスキーマを選択する必要があります。
+次の画面では、1、`--aepUserLdap-- - Demo System - Profile Schema for Website` で作成したスキーマを選択する必要があります。
 
 ![データ取得](./images/schemaselection.png)
 
@@ -65,7 +65,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 データセットの名前として、次を使用します。
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+`--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
 例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
 
@@ -101,7 +101,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ![データ取得](./images/datasetfromschema.png)
 
-次の画面では、2.2`--demoProfileLdap-- - Demo System - Event Schema for Website` で作成したスキーマを選択する必要があります。
+次の画面では、2.2`--aepUserLdap-- - Demo System - Event Schema for Website` で作成したスキーマを選択する必要があります。
 
 ![データ取得](./images/schemaselectionee.png)
 
@@ -113,7 +113,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 データセットの名前として、次を使用します。
 
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+`--aepUserLdap-- - Demo System - Event Dataset for Website`
 
 例えば、ldap **[!UICONTROL vangeluw]** の場合、次はスキーマの名前である必要があります。
 
@@ -137,7 +137,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 次に、データセットをAdobe Experience Platformのリアルタイム顧客プロファイルの一部として使用できるようにする必要があります。
 
-Web サイトのデータセット `--demoProfileLdap--` - デモシステム – プロファイルデータセットをクリックして開きます。
+Web サイトのデータセット `--aepUserLdap--` - デモシステム – プロファイルデータセットをクリックして開きます。
 
 画面の右側にある [!UICONTROL  プロファイル ] 切り替えアイコンを見つけます。
 
@@ -153,7 +153,7 @@ Web サイトのデータセット `--demoProfileLdap--` - デモシステム �
 
 これで、データセットが [!UICONTROL  プロファイル ] に対して有効になりました。
 
-データセットの概要に戻り、Web サイトのデータセット `--demoProfileLdap-- - Demo System - Event Dataset` をクリックして開きます。
+データセットの概要に戻り、Web サイトのデータセット `--aepUserLdap-- - Demo System - Event Dataset` をクリックして開きます。
 
 画面の右側にある [!UICONTROL  プロファイル ] 切り替えアイコンを見つけます。
 

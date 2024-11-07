@@ -3,7 +3,7 @@ title: Offer decisioning- デモ Web サイトを使用して意思決定をテ�
 description: デモ Web サイトを使用して決定をテスト
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
@@ -66,11 +66,11 @@ ht-degree: 3%
 
 ![RTCDP](./images/vec3.png)
 
-このポップアップが表示されます。 サンドボックス `--aepSandboxId--` を選択し、プレースメントを選択します **Web – 画像**。
+このポップアップが表示されます。 サンドボックス `--aepSandboxName--` を選択し、プレースメントを選択します **Web – 画像**。
 
 ![RTCDP](./images/vec4.png)
 
-次に、決定 `--demoProfileLdap-- - Luma Decision` を選択します。 「**保存**」をクリックします。
+次に、決定 `--aepUserLdap-- - Luma Decision` を選択します。 「**保存**」をクリックします。
 
 ![RTCDP](./images/vec5.png)
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
 ![RTCDP](./images/vec7.png)
 
-オファーの名前を入力します。使用する名前：`--demoProfileLdap-- - XT with Offers (VEC)`。 「**次へ**」をクリックします。
+オファーの名前を入力します。使用する名前：`--aepUserLdap-- - XT with Offers (VEC)`。 「**次へ**」をクリックします。
 
 ![RTCDP](./images/vec8.png)
 

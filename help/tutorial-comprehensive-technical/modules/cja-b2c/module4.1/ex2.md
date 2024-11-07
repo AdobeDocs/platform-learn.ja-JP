@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Customer Journey Analytics内のAdobe Experi
 description: Customer Journey Analytics - Customer Journey Analytics内のAdobe Experience Platform データセットの接続
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 接続に名前を付けられるようになりました。
 
-命名規則 `--demoProfileLdap-- – Omnichannel Data Connection` を使用してください。
+命名規則 `--aepUserLdap-- – Omnichannel Data Connection` を使用してください。
 
 例：`vangeluw - Omnichannel Data Connection`
 

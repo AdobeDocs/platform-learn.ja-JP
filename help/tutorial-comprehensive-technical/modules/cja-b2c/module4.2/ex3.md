@@ -3,7 +3,7 @@ title: BigQuery Source コネクタを使用したAdobe Experience Platformで�
 description: BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析 – GCP と BigQuery のAdobe Experience Platformへの接続
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Adobe Experience Platformで BigQuery Source コネクタを設定するには�
 
 | 名前付け | 例 |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery コネクタ |
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery コネクタ |
 
 ![ デモ ](./images/ex2/6-3.png)
 
@@ -305,7 +305,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -325,8 +325,8 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 | BigQuery コネクタ資格情報 | 値 | 例 |
 | ----------------- |-------------| -------------| 
-| アカウント名 | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery 接続 |
-| 説明 | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery 接続 |
+| アカウント名 | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery 接続 |
+| 説明 | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery 接続 |
 
 次のような情報が表示されます。
 

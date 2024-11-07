@@ -3,7 +3,7 @@ title: クエリサービス - Power BI/Tableau
 description: クエリサービス - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Adobe Experience Platform Query UI の検索フィールドに ldap を入力し
 
 ![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-データセットの名前および説明として `--demoProfileLdap-- Callcenter Interaction Analysis` を入力し、「**クエリを実行**」ボタンを押します
+データセットの名前および説明として `--aepUserLdap-- Callcenter Interaction Analysis` を入力し、「**クエリを実行**」ボタンを押します
 
 ![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 

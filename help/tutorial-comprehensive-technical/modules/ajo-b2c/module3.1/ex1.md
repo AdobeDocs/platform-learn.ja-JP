@@ -3,7 +3,7 @@ title: Journey Optimizer イベントの作成
 description: Journey Optimizer イベントの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![ACOP](./images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/emptyevent1.png)
 
-まず、イベントに `--demoProfileLdap--AccountCreationEvent` のような名前を付けます。
+まず、イベントに `--aepUserLdap--AccountCreationEvent` のような名前を付けます。
 
 ![ACOP](./images/eventname.png)
 

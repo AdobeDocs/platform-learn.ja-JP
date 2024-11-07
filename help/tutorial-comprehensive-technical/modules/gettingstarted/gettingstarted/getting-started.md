@@ -3,10 +3,10 @@ title: はじめに – 概要
 description: はじめに – 概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
@@ -26,11 +26,6 @@ ht-degree: 1%
 - Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Adobe Experience Platform Launchへのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - デモシステムへのアクセス （次へ）: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
-
->[!IMPORTANT]
->
->このチュートリアルは、特定のワークショップ形式を容易にするために作成されました。 アクセス権がない可能性のある特定のシステムとアカウントを使用します。 アクセス権がなくても、この非常に詳細なコンテンツを読むことで、多くのことを学べると思います。 いずれかのワークショップに参加していて、アクセス資格情報が必要な場合は、Adobe担当者に問い合わせてください。担当者から必要な情報が提供されます。
-
 
 ## 演習
 

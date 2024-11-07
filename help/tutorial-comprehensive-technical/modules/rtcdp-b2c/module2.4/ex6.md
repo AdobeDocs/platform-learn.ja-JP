@@ -3,7 +3,7 @@ title: Microsoft Azure Event Hub へのセグメントのアクティベーシ�
 description: Microsoft Azure Event Hub へのセグメントのアクティベーション – アクション
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -71,17 +71,17 @@ Visual Studio Code の **ターミナル** には、次のような記述が必�
 
 ## 2.4.6.3 機器セグメントへの関心の対象
 
-**機器** ページに一度移動し、**再読み込みや更新を行わないでください**。 このアクションは、`--demoProfileLdap-- - Interest in Equipment` のセグメントの条件を満たすものです。
+**機器** ページに一度移動し、**再読み込みや更新を行わないでください**。 このアクションは、`--aepUserLdap-- - Interest in Equipment` のセグメントの条件を満たすものです。
 
 ![6-04-luma-telco-nav-sports.png](./images/luma1.png)
 
-確認するには、プロファイルビューアパネルを開きます。 `--demoProfileLdap-- - Interest in Equipment` のメンバーになりました。 プロファイルビューアパネルでセグメントメンバーシップがまだ更新されていない場合は、「再読み込み」ボタンをクリックします。
+確認するには、プロファイルビューアパネルを開きます。 `--aepUserLdap-- - Interest in Equipment` のメンバーになりました。 プロファイルビューアパネルでセグメントメンバーシップがまだ更新されていない場合は、「再読み込み」ボタンをクリックします。
 
 ![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
 
-Visual Studio Code に戻り、「**TERMINAL**」タブを見ると、特定の **ECID** のセグメントのリストが表示されます。 このアクティベーションペイロードは、`--demoProfileLdap-- - Interest in Equipment` セグメントに適合するとすぐにイベントハブに配信されます。
+Visual Studio Code に戻り、「**TERMINAL**」タブを見ると、特定の **ECID** のセグメントのリストが表示されます。 このアクティベーションペイロードは、`--aepUserLdap-- - Interest in Equipment` セグメントに適合するとすぐにイベントハブに配信されます。
 
-セグメントペイロードを詳しく見ると、`--demoProfileLdap-- - Interest in Equipment` のステータスが **実現済み** であることがわかります。
+セグメントペイロードを詳しく見ると、`--aepUserLdap-- - Interest in Equipment` のステータスが **実現済み** であることがわかります。
 
 セグメントステータスが **実現済み** の場合は、プロファイルがセグメントにエントリしたばかりであることを意味します。 **既存** ステータスは、プロファイルが引き続きセグメントに含まれることを意味します。
 

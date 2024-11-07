@@ -3,7 +3,7 @@ title: Journey Optimizer ジャーニーとメールメッセージの作成
 description: Journey Optimizer メールメッセージの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 ![ACOP](./images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -234,7 +234,7 @@ ID 名前空間のリストで、「**メール**」名前空間を選択しま�
 
 ![ACOP](./images/journeyname.png)
 
-ジャーニーの名前をここに入力できます。 `--demoProfileLdap-- - Account Creation Journey` を使用してください。 「**OK**」をクリックして変更を保存します。
+ジャーニーの名前をここに入力できます。 `--aepUserLdap-- - Account Creation Journey` を使用してください。 「**OK**」をクリックして変更を保存します。
 
 ![ACOP](./images/journeyname1.png)
 

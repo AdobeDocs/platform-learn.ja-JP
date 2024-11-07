@@ -3,7 +3,7 @@ title: Microsoft Azure Event Hub へのセグメントのアクティブ化 – 
 description: Microsoft Azure Event Hub へのセグメントのアクティブ化 – セグメントのアクティブ化
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 ## 2.4.4.1 Azure Event Hub 宛先へのセグメントの追加
 
-この演習では、セグメント `--demoProfileLdap-- - Interest in Equipment` を `--demoProfileLdap---aep-enablement` Azure Event Hub の宛先に追加します。
+この演習では、セグメント `--aepUserLdap-- - Interest in Equipment` を `--aepUserLdap---aep-enablement` Azure Event Hub の宛先に追加します。
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 
@@ -22,7 +22,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -30,7 +30,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-その後、これが表示されます。 LDAP を使用してセグメントを検索し、セグメントのリストから `--demoProfileLdap-- - Interest in Equipment` を選択します。
+その後、これが表示されます。 LDAP を使用してセグメントを検索し、セグメントのリストから `--aepUserLdap-- - Interest in Equipment` を選択します。
 
 「**次へ**」をクリックします。
 

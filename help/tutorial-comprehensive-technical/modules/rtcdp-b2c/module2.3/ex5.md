@@ -3,7 +3,7 @@ title: Real-time CDP - セグメントを作成してアクションを実行 �
 description: Real-time CDP - セグメントを作成してアクションを実行 – セグメントをAdobe Targetに送信
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 3%
@@ -16,23 +16,23 @@ ht-degree: 3%
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1 データストリームの検証
 
-Real-Time CDPのAdobe Targetの宛先は、AdobeEdge Network へのデータの取り込みに使用されるデータストリームに接続されています。 Adobe Targetの宛先を設定する場合、まず、データストリームが既にAdobe Targetで有効になっているかどうかを確認する必要があります。 データストリームは、[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定し、`--demoProfileLdap-- - Demo System Datastream` という名前を付けました。
+Real-Time CDPのAdobe Targetの宛先は、AdobeEdge Network へのデータの取り込みに使用されるデータストリームに接続されています。 Adobe Targetの宛先を設定する場合、まず、データストリームが既にAdobe Targetで有効になっているかどうかを確認する必要があります。 データストリームは、[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定し、`--aepUserLdap-- - Demo System Datastream` という名前を付けました。
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動し、「**データストリーム**」または「**データストリーム （Beta）**」をクリックします。
 
 ![データ取得](./images/atdestds1.png)
 
-画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxId--` にする必要があります）。
+画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
 
-データストリームで、`--demoProfileLdap-- - Demo System Datastream` という名前のデータストリームを検索します。 データストリームをクリックして開きます。
+データストリームで、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを検索します。 データストリームをクリックして開きます。
 
 ![データ取得](./images/atdestds3.png)
 
@@ -76,8 +76,8 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 
 **新しい宛先の設定** 画面では、次の 2 つを設定する必要があります。
 
-- 名前：`--demoProfileLdap-- - Adobe Target (Web)` という名前を使用します。これは、**vangeluw - Adobe Target（Web）** のようになります。
-- データストリーム ID:[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定したデータストリームを選択する必要があります。 データストリームの名前は、`--demoProfileLdap-- - Demo System Datastream` にする必要があります。
+- 名前：`--aepUserLdap-- - Adobe Target (Web)` という名前を使用します。これは、**vangeluw - Adobe Target（Web）** のようになります。
+- データストリーム ID:[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定したデータストリームを選択する必要があります。 データストリームの名前は、`--aepUserLdap-- - Demo System Datastream` にする必要があります。
 
 「**次へ**」をクリックします。
 
@@ -91,7 +91,7 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 
 ![AT](./images/atdest7.png)
 
-使用可能なセグメントのリストで、「[ 演習 6.1 セグメントの作成 ](./ex1.md)」で作成したセグメント（「`--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`」という名前）を選択します。 次に、「**次へ**」をクリックします。
+使用可能なセグメントのリストで、「[ 演習 6.1 セグメントの作成 ](./ex1.md)」で作成したセグメント（「`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`」という名前）を選択します。 次に、「**次へ**」をクリックします。
 
 ![AT](./images/atdest8.png)
 
@@ -177,7 +177,7 @@ Adobe Experience Platform セグメントは、この「エクスペリエンス
 
 名前には、次を使用してください。
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 

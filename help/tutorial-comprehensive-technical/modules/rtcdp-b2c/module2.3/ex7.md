@@ -3,7 +3,7 @@ title: Real-time CDP – 宛先 SDK
 description: Real-time CDP – 宛先 SDK
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 3%
@@ -122,10 +122,10 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 ![Adobe I/Oの新規統合 ](../module2.1/images/api14.png)
 
-統合の名前と説明を入力します。 命名規則として、`AEP API --demoProfileLdap--` を使用します。 ldap を自分の ldap に置き換えます。
+統合の名前と説明を入力します。 命名規則として、`AEP API --aepUserLdap--` を使用します。 ldap を自分の ldap に置き換えます。
 例えば、ldap が vangeluw の場合、統合の名前と説明は AEP API vangeluw になります。
 
-**プロジェクトタイトル** として `AEP API --demoProfileLdap--` と入力します。 「**保存**」をクリックします。
+**プロジェクトタイトル** として `AEP API --aepUserLdap--` と入力します。 「**保存**」をクリックします。
 
 ![Adobe I/Oの新規統合 ](../module2.1/images/api15.png)
 
@@ -285,11 +285,11 @@ Adobe I/Oから、特定の値 **この非常に長い access_token）と有効�
 
 Adobe Experience Platformで独自の宛先を作成する最初の手順は、サーバーとテンプレートの設定を作成することです。
 
-これを行うには、**Destination Authoring API** の **Destination server and templates** に移動し、クリックしてリクエスト **設定 – 宛先サーバーPOSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxId--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
+これを行うには、**Destination Authoring API** の **Destination server and templates** に移動し、クリックしてリクエスト **設定 – 宛先サーバーPOSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
 
 ![データ取得](./images/sdkpm1.png)
 
-`--aepSandboxId--` で置き換えます。
+`--aepSandboxName--` で置き換えます。
 
 ![データ取得](./images/sdkpm2.png)
 
@@ -335,11 +335,11 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、�
 
 ## 2.3.7.5 宛先設定の作成
 
-Postmanの **Destination Authoring API** で、**Destination configurations}** に移動し、クリックしてリクエスト **設定 – 宛先POSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxId--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
+Postmanの **Destination Authoring API** で、**Destination configurations}** に移動し、クリックしてリクエスト **設定 – 宛先POSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
 
 ![データ取得](./images/sdkpm7.png)
 
-`--aepSandboxId--` で置き換えます。
+`--aepSandboxName--` で置き換えます。
 
 ![データ取得](./images/sdkpm8.png)
 
@@ -351,7 +351,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -428,7 +428,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -446,7 +446,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./images/destsdk3.png)
 
-その後、これが表示されます。 宛先の名前として、`--demoProfileLdap-- - Webhook` を使用します。 任意のエンドポイント（この例では **EU**）を選択します。 「**次へ**」をクリックします。
+その後、これが表示されます。 宛先の名前として、`--aepUserLdap-- - Webhook` を使用します。 任意のエンドポイント（この例では **EU**）を選択します。 「**次へ**」をクリックします。
 
 ![データ取得](./images/destsdk4.png)
 
@@ -454,7 +454,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./images/destsdk5.png)
 
-先ほど作成した `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` という名前のセグメントを選択します。 「**次へ**」をクリックします。
+先ほど作成した `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` という名前のセグメントを選択します。 「**次へ**」をクリックします。
 
 ![データ取得](./images/destsdk6.png)
 

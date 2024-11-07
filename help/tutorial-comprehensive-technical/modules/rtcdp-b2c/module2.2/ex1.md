@@ -3,7 +3,7 @@ title: インテリジェントサービス – 顧客 AI データ準備（取�
 description: 顧客 AI - データ準備（取り込み）
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 4%
@@ -75,7 +75,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 スキーマの名前として、次を使用します。
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 例えば、ldap **vangeluw** の場合、次はスキーマの名前である必要があります。
 
@@ -111,7 +111,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データセット](./images/createds1.png)
 
-データセットの名前として、`--demoProfileLdap-- - Demo System - Customer Experience Event Dataset` を使用します。 「**完了**」をクリックします。
+データセットの名前として、`--aepUserLdap-- - Demo System - Customer Experience Event Dataset` を使用します。 「**完了**」をクリックします。
 
 ![データセット](./images/createds2.png)
 

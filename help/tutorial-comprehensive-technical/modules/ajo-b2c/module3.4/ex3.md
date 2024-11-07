@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - メールメッセージでのパーソナラ�
 description: この演習では、メールコンテンツ内でセグメントパーソナライゼーションを使用する方法について説明します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 10%
@@ -24,7 +24,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 この演習では、セグメントメンバーシップに基づいてパーソナライズされたテキストを使用して、ニュースレターのメールメッセージを改善します。
 
-**ジャーニー** に移動します。 前の演習で作成したニュースレタージャーニーを見つけます。 `--demoProfileLdap-- - Newsletter` を検索します。 ジャーニーをクリックして開きます。
+**ジャーニー** に移動します。 前の演習で作成したニュースレタージャーニーを見つけます。 `--aepUserLdap-- - Newsletter` を検索します。 ジャーニーをクリックして開きます。
 
 ![Journey Optimizer](./images/sbp1.png)
 

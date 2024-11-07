@@ -3,7 +3,7 @@ title: Adobe Experience Platform データ収集とリアルタイムイベン�
 description: Adobe Experience Platform Data Collection イベント転送プロパティの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Adobe Experience Platform データ収集イベント転送プロパティの設
 
 ![Adobe Experience Platform データ収集 SSF](./images/launchhome.png)
 
-Adobe Experience Platform Data Collection Event Forwarding プロパティの名前を入力する必要があります。 命名規則として、`--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)` を使用します。 例えば、この例では、名前は **vangeluw - Demo System （22/02/2022） （Edge）** です。 「**保存**」をクリックします。
+Adobe Experience Platform Data Collection Event Forwarding プロパティの名前を入力する必要があります。 命名規則として、`--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)` を使用します。 例えば、この例では、名前は **vangeluw - Demo System （22/02/2022） （Edge）** です。 「**保存**」をクリックします。
 
 ![Adobe Experience Platform データ収集 SSF](./images/ssf1.png)
 

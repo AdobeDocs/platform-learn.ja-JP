@@ -3,7 +3,7 @@ title: 基盤 – リアルタイム顧客プロファイル – セグメント
 description: 基盤 – リアルタイム顧客プロファイル – セグメントの作成 – API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 3%
@@ -77,11 +77,11 @@ PQLに関する詳細およびドキュメントについては、[ こちら ](
 
 | キー | 値 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxId--` にしてください。
+>使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
 
 青い **送信** ボタンをクリックして、セグメントを作成し、その結果を表示します。
 
@@ -111,11 +111,11 @@ Postman コレクションで、「**手順 2 -POSTセグメントジョブ** �
 
 | キー | 値 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxId--` にしてください。
+>使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
 
 青い **送信** ボタンをクリックします。
 
@@ -142,11 +142,11 @@ Postman コレクションで、「**手順 3 - GETセグメントジョブス�
 
 | キー | 値 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxId--` にしてください。
+>使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
 
 青い **送信** ボタンをクリックします。
 

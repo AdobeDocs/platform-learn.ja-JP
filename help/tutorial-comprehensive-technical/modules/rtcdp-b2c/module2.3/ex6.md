@@ -3,7 +3,7 @@ title: Real-time CDP – 外部オーディエンス
 description: Real-time CDP – 外部オーディエンス
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 1%
@@ -71,7 +71,7 @@ ID 名前空間は、**外部オーディエンス** で使用するために既
 
 ![ 外部オーディエンスメタデータスキーマ 4](images/extAudMDXDM4.png)
 
-次に、スキーマ名 **名称未設定スキーマ** を選択します。 名前を `--demoProfileLdap-- - External Audiences Metadata` に変更します。
+次に、スキーマ名 **名称未設定スキーマ** を選択します。 名前を `--aepUserLdap-- - External Audiences Metadata` に変更します。
 
 ![ 外部オーディエンスメタデータスキーマ 5](images/extAudMDXDM5.png)
 
@@ -81,11 +81,11 @@ ID 名前空間は、**外部オーディエンス** で使用するために既
 
 ## 2.3.6.1.3 外部オーディエンスメタデータデータセットの作成
 
-**スキーマ** で、**参照** に移動します。 前の手順で作成した `--demoProfileLdap-- - External Audiences Metadata` スキーマを検索してクリックします。 次に、「**スキーマからデータセットを作成**」をクリックします。
+**スキーマ** で、**参照** に移動します。 前の手順で作成した `--aepUserLdap-- - External Audiences Metadata` スキーマを検索してクリックします。 次に、「**スキーマからデータセットを作成**」をクリックします。
 
 ![ 外部オーディエンスメタデータ DS 1](images/extAudMDDS1.png)
 
-「**名前**」フィールドに「`--demoProfileLdap-- - External Audience Metadata`」と入力します。 **データセットを作成** をクリックします。
+「**名前**」フィールドに「`--aepUserLdap-- - External Audience Metadata`」と入力します。 **データセットを作成** をクリックします。
 
 ![ 外部オーディエンスメタデータ DS 2](images/extAudMDDS2.png)
 
@@ -104,7 +104,7 @@ ID 名前空間は、**外部オーディエンス** で使用するために既
 次の情報を入力します。
 
 - **アカウントタイプ**: **新規アカウント** を選択します
-- **アカウント名**:`--demoProfileLdap-- - External Audience Metadata` を入力します
+- **アカウント名**:`--aepUserLdap-- - External Audience Metadata` を入力します
 - 「**XDM 互換ボックス**」チェックボックスをオンにします。
 
 次に、「**ソースに接続**」をクリックします。
@@ -115,7 +115,7 @@ ID 名前空間は、**外部オーディエンス** で使用するために既
 
 ![ 外部オーディエンスメタデータ HTTP 2](images/extAudMDhttp2a.png)
 
-**既存のデータセット** を選択し、ドロップダウンメニューでデータセット `--demoProfileLdap-- - External Audience Metadata` を検索して選択します。
+**既存のデータセット** を選択し、ドロップダウンメニューでデータセット `--aepUserLdap-- - External Audience Metadata` を検索して選択します。
 
 **データフローの詳細** を確認し、「**次へ**」をクリックします。
 
@@ -149,15 +149,15 @@ Source Connector の「概要」タブで、「**...** をクリックし、「*
 
 ```
 "xdmEntity": {
-    "_id": "--demoProfileLdap---extaudience-01",
-    "description": "--demoProfileLdap---extaudience-01 description",
+    "_id": "--aepUserLdap---extaudience-01",
+    "description": "--aepUserLdap---extaudience-01 description",
     "segmentIdentity": {
-      "_id": "--demoProfileLdap---extaudience-01",
+      "_id": "--aepUserLdap---extaudience-01",
       "namespace": {
         "code": "externalaudiences"
       }
     },
-    "segmentName": "--demoProfileLdap---extaudience-01 name",
+    "segmentName": "--aepUserLdap---extaudience-01 name",
     "segmentStatus": "ACTIVE",
     "version": "1.0"
   }
@@ -185,7 +185,7 @@ HTTP API Source コネクタ画面を更新すると、データが処理され�
 
 処理が完了したら、クエリサービスを使用してデータセット内のデータの可用性を確認できます。
 
-右側のメニューで **データセット** に移動し、前に作成した `--demoProfileLdap-- - External Audience Metadata` データセットを選択します。
+右側のメニューで **データセット** に移動し、前に作成した `--aepUserLdap-- - External Audience Metadata` データセットを選択します。
 
 ![ 外部オーディエンスメタデータ str 3](images/extAudMDstr3.png)
 
@@ -196,7 +196,7 @@ HTTP API Source コネクタ画面を更新すると、データが処理され�
 次のコードを入力して、**Shift + Enter** キーを押します。
 
 ```
-select * from --demoProfileLdap--_external_audience_metadata
+select * from --aepUserLdap--_external_audience_metadata
 ```
 
 クエリ結果には、取り込んだ外部オーディエンスのメタデータが表示されます。
@@ -229,7 +229,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ![ 外部オーディエンスプロファイルスキーマ 4](images/extAudPrXDM4.png)
 
-次に、スキーマ名 **名称未設定スキーマ** を選択します。 表示名フィールドに「`--demoProfileLdap-- - External Audiences Membership`」と入力します。
+次に、スキーマ名 **名称未設定スキーマ** を選択します。 表示名フィールドに「`--aepUserLdap-- - External Audiences Membership`」と入力します。
 
 ![ 外部オーディエンスプロファイルスキーマ 5](images/extAudPrXDM5a.png)
 
@@ -239,11 +239,11 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ## 2.3.6.2.2 外部オーディエンスメンバーシップデータセットの作成
 
-**スキーマ** で、**参照** に移動します。 前の手順で作成した `--demoProfileLdap-- - External Audiences Membership` スキーマを検索してクリックします。 次に、「**スキーマからデータセットを作成**」をクリックします。
+**スキーマ** で、**参照** に移動します。 前の手順で作成した `--aepUserLdap-- - External Audiences Membership` スキーマを検索してクリックします。 次に、「**スキーマからデータセットを作成**」をクリックします。
 
 ![ 外部オーディエンスメタデータ DS 1](images/extAudPrDS1.png)
 
-「**名前**」フィールドに「`--demoProfileLdap-- - External Audiences Membership`」と入力します。 **データセットを作成** をクリックします。
+「**名前**」フィールドに「`--aepUserLdap-- - External Audiences Membership`」と入力します。 **データセットを作成** をクリックします。
 
 ![ 外部オーディエンスメタデータ DS 2](images/extAudPrDS2.png)
 
@@ -263,7 +263,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 次の情報を入力します。
 
 - **アカウントタイプ**: **新規アカウント** を選択します
-- **アカウント名**:`--demoProfileLdap-- - External Audience Membership` を入力します
+- **アカウント名**:`--aepUserLdap-- - External Audience Membership` を入力します
 - 「**XDM 互換ボックス**」チェックボックスをオンにします。
 
 次に、「**ソースに接続**」をクリックします。
@@ -274,7 +274,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ![ 外部オーディエンスメタデータ HTTP 2](images/extAudPrhttp2a.png)
 
-**既存のデータセット** を選択し、ドロップダウンメニューでデータセット `--demoProfileLdap-- - External Audiences Membership` を検索して選択します。
+**既存のデータセット** を選択し、ドロップダウンメニューでデータセット `--aepUserLdap-- - External Audiences Membership` を検索して選択します。
 
 **データフローの詳細** を確認し、「**次へ**」をクリックします。
 
@@ -308,18 +308,18 @@ Source Connector の「概要」タブで、「**...** をクリックし、「*
 
 ```
   "xdmEntity": {
-    "_id": "--demoProfileLdap---profile-test-01",
+    "_id": "--aepUserLdap---profile-test-01",
     "_experienceplatform": {
       "identification": {
         "core": {
-          "crmId": "--demoProfileLdap---profile-test-01"
+          "crmId": "--aepUserLdap---profile-test-01"
         }
       }
     },
-    "personID": "--demoProfileLdap---profile-test-01",
+    "personID": "--aepUserLdap---profile-test-01",
     "segmentMembership": {
       "externalaudiences": {
-        "--demoProfileLdap---extaudience-01": {
+        "--aepUserLdap---extaudience-01": {
           "status": "realized",
           "lastQualificationTime": "2022-03-05T00:00:00Z"
         }
@@ -350,7 +350,7 @@ HTTP API Source コネクタ画面を更新します。数分後、データが�
 
 処理が完了したら、クエリサービスを使用してデータセット内のデータの可用性を確認できます。
 
-右側のメニューで **データセット** に移動し、前に作成した `--demoProfileLdap-- - External Audiences Membership ` データセットを選択します。
+右側のメニューで **データセット** に移動し、前に作成した `--aepUserLdap-- - External Audiences Membership ` データセットを選択します。
 
 ![ 外部オーディエンスメタデータ str 3](images/extAudPrstr3.png)
 
@@ -361,7 +361,7 @@ HTTP API Source コネクタ画面を更新します。数分後、データが�
 次のコードを入力して、**Shift + Enter** キーを押します。
 
 ```
-select * from --demoProfileLdap--_external_audiences_membership
+select * from --aepUserLdap--_external_audiences_membership
 ```
 
 クエリ結果には、取り込んだ外部オーディエンスのメタデータが表示されます。
@@ -382,11 +382,11 @@ Adobe Experience Platformでは、セグメントを作成し、それぞれの�
 
 ![ 外部オーディエンス SegBuilder 1](images/extAudSegUI2a.png)
 
-前に作成した外部オーディエンス（`--demoProfileLdap---extaudience-01` という名前）を選択します。 オーディエンスをキャンバスにドラッグ&amp;ドロップします。
+前に作成した外部オーディエンス（`--aepUserLdap---extaudience-01` という名前）を選択します。 オーディエンスをキャンバスにドラッグ&amp;ドロップします。
 
 ![ 外部オーディエンス SegBuilder 1](images/extAudSegUI2b.png)
 
-セグメントに名前を付け、`--demoProfileLdap-- - extaudience-01` を使用します。 **保存して閉じる** をクリックします。
+セグメントに名前を付け、`--aepUserLdap-- - extaudience-01` を使用します。 **保存して閉じる** をクリックします。
 
 ![ 外部オーディエンス SegBuilder 1](images/extAudSegUI1.png)
 
@@ -398,7 +398,7 @@ Adobe Experience Platformでは、セグメントを作成し、それぞれの�
 
 ## 2.3.6.4 顧客プロファイルの視覚化
 
-顧客プロファイルでセグメントの選定も視覚化できるようになりました。 **プロファイル** に移動し、ID 名前空間 **デモシステム - CRMID** を使用して、演習 6.6.2.4 の一部で使用した ID `--demoProfileLdap---profile-test-01` を指定し、「**表示**」をクリックします。 次に、「**プロファイル ID** をクリックしてプロファイルを開きます。
+顧客プロファイルでセグメントの選定も視覚化できるようになりました。 **プロファイル** に移動し、ID 名前空間 **デモシステム - CRMID** を使用して、演習 6.6.2.4 の一部で使用した ID `--aepUserLdap---profile-test-01` を指定し、「**表示**」をクリックします。 次に、「**プロファイル ID** をクリックしてプロファイルを開きます。
 
 ![ 外部オーディエンス SegBuilder 1](images/extAudProfileUI1.png)
 

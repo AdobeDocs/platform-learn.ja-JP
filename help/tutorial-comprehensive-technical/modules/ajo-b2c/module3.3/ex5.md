@@ -3,7 +3,7 @@ title: Offer decisioning – 決定をメールで使用
 description: メールでの決定の使用
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 11%
@@ -14,7 +14,7 @@ ht-degree: 11%
 
 この演習では、決定を使用してメールと SMS の配信をパーソナライズします。
 
-**ジャーニー** に移動します。 演習 7.2 で作成した `--demoProfileLdap-- - Account Creation Journey` という名前のジャーニーを見つけます。 ジャーニーをクリックして開きます。
+**ジャーニー** に移動します。 演習 7.2 で作成した `--aepUserLdap-- - Account Creation Journey` という名前のジャーニーを見つけます。 ジャーニーをクリックして開きます。
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
@@ -46,7 +46,7 @@ ht-degree: 11%
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-メールに含めるプレースメントのタイプを選択します。 **プレースメント** ドロップダウンメニューで **メール – 画像** を選択し、決定 `--demoProfileLdap-- - Luma Decision` を選択します。 「**追加**」をクリックします。
+メールに含めるプレースメントのタイプを選択します。 **プレースメント** ドロップダウンメニューで **メール – 画像** を選択し、決定 `--aepUserLdap-- - Luma Decision` を選択します。 「**追加**」をクリックします。
 
 ![Journey Optimizer](./images/emailoffer8.png)
 

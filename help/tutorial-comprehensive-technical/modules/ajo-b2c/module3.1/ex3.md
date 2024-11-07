@@ -3,7 +3,7 @@ title: 設定 ID を更新し、ジャーニーをテストする
 description: 設定 ID を更新し、ジャーニーをテストする
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![ プロパティページ ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--demoProfileLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../modules/datacollection/module1.1/images/property6.png)
 

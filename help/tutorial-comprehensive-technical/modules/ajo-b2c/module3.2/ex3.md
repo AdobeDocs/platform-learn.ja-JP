@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど 
 description: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど – カスタムアクションの定義
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 3%
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -46,7 +46,7 @@ Slackチャンネルにテキストを送信するアクションを 1 つ定義
 
 ![デモ](./images/emptyact.png)
 
-アクションの名前として、`--demoProfileLdap--TextSlack` を使用します。 この例では、アクション名は `vangeluwTextSlack` です。
+アクションの名前として、`--aepUserLdap--TextSlack` を使用します。 この例では、アクション名は `vangeluwTextSlack` です。
 
 説明を `Send Text to Slack` に設定します。
 

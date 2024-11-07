@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Customer Journey Analyticsを使用したビ
 description: Customer Journey Analytics - Customer Journey Analyticsを使用したビジュアライゼーション
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 0%
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 ![ デモ ](./images/prohome.png)
 
-プロジェクト `--demoProfileLdap-- - Omnichannel Analysis` を開きます。
+プロジェクト `--aepUserLdap-- - Omnichannel Analysis` を開きます。
 
-プロジェクトを開き、データビューを選択し `--demoProfileLdap-- - Omnichannel Analysis`、最初のビジュアライゼーションの作成を開始する準備が整います。
+プロジェクトを開き、データビューを選択し `--aepUserLdap-- - Omnichannel Analysis`、最初のビジュアライゼーションの作成を開始する準備が整います。
 
 ![ デモ ](./images/prodataView1.png)
 

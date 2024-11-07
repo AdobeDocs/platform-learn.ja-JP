@@ -3,7 +3,7 @@ title: Real-time CDP - セグメントを作成してアクションを実行 �
 description: Real-time CDP - セグメントを作成してアクションを実行 – セグメントを S3 の宛先に送信します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 5%
@@ -38,7 +38,7 @@ ht-degree: 5%
 
 **バケットを作成** 画面では、次の 2 つを設定する必要があります。
 
-- 名前：名前 `aepmodulertcdp--demoProfileLdap--` を使用します。 例えば、この演習では、バケット名は **aepmodulertcdpvangeluw** です。
+- 名前：名前 `aepmodulertcdp--aepUserLdap--` を使用します。 例えば、この演習では、バケット名は **aepmodulertcdpvangeluw** です。
 - 地域：地域 **EU （フランクフルト） eu-central-1** を使用します
 
 ![ETL](./images/bucketname.png)
@@ -69,7 +69,7 @@ AWS リソースへのアクセスは、Amazon Identity and Access Management �
 
 次に、ユーザーを設定します。
 
-- ユーザー名：`s3_--demoProfileLdap--_rtcdp` を名前として使用します。この例では、名前は `s3_vangeluw_rtcdp` です。
+- ユーザー名：`s3_--aepUserLdap--_rtcdp` を名前として使用します。この例では、名前は `s3_vangeluw_rtcdp` です。
 - AWSのアクセスタイプ：「**アクセスキー – プログラムによるアクセス**」を選択します。
 
 **次へ：権限** をクリックします。
@@ -121,7 +121,7 @@ AWS リソースへのアクセスは、Amazon Identity and Access Management �
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -157,9 +157,9 @@ Adobe Experience Platformが S3 バケットに接続できるように、名前
 
 | アクセスキー ID | シークレットアクセスキー |
 |:-----------------------:| :-----------------------:|
-| 名前 | `AWS - S3 - --demoProfileLdap--` |
-| 説明 | `AWS - S3 - --demoProfileLdap--` |
-| バケット名 | `aepmodulertcdp--demoProfileLdap--` |
+| 名前 | `AWS - S3 - --aepUserLdap--` |
+| 説明 | `AWS - S3 - --aepUserLdap--` |
+| バケット名 | `aepmodulertcdp--aepUserLdap--` |
 | フォルダーパス | / |
 
 「**次へ**」をクリックします。

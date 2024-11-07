@@ -3,7 +3,7 @@ title: Microsoft Azure Event Hub へのセグメントのアクティベーシ�
 description: Microsoft Azure Event Hub へのセグメントのアクティベーション - Azure 関数を定義する
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Visual Code Studio に戻ります（例：**Azure サブスクリプション 1
 
 ![3-08-vsc-function-template.png](./images/vsc5.png)
 
-関数の名前を入力し、次の書式 `--demoProfileLdap---aep-event-hub-trigger` を使用して Enter キーを押します。
+関数の名前を入力し、次の書式 `--aepUserLdap---aep-event-hub-trigger` を使用して Enter キーを押します。
 
 ![3-09-vsc-function-name.png](./images/vsc6.png)
 
@@ -180,7 +180,7 @@ module.exports = async function (context, eventHubMessages) {
 
 ![3-17-vsc-run-project.png](./images/vsc15.png)
 
-ストレージアカウントのリストから、[13.1.4 Azure ストレージアカウントの設定 ](./ex1.md) の一部として作成したものを選択します。 ストレージアカウントの名前は `--demoProfileLdap--aepstorage` です（例：**mmeewisaepstorage**）。
+ストレージアカウントのリストから、[13.1.4 Azure ストレージアカウントの設定 ](./ex1.md) の一部として作成したものを選択します。 ストレージアカウントの名前は `--aepUserLdap--aepstorage` です（例：**mmeewisaepstorage**）。
 
 ![3-22-vsc-select-storage-account.png](./images/vsc16.png)
 

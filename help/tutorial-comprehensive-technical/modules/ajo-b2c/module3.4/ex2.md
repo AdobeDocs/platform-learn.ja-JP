@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - バッチベースのジャーニーの設定
 description: この節では、ニュースレターを送信するバッチメールジャーニーを設定します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxId--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxId--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -30,7 +30,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 右側に、ジャーニーの名前と説明を指定する必要があるフォームが表示されます。 次の値を入力します。
 
-- **名前**:`--demoProfileLdap-- - Newsletter Journey`。 例：**vangeluw - ニュースレタージャーニー**。
+- **名前**:`--aepUserLdap-- - Newsletter Journey`。 例：**vangeluw - ニュースレタージャーニー**。
 - **説明**：月刊ニュースレター
 
 「**OK**」をクリックします。
@@ -41,7 +41,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/batchj3.png)
 
-**セグメントを選択** ポップアップで、LDAP を検索し、[ モジュール 2.3 - Real-time CDP - セグメントを作成してアクションを実行 ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) という名前のセグメントを選択し `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` す。 例：vangeluw - Interest in PROTEUS FITNESS JACKSHIRT。 「**保存**」をクリックします。
+**セグメントを選択** ポップアップで、LDAP を検索し、[ モジュール 2.3 - Real-time CDP - セグメントを作成してアクションを実行 ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) という名前のセグメントを選択し `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` す。 例：vangeluw - Interest in PROTEUS FITNESS JACKSHIRT。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/batchj5.png)
 
