@@ -3,18 +3,17 @@ title: はじめに – 概要
 description: はじめに – 概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
+source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 2%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
-# 0.はじめに
+# 0.1 はじめに
 
-**著者：[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-**このモジュール** では、データを収集し、デモ環境にアクセスできるように、すべてを設定します。
+このモジュールでは、データの収集、デモ環境へのアクセス、このチュートリアルの動的変数のパーソナライズをおこなえるように、すべてを設定します。
 
 ## 学習内容
 
@@ -24,28 +23,28 @@ ht-degree: 2%
 ## 前提条件
 
 - Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform Launchへのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform タグへのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - デモシステムへのアクセス （次へ）: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 
 ## 演習
 
-[0.1Experience LeagueドキュメントのChrome拡張機能のインストール](./ex1.md)
+[0.1.1Experience LeagueドキュメントのChrome拡張機能のインストール](./ex1.md)
 
 この演習では、Chrome拡張機能をインストールして設定し、チュートリアルコンテンツのパーソナライズに使用します。
 
-[0.2 デモシステムを使用：次に、Adobe Experience Platform Data Collection クライアントプロパティを設定します](./ex2.md)
+[0.1.2 デモシステムを使用する次に、Adobe Experience Platform Data Collection クライアントプロパティを設定します](./ex2.md)
 
 この演習では、次にデモシステムを使用して、web とモバイル用の Launch プロパティを設定します。
 
-[0.3 データストリームの作成](./ex3.md)
+[0.1.3 データストリームの作成](./ex3.md)
 
 この演習では、次にデモシステムを使用して、web とモバイル用の Launch プロパティを設定します。
 
-[0.4 Web サイトの使用](./ex4.md)
+[0.1.4 ウェブサイトの利用](./ex4.md)
 
 この演習では、デモやイネーブルメントに使用できるように web サイトを設定します。
 
-[0.5 モバイルアプリの使用](./ex5.md)
+[0.1.5 モバイルアプリの使用](./ex5.md)
 
 この演習では、デモやイネーブルメントに使用できるようにモバイルアプリケーションを設定します。
 

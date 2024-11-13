@@ -5,7 +5,7 @@ user-guide-description: サードパーティシステムへの接続を含む�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 3%
@@ -20,11 +20,11 @@ ht-degree: 3%
 + 0 はじめに {#gettingstarted}
    + 0.1 {#gettingstarted} の概要
       + [概要](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.0.1Experience LeagueドキュメントのChrome拡張機能のインストール](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.0.2 Adobe Experience Platform Data Collection クライアントプロパティを設定する際の次の手順で、デモシステムを使用します](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.0.3 データストリームの作成](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.0.4 Web サイトの使用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.0.5 モバイルアプリの使用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [0.1.1Experience LeagueドキュメントのChrome拡張機能のインストール](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [0.1.2 デモシステムを使用する次に、Adobe Experience Platform Data Collection クライアントプロパティを設定します](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [0.1.3 データストリームの作成](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [0.1.4 ウェブサイトの利用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [0.1.5 モバイルアプリの使用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 件のデータ収集 {#datacollection}
    + 1.1 Adobe Experience Platform Data Collection と Web SDK Extension {#module11}
