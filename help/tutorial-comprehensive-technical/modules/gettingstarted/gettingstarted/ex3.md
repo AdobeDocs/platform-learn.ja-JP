@@ -3,26 +3,31 @@ title: はじめに – データストリームの作成
 description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
 
-# 0.3 データストリームの作成
+# データストリームの作成
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 前の演習の後、2 つのデータ収集プロパティが得られました。1 つは web 用で、もう 1 つはモバイル用です。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
 
 ![DSN](./images/launchprop.png)
 
-これらのプロパティは、ほとんど使用する準備ができていますが、これらのプロパティを使用してデータの収集を開始する前に、データストリームを設定する必要があります。 データストリームとは何か、および演習 1.2 でのデータストリームの意味に関する概念について詳しく説明します。
+左側のメニューで、「**[!UICONTROL タグ]**」をクリックします。 前の演習の後、2 つのデータ収集プロパティが得られました。1 つは web 用で、もう 1 つはモバイル用です。
+
+![DSN](./images/launchprop1.png)
+
+これらのプロパティは、ほとんど使用する準備ができていますが、これらのプロパティを使用してデータの収集を開始する前に、データストリームを設定する必要があります。 データストリームとは何か、およびその意味に関する概念については、後のデータ収集モジュールの演習で詳しく説明します。
 
 今のところ、次の手順に従ってください。
 
-## 0.3.1 Web 用データストリームの作成
+## Web 用データストリームの作成
 
-**[!UICONTROL データストリーム]** または **[!UICONTROL データストリーム（Beta）]** をクリックします。
+**[!UICONTROL データストリーム]** をクリックします。
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1a.png)
 
@@ -34,7 +39,7 @@ ht-degree: 1%
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1.png)
 
-**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--aepUserLdap-- - Demo System Datastream` と入力します。 「イベントスキーマ」で、「**デモシステム - Web サイトのイベントスキーマ （グローバル v1.1）**」を選択します。 「**保存**」をクリックします。
+**[!UICONTROL 名前]** には、オプションの説明には、`--aepUserLdap-- - Demo System Datastream` と入力します。 **マッピングスキーマ** については、**デモシステム - Web サイトのイベントスキーマ（グローバル v1.1）** を選択してください。 「**保存**」をクリックします。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig2.png)
 
@@ -64,21 +69,21 @@ ht-degree: 1%
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig11.png)
 
-Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリックします。
+最初に、Adobe Experience Platform Web SDK 拡張機能をクリックしてから、**設定** をクリックします。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig12.png)
 
-その後、これが表示されます。 **データストリーム** の場合、現在、ダミーの値が 1 に設定されています。 ここで、「**リストから選択**」ラジオボタンをクリックする必要があります。 ドロップダウンリストで、前に作成したデータストリームを選択します。
+その後、これが表示されます。 **データストリーム** メニューを確認し、適切なサンドボックスが選択されていることを確認します。この場合、`--aepSandboxName--` にする必要があります。
+
+![Edge設定に名前を付けて保存する ](./images/edgeconfig12a.png)
+
+**データストリーム** ドロップダウンを開き、前に作成したデータストリームを選択します。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig13.png)
 
-**データストリーム** が選択されていることを確認します。 ヒント：`--aepUserLdap--` を入力することで、ドロップダウン内の結果を簡単にフィルタリングできます。
+3 つの異なる環境すべてで、**データストリーム** が選択されていることを確認します。 次に、「**保存**」をクリックします。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig14.png)
-
-**データ収集** が表示されるまで下にスクロールします。 **クリックデータ収集を有効にする** のチェックボックスが有効になっていないことを確認してください。 「**保存**」をクリックして変更を保存します。
-
-![Edge設定に名前を付けて保存する ](./images/edgeconfig14a.png)
 
 **公開フロー** に移動します。
 
@@ -92,13 +97,15 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig17.png)
 
-変更を公開中です。数分後に準備が整います。
+変更を公開中です。数分後に準備が整い、その後 **メイン** の横に緑の点が表示されます。
 
-## 0.3.2 モバイル用データストリームの作成
+![Edge設定に名前を付けて保存する ](./images/edgeconfig17a.png)
+
+## モバイル用データストリームの作成
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
 
-**[!UICONTROL データストリーム]** または **[!UICONTROL データストリーム（Beta）]** をクリックします。
+**[!UICONTROL データストリーム]** をクリックします。
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1a.png)
 
@@ -110,7 +117,7 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1.png)
 
-**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--aepUserLdap-- - Demo System Datastream (Mobile)` と入力します。 「イベントスキーマ」で、「**デモシステム – モバイルアプリのイベントスキーマ （グローバル v1.1）**」を選択します。 「**保存**」をクリックします。
+**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--aepUserLdap-- - Demo System Datastream (Mobile)` と入力します。 **マッピングスキーマ** については、**デモシステム – モバイルアプリのイベントスキーマ（グローバル v1.1）** を選択してください。 「**保存**」をクリックします。
 
 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -140,13 +147,13 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig11m.png)
 
-**Adobe Experience Platform Edge Network** 拡張機能で、「**設定**」をクリックします。
+**Adobe Experience Platform Edge Network** 拡張機能をクリックしてから、「**設定** をクリックします。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig12m.png)
 
 その後、これが表示されます。 ここで、設定した正しいサンドボックスとデータストリームを選択する必要があります。 使用するサンドボックスは `--aepSandboxName--` で、データストリームは `--aepUserLdap-- - Demo System Datastream (Mobile)` と呼ばれます。
 
-**Edge Network ドメイン** の場合は、既定のドメイン **edge.adobedc.net** を使用してください。
+**Edge Network ドメイン** の場合は、既定のドメインを使用してください。
 
 「**保存**」をクリックして変更を保存します。
 
@@ -164,10 +171,12 @@ Adobe Experience Platform Web SDK 拡張機能で、「**設定**」をクリッ
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig17m.png)
 
-変更を公開中です。数分後に準備が整います。
+変更を公開中です。数分後に準備が整い、その後 **メイン** の横に緑の点が表示されます。
 
-次の手順：[0.4 Web サイトを使用する ](./ex4.md)
+![Edge設定に名前を付けて保存する ](./images/edgeconfig17ma.png)
 
-[モジュール 0 に戻る](./getting-started.md)
+次の手順：[Web サイトの使用 ](./ex4.md)
+
+[「はじめに」に戻る](./getting-started.md)
 
 [すべてのモジュールに戻る](./../../../overview.md)

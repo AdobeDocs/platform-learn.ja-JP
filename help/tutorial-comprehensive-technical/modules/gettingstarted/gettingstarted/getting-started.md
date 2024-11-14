@@ -4,14 +4,14 @@ description: はじめに – 概要
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
-# 0.1 はじめに
+# はじめに
 
 このモジュールでは、データの収集、デモ環境へのアクセス、このチュートリアルの動的変数のパーソナライズをおこなえるように、すべてを設定します。
 
@@ -28,23 +28,23 @@ ht-degree: 1%
 
 ## 演習
 
-[0.1.1Experience LeagueドキュメントのChrome拡張機能のインストール](./ex1.md)
+[Experience Leagueドキュメント用のChrome拡張機能のインストール](./ex1.md)
 
 この演習では、Chrome拡張機能をインストールして設定し、チュートリアルコンテンツのパーソナライズに使用します。
 
-[0.1.2 デモシステムを使用する次に、Adobe Experience Platform Data Collection クライアントプロパティを設定します](./ex2.md)
+[Adobe Experience Platform Data Collection クライアントプロパティを設定する場合は、次にデモシステムを使用してください](./ex2.md)
 
 この演習では、次にデモシステムを使用して、web とモバイル用の Launch プロパティを設定します。
 
-[0.1.3 データストリームの作成](./ex3.md)
+[データストリームの作成](./ex3.md)
 
 この演習では、次にデモシステムを使用して、web とモバイル用の Launch プロパティを設定します。
 
-[0.1.4 ウェブサイトの利用](./ex4.md)
+[Web サイトの使用](./ex4.md)
 
 この演習では、デモやイネーブルメントに使用できるように web サイトを設定します。
 
-[0.1.5 モバイルアプリの使用](./ex5.md)
+[モバイルアプリの使用](./ex5.md)
 
 この演習では、デモやイネーブルメントに使用できるようにモバイルアプリケーションを設定します。
 

@@ -3,40 +3,37 @@ title: はじめに – 次にデモシステムを使用して Launch プロパ
 description: はじめに – 次にデモシステムを使用して Launch プロパティを設定します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# 0.2 デモシステムを使用：次に、Adobe Experience Platform Data Collection クライアントプロパティを設定します
+# Adobe Experience Platform Data Collection クライアントプロパティを設定する場合は、次にデモシステムを使用してください
 
-Adobe Experience Platformの包括的なテクニカルチュートリアルに新規登録すると、デモシステムにアクセスできる自動化されたプロセスが表示されるので、以下の設定にアクセスして実行できます。
+このチュートリアルでは、このチュートリアルの学習内容を視覚化し、安全な環境で設定をテストできるようにするために、Adobeの Demo System Next ツールを使用しています。 このチュートリアルを最大限に活用するには、次にデモシステムと統合するように AEP インスタンスを設定する必要があります。
 
-デモシステムにアクセスしたら、次の手順に進みます。
+デモシステムにアクセスできるようになったら、次の手順に進みます。
 
-[https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/) に移動します。 サンドボックスを選択し、「**クイックセットアップ**」をクリックします。
+[https://dsn.adobe.com/](https://dsn.adobe.com/) に移動し、**設定** に移動します。
+
+![DSN](./images/dsnsetup.png)
+
+**環境** ドロップダウンで、AEP インスタンスとサンドボックスを選択します。
 
 ![DSN](./images/dsnh1.png)
 
-次の画面が表示されます。
+次に、プリセット **AEP チュートリアルユーザー** を選択します。
 
 ![DSN](./images/dsnhome.png)
 
-**一般** - **環境** で、Adobe Experience Platform インスタンスとサンドボックス（この場合は）を選択します。
-
-- **国際Experience Platform**
-- **aepenablementfy22**
-- 設定：「**Global v2.0**」を選択してください
-
-![DSN](./images/dsn1.png)
-
-次に、プリセット **イネーブルメントユーザー** を選択し、「開始 **をクリック** ます。
+次に、「**開始** をクリックします。
 
 ![DSN](./images/dsn2.png)
 
-ポップアップで、データ収集プロパティの名前を入力します。 命名規則 **Demo System （DD/MM/YYYY）** を使用してください。 ヒント：LDAP は自動的に追加されます。自分で追加する必要はありません。
+ポップアップで、データ収集プロパティと Experience Builder プロジェクトの名前を入力します。 命名規則 **Demo System （DD/MM/YYYY）** を使用してください。 ヒント：LDAP は自動的に追加されます。自分で追加する必要はありません。
 
 「**開始**」をクリックします。
 
@@ -48,9 +45,9 @@ Adobe Experience Platformの包括的なテクニカルチュートリアルに�
 
 クイックセットアッププロセスが完了すると、次のことができるようになります。
 
-- 1 Luma デモブランドでデモ web サイトを使用できるようにする web 小売プロジェクト
-- 1 Luma デモブランドでデモモバイルアプリを使用できるようにするモバイル小売プロジェクト
-- Luma デモブランドでコールセンターとクライアントリングアプリを使用できるようにする 1 CX アプリ小売プロジェクト
+- 通信事業者のデモブランドでデモ web サイトを使用できる 1 つの web プロジェクト
+- 1 つのモバイルアプリプロジェクト（通信デモブランドでデモモバイルアプリを使用できます）。
+- 1 CX App プロジェクト。電話会社のデモブランドでコールセンターアプリを使用できます。
 - Web サイトからデータを収集するために使用する Web 用の 1 データ収集プロパティ
 - モバイル用の 1 データ収集プロパティ。モバイルアプリからデータを収集するために使用します。
 
@@ -58,8 +55,8 @@ Adobe Experience Platformの包括的なテクニカルチュートリアルに�
 
 この画面は次の手順で必要になるので、開いたままにしてください。
 
-次の手順：[0.3 データストリームを作成する ](./ex3.md)
+次の手順：[ データストリームを作成する ](./ex3.md)
 
-[モジュール 0 に戻る](./getting-started.md)
+[「はじめに」に戻る](./getting-started.md)
 
 [すべてのモジュールに戻る](./../../../overview.md)

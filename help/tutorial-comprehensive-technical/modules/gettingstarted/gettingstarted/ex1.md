@@ -4,14 +4,14 @@ description: はじめに – Experience Leagueドキュメント用のChrome拡
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1Experience LeagueドキュメントのChrome拡張機能のインストール
+# Experience Leagueドキュメント用のChrome拡張機能のインストール
 
 ## Chrome拡張機能について
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1 Chrome拡張機能のインストール
+## Chrome拡張機能のインストール
 
 Chrome拡張機能をインストールするには、Chrome ブラウザーを開き、[https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi) に移動します。 その後、これが表示されます。
 
@@ -55,7 +55,7 @@ Chrome拡張機能をインストールするには、Chrome ブラウザーを�
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2 Chrome拡張機能の設定
+## Chrome拡張機能の設定
 
 [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overviewに移動し ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) 拡張機能アイコンをクリックして開きます。
 
@@ -133,7 +133,7 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3 チュートリアルコンテンツの確認
+## チュートリアルコンテンツの検証
 
 テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3) に移動します。
 
@@ -141,10 +141,10 @@ Chrome 拡張機能でアクティブ化された環境に基づいて、すべ�
 
 これで、以下に類似した表示になります。ここでは、環境変数 `aepTenantId` が、実際の AEP テナント ID （この場合は **_experienceplatform**）に置き換えられています。
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-次の手順：[0.2 デモシステムを使用する次に、Adobe Experience Platform Data Collection クライアントプロパティを設定し ](./ex2.md) す。
+次の手順：[ 次にデモシステムを使用：Adobe Experience Platform Data Collection クライアントプロパティを設定する ](./ex2.md)
 
-[モジュール 0 に戻る](./getting-started.md)
+[「はじめに」に戻る](./getting-started.md)
 
 [すべてのモジュールに戻る](./../../../overview.md)

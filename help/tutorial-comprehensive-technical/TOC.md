@@ -5,10 +5,10 @@ user-guide-description: サードパーティシステムへの接続を含む�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
+source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 3%
+source-wordcount: '914'
+ht-degree: 4%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 + [チュートリアルの概要](/help/tutorial-comprehensive-technical/overview.md)
 
-+ 0 はじめに {#gettingstarted}
-   + 0.1 {#gettingstarted} の概要
++ はじめに {#gettingstarted}
+   + はじめに {#gettingstarted}
       + [概要](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.1.1Experience LeagueドキュメントのChrome拡張機能のインストール](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.1.2 デモシステムを使用する次に、Adobe Experience Platform Data Collection クライアントプロパティを設定します](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.1.3 データストリームの作成](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.1.4 ウェブサイトの利用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.1.5 モバイルアプリの使用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [Experience Leagueドキュメント用のChrome拡張機能のインストール](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [Adobe Experience Platform Data Collection クライアントプロパティを設定する場合は、次にデモシステムを使用してください](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [データストリームの作成](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [Web サイトの使用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [モバイルアプリの使用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 件のデータ収集 {#datacollection}
    + 1.1 Adobe Experience Platform Data Collection と Web SDK Extension {#module11}
