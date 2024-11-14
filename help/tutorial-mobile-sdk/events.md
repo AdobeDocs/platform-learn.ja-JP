@@ -3,7 +3,7 @@ title: Platform Mobile SDK を使用したモバイルアプリでのイベン�
 description: モバイルアプリでイベントデータをトラッキングする方法を説明します。
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: afb15c561179386e7846e8cd8963f67820af09f1
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Edge Network拡張機能は、エクスペリエンスイベントを Platform E
 * 標準フィールドグループに基づいて XDM イベントを送信します。
 * カスタムフィールドグループに基づいて XDM イベントを送信します。
 * XDM 購入イベントを送信します。
-* Assurance で検証します。
+* Assuranceでの検証。
 
 ## エクスペリエンスイベントの作成
 
@@ -121,9 +121,9 @@ Adobe Experience Platform Edge拡張機能は、以前に定義された XDM ス
 アプリに様々なコマース製品関連のアクションがあり、ユーザーが実行したこれらのアクションに基づいてイベントを送信する場合：
 
 * 表示：ユーザーが特定の製品を表示すると発生します。
-* 買い物かごに追加：ユーザーがタップしたとき 製品の詳細画面に <img src="assets/addtocart.png" width="20" /> 示
-* 後で使用するために保存：ユーザーがタップした場合 製品の詳細画面に <img src="assets/saveforlater.png" width="15" /> 示
-* 購入：ユーザーがタップした場合 製品の詳細画面に <img src="assets/purchase.png" width="20" /> 示されます。
+* 買い物かごに追加：ユーザーがタップしたとき 製品の詳細画面に <img src="assets/addtocart.png" width="20"/> 示
+* 後で使用するために保存：ユーザーがタップした場合 製品の詳細画面に <img src="assets/saveforlater.png" width="15"/> 示
+* 購入：ユーザーがタップした場合 製品の詳細画面に <img src="assets/purchase.png" width="20"/> 示されます。
 
 コマース関連のエクスペリエンスイベントの送信を再利用可能な方法で実装するには、専用の関数を使用します。
 
@@ -166,23 +166,23 @@ Adobe Experience Platform Edge拡張機能は、以前に定義された XDM ス
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. ボタンごとに（<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> と <img src="assets/purchase.png" width="20" />）ツールバーで、関連する呼び出しを `ATTrackingManager.trackingAuthorizationStatus == .authorized` クロージャ内に追加します。
+   1. ボタンごとに（<img src="assets/saveforlater.png" width="15"/>, <img src="assets/addtocart.png" width="20"/> と <img src="assets/purchase.png" width="20"/>）ツールバーで、関連する呼び出しを `ATTrackingManager.trackingAuthorizationStatus == .authorized` クロージャ内に追加します。
 
-      1. の場合 <img src="assets/saveforlater.png" width="15" />：
+      1. の場合 <img src="assets/saveforlater.png" width="15"/>：
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. の場合 <img src="assets/addtocart.png" width="20" />：
+      1. の場合 <img src="assets/addtocart.png" width="20"/>：
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. の場合 <img src="assets/purchase.png" width="20" />：
+      1. の場合 <img src="assets/purchase.png" width="20"/>：
 
          ```swift
          // Send purchase commerce experience event
@@ -338,20 +338,20 @@ Adobe Experience Platform Edge拡張機能は、以前に定義された XDM ス
 
 ## 検証
 
-1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレータまたはデバイスを Assurance に接続します。
+1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
    1. Assurance アイコンを左に移動します。
    1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
    1. タブバーで「**[!DNL Products]**」を選択します。
    1. 商品を選択します。
-   1. 選択 <img src="assets/saveforlater.png" width="15" />。
-   1. 選択 <img src="assets/addtocart.png" width="20" />。
-   1. 選択 <img src="assets/purchase.png" width="15" />。
+   1. 選択 <img src="assets/saveforlater.png" width="15"/>。
+   1. 選択 <img src="assets/addtocart.png" width="20"/>。
+   1. 選択 <img src="assets/purchase.png" width="15"/>。
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
 
-1. Assurance UI で、**[!UICONTROL com.adobe.edge.konductor]** ベンダーからの **[!UICONTROL hitReceived]** イベントを探します。
+1. Assurance UI で、.com.adobe.edge.konductor ]**ベンダーの**[!UICONTROL  hitReceived **[!UICONTROL イベントを探し]** す。
 1. イベントを選択し、**[!UICONTROL messages]** オブジェクトの XDM データを確認します。 または、「![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL Raw イベントをコピー]** を使用し、好みのテキストエディターまたはコードエディターを使用してイベントを貼り付けて検査することもできます。
 
    ![ データ収集の検証 ](assets/datacollection-validation.png)

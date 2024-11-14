@@ -4,9 +4,9 @@ description: モバイルアプリでAdobe Analyticsのデータを収集し、�
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -129,9 +129,9 @@ s.events = "scAdd:321435"
 
 ## Assurance での検証
 
-[Assurance](assurance.md) を使用すると、エクスペリエンスイベントを送信していること、XDM データが正しいこと、Analytics マッピングが期待どおりに行われていることを確認できます。
+[Assuranceを使用すると ](assurance.md) エクスペリエンスイベントを送信しており、XDM データが正しく、Analytics マッピングが期待どおりに行われていることを確認できます。
 
-1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
+1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
 1. **[!UICONTROL productListAdds]** イベントを送信します（バスケットに製品を追加します）。
 
@@ -306,6 +306,17 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >[!TIP]
 >
 >以前のモバイルアプリ実装とは異なり、ページ/画面ビューと他のイベントの区別はありません。 代わりに、処理ルールで **[!UICONTROL ページ名]** ディメンションを設定して、**[!UICONTROL ページビュー]** 指標を増分できます。 このチュートリアルではカスタム `screenName` フィールドを収集しているので、処理ルールで画面名を **[!UICONTROL ページ名]** にマッピングすることを強くお勧めします。
+
+## Analytics モバイル拡張機能からの移行
+
+[Adobe Analytics モバイル拡張機能を使用してモバイルアプリケーションを開発した場合は ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application)[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) の API 呼び出しを使用している可能性が最も高くなります。
+
+推奨Edge Networkを使用して移行する場合は、次の選択肢があります。
+
+* [ イベントデータのトラッキング ](events.md) 方法のレッスンで示すように ](configure-tags.md#extension-configuration)[Edge Network拡張機能を実装し、[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) API を使用します。 このチュートリアルでは、この実装に焦点を当てています。
+* [Edge Bridge拡張機能 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を実装し、[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API 呼び出しを引き続き使用します。 詳細と別のチュートリアルについては、[Edge Bridge拡張機能の実装 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を参照してください。
+
+
 
 
 >[!SUCCESS]
