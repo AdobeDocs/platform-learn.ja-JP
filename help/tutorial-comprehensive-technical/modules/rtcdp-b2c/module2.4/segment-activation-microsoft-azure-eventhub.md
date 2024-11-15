@@ -3,9 +3,10 @@ title: Microsoft Azure Event Hub に対するセグメントのアクティベ�
 description: Microsoft Azure Event Hub に対するセグメントのアクティベーション
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Microsoft Azure Event Hubs は、シンプルで信頼でき、拡張性の高�
 
 >[!NOTE]
 >
->[0.1 -Experience Leagueドキュメント用のChrome拡張機能のインストールで参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
+>Experience LeagueドキュメントのChrome拡張機能のインストール [ で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## 演習
 

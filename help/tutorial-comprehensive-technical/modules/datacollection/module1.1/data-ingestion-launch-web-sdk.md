@@ -3,16 +3,15 @@ title: 1.1 Adobe Experience Platform Data Collection と Web SDK Extension の�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能のセットアップ
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Foundation - Adobe Experience Platform Data Collection と Web SDK Extension のセットアップ
-
-**著者：[Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 この基本モジュールでは、Adobeのデータ収集のビジョンを示し、web サイトやモバイルアプリケーションから、Adobe Experience Platform データ収集、Adobe Experience Platform SDK およびAdobe Experience Platform Edge Networkを使用してAdobe Experience Platformや他のアプリケーションにデータを取得する方法について説明します。 ここでは、Adobe Experience Platformのテクニカルチュートリアルの範囲外にも影響を与える概念およびテクノロジーをいくつか紹介します。 これらの演習のうち、残りの包括的なチュートリアルの基礎となるのはどの部分かをはっきりと示しておく必要があります。ここでは、Experience Edgeとその機能の詳細と、さらなる情報とチュートリアルの参照先について説明します。
 
@@ -35,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[0.1 -Experience Leagueドキュメント用のChrome拡張機能のインストールで参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
+>Experience LeagueドキュメントのChrome拡張機能のインストール [ で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## 演習
 

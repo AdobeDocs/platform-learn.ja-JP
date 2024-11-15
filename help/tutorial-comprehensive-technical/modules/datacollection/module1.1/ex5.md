@@ -3,9 +3,10 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe AnalyticsとAdobe Audience Managerの実装
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,19 +15,19 @@ ht-degree: 0%
 
 ## コンテキスト
 
-XDM データが platform に送信されていることがわかります。 [ モジュール 2](./../module1.2/data-ingestion.md) の XDM の詳細と、カスタム変数を追跡する独自のスキーマの構築方法を確認します。 ここでは、データを Analytics とAudience Managerに転送するようにデータストリームを設定した場合の動作について説明します。
+XDM データが platform に送信されていることがわかります。 [ モジュール 1.2](./../module1.2/data-ingestion.md) の XDM と、カスタム変数を追跡する独自のスキーマの作成方法について詳しく説明します。 ここでは、データを Analytics とAudience Managerに転送するようにデータストリームを設定した場合の動作について説明します。
 
 ## 1.1.5.1 Analytics のマッピング変数
 
 Adobe Experience Platform [!DNL Web SDK] は特定の値を自動的にマッピングし、Web SDK を介して Analytics の新しい実装をできる限り迅速に行います。 自動的にマッピングされた変数が [ ここ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection) に一覧表示されます。
 
-[!DNL Adobe Analytics] に自動的にマッピングされていない XDM データの場合は、[ コンテキストデータ ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja) を使用して [ スキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) に一致させることができます。 その後、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) を使用して [!DNL Analytics] にマッピングし、変数に入力 [!DNL Analytics] きます。 コンテキストデータと処理ルールは、以前に Analytics を使用したことがある概念ですが、新しい概念である場合は、詳細について心配する必要はありません。
+Adobe Analyticsに自動的にマッピングされない XDM データの場合は、[context data](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja) を使用して [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) に一致させることができます。 その後、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) を使用して Analytics にマッピングし、Analytics 変数を設定できます。 コンテキストデータと処理ルールは、以前に Analytics を使用したことがある概念ですが、新しい概念である場合は、詳細について心配する必要はありません。
 
-また、デフォルトのアクションと製品リストのセットを使用して、AEP [!DNL Web SDK] でデータを送信または取得することもできます。 詳細については、[ 製品 ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection) を参照してください。
+また、デフォルトのアクションと製品リストのセットを使用して、AEP Web SDK でデータを送信または取得することもできます。 詳細については、[ 製品 ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection) を参照してください。
 
 ### コンテキストデータ
 
-[!DNL Analytics] で使用するために、XDM データはドット表記を使用してフラット化され、`contextData` として使用できるようになります。 次の値のペアのリストは、`context data` の例を示しています。
+Analytics で使用するために、XDM データはドット表記を使用してフラット化され、`contextData` として使用できるようになります。 次の値のペアのリストは、`context data` の例を示しています。
 
 ```javascript
 {
@@ -53,7 +54,7 @@ Adobe Experience Platform [!DNL Web SDK] は特定の値を自動的にマッピ
 
 ### 処理ルール
 
-Edge Network で収集されたすべてのデータには、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) 経由でアクセスできます。 ま [!DNL Analytics]、処理ルールを使用して、コンテキストデータを [!DNL Analytics] 変数に組み込むことができます。
+Edge Network で収集されたすべてのデータには、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) 経由でアクセスできます。 Analytics では、処理ルールを使用してコンテキストデータを Analytics 変数に組み込むことができます。
 
 ## 1.1.5.2.Experience PlatformEdge NetworkのAudience Manager
 

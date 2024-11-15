@@ -3,9 +3,10 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK extensio
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK extension のセットアップ - Adobe Experience Platformでの XDM スキーマ要件
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Web SDK と alloy.js でデータをAdobe Experience Platformに取り込める�
 
 ![AEP デバッガー ](./images/exp3.png)
 
-そのスキーマに、フィールドグループ **AEP Web SDK ExperienceEvent Mixin** が追加されていることがわかります。 このフィールドグループは、最低限必要なフィールドをすべてスキーマに追加します。 Web SDK で使用されるAdobe Experience Platformのすべてのエクスペリエンスイベントスキーマは、常にそのフィールドグループがスキーマの一部である必要があります。
+このスキーマで、フィールドグループ **AEP Web SDK ExperienceEvent** が追加されていることがわかります。 このフィールドグループは、最低限必要なフィールドをすべてスキーマに追加します。 Web SDK で使用されるAdobe Experience Platformのすべてのエクスペリエンスイベントスキーマは、常にそのフィールドグループがスキーマの一部である必要があります。
 
 ![AEP デバッガー ](./images/exp4.png)
 

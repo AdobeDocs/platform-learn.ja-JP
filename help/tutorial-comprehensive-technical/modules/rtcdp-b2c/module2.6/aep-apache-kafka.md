@@ -3,9 +3,10 @@ title: Apache Kafka からAdobe Experience Platformへのデータのストリ�
 description: このモジュールでは、独自の Apache Kafka クラスターを設定し、トピック、プロデューサー、コンシューマーを定義し、Kafka Connect 用のAdobe Experience Platform シンクコネクタを使用してAdobe Experience Platformにデータをストリーミングする方法について説明します。
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[0.1 -Experience Leagueドキュメント用のChrome拡張機能のインストールで参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
+>Experience LeagueドキュメントのChrome拡張機能のインストール [ で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## 演習
 

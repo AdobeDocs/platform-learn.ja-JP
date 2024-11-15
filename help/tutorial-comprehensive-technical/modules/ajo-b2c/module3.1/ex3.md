@@ -3,9 +3,10 @@ title: 設定 ID を更新し、ジャーニーをテストする
 description: 設定 ID を更新し、ジャーニーをテストする
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ eventID を貼り付けると、画面は次のようになります。 次に�
 [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** ページで、「**実行** をクリックします。
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 

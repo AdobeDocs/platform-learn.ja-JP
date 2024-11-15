@@ -3,10 +3,11 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Targetの実装
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Web SDK で収集したデータをAdobe Targetに送信し、すべてのお客
 
 ![AEP デバッガー ](./images/aa2.png)
 
-その後、これが表示されます。 サービス **Adobe Target** を選択します。オプションで、追加情報を指定できます。 現時点では、これを保存する必要はないので、[**キャンセル**] をクリックします。
+その後、これが表示されます。 サービス **Adobe Target** を選択します。オプションで、追加情報を指定できます。 「**保存**」をクリックします。
 
 ![AEP デバッガー ](./images/at1.png)
 

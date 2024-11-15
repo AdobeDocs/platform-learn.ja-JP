@@ -3,9 +3,10 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能のセットアップ – クライアントサイド Web Data Collection
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### Adobe Experience Platform Debuggerのインストール
 
-Experience Platformデバッガーは、Chromeおよび Firefox ブラウザーで使用できる拡張機能で、web ページに実装されたAdobeテクノロジーを確認するのに役立ちます。 使用するブラウザーのバージョンをダウンロードします。
+Experience Platformデバッガーは、Chromeおよび Firefox ブラウザーで使用できる拡張機能で、web ページに実装されたAdobeテクノロジーを確認するのに役立ちます。 使用するブラウザーのバージョンをインストールします。
 
 - [Firefox 拡張機能 ](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Experience Platformデバッガーは、Chromeおよび Firefox ブラウザー�
 
 ### デモ Web サイトを開きます。
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** ページで、「**実行** をクリックします。
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
@@ -77,15 +74,19 @@ Experience Platformデバッガーは、Chromeおよび Firefox ブラウザー�
 
 ![AEP デバッガー ](./images/validate2.png)
 
+その後、デバッガーにログインします。
+
+![AEP デバッガー ](./images/validate2ab.png)
+
 デモ Web サイトでリロードボタンを押して、デバッガーをその特定のタブに接続します。
 
 ![AEP デバッガー ](./images/validate2a.png)
 
-上の図のように、デバッガーが **[!UICONTROL ホームに接続]** されていることを確認し、**[!UICONTROL lock]** アイコンをクリックして、デバッガーをデモ Web サイトにロックします。 そうしないと、デバッガーが切り替わり続けて、フォーカスされているブラウザータブの実装の詳細が表示されるので、混乱が生じるおそれがあります。
+上の図のように、デバッガーが **[!UICONTROL ホームに接続]** されていることを確認し、**[!UICONTROL lock]** アイコンをクリックして、デバッガーをデモ Web サイトにロックします。 そうしないと、デバッガーが切り替わり続けて、フォーカスされているブラウザータブの実装の詳細が表示されるので、混乱が生じるおそれがあります。 デバッガーがロックされると、アイコンが **ロック解除** に変わります。
 
 ![AEP デバッガー ](./images/validate3.png)
 
-次に、デモ Web サイトの任意のページ（例：**Men** カテゴリページ）に移動します。
+次に、デモ Web サイトの任意のページ（例：**プラン** カテゴリページ）に移動します。
 
 ![AEP デバッガー AEP Web SDK 拡張機能 ](./images/validate4.png)
 
@@ -95,11 +96,11 @@ Experience Platformデバッガーは、Chromeおよび Firefox ブラウザー�
 
 ![AEP デバッガー AEP Web SDK 拡張機能 ](./images/validate5.png)
 
-クリックして **[!UICONTROL events]** 行を開きます。 **web.webpagedetails.pageViews** イベントと、**Web SDK ExperienceEvent XDM** 形式に準拠するその他の標準変数を確認する方法に注意してください。
+クリックすると、**[!UICONTROL events]** 行が開きます。 **web.webpagedetails.pageViews** イベントと、**Web SDK ExperienceEvent XDM** 形式に準拠するその他の標準変数を確認する方法に注意してください。
 
 ![Events 値 ](./images/validate8.png)
 
-このようなリクエストの詳細は、「ネットワーク」タブにも表示されます。 **インタラクション** を使用してリクエストをフィルタリングし、Web SDK から送信されるリクエストを特定します。 XDM ペイロードのすべての詳細については、リクエストペイロードヘッダーを参照してください。
+このようなリクエストの詳細は、「ネットワーク」タブにも表示されます。 **インタラクション** を使用してリクエストをフィルタリングし、Web SDK から送信されるリクエストを特定します。 XDM ペイロードのすべての詳細については、ペイロード セクションを参照してください。
 
 ![ 「ネットワーク」タブ ](./images/validate9.png)
 

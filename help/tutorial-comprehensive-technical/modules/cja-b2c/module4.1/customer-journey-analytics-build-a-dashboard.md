@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Adobe Experience Platform上にAnalysis Work
 description: Customer Journey Analytics - Adobe Experience Platform上にAnalysis Workspaceを使用してダッシュボードを作成します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Customer Journey Analyticsについて詳しくは、[ こちら ](https://spark
 
 >[!NOTE]
 >
->[0.1 -Experience Leagueドキュメント用のChrome拡張機能のインストールで参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
+>Experience LeagueドキュメントのChrome拡張機能のインストール [ で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## 演習
 

@@ -3,9 +3,10 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Experience Platform Data Collection の概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1273'
 ht-degree: 9%
 
 ---
@@ -26,31 +27,30 @@ ht-degree: 9%
 
 ![ プロパティページ ](./images/launch1.png)
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。
+**はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。
+クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./images/property6.png)
 
-**Web** プロパティを開きます。
 
-次に、プロパティの概要ページが表示されます。 左側のパネルで **[!UICONTROL 拡張機能]** をクリックします。 Adobe Experience Platform Web SDK 拡張機能の下にある「**[!UICONTROL 設定]**」ボタンをクリックします。
+
+次に、プロパティの概要ページが表示されます。 左側のパネルで、「**[!UICONTROL 拡張機能]**」をクリックし、「**Adobe Experience Platform Web SDK**」をクリックして、「**[!UICONTROL 設定]**」をクリックします。
 
 ![ プロパティの概要ページ ](./images/property7.png)
 
-Adobe Experience Platform Web SDK へようこそ。 ここでは、[ 演習 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームやその他の高度な設定を使用して拡張機能を設定できます。 この演習では、2 つの設定のみを設定します。
+Adobe Experience Platform Web SDK へようこそ。 ここでは、[ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームやその他の高度な設定を使用して拡張機能を設定できます。
 
-デフォルトのEdge ドメインは、常に **edge.adobedc.net** です。 Adobe Experience CloudまたはAdobe Experience Platform環境に CNAME 設定を実装した場合は、**[!UICONTROL Edge ドメイン]** を更新する必要があります。 Adobe Experience Platform インスタンスはこのEdge ドメインを使用しています：`--webSdkEdgeDomain--`。
+デフォルトのエッジドメインは、常に **edge.adobedc.net** です。 Adobe Experience CloudまたはAdobe Experience Platform環境に CNAME 設定を実装した場合は、**[!UICONTROL Edge ドメイン]** を更新する必要があります。
 
-インスタンスのEdge ドメインがデフォルトのドメインと異なる場合は、Edge ドメインを更新してください。 Edge ドメインを使用すると、ファーストパーティトラッキングサーバーを設定し、その後、バックエンドで CNAME 設定を使用してデータがAdobeに収集されるようにします。
+インスタンスのエッジドメインがデフォルトのドメインと異なる場合は、ここでエッジドメインを更新してください。 不明な場合は、デフォルトのドメインを使用します。 エッジドメインを使用すると、ファーストパーティトラッキングサーバーを設定することができ、その後、バックエンドで CNAME 設定を使用して、データがAdobeに確実に収集されるようにします。
 
 ![ 拡張機能ホーム ](./images/property9edgedomain.png)
 
-ここで、「**[!UICONTROL データストリーム]**」見出しの下の「**[!UICONTROL リストから選択]**」ラジオボタンが選択されていることを確認し、「**[!UICONTROL データストリーム]**」ボックスのリストから、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを選択します。
-
-![ 拡張機能ホーム ](./images/property9edge.png)
+「**[!UICONTROL データストリーム]**」の「**はじめに**」セクションで、データストリームを既に選択しています。 各環境に対して、「**[!UICONTROL データストリーム]** ボックスのリストから `--aepUserLdap-- - Demo System Datastream` のデータストリームを選択しました。
 
 「**[!UICONTROL 保存]**」をクリックして、拡張機能ビューに戻ります。
 
-![Adobe Experience Platform Web SDK ホームページ ](./images/save.png)
+![ 拡張機能ホーム ](./images/property9edge.png)
 
 ## 1.1.3.2 データ要素
 
@@ -104,11 +104,13 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 ![ メディア – 記事ページルールの検索 ](./images/rule1.png)
 
-このルールを構成する個々の要素を見てみましょう。 すべてのルールに対して指定した **[!UICONTROL イベント]** が発生すると、**[!UICONTROL 条件]** が評価され、必要に応じて指定した **[!UICONTROL アクション]** が実行されます。
+このルールを構成する個々の要素を見てみましょう。
+
+すべてのルールに対して：指定した **[!UICONTROL イベント]** が発生すると、**[!UICONTROL 条件]** が評価され、必要に応じて指定した **[!UICONTROL アクション]** が実行されます。
 
 ![ メディア – 記事ページルール ](./images/rule2.png)
 
-イベント **カスタムイベント – 製品表示** をクリックします。 これは、が読み込まれるビューです。
+イベント **コア – カスタムイベント** をクリックします。 これは、が読み込まれるビューです。
 
 **イベントタイプ** ドロップダウンをクリックします。
 
@@ -118,9 +120,11 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 ルールに戻るには、「**[!UICONTROL キャンセル]**」をクリックします。
 
-アクション **「製品表示」イベントを AEP に送信** をクリックします。
+アクション **「製品表示」エクスペリエンスイベントを送信** をクリックします。
 
-ここでは、Adobe Experience Platform Web SDK によってAdobe Edgeに送信されているデータを確認できます。 具体的には、Web SDK の **alloy** **[!UICONTROL Instance]** を使用しています。 別の **[!UICONTROL インスタンス]** を設定すると、特に、様々なデータストリームを使用できます。 イベント **[!UICONTROL タイプ]** を **commerce.productViews** として指定しており、送信している XDM データは、以前に変更した **XDM – 製品表示** データ要素です。
+![ イベント送信アクション ](./images/rule5a.png)
+
+ここでは、Adobe Experience Platform Web SDK によって Edge に送信されているデータを確認できます。 具体的には、Web SDK の **alloy** **[!UICONTROL Instance]** を使用しています。 イベント **[!UICONTROL タイプ]** は **Commerce商品（買い物かご）表示** に設定されており、送信している XDM データは、以前に変更した **XDM – 商品表示** データ要素です。
 
 ![ イベント送信アクション ](./images/rule5.png)
 
@@ -136,17 +140,14 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 ![ ライブラリアクセス ](./images/publish1.png)
 
-「**変更されたすべてのリソースを追加**」ボタンをクリックします。
+「**変更されたすべてのリソースを追加**」ボタンをクリックします。 次に、
+**開発用に保存してビルド** ボタンをクリックします。
 
 ![ ライブラリアクセス ](./images/publish1a.png)
 
-下にスクロールすると、ほとんどのリソースが **リビジョン 1 （最新）** のままになりますが、変更した 2 つの **Data Element: ruleArticlePages** と **Extension: Adobe Experience Platform Web SDK** は **最新** とマークされます。
-
-**開発用に保存してビルド** ボタンをクリックします。
+ライブラリのビルドには数分かかる場合があり、完了すると、ライブラリ名の左側に緑のドットが表示されます。
 
 ![ コンテンツライブラリ ](./images/publish2.png)
-
-ライブラリのビルドには数分かかる場合があり、完了すると、ライブラリ名の左側に緑のドットが表示されます。
 
 公開フロー画面で確認できるように、Adobe Experience Platform データ収集の公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 開発環境では、単一のライブラリを使用します。
 

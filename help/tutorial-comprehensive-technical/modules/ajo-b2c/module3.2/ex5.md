@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど 
 description: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど – 調整されたカスタマージャーニーのトリガー
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -73,10 +74,6 @@ ht-degree: 1%
 [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** ページで、「**実行** をクリックします。
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 

@@ -3,10 +3,11 @@ title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張�
 description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Experience Platform Data Collection の説明
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
+source-wordcount: '504'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +43,12 @@ Adobe Experience Platform Data Collection は、企業が様々なユースケ�
 - **[!UICONTROL タグ]** クライアントサイドのすべてのプロパティの概要を説明します
 - **[!UICONTROL アプリサーフェス]** では、プッシュ通知を有効にするすべてのアプリ設定の概要を示します（この設定は Project Sierra と組み合わせて使用または有効になります）
 - **[!UICONTROL データストリーム]** については、[ 次の演習 ](./ex2.md) で説明します
-- **[!UICONTROL イベント転送]** では、[ モジュール 14 - Real-Time CDP Connections：イベント転送 ](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md) で説明するすべてのサーバーサイドプロパティの概要を説明します。
+- **[!UICONTROL イベント転送]** では、[ モジュール 2.5 - Real-Time CDP Connections：イベント転送 ](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md) で説明するすべてのサーバーサイドプロパティの概要を説明します。
+- **[!UICONTROL 監視]** イベント転送を通じた送受信イベントトラフィックの概要を示します
+- **[!UICONTROL Assurance]** Adobe Debuggerを使用して実装をデバッグするためのアクセスを提供します
+- **[!UICONTROL Places]** を使用すると、モバイルアプリケーションで場所ベースのパーソナライゼーションにアクセス可能になる POI を管理できます
+- **[!UICONTROL スキーマ]** Adobe Experience Platformのスキーマエディターへのアクセスを提供します
+- **[!UICONTROL ID]** Adobe Experience Platformの ID グラフ設定へのアクセスを提供します
 
 ## 詳細情報
 
