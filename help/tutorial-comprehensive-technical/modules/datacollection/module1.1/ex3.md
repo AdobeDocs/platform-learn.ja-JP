@@ -4,20 +4,20 @@ description: 基盤 – Adobe Experience Platform Data Collection と Web SDK �
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 9%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
-# 1.1.3 - Adobe Experience Platform Data Collection の概要
+# 1.1.3 Adobe Experience Platform Data Collection の概要
 
 ## コンテキスト
 
 次に、Adobe Experience Platform Data Collection の構成要素を深く掘り下げて、デモ Web サイトにインストールされている内容を理解します。 Adobe Experience Platform Web SDK 拡張機能を詳しく見ていき、データ要素とルールを設定し、ライブラリの公開方法を説明します。
 
-## 1.1.3.1 - Adobe Experience Platform Web SDK 拡張機能
+## Adobe Experience Platform Web SDK 拡張機能
 
 拡張機能は、Adobe Experience Platform データ収集インターフェイスとライブラリ機能を拡張する、パッケージ化されたコードセットです。 Adobe Experience Platform Data Collection はプラットフォームであり、拡張機能はプラットフォーム上で実行されるアプリのようなものです。 このチュートリアルで使用する拡張機能はすべてAdobeが作成および管理しますが、サードパーティは独自の拡張機能を作成して、Adobe Experience Platform データ収集ユーザーが管理する必要があるカスタムコードの量を制限できます。
 
@@ -52,7 +52,7 @@ Adobe Experience Platform Web SDK へようこそ。 ここでは、[ はじめ�
 
 ![ 拡張機能ホーム ](./images/property9edge.png)
 
-## 1.1.3.2 データ要素
+## データ要素
 
 データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。
 
@@ -88,7 +88,7 @@ Adobe Experience Platform Web SDK へようこそ。 ここでは、[ はじめ�
 
 この時点で、Adobe Experience Platform Web SDK Extension がインストールされ、XDM 構造に対してデータを収集するためのデータ要素を更新しました。 次に、正しいタイミングでデータを送信するルールを確認しましょう。
 
-## 1.1.3.3 ルール
+## ルール
 
 Adobe Experience Platformのデータ収集は、ルールベースのシステムです。 ユーザーの操作に関する各種データを参照します。ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。
 
@@ -130,7 +130,7 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 これでルールを確認したので、Adobe Experience Platform Data Collection ですべての変更を公開できます。
 
-## 1.1.3.4 ライブラリ内のPublish
+## ライブラリ内のPublish
 
 最後に、更新したルールとデータ要素を検証するには、編集した項目を含むライブラリをプロパティに公開する必要があります。 Adobe Experience Platform Data Collection の **[!UICONTROL 公開]** セクションでは、いくつかの簡単な手順を実行する必要があります。
 

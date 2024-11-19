@@ -5,16 +5,14 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 の基盤 – リアルタイム顧客プロファイル
-
-**著者：[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 このモジュールでは、Adobe Experience Platformのリアルタイム顧客プロファイルと ID 機能について詳しく説明します。 オーディエンスの定義方法、ID サービスとExperience Cloud ID の役割、セグメントビルダークエリを定義して独自のセグメントを定義する方法について説明します。
 
@@ -22,7 +20,6 @@ ht-degree: 0%
 
 - Adobe Experience Platformの UI を使用して顧客のリアルタイム顧客プロファイルを視覚化する方法について説明します
 - Adobe Experience Platformのセグメントビルダーを使用したセグメントの作成方法を説明します
-- Adobe Experience Platform API を使用してセグメントを作成し、セグメントの結果をデータセットに保存する方法について説明します
 - オフライン環境でリアルタイム動作を含む、完全な顧客プロファイルにアクセスすることによる影響について説明します
 
 ## 前提条件
@@ -54,11 +51,7 @@ ht-degree: 0%
 
 この演習では、Adobe Experience Platformのセグメントビルダーを使用してセグメントを作成します。
 
-[2.1.5 セグメントの作成 – API](./ex5.md)
-
-この演習では、PostmanとAdobe I/Oを使用してセグメントを作成し、Adobe Experience Platformの API を使用してそのセグメントの結果をデータセットとして保存します。
-
-[2.1.6 コールセンターでのリアルタイム顧客プロファイルの動作を確認する](./ex6.md)
+[2.1.5 コールセンターでのリアルタイム顧客プロファイルの動作を確認する](./ex5.md)
 
 この演習では、顧客から電話を受けるコールセンターの従業員として実行します。 この顧客のエクスペリエンスに本当に影響を与えるためには、利用可能なすべての情報にリアルタイムでアクセスする必要があります。
 

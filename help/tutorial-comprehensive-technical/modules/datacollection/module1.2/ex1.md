@@ -4,9 +4,9 @@ description: Foundation - データ取り込み – Web サイトで不明なも
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Platform は、「顧客 **という単語が単なる** 既知 **の顧客よ�
 
 ### 顧客ジャーニーフロー
 
-[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** 3 つのドットをクリックし、「**編集**」をクリックします。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 

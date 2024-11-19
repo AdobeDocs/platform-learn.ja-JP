@@ -3,9 +3,10 @@ title: 基盤 – リアルタイム顧客プロファイル - Web サイトで�
 description: 基盤 – リアルタイム顧客プロファイル - Web サイトで不明なものから既知のものまで
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -22,13 +23,9 @@ Platform は、既知の顧客だけでなく、顧客という言葉が広い�
 
 ## カスタマージャーニーフロー
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** ページで、「**実行** をクリックします。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
@@ -62,7 +59,7 @@ Platform は、既知の顧客だけでなく、顧客という言葉が広い�
 
 ![デモ](../../datacollection/module1.2/images/pv3.png)
 
-**男性** 製品カテゴリに移動します。 次に、製品 **Montana Wind Jacket** をクリックしてください。
+**電話とデバイス** 製品カテゴリに移動します。 次に、商品 **iPhone 15 Pro** をクリックします。
 
 ![デモ](../../datacollection/module1.2/images/pv4.png)
 
@@ -74,15 +71,15 @@ Provile ビューアパネルを開き、**エクスペリエンスイベント*
 
 ![デモ](../../datacollection/module1.2/images/pv6.png)
 
-**女性** カテゴリページに戻り、別の製品をクリックします。 別のエクスペリエンスイベントがAdobe Experience Platformに送信された。
+**電話とデバイス** カテゴリページに戻り、別の製品をクリックします。 別のエクスペリエンスイベントがAdobe Experience Platformに送信された。 プロファイルビューアパネルを開きます。 **製品表示** タイプの 2 つのエクスペリエンスイベントが表示されます。 ビヘイビアーは匿名ですが、適切な同意が得られると、すべてのクリックをトラッキングしてAdobe Experience Platformに保存できます。 匿名の顧客が認識されると、すべての匿名の行動を既知のプロファイルに自動的に結合できます。
 
 ![デモ](../../datacollection/module1.2/images/pv7.png)
 
-プロファイルビューアパネルを開きます。 **製品表示** タイプの 2 つのエクスペリエンスイベントが表示されます。 ビヘイビアーは匿名ですが、すべてのクリックをトラッキングしてAdobe Experience Platformに保存できます。 匿名の顧客が認識されると、すべての匿名の行動を既知のプロファイルに自動的に結合できます。
+登録/ログインページに移動します。 「**ログイン**」をクリックします。
 
 ![デモ](../../datacollection/module1.2/images/pv8.png)
 
-登録/ログインページに移動します。 **アカウントを作成** をクリックします。
+**アカウントを作成** をクリックします。
 
 ![デモ](../../datacollection/module1.2/images/pv9.png)
 
@@ -104,11 +101,11 @@ Provile ビューアパネルを開き、**エクスペリエンスイベント*
 
 既知の顧客になった後、モバイルアプリを使用し始めます。 iPhoneでモバイルアプリを開き、アプリにログインします。
 
-アプリがインストールされていない場合、またはインストール方法が思い出せない場合は、こちらをご覧ください。[0.5 モバイルアプリを使用する ](../../gettingstarted/gettingstarted/ex5.md)
+アプリがインストールされていない場合、またはインストール方法が思い出せない場合は、こちらをご覧ください。[ モバイルアプリを使用 ](../../gettingstarted/gettingstarted/ex5.md)
 
-指示に従ってアプリをインストールすると、Luma ブランドが読み込まれたアプリのランディングページが表示されます。 画面の左上にあるアカウントアイコンをクリックします。
+指示に従ってアプリをインストールすると、Citi Signal ブランドが読み込まれたアプリのランディングページが表示されます。 画面の左上にあるアカウントアイコンをクリックします。
 
-![デモ](./images/app_hp.png)
+![デモ](./images/app_hp1.png)
 
 ログイン画面で、デスクトップ web サイトで使用したメールアドレスでログインします。 **ログイン** をクリックします。
 
@@ -120,15 +117,23 @@ Provile ビューアパネルを開き、**エクスペリエンスイベント*
 
 製品の詳細ページが表示されます。
 
-![デモ](./images/app_carst.png)
+![デモ](./images/app_galaxy.png)
 
 アプリのホーム画面に移動し、画面を左にスワイプして、プロファイルビューアパネルを表示します。 その後、「**エクスペリエンスイベント**」セクションに、先ほど表示した製品と、以前に web サイトセッションで表示したすべての製品表示が表示されます。
 
-![デモ](./images/app_after_carst.png)
+>[!NOTE]
+>
+>アプリと web サイトに統合ビューが表示されるまで、数分かかる場合があります。
+
+![デモ](./images/app_after_galaxy.png)
 
 デスクトップコンピューターに戻り、ホームページを更新します。その後、製品もそこに表示されます。
 
-![デモ](./images/lb_x_aftermobile.png)
+>[!NOTE]
+>
+>アプリと web サイトに統合ビューが表示されるまで、数分かかる場合があります。
+
+![デモ](./images/web_x_aftermobile.png)
 
 データをAdobe Experience Platformに取り込み、そのデータを ECID やメールアドレスなどの識別子にリンクしました。 この演習の目的は、実行しようとしている内容のビジネスコンテキストを理解することです。 これで、リアルタイムのクロスデバイス顧客プロファイルを効果的に作成できました。 次の演習では、Adobe Experience Platformでプロファイルを視覚化します。
 

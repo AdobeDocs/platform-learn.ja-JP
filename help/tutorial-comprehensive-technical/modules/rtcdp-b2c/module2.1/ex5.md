@@ -1,170 +1,64 @@
 ---
-title: 基盤 – リアルタイム顧客プロファイル – セグメントの作成 – API
-description: 基盤 – リアルタイム顧客プロファイル – セグメントの作成 – API
+title: コールセンターでのリアルタイム顧客プロファイルの動作を確認する
+description: コールセンターでのリアルタイム顧客プロファイルの動作を確認する
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 3%
+source-wordcount: '352'
+ht-degree: 2%
 
 ---
 
-# 2.1.5 セグメントの作成 – API
+# 2.1.5 コールセンターでのリアルタイム顧客プロファイルの動作を確認する
 
-この演習では、PostmanとAdobe I/Oを使用してセグメントを作成し、Adobe Experience Platformの API を使用してそのセグメントの結果をデータセットとして保存します。
+この演習の目標は、カスタマージャーニーを実行し、実際の顧客のように行動することです。
 
-## ストーリー
+この web サイトでは、Adobe Experience Platformを実装しました。 すべてのアクションはエクスペリエンスイベントと見なされ、リアルタイムでAdobe Experience Platformに送信されるので、リアルタイム顧客プロファイルが活性化されます。
 
-リアルタイム顧客プロファイルでは、すべてのプロファイルデータがイベントデータや既存のセグメントメンバーシップと共に表示されます。 表示されるデータは、Adobeアプリケーションや外部ソリューションなど、どこからでも取得できます。 これは、レコードのエクスペリエンスシステムであるAdobe Experience Platformで最も強力なビューです。
+先ほどの演習では、サイトを閲覧していた匿名の顧客として開始し、いくつかの手順を経て既知の顧客になりました。
 
-## 2.1.5.1 - Platform API を使用したセグメントの作成
+最終的に同じ顧客が電話を受けてコールセンターに電話をかけてきた場合、コールセンターエクスペリエンスを関連性があり、パーソナライズできるように、他のチャネルの情報を直ちに利用できることが重要です。
 
-Postmanに行きなさい。
+## CX アプリケーションの使用
 
-コレクション **_Adobe Experience Platform Enablement** を見つけます。 このコレクションには、フォルダー **2 が表示されます。 セグメント**. この演習では、これらのリクエストを使用します。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 CX アプリケーション・プロジェクトの 3 つのドット **...** をクリックし、「**編集**」をクリックして開きます。
 
-![セグメント化](./images/pmdtl.png)
+![デモ](./images/cxapp3.png)
 
-次に、API を使用してセグメントを作成するために必要なすべての手順に従います。 次に、シンプルなセグメント「**ldap** – すべての女性の顧客」を作成します。
+CX アプリケーション・プロジェクトで、**統合** に移動します。 **環境を選択** をクリックします。
 
-### 手順 1 - セグメント定義の作成
+![デモ](./images/cxapp3a.png)
 
-**手順 1 - プロファイル：セグメント定義の作成** という名前のリクエストをクリックします。
+「はじめに」で作成されたAdobe Experience Platform Data Collection プロパティを選択します。 名前に **（cx-app）** が含まれているプロパティを選択する必要があります。
 
-![セグメント化](./images/s1_call.png)
+![デモ](./images/cxapp4.png)
 
-このリクエストの **本文** セクションに移動します。
+その後、これが表示されます。 **実行** をクリックします。
 
-![セグメント化](./images/s1_body.png)
+![デモ](./images/cxapp4a.png)
 
-このリクエストの **本文** には、次の内容が表示されます。
+次に、ID の 1 つおよび対応する名前空間を選択し、**検索アイコン** をクリックする必要があります。
 
-![セグメント化](./images/s1_bodydtl.png)
+![ 顧客プロファイル ](./images/identities.png)
 
-このリクエストで使用される言語は、Profile Query Languageまたは **PQL** です。
+| ID | 名前空間 |
+|:-------------:| :---------------:|
+| Experience CloudID （ECID） | 79943948563923140522865572770524243489 |
+| Experience CloudID （ECID） | 70559351147248820114888181867542007989 |
+| メール ID | woutervangeluwe+18112024-01@gmail.com |
+| 携帯電話番号 ID | +32473622044+18112024-01 |
 
-PQLに関する詳細およびドキュメントについては、[ こちら ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=ja) を参照してください。
+顧客がコールセンターに電話をかけると、電話番号を使用して顧客を識別できます。 この実習では、電話番号を使用して、CX アプリで顧客のプロファイルを取得します。
 
+![デモ](./images/19.png)
 
-注意：以下のリクエストの変数 **name** を更新してください。そのためには、**ldap** を特定の **ldap** に置き換えます。
+コールセンターに表示するのが理想的な情報なので、コールセンターの従業員が顧客と話すとすぐに関連情報をすべて利用できるようになります。
 
-```json
-{
-    "name" : "ldap - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "ldap",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
+![デモ](./images/20.png)
 
-具体的な **ldap** を追加すると、本文は次のようになります。
-
-```json
-{
-    "name" : "vangeluw - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "vangeluw",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
-
-また、リクエストの **Header** - フィールドを検証する必要があります。 **ヘッダー** に移動します。 次の画面が表示されます。
-
-![Postman](./images/s1_h.png)
-
-| キー | 値 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
-
-青い **送信** ボタンをクリックして、セグメントを作成し、その結果を表示します。
-
-![セグメント化](./images/s1_bodydtl_results.png)
-
-この手順を行うと、Platform UI でセグメント定義を表示できます。 これを確認するには、Adobe Experience Platformにログインし、**セグメント** に移動します。
-
-![セグメント化](./images/s1_segmentdef.png)
-
-### 手順 2 - セグメントPOSTジョブの作成
-
-前の演習では、_ストリーミング_ セグメントを作成しました。 ストリーミングセグメントは、リアルタイムで継続的に選定を評価します。 ここでしているのは、_バッチ_ セグメントの作成です。 バッチセグメントでは、セグメントの選定状況のプレビューが表示されますが _セグメントが実際に実行されたわけではありません_。 現在、_このセグメントに該当するユーザーはいません_。 条件を満たすには、バッチセグメントを実行する必要があります。これをここで実行します。
-
-次に、セグメントジョブをPOSTにします。
-
-Postmanに行きなさい。
-
-![セグメント化](./images/pmdtl.png)
-
-Postman コレクションで、「**手順 2 -POSTセグメントジョブ** という名前のリクエストをクリックして開きます。
-
-![セグメント化](./images/s2_call.png)
-
-また、リクエストの **Header** - フィールドを検証する必要があります。 **ヘッダー** に移動します。 次の画面が表示されます。
-
-![Postman](./images/s2headers.png)
-
-| キー | 値 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
-
-青い **送信** ボタンをクリックします。
-
-同様の結果が表示されます。
-
-![セグメント化](./images/s2_call_response.png)
-
-このセグメントジョブは現在実行中です。これには時間がかかる場合があります。 手順 3 では、このジョブのステータスを確認できます。
-
-
-### 手順 3 - GETセグメントジョブステータス
-
-Postmanに行きなさい。
-
-![セグメント化](./images/pmdtl.png)
-
-Postman コレクションで、「**手順 3 - GETセグメントジョブステータス**」という名前のリクエストをクリックします。
-
-![セグメント化](./images/s3_call.png)
-
-また、リクエストの **Header** - フィールドを検証する必要があります。 **ヘッダー** に移動します。 次の画面が表示されます。
-
-![Postman](./images/s3headers.png)
-
-| キー | 値 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->使用しているAdobe Experience Platform サンドボックスの名前を指定する必要があります。 x-sandbox-name は `--aepSandboxName--` にしてください。
-
-青い **送信** ボタンをクリックします。
-
-同様の結果が表示されます。
-
-![セグメント化](./images/s3_status.png)
-
-この例では、ジョブの **status** が **QUEUED** に設定されています。
-
-このリクエストを繰り返し、青い **送信** ボタンを数分ごとにクリックします。**ステータス** が **成功** に設定されます。
-
-![セグメント化](./images/s3_status_succeeded.png)
-
-ステータスが **成功** になると、セグメントジョブが実行され、顧客がセグメントの資格を得られるようになります。
-
-セグメント化の演習を正常に完了しました。 次に、企業全体でリアルタイム顧客プロファイルをアクティブ化する方法を見てみましょう。
-
-次の手順：[2.1.6 コールセンターでのリアルタイム顧客プロファイルの動作を確認する ](./ex6.md)
+次の手順：[ 概要とメリット ](./summary.md)
 
 [モジュール 2.1 に戻る](./real-time-customer-profile.md)
 

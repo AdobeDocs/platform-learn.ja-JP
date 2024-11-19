@@ -4,16 +4,16 @@ description: 基盤 – Adobe Experience Platform Data Collection と Web SDK �
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
 
 # 1.1.6 Adobe Targetの実装
 
-## 1.1.6.1 Adobe Targetを使用するようにデータストリームを更新する
+## Adobe Targetを使用するようにデータストリームを更新する
 
 Web SDK で収集したデータをAdobe Targetに送信し、すべてのお客様にパーソナライズされたエクスペリエンスを提供してAdobe Targetから応答を受け取りたい場合は、次の手順に従います。
 

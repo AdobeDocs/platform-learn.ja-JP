@@ -1,18 +1,19 @@
 ---
-title: データ収集 – FAC - FAC の概要
-description: 基盤 – FAC - FAC の概要
+title: Data Collection - FAC - Snowflakeアカウントの設定
+description: Foundation - FAC - Snowflakeアカウントの設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: fb8a70d9-9789-4fca-90e4-771be2cfc3dc
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '30'
+source-wordcount: '39'
 ht-degree: 0%
 
 ---
 
-# 1.3.1 FAC の概要
+# 1.3.1 Snowflakeアカウントの設定
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[1.3.2 スキーマ、データモデルおよびリンクの作成 ](./ex2.md)
 
 [モジュール 1.3 に戻る](./fac.md)
 

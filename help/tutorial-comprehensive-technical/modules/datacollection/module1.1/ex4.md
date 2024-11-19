@@ -4,16 +4,16 @@ description: 基盤 – Adobe Experience Platform Data Collection と Web SDK �
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 クライアント側のウェブデータ収集
 
-## 1.1.4.1 リクエスト内のデータを検証する
+## リクエスト内のデータを検証します
 
 ### Adobe Experience Platform Debuggerのインストール
 
@@ -40,7 +40,7 @@ Experience Platformデバッガーは、Chromeおよび Firefox ブラウザー�
 
 [https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
