@@ -3,10 +3,11 @@ title: Foundation - データ取得 – オフラインソースからのデー�
 description: Foundation - データ取得 – オフラインソースからのデータ取得
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 3%
+source-wordcount: '771'
+ht-degree: 4%
 
 ---
 
@@ -21,11 +22,11 @@ Data Landing Zone は、Adobe Experience Platformによってプロビジョニ�
 > Adobe Experience Platformでは、データランディングゾーンコンテナにアップロードされるすべてのファイルで **厳密に 7 日間の有効期間（TTL）が適用されます**。 すべてのファイルは 7 日後に削除されます。
 
 
-## 1.2.5.1 前提条件
+## 前提条件
 
-Adobe Experience Platform Data Landing Zone に BLOB やファイルをコピーするには、コマンドラインユーティリティの AzCopy を使用します。 お使いのオペレーティング システムのバージョンは、[https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) からダウンロードできます。
+Adobe Experience Platform Data Landing Zone に BLOB やファイルをコピーするには、コマンドラインユーティリティの AzCopy を使用します。 [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) からお使いのオペレーティングシステムのバージョンをダウンロードし、そのページを下にスクロールして **AzCopy ポータブルバイナリをダウンロード** し、お使いの OS に適したバージョンを選択できます。
 
-![dlz-install-az-copy.png](./images/dlz-install-az-copy.png)
+![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
 - ダウンロードファイルを解凍します
 
@@ -37,7 +38,7 @@ Adobe Experience Platform Data Landing Zone に BLOB やファイルをコピー
 
 - ターミナルウィンドウを開き、デスクトップ上のフォルダーに移動すると、OSX などに次のコンテンツ（azcopy および global-context-websiteinteractions.csv）が表示されます。
 
-![dlz-unzip-azcopy.png](./images/dlz-unzip-azcopy.png)
+![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
 ## 1.2.5.2 Adobe Experience Platformへのデータランディングゾーンの接続
 
@@ -47,19 +48,23 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--module2sandbox--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。  適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./images/sb1.png)
 
-左側のメニューで、**ソース** に移動します。 ソースカタログで、「**data landing**」を検索します。 **データランディングゾーン** カードで「**...**」をクリックし、「**資格情報を表示**」を選択します。
+左側のメニューで、**ソース** に移動します。 ソースカタログで、「**data landing**」を検索します。
 
-![dlz-view-credentials.png](./images/dlz-view-credentials.png)
+![データ取得](./images/sourcesdlz.png)
 
-tp コピー **SASUri** をクリックします。
+**データランディングゾーン** カードをクリックすると、右側のタブに資格情報が表示されます。
 
-![dlz-copy-sas-uri.png](./images/dlz-copy-sas-uri.png)
+![dlz-view-credentials.png](./images/dlzviewcredentials.png)
 
-## 1.2.5.3 AEP データランディングゾーンに csv ファイルをコピーする
+指示に従ってアイコンをクリックし、**SASUri** をコピーします。
+
+![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
+
+## AEP データランディングゾーンに csv ファイルをコピーします
 
 次に、AZCopy を使用した Azure コマンドラインツールを使用して、Adobe Experience Platformにデータを取り込みます。
 
@@ -75,41 +80,41 @@ SASUri は必ず二重引用符で囲んでください。 `<your-local-file>` �
 
 ターミナルで上記のコマンドを実行すると、次のように表示されます。
 
-![dlz-exec-copy-command.png](./images/dlz-exec-copy-command.png)
+![dlz-exec-copy-command.png](./images/dlzexeccopycommand.png)
 
-## 1.2.5.4 データランディングゾーンでのファイルの検索
+## データランディングゾーンでのファイルの参照
 
 Adobe Experience Platformのデータランディングゾーンに移動します。
 
 **ソース** を選択し、「**データランディング**」を検索して、「**設定**」ボタンをクリックします。
 
-![dlz-inspect-datalanding-zone.png](./images/dlz-inspect-datalanding-zone.png)
+![dlz-inspect-datalanding-zone.png](./images/dlzinspectdatalandingzone.png)
 
 これにより、データランディングゾーンが開きます。 データランディングゾーンの **データを選択** パネルに、アップロードしたファイルが表示されます。
 
-![dlz-datalanding-zone-open.png](./images/dlz-datalanding-zone-open.png)
+![dlz-datalanding-zone-open.png](./images/dlzdatalandingzoneopen.png)
 
-## 1.2.5.5 ファイルを処理する
+## ファイルを処理
 
 ファイルを選択し、データ形式として **区切り** を選択します。 その後、データのプレビューが表示されます。 「**次へ**」をクリックします。
 
-![dlz-datalanding-select-file.png](./images/dlz-datalanding-select-file.png)
+![dlz-datalanding-select-file.png](./images/dlzdatalandingselectfile.png)
 
 これで、アップロードされたデータのマッピングを開始して、データセットの XDM スキーマに一致させることができます。
 
 「**既存のデータセット**」を選択し、「**デモシステム - Web サイトのイベントデータセット （グローバル v1.1）**」を選択します。 「**次へ**」をクリックします。
 
-![dlz-target-dataset.png](./images/dlz-target-dataset.png)
+![dlz-target-dataset.png](./images/dlztargetdataset.png)
 
 これで、csv ファイルから受信したソースデータを、データセットの XDM スキーマのターゲットフィールドにマッピングする準備が整いました。
 
-![dlz-start-mapping.png](./images/dlz-start-mapping.png)
+![dlz-start-mapping.png](./images/dlzstartmapping.png)
 
 >[!NOTE]
 >
 > マッピングで発生する可能性のあるエラーを気にしないでください。 次の手順で、マッピングを修正します。
 
-## 1.2.5.6 マップフィールド
+## フィールドをマッピング
 
 まず、**すべてのマッピングをクリア** ボタンをクリックします。 その後、クリーンなマッピングから開始できます。
 
@@ -117,19 +122,19 @@ Adobe Experience Platformのデータランディングゾーンに移動しま�
 
 次に、「**新しいフィールドタイプ**」をクリックし、「**新しいフィールドを追加**」を選択します。
 
-![dlz-clear-mappings.png](./images/dlz-clear-mappings.png)
+![dlz-clear-mappings.png](./images/dlzclearmappings.png)
 
 **ecid** ソースフィールドをマッピングするには、フィールド **identities.ecid** を選択し、「**選択**」をクリックします。
 
-![dlz-map-identity.png](./images/dlz-map-identity.png)
+![dlz-map-identity.png](./images/dlzmapidentity.png)
 
 次に、「**ターゲットフィールドをマッピング**」をクリックします。
 
-![dlz-map-select-target-field.png](./images/dlz-map-select-target-field.png)
+![dlz-map-select-target-field.png](./images/dlzmapselecttargetfield.png)
 
 スキーマ構造でフィールド ``--aepTenantId--``.identification.core.ecid を選択します。
 
-![dlz-map-target-field.png](./images/dlz-map-target-field.png)
+![dlz-map-target-field.png](./images/dlzmaptargetfield.png)
 
 他の 2 つのフィールドをマッピングし、「**+新しいフィールドタイプ**」をクリックしてから、「新しいフィールドを追加 **をクリックして、このマッピングのフィールドを追加する必要** あります
 
@@ -139,29 +144,29 @@ Adobe Experience Platformのデータランディングゾーンに移動しま�
 | タイムスタンプ | タイムスタンプ |
 | タイムスタンプ | _id |
 
-![dlz-add-other-mapping.png](./images/dlz-add-other-mapping.png)
+![dlz-add-other-mapping.png](./images/dlzaddothermapping.png)
 
 完了すると、画面は次のようになります。 「**次へ**」をクリックします。
 
-![dlz-mapping-result.png](./images/dlz-mapping-result.png)
+![dlz-mapping-result.png](./images/dlzmappingresult.png)
 
 「**次へ**」をクリックします。
 
-![dlz-default-scheduling.png](./images/dlz-default-scheduling.png)
+![dlz-default-scheduling.png](./images/dlzdefaultscheduling.png)
 
 「**完了**」をクリックします。
 
-![dlz-import-finish.png](./images/dlz-import-finish.png)
+![dlz-import-finish.png](./images/dlzimportfinish.png)
 
-## 1.2.5.7 データフローの監視
+## データフローの監視
 
 データフローを監視するには、**ソース**、**データフロー** に移動し、データフローをクリックします。
 
-![dlz-monitor-dataflow.png](./images/dlz-monitor-dataflow.png)
+![dlz-monitor-dataflow.png](./images/dlzmonitordataflow.png)
 
 データの読み込みには数分かかることがあります。読み込みに成功すると、**成功** というステータスが表示されます。
 
-![dlz-monitor-dataflow-result.png](./images/dlz-monitor-dataflow-result.png)
+![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 次の手順：[ 概要とメリット ](./summary.md)
 
