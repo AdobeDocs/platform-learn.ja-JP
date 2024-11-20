@@ -4,9 +4,9 @@ description: Foundation - データ取り込み – スキーマの設定と識�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3127'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./images/sb1.png)
 
@@ -301,7 +301,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/home.png)
 
-続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択する [!UICONTROL  サンドボックス ] の名前は ``--module2sandbox--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択する [!UICONTROL  サンドボックス ] の名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./images/sb1.png)
 

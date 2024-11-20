@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Customer Journey Analytics 101
 description: Customer Journey Analytics - Customer Journey Analytics 101
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b298de4a-023b-4373-b365-2c0622b5a551
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 

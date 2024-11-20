@@ -4,10 +4,10 @@ description: コールセンターでのリアルタイム顧客プロファイ�
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ CX アプリケーション・プロジェクトで、**統合** に移動しま
 | メール ID | woutervangeluwe+18112024-01@gmail.com |
 | 携帯電話番号 ID | +32473622044+18112024-01 |
 
-顧客がコールセンターに電話をかけると、電話番号を使用して顧客を識別できます。 この実習では、電話番号を使用して、CX アプリで顧客のプロファイルを取得します。
-
 ![デモ](./images/19.png)
 
-コールセンターに表示するのが理想的な情報なので、コールセンターの従業員が顧客と話すとすぐに関連情報をすべて利用できるようになります。
+コールセンターに表示するのが理想的な情報なので、顧客と話すとすぐにコールセンターの担当者がすべての関連情報を利用できるようになります。
 
 ![デモ](./images/20.png)
 

@@ -4,9 +4,9 @@ description: Foundation - リアルタイム顧客プロファイル – 独自�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2287'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## コンテキスト
 
-リアルタイム顧客プロファイルでは、すべてのプロファイルデータがイベントデータと共に、既存のセグメントメンバーシップと共に表示されます。 表示されるデータは、Adobeアプリケーションや外部ソリューションなど、どこからでも取得できます。 これは、レコードのエクスペリエンスシステムであるAdobe Experience Platformで最も強力なビューです。
+リアルタイム顧客プロファイルでは、すべてのプロファイルデータがイベントデータと共に、既存のオーディエンスメンバーシップと共に表示されます。 表示されるデータは、Adobeアプリケーションや外部ソリューションなど、どこからでも取得できます。 これは、レコードのエクスペリエンスシステムであるAdobe Experience Platformで最も強力なビューです。
 
 リアルタイムAdobeプロファイルは、すべての顧客アプリケーションで使用できますが、コールセンターや店舗のクライアントリングアプリなどの外部ソリューションでも使用できます。 これを行うには、これらの外部ソリューションをAdobe Experience Platformの API に接続します。
 
@@ -58,8 +58,6 @@ X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが
 
 ![Adobe I/Oの新規統合 ](./images/api1.png)
 
-**0}Adobe Experience Platform} アイコンをクリックします。**/images/api2.png）
-
 「**Experience PlatformAPI**」を選択し、「**次へ**」をクリックします。
 
 ![Adobe I/Oの新規統合 ](./images/api3.png)
@@ -74,7 +72,7 @@ X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが
 
 >[!NOTE]
 >
-> 製品プロファイル名は、インスタンス固有のものであるため、Adobe Experience Platform インスタンス内で異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin Consoleと AEP の権限 UI で設定します。
+> 製品プロファイル名は、インスタンス固有なので、Adobe Experience Platform インスタンスで異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin Consoleと AEP の権限 UI で設定します。
 
 **設定済み API を保存** をクリックします。
 
@@ -118,7 +116,7 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 >[!NOTE]
 >
-> 製品プロファイル名は、インスタンス固有のものであるため、Adobe Experience Platform インスタンス内で異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin Consoleと AEP の権限 UI で設定します。
+> 製品プロファイル名は、インスタンス固有なので、Adobe Experience Platform インスタンスで異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin Consoleと AEP の権限 UI で設定します。
 
 ![権限](./images/perm1.png)
 
@@ -149,7 +147,7 @@ Postmanには、環境とコレクションという 2 つのコンセプトが�
 - 環境には、多かれ少なかれ一貫性のあるすべての環境変数が含まれています。 環境には、秘密鍵などのセキュリティ認証情報と共に、Platform 環境の IMSOrg などがあります。 環境ファイルは、前の演習でのAdobe I/O設定時にダウンロードしたファイルで、名前は **`oauth_server_to_server.postman_environment.json`** のようになります。
 
 - コレクションには、使用可能な多数の API リクエストが含まれています。 2 つのコレクションを使用します
-   - AdobeI/0 に対する認証用の 1 つのコレクション
+   - Adobe I/Oへの認証のための 1 つのコレクション
    - このモジュールの演習の 1 つのコレクション
    - 宛先オーサリング用の、Real-Time CDP モジュールの演習用の 1 つのコレクション
 
@@ -631,7 +629,7 @@ Platform からすぐに応答が届き、次のようなメッセージが表�
 
 ECID を使用して、Adobe Experience Platformのリアルタイムプロファイルから ExperienceEvent データをリクエストする必要はありません。任意の名前空間で任意の ID を使用して、このデータをリクエストできます。
 
-次の手順：[2.1.4 セグメントの作成 – UI](./ex4.md)
+次の手順：[2.1.4 オーディエンスの作成 – UI](./ex4.md)
 
 [モジュール 2.1 に戻る](./real-time-customer-profile.md)
 

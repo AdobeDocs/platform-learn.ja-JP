@@ -3,10 +3,11 @@ title: Microsoft Azure Event Hub へのセグメントのアクティブ化 – 
 description: Microsoft Azure Event Hub へのセグメントのアクティブ化 – セグメントのアクティブ化
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 2%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +23,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 

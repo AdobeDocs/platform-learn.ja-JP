@@ -4,9 +4,9 @@ description: Foundation - データ取得 – データセットの設定
 kt: 5342
 doc-type: tutorial
 exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '552'
 ht-degree: 8%
 
 ---
@@ -32,7 +32,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./images/home.png)
 
-続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択するサンドボックスの名前は ``--module2sandbox--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./images/sb1.png)
 

@@ -5,9 +5,9 @@ user-guide-description: サードパーティシステムへの接続を含む�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '919'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 4%
       + [2.1.1 ウェブサイトを見る](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex1.md)
       + [2.1.2 独自のリアルタイム顧客プロファイルの視覚化 – UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
       + [2.1.3 独自のリアルタイム顧客プロファイルの視覚化 – API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
-      + [2.1.4 セグメントの作成 – UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
+      + [2.1.4 オーディエンスの作成 – UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
       + [2.1.5 コールセンターでのリアルタイム顧客プロファイルの動作を確認する](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
    + 2.2 インテリジェントサービス {#module22}
@@ -67,23 +67,23 @@ ht-degree: 4%
       + [2.2.2 顧客 AI：新しいインスタンスを作成（設定）](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex2.md)
       + [2.2.3 顧客 AI：スコアリングダッシュボードおよびセグメント化（予測と実行アクション）](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex3.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/summary.md)
-   + 2.3 Real-Time CDP：セグメントを作成し、アクションを起こします。{#module23}
+   + 2.3 Real-Time CDP：オーディエンスを作成し、アクションを起こします。{#module23}
       + [概要](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
-      + [2.3.1 セグメントを作成し、ストリーミングセグメント化を有効にする](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
+      + [2.3.1 オーディエンスの作成](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
       + [2.3.2 宛先を使用した DV360 宛先の設定方法の確認](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex2.md)
-      + [2.3.3 アクションの実行：セグメントを DV360 に送信します](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
-      + [2.3.4 アクションの実行：セグメントを S3 の宛先に送信します](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
-      + [2.3.5 アクションの実行：セグメントをAdobe Targetに送信します](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
+      + [2.3.3 アクションの実行：オーディエンスを DV360 に送信する](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
+      + [2.3.4 アクションの実行：オーディエンスを S3 の宛先に送信する](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
+      + [2.3.5 アクションの実行：オーディエンスをAdobe Targetに送信します](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6 外部オーディエンス](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
       + [2.3.7 宛先 SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
-   + 2.4 Real-Time CDP:Microsoft Azure Event Hub {#module24} へのセグメントのアクティベーション
+   + 2.4 Real-Time CDP:Microsoft Azure Event Hub {#module24} へのAudience Activation
       + [概要](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
       + [2.4.0 環境の設定](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex0.md)
       + [2.4.1 Microsoft Azure EventHub 環境の設定](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
       + [2.4.2 Adobe Experience Platformでの Azure Event Hub の宛先の設定](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
-      + [2.4.3 ストリーミングセグメントの作成](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
-      + [2.4.4 セグメントのアクティブ化](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
+      + [2.4.3 オーディエンスの作成](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
+      + [2.4.4 オーディエンスのアクティブ化](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
       + [2.4.5 Microsoft Azure プロジェクトの作成](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
       + [2.4.6 エンドツーエンドのシナリオ](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/summary.md)

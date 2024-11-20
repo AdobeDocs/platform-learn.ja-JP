@@ -4,9 +4,9 @@ description: Real-time CDP – 宛先 SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1098'
 ht-degree: 6%
 
 ---
@@ -23,11 +23,13 @@ ht-degree: 6%
 
 ## エンドポイントと形式の定義
 
-この演習では、セグメントが選定されたときに選定イベントをそのエンドポイントにストリーミングできるように、を設定するエンドポイントが必要です。 この演習では、[https://webhook.site/](https://webhook.site/) を使用してサンプルエンドポイントを使用します。 [https://webhook.site/](https://webhook.site/) に移動すると、これに類似したものが表示されます。 **クリップボードにコピー** をクリックして、URL をコピーします。 次の演習では、この URL を指定する必要があります。 この例の URL は `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` です。
+この演習では、オーディエンスが認定されると認定イベントをそのエンドポイントにストリーミングできるように、エンドポイントを設定する必要があります。 この演習では、[https://pipedream.com/requestbin](https://pipedream.com/requestbin) を使用してサンプルエンドポイントを使用します。 [https://pipedream.com/requestbin](https://pipedream.com/requestbin) に移動し、アカウントを作成してから、ワークスペースを作成します。 ワークスペースを作成すると、次のような情報が表示されます。
+
+「**コピー**」をクリックして、URL をコピーします。 次の演習では、この URL を指定する必要があります。 この例の URL は `https://eodts05snjmjz67.m.pipedream.net` です。
 
 ![データ取得](./images/webhook1.png)
 
-形式については、セグメントの選定または選定解除と共に顧客識別子などのメタデータをストリーミングする標準テンプレートを使用します。 テンプレートは特定のエンドポイントの想定に合わせてカスタマイズできますが、この演習では標準テンプレートを再利用します。これにより、次のようなペイロードがエンドポイントにストリーミングされます。
+形式については、顧客識別子などのメタデータと共に、オーディエンスの選定または選定解除をストリーミングする標準テンプレートを使用します。 テンプレートは特定のエンドポイントの想定に合わせてカスタマイズできますが、この演習では標準テンプレートを再利用します。これにより、次のようなペイロードがエンドポイントにストリーミングされます。
 
 ```json
 {
@@ -52,9 +54,15 @@ ht-degree: 6%
 
 ## サーバーとテンプレートの設定の作成
 
-Adobe Experience Platformで独自の宛先を作成する最初の手順は、サーバーとテンプレートの設定を作成することです。
+Adobe Experience Platformで独自の宛先を作成する最初の手順は、Postmanを使用してサーバーとテンプレートの設定を作成することです。
 
-これを行うには、**Destination Authoring API** の **Destination server and templates** に移動し、クリックしてリクエスト **設定 – 宛先サーバーPOSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
+そのためには、Postman POST アプリケーションを開き、**Destination Authoring API** から **Destination server and templates** に移動し、クリックしてリクエスト **設定 – Create a destination server configuration** を開きます。
+
+>[!NOTE]
+>
+>そのPostman コレクションがない場合は、[ モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻り、その手順に従って、提供されたPostman コレクションでPostmanを設定します。
+
+その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
 
 ![データ取得](./images/sdkpm1.png)
 
@@ -89,7 +97,7 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、�
 }
 ```
 
-上記のコードを貼り付けた後、フィールド **urlBasedDestination.url.value** を手動で更新し、前の手順で作成した Webhook の URL （この例で `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` 成）に設定する必要があります。
+上記のコードを貼り付けた後、フィールド **urlBasedDestination.url.value** を手動で更新し、前の手順で作成した Webhook の URL （この例で `https://eodts05snjmjz67.m.pipedream.net` 成）に設定する必要があります。
 
 ![データ取得](./images/sdkpm4.png)
 
@@ -97,20 +105,20 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、�
 
 ![データ取得](./images/sdkpm5.png)
 
+>[!NOTE]
+>
+>リクエストをAdobe I/Oに送信する前に、有効な `access_token` が必要であることを忘れないでください。 有効な `access_token` を取得するには、コレクション **Adobe IO - OAuth** でリクエスト **POST - アクセストークンの取得** を実行します。
+
 「**送信**」をクリックすると、サーバーテンプレートが作成され、応答の一部として **instanceId** という名前のフィールドが表示されます。 次の手順で必要になるので、書き留めてください。 この例では、**instanceId** は
-`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`。
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`。
 
 ![データ取得](./images/sdkpm6.png)
 
 ## 宛先設定の作成
 
-Postmanの **Destination Authoring API** で、**Destination configurations}** に移動し、クリックしてリクエスト **設定 – 宛先POSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
+Postmanの **Destination Authoring API** で、**Destination configurations}** に移動し、クリックしてリクエスト **設定 – 宛先POSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択し、`--aepSandboxName--` で置き換えます。
 
 ![データ取得](./images/sdkpm7.png)
-
-`--aepSandboxName--` で置き換えます。
-
-![データ取得](./images/sdkpm8.png)
 
 次に、**本文** に移動します。 プレースホルダー **{{body}}** を選択します。
 
@@ -183,7 +191,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./images/sdkpm11.png)
 
-上記のコードを貼り付けた後、フィールド **destinationDelivery を手動で更新する必要があります。 destinationServerId**。この例で `eb0f436f-dcf5-4993-a82d-0fcc09a6b36c` 成した、前の手順で作成した宛先サーバーテンプレートの **instanceId** に設定する必要があります。 次に、「**送信** をクリックします。
+上記のコードを貼り付けた後、フィールド **destinationDelivery を手動で更新する必要があります。 destinationServerId**。この例で `52482c90-8a1e-42fc-b729-7f0252e5cebd` 成した、前の手順で作成した宛先サーバーテンプレートの **instanceId** に設定する必要があります。 次に、「**送信** をクリックします。
 
 ![データ取得](./images/sdkpm10.png)
 
@@ -197,7 +205,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -205,13 +213,13 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./images/destsdk1.png)
 
-## セグメントの宛先へのリンク
+## オーディエンスを宛先にリンクする
 
-**宛先**/**カタログ** で、宛先の **設定** をクリックして、新しい宛先へのセグメントの追加を開始します。
+**宛先**/**カタログ** で、宛先の **設定** をクリックして、新しい宛先へのオーディエンスの追加を開始します。
 
 ![データ取得](./images/destsdk2.png)
 
-**1234** などのダミーのベアラートークンを入力します。 **宛先に接続** をクリックします。
+**ベアラートークン** に対して、ランダムな値を入力します（例：**1234**）。 **宛先に接続** をクリックします。
 
 ![データ取得](./images/destsdk3.png)
 
@@ -223,7 +231,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./images/destsdk5.png)
 
-先ほど作成した `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` という名前のセグメントを選択します。 「**次へ**」をクリックします。
+前に作成したオーディエンス（`--aepUserLdap-- - Interest in Galaxy S24` という名前）を選択します。 「**次へ**」をクリックします。
 
 ![データ取得](./images/destsdk6.png)
 
@@ -235,23 +243,15 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./images/destsdk8.png)
 
-宛先がライブになりました。新しいセグメント選定は、カスタム Webhook に今すぐストリーミングされます。
+宛先がライブになりました。新しいオーディエンス選定は、現在カスタム Webhook にストリーミングされます。
 
 ![データ取得](./images/destsdk9.png)
 
-## セグメントのアクティベーションのテスト
+## Audience Activation のテスト
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-次のフローに従って、web サイトにアクセスできるようになりました。 **統合** をクリックします。
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-**統合** ページでは、演習 0.1 で作成したデータ収集プロパティを選択する必要があります。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
@@ -269,23 +269,24 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 演習ごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-**Luma** のホームページで **Men** に移動し、製品 **PROTEUS FITNESS JACKSHIRT** をクリックします。
+この例では、特定の顧客に応答して特定の製品を表示します。
+**Citi Signal** のホームページから **電話とデバイス** に移動し、製品 **Galaxy S24** をクリックします。
 
-![データ取得](./images/homenadia.png)
+![データ取得](./images/homegalaxy.png)
 
-これで、**PROTEUS FITNESS JACKSHIRT** の製品ページにアクセスしました。つまり、この演習で以前に作成したセグメントの資格が得られます。
+これで Galaxy S24 の製品ページが表示されたので、オーディエンスは数分後にプロファイルの対象となります。
 
-![データ取得](./images/homenadiapp.png)
+![データ取得](./images/homegalaxy1.png)
 
-プロファイルビューアを開き、**セグメント** に移動すると、セグメントが選定されていることがわかります。
+プロファイルビューアを開き、**オーディエンス** に移動すると、オーディエンスが選定されていることがわかります。
 
-![データ取得](./images/homenadiapppb.png)
+![データ取得](./images/homegalaxydsdk.png)
 
-次に、[https://webhook.site/](https://webhook.site/) で開いている Webhook に戻ると、Adobe Experience Platformから送信され、セグメントの選定イベントを含む、新しい受信リクエストが表示されます。
+次に、[https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net) で開いている Webhook に戻ると、Adobe Experience Platformから送信され、オーディエンスの選定イベントが含まれている新しい受信リクエストが表示されます。
 
 ![データ取得](./images/destsdk10.png)
 

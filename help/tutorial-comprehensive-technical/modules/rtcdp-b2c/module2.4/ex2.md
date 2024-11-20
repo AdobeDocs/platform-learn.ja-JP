@@ -3,9 +3,10 @@ title: Microsoft Azure Event Hub へのセグメントのアクティベーシ�
 description: Microsoft Azure Event Hub へのセグメントのアクティベーション - Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 0c2e94ec-00e8-4f47-add7-ca3a08151225
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -80,7 +81,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 

@@ -1,40 +1,33 @@
 ---
-title: Real-time CDP - セグメントを作成してアクションを実行 – セグメントをAdobe Targetに送信
-description: Real-time CDP - セグメントを作成してアクションを実行 – セグメントをAdobe Targetに送信
+title: Real-time CDP - オーディエンスを作成してアクションを実行 – オーディエンスをAdobe Targetに送信します
+description: Real-time CDP - オーディエンスを作成してアクションを実行 – オーディエンスをAdobe Targetに送信します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1071'
 ht-degree: 3%
 
 ---
 
-# 2.3.5 アクションの実行：セグメントをAdobe Targetに送信します
+# 2.3.5 アクションの実行：オーディエンスをAdobe Targetに送信します
 
 [Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-## 2.3.5.1 データストリームの検証
+## データストリームの検証
 
 Real-Time CDPのAdobe Targetの宛先は、AdobeEdge Network へのデータの取り込みに使用されるデータストリームに接続されています。 Adobe Targetの宛先を設定する場合、まず、データストリームが既にAdobe Targetで有効になっているかどうかを確認する必要があります。 データストリームは、[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定し、`--aepUserLdap-- - Demo System Datastream` という名前を付けました。
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動し、「**データストリーム**」または「**データストリーム （Beta）**」をクリックします。
+左側のメニューで、下にスクロールし、**データストリーム** をクリックします。 データストリームで、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを検索します。 データストリームをクリックして開きます。
 
 ![データ取得](./images/atdestds1.png)
-
-画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
-
-![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
-
-データストリームで、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを検索します。 データストリームをクリックして開きます。
-
-![データ取得](./images/atdestds3.png)
 
 表示されたら、「**Adobe Experience Platform」の横にある「**...**」をクリックし** 「**編集**」をクリックします。
 
@@ -56,82 +49,73 @@ Real-Time CDPのAdobe Targetの宛先は、AdobeEdge Network へのデータの�
 
 ![データ取得](./images/atdestds5a.png)
 
-## 2.3.5.2 Adobe Targetの宛先の設定
+## Adobe Targetの宛先の設定
 
 Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を設定するには、**Destinations**/**Catalog** に移動します。
 
+**カテゴリ** メニューの **Personalization** をクリックします。 **（v2）Adobe Target** の宛先カードが表示されます。
+
 ![AT](./images/atdest1.png)
 
-**カテゴリ** メニューの **Personalization** をクリックします。 **Adobe Target** の宛先カードが表示されます。 **セグメントのアクティブ化** （または環境に応じて **設定**）をクリックします。
+**宛先に接続** をクリックします。
 
-![AT](./images/atdest2.png)
+![AT](./images/atdest1a.png)
 
-環境によっては、「**+新しい宛先を設定」をクリックして** 宛先の作成を開始する必要があります。
+その後、これが表示されます。 独自のAdobe Targetの宛先を作成するには、次のガイドラインに従う必要があります。
 
-![AT](./images/atdest3.png)
-
-その後、これが表示されます。
-
-![AT](./images/atdest4.png)
-
-**新しい宛先の設定** 画面では、次の 2 つを設定する必要があります。
-
-- 名前：`--aepUserLdap-- - Adobe Target (Web)` という名前を使用します。これは、**vangeluw - Adobe Target（Web）** のようになります。
+- 名前：名前 `--aepUserLdap-- - Adobe Target v2  (Web)` を使用します。
 - データストリーム ID:[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定したデータストリームを選択する必要があります。 データストリームの名前は、`--aepUserLdap-- - Demo System Datastream` にする必要があります。
+- Workspace：これはAdobe Target workspaces に関連しています。 使用する必要のある特定のワークスペースがない場合は、「**デフォルトのWorkspace**」を選択します。
 
 「**次へ**」をクリックします。
 
 ![AT](./images/atdest5.png)
 
-次の画面で、オプションでガバナンスポリシーを選択できます。 この場合、選択する必要はないので、「**作成**」をクリックします。
+オプションでデータガバナンスポリシーを選択できるようになりました。 「**次へ**」をクリックします。
 
-![AT](./images/atdest6.png)
+![AT](./images/atdest2.png)
 
-これで宛先が作成され、リストに表示されます。 宛先を選択し、「**次へ**」をクリックして、宛先へのセグメントの送信を開始します。
-
-![AT](./images/atdest7.png)
-
-使用可能なセグメントのリストで、「[ 演習 6.1 セグメントの作成 ](./ex1.md)」で作成したセグメント（「`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`」という名前）を選択します。 次に、「**次へ**」をクリックします。
+使用可能なオーディエンスのリストで、前の演習 [ オーディエンスの作成 ](./ex1.md) で作成したオーディエンス（`--aepUserLdap-- - Interest in Galaxy S24` という名前）を選択します。 次に、「**次へ**」をクリックします。
 
 ![AT](./images/atdest8.png)
 
-次のページで、「**次へ**」をクリックします。
+**マッピング** 画面では、プロファイル属性をマッピングして、Adobe Targetで使用できるようにします。 これにより、web サイトにパーソナライゼーションのレイヤーを追加できます。 「**新しいフィールドを追加**」をクリックします。
 
 ![AT](./images/atdest9.png)
+
+新しいフィールドに「**person.name.firstName**」フィールドを選択します。 「**保存**」をクリックします。
+
+![AT](./images/atdest9a.png)
+
+これで完了です。 「**次へ**」をクリックします。
+
+![AT](./images/atdest9b.png)
 
 「**完了**」をクリックします。
 
 ![AT](./images/atdest10.png)
 
-これで、Adobe Targetに対してセグメントがアクティブ化されました。
+これで、オーディエンスがAdobe Targetに対してアクティブ化されました。
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Adobe Targetの宛先をReal-Time CDPで作成した後、宛先が有効になるまで最大 1 時間かかる場合があります。 バックエンド設定が原因で、これは 1 回限りの待機時間です。 最初の 1 時間の待ち時間とバックエンド設定が完了すると、Adobe Targetの宛先に送信される新しく追加されたエッジセグメントを、リアルタイムでターゲティングできるようになります。
+>Adobe Targetの宛先をReal-Time CDPで作成した後、宛先が有効になるまで最大 1 時間かかる場合があります。 バックエンド設定が原因で、これは 1 回限りの待機時間です。 最初の 1 時間の待機時間とバックエンド設定が完了すると、Adobe Targetの宛先に送信される新しく追加されたオーディエンスを、リアルタイムでターゲティングできるようになります。
 
-## 2.3.5.3 Adobe Target フォームベースのアクティビティの設定
+## Adobe Target フォームベースのアクティビティの設定
 
-Real-Time CDP セグメントがAdobe Targetに送信されるように設定されたので、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定できます。 この演習では、フォームベースのアクティビティを設定します。
+Real-Time CDP オーディエンスがAdobe Targetに送信されるように設定されたので、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定できます。 この演習では、フォームベースのアクティビティを設定します。
 
 [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/) にアクセスして、Adobe Experience Cloud ホームページに移動します。 **Target** をクリックして開きます。
 
 ![RTCDP](./images/excl.png)
 
-**Adobe Target** のホームページには、既存のすべてのアクティビティが表示されます。
+**Adobe Target** のホームページには、既存のすべてのアクティビティが表示されます。 「**アクティビティを作成**」をクリックし、「**エクスペリエンスのターゲット設定**」をクリックします。
 
 ![RTCDP](./images/exclatov.png)
 
-「**+ アクティビティを作成**」をクリックして、新しいアクティビティを作成します。
-
-![RTCDP](./images/exclatcr.png)
-
-**エクスペリエンスのターゲット設定** を選択します。
-
-![RTCDP](./images/exclatcrxt.png)
-
-**フォーム** を選択し、「**プロパティ制限なし**」を選択します。 「**次へ**」をクリックします。
+「**Web**」、「**フォーム**」および「**プロパティの制限なし**」を選択します。 「**作成**」をクリックします。
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
@@ -147,11 +131,11 @@ Real-Time CDP セグメントがAdobe Targetに送信されるように設定さ
 
 ![RTCDP](./images/atform3.png)
 
-これで、使用可能なオーディエンスのリストが表示され、以前に作成してAdobe Targetに送信したAdobe Experience Platform セグメントが、このリストの一部になりました。 以前にAdobe Experience Platformで作成したセグメントを選択します。 **オーディエンスを割り当て** をクリックします。
+これで、使用可能なオーディエンスのリストが表示され、以前に作成してAdobe Targetに送信したAdobe Experience Platform オーディエンスが、このリストの一部になりました。 Adobe Experience Platformで以前作成したオーディエンスを選択します。 **オーディエンスを割り当て** をクリックします。
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Adobe Experience Platform セグメントは、この「エクスペリエンスのターゲット設定」アクティビティに含まれるようになります。
+Adobe Experience Platform オーディエンスは、このエクスペリエンスのターゲット設定アクティビティに含まれるようになりました。
 
 ![RTCDP](./images/atform4.png)
 
@@ -159,51 +143,47 @@ Adobe Experience Platform セグメントは、この「エクスペリエンス
 
 ![RTCDP](./images/atform5.png)
 
-次のコードを貼り付けます。 次に、「**次へ**」をクリックします。
+次のコードを貼り付けます。
 
 ```javascript
-<script>document.querySelector("#home > div > div > div > div > div.banner_img.d-none.d-lg-block > img").src="https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/ff92fdc3885972c0090ad5419e0ef4d4_Luma - Product - Proteus - Hero Banner.png"; document.querySelector(".banner_text > *").remove()</script>
+<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
+document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > div > div > p").innerHTML="What about 10% off of your next Galaxy S24 smartphone?";
+</script>
 ```
 
 ![RTCDP](./images/atform6.png)
 
-選択したオーディエンスに対して、新しい画像付きの新しいエクスペリエンスが表示されます。
+次に、Adobe Experience Platformのプロファイル属性からパーソナライゼーショントークンを追加する必要があります。 Adobe Targetに対してオーディエンスをアクティブ化した場合、Adobe Targetと共有するフィールド **person.name.firstName** も選択することに注意してください。 フィールドを取得するには、ソース **Adobe Experience Platform** を選択し、サンドボックス（`--aepSandboxName--` である必要があります）を選択して、属性 **person.name.firstName** を選択します。
 
-![RTCDP](./images/atform7.png)
+![RTCDP](./images/atform6a.png)
 
-左上隅のアクティビティのタイトルをクリックして、名前を変更します。
+「**追加**」ボタンをクリックする前に、次のように、`... > h1").innerHTML="Hi there ";` が表示される行に移動し、`there` という単語の後の角括弧内にカーソルを配置します。
 
-![RTCDP](./images/exclatvecname.png)
+`... > h1").innerHTML="Hi there ";`
 
-名前には、次を使用してください。
+次に、「**追加**」ボタンをクリックすると、トークンが追加され、次のようなコードが更新されます。
 
-- `--aepUserLdap-- - RTCDP - XT (Form)`
-
-![RTCDP](./images/atform8.png)
+`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
 
 「**次へ**」をクリックします。
 
-![RTCDP](./images/exclatvecnamenext.png)
+![RTCDP](./images/atform6b.png)
 
-**目標と設定** - ページで、**目標指標** に移動します。
+次に、選択したオーディエンスに対する新しい画像でのエクスペリエンスの概要が表示されます。 「**次へ**」をクリックします。
 
-![RTCDP](./images/atform9.png)
+![RTCDP](./images/atform7.png)
 
-プライマリ目標を **エンゲージメント** - **オンサイト滞在時間** に設定します。
+左上隅のアクティビティのタイトルをクリックして、名前を次のように変更します：`--aepUserLdap-- - RTCDP - XT (Form)`
+
+![RTCDP](./images/atform8.png)
+
+**目標と設定** - ページで、**目標指標** に移動します。 プライマリ目標を **エンゲージメント** - **オンサイト滞在時間** に設定します。 **保存して閉じる** をクリックします。
 
 ![RTCDP](./images/vec3.png)
 
-**保存して閉じる** をクリックします。
-
-![RTCDP](./images/vecsave.png)
-
-**アクティビティの概要** ページが表示されます。 アクティビティをアクティベートする必要があります。
+**アクティビティの概要** ページが表示されます。 アクティビティをアクティベートする必要があります。 フィールド **非アクティブ** をクリックし、「**アクティブ化**」を選択します。
 
 ![RTCDP](./images/atform10.png)
-
-フィールド **非アクティブ** をクリックし、「**アクティブ化**」を選択します。
-
-![RTCDP](./images/atform11.png)
 
 その後、アクティビティがライブになったことを示す視覚的な確認が表示されます。
 
@@ -213,9 +193,9 @@ Adobe Experience Platform セグメントは、この「エクスペリエンス
 
 >[!IMPORTANT]
 >
->Adobe Targetの宛先をReal-Time CDPで作成した後、宛先が有効になるまで最大 1 時間かかる場合があります。 バックエンド設定が原因で、これは 1 回限りの待機時間です。 最初の 1 時間の待ち時間とバックエンド設定が完了すると、Adobe Targetの宛先に送信される新しく追加されたエッジセグメントを、リアルタイムでターゲティングできるようになります。
+>Adobe Targetの宛先をReal-Time CDPで作成した後、宛先が有効になるまで最大 1 時間かかる場合があります。 バックエンド設定が原因で、これは 1 回限りの待機時間です。 最初の 1 時間の待機時間とバックエンド設定が完了すると、Adobe Targetの宛先に送信される新しく追加されたエッジオーディエンスを、リアルタイムでターゲティングできるようになります。
 
-デモ Web サイトに戻って PROTEUS FITNESS JACKSHIRT の商品ページにアクセスすると、作成したセグメントにすぐに適合し、ホームページにAdobe Target アクティビティがリアルタイムで表示されます。
+デモ Web サイトに戻って Galaxy S24 の商品ページにアクセスすると、作成したオーディエンスの対象となり、Adobe Target アクティビティがホームページにリアルタイムで表示されます。
 
 ![RTCDP](./images/atform13.png)
 

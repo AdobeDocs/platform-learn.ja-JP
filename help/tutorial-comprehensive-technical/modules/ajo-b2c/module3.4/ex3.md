@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer - メールメッセージでのパーソナラ�
 description: この演習では、メールコンテンツ内でセグメントパーソナライゼーションを使用する方法について説明します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 10%
+source-wordcount: '483'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 10%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepTenantId--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepTenantId--`` です。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 

@@ -4,7 +4,7 @@ description: 基盤 – リアルタイム顧客プロファイル - Web サイ�
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Platform は、既知の顧客だけでなく、顧客という言葉が広い�
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 演習ごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

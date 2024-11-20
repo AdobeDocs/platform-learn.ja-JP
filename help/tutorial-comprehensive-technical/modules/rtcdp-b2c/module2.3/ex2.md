@@ -1,11 +1,12 @@
 ---
-title: Real-time CDP - セグメントの作成とアクションの実行 – Google DV360 などのAdvertisingの宛先の設定
-description: Real-time CDP - セグメントの作成とアクションの実行 – Google DV360 などのAdvertisingの宛先の設定
+title: Real-time CDP - オーディエンスの作成とアクションの実行 – Google DV360 などのAdvertisingの宛先の設定
+description: Real-time CDP - オーディエンスの作成とアクションの実行 – Google DV360 などのAdvertisingの宛先の設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->以下の内容は参考を目的としています。DV360 の新しい宛先を設定する必要は **ありません**。 宛先は既に作成されており、次の演習で使用できます。
+>以下のコンテンツは一部お勧めです。そのような宛先がインスタンスに既に存在する場合は、DV360 の新しい宛先を設定する必要は **ありません**。 この場合、宛先は既に作成されているので、次の演習で使用できます。
 
 [Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ ht-degree: 1%
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 使用可能な宛先のリストが表示されます。
-次の演習では、前の演習で作成したセグメントをGoogle DV360 の宛先に接続します。
+次の演習では、前の演習で作成したオーディエンスをGoogle DV360 の宛先に接続します。
 
-次の手順：[2.3.3 アクションを実行する：セグメントを DV360 に送信する ](./ex3.md)
+次の手順：[2.3.3 対処：オーディエンスを DV360 に送信 ](./ex3.md)
 
 [モジュール 2.3 に戻る](./real-time-cdp-build-a-segment-take-action.md)
 

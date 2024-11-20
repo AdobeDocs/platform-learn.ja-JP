@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer – ビジネスイベント
 description: この節では、「在庫切れのアイテム」のユースケースを実行するためにビジネスイベント機能を使用する方法について説明します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 8%
 
 ---
@@ -98,14 +99,14 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/bej12.png)
 
-ご覧のように、**セグメントを読み取り** アクティビティが自動的にキャンバスに追加されました。 これは、ビジネスイベントが、特定のセグメントを読み取るためのトリガーをジャーニーに送信するだけで、そのジャーニーのプロファイルのリストが取得されるからです。
+ご覧のように、**オーディエンスを読み取り** アクティビティが自動的にキャンバスに追加されました。 これは、ビジネスイベントが、特定のオーディエンスを読み取るトリガーをジャーニーに送信するだけで、そのジャーニーのプロファイルのリストが取得されるからです。
 
-**セグメントを読み取り** アクティビティをクリックします。
-**セグメントを読み取り** 設定では、発生したビジネスイベントを通知するセグメントを選択する必要があります。 「**セグメントを選択**」フィールドをクリックします。
+**オーディエンスを読み取り** アクティビティをクリックします。
+**オーディエンスを読み取り** 設定では、発生したビジネスイベントを通知するオーディエンスを選択する必要があります。 「**オーディエンスを選択** フィールドをクリックします。
 
 ![Journey Optimizer](./images/bej13.png)
 
-**セグメントを選択** ポップアップで、LDAP を検索し、[ モジュール 2.3 - Real-time CDP - セグメントを作成してアクションを実行 ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) という名前のセグメントを選択し `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` す。 例：vangeluw - Interest in PROTEUS FITNESS JACKSHIRT。 「**保存**」をクリックします。
+**オーディエンスを選択** ポップアップで、LDAP を検索し、[ モジュール 2.3 - Real-time CDP - オーディエンスを作成してアクションを実行 ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) する `--aepUserLdap-- - Interest in Galaxy S24` という名前のオーディエンスを選択します。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/bej14.png)
 

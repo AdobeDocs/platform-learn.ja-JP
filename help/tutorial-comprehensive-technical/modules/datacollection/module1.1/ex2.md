@@ -4,7 +4,7 @@ description: 基盤 – Adobe Experience Platform Data Collection と Web SDK �
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Satastream は、Web SDK で収集されたデータの送信先をAdobe Edge �
 - すべてのエクスペリエンスイベントデータは、デフォルトでデータセット **デモシステム - Web サイトのイベントデータセット（グローバル v1.1）** に収集されます。
 - すべてのプロファイルデータは、デフォルトでデータセット **デモシステム - Web サイトのプロファイルデータセット （グローバル v1.1）** に収集されます（現在、Web SDK を使用したプロファイルデータのネイティブ取り込みは、Web SDK ではまだサポートされていません）
 - このデータストリームに **application** Offer decisioningサービスを使用する場合は、Offer decisioningのチェックボックスをオンにする必要があります。 （これは、[ モジュール 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md) の一部です）
-- **Edge セグメント化** はデフォルトで有効になっています。つまり、選定されたセグメントは、受信トラフィックの取り込み時にエッジで評価されます
+- **Edge セグメント化** はデフォルトで有効になっています。つまり、選定オーディエンスは、受信トラフィックの取り込み時にエッジで評価されます
 - **Personalizationの宛先** を使用する場合は、「Personalizationの宛先」チェックボックスをオンにする必要があります。
 - 
    - このデータストリームで **Adobe Journey Optimizer** の機能を使用する場合は、Adobe Journey Optimizerのチェックボックスをオンにする必要があります。

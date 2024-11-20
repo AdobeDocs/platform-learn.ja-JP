@@ -3,9 +3,10 @@ title: Adobe Experience Platformで HTTP API エンドポイントを設定す�
 description: Adobe Experience Platformで HTTP API エンドポイントを設定する
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '303'
 ht-degree: 8%
 
 ---
@@ -20,7 +21,7 @@ HTTP API Source コネクタを作成するには、次の URL に移動して�
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 

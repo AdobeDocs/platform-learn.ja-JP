@@ -1,19 +1,19 @@
 ---
-title: 基盤 – リアルタイム顧客プロファイル – セグメントの作成 – UI
-description: 基盤 – リアルタイム顧客プロファイル – セグメントの作成 – UI
+title: 基盤 – リアルタイム顧客プロファイル – オーディエンスの作成 – UI
+description: 基盤 – リアルタイム顧客プロファイル – オーディエンスの作成 – UI
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4 セグメントの作成 – UI
+# 2.1.4 オーディエンスの作成 – UI
 
-この演習では、Adobe Experience Platformのセグメントビルダーを使用してセグメントを作成します。
+この演習では、Adobe Experience Platform Audience Builder を使用してオーディエンスを作成します。
 
 [Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-左側のメニューの **オーディエンス** に移動します。 このページでは、既存のすべてのセグメントの概要を確認できます。 「**+ オーディエンスを作成**」ボタンをクリックして、新しいセグメントの作成を開始します。
+左側のメニューの **オーディエンス** に移動します。 このページでは、既存のすべてのオーディエンスの概要を確認できます。 「**+ オーディエンスを作成**」ボタンをクリックして、新しいオーディエンスの作成を開始します。
 
 ![セグメント化](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![セグメント化](./images/menusegbr.png)
 
-新しいセグメントビルダーに移動すると、すぐに **属性** メニューオプションと **XDM 個人プロファイル** 参照が表示されます。
+新しいオーディエンスビルダーに移動すると、すぐに「**属性**」メニューオプションと「**XDM 個人プロファイル**」参照が表示されます。
 
 ![セグメント化](./images/segmentationui.png)
 

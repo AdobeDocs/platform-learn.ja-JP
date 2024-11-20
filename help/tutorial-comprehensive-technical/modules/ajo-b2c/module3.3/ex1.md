@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 4%
@@ -92,9 +93,9 @@ Adobe Experience Platform インスタンスにプレースメントが表示さ
 
 ## 3.3.1.4 決定ルール
 
-ルール（実施要件ルールとも呼ばれます）は、**セグメント** と同等です。 ルールは実際にはセグメント自体ですが、Adobe Experience Platformのプロファイルに最適なオファーを提供するために、ルールをオファーで使用できる唯一の違いがあります。
+ルール（実施要件ルールとも呼ばれます）は、**オーディエンス** と同等です。 ルールは、実際にはオーディエンス自体ですが、Adobe Experience Platformのプロファイルに最適なオファーを提供するために、ルールをオファーで使用できる唯一の違いがあります。
 
-以前のイネーブルメントモジュールに基づくセグメントの定義方法を既にご存知のように、セグメント化環境を簡単に見てみましょう。
+以前のイネーブルメントモジュールに基づいてオーディエンスを定義する方法は既にわかっているので、セグメント化環境を簡単に見てみましょう。
 
 **ルール** に移動します。 「**+ ルールを作成**」をクリックします。
 
@@ -106,7 +107,7 @@ Adobe Experience Platformのセグメント環境が表示されます。
 
 これで、リアルタイム顧客プロファイルの結合スキーマの一部であるすべてのフィールドにアクセスし、任意のルールを作成できるようになりました。
 
-**オーディエンス**/``--aepTenantId--`` に移動すれば、既に定義されているセグメントをAdobe Experience Platformで再利用できるというのも興味深い点です。
+**オーディエンス**/``--aepTenantId--`` に移動すれば、既に定義されているオーディエンスをAdobe Experience Platformで簡単に再利用できるのも興味深い点です。
 
 ![ 決定ルール ](./images/decisionruleaud.png)
 

@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 Real-time CDP - セグメントを作成してアクションを実行します
-
-**著者：[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)、[Alberto De Caro](https://www.linkedin.com/in/albertodecaro/)、[Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 このモジュールでは、ストリーミングセグメントを設定し、そのセグメントを複数の宛先に対してアクティブ化します。
 
@@ -38,25 +36,25 @@ ht-degree: 1%
 
 ## 演習
 
-[2.3.1 セグメントの作成](./ex1.md)
+[2.3.1 オーディエンスの作成](./ex1.md)
 
-セグメントの作成方法を説明します。
+オーディエンスの作成方法を説明します。
 
 [2.3.2 宛先を使用した DV360 宛先の設定方法の確認](./ex2.md)
 
 Real-Time CDP UI を使用して広告の宛先を設定する方法を説明します。
 
-[2.3.3 アクションの実行：セグメントを DV360 に送信します](./ex3.md)
+[2.3.3 アクションの実行：オーディエンスを DV360 に送信する](./ex3.md)
 
-演習 6.1 で作成したセグメントを宛先 DV360 に接続します。
+作成したオーディエンスを宛先 DV360 に接続します。
 
-[2.3.4 アクションの実行：セグメントを S3 の宛先に送信します](./ex4.md)
+[2.3.4 アクションの実行：オーディエンスを S3 の宛先に送信する](./ex4.md)
 
-演習 6.1 で作成したセグメントを使用し、S3-destination （通常はメールマーケティングの宛先に使用される）に送信します。
+作成したオーディエンスを使用し、S3-destination （通常はメールマーケティングの宛先に使用される）に送信します。
 
-[2.3.5 アクションの実行：セグメントをAdobe Targetに送信します](./ex5.md)
+[2.3.5 アクションの実行：オーディエンスをAdobe Targetに送信します](./ex5.md)
 
-演習 6.1 で作成したセグメントを使用して、Adobe Targetでエクスペリエンスのターゲット設定アクティビティを設定します。
+作成したオーディエンスを使用して、Adobe Targetのエクスペリエンスのターゲット設定アクティビティを設定します。
 
 [2.3.6 外部オーディエンス](./ex6.md)
 

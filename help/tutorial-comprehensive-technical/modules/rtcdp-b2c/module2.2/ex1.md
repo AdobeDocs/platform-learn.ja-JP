@@ -3,10 +3,11 @@ title: インテリジェントサービス – 顧客 AI データ準備（取�
 description: 顧客 AI - データ準備（取り込み）
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 4%
+source-wordcount: '753'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 4%
 インテリジェントサービスでマーケティングイベントデータからインサイトを発見するには、データを意味的にエンリッチメントし、標準構造で維持する必要があります。 インテリジェントサービスでは、Adobeの Experience Data Model （XDM）スキーマを活用してこれを実現します。
 特に、インテリジェントサービスで使用されるすべてのデータセットは、**コンシューマーエクスペリエンスイベント** XDM スキーマに準拠する必要があります。
 
-## 2.2.1.1 スキーマの作成
+## スキーマを作成
 
 この演習では、**顧客 AI** インテリジェントサービスに必要な **コンシューマーエクスペリエンスイベント Mixin** を含むスキーマを作成します。
 
@@ -25,37 +26,40 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](../../datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--module10sandbox--`` です。 これを行うには、画面上部の青い線のテキスト **[!UICONTROL 実稼動製品]** をクリックします。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
 ![データ取得](../../datacollection/module1.2/images/sb1.png)
 
 左側のメニューから **スキーマ** をクリックし、**参照** に移動します。 **スキーマを作成** をクリックします。
 
-![ 新しいスキーマの作成 ](./images/create-schema-button.png)
+![ 新しいスキーマの作成 ](./images/createschemabutton.png)
 
-ポップアップで、「**XDM ExperienceEvent**」を選択します。
+ポップアップで「**手動**」を選択し、「**選択** をクリックします。
+
+![ 新しいスキーマの作成 ](./images/schmanual.png)
+
+次に、「**エクスペリエンスイベント**」を選択し、「**次へ**」をクリックします。
 
 ![ 新しいスキーマの作成 ](./images/xdmee.png)
 
-その後、これが表示されます。
+ここでスキーマの名前を指定する必要があります。 スキーマの名前として、`--aepUserLdap-- - Demo System - Customer Experience Event` を使用し、「終了 **をクリックし** す。
+
+![ 新しいスキーマの作成 ](./images/schname.png)
+
+その後、これが表示されます。 フィールドグループの下の「**+追加**」をクリックします。
 
 ![ 新しいスキーマの作成 ](./images/xdmee1.png)
 
-次の **Mixin** を検索して選択し、このスキーマに追加します。
+次の **フィールドグループ** を検索して選択し、このスキーマに追加します。
 
 - コンシューマーエクスペリエンスイベント
-
-  ![ 新しい CEE スキーマ ](./images/cee.png)
-
 - エンドユーザー ID の詳細
-
-  ![ 新しい CEE スキーマ ](./images/identitymap.png)
 
 「**フィールドグループを追加**」をクリックします。
 
-![ID キー定義 ](./images/addmixin.png)
+![ 新しい CEE スキーマ ](./images/cee.png)
 
-その後、これが表示されます。 「Mixin **エンドユーザー ID 詳細**」を選択します。
+その後、これが表示されます。 フィールドグループ **エンドユーザー ID 詳細** をクリックします。
 
 ![ 新しいスキーマの作成 ](./images/eui1.png)
 
@@ -63,7 +67,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![ 新しいスキーマの作成 ](./images/eui2.png)
 
-**endUserIDs フィールドの右側のメニューで以下を行います。_experience.emailid.id**、下にスクロールして **ID** のチェックボックスをオンにし、**プライマリ ID** のチェックボックスをオンにして、「**メール** の **ID 名前空間** をオンにします。
+**endUserIDs フィールドの右側のメニューで以下を行います。_experience.emailid.id**、下にスクロールして **ID** のチェックボックスをオンにし、**プライマリ ID** のチェックボックスをオンにして、「**メール** の **ID 名前空間** をオンにします。 「**適用**」をクリックします。
 
 ![ 新しいスキーマの作成 ](./images/eui3.png)
 
@@ -71,21 +75,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![ 新しいスキーマの作成 ](./images/eui4.png)
 
-ここでスキーマに名前を付けます。
-
-スキーマの名前として、次を使用します。
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-例えば、ldap **vangeluw** の場合、次はスキーマの名前である必要があります。
-
-- **vangeluw - デモシステム – カスタマーエクスペリエンスイベント**
-
-それはあなたにこのようなものを与えるはずです。 「**+追加**」ボタンをクリックして、新しい **Mixin** を追加します。
-
-![ 新しいスキーマの作成 ](./images/xdmee2.png)
-
-スキーマの名前を選択します。 これで、「プロファイル **切り替えをクリックして、** プロファイル **のスキーマを有効に** ます。
+これで完了です。 次に、スキーマの名前を選択します。 これで、「プロファイル **切り替えをクリックして、** プロファイル **のスキーマを有効に** ます。
 
 ![ 新しいスキーマの作成 ](./images/xdmee3.png)
 
@@ -97,7 +87,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![ 新しいスキーマの作成 ](./images/xdmee5.png)
 
-## 2.2.1.2 データセットの作成
+## データセットを作成
 
 左側のメニューで **データセット** をクリックし、**参照** に移動します。 **データセットを作成** をクリックします。
 
@@ -129,7 +119,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 これで、消費者エクスペリエンスイベントデータの取り込みを開始し、顧客 AI サービスの使用を開始する準備が整いました。
 
-## 2.2.1.3 エクスペリエンスイベントテストデータのダウンロード
+## エクスペリエンスイベントテストデータのダウンロード
 
 **スキーマ** と **データセット** を設定したら、エクスペリエンスイベントデータを取り込む準備が整います。 顧客 AI には少なくとも **** 2 四半期にわたるデータが必要なので、外部で準備されたデータを取り込む必要があります。
 
@@ -145,7 +135,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データセット](./images/ingest.png)
 
-## 2.2.1.4 エクスペリエンスイベントテストデータの取り込み
+## エクスペリエンスイベントテストデータの取り込み
 
 Adobe Experience Platformで、**データセット** に移動し、データセットを開きます。名前は **[!UICONTROL ldap - Demo System - Customer Experience Event Dataset]** です。
 
