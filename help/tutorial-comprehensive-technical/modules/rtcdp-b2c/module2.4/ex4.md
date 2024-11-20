@@ -1,21 +1,38 @@
 ---
-title: Microsoft Azure Event Hub へのセグメントのアクティブ化 – セグメントのアクティブ化
-description: Microsoft Azure Event Hub へのセグメントのアクティブ化 – セグメントのアクティブ化
+title: Microsoft Azure Event Hub へのAudience Activation- オーディエンスの作成
+description: Microsoft Azure Event Hub へのAudience Activation- オーディエンスの作成
 kt: 5342
 doc-type: tutorial
 exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 3%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
-# 2.4.4 セグメントのアクティブ化
+# 2.4.4 オーディエンスの作成
 
-## 2.4.4.1 Azure Event Hub 宛先へのセグメントの追加
+## はじめに
 
-この演習では、セグメント `--aepUserLdap-- - Interest in Equipment` を `--aepUserLdap---aep-enablement` Azure Event Hub の宛先に追加します。
+シンプルなオーディエンスを作成します。
+
+- **CitiSignal デモ Web サイトの** プラン **ページを訪問した顧客が対象となる** プランへの関心。
+
+### 知っておいて良い
+
+Real-time CDP は、宛先のアクティベーションリストの一部であるオーディエンスに適合すると、宛先に対するアクティベーションをトリガーします。 その場合、その宛先に送信されるオーディエンスの選定ペイロードには **顧客プロファイルが選定されるすべてのオーディエンス** が含まれます。
+
+このモジュールの目的は、顧客プロファイルのオーディエンスの選定がイベントハブの宛先にほぼリアルタイムで送信されることを示すことです。
+
+### オーディエンスステータス
+
+Adobe Experience Platformでのオーディエンスの選定には、常に **status** プロパティがあり、次のいずれかになります。
+
+- **実現済み**：新しいオーディエンスの選定を示します
+- **離脱**：プロファイルがオーディエンスに適合しなくなったことを示します
+
+## オーディエンスの構築
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 
@@ -27,39 +44,29 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-**宛先** に移動し、「参照 **をクリック** ます。 使用可能なすべての宛先が表示されます。 宛先を見つけて、以下に示すように **+** アイコンをクリックします。
+**オーディエンス** に移動します。 **+ オーディエンスを作成** ボタンをクリックします。
 
-![5-01-select-destination.png](./images/5-01-select-destination.png)
+![データ取得](./images/seg.png)
 
-その後、これが表示されます。 LDAP を使用してセグメントを検索し、セグメントのリストから `--aepUserLdap-- - Interest in Equipment` を選択します。
+「**ルールを作成**」を選択し、「**作成**」をクリックします。
 
-「**次へ**」をクリックします。
+![データ取得](./images/seg1.png)
 
-![5-04-select-segment.png](./images/5-04-select-segment.png)
+オーディエンス `--aepUserLdap-- - Interest in Plans` に名前を付け、評価方法を **Edgeに設定し** エクスペリエンスイベントからページ名を追加します。
 
-Adobe Experience Platform Real-time CDP は、セグメント宛先とプロファイル宛先の 2 種類の宛先にペイロードを配信できます。
+**イベント** をクリックし、**XDM ExperienceEvent/Web/Web ページの詳細/名前** をドラッグ&amp;ドロップします。 値として **plans** を入力します。
 
-セグメントの宛先には、事前に定義されたセグメントの選定ペイロードが届きます。これについては後で説明します。 このようなペイロードには、特定のプロファイルに対するセグメント選定 **すべて** が含まれます。 宛先のアクティベーションリストにないセグメントの場合でも可能です。 このようなセグメントの宛先の例として、**Azure Event Hubs** と **AWS Kinesis** があります。
+![4-05-create-ee-2.png](./images/405createee2.png)
 
-プロファイルベースの宛先を使用すると、XDM プロファイル結合スキーマから任意の属性（firstName、lastName など）を選択して、アクティベーションペイロードに含めることができます。 このような宛先の例として、**メールマーケティング** があります。
+**XDM ExperienceEvent/`--aepTenantId--`/demoEnvironment/brandName** をドラッグ&amp;ドロップします。 値として `--aepUserLdap--` を入力し、比較パラメーターを **contains** に設定して、**Publish** をクリックします。
 
-Azure Event Hub の宛先は **セグメント** の宛先なので、例えばフィールド `--aepTenantId--.identification.core.ecid` を選択します。
+![4-05-create-ee-2-brand.png](./images/405createee2brand.png)
 
-「**新しいフィールドを追加**」をクリックし、「スキーマを参照」をクリックして、フィールド `--aepTenantId--identification.core.ecid` を選択します（自動的に表示されるその他のフィールドがあれば削除します）。
+オーディエンスが公開されました。
 
-「**次へ**」をクリックします。
+![4-05-create-ee-2-brand.png](./images/405createee2brand1.png)
 
-![5-05-select-attributes.png](./images/5-05-select-attributes.png)
-
-「**完了**」をクリックします。
-
-![5-06-destination-finish.png](./images/5-06-destination-finish.png)
-
-これで、セグメントがMicrosoft Event Hub の宛先に対してアクティブ化されました。
-
-![5-07-destination-segment-added.png](./images/5-07-destination-segment-added.png)
-
-次の手順：[2.4.5 Microsoft Azure プロジェクトを作成する ](./ex5.md)
+次の手順：[2.4.5 オーディエンスをアクティベートする ](./ex5.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

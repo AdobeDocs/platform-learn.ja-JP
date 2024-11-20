@@ -1,111 +1,193 @@
 ---
-title: Microsoft Azure Event Hub へのセグメントのアクティベーション – アクション
-description: Microsoft Azure Event Hub へのセグメントのアクティベーション – アクション
+title: Microsoft Azure Event Hub へのAudience Activation- Azure 関数を定義します。
+description: Microsoft Azure Event Hub へのAudience Activation- Azure 関数を定義します。
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
-# 2.4.6 エンドツーエンドのシナリオ
+# 2.4.6 Microsoft Azure プロジェクトの作成
 
-## 2.4.6.1 Azure Event Hub のトリガーの開始
+## Azure Event Hub 関数の理解
 
-セグメントの選定時にAdobe Experience Platform Real-time CDP から Azure Event Hub に送信されたペイロードを表示するには、シンプルな Azure Event Hubトリガー機能を開始する必要があります。 この関数は、Visual Studio Code のコンソールにペイロードを単純に「ダンプ」します。 ただし、この関数は、専用の API とプロトコルを使用して、あらゆる種類の環境とインターフェイスするように拡張できます。
+Azure 関数を使用すると、アプリケーションインフラストラクチャを気にすることなく、小さなコード（**functions** と呼ばれます）を実行できます。 Azure Functions を使用すると、クラウドインフラストラクチャは、アプリケーションを大規模に実行するために必要な最新のサーバーをすべて提供します。
 
-### Visual Studio Code の起動とプロジェクトの開始
+関数は、特定のタイプのイベントによって **トリガー** されます。 サポートされるトリガーには、データの変化への対応、メッセージ（Event Hubs など）への対応、スケジュールに従った実行、または HTTP リクエストの結果としての応答が含まれます。
 
-Visual Studio Code プロジェクトを開いて実行していることを確認します
+Azure Functions は、インフラストラクチャを明示的にプロビジョニングまたは管理することなく、イベントトリガーコードを実行できる、サーバーレスの計算サービスです。
 
-Visual Studio Code で Azure 関数を開始/停止/再起動するには、次の演習を参照してください。
+Azure Event Hubs は、サーバーレス アーキテクチャのために Azure Functions と統合されています。
 
-- [演習 13.5.4 - Azure プロジェクトの開始](./ex5.md)
-- [演習 13.5.5 - Azure プロジェクトの停止](./ex5.md)
+## Visual Studio Code を開き、Azure にログオンします
 
-Visual Studio Code の **ターミナル** には、次のような記述が必要です。
+Visual Studio Code を使用すると、次のことが簡単になります。
 
-```code
-[2022-02-23T05:03:41.429Z] Worker process started and initialized.
-[2022-02-23T05:03:41.484Z] Debugger attached.
-[2022-02-23T05:03:46.401Z] Host lock lease acquired by instance ID '000000000000000000000000D90C881B'.
+- azure 関数の定義と Event Hubs へのバインド
+- ローカルでテスト
+- azure にデプロイ
+- リモートログ関数の実行
+
+### Visual Studio Code を開きます。
+
+### Azure へのログオン
+
+前の演習で登録に使用した Azure アカウントでログオンすると、Visual Studio Code ですべての Event Hub リソースを検索してバインドできます。
+
+Visual Studio Code を開き、「**Azure**」アイコンをクリックします。
+
+次に、「**Azure にログイン**」を選択します。
+
+![3-01-vsc-open.png](./images/301vscopen.png)
+
+ログインするには、ブラウザーにリダイレクトされます。 登録に使用した Azure アカウントを忘れずに選択してください。
+
+ブラウザーに次の画面が表示されたら、Visual Code Studio にログインしています。
+
+![3-03-vsc-login-ok.png](./images/303vscloginok.png)
+
+Visual Code Studio に戻ります（例：**Azure サブスクリプション 1**）。
+
+![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
+## Azure プロジェクトの作成
+
+「**関数プロジェクトを作成…**」をクリックします。
+
+![3-05-vsc-create-project.png](./images/vsc2.png)
+
+プロジェクトを保存するローカルフォルダーを選択し、「**選択**」をクリックします。
+
+![3-06-vsc-select-folder.png](./images/vsc3.png)
+
+プロジェクト作成ウィザードに入ります。 プロジェクトの言語として **Javascript** をクリックします。
+
+![3-07-vsc-select-language.png](./images/vsc4.png)
+
+次に、「**モデル v4**」を選択します。
+
+![3-07-vsc-select-language.png](./images/vsc4a.png)
+
+プロジェクトの最初の関数トリガーとして **Azure Event Hub テンプレート** を選択します。
+
+![3-08-vsc-function-template.png](./images/vsc5.png)
+
+関数の名前を入力し、次の書式 `--aepUserLdap---aep-event-hub-trigger` を使用して Enter キーを押します。
+
+![3-09-vsc-function-name.png](./images/vsc6.png)
+
+**新しいローカルアプリ設定を作成** を選択します。
+
+![3-10-vsc-function-local-app-setting.png](./images/vsc7.png)
+
+クリックして、前の手順で作成した `--aepUserLdap---aep-enablement` という名前のイベント ハブ名前空間を選択します。
+
+![3-11-vsc-function-select-namespace.png](./images/vsc8.png)
+
+次に、前の手順で作成した `--aepUserLdap---aep-enablement-event-hub` という名前のイベント ハブをクリックして選択します。
+
+![3-12-vsc-function-select-eventhub.png](./images/vsc9.png)
+
+イベントハブポリシーとして **RootManageSharedAccessKey** をクリックして選択します。
+
+![3-13-vsc-function-select-eventhub-policy.png](./images/vsc10.png)
+
+プロジェクトを開く方法については、**ワークスペースに追加** を選択してください。
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12.png)
+
+次のようなメッセージが表示される場合があります。 その場合は、「はい、作成者を信頼します **をクリックし** す。
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
+
+プロジェクトが作成されたら、「**index.js**」をクリックして、エディターでファイルを開きます。
+
+![3-16-vsc-open-index-js.png](./images/vsc13.png)
+
+Adobe Experience Platformからイベントハブに送信されるペイロードには、オーディエンス ID が含まれます。
+
+```json
+[{
+"segmentMembership": {
+"ups": {
+"ca114007-4122-4ef6-a730-4d98e56dce45": {
+"lastQualificationTime": "2020-08-31T10:59:43Z",
+"status": "realized"
+},
+"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+},
+"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+}
+}
+},
+"identityMap": {
+"ecid": [{
+"id": "08130494355355215032117568021714632048"
+}]
+}
+}]
 ```
 
-![6-01-vsc-ready.png](./images/vsc31.png)
+Visual Studio Code の index.js のコードを以下のコードに置き換えます。 このコードは、Real-time CDP がイベントハブ宛先にオーディエンス選定を送信するたびに実行されます。 この例では、コードは受信したペイロードの表示と強化に過ぎません。 しかし、オーディエンスの選定をリアルタイムで処理するあらゆる種類の機能を想像できます。
 
-## 2.4.6.2 Luma web サイトを読み込む
+```javascript
+// Marc Meewis - Solution Consultant Adobe - 2020
+// Adobe Experience Platform Enablement - Module 2.4
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+// Main function
+// -------------
+// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
+// Eventhub destination
+// This function enriched the received audience payload with the name of the audience. 
+// You can replace this function with any logic that is require to process and deliver
+// Adobe Experience Platform audiences in real-time to any application or platform that 
+// would need to act upon an AEP audience qualification.
+// 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+module.exports = async function (context, eventHubMessages) {
 
-次のフローに従って、web サイトにアクセスできるようになりました。 **統合** をクリックします。
+    return new Promise (function (resolve, reject) {
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
+        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
 
-**統合** ページでは、演習 0.1 で作成したデータ収集プロパティを選択する必要があります。
+        resolve();
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+    });    
 
-その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
+};
+```
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+結果は次のようになります。
 
-新しい匿名ブラウザーウィンドウを開きます。
+![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+## Azure プロジェクトの実行
 
-前の手順でコピーしたデモ Web サイトの URL を貼り付けます。 その後、Adobe IDを使用してログインするように求められます。
+次に、プロジェクトを実行します。 この段階では、プロジェクトを Azure にデプロイしません。 デバッグモードでローカルに実行します。 [ ファイル名を指定して実行 ] アイコンを選択し、緑色の矢印をクリックします。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![3-17-vsc-run-project.png](./images/vsc14.png)
 
-アカウントタイプを選択し、ログインプロセスを完了します。
+プロジェクトをデバッグモードで初めて実行するときは、Azure ストレージアカウントを添付し、「**ストレージアカウントを選択**」をクリックしてから、以前に作成した `--aepUserLdap--aepstorage` という名前のストレージアカウントを選択する必要があります。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+これで、プロジェクトが起動および実行され、イベントハブにイベントがリストされるようになりました。 次の演習では、オーディエンスの資格を得る CitiSignal デモ web サイトで動作を実演します。 その結果、Event Hub トリガー関数のターミナルにオーディエンスの選定ペイロードが届きます。
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+![3-24-vsc-application-stop.png](./images/vsc18.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+## Azure プロジェクトを停止
 
-## 2.4.6.3 機器セグメントへの関心の対象
+プロジェクトを停止するには、VSC の lenu **コールスタック** に移動し、実行中のプロジェクトの矢印をクリックして **停止** をクリックします。
 
-**機器** ページに一度移動し、**再読み込みや更新を行わないでください**。 このアクションは、`--aepUserLdap-- - Interest in Equipment` のセグメントの条件を満たすものです。
+![3-24-vsc-application-stop.png](./images/vsc17.png)
 
-![6-04-luma-telco-nav-sports.png](./images/luma1.png)
-
-確認するには、プロファイルビューアパネルを開きます。 `--aepUserLdap-- - Interest in Equipment` のメンバーになりました。 プロファイルビューアパネルでセグメントメンバーシップがまだ更新されていない場合は、「再読み込み」ボタンをクリックします。
-
-![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
-
-Visual Studio Code に戻り、「**TERMINAL**」タブを見ると、特定の **ECID** のセグメントのリストが表示されます。 このアクティベーションペイロードは、`--aepUserLdap-- - Interest in Equipment` セグメントに適合するとすぐにイベントハブに配信されます。
-
-セグメントペイロードを詳しく見ると、`--aepUserLdap-- - Interest in Equipment` のステータスが **実現済み** であることがわかります。
-
-セグメントステータスが **実現済み** の場合は、プロファイルがセグメントにエントリしたばかりであることを意味します。 **既存** ステータスは、プロファイルが引き続きセグメントに含まれることを意味します。
-
-![6-06-vsc-activation-realized.png](./images/luma3.png)
-
-## 2.4.6.4 機器のページを 2 回目に見る
-
-**Equipment** ページをハード更新します。
-
-![6-07-back-to-sports.png](./images/luma1.png)
-
-次に、Visual Studio Code に戻り、「**TERMINAL**」タブを確認します。 セグメントは残っていますが、現在はステータス **既存** になっています。つまり、プロファイルは引き続きセグメントに含まれます。
-
-![6-08-vsc-activation-existing.png](./images/luma4.png)
-
-## 2.4.6.5 スポーツのページを 3 回目に見る
-
-**スポーツ** ページを 3 回目に再訪問した場合、セグメントの観点から状態が変更されないので、アクティベーションは行われません。
-
-セグメントのアクティベーションは、セグメントのステータスが変更された場合にのみ行われます。
-
-![6-09-segment-state-change.png](./images/6-09-segment-state-change.png)
-
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[2.4.7 エンドツーエンドのシナリオ ](./ex7.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

@@ -4,9 +4,9 @@ description: データエンジニア、データアナリスト、データア�
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1511'
 ht-degree: 2%
 
 ---
@@ -42,22 +42,22 @@ ht-degree: 2%
 - Adobe Experience Platform Data Collection を使用したリアルタイムのAdobe Experience Platformへのデータのストリーミング
 - ワークフローを使用するか、ETL （抽出、変換、読み込み）アプリケーションを使用して、Adobe Experience Platformにデータをバッチ取得します
 - Adobe Experience Platformでのリアルタイム顧客プロファイルの視覚化と使用
-- セグメントの作成
+- オーディエンスを作成
 - 複数のAdobe Experience Platform API の使用
 - SQL を使用してAdobe Experience Platformでデータに対してクエリを実行する
 - リアルタイムのトリガーベースのジャーニーの設定と実行
-- Real-time CDP を使用して、様々な宛先に対してセグメントをアクティブ化することでアクションを実行します
+- Real-time CDP を使用して、様々な宛先に対するオーディエンスをアクティブ化することでアクションを実行します
 - Customer Journey Analyticsを使用して、Google BigQuery を含む様々なソースからのオムニチャネルカスタマーデータに関するレポートを作成します
 
 ## 前提条件
 
 - Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Adobe Experience Platform Data Collection へのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- デモシステムへのアクセス：[https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- デモシステムへのアクセス：[https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## ビデオ
 
-Tech Academy のイベントや Bootcamps など、多くの興味深いビデオが [Experience Makers Community YouTube チャンネル ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) で見つかります。
+Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [Experience Makers Community YouTube チャンネル ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) で多数紹介しています。
 
 ## コンテンツ
 
@@ -109,19 +109,19 @@ Tech Academy のイベントや Bootcamps など、多くの興味深いビデ�
 - **説明：** このモジュールでは、Adobe Experience Platform インテリジェントサービスを設定、設定および使用する方法について説明します。
 - **時間的投資：** 60 分
 
-[2.3 Real-Time CDP - セグメントを作成してアクションを実行する](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
+[2.3 Real-Time CDP - オーディエンスを作成し、アクションを実行します](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
 - **対象読者：** データアーキテクト、オーケストレーションエンジニア、マーケター
 - **前提条件：** Adobe Experience Platform、Real-time CDP、Adobe Audience Manager、Adobe Target、AWS S3 へのアクセス
-- **説明：** このモジュールでは、セグメントを設定し、ストリーミングセグメント化に対して有効にして、Google DV360、Google AdWords、Adobe Audience Manager、Adobe Target、Salesforce Marketing Cloudなどの S3 宛先など、複数の宛先に対してセグメントをアクティブ化します。
+- **説明：** このモジュールでは、オーディエンスを設定し、Google DV360、Adobe Target、AWS S3 などの複数の宛先に対してオーディエンスをアクティブ化します。
 - **時間的投資：** 90 分
 
-[2.4 Real-Time CDP:Microsoft Azure Event Hub へのセグメントのアクティベーション](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP:Microsoft Azure Event Hub へのAudience Activation](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
 - **対象読者：** データエンジニア、データアーキテクト、データアナリスト
 - **前提条件：Adobe Experience Platform、Real-time CDP およびMicrosoft Azure への** アクセス
-- **説明：** このモジュールでは、Adobe Experience Platform Real-time CDP のリアルタイムの宛先として、Microsoft Azure EventHub の宛先を設定します。 また、Adobe Experience Platformがセグメントペイロードを Azure EventHub の宛先に配信するたびにリアルタイムにトリガーされる Azure 関数をセットアップしてデプロイします。 トリガーする Azure 関数は、Adobe Experience Platform Real-time CDP のアクティベーション機能のメカニズムを示します。
-また、このモジュールの一部として、指定された宛先にペイロードを実際に配信する Real-time CDP のトリガーについても理解します。 また、セグメントの選定のステータスと、アクティブ化との関係についても説明します。
+- **説明：** このモジュールでは、Adobe Experience Platform Real-time CDP のリアルタイムの宛先として、Microsoft Azure EventHub の宛先を設定します。 また、Adobe Experience Platformが Azure EventHub の宛先にオーディエンスペイロードを配信するたびにリアルタイムでトリガーされる Azure 関数をセットアップしてデプロイします。 トリガーする Azure 関数は、Adobe Experience Platform Real-time CDP のアクティベーション機能のメカニズムを示します。
+また、このモジュールの一部として、指定された宛先にペイロードを実際に配信する Real-time CDP のトリガーについても理解します。 また、オーディエンスの選定のステータスと、アクティベーションとの関係についても説明します。
 - **時間的投資：** 90 分
 
 [2.5 Real-Time CDP接続：イベント転送](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)

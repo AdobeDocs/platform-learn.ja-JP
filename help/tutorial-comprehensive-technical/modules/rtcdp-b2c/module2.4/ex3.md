@@ -1,43 +1,75 @@
 ---
-title: Microsoft Azure Event Hub へのセグメントのアクティベーション – ストリーミングセグメントの作成
-description: Microsoft Azure Event Hub へのセグメントのアクティベーション – ストリーミングセグメントの作成
+title: Microsoft Azure Event Hub へのAudience Activation- Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
+description: Microsoft Azure Event Hub へのAudience Activation- Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
 kt: 5342
 doc-type: tutorial
 exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 2%
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
-# 2.4.3 セグメントの作成
+# 2.4.3 Adobe Experience Platformでの Azure Event Hub の宛先の設定
 
-## 2.4.3.1 概要
+## 必要な Azure 接続パラメーターの特定
 
-シンプルなセグメントを作成します。
+Adobe Experience Platformでイベントハブの宛先を設定するには、次が必要です。
 
-- **機器への関心** Luma デモ web サイトの **機器** ページにアクセスした顧客プロファイルが対象となります。
+- Event Hubs 名前空間
+- イベントハブ
+- Azure SAS キー名
+- Azure SAS キー
 
-### 知っておいて良い
+Event Hub と EventHub 名前空間は、前の演習 [Azure でのイベントハブのセットアップ ](./ex2.md) で定義されています
 
-Real-time CDP は、宛先のアクティベーションリストの一部であるセグメントにユーザーが適合すると、宛先に対するアクティベーションをトリガーします。 その場合、その宛先に送信されるセグメントの選定ペイロードには **プロファイルが選定されるすべてのセグメント** が含まれます。
+### Event Hubs 名前空間
 
-このモジュールの目的は、顧客プロファイルのセグメントの選定が **ユーザーの** イベントハブ宛先にリアルタイムで送信されることを示すことです。
+Azure Portal で上記の情報を参照するには、[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動します。 正しい Azure アカウントを使用していることを確認します。
 
-### セグメントステータス
+Azure portal で **すべてのリソース** をクリックします。
 
-Adobe Experience Platformでのセグメントの選定には、常に **status** プロパティがあり、次のいずれかになります。
+![2-01-azure-all-resources.png](./images/201azureallresources.png)
 
-- **実現済み**：新しいセグメントの選定を示します
-- **既存**：既存のセグメントの選定を示します
-- **離脱**：プロファイルがセグメントに適合しなくなったことを示します
+リストで **Event Hubs 名前空間** を見つけてクリックします。
 
-## 2.4.3.2 セグメントの作成
+![2-01-azure-all-resources.png](./images/201azureallresources1.png)
 
-セグメントの構築について詳しくは、[ モジュール 2.3](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) を参照してください。
+**Event Hubs 名前空間** の名前がはっきりと表示されるようになりました。 `--aepUserLdap---aep-enablement` のようになります。
 
-### セグメントを作成
+![2-01-azure-all-resources.png](./images/201azureallresources2.png)
+
+### イベントハブ
+
+**Event Hubs 名前空間** ページで、**エンティティ/Event Hubs** をクリックして、Event Hubs 名前空間で定義されている Event Hubs のリストを取得します。前の演習で使用した命名規則に従うと、`--aepUserLdap---aep-enablement-event-hub` という名前の Event Hub が見つかります。 それをメモしてください、あなたは次の演習でそれを必要とするでしょう。
+
+![2-04-event-hub-selected.png](./images/204eventhubselected.png)
+
+### SAS キー名
+
+**Event Hubs 名前空間** ページで、**設定/共有アクセスポリシー** をクリックします。 共有アクセスポリシーのリストが表示されます。 探している SAS キーは **RootManageSharedAccessKey** で、これは**SAS キー名です。 書き留めておきなさい。
+
+![2-05-select-sas.png](./images/205selectsas.png)
+
+### SAS キー値
+
+次に、**RootManageSharedAccessKey** をクリックして、SAS キー値を取得します。 **クリップボードにコピー** アイコンを押して、**プライマリキー** （この場合は `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`）をコピーします。
+
+![2-07-sas-key-value.png](./images/207saskeyvalue.png)
+
+### 宛先値の概要
+
+この時点で、Adobe Experience Platform Real-time CDP で Azure Event Hub の宛先を定義するために必要なすべての値が特定されています。
+
+| 宛先属性名 | 宛先属性値 | 値の例 |
+|---|---|---|
+| sasKeyName | SAS キー名 | RootManageSharedAccessKey |
+| sasKey | SAS キー値 | pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY= |
+| 名前空間 | Event Hubs 名前空間 | `--aepUserLdap---aep-enablement` |
+| eventHubName | イベントハブ | `--aepUserLdap---aep-enablement-event-hub` |
+
+## Adobe Experience Platformでの Azure Event Hub の宛先の作成
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 
@@ -49,29 +81,31 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-**セグメント** に移動します。 **+ セグメントを作成** ボタンをクリックします。
+**宛先** に移動し、**カタログ** に移動します。 **クラウドストレージ** を選択し、**Azure Event Hubs** に移動して **設定** をクリックします。
 
-![データ取得](./images/seg.png)
+![2-08-list-destinations.png](./images/208listdestinations.png)
 
-セグメント `--aepUserLdap-- - Interest in Equipment` に名前を付け、ページ名エクスペリエンスイベントを追加します。
+**標準認証** を選択します。 前の演習で収集した接続の詳細を入力します。 次に、「**宛先に接続**」をクリックします。
 
-**イベント** をクリックし、**XDM ExperienceEvent/Web/Web ページの詳細/名前** をドラッグ&amp;ドロップします。 値として **equipment** と入力します。
+![2-09-destination-values.png](./images/209destinationvalues.png)
 
-![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
+資格情報が正しければ、「**接続済み** という確認が表示されます。
 
-**XDM ExperienceEvent/`--aepTenantId--`/demoEnvironment/brandName** をドラッグ&amp;ドロップします。 値として `--aepUserLdap--` と入力し、比較パラメーターを **次を含む** に設定して、「**保存**」をクリックします。
+![2-09-destination-values.png](./images/209destinationvaluesa.png)
 
-![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
+ここで、書式 `--aepUserLdap---aep-enablement` に名前と説明を入力する必要があります。 **eventHubName** を入力し（前の演習を参照：`--aepUserLdap---aep-enablement-event-hub`）、「**次へ**」をクリックします。
 
-### PQL定義
+![2-10-create-destination.png](./images/210createdestination.png)
 
-セグメントのPQLは次のようになります。
+オプションで、データガバナンスポリシーを選択できます。 **保存して終了** をクリックします。
 
-```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
-```
+![2-11-save-exit-activation.png](./images/211saveexitactivation.png)
 
-次の手順：[2.4.4 セグメントをアクティブ化 ](./ex4.md)
+これで、宛先が作成され、Adobe Experience Platformで使用できるようになりました。
+
+![2-12-destination-created.png](./images/212destinationcreated.png)
+
+次の手順：[2.4.4 オーディエンスの作成 ](./ex4.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

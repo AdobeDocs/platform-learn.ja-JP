@@ -1,23 +1,21 @@
 ---
-title: Microsoft Azure Event Hub に対するセグメントのアクティベーション
-description: Microsoft Azure Event Hub に対するセグメントのアクティベーション
+title: Microsoft Azure Event Hub へのAudience Activation
+description: Microsoft Azure Event Hub へのAudience Activation
 kt: 5342
 doc-type: tutorial
 exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
-# 2.4 Real-Time CDP:Microsoft Azure Event Hub へのセグメントのアクティベーション
+# 2.4 Real-Time CDP:Microsoft Azure Event Hub へのAudience Activation
 
-**著者：[Marc Meewis](https://www.linkedin.com/in/marcmeewis/)、[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+このモジュールでは、Adobe Experience Platform Real-time CDP のリアルタイムの宛先として、Microsoft Azure EventHub の宛先を設定します。 また、Adobe Experience Platformが Azure EventHub の宛先にオーディエンスペイロードを配信するたびにリアルタイムでトリガーされる Azure 関数をセットアップしてデプロイします。 トリガーする Azure 関数は、Adobe Experience Platform Real-time CDP のアクティベーション機能のメカニズムを示します。
 
-このモジュールでは、Adobe Experience Platform Real-time CDP のリアルタイムの宛先として、Microsoft Azure EventHub の宛先を設定します。 また、Adobe Experience Platformがセグメントペイロードを Azure EventHub の宛先に配信するたびにリアルタイムにトリガーされる Azure 関数をセットアップしてデプロイします。 トリガーする Azure 関数は、Adobe Experience Platform Real-time CDP のアクティベーション機能のメカニズムを示します。
-
-また、このモジュールの一部として、指定された宛先にペイロードを実際に配信する Real-time CDP のトリガーについても理解します。 また、セグメントの選定のステータスと、アクティブ化との関係についても説明します。
+また、このモジュールの一部として、指定された宛先にペイロードを実際に配信する Real-time CDP のトリガーについても理解します。 また、オーディエンスの選定のステータスと、アクティベーションとの関係についても説明します。
 
 Adobe Experience Platform Real-time CDP は、ストリーミングクラウドストレージの宛先へのデータアクティベーションをサポートしており、オーディエンスデータとイベントを、JSON 形式でこれらの宛先にリアルタイムで書き出すことができます。 その後、宛先でこれらのイベントにビジネスロジックを記述できます
 
@@ -29,13 +27,12 @@ Microsoft Azure Event Hubs は、シンプルで信頼でき、拡張性の高�
 - Microsoft Azure Event Hub への RTCDP 宛先の設定
 - Real-time CDP がアクティブ化されるタイミングと、アクティベーションペイロードがどのようなものかを理解します
 - Azure プロジェクトを開発、テスト、デプロイするための Visual Studio Code のセットアップ
-- RTCDP によってリアルタイムに配信されるセグメント選定を使用する Azure 関数を作成してデプロイします
+- RTCDP によってリアルタイムに配信されるオーディエンス選定を使用する Azure 関数を作成してデプロイします
 
 ## 前提条件
 
 - [Adobe Experience Platform](https://experience.adobe.com/platform) へのアクセス
-- AEP デモ Web サイト環境に精通していること
-- Adobe Experience Platformでストリーミングセグメントを定義、使用、アクティブ化する方法について説明します。
+- Adobe Experience Platformでオーディエンスを定義、使用およびアクティブ化する方法を理解します。
 
 >[!NOTE]
 >
@@ -43,33 +40,33 @@ Microsoft Azure Event Hubs は、シンプルで信頼でき、拡張性の高�
 
 ## 演習
 
-[2.4.0 環境の設定](./ex0.md)
+[2.4.1 環境の設定](./ex1.md)
 
 この演習では、Microsoft Azure 環境を設定します。
 
-[2.4.1 Microsoft Azure EventHub 環境の設定](./ex1.md)
+[2.4.2 Microsoft Azure EventHub 環境の設定](./ex2.md)
 
 この演習では、Microsoft Azure EventHub 環境を設定します。
 
-[2.4.2 Adobe Experience Platformでの Azure Event Hub の宛先の設定](./ex2.md)
+[2.4.3 Adobe Experience Platformでの Azure Event Hub の宛先の設定](./ex3.md)
 
-この演習では、前の演習で設定した EventHub にリアルタイムでセグメントを配信する Real-time CDP 宛先接続を設定します。
+この演習では、前の演習で設定したイベントハブインスタンスにオーディエンスをリアルタイムで配信する Real-time CDP 宛先接続を設定します。
 
-[2.4.3 セグメントの作成](./ex3.md)
+[2.4.4 オーディエンスの作成](./ex4.md)
 
-この演習では、Adobe Experience Platformでストリーミングセグメントを作成します
+この演習では、Adobe Experience Platformでオーディエンスを作成します
 
-[2.4.4 セグメントのアクティブ化](./ex4.md)
+[2.4.5 オーディエンスのアクティブ化](./ex5.md)
 
-この演習では、Real-time CDP EventHub 宛先へのストリーミングセグメントをアクティブ化します。
+この演習では、EventHub 宛先に対するオーディエンスをアクティブ化します。
 
-[2.4.5 Microsoft Azure プロジェクトの作成](./ex5.md)
+[2.4.6 Microsoft Azure プロジェクトの作成](./ex6.md)
 
-この演習では、AdobeExperience Platform が対応する Azure Event Hub 宛先に対してセグメントの選定をアクティブ化したときにリアルタイムにトリガーされる Azure 関数を作成します。
+この演習では、Experience Platform が対応する Azure Event Hub 宛先にオーディエンスの選定を配信する際に、リアルタイムでトリガーされる Azure 関数をAdobeします。
 
-[2.4.6 エンドツーエンドのシナリオ](./ex6.md)
+[2.4.7 エンドツーエンドのシナリオ](./ex7.md)
 
-この時点で、すべてが設定されています。 AEP デモ web サイトでブラウジングを実行し、セグメントの選定をMicrosoft Azure EventHubトリガー関数に配信できるようになりました。
+この時点で、すべてが設定されています。 デモ Web サイトでブラウジングを実行し、Microsoft Azure Event Hub のトリガー機能に配信されるオーディエンスの選定を取得できるようになりました。
 
 [概要と利点](./summary.md)
 

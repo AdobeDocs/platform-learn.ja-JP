@@ -1,119 +1,126 @@
 ---
-title: Microsoft Azure Event Hub へのセグメントのアクティベーション - Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
-description: Microsoft Azure Event Hub へのセグメントのアクティベーション - Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
+title: Microsoft Azure Event Hub へのセグメントのアクティベーション - Azure での Event Hub のセットアップ
+description: Microsoft Azure Event Hub へのセグメントのアクティベーション - Azure での Event Hub のセットアップ
 kt: 5342
 doc-type: tutorial
 exl-id: 0c2e94ec-00e8-4f47-add7-ca3a08151225
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
 
-# 2.4.2 Adobe Experience Platformでの Azure Event Hub の宛先の設定
+# 2.4.2 Microsoft Azure EventHub 環境の設定
 
-## 2.4.2.1 必要な Azure 接続パラメーターの特定
+Azure Event Hubs は、1 秒あたり数百万のイベントを取り込んで複数のアプリケーションにストリーミングできる、拡張性の高いパブリッシュ/サブスクライブ サービスです。 これにより、接続されたデバイスやアプリケーションによって生成された膨大な量のデータを処理および分析できます。
 
-Adobe Experience Platformでイベントハブの宛先を定義するには、以下が必要です。
+## Azure Event Hubs とは
 
-- Event Hubs 名前空間
-- イベントハブ
-- Azure SAS キー名
-- Azure SAS キー
+Azure Event Hubs は、ビッグデータストリーミングプラットフォームとイベント取り込みサービスです。 1 秒あたり数百万のイベントを受信し、処理できます。 イベントハブに送信されたデータは、任意のリアルタイム分析プロバイダーまたはバッチ/ストレージアダプターを使用して変換および保存できます。
 
-Event Hub と EventHub 名前空間は、前の演習 [ 演習 1 - Azure での Event Hub のセットアップ ](./ex1.md) で定義しました。
+Event Hubs は、イベントパイプラインの **フロントドア** を表し、多くの場合、ソリューションアーキテクチャではイベント取り込みツールと呼ばれます。 イベント取得ツールは、イベントパブリッシャー（Adobe Experience Platform RTCDP など）とイベントコンシューマーの間に位置するコンポーネントまたはサービスで、イベントストリームの生成とそのイベントの利用を切り離すものです。 Event Hubs は、時間保持バッファーを備えた統合ストリーミングプラットフォームを提供し、イベントプロデューサーをイベントコンシューマーから分離します。
 
-### Event Hubs 名前空間
+## Event Hubs 名前空間の作成
 
-Azure Portal で上記の情報を参照するには、[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動します。 正しい Azure アカウントを使用していることを確認します。
+[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動し、「**リソースを作成** を選択します。
 
-Azure Portal で **すべてのリソース** を選択します。
+![1-01-open-azure-portal.png](./images/101openazureportal.png)
 
-![2-01-azure-all-resources.png](./images/2-01-azure-all-resources.png)
+リソース画面で、検索バーに **イベント** と入力します。 **Event Hubs** カードを見つけ、[ 作成 **] をクリックし**[**Event Hubs**..
 
-### イベントハブ
+![1-02-search-event-hubs.png](./images/102searcheventhubs.png)
 
-前の演習で使用した命名規則に従って Event Hubs 名前空間を使用する場合は、リソースタイプ **Event Hubs 名前空間** のリソースを探し `--aepUserLdap---aep-enablement` す。 それをメモしてください、あなたは次の演習でそれを必要とするでしょう。
+Azure で初めてリソースを作成する場合は、新しい **リソースグループ** を作成する必要があります。 既にリソースグループがある場合は、そのリソースグループを選択（または新しいリソースグループを作成）できます。
 
-![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
+「**新規作成**」をクリックし、グループに `--aepUserLdap---aep-enablement` という名前を付け、「**OK**」をクリックします。
 
-Event Hubs の名前空間名をクリックすると、詳細が表示されます。
+![1-04-create-resource-group.png](./images/104createresourcegroup.png)
 
-![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
+指示に従って、残りのフィールドに入力します。
 
-**Event Hubs** を選択して、Event Hubs 名前空間で定義されている Event Hubs のリストを取得します。前の演習で使用した命名規則に従っている場合は、`--aepUserLdap---aep-enablement-event-hub` という名前の Event Hub があります。 それをメモしてください、あなたは次の演習でそれを必要とするでしょう。
+- 名前空間：名前空間を定義します。名前空間は一意である必要があります。次のパターンを使用します `--aepUserLdap---aep-enablement`
+- 場所：任意の場所を選択します。
+- 価格レベル：**基本**
+- スループット単位：**1**
 
-![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
+**レビューして作成** をクリックします。
 
-### SAS キー名
+![1-05-create-namespace.png](./images/105createnamespace.png)
 
-**Event Hubs 名前空間** の **共有アクセスポリシー** を選択します
+「**作成**」をクリックします。
 
-![2-05-select-sas.png](./images/2-05-select-sas.png)
+![1-07-namespace-create.png](./images/107namespacecreate.png)
 
-共有アクセスポリシーのリストが表示されます。 探している SAS キーは **RootManageSharedAccessKey** です。 これは SAS キー名です。 書き留めておきなさい。
+リソースグループのデプロイメントには 1～2 分かかる場合があります。成功すると、次の画面が表示されます。
 
-![2-06-sas-overview.png](./images/2-06-sas-overview.png)
+![1-08-namespace-deploy.png](./images/108namespacedeploy.png)
 
-### SAS キー値
+## Azure でのイベントハブの設定
 
-**RootManageSharedAccessKey** をクリックして、SAS キー値を取得します。 **クリップボードにコピー** アイコンを押して、**プライマリキーをコピーします**:
+[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動し、「**すべてのリソース**」を選択します。
 
-![2-07-sas-key-value.png](./images/2-07-sas-key-value.png)
+![1-09-all-resources.png](./images/109allresources.png)
 
-### 宛先値の概要
+リソースリストで、`--aepUserLdap---aep-enablement` の Event Hubs 名前空間をクリックします。
 
-この時点で、Adobe Experience Platform Real-time CDP で Azure Event Hub の宛先を定義するために必要なすべての値が特定されています。
+![1-10-list-resources.png](./images/110listresources.png)
 
-| 宛先属性名 | 宛先属性値 | 値の例 |
-|---|---|---|
-| sasKeyName | SAS キー名 | RootManageSharedAccessKey |
-| sasKey | SAS キー値 | srREx9ShJG1Rv7f/.. |
-| 名前空間 | Event Hubs 名前空間 | `--aepUserLdap---aep-enablement` |
-| eventHubName | イベントハブ | `--aepUserLdap---aep-enablement-event-hub` |
+詳細画面 `--aepUserLdap---aep-enablement`**エンティティ** に移動し、「**Event Hubs**」をクリックします。
 
-## 2.4.2.2 Adobe Experience Platformでの Azure Event Hub の宛先の作成
+![1-11-eventhub-namespace.png](./images/111eventhubnamespace.png)
 
-URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
+**+ Event Hub** をクリックします。
 
-ログインすると、Adobe Experience Platformのホームページが表示されます。
+![1-12-add-event-hub.png](./images/112addeventhub.png)
 
-![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
+`--aepUserLdap---aep-enablement-event-hub` を名前として使用し、「レビューと作成 **をクリックし** す。
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+![1-13-create-event-hub.png](./images/113createeventhub.png)
 
-![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
+「**作成**」をクリックします。
 
-**宛先** に移動し、**カタログ** に移動します。
+![1-13-create-event-hub.png](./images/113createeventhub1.png)
 
-![データ取得](./images/sb2a.png)
+**Event Hubs** の Event Hub 名前空間に、**Event Hub** が表示されます。
 
-**クラウドストレージ** を選択し、**Azure Event Hubs** に移動して、**設定** または **設定** をクリックします。
+![1-14-event-hub-list.png](./images/114eventhublist.png)
 
-![2-08-list-destinations.png](./images/2-08-list-destinations.png)
+## Azure ストレージアカウントの設定
 
-前の演習で収集した宛先の値を入力します。 次に、「**宛先に接続**」をクリックします。
+後の演習で Azure Event Hub 機能をデバッグするには、Visual Studio Code プロジェクト設定の一部として Azure ストレージアカウントを指定する必要があります。 次に、その Azure ストレージアカウントを作成します。
 
-![2-09-destination-values.png](./images/2-09-destination-values.png)
+[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動し、「**リソースを作成** を選択します。
 
-資格情報が正しければ、「**接続済み** という確認が表示されます。
+![1-15-event-hub-storage.png](./images/115eventhubstorage.png)
 
-![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
+検索内で **ストレージアカウント** を入力し、**ストレージアカウント** のカードを見つけて **ストレージアカウント**..
 
-ここで、書式 `--aepUserLdap---aep-enablement` に名前と説明を入力する必要があります。 **eventHubName** を入力し（前の演習を参照：`--aepUserLdap---aep-enablement-event-hub`）、「**次へ**」をクリックします。
+![1-16-event-hub-search-storage.png](./images/116eventhubsearchstorage.png)
 
-![2-10-create-destination.png](./images/2-10-create-destination.png)
+（この演習の最初に作成した **リソース グループ** を指定し、`--aepUserLdap--aepstorage` をストレージ アカウント名として使用して、**ローカル冗長ストレージ （LRS）** を選択してから、**確認+作成** をクリックします。
 
-**保存して終了** をクリックします。
+![1-18-event-hub-create-review-storage.png](./images/118eventhubcreatereviewstorage.png)
 
-![2-11-save-exit-activation.png](./images/2-11-save-exit-activation.png)
+「**作成**」をクリックします。
 
-これで、宛先が作成され、Adobe Experience Platformで使用できるようになりました。
+![1-19-event-hub-submit-storage.png](./images/119eventhubsubmitstorage.png)
 
-![2-12-destination-created.png](./images/2-12-destination-created.png)
+ストレージアカウントの作成には数秒かかります。
 
-次の手順：[2.4.3 セグメントの作成 ](./ex3.md)
+![1-20-event-hub-deploy-storage.png](./images/120eventhubdeploystorage.png)
+
+完了すると、画面に **リソースに移動** ボタンが表示されます。
+
+**ホーム** をクリックします。
+
+![1-21-event-hub-deploy-ready-storage.png](./images/121eventhubdeployreadystorage.png)
+
+ストレージアカウントが **最近のリソース** の下に表示されるようになりました。
+
+![1-22-event-hub-deploy-resources-list.png](./images/122eventhubdeployresourceslist.png)
+
+次の手順：[2.4.3 Adobe Experience Platformで Azure Event Hub の宛先を設定する ](./ex3.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 
