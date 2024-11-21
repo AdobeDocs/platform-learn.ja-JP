@@ -4,9 +4,9 @@ description: このモジュールでは、以前に設定したデータセッ�
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 この演習では、カスタム Webhook を作成および設定し、Web SDK によって収集されたデータをそのカスタム Webhook に転送し始めます。
 
-[2.5.4 Google Cloud 関数の作成と設定](./ex4.md)
+[2.5.4 GCP Pub/Sub にイベントを転送する](./ex4.md)
 
 この演習では、Google Cloud 関数を作成および設定し、Web SDK で収集されたデータのGoogleへの転送を開始します。
 
-[2.5.5 AWSエコシステムに向けたフォワードイベント](./ex5.md)
+[2.5.5 AWS KinesisおよびAWS S3 へのフォワードイベント](./ex5.md)
 
-この演習では、AWS API Gateway、AWS Kinesis、AWS Firehose、AWS S3 を使用してAWS環境を設定し、Web SDK で収集されるイベントデータの転送を開始します。
+この演習では、AWS IAM、AWS Kinesis、AWS Firehose およびAWS S3 を使用してAWS環境を設定し、その後、Web SDK によって収集されるイベントデータの転送を開始します。
 
 [概要と利点](./summary.md)
 

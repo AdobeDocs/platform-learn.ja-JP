@@ -3,215 +3,89 @@ title: データ収集とリアルタイムサーバーサイド転送 – Googl
 description: Google Cloud 関数の作成と設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 0%
+source-wordcount: '1184'
+ht-degree: 1%
 
 ---
 
-# 2.5.4 Google Cloud 関数の作成と設定
+# 2.5.4 GCP Pub/Sub にイベントを転送する
 
-## 2.5.4.1 Google Cloud 関数の作成
+>[!NOTE]
+>
+>この演習では、Google Cloud Platform 環境にアクセスする必要があります。 まだ GCP へのアクセス権がない場合は、個人のメールアドレスを使用して新しいアカウントを作成します。
 
-[https://console.cloud.google.com/](https://console.cloud.google.com/) に移動します。 **クラウド関数** に移動します。
+## Google Cloud Pub/Sub トピックを作成します
+
+[https://console.cloud.google.com/](https://console.cloud.google.com/) に移動します。 検索バーに「`pub/sub`」と入力します。 検索結果 **Pub/Sub - Global real-time messaging** をクリックします。
 
 ![GCP](./images/gcp1.png)
 
-その後、これが表示されます。 **関数を作成** をクリックします。
+その後、これが表示されます。 **トピックを作成** をクリックします。
 
 ![GCP](./images/gcp2.png)
 
-その後、これが表示されます。
+その後、これが表示されます。 トピック ID には、`--aepUserLdap---event-forwarding` を使用します。 「**作成**」をクリックします。
 
 ![GCP](./images/gcp6.png)
 
-次の選択を行います。
-
-- **関数名**: `--aepUserLdap---event-forwarding`
-- **地域**：任意の地域を選択します。
-- **トリガーの種類**: **HTTP** を選択
-- **認証**:「未認証の呼び出しを許可 **を選択します**
-
-これで、このが得られます。 **保存** をクリックします。
+これで、トピックが作成されました。 トピックの **サブスクリプション ID** をクリックします。
 
 ![GCP](./images/gcp7.png)
 
-**次へ** をクリックします。
+その後、これが表示されます。 **トピック名** をクリップボードにコピーして、次の演習で必要になるので保存します。
 
 ![GCP](./images/gcp8.png)
 
-次の画面が表示されます。
+今すぐAdobe Experience Platform Data Collection Event Forwarding に移動して、イベント転送プロパティを更新し、Pub/Sub へのイベントの転送を開始しましょう。
 
-![GCP](./images/gcp9.png)
 
-次の選択を行います。
+## イベント転送プロパティの更新：秘密鍵
 
-- **ランタイム**: **Node.js 16** （またはそれ以降）を選択します。
-- **エントリポイント**:**helloAEP** と入力します
+イベント転送プロパティの **秘密鍵** は、外部 API に対する認証に使用される資格情報を保存するために使用されます。この例では、Google Cloud Platform OAuth トークンを保存するための秘密鍵を設定する必要があります。このトークンは、Pub/Sub を使用して GCP にデータをストリーミングする際に認証に使用されます。
 
-**API を有効にする** をクリックして **Cloud Build API** を有効にします。 その後、新しいウィンドウが表示されます。 新しいウィンドウで、もう一度 **ENABLE** をクリックします。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動し、**シークレット** に移動します。 **新しいシークレットの作成** をクリックします。
 
-![GCP](./images/gcp10.png)
+![Adobe Experience Platform データ収集 SSF](./images/secret1.png)
 
-その後、これが表示されます。 **有効にする** をクリックします。
+その後、これが表示されます。 次の手順に従います。
 
-![GCP](./images/gcp11.png)
+- 名前：use `--aepUserLdap---gcp-secret`
+- ターゲット環境：「**開発**」を選択します。
+- 型：**Google OAuth 2**
+- **Pub/Sub** のチェックボックスをオンにします。
 
-**Cloud Build API** を有効にすると、このページが表示されます。
+**秘密鍵の作成** をクリックします。
 
-![GCP](./images/gcp12.png)
+![Adobe Experience Platform データ収集 SSF](./images/secret2.png)
 
-**クラウド関数** に戻ります。
-クラウド関数インラインエディターで、次のコードがあることを確認します。
+**秘密鍵を作成** をクリックすると、イベント転送プロパティの秘密鍵とGoogleの間の認証を設定するポップアップが表示されます。 **Googleで秘密 `--aepUserLdap---gcp-secret` を作成して認証** をクリックします。
 
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
+![Adobe Experience Platform データ収集 SSF](./images/secret3.png)
 
-次に、「**デプロイ**」をクリックします。
+Google アカウントをクリックして選択します。
 
-![GCP](./images/gcp13.png)
+![Adobe Experience Platform データ収集 SSF](./images/secret4.png)
 
-その後、これが表示されます。 クラウド関数が作成されました。 これには数分かかることがあります。
+「**続行**」をクリックします。
 
-![GCP](./images/gcp14.png)
+>[!NOTE]
+>
+>ポップアップメッセージは異なる場合があります。 演習を続行するには、要求されたアクセスを許可または許可してください。
 
-関数を作成して実行すると、これが表示されます。 関数名をクリックして開きます。
+![Adobe Experience Platform データ収集 SSF](./images/secret5.png)
 
-![GCP](./images/gcp15.png)
+認証が成功すると、これが表示されます。
 
-その後、これが表示されます。 **トリガー** に移動します。 **エンドポイント URL が表示されます。これは** Launch Server Side でトリガーを定義するために使用するものです。
+![Adobe Experience Platform データ収集 SSF](./images/secret6.png)
 
-![GCP](./images/gcp16.png)
+これで、秘密鍵が正常に設定され、データ要素で使用できるようになりました。
 
-次のようにトリガー URL をコピーします：**https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**。
+## イベント転送プロパティの更新：データ要素
 
-次の手順では、**ページビュー** に関する特定の情報をAdobe Experience Platform Cloud 関数にストリーミングするようにGoogle Data Collection Server を設定します。 ペイロード全体をそのまま転送するのではなく、**ECID**、**timestamp**、**ページ名** などをGoogle Cloud 関数にのみ送信します。
-
-上記の変数を除外するために解析する必要があるペイロードの例を次に示します。
-
-```json
-{
-  "events": [
-    {
-      "xdm": {
-        "eventType": "web.webpagedetails.pageViews",
-        "web": {
-          "webPageDetails": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC",
-            "name": "vangeluw-OCUC",
-            "viewName": "vangeluw-OCUC",
-            "pageViews": {
-              "value": 1
-            }
-          },
-          "webReferrer": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/equipment"
-          }
-        },
-        "device": {
-          "screenHeight": 1080,
-          "screenWidth": 1920,
-          "screenOrientation": "landscape"
-        },
-        "environment": {
-          "type": "browser",
-          "browserDetails": {
-            "viewportWidth": 1920,
-            "viewportHeight": 451
-          }
-        },
-        "placeContext": {
-          "localTime": "2022-02-23T06:51:07.140+01:00",
-          "localTimezoneOffset": -60
-        },
-        "timestamp": "2022-02-23T05:51:07.140Z",
-        "implementationDetails": {
-          "name": "https://ns.adobe.com/experience/alloy/reactor",
-          "version": "2.8.0+2.9.0",
-          "environment": "browser"
-        },
-        "_experienceplatform": {
-          "identification": {
-            "core": {
-              "ecid": "08346969856929444850590365495949561249"
-            }
-          },
-          "demoEnvironment": {
-            "brandName": "vangeluw-OCUC"
-          },
-          "interactionDetails": {
-            "core": {
-              "channel": "web"
-            }
-          }
-        }
-      },
-      "query": {
-        "personalization": {
-          "schemas": [
-            "https://ns.adobe.com/personalization/html-content-item",
-            "https://ns.adobe.com/personalization/json-content-item",
-            "https://ns.adobe.com/personalization/redirect-item",
-            "https://ns.adobe.com/personalization/dom-action"
-          ],
-          "decisionScopes": [
-            "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0YzA1MjM4MmUxYjY1MDUiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRiZjA5ZGM0MTkwZWJiYSJ9",
-            "__view__"
-          ]
-        }
-      }
-    }
-  ],
-  "query": {
-    "identity": {
-      "fetch": [
-        "ECID"
-      ]
-    }
-  },
-  "meta": {
-    "state": {
-      "domain": "adobedemo.com",
-      "cookiesEnabled": true,
-      "entries": [
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_identity",
-          "value": "CiYwODM0Njk2OTg1NjkyOTQ0NDg1MDU5MDM2NTQ5NTk0OTU2MTI0OVIPCPn66KfyLxgBKgRJUkwx8AH5-uin8i8="
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent_check",
-          "value": "1"
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent",
-          "value": "general=in"
-        }
-      ]
-    }
-  }
-}
-```
-
-解析する必要がある情報を含むフィールドは次のとおりです。
-
-- ECID:**events.xdm。_experienceplatform.identification.core.ecid**
-- timestamp: **timestamp**
-- ページ名：**events.xdm.web.webPageDetails.name**
-
-次に、Adobe Experience Platform Data Collection Server に移動して、データ要素を設定し、可能にしましょう。
-
-## 2.5.4.2 イベント転送プロパティの更新：データ要素
+イベント転送プロパティでシークレットを使用するには、シークレットの値を保存するデータ要素を作成する必要があります。
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動し、**イベント転送** に移動します。 イベント転送プロパティを検索し、クリックして開きます。
 
@@ -221,70 +95,44 @@ exports.helloAEP = (req, res) => {
 
 ![Adobe Experience Platform データ収集 SSF](./images/de1gcp.png)
 
-その後、設定する新しいデータ要素が表示されます。
+次のようにデータ要素を設定します。
 
-![Adobe Experience Platform データ収集 SSF](./images/de2gcp.png)
+- 名前：**GCP Secret**
+- 拡張機能：**コア**
+- データ要素タイプ：**秘密鍵**
+- 開発秘密鍵：作成した秘密鍵を選択します。名前は `--aepUserLdap---gcp-secret` です
 
-次の選択を行います。
+**保存**&#x200B;をクリックします。
 
-- 「**名前**」に「**customerECID**」と入力します。
-- **拡張機能** として、「**コア**」を選択します。
-- **データ要素タイプ** として、「**パス**」を選択します。
-- **パス** として、`arc.event.xdm.--aepTenantId--.identification.core.ecid` と入力します。 このパスを入力すると、web サイトやモバイルアプリからAdobe Edgeに送信されるイベントペイロードからフィールド **ecid** がフィルタリングされます。
+![Adobe Experience Platform データ収集 SSF](./images/secret7.png)
 
->[!NOTE]
->
->上記と下記のパスでは、**arc** への参照が行われます。 **arc** はAdobeリソースコンテキストを表し、**arc** は常にサーバーサイドコンテキストで使用可能な最も高いオブジェクトを表します。 Adobe Experience Platform Data Collection Server の関数を使用して、その **arc** オブジェクトにエンリッチメントと変換を追加できます。
->
->上記と以下のパスでは、**event** への参照が行われます。 **event** は一意のイベントを表し、Adobe Experience Platform Data Collection Server は常にすべてのイベントを個別に評価します。 Web SDK クライアントサイドで送信されるペイロードに **events** への参照が表示されることがありますが、Adobe Experience Platform Data Collection Server では、すべてのイベントが個別に評価されます。
+## イベント転送プロパティの更新：拡張機能
 
-これで完了です。 「**保存**」をクリックします。
+秘密鍵とデータ要素が設定されたので、イベント転送プロパティでGoogle Cloud Platform の拡張機能を設定できるようになりました。
 
-![Adobe Experience Platform データ収集 SSF](./images/gcdpde1.png)
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動し、**イベント転送** に移動して、イベント転送プロパティを開きます。
 
-「**データ要素を追加**」をクリックします。
+![Adobe Experience Platform データ収集 SSF](./images/prop1.png)
 
-![Adobe Experience Platform データ収集 SSF](./images/addde.png)
+次に、**拡張機能**、**カタログ** に移動します。 **Google Cloud Platform** 拡張機能をクリックし、「**インストール**」をクリックします。
 
-その後、設定する新しいデータ要素が表示されます。
+![Adobe Experience Platform データ収集 SSF](./images/gext2.png)
 
-![Adobe Experience Platform データ収集 SSF](./images/de2gcp.png)
+その後、これが表示されます。 「データ要素」アイコンをクリックします。
 
-次の選択を行います。
+![Adobe Experience Platform データ収集 SSF](./images/gext3.png)
 
-- **Name** として **eventTimestamp** と入力します。
-- **拡張機能** として、「**コア**」を選択します。
-- **データ要素タイプ** として、「**パス**」を選択します。
-- **パス** として、「**arc.event.xdm.timestamp**」と入力します。 このパスを入力すると、web サイトやモバイルアプリからAdobe Edgeに送信されるイベントペイロードからフィールド **timestamp** がフィルタリングされます。
+前の演習で作成したデータ要素、**GCP シークレット** という名前を選択します。 「**選択**」をクリックします。
 
-これで完了です。 「**保存**」をクリックします。
+![Adobe Experience Platform データ収集 SSF](./images/gext4.png)
 
-![Adobe Experience Platform データ収集 SSF](./images/gcdpde2.png)
+その後、これが表示されます。 「**保存**」をクリックします。
 
-「**データ要素を追加**」をクリックします。
+![Adobe Experience Platform データ収集 SSF](./images/gext5.png)
 
-![Adobe Experience Platform データ収集 SSF](./images/addde.png)
+## イベント転送プロパティの更新：ルールを更新します
 
-その後、設定する新しいデータ要素が表示されます。
-
-![Adobe Experience Platform データ収集 SSF](./images/de2gcp.png)
-
-次の選択を行います。
-
-- 「**名前**」に「**pageName**」と入力します。
-- **拡張機能** として、「**コア**」を選択します。
-- **データ要素タイプ** として、「**パス**」を選択します。
-- **パス** として、「**arc.event.xdm.web.webPageDetails.name**」と入力します。 このパスを入力すると、web サイトやモバイルアプリからAdobe Edgeに送信されるイベントペイロードから **名前** フィールドがフィルタリングされます。
-
-これで完了です。 「**保存**」をクリックします。
-
-![Adobe Experience Platform データ収集 SSF](./images/gcdpde3.png)
-
-これで、次のデータ要素が作成されました。
-
-![Adobe Experience Platform データ収集 SSF](./images/de3gcp.png)
-
-## 2.5.4.3 イベント転送プロパティの更新：ルールを更新する
+これでGoogle Cloud Platform 拡張機能が設定されたので、Pub/Sub トピックへのイベントデータの転送を開始するルールを定義できます。 それには、前の演習の 1 つで作成した **すべてのページ** ルールを更新する必要があります。
 
 左側のメニューで、「ルール **に移動** ます。 前の演習では、ルール **すべてのページ** を作成しました。 そのルールをクリックして開きます。
 
@@ -294,49 +142,44 @@ exports.helloAEP = (req, res) => {
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl2gcp.png)
 
-その後、これが表示されます。
+その後、これが表示されます。 次の選択を行います。
 
-![Adobe Experience Platform データ収集 SSF](./images/rl4gcp.png)
+- **拡張機能**:**Google Cloud Platform** を選択します。
+- **アクションタイプ**:**Cloud Pub/Sub にデータを送信** を選択します。
 
-次の選択を行います。
-
-- **拡張機能**:**Adobeクラウドコネクタ** を選択します。
-- **アクションタイプ**:**フェッチ呼び出しを実行** を選択します。
-
-これにより、次の **名前** が得られます。**Adobeクラウドコネクタ – フェッチ呼び出しを行う**。 次の情報が表示されます。
+これにより、次の **名前** が得られます。**Google Cloud Platform - Cloud Pub/Sub にデータを送信**。 次の情報が表示されます。
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl5gcp.png)
 
-次に、以下を設定します。
+ここで、前の手順で作成した Pub/Sub トピックを設定する必要があります。
 
-- リクエストプロトコルをGETから **POST** に変更します
-- 前の手順の 1 つで作成したGoogle Cloud 関数の URL を、**https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwardingのように入力し** す。
+**トピック名** が表示されたら、コピーします。
 
-これで、このが得られます。 次に、**本文** に移動します。
+![GCP](./images/gcp8.png)
+
+**トピック名** をルール設定に貼り付けます。 次に、「**データ （必須）** フィールドの横にあるデータ要素アイコンをクリックします。
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl6gcp.png)
 
-その後、これが表示されます。 **JSON** のラジオボタンをクリックします。
+**XDM イベント** を選択し、「**選択**」をクリックします。
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl7gcp.png)
 
-**Body** を次のように設定します。
-
-| キー | 値 |
-|--- |--- |
-| customerECID | {{customerECID}} |
-| pageName | {{pageName}} |
-| eventTimestamp | {{eventTimestamp}} |
-
 その後、これが表示されます。 「**変更を保存**」をクリックします。
+
+![Adobe Experience Platform データ収集 SSF](./images/rl8gcp.png)
+
+「**保存**」をクリックします。
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl9gcp.png)
 
-その後、これが表示されます。 「**保存**」をクリックします。
+その後、これが表示されます。
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl10gcp.png)
 
-これで、Adobe Experience Platform Data Collection Server プロパティ内の既存のルールを更新しました。 **公開フロー** に移動して、変更を公開します。 示すように **編集** をクリックして、開発ライブラリ **メイン** を開きます。
+## 変更を公開する
+
+これで設定が完了しました。 **公開フロー** に移動して、変更を公開します。 示すように **編集** をクリックして、開発ライブラリ **メイン** を開きます。
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl12gcp.png)
 
@@ -348,19 +191,11 @@ exports.helloAEP = (req, res) => {
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl14.png)
 
-## 2.5.3.4 設定のテスト
+## 設定のテスト
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-次のフローに従って、web サイトにアクセスできるようになりました。 **統合** をクリックします。
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-**統合** ページでは、演習 0.1 で作成したデータ収集プロパティを選択する必要があります。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
@@ -378,65 +213,19 @@ exports.helloAEP = (req, res) => {
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 演習ごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-ブラウザーの開発者ビューを開くと、次に示すようにネットワークリクエストを調べることができます。 フィルター **interact** を使用すると、Adobe Experience Platform データ収集クライアントからAdobe Edgeに送信されるネットワークリクエストが表示されます。
-
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook1.png)
-
-Google Cloud 関数にビューを切り替え、**LOGS** に移動します。 これで、これに類似したビューが表示され、多数のログエントリが表示されます。 **関数の実行が開始された** と表示されるたびに、受信トラフィックがGoogle Cloud 関数で受信されたことを意味します。
+Google Cloud Pub/Sub にビューを切り替え、**MESSAGES** に移動します。 **PULL** をクリックすると、数秒後にリストにメッセージが表示されます。 メッセージをクリックして、そのコンテンツを視覚化します。
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook3gcp.png)
 
-受信データを操作し、Adobe Experience Platform Data Collection Server から受信した情報を表示するように、関数を少し更新しましょう。 **SOURCE** に移動し、「**編集**」をクリックします。
+Google Pub/Sub でイベントの XDM ペイロードを確認できるようになりました。 これで、Adobe Experience Platform Data Collection でリアルタイムに収集されたデータを、Google Cloud Pub/Sub エンドポイントに正常に送信しました。 その後、そのデータは、BigQuery などの任意のGoogle Cloud Platform アプリケーションでストレージおよびレポート用や機械学習のユースケースに使用できます。
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook4gcp.png)
 
-次の画面で、「**次へ**」をクリックします。
-
-![Adobe Experience Platform データ収集のセットアップ ](./images/gcf1.png)
-
-次のようにコードを更新します。
-
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  console.log('>>>>> Function has started. The following information was received from Event Forwarding:');
-  console.log(req.body);
-
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
-
-これで完了です。 **デプロイ** をクリックします。
-
-![Adobe Experience Platform データ収集のセットアップ ](./images/gcf2.png)
-
-数分後、関数が再びデプロイされます。 関数名をクリックして開きます。
-
-![Adobe Experience Platform データ収集のセットアップ ](./images/gcf3.png)
-
-デモ Web サイトで、製品（「DEIRDRE RELAXED-FIT CAPRI **など** に移動します。
-
-![Adobe Experience Platform データ収集のセットアップ ](./images/gcf3a.png)
-
-Google Cloud 関数にビューを切り替え、**LOGS** に移動します。 これで、これに類似したビューが表示され、多数のログエントリが表示されます。
-
-デモ Web サイトのすべてのページビューで、Google Cloud Function のログに新しいログエントリがポップアップ表示され、受け取った情報が表示されます。
-
-![Adobe Experience Platform データ収集のセットアップ ](./images/gcf4.png)
-
-これで、Adobe Experience Platform Data Collection でリアルタイムに収集されたデータを、Google Cloud Function エンドポイントに正常に送信しました。 その後、そのデータは、BigQuery などの任意のGoogle Cloud Platform アプリケーションでストレージおよびレポート用や機械学習のユースケースに使用できます。
-
-次のステップ：[2.5.5 AWSエコシステムに向けたイベントの転送 ](./ex5.md)
+次の手順：[2.5.5 AWS KinesisおよびAWS S3 へのイベントの転送 ](./ex5.md)
 
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 

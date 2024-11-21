@@ -4,7 +4,7 @@ description: カスタム Webhook の作成と設定
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook2.png)
 
-前の手順のいずれかで使用したカスタム Webhook ](https://webhook.site/)0}https://webhook.site/} に表示を切り替えます。 [これで、これに類似したビューが作成され、左側のメニューにネットワークリクエストが表示されます。 上記のネットワークリクエストから除外された **xdm** ペイロードが表示されます。
+前の手順のいずれかで使用したカスタム Webhook ](https://pipedream.com/requestbin)0}https://pipedream.com/requestbin} に表示を切り替えます。 [これで、これに類似したビューが作成され、左側のメニューにネットワークリクエストが表示されます。 上記のネットワークリクエストから除外された **xdm** ペイロードが表示されます。
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook3.png)
 
@@ -161,9 +161,9 @@ Web サイト上を移動すると、追加のネットワークリクエスト�
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook5.png)
 
-これで、外部のカスタム Webhook への Web SDK/XDM ペイロードのサーバーサイドのイベント転送を設定しました。 次の演習では、同様のアプローチを設定し、同じデータをGoogle環境とAWS環境に送信します。
+これで、外部のカスタム Webhook への Web SDK/XDM ペイロードのサーバーサイドのイベント転送を設定しました。 次の演習では、同様のアプローチを設定し、同じデータをGoogle Cloud Platform とAWSに送信します。
 
-次の手順：[2.5.4 Google Cloud 関数を作成して設定する ](./ex4.md)
+次の手順：[2.5.4 イベントを GCP Pub/Sub に転送する ](./ex4.md)
 
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 
