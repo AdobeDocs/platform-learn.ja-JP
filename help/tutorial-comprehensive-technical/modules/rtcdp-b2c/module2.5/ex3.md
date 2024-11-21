@@ -3,26 +3,29 @@ title: Adobe Experience Platform Data Collection とリアルタイムサーバ�
 description: カスタム Webhook の作成と設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 2%
+source-wordcount: '1107'
+ht-degree: 1%
 
 ---
 
 # 2.5.3 カスタム Webhook の作成と設定
 
-## 2.5.3.1 カスタム Webhook の作成
+## カスタム Webhook の作成
 
-[https://webhook.site/](https://webhook.site/) に移動します。 次のように表示されます。
+[https://pipedream.com/requestbin](https://pipedream.com/requestbin) に移動します。 このアプリケーションは、[Exercise 2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md) で既に使用されています
+
+そのサービスをまだ使用していない場合は、アカウントを作成してからワークスペースを作成します。 ワークスペースを作成すると、次のような情報が表示されます。
+
+「**コピー**」をクリックして、URL をコピーします。 次の演習では、この URL を指定する必要があります。 この例の URL は `https://eodts05snjmjz67.m.pipedream.net` です。
 
 ![ デモ ](./images/webhook1.png)
 
-次のような一意の URL が表示されます。`https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`。
-
 この web サイトは、あなたのためにこの Webhook を作成しました。イベントの転送のテストを開始するために、**[!DNL Event Forwarding property]** でこの Webhook を設定できるようになります。
 
-## 2.5.3.2 イベント転送プロパティの更新：データ要素の作成
+## イベント転送プロパティの更新：データ要素の作成
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動し、**イベント転送** に移動します。 イベント転送プロパティを検索し、クリックして開きます。
 
@@ -41,11 +44,13 @@ ht-degree: 2%
 - 「**名前**」に「**XDM イベント**」と入力します。
 - **拡張機能** として、「**コア**」を選択します。
 - **データ要素タイプ** として、「**パス**」を選択します。
-- **パス** として、「**arc.event.xdm**」と入力します。 このパスを入力すると、web サイトやモバイルアプリからAdobe Edgeに送信されるイベントペイロードから **XDM** セクションがフィルタリングされます。
+- **パス** として、「**XDM からデータを読み取り（arc.event.xdm）**」を選択します。 このパスを選択すると、web サイトやモバイルアプリからAdobe Edgeに送信されるイベントペイロードから **XDM** セクションがフィルタリングされます。
+
+![Adobe Experience Platform データ収集 SSF](./images/de3.png)
 
 これで完了です。 「**保存**」をクリックします。
 
-![Adobe Experience Platform データ収集 SSF](./images/de3.png)
+![Adobe Experience Platform データ収集 SSF](./images/de3a.png)
 
 >[!NOTE]
 >
@@ -53,7 +58,7 @@ ht-degree: 2%
 >
 >上記のパスでは、**event** への参照が作成されます。 **event** は一意のイベントを表し、Adobe Experience Platform Data Collection Server は常にすべてのイベントを個別に評価します。 Web SDK クライアントサイドで送信されるペイロードに **events** への参照が表示されることがありますが、Adobe Experience Platform Data Collection Server では、すべてのイベントが個別に評価されます。
 
-## 2.5.3.3 Adobe Experience Platform Data Collection Server プロパティの更新：ルールの作成
+## Adobe Experience Platform Data Collection Server プロパティの更新：ルールの作成
 
 左側のメニューで、「ルール **に移動** ます。 「**新規ルールを作成**」をクリックします。
 
@@ -75,7 +80,7 @@ ht-degree: 2%
 次に、以下を設定します。
 
 - リクエストメソッドをGETから **POSTに変更します**
-- [https://webhook.site/](https://webhook.site/) web サイトの前の手順のいずれかで作成したカスタム Webhook の URL を入力します。次のようになります。`https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
+- 前の手順の 1 つで作成したカスタム Webhook の URL を、次のように入力します。`https://eodts05snjmjz67.m.pipedream.net`
 
 これで、このが得られます。 次に、**本文** に移動します。
 
@@ -110,19 +115,11 @@ ht-degree: 2%
 
 ![Adobe Experience Platform データ収集 SSF](./images/rl14.png)
 
-## 2.5.3.4 設定のテスト
+## 設定のテスト
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-次のフローに従って、web サイトにアクセスできるようになりました。 **統合** をクリックします。
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-**統合** ページでは、演習 0.1 で作成したデータ収集プロパティを選択する必要があります。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
@@ -140,7 +137,7 @@ ht-degree: 2%
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 演習ごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
@@ -148,15 +145,15 @@ ht-degree: 2%
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook1.png)
 
-生のペイロードを選択した場合は、[https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) に移動して、ペイロードを貼り付けます。 **Make Pretty** をクリックします。 次に、JSON ペイロード、**events** オブジェクト、および **xdm** オブジェクトが表示されます。 前の手順の 1 つで、データ要素を定義したとき、参照 **arc.event.xdm** を使用しました。これにより、このペイロードの **xdm** オブジェクトが解析されます。
+生のペイロードを選択した場合は、[https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) に移動して、ペイロードを貼り付けます。 **縮小/美化** をクリックします。 次に、JSON ペイロード、**events** オブジェクト、および **xdm** オブジェクトが表示されます。 前の手順の 1 つで、データ要素を定義したとき、参照 **arc.event.xdm** を使用しました。これにより、このペイロードの **xdm** オブジェクトが解析されます。
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook2.png)
 
-前のいずれかの手順で使用した Web サイト ](https://webhook.site/)0}https://webhook.site/} にビューを切り替えます。 [これで、これに類似したビューが作成され、左側のメニューにネットワークリクエストが表示されます。 上記のネットワークリクエストから除外された **xdm** ペイロードが表示されます。
+前の手順のいずれかで使用したカスタム Webhook ](https://webhook.site/)0}https://webhook.site/} に表示を切り替えます。 [これで、これに類似したビューが作成され、左側のメニューにネットワークリクエストが表示されます。 上記のネットワークリクエストから除外された **xdm** ペイロードが表示されます。
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook3.png)
 
-ペイロードを少し下にスクロールして、ページ名を見つけます。この場合は **vangeluw-OCUC** （デモ Web サイトのプロジェクト名）です。
+ペイロードを少し下にスクロールして、ページ名（この場合は **home**）を見つけます。
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook4.png)
 
@@ -164,7 +161,7 @@ Web サイト上を移動すると、追加のネットワークリクエスト�
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook5.png)
 
-これで、外部のカスタム Webhook への Web SDK/XDM ペイロードのサーバーサイド転送を設定しました。 次の演習では、同様のアプローチを設定し、同じデータをGoogle環境とAWS環境に送信します。
+これで、外部のカスタム Webhook への Web SDK/XDM ペイロードのサーバーサイドのイベント転送を設定しました。 次の演習では、同様のアプローチを設定し、同じデータをGoogle環境とAWS環境に送信します。
 
 次の手順：[2.5.4 Google Cloud 関数を作成して設定する ](./ex4.md)
 

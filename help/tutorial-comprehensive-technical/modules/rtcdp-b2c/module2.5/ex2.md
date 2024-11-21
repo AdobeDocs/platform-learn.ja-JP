@@ -3,9 +3,10 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: Adobe Experience Platform Data Collection Server プロパティでデータを使用できるように、データストリームを更新します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 ## 2.5.2.1 データストリームの更新
 
-[ 演習 0.2](./../../gettingstarted/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
+[ はじめに ](./../../gettingstarted/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
 
-この演習では、**[!DNL Data Collection Server property]** を使用できるように **[!UICONTROL データストリーム]** を設定する必要があります。
+この演習では、**[!UICONTROL データ収集サーバープロパティ]** と連携するように **Datastream** を設定する必要があります。
 
 その場合は、[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) にアクセスしてください。 その後、これが表示されます。 左側のメニューで、「**[!UICONTROL データストリーム]**」をクリックします。
 

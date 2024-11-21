@@ -4,9 +4,9 @@ description: Microsoft Azure Event Hub へのAudience Activation- Azure 関数�
 kt: 5342
 doc-type: tutorial
 exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Visual Code Studio に戻ります（例：**Azure サブスクリプション 1
 
 ![3-05-vsc-create-project.png](./images/vsc2.png)
 
-プロジェクトを保存するローカルフォルダーを選択し、「**選択**」をクリックします。
+プロジェクトを保存するローカルフォルダーを選択または作成し、「**選択**」をクリックします。
 
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 
@@ -104,66 +104,73 @@ Visual Code Studio に戻ります（例：**Azure サブスクリプション 1
 
 ![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
 
-プロジェクトが作成されたら、「**index.js**」をクリックして、エディターでファイルを開きます。
+プロジェクトを作成したら、エディターで `--aepUserLdap---aep-event-hub-trigger.js` ファイルを開きます。
 
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 
-Adobe Experience Platformからイベントハブに送信されるペイロードには、オーディエンス ID が含まれます。
+Adobe Experience Platformからイベントハブに送信されるペイロードは次のようになります。
 
 ```json
-[{
-"segmentMembership": {
-"ups": {
-"ca114007-4122-4ef6-a730-4d98e56dce45": {
-"lastQualificationTime": "2020-08-31T10:59:43Z",
-"status": "realized"
-},
-"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
-},
-"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
 }
-}
-},
-"identityMap": {
-"ecid": [{
-"id": "08130494355355215032117568021714632048"
-}]
-}
-}]
 ```
 
-Visual Studio Code の index.js のコードを以下のコードに置き換えます。 このコードは、Real-time CDP がイベントハブ宛先にオーディエンス選定を送信するたびに実行されます。 この例では、コードは受信したペイロードの表示と強化に過ぎません。 しかし、オーディエンスの選定をリアルタイムで処理するあらゆる種類の機能を想像できます。
+以下のコードを使用して、Visual Studio Code の `--aepUserLdap---aep-event-hub-trigger.js` のコードを更新します。 このコードは、Real-time CDP がイベントハブ宛先にオーディエンス選定を送信するたびに実行されます。 この例では、コードは受信ペイロードの表示に過ぎませんが、オーディエンスの選定をリアルタイムで処理し、データパイプラインエコシステムの下方で使用するために、あらゆる種類の追加の関数を想像できます。
+
+ファイル `--aepUserLdap---aep-event-hub-trigger.js` の 11 行目には、現在、次の情報が表示されています。
 
 ```javascript
-// Marc Meewis - Solution Consultant Adobe - 2020
-// Adobe Experience Platform Enablement - Module 2.4
-
-// Main function
-// -------------
-// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
-// Eventhub destination
-// This function enriched the received audience payload with the name of the audience. 
-// You can replace this function with any logic that is require to process and deliver
-// Adobe Experience Platform audiences in real-time to any application or platform that 
-// would need to act upon an AEP audience qualification.
-// 
-
-module.exports = async function (context, eventHubMessages) {
-
-    return new Promise (function (resolve, reject) {
-
-        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
-
-        resolve();
-
-    });    
-
-};
+context.log('Event hub message:', message);
 ```
+
+`--aepUserLdap---aep-event-hub-trigger.js` の 11 行目を次のように変更します。
+
+```javascript
+context.log('Event hub message:', JSON.stringify(message));
+```
+
+合計ペイロードは次のようになります。
+
+```javascript
+const { app } = require('@azure/functions');
+
+app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
+    connection: '--aepUserLdap--aepenablement_RootManageSharedAccessKey_EVENTHUB',
+    eventHubName: '--aepUserLdap---aep-enablement-event-hub',
+    cardinality: 'many',
+    handler: (messages, context) => {
+        if (Array.isArray(messages)) {
+            context.log(`Event hub function processed ${messages.length} messages`);
+            for (const message of messages) {
+                context.log('Event hub message:', message);
+            }
+        } else {
+            context.log('Event hub function processed message:', messages);
+        }
+    }
+});
+```
+
 
 結果は次のようになります。
 
@@ -175,7 +182,13 @@ module.exports = async function (context, eventHubMessages) {
 
 ![3-17-vsc-run-project.png](./images/vsc14.png)
 
-プロジェクトをデバッグモードで初めて実行するときは、Azure ストレージアカウントを添付し、「**ストレージアカウントを選択**」をクリックしてから、以前に作成した `--aepUserLdap--aepstorage` という名前のストレージアカウントを選択する必要があります。
+初めてデバッグモードでプロジェクトを実行する際は、Azure ストレージアカウントを添付し、「**ストレージアカウントを選択**」をクリックする必要があります。
+
+![3-17-vsc-run-project.png](./images/vsc14a.png)
+
+次に、前の手順で作成した `--aepUserLdap--aepstorage` という名前のストレージ アカウントを選択します。
+
+![3-17-vsc-run-project.png](./images/vsc14b.png)
 
 これで、プロジェクトが起動および実行され、イベントハブにイベントがリストされるようになりました。 次の演習では、オーディエンスの資格を得る CitiSignal デモ web サイトで動作を実演します。 その結果、Event Hub トリガー関数のターミナルにオーディエンスの選定ペイロードが届きます。
 

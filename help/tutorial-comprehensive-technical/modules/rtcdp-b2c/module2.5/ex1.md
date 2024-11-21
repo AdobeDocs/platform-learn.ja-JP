@@ -3,36 +3,37 @@ title: Adobe Experience Platform データ収集とリアルタイムイベン�
 description: Adobe Experience Platform Data Collection イベント転送プロパティの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 9c64e57d-c91c-4d4c-923f-91a02edeb2ac
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '737'
 ht-degree: 1%
 
 ---
 
 # 2.5.1 Adobe Experience Platform Data Collection Event Forwarding プロパティを作成する
 
->[!NOTE]
->
->Adobe Experience Platform Edge モバイル拡張機能は、現在BETAにあります。 この拡張機能は招待状でのみ使用できます。 このチュートリアルの詳細や資料へのアクセスについては、担当のAdobeカスタマーサクセスマネージャーにお問い合わせください。
+## Adobe Experience Platform データ収集イベント転送プロパティとは何ですか？
 
-## 2.5.1.1 Adobe Experience Platform Data Collection Event Forwarding プロパティとは
-
-通常、Adobe Experience Platform データ収集を使用してデータを収集する場合、データは **クライアントサイド** で収集されます。 **クライアントサイド** は web サイトやモバイルアプリケーションなどの環境です。 モジュール 0 とモジュール 1 では、Adobe Experience Platform Data Collection Client プロパティの設定について詳しく説明し、顧客が web サイトやモバイルアプリケーションを操作する際にデータを収集できるように、Adobe Experience Platform Data Collection Client プロパティを web サイトやモバイルアプリケーションに実装しました。
+通常、Adobe Experience Platform データ収集を使用してデータを収集する場合、データは **クライアントサイド** で収集されます。 **クライアントサイド** は web サイトやモバイルアプリケーションなどの環境です。 「はじめに」と「データ収集」では、Adobe Experience Platform データ収集クライアントプロパティの設定について詳しく説明し、顧客が web サイトやモバイルアプリケーションを操作する際にデータを収集できるように、Adobe Experience Platform データ収集クライアントプロパティを web サイトやモバイルアプリケーションに実装しました。
 
 そのインタラクションデータがAdobe Experience Platform データ収集クライアントプロパティによって収集されると、web サイトまたはモバイルアプリからAdobeのEdgeにリクエストが送信されます。 Edgeは、Adobeのデータ収集Adobeであり、クリックストリームデータを環境エコシステムに入力するためのエントリポイントです。 Edgeから収集されたデータは、Adobe Experience Platform、Adobe Analytics、Adobe Audience Manager、Adobe Targetなどのアプリケーションに送信されます。
 
 Adobe Experience Platform Data Collection Event Forwarding プロパティの追加により、Edgeで受信データをリッスンするAdobe Experience Platform Data Collection プロパティを設定できるようになりました。 Edgeで実行中のAdobe Experience Platform Data Collection Event Forwarding プロパティは、受信データを表示すると、そのデータを使用して別の場所に転送できます。 他の場所もAdobe以外の外部 Webhook にできるようになりました。これにより、そのデータを、例えば、任意のデータレイク、決定アプリケーション、または Webhook を開くことができるその他のアプリケーションに送信できます。
 
-Adobe Experience Platform データ収集イベント転送プロパティの設定はクライアントプロパティによく知られていますが、Adobe Experience Platform データ収集クライアントプロパティでデータ要素とルールを以前と同じように設定できます。 ただし、データにアクセスして使用する方法は、使用例によって若干異なります。
+Adobe Experience Platform データ収集イベント転送プロパティの設定はクライアントサイドプロパティによく知られていますが、Adobe Experience Platform データ収集クライアントプロパティでデータ要素とルールを以前と同じように設定できます。 ただし、データにアクセスして使用する方法は、使用例によって若干異なります。
 
 まず、Adobe Experience Platform Data Collection Event Forwarding プロパティを作成します。
 
-## 2.5.1.2 Adobe Experience Platform Data Collection Event Forwarding プロパティを作成する
+## Adobe Experience Platform データ収集イベント転送プロパティの作成
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで、「**イベント転送**」をクリックします。 次に、使用可能なすべてのAdobe Experience Platform Data Collection Event Forwarding プロパティの概要が表示されます。 「**新規プロパティ**」ボタンをクリックします。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで、「**イベント転送**」をクリックします。 次に、使用可能なすべてのAdobe Experience Platform Data Collection Event Forwarding プロパティの概要が表示されます。 「**プロパティを作成**」ボタンをクリックします。
 
 ![Adobe Experience Platform データ収集 SSF](./images/launchhome.png)
+
+または、他のイベント転送プロパティが既に作成されている場合、UI は少し異なって見えます。 その場合は、「**新規プロパティ**」をクリックします。
+
+![Adobe Experience Platform データ収集 SSF](./images/launchhomea.png)
 
 Adobe Experience Platform Data Collection Event Forwarding プロパティの名前を入力する必要があります。 命名規則として、`--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)` を使用します。 例えば、この例では、名前は **vangeluw - Demo System （22/02/2022） （Edge）** です。 「**保存**」をクリックします。
 
@@ -42,13 +43,13 @@ Adobe Experience Platform Data Collection Event Forwarding プロパティのリ
 
 ![Adobe Experience Platform データ収集 SSF](./images/ssf2.png)
 
-## 2.5.1.2 Adobeの Cloud Connector 拡張機能の設定
+## Adobeクラウドコネクタ拡張機能の設定
 
 左側のメニューで、**拡張機能** に移動します。 **Core** 拡張機能が既に設定されていることがわかります。
 
 ![Adobe Experience Platform データ収集 SSF](./images/ssf3.png)
 
-**カタログ** に移動します。 **Adobeクラウドコネクタ** 拡張機能が表示されます。 「**インストール**」をクリックして、インストールします。
+**カタログ** に移動します。 他の多くの拡張機能と共に、**Adobeクラウドコネクタ** 拡張機能が表示されます。 「**インストール**」をクリックして、インストールします。
 
 ![Adobe Experience Platform データ収集 SSF](./images/ssf4.png)
 
@@ -71,10 +72,6 @@ Adobe Experience Platform Data Collection Event Forwarding プロパティのリ
 ![Adobe Experience Platform データ収集 SSF](./images/ssf8.png)
 
 その後、ライブラリが構築されます（1～2 分かかる場合があります）。
-
-![Adobe Experience Platform データ収集 SSF](./images/ssf9.png)
-
-最後に、ライブラリが構築され、準備が整います。
 
 ![Adobe Experience Platform データ収集 SSF](./images/ssf10.png)
 

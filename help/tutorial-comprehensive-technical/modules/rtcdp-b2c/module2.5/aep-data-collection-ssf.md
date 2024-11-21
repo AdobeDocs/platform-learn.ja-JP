@@ -4,16 +4,14 @@ description: このモジュールでは、以前に設定したデータセッ�
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Real-Time CDP接続：イベント転送
-
-**著者：[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 このモジュールでは、以前に設定したデータセット、スキーマ、Adobe Experience Platform データ収集クライアントプロパティを使用してデータを収集し、そのデータサーバーサイドを選択したエンドポイントに転送します。
 
@@ -23,10 +21,6 @@ ht-degree: 0%
 - Adobe Experience Platform Data Collection にAdobeクラウドコネクタ拡張機能をインストールして使用する
 - Google関数エンドポイントを作成し、それにデータをストリーミングします
 - AWS エンドポイントを作成し、それにデータをストリーミングします
-
-このビデオを視聴すると、価値、カスタマージャーニー、設定プロセスについて理解できます。
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## 学習内容
 
