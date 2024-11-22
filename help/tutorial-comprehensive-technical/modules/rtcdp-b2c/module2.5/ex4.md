@@ -4,7 +4,7 @@ description: Google Cloud 関数の作成と設定
 kt: 5342
 doc-type: tutorial
 exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: c0537545e4a5d1f1ca21a13d934eb965a4f3aa66
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 1%
@@ -230,3 +230,4 @@ Google Pub/Sub でイベントの XDM ペイロードを確認できるように
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 
 [すべてのモジュールに戻る](./../../../overview.md)
+
