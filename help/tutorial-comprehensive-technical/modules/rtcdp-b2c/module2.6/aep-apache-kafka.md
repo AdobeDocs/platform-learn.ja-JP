@@ -4,16 +4,14 @@ description: このモジュールでは、独自の Apache Kafka クラスタ�
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 # 2.6 Apache Kafka からAdobe Experience Platformへのデータのストリーミング
-
-**著者：[Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/)、[Nipun Nair](https://www.linkedin.com/in/nipunnair/)、[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 このモジュールでは、独自の Apache Kafka クラスターを設定し、トピック、プロデューサー、コンシューマーを定義し、Kafka Connect を通じてAdobe Experience Platform シンクコネクタを使用してAdobe Experience Platformにデータをストリーミングする方法について説明します。
 
@@ -27,7 +25,7 @@ ht-degree: 1%
 
 ## 前提条件
 
-- コンピューターに Java JDK11 以降をインストールする必要があります。次の場所から JDK をダウンロードできます：[https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- コンピューターに Java JDK23 以降をインストールする必要があります。次の場所から JDK をダウンロードできます：[https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Adobe Experience Platformへのアクセス
 
 >[!NOTE]

@@ -4,16 +4,16 @@ description: Adobe Experience Platform Data Collection Server プロパティで
 kt: 5342
 doc-type: tutorial
 exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 1%
 
 ---
 
 # 2.5.2 Adobe Experience Platform Data Collection Server プロパティでデータを使用できるように、データストリームを更新します。
 
-## 2.5.2.1 データストリームの更新
+## データストリームの更新
 
 [ はじめに ](./../../gettingstarted/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
 

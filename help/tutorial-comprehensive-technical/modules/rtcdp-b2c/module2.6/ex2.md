@@ -6,24 +6,20 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: be5a7dec47a83a14d74024015a15a9c24d04cd95
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
 # 2.6.2 Kafka クラスターのインストールと設定
 
-## 2.6.2.1 Apache Kafka をダウンロードする
+## Apache Kafka をダウンロードします
 
-[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) に移動して、最新のリリース版をダウンロードします。 最新のバイナリリリース、この場合は **Scala 2.13** を選択します。
+[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) に移動して、最新のリリース版をダウンロードします。 最新のバイナリリリース（この場合は **3.9.0**）を選択します。 ダウンロードが開始されます。
 
 ![ カフカ ](./images/kafka1.png)
-
-その後、ミラーサイトに移動します。 Kafka をダウンロードするには、推奨リンクをクリックしてください。
-
-![ カフカ ](./images/kafka2.png)
 
 デスクトップに **Kafka_AEP** という名前のフォルダーを作成し、ダウンロードしたファイルをそのディレクトリに配置します。
 
@@ -35,7 +31,7 @@ ht-degree: 0%
 
 ターミナルウィンドウで次のコマンドを実行し、ダウンロードしたファイルを解凍します。
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ ht-degree: 0%
 
 ターミナルウィンドウに戻ります。 次のコマンドを入力します。
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -69,15 +65,15 @@ ht-degree: 0%
 
 ![ カフカ ](./images/kafka10a.png)
 
-この応答が表示されます。 これは、Kafka が正しくインストールされ、Java が正常に動作していることを意味します。 （注意：これを機能させるには、Java 8 JDK または Java 11 JDK がインストールされている必要があります。 コマンド `java -version` を使用すると、インストールした Java のバージョンを確認できます）。
+この応答が表示されます。 これは、Kafka が正しくインストールされ、Java が正常に動作していることを意味します。 （注意：この機能には Java 23 JDK がインストールされている必要があります。 コマンド `java -version` を使用すると、インストールした Java のバージョンを確認できます）。
 
 ![ カフカ ](./images/kafka10.png)
 
-## 2.6.2.2 Kafka を開始する
+## Kafka を起動
 
 Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起動する必要があります。
 
-**kafka_2.13-3.1.0** フォルダーを右クリックし、**フォルダーに新しいターミナル** をクリックして **ターミナル** ウィンドウを開きます。
+**kafka_2.13-3.9.0** フォルダーを右クリックし、**フォルダーに新しいターミナル** をクリックして **ターミナル** ウィンドウを開きます。
 
 ![ カフカ ](./images/kafka11.png)
 
@@ -93,7 +89,7 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 これらの演習を行っている間、このウィンドウを開いたままにしてください。
 
-フォルダ **kafka_2.13-3.1.0** を右クリックし、「**フォルダに新しいターミナル**」をクリックして、別の新しい **ターミナル** ウィンドウを開きます。
+フォルダ **kafka_2.13-3.9.0** を右クリックし、「**フォルダに新しいターミナル**」をクリックして、別の新しい **ターミナル** ウィンドウを開きます。
 
 ![ カフカ ](./images/kafka11.png)
 
@@ -109,9 +105,9 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 これらの演習を行っている間、このウィンドウを開いたままにしてください。
 
-## 2.6.2.3 Kafka トピックの作成
+## Kafka トピックの作成
 
-**kafka_2.13-3.1.0** フォルダーを右クリックし、**フォルダーに新しいターミナル** をクリックして **ターミナル** ウィンドウを開きます。
+**kafka_2.13-3.9.0** フォルダーを右クリックし、**フォルダーに新しいターミナル** をクリックして **ターミナル** ウィンドウを開きます。
 
 ![ カフカ ](./images/kafka11.png)
 
@@ -119,9 +115,7 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![ カフカ ](./images/kafka16a.png)
-
-その後、同様の確認が表示されます。
+確認メッセージが表示されます。
 
 ![ カフカ ](./images/kafka17a.png)
 
@@ -129,13 +123,11 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![ カフカ ](./images/kafka16.png)
-
 その後、同様の確認が表示されます。
 
 ![ カフカ ](./images/kafka17.png)
 
-## 2.6.2.4 イベントの生成
+## イベントの作成
 
 最初の Kafka トピックを作成したターミナルウィンドウに戻り、次のコマンドを入力します。
 
@@ -163,7 +155,7 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 ![ カフカ ](./images/kafka22.png)
 
-## 2.6.2.4 イベントの使用
+## イベントの使用
 
 イベントの生成に使用したのと同じターミナルウィンドウで、次のコマンドを入力します。
 

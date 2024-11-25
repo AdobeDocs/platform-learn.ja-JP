@@ -4,10 +4,10 @@ description: Adobe Experience Platformで HTTP API エンドポイントを設�
 kt: 5342
 doc-type: tutorial
 exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 8%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ HTTP API Source コネクタを作成するには、次の URL に移動して�
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-左側のメニューで、**ソース** に移動し、**ソースカタログ** を下にスクロールして **HTTP API** を表示します。 「**データを追加**」をクリックします。
+左側のメニューで、**ソース** に移動し、**ソースカタログ** を下にスクロールして **HTTP API** を表示します。 **設定** をクリックします。
 
 ![データ取得](./images/kaep1.png)
 
@@ -39,15 +39,9 @@ HTTP API Source コネクタを作成するには、次の URL に移動して�
 
 **既存のデータセット** を選択し、ドロップダウンメニューを開きます。 データセット **デモシステム – コールセンター（グローバル v1.1）のイベントデータセット** を検索して選択します。
 
+「**次へ**」をクリックします。
+
 ![データ取得](./images/kaep4.png)
-
-「**次へ**」をクリックします。
-
-![データ取得](./images/kaep6.png)
-
-「**次へ**」をクリックします。
-
-![データ取得](./images/kaep7.png)
 
 「**完了**」をクリックします。
 
@@ -55,11 +49,11 @@ HTTP API Source コネクタを作成するには、次の URL に移動して�
 
 次に、作成した HTTP API Source コネクタの概要が表示されます。
 
-![データ取得](./images/kaep9.png)
-
 次の演習で必要になるので、以下に示すように **ストリーミングエンドポイント** URL をコピーする必要があります。
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![データ取得](./images/kaep9.png)
 
 この演習は完了しました。
 
