@@ -2,10 +2,10 @@
 title: Target 拡張機能と Decisioning 拡張機能の比較
 description: 機能、機能、設定、データフローなど、Target 拡張機能と Decisioning 拡張機能の違いについて説明します。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 05b0146256c6f8644e42f851498a0f49ff44bf68
+source-git-commit: 8e4e23413c842f84159891287d09e8a6cfbbbc53
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 4%
+source-wordcount: '986'
+ht-degree: 5%
 
 ---
 
@@ -18,9 +18,8 @@ Adobe Journey Optimizer - Decisioning 拡張機能は、モバイルアプリ用
 - Adobe Journey Optimizerでサポートされている Target 機能 – Decisioning
 - Adobe Journey Optimizerを持つAdobe Target拡張機能はどれか – 決定の同等の機能
 - Adobe Journey Optimizerでの Target 設定の適用方法 – Decisioning
-- Adobe Target拡張機能とAdobe Journey Optimizer - Decisioning 拡張機能のデータフローの違い
+- Adobe Journey Optimizer - Decisioning 拡張機能を使用したデータのフロー
 
-Platform Web SDK を初めて使用する場合は、心配はいりません。以下の項目については、このチュートリアル全体でより詳しく説明します。
 
 ## 機能の比較
 
@@ -32,10 +31,10 @@ Platform Web SDK を初めて使用する場合は、心配はいりません。
 | プロファイルパラメーター | サポートあり | サポート* |
 | エンティティパラメーター | サポートあり | サポート* |
 | ターゲットオーディエンス | サポートあり | サポートあり |
-| Real-Time CDP オーディエンス | ??? | サポートあり |
-| Real-Time CDP属性 | ??? | サポートあり |
+| Real-Time CDP オーディエンス | サポートなし | サポートあり |
+| Real-Time CDP属性 | サポートなし | サポートあり |
 | ライフサイクル指標 | サポートあり | データ収集ルールを使用したサポート |
-| thirdPartyId （mbox3rdPartyId） | サポートあり | データストリームの ID マップおよび名前空間設定を介してサポートされます |
+| thirdPartyId （mbox3rdPartyId） | サポートあり | データストリームの ID マップおよび Target サードパーティ ID 名前空間を介してサポートされます |
 | 通知（表示、クリック） | サポートあり | サポートあり |
 | レスポンストークン | サポートあり | サポートあり |
 | Analytics for Target（A4T） | クライアント側のみ | クライアントサイドとサーバーサイド |
@@ -51,9 +50,9 @@ Platform Web SDK を初めて使用する場合は、心配はいりません。
 
 >[!NOTE]
 >
->特定のページに既存の Platform Web SDK 実装を保持したままAppMeasurementをAdobe Analyticsに移行することは、サポートされていません。
+>アプリコードを Decisioning 拡張機能に移行した後も、Target 拡張機能タグの設定と設定を保持します。 これにより、まだ新しいバージョンにアプリを更新していないお客様でも、Target が引き続き機能するようにします。
 >
-> at.js （および platform.js）実装を 1 ページずつAppMeasurement Web SDK に移行することが可能です。 この方法を使用する場合は、`configure` のコマンドで、[`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) および [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) オプションを `true` に設定することをお勧めします。
+>Analytics for Target 統合（A4T）を使用している場合は、Target 実装を Decisioning 拡張機能に移行するのと同時に、Analytics 実装をEdge Bridge拡張機能と共に移行してください。
 
 ## Target 拡張機能と意思決定拡張機能の同等の機能
 
@@ -66,38 +65,35 @@ Platform Web SDK を初めて使用する場合は、心配はいりません。
 | `displayedLocations` | オファー – > `displayed()` | さらに、オ `generateDisplayInteractionXdm` ァー方法を使用して、項目表示用の XDM を生成できます。 その後、Edge Network SDK の sendEvent API を使用して、追加の XDM、自由形式データを添付し、エクスペリエンスイベントをリモートに送信できます。 |
 | `clickedLocation` | オファー – > `tapped()` | さらに、オ `generateTapInteractionXdm` ァー方法を使用して、項目タップ用の XDM を生成できます。 その後、Edge Network SDK の sendEvent API を使用して、追加の XDM、自由形式データを添付し、エクスペリエンスイベントをリモートに送信できます。 |
 | `clearPrefetchCache` | `clearCachedPropositions` |  |
-| `resetExperience` |  | SDK`removeIdentity`Edge Network拡張機能の ID の API を使用して、訪問者 ID をEdge ネットワークに送信するのを停止します。 詳しくは、[removeIdentity API ドキュメント ](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity) を参照してください。 <br><br> メモ：Mobile Core の `resetIdentities` API は、Experience CloudID （ECID）を含む、SDK に保存されているすべての ID をクリアするので、慎重に使用する必要があります。 |
-| `getSessionId` |  | 応答ハンドル `state:store`、セッション関連の情報を保持します。 Edge network extension は、期限切れでないステートストア項目を後続のリクエストに添付することで、この機能を管理するのに役立ちます。 |
-| `setSessionId` |  | 応答ハンドル `state:store`、セッション関連の情報を保持します。 Edge network extension は、期限切れでないステートストア項目を後続のリクエストに添付することで、この機能を管理するのに役立ちます。 |
+| `resetExperience` | 該当なし | SDK`removeIdentity`Edge Network拡張機能の ID の API を使用して、訪問者 ID をEdge ネットワークに送信するのを停止します。 詳しくは、[removeIdentity API ドキュメント ](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity) を参照してください。 <br><br> メモ：Mobile Core の `resetIdentities` API は、Experience CloudID （ECID）を含む、SDK に保存されているすべての ID をクリアするので、慎重に使用する必要があります。 |
+| `getSessionId` | 該当なし | 応答ハンドル `state:store`、セッション関連の情報を保持します。 Edge network extension は、期限切れでないステートストア項目を後続のリクエストに添付することで、この機能を管理するのに役立ちます。 |
+| `setSessionId` | 該当なし | 応答ハンドル `state:store`、セッション関連の情報を保持します。 Edge network extension は、期限切れでないステートストア項目を後続のリクエストに添付することで、この機能を管理するのに役立ちます。 |
 | `getThirdPartyId` | 該当なし | Edge Network拡張機能の ID から updateIdentities API を使用して、サードパーティ ID の値を指定します。 次に、データストリームでサードパーティ ID 名前空間を設定します。 詳しくは、[Target サードパーティ ID モバイルのドキュメント ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id) を参照してください。 |
 | `setThirdPartyId` | 該当なし | Edge Network拡張機能の ID から updateIdentities API を使用して、サードパーティ ID の値を指定します。 次に、データストリームでサードパーティ ID 名前空間を設定します。 詳しくは、[Target サードパーティ ID モバイルのドキュメント ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id) を参照してください。 |
-| `getTntId` |  | 応答ハンドル `locationHint:result`、Target の場所のヒント情報を保持します。 Target Edge が Experience Edgeと共存することを前提としています。<br> <br>Edge ネットワーク拡張機能は、EdgeNetwork の場所のヒントを使用して、要求の送信先となるEdge ネットワーク クラスターを判断します。 SDK （ハイブリッドアプリ）全体でEdgeのネットワーク場所のヒントを共有するには、Edge Network拡張機能の `getLocationHint` および `setLocationHint` API を使用します。 詳しくは、[`getLocationHint` API ドキュメント ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint) を参照してください。 |
-| `setTntId` |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `getTntId` | 該当なし | 応答ハンドル `locationHint:result`、Target の場所のヒント情報を保持します。 Target Edge が Experience Edgeと共存することを前提としています。<br> <br>Edge ネットワーク拡張機能は、EdgeNetwork の場所のヒントを使用して、要求の送信先となるEdge ネットワーク クラスターを判断します。 SDK （ハイブリッドアプリ）全体でEdgeのネットワーク場所のヒントを共有するには、Edge Network拡張機能の `getLocationHint` および `setLocationHint` API を使用します。 詳しくは、[`getLocationHint` API ドキュメント ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint) を参照してください。 |
+| `setTntId` | 該当なし | 応答ハンドル `locationHint:result`、Target の場所のヒント情報を保持します。 Target Edge が Experience Edgeと共存することを前提としています。<br> <br>Edge ネットワーク拡張機能は、EdgeNetwork の場所のヒントを使用して、要求の送信先となるEdge ネットワーク クラスターを判断します。 SDK （ハイブリッドアプリ）全体でEdgeのネットワーク場所のヒントを共有するには、Edge Network拡張機能の `getLocationHint` および `setLocationHint` API を使用します。 詳しくは、[`getLocationHint` API ドキュメント ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint) を参照してください。 |
 
 ## Target 拡張機能の設定と Decisioning 拡張機能の同等の機能
 
-Target 拡張機能は、で様々な設定を指定してダウンロードできます。
+Target 拡張機能には、Decisioning 拡張機能を使用した [ 設定可能な ](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) 設定 [ データストリームで設定 ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup) があります。
 
-| ターゲット拡張機能 | Decisioning 拡張機能 |
-| --- | --- | 
-| |  |
+| ターゲット拡張機能 | Decisioning 拡張機能 | メモ |
+| --- | --- | --- | 
+| クライアントコード | 該当なし | IMS 組織の詳細を使用して、Edge によって自動的に設定されます |
+| 環境 ID | ターゲット環境 ID | データストリームで設定済み |
+| Target Workspace プロパティ | プロパティトークン | データストリームで設定済み |
+| タイムアウト | 設定可能ではありません | Decisioning 拡張機能のタイムアウトは 10 秒です |
+| Server Domain | Edge Networkドメイン | Adobe Experience Platform Edge Network拡張機能で設定 |
 
+>[!IMPORTANT]
+>
+> アプリコードを Decisioning 拡張機能に移行した後も、Target 拡張機能の設定を保持します。 これにより、まだアプリを更新していないユーザーに対しても、Target が引き続き機能するようになります。
 
-## システム図の比較
+## 意思決定拡張機能のシステム図
 
-次の図は、Adobe Journey Optimizer - Decisioning 拡張機能を使用した Target 実装とAdobe Target拡張機能を使用した実装の間のデータフローの違いを理解するのに役立ちます。
+次の図は、Adobe Journey Optimizer - Decisioning 拡張機能を使用したデータフローを理解するのに役立ちます。
 
-### ターゲット拡張機能のシステム図
-
-
-
-### 意思決定拡張機能のシステム図
-
-
+![ クライアントサイド Mobile SDK を使用したAdobe Target Edge Decisioning](assets/diagram.png)
 
 
 >[!NOTE]
