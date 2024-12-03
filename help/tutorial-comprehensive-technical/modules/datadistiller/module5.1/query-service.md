@@ -4,16 +4,14 @@ description: クエリサービス
 kt: 5342
 doc-type: tutorial
 exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
 
 # 5.1 クエリサービス
-
-**著者：[Marc Meewis](https://www.linkedin.com/in/marcmeewis/)、[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 このモジュールでは、Adobe Experience Platform クエリサービスの実践プレビューを取得します。 クエリサービスを使用すると、すべてのAdobe Experience Cloud アプリケーションデータにわたってオムニチャネルクエリを実行し、Adobe Campaign、Analytics、Audience Manager、Target、Advertising CloudおよびAdobe Experience Platformに読み込まれた/挿入されたその他の顧客データを結合して分析できます。
 
@@ -45,35 +43,35 @@ Web インタラクションデータ、コールセンターインタラクシ�
 
 ## 演習
 
-[5.1.0 前提条件](./ex0.md)
+[5.1.1 前提条件](./ex1.md)
 
 このイネーブルメント演習では、クエリを実行するために PSQL をインストールする必要があります。 オペレーティングシステムに応じて、Microsoft Power BIまたは Tableau をインストールする必要があります。 Windows ユーザーは、Power BIまたは Tableau から選択できます。 Macのユーザーは、Tableau をインストールする必要があります。
 
-[5.1.1 はじめに](./ex1.md)
+[5.1.2 はじめに](./ex2.md)
 
 この演習では、Adobe Experience Platform クエリサービスのユーザーインターフェイスを探索し、データセットについて学び、クエリを見つけて、最後に PSQL からの接続を設定します。
 
-[5.1.2 クエリサービスの使用](./ex2.md)
+[5.1.3 クエリサービスの使用](./ex3.md)
 
 この演習では、基本的なクエリサービス構文について説明し、クエリ内の XDM スキーマの属性を特定できます。
 
-[5.1.3 クエリ、クエリ、クエリ…およびチャーン分析](./ex3.md)
+[5.1.4 クエリ、クエリ、クエリ…およびチャーン分析](./ex4.md)
 
 この演習では、クエリを実行し、チャーン分析を行いながらAdobe定義関数について学びます。 この作業の最後に、Microsoft データで使用するPower BIセットを準備するクエリを作成します。
 
-[5.1.4 クエリからのデータセットの生成](./ex4.md)
+[5.1.5 クエリからのデータセットの生成](./ex5.md)
 
 この演習では、前の演習で実行したクエリからデータセットを生成し、次の演習でこのデータセットを使用します。
 
-[5.1.5 クエリサービスとPower BI](./ex5.md)
+[5.1.6 クエリサービスとPower BI](./ex6.md)
 
 この演習では、Power BIをAdobe Experience Platformとクエリサービスに接続して、Callcenter インタラクション分析を実行します。
 
-[5.1.6 クエリサービスと Tableau](./ex6.md)
+[5.1.7 クエリサービスと Tableau](./ex7.md)
 
 この演習では、Tableau をAdobe Experience Platformとクエリサービスに接続して、Callcenter Interaction Analysis を実行します。
 
-[5.1.7 クエリサービス API](./ex7.md)
+[5.1.8 クエリサービス API](./ex8.md)
 
 この演習では、Query Service API を使用して、クエリテンプレートとクエリスケジュールを管理します。
 

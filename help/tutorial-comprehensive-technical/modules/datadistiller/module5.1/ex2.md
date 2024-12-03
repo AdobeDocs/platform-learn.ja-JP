@@ -1,177 +1,112 @@
 ---
-title: クエリサービス – クエリサービスの使用
-description: クエリサービス – クエリサービスの使用
+title: クエリサービス – はじめに
+description: クエリサービス – はじめに
 kt: 5342
-audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# 5.1.2 クエリサービスの使用
+# 5.1.2 はじめに
 
-## 目的
+## Adobe Experience Platform UI の理解
 
-- データセットの検索と調査
-- クエリでエクスペリエンスデータモデルオブジェクトと属性に対処する方法を説明します
+[Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-## コンテキスト
+![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-このページでは、PSQL を使用して使用可能なデータセットに関する情報を取得する方法、Experience Data Model （XDM）のクエリを記述する方法、およびクエリサービスとシティシグナルデータセットを使用して最初のシンプルなレポートクエリを記述する方法を説明します。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
-## 5.1.2.1 基本クエリ
+![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-このページでは、使用可能なデータセットに関する情報を取得する方法と、XDM データセットからクエリを使用してデータを適切に取得する方法について説明します。
 
-1 の初めにAdobe Experience Platformで調べたすべてのデータセットは、SQL インターフェイスを使用してテーブルとしてアクセスすることもできます。 これらのテーブルを一覧表示するには、**show tables;** コマンドを使用します。
+## プラットフォーム上のデータの調査
 
-**PSQL コマンドラインインターフェイス** で **show tables;** を実行します。 （コマンドをセミコロンで終了することを忘れないでください）。
+様々なチャネルからのデータの取り込みは、どのブランドにとっても難しい作業です。 この演習では、Citi Signal のお客様は、Citi Signal の Web サイトで Citi Signal とエンゲージしています。モバイルアプリでは、Citi Signal の POS システムで購入データが収集され、CRM とロイヤルティデータが保持されます。 Citi Signal は、Adobe AnalyticsとAdobeローンチを使用して、Web サイト、モバイルアプリ、POS システム全体でデータをキャプチャしているので、このデータはすでにAdobe Experience Platformに送られています。 まず、Adobe Experience Platformに既に存在する Citi Signal のすべてのデータを調べることから始めましょう。
 
-コマンド **show tables;** をコピーし、プロンプトで貼り付けます。
+左側のメニューの **データセット** に移動します。
 
-![command-prompt-show-tables.png](./images/command-prompt-show-tables.png)
+![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-次の結果が表示されます。
+Citi Signal はデータをAdobe Experience Platformにストリーミングする機能で、このデータは `Demo System - Event Dataset for Website (Global v1.1)` のデータセットで利用できます。 `Demo System - Event Dataset for Website` を検索します。
 
-```text
-aepenablementfy21:all=> show tables;
-                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
-------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
- demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
- demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
- demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
- demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
- demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
- demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
- demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
- demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
- journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
-```
+![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-コロンで、スペースバーを押して結果セットの次のページを表示するか、`q` と入力してコマンドプロンプトに戻します。
+Citi Signal の Callcenter インタラクションデータは、`Demo System - Event Dataset for Call Center (Global v1.1)` データセットでキャプチャされます。 検索ボックスで `Demo System - Event Dataset for Call Center` データを検索します。 データセットの名前をクリックして開きます。
 
-Platform のデータセットにはそれぞれ、対応するクエリサービステーブルがあります。 データセット UI を使用して、データセットのテーブルを見つけることができます。
+![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 
-![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
+データセットをクリックすると、取り込まれたバッチや失敗したバッチなど、データセットアクティビティの概要が表示されます。
 
-`demo_system_event_dataset_for_website_global_v1_1` テーブルは、`Demo System - Event Schema for Website (Global v1.1)` データセットに対応するクエリサービス テーブルです。
+![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
 
-製品の閲覧場所に関する情報をクエリするには、**geo** 情報を選択します。
+「**データセットをプレビュー**」をクリックして、データセットに保存されたデータのサンプル `Demo System - Event Dataset for Call Center (Global v1.1)` 表示します。 左のパネルには、このデータセットのスキーマ構造が表示されます。
 
-以下のステートメントをコピーして、**PSQL コマンドラインインターフェイス** のプロンプトで貼り付け、Enter キーを押します。
+![explore-interaction-dataset.png](./images/explore-interaction-dataset.png)
 
-```sql
-select placecontext.geo
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+**閉じる** ボタンをクリックして、**データセットをプレビュー** ウィンドウを閉じます。
 
-クエリ結果では、エクスペリエンスデータモデル（XDM）の列は、スカラータイプだけでなく、複雑なタイプである可能性があることがわかります。 上記のクエリでは、**commerce.productViews** が発生した地域の場所を特定します。 **commerce.productViews** を識別するには、**を使用して XDM モデルをナビゲートする必要があります。** （ドット）表記。
+## クエリサービスの概要
 
-```text
-aepenablementfy21:all=> select placecontext.geo
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
-                  geo                   
-----------------------------------------
- ("(57.4694803,-3.1269422)",Tullich,GB)
-(1 row)
-```
+Adobe Experience Platform クエリサービスにアクセスするには、左側のメニューで **クエリ** をクリックします。
 
-結果が 1 つの値ではなく、フラットなオブジェクトであることに注目してください。 **placecontext.geo** オブジェクトには、スキーマ、国、市区町村の 4 つの属性が含まれています。 また、オブジェクトが列として宣言されると、オブジェクト全体が文字列として返されます。 XDM スキーマは、使い慣れたものよりも複雑になる場合がありますが、非常に強力で、多くのソリューション、チャネル、ユースケースをサポートするように設計されています。
+![select-queries.png](./images/select-queries.png)
 
-オブジェクトの個々のプロパティを選択するには、**を使用します。** （ドット）表記。
+**ログ** に移動すると、クエリリスト ページが表示されます。このページには、この組織で実行されたすべてのクエリのリストが表示されます。最新のクエリが上部に表示されます。
 
-以下のステートメントをコピーして、**PSQL コマンドラインインターフェイス** のプロンプトで貼り付けます。
+![query-list.png](./images/query-list.png)
 
-```sql
-select placecontext.geo._schema.longitude
-      ,placecontext.geo._schema.latitude
-      ,placecontext.geo.city
-      ,placecontext.geo.countryCode
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+リストから任意の SQL クエリをクリックして、右側のパネルに表示される詳細を確認します。
 
-上記のクエリの結果は、次のようになります。
-結果は、設定された単純な値になりました。
+![click-sql-query.png](./images/click-sql-query.png)
 
-```text
-aepenablementfy21:all=> select placecontext.geo._schema.longitude
-aepenablementfy21:all->       ,placecontext.geo._schema.latitude
-aepenablementfy21:all->       ,placecontext.geo.city
-aepenablementfy21:all->       ,placecontext.geo.countryCode
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  |  latitude  |  city   | countrycode 
-------------+------------+---------+-------------
- -3.1269422 | 57.4694803 | Tullich | GB
-(1 row)
-```
+ウィンドウをスクロールしてクエリ全体を表示するか、下で強調表示されているアイコンをクリックしてクエリ全体をメモ帳にコピーできます。 現在は、クエリをコピーする必要はありません。
 
-特定のプロパティへのパスを簡単に取得できる方法があるので、心配する必要はありません。 次のパートでは、その方法を説明します。
+![click-copy-query.png](./images/click-copy-query.png)
 
-クエリを編集する必要があるので、まずエディターを開きます。
+実行されたクエリだけでなく、このユーザーインターフェイスではクエリから新しいデータセットを作成できます。 これらのデータセットは、Adobe Experience Platformのリアルタイム顧客プロファイルにリンクしたり、Adobe Experience Platform Data Science Workspaceの入力として使用したりできます。
 
-Windows の場合
+## PSQL クライアントをクエリサービスに接続
 
-Windows ツールバーの **検索** アイコンをクリックし、**検索** フィールドに **メモ帳** と入力して **メモ帳** をクリックします。
+クエリサービスは、PostgreSQL のドライバーを持つクライアントをサポートします。 ここでは、PSQL、コマンドラインインターフェイス、およびPower BIまたは Tableau を使用します。 PSQL に接続しましょう。
 
-![windows-start-notepad.png](./images/windows-start-notepad.png)
+**資格情報** をクリックします。
 
-Macについて
+![queries-select-configuration.png](./images/queries-select-configuration.png)
 
-[Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) をインストールするか、インストールされていない場合は別のテキストエディターを選択して使用し、手順に従ってください。 インストール後、Mac スポットライト検索を使用して **Brackets** を検索し、開きます。
+以下の画面が表示されます。 設定画面には、クエリサービスで認証するためのサーバー情報と資格情報が表示されます。 ここでは、PSQL 用の接続コマンドを含む画面の右側を見ていきます。 「コピー」ボタンをクリックして、コマンドをクリップボードにコピーします。
 
-次のステートメントをメモ帳または角括弧にコピーします。
+![copy-psql-connection.png](./images/copy-psql-connection.png)
 
-```sql
-select your_attribute_path_here
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Windows の場合：Windows キーを押して cmd と入力し、コマンドプロンプトの結果をクリックしてコマンドラインを開きます。
 
-Adobe Experience Platform UI に戻るか（ブラウザーで開く必要があります）、[https://platform.adobe.com](https://platform.adobe.com) に移動します。
+![open-command-prompt.png](./images/open-command-prompt.png)
 
-「**スキーマ**」を選択し、「**検索**」フィールドに `Demo System - Event Schema for Website (Global v1.1)` と入力して、リストから `Demo System - Event Schema for Website (Global v1.1) Schema` を選択します。
+macOSの場合：spotlight 検索を使用して terminal.app を開きます。
 
-![browse-schema.png](./images/browse-schema.png)
+![open-terminal-osx.png](./images/open-terminal-osx.png)
 
-オブジェクトをクリックして、**デモシステム - web サイトのイベントスキーマ（グローバル v1.1）** の XDM モデルを調べます。 **placecontext**、**geo**、**schema** のツリーを展開します。 実際の属性 **経度** を選択すると、ハイライトされた赤いボックスに完全なパスが表示されます。 属性のパスをコピーするには、パスをコピーアイコンをクリックします。
+クエリサービス UI からコピーした connect コマンドを貼り付け、コマンドプロンプトウィンドウで enter キーを押します。
 
-![explore-schema-for-path.png](./images/explore-schema-for-path.png)
+Windows:
 
-メモ帳/角括弧に切り替え、最初の行から **your_attribute_path_here** を削除します。 最初の行の **選択** の後にカーソルを置き、ペーストします（Ctrl-V）。
+![command-prompt-connected.png](./images/command-prompt-connected.png)
 
-変更した文をメモ帳や角括弧からコピーし、**PSQL コマンドラインインターフェイス** のプロンプトで貼り付けて、Enter キーを押します。
+MacOS:
 
-結果は次のようになります。
+![command-prompt-paste-osx.png](./images/command-prompt-paste-osx.png)
 
-```text
-aepenablementfy21:all=> select placeContext.geo._schema.longitude
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  
-------------
- -3.1269422
-```
+これで、PSQL を使用してクエリサービスに接続しました。
 
-次の手順：[5.1.3 クエリ、クエリ、クエリ…およびチャーン分析 ](./ex3.md)
+次の演習では、このウィンドウとかなりの相互作用があります。 **PSQL コマンドラインインターフェイス** と呼びます。
+
+これで、クエリの送信を開始する準備が整いました。
+
+次の手順：[5.1.3 クエリサービスの使用 ](./ex3.md)
 
 [モジュール 5.1 に戻る](./query-service.md)
 

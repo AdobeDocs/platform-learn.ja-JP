@@ -4,10 +4,10 @@ description: 顧客 AI - データ準備（取り込み）
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 5%
+source-wordcount: '698'
+ht-degree: 4%
 
 ---
 
@@ -53,33 +53,20 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 次の **フィールドグループ** を検索して選択し、このスキーマに追加します。
 
 - コンシューマーエクスペリエンスイベント
-- エンドユーザー ID の詳細
+
+![ 新しい CEE スキーマ ](./images/cee1.png)
+
+- identityMap
 
 「**フィールドグループを追加**」をクリックします。
 
-![ 新しい CEE スキーマ ](./images/cee.png)
+![ 新しい CEE スキーマ ](./images/cee2.png)
 
-その後、これが表示されます。 フィールドグループ **エンドユーザー ID 詳細** をクリックします。
-
-![ 新しいスキーマの作成 ](./images/eui1.png)
-
-フィールド **endUserIDs に移動します。_experience.emailid.id**.
-
-![ 新しいスキーマの作成 ](./images/eui2.png)
-
-**endUserIDs フィールドの右側のメニューで以下を行います。_experience.emailid.id**、下にスクロールして **ID** のチェックボックスをオンにし、**プライマリ ID** のチェックボックスをオンにして、「**メール** の **ID 名前空間** をオンにします。 「**適用**」をクリックします。
-
-![ 新しいスキーマの作成 ](./images/eui3.png)
-
-フィールド **endUserIDs に移動します。_experience.mcid.id**. 「**ID**」のチェックボックスをオンにして、「**ECID**」の「**ID 名前空間**」を選択します。 「**適用**」をクリックします。
-
-![ 新しいスキーマの作成 ](./images/eui4.png)
-
-これで完了です。 次に、スキーマの名前を選択します。 これで、「プロファイル **切り替えをクリックして、** プロファイル **のスキーマを有効に** ます。
+その後、これが表示されます。 次に、スキーマの名前を選択します。 これで、「プロファイル **切り替えをクリックして、** プロファイル **のスキーマを有効に** ます。
 
 ![ 新しいスキーマの作成 ](./images/xdmee3.png)
 
-その後、これが表示されます。 **有効にする** をクリックします。
+その後、これが表示されます。 **このスキーマのデータには、identityMap フィールドにプライマリ ID が含まれます。**。**有効にする** をクリックします。
 
 ![ 新しいスキーマの作成 ](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ## エクスペリエンスイベントテストデータのダウンロード
 
-**スキーマ** と **データセット** を設定したら、エクスペリエンスイベントデータを取り込む準備が整います。 顧客 AI には少なくとも **** 2 四半期にわたるデータが必要なので、外部で準備されたデータを取り込む必要があります。
+**スキーマ** と **データセット** を設定したら、エクスペリエンスイベントデータを取り込む準備が整います。 顧客 AI には特定のデータ要件があるので、外部で準備されたデータを取り込む必要があります。
 
-エクスペリエンスイベント用に作成するデータは、[ コンシューマーエクスペリエンスイベント XDM Mixin](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) の要件とスキーマに準拠している必要があります。
+この演習のエクスペリエンスイベント用に準備するデータは、[ 消費者エクスペリエンスイベント XDM フィールドグループ ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) の要件とスキーマに準拠している必要があります。
 
-サンプルデータを含んだファイルを次の場所からダウンロードしてください：[https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data)。 「**ダウンロード**」ボタンをクリックします。
+デモデータが入った zip ファイルを [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip) からダウンロードしてください。
 
-![データセット](./images/dsn1.png)
-
-または、上記のリンクにアクセスできない場合は、次の場所からもファイルをダウンロードできます：[https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip)。
-
-これで、**retail-v1-dec2020-xl.json.zip** という名前のファイルをダウンロードしました。 ファイルをコンピューターのデスクトップに配置し、展開すると、**retail-v1.json** という名前のファイルが表示されます。 このファイルは、次の演習で必要になります。
+これで、**CUSTOM-CAI-EVENTS-WEB.zip** という名前のファイルをダウンロードしました。 ファイルをコンピューターのデスクトップに配置し、展開すると、**CUSTOM-CAI-EVENTS-WEB** という名前のフォルダーが表示されます。
 
 ![データセット](./images/ingest.png)
+
+このフォルダーには、複数のシーケンス付き JSON ファイルがあり、次の演習でこれらをすべて取り込む必要があります。
+
+![データセット](./images/ingest1a.png)
 
 ## エクスペリエンスイベントテストデータの取り込み
 
@@ -145,9 +132,11 @@ Adobe Experience Platformで、**データセット** に移動し、データ�
 
 ![データセット](./images/ingest2.png)
 
-ポップアップでファイル **retail-v1.json** を選択し、「**開く**」をクリックします。
+ポップアップで、「**WEBSITE-EE-5.json**」までのファイル **WEBSITE-EE-1.json** を選択し、「**開く**」をクリックします。
 
 ![データセット](./images/ingest3.png)
+
+ファイル **WEBSITE-EE-6.json** と **WEBSITE-EE-7.json** に対して、この取り込みプロセスを繰り返します。
 
 その後、データが読み込まれ、新しいバッチが **読み込み中** 状態で作成されます。 ファイルがアップロードされるまで、このページから移動しないでください。
 
@@ -159,11 +148,9 @@ Adobe Experience Platformで、**データセット** に移動し、データ�
 
 データの取り込みと処理には、10～20 分かかる場合があります。
 
-データの取り込みに成功すると、バッチステータスが **成功** に変わります。
+データの取り込みに成功すると、様々なアップロードのバッチステータスが **成功** に変わります。
 
 ![データセット](./images/ingest7.png)
-
-![データセット](./images/ingest8.png)
 
 次の手順：[2.2.2 顧客 AI – 新しいインスタンスの作成（設定） ](./ex2.md)
 

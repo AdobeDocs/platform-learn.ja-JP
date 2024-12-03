@@ -5,9 +5,9 @@ user-guide-description: サードパーティシステムへの接続を含む�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
+source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '913'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 # Adobe Experience Platform の包括的な技術チュートリアル {#tutorial-comprehensive-technical}
 
 + [チュートリアルの概要](/help/tutorial-comprehensive-technical/overview.md)
++ [完了](/help/tutorial-comprehensive-technical/completion.md)
 
 + はじめに {#gettingstarted}
    + はじめに {#gettingstarted}
@@ -27,7 +28,7 @@ ht-degree: 4%
       + [モバイルアプリの使用](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 件のデータ収集 {#datacollection}
-   + 1.1 Adobe Experience Platform Data Collection と Web SDK Extension {#module11}
+   + 1.1 Adobe Experience Platform Data Collection および Web SDK {#module11}
       + [概要](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Adobe Experience Platformのデータ収集について](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2 Edge Network、データストリーム、およびサーバサイドのデータ収集](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -37,7 +38,7 @@ ht-degree: 4%
       + [1.1.6 Adobe Targetの実装](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
       + [1.1.7 Adobe Experience Platformにおける XDM スキーマの要件](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-   + 1.2 - データ取得 {#module12}
+   + 1.2 データ取得 {#module12}
       + [概要](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
       + [1.2.1 Web サイトを参照する](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
       + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)
@@ -45,7 +46,7 @@ ht-degree: 4%
       + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex4.md)
       + [1.2.5 データランディングゾーン](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex5.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
-   + 1.3 - Federated Audience Composition {#module13}
+   + 1.3 Federated Audience Composition {#module13}
       + [概要](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
       + [1.3.1 Snowflakeアカウントの設定](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 スキーマ、データモデル、リンクの作成](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
@@ -137,7 +138,7 @@ ht-degree: 4%
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}
-   + 4.1 Customer Journey Analytics:Adobe Experience Platform {#module41} 上にAnalysis Workspaceを使用してダッシュボードを作成する
+   + 4.1 Customer Journey Analytics:Analysis Workspace {#module41} を使用したダッシュボードの構築
       + [概要](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2 Customer Journey AnalyticsでのAdobe Experience Platform データセットの接続](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -157,16 +158,16 @@ ht-degree: 4%
 + 5 Data Distiller {#datadistiller}
    + 5.1 クエリサービス {#module51}
       + [概要](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
-      + [5.1.0 前提条件](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex0.md)
-      + [5.1.1 はじめに](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
-      + [5.1.2 クエリサービスの使用](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
-      + [5.1.3 クエリ、クエリ、クエリ…およびチャーン分析](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
-      + [5.1.4 クエリからのデータセットの生成](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
-      + [5.1.5 クエリサービスとPower BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-      + [5.1.6 クエリサービスと Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
-      + [5.1.7 クエリサービス API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.1 前提条件](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
+      + [5.1.2 はじめに](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
+      + [5.1.3 クエリサービスの使用](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
+      + [5.1.4 クエリ、クエリ、クエリ…およびチャーン分析](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
+      + [5.1.5 クエリからのデータセットの生成](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
+      + [5.1.6 クエリサービスとPower BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+      + [5.1.7 クエリサービスと Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.8 クエリサービス API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
-
++ [セットアップ](/help/tutorial-comprehensive-technical/setup.md)
 
 

@@ -1,62 +1,77 @@
 ---
-title: クエリサービス - Tableau でのデータセットの調査
-description: クエリサービス - Tableau でのデータセットの調査
+title: クエリサービス – データを使用したPower BIセットの調査
+description: クエリサービス – データを使用したPower BIセットの調査
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# 5.1.6 クエリサービスと Tableau
+# 5.1.6 クエリサービスとPower BI
 
-Tableau を開きます。
+Microsoft Power BIデスクトップを開きます。
 
-![start-tableau.png](./images/start-tableau.png)
+![start-power-bi.png](./images/start-power-bi.png)
 
-**サーバーへの接続** で **PostgreSQL** を選択します。
+**データを取得** をクリックします。
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![power-bi-get-data.png](./images/power-bi-get-data.png)
+
+**postgres** （1）を検索し、リストから **Postgres** （2）を選択し、**接続** （3）を選択します。
+
+![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
 
 Adobe Experience Platform、**クエリ**、**資格情報** に移動します。
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-Adobe Experience Platformの **資格情報** ページから **Host** をコピーし、**Server** フィールドに貼り付け、**Database** をコピーして、Tableau の **Database** フィールドに貼り付け、**Port** をコピーして、Tableau の **Port** フィールドに貼り付けます。**Username** と **Password** に対しても同じ操作を行います。 次に、「**ログイン**」をクリックします。
+Adobe Experience Platformの **資格情報** ページから **ホスト** をコピーし、「**サーバー**」フィールドに貼り付け、**データベース** をコピーして、PowerBI の「**データベース**」フィールドに貼り付け、「OK」（2）をクリックします。
 
-ログイン：
+>[!IMPORTANT]
+>
+>クエリサービスでは現在、デフォルトの PostgreSQL ポート 5432 を使用していないので、サーバー値の末尾にポート **:80** を含めてください。
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 
-検索（1）をクリックして **ldap** を検索フィールドに入力し、結果セットからテーブルを特定して（3）そのテーブルを **ここにテーブルをドラッグ** という名前の場所にドラッグします。 終了したら、**シート 1** （3）をクリックします。
+次のダイアログで、Adobe Experience Platformのクエリの **資格情報** にあるユーザー名とパスワードを、ユーザー名とパスワードに入力します。
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
-地図上でデータを視覚化するには、経度と緯度を寸法に変換する必要があります。 **測定** で「**緯度** （1）」を選択し、フィールドのドロップダウンを開いて、「**Dimensionに変換** （2）」を選択します。 「経度 **の測定に対しても同じ操作を行** ます。
+Navigator ダイアログで、検索フィールドに **LDAP** を入力して（1）、CTAS データセットを検索し、それぞれの横にあるチェックボックスをオンにします（2）。 次に、Load （3）をクリックします。
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
 
-**経度** メジャーを **列** にドラッグし、**緯度** メジャーを **行** にドラッグします。 自動的に **ベルギー** の地図が表示され、データセット内の都市を表す小さなドットが表示されます。
+**レポート** タブ（1）が選択されていることを確認します。
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![power-bi-report-tab.png](./images/power-bi-report-tab.png)
 
-**メジャー名** （1）を選択し、ドロップダウンを開いて **シートに追加** （2）を選択します。
+マップ（1）を選択し、レポートキャンバスに追加したら、マップを拡大します（2）。
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![power-bi-select-map.png](./images/power-bi-select-map.png)
 
-さまざまなサイズのドットを含むマップが表示されます。 このサイズは、その特定の都市のコールセンターインタラクションの数を示します。 ドットのサイズを変更するには、右側のパネルに移動して **値を測定** を開きます（ドロップダウンアイコンを使用）。 ドロップダウンリストから **サイズを編集** を選択します。 さまざまなサイズで遊び回ります。
+次に、測定とディメンションを定義する必要があります。それには、次に示すように、「**フィールド**」セクションから対応するプレースホルダー（「**ビジュアライゼーション**」の下）にフィールドをドラッグします。
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
 
-**通話トピック** ごとのデータをさらに表示するには、（1） **通話トピック** ディメンションを **ページ** にドラッグします。 画面の右側にある **通話トピック** （2）を使用して、様々な **通話トピック** を移動します。
+測定として、**customerId** のカウントを使用します。 「**フィールド**」セクションの「**crmid**」フィールドを「**サイズ**」プレースホルダーにドラッグします。
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
+
+最後に、**callTopic** 分析を行うには、「**callTopic**」フィールドを「**ページレベルフィルター**」プレースホルダーにドラッグします（「**ビジュアライゼーション**」セクションでスクロールする必要がある場合があります）。
+
+![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
+
+**callTopics** を選択/選択解除して調査します：
+
+![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
 これで、この演習が完了しました。
 
-次の手順：[5.1.7 クエリサービス API](./ex7.md)
+次の手順：[5.1.8 クエリサービス API](./ex8.md)
 
 [モジュール 5.1 に戻る](./query-service.md)
 
