@@ -4,9 +4,9 @@ description: クエリサービス - Tableau でのデータセットの調査
 kt: 5342
 doc-type: tutorial
 exl-id: 29525740-fe1f-4770-bcc9-f2ad499a2cb5
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,45 +15,67 @@ ht-degree: 0%
 
 Tableau を開きます。
 
-![start-tableau.png](./images/start-tableau.png)
+![start-tableau.png](./images/starttableau.png)
 
-**サーバーへの接続** で **PostgreSQL** を選択します。
+**サーバーへの接続** で、[ その他 **をクリックしてから** PostgreSQL **をクリックし** す。
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![tableau-connect-postgress.png](./images/tableauconnectpostgress.png)
+
+まだ Tableau で PostgeSQL を使用していない場合は、次のように表示される場合があります。 **ドライバのダウンロード** をクリックします。
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress1.png)
+
+手順に従って、PostgreSQL ドライバーをダウンロードしてインストールします。
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress2.png)
+
+ドライバーのインストールが完了したら、Tableau Desktop を終了して再起動します。 再起動が完了したら、もう一度 **Connect To a Server** に移動して **More** をクリックし、もう一度 **PostgreSQL** をクリックします。
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress.png)
+
+その後、これが表示されます。
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress3.png)
 
 Adobe Experience Platform、**クエリ**、**資格情報** に移動します。
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+![query-service-credentials.png](./images/queryservicecredentials.png)
 
 Adobe Experience Platformの **資格情報** ページから **Host** をコピーし、**Server** フィールドに貼り付け、**Database** をコピーして、Tableau の **Database** フィールドに貼り付け、**Port** をコピーして、Tableau の **Port** フィールドに貼り付けます。**Username** と **Password** に対しても同じ操作を行います。 次に、「**ログイン**」をクリックします。
 
-ログイン：
+![tableau-connection-dialog.png](./images/tableauconnectiondialog.png)
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+使用可能なテーブルのリストで、前の演習で作成したテーブル（`--aepUserLdap--_callcenter_interaction_analysis`）を見つけます。 キャンバスにドラッグします。
 
-検索（1）をクリックして **ldap** を検索フィールドに入力し、結果セットからテーブルを特定して（3）そのテーブルを **ここにテーブルをドラッグ** という名前の場所にドラッグします。 終了したら、**シート 1** （3）をクリックします。
+![tableau-drag-table.png](./images/tableaudragtable.png)
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+その後、これが表示されます。 **今すぐ更新** をクリックします。
 
-地図上でデータを視覚化するには、経度と緯度を寸法に変換する必要があります。 **測定** で「**緯度** （1）」を選択し、フィールドのドロップダウンを開いて、「**Dimensionに変換** （2）」を選択します。 「経度 **の測定に対しても同じ操作を行** ます。
+![tableau-drag-table.png](./images/tableaudragtable1.png)
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+その後、AEP のデータが Tableau で使用できるようになります。 **シート 1** をクリックして、データの操作を開始します。
+
+![tableau-drag-table.png](./images/tableaudragtable2.png)
+
+マップ上のデータを視覚化するには、経度と緯度を寸法に変換する必要があります。 **メジャー** で **緯度** を右クリックし、メニューで **Dimensionに変換** を選択します。 「経度 **の測定に対しても同じ操作を行** ます。
+
+![tableau-convert-dimension.png](./images/tableauconvertdimension.png)
 
 **経度** メジャーを **列** にドラッグし、**緯度** メジャーを **行** にドラッグします。 自動的に **ベルギー** の地図が表示され、データセット内の都市を表す小さなドットが表示されます。
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![tableau-drag-lon-lat.png](./images/tableaudraglonlat.png)
 
-**メジャー名** （1）を選択し、ドロップダウンを開いて **シートに追加** （2）を選択します。
+**メジャー名** を選択し、「**シートに追加**」をクリックします。
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![tableau-select-measure-names.png](./images/selectmeasurenames.png)
 
 さまざまなサイズのドットを含むマップが表示されます。 このサイズは、その特定の都市のコールセンターインタラクションの数を示します。 ドットのサイズを変更するには、右側のパネルに移動して **値を測定** を開きます（ドロップダウンアイコンを使用）。 ドロップダウンリストから **サイズを編集** を選択します。 さまざまなサイズで遊び回ります。
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![tableau-vary-size-dots.png](./images/tableauvarysizedots.png)
 
-**通話トピック** ごとのデータをさらに表示するには、（1） **通話トピック** ディメンションを **ページ** にドラッグします。 画面の右側にある **通話トピック** （2）を使用して、様々な **通話トピック** を移動します。
+**通話トピック** ごとのデータをさらに表示するには、**通話トピック** ディメンションを **ページ** にドラッグします。 画面の右側にある **通話トピック** を使用して、様々な **通話トピック** を移動します。
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![tableau-call-topic-navigation.png](./images/tableaucalltopicnavigation.png)
 
 これで、この演習が完了しました。
 

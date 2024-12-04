@@ -4,9 +4,9 @@ description: クエリサービス – 前提条件
 kt: 5342
 doc-type: tutorial
 exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 Adobe Experience Platformのドキュメントに記載されている手順に従って、psql クライアントをインストールします。
 [PSQL インストールガイド ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+
+PSQL をインストールしたら、ターミナルウィンドウで次のコマンドを実行して **PATH** を更新する必要が生じる場合があります。
+
+macOSの場合（以下のコマンドの XX を、インストールした PSQL のバージョン番号に置き換えます）:
+
+`export PATH=/Library/PostgreSQL/XX/bin:$PATH`
 
 ## Power BIのインストール
 

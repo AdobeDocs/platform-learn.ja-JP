@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 exl-id: 31c14a9b-cb62-48ab-815c-caa6e832794f
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -29,40 +29,41 @@ ht-degree: 0%
 
 1 の初めにAdobe Experience Platformで調べたすべてのデータセットは、SQL インターフェイスを使用してテーブルとしてアクセスすることもできます。 これらのテーブルを一覧表示するには、**show tables;** コマンドを使用します。
 
-**PSQL コマンドラインインターフェイス** で **show tables;** を実行します。 （コマンドをセミコロンで終了することを忘れないでください）。
+**PSQL コマンドラインインターフェイス** で `show tables;` を実行します。 （コマンドをセミコロンで終了することを忘れないでください）。
 
-コマンド **show tables;** をコピーし、プロンプトで貼り付けます。
+コマンド `show tables;` をコピーし、プロンプトで貼り付けます。
 
-![command-prompt-show-tables.png](./images/command-prompt-show-tables.png)
+![command-prompt-show-tables.png](./images/commandpromptshowtables.png)
 
 次の結果が表示されます。
 
 ```text
-aepenablementfy21:all=> show tables;
-                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
-------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
- demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
- demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
- demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
- demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
- demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
- demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
- demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
- demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
- journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
+tech-insiders:all=> show tables;
+                               name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
+------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
+ ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset                  :
+                               name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
+------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
+ ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset   
 ```
 
 コロンで、スペースバーを押して結果セットの次のページを表示するか、`q` と入力してコマンドプロンプトに戻します。
 
-Platform のデータセットにはそれぞれ、対応するクエリサービステーブルがあります。 データセット UI を使用して、データセットのテーブルを見つけることができます。
+AEP の各データセットには、対応するクエリサービステーブルがあります。 データセット UI でデータセットのテーブルを見つけることができます。
 
-![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
+![ui-dataset-tablename.png](./images/uidatasettablename.png)
 
 `demo_system_event_dataset_for_website_global_v1_1` テーブルは、`Demo System - Event Schema for Website (Global v1.1)` データセットに対応するクエリサービス テーブルです。
 
 製品の閲覧場所に関する情報をクエリするには、**geo** 情報を選択します。
 
-以下のステートメントをコピーして、**PSQL コマンドラインインターフェイス** のプロンプトで貼り付け、Enter キーを押します。
+以下のクエリをコピーして、**PSQL コマンドラインインターフェイス** のプロンプトで貼り付け、Enter キーを押します。
 
 ```sql
 select placecontext.geo
@@ -75,14 +76,14 @@ limit 1;
 クエリ結果では、エクスペリエンスデータモデル（XDM）の列は、スカラータイプだけでなく、複雑なタイプである可能性があることがわかります。 上記のクエリでは、**commerce.productViews** が発生した地域の場所を特定します。 **commerce.productViews** を識別するには、**を使用して XDM モデルをナビゲートする必要があります。** （ドット）表記。
 
 ```text
-aepenablementfy21:all=> select placecontext.geo
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
-                  geo                   
-----------------------------------------
- ("(57.4694803,-3.1269422)",Tullich,GB)
+tech-insiders:all=> select placecontext.geo
+from   demo_system_event_dataset_for_website_global_v1_1
+where  eventType = 'commerce.productViews'
+and placecontext.geo.countryCode <> ''
+limit 1;
+                 geo                  
+--------------------------------------
+ ("(51.59119,-1.407848)",Charlton,GB)
 (1 row)
 ```
 
@@ -107,17 +108,17 @@ limit 1;
 結果は、設定された単純な値になりました。
 
 ```text
-aepenablementfy21:all=> select placecontext.geo._schema.longitude
-aepenablementfy21:all->       ,placecontext.geo._schema.latitude
-aepenablementfy21:all->       ,placecontext.geo.city
-aepenablementfy21:all->       ,placecontext.geo.countryCode
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  |  latitude  |  city   | countrycode 
-------------+------------+---------+-------------
- -3.1269422 | 57.4694803 | Tullich | GB
+tech-insiders:all=> select placecontext.geo._schema.longitude
+      ,placecontext.geo._schema.latitude
+      ,placecontext.geo.city
+      ,placecontext.geo.countryCode
+from   demo_system_event_dataset_for_website_global_v1_1
+where  eventType = 'commerce.productViews'
+and placecontext.geo.countryCode <> ''
+limit 1;
+ longitude | latitude |   city   | countrycode 
+-----------+----------+----------+-------------
+ -1.407848 | 51.59119 | Charlton | GB
 (1 row)
 ```
 
@@ -125,17 +126,11 @@ aepenablementfy21:all-> limit 1;
 
 クエリを編集する必要があるので、まずエディターを開きます。
 
-Windows の場合
+Windows: **メモ帳** を使用します
 
-Windows ツールバーの **検索** アイコンをクリックし、**検索** フィールドに **メモ帳** と入力して **メモ帳** をクリックします。
+Macの場合：任意のテキストエディターアプリをインストールして開きます。
 
-![windows-start-notepad.png](./images/windows-start-notepad.png)
-
-Macについて
-
-[Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) をインストールするか、インストールされていない場合は別のテキストエディターを選択して使用し、手順に従ってください。 インストール後、Mac スポットライト検索を使用して **Brackets** を検索し、開きます。
-
-次のステートメントをメモ帳または角括弧にコピーします。
+次のステートメントをテキストエディターにコピーします。
 
 ```sql
 select your_attribute_path_here
@@ -145,31 +140,34 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-Adobe Experience Platform UI に戻るか（ブラウザーで開く必要があります）、[https://platform.adobe.com](https://platform.adobe.com) に移動します。
+Adobe Experience Platform UI に戻るか（ブラウザーで開く必要があります）、[Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。
 
-「**スキーマ**」を選択し、「**検索**」フィールドに `Demo System - Event Schema for Website (Global v1.1)` と入力して、リストから `Demo System - Event Schema for Website (Global v1.1) Schema` を選択します。
+「**スキーマ**」を選択し、「**検索**」フィールドに `Demo System - Event Schema for Website` と入力し、クリックしてスキーマ `Demo System - Event Schema for Website (Global v1.1) Schema` を開きます。
 
-![browse-schema.png](./images/browse-schema.png)
+![browse-schema.png](./images/browseschema.png)
 
 オブジェクトをクリックして、**デモシステム - web サイトのイベントスキーマ（グローバル v1.1）** の XDM モデルを調べます。 **placecontext**、**geo**、**schema** のツリーを展開します。 実際の属性 **経度** を選択すると、ハイライトされた赤いボックスに完全なパスが表示されます。 属性のパスをコピーするには、パスをコピーアイコンをクリックします。
 
-![explore-schema-for-path.png](./images/explore-schema-for-path.png)
+![explore-schema-for-path.png](./images/exploreschemaforpath.png)
 
 メモ帳/角括弧に切り替え、最初の行から **your_attribute_path_here** を削除します。 最初の行の **選択** の後にカーソルを置き、ペーストします（Ctrl-V）。
 
-変更した文をメモ帳や角括弧からコピーし、**PSQL コマンドラインインターフェイス** のプロンプトで貼り付けて、Enter キーを押します。
+![explore-schema-for-path.png](./images/exploreschemaforpath1.png)
+
+変更した文をコピーして、**PSQL コマンドラインインターフェイス** のプロンプトで貼り付け、Enter キーを押します。
 
 結果は次のようになります。
 
 ```text
-aepenablementfy21:all=> select placeContext.geo._schema.longitude
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  
-------------
- -3.1269422
+tech-insiders:all=> select placeContext.geo._schema.longitude
+from   demo_system_event_dataset_for_website_global_v1_1
+where  eventType = 'commerce.productViews'
+and placecontext.geo.countryCode <> ''
+limit 1;
+ longitude 
+-----------
+ -1.407848
+(1 row)
 ```
 
 次の手順：[5.1.4 クエリ、クエリ、クエリ…およびチャーン分析 ](./ex4.md)
