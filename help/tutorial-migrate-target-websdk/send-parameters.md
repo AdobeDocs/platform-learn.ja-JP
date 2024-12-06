@@ -2,9 +2,9 @@
 title: パラメーターの送信 – Target を at.js 2.x から Web SDK に移行します
 description: Experience Platform Web SDK を使用して、mbox、プロファイル、エンティティパラメーターをAdobe Targetに送信する方法を説明します。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
+source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -306,7 +306,7 @@ targetPageParams = function() {
 
 `commerce` フィールドグループが `1` に設定されている場合、購入情報 `purchases.value`Target に渡されます。 注文 ID と注文合計は、`order` オブジェクトから自動的にマッピングされます。 `productListItems` 配列が存在する場合、`SKU` の値が `productPurchasedId` に使用されます。
 
-`sendEvent` コマンドを使用した Platform Web SDK の例：
+`sendEvent` を使用した Platform Web SDK の例：
 
 >[!BEGINTABS]
 
@@ -328,14 +328,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB タグ]
 
-タグでは、まず [!UICONTROL XDM object] データ要素を使用して XDM フィールドにマッピングします。
+タグでは、まず [!UICONTROL XDM オブジェクト ] データ要素を使用して、必須の XDM フィールド（JavaScriptの例を参照）およびオプションのカスタムスコープにマッピングします。
 
 ![XDM オブジェクトデータ要素の XDM フィールドへのマッピング ](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -345,6 +355,13 @@ alloy("sendEvent", {
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> 呼び出しを使用して Target 指標を増分するには、`_experience.decisioning.propositionEventType` を `display: 1` で設定する必要があります。
+
+>[!NOTE]
+>
+> Target 指標定義でカスタムの場所/mbox 名（例：`orderConfirmPage`）を使用する場合は、上の例のように、`_experience.decisioning.propositions` 配列にカスタム範囲を入力します。
 
 >[!NOTE]
 >
@@ -384,7 +401,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -407,6 +425,12 @@ alloy("sendEvent", {
 ![ データストリームで Target サードパーティ ID 名前空間を設定する ](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> Adobeでは、認証済み ID などの人物を表す名前空間をプライマリ ID として送信することをお勧めします。
+
+
 
 ## Platform Web SDK の例
 
@@ -458,7 +482,8 @@ alloy("sendEvent", {
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -534,7 +559,8 @@ alloy("sendEvent", {
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -550,7 +576,17 @@ alloy("sendEvent", {
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>
