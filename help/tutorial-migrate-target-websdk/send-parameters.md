@@ -2,9 +2,9 @@
 title: パラメーターの送信 – Target を at.js 2.x から Web SDK に移行します
 description: Experience Platform Web SDK を使用して、mbox、プロファイル、エンティティパラメーターをAdobe Targetに送信する方法を説明します。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
+source-git-commit: 0697c6d13272182432e11fdb9d84a752d39527b6
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -372,7 +372,7 @@ alloy("sendEvent", {
 
 Target では、単一の顧客 ID を使用して、デバイスやシステム間でプロファイルを同期できます。 at.js の場合、これは Target リクエストの `mbox3rdPartyId` として、または Customer ID サービスに送信される最初のExperience CloudID として設定できます。 at.js とは異なり、Platform Web SDK 実装では、複数の場合に `mbox3rdPartyId` として使用する顧客 ID を指定できます。 例えば、企業にグローバル顧客 ID があり、異なる事業部門の別々の顧客 ID がある場合、Target が使用する ID を設定できます。
 
-Target のクロスデバイスおよび顧客属性のユースケースでは、ID 同期を設定する手順がいくつかあります。
+クロスデバイス属性と顧客属性のユースケースでは、ID 同期を設定する手順がいくつかあります。
 
 1. データ収集または Platform の **[!UICONTROL ID]** 画面で、顧客 ID の **[!UICONTROL ID 名前空間]** を作成
 1. 顧客属性の **[!UICONTROL エイリアス]** が名前空間の **[!UICONTROL ID 記号]** と一致することを確認します
