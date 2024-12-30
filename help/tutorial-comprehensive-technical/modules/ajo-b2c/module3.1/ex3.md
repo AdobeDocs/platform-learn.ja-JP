@@ -1,125 +1,228 @@
 ---
-title: 設定 ID を更新し、ジャーニーをテストする
-description: 設定 ID を更新し、ジャーニーをテストする
+title: Journey Optimizer ジャーニーとメールメッセージの作成
+description: Journey Optimizer メールメッセージの作成
 kt: 5342
 doc-type: tutorial
 exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 0%
+source-wordcount: '1301'
+ht-degree: 5%
 
 ---
 
-# 3.1.3 データ収集プロパティを更新し、ジャーニーをテストする
+# 3.1.3 ジャーニー、フラグメント、メッセージを作成する
 
-## 3.1.3.1 データ収集プロパティの更新
+この演習では、ジャーニーと、デモ web サイトでアカウントが作成されたときにトリガーする必要があるメッセージを設定します。
 
-[Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
+[Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerにログインします。 **Journey Optimizer** をクリックします。
 
-これは、以前に表示したAdobe Experience Platform データ収集のプロパティページです。
+![ACOP](./images/acophome.png)
 
-![ プロパティページ ](./../../../modules/datacollection/module1.1/images/launch1.png)
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+![ACOP](./images/acoptriglp.png)
 
-![ 検索ボックス ](./../../../modules/datacollection/module1.1/images/property6.png)
+## 3.1.3.1 ジャーニーを作成する
 
-その後、これが表示されます。
+左のメニューで、「**ジャーニー**」をクリックします。次に、「**ジャーニーを作成**」をクリックして、新規のジャーニーを作成します。
 
-![Launch の設定 ](./images/rule1.png)
+![ACOP](./images/createjourney.png)
 
-左側のメニューで、**ルール** に移動し、ルールを検索します **プロファイルを登録**。 ルール **プロファイルを登録** をクリックして開きます。
+すると、空のジャーニー画面が表示されます。
 
-![Launch の設定 ](./images/rule2.png)
+![ACOP](./images/journeyempty.png)
 
-このルールの詳細が表示されます。 クリックしてアクション **「Registration Event」を AEP - トリガー JO に送信** を開きます。
+前の演習では、新しい **イベント** を作成しました。 この `--aepUserLdap--AccountCreationEvent` のように名前を付け、`ldap` を ldap に置き換えました。 イベント作成の結果：
 
-![Launch の設定 ](./images/rule3.png)
+![ACOP](./images/eventdone.png)
 
-次に、このアクションがトリガーされると、特定のデータ要素を使用して XDM データ構造が定義されます。 そのデータ要素を更新し、**演習 7.1** で設定したイベントの [ イベント ID](./ex1.md) を定義する必要があります。
+次に、このジャーニーをこのイベントの開始として受け取る必要があります。 これを行うには、画面の左側に移動して、イベントのリストでイベントを検索します。
 
-![Launch の設定 ](./images/rule4.png)
+![ACOP](./images/eventlist.png)
 
-ここで、データ要素 **XDM – 登録イベント** を更新する必要があります。 これを行うには、**データ要素** に移動します。 **XDM – 登録イベント** を検索し、クリックしてデータ要素を開きます。
+イベントを選択し、ジャーニーキャンバスにドラッグ&amp;ドロップします。 ジャーニーは次のようになります。
 
-![Launch の設定 ](./images/rule5.png)
+![ACOP](./images/journeyevent.png)
 
-次の画面が表示されます。
+ジャーニーの 2 番目のステップとして、短い **待機** ステップを追加する必要があります。 画面の左側の **オーケストレーション** セクションに移動して、これを見つけます。 プロファイル属性を使用し、リアルタイム顧客プロファイルに入力されていることを確認する必要があります。
 
-![Launch の設定 ](./images/rule6.png)
+![ACOP](./images/journeywait.png)
 
-フィールド `_experience.campaign.orchestration.eventID` に移動します。 現在の値を削除し、eventID をそこに貼り付けます。
+ジャーニーは次のようになります。 画面の右側には、待機時間を設定する必要があります。 1 分に設定します。 これにより、イベントの発生後にプロファイル属性が使用可能になるまで、十分な時間が与えられます。 「**保存**」をクリックして変更を保存します。
 
-イベント ID はAdobe Journey Optimizerの **設定/イベント** にあり、イベント ID はイベントのサンプルペイロードに次のように表示されます。`"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`
+![ACOP](./images/journeywait1.png)
 
-![ACOP](./images/payloadeventID.png)
+ジャーニーの 3 番目の手順として、**メール** アクションを追加する必要があります。 画面の左側に移動して **アクション** し、**メール** アクションを選択して、ジャーニーの 2 番目のノードにドラッグ&amp;ドロップします。 これが表示されます。
 
-eventID を貼り付けると、画面は次のようになります。 次に、「**保存**」または **ライブラリに保存** をクリックします。
+![ACOP](./images/journeyactions.png)
 
-![Launch の設定 ](./images/rule7.png)
+**カテゴリ** を **マーケティング** に設定し、メールの送信を可能にするメール設定を選択します。 この場合、選択するメール設定は **メール** です。 **メールのクリック数** と **メールの開封数** のチェックボックスが両方とも有効になっていることを確認します。
 
-最後に、変更を公開する必要があります。 左メニューの **公開フロー** に移動します。
+![ACOP](./images/journeyactions1.png)
 
-![Launch の設定 ](./images/rule8.png)
+## 3.1.3.2 メッセージの作成
 
-「**変更されたリソースをすべて追加**」をクリックし、「**開発用に保存およびビルド**」をクリックします。
+メッセージを作成するには、「**コンテンツを編集**」をクリックします。
 
-![Launch の設定 ](./images/rule9.png)
+![ACOP](./images/journeyactions2.png)
 
-その後、ライブラリが更新され、1 ～ 2 分後に、設定をテストできます。
+これが表示されます。
 
-## 3.1.3.2ジャーニーのテスト
+![ACOP](./images/journeyactions3.png)
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+**パーソナライゼーションダイアログを開く** アイコンをクリックします。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![Journey Optimizer](./images/msg5.png)
 
-その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
+テキスト `Hi ` を書き込みます。 次に、`profile.person.name.firstName` に保存されている「名 **フィールドのパーソナライゼーショントークンを取り込む必要が** ります。 左側のメニューで、「**Person/Full Name/First Name**」フィールドを探し、「**+**」アイコンをクリックします。 テキストフィールドにパーソナライゼーショントークンが表示されます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![Journey Optimizer](./images/msg9.png)
 
-新しい匿名ブラウザーウィンドウを開きます。
+次に、「**, thank you for signing up!**。「**保存**」をクリックします。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![Journey Optimizer](./images/msg10.png)
 
-前の手順でコピーしたデモ Web サイトの URL を貼り付けます。 その後、Adobe IDを使用してログインするように求められます。
+これで、メールの本文の設定を開始できます。 **メール本文を編集** をクリックします。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![Journey Optimizer](./images/msg11.png)
 
-アカウントタイプを選択し、ログインプロセスを完了します。
+実際のメッセージ自体のコンテンツを作成する前に、メッセージの内容について考えることをお勧めします。 メッセージ内のコンテンツには、メッセージ自体に固有のものもありますが、その他の部分は、顧客に送信するすべてのメールで同じである可能性が高い標準コンポーネントです。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+前の演習では、これらの標準コンポーネントをJourney Optimizerでフラグメントとして既に作成しました。ここで、このメッセージと、今後作成する他のすべてのメッセージで参照できます。
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+次の画面では、メールのコンテンツを指定するための 3 つの異なる方法を選択するように求められます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+- **ゼロからデザイン**：空のキャンバスから開始し、WYSIWYG エディターを使用して、構造およびコンテンツコンポーネントをドラッグ&amp;ドロップして、メールのコンテンツを視覚的に構築します。
+- **独自にコーディング**:HTMLを使用してコーディングし、独自のメールテンプレートを作成します
+- **HTMLをインポート**：既存のHTMLテンプレートをインポートします。
 
-画面の左上隅にあるAdobeロゴアイコンをクリックして、プロファイルビューアを開きます。
+**ゼロからデザイン** をクリックします。
 
-![デモ](./../../../modules/datacollection/module1.2/images/pv1.png)
+![Journey Optimizer](./images/msg12.png)
 
-現在は不明なこの顧客のプライマリ ID として **0} ユーザー ID} を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**
+左側のメニューには、メールの構造（行と列）を定義するために使用できる構造コンポーネントがあります。
 
-![デモ](./../../../modules/datacollection/module1.2/images/pv2.png)
+![Journey Optimizer](./images/msg13.png)
 
-登録/ログインページに移動します。 **アカウントを作成** をクリックします。
+また、左側のメニューには **フラグメント** があり、以前に作成したフラグメントが表示されます。
 
-![デモ](./../../../modules/datacollection/module1.2/images/pv9.png)
+![Journey Optimizer](./images/msg14.png)
 
-詳細を入力して **登録** をクリックすると、前のページにリダイレクトされます。
+ヘッダーとフッターをキャンバスに追加する前に、メールに 2 つの構造を追加する必要があります。 左側のメニューで「**+**」アイコンをクリックし、2 **1:1 列** コンポーネントをキャンバスにドラッグします。
 
-![デモ](./../../../modules/datacollection/module1.2/images/pv10.png)
+![Journey Optimizer](./images/msg14a.png)
 
-プロファイルビューアパネルを開き、リアルタイム顧客プロファイルに移動します。 プロファイルビューアパネルには、新しく追加されたメール識別子や電話識別子など、すべての個人データが表示されます。
+左側のメニューで、**フラグメント** に戻ります。 ヘッダーフラグメントを最初のコンポーネントに、フッターフラグメントを 2 番目のコンポーネントにドラッグ&amp;ドロップします。 その後、これが表示されます。
 
-![デモ](./../../../modules/datacollection/module1.2/images/pv11.png)
+![Journey Optimizer](./images/msg15.png)
 
-アカウントを作成してから 1 分が経過すると、Adobe Journey Optimizerからアカウント作成メールが届きます。
+左側のメニューで「**+**」アイコンをクリックし、さらに 2 つの **1:1 列** コンポーネントをキャンバスのヘッダーとフッターの間にドラッグ&amp;ドロップします。
 
-![Launch の設定 ](./images/email.png)
+![Journey Optimizer](./images/msg16.png)
 
-次の手順：[ 概要とメリット ](./summary.md)
+**画像** コンポーネントを最初の **1:1 列** コンポーネントにドラッグ&amp;ドロップします。 **参照** をクリックします。
+
+![Journey Optimizer](./images/msg17.png)
+
+**citi-signal-images** フォルダー内。 画像 **`welcome_email_image.png`** を選択し、「**選択** をクリックします。
+
+![Journey Optimizer](./images/msg28.png)
+
+すると、次のようになります。
+
+![Journey Optimizer](./images/msg30.png)
+
+次に、**コンテンツ** に移動し、**テキスト** コンポーネントを 4 行目の構造コンポーネントにドラッグ&amp;ドロップします。
+
+![Journey Optimizer](./images/msg33.png)
+
+デフォルトのテキストを選択します **ここにテキストを入力してください。他のテキストエディターの場合と同様に** きます。 代わりに **家族へようこそ** と書いてください。 ツールバーで、「**パーソナライゼーションを追加** アイコンをクリックします。
+
+![Journey Optimizer](./images/msg34.png)
+
+次に、`profile.person.name.firstName` に保存されている **名** パーソナライゼーショントークンを取り込む必要があります。 メニューで、**ユーザー** 要素を見つけ、**姓名** 要素にドリルダウンし、**+** アイコンをクリックして、名フィールドを式エディターに追加します。
+
+「**保存**」をクリックします。
+
+![Journey Optimizer](./images/msg36.png)
+
+これで、パーソナライゼーションフィールドがテキストにどのように追加されたかがわかります。
+
+![Journey Optimizer](./images/msg37.png)
+
+同じテキストフィールドで **Enter** キーを 2 回押して 2 行を追加し、次のテキストをコピーして貼り付けます。
+
+```
+Welcome aboard! We're thrilled to have you join the CitiSignal family. 
+As a valued member of our community, you're now poised to experience top-notch telecommunications services that cater to your every need.
+
+At CitiSignal, we understand that staying connected is more than just a convenience - it's a necessity. Whether you're browsing the web, streaming your favourite content, or keeping in touch with loved ones, we're here to ensure you have the best tools and resources at your fingertips.
+```
+
+![Journey Optimizer](./images/msg38.png)
+
+**テキストの配置** を中央に配置し、メッセージのルックアンドフィールを独自のニーズに合わせて自由に調整できます。 完了したら、「**保存**」をクリックします。
+
+![Journey Optimizer](./images/msg39.png)
+
+最後に、メールの準備が整ったことを確認するチェックとして、プレビューし、「**コンテンツをシミュレート**」ボタンをクリックします。
+
+![Journey Optimizer](./images/msg50.png)
+
+メールメッセージをシミュレートする前に、テストプロファイルを追加する必要があります。 **テストプロファイルを管理** をクリックします。
+
+![Journey Optimizer](./images/test1.png)
+
+**ID 名前空間を入力** フィールドの横にあるアイコンをクリックして **メール** 名前空間を選択します。
+
+ID 名前空間のリストで、「**メール**」名前空間を選択します。 「**ID 値**」フィールドに、前の演習で使用し、Adobe Experience Platformに既に保存されている以前のプロファイルのメールアドレスを入力します。 **プロファイルを追加** をクリックします。 前の画面に戻ります。
+
+![Journey Optimizer](./images/msg53.png)
+
+次に、この顧客プロファイル用にシミュレートされたメールメッセージが表示されます。 件名と本文のパーソナライゼーションを検証し、必要に応じて配達確認メールを送信できるようになりました。
+
+**閉じる** をクリックして、プレビューを閉じます。
+
+![Journey Optimizer](./images/msg54.png)
+
+「**保存**」をクリックしてメッセージを保存し、左上隅の件名テキストの横にある **矢印** をクリックしてメッセージダッシュボードに戻ります。
+
+![Journey Optimizer](./images/msg55.png)
+
+**矢印** をクリックして、ジャーニーに戻ります。
+
+![Journey Optimizer](./images/msg57a.png)
+
+## 3.1.3.3 ジャーニーのPublish
+
+「**保存**」をクリックします。
+
+![Journey Optimizer](./images/msg58.png)
+
+ジャーニーに名前を付ける必要があります。 画面の右上にある **プロパティ** アイコンをクリックすると、これを行うことができます。
+
+![ACOP](./images/journeyname.png)
+
+ジャーニーの名前をここに入力できます。 `--aepUserLdap-- - Registration Journey` を使用してください。 「**保存**」をクリックします。
+
+![ACOP](./images/journeyname1.png)
+
+これで、**Publish** をクリックしてジャーニーを公開できます。
+
+![ACOP](./images/publishjourney.png)
+
+もう一度 **0}Publish} をクリックします。**
+
+![ACOP](./images/publish1.png)
+
+数分後に、ジャーニーのステータスが **ライブ** に変わり、ジャーニーのパフォーマンスがリアルタイムでダッシュボードに表示されます。
+
+![ACOP](./images/published.png)
+
+これで、この演習が完了しました。
+
+次の手順：[3.1.4 データ収集プロパティを更新し、ジャーニーをテストする ](./ex4.md)
 
 [モジュール 3.1 に戻る](./journey-orchestration-create-account.md)
 

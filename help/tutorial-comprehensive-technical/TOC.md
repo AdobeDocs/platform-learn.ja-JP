@@ -5,9 +5,9 @@ user-guide-description: サードパーティシステムへの接続を含む�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
+source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 4%
       + [2.3.4 アクションの実行：オーディエンスを S3 の宛先に送信する](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
       + [2.3.5 アクションの実行：オーディエンスをAdobe Targetに送信します](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6 外部オーディエンス](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
-      + [2.3.7 宛先 SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
+      + [2.3.7 宛先SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
    + 2.4 Real-Time CDP:Microsoft Azure Event Hub {#module24} へのAudience Activation
       + [概要](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
@@ -108,8 +108,9 @@ ht-degree: 4%
    + 3.1 Adobe Journey Optimizer: オーケストレーション {#module31}
       + [概要](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
       + [3.1.1 イベントの作成](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-      + [3.1.2 ジャーニーとメールメッセージの作成](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-      + [3.1.3 データ収集プロパティを更新し、ジャーニーをテストする](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.2 メッセージで使用するフラグメントを作成する](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+      + [3.1.3 ジャーニーとメールメッセージの作成](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.4 データ収集プロパティを更新し、ジャーニーをテストする](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer：外部データソースとカスタムアクション {#module32}
       + [概要](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
@@ -123,7 +124,7 @@ ht-degree: 4%
       + [概要](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/offer-decisioning.md)
       + [3.3.1 Offer decisioning 101](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex1.md)
       + [3.3.2 オファーと決定の設定](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex2.md)
-      + [3.3.3Offer decisioning用のAdobe Experience Platform Data Collection Client プロパティと Web SDK セットアップの準備](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
+      + [3.3.3Offer decisioning用のAdobe Experience Platform Data Collection Client プロパティと Web SDK設定を準備する](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
       + [3.3.4 Adobe TargetとOffer decisioningの組み合わせ](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex4.md)
       + [3.3.5 メールでの決定の使用](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex5.md)
       + [3.3.6 API を使用した決定のテスト](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex6.md)

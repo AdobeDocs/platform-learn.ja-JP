@@ -4,18 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '268'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer：オーケストレーション
 
-**著者：[Rob In Der Maur](https://www.linkedin.com/in/ridmaur/)、[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-このモジュールでは、Adobe Journey Optimizerを使用する手順を説明します。 Adobe Journey Optimizerにアクセスし、Platform に送信されたエクスペリエンスイベントからのトリガーに基づいて開始するイベントとジャーニーを設定できるようになります。
+このモジュールでは、Adobe Journey Optimizerを使用する手順を説明します。 AEP に送信されたエクスペリエンスイベントからのトリガーに基づいて開始するイベントとジャーニーを設定します。
 
 ## 学習内容
 
@@ -37,11 +35,15 @@ ht-degree: 3%
 
 この演習では、イベントを設定する方法を説明します。
 
-[3.1.2 ジャーニーとメールメッセージの作成](./ex2.md)
+[3.1.2 メッセージで使用するフラグメントを作成する](./ex2.md)
+
+この演習では、メールメッセージの作成時に使用する、再利用可能なフラグメントを設定する方法について説明します。
+
+[3.1.3 ジャーニーとメールメッセージの作成](./ex3.md)
 
 この演習では、メールメッセージを設定する方法を説明します。
 
-[3.1.3 データ収集プロパティを更新し、ジャーニーをテストする](./ex3.md)
+[3.1.3 データ収集プロパティを更新し、ジャーニーをテストする](./ex4.md)
 
 これにより、イベントをトリガーして適切なペイロードを提供するための Launch の設定がガイドされ、最後に、自分自身にメールを送信できるようになります。
 
