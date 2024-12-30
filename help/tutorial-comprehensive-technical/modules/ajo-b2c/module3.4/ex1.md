@@ -4,9 +4,9 @@ description: この節では、トリガーベースのジャーニー – 注�
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1921'
 ht-degree: 8%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 8%
 
 [Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerにログインします。 **Journey Optimizer** をクリックします。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1 イベントの作成
 
@@ -33,23 +33,14 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 空のイベント設定が表示されます。
 
-![Journey Optimizer](./images/oc32.png)
-
 まず、イベントに `--aepUserLdap--PurchaseEvent` のような名前を付け、`Purchase Event` のような説明を追加します。
 
-![Journey Optimizer](./images/oc34.png)
-
-次に「**イベントタイプ** の選択です。 **単一** を選択します。
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-次に、「**イベント ID タイプ** の選択です。 「**システムで生成**」を選択します
+**タイプ** の場合、「**単一**」を選択します。
+「**イベント ID タイプ**」で、「**システム生成**」を選択します。
 
 ![Journey Optimizer](./images/eventidtype.png)
 
 次に、スキーマを選択します。 この演習では、スキーマを準備しました。 スキーマ `Demo System - Event Schema for Website (Global v1.1) v.1` を使用してください。
-
-![Journey Optimizer](./images/oc35.png)
 
 スキーマを選択すると、「**ペイロード**」セクションで多数のフィールドが選択されます。 **編集/鉛筆** アイコンをクリックして、このイベントにフィールドを追加します。
 
@@ -63,21 +54,19 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc38.png)
 
-次に、下にスクロールして、行 `productListItems` のチェックボックスをオンにします。
-
-![Journey Optimizer](./images/oc39.png)
-
 次に、下にスクロールして、行 `commerce` のチェックボックスをオンにします。
 
 ![Journey Optimizer](./images/oc391.png)
 
-次に、「**OK**」をクリックします。
+次に、下にスクロールして、行 `productListItems` のチェックボックスをオンにします。 「**OK**」をクリックします。
+
+![Journey Optimizer](./images/oc39.png)
 
 次に、追加のフィールドがイベントに追加されたことがわかります。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/oc40.png)
 
-その後、新しいイベントが共有され、利用可能なイベントのリストにイベントが表示されます。
+その後、新しいイベントが保存され、利用可能なイベントのリストにイベントが表示されます。
 
 イベントを再度クリックすると、**イベントを編集** 画面が再度開きます。
 「**ペイロード**」フィールドに再度ポインタを合わせると、3 つのアイコンが再び表示されます。 **ペイロードを表示** アイコンをクリックします。
@@ -89,7 +78,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 ![Journey Optimizer](./images/oc42.png)
 
 イベント ID は、次の手順で作成するジャーニーをトリガーにするためにAdobe Journey Optimizerに送信する必要があるものです。 この eventID は、次の手順の 1 つで必要になるので、書き留めておきます。
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 **OK** をクリックし、続いて **キャンセル** をクリックします。
 
@@ -101,11 +90,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc43.png)
 
-その後、これが表示されます。 ジャーニーに名前を付けます。 `--aepUserLdap-- - Order Confirmation journey`.を使用します。「**OK**」をクリックします。
+その後、これが表示されます。 ジャーニーに名前を付けます。 `--aepUserLdap-- - Order Confirmation journey`.を使用します。「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/oc45.png)
 
-まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--aepUserLdap--PurchaseEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**OK**」をクリックします。
+まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--aepUserLdap--PurchaseEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -125,7 +114,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/journeyactions3.png)
 
-テキストエリアで書き始めます **ご注文いただきありがとうございます**
+テキストエリアで **ご注文いただきありがとうございます** と書き始めて、**Personalization** アイコンをクリックします。
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -133,7 +122,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc6.png)
 
-その後、ここに戻ります。 **メールDesigner** をクリックして、メールのコンテンツを作成します。
+その後、ここに戻ります。 **メール本文を編集** をクリックして、メールのコンテンツを作成します。
 
 ![Journey Optimizer](./images/oc7.png)
 
@@ -147,35 +136,27 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc9.png)
 
-**コンテンツコンポーネント** に移動します。
+左側のメニューで、**フラグメント** に移動します。 演習 3.2.2 で作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 演習 3.2.2 で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
+
+![Journey Optimizer](./images/fragm1.png)
+
+左側のメニューで「**+**」アイコンをクリックします。 **コンテンツ** に移動して、キャンバスへのコンテンツの追加を開始します。
 
 ![Journey Optimizer](./images/oc10.png)
 
-**画像** コンポーネントを最初の行にドラッグ&amp;ドロップします。 **参照** をクリックします。
-
-![Journey Optimizer](./images/oc11.png)
-
-フォルダー **enablement-assets** に移動し、ファイル **luma-logo.png** を選択して **選択** をクリックします。
-
-![Journey Optimizer](./images/oc12.png)
-
-ただいま戻りました。 画像をクリックして選択し、**サイズ** スライダーを使用してロゴ画像を少し小さくします。
-
-![Journey Optimizer](./images/oc13.png)
-
-**コンテンツコンポーネント** に移動し、2 行目にある **画像** コンポーネントをドラッグ&amp;ドロップします。 **画像コンポーネント** を選択しますが、「参照」はクリックしません。
+**コンテンツ** に移動し、2 行目にある **画像** コンポーネントをドラッグ&amp;ドロップします。 **参照** をクリックします。
 
 ![Journey Optimizer](./images/oc15.png)
 
-この画像 URl をフィールド **Source** に貼り付けます：`https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`。 この画像はAdobeの外部でホストされています。
+フォルダー **citi-signal-images** を開き、クリックして画像 **citisignal-preparing.png** を選択し、**選択** をクリックします。
 
 ![Journey Optimizer](./images/oc14.png)
 
-範囲を別のフィールドに変更すると、画像がレンダリングされ、次の情報が表示されます。
+**スタイル** で、幅を **40%** に変更します。
 
-![Journey Optimizer](./images/oc16.png)
+![Journey Optimizer](./images/oc14a.png)
 
-次に、**コンテンツコンポーネント** に移動し、**テキスト** コンポーネントを 3 行目にドラッグ&amp;ドロップします。
+次に、**コンテンツ** に移動し、**テキスト** コンポーネントを 3 行目にドラッグ&amp;ドロップします。
 
 ![Journey Optimizer](./images/oc17.png)
 
@@ -207,7 +188,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc21.png)
 
-次に、**コンテンツコンポーネント** に移動し、**テキスト** コンポーネントを 4 行目にドラッグ&amp;ドロップします。
+次に、**コンテンツ** に移動し、**テキスト** コンポーネントを 4 行目にドラッグ&amp;ドロップします。
 
 ![Journey Optimizer](./images/oc22.png)
 
@@ -219,7 +200,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc23.png)
 
-次に、**コンテンツコンポーネント** に移動し、5 行目にある **HTML** コンポーネントをドラッグ&amp;ドロップします。 HTMLコンポーネントをクリックしてから、「**ソースコードを表示**」をクリックします。
+次に、「**コンテンツ** に移動し、**HTML** コンポーネントを 5 行目にドラッグ&amp;ドロップします。 HTMLコンポーネントをクリックしてから、「**ソースコードを表示**」をクリックします。
 
 ![Journey Optimizer](./images/oc24.png)
 
@@ -235,7 +216,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc26.png)
 
-**コンテンツコンポーネント** に移動し、6 行目にある **HTML** コンポーネントをドラッグ&amp;ドロップします。 HTMLコンポーネントをクリックしてから、「**ソースコードを表示**」をクリックします。
+**コンテンツ** に移動し、6 行目にある **HTML** コンポーネントをドラッグ&amp;ドロップします。 HTMLコンポーネントをクリックしてから、「**ソースコードを表示**」をクリックします。
 
 ![Journey Optimizer](./images/oc57.png)
 
@@ -257,11 +238,9 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 左側のメニューで、「コンテキスト属性 **をクリックし** す。 このコンテキストは、ジャーニーからメッセージに渡されます。
 
-![Journey Optimizer](./images/oc601.png)
-
 その後、これが表示されます。 **Journey Orchestration** の横の矢印をクリックすると、より深くドリルできます。
 
-![Journey Optimizer](./images/oc61.png)
+![Journey Optimizer](./images/oc601.png)
 
 **イベント** の横の矢印をクリックすると、より深くドリルできます。
 
@@ -287,7 +266,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc67.png)
 
-次に、**コンテンツコンポーネント** に移動し、**HTML** コンポーネントを 7 行目にドラッグ&amp;ドロップします。 HTMLコンポーネントをクリックしてから、「**ソースコードを表示**」をクリックします。
+次に、「**コンテンツ** に移動し、**HTML** コンポーネントを 7 行目にドラッグ&amp;ドロップします。 HTMLコンポーネントをクリックしてから、「**ソースコードを表示**」をクリックします。
 
 ![Journey Optimizer](./images/oc68.png)
 
@@ -304,9 +283,6 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc71.png)
 
 左側のメニューで、「コンテキスト属性 **をクリックし** す。
-
-![Journey Optimizer](./images/oc711.png)
-
 **Journey Orchestration** の横の矢印をクリックすると、より深くドリルできます。
 
 ![Journey Optimizer](./images/oc72.png)
@@ -336,13 +312,10 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc76.png)
 
 **価格合計** の横にある「**+**」アイコンをもう一度クリックして、キャンバスに追加します。
-
-![Journey Optimizer](./images/oc77.png)
-
 また、**Order** オブジェクト内からキャンバスに **Currency** フィールドを追加することもできます（こちらを参照）。
 完了したら、「**保存** をクリックして変更を保存します。
 
-![Journey Optimizer](./images/oc771.png)
+![Journey Optimizer](./images/oc77.png)
 
 その後、メールDesignerに戻ります。 もう一度 **保存** をクリックします。
 
@@ -356,7 +329,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc79a.png)
 
-「**OK**」をクリックして、メールアクションを閉じます。
+「**保存**」をクリックして、メールアクションを閉じます。
 
 ![Journey Optimizer](./images/oc79b.png)
 
@@ -380,7 +353,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![ プロパティページ ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+**はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -388,11 +361,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc91.png)
 
-その後、これが表示されます。 **_experience.campaign.orchestration.eventID フィールドに移動し** ここに eventID を入力します。 ここで入力する eventID は、演習 10.1.2 の一部として作成した eventID です。**保存** または **ライブラリに保存** をクリックします。
+その後、これが表示されます。 **_experience.campaign.orchestration.eventID フィールドに移動し** ここに eventID を入力します。 ここで入力する eventID は、演習 3.4.1.1 の一部として作成した eventID です。**保存** または **ライブラリに保存** をクリックします。
 
 ![Journey Optimizer](./images/oc92.png)
 
-クライアントプロパティで変更を保存し、開発ライブラリを更新して変更を公開します。
+プロパティで変更を保存し、開発ライブラリを更新して変更を公開します。
 
 ![Journey Optimizer](./images/oc93.png)
 
@@ -402,33 +375,29 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 デモ Web サイトで製品を購入して、更新されたジャーニーをテストします。
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 新しい匿名ブラウザーウィンドウを開きます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 前の手順でコピーしたデモ Web サイトの URL を貼り付けます。 その後、Adobe IDを使用してログインするように求められます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 アカウントタイプを選択し、ログインプロセスを完了します。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 演習ごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-画面の左上隅にあるAdobeロゴアイコンをクリックして、プロファイルビューアを開きます。
-
-![デモ](./../../../modules/datacollection/module1.2/images/pv1.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 現在は不明なこの顧客のプライマリ ID として **0} ユーザー ID} を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**
 
@@ -442,13 +411,25 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![デモ](./../../../modules/datacollection/module1.2/images/pv10.png)
 
-商品を買い物かごに追加し、**買い物かご** ページに移動します。 **チェックアウトに進む** をクリックします。
+カートに商品を追加
+
+![Journey Optimizer](./images/cart1a.png)
+
+**買い物かご** ページに移動します。 **チェックアウト** をクリックします。
 
 ![Journey Optimizer](./images/cart1.png)
 
-次に、チェックアウトページでフィールドを確認し、「**チェックアウト**」をクリックします。
+次に、フィールドを検証し、必要に応じて入力します。 **続行** をクリックします。
 
 ![Journey Optimizer](./images/cart2.png)
+
+**注文を確認** をクリックします。
+
+![Journey Optimizer](./images/cart2a.png)
+
+ご注文を確定しました。
+
+![Journey Optimizer](./images/cart2b.png)
 
 その後、数秒以内に注文確認メールが届きます。
 

@@ -3,54 +3,45 @@ title: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど 
 description: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど – カスタムアクションの定義
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: d9bdc4c6-7539-4646-9b75-f397b792479f
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '414'
 ht-degree: 3%
 
 ---
 
 # 3.2.3 カスタムアクションの定義
 
-この演習では、Adobe Journey Optimizerを組み合わせて使用することで、2 つのカスタムアクションを作成します。
+この演習では、Slackチャネルにメッセージを送信するカスタムアクションを作成します。
 
 [Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerにログインします。 **Journey Optimizer** をクリックします。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
-
-左側のメニューで、下にスクロールして、**設定** をクリックします。 次に、「アクション **の下にある** 管理 **ボタンをクリック** ます。
-
-![デモ](./images/menuactions.png)
-
-**アクション** リストが表示されます。
-
-![デモ](./images/acthome.png)
-
-Slackチャンネルにテキストを送信するアクションを 1 つ定義します。
-
-## 3.2.3.1 アクション：Slackチャンネルにテキストを送る
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 次に、既存のSlackチャンネルを使用し、そのSlackチャンネルにメッセージを送信します。 Slackには使いやすい API があり、Adobe Journey Optimizerを使用して API をトリガーします。
 
 ![デモ](./images/slack.png)
 
-「**アクションを作成**」をクリックして、新しいアクションの追加を開始します。
+左側のメニューで、下にスクロールして、**設定** をクリックします。 次に、「アクション **の下にある** 管理 **ボタンをクリック** ます。
 
-![デモ](./images/adda.png)
+![デモ](./images/menuactions.png)
+
+**アクション** リストが表示されます。 **アクションを作成** をクリックします。
+
+![デモ](./images/acthome.png)
 
 空のアクションポップアップが表示されます。
 
 ![デモ](./images/emptyact.png)
 
-アクションの名前として、`--aepUserLdap--TextSlack` を使用します。 この例では、アクション名は `vangeluwTextSlack` です。
+アクションの名前として、`--aepUserLdap--TextSlack` を使用します。
 
-説明を `Send Text to Slack` に設定します。
-
-![デモ](./images/slackname.png)
+説明を `Send Message to Slack` に設定します。
 
 **URL 設定** には、次を使用します。
 
@@ -61,6 +52,8 @@ Slackチャンネルにテキストを送信するアクションを 1 つ定義
 >
 >上記の URL は、AWSの Lambda 関数を参照しています。この関数は、上記のようにリクエストをSlackチャネルに転送します。 これは、Adobeが所有するSlackチャネルへのアクセスを保護するために行われます。 独自のSlackチャネルがある場合、[https://api.slack.com/](https://api.slack.com/) を通じてSlackアプリを作成し、そのSlackアプリで受信 Webhook を作成し、上記の URL を受信 Webhook の URL に置き換える必要があります。
 
+![デモ](./images/slackname.png)
+
 ヘッダーフィールドを変更する必要はありません。
 
 ![デモ](./images/slackurl.png)
@@ -69,9 +62,9 @@ Slackチャンネルにテキストを送信するアクションを 1 つ定義
 
 ![デモ](./images/slackauth.png)
 
-**アクションパラメーター** については、Slackに送信するフィールドを定義する必要があります。 論理的には、Adobe Journey OptimizerとAdobe Experience Platformをパーソナライズの頭脳として使用したいので、Slackに送信するテキストはAdobe Journey Optimizerで定義した後、Slackに送信して実行する必要があります。
+**ペイロード** で、Slackに送信するフィールドを定義する必要があります。 論理的には、Adobe Journey OptimizerとAdobe Experience Platformをパーソナライズ機能の頭脳とし、Slackに送信するテキストはAdobe Journey Optimizerで定義した後、Slackに送信して実行する必要があります。
 
-そのため、**アクションパラメーター** については、**ペイロードを編集** アイコンをクリックします。
+**リクエスト** については、「**ペイロードを編集** アイコンをクリックします。
 
 ![デモ](./images/slackmsgp.png)
 
@@ -91,23 +84,11 @@ Slackチャンネルにテキストを送信するアクションを 1 つ定義
 }
 ```
 
-参考：以下のフィールドを指定すると、これらのフィールドにカスタマージャーニーからアクセスできるようになり、ジャーニーから動的に入力できるようになります。
-
-**&quot;toBeMapped&quot;:true,**
-
-**&quot;dataType&quot;: &quot;string&quot;,**
-
-**&quot;label&quot;: &quot;textToSlack&quot;**
-
 次の画面が表示されます。
 
 ![デモ](./images/slackmsgpopup1.png)
 
-「**保存**」をクリックします。
-
-![デモ](./images/twiliomsgpopup2.png)
-
-上にスクロールして、もう一度 **保存** をクリックして、カスタムアクションを保存します。
+上にスクロールして、もう一度 **保存** をクリックして、アクションを保存します。
 
 ![デモ](./images/slackmsgpopup3.png)
 
@@ -119,6 +100,6 @@ Slackチャンネルにテキストを送信するアクションを 1 つ定義
 
 次の手順：[3.2.4 ジャーニーとメッセージを作成する ](./ex4.md)
 
-[モジュール 8 に戻る](journey-orchestration-external-weather-api-sms.md)
+[モジュール 3.2 に戻る](journey-orchestration-external-weather-api-sms.md)
 
 [すべてのモジュールに戻る](../../../overview.md)

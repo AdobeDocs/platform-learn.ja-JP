@@ -3,14 +3,15 @@ title: Offer decisioning – 意思決定のテスト
 description: Offer decisioning – 意思決定のテスト
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
 
-# 3.3.3Offer decisioning用のAdobe Experience Platform Data Collection Client プロパティと Web SDK セットアップの準備
+# 3.3.3Offer decisioning用のAdobe Experience Platform Data Collection Client プロパティと Web SDK設定を準備する
 
 ## 3.3.3.1 データストリームの更新
 
@@ -77,11 +78,11 @@ ht-degree: 1%
 
 [!UICONTROL Web – 画像 ] の [!UICONTROL  プレースメント ID] を見つけるには、[Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerに移動します。 **Journey Optimizer** をクリックします。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 次に、[!UICONTROL  コンポーネント ] に移動し、次に [!UICONTROL  プレースメント ] に移動します。 [!UICONTROL Web – 画像 ] プレースメントをクリックして、詳細を確認します。
 
@@ -225,7 +226,7 @@ Adobe Experience Platform Data Collection で、**[!UICONTROL 公開フロー]**
 
 ![WebSDK](./images/decrec9.png)
 
-この変更により、Adobe Experience Platform Data Collection のこのルールは、Web SDK 応答の一部であるOffer decisioningからの応答をリッスンするようになり、応答を受信すると、オファーの画像がホームページに表示されます。
+この変更により、Adobe Experience Platform Data Collection のこのルールは、Web SDK応答の一部であるOffer decisioningからの応答をリッスンするようになりました。応答を受信すると、オファーの画像がホームページに表示されます。
 
 デモ Web サイトを見ると、この画像が今すぐ置き換えられることがわかります。
 

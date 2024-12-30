@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど 
 description: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: d4e37338-bde2-41b9-948c-11d9216b8cf3
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -29,18 +30,13 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 ![ACOP](./images/emptyevent.png)
 
 新しい空のイベントウィンドウがポップアップ表示されます。
-
-![ACOP](./images/emptyevent1.png)
-
-イベントの名前として、`--aepUserLdap--GeofenceEntry` を使用します。 この例では、イベント名は `vangeluwGeofenceEntry` です。
+イベントの名前として、`--aepUserLdap--GeofenceEntry` を使用します。
 
 説明を `Geofence Entry Event` に設定します。
 
+**タイプ** が **単一** に設定されていることを確認し、「**イベント ID タイプ**」選択で「**システム生成**」を選択します
+
 ![デモ](./images/evname.png)
-
-次に、**タイプ** が **単一** に設定されていることを確認し、**イベント ID タイプ** の選択で「**システム生成**」を選択します。
-
-![ACOP](./images/eventidtype.png)
 
 次に、スキーマを選択する必要があります。 ここに示すスキーマはすべて、Adobe Experience Platform スキーマです。
 
@@ -92,13 +88,9 @@ ECID やオーケストレーション eventID などのフィールドは必須
 ![デモ](./images/popupok.png)
 
 Adobe Journey Optimizerには、顧客を識別するための ID も必要です。 Adobe Journey OptimizerはAdobe Experience Platformにリンクされているので、ジャーニーのプライマリ ID がスキーマの ID として自動的に取得されます。
-また、プライマリID はAdobe Experience Platformの完全な ID グラフを自動的に考慮し、使用可能なすべての ID、デバイス、チャネルにわたるすべての行動を同じプロファイルにリンクして、Adobe Journey Optimizerがコンテキストに応じて、関連性と一貫性を持つようにします。
+また、プライマリID はAdobe Experience Platformの完全な ID グラフを自動的に考慮し、使用可能なすべての ID、デバイス、チャネルにわたるすべての行動を同じプロファイルにリンクして、Adobe Journey Optimizerがコンテキストに応じて、関連性と一貫性を持つようにします。 「**保存**」をクリックします。
 
 ![デモ](./images/eventidentifier.png)
-
-**保存** をクリックして、カスタムイベントを保存します。
-
-![デモ](./images/save.png)
 
 その後、イベントは、使用可能なイベントのリストに含まれます。
 
@@ -109,23 +101,19 @@ Adobe Journey Optimizerには、顧客を識別するための ID も必要で�
 イベントのリストでイベントをクリックして、もう一度開きます。
 イベントで、「フィールド **の横にある** ペイロードを表示 **アイコンをクリック** ます。
 
-![デモ](./images/eventlist1.png)
-
-**ペイロードを表示** アイコンをクリックすると、このイベントのサンプル XDM ペイロードが開きます。
-
 ![デモ](./images/fieldseyepayload.png)
 
-行 `eventID` が表示されるまで **ペイロード** を下にスクロールします。
+**ペイロードを表示** アイコンをクリックすると、このイベントのサンプル XDM ペイロードが開きます。 行 `eventID` が表示されるまで **ペイロード** を下にスクロールします。
 
 ![デモ](./images/fieldseyepayloadev.png)
 
 最後に、設定をテストするために必要になるので、`eventID` を書き留めてください。
 
-この例では、`eventID` は `fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934` です。
+この例では、`eventID` は `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e` です。
 
 作成しているジャーニーをトリガーにするイベントを定義しました。 ジャーニーがトリガーされると、市区町村などのジオフェンスフィールドや、選択したその他のフィールド（国、緯度、経度など）がジャーニーで利用できるようになります。
 
-ユースケースの説明で説明しているように、天気に応じたコンテキストプロモーションを提供する必要があります。 天気情報を取得するには、その場所の天気情報を提供する外部データソースを定義する必要があります。 **OpenWeather** サービスを使用して、2 の一部としてどのような情報を提供するかを確認します。
+ユースケースの説明で説明しているように、天気に応じたコンテキストプロモーションを提供する必要があります。 天気情報を取得するには、その場所の天気情報を提供する外部データソースを定義する必要があります。 **OpenWeather API** サービスを使用して、その情報を提供します。
 
 次の手順：[3.2.2 外部データソースを定義する ](./ex2.md)
 

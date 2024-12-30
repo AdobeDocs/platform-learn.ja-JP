@@ -1,13 +1,13 @@
 ---
-title: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど – 調整されたカスタマージャーニーのトリガー
-description: Adobe Journey Optimizer – 外部天気 API、SMS アクションなど – 調整されたカスタマージャーニーのトリガー
+title: Adobe Journey Optimizer – 外部データソースとカスタムアクション
+description: Adobe Journey Optimizer – 外部データソースとカスタムアクション
 kt: 5342
 doc-type: tutorial
 exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 1%
+source-wordcount: '624'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ![ プロパティページ ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-モジュール 0 で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+**はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -35,11 +35,11 @@ ht-degree: 1%
 
 ![Launch の設定 ](./images/rule2.png)
 
-このルールの詳細が表示されます。 クリックしてアクション **「ジオフェンスイベントを AEP に送信」 – トリガー JO** を開きます。
+このルールの詳細が表示されます。 クリックしてアクション **Adobe Experience Platform Web SDK - イベントを送信** を開きます。
 
 ![Launch の設定 ](./images/rule3.png)
 
-次に、このアクションがトリガーされると、特定のデータ要素を使用して XDM データ構造が定義されます。 そのデータ要素を更新し、**演習 8.1** で設定したイベントの [ イベント ID](./ex1.md) を定義する必要があります。
+次に、このアクションがトリガーされると、特定のデータ要素を使用して XDM データ構造が定義されます。 そのデータ要素を更新し、**演習 3.2.1** で設定したイベントの [ イベント ID](./ex1.md) を定義する必要があります。
 
 ![Launch の設定 ](./images/rule4.png)
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 フィールド `_experience.campaign.orchestration.eventID` に移動します。 現在の値を削除し、eventID をそこに貼り付けます。
 
-イベント ID はAdobe Journey Optimizerの **設定/イベント** にあり、イベント ID はイベントのサンプルペイロードに次のように表示されます。`"eventID": "fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934"`
+イベント ID はAdobe Journey Optimizerの **設定/イベント** にあり、イベント ID はイベントのサンプルペイロードに次のように表示されます。`"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 ![ACOP](./images/payloadeventIDgeo.png)
 
-最後に、変更を公開する必要があります。 左メニューの **公開フロー** に移動します。
+最後に、変更を公開する必要があります。 左側のメニューで **公開フロー** に移動し、「**Man**」をクリックしてライブラリを開きます。
 
 ![Launch の設定 ](./images/rule8.png)
 
@@ -71,55 +71,45 @@ ht-degree: 1%
 
 ## 3.2.5.2 ジャーニーのトリガー
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+[https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 その後、デモ Web サイトが開きます。 URL を選択してクリップボードにコピーします。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 新しい匿名ブラウザーウィンドウを開きます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 前の手順でコピーしたデモ Web サイトの URL を貼り付けます。 その後、Adobe IDを使用してログインするように求められます。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 アカウントタイプを選択し、ログインプロセスを完了します。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 デモごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
+次に、匿名ブラウザーウィンドウに web サイトが読み込まれます。 演習ごとに、新しい匿名ブラウザーウィンドウを使用して、デモ Web サイトの URL を読み込む必要があります。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 画面の左上隅にあるAdobeロゴアイコンをクリックして、プロファイルビューアを開きます。
 
 ![デモ](./../../../modules/datacollection/module1.2/images/pv1.png)
 
-現在は不明なこの顧客のプライマリ ID として **0} ユーザー ID} を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**
-
-![デモ](./../../../modules/datacollection/module1.2/images/pv2.png)
-
-登録/ログインページに移動します。 **アカウントを作成** をクリックします。
-
-![デモ](./../../../modules/datacollection/module1.2/images/pv9.png)
-
-詳細を入力して **登録** をクリックすると、前のページにリダイレクトされます。
-
-![デモ](./../../../modules/datacollection/module1.2/images/pv10.png)
-
 プロファイルビューアパネルを開き、リアルタイム顧客プロファイルに移動します。 プロファイルビューアパネルには、新しく追加されたメール識別子や電話識別子など、すべての個人データが表示されます。
 
-![デモ](./../../../modules/datacollection/module1.2/images/pv11.png)
+![デモ](./images/pv2.png)
 
 [ プロファイル ビューア ] パネルで、[**ユーティリティ**] をクリックします。 `geofenceevent` と入力し、「**送信**」をクリックします。
 
-![デモ](./images/smsdemo1.png)
+>[!NOTE]
+>
+>プロファイルビューアパネルに直接呼出しイベントを送信するオプションがない場合は、開発者ビューを開いて参照の **コンソール** に移動し、`_satellite.track('geofenceevent')` コマンドを貼り付けて送信することで、手動で送信できます。
 
-数秒後、Adobe Journey Optimizerから SMS が届きます。
+数秒後に、Adobe Journey OptimizerからのメッセージがSlackチャンネルに表示されます。
 
 ![デモ](./images/smsdemo4.png)
 

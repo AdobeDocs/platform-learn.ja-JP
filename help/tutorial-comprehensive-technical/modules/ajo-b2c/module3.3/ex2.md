@@ -3,7 +3,8 @@ title: Offer decisioning - オファーと意思決定 ID の設定
 description: Offer decisioning - オファーと意思決定 ID の設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 3%
@@ -27,11 +28,11 @@ ht-degree: 3%
 
 [Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerにログインします。 **Journey Optimizer** をクリックします。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 左側のメニューで **オファー** をクリックし、**オファー** に移動します。 「**+ オファーを作成**」をクリックします。
 
@@ -356,7 +357,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 これで、決定が正常に設定されました。 これで決定が実稼働し、最適化され、パーソナライズされたオファーをリアルタイムで顧客に提供できるようになります。
 
-次の手順：[3.3.3 データ収集クライアントプロパティと Web SDK 設定を準備してOffer decisioningする ](./ex3.md)
+次の手順：[3.3.3 データ収集クライアントプロパティと、Offer decisioning用の web SDK設定を準備する ](./ex3.md)
 
 [モジュール 3.3 に戻る](./offer-decisioning.md)
 
