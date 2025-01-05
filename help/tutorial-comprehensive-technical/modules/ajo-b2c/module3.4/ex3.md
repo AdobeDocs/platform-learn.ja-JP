@@ -4,14 +4,14 @@ description: この演習では、メールコンテンツ内でセグメント�
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 11%
+source-wordcount: '399'
+ht-degree: 9%
 
 ---
 
-# 3.4.3 メールメッセージでのパーソナライゼーションの適用
+# 3.4.3 メールメッセージでのセグメントベースのパーソナライゼーションの適用
 
 [Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Experience Cloudにログインします。 **Adobe Journey Optimizer** をクリックします。
 
@@ -23,25 +23,25 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 3.4.3.1 セグメントベースのパーソナライゼーション
 
-この演習では、セグメントメンバーシップに基づいてパーソナライズされたテキストを使用して、ニュースレターのメールメッセージを改善します。
+この演習では、前の演習で作成したニュースレターのメールメッセージを、セグメントメンバーシップに基づいてパーソナライズされたテキストで改善します。
 
-**ジャーニー** に移動します。 前の演習で作成したニュースレタージャーニーを見つけます。 `--aepUserLdap-- - Newsletter` を検索します。 ジャーニーをクリックして開きます。
+**キャンペーン** に移動します。 前の演習で作成したニュースレタージャーニーを見つけます。 `--aepUserLdap-- - CitiSignal Newsletter` を検索します。 3 つのドット **...** を右クリックし、「**複製**」をクリックします。
 
 ![Journey Optimizer](./images/sbp1.png)
 
-その後、これが表示されます。 「**複製**」をクリックします。
+その後、これが表示されます。 **タイトル**:`--aepUserLdap-- - CitiSignal Newsletter (SBP)` に使用します。 「**複製**」をクリックします。
 
 ![Journey Optimizer](./images/sbp2.png)
 
-「**複製**」をクリックします。
+複製したキャンペーンをクリックして開きます。
 
 ![Journey Optimizer](./images/sbp3.png)
 
-**メール** アクションを選択し、「**コンテンツを編集**」をクリックします。
+**編集** をクリックして、コンテンツを変更します。
 
 ![Journey Optimizer](./images/sbp3a.png)
 
-**メールDesigner** をクリックします。
+**メール本文を編集** をクリックします。
 
 ![Journey Optimizer](./images/sbp4.png)
 
@@ -49,88 +49,58 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/sbp5.png)
 
-**コンテンツコンポーネント** を開き、**テキスト** コンポーネントを現在のニュースレターコンテンツの下にドラッグします。
+**コンテンツコンポーネント** を開き、**1:1 列** を AirPods オファーの上にドラッグします。
 
 ![Journey Optimizer](./images/sbp6.png)
+
+**テキスト** コンポーネントを 1:1 列にドラッグ&amp;ドロップします。
+
+![Journey Optimizer](./images/sbp6a.png)
 
 デフォルトのテキスト全体を選択して削除します。 次に、ツールバーの「**パーソナライゼーションを追加**」ボタンをクリックします。
 
 ![Journey Optimizer](./images/sbp7.png)
 
-次の画面が表示されます。
+その後、これが表示されます。 左側のメニューで、「**オーディエンス**」をクリックします。
 
 ![Journey Optimizer](./images/seg1.png)
 
-左側のメニューで、「**セグメントメンバーシップ**」をクリックします。
-
-![Journey Optimizer](./images/seg2.png)
-
->[!NOTE]
->
->このリストでセグメントが見つからない場合は、少し下にスクロールして、セグメント ID を手動で取得する方法を確認します。
-
-セグメント `Luma - Women's Category Interest` を選択し、「**+**」アイコンをクリックします。次のようになります。
+セグメント `--aepUserLdap-- - Interest in Plans` を選択し、「**+**」アイコンをクリックしてキャンバスに追加します。
 
 ![Journey Optimizer](./images/seg3.png)
 
 その後、最初の行をそのままにし、行 2 と 3 をこのコードに置き換える必要があります。
 
 ``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
+    PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
+    PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
 ``
 
-すると、次のようになります。
+これで完了です。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/seg4.png)
 
-「**検証**」をクリックして、コードが正しいことを確認します。 「**保存**」をクリックします。
-
-![Journey Optimizer](./images/sbp8.png)
-
-右上隅の **保存** ボタンをクリックして、このメッセージを保存できます。 次に、「**コンテンツをシミュレート**」をクリックします。
+テキストの整列を **中央揃え** に変更します。
 
 ![Journey Optimizer](./images/sbp9.png)
 
-このチュートリアルの一部として作成したプロファイルの 1 つを選択し、「**プレビュー**」をクリックします。 その後、設定の結果が表示されます。
+右上隅の **保存** ボタンをクリックして、このメッセージを保存できます。 次に、左上隅の件名行のテキストの横にある **矢印** をクリックします。
 
-![Journey Optimizer](./images/sbp10.png)
+![Journey Optimizer](./images/sbp9a.png)
 
-その後、これが表示されます。 次に、「**閉じる** をクリックします。
-
-![Journey Optimizer](./images/sbp10fff.png)
-
-メッセージダッシュボードに戻るには、左上隅の件名テキストの横にある **矢印** をクリックします。
-
-![Journey Optimizer](./images/sbp11.png)
-
-左上隅の矢印をクリックして、ジャーニーに戻ります。
+**アクティブ化するレビュー** をクリックします。
 
 ![Journey Optimizer](./images/oc79afff.png)
 
-「**OK**」をクリックして、メールアクションを閉じます。
+**アクティブ化** をクリックします。
 
 ![Journey Optimizer](./images/oc79bfff.png)
 
-**スケジュール** を **1 回** に変更し、**日付/時刻** を定義します。 「**OK**」をクリックします。
+これで、セグメントベースのパーソナライゼーションを使用したニュースレターが公開されました。 ニュースレターのメールメッセージはスケジュールに基づいて送信され、最後のメールが送信されるとジャーニーは停止します。
 
->[!NOTE]
->
->メッセージの送信日時は 1 時間以上である必要があります。
-
-![Journey Optimizer](./images/sbp18.png)
-
-ジャーニーの「**Publish**」ボタンをクリックします。
-
-![Journey Optimizer](./images/sbp19.png)
-
-ポップアップウィンドウで、「**Publish**」をもう一度クリックします。
-
-![Journey Optimizer](./images/sbp20.png)
-
-これで、基本的なニュースレタージャーニーが公開されました。 ニュースレターのメールメッセージはスケジュールに基づいて送信され、最後のメールが送信されるとジャーニーは停止します。
+使用されたセグメントに適合すると、次の内容がメールで表示されます。
 
 ![Journey Optimizer](./images/sbp20fff.png)
 

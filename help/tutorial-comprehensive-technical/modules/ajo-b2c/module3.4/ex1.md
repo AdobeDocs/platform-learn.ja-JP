@@ -4,9 +4,9 @@ description: この節では、トリガーベースのジャーニー – 注�
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1919'
 ht-degree: 8%
 
 ---
@@ -136,7 +136,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc9.png)
 
-左側のメニューで、**フラグメント** に移動します。 演習 3.2.2 で作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 演習 3.2.2 で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
+左側のメニューで、**フラグメント** に移動します。 先ほど [ 演習 3.1.2.1](./../module3.1/ex2.md) で作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 先ほど [ 演習 3.1.2.2](./../module3.1/ex2.md) で作成したフッターをキャンバスの最後のコンポーネントにドラッグします。
 
 ![Journey Optimizer](./images/fragm1.png)
 

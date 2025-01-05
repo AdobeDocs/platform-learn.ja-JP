@@ -4,16 +4,14 @@ description: このモジュールでは、企業が、コンテキストに応�
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '285'
 ht-degree: 2%
 
 ---
 
 # 3.4 Adobe Journey Optimizer
-
-**著者：[Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/)、[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 このモジュールでは、企業が、コンテキストに応じた、つながりのあるパーソナライズされたエクスペリエンスを設計して顧客に提供するのに役立つ、Adobe Journey Optimizerについて知っておくべきことをすべて学びます。
 
@@ -28,7 +26,7 @@ ht-degree: 2%
 
 - Adobe Journey Optimizerへのアクセス
 - **これらのアセットをダウンロードします**。
-   - [アセット](./../../../assets/ajo/ajo_assets.zip)
+   - [アセット](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
@@ -40,21 +38,17 @@ ht-degree: 2%
 
 この演習では、前の演習で作成したメールメッセージを送信するトリガーベースのジャーニーを設定します。
 
-[3.4.2 バッチベースのニュースレタージャーニーの設定](./ex2.md)
+[3.4.2 キャンペーンの設定](./ex2.md)
 
-この演習では、前の演習で作成したメールメッセージを送信するバッチベースのジャーニーを設定します。
+この演習では、従来のメールキャンペーンを設定します。
 
-[3.4.3 メールメッセージでのパーソナライゼーションの適用](./ex3.md)
+[3.4.3 メールメッセージでのセグメントベースのパーソナライゼーションの適用](./ex3.md)
 
 この演習では、セグメントメンバーシップを使用して、メール内に表示するコンテンツを定義します。
 
 [3.4.4 プッシュ通知の設定と使用](./ex4.md)
 
 この演習では、iOS デバイスにモバイルアプリケーションをインストールし、デバイスにプッシュ通知を設定して配信します。
-
-[3.4.5 ビジネスイベントジャーニーの作成](./ex5.md)
-
-この演習では、以前その製品に興味を示したが、製品が在庫切れのため購入できなかった顧客に、SMS で在庫切れメッセージを配信するビジネスイベントを定義します。
 
 [概要と利点](./summary.md)
 

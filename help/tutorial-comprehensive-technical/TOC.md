@@ -5,9 +5,9 @@ user-guide-description: サードパーティシステムへの接続を含む�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
+source-git-commit: c8f9d5258d530ef12905113dd2aea4e179d0cca9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '915'
 ht-degree: 4%
 
 ---
@@ -132,10 +132,9 @@ ht-degree: 4%
    + 3.4 Adobe Journey Optimizer：イベントベースのジャーニー{#module34}
       + [概要](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/journeyoptimizer.md)
       + [3.4.1 トリガーベースのジャーニーの設定 – 注文の確認](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex1.md)
-      + [3.4.2 バッチベースのニュースレタージャーニーの設定](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
-      + [3.4.3 メールメッセージでのパーソナライゼーションの適用](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
+      + [3.4.2 キャンペーンの設定](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
+      + [3.4.3 メールメッセージでのセグメントベースのパーソナライゼーションの適用](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
       + [3.4.4 プッシュ通知の設定と使用](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
-      + [3.4.5 ビジネスイベントジャーニーの作成](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex5.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}

@@ -4,10 +4,10 @@ description: iOSのプッシュ通知の設定と使用
 kt: 5342
 doc-type: tutorial
 exl-id: a49fa91c-5235-4814-94c1-8dcdec6358c5
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 6%
+source-wordcount: '1845'
+ht-degree: 7%
 
 ---
 
@@ -39,8 +39,6 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 これらのデータセットは、画面左側のメニューにある **[!UICONTROL データセット]** に移動すると見つかります。 システムデータセットを表示するには、フィルターアイコンをクリックします。
 
-![データ取得](./images/menudsjo.png)
-
 「**システムデータセットを表示** オプションを有効にして、**AJO** を検索します。 プッシュ通知に使用するデータセットが表示されます。
 
 ![データ取得](./images/menudsjo1.png)
@@ -49,7 +47,7 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
 
-左側のメニューで、**[!UICONTROL データストリーム]** に移動し、[ 演習 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリーム（`--aepUserLdap-- - Demo System Datastream (Mobile)` という名前）を検索します。 クリックして開きます。
+左側のメニューで、**[!UICONTROL データストリーム]** に移動し、[ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームを検索します。名前は `--aepUserLdap-- - Demo System Datastream (Mobile)` です。 クリックして開きます。
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1a.png)
 
@@ -59,13 +57,19 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 次に、定義したデータストリーム設定と、どのデータセットイベントおよびプロファイル属性に保存されるかを確認します。
 
-![ データストリームに名前を付けて保存する ](./images/edgeconfig2.png)
+また、まだ有効になっていない場合は、次のオプションを有効にする必要があります。
 
-変更は必要ありません。これで、データストリームをモバイルのデータ収集クライアントプロパティで使用する準備が整いました。
+- **Offer Decisioning**
+- **パーソナライゼーションの宛先**
+- **Adobe Journey Optimizer**
+
+「**保存**」をクリックします。
+
+![ データストリームに名前を付けて保存する ](./images/edgeconfig2.png)
 
 ## 3.4.4.3 モバイルのデータ収集プロパティを確認する
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 [ 演習 0.1](./../../../modules/gettingstarted/gettingstarted/ex1.md) の一部として、2 つのデータ収集プロパティが作成されました。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 [ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex1.md) の一部として、2 つのデータ収集プロパティが作成されました。
 これらのデータ収集クライアントプロパティは、既に以前のモジュールの一部として使用しています。
 
 クリックして、モバイルのデータ収集プロパティを開きます。
@@ -96,7 +100,7 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 ## 3.4.4.4 アプリサーフェスの設定の確認
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで **アプリサーフェス** に移動し、「**DX Demo App APNS** のアプリサーフェスを開きます。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで **アプリサーフェス** に移動し、「DX Demo App APNS **のアプリサーフェスを開き** す。
 
 ![Adobe Experience Platform のデータ収集](./images/appsf.png)
 
@@ -130,21 +134,17 @@ iOSとAndroid用に設定されたアプリサーフェスが表示されます�
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
 
-演習 0.1 の後、この結果が得られました。 クリックして、作成された **モバイル小売プロジェクト** を開きます。
+**はじめに** の節を実行すると、次の結果が得られます。 クリックして、作成された **モバイル小売プロジェクト** を開きます。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
 
-誤ってブラウザーウィンドウを閉じてしまった場合や、今後のデモまたはイネーブルメントセッションの際には、[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) にアクセスして web サイトプロジェクトにアクセスすることもできます。 Adobe IDでログインすると、このが表示されます。 モバイルアプリプロジェクトをクリックして開きます。
+誤ってブラウザーウィンドウを閉じてしまった場合や、今後のデモまたはイネーブルメントセッションの際には、[https://dsn.adobe.com/projects](https://dsn.adobe.com/projects) にアクセスして web サイトプロジェクトにアクセスすることもできます。 Adobe IDでログインすると、このが表示されます。 モバイルアプリプロジェクトをクリックして開きます。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
 
-その後、これが表示されます。 **統合** をクリックします。
+次に、「**実行** をクリックします。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8aa.png)
-
-演習 0.1 で作成したモバイルのデータ収集プロパティを選択する必要があります。次に、「**実行** をクリックします。
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8b.png)
+![DSN](./images/web8b.png)
 
 QR コードを含むこのポップアップが表示されます。 モバイルアプリ内からこの QR コードをスキャンします。
 
@@ -160,7 +160,7 @@ QR コードを含むこのポップアップが表示されます。 モバイ�
 
 ここでは、QR コードをスキャンして、モバイルデバイスを AEP Assurance セッションに接続する必要があります。
 
-AEP Assurance セッションを開始するには、[https://experience.adobe.com/#/@experienceplatform/griffon](https://experience.adobe.com/#/@experienceplatform/griffon) に移動します。 **セッションを作成** をクリックします。
+AEP Assurance セッションを開始するには、[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで **0}Assurance} をクリックします。**&#x200B;次に、「**セッションを作成**」をクリックします。
 
 ![Adobe Experience Platform のデータ収集](./images/griffon3.png)
 
@@ -171,7 +171,7 @@ AEP Assurance セッションを開始するには、[https://experience.adobe.c
 次の値を入力します。
 
 - セッション名：`--aepUserLdap-- - push debugging` を使用して、ldap を ldap に置き換えます
-- ベース URL: **dxdemo://default** を使用します
+- ベース URL：使用 `dxdemo://default`
 
 「**次へ**」をクリックします。
 
@@ -193,21 +193,27 @@ PIN コードを入力するように求めるポップアップ画面が表示�
 
 ![Adobe Experience Platform のデータ収集](./images/ipadPushTest11.png)
 
-AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセスすることがわかります。
+Assuranceでは、デバイサーがAssurance セッションにアクセスすることがわかります。 「**完了**」をクリックします。
 
 ![Adobe Experience Platform のデータ収集](./images/griffon7.png)
 
-**プッシュデバッグ** に移動します。 このようなものが表示されます。
+**プッシュデバッグ** に移動します。
+
+>[!NOTE]
+>
+>左側のメニューに **プッシュデバッグ** が見つからない場合は、画面の左下にある **設定** をクリックし、メニューに **プッシュデバッグ** を追加します。
+
+このようなものが表示されます。
 
 ![Adobe Experience Platform のデータ収集](./images/griffon10.png)
 
 説明：
 
 - 最初の列 **クライアント** には、iOS デバイスで使用可能な識別子が表示されます。 ECID とプッシュトークンが表示されます。
+- 2 番目の列には、演習 **3.4.5.4 Launch でのアプリ設定の作成** の一部として設定された **App Store資格情報と設定** が表示されます。
 - 2 番目の列には、**プロファイル** 情報と、プッシュトークンが格納されているプラットフォーム（APNS または APNSSandbox）に関する追加情報が表示されます。 「**Inspect プロファイル**」ボタンをクリックすると、Adobe Experience Platformに移動し、完全なリアルタイム顧客プロファイルが表示されます。
-- 3 番目の列には、演習 **3.4.5.4 Launch でのアプリ設定の作成** の一部として設定された **アプリ設定** が表示されます。
 
-プッシュ設定をテストするには、「**プッシュ通知を送信** ボタンをクリックします。
+プッシュ設定をテストするには、「**テストプッシュ設定を送信** ボタンに移動します。 「**テストプッシュ通知を送信**」をクリックします
 
 ![Adobe Experience Platform のデータ収集](./images/griffon11.png)
 
@@ -217,11 +223,11 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 
 ![Adobe Experience Platform のデータ収集](./images/ipadPush2.png)
 
-プッシュ通知が届いた場合は、設定が正しく、正常に動作しています。
+プッシュ通知を受け取った場合は、設定が正しく、正常に機能しており、実際のジャーニーを作成して、Journey Optimizerからプッシュメッセージを送信できるようになりました。
 
 ## 3.4.4.6 新しいイベントの作成
 
-メニューで、**ジャーニー管理** に移動し、[**イベント** の下の **管理** をクリックします。
+**Journey Optimizer** に移動します。 左側のメニューで、**設定** に移動し、**イベント** の下の **管理** をクリックします。
 
 ![ACOP](./images/acopmenu.png)
 
@@ -230,32 +236,19 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 ![ACOP](./images/add.png)
 
 空のイベント設定が表示されます。
-
-![ACOP](./images/emptyevent.png)
-
 まず、イベントに `--aepUserLdap--StoreEntryEvent` のような名前を付け、説明を `Store Entry Event` に設定します。
+次に「**イベントタイプ** の選択です。 **単一** を選択します。
+次に、「**イベント ID タイプ** の選択です。 「**システム生成**」を選択します。
 
 ![ACOP](./images/eventname.png)
 
-次に「**イベントタイプ** の選択です。 **単一** を選択します。
-
-![ACOP](./images/eventidtype1.png)
-
-次に、「**イベント ID タイプ** の選択です。 「**システムで生成**」を選択します
-
-![ACOP](./images/eventidtype.png)
-
 次に、スキーマを選択します。 この演習では、スキーマを準備しました。 スキーマ `Demo System - Event Schema for Mobile App (Global v1.1) v.1` を使用してください。
-
-![ACOP](./images/eventschema.png)
 
 スキーマを選択すると、「**ペイロード**」セクションで多数のフィールドが選択されます。 これで、イベントが完全に設定されました。
 
-![ACOP](./images/eventpayload.png)
+「**保存**」をクリックします。
 
-この画像が表示されます。 「**保存**」をクリックします。
-
-![ACOP](./images/eventsave.png)
+![ACOP](./images/eventschema.png)
 
 これで、イベントが設定され、保存されました。 イベントを再度クリックすると、**イベントを編集** 画面が再度開きます。
 
@@ -267,14 +260,12 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 
 これで、期待されるペイロードの例が表示されます。
 
-![ACOP](./images/fullpayload.png)
-
 イベントには一意のオーケストレーション eventID があり、`_experience.campaign.orchestration.eventID` が表示されるまでペイロードを下にスクロールすると見つかります。
 
 ![ACOP](./images/payloadeventID.png)
 
 イベント ID は、次の手順で作成するジャーニーをトリガーにするためにAdobe Experience Platformに送信する必要があるものです。 次の手順で必要になるので、この eventID を書き留めます。
-`"eventID": "e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633"`
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
 **OK** をクリックし、続いて **キャンセル** をクリックします。
 
@@ -284,20 +275,21 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 
 ![DSN](./images/sjourney1.png)
 
-その後、これが表示されます。 ジャーニーに名前を付けます。 `--aepUserLdap-- - Store Entry journey`.を使用します。「**OK**」をクリックします。
+その後、これが表示されます。 ジャーニーに名前を付けます。 `--aepUserLdap-- - Store Entry journey`.を使用します。「**保存**」をクリックします。
 
 ![DSN](./images/sjourney3.png)
 
-まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--aepUserLdap--StoreEntryEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**OK**」をクリックします。
+まず、ジャーニーの出発点としてイベントを追加する必要があります。 イベント `--aepUserLdap--StoreEntryEvent` を検索して、キャンバスにドラッグ&amp;ドロップします。 「**保存**」をクリックします。
 
 ![DSN](./images/sjourney4.png)
 
-次に、**アクション** で **プッシュ** アクションを検索します。
-**プッシュ** アクションをキャンバスにドラッグ&amp;ドロップします。
-
-![DSN](./images/sjourney5.png)
+次に、**アクション** で **プッシュ** アクションを検索します。 **プッシュ** アクションをキャンバスにドラッグ&amp;ドロップします。
 
 **カテゴリ** を **マーケティング** に設定し、プッシュ通知の送信を可能にするプッシュサーフェスを選択します。 この場合、選択するメールサーフェスは **プッシュ - iOS - Android** です。
+
+>[!NOTE]
+>
+>前に説明したように、**アプリサーフェス** を使用しているJourney Optimizer内にチャネルが存在する必要があります。
 
 ![ACOP](./images/journeyactions1push.png)
 
@@ -310,8 +302,6 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 ![プッシュ](./images/bp5.png)
 
 その後、これが表示されます。 リアルタイム顧客プロファイルから任意のプロファイル属性を直接選択できるようになりました。
-
-![プッシュ](./images/bp6.png)
 
 フィールド **名** を検索し、フィールド **名** の横にある **+** アイコンをクリックします。 次に、名のパーソナライゼーショントークンが追加されています：**{{profile.person.name.firstName}}**。
 
@@ -335,7 +325,7 @@ AEP Assuranceで、デバイサーが AEP Assurance セッションにアクセ�
 
 ![Journey Optimizer](./images/bp12a.png)
 
-「**OK**」をクリックして、プッシュアクションを閉じます。
+「**保存**」をクリックして、プッシュアクションを閉じます。
 
 ![DSN](./images/sjourney8.png)
 
@@ -363,15 +353,13 @@ DX Demo 2.0 モバイルアプリケーションで、**設定** 画面に移動
 
 **ストアエントリ** アイコンをクリックした後、必ずアプリを直ちに閉じてください。閉じないと、プッシュメッセージは表示されません。
 
-![DSN](./images/demo2.png)
-
 数秒後に、メッセージが表示されます。
 
-![DSN](./images/demo3.png)
+![DSN](./images/demo2.png)
 
 この演習は完了しました。
 
-次の手順：[3.4.5 ビジネスイベントジャーニーの作成 ](./ex5.md)
+次の手順：[ 概要とメリット ](./summary.md)
 
 [モジュール 3.4 に戻る](./journeyoptimizer.md)
 
