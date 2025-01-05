@@ -4,10 +4,10 @@ description: Offer decisioning - オファーと意思決定 ID の設定
 kt: 5342
 doc-type: tutorial
 exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 3%
+source-wordcount: '1425'
+ht-degree: 4%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 3%
 
 この演習では、4 つの **パーソナライズされたオファー** を作成します。 これらのオファーを作成する際に考慮する詳細を次に示します。
 
-| 名前 | 日付範囲 | メールの画像リンク | Web の画像リンク | テキスト | 優先度 | 実施要件 | 言語 |
-|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--aepUserLdap-- - Nadia Elements Shell` | 今日 – 1 か月後 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all – 女性のお客様 | 英語（米国） |
-| `--aepUserLdap-- - Radiant Tee` | 今日 – 1 か月後 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all – 女性のお客様 | 英語（米国） |
-| `--aepUserLdap-- - Zeppelin Yoga Pant` | 今日 – 1 か月後 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all – 男性の顧客 | 英語（米国） |
-| `--aepUserLdap-- - Proteus Fitness Jackshirt` | 今日 – 1 か月後 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all – 男性の顧客 | 英語（米国） |
+| 名前 | 日付範囲 | メールの画像リンク | Web の画像リンク | テキスト | 優先度 | 実施要件 | 言語 | キャッピング頻度 | 画像名 |
+|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|:-------:|:-------:|
+| `--aepUserLdap-- - AirPods Max` | 今日 – 1 か月後 | https://bit.ly/4a9RJ5d | Assets ライブラリから選択 | `{{ profile.person.name.firstName }}, 10% discount on AirPods Max` | 25 | all – 女性のお客様 | 英語（米国） | 3 | Apple AirPods Max- Female.jpg |
+| `--aepUserLdap-- - Galaxy S24` | 今日 – 1 か月後 | https://bit.ly/3W8yuDv | Assets ライブラリから選択 | `{{ profile.person.name.firstName }}, 5% discount on Galaxy S24` | 15 | all – 女性のお客様 | 英語（米国） | 3 | Galaxy S24 - Female.jpg |
+| `--aepUserLdap-- - Apple Watch` | 今日 – 1 か月後 | https://bit.ly/4fGwfxX | https://bit.ly/4fGwfxX | `{{ profile.person.name.firstName }}, 10% discount on Apple Watch` | 25 | all – 男性の顧客 | 英語（米国） | 3 | Apple ウォッチ - Male.jpg |
+| `--aepUserLdap-- - Galaxy Watch 7` | 今日 – 1 か月後 | https://bit.ly/4gTrkeo | Assets ライブラリから選択 | `{{ profile.person.name.firstName }}, 5% discount on Galaxy Watch 7` | 15 | all – 男性の顧客 | 英語（米国） | 3 | Galaxy Watch7 - Male.jpg |
 
 {style="table-layout:auto"}
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 サンドボックスを切り替えるには、「**実稼動製品（VA7）」をクリックし** リストからサンドボックスを選択します。 この例では、サンドボックスの名前は **AEP イネーブルメント FY22** です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -46,11 +46,39 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/offers3.png)
 
-この場合、オファー `--aepUserLdap-- - Nadia Elements Shell` を設定する必要があります。 上記のテーブルの情報を使用して、フィールドに入力します。 この例では、パーソナライズされたオファーの名前は **vangeluw - Nadia Elements Shell** です。 また、**開始日時** を昨日に、**終了日時** を今後 1 か月の日付に設定します。
+この場合、オファー `--aepUserLdap-- - AirPods Max` を設定する必要があります。 上記のテーブルの情報を使用して、フィールドに入力します。 この例では、パーソナライズされたオファーの名前は **vangeluw - AirPods Max** です。 また、**開始日時** を今日に設定し、**終了日時** を今後 1 か月の日付に設定します。
 
 完了したら、次のようになります。 「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/offers4.png)
+
+次の画面が表示されます。
+
+![ 決定ルール ](./images/constraints.png)
+
+**定義済みの決定ルール別** を選択し、「**+**」アイコンをクリックしてルール **すべて – 女性顧客** を追加します。
+
+上記の表に示すように、**優先度** を入力します。 次に、「**+ キャッピングを作成」をクリックして** このオファーを顧客に表示できる回数を定義します。
+
+![ 決定ルール ](./images/constraints1.png)
+
+キャッピングの場合は、次のオプションを選択します。
+
+- **キャッピングイベントを選択**:**決定イベント**
+- **キャッピングタイプ**:**プロファイルあたり（各プロファイルにキャップを適用）**
+- **キャッピングイベント数**:**3**
+- **キャッピング頻度のリセット**: **毎日**
+- **ごと**: **1 日**
+
+これにより、このオファーが 1 人の顧客について 1 日に 3 回以上表示されなくなります。
+
+「**作成**」をクリックします。
+
+![ 決定ルール ](./images/constraints2.png)
+
+その後、ここに戻ります。 「**次へ**」をクリックします。
+
+![ 決定ルール ](./images/constraints3.png)
 
 ここで、**表示域** を作成する必要があります。 表示域は、**プレースメント** と実際のアセットの組み合わせです。
 
@@ -67,42 +95,30 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/addcontent2.png)
 
-次に、Assets ライブラリのポップアップが表示されるので、**enablement-assets** フォルダーで画像ファイル **nadia-web.png** を選択します。 次に、「**選択**」をクリックします。
+次に、Assets ライブラリのポップアップが表示されます。**enablement-assets** フォルダーに移動して、画像ファイル **Apple AirPods Max - Female.jpg** を選択します。 次に、「**選択**」をクリックします。
 
 ![ 決定ルール ](./images/addcontent3.png)
 
-次の画面が表示されます。
+その後、これが表示されます。 「**+表示域を追加**」をクリックします。
 
 ![ 決定ルール ](./images/addcontentrep20.png)
-
-「**+表示域を追加**」をクリックします。
-
-![ 決定ルール ](./images/addrep.png)
 
 **表示域 2** について、次を選択します。
 
 - チャネル：メール
 - プレースメント : メール – 画像
 - コンテンツ : URL
-- 公開場所：上記の表の列 **メールの画像リンク** から URL をコピーします
+- 公開場所：**アセットライブラリ** を選択します。 **参照** をクリックします
 
 ![ 決定ルール ](./images/addcontentrep21.png)
 
-または、コンテンツの **アセットライブラリ** を選択し、「**参照** をクリックすることもできます。
-
-![ 決定ルール ](./images/addcontent2b.png)
-
-次に、Assets ライブラリのポップアップが表示されるので、**enablement-assets** フォルダーに移動して、画像ファイル **nadia-email.png** を選択します。 次に、「**選択**」をクリックします。
+次に、Assets ライブラリのポップアップが表示されます。**enablement-assets** フォルダーに移動して、画像ファイル **Apple AirPods Max - Female.jpg** を選択します。 次に、「**選択**」をクリックします。
 
 ![ 決定ルール ](./images/addcontent3b.png)
 
-次の画面が表示されます。
+その後、これが表示されます。 次に、「**+表示域を追加**」をクリックします。
 
 ![ 決定ルール ](./images/addcontentrep20b.png)
-
-次に、「**+表示域を追加**」をクリックします。
-
-![ 決定ルール ](./images/addrep.png)
 
 **表示域 3** について、次を選択します。
 
@@ -111,7 +127,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 次に、コンテンツを追加する必要があります。 この場合、コールトゥアクションとして使用するテキストを追加することを意味します。
 
-**コンテンツを追加** をクリックします。
+**カスタム** を選択し、「**コンテンツを追加**」をクリックします。
 
 ![ 決定ルール ](./images/addcontentrep31.png)
 
@@ -119,9 +135,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/addcontent3text.png)
 
-**カスタムテキスト** を選択し、次のフィールドに入力します。
-
-上記のテーブルの **テキスト** フィールドを見て、ここにテキストを入力します。この場合は、「`{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell`」とします。
+上記のテーブルの **テキスト** フィールドを見て、ここにテキストを入力します。この場合は、「`{{ profile.person.name.firstName }}, 10% discount on AirPods Max`」とします。
 
 また、任意のプロファイル属性を選択し、オファーテキストの動的フィールドとして含めることもできます。 この例では、「`{{ profile.person.name.firstName }}`」フィールドにより、このオファーを受け取る顧客の名がオファーテキストに確実に含まれます。
 
@@ -133,23 +147,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/addcontentrep3textdone.png)
 
-次の画面が表示されます。
-
-![ 決定ルール ](./images/constraints.png)
-
-**定義済みの決定ルール別** を選択し、「**+**」アイコンをクリックしてルール **すべて – 女性顧客** を追加します。
-
-![ 決定ルール ](./images/constraints1.png)
-
-その後、これが表示されます。 上記の表に示すように、**優先度** を入力します。 「**次へ**」をクリックします。
-
-![ 決定ルール ](./images/constraints2.png)
-
-次に、新しい **パーソナライズされたオファー** の概要が表示されます。
+次に、新しい **パーソナライズされたオファー** の概要が表示されます。 「**完了**」をクリックします。
 
 ![ 決定ルール ](./images/offeroverview.png)
 
-最後に、「**保存して承認**」をクリックします。
+**保存して承認** をクリックします。
 
 ![ 決定ルール ](./images/saveapprove.png)
 
@@ -157,7 +159,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/offeroverview1.png)
 
-ここで、上記の手順を繰り返して、Radiant Tee、Zeppelin Yoga Pant、Proteus Fitness Jackshirt という製品の 3 つの他のパーソナライズされたオファーを作成する必要があります。
+ここで、上記の手順を繰り返して、上記の表にある製品の他の 3 つのパーソナライズされたオファーを作成します。
 
 完了すると、**パーソナライズされたオファー** の **オファーの概要** 画面にすべてのオファーが表示されます。
 
@@ -167,11 +169,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 4 つのパーソナライズされたオファーを作成したら、**フォールバックオファー** を設定する必要があります。
 
-**オファー** 表示になっていることを確認します。
-
-![ 最終オファー ](./images/finaloffers.png)
-
-「**+ オファーを作成**」をクリックします。
+**オファー** ビューにいることを確認します。 「**+ オファーを作成**」をクリックします。
 
 ![ 決定ルール ](./images/createoffer.png)
 
@@ -179,11 +177,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/foffers2.png)
 
-次の画面が表示されます。
-
-![ 決定ルール ](./images/foffers3.png)
-
-フォールバックオファーの名前を入力：`--aepUserLdap-- - Luma Fallback Offer`。 「**次へ**」をクリックします。
+その後、これが表示されます。 フォールバックオファーの名前を入力：`--aepUserLdap-- - CitiSignal Fallback Offer`。 「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/foffers4.png)
 
@@ -191,68 +185,51 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **表示域 1** について、次を選択します。
 
-- チャネル : Web
-- プレースメント : Web – 画像
-- コンテンツ : URL
-- 公開場所：`https://bit.ly/3nBOt9h`
+- **チャネル**: **Web**
+- **プレースメント**: **Web – 画像**
+- **コンテンツ**: **アセットライブラリ**
+
+**参照** をクリックして、画像を選択します。
 
 ![ 決定ルール ](./images/addcontent1fb.png)
 
-または、コンテンツの **アセットライブラリ** を選択し、「**参照** をクリックすることもできます。
-
-![ 決定ルール ](./images/addcontent2fb.png)
-
-次に、Assets ライブラリのポップアップが表示されます。**enablement-assets** フォルダーに移動して、画像ファイル **spriteyogastroaps-web.png** を選択します。 次に、「**選択**」をクリックします。
+次に、Assets ライブラリのポップアップが表示されます。**citi-signal-images** フォルダーに移動して、画像ファイル **App-Banner-Ad.jpg** を選択します。 次に、「**選択**」をクリックします。
 
 ![ 決定ルール ](./images/addcontent3fb.png)
 
-次の画面が表示されます。
+その後、これが表示されます。 「**+表示域を追加**」をクリックします。
 
 ![ 決定ルール ](./images/addcontentrep20fb.png)
 
 **表示域 2** について、次を選択します。
 
-- チャネル：メール
-- プレースメント : メール – 画像
-- コンテンツ : URL
-- 公開場所：`https://bit.ly/3nF4qvE`
+- **チャネル**: **メール**
+- **プレースメント**: **メール – 画像**
+- **コンテンツ**: **アセットライブラリ**
+
+**参照** をクリックして、画像を選択します。
 
 ![ 決定ルール ](./images/addcontentrep21fb.png)
 
-または、コンテンツの **アセットライブラリ** を選択し、「**参照** をクリックすることもできます。
-
-![ 決定ルール ](./images/addcontent2bfb.png)
-
-次に、Assets ライブラリのポップアップが表示されます。**enablement-assets** フォルダーに移動して、画像ファイル **spriteyogastaps-email.png** を選択します。 次に、「**選択**」をクリックします。
+次に、Assets ライブラリのポップアップが表示されます。**citi-signal-images** フォルダーに移動して、画像ファイル **App-Banner-Ad.jpg** を選択します。 次に、「**選択**」をクリックします。
 
 ![ 決定ルール ](./images/addcontent3bfb.png)
 
-次の画面が表示されます。
+その後、これが表示されます。 「**+表示域を追加**」をクリックします。
 
 ![ 決定ルール ](./images/addcontentrep20bfb.png)
 
-次に、「**+表示域を追加**」をクリックします。
-
-![ 決定ルール ](./images/addrep.png)
-
 **表示域 3** について、次を選択します。
 
-- チャネル：非デジタル
-- プレースメント：非デジタル – テキスト
-
-次に、コンテンツを追加する必要があります。 この場合、画像リンクを追加します。
+- **チャネル**: **非デジタル**
+- **プレースメント**: **非デジタル – テキスト**
+- **コンテンツ**: **カスタム**
 
 **コンテンツを追加** をクリックします。
 
 ![ 決定ルール ](./images/addcontentrep21text.png)
 
-このポップアップが表示されます。
-
-![ 決定ルール ](./images/addcontent2text.png)
-
-**カスタムテキスト** を選択し、次のフィールドに入力します。
-
-テキスト `{{ profile.person.name.firstName }}, discover our Sprite Yoga Straps!` を入力し、「保存 **をクリック** ます。
+このポップアップが表示されます。 テキスト `{{ profile.person.name.firstName }}, download the CitiSignal app now!` を入力し、「保存 **をクリック** ます。
 
 ![ 決定ルール ](./images/faddcontent3text.png)
 
@@ -282,8 +259,10 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 このポップアップが表示されます。 このようにコレクションを設定します。 「**次へ**」をクリックします。
 
-- コレクション名：使用 `--aepUserLdap-- - Luma Collection`
+- コレクション名：使用 `--aepUserLdap-- - CitiSignal Collection`
 - **静的コレクションを作成** を選択します。
+
+「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/createcollectionpopup1.png)
 
@@ -299,18 +278,14 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 決定は、プレースメント、パーソナライズされたオファーのコレクション、フォールバックオファーを組み合わせ、最終的にOffer decisioningエンジンで使用し、優先度、実施要件の制約、合計/ユーザーキャッピングなど、個々のパーソナライズされたオファーの特性に基づいて、特定のプロファイルに最適なオファーを見つけます。
 
-**決定** を設定するには、**決定** に移動します。 「**+ アクティビティを作成**」をクリックします。
+**決定** を設定するには、**決定** に移動します。 「**+決定を作成**」をクリックします。
 
 ![ 決定ルール ](./images/activitydd.png)
 
-次の画面が表示されます。
+その後、これが表示されます。 このようなフィールドに入力します。 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/activity1.png)
-
-このようなフィールドに入力します。 「**次へ**」をクリックします。
-
-- 名前：`--aepUserLdap-- - Luma Decision`
-- 開始日時：昨日
+- 名前：`--aepUserLdap-- - CitiSignal Decision`
+- 開始日時：今日
 - 終了日時：今日+ 1 か月
 
 ![ 決定ルール ](./images/activity2.png)
@@ -323,23 +298,23 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ 決定ルール ](./images/activity3.png)
 
-コレクション `--aepUserLdap-- - Luma Collection` を選択し、「**追加**」をクリックします。
+コレクション `--aepUserLdap-- - CitiSignal Collection` を選択し、「**追加**」をクリックします。
 
 ![ 決定ルール ](./images/activity4text.png)
 
-その後、これが表示されます。 **-** ボタンをクリックして、新しい決定範囲を追加します。
+その後、これが表示されます。 「**+**」ボタンをクリックして、新しい決定範囲を追加します。
 
 ![ 決定ルール ](./images/activity5text.png)
 
-プレースメント **Web – 画像** を選択し、評価条件の下にコレクション `--aepUserLdap-- - Luma Collection` を追加します。 次に、「**+**」ボタンを再度クリックして、新しい決定範囲を追加します。
+プレースメント **Web – 画像** を選択し、評価条件の下にコレクション `--aepUserLdap-- - CitiSignal Collection` を追加します。 次に、「**+**」ボタンを再度クリックして、新しい決定範囲を追加します。
 
 ![ 決定ルール ](./images/activity6text.png)
 
-プレースメント **メール – 画像** を選択し、評価条件の下でコレクション `--aepUserLdap-- - Luma Collection` を追加します。 次に、「**次へ**」をクリックします。
+プレースメント **メール – 画像** を選択し、評価条件の下でコレクション `--aepUserLdap-- - CitiSignal Collection` を追加します。 次に、「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/activity4.png)
 
-次に、`--aepUserLdap-- - Luma Fallback Offer` という名前の **フォールバックオファー** を選択する必要があります。 「**次へ**」をクリックします。
+次に、`--aepUserLdap-- - CitiSignal Fallback Offer` という名前の **フォールバックオファー** を選択する必要があります。 「**次へ**」をクリックします。
 
 ![ 決定ルール ](./images/activity10.png)
 

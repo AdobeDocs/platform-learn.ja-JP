@@ -6,26 +6,20 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '344'
 ht-degree: 2%
 
 ---
 
 # 3.3 Offer decisioning
 
-**著者：[Rob In Der Maur](https://www.linkedin.com/in/ridmaur/)、[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 このモジュールでは、Adobe Journey OptimizerのOffer decisioning機能の実践チュートリアルを取得します。
 
 Adobe Journey Optimizerでは、パーソナライズされたオファーを作成し、Adobe Journey Optimizerにリンクされたすべての宛先に適切に配信できます。
 
 offer decisioningを使用すると、選択可能な選択肢の中から最適な選択肢を判断できます。 これらのオプションには、オファー、製品レコメンデーション、web エクスペリエンスのコンテンツコンポーネント、会話スクリプト、実行するアクションがあります。
-
-価値とカスタマージャーニーについて詳しくは、次のビデオをご覧ください。
-
->[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## 学習内容
 
@@ -50,7 +44,7 @@ offer decisioningを使用すると、選択可能な選択肢の中から最適
 
 この演習では、独自にパーソナライズされたオファーと独自の決定を設定し、それらを公開します。
 
-[3.3.3Offer decisioning用のデータ収集クライアントプロパティと Web SDK セットアップの準備](./ex3.md)
+[3.3.3 データ収集クライアントプロパティと web SDKのOffer decisioning設定を準備する](./ex3.md)
 
 この演習では、デモ Web サイトを使用して決定をテストします。
 

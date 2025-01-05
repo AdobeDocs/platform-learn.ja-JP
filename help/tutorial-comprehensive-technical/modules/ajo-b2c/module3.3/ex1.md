@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 4%
 
 ---
@@ -49,7 +49,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![プレースメント](./images/homedec.png)
 
-**コンポーネント** をクリックします。 プレースメント、タグ、ルール、ランキングなどが含まれたオファーメニューが表示されます。
+**コンポーネント** をクリックします。 プレースメント、コレクション修飾子、ルール、ランキングなどが表示されるようになります。
 
 ![プレースメント](./images/components.png)
 
@@ -61,7 +61,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 「**プレースメント**」タブで、オファーのプレースメントを定義できます。 決定を定義する際、結果として生成されるオファーの表示場所（チャネルタイプ）と形式（コンテンツタイプ）をプレースメントで定義します。
 
-Adobe Experience Platform インスタンスにプレースメントが表示されない場合は、以下およびスクリーンショットに示すようにプレースメントを作成してください。
+環境にプレースメントが表示されない場合は、以下およびスクリーンショットに示すようにプレースメントを作成してください。
 
 | 名前 | チャネルタイプ | コンテンツタイプ |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ Adobe Experience Platform インスタンスにプレースメントが表示さ
 
 ![ 決定規程 ](./images/rules.png)
 
-Adobe Experience Platformのセグメント環境が表示されます。
+Adobe Experience Platformのオーディエンス作成インターフェイスが表示されます。
 
 ![ 決定規程 ](./images/createrule1.png)
 
 これで、リアルタイム顧客プロファイルの結合スキーマの一部であるすべてのフィールドにアクセスし、任意のルールを作成できるようになりました。
 
-**オーディエンス**/``--aepTenantId--`` に移動すれば、既に定義されているオーディエンスをAdobe Experience Platformで簡単に再利用できるのも興味深い点です。
-
-![ 決定ルール ](./images/decisionruleaud.png)
+また、**オーディエンス**/``--aepTenantId--`` に移動すれば、既に定義されているオーディエンスをAdobe Experience Platformで簡単に再利用できます。
 
 次の画面が表示されます。
 
-![ 決定ルール ](./images/decisionruleaud1.png)
+![ 決定ルール ](./images/decisionruleaud.png)
 
 必要に応じて、独自のルールを設定できるようになりました。 この演習では、次の 2 つのルールが必要です。
 

@@ -2,9 +2,10 @@
 title: 概要
 description: データエンジニア、データアナリスト、データアーキテクト、データサイエンティスト、オーケストレーションエンジニアおよびマーケターが、Adobe Experience Platformとそのアプリケーションサービスのビジネス価値を完全に理解するための出発点です。
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 2%
 このチュートリアルの演習を完了すると、次のことができるようになります。
 
 - スキーマ、フィールドグループ、データセット、Id の設定
-- Adobe Experience Platform Data Collection プロパティを設定し、Adobe Experience Platform Data Collection に新しい Web SDK 拡張機能を設定します。
+- Adobe Experience Platform Data Collection プロパティを設定し、Adobe Experience Platform Data Collection に新しい web SDK拡張機能を設定します
 - Adobe Experience Platform Data Collection を使用したリアルタイムのAdobe Experience Platformへのデータのストリーミング
 - ワークフローを使用するか、ETL （抽出、変換、読み込み）アプリケーションを使用して、Adobe Experience Platformにデータをバッチ取得します
 - Adobe Experience Platformでのリアルタイム顧客プロファイルの視覚化と使用
@@ -67,6 +68,8 @@ Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [
 
 ## コンテンツ
 
+以下の内容のステータスを確認するには、[ ステータスページ ](./status.md) をご覧ください。
+
 [0.はじめに](./modules/gettingstarted/gettingstarted/getting-started.md)
 
 この基本モジュールでは、デモ環境にアクセスして使用できるように、すべてを設定します。
@@ -75,9 +78,9 @@ Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [
 
 ### 1. データ収集
 
-[1.1 Foundation - Adobe Experience Platform Data Collection および Web SDK のセットアップ](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
+[1.1 Foundation - Adobe Experience Platform Data Collection および Web SDKのセットアップ](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
 
-この基本モジュールでは、Adobe Experience Platform Data Collection と新しい Web SDK 拡張機能について説明します。
+この基本モジュールでは、Adobe Experience Platform データ収集と、新しい web SDK拡張機能について説明します。
 
 **時間的投資：** 30 分
 

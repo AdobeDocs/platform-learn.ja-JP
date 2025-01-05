@@ -5,9 +5,9 @@ user-guide-description: サードパーティシステムへの接続を含む�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c8f9d5258d530ef12905113dd2aea4e179d0cca9
+source-git-commit: b753a930bd2d81a14a97ef59c9ffc42991f0f3f6
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 4%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 4%
 
 + [チュートリアルの概要](/help/tutorial-comprehensive-technical/overview.md)
 + [完了](/help/tutorial-comprehensive-technical/completion.md)
++ [コンテンツステータス](/help/tutorial-comprehensive-technical/status.md)
 
 + はじめに {#gettingstarted}
    + はじめに {#gettingstarted}
