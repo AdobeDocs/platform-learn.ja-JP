@@ -3,10 +3,11 @@ title: Offer decisioning- デモ Web サイトを使用して意思決定をテ�
 description: デモ Web サイトを使用して決定をテスト
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5cc9f134-1434-4e76-9d26-9d73dbf6c0be
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 3%
+source-wordcount: '377'
+ht-degree: 2%
 
 ---
 
@@ -16,21 +17,21 @@ ht-degree: 3%
 
 デモ Web サイトプロジェクトをAdobe Targetに読み込むには、まず、Adobe Targetでデモ Web サイトプロジェクトを読み込むための特別なリンクを収集する必要があります。
 
-その場合は、[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects) にアクセスしてください。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
+その場合は、[https://dsn.adobe.com/projects](https://builder.adobedemo.com/projects) にアクセスしてください。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトをクリックして開きます。
 
 ![RTCDP](./images/builder1.png)
 
-この画面が表示されます。 「**共有**」をクリックします。
+この画面が表示されます。 **共有** に移動します。 **リンクを生成** をクリックし、リンクをクリップボードにコピーします。
 
 ![RTCDP](./images/builder2.png)
 
-**リンクを生成** をクリックし、リンクをクリップボードにコピーします。
-
-![RTCDP](./images/builder3.png)
-
-[https://bitly.com](https://bitly.com) に移動し、コピーしたリンクを貼り付けて、[**短縮**] をクリックします。 これで、次のような短縮リンクが表示されます。`https://bit.ly/3JxN7aG` そのリンクは、次の演習で必要になります。
+[https://bitly.com](https://bitly.com) に移動し、コピーしたリンクを貼り付けて、[**リンクを作成**] をクリックします。
 
 ![RTCDP](./images/builder4.png)
+
+これで、次のような短縮リンクが表示されます。`https://adobe.ly/3PpGcFk` そのリンクは、次の演習で必要になります。
+
+![RTCDP](./images/builder5.png)
 
 ## 3.3.4.2 収集
 
@@ -38,31 +39,23 @@ ht-degree: 3%
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/excl.png)
 
-**Adobe Target** のホームページには、既存のすべてのアクティビティが表示されます。
+**Adobe Target** のホームページには、既存のすべてのアクティビティが表示されます。 **アクティビティを作成** をクリックし、「**エクスペリエンスのターゲット設定**」をクリックします。
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatov.png)
 
-「**+ アクティビティを作成**」をクリックして、新しいアクティビティを作成します。
-
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatcr.png)
-
-**エクスペリエンスのターゲット設定** を選択します。
-
-![RTCDP](./images/exclatcrxt.png)
-
-次に、「**ビジュアル**」を選択し、「アクティビティ URL を入力 **フィールドに短縮リンクを貼り付け** す。 「**次へ**」をクリックします。
+次に、「**ビジュアル**」を選択し、「アクティビティ URL を入力 **フィールドに短縮リンクを貼り付け** す。 「**作成**」をクリックします。
 
 ![RTCDP](./images/exclatcrxt1.png)
 
 デモ Web サイトプロジェクトが Visual Experience Composer に読み込まれるのが確認できます。
 
+>[!NOTE]
+>
+>Web サイトが正しく読み込まれない場合は、Chrome Web ストアからChrome拡張機能 **Adobe Target VEC Helper** をインストールして有効にし、もう一度試してください。
+
 ![RTCDP](./images/vec1.png)
 
-**参照** モードに移動し、cookie の同意ポップアップで **すべて許可** をクリックします。
-
-![RTCDP](./images/vec2.png)
-
-テキスト **おすすめカテゴリ** を含む領域をクリックします。 「**前に挿入**」をクリックし、「**オファーの決定**」を選択します。
+Disney+ オファーを保持する領域をクリックします。 必ず完全な **コンテナ** を選択します。 「**前に挿入**」をクリックし、「**オファーの決定**」を選択します。
 
 ![RTCDP](./images/vec3.png)
 
@@ -70,11 +63,15 @@ ht-degree: 3%
 
 ![RTCDP](./images/vec4.png)
 
-次に、決定 `--aepUserLdap-- - Luma Decision` を選択します。 「**保存**」をクリックします。
+次に、決定 `--aepUserLdap-- - CitiSignal Decision` を選択します。 「**保存**」をクリックします。
 
 ![RTCDP](./images/vec5.png)
 
-その後、これが表示されます。 追加のテンプレートルール **URL****contains****your-project-name** を確認します。 **保存** をクリックします。
+その後、これが表示されます。 **ルールを確認** をクリックします。
+
+![RTCDP](./images/vec5a.png)
+
+追加のテンプレートルール **URL****contains****your-project-name** を確認します。 「**保存**」をクリックします。
 
 ![RTCDP](./images/vec6.png)
 
@@ -90,11 +87,9 @@ ht-degree: 3%
 
 ![RTCDP](./images/vec9.png)
 
-オファーが作成され、公開されます。
+オファーが作成され、公開されます。 オファーが公開されたら、アクティブ化できます。
 
-![RTCDP](./images/vec10.png)
-
-オファーが公開されたら、有効にできます。
+![RTCDP](./images/vec11.png)
 
 次の手順：[3.3.5 メールと SMS で決定を使用する ](./ex5.md)
 

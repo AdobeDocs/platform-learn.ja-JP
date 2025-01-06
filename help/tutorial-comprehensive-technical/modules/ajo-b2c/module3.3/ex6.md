@@ -3,10 +3,11 @@ title: Offer decisioning- API を使用した決定のテスト
 description: API を使用した決定のテスト
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 75515a3e-5df8-42ed-95dc-daae60ee9c72
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 1%
+source-wordcount: '384'
+ht-degree: 0%
 
 ---
 
@@ -20,105 +21,37 @@ ht-degree: 1%
 
 これで、デスクトップ上に次のファイルが作成されました。
 
-- [!UICONTROL _Module 14- Decisioning Service.postman_collection.json]
+- `_AJO- Decisioning Service.postman_collection.json`
 
 [ 演習 2.1.3 - Adobe I/Oに対するPostman認証 ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) では、Postmanをインストールしました。 この演習では、Postmanを再度使用する必要があります。
 
-Postmanを開きます。 **[!UICONTROL インポート]** をクリックします。
+Postmanを開き、ファイル `_AJO- Decisioning Service.postman_collection.json` を読み込みます。 このコレクションをPostmanで使用できるようになります。
 
 ![Adobe I/Oの新規統合 ](./images/postmanui.png)
 
-**[!UICONTROL ファイルをアップロード]** をクリックします。
-
-![Adobe I/Oの新規統合 ](./images/pm1.png)
-
-ファイル **[!UICONTROL _Module 14- Decisioning Service.postman_collection.json を選択し]** 「**[!UICONTROL 開く]**」をクリックします。
-
-![Adobe I/Oの新規統合 ](./images/pm2.png)
-
-このコレクションをPostmanで使用できるようになります。
-
-![Adobe I/Oの新規統合 ](./images/pm3.png)
-
 これで、API を使用してPostmanとの対話を開始するためにAdobe Experience Platformで必要なすべてが揃いました。
 
-### 3.3.6.1.1 リストコンテナ
+以下の API を使用する前に、演習 2.1.3 で設定したコレクション **Adobe IO - OAuth** を使用して再認証してください。
 
-クリックしてリクエスト **[!UICONTROL GET - リストコンテナ]** を開きます。
+![Adobe I/Oの新規統合 ](./images/postmanui1.png)
 
-**[!UICONTROL Params]** の下に、次の項目が表示されます。
 
-- プロパティ：`_instance.parentName==aepenablementfy22`
+### 3.3.6.2 顧客プロファイルのオファーの取得
 
-このパラメーターで **[!UICONTROL aepenablementfy22]** は、Adobe Experience Platformで使用されるサンドボックスの名前です。 使用する必要があるサンドボックスは `--aepSandboxName--` です。 テキスト **[!UICONTROL aepenablementfy22]** を `--aepSandboxName--` で置き換えます。
-
-サンドボックス名を置き換えたら、「**[!UICONTROL 送信]**」をクリックします。
-
-![OD API](./images/api2.png)
-
-これは応答で、指定したサンドボックスのオファーコンテナが表示されます。 以下に示すように **[!UICONTROL container instanceId]** をコピーして、コンピューター上のテキストファイルに書き留めてください。 次の演習では、この **[!UICONTROL container instanceId]** を使用する必要があります。
-
-![OD API](./images/api3.png)
-
-### 3.3.6.1.2 リストプレースメント
-
-クリックしてリクエスト **[!UICONTROL GET - リストのプレースメント]** を開きます。 「**[!UICONTROL 送信]**」をクリックします。
-
-![OD API](./images/api4.png)
-
-これで、オファーコンテナに使用可能なすべてのプレースメントが表示されます。 表示されているプレースメントは、[ 演習 3.3.1.3](./ex1.md) で示すように、Adobe Experience Platform UI で定義されました。
-
-![OD API](./images/api5.png)
-
-### 3.3.6.1.3 リスト決定ルール
-
-クリックしてリクエスト **[!UICONTROL GET - リストの決定ルール]** を開きます。 「**[!UICONTROL 送信]**」をクリックします。
-
-![OD API](./images/api6.png)
-
-応答には、[ 演習 3.3.1.4](./ex1.md) で示すように、Adobe Experience Platform UI で定義した決定ルールが表示されます。
-
-![OD API](./images/api7.png)
-
-### 3.3.6.1.4 パーソナライズされたオファーのリスト
-
-クリックしてリクエスト **[!UICONTROL GET - パーソナライズされたオファーのリスト]** を開きます。 「**[!UICONTROL 送信]**」をクリックします。
-
-![OD API](./images/api8.png)
-
-応答には、[ 演習 3.3.2.1](./ex2.md) のAdobe Experience Platform UI で定義したパーソナライズされたオファーが表示されます。
-
-![OD API](./images/api9.png)
-
-### 3.3.6.1.5 フォールバックオファーのリスト
-
-クリックしてリクエスト **[!UICONTROL GET - フォールバックオファーのリスト]** を開きます。 「**[!UICONTROL 送信]**」をクリックします。
-
-![OD API](./images/api10.png)
-
-応答には、[ 演習 3.3.2.2](./ex2.md) のAdobe Experience Platform UI で定義したフォールバックオファーが表示されます。
-
-![OD API](./images/api11.png)
-
-### 3.3.6.1.6 リストコレクション
-
-クリックしてリクエスト **[!UICONTROL 「GET - コレクションのリスト」を開き]** す。
-
-![OD API](./images/api12.png)
-
-応答には、[ 演習 3.3.2.3](./ex2.md) のAdobe Experience Platform UI で定義したコレクションが表示されます。
-
-![OD API](./images/api13.png)
-
-### 3.3.6.1.7 顧客プロファイルの詳細なオファーの取得
-
-クリックしてリクエスト **[!UICONTROL を開きます。POST – 顧客プロファイルの詳細オファーを取得]**。 このリクエストは前のリクエストと似ていますが、実際には、画像 URL、テキストなどの詳細を返します。
+クリックしてリクエスト **を開きます。POST – 顧客プロファイルのオファーを取得**。 最初に更新するのは、**x-sandbox-name** の **Header** 変数です。 `--aepSandboxName--` に設定してください。
 
 ![OD API](./images/api23.png)
 
-このリクエストでは、同様の要件を持つ前の演習と同様に、**[!UICONTROL xdm:placementId]** と **[!UICONTROL xdm:activityId]** の値を指定して、顧客の特定のオファー詳細を取得する必要があります。
+このリクエストでは、多数のフィールドを更新する必要があります。 **本文** に移動します。
 
-フィールド **[!UICONTROL xdm:activityId]** に入力する必要があります。 これは、以下に示すように、Adobe Experience Platform UI で取得できます。
+- **xdm:placementId**
+- **xdm:activityId**
+- **xdm:id**
+- **xdm:itemCount** （choice の値に変更します）
+
+![OD API](./images/api24.png)
+
+フィールド **xdm:activityId** に入力する必要があります。 これは、以下に示すように、Adobe Experience Platform UI で取得できます。
 
 ![OD API](./images/activityid.png)
 
@@ -126,11 +59,11 @@ Postmanを開きます。 **[!UICONTROL インポート]** をクリックしま
 
 ![OD API](./images/placementid.png)
 
-**[!UICONTROL 本文]** に移動し、オファーをリクエストする顧客のメールアドレスを入力します。 「**[!UICONTROL 送信]**」をクリックします。
+**xdm:id** フィールドに、オファーをリクエストする顧客プロファイルのメールアドレスを入力します。 すべての値を必要に応じて設定したら、「**[!UICONTROL 送信]**」をクリックします。
 
-![OD API](./images/api24.png)
+![OD API](./images/api24a.png)
 
-最後に、パーソナライズされたオファーの種類と、この顧客に表示する必要のあるアセットの結果を確認します。
+最後に、パーソナライズされたオファーの種類と、この顧客に表示する必要のあるアセットの結果を確認します。 この例では、2 つの項目がリクエストされ、ご覧のように、2 つのパーソナライズされたオファーが返されました。 Galaxy Watch のオファー 1 件と、Apple Watch 7 のオファー 1 件。
 
 ![OD API](./images/api25.png)
 
