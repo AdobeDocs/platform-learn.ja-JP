@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Customer Journey Analytics内のAdobe Experi
 description: Customer Journey Analytics - Customer Journey Analytics内のAdobe Experience Platform データセットの接続
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -41,23 +42,21 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 命名規則 `--aepUserLdap-- – Omnichannel Data Connection` を使用してください。
 
-例：`vangeluw - Omnichannel Data Connection`
-
-また、使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、`Bootcamp` すサンドボックスを選択します。 この例では、使用するサンドボックスは **Bootcamp** です。 また、**毎日のイベントの平均数** を **100 万未満** に設定する必要があります。
+また、使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、`--aepSandboxName--` すサンドボックスを選択します。 この例では、サンドボックスは **テクニカルインサイダー** です。 また、**毎日のイベントの平均数** を **100 万未満** に設定する必要があります。
 
 ![ デモ ](./images/cjasb.png)
 
-サンドボックスを選択すると、使用可能なデータセットが更新されます。
+サンドボックスを選択したら、データセットの追加を開始できます。 「**データセットを追加**」をクリックします。
 
 ![ デモ ](./images/cjasb1.png)
 
 ## 4.1.2.2 Adobe Experience Platform データセットの選択
 
-データセット `Demo System - Event Dataset for Website (Global v1.1)` を検索します。 「**+**」をクリックして、この接続にデータセットを追加します。
+データセット `Demo System - Event Dataset for Website (Global v1.1)` を検索します。 このデータセットのボックスを有効にして、この接続に追加します。
 
 ![ デモ ](./images/cja7.png)
 
-次に、`Demo System - Event Dataset for Voice Assistants (Global v1.1)` と `Demo System - Event Dataset for Call Center (Global v1.1)` のチェックボックスを検索してオンにします。
+同じ画面にとどまり、`Demo System - Event Dataset for Call Center (Global v1.1)` のチェックボックスを検索して確認します。
 
 これで完了です。 「**次へ**」をクリックします。
 
@@ -71,7 +70,7 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 ![ デモ ](./images/cja11.png)
 
-ご覧のように、ほとんどの場合、ユーザー ID が自動的に選択されます。 これは、Adobe Experience Platformのすべてのスキーマでプライマリ ID が選択されているからです。 例として、`Demo System - Event Schema for Call Center (Global v1.1)` のスキーマを見てみましょう。この場合、プライマリ ID が `phoneNumber` に設定されています。
+ご覧のように、ほとんどの場合、ユーザー ID が自動的に選択されます。 これは、Adobe Experience Platformのすべてのスキーマでプライマリ ID が選択されているからです。 例えば、`Demo System - Event Schema for Website (Global v1.1)` のスキーマで、プライマリ ID が `ecid` に設定されていることがわかります。
 
 ![ デモ ](./images/cja13.png)
 
@@ -83,7 +82,7 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 ユーザー ID フィールドの値が対応している限り、ユーザー ID フィールドの名前は重要ではありません。 あるデータセットに `email` が含まれ、別のデータセットに `emailAddress` が含まれ、これがユーザー ID として定義されているとします。 両方のデータセット `delaigle@adobe.com` 人物 ID フィールドの値が同じ場合、CJA はデータをステッチできます。
 
-現在、匿名の動作を既知の動作に関連付けるなど、他にもいくつかの制限があります。 よくある質問については、[FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html) をご覧ください。
+CJA に関する FAQ をここで確認し、ID ステッチのニュアンスを理解します。[FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
 
 ### ユーザー ID を使用したデータのステッチ
 
@@ -91,32 +90,38 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 ![ デモ ](./images/cja15.png)
 
-各データセットに移動して、ユーザー ID を更新します。
+各データセットに移動して、ユーザー ID を更新します。 次に、ドロップダウンリストで `email` を選択して、「ユーザー ID」フィールドに入力します。
 
 ![ デモ ](./images/cja12a.png)
 
-次に、ドロップダウンリストで `email` を選択して、「ユーザー ID」フィールドに入力します。
-
-![ デモ ](./images/cja17.png)
-
-3 つのデータセットをステッチしたら、続行する準備が整います。
+2 つのデータセットをステッチしたら、続行する準備が整います。
 
 | データセット | ユーザー ID |
 | ----------------- |-------------| 
 | デモシステム - Web サイトのイベントデータセット（グローバル v1.1） | メール |
-| デモシステム – 音声アシスタントのイベントデータセット（グローバル v1.1） | メール |
 | デモシステム – コールセンターのイベントデータセット（グローバル v1.1） | メール |
 
-また、すべてのデータセットで、次のオプションが有効になっていることを確認する必要があります。
+また、両方のデータセットで、次のオプションが有効になっていることを確認する必要があります。
 
 - すべての新しいデータをインポート
 - 既存のすべてのデータをバックフィル
+
+（2 番目のデータセットでは、これらのオプションを両方とも有効にすることを忘れないでください）
+
+また、データセットごとに **データソースタイプ** を選択する必要があります。
+
+以下は、データセットの設定です **デモシステム - Web サイトのイベントデータセット（グローバル v1.1）**。
+
+![ デモ ](./images/cja16a.png)
+
+以下は、データセットの設定です **デモシステム - Web サイトのイベントデータセット（グローバル v1.1）**。
 
 「**データセットを追加**」をクリックします。
 
 ![ デモ ](./images/cja16.png)
 
 「**保存**」をクリックして、次の演習に進みます。
+
 **接続** を作成した後、CJA でデータを使用できるようになるまで数時間かかる場合があります。
 
 ![ デモ ](./images/cja20.png)

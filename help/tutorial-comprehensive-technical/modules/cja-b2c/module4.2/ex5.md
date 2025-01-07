@@ -3,9 +3,10 @@ title: BigQuery Source コネクタを使用したAdobe Experience Platformで�
 description: BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取得と分析 – Customer Journey Analyticsを使用したGoogle Analyticsデータの分析
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3184'
 ht-degree: 2%
 
 ---
@@ -26,11 +27,7 @@ ht-degree: 2%
 
 Customer Journey Analyticsホームページで、「**連携**」に移動します。
 
-![ デモ ](./images/conn1.png)
-
 ここでは、CJA と Platform の間で行われたすべての異なる接続を確認できます。 これらの接続の目標は、Adobe Analyticsのレポートスイートと同じです。 ただし、データの収集は完全に異なります。 すべてのデータは、Adobe Experience Platform データセットから取得されます。
-
-![ デモ ](./images/2.png)
 
 **新しい接続を作成** をクリックします。
 
@@ -40,71 +37,45 @@ Customer Journey Analyticsホームページで、「**連携**」に移動し�
 
 ![ デモ ](./images/5.png)
 
-まず、使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、`--aepSandboxName--` すサンドボックスを選択します。 この例では、使用するサンドボックスは **AEP イネーブルメント FY21** です。
+名前には、`--aepUserLdap-- - GA + Loyalty Data Connection` を使用します。
 
-![ デモ ](./images/cjasb.png)
+使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、`--aepSandboxName--` すサンドボックスを選択します。 この例では、使用するサンドボックスは **テクニカルインサイダー** です。
 
-サンドボックスを選択すると、使用可能なデータセットが更新されます。
+**毎日のイベントの平均数** を **100 万未満** に設定します。
 
-![ デモ ](./images/cjasb1.png)
-
-左側のメニューに、使用可能なすべてのAdobe Experience Platform データセットが表示されます。 データセット `Demo System - Event Dataset for BigQuery (Global v1.1)` を検索します。 「**+**」をクリックして、この接続にデータセットを追加します。
+これで、データセットメニューでデータセットの追加を開始できます。 「**データセットを追加**」をクリックします。
 
 ![ デモ ](./images/6.png)
 
-追加すると、接続内のデータセットが表示されます。
+追加するデータセットは次のとおりです。
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-ここで、「ユーザー ID **を選択する必要があ** ます。 ユーザー ID として **loyaltyId** が選択されていることを確認してください。
+両方のデータセットを検索し、チェックボックスをオンにして、「**次へ**」をクリックします。
+
+![ デモ ](./images/d1.png)
+
+次の画面が表示されます。
 
 ![ デモ ](./images/8.png)
 
-これで、別のAdobe Experience Platform データセットを使用してGoogle Analyticsの web サイトインタラクションデータを強化します。
+データセット `Demo System - Event Dataset for BigQuery (Global v1.1)` の場合は、**ユーザー ID** を **loyaltyId** に変更し、**データソースタイプ** を **web データ** に設定します。 **すべての新しいデータをインポート** と **すべての既存データをバックフィル** の両方のオプションを有効にします。
 
-データセット `Demo System - Profile Dataset for Loyalty (Global v1.1)` データセットを検索し、この接続に追加します。
+![ デモ ](./images/d2.png)
 
-![ デモ ](./images/10.png)
+データセット `Demo System - Event Dataset for BigQuery (Global v1.1)` の場合は、**ユーザー ID** が **crmId** に設定されていることを確認し、**データソースタイプ** を **web データ** に設定します。 **すべての新しいデータをインポート** と **すべての既存データをバックフィル** の両方のオプションを有効にします。 「**データセットを追加**」をクリックします。
 
-次の画面が表示されます。
+![ デモ ](./images/d3.png)
 
-![ デモ ](./images/10a.png)
+君はここにいるよ。 「**保存**」をクリックします。
 
-両方のデータセットを結合するには、同じタイプの ID を含む **ユーザー ID** を選択する必要があります。 データセット `Demo System - Profile Dataset for Loyalty (Global v1.1)` では、**loyaltyId** を人物 ID として使用します。このデータセットには、`Demo System - Event Dataset for BigQuery (Global v1.1)` と同じタイプの ID が含まれており、**loyaltyId** も人物 ID として使用しています。
-
-![ デモ ](./images/12.png)
-
-「**次へ**」をクリックします。
-
-![ デモ ](./images/14.png)
-
-次の画面が表示されます。
-
-![ デモ ](./images/15.png)
-
-ここでは、接続に名前を付ける必要があります。
-
-命名規則 `ldap - GA + Loyalty Data Connection` を使用してください。
-
-例：`vangeluw - GA + Loyalty Data Connection`
-
-終了する前に、**今日から、この接続のすべてのデータセットについて、すべての新しいデータを自動的に読み込む」をアクティブ化してください。以下の画像のように** します。
-
-![ デモ ](./images/16.png)
-
-これにより、Adobe Experience Platformから CJA へのデータフローが 60 分ごとに開始されますが、大量のデータがある場合は最大 24 時間かかることがあります。
-
-履歴データもバックフィルする必要があるので、「**すべての既存データをインポート**」のチェックボックスをオンにして、「**毎日のイベントの平均数** で **100 万未満** を選択します。
-
-![ デモ ](./images/17.png)
+![ デモ ](./images/d4.png)
 
 **接続** を作成した後、CJA でデータを使用できるようになるまで数時間かかる場合があります。
 
-「**保存**」をクリックして、次の演習に進みます。
-
-![ デモ ](./images/cjasave.png)
-
 使用可能な接続のリストに接続が表示されます。
 
-![ デモ ](./images/18.png)
+![ デモ ](./images/d5.png)
 
 ## 4.2.5.2 データビューの作成
 
@@ -120,13 +91,9 @@ Customer Journey Analyticsホームページで、「**連携**」に移動し�
 - デジタル分析チームが 1 か国語しか話せるように、Google Analyticsの KPI と指標にはCustomer Journey Analyticsと同じ名前を使用します。
 - 1 つのマーケットのみ、1 つのブランド、またはモバイルデバイスのみのインスタンスデータを表示するようにフィルタリングされたデータビュー。
 
-**接続** 画面で、作成した接続の前にあるチェックボックスをオンにします。
+**接続** 画面で、作成した接続の前にあるチェックボックスをオンにします。 **データビューを作成** をクリックします。
 
 ![ デモ ](./images/exta.png)
-
-次に、「**データビューを作成**」をクリックします。
-
-![ デモ ](./images/extb.png)
 
 **データビューを作成** ワークフローにリダイレクトされます。
 
@@ -134,26 +101,23 @@ Customer Journey Analyticsホームページで、「**連携**」に移動し�
 
 これで、データビューの基本的な定義を設定できます。 タイムゾーン、セッションタイムアウト、データビューフィルタリング（Adobe Analyticsの仮想レポートスイートに似たセグメント化部分）などがあります。
 
-前の演習で作成した **接続** が既に選択されています。 接続名は `ldap - GA + Loyalty Data Connection` です。
+前の演習で作成した **接続** が既に選択されています。 接続名は `--aepUserLdap-- - GA + Loyalty Data Connection` です。
 
-![ デモ ](./images/ext5.png)
+次に、データビューに次の命名規則に従った名前を付けます：`--aepUserLdap-- - GA + Loyalty Data View`。
 
-次に、データビューに次の命名規則に従った名前を付けます：`ldap - GA + Loyalty Data View`。
-
-説明に同じ値を入力します：`ldap - GA + Loyalty Data View`。
+説明に同じ値を入力します：`--aepUserLdap-- - GA + Loyalty Data View`。
 
 分析またはビジュアライゼーションを行う前に、すべてのフィールド、ディメンション、指標とそのアトリビューション設定を含むデータビューを作成する必要があります。
 
-| フィールド | 命名規則 | 例 |
-| ----------------- |-------------|-------------|  
-| 名前の接続 | ldap - GA + ロイヤルティデータビュー | vangeluw - GA + ロイヤルティデータビュー |
-| 説明 | ldap - GA + ロイヤルティデータビュー | vangeluw - GA + ロイヤルティデータビュー |
-
-![ デモ ](./images/22.png)
+| フィールド | 命名規則 |
+| ----------------- |-------------|  
+| 名前の接続 | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA + ロイヤルティデータビュー |
+| 説明 | `--aepUserLdap-- - GA + Loyalty Data View` |
+| 外部 ID | `--aepUserLdap--GA` |
 
 **保存して続行** をクリックします。
 
-![ デモ ](./images/23.png)
+![ デモ ](./images/22.png)
 
 データビューにコンポーネントを追加できるようになりました。 ご覧のように、一部の指標およびディメンションは自動的に追加されます。
 

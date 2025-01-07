@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Customer Journey Analyticsを使用したビ
 description: Customer Journey Analytics - Customer Journey Analyticsを使用したビジュアライゼーション
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -24,11 +25,11 @@ ht-degree: 0%
 
 モジュール 7 - クエリサービスで行われるクエリの一部を取り上げ、SQL を使用したり、Analysis Workspaceのドラッグ&amp;ドロップ哲学にのみ依存したりすることなく、同じクエリなどを簡単に実行できることを確認します。
 
-[11.4 Data Preparation in Analysis Workspace](./ex4.md) で作成したプロジェクトを使用するので、[https://analytics.adobe.com](https://analytics.adobe.com) に移動します。
+[4.1.4 Analysis Workspaceのデータ準備 ](./ex4.md) で作成したプロジェクトを使用するので、[https://analytics.adobe.com](https://analytics.adobe.com) に移動します。
+
+クリックして、プロジェクト `--aepUserLdap-- - Omnichannel Analysis` を開きます。
 
 ![ デモ ](./images/prohome.png)
-
-プロジェクト `--aepUserLdap-- - Omnichannel Analysis` を開きます。
 
 プロジェクトを開き、データビューを選択し `--aepUserLdap-- - Omnichannel Analysis`、最初のビジュアライゼーションの作成を開始する準備が整います。
 
@@ -36,7 +37,7 @@ ht-degree: 0%
 
 ## 1 日あたりの製品表示数
 
-まず、データを分析するための適切な日付を選択する必要があります。 キャンバスの右側にあるカレンダードロップダウンに移動します。 クリックして、該当する日付範囲を選択します。
+まず第一に、データを分析するために適切な日付を選択する必要があります。 キャンバスの右側にあるカレンダードロップダウンに移動します。 クリックして、該当する日付範囲を選択します。
 
 ![ デモ ](./images/pro1.png)
 

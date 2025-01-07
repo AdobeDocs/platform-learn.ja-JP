@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Analysis Workspaceでのデータ準備
 description: Customer Journey Analytics - Analysis Workspaceでのデータ準備
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '758'
 ht-degree: 2%
 
 ---
@@ -32,12 +33,12 @@ Customer Journey Analyticsにより、このソリューションが Platform �
 
 ### プロジェクトの作成
 
-次に、最初の CJA プロジェクトを作成します。 CJA 内の「プロジェクト」タブに移動します。
-**新規作成** をクリックします。
+次に、最初の CJA ワークスペースを作成します。 CJA の「**Workspace**」タブに移動します。
+**プロジェクトを作成** をクリックします。
 
 ![ デモ ](./images/prmenu.png)
 
-その後、これが表示されます。 「**空のプロジェクト**」を選択し、「**作成**」をクリックします。
+その後、これが表示されます。 **空のWorkspace プロジェクト** を選択し、「**作成**」をクリックします。
 
 ![ デモ ](./images/prmenu1.png)
 
@@ -45,7 +46,7 @@ Customer Journey Analyticsにより、このソリューションが Platform �
 
 ![ デモ ](./images/premptyprojects.png)
 
-最初に、画面の右上隅で正しいデータビューを選択してください。 この例では、選択するデータビューは `vangeluwe - Omnichannel Data View` です。
+最初に、画面の右上隅で正しいデータビューを選択してください。 選択するデータビューは `--aepUserLdap-- - Omnichannel Data View` です。
 
 ![ デモ ](./images/prdv.png)
 
@@ -108,17 +109,17 @@ Customer Journey Analyticsにより、このソリューションが Platform �
 
 最後に、計算指標の名前と説明を変更します。
 
-| タイトル | 説明 |
-| ----------------- |-------------| 
-| コンバージョン率 | コンバージョン率 |
+| タイトル | 説明 | 外部 ID |
+| ----------------- |-------------| -------------| 
+| コンバージョン率 | コンバージョン率 | conversionRate |
 
-画面には次のようになります。
+これで完了です。 「**保存**」をクリックします。
 
 ![ デモ ](./images/calcbuildercr6.png)
 
-計算指標を **保存** することを忘れないでください。
+もう一度 **保存** をクリックします。
 
-![ デモ ](./images/pr9.png)
+![ デモ ](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3 計算Dimension：フィルター（セグメント化）と日付範囲
 

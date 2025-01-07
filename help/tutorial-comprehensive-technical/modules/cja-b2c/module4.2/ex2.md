@@ -3,9 +3,10 @@ title: BigQuery Source コネクタを使用したAdobe Experience Platformで�
 description: BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取得と分析 – BigQuery で最初のクエリを作成します
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -28,44 +29,42 @@ Google Analyticsデータが BigQuery の場合、ディメンション、指標
 
 [BigQuery コンソール ](https://console.cloud.google.com/bigquery) に移動します。
 
-![ デモ ](./images/ex3/1.png)
+![ デモ ](./images/ex31.png)
 
 **エクスプローラー** には、プロジェクト ID が表示されます。 プロジェクト ID をクリックします（**bigquery-public-data** データセットをクリックしないでください）。
 
-![ デモ ](./images/ex3/2.png)
+![ デモ ](./images/ex32.png)
 
 データセットがまだないことがわかるので、今すぐ作成します。
-**データセットを作成** をクリックします。
+「3 **...**」をクリックし、「**データセットを作成**」をクリックします。
 
-![ デモ ](./images/ex3/4.png)
+![ デモ ](./images/ex34.png)
 
 画面の右側に、**データセットを作成** メニューが表示されます。
 
-![ デモ ](./images/ex3/5.png)
+![ デモ ](./images/ex35.png)
 
 **データセット ID** には、次の命名規則を使用します。 その他のフィールドは、デフォルト設定のままにしてください。
 
 | 名前付け | 例 |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
-![ デモ ](./images/ex3/6.png)
+**データセットを作成** をクリックします。
 
-次に、「**データセットを作成**」をクリックします。
-
-![ デモ ](./images/ex3/7.png)
+![ デモ ](./images/ex36.png)
 
 データセットが作成された状態で、BigQuery コンソールに戻ります。
 
-![ デモ ](./images/ex3/8.png)
+![ デモ ](./images/ex38.png)
 
 ## 4.2.2.2 最初の SQL BigQuery を作成する
 
-次に、BigQuery で最初のクエリを作成します。 このクエリの目的は、Google Analyticsのサンプルデータを取得し、Adobe Experience Platformで取り込めるように変換することです。 「**エディター**」タブに移動します。
+次に、BigQuery で最初のクエリを作成します。 このクエリの目的は、Google Analyticsのサンプルデータを取得し、Adobe Experience Platformで取り込めるように変換することです。 「**名称未設定クエリ**」タブに移動します。
 
-![ デモ ](./images/ex3/9.png)
+![ デモ ](./images/ex39.png)
 
-次の SQL クエリをコピーして、そのクエリエディターに貼り付けてください。 クエリをお読みいただき、Google Analyticsの BigQuery 構文を理解してください。
+次の SQL クエリをコピーして、そのクエリエディターに貼り付けます。 クエリをお読みいただき、Google Analyticsの BigQuery 構文を理解してください。
 
 
 ```sql
@@ -232,29 +231,29 @@ GROUP BY
 
 準備が整ったら、「**実行** をクリックしてクエリを実行します。
 
-![ デモ ](./images/ex3/10.png)
+![ デモ ](./images/ex310.png)
 
 クエリの実行には数分かかることがあります。
 
 クエリの実行が完了すると、次の出力が **クエリ結果** に表示されます。
 
-![ デモ ](./images/ex3/12.png)
+![ デモ ](./images/ex312.png)
 
 ## 4.2.2.3 BigQuery SQL クエリの結果を保存する
 
 次の手順では、「結果を保存 **ボタンをクリックしてクエリの出力を保存し** す。
 
-![ デモ ](./images/ex3/13.png)
+![ デモ ](./images/ex313.png)
 
 出力の場所として、「**BigQuery テーブル**」を選択します。
 
-![ デモ ](./images/ex3/14.png)
+![ デモ ](./images/ex314.png)
 
 **プロジェクト名** と **データセット名** が事前入力された新しいポップアップが表示されます。 データセット名は、この演習の最初に作成したデータセットである必要があります（命名規則は次のとおりです）。
 
 | 名前付け | 例 |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 テーブル名を入力する必要があります。 次の命名規則を使用してください。
 
@@ -262,13 +261,13 @@ GROUP BY
 | ----------------- |------------- | 
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
-![ デモ ](./images/ex3/16.png)
-
 **保存** をクリックします。
+
+![ デモ ](./images/ex316.png)
 
 作成したテーブルでデータが準備できるようになるまで、時間がかかる場合があります。 数分後、ブラウザーを更新します。 データセット内に、BigQuery プロジェクト内の **エクスプローラー** の下にある `--aepUserLdap--_GAdataTableBigquery` テーブルが表示されます。
 
-![ デモ ](./images/ex3/19.png)
+![ デモ ](./images/ex319.png)
 
 次の演習に進みます。ここでは、このテーブルをAdobe Experience Platformに接続します。
 

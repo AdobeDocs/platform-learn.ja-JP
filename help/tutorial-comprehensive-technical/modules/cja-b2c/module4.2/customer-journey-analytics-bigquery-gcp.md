@@ -4,16 +4,14 @@ description: BigQuery Source コネクタを使用したAdobe Experience Platfor
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # 4.2 BigQuery Source Connector を使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析
-
-**著者：[Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/)、[Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 このモジュールでは、Google Cloud Platform の独自のインスタンスを設定し、Google Cloud Platform にサンプルデータを読み込んだ後、BigQuery Source コネクタを使用して、Google Cloud Platform からAdobe Experience Platformにデータを取り込みます。 最後に、Customer Journey Analyticsを使用して、そのデータを視覚化します。
 
@@ -43,9 +41,9 @@ Adobe Experience PlatformのSource コネクタを使用すると、データを
 
 ## 演習
 
-[4.2.1 Google Cloud Platform アカウントの作成](./ex1.md)
+[4.2.1 Google Cloud Platform の使用を開始する](./ex1.md)
 
-Google Cloud Platform アカウントを作成します。
+Google Cloud Platform 環境の使用を開始します。
 
 [4.2.2 BigQuery で最初のクエリを作成する](./ex2.md)
 

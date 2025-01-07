@@ -3,10 +3,11 @@ title: BigQuery Source コネクタを使用したAdobe Experience Platformで�
 description: BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析 – BigQuery からAdobe Experience Platformへのデータの読み込み
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 793b35c6-761f-4b0a-b0bc-3eab93c82162
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 4%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -20,45 +21,33 @@ ht-degree: 4%
 
 ## 事前準備
 
-演習 12.3 を終了すると、Adobe Experience Platformでこのページを開くことができます。
+前の演習が完了したら、Adobe Experience Platformでこのページを開く必要があります。
 
 ![ デモ ](./images/datasets.png)
 
-**開いている場合は、演習 12.4.1 に進みます。**
+**開いている場合は、次の演習に進みます。**
 
 **開いていない場合は、[Adobe Experience Platform](https://experience.adobe.com/platform/home) に移動してください。**
 
-左側のメニューで、「ソース」に移動します。 その後、**Sources** ホームページが表示されます。 **ソース** メニューで、「**データベース**」をクリックします。
+左側のメニューで、「ソース」に移動します。 その後、**Sources** ホームページが表示されます。 **ソース** メニューで、**Google BigQuery** ソースコネクタに移動し、**設定** をクリックします。
 
 ![ デモ ](./images/sourceshome.png)
 
-**Google BigQuery** Source コネクタを選択し、「**+設定**」をクリックします。
+Google BigQuery アカウント選択画面が表示されます。 アカウントを選択して、「**次へ**」をクリックします。
 
-![ デモ ](./images/bq.png)
+![ デモ ](./images/0c.png)
 
-Google BigQuery アカウント選択画面が表示されます。
-
-![ デモ ](./images/0-c.png)
-
-アカウントを選択して、「**次へ**」をクリックします。
-
-![ デモ ](./images/ex4/0-d.png)
-
-**データを追加** ビューが表示されます。
+次に、**データを選択** 画面が表示されます。
 
 ![ デモ ](./images/datasets.png)
 
 ## 4.2.4.1 BigQuery テーブルの選択
 
-**データを追加** ビューで、BigQuery データセットを選択します。
-
-![ デモ ](./images/datasets.png)
-
-BigQuery でGoogle Analyticsデータのサンプルデータプレビューを確認できるようになりました。
+**データを選択** 画面で、BigQuery データセットを選択します。 BigQuery でGoogle Analyticsデータのサンプルデータプレビューを確認できるようになりました。
 
 「**次へ**」をクリックします。
 
-![ デモ ](./images/ex4/3.png)
+![ デモ ](./images/datasets1.png)
 
 ## 4.2.4.2 XDM マッピング
 
@@ -72,7 +61,7 @@ BigQuery でGoogle Analyticsデータのサンプルデータプレビューを�
 
 ![ デモ ](./images/xdm6.png)
 
-下にスクロールします。 次に、Google Analytics/BigQuery から各 **0}Source フィールド } を、フィールドごとに XDM** ターゲットフィールド **にマッピングする必要があります。**
+下にスクロールします。 次に、Google Analytics/BigQuery から各 **0}Source フィールド } を、フィールドごとに XDM** ターゲットフィールド **にマッピングする必要があります。**&#x200B;多数のエラーが表示される場合があります。これらは、以下のマッピング演習で対処します。
 
 ![ デモ ](./images/xdm8.png)
 
@@ -80,43 +69,51 @@ BigQuery でGoogle Analyticsデータのサンプルデータプレビューを�
 
 | ソースフィールド | ターゲットフィールド |
 | ----------------- |-------------| 
-| **_id** | _id |
-| **_id** | チャネル。_id |
-| timeStamp | タイムスタンプ |
-| GA_ID | ``--aepTenantId--``.identification.core.gaid |
-| customerID | ``--aepTenantId--``.identification.core.loyaltyId |
-| ページ | web.webPageDetails.name |
-| デバイス | device.type |
-| ブラウザー | environment.browserDetails.vendor |
-| MarketingChannel | marketing.trackingCode |
-| TrafficSource | channel.typeAtSource |
-| TrafficMedium | channel.mediaType |
-| TransactionID | commerce.order.payments.transactionID |
-| Ecommerce_Action_Type | eventType |
-| ページビュー | web.webPageDetails.pageViews.value |
-| Unique_Purchases | commerce.purchases.value |
-| Product_Detail_Views | commerce.productViews.value |
-| Adds_To_Cart | commerce.productListAdds.value |
-| Product_Removes_From_Cart | commerce.productListRemovals.value |
-| 製品チェックアウト | commerce.checkouts.value |
+| `_id` | `_id` |
+| `_id` | チャネル。_id |
+| `timeStamp` | タイムスタンプ |
+| `GA_ID` | ``--aepTenantId--``.identification.core.gaid |
+| `customerID` | ``--aepTenantId--``。identification.core.crmId |
+| `Page` | web.webPageDetails.name |
+| `Device` | device.type |
+| `Browser` | environment.browserDetails.vendor |
+| `MarketingChannel` | marketing.trackingCode |
+| `TrafficSource` | channel.typeAtSource |
+| `TrafficMedium` | channel.mediaType |
+| `TransactionID` | commerce.order.payments.transactionID |
+| `Ecommerce_Action_Type` | eventType |
+| `Pageviews` | web.webPageDetails.pageViews.value |
 
-上記のマッピングをコピーしてAdobe Experience Platform UI に貼り付けた後、入力ミスや先頭/末尾のスペースが原因でエラーが表示されないかどうかを確認してください。
 
-これで、次のような **マッピング** が作成されました。
+一部のフィールドでは、元のマッピングを削除し、**計算フィールド** 用に新しいマッピングを作成する必要があります。
 
-![ デモ ](./images/xdm34.png)
+| 計算済みフィールド | ターゲットフィールド |
+| ----------------- |-------------| 
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Refunds"), 1, 0)` | commerce.purchases.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Detail_Views"), 1, 0)` | commerce.productViews.value |
+| `iif("Adds_To_Cart".equalsIgnoreCase("Adds_To_Cart"), 1, 0)` | commerce.productListAdds.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Removes_From_Cart"), 1, 0)` | commerce.productListRemovals.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Checkouts"), 1, 0)` | commerce.checkouts.value |
+
+**計算フィールド** を作成するには、[**+新しいフィールドの種類 ] をクリックし**[**計算フィールド**] をクリックします。
+
+![ デモ ](./images/xdm8a.png)
+
+上記のルールを貼り付け、上記のテーブルの各フィールドに対して **保存** をクリックします。
+
+![ デモ ](./images/xdm8b.png)
+
+これで、このような **マッピング** が作成されました。
 
 ソースフィールド **GA_ID** および **customerID** は、この XDM スキーマの識別子にマッピングされます。 これにより、Google Analyticsデータ（web/アプリの行動データ）を、ロイヤルティデータやコールセンターデータなどの他のデータセットでエンリッチメントできます。
 
 「**次へ**」をクリックします。
 
-![ デモ ](./images/ex4/38.png)
+![ デモ ](./images/xdm34.png)
 
 ## 4.2.4.3 接続とデータ取り込みスケジュール
 
 「**スケジュール**」タブが表示されます。
-
-![ デモ ](./images/xdm38a.png)
 
 「**スケジュール**」タブでは、この **マッピング** とデータのデータ取り込みプロセスの頻度を定義できます。
 
@@ -124,59 +121,26 @@ Google BigQuery でデモデータを使用していますが、これは更新�
 
 - 頻度：**週**
 - 間隔：**200**
-
-![ デモ ](./images/ex4/39.png)
+- 開始時間：**次の 1 時間以内の任意の時間**
 
 **重要**:**バックフィル** スイッチを必ずアクティブにしてください。
 
-![ デモ ](./images/ex4/39a.png)
-
 最後に、**delta** フィールドを定義する必要があります。
-
-![ デモ ](./images/ex4/36.png)
 
 **delta** フィールドは、接続をスケジュールし、BigQuery データセットに取り込まれる新しい行のみをアップロードするために使用されます。 差分フィールドは通常、タイムスタンプ列です。 したがって、今後スケジュールされたデータ取り込みでは、新しい、より新しいタイムスタンプを持つ行のみが取り込まれます。
 
 差分フィールドとして **timeStamp** を選択します。
-
-![ デモ ](./images/ex4/37.png)
-
-あなたはこれを手に入れました。
-
-![ デモ ](./images/xdm37a.png)
-
 「**次へ**」をクリックします。
 
-![ デモ ](./images/ex4/42.png)
+![ デモ ](./images/ex437.png)
 
 ## 4.2.4.4 接続の確認と開始
 
-**データセットフローの詳細** ビューで。 接続に名前を付ける必要があります。これは、後で見つけるのに役立ちます。
-
-次の命名規則を使用してください。
-
-| フィールド | 名前付け | 例 |
-| ----------------- |-------------| -------------|
-| データセットフロー名 | DataFlow - ldap - BigQuery Website Interaction | データフロー – vangeluw - BigQuery Web サイトインタラクション |
-| 説明 | DataFlow - ldap - BigQuery Website Interaction | データフロー – vangeluw - BigQuery Web サイトインタラクション |
-
-![ デモ ](./images/xdm44.png)
-
-「**次へ**」をクリックします。
-
-![ デモ ](./images/ex4/45.png)
-
 これで、接続の詳細な概要が表示されます。 続行する前に、すべてが正しいことを確認してください。XDM マッピングなどの一部の設定は、後で変更できなくなりました。
-
-![ デモ ](./images/xdm46.png)
 
 「**完了**」をクリックします。
 
-![ デモ ](./images/ex4/finish.png)
-
-接続の設定には時間がかかる場合があるので、次のように表示されても心配はいりません。
-
-![ デモ ](./images/ex4/47.png)
+![ デモ ](./images/xdm46.png)
 
 接続を作成すると、次の画面が表示されます。
 

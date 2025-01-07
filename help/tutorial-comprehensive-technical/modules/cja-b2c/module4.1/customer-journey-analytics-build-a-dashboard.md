@@ -4,27 +4,18 @@ description: Customer Journey Analytics - Adobe Experience Platform上にAnalysi
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 # 4.1 Customer Journey Analytics - Adobe Experience Platform上にAnalysis Workspaceを使用してダッシュボードを作成する
 
-**著者：[Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 このモジュールでは、Customer Journey Analyticsアプリケーションサービスの実践的なエクスペリエンスを提供します。
 
 Customer Journey Analyticsは、ビジネスインテリジェンスおよびデータサイエンスチーム向けのツールキットを提供し、クロスチャネルデータ（オンラインとオフライン）の関連付けと分析を行います。 Customer Journey Analyticsの機能は、複雑なマルチチャネルのカスタマージャーニーにコンテキストと明確さを提供します。 提供されるコンテキストは、顧客コンバージョンプロセスの問題点を取り除き、最も重要な瞬間にポジティブなエクスペリエンスを提供する方法に関する、実用的なインサイトを生成します。
-
-
-価値、カスタマージャーニー、設定プロセスについて理解するには、このビデオを参照してください。
-
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
-
-Customer Journey Analyticsについて詳しくは、[ こちら ](https://spark.adobe.com/page/t62eiRu9l6iWJ/) を参照してください。
 
 ## 学習内容
 
