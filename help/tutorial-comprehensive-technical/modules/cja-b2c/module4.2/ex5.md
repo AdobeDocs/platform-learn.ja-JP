@@ -4,9 +4,9 @@ description: BigQuery Source コネクタを使用したAdobe Experience Platfor
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ Customer Journey Analyticsホームページで、「**連携**」に移動し�
 
 ![ デモ ](./images/22.png)
 
+「**保存**」をクリックします。
+
+![ デモ ](./images/22a.png)
+
 データビューにコンポーネントを追加できるようになりました。 ご覧のように、一部の指標およびディメンションは自動的に追加されます。
 
 ![ デモ ](./images/24.png)
 
-データビューに次のコンポーネントを追加します。
+データビューに以下のコンポーネントを追加します。 また、フィールド名をわかりやすい名前に更新します。 それには、指標またはディメンションを選択し、右側のメニューの **コンポーネント名** フィールドを更新します。
 
-| コンポーネント名 | コンポーネントタイプ | コンポーネントパス |
-| -----------------|-----------------|-----------------|
-| レベル | ディメンション | _experienceplatform.loyaltyDetails.level |
-| ポイント | 指標 | _experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | 指標 | commerce.checkouts.value |
-| commerce.productListRemovals.value | 指標 | commerce.productListRemovals.value |
-| commerce.productListAdds | 指標 | commerce.productListAdds |
-| commerce.productViews.value | 指標 | commerce.productViews.value |
-| commerce.purchases.value | 指標 | commerce.purchases.value |
-| web.webPageDetails.pageViews | 指標 | web.webPageDetails.pageViews |
-| トランザクション ID | ディメンション | commerce.order.payments.transactionID |
-| channel.mediaType | ディメンション | channel.mediaType |
-| channel.typeAtSource | ディメンション | channel.typeAtSource |
-| トラッキングコード | ディメンション | marketing.trackingCode |
-| gaid | ディメンション | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | ディメンション | web.webPageDetails.name |
-| イベントタイプ | ディメンション | eventType |
-| ベンダー | ディメンション | environment.browserDetails.vendor |
-| 識別子 | ディメンション | _id |
-| タイムスタンプ | ディメンション | タイムスタンプ |
-| タイプ | ディメンション | device.type |
-| loyaltyId | ディメンション | _experienceplatform.identification.core.loyaltyId |
-
-すると、次のようになります。
-
-![ デモ ](./images/25.png)
-
-次に、上記の指標およびディメンションのわかりやすい名前を変更し、分析を作成する際に簡単に使用できるようにする必要があります。 それには、指標またはディメンションを選択し、次の画像に示すように **名前** フィールドを更新します。
-
-![ デモ ](./images/25a.png)
-
-| コンポーネントの元の名前 | 表示名 |
-| -----------------|-----------------|
-| レベル | ロイヤルティレベル |
-| ポイント | ロイヤルティポイント |
-| commerce.checkouts.value | チェックアウト |
-| commerce.productListRemovals.value | 買い物かごからの削除 |
-| commerce.productListAdds | 買い物かご追加 |
-| commerce.productViews.value | 製品表示 |
-| commerce.purchases.value | 購入 |
-| web.webPageDetails.pageViews | ページビュー数 |
-| channel.mediaType | トラフィックMedium |
-| channel.typeAtSource | Traffic Source |
-| トラッキングコード | マーケティングチャネル |
-| gaid | GOOGLE ANALYTICSID |
-| 名前 | ページタイトル |
-| ベンダー | ブラウザー |
-| タイプ | Device Type |
-| loyaltyId | ロイヤルティ ID |
+| コンポーネントタイプ | コンポーネントの元の名前 | 表示名 | コンポーネントパス |
+| -----------------| -----------------|-----------------|-----------------|
+| 指標 | commerce.checkouts.value | チェックアウト | `commerce.checkouts.value` |
+| 指標 | commerce.productListRemovals.value | 買い物かごからの削除 | `commerce.productListRemovals.value` |
+| 指標 | commerce.productListAdds | 買い物かご追加 | `commerce.productListAdds` |
+| 指標 | commerce.productViews.value | 製品表示 | `commerce.productViews.value` |
+| 指標 | commerce.purchases.value | 購入 | `commerce.purchases.value` |
+| 指標 | web.webPageDetails.pageViews | ページビュー数 | `web.webPageDetails.pageViews` |
+| 指標 | ポイント | ロイヤルティポイント | `_experienceplatform.loyaltyDetails.points` |
+| ディメンション | レベル | ロイヤルティレベル | `_experienceplatform.loyaltyDetails.level` |
+| ディメンション | channel.mediaType | トラフィックMedium | `channel.mediaType` |
+| ディメンション | channel.typeAtSource | Traffic Source | `channel.typeAtSource` |
+| ディメンション | トラッキングコード | マーケティングチャネル | `marketing.trackingCode` |
+| ディメンション | gaid | GOOGLE ANALYTICSID | `_experienceplatform.identification.core.gaid` |
+| ディメンション | web.webPageDetails.name | ページタイトル | `web.webPageDetails.name` |
+| ディメンション | ベンダー | ブラウザー | `environment.browserDetails.vendor` |
+| ディメンション | タイプ | Device Type | `device.type` |
+| ディメンション | loyaltyId | ロイヤルティ ID | `_experienceplatform.identification.core.loyaltyId` |
+| ディメンション | commerce.order.payments.transactionID | トランザクション ID | `commerce.order.payments.transactionID` |
+| ディメンション | eventType | イベントタイプ | `eventType` |
+| ディメンション | タイムスタンプ | タイムスタンプ | `timestamp` |
+| ディメンション | `_id` | 識別子 | `_id` |
 
 次のようなメッセージが表示されます。
 
 ![ デモ ](./images/25b.png)
 
-次に、**アトリビューション設定** を変更して、これらのコンポーネントの一部についてユーザーおよびセッションのコンテキストを変更する必要があります。
-
-![ デモ ](./images/25c.png)
+次に、**アトリビューションまたは永続性設定** を変更して、これらのコンポーネントの一部について人物およびセッションのコンテキストを変更する必要があります。
 
 以下のコンポーネントの **アトリビューション設定** を変更してください。
 
@@ -193,37 +168,30 @@ Customer Journey Analyticsホームページで、「**連携**」に移動し�
 | トラフィックMedium |
 | Device Type |
 | GOOGLE ANALYTICSID |
-| ロイヤルティ ID |
-| ロイヤルティレベル |
-| ロイヤルティポイント |
 
-それには、コンポーネントを選択し、**カスタム属性モデルを使用** をクリックして、**モデル** を **ラストタッチ** に、**有効期限** を **人物（レポートウィンドウ）** に設定します。 上記のすべてのコンポーネントに対してこれを繰り返します。
+それには、コンポーネントを選択し、**カスタム属性モデルを使用** をクリックして、**モデル** を **最新** に、**有効期限** を **人物レポートウィンドウ** に設定します。 上記のすべてのコンポーネントに対してこれを繰り返します。
 
 ![ デモ ](./images/27a.png)
 
-前述のすべてのコンポーネントのアトリビューション設定を変更したら、次の表示が表示されます。
+前述のすべてのコンポーネントのアトリビューション設定を変更したら、このビューが表示されます。 **保存して続行** をクリックします。
 
 ![ デモ ](./images/27.png)
 
-これで、データビューが設定されました。 「**保存**」をクリックします。
+**設定** 画面では、変更は必要ありません。 「**保存して終了**」をクリックします。
 
-![ デモ ](./images/30.png)
+![ デモ ](./images/27b.png)
 
 これで、Adobe Analytics Analysis Workspace内でGoogle Analyticsデータを分析する準備が整いました。 次の演習に移りましょう。
 
 ## 4.2.5.3 プロジェクトの作成
 
-Customer Journey Analyticsーで、**プロジェクト** に移動します。
+Customer Journey Analyticsーで、**Workspace** に移動します。 「**プロジェクトを作成**」をクリックします。
 
 ![ デモ ](./images/pro1.png)
 
-次の画面が表示されます。
+**空のWorkspace プロジェクト** を選択し、「**作成**」をクリックします。
 
 ![ デモ ](./images/pro2.png)
-
-**新規プロジェクトを作成** をクリックしてプロジェクトを作成します。
-
-![ デモ ](./images/pro3.png)
 
 これで、空のプロジェクトが作成されました。
 
@@ -236,27 +204,21 @@ Customer Journey Analyticsーで、**プロジェクト** に移動します。
 | Windows | コントロール + S |
 | Mac | Command + S |
 
-次のポップアップが表示されます。
-
-![ デモ ](./images/prsave.png)
-
-次の命名規則を使用してください。
+ポップアップが表示されます。 次の命名規則を使用してください。
 
 | 名前 | 説明 |
 | ----------------- |-------------| 
-| ldap - GA + ロイヤルティWorkspace | ldap - GA + ロイヤルティWorkspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-次に、「**プロジェクトを保存**」をクリックします。
+次に、「**保存** をクリックします。
 
-![ デモ ](./images/prsave2.png)
+![ デモ ](./images/prsave.png)
 
-次に、画面の右上隅で正しいデータビューを選択していることを確認します。 これは、前の演習で作成した、命名規則 `ldap - GA + Loyalty Data View` のデータビューです。 この例では、選択するデータビューは `ldap - GA + Loyalty Data View` です。
+次に、画面の右上隅で正しいデータビューを選択していることを確認します。 これは、前の演習で作成した、命名規則 `--aepUserLdap-- - GA + Loyalty Data View` のデータビューです。
 
 ![ デモ ](./images/prdvlist.png)
 
-![ デモ ](./images/prdv.png)
-
-### 12.5.3.1 フリーフォームテーブル
+### 4.2.5.3.1 フリーフォームテーブル
 
 フリーフォームテーブルは、Excel 内でピボットテーブルとして機能します（多かれ少なかれ）。 左側のバーから何かを選択し、フリーフォームにドラッグ&amp;ドロップすると、テーブルレポートが得られます。
 
@@ -270,13 +232,9 @@ SQL、BigQuery を使用する必要がある例と、Google AnalyticsUI やGoog
 
 CJA のAnalysis Workspaceを使用して、この質問やいくつかの質問に答えましょう。
 
-まず、パネルの右側で適切な日付範囲（**過去 53 週間**）を選択します。
+まず、パネルの右側で適切な日付範囲（**Today**）を選択します。 **適用** をクリックします。
 
 ![ デモ ](./images/pro11.png)
-
-次に、「**適用**」をクリックして日付範囲を適用します。 次の演習では、この手順を覚えておいてください。
-
-![ デモ ](./images/apply.png)
 
 >[!NOTE]
 >
@@ -296,9 +254,13 @@ CJA のAnalysis Workspaceを使用して、この質問やいくつかの質問�
 
 ![ デモ ](./images/procalc1.png)
 
-計算指標の名前として **コンバージョン率** を使用します。 次に、指標 **購入** および **セッション** をキャンバスにドラッグします。 **形式** を **パーセント** に、**小数点以下の桁数** を **2** に設定します。 最後に、「**保存** をクリックします。
+計算指標の名前として、**コンバージョン率** を使用し、**外部 ID** には **conversionRate** を使用します。 次に、指標 **購入** および **セッション** をキャンバスにドラッグします。 **形式** を **パーセント** に、**小数点以下の桁数** を **2** に設定します。 最後に、「**保存** をクリックします。
 
 ![ デモ ](./images/procalc2.png)
+
+「**保存**」をクリックします。
+
+![ デモ ](./images/procalc2a.png)
 
 次に、これらの指標をすべて **フリーフォームテーブル** で使用するには、1 つずつ **フリーフォームテーブル** にドラッグ&amp;ドロップします。 以下の例を参照してください。
 

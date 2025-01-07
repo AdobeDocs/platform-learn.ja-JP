@@ -4,16 +4,14 @@ description: データ収集 – Federated Audience Composition
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3 Federated Audience の構成
-
-**著者：[Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 このモジュールの目標は、Federated Audience Composition を使用したオーディエンスの作成についてすべてを学習することです。
 
@@ -38,7 +36,7 @@ Federated Audience Composition を使用すると、Real-Time CDPおよびJourne
 
 ## 演習
 
-[1.3.1 Snowflakeアカウントの設定](./ex1.md)
+[1.3.1Snowflake環境の設定](./ex1.md)
 
 この演習では、Snowflake体験版アカウントを設定し、Adobe Experience Platformに接続します
 
