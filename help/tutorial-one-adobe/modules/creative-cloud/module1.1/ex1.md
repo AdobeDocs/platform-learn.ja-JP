@@ -4,9 +4,9 @@ description: Fireflyサービスの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
@@ -176,7 +176,7 @@ Adobe I/Oから、特定の値 **非常に長い access_token）と有効期限�
 
 次の演習に進む前に、API リクエストをいろいろと試してください。
 
-次の手順：仕様を使用して画像をリクエストする [1.1.2](./ex2.md)
+次の手順：[1.1.2 Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを最適化する ](./ex2.md)
 
 [モジュール 1.1 に戻る](./firefly-services.md)
 
