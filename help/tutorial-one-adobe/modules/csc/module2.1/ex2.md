@@ -3,10 +3,10 @@ title: Cloud Manager プログラムの作成
 description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -307,9 +307,38 @@ Web サイトは **ユニバーサルエディター** で開きます。
 
 ![AEMCS](./images/aemcssetup45.png)
 
-さらに、`main--citisignal--woutervangeluwe.aem.live/us/en` に移動して web サイトに移動できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトにアクセスできるようになりました。
 
+この例では、完全な URL は次のようになります。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` や `https://main--citisignal--woutervangeluwe.aem.live/us/en`。
 
+最初に公開する必要があるので、すべてのアセットが正しく表示されるまでには時間がかかる場合があります。
+
+次の画面が表示されます。
+
+![AEMCS](./images/aemcssetup46.png)
+
+数分後、アセットはすべて正しく読み込まれます。
+
+![AEMCS](./images/aemcssetup47.png)
+
+## 2.1.2.7 テストページのパフォーマンス
+
+[https://pagespeed.web.dev/](https://pagespeed.web.dev/) に移動します。 URL を入力し、「**分析**」をクリックします。
+
+![AEMCS](./images/aemcssetup48.png)
+
+次に、モバイルとデスクトップの両方のビジュアライゼーションで、web サイトのスコアが高くなることがわかります。
+
+**モバイル**:
+
+![AEMCS](./images/aemcssetup49.png)
+
+**デスクトップ**:
+
+![AEMCS](./images/aemcssetup50.png)
+
+次の手順：[2.1.3 カスタムブロックの設定 ](./ex3.md)
 
 [モジュール 2.1 に戻る](./aemcs.md)
 
