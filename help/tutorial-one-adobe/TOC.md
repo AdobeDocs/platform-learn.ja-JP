@@ -4,10 +4,10 @@ breadcrumb-title: Creative CloudからExperience Cloudまで、Adobeアプリケ
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d658ebcecea1cb98f6c7176a9238fcb740fb03e3
+source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 8%
+source-wordcount: '129'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 8%
 + 2 コンテンツのサプライチェーン {#csc}
    + 2.1 Adobe Experience ManagerCloud Service{#module21}
       + [概要](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
-      + [2.1.1 AEM CS の概要](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [2.1.1 Cloud Manager プログラムを作成する](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [2.1.2 AEM CS 環境のセットアップ](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [概要](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)

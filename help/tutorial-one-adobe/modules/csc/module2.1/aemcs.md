@@ -3,10 +3,11 @@ title: 2.1 Adobe Experience ManagerCloud Service
 description: Adobe Experience ManagerCloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
+source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 3%
+source-wordcount: '151'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +25,11 @@ ht-degree: 3%
 
 [2.1.1 Cloud Manager プログラムを作成する](./ex1.md)
 
-この演習では、...
+この演習では、Cloud Manager プログラムを作成して、Sites、Assets、Edge Delivery Servicesの各製品を作成します。
+
+[2.1.2 AEM CS 環境のセットアップ](./ex2.md)
+
+この演習では、AEM CS 環境を設定し、CitiSignal web サイトにアクセスします。
 
 [概要と利点](./summary.md)
 
