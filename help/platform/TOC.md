@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f64623255c045396799d0d627f199ce59c794d70
+source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '957'
 ht-degree: 20%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 20%
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI アシスタント {#ai-assistant}
    + [概要](/help/platform/ai-assistant/overview.md)
-   + [アクセスを設定](/help/platform/ai-assistant/access.md)
+   + [アクセス権の取得](/help/platform/ai-assistant/access.md)
    + [新製品のオンボード](/help/platform/ai-assistant/onboard.md)
    + [製品について学ぶ](/help/platform/ai-assistant/product-knowledge.md)
    + [応答を検証](/help/platform/ai-assistant/validate-responses.md)
