@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 20%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 20%
 + AI アシスタント {#ai-assistant}
    + [概要](/help/platform/ai-assistant/overview.md)
    + [アクセスを設定](/help/platform/ai-assistant/access.md)
-   + [オーディエンスのクリーンアップ](/help/platform/ai-assistant/find-unused-audiences.md)
    + [新製品のオンボード](/help/platform/ai-assistant/onboard.md)
+   + [製品について学ぶ](/help/platform/ai-assistant/product-knowledge.md)
+   + [応答を検証](/help/platform/ai-assistant/validate-responses.md)
+   + [見つけやすさパネル](/help/platform/ai-assistant/discoverability-panel.md)
+   + [未使用のオーディエンスを検索](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [影響分析](/help/platform/ai-assistant/impact-analysis.md)
+   + [セキュリティの概要](/help/platform/ai-assistant/security-overview.md)
 + オーディエンスとセグメント化 {#audiences}
    + [Audience Portal とコンポジションの概要](audiences/introduction-to-audience-portal-and-composition.md)
    + [オーディエンスのアップロード](audiences/upload-audiences.md)
