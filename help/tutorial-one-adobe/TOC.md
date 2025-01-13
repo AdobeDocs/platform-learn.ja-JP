@@ -4,9 +4,9 @@ breadcrumb-title: Creative CloudからExperience Cloudまで、Adobeアプリケ
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '160'
 ht-degree: 6%
 
 ---
@@ -41,8 +41,10 @@ ht-degree: 6%
       + [概要と利点](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3 Unified Customer Experience {#uce}
-   + 3.1 Adobe Real-Time CDP {#module31}
-      + [概要](/help/tutorial-one-adobe/modules/uce/module3.1/rtcdp.md)
-      + [3.1.1 イベントの作成](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+   + 3.1 Federated Audience Composition {#module31}
+      + [概要](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
+      + [3.1.1Snowflake環境の設定](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+      + [3.1.2 スキーマ、データモデル、リンクの作成](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
+      + [3.1.3 フェデレーション構成の作成](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
 

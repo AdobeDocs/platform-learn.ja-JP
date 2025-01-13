@@ -4,7 +4,7 @@ description: Fireflyサービスの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 1%
@@ -242,7 +242,7 @@ Azure ストレージエクスプローラーに戻り、フォルダーのコ�
 
 ![Azure ストレージ ](./images/az38.png)
 
-## 1.1.2.5 プログラムによるファイル利用
+## 1.1.2.6 プログラムによるファイル利用
 
 Azure ストレージアカウントからプログラムによってファイルを読み取りを使用するには、ファイルを読み取ることができる権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。 前の演習で作成した SAS トークンを技術的に使用できますが、**読み取り** 権限のみを持つ別のトークンと、**書き込み** 権限のみを持つ別のトークンを用意することをお勧めします。
 
@@ -359,7 +359,7 @@ URL は次のようになります：
 
 画像 URL を開いて画像を確認します。
 
-![Azure ストレージ ](./images/az108.png)
+![Azure ストレージ ](./images/az108.jpg)
 
 次の手順：[1.1.3 Adobe FireflyおよびAdobe Photoshop](./ex3.md)
 
