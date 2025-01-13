@@ -4,9 +4,9 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '223'
 ht-degree: 4%
 
 ---
@@ -31,11 +31,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs3.png)
 
-環境の作成には時間がかかります。
+環境の作成には時間がかかります（10 ～ 20 分）。
 
 ![AEMCS](./images/aemcs4.png)
 
-環境を作成して使用する準備が整うと、確認のメールが届きます。
+お待ちください。演習 [2.1.2 ドキュメントベースの web サイトの作成 ](./ex2.md) から既に開始できます。
+
+環境が作成され、使用する準備が整うと、確認のメールが届きます。その後、ここに戻ることができます。
 
 ![AEMCS](./images/aemcs5.png)
 
@@ -61,7 +63,7 @@ ht-degree: 4%
 
 パイプラインの実行が完了したら、次の演習に進むことができます。
 
-次の手順：[2.1.2 AEM CS 環境をセットアップする ](./ex2.md)
+次の手順：[2.1.2 ドキュメントベースの web サイトを作成する ](./ex2.md)
 
 [モジュール 2.1 に戻る](./aemcs.md)
 

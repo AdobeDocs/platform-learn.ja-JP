@@ -3,16 +3,67 @@ title: Cloud Manager プログラムの作成
 description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
+exl-id: db366111-3873-4504-95f1-b240836c833f
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
 
-# 2.1.2 AEM CS 環境のセットアップ
+# 2.1.2 ドキュメントベースの web サイトの作成
 
-## 2.1.2.1 GitHub リポジトリのセットアップ
+Cloud Manager プログラムが作成されるのを待っている間、最初のドキュメントベースのオーサリング web サイトを設定するのに十分な時間があります。 以下の演習は、[aem.live 開発者向けチュートリアル ](https://www.aem.live/developer/tutorial) に基づいています。 開始するには、次の手順に従います。
+
+## 2.1.2.1 Google ドライブの設定
+
+[https://drive.google.com](https://drive.google.com) に移動します。 **+新規をクリックし** 次に **新規フォルダー** をクリックします。
+
+![AEMCS](./images/googledrive1.png)
+
+フォルダーに `aemdocb-test` という名前を付けます。 「**作成**」をクリックします。
+
+![AEMCS](./images/googledrive2.png)
+
+ファイル [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) をダウンロードし、コンピューターに抽出します。
+
+![AEMCS](./images/googledrive3.png)
+
+そのフォルダーには 3 つのファイルが表示されます。 これらのファイルを新しいGoogle Drive フォルダーにコピーします。
+
+![AEMCS](./images/googledrive4.png)
+
+次に、これらのファイルをネイティブのGoogle ファイルに変換する必要があります。 これをおこなうには、各ファイルを開き、**ファイル**/**Google Docsとして保存** に移動します。
+
+![AEMCS](./images/googledrive5.png)
+
+3 つのファイルすべてに対してこの操作を行うと、Google Drive フォルダーに 6 つのファイルが表示されます。
+
+![AEMCS](./images/googledrive6.png)
+
+その後、これをフォルダーに入れます。
+
+![AEMCS](./images/googledrive7.png)
+
+ドキュメントベースのオーサリングのデモを機能させるには、Google Drive フォルダーをメールアドレス **helix@adobe.com** と共有する必要があります。 フォルダー名をクリックし、「**共有**」をクリックしてから、もう一度 **共有** をクリックします。
+
+![AEMCS](./images/googledrive8.png)
+
+メールアドレス **helix@adobe.com** を入力し、「**送信**」をクリックします。
+
+![AEMCS](./images/googledrive9.png)
+
+次に、Google Drive フォルダーの URL をコピーして、次の演習で必要になるので書き留めます。 フォルダー名をクリックし、「**共有**」をクリックして、「**リンクをコピー**」をクリックします。
+
+![AEMCS](./images/googledrive10.png)
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5?usp=drive_link`
+
+URL が次のようになるように、クエリ文字列パラメーター `?usp=drive_link` を削除する必要があります。
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`
+
+## 2.1.2.2 GitHub リポジトリのセットアップ
 
 [https://github.com](https://github.com) に移動します。 「**ログイン**」をクリックします。
 
@@ -26,17 +77,17 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one) に移動します。 その後、これが表示されます。 「**このテンプレートを使用**」をクリックし、「**新しいリポジトリを作成**」をクリックします。
+[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate) に移動します。 その後、これが表示されます。 「**このテンプレートを使用**」をクリックし、「**新しいリポジトリを作成**」をクリックします。
 
-![AEMCS](./images/aemcssetup4.png)
+![AEMCS](./images/aemdocbcssetup4.png)
 
-**リポジトリ名** の前に、`citisignal` を使用します。 表示を **プライベート** に設定します。 **リポジトリを作成** をクリックします。
+**リポジトリ名** には、`aemdocb-test` を使用します。 表示を **プライベート** に設定します。 **リポジトリを作成** をクリックします。
 
-![AEMCS](./images/aemcssetup5.png)
+![AEMCS](./images/aemdocbcssetup5.png)
 
 数秒後に、リポジトリが作成されます。
 
-![AEMCS](./images/aemcssetup6.png)
+![AEMCS](./images/aemdocbcssetup6.png)
 
 次に、[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync) に移動します。 **設定** をクリックします。
 
@@ -48,297 +99,113 @@ GitHub アカウントをクリックします。
 
 **リポジトリのみを選択** をクリックし、作成したリポジトリを追加します。 次に、「**インストール**」をクリックします。
 
-![AEMCS](./images/aemcssetup9.png)
+![AEMCS](./images/aemdocbcssetup9.png)
 
 この確認が表示されます。
 
 ![AEMCS](./images/aemcssetup10.png)
 
-## 2.1.2.2 ファイル fstab.yaml の更新
+## 2.1.2.3 ファイル fstab.yaml の更新
 
 GitHub リポジトリで、をクリックしてファイル `fstab.yaml` を開きます。
 
-![AEMCS](./images/aemcssetup11.png)
+![AEMCS](./images/aemdocbcssetup11.png)
 
 **編集** アイコンをクリックします。
 
-![AEMCS](./images/aemcssetup12.png)
+![AEMCS](./images/aemdocbcssetup12.png)
 
-ここで、4 行目のフィールド **url** の値を更新する必要があります。
+ここで、2 行目のフィールド **url** の値を更新する必要があります。
 
-![AEMCS](./images/aemcssetup13.png)
+![AEMCS](./images/aemdocbcssetup13.png)
 
 GitHub リポジトリの設定と組み合わせて、特定のAEM CS 環境の URL で現在の値を置き換える必要があります。
 
-URL の現在の値：`https://author-p131639-e1282833.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/citisignal-one/main`。
+URL の現在の値：`https://drive.google.com/drive/u/0/folders/1MGzOt7ubUh3gu7zhZIPb7R7dyRzG371j`。
 
-URL には、更新が必要な 3 つの部分があります
+その値を、Google Drive フォルダーからコピーした URL （`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`）に置き換えます。 「**変更をコミット…**」をクリックします。
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
-
-XXX はAEM CS オーサー環境の URL に置き換える必要があります。
-
-YYY は GitHub の使用アカウントに置き換える必要があります。
-
-ZZZ は、前の演習で使用した GitHub リポジトリの名前に置き換える必要があります。
-
-AEM CS オーサー環境の URL は、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) で確認できます。 **プログラム** をクリックして開きます。
-
-![AEMCS](./images/aemcs6.png)
-
-次に、「**環境**」タブの 3 つのドット **...** をクリックし、「**詳細を表示**」をクリックします。
-
-![AEMCS](./images/aemcs9.png)
-
-**オーサー** 環境の URL など、環境の詳細が表示されます。 URL をコピーします。
-
-![AEMCS](./images/aemcs10.png)
-
-XXX = `author-p148073-e1511503.adobeaemcloud.com`
-
-GitHub ユーザーアカウント名の場合は、ブラウザーの URL で簡単に見つけることができます。 この例では、ユーザーアカウント名は `woutervangeluwe` です。
-
-YYY = `woutervangeluwe`
-
-![AEMCS](./images/aemcs11.png)
-
-GitHub リポジトリ名については、GitHub で開いたブラウザーウィンドウでも見つけることができます。 この場合、リポジトリ名は `citisignal` です。
-
-ZZZ = `citisignal`
-
-![AEMCS](./images/aemcs12.png)
-
-これらの 3 つの値を組み合わせると、この新しい URL が表示されます。この URL はファイル `fstab.yaml` で設定する必要があります。
-
-`https://author-p148073-e1511503.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal/main`
-
-「**変更をコミット…**」をクリックします。
-
-![AEMCS](./images/aemcs13.png)
+![AEMCS](./images/aemdocbcssetup14.png)
 
 「**変更をコミット**」をクリックします。
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/aemdocbcssetup15.png)
 
-ファイル `fstab.yaml` が更新されました。
+## 2.1.2.4 AEM Sidekick拡張機能のインストール
 
-## 2.1.2.3 CitiSignal アセットのアップロード
+[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo) に移動します。 **Chromeに追加** をクリックします。
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に移動します。 **プログラム** をクリックして開きます。
+![AEMCS](./images/aemdocbcssetup16.png)
 
-![AEMCS](./images/aemcs6.png)
+**AEM Sidekick** 拡張機能をピン留めします。
 
-次に、オーサー環境の URL をクリックします。
+![AEMCS](./images/aemdocbcssetup17.png)
 
-![AEMCS](./images/aemcssetup18.png)
+## 2.1.2.5 ドキュメントベースの web サイトのプレビューとPublish
 
-**Adobeでログイン** をクリックします。
+Googleのドライブに戻ります。 タスクバーで、**AEM Sidekick** 拡張機能をクリックします。 フォルダーにAEM Sidekickバーのポップアップが表示されます。
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/aemdocbcssetup18.png)
 
-その後、オーサー環境が表示されます。
+Google Drive フォルダー内の 3 つのファイルを選択します。 「**プレビュー**」をクリックします。
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/aemdocbcssetup19.png)
 
-URL は次のようになります：`https://author-p148073-e1511503.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+もう一度 **プレビュー** をクリックします。
 
-次に、AEMの **CRX パッケージマネージャー** 環境にアクセスする必要があります。 それには、URL から `ui#/aem/aem/start.html?appId=aemshell` を削除し、`crx/packmgr` に置き換えます。つまり、URL は次のようになります。
-`https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`。
-**Enter** キーを押して、パッケージマネージャー環境を読み込みます
+![AEMCS](./images/aemdocbcssetup20.png)
 
-![AEMCS](./images/aemcssetup22.png)
+クリックして、緑色のダイアログポップアップを閉じます。
 
-次に、「**パッケージをアップロード**」をクリックします。
+![AEMCS](./images/aemdocbcssetup21.png)
 
-![AEMCS](./images/aemcssetup21.png)
+Google Drive フォルダー内の 3 つのファイルを再度選択します。 今すぐ、**Publish** をクリックします。
 
-**参照** をクリックして、アップロードするパッケージを探します。
-
-アップロードするパッケージは **citisignal-assets.zip** と呼ばれ、次の場所でダウンロードできます。[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip)
-
-![AEMCS](./images/aemcssetup23.png)
-
-パッケージを選択して **開く** をクリックします。
-
-![AEMCS](./images/aemcssetup24.png)
-
-次に、「**OK**」をクリックします。
-
-![AEMCS](./images/aemcssetup25.png)
-
-その後、パッケージがアップロードされます。
-
-![AEMCS](./images/aemcssetup26.png)
-
-次に、アップロードしたパッケージの **インストール** をクリックします。
-
-![AEMCS](./images/aemcssetup27.png)
-
-**インストール** をクリックします。
-
-![AEMCS](./images/aemcssetup28.png)
-
-数分後、パッケージがインストールされます。
-
-![AEMCS](./images/aemcssetup29.png)
-
-これで、このウィンドウを閉じることができます。
-
-
-## 2.1.2.4 Publish CitiSignal アセット
-
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に移動します。 **プログラム** をクリックして開きます。
-
-![AEMCS](./images/aemcs6.png)
-
-次に、オーサー環境の URL をクリックします。
-
-![AEMCS](./images/aemcssetup18.png)
-
-**Adobeでログイン** をクリックします。
-
-![AEMCS](./images/aemcssetup19.png)
-
-その後、オーサー環境が表示されます。 **サイト** をクリックします。
-
-![AEMCS](./images/aemcsassets1.png)
-
-**ファイル** をクリックします。
-
-![AEMCS](./images/aemcsassets2.png)
-
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]**をクリック** ます。
-
-![AEMCS](./images/aemcsassets3.png)
-
-「**次へ**」をクリックします。
-
-![AEMCS](./images/aemcsassets4.png)
+![AEMCS](./images/aemdocbcssetup22.png)
 
 「**公開**」をクリックします。
 
-![AEMCS](./images/aemcsassets5.png)
+![AEMCS](./images/aemdocbcssetup23.png)
 
-アセットが公開されました。
+をクリックして、緑色のダイアログをもう一度閉じます。 ファイル **インデックス** を選択し、「**URL をコピー**」をクリックしてから、「**ライブ URL をコピー**」をクリックします。
 
-## 2.1.2.5 CitiSignal のウェブサイトを作成する
+![AEMCS](./images/aemdocbcssetup24.png)
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に移動します。 **プログラム** をクリックして開きます。
+コピーされた URL は、`https://main--aemdocb-test--woutervangeluwe.aem.live/` のようになります。
 
-![AEMCS](./images/aemcs6.png)
+上記の URL で：
 
-次に、オーサー環境の URL をクリックします。
+- **main** は、GitHub リポジトリ上のブランチを参照します
+- **aemdocb-test** は GitHub リポジトリ名を指します
+- **woutervangeluwe** は、GitHub ユーザーアカウント名を指します
+- **.live** は、AEM インスタンスのライブ環境を指します
+- **.live を**.page **に置き換えて** AEM インスタンスのプレビュー環境を開くことができます
 
-![AEMCS](./images/aemcssetup18.png)
+新規ブラウザーウィンドウを開き、URL に移動します。
 
-**Adobeでログイン** をクリックします。
+![AEMCS](./images/aemdocbcssetup25.png)
 
-![AEMCS](./images/aemcssetup19.png)
+## 2.1.2.6 変更を加えて公開する
 
-その後、オーサー環境が表示されます。 **サイト** をクリックします。
+Google ドライブに戻り、Googleでファイラー **インデックス** を開きます。
 
-![AEMCS](./images/aemcssetup30.png)
+![AEMCS](./images/aemdocbcssetup27.png)
 
-**作成** をクリックし、**テンプレートからのサイト** をクリックします。
+テキスト **テスト** を他の任意のテキストに置き換えます。 「**プレビュー**」をクリックします。
 
-![AEMCS](./images/aemcssetup31.png)
+![AEMCS](./images/aemdocbcssetup28.png)
 
-**インポート** をクリックします。
+Web サイトのプレビューバージョンが開きます。 変更内容を確認し、**Publish** をクリックします。
 
-![AEMCS](./images/aemcssetup32.png)
+![AEMCS](./images/aemdocbcssetup29.png)
 
-次に、事前設定済みのテンプレートをサイトに読み込む必要があります。 テンプレートは [ こちら ](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip) からダウンロードできます。 ファイルをデスクトップに保存します。
+その後、web サイトのライブバージョンが表示されます。
 
-次に、ファイル `citisignal-edge-delivery-services-template-0.0.4.zip` を選択し、「**開く** をクリックします。
+![AEMCS](./images/aemdocbcssetup30.png)
 
-![AEMCS](./images/aemcssetup33.png)
+上記の演習は、基本を学び、自分でドキュメントベースのオーサリングを体験するための良い方法でした。 次の演習では、CitiSignal をデモブランドとして使用して独自のデモ Web サイトを設定します。
 
-その後、これが表示されます。 アップロードしたテンプレートをクリックして選択し、「**次へ**」をクリックします。
-
-![AEMCS](./images/aemcssetup34.png)
-
-ここで、いくつかの詳細を入力する必要があります。
-
-- サイトのタイトル：**CitiSignal** を使用
-- サイト名：**citisignal-one** を使用
-- GitHub URL：以前に使用していた GitHub リポジトリの URL をコピーします
-
-![AEMCS](./images/aemcssetup35.png)
-
-これで完了です。 「**作成**」をクリックします。
-
-![AEMCS](./images/aemcssetup36.png)
-
-現在、サイトを作成しています。 これには数分かかることがあります。 「**OK**」をクリックします。
-
-![AEMCS](./images/aemcssetup37.png)
-
-数分後に画面を更新すると、新しく作成した CitiSignal Web サイトが表示されます。
-
-![AEMCS](./images/aemcssetup38.png)
-
-## 2.1.2.6 Publishシティシグナルのウェブサイト
-
-次に、**CitiSignal** の前にあるチェックボックスをクリックします。 次に、「**公開を管理**」をクリックします。
-
-![AEMCS](./images/aemcssetup39.png)
-
-「**次へ**」をクリックします。
-
-![AEMCS](./images/aemcssetup40.png)
-
-**子を含める設定** をクリックします。
-
-![AEMCS](./images/aemcssetup41.png)
-
-チェックボックス **子を含める** をクリックして選択し、他のチェックボックスをクリックして選択解除します。 「**OK**」をクリックします。
-
-![AEMCS](./images/aemcssetup42.png)
-
-「**公開**」をクリックします。
-
-![AEMCS](./images/aemcssetup43.png)
-
-その後、あなたはここに送り返されます。 **CitiSignal**/**us**/**en** に移動します。 **index** の前にあるチェックボックスをクリックし、「**編集**」をクリックします。
-
-![AEMCS](./images/aemcssetup44.png)
-
-Web サイトは **ユニバーサルエディター** で開きます。
-
-![AEMCS](./images/aemcssetup45.png)
-
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトにアクセスできるようになりました。
-
-この例では、完全な URL は次のようになります。
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` や `https://main--citisignal--woutervangeluwe.aem.live/us/en`。
-
-最初に公開する必要があるので、すべてのアセットが正しく表示されるまでには時間がかかる場合があります。
-
-次の画面が表示されます。
-
-![AEMCS](./images/aemcssetup46.png)
-
-数分後、アセットはすべて正しく読み込まれます。
-
-![AEMCS](./images/aemcssetup47.png)
-
-## 2.1.2.7 テストページのパフォーマンス
-
-[https://pagespeed.web.dev/](https://pagespeed.web.dev/) に移動します。 URL を入力し、「**分析**」をクリックします。
-
-![AEMCS](./images/aemcssetup48.png)
-
-次に、モバイルとデスクトップの両方のビジュアライゼーションで、web サイトのスコアが高くなることがわかります。
-
-**モバイル**:
-
-![AEMCS](./images/aemcssetup49.png)
-
-**デスクトップ**:
-
-![AEMCS](./images/aemcssetup50.png)
-
-次の手順：[2.1.3 カスタムブロックの設定 ](./ex3.md)
+次の手順：[2.1.3 AEM CS 環境のセットアップ ](./ex3.md)
 
 [モジュール 2.1 に戻る](./aemcs.md)
 

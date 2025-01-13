@@ -4,9 +4,9 @@ description: Adobe Experience ManagerCloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: ce8e9f193765f362b3ea1396626d56b453e1d5ec
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -27,11 +27,15 @@ ht-degree: 2%
 
 この演習では、Cloud Manager プログラムを作成して、Sites、Assets、Edge Delivery Servicesの各製品を作成します。
 
-[2.1.2 AEM CS 環境のセットアップ](./ex2.md)
+[2.1.2 ドキュメントベースの web サイトの作成](./ex2.md)
+
+この「はじめに」の演習では、既存の web サイトテンプレートをコピーして、独自のドキュメントベースの web サイトを設定します。
+
+[2.1.3 AEM CS 環境のセットアップ](./ex3.md)
 
 この演習では、AEM CS 環境を設定し、CitiSignal web サイトにアクセスします。
 
-[2.1.3 カスタムブロックの作成](./ex3.md)
+[2.1.4 カスタムブロックの作成](./ex4.md)
 
 この演習では、web サイト用のカスタムブロックコンポーネントを開発します。
 

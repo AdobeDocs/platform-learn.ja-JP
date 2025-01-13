@@ -4,9 +4,9 @@ description: Fireflyサービスの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,9 @@ Azure ストレージエクスプローラーに戻り、フォルダーのコ�
 
 ## 1.1.2.5 プログラムによるファイル利用
 
-Azure ストレージアカウントからプログラムでファイルを読み取りを使用するには、ファイルを読み取るための権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。 前の演習で作成した SAS トークンを技術的に使用できますが、**読み取り** 権限のみを持つ別のトークンを用意することがベストプラクティスです。
+Azure ストレージアカウントからプログラムによってファイルを読み取りを使用するには、ファイルを読み取ることができる権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。 前の演習で作成した SAS トークンを技術的に使用できますが、**読み取り** 権限のみを持つ別のトークンと、**書き込み** 権限のみを持つ別のトークンを用意することをお勧めします。
+
+### 長期読み取り SAS トークン
 
 これを行うには、Azure ストレージエクスプローラーに戻ります。 コンテナを右クリックし、[**共有アクセス署名の取得**] をクリックします。
 
@@ -253,17 +255,113 @@ Azure ストレージアカウントからプログラムでファイルを読�
 **権限** には、次の権限が必要です。
 
 - **読取り**
-- **追加**
-- **作成**
-- **Write**
 - **リスト**
+
+**有効期限** を今から 1 年後に設定します。
 
 「**作成**」をクリックします。
 
-![Azure ストレージ ](./images/az28.png)
+![Azure ストレージ ](./images/az100.png)
 
+その後、読み取り権限を持つ長期 SAS トークンを取得します。 URL をコピーして、コンピューター上のファイルに書き留めます。
 
-次の手順：[1.1.3 ...](./ex3.md)
+![Azure ストレージ ](./images/az101.png)
+
+URL は次のようになります：
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+上記の URL から、いくつかの値を取得できます。
+
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### 長期書き込み SAS トークン
+
+これを行うには、Azure ストレージエクスプローラーに戻ります。 コンテナを右クリックし、[**共有アクセス署名の取得**] をクリックします。
+
+![Azure ストレージ ](./images/az27.png)
+
+**権限** には、次の権限が必要です。
+
+- **追加**
+- **作成**
+- **Write**
+
+**有効期限** を今から 1 年後に設定します。
+
+「**作成**」をクリックします。
+
+![Azure ストレージ ](./images/az102.png)
+
+その後、読み取り権限を持つ長期 SAS トークンを取得します。 URL をコピーして、コンピューター上のファイルに書き留めます。
+
+![Azure ストレージ ](./images/az103.png)
+
+URL は次のようになります：
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+ここでも、上記の URL から複数の値を取得できます。
+
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`：`?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Postmanの変数
+
+上記の節でわかるように、読み取りトークンと書き込みトークンの両方に共通の変数がいくつかあります。
+
+次に、上記の SAS トークンの様々な要素を格納する変数をPostmanで作成する必要があります。
+両方の URL で同じ値がいくつか存在します。
+
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`：`?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+今後の API インタラクションでは、主に変更されるのはアセット名ですが、上記の変数は変わりません。 その場合、変数をPostmanで作成すると、毎回手動で指定する必要がなくなるので便利です。
+
+それには、Postmanを開きます。 **環境** アイコンをクリックし、**すべての変数** メニューを開いて、**環境** をクリックします。
+
+![Azure ストレージ ](./images/az104.png)
+
+次に、これを確認します。 表示されるテーブルにこれらの 4 つの変数を作成し、列 **初期値** および **現在の値** に対して、特定の個人の値を入力します。
+
+- `AZURE_STORAGE_URL`：自分の url
+- `AZURE_STORAGE_CONTAINER`：コンテナ名
+- `AZURE_STORAGE_SAS_READ`:SAS 読み取りトークン
+- `AZURE_STORAGE_SAS_WRITE`:SAS 書き込みトークン
+
+「**保存**」をクリックします。
+
+![Azure ストレージ ](./images/az105.png)
+
+前の演習の 1 つで、リクエスト **2}Firefly- T2I （styleref） V3** の **本文」は次のようになります。**
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![Azure ストレージ ](./images/az24.png)
+
+これで、URL を次のように変更できます。
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+「**送信**」をクリックして、加えた変更をテストします。
+
+![Azure ストレージ ](./images/az106.png)
+
+変数が正しい方法で設定されている場合は、画像 URL が返されます。
+
+![Azure ストレージ ](./images/az107.png)
+
+画像 URL を開いて画像を確認します。
+
+![Azure ストレージ ](./images/az108.png)
+
+次の手順：[1.1.3 Adobe FireflyおよびAdobe Photoshop](./ex3.md)
 
 [モジュール 1.1 に戻る](./firefly-services.md)
 

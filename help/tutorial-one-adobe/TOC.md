@@ -4,10 +4,10 @@ breadcrumb-title: Creative CloudからExperience Cloudまで、Adobeアプリケ
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
+source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 7%
+source-wordcount: '145'
+ht-degree: 6%
 
 ---
 
@@ -23,15 +23,16 @@ ht-degree: 7%
       + [概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Fireflyサービスの概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Microsoft Azure と事前署名済み URL を使用したFireflyプロセスの最適化](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3 Adobe FireflyおよびAdobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
 
 + 2 コンテンツのサプライチェーン {#csc}
    + 2.1 Adobe Experience ManagerCloud Service{#module21}
       + [概要](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
       + [2.1.1 Cloud Manager プログラムを作成する](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
-      + [2.1.2 AEM CS 環境のセットアップ](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
-      + [2.1.3 カスタムブロックの作成](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
+      + [2.1.2 ドキュメントベースの web サイトの作成](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
+      + [2.1.3 AEM CS 環境のセットアップ](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
+      + [2.1.4 カスタムブロックの作成](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [概要](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
