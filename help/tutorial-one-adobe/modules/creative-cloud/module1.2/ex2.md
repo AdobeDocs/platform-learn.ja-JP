@@ -4,9 +4,9 @@ description: Fireflyサービスの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '1759'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,227 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion74.png)
 
-次の手順：[1.2.3 ...](./ex3.md)
+**1 回実行** をクリックします。
+
+![WF Fusion](./images/wffusion75.png)
+
+**2}Photoshop Change Text** ノードの「**検索 } アイコンをクリックして、応答を確認します。**&#x200B;ステータスファイルへのリンクを含む、次のような応答が得られます。
+
+![WF Fusion](./images/wffusion76.png)
+
+Photoshop API のインタラクションを続ける前に、**エンドポイント T2I** へのルートを無効にして、その API Fireflyに不要な API 呼び出しを送信しないようにします。 **レンチ** アイコンをクリックし、「**ルートを無効にする**」を選択します。
+
+![WF Fusion](./images/wffusion77.png)
+
+これで完了です。
+
+![WF Fusion](./images/wffusion78.png)
+
+次に、別の **複数の変数を設定** ノードを追加します。
+
+![WF Fusion](./images/wffusion79.png)
+
+**Photoshop Change Text** ノードの後ろに配置します。
+
+![WF Fusion](./images/wffusion80.png)
+
+**複数の変数を設定** ノードをクリックし、「**項目を追加**」を選択します。 前のリクエストの応答から変数値を選択します。
+
+| 変数名 | 変数値 |
+|:-------------:| :---------------:| 
+| `psdStatusUrl` | `data > _links > self > href` |
+
+「**追加**」をクリックします。
+
+![WF Fusion](./images/wffusion81.png)
+
+「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion82.png)
+
+**Photoshop Change Text** ノードを右クリックし、「**クローン**」を選択します。
+
+![WF Fusion](./images/wffusion83.png)
+
+作成した **複数の変数を設定** ノードの後に、複製した HTTP リクエストをドラッグします。
+
+![WF Fusion](./images/wffusion83.png)
+
+HTTP リクエストのクローンを右クリックして、「**名前を変更**」を選択し、名前を「**Photoshopステータスを確認**」に変更します。
+
+![WF Fusion](./images/wffusion84.png)
+
+クリックして HTTP リクエストを開きます。 前の手順で作成した変数を参照するように URL を変更し、**メソッド** を **GET** に設定します。
+
+![WF Fusion](./images/wffusion85.png)
+
+空のオプションを選択して **本文** を削除します。
+
+![WF Fusion](./images/wffusion86.png)
+
+「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion87.png)
+
+**1 回実行** をクリックします。
+
+![WF Fusion](./images/wffusion88.png)
+
+すると、フィールド **status** を含んだ応答が取得され、ステータスが **running** に設定されます。 Photoshopがプロセスを完了するまで数秒かかります。
+
+![WF Fusion](./images/wffusion89.png)
+
+これで、応答を完了するためにもう少し時間が必要がわかったので、すぐには実行されないように、この HTTP リクエストの前にタイマーを追加することをお勧めします。
+
+**ツール** ノードをクリックし、「**スリープ**」を選択します。
+
+![WF Fusion](./images/wffusion90.png)
+
+**Set multiple variables** と **Photoshopチェックステータス** の間に **Sleep** ノードを配置します。 「**遅延**」を **5** 秒に設定します。 「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion91.png)
+
+これで完了です。 以下の設定の課題は、5 秒間の待機で十分な場合があるものの、十分ではない可能性があることです。 実際には、ステータスが **成功** になるまで、5 秒ごとにステータスを確認する do...while ループのような、よりインテリジェントなソリューションを使用することをお勧めします。 次の手順で、このような戦術を実装します。
+
+![WF Fusion](./images/wffusion92.png)
+
+**複数の変数を設定** と **スリープ** の間にある **レンチ** アイコンをクリックします。 「**モジュールを追加**」を選択します。
+
+![WF Fusion](./images/wffusion93.png)
+
+`flow` を検索し、「**フロー制御**」を選択します。
+
+![WF Fusion](./images/wffusion94.png)
+
+**リピーター** を選択します。
+
+![WF Fusion](./images/wffusion95.png)
+
+「**繰り返し**」を **20** に設定します。 「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion96.png)
+
+次に、**Photoshopのステータスの確認** で **+** をクリックして、別のモジュールを追加します。
+
+![WF Fusion](./images/wffusion97.png)
+
+**フロー** を検索し、「**フロー制御**」を選択します。
+
+![WF Fusion](./images/wffusion98.png)
+
+「**配列アグリゲータ**」を選択します。
+
+![WF Fusion](./images/wffusion99.png)
+
+**Source モジュール** を **リピーター** に設定します。 **OK** をクリックします。
+
+![WF Fusion](./images/wffusion100.png)
+
+すると、次のようになります。
+
+![WF Fusion](./images/wffusion101.png)
+
+**レンチ** アイコンをクリックし、「**モジュールを追加**」を選択します。
+
+![WF Fusion](./images/wffusion102.png)
+
+**ツール** を検索して **ツール** を選択します。
+
+![WF Fusion](./images/wffusion103.png)
+
+**複数の変数を取得** を選択します。
+
+![WF Fusion](./images/wffusion104.png)
+
+「**+項目を追加**」をクリックして、「**変数名**」を `done` に設定します。
+
+![WF Fusion](./images/wffusion105.png)
+
+「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion106.png)
+
+前に設定した **複数の変数を設定** ノードをクリックします。 変数 **done** を初期化するには、ここで `false` に設定する必要があります。 「**+項目を追加**」をクリックします。
+
+![WF Fusion](./images/wffusion107.png)
+
+**変数名** には、`done` を使用します。 ステータスを設定するには、ブール値が必要です。 ブール値を見つけるには、「**歯車**」アイコンをクリックし、「`false`」を選択します。 「**追加**」をクリックします。
+
+![WF Fusion](./images/wffusion108.png)
+
+「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion109.png)
+
+次に、設定した **複数の変数を取得** ノードの後にある **レンチ** アイコンをクリックします。
+
+![WF Fusion](./images/wffusion110.png)
+
+**フィルターを設定** を選択します。 ここで、変数 **done** の値を確認する必要があります。 この値を **false** に設定した場合は、ループの次の部分を実行する必要があります。 値が **true** に設定されている場合は、プロセスが既に正常に完了しているので、ループの次の部分を続行する必要はありません。
+
+![WF Fusion](./images/wffusion111.png)
+
+ラベルには、「完了しました **を使用します。**。既存の変数 **done** を使用して **条件** を設定し、演算子を **Equal to** に設定し、値をブール変数 `false` にする必要があります。 「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion112.png)
+
+次に、ノード **Photoshopのステータスの確認** と **配列アグリゲータ** の間にスペースを作ります。 次に、「**レンチ**」アイコンをクリックし、「**ルーターを追加**」を選択します。 これは、Photoshop ファイルのステータスを確認した後は 2 つのパスが存在する必要があるためです。 ステータスが `succeeded` の場合は、**done** の変数を `true` に設定する必要があります。 ステータスが `succeeded` に等しくない場合、ループは続行されます。 ルータはこれを確認して設定することを可能にします。
+
+![WF Fusion](./images/wffusion113.png)
+
+ルーターを追加したら、**レンチ** アイコンをクリックし、「**フィルターを設定**」を選択します。
+
+![WF Fusion](./images/wffusion114.png)
+
+ラベルには、**完了** を使用します。 **2}Photoshopチェックステータス** ノードからの応答を使用して **条件を設定します。応答フィールド** data.outputs[].status **を選択し、演算子は** 次と等しい **に、値は `succeeded` にする必要があります。**「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion115.png)
+
+次に、疑問符の付いた空のノードをクリックし、**tools** を検索します。 次に、「**ツール**」を選択します。
+
+![WF Fusion](./images/wffusion116.png)
+
+「**複数の変数を設定**」を選択します。
+
+![WF Fusion](./images/wffusion117.png)
+
+ルーターのこのブランチを使用すると、Photoshop ファイルの作成ステータスが正常に完了したことになります。 つまり、do...while ループでPhotoshopのステータスを引き続き確認する必要がなくなったので、変数 `done` を `true` に設定する必要があります。
+
+**変数名** には、`done` を使用します。 **変数値** には、ブール値 `true` を使用する必要があります。 **歯車** アイコンをクリックし、「`true`」を選択します。 「**追加**」をクリックします。
+
+![WF Fusion](./images/wffusion118.png)
+
+「**OK**」をクリックします。
+
+![WF Fusion](./images/wffusion119.png)
+
+次に、作成した **複数の変数を設定** ノードを右クリックし、「**クローン**」を選択します。
+
+![WF Fusion](./images/wffusion120.png)
+
+クローンノードをドラッグして、**配列アグリゲータ** に接続します。 次に、ノードを右クリックして「**名前を変更**」を選択し、名前を `Placeholder End` に変更します。
+
+![WF Fusion](./images/wffusion122.png)
+
+既存の変数を削除し、「**+項目を追加**」をクリックします。 **変数名** には `placeholder` を使用し、**変数値** には `end` を使用します。 **追加** をクリックしてから、**OK** をクリックします。
+
+![WF Fusion](./images/wffusion123.png)
+
+「**保存**」をクリックして、シナリオを保存します。 次に、「**1 回実行** をクリックします。
+
+![WF Fusion](./images/wffusion124.png)
+
+その後、シナリオが実行され、正常に終了します。 設定した do...while ループが正常に動作していることがわかります。 以下の実行では、**ツール/複数の変数を取得** ノードのバブルに基づいて **リピーター** が 20 回実行されたことがわかります。 そのノードの後、ステータスをチェックするフィルターを設定し、ステータスが **成功** でない場合にのみ、次のノードが実行されました。 この実行では、ステータスが最初の実行で既に **成功** しているので、フィルター後の部分は 1 回だけ実行されました。
+
+![WF Fusion](./images/wffusion125.png)
+
+新しいPhotoshop ファイルの作成ステータスを確認するには、**Photoshop ステータスの確認** HTTP リクエストのバブルをクリックし、「**ステータス** フィールドにドリルダウンします。
+
+![WF Fusion](./images/wffusion126.png)
+
+これで、いくつかの手順を自動化する繰り返し可能なシナリオの基本バージョンを設定しました。 次の演習では、複雑さを増やして、これを繰り返し説明します。
+
+次の手順：[1.2.3 Workfront Fusion を使用したプロセスの自動化 ](./ex3.md)
 
 [モジュール 1.2 に戻る](./automation.md)
 

@@ -4,9 +4,9 @@ description: Adobe Fireflyサービス
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '175'
 ht-degree: 2%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 2%
 
 [1.2.2 Workfront Fusion 内でのAdobeAPI の使用](./ex2.md)
 
-この演習では、Workfront Fusion 内でFireflyサービス API とPhotoshop API を設定して使用します。
+この演習では、Workfront Fusion の機能を確認しながら、Workfront Fusion 内でFireflyサービス API とPhotoshop API を設定および使用します。
 
-[1.2.3 ...](./ex3.md)
+[1.2.3 Workfront Fusion によるプロセスの自動化](./ex3.md)
 
-この演習では、...。
+この演習では、引き続きジャーニーの調整を行って、画像作成プロセスを自動化します。
 
 [概要と利点](./summary.md)
 
