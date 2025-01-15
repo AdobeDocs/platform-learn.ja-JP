@@ -3,9 +3,10 @@ title: Fireflyサービスの概要
 description: Fireflyサービスの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
+source-git-commit: a0c16a47372d322a7931578adca30a246b537183
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '703'
 ht-degree: 2%
 
 ---
@@ -191,7 +192,7 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion38.png)
 
-もう一度 *1 回実行**をクリックします。
+もう一度 **実行** をクリックします。
 
 ![WF Fusion](./images/wffusion39.png)
 
@@ -227,7 +228,7 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion47.png)
 
-次の手順：[1.2.2 Fireflyテキストを使用して、Workfront Fusion を使用して画像を作成する ](./ex2.md)
+次の手順：[1.2.2 Workfront Fusion 内でAdobeAPI を使用する ](./ex2.md)
 
 [モジュール 1.2 に戻る](./automation.md)
 
