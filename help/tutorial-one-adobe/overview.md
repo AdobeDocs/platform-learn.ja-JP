@@ -3,9 +3,9 @@ title: 概要 – 包括的なテクニカルチュートリアル - 1 つのAdo
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 4%
 - Google Cloud Platform
 - Microsoft Azure
 - Postman
+- Snowflake
 - ...
 
 このチュートリアルの演習を完了すると、次のことができるようになります。
@@ -55,7 +56,11 @@ ht-degree: 4%
 
 [1.1 Adobe Fireflyサービス](./modules/creative-cloud/module1.1/firefly-services.md)
 
-この基本モジュールでは、Adobe Fireflyを使用して…
+このモジュールでは、Adobe Fireflyサービス API、Photoshop API およびMicrosoft Azure ストレージサービスを使用して、画像を生成し、プログラムで保存します。
+
+[1.2 Workfront Fusion によるクリエイティブワークフローの自動化](./modules/creative-cloud/module1.2/automation.md)
+
+この基本モジュールでは、Adobe Workfront Fusion を使用して、コンテンツ作成ワークフローを自動化および拡張します。
 
 ### 2.コンテンツのサプライチェーン
 
