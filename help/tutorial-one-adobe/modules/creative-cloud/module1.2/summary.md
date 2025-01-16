@@ -3,7 +3,8 @@ title: Fireflyサービスの自動化 – 概要
 description: Fireflyサービスの自動化 – 概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 2%
@@ -16,11 +17,9 @@ ht-degree: 2%
 
 ## メリット
 
-Fireflyサービスを使用するメリットを説明します。
-
+Workfront Fusion を使用するメリットを説明します。
 
 ## これを確認する
-
 
 [モジュール 1.2 に戻る](./automation.md)
 

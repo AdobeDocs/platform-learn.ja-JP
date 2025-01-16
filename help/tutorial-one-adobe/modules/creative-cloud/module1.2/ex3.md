@@ -1,12 +1,12 @@
 ---
-title: Fireflyサービスの概要
-description: Fireflyサービスの概要
+title: Workfront Fusion によるプロセスの自動化
+description: Workfront Fusion によるプロセスの自動化
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,9 @@ Postmanに移動し、「**送信** を再度クリックします。
 
 ![WF Fusion](./images/wffusion232.png)
 
-続行する前に、Postman リクエストの名前を `POST - Send Request to Workfront Fusion Webhook` に変更します。
+最後に、Postman リクエストの名前を `POST - Send Request to Workfront Fusion Webhook` に変更します。
 
 ![WF Fusion](./images/wffusion233.png)
-
 
 次の手順：[ 概要とメリット ](./summary.md)
 

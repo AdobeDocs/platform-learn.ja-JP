@@ -1,35 +1,30 @@
 ---
-title: Adobe Workfrontを使用したワークフロー管理
-description: Adobe Workfrontを使用したワークフロー管理
+title: Adobe Journey Optimizer翻訳サービス
+description: Adobe Journey Optimizer翻訳サービス
 kt: 5342
 doc-type: tutorial
-exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---
 
-# 2.2 Adobe Workfrontを使用したワークフロー管理
+# 3.2 Adobe Journey Optimizer翻訳サービス
 
 ## 学習内容
 
-- 様々な方法でAdobe Workfrontを使用する方法を説明します。
+- Adobe Journey Optimizer Translation Services の設定方法と使用方法について説明します。
 
 ## 前提条件
 
-- WorkfrontおよびWorkfront Fusion へのアクセス
+- Adobe Journey Optimizerへのアクセス
 
 ## 演習
 
-[2.2.1 Workfrontの概要](./ex1.md)
+[3.2.1 ...](./ex1.md)
 
 この演習では、...
-
-[2.2.5 WorkfrontとPhotoshopの統合](./ex5.md)
-
-この演習では、Adobe PhotoshopとAdobe Workfrontを接続するプラグインを設定し、使用を開始します。
 
 [概要と利点](./summary.md)
 

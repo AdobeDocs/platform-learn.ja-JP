@@ -1,12 +1,12 @@
 ---
-title: Fireflyサービスの概要
-description: Fireflyサービスの概要
+title: Workfront Fusion 内でのAdobeAPI の使用
+description: Workfront Fusion 内でのAdobeAPI の使用
 kt: 5342
 doc-type: tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---

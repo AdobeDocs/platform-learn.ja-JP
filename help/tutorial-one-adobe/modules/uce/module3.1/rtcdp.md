@@ -1,37 +1,29 @@
 ---
-title: 3.1 Adobe Real-Time CDP
-description: Adobe Real-Time CDP
+title: 基盤 – FAC – 概要
+description: 基盤 – FAC – 概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cab61d74-9e16-4eda-b704-e103ab5350e2
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '53'
+ht-degree: 1%
 
 ---
 
-# 3.1 Adobe Real-Time CDP
+# 概要とメリット
 
-## 学習内容
+おめでとうございます。Adobe Experience Platformの学習に時間を費やしていただき、ありがとうございます。
 
-- 様々な方法でAdobe Real-Time CDPを使用する方法を説明します。
+## メリット
 
-## 前提条件
+次に、Adobe Experience Platformの Federated Audience Composition のデータ取得機能のメリットを紹介します。
 
-- Adobe Real-Time CDPへのアクセス
 
-## 演習
 
-[3.1.1 Real-Time CDP](./ex1.md)
+## これを確認する
 
-この演習では、...
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
->[!NOTE]
->
->Adobe Experience Platformとそのアプリケーションについて知るのに時間を費やしていただき、ありがとうございます。 ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+[モジュール 3.1 に戻る](./fac.md)
 
 [すべてのモジュールに戻る](../../../overview.md)

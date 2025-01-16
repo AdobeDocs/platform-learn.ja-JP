@@ -1,17 +1,17 @@
 ---
-title: Fireflyサービスの概要
-description: Fireflyサービスの概要
+title: Photoshop API の操作
+description: Photoshop API の操作
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
 
-# 1.1.3 Adobe FireflyおよびAdobe Photoshop
+# 1.1.3 Photoshop API の操作
 
 ## 1.1.3.1 Adobe I/O統合の更新
 
@@ -73,6 +73,8 @@ Postmanに行きなさい。 API リクエストをPhotoshopに送信する前�
 
 ![Azure ストレージ ](./images/ps9.png)
 
+### 1.1.3.2.1 Photoshop API - Hello World
+
 次に、Photoshop API のみなさん、すべての権限とアクセス権が正しく設定されているかどうかをテストしましょう。 コレクション **Photoshop** で、**Photoshop Hello （テスト認証）という名前のリクエストを開きます。**。「**送信**」をクリックします。
 
 ![Azure ストレージ ](./images/ps10.png)
@@ -82,6 +84,8 @@ Postmanに行きなさい。 API リクエストをPhotoshopに送信する前�
 ![Azure ストレージ ](./images/ps11.png)
 
 次に、PSDファイル **citisignal-fiber.psd** をプログラムで操作するには、それをストレージアカウントにアップロードする必要があります。 Azure ストレージエクスプローラーを使用してコンテナに手動でドラッグ&amp;ドロップすることもできますが、今回は API を通じて行う必要があります。
+
+### 1.1.3.2.2 Azure へのPSDのアップロード
 
 Postmanで、リクエスト **Azure ストレージアカウントへのPSDのアップロード** を開きます。 前の演習では、Postmanでこれらの環境変数を設定しました。ここでは、これを使用します。
 
@@ -109,6 +113,8 @@ Postmanで、リクエスト **Azure ストレージアカウントへのPSDの�
 Azure ストレージエクスプローラーを使用して確認すると、フォルダーを更新した後にファイルが表示されます。
 
 ![Azure ストレージ ](./images/ps16.png)
+
+### 1.1.3.2.3 Photoshop API - マニフェストの取得
 
 次に、PSDファイルのマニフェストファイルを取得する必要があります。 Postmanで、リクエスト **Photoshop -PSDマニフェストの取得** を開きます。 **本文** に移動します。
 
@@ -155,6 +161,8 @@ Azure ストレージエクスプローラーを使用して確認すると、�
 例えば、`2048x2048-cta` というテキストを検索します。 この画像が表示されます。
 
 ![Azure ストレージ ](./images/ps21.png)
+
+### 1.1.3.2.4 Photoshop API - テキストの変更
 
 次に、API を使用してコールトゥアクションのテキストを変更する必要があります。 Postmanで、リクエスト **Photoshop - Change Text を開き****Body** に移動します。
 
