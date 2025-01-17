@@ -3,10 +3,11 @@ title: はじめに – 概要
 description: はじめに – 概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
@@ -47,8 +48,10 @@ ht-degree: 2%
 
 この演習では、デモやイネーブルメントに使用できるようにモバイルアプリケーションを設定します。
 
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
 >
->Adobe Experience Platformとそのアプリケーションについて知るのに時間を費やしていただき、ありがとうございます。 ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [すべてのモジュールに戻る](../../../overview.md)

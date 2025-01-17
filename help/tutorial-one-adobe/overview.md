@@ -3,7 +3,7 @@ title: 概要 – 包括的なテクニカルチュートリアル - 1 つのAdo
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -94,8 +94,8 @@ ht-degree: 4%
 
 このモジュールでは、パーソナライズされたオファーを設定し、独自の意思決定を行う実践的な方法として、Adobe Journey Optimizerをoffer decisioningサービスと共に使用します。
 
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。

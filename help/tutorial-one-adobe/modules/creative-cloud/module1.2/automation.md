@@ -4,7 +4,7 @@ description: Workfront Fusion によるクリエイティブワークフロー�
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -40,9 +40,9 @@ ht-degree: 2%
 
 このモジュールの概要とメリットの概要
 
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
