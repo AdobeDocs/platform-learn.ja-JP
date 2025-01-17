@@ -4,9 +4,9 @@ description: Fireflyサービスの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '938'
 ht-degree: 1%
 
 ---
@@ -130,13 +130,15 @@ Postmanに戻ります。 **インポート** をクリックします。
 
 リクエストを実行する前に、適切な環境が選択されていることを確認します。 右上隅の「環境」ドロップダウンリストを確認すると、現在選択されている環境を確認できます。
 
+![Postman](./images/envselemea1.png)
+
 選択した環境の名前は、`--aepUserLdap-- Firefly Services OAuth Credential` のようになります。
 
 ![Postman](./images/envselemea.png)
 
 これで、Postman環境とコレクションが設定され、機能するようになりました。 PostmanからAdobe I/Oに対して認証できるようになりました。
 
-**Adobe IO - OAuth** コレクションで、**POST - アクセストークンの取得** という名前のリクエストを選択します。 **Params** の下で、`API_KEY` と `CLIENT_SECRET` の 2 つの変数が参照されています。 これらの変数は、選択した環境 `--aepUserLdap-- Firefly Services OAuth Credential` から取得されます。
+**Adobe IO - OAuth** コレクションで、**POST - アクセストークンの取得** という名前のリクエストを選択します。 **Params** の下で、`API_KEY` と `CLIENT_SECRET` の 2 つの変数が参照されていることがわかります。 これらの変数は、選択した環境 `--aepUserLdap-- Firefly Services OAuth Credential` から取得されます。
 
 「**送信**」をクリックします。
 

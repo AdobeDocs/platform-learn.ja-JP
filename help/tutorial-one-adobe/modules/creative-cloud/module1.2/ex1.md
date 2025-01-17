@@ -4,10 +4,10 @@ description: Workfront Fusion の概要
 kt: 5342
 doc-type: tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,15 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion2.png)
 
-「**新しいシナリオを作成**」をクリックします。
+**+** アイコンをクリックして、新しいフォルダーを作成します。
+
+![WF Fusion](./images/wffusion2a.png)
+
+フォルダー名には、`--aepUserLdap--` を使用します。 「**保存**」をクリックします。
+
+![WF Fusion](./images/wffusion2b.png)
+
+フォルダーを選択し、「**新しいシナリオを作成**」をクリックします。
 
 ![WF Fusion](./images/wffusion3.png)
 

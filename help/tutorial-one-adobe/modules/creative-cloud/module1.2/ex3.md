@@ -4,9 +4,9 @@ description: Workfront Fusion によるプロセスの自動化
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ split 関数では、セミコロンの前に値の配列を指定し、セミ�
 
 ![WF Fusion](./images/wffusion209.png)
 
-また、Azure ストレージアカウントにファイルを書き込むために使用されるファイル名を更新する必要もあります。 ファイル名が静的な場合、新しいイテレーションでは単に前のファイルが上書きされるので、カスタマイズされたファイルは失われます。 現在の静的ファイル名は **sevoi-psd-changed-text.psd** なので、これを更新する必要があります。 カーソルを `text` という単語の後ろに置きます。
+また、Azure ストレージアカウントにファイルを書き込むために使用されるファイル名を更新する必要もあります。 ファイル名が静的な場合、新しいイテレーションでは単に前のファイルが上書きされるので、カスタマイズされたファイルは失われます。 現在の静的ファイル名は **citignal-fiber-changed-text.psd** ですが、これを更新する必要があります。 カーソルを `text` という単語の後ろに置きます。
 
 ![WF Fusion](./images/wffusion210.png)
 
@@ -77,11 +77,11 @@ split 関数では、セミコロンの前に値の配列を指定し、セミ�
 
 ![WF Fusion](./images/wffusion213.png)
 
-ファイルをダウンロードして開きます。 その後、ボタン上の様々なテキストが表示されます。 これはファイル `sevoi-psd-changed-text-1.psd` です。
+ファイルをダウンロードして開きます。 その後、ボタン上の様々なテキストが表示されます。 これはファイル `citisignal-fiber-changed-text-1.psd` です。
 
 ![WF Fusion](./images/wffusion214.png)
 
-これはファイル `sevoi-psd-changed-text-2.psd` です。
+これはファイル `citisignal-fiber-changed-text-2.psd` です。
 
 ![WF Fusion](./images/wffusion215.png)
 
@@ -162,9 +162,31 @@ Postmanに移動し、「**送信** を再度クリックします。
 
 ![WF Fusion](./images/wffusion232.png)
 
-最後に、Postman リクエストの名前を `POST - Send Request to Workfront Fusion Webhook` に変更します。
+Postman リクエストの名前を `POST - Send Request to Workfront Fusion Webhook` に変更します。
 
 ![WF Fusion](./images/wffusion233.png)
+
+ここで、変数 **psdTemplate** の使用を開始する必要があります。 **Photoshop Change Text** ノードの入力ファイルの場所をハードコーディングする代わりに、Postman リクエストから受け取った変数を使用するようになりました。
+
+**Photoshop Change Text** ノードを開き、**コンテンツをリクエスト** に移動します。 **inputs** の下のハードコードされたファイル名 **citisignal-fiber.psd** を選択して削除します。
+
+![WF Fusion](./images/wffusion234.png)
+
+変数 **psdTemplate** を選択します。 **OK** をクリックして、シナリオを保存します。
+
+![WF Fusion](./images/wffusion235.png)
+
+**オン** をクリックして、シナリオをオンにします。 シナリオはノンストップで実行されるようになります。
+
+![WF Fusion](./images/wffusion236.png)
+
+Postmanに戻ります。 ファイル名 `citisignal-fiber.psd` を変数 **psdTemplate** の値として入力し、もう一度 **送信** をクリックしてシナリオを再実行します。
+
+![WF Fusion](./images/wffusion237.png)
+
+外部システムから提供される変数としてPSDテンプレートを指定することで、再利用可能なシナリオを構築できるようになりました。
+
+これで、この演習が完了しました。
 
 次の手順：[ 概要とメリット ](./summary.md)
 

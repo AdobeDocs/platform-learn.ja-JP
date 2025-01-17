@@ -2,14 +2,17 @@
 title: 概要 – 包括的なテクニカルチュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
-source-git-commit: 3461f494c12ee020dbea9ec3c474fe68da7357cf
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+source-git-commit: 710c985a0fb9d2be3b1a991aeb2330f24e66abc0
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '485'
 ht-degree: 4%
 
 ---
 
 # 包括的なテクニカルチュートリアル - 1 つのAdobe
+
+![ 技術インサイダー ](./assets/images/techinsiders.png)
 
 ## 概要
 

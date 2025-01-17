@@ -4,9 +4,9 @@ description: Microsoft Azure と事前署名済み URL を使用したFireflyプ
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -108,6 +108,10 @@ Microsoft Azure アカウントを選択し、認証プロセスを完了しま�
 ![Azure ストレージ ](./images/az15.png)
 
 Microsoft Azure ストレージエクスプローラーアプリに戻ります。 サブスクリプションを選択し、**エクスプローラーを開く** をクリックします。
+
+>[!NOTE]
+>
+>アカウントが表示されない場合は、メールアドレスの横にある **歯車** アイコンをクリックし、「**フィルター解除**」を選択します。
 
 ![Azure ストレージ ](./images/az16.png)
 

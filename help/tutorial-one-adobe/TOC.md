@@ -4,9 +4,9 @@ breadcrumb-title: Creative CloudからExperience Cloudまで、Adobeアプリケ
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ad36efe6c3a590ddc79c39f6d7511e31b51f9dcb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '310'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 4%
       + [1.1.1 Fireflyサービスの概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Microsoft Azure と事前署名済み URL を使用したFireflyプロセスの最適化](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe FireflyおよびAdobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.4 Fireflyカスタムモデル](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Workfront Fusion {#module21} によるクリエイティブワークフローの自動化
       + [概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)

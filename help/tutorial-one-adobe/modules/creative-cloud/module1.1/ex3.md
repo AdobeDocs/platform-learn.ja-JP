@@ -4,9 +4,9 @@ description: Photoshop API の操作
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -229,7 +229,7 @@ Azure ストレージエクスプローラーを使用して確認すると、�
 
 これで、この演習が完了しました。
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[1.1.4 Fireflyのカスタムモデル ](./ex4.md)
 
 [モジュール 1.1 に戻る](./firefly-services.md)
 
