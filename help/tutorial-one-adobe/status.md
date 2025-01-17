@@ -2,10 +2,11 @@
 title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
-source-git-commit: 24153b07074c053e0623a4167507d4a6aa37f212
+exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 12%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
@@ -25,5 +26,11 @@ ht-degree: 12%
 | [3.3 Adobe Journey Optimizer:Offer decisioning](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024 | ○ | - |
 
 {style="table-layout:auto"}
+
+>[!NOTE]
+>
+>![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+>
+>ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [すべてのモジュールに戻る](./overview.md)

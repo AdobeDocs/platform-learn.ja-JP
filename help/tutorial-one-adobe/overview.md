@@ -3,7 +3,7 @@ title: 概要 – 包括的なテクニカルチュートリアル - 1 つのAdo
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 6fabd01d69e01255bc45c811fa37701728e032fa
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # 包括的なテクニカルチュートリアル - 1 つのAdobe
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="center"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要
 
@@ -96,5 +96,6 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="center"}
+>![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+>
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。

@@ -4,7 +4,7 @@ description: Adobe Fireflyサービス
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 18fee60ed4c92af84b6866e1b2cce6eb496b912e
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
@@ -45,7 +45,8 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}

@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer翻訳サービス
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 4%
@@ -33,7 +33,8 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [すべてのモジュールに戻る](../../../overview.md)
