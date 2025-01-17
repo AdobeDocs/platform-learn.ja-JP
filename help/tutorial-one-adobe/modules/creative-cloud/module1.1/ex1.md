@@ -4,7 +4,7 @@ description: Fireflyサービスの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 この演習では、Adobe I/Oを非常に集中的に使用して、Fireflyサービス API に対してクエリを実行します。 以下の手順に従って、Adobe I/Oを設定してください。
 
-[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home) に移動します
+[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します
 
 ![Adobe I/Oの新規統合 ](./images/iohome.png)
 
@@ -79,7 +79,7 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 ## Adobe I/Oに対するPostman認証
 
-[https://www.postman.com/downloads/](https://www.postman.com/downloads/) に移動します。
+[https://www.postman.com/downloads/](https://www.postman.com/downloads/){target="_blank"} に移動します。
 
 お使いの OS に関連するバージョンのPostmanをダウンロードしてインストールします。
 
@@ -178,8 +178,8 @@ Adobe I/Oから、特定の値 **非常に長い access_token）と有効期限�
 
 次の演習に進む前に、API リクエストをいろいろと試してください。
 
-次の手順：[1.1.2 Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを最適化する ](./ex2.md)
+次の手順：[1.1.2 Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを最適化する ](./ex2.md){target="_blank"}
 
-[モジュール 1.1 に戻る](./firefly-services.md)
+[ モジュール 1.1 に戻る ](./firefly-services.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

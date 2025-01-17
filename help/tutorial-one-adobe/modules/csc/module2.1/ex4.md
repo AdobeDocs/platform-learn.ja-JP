@@ -3,7 +3,8 @@ title: カスタムブロックの開発
 description: カスタムブロックの開発
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ## 2.1.4.1 ローカル開発環境の設定
 
-[https://desktop.github.com/download/](https://desktop.github.com/download/) に移動し、**Github デスクトップ** をダウンロードしてインストールします。
+[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"} に移動し、**Github デスクトップ** をダウンロードしてインストールします。
 
 ![ ブロック ](./images/block1.png)
 
@@ -29,6 +30,6 @@ GitHub リポジトリは、GitHub デスクトップで開かれます。 **ロ
 ローカルフォーム
 
 
-[モジュール 2.1 に戻る](./aemcs.md)
+[ モジュール 2.1 に戻る ](./aemcs.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

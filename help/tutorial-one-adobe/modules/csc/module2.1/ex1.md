@@ -4,7 +4,7 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 2.1.1 Cloud Manager プログラムを作成する
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に移動します。 選択する組織は `--aepImsOrgName--` です。 次のようなメッセージが表示されます。 「**プログラムを追加**」をクリックします。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 選択する組織は `--aepImsOrgName--` です。 次のようなメッセージが表示されます。 「**プログラムを追加**」をクリックします。
 
 ![AEMCS](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs4.png)
 
-お待ちください。演習 [2.1.2 ドキュメントベースの web サイトの作成 ](./ex2.md) から既に開始できます。
+お待ちください。演習 [2.1.2 ドキュメントベースの web サイトの作成 ](./ex2.md){target="_blank"} から既に開始できます。
 
 環境が作成され、使用する準備が整うと、確認のメールが届きます。その後、ここに戻ることができます。
 
 ![AEMCS](./images/aemcs5.png)
 
-メールによる確認を受け取ったら、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に戻ります。 その後、プログラムのステータスが **準備完了** に変更されたことがわかります。 プログラムをクリックして開きます。
+メールによる確認を受け取ったら、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に戻ります。 その後、プログラムのステータスが **準備完了** に変更されたことがわかります。 プログラムをクリックして開きます。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ ht-degree: 4%
 
 パイプラインの実行が完了したら、次の演習に進むことができます。
 
-次の手順：[2.1.2 ドキュメントベースの web サイトを作成する ](./ex2.md)
+次の手順：[2.1.2 ドキュメントベースの web サイトを作成する ](./ex2.md){target="_blank"}
 
-[モジュール 2.1 に戻る](./aemcs.md)
+[ モジュール 2.1 に戻る ](./aemcs.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

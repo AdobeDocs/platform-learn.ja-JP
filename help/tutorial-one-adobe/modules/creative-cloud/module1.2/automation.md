@@ -4,9 +4,9 @@ description: Workfront Fusion によるクリエイティブワークフロー�
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Experience Platformとそのアプリケーションについて知るのに時間を費やしていただき、ありがとうございます。 ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [すべてのモジュールに戻る](../../../overview.md)

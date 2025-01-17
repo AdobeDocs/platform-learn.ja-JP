@@ -3,7 +3,7 @@ title: Photoshop API の操作
 description: Photoshop API の操作
 kt: 5342
 doc-type: tutorial
-source-git-commit: b7ee794e9611afc7bee35a0f471ec50caad10f85
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # 1.1.4 Fireflyカスタムモデル
 
-[https://firefly.adobe.com](https://firefly.adobe.com) に移動します。 **カスタムモデル** に移動します。
+[https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"} に移動します。 **カスタムモデル** に移動します。
 
 ![Firefly](./images/ffcm1.png)
 
@@ -54,8 +54,8 @@ Fireflyカスタムモデルの使用条件に **同意** します。
 
 これで、この演習が完了しました。
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[ 概要とメリット ](./summary.md){target="_blank"}
 
-[モジュール 1.1 に戻る](./firefly-services.md)
+[ モジュール 1.1 に戻る ](./firefly-services.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

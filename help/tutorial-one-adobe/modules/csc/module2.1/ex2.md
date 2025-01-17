@@ -4,7 +4,7 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.2 ドキュメントベースの web サイトの作成
 
-Cloud Manager プログラムが作成されるのを待っている間、最初のドキュメントベースのオーサリング web サイトを設定するのに十分な時間があります。 以下の演習は、[aem.live 開発者向けチュートリアル ](https://www.aem.live/developer/tutorial) に基づいています。 開始するには、次の手順に従います。
+Cloud Manager プログラムが作成されるのを待っている間、最初のドキュメントベースのオーサリング web サイトを設定するのに十分な時間があります。 以下の演習は、[aem.live 開発者向けチュートリアル ](https://www.aem.live/developer/tutorial){target="_blank"} に基づいています。 開始するには、次の手順に従います。
 
 ## 2.1.2.1 Google ドライブの設定
 
-[https://drive.google.com](https://drive.google.com) に移動します。 **+新規をクリックし** 次に **新規フォルダー** をクリックします。
+[https://drive.google.com](https://drive.google.com){target="_blank"} に移動します。 **+新規をクリックし** 次に **新規フォルダー** をクリックします。
 
 ![AEMCS](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ Cloud Manager プログラムが作成されるのを待っている間、最初
 
 ![AEMCS](./images/googledrive2.png)
 
-ファイル [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) をダウンロードし、コンピューターに抽出します。
+ファイル [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"} をダウンロードし、コンピューターに抽出します。
 
 ![AEMCS](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ URL が次のようになるように、クエリ文字列パラメーター `?u
 
 ## 2.1.2.2 GitHub リポジトリのセットアップ
 
-[https://github.com](https://github.com) に移動します。 「**ログイン**」をクリックします。
+[https://github.com](https://github.com){target="_blank"} に移動します。 「**ログイン**」をクリックします。
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ URL が次のようになるように、クエリ文字列パラメーター `?u
 
 ![AEMCS](./images/aemcssetup3.png)
 
-[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate) に移動します。 その後、これが表示されます。 「**このテンプレートを使用**」をクリックし、「**新しいリポジトリを作成**」をクリックします。
+[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"} に移動します。 その後、これが表示されます。 「**このテンプレートを使用**」をクリックし、「**新しいリポジトリを作成**」をクリックします。
 
 ![AEMCS](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ URL が次のようになるように、クエリ文字列パラメーター `?u
 
 ![AEMCS](./images/aemdocbcssetup6.png)
 
-次に、[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync) に移動します。 **設定** をクリックします。
+次に、[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"} に移動します。 **設定** をクリックします。
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ URL の現在の値：`https://drive.google.com/drive/u/0/folders/1MGzOt7ubUh3gu
 
 ## 2.1.2.4 AEM Sidekick拡張機能のインストール
 
-[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo) に移動します。 **Chromeに追加** をクリックします。
+[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"} に移動します。 **Chromeに追加** をクリックします。
 
 ![AEMCS](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ Web サイトのプレビューバージョンが開きます。 変更内容を
 
 上記の演習は、基本を学び、自分でドキュメントベースのオーサリングを体験するための良い方法でした。 次の演習では、CitiSignal をデモブランドとして使用して独自のデモ Web サイトを設定します。
 
-次の手順：[2.1.3 AEM CS 環境のセットアップ ](./ex3.md)
+次の手順：[2.1.3 AEM CS 環境のセットアップ ](./ex3.md){target="_blank"}
 
-[モジュール 2.1 に戻る](./aemcs.md)
+[ モジュール 2.1 に戻る ](./aemcs.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

@@ -5,9 +5,10 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
+exl-id: d52ec3c8-8628-4a52-9107-471342118a53
+source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '326'
 ht-degree: 2%
 
 ---
@@ -65,6 +66,7 @@ offer decisioningを使用すると、選択可能な選択肢の中から最適
 
 >[!NOTE]
 >
->Adobe Experience Platformとそのアプリケーションについて知るのに時間を費やしていただき、ありがとうございます。 ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [すべてのモジュールに戻る](../../../overview.md)

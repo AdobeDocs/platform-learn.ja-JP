@@ -4,7 +4,7 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 2.1.3.1 GitHub リポジトリのセットアップ
 
-[https://github.com](https://github.com) に移動します。 「**ログイン**」をクリックします。
+[https://github.com](https://github.com){target="_blank"} に移動します。 「**ログイン**」をクリックします。
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one) に移動します。 その後、これが表示されます。 「**このテンプレートを使用**」をクリックし、「**新しいリポジトリを作成**」をクリックします。
+[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one){target="_blank"} に移動します。 その後、これが表示されます。 「**このテンプレートを使用**」をクリックし、「**新しいリポジトリを作成**」をクリックします。
 
 ![AEMCS](./images/aemcssetup4.png)
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup6.png)
 
-次に、[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync) に移動します。 **設定** をクリックします。
+次に、[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"} に移動します。 **設定** をクリックします。
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -83,7 +83,7 @@ YYY は GitHub ユーザーアカウントに置き換える必要がありま�
 
 ZZZ は、前の演習で使用した GitHub リポジトリの名前に置き換える必要があります。
 
-AEM CS オーサー環境の URL は、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) で確認できます。 **プログラム** をクリックして開きます。
+AEM CS オーサー環境の URL は、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} で確認できます。 **プログラム** をクリックして開きます。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -125,7 +125,7 @@ ZZZ = `citisignal`
 
 ## 2.1.3.3 CitiSignal アセットのアップロード
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に移動します。 **プログラム** をクリックして開きます。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -155,7 +155,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 **参照** をクリックして、アップロードするパッケージを探します。
 
-アップロードするパッケージは **citisignal-assets.zip** と呼ばれ、次の場所でダウンロードできます。[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip)
+アップロードするパッケージは **citisignal-assets.zip** と呼ばれ、次の場所でダウンロードできます。[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}
 
 ![AEMCS](./images/aemcssetup23.png)
 
@@ -188,7 +188,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 ## 2.1.3.4 Publish CitiSignal アセット
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に移動します。 **プログラム** をクリックして開きます。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -224,7 +224,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 ## 2.1.3.5 CitiSignal のウェブサイトを作成する
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) に移動します。 **プログラム** をクリックして開きます。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -248,7 +248,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 ![AEMCS](./images/aemcssetup32.png)
 
-次に、事前設定済みのテンプレートをサイトに読み込む必要があります。 テンプレートは [ こちら ](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip) からダウンロードできます。 ファイルをデスクトップに保存します。
+次に、事前設定済みのテンプレートをサイトに読み込む必要があります。 テンプレートは [ こちら ](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip){target="_blank"} からダウンロードできます。 ファイルをデスクトップに保存します。
 
 次に、ファイル `citisignal-edge-delivery-services-template-0.0.4.zip` を選択し、「**開く** をクリックします。
 
@@ -325,7 +325,7 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 
 ## 2.1.3.7 テストページのパフォーマンス
 
-[https://pagespeed.web.dev/](https://pagespeed.web.dev/) に移動します。 URL を入力し、「**分析**」をクリックします。
+[https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"} に移動します。 URL を入力し、「**分析**」をクリックします。
 
 ![AEMCS](./images/aemcssetup48.png)
 
@@ -339,8 +339,8 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 
 ![AEMCS](./images/aemcssetup50.png)
 
-次の手順：[2.1.4 カスタムブロックの設定 ](./ex4.md)
+次の手順：[2.1.4 カスタムブロックの設定 ](./ex4.md){target="_blank"}
 
-[モジュール 2.1 に戻る](./aemcs.md)
+[ モジュール 2.1 に戻る ](./aemcs.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

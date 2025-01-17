@@ -4,7 +4,7 @@ description: Microsoft Azure と事前署名済み URL を使用したFireflyプ
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >既存の Azure サブスクリプションがある場合は、この手順をスキップできます。 その場合は次の演習に進んでください。
 
-[https://portal.azure.com](https://portal.azure.com) に移動し、Azure アカウントでログインします。 お持ちでない場合は、個人の電子メール アドレスを使用して Azure アカウントを作成してください。
+[https://portal.azure.com](https://portal.azure.com){target="_blank"} に移動し、Azure アカウントでログインします。 お持ちでない場合は、個人の電子メール アドレスを使用して Azure アカウントを作成してください。
 
 ![Azure ストレージ ](./images/02azureportalemail.png)
 
@@ -83,7 +83,7 @@ Azure サブスクリプションフォームに入力し、アクティベー�
 
 ## 1.1.2.3 Azure ストレージエクスプローラーのインストール
 
-Microsoft Azure ストレージエクスプローラーを使用してファイルを管理します。 [ このリンク ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) からダウンロードできます。 特定の OS に適したバージョンを選択し、ダウンロードしてインストールします。
+Microsoft Azure ストレージエクスプローラーを使用してファイルを管理します。 [ このリンク ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} からダウンロードできます。 特定の OS に適したバージョンを選択し、ダウンロードしてインストールします。
 
 ![Azure ストレージ ](./images/az10.png)
 
@@ -125,7 +125,7 @@ Microsoft Azure ストレージエクスプローラーアプリに戻ります�
 
 ## 1.1.2.4 手動によるファイルのアップロードと、画像ファイルをスタイル参照として使用する
 
-これで、任意の画像ファイルをコンテナにアップロードできるようになりました。 任意の画像ファイルを使用するか、コンピューターにダウンロードして [ このファイル ](./images/gradient.jpg) を使用できます。
+これで、任意の画像ファイルをコンテナにアップロードできるようになりました。 任意の画像ファイルを使用するか、コンピューターにダウンロードして [ このファイル ](./images/gradient.jpg){target="_blank"} を使用できます。
 
 ![Azure ストレージ ](./images/gradient.jpg)
 
@@ -199,7 +199,7 @@ Azure ストレージアカウントでプログラムによるファイルの�
 
 ![Azure ストレージ ](./images/az31.png)
 
-ローカルマシンからファイルを選択する必要があります。 任意の新しい画像ファイルを使用するか、[ こちら ](./images/gradient2-p.jpg) にある別の画像ファイルを使用できます。
+ローカルマシンからファイルを選択する必要があります。 任意の新しい画像ファイルを使用するか、[ こちら ](./images/gradient2-p.jpg){target="_blank"} にある別の画像ファイルを使用できます。
 
 ![ グラデーション ファイル ](./images/gradient2-p.jpg)
 
@@ -365,8 +365,8 @@ URL は次のようになります：
 
 ![Azure ストレージ ](./images/az108.jpg)
 
-次の手順：[1.1.3 Adobe FireflyおよびAdobe Photoshop](./ex3.md)
+次の手順：[1.1.3 Adobe FireflyおよびAdobe Photoshop](./ex3.md){target="_blank"}
 
-[モジュール 1.1 に戻る](./firefly-services.md)
+[ モジュール 1.1 に戻る ](./firefly-services.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

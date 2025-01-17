@@ -4,7 +4,7 @@ description: Photoshop API の操作
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 1.1.3.1 Adobe I/O統合の更新
 
-[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home) に移動します。
+[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
 
 ![Adobe I/Oの新規統合 ](./images/iohome.png)
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ## 1.1.3.2PSDファイルをプログラムで操作する
 
-ファイルをダウンロード デスクトップに [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd) に移動します。
+ファイルをダウンロード デスクトップに [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} に移動します。
 
 Photoshopでファイル **citisignal-fiber.psd** を開きます。 これで完了です。
 
@@ -229,8 +229,8 @@ Azure ストレージエクスプローラーを使用して確認すると、�
 
 これで、この演習が完了しました。
 
-次の手順：[1.1.4 Fireflyのカスタムモデル ](./ex4.md)
+次の手順：[1.1.4 Fireflyのカスタムモデル ](./ex4.md){target="_blank"}
 
-[モジュール 1.1 に戻る](./firefly-services.md)
+[ モジュール 1.1 に戻る ](./firefly-services.md){target="_blank"}
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
