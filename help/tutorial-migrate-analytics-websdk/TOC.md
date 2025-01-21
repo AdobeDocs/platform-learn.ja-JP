@@ -1,7 +1,7 @@
 ---
-user-guide-title: Adobe Analytics タグ拡張機能から Web SDK タグ拡張機能に移行します。
-breadcrumb-title: Adobe Analytics タグ拡張機能から Web SDK タグ拡張機能に移行します。
-user-guide-description: Analytics のお客様向けの実践チュートリアルで、Adobe Analytics タグ拡張機能から web SDK タグ拡張機能への移行に成功する方法を説明します
+user-guide-title: タグを使用した web SDKへのAdobe Analytics
+breadcrumb-title: タグを使用した web SDKへのAdobe Analytics
+user-guide-description: Adobe Experience Platformのお客様向けの実践チュートリアルで、Analytics タグを使用してAdobe Analyticsを web SDKに正常に移行する方法を説明します
 solution: Analytics,Data Collection,Experience Platform
 feature-set: Analytics,Experience Platform
 feature: Web SDK
@@ -11,15 +11,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
 index: false
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '116'
 ht-degree: 1%
 
 ---
 
 
-# Adobe Analytics タグ拡張機能から Web SDK タグ拡張機能に移行します。 {#migrate-analytics-to-websdk}
+# タグを使用したAdobe Analyticsの Web SDKへの移行 {#migrate-analytics-to-websdk}
 
 + [移行の概要](migration-to-websdk-overview.md)
 

@@ -1,17 +1,18 @@
 ---
-title: Adobe Analytics タグ拡張機能から Web SDK タグ拡張機能に移行します。
+title: タグを使用したAdobe Analyticsの Web SDKへの移行
 description: Web SDKへの移行中に実行する手順と、その過程で行う必要がある意思決定について説明します。
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
-source-git-commit: d360ed9f8c0378625c6b885d71d892362d3a6d69
+exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
 
-# Adobe Analytics タグ拡張機能から Web SDK タグ拡張機能に移行します。
+# タグを使用したAdobe Analyticsの Web SDKへの移行
 
 Experience Platformタグ（旧称 Launch）の Analytics 拡張機能を使用してAdobe Analytics実装を Web SDKに移行する手順を説明します。タグでも Web SDK拡張機能を使用します。 タグでAdobe Analytics拡張機能を使用すると、バックグラウンドで「AppMeasurement.js」コードが使用されます。 そのため、これはAppMeasurementを Web SDKに移行するチュートリアルと考えることができますが、このチュートリアルは完全に Tags を対象としており、JavaScript実装との間の移行には対応していません（タグ UI 内で使用されるJavaScript コードを除く）。 JavaScript実装の移行については、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) を参照してください。
 
@@ -69,4 +70,3 @@ Web SDKがどのように役立つかについては、Adobe Analyticsの担当�
 
 
 ### DOUG のメモ – チュートリアルテストの後、ここにリンクを貼ります。クライアントがチュートリアルや Web SDKへの移行に関して質問できるコミュニティの投稿です。
-

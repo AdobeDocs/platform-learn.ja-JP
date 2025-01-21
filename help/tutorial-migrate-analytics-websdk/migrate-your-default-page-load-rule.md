@@ -4,13 +4,13 @@ description: この演習では、Adobe Experience Cloud タグのデフォル�
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # デフォルトのページロードルールを移行
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 概要
 
-少し戻ろう。 タグ（旧称「Launch」）には、すべてのページに対して実行されるルールがある可能性があります。このルールは、1 つ以上のデフォルト変数を設定し、Adobe Analyticsに対してビーコンまたはヒットを実行します。 このルールは、現在、これらの操作を行うためにAdobe Analytics拡張機能の「アクション」を使用しています。 実装を Web SDKに移行する際には、Analytics 拡張機能への参照（アクションなど）を削除し、Web SDKに属するアクションに置き換える必要があります。 以下の手順では、上記を想定します。つまり、変数を設定し、Analytics へのトラッキングビーコンで送信するデフォルトのページ読み込みルールがあります。
+少し戻ろう。 タグには、すべてのページで実行されるルールがある可能性があります。このルールは、1 つ以上のデフォルト変数を設定し、Adobe Analyticsに対してビーコンまたはヒットを実行します。 このルールは、現在、これらの操作を行うためにAdobe Analytics拡張機能の「アクション」を使用しています。 実装を Web SDKに移行する際には、Analytics 拡張機能への参照（アクションなど）を削除し、Web SDKに属するアクションに置き換える必要があります。 以下の手順では、上記を想定します。つまり、変数を設定し、Analytics へのトラッキングビーコンで送信するデフォルトのページ読み込みルールがあります。
 
 ## 「変数を設定」アクションの移行
 

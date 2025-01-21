@@ -4,13 +4,13 @@ description: 追加のページベースのルールを Web SDK拡張機能に�
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # 追加のページルールを移行
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 少しバックアップして、Adobe Analytics タグ拡張機能を使用した場合の Analytics 実装（JavaScript ファイルの名前なので「AppMeasurement」実装とも呼ばれます）について説明します。
 
-実装の仕組みを正確に理解しているとは思いませんが、Experience Platformタグ（旧称「Launch」）を使用する実装の多くでは、ページまたは URL の何かに基づいて、条件付きでのみ実行されるルールがいくつかあります。 例えば、次のようなものがあります。
+実装の仕組みを正確に理解しているとは思いませんが、Experience Platformタグを使用する多くの実装では、ページまたは URL の何かに基づいて、条件付きでのみ実行されるルールがいくつかあります。 例えば、次のようなものがあります。
 
 * 検索結果ルール（内部検索が実行され、検索結果ページが表示された場合にのみ起動）
 * Campaign ランディングページのルール。URL にトラッキングコードがある場合にのみ起動します
@@ -68,6 +68,3 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >デフォルトのページ読み込みルールと同様に、Analytics 拡張機能の **変数を設定** アクションをルールに残したので、移行を検証しながらデータを比較できます。 最終クリーンアップを行う際は、後で戻って、Analytics 拡張機能のアクションを削除することを忘れないでください。
-
-
-

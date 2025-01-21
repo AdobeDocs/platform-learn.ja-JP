@@ -4,13 +4,13 @@ description: Web SDKに移行する際に、データをデバッグおよび検
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
-
 
 # Web SDK移行のデバッグと検証
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 1. Analysis Workspaceで新規プロジェクトを作成し、2 つのパネルを追加します
 1. パネル 1 のレポートスイートを、現在のAdobe Analytics実稼動レポートスイートに設定します。
 1. パネル 2 のレポートスイートを、新しい web SDK開発レポートスイートに設定します。
-1. 両方の拡張機能を使用して Analytics にデータが送信されているカレンダーで期間を使用して、同じレポートを両方のパネルに表示します
+1. 両方のレポートスイートにデータが送信された日のみを含む期間を使用して、同じレポートを両方のパネルに配置します
 1. データを比較
 
 次のようになります（これらの空のデモレポートスイートにはデータがないことを理解しています）。
