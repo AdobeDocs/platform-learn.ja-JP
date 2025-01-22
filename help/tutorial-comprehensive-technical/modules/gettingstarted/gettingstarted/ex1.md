@@ -4,9 +4,9 @@ description: はじめに – Experience Leagueドキュメント用のChrome拡
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ IMS 組織 ID はAdobe Experience Cloud インスタンスの一意の ID で、
 
 IMS 組織 ID の検索は、複数の方法で実行できます。 不明な場合は、インスタンスのシステム管理者の 1 人に ID を確認してください。
 
-[Admin Console](https://https://adminconsole.adobe.com/) に移動すると見つかる場合があります。このフォルダーでは、URL の一部として見つけることができます。
+[Admin Console](https://adminconsole.adobe.com/) に移動すると見つかる場合があります。このフォルダーでは、URL の一部として見つけることができます。
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ IMS 組織 ID の検索は、複数の方法で実行できます。 不明な�
 
 ![DSN](./images/aeptenantid.png)
 
-Chrome拡張機能に入力する場合は、アンダースコアがプレフィックスとして追加されていることを確認する必要があります。この例では **experienceplatform** が **_experienceplatform** になります。
+Chrome拡張機能に入力する場合は、アンダースコアがプレフィックスとして追加されていることを確認する必要があります。この例では **experienceplatform** が **_experienceplatform** になります。 また、URL からコピーする場合は、必ず **@** 記号を削除してください。
 
 **AEP サンドボックス名**
 

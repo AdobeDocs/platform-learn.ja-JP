@@ -4,9 +4,9 @@ description: 顧客 AI - データ準備（取り込み）
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 4%
 
 ---
@@ -84,7 +84,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データセット](./images/createdatasetfromschema.png)
 
-次の画面では、前の演習で作成したデータセット（「**[!UICONTROL ldap - Demo System - Customer Experience Event]**」という名前）を選択します。 「**次へ**」をクリックします。
+次の画面では、前の演習で作成したデータセット（`--aepUserLdap-- - Demo System - Customer Experience Event`）を選択します。 「**次へ**」をクリックします。
 
 ![データセット](./images/createds1.png)
 

@@ -4,9 +4,9 @@ description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-左側のメニューで、「**[!UICONTROL タグ]**」をクリックします。 前の演習の後、2 つのデータ収集プロパティが得られました。1 つは web 用で、もう 1 つはモバイル用です。
+左側のメニューで、「**[!UICONTROL タグ]**」をクリックします。 前の演習の後、3 つのデータ収集プロパティが得られました。1 つは web 用、1 つはモバイル用、もう 1 つは CX アプリ用です。
 
 ![DSN](./images/launchprop1.png)
 
@@ -57,11 +57,11 @@ ht-degree: 1%
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig5.png)
 
-今のところはこれで終わりです。 [ モジュール 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) では、Web SDK とその機能をすべて設定する方法について説明します。
+今のところはこれで終わりです。 [ モジュール 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) では、Web SDKとその機能をすべて設定する方法について説明します。
 
 左側のメニューで、「**[!UICONTROL タグ]**」をクリックします。
 
-検索結果をフィルタリングして、2 つのデータ収集プロパティを表示します。 **Web** プロパティをクリックして開きます。
+検索結果をフィルタリングして、データ収集プロパティを表示します。 **Web** プロパティをクリックして開きます。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig10a.png)
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig11.png)
 
-最初に、Adobe Experience Platform Web SDK 拡張機能をクリックしてから、**設定** をクリックします。
+最初に、Adobe Experience Platform Web SDK拡張機能をクリックしてから、**設定** をクリックします。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig12.png)
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 これで、モバイル用Adobe Experience Platform データ収集クライアントプロパティでデータストリームを使用する準備が整いました。
 
-**タグ** に移動し、検索結果をフィルタリングして、2 つのデータ収集プロパティを表示します。 **モバイル** のプロパティをクリックして開きます。
+**タグ** に移動し、検索結果をフィルタリングして、データ収集プロパティを表示します。 **モバイル** のプロパティをクリックして開きます。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig10am.png)
 
