@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
+source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 29%
+source-wordcount: '195'
+ht-degree: 28%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 29%
    + [ルールの作成](tags/build-rules.md)
    + [スタックルール](tags/stack-rules.md)
    + [ライブラリのビルドと公開](tags/build-and-publish-a-library.md)
-   + [Web SDK を使用して web サイトに実装 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
+   + [Web SDKを使用した web サイトへの実装 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
    + [Solution SDK を使用して web サイトに実装 ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ja){target="_blank"}
    + [ モバイルアプリへの実装 ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja){target="_blank"}
 + Web SDK{#web-sdk}
@@ -35,6 +35,7 @@ ht-degree: 29%
    + [デモ](web-sdk/demo.md)
    + [ 実装チュートリアル（タグ付き） ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja){target="_blank"}
    + [Target の移行チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
+   + [Analytics の移行チュートリアル ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + 同意 {#consent}
       + [概要](web-sdk/consent/overview.md)
       + [Adobe標準を使用して同意値を設定する](web-sdk/consent/set-consent-adobe.md)
