@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 10982e1d5fa61d2f13ec7686f251a4c7cf6a3565
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -68,5 +68,6 @@ Web SDKがどのように役立つかについては、Adobe Analyticsの担当�
 1. すべての変更を行ったら、ライブラリをステージングにプッシュしてから、実稼動環境にプッシュします。
 1. すべてが完了したら、もう一度テストします。 古い Analytics コードへの参照を削除して変更を加え、すべてが正しく動作することを確認する場合は、これが必要になります。
 
-
-### DOUG のメモ – チュートリアルテストの後、ここにリンクを貼ります。クライアントがチュートリアルや Web SDKへの移行に関して質問できるコミュニティの投稿です。
+>[!NOTE]
+>
+>アドビは、Analytics を web SDKに移行する際にお客様が成功できるよう、取り組みを進めています。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"} に投稿してお知らせください。
