@@ -3,9 +3,10 @@ title: はじめに – Experience Leagueドキュメント用のChrome拡張機
 description: はじめに – Experience Leagueドキュメント用のChrome拡張機能のインストール
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ ht-degree: 0%
 
 このような値の例については、以下を参照してください。 現在、これらの値はまだ使用できませんが、Chrome拡張機能をインストールして有効にすると、これらの変数が通常のテキストに変わり、コピーして再利用できるようになります。
 
-| 名前 | キー |
-|:-------------:| :---------------:|
-| AEP IMS 組織 ID | `--aepImsOrgId--` |
-| AEP テナント ID | `--aepTenantId--` |
-| AEP サンドボックス名 | `--aepSandboxName--` |
-| Learner Profile LDAP | `--aepUserLdap--` |
+| 名前 | キー | 例 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS 組織 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS 組織名 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP テナント ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP サンドボックス名 | `--aepSandboxName--` | `one-adobe` |
+| Learner Profile LDAP | `--aepUserLdap--` | `vangeluw` |
 
-例として、以下のスクリーンショットでは、`aepTenantId` への参照を確認できます。
+例として、以下のスクリーンショットでは、`aepSandboxName` への参照を確認できます。
 
 ![DSN](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ URL からサンドボックス名を取得する前に、このチュートリ�
 
 ![DSN](./images/aepsandboxsw.png)
 
-この例では、AEP サンドボックス名は **tech-insiders** です。
+この例では、AEP サンドボックス名は **one-adobe** です。
 
 ![DSN](./images/aepsname.png)
 
@@ -118,11 +120,10 @@ URL からサンドボックス名を取得する前に、このチュートリ�
 
 LDAP は、実行する設定がユーザーにリンクされ、使用しているインスタンスとサンドボックスと同じインスタンスを使用している他のユーザーと競合しないようにするために使用されます。
 
-あなたの値は次のようになります。
+値は次のようになります。
 最後に、「**新規作成** をクリックします。
 
 ![DSN](./images/c8a.png)
-
 
 拡張機能の左側のメニューに、環境のイニシャルを含む新しいアイコンが表示されます。 クリックします。 次に、**環境変数** と特定のAdobe Experience Platform インスタンス値のマッピングを確認します。 **設定をアクティベート** をクリックします。
 
@@ -134,11 +135,11 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 ## チュートリアルコンテンツの検証
 
-テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3) に移動します。
+テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2) に移動します。
 
-Chrome 拡張機能でアクティブ化された環境に基づいて、すべての **環境変数** が実際の値に置き換えられました。
+Chrome 拡張機能でアクティブ化された環境に基づいて、このページのすべての **環境変数** が実際の値に置き換えられました。
 
-これで、以下に類似した表示になります。ここでは、環境変数 `aepTenantId` が、実際の AEP テナント ID （この場合は **_experienceplatform**）に置き換えられています。
+これで、以下に類似したビューになります。ここで、環境変数 `aepSandboxName` は、実際の AEP サンドボックス名（この場合は **アドビが 1 つ** に置き換えられました。
 
 ![DSN](./images/mod7.png)
 

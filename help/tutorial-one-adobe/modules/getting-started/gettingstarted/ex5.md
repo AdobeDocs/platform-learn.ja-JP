@@ -3,7 +3,8 @@ title: はじめに – モバイルアプリの使用
 description: はじめに – モバイルアプリの使用
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -60,7 +61,7 @@ ht-degree: 0%
 
 ![DSN](./images/web8aa.png)
 
-前の手順で作成した `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)` という名前のデータ収集プロパティで、「**選択**」をクリックします。 次に、「**保存**」をクリックします。
+前の手順で作成した `--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)` という名前のデータ収集プロパティで、「**選択**」をクリックします。 次に、「**保存**」をクリックします。
 
 ![DSN](./images/web8b.png)
 

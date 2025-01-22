@@ -3,9 +3,10 @@ title: はじめに – データストリームの作成
 description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-左側のメニューで、「**[!UICONTROL タグ]**」をクリックします。 前の演習の後、2 つのデータ収集プロパティが得られました。1 つは web 用で、もう 1 つはモバイル用です。
+左側のメニューで、「**[!UICONTROL タグ]**」をクリックします。 前の演習の後、3 つのデータ収集プロパティが得られました。1 つは web 用、1 つはモバイル用、もう 1 つは CX アプリ用です。
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ ht-degree: 1%
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1.png)
 
-**[!UICONTROL 名前]** には、オプションの説明には、`--aepUserLdap-- - Demo System Datastream` と入力します。 **マッピングスキーマ** については、**デモシステム - Web サイトのイベントスキーマ（グローバル v1.1）** を選択してください。 「**保存**」をクリックします。
+**[!UICONTROL 名前]** には、オプションの説明には、`--aepUserLdap-- - One Adobe Datastream` と入力します。 **マッピングスキーマ** については、**デモシステム - Web サイトのイベントスキーマ（グローバル v1.1）** を選択してください。 「**保存**」をクリックします。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 左側のメニューで、「**[!UICONTROL タグ]**」をクリックします。
 
-検索結果をフィルタリングして、2 つのデータ収集プロパティを表示します。 **Web** プロパティをクリックして開きます。
+検索結果をフィルタリングして、データ収集プロパティを表示します。 **Web** プロパティをクリックして開きます。
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig10a.png)
 
@@ -114,7 +115,7 @@ ht-degree: 1%
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1.png)
 
-**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--aepUserLdap-- - Demo System Datastream (Mobile)` と入力します。 **マッピングスキーマ** については、**デモシステム – モバイルアプリのイベントスキーマ（グローバル v1.1）** を選択してください。 「**保存**」をクリックします。
+**[!UICONTROL わかりやすい名前]** と、オプションの説明に `--aepUserLdap-- - One Adobe Datastream (Mobile)` と入力します。 **マッピングスキーマ** については、**デモシステム – モバイルアプリのイベントスキーマ（グローバル v1.1）** を選択してください。 「**保存**」をクリックします。
 
 「**[!UICONTROL 保存]**」をクリックします。
 

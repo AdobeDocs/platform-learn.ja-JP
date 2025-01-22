@@ -4,9 +4,9 @@ description: はじめに – Experience Leagueドキュメント用のChrome拡
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ ht-degree: 0%
 
 このような値の例については、以下を参照してください。 現在、これらの値はまだ使用できませんが、Chrome拡張機能をインストールして有効にすると、これらの変数が通常のテキストに変わり、コピーして再利用できるようになります。
 
-| 名前 | キー |
-|:-------------:| :---------------:|
-| AEP IMS 組織 ID | `--aepImsOrgId--` |
-| AEP テナント ID | `--aepTenantId--` |
-| AEP サンドボックス名 | `--aepSandboxName--` |
-| Learner Profile LDAP | `--aepUserLdap--` |
+| 名前 | キー | 例 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS 組織 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS 組織名 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP テナント ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP サンドボックス名 | `--aepSandboxName--` | `tech-insiders` |
+| Learner Profile LDAP | `--aepUserLdap--` | `vangeluw` |
 
 例として、以下のスクリーンショットでは、`aepTenantId` への参照を確認できます。
 

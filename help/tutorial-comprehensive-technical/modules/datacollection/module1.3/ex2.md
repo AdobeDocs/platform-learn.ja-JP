@@ -4,9 +4,9 @@ description: 基盤 – FAC - スキーマ、データモデル、リンクの�
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -152,7 +152,7 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb20.png)
 
-次に、テーブル `CK_MONTHLY_DATA_USAGE` と `CK_USERS` の間のリンクを定義します。
+次に、テーブル `CK_USERS` と `CK_MONTHLY_DATA_USAGE` の間のリンクを定義します。
 
 ![FAC](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb23.png)
 
-その後、ここに戻ります。 **保存** をクリックします。
+その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
+
 ![FAC](./images/fdb24.png)
+
+次に、テーブル `CK_USERS` と `CK_MOBILE_DATA_USAGE` の間のリンクを定義します。
+
+![FAC](./images/fdb25.png)
+
+この画像が表示されます。 「**保存**」をクリックします。
+
+![FAC](./images/fdb26.png)
 
 これで、AEP での設定が完了しました。 これで、連合オーディエンス構成で連合データの使用を開始できます。
 
