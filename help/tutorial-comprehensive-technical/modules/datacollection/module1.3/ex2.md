@@ -4,7 +4,7 @@ description: 基盤 – FAC - スキーマ、データモデル、リンクの�
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 5%
@@ -130,6 +130,8 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 その後、これが表示されます。 「**保存**」をクリックします。
 
+### `CK_USERS` - `CK_PERSONS`
+
 これで、スキーマ間のリンクの定義を開始できます。 リンクの定義を開始するには、「**リンクを作成**」をクリックする必要があります。
 
 ![FAC](./images/fdb16.png)
@@ -140,6 +142,9 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb17.png)
@@ -147,6 +152,8 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 次に、テーブル `CK_HOUSEHOLDS` と `CK_PERSONS` の間のリンクを定義します。
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
@@ -156,6 +163,9 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb22.png)
@@ -163,6 +173,8 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 次に、テーブル `CK_USERS` と `CK_HOUSEHOLDS` の間のリンクを定義します。
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 

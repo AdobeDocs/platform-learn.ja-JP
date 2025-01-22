@@ -4,7 +4,7 @@ description: はじめに – Experience Leagueドキュメント用のChrome拡
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -136,7 +136,7 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 ## チュートリアルコンテンツの検証
 
-テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3) に移動します。
+テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4) に移動します。
 
 Chrome 拡張機能でアクティブ化された環境に基づいて、すべての **環境変数** が実際の値に置き換えられました。
 
