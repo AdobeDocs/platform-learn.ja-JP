@@ -4,9 +4,9 @@ description: このモジュールでは、企業が、コンテキストに応�
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -53,6 +53,8 @@ ht-degree: 2%
 [概要と利点](./summary.md)
 
 このモジュールの概要とメリットの概要
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

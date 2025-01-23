@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -60,13 +60,15 @@ Real-Time CDP UI を使用して広告の宛先を設定する方法を説明し
 
 外部ソースシステムからAdobe Experience Platformにオーディエンスを読み込みます。
 
-[2.3.7 宛先 SDK](./ex7.md)
+[2.3.7 宛先SDK](./ex7.md)
 
-Destinations SDK を使用して独自の宛先を設定します。
+宛先SDKを使用して独自の宛先を設定します。
 
 [概要と利点](./summary.md)
 
 このモジュールの概要とメリットの概要
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: はじめに – モバイルアプリの使用
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,12 @@ ht-degree: 0%
 
 ![DSN](./images/mobileapp.png)
 
-スマートフォンの **カメラ** アプリを使って、デバイスの OS に対応したモバイルアプリをインストールします。 このイネーブルメントでは、Adobe Experience Platform Mobile SDK を使用する **バージョン 2.x** をインストールする必要があります。
+スマートフォンの **カメラ** アプリを使って、デバイスの OS に対応したモバイルアプリをインストールします。 このイネーブルメントでは、Adobe Experience Platform Mobile SDKを使用する **バージョン 2.x** をインストールする必要があります。
 
 >[!NOTE]
 >
 >iOS デバイスにアプリを初めてインストールした後、アプリを開こうとすると、「**信頼できないエンタープライズデベロッパー**」というエラーメッセージが表示される場合があります。 この問題を修正するには、**Settings/General/VPN &amp; Device Management/Adobe Systems Inc.** に移動し、**Trust Adobe Systems Inc.** をクリックする必要があります。
+>デベロッパーを信頼するプロセスを完了するには、iOS デバイスの再起動が必要になる可能性があります。
 
 アプリがインストールされると、デバイスのホーム画面に表示されます。 アイコンをクリックして、アプリを開きます。
 

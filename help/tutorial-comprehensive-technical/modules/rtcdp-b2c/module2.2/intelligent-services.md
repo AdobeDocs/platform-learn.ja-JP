@@ -4,9 +4,9 @@ description: インテリジェントサービス
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 9%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 9%
 [2.2.3 顧客 AI - スコアリングダッシュボードおよびセグメント化（予測と実行アクション）](./ex3.md)
 
 モデルのトレーニングとスコアリングが完了すると、スコアが Platform に書き戻されます。 セグメントの定義、カスタムダッシュボードの作成など、予測に基づいてどのようなアクションを実行するかを決定できます。
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

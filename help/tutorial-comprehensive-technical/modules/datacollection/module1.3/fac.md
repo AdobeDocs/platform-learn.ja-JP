@@ -4,9 +4,9 @@ description: データ収集 – Federated Audience Composition
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Federated Audience Composition を使用すると、Real-Time CDPおよびJourne
 [概要と利点](./summary.md)
 
 このモジュールの概要とメリットの概要
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

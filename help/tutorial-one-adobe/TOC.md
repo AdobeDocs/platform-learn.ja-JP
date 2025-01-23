@@ -4,9 +4,9 @@ breadcrumb-title: Creative CloudからExperience Cloudまで、Adobeアプリケ
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '312'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 
 + [チュートリアルの概要](/help/tutorial-one-adobe/overview.md)
 + [コンテンツステータス](/help/tutorial-one-adobe/status.md)
++ [前作業](/help/tutorial-one-adobe/prework.md)
 
 + はじめに {#gettingstarted}
    + はじめに {#gettingstarted}
@@ -32,7 +33,7 @@ ht-degree: 4%
       + [1.1.1 Fireflyサービスの概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Microsoft Azure と事前署名済み URL を使用したFireflyプロセスの最適化](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe FireflyおよびAdobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
-      + [1.1.3Fireflyカスタムモデル API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
+      + [1.1.4 Fireflyカスタムモデル API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Workfront Fusion {#module21} によるクリエイティブワークフローの自動化
       + [概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)

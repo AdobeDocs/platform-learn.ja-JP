@@ -1,17 +1,17 @@
 ---
-title: 1.1 Adobe Experience Platform Data Collection と Web SDK Extension のセットアップ
-description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能のセットアップ
+title: 1.1 Adobe Experience Platform Data Collection と Web SDK拡張機能のセットアップ
+description: Foundation - Adobe Experience Platform Data Collection と Web SDK拡張機能の設定
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
 
-# 1.1 Foundation - Adobe Experience Platform Data Collection と Web SDK Extension のセットアップ
+# 1.1 Foundation - Adobe Experience Platform Data Collection と Web SDK拡張機能のセットアップ
 
 この基本モジュールでは、Adobeのデータ収集のビジョンを示し、web サイトやモバイルアプリケーションから、Adobe Experience Platform データ収集、Adobe Experience Platform SDK およびAdobe Experience Platform Edge Networkを使用してAdobe Experience Platformや他のアプリケーションにデータを取得する方法について説明します。 ここでは、Adobe Experience Platformのテクニカルチュートリアルの範囲外にも影響を与える概念およびテクノロジーをいくつか紹介します。 これらの演習のうち、残りの包括的なチュートリアルの基礎となるのはどの部分かをはっきりと示しておく必要があります。ここでは、Experience Edgeとその機能の詳細と、さらなる情報とチュートリアルの参照先について説明します。
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 - Adobeがブランド製品にデータを取り込むために使用するデータフローを説明します。
 - Adobe Experience Platform Edge Networkを介してAdobe Experience Platformや他の製品にデータを送信する方法を説明します。
 - Web およびモバイルからデータを収集するデータ要素およびルールを作成する方法を説明します。
-- Web SDK トラッキングイベントとそのコンテンツのデバッグ方法について説明します。
+- Web SDKのトラッキングイベントとそのコンテンツのデバッグ方法について説明します。
 - データレイヤーとは何か、およびデータレイヤーを実装する際にAdobeが推奨するものを説明します。
-- Web SDK を最初から実装する手順を説明します。
+- Web SDKを最初から実装する手順を説明します。
 - Web 実装とモバイル実装の違いを説明します。
 
 ## 前提条件
@@ -52,23 +52,25 @@ ht-degree: 0%
 
 [1.1.4 クライアント側のウェブデータ収集](./ex4.md)
 
-この演習では、インストールされている Web SDK をデバッグし、その仕組みと、今後の演習で使用するデータを理解します。
+この演習では、インストールされている web SDKをデバッグし、その仕組みと、今後の演習で使用するデータを理解します。
 
 [1.1.5 Adobe AnalyticsとAdobe Audience Managerの実装](./ex5.md)
 
-この演習では、Adobe AnalyticsおよびAdobe Audience Managerの Web SDK で収集された web データを参照して使用します。
+この演習では、Adobe AnalyticsおよびAdobe Audience Managerの Web SDKで収集された web データを参照して使用します。
 
 [1.1.6 Adobe Targetの実装](./ex6.md)
 
-この演習では、Adobe Targetでアクティビティを設定し、Web SDK を使用して実装します。
+この演習では、Adobe Targetでアクティビティを設定し、web SDKを介して実装します。
 
 [1.1.7 Adobe Experience Platformにおける XDM スキーマの要件](./ex7.md)
 
-Web SDK と alloy.js でデータをAdobe Experience Platformに取り込めるようにするには、特定の XDM Mixin をAdobe Experience Platformの XDM スキーマに含める必要があります。
+Web SDKと alloy.js が確実にデータをAdobe Experience Platformに取り込めるようにするには、特定の XDM Mixin がAdobe Experience Platformの XDM スキーマに含まれる必要があります。
 
 [概要と利点](./summary.md)
 
 このモジュールの概要とメリットの概要
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

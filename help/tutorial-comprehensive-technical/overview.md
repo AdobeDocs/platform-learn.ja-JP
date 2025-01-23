@@ -3,14 +3,16 @@ title: 概要
 description: データエンジニア、データアナリスト、データアーキテクト、データサイエンティスト、オーケストレーションエンジニアおよびマーケターが、Adobe Experience Platformとそのアプリケーションサービスのビジネス価値を完全に理解するための出発点です。
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Adobe Experience Platform の包括的な技術チュートリアル
+
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要
 
@@ -182,3 +184,9 @@ Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [
 このモジュールでは、Adobe Experience Platform クエリサービスの使用方法を説明します。
 
 **時間的投資：** 90 分
+
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。

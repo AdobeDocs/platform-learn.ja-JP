@@ -4,9 +4,9 @@ description: クエリサービス
 kt: 5342
 doc-type: tutorial
 exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,8 @@ Web インタラクションデータ、コールセンターインタラクシ�
 [概要と利点](./summary.md)
 
 このモジュールの概要とメリットの概要
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

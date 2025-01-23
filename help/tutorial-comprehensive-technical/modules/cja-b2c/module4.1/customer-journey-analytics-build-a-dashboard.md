@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Adobe Experience Platform上にAnalysi
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -60,6 +60,8 @@ Customer Journey Analyticsを使用してAdobe Experience Platform データを�
 [概要と利点](./summary.md)
 
 このモジュールの概要とメリットの概要
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
