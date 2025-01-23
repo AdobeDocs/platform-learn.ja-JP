@@ -3,16 +3,17 @@ title: データ収集 – FAC - スキーマ、データモデル、リンク�
 description: 基盤 – FAC - スキーマ、データモデル、リンクの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 5%
 
 ---
 
 # 3.1.2 スキーマ、データモデル、リンクの作成
 
-これで、AEP で連合データベースを設定できるようになりました。
+これで、Adobe Experience Platformでフェデレーテッド データベースを設定できます。
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 
@@ -129,6 +130,8 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 その後、これが表示されます。 「**保存**」をクリックします。
 
+### `CK_USERS` - `CK_PERSONS`
+
 これで、スキーマ間のリンクの定義を開始できます。 リンクの定義を開始するには、「**リンクを作成**」をクリックする必要があります。
 
 ![FAC](./images/fdb16.png)
@@ -139,6 +142,9 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb17.png)
@@ -147,13 +153,18 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb19.png)
 
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb20.png)
 
-次に、テーブル `CK_MONTHLY_DATA_USAGE` と `CK_USERS` の間のリンクを定義します。
+次に、テーブル `CK_USERS` と `CK_MONTHLY_DATA_USAGE` の間のリンクを定義します。
 
 ![FAC](./images/fdb21.png)
+
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
@@ -163,8 +174,19 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb23.png)
 
-その後、ここに戻ります。 **保存** をクリックします。
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+
+その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
+
 ![FAC](./images/fdb24.png)
+
+次に、テーブル `CK_USERS` と `CK_MOBILE_DATA_USAGE` の間のリンクを定義します。
+
+![FAC](./images/fdb25.png)
+
+この画像が表示されます。 「**保存**」をクリックします。
+
+![FAC](./images/fdb26.png)
 
 これで、AEP での設定が完了しました。 これで、連合オーディエンス構成で連合データの使用を開始できます。
 

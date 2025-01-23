@@ -4,9 +4,9 @@ breadcrumb-title: Creative CloudからExperience Cloudまで、Adobeアプリケ
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '317'
 ht-degree: 4%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 4%
    + 2.2 Workfront {#module22}
       + [概要](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
       + [2.2.1 Workfrontの概要](/help/tutorial-one-adobe/modules/csc/module2.2/ex1.md)
+      + [2.2.2 Workfrontでのプルーフ](/help/tutorial-one-adobe/modules/csc/module2.2/ex2.md)
       + [2.2.5 WorkfrontとPhotoshopの統合](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 

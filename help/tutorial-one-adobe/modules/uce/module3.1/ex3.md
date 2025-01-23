@@ -3,9 +3,10 @@ title: データ収集 – FAC - フェデレーション構成の作成
 description: 基盤 – FAC - フェデレーション構成の作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -139,6 +140,8 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 これで、クエリがSnowflakeにプッシュされ、そこにソースデータがクエリされます。 結果は AEP にプッシュされますが、ソースデータはSnowflake内に残ります。
 
 これでオーディエンスにデータが入力され、オーディエンスは AEP エコシステム内からターゲット設定できます。
+
+![FAC](./images/fedcomp22.png)
 
 次の手順：[ 概要とメリット ](./summary.md)
 

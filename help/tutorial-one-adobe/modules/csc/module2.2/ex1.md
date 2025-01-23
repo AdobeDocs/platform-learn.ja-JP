@@ -4,9 +4,9 @@ description: Workfrontの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 2%
 
 ---
@@ -54,9 +54,93 @@ ht-degree: 2%
 
 ![WF](./images/wfb6.png)
 
-これで、WorkfrontとAEM Assets CS の統合が設定されました。
+これで、WorkfrontからAEM Assets CS への統合が設定されました。
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2 AEM Assetsとのメタデータ統合の設定
+
+次に、AEM AssetsのアセットのメタデータフィールドがAEMと共有されるように、Workfrontを設定する必要があります。
+
+その場合は、[https://experience.adobe.com/](https://experience.adobe.com/) にアクセスしてください。 **Experience Manager Assets** をクリックします。
+
+![WF](./images/wfbaem1.png)
+
+「」をクリックしてAEM Assets環境を選択します。これは、`--aepUserLdap-- - Citi Signal dev` という名前にする必要があります。
+
+![WF](./images/wfbaem2.png)
+
+この画像が表示されます。 左側のメニューで、**Assetsに移動し** 「**フォルダーを作成**」をクリックします。
+
+![WF](./images/wfbaem3.png)
+
+フォルダーに `--aepUserLdap-- - Workfront Assets` という名前を付け、「作成 **をクリック** ます。
+
+![WF](./images/wfbaem4.png)
+
+次に、左側のメニューで **メタデータForms** に移動し、「作成 **をクリックし** す。
+
+![WF](./images/wfbaem5.png)
+
+`--aepUserLdap-- - Metadata Form` という名前を使用して、「作成 **をクリックし** す。
+
+![WF](./images/wfbaem6.png)
+
+フォームに 3 つの新しい **1 行のテキスト** フィールドを追加し、最初のフィールドを選択します。 次に、「メタデータプロパティ **フィールドの横にある** スキーマ **アイコンをクリック** ます。
+
+![WF](./images/wfbaem7.png)
+
+検索フィールドに「`wm:project`」と入力し、「**プロジェクト説明**」フィールドを選択します。 「**選択**」をクリックします。
+
+![WF](./images/wfbaem8.png)
+
+フィールドのラベルを **プロジェクトの説明** に変更します。
+
+![WF](./images/wfbaem9.png)
+
+次に、「2 番目の **1 行のテキスト**」フィールドを選択し、「**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンを再度クリックします。
+
+![WF](./images/wfbaem10b.png)
+
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:project`」と入力し、「**プロジェクト ID**」フィールドを選択します。 「**選択**」をクリックします。
+
+![WF](./images/wfbaem10.png)
+
+フィールドのラベルを **プロジェクト ID** に変更します。
+
+![WF](./images/wfbaem10a.png)
+
+3 番目の **1 行のテキスト** フィールドを選択し、もう一度 **メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをクリックします。
+
+![WF](./images/wfbaem11a.png)
+
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:project`」と入力し、「**プロジェクト名**」フィールドを選択します。 「**選択**」をクリックします。
+
+![WF](./images/wfbaem11.png)
+
+フィールドのラベルを **プロジェクト名** に変更します。 「**保存**」をクリックします。
+
+![WF](./images/wfbaem12.png)
+
+フォームの **タブ名** を `--aepUserLdap-- - Workfront Metadata` に変更します。 **保存** および **閉じる** をクリックします。
+
+![WF](./images/wfbaem13.png)
+
+これで **メタデータフォーム** が設定されました。
+
+![WF](./images/wfbaem14.png)
+
+次に、メタデータフォームを作成済みのフォルダーに割り当てる必要があります。 メタデータフォームのチェックボックスをオンにして、「**フォルダーに割り当て**」をクリックします。
+
+![WF](./images/wfbaem15.png)
+
+`--aepUserLdap-- - Workfront Assets` という名前のフォルダーを選択します。 **割り当て** をクリックします。
+
+![WF](./images/wfbaem16.png)
+
+メタデータフォームがフォルダーに正常に割り当てられました。
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2 AEM Sites統合の設定
 
@@ -155,6 +239,8 @@ Workfront UI に戻り、9 つのドット **ハンバーガー** アイコン�
 その後、2 つのカスタムフォームを使用できるようになります。
 
 ![WF](./images/wfb20.png)
+
+次の手順：Workfrontで [2.2.2 を校正する ](./ex2.md){target="_blank"}
 
 [ モジュール 2.2 に戻る ](./workfront.md){target="_blank"}
 

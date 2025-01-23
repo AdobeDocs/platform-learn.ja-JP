@@ -1,12 +1,12 @@
 ---
-title: Cloud Manager プログラムの作成
-description: Cloud Manager プログラムの作成
+title: Photoshop + Workfront プラグインのセットアップ
+description: Photoshop + Workfront プラグインのセットアップ
 kt: 5342
 doc-type: tutorial
 exl-id: 75abb23f-c19f-4b8a-97dd-58a015949c1e
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
