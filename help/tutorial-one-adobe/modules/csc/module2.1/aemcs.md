@@ -4,9 +4,9 @@ description: Adobe Experience ManagerCloud ServiceおよびEdge Delivery Service
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -35,9 +35,13 @@ ht-degree: 2%
 
 この演習では、AEM CS 環境を設定し、CitiSignal web サイトにアクセスします。
 
-[2.1.4 カスタムブロックの作成 ](./ex4.md){target="_blank"}
+[2.1.4 基本カスタムブロック ](./ex4.md){target="_blank"}
 
-この演習では、web サイト用のカスタムブロックコンポーネントを開発します。
+この演習では、web サイトの基本的なカスタムブロックを作成します。
+
+[2.1.5 高度なカスタムブロック ](./ex5.md){target="_blank"}
+
+この演習では、web サイトの高度なカスタムブロックを開発します。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 
