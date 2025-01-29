@@ -1,53 +1,51 @@
 ---
 title: Fireflyサービスの概要
-description: Fireflyサービスの概要
-kt: 5342
-doc-type: tutorial
+description: PostmanとAdobe I/Oを使用して、Adobe Fireflyサービス API をクエリする方法を説明します
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.1 Fireflyサービスの概要
+# Fireflyサービスの概要
 
-この演習では、PostmanとAdobe I/Oを使用して、Adobe Fireflyサービス API に対してクエリを実行します。
+PostmanとAdobe I/Oを使用して、Adobe Fireflyサービス API をクエリする方法を説明します。
 
 ## Adobe I/Oプロジェクトの設定
 
-この演習では、Adobe I/Oを非常に集中的に使用して、Fireflyサービス API に対してクエリを実行します。 以下の手順に従って、Adobe I/Oを設定してください。
+この演習では、Adobe I/Oを使用して、Fireflyサービス API に対してクエリを実行します。 Adobe I/Oを設定するには、次の手順に従います。
 
-[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します
+1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
 
 ![Adobe I/Oの新規統合 ](./images/iohome.png)
 
-画面の右上隅で正しいインスタンスを選択してください。 インスタンスは `--aepImsOrgName--` です。 **新規プロジェクトを作成** をクリックします。
+1. 画面の右上隅で正しいインスタンスを選択してください。 インスタンスは `--aepImsOrgName--` です。 次に、「**新規プロジェクトを作成**」を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/iocomp.png)
 
-「**+ プロジェクトに追加**」を選択し、「**API**」を選択します。
+1. 「**+ プロジェクトに追加**」、「**API**」の順に選択します。
 
 ![Adobe I/Oの新規統合 ](./images/adobe_io_access_api.png)
 
-次の画面が表示されます。
+画面は次のようになります。
 
 ![Adobe I/Oの新規統合 ](./images/api1.png)
 
-「**Creative Cloud**」を選択し、「**Firefly- Fireflyサービス**」をクリックします。 「**次へ**」をクリックします。
+1. 「**Creative Cloud**」、「**Firefly - Fireflyサービス**」の順に選択して、「**次へ**」を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/api3.png)
 
-この画面が表示されます。 資格情報の名前を指定：`--aepUserLdap-- - Firefly Services OAuth credential`。 「**次へ**」をクリックします。
+1. 秘密鍵証明書の名前を指定し `--aepUserLdap-- - Firefly Services OAuth credential`**「次へ」** を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/api4.png)
 
-次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
-
-プロファイル **デフォルトのFireflyサービス設定** を選択します。
-
-**設定済み API を保存** をクリックします。
+1. デフォルトプロファイル **デフォルトのFireflyサービス設定** を選択してから、「**設定済み API を保存** を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/api9.png)
 
@@ -55,21 +53,21 @@ ht-degree: 1%
 
 ![Adobe I/Oの新規統合 ](./images/api11.png)
 
-「**Postman用にダウンロード**」ボタンをクリックし、「**OAuth サーバー間**」をクリックしてPostman環境をダウンロードします。
+## Postman環境のダウンロード
+
+1. **Postman用にダウンロード** を選択してから、**OAuth サーバー間** を選択して、Postman環境をダウンロードします。
 
 ![Adobe I/Oの新規統合 ](./images/iopm.png)
 
-IO プロジェクトには現在、汎用名があります。 統合にはわかりやすい名前を付ける必要があります。 示されているように、**プロジェクト X** （または類似の名前）をクリックします
+1. プロジェクト名を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/api13.png)
 
-**プロジェクトを編集** をクリックします。
+1. **プロジェクトを編集** を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/api14.png)
 
-統合の名前を入力します：`--aepUserLdap-- Firefly`
-
-「**保存**」をクリックします。
+1. 統合のわかりやすい名前 `--aepUserLdap-- Firefly` を入力し、「**保存**」を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/api15.png)
 
@@ -79,56 +77,57 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 ## Adobe I/Oに対するPostman認証
 
-[https://www.postman.com/downloads/](https://www.postman.com/downloads/){target="_blank"} に移動します。
-
-お使いの OS に関連するバージョンのPostmanをダウンロードしてインストールします。
+1. [Postman Downloads](https://www.postman.com/downloads/){target="_blank"} で、OS に関連するバージョンのPostmanをダウンロードしてインストールします。
 
 ![Adobe I/Oの新規統合 ](./images/getstarted.png)
 
-Postmanをインストールしたら、アプリケーションを起動します。
+1. アプリケーションを起動します。
 
 Postmanには、環境とコレクションという 2 つのコンセプトがあります。
 
-- 環境ファイルには、多かれ少なかれ一貫性のあるすべての環境変数が含まれています。 環境には、クライアント ID などのセキュリティ認証情報と共に、Adobe環境の IMSOrg などが表示されます。 環境ファイルは、前の演習でのAdobe I/O設定時にダウンロードしたファイルで、**`oauth_server_to_server.postman_environment.json`** のような名前になっています。
+- 環境ファイルには、多かれ少なかれ一貫性のあるすべての環境変数が含まれています。 環境には、クライアント ID などのセキュリティ認証情報と共に、Adobe環境の IMSOrg などが表示されます。 以前、Adobe I/Oのセットアップ中に環境ファイルをダウンロードしましたが、名前は **`oauth_server_to_server.postman_environment.json`** です。
 
 - コレクションには、使用可能な多数の API リクエストが含まれています。 2 つのコレクションを使用します
    - Adobe I/Oへの認証のための 1 つのコレクション
    - このモジュールの演習の 1 つのコレクション
 
-[postman.zip](./../../../assets/postman/postman-ff.zip) ファイルをローカルデスクトップにダウンロードしてください。
+1. [postman.zip](./../../../assets/postman/postman-ff.zip) をローカルデスクトップにダウンロードします。
 
 ![Adobe I/Oの新規統合 ](./images/pmfolder.png)
 
-この **postman.zip** ファイルには、次のファイルがあります。
+**postman.zip** ファイルには次のファイルがあります。
 
-- `Adobe IO - OAuth.postman_collection.json`
-- `FF - Firefly Services Tech Insiders.postman_collection.json`
+    - &#39;Adobe IO - OAuth.postman_collection.json&#39;
+    - &#39;FF - Fireflyサービステクニカルインサイダー.postman_collection.json&#39;
 
-**postman-ff.zip** ファイルを解凍し、これらの 2 つのファイルをダウンロードしたPostmanAdobe I/O環境と共に、デスクトップのフォルダーに保存します。このフォルダーはファイル `oauth_server_to_server.postman_environment.json` です。 そのフォルダーには、次の 3 つのファイルが必要です。
+1. **postman-ff.zip** を解凍し、次の 2 つのファイルをデスクトップ上のフォルダーに保存します。
+- Adobe IO - OAuth.postman_collection.json
+- FF - Fireflyサービステクニカルインサイダー.postman_collection.json
+- oauth_server_to_server.postman_environment.json
 
 ![Adobe I/Oの新規統合 ](./images/pmfolder1.png)
 
-Postmanに戻ります。 **インポート** をクリックします。
+1. Postmanで、「**読み込み**」を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/postmanui.png)
 
-**ファイル** をクリックします。
+1. **ファイル** を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/choosefiles.png)
 
-ダウンロードした 2 つのファイルを抽出したデスクトップ上のフォルダーに移動します。 これらの 3 つのファイルを同時に選択し、「開く **をクリックし** す。
+1. フォルダーから 3 つのファイルを選択し、「**開く**」および「**読み込み** を選択します。
 
 ![Adobe I/Oの新規統合 ](./images/selectfiles.png)
 
-**開く** をクリックすると、Postmanに読み込む環境とコレクションの概要が表示されます。 **インポート** をクリックします。
-
 ![Adobe I/Oの新規統合 ](./images/impconfirm.png)
 
-これで、API を使用してFireflyサービスとの対話を開始するためにPostmanで必要なすべてが揃いました。
+API を使用してFireflyサービスとの対話を開始するためにPostmanで必要なものがすべて揃っているわけではありません。
 
-まず最初にすべきことは、正しく認証されていることを確認することです。 認証を受けるには、アクセストークンをリクエストする必要があります。
+## アクセストークンのリクエスト
 
-リクエストを実行する前に、適切な環境が選択されていることを確認します。 右上隅の「環境」ドロップダウンリストを確認すると、現在選択されている環境を確認できます。
+次に、正しく認証されていることを確認するには、アクセストークンをリクエストする必要があります。
+
+1. 右上隅の「環境」ドロップダウンリストを確認して、リクエストを実行する前に適切な環境が選択されていることを確認します。 選択した環境の名前は、`--aepUserLdap-- Firefly Services OAuth Credential` のようになります。
 
 ![Postman](./images/envselemea1.png)
 
@@ -136,19 +135,20 @@ Postmanに戻ります。 **インポート** をクリックします。
 
 ![Postman](./images/envselemea.png)
 
-これで、Postman環境とコレクションが設定され、機能するようになりました。 PostmanからAdobe I/Oに対して認証できるようになりました。
+これで、Postman環境とコレクションが設定され、機能するようになったので、PostmanからAdobe I/Oを行うことができます。
 
-**Adobe IO - OAuth** コレクションで、**POST - アクセストークンの取得** という名前のリクエストを選択します。 **Params** の下で、`API_KEY` と `CLIENT_SECRET` の 2 つの変数が参照されていることがわかります。 これらの変数は、選択した環境 `--aepUserLdap-- Firefly Services OAuth Credential` から取得されます。
+1. **Adobe I/O - OAuth** コレクションで、**POST- アクセストークンの取得** という名前のリクエストを選択して、「**送信**」を選択します。
 
-「**送信**」をクリックします。
+**クエリパラメーター** の下で、`API_KEY` と `CLIENT_SECRET` の 2 つの変数が参照されていることに注意してください。 これらの変数は、選択した環境 `--aepUserLdap-- Firefly Services OAuth Credential` から取得されます。
 
 ![Postman](./images/ioauth.png)
 
-「**送信**」をクリックすると、Postmanの「**本文**」セクションに応答が表示されます。
+成功した場合、ベアラートークン、アクセストークンおよび有効期限を含む応答がPostmanの **本文** セクションに表示されます。
 
 ![Postman](./images/ioauthresp.png)
 
-設定が成功すると、次の情報を含む同様の応答が表示されます。
+
+次の情報を含む同様の応答が表示されます。
 
 | キー | 値 |
 |:-------------:| :---------------:| 
@@ -156,19 +156,17 @@ Postmanに戻ります。 **インポート** をクリックします。
 | access_token | **eyJhbGciOiJSU...** |
 | expires_in | **86399** |
 
-Adobe I/Oから、特定の値 **非常に長い access_token）と有効期限のウィンドウを持つ bearer**-token が提供されました。
-
-受信したトークンは 24 時間有効になりました。 つまり、24 時間後にPostmanを使用してAdobe I/Oへの認証を行う場合は、このリクエストを再度実行して新しいトークンを生成する必要があります。
+Adobe I/O **bearer-token** には、特定の値（非常に長い access_token）と有効期限があり、24 時間有効になりました。 つまり、24 時間後にPostmanを使用してAdobe I/Oへの認証を行う場合は、このリクエストを再度実行して新しいトークンを生成する必要があります。
 
 ## Fireflyサービス API、テキスト 2 画像
 
-これで、最初のリクエストをFireflyサービス API に送信できます。
+これで、最初のリクエストをFireflyサービス API に送信する準備が整いました。
 
-**FF - Fireflyサービス技術インサイダー** コレクションで、**POST- Firefly - T2I V3** という名前のリクエストを選択します。 **Body** セクションには、`Horses in a field` を示すデフォルトのプロンプトが表示されます。 「**送信**」をクリックして、Fireflyサービスでその画像を生成します。
+1. **FF - Fireflyサービスのテクニカル インサイダー** コレクションから **POST- Firefly - T2I V3** という名前のリクエストを選択します。
 
 ![Firefly](./images/ff1.png)
 
-その後、画像の URL を含む、同様の応答が表示されます。 画像 URL をコピーし、web ブラウザーで開きます。
+1. 応答から画像 URL をコピーし、web ブラウザーで開いて画像を表示します。
 
 ![Firefly](./images/ff2.png)
 
@@ -178,8 +176,10 @@ Adobe I/Oから、特定の値 **非常に長い access_token）と有効期限�
 
 次の演習に進む前に、API リクエストをいろいろと試してください。
 
-次の手順：[1.1.2 Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを最適化する ](./ex2.md){target="_blank"}
+## 次の手順
 
-[ モジュール 1.1 に戻る ](./firefly-services.md){target="_blank"}
+[Microsoft Azure と事前署名済み URL を使用したFireflyプロセスの最適化 ](./ex2.md){target="_blank"} に移動します
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[Adobe Fireflyサービスの概要 ](./firefly-services.md){target="_blank"} に戻る
+
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

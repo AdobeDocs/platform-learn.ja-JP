@@ -1,195 +1,207 @@
 ---
 title: Workfront Fusion によるプロセスの自動化
-description: Workfront Fusion によるプロセスの自動化
-kt: 5342
-doc-type: tutorial
+description: Workfront Fusion で自動処理を処理する方法を説明します
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
-# 1.2.3 Workfront Fusion によるプロセスの自動化
+# Workfront Fusion によるプロセスの自動化
+
+Workfront Fusion で自動処理を処理する方法を説明します。
+
+## 複数の値の反復
 
 シナリオは次のようになります。
 
 ![WF Fusion](./images/wffusion200.png)
 
-## 1.2.3.1 複数の値の反復処理
-
 これまでに、Photoshop ファイルのテキストを静的な値で変更しました。 コンテンツ作成ワークフローを拡張および自動化するには、値のリストを繰り返し処理し、それらの値をPhotoshop ファイルに動的に挿入する必要があります。 次の手順では、既存のシナリオの値を繰り返し処理するウィジェットを追加します。
 
-**ルーター** ノードと **Photoshop Change Text** ノードの間にある **レンチ** アイコンをクリックし、「**モジュールを追加**」を選択します。
+1. **Router** ノードと **Photoshop Change Text** ノードの間にある **レンチ** アイコンを選択し、「**モジュールを追加**」を選択します。
 
-![WF Fusion](./images/wffusion201.png)
+   ![WF Fusion](./images/wffusion201.png)
 
-`flow` を検索し、「**フロー制御**」を選択します。
+1. `flow` を検索し、「**フロー制御**」を選択します。
 
-![WF Fusion](./images/wffusion202.png)
+   ![WF Fusion](./images/wffusion202.png)
 
-**イテレータ** を選択します。
+1. **イテレータ** を選択します。
 
-![WF Fusion](./images/wffusion203.png)
+   ![WF Fusion](./images/wffusion203.png)
 
-これで完了です。
+   画面は次のようになります。
 
-![WF Fusion](./images/wffusion204.png)
+   ![WF Fusion](./images/wffusion204.png)
 
-CSV ファイルなどの入力ファイルは読み取ることができますが、現時点では、テキスト文字列を定義してテキストファイルを分割することで、基本的なバージョンの CSV ファイルを使用する必要があります。
+   CSV ファイルなどの入力ファイルは読み取ることができますが、現時点では、テキスト文字列を定義してテキストファイルを分割することで、基本的なバージョンの CSV ファイルを使用する必要があります。
 
-**split** 関数を検索するには、「**T**」アイコンをクリックします。このアイコンには、テキスト値を操作するために使用できるすべての関数が表示されます。 **split** 関数をクリックすると、これが表示されます。
+1. **split** 関数を見つけるには、「**T**」アイコンを選択します。このアイコンには、テキスト値を操作するために使用できるすべての関数が表示されます。 **split** 関数を選択すると、これが表示されます。
 
-![WF Fusion](./images/wffusion206.png)
+   ![WF Fusion](./images/wffusion206.png)
 
-split 関数では、セミコロンの前に値の配列を指定し、セミコロンの後に区切り記号を指定する必要があります。 このテストでは、**今すぐ購入** と **ここをクリック** の 2 つのフィールドを持つ単純な配列を使用する必要があり、使用する区切り記号は **,** です。
+1. split 関数では、セミコロンの前に値の配列を指定し、セミコロンの後に区切り記号を指定する必要があります。 このテストでは、**今すぐ購入** と **ここをクリック** の 2 つのフィールドを持つ単純な配列を使用する必要があり、使用する区切り記号は **,** です。
 
-現在空の **split** 関数 `{{split("Buy now, Click here "; ",")}}` を置き換えて、**配列** フィールドにこれを入力します。 「**OK**」をクリックします。
+1. 現在空の **split** 関数 `{{split("Buy now, Click here "; ",")}}` を置き換えて、**配列** フィールドにこれを入力します。 **OK** を選択します。
 
-![WF Fusion](./images/wffusion205.png)
+   ![WF Fusion](./images/wffusion205.png)
 
-これでイテレータが設定され、ここでシナリオを実行すると、2 回実行されます。 現在、**Photoshop Change Text** ノードで静的な値を使用しているので、まだ問題が解決していません。 入力および出力フィールドに静的な値ではなく一部の変数を追加するには、**Photoshop テキストを変更** をクリックします。
 
-![WF Fusion](./images/wffusion207.png)
 
-**コンテンツをリクエスト** に、「ここをクリック **というテキストが表示され** す。 このテキストは、配列から取得した値で置き換える必要があります。
+1. 入力および出力フィールドに静的な値ではなく一部の変数を追加するには、{0 **Photoshop変更テキスト } を選択します。**
 
-![WF Fusion](./images/wffusion208.png)
+   ![WF Fusion](./images/wffusion207.png)
 
-テキスト **ここをクリック** を削除し、「**Iterator**」ノードから変数 **Value** を選択して置き換えます。 これにより、Photoshop ドキュメントのボタンに表示されるテキストが動的に更新されます。
+   **コンテンツをリクエスト** 内に、というテキストがあります **ここをクリック**。 このテキストは、配列から取得した値で置き換える必要があります。
 
-![WF Fusion](./images/wffusion209.png)
+   ![WF Fusion](./images/wffusion208.png)
 
-また、Azure ストレージアカウントにファイルを書き込むために使用されるファイル名を更新する必要もあります。 ファイル名が静的な場合、新しいイテレーションでは単に前のファイルが上書きされるので、カスタマイズされたファイルは失われます。 現在の静的ファイル名は **citignal-fiber-changed-text.psd** ですが、これを更新する必要があります。 カーソルを `text` という単語の後ろに置きます。
+1. テキスト **ここをクリック** を削除し、「**Iterator**」ノードから変数 **Value** を選択して置き換えます。 これにより、Photoshop ドキュメントのボタン上のテキストが動的に更新されます。
 
-![WF Fusion](./images/wffusion210.png)
+   ![WF Fusion](./images/wffusion209.png)
 
-最初にハイフン `-` を追加し、次に値 **バンドルの順序** を選択します。 Workfrontこれにより、1 回目のイテレーションではファイル名に `-1` が追加され、2 回目のイテレーションでは `-2` が追加されます。 「**OK**」をクリックします。
+   また、Azure ストレージアカウントにファイルを書き込むために使用するファイル名を更新する必要もあります。 ファイル名が静的な場合、新しいイテレーションでは単に以前のファイルが上書きされるので、カスタマイズされたファイルは失われます。 現在の静的ファイル名は **citignal-fiber-changed-text.psd** ですが、これを更新する必要があります。
 
-![WF Fusion](./images/wffusion211.png)
+1. カーソルを `text` という単語の後ろに置きます。
 
-シナリオを保存し、「**1 回実行**」をクリックします。
+   ![WF Fusion](./images/wffusion210.png)
 
-![WF Fusion](./images/wffusion212.png)
+1. 最初にハイフン `-` を追加し、次に値 **バンドルの順序** を選択します。 Workfrontこれにより、最初のイテレーションではファイル名に `-1` が追加され、2 番目のイテレーションではファイル `-2` に追加されます。 **OK** を選択します。
 
-シナリオが実行されたら、Azure ストレージエクスプローラーに戻り、フォルダーを更新します。 新しく作成された 2 つのファイルが表示されます。
+   ![WF Fusion](./images/wffusion211.png)
 
-![WF Fusion](./images/wffusion213.png)
+1. シナリオを保存し、「**1 回実行**」を選択します。
 
-ファイルをダウンロードして開きます。 その後、ボタン上の様々なテキストが表示されます。 これはファイル `citisignal-fiber-changed-text-1.psd` です。
+   ![WF Fusion](./images/wffusion212.png)
 
-![WF Fusion](./images/wffusion214.png)
+   シナリオが実行されたら、Azure ストレージエクスプローラーに戻り、フォルダーを更新します。 新しく作成された 2 つのファイルが表示されます。
 
-これはファイル `citisignal-fiber-changed-text-2.psd` です。
+   ![WF Fusion](./images/wffusion213.png)
 
-![WF Fusion](./images/wffusion215.png)
+1. ファイルをダウンロードして開きます。 ボタンにさまざまなテキストを入力する必要があります。 これはファイル `citisignal-fiber-changed-text-1.psd` です。
 
-## 1.2.3.2 Webhook を使用してシナリオをアクティブにする
+   ![WF Fusion](./images/wffusion214.png)
+
+   これはファイル `citisignal-fiber-changed-text-2.psd` です。
+
+   ![WF Fusion](./images/wffusion215.png)
+
+## Webhook を使用してシナリオをアクティブ化
 
 これまでのところ、シナリオを手動で実行してテストしてきました。 次に、Webhook を使用してシナリオを更新し、外部環境からアクティブ化できるようにします。
 
-**+** アイコンをクリックし、**webhook** を検索して **Webhook** を選択します。
+1. **+** を選択し、**Webhook** を検索してから **Webhook** を選択します。
 
-![WF Fusion](./images/wffusion216.png)
+   ![WF Fusion](./images/wffusion216.png)
 
-**Custom Webhook** を選択します。
+1. **Custom Webhook** を選択します。
 
-**Custom Webhook** ノードをドラッグして接続し、キャンバスの最初のノード（**Initialize Constants** と呼ばれる）に接続します。
+1. **Custom Webhook** ノードをドラッグして接続し、キャンバスの最初のノード（**Initialize Constants** と呼ばれる）に接続します。
 
-![WF Fusion](./images/wffusion217.png)
+   ![WF Fusion](./images/wffusion217.png)
 
-**Custom Webhook** ノードをクリックします。 次に、「**追加** をクリックします。
+1. **Custom Webhook** ノードを選択します。 次に、「**追加**」を選択します。
 
-![WF Fusion](./images/wffusion218.png)
+   ![WF Fusion](./images/wffusion218.png)
 
-**Webhook 名** を `--aepUserLdap-- - Tutorial 1.2` に設定します。
+1. **Webhook 名** を `--aepUserLdap-- - Tutorial 1.2` に設定します。
 
-![WF Fusion](./images/wffusion219.png)
+   ![WF Fusion](./images/wffusion219.png)
 
-**リクエストヘッダーを取得** のチェックボックスをオンにします。 「**保存**」をクリックします。
+1. **リクエストヘッダーを取得** のチェックボックスをオンにします。 「**保存**」を選択します。
 
-![WF Fusion](./images/wffusion220.png)
+   ![WF Fusion](./images/wffusion220.png)
 
-これで、Webhook URL が使用できるようになります。 URL をコピーします。
+1. これで、Webhook URL が使用できるようになります。 URL をコピーします。
 
-![WF Fusion](./images/wffusion221.png)
+   ![WF Fusion](./images/wffusion221.png)
 
-Postmanを開き、コレクションに新しいフォルダーを追加します **FF - Fireflyサービステクニカルインサイダー**。
+1. Postmanを開き、コレクションに新しいフォルダーを追加します **FF - Fireflyサービステクニカルインサイダー**。
 
-![WF Fusion](./images/wffusion222.png)
+   ![WF Fusion](./images/wffusion222.png)
 
-フォルダーに `--aepUserLdap-- - Workfront Fusion` という名前を付けます。
+1. フォルダーに `--aepUserLdap-- - Workfront Fusion` という名前を付けます。
 
-![WF Fusion](./images/wffusion223.png)
+   ![WF Fusion](./images/wffusion223.png)
 
-作成したフォルダーで、3 つのドット **...** をクリックし、「**リクエストを追加**」を選択します。
+1. 先ほど作成したフォルダーで、3 つのドット **...** を選択し、「**リクエストを追加**」を選択します。
 
-![WF Fusion](./images/wffusion224.png)
+   ![WF Fusion](./images/wffusion224.png)
 
-**POSTタイプ** を **メソッド** に設定し、Webhook の URL をアドレスバーに貼り付けます。
+1. **POSTタイプ** を **メソッド** に設定し、Webhook の URL をアドレスバーに貼り付けます。
 
-![WF Fusion](./images/wffusion225.png)
+   ![WF Fusion](./images/wffusion225.png)
 
-変数要素を外部ソースからWorkfront Fusion シナリオに提供できるように、カスタム本文を送信する必要があります。 **本文** に移動し、「**生**」を選択します。
+   変数要素を外部ソースからWorkfront Fusion シナリオに提供できるように、カスタム本文を送信する必要があります。
 
-![WF Fusion](./images/wffusion226.png)
+1. **本文** に移動し、「**生**」を選択します。
 
-以下のテキストをリクエストの本文に貼り付けます。 「**送信**」をクリックします。
+   ![WF Fusion](./images/wffusion226.png)
 
-```json
-{
-    "psdTemplate": "placeholder",
-    "xlsFile": "placeholder"
-}
-```
+1. 以下のテキストをリクエストの本文に貼り付けます。 **送信** を選択します。
 
-![WF Fusion](./images/wffusion229.png)
+   ```json
+   {
+       "psdTemplate": "placeholder",
+       "xlsFile": "placeholder"
+   }
+   ```
 
-Workfront Fusion に戻ります。 これで、カスタム Webhook に、「**正常に決定されました** というメッセージが表示されます。
+   ![WF Fusion](./images/wffusion229.png)
 
-![WF Fusion](./images/wffusion227.png)
+1. Workfront Fusion に戻ると、カスタム Webhook に「**正常に決定されました**」というメッセージが表示されます。
 
-「**保存**」をクリックしてから、「**1 回実行**」をクリックします。 これで、シナリオはアクティブになりますが、Postmanで「**送信**」を再度クリックするまで実行されません。
+   ![WF Fusion](./images/wffusion227.png)
 
-![WF Fusion](./images/wffusion230.png)
+1. 「**保存**」を選択してから、「**1 回実行**」を選択します。 シナリオは現在アクティブですが、Postmanで「**送信**」を再度選択するまで実行されません。
 
-Postmanに移動し、「**送信** を再度クリックします。
+   ![WF Fusion](./images/wffusion230.png)
 
-![WF Fusion](./images/wffusion228.png)
+1. Postmanで **送信** を再度選択します。
 
-シナリオが再度実行され、前と同じように 2 つのファイルが作成されます。
+   ![WF Fusion](./images/wffusion228.png)
 
-![WF Fusion](./images/wffusion232.png)
+   シナリオが再び実行され、前と同じように 2 つのファイルが作成されます。
 
-Postman リクエストの名前を `POST - Send Request to Workfront Fusion Webhook` に変更します。
+   ![WF Fusion](./images/wffusion232.png)
 
-![WF Fusion](./images/wffusion233.png)
+1. Postman リクエストの名前を `POST - Send Request to Workfront Fusion Webhook` に変更します。
 
-ここで、変数 **psdTemplate** の使用を開始する必要があります。 **Photoshop Change Text** ノードの入力ファイルの場所をハードコーディングする代わりに、Postman リクエストから受け取った変数を使用するようになりました。
+   ![WF Fusion](./images/wffusion233.png)
 
-**Photoshop Change Text** ノードを開き、**コンテンツをリクエスト** に移動します。 **inputs** の下のハードコードされたファイル名 **citisignal-fiber.psd** を選択して削除します。
+   ここで、変数 **psdTemplate** の使用を開始する必要があります。 **Photoshop Change Text** ノードの入力ファイルの場所をハードコーディングする代わりに、Postman リクエストから受け取った変数を使用します。
 
-![WF Fusion](./images/wffusion234.png)
+1. **Photoshop Change Text** ノードを開き、**コンテンツをリクエスト** に移動します。 **inputs** の下のハードコードされたファイル名 **citisignal-fiber.psd** を選択して削除します。
 
-変数 **psdTemplate** を選択します。 **OK** をクリックして、シナリオを保存します。
+   ![WF Fusion](./images/wffusion234.png)
 
-![WF Fusion](./images/wffusion235.png)
+1. 変数 **psdTemplate** を選択します。 「**OK**」を選択し、シナリオを保存します。
 
-**オン** をクリックして、シナリオをオンにします。 シナリオはノンストップで実行されるようになります。
+   ![WF Fusion](./images/wffusion235.png)
 
-![WF Fusion](./images/wffusion236.png)
+1. 「**オン**」を選択して、シナリオをオンにします。 シナリオがノンストップで実行されます。
 
-Postmanに戻ります。 ファイル名 `citisignal-fiber.psd` を変数 **psdTemplate** の値として入力し、もう一度 **送信** をクリックしてシナリオを再実行します。
+   ![WF Fusion](./images/wffusion236.png)
 
-![WF Fusion](./images/wffusion237.png)
+1. Postmanに戻り、ファイル名 `citisignal-fiber.psd` を変数 **psdTemplate** の値として入力し、「**送信**」を再度選択してシナリオを再実行します。
 
-外部システムから提供される変数としてPSDテンプレートを指定することで、再利用可能なシナリオを構築できるようになりました。
+   ![WF Fusion](./images/wffusion237.png)
 
-これで、この演習が完了しました。
+   外部システムから提供される変数としてPSDテンプレートを指定することで、再利用可能なシナリオを構築できるようになりました。
 
-次の手順：[ 概要とメリット ](./summary.md)
+   これで、この演習を完了しました。
 
-[モジュール 1.2 に戻る](./automation.md)
+## 次の手順
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[Fireflyサービス自動化の概要とメリット ](./summary.md){target="_blank"} を参照してください。
+
+[Adobe Fireflyサービスの自動化 ](./automation.md){target="_blank"} に戻る
+
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

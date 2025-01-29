@@ -1,26 +1,22 @@
 ---
-title: Fireflyサービスの自動化 – 概要
+title: Fireflyサービス自動化の概要とメリット
 description: Fireflyサービスの自動化 – 概要
 kt: 5342
 doc-type: tutorial
 exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 2%
+source-wordcount: '38'
+ht-degree: 5%
 
 ---
 
 # 概要とメリット
 
-お疲れ様でした。Adobeアプリケーションの学習に時間を費やしていただき、ありがとうございます。
+Adobeアプリケーションに関する学習にご協力いただき、ありがとうございます。
 
-## メリット
+## 次の手順
 
-Workfront Fusion を使用するメリットを説明します。
+[Adobe Fireflyサービスの自動化 ](./automation.md){target="_blank"} に戻る
 
-## これを確認する
-
-[モジュール 1.2 に戻る](./automation.md)
-
-[すべてのモジュールに戻る](../../../overview.md)
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

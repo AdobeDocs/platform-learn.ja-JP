@@ -1,45 +1,49 @@
 ---
 title: Photoshop API の操作
-description: Photoshop API の操作
-kt: 5342
-doc-type: tutorial
+description: Photoshop API とFireflyサービスの使用方法を学ぶ
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 1%
+source-wordcount: '935'
+ht-degree: 0%
 
 ---
 
-# 1.1.3 Photoshop API の操作
+# Photoshop API の操作
 
-## 1.1.3.1 Adobe I/O統合の更新
+Photoshop API とFireflyサービスの使用方法について説明します。
 
-[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
+## Adobe I/O統合の更新
+
+1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
 
 ![Adobe I/Oの新規統合 ](./images/iohome.png)
 
-**プロジェクト** に移動し、をクリックして、前の演習で作成したプロジェクト（`--aepUserLdap-- Firefly`）を開きます。
+1. **プロジェクト** に移動し、前の演習で作成したプロジェクト（`--aepUserLdap-- Firefly`）を選択します。
 
 ![Azure ストレージ ](./images/ps1.png)
 
-「**+ プロジェクトに追加」をクリックし** 「**API**」をクリックします。
+1. 「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
 
 ![Azure ストレージ ](./images/ps2.png)
 
-「**Creative Cloud**」を選択し、「**Photoshop - Fireflyサービス**」をクリックします。 「**次へ**」をクリックします。
+1. 「**Creative Cloud**」、「**Photoshop - Fireflyサービス**」の順に選択します。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/ps3.png)
 
-「**次へ**」をクリックします。
+1. 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/ps4.png)
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
-プロファイル **デフォルトのFireflyサービス設定** および **デフォルトのCreative Cloud自動化サービス設定** を選択します。
+1. **デフォルトのFirefly・サービス構成** および **デフォルトのCreative Cloud・オートメーション・サービス構成** を選択します。
 
-**設定済み API を保存** をクリックします。
+1. **設定済み API を保存** を選択します。
 
 ![Azure ストレージ ](./images/ps5.png)
 
@@ -47,47 +51,49 @@ ht-degree: 1%
 
 ![Azure ストレージ ](./images/ps6.png)
 
-## 1.1.3.2PSDファイルをプログラムで操作する
+## PSDファイルをプログラムで操作する
 
-ファイルをダウンロード デスクトップに [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} に移動します。
+1. [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} をデスクトップにダウンロードします。
 
-Photoshopでファイル **citisignal-fiber.psd** を開きます。 これで完了です。
+1. Photoshopで **citisignal-fiber.psd** を開きます。
 
 ![Azure ストレージ ](./images/ps7.png)
 
-**レイヤー** パネルでは、ファイルのデザイナーが各レイヤーに一意の名前を付けていることがわかります。 レイヤー情報は、PhotoshopでPSDファイルを開くことで表示できますが、プログラムで開くこともできます。
+**レイヤー** パネルでは、ファイルのデザイナーが各レイヤーに一意の名前を付けました。 レイヤー情報は、PhotoshopでPSDファイルを開くことで表示できますが、プログラムで開くこともできます。
 
 最初の API リクエストをPhotoshop API に送信しましょう。
 
-Postmanに行きなさい。 API リクエストをPhotoshopに送信する前に、Adobe I/Oへの認証が必要です。以前に **POST - アクセストークンの取得** という名前で使用したリクエストを開きます。
+1. Postmanでは、API リクエストをPhotoshopに送信する前に、Adobe I/Oへの認証が必要です。**POST - アクセストークンの取得** という名前で前のリクエストを開きます。
 
-**Params** に移動し、パラメーター **Scope** が正しく設定されていることを確認します。 **範囲** の **値** は次のようになります。
+1. **Params** に移動し、パラメーター **Scope** が正しく設定されていることを確認します。 **範囲** の **値** は次のようになります。
 
 `openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
 
-次に、「**送信**」をクリックします。
+1. **送信** を選択します。
 
 ![Azure ストレージ ](./images/ps8.png)
 
-その後、Photoshop API とやり取りするための有効なアクセストークンが得られます。
+これで、Photoshop API とやり取りするための有効なアクセストークンが作成されました。
 
 ![Azure ストレージ ](./images/ps9.png)
 
-### 1.1.3.2.1 Photoshop API - Hello World
+### Photoshop API - Hello World
 
-次に、Photoshop API のみなさん、すべての権限とアクセス権が正しく設定されているかどうかをテストしましょう。 コレクション **Photoshop** で、**Photoshop Hello （テスト認証）という名前のリクエストを開きます。**。「**送信**」をクリックします。
+次に、Photoshop API のみなさん、すべての権限とアクセス権が正しく設定されているかどうかをテストしましょう。
+
+1. コレクション **Photoshop** で、リクエスト **Photoshop Hello （テスト認証）を開きます。**。**送信** を選択します。
 
 ![Azure ストレージ ](./images/ps10.png)
 
-すると、「Photoshop API へようこそ **という応答が返** されます。
+「Photoshop API へようこそ **という応答が返され** す。
 
 ![Azure ストレージ ](./images/ps11.png)
 
-次に、PSDファイル **citisignal-fiber.psd** をプログラムで操作するには、それをストレージアカウントにアップロードする必要があります。 Azure ストレージエクスプローラーを使用してコンテナに手動でドラッグ&amp;ドロップすることもできますが、今回は API を通じて行う必要があります。
+次に、PSDファイル **citisignal-fiber.psd** をプログラムで操作するには、それをストレージアカウントにアップロードする必要があります。 Azure ストレージエクスプローラーを使用してコンテナに手動でドラッグ&amp;ドロップできますが、今回は API を通じて行う必要があります。
 
-### 1.1.3.2.2 Azure へのPSDのアップロード
+### Azure へのPSDのアップロード
 
-Postmanで、リクエスト **Azure ストレージアカウントへのPSDのアップロード** を開きます。 前の演習では、Postmanでこれらの環境変数を設定しました。ここでは、これを使用します。
+1. Postmanで、リクエスト **Azure ストレージアカウントへのPSDのアップロード** を開きます。 前の演習では、Postmanでこれらの環境変数を設定しました。ここでは、これを使用します。
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -98,25 +104,27 @@ Postmanで、リクエスト **Azure ストレージアカウントへのPSDの�
 
 ![Azure ストレージ ](./images/ps12.png)
 
-**Body** に、ファイル **citisignal-fiber.psd** を追加して選択する必要があります。
+1. **Body** で、ファイル **citisignal-fiber.psd** を選択します。
 
 ![Azure ストレージ ](./images/ps13.png)
 
-これで完了です。 「**送信**」をクリックします。
+1. 画面は次のようになります。 **送信** を選択します。
 
 ![Azure ストレージ ](./images/ps14.png)
 
-その後、この空の応答を Azure から返す必要があります。つまり、ファイルは Azure ストレージアカウントのコンテナに保存されます。
+この空の応答を Azure から返す必要があります。つまり、ファイルは Azure ストレージアカウントのコンテナに保存されます。
 
 ![Azure ストレージ ](./images/ps15.png)
 
-Azure ストレージエクスプローラーを使用して確認すると、フォルダーを更新した後にファイルが表示されます。
+Azure ストレージエクスプローラーを使用してファイルを表示する場合は、必ずフォルダーを更新してください。
 
 ![Azure ストレージ ](./images/ps16.png)
 
-### 1.1.3.2.3 Photoshop API - マニフェストの取得
+### Photoshop API - マニフェストを取得する
 
-次に、PSDファイルのマニフェストファイルを取得する必要があります。 Postmanで、リクエスト **Photoshop -PSDマニフェストの取得** を開きます。 **本文** に移動します。
+次に、PSDファイルのマニフェストファイルを取得する必要があります。
+
+1. Postmanで、リクエスト **Photoshop -PSDマニフェストの取得** を開きます。 **本文** に移動します。
 
 本文は次のようになります。
 
@@ -136,37 +144,37 @@ Azure ストレージエクスプローラーを使用して確認すると、�
 }
 ```
 
-「**送信**」をクリックします。
+1. **送信** を選択します。
 
 応答に、リンクが表示されます。 Photoshopの操作は完了までに時間がかかる場合があるので、Photoshopでは、ほとんどの受信リクエストに対する応答としてステータスファイルを提供します。 リクエストに何が起こっているかを理解するには、ステータスファイルを読む必要があります。
 
 ![Azure ストレージ ](./images/ps17.png)
 
-ステータスファイルを読み取るには、リクエスト **Photoshop - PS ステータスの取得** を開きます。 次に、このリクエストが URL として変数を使用していることがわかります。この変数は、送信した前のリクエスト（**Photoshop -PSDマニフェストの取得** によって設定された変数です。 変数は、各リクエストの **スクリプト** で設定されます。
-
-「**送信**」をクリックします。
+1. ステータスファイルを読み取るには、リクエスト **Photoshop - PS ステータスの取得** を開きます。 このリクエストが URL として変数を使用していることを確認できます。この変数は、送信した前のリクエスト（**Photoshop -PSDマニフェストの取得** によって設定された変数です。 変数は、各リクエストの **スクリプト** で設定されます。 **送信** を選択します。
 
 ![Azure ストレージ ](./images/ps18.png)
 
-この画像が表示されます。 現在、ステータスは **保留中** に設定されています。これは、プロセスがまだ完了していないことを意味します。
+画面は次のようになります。 現在、ステータスは **保留中** に設定されています。これは、プロセスがまだ完了していないことを意味します。
 
 ![Azure ストレージ ](./images/ps19.png)
 
-ステータスが「**成功**」に変わるまで、「**Photoshop - PS ステータスの取得**」リクエストで「送信」をもう 2、3 回クリックできます。 これには数分かかることがあります。
+1. ステータスが **成功** に変わるまで、「**Photoshop - PS ステータスの取得**」でさらに複数回送信を選択します。 これには数分かかることがあります。
 
-レスポンスが使用可能な場合、PSDファイルのすべてのレイヤーの情報を含む JSON ファイルが生成されます。 レイヤー名やレイヤー ID などが表示されるので、便利な情報です。
+レスポンスが使用可能な場合、PSDファイルのすべてのレイヤーの情報を含む json ファイルが表示されます。 レイヤー名やレイヤー ID などを識別できるため、これは役に立つ情報です。
 
 ![Azure ストレージ ](./images/ps20.png)
 
-例えば、`2048x2048-cta` というテキストを検索します。 この画像が表示されます。
+例えば、`2048x2048-cta` というテキストを検索します。 画面は次のようになります。
 
 ![Azure ストレージ ](./images/ps21.png)
 
-### 1.1.3.2.4 Photoshop API - テキストの変更
+### Photoshop API - テキストを変更
 
-次に、API を使用してコールトゥアクションのテキストを変更する必要があります。 Postmanで、リクエスト **Photoshop - Change Text を開き****Body** に移動します。
+次に、API を使用してコールトゥアクションのテキストを変更する必要があります。
 
-この画像が表示されます。 次のことがわかります。
+1. Postmanで、リクエスト **Photoshop - Change Text を開き****Body** に移動します。
+
+画面は次のようになります。
 
 - まず、入力ファイルを指定します。`citisignal-fiber.psd`
 - 次に、変更するレイヤーを指定し、テキストを変更します。
@@ -203,7 +211,7 @@ Azure ストレージエクスプローラーを使用して確認すると、�
 
 元の入力ファイルを上書きしないので、出力ファイルの名前は異なります。
 
-「**送信**」をクリックします。
+1. **送信** を選択します。
 
 ![Azure ストレージ ](./images/ps23.png)
 
@@ -211,26 +219,24 @@ Azure ストレージエクスプローラーを使用して確認すると、�
 
 ![Azure ストレージ ](./images/ps22.png)
 
-ステータスファイルを読み取るには、リクエスト **Photoshop - PS ステータスの取得** を再度開き、「**送信**」をクリックします。 ステータスが **成功** に設定されていない場合は、数秒待ってから、もう一度 **送信** をクリックします。
+1. ステータスファイルを読み取るには、リクエスト **Photoshop - PS ステータスの取得を開き** 「**送信**」を選択します。 ステータスが **成功** に設定されていない場合は、数秒待ってから再度 **送信** を選択します。
 
-ステータスが **succeeded** に設定されると、これが表示されます。 パス `outputs[0]._links.renditions[0].href` には、Photoshopによって作成され、変更されたテキストを含む出力ファイルの URL が表示されます。
-
-出力ファイルをダウンロードする URL をクリックします。
+1. 出力ファイルのダウンロード URL を選択します。
 
 ![Azure ストレージ ](./images/ps24.png)
 
-その後、ファイル **citisignal-fiber-changed-text.psd** がコンピューターにダウンロードされ、その後、開くことができます。 コールトゥアクションのプレースホルダーが、「Get Fiber now **というテキストに置き換えられたことがわかります**。
+1. ファイルをコンピューターにダウンロードしたら、**citisignal-fiber-changed-text.psd** を開きます。 コールトゥアクションのプレースホルダーが「Get Fiber now **というテキストに置き換えられたことがわかります**。
 
 ![Azure ストレージ ](./images/ps25.png)
 
-最後に、Azure ストレージエクスプローラーを使用して、コンテナ内にそのファイルも表示されます。
+Azure ストレージエクスプローラーを使用して、コンテナ内でこのファイルを表示することもできます。
 
 ![Azure ストレージ ](./images/ps26.png)
 
-これで、この演習が完了しました。
+## 次の手順
 
-次の手順：[1.1.4 Fireflyのカスタムモデル ](./ex4.md){target="_blank"}
+[Fireflyカスタムモデル API](./ex4.md){target="_blank"} に移動します
 
-[ モジュール 1.1 に戻る ](./firefly-services.md){target="_blank"}
+[Adobe Fireflyサービスの概要 ](./firefly-services.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
