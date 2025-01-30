@@ -4,9 +4,9 @@ description: はじめに – Experience Leagueドキュメント用のChrome拡
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Adobe Experience Platform インスタンスに関連する値を以下のよう
 
 これらのフィールドにどの値を入力すればよいかわからない場合は、次のガイダンスに従ってください。
 
-**AEP IMS 組織名**
+**Adobe Experience Platform IMS 組織名**
 
 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、画面の右上隅にインスタンスの名前が表示されます。
 
 ![DSN](./images/aepname.png)
 
-**AEP IMS 組織 ID**
+**Adobe Experience Platform IMS 組織 ID**
 
 IMS 組織 ID はAdobe Experience Cloud インスタンスの一意の ID で、このチュートリアル全体で複数の場所で参照されます。
 
@@ -88,29 +88,29 @@ IMS 組織 ID の検索は、複数の方法で実行できます。 不明な�
 
 ![DSN](./images/aepid1.png)
 
-また、AEP メニューの **データ管理/クエリ** に移動すると見つかることがあります。この場合、「**ユーザー名**」の下に表示されています。
+また、Adobe Experience Platform メニューの **Data Management/クエリ** に移動すると見つかることがあります。この場合、「**ユーザー名**」の下に表示されています。
 
 ![DSN](./images/aepid2.png)
 
 必ず **@AdobeOrg** 部分と ID をコピー&amp;ペーストしてください。
 
-**AEP テナント ID**
+**Adobe Experience Platform テナント ID**
 
-テナント ID は、組織の AEP インスタンスの一意の ID です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
+テナント ID は、組織のAdobe Experience Platform インスタンスの一意の ID です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
 
 ![DSN](./images/aeptenantid.png)
 
 Chrome拡張機能に入力する場合は、アンダースコアがプレフィックスとして追加されていることを確認する必要があります。この例では **experienceplatform** が **_experienceplatform** になります。 また、URL からコピーする場合は、必ず **@** 記号を削除してください。
 
-**AEP サンドボックス名**
+**Adobe Experience Platform サンドボックス名**
 
-サンドボックス名は、AEP インスタンスで使用する環境の名前です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
+サンドボックス名は、Adobe Experience Platform インスタンスで使用する環境の名前です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
 
 URL からサンドボックス名を取得する前に、このチュートリアルで使用するサンドボックスに属していることを確認してください。 画面の右上隅にあるサンドボックス切り替えメニューをクリックすると、右側のサンドボックスに切り替えることができます。
 
 ![DSN](./images/aepsandboxsw.png)
 
-この例では、AEP サンドボックス名は **tech-insiders** です。
+この例では、Adobe Experience Platform サンドボックス名は **tech-insiders** です。
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 Chrome 拡張機能でアクティブ化された環境に基づいて、すべての **環境変数** が実際の値に置き換えられました。
 
-これで、以下に類似した表示になります。ここでは、環境変数 `aepTenantId` が、実際の AEP テナント ID （この場合は **_experienceplatform**）に置き換えられています。
+これで、以下と同様のビューになります。環境変数 `aepTenantId` は、実際のAdobe Experience Platform テナント ID （この場合は **_experienceplatform**）に置き換えられました。
 
 ![DSN](./images/mod7.png)
 

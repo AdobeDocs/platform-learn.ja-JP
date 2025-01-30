@@ -1,10 +1,10 @@
 ---
-title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Experience Platform Data Collection の説明
-description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Experience Platform Data Collection の説明
+title: Foundation - Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe Experience Platform Data Collection について
+description: Foundation - Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe Experience Platform Data Collection について
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -20,16 +20,16 @@ Adobe Experience Platform Data Collection は、企業が様々なユースケ�
 - Adobe Experience Cloud アプリケーションおよびAdobe Experience Platformを実装します。
 - それぞれに独自の **プロパティ** を提供して、組織の異なる部分の異なる要件を管理します。
 - テストとライフサイクル管理が可能です。
-- カスタム Javascript およびサードパーティのタグを挿入し、すべて 1 か所で管理します。
+- カスタム JavaScriptおよびサードパーティタグを挿入し、すべて 1 か所で管理します。
 
 ## UI の探索
 
 [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/data-collection/) に移動します。
 
-**タグ** に移動します。 **[!UICONTROL プロパティ]** ビューが表示されます。 ここに一覧表示されるプロパティは、チュートリアル管理のためのものです。 これらのプロパティは…
+**タグ** に移動します。 **[!UICONTROL プロパティ]** ビューが表示されます。 ここに一覧表示されるプロパティは、チュートリアル管理のためのものです。 これらのプロパティは、次の項目を表します。
 
 - アプリと web のプロパティ
-- 様々な方法で顧客にサービスを提供する様々な web サイト。 例えば、Luma Retail に 1 つのプロパティがあり、Luma Travel にはもう 1 つのプロパティがあるとします
+- 様々な方法で顧客にサービスを提供する様々な web サイト。 例えば、Luma Retail に 1 つのプロパティがあり、Luma Travel にはもう 1 つのプロパティがあるとします。
 - 従来の Web サイトと現在の Web サイト
 - 複数の異なる web サイトに共通の特定のAdobe Analytics デザイン
 - 内部イントラネットページと外部サイト

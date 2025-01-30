@@ -4,9 +4,9 @@ description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 今のところ、次の手順に従ってください。
 
-## Web 用データストリームの作成
+## Web データ収集用のデータストリームの作成
 
 **[!UICONTROL データストリーム]** をクリックします。
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig17a.png)
 
-## モバイル用データストリームの作成
+## モバイルデータ収集用のデータストリームを作成
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
 

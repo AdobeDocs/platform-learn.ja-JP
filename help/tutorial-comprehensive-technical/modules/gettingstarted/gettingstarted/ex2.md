@@ -4,16 +4,16 @@ description: はじめに – 次にデモシステムを使用して Launch プ
 kt: 5342
 doc-type: tutorial
 exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Platform Data Collection クライアントプロパティを設定する場合は、次にデモシステムを使用してください
 
-このチュートリアルでは、このチュートリアルの学習内容を視覚化し、安全な環境で設定をテストできるようにするために、Adobeの Demo System Next ツールを使用しています。 このチュートリアルを最大限に活用するには、次にデモシステムと統合するように AEP インスタンスを設定する必要があります。
+このチュートリアルでは、このチュートリアルの学習内容を視覚化し、安全な環境で設定をテストできるようにするために、Adobeの Demo System Next ツールを使用しています。 このチュートリアルを最大限に活用するには、次にデモシステムと統合するようにAdobe Experience Platform インスタンスを設定する必要があります。
 
 デモシステムにアクセスできるようになったら、次の手順に進みます。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnsetup.png)
 
-**環境** ドロップダウンで、AEP インスタンスとサンドボックスを選択します。
+**環境** ドロップダウンで、Adobe Experience Platform インスタンスとサンドボックスを選択します。
 
 ![DSN](./images/dsnh1.png)
 

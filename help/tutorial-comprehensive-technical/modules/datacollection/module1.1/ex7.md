@@ -1,19 +1,19 @@
 ---
-title: 基盤 – Adobe Experience Platform Data Collection と Web SDK extension のセットアップ - Adobe Experience Platformでの XDM スキーマ要件
-description: 基盤 – Adobe Experience Platform Data Collection と Web SDK extension のセットアップ - Adobe Experience Platformでの XDM スキーマ要件
+title: 基盤 – Adobe Experience Platform Data Collection と Web SDK Extension の設定 – Adobe Experience Platformでの XDM スキーマ要件
+description: 基盤 – Adobe Experience Platform Data Collection と Web SDK Extension の設定 – Adobe Experience Platformでの XDM スキーマ要件
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # 1.1.7 Adobe Experience Platformにおける XDM スキーマの要件
 
-Web SDK と alloy.js でデータをAdobe Experience Platformに取り込めるようにするには、特定の XDM Mixin をAdobe Experience Platformの XDM スキーマに含める必要があります。
+Web SDKでAdobe Experience Platformにデータを確実に取り込めるようにするには、特定の XDM mixin がAdobe Experience Platformの XDM スキーマに含まれる必要があります。
 
 [https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動し、ログインします。
 
@@ -29,7 +29,7 @@ Web SDK と alloy.js でデータをAdobe Experience Platformに取り込める�
 
 ![AEP デバッガー ](./images/exp3.png)
 
-このスキーマで、フィールドグループ **AEP Web SDK ExperienceEvent** が追加されていることがわかります。 このフィールドグループは、最低限必要なフィールドをすべてスキーマに追加します。 Web SDK で使用されるAdobe Experience Platformのすべてのエクスペリエンスイベントスキーマは、常にそのフィールドグループがスキーマの一部である必要があります。
+このスキーマで、フィールドグループ **AEP Web SDK ExperienceEvent** が追加されていることがわかります。 このフィールドグループは、最低限必要なフィールドをすべてスキーマに追加します。 Web SDKで使用されるAdobe Experience Platformのすべてのエクスペリエンスイベントスキーマは、常にそのフィールドグループがスキーマの一部である必要があります。
 
 ![AEP デバッガー ](./images/exp4.png)
 

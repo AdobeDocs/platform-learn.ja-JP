@@ -1,10 +1,10 @@
 ---
-title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe AnalyticsとAdobe Audience Managerの実装
-description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe AnalyticsとAdobe Audience Managerの実装
+title: 基盤 – Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe AnalyticsとAdobe Audience Managerの実装
+description: 基盤 – Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe AnalyticsとAdobe Audience Managerの実装
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,11 +19,11 @@ XDM データが platform に送信されていることがわかります。 [ 
 
 ## Analytics での変数のマッピング
 
-Adobe Experience Platform [!DNL Web SDK] は特定の値を自動的にマッピングし、Web SDK を介して Analytics の新しい実装をできる限り迅速に行います。 自動的にマッピングされた変数が [ ここ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection) に一覧表示されます。
+Adobe Experience Platform [!DNL Web SDK] は、特定の値を自動的にマッピングし、Web SDKを使用して Analytics の新しい実装をできる限り迅速に行います。 自動的にマッピングされた変数が [ ここ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection) に一覧表示されます。
 
 Adobe Analyticsに自動的にマッピングされない XDM データの場合は、[context data](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja) を使用して [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) に一致させることができます。 その後、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) を使用して Analytics にマッピングし、Analytics 変数を設定できます。 コンテキストデータと処理ルールは、以前に Analytics を使用したことがある概念ですが、新しい概念である場合は、詳細について心配する必要はありません。
 
-また、デフォルトのアクションと製品リストのセットを使用して、AEP Web SDK でデータを送信または取得することもできます。 詳細については、[ 製品 ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection) を参照してください。
+また、デフォルトのアクションと商品リストのセットを使用して、AEP Web SDKでデータを送信または取得することもできます。 詳細については、[ 製品 ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection) を参照してください。
 
 ### コンテキストデータ
 
@@ -62,7 +62,7 @@ Edge Network で収集されたすべてのデータには、[ 処理ルール ]
 
 ## データストリームを確認し、Adobe Analyticsにデータを送信する
 
-Web SDK で収集したデータをAdobe AnalyticsとAdobe Audience Managerに送信する場合は、次の手順に従います。
+Web SDKで収集したデータをAdobe AnalyticsとAdobe Audience Managerに送信する場合は、次の手順に従います。
 
 [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) に移動し、**データストリーム** に移動します。
 
@@ -70,7 +70,7 @@ Web SDK で収集したデータをAdobe AnalyticsとAdobe Audience Managerに�
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
 
-その後、これが表示されます。 Adobe Analyticsを有効にするには、「**+サービスを追加**」をクリックします。
+その後、これが表示されます。 Adobe Analyticsを有効にするには、「**サービスを追加**」をクリックします。
 
 ![AEP デバッガー ](./images/aa2.png)
 
@@ -80,7 +80,7 @@ Web SDK で収集したデータをAdobe AnalyticsとAdobe Audience Managerに�
 
 ## データストリームを確認し、Adobe Audience Managerにデータを送信する
 
-その後、これが表示されます。 Adobe Audience Managerを有効にするには、「**+サービスを追加**」をクリックします。
+その後、これが表示されます。 Adobe Audience Managerを有効にするには、「**サービスを追加**」をクリックします。
 
 ![AEP デバッガー ](./images/aa2.png)
 

@@ -1,12 +1,12 @@
 ---
-title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Experience Platform Data Collection の概要
-description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Experience Platform Data Collection の概要
+title: Foundation - Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe Experience Platform Data Collection の概要
+description: Foundation - Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe Experience Platform Data Collection の概要
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 10%
 
 ## コンテキスト
 
-次に、Adobe Experience Platform Data Collection の構成要素を深く掘り下げて、デモ Web サイトにインストールされている内容を理解します。 Adobe Experience Platform Web SDK 拡張機能を詳しく見ていき、データ要素とルールを設定し、ライブラリの公開方法を説明します。
+次に、Adobe Experience Platform Data Collection の構成要素を深く掘り下げて、デモ Web サイトにインストールされている内容を理解します。 Adobe Experience Platform Web SDK拡張機能を詳しく見ていき、データ要素とルールを設定し、ライブラリを公開する方法を説明します。
 
-## Adobe Experience Platform Web SDK 拡張機能
+## Adobe Experience Platform Web SDK タグ拡張機能
 
-拡張機能は、Adobe Experience Platform データ収集インターフェイスとライブラリ機能を拡張する、パッケージ化されたコードセットです。 Adobe Experience Platform Data Collection はプラットフォームであり、拡張機能はプラットフォーム上で実行されるアプリのようなものです。 このチュートリアルで使用する拡張機能はすべてAdobeが作成および管理しますが、サードパーティは独自の拡張機能を作成して、Adobe Experience Platform データ収集ユーザーが管理する必要があるカスタムコードの量を制限できます。
+タグ拡張機能は、Adobe Experience Platform データ収集インターフェイスとライブラリ機能を拡張する、パッケージ化されたコードセットです。 Adobe Experience Platform Data Collection はプラットフォームであり、タグ拡張機能はプラットフォーム上で実行されるアプリのようなものです。 このチュートリアルで使用する拡張機能はすべてAdobeが作成および管理しますが、サードパーティは独自の拡張機能を作成して、Adobe Experience Platform データ収集ユーザーが管理する必要があるカスタムコードの量を制限できます。
 
 [Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
 
@@ -34,11 +34,11 @@ ht-degree: 10%
 
 
 
-次に、プロパティの概要ページが表示されます。 左側のパネルで、「**[!UICONTROL 拡張機能]**」をクリックし、「**Adobe Experience Platform Web SDK**」をクリックして、「**[!UICONTROL 設定]**」をクリックします。
+次に、プロパティの概要ページが表示されます。 左側のパネルで **[!UICONTROL 拡張機能]** をクリックし、**Adobe Experience Platform Web SDKをクリックしてから****[!UICONTROL 設定]** をクリックします。
 
 ![ プロパティの概要ページ ](./images/property7.png)
 
-Adobe Experience Platform Web SDK へようこそ。 ここでは、[ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームやその他の高度な設定を使用して拡張機能を設定できます。
+Adobe Experience Platform Web SDKへようこそ。 ここでは、[ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームやその他の高度な設定を使用して拡張機能を設定できます。
 
 デフォルトのエッジドメインは、常に **edge.adobedc.net** です。 Adobe Experience CloudまたはAdobe Experience Platform環境に CNAME 設定を実装した場合は、**[!UICONTROL Edge ドメイン]** を更新する必要があります。
 
@@ -58,7 +58,7 @@ Adobe Experience Platform Web SDK へようこそ。 ここでは、[ はじめ�
 
 単一のデータ要素は、クエリ文字列、URL、cookie 値、JavaScript 変数などに値をマッピングできる変数です。この値は、Adobe Experience Platform データ収集全体で変数名によって参照できます。 このデータ要素コレクションは、ルール（イベント、条件、アクション）の作成に使用する、定義済みデータの辞書になります。このデータディクショナリは、プロパティに追加した拡張機能で使用するために、すべてのAdobe Experience Platform Data Collection で共有されます。
 
-次に、既存のデータ要素を、Web SDK に対応した形式で編集します。
+次に、既存のデータ要素を、Web SDKに適した形式で編集します。
 
 左側のパネルで「データ要素」をクリックして、データ要素ページに移動します。
 
@@ -72,7 +72,7 @@ Adobe Experience Platform Web SDK へようこそ。 ここでは、[ はじめ�
 
 ![ruleArticlePages の検索 ](./images/dataelement2.png)
 
-この画面には、編集する XDM オブジェクトが表示されます。 エクスペリエンスデータモデル（XDM）は、このテクニカルチュートリアルでさらに詳しく説明する概念ですが、現時点では、Adobe Experience Platform Web SDK で必要な形式として理解するだけで十分です。 デモ Web サイトの記事ページで収集されたデータに、もう少し情報を追加します。
+この画面には、編集する XDM オブジェクトが表示されます。 エクスペリエンスデータモデル（XDM）は、このテクニカルチュートリアルでさらに詳しく説明する概念ですが、現時点では、Adobe Experience Platform web SDKで必要な形式として理解すれば十分です。 デモ Web サイトの記事ページで収集されたデータに、もう少し情報を追加します。
 
 ツリーの下部にある **Web** の横のプラスボタンをクリックします。
 
@@ -86,7 +86,7 @@ Adobe Experience Platform Web SDK へようこそ。 ここでは、[ はじめ�
 
 ![保存](./images/dataelement4.png)
 
-この時点で、Adobe Experience Platform Web SDK Extension がインストールされ、XDM 構造に対してデータを収集するためのデータ要素を更新しました。 次に、正しいタイミングでデータを送信するルールを確認しましょう。
+この時点で、Adobe Experience Platform Web SDK拡張機能がインストールされ、XDM 構造に対してデータを収集するためのデータ要素を更新しました。 次に、正しいタイミングでデータを送信するルールを確認しましょう。
 
 ## ルール
 
@@ -124,7 +124,7 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 ![ イベント送信アクション ](./images/rule5a.png)
 
-ここでは、Adobe Experience Platform Web SDK によって Edge に送信されているデータを確認できます。 具体的には、Web SDK の **alloy** **[!UICONTROL Instance]** を使用しています。 イベント **[!UICONTROL タイプ]** は **Commerce商品（買い物かご）表示** に設定されており、送信している XDM データは、以前に変更した **XDM – 商品表示** データ要素です。
+ここでは、Adobe Experience Platform web SDKによって Edge に送信されているデータを確認できます。 具体的には、Web SDKの **alloy** **[!UICONTROL インスタンス]** を使用します。 イベント **[!UICONTROL タイプ]** は **Commerce商品（買い物かご）表示** に設定されており、送信している XDM データは、以前に変更した **XDM – 商品表示** データ要素です。
 
 ![ イベント送信アクション ](./images/rule5.png)
 

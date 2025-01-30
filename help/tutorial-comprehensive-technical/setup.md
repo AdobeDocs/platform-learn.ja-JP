@@ -1,16 +1,17 @@
 ---
 title: セットアップ
-description: AEP インスタンスの設定
+description: Adobe Experience Platform インスタンスの設定
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 4%
 
 ---
 
-# セットアップ
+# Adobe Experience Platform インスタンスの設定
 
 >[!IMPORTANT]
 >
@@ -29,9 +30,9 @@ ht-degree: 4%
 
 特定のアプリケーションサービスが IMS 組織用にプロビジョニングされていない場合、その特定の演習を実践的に行うことはできません。
 
-## サンドボックスを作成
+## サンドボックスの作成
 
-独自の AEP インスタンスでチュートリアルを実行するには、まず新しい開発用サンドボックスを設定することをお勧めします。 新しいサンドボックスを作成するには、[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動し、「サンドボックス」に移動してから、「参照 **をクリックし** す。 **サンドボックスを作成** をクリックします。
+独自のAdobe Experience Platform インスタンスでチュートリアルを進めるには、まず新しい開発用サンドボックスを設定することをお勧めします。 新しいサンドボックスを作成するには、[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動し、「サンドボックス」に移動してから、「参照 **をクリックし** す。 **サンドボックスを作成** をクリックします。
 
 ![ サンドボックスの作成 ](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ ht-degree: 4%
 
 - タイプ：**開発**
 - 名前：**aep-tutorial**
-- タイトル：**AEP チュートリアル**
+- タイトル：**Adobe Experience Platform チュートリアル**
 
 「**作成**」をクリックします。
 
@@ -57,7 +58,7 @@ ht-degree: 4%
 
 ![ サンドボックスの作成 ](./assets/images/perm1.png)
 
-役割に **AEP チュートリアル** のような名前を付け、「**確認**」をクリックします。
+あなたの役割に **Adobe Experience Platform チュートリアル** のような名前を付け、「**確認**」をクリックします。
 
 ![ サンドボックスの作成 ](./assets/images/perm2.png)
 
@@ -77,14 +78,14 @@ ht-degree: 4%
 
 ![ サンドボックスの作成 ](./assets/images/perm6.png)
 
-## Adobe I/Oを設定
+## Adobe I/Oの設定
 
 に移動
 [https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations)。 正しいインスタンスに属していることを確認します。 **新規プロジェクトを作成** をクリックします。
 
 ![ サンドボックスの作成 ](./assets/images/io1.png)
 
-「**+ プロジェクトに追加」をクリックし** 「**API**」をクリックします。
+**プロジェクトに追加** をクリックしてから、**API** をクリックしてください。
 
 ![ サンドボックスの作成 ](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ ht-degree: 4%
 
 ![ サンドボックスの作成 ](./assets/images/io5.png)
 
-「**+ プロジェクトに追加」をクリックし** もう一度「**API**」をクリックします。
+**プロジェクトに追加** をクリックしてから、もう一度 **API** をクリックしてください。
 
 ![ サンドボックスの作成 ](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ ht-degree: 4%
 
 ![ サンドボックスの作成 ](./assets/images/io11.png)
 
-**DSN AEP Tutorial** など、新しい **プロジェクトタイトル** を入力します。 「**保存**」をクリックします。
+**DSN Adobe Experience Platform Tutorial** など、新しい **プロジェクトタイトル** を入力します。 「**保存**」をクリックします。
 
 ![ サンドボックスの作成 ](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ ht-degree: 4%
 
 ![ サンドボックスの作成 ](./assets/images/dsnorg15.png)
 
-すべてが正常に完了すると、AEP インスタンスが正常に設定され、学習者がチュートリアルを受講する準備が整います。
+すべてが正常に完了すると、Adobe Experience Platform インスタンスが正常に設定され、学習者がチュートリアルを受講する準備が整います。
 
 >[!NOTE]
 >

@@ -1,10 +1,10 @@
 ---
-title: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Targetの実装
-description: 基盤 – Adobe Experience Platform Data Collection と Web SDK 拡張機能の設定 – Adobe Targetの実装
+title: 基盤 – Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe Targetの実装
+description: 基盤 – Adobe Experience Platform Data Collection と Web SDK拡張機能の設定 – Adobe Targetの実装
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Adobe Targetを使用するようにデータストリームを更新する
 
-Web SDK で収集したデータをAdobe Targetに送信し、すべてのお客様にパーソナライズされたエクスペリエンスを提供してAdobe Targetから応答を受け取りたい場合は、次の手順に従います。
+Web SDKで収集したデータをAdobe Targetに送信し、すべてのお客様にパーソナライズされたエクスペリエンスを提供してAdobe Targetから応答を受け取りたい場合は、次の手順に従います。
 
 [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) に移動し、**データストリーム** に移動します。
 
@@ -23,7 +23,7 @@ Web SDK で収集したデータをAdobe Targetに送信し、すべてのお客
 
 ![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
 
-その後、これが表示されます。 Adobe Targetを有効にするには、「**+サービスを追加**」をクリックします。
+その後、これが表示されます。 Adobe Targetを有効にするには、「**サービスを追加**」をクリックします。
 
 ![AEP デバッガー ](./images/aa2.png)
 
