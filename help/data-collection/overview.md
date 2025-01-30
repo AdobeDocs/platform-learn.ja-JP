@@ -3,16 +3,16 @@ title: データ収集チュートリアル
 description: データ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 30%
+source-wordcount: '234'
+ht-degree: 24%
 
 ---
 
 # データ収集チュートリアル
 
-Data Collection は、Adobeが提供する次世代型の web サイトタグおよび Mobile SDK の管理機能です。 データ収集を使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。 これらのビデオとチュートリアルを使用して、この重要なテクノロジーの学習に役立ててください。
+Data Collection は、Adobeが提供する次世代の web サイトタグおよびモバイル SDK管理機能です。 データ収集を使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。 これらのビデオとチュートリアルを使用して、この重要なテクノロジーの学習に役立ててください。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -23,7 +23,50 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
 
 <div id="staff-picks-section">
 
-## スタッフのおすすめ
+## 移行ガイド
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="Target を Web SDKに移行" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Adobe Targetの Web SDKへの移行 </strong>
+    </a>
+    </div>
+    <p>
+    <em>at.js を Web SDKに置き換える </em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <img alt="Web SDK を使用した Adobe Experience Cloud の実装" src="assets/thumb_analyticsWebSdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <strong> タグでのAdobe Analyticsの Web SDKへの移行 </strong>
+    </a>
+    </div>
+    <p>
+    <em>AppMeasurement.js をタグ付き web SDKに置き換える </em>
+    <p>
+  </td>
+  <td>
+      <img alt="Target を Web SDKに移行" src="assets/thumb_aamWebSdk.png" />
+    </a>
+    <div>
+      <strong>Adobe Audience Managerの Web SDKへの移行 </strong>
+    </div>
+    <p>
+    <em><a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> を置き換えるか、<a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank"> サーバーサイド転送を更新します </a></em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## 実装ガイド
 
 <table>
 <tr>
@@ -33,11 +76,11 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja" target="_blank">
-    <strong>Web SDK を使用したExperience Cloudの実装 </strong>
+    <strong>Web SDKを使用したExperience Cloudの実装 </strong>
     </a>
     </div>
     <p>
-    <em> タグを使用した Platform Web SDK の実装 </em>
+    <em> タグを使用した Platform Web SDKの実装 </em>
     <p>
   </td>
   <td>
@@ -50,20 +93,20 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
     </a>
     </div>
     <p>
-    <em> タグを使用した Platform Mobile SDK の実装 </em>
+    <em> タグを使用した Platform Mobile SDKの実装 </em>
     <p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-      <img alt="Target を Web SDK に移行" src="assets/thumb_targetWebSdk.jpg" />
+      <img alt="Target を Web SDKに移行" src="assets/thumb_legacy.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>Adobe Targetの Web SDK への移行 </strong>
+    <strong> タグを使用したレガシーライブラリの実装 </strong>
     </a>
     </div>
     <p>
-    <em>at.js から Web SDK への移行 </em>
+    <em> タグを使用して、従来の Analytics、Target およびAudience Managerライブラリを実装する </em>
     <p>
   </td>
 </tr>

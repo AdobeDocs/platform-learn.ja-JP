@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # タグを使用したAdobe Analyticsの Web SDKへの移行
 
 Experience Platformタグ（旧称 Launch）の Analytics 拡張機能を使用してAdobe Analytics実装を Web SDKに移行する手順を説明します。タグでも Web SDK拡張機能を使用します。 タグでAdobe Analytics拡張機能を使用すると、バックグラウンドで「AppMeasurement.js」コードが使用されます。 そのため、これはAppMeasurementを Web SDKに移行するチュートリアルと考えることができますが、このチュートリアルは完全に Tags を対象としており、JavaScript実装との間の移行には対応していません（タグ UI 内で使用されるJavaScript コードを除く）。 JavaScript実装の移行については、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) を参照してください。
+
+>[!NOTE]
+>
+>同様の移行チュートリアルを次のユーザーが利用できます。
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Platform Web SDKは複数のAdobeアプリケーションをサポートしているので、特定のページ上のすべてのAdobeライブラリを同時に移行する必要があります。 例えば、1 つのページに Web SDK for Target とAppMeasurement for Analytics が混在して実装されているとします _サポートされていません_。 ただし、異なるページ間の混合実装がサポートされています（例：ページ A の Web SDKと、ページ B のAppMeasurementを持つ at.js）。
 
 ## このチュートリアルで得られる内容
 
