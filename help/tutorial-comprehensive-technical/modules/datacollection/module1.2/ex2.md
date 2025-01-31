@@ -4,9 +4,9 @@ description: Foundation - データ取り込み – スキーマの設定と識�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3138'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 ![データ取得](./images/schemastructurem.png)
 
 新しい [!UICONTROL  フィールドグループ ] はまだ空なので、その [!UICONTROL  フィールドグループ ] にフィールドを追加する必要があります。
-[!UICONTROL  フィールドグループ ] リストで、カスタムの [!UICONTROL  フィールドグループ ] をクリックします。
+[!UICONTROL  フィールドグループ ] – リストで、カスタム [!UICONTROL  フィールドグループ ] をクリックし、「**参照**」をクリックします。
 
 ![データ取得](./images/schemastructurem.png)
 
@@ -289,7 +289,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 そのため、[!UICONTROL XDM スキーマ ] を作成して、**この顧客は何をしますか？ま**、まず、クラス **[!UICONTROL ExperienceEvent]** を参照する 1 つのスキーマを作成して定義する必要があります。
 
-その質問にどのような回答を提供できるかを指定するには、[!UICONTROL  フィールドグループ ] を定義する必要があります。 [!UICONTROL  フィールドグループ ] は、[!UICONTROL ExperienceEvent] クラスの拡張機能で、非常に具体的な設定を持っています。 例えば、顧客が閲覧したり買い物かごに追加したりした商品の種類に関する情報は、[!UICONTROL  フィールドグループ ]**Commerceの詳細** に含まれています。
+その質問にどのような回答を提供できるかを指定するには、[!UICONTROL  フィールドグループ ] を定義する必要があります。 [!UICONTROL  フィールドグループ ] は、[!UICONTROL ExperienceEvent] クラスの拡張機能で、非常に特殊な設定を持ちます。 例えば、顧客が閲覧したり買い物かごに追加したりした商品の種類に関する情報は、[!UICONTROL  フィールドグループ ]**Commerceの詳細** に含まれています。
 
 次に、この顧客の行動をどのように特定するかを組織で決定する必要があります。 Web サイトでのインタラクションについて話しているので、組織が顧客を知っている可能性がありますが、未知の匿名の訪問者が Web サイトでアクティブである可能性も同様に高くなります。 したがって、メールアドレスのような識別子は使用できません。 この場合、組織では、[!UICONTROL Experience CloudID （ECID） ] をプライマリ識別情報として使用することになるでしょう。
 
@@ -305,7 +305,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/sb1.png)
 
-Adobe Experience Platformで、画面の左側のメニューにある **[!UICONTROL スキーマ]** をクリックします。
+Adobe Experience Platformで、画面の左側のメニューにある **[!UICONTROL スキーマ]** をクリックし、**参照** に移動します。
 
 ![データ取得](./images/menuschemas.png)
 
@@ -348,7 +348,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/eeedfg.png)
 
-**[!UICONTROL フィールドグループを追加]** 画面で、[!UICONTROL  フィールドグループ ] **[!UICONTROL AEP Web SDK ExperienceEvent]** を選択します。 「**[!UICONTROL フィールドグループを追加]**」をクリックします。
+**[!UICONTROL フィールドグループを追加]** 画面で、「[!UICONTROL  フィールドグループ ]」 **[!UICONTROL AEP Web SDK ExperienceEvent]** を選択します。 「**[!UICONTROL フィールドグループを追加]**」をクリックします。
 
 ![データ取得](./images/eeed.png)
 
@@ -446,10 +446,10 @@ ECID フィールドは型 **[!UICONTROL 文字列]** として定義され、�
 ![データ取得](./images/applyidenee.png)
 
 最終的にこのスキーマに対してデータを取り込む場合、一部のフィールドは必須であることに注意することが重要です。
-例えば、「**[!UICONTROL _id]**」フィールドと「**[!UICONTROL timestamp]**」フィールドは必須フィールドです。
+例えば、**[!UICONTROL _id]** および **[!UICONTROL timestamp]** フィールドは必須フィールドであり、ExperienceEvent クラスによって課される要件です。
 
 - _id には、特定のデータ取り込みの一意の id を含める必要があります
-- タイムスタンプは、このヒットのタイムスタンプである必要があります。形式は **[!UICONTROL &quot;YYYY-MM-DDTHH:MM:SSSZ&quot;]** です（例：**[!UICONTROL &quot;2024-11-18T07:20:000Z&quot;]**）
+- タイムスタンプは、このヒットのタイムスタンプである必要があります。形式は **`"YYYY-MM-DDTHH:MM:SSSZ"`** です。例：**`"2024-11-18T07:20:000Z"`**
 
 これで、スキーマを定義し、既存および新しく作成した [!UICONTROL  フィールドグループ ] をリンクし、識別子を定義しました。
 

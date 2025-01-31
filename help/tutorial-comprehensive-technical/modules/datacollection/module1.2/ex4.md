@@ -4,10 +4,10 @@ description: Foundation - データ取得 – オフラインソースからの�
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 6%
+source-wordcount: '1513'
+ht-degree: 5%
 
 ---
 
@@ -82,8 +82,11 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ![データ取得](./images/emeacrmoverview.png)
 
-
 概要画面には、3 つの主な情報が表示されます。
+
+>[!NOTE]
+>
+>過去 7 日間にアクティビティが発生していない場合、データセットのビューが空である可能性があります。
 
 ![データ取得](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ CSV ファイルを選択すると、すぐにアップロードされ、ファ�
 次に、CSV ファイルの列ヘッダーを **[!UICONTROL デモシステム - CRM 用プロファイルデータセット]** の XDM プロパティにマッピングする必要があります。
 
 Adobe Experience Platformは、[!UICONTROL Source属性を [!UICONTROL  ターゲットスキーマフィールド ] にリンクすることにより、既にいくつかの提案を行ってい ] す。
+
+>[!NOTE]
+>
+>マッピング画面にエラーが表示されても、心配はいりません。 以下の手順に従うと、これらのエラーは解決されます。
 
 ![データ取得](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Source スキーマフィールド **last_name** は、ターゲットフィー�
 
 ![データ取得](./images/pencil.png)
 
-**[!UICONTROL ID データ]** に移動すると、「**[!UICONTROL I2]**」オプションがオンになっていることがわかります。これにより、このデータセット内のすべての情報が少なくとも間接的に個人を特定できると仮定します。
+**[!UICONTROL ID ラベル]** に移動すると、「**[!UICONTROL I2]**」オプションがオンになっていることがわかります。これにより、このデータセット内のすべての情報が少なくとも間接的に個人を特定できると仮定します。
 
 「**[!UICONTROL 変更を保存]**」をクリックします。
 

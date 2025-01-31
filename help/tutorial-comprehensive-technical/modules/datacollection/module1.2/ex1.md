@@ -4,9 +4,9 @@ description: Foundation - データ取り込み – Web サイトで不明なも
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -61,11 +61,15 @@ Platform は、「顧客 **という単語が単なる** 既知 **の顧客よ�
 
 ![デモ](./images/pv4.png)
 
-製品の詳細ページが表示されます。 前のモジュールで確認した Web SDK 実装を使用して、タイプ **製品表示** のエクスペリエンスイベントがAdobe Experience Platformに送信されるようになりました。
+製品の詳細ページが表示されます。 前のモジュールで確認した Web SDKの実装を使用して、タイプ **製品表示** のエクスペリエンスイベントがAdobe Experience Platformに送信されました。
 
 ![デモ](./images/pv5.png)
 
-Provile ビューアパネルを開き、**エクスペリエンスイベント** を確認します。
+プロファイルビューアパネルを開き、**エクスペリエンスイベント** を確認します。
+
+>[!NOTE]
+>
+>イベントがすぐに表示されない場合は、ページを更新してください。
 
 ![デモ](./images/pv6.png)
 

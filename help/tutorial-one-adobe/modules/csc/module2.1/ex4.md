@@ -4,7 +4,7 @@ description: AEM CS – 基本カスタムブロック
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: e075ac0cf4a9132eb78524b50447aa564e82fff6
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
@@ -283,8 +283,6 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 これが基本的なカスタムブロックですが、web サイトにレンダリングされています。
 
 ![AEMCS](./images/nav7.png)
-
-
 
 次の手順：[2.1.5 詳細カスタムブロック ](./ex5.md){target="_blank"}
 

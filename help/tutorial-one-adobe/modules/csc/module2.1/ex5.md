@@ -3,9 +3,10 @@ title: AEM CS – 高度なカスタムブロック
 description: AEM CS – 高度なカスタムブロック
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ export default function decorate(block) {
 
 これで、プロジェクトで、GitHub リポジトリにコミットして戻す必要のある変更をいくつか加えました。 それには、**GitHub デスクトップ** を開きます。
 
-編集した 3 つのファイルが「変更 **の下に表示され** す。 変更をレビューします。
+編集した 2 つのファイルが「変更 **の下に表示され** す。 変更をレビューします。
 
 PR、`js css` の名前を入力します。 「**メインにコミット**」をクリックします。
 
@@ -344,7 +345,7 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 
 ![ ブロック ](./images/blockadv20.png)
 
-次の手順：[ 概要とメリット ](./summary.md){target="_blank"}
+次の手順：[2.1.6 AEM Edge Delivery Services MarTech プラグイン ](./ex6.md){target="_blank"}
 
 [ モジュール 2.1 に戻る ](./aemcs.md){target="_blank"}
 

@@ -4,10 +4,10 @@ description: Adobe Experience ManagerCloud ServiceおよびEdge Delivery Service
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ ht-degree: 2%
 [2.1.5 高度なカスタムブロック ](./ex5.md){target="_blank"}
 
 この演習では、web サイトの高度なカスタムブロックを開発します。
+
+[2.1.6 AEM Edge Delivery Services MarTech プラグイン ](./ex6.md){target="_blank"}
+
+この演習では、AEM MarTech プラグインを実装します。 AEM MarTech プラグインを使用すると、AEM プロジェクトの完全な MarTech スタックをすばやく設定できます。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 

@@ -4,7 +4,7 @@ description: Foundation - データ取得 – オフラインソースからの�
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -28,11 +28,11 @@ Adobe Experience Platform Data Landing Zone に BLOB やファイルをコピー
 
 ![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
-- ダウンロードファイルを解凍します
+- ダウンロードしたファイルを解凍します。
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- サンプル Web サイトのインタラクションを含んだサンプルデータファイル global-context-websiteinteractions.csv をダウンロードし、解凍したフォルダー **azcopy** に保存します。
+- サンプル Web サイトのインタラクションを含んだサンプルデータファイル [global-context-websiteinteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv) をダウンロードして、解凍した **azcopy** フォルダーに保存します。
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 
