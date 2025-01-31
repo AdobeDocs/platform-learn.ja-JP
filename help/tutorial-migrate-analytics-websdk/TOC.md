@@ -10,10 +10,10 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 477d1dc9d626f18b6b1c397202ab9ba0d9cc3521
+source-git-commit: deac800691c130033e1d4c5c7424a3a87fc40830
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '96'
+ht-degree: 5%
 
 ---
 
@@ -24,24 +24,24 @@ ht-degree: 1%
 
 + [検証レポートスイートの作成](create-a-validation-report-suite.md)
 
-+ [データストリームの作成と設定](create-and-configure-the-analytics-datastream.md)
++ [データストリームの作成](create-and-configure-the-analytics-datastream.md)
 
-+ [Web SDK拡張機能を追加して設定します。](add-and-configure-the-web-sdk-extension.md)
++ [Web SDK拡張機能を追加します](add-and-configure-the-web-sdk-extension.md)
 
 + [可変データ要素の作成](create-a-variable-data-element.md)
 
 + [デフォルトのページロードルールを移行](migrate-your-default-page-load-rule.md)
 
-+ [Web SDKへのカスタムコードの移行](migrate-custom-code-to-the-web-sdk.md)
++ [カスタムコードの移行](migrate-custom-code-to-the-web-sdk.md)
 
-+ [開発ライブラリに対する実装の変更のビルド](build-the-implementation-changes.md)
++ [開発ライブラリの構築](build-the-implementation-changes.md)
 
-+ [Web SDK移行のデバッグと検証](debug-and-validate-your-web-sdk-migration.md)
++ [デバッグと検証](debug-and-validate-your-web-sdk-migration.md)
 
 + [追加のページルールを移行](migrate-additional-page-rules.md)
 
 + [カスタム リンク ルールを移行する](migrate-custom-link-rules.md)
 
-+ [Adobe Analytics拡張機能の項目を削除する](delete-analytics-extension-items.md)
++ [Analytics 拡張機能の削除](delete-analytics-extension-items.md)
 
-+ [ステージング環境および実稼動環境への移行のPublish設定](publish-the-migration.md)
++ [ステージング環境および実稼動環境へのPublish](publish-the-migration.md)
