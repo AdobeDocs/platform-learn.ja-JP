@@ -4,7 +4,7 @@ description: カスタム Webhook の作成と設定
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## カスタム Webhook の作成
 
-[https://pipedream.com/requestbin](https://pipedream.com/requestbin) に移動します。 このアプリケーションは、[Exercise 2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md) で既に使用されています
+[https://pipedream.com/requestbin](https://pipedream.com/requestbin) に移動します。 このアプリケーションは [SDKの宛先 2.3.6 を参照 ](./../../../modules/rtcdp-b2c/module2.3/ex6.md) で既に使用しています
 
 そのサービスをまだ使用していない場合は、アカウントを作成してからワークスペースを作成します。 ワークスペースを作成すると、次のような情報が表示されます。
 
@@ -161,7 +161,7 @@ Web サイト上を移動すると、追加のネットワークリクエスト�
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook5.png)
 
-これで、外部のカスタム Webhook への Web SDK/XDM ペイロードのサーバーサイドのイベント転送を設定しました。 次の演習では、同様のアプローチを設定し、同じデータをGoogle Cloud Platform とAWSに送信します。
+これで、外部のカスタム Webhook への Web SDK/XDM ペイロードのサーバーサイドイベント転送を設定しました。 次の演習では、同様のアプローチを設定し、同じデータをGoogle Cloud Platform とAWSに送信します。
 
 次の手順：[2.5.4 イベントを GCP Pub/Sub に転送する ](./ex4.md)
 

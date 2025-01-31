@@ -4,7 +4,7 @@ description: Real-time CDP - オーディエンスを作成してアクション
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -199,7 +199,7 @@ document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main
 
 ![RTCDP](./images/atform13.png)
 
-次の手順：[2.3.6 外部オーディエンス ](./ex6.md)
+次の手順：[2.3.6 の宛先SDK](./ex6.md)
 
 [モジュール 2.3 に戻る](./real-time-cdp-build-a-segment-take-action.md)
 
