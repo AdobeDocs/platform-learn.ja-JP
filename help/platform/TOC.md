@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 20%
+source-wordcount: '873'
+ht-degree: 21%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 20%
    + [Mobile SDK チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=ja){target="_blank"}
 + Data Lifecycle {#data-lifecycle}
    + [データセットの有効期限](/help/platform/data-lifecycle/expire-datasets.md)
-+ Data Science Workspace {#data-science-workspace}
-   + [概要](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [アーキテクチャ](data-science-workspace/architecture-overview.md)
-   + [コーススキーマとデータセットの作成](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [JupyterLab ノートブックへのデータの読み込み](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [JupyterLab ノートブックでのデータのクエリと検出](data-science-workspace/dsw-query-service.md)
-   + [探索的データ分析](data-science-workspace/eda.md)
-   + [レシピ、モデル、サービスの概要](data-science-workspace/recipes-models-services-overview.md)
-   + [レシピビルダーテンプレートを使用したモデルの作成](data-science-workspace/recipe-builder-template.md)
-   + [モデルのパフォーマンスの分析](data-science-workspace/analyze-model-performance.md)
-   + [トレーニング済みモデル（UI）の作成と公開](data-science-workspace/create-model-ui.md)
-   + [サービスの自動トレーニングとスコアリングのスケジュール設定](data-science-workspace/schedule-training-scoring.md)
-   + [機械学習のインサイトによるリアルタイム顧客プロファイルのエンリッチメント](data-science-workspace/dsw-profile-segmentation.md)
-   + [ ソースファイルのレシピへのパッケージ化 ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [ パッケージ化されたレシピ（UI）のインポート ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [ パッケージ化されたレシピ（API）のインポート ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 宛先 {#destinations}
    + [宛先の概要](/help/platform/destinations/understanding-destinations.md)
    + [宛先への接続](/help/platform/destinations/connecting-to-destinations.md)
