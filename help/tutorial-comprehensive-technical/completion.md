@@ -2,9 +2,10 @@
 title: 完了
 description: 完了の測定方法
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -21,81 +22,77 @@ ht-degree: 0%
 
 モジュール **はじめに** の完了の見込み配達確認は、作成した web のデモシステムプロジェクトの ID です。
 
-Web 形式のデモシステムプロジェクトの ID は `--demoProfileLdap-- - OCUC` のようになります。
+Web 形式のデモシステムプロジェクトの ID は `--demoProfileLdap-- - QIMU` のようになります。
 
 ![3](./assets/images/module0dtl.png)
 
-## 1.1 Adobe Experience Platform Data Collection と Web SDK 拡張機能
+## 1.1 Adobe Experience Platform Data Collection と Web SDK拡張機能
 
-モジュール **Data Collection &amp; Web SDK** で期待される完了証明書は、web のデータ収集プロパティの名前です。
+モジュール **データ収集および Web SDK** の完了証明書として期待されるのは、Web のデータ収集プロパティの **環境 ID** です。
 
-Web 形式のデータ収集プロパティの名前は、`--demoProfileLdap-- - Demo System (05/02/2022) (enablement) 1644046719474` のようになります。
+Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f8a45deb68f8902d3a` のようになります。
 
 ![3](./assets/images/module1dtl.png)
 
 ## 1.2 データ取り込み
 
-モジュール **データ取り込み** の完了証明書として期待されるのは、作成した 2 つのデータセットのデータセット ID です。
+モジュール **データ取り込み** の完了証明書として期待されるのは、データランディングゾーンのSource接続のデータフロー ID です。
 
-データセット ID の形式は、**5f069724723ef41916a8b5d2** のようになります。
-
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+データフロー ID は、**374c2c6d-f39a-4b0b-b568-40c41e6c4e8e** のようになります。
 
 ![3](./assets/images/completemodule2seg.png)
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
-
-![3](./assets/images/completemodule2seg1.png)
-
 ## 1.3 Federated Audience の構成
 
-モジュール **Federated Audience Composition** の完了証明書として期待されているものは次のとおりです。
+モジュール **Federated Audience Composition** の完了の見込み証明書は、作成した連合データモデルの ID です。
+
+連合データモデルの ID は **DMO5110** のようになります。これは、次の画像に示す URL から取得できます。
+
+![3](./assets/images/completemodule3fac.png)
 
 ## 2.1 リアルタイム顧客プロファイル
 
-モジュール **リアルタイム顧客プロファイル** の完了証明書として期待されるのは、`--demoProfileLdap-- - Male customers with interest in Montana Wind Jacket` の UI を使用して作成したセグメントの **セグメント ID** です。
+モジュール **リアルタイム顧客プロファイル** の完了証明書として期待されるのは、`--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro` の UI を使用して作成したオーディエンスの **オーディエンス ID** です。
 
-セグメント ID の形式は **8cb7034d-d4ae-4d26-a61f-a76559c12457** のようになります。
+オーディエンス ID は、**81a9acbe-12e6-424b-b658-abba3a435c83** のようになります。
 
 ![3](./assets/images/completemodule3seg.png)
 
-
 ## 2.2 インテリジェントサービス
 
-モジュール **インテリジェントサービス** の完了証明書として期待されるのは、**製品購入傾向の顧客 AI サービス** の ID です。
+モジュール **インテリジェントサービス** の完了証明書として期待されるのは、`--demoProfileLdap-- - Customer AI High Propensity` の UI を使用して作成したオーディエンスの **オーディエンス ID** です。
 
-形式は次のようになります。**12729** そして、サービスを開いたときに、URL から取得できます。
+オーディエンス ID は、**cb6db21d-8fa3-484a-93ac-25aa1ab48412** のようになります。
 
 ![12](./assets/images/completemodule10.png)
 
 ## 2.3 Real-Time CDP：オーディエンスを作成し、アクションを起こします。
 
-モジュール **Real-Time CDP** の完了証明書として期待されているものは、**Adobe Target アクティビティ** の ID です。
+モジュール **Real-Time CDPの完了に必要な証明書：オーディエンスを作成してアクションを実行します。** は **宛先SDK Webhook 宛先** の ID です。
 
-形式は次のようになります。**111804**
+Webhook 宛先の ID は、**b5b4b959-3166-40e2-8279-8223d00c3987** のように表示され、次の画像に示すように、URL から取得できます。
 
 ![12](./assets/images/vec4.png)
 
-
 ## 2.4 Real-Time CDP:Microsoft Azure Event Hub へのAudience Activation
 
-モジュール **RTCDP: EventHub** の完了証明書として期待されているものは、Adobe Experience Platformの **Microsoft Azure Event Hub** 宛先の ID です。
+モジュール **Real-Time CDP:Microsoft Azure Event Hub** へのAudience Activationの完了証明書として期待されるのは、Adobe Experience Platformの宛先 **Microsoft Azure Event Hub** の ID です。
 
-**Microsoft Azure Event Hub 宛先 ID** は、次の **fa3f7ce5-86fd-4096-bf7c-e586fdc096ba** のようになります。
+次に示す URL に、**43cf85bc-3d01-49fd-80c9-a2913db45e3c** のような **Microsoft Azure Event Hub 宛先 ID** があります。
 
 ![14](./assets/images/azuredestid.png)
 
 ## 2.5 Real-Time CDP接続：イベント転送
 
-モジュール **RTCDP Connections** の完了証明書として期待されているのは、**イベント転送プロパティ ID** です。
+モジュール **Real-Time CDP Connections: Event Forwarding** の完了証明書として期待されているのは、**Event Forwarding プロパティ ID** です。
 
-**イベント転送プロパティ ID** は次の **PR40f44184c888472e9c19d8d602aab0de** のようになります。
+次の画像に示すように、URL に **PRa18819171c1241dfb16d74a49993dd5b** のような **イベント転送プロパティ ID** があります。
 
 ![14](./assets/images/launchssfid.png)
 
 ## 2.6 Apache Kafka からReal-Time CDPへのデータのストリーミング
 
-モジュール **Apache Kafka** の完了証明書として期待されているものは、ソースコネクタ `--demoProfileLdap-- - Kafka` の ID です。
+モジュール **Apache Kafka からReal-Time CDPにデータをストリーミングする** の完了証明書として期待される証明書は、ソースコネクタ `--demoProfileLdap-- - Kafka` の ID です。
 
 ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。この ID は、次の場所で確認できます。
 
@@ -103,49 +100,49 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 ## 3.1 Adobe Journey Optimizer：オーケストレーション
 
-モジュール **AJO: オーケストレーション** の完了証明書として期待されているものは、`--demoProfileLdap--AccountCreationEvent` の eventID です。
+モジュール **Adobe Journey Optimizer：オーケストレーション** の完了証明書として期待されるのは、ジャーニーが作成された場合の ID です。
 
-形式は次のようになります。**227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736**
+ジャーニー ID は **594fa01f-1a3b-450c-ba09-b7e3ff377c0f** のように表示され、次の画像に示すように URL から取得できます。
 
 ![12](./assets/images/ajoo.png)
 
 ## 3.2 Adobe Journey Optimizer：外部データソースとカスタムアクション
 
-モジュール **AJO: カスタムアクション** の完了証明書として期待されているものは、イベント `--demoProfileLdap--GeofenceEntry` の eventID です。
+モジュール **Adobe Journey Optimizer：外部データソースおよびカスタムアクションの完了証明書として期待されているものは** 作成したジャーニー ID です。
 
-形式は次のようになります。**fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934**
+ジャーニー ID は次のようになります。**6962d3bc-4f44-4f9c-b326-83978f245f2a**。次の画像に示すように、URL から取得できます。
 
 ![12](./assets/images/jofinal.png)
 
 ## 3.3 Adobe Journey Optimizer:Offer decisioning
 
-モジュール **AJO：オファー** の完了証明書として期待されるのは、作成した **オファー決定** の ID です。
+モジュール **Adobe Journey Optimizer:Offer decisioning** の完了証明書として期待されているものは、作成した **Decision** の ID です。
 
-**オファー決定 ID** は、次の **xcore:offer-activity:1122fcc4603ea499** のようになります。
+**決定 ID** は次の **dps:offer-activity:1a08ba4b529b2fb2** のようになります。
 
 ![14](./assets/images/offers.png)
 
 ## 3.4 Adobe Journey Optimizer：イベントベースのジャーニー
 
-モジュール **AJO: Events** の完了証明書として期待されているものは、`--demoProfileLdap--StoreEntryEvent` の eventID です。
+モジュール **Adobe Journey Optimizer：イベントベースのジャーニー** の完了証明書として期待されているものは、作成したジャーニーの ID です。
 
-形式は次のようになります。**e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633**
+ジャーニー ID は次のようになります。**5f5efc7e-49f7-44c1-85df-b23482b38d32**。次の画像に示すように、URL から取得できます。
 
 ![14](./assets/images/jojourneyid.png)
 
 ## 4.1 Customer Journey Analytics:Analysis Workspaceを使用したダッシュボードの構築
 
-モジュール **CJA** の完了証明書として期待されているものは、プロジェクト `--demoProfileLdap-- - Omnichannel Analysis` の ID です。
+モジュール **Customer Journey Analytics: Analysis Workspaceを使用してダッシュボードを作成するの** 完了の見込み証明は、プロジェクト `--demoProfileLdap-- - Omnichannel Analysis` の ID です。
 
-形式は次のようになります。**6217344f6249ac70c726db60**、プロジェクトを開くと、URL 内で見つけることができます。
+形式は次のようになります。**677bcb247064db3c7de2a0e4**、プロジェクトを開くと、URL 内で見つけることができます。
 
 ![12](./assets/images/cjacompletion.png)
 
 ## 4.2Customer Journey Analytics:BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析
 
-モジュール **CJA:BigQuery** の完了証明書として期待されているものは、**BigQuery** 接続の ID です。
+モジュール **Customer Journey Analytics: BigQuery Source コネクタを使用してAdobe Experience PlatformでGoogle Analytics データを取り込み、分析する** の完了証明書として期待される証明書は、**BigQuery** ソース接続の ID です。
 
-**BigQuery 接続 ID** は、次の **85a2394d-8b94-410c-a239-4d8b94b10c38** のようになります。
+**BigQuery 接続 ID** は、次の **b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8** のようになります。
 
 ![14](./assets/images/bqid.png)
 
@@ -153,8 +150,14 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 モジュール **クエリサービス** の完了証明書として期待されるのは、モジュールを完了した後に取得する `--demoProfileLdap--_callcenter_interaction_analysis` - データセットのデータセット ID です。
 
-形式は次のようになります。**62076f68f14a9d194995d4e2**
+ID は **675033c903fb3b2aefed8a0a** のようになります。
 
 ![12](./assets/images/completemodule7.png)
+
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [すべてのモジュールに戻る](./overview.md)

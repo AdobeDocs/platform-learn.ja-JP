@@ -3,10 +3,10 @@ title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 10%
+source-wordcount: '256'
+ht-degree: 8%
 
 ---
 
@@ -35,5 +35,11 @@ ht-degree: 10%
 | [5.1 クエリサービス ](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | ○ | - |
 
 {style="table-layout:auto"}
+
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
 [すべてのモジュールに戻る](./overview.md)
