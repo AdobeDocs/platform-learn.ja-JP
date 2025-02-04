@@ -4,10 +4,10 @@ description: Real-time CDP – 宛先SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 6%
+source-wordcount: '1123'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,17 @@ ht-degree: 6%
 
 この演習では、Adobe I/Oを再度使用して、Adobe Experience Platform API に対してクエリを実行します。まだAdobe I/Oプロジェクトを設定していない場合は、[ モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻り、その指示に従います。
 
-## Adobe I/Oに対するPostman認証
+>[!IMPORTANT]
+>
+>Adobe社員の方は、こちらの説明に従って [PostBuster](./../../../postbuster.md) を使用してください。
+
+## Adobe I/Oに対する認証
 
 この演習では、Postmanを再度使用して、Adobe Experience Platform API に対してクエリを実行します。Postman アプリケーションをまだ設定していない場合は、[ モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻って、その指示に従ってください。
+
+>[!IMPORTANT]
+>
+>Adobe社員の方は、こちらの説明に従って [PostBuster](./../../../postbuster.md) を使用してください。
 
 ## エンドポイントと形式の定義
 
@@ -101,7 +109,7 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、P
 
 ![データ取得](./images/sdkpm4.png)
 
-フィールド **urlBasedDestimention.url.value** を更新すると、次のようになります。 「**送信**」をクリックします。
+フィールド **urlBasedDestination.url.value** を更新すると、次のようになります。 「**送信**」をクリックします。
 
 ![データ取得](./images/sdkpm5.png)
 

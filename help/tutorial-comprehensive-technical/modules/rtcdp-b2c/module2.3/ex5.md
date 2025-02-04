@@ -4,7 +4,7 @@ description: Real-time CDP - オーディエンスを作成してアクション
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## データストリームの検証
 
-Real-Time CDPのAdobe Targetの宛先は、AdobeEdge Network へのデータの取り込みに使用されるデータストリームに接続されています。 Adobe Targetの宛先を設定する場合、まず、データストリームが既にAdobe Targetで有効になっているかどうかを確認する必要があります。 データストリームは、[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定し、`--aepUserLdap-- - Demo System Datastream` という名前を付けました。
+Real-Time CDPのAdobe Targetの宛先は、Adobe Edge Network へのデータの取り込みに使用されるデータストリームに接続されています。 Adobe Targetの宛先を設定する場合、まず、データストリームが既にAdobe Targetで有効になっているかどうかを確認する必要があります。 データストリームは、[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定し、`--aepUserLdap-- - Demo System Datastream` という名前を付けました。
 
 左側のメニューで、下にスクロールし、**データストリーム** をクリックします。 データストリームで、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを検索します。 データストリームをクリックして開きます。
 
@@ -159,11 +159,16 @@ document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main
 
 「**追加**」ボタンをクリックする前に、次のように、`... > h1").innerHTML="Hi there ";` が表示される行に移動し、`there` という単語の後の角括弧内にカーソルを配置します。
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 次に、「**追加**」ボタンをクリックすると、トークンが追加され、次のようなコードが更新されます。
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 「**次へ**」をクリックします。
 

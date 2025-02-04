@@ -1,9 +1,10 @@
 ---
-title: Real-time CDP - セグメントを作成してアクションを実行 – 概要
-description: Real-time CDP - セグメントを作成してアクションを実行 – 概要
+title: Real-time CDP - オーディエンスの作成とアクションの実行 – 概要
+description: Real-time CDP - オーディエンスの作成とアクションの実行 – 概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 81638db0-3356-482a-b011-98eed9ea4fe3
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -13,14 +14,14 @@ ht-degree: 0%
 # 概要とメリット
 
 お疲れ様でした。Real-time CDP とAdobe Experience Platformの学習に時間を費やしていただきありがとうございます。
-このモジュールでは、セグメントを設定してストリーミングの選定に対してアクティブ化する方法と、セグメントに対してアクションを実行してGoogle DV360、Google AdWords、Amazon S3 およびAdobe Targetに送信する方法について説明しました。
+このモジュールでは、オーディエンスを設定し、ストリーミングの選定のために有効化する方法と、オーディエンスにアクションを実行してGoogle DV360、Google AdWords、Amazon S3 およびAdobe Targetに送信する方法について説明しました。
 
 ## メリット
 
 Adobe Experience Platformで行動を起こすメリットを強調しましょう。
 
-- Adobe Experience Platformで作成されたすべてのセグメントは、Adobe Experience Cloudの People コアサービスおよびオーディエンスライブラリを通じて、Adobe Targetなどのアプリケーションで自動的に使用できます。 これを使用すると、セグメントを一度作成し、すべてのAdobeエコシステムで再利用できます
-- セグメントは、Real-time CDP アプリケーションサービスの一部として使用できる、すぐに使用できる多数の宛先に送信できます。 これらの宛先には、Google DV360 などのDSP、The Trade Desk、Adobe Campaignなどの ESP、Salesforce Marketing Cloud、OracleEloqua やOracleResponsys、Amazon S3 などのその他の宛先が含まれます。
+- Adobe Experience Platformで作成されたすべてのオーディエンスは、Adobe Experience Cloudの People コアサービスおよびオーディエンスライブラリを通じて、Adobe Targetなどのアプリケーションで自動的に使用できます。 これを使用すると、オーディエンスを一度作成し、すべてのAdobeエコシステムで再利用できます
+- オーディエンスは、Real-time CDP アプリケーションサービスの一部として使用できる、すぐに使用できる多数の宛先に送信できます。 これらの宛先には、Google DV360 などのDSP、The Trade Desk、Adobe Campaignなどの ESP、Salesforce Marketing Cloud、OracleEloqua やOracleResponsys、Amazon S3 などのその他の宛先が含まれます。
 
 ## これを確認する
 

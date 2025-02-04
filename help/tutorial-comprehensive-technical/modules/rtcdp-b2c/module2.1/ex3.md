@@ -4,9 +4,9 @@ description: Foundation - リアルタイム顧客プロファイル – 独自�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2299'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,11 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 ![権限](./images/perm4.png)
 
-## Adobe I/Oに対するPostman認証
+## Adobe I/Oに対する認証
+
+>[!IMPORTANT]
+>
+>Adobe社員の方は、こちらの説明に従って [PostBuster](./../../../postbuster.md) を使用してください。
 
 [https://www.postman.com/downloads/](https://www.postman.com/downloads/) に移動します。
 

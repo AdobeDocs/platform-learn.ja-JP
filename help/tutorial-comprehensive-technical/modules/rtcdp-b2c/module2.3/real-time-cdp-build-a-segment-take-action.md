@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 Real-time CDP - セグメントを作成してアクションを実行します
+# 2.3 Real-time CDP - オーディエンスを作成し、アクションを実行します。
 
-このモジュールでは、ストリーミングセグメントを設定し、そのセグメントを複数の宛先に対してアクティブ化します。
+このモジュールでは、ストリーミングセグメントを設定し、複数の宛先に対してオーディエンスをアクティブ化します。
 
 ## 学習内容
 
-- セグメントを作成してストリーミングを有効にする方法を説明します。
+- オーディエンスを作成し、ストリーミング用に有効にする方法を説明します。
 - Adobe Experience Platform UI を使用して広告の宛先を設定する方法を説明します。
-- セグメントを宛先に接続してアクティブ化する方法を説明します。
-- 双方向のセグメント共有により、Adobe Audience ManagerでのAdobe Experience Platform セグメントの使用方法と、Adobe Experience PlatformでのAdobe Audience Manager セグメントの使用方法を説明します。
+- オーディエンスを宛先に接続し、アクティブ化する方法を説明します。
 
 ## 前提条件
 
