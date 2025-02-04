@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
+source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 21%
+source-wordcount: '881'
+ht-degree: 22%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 21%
    + [応答を検証](/help/platform/ai-assistant/validate-responses.md)
    + [見つけやすさパネル](/help/platform/ai-assistant/discoverability-panel.md)
    + [未使用のオーディエンスを検索](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [運用上のインサイト](/help/platform/ai-assistant/operational-insights.md)
    + [影響分析](/help/platform/ai-assistant/impact-analysis.md)
    + [セキュリティの概要](/help/platform/ai-assistant/security-overview.md)
 + オーディエンスとセグメント化 {#audiences}
@@ -141,6 +142,8 @@ ht-degree: 21%
    + [ID および ID グラフの概要](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID データのラベル、取り込み、検証](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID グラフの表示](/help/platform/identities/view-identity-graphs.md)
+   + のルールをリンクする ID グラフ {#graph-linking-rules}
+      + [グラフシミュレーション](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + インテリジェントサービス {#intelligent-services}
    + [概要](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Attribution AI の概要](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
