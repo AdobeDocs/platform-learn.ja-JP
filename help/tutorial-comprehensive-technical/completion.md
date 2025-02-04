@@ -3,7 +3,7 @@ title: 完了
 description: 完了の測定方法
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 モジュール **はじめに** の完了の見込み配達確認は、作成した web のデモシステムプロジェクトの ID です。
 
-Web 形式のデモシステムプロジェクトの ID は `--demoProfileLdap-- - QIMU` のようになります。
+Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - QIMU` のようになります。
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f
 
 ## 2.1 リアルタイム顧客プロファイル
 
-モジュール **リアルタイム顧客プロファイル** の完了証明書として期待されるのは、`--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro` の UI を使用して作成したオーディエンスの **オーディエンス ID** です。
+モジュール **リアルタイム顧客プロファイル** の完了証明書として期待されるのは、`--aepUserLdap-- - Male customers with interest in iPhone 15 Pro` の UI を使用して作成したオーディエンスの **オーディエンス ID** です。
 
 オーディエンス ID は、**81a9acbe-12e6-424b-b658-abba3a435c83** のようになります。
 
@@ -60,7 +60,7 @@ Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f
 
 ## 2.2 インテリジェントサービス
 
-モジュール **インテリジェントサービス** の完了証明書として期待されるのは、`--demoProfileLdap-- - Customer AI High Propensity` の UI を使用して作成したオーディエンスの **オーディエンス ID** です。
+モジュール **インテリジェントサービス** の完了証明書として期待されるのは、`--aepUserLdap-- - Customer AI High Propensity` の UI を使用して作成したオーディエンスの **オーディエンス ID** です。
 
 オーディエンス ID は、**cb6db21d-8fa3-484a-93ac-25aa1ab48412** のようになります。
 
@@ -92,7 +92,7 @@ Webhook 宛先の ID は、**b5b4b959-3166-40e2-8279-8223d00c3987** のように
 
 ## 2.6 Apache Kafka からReal-Time CDPへのデータのストリーミング
 
-モジュール **Apache Kafka からReal-Time CDPにデータをストリーミングする** の完了証明書として期待される証明書は、ソースコネクタ `--demoProfileLdap-- - Kafka` の ID です。
+モジュール **Apache Kafka からReal-Time CDPにデータをストリーミングする** の完了証明書として期待される証明書は、ソースコネクタ `--aepUserLdap-- - Kafka` の ID です。
 
 ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。この ID は、次の場所で確認できます。
 
@@ -132,7 +132,7 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 ## 4.1 Customer Journey Analytics:Analysis Workspaceを使用したダッシュボードの構築
 
-モジュール **Customer Journey Analytics: Analysis Workspaceを使用してダッシュボードを作成するの** 完了の見込み証明は、プロジェクト `--demoProfileLdap-- - Omnichannel Analysis` の ID です。
+モジュール **Customer Journey Analytics: Analysis Workspaceを使用してダッシュボードを作成するの** 完了の見込み証明は、プロジェクト `--aepUserLdap-- - Omnichannel Analysis` の ID です。
 
 形式は次のようになります。**677bcb247064db3c7de2a0e4**、プロジェクトを開くと、URL 内で見つけることができます。
 
@@ -148,7 +148,7 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 ## 5.1 クエリサービス
 
-モジュール **クエリサービス** の完了証明書として期待されるのは、モジュールを完了した後に取得する `--demoProfileLdap--_callcenter_interaction_analysis` - データセットのデータセット ID です。
+モジュール **クエリサービス** の完了証明書として期待されるのは、モジュールを完了した後に取得する `--aepUserLdap--_callcenter_interaction_analysis` - データセットのデータセット ID です。
 
 ID は **675033c903fb3b2aefed8a0a** のようになります。
 

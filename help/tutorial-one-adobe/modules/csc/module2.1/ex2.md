@@ -1,12 +1,12 @@
 ---
-title: Cloud Manager プログラムの作成
-description: Cloud Manager プログラムの作成
+title: AEM CS - ドキュメントベースの web サイトの作成
+description: AEM CS - ドキュメントベースの web サイトの作成
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
