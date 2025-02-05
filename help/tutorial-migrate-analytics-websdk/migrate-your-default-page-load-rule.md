@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
 exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 2150ead50fee06b434d996183a959ad5f01dd2a8
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,9 @@ ht-degree: 0%
 
 1. 拡張機能ドロップダウンから **0}Adobe Experience Platform Web SDK} を選択します。**
 1. 「アクションタイプ」ドロップダウンから **変数を更新** を選択します。
+1. 右側のパネルの上部にリストされている **データ要素** が、実際に新しい変数タイプのデータ要素であることを確認します。
 1. 右側のパネルで、データオブジェクト内の **Analytics** オブジェクトを選択します
-1. また、右側のパネルの上部にリストされているデータ要素が、新しい変数タイプのデータ要素であることも確認してください。
-
-   ![ 変数を更新アクション ](assets/update-variable-action-analytics.jpg)
-
+   ![ 変数を更新アクション ](assets/define-update-variable-action.jpg)
 1. 次に、ラジオボタンを **JSON またはデータ要素を指定** に変更し、前の手順で変数を設定からコピーしたコードをこのコードウィンドウに貼り付けます。 このチュートリアルで示すものは、例に過ぎません。 独自の変数をコピー&amp;ペーストします。
 
    ![ 新しい Web SDK コードの貼り付け ](assets/new-websdk-code-paste.jpg)
