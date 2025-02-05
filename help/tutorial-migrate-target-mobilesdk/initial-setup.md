@@ -1,30 +1,58 @@
 ---
 title: 初期設定 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
-description: Platform Web SDK の実装に必要な重要な基本要素の説明と設定
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: Platform Web SDKの実装に必要な重要な基本要素について説明し、設定します
+exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 5%
 
 ---
 
 # データ収集の初期設定の実行
 
-at.js から Platform Web SDK に移行するには、Platform Web SDK の適切なデータ取得、機能、機能を有効にするための初期設定が必要です。 Web サイトの実装変更を行う前に、[Platform Web SDK の実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja) の次の手順を完了する必要があります。
+Target SDKから Optimize SDKに移行するには、Optimize SDKの適切なデータ取得、機能、機能を有効にするための初期設定が必要です。 Web サイトの実装変更を行うには、次の手順を実行する必要があります。
 
 - Adobe Admin Console for Data Collection での [ 適切な権限の設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"}
-- 構造化データをEdge Networkに渡すための [XDM スキーマの設定 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"}
-- クロスデバイスパーソナライゼーションと mbox3rdPartyId 機能のための [ID 名前空間の設定 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"}
-- [ データストリームを作成 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} して、Edge Networkからのデータの転送を有効にします。
-- [ データストリームを設定 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"} して、Adobe Targetへのデータの転送を有効にします。
+- 構造化データをEdge Networkに渡すための [XDM スキーマの設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"}
+- Adobe Target データを受け取るための [ スキーマの設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema)
+- クロスデバイスパーソナライゼーションと mbox3rdPartyId 機能のための [ID 名前空間の設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"}
+- [ データストリームを作成 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} して、Edge Networkからのデータの転送を有効にします。
+- [ データストリームを設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} して、Adobe Targetへのデータの転送を有効にします。
+- Decisioning 拡張機能の [ タグプロパティの設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension)
 
->[!CAUTION]
->
->これらの設計の側面は、Target、Analytics およびAudience Managerの移行全体で調整する必要があります。
+>[!BEGINTABS]
 
-初期設定が完了したら、Adobe Experience Platform Edge Networkを使用して Target 機能を有効にする必要があります。
+>[!TAB Target 拡張機能 ]
 
-次に、at.js ライブラリの置き換え [ と、基本的な Platform Web SDK の実装のセットアップ ](replace-library.md) 方法を説明します。
+Target 拡張機能を使用するとインストールされるタグ拡張機能：
+
+1. Mobile Core
+1. プロファイル
+1. Adobe Target
+1. Adobe Analytics（Adobe Target アクティビティのレポートソースとしてAdobe Analyticsを使用する場合はオプション）
+
+![Target 拡張機能の使用時にインストールされるタグ拡張機能 ](assets/tag-extensions-target.png)
+
+
+>[!TAB Decisioning 拡張機能 ]
+
+Decisioning 拡張機能を使用するとインストールされるタグ拡張機能：
+
+1. Mobile Core
+1. プロファイル
+1. 同意
+1. ID
+1. Adobe Experience Platform Edge Network
+1. Adobe Journey Optimizer - Decisioning
+1. AEP Assurance（オプション、デバッグに必要）
+
+![Decisioning 拡張機能を使用する場合にインストールされるタグ拡張機能 ](assets/tag-extensions-decisioning.png)
+
+
+>[!ENDTABS]
+
+次に、at.js ライブラリを置き換えて [ 基本的な Platform web SDKの実装をセットアップ ](replace-library.md) する方法について説明します。
 
 >[!NOTE]
 >
