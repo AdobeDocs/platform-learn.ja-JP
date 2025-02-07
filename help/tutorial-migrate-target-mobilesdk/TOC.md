@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '80'
 ht-degree: 3%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 3%
 
 + [チュートリアルの概要](overview.md)
 
-+ [移行の計画](plan-migration.md)
-
-+ [Target 拡張機能と Decisioning 拡張機能の比較](detailed-comparison.md)
++ [拡張機能の比較](detailed-comparison.md)
 
 + [初期設定の実行](initial-setup.md)
 
