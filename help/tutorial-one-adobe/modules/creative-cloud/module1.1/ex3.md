@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
 
-# Photoshop API の操作
+# 1.1.3 Photoshop API の操作
 
 Photoshop API とFireflyサービスの使用方法について説明します。
 
-## Adobe I/O統合の更新
+## 1.1.3.1 Adobe I/O統合の更新
 
 1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
 
@@ -51,7 +51,11 @@ Photoshop API とFireflyサービスの使用方法について説明します�
 
 ![Azure ストレージ ](./images/ps6.png)
 
-## PSDファイルをプログラムで操作する
+## 1.1.3.2PSDファイルをプログラムで操作する
+
+>[!IMPORTANT]
+>
+>Adobe社員の方は、こちらの説明に従って [PostBuster](./../../../postbuster.md) を使用してください。
 
 1. [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} をデスクトップにダウンロードします。
 

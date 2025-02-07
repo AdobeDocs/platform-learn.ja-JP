@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
 
-# Workfront Fusion によるクリエイティブワークフローの自動化
+# 1.2 Workfront Fusion によるクリエイティブワークフローの自動化
 
 Workfront Fusion でクリエイティブワークフローを自動化する方法について説明します。
 
@@ -23,15 +23,15 @@ Workfront Fusion でクリエイティブワークフローを自動化する方
 
 ## 演習
 
-[Workfront Fusion の概要 ](./ex1.md){target="_blank"}
+[1.2.1 Workfront Fusion の概要 ](./ex1.md){target="_blank"}
 
 この演習では、Fireflyサービスと組み合わせてWorkfront Fusion を参照し、その機能を理解します。
 
-[Workfront Fusion 内でのAdobeAPI の使用 ](./ex2.md){target="_blank"}
+[1.2.2 Workfront Fusion 内でAdobeAPI を使用する ](./ex2.md){target="_blank"}
 
 この演習では、Workfront Fusion の機能を確認しながら、Workfront Fusion 内でFireflyサービス API とPhotoshop API を設定および使用する方法について説明します。
 
-[Workfront Fusion によるプロセスの自動化 ](./ex3.md){target="_blank"}
+[1.2.3 Workfront Fusion によるプロセスの自動化 ](./ex3.md){target="_blank"}
 
 この演習では、引き続きジャーニーの調整を行って、画像作成プロセスを自動化します。
 

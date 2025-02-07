@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
 
-# Workfront Fusion の概要
+# 1.2.1 Workfront Fusion の概要
 
 Workfront Fusion とAdobe I/Oを使用して、Adobe Fireflyサービス API を照会する方法を説明します。
 
-## 新しいシナリオを作成
+## 1.2.1.1 新しいシナリオの作成
 
 1. [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Workfront Fusion** を開きます。
 
@@ -59,7 +59,7 @@ Workfront Fusion とAdobe I/Oを使用して、Adobe Fireflyサービス API を
 
    ![WF Fusion](./images/wffusion8.png)
 
-## Adobe I/O認証を設定
+## 1.2.1.2 Adobe I/O認証を設定する
 
 次に、Adobe I/Oに対して認証するために必要な変数を設定する必要があります。前の演習では、Adobe I/Oプロジェクトを作成しました。 この時点で、そのAdobe I/Oプロジェクトの変数をWorkfront Fusion で定義する必要があります。
 

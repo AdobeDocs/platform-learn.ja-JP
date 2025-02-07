@@ -4,9 +4,9 @@ breadcrumb-title: Creative CloudからExperience Cloudまで、Adobeアプリケ
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
@@ -29,12 +29,12 @@ ht-degree: 4%
    + [前作業](/help/tutorial-one-adobe/prework.md)
    + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
-+ 1 Adobe Creative Cloud {#creativecloud}
-   + 1.1 Adobe Fireflyサービス {#module11}
++ 1 制作・生産 {#production}
+   + 1.1 Adobe Fireflyサービス {#module11} の概観
       + [概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Fireflyサービスの概要](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Microsoft Azure と事前署名済み URL を使用したFireflyプロセスの最適化](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3 Adobe FireflyおよびAdobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3 Photoshop API の操作](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [1.1.4 Fireflyカスタムモデル API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Workfront Fusion {#module21} によるクリエイティブワークフローの自動化
@@ -61,7 +61,7 @@ ht-degree: 4%
       + [2.2.5 WorkfrontとPhotoshopの統合](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
-+ 3 Unified Customer Experience {#uce}
++ 3 配信およびアクティベーション {#activation}
    + 3.1 Federated Audience Composition {#module31}
       + [概要](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
       + [3.1.1Snowflake環境の設定](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
@@ -70,7 +70,9 @@ ht-degree: 4%
       + [概要と利点](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer：翻訳サービス {#module32}
       + [概要](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
-      + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.1 翻訳プロバイダー](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.2 キャンペーンの作成](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
+      + [3.2.3 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
    + 3.3 Adobe Journey Optimizer:Offer decisioning{#module33}
       + [概要](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)

@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
-# Workfront Fusion によるプロセスの自動化
+# 1.2.3 Workfront Fusion によるプロセスの自動化
 
 Workfront Fusion で自動処理を処理する方法を説明します。
 
-## 複数の値の反復
+## 1.2.3.1 複数の値の反復処理
 
 シナリオは次のようになります。
 
@@ -93,7 +93,7 @@ Workfront Fusion で自動処理を処理する方法を説明します。
 
    ![WF Fusion](./images/wffusion215.png)
 
-## Webhook を使用してシナリオをアクティブ化
+## 1.2.3.2 Webhook を使用してシナリオをアクティブ化する
 
 これまでのところ、シナリオを手動で実行してテストしてきました。 次に、Webhook を使用してシナリオを更新し、外部環境からアクティブ化できるようにします。
 

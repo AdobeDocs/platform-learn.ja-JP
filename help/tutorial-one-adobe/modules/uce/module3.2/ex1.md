@@ -3,15 +3,134 @@ title: AJO翻訳サービスの基本を学ぶ
 description: AJO翻訳サービスの基本を学ぶ
 kt: 5342
 doc-type: tutorial
-source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
+exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '24'
-ht-degree: 0%
+source-wordcount: '377'
+ht-degree: 2%
 
 ---
 
-# 3.2.1 ...
+# 3.2.1 翻訳プロバイダー
 
-[モジュール 3.2 に戻る](./ajotranslationsvcs.md)
+## 3.2.1.1 Microsoft Azure Translator の設定
 
-[すべてのモジュールに戻る](../../../overview.md)
+[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動します。
+
+![ 翻訳 ](./images/transl1.png)
+
+検索バーに「`translators`」と入力します。 次に、「**+作成**」をクリックします。
+
+![ 翻訳 ](./images/transl2.png)
+
+**トランスレーターを作成** を選択します。
+
+![ 翻訳 ](./images/transl3.png)
+
+**サブスクリプション ID** と **リソースグループ** を選択します。
+**地域** を **グローバル** に設定します。
+**Pricing Tier** を **Free F0** に設定します。
+
+「**レビューと作成**」を選択します。
+
+![ 翻訳 ](./images/transl4.png)
+
+「**作成**」を選択します。
+
+![ 翻訳 ](./images/transl5.png)
+
+「**リソースに移動**」を選択します。
+
+![ 翻訳 ](./images/transl6.png)
+
+左側のメニューで、**リソース管理**/**キーとエンドポイント** に移動します。 クリックしてキーをコピーします。
+
+![ 翻訳 ](./images/transl7.png)
+
+## 3.2.1.2 ロケール辞書
+
+[https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
+
+![ 翻訳 ](./images/ajolp1.png)
+
+左側のメニューで **翻訳** に移動し、**ロケール辞書** に移動します。 このメッセージが表示されたら、「**デフォルトのロケールを追加**」をクリックします。
+
+![ 翻訳 ](./images/locale1.png)
+
+この画像が表示されます。
+
+![ 翻訳 ](./images/locale2.png)
+
+## 3.2.1.3 AJOで翻訳プロバイダーを設定する
+
+[https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
+
+![ 翻訳 ](./images/ajolp1.png)
+
+左側のメニューで、**翻訳** に移動し、**プロバイダー** に移動します。 **プロバイダーを追加** をクリックします。
+
+![ 翻訳 ](./images/transl8.png)
+
+**プロバイダー** で、「**Microsoft Translator**」を選択します。 翻訳プロバイダーの使用を有効にするには、このチェックボックスをオンにします。 Microsoft Azure トランスレーターからコピーしたキーを貼り付けます。 次に、「**認証情報を検証**」をクリックします。
+
+![ 翻訳 ](./images/transl9.png)
+
+認証情報が正常に検証されます。 該当する場合は、下にスクロールして翻訳言語を選択します。
+
+![ 翻訳 ](./images/transl10.png)
+
+`[en-US] English`、`[es] Spanish`、`[fr] French`、`[nl] Dutch` を必ず選択してください。
+
+![ 翻訳 ](./images/transl11.png)
+
+上にスクロールして、「**保存**」をクリックします。
+
+![ 翻訳 ](./images/transl12.png)
+
+これで、**翻訳プロバイダー** を使用する準備が整いました。
+
+![ 翻訳 ](./images/transl13.png)
+
+## 3.2.1.4 翻訳プロジェクトの設定
+
+[https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
+
+![ 翻訳 ](./images/ajolp1.png)
+
+左側のメニューで **翻訳** に移動し、**ロケール辞書** に移動します。 このメッセージが表示されたら、「**プロジェクトを作成**」をクリックします。
+
+![ 翻訳 ](./images/ajoprovider1.png)
+
+名前 `--aepUserLdap-- - Translations` を入力し、「**Source ロケール**」を `[en-US] English - United States` に設定して、「承認済み翻訳を自動的に公開 **を有効にするには、このチェックボックスをオンに** ます。 次に、「**+ ロケールを追加**」をクリックします。
+
+![ 翻訳 ](./images/ajoprovider1a.png)
+
+「`fr`」を検索し、「`[fr] French`」のチェックボックスを有効にして、「**Microsoft Translator**」のチェックボックスを有効にします。 「**+ ロケールを追加**」をクリックします。
+
+![ 翻訳 ](./images/ajoprovider2.png)
+
+「`es`」を検索し、「`[es] Spanish`」のチェックボックスを有効にして、「**Microsoft Translator**」のチェックボックスを有効にします。 「**+ ロケールを追加**」をクリックします。
+
+![ 翻訳 ](./images/ajoprovider3.png)
+
+「`nl`」を検索し、「`[nl] Spanish`」のチェックボックスを有効にして、「**Microsoft Translator**」のチェックボックスを有効にします。 「**+ ロケールを追加**」をクリックします。
+
+![ 翻訳 ](./images/ajoprovider6.png)
+
+「**保存**」をクリックします。
+
+![ 翻訳 ](./images/ajoprovider8.png)
+
+これで、**翻訳** プロジェクトを使用する準備が整いました。
+
+![ 翻訳 ](./images/ajoprovider9.png)
+
+この演習は完了しました。
+
+## 次の手順
+
+[3.2.2 キャンペーンの作成 ](./ex2.md) に移動します
+
+[ モジュール 3.2](./ajotranslationsvcs.md){target="_blank"} に戻ります。
+
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

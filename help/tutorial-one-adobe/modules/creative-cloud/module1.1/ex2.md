@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1386'
 ht-degree: 1%
 
 ---
 
-# Microsoft Azure と事前署名済み URL を使用したFireflyプロセスの最適化
+# 1.1.2 Microsoft Azure と事前署名済み URL を使用したFireflyプロセスの最適化
 
 Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを最適化する方法について説明します。
 
-## Azure サブスクリプションの作成
+## 1.1.2.1 Azure サブスクリプションの作成
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを�
 
    ![Azure ストレージ ](./images/06azuresubscriptionok.png)
 
-## Azure ストレージアカウントの作成
+## 1.1.2.2 Azure ストレージアカウントの作成
 
 1. `storage account` を検索し、「**ストレージアカウント**」を選択します。
 
@@ -127,7 +127,7 @@ Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを�
 
    ![Azure ストレージ ](./images/az18.png)
 
-## 手動でのファイルのアップロードと、スタイル参照としての画像ファイルの使用
+## 1.1.2.4 手動によるファイルのアップロードと、画像ファイルをスタイル参照として使用する
 
 1. 選択した画像ファイルまたは [ このファイル ](./images/gradient.jpg){target="_blank"} をコンテナにアップロードします。
 
@@ -166,7 +166,7 @@ Microsoft Azure と事前署名済み URL を使用してFireflyプロセスを�
 
    ![Azure ストレージ ](./images/az26.png)
 
-## プログラムによるファイルのアップロード
+## 1.1.2.5 プログラムによるファイルのアップロード
 
 Azure ストレージアカウントでプログラムによるファイルのアップロードを使用するには、ファイルを書き込むための権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。
 
@@ -247,7 +247,7 @@ Azure ストレージアカウントでプログラムによるファイルの�
 
    ![Azure ストレージ ](./images/az38.png)
 
-## プログラムによるファイル使用
+## 1.1.2.6 プログラムによるファイル利用
 
 Azure ストレージアカウントからプログラムによって長期的にファイルを読み取るには、ファイルを読み取ることができる権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。 技術的には、前の演習で作成した SAS トークンを使用できますが、**読み取り** 権限のみを持つ別のトークンと、**書き込み** 権限のみを持つ別のトークンを用意することをお勧めします。
 
@@ -317,6 +317,10 @@ Azure ストレージアカウントからプログラムによって長期的�
 
 ### Postmanの変数
 
+>[!IMPORTANT]
+>
+>Adobe社員の方は、こちらの説明に従って [PostBuster](./../../../postbuster.md) を使用してください。
+
 上記の節でわかるように、読み取りトークンと書き込みトークンの両方に共通の変数がいくつかあります。
 
 次に、上記の SAS トークンのさまざまな要素を格納する変数を、Postmanで作成する必要があります。 両方の URL で同じ値がいくつか存在します。
@@ -367,7 +371,7 @@ Azure ストレージアカウントからプログラムによって長期的�
 
 ## 次の手順
 
-[Adobe FireflyおよびAdobe Photoshop API](./ex3.md){target="_blank"} に移動します
+[Photoshop API の操作 ](./ex3.md){target="_blank"} に移動します。
 
 [Adobe Fireflyサービスの概要 ](./firefly-services.md){target="_blank"} に戻る
 

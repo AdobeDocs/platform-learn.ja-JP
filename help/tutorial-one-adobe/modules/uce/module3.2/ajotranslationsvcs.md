@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer翻訳サービス
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: b68e8578f2bd535662522e752d4cbd2947a9677d
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 4%
+source-wordcount: '134'
+ht-degree: 2%
 
 ---
 
@@ -20,12 +20,17 @@ ht-degree: 4%
 ## 前提条件
 
 - Adobe Journey Optimizerへのアクセス
+- Microsoft Azure トランスレーターへのアクセス
 
 ## 演習
 
-[3.2.1 ...](./ex1.md)
+[3.2.1 翻訳プロバイダー](./ex1.md)
 
-この演習では、...
+この演習では、Microsoft トランスレーターを使用して翻訳プロバイダーを設定し、Adobe Journey Optimizerで設定します。
+
+[3.2.2 翻訳プロジェクト](./ex2.md)
+
+この演習では、Microsoft トランスレーターを使用して翻訳プロバイダーを設定し、Adobe Journey Optimizerで設定します。
 
 [概要と利点](./summary.md)
 

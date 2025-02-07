@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
 
-# Workfront Fusion でのAdobeAPI の使用
+# 1.2.2 Workfront Fusion でのAdobeAPI の使用
 
 Workfront Fusion でのAdobeAPI の使用方法について説明します。
 
-## Fireflyテキストを使用したWorkfront Fusion での API の画像への変換
+## 1.2.2.1 Fireflyテキストを使用してWorkfront Fusion で API を画像に変換する
 
 1. 2 つ目の **複数の変数を設定** ノードにマウスポインターを置き、「**+**」を選択して別のモジュールを追加します。
 
@@ -115,7 +115,7 @@ Workfront Fusion でのAdobeAPI の使用方法について説明します。
 
 ![WF Fusion](./images/wffusion61.png)
 
-## Workfront Fusion でのPhotoshop API の使用
+## 1.2.2.2 Workfront Fusion でのPhotoshop API の使用
 
 1. **ベアラートークンを設定** ノードと **4}FireflyT2I** ノードの間の「レンチ **を選択します。****ルーターを追加** を選択します。
 

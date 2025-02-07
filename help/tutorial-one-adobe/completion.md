@@ -1,10 +1,11 @@
 ---
-title: 完了
+title: 完了 – 1 つのAdobeチュートリアル
 description: 完了の測定方法
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 モジュール **はじめに** の完了の見込み配達確認は、作成した web のデモシステムプロジェクトの ID です。
 
-Web 形式のデモシステムプロジェクトの ID は `--demoProfileLdap-- - 8ERG` のようになります。
+Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - 8ERG` のようになります。
 
 ![3](./assets/images/module0dtl.png)
 
@@ -35,7 +36,7 @@ URL は次のようになります。`https://ldap.blob.core.windows.net/folder/
 
 ## 1.2 Workfront Fusion によるクリエイティブワークフローの自動化
 
-モジュール **Workfront Fusion によるクリエイティブワークフローの自動処理** の完了証明書として期待されているのは、演習 1.2.3 で **Webhook を使用してシナリオをアクティブ化** する手順を実行した後に作成された Webhook の **URL** です。
+モジュール **Workfront Fusion によるクリエイティブワークフローの自動処理** の完了証明書として期待されているのは、**Webhook を使用してシナリオをアクティブ化する** 手順を実行して演習 1.2.3 で作成された Webhook の **URL** です。
 
 URL は次のようになります。`https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`
 
@@ -79,7 +80,7 @@ URL は次のようになります。`https://author-p148121-e1511399.adobeaemcl
 
 モジュール **Adobe Journey Optimizer:Offer decisioning** の完了証明書として期待されているものは、作成した **Decision** の ID です。
 
-**決定 ID** は次の **dps:offer-activity:1a08ba4b529b2fb2** のようになります。
+**決定 ID** は次の **`dps:offer-activity:1a08ba4b529b2fb2`** のようになります。
 
 ![14](./assets/images/offers.png)
 

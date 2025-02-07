@@ -1,11 +1,11 @@
 ---
-title: 概要
+title: 概要 – AEP とアプリの包括的な技術チュートリアル
 description: データエンジニア、データアナリスト、データアーキテクト、データサイエンティスト、オーケストレーションエンジニアおよびマーケターが、Adobe Experience Platformとそのアプリケーションサービスのビジネス価値を完全に理解するための出発点です。
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [
 
 ## 完了と資格認定
 
-このチュートリアルは、Adobe資格認定コースの一部です。 このチュートリアルと共にコースに新規登録するには、[https://certification.adobe.com](https://certification.adobe.com) にアクセスします。
+このチュートリアルは、Adobe資格認定コースの一部です。 このチュートリアルと共にコースに新規登録するには、[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258) にアクセスします。
 
 以下のチュートリアルを使用して完了するすべてのモジュールについて、以下に示すように完了証明書を送信する必要があります [ こちら ](./completion.md)。
 
