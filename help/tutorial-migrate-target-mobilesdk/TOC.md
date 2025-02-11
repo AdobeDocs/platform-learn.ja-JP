@@ -10,7 +10,7 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 3%
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 + [チュートリアルの概要](overview.md)
 
-+ [拡張機能の比較](detailed-comparison.md)
++ [拡張機能の比較](comparison.md)
 
 + [初期設定の実行](initial-setup.md)
 
-+ [SDK の置換](replace-library.md)
++ [SDK の置換](replace-sdk.md)
 
 + [アクティビティのレンダリング](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [コンバージョンイベントの追跡](track-events.md)
 
-+ [WebView サポートを有効にする](cross-domain.md)
++ [WebView サポートを有効にする](webview.md)
 
 + [オーディエンスとプロファイルスクリプトの更新](update-audiences.md)
 

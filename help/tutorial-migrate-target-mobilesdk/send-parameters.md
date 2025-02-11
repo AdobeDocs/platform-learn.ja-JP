@@ -1,10 +1,11 @@
 ---
 title: パラメーターの送信 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
-description: Experience Platform Web SDK を使用して、mbox、プロファイル、エンティティパラメーターをAdobe Targetに送信する方法を説明します。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: Experience Platform Web SDKを使用して、mbox、プロファイル、エンティティパラメーターをAdobe Targetに送信する方法について説明します。
+exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 1%
 
 ---
 
@@ -12,8 +13,45 @@ ht-degree: 0%
 
 Target の実装は、サイトのアーキテクチャ、ビジネス要件、使用される機能により、web サイト間で異なります。 ほとんどの Target 実装には、コンテキスト情報、オーディエンスおよびコンテンツの推奨事項に関する様々なパラメーターの受け渡しが含まれています。
 
-単純な製品の詳細ページと注文確認ページを使用して、パラメーターを Target に渡す際の拡張機能の違いを示してみましょう。
+Target 拡張機能では、すべての Target パラメーターが `TargetParameters` 関数を使用して渡されました。
 
+Decisioning 拡張機能を使用すると、
+
+* 複数のAdobe アプリケーション向けのパラメーターは、XDM オブジェクトで渡すことができます
+* Target 専用のパラメーターは、`data.__adobe.target` オブジェクトで渡すことができます
+
+
+>[!IMPORTANT]
+>
+> 意思決定拡張機能では、リクエストで送信されるパラメーターは、リクエスト内のすべてのスコープに適用されます。 異なるスコープに異なるパラメーターを設定する必要がある場合は、追加のリクエストを行う必要があります。
+
+## カスタムパラメーター
+
+カスタム mbox パラメーターは、データを Target に渡す最も基本的な方法で、XDM または `data.__adobe.target` オブジェクトで渡すことができます。
+
+## プロファイルパラメーター
+
+プロファイルパラメーターは、ユーザーの Target プロファイルに長期間データを格納するもので、`data.__adobe.target` オブジェクトに渡す必要があります。
+
+## エンティティパラメーター
+
+[ エンティティパラメーター ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) は、Target Recommendations の行動データと追加のカタログ情報を渡すために使用されます。 プロファイルパラメーターと同様に、すべてのエンティティパラメーターは `data.__adobe.target` オブジェクトの下に渡す必要があります。
+
+適切にデータを取得するには、特定の項目のエンティティパラメーターの先頭に `entity.` を付ける必要があります。 Recommendations アルゴリズムの予約済みの `cartIds` と `excludedIds` のパラメーターにはプレフィックスを付けてはいけません。また、それぞれの値には、エンティティ ID のコンマ区切りリストを含める必要があります。
+
+## 購入パラメーター
+
+購入パラメーターは、注文が成功した後、注文確認ページで渡され、Target のコンバージョンと最適化の目標に使用されます。 Decisioning 拡張機能を使用した Platform Mobile SDKの実装では、これらのパラメーターとが、`commerce` フィールドグループの一部として渡される XDM データから自動的にマッピングされます。
+
+`commerce` フィールドグループが `1` に設定されている場合、購入情報 `purchases.value`Target に渡されます。 注文 ID と注文合計は、`order` オブジェクトから自動的にマッピングされます。 `productListItems` 配列が存在する場合、`SKU` の値が `productPurchasedId` に使用されます。
+
+XDM オブジェクトで `commerce` フィールドを渡さない場合は、`data.__adobe.target.orderId`、`data.__adobe.target.orderTotal`、`data.__adobe.target.productPurchasedId` の各フィールドを使用して、注文の詳細を target に渡すことができます。
+
+## 顧客 Id （mbox3rdPartyId）
+
+Target では、単一の顧客 ID を使用して、デバイスやシステム間でプロファイルを同期できます。 この顧客 ID は、XDM オブジェクトの `identityMap` フィールドに渡し、データストリームのターゲットサードパーティ ID フィールドにマッピングする必要があります。
+
+## テーブル
 
 | at.js パラメーターの例 | Platform Web SDK オプション | メモ |
 | --- | --- | --- |
@@ -21,51 +59,84 @@ Target の実装は、サイトのアーキテクチャ、ビジネス要件、�
 | `pageName` | `xdm.web.webPageDetails.name` | すべての Target mbox パラメーターは、`xdm` オブジェクトの一部として渡され、XDM ExperienceEvent クラスを使用してスキーマに準拠する必要があります。 Mbox パラメーターを `data` オブジェクトの一部として渡すことはできません。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 適切にマッピングするには、すべての Target プロファイルパラメーターを `data` オブジェクトの一部として渡し、`profile.` のプレフィックスを付ける必要があります。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | `data` オブジェクトの一部として渡す必要がある Target のカテゴリ親和性機能に使用される予約済みのパラメーター。 |
-| `entity.id` | `data.__adobe.target.entity.id` <br> または <br> `xdm.productListItems[0].SKU` | エンティティ ID は、Target Recommendationsの行動カウンターに使用されます。 これらのエンティティ ID は、`data` オブジェクトの一部として渡すことも、実装でそのフィールドグループを使用している場合は `xdm.productListItems` 配列の最初の項目から自動的にマッピングすることもできます。 |
+| `entity.id` | `data.__adobe.target.entity.id` <br> または <br> `xdm.productListItems[0].SKU` | エンティティ ID は、Target Recommendations の行動カウンターに使用されます。 これらのエンティティ ID は、`data` オブジェクトの一部として渡すことも、実装でそのフィールドグループを使用している場合は `xdm.productListItems` 配列の最初の項目から自動的にマッピングすることもできます。 |
 | `entity.categoryId` | `data.__adobe.target.entity.categoryId` | エンティティ カテゴリ ID は、`data` オブジェクトの一部として渡すことができます。 |
-| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | カスタムエンティティパラメーターは、Recommendations商品カタログの更新に使用されます。 これらのカスタムパラメーターは、`data` オブジェクトの一部として渡す必要があります。 |
+| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | カスタムエンティティパラメーターは、Recommendations 製品カタログの更新に使用されます。 これらのカスタムパラメーターは、`data` オブジェクトの一部として渡す必要があります。 |
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースのレコメンデーションアルゴリズムに使用します。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Recommendations デザインで特定のエンティティ ID が返されるのを防ぐために使用します。 |
 | `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[ データストリームの Target 設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) で指定する必要があります。 |
-| `orderId` | `xdm.commerce.order.purchaseID` | Target コンバージョントラッキングの一意の順序を識別するために使用します。 |
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Target のコンバージョンと最適化の目標で、注文の合計をトラッキングするために使用します。 |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br> または <br> `xdm.productListItems[0-n].SKU` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 詳しくは、以下の [ エンティティパラメーター ](#entity-parameters) の節を参照してください。 |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> （`commerce.purchases.value` が `1` に設定されている場合） | Target コンバージョントラッキングの一意の順序を識別するために使用します。 |
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> （`commerce.purchases.value` が `1` に設定されている場合） | Target のコンバージョンと最適化の目標で、注文の合計をトラッキングするために使用します。 |
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br>OR<br> `data.__adobe.target.productPurchasedId` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 詳しくは、以下の [ エンティティパラメーター ](#entity-parameters) の節を参照してください。 |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [ カスタムスコア ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) アクティビティ目標に使用します。 |
 
 {style="table-layout:auto"}
 
-## カスタムパラメーター
 
-カスタム mbox パラメーターは、XDM として、または `sendEvent` コマンドでデータオブジェクトを使用して渡す必要があります。 XDM スキーマに、Target 実装に必要なすべてのフィールドが含まれていることを確認することが重要です。
+## パラメーターを渡す例
+
+簡単な例を使用して、Target にパラメーターを渡す際の拡張機能の違いを示してみましょう。
+
+### Android
+
+>[!BEGINTABS]
+
+>[!TAB Target SDK]
+
+```Java
+Map<String, String> mboxParameters = new HashMap<String, String>();
+mboxParameters1.put("status", "platinum");
+ 
+Map<String, String> profileParameters = new HashMap<String, String>();
+profileParameters1.put("gender", "male");
+ 
+List<String> purchasedProductIds = new ArrayList<String>();
+purchasedProductIds.add("ppId1");
+TargetOrder targetOrder = new TargetOrder("id1", 1.0, purchasedProductIds);
+ 
+TargetProduct targetProduct = new TargetProduct("pId1", "cId1");
+ 
+TargetParameters targetParameters = new TargetParameters.Builder()
+                                    .parameters(mboxParameters)
+                                    .profileParameters(profileParameters)
+                                    .product(targetProduct)
+                                    .order(targetOrder)
+                                    .build();
+```
+
+>[!ENDTABS]
+
+### iOS
+
+>[!BEGINTABS]
+
+>[!TAB Target SDK]
+
+```Swift
+let mboxParameters = [
+                        "status": "platinum"
+                     ]
+ 
+let profileParameters = [
+                            "gender": "male"
+                        ]
+ 
+let order = TargetOrder(id: "id1", total: 1.0, purchasedProductIds: ["ppId1"])
+ 
+let product = TargetProduct(productId: "pId1", categoryId: "cId1")
+ 
+let targetParameters = TargetParameters(parameters: mboxParameters, profileParameters: profileParameters, order: order, product: product))
+```
 
 
-## プロファイルパラメーター
-
-ターゲットプロファイルパラメーターを渡す必要があります…
-
-## エンティティパラメーター
-
-エンティティパラメーターは、Target Recommendationsの行動データと追加のカタログ情報を渡すために使用されます。 at.js でサポートされているすべての [ エンティティパラメーター ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) も、Platform Web SDK でサポートされています。 プロファイルパラメーターと同様に、すべてのエンティティパラメーターは、Platform Web SDK `sendEvent` コマンドペイロードの `data.__adobe.target` オブジェクトの下に渡す必要があります。
-
-適切にデータを取得するには、特定の項目のエンティティパラメーターの先頭に `entity.` を付ける必要があります。 Recommendations アルゴリズムの予約済みの `cartIds` と `excludedIds` のパラメーターにはプレフィックスを付けてはいけません。また、それぞれの値には、エンティティ ID のコンマ区切りリストを含める必要があります。
+>[!ENDTABS]
 
 
 
-## 購入パラメーター
-
-購入パラメーターは、注文が成功した後、注文確認ページで渡され、Target のコンバージョンと最適化の目標に使用されます。 Decisioning 拡張機能を使用した Platform Mobile SDK の実装では、これらのパラメーターとが、`commerce` フィールドグループの一部として渡される XDM データから自動的にマッピングされます。
-
-
-`commerce` フィールドグループが `1` に設定されている場合、購入情報 `purchases.value`Target に渡されます。 注文 ID と注文合計は、`order` オブジェクトから自動的にマッピングされます。 `productListItems` 配列が存在する場合、`SKU` の値が `productPurchasedId` に使用されます。
-
-
-## 顧客 Id （mbox3rdPartyId）
-
-Target では、単一の顧客 ID を使用して、デバイスやシステム間でプロファイルを同期できます。
 
 
 
-次に、Platform Web SDK を使用して Target コンバージョンイベントを [ トラッキング ](track-events.md) する方法について説明します。
+次に、Platform web SDKを使用して Target コンバージョンイベントを [ トラッキング ](track-events.md) する方法について説明します。
 
 >[!NOTE]
 >

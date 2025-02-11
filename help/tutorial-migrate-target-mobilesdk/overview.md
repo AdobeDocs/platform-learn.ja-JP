@@ -3,7 +3,7 @@ title: Adobe TargetからAdobe Journey Optimizer - Decisioning Mobile 拡張機�
 description: Adobe TargetからAdobe Journey Optimizer - Decisioning 拡張機能にモバイルアプリの実装を移行する方法を説明します
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Target 拡張機能から Decisioning 拡張機能への移行に要する労力
 > * **Target SDK** は、**Adobe Target拡張機能を実装しています**
 > * **SDKの最適化** は、**Adobe Journey Optimizer - Decisioning 拡張機能を実装しています**
 
-次に、詳細な [Target 拡張機能と Decisioning 拡張機能の比較 ](detailed-comparison.md) を確認して、技術的な違いをより深く理解し、さらに焦点を当てる必要がある領域を特定します。
+次に、詳細な [Target 拡張機能と Decisioning 拡張機能の比較 ](comparison.md) を確認して、技術的な違いをより深く理解し、さらに焦点を当てる必要がある領域を特定します。
 
 >[!NOTE]
 >

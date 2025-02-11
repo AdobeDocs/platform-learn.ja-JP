@@ -2,10 +2,10 @@
 title: 初期設定 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
 description: Platform Web SDKの実装に必要な重要な基本要素について説明し、設定します
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,8 @@ Target SDKから Optimize SDKに移行するには、Optimize SDKの適切なデ
 - [ データストリームを作成 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} して、Edge Networkからのデータの転送を有効にします。
 - [ データストリームを設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} して、Adobe Targetへのデータの転送を有効にします。
 - Decisioning 拡張機能の [ タグプロパティの設定 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"}
+
+## 拡張機能の設定
 
 >[!BEGINTABS]
 
@@ -50,7 +52,19 @@ Target 拡張機能を使用するとインストールされるタグ拡張機�
 
 >[!ENDTABS]
 
-次に、[Target SDKの置き換え ](replace-library.md) 方法について説明します。
+## データストリーム設定
+
+Target 拡張機能には [ 設定可能な設定 ](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) があり、決定拡張機能と共に [ データストリームで設定 ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup) されます。
+
+| ターゲット拡張機能 | Decisioning 拡張機能 | メモ |
+| --- | --- | --- | 
+| クライアントコード | 該当なし | IMS 組織の詳細を使用して、Edge によって自動的に設定されます |
+| 環境 ID | ターゲット環境 ID | データストリームで設定済み |
+| Target Workspace プロパティ | プロパティトークン | データストリームで設定済み |
+| タイムアウト | 設定可能ではありません | Decisioning 拡張機能のタイムアウトは 10 秒です |
+| Server Domain | Edge Network ドメイン | Adobe Experience Platform Edge Network拡張機能で設定 |
+
+次に、[Target SDKの置き換え ](replace-sdk.md) 方法について説明します。
 
 >[!NOTE]
 >
