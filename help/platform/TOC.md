@@ -5,7 +5,7 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 22%
@@ -15,14 +15,14 @@ ht-degree: 22%
 
 # Adobe Experience Platform のチュートリアル {#tutorials}
 
-+ [Platform Tutorials](/help/platform/overview.md)
++ [Platform チュートリアル](/help/platform/overview.md)
 + Platform {#intro-to-platform} の概要
    + [Experience Platform を活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [バックグラウンド：Experience Platformを活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform の概要](/help/platform/intro-to-platform/overview.md)
    + [主な機能](/help/platform/intro-to-platform/key-capabilities.md)
    + [プラットフォームベースのアプリケーション](/help/platform/intro-to-platform/native-applications.md)
-   + [Experience Cloudアプリケーションとの統合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [Experience Cloud アプリケーションとの統合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主なユースケース](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本アーキテクチャ](/help/platform/intro-to-platform/basic-architecture.md)
    + [ユーザーインターフェイス](/help/platform/intro-to-platform/interface-tour.md)
@@ -34,7 +34,7 @@ ht-degree: 22%
    + [B2B editionの概要](/help/platform/rtcdp/b2b-overview.md)
    + [Marketo Engageでキャンペーンを調整](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [ はじめに：データアーキテクトとデータエンジニア ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja){target="_blank"}
-+ [Experience PlatformAPI に対する認証](/help/platform/authentication/platform-api-authentication.md)
++ [Experience Platform API に対する認証](/help/platform/authentication/platform-api-authentication.md)
 + [Experience Platformへのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [アラートを使用](/help/platform/admin/use-alerts.md)
@@ -147,7 +147,7 @@ ht-degree: 22%
 + インテリジェントサービス {#intelligent-services}
    + [概要](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Attribution AI の概要](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Attribution AI値](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [アトリビューション AI 値](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [Attribution AI の設定](/help/platform/intelligent-services/configure-attribution-ai.md)
    + [Attribution AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
    + [顧客 AI の概要](/help/platform/intelligent-services/introduction-to-customer-ai.md)
@@ -176,13 +176,13 @@ ht-degree: 22%
    + [プロファイルの削除](/help/platform/profiles/delete-profiles.md)
    + [アップサートを使用した特定の属性の更新](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy and Security {#privacy}
-   + [Privacy Serviceの概要](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Privacy Serviceについて](/help/platform/privacy/introduction-to-privacy-services.md)
    + [プライバシーリクエストの ID データ](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [プライバシーJavaScriptライブラリ](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analyticsのプライバシーラベル](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
-   + [Privacy ServiceAPI の概要](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [PRIVACY SERVICEUI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [PRIVACY SERVICEAPI](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [Privacy Service API の概要](/help/platform/privacy/getting-started-with-privacy-services-api.md)
+   + [PRIVACY SERVICE UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [PRIVACY SERVICE API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [プライバシーイベントへの購読](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [顧客管理キーの設定](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [顧客データ管理の責任に関する 10 の考慮事項](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
@@ -233,7 +233,7 @@ ht-degree: 22%
    + [概要](/help/platform/use-case-playbooks/overview.md)
    + [プレイブックサンドボックスの設定](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [プレイブックインスタンスの作成と公開](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Experience Cloud統合 {#experience-cloud}
++ Experience Cloud Integrations {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
