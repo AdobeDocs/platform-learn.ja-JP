@@ -4,9 +4,9 @@ description: Foundation - データ取り込み – スキーマの設定と識�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 ![データ取得](./images/schemastructurem.png)
 
 新しい [!UICONTROL  フィールドグループ ] はまだ空なので、その [!UICONTROL  フィールドグループ ] にフィールドを追加する必要があります。
-[!UICONTROL  フィールドグループ ] – リストで、カスタム [!UICONTROL  フィールドグループ ] をクリックし、「**参照**」をクリックします。
+[!UICONTROL  フィールドグループ ] リストで、カスタムの [!UICONTROL  フィールドグループ ] をクリックします。
 
 ![データ取得](./images/schemastructurem.png)
 
@@ -165,7 +165,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/tenantfielddef.png)
 
-スキーマにカスタム **[!UICONTROL オブジェクト]** を表す新しいオブジェクトがスキーマに表示され、Adobe Experience Platform テナント ID にちなんで名前が付けられます。 Adobe Experience Platform テナント ID は `--aepTenantId--` で、すべての AEP インスタンスに固有です。
+スキーマにカスタム **[!UICONTROL オブジェクト]** を表す新しいオブジェクトがスキーマに表示され、Adobe Experience Platform テナント ID にちなんで名前が付けられます。 Adobe Experience Platform テナント ID は `--aepTenantId--` で、すべての AEP インスタンスに対して一意です。
 
 ![データ取得](./images/tenant.png)
 
@@ -176,26 +176,26 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 以下の情報を使用して、これら 3 つの新しいフィールドを **[!UICONTROL identification]** オブジェクトの下に作成します。
 
 - ecid:
-   - フィールド名：**[!UICONTROL ecid]**
-   - 表示名：**[!UICONTROL ecid]**
+   - フィールド名: **`--aepUserLdap--_ecid`**
+   - 表示名：**`--aepUserLdap--ecid`**
    - タイプ：**[!UICONTROL String]**
    - フィールドグループ：**`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - フィールド名：**[!UICONTROL emailId]**
-   - 表示名：**[!UICONTROL emailId]**
+   - フィールド名: **`--aepUserLdap--_emailId`**
+   - 表示名：**`--aepUserLdap--_emailId`**
    - タイプ：**[!UICONTROL String]**
    - フィールドグループ：**`--aepUserLdap-- - Profile Identification Field Group`**
 
 - モバイル
-   - フィールド名：**[!UICONTROL mobilenr]**
-   - 表示名：**[!UICONTROL mobilenr]**
+   - フィールド名: **`--aepUserLdap--_mobilenr`**
+   - 表示名：**`--aepUserLdap--_mobilenr`**
    - タイプ：**[!UICONTROL String]**
    - フィールドグループ：**`--aepUserLdap-- - Profile Identification Field Group`**
 
 これは、最初のフィールド設定の後の各フィールドに対する外観です。
 
-- モバイル
+- `--aepUserLdap--_mobilenr`
 
 ![データ取得](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![データ取得](./images/ecidfield.png)
 
 必ず下にスクロールして、「適用 **をクリックし** ください。
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![データ取得](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 これらのフィールドを **[!UICONTROL ID]** フィールドとして定義するには、次の手順に従います。
 
-- フィールド **[!UICONTROL emailId]** を選択します。
+- フィールド **`--aepUserLdap--_emailId`** を選択します。
 - 右側のフィールドプロパティで、下にスクロールして **[!UICONTROL ID]** を表示します。 **[!UICONTROL ID]** のチェックボックスをオンにします。
 
 ![データ取得](./images/emailidid.png)
@@ -236,15 +236,15 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/emailidprimidns.png)
 
-次に、**[!UICONTROL ecid]** と **[!UICONTROL mobilenr]** の他のフィールドを標準識別子として定義する必要があります。
+次に、**`--aepUserLdap--_ecid`** と **`--aepUserLdap--_mobilenr`** の他のフィールドを標準識別子として定義する必要があります。
 
-フィールド **[!UICONTROL ecid]** を選択します。 右側のフィールドプロパティで、下にスクロールして **[!UICONTROL ID]** を表示します。 **[!UICONTROL ID]** のチェックボックスをオンにします。
+フィールド **`--aepUserLdap--_ecid`** を選択します。 右側のフィールドプロパティで、下にスクロールして **[!UICONTROL ID]** を表示します。 **[!UICONTROL ID]** のチェックボックスをオンにします。
 次に、**[!UICONTROL 名前空間]** リストから名前空間 **[!UICONTROL ECID]** を選択します。
 「**[!UICONTROL 適用]**」をクリックして変更を保存します。
 
 ![データ取得](./images/ecidid.png)
 
-フィールド **[!UICONTROL mobilenr]** を選択します。 右側のフィールドプロパティで、下にスクロールして **[!UICONTROL ID]** を表示します。 **[!UICONTROL ID]** のチェックボックスをオンにします。
+フィールド **`--aepUserLdap--_mobilenr`** を選択します。 右側のフィールドプロパティで、下にスクロールして **[!UICONTROL ID]** を表示します。 **[!UICONTROL ID]** のチェックボックスをオンにします。
 **[!UICONTROL 名前空間]** リストから名前空間 **[!UICONTROL 電話]** を選択します。
 「**[!UICONTROL 適用]**」をクリックして変更を保存します。
 
@@ -415,12 +415,12 @@ ECID フィールドは型 **[!UICONTROL 文字列]** として定義され、�
 
 - ecid:
 
-   - フィールド名：**[!UICONTROL ecidweb]**
-   - 表示名：**[!UICONTROL ecidweb]**
+   - フィールド名: **`--aepUserLdap--_ecidweb`**
+   - 表示名：**`--aepUserLdap--_ecidweb`**
    - タイプ：**[!UICONTROL String]**
    - フィールドグループ：`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-[!UICONTROL ecid]-field は、最初のフィールド設定の後に次のように表示されます。
+`--aepUserLdap--_ecidweb` フィールドは、最初のフィールド設定の後にどのように表示されるかを次に示します。
 
 ![データ取得](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ ECID フィールドは型 **[!UICONTROL 文字列]** として定義され、�
 
 ![データ取得](./images/3fieldsee.png)
 
-これらのフィールドを **[!UICONTROL ID]** フィールドとして定義するには、フィールド **[!UICONTROL ecid]** を選択します。
+これらのフィールドを **[!UICONTROL ID]** フィールドとして定義するには、フィールド **`--aepUserLdap--_ecidweb`** を選択します。
 右側のフィールドプロパティで、下にスクロールして **[!UICONTROL ID]** を表示します。 **[!UICONTROL ID]** のチェックボックスをオンにし、**[!UICONTROL プライマリ ID]** のチェックボックスをオンにします。
 **[!UICONTROL 名前空間]** リストから名前空間 **[!UICONTROL ECID]** を選択します。
 

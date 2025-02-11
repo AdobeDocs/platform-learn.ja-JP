@@ -3,15 +3,15 @@ title: Adobe Journey Optimizer翻訳サービス
 description: Adobe Journey Optimizer翻訳サービス
 kt: 5342
 doc-type: tutorial
-exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+exl-id: f518e1d9-2f5b-4ab3-b3dd-16f722f7177d
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
 
 ---
 
-# 3.2 Adobe Journey Optimizer翻訳サービス
+# 3.5 Adobe Journey Optimizer：翻訳サービス
 
 ## 学習内容
 
@@ -24,15 +24,15 @@ ht-degree: 2%
 
 ## 演習
 
-[3.2.1 翻訳プロバイダー](./ex1.md)
+[3.5.1 翻訳プロバイダー](./ex1.md)
 
 この演習では、Microsoft トランスレーターを使用して翻訳プロバイダーを設定し、Adobe Journey Optimizerで設定します。
 
-[3.2.2 翻訳プロジェクト](./ex2.md)
+[3.5.2 翻訳プロジェクト](./ex2.md)
 
 この演習では、Microsoft トランスレーターを使用して翻訳プロバイダーを設定し、Adobe Journey Optimizerで設定します。
 
-[3.2.3 メールへの言語の追加](./ex3.md)
+[3.5.3 メールへの言語の追加](./ex3.md)
 
 この演習では、キャンペーンのメールに言語を追加します。
 

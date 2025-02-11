@@ -4,9 +4,9 @@ description: Foundation - リアルタイム顧客プロファイル – 独自�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2343'
 ht-degree: 2%
 
 ---
@@ -109,6 +109,10 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 >このAdobe I/OプロジェクトがAdobe Experience Platformの権限設定にアクセスできるようにする追加の手順があります。 プロジェクトの API 資格情報は、Adobe Experience Platformの権限 UI に追加する必要があります。この UI には、システム管理者のアクセス権が必要です。 手順は以下に記載されていますが、必要なアクセス権限がない場合は、システム管理者に問い合わせて、これを処理してもらう必要がある場合があります。
 
 ## API 資格情報の AEP 権限
+
+>[!IMPORTANT]
+>
+>システム管理者のアクセス権がない場合、この手順を自分で実行できず、**権限** UI にアクセスする権限もありません。 その場合は、システム管理者に問い合わせるか、組織のサポートチャネルに質問を投稿してください。
 
 [Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 

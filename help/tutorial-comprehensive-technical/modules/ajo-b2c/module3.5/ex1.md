@@ -1,19 +1,19 @@
 ---
-title: AJO翻訳プロバイダー
-description: AJO翻訳プロバイダー
+title: AJO翻訳サービスの基本を学ぶ
+description: AJO翻訳サービスの基本を学ぶ
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
-source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '546'
 ht-degree: 5%
 
 ---
 
-# 3.2.1 翻訳プロバイダー
+# 3.5.1 翻訳プロバイダー
 
-## 3.2.1.1 Microsoft Azure Translator の設定
+## 3.5.1.1 Microsoft Azure Translator の設定
 
 [https://portal.azure.com/#home](https://portal.azure.com/#home) に移動します。
 
@@ -47,7 +47,7 @@ ht-degree: 5%
 
 ![ 翻訳 ](./images/transl7.png)
 
-## 3.2.1.2 ロケール辞書
+## 3.5.1.2 ロケール辞書
 
 [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
 
@@ -61,7 +61,7 @@ ht-degree: 5%
 
 ![ 翻訳 ](./images/locale2.png)
 
-## 3.2.1.3 AJOで翻訳プロバイダーを設定する
+## 3.5.1.3 AJOで翻訳プロバイダーを設定する
 
 [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
 
@@ -91,7 +91,7 @@ ht-degree: 5%
 
 ![ 翻訳 ](./images/transl13.png)
 
-## 3.2.1.4 翻訳プロジェクトの設定
+## 3.5.1.4 翻訳プロジェクトの設定
 
 [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
 
@@ -125,7 +125,7 @@ ht-degree: 5%
 
 ![ 翻訳 ](./images/ajoprovider9.png)
 
-## 3.2.1.5 言語設定の指定
+## 3.5.1.5 言語設定の指定
 
 **チャネル**/**一般設定**/**言語設定** に移動します。 **言語設定を作成** をクリックします。
 
@@ -171,8 +171,8 @@ ht-degree: 5%
 
 ## 次の手順
 
-[3.2.2 キャンペーンの作成 ](./ex2.md) に移動します
+[3.5.2 キャンペーンの作成 ](./ex2.md) に移動します。
 
-[ モジュール 3.2](./ajotranslationsvcs.md){target="_blank"} に戻ります。
+[ モジュール 3.5](./ajotranslationsvcs.md){target="_blank"} に戻ります。
 
 [ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

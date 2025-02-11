@@ -3,9 +3,9 @@ title: 完了 – 1 つのAdobeチュートリアル
 description: 完了の測定方法
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
+source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 0%
 
 Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - 8ERG` のようになります。
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
+
 
 ## 1.1 Adobe Fireflyサービス
 
@@ -32,7 +33,7 @@ Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - 8
 
 URL は次のようになります。`https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`
 
-![3](./assets/images/ps24.png)
+![3](./assets/images/ps24.png){zoomable="yes"}
 
 ## 1.2 Workfront Fusion によるクリエイティブワークフローの自動化
 
@@ -40,7 +41,7 @@ URL は次のようになります。`https://ldap.blob.core.windows.net/folder/
 
 URL は次のようになります。`https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`
 
-![3](./assets/images/wff.png)
+![3](./assets/images/wff.png){zoomable="yes"}
 
 ## 2.1 Adobe Experience ManagerのCloud ServiceとEdge Delivery Services
 
@@ -48,7 +49,7 @@ URL は次のようになります。`https://hook.fusion.adobe.com/tuqxu1k4rbf7
 
 URL は次のようになります。`https://main--citisignal--xxx.aem.page/us/en`
 
-![3](./assets/images/aemcsweb.png)
+![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Adobe Workfrontを使用したワークフロー管理
 
@@ -56,13 +57,13 @@ URL は次のようになります。`https://main--citisignal--xxx.aem.page/us/
 
 URL を取得するには、AEM Assetsにアップロードされた画像で **リンクを共有** をクリックします。
 
-![12](./assets/images/wflink1.png)
+![12](./assets/images/wflink1.png){zoomable="yes"}
 
 **コピー** アイコンをクリックして、URL をコピーします。
 
 URL は次のようになります。`https://author-p148121-e1511399.adobeaemcloud.com/linkshare.html?sh=d63ec826_df79_4c73_a05c_2c2115baef78.dw7JBu2VxkNZvXE2oq9J6KwFRrt5VAffkuqC0nZIjHE`
 
-![12](./assets/images/wflink2.png)
+![12](./assets/images/wflink2.png){zoomable="yes"}
 
 ## 3.1 Federated Audience の構成
 
@@ -70,11 +71,15 @@ URL は次のようになります。`https://author-p148121-e1511399.adobeaemcl
 
 連合データモデルの ID は **DMO5110** のようになります。これは、次の画像に示す URL から取得できます。
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer：翻訳サービス
 
-モジュール **Adobe Journey Optimizer：翻訳サービス** の完了証明書として期待されるのは…です
+モジュール **Adobe Journey Optimizer：翻訳サービス** の完了証明書として期待されているものは、CitiSignal ファイバーキャンペーンの **キャンペーン バージョン ID** です。
+
+Federated Data Model の Campaign バージョン ID は、**b11c998b-a345-4f8e-afb1-6285547eb693** のように表示され、次の画像に示すように、Campaign の概要画面からコピーできます。
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer:Offer decisioning
 
@@ -82,7 +87,7 @@ URL は次のようになります。`https://author-p148121-e1511399.adobeaemcl
 
 **決定 ID** は次の **`dps:offer-activity:1a08ba4b529b2fb2`** のようになります。
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 >[!NOTE]
 >

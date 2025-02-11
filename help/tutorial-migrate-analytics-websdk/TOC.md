@@ -10,9 +10,9 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: deac800691c130033e1d4c5c7424a3a87fc40830
+source-git-commit: 6311417699d49cb2a9bbb67e221b9054a8b37605
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '99'
 ht-degree: 5%
 
 ---
@@ -41,6 +41,8 @@ ht-degree: 5%
 + [追加のページルールを移行](migrate-additional-page-rules.md)
 
 + [カスタム リンク ルールを移行する](migrate-custom-link-rules.md)
+
++ [グローバル変数の移行](migrate-global-variables.md)
 
 + [Analytics 拡張機能の削除](delete-analytics-extension-items.md)
 

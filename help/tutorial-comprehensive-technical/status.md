@@ -3,10 +3,10 @@ title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 8%
+source-wordcount: '264'
+ht-degree: 9%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 8%
 | [3.2 Adobe Journey Optimizer：外部データソースとカスタムアクション ](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | ○ | - |
 | [3.3 Adobe Journey Optimizer:Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | ○ | - |
 | [3.4 Adobe Journey Optimizer：イベントベースのジャーニー](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | ○ | - |
+| [3.5 Adobe Journey Optimizer：翻訳サービス ](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md) | 08/02/2025 | ○ | - |
 | [4.1 Customer Journey Analytics:Adobe Experience Platform上にAnalysis Workspaceを使用してダッシュボードを作成する ](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 06/01/2025 | ○ | - |
 | [4.2 Customer Journey Analytics:BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析 ](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | × | ソースデータのデータ準備モデリングに問題があります。 これは修正待ちの状態です。 |
 | [5.1 クエリサービス ](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | ○ | - |

@@ -3,15 +3,15 @@ title: AJO Translation Services を使用したキャンペーンの作成
 description: AJO Translation Services を使用したキャンペーンの作成
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 9%
 
 ---
 
-# 3.2.2 キャンペーンの作成
+# 3.5.2 キャンペーンの作成
 
 [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
 
@@ -21,7 +21,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/ajolp2.png)
 
-## 3.2.2.1 ヘッダーフラグメントを作成する
+>[!NOTE]
+>
+>演習 [ 演習 3.1.2.1](./../module3.1/ex2.md) および [ 演習 3.1.2.2](./../module3.1/ex2.md) の一部として既にヘッダーとフッターのフラグメントを作成している場合は、演習 3.5.2.3 のファイバーの作成キャンペーンに進んでください。 ヘッダーフラグメントとフッターフラグメントを再度作成しないでください。
+
+## 3.5.2.1 ヘッダーフラグメントを作成する
 
 左側のメニューで、「**フラグメント**」をクリックします。 フラグメントは、Journey Optimizer内の再利用可能なコンポーネントで、重複を回避し、メールメッセージのヘッダーやフッターの変更など、すべてのメッセージに影響を与える将来の変更を容易にします。
 
@@ -76,7 +80,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2 フッターフラグメントの作成
+## 3.5.2.2 フッターフラグメントの作成
 
 **フラグメントを作成** をクリックします。
 
@@ -230,7 +234,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 ファイバキャンペーンの作成
+## 3.5.2.3 ファイバキャンペーンの作成
 
 次に、キャンペーンを作成します。 前の演習のイベントベースのジャーニーは、受信エクスペリエンスイベントやオーディエンスの入口または出口に依存して 1 人の特定顧客のジャーニーをトリガーにするのとは異なり、キャンペーンは、ニュースレター、1 回限りのプロモーション、一般的な情報などの一意のコンテンツで 1 回、またはインスタンスの誕生日キャンペーンやリマインダーなどの定期的に送信される同様のコンテンツで、オーディエンス全体をターゲットにします。
 
@@ -262,7 +266,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-**オーディエンス** には、前の手順で作成したオーディエンス（`--aepUserLdap-- - CitiSignal Eligible for Fiber`）を選択します。 「**保存**」をクリックします。
+**オーディエンス** については、[1.3.3 フェデレーション構成の作成 ](./../../datacollection/module1.3/ex3.md) で作成したオーディエンス（「`--aepUserLdap-- - CitiSignal Eligible for Fiber`」という名前）を選択します。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Stay connected.
 
 ## 次の手順
 
-[3.2.3 メールへの言語の追加 ](./ex3.md)
+[3.5.3 メールへの言語の追加 ](./ex3.md)
 
-[ モジュール 3.2](./ajotranslationsvcs.md){target="_blank"} に戻ります。
+[ モジュール 3.5](./ajotranslationsvcs.md){target="_blank"} に戻ります。
 
 [ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

@@ -3,9 +3,9 @@ title: 完了 – Adobe Experience Platformの包括的なテクニカルチュ�
 description: 完了の測定方法
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,15 @@ ht-degree: 0%
 
 [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258) に移動します。
 
-![3](./assets/images/certcourse.png)
+![3](./assets/images/certcourse.png){zoomable="yes"}
 
-モジュールを完了するには、完了証明書を提供する必要があります。
+完了を送信するモジュールの横にある「**開始**」をクリックします。
+
+![3](./assets/images/certcourse2.png){zoomable="yes"}
+
+モジュールを完了するには、完了証明書を提供し、モジュールごとに送信する必要があります。
+
+![3](./assets/images/certcourse3.png){zoomable="yes"}
 
 各モジュールで想定される完了証明書は次のとおりです。
 
@@ -26,7 +32,7 @@ ht-degree: 0%
 
 Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - QIMU` のようになります。
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 ## 1.1 Adobe Experience Platform Data Collection と Web SDK拡張機能
 
@@ -34,7 +40,7 @@ Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - Q
 
 Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f8a45deb68f8902d3a` のようになります。
 
-![3](./assets/images/module1dtl.png)
+![3](./assets/images/module1dtl.png){zoomable="yes"}
 
 ## 1.2 データ取り込み
 
@@ -42,7 +48,7 @@ Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f
 
 データフロー ID は、**374c2c6d-f39a-4b0b-b568-40c41e6c4e8e** のようになります。
 
-![3](./assets/images/completemodule2seg.png)
+![3](./assets/images/completemodule2seg.png){zoomable="yes"}
 
 ## 1.3 Federated Audience の構成
 
@@ -50,7 +56,7 @@ Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f
 
 連合データモデルの ID は **DMO5110** のようになります。これは、次の画像に示す URL から取得できます。
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 2.1 リアルタイム顧客プロファイル
 
@@ -58,7 +64,7 @@ Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f
 
 オーディエンス ID は、**81a9acbe-12e6-424b-b658-abba3a435c83** のようになります。
 
-![3](./assets/images/completemodule3seg.png)
+![3](./assets/images/completemodule3seg.png){zoomable="yes"}
 
 ## 2.2 インテリジェントサービス
 
@@ -66,7 +72,7 @@ Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f
 
 オーディエンス ID は、**cb6db21d-8fa3-484a-93ac-25aa1ab48412** のようになります。
 
-![12](./assets/images/completemodule10.png)
+![12](./assets/images/completemodule10.png){zoomable="yes"}
 
 ## 2.3 Real-Time CDP：オーディエンスを作成し、アクションを起こします。
 
@@ -74,7 +80,7 @@ Web 形式のデータ収集プロパティの環境 ID は、`EN5211f7792b4442f
 
 Webhook 宛先の ID は、**b5b4b959-3166-40e2-8279-8223d00c3987** のように表示され、次の画像に示すように、URL から取得できます。
 
-![12](./assets/images/vec4.png)
+![12](./assets/images/vec4.png){zoomable="yes"}
 
 ## 2.4 Real-Time CDP:Microsoft Azure Event Hub へのAudience Activation
 
@@ -82,7 +88,7 @@ Webhook 宛先の ID は、**b5b4b959-3166-40e2-8279-8223d00c3987** のように
 
 次に示す URL に、**43cf85bc-3d01-49fd-80c9-a2913db45e3c** のような **Microsoft Azure Event Hub 宛先 ID** があります。
 
-![14](./assets/images/azuredestid.png)
+![14](./assets/images/azuredestid.png){zoomable="yes"}
 
 ## 2.5 Real-Time CDP接続：イベント転送
 
@@ -90,7 +96,7 @@ Webhook 宛先の ID は、**b5b4b959-3166-40e2-8279-8223d00c3987** のように
 
 次の画像に示すように、URL に **PRa18819171c1241dfb16d74a49993dd5b** のような **イベント転送プロパティ ID** があります。
 
-![14](./assets/images/launchssfid.png)
+![14](./assets/images/launchssfid.png){zoomable="yes"}
 
 ## 2.6 Apache Kafka からReal-Time CDPへのデータのストリーミング
 
@@ -98,7 +104,7 @@ Webhook 宛先の ID は、**b5b4b959-3166-40e2-8279-8223d00c3987** のように
 
 ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。この ID は、次の場所で確認できます。
 
-![14](./assets/images/kafkaflowid.png)
+![14](./assets/images/kafkaflowid.png){zoomable="yes"}
 
 ## 3.1 Adobe Journey Optimizer：オーケストレーション
 
@@ -106,7 +112,7 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 ジャーニー ID は **594fa01f-1a3b-450c-ba09-b7e3ff377c0f** のように表示され、次の画像に示すように URL から取得できます。
 
-![12](./assets/images/ajoo.png)
+![12](./assets/images/ajoo.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer：外部データソースとカスタムアクション
 
@@ -114,7 +120,7 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 ジャーニー ID は次のようになります。**6962d3bc-4f44-4f9c-b326-83978f245f2a**。次の画像に示すように、URL から取得できます。
 
-![12](./assets/images/jofinal.png)
+![12](./assets/images/jofinal.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer:Offer decisioning
 
@@ -122,7 +128,7 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 **決定 ID** は次の **dps:offer-activity:1a08ba4b529b2fb2** のようになります。
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 ## 3.4 Adobe Journey Optimizer：イベントベースのジャーニー
 
@@ -130,7 +136,15 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 ジャーニー ID は次のようになります。**5f5efc7e-49f7-44c1-85df-b23482b38d32**。次の画像に示すように、URL から取得できます。
 
-![14](./assets/images/jojourneyid.png)
+![14](./assets/images/jojourneyid.png){zoomable="yes"}
+
+## 3.5 Adobe Journey Optimizer：翻訳サービス
+
+モジュール **Adobe Journey Optimizer：翻訳サービス** の完了証明書として期待されているものは、CitiSignal ファイバーキャンペーンの **キャンペーン バージョン ID** です。
+
+Federated Data Model の Campaign バージョン ID は、**b11c998b-a345-4f8e-afb1-6285547eb693** のように表示され、次の画像に示すように、Campaign の概要画面からコピーできます。
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 4.1 Customer Journey Analytics:Analysis Workspaceを使用したダッシュボードの構築
 
@@ -138,7 +152,7 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 形式は次のようになります。**677bcb247064db3c7de2a0e4**、プロジェクトを開くと、URL 内で見つけることができます。
 
-![12](./assets/images/cjacompletion.png)
+![12](./assets/images/cjacompletion.png){zoomable="yes"}
 
 ## 4.2Customer Journey Analytics:BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析
 
@@ -146,7 +160,7 @@ ID は **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** のようになります。こ�
 
 **BigQuery 接続 ID** は、次の **b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8** のようになります。
 
-![14](./assets/images/bqid.png)
+![14](./assets/images/bqid.png){zoomable="yes"}
 
 ## 5.1 クエリサービス
 
@@ -156,7 +170,7 @@ ID は **675033c903fb3b2aefed8a0a** のようになります。
 
 ![12](./assets/images/completemodule7.png)
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 
 >[!NOTE]
 >

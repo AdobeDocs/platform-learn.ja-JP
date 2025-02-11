@@ -4,7 +4,7 @@ description: AEM CS – 高度なカスタムブロック
 kt: 5342
 doc-type: tutorial
 exl-id: fa299668-c902-4775-a540-7555ca461d3e
-source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
+source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 これで、このブロックで作業を続行できます。
 
-![AEMCS](./images/nav7.png)
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
 ## 2.1.5.1 ブロックのスタイル設定
 
@@ -25,23 +25,23 @@ ht-degree: 0%
 
 Visual Studio Code に戻り、フォルダー **blocks** を開きます。 これで、それぞれが特定のブロックを参照する複数のフォルダーが表示されます。 **fiberoffer** ブロックをより高度なものにするには、カスタムブロックのフォルダーを作成する必要があります。
 
-![AEMCS](./images/blockadv1.png)
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
 フォルダー **ブロック** を選択し、「**新規フォルダーを作成**」アイコンをクリックします。
 
-![AEMCS](./images/blockadv2.png)
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
 フォルダーに `fiberoffer` という名前を付け、**enter** キーを押します。
 
-![AEMCS](./images/blockadv3.png)
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
 新しい **fiberoffer** フォルダーを選択し、「**新しいファイルを作成**」アイコンをクリックします。
 
-![AEMCS](./images/blockadv4.png)
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
 これで、新しいファイルが作成されました。 名前 **fiberoffer.js** を入力して、Enter キーを押します。
 
-![AEMCS](./images/blockadv5.png)
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
 次のJavaScriptをファイル **fiberoffer.js** に追加することで、ブロックデコレーションを実装できるようになりました。
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![AEMCS](./images/blockadv6.png)
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
 新しい **fiberoffer** フォルダーを選択し、「**新しいファイルを作成**」アイコンを再度クリックします。
 
-![AEMCS](./images/blockadv7.png)
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
 これで、新しいファイルが作成されました。 名前 **fiberoffer.css** を入力して、Enter キーを押します。
 
-![AEMCS](./images/blockadv8.png)
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
 次の CSS コードをコピーして、新しく作成したファイルに貼り付けます。
 
@@ -88,7 +88,7 @@ export default function decorate(block) {
 
 変更を保存します。
 
-![AEMCS](./images/blockadv9.png)
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 これで、プロジェクトで、GitHub リポジトリにコミットして戻す必要のある変更をいくつか加えました。 それには、**GitHub デスクトップ** を開きます。
 
@@ -96,15 +96,15 @@ export default function decorate(block) {
 
 PR、`js css` の名前を入力します。 「**メインにコミット**」をクリックします。
 
-![ ブロック ](./images/blockadv10.png)
+![ ブロック ](./images/blockadv10.png){zoomable="yes"}
 
 この画像が表示されます。 **接触チャネルをプッシュ** をクリックします。
 
-![ ブロック ](./images/blockadv11.png)
+![ ブロック ](./images/blockadv11.png){zoomable="yes"}
 
 ブラウザーで、GitHub アカウントと、CitiSignal 用に作成したリポジトリに移動します。 変更を受け取ったことを示す、次のようなメッセージが表示されます。
 
-![ ブロック ](./images/blockadv12.png)
+![ ブロック ](./images/blockadv12.png){zoomable="yes"}
 
 XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトの変更を表示できるようになりました。
 
@@ -113,7 +113,7 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 
 ページにスタイルが適用されたことがわかります。
 
-![ ブロック ](./images/blockadv13.png)
+![ ブロック ](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2 ロジックの追加と外部エンドポイントからのデータの読み込み
 
@@ -156,11 +156,11 @@ var script1 = document.createElement('script');
 
 現時点では、「**edgeConfigId** フィールドを変更する必要はありません。 次の演習では、**MarTech** プラグインを使用してこれを行うことができます。
 
-![ ブロック ](./images/blockadv15.png)
+![ ブロック ](./images/blockadv15.png){zoomable="yes"}
 
 これで、このが得られます。
 
-![ ブロック ](./images/blockadv14.png)
+![ ブロック ](./images/blockadv14.png){zoomable="yes"}
 
 次に、このブロックを、追加した前のコードの下に追加します。
 
@@ -185,7 +185,7 @@ var ECID = "";
 
 上記のコードでわかるように、ECID が取得されると、別の関数が呼び出されます。 この関数は **getOffer （）と呼ばれ** 次に追加します。
 
-![ ブロック ](./images/blockadv16.png)
+![ ブロック ](./images/blockadv16.png){zoomable="yes"}
 
 次に、の下に以下のコードを追加します。
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 このコードブロックは、この例の 42 行目に表示される閉じブラケットの下に貼り付けることが非常に重要です。 先ほど貼り付けたコードは、このファイル内に独自の場所を必要とする別の関数であり、上記の **デフォルトの関数** 内にネストすることはできません。
 
-![ ブロック ](./images/blockadv17.png)
+![ ブロック ](./images/blockadv17.png){zoomable="yes"}
 
 先ほど貼り付けたコードブロックは、通常 Web SDK/alloy.jsがおこなうリクエストをシミュレートします。 この例では、**fetch** リクエストが **edge.adobedc.net** に対して行われます。
 
@@ -330,11 +330,11 @@ async function getOffer(ECID) {
 
 変更を保存します。次に、**Github デスクトップ** を開き、PR に名前を付けて、「**メインにコミット**」をクリックします。
 
-![ ブロック ](./images/blockadv18.png)
+![ ブロック ](./images/blockadv18.png){zoomable="yes"}
 
 次に、「**接触チャネルをプッシュ**」をクリックします。
 
-![ ブロック ](./images/blockadv19.png)
+![ ブロック ](./images/blockadv19.png){zoomable="yes"}
 
 XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトの変更を表示できるようになりました。
 
@@ -343,7 +343,7 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 
 この画像が表示されます。
 
-![ ブロック ](./images/blockadv20.png)
+![ ブロック ](./images/blockadv20.png){zoomable="yes"}
 
 次の手順：[2.1.6 AEM Edge Delivery Services MarTech プラグイン ](./ex6.md){target="_blank"}
 
