@@ -2,26 +2,36 @@
 title: SDKの置き換え – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
 description: Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能に移行する際に、SDKを置き換える方法を説明します。
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# Target 拡張機能を Decisioning 拡張機能に置換します
+# Target SDKを Optimize SDKに置き換えます。
 
-ページ上のAdobe Target実装を置き換えて、at.js から Platform web SDKに移行する方法を説明します。 基本的な置き換えは、次の手順で構成されます。
+モバイル実装でAdobe Target SDK を最適化 SDK に置き換える方法を説明します。 基本的な置き換えは、次の手順で構成されます。
 
+* Podfile または `build.gradle` ファイルの依存関係を更新します
+* 読み込みを更新
+* アプリケーションコードを更新
 
-## モバイルアプリケーションへの Decisioning 拡張機能（SDKの最適化）の統合
+>[!INFO]
+>
+>Adobe Experience Platform Mobile SDK エコシステム内では、拡張機能は、アプリケーションに読み込まれた、名前が異なる可能性のある SDK によって実装されます。
+>
+> * **Target SDK** は、**Adobe Target拡張機能を実装しています**
+> * **SDKの最適化** は、**Adobe Journey Optimizer - Decisioning 拡張機能を実装しています**
+
+## 依存関係の更新
 
 
 >[!BEGINTABS]
 
->[!TAB Decisioning 拡張機能のアプリ依存関係 – Android]
+>[!TAB SDK Androidを最適化するためのアプリの依存関係 ]
 
-`build.gradle` 依存関係
+移行後の `build.gradle` 依存関係
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -36,9 +46,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Decisioning 拡張機能のアプリ依存関係 – iOS]
+>[!TAB SDK iOSを最適化するためのアプリの依存関係 ]
 
-`Podfile` 依存関係
+移行後の `Podfile` 依存関係
 
 ```Swift
 use_frameworks!
@@ -51,9 +61,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->[!TAB Target 拡張機能のアプリ依存関係 – Android]
+>[!TAB Target SDK Androidのアプリ依存関係 ]
 
-`build.gradle` 依存関係
+移行前に `build.gradle` 依存関係
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -66,9 +76,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Target 拡張機能のアプリ依存関係 – iOS]
+>[!TAB Target SDK iOSのアプリ依存関係 ]
 
-`Podfile` 依存関係
+移行前に `Podfile` 依存関係
 
 ```Swift
 use_frameworks!
@@ -84,13 +94,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## コンテンツを事前非表示にするアプローチを更新
+## インポートとコードの更新
 
 >[!BEGINTABS]
 
->[!TAB Decisioning 拡張機能 – Android]
+>[!TAB SDK - Androidの最適化 ]
 
-Java 初期化コード
+移行後の Java 初期化コード
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -140,9 +150,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Decisioning 拡張機能 – iOS]
+>[!TAB SDK - iOSの最適化 ]
 
-Swift 初期化コード
+移行後の Swift 初期化コード
 
 ```Swift
 import AEPCore
@@ -182,9 +192,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB Target 拡張機能 – Android]
+>[!TAB Target SDK - Android]
 
-Java 初期化コード
+移行前の Java 初期化コード
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -230,9 +240,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Target 拡張機能 – iOS]
+>[!TAB Target SDK - iOS]
 
-Swift 初期化コード
+移行前の Swift 初期化コード
 
 ```Swift
 import AEPCore

@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [初期設定の実行](initial-setup.md)
 
-+ [ライブラリの置換と事前非表示アプローチ](replace-library.md)
++ [SDK の置換](replace-library.md)
 
 + [アクティビティのレンダリング](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [コンバージョンイベントの追跡](track-events.md)
 
-+ [クロスドメインサポートの有効化](cross-domain.md)
++ [WebView サポートを有効にする](cross-domain.md)
 
 + [オーディエンスとプロファイルスクリプトの更新](update-audiences.md)
 
