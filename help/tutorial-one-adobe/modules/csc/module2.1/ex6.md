@@ -4,7 +4,7 @@ description: AEM CS - MarTech プラグイン
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -17,7 +17,7 @@ AEM MarTech プラグインを使用すると、AEM プロジェクトの完全�
 
 >[!NOTE]
 >
->このプラグインは、現在、共同イノベーションプロジェクトを通じてAEM エンジニアリングと協力しているお客様が利用できます。 詳細については、[https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech) を参照してください。
+>現在、このプラグインは、共同開発プロジェクトを通じてAEMエンジニアリングと連携しているお客様が利用できます。 詳細については、[https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech) を参照してください。
 
 ## 2.1.6.1 リポジトリへのプラグインの追加
 
@@ -28,7 +28,7 @@ AEM MarTech プラグインを使用すると、AEM プロジェクトの完全�
 その後、これが表示されます。 次のコマンドを貼り付けて、**enter** キーを押します。
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 この画像が表示されます。
@@ -323,7 +323,7 @@ AEM Edge Delivery Services MarTech プラグインを正しく機能させるに
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-**拡張機能**、**カタログ** に移動します。 拡張子 **「Adobeクライアントデータレイヤー」をクリックし** 「**インストール**」をクリックします。
+**拡張機能**、**カタログ** に移動します。 拡張子 **Adobe Client Data Layer をクリックしてから****インストール** をクリックします。
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 
