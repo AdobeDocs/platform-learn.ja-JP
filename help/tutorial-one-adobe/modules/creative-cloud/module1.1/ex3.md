@@ -1,12 +1,12 @@
 ---
 title: Photoshop API の操作
-description: Photoshop API とFireflyサービスの使用方法を学ぶ
+description: Photoshop API とFirefly サービスの使用方法を学ぶ
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 1.1.3 Photoshop API の操作
 
-Photoshop API とFireflyサービスの使用方法について説明します。
+Photoshop API とFirefly サービスの使用方法について説明します。
 
 ## 1.1.3.1 Adobe I/O統合の更新
 
 1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
 
-![Adobe I/Oの新規統合 ](./images/iohome.png){zoomable="yes"}
+![Adobe I/O新規統合 ](./images/iohome.png){zoomable="yes"}
 
 1. **プロジェクト** に移動し、前の演習で作成したプロジェクト（`--aepUserLdap-- Firefly`）を選択します。
 
@@ -31,7 +31,7 @@ Photoshop API とFireflyサービスの使用方法について説明します�
 
 ![Azure ストレージ ](./images/ps2.png){zoomable="yes"}
 
-1. 「**Creative Cloud**」、「**Photoshop - Fireflyサービス**」の順に選択します。 「**次へ**」を選択します。
+1. **Creative Cloud** を選択してから、**Photoshop - Firefly サービス** を選択してください。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/ps3.png){zoomable="yes"}
 
@@ -41,21 +41,21 @@ Photoshop API とFireflyサービスの使用方法について説明します�
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
-1. **デフォルトのFirefly・サービス構成** および **デフォルトのCreative Cloud・オートメーション・サービス構成** を選択します。
+1. **デフォルトのFirefly サービス設定** および **デフォルトのCreative Cloud Automation Services 設定** を選択します。
 
 1. **設定済み API を保存** を選択します。
 
 ![Azure ストレージ ](./images/ps5.png){zoomable="yes"}
 
-これで、Adobe I/Oプロジェクトが、Photoshop API とFireflyサービス API を使用するように更新されました。
+これで、Adobe I/O プロジェクトが、Photoshop API とFirefly サービス API で動作するように更新されました。
 
 ![Azure ストレージ ](./images/ps6.png){zoomable="yes"}
 
-## 1.1.3.2PSDファイルをプログラムで操作する
+## 1.1.3.2 PSD ファイルをプログラムで操作する
 
 >[!IMPORTANT]
 >
->Adobe社員の方は、こちらの説明に従って [PostBuster](./../../../postbuster.md) を使用してください。
+>Adobeの従業員の場合は、こちらの手順に従って [PostBuster](./../../../postbuster.md) を使用してください。
 
 1. [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} をデスクトップにダウンロードします。
 
@@ -63,11 +63,11 @@ Photoshop API とFireflyサービスの使用方法について説明します�
 
 ![Azure ストレージ ](./images/ps7.png){zoomable="yes"}
 
-**レイヤー** パネルでは、ファイルのデザイナーが各レイヤーに一意の名前を付けました。 レイヤー情報は、PhotoshopでPSDファイルを開くことで表示できますが、プログラムで開くこともできます。
+**レイヤー** パネルでは、ファイルのデザイナーが各レイヤーに一意の名前を付けました。 PhotoshopでPSD ファイルを開くと、レイヤー情報を表示できますが、プログラムで開くこともできます。
 
 最初の API リクエストをPhotoshop API に送信しましょう。
 
-1. Postmanでは、API リクエストをPhotoshopに送信する前に、Adobe I/Oへの認証が必要です。**POST - アクセストークンの取得** という名前で前のリクエストを開きます。
+1. Postmanでは、API リクエストをPhotoshopに送信する前に、Adobe I/Oへの認証が必要です。前のリクエストを「**POST - アクセストークンの取得**」という名前で開きます。
 
 1. **Params** に移動し、パラメーター **Scope** が正しく設定されていることを確認します。 **範囲** の **値** は次のようになります。
 
@@ -93,18 +93,18 @@ Photoshop API とFireflyサービスの使用方法について説明します�
 
 ![Azure ストレージ ](./images/ps11.png){zoomable="yes"}
 
-次に、PSDファイル **citisignal-fiber.psd** をプログラムで操作するには、それをストレージアカウントにアップロードする必要があります。 Azure ストレージエクスプローラーを使用してコンテナに手動でドラッグ&amp;ドロップできますが、今回は API を通じて行う必要があります。
+次に、PSD ファイル **citisignal-fiber.psd** をプログラムで操作するには、それをストレージアカウントにアップロードする必要があります。 Azure ストレージエクスプローラーを使用してコンテナに手動でドラッグ&amp;ドロップできますが、今回は API を通じて行う必要があります。
 
-### Azure へのPSDのアップロード
+### PSDの Azure へのアップロード
 
-1. Postmanで、リクエスト **Azure ストレージアカウントへのPSDのアップロード** を開きます。 前の演習では、Postmanでこれらの環境変数を設定しました。ここでは、これを使用します。
+1. Postmanで、**PSDを Azure ストレージアカウントにアップロード** リクエストを開きます。 前の演習では、Postmanでこれらの環境変数を設定しました。ここでは、これを使用します。
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
 - `AZURE_STORAGE_SAS_READ`
 - `AZURE_STORAGE_SAS_WRITE`
 
-リクエスト **Azure ストレージアカウントへのPSDのアップロード** に示すように、URL はこれらの変数を使用するように設定されています。
+**PSDを Azure ストレージアカウントにアップロード** リクエストに示すように、URL はこれらの変数を使用するように設定されています。
 
 ![Azure ストレージ ](./images/ps12.png){zoomable="yes"}
 
@@ -126,9 +126,9 @@ Azure ストレージエクスプローラーを使用してファイルを表�
 
 ### Photoshop API - マニフェストを取得する
 
-次に、PSDファイルのマニフェストファイルを取得する必要があります。
+次に、PSD ファイルのマニフェストファイルを取得する必要があります。
 
-1. Postmanで、リクエスト **Photoshop -PSDマニフェストの取得** を開きます。 **本文** に移動します。
+1. Postmanで、リクエスト **Photoshop - PSD マニフェストの取得** を開きます。 **本文** に移動します。
 
 本文は次のようになります。
 
@@ -154,7 +154,7 @@ Azure ストレージエクスプローラーを使用してファイルを表�
 
 ![Azure ストレージ ](./images/ps17.png){zoomable="yes"}
 
-1. ステータスファイルを読み取るには、リクエスト **Photoshop - PS ステータスの取得** を開きます。 このリクエストが URL として変数を使用していることを確認できます。この変数は、送信した前のリクエスト（**Photoshop -PSDマニフェストの取得** によって設定された変数です。 変数は、各リクエストの **スクリプト** で設定されます。 **送信** を選択します。
+1. ステータスファイルを読み取るには、リクエスト **Photoshop - PS ステータスの取得** を開きます。 このリクエストが URL として変数を使用していることを確認できます。この変数は、送信した前のリクエスト（**Photoshop - PSD マニフェストの取得** によって設定された変数です。 変数は、各リクエストの **スクリプト** で設定されます。 **送信** を選択します。
 
 ![Azure ストレージ ](./images/ps18.png){zoomable="yes"}
 
@@ -164,7 +164,7 @@ Azure ストレージエクスプローラーを使用してファイルを表�
 
 1. ステータスが **成功** に変わるまで、「**Photoshop - PS ステータスの取得**」でさらに複数回送信を選択します。 これには数分かかることがあります。
 
-レスポンスが使用可能な場合、PSDファイルのすべてのレイヤーの情報を含む json ファイルが表示されます。 レイヤー名やレイヤー ID などを識別できるため、これは役に立つ情報です。
+応答が使用可能な場合、PSD ファイルのすべてのレイヤーの情報を含んだ json ファイルが表示されます。 レイヤー名やレイヤー ID などを識別できるため、これは役に立つ情報です。
 
 ![Azure ストレージ ](./images/ps20.png){zoomable="yes"}
 
@@ -239,8 +239,8 @@ Azure ストレージエクスプローラーを使用して、コンテナ内�
 
 ## 次の手順
 
-[Fireflyカスタムモデル API](./ex4.md){target="_blank"} に移動します
+[Firefly カスタムモデル API](./ex4.md){target="_blank"} に移動します
 
-[Adobe Fireflyサービスの概要 ](./firefly-services.md){target="_blank"} に戻る
+[Adobe Firefly サービスの概要 ](./firefly-services.md){target="_blank"} に戻ります
 
 [ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
