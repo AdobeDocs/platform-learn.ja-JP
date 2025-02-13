@@ -4,10 +4,10 @@ description: Foundation - データ取得 – オフラインソースからの�
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 5%
+source-wordcount: '1562'
+ht-degree: 6%
 
 ---
 
@@ -53,6 +53,10 @@ ht-degree: 5%
 - country_code
 - 都市
 - 国
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 これらのフィールドはすべて、Platform に適合するデータを生成するように定義されています。
 
@@ -68,7 +72,9 @@ CSV ファイルの準備が整ったら、AEP での取り込みを続行でき
 
 ### データセットの検証
 
-[Adobe Experience Platform](https://experience.adobe.com/platform) を開き、**[!UICONTROL データセット]** に移動します。
+[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動します。
+
+![データ取得](./images/home.png)
 
 続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。
 
@@ -115,8 +121,6 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 また、プライマリ ID が `--aepTenantId--.identification.core.crmId` にあり、**[!UICONTROL デモシステム - CRMID] の [!UICONTROL  名前空間]** にリンクされていることもわかります。
 
 ![データ取得](./images/schema_descriptor.png)
-
-
 
 すべてのスキーマなど、「リアルタイム顧客プロファイル [!UICONTROL  で使用する必要があるすべてのデータセットには ]1 つの [!UICONTROL プライマリID] が必要です。 この [!UICONTROL プライマリID] は、そのデータセット内の顧客に対する、ブランドによるユーザー ID です。 CRM データセットの場合はメールアドレスまたは CRM ID であり、コールセンターデータセットの場合は顧客の携帯電話番号である可能性があります。
 
@@ -229,6 +233,24 @@ Source スキーマフィールド **id** は、ターゲットフィールド *
 Source スキーマフィールド **last_name** は、ターゲットフィールド **person.name.lastName** にリンクする必要があります。
 
 ![データ取得](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Source スキーマフィールド **last_name** は、ターゲットフィールド **consents.marketing.email.val** にリンクする必要があります。
+
+![データ取得](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Source スキーマフィールド **last_name** は、ターゲットフィールド **consents.marketing.commercialEmail.val** にリンクする必要があります。
+
+![データ取得](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Source スキーマフィールド **last_name** は、ターゲットフィールド **consents.marketing.any.val** にリンクする必要があります。
+
+![データ取得](./images/cons3.png)
 
 これで、このが得られます。 「**完了**」をクリックします。
 
