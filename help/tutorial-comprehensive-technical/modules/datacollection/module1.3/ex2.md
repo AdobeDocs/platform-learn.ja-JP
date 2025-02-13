@@ -4,9 +4,9 @@ description: 基盤 – FAC - スキーマ、データモデル、リンクの�
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
+source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 **サーバー**:
 
-Snowflakeーで、**管理者/アカウント** に移動します。 アカウントの横にある 3 **...** をクリックし、「**URL を管理**」をクリックします。
+Snowflakeで、**管理者/アカウント** に移動します。 アカウントの横にある 3 **...** をクリックし、「**URL を管理**」をクリックします。
 
 ![FAC](./images/fdburl1.png)
 
@@ -51,7 +51,7 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 **パスワード**：演習 1.3.1.1 で以前に作成したパスワード
 **データベース**: **CITISIGNAL** を使用します
 
-最後に、これを取得します。 **接続をテスト** をクリックします。 テストが成功した場合は、「**関数をデプロイ**」をクリックすると、ワークフローエンジンに必要なSnowflake側の関数が作成されます。
+最後に、これを取得します。 **接続をテスト** をクリックします。 テストが成功した場合は、「**関数をデプロイ**」をクリックすると、ワークフローエンジンに必要な関数がSnowflake側に作成されます。
 
 接続が正常にテストされ、機能がデプロイされると、設定が保存されます。
 
@@ -71,13 +71,13 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb6.png)
 
-その後、これが表示されます。 Snowflakeで作成した 5 つのテーブルを選択します。
+その後、これが表示されます。 以前にSnowflakeで作成した 5 つのテーブルを選択します。
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 「**追加**」をクリックします。
 
@@ -98,11 +98,11 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 ![FAC](./images/fdb8.png)
 
-その後、これが表示されます。 任意のスキーマをクリックして、情報を確認できます。 例えば、「**CK_PERSONS**」をクリックします。
+その後、これが表示されます。 任意のスキーマをクリックして、情報を確認できます。 例えば、「**—aepUserLdap—_PERSONS**」をクリックします。
 
 ![FAC](./images/fdb9.png)
 
-設定を編集する機能が備わったことがわかります。 **データ** をクリックして、Snowflakeデータベースにあるデータのサンプルを表示します。
+設定を編集する機能が備わったことがわかります。 **データ** をクリックして、Snowflake データベースにあるデータのサンプルを表示します。
 
 ![FAC](./images/fdb10.png)
 
@@ -130,57 +130,58 @@ Snowflakeーで、**管理者/アカウント** に移動します。 アカウ�
 
 その後、これが表示されます。 「**保存**」をクリックします。
 
-### `CK_USERS` - `CK_PERSONS`
+![FAC](./images/fdb16.png)
+
+### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
 
 これで、スキーマ間のリンクの定義を開始できます。 リンクの定義を開始するには、「**リンクを作成**」をクリックする必要があります。
 
 ![FAC](./images/fdb16.png)
 
-まず、テーブル `CK_USERS` と `CK_PERSONS` の間のリンクを定義します。
+まず、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_PERSONS` の間のリンクを定義します。
 
 「**追加**」をクリックします。
 
 ![FAC](./images/fdb18.png)
 
-
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb17.png)
 
-次に、テーブル `CK_HOUSEHOLDS` と `CK_PERSONS` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_HOUSEHOLDS` と `--aepUserLdap--_PERSONS` の間のリンクを定義します。
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb20.png)
 
-次に、テーブル `CK_USERS` と `CK_MONTHLY_DATA_USAGE` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_MONTHLY_DATA_USAGE` の間のリンクを定義します。
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb22.png)
 
-次に、テーブル `CK_USERS` と `CK_HOUSEHOLDS` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_HOUSEHOLDS` の間のリンクを定義します。
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
 ![FAC](./images/fdb24.png)
 
-次に、テーブル `CK_USERS` と `CK_MOBILE_DATA_USAGE` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_MOBILE_DATA_USAGE` の間のリンクを定義します。
 
 ![FAC](./images/fdb25.png)
 

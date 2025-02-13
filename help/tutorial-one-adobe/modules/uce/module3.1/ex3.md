@@ -4,9 +4,9 @@ description: 基盤 – FAC - フェデレーション構成の作成
 kt: 5342
 doc-type: tutorial
 exl-id: dc044a26-f16a-491e-a795-4cd16f211256
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp5.png)
 
-スキーマ **CK_FAMILIES** を選択します。 「**確認**」をクリックします。
+スキーマ **—aepUserLdap—_HOUSEARDS** を選択します。 「**確認**」をクリックします。
 
 ![FAC](./images/fedcomp6.png)
 
@@ -63,7 +63,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp9.png)
 
-その後、これが表示されます。 フィールド **値** を **True** に設定します。 「**計算**」をクリックしてクエリをSnowflakeにプッシュし、選定されたプロファイルの推定を取得します。
+その後、これが表示されます。 フィールド **値** を **True** に設定します。 「**計算**」をクリックして、クエリをSnowflakeにプッシュし、選定されたプロファイルの推定を取得します。
 
 ![FAC](./images/fedcomp10.png)
 
@@ -71,7 +71,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp11.png)
 
-追加する 2 番目の条件は `Is the user an existing CitiSignal Mobile subscriber?` です。 この質問に答える方法は、世帯と世帯の主要顧客との関係を使用することです。これは、別のテーブル **CK_PERSON** で定義されています。 「**household2person**」リンクを使用して、属性メニューをドリルダウンできます。
+追加する 2 番目の条件は `Is the user an existing CitiSignal Mobile subscriber?` です。 この質問に答える方法は、世帯と世帯の主要顧客の間の関係を使用することです。これは、別のテーブル **—aepUserLdap—_PERSONS** で定義されています。 「**household2person**」リンクを使用して、属性メニューをドリルダウンできます。
 
 ![FAC](./images/fedcomp12.png)
 
@@ -137,7 +137,9 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 君の作文はもう仕上がっている。 「**スタート**」をクリックして実行します。
 
-これで、クエリがSnowflakeにプッシュされ、そこにソースデータがクエリされます。 結果は AEP にプッシュされますが、ソースデータはSnowflake内に残ります。
+![FAC](./images/fedcomp21a.png)
+
+これで、クエリがSnowflakeにプッシュされ、そこでソースデータに対してクエリが実行されます。 結果は AEP にプッシュされますが、ソースデータはSnowflakeに残ります。
 
 これでオーディエンスにデータが入力され、オーディエンスは AEP エコシステム内からターゲット設定できます。
 
