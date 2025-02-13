@@ -4,7 +4,7 @@ description: AEM CS 環境のセットアップ
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -77,7 +77,7 @@ URL には、更新が必要な 3 つの部分があります
 
 `https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
 
-XXX はAEM CS オーサー環境の URL に置き換える必要があります。
+XXX は、AEM CS オーサー環境の URL に置き換える必要があります。
 
 YYY は GitHub ユーザーアカウントに置き換える必要があります。
 
@@ -186,7 +186,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 これで、このウィンドウを閉じることができます。
 
 
-## 2.1.3.4 Publish CitiSignal アセット
+## 2.1.3.4 CitiSignal アセットの公開
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
 
@@ -200,7 +200,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-その後、オーサー環境が表示されます。 **サイト** をクリックします。
+その後、オーサー環境が表示されます。 **Assets** をクリックします。
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 2.1.3.6 Publishシティシグナルのウェブサイト
+## 2.1.3.6 CitiSignal web サイトの公開
 
 次に、**CitiSignal** の前にあるチェックボックスをクリックします。 次に、「**公開を管理**」をクリックします。
 
