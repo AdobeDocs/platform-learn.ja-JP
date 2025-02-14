@@ -4,9 +4,9 @@ description: Foundation - データ取り込み – スキーマの設定と識�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./images/sb1.png)
 
-Adobe Experience Platformで、画面の左側のメニューにある **[!UICONTROL スキーマ]** をクリックします。 使用可能な [!UICONTROL  スキーマ ] のリストが表示されます。
+Adobe Experience Platformで、画面の左側のメニューにある **[!UICONTROL スキーマ]** をクリックします。 使用可能な [!UICONTROL  スキーマ ] のリストが表示されます。 新しいスキーマを作成してください。 新しいスキーマを作成するには、「**[!UICONTROL + スキーマを作成]**」をクリックします。
 
 ![データ取得](./images/menuschemas.png)
-
-新しいスキーマを作成してください。 新しいスキーマを作成するには、「**[!UICONTROL + スキーマを作成]**」をクリックします。
-
-![データ取得](./images/createschema.png)
 
 「**手動**」を選択し、「**選択**」をクリックします。
 
@@ -156,8 +152,8 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 次のオブジェクト定義を使用して、この新しいフィールドの情報を入力する必要があります。
 
-- フィールド名：**[!UICONTROL identification]**
-- 表示名：**[!UICONTROL identification]**
+- フィールド名: **`--aepUserLdap--_identification`**
+- 表示名：**`--aepUserLdap--_identification`**
 - タイプ：**[!UICONTROL オブジェクト]**
 - フィールドグループ：**`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/sureyps.png)
 
-### 顧客の業務内容
+## この顧客の業務内容
 
 質問に対する回答のキャプチャ **この顧客が行うこと組織のア** ット設定は、例えば、製品ページの製品表示を通じて行われます。
 
@@ -291,7 +287,7 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 その質問にどのような回答を提供できるかを指定するには、[!UICONTROL  フィールドグループ ] を定義する必要があります。 [!UICONTROL  フィールドグループ ] は、[!UICONTROL ExperienceEvent] クラスの拡張機能で、非常に特殊な設定を持ちます。 例えば、顧客が閲覧したり買い物かごに追加したりした商品の種類に関する情報は、[!UICONTROL  フィールドグループ ]**Commerceの詳細** に含まれています。
 
-次に、この顧客の行動をどのように特定するかを組織で決定する必要があります。 Web サイトでのインタラクションについて話しているので、組織が顧客を知っている可能性がありますが、未知の匿名の訪問者が Web サイトでアクティブである可能性も同様に高くなります。 したがって、メールアドレスのような識別子は使用できません。 この場合、組織では、[!UICONTROL Experience CloudID （ECID） ] をプライマリ識別情報として使用することになるでしょう。
+次に、この顧客の行動をどのように特定するかを組織で決定する必要があります。 Web サイトでのインタラクションについて話しているので、組織が顧客を知っている可能性がありますが、未知の匿名の訪問者が Web サイトでアクティブである可能性も同様に高くなります。 したがって、メールアドレスのような識別子は使用できません。 この場合、組織では、[!UICONTROL Experience Cloud ID （ECID） ] をプライマリ識別情報として使用することになるでしょう。
 
 最後に、データが取得されたチャネルを区別することが重要です。 ここでは、Web サイトのインタラクションについて説明します。定義する必要があるスキーマは、インタラクションデータがキャプチャされた **場所** を反映する必要があります。 チャネルは、どのデータを取り込むかに影響を与える重要な役割も果たします。 そのため、収集されるチャネル、プライマリ識別子、データのタイプのすべての組み合わせに対してスキーマのを定義することがベストプラクティスです。
 
@@ -305,13 +301,9 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 ![データ取得](./images/sb1.png)
 
-Adobe Experience Platformで、画面の左側のメニューにある **[!UICONTROL スキーマ]** をクリックし、**参照** に移動します。
+Adobe Experience Platformで、画面の左側のメニューにある **[!UICONTROL スキーマ]** をクリックし、**参照** に移動します。 新しいスキーマを作成してください。 新しいスキーマを作成するには、**[!UICONTROL + スキーマを作成]** ボタンをクリックします。
 
 ![データ取得](./images/menuschemas.png)
-
-[!UICONTROL  スキーマ ] には、既存のスキーマがすべて表示されます。 新しいスキーマを作成してください。 新しいスキーマを作成するには、**[!UICONTROL + スキーマを作成]** ボタンをクリックします。
-
-![データ取得](./images/schemasee.png)
 
 「**手動**」を選択し、「**選択**」をクリックします。
 
@@ -390,8 +382,8 @@ Adobe Experience Platformで、画面の左側のメニューにある **[!UICON
 
 新しいフィールドを定義する場合に使用します。
 
-- フィールド名：**[!UICONTROL identification]**
-- 表示名：**[!UICONTROL identification]**
+- フィールド名: **`--aepUserLdap--_identification`**
+- 表示名：**`--aepUserLdap--_identification`**
 - タイプ：**[!UICONTROL オブジェクト]**
 - フィールドグループ：`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 

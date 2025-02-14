@@ -4,9 +4,9 @@ description: 基盤 – FAC - スキーマ、データモデル、リンクの�
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 5%
 
 ---
@@ -132,7 +132,7 @@ Snowflakeで、**管理者/アカウント** に移動します。 アカウン�
 
 ![FAC](./images/fdb16.png)
 
-### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
+### ユーザー – ユーザー
 
 これで、スキーマ間のリンクの定義を開始できます。 リンクの定義を開始するには、「**リンクを作成**」をクリックする必要があります。
 
@@ -144,7 +144,7 @@ Snowflakeで、**管理者/アカウント** に移動します。 アカウン�
 
 ![FAC](./images/fdb18.png)
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### 世帯 – 人物
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
@@ -154,7 +154,7 @@ Snowflakeで、**管理者/アカウント** に移動します。 アカウン�
 
 ![FAC](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### ユーザー – MONTHLY_DATA_USAGE
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
@@ -165,7 +165,7 @@ Snowflakeで、**管理者/アカウント** に移動します。 アカウン�
 ![FAC](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### ユーザー – 世帯
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
@@ -175,7 +175,7 @@ Snowflakeで、**管理者/アカウント** に移動します。 アカウン�
 
 ![FAC](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### ユーザー – MOBILE_DATA_USAGE
 
 その後、ここに戻ります。 **リンクを作成** をクリックして、別のリンクを作成します。
 
