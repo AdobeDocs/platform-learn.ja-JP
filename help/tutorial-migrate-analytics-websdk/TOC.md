@@ -10,40 +10,40 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 6311417699d49cb2a9bbb67e221b9054a8b37605
+source-git-commit: 4fc3d8815c2f0f5bed7bb0d1fe8cfcd9b1599762
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 5%
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
 
 # タグを使用したAdobe Analyticsの Web SDKへの移行 {#migrate-analytics-to-websdk}
 
-+ [移行の概要](migration-to-websdk-overview.md)
++ [1.移行の概要](migration-to-websdk-overview.md)
 
-+ [検証レポートスイートの作成](create-a-validation-report-suite.md)
++ [2.検証レポートスイートの作成](create-a-validation-report-suite.md)
 
-+ [データストリームの作成](create-and-configure-the-analytics-datastream.md)
++ [3. データストリームを作成する](create-and-configure-the-analytics-datastream.md)
 
-+ [Web SDK拡張機能を追加します](add-and-configure-the-web-sdk-extension.md)
++ [4. Web SDK拡張機能を追加する](add-and-configure-the-web-sdk-extension.md)
 
-+ [可変データ要素の作成](create-a-variable-data-element.md)
++ [5.変数データ要素の作成](create-a-variable-data-element.md)
 
-+ [デフォルトのページロードルールを移行](migrate-your-default-page-load-rule.md)
++ [6. デフォルトのページ読み込みルールの移行](migrate-your-default-page-load-rule.md)
 
-+ [カスタムコードの移行](migrate-custom-code-to-the-web-sdk.md)
++ [7. カスタムコードの移行](migrate-custom-code-to-the-web-sdk.md)
 
-+ [開発ライブラリの構築](build-the-implementation-changes.md)
++ [8.開発ライブラリの構築](build-the-implementation-changes.md)
 
-+ [デバッグと検証](debug-and-validate-your-web-sdk-migration.md)
++ [9. デバッグと検証](debug-and-validate-your-web-sdk-migration.md)
 
-+ [追加のページルールを移行](migrate-additional-page-rules.md)
++ [10.追加のページルールの移行](migrate-additional-page-rules.md)
 
-+ [カスタム リンク ルールを移行する](migrate-custom-link-rules.md)
++ [11. カスタムリンクルールを移行する](migrate-custom-link-rules.md)
 
-+ [グローバル変数の移行](migrate-global-variables.md)
++ [12. グローバル変数を移行する](migrate-global-variables.md)
 
-+ [Analytics 拡張機能の削除](delete-analytics-extension-items.md)
++ [13. Analytics 拡張機能を削除する](delete-analytics-extension-items.md)
 
-+ [ステージング環境および実稼動環境へのPublish](publish-the-migration.md)
++ [14. ステージング環境および実稼動環境に公開](publish-the-migration.md)
