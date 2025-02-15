@@ -9,9 +9,9 @@ duration: 143
 last-substantial-update: 2024-06-14T00:00:00Z
 jira: KT-15749
 exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
-source-git-commit: 21e6e5a29edbd5e4c74a4f5978d54b43cafc2c03
+source-git-commit: 171ce72c69e226bdbf100f50fd1dfd7dcdb6bdd7
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '527'
 ht-degree: 6%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 6%
 
 Real-Time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform ベースのアプリケーションで AI アシスタントを使用して実行できることを説明します。 詳しくは、[AI アシスタントのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 
 ## 基本を学ぶ
 
-これらのリソースは、AI アシスタントの設定とその基本機能の学習に役立ちます。
+AI アシスタントの設定とその基本機能を説明します。
 
 <!-- CARDS
 * access.md
@@ -38,7 +38,7 @@ Real-Time Customer Data Platform、Journey Optimizer、Customer Journey Analytic
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="AI アシスタントにアクセスする" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1739486446641" alt="AI アシスタントにアクセスする"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1739581228170" alt="AI アシスタントにアクセスする"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Real-Time Customer Data Platform、Journey Optimizer、Customer Journey Analytic
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="AI アシスタントの検出性パネルの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1739486446652" alt="AI アシスタントの検出性パネルの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1739581228181" alt="AI アシスタントの検出性パネルの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Real-Time Customer Data Platform、Journey Optimizer、Customer Journey Analytic
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="AI アシスタントからの応答を検証" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1739486446628" alt="AI アシスタントからの応答を検証"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1739581228156" alt="AI アシスタントからの応答を検証"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,43 +105,7 @@ Real-Time Customer Data Platform、Journey Optimizer、Customer Journey Analytic
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## 製品知識のための AI アシスタント
-
-AI アシスタントは、新製品を学習したり、使い慣れた製品に関する迅速な回答を得たりするための便利なツールです。
-
-<!-- CARDS
-* onboard.md
-* product-knowedge.md
--->
-<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
-<div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Use AI Assistant to reduce onboarding time">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="onboard.md" title="AI アシスタントを使用したオンボーディング時間の短縮" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1739486446837" alt="AI アシスタントを使用したオンボーディング時間の短縮"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="onboard.md" target="_blank" rel="referrer" title="AI アシスタントを使用したオンボーディング時間の短縮">AI アシスタントを使用したオンボーディング時間の短縮 </a>
-                    </p>
-                    <p class="is-size-6">AI アシスタントを使用して新機能をすばやく追加し、オンボーディング時間を短縮する方法を説明します。</p>
-                </div>
-                <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-## ユースケース
+## 運用インサイト用 AI アシスタント
 
 AI アシスタントが、Platform アカウントの管理やマーケティング戦術の改善に役立つ他のユースケースが多数あります。
 
@@ -149,6 +113,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
 * operational-insights.md
 * find-unused-audiences.md
 * impact-analysis.md
+    {description = Learn how AI Assistant can help you detect potential impacts before changing shared objects. Changes to shared objects like attributes and audiences can disrupt workflows for other teams, complicating processes, and risk important marketing efforts.}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -157,7 +122,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="AI アシスタントで運用インサイトを取得" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1739486447052" alt="AI アシスタントで運用インサイトを取得"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1739581228363" alt="AI アシスタントで運用インサイトを取得"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -180,7 +145,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI アシスタント – オーディエンスクリーンアップのユースケース" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1739486447042" alt="AI アシスタント – オーディエンスクリーンアップのユースケース"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1739581228353" alt="AI アシスタント – オーディエンスクリーンアップのユースケース"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -203,7 +168,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="AI アシスタントによる影響分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1739486447030" alt="AI アシスタントによる影響分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1739581228341" alt="AI アシスタントによる影響分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -213,7 +178,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="impact-analysis.md" target="_blank" rel="referrer" title="AI アシスタントによる影響分析">AI Assistant による影響分析 </a>
                     </p>
-                    <p class="is-size-6">このビデオでは、Adobe Experience Platform内の AI アシスタントが影響分析でより効果的になるためにどのように役立つかを説明します。 属性やオーディエンスなどの共有オブジェクトを変更すると、他のチームのワークフローが中断され、プロセスが複雑になり、重要なマーケティング活動のリスクが高まる可能性があります。</p>
+                    <p class="is-size-6">共有オブジェクトを変更する前に、AI アシスタントを使用して潜在的な影響を検出する方法を説明します。 属性やオーディエンスなどの共有オブジェクトを変更すると、他のチームのワークフローが中断され、プロセスが複雑になり、重要なマーケティング活動のリスクが高まる可能性があります。</p>
                 </div>
                 <a href="impact-analysis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
@@ -224,12 +189,72 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
+## 製品知識のための AI アシスタント
+
+AI アシスタントは、新製品を学習したり、使い慣れた製品に関する迅速な回答を得たりするための便利なツールです。
+
+<!-- CARDS
+* onboard.md
+* product-knowledge.md
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Use AI Assistant to reduce onboarding time">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="onboard.md" title="AI アシスタントを使用したオンボーディング時間の短縮" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1739581228526" alt="AI アシスタントを使用したオンボーディング時間の短縮"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="onboard.md" target="_blank" rel="referrer" title="AI アシスタントを使用したオンボーディング時間の短縮">AI アシスタントを使用したオンボーディング時間の短縮 </a>
+                    </p>
+                    <p class="is-size-6">AI アシスタントを使用して新機能をすばやく追加し、オンボーディング時間を短縮する方法を説明します。</p>
+                </div>
+                <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Learn Experience Platform applications with AI Assistant">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="product-knowledge.md" title="AI アシスタントでExperience Platform アプリケーションを学ぶ" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1739581228513" alt="AI アシスタントでExperience Platform アプリケーションを学ぶ"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="product-knowledge.md" target="_blank" rel="referrer" title="AI アシスタントでExperience Platform アプリケーションを学ぶ">AI アシスタントでExperience Platform アプリケーションを学ぶ </a>
+                    </p>
+                    <p class="is-size-6">AI アシスタントからAdobe Experience Platform アプリケーションについて説明します。</p>
+                </div>
+                <a href="product-knowledge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
 ## セキュリティ
 
-AI アシスタントのセキュリティ機能について説明します
+AI アシスタントのセキュリティ機能について説明します。
 
 <!-- CARDS
 * security-overview.md
+* https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -238,7 +263,7 @@ AI アシスタントのセキュリティ機能について説明します
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI アシスタントのセキュリティの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1739486447236" alt="AI アシスタントのセキュリティの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1739581229427" alt="AI アシスタントのセキュリティの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -252,6 +277,29 @@ AI アシスタントのセキュリティ機能について説明します
                 </div>
                 <a href="security-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf" title="" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://cdn.experienceleague.adobe.com/thumb/exl-cards/default.png" alt=""
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf" target="_blank" rel="referrer" title=""></a>
+                    </p>
+                    <p class="is-size-6">未定義</p>
+                </div>
+                <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
                 </a>
             </div>
         </div>
