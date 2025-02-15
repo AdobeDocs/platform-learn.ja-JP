@@ -1,17 +1,17 @@
 ---
-title: はじめに – Experience Leagueドキュメント用のChrome拡張機能のインストール
-description: はじめに – Experience Leagueドキュメント用のChrome拡張機能のインストール
+title: はじめに – Experience League ドキュメント用のChrome拡張機能のインストール
+description: はじめに – Experience League ドキュメント用のChrome拡張機能のインストール
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Experience Leagueドキュメント用のChrome拡張機能のインストール
+# Experience League ドキュメント用のChrome拡張機能のインストール
 
 ## Chrome拡張機能について
 
@@ -84,7 +84,7 @@ IMS 組織 ID はAdobe Experience Cloud インスタンスの一意の ID で、
 
 IMS 組織 ID の検索は、複数の方法で実行できます。 不明な場合は、インスタンスのシステム管理者の 1 人に ID を確認してください。
 
-[Admin Console](https://https://adminconsole.adobe.com/) に移動すると見つかる場合があります。このフォルダーでは、URL の一部として見つけることができます。
+[Admin Console](https://https://adminconsole.adobe.com/) に移動すると見つかることがあります。この場合、URL の一部として見つけることができます。
 
 ![DSN](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ Chrome 拡張機能でアクティブ化された環境に基づいて、この�
 
 ![DSN](./images/mod7.png)
 
-次の手順：[ 次にデモシステムを使用：Adobe Experience Platform Data Collection クライアントプロパティを設定する ](./ex2.md)
+## 次の手順
 
-[「はじめに」に戻る](./getting-started.md)
+[Adobe Experience Platform Data Collection クライアントプロパティを設定する次に、デモシステムを使用 ](./ex2.md) に移動します。
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ はじめに ](./getting-started.md){target="_blank"} に戻る
+
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

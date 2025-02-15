@@ -4,7 +4,7 @@ description: Foundation - データ取得 – オフラインソースからの�
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 6%
@@ -236,19 +236,19 @@ Source スキーマフィールド **last_name** は、ターゲットフィー�
 
 #### consents.marketing.email.val
 
-Source スキーマフィールド **last_name** は、ターゲットフィールド **consents.marketing.email.val** にリンクする必要があります。
+Source スキーマフィールド **consent.email** は、ターゲットフィールド **consents.marketing.email.val** にリンクする必要があります。
 
 ![データ取得](./images/cons1.png)
 
 #### consents.marketing.commercialEmail.val
 
-Source スキーマフィールド **last_name** は、ターゲットフィールド **consents.marketing.commercialEmail.val** にリンクする必要があります。
+Source スキーマフィールド **consent.commercialEmail** をターゲットフィールド **consents.marketing.commercialEmail.val** にリンクする必要があります。
 
 ![データ取得](./images/cons2.png)
 
 #### consents.marketing.any.val
 
-Source スキーマフィールド **last_name** は、ターゲットフィールド **consents.marketing.any.val** にリンクする必要があります。
+Source スキーマフィールド **consent.any** は、ターゲットフィールド **consents.marketing.any.val** にリンクする必要があります。
 
 ![データ取得](./images/cons3.png)
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -135,10 +135,6 @@ Firefly カスタムモデルにアクセスするには、カスタムモデル
 ![Firefly カスタムモデル ](./images/ffcm22.png){zoomable="yes"}
 
 ## 1.1.4.4 Firefly サービスのカスタムモデル API の操作
-
->[!IMPORTANT]
->
->Adobeの従業員の場合は、こちらの手順に従って [PostBuster](./../../../postbuster.md) を使用してください。
 
 演習 1.1.1 Firefly サービスの概要では、次のファイルをダウンロードしました：[postman-ff.zip](./../../../assets/postman/postman-ff.zip) をローカルデスクトップに作成し、そのコレクションをPostmanに読み込みました。
 

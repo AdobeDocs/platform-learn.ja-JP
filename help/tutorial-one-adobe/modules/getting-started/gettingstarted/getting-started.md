@@ -4,10 +4,10 @@ description: はじめに – 1 つのAdobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## 演習
 
-[Experience Leagueドキュメント用のChrome拡張機能のインストール](./ex1.md)
+[Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
 
 この演習では、Chrome拡張機能をインストールして設定し、チュートリアルコンテンツのパーソナライズに使用します。
 
@@ -47,6 +47,26 @@ ht-degree: 3%
 [モバイルアプリの使用](./ex5.md)
 
 この演習では、デモやイネーブルメントに使用できるようにモバイルアプリケーションを設定します。
+
+[Adobe I/O プロジェクトの設定](./ex6.md)
+
+この演習では、様々なAdobe I/O API エンドポイントとやり取りするために使用するAdobe プロジェクトを設定します。
+
+[オプション 1:Postmanの設定](./ex7.md)
+
+>[!NOTE]
+>
+>Adobeの従業員でない場合は、手順に従ってPostmanをインストールしてください。
+
+この演習では、様々なAdobe API エンドポイントとやり取りするPostman環境を準備します
+
+[オプション 2:PostBuster セットアップ](./ex8.md)
+
+>[!NOTE]
+>
+>Adobeの社員の場合は、手順に従って PostBuster をインストールしてください。
+
+この演習では、様々なAdobe API エンドポイントとやり取りするための PostBuster 環境を準備します
 
 ![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

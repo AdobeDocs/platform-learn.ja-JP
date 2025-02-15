@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
@@ -316,10 +316,6 @@ Azure ストレージアカウントからプログラムによって長期的�
    - `AZURE_STORAGE_SAS_WRITE`：`?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Postmanの変数
-
->[!IMPORTANT]
->
->Adobeの従業員の場合は、こちらの手順に従って [PostBuster](./../../../postbuster.md) を使用してください。
 
 上記の節でわかるように、読み取りトークンと書き込みトークンの両方に共通の変数がいくつかあります。
 

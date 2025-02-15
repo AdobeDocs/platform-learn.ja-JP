@@ -4,16 +4,16 @@ description: はじめに – 次にデモシステムを使用して Launch プ
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 1%
 
 ---
 
 # Adobe Experience Platform Data Collection クライアントプロパティを設定する場合は、次にデモシステムを使用してください
 
-このチュートリアルでは、このチュートリアルの学習内容を視覚化し、安全な環境で設定をテストできるようにするために、Adobeの Demo System Next ツールを使用しています。 このチュートリアルを最大限に活用するには、次にデモシステムと統合するように AEP インスタンスを設定する必要があります。
+このチュートリアルでは、学習内容を視覚化し、安全な環境で設定をテストできるようにするため、Adobeのデモシステムの次のツールを使用します。 このチュートリアルを最大限に活用するには、次にデモシステムと統合するように AEP インスタンスを設定する必要があります。
 
 デモシステムにアクセスできるようになったら、次の手順に進みます。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsn2.png)
 
-ポップアップで、データ収集プロパティと Experience Builder プロジェクトの名前を入力します。 命名規則 **1Adobe（DD/MM/YYYY）** を使用してください。 ヒント：LDAP は自動的に追加されます。自分で追加する必要はありません。
+ポップアップで、データ収集プロパティと Experience Builder プロジェクトの名前を入力します。 次の命名規則を使用してください：**1 つのAdobe（DD/MM/YYYY）**。 ヒント：LDAP は自動的に追加されます。自分で追加する必要はありません。
 
 「**開始**」をクリックします。
 
@@ -55,8 +55,10 @@ ht-degree: 0%
 
 この画面は次の手順で必要になるので、開いたままにしてください。
 
-次の手順：[ データストリームを作成する ](./ex3.md)
+## 次の手順
 
-[「はじめに」に戻る](./getting-started.md)
+[ データストリームの作成 ](./ex3.md) に移動します。
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ はじめに ](./getting-started.md){target="_blank"} に戻る
+
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

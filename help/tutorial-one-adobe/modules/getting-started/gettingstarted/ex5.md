@@ -4,10 +4,10 @@ description: はじめに – モバイルアプリの使用
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->iOS デバイスにアプリを初めてインストールした後、アプリを開こうとすると、「**信頼できないエンタープライズデベロッパー**」というエラーメッセージが表示される場合があります。 この問題を修正するには、**Settings/General/VPN &amp; Device Management/Adobe Systems Inc.** に移動し、**Trust Adobe Systems Inc.** をクリックする必要があります。
+>iOS デバイスにアプリを初めてインストールした後、アプリを開こうとすると、「**信頼できないエンタープライズデベロッパー**」というエラーメッセージが表示される場合があります。 これを修正するには、**設定/一般/VPN とデバイスの管理/Adobe Systems Inc.** に移動し、**Trust Adobe Systems Inc.** をクリックする必要があります。
 
 アプリがインストールされると、デバイスのホーム画面に表示されます。 アイコンをクリックして、アプリを開きます。
 
@@ -81,8 +81,10 @@ QR コードを含むこのポップアップが表示されます。 モバイ�
 
 ![DSN](./images/mobileappn8.png)
 
-これで「はじめに」モジュールが完了し、次の演習を開始する準備が整いました。
+## 次の手順
 
-[「はじめに」に戻る](./getting-started.md)
+[Adobe I/O プロジェクトの設定 ](./ex6.md) に移動します。
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ はじめに ](./getting-started.md){target="_blank"} に戻る
+
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

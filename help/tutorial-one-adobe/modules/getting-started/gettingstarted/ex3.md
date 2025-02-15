@@ -4,10 +4,10 @@ description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 1%
+source-wordcount: '827'
+ht-degree: 2%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 1%
 
 その後、これが表示されます。 ここで、設定した正しいサンドボックスとデータストリームを選択する必要があります。 使用するサンドボックスは `--aepSandboxName--` で、データストリームは `--aepUserLdap-- - Demo System Datastream (Mobile)` と呼ばれます。
 
-**Edge Network ドメイン** の場合は、既定のドメインを使用してください。
+**Edge Network ドメイン** の場合は、デフォルトのドメインを使用してください。
 
 「**保存**」をクリックして変更を保存します。
 
@@ -173,8 +173,10 @@ ht-degree: 1%
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig17ma.png)
 
-次の手順：[Web サイトの使用 ](./ex4.md)
+## 次の手順
 
-[「はじめに」に戻る](./getting-started.md)
+[Web サイトを使用 ](./ex4.md) に移動します。
 
-[すべてのモジュールに戻る](./../../../overview.md)
+[ はじめに ](./getting-started.md){target="_blank"} に戻る
+
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
