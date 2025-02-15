@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -290,6 +290,8 @@ Azure ストレージアカウントからプログラムによって長期的�
 
 1. **権限** で、次の必要な権限を選択します。
 
+   - **読取り**
+   - **リスト**
    - **追加**
    - **作成**
    - **Write**
@@ -343,11 +345,36 @@ Azure ストレージアカウントからプログラムによって長期的�
 
    ![Azure ストレージ ](./images/az105.png){zoomable="yes"}
 
-   前の演習の 1 つで、リクエスト **2}Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
+### PostBuster の変数
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+上記の節でわかるように、読み取りトークンと書き込みトークンの両方に共通の変数がいくつかあります。
 
-   ![Azure ストレージ ](./images/az24.png){zoomable="yes"}
+次に、上記の SAS トークンのさまざまな要素を格納する変数を PostBuster に作成する必要があります。 両方の URL で同じ値がいくつか存在します。
+
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`：`?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+PostBuster を開きます。 「**Base Environment**」を選択し、「**edit**」アイコンをクリックして Base Environment を開きます。
+
+![Azure ストレージ ](./images/pbbe1.png)
+
+次に、4 つの空の変数が表示されます。 Azure ストレージアカウントの詳細をここに入力します。
+
+![Azure ストレージ ](./images/pbbe2.png)
+
+ベース環境ファイルは次のようになります。 「**閉じる**」をクリックします。
+
+![Azure ストレージ ](./images/pbbe3.png)
+
+### 設定のテスト
+
+前の演習の 1 つで、リクエスト **2}Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
+
+    &#39;&quot;url&quot;: &quot;https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D&quot;&#39;
+    
+    ![Azure ストレージ ] （./images/az24.png） {zoomable="yes"}
 
 1. URL を次のように変更します。
 

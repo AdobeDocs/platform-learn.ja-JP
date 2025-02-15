@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -17,65 +17,27 @@ ht-degree: 0%
 
 Photoshop API とFirefly サービスの使用方法について説明します。
 
-## 1.1.3.1 Adobe I/O統合の更新
+## 1.1.3.1 前提条件
 
-1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
+この演習を続ける前に、[Adobe I/O プロジェクト ](./../../../modules/getting-started/gettingstarted/ex6.md) の設定を完了し、[Postman](./../../../modules/getting-started/gettingstarted/ex7.md) や [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md) などの API を操作するアプリケーションも設定しておく必要があります。
 
-![Adobe I/O新規統合 ](./images/iohome.png){zoomable="yes"}
+## 1.1.3.2 Adobe I/O - access_token
 
-1. **プロジェクト** に移動し、前の演習で作成したプロジェクト（`--aepUserLdap-- Firefly`）を選択します。
+**Adobe I/O - OAuth** コレクションで、「**POST - アクセストークンを取得**」という名前のリクエストを選択し、「**送信**」を選択します。 応答には、新しい **accestoken** を含める必要があります。
 
-![Azure ストレージ ](./images/ps1.png){zoomable="yes"}
+![Postman](./images/ioauthresp.png){zoomable="yes"}
 
-1. 「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
+## 1.1.3.3 PSD ファイルをプログラムで操作する
 
-![Azure ストレージ ](./images/ps2.png){zoomable="yes"}
+[citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} をデスクトップにダウンロードします。
 
-1. **Creative Cloud** を選択してから、**Photoshop - Firefly サービス** を選択してください。 「**次へ**」を選択します。
-
-![Azure ストレージ ](./images/ps3.png){zoomable="yes"}
-
-1. 「**次へ**」を選択します。
-
-![Azure ストレージ ](./images/ps4.png){zoomable="yes"}
-
-次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
-
-1. **デフォルトのFirefly サービス設定** および **デフォルトのCreative Cloud Automation Services 設定** を選択します。
-
-1. **設定済み API を保存** を選択します。
-
-![Azure ストレージ ](./images/ps5.png){zoomable="yes"}
-
-これで、Adobe I/O プロジェクトが、Photoshop API とFirefly サービス API で動作するように更新されました。
-
-![Azure ストレージ ](./images/ps6.png){zoomable="yes"}
-
-## 1.1.3.2 PSD ファイルをプログラムで操作する
-
-1. [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} をデスクトップにダウンロードします。
-
-1. Photoshopで **citisignal-fiber.psd** を開きます。
+Photoshopで **citisignal-fiber.psd** を開きます。
 
 ![Azure ストレージ ](./images/ps7.png){zoomable="yes"}
 
 **レイヤー** パネルでは、ファイルのデザイナーが各レイヤーに一意の名前を付けました。 PhotoshopでPSD ファイルを開くと、レイヤー情報を表示できますが、プログラムで開くこともできます。
 
 最初の API リクエストをPhotoshop API に送信しましょう。
-
-1. Postmanでは、API リクエストをPhotoshopに送信する前に、Adobe I/Oへの認証が必要です。前のリクエストを「**POST - アクセストークンの取得**」という名前で開きます。
-
-1. **Params** に移動し、パラメーター **Scope** が正しく設定されていることを確認します。 **範囲** の **値** は次のようになります。
-
-`openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
-
-1. **送信** を選択します。
-
-![Azure ストレージ ](./images/ps8.png){zoomable="yes"}
-
-これで、Photoshop API とやり取りするための有効なアクセストークンが作成されました。
-
-![Azure ストレージ ](./images/ps9.png){zoomable="yes"}
 
 ### Photoshop API - Hello World
 

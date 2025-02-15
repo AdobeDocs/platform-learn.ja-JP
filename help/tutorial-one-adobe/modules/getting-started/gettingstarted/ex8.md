@@ -3,9 +3,10 @@ title: はじめに – Postmanの設定
 description: はじめに – Postmanの設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '430'
 ht-degree: 3%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobeの従業員でない場合は、手順に従って [Postmanをインストール ](./ex7.md) してください。 以下の手順は、Adobeのユーザーのみを対象としています。 既にPostmanを設定している場合は、この演習をスキップして [ インストールするアプリケーション ](./ex9.md) に進んでください。
+>Adobeの従業員でない場合は、手順に従って [Postmanをインストール ](./ex7.md) してください。 以下の手順は、Adobeのユーザーのみを対象としています。
 
 ## PostBuster のインストール
 
