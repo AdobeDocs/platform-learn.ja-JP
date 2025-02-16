@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2702
 thumbnail: 27301.jpg
 exl-id: fc7aad9e-8eaf-4101-b41e-a0d9b127f8be
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。 製品ドキュメントについて詳しくは、[ リアルタイム顧客プロファイルへのデータの追加 ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html) および [API を使用したプロファイルのデータセットの設定 ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on&enablevpops)

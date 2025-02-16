@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-7939
 thumbnail: 333592.jpg
 exl-id: d0d23739-3a3a-4938-a400-684f36b0ae82
-source-git-commit: 9a6c0487427673a6728e1f4a02e54f0f36e67f9f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 1%
@@ -22,4 +22,4 @@ ht-degree: 1%
 >
 >サンドボックス間でスキーマや他のオブジェクトを移動する、より簡単でインターフェイス中心のプロセスが 2023 年末に導入されました。代わりにを使用することをお勧めします。 [ サンドボックス間でのオブジェクトのコピー ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)

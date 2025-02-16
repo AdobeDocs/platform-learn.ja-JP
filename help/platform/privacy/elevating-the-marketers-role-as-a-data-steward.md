@@ -9,7 +9,7 @@ thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%
@@ -24,4 +24,4 @@ ht-degree: 18%
 * 消費者の信頼に導き、消費者ジャーニー内でシームレスに統合される同意ベースの戦略を組み込む方法
 * マーケターの役割内でのデータスチュワードの責任における効率と信頼性
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on&enablevpops)

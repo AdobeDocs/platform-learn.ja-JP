@@ -9,7 +9,7 @@ jira: KT-9261
 thumbnail: 338252.jpg
 exl-id: 8432f6d5-bc96-404b-ae5f-7cbef7e16abb
 last-substantial-update: 2024-02-29T00:00:00Z
-source-git-commit: 4f363a3932ca3b2666c220c1e5c79d2d94242b96
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 0%
@@ -20,5 +20,5 @@ ht-degree: 0%
 
 アカウントオーディエンスの作成とアクティブ化など、[!DNL Real-Time Customer Data Platform] の [!DNL B2B] エディションと [!DNL B2P] エディションのAccount-Based Marketing機能について説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

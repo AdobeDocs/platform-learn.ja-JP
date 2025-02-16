@@ -8,7 +8,7 @@ jira: KT-10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2024-05-29T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: 252ef67017850c9ac3710d34ffe315463a406828
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Adobe Experience Platformのデータハイジーン機能を使用して、デ�
 データセット削除を使用すると、データスチュワードとデータエンジニアがデータセットの有効期限を設定できます。 詳しくは、[ データハイジーンのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=ja) を参照してください。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
 
 >[!NOTE]
 >

@@ -9,14 +9,14 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 1%
 
 ---
 
-# 4.4 プレパラソン デ ダドス エム Customer Journey Analytics
+# 4.4 プレパラソン・デ・ダドス エム・Customer Journey Analytics
 
 ## Objetivos
 
@@ -28,13 +28,13 @@ ht-degree: 1%
 
 Analysis Workspaceは todas を limitaçóóes típicas de um único relatório do Analytics として削除します。 Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados.（エレ・フォルネセ・ウマ・テラ・ロブスタ・エ・フレキシベル・パラ・クリアー・プロジェトス・デ・アナリティクス・ペルソナリザドス） Arraste e e solte qualquer número de tabelas de dados, visualizaçóes e componentes （dimensóes, métricas, segmentos e granularidadadades de tempo） para um projeto. （英語） Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo e falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-Customer Journey Analytics・トラズ・エッサ・ソリュサオ・アレム・ドス・ダドス・ダ・プラタフォルマ É altamente recomendável assistir a este vídeo de visão geral de quatro minutos:
+Customer Journey Analytics・トラズ・エッサ・ソリュサオ・アレム・ドス・ダドス・ダ・プラタフォルマ。 É altamente recomendável assistir a este vídeo de visão geral de quatro minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Se você nunca usou o Analysis Workspace antes, recomendamos este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### クリースープロエト
 
@@ -129,7 +129,7 @@ Não se esqueça de **Salvar** Métrica calculada の略。
 
 ### フィルタ：Dimensóes calculadas
 
-Os cálculos não devem ser apenas para métricas.（オスカルロス・ナン・デヴェム・サー・アペナス・パラ・メトリカス） Antes de iniciar qualquer análise, também é interessante criar algumas **計算Dimension**. Isso significa、essencialmente、**segments** no Adobe Analytics Customer Journey Analyticsなく、são chamados de **Filters** を評価します。
+Os cálculos não devem ser apenas para métricas.（オスカルロス・ナン・デヴェム・サー・アペナス・パラ・メトリカス） Antes de iniciar qualquer análise, também é interessante criar algumas **計算寸法**. Isso significa、essencialmente、**segments** no Adobe Analytics Customer Journey Analyticsは存在しない、セグメントス・サンシャマドス・デ **フィルター**。
 
 ![ デモ ](./images/prfilters.png)
 
@@ -155,7 +155,7 @@ Essas Dimensóes de tempo calculado ajudarão analistas e usuários de negócios
 
 Agora você concluiu o exercício de preparação de dados usando o Analysis Workspace do CJA. （英語）
 
-Próxima etapa: [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
+Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
 [レトルナル パラ フルクソ デ ウスアリオ 4](./uc4.md)
 

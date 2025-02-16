@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Experience Platformでは、複数のソースからのデータを統合�
 **データアーキテクト** は、このチュートリアル以外で結合ポリシーを作成する必要があります。
 
 演習を開始する前に、この短いビデオを視聴して結合ポリシーの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 必要な権限
 

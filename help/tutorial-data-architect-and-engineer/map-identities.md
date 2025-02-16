@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Adobe Experience Platform ID サービスを利用すると、デバイスやシ
 **データアーキテクト** は、このチュートリアル以外で ID をマッピングする必要があります。
 
 演習を開始する前に、この短いビデオを視聴して、Adobe Experience Platformでの ID について詳しく確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ ID 名前空間 `Luma CRM Id` を作成しましょう。
 
 >[!NOTE]
 >
->Web SDK で収集されたデータは、スキーマの ID フィールドにラベルを付ける一般的な方法の例外です。 Web SDK は、ID マップを使用して *実装側* の ID にラベルを付けるので、Luma web サイトに Web SDK を実装する際に `Luma Web Events Schema` の ID を決定します。 この後のレッスンでは、Experience Cloud訪問者 ID （ECID）をプライマリ ID として収集し、crmId をセカンダリ ID として収集します。
+>Web SDKで収集されるデータは、スキーマ内の ID フィールドにラベルを付ける一般的な方法の例外です。 Web SDKは、ID マップを使用して *実装側* の ID にラベルを付けます。そのため、Luma web サイトに web SDKを実装する際に、`Luma Web Events Schema` の ID を決定します。 この後のレッスンでは、Experience Cloud訪問者 ID （ECID）をプライマリ ID として収集し、crmId をセカンダリ ID として収集します。
 
 プライマリ ID を選択すると、両方とも `loyaltyId` を識別子として使用するの `Luma CRM Schema`、`Luma Offline Purchase Events Schema` にどのように接続できるかがわかります。 しかし、オフラインでの購入をオンライン行動と結び付けるにはどうすればよいでしょうか？ 製品カタログで購入した製品を分類するにはどうすればよいですか？ 追加の ID フィールドとスキーマ関係を使用します。
 

@@ -9,7 +9,7 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: f02bea4a92675e284be7ca86a0fcf7c17d296482
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 25%
@@ -20,7 +20,7 @@ ht-degree: 25%
 
 Real-Time Customer Data Platform と Journey Optimizer のお客様が、ユースケースプレイブックで価値創出までの時間をどう短縮できるかを説明します。ユースケースプレイブックは、複数の業界やマーケティングの目標をカバーする多数のテンプレートのカタログです。 プレイブックは、オーディエンス、ジャーニー、スキーマなどのテクニカルアセットを生成し、後でカスタマイズして他のサンドボックスに公開できます。 詳しくは、[ ユースケースプレイブックドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
 ## 基本を学ぶ
 

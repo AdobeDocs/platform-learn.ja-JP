@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 **データアーキテクト** は、このチュートリアル以外でデータセットを作成する必要があります。
 
 演習を開始する前に、この短いビデオを視聴して、データセットの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## 必要な権限
 
@@ -119,7 +119,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 > * `400: There was a problem retrieving xdm schema`。上記のサンプルの ID を自分の `Luma CRM Schema` の ID に置き換えてください
 > * 認証トークンがありません：**OAuth: リクエストアクセストークン** リクエストを実行して、新しいトークンを生成します
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: **CONTAINER_ID** 環境変数を `global` から `tenant` に更新します
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Admin Consoleのユーザー権限を確認してください
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`:Admin Consoleでのユーザー権限の確認
 
 
 Platform ユーザーインターフェイスの **[!UICONTROL データセット]** 画面に戻ると、5 つのデータセットすべてが正常に作成されたことを確認できます。

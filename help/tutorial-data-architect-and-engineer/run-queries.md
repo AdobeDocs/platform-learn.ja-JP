@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Adobe Experience Platform クエリサービスは、標準の SQL を使用し�
 **データアーキテクト** と **データエンジニア** は、このチュートリアル以外でクエリサービスを使用する必要があります。
 
 演習を開始する前に、この短いビデオを視聴してクエリサービスの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## 必要な権限
 

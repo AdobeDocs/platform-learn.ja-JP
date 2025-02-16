@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 7%
@@ -43,11 +43,11 @@ Key terms:
 **データアーキテクト** はこのチュートリアル以外でスキーマを作成する必要がありますが、**データエンジニア** は、データアーキテクトが作成したスキーマと緊密に連携します。
 
 演習を開始する前に、この短いビデオを視聴して、スキーマと Experience Data Model （XDM）について詳しく学びます。
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Experience Platformでのデータモデリングについて詳しくは、Experience Leagueで無償で利用できるプレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を視聴することをお勧めします。
+> Experience Platformのデータモデリングについて詳しくは、Experience Leagueで無償で利用できるプレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を視聴することをお勧めします。
 
 ## 必要な権限
 
@@ -84,7 +84,7 @@ Key terms:
 
 ### 標準フィールドグループの追加
 
-スキーマが作成されると、スキーマエディターにリダイレクトされ、スキーマにフィールドを追加できるようになります。 個々のフィールドをスキーマに直接追加したり、フィールドグループを使用したりできます。 個々のフィールドはすべて、引き続きクラスまたはフィールドグループに関連付けられています。 Adobeが提供する業界標準のフィールドグループの大規模なセットから選択するか、独自のフィールドグループを作成できます。 Adobeで独自のデータのモデリングを開始する際には、Experience Platformが提供する業界標準のフィールドグループに慣れておくとよいでしょう。 これらは顧客 AI、Attribution AI、Adobe Analyticsなどのダウンストリームサービスを強化する場合があるので、可能な限り使用することをお勧めします。
+スキーマが作成されると、スキーマエディターにリダイレクトされ、スキーマにフィールドを追加できるようになります。 個々のフィールドをスキーマに直接追加したり、フィールドグループを使用したりできます。 個々のフィールドはすべて、引き続きクラスまたはフィールドグループに関連付けられています。 Adobeが提供する業界標準のフィールドグループの大規模なセットから選択することも、独自のフィールドグループを作成することもできます。 Adobeで独自のデータのモデリングを開始する際には、Experience Platformが提供する業界標準のフィールドグループについて理解しておくと役に立ちます。 これらは顧客 AI、アトリビューション AI、Adobe Analyticsなどのダウンストリームサービスを強化する場合があるので、可能な限り使用することをお勧めします。
 
 独自のデータを操作する際に重要な手順は、Platform で取得する独自のデータはどれか、およびそのデータをどのようにモデル化するかを決定することです。 この大きなトピックについては、プレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) で詳しく説明します。 このチュートリアルでは、事前に決定されたスキーマの実装について説明します。
 
@@ -231,7 +231,7 @@ Key terms:
 >
 > * 認証トークンがありません：**OAuth: リクエストアクセストークン** リクエストを実行して、新しいトークンを生成します
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: **CONTAINER_ID** 環境変数を `global` から `tenant` に更新します
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Admin Consoleのユーザー権限を確認してください
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`:Admin Consoleでのユーザー権限の確認
 
 ### 標準フィールドグループの追加
 
@@ -330,7 +330,7 @@ API 応答とインターフェイスの両方をチェックして、フィー�
 
 「**[!UICONTROL 消費者エクスペリエンスイベント]**」フィールドグループを選択します。 このフィールドグループには、[!UICONTROL Commerceの詳細 ] にも含まれていた commerce および productListItems オブジェクトが含まれます。 Indeed [!UICONTROL  コンシューマーエクスペリエンスイベント ] は、他の標準フィールドグループをいくつか組み合わせたものであり、個別にも使用できます。 [!UICONTROL AEP Web SDK ExperienceEvent] フィールドグループには、他のフィールドグループも含まれています（[!UICONTROL  コンシューマーエクスペリエンスイベント ] の同じフィールドグループの一部を含む）。 幸い、シームレスに溶け合っています。
 
-このスキーマには `Luma Identity ExperienceEvent field group` を追加していないことに注意してください。 これは、Web SDK が ID を収集する方法が異なるからです。 スキーマエディターの **[!UICONTROL 構成]** セクションで **[!UICONTROL XDM ExperienceEvent]** クラスを選択すると、デフォルトで追加されるフィールドの 1 つが **[!UICONTROL IdentityMap]** という名前であることがわかります。 [!DNL IdentityMap] は、様々なAdobeアプリケーションで Platform にリンクするために使用されます。 identityMap を使用して ID が Platform にどのように送信されるかについては、ストリーミング取り込みのレッスンを参照してください。
+このスキーマには `Luma Identity ExperienceEvent field group` を追加していないことに注意してください。 これは、web SDKでは ID を収集する方法が異なるからです。 スキーマエディターの **[!UICONTROL 構成]** セクションで **[!UICONTROL XDM ExperienceEvent]** クラスを選択すると、デフォルトで追加されるフィールドの 1 つが **[!UICONTROL IdentityMap]** という名前であることがわかります。 [!DNL IdentityMap] は、様々なAdobe アプリケーションで Platform にリンクするために使用されます。 identityMap を使用して ID が Platform にどのように送信されるかについては、ストリーミング取り込みのレッスンを参照してください。
 
 
 ## 製品カタログスキーマの作成
@@ -339,7 +339,7 @@ Luma は、[!UICONTROL Commerceの詳細 ] および [!UICONTROL  コンシュ�
 
 >[!NOTE]
 >
->既存の Analytics または Target の顧客の場合、スキーマ関係を持つエンティティの分類は、SAINTの分類やRecommendationsの商品カタログのアップロードと似ています
+>既存の Analytics または Target の顧客の場合、スキーマ関係を持つエンティティの分類は、SAINTの分類や Recommendations の商品カタログのアップロードと類似しています
 
 まず、カスタムクラスを使用して Luma の製品カタログのスキーマを作成する必要があります。
 

@@ -8,7 +8,7 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 19%
@@ -19,7 +19,7 @@ ht-degree: 19%
 
 アクセスするデータを少なく抑え、エクスペリエンスプロミスで配信します。広告主、媒体社、代理店を問わず、このウェビナーは、サードパーティ cookie を使用しない将来のデータコラボレーションの機会を解放するのに役立ちます。
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on&enablevpops)
 
 ## 重要ポイント：
 
@@ -31,6 +31,6 @@ ht-degree: 19%
 
 [Segment Match の概要](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
 
-[ データ購入者向けのAudience Marketplace](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
+[ データ購入者向けAudience Marketplace](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
 [People-Based Destinations ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=ja)

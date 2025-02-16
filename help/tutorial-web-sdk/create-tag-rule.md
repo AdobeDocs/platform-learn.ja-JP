@@ -1,10 +1,10 @@
 ---
-title: Platform Web SDK 用のタグルールの作成
+title: Platform Web SDKのタグルールの作成
 description: タグルールを使用して、XDM オブジェクトと共にイベントを Platform Edge Networkに送信する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # タグルールの作成
 
-タグルールを使用して、XDM オブジェクトと共にイベントをAdobe Experience Platform Edge Networkに送信する方法を説明します。 タグルールは、イベント、条件、アクションを組み合わせたルールで、タグプロパティに対し、アクションの実行を指示します。 Platform Web SDK では、ルールを使用して、適切なデータで Platform Edge Networkにイベントを送信します。
+タグルールを使用して、XDM オブジェクトと共にAdobe Experience Platform Edge Networkにイベントを送信する方法を説明します。 タグルールは、イベント、条件、アクションを組み合わせたルールで、タグプロパティに対し、アクションの実行を指示します。 Platform Web SDKでは、ルールを使用して、適切なデータで Platform Edge Networkにイベントを送信します。
 
 ## 学習目標
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 * 「変数を更新」アクションと「イベントを送信」アクションを使用して XDM フィールドでイベントを送信
 * 複数のルールをまたいで複数の XDM フィールドセットをスタックする
 * 個々または全体の配列データ要素の XDM オブジェクトへのマッピング
-* 開発ライブラリへのタグルールのPublish
+* 開発ライブラリへのタグルールの公開
 
 
 ## 前提条件
@@ -56,7 +56,7 @@ ht-degree: 2%
 タグでは、ルールを使用して、様々な条件下でアクション（呼び出し実行）を実行します。 Platform Web SDK タグ拡張機能には、このレッスンで使用する 2 つのアクションが含まれています。
 
 * **[!UICONTROL 変数を更新]** は、データ要素を XDM オブジェクトのプロパティにマッピングします
-* **[!UICONTROL イベントを送信]** XDM オブジェクトをExperience PlatformEdge Networkに送信します
+* **[!UICONTROL イベントを送信]** XDM オブジェクトをExperience Platform Edge Networkに送信します
 
 このレッスンの残りの部分では、以下を行います。
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 このビデオでは、プロセスの概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### グローバル設定フィールド
 
@@ -187,7 +187,7 @@ ht-degree: 2%
    ![Analytics XDM ルール ](assets/set-up-analytics-product-condition.png)
 
 1. **[!UICONTROL アクション]** で **[!UICONTROL 追加]** を選択します
-1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択
+1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します
 1. **[!UICONTROL アクションタイプ]** を **[!UICONTROL 変数を更新]** として選択します
 1. **[!UICONTROL データ要素]** として `xdm.variable.content` を選択します
 1. `commerce` オブジェクトまでスクロール ダウンします
@@ -263,7 +263,7 @@ ht-degree: 2%
    ![Analytics XDM ルール ](assets/set-up-analytics-cart-condition.png)
 
 1. **[!UICONTROL アクション]** で **[!UICONTROL 追加]** を選択します
-1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択
+1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します
 1. **[!UICONTROL アクションタイプ]** を **[!UICONTROL 変数を更新]** として選択します
 1. **[!UICONTROL データ要素]** として `xdm.variable.content` を選択します
 1. `commerce` オブジェクトまで下にスクロールし、選択して開きます。
@@ -362,7 +362,7 @@ ht-degree: 2%
 
    ![ルールの保存](assets/create-rule-save-rule.png)
 
-## ライブラリ内のルールのPublish
+## ライブラリでのルールの公開
 
 次に、ルールを開発環境に公開して、ルールが機能することを検証します。
 
@@ -397,4 +397,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

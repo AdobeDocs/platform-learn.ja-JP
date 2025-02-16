@@ -7,7 +7,7 @@ last-substantial-update: 2023-10-24T00:00:00Z
 jira: KT-4332
 thumbnail: 32502.jpg
 exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
-source-git-commit: ca7acd3678b4af4a5b5a040d931a79b7a570fc51
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 80%
@@ -18,5 +18,5 @@ ht-degree: 80%
 
 Experience Platform の主な機能と、その機能がビジネスに価値をもたらせる方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
 

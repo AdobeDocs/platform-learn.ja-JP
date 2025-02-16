@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 1%
@@ -28,13 +28,13 @@ ht-degree: 1%
 
 Analysis Workspaceでは、1 つの Analytics レポートに特有の制限がすべて取り除かれます。 カスタム分析プロジェクトを作成するための堅牢で柔軟なキャンバスを提供します。 任意の数のデータテーブル、ビジュアライゼーションおよびコンポーネント（ディメンション、指標、セグメントおよび時間精度）をプロジェクトにドラッグ&amp;ドロップします。 分類およびセグメントを即座に作成し、分析のコホートを作成し、アラートを作成し、セグメントを比較し、フローおよびフォールアウト分析を行い、ビジネス内の任意のユーザーと共有するためのレポートをキュレーションおよびスケジュールします。
 
-Customer Journey Analyticsにより、このソリューションが Platform データの上に置かれます。 この 4 分間の概要ビデオを視聴することを強くお勧めします。
+Customer Journey Analyticsでは、このソリューションを Platform データに追加します。 この 4 分間の概要ビデオを視聴することを強くお勧めします。
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 これまでAnalysis Workspaceを使用したことがない場合は、このビデオを視聴することを強くお勧めします。
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### プロジェクトの作成
 
@@ -124,11 +124,11 @@ Customer Journey Analyticsにより、このソリューションが Platform �
 
 ![ デモ ](./images/pr9.png)
 
-## 4.4.3 計算Dimension：フィルター（セグメント化）と日付範囲
+## 4.4.3 計算されたディメンション：フィルター（セグメント化）と日付範囲
 
-### フィルター：計算Dimension
+### フィルター：計算されたディメンション
 
-計算は、指標のみに使用するためのものではありません。 分析を始める前に、いくつかの **計算Dimension** を作成するのも興味深いです。 これは基本的に、Adobe Analyticsに戻ると **セグメント** を意味していました。 Customer Journey Analyticsでは、これらのセグメントは **フィルター** と呼ばれます。
+計算は、指標のみに使用するためのものではありません。 分析を開始する前に、いくつかの **計算済みディメンション** を作成するのも興味深いです。 これは基本的に、Adobe Analyticsに戻ると **セグメント** を意味していました。 Customer Journey Analyticsでは、これらのセグメントは **フィルター** と呼ばれます。
 
 ![ デモ ](./images/prfilters.png)
 
@@ -140,11 +140,11 @@ Customer Journey Analyticsにより、このソリューションが Platform �
 
 これらのフィルターは、分析部分の前または実行中に作成できます（次の演習で行います）。
 
-### 日付範囲：計算されたDimension
+### 日付範囲：計算された時間ディメンション
 
-時間Dimensionは、別のタイプの計算ディメンションです。 既に作成されているものもありますが、データ準備段階で独自のカスタム時間Dimensionを作成する機能もあります。
+時間ディメンションは、計算ディメンションの別のタイプです。 既に作成されているものもありますが、データ準備段階で独自のカスタム時間ディメンションを作成する機能もあります。
 
-これらの計算時間のDimensionは、アナリストやビジネスユーザーが重要な日付を思い出し、それらを使用してレポート時間をフィルタリングおよび変更するのに役立ちます。 分析を行う際に頭に浮かぶ典型的な質問や疑問：
+これらの計算時間ディメンションは、アナリストやビジネスユーザーが重要な日付を覚え、それらを使用してレポート時間をフィルタリングおよび変更するのに役立ちます。 分析を行う際に頭に浮かぶ典型的な質問や疑問：
 
 - 去年のブラックフライデーはいつでしたか。 21 日から 29 日？
 - 12 月のテレビキャンペーンはいつ行われましたか？

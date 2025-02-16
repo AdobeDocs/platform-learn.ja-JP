@@ -2,13 +2,13 @@
 title: バッチデータの取得
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: バッチデータの取得
-description: このレッスンでは、さまざまな方法でバッチ データをExperience Platformに取り込みます。
+description: このレッスンでは、様々な方法を使用して、バッチデータをExperience Platformに取り込みます。
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 # バッチデータの取得
 
 <!-- 1hr-->
-このレッスンでは、さまざまな方法でバッチ データをExperience Platformに取り込みます。
+このレッスンでは、様々な方法を使用して、バッチデータをExperience Platformに取り込みます。
 
 バッチデータ取り込みでは、大量のデータを一度にAdobe Experience Platformに取り込むことができます。 Platform のインターフェイス内または API を使用して、1 回だけアップロードでバッチデータを取り込むことができます。 Source コネクタを使用して、クラウドストレージサービスなどのサードパーティサービスから、定期的にスケジュールされたバッチアップロードを設定することもできます。
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 演習を開始する前に、この短いビデオを視聴してデータ取り込みの詳細を確認してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## 必要な権限
@@ -191,7 +191,7 @@ Batch API は複数のファイルをアップロードするためによく使�
 1. リクエスト **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]** を選択
 1. 「**パラメーター**」タブで、**アクション** として `COMPLETE` と入力します
 1. 「**パラメーター**」タブで、バッチ ID を入力します。 データセット ID や filePath （存在する場合）について心配する必要はありません。
-1. POSTの URL が `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` であり、`datasetId` または `filePath` への不要な参照がないことを確認します
+1. POST の URL が `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` であり、`datasetId` または `filePath` への不要な参照がないことを確認します
 1. **送信** を選択すると、応答本文に「1」が含まれる 200 OK の応答が返されます
 
    ![ バッチ完了 ](assets/ingestion-crm-complete.png)
@@ -344,4 +344,4 @@ Adobeは、複数の ETL ベンダーと提携して、Experience Platformへの
 * [ バッチ取り込みのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [バッチ取り込み API リファレンス](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-次に、Web SDK を使用してデータを [ ストリーミングしましょう ](ingest-streaming-data.md)
+次に、Web SDKを使用してデータを [ ストリーミングしましょう ](ingest-streaming-data.md)

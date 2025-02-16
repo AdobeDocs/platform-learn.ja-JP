@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 5%
@@ -24,9 +24,9 @@ ht-degree: 5%
 Adobe Experience Platform データガバナンスを使用すると、顧客データを管理し、データの使用に適用される規制、制限、ポリシーへのコンプライアンスを確保できます。データの使用の制御など、様々なレベルで、Experience Platform内で重要な役割を果たします。
 
 演習を開始する前に、データガバナンスに関する次の短いビデオをご覧ください。
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required
@@ -84,9 +84,9 @@ Luma は、ロイヤルティデータがサードパーティと共有されな
 
 ## ガバナンスポリシーの適用
 
-ガバナンスポリシーの実施は、明らかにこのフレームワークの主要なコンポーネントです。 データがアクティブ化され、Platform から送信されると、ダウンストリームで適用が行われます。特に、Real-time Customer Data Platformでは、ライセンスが取得される場合とされない場合があります。 いずれにしても、このチュートリアルの範囲外です。 ただし、ポリシーの適用方法について詳しくは、このビデオをご覧ください。関連する部分までキューに入れました。 また、ポリシーに違反した場合の動作も示します。
+ガバナンスポリシーの実施は、明らかにこのフレームワークの主要なコンポーネントです。 データがアクティブ化され、Platform から送信されると、ダウンストリームで適用が行われます。特に、Real-Time Customer Data Platformでは、ライセンスが取得される場合とされない場合があります。 いずれにしても、このチュートリアルの範囲外です。 ただし、ポリシーの適用方法について詳しくは、このビデオをご覧ください。関連する部分までキューに入れました。 また、ポリシーに違反した場合の動作も示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on&enablevpops)
 
 
 ## その他のリソース

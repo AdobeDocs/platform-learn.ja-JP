@@ -1,10 +1,10 @@
 ---
 title: ID 名前空間の設定
-description: Adobe Experience Platform Web SDK で使用する ID 名前空間を設定する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
+description: Adobe Experience Platform Web SDKで使用する ID 名前空間を設定する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -15,13 +15,13 @@ ht-degree: 12%
 
 Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法について説明します。
 
-[Adobe Experience Cloud ID サービス ](https://experienceleague.adobe.com/ja/docs/id-service/using/home) は、SDK ベースのAdobeアプリケーション間で共通の訪問者 ID （ECID）を設定して、アプリケーション間のオーディエンス共有などのExperience Cloud機能を強化します。 また、独自の顧客 ID をサービスに送信して、クロスデバイスターゲティングや、顧客関係管理（CRM）システムなどの他のシステムとの統合を有効にすることもできます。
+[Adobe Experience Cloud ID サービス ](https://experienceleague.adobe.com/ja/docs/id-service/using/home) は、SDK ベースのAdobe アプリケーション間で共通の訪問者 ID （ECID）を設定して、アプリケーション間のオーディエンス共有などのExperience Cloud機能を強化します。 また、独自の顧客 ID をサービスに送信して、クロスデバイスターゲティングや、顧客関係管理（CRM）システムなどの他のシステムとの統合を有効にすることもできます。
 
-[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （はい、2 つあります） では、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できるようにします。
+[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （はい、2 つあります）は、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できるようにします。
 
 >[!NOTE]
 >
->カスタム ID 名前空間は、Adobe Analytics、Adobe Target、Adobe Audience Managerを Web SDK で実装する場合には _必須ではありません_ （認証済み ID は、後で示すように、`xdm` オブジェクトではなく `data` オブジェクトで渡すことができます）。 ID 名前空間は、Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analyticsなどの Platform ネイティブアプリケーションに必要です。 独自の実装で ID 名前空間を使用しないことにすることもできますが、このチュートリアルの一部としてこれを行う必要があります。
+>カスタム ID 名前空間は、Adobe Analytics、Adobe Target、Adobe Audience Managerを Web SDKで実装する場合は _必須ではありません_ （認証済み ID は、後で示すように、`xdm` オブジェクトではなく `data` オブジェクトで渡すことができます）。 ID 名前空間は、Journey Optimizer、Real-Time Customer Data Platform、Customer Journey Analyticsなどの Platform ネイティブアプリケーションに必要です。 独自の実装で ID 名前空間を使用しないことにすることもできますが、このチュートリアルの一部としてこれを行う必要があります。
 
 >[!NOTE]
 >
@@ -43,9 +43,9 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 >[!IMPORTANT]
 >
->Web SDK JavaScript ライブラリにはExperience CloudID サービス機能が含まれているので、Adobe Experience Platform Web SDK を実装する場合は ](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension)0} 訪問者 ID 拡張 } は必要ありません。[
+>Experience Cloud Web SDK ライブラリには訪問者 ID サービス機能が含まれているので、Adobe Experience Platform Web SDKを実装する場合、[JavaScript ID 拡張 ](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) は必要ありません。
 >
-> Web サイトで既に（Visitor API または Visitor ID Service Tag extension を通じて）Experience CloudID サービスを使用しており、Adobe Experience Platform Web SDK への移行中もそのExperience CloudID サービスを引き続き使用する場合は、最新バージョンの Visitor API またはExperience CloudID Service Tag extension を使用する必要があります。 詳しくは、「[ID の移行 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)」を参照してください。
+> Web サイトで既に（Visitor API またはExperience Cloud ID Service Tag extension を通じて）Experience Cloud ID サービスを使用している場合に、Adobe Experience Platform Web SDKへの移行中もそのサービスを引き続き使用するには、最新バージョンの Visitor API またはExperience Cloud ID Service Tag extension を使用する必要があります。 詳しくは、「[ID の移行 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)」を参照してください。
 
 ## ID 名前空間の作成
 
@@ -53,7 +53,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 演習を開始する前に、この短いビデオを視聴して、Adobe Experience Platformでの ID について詳しく確認してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 次に、Luma CRM ID の名前空間を作成します。
 
@@ -100,4 +100,4 @@ ID が配置されたので、データストリームを設定できます。
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

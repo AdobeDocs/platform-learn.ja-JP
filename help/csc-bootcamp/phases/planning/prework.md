@@ -3,7 +3,7 @@ title: CSC Bootcamp – その他の準備作業
 description: CSC Bootcamp – その他の準備作業
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ![experience-manager から ](./images/wf-from-aem.png)
 
-- AEM フォルダー階層が表示されたら、次のパスに移動します。experience-manager/Adobike Assets/自転車ショット 5 つのアセットを選択し、「リンク」をクリックします。
+- AEM フォルダー階層が表示されたら、次のパスに移動します。experience-manager/Adobike Assets/バイクショット 5 つのアセットを選択し、「リンク」をクリックします。
 
 ![ 選択されたアセット ](./images/selected-assets.png)
 
@@ -43,7 +43,7 @@ Adobe Commerceは、最高のデジタルエクスペリエンスを顧客に提
 
 このビデオでは、Adobe Commerceの概要と、Bootcamp で使用するために作成した製品について説明します。 実際のシナリオでは、以前に選択したブランドアセットをAdobe Commerceにアップロードして、商品を設定します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 このタスクが完了したら、Workfrontでタスク 3 を 100% 完了としてマークできます。
 

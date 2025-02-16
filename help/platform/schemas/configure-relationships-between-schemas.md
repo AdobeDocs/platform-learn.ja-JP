@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-7935
 thumbnail: 333536.jpg
 exl-id: e52cacce-bcf7-4583-9125-113634250e19
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 15%
@@ -18,5 +18,5 @@ ht-degree: 15%
 
 このビデオでは、Adobe Experience Platformで 2 つのスキーマ間の関係を設定する方法を説明します。 関係を使用すると、あるデータセットを別のデータセットのルックアップテーブルとして使用できます。 製品ドキュメントについて詳しくは、[ スキーマエディターを使用した 2 つのスキーマ間の関係の定義 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=ja) および [ スキーマレジストリ API を使用した 2 つのスキーマ間の関係の定義 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on&enablevpops)
 
