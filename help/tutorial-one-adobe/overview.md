@@ -3,9 +3,9 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要
-
-このチュートリアルは、の出発点として最適です
 
 このチュートリアルは非常に多様で、次のアプリケーションで明確なインサイトを提供します。
 
@@ -50,17 +48,13 @@ ht-degree: 2%
 - Adobe Experience Platform データ収集：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - デモシステムへのアクセス：[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## 前作業
-
-コンピューターにインストールする必要がある必要のあるアプリケーションを確認します [ ここでは ](./prework.md){target="_blank"}。
-
 ## 完了と資格認定
 
 このチュートリアルは、Adobe認定制度コースの一部です。 このチュートリアルと共にコースに新規登録するには、[https://certification.adobe.com](https://certification.adobe.com) にアクセスします。
 
 以下のチュートリアルを使用して完了するすべてのモジュールについて、以下に示すように完了証明書を送信する必要があります [ こちら ](./completion.md)。
 
-## コンテンツ
+## コンテンツステータス
 
 以下の内容のステータスを確認するには、[ ステータスページ ](./status.md){target="_blank"} をご覧ください。
 
@@ -68,7 +62,7 @@ ht-degree: 2%
 
 [はじめに](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-この基本モジュールでは、デモ環境にアクセスして使用できるように、すべてを設定します。
+この基本モジュールでは、デモ環境にアクセスして使用できるように、すべてを準備します。
 
 ### 1. ワークフローと計画
 
