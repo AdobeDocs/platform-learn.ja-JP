@@ -5,15 +5,57 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: ce28c48d554727ce42803400373826315f5b2153
+source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 22%
 
 ---
 
 
 # Adobe Experience Platform のチュートリアル {#tutorials}
+
+<!--
+
+Data Modeling
+
+Profile vs Data Lake vs Identity
+how a record becomes an audience member
+
+Profiles
+Identities
+Audience
+
+Data Lake
+
+Data Ingestion
+-Batch
+-Streaming
+-Edge (Data Collection)
+-Monitoring
+
+Data Governance
+Privacy
+Consent
+Audit logs
+
+Administration
+-Sandboxes
+-Permissions
+-License usage
+
+
+---
+App specific
+
+Destinations
+
+Journeys
+
+Campaigns
+
+-->
+
 
 + [Platform チュートリアル](/help/platform/overview.md)
 + Platform {#intro-to-platform} の概要
@@ -37,15 +79,16 @@ ht-degree: 22%
 + [Experience Platform API に対する認証](/help/platform/authentication/platform-api-authentication.md)
 + [Experience Platformへのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
-   + [アラートを使用](/help/platform/admin/use-alerts.md)
-   + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
-   + [サンドボックス間でのパッケージのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [IMS 組織間でのパッケージの共有](/help/platform/admin/share-packages-across-orgs.md)
+   + [概要](/help/platform/admin/overview.md)
    + [ユーザーの追加](/help/platform/admin/add-users.md)
-   + [ データ収集へのユーザーの追加 ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [ データ収集へのユーザーの追加 ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
    + [開発者を追加](/help/platform/admin/add-developers.md)
    + [製品管理者の追加](/help/platform/admin/add-product-administrators.md)
    + [属性ベースのアクセス制御を設定](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [サンドボックスの使用](/help/platform/admin/use-sandboxes.md)
+   + [サンドボックス間でのパッケージのコピー](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [IMS 組織間でのパッケージの共有](/help/platform/admin/share-packages-across-orgs.md)
+   + [アラートを使用](/help/platform/admin/use-alerts.md)
 + AI アシスタント {#ai-assistant}
    + [概要](/help/platform/ai-assistant/overview.md)
    + [アクセス権の取得](/help/platform/ai-assistant/access.md)
