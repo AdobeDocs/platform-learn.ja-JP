@@ -1,18 +1,18 @@
 ---
-title: ステージング環境および実稼動環境への移行のPublish設定
+title: ステージング環境および実稼動環境への移行を公開します
 description: 移行のすべての開発が完了して検証されたら、ステージング環境にビルドし、準備が整ったら実稼動環境に公開します。
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# ステージング環境および実稼動環境への移行のPublish設定
+# ステージング環境および実稼動環境への移行を公開します
 
 移行のすべての開発が完了して検証されたら、ステージング環境にビルドし、準備が整ったら実稼動環境に公開します。
 
@@ -51,6 +51,6 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->実装の移行を行う主な理由の 1 つは、Customer Journey Analytics、Real-Time CDP、Journey OptimizerなどのAdobe Experience Platform アプリケーションを使用する準備をすることです（上記の#3 で説明しました）。 この目的で web サイトのデータを使用する場合、このチュートリアルにはない追加手順が含まれますが、このチュートリアルは、実装をさらに進めるための前提条件であることは確かです。 そのため、このチュートリアルを終えると、同じ web サイトデータをExperience Platformにも送信するために必要な手順を実行できます。
+>実装の移行を行う主な理由の 1 つは、Adobe Experience Platform アプリケーション（Customer Journey Analytics、Real-Time CDP、Journey Optimizerなど）を使用する準備をすることです。 この目的で web サイトのデータを使用する場合、このチュートリアルにはない追加手順が含まれますが、このチュートリアルは、実装をさらに進めるための前提条件であることは確かです。 このチュートリアルが完了したので、同じ web サイトデータをExperience Platformにも送信するために必要な手順を実行する準備が整いました。
 
 分析やその他のコンテンツおよびマーケティングの取り組みのジャーニーを進めていきましょう。
