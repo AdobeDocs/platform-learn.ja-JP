@@ -5,7 +5,7 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 21%
@@ -103,19 +103,19 @@ Campaigns
 + オーディエンスとセグメント化 {#audiences}
    + [Audience Portal とコンポジションの概要](audiences/introduction-to-audience-portal-and-composition.md)
    + [オーディエンスのアップロード](audiences/upload-audiences.md)
-   + [Federated Audience コンポジションの概要](audiences/overview-of-federated-audience-composition.md)
-   + [Federated Audience コンポジションの接続と設定](audiences/connect-and-configure-federated-audience-composition.md)
-   + [Federated Audience コンポジションの作成](audiences/create-a-federated-audience-composition.md)
-   + [オーディエンスルールビルダーの概要](audiences/audience-rule-builder-overview.md)
-   + [オーディエンスを作成](audiences/create-audiences.md)
-   + [時間制約の使用](audiences/time-constraints.md)
-   + [コンテンツベースのオーディエンスの作成](audiences/create-content-based-audiences.md)
-   + [コンバージョンオーディエンスの作成](audiences/create-conversion-audiences.md)
-   + [既存のオーディエンスからのオーディエンスの作成](audiences/create-audiences-from-existing-audiences.md)
-   + [順次オーディエンスの作成](audiences/create-sequential-audiences.md)
-   + [動的オーディエンスを作成](audiences/create-dynamic-audiences.md)
-   + [マルチエンティティオーディエンスの作成](audiences/create-multi-entity-audiences.md)
-   + [アカウントオーディエンスの作成とアクティブ化（B2B）](audiences/create-audiences-with-b2b-data.md)
+   + [Federated Audience コンポジションの概要](audiences/fac/overview-of-federated-audience-composition.md)
+   + [Federated Audience コンポジションの接続と設定](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [Federated Audience コンポジションの作成](audiences/fac/create-a-federated-audience-composition.md)
+   + [オーディエンスルールビルダーの概要](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [オーディエンスを作成](audiences/audience-builder/create-audiences.md)
+   + [時間制約の使用](audiences/audience-builder/time-constraints.md)
+   + [コンテンツベースのオーディエンスの作成](audiences/audience-builder/create-content-based-audiences.md)
+   + [コンバージョンオーディエンスの作成](audiences/audience-builder/create-conversion-audiences.md)
+   + [既存のオーディエンスからのオーディエンスの作成](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [順次オーディエンスの作成](audiences/audience-builder/create-sequential-audiences.md)
+   + [動的オーディエンスを作成](audiences/audience-builder/create-dynamic-audiences.md)
+   + [マルチエンティティオーディエンスの作成](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [アカウントオーディエンスの作成とアクティブ化（B2B）](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [ストリーミングセグメント化のデモ](/help/platform/audiences/streaming-segmentation-demo.md)
    + [ オーディエンスルールの評価 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [ データを書き出すデータセットの作成 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
