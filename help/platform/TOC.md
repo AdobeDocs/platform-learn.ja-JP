@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
+source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 21%
 
 ---
@@ -137,6 +137,7 @@ Campaigns
    + [同意の適用](/help/platform/governance/enforce-consent.md)
    + [IAB Transparency and Consent Framework 2.0 との統合](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + データハイジーン {#data-hygiene}
+   + [概要](/help/platform/data-hygiene/overview.md)
    + [データハイジーンのためのデータ準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [データセットとバッチの削除](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [ データセットの有効期限 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
