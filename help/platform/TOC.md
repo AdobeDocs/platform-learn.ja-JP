@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
+source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '888'
 ht-degree: 21%
 
 ---
@@ -126,6 +126,8 @@ Campaigns
    + [受信データのセグメント一致](/help/platform/segments/segment-match-receiving-data.md)
 + [監査ログ](/help/platform/governance/audit-logs.md)
 + [ データ収集 ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Collaboration {#collaboration}
+   + [Real-Time CDP Collaborationの概要](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + ダッシュボード {#dashboards}
    + [ダッシュボードの作成](/help/platform/dashboards/create-a-dashboard.md)
 + データガバナンス {#data-governance}
