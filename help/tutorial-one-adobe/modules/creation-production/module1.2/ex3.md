@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 # 1.2.3 Workfront Fusion によるプロセスの自動化
 
-Workfront Fusion で自動処理を処理する方法を説明します。
+Workfront Fusion でプロセスの自動処理を実行する方法を説明します。
 
-## 1.2.3.1 複数の値の反復処理
+## 複数 1.2.3.1 値の反復
 
 シナリオは次のようになります。
 
@@ -93,7 +93,7 @@ Workfront Fusion で自動処理を処理する方法を説明します。
 
    ![WF Fusion](./images/wffusion215.png)
 
-## 1.2.3.2 Webhook を使用してシナリオをアクティブ化する
+## Webhook1.2.3.2 使用してシナリオをアクティブ化するには
 
 これまでのところ、シナリオを手動で実行してテストしてきました。 次に、Webhook を使用してシナリオを更新し、外部環境からアクティブ化できるようにします。
 
@@ -200,7 +200,7 @@ Workfront Fusion で自動処理を処理する方法を説明します。
 
 ## 次の手順
 
-[Firefly Services Automation の概要とメリット ](./summary.md){target="_blank"} を参照してください。
+コネクタを使用した [1.2.4 の自動化に進む ](./ex4.md){target="_blank"}
 
 [Adobe Firefly サービスの自動化 ](./automation.md){target="_blank"} に戻る
 
