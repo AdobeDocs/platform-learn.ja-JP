@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
+source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '881'
 ht-degree: 21%
 
 ---
@@ -290,4 +290,3 @@ Campaigns
    + [ブランドと消費者の 2 つの認識の物語](/help/platform/industry/brands-vs-consumers.md)
    + [オーディエンスのセンターオブエクセレンスの進化](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [顧客プロファイルを使用した優れたエクスペリエンスの構築](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [ファーストパーティデータコンテキストでのデータCollaboration](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
