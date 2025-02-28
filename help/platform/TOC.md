@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
+source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 21%
 
 ---
@@ -189,6 +189,7 @@ Campaigns
    + [ID データのラベル、取り込み、検証](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID グラフの表示](/help/platform/identities/view-identity-graphs.md)
    + のルールをリンクする ID グラフ {#graph-linking-rules}
+      + [概要](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [グラフシミュレーション](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + インテリジェントサービス {#intelligent-services}
    + [概要](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
