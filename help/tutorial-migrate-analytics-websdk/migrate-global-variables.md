@@ -3,9 +3,9 @@ title: グローバル変数の移行
 description: Analytics 拡張機能の設定から web SDKにグローバル変数を移行する方法を説明します
 solution: Data Collection, Analytics
 feature: Web SDK
-jira: KT-16764
+jira: KT-17277
 exl-id: 0917e951-c7e0-4723-8354-d308890bdaac
-source-git-commit: d01889ca317e29ed0c37b20e17291c4cb5a3abd1
+source-git-commit: 744b26da58307f0d6f6e8715a534ca814e02371c
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 3%
@@ -66,7 +66,7 @@ Adobe Analytics拡張機能には、「グローバル変数」という設定�
    1. **アクションタイプ** については、「変数を更新」を選択します
    1. 右側で、変数 **データ要素** を選択します（このチュートリアルでは「ページビューデータ要素」と呼ばれていますが、実際の値は異なる場合があります）。
    1. データオブジェクトの下の **Analytics** を選択します
-   1. Analytics 拡張機能の設定の「グローバル変数」セクションで保存した変数を入力します（このチュートリアルの例では、data10 をページタイプのeVar要素に設定します）。
+   1. Analytics 拡張機能の設定の「グローバル変数」セクションで保存した変数を入力します（このチュートリアルの例では、eVar10 をページタイプデータ要素に設定します）。
 
    ![websdk-global-variables-action](assets/websdk-global-variables-action.jpg)
 
