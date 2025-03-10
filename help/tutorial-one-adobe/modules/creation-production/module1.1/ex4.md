@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 1%
 
 ---
 
 # 1.1.4 Firefly カスタムモデル API
 
-## 1.1.4.1 カスタムモデルの設定
+## カスタムモデルを設定で 1.1.4.1 ます
 
 [https://firefly.adobe.com/](https://firefly.adobe.com/) に移動します。 **カスタムモデル** をクリックします。
 
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 ![Firefly カスタムモデル ](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2 UI でのカスタムモデルの使用
+## UI1.1.4.2 カスタムモデルを使用するには
 
 [https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train) に移動します。 カスタムモデルをクリックして開きます。
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 ![Firefly カスタムモデル ](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Firefly サービスのカスタムモデルの有効化カスタムモデル API
+## 1.1.4.3 Firefly サービスのカスタムモデルを有効にするカスタムモデル API
 
 カスタムモデルは、トレーニングが完了すると、API から使用することもできます。 演習 1.1.1 では、API を使用してFirefly サービスとやり取りできるようにAdobe I/O プロジェクトを既に設定しています。
 
@@ -112,9 +112,9 @@ ht-degree: 1%
 
 ![Firefly カスタムモデル ](./images/ffcm20.png){zoomable="yes"}
 
-Firefly カスタムモデルにアクセスするには、カスタムモデルをAdobe I/O プロジェクトの **テクニカルアカウント ID** に共有する必要があります。
+Firefly カスタムモデルにアクセスするには、カスタムモデルをAdobe I/O プロジェクトの **テクニカルアカウントメール** に共有する必要があります。
 
-**テクニカルアカウント ID** を取得するには、[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) にアクセスします。 クリックして、`--aepUserLdap-- Firefly` という名前のプロジェクトを開きます。
+**テクニカルアカウントのメール** を取得するには、[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) にアクセスしてください。 クリックして、`--aepUserLdap-- One Adobe tutorial` という名前のプロジェクトを開きます。
 
 ![Firefly カスタムモデル ](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,19 +122,19 @@ Firefly カスタムモデルにアクセスするには、カスタムモデル
 
 ![Firefly カスタムモデル ](./images/ffcm25.png){zoomable="yes"}
 
-**テクニカルアカウント ID** をクリックしてコピーします。
+**テクニカルアカウントのメールアドレス** をクリックしてコピーします。
 
 ![Firefly カスタムモデル ](./images/ffcm23.png){zoomable="yes"}
 
-**テクニカルアカウント ID** を貼り付け、「**編集に招待**」をクリックします。
+**テクニカルアカウントのメール** を貼り付け、「**編集に招待**」をクリックします。
 
 ![Firefly カスタムモデル ](./images/ffcm21.png){zoomable="yes"}
 
-**テクニカルアカウント ID** がカスタムモデルにアクセスできるようになりました。
+**テクニカルアカウントメール** からカスタムモデルにアクセスできるようになりました。
 
 ![Firefly カスタムモデル ](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4 Firefly サービスのカスタムモデル API の操作
+## Firefly サービス 1.1.4.4 カスタムモデル API の操作
 
 演習 1.1.1 Firefly サービスの概要では、次のファイルをダウンロードしました：[postman-ff.zip](./../../../assets/postman/postman-ff.zip) をローカルデスクトップに作成し、そのコレクションをPostmanに読み込みました。
 

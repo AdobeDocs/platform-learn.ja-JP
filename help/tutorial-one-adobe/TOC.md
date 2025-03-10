@@ -4,9 +4,9 @@ breadcrumb-title: Creative CloudからExperience Cloudまでの、Adobe アプ�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1113'
 ht-degree: 2%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 2%
       + [1.2.2 Workfront Fusion 内でのAdobe API の使用](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Workfront Fusion によるプロセスの自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 コネクタを使用した自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.5 フレーム I/O とWorkfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
 
 + Asset Management {#assetmgmt}

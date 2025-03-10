@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
 
-# 1.2 Workfront Fusion によるクリエイティブワークフローの自動化
+# 1.2 Workfront Fusion によるCreative ワークフローの自動化
 
 Workfront Fusion でクリエイティブワークフローを自動化する方法について説明します。
 
@@ -38,6 +38,10 @@ Workfront Fusion でクリエイティブワークフローを自動化する方
 [1.2.4 コネクタを使用した自動化 ](./ex4.md){target="_blank"}
 
 この演習では、引き続きジャーニーの調整を行って、画像作成プロセスを自動化します。
+
+[1.2.5 フレーム I/O とWorkfront Fusion](./ex5.md){target="_blank"}
+
+この演習では、Frame I/O をWorkfront Fusion シナリオに接続します。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 
