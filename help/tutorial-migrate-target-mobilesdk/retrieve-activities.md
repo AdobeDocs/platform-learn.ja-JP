@@ -2,9 +2,9 @@
 title: Target アクティビティの取得 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
 description: Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能に移行する際に、Adobe Target アクティビティを取得する方法を説明します。
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Target が返すコンテンツ（「オファー」とも呼ばれます）は�
 
 
 ## オンデマンドでのコンテンツのリクエストと適用
+
+>[!IMPORTANT]
+>
+>アプリにコンテンツを適用した後、API を実行して、アクティビティで指定 `displayed` た代替コンテンツまたはデフォルトコンテンツが訪問者に表示されたことを Target に知らせる必要があります。 詳しくは、[Target コンバージョンイベントを追跡 ](track-events.md) ページを参照してください。
+
 
 +++ Androidの例
 
