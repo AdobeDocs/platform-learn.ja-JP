@@ -1,40 +1,29 @@
 ---
-title: イベントの追跡 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
+title: コンバージョンイベントの追跡 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
 description: Adobe Journey Optimizer - Decisioning モバイル拡張機能を使用してAdobe Target コンバージョンイベントをトラッキングする方法を説明します
 exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 4bc5323e1f406b1fc9524838978ba8673e33b44e
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 1%
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
-# Adobe Journey Optimizer - Decisioning モバイル拡張機能を使用して Target コンバージョンイベントを追跡する
+# 決定モバイル拡張機能を使用して Target コンバージョンイベントを追跡
 
-コンテンツについては、次のページを参照してください。https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+ほとんどの Target アクティビティの目標は、購入、登録、クリック数などの、アプリケーションでの貴重なユーザーアクションを促進することです。 Target 実装では、通常、カスタムコンバージョンイベントを使用して、これらのアクションを追跡します。多くの場合、コンバージョンに関する追加の詳細が含まれています。 Target のコンバージョンイベントは、Target SDKと同様に、「SDKの最適化」で追跡できます。 コンバージョンイベントを追跡するには、次の表に示すように、特定の API を呼び出す必要があります。
 
-Target のコンバージョンイベントは、次のツールで追跡できます。コンバージョンイベントは通常、次のカテゴリに分類されます。
-
-* 設定を必要としない自動的に追跡されたイベント
-* ベストプラクティスの意思決定拡張機能の実装に合わせて調整する必要がある購入コンバージョンイベント
-* コードの更新が必要な購入以外のコンバージョンイベント
-
-## 目標トラッキングの比較
-
-次の表では、at.js と Platform Web SDKがコンバージョンイベントをどのようにトラッキングするかを比較しています
-
-| アクティビティの目標 | Target at.js 2.x | Platform Web SDK |
+| アクティビティの目標 | Target 拡張機能 | Decisioning 拡張機能 |
 |---|---|---|
-| | | |
+
+| mbox の場所（スコープ）のビューコンバージョンイベントの追跡 | mbox の場所が表示されている場合は、[displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API を呼び出します | mbox の場所のオファーが表示された際に、[ 表示 ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API を呼び出します。 これにより、event type decisioning.propositionDisplay を含むイベントが Experience Edge Network に送信されます。 |
+
+| mbox のクリックコンバージョンイベントの追跡（範囲） | mbox の場所がクリックされたときにで [clickedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API を呼び出します | mbox の場所に対するオファーがクリックされたときに、[ タップ済み ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API を呼び出します。 これにより、イベントタイプ decisioning.propositionInteract を持つイベントが Experience Edge ネットワークに送信されます。 |
+
+| Target プロファイルのパラメーターや注文の詳細など、追加データを含む可能性のあるカスタムコンバージョンイベントを追跡します |[displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} および [clickedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API が提供する TargetParameters フィールドに追加データを渡します | mbox の場所のオファーで使用可能なパブリックメソッド [generateDisplayInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank} および [generateTapInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank} API を使用して、表示用およびクリック用に XDM 形式のデータを生成します。 次に、Edge SDK [sendEvent](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent){target=_blank} API を呼び出して、このトラッキング XDM データを、追加の XDM およびフリーフォームデータと共に Experience Edge ネットワークに送信します。 |
 
 
-## 自動的に追跡されたイベント
-
-次のコンバージョン目標では、実装に対する特定の調整は必要ありません。
-
-
-
-次に、一貫性のある訪問者プロファイルを作成するための [ クロスドメイン ID 共有を有効にする ](webview.md) 方法を説明します。
+次に、Decisioning 拡張機能との互換性を確保するために [ オーディエンスとプロファイルスクリプトを更新 ](update-audiences.md) する方法を説明します。
 
 >[!NOTE]
 >

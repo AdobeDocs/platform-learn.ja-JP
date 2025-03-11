@@ -1,26 +1,88 @@
 ---
-title: オーディエンスとプロファイルスクリプトの更新 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能に移行します
-description: Experience Platform Web SDK と互換性を持たせるために、Adobe Target オーディエンスとプロファイルスクリプトを更新する方法を説明します。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Target オーディエンスとプロファイルスクリプトの更新 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
+description: Decisioning 拡張機能と互換性を持たせるためにAdobe Target オーディエンスとプロファイルスクリプトを更新する方法を説明します。
+exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-# Adobe Journey Optimizer用の Target オーディエンスとプロファイルスクリプトの更新 – Decisioning Mobile Extension の互換性
+# Decisioning モバイル拡張機能の互換性のための Target オーディエンスとプロファイルスクリプトの更新
 
+
+技術的な更新を完了して Target を Decisioning 拡張機能に移行した後、スムーズな移行を実現するために、オーディエンス、プロファイルスクリプト、アクティビティの一部を更新する必要が生じる場合があります。
+
+>[!INFO]
+>
+>すべての mbox パラメーターを `data.__adobe.target` オブジェクトに移行する場合、以下に示すように、オーディエンス、プロファイルスクリプト、アクティビティを更新する必要はありません。
+
+
+mbox パラメーターを `xdm` オブジェクトに移行する場合、変更を実稼動環境に公開する前に、次のことを行う必要があります。
+
+* mbox パラメーターを使用するオーディエンスの更新
+* mbox パラメーターを使用するプロファイルスクリプトの更新
+* mbox パラメータートークンの置き換え（`${mbox.parameter_name}` など）を使用して、オファーとアクティビティを更新します
 
 ## オーディエンスの調整
 
+mbox パラメーターを `xdm` オブジェクトに移行する場合は、カスタム mbox パラメーターを使用するオーディエンスを、新しい XDM パラメーター名を使用するように更新する必要があります。 例えば、`page_name` のカスタムパラメーターは、`web.webpagedetails.pageName` にマッピングされる可能性があります。
 
-詳細とベストプラクティスについては、[ プロファイルスクリプト ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html) に関する専用ドキュメントを参照してください。
+Target 拡張機能と Decisioning 拡張機能の両方との互換性を確保する 1 つのアプローチは、関連するオーディエンスを更新して、`OR` の条件が使用されるようにすることです（下図を参照）。
+
+![Decisioning 拡張機能の互換性を確保するためのターゲットオーディエンスの更新を表示する方法 ](assets/target-audience-update.png){zoomable="yes"}
+
+## プロファイルスクリプトの編集
+
+mbox パラメーターを `xdm` オブジェクトに移行する場合は、新しい XDM パラメーター名（オーディエンスと同様）を参照するようにプロファイルスクリプトを更新する必要があります。 mbox パラメーター名の変更以外に、Target 実装と Decisioning 実装の間でプロファイルスクリプトが機能する方法に違いはありません。
+
+互換性を確保する 1 つのアプローチは、プロファイルスクリプトコードで `OR` 条件を使用することです。
+
+プロファイルスクリプトの例：
+
+```Javascript
+if(mbox.param('pageName') == 'Product Details'){
+  return true
+}
+```
+
+Platform Web SDKの互換性のための更新されたプロファイルスクリプト：
+
+```Javascript
+if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
+  return true
+}
+```
+
+詳細とベストプラクティスについては、[ プロファイルスクリプト ](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters) に関する専用ドキュメントを参照してください。
 
 ## 動的コンテンツのパラメータートークンの更新
 
+mbox パラメーターを `xdm` オブジェクトに移行する場合、および [ 動的コンテンツ置換 ](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer) を使用するオファー、レコメンデーションデザインまたはアクティビティがある場合は、新しい XDM パラメーター名を考慮して、それに応じて更新する必要がある可能性があります。
 
+mbox パラメーターのトークン置き換えの使用方法によっては、古いパラメーター名と新しいパラメーター名の両方が考慮されるように、既存の設定を強化できる場合があります。 ただし、JSON オファーなど、カスタム JavaScript コードが利用できない状況では、移行が完了して実稼動サイトに移行した後、コピーを作成して更新を行う必要があります。
+
+JSON オファーの例：
+
+```JSON
+{
+  "pageName" : "${mbox.page_name}",
+  "layoutVariation" : "grid"
+}
+```
+
+XDM オブジェクトパラメーター名を使用した JSON オファーの例：
+
+```JSON
+{
+  "pageName" : "${mbox.web.webPagedDetails.pageName}",
+  "layoutVariation" : "grid"
+}
+```
 
 移行後に調整を行って新しい XDM mbox パラメーター名を考慮する場合は、影響を受けるアクティビティを移行イベント中に一時停止して、訪問者にアクティビティ表示エラーが表示されないようにしてください。
+
 
 次に、[Target 実装の検証 ](validate.md) 方法を説明します。
 

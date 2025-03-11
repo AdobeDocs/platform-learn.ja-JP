@@ -1,17 +1,17 @@
 ---
-title: パラメーターの送信 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
+title: パラメーターの送信 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
 description: Experience Platform Web SDKを使用して、mbox、プロファイル、エンティティパラメーターをAdobe Targetに送信する方法について説明します。
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
 
-# Adobe Journey Optimizer - Decisioning モバイル拡張機能を使用した Target へのパラメーターの送信
+# 意思決定拡張機能を使用した Target へのパラメーターの送信
 
-Target の実装は、サイトのアーキテクチャ、ビジネス要件、使用される機能により、web サイト間で異なります。 ほとんどの Target 実装には、コンテキスト情報、オーディエンスおよびコンテンツの推奨事項に関する様々なパラメーターの受け渡しが含まれています。
+Target の実装は、アプリケーションのアーキテクチャ、ビジネス要件、使用される機能によって、モバイルアプリケーション間で異なります。 ほとんどの Target 実装には、コンテキスト情報、オーディエンスおよびコンテンツの推奨事項に関する様々なパラメーターの受け渡しが含まれています。
 
 Target 拡張機能では、すべての Target パラメーターが `TargetParameters` 関数を使用して渡されました。
 
@@ -27,7 +27,7 @@ Decisioning 拡張機能を使用すると、
 
 ## カスタムパラメーター
 
-カスタム mbox パラメーターは、データを Target に渡す最も基本的な方法で、XDM または `data.__adobe.target` オブジェクトで渡すことができます。
+カスタム mbox パラメーターは、データを Target に渡す最も基本的な方法で、`xdm` オブジェクトまたは `data.__adobe.target` オブジェクトで渡すことができます。
 
 ## プロファイルパラメーター
 
@@ -35,7 +35,7 @@ Decisioning 拡張機能を使用すると、
 
 ## エンティティパラメーター
 
-[ エンティティパラメーター ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) は、Target Recommendations の行動データと追加のカタログ情報を渡すために使用されます。 プロファイルパラメーターと同様に、すべてのエンティティパラメーターは `data.__adobe.target` オブジェクトの下に渡す必要があります。
+[ エンティティパラメーター ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) は、Target Recommendations の行動データと追加のカタログ情報を渡すために使用されます。 プロファイルパラメーターと同様に、ほとんどのエンティティパラメーターは `data.__adobe.target` オブジェクトの下に渡す必要があります。 唯一の例外は、`xdm.productListItems` 配列が存在する場合で、最初の `SKU` 値が `entity.id` として使用されます。
 
 適切にデータを取得するには、特定の項目のエンティティパラメーターの先頭に `entity.` を付ける必要があります。 Recommendations アルゴリズムの予約済みの `cartIds` と `excludedIds` のパラメーターにはプレフィックスを付けてはいけません。また、それぞれの値には、エンティティ ID のコンマ区切りリストを含める必要があります。
 
@@ -45,7 +45,7 @@ Decisioning 拡張機能を使用すると、
 
 `commerce` フィールドグループが `1` に設定されている場合、購入情報 `purchases.value`Target に渡されます。 注文 ID と注文合計は、`order` オブジェクトから自動的にマッピングされます。 `productListItems` 配列が存在する場合、`SKU` の値が `productPurchasedId` に使用されます。
 
-XDM オブジェクトで `commerce` フィールドを渡さない場合は、`data.__adobe.target.orderId`、`data.__adobe.target.orderTotal`、`data.__adobe.target.productPurchasedId` の各フィールドを使用して、注文の詳細を target に渡すことができます。
+`xdm` オブジェクトで `commerce` フィールドを渡さない場合は、`data.__adobe.target.orderId`、`data.__adobe.target.orderTotal`、`data.__adobe.target.productPurchasedId` の各フィールドを使用して、注文の詳細を target に渡すことができます。
 
 ## 顧客 Id （mbox3rdPartyId）
 
@@ -56,7 +56,7 @@ Target では、単一の顧客 ID を使用して、デバイスやシステム
 | at.js パラメーターの例 | Platform Web SDK オプション | メモ |
 | --- | --- | --- |
 | `at_property` | なし | プロパティトークンは [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) で設定され、`sendEvent` 呼び出しでは設定できません。 |
-| `pageName` | `xdm.web.webPageDetails.name` | すべての Target mbox パラメーターは、`xdm` オブジェクトの一部として渡され、XDM ExperienceEvent クラスを使用してスキーマに準拠する必要があります。 Mbox パラメーターを `data` オブジェクトの一部として渡すことはできません。 |
+| `pageName` | `xdm.web.webPageDetails.name` または <br> `data.__adobe.target.pageName` | ターゲット mbox パラメーターは、`xdm` オブジェクトの一部または `data.__adobe.target` オブジェクトの一部として渡すことができます。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 適切にマッピングするには、すべての Target プロファイルパラメーターを `data` オブジェクトの一部として渡し、`profile.` のプレフィックスを付ける必要があります。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | `data` オブジェクトの一部として渡す必要がある Target のカテゴリ親和性機能に使用される予約済みのパラメーター。 |
 | `entity.id` | `data.__adobe.target.entity.id` <br> または <br> `xdm.productListItems[0].SKU` | エンティティ ID は、Target Recommendations の行動カウンターに使用されます。 これらのエンティティ ID は、`data` オブジェクトの一部として渡すことも、実装でそのフィールドグループを使用している場合は `xdm.productListItems` 配列の最初の項目から自動的にマッピングすることもできます。 |
@@ -65,9 +65,9 @@ Target では、単一の顧客 ID を使用して、デバイスやシステム
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースのレコメンデーションアルゴリズムに使用します。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Recommendations デザインで特定のエンティティ ID が返されるのを防ぐために使用します。 |
 | `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[ データストリームの Target 設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) で指定する必要があります。 |
-| `orderId` | `xdm.commerce.order.purchaseID`<br> （`commerce.purchases.value` が `1` に設定されている場合） | Target コンバージョントラッキングの一意の順序を識別するために使用します。 |
-| `orderTotal` | `xdm.commerce.order.priceTotal`<br> （`commerce.purchases.value` が `1` に設定されている場合） | Target のコンバージョンと最適化の目標で、注文の合計をトラッキングするために使用します。 |
-| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br>OR<br> `data.__adobe.target.productPurchasedId` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 詳しくは、以下の [ エンティティパラメーター ](#entity-parameters) の節を参照してください。 |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br> または <br> `data.__adobe.target.orderId` | Target コンバージョントラッキングの一意の順序を識別するために使用します。 |
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br> または <br> `data.__adobe.target.orderTotal` | Target のコンバージョンと最適化の目標で、注文の合計をトラッキングするために使用します。 |
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br>OR<br> `data.__adobe.target.productPurchasedId` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [ カスタムスコア ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) アクティビティ目標に使用します。 |
 
 {style="table-layout:auto"}
@@ -80,6 +80,42 @@ Target では、単一の顧客 ID を使用して、デバイスやシステム
 ### Android
 
 >[!BEGINTABS]
+
+>[!TAB SDKの最適化 ]
+
+```Java
+final Map<String, Object> data = new HashMap<>();
+final Map<String, String> targetParameters = new HashMap<>();
+ 
+// Mbox parameters
+targetParameters.put("status", "platinum");
+ 
+// Profile parameters - prefix with profile.
+targetParameters.put("profile.gender", "male");
+ 
+// Product parameters
+targetParameters.put("productId", "pId1");
+targetParameters.put("categoryId", "cId1");
+ 
+// Order parameters
+targetParameters.put("orderId", "id1");
+targetParameters.put("orderTotal", "1.0");
+targetParameters.put("purchasedProductIds", "ppId1");
+ 
+data.put("__adobe", new HashMap<String, Object>() {
+  {
+    put("target", targetParameters);
+  }
+});
+ 
+// Target location (or mbox)
+final DecisionScope decisionScope = DecisionScope("myTargetLocation")
+ 
+final List<DecisionScope> decisionScopes = new ArrayList<>();
+decisionScopes.add(decisionScope);
+ 
+Optimize.updatePropositions(decisionScopes, null, data);
+```
 
 >[!TAB Target SDK]
 
@@ -109,6 +145,36 @@ TargetParameters targetParameters = new TargetParameters.Builder()
 ### iOS
 
 >[!BEGINTABS]
+
+>[!TAB SDKの最適化 ]
+
+```Swift
+var data: [String: Any] = [:]
+var targetParameters: [String: String] = [:]
+ 
+// Mbox parameters
+targetParameters["status"] = "platinum"
+ 
+// Profile parameters - prefix with profile.
+targetParameters["profile.gender"] = "make"
+ 
+// Product parameters
+targetParameters["productId"] = "pId1"
+targetParameters["categoryId"] = "cId1"
+ 
+// Add order parameters
+targetParameters["orderId"] = "id1"
+targetParameters["orderTotal"] = "1.0"
+targetParameters["purchasedProductIds"] = "ppId1"
+ 
+data["__adobe"] = [
+  "target": targetParameters
+]
+ 
+// Target location (or mbox)
+let decisionScope = DecisionScope(name: "myTargetLocation")
+Optimize.updatePropositions(for: [decisionScope] withXdm: nil andData: data)
+```
 
 >[!TAB Target SDK]
 

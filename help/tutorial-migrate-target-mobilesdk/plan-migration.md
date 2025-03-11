@@ -1,10 +1,10 @@
 ---
-title: 移行の計画 – Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能への移行
+title: 移行の計画 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
 description: at.js と Platform Web SDKの主な違いと、移行作業の計画方法について説明します。
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
