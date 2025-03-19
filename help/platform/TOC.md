@@ -5,9 +5,9 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
+source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '897'
 ht-degree: 21%
 
 ---
@@ -127,7 +127,11 @@ Campaigns
 + [監査ログ](/help/platform/governance/audit-logs.md)
 + [ データ収集 ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Collaboration {#collaboration}
-   + [Real-Time CDP Collaborationの概要](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
+   + [Real-Time CDP Collaborationの概要](collaboration/real-time-cdp-collaboration-overview.md)
+   + [権限の設定](collaboration/set-permissions-for-collaboration.md)
+   + [広告主アカウントの設定](collaboration/set-up-an-advertiser-account.md)
+   + [広告主としてオーディエンスを参照](collaboration/reference-audiences-as-an-advertiser.md)
+   + [パブリッシャーとの接続](collaboration/connect-with-publishers.md)
 + ダッシュボード {#dashboards}
    + [ダッシュボードの作成](/help/platform/dashboards/create-a-dashboard.md)
 + データガバナンス {#data-governance}
