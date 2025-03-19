@@ -8,7 +8,7 @@ duration: 92
 last-substantial-update: 2025-03-18T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: ff70af08af560ef69ed269a9425039851477cf43
+source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Adobe Real-Time Customer Data Platform（CDP）Collaborationを使用すると�
 
 Adobe Real-Time Collaborationの概要を説明します。これは、価値の高いオーディエンスを見つけてアクティブ化し、測定機能を使用して明確な結果を導き出すことができるデータ共同作業アプリケーションです。
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
 
 
 ## セットアップ
