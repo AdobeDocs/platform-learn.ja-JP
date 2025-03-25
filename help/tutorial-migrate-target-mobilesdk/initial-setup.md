@@ -2,9 +2,9 @@
 title: 初期設定 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
 description: Platform Web SDKの実装に必要な重要な基本要素について説明し、設定します
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 6%
 
 ---
@@ -61,7 +61,7 @@ Target 拡張機能には [ 設定可能な設定 ](https://developer.adobe.com/
 | クライアントコード | 該当なし | IMS 組織の詳細を使用して、Edge によって自動的に設定されます |
 | 環境 ID | ターゲット環境 ID | データストリームで設定済み |
 | Target Workspace プロパティ | プロパティトークン | データストリームで設定済み |
-| タイムアウト | 設定可能ではありません | Decisioning 拡張機能のタイムアウトは 10 秒です |
+| タイムアウト | タイムアウト | Decisioning 拡張機能とSDKの最適化で設定できます。 デフォルトタイムアウトは 10 秒です。 |
 | Server Domain | Edge Network ドメイン | Adobe Experience Platform Edge Network拡張機能で設定 |
 
 次に、[Target SDKの置き換え ](replace-sdk.md) 方法について説明します。
