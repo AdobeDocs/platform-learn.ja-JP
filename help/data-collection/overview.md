@@ -3,16 +3,16 @@ title: データ収集チュートリアル
 description: データ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 24%
+source-wordcount: '263'
+ht-degree: 22%
 
 ---
 
 # データ収集チュートリアル
 
-Data Collection は、Adobeが提供する次世代の web サイトタグおよびモバイル SDK管理機能です。 データ収集を使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。 これらのビデオとチュートリアルを使用して、この重要なテクノロジーの学習に役立ててください。
+Data Collection は、Adobeが提供する次世代型の web サイトタグおよびモバイル SDKの管理機能です。 データ収集を使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。 これらのビデオとチュートリアルを使用して、この重要なテクノロジーの学習に役立ててください。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -28,11 +28,11 @@ Data Collection は、Adobeが提供する次世代の web サイトタグおよ
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target を Web SDKに移行" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Adobe Targetの Web SDKへの移行 </strong>
     </a>
     </div>
@@ -41,11 +41,11 @@ Data Collection は、Adobeが提供する次世代の web サイトタグおよ
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
       <img alt="Web SDK を使用した Adobe Experience Cloud の実装" src="assets/thumb_analyticsWebSdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
     <strong> タグでのAdobe Analyticsの Web SDKへの移行 </strong>
     </a>
     </div>
@@ -64,6 +64,25 @@ Data Collection は、Adobeが提供する次世代の web サイトタグおよ
     <p>
   </td>
 </tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <img alt="Edge Network上の Mobile SDKへの Target の移行" src="assets/thumb_targetMobileSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <strong>Edge Network上の Mobile SDKへのAdobe Targetの移行 </strong>
+    </a>
+    </div>
+    <p>
+    <em>Target 拡張機能をJourney Optimizer - Decisioning 拡張機能に置き換える </em>
+    <p>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  </tr>
 </table>
 
 ## 実装ガイド
@@ -106,7 +125,7 @@ Data Collection は、Adobeが提供する次世代の web サイトタグおよ
     </a>
     </div>
     <p>
-    <em> タグを使用して、従来の Analytics、Target およびAudience Managerライブラリを実装する </em>
+    <em> タグを使用して、従来の Analytics、Target およびAudience Manager ライブラリを実装する </em>
     <p>
   </td>
 </tr>
