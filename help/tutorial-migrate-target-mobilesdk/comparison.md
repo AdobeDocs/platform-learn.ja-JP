@@ -2,10 +2,10 @@
 title: Target 拡張機能と Decisioning 拡張機能の比較
 description: 機能、機能、設定、データフローなど、Target 拡張機能と Decisioning 拡張機能の違いについて説明します。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 4%
+source-wordcount: '791'
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,6 @@ Adobe Journey Optimizer - Decisioning 拡張機能は、モバイルアプリ用
 | thirdPartyId （mbox3rdPartyId） | サポートあり | データストリームの ID マップおよび Target サードパーティ ID 名前空間を介してサポートされます |
 | 通知（表示、クリック） | サポートあり | サポートあり |
 | レスポンストークン | サポートあり | サポートあり |
-| Analytics for Target（A4T） | クライアント側のみ | クライアントサイドとサーバーサイド |
 | モバイルプレビュー（QA モード） | サポートあり | Assuranceでの限定的なサポート |
 
 >[!IMPORTANT]
