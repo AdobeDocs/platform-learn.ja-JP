@@ -3,7 +3,7 @@ title: データ収集チュートリアル
 description: データ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 22%
@@ -90,11 +90,11 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja" target="_blank">
+    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview" target="_blank">
       <img alt="Web SDK を使用した Adobe Experience Cloud の実装" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja" target="_blank">
+      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview" target="_blank">
     <strong>Web SDKを使用したExperience Cloudの実装 </strong>
     </a>
     </div>
@@ -103,11 +103,11 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="モバイルアプリへの実装" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong> モバイルアプリへのExperience Cloudの実装 </strong>
     </a>
     </div>
@@ -116,11 +116,11 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target を Web SDKに移行" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong> タグを使用したレガシーライブラリの実装 </strong>
     </a>
     </div>
