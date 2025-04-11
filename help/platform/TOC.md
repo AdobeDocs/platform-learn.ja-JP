@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
+source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 21%
+source-wordcount: '904'
+ht-degree: 20%
 
 ---
 
@@ -175,7 +175,7 @@ Campaigns
    + [宛先への接続](/help/platform/destinations/connecting-to-destinations.md)
    + [宛先の作成とデータのアクティブ化](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [宛先へのプロファイルとオーディエンスのアクティブ化](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
-   + [データセットの書き出し先を設定](/help/platform/destinations/configure-dataset-export-destination.md)
+   + [クラウドストレージの宛先を使用したデータセットの書き出し](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Google Customer Match との統合](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Azure Blob 宛先の設定](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Marketoの宛先の設定](/help/platform/destinations/configure-the-marketo-destination.md)
