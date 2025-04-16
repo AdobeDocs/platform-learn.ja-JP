@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ Workfront Fusion でクリエイティブワークフローを自動化する方
 
 この演習では、引き続きジャーニーの調整を行って、画像作成プロセスを自動化します。
 
-[1.2.5 フレーム I/O とWorkfront Fusion](./ex5.md){target="_blank"}
+[1.2.5 Frame.io とWorkfront Fusion](./ex5.md){target="_blank"}
 
-この演習では、Frame I/O をWorkfront Fusion シナリオに接続します。
+この演習では、Frame.io をWorkfront Fusion シナリオに接続します。
 
-[1.2.6 AEM AssetsへのWorkfront Fusion へのフレーム I/O](./ex6.md){target="_blank"}
+[1.2.6 Workfront Fusion とAEM Assetsの Frame.io](./ex6.md){target="_blank"}
 
-この演習では、設定をさらに調整して、Frame I/O で承認されたアセットがWorkfront Fusion シナリオを使用して、アセットの PNG レンディションをAEM Assetsに書き出すようにします。
+この演習では、設定をさらに調整して、Frame.io で承認されたアセットがWorkfront Fusion シナリオを使用して、アセットの PNG レンディションをAEM Assetsに書き出すようにします。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7d4970479ff1a7dcb3ebb1f46660f418ba768da3
+source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1722'
 ht-degree: 1%
 
 ---
@@ -347,7 +347,7 @@ Azure ストレージエクスプローラーを使用すると、Azure スト�
 
 ## 次の手順
 
-[1.2.5 Frame I/O およびWorkfront Fusion](./ex5.md){target="_blank"} に移動します。
+[1.2.5 Frame.io とWorkfront Fusion に移動します ](./ex5.md){target="_blank"}
 
 [Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 

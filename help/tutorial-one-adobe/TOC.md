@@ -4,9 +4,9 @@ breadcrumb-title: Creative CloudからExperience Cloudまでの、Adobe アプ�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1146'
 ht-degree: 3%
 
 ---
@@ -48,8 +48,8 @@ ht-degree: 3%
       + [1.2.2 Workfront Fusion 内でのAdobe API の使用](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Workfront Fusion によるプロセスの自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 コネクタを使用した自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.5 フレーム I/O とWorkfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [1.2.6 Workfront Fusion からAEM Assetsへのフレーム I/O](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.5 Frame.io とWorkfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.6 Workfront Fusion とAEM Assetsの Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 Adobe ExpressとAdobe Experience Cloud {#crpr3}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
