@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 8cdfc543a7d107f77e38e61f116893bed0d85165
+source-git-commit: 7d4970479ff1a7dcb3ebb1f46660f418ba768da3
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1724'
 ht-degree: 1%
 
 ---
@@ -347,8 +347,8 @@ Azure ストレージエクスプローラーを使用すると、Azure スト�
 
 ## 次の手順
 
-[Firefly Services Automation の概要とメリット ](./summary.md){target="_blank"} を参照してください。
+[1.2.5 Frame I/O およびWorkfront Fusion](./ex5.md){target="_blank"} に移動します。
 
-[Adobe Firefly サービスの自動化 ](./automation.md){target="_blank"} に戻る
+[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 
 [ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

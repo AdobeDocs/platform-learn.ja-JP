@@ -4,10 +4,10 @@ breadcrumb-title: Creative CloudからExperience Cloudまでの、Adobe アプ�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '1150'
+ht-degree: 3%
 
 ---
 
@@ -34,25 +34,31 @@ ht-degree: 2%
 
 + ワークフローと計画 {#planning}
 
-+ 制作・生産 {#production}
-   + 1.1 Adobe Firefly Services {#crpr1} の概要
++ 作成と実稼動 {#production}
+   + 1.1 Adobe Firefly Servicesの概要 {#crpr1}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
-      + [1.1.1 Firefly サービスの概要](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
+      + [1.1.1 Firefly Servicesの概要](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
       + [1.1.2 Microsoft Azure と事前署名済み URL を使用したFirefly プロセスの最適化](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3 Photoshop API の操作](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [1.1.4 Firefly カスタムモデル API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-   + 1.2 Workfront Fusion {#crpr2} によるクリエイティブワークフローの自動化
+   + 1.2 Workfront Fusion によるCreative ワークフローの自動化 {#crpr2}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Workfront Fusion の概要](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2 Workfront Fusion 内でのAdobe API の使用](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Workfront Fusion によるプロセスの自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 コネクタを使用した自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
       + [1.2.5 フレーム I/O とWorkfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.6 Workfront Fusion からAEM Assetsへのフレーム I/O](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
+   + 1.3 Adobe ExpressとAdobe Experience Cloud {#crpr3}
+      + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
+      + [1.3.1 Adobe Expressの概要](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.2 Adobe Expressの動画・動画](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
-+ Asset Management {#assetmgmt}
-   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
++ アセット管理 {#assetmgmt}
+   + 1.1 Adobe Experience ManagerCloud Service {#assetm1}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Cloud Manager プログラムを作成する](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
       + [1.1.2 ドキュメントベースの web サイトの作成](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
@@ -80,7 +86,7 @@ ht-degree: 2%
          + [1.1.6 Adobe Targetの実装](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex6.md)
          + [1.1.7 Adobe Experience Platformにおける XDM スキーマの要件](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex7.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/summary.md)
-      + 1.2 データ取得 {#dc12}
+      + 1.2 データ取り込み {#dc12}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
@@ -88,7 +94,7 @@ ht-degree: 2%
          + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
-      + 1.3 Federated Audience Composition {#dc13}
+      + 1.3 Federated Audience の構成 {#dc13}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
          + [1.3.1 Snowflake環境のセットアップ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex1.md)
          + [1.3.2 スキーマ、データモデル、リンクの作成](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
@@ -109,7 +115,7 @@ ht-degree: 2%
          + [2.2.2 顧客 AI：新しいインスタンスを作成（設定）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex2.md)
          + [2.2.3 顧客 AI：スコアリングダッシュボードおよびセグメント化（予測と実行アクション）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex3.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/summary.md)
-      + 2.3 Real-Time CDP：オーディエンスを作成し、アクションを起こします。{#rtcdp23}
+      + 2.3 Real-Time CDP：オーディエンスを作成し、アクションを起こします。 {#rtcdp23}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
          + [2.3.1 オーディエンスの作成](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex1.md)
          + [2.3.2 宛先を使用した DV360 宛先の設定方法の確認](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex2.md)
@@ -118,7 +124,7 @@ ht-degree: 2%
          + [2.3.5 アクションの実行：オーディエンスをAdobe Targetに送信します](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex5.md)
          + [2.3.6 宛先SDK](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex6.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/summary.md)
-      + 2.4 Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub {#rtcdp24} へ
+      + 2.4 Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub へ {#rtcdp24}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 環境の設定](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
          + [2.4.2 Microsoft Azure EventHub 環境の設定](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
@@ -128,7 +134,7 @@ ht-degree: 2%
          + [2.4.6 Microsoft Azure プロジェクトの作成](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
          + [2.4.7 エンドツーエンドのシナリオ](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex7.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/summary.md)
-      + 2.5 Real-Time CDP接続：イベント転送 {#rtcdp25}
+      + 2.5 Real-Time CDP接続：イベント転送{#rtcdp25}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
          + [2.5.1 Adobe Experience Platform Data Collection Event Forwarding プロパティを作成する](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex1.md)
          + [2.5.2 Adobe Experience Platform Data Collection Server プロパティでデータを使用できるように、データストリームを更新します。](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex2.md)
@@ -136,7 +142,7 @@ ht-degree: 2%
          + [2.5.4 GCP Pub/Sub にイベントを転送する](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex4.md)
          + [2.5.5 AWS Kinesis およびAWS S3 へのフォワードイベント](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/summary.md)
-      + 2.6 Apache Kafka からReal-Time CDP {#rtcdp26} へのデータのストリーミング
+      + 2.6 Apache Kafka からReal-Time CDPへのデータのストリーミング {#rtcdp26}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
          + [2.6.1 Apache Kafka の概要](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex1.md)
          + [2.6.2 Kafka クラスターのインストールと設定](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex2.md)
@@ -144,7 +150,7 @@ ht-degree: 2%
          + [2.6.4 Kafka Connect とAdobe Experience Platformシンクコネクタのインストールと設定](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
-      + 3.1 Adobe Journey Optimizer: オーケストレーション {#ajo31}
+      + 3.1 Adobe Journey Optimizer：オーケストレーション {#ajo31}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
          + [3.1.1 イベントの作成](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex1.md)
          + [3.1.2 メッセージで使用するフラグメントを作成する](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
@@ -168,7 +174,7 @@ ht-degree: 2%
          + [3.3.5 メールでの決定の使用](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
          + [3.3.6 API を使用した決定のテスト](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
-      + 3.4 Adobe Journey Optimizer：イベントベースのジャーニー{#ajo34}
+      + 3.4 Adobe Journey Optimizer：イベントベースのジャーニー {#ajo34}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
          + [3.4.1 トリガーベースのジャーニーの設定 – 注文の確認](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
          + [3.4.2 キャンペーンの設定](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
@@ -182,9 +188,9 @@ ht-degree: 2%
          + [3.5.3 メールへの言語の追加](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
 
-+ Reporting &amp; Insights {#reporting}
-   + Customer Journey Analytics {#cjab2c}
-      + 1.1 Customer Journey Analytics:Analysis Workspace {#cja1} を使用したダッシュボードの構築
++ レポートとインサイト {#reporting}
+   + Customer Journey Analytics  {#cjab2c}
+      + 1.1 Customer Journey Analytics:Analysis Workspaceを使用したダッシュボードの構築 {#cja1}
          + [概要](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
          + [1.1.2 Customer Journey AnalyticsでのAdobe Experience Platform データセットの接続](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex2.md)
@@ -192,7 +198,7 @@ ht-degree: 2%
          + [1.1.4 Customer Journey Analyticsでのデータ準備](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex4.md)
          + [1.1.5 Customer Journey Analyticsを使用したビジュアライゼーション](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/summary.md)
-      + 1.2 Customer Journey Analytics:BigQuery Source Connector {#cja2} を使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析
+      + 1.2 Customer Journey Analytics:BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analytics データの取り込みと分析 {#cja2}
          + [概要](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
          + [1.2.1 Google Cloud Platform の使用を開始する](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex1.md)
          + [1.2.2 BigQuery で最初のクエリを作成する](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex2.md)

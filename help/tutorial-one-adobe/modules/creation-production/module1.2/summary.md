@@ -1,13 +1,13 @@
 ---
-title: Firefly Services Automation の概要とメリット
-description: Firefly Services Automation – 概要
+title: Workfront Fusion によるCreative Workflow Automation の概要とメリット
+description: Workfront Fusion によるCreative Workflow Automation – 概要
 kt: 5342
 doc-type: tutorial
 exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 5%
+source-wordcount: '46'
+ht-degree: 4%
 
 ---
 
@@ -17,6 +17,6 @@ Adobe アプリケーションの学習にご協力いただき、ありがと�
 
 ## 次の手順
 
-[Adobe Firefly サービスの自動化 ](./automation.md){target="_blank"} に戻る
+[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 
 [ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

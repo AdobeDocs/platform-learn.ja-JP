@@ -3,10 +3,10 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -18,21 +18,19 @@ ht-degree: 2%
 
 このチュートリアルは非常に多様で、次のアプリケーションで明確なインサイトを提供します。
 
-- Adobe Firefly サービス
-- Adobe Photoshop
+- Adobe Firefly Services、Adobe Photoshop、Adobe Frame I/O、Adobe Substance 3D ステージング
 - Adobe WorkfrontとAdobe Workfront Fusion
-- Adobe Experience Manager Cloud Service、Sites、AssetsおよびEdge Delivery Services
+- Adobe Experience Manager Cloud Service、Sites、Assets、エッジ配信サービス
 - Adobe Experience Platform
-- Adobe Real-Time CDP
+- Adobe Systems Real-時間 CDP
 - Adobe Journey Optimizer
 
-
-このチュートリアルでは、Adobeのアプリケーションに重点を置くだけでなく、ブランドが運用する広範なエコシステムを考慮します。 そのために、いくつかの教訓では、Adobe以外のアプリケーションとAdobeのアプリケーションとの統合方法に重点を置いています。 そのため、次のアプリケーションがAdobe Experience Platformとどのように連携するかについて、深く理解することができます。
+このチュートリアルは、Adobe Systemsアプリケーションフォーカスするだけでなく、ブランドが活動するより広範なエコシステムアカウントを取り入れています。 そのために、いくつかの教訓では、Adobe以外のアプリケーションとAdobeのアプリケーションとの統合方法に重点を置いています。 そのため、次のアプリケーションがAdobe Experience Platformとどのように連携するかについて、深く理解することができます。
 
 - AmazonAWS
 - Google Cloud Platform
 - Microsoft Azure
-- Postman
+- 郵便配達人
 - Snowflake
 - ...
 
@@ -40,23 +38,22 @@ ht-degree: 2%
 
 独自のAdobe Experience Cloud インスタンスを使用してこのチュートリアルを実行する場合は、インスタンスに次のアプリケーションをプロビジョニングし、にアクセスできるようにする必要があります。
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop
+- Adobe Firefly
+- Adobe Photoshop、Adobe Frame I/O、Adobe Substance 3D ステージング
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Adobe Experience Platform データ収集：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
-- デモシステムへのアクセス：[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Adobe Experience Platform、Adobe Experience Platform Data Collection
+- デモシステムへのアクセス （次へ）: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## 完了と資格認定
 
 このチュートリアルは、Adobe認定制度コースの一部です。 このチュートリアルと共にコースに新規登録するには、[https://certification.adobe.com](https://certification.adobe.com) にアクセスします。
 
-以下のチュートリアルを使用して完了するすべてのモジュールについて、以下に示すように完了証明書を送信する必要があります [ こちら ](./completion.md)。
+以下のチュートリアルを使用して完了したモジュールごとに、 [ここ](./completion.md)に示されているように完了配達確認を提出する必要があります。
 
 ## コンテンツステータス
 
-以下の内容のステータスを確認するには、[ ステータスページ ](./status.md){target="_blank"} をご覧ください。
+以下の内容のステータスを確認するには、 [ステータスページ](./status.md){target="_blank"}にアクセスしてください。
 
 ### はじめに
 
@@ -66,15 +63,19 @@ ht-degree: 2%
 
 ### 1. ワークフローと計画
 
-### 2.創造・生産
+### 2. 制作と制作
 
-[1.1 Adobe Firefly サービス ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Systems ホタルサービス](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-このモジュールでは、Adobe Firefly サービス API、Photoshop API およびMicrosoft Azure ストレージサービスを使用して、画像を生成し、プログラムで保存します。
+このモジュールでは、Adobe Systems Firefly サービス API、Photoshop API、および Microsoft Azure ストレージ サービスを使用してイメージを生成し、プログラムでストアします。
 
-[1.2 Workfront Fusion によるクリエイティブワークフローの自動処理 ](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Workfront Fusion による Creative Workflow 自動処理](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 この基本モジュールでは、Adobe Workfront Fusion を使用して、コンテンツ作成ワークフローを自動化および拡張します。
+
+[1.3 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+この基本モジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
 
 ### 3.資産管理
 
@@ -82,15 +83,15 @@ ht-degree: 2%
 
 この基本モジュールでは、Adobe Experience Manager Cloud Service プログラム、サイトおよびAssets リポジトリを設定します。
 
-[1.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
+[1.2 ワークフロントAdobe Systemsによるワークフロー管理](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
 
-この基本モジュールでは、Adobe Workfrontを設定および使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサルエディター、Photoshopなどとの統合を使用します。
+この基本的なモジュールでは、Adobe Systems Workfront を構成して使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサル エディター、Photoshop などとの統合を使用します。
 
-### 4.配信とアクティベーション
+### 4. 配信とActivation
 
 #### データ収集
 
-[1.1 Foundation - Adobe Experience Platform Data Collection および Web SDKのセットアップ](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
+[1.1 Foundation - Adobe Experience Platform データ Collection &amp; Web SDK のセットアップ](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
 
 この基本モジュールでは、Adobe Experience Platform データ収集と、新しい web SDK拡張機能について説明します。
 
@@ -98,9 +99,9 @@ ht-degree: 2%
 
 この基本モジュールでは、様々なソースからAdobe Experience Platformにデータを取り込みます
 
-[1.3 Federated Audience の構成](./modules/delivery-activation/datacollection/dc1.3/fac.md)
+[1.3 フェデレーテッドオーディエンスの構成](./modules/delivery-activation/datacollection/dc1.3/fac.md)
 
-このモジュールでは、Federated Audiences モデルを設定し、Federated データを使用してオーディエンスを生成する方法について説明します。
+このモジュールでは、フェデレーション Audiences モデルを設定し、フェデレーション データを使用してオーディエンスを生成する方法について説明します。
 
 #### Real-Time CDP B2C
 
@@ -124,13 +125,13 @@ ht-degree: 2%
 
 このモジュールでは、Google Cloud Platform Pub/Sub やAWS Kinesis など、いくつかのエンドポイントにデータサーバーサイドで転送します。
 
-[2.6 Apache Kafka からReal-Time CDPへのデータのストリーミング](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
+[2.6 Apache Kafka から Real-時間 CDP へのデータのストリーミング](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
 
-このモジュールでは、独自の Apache Kafka クラスターを設定し、データをAdobe Experience Platformにストリーミングする方法を説明します。
+このモジュールでは、独自の Apache Kafka クラスターをセットアップし、データをAdobe Experience Platformにストリーミングする方法について説明します。
 
 #### Adobe Journey Optimizer B2C
 
-[3.1 Adobe Journey Optimizer：オーケストレーション](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
+[3.1 Adobe Systems ジャーニーオプティマイザー:オーケストレーション](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
 
 このモジュールでは、Adobe Journey Optimizerを使用して、トリガーベースのジャーニーを構築します。
 
@@ -142,9 +143,9 @@ ht-degree: 2%
 
 このモジュールでは、Adobe Journey Optimizerを使用して、パーソナライズされたオファーと独自のオファー決定を設定します。
 
-[3.4 Adobe Journey Optimizer：イベントベースのジャーニー](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
+[3.4 Adobe Systems ジャーニーオプティマイザー:イベントベースのジャーニー](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
-このモジュールでは、企業が、コンテキストに応じた、つながりのあるパーソナライズされたエクスペリエンスを設計して顧客に提供するのに役立つ、Journey Optimizerについて知っておくべきことをすべて学びます。
+このモジュールでは、企業がコネクテッドでコンテキストに応じたパーソナライズされたエクスペリエンスを設計し、顧客に提供するのに役立つ Journey Optimizer について知っておくべきことをすべて学びます。
 
 [3.5 Adobe Journey Optimizer：翻訳サービス](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
@@ -168,8 +169,8 @@ ht-degree: 2%
 
 このモジュールでは、Adobe Experience Platform クエリサービスの使用方法を説明します。
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![テックインサイダー](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>質問がある場合、将来の内容に関する提案についての一般的なフィードバックを共有したい場合は、 **techinsiders@adobe.com**&#x200B;に電子メールを送信して、Tech Insidersに直接お問い合わせください。
