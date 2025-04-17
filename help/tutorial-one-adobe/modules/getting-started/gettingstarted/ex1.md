@@ -4,7 +4,7 @@ description: はじめに – Experience League ドキュメント用のChrome�
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -88,7 +88,7 @@ IMS 組織 ID の検索は、複数の方法で実行できます。 不明な�
 
 ![DSN](./images/aepid1.png)
 
-また、AEP メニューの **データ管理/クエリ** に移動すると見つかることがあります。この場合、「**ユーザー名**」の下に表示されています。
+また、AEP メニューの **Data Management/クエリ** に移動すると見つかることがあります。この場合、「**ユーザー名**」の下に表示されています。
 
 ![DSN](./images/aepid2.png)
 
@@ -96,7 +96,7 @@ IMS 組織 ID の検索は、複数の方法で実行できます。 不明な�
 
 **AEP テナント ID**
 
-テナント ID は、組織の AEP インスタンスの一意の ID です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
+テナント ID は、組織のAEP インスタンスの一意の ID です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
 
 ![DSN](./images/aeptenantid.png)
 
@@ -135,11 +135,11 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 ## チュートリアルコンテンツの検証
 
-テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2) に移動します。
+テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2) に移動します。
 
 Chrome 拡張機能でアクティブ化された環境に基づいて、このページのすべての **環境変数** が実際の値に置き換えられました。
 
-これで、以下に類似したビューになります。ここで、環境変数 `aepSandboxName` は、実際の AEP サンドボックス名（この場合は **アドビが 1 つ** に置き換えられました。
+これで、以下と同様のビューになります。環境変数 `aepSandboxName` は、実際のAEP サンドボックス名（この場合は **one-adobe** に置き換えられました。
 
 ![DSN](./images/mod7.png)
 
