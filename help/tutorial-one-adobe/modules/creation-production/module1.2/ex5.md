@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2674'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ ht-degree: 0%
 ## 1.2.5.2 Workfront Fusion と Frame.io
 
 前の演習では、シナリオ `--aepUserLdap-- - Firefly + Photoshop` を作成しました。これは、カスタム Webhook で開始し、Webhook 応答で終了しました。 その後、Postmanを使用して Webhook の使用をテストしましたが、明らかに、そのようなシナリオのポイントは、外部アプリケーションによって呼び出されることです。 前に述べたように、Frame.io がその演習になりますが、Frame.io と `--aepUserLdap-- - Firefly + Photoshop` の間に、別のWorkfront Fusion シナリオが必要です。 次に、そのシナリオを設定します。
+
+[https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Workfront Fusion** を開きます。
+
+![WF Fusion](./images/wffusion1.png)
 
 左側のメニューで、**シナリオ** に移動し、フォルダー `--aepUserLdap--` を選択します。 「**新しいシナリオを作成**」をクリックします。
 
@@ -83,12 +87,12 @@ ht-degree: 0%
 - **NAME**：使用 `--aepUserLdap-- - Frame IO Custom Action Fusion`
 - **説明**:`--aepUserLdap-- - Frame IO Custom Action Fusion` を使用します
 - **EVENT**:`fusion.tutorial` を使用します。
-- **URL**: Workfront Fusionで作成したウェブフックのURLを入力します
-- **チーム**: 適切な Frame.io チーム (この場合は **1 Adobe Systems チュートリアル**) を選択します。
+- **URL**:Workfront Fusion で作成したばかりの Webhook の URL を入力します
+- **TEAM**：適切な Frame.io チーム（この場合は「One Adobe Tutorial **を選択します**。
 
 「**送信**」をクリックします。
 
-![フレーム IO](./images/frame15.png)
+![ フレーム IO](./images/frame15.png)
 
 この画像が表示されます。
 
@@ -98,7 +102,7 @@ ht-degree: 0%
 
 ![ フレーム IO](./images/frame16.png)
 
-ページを更新したら、アセット **citisignal-fiber.psd** の 3 ドット **...** をクリックします。 前の手順で作成したカスタム動作がメニューに表示されます。 カスタム アクション `--aepUserLdap-- - Frame IO Custom Action Fusion`をクリックします。
+ページを更新したら、アセット **citisignal-fiber.psd** の 3 ドット **...** をクリックします。 表示されるメニューに、前の手順で作成したカスタムアクションが表示されます。 「カスタムアクション」 `--aepUserLdap-- - Frame IO Custom Action Fusion` タンをクリックします。
 
 ![ フレーム IO](./images/frame17.png)
 
@@ -122,7 +126,7 @@ Frame.io に戻り、カスタムアクション `--aepUserLdap-- - Frame IO Cus
 
 ![ フレーム IO](./images/frame22.png)
 
-バブルの詳細ビューには、Frame.io から受信したデータが表示されます。 様々な ID が表示されます。例えば、フィールド **resource.id** は、アセットの Frame.io 内の一意の ID を示します **citisignal-fiber.psd**
+バブルの詳細ビューには、Frame.io から受信したデータが表示されます。 様々な ID が表示されます。例えば、「**resource.id**」フィールドには、アセットの Frame.io 内の一意の ID **citisignal-fiber.psd** が表示されます。
 
 ![ フレーム IO](./images/frame23.png)
 
@@ -220,11 +224,11 @@ Workfront Fusion に戻り、シナリオ `--aepUserLdap-- - Frame IO Custom Act
 
 - **ラベル**:`Prompt isn't available` を使用します。
 - **条件**:`{{1.data.Prompt}}` を使用します。
-- **基本演算子**:「 **存在しない**」を選択します。
+- **基本演算子**：選択 **存在しません**。
 
 >[!NOTE]
 >
->Workfront Fusionの変数は、 `{{1.data.Prompt}}` という構文を使用して手動で指定できます。 変数内の数字は、シナリオ内のモジュールを参照しています。 この例では、シナリオの最初のモジュールは **Webhooks** と呼ばれ、シーケンス番号は **1** であることがわかります。 これは、変数 `{{1.data.Prompt}}` がフィールド **data にアクセスすることを意味します。プロンプト** シーケンス番号1のモジュールから。 シーケンス番号は異なる場合があるため、このような変数をコピー/貼り付けするときは注意し、使用されているシーケンス番号が正しいことを常に確認してください。
+>Workfront Fusion の変数は、次の構文を使用して手動で指定できます。`{{1.data.Prompt}}` 変数内の数値は、シナリオ内のモジュールを参照します。 この例では、シナリオの最初のモジュールが **Webhook** と呼ばれ、シーケンス番号が **1** であることがわかります。 これは、変数 `{{1.data.Prompt}}` が、シーケンス番号 1 のモジュールからフィールド **data.Prompt** にアクセスすることを意味します。 シーケンス番号は異なる場合があるので、変数をコピー/貼り付ける際には注意し、常に使用するシーケンス番号が正しいことを確認してください。
 
 「**OK**」をクリックします。
 
@@ -236,9 +240,9 @@ Workfront Fusion に戻り、シナリオ `--aepUserLdap-- - Frame IO Custom Act
 
 この画像が表示されます。
 
-![フレーム IO](./images/frame36.png)
+![ フレーム IO](./images/frame36.png)
 
-Frame.io に戻り、アセット&#x200B;**citisignal-fiber.psd**&#x200B;のカスタム動作`--aepUserLdap-- - Frame IO Custom Action Fusion`をもう一度クリックします。
+Frame.io に戻り、アセット **citisignal-fiber.psd** のカスタムアクション `--aepUserLdap-- - Frame IO Custom Action Fusion` ージをもう一度クリックします。
 
 ![ フレーム IO](./images/frame37.png)
 
@@ -318,11 +322,11 @@ Workfront Fusion のシナリオに戻ります。 トークンを「Your Frame.
 
 ![ フレーム IO](./images/frame55.png)
 
-接続が正常にテストされると、[接続 **接続**&#x200B;の下に自動的に表示されます。 これで接続に成功し、ファイルの場所など、Frame.io からすべてのアセット詳細を取得するには、構成終了必要があります。 そのためには、 **アセット ID**&#x200B;を指定する必要があります。
+接続が正常にテストされた場合は、**接続** に自動的に表示されます。 これで接続が正常に完了しました。設定を完了して、ファイルの場所を含む Frame.io からすべてのアセットの詳細を取得する必要があります。 これを行うには、**アセット ID** を指定する必要があります。
 
-![フレーム IO](./images/frame56.png)
+![ フレーム IO](./images/frame56.png)
 
-**アセット ID** は、最初の **カスタム Webhook** 通信の一環として Frame.io からWorkfront Fusion に共有され、「**resource.id**」フィールドにあります。 「 **resource.id** 」を選択して、「 **OK**」をクリックします。
+**アセット ID** は、最初の **カスタム Webhook** 通信の一環として Frame.io からWorkfront Fusion に共有され、「**resource.id**」フィールドにあります。 **resource.id** を選択して「**OK**」をクリックします。
 
 ![ フレーム IO](./images/frame57.png)
 
@@ -334,7 +338,7 @@ Frame.io に戻り、アセット **citisignal-fiber.psd** のカスタムアク
 
 ![ フレーム IO](./images/frame37.png)
 
-Frame.io 内にプロンプトが表示されます。 まだフィールドに入力しておらず、フォームをまだ送信しないでください。 このプロンプトは、先ほど設定したWorkfront Fusion からの応答に基づいて表示されます。
+Frame.io 内にプロンプトが表示されます。 まだフィールドに入力せず、フォームも送信しません。 このプロンプトは、先ほど設定したWorkfront Fusion からの応答に基づいて表示されます。
 
 ![ フレーム IO](./images/frame38.png)
 
@@ -433,11 +437,11 @@ Workfront Fusion に戻り、「**Frame.io - アセットを取得** モジュ�
 
 **Frame.io （レガシー）** を選択します。
 
-![フレーム IO](./images/frame75.png)
+![ フレーム IO](./images/frame75.png)
 
-「アセット&#x200B;****&#x200B;作成」を選択します。
+**アセットを作成** を選択します。
 
-![フレーム IO](./images/frame76.png)
+![ フレーム IO](./images/frame76.png)
 
 Frame.io 接続が自動的に選択されます。
 
@@ -448,9 +452,9 @@ Frame.io 接続が自動的に選択されます。
 - **チーム ID**：適切なチーム ID （この場合は `One Adobe Tutorial`）を選択します。
 - **プロジェクト ID**:`--aepUserLdap--` を使用します。
 - **フォルダー ID**:`root` を使用します。
-- **書式 ＜例外＞Photoshop のみ「テキスト」**: `File`を使用します。
+- **タイプ**:`File` を使用します。
 
-![フレーム IO](./images/frame78.png)
+![ フレーム IO](./images/frame78.png)
 
 フィールド **Name** には、**timestamp** などの変数を使用できます（または、より理にかなった値に変更します）。 定義済みの変数 **タイムスタンプ** は、「**日付と時刻** タブにあります。
 
