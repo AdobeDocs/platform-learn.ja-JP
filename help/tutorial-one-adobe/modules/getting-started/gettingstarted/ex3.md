@@ -4,7 +4,7 @@ description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 2%
@@ -149,7 +149,7 @@ ht-degree: 2%
 
 ![Edge設定に名前を付けて保存する ](./images/edgeconfig12m.png)
 
-その後、これが表示されます。 ここで、設定した正しいサンドボックスとデータストリームを選択する必要があります。 使用するサンドボックスは `--aepSandboxName--` で、データストリームは `--aepUserLdap-- - Demo System Datastream (Mobile)` と呼ばれます。
+その後、これが表示されます。 ここで、設定した正しいサンドボックスとデータストリームを選択する必要があります。 使用するサンドボックスは `--aepSandboxName--` で、データストリームは `--aepUserLdap-- - One Adobe Datastream (Mobile)` と呼ばれます。
 
 **Edge Network ドメイン** の場合は、デフォルトのドメインを使用してください。
 

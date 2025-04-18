@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '2050'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc5.png)
 
-この画像が表示されます。 **Webhook** ノードをクリックします。
+この画像が表示されます。 **Webhook** モジュールをクリックします。
 
 ![WF Fusion](./images/wffc6.png)
 
@@ -83,33 +83,81 @@ Workfront Fusion Webhook は入力待ちの状態です。
 
 ![WF Fusion](./images/wffc12.png)
 
-## Firefly T2I ノードの 1.2.4.2 アップデート
+## Firefly T2I モジュールの 1.2.4.2 アップデート
 
-ノード **Firefly T2I** をクリックします。 この画像が表示されます。 このリクエストのプロンプトは、以前は **フィールド内の馬** にハードコードされていました。 次に、そのハードコードされたテキストを削除し、Webhook からのフィールドに置き換えます。
+モジュール **Firefly T2I** を右クリックし、「**モジュールを削除**」を選択します。
 
-![WF Fusion](./images/wffcfft2i1.png)
+![WF Fusion](./images/wffcff1.png)
 
-テキスト **フィールド内の馬** を削除して、変数 **prompt** に置き換えます。この変数は **Webhook** 変数の下にあります。 「**OK**」をクリックして変更を保存します。
+「**+**」アイコンをクリックし、検索語句「`firefly`」を入力して「**Adobe Firefly**」を選択します。
 
-![WF Fusion](./images/wffcfft2i2.png)
+![WF Fusion](./images/wffcff2.png)
+
+**画像を生成** を選択します。
+
+![WF Fusion](./images/wffcff3.png)
+
+**Adobe Firefly** モジュールをドラッグ&amp;ドロップして、**ルーター** モジュールに接続します。
+
+![WF Fusion](./images/wffcff4.png)
+
+**Adobe Firefly** モジュールをクリックして開き、「**追加**」をクリックして新しい接続を作成します。
+
+![WF Fusion](./images/wffcff5.png)
+
+次のフィールドに入力します。
+
+- **接続名**:`--aepUserLdap-- - Firefly connection` を使用します。
+- **環境**: **実稼動** を使用します。
+- **タイプ**: **個人用アカウント** を使用します。
+- **クライアント ID**:`--aepUserLdap-- - One Adobe tutorial` という名前のAdobe I/O プロジェクトから **クライアント ID** をコピーします。
+- **クライアント秘密鍵**: **クライアント秘密鍵** を `--aepUserLdap-- - One Adobe tutorial` という名前のAdobe I/O プロジェクトからコピーします。
+
+Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [ で確認でき ](https://developer.adobe.com/console/projects.) す。
+
+![WF Fusion](./images/wffc20.png)
+
+すべてのフィールドに入力したら、「**続行**」をクリックします。 すると、接続が自動的に検証されます。
+
+![WF Fusion](./images/wffcff6.png)
+
+次に、受信した **Custom Webhook** によってシナリオに提供される **prompt** 変数を選択します。 「**OK**」をクリックします。
+
+![WF Fusion](./images/wffcff7.png)
+
+続行する前に、シナリオで古いルートを無効にする必要があります。この演習では、現在設定している新しいルートのみを使用します。 これを行うには、**Router** モジュールと **Iterator** モジュールの間にある **レンチ** アイコンをクリックし、**ルートを無効にする** を選択します。
+
+![WF Fusion](./images/wffcff7a.png)
+
+「**保存**」をクリックして変更を保存し、「**1 回実行**」をクリックして設定をテストします。
+
+![WF Fusion](./images/wffcff8.png)
+
+Postmanに移動し、リクエストのプロンプトを確認して、「**送信**」をクリックします。
+
+![WF Fusion](./images/wffcff8a.png)
+
+「送信」をクリックしたら、Workfront Fusion に戻り、**Adobe Firefly** モジュールのバブルアイコンをクリックして詳細を確認します。
+
+![WF Fusion](./images/wffcff9.png)
+
+**OUTPUT** から **Details** / **url** に移動し、**Adobe Firefly** で生成された画像の URl を見つけます。
+
+![WF Fusion](./images/wffcff10.png)
+
+Postman リクエストから送信されたプロンプト（この場合は **Misty Meadows** を表す画像が表示されます。
+
+![WF Fusion](./images/wffcff11.png)
 
 ## 1.2.4.2 PSD ファイルの背景の変更
 
-次に、標準搭載のコネクタを使用して、シナリオを更新して、よりスマートにします。 また、Fireflyからの出力をFireflyに接続して、Photoshopの「画像を生成」アクションからの出力を使用してPSD ファイルの背景画像が動的に変化するようにします。
+次に、標準搭載のコネクタを使用してシナリオを更新し、よりスマートにします。 また、Fireflyからの出力をFireflyに接続して、Photoshopの「画像を生成」アクションからの出力を使用してPSD ファイルの背景画像が動的に変化するようにします。
 
-前の演習では、**Firefly T2I** ルートを無効にしました。 今すぐそれを元に戻すべきです。 **stop**-icon をクリックして、ルートを再度有効にします。
-
-![WF Fusion](./images/wffc13.png)
-
-**stop** アイコンが表示されなくなります。 次に、前の演習の設定に向かう他のルートの **レンチ** アイコンをクリックし、**ルートを無効** を選択します。
-
-![WF Fusion](./images/wffc14.png)
-
-この画像が表示されます。 次に、**Firefly T2I** ノードにマウスポインターを置き、「**+**」アイコンをクリックします。
+この画像が表示されます。 次に、**Adobe Firefly** モジュールにポインタを合わせて、「**+**」アイコンをクリックします。
 
 ![WF Fusion](./images/wffc15.png)
 
-検索メニューに「`Photoshop`」と入力し、**Adobe Photoshop** アクションをクリックします。
+検索メニューで、「`Photoshop`」と入力して「**Adobe Photoshop**」アクションをクリックします。
 
 ![WF Fusion](./images/wffc16.png)
 
@@ -164,9 +212,9 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 ![WF Fusion](./images/wffc27.png)
 
-**入力** が表示されるまで下にスクロールします。 ここで、背景レイヤーに挿入する必要があるものを定義する必要があります。 この場合、動的に生成された画像を含むFirefly T2I オブジェクトの出力を選択する必要があります。
+**入力** が表示されるまで下にスクロールします。 ここで、背景レイヤーに挿入する必要があるものを定義する必要があります。 この場合、動的に生成された画像を含む **Adobe Firefly** モジュールの出力を選択する必要があります。
 
-**ストレージ** については、「**外部**」を選択します。 **ファイルの場所** について、**Firefly T2I** リクエストの出力から変数 `data.outputs[].image.url` を検索して見つけます。
+**ストレージ** については、「**外部**」を選択します。 **ファイルの場所** については、**Adobe Firefly** モジュールの出力から変数 `{{XX.details[].url}}` をコピーして貼り付けます。 変数内の **XX** を **Adobe Firefly** モジュールのシーケンス番号で置き換えます。この例では、**22** です。
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -191,11 +239,27 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 ![WF Fusion](./images/wffc33.png)
 
+「**保存**」をクリックして変更を保存し、「**1 回実行**」をクリックして設定をテストします。
+
+![WF Fusion](./images/wffc33a.png)
+
+Postmanに移動し、リクエストのプロンプトを確認して、「**送信**」をクリックします。
+
+![WF Fusion](./images/wffcff8a.png)
+
+この画像が表示されます。 **Adobe Photoshop - PSDの編集を適用** モジュールのバブルをクリックします。
+
+![WF Fusion](./images/wffc33b.png)
+
+新しいPSD ファイルが正常に生成され、Microsoft Azure ストレージアカウントに保存されたことを確認できます。
+
+![WF Fusion](./images/wffc33c.png)
+
 ## 1.2.4.3 PSD ファイルのテキストレイヤーの変更
 
 ### コールトゥアクションテキスト
 
-次に、**Adobe Photoshop - PSDの編集を適用** ノードにマウスポインターを置き、「**+**」アイコンをクリックします。
+次に、**Adobe Photoshop - PSDの編集を適用** モジュールにカーソルを合わせ、「**+**」アイコンをクリックします。
 
 ![WF Fusion](./images/wffc34.png)
 
@@ -237,9 +301,13 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 ### ボタンのテキスト
 
-作成したノードを右クリックし、「**クローン**」を選択します。 これにより、2 つ目の類似オブジェクトが作成されます。
+作成したモジュールを右クリックし、「**クローン**」を選択します。 これにより、2 つ目の類似したモジュールが作成されます。
 
 ![WF Fusion](./images/wffc42.png)
+
+複製したモジュールを、前の **Adobe Photoshop - テキストレイヤーを編集** モジュールに接続します。
+
+![WF Fusion](./images/wffc42a.png)
 
 この画像が表示されます。 まず、以前に設定済みのAdobe Photoshop接続を選択します（`--aepUserLdap-- Adobe IO` という名前にする必要があります）。
 
@@ -253,11 +321,11 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 ![WF Fusion](./images/wffc44.png)
 
-ダイアログの **名前** の下に、**2048x2048-cta** と入力します。
+ダイアログの **Name** の下に、名前 **2048x2048-button-text** を入力します。
 
 ![WF Fusion](./images/wffc43.png)
 
-下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **cta** を選択します。
+下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **button** を選択します。
 
 ![WF Fusion](./images/wffc45.png)
 
@@ -275,11 +343,11 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 これらの変更をPhotoshop ファイルに適用した後、次に **Webhook レスポンス** を設定する必要があります。
 
-ノード **Adobe Photoshop - テキストレイヤーを編集にカーソルを合わせ** 「**+**」アイコンをクリックしてください。
+モジュール **Adobe Photoshop - テキストレイヤーを編集にカーソルを合わせ** 「**+**」アイコンをクリックしてください。
 
 ![WF Fusion](./images/wffc48.png)
 
-**Webhook** を検索し、「**Webhook**」を選択します。
+`webhooks` を検索し、「**Webhook**」を選択します。
 
 ![WF Fusion](./images/wffc49.png)
 
@@ -297,11 +365,11 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 ![WF Fusion](./images/wffc51.png)
 
-前のリクエストの出力からパス `data[]._links.renditions[].href` を選択します。 **詳細設定を表示** のチェックボックスを有効にして、「**項目を追加**」をクリックします。
+変数 `{{XX.data[]._links.renditions[].href}}` をコピーして貼り付け、**XX** を最後の **Adobe Photoshop - テキストレイヤーを編集** モジュール（この場合は **25** のシーケンス番号に置き換えます。 **詳細設定を表示** のチェックボックスを有効にして、「**項目を追加**」をクリックします。
 
 ![WF Fusion](./images/wffc52.png)
 
-「**キー**」フィールドに「`Content-Type`」と入力します。 **値** フィールドに「`application/json`」と入力します。 「**保存**」をクリックします。
+「**キー**」フィールドに「`Content-Type`」と入力します。 **値** フィールドに「`application/json`」と入力します。 「**追加**」をクリックします。
 
 ![WF Fusion](./images/wffc52a.png)
 
@@ -313,7 +381,7 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 ![WF Fusion](./images/wffc54.png)
 
-この画像が表示されます。 **1 回実行** をクリックします。
+この画像が表示されます。 「**保存**」をクリックして変更を保存し、「**1 回実行**」をクリックしてシナリオをテストします。
 
 ![WF Fusion](./images/wffc55.png)
 
@@ -325,7 +393,7 @@ Postmanに戻り、「**送信**」をクリックします。 ここで使用�
 
 ![WF Fusion](./images/wffc58.png)
 
-注意：Workfront Fusion でシナリオを実行したら、各ノードの上のバブルをクリックすると、各ノードに関する情報を確認できます。
+注意：Workfront Fusion でシナリオを実行したら、各モジュールの上にあるバブルをクリックすると、各モジュールに関する情報を確認できます。
 
 ![WF Fusion](./images/wffc59.png)
 

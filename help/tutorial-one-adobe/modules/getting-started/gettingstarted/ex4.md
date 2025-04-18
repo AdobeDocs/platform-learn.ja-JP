@@ -4,7 +4,7 @@ description: はじめに – web サイトの使用
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-前の手順で作成した `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)` という名前のデータ収集プロパティで、「**選択**」をクリックします。 「**保存**」をクリックします。
+前の手順で作成した `--aepUserLdap-- - One Adobe (DD/MM/YYYY) (web)` という名前のデータ収集プロパティで、「**選択**」をクリックします。 「**保存**」をクリックします。
 
 ![DSN](./images/web2a.png)
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-前の手順で作成した `--aepUserLdap - Demo System (DD/MM/YYYY) (web)` という名前のデータ収集プロパティで、「**選択**」をクリックします。
+前の手順で作成した `--aepUserLdap - One Adobe (DD/MM/YYYY) (web)` という名前のデータ収集プロパティで、「**選択**」をクリックします。
 
 ![DSN](./images/web2a.png)
 
