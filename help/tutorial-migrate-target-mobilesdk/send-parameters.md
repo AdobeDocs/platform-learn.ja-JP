@@ -2,7 +2,7 @@
 title: パラメーターの送信 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
 description: Experience Platform Web SDKを使用して、mbox、プロファイル、エンティティパラメーターをAdobe Targetに送信する方法について説明します。
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Target では、単一の顧客 ID を使用して、デバイスやシステム
 
 | at.js パラメーターの例 | Platform Web SDK オプション | メモ |
 | --- | --- | --- |
-| `at_property` | なし | プロパティトークンは [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target) で設定され、`sendEvent` 呼び出しでは設定できません。 |
+| `at_property` | なし | プロパティトークンは [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target) で設定され、`sendEvent` 呼び出しでは設定できません。 |
 | `pageName` | `xdm.web.webPageDetails.name` または <br> `data.__adobe.target.pageName` | ターゲット mbox パラメーターは、`xdm` オブジェクトの一部または `data.__adobe.target` オブジェクトの一部として渡すことができます。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 適切にマッピングするには、すべての Target プロファイルパラメーターを `data` オブジェクトの一部として渡し、`profile.` のプレフィックスを付ける必要があります。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | `data` オブジェクトの一部として渡す必要がある Target のカテゴリ親和性機能に使用される予約済みのパラメーター。 |

@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2446'
 ht-degree: 0%
 
 ---
@@ -335,8 +335,6 @@ Webhook に 3 つのヒットが表示されます。
 Adobeは、複数の ETL ベンダーと提携して、Experience Platformへのデータ取り込みをサポートしています。 このチュートリアルでは、様々なサードパーティ・ベンダーにより ETL が取り上げられていますが、これらのリソースの一部を確認することは可能です。
 
 * [Adobe Experience Platform用 ETL 統合の開発 ](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Adobe Exchangeの Informatica Adobe Experience Platform Connector ページ ](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Adobe Experience Platform Connector の Informatica ドキュメント ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platformスナップパック ](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## その他のリソース

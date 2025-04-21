@@ -1,12 +1,12 @@
 ---
-title: Platform Web SDK を使用したJourney Optimizer web チャネルの設定
-description: Platform Web SDK を使用してJourney Optimizer web チャネルを実装する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
+title: Platform Web SDKを使用したJourney Optimizer web チャネルの設定
+description: Platform Web SDKを使用してJourney Optimizer web チャネルを実装する方法について説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 1%
@@ -14,19 +14,19 @@ ht-degree: 1%
 ---
 
 
-# Web SDK を使用したJourney Optimizer web チャネルの設定
+# Web SDKを使用したJourney Optimizer web チャネルの設定
 
-Adobe Experience Platform Web SDK を使用してAdobe Journey Optimizer [web チャネル ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) を実装する方法について説明します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
+Adobe Experience Platform Web SDKを使用してAdobe Journey Optimizer[web チャネル ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) を実装する方法について説明します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
 
 このレッスンに従うと、Journey Optimizerのユーザーは、Journey Optimizer web デザイナーを使用した高度なオンラインパーソナライゼーションのために web チャネルを使用できるようになります。
 
-![Web SDK とAdobe Analyticsの図 ](assets/dc-websdk-ajo.png)
+![Web SDKとAdobe Analyticsの図 ](assets/dc-websdk-ajo.png)
 
 ## 学習内容
 
 このレッスンを終了すると、次の操作を実行できます。
 
-* Web チャネルエクスペリエンスを配信する際の Web SDK の機能と重要性を理解します。
+* Web チャネルエクスペリエンスを提供する際の Web SDKの機能と重要性を理解します。
 * サンプルの Luma ロイヤルティ報酬ユースケースを利用して、web チャネルキャンペーンを最初から最後まで作成するプロセスを説明します。
 * インターフェイス内でキャンペーンのプロパティ、アクション、スケジュールを設定します。
 * Adobe Experience Cloud Visual Editing Helper 拡張機能の機能とメリットを説明します。
@@ -38,7 +38,7 @@ Adobe Experience Platform Web SDK を使用してAdobe Journey Optimizer [web �
 
 このセクションのレッスンを完了するには、まず次の操作を行う必要があります。
 
-* データ要素とルールの設定を含む、Platform Web SDK の初期設定に関するすべてのレッスンを完了します。
+* データ要素とルールの設定を含む、Platform web SDKの初期設定に関するすべてのレッスンを実施します。
 * Adobe Experience Platform Web SDK タグ拡張機能のバージョンが 2.16 以上であることを確認します。
 * Journey Optimizer Web Designer を使用して web チャネルエクスペリエンスを作成する場合は、Google ChromeまたはMicrosoft® Edge ブラウザーを使用していることを確認してください。
 * また、[Adobe Experience Cloud Visual Editing Helper ブラウザー拡張機能 ](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) をダウンロードして有効にしたことも確認します。
@@ -52,11 +52,11 @@ Adobe Experience Platform Web SDK を使用してAdobe Journey Optimizer [web �
   > 1. web サイトは iframe 内に埋め込まれます。
   > 1. 顧客の QA またはステージサイトは、外部からアクセスできません（内部サイトです）。
 
-* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合は、[ このコンテンツを公開するためのサブドメインを設定する ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) 必要があります。
+* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合は、[ このコンテンツを公開するためのサブドメインを設定 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) する必要があります。
 * コンテンツ実験機能を使用する場合は、web データセットもレポート設定に含まれていることを確認してください。
 * 現在、web プロパティで web チャネルキャンペーンのオーサリングと配信を可能にする、次の 2 種類の実装がサポートされています。
-   * クライアント側のみ：web サイトを変更するには、Adobe Experience Platform Web SDK を実装する必要があります。
-   * ハイブリッドモード：Platform Edge Networkサーバー API を使用して、パーソナライゼーションサーバーサイドをリクエストできます。 API からの応答は次に、Adobe Experience Platform Web SDK に提供され、クライアントサイドで変更をレンダリングします。 詳しくは、Adobe Experience Platform Edge Networkサーバー API ドキュメントを参照してください。 ハイブリッドモードの追加の詳細と実装サンプルについては、このブログ投稿を参照してください。
+   * クライアント側のみ：Web サイトを変更するには、Adobe Experience Platform Web SDKを実装する必要があります。
+   * ハイブリッドモード：Platform Edge Network Server API を使用して、パーソナライゼーションサーバーサイドをリクエストできます。 次に、API からの応答がAdobe Experience Platform Web SDKに提供され、クライアントサイドで変更をレンダリングします。 詳しくは、Adobe Experience Platform Edge Network Server API ドキュメントを参照してください。 ハイブリッドモードの追加の詳細と実装サンプルについては、このブログ投稿を参照してください。
 
   >[!NOTE]
   >
@@ -69,7 +69,7 @@ Adobe Experience Platform Web SDK を使用してAdobe Journey Optimizer [web �
 
 まず、web チャネルキャンペーンで使用される用語を理解する必要があります。
 
-* **Web チャネル**:web を介したコンテンツの通信または配信の媒体。 このガイドのコンテキストでは、Adobe Journey Optimizer内で Platform Web SDK を使用してパーソナライズされたコンテンツが web サイトの訪問者に配信されるメカニズムを指します。
+* **Web チャネル**:web を介したコンテンツの通信または配信の媒体。 このガイドのコンテキストでは、Adobe Journey Optimizer内で Platform Web SDKを使用してパーソナライズされたコンテンツが web サイトの訪問者に配信されるメカニズムを指します。
 * **web サーフェス**：コンテンツが配信される URL で識別される web プロパティを参照します。 1 つまたは複数の web ページを含めることができます。
 * **Journey Optimizer Web Designer**: ユーザーが web チャネルエクスペリエンスをデザインできる、Journey Optimizer内の特定のツールまたはインターフェイスです。
 * **Adobe Experience Cloud Visual Editing Helper**: web チャネルエクスペリエンスの視覚的な編集とデザインを支援するブラウザー拡張機能。
@@ -123,15 +123,15 @@ Adobe Experience Platform サービスは既にデータストリームに追加
 
 Web チャネルキャンペーン内でコンテンツ実験を使用するには、使用する web データセットがレポート設定にも含まれていることを確認する必要があります。 Journey Optimizer レポートシステムは、データセットを読み取り専用で使用して、標準のコンテンツ実験レポートを生成します。
 
-[ コンテンツ実験レポート用のデータセットの追加について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets)。
+[ コンテンツ実験レポート用のデータセットの追加について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)。
 
 ## ユースケースの概要 – ロイヤルティ報酬
 
-このレッスンでは、サンプルのロイヤルティ報酬のユースケースを使用して、Web SDK を使用した web チャネルエクスペリエンスの実装を詳細に説明します。
+このレッスンでは、サンプルのロイヤルティ報酬のユースケースを使用して、web SDKを使用した web チャネルエクスペリエンスの実装を詳細に説明します。
 
 この使用例を使用すると、Journey Optimizer キャンペーンと Web デザイナーを活用して、Journey Optimizerが最適なインバウンドエクスペリエンスを顧客に提供するのにどのように役立つかをより深く理解できます。
 
-このチュートリアルは実装者向けなので、このレッスンにはJourney Optimizerでの実質的なインターフェイス作業が含まれていることは注目に値します。 このようなインターフェイスタスクは通常マーケターが処理しますが、web チャネルキャンペーンの作成を通常担当していない実装者でも、プロセスに関するインサイトを得ることが有益な場合があります。
+このチュートリアルは実装者向けなので、このレッスンにはJourney Optimizerでの実質的なインターフェイス作業が含まれていることは注目に値します。 このようなインターフェイスタスクは通常マーケターが処理しますが、web チャネルキャンペーンの作成を通常担当していない実装者でも、insightをプロセスに参加させることが有益な場合があります。
 
 ### ロイヤルティ報酬キャンペーンの作成
 
@@ -191,7 +191,7 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
    ![ 実験を作成 ](assets/web-channel-create-content-experiment.png)
 
-1. 最初に **[!UICONTROL 成功指標]** を選択します。 これは、コンテンツの有効性を判断するための指標です。 **[!UICONTROL ユニークインバウンドクリック数]** を選択して、web エクスペリエンス CTA でより多くのクリック数を生成するコンテンツ処理を確認します。
+1. 最初に **[!UICONTROL 成功指標]** を選択します。 これは、コンテンツの有効性を判断するための指標です。 **[!UICONTROL ユニークインバウンドクリック数]** を選択して、web エクスペリエンスCTAでより多くのクリック数を生成するコンテンツ処理を確認します。
 
    ![ 成功指標を選択 ](assets/web-channel-content-experiment-metric.png)
 
@@ -201,11 +201,11 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
 1. また、オプションで「均等に配分 **[!UICONTROL を選択]** ます。 このオプションを選択すると、処理の分割が常に均等に分割されます。
 
-[Adobe Journey Optimizer web チャネルでのコンテンツ実験の詳細を説明します ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)。
+[Adobe Journey Optimizer web チャネルでのコンテンツ実験の詳細を説明します ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)。
 
 ### Visual Helper を使用したコンテンツの編集
 
-次に、web チャネルエクスペリエンスを作成します。 それには、Adobe Experience Cloud **[!UICONTROL Visual Helper]** を使用します。 このツールは、Google ChromeおよびMicrosoft® Edgeと互換性のあるブラウザー拡張機能です。 エクスペリエンスを作成する前に、拡張機能をダウンロードしていることを確認してください。 また、web ページに Web SDK が含まれていることを確認します。
+次に、web チャネルエクスペリエンスを作成します。 それには、Adobe Experience Cloud **[!UICONTROL Visual Helper]** を使用します。 このツールは、Google ChromeおよびMicrosoft® Edgeと互換性のあるブラウザー拡張機能です。 エクスペリエンスを作成する前に、拡張機能をダウンロードしていることを確認してください。 また、web ページに Web SDKが含まれていることを確認します。
 
 1. キャンペーンの **[!UICONTROL アクション]** タブ内で、「**[!UICONTROL コンテンツを編集]** をクリックします。 サーフェスとして 1 ページの URL を入力したので、コンポーザーで作業を開始する準備が整っています。
 
@@ -230,25 +230,25 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 1. **[!UICONTROL オファーの決定コンポーネント]** を使用すると、web ページにオファーを挿入できます。 このコンポーネントは、**[!UICONTROL 意思決定管理]** を使用して、Luma 訪問者に提供する最適なオファーを選択します。
 
 
-### HTMLデザインの変更
+### HTML デザインの変更
 
 ロイヤルティ報酬キャンペーンのコンポーネントとしてサイトにさらに高度な変更やカスタム変更を加える場合は、いくつかの方法を使用できます。
 
-**[!UICONTROL コンポーネント]** パネルを使用して、HTMLまたはその他のコンテンツを Luma サイトに直接追加します。
+**[!UICONTROL コンポーネント]** パネルを使用して、HTMLまたは他のコンテンツを Luma サイトに直接追加します。
 
 ![ コンポーネントパネルを参照 ](assets/web-channel-components-pane.png)
 
-新しいHTMLコンポーネントをページの上部に追加します。 デザインインターフェイスまたは **[!UICONTROL コンテキスト]** パネルから、コンポーネント内のHTMLを編集します。
+新しいHTML コンポーネントをページ上部に追加します。 デザインインターフェイスまたは **[!UICONTROL コンテキスト]** パネルから、コンポーネント内のHTMLを編集します。
 
-![ カスタムHTMLを追加 ](assets/web-channel-add-html-component.png)
+![ カスタムHTMLの追加 ](assets/web-channel-add-html-component.png)
 
-または、「変更 **[!UICONTROL パネルからHTMLの編集を追加し]** す。 このパネルを使用すると、ページ上のコンポーネントを選択し、Designer インターフェイスから編集できます。
+または、**[!UICONTROL 変更]** パネルからHTMLの編集内容を追加します。 このパネルを使用すると、ページ上のコンポーネントを選択し、Designer インターフェイスから編集できます。
 
 エディター内で、`Luma Loyalty Rewards – Gold Status` オーディエンスのHTMLを追加します。 「**[!UICONTROL 検証]**」を選択します。
 
-![HTMLを検証 ](assets/web-channel-add-custom-html-validate.png)
+![HTMLの検証 ](assets/web-channel-add-custom-html-validate.png)
 
-次に、新しいカスタムHTMLコンポーネントでフィット感と操作性を確認します。
+次に、新しいカスタム HTML コンポーネントでフィット感と操作性を確認します。
 
 ![ カスタムHTMLのレビュー ](assets/web-channel-review-custom-html.png)
 
@@ -298,7 +298,7 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
 ### Adobe Experience Platform Debuggerを使用した web チャネル検証
 
-このAdobe Experience Platform Debugger拡張機能はChromeと Firefox の両方で使用でき、web ページを分析してAdobe Experience Cloud ソリューションの実装に関する問題を特定します。
+Adobe Experience Platform Debugger拡張機能はChromeと Firefox の両方で使用でき、web ページを分析してAdobe Experience Cloud ソリューションの実装に関する問題を特定します。
 
 Luma サイトでデバッガーを使用すると、実稼動環境での web チャネルエクスペリエンスを検証できます。 これは、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
@@ -314,15 +314,15 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. **概要** に移動します。 **[!UICONTROL データストリーム ID]** が、Adobe Journey Optimizerを有効にした **[!UICONTROL Adobeデータ収集]** の **[!UICONTROL データストリーム]** と一致することを確認します。
+1. **概要** に移動します。 **[!UICONTROL データストリーム ID]** が、Adobe Journey Optimizerを有効にした **[!UICONTROL 4}Adobe Data Collection} の]** データストリーム ]**と一致することを確認します。**[!UICONTROL 
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. その後、様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、Adobe Experience Platform Edge Networkに送信されたリクエストを検証できます。
+1. その後、様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、Adobe Experience Platform Edge Networkに送信されるリクエストを検証できます。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. **[!UICONTROL ソリューション]** の下の **[!UICONTROL Experience PlatformWeb SDK]** に移動します。
+1. **[!UICONTROL ソリューション]** で、**[!UICONTROL Experience Platform Web SDK]** に移動します。
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -330,7 +330,7 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**[!UICONTROL Adobe Experience Platform Edge network]** に送信されるリクエストを検証します。 ログトラッキング用に、これらのリクエストをすべて **[!UICONTROL Assurance]** に取り込む必要があります。
+1. 様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**[!UICONTROL Adobe Experience Platform Edge network]** に送信されるリクエストを検証します。 ログトラッキングのために、これらのリクエストはすべて ]**0}Assurance} に取り込む必要があります。**[!UICONTROL 
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -339,4 +339,4 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -5,10 +5,10 @@ user-guide-description: Experience Platform の多くの要素について学び
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [Platform チュートリアル](/help/platform/overview.md)
-+ Platform {#intro-to-platform} の概要
++ Platform の概要 {#intro-to-platform}
    + [Experience Platform を活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [バックグラウンド：Experience Platformを活用したカスタマーエクスペリエンス](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform の概要](/help/platform/intro-to-platform/overview.md)
@@ -69,7 +69,7 @@ Campaigns
    + [基本アーキテクチャ](/help/platform/intro-to-platform/basic-architecture.md)
    + [ユーザーインターフェイス](/help/platform/intro-to-platform/interface-tour.md)
    + [役割とプロジェクトのフェーズ](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ Real-Time CDP {#rtcdp} の概要
++ Real-Time CDPについて {#rtcdp}
    + [概要](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [エンドツーエンドのデモ](/help/platform/rtcdp/demo.md)
    + [ワークフロー](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
@@ -119,15 +119,15 @@ Campaigns
    + [ストリーミングセグメント化のデモ](/help/platform/audiences/streaming-segmentation-demo.md)
    + [バッチオーディエンスをオンデマンドで評価](/help/platform/audiences/evaluate-audiences-on-demand.md)
    + [ オーディエンスルールの評価 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [ データを書き出すデータセットの作成 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [データを書き出すデータセットの作成](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [セグメントの一致の接続設定](/help/platform/segments/segment-match-connection-setup.md)
    + [セグメントの一致のデータガバナンス](/help/platform/segments/segment-match-data-governance.md)
    + [セグメントの一致の設定フロー](/help/platform/segments/segment-match-configuration-flow.md)
    + [セグメントの一致によるインサイトの事前共有](/help/platform/segments/segment-match-pre-share-insights.md)
    + [受信データのセグメント一致](/help/platform/segments/segment-match-receiving-data.md)
 + [監査ログ](/help/platform/governance/audit-logs.md)
-+ [ データ収集 ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ [データ収集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ コラボレーション {#collaboration}
    + [Real-Time CDP Collaborationの概要](collaboration/real-time-cdp-collaboration-overview.md)
    + [権限の設定](collaboration/set-permissions-for-collaboration.md)
    + [広告主アカウントの設定](collaboration/set-up-an-advertiser-account.md)
@@ -151,12 +151,12 @@ Campaigns
    + [偽名プロファイルとイベントの有効期限（TTL）](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [プロファイルの削除](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [ プロファイル属性の更新 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
-+ データ取得 {#data-ingestion}
++ データ取り込み {#data-ingestion}
    + [概要](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [バッチ取り込みの概要](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [データセットの作成と入力](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [データセットとバッチの削除](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [CSV ファイルの XDM へのマッピング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
+   + [XDM への CSV ファイルのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [ソースの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Adobe Analyticsからのデータの取得 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [Audience Managerからのデータの取得 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -168,7 +168,7 @@ Campaigns
    + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ja)
    + [Web SDK チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=ja){target="_blank"}
-+ Data Lifecycle {#data-lifecycle}
++ データライフサイクル {#data-lifecycle}
    + [データセットの有効期限](/help/platform/data-lifecycle/expire-datasets.md)
 + 宛先 {#destinations}
    + [宛先の概要](/help/platform/destinations/understanding-destinations.md)
@@ -193,7 +193,7 @@ Campaigns
    + [ID および ID グラフの概要](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID データのラベル、取り込み、検証](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID グラフの表示](/help/platform/identities/view-identity-graphs.md)
-   + のルールをリンクする ID グラフ {#graph-linking-rules}
+   + ID グラフのリンクルール {#graph-linking-rules}
       + [概要](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [グラフシミュレーション](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + インテリジェントサービス {#intelligent-services}
@@ -206,7 +206,7 @@ Campaigns
    + [顧客 AI の価値](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Customer AI の設定](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Customer AI スコアおよびインサイトの使用](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ 監視{#monitoring}
++ 監視 {#monitoring}
    + [データ取得の監視](/help/platform/monitoring/monitoring-dashboard.md)
    + [セグメントの有効化の監視](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [データフローのモニタリング](/help/platform/monitoring/data-monitoring.md)
@@ -227,7 +227,7 @@ Campaigns
    + [ 偽名プロファイルの有効期限（TTL） ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [プロファイルの削除](/help/platform/profiles/delete-profiles.md)
    + [アップサートを使用した特定の属性の更新](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
-+ Privacy and Security {#privacy}
++ プライバシーとセキュリティ {#privacy}
    + [Privacy Serviceについて](/help/platform/privacy/introduction-to-privacy-services.md)
    + [プライバシーリクエストの ID データ](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [プライバシーJavaScriptライブラリ](/help/platform/privacy/using-privacy-javascript-library.md)
@@ -285,12 +285,12 @@ Campaigns
    + [概要](/help/platform/use-case-playbooks/overview.md)
    + [プレイブックサンドボックスの設定](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [プレイブックインスタンスの作成と公開](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Experience Cloud Integrations {#experience-cloud}
++ Experience Cloud の統合 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ja)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + 業界動向 {#industry}
    + [データ管理の将来と環境の変化](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [ブランドと消費者の 2 つの認識の物語](/help/platform/industry/brands-vs-consumers.md)

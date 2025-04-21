@@ -4,7 +4,7 @@ description: Adobe Experience Platform Web SDKで使用する ID 名前空間を
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -57,7 +57,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 次に、Luma CRM ID の名前空間を作成します。
 
-1. [ データ収集インターフェイス ](https://launch.adobe.com/){target="_blank"} を開きます。
+1. [ データ収集インターフェイス ](https://experience.adobe.com/data-collection/){target="_blank"} を開きます。
 1. チュートリアルに使用するサンドボックスを選択します
 
    >[!NOTE]
