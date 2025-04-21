@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 新 1.2.6.1 いシナリオを作成するには
 
-[https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Workfront Fusion** を開きます。
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **Workfront Fusion** を開きます。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2 Frame.io での Webhook の設定
 
-[https://developer.frame.io/](https://developer.frame.io/) に移動します。 **デベロッパーツール** をクリックし、「**カスタムアクション**」を選択します。
+[https://developer.frame.io/](https://developer.frame.io/){target="_blank"} に移動します。 **デベロッパーツール** をクリックし、「**カスタムアクション**」を選択します。
 
 ![ フレーム IO](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ![ フレーム IO](./images/aemf11.png)
 
-[https://app.frame.io/projects](https://app.frame.io/projects) に移動し、以前に作成したフォルダー（`--aepUserLdap--` という名前）に移動します。 ダブルクリックして、前の演習で作成したアセットを開きます。
+[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} に移動し、以前に作成したフォルダー（`--aepUserLdap--` という名前）に移動します。 ダブルクリックして、前の演習で作成したアセットを開きます。
 
 ![ フレーム IO](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ Workfront Fusion に戻り、完全な JSON ペイロードを「**JSON 形式�
 
 ![ フレーム IO](./images/aemf51.png)
 
-新しい専用フォルダーを作成するには、[https://experience.adobe.com](https://experience.adobe.com/) にアクセスしてください。 適切なExperience Cloud インスタンスが選択されていることを確認します。このインスタンスは `--aepImsOrgName--` である必要があります。 次に、**Experience Manager Assets** をクリックします。
+新しい専用フォルダーを作成するには、[https://experience.adobe.com](https://experience.adobe.com/){target="_blank"} にアクセスしてください。 適切なExperience Cloud インスタンスが選択されていることを確認します。このインスタンスは `--aepImsOrgName--` である必要があります。 次に、**Experience Manager Assets** をクリックします。
 
 ![ フレーム IO](./images/aemf52.png)
 

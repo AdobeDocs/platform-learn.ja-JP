@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -25,6 +26,14 @@ Workfront Fusion でクリエイティブワークフローを自動化する方
 [1.3.1 Adobe Expressの概要 ](./ex1.md){target="_blank"}
 
 この演習では、Firefly Servicesと組み合わせてAdobe Expressを探索し、その機能を理解します。
+
+[1.3.2 Adobe Expressのアニメーションとビデオ ](./ex2.md){target="_blank"}
+
+この演習では、Adobe Expressを使用して画像をアニメーション化し、ビデオを作成します。
+
+[1.3.3 Adobe ExpressでのAssetsの一括作成 ](./ex3.md){target="_blank"}
+
+この演習では、Adobe Expressと連携し、Adobe Expressの標準自動化機能を使用して、アセットの複数のバージョンを作成します。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 

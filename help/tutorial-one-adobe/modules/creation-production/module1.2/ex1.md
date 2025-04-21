@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ## 1.2.1.1 新しいシナリオを作成
 
-[https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Workfront Fusion** を開きます。
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **Workfront Fusion** を開きます。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -67,13 +67,13 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 | キー | 値 |
 |:-------------:| :---------------:| 
-| `CONST_client_id` | Adobe Systems I/O プロジェクトクライアント ID |
-| `CONST_client_secret` | Adobe Systems I/O プロジェクトクライアントシークレット |
-| `CONST_scope` | Adobe Systems I/O プロジェクト スコープ |
+| `CONST_client_id` | Adobe I/O プロジェクトのクライアント ID |
+| `CONST_client_secret` | Adobe I/O プロジェクトのクライアント秘密鍵 |
+| `CONST_scope` | Adobe I/O プロジェクトの範囲 |
 
-これらの変数検索文字列には、 [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) に移動し、 `--aepUserLdap-- One Adobe tutorial` という名前の Adobe Systems I/O プロジェクトを開きます。
+これらの変数を見つけるには、[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"} に移動して、`--aepUserLdap-- One Adobe tutorial` という名前のAdobe I/O プロジェクトを開きます。
 
-![WF フュージョン](./images/wffusion9.png)
+![WF Fusion](./images/wffusion9.png)
 
 プロジェクトで、「**OAuth サーバー間**」を選択して、上記のキーの値を確認します。
 
@@ -81,9 +81,9 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 上記のキーと値を使用して、**複数の変数を設定** オブジェクトを設定できます。 **項目を追加** を選択します。
 
-![WF フュージョン](./images/wffusion11.png)
+![WF Fusion](./images/wffusion11.png)
 
-**変数名****CONST_client_id**&#x200B;とその&#x200B;**変数値を入力し****追加**&#x200B;を選択します。
+**変数名**:**CONST_client_id** とその **変数値** を入力し、「**追加**」を選択します。
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -97,15 +97,15 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 **項目を追加** を選択します。
 
-![WF フュージョン](./images/wffusion15.png)
+![WF Fusion](./images/wffusion15.png)
 
-**変数名** **CONST_範囲**&#x200B;とその&#x200B;**変数値**&#x200B;を入力し、[**追加**] を選択します。
+**変数名**:**CONST_scope** とその **変数値** を入力し、「**追加**」を選択します。
 
-![WF フュージョン](./images/wffusion16.png)
+![WF Fusion](./images/wffusion16.png)
 
-「 **OK**」を選択します。
+**OK** を選択します。
 
-![WF フュージョン](./images/wffusion17.png)
+![WF Fusion](./images/wffusion17.png)
 
 **複数の変数を設定** にポインタを合わせ、大きな **+** アイコンを選択して別のモジュールを追加します。
 
@@ -178,13 +178,13 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion32.png)
 
-[ **HTTP - リクエストを作成** にカーソルを合わせ、 **+** アイコンを選択して別のモジュールを追加します。
+**HTTP - リクエストを行う** にポインタを合わせ、「**+**」アイコンを選択して別のモジュールを追加します。
 
-![WF フュージョン](./images/wffusion33.png)
+![WF Fusion](./images/wffusion33.png)
 
-検索 バーで、[ `tools`] に検索します。 「 **ツール**」を選択します。
+検索バーで `tools` を検索します。 **ツール** を選択します。
 
-![WF フュージョン](./images/wffusion34.png)
+![WF Fusion](./images/wffusion34.png)
 
 「**複数の変数を設定**」を選択します。
 
@@ -206,15 +206,15 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion39.png)
 
-シナリオを実行したら、最後の **複数の変数を設定** オブジェクトの **疑問符** アイコンを選択します。 変数 `bearer_token`にaccess_tokenが保存されていることを確認できます。
+シナリオを実行したら、最後の **複数の変数を設定** オブジェクトの **疑問符** アイコンを選択します。 access_token が変数 `bearer_token` に格納されていることがわかります。
 
-![WF フュージョン](./images/wffusion40.png)
+![WF Fusion](./images/wffusion40.png)
 
-次へ、最初のオブジェクト&#x200B;**複数の値設定)を右クリックし****名前変更**&#x200B;を選択します。
+次に、最初のオブジェクトを右クリックし **複数の値を設定**、「名前を変更 **を選択し** す。
 
-![WF フュージョン](./images/wffusion41.png)
+![WF Fusion](./images/wffusion41.png)
 
-名前を **定数の初期化**&#x200B;に設定します。 「 **OK**」を選択します。
+名前を **定数を初期化** に設定します。 **OK** を選択します。
 
 ![WF Fusion](./images/wffusion42.png)
 
@@ -224,7 +224,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 3 番目のオブジェクトの名前を **ベアラートークンを設定** に変更します。 **OK** を選択します。
 
-![WF フュージョン](./images/wffusion44.png)
+![WF Fusion](./images/wffusion44.png)
 
 画面は次のようになります。
 

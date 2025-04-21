@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 1.2.5.1 Frame.io へのアクセス
 
-[https://app.frame.io/projects](https://app.frame.io/projects) に移動します。
+[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} に移動します。
 
 **+ アイコンをクリックして** Frame.io で独自のプロジェクトを作成します。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 前の演習では、シナリオ `--aepUserLdap-- - Firefly + Photoshop` を作成しました。これは、カスタム Webhook で開始し、Webhook 応答で終了しました。 その後、Postmanを使用して Webhook の使用をテストしましたが、明らかに、そのようなシナリオのポイントは、外部アプリケーションによって呼び出されることです。 前に述べたように、Frame.io がその演習になりますが、Frame.io と `--aepUserLdap-- - Firefly + Photoshop` の間に、別のWorkfront Fusion シナリオが必要です。 次に、そのシナリオを設定します。
 
-[https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Workfront Fusion** を開きます。
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **Workfront Fusion** を開きます。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ![ フレーム IO](./images/frame10.png)
 
-[https://developer.frame.io/](https://developer.frame.io/) に移動します。 **デベロッパーツール** をクリックし、「**カスタムアクション**」を選択します。
+[https://developer.frame.io/](https://developer.frame.io/){target="_blank"} に移動します。 **デベロッパーツール** をクリックし、「**カスタムアクション**」を選択します。
 
 ![ フレーム IO](./images/frame11.png)
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ![ フレーム IO](./images/frame14.png)
 
-[https://app.frame.io/projects](https://app.frame.io/projects) に戻ります。 ページを更新します。
+[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} に戻ります。 ページを更新します。
 
 ![ フレーム IO](./images/frame16.png)
 
@@ -298,7 +298,7 @@ Frame.io 接続を使用するには、まず設定する必要があります�
 
 ![ フレーム IO](./images/frame49.png)
 
-API トークンを取得するには、[https://developer.frame.io/](https://developer.frame.io/) にアクセスしてください。 **デベロッパーツール** をクリックし、「**トークン**」を選択します。
+API トークンを取得するには、[https://developer.frame.io/](https://developer.frame.io/){target="_blank"} にアクセスしてください。 **デベロッパーツール** をクリックし、「**トークン**」を選択します。
 
 ![ フレーム IO](./images/frame50.png)
 
