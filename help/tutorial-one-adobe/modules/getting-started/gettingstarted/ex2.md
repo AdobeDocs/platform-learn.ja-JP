@@ -4,7 +4,7 @@ description: はじめに – 次にデモシステムを使用して Launch プ
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Adobe Experience Platform Data Collection クライアントプロパティを設定する場合は、次にデモシステムを使用してください
 
-このチュートリアルでは、学習内容を視覚化し、安全な環境で設定をテストできるようにするため、Adobeのデモシステムの次のツールを使用します。 このチュートリアルを最大限に活用するには、次にデモシステムと統合するように AEP インスタンスを設定する必要があります。
+このチュートリアルでは、学習内容を視覚化し、安全な環境で設定をテストできるようにするため、Adobeのデモシステムの次のツールを使用します。 このチュートリアルを最大限に活用するには、次にデモシステムと統合するようにAEP インスタンスを設定する必要があります。
 
 デモシステムにアクセスできるようになったら、次の手順に進みます。
 
-[https://dsn.adobe.com/](https://dsn.adobe.com/) に移動し、**設定** に移動します。
+[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} に移動し、**設定** に移動します。
 
 ![DSN](./images/dsnsetup.png)
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ## 次の手順
 
-[ データストリームの作成 ](./ex3.md) に移動します。
+[ データストリームの作成 ](./ex3.md){target="_blank"} に移動します。
 
 [ はじめに ](./getting-started.md){target="_blank"} に戻る
 

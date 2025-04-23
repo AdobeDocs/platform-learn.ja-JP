@@ -4,7 +4,7 @@ description: はじめに – モバイルアプリの使用
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## アプリのダウンロード
 
-コンピューターの ](https://bit.ly/dx-demo-app)0}https://bit.ly/dx-demo-app} に移動します。 [その後、これが表示されます。
+コンピューターの ](https://bit.ly/dx-demo-app){target="_blank"}0}https://bit.ly/dx-demo-app} に移動します。 [その後、これが表示されます。
 
 ![DSN](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ![DSN](./images/dsn5b.png)
 
-誤ってブラウザーウィンドウを閉じてしまった場合や、今後のデモまたはイネーブルメントセッションの際には、[https://dsn.adobe.com](https://dsn.adobe.com) にアクセスして web サイトプロジェクトにアクセスすることもできます。 Adobe IDでログインすると、このが表示されます。 モバイルアプリプロジェクトで「。..**」という 3 つのドット** をクリックし、「**編集**」をクリックします。
+誤ってブラウザーウィンドウを閉じてしまった場合や、今後のデモまたはイネーブルメントセッションの際には、[https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"} にアクセスして web サイトプロジェクトにアクセスすることもできます。 Adobe IDでログインすると、このが表示されます。 モバイルアプリプロジェクトで「。..**」という 3 つのドット** をクリックし、「**編集**」をクリックします。
 
 ![DSN](./images/web8a.png)
 
@@ -83,7 +83,7 @@ QR コードを含むこのポップアップが表示されます。 モバイ�
 
 ## 次の手順
 
-[Adobe I/O プロジェクトの設定 ](./ex6.md) に移動します。
+[Adobe I/O プロジェクトの設定 ](./ex6.md){target="_blank"} に移動します。
 
 [ はじめに ](./getting-started.md){target="_blank"} に戻る
 

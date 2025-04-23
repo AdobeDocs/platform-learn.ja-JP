@@ -4,7 +4,7 @@ description: はじめに – Experience League ドキュメント用のChrome�
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## Chrome拡張機能のインストール
 
-Chrome拡張機能をインストールするには、Chrome ブラウザーを開き、[https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi) に移動します。 その後、これが表示されます。
+Chrome拡張機能をインストールするには、Chrome ブラウザーを開き、[https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"} に移動します。 その後、これが表示されます。
 
 **Chromeに追加** をクリックします。
 
@@ -58,7 +58,7 @@ Chrome拡張機能をインストールするには、Chrome ブラウザーを�
 
 ## Chrome拡張機能の設定
 
-[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overviewに移動し ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) 拡張機能アイコンをクリックして開きます。
+[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overviewに移動し ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} 拡張機能アイコンをクリックして開きます。
 
 ![DSN](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ Adobe Experience Platform インスタンスに関連する値を以下のよう
 
 **AEP IMS 組織名**
 
-[https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、画面の右上隅にインスタンスの名前が表示されます。
+[https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"} でAdobe Experience Platform インスタンスにログインすると、画面の右上隅にインスタンスの名前が表示されます。
 
 ![DSN](./images/aepname.png)
 
@@ -84,7 +84,7 @@ IMS 組織 ID はAdobe Experience Cloud インスタンスの一意の ID で、
 
 IMS 組織 ID の検索は、複数の方法で実行できます。 不明な場合は、インスタンスのシステム管理者の 1 人に ID を確認してください。
 
-[Admin Console](https://https://adminconsole.adobe.com/) に移動すると見つかることがあります。この場合、URL の一部として見つけることができます。
+[Admin Console](https://adminconsole.adobe.com/){target="_blank"} に移動すると見つかることがあります。この場合、URL の一部として見つけることができます。
 
 ![DSN](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ IMS 組織 ID の検索は、複数の方法で実行できます。 不明な�
 
 **AEP テナント ID**
 
-テナント ID は、組織のAEP インスタンスの一意の ID です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
+テナント ID は、組織のAEP インスタンスの一意の ID です。 [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"} でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
 
 ![DSN](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Chrome拡張機能に入力する場合は、アンダースコアがプレフ�
 
 **AEP サンドボックス名**
 
-サンドボックス名は、AEP インスタンスで使用する環境の名前です。 [https://platform.adobe.com/](https://platform.adobe.com/) でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
+サンドボックス名は、AEP インスタンスで使用する環境の名前です。 [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"} でAdobe Experience Platform インスタンスにログインすると、その URL にテナント ID が含まれています。
 
 URL からサンドボックス名を取得する前に、このチュートリアルで使用するサンドボックスに属していることを確認してください。 画面の右上隅にあるサンドボックス切り替えメニューをクリックすると、右側のサンドボックスに切り替えることができます。
 
@@ -135,7 +135,7 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 ## チュートリアルコンテンツの検証
 
-テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2) に移動します。
+テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"} に移動します。
 
 Chrome 拡張機能でアクティブ化された環境に基づいて、このページのすべての **環境変数** が実際の値に置き換えられました。
 
@@ -145,7 +145,7 @@ Chrome 拡張機能でアクティブ化された環境に基づいて、この�
 
 ## 次の手順
 
-[Adobe Experience Platform Data Collection クライアントプロパティを設定する次に、デモシステムを使用 ](./ex2.md) に移動します。
+[Adobe Experience Platform Data Collection クライアントプロパティを設定する次に、デモシステムを使用 ](./ex2.md){target="_blank"} に移動します。
 
 [ はじめに ](./getting-started.md){target="_blank"} に戻る
 

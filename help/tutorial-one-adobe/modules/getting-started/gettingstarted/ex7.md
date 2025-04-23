@@ -3,7 +3,8 @@ title: はじめに – Postmanの設定
 description: はじめに – Postmanの設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobeの社員の場合は、手順に従って [PostBuster のインストール ](./ex8.md) を行ってください。
+>Adobeの社員の場合は、手順に従って [PostBuster のインストール ](./ex8.md){target="_blank"} を行ってください。
 
 ## Postman環境のダウンロード
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ![Adobe I/O新規統合 ](./images/iopr.png){zoomable="yes"}
 
-**Firefly - Firefly サービス** API をクリックします。 次に、「**Postman用にダウンロード**」をクリックし、「**OAuth サーバー間**」を選択してPostman環境をダウンロードします。
+**Firefly - Firefly Services** API をクリックします。 次に、「**Postman用にダウンロード**」をクリックし、「**OAuth サーバー間**」を選択してPostman環境をダウンロードします。
 
 ![Adobe I/O新規統合 ](./images/iopm.png){zoomable="yes"}
 
@@ -43,7 +44,7 @@ Postmanには、環境とコレクションという 2 つのコンセプトが�
 - Adobe I/Oに対する認証用の 1 つのコレクション
 - このモジュールの演習の 1 つのコレクション
 
-[postman-ff.zip](./../../../assets/postman/postman-ff.zip) をローカルデスクトップにダウンロードします。
+[postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} をローカルデスクトップにダウンロードします。
 
 ![Adobe I/O新規統合 ](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Postmanで、「**読み込み**」を選択します。
 
 ![Adobe I/O新規統合 ](./images/impconfirm.png){zoomable="yes"}
 
-これで、API を使用してFirefly サービスとの対話を開始するためにPostmanで必要なすべてが揃いました。
+これで、API を使用してFirefly Servicesとの対話を開始するためにPostmanで必要なすべてが揃いました。
 
 ## アクセストークンのリクエスト
 

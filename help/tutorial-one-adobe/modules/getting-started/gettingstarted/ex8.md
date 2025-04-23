@@ -4,7 +4,7 @@ description: はじめに – Postmanの設定
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobeの従業員でない場合は、手順に従って [Postmanをインストール ](./ex7.md) してください。 以下の手順は、Adobeのユーザーのみを対象としています。
+>Adobeの従業員でない場合は、手順に従って [Postmanをインストール ](./ex7.md){target="_blank"} してください。 以下の手順は、Adobeのユーザーのみを対象としています。
 
 ## PostBuster のインストール
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542) に移動します。
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"} に移動します。
 
 **PostBuster** の最新リリースをダウンロードします。
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 ![ ポストバスター ](./images/pb3.png)
 
-[postbuster.json.zip](./../../../assets/postman/postbuster.json.zip) をダウンロードし、デスクトップに抽出します。
+[postbuster.json.zip](./../../../assets/postman/postbuster.json.zip){target="_blank"} をダウンロードし、デスクトップに抽出します。
 
 ![ ポストバスター ](./images/pbpb.png)
 

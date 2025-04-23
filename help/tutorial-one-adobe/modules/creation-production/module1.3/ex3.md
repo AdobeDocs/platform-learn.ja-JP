@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
-source-git-commit: ebf183d1eb4382ab0e6ccf3c7bb32229ffa269db
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 この演習を開始する前に、[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zipから必要なアセットをダウンロードし ](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} デスクトップに解凍します。
 
 ![Adobe Express](./images/expressassets.png)
+
+## 基本アセッ 1.3.3.1 を作成するには
 
 [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"} に移動します。 **+** アイコンをクリックして、新しい **画像** を作成します。
 
@@ -92,6 +94,8 @@ CitiSignal ロゴ画像の場所を調整して、下の画像の同じ位置を
 この画像が表示されます。
 
 ![Adobe Express](./images/expressbc17.png)
+
+## Adobe Expressでの 1.3.3.2 の一括作成
 
 次に、「**一括作成**」をクリックします。
 

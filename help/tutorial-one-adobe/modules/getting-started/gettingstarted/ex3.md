@@ -4,7 +4,7 @@ description: はじめに – データストリームの作成
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # データストリームの作成
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"} に移動します。
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 ## モバイル用データストリームの作成
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"} に移動します。
 
 **[!UICONTROL データストリーム]** をクリックします。
 
@@ -175,7 +175,7 @@ ht-degree: 2%
 
 ## 次の手順
 
-[Web サイトを使用 ](./ex4.md) に移動します。
+[Web サイトを使用 ](./ex4.md){target="_blank"} に移動します。
 
 [ はじめに ](./getting-started.md){target="_blank"} に戻る
 

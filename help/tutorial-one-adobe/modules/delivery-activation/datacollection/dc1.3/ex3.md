@@ -4,28 +4,28 @@ description: 基盤 – FAC - フェデレーション構成の作成
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
 
 # 1.3.3 フェデレーション構成の作成
 
-AEP でフェデレーションのオーディエンス構成を設定できるようになりました。
+AEPで federated audience コンポジションを設定できるようになりました。
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 
 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-![データ取得](./../dc1.2/images/home.png)
+![データ取り込み](./../dc1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は `--aepSandboxName--` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
-![データ取得](./../dc1.2/images/sb1.png)
+![データ取り込み](./../dc1.2/images/sb1.png)
 
-## 1.3.3.1 オーディエンスの作成
+## オ 1.3.3.1 ディエンスの作成
 
 左側のメニューで、**オーディエンス** に移動し、次に **フェデレーテッド コンポジション** に移動します。 **コンポジションを作成** をクリックします。
 
@@ -47,7 +47,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp5.png)
 
-スキーマ **—aepUserLdap—_HOUSEARDS** を選択します。 「**確認**」をクリックします。
+スキーマ **`--aepUserLdap--_HOUSEHOLDS`** を選択します。 「**確認**」をクリックします。
 
 ![FAC](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp11.png)
 
-2 番目に追加する条件は `Is the user an existing CitiSignal Mobile subscriber?` です。 この質問に答える方法は、世帯と世帯の主要顧客の間の関係を使用することです。これは、別のテーブル **—aepUserLdap—_PERSONS** で定義されています。 「**household2person**」リンクを使用して、属性メニューをドリルダウンできます。
+2 番目に追加する条件は `Is the user an existing CitiSignal Mobile subscriber?` です。 この質問に答える方法は、世帯と世帯の主要顧客との関係を使用することです。これは、別のテーブル **`--aepUserLdap--_PERSONS`** で定義されています。 「**household2person**」リンクを使用して、属性メニューをドリルダウンできます。
 
 ![FAC](./images/fedcomp12.png)
 
@@ -139,9 +139,9 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp21a.png)
 
-これで、クエリがSnowflakeにプッシュされ、そこでソースデータに対してクエリが実行されます。 結果は AEP にプッシュされますが、ソースデータはSnowflakeに残ります。
+これで、クエリがSnowflakeにプッシュされ、そこでソースデータに対してクエリが実行されます。 結果はAEPにプッシュされますが、ソースデータはSnowflakeに残ります。
 
-これでオーディエンスにデータが入力され、オーディエンスは AEP エコシステム内からターゲット設定できます。
+これでオーディエンスにデータが入力され、オーディエンスはAEP エコシステム内からターゲット設定できるようになりました。
 
 ![FAC](./images/fedcomp22.png)
 
