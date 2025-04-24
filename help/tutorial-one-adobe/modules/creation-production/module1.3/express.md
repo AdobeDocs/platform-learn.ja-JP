@@ -6,20 +6,24 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: bfeb43ad8e4d8c994b03ebd7cb4b5ead89ca6e10
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
 # 1.3 Adobe ExpressとAdobe Experience Cloud
 
-Workfront Fusion でクリエイティブワークフローを自動化する方法について説明します。
+コンテンツのサプライチェーンが整っているため、マーケティングチームはコンテンツに対する飽くことのない需要に追いつき、キャンペーンをスムーズに実行し続けることができます。 この演習では、Adobe ExpressとAEM Assetsを活用して、マーケティングチームが優れたオンブランドキャンペーンを簡単に作成し、チーム間で効率的に共同作業できるようにする方法を説明します。これらはすべて、統合された接続されたコンテンツエコシステム内で行われます。
+
+方法については、
+
+- ロックされた Express テンプレートとブランドキットを活用して、ローカルおよび季節ごとのキャンペーン用に、ブランド承認済みコンテンツを作成および反復します- 独自のブランドスタイルに合わせてトレーニングしたFirefly カスタムモデルを使用すると、Adobe Expressで、新しい背景とコンテンツをその場で作成できます- Adobe Experience Managerから承認済みアセットを検索して、キャンペーンを編集およびパーソナライズします。
 
 ## 前提条件
 
-- Adobe Fireflyへのアクセス [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Adobe Expressへのアクセス [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
 
 ## 演習
 
