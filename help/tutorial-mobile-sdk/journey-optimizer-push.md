@@ -1,21 +1,21 @@
 ---
-title: Platform Mobile SDK を使用したプッシュ通知の作成と送信
-description: Platform Mobile SDK とAdobe Journey Optimizerを使用して、モバイルアプリにプッシュ通知を作成する方法を説明します。
+title: Platform Mobile SDKを使用してプッシュ通知を作成し、送信します
+description: Platform Mobile SDKとAdobe Journey Optimizerを使用して、モバイルアプリにプッシュ通知を作成する方法を説明します。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 1%
+source-wordcount: '2871'
+ht-degree: 6%
 
 ---
 
 # プッシュ通知の作成と送信
 
-Experience Platformの Mobile SDK とJourney Optimizerを使用して、モバイルアプリ用のプッシュ通知を作成する方法を説明します。
+Experience Platform Mobile SDKとJourney Optimizerを使用して、モバイルアプリ用のプッシュ通知を作成する方法を説明します。
 
 Journey Optimizerでは、ジャーニーを作成し、ターゲットとなるオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerでのプッシュ通知のデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html) を参照してください。
 
@@ -31,7 +31,8 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 * SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 * Adobe Experience Platform用にアプリを設定します。
 * Journey Optimizerへのアクセスと、説明に従った十分な権限 [ こちら ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
-   * アプリサーフェスを作成します。
+   * プッシュ資格情報を作成します。
+   * プッシュチャネル設定を作成します。
    * ジャーニーを作成します。
    * メッセージを作成します。
    * メッセージプリセットの作成。
@@ -43,12 +44,12 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 このレッスンでは、次の操作を行います
 
 * アプリ ID をApple Push Notification Service （APN）に登録します。
-* Journey Optimizerでアプリサーフェスを作成します。
+* Journey Optimizerでチャネル設定を作成します。
 * プッシュメッセージフィールドを含めるようにスキーマを更新します。
 * Journey Optimizer タグ拡張機能をインストールして設定します。
 * アプリを更新して、Journey Optimizer タグ拡張機能を登録します。
-* Assurance の設定を検証します。
-* Assurance からテストメッセージを送信
+* Assuranceの設定を検証します。
+* Assuranceからのテストメッセージを送信
 * Journey Optimizerで独自のプッシュ通知イベント、ジャーニーおよびエクスペリエンスを定義します。
 * アプリ内から独自のプッシュ通知を送信します。
 
@@ -74,35 +75,82 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 1. 「**[!UICONTROL 続行]**」を選択します。
    ![ 新しいキーを設定 ](assets/mobile-push-apple-dev-config-key.png)
 1. 設定を確認し、「**[!UICONTROL 登録]**」を選択します。
-1. `.p8` 秘密鍵をダウンロードします。 これは、このレッスンの後半のアプリサーフェス設定で使用します。
-1. **[!UICONTROL キー ID]** をメモします。 これは、アプリサーフェスの設定で使用されます。
-1. **[!UICONTROL チーム ID]** をメモします。 これは、アプリサーフェスの設定で使用されます。
+1. `.p8` 秘密鍵をダウンロードします。 次の演習のJourney Optimizer チャンネル設定で使用します。
+1. **[!UICONTROL キー ID]** をメモします。 これは、Journey Optimizer チャンネル設定で使用されます。
+1. **[!UICONTROL チーム ID]** をメモします。 これは、Journey Optimizer チャンネル設定で使用されます。
    ![ 主な詳細 ](assets/push-apple-dev-key-details.png)
 
 その他のドキュメントについては [ こちらを参照 ](https://help.apple.com/developer-account/#/devcdfbb56a3) してください。
 
-#### データ収集でのアプリサーフェスの追加
 
-1. [ データ収集インターフェイス ](https://experience.adobe.com/data-collection/) で、左側のパネルの **[!UICONTROL アプリサーフェス]** を選択します。
-1. 設定を作成するには、「**[!UICONTROL アプリサーフェスを作成]**」を選択します。
-   ![ アプリサーフェスホーム ](assets/push-app-surface.png)
-1. 設定の **[!UICONTROL 名前]** を入力します（例：`Luma App Tutorial`）。
-1. **[!UICONTROL モバイルアプリケーション設定]** から、「**[!UICONTROL Apple iOS]**」を選択します。
-1. **[!UICONTROL アプリ ID （iOS バンドル ID）]** フィールドにモバイルアプリのバンドル ID を入力します。 例：`com.adobe.luma.tutorial.swiftui`。
-1. **[!UICONTROL プッシュ資格情報]** をオンにして、資格情報を追加します。
-1. `.p8` **Apple プッシュ通知認証キー** ファイルをドラッグ&amp;ドロップします。
-1. 認証キーの作成時に割り当てられる 10 文字の文字列である **[!UICONTROL キー ID]**`p8` 指定します。 これは、Apple開発者ポータルページの「**[!UICONTROL 証明書、識別子、プロファイル** ページの「]**キー**」タブにあります。 [ 秘密鍵の作成 ](#create-a-private-key) も参照してください。
-1. **[!UICONTROL チーム ID]** を指定します。Team ID は値で、**メンバーシップ** タブまたはApple Developer Portal ページの上部にあります。 [ 秘密鍵の作成 ](#create-a-private-key) も参照してください。
-1. 「**[!UICONTROL 保存]**」を選択します。
+#### Journey Optimizerにアプリのプッシュ資格情報を追加する
 
-   ![ アプリサーフェスの設定 ](assets/push-app-surface-config.png)
+次に、モバイルアプリケーションのプッシュ資格情報をJourney Optimizerに追加する必要があります。 （以前のバージョンの製品では、これらはデータ収集の「アプリサーフェス」設定の一部として追加されました）。
+
+モバイルアプリのプッシュ資格情報の登録は、自分の代わりに Adobe がプッシュ通知を送信することを承認するために必要です。以下に説明する手順を参照してください。
+
+1. Journey Optimizer インターフェイスで、**[!UICONTROL チャネル]**/**[!UICONTROL プッシュ設定]**/**[!UICONTROL プッシュ資格情報]** メニューを開きます。
+
+1. 「**[!UICONTROL プッシュ認証情報を作成]**」を選択します。
+
+
+   ![Journey Optimizerで新しいプッシュ資格情報設定を作成 ](assets/add-push-credential-ios.png)
+
+1. **[!UICONTROL Platform]** ドロップダウンで、**iOS** オペレーティングシステムを選択します。
+
+
+   1. 「**[!UICONTROL アプリ ID]** （iOS バンドル ID）」フィールドにモバイルアプリのバンドル ID を入力します。 例：com.adobe.luma.tutorial.swiftui
+
+   1. これらのプッシュ資格情報をすべてのサンドボックスで使用できるようにするには、「**[!UICONTROL すべてのサンドボックスに適用]**」オプションを有効にします。特定のサンドボックスに同じプラットフォームとアプリ ID のペアに対する独自の資格情報がある場合、これらのサンドボックス固有の資格情報が優先されます。
+
+
+   1. 前の演習で取得した.p8 **Apple プッシュ通知認証キー** ファイルをドラッグ&amp;ドロップします。
+
+   1. 認証キーの作成時に割り当てられる 10 文字の文字列である **[!UICONTROL キー ID]**`p8` 指定します。 これは、Apple開発者ポータルページの「**[!UICONTROL 証明書、識別子、プロファイル** ページの「]**キー**」タブにあります。 （前の演習でメモしておく必要があります）。
+
+   1. **[!UICONTROL チーム ID]** を指定します。Team ID は値で、**メンバーシップ** タブまたはApple Developer Portal ページの上部にあります。 （前の演習でメモしておく必要があります）。
+
+   ![Journey Optimizerでのプッシュ資格情報設定 ](assets/add-app-config-ios.png)
+
+1. 「**[!UICONTROL 送信]**」をクリックして、プッシュ資格情報設定を作成します。
+
+#### Journey Optimizerでプッシュのチャネル設定を作成します
+
+プッシュ資格情報設定を作成したら、Journey Optimizerからプッシュ通知を送信できるように、設定を作成する必要があります。
+
+1. Journey Optimizer インターフェイスで、**[!UICONTROL チャンネル]**/**[!UICONTROL 一般設定]**/**[!UICONTROL チャンネル設定]** メニューを開き、「**[!UICONTROL チャンネル設定を作成]**」を選択します。
+
+   ![ 新しいチャネル設定の作成 ](assets/push-config-9.png)
+
+1. 設定の名前と説明（オプション）を入力します。
+
+   >[!NOTE]
+   >
+   > 名前は、文字（A ～ Z）で始める必要があります。使用できるのは英数字のみです。アンダースコア（`_`）、ドット（`.`）、ハイフン（`-`）も使用できます。
+
+
+1. 設定にカスタムまたはコアのデータ使用ラベルを割り当てるには、「**[!UICONTROL アクセスを管理]**」を選択します。[詳しくは、オブジェクトレベルのアクセス制御（OLAC）を参照してください](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
+
+1. **プッシュ** チャネルを選択します。
+
+
+1. この設定を使用してメッセージに同意ポリシーを関連付けるには、**[!UICONTROL マーケティングアクション]**&#x200B;を選択します。顧客の環境設定に従うために、そのマーケティングアクションに関連付けられているすべての同意ポリシーが活用されます。[ マーケティングアクションの詳細情報 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
+
+1. **[!UICONTROL プラットフォーム]**&#x200B;を選択します。
+
+1. 上記で設定したプッシュ認証情報と同じ **[!UICONTROL アプリ ID]** を選択します。
+
+1. 「**[!UICONTROL 送信]**」を選択して変更を保存します。
+
+   ![ プッシュチャネル設定 ](assets/push-config-10.png)
+
 
 ### データストリーム設定を更新
 
-モバイルアプリからEdge Networkに送信されるデータが確実にJourney Optimizerに転送されるようにするには、Experience Edgeの設定を更新します。
+モバイルアプリから Experience Edgeに送信されるデータが確実にEdge Networkに転送されるようにするには、Journey Optimizer設定を更新します。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 「{ その他 ]**」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL  編集 ]**を選択します。**[!UICONTROL 
+1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 ]**」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL  編集 ]**を選択します。**[!UICONTROL 
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、次の操作を行います。
 
    1. まだ選択していない場合は、{ プロファイルデータセット ]**から**[!UICONTROL  0}AJO プッシュプロファイルデータセット ]**を選択します。**[!UICONTROL &#x200B;このプロファイルデータセットは、`MobileCore.setPushIdentifier` API 呼び出し（[ プッシュ通知用のデバイストークンの登録 ](#register-device-token-for-push-notifications) を参照）を使用する場合に必要です。この呼び出しにより、プッシュ通知の一意の識別子（プッシュ識別子など）がユーザーのプロファイルの一部として保存されます。
@@ -135,9 +183,9 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 >**[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** がオプションとして表示されない場合は、カスタマーケアにお問い合わせください。
 >
 
-## Assurance で設定を検証
+## Assuranceでの設定の検証
 
-1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
+1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 1. Assurance UI で、「**[!UICONTROL 設定]**」を選択します。
    ![ 設定クリック ](assets/push-validate-config.png)
 1. ![ プッシュデバッグ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある **[!UICONTROL プラス]** を選択します。
@@ -198,14 +246,14 @@ Luma アプリへの署名は、プッシュ通知を送信するために必要
 
 ## アプリへのJourney Optimizerの実装
 
-前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、Messaging SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、「SDK のインストール [ の節を参照し ](install-sdks.md) ください。
+前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、Messaging SDKをインストールして登録します。 これらの手順が明確でない場合は、「SDK のインストール [ の節を参照し ](install-sdks.md) ください。
 
 >[!NOTE]
 >
->[SDK のインストール ](install-sdks.md) の節を完了した場合、SDK は既にインストールされているので、この手順をスキップできます。
+>[SDK のインストール ](install-sdks.md) の節を完了した場合、SDKは既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、[AEP メッセージ ](https://github.com/adobe/aepsdk-messaging-ios) がパッケージの依存関係のパッケージのリストに追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
+1. Xcode で、[AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) がパッケージの依存関係のパッケージの一覧に追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!UICONTROL AppDelegate]** に移動します。
 1. `AEPMessaging` が読み込みのリストに含まれていることを確認します。
 
@@ -304,7 +352,7 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
    1. 「**[!UICONTROL 保存]**」を選択します。
       ![ イベントを編集ステップ 2](assets/ajo-edit-event2.png)
 
-先ほど、このチュートリアルの一部として前に作成したモバイルアプリエクスペリエンスイベントスキーマに基づくイベント設定を作成しました。 このイベント設定は、特定のイベントタイプ（`application.test`）を使用して受信エクスペリエンスイベントをフィルタリングするので、モバイルアプリから開始された、特定のタイプを持つイベントのみが、次の手順で作成するジャーニーをトリガーします。 実際には、外部サービスからプッシュ通知を送信する場合もありますが、同じコンセプトが適用されます。外部アプリケーションから、特定のフィールドを持つExperience Platformにエクスペリエンスイベントを送信し、これらのイベントがジャーニーをトリガーする前に条件を適用できます。
+先ほど、このチュートリアルの一部として前に作成したモバイルアプリエクスペリエンスイベントスキーマに基づくイベント設定を作成しました。 このイベント設定は、特定のイベントタイプ（`application.test`）を使用して受信エクスペリエンスイベントをフィルタリングするので、モバイルアプリから開始された、特定のタイプを持つイベントのみが、次の手順で作成するジャーニーをトリガーします。 実際には、外部サービスからプッシュ通知を送信する場合もありますが、同じコンセプトが適用されます。外部アプリケーションから、特定のフィールドを持つExperience Platformにエクスペリエンスイベントを送信し、これらのイベントがジャーニーのトリガーになる前に条件を適用できます。
 
 ### ジャーニーの作成
 
@@ -339,7 +387,7 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
    1. プッシュ通知の定義を保存して終了するには、「**[!UICONTROL OK]**」を選択します。
 
-1. ジャーニーは次のようになります。 「**[!UICONTROL Publish]**」を選択して、ジャーニーを公開およびアクティブ化します。
+1. ジャーニーは次のようになります。 「**[!UICONTROL 公開]**」を選択して、ジャーニーを公開およびアクティブ化します。
    ![ ジャーニーの完了 ](assets/ajo-journey-finished.png)
 
 
@@ -395,7 +443,7 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
    }
    ```
 
-   このコードは、関数（`applicationId` および `eventType`）に提供されたパラメーターを使用して `testPushPayload` インスタンスを作成し、ペイロードをディクショナリに変換する際に `sendExperienceEvent` を呼び出します。 今回のコードでは、`await` と `async` に基づく Swift の同時実行モデルを使用して、Adobe Experience Platform SDK の呼び出しの非同期の側面も考慮しています。
+   このコードは、関数（`applicationId` および `eventType`）に提供されたパラメーターを使用して `testPushPayload` インスタンスを作成し、ペイロードをディクショナリに変換する際に `sendExperienceEvent` を呼び出します。 今回のコードでは、`await` と `async` に基づく Swift の同時実行モデルを使用して、Adobe Experience Platform SDKの呼び出しの非同期の側面も考慮しています。
 
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL General]**/**[!UICONTROL ConfigView]** に移動します。 次のコードをプッシュ通知ボタンの定義に追加して、そのボタンがタップされるたびにジャーニーをトリガーにテストプッシュ通知エクスペリエンスイベントペイロードを送信します。
 
@@ -426,8 +474,8 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
 >[!SUCCESS]
 >
->これで、Journey OptimizerとExperience Platform Mobile SDK のJourney Optimizer拡張機能を使用して、アプリでプッシュ通知を有効にしました。
+>これで、Journey Optimizerと、Experience Platform Mobile SDK用のJourney Optimizer拡張機能を使用して、アプリにプッシュ通知を有効にしました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[アプリ内メッセージの作成および送信](journey-optimizer-inapp.md)**

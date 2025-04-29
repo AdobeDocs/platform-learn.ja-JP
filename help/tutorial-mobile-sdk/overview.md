@@ -4,10 +4,10 @@ description: Adobe Experience Cloud モバイルアプリケーションの実�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ Experience Platform Mobile SDKは、Adobe Experience Cloudのお客様がAdobe E
    * [Journey Optimizerを使用したプッシュメッセージ](journey-optimizer-push.md)
    * [Journey Optimizerを使用したアプリ内メッセージ](journey-optimizer-inapp.md)
    * [Journey Optimizerによる意思決定管理](journey-optimizer-offers.md)
-   * [Target](target.md)
+   * [ターゲット](target.md)
 
 
 >[!NOTE]
@@ -59,7 +59,7 @@ Experience Platform Mobile SDKは、Adobe Experience Cloudのお客様がAdobe E
 * データ収集には、次が必要です。
    * **[!UICONTROL Platforms]** – 権限項目 **[!UICONTROL モバイル]**
    * **[!UICONTROL プロパティ権限]** - **[!UICONTROL 開発]**、**[!UICONTROL 承認]**、**[!UICONTROL 公開]**、**[!UICONTROL 拡張機能の管理]**、**[!UICONTROL 環境の管理]** の権限項目。
-   * **[!UICONTROL 会社権限]** - **[!UICONTROL プロパティの管理]** に対する権限項目と、オプションのプッシュメッセージレッスンを完了している場合は **[!UICONTROL アプリ設定の管理]**
+   * **[!UICONTROL 会社権限]** - プロパティを管理するための権限項目 **[!UICONTROL 管理]**
 
      タグ権限について詳しくは、製品ドキュメントの [ タグのユーザー権限 ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja){target="_blank"} を参照してください。
 * Experience Platformには、以下が必要です。
