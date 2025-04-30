@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 6%
 
 ---
@@ -75,9 +75,9 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 1. 「**[!UICONTROL 続行]**」を選択します。
    ![ 新しいキーを設定 ](assets/mobile-push-apple-dev-config-key.png)
 1. 設定を確認し、「**[!UICONTROL 登録]**」を選択します。
-1. `.p8` 秘密鍵をダウンロードします。 次の演習のJourney Optimizer チャンネル設定で使用します。
-1. **[!UICONTROL キー ID]** をメモします。 これは、Journey Optimizer チャンネル設定で使用されます。
-1. **[!UICONTROL チーム ID]** をメモします。 これは、Journey Optimizer チャンネル設定で使用されます。
+1. `.p8` 秘密鍵をダウンロードします。 次の演習では、Journey Optimizer プッシュ資格情報を設定する際に使用します。
+1. **[!UICONTROL キー ID]** をメモします。 次の演習では、Journey Optimizer プッシュ資格情報を設定する際に使用します。
+1. **[!UICONTROL チーム ID]** をメモします。 次の演習では、Journey Optimizer プッシュ資格情報を設定する際に使用します。
    ![ 主な詳細 ](assets/push-apple-dev-key-details.png)
 
 その他のドキュメントについては [ こちらを参照 ](https://help.apple.com/developer-account/#/devcdfbb56a3) してください。
@@ -98,17 +98,15 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 
 1. **[!UICONTROL Platform]** ドロップダウンで、**iOS** オペレーティングシステムを選択します。
 
+1. 「**[!UICONTROL アプリ ID]** （iOS バンドル ID）」フィールドにモバイルアプリのバンドル ID を入力します。 例：com.adobe.luma.tutorial.swiftui
 
-   1. 「**[!UICONTROL アプリ ID]** （iOS バンドル ID）」フィールドにモバイルアプリのバンドル ID を入力します。 例：com.adobe.luma.tutorial.swiftui
+1. これらのプッシュ資格情報をすべてのサンドボックスで使用できるようにするには、「**[!UICONTROL すべてのサンドボックスに適用]**」オプションを有効にします。特定のサンドボックスに同じプラットフォームとアプリ ID のペアに対する独自の資格情報がある場合、これらのサンドボックス固有の資格情報が優先されます。
 
-   1. これらのプッシュ資格情報をすべてのサンドボックスで使用できるようにするには、「**[!UICONTROL すべてのサンドボックスに適用]**」オプションを有効にします。特定のサンドボックスに同じプラットフォームとアプリ ID のペアに対する独自の資格情報がある場合、これらのサンドボックス固有の資格情報が優先されます。
+1. 前の演習で取得した.p8 **Apple プッシュ通知認証キー** ファイルをドラッグ&amp;ドロップします。
 
+1. 認証キーの作成時に割り当てられる 10 文字の文字列である **[!UICONTROL キー ID]**`p8` 指定します。 これは、Apple開発者ポータルページの「**[!UICONTROL 証明書、識別子、プロファイル** ページの「]**キー**」タブにあります。 （前の演習でメモしておく必要があります）。
 
-   1. 前の演習で取得した.p8 **Apple プッシュ通知認証キー** ファイルをドラッグ&amp;ドロップします。
-
-   1. 認証キーの作成時に割り当てられる 10 文字の文字列である **[!UICONTROL キー ID]**`p8` 指定します。 これは、Apple開発者ポータルページの「**[!UICONTROL 証明書、識別子、プロファイル** ページの「]**キー**」タブにあります。 （前の演習でメモしておく必要があります）。
-
-   1. **[!UICONTROL チーム ID]** を指定します。Team ID は値で、**メンバーシップ** タブまたはApple Developer Portal ページの上部にあります。 （前の演習でメモしておく必要があります）。
+1. **[!UICONTROL チーム ID]** を指定します。Team ID は値で、**メンバーシップ** タブまたはApple Developer Portal ページの上部にあります。 （前の演習でメモしておく必要があります）。
 
    ![Journey Optimizerでのプッシュ資格情報設定 ](assets/add-app-config-ios.png)
 
