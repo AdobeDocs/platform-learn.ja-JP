@@ -146,7 +146,7 @@ Frame.io でカスタムアクションが呼び出されると、Frame.io はWo
 }
 ```
 
-したがって、シナリオ `--aepUserLdap-- - Firefly + Photoshop` が正常に実行されるには、**prompt**、**cta**、**button****psdTemplate** などのフィールドが必要です。
+したがって、シナリオ `--aepUserLdap-- - Firefly + Photoshop` が正常に実行されるには、**prompt**、**cta**、**button**&#x200B;**psdTemplate** などのフィールドが必要です。
 
 最初の 3 つのフィールド **prompt**、**cta**、**button** には、ユーザーがカスタムアクションを呼び出す際に Frame.io で収集する必要があるユーザー入力が必要です。 そのため、Workfront Fusion 内でまず行う必要があるのは、これらの変数が使用可能かどうかを確認することです。使用可能でない場合は、Workfront Fusion は Frame.io に返信してそれらの変数の入力を求めます。 これを実現するには、Frame.io のフォームを使用します。
 
@@ -266,13 +266,13 @@ Frame.io に戻り、指示に従ってフィールドに入力します。 「*
 
 ![ フレーム IO](./images/frame42.png)
 
-Workfront Fusion に戻り、「**カスタム Webhook** モジュールのバブルをクリックします。 操作 1 の **OUTPUT** の下に、**Button Text**、**CTA Text** **、{Prompt** などのフィールドを含む新しい **data** オブジェクトが表示されるようになりました。 シナリオで利用できるこれらのユーザー入力変数を使用すれば、設定を続行するのに十分です。
+Workfront Fusion に戻り、「**カスタム Webhook** モジュールのバブルをクリックします。 操作 1 の **OUTPUT** の下に、**Button Text**、**CTA Text** **、&lbrace;Prompt** などのフィールドを含む新しい **data** オブジェクトが表示されるようになりました。 シナリオで利用できるこれらのユーザー入力変数を使用すれば、設定を続行するのに十分です。
 
 ![ フレーム IO](./images/frame43.png)
 
 ## 1.2.5.4 Frame.io からファイルの場所を取得
 
-前に述べたように、このシナリオを機能させるには、**prompt**、**cta**、**button****psdTemplate** などのフィールドが必要です。 最初の 3 つのフィールドは既に使用可能になっていますが、使用する **psdTemplate** はまだ見つかりません。 **psdTemplate** は、ファイル **citisignal-fiber.psd** が Frame.io でホストされているので、Frame.io の場所を参照するようになりました。 ファイルの場所を取得するには、Workfront Fusion で Frame.io 接続を設定して使用する必要があります。
+前に述べたように、このシナリオを機能させるには、**prompt**、**cta**、**button**&#x200B;**psdTemplate** などのフィールドが必要です。 最初の 3 つのフィールドは既に使用可能になっていますが、使用する **psdTemplate** はまだ見つかりません。 **psdTemplate** は、ファイル **citisignal-fiber.psd** が Frame.io でホストされているので、Frame.io の場所を参照するようになりました。 ファイルの場所を取得するには、Workfront Fusion で Frame.io 接続を設定して使用する必要があります。
 
 Workfront Fusion に戻り、シナリオ `--aepUserLdap-- - Frame IO Custom Action` ードを開きます。 **にカーソルを合わせますか？モジュール**、「**+**」アイコンをクリックして別のモジュールを追加し、`frame` を検索します。 **Frame.io** をクリックします。
 
@@ -397,7 +397,7 @@ Workfront Fusion に戻り、「**Frame.io - アセットを取得** モジュ�
 ![ フレーム IO](./images/frame69.png)
 
 **本文タイプ** を **Raw** に、**コンテンツタイプ** を **JSON （application/json）** に設定します。
-以下の JSON ペイロードを「コンテンツをリクエスト **フィールドに貼り付け****応答を解析** のチェックボックスを有効にします。
+以下の JSON ペイロードを「コンテンツをリクエスト **フィールドに貼り付け**&#x200B;**応答を解析** のチェックボックスを有効にします。
 
 ```json
 {

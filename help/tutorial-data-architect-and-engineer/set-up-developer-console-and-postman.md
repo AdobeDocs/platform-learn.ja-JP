@@ -46,7 +46,7 @@ Adobe Developer ConsoleからAdobeAPI や SDK にアクセスしたり、ほぼ�
 
 1. ログインし、正しい組織に属していることを確認します
 
-1. [!UICONTROL  クイックスタート ] メニューの **[!UICONTROL 新規プロジェクトを作成]** を選択します。
+1. [!UICONTROL &#x200B; クイックスタート &#x200B;] メニューの **[!UICONTROL 新規プロジェクトを作成]** を選択します。
 
    ![ 新規プロジェクトを作成 ](assets/adobeio-createNewProject.png)
 
@@ -86,21 +86,21 @@ Adobe Developer ConsoleからAdobeAPI や SDK にアクセスしたり、ほぼ�
 
 API 認証情報を使用してシステムとやり取りするには、Experience Platform管理者に、前のレッスンで作成したロールに API 認証情報を割り当てる必要があります。  システム管理者でない場合は、次のアドレスを送信します。
 
-1. API 資格情報の [!UICONTROL  名前 ] （`Credential in Luma Tutorial API Project`）
-1. 資格情報の [!UICONTROL  テクニカルアカウントメール ] （これは、システム管理者が資格情報を見つけるのに役立ちます）
+1. API 資格情報の [!UICONTROL &#x200B; 名前 &#x200B;] （`Credential in Luma Tutorial API Project`）
+1. 資格情報の [!UICONTROL &#x200B; テクニカルアカウントメール &#x200B;] （これは、システム管理者が資格情報を見つけるのに役立ちます）
 
-   資格情報の ![[!UICONTROL  名前 ] と [!UICONTROL  テクニカルアカウントメール ]](assets/postman-credentialDetails.png)
+   資格情報の ![[!UICONTROL &#x200B; 名前 &#x200B;] と [!UICONTROL &#x200B; テクニカルアカウントメール &#x200B;]](assets/postman-credentialDetails.png)
 
 システム管理者の手順を次に示します。
 
 1. [Adobe Experience Platform](https://platform.adobe.com) にログインします
-1. 左側のナビゲーションで **[!UICONTROL 権限]** を選択すると [!UICONTROL  役割 ] 画面に移動します
+1. 左側のナビゲーションで **[!UICONTROL 権限]** を選択すると [!UICONTROL &#x200B; 役割 &#x200B;] 画面に移動します
 1. `Luma Tutorial Platform` の役割を開きます
    ![ 役割を開く ](assets/postman-openRole.png)
 1. 「**[!UICONTROL API 資格情報]**」タブを選択します。
 1. 「**[!UICONTROL API 資格情報を追加]**」を選択します。
    ![ 資格情報の追加 ](assets/postman-addCredential.png)
-1. リストが長い場合は、チュートリアル参加者から提供された [!UICONTROL  テクニカルアカウントメール ] を使用してフィルタリングする、`Credential in Luma Tutorial API Project` しい資格情報を見つけます
+1. リストが長い場合は、チュートリアル参加者から提供された [!UICONTROL &#x200B; テクニカルアカウントメール &#x200B;] を使用してフィルタリングする、`Credential in Luma Tutorial API Project` しい資格情報を見つけます
 1. 認証情報の選択
 1. 「**[!UICONTROL 保存]**」を選択します
 

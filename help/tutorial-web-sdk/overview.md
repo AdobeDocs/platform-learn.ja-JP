@@ -52,10 +52,10 @@ Experience Platform Web SDK は、Adobe Experience Cloudのお客様がAdobe Exp
 
 * **Experience Platform** の場合、次が必要です。
 
-   * **デフォルトの実稼動環境****「Prod」** サンドボックスにアクセスします。
+   * **デフォルトの実稼動環境**&#x200B;**「Prod」** サンドボックスにアクセスします。
    * **[!UICONTROL データモデリング]** の下の **[!UICONTROL スキーマの管理]** および **[!UICONTROL スキーマの表示]** にアクセスします。
-   * **[!UICONTROL 4}Identity Management]** の下の **[!UICONTROL ID 名前空間の管理]** および ]**ID 名前空間の表示にアクセスします。**[!UICONTROL 
-   * **[!UICONTROL データ収集]** の下の ]**データストリームの管理**[!UICONTROL  および ]**データストリームの表示**[!UICONTROL  にアクセスします。
+   * **[!UICONTROL 4&rbrace;Identity Management]** の下の **[!UICONTROL ID 名前空間の管理]** および **ID 名前空間の表示にアクセスします。**
+   * **[!UICONTROL データ収集]** の下の **データストリームの管理**&#x200B;[!UICONTROL &#x200B; および &#x200B;]&#x200B;**データストリームの表示** にアクセスします。
    * Platform ベースのアプリケーションを使用し、[Experience Platformの設定 ](setup-experience-platform.md) のレッスンを修了する場合は、次のことも習得する必要があります。
       * **開発** サンドボックスへのアクセス。
       * **[!UICONTROL データ管理]**、**[!UICONTROL プロファイル管理]** 以下のすべての権限項目：

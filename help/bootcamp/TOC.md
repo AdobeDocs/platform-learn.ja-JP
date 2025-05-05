@@ -35,7 +35,7 @@ ht-degree: 2%
    + [2.4 ジャーニーのテスト ](/help/bootcamp/uc/uc2/ex4.md)
    + [2.5 モバイルアプリをインストールして使用する ](/help/bootcamp/uc/uc2/ex5.md)
    + [2.6 コールセンターのPersonalization](/help/bootcamp/uc/uc2/ex6.md)
-+ 3 - フィジカルとデジタルの {#uc3} ータの融合
++ 3 - フィジカルとデジタルの ータの融合 {#uc3}
    + [概要](/help/bootcamp/uc/uc3/uc3.md)
    + [3.1 モバイルアプリを使用し、ビーコンエントリをトリガーします](/help/bootcamp/uc/uc3/ex1.md)
    + [3.2 イベントの作成](/help/bootcamp/uc/uc3/ex2.md)

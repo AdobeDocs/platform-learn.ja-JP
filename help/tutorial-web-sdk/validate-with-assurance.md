@@ -48,7 +48,7 @@ Adobe Experience Platform DebuggerでEdge Trace を有効にするたびに、�
 デバッガーのレッスンで、この方法を確認します。
 
 1. [Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) に移動し、デバッガーを使用して [ サイトのタグプロパティを独自の開発プロパティに切り替える ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. **[!UICONTROL Experience Platform デバッガーの左側のナビゲーションで]**[**[!UICONTROL ログ]**] を選択します
+1. **[!UICONTROL Experience Platform デバッガーの左側のナビゲーションで]**&#x200B;[**[!UICONTROL ログ]**] を選択します
 1. 「**[!UICONTROL Edge]**」タブを選択し、「**[!UICONTROL 接続]**」を選択します
 
    ![Connect Edge Trace](assets/analytics-debugger-edgeTrace.png)

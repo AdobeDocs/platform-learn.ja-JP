@@ -32,7 +32,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./images/home.png)
 
-続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**[!UICONTROL サンドボックス]** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL &#x200B; サンドボックス &#x200B;] を選択すると、画面が変更され、専用の [!UICONTROL &#x200B; サンドボックス &#x200B;] が表示されます。
 
 ![データ取得](./images/sb1.png)
 
@@ -70,7 +70,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ![データ取得](./images/dsoverview1.png)
 
-[!UICONTROL  データセット ] 概要に戻ります。 作成したデータセットが概要にポップアップ表示されます。
+[!UICONTROL &#x200B; データセット &#x200B;] 概要に戻ります。 作成したデータセットが概要にポップアップ表示されます。
 
 ![データ取得](./images/dsoverview2.png)
 
@@ -105,7 +105,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ![データ取得](./images/finish1ee.png)
 
-[!UICONTROL  データセット ] 概要画面に戻ります。
+[!UICONTROL &#x200B; データセット &#x200B;] 概要画面に戻ります。
 
 ![データ取得](./images/datasetsoverview.png)
 
@@ -113,8 +113,8 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 データセット `--aepUserLdap-- - Demo System - Profile Dataset for Website` をクリックして開きます。
 
-画面の右側にある [!UICONTROL  プロファイル ] 切り替えアイコンを見つけます。
-[!UICONTROL  プロファイル ] 切り替えスイッチをクリックして、このデータセットを [!UICONTROL  プロファイル ] に対して有効にします。
+画面の右側にある [!UICONTROL &#x200B; プロファイル &#x200B;] 切り替えアイコンを見つけます。
+[!UICONTROL &#x200B; プロファイル &#x200B;] 切り替えスイッチをクリックして、このデータセットを [!UICONTROL &#x200B; プロファイル &#x200B;] に対して有効にします。
 
 ![データ取得](./images/ds1.png)
 
@@ -122,11 +122,11 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ![データ取得](./images/ds3.png)
 
-これで、データセットが [!UICONTROL  プロファイル ] に対して有効になりました。
+これで、データセットが [!UICONTROL &#x200B; プロファイル &#x200B;] に対して有効になりました。
 
 データセットの概要に戻り、Web サイトのデータセット `--aepUserLdap-- - Demo System - Event Dataset` をクリックして開きます。
 
-画面の右側にある [!UICONTROL  プロファイル ] 切り替えアイコンを見つけます。 [!UICONTROL  プロファイル ] 切り替えスイッチをクリックして [!UICONTROL  プロファイル ] を有効にします。
+画面の右側にある [!UICONTROL &#x200B; プロファイル &#x200B;] 切り替えアイコンを見つけます。 [!UICONTROL &#x200B; プロファイル &#x200B;] 切り替えスイッチをクリックして [!UICONTROL &#x200B; プロファイル &#x200B;] を有効にします。
 
 ![データ取得](./images/ds4.png)
 
@@ -134,7 +134,7 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ![データ取得](./images/ds5.png)
 
-これで、データセットが [!UICONTROL  プロファイル ] に対して有効になりました。
+これで、データセットが [!UICONTROL &#x200B; プロファイル &#x200B;] に対して有効になりました。
 
 次の手順：[1.2.4 オフラインソースからのデータ取り込み ](./ex4.md)
 

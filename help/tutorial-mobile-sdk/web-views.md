@@ -72,7 +72,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
-1. Assurance UI で、{com.adobe.griffon.mobile ]**ベンダーの {0**[!UICONTROL  Edge Identity Response URL Variables ]**イベントを探します。**[!UICONTROL 
+1. Assurance UI で、&lbrace;com.adobe.griffon.mobile **ベンダーの &lbrace;0**&#x200B;[!UICONTROL &#x200B; Edge Identity Response URL Variables &#x200B;]&#x200B;**イベントを探します。**
 1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトの **[!UICONTROL urlvariable]** フィールドを確認し、URL に `adobe_mc`、`mcmid` および `mcorgid` のパラメーターが存在することを確認します。
 
    ![webview 検証 ](assets/webview-validation.png)

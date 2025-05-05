@@ -43,7 +43,7 @@ ht-degree: 54%
 
 1. ![ ソリューション切り替えアイコン ](images/launch-solutionSwitcher.png) アイコンをクリックして、アプリ切り替えボタンを開きます
 
-1. ![ アイコンを使用してソリューション切り替えボタンを開き ]**メニューから**[!UICONTROL  Launch/データ収集 ](images/launch-solutionSwitcherActivation.png) を選択し、「Launch/データ収集」をクリックします。
+1. [ アイコンを使用してソリューション切り替えボタンを開き ]&#x200B;**メニューから**![[!UICONTROL &#x200B; Launch/データ収集 &#x200B;]](images/launch-solutionSwitcherActivation.png) を選択し、「Launch/データ収集」をクリックします。
 
 `Tags Properties` 画面が表示されます（アカウントでプロパティを作成したことがない場合は、この画面が空になる可能性があります）。
 

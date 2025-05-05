@@ -55,7 +55,7 @@ ht-degree: 58%
 
 **ステージングライブラリで変更を検証するには、以下を実行します。**
 
-1. タグプロパティで、[!UICONTROL  環境 ] ページを開きます
+1. タグプロパティで、[!UICONTROL &#x200B; 環境 &#x200B;] ページを開きます
 
 1. [!UICONTROL ステージング]行で、インストールアイコン![インストールアイコン](images/launch-installIcon.png) をクリックして、モーダルを開きます。
 
@@ -69,7 +69,7 @@ ht-degree: 58%
 
 1. Chrome ブラウザーで [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. ![ デバッガーアイコン ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、[Experience Platformデバッガー拡張機能を開 ](images/icon-debugger.png) ます
+1. [ デバッガーアイコン ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、![Experience Platformデバッガー拡張機能を開 ](images/icon-debugger.png) ます
 
    ![デバッガーアイコンをクリックする](images/switchEnvironments-openDebugger.png)
 
@@ -106,7 +106,7 @@ ht-degree: 58%
 
    ![「ビルドして実稼動環境にパブリッシュ」をクリックする](images/publishing-buildAndPublishToProduction.png)
 
-1. ダイアログボックスで ]**0}Publish} をクリックします。**[!UICONTROL 
+1. ダイアログボックスで **0&rbrace;Publish&rbrace; をクリックします。**
 
    ![「パブリッシュ」をクリックする](images/publishing-publish.png)
 

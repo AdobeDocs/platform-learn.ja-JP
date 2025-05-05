@@ -80,6 +80,7 @@ Places サービスでいくつかの目標点を定義します。
    1. **[!UICONTROL ライブラリを選択]** リストから「**[!DNL Luma]**」を選択します。
    1. **[!UICONTROL 初期ビルド]** など、作業ライブラリが選択されていることを確認します。
    1. **[!UICONTROL ライブラリに保存]** から **[!UICONTROL ライブラリとビルドに保存]** を選択します。
+
       ![Places 拡張機能をインストール ](assets/places-install-extension.png) ます。
 
 1. ライブラリが再構築されます。
@@ -139,9 +140,10 @@ Places サービスでいくつかの目標点を定義します。
 1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]** を選択します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を入力]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
       ![ タグイベント ](assets/tags-event-mobile-core.png)。
 1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
-   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**[!UICONTROL  リストから ]**データを添付]** を選択します。 ペイロードデータを添付します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**&#x200B;[!UICONTROL &#x200B; リストから &#x200B;]&#x200B;**データを添付]** を選択します。 ペイロードデータを添付します。
    1. **[!UICONTROL JSON ペイロード]** に、次のペイロードを貼り付けます。
 
       ```json
@@ -169,6 +171,7 @@ Places サービスでいくつかの目標点を定義します。
       また、「![Data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)」 `{%% ... %%}` 選択すると、JSON にデータ要素のプレースホルダー値を挿入できます。 ポップアップダイアログが表示され、作成したデータ要素を選択できます。
 
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
       ![ タグアクション ](assets/tags-action-mobile-core.png)
 
 1. ![ モバイルコア – データを添付 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) アクションの横にある **[!UICONTROL 追加]** を選択します。
@@ -186,7 +189,7 @@ Places サービスでいくつかの目標点を定義します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を終了]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
-   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**[!UICONTROL  リストから ]**データを添付]** を選択します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**&#x200B;[!UICONTROL &#x200B; リストから &#x200B;]&#x200B;**データを添付]** を選択します。
    1. **[!UICONTROL JSON ペイロード]** に、次のペイロードを貼り付けます。
 
       ```json
@@ -236,7 +239,7 @@ Places サービスでいくつかの目標点を定義します。
 Assurance で設定を検証するには：
 
 1. Assurance UI に移動します。
-1. 左側のパネルに **[!UICONTROL まだ表示されていない場合は、左側のパネルの「]** 設定 ]**」を選択し、「イベント ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」の横の「![ 追加**[!UICONTROL  を選択し、「**[!UICONTROL PLACES SERVICE]**」の下の「**[!UICONTROL マップとシミュレート]** を選択します。
+1. 左側のパネルに **[!UICONTROL まだ表示されていない場合は、左側のパネルの「]** 設定 **」を選択し、「イベント ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」の横の「 追加** を選択し、「**[!UICONTROL PLACES SERVICE]**」の下の「**[!UICONTROL マップとシミュレート]** を選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで「**[!UICONTROL マップとシミュレート]**」を選択します。
 1. POI のいずれかの場所にマップを移動します。

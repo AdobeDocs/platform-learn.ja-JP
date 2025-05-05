@@ -53,7 +53,7 @@ adobe.target.getOffer({
 
 1. コマンド `sendEvent` 実行して、1 つ以上の場所（スコープ）のオファー（提案）をリクエストします
 1. 各範囲 `applyPropositions` ページにコンテンツを適用する方法を指定するメタデータオブジェクトを使用してコマンドを実行します
-1. `decisioning.propositionDisplay``sendEvent`eventType を指定してコマンドを実行し、インプレッションを追跡します
+1. `decisioning.propositionDisplay` `sendEvent`eventType を指定してコマンドを実行し、インプレッションを追跡します
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)

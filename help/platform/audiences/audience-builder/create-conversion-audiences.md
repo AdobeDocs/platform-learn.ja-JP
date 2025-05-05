@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 「[!UICONTROL  セグメント ]」は、Platform インターフェイスの「[!UICONTROL  オーディエンス ]」という名前に変更されました。 **[!UICONTROL オーディエンスを作成]**/**[!UICONTROL ルールを作成]** を選択して、このビデオで紹介されているルールビルダーを入力します。
+> 「[!UICONTROL &#x200B; セグメント &#x200B;]」は、Platform インターフェイスの「[!UICONTROL &#x200B; オーディエンス &#x200B;]」という名前に変更されました。 **[!UICONTROL オーディエンスを作成]**/**[!UICONTROL ルールを作成]** を選択して、このビデオで紹介されているルールビルダーを入力します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333303/?learn=on&enablevpops)
 

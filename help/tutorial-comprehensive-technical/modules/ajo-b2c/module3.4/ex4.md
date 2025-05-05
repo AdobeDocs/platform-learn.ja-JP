@@ -51,7 +51,7 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1a.png)
 
-**2}Adobe Experience Platform** サービスの「編集 **をクリックします。**
+**2&rbrace;Adobe Experience Platform** サービスの「編集 **をクリックします。**
 
 ![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1.png)
 
@@ -88,7 +88,7 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 ![Adobe Experience Platform のデータ収集](./images/launchprop8.png)
 
-次に、「**設定**」をクリックして、拡張機能 **2}Adobe Journey Optimizer} を開きます。**
+次に、「**設定**」をクリックして、拡張機能 **2&rbrace;Adobe Journey Optimizer&rbrace; を開きます。**
 
 ![Adobe Experience Platform のデータ収集](./images/launchprop9.png)
 
@@ -160,7 +160,7 @@ QR コードを含むこのポップアップが表示されます。 モバイ�
 
 ここでは、QR コードをスキャンして、モバイルデバイスを AEP Assurance セッションに接続する必要があります。
 
-AEP Assurance セッションを開始するには、[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで **0}Assurance} をクリックします。**&#x200B;次に、「**セッションを作成**」をクリックします。
+AEP Assurance セッションを開始するには、[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで **0&rbrace;Assurance&rbrace; をクリックします。**&#x200B;次に、「**セッションを作成**」をクリックします。
 
 ![Adobe Experience Platform のデータ収集](./images/griffon3.png)
 
@@ -333,7 +333,7 @@ Assuranceでは、デバイサーがAssurance セッションにアクセスす�
 
 ![DSN](./images/sjourney10.png)
 
-もう一度 **0}Publish} をクリックします。**
+もう一度 **0&rbrace;Publish&rbrace; をクリックします。**
 
 ![DSN](./images/sjourney10a.png)
 

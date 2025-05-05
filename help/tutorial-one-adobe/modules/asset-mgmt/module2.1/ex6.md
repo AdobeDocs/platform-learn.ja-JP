@@ -323,7 +323,7 @@ AEM Edge Delivery Services MarTech プラグインを正しく機能させるに
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-**拡張機能**、**カタログ** に移動します。 拡張子 **Adobe Client Data Layer をクリックしてから****インストール** をクリックします。
+**拡張機能**、**カタログ** に移動します。 拡張子 **Adobe Client Data Layer をクリックしてから**&#x200B;**インストール** をクリックします。
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 

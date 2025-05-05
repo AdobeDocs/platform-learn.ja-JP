@@ -48,7 +48,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
 * イベント転送を含むソフトウェアライセンス。 イベント転送は、データ収集の有料機能です。 詳しくは、Adobeアカウントチームにお問い合わせください。
 * Experience Cloud組織でイベント転送が有効になっている。
-* イベント転送のユーザー権限。 （[Admin Console](https://adminconsole.adobe.com/) のAdobe Experience Platform Launch製品で、{Platforms] > [!UICONTROL Edge] およびすべての [!UICONTROL  プロパティ権限 [!UICONTROL  の権限項目 ]。 付与されると、データ収集インターフェイスの左側のナビゲーションに [!UICONTROL  イベント転送 ] が表示されます。
+* イベント転送のユーザー権限。 （[Admin Console](https://adminconsole.adobe.com/) のAdobe Experience Platform Launch製品で、&lbrace;Platforms > [!UICONTROL Edge] およびすべての  プロパティ権限 [!UICONTROL &#x200B; の権限項目 &#x200B;]。 付与されると、データ収集インターフェイスの左側のナビゲーションに [!UICONTROL &#x200B; イベント転送 &#x200B;] が表示されます。
   ![ イベント転送のプロパティ ](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web SDK または Mobile SDK は、Edge Networkにデータを送信するように設定されています。 このチュートリアルの次のレッスンを完了している必要があります。
@@ -192,7 +192,7 @@ Platform Web SDK タグ拡張機能を使用して以前に設定した XDM オ�
 
 ### Adobe Cloud Connector 拡張機能のインストール
 
-サードパーティの場所にデータを送信するには、まず [!UICONTROL Adobeクラウドコネクタ ] 拡張機能をインストールします。
+サードパーティの場所にデータを送信するには、まず [!UICONTROL Adobeクラウドコネクタ &#x200B;] 拡張機能をインストールします。
 
 1. 左側のナビゲーションの **[!UICONTROL 拡張機能]** を選択します
 
@@ -208,10 +208,10 @@ Platform Web SDK タグ拡張機能を使用して以前に設定した XDM オ�
 
 タグプロパティでルールを設定する場合と、イベント転送プロパティでルールを設定する場合では、主に次の点が異なります。
 
-* **[!UICONTROL イベント ] および [!UICONTROL  条件]**:
+* **[!UICONTROL イベント &#x200B;] および [!UICONTROL &#x200B; 条件]**:
 
    * **タグ**：すべてのルールは、ルールで指定する必要があるイベント（例：`Library Loaded - Page Top`）によってトリガーされます。 条件はオプションです。
-   * **イベント転送**:Platform Edge Networkに送信されるすべてのイベントが、データを転送するトリガーであると想定されます。 したがって、イベント転送ルールで選択する必要がある [!UICONTROL  イベント ] はありません。 イベント転送ルールをトリガーとするイベントを管理するには、条件を設定する必要があります。
+   * **イベント転送**:Platform Edge Networkに送信されるすべてのイベントが、データを転送するトリガーであると想定されます。 したがって、イベント転送ルールで選択する必要がある [!UICONTROL &#x200B; イベント &#x200B;] はありません。 イベント転送ルールをトリガーとするイベントを管理するには、条件を設定する必要があります。
 
 * **データ要素のトークン化**:
 

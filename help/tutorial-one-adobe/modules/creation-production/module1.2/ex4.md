@@ -277,7 +277,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc37.png)
 
-**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **** を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - PSDの編集を適用**）。こちらから取得できます。`data[]._links.renditions[].href`
+**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - PSDの編集を適用**）。こちらから取得できます。`data[]._links.renditions[].href`
 
 ![WF Fusion](./images/wffc37a.png)
 
@@ -315,7 +315,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc43.png)
 
-**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **** を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - テキストレイヤーを編集**）。次から取得できます。`data[]._links.renditions[].href`
+**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - テキストレイヤーを編集**）。次から取得できます。`data[]._links.renditions[].href`
 
 ファイル **citisignal-fiber.psd** を開きます。 ファイルには、コールトゥアクションを含むレイヤーの名前が **2048 x 2048-button-text** になっていることがわかります。
 

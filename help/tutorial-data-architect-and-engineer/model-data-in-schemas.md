@@ -144,8 +144,10 @@ Key terms:
    1. **[!UICONTROL 表示名]**: `System Identifier`
    1. **[!UICONTROL 型]**: **[!UICONTROL Object]**
    1. **[!UICONTROL フィールドグループ]** ドロップダウンで、作成した **Luma ID プロファイルフィールドグループ** を選択します。
+
       ![ 新しいフィールドグループを追加 ](assets/schemas-loyalty-addSystemIdentifier.png)
    1. 「**[!UICONTROL 適用]**」を選択します
+
       ![ 新しいフィールドプロパティを適用 ](assets/schemas-loyalty-applySystemIdentifier.png)
 
 次に、`systemIdentifier` オブジェクトの下に 2 つのフィールドを追加します。
@@ -328,14 +330,14 @@ API 応答とインターフェイスの両方をチェックして、フィー�
 | フィールドグループ | AEP Web SDK ExperienceEvent |
 | フィールドグループ | コンシューマーエクスペリエンスイベント |
 
-「**[!UICONTROL 消費者エクスペリエンスイベント]**」フィールドグループを選択します。 このフィールドグループには、[!UICONTROL Commerceの詳細 ] にも含まれていた commerce および productListItems オブジェクトが含まれます。 Indeed [!UICONTROL  コンシューマーエクスペリエンスイベント ] は、他の標準フィールドグループをいくつか組み合わせたものであり、個別にも使用できます。 [!UICONTROL AEP Web SDK ExperienceEvent] フィールドグループには、他のフィールドグループも含まれています（[!UICONTROL  コンシューマーエクスペリエンスイベント ] の同じフィールドグループの一部を含む）。 幸い、シームレスに溶け合っています。
+「**[!UICONTROL 消費者エクスペリエンスイベント]**」フィールドグループを選択します。 このフィールドグループには、[!UICONTROL Commerceの詳細 &#x200B;] にも含まれていた commerce および productListItems オブジェクトが含まれます。 Indeed [!UICONTROL &#x200B; コンシューマーエクスペリエンスイベント &#x200B;] は、他の標準フィールドグループをいくつか組み合わせたものであり、個別にも使用できます。 [!UICONTROL AEP Web SDK ExperienceEvent] フィールドグループには、他のフィールドグループも含まれています（[!UICONTROL &#x200B; コンシューマーエクスペリエンスイベント &#x200B;] の同じフィールドグループの一部を含む）。 幸い、シームレスに溶け合っています。
 
 このスキーマには `Luma Identity ExperienceEvent field group` を追加していないことに注意してください。 これは、web SDKでは ID を収集する方法が異なるからです。 スキーマエディターの **[!UICONTROL 構成]** セクションで **[!UICONTROL XDM ExperienceEvent]** クラスを選択すると、デフォルトで追加されるフィールドの 1 つが **[!UICONTROL IdentityMap]** という名前であることがわかります。 [!DNL IdentityMap] は、様々なAdobe アプリケーションで Platform にリンクするために使用されます。 identityMap を使用して ID が Platform にどのように送信されるかについては、ストリーミング取り込みのレッスンを参照してください。
 
 
 ## 製品カタログスキーマの作成
 
-Luma は、[!UICONTROL Commerceの詳細 ] および [!UICONTROL  コンシューマーエクスペリエンスイベント ] フィールドグループを使用して、標準の productListItems データタイプを介して商品関連イベントの詳細をレポートします。 ただし、Platform に送信したい追加の製品詳細フィールドもあります。 Luma では、これらのフィールドをすべて POS （販売時点管理システム）や e コマースシステムで取り込む代わりに、製品カタログシステムから直接これらのフィールドを取り込むことをお勧めします。 「スキーマ関係」を使用すると、分類または検索のために 2 つのスキーマ間の関係を定義できます。 Luma は、関係を使用して製品の詳細を分類します。 今から始めて、次のレッスンの最後に完成させます。
+Luma は、[!UICONTROL Commerceの詳細 &#x200B;] および [!UICONTROL &#x200B; コンシューマーエクスペリエンスイベント &#x200B;] フィールドグループを使用して、標準の productListItems データタイプを介して商品関連イベントの詳細をレポートします。 ただし、Platform に送信したい追加の製品詳細フィールドもあります。 Luma では、これらのフィールドをすべて POS （販売時点管理システム）や e コマースシステムで取り込む代わりに、製品カタログシステムから直接これらのフィールドを取り込むことをお勧めします。 「スキーマ関係」を使用すると、分類または検索のために 2 つのスキーマ間の関係を定義できます。 Luma は、関係を使用して製品の詳細を分類します。 今から始めて、次のレッスンの最後に完成させます。
 
 >[!NOTE]
 >
@@ -354,16 +356,16 @@ Luma は、[!UICONTROL Commerceの詳細 ] および [!UICONTROL  コンシュ�
 1. 作成した **Luma 製品カタログクラス** が、以下のクラス表に表示されます。 クラスが選択されていることを確認し、「**[!UICONTROL 次へ]**」を選択します。
    ![ 新しいクラスが追加されました ](assets/schemas-productClassSelected.png)
 1. スキーマに `Luma Product Catalog Schema` という名前を付けます。
-1. 次のフィールドを持つ `Luma Product Catalog field group` という新しい [!UICONTROL  フィールドグループ ] を作成します。
+1. 次のフィールドを持つ `Luma Product Catalog field group` という新しい [!UICONTROL &#x200B; フィールドグループ &#x200B;] を作成します。
    1. productName：製品名：文字列
    1. productCategory：製品カテゴリ：文字列
    1. productColor：製品カラー：文字列
    1. productSku：製品 SKU：文字列 |必須
    1. productSize：製品サイズ：文字列
    1. productPrice：製品価格：Double
-1. スキーマ ]****[!UICONTROL  保存）
+1. スキーマ **&#x200B;**&#x200B;保存）
 
-新しいスキーマは次のようになります。 「[!UICONTROL  必須フィールド ]」セクションに `productSku` のフィールドがどのように表示されるかを確認します。
+新しいスキーマは次のようになります。 「[!UICONTROL &#x200B; 必須フィールド &#x200B;]」セクションに `productSku` のフィールドがどのように表示されるかを確認します。
 ![ 製品スキーマ ](assets/schemas-productSchema.png)
 
 次の手順では、2 つの ExperienceEvent スキーマと `Luma Product Catalog Schema` の間の関係を定義しますが、それを行う前に、次のレッスンで取り組む必要がある追加の手順がいくつかあります。

@@ -93,7 +93,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 ]**」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL  編集 ]**を選択します。**[!UICONTROL 
+1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**&#x200B;[!UICONTROL &#x200B; 編集 &#x200B;]&#x200B;**を選択します。**
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Adobe Journey Optimizer]**」が選択されていることを確認します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 設定を参照してください。
 1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
@@ -180,6 +180,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 1. **[!UICONTROL キャンペーンを作成]** 画面で、次の操作を行います。
    1. 「**[!UICONTROL アプリ内メッセージ]**」を選択し、「**[!UICONTROL アプリサーフェス]**」リストからアプリサーフェス（例：**[!DNL Luma Mobile App]**）を選択します。
    1. 「**[!UICONTROL 作成]**」を選択します。
+
       ![ キャンペーンのプロパティ ](assets/ajo-campaign-properties.png)
 1. キャンペーン定義画面の **[!UICONTROL プロパティ]** で、キャンペーンの **[!UICONTROL 名前]** （例：`Luma - In-App Messaging Campaign`）と **[!UICONTROL 説明]** （例：`In-app messaging campaign for Luma app`）を入力します。
    ![ キャンペーン名 ](assets/ajo-campaign-properties-name.png)
@@ -188,17 +189,19 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
    1. **[!UICONTROL メッセージレイアウト]** として **[!UICONTROL モーダル]** を選択します。
    2. **[!UICONTROL メディア URL]** の `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` を入力します。
    3. **[!UICONTROL Header]** （例：`Welcome to this Luma In-App Message`）を入力し、**[!UICONTROL Body]** （例：`Triggered by pushing that button in the app...`）を入力します。
-   4. **[!UICONTROL ボタンの#1 のテキスト]** プライマリ） **** として「解除」と入力します。
+   4. **[!UICONTROL ボタンの#1 のテキスト]** プライマリ） **&#x200B;**&#x200B;として「解除」と入力します。
    5. プレビューの更新方法に注意してください。
    6. 「**[!UICONTROL アクティブ化するレビュー]**」を選択します。
+
       ![ アプリ内エディター ](assets/ajo-in-app-editor.png)
-1. **[!UICONTROL アクティブ化するレビュー（Luma - アプリ内メッセージキャンペーン）画面]****[!UICONTROL スケジュール ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) タイルの ![ 編集]** を選択します。
+1. **[!UICONTROL アクティブ化するレビュー（Luma - アプリ内メッセージキャンペーン）画面]**&#x200B;**![[!UICONTROL スケジュール &#x200B;]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) タイルの [ 編集]** を選択します。
    ![ レビューのスケジュールで「スケジュール」を選択 ](assets/ajo-review-select-schedule.png)
 1. **[!DNL Luma - In-App Messaging Campaign]** 画面に戻り、「![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL トリガーを編集]** を選択します。
 1. **[!UICONTROL アプリ内メッセージのトリガー]** ダイアログでは、アプリ内メッセージをトリガーにするトラックアクションの詳細を設定します。
    1. **[!UICONTROL アプリケーションの起動イベント]** を削除するには、「![ 閉じる ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)」を選択します。
    1. ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL Add 条件]** を繰り返し使用して、「次の場合にメッセージを表示 **[!UICONTROL のロジックを作成し]** す。
    1. 「**[!UICONTROL 完了]**」をクリックします。
+
       ![トリガー ロジック ](assets/ajo-trigger-logic.png)
 
    **[!UICONTROL Action]** が `in-app` に等しく、**[!UICONTROL コンテキストデータ]** が `"showMessage" : "true"` のキー値ペアである追跡アクションを定義しました。

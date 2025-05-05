@@ -218,7 +218,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 データストリームでAdobe Analytics レポートスイートの上書き設定を指定するには：
 
 1. データストリームを開きます
-1. ![ 詳細 ]**メニューを開いて**[!UICONTROL  編集 ]**を選択して、**[!UICONTROL  Adobe Analytics](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 設定を編集します
+1. [ 詳細 ]&#x200B;**メニューを開いて**&#x200B;[!UICONTROL &#x200B; 編集 &#x200B;]&#x200B;**を選択して、**![[!UICONTROL &#x200B; Adobe Analytics]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 設定を編集します
 
    ![ データストリームを上書き ](assets/datastream-edit-analytics.png)
 

@@ -61,7 +61,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 モバイルアプリからExperience PlatformEdge Networkへデータが確実にAdobe Targetに転送されるようにするには、データストリーム設定を更新する必要があります。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. **[!UICONTROL サービスを追加]** を選択してから、{ サービス ]**リストから**[!UICONTROL  2 ]**Adobe Target} を選択してください。**[!UICONTROL 
+1. **[!UICONTROL サービスを追加]** を選択してから、{ サービス **リストから**&#x200B;[!UICONTROL &#x200B; 2 &#x200B;]&#x200B;**Adobe Target} を選択してください。**
 1. Target Premium のお客様でプロパティトークンを使用する場合は、この統合に使用する Target **[!UICONTROL プロパティトークン]** 値を入力します。 Target Standard ユーザーは、この手順をスキップできます。
 
    Target UI の **[!UICONTROL 管理]**/**[!UICONTROL プロパティ]** で、プロパティを確認できます。 「![ コード ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)」を選択して、使用するプロパティのプロパティトークンを表示します。 プロパティトークンには `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"` のような形式があります。値 `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` のみを入力する必要があります。
@@ -80,7 +80,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 モバイルアプリからEdge Networkに送信されるデータがJourney Optimizer - Decision Management に転送されるようにするには、データストリーム設定を更新します。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 「{ その他 ]**」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL  編集 ]**を選択します。**[!UICONTROL 
+1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 「&lbrace; その他 **」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**&#x200B;[!UICONTROL &#x200B; 編集 &#x200B;]&#x200B;**を選択します。**
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Offer decisioning]**」、「**[!UICONTROL Edgeのセグメント化]**」および「**[!UICONTROL Personalizationの宛先]**」が選択されていることを確認します。 Journey Optimizerのレッスンにも従う場合は、「**[!UICONTROL Adobe Journey Optimizer]**」を選択します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 設定を参照してください。
 1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
@@ -103,7 +103,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 1. データ収集インターフェイスに移動し、左パネルから **[!UICONTROL スキーマ]** を選択します。
 1. 上部のバーから **[!UICONTROL 参照]** を選択します。
 1. スキーマを選択して開きます。
-1. スキーマエディターで、「フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「![ 追加 **[!UICONTROL ****追加]** を選択します。
+1. スキーマエディターで、「フィールドグループ ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「 追加 **[!UICONTROL **&#x200B;**&#x200B;追加]** を選択します。
 1. **[!UICONTROL フィールドグループの追加]** ダイアログで、`proposition` を検索し、**[!UICONTROL エクスペリエンスイベント – 提案インタラクション]** および **[!UICONTROL フィールドグループの追加]** を選択します。
    ![ 提案 ](assets/schema-fieldgroup-proposition.png)
 1. スキーマへの変更を保存するには、「**[!UICONTROL 保存]**」を選択します。
@@ -114,7 +114,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 Assurance で設定を検証するには：
 
 1. Assurance UI に移動します。
-1. 左側のパネルで **[!UICONTROL 設定]** を選択し、{6![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 設定を検証]** の横にある「追加 ]**を選択します。**[!UICONTROL 
+1. 左側のパネルで **[!UICONTROL 設定]** を選択し、&lbrace;6![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 設定を検証]** の横にある「追加 **を選択します。**
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで **[!UICONTROL 設定を検証]** を選択します。 データストリームの設定と、アプリケーションでの SDK の設定の両方が検証されます。
    ![AJO Decisioning の検証 ](assets/ajo-decisioning-validation.png)
@@ -131,8 +131,8 @@ Assurance で設定を検証するには：
 
 1. **[!UICONTROL 名称未設定アクティビティ]** 画面の **[!UICONTROL エクスペリエンス]** ステップで、次の操作を行います。
 
-   1. **[!UICONTROL LOCATION 1**[!UICONTROL  の下の ]**Select Location]** に `luma-mobileapp-abtest` と入力します。 この場所名（mbox と呼ばれることが多い）は、アプリの実装で後で使用されます。
-   1. **[!UICONTROL デフォルトコンテンツ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) の横にある ![Chrevron down]** を選択し、コンテキストメニューから **[!UICONTROL JSON オファーを作成]** を選択します。
+   1. **[!UICONTROL LOCATION 1**&#x200B;[!UICONTROL &#x200B; の下の &#x200B;]&#x200B;**Select Location]** に `luma-mobileapp-abtest` と入力します。 この場所名（mbox と呼ばれることが多い）は、アプリの実装で後で使用されます。
+   1. **![[!UICONTROL デフォルトコンテンツ &#x200B;]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) の横にある [Chrevron down]** を選択し、コンテキストメニューから **[!UICONTROL JSON オファーを作成]** を選択します。
    1. 次の JSON を **[!UICONTROL 有効な JSON オブジェクトを入力]** にコピーします。
 
       ```json
@@ -277,7 +277,7 @@ Assurance で設定を検証するには：
 Assurance で A/B テストを検証するには：
 
 1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
-1. 左側のパネルで **[!UICONTROL 設定]** を選択し、{6![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL レビューとシミュレーション]** の横にある「追加 ]**を選択します。**[!UICONTROL 
+1. 左側のパネルで **[!UICONTROL 設定]** を選択し、&lbrace;6![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL レビューとシミュレーション]** の横にある「追加 **を選択します。**
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで **[!UICONTROL レビューとシミュレート]** を選択します。 データストリームの設定と、アプリケーションでの SDK の設定の両方が検証されます。
 1. 上部のバーで「**[!UICONTROL リクエスト]**」を選択します。 **[!DNL Target]** リクエストが表示されます。

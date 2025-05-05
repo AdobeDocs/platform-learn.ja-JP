@@ -31,7 +31,7 @@ Target の実装は、使用するサイトのアーキテクチャと機能に�
 | ページリクエストを使用してカタログに値を入力する場合、Recommendations カタログが期待どおりに更新されます | |
 | プロファイルパラメーターが Target に正常に渡されました | Debugger でのEdge トレースの表示 |
 | データストリームマッパーで XDM にマッピングされたパラメーターは、Target に正しく渡されます | Debugger や Assurance のEdge Trace 機能を使用した検証 |
-| Target コンテンツは、該当する `sendEvent` 応答で返されます | オプションが `true``renderDecisions` 設定されている場合か、範囲がリクエストされ、ユーザーが特定の Target アクティビティの対象となる場合に想定されます |
+| Target コンテンツは、該当する `sendEvent` 応答で返されます | オプションが `true` `renderDecisions` 設定されている場合か、範囲がリクエストされ、ユーザーが特定の Target アクティビティの対象となる場合に想定されます |
 | `decisioning.propositionDisplay` イベントは、VEC ベースのアクティビティのレンダリング後に発生します | 自動的かつオンデマンドにレンダリングされるアクティビティでは、別々のイベント呼び出しが想定されます |
 | `decisioning.propositionDisplay` イベントは、フォームベースのアクティビティのレンダリング後に発生します | 特定の実装にのみ適用できます。 この呼び出しを実行するには、カスタムコードが必要です。 |
 | `decisioning.propositionDisplay` イベントは、オファーがSPA ビューの変更に適用されたときに発生します | SPA実装にのみ適用できます |

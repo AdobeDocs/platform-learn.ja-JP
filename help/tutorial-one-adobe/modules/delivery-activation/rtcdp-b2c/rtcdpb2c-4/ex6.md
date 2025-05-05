@@ -19,10 +19,12 @@ Azure 関数を使用すると、アプリケーションインフラストラ�
 関数は、特定のタイプのイベントによって **トリガー** されます。 サポートされるトリガーには、データの変化への対応、メッセージ（Event Hubs など）への対応、スケジュールに従った実行、または HTTP リクエストの結果としての応答が含まれます。
 Azure Functions は、インフラストラクチャを明示的にプロビジョニングまたは管理することなく、イベントトリガーコードを実行できる、サーバーレスの計算サービスです。
 Azure Event Hubs は、サーバーレス アーキテクチャのために Azure Functions と統合されています。
+
 ## Visual Studio Code を開き、Azure にログオンします
 
 Visual Studio Code を使用すると、次のことが簡単になります。
 - azure 関数の定義と Event Hubs へのバインド- ローカルでテスト- azure にデプロイ- リモートログ関数の実行
+
 ### Visual Studio Code を開きます。
 
 ### Azure へのログオン
@@ -36,6 +38,7 @@ Visual Studio Code を開き、「**Azure**」アイコンをクリックしま�
 ![3-03-vsc-login-ok.png](./images/303vscloginok.png)
 Visual Code Studio に戻ります（例：**Azure サブスクリプション 1**）。
 ![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
 ## Azure プロジェクトの作成
 
 「**関数プロジェクトを作成…**」をクリックします。
@@ -65,6 +68,7 @@ Visual Code Studio に戻ります（例：**Azure サブスクリプション 1
 プロジェクトを作成したら、エディターで `--aepUserLdap---aep-event-hub-trigger.js` ファイルを開きます。
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 Adobe Experience Platformからイベントハブに送信されるペイロードは次のようになります。
+
 ```json
 {
   "identityMap": {
@@ -92,16 +96,19 @@ Adobe Experience Platformからイベントハブに送信されるペイロー�
 
 以下のコードを使用して、Visual Studio Code の `--aepUserLdap---aep-event-hub-trigger.js` のコードを更新します。 このコードは、Real-time CDP がイベントハブ宛先にオーディエンス選定を送信するたびに実行されます。 この例では、コードは受信ペイロードの表示に過ぎませんが、オーディエンスの選定をリアルタイムで処理し、データパイプラインエコシステムの下方で使用するために、あらゆる種類の追加の関数を想像できます。
 ファイル `--aepUserLdap---aep-event-hub-trigger.js` の 11 行目には、現在、次の情報が表示されています。
+
 ```javascript
 context.log('Event hub message:', message);
 ```
 
 `--aepUserLdap---aep-event-hub-trigger.js` の 11 行目を次のように変更します。
+
 ```javascript
 context.log('Event hub message:', JSON.stringify(message));
 ```
 
 合計ペイロードは次のようになります。
+
 ```javascript
 const { app } = require('@azure/functions');
 
@@ -125,6 +132,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 結果は次のようになります。
 ![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
+
 ## Azure プロジェクトの実行
 
 次に、プロジェクトを実行します。 この段階では、プロジェクトを Azure にデプロイしません。 デバッグモードでローカルに実行します。 [ ファイル名を指定して実行 ] アイコンを選択し、緑色の矢印をクリックします。
@@ -135,10 +143,12 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 ![3-17-vsc-run-project.png](./images/vsc14b.png)
 これで、プロジェクトが起動および実行され、イベントハブにイベントがリストされるようになりました。 次の演習では、オーディエンスの資格を得る CitiSignal デモ web サイトで動作を実演します。 その結果、Event Hub トリガー関数のターミナルにオーディエンスの選定ペイロードが届きます。
 ![3-24-vsc-application-stop.png](./images/vsc18.png)
+
 ## Azure プロジェクトを停止
 
 プロジェクトを停止するには、VSC の lenu **コールスタック** に移動し、実行中のプロジェクトの矢印をクリックして **停止** をクリックします。
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
+
 ## 次の手順
 
 [2.4.7 エンドツーエンドのシナリオに移動 ](./ex7.md){target="_blank"}

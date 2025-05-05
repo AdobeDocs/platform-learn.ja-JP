@@ -27,7 +27,7 @@ Event Hubs は、イベントパイプラインの **フロントドア** を表
 
 ![1-01-open-azure-portal.png](./images/101openazureportal.png)
 
-リソース画面で、検索バーに **イベント** と入力します。 **Event Hubs** カードを見つけ、[ 作成 **] をクリックし**[**Event Hubs**..
+リソース画面で、検索バーに **イベント** と入力します。 **Event Hubs** カードを見つけ、[ 作成 **] をクリックし**&lbrack;**Event Hubs**..
 
 ![1-02-search-event-hubs.png](./images/102searcheventhubs.png)
 

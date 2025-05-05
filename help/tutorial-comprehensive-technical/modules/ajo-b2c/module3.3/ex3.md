@@ -133,7 +133,7 @@ BASE64 でエンコードされた文字列をAdobe Experience Platformから取
 
 ![WebSDK](./images/launch12.png)
 
-Adobe Experience Platform Data Collection で、**[!UICONTROL 公開フロー]** に移動し、**[!UICONTROL Main]** という名前の ]**開発ライブラリ**[!UICONTROL  を開きます。 「**[!UICONTROL +変更されたリソースをすべて追加」をクリックし]** 「**[!UICONTROL 開発用に保存してビルド]**」をクリックします。 これで、変更内容がデモ Web サイトに公開されます。
+Adobe Experience Platform Data Collection で、**[!UICONTROL 公開フロー]** に移動し、**[!UICONTROL Main]** という名前の **開発ライブラリ** を開きます。 「**[!UICONTROL +変更されたリソースをすべて追加」をクリックし]** 「**[!UICONTROL 開発用に保存してビルド]**」をクリックします。 これで、変更内容がデモ Web サイトに公開されます。
 
 ![WebSDK](./images/launch13.png)
 
@@ -196,7 +196,7 @@ event.decisions.forEach(function (payload) {
 
 ![WebSDK](./images/decrec8.png)
 
-Adobe Experience Platform Data Collection で、**[!UICONTROL 公開フロー]** に移動し、**[!UICONTROL Main]** という名前の ]**開発ライブラリ**[!UICONTROL  を開きます。 「**[!UICONTROL +変更されたリソースをすべて追加」をクリックし]** 「**[!UICONTROL 開発用に保存してビルド]**」をクリックします。 これで、変更内容がデモ Web サイトに公開されます。
+Adobe Experience Platform Data Collection で、**[!UICONTROL 公開フロー]** に移動し、**[!UICONTROL Main]** という名前の **開発ライブラリ** を開きます。 「**[!UICONTROL +変更されたリソースをすべて追加」をクリックし]** 「**[!UICONTROL 開発用に保存してビルド]**」をクリックします。 これで、変更内容がデモ Web サイトに公開されます。
 
 ![WebSDK](./images/decrec9.png)
 

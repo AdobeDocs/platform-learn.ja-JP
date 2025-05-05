@@ -79,7 +79,7 @@ Edge NetworkからAdobe Experience Platformに XDM データを送信するに�
 
 1. 次に、「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL サービスを追加]**」を選択します。
 
-1. [!UICONTROL  サービス ]**リストから**[!UICONTROL  Adobe Experience Platform] を選択します。
+1. [!UICONTROL &#x200B; サービス &#x200B;]&#x200B;**リストから**&#x200B;[!UICONTROL &#x200B; Adobe Experience Platform] を選択します。
 
 1. **[!UICONTROL 有効]** をオンにしてサービスを有効にします。
 
@@ -144,7 +144,7 @@ Platform インターフェイスで、
 
 ![ID 値の検索 ](assets/platform-profile-lookup.png)
 
-**[!UICONTROL 詳細]** 画面には、**[!UICONTROL ** リンクされた ID **]** など、ユーザーに関する基本情報が表示されます。
+**[!UICONTROL 詳細]** 画面には、**[!UICONTROL **&#x200B; リンクされた ID &#x200B;**]** など、ユーザーに関する基本情報が表示されます。
 ![ プロファイルの詳細 ](assets/platform-profile-details.png)
 
 **[!UICONTROL イベント]** には、このユーザーについてモバイルアプリ実装から収集されたイベントが表示されます。

@@ -33,6 +33,7 @@ ht-degree: 0%
 
    ![Adobe Analytics – 変数を設定 ](assets/aa-set-variables.jpg)
    1. そのルールで設定されている変数に注意してください
+
       ![ 設定される変数 ](assets/aa-vars-set.jpg)
 
 1. ページ上部で、ラジオボタンを **JSON を提供** に変更すると、設定された変数のコードビューが表示されます。 このコードビューと UI ビューは置き換え可能で、一方の UI で設定した内容は、もう一方の UI でも更新されます。
@@ -52,7 +53,7 @@ ht-degree: 0%
 
    ![ 新規アクションを追加 ](assets/add-new-action.jpg)
 
-1. 拡張機能ドロップダウンから **0}Adobe Experience Platform Web SDK} を選択します。**
+1. 拡張機能ドロップダウンから **0&rbrace;Adobe Experience Platform Web SDK&rbrace; を選択します。**
 1. 「アクションタイプ」ドロップダウンから **変数を更新** を選択します。
 1. 右側のパネルの上部にリストされている **データ要素** が、実際に新しい変数タイプのデータ要素であることを確認します。
 1. 右側のパネルで、データオブジェクト内の **Analytics** オブジェクトを選択します

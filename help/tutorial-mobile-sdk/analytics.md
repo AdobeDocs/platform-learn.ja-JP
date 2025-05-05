@@ -41,7 +41,7 @@ Edge NetworkからAdobe Analyticsに XDM データを送信するには、[ デ�
 
 1. 次に、「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL サービスを追加]**」を選択します。
 
-1. [!UICONTROL  サービス ]**リストから**[!UICONTROL  Adobe Analytics] を追加します。
+1. [!UICONTROL &#x200B; サービス &#x200B;]&#x200B;**リストから**&#x200B;[!UICONTROL &#x200B; Adobe Analytics] を追加します。
 
 1. **[!UICONTROL レポートスイート ID]** で使用する、Adobe Analyticsのレポートスイートの名前を入力します。
 
@@ -286,7 +286,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 このデータを使用した処理ルールは、次のようになります。
 
-* **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** （4） **[!UICONTROL が設定されている場合、（1）]** アプリ画面名（eVar2） **[!UICONTROL 2）**[!UICONTROL  アプリ画面名を上書きします ]**（3）****5]**。
+* **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** （4） **[!UICONTROL が設定されている場合、（1）]** アプリ画面名（eVar2） **[!UICONTROL 2）**&#x200B;[!UICONTROL &#x200B; アプリ画面名を上書きします &#x200B;]&#x200B;**（3）**&#x200B;**5]**。
 
 * **[!UICONTROL a.x.commerce.saveForLaters.value （コンテキスト）]** （9） **[!UICONTROL が設定されている場合は、（イベント]** （6） **[!UICONTROL ウィッシュリストに追加（イベント 3）]** （7）を **[!UICONTROL a.x.commerce.saveForLaters.value （コンテキスト）]** （8）に **[!UICONTROL 追加]** （10）します。
 
@@ -309,11 +309,11 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 ## Analytics モバイル拡張機能からの移行
 
-[Adobe Analytics モバイル拡張機能を使用してモバイルアプリケーションを開発した場合は ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application)[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) の API 呼び出しを使用している可能性が最も高くなります。
+[Adobe Analytics モバイル拡張機能を使用してモバイルアプリケーションを開発した場合は ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) の API 呼び出しを使用している可能性が最も高くなります。
 
 推奨Edge Networkを使用して移行する場合は、次の選択肢があります。
 
-* [ イベントデータのトラッキング ](events.md) 方法のレッスンで示すように ](configure-tags.md#extension-configuration)[Edge Network拡張機能を実装し、[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) API を使用します。 このチュートリアルでは、この実装に焦点を当てています。
+* [ イベントデータのトラッキング ](events.md) 方法のレッスンで示すように [&#128279;](configure-tags.md#extension-configuration)Edge Network拡張機能を実装し、[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) API を使用します。 このチュートリアルでは、この実装に焦点を当てています。
 * [Edge Bridge拡張機能 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を実装し、[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API 呼び出しを引き続き使用します。 詳細と別のチュートリアルについては、[Edge Bridge拡張機能の実装 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を参照してください。
 
 

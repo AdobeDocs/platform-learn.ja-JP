@@ -37,6 +37,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 1. データ収集インターフェイスで新しいモバイルタグプロパティを作成します。
    1. 左側のナビゲーションで「**[!UICONTROL タグ]**」を選択します。
    1. **[!UICONTROL 新規プロパティ]** を選択します。
+
       ![ タグプロパティの作成 ](assets/tags-new-property.png)。
    1. **[!UICONTROL 名前]** に `Luma Mobile App Tutorial` と入力します。
    1. **[!UICONTROL プラットフォーム]** には、「**[!UICONTROL モバイル]**」を選択します。
@@ -46,7 +47,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
       >[!NOTE]
       >
-      > このレッスンでやっていることなど、エッジベースの Mobile SDK 実装のデフォルトの同意設定は、タグプロパティ設定の [!UICONTROL  プライバシー ] 設定ではなく、[!UICONTROL  同意拡張機能 ] から取得されます。 同意拡張機能を追加および設定する方法は、このレッスンの後半で説明します。 詳しくは、[ ドキュメント ](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/) を参照してください。
+      > このレッスンでやっていることなど、エッジベースの Mobile SDK 実装のデフォルトの同意設定は、タグプロパティ設定の [!UICONTROL &#x200B; プライバシー &#x200B;] 設定ではなく、[!UICONTROL &#x200B; 同意拡張機能 &#x200B;] から取得されます。 同意拡張機能を追加および設定する方法は、このレッスンの後半で説明します。 詳しくは、[ ドキュメント ](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/) を参照してください。
 
 
 1. 新規プロパティを開きます。
@@ -65,6 +66,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
       ![ ライブラリのビルド ](assets/tags-save-library.png)
 
    1. 最後に、「**[!UICONTROL 作業ライブラリを選択]** メニューから作業ライブラリとして **[!UICONTROL 初期ビルド]** を選択します。
+
       ![ 作業ライブラリとしてを選択 ](assets/tags-working-library.png)
 1. 拡張機能を確認：
 
@@ -113,7 +115,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
    1. **[!UICONTROL データストリーム]** で、[ 前の手順 ](create-datastream.md) で作成した **[!UICONTROL データストリーム]** を各環境に対して選択します（例：**[!DNL Luma Mobile App]**）。
 
-   1. まだ入力していない場合は、{Domain Configuration ]**内で]** 0}Edge Networkドメイン **[!UICONTROL を指定します。**[!UICONTROL  Edge Networkドメインは組織の名前で、その後に `data.adobedc.net` が続きます（例：`techmarketingdemos.data.adobedc.net`）。
+   1. まだ入力していない場合は、{Domain Configuration **内で** 0}Edge Networkドメイン **を指定します。** Edge Networkドメインは組織の名前で、その後に `data.adobedc.net` が続きます（例：`techmarketingdemos.data.adobedc.net`）。
 
    1. **[!UICONTROL ライブラリに保存]** メニューから **[!UICONTROL ライブラリとビルドに保存]** を選択します。
 

@@ -128,7 +128,7 @@ CJA に関する FAQ をここで確認し、ID ステッチのニュアンス�
 
 ## 次の手順
 
-[1.1.3 データビューの作成 ](./ex3.md) （./ex2.md） {target="_blank"}
+[1.1.3 データビューの作成 ](./ex3.md){target="_blank"} （./ex2.md） 
 
 [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"} に戻る
 

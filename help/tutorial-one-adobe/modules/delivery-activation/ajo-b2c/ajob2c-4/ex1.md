@@ -399,7 +399,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
-現在は不明なこの顧客の主要識別子として **0}Experience Cloud ID} を持つプロファイルビューアパネルとリアルタイム顧客プロファイルをご覧ください。**
+現在は不明なこの顧客の主要識別子として **0&rbrace;Experience Cloud ID&rbrace; を持つプロファイルビューアパネルとリアルタイム顧客プロファイルをご覧ください。**
 
 ![デモ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 

@@ -193,7 +193,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/publishjourney.png)
 
-もう一度 **0}Publish} をクリックします。**
+もう一度 **0&rbrace;Publish&rbrace; をクリックします。**
 
 ![ACOP](./images/publish1.png)
 

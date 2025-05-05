@@ -61,7 +61,7 @@ Google BigQuery アカウント選択画面が表示されます。 アカウン
 
 ![ デモ ](./images/xdm6.png)
 
-下にスクロールします。 次に、Google Analytics/BigQuery から各 **0}Source フィールド } を、フィールドごとに XDM** ターゲットフィールド **にマッピングする必要があります。**&#x200B;多数のエラーが表示される場合があります。これらは、以下のマッピング演習で対処します。
+下にスクロールします。 次に、Google Analytics/BigQuery から各 **0&rbrace;Source フィールド &rbrace; を、フィールドごとに XDM** ターゲットフィールド **にマッピングする必要があります。**&#x200B;多数のエラーが表示される場合があります。これらは、以下のマッピング演習で対処します。
 
 ![ デモ ](./images/xdm8.png)
 
@@ -95,7 +95,7 @@ Google BigQuery アカウント選択画面が表示されます。 アカウン
 | `iif(Product_Removes_From_Cart == null, 0, Product_Removes_From_Cart), 1, 0)` | commerce.productListRemovals.value |
 | `iif(Product_Checkouts == null, 0, Product_Checkouts)` | commerce.checkouts.value |
 
-**計算フィールド** を作成するには、[**+新しいフィールドの種類 ] をクリックし**[**計算フィールド**] をクリックします。
+**計算フィールド** を作成するには、[**+新しいフィールドの種類 ] をクリックし**&#x200B;[**計算フィールド**] をクリックします。
 
 ![ デモ ](./images/xdm8a.png)
 

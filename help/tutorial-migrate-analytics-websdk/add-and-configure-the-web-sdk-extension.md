@@ -19,8 +19,10 @@ ht-degree: 0%
 
 1. Experience Platformデータ収集に移動します。 これは、次の 2 つの方法のいずれかで実現できます。
    1. [Adobe Experience Platform インターフェイス ](https://platform.adobe.com/) に移動し、左ナビゲーションの下部付近にある **[!UICONTROL タグ]** を選択します。
+
       ![ タグ 1 へのアクセス ](assets/access-tags-1.jpg)
    1. Platform へのアクセス権がない場合は、ウィンドウの右上にあるアプリケーション切り替えボタン（9 つのドット）を使用し、（Experience.Adobe.comにログインした後に）「データ収集」を選択します。
+
       ![ タグ 2 へのアクセス ](assets/access-tags-2.jpg)
 1. Web SDKに移行するタグプロパティを見つけて選択します。
 1. タグプロパティの左側のナビゲーションで、「**[!UICONTROL 拡張機能]**」を選択します。

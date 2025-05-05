@@ -17,7 +17,7 @@ Target の実装は、サイトのアーキテクチャ、ビジネス要件、�
 
 at.js を使用した次の 2 つのサンプルページについて考えてみます。
 
-製品の詳細ページの+++at.js:
++++製品の詳細ページのat.js:
 
 ```HTML
 <!doctype html>
@@ -59,7 +59,7 @@ at.js を使用した次の 2 つのサンプルページについて考えて�
 +++
 
 
-注文確認ページの+++at.js:
++++注文確認ページのat.js:
 
 ```HTML
 <!doctype html>
@@ -169,7 +169,7 @@ alloy("sendEvent", {
 
 ![XDM オブジェクトデータ要素の XDM フィールドへのマッピング ](assets/params-tags-pageName.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト ] を [!UICONTROL  送信イベント ][!UICONTROL  アクション ] に含めます（複数の [!UICONTROL XDM オブジェクト ][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
 
 ![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -223,7 +223,7 @@ alloy("sendEvent", {
 
 ![ データ要素でのデータオブジェクトの定義 ](assets/params-tags-dataObject.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL  送信イベント ][!UICONTROL  アクション ] に含めます（複数の [!UICONTROL  オブジェクト ][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
 
 ![ データオブジェクトを送信イベントに含める ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -277,7 +277,7 @@ alloy("sendEvent", {
 
 ![ データ要素でのデータオブジェクトの定義 ](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL  送信イベント ][!UICONTROL  アクション ] に含めます（複数の [!UICONTROL  オブジェクト ][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
 
 ![ データオブジェクトを送信イベントに含める ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -345,11 +345,11 @@ alloy("sendEvent", {
 
 >[!TAB タグ]
 
-タグでは、まず [!UICONTROL XDM オブジェクト ] データ要素を使用して、必須の XDM フィールド（JavaScriptの例を参照）およびオプションのカスタムスコープにマッピングします。
+タグでは、まず [!UICONTROL XDM オブジェクト &#x200B;] データ要素を使用して、必須の XDM フィールド（JavaScriptの例を参照）およびオプションのカスタムスコープにマッピングします。
 
 ![XDM オブジェクトデータ要素の XDM フィールドへのマッピング ](assets/params-tags-purchase.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト ] を [!UICONTROL  送信イベント ][!UICONTROL  アクション ] に含めます（複数の [!UICONTROL XDM オブジェクト ][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
 
 ![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
@@ -411,17 +411,17 @@ alloy("sendEvent", {
 
 >[!TAB タグ]
 
-[!UICONTROL ID] 値、[!UICONTROL  認証状態 ] および [!UICONTROL  名前空間 ] は、[!UICONTROL ID マップ ] データ要素に取り込まれます。
+[!UICONTROL ID] 値、[!UICONTROL &#x200B; 認証状態 &#x200B;] および [!UICONTROL &#x200B; 名前空間 &#x200B;] は、[!UICONTROL ID マップ &#x200B;] データ要素に取り込まれます。
 ![ 顧客 ID をキャプチャする ID マップデータ要素 ](assets/params-tags-customerIdDataElement.png){zoomable="yes"}
 
-次に、[!UICONTROL Identity map] データ要素を使用して、[!UICONTROL XDM オブジェクト ] データ要素の [!UICONTROL identityMap] フィールドを設定します。
+次に、[!UICONTROL Identity map] データ要素を使用して、[!UICONTROL XDM オブジェクト &#x200B;] データ要素の [!UICONTROL identityMap] フィールドを設定します。
 ![XDM オブジェクトデータ要素で使用される ID マップデータ要素 ](assets/params-tags-customerIdInXDMObject.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト ] がルールの [!UICONTROL  イベントを送信 ] アクションに含まれます。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] がルールの [!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションに含まれます。
 
 ![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent-xdm.png){zoomable="yes"}
 
-データストリームのAdobe Target サービスで、[!UICONTROL Target サードパーティ ID 名前空間 ] を [!UICONTROL ID マップ ] データ要素で使用されているのと同じ名前空間に設定してください。
+データストリームのAdobe Target サービスで、[!UICONTROL Target サードパーティ ID 名前空間 &#x200B;] を [!UICONTROL ID マップ &#x200B;] データ要素で使用されているのと同じ名前空間に設定してください。
 ![ データストリームで Target サードパーティ ID 名前空間を設定する ](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]

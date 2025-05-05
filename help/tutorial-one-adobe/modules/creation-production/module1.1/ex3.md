@@ -134,7 +134,7 @@ Postmanで、リクエスト **Photoshop - PSD マニフェストの取得** を
 
 次に、API を使用してcall to actionのテキストを変更する必要があります。
 
-Postmanで、リクエスト **Photoshop - Change Text を開き****Body** に移動します。
+Postmanで、リクエスト **Photoshop - Change Text を開き**&#x200B;**Body** に移動します。
 
 画面は次のようになります。
 

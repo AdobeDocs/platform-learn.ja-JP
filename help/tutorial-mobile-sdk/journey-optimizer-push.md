@@ -71,7 +71,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
    ![ 新しいキーを作成 ](assets/mobile-push-apple-dev-new-key.png)
 
 1. **[!UICONTROL キー名]** を入力します。
-1. 「**[!UICONTROL Apple プッシュ通知サービス ] （APN）**」チェックボックスをオンにします。
+1. 「**[!UICONTROL Apple プッシュ通知サービス &#x200B;] （APN）**」チェックボックスをオンにします。
 1. 「**[!UICONTROL 続行]**」を選択します。
    ![ 新しいキーを設定 ](assets/mobile-push-apple-dev-config-key.png)
 1. 設定を確認し、「**[!UICONTROL 登録]**」を選択します。
@@ -104,7 +104,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 
 1. 前の演習で取得した.p8 **Apple プッシュ通知認証キー** ファイルをドラッグ&amp;ドロップします。
 
-1. 認証キーの作成時に割り当てられる 10 文字の文字列である **[!UICONTROL キー ID]**`p8` 指定します。 これは、Apple開発者ポータルページの「**[!UICONTROL 証明書、識別子、プロファイル** ページの「]**キー**」タブにあります。 （前の演習でメモしておく必要があります）。
+1. 認証キーの作成時に割り当てられる 10 文字の文字列である **[!UICONTROL キー ID]**`p8` 指定します。 これは、Apple開発者ポータルページの「**[!UICONTROL 証明書、識別子、プロファイル** ページの「]&#x200B;**キー**」タブにあります。 （前の演習でメモしておく必要があります）。
 
 1. **[!UICONTROL チーム ID]** を指定します。Team ID は値で、**メンバーシップ** タブまたはApple Developer Portal ページの上部にあります。 （前の演習でメモしておく必要があります）。
 
@@ -148,10 +148,10 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 モバイルアプリから Experience Edgeに送信されるデータが確実にEdge Networkに転送されるようにするには、Journey Optimizer設定を更新します。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 ]**」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL  編集 ]**を選択します。**[!UICONTROL 
+1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **」を選択し、コンテキストメニューから ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**&#x200B;[!UICONTROL &#x200B; 編集 &#x200B;]&#x200B;**を選択します。**
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、次の操作を行います。
 
-   1. まだ選択していない場合は、{ プロファイルデータセット ]**から**[!UICONTROL  0}AJO プッシュプロファイルデータセット ]**を選択します。**[!UICONTROL &#x200B;このプロファイルデータセットは、`MobileCore.setPushIdentifier` API 呼び出し（[ プッシュ通知用のデバイストークンの登録 ](#register-device-token-for-push-notifications) を参照）を使用する場合に必要です。この呼び出しにより、プッシュ通知の一意の識別子（プッシュ識別子など）がユーザーのプロファイルの一部として保存されます。
+   1. まだ選択していない場合は、{ プロファイルデータセット **から**&#x200B;[!UICONTROL &#x200B; 0}AJO プッシュプロファイルデータセット &#x200B;]&#x200B;**を選択します。**&#x200B;このプロファイルデータセットは、`MobileCore.setPushIdentifier` API 呼び出し（[ プッシュ通知用のデバイストークンの登録 ](#register-device-token-for-push-notifications) を参照）を使用する場合に必要です。この呼び出しにより、プッシュ通知の一意の識別子（プッシュ識別子など）がユーザーのプロファイルの一部として保存されます。
 
    1. **[!UICONTROL Adobe Journey Optimizer]** が選択されました。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 設定を参照してください。
 
@@ -174,6 +174,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
    1. 環境（例：**[!UICONTROL 開発]** を選択します。
    1. **[!UICONTROL イベントデータセット]** リストから **[!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット]** データセットを選択します。
    1. **[!UICONTROL ライブラリおよびビルドに保存]** を選択します。
+
       ![AJO拡張機能 ](assets/push-tags-ajo.png)
 
 >[!NOTE]
@@ -195,7 +196,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 1. エラーがないことを確認します。
    ![validate](assets/push-validate-confirm.png)
 1. 「**[!UICONTROL テストプッシュを送信]** タブを選択します。
-1. （オプション）（タイトル **[!UICONTROL および**[!UICONTROL  本文 ]**のデフォルトの詳細を変更]**
+1. （オプション）（タイトル **[!UICONTROL および**&#x200B;[!UICONTROL &#x200B; 本文 &#x200B;]&#x200B;**のデフォルトの詳細を変更]**
 1. ![ バグ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg)**[!UICONTROL テストプッシュ通知を送信]** を選択します。
 1. **[!UICONTROL テスト結果]** を確認します。
 1. テストプッシュ通知がアプリに表示されます。
@@ -307,6 +308,7 @@ Luma アプリへの署名は、プッシュ通知を送信するために必要
    1. **[!UICONTROL フィールドプロパティ]** ペインで、下にスクロールして、イベントタイプに指定可能な値のリストを表示します。 **[!UICONTROL 行を追加]** を選択し、**[!UICONTROL VALUE]** として `application.test` を追加し、`DISPLAY NAME` として `[!UICONTROL Test event for push notification]` を追加します。
    1. 「**[!UICONTROL 適用]**」を選択します。
    1. 「**[!UICONTROL 保存]**」を選択します。
+
       ![ イベントタイプへの値の追加 ](assets/ajo-update-schema-eventtype-enum.png)
 
 ### イベントを定義
@@ -329,7 +331,7 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
       ![ イベントを編集ステップ 1](assets/ajo-edit-event1.png)
 
-      **[!UICONTROL フィールド]** ダイアログで、（常に選択されるデフォルトフィールド（**[!UICONTROL _id]**、**[!UICONTROL id]** および **[!UICONTROL timestamp]**）に加えて）次のフィールドが選択されていることを確認します。 ドロップダウンリストを使用して、「選択済み **[!UICONTROL 、「すべて]**、{4 **[!UICONTROL プライマリ]** を切り替えたり ]**「![ 検索 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)」フィールドを使用したりできます。**[!UICONTROL 
+      **[!UICONTROL フィールド]** ダイアログで、（常に選択されるデフォルトフィールド（**[!UICONTROL _id]**、**[!UICONTROL id]** および **[!UICONTROL timestamp]**）に加えて）次のフィールドが選択されていることを確認します。 ドロップダウンリストを使用して、「選択済み **[!UICONTROL 、「すべて]**、&lbrace;4 **[!UICONTROL プライマリ]** を切り替えたり **「![ 検索 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)」フィールドを使用したりできます。**
 
       * **[!UICONTROL アプリケーションが識別されました（ID）]**、
       * **[!UICONTROL イベントタイプ （eventType）]**、
@@ -341,13 +343,15 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
    1. ![ イベント ID 条件 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) フィールドの横にある **[!UICONTROL 編集]** を選択します。
 
-      1. **[!UICONTROL イベント ID 条件を追加]** ダイアログで、**[!UICONTROL イベントタイプ （eventType）]****[!UICONTROL ここに要素をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。
+      1. **[!UICONTROL イベント ID 条件を追加]** ダイアログで、**[!UICONTROL イベントタイプ （eventType）]**&#x200B;**[!UICONTROL ここに要素をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。
       1. ポップオーバーで、下までスクロールして「**[!UICONTROL application.test]**」を選択します（これは、[ スキーマを更新 ](#update-your-schema) の一部としてイベントタイプのリストに以前に追加したイベントタイプです）。 次に、上までスクロールして、「**[!UICONTROL OK]**」を選択します。
       1. 「**[!UICONTROL OK]**」を選択して、条件を保存します。
+
          ![ イベント条件を編集 ](assets/ajo-edit-condition.png)
 
    1. **[!UICONTROL 名前空間]** リストから **[!UICONTROL ECID （ECID）]** を選択します。 **[!UICONTROL プロファイル識別子]** フィールドには、**[!UICONTROL マップ identityMap のキー ECID の最初の要素の ID]** が自動的に入力されます。
    1. 「**[!UICONTROL 保存]**」を選択します。
+
       ![ イベントを編集ステップ 2](assets/ajo-edit-event2.png)
 
 先ほど、このチュートリアルの一部として前に作成したモバイルアプリエクスペリエンスイベントスキーマに基づくイベント設定を作成しました。 このイベント設定は、特定のイベントタイプ（`application.test`）を使用して受信エクスペリエンスイベントをフィルタリングするので、モバイルアプリから開始された、特定のタイプを持つイベントのみが、次の手順で作成するジャーニーをトリガーします。 実際には、外部サービスからプッシュ通知を送信する場合もありますが、同じコンセプトが適用されます。外部アプリケーションから、特定のフィールドを持つExperience Platformにエクスペリエンスイベントを送信し、これらのイベントがジャーニーのトリガーになる前に条件を適用できます。
@@ -356,31 +360,34 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
 次の手順では、適切なイベントを受け取ったときにプッシュ通知の送信をトリガーにするジャーニーを作成します。
 
-1. Journey Optimizer UI の左パネルから ]**0}ジャーニー} を選択します。**[!UICONTROL 
+1. Journey Optimizer UI の左パネルから **0&rbrace;ジャーニー&rbrace; を選択します。**
 1. **[!UICONTROL ジャーニーを作成]** を選択します。
 1. **[!UICONTROL ジャーニーのプロパティ]** パネルで、次の操作を行います。
 
    1. ジャーニーの **[!UICONTROL 名前]** を入力します（例：`Luma - Test Push Notification Journey`）。
    1. ジャーニーの **[!UICONTROL 説明]** を入力します（例：`Journey for test push notifications in Luma mobile app`）。
-   1. **[!UICONTROL 再エントリを許可]** が選択されていることを確認し、**[!UICONTROL 再エントリ待機期間]** を **[!UICONTROL 30]****[!UICONTROL 秒]** に設定します。
+   1. **[!UICONTROL 再エントリを許可]** が選択されていることを確認し、**[!UICONTROL 再エントリ待機期間]** を **[!UICONTROL 30]**&#x200B;**[!UICONTROL 秒]** に設定します。
    1. 「**[!UICONTROL OK]**」を選択します。
+
       ![ジャーニーのプロパティ](assets/ajo-journey-properties.png)
 
 1. ジャーニーキャンバスに戻り、**[!UICONTROL イベント]** から、![ イベント ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**[!DNL LumaTestEvent]** をキャンバスの **[!UICONTROL エントリイベントまたはオーディエンスを読み取りアクティビティを選択]** にドラッグ&amp;ドロップします。
 
    * **[!UICONTROL Events:LumaTestEvent]** パネルに **[!UICONTROL Label]** （例：`Luma Test Event`）を入力します。
 
-1. 「**[!UICONTROL アクション]**」ドロップダウンから、**[!DNL LumaTestEvent]** アクティビティの右側に表示される ![ 追加 ]**の上に**[!UICONTROL  プッシュ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg)![ プッシュ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) プッシュをドラッグ&amp;ドロップします。 **[!UICONTROL アクション：プッシュ]** パネルで、
+1. 「**[!UICONTROL アクション]**」ドロップダウンから、**[!DNL LumaTestEvent]** アクティビティの右側に表示される [ 追加 ]&#x200B;**の上に**![[!UICONTROL &#x200B; プッシュ &#x200B;]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg)![ プッシュ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) プッシュをドラッグ&amp;ドロップします。 **[!UICONTROL アクション：プッシュ]** パネルで、
 
    1. **[!UICONTROL ラベル]**、例えば `Luma Test Push Notification` を入力し、**[!UICONTROL 説明]**、例えば `Test push notification for Luma mobile app` を入力して、**[!UICONTROL カテゴリ]** リストから **[!UICONTROL トランザクション]** を選択し、**[!UICONTROL プッシュサーフェス]** から **[!DNL Luma]** を選択します。
    1. 実際のプッシュ通知の編集を開始するには、「![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL コンテンツを編集]**」を選択します。
+
       ![ プッシュプロパティ ](assets/ajo-push-properties.png)
 
       **[!UICONTROL プッシュ通知]** エディターで以下を行います。
 
       1. **[!UICONTROL タイトル]** を入力して（例：`Luma Test Push Notification`）、**[!UICONTROL 本文]** を入力して（例：`Test push notification for Luma mobile app`）。
-      1. オプションで、「メディアを追加 ]**に画像へのリンク（.png または.jpg**[!UICONTROL  を入力できます。 その場合、画像はプッシュ通知の一部になります。
+      1. オプションで、「メディアを追加 **に画像へのリンク（.png または.jpg** を入力できます。 その場合、画像はプッシュ通知の一部になります。
       1. エディターを保存して終了するには、「![ 左に山形記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg)」を選択します。
+
          ![ プッシュエディター ](assets/ajo-push-editor.png)
 
    1. プッシュ通知の定義を保存して終了するには、「**[!UICONTROL OK]**」を選択します。

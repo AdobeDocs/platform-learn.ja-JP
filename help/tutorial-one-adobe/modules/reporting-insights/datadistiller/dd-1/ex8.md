@@ -58,7 +58,7 @@ limit 10;
 
 コンピューターでPostmanを開きます。 モジュール 2.1 の一部として、Postman環境を作成し、Postman コレクションをインポートしました。 まだ実行していない場合は、[ 演習 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) の手順に従います。
 
-読み込んだPostman コレクションの一部として、フォルダー **3 が表示されます。 クエリサービス**. このフォルダーが表示されない場合は、[Postman コレクションを再度ダウンロードし ](./../../../../assets/postman/postman_profile.zip)[ 演習 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) の指示に従って、Postmanでそのコレクションを再読み込みしてください。
+読み込んだPostman コレクションの一部として、フォルダー **3 が表示されます。 クエリサービス**. このフォルダーが表示されない場合は、[Postman コレクションを再度ダウンロードし ](./../../../../assets/postman/postman_profile.zip) [ 演習 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) の指示に従って、Postmanでそのコレクションを再読み込みしてください。
 
 ![QS](./images/pm3.png)
 

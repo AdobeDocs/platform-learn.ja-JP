@@ -288,7 +288,7 @@ eVar と Prop に詳しくない場合は、[ 詳しくは、ドキュメント�
 
 ## 次の手順
 
-Customer Journey Analyticsの [1.1.4 データ準備 ](./ex4.md) （/ex2.md） {target="_blank"}
+Customer Journey Analyticsの [1.1.4 データ準備 ](./ex4.md){target="_blank"} （/ex2.md） 
 
 [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"} に戻る
 

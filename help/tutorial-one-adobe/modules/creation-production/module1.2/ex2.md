@@ -117,7 +117,7 @@ Workfront Fusion でAdobe API を使用する方法を説明します。
 
 ## Workfront Fusion1.2.2.2Photoshop API を使用するには
 
-**ベアラートークンを設定** ノードと **4}Firefly T2I** ノードの間の「レンチ **を選択します。****ルーターを追加** を選択します。
+**ベアラートークンを設定** ノードと **4&rbrace;Firefly T2I** ノードの間の「レンチ **を選択します。**&#x200B;**ルーターを追加** を選択します。
 
 ![WF Fusion](./images/wffusion63.png)
 
@@ -226,7 +226,7 @@ Workfront Fusion でAdobe API を使用する方法を説明します。
 
 ![WF Fusion](./images/wffusion75.png)
 
-**2}Photoshop Change Text** ノードの「**検索 } アイコンを選択して、応答を確認します。**&#x200B;ステータスファイルへのリンクを含む、次のような応答が得られます。
+**2&rbrace;Photoshop Change Text** ノードの「**検索 &rbrace; アイコンを選択して、応答を確認します。**&#x200B;ステータスファイルへのリンクを含む、次のような応答が得られます。
 
 ![WF Fusion](./images/wffusion76.png)
 
@@ -396,7 +396,7 @@ HTTP リクエストのクローンを右クリックして、「**名前を変�
 
 ![WF Fusion](./images/wffusion114.png)
 
-ラベルには、**完了** を使用します。 **2}Photoshopチェックステータス** ノードからの応答を使用して **条件を設定します。応答フィールド** data.outputs[].status **を選択し、演算子は** 次と等しい **に、値は `succeeded` にする必要があります。****OK** を選択します。
+ラベルには、**完了** を使用します。 **2&rbrace;Photoshopチェックステータス** ノードからの応答を使用して **条件を設定します。応答フィールド** data.outputs[].status **を選択し、演算子は** 次と等しい **に、値は `succeeded` にする必要があります。**&#x200B;**OK** を選択します。
 
 ![WF Fusion](./images/wffusion115.png)
 

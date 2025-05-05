@@ -208,7 +208,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 ![AEMCS](./images/aemcsassets2.png){zoomable="yes"}
 
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]**をクリック** ます。
+フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]&#x200B;**をクリック** ます。
 
 ![AEMCS](./images/aemcsassets3.png){zoomable="yes"}
 

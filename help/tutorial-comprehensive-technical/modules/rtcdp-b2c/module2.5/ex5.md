@@ -100,7 +100,7 @@ Amazon Kinesisのデータストリームは、データストリームの取り
 
 ![ETL](./images/kinesis7.png)
 
-**Source} の場合は** 2}Amazon Kinesisのデータストリーム **を選択します。****宛先** については、**Amazon S3** を選択します。 **参照** をクリックして、データストリームを選択します。
+**Source&rbrace; の場合は** 2&rbrace;Amazon Kinesisのデータストリーム **を選択します。**&#x200B;**宛先** については、**Amazon S3** を選択します。 **参照** をクリックして、データストリームを選択します。
 
 ![ETL](./images/kinesis8.png)
 

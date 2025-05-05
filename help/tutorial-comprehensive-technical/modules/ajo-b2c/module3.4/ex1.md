@@ -337,7 +337,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc511.png)
 
-もう一度 **0}Publish} をクリックします。**
+もう一度 **0&rbrace;Publish&rbrace; をクリックします。**
 
 ![Journey Optimizer](./images/oc512.png)
 
@@ -399,7 +399,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-現在は不明なこの顧客のプライマリ ID として **0} ユーザー ID} を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**
+現在は不明なこの顧客のプライマリ ID として **0&rbrace; ユーザー ID&rbrace; を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**
 
 ![デモ](./../../../modules/datacollection/module1.2/images/pv2.png)
 

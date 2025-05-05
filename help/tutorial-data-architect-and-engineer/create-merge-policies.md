@@ -55,7 +55,7 @@ Adobe Experience Platformでは、複数のソースからのデータを統合�
 
 ![ 結合ポリシー画面 ](assets/mergepolicies-default.png)
 
-プロファイルに対して複数のスキーマが有効な場合、基本クラスを共有するすべてのプロファイル対応レコードスキーマに対して、[!UICONTROL  結合スキーマ ] が自動的に作成されます。 [!UICONTROL  和集合スキーマ ] タブに移動すると **[!UICONTROL 和集合スキーマ]** を表示できます。
+プロファイルに対して複数のスキーマが有効な場合、基本クラスを共有するすべてのプロファイル対応レコードスキーマに対して、[!UICONTROL &#x200B; 結合スキーマ &#x200B;] が自動的に作成されます。 [!UICONTROL &#x200B; 和集合スキーマ &#x200B;] タブに移動すると **[!UICONTROL 和集合スキーマ]** を表示できます。
 
 ![ 結合ポリシー画面 ](assets/mergepolicies-unionSchema.png)
 

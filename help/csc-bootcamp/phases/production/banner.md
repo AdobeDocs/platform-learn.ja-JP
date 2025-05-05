@@ -29,10 +29,13 @@ ht-degree: 0%
 
 - 次の項目に関心があります。
    - Adobike Banner Dark：選択したアセットに基づいて、暗いオーバーレイを含む Adobike バナーを作成します
+
      ![ ダークバナー ](./images/prod-banner-dark.jpg)
    - Adobike バナーライト：選択したアセットに基づいて、ライトオーバーレイを含む Adobike バナーを作成します
+
      ![ ライトバナー ](./images/prod-banner-light.jpg)
    - Adobike バナーグリーン：選択したアセットに基づいて、緑色のオーバーレイを含む Adobike バナーを作成します
+
      ![ 緑色のバナー ](./images/prod-banner-green.jpg)
 
 - 作成するバナーのタイプを選択したら、その処理プロファイルを選択し、「プロファイルをフォルダーに適用」を選択します。

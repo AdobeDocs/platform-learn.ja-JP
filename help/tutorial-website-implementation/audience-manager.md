@@ -113,7 +113,7 @@ Adobe Analytics から Adobe Audience Manager へのデータの転送を開始�
 
    ![ Analytics 拡張機能の設定](images/aam-configAnalyticsExtension.png)
 
-1.  「`Adobe Audience Manager`」セクションを展開します。
+1. 「`Adobe Audience Manager`」セクションを展開します。
 
 1. 「**[!UICONTROL Analytics データをAudience Managerと自動的に共有]**」チェックボックスをオンにします。 これにより、Audience Manager の「モジュール」（コード）が Analytics `AppMeasurement.js` の実装に追加されます。
 

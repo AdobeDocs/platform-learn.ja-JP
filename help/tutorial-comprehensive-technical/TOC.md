@@ -79,7 +79,7 @@ ht-degree: 4%
       + [2.3.5 アクションの実行：オーディエンスをAdobe Targetに送信します](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6 宛先SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
-   + 2.4 Real-Time CDP:Microsoft Azure Event Hub {#module24} へのAudience Activation
+   + 2.4 Real-Time CDP:Microsoft Azure Event Hub へのAudience Activation {#module24}
       + [概要](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
       + [2.4.1 環境の設定](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
       + [2.4.2 Microsoft Azure EventHub 環境の設定](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
@@ -97,7 +97,7 @@ ht-degree: 4%
       + [2.5.4 GCP Pub/Sub にイベントを転送する](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
       + [2.5.5 AWS KinesisおよびAWS S3 へのフォワードイベント](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
-   + 2.6 Apache Kafka からReal-Time CDP {#module26} へのデータのストリーミング
+   + 2.6 Apache Kafka からReal-Time CDP へのデータのストリーミング {#module26}
       + [概要](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)
       + [2.6.1 Apache Kafka の概要](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/ex1.md)
       + [2.6.2 Kafka クラスターのインストールと設定](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/ex2.md)
@@ -145,7 +145,7 @@ ht-degree: 4%
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}
-   + 4.1 Customer Journey Analytics:Analysis Workspace {#module41} を使用したダッシュボードの構築
+   + 4.1 Customer Journey Analytics:Analysis Workspace を使用したダッシュボードの構築 {#module41}
       + [概要](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2 Customer Journey AnalyticsでのAdobe Experience Platform データセットの接続](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -153,7 +153,7 @@ ht-degree: 4%
       + [4.1.4.Customer Journey Analyticsでのデータの準備](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex4.md)
       + [4.1.5 Customer Journey Analyticsを用いた可視化](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex5.md)
       + [概要と利点](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/summary.md)
-   + 4.2Customer Journey Analytics:BigQuery Source Connector {#module42} を使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析
+   + 4.2Customer Journey Analytics:BigQuery Source Connector を使用したAdobe Experience PlatformでのGoogle Analyticsデータの取り込みと分析 {#module42}
       + [概要](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
       + [4.2.1 Google Cloud Platform の使用を開始する](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
       + [4.2.2 BigQuery で最初のクエリを作成する](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex2.md)

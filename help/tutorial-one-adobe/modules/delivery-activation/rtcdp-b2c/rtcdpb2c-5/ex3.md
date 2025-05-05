@@ -149,7 +149,7 @@ ht-degree: 1%
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook2.png)
 
-前の手順のいずれかで使用したカスタム Webhook ](https://pipedream.com/requestbin)0}https://pipedream.com/requestbin} に表示を切り替えます。 [これで、これに類似したビューが作成され、左側のメニューにネットワークリクエストが表示されます。 上記のネットワークリクエストから除外された **xdm** ペイロードが表示されます。
+前の手順のいずれかで使用したカスタム Webhook [&#128279;](https://pipedream.com/requestbin)0&rbrace;https://pipedream.com/requestbin&rbrace; に表示を切り替えます。 これで、これに類似したビューが作成され、左側のメニューにネットワークリクエストが表示されます。 上記のネットワークリクエストから除外された **xdm** ペイロードが表示されます。
 
 ![Adobe Experience Platform データ収集のセットアップ ](./images/hook3.png)
 

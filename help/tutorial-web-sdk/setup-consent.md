@@ -68,9 +68,9 @@ Adobe Experience Platform Web SDK タグ拡張機能のプライバシー設定�
 
 Klaro の設定が完了したら、次の設定でタグルールを作成します。
 
-* [!UICONTROL  名前 ]: `all pages - library load - Klaro`
-* [!UICONTROL  イベント ]:[!UICONTROL  ライブラリが読み込まれました（ページのトップ） ][!UICONTROL  詳細オプション ]/[!UICONTROL  順序 ] が 1 に設定されました
-* [!UICONTROL  操作 ]: [!UICONTROL  カスタムコード ]、[!UICONTROL  言語 ]: CMP スクリプトの読み込みHTML。
+* [!UICONTROL &#x200B; 名前 &#x200B;]: `all pages - library load - Klaro`
+* [!UICONTROL &#x200B; イベント &#x200B;]:[!UICONTROL &#x200B; ライブラリが読み込まれました（ページのトップ） &#x200B;][!UICONTROL &#x200B; 詳細オプション &#x200B;]/[!UICONTROL &#x200B; 順序 &#x200B;] が 1 に設定されました
+* [!UICONTROL &#x200B; 操作 &#x200B;]: [!UICONTROL &#x200B; カスタムコード &#x200B;]、[!UICONTROL &#x200B; 言語 &#x200B;]: CMP スクリプトの読み込みHTML。
 
 ![CMP ルールの挿入 ](assets/consent-cmp-inject-rule-1.png)
 
@@ -204,7 +204,7 @@ Luma デモサイトに移動して検証し、Cookie を拒否し、オプト�
 
    ![ 同意ルールのオプトインアクション ](assets/consent-rule-optin-action.png)
 
-   ここで注意すべきことの 1 つは、この [!UICONTROL  同意を設定 ] アクションが、最初に送信されて ID を確立するリクエストになることです。 このため、最初のリクエスト自体で ID を同期することが重要な場合があります。 ID マップは、ID タイプデータ要素を渡すことで、[!UICONTROL  同意を設定 ] アクションに追加できます。
+   ここで注意すべきことの 1 つは、この [!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションが、最初に送信されて ID を確立するリクエストになることです。 このため、最初のリクエスト自体で ID を同期することが重要な場合があります。 ID マップは、ID タイプデータ要素を渡すことで、[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションに追加できます。
 
 1. **[!UICONTROL ライブラリおよびビルドに保存]** を選択します。
 
@@ -220,7 +220,7 @@ Luma デモサイトに移動して検証し、Cookie を拒否し、オプト�
 Web SDK の同意について詳しくは、[ 顧客同意環境設定のサポート ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent) を参照してください。
 
 
-[!UICONTROL  同意を設定 ] アクションについて詳しくは、[ 同意を設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
+[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションについて詳しくは、[ 同意を設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
 
 [次へ： ](setup-event-forwarding.md)
 

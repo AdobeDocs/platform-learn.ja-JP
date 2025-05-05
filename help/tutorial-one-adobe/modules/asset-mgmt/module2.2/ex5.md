@@ -31,7 +31,7 @@ WorkfrontとPhotoshopの統合を設定するには、お使いのコンピュ�
 
 ![WF](./images/wf4.png)
 
-**プラグイン** をクリックし、「**プラグインを管理**」をクリックします。 **2}Photoshop用Adobe Workfront** カードの「インストール **」をクリックします。**
+**プラグイン** をクリックし、「**プラグインを管理**」をクリックします。 **2&rbrace;Photoshop用Adobe Workfront** カードの「インストール **」をクリックします。**
 
 ![WF](./images/wf5.png)
 

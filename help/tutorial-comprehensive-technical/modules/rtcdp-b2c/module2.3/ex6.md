@@ -124,7 +124,7 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、P
 
 ## 宛先設定の作成
 
-Postmanの **Destination Authoring API** で、**Destination configurations}** に移動し、クリックしてリクエスト **設定 – 宛先POSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択し、`--aepSandboxName--` で置き換えます。
+Postmanの **Destination Authoring API** で、**Destination configurations&rbrace;** に移動し、クリックしてリクエスト **設定 – 宛先POSTを作成** を開きます。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択し、`--aepSandboxName--` で置き換えます。
 
 ![データ取得](./images/sdkpm7.png)
 
@@ -213,7 +213,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations}** �
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL &#x200B; サンドボックス &#x200B;] を選択すると、画面が変更され、専用の [!UICONTROL &#x200B; サンドボックス &#x200B;] が表示されます。
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 

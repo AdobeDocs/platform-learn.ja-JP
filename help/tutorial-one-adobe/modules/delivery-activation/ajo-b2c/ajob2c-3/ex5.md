@@ -19,7 +19,7 @@ ht-degree: 12%
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
-その後、これが表示されます。 「**...」をクリックします。詳細を表示し**[**新しいバージョンの作成**] をクリックします。
+その後、これが表示されます。 「**...」をクリックします。詳細を表示し**&#x200B;[**新しいバージョンの作成**] をクリックします。
 
 ![Journey Optimizer](./images/journey1.png)
 

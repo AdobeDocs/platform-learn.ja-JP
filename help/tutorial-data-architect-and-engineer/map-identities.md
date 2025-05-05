@@ -97,7 +97,7 @@ ID 名前空間 `Luma CRM Id` を作成しましょう。
 1. [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) を `Luma Tutorial Assets` フォルダーにダウンロードします
 1. コレクションの [!DNL Postman] への読み込み
 1. アクセストークンがない場合は、リクエストフ **[!DNL OAuth: Request Access Token]** ールドを開いて「**送信**」を選択し、新しいアクセストークンをリクエストします。
-1. リクエスト **[!UICONTROL ID サービス ]/[!UICONTROL ID 名前空間 ]/[!UICONTROL  新しい ID 名前空間の作成 ] を選択します**。
+1. リクエスト **[!UICONTROL ID サービス &#x200B;]/[!UICONTROL ID 名前空間 &#x200B;]/[!UICONTROL &#x200B; 新しい ID 名前空間の作成 &#x200B;] を選択します**。
 1. 次をリクエストの [!DNL Body] として貼り付けます。
 
    ```json
@@ -148,7 +148,7 @@ Real-時間 Customer プロフィール で使用される各スキーマには�
 >
 >Web SDK で収集されるデータ、スキーマ 内の ID フィールドにラベルを付ける一般的な方法の例外です。 SDK Web IDサービスマップを使用して *実装側* の ID にラベルを付けるため、Luma Web サイトで Web SDK 実装するときに `Luma Web Events Schema` の ID を決定します。 後のレッスンでは、Experience Cloud訪問者 ID(ECID)をプライマリ ID として収集し、crmId をセカンダリ ID として収集します。
 
-プライマリ ID の選択により、どちらも loyaltyId を識別子として使用するため、`Luma Loyalty Schema``Luma Offline Purchase Events Schema`に接続する方法が明確になります。しかし、CRMはどのようにしてオフライン購入イベントに接続できますか? オフライン購入をオンライン行動に関連付けるにはどうしたらよいか。 また、製品カタログで購入した製品をどのように分類できますか? 追加の ID フィールドとスキーマ関係を使用します。
+プライマリ ID の選択により、どちらも loyaltyId を識別子として使用するため、`Luma Loyalty Schema` `Luma Offline Purchase Events Schema`に接続する方法が明確になります。しかし、CRMはどのようにしてオフライン購入イベントに接続できますか? オフライン購入をオンライン行動に関連付けるにはどうしたらよいか。 また、製品カタログで購入した製品をどのように分類できますか? 追加の ID フィールドとスキーマ関係を使用します。
 
 <!--use a visual-->
 

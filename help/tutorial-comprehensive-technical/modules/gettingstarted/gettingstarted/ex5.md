@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## アプリのダウンロード
 
-コンピューターの ](https://bit.ly/dx-demo-app)0}https://bit.ly/dx-demo-app} に移動します。 [その後、これが表示されます。
+コンピューターの [&#128279;](https://bit.ly/dx-demo-app)0&rbrace;https://bit.ly/dx-demo-app&rbrace; に移動します。 その後、これが表示されます。
 
 ![DSN](./images/mobileapp.png)
 

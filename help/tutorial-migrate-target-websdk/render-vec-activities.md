@@ -56,7 +56,7 @@ alloy("sendEvent", {
 
 >[!TAB タグ]
 
-タグでは、「[!UICONTROL  ビジュアルパーソナライゼーションの決定をレンダリング ] オプションが選択された状態で [!UICONTROL  イベントを送信 ] アクションタイプを使用します。
+タグでは、「[!UICONTROL &#x200B; ビジュアルパーソナライゼーションの決定をレンダリング &#x200B;] オプションが選択された状態で [!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションタイプを使用します。
 
 ![ タグで選択されたレンダリングとビジュアルパーソナライゼーションの決定を使用してイベントを送信 ](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
@@ -254,7 +254,7 @@ Platform Web SDK は、開発者に対して、コンテンツのリクエスト
 必要な設定を追加します。
 ![Web SDK タグ拡張機能の移行オプションの設定 ](assets/tags-config-migration.png){zoomable="yes"}
 
-[!UICONTROL  イベントを送信 ] アクションと [!UICONTROL  ビジュアルパーソナライゼーションの決定をレンダリング ] を選択したルールを作成：
+[!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションと [!UICONTROL &#x200B; ビジュアルパーソナライゼーションの決定をレンダリング &#x200B;] を選択したルールを作成：
 ![ タグでレンダーパーソナライゼーションを選択してイベントを送信 ](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]

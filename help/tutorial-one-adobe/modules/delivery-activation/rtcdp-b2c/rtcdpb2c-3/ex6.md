@@ -115,7 +115,7 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、P
 
 >[!NOTE]
 >
->リクエストをAdobe I/Oに送信する前に、有効な `access_token` が必要であることを忘れないでください。 有効な `access_token` を取得するには、コレクション **3}Adobe IO - OAuth** でリクエスト **POST - アクセストークンの取得 } を実行します。**
+>リクエストをAdobe I/Oに送信する前に、有効な `access_token` が必要であることを忘れないでください。 有効な `access_token` を取得するには、コレクション **3&rbrace;Adobe IO - OAuth** でリクエスト **POST - アクセストークンの取得 &rbrace; を実行します。**
 
 「**送信**」をクリックすると、サーバーテンプレートが作成され、応答の一部として **instanceId** という名前のフィールドが表示されます。 次の手順で必要になるので、書き留めてください。 この例では、**instanceId** は
 `52482c90-8a1e-42fc-b729-7f0252e5cebd`。
@@ -213,7 +213,7 @@ Postmanの **Destination Authoring API** で **Destination configurations** に�
 
 ![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL &#x200B; サンドボックス &#x200B;] を選択すると、画面が変更され、専用の [!UICONTROL &#x200B; サンドボックス &#x200B;] が表示されます。
 
 ![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 

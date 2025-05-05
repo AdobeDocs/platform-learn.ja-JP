@@ -146,6 +146,7 @@ Xcode で：
 
    1. **[!UICONTROL リンクをコピー]** を選択します。
    1. ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用してディープリンクをコピーし、ディープリンクを使用してシミュレーターの Safari でアプリを開きます。
+
       ![ アシュランスコピーリンク ](assets/assurance-copy-link.png)
 
 1. アプリが読み込まれると、手順 7 に示すように、PIN を入力するよう求めるモーダルダイアログが表示されます。
@@ -177,7 +178,7 @@ Xcode で：
 
 1. **[!UICONTROL 設定]** を選択します。
 
-1. ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能バージョン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の場合は ![ 追加]** を選択します。
+1. ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **![[!UICONTROL 拡張機能バージョン &#x200B;]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の場合は [ 追加]** を選択します。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 

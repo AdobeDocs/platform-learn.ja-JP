@@ -95,7 +95,7 @@ Google BigQuery アカウント選択画面が表示されます。 アカウン
 | `iif(Product_Removes_From_Cart == null, 0, Product_Removes_From_Cart), 1, 0)` | commerce.productListRemovals.value |
 | `iif(Product_Checkouts == null, 0, Product_Checkouts)` | commerce.checkouts.value |
 
-**計算フィールド** を作成するには、[**+新しいフィールドの種類 ] をクリックし**[**計算フィールド**] をクリックします。
+**計算フィールド** を作成するには、[**+新しいフィールドの種類 ] をクリックし**&#x200B;[**計算フィールド**] をクリックします。
 
 ![ デモ ](./images/xdm8a.png)
 

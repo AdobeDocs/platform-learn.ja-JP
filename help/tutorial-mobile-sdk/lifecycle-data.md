@@ -93,20 +93,23 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. **[!UICONTROL 拡張機能]** として **[!UICONTROL Mobile Core]** を選択します。
    1. **[!UICONTROL イベントタイプ]** として **[!UICONTROL フォアグラウンド]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
       ![ ルールイベントの設定 ](assets/rule-event-configuration.png)
-1. **[!UICONTROL ルールを作成]** 画面に戻り、![ モバイルコア – 前景 **[!UICONTROL の横にある**[!UICONTROL  追加 ]**](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加]** を選択します。
+1. **[!UICONTROL ルールを作成]** 画面に戻り、![ モバイルコア – 前景 **[[!UICONTROL の横にある**&#x200B;[!UICONTROL &#x200B; 追加 &#x200B;]&#x200B;**]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加]** を選択します。
    ![ 次のイベントの設定 ](assets/rule-event-configuration-next.png)
 1. **[!UICONTROL イベント設定]** 手順で、次の操作を行います。
    1. **[!UICONTROL 拡張機能]** として **[!UICONTROL Mobile Core]** を選択します。
    1. **[!UICONTROL イベントタイプ]** として **[!UICONTROL 背景]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
       ![ ルールイベントの設定 ](assets/rule-event-configuration-background.png)
 1. **[!UICONTROL ルールを作成]** 画面に戻り、「**[!UICONTROL ACTIONS]** の下の ![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 追加]** を選択します。
    ![ ルール追加アクション ](assets/rule-action-button.png)
 1. **[!UICONTROL アクションの設定]** 手順で、次の操作を行います。
-   1. **[!UICONTROL Extension]** として ]**0}AdobeエクスペリエンスEdge Network} を選択します。**[!UICONTROL 
+   1. **[!UICONTROL Extension]** として **0&rbrace;AdobeエクスペリエンスEdge Network&rbrace; を選択します。**
    1. **[!UICONTROL アクションタイプ]** として「**[!UICONTROL Edge Networkにイベントを転送]**」を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
       ![ ルールアクションの設定 ](assets/rule-action-configuration.png)
 1. **[!UICONTROL ライブラリに保存]** を選択します。
    ![ ルール – ライブラリに保存 ](assets/rule-save-to-library.png)

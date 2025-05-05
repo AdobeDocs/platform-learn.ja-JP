@@ -34,7 +34,7 @@ ht-degree: 10%
 
 
 
-次に、プロパティの概要ページが表示されます。 左側のパネルで **[!UICONTROL 拡張機能]** をクリックし、**Adobe Experience Platform Web SDKをクリックしてから****[!UICONTROL 設定]** をクリックします。
+次に、プロパティの概要ページが表示されます。 左側のパネルで **[!UICONTROL 拡張機能]** をクリックし、**Adobe Experience Platform Web SDKをクリックしてから**&#x200B;**[!UICONTROL 設定]** をクリックします。
 
 ![ プロパティの概要ページ ](./images/property7.png)
 

@@ -61,19 +61,19 @@ Analytics 拡張機能は、次の 2 つの主要部分で構成されます。
 
    ![Analytics 拡張機能のインストール](images/analytics-catalog-install.png)
 
-1. [!UICONTROL  ライブラリ管理/レポートスイート ] で、各タグ環境で使用するレポートスイート ID を入力します。 ユーザーがAdobe Analyticsにアクセスできる場合、ボックスに入力を開始すると、すべてのレポートスイートの事前入力リストが表示されます。 （このチュートリアルでは、すべての環境に対して 1 つのレポートスイートを使用しても構いませんが、実際の環境では、次の画像のように別々のレポートスイートを使用する必要があります）。
+1. [!UICONTROL &#x200B; ライブラリ管理/レポートスイート &#x200B;] で、各タグ環境で使用するレポートスイート ID を入力します。 ユーザーがAdobe Analyticsにアクセスできる場合、ボックスに入力を開始すると、すべてのレポートスイートの事前入力リストが表示されます。 （このチュートリアルでは、すべての環境に対して 1 つのレポートスイートを使用しても構いませんが、実際の環境では、次の画像のように別々のレポートスイートを使用する必要があります）。
 
    ![レポートスイート ID の入力](images/analytics-config-reportSuite.png)
 
    >[!TIP]
    >
-   >[!UICONTROL  ライブラリ管理 ] 設定として「[!UICONTROL  ライブラリをシス `AppMeasurement.js` ムで管理」オプションを使用すると、ライブラリを最新の状態に保つことが非常に容易になるため ] 推奨しています。
+   >[!UICONTROL &#x200B; ライブラリ管理 &#x200B;] 設定として「[!UICONTROL &#x200B; ライブラリをシス `AppMeasurement.js` ムで管理」オプションを使用すると、ライブラリを最新の状態に保つことが非常に容易になるため &#x200B;] 推奨しています。
 
-1. [!UICONTROL  一般/トラッキングサーバー ] に、トラッキングサーバーを入力します（例：`tmd.sc.omtrdc.net`） サイトが `https://` に対応している場合は、SSL トラッキングサーバーを入力します。
+1. [!UICONTROL &#x200B; 一般/トラッキングサーバー &#x200B;] に、トラッキングサーバーを入力します（例：`tmd.sc.omtrdc.net`） サイトが `https://` に対応している場合は、SSL トラッキングサーバーを入力します。
 
    ![トラッキングサーバーの入力](images/analytics-config-trackingServer.png)
 
-1. [!UICONTROL  グローバル変数 ] セクションの [!UICONTROL  追加設定 ] で、`Page Name` データ要素を使用して [!UICONTROL  ページ名 ] 変数を設定します。 ![データ要素アイコン](images/icon-dataElement.png)をクリックしてモーダルを開き、ページの `Page Name` データ要素を選択します。
+1. [!UICONTROL &#x200B; グローバル変数 &#x200B;] セクションの [!UICONTROL &#x200B; 追加設定 &#x200B;] で、`Page Name` データ要素を使用して [!UICONTROL &#x200B; ページ名 &#x200B;] 変数を設定します。 ![データ要素アイコン](images/icon-dataElement.png)をクリックしてモーダルを開き、ページの `Page Name` データ要素を選択します。
 
 1. 「**[!UICONTROL ライブラリに保存]**」をクリックします
 
@@ -360,7 +360,7 @@ Adobe Analytics の実装に詳しい方は、[products](https://experienceleagu
 次に、サイトのホームページの「特集製品」セクションまでスクロールダウンしたときに、このヒットが表示されるようにする必要があります。 最初にホームページを読み込んだときには、リクエストは実行されませんが、下にスクロールしてセクションが表示されると、新しい値でヒットが起動します。
 
 1. Chrome ブラウザーで [Lumaサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開き、ホームページの先頭に来ていることを確認します。
-1. **[!UICONTROL デバッガーアイコン]**![Experience Cloud Debuggerを開く ](images/analytics-debuggerIcon.png) をクリックして、[!UICONTROL Adobe Experience Cloud デバッガーを開きます ]
+1. **[!UICONTROL デバッガーアイコン]**![Experience Cloud Debuggerを開く ](images/analytics-debuggerIcon.png) をクリックして、[!UICONTROL Adobe Experience Cloud デバッガーを開きます &#x200B;]
 1. 「Analytics」タブをクリックします。
 1. レポートスイートのヒットを展開します。
 1. ホームページの通常のページビューヒットにページ名などが付いています。（ただし、eVar3 や prop3 には何も含まれません）。

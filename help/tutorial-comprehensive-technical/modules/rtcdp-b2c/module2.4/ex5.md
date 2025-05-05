@@ -27,7 +27,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![データ取得](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-**宛先** に移動し、「参照 **をクリック** ます。 使用可能なすべての宛先が表示されます。 宛先を見つけて、以下に示す 3 つのドット**...**をクリックし、「**オーディエンスをアクティブ化**」をクリックします。
+**宛先** に移動し、「参照 **をクリック** ます。 使用可能なすべての宛先が表示されます。 宛先を見つけて、以下に示す 3 つのドット&#x200B;**...**&#x200B;をクリックし、「**オーディエンスをアクティブ化**」をクリックします。
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

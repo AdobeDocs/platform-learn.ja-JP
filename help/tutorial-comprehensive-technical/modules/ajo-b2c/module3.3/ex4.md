@@ -71,7 +71,7 @@ Disney+ オファーを保持する領域をクリックします。 必ず完�
 
 ![RTCDP](./images/vec5a.png)
 
-追加のテンプレートルール **URL****contains****your-project-name** を確認します。 「**保存**」をクリックします。
+追加のテンプレートルール **URL**&#x200B;**contains**&#x200B;**your-project-name** を確認します。 「**保存**」をクリックします。
 
 ![RTCDP](./images/vec6.png)
 

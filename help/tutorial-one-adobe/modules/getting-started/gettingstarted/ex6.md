@@ -83,7 +83,7 @@ ht-degree: 4%
 
 ![Azure ストレージ ](./images/aep1.png){zoomable="yes"}
 
-**Adobe Experience Platform を選択し****Experience Platform API** を選択します。 「**次へ**」を選択します。
+**Adobe Experience Platform を選択し**&#x200B;**Experience Platform API** を選択します。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/aep2.png){zoomable="yes"}
 

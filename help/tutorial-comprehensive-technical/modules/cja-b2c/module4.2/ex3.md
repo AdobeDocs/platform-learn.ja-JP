@@ -58,7 +58,7 @@ Adobe Experience Platformで BigQuery Source コネクタを設定するには�
 
 ![ デモ ](./images/ex25.png)
 
-ホームページに移動したら、検索バーで **0}Google Auth Platform} を検索します。**&#x200B;最初の結果をクリックして開きます。
+ホームページに移動したら、検索バーで **0&rbrace;Google Auth Platform&rbrace; を検索します。**&#x200B;最初の結果をクリックして開きます。
 
 ![ デモ ](./images/ex24.png)
 

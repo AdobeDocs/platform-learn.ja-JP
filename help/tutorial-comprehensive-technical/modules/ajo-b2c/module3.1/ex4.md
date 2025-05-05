@@ -96,7 +96,7 @@ eventID を貼り付けると、画面は次のようになります。 次に�
 
 ![デモ](./../../../modules/datacollection/module1.2/images/pv1.png)
 
-現在は不明なこの顧客のプライマリ ID として **0} ユーザー ID} を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**「**ログイン**」をクリックします。
+現在は不明なこの顧客のプライマリ ID として **0&rbrace; ユーザー ID&rbrace; を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**「**ログイン**」をクリックします。
 
 ![デモ](./../../../modules/datacollection/module1.2/images/pv2.png)
 

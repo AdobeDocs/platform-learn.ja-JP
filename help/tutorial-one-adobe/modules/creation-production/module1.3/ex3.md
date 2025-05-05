@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ![Adobe Express](./images/expressbc1.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含む **0}Adobe_Express} フォルダーに移動します。**&#x200B;ファイル **banner.png** を選択し、「**開く**」をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含む **0&rbrace;Adobe_Express&rbrace; フォルダーに移動します。**&#x200B;ファイル **banner.png** を選択し、「**開く**」をクリックします。
 
 ![Adobe Express](./images/expressbc2.png)
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ![Adobe Express](./images/expressbc3.png)
 
-次に、**メディア** に移動し、**画像をアップロード** を選択します。 デスクトップに移動し、以前にダウンロードしたアセットを含む **0}Adobe_Express} フォルダーに移動します。**&#x200B;ファイル **man.png** を選択し、「**開く** をクリックします。
+次に、**メディア** に移動し、**画像をアップロード** を選択します。 デスクトップに移動し、以前にダウンロードしたアセットを含む **0&rbrace;Adobe_Express&rbrace; フォルダーに移動します。**&#x200B;ファイル **man.png** を選択し、「**開く** をクリックします。
 
 ![Adobe Express](./images/expressbc4.png)
 
@@ -105,7 +105,7 @@ CitiSignal ロゴ画像の場所を調整して、下の画像の同じ位置を
 
 ![Adobe Express](./images/expressbc19.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2}Adobe_Express** の **Express Bulk Create」フォルダーに移動します。**&#x200B;ファイル **CTA-options.csv** を選択し、「**開く** をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2&rbrace;Adobe_Express** の **Express Bulk Create」フォルダーに移動します。**&#x200B;ファイル **CTA-options.csv** を選択し、「**開く** をクリックします。
 
 ![Adobe Express](./images/expressbc20.png)
 
@@ -141,7 +141,7 @@ CitiSignal ロゴ画像の場所を調整して、下の画像の同じ位置を
 
 ![Adobe Express](./images/expressbc28.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2}Adobe_Express** の **Express Bulk Create」フォルダーに移動します。** 6～7 の画像ファイルを選択し、「**開く**」をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2&rbrace;Adobe_Express** の **Express Bulk Create」フォルダーに移動します。** 6～7 の画像ファイルを選択し、「**開く**」をクリックします。
 
 ![Adobe Express](./images/expressbc29.png)
 

@@ -291,7 +291,7 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 ![デモ](./images/jodone.png)
 
-もう一度 **0}Publish} をクリックします。**
+もう一度 **0&rbrace;Publish&rbrace; をクリックします。**
 
 ![デモ](./images/jopublish1.png)
 

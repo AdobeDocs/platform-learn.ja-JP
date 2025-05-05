@@ -46,7 +46,7 @@ ht-degree: 24%
 
 1. Chrome ブラウザーで [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. ![ デバッガーアイコン ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、[Experience Platformデバッガー拡張機能を開 ](images/icon-debugger.png) ます
+1. [ デバッガーアイコン ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、![Experience Platformデバッガー拡張機能を開 ](images/icon-debugger.png) ます
 
    ![デバッガーアイコンをクリックする](images/switchEnvironments-openDebugger.png)
 

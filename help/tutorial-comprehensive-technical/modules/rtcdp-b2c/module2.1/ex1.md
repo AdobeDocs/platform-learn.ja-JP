@@ -51,7 +51,7 @@ Platform は、既知の顧客だけでなく、顧客という言葉が広い�
 
 ![デモ](../../datacollection/module1.2/images/pv1.png)
 
-現在は不明なこの顧客のプライマリ ID として **0} ユーザー ID} を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**
+現在は不明なこの顧客のプライマリ ID として **0&rbrace; ユーザー ID&rbrace; を持つプロファイルビューアパネルとリアルタイムExperience Cloudプロファイルをご覧ください。**
 
 ![デモ](../../datacollection/module1.2/images/pv2.png)
 

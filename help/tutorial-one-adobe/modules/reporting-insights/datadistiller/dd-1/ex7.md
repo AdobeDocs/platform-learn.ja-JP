@@ -17,7 +17,7 @@ Tableau を開きます。
 
 ![start-tableau.png](./images/starttableau.png)
 
-**サーバーへの接続** で、[ その他 **をクリックしてから** PostgreSQL **をクリックし** す。
+**サーバーへの接続** で、&lbrack; その他 **をクリックしてから** PostgreSQL **をクリックし** す。
 
 ![tableau-connect-postgress.png](./images/tableauconnectpostgress.png)
 

@@ -80,7 +80,7 @@ Web サイト用タグを使用すると、デスクトップサイトやモバ�
 ## ツールの取得
 
 1. 拡張機能にはブラウザー固有のものがあるため、[Chrome Web ブラウザー](https://www.google.com/chrome/)を使用してチュートリアルを完了することをお勧めします。
-1. Chrome ブラウザーに ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)0} 拡張機能 } をAdobe Experience Platform Debuggerします[
+1. Chrome ブラウザーに [&#128279;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)0&rbrace; 拡張機能 &rbrace; をAdobe Experience Platform Debuggerします
 1. サンプルの HTML ページコードをコピーします
 
    +++サンプルの HTML ページコード
@@ -130,7 +130,7 @@ Web サイト用タグを使用すると、デスクトップサイトやモバ�
    </html>
    ```
 
-+++
+   +++
 
 1. サンプルの HTML ページを変更できるテキストエディターを取得します。（エディターがない場合は、[Brackets](https://brackets.io/) を試すことをお勧めします）。
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)をブックマークします。

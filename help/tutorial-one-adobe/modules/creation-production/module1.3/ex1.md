@@ -135,7 +135,7 @@ Adobe Expressに戻り、**Brands** に移動して、ページを更新しま�
 >
 >この演習を完了するには、動作しているAEM Assets CS オーサー環境にアクセスできる必要があります。 演習 [Adobe Experience Manager Cloud ServiceおよびEdge Delivery Servicesに従うと ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} このような環境にアクセスできます。
 
-左側のメニューで **0}Assets} に移動し、`--aepUserLdap-- - CitiSignal dev` という名前が必要なAEM Assets CS リポジトリを選択します。**&#x200B;次に、フォルダー **citisignal** に移動します。
+左側のメニューで **0&rbrace;Assets&rbrace; に移動し、`--aepUserLdap-- - CitiSignal dev` という名前が必要なAEM Assets CS リポジトリを選択します。**&#x200B;次に、フォルダー **citisignal** に移動します。
 
 ![Adobe Express](./images/express28.png)
 

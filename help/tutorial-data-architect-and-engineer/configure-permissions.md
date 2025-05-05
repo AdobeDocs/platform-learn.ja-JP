@@ -19,7 +19,7 @@ ht-degree: 2%
 
 <!--30min-->
 
-このレッスンでは、[!DNL Adobe's Admin Console] と Platform インターフェイスの [!UICONTROL  権限 ] 画面を使用して、Adobe Experience Platform ユーザー権限を設定します。
+このレッスンでは、[!DNL Adobe's Admin Console] と Platform インターフェイスの [!UICONTROL &#x200B; 権限 &#x200B;] 画面を使用して、Adobe Experience Platform ユーザー権限を設定します。
 
 アクセス制御は、Experience Platformの重要なプライバシー機能であり、ユーザーが職務を遂行するために必要な最小限の権限に制限することをお勧めします。 詳しくは、[ アクセス制御のドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
@@ -51,7 +51,7 @@ Platform に存在する役割の概要を次に示します。
 >
 >このチュートリアルを受講するチームメンバーをシステム管理者が支援する場合は、チームメンバーをAdobe Experience Platformの *プロダクト管理者* として追加することを検討してください。 製品管理者は、後で自分でこれらの手順を実行して、他のExperience Platformユーザーを管理できるようになります。
 
-チュートリアル参加者を [!UICONTROL  ユーザー ] および [!UICONTROL  開発者 ] として追加するには：
+チュートリアル参加者を [!UICONTROL &#x200B; ユーザー &#x200B;] および [!UICONTROL &#x200B; 開発者 &#x200B;] として追加するには：
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com) にログインします
 1. 上部ナビゲーションの「**[!UICONTROL 製品]**」を選択します。
@@ -78,7 +78,7 @@ Experience Platformに対する詳細な権限は、Platform インターフェ�
 権限は役割で管理されます。 チュートリアルの役割を作成します。
 
 1. [Adobe Experience Platform](https://platform.adobe.com) にログインします
-1. 左側のナビゲーションで **[!UICONTROL 権限]** を選択すると [!UICONTROL  役割 ] 画面に移動します
+1. 左側のナビゲーションで **[!UICONTROL 権限]** を選択すると [!UICONTROL &#x200B; 役割 &#x200B;] 画面に移動します
 1. 「**[!UICONTROL 役割を作成]**」を選択します。
 
    ![Experience Platformでのロールの作成 ](assets/permissions-addRole.png)

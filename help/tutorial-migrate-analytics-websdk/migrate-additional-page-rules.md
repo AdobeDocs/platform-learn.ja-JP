@@ -52,7 +52,7 @@ ht-degree: 0%
    ![ 新規アクション ](assets/new-action-conditional-rule.jpg)
 
 1. 新しいルールの設定
-   1. 拡張機能ドロップダウンから **0}Adobe Experience Platform Web SDK} を選択します。**
+   1. 拡張機能ドロップダウンから **0&rbrace;Adobe Experience Platform Web SDK&rbrace; を選択します。**
    1. 「アクションタイプ」ドロップダウンから **変数を更新** を選択します。
    1. 右側のパネルで、データオブジェクト内の **Analytics** オブジェクトを選択します
 

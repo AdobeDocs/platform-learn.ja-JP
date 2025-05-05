@@ -351,7 +351,7 @@ Adobe Experience Platform Edge拡張機能は、以前に定義された XDM ス
       <img src="./assets/mobile-app-events-3.png" width="300">
 
 
-1. Assurance UI で、.com.adobe.edge.konductor ]**ベンダーの**[!UICONTROL  hitReceived **[!UICONTROL イベントを探し]** す。
+1. Assurance UI で、.com.adobe.edge.konductor **ベンダーの** hitReceived **[!UICONTROL イベントを探し]** す。
 1. イベントを選択し、**[!UICONTROL messages]** オブジェクトの XDM データを確認します。 または、「![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL Raw イベントをコピー]** を使用し、好みのテキストエディターまたはコードエディターを使用してイベントを貼り付けて検査することもできます。
 
    ![ データ収集の検証 ](assets/datacollection-validation.png)

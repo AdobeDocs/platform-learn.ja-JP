@@ -72,7 +72,7 @@ Platform Web SDK で意思決定管理アクティビティを配信するには
 
    ![ データストリームを選択 ](assets/decisioning-datastream-select.png)
 
-1. **2}Adobe Experience Platform サービス** 内の「編集 **を選択します。**
+1. **2&rbrace;Adobe Experience Platform サービス** 内の「編集 **を選択します。**
 
    ![ サービスを編集 ](assets/decisioning-edit-datastream.png)
 

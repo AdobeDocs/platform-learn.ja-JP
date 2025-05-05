@@ -142,11 +142,11 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
         ![CJA データビュー 2a](assets/cja-dataview-2b.png)
 
-   1. 「スキーマフィールド」ペインから特定のスキーマフィールドをドラッグし、「[!UICONTROL  含まれるコンポーネント ]**」ペインの**[!UICONTROL  指標 ]**または**[!UICONTROL  DIMENSION] リストにドロップします。
+   1. 「スキーマフィールド」ペインから特定のスキーマフィールドをドラッグし、「[!UICONTROL &#x200B; 含まれるコンポーネント &#x200B;]&#x200B;**」ペインの**&#x200B;[!UICONTROL &#x200B; 指標 &#x200B;]&#x200B;**または**&#x200B;[!UICONTROL &#x200B; DIMENSION] リストにドロップします。
 
       ![CJA データビュー 2a](assets/cja-dataview-3.png)
 
-   1. コンポーネントの設定を指定できます。 コンポーネントを選択し、右側のパネルで設定を指定します。 <br/> 例えば、右側のペインの **[!UICONTROL コンポーネント設定]**/**[!UICONTROL コンポーネント名]** フィールドを使用して、]**commerce.productListAdds**[!UICONTROL  の名前を `Product Add To Lists` に変更できます。
+   1. コンポーネントの設定を指定できます。 コンポーネントを選択し、右側のパネルで設定を指定します。 <br/> 例えば、右側のペインの **[!UICONTROL コンポーネント設定]**/**[!UICONTROL コンポーネント名]** フィールドを使用して、**commerce.productListAdds** の名前を `Product Add To Lists` に変更できます。
 
       ![CJA データビュー 3b](assets/cja-dataview-3b.png)
 
@@ -154,7 +154,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
       ![CJA データビューコンポーネントの設定 ](assets/cja-dataview-component-settings.png)
 
-   1. これで、データビューにフィールドを追加し、結果のコンポーネントを設定する方法を理解できたので、以下の表を使用してスキーマフィールドのリストを追加し、指標またはディメンションとして追加します。 以下のテーブルの **スキーマパス** 列の値を使用して、特定のスキーマフィールドを検索またはトラバースします。 指標とディメンションを追加したら、コンポーネントに特定の設定が必要かどうかを表の **コンポーネント設定** 列の値を確認します。例えば、コンポーネント名 **[!UICONTROL や、**[!UICONTROL  INCLUDE EXCLUDE VALUES ]**の定義な]** です。
+   1. これで、データビューにフィールドを追加し、結果のコンポーネントを設定する方法を理解できたので、以下の表を使用してスキーマフィールドのリストを追加し、指標またはディメンションとして追加します。 以下のテーブルの **スキーマパス** 列の値を使用して、特定のスキーマフィールドを検索またはトラバースします。 指標とディメンションを追加したら、コンポーネントに特定の設定が必要かどうかを表の **コンポーネント設定** 列の値を確認します。例えば、コンポーネント名 **[!UICONTROL や、**&#x200B;[!UICONTROL &#x200B; INCLUDE EXCLUDE VALUES &#x200B;]&#x200B;**の定義な]** です。
 
       **指標**
 
@@ -199,7 +199,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
       {style="table-layout:auto"}
 
-      上記のテーブルからすべてのスキーマフィールドをディメンションコンポーネントとして追加したら ]****[!UICONTROL  DIMENSION} のデータビュー設定が以下と一致する必要があります。
+      上記のテーブルからすべてのスキーマフィールドをディメンションコンポーネントとして追加したら **&#x200B;**&#x200B;DIMENSION&rbrace; のデータビュー設定が以下と一致する必要があります。
 
       ![CJA データビュー 4](assets/cja-dataview-5.png)
 
@@ -226,7 +226,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. 右上のアプリ ![ アプリ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) メニューを使用して、Customer Journey Analyticsインターフェイスに移動します。
 
-1. 上部メニューバーから ]**0}Workspace} を選択します。**[!UICONTROL 
+1. 上部メニューバーから **0&rbrace;Workspace&rbrace; を選択します。**
 
 1. **[!UICONTROL プロジェクトを作成]** を選択します。
 
@@ -275,14 +275,14 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. **[!UICONTROL 指標]** リストの下の **[!UICONTROL すべて表示]** を選択します。
 
-1. **[!UICONTROL スクリーンビュー]** コンポーネントを [!UICONTROL _**指標**をここに（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。
+1. **[!UICONTROL スクリーンビュー]** コンポーネントを [!UICONTROL _&#x200B;**指標**&#x200B;をここに（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。
    ![CJA プロジェクト 7](assets/cja-projects-7.png)
 フリーフォームテーブルに、選択した期間の各日の画面ビューが表示されるようになりました。 ただし、アプリで使用される様々な画面ごとの画面ビュー数を表示する必要があります。
 
 1. **[!UICONTROL DIMENSION]** のコンポーネントリストを表示するには、「![ クロス ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg)」を選択して、コンポーネントパネルから ![ イベント ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL 指標]** フィルターを削除します。
    ![CJA プロジェクト 8](assets/cja-projects-8.png)
 
-1. **[!UICONTROL 2}DIMENSION]** リストの下の「すべて表示 ]**を選択します。**[!UICONTROL 
+1. **[!UICONTROL 2&rbrace;DIMENSION]** リストの下の「すべて表示 **を選択します。**
 
 1. **[!UICONTROL 画面名]** コンポーネントを **[!UICONTROL 日]** ヘッダーにドラッグ&amp;ドロップします。 操作には、寸法の置き換えを示す ![ 切り替え ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL 置換]** と表示されます。
    ![CJA プロジェクト 9](assets/cja-projects-9.png)
@@ -305,7 +305,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. **[!UICONTROL フリーフォームテーブル （2）]** の名前を `App Interactions` に変更します。
 
-1. **[!UICONTROL アプリインタラクション]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_）にドラッグ&amp;ドロップ ] ます。
+1. **[!UICONTROL アプリインタラクション]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_）にドラッグ&amp;ドロップ &#x200B;] ます。
 
 1. **[!UICONTROL アプリインタラクション名]** ディメンションを **[!UICONTROL 日]** ヘッダーにドラッグ&amp;ドロップして、このディメンションを置き換えます。
 
@@ -325,7 +325,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 #### Commerce イベント
 
-1. 現在の ![ アプリの使用状況 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネルの外部にある [!UICONTROL  追加 ] を選択して、新しいパネルを作成します。
+1. 現在の ![ アプリの使用状況 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネルの外部にある [!UICONTROL &#x200B; 追加 &#x200B;] を選択して、新しいパネルを作成します。
    ![CJA プロジェクト 13](assets/cja-projects-13.png)
 
 1. 適切な期間を選択してください。
@@ -337,7 +337,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. **[!UICONTROL フリーフォームテーブル]** の名前を `Commerce Events` に変更します。
 
-1. **[!UICONTROL 製品表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。
+1. **[!UICONTROL 製品表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。
 
 1. 「**[!UICONTROL 製品表示]**」列の右側の「**[!UICONTROL リストに製品追加]**」指標をドラッグ&amp;ドロップして、フリーフォームテーブルにこの列を挿入します。 列を挿入する際に、「**[!UICONTROL +追加]**」（青色）が表示されていることを確認します。
    ![CJA プロジェクト 15](assets/cja-projects-15.png)
@@ -358,7 +358,7 @@ Commerceのイベントレポートが完成しました。
 
 次に、コマースファネルのフォールアウトビジュアライゼーションを作成します。このビジュアライゼーションでは、商品を閲覧したユーザーのうち何人が買い物かごに商品を追加したかを表示し、そこから後で購入するために商品を保存したユーザーの数を表示します。
 
-1. ![2}Commerce](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネル内の「追加 ]**を選択し、ポップアップから ![ フォールアウト ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) （フォールアウトビジュアライゼーションを表す）を選択します。**[!UICONTROL 
+1. ![2&rbrace;Commerce](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネル内の「追加 **を選択し、ポップアップから ![ フォールアウト ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) （フォールアウトビジュアライゼーションを表す）を選択します。**
 
 1. **[!UICONTROL タッチポイントを追加]** ドロップダウンリストから [!UICONTROL *製品表示*] を選択します。
    ![CJA プロジェクト 18](assets/cja-projects-18.png)
@@ -390,7 +390,7 @@ Commerceのイベントレポートが完成しました。
 
 1. **[!UICONTROL フリーフォームテーブル]** の名前を `Monthly Overview` に変更します。
 
-1. **[!UICONTROL 表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。
+1. **[!UICONTROL 表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。
 
 1. **[!UICONTROL 月]** ディメンションを **[!UICONTROL 日]** 列にドラッグ&amp;ドロップして、ディメンションを置き換えます。
 
@@ -407,11 +407,11 @@ Commerceのイベントレポートが完成しました。
 
 また、アプリのユーザーに表示されたオファーの数を示すレポートも必要です。
 
-1. **[!UICONTROL オファー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネル内の ![ 追加]** を選択し、ポップアップから ![ フリーフォームテーブル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) を選択して、新しいフリーフォームテーブルを追加します。
+1. **![[!UICONTROL オファー &#x200B;]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネル内の [ 追加]** を選択し、ポップアップから ![ フリーフォームテーブル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) を選択して、新しいフリーフォームテーブルを追加します。
 
 1. **[!UICONTROL フリーフォームテーブル （2）]** の名前を `People` に変更します。
 
-1. **[!UICONTROL 人物]** 指標をこちら（または他のコンポーネント **）にドラッグ&amp;ドロップ [!UICONTROL _**指標_ ドロップ ] ます。
+1. **[!UICONTROL 人物]** 指標をこちら（または他のコンポーネント **）にドラッグ&amp;ドロップ [!UICONTROL _**&#x200B;指標_ ドロップ &#x200B;] ます。
 
 1. **[!UICONTROL アクティビティ名]** を **[!UICONTROL 日]** 列にドラッグ&amp;ドロップして、ディメンションを置き換えます。
 
@@ -443,7 +443,7 @@ Commerceのイベントレポートが完成しました。
 
 1. **[!UICONTROL フリーフォームテーブル]** の名前を `Store Entries / Exits Across Cities` に変更します。
 
-1. **[!UICONTROL 場所イベント]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。 レポートには、アプリで発生したすべての場所イベントの日別概要が表示されるようになりました。 [ データビュー ](#create-a-data-view) の一部として、このディメンションを具体的に設定した方法に注意してください。
+1. **[!UICONTROL 場所イベント]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。 レポートには、アプリで発生したすべての場所イベントの日別概要が表示されるようになりました。 [ データビュー ](#create-a-data-view) の一部として、このディメンションを具体的に設定した方法に注意してください。
 
 1. **[!UICONTROL 市区町村]** ディメンションを **[!UICONTROL 日]** 列ヘッダーにドラッグ&amp;ドロップして、ディメンションを置き換えます。 このレポートには、場所イベントの市区町村が表示されます。
 

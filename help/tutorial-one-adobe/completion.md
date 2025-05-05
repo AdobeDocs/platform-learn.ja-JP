@@ -29,7 +29,7 @@ Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - 8
 
 ## 1.1 Adobe Fireflyサービス
 
-モジュール **Adobe Fireflyサービス** の完了証明書として期待されているものは、手順 **4}Photoshop API - テキストの変更** を実行した後に演習 1.1.3 の最後に生成されたPSDファイルの **URL} です。**
+モジュール **Adobe Fireflyサービス** の完了証明書として期待されているものは、手順 **4&rbrace;Photoshop API - テキストの変更** を実行した後に演習 1.1.3 の最後に生成されたPSDファイルの **URL&rbrace; です。**
 
 URL は次のようになります。`https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`
 

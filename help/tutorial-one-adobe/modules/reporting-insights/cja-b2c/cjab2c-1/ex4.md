@@ -153,7 +153,7 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 
 ## 次の手順
 
-Customer Journey Analyticsを使用した [1.1.5 ビジュアライゼーションに移動 ](./ex5.md) （./ex2.md） {target="_blank"}
+Customer Journey Analyticsを使用した [1.1.5 ビジュアライゼーションに移動 ](./ex5.md){target="_blank"} （./ex2.md） 
 
 [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"} に戻る
 

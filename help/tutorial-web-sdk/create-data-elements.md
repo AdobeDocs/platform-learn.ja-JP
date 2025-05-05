@@ -58,7 +58,7 @@ Adobe Experience Platformのタグ機能を使用して、データレイヤー�
 
 以下に、Adobeのクライアントデータレイヤー形式を使用したデータレイヤーの表示例を示します。
 
-データレイヤー内の+++XDM の例
++++データレイヤー内のXDM の例
 
 ```JSON
 window.adobeDataLayer.push({
@@ -129,7 +129,7 @@ window.adobeDataLayer.push({
 >
 > Google データレイヤー
 > 
-> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、タグの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)0}Google Data Layer extension} を使用できます。 [これにより、IT チームのサポートを依頼しなくても、Adobeテクノロジを迅速に導入できます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
+> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、タグの [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)0&rbrace;Google Data Layer extension&rbrace; を使用できます。 これにより、IT チームのサポートを依頼しなくても、Adobeテクノロジを迅速に導入できます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
 
 ### データストリームの XDM へのマッピング
 
@@ -254,7 +254,7 @@ XDM オブジェクトを作成する前に、[Luma デモサイト ](https://lu
 
 >[!CAUTION]
 >
->[!UICONTROL JavaScript変数 ] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素を `digitalData.user[0].profile[0].attributes.username` **として参照することは機能しません**。
+>[!UICONTROL JavaScript変数 &#x200B;] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素を `digitalData.user[0].profile[0].attributes.username` **として参照することは機能しません**。
 
 ## XDM およびデータオブジェクト用の変数データ要素の作成
 
