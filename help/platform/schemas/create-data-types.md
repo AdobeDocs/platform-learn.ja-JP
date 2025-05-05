@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、エクスペリエンスデータモデル（XDM）スキーマに使用する独自のデータタイプをAdobe Experience Platformで作成する方法を説明します。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333537?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413618?learn=on&enablevpops&captions=jpn)

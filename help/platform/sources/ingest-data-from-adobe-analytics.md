@@ -21,4 +21,4 @@ ht-degree: 1%
 
 Adobe Analytics Source コネクタを使用すると、Adobe AnalyticsからAdobe Experience Platformにデータを簡単にストリーミング、マッピングおよびフィルタリングでき、リアルタイム顧客プロファイルとエクスペリエンスデータレイクを使用できます。 データ準備機能を使用して、セマンティックフィールドと計算フィールドを作成し、セグメントビルダーと Platform アプリケーションのユーザーエクスペリエンスを向上させる方法を説明します。 このコネクタでは、地域間のレポートスイートがサポートされています。 製品ドキュメントについて詳しくは、[UI でのAdobe Analytics ソースコネクタの作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430254?learn=on&enablevpops&captions=jpn)

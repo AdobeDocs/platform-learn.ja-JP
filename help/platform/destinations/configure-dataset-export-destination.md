@@ -22,4 +22,4 @@ ht-degree: 0%
 
 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448819/?learn=on&enablevpops&captions=jpn)

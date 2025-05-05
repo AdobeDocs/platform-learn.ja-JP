@@ -18,4 +18,4 @@ ht-degree: 61%
 
 モニタリングダッシュボードを使用して、Adobe Experience Platformに取り込まれたデータをモニタリングおよびトラッキングする方法について説明します。 この監視ダッシュボードは、データレイクからプロファイルおよび ID サービスに至るソースデータ処理のトップダウンビューを、アクションにつながるインサイトと共に提供します。 詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/347010?learn=on&enablevpops&captions=jpn)

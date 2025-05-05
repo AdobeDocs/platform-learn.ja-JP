@@ -18,4 +18,4 @@ ht-degree: 0%
 
 リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。 製品ドキュメントについて詳しくは、[ リアルタイム顧客プロファイルへのデータの追加 ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html?lang=ja) および [API を使用したプロファイルのデータセットの設定 ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34393?learn=on&enablevpops&captions=jpn)

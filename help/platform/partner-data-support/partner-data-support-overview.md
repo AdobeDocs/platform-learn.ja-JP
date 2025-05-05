@@ -21,4 +21,4 @@ ht-degree: 0%
 
 [!DNL Real-Time Customer Data Platform] が、ファーストパーティのデータエンリッチメントと、サードパーティ cookie が引き続き非推奨（廃止予定）となるため見込みユースケースについて、パートナーデータを使用したフルファネルマーケティングをサポートする方法を説明します。 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449690/?learn=on&enablevpops&captions=jpn)

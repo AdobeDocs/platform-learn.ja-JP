@@ -22,4 +22,4 @@ ht-degree: 1%
 >
 >サンドボックス間でスキーマや他のオブジェクトを移動する、より簡単でインターフェイス中心のプロセスが 2023 年末に導入されました。代わりにを使用することをお勧めします。 [ サンドボックス間でのオブジェクトのコピー ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413597?learn=on&enablevpops&captions=jpn)

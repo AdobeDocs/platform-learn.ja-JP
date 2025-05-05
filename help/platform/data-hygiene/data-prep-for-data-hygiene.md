@@ -20,4 +20,4 @@ ht-degree: 85%
 
 Experience Platform のデータ準備機能を使用して、データ最小化の原則をサポートする方法について説明します。必要なフィールドのみを取り込み、取り込み中にデータをハッシュする方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449276/?learn=on&enablevpops&captions=jpn)

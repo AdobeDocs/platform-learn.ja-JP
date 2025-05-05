@@ -20,4 +20,4 @@ Adobe Experience Platform Web SDKを使用して、Adobe standard 1.0 および 
 >
 > ローンチは **[!DNL tags]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/332694/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448797/?learn=on&enablevpops&captions=jpn)

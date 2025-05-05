@@ -19,4 +19,4 @@ ht-degree: 33%
 
 Adobe Real-Time Customer Data Platform（CDP）を使用して、既知の顧客データと不明な顧客データを統合し、信頼できる顧客プロファイルを作成してアクティブ化する方法について説明します。 詳しくは、[Real-Time Customer Data Platform ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29705?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34112?learn=on&enablevpops&captions=jpn)

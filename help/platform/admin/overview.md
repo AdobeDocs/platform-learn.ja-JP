@@ -57,7 +57,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="開発者を追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="開発者を追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446399?format=jpeg&nocache=1740173302176&captions=jpn" alt="開発者を追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +103,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="属性ベースのアクセス制御を設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="属性ベースのアクセス制御を設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451828?format=jpeg&nocache=1740173302190&captions=jpn" alt="属性ベースのアクセス制御を設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -126,7 +126,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/users-and-permissions" title="データ収集へのユーザーの追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="データ収集へのユーザーの追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34019/?format=jpeg&nocache=1740173302543&captions=jpn" alt="データ収集へのユーザーの追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="サンドボックスの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="サンドボックスの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430299/?format=jpeg&nocache=1740173302789&captions=jpn" alt="サンドボックスの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="サンドボックス間での設定のコピー" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="サンドボックス間での設定のコピー"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446084/?format=jpeg&nocache=1740173302776&captions=jpn" alt="サンドボックス間での設定のコピー"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="IMS 組織間でのパッケージの共有" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="IMS 組織間でのパッケージの共有"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443918/?format=jpeg&nocache=1740173302764&captions=jpn" alt="IMS 組織間でのパッケージの共有"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

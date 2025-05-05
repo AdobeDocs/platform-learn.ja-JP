@@ -18,6 +18,6 @@ ht-degree: 1%
 
 ID グラフビューア機能を使用して、ID グラフを検索、調査およびフィルタリングし、検証とデバッグを行う方法について説明します。 詳しくは、[ID グラフビューアのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/331030?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345656?learn=on&enablevpops&captions=jpn)
 
 

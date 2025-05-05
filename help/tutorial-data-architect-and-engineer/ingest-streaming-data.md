@@ -31,9 +31,9 @@ ht-degree: 0%
 
 演習を開始する前に、次の 2 つの短いビデオを視聴して、ストリーミングデータ取得と web SDKについて詳しく学びます。
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31657?learn=on&enablevpops&captions=jpn)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37263?learn=on&enablevpops&captions=jpn)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使
 
 初めて Debugger を使用する場合（これが古いAdobe Experience Cloud Debugger と異なる場合）は、次の 5 分間の概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36086?learn=on&enablevpops&captions=jpn)
 
 ### Luma web サイトを開きます
 

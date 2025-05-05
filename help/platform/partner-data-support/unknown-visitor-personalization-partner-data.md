@@ -21,4 +21,4 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Platform Web SDK] ークフローからサードパーティ属性を収集し、パートナー支援訪問者認識を使用して未知の訪問者に対するオンサイトエクスペリエンスをパーソナライズする方法を説明します。 詳しくは、[ パートナー支援型訪問者認識を使用してオンサイトエクスペリエンスをパーソナライズする ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html?lang=ja) ドキュメントを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449253/?learn=on&enablevpops&captions=jpn)

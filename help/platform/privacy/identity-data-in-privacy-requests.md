@@ -18,4 +18,4 @@ ht-degree: 1%
 
 ビジネスのプライバシーニーズに応じた個人データの監査と準備に関連する主要な概念と決定について説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447649?learn=on&enablevpops&captions=jpn)

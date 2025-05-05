@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Real-Time CDPから宛先パートナーにデータを送信する前に、最初にそれらのパートナーへの接続を行う必要があります。 このビデオでは、通常、管理者が実行するこのプロセスについて説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346367/?learn=on&enablevpops&captions=jpn)
 
 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/connect-destination) を参照してください。

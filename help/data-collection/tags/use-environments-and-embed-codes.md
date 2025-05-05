@@ -18,4 +18,4 @@ ht-degree: 34%
 
 開発環境、ステージング環境、実稼動環境および埋め込みコードを使用して、タグプロパティを開発および検証する方法について説明します。 詳しくは、[environments](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ja) ドキュメントを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430483/?learn=on&enablevpops&captions=jpn)

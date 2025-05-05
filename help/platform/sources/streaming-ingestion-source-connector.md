@@ -19,7 +19,7 @@ ht-degree: 2%
 クラウドストレージソースから Platform にデータをリアルタイムでストリーミングし、そのデータをリアルタイムで顧客エンゲージメントに使用する方法を説明します。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410105?learn=on&enablevpops&captions=jpn)
 
 ## その他のリソース
 

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI アシスタントを使用して、Adobe Experience Platformのオーディエンス、データセット、スキーマ、宛先、ジャーニーなどのビジネスオブジェクトに関する運用インサイトを明らかにする方法を説明します
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444033/?learn=on&enablevpops&captions=jpn)

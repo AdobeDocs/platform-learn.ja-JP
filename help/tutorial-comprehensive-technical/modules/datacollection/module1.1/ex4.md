@@ -25,7 +25,7 @@ Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使
 
 初めて Debugger を使用する場合は（以前のAdobe Experience Cloud Debugger とは異なります）、次の 5 分間の概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36086?quality=12&learn=on&enablevpops&captions=jpn)
 
 デモ Web サイトを匿名モードで読み込むため、Experience Platform Debugger も匿名モードで使用できるようにする必要があります。 これを行うには、ブラウザーで **chrome://extensions** に移動し、Experience Platform Debugger 拡張機能を開きます。
 

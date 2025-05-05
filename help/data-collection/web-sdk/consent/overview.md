@@ -20,5 +20,5 @@ Adobe Experience Platform Web SDKでの同意管理が、法的なプライバ�
 >
 > ローンチは **[!DNL tags]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437789/?learn=on&enablevpops&captions=jpn)
 

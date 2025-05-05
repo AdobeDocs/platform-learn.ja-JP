@@ -20,4 +20,4 @@ ht-degree: 0%
 
 このビデオでは、Adobe Experience Platform内の AI アシスタントが影響分析でより効果的になるためにどのように役立つかを説明します。 属性やオーディエンスなどの共有オブジェクトを変更すると、他のチームのワークフローが中断され、プロセスが複雑になり、重要なマーケティング活動のリスクが高まる可能性があります。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441681/?learn=on&enablevpops&captions=jpn)

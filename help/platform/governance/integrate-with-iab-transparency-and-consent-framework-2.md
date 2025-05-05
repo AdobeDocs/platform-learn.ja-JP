@@ -19,4 +19,4 @@ ht-degree: 50%
 
 このビデオでは、Adobe Real-Time Customer Data Platformが、ブランドがデジタルプロパティに関与する際に消費者の同意を得るのにどのように役立つかを示します。 IAB の Transparency &amp; Consent Framework 2.0 のサポートを通じて、ブランドは、消費者との関わり方をより柔軟に得ると同時に、消費者がそうすることに同意するための制御を強化します。
 
->[!VIDEO](https://video.tv.adobe.com/v/38346?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326479?learn=on&enablevpops&captions=jpn)

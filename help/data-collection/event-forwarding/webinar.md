@@ -16,4 +16,4 @@ ht-degree: 0%
 
 サードパーティの宛先へのコンバージョン API 呼び出しの管理や Data Warehouse へのイベントデータの送信など、Adobe Experience Platformのイベント転送のユースケースと機能について説明します。 詳しくは、[ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3434936?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3456496?learn=on&enablevpops&captions=jpn)

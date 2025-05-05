@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Experience Platformの概要と、解決するビジネス上の課題の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428496?learn=on&enablevpops&captions=jpn)
 
 

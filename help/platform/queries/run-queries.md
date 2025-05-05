@@ -19,4 +19,4 @@ ht-degree: 21%
 このビデオでは、Adobe Experience Platform インターフェイスおよび PSQL クライアントでクエリを実行する方法を説明します。 さらに、XDM オブジェクト内での個々のプロパティの使用、Adobe定義関数の使用、CREATE TABLE AS SELECT （CTAS）の使用についても説明します。 製品ドキュメントについて詳しくは、[ クエリエディター UI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=ja) を参照してください。
 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34782?learn=on&enablevpops&captions=jpn)

@@ -19,4 +19,4 @@ ht-degree: 1%
 
 リストやルックアップ、ジョブリクエストの作成、同意リクエストの作成など、API エンドポイントへの呼び出しを行う方法について説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448874?learn=on&enablevpops&captions=jpn)

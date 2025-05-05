@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Adobe Experience Platform上でネイティブに構築されたアプリケーション（Customer Journey Analytics、Real-Time Customer Data Platform、Journey Optimizer、Mix Modeler）について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428519?learn=on&enablevpops&captions=jpn)
 

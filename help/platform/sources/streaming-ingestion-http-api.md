@@ -17,7 +17,7 @@ ht-degree: 42%
 
 このビデオでは、HTTP API エンドポイントを使用してリアルタイムでデータを Adobe Experience Platform にストリーミングする方法を示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/331028?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410930?learn=on&enablevpops&captions=jpn)
 
 ## 追加情報
 

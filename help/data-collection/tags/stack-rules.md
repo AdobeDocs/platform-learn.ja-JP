@@ -19,4 +19,4 @@ ht-degree: 36%
 
 ルールをタグプロパティにスタックする方法について説明します。ルールのスタックでは、タグルールイベントの `order` 機能を使用してルールの順序を設定するので、スケーラブルなタグ実装を管理できます。 グローバルルールで変数を設定し、ページ固有のルールで変数を追加して上書きしてから、目的のマーケティングアプリケーションにデータを送信します。 ルールの順序について詳しくは、[rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=ja#rule-ordering) ドキュメントを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454028/?learn=on&enablevpops&captions=jpn)

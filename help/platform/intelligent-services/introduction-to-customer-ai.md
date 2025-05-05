@@ -19,4 +19,4 @@ ht-degree: 2%
 
 マーケターが顧客 AI を使用して顧客予測を生成する方法の概要です。 詳しくは、[ 顧客 AI ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36509?learn=on&enablevpops&captions=jpn)

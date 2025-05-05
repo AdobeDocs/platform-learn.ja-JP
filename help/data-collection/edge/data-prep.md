@@ -18,4 +18,4 @@ ht-degree: 15%
 
 データ収集の新しいデータストリームにデータレイヤーを追加する方法を説明します。 また、データ収集のデータ準備機能を使用した、基本的なマッピング機能を実行する方法についても説明します。 詳しくは、[ データ収集のためのデータ準備ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja#data-prep) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345566/?learn=on&enablevpops&captions=jpn)

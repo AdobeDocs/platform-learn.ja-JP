@@ -25,5 +25,5 @@ ht-degree: 1%
 >
 > Magentoは現在Adobe Commerceとして知られています
 
->[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328483?learn=on&enablevpops&captions=jpn)
 

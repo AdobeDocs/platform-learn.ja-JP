@@ -18,4 +18,4 @@ ht-degree: 37%
 
 タグ内のコマンドを実行できるようにルールを作成する方法を説明します。イベントと条件によって *いつ* 実行するかが決定され、アクションによって *何* 実行するかが決定されます。 詳しくは、[rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=ja) ドキュメントを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430496/?learn=on&enablevpops&captions=jpn)

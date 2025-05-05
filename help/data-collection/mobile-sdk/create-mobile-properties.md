@@ -20,4 +20,4 @@ ht-degree: 1%
 >
 > ローンチは **[!DNL tags]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40317/?learn=on&enablevpops&captions=jpn)

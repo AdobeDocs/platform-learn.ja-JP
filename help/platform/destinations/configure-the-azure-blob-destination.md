@@ -22,5 +22,5 @@ Real-Time Customer Data Platformで接続を設定し、Azure Blob ストレー�
 
 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346819/?learn=on&enablevpops&captions=jpn)
 

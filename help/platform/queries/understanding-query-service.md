@@ -18,7 +18,7 @@ ht-degree: 20%
 
 Adobe Experience Platformのクエリサービスが、お客様の行動を理解し、効果的なインサイトを生み出すのにどのように役立つかを説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35089?learn=on&enablevpops&captions=jpn)
 
 ## 基本的な使用方法
 
@@ -59,7 +59,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="query-service-api.md" title="クエリサービス API" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333700?format=jpeg&nocache=1740415310716" alt="クエリサービス API"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414087?format=jpeg&nocache=1740415310716&captions=jpn" alt="クエリサービス API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="adobe-defined-functions.md" title="Adobe定義関数" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333701?format=jpeg&nocache=1740415310668" alt="Adobe定義関数"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414051?format=jpeg&nocache=1740415310668&captions=jpn" alt="Adobe定義関数"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="クエリサービスでのクエリの実行" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1740415310683" alt="クエリサービスでのクエリの実行"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34782?format=jpeg&nocache=1740415310683&captions=jpn" alt="クエリサービスでのクエリの実行"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="クエリサービスでのデータ使用パターンについて" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415310706" alt="クエリサービスでのデータ使用パターンについて"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35088?format=jpeg&nocache=1740415310706&captions=jpn" alt="クエリサービスでのデータ使用パターンについて"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="データの調査" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1740415312087" alt="データの調査"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414057?format=jpeg&nocache=1740415312087&captions=jpn" alt="データの調査"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="クエリサービスを使用したデータレイク内のデータの検証" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="クエリサービスを使用したデータレイク内のデータの検証"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445678?format=jpeg&nocache=1740415312076&captions=jpn" alt="クエリサービスを使用したデータレイク内のデータの検証"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -221,7 +221,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="データを準備" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1740415313086" alt="データを準備"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414069?format=jpeg&nocache=1740415313086&captions=jpn" alt="データを準備"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="クエリサービスでのデータ使用パターンについて" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415313190" alt="クエリサービスでのデータ使用パターンについて"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35088?format=jpeg&nocache=1740415313190&captions=jpn" alt="クエリサービスでのデータ使用パターンについて"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -280,7 +280,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="Tableau のクエリサービスへの接続" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1740415313229" alt="Tableau のクエリサービスへの接続"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414045?format=jpeg&nocache=1740415313229&captions=jpn" alt="Tableau のクエリサービスへの接続"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Adobe Experience Platformのクエリサービスが、お客様の行動を理�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="顧客データを再充電して、魅力的なエクスペリエンスを提供します" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="顧客データを再充電して、魅力的なエクスペリエンスを提供します"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454936?format=jpeg&nocache=1740415313218&captions=jpn" alt="顧客データを再充電して、魅力的なエクスペリエンスを提供します"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

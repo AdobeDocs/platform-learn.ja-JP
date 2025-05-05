@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Privacy JavaScript ライブラリを使用して、Privacy Serviceに送信する前にアプリケーションで顧客 ID を収集する方法を説明します。 例えば、データ収集（以前の Launch）でタグ拡張機能を設定する方法を説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452075?learn=on&enablevpops&captions=jpn)

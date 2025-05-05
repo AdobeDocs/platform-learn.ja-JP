@@ -23,4 +23,4 @@ ht-degree: 45%
 >
 >顧客 AI は、コンシューマーエクスペリエンスイベント（CEE）スキーマに従ってデータの ETL を実行しなくても、Adobe AnalyticsとAdobe Audience Managerの両方のデータセットをサポートします。 詳しくは、[ インテリジェントサービスデータ準備ガイド ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36581?learn=on&enablevpops&captions=jpn)

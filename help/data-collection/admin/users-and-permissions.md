@@ -18,4 +18,4 @@ ht-degree: 0%
 
 会社の従業員が業務に必要なアクセス権を取得できるように、Adobe Experience Platformのデータ収集機能のユーザーを追加し、権限を管理する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34019/?learn=on&enablevpops&captions=jpn)

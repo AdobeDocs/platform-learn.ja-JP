@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Real-Time Customer Data PlatformやJourney OptimizerなどのAdobe Experience Platform ベースのアプリケーションに開発者を追加する方法について説明します。 開発者は、まずAdmin Consoleで追加されます。 Developer Consoleで Platform プロジェクトを作成すると、API 資格情報に Platform またはJourney Optimizer インターフェイスで権限が割り当てられます。 詳しくは、[ アクセス制御ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446399?learn=on&enablevpops&captions=jpn)
 
 >[!ADMIN]
 >

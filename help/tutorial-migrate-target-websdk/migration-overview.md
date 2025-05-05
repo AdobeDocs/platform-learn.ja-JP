@@ -56,7 +56,7 @@ Platform Web SDKは、Target at.js ライブラリを進化させたものでは
 
 次のビデオでは、Adobe Experience Platform Web SDKとAdobe Experience Platform Edge Networkの概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37263/?learn=on&enablevpops&captions=jpn)
 
 at.js と Platform Web SDKの大きな違いを理解したら、[ 移行を計画 ](plan-migration.md) できます。
 

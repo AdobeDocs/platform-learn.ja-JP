@@ -19,5 +19,5 @@ ht-degree: 21%
 
 プライバシーイベントを購読して、ジョブのステータスベースのワークフローを自動化する方法を説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448173?learn=on&enablevpops&captions=jpn)
 

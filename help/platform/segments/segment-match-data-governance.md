@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Real-Time CDPでデータガバナンスコントロールを設定および使用して、データパートナーと共有できるデータセット（およびそれらのデータセットを使用するセグメント）を制限できるようにする方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346360/?learn=on&enablevpops&captions=jpn)

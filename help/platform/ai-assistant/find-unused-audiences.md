@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI アシスタントを使用して未使用のオーディエンスを特定し、それらを削除してマーケティング操作をより効率的にする方法を説明します。 AI アシスタントのクエリの詳細については、[AI アシスタントの質問ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/questions) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441988/?learn=on&enablevpops&captions=jpn)

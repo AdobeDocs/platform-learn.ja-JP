@@ -19,4 +19,4 @@ ht-degree: 37%
 
 このビデオでは、Real-Time CDPを使用して複数のソースからデータを収集し、そのデータを 1 つのリアルタイム顧客プロファイルに結合、そのデータをアクティブ化してパーソナライズされたカスタマーエクスペリエンスを作成する方法を示します。 詳しくは、[Real-Time Customer Data Platform ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/34558?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38121?learn=on&enablevpops&captions=jpn)

@@ -26,13 +26,13 @@ ht-degree: 18%
 
 テンプレートワークフローを使用してMarketoのソースコネクタを設定する方法について説明します。 このワークフローは、テンプレートに基づいてMarketo データを取り込むために必要なアセットを自動生成します。 これにより、事前の時間を節約し、必要に応じてアセットをカスタマイズできます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451861?learn=on&enablevpops&captions=jpn)
 
 ## 標準ワークフロー
 
 標準のワークフローを使用してMarketoのソースコネクタを設定する方法について説明します。 標準ワークフローでは、スキーマおよび ID 名前空間を事前に作成する必要があります。
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452902?learn=on&enablevpops&captions=jpn)
 
 詳しくは、次のドキュメントを参照してください。
 * [Marketo Engage ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=ja)。

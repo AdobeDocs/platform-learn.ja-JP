@@ -18,6 +18,6 @@ ht-degree: 0%
 
 このビデオでは、アトリビューション AI を使用して、カスタマージャーニーの各段階における個々の顧客インタラクションの影響を把握することで、マーケターがマーケティング費用と広告費用を測定し、最適化する方法を示します。 詳しくは、[ アトリビューション AI ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328469?learn=on&enablevpops&captions=jpn)
 
 

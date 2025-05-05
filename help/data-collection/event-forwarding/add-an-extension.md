@@ -25,4 +25,4 @@ ht-degree: 19%
 > * Platform Launch サーバーサイドが **[!DNL event forwarding]** になりました
 > * Edgeの設定が **[!DNL datastreams]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410380?learn=on&enablevpops&captions=jpn)

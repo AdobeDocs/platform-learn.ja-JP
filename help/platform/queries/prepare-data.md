@@ -18,4 +18,4 @@ ht-degree: 6%
 
 レポートやダッシュボードに CTAS （Create Table AS）関数と Spark SQL 関数を使用して、複数のデータセットのデータを消去、準備、組み合わせて新しいデータセットを作成する方法を説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414069?learn=on&enablevpops&captions=jpn)

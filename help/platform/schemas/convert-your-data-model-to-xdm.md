@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、データアーキテクトが既存のトランザクションデータモデルを取得し、エクスペリエンスデータモデルに変換する方法を説明します。 エンティティ関係図を使用したモデリングアプローチの違いを示します。 詳しくは、[ データモデリングのベストプラクティスに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413646?learn=on&enablevpops&captions=jpn)

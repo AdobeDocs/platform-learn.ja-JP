@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、Adobe Experience Platformでスキーマフィールドグループを作成する方法を説明します。 スキーマフィールドグループは、エクスペリエンスデータモデル（XDM）スキーマのほとんどのフィールドを定義する再利用可能なコンポーネントです。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27013?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413603?learn=on&enablevpops&captions=jpn)

@@ -26,7 +26,7 @@ Adobe Experience Platform ID サービスを利用すると、デバイスやシ
 **データアーキテクト** は、このチュートリアル外で ID をマップする必要があります。
 
 演習を開始する前に、この短いビデオを視聴して、Adobe Experience Platformでの ID について詳しく確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422774?learn=on&enablevpops&captions=jpn)
 
 >[!NOTE]
 >

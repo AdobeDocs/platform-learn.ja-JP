@@ -20,7 +20,7 @@ ht-degree: 62%
 
 Adobeへの 1 回の呼び出しでExperience Platform、Analytics、Audience Managerおよび Target にデータを送信する、Adobe Experience Platform Web SDKおよびEdge Networkの動作をご覧ください。 詳しくは、[Adobe Experience Platform web SDKのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413667?learn=on&enablevpops&captions=jpn)
 
 >[!NOTE]
 >

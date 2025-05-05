@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Adobe Experience Platformのデータガバナンス機能およびそれが、企業が顧客データを完全に制御しながら、パーソナライズされたエクスペリエンスを顧客に提供するのにどのように役立つかについて説明します。 詳しくは、[ データガバナンスに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41322?learn=on&enablevpops&captions=jpn)

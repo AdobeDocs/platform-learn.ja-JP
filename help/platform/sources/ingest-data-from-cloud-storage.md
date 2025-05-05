@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、クラウドストレージサービスからAdobe Experience Platformのリアルタイム顧客プロファイルとデータレイクにデータをシームレスかつスケーラブルに簡単に一括で取り込む方法を示します。 製品ドキュメントについて詳しくは、Source コネクタの概要ページの [ クラウドストレージ ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#cloud-storage) または [Amazon S3 ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34108?learn=on&enablevpops&captions=jpn)

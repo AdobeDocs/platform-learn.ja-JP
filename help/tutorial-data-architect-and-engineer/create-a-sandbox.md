@@ -26,7 +26,7 @@ ht-degree: 2%
 **データアーキテクト** と **データエンジニア** は、このチュートリアル以外でサンドボックスを作成する必要があります。
 
 演習を開始する前に、この短いビデオを視聴してサンドボックスの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430299/?learn=on&enablevpops&captions=jpn)
 
 ## 必要な権限
 

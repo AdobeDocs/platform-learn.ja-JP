@@ -21,5 +21,5 @@ ht-degree: 1%
 
 Marketo EngageでMarketoの宛先を設定して、Adobe Experience Platform インスタンスに対して Platform セグメントをアクティブ化する方法について説明します。 詳しくは、[ プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440159?learn=on&enablevpops&captions=jpn)
 

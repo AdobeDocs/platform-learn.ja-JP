@@ -22,4 +22,4 @@ Adobe Real-Time Customer Data Platform（CDP）におけるファイルベース
 * Experience Platform UI を使用してバッチまたはメールマーケティングの宛先に対してデータをアクティブ化する方法については、[ プロファイル書き出しのバッチ宛先に対してオーディエンスデータをアクティブ化 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=ja) を参照してください
 * [Flow Service API を使用してバッチまたはメールマーケティングの宛先に対してデータを有効化する方法については ](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=ja)Flow Service API を使用してバッチ宛先に接続しデータを有効化する方法を参照してください
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/340715/?learn=on&enablevpops&captions=jpn)

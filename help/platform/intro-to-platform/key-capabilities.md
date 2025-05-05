@@ -18,5 +18,5 @@ ht-degree: 80%
 
 Experience Platform の主な機能と、その機能がビジネスに価値をもたらせる方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428508?learn=on&enablevpops&captions=jpn)
 

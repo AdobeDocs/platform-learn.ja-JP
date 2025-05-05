@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、Adobe Experience Platformでのバッチデータ取り込みの概要と、API を使用してバッチデータを取り込む方法を説明します。 詳しくは、[ データ取り込みドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345663?learn=on&enablevpops&captions=jpn)

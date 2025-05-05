@@ -19,5 +19,5 @@ ht-degree: 53%
 
 顧客 AI の傾向スコアおよびインサイトを使用して顧客をコンバージョンして定着させる方法について説明します。 詳しくは、[ 顧客 AI ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36580?learn=on&enablevpops&captions=jpn)
 

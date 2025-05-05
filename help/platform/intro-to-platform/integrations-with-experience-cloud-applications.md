@@ -18,6 +18,6 @@ ht-degree: 57%
 
 Experience Platform を Experience Cloud アプリケーションと統合する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32553?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430392?learn=on&enablevpops&captions=jpn)
 
 

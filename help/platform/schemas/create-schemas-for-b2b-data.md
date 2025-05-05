@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Real-Time Customer Data Platform（B2B edition）を使用してビジネスデータのスキーマを作成する方法を説明します。 ビジネスクラス、フィールドグループ、ID 名前空間およびPostman ユーティリティを使用してアカウントにそれらを自動作成する方法について説明します。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453391?learn=on&enablevpops&captions=jpn)

@@ -18,4 +18,4 @@ ht-degree: 15%
 
 タグプロパティに拡張機能を追加して設定する方法について説明します。拡張機能は、必要なトラッキング、パーソナライゼーションまたはその他の機能を提供するために、サイトにインストールする、事前にパッケージ化された「アプリ」です。 Adobe、パートナー、およびお客様がユースケースを強化するための拡張機能を作成するので、拡張機能のマーケットプレイスは常に拡大しています。 詳しくは、[extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=ja) ドキュメントを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428586/?learn=on&enablevpops&captions=jpn)

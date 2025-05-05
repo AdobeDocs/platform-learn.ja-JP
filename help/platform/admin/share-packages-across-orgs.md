@@ -20,4 +20,4 @@ ht-degree: 0%
 
 パッケージを使用して IMS 組織間でExperience Platform設定をコピーする方法を説明します。 リリースプロセスと複数地域/マルチブランドのデプロイメントをサポートするために、複数の IMS 組織にわたってスキーマ、データセット、ジャーニーなどを簡単にレプリケートします。 詳しくは、[ サンドボックスツールのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443918/?learn=on&enablevpops&captions=jpn)

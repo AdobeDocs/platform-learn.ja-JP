@@ -24,7 +24,7 @@ ht-degree: 0%
 * 活用できるAdobe Experience Platformのデータ準備機能
 * Adobe Real-Time CDP、Adobe Journey Optimizer、Customer Journey Analyticsによる ROI の向上
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454936?learn=on&enablevpops&captions=jpn)
 
 ## SQL の例
 

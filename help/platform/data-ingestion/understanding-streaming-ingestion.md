@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Experience Platformのストリーミング取得を使用すると、送信するすべてのデータをリアルタイム顧客プロファイルで利用できるようになります。 このデータは、CRM および ERP システムから、または HTTP またはパブリッククラウドストリーミングインフラストラクチャ経由で通信できる他のソースから取得できます。 その後、このデータを使用して、リアルタイムのセグメント化を行い、他のマーケティングプロセスをアクティブ化できます。 詳しくは、[ ストリーミング取得ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/streaming/overview) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31657?learn=on&enablevpops&captions=jpn)

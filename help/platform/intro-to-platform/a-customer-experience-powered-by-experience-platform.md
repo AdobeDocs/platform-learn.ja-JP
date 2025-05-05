@@ -17,5 +17,5 @@ ht-degree: 0%
 
 お客様の観点から見て、Adobe Experience Platformで構築された架空のエクスペリエンスをご覧ください。 Experience Platformでリッチで関連性の高いリアルタイムエクスペリエンスを作成する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35344?learn=on&enablevpops&captions=jpn)
 

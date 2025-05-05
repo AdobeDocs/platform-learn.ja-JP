@@ -20,4 +20,4 @@ Adobe Experience Platform Mobile SDK が、モバイルアプリケーション�
 >
 > ローンチは **[!DNL tags]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33157?learn=on&enablevpops&captions=jpn)

@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Adobe Experience Platformのユーザーインターフェイスの操作方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32792?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430443?learn=on&enablevpops&captions=jpn)
 

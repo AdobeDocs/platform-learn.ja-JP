@@ -18,4 +18,4 @@ ht-degree: 8%
 
 このビデオでは、XDM Individual Profile クラスと様々なフィールドグループを使用して、Adobe Experience Platformでスキーマを作成する方法を説明します。 製品ドキュメントについて詳しくは、[UI でのスキーマの作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja) および [API を使用したスキーマの作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27012?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430225?learn=on&enablevpops&captions=jpn)

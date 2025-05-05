@@ -18,5 +18,5 @@ ht-degree: 0%
 
 顧客データの管理を容易にするプラットフォームとして、オーディエンスとアクティベーションプログラムも進化する必要があります。 また、これらのプラットフォームをサポートする人材やプロセスも同様です。 データ管理プラットフォーム（DMP）をサポートする最適な方法として、オーディエンスセンター・オブ・エクセレンス（COE）モデルが長い間確立されてきました。 このビデオの補足として、[ ホワイトペーパーをダウンロード ](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf) することもできます。
 
->[!VIDEO](https://video.tv.adobe.com/v/336938/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457357/?learn=on&enablevpops&captions=jpn)
 

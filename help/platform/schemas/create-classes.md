@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、エクスペリエンスデータモデル（XDM）スキーマに使用するクラスをAdobe Experience Platformで作成する方法を説明します。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333538?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413625?learn=on&enablevpops&captions=jpn)

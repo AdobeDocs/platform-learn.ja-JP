@@ -23,4 +23,4 @@ Adobe Experience Platformでダッシュボードを作成する方法を説明�
 >
 >ユーザー定義ダッシュボードの機能はベータ版です。 その機能とドキュメントは変更される可能性があります。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413783/?learn=on&enablevpops&captions=jpn)

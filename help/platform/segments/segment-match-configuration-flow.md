@@ -18,4 +18,4 @@ ht-degree: 1%
 
 データパートナーとのセグメント共有が接続されたら、パートナーを調査してデータの共有を開始できます。 このビデオでは、データ共有用に Segment Match インスタンスを設定するプロセスについて説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346707/?learn=on&enablevpops&captions=jpn)

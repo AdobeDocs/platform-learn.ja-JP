@@ -20,4 +20,4 @@ ht-degree: 1%
 
 フェデレーションされたオーディエンス構成を作成する方法と、Data Warehouse に到達して適切なデータを選択するクエリを UI で作成する方法について説明します。 詳しくは、[Federated Audience Composition ドキュメント ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/home){target="_blank"} を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448579/?learn=on&enablevpops&captions=jpn)

@@ -20,4 +20,4 @@ Adobe Experience Platformで同意設定がデータに適切に適用されて�
 >
 > ローンチは **[!DNL tags]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443785/?learn=on&enablevpops&captions=jpn)

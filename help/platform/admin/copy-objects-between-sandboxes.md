@@ -21,4 +21,4 @@ ht-degree: 1%
 
 パッケージを使用して、Experience Platform サンドボックス間で設定をコピーする方法を説明します。 リリースプロセスとマルチ地域/マルチブランドのデプロイメントをサポートするために、サンドボックス間でスキーマ、データセット、ジャーニーなどを簡単にレプリケートできます。 詳しくは、[ サンドボックスツールのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446084/?learn=on&enablevpops&captions=jpn)

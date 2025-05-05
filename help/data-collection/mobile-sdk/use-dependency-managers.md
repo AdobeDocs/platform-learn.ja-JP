@@ -20,4 +20,4 @@ CocoaPods と Gradle を使用してAdobe Experience Platform Mobile SDKの拡�
 >
 > ローンチは **[!DNL tags]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/26263/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40321/?learn=on&enablevpops&captions=jpn)

@@ -21,4 +21,4 @@ ht-degree: 2%
 
 AI アシスタントからAdobe Experience Platform アプリケーションについて説明します。 詳しくは、[AI アシスタントのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441025/?learn=on&enablevpops&captions=jpn)

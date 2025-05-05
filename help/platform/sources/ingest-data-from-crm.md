@@ -23,13 +23,13 @@ CRM ソースからAdobe Experience Platformにリアルタイム顧客プロフ
 
 標準のワークフローを使用してSalesforce CRM のソースコネクタを設定する方法を説明します。 標準ワークフローでは、スキーマおよび ID 名前空間を事前に作成する必要があります。 その他の CRM ソースコネクタでは、標準のワークフローのみをサポートする場合があります。
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34110?learn=on&enablevpops&captions=jpn)
 
 ## テンプレートワークフロー（Salesforce）
 
 テンプレートワークフローを使用してSalesforce CRM のソースコネクタを設定する方法について説明します。 このワークフローは、テンプレートに基づいてSalesforce データを取り込むために必要なアセットを自動生成します。 これにより、事前の時間を節約し、必要に応じてアセットをカスタマイズできます。 このワークフローは、すべての CRM ソースコネクタでサポートされているわけではありません。
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453324?learn=on&enablevpops&captions=jpn)
 
 詳しくは、次のドキュメントを参照してください。
 * [Salesforce接続ドキュメントの作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=ja)。

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 B2B マーケターがシステム全体で人物とアカウントのプロファイルを統合し、顧客を完全に理解する方法について説明します。 詳しくは、[Real-Time CDP B2B edition ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451916?learn=on&enablevpops&captions=jpn)

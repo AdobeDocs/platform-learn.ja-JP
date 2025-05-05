@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Experience Platformの 5 つの主要なユースケース（インテリジェントな再エンゲージメント、「Don&#39;t Lose」キャンペーン、カスタマーコンバージョン最適化、コンテキスト認識、生涯価値への 1 回限りの価値）の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430459?learn=on&enablevpops&captions=jpn)
 

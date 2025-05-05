@@ -25,7 +25,7 @@ ht-degree: 1%
 **データアーキテクト** は、このチュートリアル以外でセグメントを作成し、このタスクで同僚をサポートする必要があります。
 
 演習を開始する前に、この短いビデオを視聴して、セグメントの作成について詳しく確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31659?learn=on&enablevpops&captions=jpn)
 
 
 ## 必要な権限

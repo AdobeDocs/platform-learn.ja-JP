@@ -17,5 +17,5 @@ ht-degree: 0%
 
 前のビデオでは、サンプルブランドの Luma が、豊かで、やりがいのある、関連性の高い顧客体験を作成した方法を確認しました。 このビデオでは、Adobe Experience Platformを使用してこのジャーニーを達成する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36312?learn=on&enablevpops&captions=jpn)
 

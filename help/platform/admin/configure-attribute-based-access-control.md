@@ -20,4 +20,4 @@ ht-degree: 100%
 
 属性ベースのアクセス制御を設定して、特定の Experience Platform リソースへのアクセスを制限する方法について説明します。詳しくは、[アクセス制御のドキュメント](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451828?learn=on&enablevpops&captions=jpn)

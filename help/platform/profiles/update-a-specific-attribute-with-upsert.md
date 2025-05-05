@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Adobe Experience Platformの `upsert` 機能を使用して、プロファイルの特定の属性を更新する方法について説明します。 通常、特定の属性のみを持つレコードを Platform に取り込むと、値が更新されますが、他の属性も `null` の値で更新されます。 `Upsert` では、目的の属性のみを更新して、残りのフィールドは現在の値を保持できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443442/?learn=on&enablevpops&captions=jpn)

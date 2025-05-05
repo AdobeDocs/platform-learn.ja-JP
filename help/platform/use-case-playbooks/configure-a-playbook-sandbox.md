@@ -26,4 +26,4 @@ ht-degree: 1%
 
 詳しくは、[ ユースケースプレイブックの概要 ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449827/?learn=on&enablevpops&captions=jpn)

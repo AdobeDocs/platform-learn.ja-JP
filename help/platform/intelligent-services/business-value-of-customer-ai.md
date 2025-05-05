@@ -19,5 +19,5 @@ ht-degree: 1%
 
 このビデオでは、顧客 AI が AI ベースの傾向を使用して顧客プロファイルを充実させ、顧客のセグメント化とターゲティングの取り組みを強化する方法を示します。 詳しくは、[ 顧客 AI ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328478?learn=on&enablevpops&captions=jpn)
 

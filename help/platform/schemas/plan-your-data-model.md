@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、Adobe Experience Platformでスキーマの構築を開始する前にすべきことについて説明します。 ビジネスユースケースを文書化し、Platform ライセンスを理解、製品ガードレールを把握、取り込むデータを特定してからデータモデルを仕上げます。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413632?learn=on&enablevpops&captions=jpn)

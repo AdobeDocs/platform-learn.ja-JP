@@ -47,7 +47,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="データハイジーンのためのデータ準備" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="データハイジーンのためのデータ準備"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449276/?format=jpeg&nocache=1740251397387&captions=jpn" alt="データハイジーンのためのデータ準備"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="データセット削除のスケジュール設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="データセット削除のスケジュール設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430305?format=jpeg&nocache=1740251397716&captions=jpn" alt="データセット削除のスケジュール設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +132,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="偽名プロファイルとエクスペリエンスイベントの有効期限" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="偽名プロファイルとエクスペリエンスイベントの有効期限"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449845?format=jpeg&nocache=1740251397705&captions=jpn" alt="偽名プロファイルとエクスペリエンスイベントの有効期限"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Privacy Serviceについて" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Privacy Serviceについて"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445712?format=jpeg&nocache=1740251397727&captions=jpn" alt="Privacy Serviceについて"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="「upsert」を使用した特定のプロファイル属性の更新" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="「upsert」を使用した特定のプロファイル属性の更新"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443442/?format=jpeg&nocache=1740251398874&captions=jpn" alt="「upsert」を使用した特定のプロファイル属性の更新"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

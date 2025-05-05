@@ -18,4 +18,4 @@ ht-degree: 0%
 
 このビデオでは、Adobe Experience Platformで結合ポリシーを作成する方法を説明します。 結合ポリシーは、顧客プロファイルを作成するために異なるソースのデータセットを組み合わせる際に、どのデータを使用し、優先順位を付けるかを決定するために Platform で使用されるルールです。 詳しくは、[ 結合ポリシーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345078?learn=on&enablevpops&captions=jpn)

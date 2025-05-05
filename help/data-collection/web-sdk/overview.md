@@ -20,7 +20,7 @@ ht-degree: 42%
 
 Adobe Experience Platform Web SDK および Edge Network により、1 つの JavaScript ライブラリと 1 つのビーコンを使用して、アドビアプリケーションやサードパーティの宛先にデータを送信する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37263?learn=on&enablevpops&captions=jpn)
 
 >[!NOTE]
 >

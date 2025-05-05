@@ -19,5 +19,5 @@ ht-degree: 0%
 
 認証、セグメント割り当て、ID マッピングなど、Adobe Experience Platformでソーシャルの宛先を設定する方法について説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411787/?learn=on&enablevpops&captions=jpn)
 

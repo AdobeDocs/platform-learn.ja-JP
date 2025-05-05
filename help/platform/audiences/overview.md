@@ -29,7 +29,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Audience Portal とコンポジションの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Audience Portal とコンポジションの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423368/?format=jpeg&nocache=1740173577252&captions=jpn" alt="Audience Portal とコンポジションの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Adobe Experience Platformへのオーディエンスのアップロード" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Adobe Experience Platformへのオーディエンスのアップロード"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423359/?format=jpeg&nocache=1740173577237&captions=jpn" alt="Adobe Experience Platformへのオーディエンスのアップロード"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +94,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="オーディエンスを作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="オーディエンスを作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31659?format=jpeg&nocache=1740173578323&captions=jpn" alt="オーディエンスを作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/audience-rule-builder-overview.md" title="オーディエンスルールビルダーの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333301/?format=jpeg&nocache=1740173578357" alt="オーディエンスルールビルダーの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413203/?format=jpeg&nocache=1740173578357&captions=jpn" alt="オーディエンスルールビルダーの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,7 +140,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-content-based-audiences.md" title="コンテンツベースのオーディエンスの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333302/?format=jpeg&nocache=1740173578346" alt="コンテンツベースのオーディエンスの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413208/?format=jpeg&nocache=1740173578346&captions=jpn" alt="コンテンツベースのオーディエンスの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-conversion-audiences.md" title="コンバージョンオーディエンスの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333303/?format=jpeg&nocache=1740173578309" alt="コンバージョンオーディエンスの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413193/?format=jpeg&nocache=1740173578309&captions=jpn" alt="コンバージョンオーディエンスの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="動的オーディエンスを作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="動的オーディエンスを作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34392?format=jpeg&nocache=1740173578383&captions=jpn" alt="動的オーディエンスを作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-multi-entity-audiences.md" title="マルチエンティティオーディエンスの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32179?format=jpeg&nocache=1740173578335" alt="マルチエンティティオーディエンスの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345109?format=jpeg&nocache=1740173578335&captions=jpn" alt="マルチエンティティオーディエンスの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,7 +232,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-sequential-audiences.md" title="順次オーディエンスの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333305/?format=jpeg&nocache=1740173578395" alt="順次オーディエンスの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413213/?format=jpeg&nocache=1740173578395&captions=jpn" alt="順次オーディエンスの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +336,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="Federated Audience コンポジションの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="Federated Audience コンポジションの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448579/?format=jpeg&nocache=1740173579467&captions=jpn" alt="Federated Audience コンポジションの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -369,7 +369,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="ストリーミングセグメント化のデモ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="ストリーミングセグメント化のデモ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40064?format=jpeg&nocache=1740173579663&captions=jpn" alt="ストリーミングセグメント化のデモ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -406,7 +406,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="セグメントの一致の設定フロー" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="セグメントの一致の設定フロー"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346707/?format=jpeg&nocache=1740173579850&captions=jpn" alt="セグメントの一致の設定フロー"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -429,7 +429,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="セグメントの一致の接続設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="セグメントの一致の接続設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346353/?format=jpeg&nocache=1740173579840&captions=jpn" alt="セグメントの一致の接続設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -452,7 +452,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="セグメントの一致のデータガバナンス" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="セグメントの一致のデータガバナンス"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346360/?format=jpeg&nocache=1740173579862&captions=jpn" alt="セグメントの一致のデータガバナンス"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -475,7 +475,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="セグメントの一致によるインサイトの事前共有" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="セグメントの一致によるインサイトの事前共有"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346346/?format=jpeg&nocache=1740173579872&captions=jpn" alt="セグメントの一致によるインサイトの事前共有"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -498,7 +498,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="受信データのセグメント一致" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="受信データのセグメント一致"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3411142/?format=jpeg&nocache=1740173579825&captions=jpn" alt="受信データのセグメント一致"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

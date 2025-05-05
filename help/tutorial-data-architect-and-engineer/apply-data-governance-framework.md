@@ -24,9 +24,9 @@ ht-degree: 5%
 Adobe Experience Platform データガバナンスを使用すると、顧客データを管理し、データの使用に適用される規制、制限、ポリシーへのコンプライアンスを確保できます。データの使用の制御など、様々なレベルで、Experience Platform内で重要な役割を果たします。
 
 演習を開始する前に、データガバナンスに関する次の短いビデオをご覧ください。
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41322?learn=on&enablevpops&captions=jpn)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34106?learn=on&enablevpops&captions=jpn)
 
 <!--
 ## Permissions required

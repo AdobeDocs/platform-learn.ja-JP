@@ -18,4 +18,4 @@ ht-degree: 0%
 
 SFTP ソースコネクタの接続の問題を回避するためのベストプラクティスについて説明します。 特定のチェックポイントを確認して、SFTP サーバーをAdobe Experience Platformに正常に接続します。 詳しくは、[SFTP ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443468?learn=on&enablevpops&captions=jpn)

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防ぐのに ID グラフリンクルールがどのように役立つかについて、概要を説明します。 詳しくは、[ID グラフリンクルールに関するドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448273/?learn=on&enablevpops&captions=jpn)

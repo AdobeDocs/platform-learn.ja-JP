@@ -18,4 +18,4 @@ ht-degree: 35%
 
 データフィールドを ID としてラベル付けし、ID データを取り込み、Adobe Experience Platform ID サービスのプライベートグラフでデータを検証する方法について説明します。 詳しくは、[ID サービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31658?learn=on&enablevpops&captions=jpn)

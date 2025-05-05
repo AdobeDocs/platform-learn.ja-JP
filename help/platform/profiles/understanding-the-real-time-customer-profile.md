@@ -18,7 +18,7 @@ ht-degree: 13%
 
 このビデオでは、Adobe Experience Platformがリアルタイム顧客プロファイルを構築および更新する方法と、それらのプロファイルにアクセスして使用する方法について説明します。 詳しくは、[ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31660?learn=on&enablevpops&captions=jpn)
 
 ## アーキテクチャと機能
 
@@ -35,7 +35,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="リアルタイム顧客プロファイルの概要図" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="リアルタイム顧客プロファイルの概要図"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36809?format=jpeg&nocache=1740415066741&captions=jpn" alt="リアルタイム顧客プロファイルの概要図"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-merge-policies.md" title="結合ポリシーの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330433?format=jpeg&nocache=1740415066765" alt="結合ポリシーの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345078?format=jpeg&nocache=1740415066765&captions=jpn" alt="結合ポリシーの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="union-schemas-overview.md" title="結合スキーマの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329940?format=jpeg&nocache=1740415066755" alt="結合スキーマの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342824?format=jpeg&nocache=1740415066755&captions=jpn" alt="結合スキーマの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,7 +104,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="購入合計の計算属性を作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="購入合計の計算属性を作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443552?format=jpeg&nocache=1740415066775&captions=jpn" alt="購入合計の計算属性を作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -139,7 +139,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="bring-data-into-the-real-time-customer-profile.md" title="リアルタイム顧客プロファイルにデータを取り込む" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27301?format=jpeg&nocache=1740415067018" alt="リアルタイム顧客プロファイルにデータを取り込む"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34393?format=jpeg&nocache=1740415067018&captions=jpn" alt="リアルタイム顧客プロファイルにデータを取り込む"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -185,7 +185,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="「upsert」を使用した特定のプロファイル属性の更新" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="「upsert」を使用した特定のプロファイル属性の更新"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443442/?format=jpeg&nocache=1740415067029&captions=jpn" alt="「upsert」を使用した特定のプロファイル属性の更新"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -218,7 +218,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="アカウントプロファイルの表示" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="アカウントプロファイルの表示"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446578?format=jpeg&nocache=1740415067214&captions=jpn" alt="アカウントプロファイルの表示"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

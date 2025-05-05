@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Experience Platform プロジェクトを成功に導くための役割、フェーズ、重要な成果について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430455?learn=on&enablevpops&captions=jpn)
 

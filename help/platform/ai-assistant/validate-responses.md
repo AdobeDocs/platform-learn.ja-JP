@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Adobe Experience Platformの AI アシスタントが提供する応答を検証する方法を説明します。 詳しくは、「[AI アシスタント UI ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/ui-guide#verify-responses)」を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441739/?learn=on&enablevpops&captions=jpn)

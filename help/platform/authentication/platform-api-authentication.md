@@ -31,20 +31,20 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
 >
 > システム管理者は、API 認証情報を作成した後、認証情報をExperience Platformのロールに関連付ける必要があります。
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31656/?learn=on&enablevpops&captions=jpn)
 
 ## Postmanでのアクセストークンの生成{#generate-an-access-token-with-postman}
 
 [Adobe Identity Management Service API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) を使用して、Adobe Experience Platform API にアクセスするためのアクセストークンを取得します。
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34080/?learn=on&enablevpops&captions=jpn)
 
 
 ## Postmanを使用したExperience Platform API の操作
 
 [Adobe Experience Platform環境変数 ](#export-integration-details-to-postman) および [ 生成されたアクセストークン ](#generate-an-access-token-with-postman) に基づいて、[Adobeが提供するExperience Platform API Postman コレクション ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) を使用してAdobe Developer Console API とのやり取りを調べます。
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34079/?learn=on&enablevpops&captions=jpn)
 
 
 ## これらのビデオで参照されるリソース

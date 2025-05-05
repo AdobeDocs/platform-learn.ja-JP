@@ -29,7 +29,7 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 
 これまでAnalysis Workspaceを使用したことがない場合は、このビデオを視聴することを強くお勧めします。
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35774?quality=12&learn=on&enablevpops&captions=jpn)
 
 ### プロジェクトの作成
 

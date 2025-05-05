@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Adobe Experience Platform クエリサービスのAdobe定義関数を使用して、エクスペリエンスイベントデータに対して一般的なビジネス関連タスクを実行する方法について説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414051?learn=on&enablevpops&captions=jpn)
