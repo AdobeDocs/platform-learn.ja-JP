@@ -25,7 +25,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
 * add-developers.md{title=Add developers}
 * add-product-administrators.md{title=Add administrators}
 * configure-attribute-based-access-control.md
-* https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
+* https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -125,7 +125,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" title="データ収集へのユーザーの追加" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/users-and-permissions" title="データ収集へのユーザーの追加" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="データ収集へのユーザーの追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -134,11 +134,11 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="データ収集へのユーザーの追加"> データ収集へのユーザーの追加 </a>
+                        <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="データ収集へのユーザーの追加"> データ収集へのユーザーの追加 </a>
                     </p>
                     <p class="is-size-6">会社の従業員が業務に必要なアクセス権を取得できるように、Adobe Experience Platformのデータ収集機能のユーザーを追加し、権限を管理する方法について説明します。</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
                 </a>
             </div>
@@ -233,7 +233,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
 ## ライセンス使用状況
 
 <!-- CARDS
-* https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard
+* https://experienceleague.adobe.com/ja/docs/experience-platform/landing/license/license-usage-dashboard
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -241,8 +241,8 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" title="ライセンス使用状況ダッシュボード" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="ライセンス使用状況ダッシュボード"
+                    <a href="https://experienceleague.adobe.com/ja/docs/experience-platform/landing/license/license-usage-dashboard" title="ライセンス使用状況ダッシュボード" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="ライセンス使用状況ダッシュボード"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -250,11 +250,11 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="ライセンス使用状況ダッシュボード"> ライセンス使用状況ダッシュボード </a>
+                        <a href="https://experienceleague.adobe.com/ja/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="ライセンス使用状況ダッシュボード"> ライセンス使用状況ダッシュボード </a>
                     </p>
                     <p class="is-size-6">Adobe Experience Platform UI には、組織のライセンス使用状況に関する重要な情報を表示できるダッシュボードが用意されています。</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ja/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
                 </a>
             </div>
@@ -300,7 +300,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
 ## タグ
 
 <!-- CARDS
-* https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags
+* https://experienceleague.adobe.com/ja/docs/experience-platform/administrative-tags/ui/managing-tags
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -308,8 +308,8 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" title="統合タグの管理" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="統合タグの管理"
+                    <a href="https://experienceleague.adobe.com/ja/docs/experience-platform/administrative-tags/ui/managing-tags" title="統合タグの管理" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="統合タグの管理"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -317,11 +317,11 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="統合タグの管理"> 統合タグの管理 </a>
+                        <a href="https://experienceleague.adobe.com/ja/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="統合タグの管理"> 統合タグの管理 </a>
                     </p>
                     <p class="is-size-6">このドキュメントでは、Adobe Experience Cloud での統合タグの管理について説明します</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ja/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
                 </a>
             </div>

@@ -20,7 +20,7 @@ ht-degree: 3%
 ## 知っておいて良い
 
 Adobe Experience Platformは、様々なAmazon サービスを宛先としてサポートしています。
-Kinesis と S3 はどちらも [ プロファイル書き出し先 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) であり、Adobe Experience PlatformのReal-Time CDPの一部として使用できます。
+Kinesis と S3 はどちらも [ プロファイル書き出し先 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=ja) であり、Adobe Experience PlatformのReal-Time CDPの一部として使用できます。
 価値の高いセグメントイベントや関連するプロファイル属性を、選択したシステムに簡単にフィードできます。
 
 この演習では、独自のAmazon Kinesis ストリームを設定して、Adobe Experience Platform Edge エコシステムから得られたイベントデータをAmazon S3 などのクラウドストレージ宛先にストリーミングする方法について説明します。 これは、web およびモバイルプロパティからエクスペリエンスイベントを収集し、分析と運用レポートのためにデータレイクにプッシュする場合に便利です。 データレイクは通常、大規模な毎日のファイルインポートでバッチ方式でデータを取り込み、イベント転送と組み合わせて使用できるパブリック http エンドポイントを公開しません。

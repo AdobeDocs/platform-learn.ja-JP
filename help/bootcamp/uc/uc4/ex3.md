@@ -115,7 +115,7 @@ ht-degree: 3%
 
 これらの設定を変更しない場合、CJA はディメンションを **Prop** （ヒットレベル）として解釈します。 また、永続性を変更して、ディメンションを **eVar** にすることができます（ジャーニー全体で値を保持します）。
 
-eVar と Prop に詳しくない場合は、[ 詳しくは、ドキュメントを参照 ](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html) してください。
+eVar と Prop に詳しくない場合は、[ 詳しくは、ドキュメントを参照 ](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=ja) してください。
 
 ページ名は小道具のままにしておきます。 そのため、「永続性設定 **を変更する必要はあり** せん。
 

@@ -35,7 +35,7 @@ Assurance は、Adobe Experience Platform Mobile SDK で生成された生の SD
 
 ## アクセスを確認
 
-組織が Assurance へのアクセス権を持っていることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) を参照してください。
+組織が Assurance へのアクセス権を持っていることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=ja) を参照してください。
 
 ## 実装方法
 
@@ -203,7 +203,7 @@ Xcode で：
 >
 >これで、チュートリアルの残りの部分で Assurance を使用するようにアプリを設定しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 
 次のトピック：**[同意の実装](consent.md)**

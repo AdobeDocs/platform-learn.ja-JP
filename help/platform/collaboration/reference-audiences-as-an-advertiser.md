@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Real-Time CDP Collaborationで広告主としてオーディエンスを参照する
 
-広告主として、オーディエンスを参照し、インターフェイスに取り込んで、パートナーと共同作業する際に使用できるようにする方法を説明します。 詳細なドキュメントについては、[ オーディエンスのインポートと管理 ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"} を参照してください。
+広告主として、オーディエンスを参照し、インターフェイスに取り込んで、パートナーと共同作業する際に使用できるようにする方法を説明します。 詳細なドキュメントについては、[ オーディエンスのインポートと管理 ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"} を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

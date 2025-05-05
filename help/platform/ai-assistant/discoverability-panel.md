@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # AI アシスタントの検出性パネルの使用
 
-AI アシスタントで検出性パネルを使用する方法を説明します。 詳しくは、「[AI アシスタント UI ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability)」を参照してください。
+AI アシスタントで検出性パネルを使用する方法を説明します。 詳しくは、「[AI アシスタント UI ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/ui-guide#use-discoverability)」を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)

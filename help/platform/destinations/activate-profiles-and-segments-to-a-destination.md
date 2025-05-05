@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 宛先へのプロファイルとオーディエンスのアクティブ化
 
-Real-Time CDPで宛先に対してプロファイルとオーディエンスをアクティブ化する方法について説明します。  宛先またはオーディエンスのユーザーインターフェイスのいずれかで、このワークフローを開始します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) を参照してください。
+Real-Time CDPで宛先に対してプロファイルとオーディエンスをアクティブ化する方法について説明します。  宛先またはオーディエンスのユーザーインターフェイスのいずれかで、このワークフローを開始します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activation-overview) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
 

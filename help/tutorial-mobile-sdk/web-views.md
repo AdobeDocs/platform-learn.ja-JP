@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 潜在的なトラッキングの問題
 
-アプリのネイティブ部分とアプリ内の WebView からデータを送信すると、それぞれが独自のExperience CloudID （ECID）を生成し、その結果、切断されたヒットと水増しされた訪問/訪問者データが生じます。 ECID について詳しくは、[ECID の概要 ](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) を参照してください。
+アプリのネイティブ部分とアプリ内の WebView からデータを送信すると、それぞれが独自のExperience CloudID （ECID）を生成し、その結果、切断されたヒットと水増しされた訪問/訪問者データが生じます。 ECID について詳しくは、[ECID の概要 ](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=ja) を参照してください。
 
 この望ましくない状況を解決するには、アプリのネイティブ部分から、アプリで使用する可能性のある WebView にユーザーの ECID を渡すことが重要です。
 
@@ -102,6 +102,6 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 >
 >これで、Adobe Experience Platform Mobile SDK で既に発行されている ECID と同じ ECID を使用して、Web ビューの URL に基づいたコンテンツを表示するようにアプリを設定しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[ID](identity.md)**

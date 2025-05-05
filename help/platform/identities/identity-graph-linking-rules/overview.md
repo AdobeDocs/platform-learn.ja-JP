@@ -22,6 +22,6 @@ ht-degree: 0%
 >
 >ID グラフリンクルールは現在、限定提供（LA）です。 開発用サンドボックスでこの機能にアクセスする方法については、Adobe アカウントチームにお問い合わせください。
 
-データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防ぐのに ID グラフリンクルールがどのように役立つかについて、概要を説明します。 詳しくは、[ID グラフリンクルールに関するドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
+データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防ぐのに ID グラフリンクルールがどのように役立つかについて、概要を説明します。 詳しくは、[ID グラフリンクルールに関するドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)

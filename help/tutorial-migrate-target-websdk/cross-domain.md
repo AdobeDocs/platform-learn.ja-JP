@@ -62,14 +62,14 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->タグ機能（旧称 Launch）を使用して Web SDK を実装する場合、カスタムコードを使用しなくても、クロスドメイン ID 共有を実現できます。 詳しくは、[ 専用ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) を参照してください。
+>タグ機能（旧称 Launch）を使用して Web SDK を実装する場合、カスタムコードを使用しなくても、クロスドメイン ID 共有を実現できます。 詳しくは、[ 専用ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=ja#tags-extension) を参照してください。
 
 >[!NOTE]
 >
->Platform Web SDK は、ネイティブモバイルアプリのユースケースでモバイルから web への ID 共有もサポートしています。 詳しくは、モバイルから web およびクロスドメインでの ID の共有 [ に関する専用ドキュメントを参照し ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html) ください。
+>Platform Web SDK は、ネイティブモバイルアプリのユースケースでモバイルから web への ID 共有もサポートしています。 詳しくは、モバイルから web およびクロスドメインでの ID の共有 [ に関する専用ドキュメントを参照し ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=ja) ください。
 
 次に、Platform Web SDK との互換性を確保するために [ オーディエンスとプロファイルスクリプトを更新 ](update-audiences.md) する方法について説明します。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

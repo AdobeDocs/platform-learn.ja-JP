@@ -35,5 +35,5 @@ Analytics 実装の規模と複雑さによっては、web SDKへの移行に時
 
 >[!TIP]
 >
->レポートスイートの作成に関するビデオウォークスルーについては、[ レポートスイートの概要と作成 ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"} を参照してください。
+>レポートスイートの作成に関するビデオウォークスルーについては、[ レポートスイートの概要と作成 ](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"} を参照してください。
 

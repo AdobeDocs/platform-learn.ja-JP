@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Adobe Audience Manager コネクタを使用したデータの取り込み
 
-この統合ビデオでは、Audience Manager データコネクタを使用して、AAMの特性とセグメントを Platform に取り込み、他のリッチデータと組み合わせる方法を説明します。 詳しくは、[Audience Manager ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) を参照してください。
+この統合ビデオでは、Audience Manager データコネクタを使用して、AAMの特性とセグメントを Platform に取り込み、他のリッチデータと組み合わせる方法を説明します。 詳しくは、[Audience Manager ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
@@ -28,4 +28,4 @@ Adobe Audience ManagerからReal-Time Customer Data Platform（Real-Time CDP）�
 >
 >上のビデオでは、すべてのセグメントや特性を選択するオプションが表示されています。 セグメントの数に制限があり、それらのセグメント内のユニーク訪問者の数が把握されている場合を除き、このオプションの使用はお勧めしません。 「すべてのセグメント」または「すべての特性」で多数の訪問者プロファイルを持ち越すと、Real-Time CDPのプロファイルサービスにバルーンが表示される可能性があり、アプリケーションの価格に大きな影響を与える可能性があります（プロファイルの数はアプリケーションのコストに影響するため）。 そのため、「すべて」を選択する代わりに、特定のセグメントを選択して、Real-Time CDPに取り込むことをお勧めします。
 >
->[2022 年 4 月 28 日（PT） ](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html) のExperience LeagueLIVE エピソードをご覧ください。
+>[2022 年 4 月 28 日（PT） ](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html?lang=ja) のExperience LeagueLIVE エピソードをご覧ください。

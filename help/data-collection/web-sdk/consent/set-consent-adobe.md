@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Adobe標準を使用した同意の設定
 
-Adobe Experience Platform Web SDKを使用して、Adobe standard 1.0 および 2.0 に従って同意値を設定する方法を説明します。Adobe標準の使用について詳しくは、[Platform での同意処理 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) に関するドキュメントを参照してください。
+Adobe Experience Platform Web SDKを使用して、Adobe standard 1.0 および 2.0 に従って同意値を設定する方法を説明します。Adobe標準の使用について詳しくは、[Platform での同意処理 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=ja) に関するドキュメントを参照してください。
 
 >[!NOTE]
 >

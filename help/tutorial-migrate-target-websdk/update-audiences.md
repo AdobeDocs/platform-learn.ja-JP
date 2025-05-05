@@ -49,11 +49,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-詳細とベストプラクティスについては、[ プロファイルスクリプト ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html) に関する専用ドキュメントを参照してください。
+詳細とベストプラクティスについては、[ プロファイルスクリプト ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ja) に関する専用ドキュメントを参照してください。
 
 ## 動的コンテンツのパラメータートークンの更新
 
-[ 動的コンテンツ置換 ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html) を使用するオファー、レコメンデーションデザインまたはアクティビティがある場合は、新しい XDM パラメーター名を考慮して、それに応じて更新する必要がある場合があります。
+[ 動的コンテンツ置換 ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=ja) を使用するオファー、レコメンデーションデザインまたはアクティビティがある場合は、新しい XDM パラメーター名を考慮して、それに応じて更新する必要がある場合があります。
 
 mbox パラメーターのトークン置き換えの使用方法によっては、古いパラメーター名と新しいパラメーター名の両方が考慮されるように、既存の設定を強化できる場合があります。 ただし、JSON オファーなど、カスタム JavaScript コードが利用できない状況では、移行が完了して実稼動サイトに移行した後、コピーを作成して更新を行う必要があります。
 
@@ -81,4 +81,4 @@ Platform Web SDK パラメーター名を使用した JSON オファーの例：
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

@@ -17,7 +17,7 @@ ht-degree: 37%
 
 # ダッシュボードの作成
 
-Adobe Experience Platformでダッシュボードを作成する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html) を参照してください。
+Adobe Experience Platformでダッシュボードを作成する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=ja) を参照してください。
 
 >[!IMPORTANT]
 >

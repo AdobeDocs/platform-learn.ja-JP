@@ -21,7 +21,7 @@ ht-degree: 1%
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
 >
 > * Platform launch（クライアントサイド）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** になりました
+> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
 > * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 このチュートリアルでは、データ収集の Platform Web SDK 拡張機能を使用して、Consent Management Platform （CMP）から取得した同意データを実装してアクティブ化する方法について説明します。 これは、Adobe標準と IAB TCF 2.0 同意標準の両方を使用して行い、OneTrust または Sourcepoint を CMP の例として使用します。
@@ -30,19 +30,19 @@ ht-degree: 1%
 
 ## 前提条件
 
-Web SDK を使用するための前提条件を以下に示します [ こちら ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals)。
+Web SDK を使用するための前提条件を以下に示します [ こちら ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=ja#fundamentals)。
 
-そのページには、「イベントデータセット」の要件があり、音と同様に、これはエクスペリエンスイベントデータを保持するデータセットです。 イベントと共に同意情報を送信するには、[IAB TCF 2.0 同意の詳細 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html) フィールドグループをエクスペリエンスイベントスキーマに追加する必要があります。
+そのページには、「イベントデータセット」の要件があり、音と同様に、これはエクスペリエンスイベントデータを保持するデータセットです。 イベントと共に同意情報を送信するには、[IAB TCF 2.0 同意の詳細 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html?lang=ja) フィールドグループをエクスペリエンスイベントスキーマに追加する必要があります。
 
 ![](./images/event-schema.png)
 
-Platform 同意標準 v2.0 の場合、XDM 個人プロファイルスキーマとデータセットを作成するには、Adobe Experience Platformにもアクセスする必要があります。 スキーマの作成に関するチュートリアルについては [ スキーマエディターを使用したスキーマの作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials) を参照してください。必要な同意と環境設定の詳細フィールドグループについては [ 同意と環境設定のデータを取得するためのデータセットの設定 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) を参照してください。
+Platform 同意標準 v2.0 の場合、XDM 個人プロファイルスキーマとデータセットを作成するには、Adobe Experience Platformにもアクセスする必要があります。 スキーマの作成に関するチュートリアルについては [ スキーマエディターを使用したスキーマの作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#tutorials) を参照してください。必要な同意と環境設定の詳細フィールドグループについては [ 同意と環境設定のデータを取得するためのデータセットの設定 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=ja) を参照してください。
 
 このチュートリアルでは、データ収集へのアクセス権を持ち、Web SDK 拡張機能がインストールされたクライアントサイドのタグプロパティと、開発用に作成および構築された作業ライブラリを作成済みであることを前提としています。 これらのトピックについて詳しく説明し、以下のドキュメントで説明します。
 
-* [ プロパティの作成または設定 ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
+* [ プロパティの作成または設定 ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ja#create-or-configure-a-property)
 * [ ライブラリの概要 ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=ja)
-* [パブリッシュの概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)
+* [パブリッシュの概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja)
 
 また、[Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome拡張機能を使用して、実装を調べ、検証します。
 
@@ -52,9 +52,9 @@ IAB TCF の例を CMP と共に独自のサイトに実装するには、OneTrus
 
 >[!NOTE]
 >
->1.0 標準は廃止され、v2.0 で置き換えられています。2.0 標準では、同意データを追加して、同意環境設定を手動で適用するために使用できます。 以下の Platform Web SDK 拡張機能のスクリーンショットは、Adobe同意標準の v1.0 または v2.0 と互換性のある拡張機能のバージョン [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0) のものです。
+>1.0 標準は廃止され、v2.0 で置き換えられています。2.0 標準では、同意データを追加して、同意環境設定を手動で適用するために使用できます。 以下の Platform Web SDK 拡張機能のスクリーンショットは、Adobe同意標準の v1.0 または v2.0 と互換性のある拡張機能のバージョン [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html?lang=ja#version-2.4.0) のものです。
 
-これらの標準について詳しくは、[ 顧客同意環境設定のサポート ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) を参照してください。
+これらの標準について詳しくは、[ 顧客同意環境設定のサポート ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=ja) を参照してください。
 
 ### 手順 1:Web SDK 拡張機能での同意の設定
 
@@ -83,7 +83,7 @@ CMP がユーザーの環境設定を収集すると、その環境設定を SDK
 
 注意：SDK のこの設定は、ユーザーのプロファイルには保持されません。訪問者によって明示的な同意環境設定が提供される前に、SDK の動作を設定することに固有です。
 
-Web SDK 拡張機能の設定について詳しくは、[Platform Web SDK 拡張機能の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=en#configure-the-extension) および [ 顧客同意環境設定のサポート ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) を参照してください。
+Web SDK 拡張機能の設定について詳しくは、[Platform Web SDK 拡張機能の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=ja#configure-the-extension) および [ 顧客同意環境設定のサポート ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=ja) を参照してください。
 
 この例では、「保留中」のオプションを選択し、「保存 **を選択して設定を保存し** す。
 
@@ -105,17 +105,17 @@ SDK のデフォルト動作を設定したので、タグを使用して、訪�
 
 メモ：Web サイトの訪問者がオプトアウトすると、SDK では、ユーザーの同意を設定できません。
 
-タグルールは、様々な組み込みイベントまたはカスタムイベントでトリガーできます [ これらのイベントを使用して ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) 訪問者セッション中の適切なタイミングでこの同意データを渡すことができます。 上記の例では、window loaded イベントを使用してルールをトリガーしました。 後の節では、CMP の同意環境設定イベントを使用して、同意を設定アクションをトリガーします。 同意を設定アクションは、オプトイン環境設定を示す任意のイベントによってトリガーされるルールで使用できます。
+タグルールは、様々な組み込みイベントまたはカスタムイベントでトリガーできます [ これらのイベントを使用して ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=ja) 訪問者セッション中の適切なタイミングでこの同意データを渡すことができます。 上記の例では、window loaded イベントを使用してルールをトリガーしました。 後の節では、CMP の同意環境設定イベントを使用して、同意を設定アクションをトリガーします。 同意を設定アクションは、オプトイン環境設定を示す任意のイベントによってトリガーされるルールで使用できます。
 
 #### Platform Consent Standard 2.0 での同意の設定
 
-Platform 同意標準のバージョン 2.0 は、[XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) データで機能します。 また、Platform のプロファイルスキーマに「同意と環境設定の詳細」フィールドグループを追加する必要もあります。 Adobe標準バージョン 2.0 とこのフィールドグループについて詳しくは、[Platform での同意処理 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) を参照してください。
+Platform 同意標準のバージョン 2.0 は、[XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ja) データで機能します。 また、Platform のプロファイルスキーマに「同意と環境設定の詳細」フィールドグループを追加する必要もあります。 Adobe標準バージョン 2.0 とこのフィールドグループについて詳しくは、[Platform での同意処理 ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=ja) を参照してください。
 
 カスタムコードデータ要素を作成して、以下のスキーマに示す同意オブジェクトの collect プロパティと metadata プロパティにデータを渡します。
 
 ![](./images/collect-metadata.png)
 
-この同意および環境設定詳細フィールドグループには、[ 同意および環境設定 XDM データタイプ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites) のフィールドが含まれています。このデータタイプには、ルールアクションの Platform Web SDK 拡張機能を使用して Platform に送信する同意環境設定データが含まれます。 現在、Platform Consent Standard 2.0 を実装するために必要なプロパティは、収集値（val）とメタデータ時間の値のみです（上記では赤でハイライト表示されています）。
+この同意および環境設定詳細フィールドグループには、[ 同意および環境設定 XDM データタイプ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=ja#prerequisites) のフィールドが含まれています。このデータタイプには、ルールアクションの Platform Web SDK 拡張機能を使用して Platform に送信する同意環境設定データが含まれます。 現在、Platform Consent Standard 2.0 を実装するために必要なプロパティは、収集値（val）とメタデータ時間の値のみです（上記では赤でハイライト表示されています）。
 
 このデータのデータ要素を作成しましょう。 「データ要素」を選択し、青い「データ要素の追加」ボタンを選択します。 これを「xdm-consent 2.0」と呼び、Core 拡張機能を使用して、カスタムコードタイプを選択します。 次のデータを入力またはコピーして、カスタムコードエディターウィンドウに貼り付けることができます。
 
@@ -174,7 +174,7 @@ IAB TCF 2.0 同意標準を使用してタグから同意イベントデータ�
 
 `consentStandard` フィールドと `consentStandardVersion` フィールドはどちらも、使用している標準（IAB TCF バージョン 2.0）の単なるテキスト文字列です。`consentStringValue` は、「IAB TCF 同意文字列」という名前のデータ要素を参照します。 テキストを囲むパーセント記号は、データ要素の名前を示しています。これについては後で説明します。 `containsPersonalData` フィールドは、IAB TCF 2.0 同意文字列に「True」または「False」の個人データが含まれているかどうかを示します。 `gdprApplies` フィールドは、GDPR が適用される場合は「true」、GDPR が適用されない場合は「false」、GDPR が適用されるかどうか不明な場合は「undefined」を示します。 現在、Web SDK では「undefined」が「true」として扱われるので、「gdprApplies: undefined」と共に送信された同意データは、訪問者が GDPR が適用される領域に配置されているかのように扱われます。
 
-これらのプロパティとタグの IAB TCF 2.0 について詳しくは、[ 同意ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started) を参照してください。
+これらのプロパティとタグの IAB TCF 2.0 について詳しくは、[ 同意ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=ja#getting-started) を参照してください。
 
 ### 手順 2:IAB TCF 2.0 標準で同意を設定するルールを作成する
 
@@ -230,7 +230,7 @@ GDPR の適用では、イベントの他のカスタム変数を使用し、上
 
 ### 手順 3：ライブラリに保存してビルド
 
-[ 作業ライブラリ ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature) 前提条件を使用している場合は、これらの変更が既に保存されており、開発ライブラリが構築されています。
+[ 作業ライブラリ ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=ja#use-the-working-library-feature) 前提条件を使用している場合は、これらの変更が既に保存されており、開発ライブラリが構築されています。
 
 ![](./images/save-library.png)
 

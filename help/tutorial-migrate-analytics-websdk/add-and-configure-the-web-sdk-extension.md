@@ -42,4 +42,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これで、タグプロパティに Web SDK拡張機能の基本的なインストールと設定が追加されました。 この移行チュートリアルの間に、Web SDK拡張機能の一部を使用して、データ要素とルールを作成または変更しますが、チュートリアルでは拡張機能の設定項目はそれ以上変更しません。 追加の設定項目は、追加のユースケースに使用でき、またそうする必要があります。 これらの設定に関する詳細なドキュメントについては、[Web SDK タグ拡張機能の設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
+>これで、タグプロパティに Web SDK拡張機能の基本的なインストールと設定が追加されました。 この移行チュートリアルの間に、Web SDK拡張機能の一部を使用して、データ要素とルールを作成または変更しますが、チュートリアルでは拡張機能の設定項目はそれ以上変更しません。 追加の設定項目は、追加のユースケースに使用でき、またそうする必要があります。 これらの設定に関する詳細なドキュメントについては、[Web SDK タグ拡張機能の設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。

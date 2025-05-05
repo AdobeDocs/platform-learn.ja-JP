@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## 3.3.1.1 用語
 
-offer decisioningに関する理解を深めるために、Offer decisioningアプリケーションサービスとAdobe Experience Platformの連携に関する [ 概要 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) を読むことを強くお勧めします。
+offer decisioningに関する理解を深めるために、Offer decisioningアプリケーションサービスとAdobe Experience Platformの連携に関する [ 概要 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=ja) を読むことを強くお勧めします。
 
 offer decisioningを使用するには、次の概念を理解している必要があります。
 

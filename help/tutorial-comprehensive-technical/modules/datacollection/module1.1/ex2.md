@@ -25,7 +25,7 @@ ht-degree: 1%
 
 [ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) では、既にデータストリームを作成していますが、作成した背景や理由については説明していません。
 
-[ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) は、Web SDKで収集されたデータの送信先をEdge Networkサーバーに指示します。 データストリームを使用してデータを送信できる場所について詳しくは、[ データストリームへのサービスの追加 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) のドキュメントを参照してください。
+[ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) は、Web SDKで収集されたデータの送信先をEdge Networkサーバーに指示します。 データストリームを使用してデータを送信できる場所について詳しくは、[ データストリームへのサービスの追加 ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#add-services) のドキュメントを参照してください。
 
 データストリームは、Experience Platformのデータ収集ユーザーインターフェイスで管理され、Adobe Experience Platform データ収集を使用して web SDKを実装しているかどうかに関係なく、web SDKを使用したデータ収集にとって重要です。
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 - すべてのプロファイルデータは、デフォルトでデータセット **デモシステム - web サイトのプロファイルデータセット （グローバル v1.1）** に収集されます（現在、Web SDKでプロファイルデータをネイティブに取り込む機能は、Web SDKではまだサポートされていません）
 - このデータストリームに **application** Offer decisioningサービスを使用する場合は、Offer decisioningのチェックボックスをオンにする必要があります。 （これは、[ モジュール 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md) の一部です）
 - **Edge セグメント化** はデフォルトで有効になっています。つまり、選定オーディエンスは、受信トラフィックの取り込み時にエッジで評価されます
-- [ パーソナライゼーションの宛先 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview) を使用する場合、**Personalizationの宛先** のチェックボックスをオンにします。
+- [ パーソナライゼーションの宛先 ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/personalization/overview) を使用する場合、**Personalizationの宛先** のチェックボックスをオンにします。
 - このデータストリームで **Adobe Journey Optimizer** の機能を使用する場合は、**Adobe Journey Optimizer** のチェックボックスをオンにする必要があります。
 
 

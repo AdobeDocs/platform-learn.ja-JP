@@ -22,4 +22,4 @@ Real-Time CDPから宛先パートナーにデータを送信する前に、最�
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
 
-詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination) を参照してください。
+詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/connect-destination) を参照してください。

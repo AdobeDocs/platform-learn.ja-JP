@@ -54,7 +54,7 @@ Adobe Experience Platformのタグ機能を使用して、データレイヤー�
 
 ### データレイヤーへの XDM の実装
 
-このアプローチでは、完全に定義された XDM オブジェクトをデータレイヤーの構造として使用します。 次に、データレイヤー全体をタグの XDM オブジェクトデータ要素にマッピングします。 実装でタグマネージャーを使用していない場合、[XDM sendEvent コマンド ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data) を使用してアプリケーションから直接 XDM にデータを送信できるので、このアプローチは理想的です。 タグを使用する場合は、データレイヤー全体をパススルー JSON オブジェクトとして XDM に取り込むカスタムコードデータ要素を作成できます。 次に、パススルー JSON をイベント送信アクションの XDM オブジェクトフィールドにマッピングします。
+このアプローチでは、完全に定義された XDM オブジェクトをデータレイヤーの構造として使用します。 次に、データレイヤー全体をタグの XDM オブジェクトデータ要素にマッピングします。 実装でタグマネージャーを使用していない場合、[XDM sendEvent コマンド ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data) を使用してアプリケーションから直接 XDM にデータを送信できるので、このアプローチは理想的です。 タグを使用する場合は、データレイヤー全体をパススルー JSON オブジェクトとして XDM に取り込むカスタムコードデータ要素を作成できます。 次に、パススルー JSON をイベント送信アクションの XDM オブジェクトフィールドにマッピングします。
 
 以下に、Adobeのクライアントデータレイヤー形式を使用したデータレイヤーの表示例を示します。
 
@@ -129,17 +129,17 @@ window.adobeDataLayer.push({
 >
 > Google データレイヤー
 > 
-> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、タグの [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)0&rbrace;Google Data Layer extension&rbrace; を使用できます。 これにより、IT チームのサポートを依頼しなくても、Adobeテクノロジを迅速に導入できます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
+> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、タグの [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/google-data-layer/overview)0&rbrace;Google Data Layer extension&rbrace; を使用できます。 これにより、IT チームのサポートを依頼しなくても、Adobeテクノロジを迅速に導入できます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
 
 ### データストリームの XDM へのマッピング
 
-このアプローチでは、[ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) と呼ばれるデータストリーム設定に組み込まれた機能を使用し、タグの XDM へのデータレイヤー変数のマッピングをスキップします。
+このアプローチでは、[ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep) と呼ばれるデータストリーム設定に組み込まれた機能を使用し、タグの XDM へのデータレイヤー変数のマッピングをスキップします。
 
 #### 長所
 
 * 個々の変数を XDM にマッピングできるので、柔軟性があります
-* XDM に送信する前にデータレイヤーから [ 新しい値を計算 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) または [ データタイプを変換 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) する機能
-* [ マッピング UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) を活用して、ポイントアンドクリック UI でソースデータのフィールドを XDM にマッピングします
+* XDM に送信する前にデータレイヤーから [ 新しい値を計算 ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/functions) または [ データタイプを変換 ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/data-handling) する機能
+* [ マッピング UI](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep#create-mapping) を活用して、ポイントアンドクリック UI でソースデータのフィールドを XDM にマッピングします
 
 #### 短所
 
@@ -312,4 +312,4 @@ XDM の変数データ要素を作成するには、[ スキーマの設定 ](co
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

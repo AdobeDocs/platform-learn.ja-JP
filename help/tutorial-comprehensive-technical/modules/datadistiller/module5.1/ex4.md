@@ -179,7 +179,7 @@ limit 10;
 
 ### Adobe定義関数
 
-Adobeでは、標準 SQL 構文に一連の **Adobe定義関数** が追加され、エクスペリエンスデータをより深く理解できるようになりました。 次のクエリでは、これらの ADF 関数について説明します。 詳細と完全なリストについては、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html) を参照してください。
+Adobeでは、標準 SQL 構文に一連の **Adobe定義関数** が追加され、エクスペリエンスデータをより深く理解できるようになりました。 次のクエリでは、これらの ADF 関数について説明します。 詳細と完全なリストについては、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=ja) を参照してください。
 
 ### セッションの 3 番目のページとして「サービスをキャンセル」ページに到達する前に、サイト上でユーザーはどうしますか？
 

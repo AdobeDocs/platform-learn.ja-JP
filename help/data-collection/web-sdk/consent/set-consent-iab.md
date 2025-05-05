@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # IAB TCF 2.0 標準を使用した同意の設定
 
-Adobe Experience Platform Web SDKを使用して、IAB TCF 2.0 標準に従って同意値を設定する方法を説明します。 詳しくは、[Platform での IAB FCF 2.0 のサポート ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) に関するドキュメントを参照してください。
+Adobe Experience Platform Web SDKを使用して、IAB TCF 2.0 標準に従って同意値を設定する方法を説明します。 詳しくは、[Platform での IAB FCF 2.0 のサポート ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=ja) に関するドキュメントを参照してください。
 
 >[!NOTE]
 >

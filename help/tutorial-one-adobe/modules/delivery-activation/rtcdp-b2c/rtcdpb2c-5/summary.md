@@ -31,7 +31,7 @@ Adobe Experience Platform Data Collection により、最終的にブランド�
 
 - テクニカルブログ：[Adobe Experience Platform Web SDKとEdge Networkを使用した実装上の問題点の解決 ](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - テクニカルブログ：[Adobe Experience Platform Web SDKおよびEdge Networkを使用した web サイトのパフォーマンスの向上 ](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- ドキュメント：[Adobe Experience Platform Data Collection Server Side](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
+- ドキュメント：[Adobe Experience Platform Data Collection Server Side](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja#server-side-info)
 - ビデオ：[Adobe以外のTag Management ソリューションを使用したEdgeおよびAdobe Experience Platform Data Collection Server の実装 ](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
 
 ## 次の手順

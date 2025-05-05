@@ -189,7 +189,7 @@ Adobeは、Experience Platformの API を調べるのに役立つ豊富な [!DNL
 1. [!DNL Postman] への読み込み
 1. **スキーマレジストリ API/スキーマ/スキーマをリスト** を開きます。
 1. 「**パラメーター**」タブと「**ヘッダー**」タブを見て、以前に入力した環境変数の一部がどのように含まれているかを確認します。
-1. **ヘッダー/値を許可フィールド** は `application/vnd.adobe.xed-id+json` に設定されています。 スキーマレジストリ API には、これらの [ 指定された Accept ヘッダー値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) のいずれかが必要で、応答で異なる形式を提供します。
+1. **ヘッダー/値を許可フィールド** は `application/vnd.adobe.xed-id+json` に設定されています。 スキーマレジストリ API には、これらの [ 指定された Accept ヘッダー値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ja#accept) のいずれかが必要で、応答で異なる形式を提供します。
 1. 「**送信**」を選択して、最初の Platform API 呼び出しを行います。
 
 以下の図に示すように、サンドボックスでAdobeが提供する使用可能な XDM スキーマのリストを含む、`200 OK` 応答が成功することを願っています。

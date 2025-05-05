@@ -40,7 +40,7 @@ Chromeおよび Firefox 用のAdobe Experience Platform Debugger拡張機能は 
 
 Chrome拡張機能または Firefox アドオンをインストールすると、拡張機能バーにアイコン（![](assets/start-icon.jpg)）が追加されます。 このアイコンを選択して、拡張機能を開きます。
 
-[Adobe Experience Platform Debugger拡張機能の詳細と、すべてのAdobe web アプリケーションをデバッグする方法については ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 専用ガイドを参照してください。
+[Adobe Experience Platform Debugger拡張機能の詳細と、すべてのAdobe web アプリケーションをデバッグする方法については ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ja) 専用ガイドを参照してください。
 
 ## QA URL で Target アクティビティをプレビューする
 
@@ -52,7 +52,7 @@ at.js または Platform Web SDK に対し、`at_qa_mode` という名前のブ�
 >
 >Target の QA モード機能は、Platform Web SDK バージョン 2.13.0 以降でサポートされています。 ターゲット QA モードは、`sendEvent` 呼び出しで渡された `xdm.web.webPageDetails.URL` 値に基づいて有効になります。 この値を変更（すべての文字を小文字にするなど）すると、Target QA モードが正しく動作しなくなる可能性があります。
 
-[ ターゲットアクティビティ QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) について詳しくは、専用ガイドを参照してください。
+[ ターゲットアクティビティ QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=ja) について詳しくは、専用ガイドを参照してください。
 
 ## Target 実装のデバッグ
 
@@ -130,7 +130,7 @@ Adobe Experience Platform Debuggerで Platform Web SDK Target トレースを表
 - リクエストの詳細
 - プロファイルスナップショット
 
-Target のトレースについて詳しくは、[Target コンテンツ配信のデバッグ ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) に関する専用ガイドを参照してください。
+Target のトレースについて詳しくは、[Target コンテンツ配信のデバッグ ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=ja) に関する専用ガイドを参照してください。
 
 ### Assurance を使用したトラブルシューティング
 
@@ -181,4 +181,4 @@ Platform Web SDK `sendEvent` 呼び出しのリクエストペイロードと応
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

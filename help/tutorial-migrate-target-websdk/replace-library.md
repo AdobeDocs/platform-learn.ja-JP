@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->ここに示す例は例として示したものであり、実際の Target の実装は状況によって異なります。 既存の Target 実装でAdobeの Data Collection Tag Manager を使用している場合、詳しくは [Platform Web SDK Target 実装のチュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) も参照してください。
+>ここに示す例は例として示したものであり、実際の Target の実装は状況によって異なります。 既存の Target 実装でAdobeの Data Collection Tag Manager を使用している場合、詳しくは [Platform Web SDK Target 実装のチュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ja) も参照してください。
 
 
 ## Target 管理設定の確認
@@ -52,7 +52,7 @@ Platform Web SDK は、開発、ステージング、実稼動の各データス
 >
 >データストリーム設定で環境 ID が指定されていない場合、Target は、「**Hosts**」セクションで指定されているドメインと環境のマッピングを使用します。
 
-詳しくは、[ データストリーム設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) ガイドおよび Target [ ホスト ](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ja) ドキュメントを参照してください。
+詳しくは、[ データストリーム設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#target) ガイドおよび Target [ ホスト ](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ja) ドキュメントを参照してください。
 
 ## Platform Web SDK のデプロイ
 
@@ -213,9 +213,9 @@ at.js と同様に、Platform Web SDK ライブラリが非同期で読み込ま
 
 Adobeでは、ページ全体のパフォーマンスを最大限に高めるには、Platform Web SDK を非同期で実装することをお勧めします。 ただし、alloy.js ライブラリまたはタグ埋め込みコードが同期的に読み込まれる場合、事前非表示のスニペットは必要ありません。 代わりに、Platform Web SDK 設定で事前非表示スタイルが指定されます。
 
-同期実装の事前非表示スタイルは、[`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) オプションを使用して設定できます。 Platform Web SDK の設定については、次の節で説明します。
+同期実装の事前非表示スタイルは、[`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ja#prehidingStyle) オプションを使用して設定できます。 Platform Web SDK の設定については、次の節で説明します。
 
-Platform Web SDK によるちらつきの管理方法について詳しくは、ガイドの節 [ パーソナライズされたエクスペリエンスのためのちらつきの管理 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html) を参照してください。
+Platform Web SDK によるちらつきの管理方法について詳しくは、ガイドの節 [ パーソナライズされたエクスペリエンスのためのちらつきの管理 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=ja) を参照してください。
 
 ## Platform Web SDK の設定
 
@@ -274,7 +274,7 @@ Target に関連する注目すべき設定オプションの概要を次に示�
 | `thirdPartyCookiesEnabled` | アドビのサードパーティ Cookie の設定を有効にします。SDK は、訪問者 ID をサードパーティコンテキストに保持して、同じ訪問者 ID をサイト間で使用できるようにします。 複数のサイトがある場合は、このオプションを使用します。ただし、プライバシー上の理由から、このオプションが望ましくない場合があります。 | `true` |
 | `prehidingStyle` | パーソナライズされたコンテンツをサーバーから読み込む際に、Web ページのコンテンツ領域を非表示にする CSS スタイル定義を作成するために使用します。これは、SDK の同期デプロイメントでのみ使用されます。 | `body { opacity: 0 !important }` |
 
-オプションの完全なリストについては、[Platform Web SDK の設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) ガイドを参照してください。
+オプションの完全なリストについては、[Platform Web SDK の設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ja) ガイドを参照してください。
 
 ## 実装の例
 
@@ -400,4 +400,4 @@ Platform Web SDK が適切に配置されると、サンプルページは次の
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

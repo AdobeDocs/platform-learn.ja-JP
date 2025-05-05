@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # AI アシスタントを使用したオンボーディング時間の短縮
 
-AI アシスタントを使用して新機能をすばやく追加し、オンボーディング時間を短縮する方法を説明します。 詳しくは、[AI アシスタントの質問ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions) を参照してください。
+AI アシスタントを使用して新機能をすばやく追加し、オンボーディング時間を短縮する方法を説明します。 詳しくは、[AI アシスタントの質問ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/questions) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)

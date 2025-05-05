@@ -17,6 +17,6 @@ ht-degree: 33%
 
 # 列挙フィールドと推奨値を使用する
 
-セグメントビルダーインターフェイスで列挙フィールドと推奨値を使用して、わかりやすいドロップダウンメニューを作成する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html) を参照してください。
+セグメントビルダーインターフェイスで列挙フィールドと推奨値を使用して、わかりやすいドロップダウンメニューを作成する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)

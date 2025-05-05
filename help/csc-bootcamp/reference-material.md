@@ -39,17 +39,17 @@ Adobike はまた、顧客が自転車をオンラインで簡単に注文でき
 
 ### Adobe Experience Manager
 
-- [Creative Cloudサービスを使用したコンテンツ自動処理の概要 ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
-- [AEM Commerce as a Cloud Service を使い始める](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
-- [Adobe Experience Manager as a Headless CMS の概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
+- [Creative Cloudサービスを使用したコンテンツ自動処理の概要 ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=ja)
+- [AEM Commerce as a Cloud Service を使い始める](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ja)
+- [Adobe Experience Manager as a Headless CMS の概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
 
 ### Adobe Express
 
-- [Adobe Expressテンプレートの概要 ](https://helpx.adobe.com/express/using/work-with-templates.html)
+- [Adobe Expressテンプレートの概要 ](https://helpx.adobe.com/jp/express/using/work-with-templates.html)
 
 ### Adobe Workfront
 
-- [ 製品ドキュメントのAdobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=en)
+- [ 製品ドキュメントのAdobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=ja)
 - [AEM AssetsのWorkfront](https://exchange.adobe.com/apps/ec/101385/workfront-for-aem-assets)
 
 

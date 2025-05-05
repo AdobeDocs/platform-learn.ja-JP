@@ -16,6 +16,6 @@ ht-degree: 16%
 
 # 購入合計の計算属性を作成
 
-計算属性を使用して、複数の販売チャネルをまたいでユーザーが行った購入額を合計する方法を説明します。 Web サイト、モバイルアプリ、実店舗で 1 人の顧客が購入する場合もあります。 計算済み属性機能を使用すると、これらのチャネルをまたいで顧客の購入額を合計し、この合計を使用してオーディエンスを定義したり、他のパーソナライゼーションを行ったりできます。 詳しくは、[ 計算属性 UI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?) を参照してください。
+計算属性を使用して、複数の販売チャネルをまたいでユーザーが行った購入額を合計する方法を説明します。 Web サイト、モバイルアプリ、実店舗で 1 人の顧客が購入する場合もあります。 計算済み属性機能を使用すると、これらのチャネルをまたいで顧客の購入額を合計し、この合計を使用してオーディエンスを定義したり、他のパーソナライゼーションを行ったりできます。 詳しくは、[ 計算属性 UI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?lang=ja&) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on&enablevpops)

@@ -19,11 +19,11 @@ XDM データが platform に送信されていることがわかります。 [ 
 
 ## Analytics での変数のマッピング
 
-Adobe Experience Platform [!DNL Web SDK] は、特定の値を自動的にマッピングし、Web SDKを使用して Analytics の新しい実装をできる限り迅速に行います。 自動的にマッピングされた変数が [ ここ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection) に一覧表示されます。
+Adobe Experience Platform [!DNL Web SDK] は、特定の値を自動的にマッピングし、Web SDKを使用して Analytics の新しい実装をできる限り迅速に行います。 自動的にマッピングされた変数が [ ここ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=ja#data-collection) に一覧表示されます。
 
-Adobe Analyticsに自動的にマッピングされない XDM データの場合は、[context data](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja) を使用して [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) に一致させることができます。 その後、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) を使用して Analytics にマッピングし、Analytics 変数を設定できます。 コンテキストデータと処理ルールは、以前に Analytics を使用したことがある概念ですが、新しい概念である場合は、詳細について心配する必要はありません。
+Adobe Analyticsに自動的にマッピングされない XDM データの場合は、[context data](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja) を使用して [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) に一致させることができます。 その後、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=ja) を使用して Analytics にマッピングし、Analytics 変数を設定できます。 コンテキストデータと処理ルールは、以前に Analytics を使用したことがある概念ですが、新しい概念である場合は、詳細について心配する必要はありません。
 
-また、デフォルトのアクションと商品リストのセットを使用して、AEP Web SDKでデータを送信または取得することもできます。 詳細については、[ 製品 ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection) を参照してください。
+また、デフォルトのアクションと商品リストのセットを使用して、AEP Web SDKでデータを送信または取得することもできます。 詳細については、[ 製品 ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=ja#data-collection) を参照してください。
 
 ### コンテキストデータ
 
@@ -54,7 +54,7 @@ Analytics で使用するために、XDM データはドット表記を使用し
 
 ### 処理ルール
 
-Edge Network で収集されたすべてのデータには、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) 経由でアクセスできます。 Analytics では、処理ルールを使用してコンテキストデータを Analytics 変数に組み込むことができます。
+Edge Network で収集されたすべてのデータには、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=ja) 経由でアクセスできます。 Analytics では、処理ルールを使用してコンテキストデータを Analytics 変数に組み込むことができます。
 
 ## Audience Manager オン ザ Experience Platform Edge Network
 

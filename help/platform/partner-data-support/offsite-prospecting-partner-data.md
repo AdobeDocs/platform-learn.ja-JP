@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # [!DNL Real-Time CDP] のパートナーデータを使用したオフサイト予測ユースケースのサポート
 
-訪問前のターゲティングのために、[!DNL Real-Time CDP] でパートナーから新しい見込み客を取り込むために使用されるワークフローについて説明します。 詳しくは、[ 見込み客のユースケースを通じて新規顧客を獲得する ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) ドキュメントを参照してください。
+訪問前のターゲティングのために、[!DNL Real-Time CDP] でパートナーから新しい見込み客を取り込むために使用されるワークフローについて説明します。 詳しくは、[ 見込み客のユースケースを通じて新規顧客を獲得する ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)

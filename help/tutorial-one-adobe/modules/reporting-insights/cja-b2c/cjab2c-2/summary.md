@@ -36,7 +36,7 @@ Adobe Experience Platformには、既存のテクノロジースタックと簡�
 
 ## これを確認する
 
-- ヘルプセンター：[Source コネクタ - Google BigQuery コネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
+- ヘルプセンター：[Source コネクタ - Google BigQuery コネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=ja)
 - Experience Platform ドキュメント：[Customer Journey Analytics – 製品ドキュメント ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja)
 
 ## 次の手順

@@ -35,7 +35,7 @@ Decisioning 拡張機能を使用すると、
 
 ## エンティティパラメーター
 
-[ エンティティパラメーター ](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes) は、Target Recommendations の行動データと追加のカタログ情報を渡すために使用されます。 プロファイルパラメーターと同様に、ほとんどのエンティティパラメーターは `data.__adobe.target` オブジェクトの下に渡す必要があります。 唯一の例外は、`xdm.productListItems` 配列が存在する場合で、最初の `SKU` 値が `entity.id` として使用されます。
+[ エンティティパラメーター ](https://experienceleague.adobe.com/ja/docs/target/using/recommendations/entities/entity-attributes) は、Target Recommendations の行動データと追加のカタログ情報を渡すために使用されます。 プロファイルパラメーターと同様に、ほとんどのエンティティパラメーターは `data.__adobe.target` オブジェクトの下に渡す必要があります。 唯一の例外は、`xdm.productListItems` 配列が存在する場合で、最初の `SKU` 値が `entity.id` として使用されます。
 
 適切にデータを取得するには、特定の項目のエンティティパラメーターの先頭に `entity.` を付ける必要があります。 Recommendations アルゴリズムの予約済みの `cartIds` と `excludedIds` のパラメーターにはプレフィックスを付けてはいけません。また、それぞれの値には、エンティティ ID のコンマ区切りリストを含める必要があります。
 
@@ -55,7 +55,7 @@ Target では、単一の顧客 ID を使用して、デバイスやシステム
 
 | at.js パラメーターの例 | Platform Web SDK オプション | メモ |
 | --- | --- | --- |
-| `at_property` | なし | プロパティトークンは [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target) で設定され、`sendEvent` 呼び出しでは設定できません。 |
+| `at_property` | なし | プロパティトークンは [datastream](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#target) で設定され、`sendEvent` 呼び出しでは設定できません。 |
 | `pageName` | `xdm.web.webPageDetails.name` または <br> `data.__adobe.target.pageName` | ターゲット mbox パラメーターは、`xdm` オブジェクトの一部または `data.__adobe.target` オブジェクトの一部として渡すことができます。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 適切にマッピングするには、すべての Target プロファイルパラメーターを `data` オブジェクトの一部として渡し、`profile.` のプレフィックスを付ける必要があります。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | `data` オブジェクトの一部として渡す必要がある Target のカテゴリ親和性機能に使用される予約済みのパラメーター。 |
@@ -64,11 +64,11 @@ Target では、単一の顧客 ID を使用して、デバイスやシステム
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | カスタムエンティティパラメーターは、Recommendations 製品カタログの更新に使用されます。 これらのカスタムパラメーターは、`data` オブジェクトの一部として渡す必要があります。 |
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースのレコメンデーションアルゴリズムに使用します。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Recommendations デザインで特定のエンティティ ID が返されるのを防ぐために使用します。 |
-| `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[ データストリームの Target 設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid) で指定する必要があります。 |
+| `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[ データストリームの Target 設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid) で指定する必要があります。 |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br> または <br> `data.__adobe.target.orderId` | Target コンバージョントラッキングの一意の順序を識別するために使用します。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br> または <br> `data.__adobe.target.orderTotal` | Target のコンバージョンと最適化の目標で、注文の合計をトラッキングするために使用します。 |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （`commerce.purchases.value` が `1` に設定されている場合） <br>OR<br> `data.__adobe.target.productPurchasedId` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [ カスタムスコア ](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score) アクティビティ目標に使用します。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [ カスタムスコア ](https://experienceleague.adobe.com/ja/docs/target/using/activities/success-metrics/capture-score) アクティビティ目標に使用します。 |
 
 {style="table-layout:auto"}
 
@@ -206,4 +206,4 @@ let targetParameters = TargetParameters(parameters: mboxParameters, profileParam
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能から Decisioning 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) に投稿してお知らせください。
+>アドビは、Target 拡張機能から Decisioning 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。

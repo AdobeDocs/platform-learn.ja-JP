@@ -41,7 +41,7 @@ AEM as a Cloud Serviceは、次の 3 つの強力な機能を提供すること�
 1. 配信用のコンテンツ API
    - AEM GraphQL API は、コンテンツフラグメント配信をサポートします。
    - AEM Assets REST API は、コンテンツフラグメントの CRUD 操作をサポートします。
-   - ダイレクトコンテンツ配信は、コンテンツフラグメントコアコンポーネントの [JSON 書き出し ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en) を使用して実行することもできます。
+   - ダイレクトコンテンツ配信は、コンテンツフラグメントコアコンポーネントの [JSON 書き出し ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja) を使用して実行することもできます。
 
 ## 演習
 

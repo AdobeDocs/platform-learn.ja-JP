@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # B2B editionのReal-Time Customer Data Platform（CDP）の概要
 
-B2B マーケターがシステム全体で人物とアカウントのプロファイルを統合し、顧客を完全に理解する方法について説明します。 詳しくは、[Real-Time CDP B2B edition ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html) を参照してください。
+B2B マーケターがシステム全体で人物とアカウントのプロファイルを統合し、顧客を完全に理解する方法について説明します。 詳しくは、[Real-Time CDP B2B edition ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)

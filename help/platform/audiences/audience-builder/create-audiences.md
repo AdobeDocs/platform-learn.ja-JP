@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # オーディエンスを作成
 
-Adobe Experience Platformでオーディエンスを作成する方法を説明します。 オーディエンスルールを作成し、リアルタイム顧客プロファイルに適用して、カスタマーエクスペリエンスを強化するオーディエンスを生成します。 製品ドキュメントについて詳しくは、[UI でのセグメントの作成 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ja) および [API を使用したセグメントの作成 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html) を参照してください。
+Adobe Experience Platformでオーディエンスを作成する方法を説明します。 オーディエンスルールを作成し、リアルタイム顧客プロファイルに適用して、カスタマーエクスペリエンスを強化するオーディエンスを生成します。 製品ドキュメントについて詳しくは、[UI でのセグメントの作成 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ja) および [API を使用したセグメントの作成 ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

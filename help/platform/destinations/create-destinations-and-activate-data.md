@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 宛先の作成とデータのアクティブ化
 
-AdobeのReal-Time Customer Data Platformで宛先を作成しデータを有効化する方法について説明します。 製品ドキュメントについて詳しくは、[ 宛先へのプロファイルとセグメントのアクティブ化 ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)、[ 宛先の接続方法 ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html) および [API を使用したストリーミング宛先への接続とデータのアクティブ化 ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html) を参照してください。
+AdobeのReal-Time Customer Data Platformで宛先を作成しデータを有効化する方法について説明します。 製品ドキュメントについて詳しくは、[ 宛先へのプロファイルとセグメントのアクティブ化 ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html?lang=ja)、[ 宛先の接続方法 ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html?lang=ja) および [API を使用したストリーミング宛先への接続とデータのアクティブ化 ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29710?learn=on&enablevpops)
 

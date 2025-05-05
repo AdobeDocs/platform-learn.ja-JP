@@ -20,6 +20,6 @@ ht-degree: 0%
 
 接続を設定し、Cloud Service の宛先を使用したデータセット書き出しにワークフローを使用する方法について説明します。 この機能のメリットとユースケースについても説明します。
 
-詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) を参照してください。
+詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

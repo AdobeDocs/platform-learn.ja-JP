@@ -39,7 +39,7 @@ ht-degree: 66%
 
 ## これを確認する
 
-- インテリジェントサービスの概要：[https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- インテリジェントサービスの概要：[https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja)
 
 ## 次の手順
 

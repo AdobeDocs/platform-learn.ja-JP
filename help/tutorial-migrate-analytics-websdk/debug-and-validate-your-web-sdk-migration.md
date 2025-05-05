@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Adobe Experience Platform Debugger
 
-このデバッガーはブラウザー拡張機能で、Chrome ストアから入手できます。 デバッガーのダウンロード方法と使用方法について説明した [ ビデオチュートリアル ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview) があります。基本的な使用方法を知るには、まずそれを実行することをお勧めします。
+このデバッガーはブラウザー拡張機能で、Chrome ストアから入手できます。 デバッガーのダウンロード方法と使用方法について説明した [ ビデオチュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview) があります。基本的な使用方法を知るには、まずそれを実行することをお勧めします。
 
 デバッガーを起動して実行したら、それを使用して、サイトとEdge Networkからのデータのフローが正しいことを確認できます。 このチュートリアルは引き続きかなり基本的な用途で使用できますが、データを確認するにはデバッガーを最大限に使用してください。
 

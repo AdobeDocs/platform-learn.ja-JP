@@ -49,6 +49,6 @@ ht-degree: 2%
 
 * [Experience Platform チュートリアル](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=ja)
 * [Experience Platform ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ja)
-* [Experience Leagueコース ](https://experienceleague.adobe.com/?lang=ja#dashboard/learning)
+* [Experience Leagueコース ](https://experienceleague.adobe.com/ja?lang=ja#dashboard/learning)
 
 Adobe Experience Platformでの旅に御協力いただき、ありがとうございます。

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Experience Platformアシュランスを使用した Web SDK 実装の検証
 
-Adobe Experience Platform Assurance は、データの収集方法やエクスペリエンスの提供方法を検査、配達確認、シミュレートおよび検証するのに役立つ機能です。 詳しくは、[Adobe保証 ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home) を参照してください。
+Adobe Experience Platform Assurance は、データの収集方法やエクスペリエンスの提供方法を検査、配達確認、シミュレートおよび検証するのに役立つ機能です。 詳しくは、[Adobe保証 ](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home) を参照してください。
 
 
 ## 学習目標
@@ -96,4 +96,4 @@ XDM オブジェクトがページで実行され、データ収集の検証方�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

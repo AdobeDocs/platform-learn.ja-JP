@@ -83,7 +83,7 @@ ht-degree: 1%
 
 実践的な演習を開始する前に、このチュートリアルの背後にあるアーキテクチャを確認してください。 この Bootcamp では、Adobe Experience Platformの様々な機能について詳しく説明し、様々なソースや宛先にわたる複数の統合についても説明します。 このチュートリアルの背後にあるアーキテクチャや、大規模法人エコシステムにおけるAdobe Experience Platformの全体的な位置を適切に理解するには、アーキテクチャに関するビデオと図を確認することから始めます。
 
-[ アーキテクチャ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en) に移動します。
+[ アーキテクチャ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=ja) に移動します。
 
 ## ビデオ
 
@@ -93,7 +93,7 @@ Experience Makers Bootcamp の主な目的は、大規模なパーソナライ�
 
 その他にも、bootcamp の要素や、Adobe Experience PlatformとAdobe以外のアプリケーションとの強力な統合機能を紹介するビデオがいくつか作成されています。 以下のリンクをクリックして、それらのビデオの概要を参照してください。
 
-[ ビデオ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en) に移動します。
+[ ビデオ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=ja) に移動します。
 
 ## YouTube
 

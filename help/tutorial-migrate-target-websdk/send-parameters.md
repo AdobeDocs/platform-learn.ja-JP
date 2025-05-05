@@ -113,7 +113,7 @@ Platform Web SDK は、追加の関数を必要とせずにデータを送信す
 
 | at.js パラメーターの例 | Platform Web SDK オプション | メモ |
 | --- | --- | --- |
-| `at_property` | なし | プロパティトークンは [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) で設定され、`sendEvent` 呼び出しでは設定できません。 |
+| `at_property` | なし | プロパティトークンは [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#target) で設定され、`sendEvent` 呼び出しでは設定できません。 |
 | `pageName` | `xdm.web.webPageDetails.name` | すべての Target mbox パラメーターは、`xdm` オブジェクトの一部として渡され、XDM ExperienceEvent クラスを使用してスキーマに準拠する必要があります。 Mbox パラメーターを `data` オブジェクトの一部として渡すことはできません。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 適切にマッピングするには、すべての Target プロファイルパラメーターを `data` オブジェクトの一部として渡し、`profile.` のプレフィックスを付ける必要があります。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | `data` オブジェクトの一部として渡す必要がある Target のカテゴリ親和性機能に使用される予約済みのパラメーター。 |
@@ -122,11 +122,11 @@ Platform Web SDK は、追加の関数を必要とせずにデータを送信す
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | カスタムエンティティパラメーターは、Recommendations商品カタログの更新に使用されます。 これらのカスタムパラメーターは、`data` オブジェクトの一部として渡す必要があります。 |
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースのレコメンデーションアルゴリズムに使用します。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Recommendations デザインで特定のエンティティ ID が返されるのを防ぐために使用します。 |
-| `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[ データストリームの Target 設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) で指定する必要があります。 |
+| `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[ データストリームの Target 設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=ja) で指定する必要があります。 |
 | `orderId` | `xdm.commerce.order.purchaseID` | Target コンバージョントラッキングの一意の順序を識別するために使用します。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Target のコンバージョンと最適化の目標で、注文の合計をトラッキングするために使用します。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br> または <br> `xdm.productListItems[0-n].SKU` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 詳しくは、以下の [ エンティティパラメーター ](#entity-parameters) の節を参照してください。 |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [ カスタムスコア ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) アクティビティ目標に使用します。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [ カスタムスコア ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=ja) アクティビティ目標に使用します。 |
 
 {style="table-layout:auto"}
 
@@ -169,7 +169,7 @@ alloy("sendEvent", {
 
 ![XDM オブジェクトデータ要素の XDM フィールドへのマッピング ](assets/params-tags-pageName.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -223,7 +223,7 @@ alloy("sendEvent", {
 
 ![ データ要素でのデータオブジェクトの定義 ](assets/params-tags-dataObject.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![ データオブジェクトを送信イベントに含める ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -231,7 +231,7 @@ alloy("sendEvent", {
 
 ## エンティティパラメーター
 
-エンティティパラメーターは、Target Recommendationsの行動データと追加のカタログ情報を渡すために使用されます。 at.js でサポートされているすべての [ エンティティパラメーター ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) も、Platform Web SDK でサポートされています。 プロファイルパラメーターと同様に、すべてのエンティティパラメーターは、Platform Web SDK `sendEvent` コマンドペイロードの `data.__adobe.target` オブジェクトの下に渡す必要があります。
+エンティティパラメーターは、Target Recommendationsの行動データと追加のカタログ情報を渡すために使用されます。 at.js でサポートされているすべての [ エンティティパラメーター ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ja) も、Platform Web SDK でサポートされています。 プロファイルパラメーターと同様に、すべてのエンティティパラメーターは、Platform Web SDK `sendEvent` コマンドペイロードの `data.__adobe.target` オブジェクトの下に渡す必要があります。
 
 適切にデータを取得するには、特定の項目のエンティティパラメーターの先頭に `entity.` を付ける必要があります。 Recommendations アルゴリズムの予約済みの `cartIds` と `excludedIds` のパラメーターにはプレフィックスを付けてはいけません。また、それぞれの値には、エンティティ ID のコンマ区切りリストを含める必要があります。
 
@@ -277,7 +277,7 @@ alloy("sendEvent", {
 
 ![ データ要素でのデータオブジェクトの定義 ](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![ データオブジェクトを送信イベントに含める ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ alloy("sendEvent", {
 
 ![XDM オブジェクトデータ要素の XDM フィールドへのマッピング ](assets/params-tags-purchase.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
@@ -604,4 +604,4 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

@@ -21,7 +21,7 @@ ht-degree: 73%
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
 >
 > * Platform launch（クライアントサイド）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** になりました
+> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
 > * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
@@ -44,7 +44,7 @@ ht-degree: 73%
 
    ![デバッガーを使用して、実際の Web サイトで Audience Manager サブドメインを検索する](images/aam-debugger-partner.png)
 
-Audience Manager をまだ実装していない場合は、次の手順に従って [Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)してください。
+Audience Manager をまだ実装していない場合は、次の手順に従って [Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=ja)してください。
 
 ## 実装オプション
 
@@ -95,7 +95,7 @@ Adobe Analytics から Adobe Audience Manager へのデータの転送を開始�
 >
 >SSF はレポートスイートごとに有効にする必要があるので、実際のサイトのレポートスイートに SSF をデプロイする場合は、実際のレポートスイートに対してこの手順を繰り返すことを忘れないでください。
 >
->また、SSF オプションが灰色表示になっている場合は、このオプションを有効にするには、レポートスイートを Experience Cloud 組織にマッピングする必要があります。これについては、[ドキュメント](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)で説明しています。
+>また、SSF オプションが灰色表示になっている場合は、このオプションを有効にするには、レポートスイートを Experience Cloud 組織にマッピングする必要があります。これについては、[ドキュメント](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ja)で説明しています。
 
 この手順が完了し、Adobe Experience Platform ID サービスを有効にしている場合、データは Analytics から AAM に転送されます。ただし、AAMからページ（およびAudience Analytics機能を介した Analytics にも）に正しく応答が返されるようにプロセスを完了するには、タグで次の手順も完了する必要があります。 これはごく簡単なので、心配無用です。
 
@@ -117,7 +117,7 @@ Adobe Analytics から Adobe Audience Manager へのデータの転送を開始�
 
 1. 「**[!UICONTROL Analytics データをAudience Managerと自動的に共有]**」チェックボックスをオンにします。 これにより、Audience Manager の「モジュール」（コード）が Analytics `AppMeasurement.js` の実装に追加されます。
 
-1. 「Audience Manager サブドメイン」（「パートナー名」、「パートナー ID」または「パートナーサブドメイン」とも呼ばれます）を追加します。[Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)するには、次の手順に従います。
+1. 「Audience Manager サブドメイン」（「パートナー名」、「パートナー ID」または「パートナーサブドメイン」とも呼ばれます）を追加します。[Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=ja)するには、次の手順に従います。
 
 1. 「**[!UICONTROL ライブラリおよびビルドに保存]**」をクリックします
 

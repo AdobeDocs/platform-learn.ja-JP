@@ -29,12 +29,12 @@ ht-degree: 27%
    + [ライブラリのビルドと公開](tags/build-and-publish-a-library.md)
    + [Web SDKを使用した web サイトへの実装](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Solution SDK を使用して web サイトに実装](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ja){target="_blank"}
-   + [ モバイルアプリへの実装](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [ モバイルアプリへの実装](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web SDK{#web-sdk}
    + [概要](web-sdk/overview.md)
    + [デモ](web-sdk/demo.md)
    + [ 実装チュートリアル（タグ付き）](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Target の移行チュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Target の移行チュートリアル](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
    + [Analytics の移行チュートリアル](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + 同意 {#consent}
       + [概要](web-sdk/consent/overview.md)
@@ -46,9 +46,9 @@ ht-degree: 27%
    + [概要](mobile-sdk/overview.md)
    + [モバイルプロパティの作成](mobile-sdk/create-mobile-properties.md)
    + [依存関係マネージャーの使用](mobile-sdk/use-dependency-managers.md)
-   + [ モバイルアプリへの実装](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [ モバイルアプリへの実装](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
-   + [Target の移行チュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
+   + [Target の移行チュートリアル](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + サーバー API{#server-api}
    + [概要](server-api/overview.md)
    + [API の基本](server-api/introduction.md)

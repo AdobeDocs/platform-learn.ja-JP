@@ -22,7 +22,7 @@ Adobe Experience Platform Web SDKは、Adobe Experience Cloudのお客様がAdob
 >同様の移行チュートリアルを次のユーザーが利用できます。
 >
 > * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
-> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
 
 >[!CAUTION]
 >
@@ -34,9 +34,9 @@ Adobe Experience Platform Web SDKは、Adobe Experience Cloudのお客様がAdob
 
 スタンドアロンの at.js ライブラリと比較した場合の Platform Web SDKの利点には、次のようなものがあります。
 
-* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization) からのオーディエンスの共有を高速化
-* [Offer Decisioning配信をサポートするための Target とJourney Optimizerの統合 ](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
-* [ ファーストパーティ ID](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) を使用して ECID を生成する機能により、訪問者の識別を延長
+* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/destinations/target/next-hit-personalization) からのオーディエンスの共有を高速化
+* [Offer Decisioning配信をサポートするための Target とJourney Optimizerの統合 ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/ajo/offer-decision)
+* [ ファーストパーティ ID](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) を使用して ECID を生成する機能により、訪問者の識別を延長
 * 設置面積の縮小によるページ速度指標の改善
 * 開発者向けの実装の柔軟性の向上
 
@@ -63,14 +63,14 @@ Target をご利用のお客様が移行する最大のメリットは、おそ�
 このチュートリアルを完了するには、まず次の操作を行う必要があります。
 
 * 現在の Target at.js の実装の技術的な理解
-* Target インスタンスに [ 編集者または発行者の役割 ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) があることを確認して、例を自分で試せるようにします
+* Target インスタンスに [ 編集者または発行者の役割 ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=ja#section_8C425E43E5DD4111BBFC734A2B7ABC80) があることを確認して、例を自分で試せるようにします
 * Adobe Targetでアクティビティを設定する方法を理解する 復習が必要な場合は、次のチュートリアルとガイドがこのレッスンに役立ちます。
-   * [Visual Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [ フォームベースの Experience Composer の使用 ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [エクスペリエンスのターゲット設定アクティビティの作成](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [Visual Experience Composer の使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=ja)
+   * [ フォームベースの Experience Composer の使用 ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=ja)
+   * [エクスペリエンスのターゲット設定アクティビティの作成](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=ja)
 
 準備が整ったら、移行を成功させるための最初の手順は、[ 移行プロセスについて、および at.js と Platform Web SDKの違いについて学ぶ ](migration-overview.md) です。
 
 >[!NOTE]
 >
->アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # [!DNL B2B] および [!DNL B2P] のアカウントオーディエンスを作成してアクティブ化する
 
-アカウントオーディエンスの作成とアクティブ化など、[!DNL Real-Time Customer Data Platform] の [!DNL B2B] エディションと [!DNL B2P] エディションのAccount-Based Marketing機能について説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html) を参照してください。
+アカウントオーディエンスの作成とアクティブ化など、[!DNL Real-Time Customer Data Platform] の [!DNL B2B] エディションと [!DNL B2P] エディションのAccount-Based Marketing機能について説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

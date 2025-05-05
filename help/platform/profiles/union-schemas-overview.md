@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 結合スキーマの概要
 
-このビデオでは、Adobe Experience Platformのリアルタイム顧客プロファイルで使用される結合スキーマの概要を説明します。 結合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの融合を確認できます。 リアルタイム顧客プロファイルは、結合スキーマを使用して、各顧客の全体像を作成します。 詳しくは、[ 結合スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html) を参照してください。
+このビデオでは、Adobe Experience Platformのリアルタイム顧客プロファイルで使用される結合スキーマの概要を説明します。 結合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの融合を確認できます。 リアルタイム顧客プロファイルは、結合スキーマを使用して、各顧客の全体像を作成します。 詳しくは、[ 結合スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)

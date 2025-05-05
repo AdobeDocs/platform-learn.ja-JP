@@ -176,7 +176,7 @@ Adobe CommerceをAEMと統合して使用する場合、生成された概要か
 
 >[!NOTE]
 >
-> ライブコピーの詳細については、 「ライブコピー [ 作成と同期」を参照してください ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=en)。
+> ライブコピーの詳細については、 「ライブコピー [ 作成と同期」を参照してください ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=ja)。
 
 - 完了すると、web サイトで使用可能なストアが表示されます。 選択して作成\> ページをクリックし、インスピレーションを得る製品ページを作成します。
 

@@ -35,7 +35,7 @@ Web サイトデータをAdobe Analyticsにルーティングできるように�
 
    >[!NOTE]
    >
-   >[ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep) 機能を使用する場合にのみ、スキーマを選択する必要があります。このチュートリアルでは、この機能を使用しません。 詳しくは、リンクを参照してください。
+   >[ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/edge-network/data-prep) 機能を使用する場合にのみ、スキーマを選択する必要があります。このチュートリアルでは、この機能を使用しません。 詳しくは、リンクを参照してください。
 
 1. 「**[!UICONTROL 保存]**」を選択します
 

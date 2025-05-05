@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Web SDKを使用したJourney Optimizer web チャネルの設定
 
-Adobe Experience Platform Web SDKを使用してAdobe Journey Optimizer[web チャネル ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) を実装する方法について説明します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
+Adobe Experience Platform Web SDKを使用してAdobe Journey Optimizer[web チャネル ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/web/get-started-web) を実装する方法について説明します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
 
 このレッスンに従うと、Journey Optimizerのユーザーは、Journey Optimizer web デザイナーを使用した高度なオンラインパーソナライゼーションのために web チャネルを使用できるようになります。
 
@@ -52,7 +52,7 @@ Adobe Experience Platform Web SDKを使用してAdobe Journey Optimizer[web チ�
   > 1. web サイトは iframe 内に埋め込まれます。
   > 1. 顧客の QA またはステージサイトは、外部からアクセスできません（内部サイトです）。
 
-* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合は、[ このコンテンツを公開するためのサブドメインを設定 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) する必要があります。
+* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合は、[ このコンテンツを公開するためのサブドメインを設定 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) する必要があります。
 * コンテンツ実験機能を使用する場合は、web データセットもレポート設定に含まれていることを確認してください。
 * 現在、web プロパティで web チャネルキャンペーンのオーサリングと配信を可能にする、次の 2 種類の実装がサポートされています。
    * クライアント側のみ：Web サイトを変更するには、Adobe Experience Platform Web SDKを実装する必要があります。
@@ -123,7 +123,7 @@ Adobe Experience Platform サービスは既にデータストリームに追加
 
 Web チャネルキャンペーン内でコンテンツ実験を使用するには、使用する web データセットがレポート設定にも含まれていることを確認する必要があります。 Journey Optimizer レポートシステムは、データセットを読み取り専用で使用して、標準のコンテンツ実験レポートを生成します。
 
-[ コンテンツ実験レポート用のデータセットの追加について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)。
+[ コンテンツ実験レポート用のデータセットの追加について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)。
 
 ## ユースケースの概要 – ロイヤルティ報酬
 
@@ -302,7 +302,7 @@ Adobe Experience Platform Debugger拡張機能はChromeと Firefox の両方で�
 
 Luma サイトでデバッガーを使用すると、実稼動環境での web チャネルエクスペリエンスを検証できます。 これは、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
-[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)。
+[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview)。
 
 デバッガーを使用して検証を開始するには：
 
@@ -339,4 +339,4 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

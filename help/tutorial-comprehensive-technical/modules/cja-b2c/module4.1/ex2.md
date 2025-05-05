@@ -82,7 +82,7 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 ユーザー ID フィールドの値が対応している限り、ユーザー ID フィールドの名前は重要ではありません。 あるデータセットに `email` が含まれ、別のデータセットに `emailAddress` が含まれ、これがユーザー ID として定義されているとします。 両方のデータセット `delaigle@adobe.com` 人物 ID フィールドの値が同じ場合、CJA はデータをステッチできます。
 
-CJA に関する FAQ をここで確認し、ID ステッチのニュアンスを理解します。[FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
+CJA に関する FAQ をここで確認し、ID ステッチのニュアンスを理解します。[FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja)。
 
 ### ユーザー ID を使用したデータのステッチ
 

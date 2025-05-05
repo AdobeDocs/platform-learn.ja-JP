@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # データベースソースコネクタを使用したデータの取り込み
 
-このビデオでは、データベースソースからAdobe Experience Platformのリアルタイム顧客プロファイルとエクスペリエンスデータレイクにデータをシームレスかつスケーラブルに一括で取り込む方法について説明します。 製品ドキュメントについて詳しくは、Source コネクタの概要ページの [database](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) または [Google Big Query ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html) を参照してください。
+このビデオでは、データベースソースからAdobe Experience Platformのリアルタイム顧客プロファイルとエクスペリエンスデータレイクにデータをシームレスかつスケーラブルに一括で取り込む方法について説明します。 製品ドキュメントについて詳しくは、Source コネクタの概要ページの [database](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#database) または [Google Big Query ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)

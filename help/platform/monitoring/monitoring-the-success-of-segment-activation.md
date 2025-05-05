@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # セグメントアクティベーションの成功の監視
 
-セグメントプロファイルをアクティベーションパートナーに送信する場合は、このデータ転送の成功に関する情報を確認する必要があります。特に、問題を修正できるようにするために重要です。 このビデオでは、宛先へのセグメントのフローを監視する 2 つの主な方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en) を参照してください。
+セグメントプロファイルをアクティベーションパートナーに送信する場合は、このデータ転送の成功に関する情報を確認する必要があります。特に、問題を修正できるようにするために重要です。 このビデオでは、宛先へのセグメントのフローを監視する 2 つの主な方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
 

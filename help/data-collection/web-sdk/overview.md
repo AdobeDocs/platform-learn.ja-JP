@@ -26,7 +26,7 @@ Adobe Experience Platform Web SDK および Edge Network により、1 つの Ja
 >
 >このビデオは、Adobe Summit 2020 セッション *[Alloy.js を満たし、eVarまたは Mbox を二度とタグ付けしない ](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)* の抜粋です。
 >
->このビデオで説明するサーバーサイド転送機能は、ライセンスを取得したすべての顧客が一般に利用できるようになりました。 [ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) を参照してください。
+>このビデオで説明するサーバーサイド転送機能は、ライセンスを取得したすべての顧客が一般に利用できるようになりました。 [ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
 
 ## その他のリソース
 

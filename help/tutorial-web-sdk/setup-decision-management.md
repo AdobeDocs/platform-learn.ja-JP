@@ -56,7 +56,7 @@ Platform Web SDK を使用して、Adobe Journey Optimizerの意思決定管理�
 
 ## 意思決定管理へのアクセスの許可
 
-意思決定管理機能へのアクセス権を付与するには、**製品プロファイル** を作成し、対応する権限をユーザーに割り当てる必要があります。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)。
+意思決定管理機能へのアクセス権を付与するには、**製品プロファイル** を作成し、対応する権限をユーザーに割り当てる必要があります。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)。
 
 ## データストリームの設定
 
@@ -339,7 +339,7 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
 
 ### ロイヤルティオファーのテスト
 
-1. シミュレーションに使用するテストプロファイルを選択します。 **プロファイルを管理** をクリックします。 [ オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください ](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
+1. シミュレーションに使用するテストプロファイルを選択します。 **プロファイルを管理** をクリックします。 [ オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください ](https://experienceleague.adobe.com/ja/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Chromeと Firefox の両方で利用できる **Adobe Experience Platform Debugg
 
 Luma サイトでデバッガーを使用して、実稼動環境で意思決定ロジックを検証できます。 この検証は、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
-[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)。
+[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview)。
 
 デバッガーを使用して検証を開始するには：
 
@@ -404,4 +404,4 @@ Luma サイトでデバッガーを使用して、実稼動環境で意思決定
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

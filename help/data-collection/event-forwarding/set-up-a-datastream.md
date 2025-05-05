@@ -15,7 +15,7 @@ ht-degree: 18%
 
 # イベント転送用のデータストリームの設定
 
-イベント転送用のデータストリームの設定方法を説明します。 詳しくは、[ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream) を参照してください。
+イベント転送用のデータストリームの設定方法を説明します。 詳しくは、[ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=ja#create-a-datastream) を参照してください。
 
 
 >[!NOTE]

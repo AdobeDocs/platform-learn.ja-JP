@@ -26,4 +26,4 @@ Adobe Experience Platformのデータハイジーン機能を使用して、デ�
 
 >[!NOTE]
 >
-> すべての Platform 顧客は [ データセットをオンデマンドで削除 ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete) できます。 データセット削除のスケジュールは、現在、Healthcare Shield またはプライバシーとセキュリティシールドのお客様のみが利用できます。
+> すべての Platform 顧客は [ データセットをオンデマンドで削除 ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja#delete) できます。 データセット削除のスケジュールは、現在、Healthcare Shield またはプライバシーとセキュリティシールドのお客様のみが利用できます。

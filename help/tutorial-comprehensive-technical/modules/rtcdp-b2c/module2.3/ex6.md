@@ -160,7 +160,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations&rbra
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ja",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"

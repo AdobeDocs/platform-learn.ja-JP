@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # ホスティングオプションを選択
 
-タグライブラリに最適なホスティングオプションを選択する方法について説明します。 詳しくは、[hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) ドキュメントを参照してください。
+タグライブラリに最適なホスティングオプションを選択する方法について説明します。 詳しくは、[hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on&enablevpops)

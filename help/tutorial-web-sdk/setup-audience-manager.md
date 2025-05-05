@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Adobe Experience Platform Web SDK を使用して Adobe Audience Manager を設定し、cookie の宛先を使用して実装を検証する方法について説明します。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) は、サイト訪問者に関する商業的に関連性のある情報を収集し、市場性のあるセグメントを作成し、ターゲット広告やコンテンツを適切なオーディエンスに提供するために必要なすべてを提供するAdobe Experience Cloud ソリューションです。
+[Adobe Audience Manager](https://experienceleague.adobe.com/ja/docs/audience-manager) は、サイト訪問者に関する商業的に関連性のある情報を収集し、市場性のあるセグメントを作成し、ターゲット広告やコンテンツを適切なオーディエンスに提供するために必要なすべてを提供するAdobe Experience Cloud ソリューションです。
 
 ![Web SDK とAdobe Audience Managerの図 ](assets/dc-websdk-aam.png)
 
@@ -32,11 +32,11 @@ Adobe Experience Platform Web SDK を使用して Adobe Audience Manager を設�
 このレッスンを完了するには、まず次の操作を行う必要があります。
 
 * このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
-* Adobe Audience Managerへのアクセス権と、特性、セグメントおよび宛先を作成、読み取りおよび書き込むための適切な権限を持っています。 詳しくは、[Audience Managerの役割ベースのアクセス制御 ](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control) を参照してください。
+* Adobe Audience Managerへのアクセス権と、特性、セグメントおよび宛先を作成、読み取りおよび書き込むための適切な権限を持っています。 詳しくは、[Audience Managerの役割ベースのアクセス制御 ](https://experienceleague.adobe.com/ja/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control) を参照してください。
 
 ## データストリームの設定
 
-Platform Web SDK を使用したAudience Manager実装は、[ サーバーサイド転送（SSF） ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf) を使用した実装とは異なります。 サーバーサイド転送は、Adobe Analytics リクエストデータをAudience Managerに渡します。 Platform Web SDK 実装は、Platform Edge Networkに送信された XDM データをAudience Managerに渡します。 データストリームでAudience Managerが有効になっています。
+Platform Web SDK を使用したAudience Manager実装は、[ サーバーサイド転送（SSF） ](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf) を使用した実装とは異なります。 サーバーサイド転送は、Adobe Analytics リクエストデータをAudience Managerに渡します。 Platform Web SDK 実装は、Platform Edge Networkに送信された XDM データをAudience Managerに渡します。 データストリームでAudience Managerが有効になっています。
 
 1. [ データ収集 ](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイスに移動
 1. 左側のナビゲーションで「**[!UICONTROL データストリーム]**」を選択します
@@ -53,7 +53,7 @@ Platform Web SDK を使用したAudience Manager実装は、[ サーバーサイ
 
 ## データソースの作成
 
-次に、Audience Manager内でデータを整理するための基本ツールである [Data Source](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings) を作成します。
+次に、Audience Manager内でデータを整理するための基本ツールである [Data Source](https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings) を作成します。
 
 1. [Audience Manager](https://experience.adobe.com/#/audience-manager/) インターフェイスに移動します
 1. 上部ナビゲーションから **[!UICONTROL オーディエンスデータ]** を選択します
@@ -73,7 +73,7 @@ Platform Web SDK を使用したAudience Manager実装は、[ サーバーサイ
 
 ## 特性の作成
 
-データSourceを保存した後、[trait](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview) を設定します。 特性は、Audience Managerにおける 1 つ以上のシグナルの組み合わせです。 ホームページ訪問者の特性を作成します。
+データSourceを保存した後、[trait](https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/features/traits/traits-overview) を設定します。 特性は、Audience Managerにおける 1 つ以上のシグナルの組み合わせです。 ホームページ訪問者の特性を作成します。
 
 >[!NOTE]
 >
@@ -185,4 +185,4 @@ Platform Web SDK を使用したAudience Manager実装は、[ サーバーサイ
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

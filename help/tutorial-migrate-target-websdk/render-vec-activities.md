@@ -32,11 +32,11 @@ Visual Editing Helper のブラウザー拡張機能は、at.js または Platfo
 
 Target VEC で web サイトを開くと、Visual Editing Helper が自動的に有効になり、オーサリング機能が強化されます。 この拡張機能には、条件付き設定はありません。 この拡張機能では、SameSite Cookie の設定を含むすべての設定を自動的に処理します。
 
-[Visual Editing Helper 拡張機能の詳細 ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) および [Visual Experience Composer のトラブルシューティング ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html) については、専用のドキュメントを参照してください。
+[Visual Editing Helper 拡張機能の詳細 ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=ja) および [Visual Experience Composer のトラブルシューティング ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=ja) については、専用のドキュメントを参照してください。
 
 >[!IMPORTANT]
 >
->新しい [Visual Editing Helper 拡張機能 ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) は、以前の [Target VEC Helper ブラウザー拡張機能 ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) に代わるものです。 古い VEC Helper 拡張機能がインストールされている場合は、Visual Editing Helper 拡張機能を使用する前に、その拡張機能を削除または無効にする必要があります。
+>新しい [Visual Editing Helper 拡張機能 ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) は、以前の [Target VEC Helper ブラウザー拡張機能 ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=ja) に代わるものです。 古い VEC Helper 拡張機能がインストールされている場合は、Visual Editing Helper 拡張機能を使用する前に、その拡張機能を削除または無効にする必要があります。
 
 ## コンテンツのリクエストと自動適用
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Visual Experience Composer で行われた [ 手動での変更のレンダリング ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) を可能にします。 VEC ベースの変更を手動でレンダリングすることは一般的ではありません。 at.js の実装で `getOffers()` 関数を使用して Target `pageLoad` リクエストを手動で実行し、`applyOffers()` を使用してコンテンツをページに適用していないかどうかを確認します。
+>Visual Experience Composer で行われた [ 手動での変更のレンダリング ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja#manually-rendering-content) を可能にします。 VEC ベースの変更を手動でレンダリングすることは一般的ではありません。 at.js の実装で `getOffers()` 関数を使用して Target `pageLoad` リクエストを手動で実行し、`applyOffers()` を使用してコンテンツをページに適用していないかどうかを確認します。
 
-Platform Web SDK は、開発者に対して、コンテンツのリクエストとレンダリングに非常に柔軟に対応します。 その他のオプションと詳細については、[ パーソナライズされたコンテンツのレンダリングに関する専用ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) を参照してください。
+Platform Web SDK は、開発者に対して、コンテンツのリクエストとレンダリングに非常に柔軟に対応します。 その他のオプションと詳細については、[ パーソナライズされたコンテンツのレンダリングに関する専用ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja) を参照してください。
 
 ## 実装の例
 
@@ -263,4 +263,4 @@ Platform Web SDK は、開発者に対して、コンテンツのリクエスト
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

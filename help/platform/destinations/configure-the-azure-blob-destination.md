@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Real-Time Customer Data Platformで接続を設定し、Azure Blob ストレージの宛先にデータを送信する方法について説明します。 この宛先では、データセットとオーディエンスの書き出しをサポートしており、ファイルヘッダーとデータ属性をカスタマイズできます。
 
-詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob) を参照してください。
+詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 

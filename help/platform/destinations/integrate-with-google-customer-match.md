@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Google Customer Match の統合
 
-AdobeのReal-Time Customer Data PlatformおよびGoogleのカスタマーマッチ機能が、ブランドがGoogleの所有および運営するプロパティを使用して顧客と関わり、アウトリーチキャンペーンを拡大する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html) を参照してください。
+AdobeのReal-Time Customer Data PlatformおよびGoogleのカスタマーマッチ機能が、ブランドがGoogleの所有および運営するプロパティを使用して顧客と関わり、アウトリーチキャンペーンを拡大する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on&enablevpops)
