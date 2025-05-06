@@ -4,9 +4,9 @@ description: はじめに – モバイルアプリの使用
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## アプリのダウンロード
 
-コンピューターの [&#128279;](https://bit.ly/dx-demo-app){target="_blank"}0&rbrace;https://bit.ly/dx-demo-app&rbrace; に移動します。 その後、これが表示されます。
+コンピューターの ](https://dsn.adobe.com/install){target="_blank"}0}https://dsn.adobe.com/install} に移動します。 [Adobe IDを使用してログインすると、これが表示されます。
 
 ![DSN](./images/mobileapp.png)
 

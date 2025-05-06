@@ -3,9 +3,10 @@ title: はじめに – Adobe I/O
 description: はじめに – Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 4%
 
 ---
@@ -21,11 +22,16 @@ ht-degree: 4%
 ![Adobe I/O新規統合 ](./images/iohome.png){zoomable="yes"}
 
 画面の右上隅で正しいインスタンスを選択してください。 インスタンスは `--aepImsOrgName--` です。
+
+>[!NOTE]
+>
+> 次のスクリーンショットは、特定の組織が選択されていることを示しています。 このチュートリアルを進めていくと、組織の名前が異なる可能性が非常に高くなります。 このチュートリアルに登録したときに、使用する環境の詳細が提供されました。これらの手順に従ってください。
+
 次に、「**新規プロジェクトを作成**」を選択します。
 
 ![Adobe I/O新規統合 ](./images/iocomp.png){zoomable="yes"}
 
-### Firefly サービス API
+### FIREFLY SERVICES API
 
 この画像が表示されます。 「**+ プロジェクトに追加**」、「**API**」の順に選択します。
 
@@ -35,7 +41,7 @@ ht-degree: 4%
 
 ![Adobe I/O新規統合 ](./images/api1.png){zoomable="yes"}
 
-**Creative Cloud**、「**Firefly - Firefly サービス**」の順に選択して、「**次へ**」を選択します。
+「**Creative Cloud**」、「**Firefly - Firefly Services**」の順に選択して、「**次へ**」を選択します。
 
 ![Adobe I/O新規統合 ](./images/api3.png){zoomable="yes"}
 
@@ -43,7 +49,7 @@ ht-degree: 4%
 
 ![Adobe I/O新規統合 ](./images/api4.png){zoomable="yes"}
 
-デフォルトプロファイル **デフォルトのFirefly サービス設定** を選択してから、「**設定済み API を保存** を選択します。
+デフォルトプロファイル **デフォルトのFirefly Services設定** を選択し、「**設定済み API を保存**」を選択します。
 
 ![Adobe I/O新規統合 ](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ ht-degree: 4%
 
 ![Azure ストレージ ](./images/ps2.png){zoomable="yes"}
 
-**Creative Cloud** を選択してから、**Photoshop - Firefly サービス** を選択してください。 「**次へ**」を選択します。
+**Creative Cloud** を選択してから、**Photoshop - Firefly Services** を選択してください。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ ht-degree: 4%
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
-**デフォルトのFirefly サービス設定** および **デフォルトのCreative Cloud Automation Services 設定** を選択します。
+**デフォルトのFirefly Services設定** および **デフォルトのCreative Cloud Automation Services 設定** を選択します。
 
 **設定済み API を保存** を選択します。
 
@@ -83,7 +89,7 @@ ht-degree: 4%
 
 ![Azure ストレージ ](./images/aep1.png){zoomable="yes"}
 
-**Adobe Experience Platform を選択し**&#x200B;**Experience Platform API** を選択します。 「**次へ**」を選択します。
+**Adobe Experience Platform を選択し****Experience Platform API** を選択します。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/aep2.png){zoomable="yes"}
 

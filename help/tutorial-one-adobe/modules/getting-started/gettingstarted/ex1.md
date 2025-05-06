@@ -4,10 +4,10 @@ description: はじめに – Experience League ドキュメント用のChrome�
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: '911'
+ht-degree: 1%
 
 ---
 
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## Chrome拡張機能について
 
-このドキュメントは汎用化され、任意のAdobe Experience Platform インスタンスを使用して、誰でも簡単に再利用できるようになりました。
-ドキュメントを再利用可能にするために、**環境変数** がドキュメントに導入されました。つまり、ドキュメント内には以下の **プレースホルダー** があります。 すべてのプレースホルダーは、固有の環境用の固有の変数です。Chrome拡張機能はその変数を変更し、チュートリアルページからコードとテキストを簡単にコピーして、チュートリアルの一部として使用する様々なユーザーインターフェイスに貼り付けられるようにします。
+このチュートリアルは汎用化され、任意のAdobe Experience Cloud インスタンスを使用して誰でも簡単に再利用できます。
+
+ドキュメントを再利用可能にするために、**環境変数** がチュートリアルに導入されました。つまり、ドキュメント内に以下の **プレースホルダー** があります。 すべてのプレースホルダーは、固有の環境用の固有の変数です。Chrome拡張機能はその変数を変更し、チュートリアルページからコードとテキストを簡単にコピーして、チュートリアルの一部として使用する様々なユーザーインターフェイスに貼り付けられるようにします。
 
 このような値の例については、以下を参照してください。 現在、これらの値はまだ使用できませんが、Chrome拡張機能をインストールして有効にすると、これらの変数が通常のテキストに変わり、コピーして再利用できるようになります。
 
 | 名前 | キー | 例 |
 |:-------------:| :---------------:| :---------------:|
-| AEP IMS 組織 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| AEP IMS 組織名 | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS Org ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| IMS 組織名 | `--aepImsOrgName--` | `Experience Platform International` |
 | AEP テナント ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP サンドボックス名 | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ Chrome拡張機能をインストールするには、Chrome ブラウザーを�
 
 ## Chrome拡張機能の設定
 
-[https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overviewに移動し ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} 拡張機能アイコンをクリックして開きます。
+[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overviewに移動し ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} 拡張機能アイコンをクリックして開きます。
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +136,7 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 ## チュートリアルコンテンツの検証
 
-テストとして、[ このページ ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"} に移動します。
+テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"} に移動します。
 
 Chrome 拡張機能でアクティブ化された環境に基づいて、このページのすべての **環境変数** が実際の値に置き換えられました。
 
