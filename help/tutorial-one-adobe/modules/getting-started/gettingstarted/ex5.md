@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## アプリのダウンロード
 
-コンピューターの ](https://dsn.adobe.com/install){target="_blank"}0}https://dsn.adobe.com/install} に移動します。 [Adobe IDを使用してログインすると、これが表示されます。
+コンピューターの [&#128279;](https://dsn.adobe.com/install){target="_blank"}0&rbrace;https://dsn.adobe.com/install&rbrace; に移動します。 Adobe IDを使用してログインすると、これが表示されます。
 
 ![DSN](./images/mobileapp.png)
 
