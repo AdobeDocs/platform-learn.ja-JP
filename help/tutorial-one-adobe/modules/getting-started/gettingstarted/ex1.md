@@ -59,7 +59,7 @@ Chrome拡張機能をインストールするには、Chrome ブラウザーを�
 
 ## Chrome拡張機能の設定
 
-[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overviewに移動し ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} 拡張機能アイコンをクリックして開きます。
+[https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overviewに移動し ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} 拡張機能アイコンをクリックして開きます。
 
 ![DSN](./images/tuthome.png)
 
@@ -136,7 +136,7 @@ LDAP は、実行する設定がユーザーにリンクされ、使用してい
 
 ## チュートリアルコンテンツの検証
 
-テストとして、[ このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"} に移動します。
+テストとして、[ このページ ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"} に移動します。
 
 Chrome 拡張機能でアクティブ化された環境に基づいて、このページのすべての **環境変数** が実際の値に置き換えられました。
 
