@@ -3,7 +3,7 @@ title: Adobe Experience Cloud Debugger でのタグ環境の切り替え
 description: Experience Cloud Debugger を使用して様々なタグ埋め込みコードを読み込む方法について説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 100%
 
