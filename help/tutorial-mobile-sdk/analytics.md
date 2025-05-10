@@ -171,7 +171,7 @@ Analytics マッピングには、以下のことに注意してください。
 
 ## コンテキストデータを使用したマッピング
 
-Analytics に転送された XDM データは、標準フィールドとカスタムフィールドの両方を含む [ コンテキストデータ ](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en) に変換されます。
+Analytics に転送された XDM データは、標準フィールドとカスタムフィールドの両方を含む [ コンテキストデータ ](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=ja) に変換されます。
 
 コンテキストデータキーは、次の構文に従って作成されます。
 
