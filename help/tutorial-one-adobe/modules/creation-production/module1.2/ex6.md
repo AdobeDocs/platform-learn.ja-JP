@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2 Frame.io での Webhook の設定
 
-[https://developer.frame.io/](https://developer.frame.io/){target="_blank"} に移動します。 **デベロッパーツール** をクリックし、「**カスタムアクション**」を選択します。
+[https://developer.frame.io/](https://developer.frame.io/){target="_blank"} に移動します。 **開発者ツール** をクリックし、「**Webhook**」を選択します。
 
 ![ フレーム IO](./images/aemf7.png)
 
@@ -167,7 +167,7 @@ Frame.io から提供されたアセットの詳細で、「**Label** という�
 
 **Input** の下で、「**Storage**」フィールドを **External** に設定し、「**File Location**」をモジュールが返す変数 **Original** を使用するように設定します **Frame.io - アセットを取得**。
 
-次に、「出力 **の下の「項目を追加**&#x200B;**をクリック** ます。
+次に、「出力 **の下の「項目を追加****をクリック** ます。
 
 ![ フレーム IO](./images/aemf30.png)
 
@@ -183,7 +183,7 @@ Frame.io から提供されたアセットの詳細で、「**Label** という�
 
 ![ フレーム IO](./images/aemf32.png)
 
-次に、フィルターを設定して、ステータスが **承認済み** のアセットについてのみ PNG ファイルがレンダリングされるようにします。 それには、モジュール **Frame.io - アセットを取得** と **4&rbrace;Adobe Photoshop – 画像フォーマットを変換** の間にある「レンチ **アイコンをクリックし、「** フィルターを設定 **」を選択します。**
+次に、フィルターを設定して、ステータスが **承認済み** のアセットについてのみ PNG ファイルがレンダリングされるようにします。 それには、モジュール **Frame.io - アセットを取得** と **4}Adobe Photoshop – 画像フォーマットを変換** の間にある「レンチ **アイコンをクリックし、「** フィルターを設定 **」を選択します。**
 
 ![ フレーム IO](./images/aemf34.png)
 

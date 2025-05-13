@@ -4,10 +4,10 @@ description: はじめに – Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 4%
+source-wordcount: '486'
+ht-degree: 3%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 4%
 
 ![Adobe I/O新規統合 ](./images/api3.png){zoomable="yes"}
 
-秘密鍵証明書の名前を指定し `--aepUserLdap-- - One Adobe OAuth credential`**「次へ」** を選択します。
+資格情報の名前を指定：`--aepUserLdap-- - One Adobe OAuth credential` を入力し、「**次へ**」を選択します。
 
 ![Adobe I/O新規統合 ](./images/api4.png){zoomable="yes"}
 
@@ -89,7 +89,7 @@ ht-degree: 4%
 
 ![Azure ストレージ ](./images/aep1.png){zoomable="yes"}
 
-**Adobe Experience Platform を選択し**&#x200B;**Experience Platform API** を選択します。 「**次へ**」を選択します。
+**Adobe Experience Platform を選択し****Experience Platform API** を選択します。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/aep2.png){zoomable="yes"}
 
@@ -100,6 +100,10 @@ ht-degree: 4%
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
 「**Adobe Experience Platform – すべてのユーザー – PROD**」を選択します。
+
+>[!NOTE]
+>
+>AEPの製品プロファイルの名前は、環境の設定方法によって異なります。 上記の製品プロファイルが表示されない場合は、「**デフォルトの実稼動環境へのすべてのアクセス**」という製品プロファイルがある可能性があります。 どちらを選択すればよいかわからない場合は、AEP システム管理者にお問い合わせください。
 
 **設定済み API を保存** を選択します。
 

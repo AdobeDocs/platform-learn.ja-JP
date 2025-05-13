@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 ![WF Fusion](./images/wffc2.png)
 
 複製したシナリオの **名前** を `--aepUserLdap-- - Firefly + Photoshop` に設定し、適切な **ターゲットチーム** を選択します。 **追加** をクリックして、新しい Webhook を追加します。
+
+>[!NOTE]
+>
+>**ターゲットチーム** を選択するオプションが表示されない場合があります。 このオプションは、Workfront Fusion で 1 人以上のチームに所属しているユーザーにのみ表示されます。 このオプションが表示されない場合は、単に 1 チームに追加されただけなので、選択は不要です。
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 **入力** が表示されるまで下にスクロールします。 ここで、背景レイヤーに挿入する必要があるものを定義する必要があります。 この場合、動的に生成された画像を含む **Adobe Firefly** モジュールの出力を選択する必要があります。
 
-**ストレージ** については、「**外部**」を選択します。 **ファイルの場所** については、**Adobe Firefly** モジュールの出力から変数 `{{XX.details[].url}}` をコピーして貼り付けます。 変数内の **XX** を **Adobe Firefly** モジュールのシーケンス番号で置き換えます。この例では、**22** です。
+**ストレージ** については、「**外部**」を選択します。 **ファイルの場所** の場合は、**Adobe Firefly** モジュールの出力から変数 `{{XX.details[].url}}` をコピーして貼り付ける必要がありますが、変数内の **XX** を **Adobe Firefly** モジュールのシーケンス番号（この例では **22**）に置き換える必要があります。
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -277,7 +281,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc37.png)
 
-**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - PSDの編集を適用**）。こちらから取得できます。`data[]._links.renditions[].href`
+**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **** を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - PSDの編集を適用**）。こちらから取得できます。`data[]._links.renditions[].href`
 
 ![WF Fusion](./images/wffc37a.png)
 
@@ -315,7 +319,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc43.png)
 
-**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - テキストレイヤーを編集**）。次から取得できます。`data[]._links.renditions[].href`
+**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **** を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - テキストレイヤーを編集**）。次から取得できます。`data[]._links.renditions[].href`
 
 ファイル **citisignal-fiber.psd** を開きます。 ファイルには、コールトゥアクションを含むレイヤーの名前が **2048 x 2048-button-text** になっていることがわかります。
 
