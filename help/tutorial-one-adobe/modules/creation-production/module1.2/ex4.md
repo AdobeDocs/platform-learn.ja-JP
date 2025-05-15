@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -125,9 +125,13 @@ Adobe I/O プロジェクトの **クライアント ID** と **クライアン�
 
 ![WF Fusion](./images/wffcff6.png)
 
-次に、受信した **Custom Webhook** によってシナリオに提供される **prompt** 変数を選択します。 「**OK**」をクリックします。
+次に、受信した **Custom Webhook** によってシナリオに提供される **prompt** 変数を選択します。
 
 ![WF Fusion](./images/wffcff7.png)
+
+次に、**モデルバージョン****prompt** を **image4 standard** に設定します。 「**OK**」をクリックします。
+
+![WF Fusion](./images/wffcff7b.png)
 
 続行する前に、シナリオで古いルートを無効にする必要があります。この演習では、現在設定している新しいルートのみを使用します。 これを行うには、**Router** モジュールと **Iterator** モジュールの間にある **レンチ** アイコンをクリックし、**ルートを無効にする** を選択します。
 
@@ -261,8 +265,6 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ## 1.2.4.3 PSD ファイルのテキストレイヤーの変更
 
-### コールトゥアクションテキスト
-
 次に、**Adobe Photoshop - PSDの編集を適用** モジュールにカーソルを合わせ、「**+**」アイコンをクリックします。
 
 ![WF Fusion](./images/wffc34.png)
@@ -277,67 +279,59 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 この画像が表示されます。 まず、以前に設定済みのAdobe Photoshop接続を選択します（`--aepUserLdap-- Adobe IO` という名前にする必要があります）。
 
-次に、前の手順の出力である **入力ファイル** の場所を定義する必要があります。**レイヤー** の下に、変更するテキストレイヤーの **名前** を入力する必要があります。
+次に、前の手順の出力である **入力ファイル** の場所を定義する必要があります。**レイヤー** の下で、テキストを変更する必要があるレイヤーごとに **+項目を追加** をクリックする必要があります。
 
 ![WF Fusion](./images/wffc37.png)
 
-**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - PSDの編集を適用**）。こちらから取得できます。`data[]._links.renditions[].href`
+**入力ファイル** の場合、「入力ファイルストレージ **に** Azure **** を選択し、前のリクエストの出力を必ず選択してください **Adobe Photoshop - PSDの編集を適用**。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュールのシーケンス番号に置き換えます。Adobe Photoshop - PSDの編集を適用）
+
+次に、**レイヤー** の下の「**+項目を追加**」をクリックして、更新する必要があるテキストレイヤーの追加を開始します。
 
 ![WF Fusion](./images/wffc37a.png)
 
-ファイル **citisignal-fiber.psd** を開きます。 ファイルには、コールトゥアクションを含むレイヤーの名前が **2048 x 2048-cta** になっていることがわかります。
+2 つの変更を加える必要があります。ファイル **citisignal-fiber.psd** 内のCTA テキストとボタンテキストを更新する必要があります。
+
+レイヤー名を見つけるには、ファイル **citisignal-fiber.psd** を開きます。 ファイルには、コールトゥアクションを含むレイヤーの名前が **2048 x 2048-cta** になっていることがわかります。
 
 ![WF Fusion](./images/wffc38.png)
 
-ダイアログの **名前** の下に、**2048x2048-cta** と入力します。
+ファイル **citisignal-fiber.psd** 内で、call to actionを含むレイヤーの名前が **2048x2048-button-text** になっていることにも注目してください。
+
+![WF Fusion](./images/wffc44.png)
+
+まず、レイヤー **2048 x 2048-cta** に対して行う必要がある変更を設定する必要があります。 ダイアログの **名前** の下に、**2048x2048-cta** と入力します。
 
 ![WF Fusion](./images/wffc39.png)
 
-下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **cta** を選択します。
+下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **cta** を選択します。 「**追加**」をクリックします。
 
 ![WF Fusion](./images/wffc40.png)
 
-**出力** が表示されるまで下にスクロールします。 **ストレージ** については、「**Azure**」を選択します。 **ファイルの場所** には、次の場所を入力します。 生成される各ファイルの名前が必ず一意になるようにするために使用されるファイル名に、変数 `{{timestamp}}` が追加されることに注意してください。 また、**タイプ** を **vnd.adobe.photoshop** に設定します。 「**OK**」をクリックします。
+この画像が表示されます。 **レイヤー** の下の「**+項目を追加**」をクリックして、更新する必要のあるテキストレイヤーの追加を開始します。
+
+![WF Fusion](./images/wffc40a.png)
+
+ダイアログの **Name** の下に、名前 **2048x2048-button-text** を入力します。
+
+![WF Fusion](./images/wffc40b.png)
+
+下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **button** を選択します。 「**追加**」をクリックします。
+
+![WF Fusion](./images/wffc40c.png)
+
+この画像が表示されます。
+
+![WF Fusion](./images/wffc40d.png)
+
+**出力** が表示されるまで下にスクロールします。 **ストレージ** については、「**Azure**」を選択します。 **ファイルの場所** には、次の場所を入力します。 生成される各ファイルの名前が必ず一意になるようにするために使用されるファイル名に、変数 `{{timestamp}}` が追加されることに注意してください。 また、**タイプ** を **vnd.adobe.photoshop** に設定します。
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### ボタンのテキスト
+**タイプ** を **vnd.adobe.photoshop** に設定します。 「**OK**」をクリックします。
 
-作成したモジュールを右クリックし、「**クローン**」を選択します。 これにより、2 つ目の類似したモジュールが作成されます。
-
-![WF Fusion](./images/wffc42.png)
-
-複製したモジュールを、前の **Adobe Photoshop - テキストレイヤーを編集** モジュールに接続します。
-
-![WF Fusion](./images/wffc42a.png)
-
-この画像が表示されます。 まず、以前に設定済みのAdobe Photoshop接続を選択します（`--aepUserLdap-- Adobe IO` という名前にする必要があります）。
-
-次に、前の手順の出力である **入力ファイル** の場所を定義する必要があります。**レイヤー** の下に、変更するテキストレイヤーの **名前** を入力する必要があります。
-
-![WF Fusion](./images/wffc43.png)
-
-**入力ファイル** の場合は、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください（**Adobe Photoshop - テキストレイヤーを編集**）。次から取得できます。`data[]._links.renditions[].href`
-
-ファイル **citisignal-fiber.psd** を開きます。 ファイルには、コールトゥアクションを含むレイヤーの名前が **2048 x 2048-button-text** になっていることがわかります。
-
-![WF Fusion](./images/wffc44.png)
-
-ダイアログの **Name** の下に、名前 **2048x2048-button-text** を入力します。
-
-![WF Fusion](./images/wffc43.png)
-
-下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **button** を選択します。
-
-![WF Fusion](./images/wffc45.png)
-
-**出力** が表示されるまで下にスクロールします。 **ストレージ** については、「**Azure**」を選択します。 **ファイルの場所** には、次の場所を入力します。 生成される各ファイルの名前が必ず一意になるようにするために使用されるファイル名に、変数 `{{timestamp}}` が追加されることに注意してください。 また、**タイプ** を **vnd.adobe.photoshop** に設定します。 「**OK**」をクリックします。
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 「**保存**」をクリックして変更を保存します。
 
@@ -369,9 +363,13 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc51.png)
 
-変数 `{{XX.data[]._links.renditions[].href}}` をコピーして貼り付け、**XX** を最後の **Adobe Photoshop - テキストレイヤーを編集** モジュール（この場合は **25** のシーケンス番号に置き換えます。 **詳細設定を表示** のチェックボックスを有効にして、「**項目を追加**」をクリックします。
+変数 `{{XX.data[]._links.renditions[].href}}` をコピーして貼り付け、**XX** を最後の **Adobe Photoshop - テキストレイヤーを編集** モジュール（この場合は **30** のシーケンス番号に置き換えます。
 
 ![WF Fusion](./images/wffc52.png)
+
+**詳細設定を表示** のチェックボックスを有効にして、「**項目を追加**」をクリックします。
+
+![WF Fusion](./images/wffc52b.png)
 
 「**キー**」フィールドに「`Content-Type`」と入力します。 **値** フィールドに「`application/json`」と入力します。 「**追加**」をクリックします。
 
