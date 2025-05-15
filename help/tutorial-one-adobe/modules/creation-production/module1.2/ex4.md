@@ -129,7 +129,7 @@ Adobe I/O プロジェクトの **クライアント ID** と **クライアン�
 
 ![WF Fusion](./images/wffcff7.png)
 
-次に、**モデルバージョン****prompt** を **image4 standard** に設定します。 「**OK**」をクリックします。
+次に、**モデルバージョン**&#x200B;**prompt** を **image4 standard** に設定します。 「**OK**」をクリックします。
 
 ![WF Fusion](./images/wffcff7b.png)
 
@@ -283,7 +283,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc37.png)
 
-**入力ファイル** の場合、「入力ファイルストレージ **に** Azure **** を選択し、前のリクエストの出力を必ず選択してください **Adobe Photoshop - PSDの編集を適用**。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュールのシーケンス番号に置き換えます。Adobe Photoshop - PSDの編集を適用）
+**入力ファイル** の場合、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください **Adobe Photoshop - PSDの編集を適用**。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュールのシーケンス番号に置き換えます。Adobe Photoshop - PSDの編集を適用）
 
 次に、**レイヤー** の下の「**+項目を追加**」をクリックして、更新する必要があるテキストレイヤーの追加を開始します。
 
