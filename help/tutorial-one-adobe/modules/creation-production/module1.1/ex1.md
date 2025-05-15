@@ -303,7 +303,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 **FF - Firefly Services テクニカルインサイダー** コレクションから **POST - Firefly - T2I V4** という名前のリクエストを選択し、リクエストの **ヘッダー** に移動します。
 
-リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate} だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
+リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate&rbrace; だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
 
 **Header** 変数には、**x-model-version** という新しい変数があります。 これは、Firefly Image 4 および Image 4 Ultra とやり取りする際に必要なヘッダーです。 画像の生成時にFirefly Image 4 または Image 4 Ultra を使用するには、ヘッダーの値を `image4_standard` または `image4_ultra` に設定する必要があります。 この例では、`image4_standard` を使用します。
 
@@ -317,7 +317,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ffim4_3.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -349,7 +349,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ffim4_13.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_14.png)
 
