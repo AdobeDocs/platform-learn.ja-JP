@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1918'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,47 @@ ht-degree: 1%
 
 Microsoft Azure と事前署名済み URL を使用してFirefly プロセスを最適化する方法について説明します。
 
-## 1.1.2.1 Azure サブスクリプションを作成するには
+## 1.1.2.1 事前署名済み URL とは
+
+事前署名済み URL は、ストレージの場所にある特定のオブジェクトへの一時的なアクセスを許可する URL です。 URL を使用すると、ユーザーは例えば、オブジェクトの読み取りや書き込み（または既存のオブジェクトの更新）を行うことができます。 URL には、アプリケーションで設定される特定のパラメーターが含まれます。
+
+コンテンツのサプライチェーン自動化を作成するコンテキストでは、特定のユースケースに対して実行する必要があるファイル操作が複数あることがよくあります。 例えば、ファイルの背景を変更したり、様々なレイヤーのテキストを変更したりする必要がある場合があります。 すべてのファイル操作を同時に実行できるとは限らないため、複数手順のアプローチが必要になります。 各中間ステップの後で、出力は次のステップを実行するために必要な一時ファイルになります。 その次の手順を実行すると、一時ファイルはすぐに値を失い、多くの場合、不要になるので削除する必要があります。
+
+Adobe Firefly Servicesは現在、次のドメインをサポートしています。
+
+- AmazonAWS: *.amazonaws.com
+- Microsoft Azure: *.windows.net
+- Dropbox: *.dropboxusercontent.com
+
+クラウドストレージソリューションがよく使用される理由は、作成されている中間アセットの価値が急速に失われるからです。 事前署名された URL で解決される問題は、多くの場合、商品ストレージソリューションで解決するのが最善です。通常、これは上記のクラウドサービスの 1 つです。
+
+Adobe エコシステム内には、Frame.io、Workfront Fusion、Adobe Experience Manager Assets などのストレージソリューションもあります。 これらのソリューションは事前署名済みの URL もサポートするので、多くの場合、実装時に選択する必要があります。 多くの場合、選択は既に利用可能なアプリケーションとストレージコストの組み合わせに基づいて行われます。
+
+そのため、次の理由から、事前署名済みの URL をAdobe Firefly Services操作と組み合わせて使用します。
+
+- 組織では、同じイメージに対する複数の変更を中間の手順で処理する必要が生じる場合が多く、その処理を可能にするには中間ストレージが必要になります。
+- クラウドストレージの場所からの読み取りおよび書き込みへのアクセスは安全である必要があり、サーバーサイド環境では、手動でログインすることはできないので、セキュリティを URL に直接組み込む必要があります。
+
+事前署名済み URL は、ユーザーへのアクセスを制限するために次の 3 つのパラメーターを使用します。
+
+- ストレージの場所：AWS S3 バケットの場所、コンテナを使用したMicrosoft Azure ストレージアカウントの場所を指定できます
+- ファイル名：読み取り、更新、削除する必要がある特定のファイル。
+- クエリ文字列パラメーター：クエリ文字列パラメーターは、常に疑問符で始まり、後に複雑な一連のパラメーターが続きます
+
+例：
+
+- **AmazonAWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 Azure サブスクリプションを作成するには
 
 >[!NOTE]
 >
 >既存の Azure サブスクリプションがある場合は、この手順をスキップできます。 その場合は次の演習に進んでください。
+
+>[!NOTE]
+>
+>このチュートリアルに従って対面式のガイド付きワークショップまたはガイド付きのオンデマンドトレーニングを行う場合は、Microsoft Azure ストレージアカウントに既にアクセスしている可能性があります。 その場合、自分でアカウントを作成する必要はありません。トレーニングの一部として提供されたアカウントを使用してください。
 
 [https://portal.azure.com](https://portal.azure.com){target="_blank"} に移動し、Azure アカウントでログインします。 お持ちでない場合は、個人の電子メール アドレスを使用して Azure アカウントを作成してください。
 
@@ -43,7 +79,7 @@ Azure のサブスクリプションフォームに入力し、アクティベ�
 
 ![Azure ストレージ ](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Azure ストレージアカウントを作成するには
+## 1.1.2.3 Azure ストレージアカウントを作成するには
 
 `storage account` を検索し、「**ストレージアカウント**」を選択します。
 
@@ -85,7 +121,7 @@ Azure のサブスクリプションフォームに入力し、アクティベ�
 
 ![Azure ストレージ ](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Azure ストレージエクスプローラーのインストール
+## 1.1.2.4 Azure ストレージエクスプローラーのインストール
 
 [Microsoft Azure ストレージエクスプローラーをダウンロードしてファイルを管理 ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} ます。 特定の OS に適したバージョンを選択し、ダウンロードしてインストールします。
 
@@ -127,7 +163,7 @@ Microsoft Azure ストレージエクスプローラーアプリに戻り、サ�
 
 ![Azure ストレージ ](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4 手動でのファイルのアップロードと、スタイル参照としての画像ファイルの使用
+## 1.1.2.5 手動でのファイルのアップロードと、スタイル参照としての画像ファイルの使用
 
 選択した画像ファイルまたは [ このファイル ](./images/gradient.jpg){target="_blank"} をコンテナにアップロードします。
 
@@ -166,7 +202,7 @@ Postmanに戻り、リクエスト **POST - Firefly - T2I （styleref） V3** �
 
 ![Azure ストレージ ](./images/az26.png){zoomable="yes"}
 
-## 1.1.2.5 プログラムによるファイルのアップロード
+## 1.1.2.6 プログラムによるファイルのアップロード
 
 Azure ストレージアカウントでプログラムによるファイルのアップロードを使用するには、ファイルを書き込むための権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。
 
@@ -247,7 +283,7 @@ Azure ストレージエクスプローラーに戻り、フォルダーのコ�
 
 ![Azure ストレージ ](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 プログラムによるファイル使用
+## 1.1.2.7 プログラムによるファイル使用
 
 Azure ストレージアカウントからプログラムによって長期的にファイルを読み取るには、ファイルを読み取ることができる権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。 技術的には、前の演習で作成した SAS トークンを使用できますが、**読み取り** 権限のみを持つ別のトークンと、**書き込み** 権限のみを持つ別のトークンを用意することをお勧めします。
 
@@ -370,7 +406,7 @@ PostBuster を開きます。 「**Base Environment**」を選択し、「**edit
 
 ### 設定のテスト
 
-前の演習の 1 つで、リクエスト **2&rbrace;Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
+前の演習の 1 つで、リクエスト **2}Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
 
 `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 

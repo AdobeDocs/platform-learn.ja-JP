@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 64cce12ba89112583a9cabb4558622ba970335f0
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,37 @@ PostmanとAdobe I/Oを使用して、Adobe Firefly Services API に対してク�
 
 この演習を続ける前に、[Adobe I/O プロジェクト ](./../../../modules/getting-started/gettingstarted/ex6.md) の設定を完了し、[Postman](./../../../modules/getting-started/gettingstarted/ex7.md) や [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md) などの API を操作するアプリケーションも設定しておく必要があります。
 
-## 1.1.1.2 Explore firefly.adobe.com - ステージ 1
+## 1.1.1.2 API の基本
+
+API リクエストには複数のタイプがあります。
+
+- **GET**：これは、ステータスレポートの取得など、API エンドポイントから情報を取得しようとする場合に使用されます
+- **POST**:Adobe Firefly Servicesで新しい画像を生成するなど、新しい処理が必要な場合に使用します
+- **PUT**：既存のデータを完全に更新するために使用されます
+- **PATCH**：既存のデータを選択的に更新するために使用します
+- **DELETE**：データの削除に使用します
+
+API を使用すると、様々な API エンドポイントによって応答コードが返されることにも気付くでしょう。
+
+期待される応答には、5 つの異なるカテゴリがあります。
+
+- **1xx 情報応答**：要求を受信しました。プロセスを続行します
+- **2xx 成功**：リクエストは正常に受信、理解、承認されました
+- **3xx リダイレクト**：リクエストを完了するには、さらにアクションを実行する必要があります
+- **4xx クライアントエラー**: リクエストに正しくない構文が含まれているか、リクエストを実行できません
+- **5xx サーバーエラー**: サーバーは明らかに有効なリクエストを満たすことができませんでした
+
+期待される一般的な応答コードの例を次に示します。
+
+- **200 OK**：問題ありません。要求は正常に完了しました
+- **201 作成済み**：これは例としてイメージが作成されたことを示します。
+- **202 承諾**：問題ありません。要求は承諾され、処理されます
+- **401 Unauthorized**：これは適切ではありません。アクセス トークンが無効である可能性があります
+- **403 Forbidden 禁止**：これは適切ではありません。実行しようとしているアクションに必要な権限を持っていない可能性があります
+- **404 Not Found**：これは適切ではありません。アクセスしようとしている URL が存在しない可能性があります
+- **429 Too Many Requests**：これは適切ではありません。短期間に多数のリクエストに送信した可能性があります。 後でもう一度試してください。
+
+## 1.1.1.3 Explore firefly.adobe.com - ステージ 1
 
 それでは、Adobe Firefly Servicesを探索してみましょう。 詳しくは、CitiSignal 画像生成の例から始めます。 CitiSignal デザインチームは、CitiSignal ブランド名のネオンバージョンを生成したいと考えています。 その際は、Adobe Firefly Servicesを使用したいと考えています。
 
@@ -29,7 +59,7 @@ PostmanとAdobe I/Oを使用して、Adobe Firefly Services API に対してク�
 
 ![Postman](./images/CitiSignal.jpg)
 
-### 1.1.1.2.1 コンポジション参照画像の作成
+### 1.1.1.3.1 コンポジション参照画像の作成
 
 [ このサンプル画像 ](./images/CitiSignal.jpg) を使用するか、独自のテキストを作成して実験できます。 Adobe Illustratorで独自の画像ファイルを作成するには、次の手順に従います。 事前定義済みの画像を使用する場合は、以下の節をスキップし、手順 **1.1.1.2.2 画像の生成に進ん** ください。
 
@@ -81,7 +111,7 @@ PostmanとAdobe I/Oを使用して、Adobe Firefly Services API に対してク�
 
 ![Postman](./images/ill13.png)
 
-### 1.1.1.2.2 画像の生成
+### 1.1.1.3.2 画像の生成
 
 [https://firefly.adobe.com](https://firefly.adobe.com) に移動します。 **プロファイル** アイコンをクリックし、右側の **アカウント** にログインしていることを確認します。`--aepImsOrgName--` にアクセスする必要があります。 必要に応じて、「**プロファイルを切り替え**」をクリックして、そのアカウントに切り替えます。
 
@@ -109,7 +139,7 @@ PostmanとAdobe I/Oを使用して、Adobe Firefly Services API に対してク�
 
 これで、Fireflyを使用して、数分でデザインの問題を解決する方法を学びました。
 
-## 1.1.1.3 Explore firefly.adobe.com - ステージ 2
+## 1.1.1.4 Explore firefly.adobe.com - ステージ 2
 
 [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image) に移動します。 この画像が表示されます。 **モデル** ドロップダウンリストをクリックします。 Adobe Firefly Servicesには 3 つのバージョンがあります。
 
@@ -184,13 +214,13 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 次の演習では、Firefly Servicesでも同様の操作を行いますが、その後 UI の代わりに API を使用します。 この例では、最初の画像のシード番号が **142194** です。この画像には、2 頭の馬が向き合って見ています。
 
-## 1.1.1.4 Adobe I/O - access_token
+## 1.1.1.5 Adobe I/O - access_token
 
 **Adobe I/O - OAuth** コレクションで、「**POST - アクセストークンを取得**」という名前のリクエストを選択し、「**送信**」を選択します。 応答には、新しい **accestoken** を含める必要があります。
 
 ![Postman](./images/ioauthresp.png)
 
-## 1.1.1.5 Firefly Services API、テキスト 2 画像、画像 3
+## 1.1.1.6 Firefly Services API、テキスト 2 画像、画像 3
 
 これで、有効な新しい access_token が用意できたので、最初のリクエストをFirefly Services API に送信する準備が整いました。
 
@@ -269,7 +299,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff10.png)
 
-## Firefly Services API1.1.1.6Gen を展開
+## Firefly Services API1.1.1.7Gen を展開
 
 **FF - Firefly技術インサイダー** コレクションから **POST - Firefly Services - Gen Expand** という名前のリクエストを選択し、リクエストの **本文** に移動します。
 
@@ -297,15 +327,25 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff15.png)
 
-## 1.1.1.7 Firefly Services API、Text 2 Image、Image 4 &amp; Image 4 Ultra
+## 1.1.1.8 Firefly Services API、Text 2 Image、Image 4 &amp; Image 4 Ultra
 
-### 1.1.1.7.1 image4_standard
+Firefly Image Model 4 の最近のリリースでは、次の点が改善されました。
+
+- Firefly Image Model 4 は、より高精細な 2K 解像度の出力を提供します。
+- Firefly Image Model 4 では、テキストのレンダリング、人間、動物、アーキテクチャが大幅に改善されました。
+- Firefly Image Model 4 は、IP に優しく、商業的に安全な生成 AI に対するAdobeの取り組みを継続しています。
+
+Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影した優れた画像を提供します。また、画像モデル 4 Ultra を使用すると、非常にリアルな人物のインタラクション、建築要素、複雑な風景を扱った画像を作成でき&#x200B;す。
+
+### 1.1.1.8.1 image4_standard
 
 **FF - Firefly Services テクニカルインサイダー** コレクションから **POST - Firefly - T2I V4** という名前のリクエストを選択し、リクエストの **ヘッダー** に移動します。
 
-リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate&rbrace; だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
+リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate} だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
 
 **Header** 変数には、**x-model-version** という新しい変数があります。 これは、Firefly Image 4 および Image 4 Ultra とやり取りする際に必要なヘッダーです。 画像の生成時にFirefly Image 4 または Image 4 Ultra を使用するには、ヘッダーの値を `image4_standard` または `image4_ultra` に設定する必要があります。 この例では、`image4_standard` を使用します。
+
+**x-model-version** を `image4_standard` または `image4_ultra` に設定しない場合、Firefly Servicesは現在、デフォルトで `image3` を使用します。
 
 ![Firefly](./images/ffim4_1.png)
 
@@ -317,7 +357,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ffim4_3.png)
 
-実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -333,7 +373,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ffim4_7.png)
 
-### 1.1.1.7.2 image4_ultra
+### 1.1.1.8.2 image4_ultra
 
 **FF - Firefly Services テクニカルインサイダー** コレクションから **POST - Firefly - T2I V4** という名前のリクエストに戻り、リクエストの **ヘッダー** に移動します。
 
@@ -349,7 +389,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ffim4_13.png)
 
-実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_14.png)
 
