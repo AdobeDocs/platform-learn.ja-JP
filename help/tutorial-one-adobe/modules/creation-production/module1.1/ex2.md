@@ -413,7 +413,7 @@ PostBuster を開きます。 「**Base Environment**」を選択し、「**edit
 
 ### 設定のテスト
 
-前の演習の 1 つで、リクエスト **2}Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
+前の演習の 1 つで、リクエスト **2&rbrace;Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
 
 `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
