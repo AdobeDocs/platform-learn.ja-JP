@@ -20,4 +20,4 @@ ht-degree: 0%
 
 グラフシミュレータを使用して、Adobe Experience Platformの ID グラフリンクルールをテストする方法を説明します。 様々なシナリオを試して、「グラフごとに一意」と優先度設定を使用して遊び、グラフが折りたたまれるのを防ぐためにビジネスに必要なルールを確認します。 詳しくは、「[ グラフシミュレーション UI ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation)」を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444044/?learn=on&enablevpops&captions=jpn)
