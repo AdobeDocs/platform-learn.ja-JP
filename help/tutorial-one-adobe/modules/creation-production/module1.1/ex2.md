@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1942'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,13 @@ Microsoft Azure ストレージエクスプローラーアプリに戻り、サ�
 ## 1.1.2.5 手動でのファイルのアップロードと、スタイル参照としての画像ファイルの使用
 
 選択した画像ファイルまたは [ このファイル ](./images/gradient.jpg){target="_blank"} をコンテナにアップロードします。
+
+>[!NOTE]
+>
+>画像をスタイル参照、コンポジション参照またはマスク画像として使用する場合、次の画像タイプを使用できます。
+>- image/jpeg
+>- image/png
+>- image/webp
 
 ![Azure ストレージ ](./images/gradient.jpg)
 
@@ -406,7 +413,7 @@ PostBuster を開きます。 「**Base Environment**」を選択し、「**edit
 
 ### 設定のテスト
 
-前の演習の 1 つで、リクエスト **2&rbrace;Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
+前の演習の 1 つで、リクエスト **2}Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
 
 `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 

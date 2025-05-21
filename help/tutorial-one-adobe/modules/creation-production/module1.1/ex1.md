@@ -6,16 +6,31 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
 workflow-type: tm+mt
-source-wordcount: '2596'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Firefly Servicesの概要
 
-PostmanとAdobe I/Oを使用して、Adobe Firefly Services API に対してクエリを実行する方法を説明します。
+Firefly Servicesには、**Firefly API**、**Lightroom API**、**Photoshop API**、**InDesign API** および **コンテンツタグ付け API** が含まれています。
+
+これらの API スイートは、PhotoshopやLightroomなどのAdobeのクリエイティブツールの機能と、コンテンツのタグ付け、ジェネレーティブフィル、テキストから画像への変換などの最先端の AI/ML 機能を組み合わせています。
+
+Firefly Servicesを使用すると、単にコンテンツを作成するだけではありません。コンテンツ制作の自動化、スケーリング、最新の AI/ML テクノロジーの活用により、ワークフローを強化できます。
+
+この演習では、PostmanとAdobe I/Oを使用して様々なAdobe Firefly Services API を操作する方法を説明します。
+
+この演習では、特に次のようなFirefly API に焦点を当てています。
+
+- **Firefly Generate Images API**：この API は、Firefly モデルを使用して画像を生成するために使用されます
+- **Firefly Generate Similar Images API**：この API は、既存の画像に類似した画像を生成するために使用されます
+- **Firefly Expand Image API**：この API は、既存の画像をより大きな縦横比/サイズに拡大するために使用します
+- **Firefly Fill Image API**：この API は、プロンプトに基づいてFireflyが生成する画像に基づいて、既存の画像の領域を塗りつぶします。 これは、塗りつぶす必要がある領域を定義するマスクを使用して行います。
+- **Firefly オブジェクト合成 API を生成**：この API を使用すると、入力画像を自分で提供し、Fireflyで生成された画像と組み合わせて画像合成（シーン）を作成することができます。
+- **Firefly カスタムモデル API**：この API を使用すると、独自のFirefly カスタムモデルと連携し、Firefly カスタムモデルに基づいて新しい画像を生成できます
 
 ## 1.1.1.1 前提条件
 
@@ -216,7 +231,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ## 1.1.1.5 Adobe I/O - access_token
 
-**Adobe I/O - OAuth** コレクションで、「**POST - アクセストークンを取得**」という名前のリクエストを選択し、「**送信**」を選択します。 応答には、新しい **accestoken** を含める必要があります。
+**Adobe I/O - OAuth** コレクションで、「**POST - アクセストークンを取得**」という名前のリクエストを選択し、「**送信**」を選択します。 応答には、新しい **access_token** を含める必要があります。
 
 ![Postman](./images/ioauthresp.png)
 
@@ -224,13 +239,26 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 これで、有効な新しい access_token が用意できたので、最初のリクエストをFirefly Services API に送信する準備が整いました。
 
-**FF - Firefly Services Tech Insiders** コレクションから **POST - Firefly - T2I V3** という名前のリクエストを選択します。 **本文** に移動し、プロンプトを確認します。 「**送信**」をクリックします。
-
-ここで使用しているリクエストは **同期** リクエストであり、数秒以内にリクエストされた画像を含む応答が提供されます。
+ここで使用するリクエストは **同期** リクエストで、数秒以内にリクエストされた画像を含む応答が提供されます。
 
 >[!NOTE]
 >
 >Firefly Image 4 および Image 4 Ultra のリリースにより、同期リクエストは非推奨（廃止予定）になり、非同期リクエストが優先されます。 このチュートリアルの後半では、非同期リクエストの演習を示します。
+
+**FF - Firefly Services Tech Insiders** コレクションから **POST - Firefly - T2I V3** という名前のリクエストを選択します。 **ヘッダー** に移動し、キーと値のペアの組み合わせを確認します。
+
+| キー | 値 |
+|:-------------:| :---------------:| 
+| `x-api-key` | `{{API_KEY}}` |
+| `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
+
+このリクエストの両方の値は、事前に定義された環境変数を参照します。 `{{API_KEY}}` は、Adobe I/O プロジェクトのフィールド **クライアント ID** を参照します。 このチュートリアル **はじめに** の節の一部として、Postmanでこれを設定しました。
+
+フィールド **Authorization** の値は、少し特殊です。`Bearer {{ACCESS_TOKEN}}`。 これには、前の手順で生成した **アクセストークン** への参照が含まれています。 **Adobe IO - OAuth** コレクションのリクエスト **POST - アクセストークンを取得** を使用して **アクセストークン** を受信すると、Postmanで実行されたスクリプトで、フィールド **access_token** を環境変数として保存し、リクエスト **POST - Firefly - T2I V3** で参照されるようになりました。 単語 **Bearer** の具体的な追加と、`{{ACCESS_TOKEN}}` の前のスペースに注意してください。 bearer という単語は大文字と小文字が区別され、スペースは必須です。 これが正しく行われないと、Adobe I/Oは **アクセストークン** を正しく処理できないため、**401 Unauthorized** エラーを返します。
+
+![Firefly](./images/ff0.png)
+
+次に、**本文** に移動し、プロンプトを確認します。 「**送信**」をクリックします。
 
 ![Firefly](./images/ff1.png)
 
@@ -341,7 +369,7 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 
 **FF - Firefly Services テクニカルインサイダー** コレクションから **POST - Firefly - T2I V4** という名前のリクエストを選択し、リクエストの **ヘッダー** に移動します。
 
-リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate&rbrace; だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
+リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate} だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
 
 **Header** 変数には、**x-model-version** という新しい変数があります。 これは、Firefly Image 4 および Image 4 Ultra とやり取りする際に必要なヘッダーです。 画像の生成時にFirefly Image 4 または Image 4 Ultra を使用するには、ヘッダーの値を `image4_standard` または `image4_ultra` に設定する必要があります。 この例では、`image4_standard` を使用します。
 
@@ -357,7 +385,7 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 
 ![Firefly](./images/ffim4_3.png)
 
-実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -389,7 +417,7 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 
 ![Firefly](./images/ffim4_13.png)
 
-実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_14.png)
 
@@ -400,6 +428,30 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 次に、「フィールドの馬 **の超現実的な画像が表示さ** ます。
 
 ![Firefly](./images/ffim4_16.png)
+
+### ネガティブなプロンプト
+
+生成される画像に何かを含めないようにFireflyにリクエストする場合は、API を使用する際にフィールド `negativePrompt` を含めることができます（このオプションは現在 UI には公開されていません）。 例えば、プロンプト **horses in a field** の実行時に花を含めない場合、API リクエストの **Body** で次のように指定します。
+
+```
+"negativePrompt": "no flowers",
+```
+
+**FF - Firefly Services テクニカルインサイダー** コレクションからリクエスト **POST - Firefly - T2I V4** に移動し、リクエストの **本文** に移動します。 上記のテキストをリクエストの本文に貼り付けます。 「**送信**」をクリックします。
+
+![Firefly](./images/ffim4_17.png)
+
+この画像が表示されます。
+
+![Firefly](./images/ffim4_18.png)
+
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+
+![Firefly](./images/ffim4_19.png)
+
+生成された画像が表示されます。この画像には花を含めないでください。
+
+![Firefly](./images/ffim4_20.png)
 
 ## 次の手順
 
