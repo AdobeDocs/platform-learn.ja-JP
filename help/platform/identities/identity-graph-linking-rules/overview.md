@@ -9,22 +9,18 @@ duration: 262
 last-substantial-update: 2025-02-27T00:00:00Z
 jira: KT-16731
 exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 837c9b4386fbca106db313ee4e27fc7b69ea54ff
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 17%
+source-wordcount: '183'
+ht-degree: 20%
 
 ---
 
 # ID グラフのリンクルールの概要
 
->[!AVAILABILITY]
->
->ID グラフリンクルールは現在、限定提供（LA）です。 開発用サンドボックスでこの機能にアクセスする方法については、Adobe アカウントチームにお問い合わせください。
+データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防ぐのに ID グラフリンクルールがどのように役立つかについて、概要を説明します。 詳しくは、[ID グラフリンクルールに関するドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
 
-データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防ぐのに ID グラフリンクルールがどのように役立つかについて、概要を説明します。 詳しくは、[ID グラフリンクルールに関するドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
-
->[!VIDEO](https://video.tv.adobe.com/v/3448273/?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
 ## 設定
 
@@ -41,7 +37,7 @@ ht-degree: 17%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="ID グラフリンクルール – グラフシミュレーション" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444044/?format=jpeg&nocache=1747355376342&captions=jpn" alt="ID グラフリンクルール – グラフシミュレーション"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="ID グラフリンクルール – グラフシミュレーション"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
