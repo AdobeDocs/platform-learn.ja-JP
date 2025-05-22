@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
 workflow-type: tm+mt
-source-wordcount: '3309'
+source-wordcount: '3272'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 演習を開始する前に、次の 2 つの短いビデオを視聴して、ストリーミングデータ取得と web SDKについて詳しく学びます。
 
->[!VIDEO](https://video.tv.adobe.com/v/31657?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37263?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 まず、データストリームを設定します。 データストリームは、Web SDK呼び出しからデータを受信した後にデータを送信する場所を Adobe Edge ネットワークに指示します。 例えば、データをExperience Platform、Adobe AnalyticsまたはAdobe Targetに送信しますか？ データストリームは、データ収集ユーザーインターフェイス（旧称 Launch）で管理され、web SDKでのデータ収集にとって重要です。
 
-[!UICONTROL &#x200B; データストリーム &#x200B;] を作成するには：
+[!UICONTROL  データストリーム ] を作成するには：
 
 1. [Experience Platform Data Collection ユーザーインターフェイスにログインします ](https://experience.adobe.com/launch/)
    <!--when will the edge config go live?-->
@@ -242,7 +242,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 ライブラリのビルドには数分かかる場合があり、完了すると、ライブラリ名の左側に緑のドットが表示されます。
 ![ ビルド完了 ](assets/websdk-property-buildComplete.png)
 
-[!UICONTROL &#x200B; 公開フロー &#x200B;] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 開発環境では、単一のライブラリを使用します。
+[!UICONTROL  公開フロー ] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 開発環境では、単一のライブラリを使用します。
 
 ## リクエスト内のデータを検証します
 
@@ -255,7 +255,7 @@ Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使
 
 初めて Debugger を使用する場合（これが古いAdobe Experience Cloud Debugger と異なる場合）は、次の 5 分間の概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/36086?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Luma web サイトを開きます
 
@@ -292,7 +292,7 @@ Experience Platform Debugger には、既存のタグプロパティを別のプ
 1. **[!UICONTROL events]** 行を開きます
 
    ![Adobe Experience Platform Web SDK リクエスト ](assets/websdk-debugger-platformNetwork.png)
-1. [!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションで指定した `web.webpagedetails.pageView` イベントタイプと、`AEP Web SDK ExperienceEvent Mixin` 形式に準拠するその他の標準変数の確認方法に注意してください
+1. [!UICONTROL  イベントを送信 ] アクションで指定した `web.webpagedetails.pageView` イベントタイプと、`AEP Web SDK ExperienceEvent Mixin` 形式に準拠するその他の標準変数の確認方法に注意してください
    ![ イベントの詳細 ](assets/websdk-debugger-eventDetails.png)
 1. これらのタイプのリクエストの詳細は、ブラウザーの web デベロッパーツールの「ネットワーク **タブにも表示さ** ます。 ファイルを開き、ページをリロードします。 `interact` を使用して呼び出しをフィルタリングし、呼び出しを見つけて選択し、「**ヘッダー**」タブの **リクエストペイロード** 領域を探します。
    ![ 「ネットワーク」タブ ](assets/websdk-debugger-networkTab.png)
@@ -405,12 +405,12 @@ XDM フィールドにマッピングされたデータがあるので、イベ�
 
 ### CRM ID を ID マップデータ要素に追加します
 
-CRM ID 値を取得したので、それを [!UICONTROL ID マップ &#x200B;] データ要素と呼ばれる特別なデータ要素タイプに関連付ける必要があります。
+CRM ID 値を取得したので、それを [!UICONTROL ID マップ ] データ要素と呼ばれる特別なデータ要素タイプに関連付ける必要があります。
 
 1. `Identities` という名前のデータ要素を追加
 1. **[!UICONTROL Extension]** として、「**[!UICONTROL Adobe Experience Platform Web SDK]**」を選択します
 1. **[!UICONTROL データ要素タイプ]** として、「**[!UICONTROL ID マップ]**」を選択します
-1. **[!UICONTROL 名前空間]** として、前のレッスンで作成した [!UICONTROL &#x200B; 名前空間 &#x200B;] である `Luma CRM Id` と入力します
+1. **[!UICONTROL 名前空間]** として、前のレッスンで作成した [!UICONTROL  名前空間 ] である `Luma CRM Id` と入力します
 
    >[!WARNING]
    >
@@ -418,13 +418,20 @@ CRM ID 値を取得したので、それを [!UICONTROL ID マップ &#x200B;] �
 
 1. **[!UICONTROL ID]** として、このアイコンを選択してデータ要素選択モーダルを開き、`CRM Id` データ要素を選択します
 1. **[!UICONTROL 認証状態]** として、「**[!UICONTROL 認証済み]**」を選択します
-1. **[!UICONTROL プライマリ]** _オフ_ のままにします。 CRM ID は Luma web サイトへのほとんどの訪問者に対して存在しないので、_プライマリ識別子として ECID を上書きしないでください_。 ECID 以外をプライマリ識別子として使用することはめったにありません。 通常、これらの手順ではデフォルト設定については言及しませんが、後で自分の実装で問題が発生するのを防ぐために、この設定を呼び出します。
+1. **[!UICONTROL プライマリを確認]**
+
+   >[!TIP]
+   >
+   > Adobeでは、`Luma CRM Id` などの人物を表す ID を [!UICONTROL  プライマリ ] ID として送信することをお勧めします。
+   >
+   > ID マップに人物識別子（例：`Luma CRM Id`）が含まれる場合、その人物識別子は [!UICONTROL  プライマリ ] ID になります。 それ以外の場合は、`ECID` が [!UICONTROL  プライマリ ] ID になります。
+
 1. 「**[!UICONTROL ライブラリに保存]**」ボタンを選択します（作業ライブラリ `Luma Platform Tutorial` 残ります）。
    ![CRM ID を ID マップデータ要素に追加 ](assets/websdk-property-dataElement-identityMap.png)
 
 >[!NOTE]
 >
->[!UICONTROL ID マップ &#x200B;] データタイプを使用して、複数の識別子を渡すことができます。
+>[!UICONTROL ID マップ ] データタイプを使用して、複数の識別子を渡すことができます。
 
 ### ID マップデータ要素を XDM オブジェクトに追加します
 
