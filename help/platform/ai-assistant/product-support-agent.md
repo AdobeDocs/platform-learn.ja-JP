@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 製品サポート担当者
 
-Product Support Agent は、Adobeのエキスパートサポートチームによってキュレートされた膨大なナレッジソースや、独自のデータを活用して、ワークフロー内のトラブルシューティングを可能にすることで、カスタマーケアの問題を解決するのに役立つ常時稼動の AI エージェントです。 追加のヘルプが必要な場合は、製品サポートエージェントで、詳細なコンテキスト情報を含むサポートケースを作成できるので、サポートチケットの作成に必要な時間と作業を大幅に削減できます。 詳しくは、[ 製品サポートエージェントのドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/new-features/customer-support) を参照してください。
+Product Support Agent は、Adobeのエキスパートサポートチームによってキュレートされた膨大なナレッジソースや、独自のデータを活用して、ワークフロー内のトラブルシューティングを可能にすることで、カスタマーケアの問題を解決するのに役立つ常時稼動の AI エージェントです。 追加のヘルプが必要な場合は、製品サポートエージェントで、詳細なコンテキスト情報を含むサポートケースを作成できるので、サポートチケットの作成に必要な時間と作業を大幅に削減できます。 詳しくは、[ 製品サポートエージェントのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/new-features/customer-support) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
