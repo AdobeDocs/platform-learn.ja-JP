@@ -4,9 +4,9 @@ description: 基盤 – リアルタイム顧客プロファイル – オーデ
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 [Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL &#x200B; サンドボックス &#x200B;] を選択すると、画面が変更され、専用の [!UICONTROL &#x200B; サンドボックス &#x200B;] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 左側のメニューの **オーディエンス** に移動します。 このページでは、既存のすべてのオーディエンスの概要を確認できます。 「**+ オーディエンスを作成**」ボタンをクリックして、新しいオーディエンスの作成を開始します。
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![セグメント化](./images/menusegbr.png)
 
-新しいオーディエンスビルダーに移動すると、すぐに「**属性**」メニューオプションと「**XDM 個人プロファイル**」参照が表示されます。
+オーディエンスビルダーに移動すると、すぐに **属性** メニューオプションと **XDM 個人プロファイル** 参照が表示されます。
 
 ![セグメント化](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ gender 属性に到達するには、XDM を理解し、理解する必要があ
 
 ![セグメント化](./images/pv.png)
 
+セグメントの時間条件を **過去 24 時間以内** に設定します。
+
+![セグメント化](./images/pv1.png)
+
 オーディエンスビルダーに要素を追加するたびに、「**推定を更新**」ボタンをクリックして、オーディエンスの母集団の新しい推定を取得できます。
 
 これまでのところ、UI を使用してオーディエンスを作成しただけでなく、オーディエンスを作成するためのコードオプションもあります。
@@ -102,7 +106,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 ![セグメント化](./images/previewprofilesdtl.png)
 
 最後に、オーディエンスに名前を付けます。
-**評価方法** を **ストリーミング** に設定し、「**公開**」をクリックします。
+**Evaluation method** を **Edge** に設定し、「**公開**」をクリックします。
 
 命名規則として、次を使用します。
 

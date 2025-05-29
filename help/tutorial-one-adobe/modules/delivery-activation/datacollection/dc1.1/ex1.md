@@ -4,10 +4,10 @@ description: Foundation - Adobe Experience Platform Data Collection と Web SDK�
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 3%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,13 @@ Adobe Experience Platform Data Collection は、企業が様々なユースケ�
 
 ## UI の探索
 
-[Adobe Experience Platform Data Collection](https://experience.adobe.com/#/data-collection/) に移動します。
+[Adobe Experience Platform Data Collection](https://experience.adobe.com/#/data-collection/) に移動します。 正しい環境を使用していることを確認します。これは `--aepImsOrgName--` です。
+
+>[!NOTE]
+>
+>このチュートリアルは、環境 **Experience Platform International** を使用してドキュメント化されています。 環境名は異なる可能性が高いので、スクリーンショットに **Experience Platform International** という名前が表示される場合は、必ず `--aepImsOrgName--` を付けた独自の環境名に置き換える必要があります。
+
+![Launch のプロパティビュー ](./images/launch0.png)
 
 **タグ** に移動します。 **[!UICONTROL プロパティ]** ビューが表示されます。 ここに一覧表示されるプロパティは、チュートリアル管理のためのものです。 これらのプロパティは、次の項目を表します。
 

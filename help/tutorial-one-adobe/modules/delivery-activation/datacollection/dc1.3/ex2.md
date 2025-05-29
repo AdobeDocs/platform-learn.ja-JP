@@ -4,10 +4,10 @@ description: 基盤 – FAC - スキーマ、データモデル、リンクの�
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 6%
+source-wordcount: '683'
+ht-degree: 7%
 
 ---
 
@@ -67,7 +67,7 @@ Snowflakeで、**管理者/アカウント** に移動します。 アカウン�
 
 ![FAC](./images/fdb5.png)
 
-連合データベースを選択し、「**+ テーブルを追加**」をクリックします。
+連合データベースを選択して、「**次へ**」をクリックします。
 
 ![FAC](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Snowflakeで、**管理者/アカウント** に移動します。 アカウン�
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-「**追加**」をクリックします。
+「**次へ**」をクリックします。
 
 ![FAC](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 この演習では、変更は必要ありません。
 
-「**作成**」をクリックします。
+「**完了**」をクリックします。
 
 ![FAC](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 ![FAC](./images/fdb10.png)
 
-データのサンプルが表示されます。
+データのサンプルが表示されます。 このデータはSnowflakeから直接読み込まれ、AEPには保持されません。
 
 ![FAC](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 これで、スキーマ間のリンクの定義を開始できます。 リンクの定義を開始するには、「**リンクを作成**」をクリックする必要があります。
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-まず、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_PERSONS` の間のリンクを定義します。
+まず、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_PERSONS` の間のリンクを定義する必要があります。
 
 「**追加**」をクリックします。
 
@@ -150,7 +150,9 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 ![FAC](./images/fdb17.png)
 
-次に、テーブル `--aepUserLdap--_HOUSEHOLDS` と `--aepUserLdap--_PERSONS` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_HOUSEHOLDS` と `--aepUserLdap--_PERSONS` の間のリンクを定義する必要があります。
+
+「**追加**」をクリックします。
 
 ![FAC](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 ![FAC](./images/fdb20.png)
 
-次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_MONTHLY_DATA_USAGE` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_MONTHLY_DATA_USAGE` の間のリンクを定義する必要があります。
+
+「**追加**」をクリックします。
 
 ![FAC](./images/fdb21.png)
-
 
 ### ユーザー – 世帯
 
@@ -171,7 +174,9 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 ![FAC](./images/fdb22.png)
 
-次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_HOUSEHOLDS` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_HOUSEHOLDS` の間のリンクを定義する必要があります。
+
+「**追加**」をクリックします。
 
 ![FAC](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 ![FAC](./images/fdb24.png)
 
-次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_MOBILE_DATA_USAGE` の間のリンクを定義します。
+次に、テーブル `--aepUserLdap--_USERS` と `--aepUserLdap--_MOBILE_DATA_USAGE` の間のリンクを定義する必要があります。
+
+「**追加**」をクリックします。
 
 ![FAC](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 ![FAC](./images/fdb26.png)
 
-これで、AEPの設定が完了しました。 これで、連合オーディエンス構成で連合データの使用を開始できます。
+これで、Adobe Experience Platformでの Federated Database の設定が完了しました。 これで、連合オーディエンス構成で連合データの使用を開始できます。
 
 ## 次の手順
 
