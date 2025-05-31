@@ -20,4 +20,4 @@ ht-degree: 0%
 AI Assistant for Audiences が、価値の高いセグメントの特定、オーディエンス戦略の最適化、時間の節約にどのように役立つかをご覧ください。
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459661/?learn=on&enablevpops=true&captions=jpn)

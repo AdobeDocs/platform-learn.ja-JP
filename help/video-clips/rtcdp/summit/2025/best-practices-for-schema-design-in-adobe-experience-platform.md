@@ -20,4 +20,4 @@ ht-degree: 0%
 拡張性、検証、Adobe Experience Platformのデータモデルとの整合性に関するこれらのベストプラクティスを使用すると、スキーマ設計におけるコストのかかるミスを避けることができます。
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460099/?learn=on&enablevpops=true&captions=jpn)

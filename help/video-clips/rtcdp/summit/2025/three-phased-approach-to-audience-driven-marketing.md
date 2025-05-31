@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDPを使用してオーディエンス戦略を構築、スケーリングおよび最適化するためのシンプルな 3 段階のフレームワークについて説明します。
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462991/?learn=on&enablevpops=true&captions=jpn)

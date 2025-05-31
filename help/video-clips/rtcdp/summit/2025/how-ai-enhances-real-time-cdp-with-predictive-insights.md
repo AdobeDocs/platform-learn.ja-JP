@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDPのAdobe予測 AI 機能が、マーケターがセグメント化、パーソナライゼーションおよびオーディエンスインサイトを最適化するのにどのように役立つかをご確認ください。
 
 <!-- 85_OS512_3442427_65_how-ai-enhances-realtime-cdp-with-predictive-insights -->
->[!VIDEO](https://video.tv.adobe.com/v/3458200/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459957/?learn=on&enablevpops=true&captions=jpn)

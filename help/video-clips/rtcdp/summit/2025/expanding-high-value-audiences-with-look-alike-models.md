@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDPの類似オーディエンスモデルが、類似の高価値顧客を特定することでマーケターがリーチを拡大する方法を説明します。
 
 <!-- 82_OS512_3442427_58_expanding-highvalue-audiences-with-lookalike-models -->
->[!VIDEO](https://video.tv.adobe.com/v/3458190/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459923/?learn=on&enablevpops=true&captions=jpn)

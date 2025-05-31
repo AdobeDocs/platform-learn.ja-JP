@@ -20,4 +20,4 @@ ht-degree: 0%
 アイディエーションから最適化に至るまでの、Adobeのエンドツーエンドのユースケースのアクティベーションプロセスの 6 つの段階を理解します。
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460243/?learn=on&enablevpops=true&captions=jpn)

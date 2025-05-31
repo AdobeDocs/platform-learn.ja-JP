@@ -20,4 +20,4 @@ ht-degree: 0%
 AdobeがAEPを内部的に使用して、顧客プロファイルを統合し、エンゲージメントを促進し、チーム間のオペレーションを拡大する方法について説明します。
 
 <!-- 62_S655_3442541_255_adobes-internal-use-of-aep-driving-experienceled-growth -->
->[!VIDEO](https://video.tv.adobe.com/v/3458328/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459694/?learn=on&enablevpops=true&captions=jpn)

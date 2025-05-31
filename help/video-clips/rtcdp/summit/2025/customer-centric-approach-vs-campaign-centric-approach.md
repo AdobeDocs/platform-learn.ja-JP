@@ -20,4 +20,4 @@ ht-degree: 0%
 キャンペーン中心から顧客中心のアプローチに移行して、持続可能な成長を促進し、顧客体験を向上させる方法を説明します。
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460092/?learn=on&enablevpops=true&captions=jpn)

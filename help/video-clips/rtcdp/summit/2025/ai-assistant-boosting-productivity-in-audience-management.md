@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobeの AI Assistant で Audience Management タスクを簡素化し、マーケターにインサイトを提供し、トレンドを予測する方法をご覧ください。
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459595/?learn=on&enablevpops=true&captions=jpn)

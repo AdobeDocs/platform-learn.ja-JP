@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Real-Time CDPのオーディエンス用 AI アシスタントが、マーケターがサイズ推定、傾向スコアリング、リアルタイムインサイトを使用してオーディエンス戦略を最適化する方法を説明します。
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463013/?learn=on&enablevpops=true&captions=jpn)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobeが統合プロファイルを使用して、70 以上のチーム間のコラボレーションを促進し、Creative Cloud ユーザーにパーソナライズされたエクスペリエンスを提供する方法を説明します。
 
 <!-- 62_S655_3442541_146_adobes-internal-use-of-unified-profiles-for-creative-cloud -->
->[!VIDEO](https://video.tv.adobe.com/v/3458283/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459672/?learn=on&enablevpops=true&captions=jpn)

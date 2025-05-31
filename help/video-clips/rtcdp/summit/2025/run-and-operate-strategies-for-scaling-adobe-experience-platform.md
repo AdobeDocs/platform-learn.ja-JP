@@ -20,4 +20,4 @@ ht-degree: 0%
 明確なプロセスとツール戦略により、AdobeがAEPのスケーラブルで信頼性の高い運用を確実に行う方法について説明します。
 
 <!-- 62_S655_3442541_134_run-and-operate-strategies-for-scaling-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458255/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3461114/?learn=on&enablevpops=true&captions=jpn)
