@@ -3,16 +3,16 @@ title: はじめに – インストールするアプリケーション
 description: はじめに – インストールするアプリケーション
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 2%
 
 ---
 
 # インストールするアプリケーション
 
-ライブワークショップに参加する前に必要な事前作業の概要を以下に示します。
+チュートリアルを開始する前に、コンピューターにインストールする必要があるアプリケーションの概要を以下に示します。
 
 ## Adobe Creative Cloud
 

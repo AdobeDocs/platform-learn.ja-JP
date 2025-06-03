@@ -4,10 +4,10 @@ description: はじめに – Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 3%
+source-wordcount: '661'
+ht-degree: 2%
 
 ---
 
@@ -32,6 +32,10 @@ ht-degree: 3%
 ![Adobe I/O新規統合 ](./images/iocomp.png){zoomable="yes"}
 
 ### FIREFLY SERVICES API
+
+>[!IMPORTANT]
+>
+>選択したラーニングパスによっては、Firefly Services API にアクセスできない場合があります。 Firefly Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、{ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
 
 この画像が表示されます。 「**+ プロジェクトに追加**」、「**API**」の順に選択します。
 
@@ -59,6 +63,10 @@ ht-degree: 3%
 
 ### PHOTOSHOP SERVICES API
 
+>[!IMPORTANT]
+>
+>選択したラーニングパスによっては、Photoshop Services API にアクセスできない場合があります。 Photoshop Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、{ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
+
 「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
 
 ![Azure ストレージ ](./images/ps2.png){zoomable="yes"}
@@ -85,11 +93,15 @@ ht-degree: 3%
 
 ### ADOBE EXPERIENCE PLATFORM API
 
+>[!IMPORTANT]
+>
+>選択したラーニングパスによっては、Adobe Experience Platform API にアクセスできない場合があります。 Adobe Experience Platform API へのアクセスは、ラーニングパス **AEP + アプリ**、（すべて **を使用している場合、または** 対面式ライブワークショップ **に参加している場合** のみです。 これらの学習パスに参加していない場合は、この手順をスキップできます。
+
 「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
 
 ![Azure ストレージ ](./images/aep1.png){zoomable="yes"}
 
-**Adobe Experience Platform を選択し**&#x200B;**Experience Platform API** を選択します。 「**次へ**」を選択します。
+**Adobe Experience Platform を選択し****Experience Platform API** を選択します。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/aep2.png){zoomable="yes"}
 

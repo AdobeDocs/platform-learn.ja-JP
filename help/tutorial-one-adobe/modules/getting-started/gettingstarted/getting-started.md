@@ -4,10 +4,10 @@ description: はじめに – 1 つのAdobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 2%
+source-wordcount: '583'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +20,49 @@ ht-degree: 2%
 - イネーブルメント環境の設定方法を学ぶ
 - Web サイトとモバイルアプリケーションの使用方法を学ぶ
 
-## 前提条件
+## ラーニングパス
 
-- Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform Data Collection へのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- デモシステムへのアクセス （次へ）: [https://dsn.adobe.com](https://dsn.adobe.com)
+### パス：Firefly Services
+
+**Adobe Firefly Services** に焦点を当てたオンデマンドトレーニングに新規登録した場合は、次の演習のみ必要です。
+
+- [Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
+- [Adobe I/O プロジェクトの設定](./ex6.md)
+- [ 方法 1:Postmanの設定 ](./ex7.md) または [ 方法 2:PostBuster の設定 ](./ex8.md)
+- [インストールするアプリケーション](./ex9.md)
+
+### パス：Workfront Fusion
+
+**Adobe Workfront Fusion** に焦点を当てたオンデマンドトレーニングに新規登録した場合は、次の演習のみ必要です。
+
+- [Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
+- [Adobe I/O プロジェクトの設定](./ex6.md)
+- [ 方法 1:Postmanの設定 ](./ex7.md) または [ 方法 2:PostBuster の設定 ](./ex8.md)
+- [インストールするアプリケーション](./ex9.md)
+
+### パス：AEM CS と EDS
+
+**Adobe Experience Manager Cloud Service** および **Edge Delivery Services** に焦点を当てたオンデマンドトレーニングに登録した場合は、次の演習のみ必要です。
+
+- [Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
+- [インストールするアプリケーション](./ex9.md)
+
+### パス :LIVE、ALL またはAEP + アプリ
+
+**ライブワークショップ** に参加している場合、または **ALL** に焦点を当てたオンデマンドトレーニングに登録している場合、**AEP + アプリ** に焦点を当てたオンデマンドトレーニングに登録している場合は、次の演習が必要です。
+
+- [Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
+- [Adobe Experience Platform Data Collection クライアントプロパティを設定する場合は、次にデモシステムを使用してください](./ex2.md)
+- [データストリームの作成](./ex3.md)
+- [Web サイトの使用](./ex4.md)
+- [モバイルアプリの使用](./ex5.md)
+- [Adobe I/O プロジェクトの設定](./ex6.md)
+- [ 方法 1:Postmanの設定 ](./ex7.md) または [ 方法 2:PostBuster の設定 ](./ex8.md)
+- [インストールするアプリケーション](./ex9.md)
 
 ## 演習
+
+取っている学習パスによっては、以下の演習の一部が必要な場合もあれば、不要な場合もあります。
 
 [Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
 
@@ -67,6 +103,10 @@ ht-degree: 2%
 >Adobeの社員の場合は、手順に従って PostBuster をインストールしてください。
 
 この演習では、様々なAdobe API エンドポイントとやり取りするための PostBuster 環境を準備します
+
+[インストールするアプリケーション](./ex9.md)
+
+この演習では、チュートリアルを開始する前に、コンピュータに必要なすべてのアプリケーションをインストールする方法を説明します。
 
 ![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
