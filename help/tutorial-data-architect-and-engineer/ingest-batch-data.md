@@ -26,7 +26,7 @@ ht-degree: 0%
 
 演習を開始する前に、この短いビデオを視聴してデータ取り込みの詳細を確認してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346833?learn=on&enablevpops&captions=jpn)
 
 
 ## 必要な権限

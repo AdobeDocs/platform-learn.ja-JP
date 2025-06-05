@@ -53,7 +53,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 演習を開始する前に、この短いビデオを視聴して、Adobe Experience Platformでの ID について詳しく確認してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422774?learn=on&enablevpops&captions=jpn)
 
 次に、Luma CRM ID の名前空間を作成します。
 
