@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Experience Platformでは、複数のソースからのデータを統合�
 **データアーキテクト** は、このチュートリアル以外で結合ポリシーを作成する必要があります。
 
 演習を開始する前に、この短いビデオを視聴して結合ポリシーの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/345078?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 必要な権限
 
@@ -55,7 +55,7 @@ Adobe Experience Platformでは、複数のソースからのデータを統合�
 
 ![ 結合ポリシー画面 ](assets/mergepolicies-default.png)
 
-プロファイルに対して複数のスキーマが有効な場合、基本クラスを共有するすべてのプロファイル対応レコードスキーマに対して、[!UICONTROL &#x200B; 結合スキーマ &#x200B;] が自動的に作成されます。 [!UICONTROL &#x200B; 和集合スキーマ &#x200B;] タブに移動すると **[!UICONTROL 和集合スキーマ]** を表示できます。
+プロファイルに対して複数のスキーマが有効な場合、基本クラスを共有するすべてのプロファイル対応レコードスキーマに対して、[!UICONTROL  結合スキーマ ] が自動的に作成されます。 [!UICONTROL  和集合スキーマ ] タブに移動すると **[!UICONTROL 和集合スキーマ]** を表示できます。
 
 ![ 結合ポリシー画面 ](assets/mergepolicies-unionSchema.png)
 
@@ -83,7 +83,7 @@ ExperienceEvent クラスには結合スキーマがないことに注意して�
 1. 「**[!UICONTROL 参照]** タブに移動します。
 1. **[!UICONTROL 結合ポリシー]** を新しい `Loyalty Prioritized` 合ポリシーに変更します。
 1. **[!UICONTROL ID 名前空間]** として、`Luma CRM Id` を使用します
-1. **[!UICONTROL ID 値]** として、`112ca06ed53d3db37e4cea49cc45b71e` を使用します
+1. **[!UICONTROL ID 値]** として、`b642b4217b34b1e8d3bd915fc65c4452` を使用します
 1. 「**[!UICONTROL プロファイルを表示]**」ボタンを選択します
 1. `Daniel` が帰ってきた！
 
@@ -110,7 +110,7 @@ ExperienceEvent クラスには結合スキーマがないことに注意して�
 1. 「**[!UICONTROL 参照]** タブに移動します。
 1. **[!UICONTROL 結合ポリシー]** を新しい `Loyalty Only` 合ポリシーに変更します。
 1. **[!UICONTROL ID 名前空間]** として、`Luma CRM Id` を使用します
-1. **[!UICONTROL ID 値]** として、`112ca06ed53d3db37e4cea49cc45b71e` を使用します
+1. **[!UICONTROL ID 値]** として、`b642b4217b34b1e8d3bd915fc65c4452` を使用します
 1. 「**[!UICONTROL プロファイルを表示]**」ボタンを選択します
 1. プロファイルが見つからないことを確認します。
    ![ ロイヤルティのみ。CRM ID はルックアップされません。](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ CRM ID は `Luma Loyalty Dataset` の ID フィールドですが、プロファ
 
 ## その他のリソース
 
-* [ 結合ポリシードキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ja)
+* [ 結合ポリシードキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [ 結合ポリシー API （リアルタイム顧客プロファイル API の一部）リファレンス ](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 次に、[ データガバナンスフレームワーク ](apply-data-governance-framework.md) に進みます。

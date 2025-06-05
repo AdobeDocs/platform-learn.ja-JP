@@ -1,27 +1,27 @@
 ---
 title: タグを使用したAdobe Experience Platform ID サービスの追加
-description: Adobe Experience Platform ID サービス拡張機能を追加し、「Set Customer IDs」アクションを使用して顧客 ID を収集する方法について説明します。このレッスンは、web サイトでのExperience Cloudの実装チュートリアルの一部です。
+description: Adobe Experience Platform ID サービス拡張機能を追加し、「Set Customer IDs」アクションを使用して顧客 ID を収集する方法について説明します。このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1945'
-ht-degree: 65%
+ht-degree: 67%
 
 ---
 
 # Adobe Experience Platform ID サービスの追加
 
-このレッスンでは、[Adobe Experience Platform ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ja)の実装と顧客 ID の送信に必要な手順を説明します。
+このレッスンでは、[Adobe Experience Platform ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)の実装と顧客 ID の送信に必要な手順を説明します。
 
-[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、ソリューション間のオーディエンス共有などのExperience Cloud機能を強化するために、すべてのAdobeソリューションで共通の訪問者 ID を設定します。 また、サービスに独自の顧客 ID を送信して、クロスデバイスターゲティングを有効にし、顧客関係管理（CRM）システムとのさらなる統合を可能にすることもできます。
+[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、ソリューション間のオーディエンス共有などのExperience Cloud機能を強化するために、すべてのAdobe ソリューションで共通の訪問者 ID を設定します。 また、サービスに独自の顧客 ID を送信して、クロスデバイスターゲティングを有効にし、顧客関係管理（CRM）システムとのさらなる統合を可能にすることもできます。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
 >
-> * Platform launch（クライアントサイド）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
+> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
+> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
 > * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
@@ -90,14 +90,13 @@ ID サービス拡張機能は、ルールアクションを使用せずにリ�
    1. 左側の `Cookies` を展開します。
    1. ドメイン（`https://luma.enablementadobe.com`）をクリックします。
    1. 右側の AMCV_ cookie を探します。ハードコードされたタグプロパティと独自のタグプロパティの両方を使用して Luma サイトを読み込んでから、いくつかのことがわかります。
-
       ![AMCV_ cookie の検証](images/idservice-AMCVCookie.png)
 
 これで作業は完了です。最初の拡張機能が追加されました。ID サービスの設定オプションについて詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=ja)を参照してください。
 
 ## 顧客 ID の送信
 
-次に、顧客 ID を [ID サービス](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ja)に送信します。これにより、Experience Cloud と [CRM を統合](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)し、デバイスをまたいで訪問者を追跡できます。
+次に、顧客 ID を [ID サービス](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)に送信します。これにより、Experience Cloud と [CRM を統合](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)し、デバイスをまたいで訪問者を追跡できます。
 
 前の「[データ要素、ルールおよびライブラリの追加](add-data-elements-rules.md)」レッスンでは、データ要素を作成してルールで使用しました。次に、訪問者が認証されたときに、同じ方法で顧客 ID を送信します。
 
@@ -206,7 +205,7 @@ Adobe Experience Platform ID サービスは、「Set Customer IDs」アクシ�
 
    ![新しいアクションの追加](images/idservice-customerId-addAction.png)
 
-   1. **[!UICONTROL 拡張機能]** で、「**[!UICONTROL Experience CloudID サービス]**」を選択します
+   1. **[!UICONTROL 拡張機能]** で、「**[!UICONTROL Experience Cloud ID サービス]**」を選択します
    1. **[!UICONTROL アクションタイプ]** で「**[!UICONTROL 顧客 ID を設定]**」を選択します
    1. **[!UICONTROL 統合コード]** に `crm_id` と入力します
    1. **[!UICONTROL 値]** にデータ要素セレクターモーダルを開き、`Email (Hashed)` を選択します
@@ -237,7 +236,7 @@ Adobe Experience Platform ID サービスは、「Set Customer IDs」アクシ�
 
    ![上部のナビゲーションで「ログイン」をクリックする](images/idservice-loginNav.png)
 
-1. ユーザー名として `test@adobe.com` を入力します。
+1. ユーザー名として `test@test.com` を入力します。
 1. パスワードとして `test` を入力します。
 1. 「**[!UICONTROL ログイン]**」ボタンをクリックします
 

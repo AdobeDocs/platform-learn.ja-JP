@@ -1,11 +1,11 @@
 ---
 title: タグを使用したExperience Cloud統合の実装
-description: Adobe Experience Cloud の実装で Audiences、A4T および顧客属性の統合を検証する方法について説明します。このレッスンは、web サイトでのExperience Cloudの実装チュートリアルの一部です。
+description: Adobe Experience Cloud の実装で Audiences、A4T および顧客属性の統合を検証する方法について説明します。このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1199'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 85%
 >
 >これらの統合を完全に使用するために必要なユーザー権限の要件、アカウント設定、プロビジョニング手順は多数ありますが、それらはこのチュートリアルの範囲外ですので、ここでは扱いません。 Experience Cloud の現在の実装でこれらの統合をまだ使用していない場合は、以下を検討する必要があります。
 >
->* [コアサービス統合](https://experienceleague.adobe.com/ja/docs/core-services/interface/services/getting-started)の完全な要件の確認
->* [Analytics for Target 統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/a4t/before-implement)の完全な要件の確認
+>* [コアサービス統合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)の完全な要件の確認
+>* [Analytics for Target 統合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)の完全な要件の確認
 
 ## Audiences
 
@@ -71,7 +71,7 @@ A4T の実装に必要な主な要件は、次のとおりです（既に済ん�
 
 ## Analytics for Target（A4T）
 
-[Analytics for Target（A4T）](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ja)統合を使用すれば、 Analytics データを Target のレポート指標のソースとして活用することができます。
+[Analytics for Target（A4T）](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)統合を使用すれば、 Analytics データを Target のレポート指標のソースとして活用することができます。
 
 A4T の実装に必要な主な要件は、次のとおりです（既に済んでいます）。
 
@@ -132,7 +132,7 @@ A4Tアクティビティの一貫としてページ読み込みの範囲（単�
 
    ![ 右上の「ログイン」をクリックします ](images/idservice-loginNav.png)
 
-1. ユーザー名として `test@adobe.com` を入力します。
+1. ユーザー名として `test@test.com` を入力します。
 1. パスワードとして `test` を入力します。
 1. 「**[!UICONTROL ログイン]**」ボタンをクリックします
 
@@ -148,4 +148,4 @@ A4Tアクティビティの一貫としてページ読み込みの範囲（単�
 
    ![Analytics 顧客 ID の検証](images/integrations-analyticsCustomerIDValidation.png)
 
-[次へ「プロパティのPublish」 >](publish.md)
+[次に「プロパティの公開」 >](publish.md)

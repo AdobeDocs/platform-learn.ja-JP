@@ -4,10 +4,10 @@ description: Adobe Experience Platform Debuggerを使用して Platform web SDK�
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1172'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -22,11 +22,11 @@ Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使
 
 デバッガーをまだ使用したことがない場合は、次の 5 分間の概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/36086?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 このレッスンでは、[Adobe Experience Platform Debugger拡張機能 ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) を使用して、[Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) にハードコードされたタグプロパティを独自のプロパティに置き換えます。
 
-この手法は環境の切り替えと呼ばれるもので、後で自分の web サイトでタグを使用する際に役立ちます。 これにより、ブラウザーに実稼動 web サイトを読み込み、*開発* タグライブラリを使用できます。 この機能を使用すると、通常のコードリリースとは別に、タグの変更を自信を持って行い、検証できます。 結局のところ、マーケティングタグリリースと通常のコードリリースの分離は、顧客がそもそもタグを使用する主な理由の 1 つです。
+この手法は環境の切り替えと呼ばれ、後で自分の web サイトでタグを操作する際に役立ちます。 これにより、ブラウザーに実稼動 web サイトを読み込み、*開発* タグライブラリを使用できます。 この機能を使用すると、通常のコードリリースとは別に、タグの変更を自信を持って行い、検証できます。 結局、マーケティングタグリリースを通常のコードリリースから分離することが、顧客がタグを最初に使用する主な理由の 1 つです。
 
 ## 学習目標
 
@@ -90,7 +90,7 @@ Debugger を使用して、Platform Web Edge Network実装からトリガーさ�
 
    ![Adobe Experience Platform Web SDK リクエスト ](assets/validate-aep-screen.png)
 
-1. [!UICONTROL &#x200B; 変数を更新 &#x200B;] アクション、および `AEP Web SDK ExperienceEvent` フィールドグループに準拠するその他の標準変数で指定した `web.webpagedetails.pageView` イベントタイプを確認する方法をメモします
+1. [!UICONTROL  変数を更新 ] アクション、および `AEP Web SDK ExperienceEvent` フィールドグループに準拠するその他の標準変数で指定した `web.webpagedetails.pageView` イベントタイプを確認する方法をメモします
 
    ![ イベントの詳細 ](assets/validate-event-pageViews.png)
 
@@ -108,7 +108,7 @@ Debugger を使用して、Platform Web Edge Network実装からトリガーさ�
 
 ID マップの詳細を検証することもできます。
 
-1. 資格情報 `test@adobe.com`/`test` を使用して Luma サイトにログインします。
+1. 資格情報 `test@test.com`/`test` を使用して Luma サイトにログインします。
 
 1. [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html)に戻ります。
 
@@ -143,7 +143,7 @@ ID マップの詳細を検証することもできます。
 
 [ データストリームの設定 ](configure-datastream.md) のレッスンで学んだように、Platform Web SDKは、最初にデジタルプロパティから Platform Edge Networkにデータを送信します。 次に、Platform Edge Networkは、データストリームで有効になっている対応するサービスに対して、サーバーサイドのリクエストを追加します。 Platform Edge Networkによって行われたサーバーサイドリクエストを Debugger のEdge Trace を使用して検証できます。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Edge Trace の有効化
@@ -169,4 +169,4 @@ Edge Trace を有効にする手順は次のとおりです。
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

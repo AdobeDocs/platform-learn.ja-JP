@@ -1,10 +1,10 @@
 ---
-title: Mobile SDK を使用したモバイルアプリでの ID データの収集
+title: Mobile SDKを使用したモバイルアプリでの ID データの収集
 description: モバイルアプリで ID データを収集する方法を説明します。
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ID 名前空間は、ID の関連先コンテキストのインジケーター�
 
 >[!NOTE]
 >
->Mobile SDK は、アプリのインストール時にExperience CloudID （ECID）という名前の一意の ID を独自の名前空間で生成します。 この ECID は、モバイルデバイスの永続メモリに保存され、ヒットごとに送信されます。 ユーザーがアプリをアンインストールするとき、またはユーザーが Mobile SDK グローバルプライバシーステータスをオプトアウトに設定するとき、ECID は削除されます。 サンプル Luma アプリでは、アプリを削除して再インストールし、独自の一意の ECID を持つ新しいプロファイルを作成する必要があります。
+>Mobile SDKは、アプリのインストール時にExperience Cloud ID （ECID）という名前の一意の ID を独自の名前空間内に生成します。 この ECID は、モバイルデバイスの永続メモリに保存され、ヒットごとに送信されます。 ECID は、ユーザーがアプリをアンインストールするとき、またはユーザーが Mobile SDK グローバルプライバシーステータスをオプトアウトに設定するとき、削除されます。 サンプル Luma アプリでは、アプリを削除して再インストールし、独自の一意の ECID を持つ新しいプロファイルを作成する必要があります。
 
 
 ID 名前空間を新規作成するには：
@@ -95,7 +95,7 @@ ID 名前空間を新規作成するには：
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. `Identity.updateIdentities` API 呼び出しの一部として `IdentityItem` オブジェクトをEdge Networkに送信します。
+   1. `IdentityItem` オブジェクトを `Identity.updateIdentities` API 呼び出しの一部としてEdge Networkに送信します。
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
@@ -116,7 +116,7 @@ ID 名前空間を新規作成するには：
 
 ## ID を削除
 
-[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、識別子のEdge Networkへの送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=ja) を参照してください。
+[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、Edge Networkへの識別情報の送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) を参照してください。
 
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動し、`func removeIdentities(emailAddress: String, crmId: String)` 関数に次のコードを追加します。
 
@@ -125,7 +125,7 @@ ID 名前空間を新規作成するには：
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL General]**/**[!UICONTROL LoginSheet]** に移動し、「**[!UICONTROL ログアウト]**」ボタンを選択するときに実行するコードを見つけます。 次のコードを追加します。
@@ -138,9 +138,9 @@ ID 名前空間を新規作成するには：
 
 ## Assurance での検証
 
-1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
+1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 1. Luma アプリ内
-   1. **[!UICONTROL ホーム]** タブを選択し、Assurance アイコンを左に移動します。
+   1. 「**[!UICONTROL ホーム]**」タブを選択し、「Assurance」アイコンを左に動かします。
    1. 「」を選択します アイコン <img src="assets/login.png" width="15" /> 右上から選択します。
 
       <img src="./assets/identity1.png" width="300">
@@ -152,13 +152,13 @@ ID 名前空間を新規作成するには：
       <img src="./assets/identity2.png" width="300">
 
 
-1. **[!UICONTROL com.adobe.griffon.mobile]** ベンダーの **[!UICONTROL Edge ID 更新 ID]** イベントの Assurance Web インターフェイスを確認します。
+1. Assuranceの Web インターフェイスで、{com.adobe.griffon.mobile ]**ベンダーの**[!UICONTROL  0}Edge ID 更新 ID ]**イベントを確認します。**[!UICONTROL 
 1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトのデータを確認します。 更新した ID が表示されます。
    ![id 更新の検証 ](assets/identity-validate-assurance.png)
 
 ## ID グラフを使用して検証
 
-[Experience Platformのレッスン ](platform.md) の手順を完了すると、Platform ID グラフビューアで ID 取得を確認できます。
+[Experience Platformのレッスン ](platform.md) の手順を完了すると、Platforms ID グラフビューアで ID 取得を確認できます。
 
 1. データ収集 UI で **[!UICONTROL ID]** を選択します。
 1. 上部バーの「**[!UICONTROL ID グラフ]**」を選択します。
@@ -174,8 +174,8 @@ ID 名前空間を新規作成するには：
 
 >[!SUCCESS]
 >
->これで、Edge Network内および（設定時に）Adobe Experience Platformで ID を更新するアプリの設定が完了しました。
+>これで、Edge Networkおよび（設定時に）Adobe Experience Platformで ID を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 次のトピック：**[プロファイル・データの収集](profile.md)**
