@@ -90,6 +90,7 @@ ID サービス拡張機能は、ルールアクションを使用せずにリ�
    1. 左側の `Cookies` を展開します。
    1. ドメイン（`https://luma.enablementadobe.com`）をクリックします。
    1. 右側の AMCV_ cookie を探します。ハードコードされたタグプロパティと独自のタグプロパティの両方を使用して Luma サイトを読み込んでから、いくつかのことがわかります。
+
       ![AMCV_ cookie の検証](images/idservice-AMCVCookie.png)
 
 これで作業は完了です。最初の拡張機能が追加されました。ID サービスの設定オプションについて詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=ja)を参照してください。

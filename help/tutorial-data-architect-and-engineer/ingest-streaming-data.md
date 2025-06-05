@@ -80,7 +80,7 @@ ht-degree: 0%
 
 まず、データストリームを設定します。 データストリームは、Web SDK呼び出しからデータを受信した後にデータを送信する場所を Adobe Edge ネットワークに指示します。 例えば、データをExperience Platform、Adobe AnalyticsまたはAdobe Targetに送信しますか？ データストリームは、データ収集ユーザーインターフェイス（旧称 Launch）で管理され、web SDKでのデータ収集にとって重要です。
 
-[!UICONTROL  データストリーム ] を作成するには：
+[!UICONTROL &#x200B; データストリーム &#x200B;] を作成するには：
 
 1. [Experience Platform Data Collection ユーザーインターフェイスにログインします ](https://experience.adobe.com/launch/)
    <!--when will the edge config go live?-->
@@ -242,7 +242,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 ライブラリのビルドには数分かかる場合があり、完了すると、ライブラリ名の左側に緑のドットが表示されます。
 ![ ビルド完了 ](assets/websdk-property-buildComplete.png)
 
-[!UICONTROL  公開フロー ] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 開発環境では、単一のライブラリを使用します。
+[!UICONTROL &#x200B; 公開フロー &#x200B;] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 開発環境では、単一のライブラリを使用します。
 
 ## リクエスト内のデータを検証します
 
@@ -292,7 +292,7 @@ Experience Platform Debugger には、既存のタグプロパティを別のプ
 1. **[!UICONTROL events]** 行を開きます
 
    ![Adobe Experience Platform Web SDK リクエスト ](assets/websdk-debugger-platformNetwork.png)
-1. [!UICONTROL  イベントを送信 ] アクションで指定した `web.webpagedetails.pageView` イベントタイプと、`AEP Web SDK ExperienceEvent Mixin` 形式に準拠するその他の標準変数の確認方法に注意してください
+1. [!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションで指定した `web.webpagedetails.pageView` イベントタイプと、`AEP Web SDK ExperienceEvent Mixin` 形式に準拠するその他の標準変数の確認方法に注意してください
    ![ イベントの詳細 ](assets/websdk-debugger-eventDetails.png)
 1. これらのタイプのリクエストの詳細は、ブラウザーの web デベロッパーツールの「ネットワーク **タブにも表示さ** ます。 ファイルを開き、ページをリロードします。 `interact` を使用して呼び出しをフィルタリングし、呼び出しを見つけて選択し、「**ヘッダー**」タブの **リクエストペイロード** 領域を探します。
    ![ 「ネットワーク」タブ ](assets/websdk-debugger-networkTab.png)
@@ -348,7 +348,7 @@ Experience Platform Debugger には、既存のタグプロパティを別のプ
 >[!IMPORTANT]
 >
 >このタスクを完了するには、まずユーザーが実稼動サンドボックスにアクセスできるようにする必要があります。 別の製品プロファイルから実稼動用サンドボックスにまだアクセスできない場合は、す `Luma Tutorial Platform` に実稼動プロファイルを開いて、権限項目 **[!UICONTROL サンドボックス]**/**[!UICONTROL 実稼動]** を追加します。 その後、データ要素ページでシフト再ロードを実行して、キャッシュをクリアします
->>![実稼動サンドボックスを追加 ](assets/websdk-property-permissionToLoadSchema.png)
+>&#x200B;>![実稼動サンドボックスを追加 ](assets/websdk-property-permissionToLoadSchema.png)
 
 **[!UICONTROL データ要素]** ページで、次の操作を行います。
 
@@ -405,12 +405,12 @@ XDM フィールドにマッピングされたデータがあるので、イベ�
 
 ### CRM ID を ID マップデータ要素に追加します
 
-CRM ID 値を取得したので、それを [!UICONTROL ID マップ ] データ要素と呼ばれる特別なデータ要素タイプに関連付ける必要があります。
+CRM ID 値を取得したので、それを [!UICONTROL ID マップ &#x200B;] データ要素と呼ばれる特別なデータ要素タイプに関連付ける必要があります。
 
 1. `Identities` という名前のデータ要素を追加
 1. **[!UICONTROL Extension]** として、「**[!UICONTROL Adobe Experience Platform Web SDK]**」を選択します
 1. **[!UICONTROL データ要素タイプ]** として、「**[!UICONTROL ID マップ]**」を選択します
-1. **[!UICONTROL 名前空間]** として、前のレッスンで作成した [!UICONTROL  名前空間 ] である `Luma CRM Id` と入力します
+1. **[!UICONTROL 名前空間]** として、前のレッスンで作成した [!UICONTROL &#x200B; 名前空間 &#x200B;] である `Luma CRM Id` と入力します
 
    >[!WARNING]
    >
@@ -422,16 +422,16 @@ CRM ID 値を取得したので、それを [!UICONTROL ID マップ ] データ
 
    >[!TIP]
    >
-   > Adobeでは、`Luma CRM Id` などの人物を表す ID を [!UICONTROL  プライマリ ] ID として送信することをお勧めします。
+   > Adobeでは、`Luma CRM Id` などの人物を表す ID を [!UICONTROL &#x200B; プライマリ &#x200B;] ID として送信することをお勧めします。
    >
-   > ID マップに人物識別子（例：`Luma CRM Id`）が含まれる場合、その人物識別子は [!UICONTROL  プライマリ ] ID になります。 それ以外の場合は、`ECID` が [!UICONTROL  プライマリ ] ID になります。
+   > ID マップに人物識別子（例：`Luma CRM Id`）が含まれる場合、その人物識別子は [!UICONTROL &#x200B; プライマリ &#x200B;] ID になります。 それ以外の場合は、`ECID` が [!UICONTROL &#x200B; プライマリ &#x200B;] ID になります。
 
 1. 「**[!UICONTROL ライブラリに保存]**」ボタンを選択します（作業ライブラリ `Luma Platform Tutorial` 残ります）。
    ![CRM ID を ID マップデータ要素に追加 ](assets/websdk-property-dataElement-identityMap.png)
 
 >[!NOTE]
 >
->[!UICONTROL ID マップ ] データタイプを使用して、複数の識別子を渡すことができます。
+>[!UICONTROL ID マップ &#x200B;] データタイプを使用して、複数の識別子を渡すことができます。
 
 ### ID マップデータ要素を XDM オブジェクトに追加します
 

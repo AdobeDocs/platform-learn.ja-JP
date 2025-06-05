@@ -152,7 +152,7 @@ ID 名前空間を新規作成するには：
       <img src="./assets/identity2.png" width="300">
 
 
-1. Assuranceの Web インターフェイスで、{com.adobe.griffon.mobile ]**ベンダーの**[!UICONTROL  0}Edge ID 更新 ID ]**イベントを確認します。**[!UICONTROL 
+1. Assuranceの Web インターフェイスで、{com.adobe.griffon.mobile **ベンダーの**&#x200B;[!UICONTROL &#x200B; 0}Edge ID 更新 ID &#x200B;]&#x200B;**イベントを確認します。**
 1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトのデータを確認します。 更新した ID が表示されます。
    ![id 更新の検証 ](assets/identity-validate-assurance.png)
 
