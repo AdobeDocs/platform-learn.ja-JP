@@ -79,8 +79,8 @@ ht-degree: 0%
 >
 >このレッスンでは、様々な画面に表示される **[!UICONTROL エラー診断]** オプションと **[!UICONTROL 部分取り込み]** オプションがいくつかあります。 これらのオプションについては、このチュートリアルでは説明しません。 次に、いくつかのクイック情報を示します。
 >
->* エラー診断を有効にすると、データの取り込みに関するデータが生成され、Data Access API を使用して確認できます。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html) を参照してください。
->* 部分取り込みでは、エラーを含むデータを、指定できる特定のしきい値まで取り込むことができます。 詳しくは、ドキュメントを参照 [ てください ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
+>* エラー診断を有効にすると、データの取り込みに関するデータが生成され、Data Access API を使用して確認できます。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=ja) を参照してください。
+>* 部分取り込みでは、エラーを含むデータを、指定できる特定のしきい値まで取り込むことができます。 詳しくは、ドキュメントを参照 [ てください ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=ja)
 
 ### データの検証
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![ データ取得 Webhook](assets/ingestion-loyalty-webhook.png)
 
-通知について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) を参照してください。
+通知について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ja#available-status-notification-events) を参照してください。
 
 ## Platform API を使用したデータのバッチ取り込み
 
@@ -226,7 +226,7 @@ Batch API は複数のファイルをアップロードするためによく使�
 
 ![ データ取得 Webhook](assets/ingestion-crm-webhook.png)
 
-通知について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) を参照してください。
+通知について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ja#available-status-notification-events) を参照してください。
 
 ## ワークフローでのデータの取り込み
 
@@ -282,7 +282,7 @@ Webhook に 3 つのヒットが表示されます。
 
 >[!NOTE]
 >
->この演習で使用するオフライン購入データには、日時データが含まれています。 日時データは、[ISO 8061 形式の文字列 ](https://www.iso.org/iso-8601-date-and-time-format.html) （&quot;2018-07-10T15:05:59.000-08:00&quot;）またはミリ秒単位の Unix 時間（1531263959000）で指定する必要があり、取り込み時にターゲット XDM タイプに変換されます。 データ変換およびその他の制約について詳しくは、[ バッチ取り込み API ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types) を参照してください。
+>この演習で使用するオフライン購入データには、日時データが含まれています。 日時データは、[ISO 8061 形式の文字列 ](https://www.iso.org/iso-8601-date-and-time-format.html) （&quot;2018-07-10T15:05:59.000-08:00&quot;）またはミリ秒単位の Unix 時間（1531263959000）で指定する必要があり、取り込み時にターゲット XDM タイプに変換されます。 データ変換およびその他の制約について詳しくは、[ バッチ取り込み API ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=ja#types) を参照してください。
 
 ### データをダウンロード、準備、目的のクラウドストレージベンダーにアップロードします。
 
@@ -334,12 +334,12 @@ Webhook に 3 つのヒットが表示されます。
 
 Adobeは、複数の ETL ベンダーと提携して、Experience Platformへのデータ取り込みをサポートしています。 このチュートリアルでは、様々なサードパーティ・ベンダーにより ETL が取り上げられていますが、これらのリソースの一部を確認することは可能です。
 
-* [Adobe Experience Platform用 ETL 統合の開発 ](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [Adobe Experience Platform用 ETL 統合の開発 ](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=ja)
 * [[!DNL Snaplogic] Adobe Experience Platformスナップパック ](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## その他のリソース
 
-* [ バッチ取り込みのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [ バッチ取り込みのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=ja)
 * [バッチ取り込み API リファレンス](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 次に、Web SDKを使用してデータを [ ストリーミングしましょう ](ingest-streaming-data.md)

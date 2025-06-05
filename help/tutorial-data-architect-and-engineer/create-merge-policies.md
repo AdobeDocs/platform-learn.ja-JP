@@ -140,7 +140,7 @@ CRM ID は `Luma Loyalty Dataset` の ID フィールドですが、プロファ
 
 ## その他のリソース
 
-* [ 結合ポリシードキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [ 結合ポリシードキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ja)
 * [ 結合ポリシー API （リアルタイム顧客プロファイル API の一部）リファレンス ](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 次に、[ データガバナンスフレームワーク ](apply-data-governance-framework.md) に進みます。

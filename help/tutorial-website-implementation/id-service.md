@@ -12,7 +12,7 @@ ht-degree: 67%
 
 # Adobe Experience Platform ID サービスの追加
 
-このレッスンでは、[Adobe Experience Platform ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)の実装と顧客 ID の送信に必要な手順を説明します。
+このレッスンでは、[Adobe Experience Platform ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ja)の実装と顧客 ID の送信に必要な手順を説明します。
 
 [Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、ソリューション間のオーディエンス共有などのExperience Cloud機能を強化するために、すべてのAdobe ソリューションで共通の訪問者 ID を設定します。 また、サービスに独自の顧客 ID を送信して、クロスデバイスターゲティングを有効にし、顧客関係管理（CRM）システムとのさらなる統合を可能にすることもできます。
 
@@ -97,7 +97,7 @@ ID サービス拡張機能は、ルールアクションを使用せずにリ�
 
 ## 顧客 ID の送信
 
-次に、顧客 ID を [ID サービス](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)に送信します。これにより、Experience Cloud と [CRM を統合](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)し、デバイスをまたいで訪問者を追跡できます。
+次に、顧客 ID を [ID サービス](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ja)に送信します。これにより、Experience Cloud と [CRM を統合](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)し、デバイスをまたいで訪問者を追跡できます。
 
 前の「[データ要素、ルールおよびライブラリの追加](add-data-elements-rules.md)」レッスンでは、データ要素を作成してルールで使用しました。次に、訪問者が認証されたときに、同じ方法で顧客 ID を送信します。
 

@@ -116,7 +116,7 @@ ID 名前空間を新規作成するには：
 
 ## ID を削除
 
-[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、Edge Networkへの識別情報の送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) を参照してください。
+[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、Edge Networkへの識別情報の送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=ja) を参照してください。
 
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動し、`func removeIdentities(emailAddress: String, crmId: String)` 関数に次のコードを追加します。
 
@@ -176,6 +176,6 @@ ID 名前空間を新規作成するには：
 >
 >これで、Edge Networkおよび（設定時に）Adobe Experience Platformで ID を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[プロファイル・データの収集](profile.md)**
