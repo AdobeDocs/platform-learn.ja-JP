@@ -4,16 +4,16 @@ description: AEM CS 環境のセットアップ
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
 
 # 1.1.3 AEM CS 環境のセットアップ
 
-## 1.1.3.1 GitHub リポジトリのセットアップ
+## 1.1.3.1 GitHub リポジトリの設定
 
 [https://github.com](https://github.com){target="_blank"} に移動します。 「**ログイン**」をクリックします。
 
@@ -55,7 +55,7 @@ GitHub アカウントをクリックします。
 
 ![AEMCS](./images/aemcssetup10.png){zoomable="yes"}
 
-## 1.1.3.2 ファイル fstab.yaml の更新
+## 1.1.3.2 更新ファイル fstab.yaml
 
 GitHub リポジトリで、をクリックしてファイル `fstab.yaml` を開きます。
 
@@ -186,7 +186,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 これで、このウィンドウを閉じることができます。
 
 
-## 1.1.3.4 CitiSignal アセットの公開
+## CitiSignal アセッ 1.1.3.4 の公開
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
 
@@ -208,7 +208,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 ![AEMCS](./images/aemcsassets2.png){zoomable="yes"}
 
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]&#x200B;**をクリック** ます。
+フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]**をクリック** ます。
 
 ![AEMCS](./images/aemcsassets3.png){zoomable="yes"}
 
@@ -222,7 +222,7 @@ URL は次のようになります：`https://author-p148073-e1511503.adobeaemcl
 
 アセットが公開されました。
 
-## 1.1.3.5 CitiSignal のウェブサイトを作成する
+## 1.1.3.5 Create CitiSignal web サイト
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
 
@@ -308,10 +308,10 @@ Web サイトは **ユニバーサルエディター** で開きます。
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトにアクセスできるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en/` や `main--citisignal--XXX.aem.live/us/en/` に移動して、web サイトにアクセスできるようになりました。
 
 この例では、完全な URL は次のようになります。
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` や `https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 最初に公開する必要があるので、すべてのアセットが正しく表示されるまでには時間がかかる場合があります。
 

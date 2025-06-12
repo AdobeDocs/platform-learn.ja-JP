@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -59,35 +59,27 @@ ht-degree: 1%
 
 ## 1.2.6.2 Frame.io での Webhook の設定
 
-[https://developer.frame.io/](https://developer.frame.io/){target="_blank"} に移動します。 **開発者ツール** をクリックし、「**Webhook**」を選択します。
+Postmanに移動し、コレクション **2}Adobe IO - OAuth** でリクエスト {POST - アクセストークンの取得 **を開きます。**&#x200B;次に、「**送信**」をクリックして、新しい **access_token** をリクエストします。
 
-![ フレーム IO](./images/aemf7.png)
+![ フレーム IO](./images/frameV4api2.png)
 
-**Webhook を作成** をクリックします。
+左側のメニューで、**コレクション** に戻ります。 **Webhook** フォルダーのコレクション **Frame.io V4 - Tech Insiders** でリクエスト **POST - Create Webhook** を開きます。
 
-![ フレーム IO](./images/aemf8.png)
+リクエストの **本文** に移動します。 フィールド **name** を `--aepUserLdap--  - Fusion to AEM Assets` に変更し、フィールド **url** を、Workfront Fusion からコピーした Webhook URL の値に変更します。
 
-次の値を入力します。
+「**送信**」をクリックします。
 
-- **NAME**：使用 `--aepUserLdap-- - Asset Labels Updated`
-- **URL**:Workfront Fusion で作成したばかりの Webhook の URL を入力します
-- **TEAM**：適切な Frame.io チーム（この場合は「One Adobe Tutorial **を選択します**。
+![ フレーム IO](./images/framewh1.png)
 
-![ フレーム IO](./images/aemf9.png)
+これで、Frame.io V4 カスタムアクションが作成されました。
 
-下にスクロールして、「**アセットラベル – 更新**」の横にあるチェックボックスをオンにします。 「**送信**」をクリックします。
+![ フレーム IO](./images/framewh2.png)
 
-![ フレーム IO](./images/aemf10.png)
-
-この画像が表示されます。
-
-![ フレーム IO](./images/aemf11.png)
-
-[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} に移動し、以前に作成したフォルダー（`--aepUserLdap--` という名前）に移動します。 ダブルクリックして、前の演習で作成したアセットを開きます。
+[https://next.frame.io/project](https://next.frame.io/project){target="_blank"} に移動し、以前に作成したプロジェクト（`--aepUserLdap--` という名前）に移動して、フォルダー **CitiSignal Fiber Campaign** を開きます。 前の演習で作成したアセットが表示されます。
 
 ![ フレーム IO](./images/aemf11a.png)
 
-次のようなメッセージが表示されます。 フィールド **ステータスなし** をクリックし、ステータスを **処理中** に変更します。
+フィールド **ステータス** をクリックし、ステータスを **処理中** に変更します。
 
 ![ フレーム IO](./images/aemf12.png)
 
@@ -113,23 +105,45 @@ Workfront Fusion に戻り、「**カスタム Webhook** モジュールのバ�
 
 これで、カスタム Webhook を介して Frame.io とWorkfront Fusion 間の通信が確立されたので、ステータスラベルが更新されたアセットに関する詳細を取得できます。 これを行うには、前の演習と同様に、Workfront Fusion で Frame.io コネクタを再び使用します。
 
-**をクリックするモジュ** ルをクリックし、検索語句 `frame` を入力します。 **Frame.io** をクリックします。
+**カスタム Webhook** オブジェクトにポインタを合わせて、「**+**」アイコンをクリックすると、別のモジュールが追加されます。
+
+![ フレーム IO](./images/aemf18a.png)
+
+検索語句 `frame` を入力します。 **Frame.io** をクリックします。
 
 ![ フレーム IO](./images/aemf18.png)
 
-**Frame.io （レガシー）** をクリックします。
+**Frame.io** をクリックします。
 
 ![ フレーム IO](./images/aemf19.png)
 
-**アセットを取得** をクリックします。
+「**カスタム API 呼び出しを行う**」をクリックします。
 
 ![ フレーム IO](./images/aemf20.png)
 
-接続が、前の演習で作成したのと同じ接続に設定されており、`--aepUserLdap-- - Frame.io Token` という名前であることを確認します。
+接続が、前の演習で作成したのと同じ接続に設定されており、`--aepUserLdap-- - Adobe I/O - Frame.io S2S` という名前であることを確認します。
 
 ![ フレーム IO](./images/aemf21.png)
 
-次に、**アセット ID** を指定する必要があります。 **アセット ID** は、最初の **カスタム Webhook** 通信の一環として Frame.io からWorkfront Fusion に共有され、「**resource.id**」フィールドにあります。 **resource.id** を選択して「**OK**」をクリックします。
+モジュール **Frame.io - カスタム API 呼び出しを行う** の設定については、URL `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}` を使用します。
+
+>[!NOTE]
+>
+>Workfront Fusion の変数は、`{{1.account.id}}` と `{{1.resource.id}}` の構文を使用して手動で指定できます。 変数内の数値は、シナリオ内のモジュールを参照します。 この例では、シナリオの最初のモジュールが **Webhook** と呼ばれ、シーケンス番号が **1** であることがわかります。 つまり、変数 `{{1.account.id}}` と `{{1.resource.id}}` は、シーケンス番号 1 のモジュールからそのフィールドにアクセスします。 シーケンス番号は異なる場合があるので、変数をコピー/貼り付ける際には注意し、常に使用するシーケンス番号が正しいことを確認してください。
+
+次に、「**クエリ文字列** の下の「**+項目を追加**」をクリックします。
+
+![ フレーム IO](./images/aemf21a.png)
+
+これらの値を入力し、「**追加**」をクリックします。
+
+| キー | 値 |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
+
+![ フレーム IO](./images/aemf21b.png)
+
+これで、このが得られます。 「**OK**」をクリックします。
 
 ![ フレーム IO](./images/aemf22.png)
 
@@ -137,21 +151,36 @@ Workfront Fusion に戻り、「**カスタム Webhook** モジュールのバ�
 
 ![ フレーム IO](./images/aemf23.png)
 
-Frame.io に戻り、「レビューが必要 **フィールドをクリックして** ステータスを **処理中** に変更します。
+Frame.io に戻り、ステータスを **処理中** に変更します。
 
 ![ フレーム IO](./images/aemf24.png)
 
-Workfront Fusion に戻り、「**Frame.io - アセットを取得** モジュールのバブルをクリックします。 同様の概要が表示されます。
+Workfront Fusion に戻り、「**Frame.io - カスタム API 呼び出しを行う**」モジュールのバブルをクリックします。 同様の概要が表示されます。
 
 ![ フレーム IO](./images/aemf25.png)
 
-Frame.io から提供されたアセットの詳細で、「**Label** というフィールドが **in_progress** に設定されていることがわかります。 後の段階で、このフィールドを使用してフィルターを設定する必要があります。
+次に、フィルターを設定して、ステータスが **承認済み** のアセットについてのみ PNG ファイルがレンダリングされるようにします。 これを行うには、モジュール **Custom Webhook** と **Frame.io - カスタム API 呼び出しを行う** の間にある **レンチ** アイコンをクリックして、**フィルターを設定** を選択します。
 
-![ フレーム IO](./images/aemf26.png)
+![ フレーム IO](./images/aemf25a.png)
+
+次のフィールドを設定します。
+
+- **ラベル**:`Status = Approved` を使用します。
+- **条件**: `{{1.metadata.value[]}}`。
+- **基本演算子**:「**次と等しい**」を選択します。
+- **値**:`Approved`。
+
+「**OK**」をクリックします。
+
+![ フレーム IO](./images/aemf35.png)
+
+これで完了です。 「**保存**」をクリックして変更を保存します。
+
+![ フレーム IO](./images/aemf35a.png)
 
 ## 1.2.6.4 PNG に変換
 
-モジュール **Frame.io - アセットを取得** にカーソルを合わせ、「**+**」アイコンをクリックしてください。
+モジュール **Frame.io - カスタム API 呼び出しを行う** にカーソルを合わせ、「**+**」アイコンをクリックしてください。
 
 ![ フレーム IO](./images/aemf27.png)
 
@@ -165,13 +194,13 @@ Frame.io から提供されたアセットの詳細で、「**Label** という�
 
 以前に作成した接続（`--aepUserLdap-- - Adobe IO` という名前 **をフィールド** 接続が使用していることを確認します。
 
-**Input** の下で、「**Storage**」フィールドを **External** に設定し、「**File Location**」をモジュールが返す変数 **Original** を使用するように設定します **Frame.io - アセットを取得**。
+**Input** の下で、「**Storage**」フィールドを **External** に設定し、「**File Location**」をモジュールが返す変数 **Original** を使用するように設定します **Frame.io - カスタム API 呼び出しを行う**。
 
-次に、「出力 **の下の「項目を追加**&#x200B;**をクリック** ます。
+次に、「出力 **の下の「項目を追加****をクリック** ます。
 
 ![ フレーム IO](./images/aemf30.png)
 
-**出力** 設定については、フィールド **ストレージ** を **Fusion 内部ストレージ** に設定し、**タイプ** を **image/png** に設定します。 「**保存**」をクリックします。
+**出力** 設定については、フィールド **ストレージ** を **Fusion 内部ストレージ** に設定し、**タイプ** を **image/png** に設定します。 「**追加**」をクリックします。
 
 ![ フレーム IO](./images/aemf31.png)
 
@@ -179,28 +208,9 @@ Frame.io から提供されたアセットの詳細で、「**Label** という�
 
 ![ フレーム IO](./images/aemf33.png)
 
-「**保存**」をクリックして変更を保存します。
-
-![ フレーム IO](./images/aemf32.png)
-
-次に、フィルターを設定して、ステータスが **承認済み** のアセットについてのみ PNG ファイルがレンダリングされるようにします。 それには、モジュール **Frame.io - アセットを取得** と **4&rbrace;Adobe Photoshop – 画像フォーマットを変換** の間にある「レンチ **アイコンをクリックし、「** フィルターを設定 **」を選択します。**
-
-![ フレーム IO](./images/aemf34.png)
-
-次のフィールドを設定します。
-
-- **ラベル**:`Is Asset Approved` を使用します。
-- **条件**:「**Frame.io - アセットを取得**」モジュールの応答から **ラベル** フィールドを選択します。
-- **基本演算子**:「**次と等しい**」を選択します。
-- **値**:`approved`。
-
-「**OK**」をクリックします。
-
-![ フレーム IO](./images/aemf35.png)
-
 「**保存**」をクリックして変更を保存し、「**1 回実行**」をクリックして設定をテストします。
 
-![ フレーム IO](./images/aemf36.png)
+![ フレーム IO](./images/aemf32.png)
 
 Frame.io に戻り、「**進行中**」フィールドをクリックして、ステータスを **承認済み** に変更します。
 
@@ -255,11 +265,19 @@ Workfront Fusion に戻ります。 シナリオ内のすべてのモジュー�
 
 ![ フレーム IO](./images/aemf47.png)
 
-**Developer Console** に移動します。 **新しいテクニカルアカウントを作成** をクリックします。
+**ツール**/**統合** に移動します。
+
+![ フレーム IO](./images/aemf47a.png)
+
+**新しいテクニカルアカウントを作成** をクリックします。
 
 ![ フレーム IO](./images/aemf48.png)
 
-次のようなメッセージが表示されます。 JSON ペイロード全体をクリップボードにコピーします。
+次のようなメッセージが表示されます。 新しく作成したテクニカルアカウントを開きます。 3 つのドット **...** をクリックし、「**表示**」を選択します。
+
+![ フレーム IO](./images/aemf48a.png)
+
+同様のテクニカルアカウントトークンペイロードが表示されます。 JSON ペイロード全体をクリップボードにコピーします。
 
 ![ フレーム IO](./images/aemf50.png)
 
@@ -283,7 +301,7 @@ AEM Assets CS 環境で「**選択**」をクリックします。`--aepUserLdap
 
 ![ フレーム IO](./images/aemf54.png)
 
-`--aepUserLdap-- - Frame.io PNG` という名前を入力し、「作成 **をクリックし** す。
+`--aepUserLdap-- - CitiSignal Fiber Campaign` という名前を入力し、「作成 **をクリックし** す。
 
 ![ フレーム IO](./images/aemf55.png)
 
@@ -291,19 +309,19 @@ AEM Assets CS 環境で「**選択**」をクリックします。`--aepUserLdap
 
 ![ フレーム IO](./images/aemf56.png)
 
-Workfront Fusion に戻り、**ここをクリックしてフォルダーを選択** をクリックして、フォルダー `--aepUserLdap-- - Frame.io PNG` を選択します。
+Workfront Fusion に戻り、「**ここをクリックしてフォルダーを選択** を選択してから、フォルダー `--aepUserLdap-- - CitiSignal Fiber Campaign` を選択します。
 
 ![ フレーム IO](./images/aemf57.png)
 
-宛先が `--aepUserLdap-- - Frame.io PNG` に設定されていることを確認します。 次に、**Source ファイル** の下で、「**マップ**」を選択します。
+宛先が `--aepUserLdap-- - CitiSignal Fiber Campaign` に設定されていることを確認します。 次に、**Source ファイル** の下で、「**マップ**」を選択します。
 
-**ファイル名** で、変数 `{{3.filenames[]}}` を選択します。
+**ファイル名** で、変数 `{{3.filenames[1]}}` を選択します。
 
-**データ** の下で、変数 `{{3.files[]}}` を選択します。
+**データ** の下で、変数 `{{3.files[1]}}` を選択します。
 
 >[!NOTE]
 >
->Workfront Fusion の変数は、次の構文を使用して手動で指定できます。`{{3.filenames[]}}` 変数内の数値は、シナリオ内のモジュールを参照します。 この例では、シナリオの 3 番目のモジュールが **Adobe Photoshop - Convert image format という名前で** シーケンス番号が **3** であることがわかります。 つまり、変数 `{{3.filenames[]}}` は、シーケンス番号 3 のモジュールからフィールド **filenames[]** にアクセスします。 シーケンス番号は異なる場合があるので、変数をコピー/貼り付ける際には注意し、常に使用するシーケンス番号が正しいことを確認してください。
+>Workfront Fusion の変数は、次の構文を使用して手動で指定できます。`{{3.filenames[1]}}` 変数内の数値は、シナリオ内のモジュールを参照します。 この例では、シナリオの 3 番目のモジュールが **Adobe Photoshop - Convert image format という名前で** シーケンス番号が **3** であることがわかります。 つまり、変数 `{{3.filenames[1]}}` は、シーケンス番号 3 のモジュールからフィールド **filenames[]** にアクセスします。 シーケンス番号は異なる場合があるので、変数をコピー/貼り付ける際には注意し、常に使用するシーケンス番号が正しいことを確認してください。
 
 「**OK**」をクリックします。
 

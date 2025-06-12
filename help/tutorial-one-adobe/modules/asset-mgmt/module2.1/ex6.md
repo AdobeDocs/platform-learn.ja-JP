@@ -4,9 +4,9 @@ description: AEM CS - MarTech プラグイン
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -88,25 +88,25 @@ const AUDIENCES = {
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -315,7 +315,7 @@ GitHub デスクトップクライアントを開き、変更をコミットし�
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## 1.1.6.4 タグプロパティの ACDL 拡張機能
+## タグプロパティの ACDL 拡張 1.1.6.4 能
 
 AEM Edge Delivery Services MarTech プラグインを正しく機能させるには、以下の拡張子を追加する必要があります。
 
@@ -323,7 +323,7 @@ AEM Edge Delivery Services MarTech プラグインを正しく機能させるに
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-**拡張機能**、**カタログ** に移動します。 拡張子 **Adobe Client Data Layer をクリックしてから**&#x200B;**インストール** をクリックします。
+**拡張機能**、**カタログ** に移動します。 拡張子 **Adobe Client Data Layer をクリックしてから****インストール** をクリックします。
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 
@@ -341,12 +341,12 @@ AEM Edge Delivery Services MarTech プラグインを正しく機能させるに
 
 これで、変更がデプロイされました。
 
-## 1.1.6.5 Adobe Experience Platform Edge Networkへのデータの送信
+## Adobe Experience Platform Edge Networkへの 1.1.6.5 データの送信
 
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en/` や `main--citisignal--XXX.aem.live/us/en/` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` や `https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 >[!NOTE]
 >
@@ -366,17 +366,17 @@ Chromeで、**その他のツール**/**デベロッパーツール** に移動�
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6 Adobe Experience Platformで顧客プロファイルを表示する
+## Adobe Experience Platform1.1.6.6 顧客プロファイルを表示するには
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 
 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-![データ取得](./images/home.png){zoomable="yes"}
+![データ取り込み](./images/home.png){zoomable="yes"}
 
 続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
-![データ取得](./images/sb1.png){zoomable="yes"}
+![データ取り込み](./images/sb1.png){zoomable="yes"}
 
 左側のメニューで、**顧客**/**プロファイル**/**参照** に移動します。 **ECID** の **ID 名前空間** を選択し、前の手順でコピーした **ECID** を超えます。 **表示** をクリックします。 すると、リストにプロファイルが表示されます。 クリックして開きます。
 

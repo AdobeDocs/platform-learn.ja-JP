@@ -4,9 +4,9 @@ description: はじめに – Postmanの設定
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '440'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## PostBuster のインストール
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"} に移動します。
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"} に移動します。
 
 **PostBuster** の最新リリースをダウンロードします。
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 ![ ポストバスター ](./images/pb11.png)
 
-以下の環境プレースホルダーをコピーして、**ベース環境** に貼り付けます。
+以下の環境プレースホルダーをコピーし、**ベース環境** に貼り付けます。内容を置き換えます。
 
 ```json
 {
@@ -83,7 +83,8 @@ ht-degree: 3%
 		"additional_info.projectedProductContext", 
 		"session",
 		"ff_apis",
-		"firefly_api"
+		"firefly_api",
+		"frame.s2s.all"
 	],
 	"TECHNICAL_ACCOUNT_ID": "",
 	"IMS": "ims-na1.adobelogin.com",
@@ -93,7 +94,10 @@ ht-degree: 3%
 	"AZURE_STORAGE_URL": "",
 	"AZURE_STORAGE_CONTAINER": "",
 	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"AZURE_STORAGE_SAS_WRITE": "",
+	"FRAME_IO_BASE_URL": "https://api.frame.io",
+	"FRAME_IO_ACCOUNT_ID": "",
+	"FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -105,11 +109,11 @@ ht-degree: 3%
 
 [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動し、プロジェクトを開きます。
 
-![Adobe I/O新規統合 ](./images/iopr.png){zoomable="yes"}
+![Adobe I/O新規統合 ](./images/iopr.png)
 
 **OAuth サーバー間** に移動します。
 
-![Adobe I/O新規統合 ](./images/iopbvar1.png){zoomable="yes"}
+![Adobe I/O新規統合 ](./images/iopbvar1.png)
 
 次に、Adobe I/O プロジェクトから次の値をコピーして、PostBuster のベース環境に貼り付ける必要があります。
 
@@ -118,7 +122,7 @@ ht-degree: 3%
 - テクニカルアカウント ID
 - 組織 ID （下にスクロールして組織 ID を探します）
 
-![Adobe I/O新規統合 ](./images/iopbvar2.png){zoomable="yes"}
+![Adobe I/O新規統合 ](./images/iopbvar2.png)
 
 上記の変数を 1 つずつコピーして、PostBuster の **ベース環境** に貼り付けます。
 
@@ -129,11 +133,15 @@ ht-degree: 3%
 | テクニカルアカウント ID | `TECHNICAL_ACCOUNT_ID` |
 | 組織 ID | `IMS_ORG` |
 
-これらの変数をに 1 つずつコピーすると、PostBuster ベース環境は次のようになります。
+これらの変数をひとつずつコピーした後、PostBuster ベース環境は次のようになります。
 
-![Adobe I/O新規統合 ](./images/iopbvar3.png){zoomable="yes"}
+「**閉じる**」をクリックします。
+
+![Adobe I/O新規統合 ](./images/iopbvar3.png)
 
 **Adobe I/O - OAuth** コレクションで、「**POST - アクセストークンを取得**」という名前のリクエストを選択し、「**送信**」を選択します。
+
+![Adobe I/O新規統合 ](./images/iopbvar3a.png)
 
 次の情報を含む同様の応答が表示されます。
 
@@ -145,9 +153,9 @@ ht-degree: 3%
 
 Adobe I/O **bearer-token** には、特定の値（非常に長い access_token）と有効期限があり、24 時間有効になりました。 つまり、24 時間後にPostmanを使用してAdobe API とやり取りする場合は、このリクエストを再度実行して新しいトークンを生成する必要があります。
 
-![Adobe I/O新規統合 ](./images/iopbvar4.png){zoomable="yes"}
+![Adobe I/O新規統合 ](./images/iopbvar4.png)
 
-これで、PostBuster 環境がセットアップされ、機能するようになりました。 これで、はじめる前にモジュールを完了しました。
+これで、PostBuster 環境が設定され、機能するようになりました。 これで、この演習が完了しました。
 
 ## 次の手順
 

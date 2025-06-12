@@ -3,10 +3,10 @@ title: はじめに – インストールするアプリケーション
 description: はじめに – インストールするアプリケーション
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,15 @@ ht-degree: 2%
 
 ![Adobe I/O新規統合 ](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 **Adobe Creative Cloud** アプリを開き、**アプリ** に移動します。 お使いのコンピューターにPhotoshopをインストールします。
+
+![Adobe I/O新規統合 ](./images/psd.png)
+
+## Adobe Illustrator
+
+**Adobe Creative Cloud** アプリを開き、**アプリ** に移動します。 お使いのコンピューターにIllustratorをインストールします。
 
 ![Adobe I/O新規統合 ](./images/psd.png)
 

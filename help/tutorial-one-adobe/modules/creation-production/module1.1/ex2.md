@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 1%
 
 ---
@@ -233,7 +233,7 @@ Azure ストレージエクスプローラーで、コンテナを右クリッ�
 
 ![Azure ストレージ ](./images/az29.png){zoomable="yes"}
 
-**SAS-token** を使用して、Azure ストレージアカウントにファイルをアップロードします。
+**SAS-token URL** を使用して、Azure ストレージアカウントにファイルをアップロードします。
 
 Postmanに戻り、フォルダー **FF - Firefly Services テクニカルインサイダー** を選択し、「**Firefly**」フォルダーで「**...**」を選択してから「**リクエストを追加**」を選択します。
 
@@ -345,7 +345,7 @@ Azure ストレージエクスプローラーに戻り、コンテナを右ク�
 
 ![Azure ストレージ ](./images/az102.png){zoomable="yes"}
 
-URL をコピーしてコンピューター上のファイルに書き留め、読み取り権限を持つ長期の SAS トークンを取得します。
+URL をコピーしてコンピューター上のファイルに書き込み、読み取り/書き込み権限を持つ長期の SAS トークンを取得します。
 
 ![Azure ストレージ ](./images/az103.png){zoomable="yes"}
 
@@ -413,7 +413,7 @@ PostBuster を開きます。 「**Base Environment**」を選択し、「**edit
 
 ### 設定のテスト
 
-前の演習の 1 つで、リクエスト **2&rbrace;Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
+前の演習の 1 つで、リクエスト **2}Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
 
 `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 

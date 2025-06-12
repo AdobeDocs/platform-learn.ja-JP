@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 29a0f77f113daace66ffbba63fabac7237f7d5f3
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Fireflyのカスタムモデルを使用すると、次のことができます�
 
 ![Firefly カスタムモデル ](./images/ffcm5.png){zoomable="yes"}
 
-この画像が表示されます。 「**作成**」をクリックします。
+この画像が表示されます。 「**続行**」をクリックします。
 
 ![Firefly カスタムモデル ](./images/ffcm6.png){zoomable="yes"}
 

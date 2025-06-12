@@ -4,9 +4,9 @@ description: AEM CS – 高度なカスタムブロック
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -106,16 +106,16 @@ PR、`js css` の名前を入力します。 「**メインにコミット**」�
 
 ![ ブロック ](./images/blockadv12.png){zoomable="yes"}
 
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en/` や `main--citisignal--XXX.aem.live/us/en/` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` や `https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 ページにスタイルが適用されたことがわかります。
 
 ![ ブロック ](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 ロジックの追加と外部エンドポイントからのデータの読み込み
+## 1.1.5.2 外部エンドポイントからのロジックの追加とデータの読み込み
 
 この演習では、Adobeの web SDKの「生」設定を行い、Adobe Journey Optimizer Offer Decisioningから次善のオファーをリクエストします。
 
@@ -336,10 +336,10 @@ async function getOffer(ECID) {
 
 ![ ブロック ](./images/blockadv19.png){zoomable="yes"}
 
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en` や `main--citisignal--XXX.aem.live/us/en` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en/` や `main--citisignal--XXX.aem.live/us/en/` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` や `https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 この画像が表示されます。
 

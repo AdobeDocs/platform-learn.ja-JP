@@ -1,11 +1,11 @@
 ---
-title: 完了 – 1 つのAdobeチュートリアル
+title: 完了 – 1 つのAdobe チュートリアル
 description: 完了の測定方法
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -27,33 +27,33 @@ Web 形式のデモシステムプロジェクトの ID は `--aepUserLdap-- - 8
 ![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 
-## 1.1 Adobe Fireflyサービス
+## 1.1 Adobe Firefly Services
 
-モジュール **Adobe Fireflyサービス** の完了証明書として期待されているものは、手順 **4&rbrace;Photoshop API - テキストの変更** を実行した後に演習 1.1.3 の最後に生成されたPSDファイルの **URL&rbrace; です。**
+モジュール **0}Adobe Firefly Services** の完了証明書として期待されるのは、手順 **4}PSD API - テキストの変更** を実行した後に演習 1.1.3 の最後に生成されたPhotoshop ファイルの URL} です。****
 
 URL は次のようになります。`https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`
 
 ![3](./assets/images/ps24.png){zoomable="yes"}
 
-## 1.2 Workfront Fusion によるクリエイティブワークフローの自動化
+## 1.2 Workfront Fusion によるCreative ワークフローの自動化
 
-モジュール **Workfront Fusion によるクリエイティブワークフローの自動処理** の完了証明書として期待されているのは、**Webhook を使用してシナリオをアクティブ化する** 手順を実行して演習 1.2.3 で作成された Webhook の **URL** です。
+モジュール **Workfront Fusion** のCreative Workflow Automation モジュールの完了証明書として期待されているのは、**Webhook を使用してシナリオをアクティブ化する** 手順を実行した後に演習 1.2.3 で作成された Webhook の **URL** です。
 
 URL は次のようになります。`https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`
 
 ![3](./assets/images/wff.png){zoomable="yes"}
 
-## 2.1 Adobe Experience ManagerのCloud ServiceとEdge Delivery Services
+## 2.1 Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services
 
-モジュール **Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services** の完了証明書として期待されているのは、作成した Web サイトの **URL** です。
+モジュール **Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services** の完了証明書として期待されているものは、作成された Web サイトの **URL** です。
 
-URL は次のようになります。`https://main--citisignal--xxx.aem.page/us/en`
+URL は次のようになります。`https://main--citisignal--xxx.aem.page/us/en/`
 
 ![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Adobe Workfrontを使用したワークフロー管理
 
-モジュール **Workflow Management with Adobe Workfront** の完了証明書として期待されるのは、演習 **2.2.2.5 AEM Assetsでファイルを表示** の一部としてAEM Assetsにアップロードされた画像の **URL** です。
+モジュール **Workflow Management with Adobe Workfront** の完了証明書として期待されるのは、演習 **2.2.2.5AEM Assetsでファイルを表示** の一環としてAEM Assetsにアップロードされた画像の **URL** です。
 
 URL を取得するには、AEM Assetsにアップロードされた画像で **リンクを共有** をクリックします。
 
@@ -81,9 +81,9 @@ Federated Data Model の Campaign バージョン ID は、**b11c998b-a345-4f8e-
 
 ![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
-## 3.3 Adobe Journey Optimizer:Offer decisioning
+## 3.3 Adobe Journey Optimizer:Offer Decisioning
 
-モジュール **Adobe Journey Optimizer:Offer decisioning** の完了証明書として期待されているものは、作成した **Decision** の ID です。
+モジュール **Adobe Journey Optimizer: Offer Decisioning** の完了証明書として期待されているものは、作成した **Decision** の ID です。
 
 **決定 ID** は次の **`dps:offer-activity:1a08ba4b529b2fb2`** のようになります。
 
