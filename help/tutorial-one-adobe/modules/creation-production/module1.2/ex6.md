@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2 Frame.io での Webhook の設定
 
-Postmanに移動し、コレクション **2}Adobe IO - OAuth** でリクエスト {POST - アクセストークンの取得 **を開きます。**&#x200B;次に、「**送信**」をクリックして、新しい **access_token** をリクエストします。
+Postmanに移動し、コレクション **2&rbrace;Adobe IO - OAuth** でリクエスト &lbrace;POST - アクセストークンの取得 **を開きます。**&#x200B;次に、「**送信**」をクリックして、新しい **access_token** をリクエストします。
 
 ![ フレーム IO](./images/frameV4api2.png)
 
@@ -196,7 +196,7 @@ Workfront Fusion に戻り、「**Frame.io - カスタム API 呼び出しを行
 
 **Input** の下で、「**Storage**」フィールドを **External** に設定し、「**File Location**」をモジュールが返す変数 **Original** を使用するように設定します **Frame.io - カスタム API 呼び出しを行う**。
 
-次に、「出力 **の下の「項目を追加****をクリック** ます。
+次に、「出力 **の下の「項目を追加**&#x200B;**をクリック** ます。
 
 ![ フレーム IO](./images/aemf30.png)
 
