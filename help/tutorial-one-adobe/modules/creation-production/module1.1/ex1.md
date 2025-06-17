@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
+source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -239,13 +239,13 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 これで、有効な新しい access_token が用意できたので、最初のリクエストをFirefly Services API に送信する準備が整いました。
 
-ここで使用するリクエストは **同期** リクエストで、数秒以内にリクエストされた画像を含む応答が提供されます。
+ここで使用するリクエストは **非同期** リクエストで、送信されたジョブの URL を含む応答が提供されます。つまり、2 番目のリクエストを使用して、ジョブのステータスを確認し、生成された画像にアクセスする必要があります。
 
 >[!NOTE]
 >
->Firefly Image 4 および Image 4 Ultra のリリースにより、同期リクエストは非推奨（廃止予定）になり、非同期リクエストが優先されます。 このチュートリアルの後半では、非同期リクエストの演習を示します。
+>Firefly Image 4 および Image 4 Ultra のリリースにより、同期リクエストは非推奨（廃止予定）になり、非同期リクエストが優先されます。
 
-**FF - Firefly Services Tech Insiders** コレクションから **POST - Firefly - T2I V3** という名前のリクエストを選択します。 **ヘッダー** に移動し、キーと値のペアの組み合わせを確認します。
+**FF - Firefly Services Tech Insiders** コレクションから **POST - Firefly - T2I V3 async** という名前のリクエストを選択します。 **ヘッダー** に移動し、キーと値のペアの組み合わせを確認します。
 
 | キー | 値 |
 |:-------------:| :---------------:| 
@@ -254,7 +254,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 このリクエストの両方の値は、事前に定義された環境変数を参照します。 `{{API_KEY}}` は、Adobe I/O プロジェクトのフィールド **クライアント ID** を参照します。 このチュートリアル **はじめに** の節の一部として、Postmanでこれを設定しました。
 
-フィールド **Authorization** の値は、少し特殊です。`Bearer {{ACCESS_TOKEN}}`。 これには、前の手順で生成した **アクセストークン** への参照が含まれています。 **Adobe IO - OAuth** コレクションのリクエスト **POST - アクセストークンを取得** を使用して **アクセストークン** を受信すると、Postmanで実行されたスクリプトで、フィールド **access_token** を環境変数として保存し、リクエスト **POST - Firefly - T2I V3** で参照されるようになりました。 単語 **Bearer** の具体的な追加と、`{{ACCESS_TOKEN}}` の前のスペースに注意してください。 bearer という単語は大文字と小文字が区別され、スペースは必須です。 これが正しく行われないと、Adobe I/Oは **アクセストークン** を正しく処理できないため、**401 Unauthorized** エラーを返します。
+フィールド **Authorization** の値は、少し特殊です。`Bearer {{ACCESS_TOKEN}}`。 これには、前の手順で生成した **アクセストークン** への参照が含まれています。 **Adobe IO - OAuth** コレクションのリクエスト **POST - アクセストークンを取得** を使用して **アクセストークン** を受信すると、Postmanで実行されたスクリプトで、フィールド **access_token** を環境変数として保存し、リクエスト **POST - Firefly - T2I V3 async** で参照されるようになりました。 単語 **Bearer** の具体的な追加と、`{{ACCESS_TOKEN}}` の前のスペースに注意してください。 bearer という単語は大文字と小文字が区別され、スペースは必須です。 これが正しく行われないと、Adobe I/Oは **アクセストークン** を正しく処理できないため、**401 Unauthorized** エラーを返します。
 
 ![Firefly](./images/ff0.png)
 
@@ -262,7 +262,23 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff1.png)
 
-応答から画像 URL をコピー（またはクリック）し、web ブラウザーで開いて画像を表示します。
+その後、すぐに応答が返されます。 この応答には、生成された画像の画像 URL は含まれません。代わりに、起動したジョブのステータスレポートの URL と、実行中のジョブをキャンセルできる別の URL が含まれます。
+
+>[!NOTE]
+>
+>お使いのPostman コレクションは、動的変数を使用するように設定されています。 例えば、フィールド **statusUrl** は、Postmanで設定された **スクリプト** により、Postmanで動的変数として保存されています。
+
+![Firefly](./images/ff1a.png)
+
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+
+>[!NOTE]
+>
+>お使いのPostman コレクションは、動的変数を使用するように設定されています。 例えば、前のリクエストのフィールド **statusUrl** は、Postmanで動的変数として保存され、**GET - Firefly - ステータスレポートの取得** リクエストの URL として使用されるようになりました。
+
+![Firefly](./images/ff1b.png)
+
+同様の応答が届いているはずです。 実行されたジョブの概要です。 生成された画像を含むフィールド **url** を確認できます。 応答から画像 URL をコピー（またはクリック）し、web ブラウザーで開いて画像を表示します。
 
 ![Firefly](./images/ff2.png)
 
@@ -270,7 +286,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff3.png)
 
-リクエスト **POST - Firefly - T2I V3** の **本文** で、フィールド `"promptBiasingLocaleCode": "en-US"` の下に次のコードを追加し、Firefly Services UI でランダムに使用されたシード番号の 1 つに変数 `XXX` を置き換えます。 この例では、**seed** 番号は `142194` です。
+リクエスト **POST - Firefly - T2I V3 async** の **Body** で、「`"promptBiasingLocaleCode": "en-US"`」フィールドの下に次のコードを追加し、Firefly Services UI でランダムに使用されたシード番号の 1 つに変数 `XXX` を置き換えます。 この例では、**seed** 番号は `142194` です。
 
 ```json
 ,
@@ -279,7 +295,11 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
   ]
 ```
 
-**送信** をクリックします。 すると、Firefly Servicesで生成された新しい画像が記載されたレスポンスが届きます。 画像を開いて表示します。
+**送信** をクリックします。 すると、先ほど送信したジョブのステータスレポートへのリンクを含む応答が再び届きます。
+
+![Firefly](./images/ff3a.png)
+
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff4.png)
 
@@ -287,7 +307,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff5.png)
 
-次に、リクエスト **POST - Firefly - T2I V3** の **Body** で、以下の **styles** オブジェクトを **seeds** オブジェクトの下に貼り付けます。 これにより、生成された画像のスタイルが **art_deco** に変更されます。
+次に、リクエスト **POST - Firefly - T2I V3 async** の **Body** で、以下の **styles** オブジェクトを **seeds** オブジェクトの下に貼り付けます。 これにより、生成された画像のスタイルが **art_deco** に変更されます。
 
 ```json
 ,
@@ -300,11 +320,11 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
   }
 ```
 
-これで完了です。 「**送信**」をクリックします。
+これで完了です。 **送信** をクリックします。 すると、先ほど送信したジョブのステータスレポートへのリンクを含む応答が再び届きます。
 
 ![Firefly](./images/ff6.png)
 
-画像の URL をクリックして開きます。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff7.png)
 
@@ -312,7 +332,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff8.png)
 
-リクエストの **Body** から **seeds** オブジェクトのコードを削除します。 「**送信**」をクリックし、応答から取得する画像 URL をクリックします。
+**POST - Firefly - T2I V3 async** リクエストの **Body** から **seeds** オブジェクトのコードを削除します。 「**送信**」をクリックし、応答から取得する画像 URL をクリックします。 すると、先ほど送信したジョブのステータスレポートへのリンクを含む応答が再び届きます。
 
 ```json
 ,
@@ -323,13 +343,17 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff9.png)
 
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+
+![Firefly](./images/ff9a.png)
+
 これで、画像が少し変わりました。
 
 ![Firefly](./images/ff10.png)
 
 ## Firefly Services API1.1.1.7Gen を展開
 
-**FF - Firefly技術インサイダー** コレクションから **POST - Firefly Services - Gen Expand** という名前のリクエストを選択し、リクエストの **本文** に移動します。
+**FF - Firefly Services Tech Insiders** コレクションから **POST - Firefly - Gen Expand async** という名前のリクエストを選択して、リクエストの **本文** に移動します。
 
 - **サイズ**：目的の解像度を入力します。 ここに入力する値は、画像の元のサイズよりも大きい値にする必要があり、3999 を超えることはできません。
 - **image.source.url**：このフィールドには、展開する必要がある画像へのリンクが必要です。 この例では、変数を使用して、前の演習で生成された画像を参照します。
@@ -339,7 +363,11 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff11.png)
 
-応答に含まれる画像 URL をクリックします。
+すると、先ほど送信したジョブのステータスレポートへのリンクを含む応答が再び届きます。
+
+![Firefly](./images/ff11a.png)
+
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff12.png)
 
@@ -347,9 +375,27 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff13.png)
 
-配置の配置を変更すると、出力も若干異なります。 この例では、プレースメントを **左、下** に変更します。 **送信** をクリックし、生成された画像 URL をクリックして開きます。
+**Firefly - T2I V3 async** リクエストを使用して新しい画像を生成します。
+
+![Firefly](./images/ff13a.png)
+
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+
+![Firefly](./images/ff13b.png)
+
+その後、同様の画像が表示されます。
+
+![Firefly](./images/ff13c.png)
+
+**FF - Firefly Services Tech Insiders** コレクションから **POST - Firefly - Gen Expand async** という名前のリクエストを選択して、リクエストの **本文** に移動します。
+
+配置の配置を変更すると、出力も若干異なります。 この例では、プレースメントを **左、下** に変更します。 **送信** をクリックします。 すると、先ほど送信したジョブのステータスレポートへのリンクを含む応答が再び届きます。
 
 ![Firefly](./images/ff14.png)
+
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+
+![Firefly](./images/ff14a.png)
 
 元の画像が別の場所で使用され、画像全体に影響することがわかります。
 
@@ -369,7 +415,7 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 
 **FF - Firefly Services テクニカルインサイダー** コレクションから **POST - Firefly - T2I V4** という名前のリクエストを選択し、リクエストの **ヘッダー** に移動します。
 
-リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate&rbrace; だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
+リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate} だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
 
 **Header** 変数には、**x-model-version** という新しい変数があります。 これは、Firefly Image 4 および Image 4 Ultra とやり取りする際に必要なヘッダーです。 画像の生成時にFirefly Image 4 または Image 4 Ultra を使用するには、ヘッダーの値を `image4_standard` または `image4_ultra` に設定する必要があります。 この例では、`image4_standard` を使用します。
 
@@ -381,11 +427,11 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 
 ![Firefly](./images/ffim4_2.png)
 
-その後、すぐに応答が返されます。 以前に使用した同期リクエストとは異なり、この応答には生成された画像の画像 URL は含まれません。 これには、起動したジョブのステータスレポートの URL と、実行中のジョブをキャンセルできる別の URL が含まれます。
+その後、すぐに応答が返されます。 この応答には、生成された画像の画像 URL は含まれません。代わりに、起動したジョブのステータスレポートの URL と、実行中のジョブをキャンセルできる別の URL が含まれます。
 
 ![Firefly](./images/ffim4_3.png)
 
-実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -417,7 +463,7 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 
 ![Firefly](./images/ffim4_13.png)
 
-実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_14.png)
 
@@ -445,7 +491,7 @@ Firefly Image Model 4 では、人物や動物、詳細なシーンを撮影し�
 
 ![Firefly](./images/ffim4_18.png)
 
-実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ffim4_19.png)
 

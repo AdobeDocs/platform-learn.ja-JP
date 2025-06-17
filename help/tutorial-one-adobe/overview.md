@@ -3,9 +3,9 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -65,9 +65,13 @@ ht-degree: 2%
 
 [1.2 Workfront Fusion によるCreative ワークフローの自動化 ](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-この基本モジュールでは、Adobe Workfront Fusion を使用して、コンテンツ作成ワークフローを自動化および拡張します。
+このモジュールでは、Adobe Workfront Fusion を使用して、コンテンツ作成ワークフローの自動化と拡張を行います。
 
-[1.3 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+このモジュールでは、マーケティングチームやクリエイティブチーム向けの Gen AI ファーストのエンドツーエンドワークフローアプリケーションであるAdobe GenStudio for Performance Marketingを使用して、デジタルマーケティングキャンペーン向けのエンタープライズガバナンスでオムニチャネルコンテンツを作成、アクティブ化および最適化します。
+
+[1.4 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 この基本モジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
 
