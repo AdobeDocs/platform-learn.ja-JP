@@ -29,7 +29,7 @@ Adobe Real-Time Customer Data Platform（CDP）Collaborationを使用すると�
 
 Adobe Real-Time Collaborationの概要を説明します。これは、価値の高いオーディエンスを見つけてアクティブ化し、測定機能を使用して明確な結果を導き出すことができるデータ共同作業アプリケーションです。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446802?learn=on&enablevpops&captions=jpn)
 
 
 ## セットアップ
@@ -47,7 +47,7 @@ Adobe Real-Time Collaborationの概要を説明します。これは、価値の
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Real-Time CDP Collaborationの権限の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1750198179177" alt="Real-Time CDP Collaborationの権限の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452231/?format=jpeg&nocache=1750198179177&captions=jpn" alt="Real-Time CDP Collaborationの権限の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
