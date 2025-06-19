@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 1.2.5.1 前提条件
 
-この演習を続ける前に、[Frame.io API](./../../../modules/getting-started/gettingstarted/ex6.md) をAdobe I/O プロジェクトに追加するなど **Adobe I/O プロジェクトの設定を完了し**[Postman](./../../../modules/getting-started/gettingstarted/ex7.md) や [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md) などの API を操作するアプリケーションも設定している必要があります。
+この演習を続ける前に、[Frame.io API](./../../../modules/getting-started/gettingstarted/ex6.md) をAdobe I/O プロジェクトに追加するなど **Adobe I/O プロジェクトの設定を完了し**&#x200B;[Postman](./../../../modules/getting-started/gettingstarted/ex7.md) や [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md) などの API を操作するアプリケーションも設定している必要があります。
 
 ## 1.2.5.2 Frame.io へのアクセス
 
@@ -99,11 +99,11 @@ ht-degree: 1%
 
 ## 1.2.5.4 Frame.io V4 カスタムアクション API
 
-Postmanに移動し、コレクション **2}Adobe IO - OAuth** でリクエスト {POST - アクセストークンの取得 **を開きます。****Params** の下のフィールド **範囲** を確認します。 フィールド **範囲** には、範囲 `frame.s2s.all` を含める必要があります。 見つからない場合は、追加してください。 次に、「**送信**」をクリックして、新しい **access_token** をリクエストします。
+Postmanに移動し、コレクション **2&rbrace;Adobe IO - OAuth** でリクエスト &lbrace;POST - アクセストークンの取得 **を開きます。**&#x200B;**Params** の下のフィールド **範囲** を確認します。 フィールド **範囲** には、範囲 `frame.s2s.all` を含める必要があります。 見つからない場合は、追加してください。 次に、「**送信**」をクリックして、新しい **access_token** をリクエストします。
 
 ![ フレーム IO](./images/frameV4api2.png)
 
-次に、コレクション **Frame.io V4 - Tech Insiders** のリクエスト **0}GET - アカウントのリスト } を開きます。**「**送信**」をクリックします。
+次に、コレクション **Frame.io V4 - Tech Insiders** のリクエスト **0&rbrace;GET - アカウントのリスト &rbrace; を開きます。**「**送信**」をクリックします。
 
 ![ フレーム IO](./images/frameV4api1.png)
 
@@ -119,7 +119,7 @@ Postmanに移動し、コレクション **2}Adobe IO - OAuth** でリクエス�
 
 ![ フレーム IO](./images/frameV4api4.png)
 
-左側のメニューで、**コレクション** に戻ります。 コレクション **Frame.io V4 - Tech Insiders** でリクエスト **0}GET - ワークスペースのリストを開きます。**「**送信**」をクリックします。
+左側のメニューで、**コレクション** に戻ります。 コレクション **Frame.io V4 - Tech Insiders** でリクエスト **0&rbrace;GET - ワークスペースのリストを開きます。**「**送信**」をクリックします。
 
 ![ フレーム IO](./images/frameV4api5.png)
 
@@ -191,7 +191,7 @@ Frame.io でカスタムアクションが呼び出されると、Frame.io はWo
 }
 ```
 
-したがって、シナリオ `--aepUserLdap-- - Firefly + Photoshop` が正常に実行されるには、**prompt**、**cta**、**button****psdTemplate** などのフィールドが必要です。
+したがって、シナリオ `--aepUserLdap-- - Firefly + Photoshop` が正常に実行されるには、**prompt**、**cta**、**button**&#x200B;**psdTemplate** などのフィールドが必要です。
 
 最初の 3 つのフィールド **prompt**、**cta**、**button** には、ユーザーがカスタムアクションを呼び出す際に Frame.io で収集する必要があるユーザー入力が必要です。 そのため、Workfront Fusion 内でまず行う必要があるのは、これらの変数が使用可能かどうかを確認することです。使用可能でない場合は、Workfront Fusion は Frame.io に返信してそれらの変数の入力を求めます。 これを実現するには、Frame.io のフォームを使用します。
 
@@ -317,13 +317,13 @@ Frame.io に次のようなポップアップが表示されます。
 
 ![ フレーム IO](./images/frame42.png)
 
-Workfront Fusion に戻り、「**カスタム Webhook** モジュールのバブルをクリックします。 操作 1 の **OUTPUT** の下に、**Button Text**、**CTA Text** **、{Prompt** などのフィールドを含む新しい **data** オブジェクトが表示されるようになりました。 シナリオで利用できるこれらのユーザー入力変数を使用すれば、設定を続行するのに十分です。
+Workfront Fusion に戻り、「**カスタム Webhook** モジュールのバブルをクリックします。 操作 1 の **OUTPUT** の下に、**Button Text**、**CTA Text** **、&lbrace;Prompt** などのフィールドを含む新しい **data** オブジェクトが表示されるようになりました。 シナリオで利用できるこれらのユーザー入力変数を使用すれば、設定を続行するのに十分です。
 
 ![ フレーム IO](./images/frame43.png)
 
 ## 1.2.5.6 Frame.io からファイルの場所を取得
 
-前に述べたように、このシナリオを機能させるには、**prompt**、**cta**、**button****psdTemplate** などのフィールドが必要です。 最初の 3 つのフィールドは既に使用可能になっていますが、使用する **psdTemplate** はまだ見つかりません。 **psdTemplate** は、ファイル **citisignal-fiber.psd** が Frame.io でホストされているので、Frame.io の場所を参照するようになりました。 ファイルの場所を取得するには、Workfront Fusion で Frame.io 接続を設定して使用する必要があります。
+前に述べたように、このシナリオを機能させるには、**prompt**、**cta**、**button**&#x200B;**psdTemplate** などのフィールドが必要です。 最初の 3 つのフィールドは既に使用可能になっていますが、使用する **psdTemplate** はまだ見つかりません。 **psdTemplate** は、ファイル **citisignal-fiber.psd** が Frame.io でホストされているので、Frame.io の場所を参照するようになりました。 ファイルの場所を取得するには、Workfront Fusion で Frame.io 接続を設定して使用する必要があります。
 
 Workfront Fusion に戻り、シナリオ `--aepUserLdap-- - Frame IO Custom Action V4` ードを開きます。 **にカーソルを合わせますか？モジュール**、「**+**」アイコンをクリックして別のモジュールを追加し、`frame` を検索します。 **Frame.io** をクリックします。
 
@@ -341,11 +341,11 @@ Frame.io 接続を使用するには、まず設定する必要があります�
 
 ![ フレーム IO](./images/frame47.png)
 
-**接続タイプ****IMS サーバーからサーバーへ** を選択し、`--aepUserLdap-- - Adobe I/O - Frame.io S2S` という名前を入力します。
+**接続タイプ**&#x200B;**IMS サーバーからサーバーへ** を選択し、`--aepUserLdap-- - Adobe I/O - Frame.io S2S` という名前を入力します。
 
 ![ フレーム IO](./images/frame48.png)
 
-次に、**クライアント ID** と、「はじめに **モジュールの一部として設定したAdobe I/O プロジェクトの****クライアント秘密鍵** を入力する必要があります。 Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [ で確認でき ](https://developer.adobe.com/console/projects.){target="_blank"} す。
+次に、**クライアント ID** と、「はじめに **モジュールの一部として設定したAdobe I/O プロジェクトの**&#x200B;**クライアント秘密鍵** を入力する必要があります。 Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [ で確認でき ](https://developer.adobe.com/console/projects.){target="_blank"} す。
 
 ![ フレーム IO](./images/frame50.png)
 
@@ -470,7 +470,7 @@ Workfront Fusion に戻り、「**Frame.io - カスタム API 呼び出しを行
 ![ フレーム IO](./images/frame69.png)
 
 **本文タイプ** を **Raw** に、**コンテンツタイプ** を **JSON （application/json）** に設定します。
-以下の JSON ペイロードを「コンテンツをリクエスト **フィールドに貼り付け****応答を解析** のチェックボックスを有効にします。
+以下の JSON ペイロードを「コンテンツをリクエスト **フィールドに貼り付け**&#x200B;**応答を解析** のチェックボックスを有効にします。
 
 ```json
 {
@@ -527,9 +527,9 @@ Frame.io 接続が自動的に選択されます。
 >[!NOTE]
 >
 >前述のように、Workfront Fusion の変数は、`{{1.account_id}}` および `{{4.body.data.parent_id}}` の構文を使用して手動で指定できます。 変数内の数値は、シナリオ内のモジュールを参照します。
->>この例では、シナリオの最初のモジュールが **Webhook** と呼ばれ、シーケンス番号が **1** であることがわかります。 つまり、変数 `{{1.account_id}}` は、シーケンス番号 1 のモジュールからそのフィールドにアクセスします。
->>この例では、シナリオの 4 番目のモジュールが **Frame.io - カスタム API 呼び出しを行う** という名前で、シーケンス番号は **4** であることがわかります。 つまり、変数 `{{4.body.data.parent_id}}` は、シーケンス番号 4 のモジュールからそのフィールドにアクセスします。
->>モジュールのシーケンス番号が異なる場合、上記の URL の変数を更新して、正しいモジュールにリンクさせる必要があります。
+>&#x200B;>この例では、シナリオの最初のモジュールが **Webhook** と呼ばれ、シーケンス番号が **1** であることがわかります。 つまり、変数 `{{1.account_id}}` は、シーケンス番号 1 のモジュールからそのフィールドにアクセスします。
+>&#x200B;>この例では、シナリオの 4 番目のモジュールが **Frame.io - カスタム API 呼び出しを行う** という名前で、シーケンス番号は **4** であることがわかります。 つまり、変数 `{{4.body.data.parent_id}}` は、シーケンス番号 4 のモジュールからそのフィールドにアクセスします。
+>&#x200B;>モジュールのシーケンス番号が異なる場合、上記の URL の変数を更新して、正しいモジュールにリンクさせる必要があります。
 
 ![ フレーム IO](./images/frame78.png)
 
@@ -549,7 +549,7 @@ Frame.io 接続が自動的に選択されます。
 >[!NOTE]
 >
 >Workfront Fusion の変数は、次の構文を使用して手動で指定できます。`{{6.data.newPsdTemplate}}` 変数内の数値は、シナリオ内のモジュールを参照します。 この例では、シナリオの 6 番目のモジュールが **HTTP - リクエストを行う** と呼ばれ、シーケンス番号が **6** であることがわかります。 これは、変数 `{{6.data.newPsdTemplate}}` が、シーケンス番号 6 のモジュールからフィールド **data.newPsdTemplate** にアクセスすることを意味します。
->>モジュールのシーケンス番号が異なる場合、上記の URL の変数を更新して、正しいモジュールにリンクさせる必要があります。
+>&#x200B;>モジュールのシーケンス番号が異なる場合、上記の URL の変数を更新して、正しいモジュールにリンクさせる必要があります。
 
 「**OK**」をクリックします。
 
