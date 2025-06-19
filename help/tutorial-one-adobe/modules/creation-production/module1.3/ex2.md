@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
 
 # 1.3.2 設定：ペルソナ、製品、テンプレート
 
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **GenStudio** を開きます。
+
+![GSPeM](./images/gspem1.png)
+
 ## 1.3.2.1 製品
 
-3 つのドット **...** をクリックし、「**製品**」を選択します。
+GenStudio for Performance Marketingの商品では、商品の仕様、利点および差別化要因に関する深い理解を活用して、効果的なコンテンツを生成します。
+
+製品は、画像、説明、価値提案など、特定の製品のすべての要素を包含し、統一されたブランド表現を作成します。 Adobeの高度な AI テクノロジーを活用して、GenStudio for Performance Marketingのガイドライン（ブランド、製品、ペルソナ）が連携して、製品の強みを示し、すべてのメッセージング間で一貫性を確保する、説得力のあるコンテンツを生成します。
+
+独自の製品の作成を開始するには、3 つのドット **...をクリックし** 「**製品**」を選択します。
 
 ![GSPeM](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ Smart Home Families: “Every room. Every device. Always on. Welcome to whole-ho
 
 ## 1.3.2.2 ペルソナ
 
-3 つのドット **...** をクリックし、「**ペルソナ**」を選択します。
+ペルソナは、顧客の情報、興味、問題点、好み、行動特性など、顧客セグメントを真に描写します。
+
+GenStudio for Performance Marketingは、ガイドライン（ブランド、製品、ペルソナ）とAdobeのジェネレーティブ AI テクノロジーの力を活用して、ターゲット顧客に合わせてパーソナライズされたマーケティングコンテンツをキュレーション&#x200B;ます。
+
+ペルソナの作成を開始するには、3 つのドット **...をクリックし** 「**ペルソナ**」を選択します。
 
 ![GSPeM](./images/gspem111.png)
 
@@ -213,6 +226,10 @@ Messaging that highlights “work-from-anywhere” flexibility
 ![GSPeM](./images/gspem124.png)
 
 ## 1.3.2.3 テンプレート
+
+GenStudio for Performance Marketingを使用すると、コンテンツ作成者は、テンプレートを使用して、一貫性のあるオンブランドマーケティングコンテンツをすばやく作成できます。 テンプレートは、事前設定済みのレイアウトとデザイン要素を含む出発点を提供することで、新しいコンテンツの生成に必要な時間と労力を大幅に削減します。
+
+GenStudio for Performance Marketingではアプリケーション内でテンプレートを直接作成することはできませんが、Adobe InDesign、Illustrator、Express などの一般的なデザインツールを使用して、テンプレートを簡単にデザインおよび準備できます。 デザインが完成したら、GenStudio for Performance Marketingで使用できるように調整できます。 この演習では、多数の事前定義済みテンプレートをGenStudio for Performance Marketingに読み込みます。
 
 前の演習では、ファイル [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) をデスクトップにダウンロードして解凍しました。 このフォルダーには 4 つのサンプルテンプレートが含まれており、GenStudioで読み込む必要があります。
 

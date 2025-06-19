@@ -5,14 +5,21 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 4%
+source-wordcount: '548'
+ht-degree: 3%
 
 ---
 
 # 1.3.1 設定：ブランド
+
+ブランドは、組織、製品、サービスまたは概念を他のブランドと区別します。 ブランドの側面には、ロゴのような客観的なものと、声のトーンのような主観的なものがあります。
+
+GenStudio for Performance Marketingは、自社ブランドの豊富なブランド情報を活用し、商品情報やペルソナ情報と提携して、包括的なブランドアイデンティティを構築します。 このブランドアイデンティティは、Adobeの生成 AI テクノロジーを使用してオンブランドコンテンツの作成を通知するために使用されます。
+
+独自のブランドの作成を開始するには、次の手順に従います。
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **GenStudio** を開きます。
 

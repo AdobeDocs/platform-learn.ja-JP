@@ -4,10 +4,10 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 1bcc5123f16dbde30877662159e06d61d75e7287
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 3%
+source-wordcount: '273'
+ht-degree: 4%
 
 ---
 
@@ -15,51 +15,68 @@ ht-degree: 3%
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 選択する組織は `--aepImsOrgName--` です。 次のようなメッセージが表示されます。 「**プログラムを追加**」をクリックします。
 
-![AEMCS](./images/aemcs1.png){zoomable="yes"}
+![AEMCS](./images/aemcs1.png)
 
-**プログラム名** には、`--aepUserLdap-- - CitiSignal` を使用します。 「**続行**」をクリックします。
+**プログラム名** には、`--aepUserLdap-- - CitiSignal` を使用します。 「**サンドボックスを設定**」オプションを選択します。 「**続行**」をクリックします。
 
-![AEMCS](./images/aemcs2.png){zoomable="yes"}
+![AEMCS](./images/aemcs2.png)
 
 次のオプションが選択されていることを確認します。
 
 - サイト
+- フォーム
 - アセット
+
+**Assets** の矢印をクリックして、オプションのリストを開きます。
+
+![AEMCS](./images/aemcs3.png)
+
+次のオプションが選択されていることを確認します。
+
+- Content Hub
+
+リストを下にスクロールします。
+
+![AEMCS](./images/aemcs3a.png)
+
+次のオプションが選択されていることを確認します。
+
 - Edge 配信サービス
+- Dynamic Media
 
 「**作成**」をクリックします。
 
-![AEMCS](./images/aemcs3.png){zoomable="yes"}
+![AEMCS](./images/aemcs3b.png)
 
 環境の作成には時間がかかります（10 ～ 20 分）。
 
-![AEMCS](./images/aemcs4.png){zoomable="yes"}
+![AEMCS](./images/aemcs4.png)
 
 お待ちください。演習 [1.1.2 ドキュメントベースの web サイトの作成 ](./ex2.md){target="_blank"} から既に開始できます。
 
 環境が作成され、使用する準備が整うと、確認のメールが届きます。その後、ここに戻ることができます。
 
-![AEMCS](./images/aemcs5.png){zoomable="yes"}
+![AEMCS](./images/aemcs5.png)
 
 メールによる確認を受け取ったら、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に戻ります。 その後、プログラムのステータスが **準備完了** に変更されたことがわかります。 プログラムをクリックして開きます。
 
-![AEMCS](./images/aemcs6.png){zoomable="yes"}
+![AEMCS](./images/aemcs6.png)
 
 「パイプライン **タブを確認し** す。 3 つのドット **...** をクリックし、「**実行** をクリックします。
 
-![AEMCS](./images/aemcs7.png){zoomable="yes"}
+![AEMCS](./images/aemcs7.png)
 
 **実行** をクリックします。
 
-![AEMCS](./images/aemcs8.png){zoomable="yes"}
+![AEMCS](./images/aemcs8.png)
 
 次に、「**環境**」タブの 3 つのドット **...** をクリックし、「**詳細を表示**」をクリックします。
 
-![AEMCS](./images/aemcs9.png){zoomable="yes"}
+![AEMCS](./images/aemcs9.png)
 
 次の演習で必要とする **オーサー** 環境の URL など、環境の詳細が表示されます。
 
-![AEMCS](./images/aemcs10.png){zoomable="yes"}
+![AEMCS](./images/aemcs10.png)
 
 パイプラインの実行が完了したら、次の演習に進むことができます。
 
