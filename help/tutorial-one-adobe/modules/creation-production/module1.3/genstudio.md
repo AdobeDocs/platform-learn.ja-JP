@@ -5,10 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 11%
+source-wordcount: '106'
+ht-degree: 9%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 11%
 
 ## 演習
 
-[1.3.1 GenStudio for Performance Marketingの概要 ](./ex1.md){target="_blank"}
+[1.3.1 設定：ブランド ](./ex1.md){target="_blank"}
 
-この演習では、GenStudio for Performance Marketingを探索します。
+この演習では、GenStudio for Performance Marketingで CitiSignal ブランドを設定します。
+
+[1.3.2 設定：ペルソナ、製品、テンプレート ](./ex2.md){target="_blank"}
+
+この演習では、GenStudio for Performance Marketingでペルソナと製品を設定します。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 
