@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: b247307c3b01df2b67b2ff4301f0b7d442b725c0
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 0%
+source-wordcount: '1273'
+ht-degree: 1%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >この演習を行うには、AEM Content Hubを有効にした状態で、動作するAEM Assets CS オーサー環境にアクセスできる必要があります。 演習 [Adobe Experience Manager Cloud ServiceおよびEdge Delivery Servicesに従うと ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} このような環境にアクセスできます。
+
+>[!IMPORTANT]
+>
+>この演習のすべての手順を実行するには、既存のAdobe Workfront環境にアクセスする必要があり、その環境でプロジェクトと承認ワークフローを作成する必要があります。 [Adobe Workfrontによるワークフロー管理 ](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} の演習に従うと、必要な設定を使用できるようになります。
 
 >[!IMPORTANT]
 >
@@ -169,7 +173,7 @@ GenStudio for Performance Marketingで作成した CitiSignal ブランドテン
 
 ![GSPeM](./images/gsasset5.png)
 
-CitiSignal ロゴを左上隅に配置します。
+CitiSignal ロゴは、画像の中央からそれほど遠くない位置に配置します。
 
 ![GSPeM](./images/gsasset6.png)
 
@@ -223,7 +227,124 @@ GenStudio for Performance Marketingに戻ります。 左側のメニューで�
 
 ## メタ広告を作成および承認で 1.3.3.4 ない
 
+左側のメニューで、**作成** に移動します。 **Meta** を選択します。
+
+![GSPeM](./images/gsad1.png)
+
+前に読み込んだ **メタ広告** テンプレートを選択します（`--aepUserLdap---citisignal-meta-ad` という名前）。 **使用** をクリックします。
+
+![GSPeM](./images/gsad2.png)
+
+この画像が表示されます。 広告の名前を `--aepUserLdap-- - Meta Ad Fiber Max` に変更します。
+
+**パラメーター** で、次のオプションを選択します。
+
+- **ブランド**: `--aepUserLdap-- - CitiSignal`
+- **言語**: `English (US)`
+- **ペルソナ**: `--aepUserLdap-- - Smart Home Families`
+- **製品**: `--aepUserLdap-- - CitiSignal Fiber Max`
+
+**コンテンツから選択** をクリックします。
+
+![GSPeM](./images/gsad3.png)
+
+アセット `--aepUserLdap-- - neon rabbit.png` を選択します。 **使用** をクリックします。
+
+![GSPeM](./images/gsad4.png)
+
+プロンプト `focus on lightning fast internet for big families` を入力し、「**生成**」をクリックします。
+
+![GSPeM](./images/gsad5.png)
+
+次のようなメッセージが表示されます。 これで、広告をレビューおよび承認する準備が整いました。 それには、「**承認をリクエスト**」をクリックします。これにより、Adobe Workfrontに接続します。
+
+![GSPeM](./images/gsad6.png)
+
+Adobe Workfront プロジェクトを選択します。`--aepUserLdap-- - CitiSignal Fiber Launch` という名前を付ける必要があります。 **ユーザーを招待** の下に自分のメールアドレスを入力し、自分の役割が **承認者** に設定されていることを確認します。
+
+![GSPeM](./images/gsad7.png)
+
+または、Adobe Workfrontで既存の承認ワークフローを使用することもできます。 それには、「**テンプレートを使用** をクリックし、テンプレート `--aepuserLdap-- - Approval Workflow` を選択します。 「**送信**」をクリックします。
+
+![GSPeM](./images/gsad8.png)
+
+「**Workfrontでコメントを表示**」をクリックすると、Adobe Workfront Proof UI に送信されるようになります。
+
+![GSPeM](./images/gsad9.png)
+
+Adobe Workfront Proof UI で、「**決定する**」をクリックします。
+
+![GSPeM](./images/gsad10.png)
+
+「**承認済み**」を選択し、「**決定する**」をクリックします。
+
+![GSPeM](./images/gsad11.png)
+
+「**公開**」をクリックします。
+
+![GSPeM](./images/gsad12.png)
+
+Campaign `--aepUserLdap-- - CitiSignal Fiber Launch Campaign` を選択し、「**公開** をクリックします。
+
+![GSPeM](./images/gsad13.png)
+
+**コンテンツで開く** をクリックします。
+
+![GSPeM](./images/gsad14.png)
+
+4 つのメタ広告を **コンテンツ**/**エクスペリエンス** で使用できるようになりました。
+
+![GSPeM](./images/gsad15.png)
+
 ## 1.3.3.5 Meta に広告を公開
+
+広告の 1 つを選択し、「**有効化**」をクリックします。
+
+![GSPeM](./images/gsmetaad1.png)
+
+リストから **0}Call to action} を選択し、URL の例を入力します。**「**次へ**」をクリックします。
+
+![GSPeM](./images/gsmetaad3.png)
+
+メタアカウント、リンクされた Facebook ページ、メタキャンペーンおよびメタ広告セットを選択します。
+
+追加に名前を付け、`--aepUserLdap-- Fiber Max Ad` を使用します。
+
+「**次へ**」をクリックします。
+
+![GSPeM](./images/gsmetaad4.png)
+
+「**公開**」をクリックします。
+
+![GSPeM](./images/gsmetaad5.png)
+
+「**OK**」をクリックします。
+
+![GSPeM](./images/gsmetaad6.png)
+
+広告のステータスが「**公開中** に設定されました。これには数分かかることがあります。
+
+![GSPeM](./images/gsmetaad7.png)
+
+数分後、広告のステータスが **公開済み** に変わります。 つまり、広告がGenStudio for Performance Marketingから Meta に送信されました。 広告が Meta に既に公開されているわけではありません。 様々なメタプラットフォームのユーザーが表示できるように、メタビジネスアカウントで広告を取得して公開する手順はいくつかあります。
+
+**詳細を表示** をクリックします。
+
+![GSPeM](./images/gsmetaad8.png)
+
+**開く** をクリックすると、Meta Business アカウントに移動します。
+
+>[!IMPORTANT]
+>
+>お使いの環境に接続されている Meta Business アカウントにアクセスできない場合、この広告を Meta で視覚化することはできません。
+
+![GSPeM](./images/gsmetaad9.png)
+
+次に、作成したばかりの広告の概要ですが、Meta で表示されています。
+
+![GSPeM](./images/gsmetaad10.png)
+
+これで、この演習が完了しました。
 
 ## 次の手順
 
