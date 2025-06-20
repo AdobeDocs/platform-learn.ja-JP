@@ -1,23 +1,21 @@
 ---
-title: Adobe Expressの概要
-description: Adobe Expressの概要
+title: GenStudio for Performance Marketing設定のペルソナ製品テンプレート
+description: GenStudio for Performance Marketing設定のペルソナ製品テンプレート
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 2%
+source-wordcount: '961'
+ht-degree: 1%
 
 ---
 
 # 1.3.2 設定：ペルソナ、製品、テンプレート
 
-[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **GenStudio** を開きます。
-
-![GSPeM](./images/gspem1.png)
+この演習では、GenStudio for Performance Marketingでペルソナ、製品、テンプレートを設定します。
 
 ## 1.3.2.1 製品
 

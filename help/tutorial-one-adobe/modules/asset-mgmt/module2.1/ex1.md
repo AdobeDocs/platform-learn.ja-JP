@@ -4,10 +4,10 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 1bcc5123f16dbde30877662159e06d61d75e7287
+source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
@@ -76,7 +76,34 @@ ht-degree: 4%
 
 次の演習で必要とする **オーサー** 環境の URL など、環境の詳細が表示されます。
 
+**Content Hub** の行を見て、「**クリックして有効化**」を選択します。
+
 ![AEMCS](./images/aemcs10.png)
+
+**アクティブ化** をクリックします。
+
+![AEMCS](./images/aemcsact1.png)
+
+**Content Hub** のライセンス認証が開始されました。 これには 10 分以上かかる場合があります。
+
+![AEMCS](./images/aemcsact2.png)
+
+約 10 分後に、**Content Hub** のライセンス認証が行われます。
+次に、「**Dynamic Media**」行を見て、「**クリックして有効化**」を選択します。
+
+![AEMCS](./images/aemcsact3.png)
+
+**アクティブ化** をクリックします。
+
+![AEMCS](./images/aemcsact4.png)
+
+**Dynamic Media** のアクティベーションが開始されました。 これには 10 分以上かかる場合があります。
+
+![AEMCS](./images/aemcsact5.png)
+
+約 10 分後、**Dynamic Media** のアクティベーションが行われます。
+
+![AEMCS](./images/aemcsact6.png)
 
 パイプラインの実行が完了したら、次の演習に進むことができます。
 
