@@ -20,6 +20,6 @@ ht-degree: 0%
 
 検出、アクティブ化、測定を簡単に説明するなど、Collaborationでプロジェクトを作成するための基本について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464035/?learn=on&enablevpops&captions=jpn)
 
 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"} を参照してください。

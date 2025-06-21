@@ -153,7 +153,7 @@ Adobe Real-Time Collaborationの概要を説明します。これは、価値の
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Real-Time CDP Collaborationでのプロジェクトの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1750198179535" alt="Real-Time CDP Collaborationでのプロジェクトの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464035/?format=jpeg&nocache=1750198179535&captions=jpn" alt="Real-Time CDP Collaborationでのプロジェクトの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
