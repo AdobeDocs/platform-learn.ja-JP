@@ -160,7 +160,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
 >[!INFO]
 >
->  Adobe Experience Platformのクエリサービスについて詳しくは、Platform チュートリアルの節の [ データの調査 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) を参照してください。
+>  Adobe Experience Platformのクエリサービスについて詳しくは、Platform チュートリアルの節の [ データの調査 ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/queries/explore-data) を参照してください。
 
 
 ## リアルタイム顧客プロファイルのデータセットとスキーマを有効にする
@@ -342,4 +342,4 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
