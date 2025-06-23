@@ -3,7 +3,7 @@ title: データ収集チュートリアル
 description: データ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 22%
@@ -23,16 +23,62 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
 
 <div id="staff-picks-section">
 
+## 実装ガイド
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+      <img alt="Web SDK を使用した Adobe Experience Cloud の実装" src="assets/thumb_websdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+    <strong>Web SDKを使用したExperience Cloudの実装 </strong>
+    </a>
+    </div>
+    <p>
+    <em> タグを使用した Platform Web SDKの実装 </em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <img alt="モバイルアプリへの実装" src="assets/thumb_swift.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <strong> モバイルアプリへのExperience Cloudの実装 </strong>
+    </a>
+    </div>
+    <p>
+    <em> タグを使用した Platform Mobile SDKの実装 </em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <img alt="Target を Web SDKに移行" src="assets/thumb_legacy.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <strong> タグを使用したレガシーライブラリの実装 </strong>
+    </a>
+    </div>
+    <p>
+    <em> タグを使用して、従来の Analytics、Target およびAudience Manager ライブラリを実装する </em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## 移行ガイド
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target を Web SDKに移行" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Adobe Targetの Web SDKへの移行 </strong>
     </a>
     </div>
@@ -60,7 +106,7 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
       <strong>Adobe Audience Managerの Web SDKへの移行 </strong>
     </div>
     <p>
-    <em><a href="https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> を置き換えるか、<a href="https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank"> サーバーサイド転送を更新します </a></em>
+    <em><a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> を置き換えるか、<a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank"> サーバーサイド転送を更新します </a></em>
     <p>
   </td>
 </tr>
@@ -83,52 +129,6 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
   <td>
   </td>
   </tr>
-</table>
-
-## 実装ガイド
-
-<table>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-      <img alt="Web SDK を使用した Adobe Experience Cloud の実装" src="assets/thumb_websdk.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-    <strong>Web SDKを使用したExperience Cloudの実装 </strong>
-    </a>
-    </div>
-    <p>
-    <em> タグを使用した Platform Web SDKの実装 </em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-      <img alt="モバイルアプリへの実装" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-    <strong> モバイルアプリへのExperience Cloudの実装 </strong>
-    </a>
-    </div>
-    <p>
-    <em> タグを使用した Platform Mobile SDKの実装 </em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="Target を Web SDKに移行" src="assets/thumb_legacy.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-    <strong> タグを使用したレガシーライブラリの実装 </strong>
-    </a>
-    </div>
-    <p>
-    <em> タグを使用して、従来の Analytics、Target およびAudience Manager ライブラリを実装する </em>
-    <p>
-  </td>
-</tr>
 </table>
 
 </div>

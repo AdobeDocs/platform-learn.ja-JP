@@ -4,16 +4,16 @@ description: Experience Platform Web SDKを使用してAdobe Analyticsを設定�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # Adobe Experience Platform Web SDKを使用したAdobe Analyticsの設定
 
-[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/web-sdk/overview) を使用してAdobe Analyticsを設定する方法、Adobe Analyticsにデータを送信するタグルールを作成する方法、Analytics が期待どおりにデータをキャプチャしていることを検証する方法について説明します。
+[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview) を使用してAdobe Analyticsを設定する方法、Adobe Analyticsにデータを送信するタグルールを作成する方法、Analytics が期待どおりにデータをキャプチャしていることを検証する方法について説明します。
 
 [Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics) は業界をリードするアプリケーションであり、ユーザーとして顧客を理解し、顧客インテリジェンスを活用してビジネスを導くことができます。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * Adobe Analyticsに詳しく、アクセスできます。
 
-* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合は [ 作成してください ](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 少なくとも 1 つのテスト/開発レポートスイート ID がある。 このチュートリアルで使用できるテスト/開発レポートスイートがない場合は [ 作成してください ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * このチュートリアルの初期設定とタグの設定の節で前のレッスンを完了します。
 
@@ -78,7 +78,7 @@ Web SDK実装で Analytics 変数を設定する方法はいくつかありま�
 
 ### 自動的にマッピングされたフィールド
 
-多くの XDM フィールドは、Analytics 変数に自動的にマッピングされます。 最新のマッピングのリストについては、[Adobe Experience Edgeの Analytics 変数のマッピング ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars) を参照してください。
+多くの XDM フィールドは、Analytics 変数に自動的にマッピングされます。 最新のマッピングのリストについては、[Adobe Experience Edgeの Analytics 変数のマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars) を参照してください。
 
 この問題は _カスタムスキーマを定義していない場合でも_ 発生します。 Experience Platform Web SDKは、一部のデータを自動的に収集し、XDM フィールドとして Platform Edge Networkに送信します。 例えば、Web SDKは現在のページの URL を読み取り、XDM フィールド `web.webPageDetails.URL` として送信します。 このフィールドはAdobe Analyticsに転送され、Adobe Analyticsのページ URL レポートに自動的に入力されます。
 
@@ -106,8 +106,8 @@ Analytics 製品文字列の個々のセクションは、`productListItems` オ
 >[!NOTE]
 >
 >2022 年 8 月 18 日（PT）現在、`productListItems[].SKU` は、s.products 変数の製品名へのマッピングを優先しています。
->&#x200B;>`productListItems[].name` に設定された値は、`productListItems[].SKU` が存在しない場合にのみ、製品名にマッピングされます。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
->&#x200B;>`productListItems[].SKU` に空の文字列や null を設定しないでください。 これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
+>>`productListItems[].name` に設定された値は、`productListItems[].SKU` が存在しない場合にのみ、製品名にマッピングされます。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
+>>`productListItems[].SKU` に空の文字列や null を設定しないでください。 これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
 
 ### データオブジェクトに変数を設定
@@ -218,7 +218,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 データストリームでAdobe Analytics レポートスイートの上書き設定を指定するには：
 
 1. データストリームを開きます
-1. [ 詳細 ]&#x200B;**メニューを開いて**&#x200B;[!UICONTROL &#x200B; 編集 &#x200B;]&#x200B;**を選択して、**![[!UICONTROL &#x200B; Adobe Analytics]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 設定を編集します
+1. ![ 詳細 ]**メニューを開いて**[!UICONTROL  編集 ]**を選択して、**[!UICONTROL  Adobe Analytics](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 設定を編集します
 
    ![ データストリームを上書き ](assets/datastream-edit-analytics.png)
 
@@ -366,6 +366,10 @@ Experience Platform Web SDKを使用して Analytics がデータを適切に取
 1. `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1` を探します。
 1. 下にスクロールして、`[!UICONTROL gn]` 変数を表示します。 これは、`[!UICONTROL s.pageName]` 変数の Analytics 動的構文です。 ページ名をデータレイヤーからキャプチャします。
 
+   >[!NOTE]
+   >
+   > 前の演習で、`xdm` オブジェクトを `data` オブジェクトで上書きした場合、`gn` の値は `test` になる可能性があります。
+
    ![Analytics 製品文字列 ](assets/analytics-debugger-edge-page-view.png)
 
 ### 製品文字列および e コマースイベントの検証
@@ -389,7 +393,7 @@ Experience Platform Web SDKを使用して Analytics がデータを適切に取
 
    >[!TIP]
    >
-   > `ecommerce - pdp library loaded - AA (order 20)` ルールは、シーケンスの後半でトリガーに設定され `eventType` ので、`all pages global content variables - library loaded - AA (order 1)` ルールで設定された値を上書きします
+   > `ecommerce - library loaded - set product details variables - 20` ルールは、シーケンスの後半でトリガーに設定され `eventType` ので、`all pages - library loaded - set global variables - 1` ルールで設定された値を上書きします
 
 
    ![Analytics 製品表示 ](assets/analytics-debugger-prodView.png)
@@ -449,8 +453,14 @@ Adobe Analyticsが ECID を取り込んでいることを検証するには、�
 ### コンテンツページビューの検証
 
 同じビーコンを使用して、コンテンツページビューが正しいAdobe Analytics変数にマッピングされていることを検証します。
-**[!UICONTROL pageName]** まで下にスクロールして、`Page Name` が正しくキャプチャされていることを確認します
-![Assuranceを使用したページ名の検証 ](assets/assurance-hitdebugger-content-pagename.png)
+**[!UICONTROL pageName]** まで下にスクロールして、`Page Name` が正しく取り込まれていることを確認します。
+
+
+    >[!NOTE]
+    >
+    > 前の演習で「data」オブジェクトを使用して「xdm」オブジェクトを上書きした場合、「pageName」値は「test」になる可能性があります。
+    
+    ![Assuranceでのページ名の検証 ] （assets/assurance-hitdebugger-content-pagename.png） 
 
 ### 製品文字列および e コマースイベントの検証
 
@@ -481,4 +491,4 @@ Adobe Analyticsが ECID を取り込んでいることを検証するには、�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
