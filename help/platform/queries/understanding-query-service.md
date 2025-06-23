@@ -16,7 +16,7 @@ ht-degree: 17%
 
 # クエリサービスとデータDistillerの概要
 
-Adobe Experience Platform クエリサービスを使用すると、SQL を使用して、データレイクに保存されたカスタマーエクスペリエンスデータを調査、検証、変換できます。また、データ出力やスケジュールなどの強化機能は、Data Distiller アドオンから利用できます。 このビデオでは、主な機能の概要を説明します。これにより、ユーザーは、様々な Platform ベースのアプリケーションでクエリサービスを活用する方法を理解できるようになります。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) を参照してください。
+Adobe Experience Platform クエリサービスを使用すると、SQL を使用して、データレイクに保存されたカスタマーエクスペリエンスデータを調査、検証、変換できます。また、データ出力やスケジュールなどの強化機能は、Data Distiller アドオンから利用できます。 このビデオでは、主な機能の概要を説明します。これにより、ユーザーは、様々な Platform ベースのアプリケーションでクエリサービスを活用する方法を理解できるようになります。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
