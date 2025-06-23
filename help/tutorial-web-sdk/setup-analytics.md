@@ -106,8 +106,8 @@ Analytics 製品文字列の個々のセクションは、`productListItems` オ
 >[!NOTE]
 >
 >2022 年 8 月 18 日（PT）現在、`productListItems[].SKU` は、s.products 変数の製品名へのマッピングを優先しています。
->>`productListItems[].name` に設定された値は、`productListItems[].SKU` が存在しない場合にのみ、製品名にマッピングされます。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
->>`productListItems[].SKU` に空の文字列や null を設定しないでください。 これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
+>&#x200B;>`productListItems[].name` に設定された値は、`productListItems[].SKU` が存在しない場合にのみ、製品名にマッピングされます。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
+>&#x200B;>`productListItems[].SKU` に空の文字列や null を設定しないでください。 これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
 
 ### データオブジェクトに変数を設定
@@ -218,7 +218,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 データストリームでAdobe Analytics レポートスイートの上書き設定を指定するには：
 
 1. データストリームを開きます
-1. ![ 詳細 ]**メニューを開いて**[!UICONTROL  編集 ]**を選択して、**[!UICONTROL  Adobe Analytics](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 設定を編集します
+1. [ 詳細 ]&#x200B;**メニューを開いて**&#x200B;[!UICONTROL &#x200B; 編集 &#x200B;]&#x200B;**を選択して、**![[!UICONTROL &#x200B; Adobe Analytics]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 設定を編集します
 
    ![ データストリームを上書き ](assets/datastream-edit-analytics.png)
 
