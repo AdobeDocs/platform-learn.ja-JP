@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Marketo EngageおよびReal-Time Customer Data Platform（CDP）、B2B editionを使用して B2B キャンペーンを調整する方法を説明します。 データ取り込み、アカウントプロファイル、セグメント化、宛先を統合して B2B キャンペーンオーケストレーションを強化する方法を確認します。 よくある質問への回答を得る。 詳しくは、[Real-Time CDP B2B edition ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/338254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450778?learn=on&enablevpops&captions=jpn)
