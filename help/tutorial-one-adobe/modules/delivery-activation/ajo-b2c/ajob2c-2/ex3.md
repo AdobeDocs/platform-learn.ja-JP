@@ -54,7 +54,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![デモ](./images/slackname.png)
 
-**認証** は、[ 認証なし **に設定する必要があ** ます。
+**認証** は、&lbrack; 認証なし **に設定する必要があ** ます。
 
 ![デモ](./images/slackauth.png)
 
