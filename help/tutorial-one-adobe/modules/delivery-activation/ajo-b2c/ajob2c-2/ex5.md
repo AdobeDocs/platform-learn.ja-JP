@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer – 外部データソースとカスタム
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 0%
+source-wordcount: '638'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![ プロパティページ ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-**はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+**はじめに** で、デモシステムは次に、Web サイト用とモバイルアプリ用に 1 つのタグプロパティを作成しました。 `--aepUserLdap--` 検索 **[!UICONTROL ボックスで]** を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 フィールド `_experience.campaign.orchestration.eventID` に移動します。 現在の値を削除し、eventID をそこに貼り付けます。
 
-イベント ID はAdobe Journey Optimizerの **設定/イベント** にあり、イベント ID はイベントのサンプルペイロードに次のように表示されます。`"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`
+イベント ID はAdobe Journey Optimizerの **設定/イベント** にあり、イベント ID はイベントのサンプルペイロードに次のように表示されます。`"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -103,11 +103,17 @@ ht-degree: 0%
 
 ![デモ](./images/pv2.png)
 
-[ プロファイル ビューア ] パネルで、[**ユーティリティ**] をクリックします。 `geofenceevent` と入力し、「**送信**」をクリックします。
+プロファイルビューアパネルで **ユーティリティ** をクリックし、**直接呼出し** を選択します。
 
 >[!NOTE]
 >
 >プロファイルビューアパネルに直接呼出しイベントを送信するオプションがない場合は、開発者ビューを開いて参照の **コンソール** に移動し、`_satellite.track('geofenceevent')` コマンドを貼り付けて送信することで、手動で送信できます。
+
+![デモ](./images/pv3.png)
+
+`geofenceevent` と入力し、「**送信**」をクリックします。
+
+![デモ](./images/pv4.png)
 
 数秒後に、Slack チャンネルにAdobe Journey Optimizerからのメッセージが表示されます。
 

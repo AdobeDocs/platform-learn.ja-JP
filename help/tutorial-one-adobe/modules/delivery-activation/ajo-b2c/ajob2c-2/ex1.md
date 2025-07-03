@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer – 外部天気 API、SMS アクション�
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス **ージの** ホーム `--aepSandboxName--` ビューに移動します。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![デモ](./images/evname.png)
 
-次に、スキーマを選択する必要があります。 ここに示すスキーマはすべて、Adobe Experience Platform スキーマです。
+次に、スキーマを選択する必要があります。
 
 ![デモ](./images/evschema.png)
 
@@ -50,12 +50,12 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 左側のメニューで、**スキーマ** に移動し、新しいブラウザータブで開きます。 **スキーマ** で、**参照** に移動して、使用可能なスキーマのリストを表示します。
 スキーマ `Demo System - Event Schema for Website (Global v1.1)` を開きます。
 
-![データ取得](./images/schemas.png)
+![データ取り込み](./images/schemas.png)
 
 スキーマを開くと、フィールドグループ `Orchestration eventID` がスキーマの一部であることがわかります。
 このフィールドグループには、`_experience.campaign.orchestration.eventID` と `originJourneyID` の 2 つのフィールドしかありません。
 
-![データ取得](./images/schemageo.png)
+![データ取り込み](./images/schemageo.png)
 
 このフィールドグループとこの特定の eventID フィールドがスキーマに含まれると、そのスキーマはAdobe Journey Optimizerで使用できるようになります。
 
@@ -103,13 +103,13 @@ Adobe Journey Optimizerには、顧客を識別するための ID も必要で�
 
 ![デモ](./images/fieldseyepayload.png)
 
-**ペイロードを表示** アイコンをクリックすると、このイベントのサンプル XDM ペイロードが開きます。 行 `eventID` が表示されるまで **ペイロード** を下にスクロールします。
+**ペイロードを表示** アイコンをクリックすると、このイベントのサンプル XDM ペイロードが開きます。 行 **が表示されるまで** ペイロード `eventID` を下にスクロールします。
 
 ![デモ](./images/fieldseyepayloadev.png)
 
 最後に、設定をテストするために必要になるので、`eventID` を書き留めてください。
 
-この例では、`eventID` は `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e` です。
+この例では、`eventID` は `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7` です。
 
 作成しているジャーニーをトリガーにするイベントを定義しました。 ジャーニーがトリガーされると、市区町村などのジオフェンスフィールドや、選択したその他のフィールド（国、緯度、経度など）がジャーニーで利用できるようになります。
 

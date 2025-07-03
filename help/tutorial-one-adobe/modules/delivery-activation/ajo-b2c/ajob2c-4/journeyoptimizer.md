@@ -4,14 +4,14 @@ description: このモジュールでは、企業が、コンテキストに応�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '263'
 ht-degree: 2%
 
 ---
 
-# 3.4 Adobe Journey Optimizer
+# 3.4 Adobe Journey Optimizer：注文確認ジャーニーとキャンペーン
 
 このモジュールでは、企業が、コンテキストに応じた、つながりのあるパーソナライズされたエクスペリエンスを設計して顧客に提供するのに役立つ、Adobe Journey Optimizerについて知っておくべきことをすべて学びます。
 
@@ -45,10 +45,6 @@ ht-degree: 2%
 [3.4.3 メールメッセージでのセグメントベースのパーソナライゼーションの適用](./ex3.md)
 
 この演習では、セグメントメンバーシップを使用して、メール内に表示するコンテンツを定義します。
-
-[3.4.4 プッシュ通知の設定と使用](./ex4.md)
-
-この演習では、iOS デバイスにモバイルアプリケーションをインストールし、デバイスにプッシュ通知を設定して配信します。
 
 [概要と利点](./summary.md)
 

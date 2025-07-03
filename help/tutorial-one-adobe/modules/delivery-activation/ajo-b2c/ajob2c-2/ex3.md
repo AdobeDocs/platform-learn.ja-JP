@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer – 外部天気 API、SMS アクション�
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス **ージの** ホーム `--aepSandboxName--` ビューに移動します。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -54,11 +54,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![デモ](./images/slackname.png)
 
-ヘッダーフィールドを変更する必要はありません。
-
-![デモ](./images/slackurl.png)
-
-**認証** は、&lbrack; 認証なし **に設定する必要があ** ます。
+**認証** は、[ 認証なし **に設定する必要があ** ます。
 
 ![デモ](./images/slackauth.png)
 
@@ -84,7 +80,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 }
 ```
 
-次の画面が表示されます。
+その後、これが表示されます。 「**保存**」をクリックします。
 
 ![デモ](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![デモ](./images/slackdone.png)
 
-イベント、外部データソースおよびアクションを定義しました。 次に、これらすべてを 1 つのジャーニーに統合します。
+イベント、外部データソースおよびアクションを定義しました。 次に、これらすべてを 1 つのジャーニーに組み合わせます。
 
 ## 次の手順
 

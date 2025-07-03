@@ -4,14 +4,14 @@ description: Journey Optimizer メールメッセージの作成
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 5%
 
 ---
 
-# 3.1.3 ジャーニー、フラグメント、メッセージを作成する
+# 3.1.3 ジャーニーとメールメッセージの作成
 
 この演習では、ジャーニーと、デモ web サイトでアカウントが作成されたときにトリガーする必要があるメッセージを設定します。
 
@@ -23,7 +23,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.3.1 ジャーニーを作成する
+## ジャーニー3.1.3.1 作成するには
 
 左のメニューで、「**ジャーニー**」をクリックします。次に、「**ジャーニーを作成**」をクリックして、新規のジャーニーを作成します。
 
@@ -33,7 +33,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/journeyempty.png)
 
-前の演習では、新しい **イベント** を作成しました。 この `--aepUserLdap--AccountCreationEvent` のように名前を付け、`ldap` を ldap に置き換えました。 イベント作成の結果：
+前の演習では、新しい **イベント** を作成しました。 この `--aepUserLdap--AccountCreationEvent` のように名前を付けました。 イベント作成の結果：
 
 ![ACOP](./images/eventdone.png)
 
@@ -57,11 +57,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/journeyactions.png)
 
-**カテゴリ** を **マーケティング** に設定し、メールの送信を可能にするメール設定を選択します。 この場合、選択するメール設定は **メール** です。 **メールのクリック数** と **メールの開封数** のチェックボックスが両方とも有効になっていることを確認します。
+**カテゴリ** を **マーケティング** に設定し、メールの送信を可能にするメール設定を選択します。 この場合、選択するメール設定は **Email-TI** です。
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.1.3.2 メッセージの作成
+## メッセ 3.1.3.2 ジを作成するには
 
 メッセージを作成するには、「**コンテンツを編集**」をクリックします。
 
@@ -75,7 +75,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/msg5.png)
 
-テキスト `Hi ` を書き込みます。 次に、`profile.person.name.firstName` に保存されている「名 **フィールドのパーソナライゼーショントークンを取り込む必要が** ります。 左側のメニューで、「**Person/Full Name/First Name**」フィールドを探し、「**+**」アイコンをクリックします。 テキストフィールドにパーソナライゼーショントークンが表示されます。
+テキスト `Hi ` を書き込みます。 次に、**に保存されている「名** フィールドのパーソナライゼーショントークンを取り込む必要が `profile.person.name.firstName` ります。 左側のメニューで、「**Person/Full Name/First Name**」フィールドを探し、「**+**」アイコンをクリックします。 テキストフィールドにパーソナライゼーショントークンが表示されます。
 
 ![Journey Optimizer](./images/msg9.png)
 
@@ -141,7 +141,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/msg34.png)
 
-次に、`profile.person.name.firstName` に保存されている **名** パーソナライゼーショントークンを取り込む必要があります。 メニューで、**ユーザー** 要素を見つけ、**姓名** 要素にドリルダウンし、**+** アイコンをクリックして、名フィールドを式エディターに追加します。
+次に、**に保存されている** 名 `profile.person.name.firstName` パーソナライゼーショントークンを取り込む必要があります。 メニューで、**ユーザー** 要素を見つけ、**姓名** 要素にドリルダウンし、**+** アイコンをクリックして、名フィールドを式エディターに追加します。
 
 「**保存**」をクリックします。
 

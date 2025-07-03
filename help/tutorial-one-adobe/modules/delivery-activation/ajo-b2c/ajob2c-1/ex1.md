@@ -4,9 +4,9 @@ description: Journey Optimizer イベントの作成
 kt: 5342
 doc-type: tutorial
 exl-id: 2c03cc8d-0106-4fa5-80c6-e25712ca2eab
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-この画像が表示されます。 **名前空間** を **ECID （ECID）** に設定します。 「**保存**」をクリックします。
+この画像が表示されます。 **名前空間** が **ECID （ECID）** に設定されていることを確認します。 「**保存**」をクリックします。
 
 ![ACOP](./images/eventsave.png)
 
@@ -77,17 +77,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 イベントには一意のオーケストレーション eventID があり、`_experience.campaign.orchestration.eventID` が表示されるまでペイロードを下にスクロールすると見つかります。
 
 イベント ID は、次に作成するジャーニーをトリガーにするためにAdobe Experience Platformに送信する必要があるものです。 この eventID は次の演習の 1 つで必要になるので、覚えておいてください。
-`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+`"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`
 
 「**OK**」をクリックします。
 
 ![ACOP](./images/payloadeventID.png)
 
-**キャンセル** をクリックします。
+「**キャンセル**」をクリックして、このウィンドウを閉じます。
 
 ![ACOP](./images/payloadeventID1.png)
-
-これで、この演習が完了しました。
 
 ## 次の手順
 

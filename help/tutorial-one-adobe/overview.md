@@ -3,9 +3,9 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1069'
 ht-degree: 2%
 
 ---
@@ -137,9 +137,9 @@ ht-degree: 2%
 
 このモジュールでは、Adobe Journey Optimizerを使用して、オンラインとオフラインの両方で顧客の行動をリッスンし、様々なチャネルにわたってインテリジェントでコンテキストに応じたリアルタイムの方法で対応します。
 
-[3.3 Adobe Journey Optimizer:Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
+[3.3 Adobe Journey Optimizer：プッシュメッセージとアプリ内メッセージ](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
 
-このモジュールでは、Adobe Journey Optimizerを使用して、パーソナライズされたオファーと独自のオファー決定を設定します。
+このモジュールでは、Adobe Journey Optimizerを使用して、プッシュ通知とアプリ内メッセージを設定します。
 
 [3.4 Adobe Journey Optimizer：イベントベースのジャーニー](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
@@ -148,6 +148,18 @@ ht-degree: 2%
 [3.5 Adobe Journey Optimizer：翻訳サービス](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
 このモジュールでは、Adobe Journey Optimizer内で翻訳サービスを設定および使用して、メッセージを顧客にローカライズする方法について説明します。
+
+[3.6 Adobe Journey Optimizer：コンテンツ管理](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+
+このモジュールでは、Adobe Journey Optimizer内でコンテンツカードとランディングページを設定および使用する方法を説明し、Adobe Journey OptimizerとGenStudio for Performance Marketingの統合について詳しく説明します。
+
+[3.7 Adobe Journey Optimizer：決定](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+
+このモジュールでは、Adobe Journey Optimizer内で意思決定とコードベースのエクスペリエンスを設定し、使用する方法について説明します。
+
+[3.8 Adobe Journey Optimizer：キャンペーン](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+
+このモジュールでは、Adobe Journey Optimizer内でキャンペーンを設定して使用する方法を説明します。
 
 ### &#x200B;5. レポートとインサイト
 

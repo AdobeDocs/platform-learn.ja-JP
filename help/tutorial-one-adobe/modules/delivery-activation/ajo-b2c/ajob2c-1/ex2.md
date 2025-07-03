@@ -4,9 +4,9 @@ description: Journey Optimizer - フラグメントの作成
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.2.1 ヘッダーフラグメントを作成する
+## ヘッダーフラグメントを作成 3.1.2.1 るには
 
 左側のメニューで、「**フラグメント**」をクリックします。 フラグメントは、Journey Optimizer内の再利用可能なコンポーネントで、重複を回避し、メールメッセージのヘッダーやフッターの変更など、すべてのメッセージに影響を与える将来の変更を容易にします。
 
@@ -49,7 +49,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 >[!NOTE]
 >
->AEM Assetsライブラリに Citi Signal 画像が表示されない場合は、[ こちら ](./../../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
+>AEM Assets ライブラリに CitiSignal 画像が表示されない場合は、[ こちら ](./../../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -78,7 +78,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.1.2.2 フッターフラグメントの作成
+## フッターフラグメントを作成 3.1.2.2 るには
 
 **フラグメントを作成** をクリックします。
 
@@ -231,8 +231,6 @@ Unsubscribe
 数分後、フッターのステータスが **ライブ** に変更されます。
 
 ![Journey Optimizer](./images/fragm38.png)
-
-これで、この演習が完了しました。
 
 ## 次の手順
 

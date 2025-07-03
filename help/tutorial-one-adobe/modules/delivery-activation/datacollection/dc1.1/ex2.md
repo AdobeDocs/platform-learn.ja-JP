@@ -4,9 +4,9 @@ description: Foundation - Adobe Experience Platform Data Collection と Web SDK 
 kt: 5342
 doc-type: tutorial
 exl-id: f805b2a6-c813-4734-8a78-f8588ecd0683
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 [ はじめに ](./../../../../modules/getting-started/gettingstarted/ex2.md) では、既にデータストリームを作成していますが、作成した背景や理由については説明していません。
 
-[ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) は、Web SDKで収集されたデータの送信先をEdge Network サーバーに指示します。 データストリームを使用してデータを送信できる場所について詳しくは、[ データストリームへのサービスの追加 ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#add-services) のドキュメントを参照してください。
+[ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) は、Web SDKで収集されたデータの送信先をEdge Network サーバーに指示します。 データストリームを使用してデータを送信できる場所について詳しくは、[ データストリームへのサービスの追加 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) のドキュメントを参照してください。
 
 データストリームは、Experience Platform Data Collection ユーザーインターフェイスで管理され、Adobe Experience Platform Data Collection 経由で Web SDKを実装しているかどうかに関係なく、Web SDKを使用したデータ収集にとって重要です。
 
@@ -60,9 +60,8 @@ ht-degree: 1%
 - 収集されたすべてのデータは、Adobe Experience Platformの `--aepSandboxName--` サンドボックスに保存されます
 - すべてのエクスペリエンスイベントデータは、デフォルトでデータセット **デモシステム - Web サイトのイベントデータセット（グローバル v1.1）** に収集されます。
 - すべてのプロファイルデータは、デフォルトでデータセット **デモシステム - web サイトのプロファイルデータセット （グローバル v1.1）** に収集されます（現在、Web SDKでプロファイルデータをネイティブに取り込む機能は、Web SDKではまだサポートされていません）
-- このデータストリームで **Offer Decisioning** アプリケーションサービスを使用する場合は、Offer Decisioningのチェックボックスをオンにする必要があります。 （これは、[ モジュール 3.3](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md) の一部です）
 - **Edge セグメント化** はデフォルトで有効になっています。つまり、選定オーディエンスは、受信トラフィックの取り込み時にエッジで評価されます
-- [ パーソナライゼーションの宛先 ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/personalization/overview) を使用する場合、**Personalizationの宛先** のチェックボックスをオンにします。
+- [ パーソナライゼーションの宛先 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview) を使用する場合、**Personalizationの宛先** のチェックボックスをオンにします。
 - このデータストリームで **Adobe Journey Optimizer** の機能を使用する場合は、**Adobe Journey Optimizer** のチェックボックスをオンにする必要があります。
 
 現時点では、データストリームに他の設定は必要ありません。

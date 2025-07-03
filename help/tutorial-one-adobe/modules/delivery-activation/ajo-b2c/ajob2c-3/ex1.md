@@ -1,170 +1,234 @@
 ---
-title: Offer Decisioning- Offer Decisioning 101
-description: Offer Decisioning- Offer Decisioning 101
+title: プッシュ通知の概要
+description: プッシュ通知の概要
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-exl-id: b46e0205-b0a1-4a14-95f6-9afe21cd2b5e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 4%
+source-wordcount: '1264'
+ht-degree: 9%
 
 ---
 
-# 3.3.1 Offer Decisioning 101
+# 3.3.1 プッシュ通知の概要
 
-## 3.3.1.1 用語
+Adobe Journey Optimizerでプッシュ通知を使用するには、確認して知っておくべき設定がいくつかあります。
 
-Offer Decisioningをより深く理解するために、Offer Decisioning アプリケーションサービスとAdobe Experience Platformの連携に関する [ 概要 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=ja) を読むことを強くお勧めします。
+検証するすべての設定を次に示します。
 
-Offer Decisioningを使用するには、次の概念を理解している必要があります。
+- Adobe Experience Platformのデータセットとスキーマ
+- モバイル用データストリーム
+- モバイルのデータ収集プロパティ
+- プッシュ証明書のアプリサーフェス
+- AEP Assuranceを使用したプッシュ設定のテスト
 
-| 用語 | 説明 |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **オファー** | オファーは、オファーを表示する資格のあるユーザーを指定するルールが関連付けられているマーケティングメッセージです。 オファーのステータスは、ドラフト、承認済みまたはアーカイブ済みです。 |
-| **プレースメント** | エンドユーザーに対してオファーが表示される場所（またはチャネルタイプ）とコンテキスト（またはコンテンツタイプ）の組み合わせ。 実際には、テキスト、HTML、画像、モバイル、web、ソーシャル、インスタントメッセージング、非デジタルチャネルの JSON の組み合わせです。 |
-| **ルール** | オファーに対するエンドユーザーの実施要件を定義および制御するロジック。 |
-| **パーソナライズされたオファー** | 実施要件ルールおよび制約に基づいてカスタマイズできるマーケティングメッセージ。 |
-| **フォールバックオファー** | エンドユーザーが使用されるコレクション内のオファーのいずれにも資格がない場合に表示されるデフォルトのオファーです。 |
-| **キャッピング** | オファー定義で、1 つのオファーを合計で提示できる回数と特定のユーザーに提示できる回数を定義するために使用します。 |
-| **優先度** | オファーの結果セットから優先度ランクを決定するレベル。 |
-| **コレクション** | パーソナライズされたオファーリストからオファーのサブセットを除外し、Offer Decisioning プロセスを高速化するために使用されます。 |
-| **決定** | マーケターが決定エンジンに対して、最適なオファーを提供することを求めている、オファー、プレースメントおよびプロファイルのセットの組み合わせ。 |
-| **AEM Assets Essentials** | Adobe Experience Cloud ソリューションおよびAdobe Experience Platformをまたいでアセットの保存、検索、選択を行う、ユニバーサルで一元化されたエクスペリエンス。 |
-
-{style="table-layout:auto"}
-
-## 3.3.1.2 Offer Decisioning
+1 つずつ見ていきましょう。
 
 [Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerにログインします。 **Journey Optimizer** をクリックします。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス **ージの** ホーム `--aepSandboxName--` ビューに移動します。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-左側のメニューで、「**オファー**」をクリックします。 オファー、コレクション、決定などが含まれるオファーメニューが表示されます。
+## 3.4.4.1 プッシュデータセット
 
-![プレースメント](./images/homedec.png)
+Adobe Journey Optimizerは、データセットを使用して、モバイルデバイスからのプッシュトークンや、プッシュメッセージとのインタラクション（送信済みメッセージ、開封されたメッセージなど）をAdobe Journey Optimizerのデータセットに保存します。
 
-**コンポーネント** をクリックします。 プレースメント、コレクション修飾子、ルール、ランキングなどが表示されるようになります。
+これらのデータセットは、画面左側のメニューにある **[!UICONTROL データセット]** に移動すると見つかります。 システムデータセットを表示するには、フィルターアイコンをクリックします。
 
-![プレースメント](./images/components.png)
+「**システムデータセットを表示** オプションを有効にして、**AJO** を検索します。 プッシュ通知に使用するデータセットが表示されます。
 
-## 3.3.1.3 プレースメント
+![データ取り込み](./images/menudsjo1.png)
 
-**プレースメント** に移動します。
+## モバイル用 3.4.4.2 データストリーム
 
-![プレースメント](./images/placements.png)
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
 
-「**プレースメント**」タブで、オファーのプレースメントを定義できます。 決定を定義する際、結果として生成されるオファーの表示場所（チャネルタイプ）と形式（コンテンツタイプ）をプレースメントで定義します。
+左側のメニューで、**[!UICONTROL データストリーム]** に移動し、[ はじめに ](./../../../../modules/getting-started/gettingstarted/ex2.md) で作成したデータストリームを検索します。名前は `--aepUserLdap-- - Demo System Datastream (Mobile)` です。 クリックして開きます。
 
-環境にプレースメントが表示されない場合は、以下およびスクリーンショットに示すようにプレースメントを作成してください。
+![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1a.png)
 
-| 名前 | チャネルタイプ | コンテンツタイプ |
-| ---------------------- | ------------ | ------------ |
-| **非デジタル - テキスト** | 非デジタル | テキスト |
-| **Web - JSON** | Web | JSON |
-| **Web - HTML** | Web | HTML |
-| **Web - テキスト** | Web | テキスト |
-| **Web - 画像** | Web | 画像 |
-| **メール - JSON** | メール | JSON |
-| **メール -HTML** | メール | HTML |
-| **メール – テキスト** | メール | テキスト |
-| **メール - 画像** | メール | 画像 |
+**2}Adobe Experience Platform** サービスの「編集 **をクリックします。**
 
-{style="table-layout:auto"}
+![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1.png)
 
-**注意**：既に利用可能なプレースメントには何も変更しないでください。
+次に、定義したデータストリーム設定と、どのデータセットイベントおよびプロファイル属性に保存されるかを確認します。
 
-任意のプレースメントをクリックして、設定を視覚化します。
+また、まだ有効になっていない場合は、次のオプションを有効にする必要があります。
 
-![プレースメント](./images/placement1.png)
+- **Offer Decisioning**
+- **パーソナライゼーションの宛先**
+- **Adobe Journey Optimizer**
 
-プレースメントのすべてのフィールドが表示されます。
+「**保存**」をクリックします。
 
-- プレースメントの **名前**
-- **プレースメント ID**
-- プレースメントの **チャネルタイプ**
-- プレースメントの **コンテンツタイプ**。**テキスト**、**HTML**、&lbrace; 画像 **または** JSON **のいずれか**
-- **説明** プレースメントの説明を追加できるフィールド
+![ データストリームに名前を付けて保存する ](./images/edgeconfig2.png)
 
-## 3.3.1.4 決定ルール
+## モバ 3.4.4.3 ルのデータ収集プロパティを確認するには
 
-ルール（実施要件ルールとも呼ばれます）は、**オーディエンス** と同等です。 ルールは、実際にはオーディエンス自体ですが、Adobe Experience Platformのプロファイルに最適なオファーを提供するために、ルールをオファーで使用できる唯一の違いがあります。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 [ はじめに ](./../../../../modules/getting-started/gettingstarted/ex1.md) の一部として、2 つのデータ収集プロパティが作成されました。
+これらのデータ収集クライアントプロパティは、既に以前のモジュールの一部として使用しています。
 
-以前のイネーブルメントモジュールに基づいてオーディエンスを定義する方法は既にわかっているので、セグメント化環境を簡単に見てみましょう。
+クリックして、モバイルのデータ収集プロパティを開きます。
 
-**ルール** に移動します。 「**+ ルールを作成**」をクリックします。
+![DSN](./images/launchprop.png)
 
-![ 決定規程 ](./images/rules.png)
+データ収集プロパティで、「**拡張機能**」に移動します。 次に、モバイルアプリに必要な様々な拡張機能が表示されます。 クリックして、拡張機能 **Adobe Experience Platform Edge Network** を開きます。
 
-Adobe Experience Platformのオーディエンス作成インターフェイスが表示されます。
+![Adobe Experience Platform のデータ収集](./images/launchprop1.png)
 
-![ 決定規程 ](./images/createrule1.png)
+その後、モバイルのデータストリームがここにリンクされていることがわかります。 次に、「**キャンセル**」をクリックして、拡張機能の概要に戻ります。
 
-これで、リアルタイム顧客プロファイルの結合スキーマの一部であるすべてのフィールドにアクセスし、任意のルールを作成できるようになりました。
+![Adobe Experience Platform のデータ収集](./images/launchprop2.png)
 
-また、**オーディエンス**/``--aepTenantId--`` に移動すれば、既に定義されているオーディエンスをAdobe Experience Platformで簡単に再利用できます。
+その後、ここに戻ってきます。 **AEP Assurance** の拡張機能が表示されます。 AEP Assuranceは、モバイルアプリでデータを収集したりエクスペリエンスを提供したりする方法を検査、配達確認、シミュレートおよび検証するのに役立ちます。 AEP Assuranceとプロジェクト Griffon について詳しくは、[https://aep-sdks.gitbook.io/docs/beta/project-griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon) を参照してください。
 
-次の画面が表示されます。
+![Adobe Experience Platform のデータ収集](./images/launchprop8.png)
 
-![ 決定ルール ](./images/decisionruleaud.png)
+次に、「**設定**」をクリックして、拡張機能 **2}Adobe Journey Optimizer} を開きます。**
 
-必要に応じて、独自のルールを設定できるようになりました。 この演習では、次の 2 つのルールが必要です。
+![Adobe Experience Platform のデータ収集](./images/launchprop9.png)
 
-- all – 男性の顧客
-- all – 女性のお客様
+プッシュイベントをトラッキングするデータセットがリンクされている場所がわかります。
 
-これらのルールがまだ存在しない場合は、作成してください。 既に存在する場合は、それらのルールを使用し、新しいルールを作成しないでください。
+![Adobe Experience Platform のデータ収集](./images/launchprop10.png)
 
-ルールの作成に使用する属性は **XDM 個人プロファイル**/**人物**/**性別** です。
+データ収集プロパティを変更する必要はありません。
 
-例えば、ルール **すべて – 男性の顧客** のルール定義を次に示します。
+## 3.4.4.4 アプリサーフェスの設定を確認する
 
-![ 決定ルール ](./images/allmale.png)
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで **アプリサーフェス** に移動し、「DX Demo App APNS **のアプリサーフェスを開き** す。
 
-例えば、ルール **all - Female Customers** のルール定義を次に示します。
+![Adobe Experience Platform のデータ収集](./images/appsf.png)
 
-![ 決定ルール ](./images/allfemale.png)
+iOSとAndroid用に設定されたアプリサーフェスが表示されます。
 
-## 3.3.1.5 のオファー
+![Adobe Experience Platform のデータ収集](./images/appsf1.png)
 
-**オファー** に移動し、「**オファー**」を選択します。 「**+ オファーを作成**」をクリックします。
+## 3.4.4.5 AEP Assuranceを使用してプッシュ通知の設定をテストします。
 
-![ 決定ルール ](./images/offers1.png)
+アプリがインストールされると、デバイスのホーム画面に表示されます。 アイコンをクリックして、アプリを開きます。
 
-このポップアップが表示されます。
+![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-![ 決定ルール ](./images/offers2.png)
+アプリを初めて使用する場合は、Adobe IDを使用してログインするように求められます。 ログインプロセスを完了します。
 
-今はオファーを作成しないでください。次の演習で作成します。
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-これで、次の 2 種類のオファーがあることがわかります。
+ログインすると、通知を送信する権限を要求する通知が表示されます。 チュートリアルの一部として通知を送信するので、「**許可**」をクリックします。
 
-- パーソナライズされたオファー
-- フォールバックオファー
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
-パーソナライズされたオファーは、特定の状況で表示する特定のコンテンツです。 パーソナライズされたオファーは、特定の条件が満たされた場合に、個人的でコンテキストに沿ったエクスペリエンスを提供するように特別に作成されています。
+その後、アプリのホームページが表示されます。 **設定** に移動します。
 
-フォールバックオファーは、パーソナライズされたオファーの条件が満たされない場合に表示されるオファーです。
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
-## 3.3.1.6 決定
+設定では、現在 **公開プロジェクト** がアプリに読み込まれていることがわかります。 **カスタムプロジェクト** をクリックします。
 
-決定は、プレースメント、パーソナライズされたオファーのコレクション、フォールバックオファーを組み合わせ、優先度、実施要件の制約、合計/ユーザーキャッピングなど、個々のパーソナライズされたオファーの特性に基づいて、Offer Decisioning エンジンが特定のプロファイルに最適なオファーを見つけるために最終的に使用します。
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
-**決定** を設定するには、「**決定**」をクリックします。
+これで、カスタムプロジェクトを読み込めるようになりました。 QR コードをクリックして、プロジェクトを簡単に読み込みます。
 
-![ 決定ルール ](./images/activity.png)
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn6.png)
 
-次の演習では、独自のオファーと決定を設定します。
+**はじめに** の節を実行すると、次の結果が得られます。 クリックして、作成された **モバイル小売プロジェクト** を開きます。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/dsn5b.png)
+
+誤ってブラウザーウィンドウを閉じてしまった場合や、今後のデモまたはイネーブルメントセッションの際には、[https://dsn.adobe.com/projects](https://dsn.adobe.com/projects) にアクセスして web サイトプロジェクトにアクセスすることもできます。 Adobe IDでログインすると、このが表示されます。 モバイルアプリプロジェクトをクリックして開きます。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8a.png)
+
+次に、「**実行** をクリックします。
+
+![DSN](./images/web8b.png)
+
+QR コードを含むこのポップアップが表示されます。 モバイルアプリ内からこの QR コードをスキャンします。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
+
+プロジェクト ID がアプリに表示されたら、「**保存**」をクリックします。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
+
+次に、アプリで **ホーム** に戻ります。 これで、アプリを使用する準備が整いました。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
+
+次に、QR コードをスキャンして、モバイルデバイスをAEP Assurance セッションに接続する必要があります。
+
+AEP Assuranceのセッションを開始するには、[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 左側のメニューで **0}Assurance} をクリックします。**&#x200B;次に、「**セッションを作成**」をクリックします。
+
+![Adobe Experience Platform のデータ収集](./images/griffon3.png)
+
+「**開始**」をクリックします。
+
+![Adobe Experience Platform のデータ収集](./images/griffon5.png)
+
+次の値を入力します。
+
+- セッション名：`--aepUserLdap-- - push debugging` を使用して、ldap を ldap に置き換えます
+- ベース URL：使用 `dxdemo://default`
+
+「**次へ**」をクリックします。
+
+![Adobe Experience Platform のデータ収集](./images/griffon4.png)
+
+画面に QR コードが表示されるので、iOS デバイスでスキャンする必要があります。
+
+![Adobe Experience Platform のデータ収集](./images/griffon6.png)
+
+モバイルデバイスでカメラアプリを開き、AEP Assuranceに表示される QR コードをスキャンします。
+
+![Adobe Experience Platform のデータ収集](./images/ipadPushTest8a.png)
+
+PIN コードを入力するように求めるポップアップ画面が表示されます。 AEP Assurance画面から PIN コードをコピーし、「**接続**」をクリックします。
+
+![Adobe Experience Platform のデータ収集](./images/ipadPushTest9.png)
+
+その後、これが表示されます。
+
+![Adobe Experience Platform のデータ収集](./images/ipadPushTest11.png)
+
+Assuranceでは、デバイサーがAssurance セッションにアクセスすることがわかります。 「**完了**」をクリックします。
+
+![Adobe Experience Platform のデータ収集](./images/griffon7.png)
+
+**プッシュデバッグ** に移動します。
+
+>[!NOTE]
+>
+>左側のメニューに **プッシュデバッグ** が見つからない場合は、画面の左下にある **設定** をクリックし、メニューに **プッシュデバッグ** を追加します。
+
+このようなものが表示されます。
+
+![Adobe Experience Platform のデータ収集](./images/griffon10.png)
+
+説明：
+
+- 最初の列 **クライアント** には、iOS デバイスで使用可能な識別子が表示されます。 ECID とプッシュトークンが表示されます。
+- 2 番目の列には、**App Store資格情報および設定** が表示されます。これは、Launch でのアプリ設定の作成 **3.4.5.4演習の一部として設定されてい** す。
+- 2 番目の列には、**プロファイル** 情報と、プッシュトークンが格納されているプラットフォーム（APNS または APNSSandbox）に関する追加情報が表示されます。 「**プロファイルを検査**」ボタンをクリックすると、Adobe Experience Platformに移動し、完全なリアルタイム顧客プロファイルが表示されます。
+
+プッシュ設定をテストするには、「**テストプッシュ設定を送信** ボタンに移動します。 「**テストプッシュ通知を送信**」をクリックします
+
+![Adobe Experience Platform のデータ収集](./images/griffon11.png)
+
+**プッシュ通知を送信** ボタンをクリックしたときに **DX デモ** アプリが開いていないことを確認する必要があります。 アプリが開いている場合、プッシュ通知はバックグラウンドで受信され、表示されない可能性があります。
+
+次に、このようなプッシュ通知がモバイルデバイスに表示されます。
+
+![Adobe Experience Platform のデータ収集](./images/ipadPush2.png)
+
+プッシュ通知を受け取った場合は、設定が正しく、正常に機能しており、実際のジャーニーを作成して、Journey Optimizerからプッシュメッセージを送信できるようになりました。
 
 ## 次の手順
 
-[3.3.2 オファーと決定の設定 ](./ex2.md){target="_blank"} に移動します。
+[3.3.2 プッシュメッセージを使用したジャーニーの設定を参照してください ](./ex2.md){target="_blank"}
 
-[Offer Decisioning](offer-decisioning.md){target="_blank"} に戻る
+[Adobe Journey Optimizer: プッシュとアプリ内メッセージ ](ajopushinapp.md){target="_blank"} に戻る
 
 [ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

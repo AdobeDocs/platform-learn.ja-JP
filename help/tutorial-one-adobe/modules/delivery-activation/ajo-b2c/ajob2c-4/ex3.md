@@ -4,9 +4,9 @@ description: この演習では、メールコンテンツ内でセグメント�
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '395'
 ht-degree: 10%
 
 ---
@@ -71,12 +71,12 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 その後、最初の行をそのままにし、行 2 と 3 をこのコードに置き換える必要があります。
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 これで完了です。 「**保存**」をクリックします。
 
@@ -108,7 +108,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 次の手順
 
-[3.4.4 セットアップに移動し、iOSのプッシュ通知を使用する ](./ex4.md){target="_blank"}
+[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
 
 [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"} に戻る
 

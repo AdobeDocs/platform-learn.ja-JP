@@ -4,22 +4,22 @@ description: 設定 ID を更新し、ジャーニーをテストする
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
 
 # 3.1.3 データ収集プロパティを更新し、ジャーニーをテストする
 
-## 3.1.3.1 データ収集プロパティの更新
+## デ 3.1.3.1 タ収集プロパティを更新するには
 
-[Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
+[Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/data-collection/home) 「**Tags**」を選択します。
 
 ![ プロパティページ ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-**はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+**はじめに** で、デモシステムは次に、Web サイト用とモバイルアプリ用を含む、いくつかのタグプロパティを作成しました。 `--aepUserLdap-- - One Adobe` 検索 **[!UICONTROL ボックスで]** を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 フィールド `_experience.campaign.orchestration.eventID` に移動します。 現在の値を削除し、eventID をそこに貼り付けます。
 
-イベント ID はAdobe Journey Optimizerの **設定/イベント** にあり、イベント ID はイベントのサンプルペイロードに次のように表示されます。`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+イベント ID はAdobe Journey Optimizerの **設定/イベント** にあり、イベント ID はイベントのサンプルペイロードに次のように表示されます。`"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -67,7 +67,7 @@ eventID を貼り付けると、画面は次のようになります。 次に�
 
 その後、ライブラリが更新され、1 ～ 2 分後に、設定をテストできます。
 
-## 3.1.3.2ジャーニーのテスト
+## 3.1.3.2 ジャーニーのテスト
 
 [https://dsn.adobe.com](https://dsn.adobe.com) に移動します。 Adobe IDでログインすると、このが表示されます。 Web サイトプロジェクトで「。..**」** いう 3 つのドットをクリックし、「**実行**」をクリックして開きます。
 
@@ -97,7 +97,7 @@ eventID を貼り付けると、画面は次のようになります。 次に�
 
 ![デモ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv1.png)
 
-現在は不明なこの顧客の主要識別子として **0&rbrace;Experience Cloud ID&rbrace; を持つプロファイルビューアパネルとリアルタイム顧客プロファイルをご覧ください。**「**ログイン**」をクリックします。
+現在は不明なこの顧客の主要識別子として **0}Experience Cloud ID} を持つプロファイルビューアパネルとリアルタイム顧客プロファイルをご覧ください。**「**ログイン**」をクリックします。
 
 ![デモ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 

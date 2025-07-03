@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer – 外部天気 API、SMS アクション�
 kt: 5342
 doc-type: tutorial
 exl-id: 0ad27ffb-51fe-4bd1-b0be-feeb232039fa
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス **ージの** ホーム `--aepSandboxName--` ビューに移動します。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -74,7 +74,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 説明を `Access to the Open Weather Map` に設定します。
 
-Open Weather Map API の URL は次のとおりです：**http://api.openweathermap.org/data/2.5/weather?units=metric**
+Open Weather Map API の URL は `http://api.openweathermap.org/data/2.5/weather?units=metric` です。
 
 ![デモ](./images/dsname.png)
 
