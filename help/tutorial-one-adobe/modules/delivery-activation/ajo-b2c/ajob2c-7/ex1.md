@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 3.7.1.1 Terminology
 
-Experience Decisioning に関する理解を深めるために、Offer Decisioning アプリケーションサービスとAdobe Experience Platformの連携に関する [ 概要 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) を読むことを強くお勧めします。
+Experience Decisioning に関する理解を深めるために、Offer Decisioning アプリケーションサービスとAdobe Experience Platformの連携に関する [ 概要 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=ja) を読むことを強くお勧めします。
 
 Offer Decisioningを使用するには、次の概念を理解している必要があります。
 
