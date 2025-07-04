@@ -86,7 +86,7 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 ![Adobe Experience Platform のデータ収集](./images/launchprop2.png)
 
-その後、ここに戻ってきます。 **AEP Assurance** の拡張機能が表示されます。 AEP Assuranceは、モバイルアプリでデータを収集したりエクスペリエンスを提供したりする方法を検査、配達確認、シミュレートおよび検証するのに役立ちます。 AEP Assuranceについて詳しくは、[https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home) を参照してください。
+その後、ここに戻ってきます。 **AEP Assurance** の拡張機能が表示されます。 AEP Assuranceは、モバイルアプリでデータを収集したりエクスペリエンスを提供したりする方法を検査、配達確認、シミュレートおよび検証するのに役立ちます。 AEP Assuranceについて詳しくは、[https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home) を参照してください。
 
 ![Adobe Experience Platform のデータ収集](./images/launchprop8.png)
 
