@@ -3,19 +3,27 @@ title: プッシュメッセージによるジャーニーの設定
 description: プッシュメッセージによるジャーニーの設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '770'
 ht-degree: 3%
 
 ---
 
 # 3.3.2 プッシュメッセージによるジャーニーの設定
 
+[Adobe Experience Cloud](https://experience.adobe.com) に移動して、Adobe Journey Optimizerにログインします。 **Journey Optimizer** をクリックします。
 
-## 新 3.4.4.6 いイベントを作成するには
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-**Journey Optimizer** に移動します。 左側のメニューで、**設定** に移動し、**イベント** の下の **管理** をクリックします。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス **ージの** ホーム `--aepSandboxName--` ビューに移動します。
+
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+
+## 新 3.3.2.1 いイベントを作成するには
+
+左側のメニューで、**設定** に移動し、**イベント** の下の **管理** をクリックします。
 
 ![ACOP](./images/acopmenu.png)
 
@@ -32,7 +40,7 @@ ht-degree: 3%
 
 次に、スキーマを選択します。 この演習では、スキーマを準備しました。 スキーマ `Demo System - Event Schema for Mobile App (Global v1.1) v.1` を使用してください。
 
-スキーマを選択すると、「**ペイロード**」セクションで多数のフィールドが選択されます。 これで、イベントが完全に設定されました。
+スキーマを選択すると、「**ペイロード**」セクションで多数のフィールドが選択されます。 フィールド **名前空間** が **ECID** に設定されていることを確認します。 これで、イベントが完全に設定されました。
 
 「**保存**」をクリックします。
 
@@ -50,20 +58,24 @@ ht-degree: 3%
 
 イベントには一意のオーケストレーション eventID があり、`_experience.campaign.orchestration.eventID` が表示されるまでペイロードを下にスクロールすると見つかります。
 
+イベント ID は、次の手順で作成するジャーニーをトリガーにするためにAdobe Experience Platformに送信する必要があるものです。 次の手順で必要になるので、この eventID を書き留めます。
+`"eventID": "aa895251f76831e6440f169f1bb9d2a4388f0696d8e2782cfab192a275817dfa"`
+
+「**OK**」をクリックします。
+
 ![ACOP](./images/payloadeventID.png)
 
-イベント ID は、次の手順で作成するジャーニーをトリガーにするためにAdobe Experience Platformに送信する必要があるものです。 次の手順で必要になるので、この eventID を書き留めます。
-`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
+**キャンセル** をクリックします。
 
-**OK** をクリックし、続いて **キャンセル** をクリックします。
+![ACOP](./images/payloadeventIDa.png)
 
-## ジャ 3.4.4.7 ニーの作成
+## ジャ 3.3.2.2 ニーの作成
 
-メニューで、**ジャーニーに移動し** 「**ジャーニーを作成**」をクリックします。
+左側のメニューで、**ジャーニーに移動し** 「**ジャーニーを作成**」をクリックします。
 
 ![DSN](./images/sjourney1.png)
 
-その後、これが表示されます。 ジャーニーに名前を付けます。 `--aepUserLdap-- - Store Entry journey`.を使用します。「**保存**」をクリックします。
+その後、これが表示されます。 ジャーニーに `--aepUserLdap-- - Store Entry journey` という名前を付けます。 「**保存**」をクリックします。
 
 ![DSN](./images/sjourney3.png)
 
@@ -129,23 +141,61 @@ ht-degree: 3%
 
 ![DSN](./images/sjourney11.png)
 
-## 3.4.4.8 ジャーニーのテストとプッシュメッセージ
+## 3.3.2.3 モバイルのデータ収集プロパティを更新
 
-DX Demo 2.0 モバイルアプリケーションで、**設定** 画面に移動します。 **ストアエントリ** ボタンをクリックします。
+**はじめに** で、デモシステムは次に、Web サイト用とモバイルアプリ用に 1 つのタグプロパティを作成しました。 `--aepUserLdap--` 検索 **ボックスで** を検索して見つけます。 クリックして **モバイル** プロパティを開きます。
 
->[!NOTE]
->
->「**ストアエントリ**」ボタンは現在実装中です。 アプリにはまだ表示されません。
+![DSN](./images/pushpoi1.png)
 
-![DSN](./images/demo1b.png)
+この画像が表示されます。
 
-**ストアエントリ** アイコンをクリックした後、必ずアプリを直ちに閉じてください。閉じないと、プッシュメッセージは表示されません。
+![DSN](./images/pushpoi2.png)
 
-数秒後に、メッセージが表示されます。
+左側のメニューで、**ルール** に移動し、をクリックしてルール **場所エントリ** を開きます。
 
-![DSN](./images/demo2.png)
+![DSN](./images/pushpoi3.png)
 
-この演習は完了しました。
+この画像が表示されます。 アクション **Mobile Core - データを添付** をクリックします。
+
+![DSN](./images/pushpoi4.png)
+
+この画像が表示されます。
+
+![DSN](./images/pushpoi5.png)
+
+`--aepUserLdap--StoreEntryEvent`JSON ペイロード **ウィンドウにイベント** の eventID を貼り付けます。 「**変更を保存**」をクリックします。
+
+![DSN](./images/pushpoi6.png)
+
+**保存** または **ライブラリに保存** をクリックします。
+
+![DSN](./images/pushpoi7.png)
+
+**公開フロー** に移動し、クリックしてライブラリ **メイン** を開きます。
+
+![DSN](./images/pushpoi8.png)
+
+「**変更されたリソースをすべて追加**」をクリックし、「**開発用に保存およびビルド**」をクリックします。
+
+![DSN](./images/pushpoi9.png)
+
+## 3.3.2.4 ジャーニーのテストとプッシュメッセージ
+
+**DSN Mobile** アプリケーションを開きます。
+
+![DSN](./images/dxdemo1.png)
+
+**ストアロケーター** ページに移動します。
+
+![DSN](./images/dxdemo2.png)
+
+**POI エントリをシミュレート** をクリックします。
+
+![DSN](./images/dxdemo3.png)
+
+数秒後に、プッシュ通知が表示されます。
+
+![DSN](./images/dxdemo4.png)
 
 ## 次の手順
 
