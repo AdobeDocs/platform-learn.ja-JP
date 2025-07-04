@@ -4,9 +4,9 @@ description: この節では、トリガーベースのジャーニー – 注�
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス **ージの** ホーム `--aepSandboxName--` ビューに移動します。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -40,7 +40,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-次に、スキーマを選択します。 この演習では、スキーマを準備しました。 スキーマ `Demo System - Event Schema for Website (Global v1.1) v.1` を使用してください。
+次に、スキーマの選択です。 この演習では、スキーマを準備しました。 スキーマ `Demo System - Event Schema for Website (Global v1.1) v.1` を使用してください。
 
 スキーマを選択すると、「**ペイロード**」セクションで多数のフィールドが選択されます。 **編集/鉛筆** アイコンをクリックして、このイベントにフィールドを追加します。
 
@@ -78,7 +78,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 ![Journey Optimizer](./images/oc42.png)
 
 イベント ID は、次の手順で作成するジャーニーをトリガーにするためにAdobe Journey Optimizerに送信する必要があるものです。 この eventID は、次の手順の 1 つで必要になるので、書き留めておきます。
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 **OK** をクリックし、続いて **キャンセル** をクリックします。
 
@@ -102,23 +102,19 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc47.png)
 
-**カテゴリ** を **マーケティング** に設定し、メールを送信できるメールサーフェスを選択します。 この場合、選択するメールサーフェスは **メール** です。 **メールのクリック数** と **メールの開封数** のチェックボックスが両方とも有効になっていることを確認します。
+**カテゴリ** を **マーケティング** に設定し、メールを送信できるメールサーフェスを選択します。 この場合、選択するメールサーフェスは **メール** です。 次の手順では、メッセージを作成します。 それには、「**コンテンツを編集** をクリックします。
 
 ![ACOP](./images/journeyactions1.png)
-
-次の手順では、メッセージを作成します。 それには、「**コンテンツを編集** をクリックします。
-
-![ACOP](./images/journeyactions2.png)
 
 これが表示されます。 **件名** テキストフィールドをクリックします。
 
 ![ACOP](./images/journeyactions3.png)
 
-テキストエリアで **ご注文いただきありがとうございます** と書き始めて、**Personalization** アイコンをクリックします。
+テキストエリアで `Thanks for your order, ` の書き込みを開始し、**Personalization** アイコンをクリックします。
 
 ![Journey Optimizer](./images/oc5.png)
 
-件名がまだ完了していません。 次に、`profile.person.name.firstName` に保存されている「名 **フィールドのパーソナライゼーショントークンを取り込む必要が** ります。 左側のメニューで、下にスクロールして **Person**/**Full name**/**First name** フィールドを見つけ、**+** アイコンをクリックして、パーソナライゼーショントークンを件名行に追加します。 「**保存**」をクリックします。
+件名がまだ完了していません。 次に、**に保存されている「名** フィールドのパーソナライゼーショントークンを取り込む必要が `profile.person.name.firstName` ります。 左側のメニューで、下にスクロールして **Person**/**Full name**/**First name** フィールドを見つけ、**+** アイコンをクリックして、パーソナライゼーショントークンを件名行に追加します。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/oc6.png)
 
@@ -136,7 +132,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc9.png)
 
-左側のメニューで、**フラグメント** に移動します。 先ほど [ 演習 3.1.2.1](./../ajob2c-1/ex2.md) で作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 先ほど [ 演習 3.1.2.2](./../ajob2c-1/ex2.md) で作成したフッターをキャンバスの最後のコンポーネントにドラッグします。
+左側のメニューで、**フラグメント** に移動します。 [ 演習 3.1.2.1](./../ajob2c-1/ex2.md) で前に作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 [exercise 3.1.2.2](./../ajob2c-1/ex2.md) で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -345,15 +341,15 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc513.png)
 
-## 3.4.1.5 Adobe Experience Platform Data Collection クライアントプロパティを更新する
+## Adobe Experience Platform Data Collection Client プロパティを更新 3.4.1.5 るには
 
 [Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
 
-これは、以前に表示したAdobe Experience Platform データ収集のプロパティページです。
+これは、以前に表示したAdobe Experience Platform データ収集プロパティページです。
 
 ![ プロパティページ ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-**はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
+**はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 `--aepUserLdap--` 検索 **[!UICONTROL ボックスで]** を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
 ![ 検索ボックス ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -361,7 +357,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc91.png)
 
-その後、これが表示されます。 **_experience.campaign.orchestration.eventID フィールドに移動し** ここに eventID を入力します。 ここで入力する eventID は、演習 3.4.1.1 の一部として作成した eventID です。**保存** または **ライブラリに保存** をクリックします。
+その後、これが表示されます。 **_experience.campaign.orchestration.eventID フィールドに移動し** ここに eventID を入力します。 ここで入力する eventID は、演習の一部として作成した eventID3.4.1.1、「クリック **保存** または **ライブラリに保存** です。
 
 ![Journey Optimizer](./images/oc92.png)
 
@@ -371,7 +367,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 これで変更がデプロイされ、テストできます。
 
-## 3.4.1.6 デモ Web サイトを使用して注文確認メールをテストします。
+## 3.4.1.6 デモ web サイトを使用して注文確認メールをテストします
 
 デモ Web サイトで製品を購入して、更新されたジャーニーをテストします。
 
@@ -399,19 +395,15 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
-現在は不明なこの顧客の主要識別子として **0&rbrace;Experience Cloud ID&rbrace; を持つプロファイルビューアパネルとリアルタイム顧客プロファイルをご覧ください。**
+現在は不明なこの顧客の主要識別子として **0}Experience Cloud ID} を持つプロファイルビューアパネルとリアルタイム顧客プロファイルをご覧ください。**
 
 ![デモ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-登録/ログインページに移動します。 **アカウントを作成** をクリックします。
+**ログイン** ページに移動し、「**アカウントを作成** をクリックして、これらのフィールドに入力します。 **登録** をクリックすると、前のページにリダイレクトされます。
 
 ![デモ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-詳細を入力して **登録** をクリックすると、前のページにリダイレクトされます。
-
-![デモ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-カートに商品を追加
+商品を買い物かごに追加します。
 
 ![Journey Optimizer](./images/cart1a.png)
 

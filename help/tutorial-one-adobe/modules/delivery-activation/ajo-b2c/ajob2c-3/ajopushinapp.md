@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: fcf4fd2d-8225-408c-b394-539860ee2997
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '229'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,8 @@ ht-degree: 3%
 ## 前提条件
 
 - Adobe Journey Optimizerへのアクセス
+- **これらのアセットをダウンロードします**。
+   - [CitiSignal 画像](./../../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >

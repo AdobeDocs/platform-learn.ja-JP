@@ -1,18 +1,18 @@
 ---
-user-guide-title: Creative CloudからExperience Cloudまでの、Adobe アプリケーション向けの包括的なテクニカルチュートリアル
-breadcrumb-title: Creative CloudからExperience Cloudまでの、Adobe アプリケーション向けの包括的なテクニカルチュートリアル
+user-guide-title: 1 つのAdobe技術チュートリアル
+breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
 
 
-# 包括的なテクニカルチュートリアル - 1 つのAdobe {#tutorial-one-adobe}
+# 1 つのAdobe技術チュートリアル {#tutorial-one-adobe}
 
 + [チュートリアルの概要](/help/tutorial-one-adobe/overview.md)
 + [コンテンツステータス](/help/tutorial-one-adobe/status.md)

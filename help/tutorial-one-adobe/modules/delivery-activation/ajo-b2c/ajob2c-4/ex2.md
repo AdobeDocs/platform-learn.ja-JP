@@ -4,9 +4,9 @@ description: この節では、ニュースレターを送信するバッチメ�
 kt: 5342
 doc-type: tutorial
 exl-id: 40ca710d-63c8-41bd-bd4e-f02186509345
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '877'
 ht-degree: 7%
 
 ---
@@ -17,12 +17,11 @@ ht-degree: 7%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス `--aepSandboxName--` ージの **ホーム** ビューに移動します。
+Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。 その後、サンドボックス **ージの** ホーム `--aepSandboxName--` ビューに移動します。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-
-## 3.4.2.1 オーディエンスの作成
+## 3.4.2.1 オーディエンスを作成
 
 キャンペーンを作成する前に、キャンペーンを受信するオーディエンスを定義する必要があります。 オーディエンスを作成するには、左側のメニューで **オーディエンス** に移動します。 以前に作成したすべてのオーディエンスがそこに表示されます。
 
@@ -96,7 +95,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/campaign8.png)
 
-左側のメニューで、**フラグメント** に移動します。 先ほど [ 演習 3.1.2.1](./../ajob2c-1/ex2.md) で作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 先ほど [ 演習 3.1.2.2](./../ajob2c-1/ex2.md) で作成したフッターをキャンバスの最後のコンポーネントにドラッグします。
+左側のメニューで、**フラグメント** に移動します。 [ 演習 3.1.2.1](./../ajob2c-1/ex2.md) で前に作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 [exercise 3.1.2.2](./../ajob2c-1/ex2.md) で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
 
 ![Journey Optimizer](./images/campaign9.png)
 

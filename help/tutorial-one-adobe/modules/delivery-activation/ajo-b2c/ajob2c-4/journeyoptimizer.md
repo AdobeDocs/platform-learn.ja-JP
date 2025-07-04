@@ -4,9 +4,9 @@ description: このモジュールでは、企業が、コンテキストに応�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 2%
 - Adobe Journey Optimizerに精通する
 - メールおよびプッシュメッセージの作成
 - トリガーベースのジャーニーとバッチジャーニーを設定
-- カスタマージャーニーの一部として、メールおよびプッシュ通知を送信します
 
 ## 前提条件
 
