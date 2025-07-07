@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Adobe Real-Time CDP Collaborationの概要を説明します。これは、価値の高いオーディエンスを見つけてアクティブ化し、測定機能を使用して具体的な結果を導き出す目的に合わせて構築されたデータコラボレーションアプリケーションです。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446802/?learn=on&enablevpops&captions=jpn)
