@@ -3,9 +3,9 @@ user-guide-title: Adobe Experience Platform ビデオクリップ
 breadcrumb-title: ビデオクリップ
 user-guide-description: 非表示のコレクション
 auto-video-transcripts: true
-source-git-commit: 2c0fbb8edff8e6d937014dcfd0339069243dc662
+source-git-commit: 5e8749451b8bd8ed97c8e4f768d082b26e092e0b
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '110'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 3%
 + Platform {#platform}
    + Adobe Summit {#summit}
       + 2025 {#2025}
+         + [ビデオクリップ](platform/summit/2025/aaa-northeast-s-use-of-ai-assistant.md)
+         + [ビデオクリップ](platform/summit/2025/finding-data-attributes-with-ai-assistant.md)
+         + [ビデオクリップ](platform/summit/2025/introduction-to-ai-assistant-in-adobe-experience-platform.md)
+         + [ビデオクリップ](platform/summit/2025/optimizing-audiences-with-ai-assistant.md)
          + [ビデオクリップ](platform/summit/2025/adobe-experience-platform-building-connected-customer-journeys.md)
          + [ビデオクリップ](platform/summit/2025/adobe-s-internal-use-of-aep-driving-experience-led-growth.md)
          + [ビデオクリップ](platform/summit/2025/architecting-adobe-experience-platform-for-scalability.md)
