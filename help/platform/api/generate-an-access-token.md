@@ -20,5 +20,5 @@ ht-degree: 2%
 
 [Adobe Identity Management Service API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) を使用して、Adobe Experience Platform API にアクセスするためのアクセストークンを取得します。
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34080/?learn=on&enablevpops&captions=jpn)
 

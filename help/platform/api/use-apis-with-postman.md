@@ -18,4 +18,4 @@ ht-degree: 0%
 
 [Adobe Experience Platform環境変数 ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) および [ 生成されたアクセストークン ](platform-api-authentication.md) に基づいて、[Adobeが提供するExperience Platform API Postman コレクション ](generate-an-access-token.md) を使用してAdobe Developer Console API を調べます。
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34079/?learn=on&enablevpops&captions=jpn)
