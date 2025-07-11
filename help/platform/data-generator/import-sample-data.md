@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Platformへのサンプルデータの読み込み
-description: いくつかのサンプルデータを使用して、Experience Platformサンドボックス環境を設定する方法を説明します。
+description: いくつかのサンプルデータを含んだExperience Platform サンドボックス環境を設定する方法について説明します。
 feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 6%
@@ -22,7 +22,7 @@ ht-degree: 6%
 
 Experience Platformのビジネスユーザーは、多くの場合、フィールドグループの特定、スキーマの作成、データの準備、データセットの作成、データの取り込みなど、一連の手順を経て、Experience Platformが提供するマーケティング機能を調べる必要があります。 このチュートリアルでは、手順の一部を自動化して、できるだけ早くデータを Platform サンドボックスに取り込めるようにします。
 
-このチュートリアルでは、Luma と呼ばれる架空の小売ブランドに焦点を当てます。 Adobe Experience Platformに投資して、ロイヤルティ、CRM、商品カタログ、オフラインの購入データをリアルタイムの顧客プロファイルに結合し、これらのプロファイルをアクティブ化してマーケティングを次のレベルに引き上げます。 Luma のサンプルデータを生成しました。このチュートリアルの残りの部分では、このデータをExperience Platform用サンドボックス環境の 1 つに読み込みます。
+このチュートリアルでは、Luma と呼ばれる架空の小売ブランドに焦点を当てます。 Adobe Experience Platformに投資して、ロイヤルティ、CRM、商品カタログ、オフラインの購入データをリアルタイムの顧客プロファイルに結合し、これらのプロファイルをアクティブ化してマーケティングを次のレベルに引き上げます。 Luma のサンプルデータを生成しました。このチュートリアルの残りの部分では、このデータをExperience Platform サンドボックス環境の 1 つに読み込みます。
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 ## 前提条件
 
-* 認証 API にアクセスし、Experience Platform方法を理解している。 そうでない場合は、この [ チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ja) を確認してください。
+* Experience Platform API にアクセスし、認証方法を理解している。 そうでない場合は、この [ チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ja) を確認してください。
 * Experience Platform開発用サンドボックスにアクセスできます。
-* Experience Platformテナント ID を把握している。 認証済みの [API リクエスト ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ja#know-your-tenant_id) を行うことで取得できます
+* Experience Platform テナント ID を把握している。 認証済みの [API リクエスト ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) を行うことで取得できます
 または、Platform アカウントにログインする際に URL から抽出します。 例えば、次の URL では、テナントは「`techmarketingdemos`」 `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home` です。
 
 ## 使用 [!DNL Postman] {#postman}
@@ -81,7 +81,7 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 1. Postmanで、右上のドロップダウンで環境を選択し、目のアイコンをクリックして、環境変数を表示します。
    ![ 環境の選定 ](../assets/data-generator/images/env-selection.png)
 
-1. 次の環境変数が入力されていることを確認します。 Experience Platform変数の値の取得方法について詳しくは、[Authentication to Environment APIs](/help/platform/authentication/platform-api-authentication.md) チュートリアルを参照してください。
+1. 次の環境変数が入力されていることを確認します。 環境変数の値の取得方法について詳しくは、[Experience Platform API への認証 ](/help/platform/api/platform-api-authentication.md) チュートリアルを参照してください。
 
    * `CLIENT_SECRET`
    * `API_KEY`—Adobe Developer Consoleの `Client ID`
@@ -153,7 +153,7 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
    ![ ロイヤルティの結果 ](../assets/data-generator/images/loyalty-result.png)
 
 1. 次に、[Adobe Experience Platform インターフェイスにログインし ](https://platform.adobe.com/) データセットに移動します。
-1. `Luma Loyalty Dataset` データセットを開き、データセットアクティビティ ウィンドウで、1,000 件のレコードを取り込んだ正常なバッチ実行を表示できます。 「データセットをプレビュー」オプションをクリックして、取り込んだレコードを確認することもできます。 1,000 個の [!UICONTROL &#x200B; 新しいプロファイルフラグメント &#x200B;] が作成されたことを確認するには、数分待つ必要がある場合があります。
+1. `Luma Loyalty Dataset` データセットを開き、データセットアクティビティ ウィンドウで、1,000 件のレコードを取り込んだ正常なバッチ実行を表示できます。 「データセットをプレビュー」オプションをクリックして、取り込んだレコードを確認することもできます。 1,000 個の [!UICONTROL  新しいプロファイルフラグメント ] が作成されたことを確認するには、数分待つ必要がある場合があります。
    ![ ロイヤルティデータセット ](../assets/data-generator/images/loyalty-dataset.png)
 1. 手順 1 ～ 3 を繰り返し、他のコレクションを実行します。
    * `2-Luma-CRM-Data.postman_collection.json` は、顧客の CRM データ用のスキーマと入力されたデータセットを作成します。 このスキーマは、デモグラフィックの詳細、個人の連絡先の詳細、環境設定の詳細、カスタム ID フィールドグループで構成される XDM 個人プロファイル クラスに基づいています。
@@ -169,13 +169,13 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 サンプルデータは、コレクションを実行すると、複数のシステムからのデータを組み合わせたリアルタイム顧客プロファイルが構築されるように設計されています。 この良い例としては、ロイヤルティ、CRM、オフライン購入の各データセットの最初のレコードがあります。 そのプロファイルを検索して、データが取り込まれたことを確認します。 [Adobe Experience Platform インターフェイス ](https://experience.adobe.com/platform/):
 
 1. **[!UICONTROL プロファイル]**/**[!UICONTROL 参照]** に移動します。
-1. **[!UICONTROL ID 名前空間]** として `Luma Loyalty Id` を選択します
-1. **[!UICONTROL ID 値]** として `5625458` を検索します
+1. `Luma Loyalty Id`ID 名前空間 **[!UICONTROL として]** を選択します
+1. `5625458`ID 値 **[!UICONTROL として]** を検索します
 1. `Daniel Wright` プロファイルを開きます。
 
 >[!TIP]
 >
->プロファイルが表示されない場合は、「[!UICONTROL &#x200B; データセット &#x200B;]」ページをチェックして、すべてのデータセットが正常に作成されてデータを取り込んだことを確認します。 問題がないようであれば、15 分待って、プロファイルがビューアで使用できるかどうかを確認します。  データの取り込みに問題があった場合は、エラーメッセージを確認して問題を見つけます。 また、[!UICONTROL &#x200B; データセット &#x200B;] ページでエラー診断を有効にし、json データファイルをドラッグ&amp;ドロップしてデータを再度取り込むこともできます。
+>プロファイルが表示されない場合は、「[!UICONTROL  データセット ]」ページをチェックして、すべてのデータセットが正常に作成されてデータを取り込んだことを確認します。 問題がないようであれば、15 分待って、プロファイルがビューアで使用できるかどうかを確認します。  データの取り込みに問題があった場合は、エラーメッセージを確認して問題を見つけます。 また、[!UICONTROL  データセット ] ページでエラー診断を有効にし、json データファイルをドラッグ&amp;ドロップしてデータを再度取り込むこともできます。
 
 
 ![ プロファイルを開く ](../assets/data-generator/images/validation-profile-open.png)
@@ -187,16 +187,16 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 Adobe Journey Optimizerについて学びたい場合は、このサンドボックスに、[Journey Optimizerの課題に取り組むために必要なすべてが含まれています ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja)
 
-結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて詳しくは、[ データアーキテクトおよびデータエンジニア向けスタートガイド チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ja) に進んでください。 この他のチュートリアルの前のレッスンでは、これらのPostman コレクションで入力されたすべてのものを手動で構築しました。すぐに始めましょう。
+結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて詳しくは、[ データアーキテクトおよびデータエンジニア向けスタートガイド チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en) に進んでください。 この他のチュートリアルの前のレッスンでは、これらのPostman コレクションで入力されたすべてのものを手動で構築しました。すぐに始めましょう。
 
-このサンドボックスにリンクするサンプル Web SDK 実装を作成するには、を参照してください。
-[Web SDK を使用したAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「タグ設定」、「Experience Platformの設定」の各レッスンを設定したら、パスワード `test` を使用して、`luma-crm.json` ファイルの最初の 10 個のメールアドレスで Luma web サイトにログインし、プロファイルフラグメントがこのチュートリアルでアップロードしたデータと結合されることを確認します。
+このサンドボックスにリンクする web SDKのサンプル実装を作成する場合は、
+[Web SDKを使用したAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「タグ設定」、「Experience Platformの設定」の各レッスンを設定したら、パスワード `luma-crm.json` を使用して、`test` ファイルの最初の 10 個のメールアドレスで Luma web サイトにログインし、プロファイルフラグメントがこのチュートリアルでアップロードしたデータと結合されることを確認します。
 
-サンプルの Mobile SDK 実装を作成して、このサンドボックスにリンクするには、
-[ モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「アプリの実装」、「Experience Platform」のレッスンを設定したら、`luma-crm.json` ファイルの最初のメールアドレスを使用して Luma の web サイトにログインし、このチュートリアルでアップロードされたデータとプロファイルフラグメントの結合を確認します。
+サンプルの Mobile SDK実装を作成して、このサンドボックスにリンクするには、以下を実行します
+[ モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「アプリの実装」、「Experience Platform」のレッスンを設定したら、`luma-crm.json` ファイルの最初のメールアドレスを使用して Luma web サイトにログインし、このチュートリアルでアップロードされたデータとプロファイルフラグメントの結合を確認します。
 
 ## サンドボックス環境のリセット {#reset-sandbox}
 
 実稼動以外のサンドボックスをリセットすると、サンドボックスの名前と関連付けられた権限は保持されたまま、そのサンドボックスに関連付けられているすべてのスキーマ（リソース、データセットなど）が削除されます。この「クリーンな」サンドボックスは、引き続き、アクセス権を持つユーザーと同じ名前で使用できます。
 
-サンドボックス環境をリセットするには、[ こちら ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=ja#reset-a-sandbox) の手順に従います。
+サンドボックス環境をリセットするには、[ こちら ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) の手順に従います。
