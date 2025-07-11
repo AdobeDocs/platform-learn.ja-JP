@@ -33,7 +33,7 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 * Experience Platform API にアクセスし、認証方法を理解している。 そうでない場合は、この [ チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ja) を確認してください。
 * Experience Platform開発用サンドボックスにアクセスできます。
-* Experience Platform テナント ID を把握している。 認証済みの [API リクエスト ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) を行うことで取得できます
+* Experience Platform テナント ID を把握している。 認証済みの [API リクエスト ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ja#know-your-tenant_id) を行うことで取得できます
 または、Platform アカウントにログインする際に URL から抽出します。 例えば、次の URL では、テナントは「`techmarketingdemos`」 `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home` です。
 
 ## 使用 [!DNL Postman] {#postman}
@@ -187,7 +187,7 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 Adobe Journey Optimizerについて学びたい場合は、このサンドボックスに、[Journey Optimizerの課題に取り組むために必要なすべてが含まれています ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja)
 
-結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて詳しくは、[ データアーキテクトおよびデータエンジニア向けスタートガイド チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en) に進んでください。 この他のチュートリアルの前のレッスンでは、これらのPostman コレクションで入力されたすべてのものを手動で構築しました。すぐに始めましょう。
+結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて詳しくは、[ データアーキテクトおよびデータエンジニア向けスタートガイド チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ja) に進んでください。 この他のチュートリアルの前のレッスンでは、これらのPostman コレクションで入力されたすべてのものを手動で構築しました。すぐに始めましょう。
 
 このサンドボックスにリンクする web SDKのサンプル実装を作成する場合は、
 [Web SDKを使用したAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「タグ設定」、「Experience Platformの設定」の各レッスンを設定したら、パスワード `luma-crm.json` を使用して、`test` ファイルの最初の 10 個のメールアドレスで Luma web サイトにログインし、プロファイルフラグメントがこのチュートリアルでアップロードしたデータと結合されることを確認します。
@@ -199,4 +199,4 @@ Adobe Journey Optimizerについて学びたい場合は、このサンドボッ
 
 実稼動以外のサンドボックスをリセットすると、サンドボックスの名前と関連付けられた権限は保持されたまま、そのサンドボックスに関連付けられているすべてのスキーマ（リソース、データセットなど）が削除されます。この「クリーンな」サンドボックスは、引き続き、アクセス権を持つユーザーと同じ名前で使用できます。
 
-サンドボックス環境をリセットするには、[ こちら ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) の手順に従います。
+サンドボックス環境をリセットするには、[ こちら ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=ja#reset-a-sandbox) の手順に従います。
