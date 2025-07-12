@@ -20,4 +20,4 @@ ht-degree: 0%
 
 このビデオでは、Real-Time CDP Collaborationを導入する際に、様々なユースケース、データソース、オーディエンス、目標をまたいで、これらの部門横断的なチームがどのように連携し、成功と運用効率を確保すべきかについて、エージェンシー担当者と mar テクニカルチームの両方がReal-Time CDP Collaborationを使用するユーザーを対象にガイダンスを提供します
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464670/?learn=on&enablevpops&captions=jpn)

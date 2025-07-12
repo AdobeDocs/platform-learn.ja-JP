@@ -64,7 +64,7 @@ Adobe Real-Time Customer Data Platform（CDP）Collaborationを使用すると�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="代理店向けReal-Time CDPの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1751925455060" alt="代理店向けReal-Time CDPの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464659/?format=jpeg&nocache=1751925455060&captions=jpn" alt="代理店向けReal-Time CDPの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Adobe Real-Time Customer Data Platform（CDP）Collaborationを使用すると�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - プロセスと人物" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1751925455067" alt="Real-Time CDP Collaboration - プロセスと人物"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464670/?format=jpeg&nocache=1751925455067&captions=jpn" alt="Real-Time CDP Collaboration - プロセスと人物"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
