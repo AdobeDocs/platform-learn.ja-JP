@@ -4,9 +4,9 @@ description: Journey Optimizer メールメッセージの作成
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: ea8255de9869061cd21d2b5e7c8690f84be0a25b
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 5%
 
 ---
@@ -216,7 +216,7 @@ ID 名前空間のリストで、「**メール**」名前空間を選択しま�
 
 ![ACOP](./images/publish1.png)
 
-数分後に、ジャーニーのステータスが **ライブ** に変わり、ジャーニーのパフォーマンスがリアルタイムでダッシュボードに表示されます。
+数分後、ジャーニーのステータスが **ライブ** に変わり、ジャーニーのパフォーマンスに関するリアルタイムダッシュボードが表示されます。
 
 ![ACOP](./images/published.png)
 
