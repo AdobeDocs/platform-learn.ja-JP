@@ -80,7 +80,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 モバイルアプリからEdge Networkに送信されるデータがJourney Optimizer - Decision Management に転送されるようにするには、データストリーム設定を更新します。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
+1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Offer Decisioning]**」、「**[!UICONTROL Edge セグメント化]**」、「**[!UICONTROL Personalizationの宛先]**」が選択されていることを確認します。 Journey Optimizerのレッスンにも従う場合は、「**[!UICONTROL Adobe Journey Optimizer]**」を選択します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 設定を参照してください。
 1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
@@ -103,7 +103,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 1. データ収集インターフェイスに移動し、左パネルから **[!UICONTROL スキーマ]** を選択します。
 1. 上部のバーから **[!UICONTROL 参照]** を選択します。
 1. スキーマを選択して開きます。
-1. スキーマエディターで、「フィールドグループ ![ の横にある「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加 ******[!UICONTROL 追加]** を選択します。
+1. スキーマエディターで、「フィールドグループ ![ の横にある「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加 **&#x200B;**&#x200B;**[!UICONTROL 追加]** を選択します。
 1. **[!UICONTROL フィールドグループの追加]** ダイアログで、`proposition` を検索し、**[!UICONTROL エクスペリエンスイベント – 提案インタラクション]** および **[!UICONTROL フィールドグループの追加]** を選択します。
    ![ 提案 ](assets/schema-fieldgroup-proposition.png)
 1. スキーマへの変更を保存するには、「**[!UICONTROL 保存]**」を選択します。
@@ -114,7 +114,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 Assuranceの設定を検証するには：
 
 1. Assurance UI に移動します。
-1. 左側のパネルで **[!UICONTROL 設定]** を選択し、{6![OFFER DECISIONINGと TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下にある **[!UICONTROL 設定を検証]** の横にある「追加 **[!UICONTROL を選択します。]**
+1. 左側のパネルで **[!UICONTROL 設定]** を選択し、&lbrace;6![OFFER DECISIONINGと TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下にある **[!UICONTROL 設定を検証]** の横にある「追加 **[!UICONTROL を選択します。]**
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで **[!UICONTROL 設定を検証]** を選択します。 データストリームの設定と、アプリケーションでのSDKの設定の両方が検証されます。
    ![AJO Decisioning の検証 ](assets/ajo-decisioning-validation.png)
