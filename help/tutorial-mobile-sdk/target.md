@@ -6,9 +6,9 @@ feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 4c9ac30ecc0f41b7d6cd9a6653bca50e602cbc13
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1746'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Platform Mobile SDKとAdobe Targetを使用して、モバイルアプリのエクスペリエンスを最適化およびパーソナライズする方法について説明します。
 
-Target は、顧客体験をカスタマイズおよびパーソナライズするために必要なすべてを提供します。 Target は、Web サイト、モバイルサイト、アプリ、ソーシャルメディア、その他のデジタルチャネルの売上高を最大化するのに役立ちます。 Target は、A/B テスト、多変量分析テスト、製品とコンテンツのレコメンデーション、コンテンツのターゲット設定、AI を使用したコンテンツの自動パーソナライズなどを実行できます。 このレッスンでは、Target の A/B テスト機能に焦点を当てます。 詳しくは、[A/B テストの概要 ](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ja) 参照してください。
+Target は、顧客体験をカスタマイズおよびパーソナライズするために必要なすべてを提供します。 Target は、Web サイト、モバイルサイト、アプリ、ソーシャルメディア、その他のデジタルチャネルの売上高を最大化するのに役立ちます。 Target は、A/B テスト、多変量分析テスト、製品とコンテンツのレコメンデーション、コンテンツのターゲット設定、AI を使用したコンテンツの自動パーソナライズなどを実行できます。 このレッスンでは、Target の A/B テスト機能に焦点を当てます。 詳しくは、[A/B テストの概要 ](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 参照してください。
 
 ![アーキテクチャ](assets/architecture-at.png)
 
@@ -66,9 +66,9 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 
    Target UI の **[!UICONTROL 管理]**/**[!UICONTROL プロパティ]** で、プロパティを確認できます。 「![ コード ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)」を選択して、使用するプロパティのプロパティトークンを表示します。 プロパティトークンには `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"` のような形式があります。値 `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` のみを入力する必要があります。
 
-   オプションで、ターゲット環境 ID を指定できます。 Target では、環境を使用してサイトと実稼動前の環境を整理し、管理を容易にし、レポートを個別に作成できます。 プリセットされた環境には、実稼働、ステージング、開発が含まれます。 詳しくは、[ 環境 ](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=ja) および [ ターゲット環境 ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ja#target-environment-id) を参照してください。
+   オプションで、ターゲット環境 ID を指定できます。 Target では、環境を使用してサイトと実稼動前の環境を整理し、管理を容易にし、レポートを個別に作成できます。 プリセットされた環境には、実稼働、ステージング、開発が含まれます。 詳しくは、[ 環境 ](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) および [ ターゲット環境 ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) を参照してください。
 
-   オプションで、Target サードパーティ ID 名前空間を指定して、ID 名前空間（例：CRM ID）でのプロファイル同期をサポートすることができます。 詳しくは、[Target サードパーティ ID 名前空間 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ja#target-third-party-id-namespace) を参照してください。
+   オプションで、Target サードパーティ ID 名前空間を指定して、ID 名前空間（例：CRM ID）でのプロファイル同期をサポートすることができます。 詳しくは、[Target サードパーティ ID 名前空間 ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) を参照してください。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -80,8 +80,8 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 モバイルアプリからEdge Networkに送信されるデータがJourney Optimizer - Decision Management に転送されるようにするには、データストリーム設定を更新します。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
-1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Offer Decisioning]**」、「**[!UICONTROL Edge セグメント化]**」、「**[!UICONTROL Personalizationの宛先]**」が選択されていることを確認します。 Journey Optimizerのレッスンにも従う場合は、「**[!UICONTROL Adobe Journey Optimizer]**」を選択します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja#aep) 設定を参照してください。
+1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
+1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Offer Decisioning]**」、「**[!UICONTROL Edge セグメント化]**」、「**[!UICONTROL Personalizationの宛先]**」が選択されていることを確認します。 Journey Optimizerのレッスンにも従う場合は、「**[!UICONTROL Adobe Journey Optimizer]**」を選択します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 設定を参照してください。
 1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
    ![AEP データストリーム設定 ](assets/datastream-aep-configuration-target.png)
@@ -103,7 +103,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 1. データ収集インターフェイスに移動し、左パネルから **[!UICONTROL スキーマ]** を選択します。
 1. 上部のバーから **[!UICONTROL 参照]** を選択します。
 1. スキーマを選択して開きます。
-1. スキーマエディターで、「フィールドグループ ![ の横にある「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加 **&#x200B;**&#x200B;**[!UICONTROL 追加]** を選択します。
+1. スキーマエディターで、「フィールドグループ ![ の横にある「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加 ******[!UICONTROL 追加]** を選択します。
 1. **[!UICONTROL フィールドグループの追加]** ダイアログで、`proposition` を検索し、**[!UICONTROL エクスペリエンスイベント – 提案インタラクション]** および **[!UICONTROL フィールドグループの追加]** を選択します。
    ![ 提案 ](assets/schema-fieldgroup-proposition.png)
 1. スキーマへの変更を保存するには、「**[!UICONTROL 保存]**」を選択します。
@@ -114,7 +114,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 Assuranceの設定を検証するには：
 
 1. Assurance UI に移動します。
-1. 左側のパネルで **[!UICONTROL 設定]** を選択し、&lbrace;6![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 設定を検証]** の横にある「追加 **[!UICONTROL を選択します。]**
+1. 左側のパネルで **[!UICONTROL 設定]** を選択し、{6![OFFER DECISIONINGと TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下にある **[!UICONTROL 設定を検証]** の横にある「追加 **[!UICONTROL を選択します。]**
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで **[!UICONTROL 設定を検証]** を選択します。 データストリームの設定と、アプリケーションでのSDKの設定の両方が検証されます。
    ![AJO Decisioning の検証 ](assets/ajo-decisioning-validation.png)
@@ -277,7 +277,7 @@ Assuranceの設定を検証するには：
 Assuranceで A/B テストを検証するには：
 
 1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
-1. 左側のパネルで **[!UICONTROL 設定]** を選択し、&lbrace;6![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL レビューとシミュレーション]** の横にある「追加 **[!UICONTROL を選択します。]**
+1. 左側のパネルで **[!UICONTROL 設定]** を選択し、![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) OFFER DECSIONING AND TARGET **[!UICONTROL の下の]** レビューとシミュレート **[!UICONTROL の横にある「追加]** を選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで **[!UICONTROL レビューとシミュレート]** を選択します。 データストリームの設定と、アプリケーションでのSDKの設定の両方が検証されます。
 1. 上部のバーで「**[!UICONTROL リクエスト]**」を選択します。 **[!DNL Target]** リクエストが表示されます。
@@ -291,8 +291,8 @@ Assuranceで A/B テストを検証するには：
 
 >[!SUCCESS]
 >
->A/B テストに対してアプリを有効にし、Adobe Experience Platform Mobile SDKのAdobe TargetおよびOffer Decisioningと Target 拡張機能を使用して A/B テストの結果を表示しました。
+>A/B テストに対してアプリを有効にし、Adobe Experience Platform Mobile SDKのOffer Decisioningおよび Target 拡張機能を使用した A/B テストの結果を表示しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[結論と次のステップ](conclusion.md)**
