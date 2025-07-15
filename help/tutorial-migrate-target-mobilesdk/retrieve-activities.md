@@ -1,10 +1,10 @@
 ---
-title: Target アクティビティの取得 – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
-description: Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能に移行する際に、Adobe Target アクティビティを取得する方法を説明します。
+title: Target アクティビティの取得 – モバイルアプリのAdobe Target実装をOffer Decisioningおよび Target 拡張機能に移行します
+description: Adobe TargetからOffer Decisioningおよび Target モバイル拡張機能に移行する際に、Adobe Target アクティビティを取得する方法について説明します。
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Target が返すコンテンツ（「オファー」とも呼ばれます）は�
 * アプリケーションの機能フラグの有効化
 * 代替テキストまたは画像の提供
 
-アプリケーションの Target 拡張機能バージョンと Decisioning 拡張機能バージョンの両方でアクティビティを実行する必要がある場合は、徹底的にテストしてください。 アプリのバージョンごとに異なるオファーを使用する必要がある場合は、インターフェイスのターゲティングオプションを使用して、異なるバージョンに異なるオファーを配信することを検討します。
+アプリケーションの Target 拡張機能とOffer Decisioningおよび Target 拡張機能の両方のバージョンでアクティビティを実行する必要がある場合は、必ず徹底的にテストしてください。 アプリのバージョンごとに異なるオファーを使用する必要がある場合は、インターフェイスのターゲティングオプションを使用して、異なるバージョンに異なるオファーを配信することを検討します。
 
 エラー条件下で適切なエクスペリエンスを表示するには、必ずエラー処理を含めてください。
 
@@ -143,8 +143,8 @@ Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
 
 
 
-次に、[Decisioning 拡張機能を使用して Target パラメーターを渡す ](send-parameters.md) 方法を説明します。
+次に、[Offer Decisioningと Target 拡張機能を使用して Target パラメーターを渡す ](send-parameters.md) 方法について説明します。
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能から Decisioning 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。
+>アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) に投稿してお知らせください。

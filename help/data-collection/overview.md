@@ -3,9 +3,9 @@ title: データ収集チュートリアル
 description: データ収集のパワーユーザーになるためのハウツービデオおよびチュートリアル
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
+source-git-commit: 4c2cc6da2a5590dbd4405555f6813a4b06dc2dff
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 22%
 
 ---
@@ -41,11 +41,11 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="モバイルアプリへの実装" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong> モバイルアプリへのExperience Cloudの実装 </strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target を Web SDKに移行" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong> タグを使用したレガシーライブラリの実装 </strong>
     </a>
     </div>
@@ -74,11 +74,11 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target を Web SDKに移行" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Adobe Targetの Web SDKへの移行 </strong>
     </a>
     </div>
@@ -106,7 +106,7 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
       <strong>Adobe Audience Managerの Web SDKへの移行 </strong>
     </div>
     <p>
-    <em><a href="https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> を置き換えるか、<a href="https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank"> サーバーサイド転送を更新します </a></em>
+    <em><a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> を置き換えるか、<a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank"> サーバーサイド転送を更新します </a></em>
     <p>
   </td>
 </tr>
@@ -121,7 +121,7 @@ Data Collection は、Adobeが提供する次世代型の web サイトタグお
     </a>
     </div>
     <p>
-    <em>Target 拡張機能をJourney Optimizer - Decisioning 拡張機能に置き換える </em>
+    <em>Target 拡張機能をOffer Decisioningおよび Target 拡張機能に置き換える </em>
     <p>
   </td>
   <td>

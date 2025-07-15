@@ -1,11 +1,11 @@
 ---
-title: Platform Mobile SDK での Places の使用
+title: Platform Mobile SDKでの場所の使用
 description: モバイルアプリで Places geolocation サービスを使用する方法を説明します。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1591'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 アプリで Places ジオロケーションサービスを使用する方法を説明します。
 
-Adobe Experience Platform Data Collection Places Service は、位置認識機能を備えたモバイルアプリが位置のコンテキストを理解できるようにする位置情報サービスです。 このサービスは、豊富で使いやすい SDK インターフェイスと、柔軟な目標地点（POI）データベースを使用しています。
+Adobe Experience Platform Data Collection Places Service は、位置認識機能を備えたモバイルアプリが位置のコンテキストを理解できるようにする位置情報サービスです。 このサービスは、豊富で使いやすいSDK インターフェイスと、柔軟な目標地点（POI）データベースを使用しています。
 
 ## 前提条件
 
@@ -31,14 +31,14 @@ Adobe Experience Platform Data Collection Places Service は、位置認識機�
 * Places サービスで目標地点を定義する方法を理解します。
 * 場所の拡張機能でタグプロパティを更新します。
 * 位置情報イベントを取り込むようにスキーマを更新します。
-* Assurance の設定を検証します。
+* Assuranceの設定を検証します。
 * アプリを更新して、Places 拡張機能を登録します。
 * アプリの Places サービスから位置情報トラッキングを実装します。
 
 
 ## セットアップ
 
-Places サービスがアプリ内および Mobile SDK 内で機能するには、いくつかの設定を行う必要があります。
+Places サービスがアプリ内および Mobile SDK内で機能するには、いくつかの設定を行う必要があります。
 
 ### 場所を定義
 
@@ -74,13 +74,12 @@ Places サービスでいくつかの目標点を定義します。
 1. **[!UICONTROL 場所]** 拡張機能を検索します。
 1. 拡張機能をインストールします。
 
-   ![Decisioning 拡張機能の追加 ](assets/tag-places-extension.png)
+   ![Offer Decisioningと Target 拡張機能の追加 ](assets/tag-places-extension.png)
 
 1. **[!UICONTROL 拡張機能をインストール]** ダイアログで、次の手順を実行します。
-   1. **[!UICONTROL ライブラリを選択]** リストから「**[!DNL Luma]**」を選択します。
+   1. **[!DNL Luma]** ライブラリを選択 **[!UICONTROL リストから「]**」を選択します。
    1. **[!UICONTROL 初期ビルド]** など、作業ライブラリが選択されていることを確認します。
    1. **[!UICONTROL ライブラリに保存]** から **[!UICONTROL ライブラリとビルドに保存]** を選択します。
-
       ![Places 拡張機能をインストール ](assets/places-install-extension.png) ます。
 
 1. ライブラリが再構築されます。
@@ -140,10 +139,9 @@ Places サービスでいくつかの目標点を定義します。
 1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]** を選択します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を入力]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-
       ![ タグイベント ](assets/tags-event-mobile-core.png)。
 1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
-   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**&#x200B;[!UICONTROL &#x200B; リストから &#x200B;]&#x200B;**データを添付]** を選択します。 ペイロードデータを添付します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ]** リストから **[!UICONTROL データを添付]** を選択します。 ペイロードデータを添付します。
    1. **[!UICONTROL JSON ペイロード]** に、次のペイロードを貼り付けます。
 
       ```json
@@ -168,14 +166,13 @@ Places サービスでいくつかの目標点を定義します。
       }
       ```
 
-      また、「![Data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)」 `{%% ... %%}` 選択すると、JSON にデータ要素のプレースホルダー値を挿入できます。 ポップアップダイアログが表示され、作成したデータ要素を選択できます。
+      また、「`{%% ... %%}`Data![」 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 選択すると、JSON にデータ要素のプレースホルダー値を挿入できます。 ポップアップダイアログが表示され、作成したデータ要素を選択できます。
 
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-
       ![ タグアクション ](assets/tags-action-mobile-core.png)
 
 1. ![ モバイルコア – データを添付 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) アクションの横にある **[!UICONTROL 追加]** を選択します。
-   1. **[!UICONTROL Edge Network]** リストから「**[!UICONTROL Adobe Experience Platform Edge Network]**」を選択し、「**[!UICONTROL 拡張機能にイベントを転送]**」を選択します。 これにより、イベントと追加のペイロードデータが Platform Edge Networkに転送されます。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Adobe Experience Platform Edge Network]** を選択し、「**[!UICONTROL イベントをEdge Networkに転送]**」を選択します。 これにより、イベントと追加のペイロードデータが Platform Edge Networkに転送されます。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 
 1. ルールを保存するには、「**[!UICONTROL ライブラリに保存]**」を選択します。
@@ -189,7 +186,7 @@ Places サービスでいくつかの目標点を定義します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を終了]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
-   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ**&#x200B;[!UICONTROL &#x200B; リストから &#x200B;]&#x200B;**データを添付]** を選択します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ]** リストから **[!UICONTROL データを添付]** を選択します。
    1. **[!UICONTROL JSON ペイロード]** に、次のペイロードを貼り付けます。
 
       ```json
@@ -217,7 +214,7 @@ Places サービスでいくつかの目標点を定義します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 
 1. ![ モバイルコア – データを添付 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) アクションの横にある **[!UICONTROL 追加]** を選択します。
-   1. **[!UICONTROL Edge Network]** リストから「**[!UICONTROL Adobe Experience Platform Edge Network]**」を選択し、「**[!UICONTROL 拡張機能にイベントを転送]**」を選択します。
+   1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Adobe Experience Platform Edge Network]** を選択し、「**[!UICONTROL イベントをEdge Networkに転送]**」を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
 
 1. ルールを保存するには、「**[!UICONTROL ライブラリに保存]**」を選択します。
@@ -234,12 +231,12 @@ Places サービスでいくつかの目標点を定義します。
 
 
 
-## Assurance での設定の検証
+## Assuranceでの設定の検証
 
-Assurance で設定を検証するには：
+Assuranceの設定を検証するには：
 
 1. Assurance UI に移動します。
-1. 左側のパネルに **[!UICONTROL まだ表示されていない場合は、左側のパネルの「]** 設定 **」を選択し、「イベント ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」の横の「 追加** を選択し、「**[!UICONTROL PLACES SERVICE]**」の下の「**[!UICONTROL マップとシミュレート]** を選択します。
+1. 左側のパネルに **[!UICONTROL まだ表示されていない場合は、左側のパネルの「]** 設定 ![」を選択し、「イベント ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」の横の「**[!UICONTROL 追加]** を選択し、「**[!UICONTROL PLACES SERVICE]**」の下の「**[!UICONTROL マップとシミュレート]** を選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで「**[!UICONTROL マップとシミュレート]**」を選択します。
 1. POI のいずれかの場所にマップを移動します。
@@ -253,14 +250,14 @@ Assurance で設定を検証するには：
 
 ## アプリへの Places の実装
 
-前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、Places SDK をインストールして登録する必要があります。 これらの手順が明確でない場合は、「SDK のインストール [ の節を参照し ](install-sdks.md) ください。
+前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、場所SDKをインストールして登録する必要があります。 これらの手順が明確でない場合は、「SDK のインストール [ の節を参照し ](install-sdks.md) ください。
 
 >[!NOTE]
 >
->[SDK のインストール ](install-sdks.md) の節を完了した場合、Places SDK は既にインストールされているので、この手順をスキップできます。
+>[SDK のインストール ](install-sdks.md) の節を完了した場合、Places SDKは既にインストールされているので、この手順をスキップできます。
 >
 
-1. Xcode で、[AEP Places](https://github.com/adobe/aepsdk-places-ios) がパッケージの依存関係にあるパッケージのリストに追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
+1. Xcode で、[AEP Places](https://github.com/adobe/aepsdk-places-ios) がパッケージの依存関係のパッケージの一覧に追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL AppDelegate]** に移動します。
 1. `AEPPlaces` が読み込みのリストに含まれていることを確認します。
 
@@ -339,16 +336,16 @@ Assurance で設定を検証するには：
 
 ## 次の手順
 
-これで、アプリのジオロケーション機能にさらに機能を追加するためのツールがすべて揃いました。 イベントをEdge Networkに転送したので、[Experience Platform](platform.md) 用にアプリを設定すると、アプリで使用されるプロファイルにエクスペリエンスイベントが表示されます。
+これで、アプリのジオロケーション機能にさらに機能を追加するためのツールがすべて揃いました。 イベントをEdge Networkに転送したので、[Experience Platform](platform.md) のアプリを設定すると、アプリで使用されるプロファイルにエクスペリエンスイベントが表示されます。
 
 このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガーJourney Optimizer化できることを確認します（[ プッシュ通知 ](journey-optimizer-inapp.md) および [ アプリ内メッセージ ](journey-optimizer-push.md) を参照）。 例えば、通常の例では、アプリユーザーが物理的なストアのジオフェンスに入ると、製品プロモーションを伴うプッシュ通知が送信されます。
 
-アプリの機能の実装は、ほとんどが Places サービスと、タグプロパティで定義したデータ要素およびルールによって駆動されています。 そのため、アプリ内のコードは最小限に抑えます。 または、入力された `placeContext` オブジェクトを含む XDM ペイロードで、[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API （詳しくは [ イベント ](events.md) を参照）を使用して、同じ機能をアプリに直接実装できます。
+アプリの機能の実装は、ほとんどが Places サービスと、タグプロパティで定義したデータ要素およびルールによって駆動されています。 そのため、アプリ内のコードは最小限に抑えます。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
 
 >[!SUCCESS]
 >
->これで、Experience PlatformMobile SDK の Places 拡張機能を使用して、アプリにジオロケーションサービスを有効にしました。
+>これで、Experience Platform Mobile SDKの Places 拡張機能を使用して、アプリにジオロケーションサービスを有効にしました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[Adobe Analyticsへのデータのマッピング](analytics.md)**

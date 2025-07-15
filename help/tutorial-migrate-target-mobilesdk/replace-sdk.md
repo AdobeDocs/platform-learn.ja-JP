@@ -1,10 +1,10 @@
 ---
-title: SDKの置き換え – モバイルアプリのAdobe Target実装をAdobe Journey Optimizer - Decisioning 拡張機能に移行します
-description: Adobe TargetからAdobe Journey Optimizer - Decisioning モバイル拡張機能に移行する際に、SDKを置き換える方法を説明します。
+title: SDKの置き換え – モバイルアプリのAdobe Target実装をOffer Decisioningおよび Target 拡張機能に移行します
+description: Adobe TargetからOffer Decisioningおよび Target モバイル拡張機能に移行する際に、SDKを置き換える方法について説明します。
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 >Adobe Experience Platform Mobile SDK エコシステム内では、拡張機能は、アプリケーションに読み込まれた、名前が異なる可能性のある SDK によって実装されます。
 >
 > * **Target SDK** は、**Adobe Target拡張機能を実装しています**
-> * **SDKの最適化** は、**Adobe Journey Optimizer - Decisioning 拡張機能を実装しています**
+> * **SDKの最適化** は、**Offer Decisioningおよび Target 拡張機能を実装します**
 
 ## 依存関係の更新
 
@@ -132,7 +132,7 @@ public class MainApp extends Application {
  
         MobileCore.registerExtensions(
             Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
-            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
+            o -> Log.d("MainApp", "Offer Decisioning and Target Mobile SDK was initialized.")
         );
     }
 }
@@ -266,9 +266,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## API の比較
 
-多くの Target 拡張機能 API には、次の表に示す意思決定拡張機能を使用して同等のアプローチがあります。 [functions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/) について詳しくは、API リファレンスを参照してください。
+多くの Target 拡張機能 API は、次の表に示すOffer Decisioning拡張機能と Target 拡張機能を使用して、同等のアプローチを持っています。 [functions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/) について詳しくは、API リファレンスを参照してください。
 
-| ターゲット拡張機能 | Decisioning 拡張機能 | メモ |
+| ターゲット拡張機能 | Offer Decisioningと Target の拡張機能 | メモ |
 | --- | --- | --- | 
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | API を使用 `getPropositions` る場合、SDK内のキャッシュされていないスコープを取得するためのリモート呼び出しは行われません。 |
@@ -288,4 +288,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能から Decisioning 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。
+>アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) に投稿してお知らせください。
