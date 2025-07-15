@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '1038'
+ht-degree: 2%
 
 ---
 
@@ -233,6 +233,8 @@ GenStudio for Performance Marketingではアプリケーション内でテンプ
 
 ![GSPeM](./images/gspem17.png)
 
+### メタテンプレート
+
 **コンテンツ**/**テンプレート** に移動します。 「**+ テンプレートを追加**」をクリックします。
 
 ![GSPeM](./images/gspem125.png)
@@ -262,6 +264,8 @@ GenStudio for Performance Marketingではアプリケーション内でテンプ
 
 ![GSPeM](./images/gspem131.png)
 
+### バナー広告テンプレートの表示
+
 「**+ テンプレートを追加**」をクリックします。
 
 ![GSPeM](./images/gspem132.png)
@@ -283,7 +287,7 @@ GenStudio for Performance Marketingではアプリケーション内でテンプ
 ![GSPeM](./images/gspem136.png)
 
 フィールド **テンプレート名** に使用します。
-**広告の幅** と **広告の高さ** を **300x250** に `--aepUserLdap---citisignal-displaytemplate-300x250` 定して設定します。 **テンプレートを公開** をクリックします。
+`--aepUserLdap---citisignal-displaytemplate-300x250` 広告の幅 **と** 広告の高さ **を** 300x250 **に** 定して設定します。 **テンプレートを公開** をクリックします。
 
 ![GSPeM](./images/gspem137.png)
 
@@ -312,7 +316,7 @@ GenStudio for Performance Marketingではアプリケーション内でテンプ
 ![GSPeM](./images/gspem143.png)
 
 フィールド **テンプレート名** に使用します。
-**広告の幅** と **広告の高さ** を **300x600** に `--aepUserLdap---citisignal-displaytemplate-300x600` 定して設定します。 **テンプレートを公開** をクリックします。
+`--aepUserLdap---citisignal-displaytemplate-300x600` 広告の幅 **と** 広告の高さ **を** 300x600 **に** 定して設定します。 **テンプレートを公開** をクリックします。
 
 ![GSPeM](./images/gspem144.png)
 
@@ -341,13 +345,46 @@ GenStudio for Performance Marketingではアプリケーション内でテンプ
 ![GSPeM](./images/gspem150.png)
 
 フィールド **テンプレート名** に使用します。
-**広告の幅** と **広告の高さ** を **970x250** に `--aepUserLdap---citisignal-displaytemplate-970x250` 定して設定します。 **テンプレートを公開** をクリックします。
+`--aepUserLdap---citisignal-displaytemplate-970x250` 広告の幅 **と** 広告の高さ **を** 970x250 **に** 定して設定します。 **テンプレートを公開** をクリックします。
 
 ![GSPeM](./images/gspem151.png)
 
 これで、テンプレートが保存され、テンプレートライブラリで使用できるようになりました。
 
 ![GSPeM](./images/gspem152.png)
+
+### メールテンプレート
+
+「**+ テンプレートを追加**」をクリックします。
+
+![GSPeM](./images/gspem153.png)
+
+「**メール**」を選択し、「**参照**」をクリックします。
+
+![GSPeM](./images/gspem154.png)
+
+ダウンロードした **CitiSignal-GSPeM-assets** ファイルを含むフォルダーで、**templates** フォルダーに移動します。 ファイル **citisignal-email-template.html** を選択し、「**開く**」をクリックします。
+
+![GSPeM](./images/gspem155.png)
+
+この画像が表示されます。 「**次へ**」をクリックします。
+
+![GSPeM](./images/gspem156.png)
+
+「**次へ**」をクリックします。
+
+![GSPeM](./images/gspem157.png)
+
+フィールド **テンプレート名** に使用します。
+`--aepUserLdap---citisignal-email-template`。
+
+**テンプレートを公開** をクリックします。
+
+![GSPeM](./images/gspem158.png)
+
+これで、テンプレートが保存され、テンプレートライブラリで使用できるようになりました。
+
+![GSPeM](./images/gspem159.png)
 
 これで、次の演習に必要なテンプレートが設定されました。
 
