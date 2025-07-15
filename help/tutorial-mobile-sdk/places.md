@@ -80,6 +80,7 @@ Places サービスでいくつかの目標点を定義します。
    1. **[!DNL Luma]** ライブラリを選択 **[!UICONTROL リストから「]**」を選択します。
    1. **[!UICONTROL 初期ビルド]** など、作業ライブラリが選択されていることを確認します。
    1. **[!UICONTROL ライブラリに保存]** から **[!UICONTROL ライブラリとビルドに保存]** を選択します。
+
       ![Places 拡張機能をインストール ](assets/places-install-extension.png) ます。
 
 1. ライブラリが再構築されます。
@@ -139,6 +140,7 @@ Places サービスでいくつかの目標点を定義します。
 1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]** を選択します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を入力]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
       ![ タグイベント ](assets/tags-event-mobile-core.png)。
 1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ]** リストから **[!UICONTROL データを添付]** を選択します。 ペイロードデータを添付します。
@@ -169,6 +171,7 @@ Places サービスでいくつかの目標点を定義します。
       また、「`{%% ... %%}`Data![」 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 選択すると、JSON にデータ要素のプレースホルダー値を挿入できます。 ポップアップダイアログが表示され、作成したデータ要素を選択できます。
 
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
+
       ![ タグアクション ](assets/tags-action-mobile-core.png)
 
 1. ![ モバイルコア – データを添付 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) アクションの横にある **[!UICONTROL 追加]** を選択します。
@@ -340,7 +343,7 @@ Assuranceの設定を検証するには：
 
 このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガーJourney Optimizer化できることを確認します（[ プッシュ通知 ](journey-optimizer-inapp.md) および [ アプリ内メッセージ ](journey-optimizer-push.md) を参照）。 例えば、通常の例では、アプリユーザーが物理的なストアのジオフェンスに入ると、製品プロモーションを伴うプッシュ通知が送信されます。
 
-アプリの機能の実装は、ほとんどが Places サービスと、タグプロパティで定義したデータ要素およびルールによって駆動されています。 そのため、アプリ内のコードは最小限に抑えます。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
+アプリの機能の実装は、ほとんどが Places サービスと、タグプロパティで定義したデータ要素およびルールによって駆動されています。 そのため、アプリ内のコードは最小限に抑えます。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) [ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
 
 >[!SUCCESS]
 >
