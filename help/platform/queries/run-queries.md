@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # クエリの実行
 
-Adobe Experience Platform クエリエディターを使用して、SQL クエリを効率的に作成、実行、管理する方法について説明します。 ビューアでは、オブジェクトブラウザー、オートコンプリート、パラメーター化されたクエリ、スケジュールツールなどの機能を使用して、データワークフローを合理化し、組織全体で実用的なインサイトを生成する方法を説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) を参照してください。
+Adobe Experience Platform クエリエディターを使用して、SQL クエリを効率的に作成、実行、管理する方法について説明します。 ビューアでは、オブジェクトブラウザー、オートコンプリート、パラメーター化されたクエリ、スケジュールツールなどの機能を使用して、データワークフローを合理化し、組織全体で実用的なインサイトを生成する方法を説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
