@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Federated Audience Composition アラートを購読して、実行の成功と失敗の両方に関するアプリ内通知またはメール通知を受け取る方法を説明します。 これを有効にするには、Experience Platform製品の通知設定で環境設定を行います。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470055/?learn=on&enablevpops&captions=jpn)
 
 
 ## 通知の有効化方法

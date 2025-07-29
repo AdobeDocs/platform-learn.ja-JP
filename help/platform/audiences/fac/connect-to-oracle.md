@@ -20,4 +20,4 @@ ht-degree: 0%
 
 スキーマの検出、データモデルの作成、オーディエンス強化のためのデータの使用を行うために、Adobe Experience Platform内でOracle データベースを接続する方法について説明します。 このビデオでは、Federated Data セクションに移動してから接続の詳細を入力するまで、フェデレーション Oracle データベースを追加する手順を順を追って説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470069/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470077/?learn=on&enablevpops&captions=jpn)
