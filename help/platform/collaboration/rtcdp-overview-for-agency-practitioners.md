@@ -20,4 +20,4 @@ ht-degree: 0%
 
 このビデオは、エージェンシーまたは有料メディアの実務担当者を対象とし、Real-Time CDP Collaborationのユースケースとワークフローに燃料を供給するデータソースとオーディエンスに重点を置いて、Real-Time CDPの価値 prop、その概要、仕組み、動作の概要を説明することを目的としています。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464659/?learn=on&enablevpops&captions=jpn)
