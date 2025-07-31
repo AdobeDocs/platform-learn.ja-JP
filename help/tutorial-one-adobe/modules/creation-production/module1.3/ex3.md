@@ -302,7 +302,7 @@ Campaign `--aepUserLdap-- - CitiSignal Fiber Launch Campaign` を選択し、「
 
 ![GSPeM](./images/gsmetaad1.png)
 
-リストから **0}Call to action} を選択し、URL の例を入力します。**「**次へ**」をクリックします。
+リストから **0&rbrace;Call to action&rbrace; を選択し、URL の例を入力します。**「**次へ**」をクリックします。
 
 ![GSPeM](./images/gsmetaad3.png)
 
