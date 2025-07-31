@@ -4,16 +4,16 @@ description: データ収集インターフェイスで Platform Web SDK タグ�
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 11%
 
 ---
 
 # Adobe Experience Platform Web SDK タグ拡張機能のインストール
 
-Adobe Experience Platform Web SDK拡張機能をインストールして設定する方法について説明します。 Web SDKを実装する最も簡単な方法は、Adobeのタグマネージャー、タグ（旧称：Launch）を使用することです。 Platform Web SDK タグ拡張機能は _唯一のタグ拡張機能_ で、&lbrace;Analytics[&#128279;](setup-analytics.md) [&#128279;](setup-target.md)、&lbrace;Target _、[Audience Manager](setup-audience-manager.md)、Real-Time Customer Data Platform、[Journey Optimizer](setup-web-channel.md) など、 すべてのAdobe Experience Cloud アプリケーション_ にデータを送信するために必要です。
+Adobe Experience Platform Web SDK拡張機能をインストールして設定する方法について説明します。 Web SDKを実装する最も簡単な方法は、Adobeのタグマネージャー、タグ（旧称：Launch）を使用することです。 Platform Web SDK タグ拡張機能は _唯一のタグ拡張機能_ で、{Analytics __ [、{Target](setup-analytics.md)、[Audience Manager](setup-target.md)、Real-Time Customer Data Platform、[Journey Optimizer](setup-audience-manager.md) など、[ すべてのAdobe Experience Cloud アプリケーション ](setup-web-channel.md) にデータを送信するために必要です。
 
 ## 学習目標
 
@@ -71,11 +71,11 @@ Adobe Experience Platform Web SDK拡張機能をインストールして設定�
 
    ![ データストリーム選択 ](assets/extension-luma-web-sdk-datastream-extension.png)
 
-拡張機能の各セクションについて詳しくは、[Adobe Experience Platform Web SDK拡張機能の設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
+拡張機能の各セクションについて詳しくは、[Adobe Experience Platform Web SDK拡張機能の設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
 
 >[!NOTE]
 >
->このレッスンの [!UICONTROL Edge ドメイン &#x200B;] 設定では CNAME を設定しませんでしたが、Adobeでは、独自の web サイトに Platform Web SDKを実装する際に CNAME を使用することをお勧めします。 CNAME 実装には Cookie の有効期間に関するメリットはありませんが、他にもメリットがある場合があります。これらのメリットには、広告ブロッカーや、トラッカーとして分類するドメインにデータが送信されるのを防ぐ一般的でないブラウザーなどが含まれます。 このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
+>このレッスンの [!UICONTROL Edge ドメイン ] 設定では CNAME を設定しませんでしたが、Adobeでは、独自の web サイトに Platform Web SDKを実装する際に CNAME を使用することをお勧めします。 CNAME 実装には Cookie の有効期間に関するメリットはありませんが、他にもメリットがある場合があります。これらのメリットには、広告ブロッカーや、トラッカーとして分類するドメインにデータが送信されるのを防ぐ一般的でないブラウザーなどが含まれます。 このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
 
 >[!NOTE]
 >
@@ -83,8 +83,6 @@ Adobe Experience Platform Web SDK拡張機能をインストールして設定�
 
 Platform Web SDKをインストールし、データストリームに関連付けたので、データの収集を開始する準備が整いました。
 
-[次へ： ](create-data-elements.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

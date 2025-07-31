@@ -4,9 +4,9 @@ description: タグルールを使用して、XDM オブジェクトと共にイ
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 このビデオでは、プロセスの概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3454028/?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### グローバル設定フィールド
 
@@ -90,9 +90,9 @@ ht-degree: 2%
 
    ![ ルールに名前を付けてイベントを追加する ](assets/rule-name-new.png)
 
-1. **[!UICONTROL Core 拡張機能]** を使用し、**[!UICONTROL イベントタイプ**&#x200B;[!UICONTROL &#x200B; として &#x200B;]&#x200B;**「ライブラリの読み込み（ページのトップ）」を選択します]**
+1. **[!UICONTROL Core 拡張機能]** を使用し、**[!UICONTROL イベントタイプ]** として **[!UICONTROL 「ライブラリの読み込み（ページのトップ）」を選択します]**
 
-1. **[!UICONTROL 詳細]** ドロップダウンを選択し、「**[!UICONTROL 注文]**」として `1` と入力します
+1. **[!UICONTROL 詳細]** ドロップダウンを選択し、「`1` 注文 **[!UICONTROL 」として]** と入力します
 
    >[!NOTE]
    >
@@ -107,11 +107,11 @@ ht-degree: 2%
 
 1. **[!UICONTROL アクションタイプ]** として、「**[!UICONTROL 変数を更新]**」を選択します
 
-1. **[!UICONTROL データ要素]** として、[ データ要素の作成 ](create-data-elements.md) のレッスンで作成した `xdm.variable.content` を選択します
+1. **[!UICONTROL データ要素]** として、`xdm.variable.content` データ要素の作成 [ のレッスンで作成した ](create-data-elements.md) を選択します
 
    ![ 変数スキーマの更新 ](assets/create-rule-update-variable.png)
 
-次に、[!UICONTROL &#x200B; データ要素 &#x200B;] を、XDM オブジェクトで使用される [!UICONTROL &#x200B; スキーマ &#x200B;] にマッピングします。 個々のプロパティまたはオブジェクト全体にマッピングできます。 この例では、個々のプロパティにマッピングします。
+次に、[!UICONTROL  データ要素 ] を、XDM オブジェクトで使用される [!UICONTROL  スキーマ ] にマッピングします。 個々のプロパティまたはオブジェクト全体にマッピングできます。 この例では、個々のプロパティにマッピングします。
 
 1. eventType フィールドを見つけて選択します
 
@@ -189,7 +189,7 @@ ht-degree: 2%
 1. **[!UICONTROL アクション]** で **[!UICONTROL 追加]** を選択します
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します
 1. **[!UICONTROL アクションタイプ]** を **[!UICONTROL 変数を更新]** として選択します
-1. **[!UICONTROL データ要素]** として `xdm.variable.content` を選択します
+1. `xdm.variable.content` データ要素 **[!UICONTROL として]** を選択します
 1. `commerce` オブジェクトまでスクロール ダウンします
 1. **[!UICONTROL productViews]** オブジェクトを開き、**[!UICONTROL value]** を `1` に設定します
 
@@ -238,7 +238,7 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >数値変数がデータレイヤー内の文字列値（`price` や `qty` など）でデータ要素内の数値に再書式設定される方法に注意してください。 これらの形式要件は、Platform のデータ整合性にとって重要であり、[ スキーマの設定 ](configure-schemas.md) 手順で決定されます。 この例では、**[!UICONTROL quantity]** は **[!UICONTROL Integer]** データ型を使用しています。
-> ![XDM スキーマデータタイプ ](assets/set-up-analytics-quantity-integer.png)
+>> ![XDM スキーマデータタイプ ](assets/set-up-analytics-quantity-integer.png)
 
 次に、配列を XDM オブジェクトにマッピングします。
 
@@ -265,7 +265,7 @@ ht-degree: 2%
 1. **[!UICONTROL アクション]** で **[!UICONTROL 追加]** を選択します
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します
 1. **[!UICONTROL アクションタイプ]** を **[!UICONTROL 変数を更新]** として選択します
-1. **[!UICONTROL データ要素]** として `xdm.variable.content` を選択します
+1. `xdm.variable.content` データ要素 **[!UICONTROL として]** を選択します
 1. `commerce` オブジェクトまで下にスクロールし、選択して開きます。
 1. **[!UICONTROL productListViews]** オブジェクトを開き、**[!UICONTROL value]** を `1` に設定します
 
@@ -310,8 +310,8 @@ ht-degree: 2%
    >
    >これは、Analytics でイベント `purchase` 設定することと同等です
 
-1. `cart.orderId` データ要素に `commerce.order.purchaseID` を設定します。
-1. ハードコードされた値 `USD` に `commerce.order.currencyCode` を設定します
+1. `commerce.order.purchaseID` データ要素に `cart.orderId` を設定します。
+1. ハードコードされた値 `commerce.order.currencyCode` に `USD` を設定します
 
    ![Analytics の purchaseID の設定 ](assets/set-up-analytics-purchase.png)
 
@@ -340,9 +340,9 @@ ht-degree: 2%
 
 1. 「**[!UICONTROL イベント]**」セクションで、「**[!UICONTROL 追加]**」を選択します
 
-1. **[!UICONTROL Core 拡張機能]** を使用し、**[!UICONTROL イベントタイプ]** として `Library Loaded (Page Top)` を選択します
+1. **[!UICONTROL Core 拡張機能]** を使用し、`Library Loaded (Page Top)` イベントタイプ **[!UICONTROL として]** を選択します
 
-1. **[!UICONTROL 詳細]** ドロップダウンを選択し、「**[!UICONTROL 順序]**」に `50` を入力します。 これにより、設定した他のすべてのルール（`1` または `20` を [!UICONTROL Order] として持つ）の後でこのルールが起動します。
+1. **[!UICONTROL 詳細]** ドロップダウンを選択し、「`50` 順序 **[!UICONTROL 」に]** を入力します。 これにより、設定した他のすべてのルール（`1` または `20` を [!UICONTROL Order] として持つ）の後でこのルールが起動します。
 
 1. 「**[!UICONTROL 変更を保持]**」を選択して、メインのルール画面に戻ります
    ![ ライブラリの読み込みトリガーを選択 ](assets/create-tag-rule-trigger-loaded-send.png)
@@ -389,12 +389,10 @@ ht-degree: 2%
 
 ![ ビルド完了 ](assets/create-rule-development-success.png)
 
-[!UICONTROL &#x200B; 公開フロー &#x200B;] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
+[!UICONTROL  公開フロー ] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
 
 これで、Adobe Experience Platform Debuggerを使用してリクエスト内のデータを検証する準備が整いました。
 
-[次へ ](validate-with-debugger.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

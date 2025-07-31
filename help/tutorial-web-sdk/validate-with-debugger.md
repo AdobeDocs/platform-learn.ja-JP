@@ -4,9 +4,9 @@ description: Adobe Experience Platform Debuggerを使用して Platform web SDK�
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使
 
 デバッガーをまだ使用したことがない場合は、次の 5 分間の概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/36086?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 このレッスンでは、[Adobe Experience Platform Debugger拡張機能 ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) を使用して、[Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) にハードコードされたタグプロパティを独自のプロパティに置き換えます。
 
@@ -90,7 +90,7 @@ Debugger を使用して、Platform Web Edge Network実装からトリガーさ�
 
    ![Adobe Experience Platform Web SDK リクエスト ](assets/validate-aep-screen.png)
 
-1. [!UICONTROL &#x200B; 変数を更新 &#x200B;] アクション、および `AEP Web SDK ExperienceEvent` フィールドグループに準拠するその他の標準変数で指定した `web.webpagedetails.pageView` イベントタイプを確認する方法をメモします
+1. `web.webpagedetails.pageView` 変数を更新 [!UICONTROL  アクション、および ] フィールドグループに準拠するその他の標準変数で指定した `AEP Web SDK ExperienceEvent` イベントタイプを確認する方法をメモします
 
    ![ イベントの詳細 ](assets/validate-event-pageViews.png)
 
@@ -143,7 +143,7 @@ ID マップの詳細を検証することもできます。
 
 [ データストリームの設定 ](configure-datastream.md) のレッスンで学んだように、Platform Web SDKは、最初にデジタルプロパティから Platform Edge Networkにデータを送信します。 次に、Platform Edge Networkは、データストリームで有効になっている対応するサービスに対して、サーバーサイドのリクエストを追加します。 Platform Edge Networkによって行われたサーバーサイドリクエストを Debugger のEdge Trace を使用して検証できます。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Edge Trace の有効化
@@ -165,8 +165,6 @@ Edge Trace を有効にする手順は次のとおりです。
 
 この時点では、データストリームでを有効にしていないため、Adobe アプリケーションに送信される Platform Edge Network リクエストを表示できません。 今後のレッスンでは、Edge Trace を使用して、Adobe アプリケーションおよびイベント転送への送信サーバーサイドリクエストを表示します。 ただし、最初に、Platform Edge Networkが行うサーバーサイドリクエストを検証する別のツールであるAdobe Experience Platform Assuranceについて説明します。
 
-[次へ： ](validate-with-assurance.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

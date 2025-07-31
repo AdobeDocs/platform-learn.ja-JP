@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2562'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Web SDKを使用したJourney Optimizer web チャネルの設定
 
-Adobe Experience Platform Web SDKを使用してAdobe Journey Optimizer[web チャネル ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/web/get-started-web) を実装する方法について説明します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
+Adobe Experience Platform Web SDKを使用してAdobe Journey Optimizer[web チャネル ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) を実装する方法について説明します。 このレッスンでは、基本的な web チャネルの前提条件、設定の詳細な手順、ロイヤルティステータスに基づくユースケースを詳しく説明します。
 
 このレッスンに従うと、Journey Optimizerのユーザーは、Journey Optimizer web デザイナーを使用した高度なオンラインパーソナライゼーションのために web チャネルを使用できるようになります。
 
@@ -52,7 +52,7 @@ Adobe Experience Platform Web SDKを使用してAdobe Journey Optimizer[web チ�
   > 1. web サイトは iframe 内に埋め込まれます。
   > 1. 顧客の QA またはステージサイトは、外部からアクセスできません（内部サイトです）。
 
-* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合は、[ このコンテンツを公開するためのサブドメインを設定 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) する必要があります。
+* Web エクスペリエンスを作成し、Adobe Experience Manager Assets Essentials ライブラリのコンテンツを含める場合は、[ このコンテンツを公開するためのサブドメインを設定 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) する必要があります。
 * コンテンツ実験機能を使用する場合は、web データセットもレポート設定に含まれていることを確認してください。
 * 現在、web プロパティで web チャネルキャンペーンのオーサリングと配信を可能にする、次の 2 種類の実装がサポートされています。
    * クライアント側のみ：Web サイトを変更するには、Adobe Experience Platform Web SDKを実装する必要があります。
@@ -115,7 +115,7 @@ Adobe Experience Platform サービスは既にデータストリームに追加
 
 1. Experience PlatformまたはJourney Optimizer インターフェイスの **[!UICONTROL 顧客]** / **[!UICONTROL プロファイル]** ページに移動します。
 1. 「**[!UICONTROL 結合ポリシー]**」タブを選択します。
-1. ポリシーを選択し（通常は [!UICONTROL &#x200B; デフォルトの時間ベース &#x200B;] ポリシーを使用するのが最適です）、「**[!UICONTROL 設定]**」ステップの **[!UICONTROL Edge上でアクティブ化結合ポリシー]** オプションを切り替えます。
+1. ポリシーを選択し（通常は [!UICONTROL  デフォルトの時間ベース ] ポリシーを使用するのが最適です）、「**[!UICONTROL 設定]**」ステップの **[!UICONTROL Edge上でアクティブ化結合ポリシー]** オプションを切り替えます。
 
    ![ 結合ポリシーを切り替え ](assets/web-channel-active-on-edge-merge-policy.png)
 
@@ -123,7 +123,7 @@ Adobe Experience Platform サービスは既にデータストリームに追加
 
 Web チャネルキャンペーン内でコンテンツ実験を使用するには、使用する web データセットがレポート設定にも含まれていることを確認する必要があります。 Journey Optimizer レポートシステムは、データセットを読み取り専用で使用して、標準のコンテンツ実験レポートを生成します。
 
-[ コンテンツ実験レポート用のデータセットの追加について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)。
+[ コンテンツ実験レポート用のデータセットの追加について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)。
 
 ## ユースケースの概要 – ロイヤルティ報酬
 
@@ -256,7 +256,7 @@ Web チャネルキャンペーン内でコンテンツ実験を使用するに�
 
 ![CSS を変更 ](assets/web-channel-css-selector.png)
 
-**ページデータタイプ** の変更を使用して、カス `<head>` ムコードを追加します。
+**ページデータタイプ `<head>` の変更を使用して、カス** ムコードを追加します。
 
 ![ ヘッドを修正 ](assets/web-channel-page-head-modification.png)
 
@@ -302,7 +302,7 @@ Adobe Experience Platform Debugger拡張機能はChromeと Firefox の両方で�
 
 Luma サイトでデバッガーを使用すると、実稼動環境での web チャネルエクスペリエンスを検証できます。 これは、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
-[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview)。
+[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)。
 
 デバッガーを使用して検証を開始するには：
 
@@ -314,7 +314,7 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. **概要** に移動します。 **[!UICONTROL データストリーム ID]** が、Adobe Journey Optimizerを有効にした **[!UICONTROL 4&rbrace;Adobe Data Collection&rbrace; の]** データストリーム **と一致することを確認します。**
+1. **概要** に移動します。 **[!UICONTROL データストリーム ID]** が、Adobe Journey Optimizerを有効にした **[!UICONTROL 4}Adobe Data Collection} の]** データストリーム **[!UICONTROL と一致することを確認します。]**
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -330,13 +330,11 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**[!UICONTROL Adobe Experience Platform Edge network]** に送信されるリクエストを検証します。 ログトラッキングのために、これらのリクエストはすべて **0&rbrace;Assurance&rbrace; に取り込む必要があります。**
+1. 様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**[!UICONTROL Adobe Experience Platform Edge network]** に送信されるリクエストを検証します。 ログトラッキングのために、これらのリクエストはすべて **[!UICONTROL 0}Assurance} に取り込む必要があります。]**
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
-[次へ： ](setup-decision-management.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

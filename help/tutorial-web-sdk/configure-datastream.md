@@ -4,9 +4,9 @@ description: データストリームを有効にし、Experience Cloud ソリ�
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 8%
 
 ---
@@ -48,7 +48,7 @@ Adobe Experience Platform Web SDK 用データストリームの設定方法に�
 
 1. 左側のナビゲーションの **[!UICONTROL データストリーム]** に移動します
 1. **[!UICONTROL 新規データストリーム]** を選択します。
-1. **[!UICONTROL 名前]** として `Luma Web SDK: Development Environment` と入力します。 この名前は、後でタグプロパティに web SDK拡張機能を設定する際に参照されます。
+1. `Luma Web SDK: Development Environment` 名前 **[!UICONTROL として]** と入力します。 この名前は、後でタグプロパティに web SDK拡張機能を設定する際に参照されます。
 1. 「**[!UICONTROL 保存]**」を選択します
 
    ![ データストリームの作成 ](assets/datastream-create-new-datastream.png)
@@ -65,7 +65,7 @@ Adobe Experience Platform Web SDK 用データストリームの設定方法に�
 
 ## データストリームの上書き
 
-[ データストリームの上書き ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overrides) を使用すると、データストリームの追加設定を定義し、特定の条件下でデフォルトの設定を上書きできます。
+[ データストリームの上書き ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) を使用すると、データストリームの追加設定を定義し、特定の条件下でデフォルトの設定を上書きできます。
 
 データストリーム設定の上書きは、次の 2 つの手順で行います。
 
@@ -76,8 +76,6 @@ Adobe Experience Platform Web SDK 用データストリームの設定方法に�
 
 これで、タグプロパティに Platform Web SDK拡張機能をインストールする準備が整いました。
 
-[次へ： ](install-web-sdk.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,34 +1,34 @@
 ---
-title: Platform Web SDK を使用したJourney Optimizer意思決定管理の設定
-description: Platform Web SDK を使用して意思決定管理を実装する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
+title: Platform Web SDKを使用したJourney Optimizer意思決定管理の設定
+description: Platform Web SDKを使用して意思決定管理を実装する方法を説明します。 このレッスンは、「Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル」の一部です。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2511'
 ht-degree: 3%
 
 ---
 
-# Platform Web SDK を使用した意思決定管理の設定
+# Platform Web SDKを使用した意思決定管理の設定
 
-Platform Web SDK を使用して、Adobe Journey Optimizerの意思決定管理機能を実装する方法を説明します。 このガイドでは、基本的な意思決定管理の前提条件、設定の詳細な手順およびロイヤルティステータスに基づくユースケースを詳しく説明します。
+Platform Web SDKを使用してAdobe Journey Optimizerの意思決定管理機能を実装する方法を説明します。 このガイドでは、基本的な意思決定管理の前提条件、設定の詳細な手順およびロイヤルティステータスに基づくユースケースを詳しく説明します。
 
 このチュートリアルに従うと、Journey Optimizer ユーザーは意思決定管理機能を使用できるようになり、顧客とのやり取りのパーソナライズ機能と関連性が高まります。
 
 
-![Web SDK とAdobe Analyticsの図 ](assets/dc-websdk-ajo.png)
+![Web SDKとAdobe Analyticsの図 ](assets/dc-websdk-ajo.png)
 
 ## 学習内容
 
 このレッスンを終了すると、次の操作を実行できます。
 
-* Adobe Journey Optimizer内の意思決定管理の中心概念とAdobe Experience Platform Web SDK との統合を把握します。
+* Adobe Journey Optimizer内の意思決定管理の中心概念とAdobe Experience Platform Web SDKとの統合を把握します。
 
-* Journey Optimizerとのシームレスな統合を確実に行い、Offer decisioning用に Web SDK を設定する手順を説明します。
+* Journey Optimizerとシームレスに統合できるように、web SDKをOffer Decisioning用に設定する手順を説明します。
 
 * ロイヤルティステータスオファーを中心とした詳細なユースケースを探索し、オファー、決定およびプレースメントの作成および管理に関するインサイトを得ます。
 
@@ -42,9 +42,9 @@ Platform Web SDK を使用して、Adobe Journey Optimizerの意思決定管理�
 
 このセクションのレッスンを完了するには、まず次の操作を行う必要があります。
 
-* Adobe Journey Optimizer Ultimate （Journey OptimizerとOffer decisioning）またはAdobe Experience PlatformおよびOffer decisioningアドオンへのアクセス権が組織にあることを確認します。
+* 組織がAdobe Journey Optimizer Ultimate（Journey OptimizerとOffer Decisioning）またはAdobe Experience PlatformとOffer Decisioning アドオンにアクセスできることを確認します。
 
-* Platform Web SDK の初期設定について、すべてのレッスンを完了してください。
+* Platform Web SDKの初期設定については、すべてのレッスンを完了してください。
 
 * 組織のEdge Decisioning を有効にします。
 
@@ -56,13 +56,13 @@ Platform Web SDK を使用して、Adobe Journey Optimizerの意思決定管理�
 
 ## 意思決定管理へのアクセスの許可
 
-意思決定管理機能へのアクセス権を付与するには、**製品プロファイル** を作成し、対応する権限をユーザーに割り当てる必要があります。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)。
+意思決定管理機能へのアクセス権を付与するには、**製品プロファイル** を作成し、対応する権限をユーザーに割り当てる必要があります。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)。
 
 ## データストリームの設定
 
-Platform Web SDK で意思決定管理アクティビティを配信するには、Offer decisioningを **datastream** 設定で有効にする必要があります。
+Platform Web SDKで意思決定管理アクティビティを配信するには、Offer Decisioningを **datastream** 設定で有効にする必要があります。
 
-データストリームでOffer decisioningを設定するには：
+データストリームでOffer Decisioningを設定するには：
 
 1. [ データ収集 ](https://experience.adobe.com/#/data-collection) インターフェイスに移動します。
 
@@ -72,11 +72,11 @@ Platform Web SDK で意思決定管理アクティビティを配信するには
 
    ![ データストリームを選択 ](assets/decisioning-datastream-select.png)
 
-1. **2&rbrace;Adobe Experience Platform サービス** 内の「編集 **を選択します。**
+1. **2}Adobe Experience Platform サービス** 内の「編集 **を選択します。**
 
    ![ サービスを編集 ](assets/decisioning-edit-datastream.png)
 
-1. 「**Offer decisioning**」ボックスをオンにします。
+1. 「**Offer Decisioning**」ボックスをオンにします。
 
    ![ スクリーンショットを追加 ](assets/decisioning-check-offer-box.png)
 
@@ -84,12 +84,12 @@ Platform Web SDK で意思決定管理アクティビティを配信するには
 
 これにより、**Adobe Experience Platform Edge** でJourney Optimizerのインバウンドイベントが正しく処理されます。
 
-## 意思決定管理の SDK の設定
+## 意思決定管理のSDKの設定
 
-意思決定管理には、Web SDK 実装タイプに応じて、追加の SDK 手順が必要です。 意思決定管理の SDK を設定する際に使用できるオプションは 2 つあります。
+意思決定管理では、web SDK実装タイプに応じて、追加のSDK手順が必要です。 意思決定管理のSDKを設定する際には、2 つのオプションがあります。
 
-* SDK スタンドアロンインストール
-   1. `decisionScopes` で `sendEvent` アクションを設定します。
+* SDKのスタンドアロンインストール
+   1. `sendEvent` で `decisionScopes` アクションを設定します。
 
       ```javascript
       alloy("sendEvent", {
@@ -137,13 +137,13 @@ Platform Web SDK で意思決定管理アクティビティを配信するには
 
 ## ユースケースの概要 – ロイヤルティ報酬
 
-このレッスンでは、サンプルのロイヤルティ報酬ユースケースを実装して、Web SDK を使用した意思決定管理を理解します。
+このレッスンでは、サンプルのロイヤルティ報酬ユースケースを実装して、web SDKを使用した意思決定管理について理解します。
 
 この使用例では、一元化されたオファーライブラリと意思決定管理の意思決定エンジンを利用して、Journey Optimizerが顧客に最適なオファーを提供する方法をより深く理解できます。
 
 >[!NOTE]
 >
-> このチュートリアルは実装者向けなので、このレッスンにはJourney Optimizerでの実質的なインターフェイス作業が含まれていることは注目に値します。 通常、このようなインターフェイスタスクはマーケターが処理しますが、長期的には意思決定管理キャンペーンの作成に責任を負わない場合でも、実装者がプロセスに関するインサイトを得ることは有益です。
+> このチュートリアルは実装者向けなので、このレッスンにはJourney Optimizerでの実質的なインターフェイス作業が含まれていることは注目に値します。 通常、このようなインターフェイスタスクはマーケターが処理しますが、長期的に意思決定管理キャンペーンの作成を担当しない場合でも、実装者がinsightをプロセスに取り込むと効果的です。
 
 ## コンポーネント
 
@@ -166,7 +166,7 @@ Platform Web SDK で意思決定管理アクティビティを配信するには
 1. プレースメントのプロパティを定義します。
    * **名前**：プレースメントの名前。例のプレースメントを「ホームペ *ジのバナー」と呼びま* ょう。
    * **チャネルタイプ**：プレースメントが使用されるチャネル。 オファーは Luma *web サイトに表示されるので、* の web を使用します。
-   * **コンテンツタイプ**：プレースメントに表示できるコンテンツのタイプ（テキスト、HTML、画像リンク、JSON のいずれか）。 オファーには *のHTML* 使用できます。
+   * **コンテンツタイプ**：プレースメントに表示できるコンテンツのタイプ（テキスト、HTML、画像リンク、JSON のいずれか）。 オファーには *HTML」* 使用できます。
    * **説明**：プレースメントの説明（オプション）。
 
    ![ 詳細を追加 ](assets/decisioning-placement-details.png)
@@ -240,15 +240,15 @@ Platform Web SDK で意思決定管理アクティビティを配信するには
 
    ![ オファーの詳細を追加 ](assets/decisioning-add-offer-details.png)
 
-1. 次に、**表示域** を追加して、オファーの表示場所を定義する必要があります。 **web チャネル** を選択します。 また、以前に設定した「*ホームページバナー*」 **プレースメント** を選択します。 選択した **プレースメント** はHTMLタイプなので、HTML、JSON、TEXT の各コンテンツをエディターに直接追加し、「**カスタム**」ラジオボタンを使用してオファーを作成できます。
+1. 次に、**表示域** を追加して、オファーの表示場所を定義する必要があります。 **web チャネル** を選択します。 また、以前に設定した「*ホームページバナー*」 **プレースメント** を選択します。 選択した **プレースメント** はHTMLタイプなので、HTML、JSON、TEXT のいずれかのコンテンツをエディターに直接追加し、「**カスタム**」ラジオボタンを使用してオファーを作成できます。
 
    ![ 表示域の詳細を追加 ](assets/decisioning-add-representation-details.png)
 
-1. オファーコンテンツを **式エディター** で直接編集します。 このプレースメントには、HTML、JSON、TEXT のいずれかのコンテンツを追加できます。 エディターの下部で、コンテンツタイプに応じて正しい **モード** を選択してください。 また、**validate** をクリックして、エラーがないことを確認することもできます。
+1. オファーコンテンツを **式エディター** で直接編集します。 このプレースメントには、HTML、JSON または TEXT コンテンツを追加できます。 エディターの下部で、コンテンツタイプに応じて正しい **モード** を選択してください。 また、**validate** をクリックして、エラーがないことを確認することもできます。
 
    ![ オファーのHTMLを追加 ](assets/decisioning-add-offer-html.png)
 
-1. また、式エディターを使用して、Adobe Experience Platformに保存されている属性を取得することもできます。 オファーのコンテンツにプロファイルの名を追加して、1:1 レベルのロイヤルティメンバー向けにパーソナライズしましょう。
+1. また、式エディターを使用して、Adobe Experience Platformに保存されている属性を取得することもできます。 :11 レベルのロイヤルティメンバー向けにパーソナライズするために、オファーコンテンツにプロファイルの名を追加しましょう。
 
    ![ オファーのパーソナライゼーションの追加 ](assets/decisioning-add-offer-personalization.png)
 
@@ -274,7 +274,7 @@ Platform Web SDK で意思決定管理アクティビティを配信するには
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. フォールバックオファーのコンテンツを **式エディター** に追加します。 このプレースメントには、HTML、JSON、TEXT の各コンテンツを追加できます。 エディターの下部で、コンテンツタイプに応じて正しい **モード** を選択してください。 また、**validate** をクリックして、エラーがないことを確認することもできます。
+1. フォールバックオファーのコンテンツを **式エディター** に追加します。 このプレースメントには、HTML、JSON、TEXT のいずれかのコンテンツを追加できます。 エディターの下部で、コンテンツタイプに応じて正しい **モード** を選択してください。 また、**validate** をクリックして、エラーがないことを確認することもできます。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -339,7 +339,7 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
 
 ### ロイヤルティオファーのテスト
 
-1. シミュレーションに使用するテストプロファイルを選択します。 **プロファイルを管理** をクリックします。 [ オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください ](https://experienceleague.adobe.com/ja/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
+1. シミュレーションに使用するテストプロファイルを選択します。 **プロファイルを管理** をクリックします。 [ オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください ](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Chromeと Firefox の両方で利用できる **Adobe Experience Platform Debugg
 
 Luma サイトでデバッガーを使用して、実稼動環境で意思決定ロジックを検証できます。 この検証は、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
-[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview)。
+[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)。
 
 デバッガーを使用して検証を開始するには：
 
@@ -383,11 +383,11 @@ Luma サイトでデバッガーを使用して、実稼動環境で意思決定
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. **概要** に移動します。 **データストリーム ID** が、Offer decisioningを有効にした **Adobeデータ収集** の **データストリーム** と一致することを確認します。
+1. **概要** に移動します。 **データストリーム ID** が、Offer Decisioningを有効にした **4}Adobe Data Collection} の** データストリーム **と一致することを確認します。**
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. **ソリューション** の下の **Experience PlatformWeb SDK** に移動します。
+1. **ソリューション** で、**Experience Platform Web SDK** に移動します。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -395,13 +395,11 @@ Luma サイトでデバッガーを使用して、実稼動環境で意思決定
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. その後、様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**Adobe Experience Platform Edge network** に送信されたリクエストを検証できます。 ログトラッキング用に、これらのリクエストをすべて **Assurance** に取り込む必要があります。
+1. その後、様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**Adobe Experience Platform Edge network** に送信されたリクエストを検証できます。 ログトラッキングのために、これらのリクエストはすべて **0}Assurance} に取り込む必要があります。**
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
-[次へ： ](setup-consent.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

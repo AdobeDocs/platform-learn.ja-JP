@@ -4,9 +4,9 @@ description: Experience Platform Web SDK data を使用したイベント転送�
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 4%
 
 ---
@@ -15,22 +15,22 @@ ht-degree: 4%
 
 Adobe Experience Platform Web SDK データでイベント転送を使用する方法について説明します。
 
-イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、[ イベント転送の概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/event-forwarding/overview) を参照してください。
+イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、[ イベント転送の概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview) を参照してください。
 
 
-![Web SDK とイベント転送の図 ](assets/dc-websdk-eventforwarding.png)
+![Web SDKとイベント転送の図 ](assets/dc-websdk-eventforwarding.png)
 
 Adobe Experience Platformでイベント転送を使用するには、まず次の 3 つのオプションの 1 つ以上を使用して、データをAdobe Experience Platform Edge Networkに送信する必要があります。
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
->Platform Web SDK および Platform Mobile SDK は、タグを介したデプロイメントは必要ありませんが、これらの SDK をデプロイするためにタグを使用することをお勧めします。
+>Platform Web SDKおよび Platform Mobile SDKは、タグを介したデプロイメントは必要ありませんが、これらの SDK のデプロイにタグを使用することをお勧めします。
 
-このチュートリアルの前のレッスンを完了したら、Web SDK を使用して Platform Edge Networkにデータを送信する必要があります。 データが Platform Edge Networkになったら、イベント転送を有効にし、イベント転送プロパティを使用して、Adobe以外のソリューションにデータを送信できます。
+このチュートリアルの前のレッスンを完了したら、web SDKを使用して Platform Edge Networkにデータを送信する必要があります。 データが Platform Edge Networkに送信されたら、イベント転送を有効にし、イベント転送プロパティを使用して、Adobe以外のソリューションにデータを送信できます。
 
 ## 学習目標
 
@@ -46,12 +46,12 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
 ## 前提条件
 
-* イベント転送を含むソフトウェアライセンス。 イベント転送は、データ収集の有料機能です。 詳しくは、Adobeアカウントチームにお問い合わせください。
+* イベント転送を含むソフトウェアライセンス。 イベント転送は、データ収集の有料機能です。 詳しくは、Adobe アカウントチームにお問い合わせください。
 * Experience Cloud組織でイベント転送が有効になっている。
-* イベント転送のユーザー権限。 （[Admin Console](https://adminconsole.adobe.com/) のAdobe Experience Platform Launch製品で、&lbrace;Platforms > [!UICONTROL Edge] およびすべての  プロパティ権限 [!UICONTROL &#x200B; の権限項目 &#x200B;]。 付与されると、データ収集インターフェイスの左側のナビゲーションに [!UICONTROL &#x200B; イベント転送 &#x200B;] が表示されます。
+* イベント転送のユーザー権限。 （[Admin Console](https://adminconsole.adobe.com/) のAdobe Experience Platform Launch製品で、{Platforms[!UICONTROL  > ]Edge[!UICONTROL  およびすべての ] プロパティ権限 [!UICONTROL  の権限項目 ]。 付与されると、データ収集インターフェイスの左側のナビゲーションに [!UICONTROL  イベント転送 ] が表示されます。
   ![ イベント転送のプロパティ ](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web SDK または Mobile SDK は、Edge Networkにデータを送信するように設定されています。 このチュートリアルの次のレッスンを完了している必要があります。
+* Adobe Experience Platform Web または Mobile SDKは、Edge Networkにデータを送信するように設定されています。 このチュートリアルの次のレッスンを完了している必要があります。
 
    * 初期設定
 
@@ -84,7 +84,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
 ## データストリームの設定
 
-イベント転送で Platform Edge Networkに送信するデータを使用するには、新しく作成したイベント転送プロパティを、Adobeソリューションにデータを送信するために使用されるのと同じデータストリームにリンクする必要があります。
+イベント転送で Platform Edge Networkに送信するデータを使用するには、新しく作成したイベント転送プロパティを、Adobe ソリューションにデータを送信するために使用されるのと同じデータストリームにリンクする必要があります。
 
 データストリームで Target を設定するには：
 
@@ -92,7 +92,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 1. 左側のナビゲーションで「**[!UICONTROL データストリーム]**」を選択します
 1. 以前に作成した `Luma Web SDK: Development Environment` データストリームを選択します
 
-   ![Luma Web SDK データストリームを選択します ](assets/datastream-luma-web-sdk-development.png)
+   ![Luma Web SDK データストリームを選択します ](assets/datastream-luma-web-sdk-development.png)。
 
 1. 「**[!UICONTROL サービスを追加]**」を選択します。
    ![ データストリームへのサービスの追加 ](assets/event-forwarding-datastream-addService.png)
@@ -112,7 +112,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
 公開フローを通じて変更を昇格させる準備が整ったら、ステージングと実稼動のデータストリームに対してこれらの手順を繰り返します。
 
-## Platform Edge NetworkからAdobe以外のソリューションにデータを転送
+## Platform Edge NetworkからAdobe以外のソリューションへのデータの転送
 
 この演習では、イベント転送データ要素を設定し、イベント転送ルールを設定し、[Webhook.site](https://webhook.site/) と呼ばれるサードパーティのツールを使用して検証する方法について説明します。
 
@@ -122,7 +122,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
 >[!IMPORTANT]
 >
->先に進むには、データ要素を既に作成して XDM オブジェクトにマッピングし、タグルールを設定して、ライブラリ内でこれらの変更をタグ環境にビルドしている必要があります。 まだ設定されていない場合は、**前提条件** 節の [ タグの設定 ](setup-event-forwarding.md#prerequisites) の手順を参照してください。 これらの手順では、データが Platform Edge Networkに送信され、そこからAdobe転送プロパティを設定して、イベント以外のソリューションにデータを転送できます。
+>先に進むには、データ要素を既に作成して XDM オブジェクトにマッピングし、タグルールを設定して、ライブラリ内でこれらの変更をタグ環境にビルドしている必要があります。 まだ設定されていない場合は、**前提条件** 節の [ タグの設定 ](setup-event-forwarding.md#prerequisites) の手順を参照してください。 これらの手順では、データが Platform Edge Networkに送信され、そこからイベント転送プロパティを設定して、Adobe以外のソリューションにデータを転送できます。
 
 
 ### イベント転送データ要素の作成
@@ -143,7 +143,7 @@ Platform Web SDK タグ拡張機能を使用して以前に設定した XDM オ�
 >[!TIP]
 >
 >また、Web ブラウザーのネットワークツールを使用し、`/ee` リクエストをフィルタリングし、ビーコン [!UICONTROL **ペイロード**] を開き、探している変数にドリルダウンして、XDM オブジェクトパスを見つけることもできます。 次に、マウスで右クリックして「プロパティパスをコピー」を選択します。 ブラウザ ビューポートの高さの例を次に示します。
-> ![イベント転送 XDM パス ](assets/event-forwarding-xdm-path.png)
+>> ![イベント転送 XDM パス ](assets/event-forwarding-xdm-path.png)
 
 1. 最近作成した **[!UICONTROL イベント転送]** プロパティに移動します
 
@@ -192,13 +192,13 @@ Platform Web SDK タグ拡張機能を使用して以前に設定した XDM オ�
 
 ### Adobe Cloud Connector 拡張機能のインストール
 
-サードパーティの場所にデータを送信するには、まず [!UICONTROL Adobeクラウドコネクタ &#x200B;] 拡張機能をインストールします。
+サードパーティの場所にデータを送信するには、まず [!UICONTROL Adobe Cloud Connector] 拡張機能をインストールします。
 
 1. 左側のナビゲーションの **[!UICONTROL 拡張機能]** を選択します
 
 1. 「**[!UICONTROL カタログ]**」タブを選択します
 
-1. **[!UICONTROL Adobeクラウドコネクタ]** を検索し、「**[!UICONTROL インストール]**」を選択します
+1. **[!UICONTROL Adobe Cloud Connector]** を検索し、「**[!UICONTROL インストール]**」を選択します
 
    ![ イベント転送 ECID パス ](assets/event-forwarding-adobe-cloud-connector.png)
 
@@ -208,10 +208,10 @@ Platform Web SDK タグ拡張機能を使用して以前に設定した XDM オ�
 
 タグプロパティでルールを設定する場合と、イベント転送プロパティでルールを設定する場合では、主に次の点が異なります。
 
-* **[!UICONTROL イベント &#x200B;] および [!UICONTROL &#x200B; 条件]**:
+* **[!UICONTROL イベント ] および [!UICONTROL  条件]**:
 
    * **タグ**：すべてのルールは、ルールで指定する必要があるイベント（例：`Library Loaded - Page Top`）によってトリガーされます。 条件はオプションです。
-   * **イベント転送**:Platform Edge Networkに送信されるすべてのイベントが、データを転送するトリガーであると想定されます。 したがって、イベント転送ルールで選択する必要がある [!UICONTROL &#x200B; イベント &#x200B;] はありません。 イベント転送ルールをトリガーとするイベントを管理するには、条件を設定する必要があります。
+   * **イベント転送**:Platform Edge Networkに送信されるすべてのイベントが、データを転送するトリガーであると想定されます。 したがって、イベント転送ルールで選択する必要がある [!UICONTROL  イベント ] はありません。 イベント転送ルールをトリガーとするイベントを管理するには、条件を設定する必要があります。
 
 * **データ要素のトークン化**:
 
@@ -250,7 +250,7 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 1. アクションの追加
 
-1. **[!UICONTROL Extension]** で、**[!UICONTROL Adobeクラウドコネクタ]** を選択します
+1. **[!UICONTROL Extension]** で、**[!UICONTROL Adobe Cloud Connector]** を選択します
 
 1. **[!UICONTROL アクションタイプ]** の下で、「**[!UICONTROL Make Fetch Call]**」を選択します。
 
@@ -260,11 +260,11 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 1. **[クエリパラメーター]** の下で、前に作成した両方のデータ要素を追加します。
 
-1. `viewPortHeight` の **[!UICONTROL キー]** 列タイプ。 **[!UICONTROL 値]** 列で、データ要素セレクターアイコンに入力するか選択して、`{{environment.browserDetails.viewportHeight}}` データ要素を入力します
+1. **[!UICONTROL の]** キー `viewPortHeight` 列タイプ。 **[!UICONTROL 値]** 列で、データ要素セレクターアイコンに入力するか選択して、`{{environment.browserDetails.viewportHeight}}` データ要素を入力します
 
 1. 「[!UICONTROL **+さらに追加**]」を選択して、別のクエリパラメーターを追加します
 
-1. `ecid` の **[!UICONTROL キー]** 列タイプ。 「値」列で、`{{ecid}}` データ要素を入力します
+1. **[!UICONTROL の]** キー `ecid` 列タイプ。 「値」列で、`{{ecid}}` データ要素を入力します
 
 1. 「**[!UICONTROL 変更を保持]**」を選択します
 
@@ -290,11 +290,11 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 これで、Platform Debugger と Webhook.site を使用してイベント転送プロパティを検証できます。
 
-1. [Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en/men.html) で、データストリームのイベント転送プロパティのマッピング先の Web SDK タグプロパティに [ タグライブラリの切り替え ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) の手順に従います。
+1. [Luma デモサイト ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) で、データストリームのイベント転送プロパティのマッピング先の Web SDK タグプロパティに [ タグライブラリの切り替え ](https://luma.enablementadobe.com/content/luma/us/en/men.html) の手順に従います。
 
-1. ページをリロードする前に、Experience Platformーデバッガーで左側のナビゲーションから **[!UICONTROL ログ]** を開きます
+1. ページをリロードする前に、Experience Platform Debugger で左側のナビゲーションから **[!UICONTROL ログ]** を開きます
 
-1. 「**[!UICONTROL Edge]**」タブを選択し、「**[!UICONTROL 接続]** を選択して、Platform Edge Networkリクエストを表示します
+1. 「**[!UICONTROL Edge]**」タブを選択し、「**[!UICONTROL 接続]** を選択して、Platform Edge Network リクエストを表示します
 
    ![ イベント転送 Edge ネットワークセッション ](assets/event-forwarding-edge-session.png)
 
@@ -321,8 +321,6 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 おめでとうございます。イベント転送が設定されました。
 
-[次へ： ](conclusion.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを投稿したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
