@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Adobe Experience Platform Web SDK データでイベント転送を使用する方法について説明します。
 
-イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、[ イベント転送の概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview) を参照してください。
+イベント転送は、データ収集で使用できる新しいタイプのプロパティです。 イベント転送を使用すると、従来のクライアントサイドブラウザーではなく、Adobe Experience Platform Edge NetworkからサードパーティのAdobe以外のベンダーにデータを直接送信できます。 イベント転送の利点について詳しくは、[ イベント転送の概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/event-forwarding/overview) を参照してください。
 
 
 ![Web SDKとイベント転送の図 ](assets/dc-websdk-eventforwarding.png)
@@ -24,7 +24,7 @@ Adobe Experience Platformでイベント転送を使用するには、まず次�
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/ja/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -323,4 +323,4 @@ Webhook にデータを転送するルールを設定するには、まず個人
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

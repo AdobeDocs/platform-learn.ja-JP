@@ -71,7 +71,7 @@ Adobe Experience Platform Web SDK拡張機能をインストールして設定�
 
    ![ データストリーム選択 ](assets/extension-luma-web-sdk-datastream-extension.png)
 
-拡張機能の各セクションについて詳しくは、[Adobe Experience Platform Web SDK拡張機能の設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
+拡張機能の各セクションについて詳しくは、[Adobe Experience Platform Web SDK拡張機能の設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
 
 >[!NOTE]
 >
@@ -85,4 +85,4 @@ Platform Web SDKをインストールし、データストリームに関連付�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

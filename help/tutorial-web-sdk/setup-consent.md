@@ -217,11 +217,11 @@ Luma デモサイトに移動して検証し、Cookie を拒否し、オプト�
 ![ 訪問者の同意後のオプション ](assets/consent-post-user-optin.png)
 
 
-Web SDKの同意について詳しくは、[ 顧客の同意環境設定のサポート ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent) を参照してください。
+Web SDKの同意について詳しくは、[ 顧客の同意環境設定のサポート ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/consent/supporting-consent) を参照してください。
 
 
-[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションについて詳しくは、[ 同意を設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
+[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションについて詳しくは、[ 同意を設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

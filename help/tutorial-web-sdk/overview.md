@@ -14,7 +14,7 @@ ht-degree: 8%
 
 Adobe Experience Platform Web SDK を使用して、Experience Cloud アプリケーションを実装する方法について説明します。
 
-Experience Platform Web SDKは、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Networkを通じてJavaScript アプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド Adobe ライブラリです。 詳しくは、[Adobe Experience Platform Web SDKの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) を参照してください。
+Experience Platform Web SDKは、Adobe Experience Cloudのお客様がAdobe Experience Platform Edge Networkを通じてJavaScript アプリケーションとサードパーティのサービスの両方を操作できるようにする、クライアントサイド Adobe ライブラリです。 詳しくは、[Adobe Experience Platform Web SDKの概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/home) を参照してください。
 
 ![Experience Platform Web SDKのアーキテクチャ ](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ Experience Platform Web SDKは、Adobe Experience Cloudのお客様がAdobe Expe
    * **[!UICONTROL プロパティ権限]** - **[!UICONTROL 承認]**、**[!UICONTROL 開発]**、**[!UICONTROL プロパティ編集]**、**[!UICONTROL 環境の管理]**、**[!UICONTROL 拡張機能の管理]**、**[!UICONTROL 公開]** の権限
    * **[!UICONTROL 会社権限]** - プロパティを **[!UICONTROL 管理する権限]**
 
-     タグの権限について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions) を参照してください。
+     タグの権限について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/admin/user-permissions) を参照してください。
 
 * **Experience Platform** の場合、次を持っている必要があります。
 
@@ -64,11 +64,11 @@ Experience Platform Web SDKは、Adobe Experience Cloudのお客様がAdobe Expe
 
      Platform のアクセス制御について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home) を参照してください。
 
-* オプションの **Adobe Analytics** レッスンでは、[ 管理者としてレポートスイートの設定、処理ルール、Analysis Workspaceにアクセスできる必要があり ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home) す。
+* オプションの **Adobe Analytics** レッスンでは、[ 管理者としてレポートスイートの設定、処理ルール、Analysis Workspaceにアクセスできる必要があり ](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-console/home) す。
 
-* オプションの **Adobe Target** レッスンでは、「編集者」または「承認者 [ のアクセス権が必要 ](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) す。
+* オプションの **Adobe Target** レッスンでは、「編集者」または「承認者 [ のアクセス権が必要 ](https://experienceleague.adobe.com/ja/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) す。
 
-* オプションの **Audience Manager** レッスンでは、特性、セグメント、宛先を作成、読み取り、書き込むためのアクセス権が必要です。 詳しくは、[Audience Managerの役割ベースのアクセス制御 ](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control) に関するチュートリアルを参照してください。
+* オプションの **Audience Manager** レッスンでは、特性、セグメント、宛先を作成、読み取り、書き込むためのアクセス権が必要です。 詳しくは、[Audience Managerの役割ベースのアクセス制御 ](https://experienceleague.adobe.com/ja/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control) に関するチュートリアルを参照してください。
 
 
 >[!NOTE]
@@ -89,4 +89,4 @@ Experience Platform Web SDKは、Adobe Experience Cloudのお客様がAdobe Expe
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
