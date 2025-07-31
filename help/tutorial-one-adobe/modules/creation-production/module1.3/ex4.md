@@ -1,13 +1,14 @@
 ---
-title: Meta に対するGenStudio for Performance Marketing Campaign のアクティブ化
-description: Meta に対するGenStudio for Performance Marketing Campaign のアクティブ化
+title: AJO用GenStudio for Performance Marketing メール作成エクスペリエンス
+description: AJO用GenStudio for Performance Marketing メール作成エクスペリエンス
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '856'
 ht-degree: 6%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->この演習のすべての手順を実行するには、既存のAdobe Workfront環境にアクセスする必要があり、その環境でプロジェクトと承認ワークフローを作成する必要があります。 [Adobe Workfrontによるワークフロー管理 ](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} の演習に従うと、必要な設定を使用できるようになります。
+>この演習のすべての手順を実行するには、既存のAdobe Workfront環境にアクセスする必要があり、その環境でプロジェクトと承認ワークフローを作成する必要があります。 [Adobe Workfrontによるワークフロー管理 ](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} の演習に従うと、必要な設定を使用できるようになります。
 
 ## 1.3.4.1 メール作成および承認エクスペリエンス
 
@@ -40,7 +41,7 @@ ht-degree: 6%
 
 - **ブランド**: `--aepUserLdap-- - CitiSignal`
 - **言語**: `English (US)`
-- **ペルソナ**: `--aepUserLdap-- - Smart Home Families`
+- **ペルソナ**: `--aepUserLdap-- - Online Gamers`
 - **製品**: `--aepUserLdap-- - CitiSignal Fiber Max`
 
 **コンテンツから選択** をクリックします。

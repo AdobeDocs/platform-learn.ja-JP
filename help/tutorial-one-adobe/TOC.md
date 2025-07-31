@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1222'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,17 @@ ht-degree: 3%
       + [オプション 2:PostBuster セットアップ](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
-+ ワークフローと計画 {#planning}
++ ワークフローと計画 {#wfplanning}
+   + 1.1 Workfrontの計画 {#wfpl1}
+      + [概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
+      + [1.1.1 Workfrontの計画の概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
+      + [概要と利点](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
+   + 1.2 Workfront {#wfpl2}
+      + [概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
+      + [1.2.1 Workfrontの概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.2 Workfrontでのプルーフ](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.5 WorkfrontとPhotoshopの統合](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+      + [概要と利点](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + 作成と実稼動 {#production}
    + 1.1 Adobe Firefly Servicesの概要 {#crpr1}
@@ -74,12 +84,6 @@ ht-degree: 3%
       + [1.1.5 高度なカスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 AEM Edge Delivery Services MarTech プラグイン](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
-   + 1.2 Workfront {#assetm2}
-      + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/workfront.md)
-      + [1.2.1 Workfrontの概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
-      + [1.2.2 Workfrontでのプルーフ](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
-      + [1.2.5 WorkfrontとPhotoshopの統合](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex5.md)
-      + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + 配信とアクティブ化 {#activation}
    + データ収集 {#dc}

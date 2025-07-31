@@ -3,9 +3,9 @@ title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '406'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 12%
 
 | 名前 | 最終更新日 | 作業 100% | 備考 |
 | ---------------------- | ------------ | ------------ |------------ |
-| - | - | - | - |
+| [1.1 Adobe Workfrontの計画 ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025 | × | コンテンツはまだ完了していません |
+| [1.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025 | × | コンテンツはまだ完了していません |
 
 ## 2.創造・生産
 
@@ -41,7 +42,6 @@ ht-degree: 12%
 | 名前 | 最終更新日 | 作業 100% | 備考 |
 | ---------------------- | ------------ | ------------ |------------ |
 | [2.1 Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | ○ | - |
-| [2.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"} | 16/01/2025 | × | コンテンツはまだ完了していません |
 
 ## 4.配信とアクティベーション
 
@@ -61,7 +61,7 @@ ht-degree: 12%
 | [3.3 Adobe Journey Optimizer：プッシュメッセージとアプリ内メッセージ ](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | ○ | - |
 | [3.4 Adobe Journey Optimizer：イベントベースのジャーニー](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | ○ | - |
 | [3.5 Adobe Journey Optimizer：翻訳サービス ](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | ○ | - |
-| [3.6 Adobe Journey Optimizer：コンテンツ管理 ](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | × | 開発中のコンテンツ |
+| [3.6 Adobe Journey Optimizer：コンテンツ管理 ](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | ○ | - |
 | [3.7Adobe Journey Optimizer：決定 ](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | × | 開発中のコンテンツ |
 | [3.8 Adobe Journey Optimizer：キャンペーン ](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | × | 開発中のコンテンツ |
 

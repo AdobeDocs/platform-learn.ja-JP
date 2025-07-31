@@ -3,9 +3,9 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,14 @@ ht-degree: 2%
 このチュートリアルは非常に多様で、次のアプリケーションで明確なインサイトを提供します。
 
 - Adobe Firefly Services、Adobe Photoshop、Adobe Frame I/O、Adobe Substance 3D ステージング
-- Adobe WorkfrontとAdobe Workfront Fusion
-- Adobe Experience Manager Cloud Service、Sites、AssetsおよびEdge Delivery Services
+- Adobe Workfront、Adobe Workfrontプランニング、Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service、Sites、Assets、Forms、Edge Delivery Services
+- AEM Assets Dynamic Media、Content Hub
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe Content Analytics
 
 このチュートリアルでは、Adobeのアプリケーションに重点を置くだけでなく、ブランドが運用する広範なエコシステムを考慮します。 そのために、いくつかの教訓では、Adobe以外のアプリケーションとAdobeのアプリケーションとの統合方法に重点を置いています。 そのため、次のアプリケーションがAdobe Experience Platformとどのように連携するかについて、深く理解することができます。
 
@@ -57,6 +60,14 @@ ht-degree: 2%
 
 ### &#x200B;1. ワークフローと計画
 
+[1.1 Adobe Workfrontの計画 ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+
+ここでは、Adobe Workfront Planning を使用して、新しいワークスペースの作成、レコードタイプの定義、レコードの管理、新しいリクエストフォームの作成および AI アシスタントの使用を行います。
+
+[1.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+
+このモジュールでは、Adobe Workfrontを設定および使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサルエディター、Photoshopなどとの統合を使用します。
+
 ### 2.創造・生産
 
 [1.1 Adobe Firefly Servicesの概要 ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
@@ -80,10 +91,6 @@ ht-degree: 2%
 [1.1 Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 この基本モジュールでは、Adobe Experience Manager Cloud Service プログラム、サイトおよびAssets リポジトリを設定します。
-
-[1.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
-
-この基本モジュールでは、Adobe Workfrontを設定および使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサルエディター、Photoshopなどとの統合を使用します。
 
 ### 4.配信とアクティベーション
 
