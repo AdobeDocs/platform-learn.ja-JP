@@ -111,7 +111,7 @@ ht-degree: 2%
 
    ![ 変数スキーマの更新 ](assets/create-rule-update-variable.png)
 
-次に、[!UICONTROL  データ要素 ] を、XDM オブジェクトで使用される [!UICONTROL  スキーマ ] にマッピングします。 個々のプロパティまたはオブジェクト全体にマッピングできます。 この例では、個々のプロパティにマッピングします。
+次に、[!UICONTROL &#x200B; データ要素 &#x200B;] を、XDM オブジェクトで使用される [!UICONTROL &#x200B; スキーマ &#x200B;] にマッピングします。 個々のプロパティまたはオブジェクト全体にマッピングできます。 この例では、個々のプロパティにマッピングします。
 
 1. eventType フィールドを見つけて選択します
 
@@ -238,7 +238,7 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >数値変数がデータレイヤー内の文字列値（`price` や `qty` など）でデータ要素内の数値に再書式設定される方法に注意してください。 これらの形式要件は、Platform のデータ整合性にとって重要であり、[ スキーマの設定 ](configure-schemas.md) 手順で決定されます。 この例では、**[!UICONTROL quantity]** は **[!UICONTROL Integer]** データ型を使用しています。
->> ![XDM スキーマデータタイプ ](assets/set-up-analytics-quantity-integer.png)
+>&#x200B;> ![XDM スキーマデータタイプ ](assets/set-up-analytics-quantity-integer.png)
 
 次に、配列を XDM オブジェクトにマッピングします。
 
@@ -389,7 +389,7 @@ ht-degree: 2%
 
 ![ ビルド完了 ](assets/create-rule-development-success.png)
 
-[!UICONTROL  公開フロー ] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
+[!UICONTROL &#x200B; 公開フロー &#x200B;] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
 
 これで、Adobe Experience Platform Debuggerを使用してリクエスト内のデータを検証する準備が整いました。
 

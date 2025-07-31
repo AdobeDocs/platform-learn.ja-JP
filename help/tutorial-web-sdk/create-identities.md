@@ -71,9 +71,9 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 
 上記のように、Platform Web SDKを使用すると、デジタルプロパティへのすべての訪問者に、Adobeによって ECID が割り当てられます。 ECID は、未認証のデジタル行動を追跡するためのデフォルト ID です。
 
-また、Platform で [ID グラフ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) を作成し、Target で [ サードパーティ ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) を設定できるように、認証済みユーザー ID を送信することもできます。 認証済み ID の設定は、[!UICONTROL ID マップ ] データ要素タイプを使用して行われます。
+また、Platform で [ID グラフ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) を作成し、Target で [ サードパーティ ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) を設定できるように、認証済みユーザー ID を送信することもできます。 認証済み ID の設定は、[!UICONTROL ID マップ &#x200B;] データ要素タイプを使用して行われます。
 
-[!UICONTROL ID マップ ] データ要素を作成するには：
+[!UICONTROL ID マップ &#x200B;] データ要素を作成するには：
 
 1. **[!UICONTROL データ要素]** に移動し、「**[!UICONTROL データ要素を追加]**」を選択します。
 
@@ -107,9 +107,9 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 
 >[!TIP]
 >
-> Adobeでは、`Luma CRM Id` などの人物を表す ID を [!UICONTROL  プライマリ ] ID として送信することをお勧めします。
+> Adobeでは、`Luma CRM Id` などの人物を表す ID を [!UICONTROL &#x200B; プライマリ &#x200B;] ID として送信することをお勧めします。
 >
-> ID マップに人物識別子（例：`Luma CRM Id`）が含まれる場合、その人物識別子は [!UICONTROL  プライマリ ] ID になります。 それ以外の場合は、`ECID` が [!UICONTROL  プライマリ ] ID になります。
+> ID マップに人物識別子（例：`Luma CRM Id`）が含まれる場合、その人物識別子は [!UICONTROL &#x200B; プライマリ &#x200B;] ID になります。 それ以外の場合は、`ECID` が [!UICONTROL &#x200B; プライマリ &#x200B;] ID になります。
 
 
 

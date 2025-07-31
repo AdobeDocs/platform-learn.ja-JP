@@ -113,7 +113,7 @@ XDM スキーマはExperience Platformの標準的なデータ記述方法で、
 
 >[!TIP]
 > 
->この演習では、web データ収集用の推奨される事前定義済みフィールドグループである _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ および _**[!UICONTROL Consumer Experience Event]**_ を追加します。
+>この演習では、web データ収集用の推奨される事前定義済みフィールドグループである _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ および _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_ を追加します。
 >
 
 
@@ -129,7 +129,7 @@ XDM スキーマはExperience Platformの標準的なデータ記述方法で、
 
    ![ フィールドグループを追加 ](assets/schema-add-field-group.png)
 
-両方のフィールドグループを使用すると、web 上のデータ収集に必要な最も一般的に使用されるキーと値のペアにアクセスできます。 各フィールドの [!UICONTROL  表示名 ] は、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、標準フィールドの表示名を必要に応じて変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、それに属するキーと値のペアのグループがインターフェイスで強調表示されます。 以下の例では、どのようなフィールドが **[!UICONTROL 消費者エクスペリエンスイベント]** に属しているのかがわかります。
+両方のフィールドグループを使用すると、web 上のデータ収集に必要な最も一般的に使用されるキーと値のペアにアクセスできます。 各フィールドの [!UICONTROL &#x200B; 表示名 &#x200B;] は、Platform ベースのアプリケーションのセグメントビルダーインターフェイスでマーケターに表示され、標準フィールドの表示名を必要に応じて変更できます。 また、不要なフィールドを削除することもできます。 いずれかのフィールドグループ名をクリックすると、それに属するキーと値のペアのグループがインターフェイスで強調表示されます。 以下の例では、どのようなフィールドが **[!UICONTROL 消費者エクスペリエンスイベント]** に属しているのかがわかります。
 
 ![ スキーマフィールドグループ ](assets/schema-consumer-experience-event.png)
 
@@ -151,7 +151,7 @@ XDM スキーマはExperience Platformの標準的なデータ記述方法で、
 >
 >
 >この設定については、[Experience Platformのセットアップ ](setup-experience-platform.md) のレッスンで詳しく説明します。
->>![プロファイルスキーマ ](assets/schema-profile.png)
+>&#x200B;>![プロファイルスキーマ ](assets/schema-profile.png)
 
 このレッスンを完了するには、右上の **[!UICONTROL 保存]** を選択します。
 

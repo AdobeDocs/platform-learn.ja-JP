@@ -106,8 +106,8 @@ Analytics 製品文字列の個々のセクションは、`productListItems` オ
 >[!NOTE]
 >
 >2022 年 8 月 18 日（PT）現在、`productListItems[].SKU` は、s.products 変数の製品名へのマッピングを優先しています。
->>`productListItems[].name` に設定された値は、`productListItems[].SKU` が存在しない場合にのみ、製品名にマッピングされます。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
->>`productListItems[].SKU` に空の文字列や null を設定しないでください。 これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
+>&#x200B;>`productListItems[].name` に設定された値は、`productListItems[].SKU` が存在しない場合にのみ、製品名にマッピングされます。 それ以外の場合は、マッピングされず、コンテキストデータで使用できます。
+>&#x200B;>`productListItems[].SKU` に空の文字列や null を設定しないでください。 これには、s.products 変数の製品名にマッピングするという望ましくない影響があります。
 
 
 ### データオブジェクトに変数を設定

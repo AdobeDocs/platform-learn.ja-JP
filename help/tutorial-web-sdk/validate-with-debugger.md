@@ -90,7 +90,7 @@ Debugger を使用して、Platform Web Edge Network実装からトリガーさ�
 
    ![Adobe Experience Platform Web SDK リクエスト ](assets/validate-aep-screen.png)
 
-1. `web.webpagedetails.pageView` 変数を更新 [!UICONTROL  アクション、および ] フィールドグループに準拠するその他の標準変数で指定した `AEP Web SDK ExperienceEvent` イベントタイプを確認する方法をメモします
+1. `web.webpagedetails.pageView` 変数を更新 [!UICONTROL &#x200B; アクション、および &#x200B;] フィールドグループに準拠するその他の標準変数で指定した `AEP Web SDK ExperienceEvent` イベントタイプを確認する方法をメモします
 
    ![ イベントの詳細 ](assets/validate-event-pageViews.png)
 

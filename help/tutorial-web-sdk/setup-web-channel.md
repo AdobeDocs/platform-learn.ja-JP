@@ -115,7 +115,7 @@ Adobe Experience Platform サービスは既にデータストリームに追加
 
 1. Experience PlatformまたはJourney Optimizer インターフェイスの **[!UICONTROL 顧客]** / **[!UICONTROL プロファイル]** ページに移動します。
 1. 「**[!UICONTROL 結合ポリシー]**」タブを選択します。
-1. ポリシーを選択し（通常は [!UICONTROL  デフォルトの時間ベース ] ポリシーを使用するのが最適です）、「**[!UICONTROL 設定]**」ステップの **[!UICONTROL Edge上でアクティブ化結合ポリシー]** オプションを切り替えます。
+1. ポリシーを選択し（通常は [!UICONTROL &#x200B; デフォルトの時間ベース &#x200B;] ポリシーを使用するのが最適です）、「**[!UICONTROL 設定]**」ステップの **[!UICONTROL Edge上でアクティブ化結合ポリシー]** オプションを切り替えます。
 
    ![ 結合ポリシーを切り替え ](assets/web-channel-active-on-edge-merge-policy.png)
 
@@ -314,7 +314,7 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. **概要** に移動します。 **[!UICONTROL データストリーム ID]** が、Adobe Journey Optimizerを有効にした **[!UICONTROL 4}Adobe Data Collection} の]** データストリーム **[!UICONTROL と一致することを確認します。]**
+1. **概要** に移動します。 **[!UICONTROL データストリーム ID]** が、Adobe Journey Optimizerを有効にした **[!UICONTROL 4&rbrace;Adobe Data Collection&rbrace; の]** データストリーム **[!UICONTROL と一致することを確認します。]**
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -330,7 +330,7 @@ Luma サイトでデバッガーを使用すると、実稼動環境での web �
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**[!UICONTROL Adobe Experience Platform Edge network]** に送信されるリクエストを検証します。 ログトラッキングのために、これらのリクエストはすべて **[!UICONTROL 0}Assurance} に取り込む必要があります。]**
+1. 様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**[!UICONTROL Adobe Experience Platform Edge network]** に送信されるリクエストを検証します。 ログトラッキングのために、これらのリクエストはすべて **[!UICONTROL 0&rbrace;Assurance&rbrace; に取り込む必要があります。]**
 <!--
    ![ADD SCREENSHOT](#)
 -->

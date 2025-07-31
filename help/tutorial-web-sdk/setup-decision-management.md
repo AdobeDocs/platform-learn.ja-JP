@@ -72,7 +72,7 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
    ![ データストリームを選択 ](assets/decisioning-datastream-select.png)
 
-1. **2}Adobe Experience Platform サービス** 内の「編集 **を選択します。**
+1. **2&rbrace;Adobe Experience Platform サービス** 内の「編集 **を選択します。**
 
    ![ サービスを編集 ](assets/decisioning-edit-datastream.png)
 
@@ -383,7 +383,7 @@ Luma サイトでデバッガーを使用して、実稼動環境で意思決定
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. **概要** に移動します。 **データストリーム ID** が、Offer Decisioningを有効にした **4}Adobe Data Collection} の** データストリーム **と一致することを確認します。**
+1. **概要** に移動します。 **データストリーム ID** が、Offer Decisioningを有効にした **4&rbrace;Adobe Data Collection&rbrace; の** データストリーム **と一致することを確認します。**
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -395,7 +395,7 @@ Luma サイトでデバッガーを使用して、実稼動環境で意思決定
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. その後、様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**Adobe Experience Platform Edge network** に送信されたリクエストを検証できます。 ログトラッキングのために、これらのリクエストはすべて **0}Assurance} に取り込む必要があります。**
+1. その後、様々な Luma ロイヤルティアカウントでサイトにログインし、デバッガーを使用して、**Adobe Experience Platform Edge network** に送信されたリクエストを検証できます。 ログトラッキングのために、これらのリクエストはすべて **0&rbrace;Assurance&rbrace; に取り込む必要があります。**
 <!--
    ![ADD SCREENSHOT](#)
 -->

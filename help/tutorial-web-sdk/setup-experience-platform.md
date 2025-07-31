@@ -72,7 +72,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
 ## データストリームの設定
 
-[!UICONTROL  データストリーム ] を設定して、[!UICONTROL Adobe Experience Platform] にデータを送信できるようになりました。 データストリームは、タグプロパティ、Platform Edge NetworkおよびExperience Platform データセットの間のリンクです。
+[!UICONTROL &#x200B; データストリーム &#x200B;] を設定して、[!UICONTROL Adobe Experience Platform] にデータを送信できるようになりました。 データストリームは、タグプロパティ、Platform Edge NetworkおよびExperience Platform データセットの間のリンクです。
 
 1. [ データ収集 ](https://experience.adobe.com/#/data-collection){target="blank"} インターフェイスを開きます
 1. 左側のナビゲーションから **[!UICONTROL データストリーム]** を選択します
@@ -96,8 +96,8 @@ Luma web イベントデータのデータセットを設定しましょう。
 この手順は、データがデータセットに取り込まれていることを確認するために重要です。 データセットに送信されたデータの検証には、2 つの側面があります。
 
 * [!UICONTROL Experience Platform Debugger] を使用した検証
-* [!UICONTROL  データセットをプレビュー ] を使用して検証
-* [!UICONTROL  クエリサービス ] を使用した検証
+* [!UICONTROL &#x200B; データセットをプレビュー &#x200B;] を使用して検証
+* [!UICONTROL &#x200B; クエリサービス &#x200B;] を使用した検証
 
 ### Experience Platform Debugger
 
@@ -265,12 +265,12 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 ロイヤルティスキーマを作成します。
 
 1. 新しいスキーマの作成
-1. **[!UICONTROL 基本クラス]** として [!UICONTROL  個人プロファイル ] を選択します
+1. **[!UICONTROL 基本クラス]** として [!UICONTROL &#x200B; 個人プロファイル &#x200B;] を選択します
 1. スキーマに `Luma Loyalty Schema` という名前を付けます
-1. [!UICONTROL  ロイヤルティの詳細 ] フィールドグループを追加します
-1. [!UICONTROL  デモグラフィックの詳細 ] フィールドグループを追加します
-1. 「`Person ID`」フィールドを選択し、ID 名前空間 [!UICONTROL  を使用して、]ID`Luma CRM Id` および [!UICONTROL プライマリ ID] としてマークします。
-1. [!UICONTROL  プロファイル ] のスキーマを有効にします。 「プロファイル」切替スイッチが見つからない場合は、左上のスキーマ名をクリックしてみてください。
+1. [!UICONTROL &#x200B; ロイヤルティの詳細 &#x200B;] フィールドグループを追加します
+1. [!UICONTROL &#x200B; デモグラフィックの詳細 &#x200B;] フィールドグループを追加します
+1. 「`Person ID`」フィールドを選択し、ID 名前空間 [!UICONTROL &#x200B; を使用して、]ID`Luma CRM Id` および [!UICONTROL プライマリ ID] としてマークします。
+1. [!UICONTROL &#x200B; プロファイル &#x200B;] のスキーマを有効にします。 「プロファイル」切替スイッチが見つからない場合は、左上のスキーマ名をクリックしてみてください。
 1. スキーマの保存
 
    ![ ロイヤルティスキーマ ](assets/web-channel-loyalty-schema.png)
@@ -279,7 +279,7 @@ Web SDK データを Platform に取り込むと、Adobe Experience Platformに�
 
 1. `Luma Loyalty Schema` ージから新しいデータセットを作成
 1. データセットに `Luma Loyalty Dataset` という名前を付けます
-1. [!UICONTROL  プロファイル ] のデータセットを有効にする
+1. [!UICONTROL &#x200B; プロファイル &#x200B;] のデータセットを有効にする
 1. サンプルファイル [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json) をダウンロードします。
 1. ファイルをデータセットにドラッグ&amp;ドロップします
 1. データが正常に取り込まれていることを確認します
