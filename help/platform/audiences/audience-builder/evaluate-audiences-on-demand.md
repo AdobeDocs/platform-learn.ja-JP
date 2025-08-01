@@ -18,6 +18,6 @@ ht-degree: 19%
 
 # バッチオーディエンスをオンデマンドで評価
 
-Adobe Experience Platformの柔軟なオーディエンス評価機能を使用して、バッチオーディエンスをオンデマンドで評価します。 およびガードレールについて詳しくは、[ フレキシブルオーディエンス評価ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation) を参照してください。
+Adobe Experience Platformの柔軟なオーディエンス評価機能を使用して、バッチオーディエンスをオンデマンドで評価します。 およびガードレールについて詳しくは、[ フレキシブルオーディエンス評価ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/methods/flexible-audience-evaluation) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
