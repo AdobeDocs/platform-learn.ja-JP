@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、パートナーとの接続を設定してオーディエンスを共有できるようにする方法を説明します。 このセグメントの一致機能を設定すると、データパートナーとの間でデータをやり取りできるようになります。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346353/?learn=on&enablevpops&captions=jpn)

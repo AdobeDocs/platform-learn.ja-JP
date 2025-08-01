@@ -18,5 +18,5 @@ ht-degree: 90%
 
 セグメント一致を使用すると、戦略的パートナーからあなたにデータを共有できます。このビデオでは、データの承認および受信方法、そのデータの確認場所、独自のセグメントへの追加方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/344419/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411142/?learn=on&enablevpops&captions=jpn)
 
