@@ -3,9 +3,9 @@ title: はじめに – インストールするアプリケーション
 description: はじめに – インストールするアプリケーション
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,26 @@ ht-degree: 1%
 **Adobe Creative Cloud** アプリを開き、**アプリ** に移動します。 お使いのコンピューターにIllustratorをインストールします。
 
 ![Adobe I/O新規統合 ](./images/psd.png)
+
+## Adobe Premiere Pro
+
+[https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html) からAdobe Premiere Pro Beta版をコンピューターにインストールします
+
+![Adobe I/O新規統合 ](./images/prpro.png)
+
+**Creative Cloud デスクトップアプリを開く** をクリックします。
+
+![Adobe I/O新規統合 ](./images/prpro1.png)
+
+**2}Premiere Pro（Beta）** アプリ用のカードで「**インストール」をクリックします。**
+
+![Adobe I/O新規統合 ](./images/prpro2.png)
+
+## Frame.io 転送アプリ
+
+[https://frame.io/transfer](https://frame.io/transfer) に移動し、お使いのコンピューターのバージョンをダウンロードします。
+
+![Frame.io](./images/frameio11.png)
 
 ## Visual Studio Code
 

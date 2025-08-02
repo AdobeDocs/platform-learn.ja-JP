@@ -2,9 +2,10 @@
 title: コンテンツサプライチェーンに関するGenStudioの技術的イネーブルメント
 description: コンテンツサプライチェーンに関するGenStudioの技術的イネーブルメント
 doc-type: multipage-overview
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -57,6 +58,10 @@ ht-degree: 1%
 
 この基本モジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
 
+[Frame.io でワークフローを効率化 ](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+このモジュールでは、Adobe Frame.io をAdobe Premiere Proと組み合わせて使用し、画像やビデオの共同作業やレビューを行います。
+
 ### アセット管理
 
 [Adobe Experience ManagerCloud ServiceおよびEdge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -67,9 +72,9 @@ ht-degree: 1%
 
 #### Adobe Content Analytics
 
-[Content Analytics](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+[Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
 
-このモジュールでは、Content Analyticsをセットアップし設定します。
+このモジュールでは、Adobe Content Analyticsを実装して使用する方法を説明します。
 
 ![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 

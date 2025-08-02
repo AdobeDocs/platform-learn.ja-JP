@@ -3,9 +3,9 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1166'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,11 @@ ht-degree: 2%
 
 [1.4 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
-この基本モジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
+このモジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
+
+[1.5 Frame.io でワークフローを効率化 ](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+このモジュールでは、Adobe Frame.io をAdobe Premiere Proと組み合わせて使用し、画像やビデオの共同作業やレビューを行います。
 
 ### 3.資産管理
 
@@ -185,6 +189,12 @@ ht-degree: 2%
 [2.1 クエリサービス](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 このモジュールでは、Adobe Experience Platform クエリサービスの使用方法を説明します。
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+このモジュールでは、Adobe Content Analyticsを実装して使用する方法を説明します。
 
 ![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 

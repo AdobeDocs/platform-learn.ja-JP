@@ -3,9 +3,9 @@ title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '414'
 ht-degree: 12%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 12%
 
 | 名前 | 最終更新日 | 作業 100% | 備考 |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Adobe Workfrontの計画 ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025 | × | コンテンツはまだ完了していません |
-| [1.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025 | × | コンテンツはまだ完了していません |
+| [1.1 Adobe Workfrontの計画 ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 2025/08/02 | ○ | - |
+| [1.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 2025/08/02 | ○ | コンテンツはまだ完了していません |
 
 ## 2.創造・生産
 
@@ -35,6 +35,7 @@ ht-degree: 12%
 | [1.2 Workfront Fusion によるCreative ワークフローの自動化 ](./modules/creation-production/module1.2/automation.md){target="_blank"} | 04/06/2025 | ○ | - |
 | [1.3GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | ○ | - |
 | [1.4 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | ○ | - |
+| [1.5 Frame.io でワークフローを効率化 ](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 2025/08/02 | ○ | - |
 
 
 ## 3.資産管理
@@ -72,6 +73,7 @@ ht-degree: 12%
 | [1.1 Customer Journey Analytics:Adobe Experience Platform上にAnalysis Workspaceを使用して、ダッシュボードを作成する ](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"} | 06/01/2025 | ○ | - |
 | [1.2 Customer Journey Analytics:BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 ](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 07/01/2025 | × | ソースデータのデータ準備モデリングに問題があります。 これは修正待ちの状態です。 |
 | [2.1 クエリサービス ](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | ○ | - |
+| [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 2025/08/02 | × | 開発中のコンテンツ |
 
 {style="table-layout:auto"}
 
