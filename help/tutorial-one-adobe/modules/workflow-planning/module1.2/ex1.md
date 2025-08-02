@@ -3,38 +3,51 @@ title: Workfrontの概要
 description: Workfrontの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '824'
 ht-degree: 2%
 
 ---
 
-# 1.2.1 Workfrontの概要
+# 1.2.1 WorkfrontとAEM Assets CS メタデータの統合
 
-[https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"} に移動して、Adobe Workfrontにログインします。
+>[!IMPORTANT]
+>
+>この演習を完了するには、動作しているAEM Assets CS オーサー環境にアクセスできる必要があります。
+>
+>考慮すべき 2 つのオプションがあります。
+>
+>- GenStudio for CSC テクニカルイネーブルメントワークショップに参加している場合、インストラクターがAEM Assets CS オーサー環境を作成します。 名前と進め方をチェックしてください。
+>
+>- One Adobeのチュートリアルパスをすべて使用している場合は、[Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} の演習にアクセスしてください。 指示に従うと、そのような環境にアクセスできます。
 
-次に、これを確認します。
+>[!IMPORTANT]
+>
+>以前にAEM CS プログラムをAEM Assets CS 環境で設定している場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
+
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 クリックして **Workfront** を開きます。
+
+![Workfront計画 ](./../module1.1/images/wfpl1.png)
+
+その後、これが表示されます。
 
 ![WF](./images/wfb1.png)
 
 ## AEM Assets統合を設定 1.2.1.1 るには
 
-9 つのドット **ハンバーガー** アイコンをクリックし、「**設定**」を選択します。
+**メニュー** アイコンをクリックし、「**設定**」を選択します。
 
 ![WF](./images/wfb2.png)
 
-左側のメニューで、下にスクロールして **ドキュメント** を表示し、**Experience Manager Assets** をクリックします。
+左側のメニューで、下にスクロールして **ドキュメント** を表示し、**Experience Manager Assets** をクリックします。 「**+ Experience Manager統合を追加**」をクリックします。
 
 ![WF](./images/wfb3.png)
 
-「**+ Experience Manager統合を追加**」をクリックします。
+統合の名前には、`--aepUserLdap-- - CitiSignal AEM` を使用します。
 
-![WF](./images/wfb4.png)
-
-統合の名前には、`--aepUserLdap-- - Citi Signal AEM` を使用します。
-
-**Experience Manager リポジトリ** ドロップダウンを開き、AEM CS インスタンス（`--aepUserLdap-- - Citi Signal`）を選択します。
+**Experience Manager リポジトリ** ドロップダウンを開き、AEM CS インスタンス（`--aepUserLdap-- - CitiSignal`）を選択します。
 
 ![WF](./images/wfb5.png)
 
@@ -43,9 +56,12 @@ ht-degree: 2%
 | Workfront フィールド | Experience Manager Assets フィールド |
 | --------------- | ------------------------------ | 
 | **ドキュメント** > **名前** | **wm:documentName** |
+| **プロジェクト** > **名前** | **wm:projectName** |
 | **プロジェクト** > **説明** | **wm:projectDescription** |
+| **ドキュメント要求** > **ステータス** | **wm:wm:documentStatus** |
 | **タスク** > **名前** | **wm:taskName** |
 | **タスク** > **説明** | **wm:taskDescription** |
+| **プロジェクト** > **ID** | **wm:projectId** |
 
 **オブジェクトメタデータを同期** のスイッチを有効にします。
 
@@ -59,21 +75,25 @@ ht-degree: 2%
 
 ## AEM Assets1.2.1.2 のメタデータ統合の設定
 
-次に、Workfront内のアセットのメタデータフィールドをAEM Assetsと共有するようにAEMを設定する必要があります。
+次に、AEM Assets CS を設定して、WorkfrontのアセットのメタデータフィールドがAEM Assets CS と共有されるようにする必要があります。
 
 その場合は、[https://experience.adobe.com/](https://experience.adobe.com/) にアクセスしてください。 **Experience Manager Assets** をクリックします。
 
 ![WF](./images/wfbaem1.png)
 
-「」をクリックしてAEM Assets環境を選択します。これは、`--aepUserLdap-- - Citi Signal dev` という名前にする必要があります。
+「」をクリックしてAEM Assets環境を選択します。これは、`--aepUserLdap-- - CitiSignal dev` という名前にする必要があります。
 
 ![WF](./images/wfbaem2.png)
 
-この画像が表示されます。 左側のメニューで、**Assetsに移動し** 「**フォルダーを作成**」をクリックします。
+この画像が表示されます。 左側のメニューで、**Assets** に移動します。
 
 ![WF](./images/wfbaem3.png)
 
-フォルダーに `--aepUserLdap-- - Workfront Assets` という名前を付け、「作成 **をクリック** ます。
+次に、「**フォルダーを作成**」をクリックします。
+
+![WF](./images/wfbaem3a.png)
+
+フォルダーに `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という名前を付け、「作成 **をクリック** ます。
 
 ![WF](./images/wfbaem4.png)
 
@@ -85,19 +105,31 @@ ht-degree: 2%
 
 ![WF](./images/wfbaem6.png)
 
-フォームに 3 つの新しい **1 行のテキスト** フィールドを追加し、最初のフィールドを選択します。 次に、「メタデータプロパティ **フィールドの横にある** スキーマ **アイコンをクリック** ます。
+フォームに 7 つの新しい **1 行のテキスト** フィールドを追加し、最初のフィールドを選択します。 次に、最初のフィールドの **メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをクリックします。
 
 ![WF](./images/wfbaem7.png)
+
+このポップアップが表示されます。 検索フィールドに「`wm:project`」と入力し、「**プロジェクト名**」フィールドを選択します。 「**選択**」をクリックします。
+
+![WF](./images/wfbaem11.png)
+
+フィールドのラベルを `Project Name` に変更します。 「**保存**」をクリックします。
+
+![WF](./images/wfbaem12.png)
+
+2 番目のフィールドに移動し、「**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをクリックします。
+
+![WF](./images/wfbaem12a.png)
 
 検索フィールドに「`wm:project`」と入力し、「**プロジェクト説明**」フィールドを選択します。 「**選択**」をクリックします。
 
 ![WF](./images/wfbaem8.png)
 
-フィールドのラベルを **プロジェクトの説明** に変更します。
+フィールドのラベルを `Project Description` に変更します。
 
 ![WF](./images/wfbaem9.png)
 
-次に、「2 番目の **1 行のテキスト**」フィールドを選択し、「**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンを再度クリックします。
+次に、3 番目のフィールドを選択し、「**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンを再度クリックします。
 
 ![WF](./images/wfbaem10b.png)
 
@@ -105,25 +137,65 @@ ht-degree: 2%
 
 ![WF](./images/wfbaem10.png)
 
-フィールドのラベルを **プロジェクト ID** に変更します。
+フィールドのラベルを `Project ID` に変更します。
 
 ![WF](./images/wfbaem10a.png)
 
-3 番目の **1 行のテキスト** フィールドを選択し、もう一度 **メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをクリックします。
+次に、4 番目のフィールドを選択し、**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをもう一度クリックします。
 
 ![WF](./images/wfbaem11a.png)
 
-その後、このポップアップが再び表示されます。 検索フィールドに「`wm:project`」と入力し、「**プロジェクト名**」フィールドを選択します。 「**選択**」をクリックします。
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:document`」と入力し、「**プロジェクト ID**」フィールドを選択します。 「**選択**」をクリックします。
 
-![WF](./images/wfbaem11.png)
+![WF](./images/wfbaem101.png)
 
-フィールドのラベルを **プロジェクト名** に変更します。 「**保存**」をクリックします。
+フィールドのラベルを `Document Status` に変更します。
 
-![WF](./images/wfbaem12.png)
+![WF](./images/wfbaem102.png)
 
-フォームの **タブ名** を `--aepUserLdap-- - Workfront Metadata` に変更します。 **保存** および **閉じる** をクリックします。
+次に、5 番目のフィールドを選択し、「**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをもう一度クリックします。
+
+![WF](./images/wfbaem103.png)
+
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:document`」と入力し、「**プロジェクト ID**」フィールドを選択します。 「**選択**」をクリックします。
+
+![WF](./images/wfbaem104.png)
+
+フィールドのラベルを `Document Name` に変更します。
+
+![WF](./images/wfbaem105.png)
+
+次に、6 番目のフィールドを選択し、「**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをもう一度クリックします。
+
+![WF](./images/wfbaem106.png)
+
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:task`」と入力し、「**タスク名**」フィールドを選択します。 「**選択**」をクリックします。
+
+![WF](./images/wfbaem107.png)
+
+フィールドのラベルを `Task Name` に変更します。
+
+![WF](./images/wfbaem108.png)
+
+次に、7 番目のフィールドを選択し、「**メタデータプロパティ** フィールドの横にある **スキーマ** アイコンをもう一度クリックします。
+
+![WF](./images/wfbaem109.png)
+
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:task`」と入力し、「**タスクの説明**」フィールドを選択します。 「**選択**」をクリックします。
+
+![WF](./images/wfbaem110.png)
+
+フィールドのラベルを `Task Description` に変更します。
+
+![WF](./images/wfbaem111.png)
+
+フォームの **タブ名** を `--aepUserLdap-- - Workfront Metadata` に変更します。
 
 ![WF](./images/wfbaem13.png)
+
+**保存** および **閉じる** をクリックします。
+
+![WF](./images/wfbaem13a.png)
 
 これで **メタデータフォーム** が設定されました。
 
@@ -133,111 +205,13 @@ ht-degree: 2%
 
 ![WF](./images/wfbaem15.png)
 
-`--aepUserLdap-- - Workfront Assets` という名前のフォルダーを選択します。 **割り当て** をクリックします。
+`--aepUserLdap-- - CitiSignal Fiber Launch Assets` という名前のフォルダーを選択します。 **割り当て** をクリックします。
 
 ![WF](./images/wfbaem16.png)
 
 メタデータフォームがフォルダーに正常に割り当てられました。
 
 ![WF](./images/wfbaem17.png)
-
-## AEM Sites統合を設定 1.2.1.2 るには
-
->[!NOTE]
->
->このプラグインは現在 **アーリーアクセス** モードであり、まだ一般公開されていません。
->
->このプラグインは、を使用しているWorkfront インスタンスに既にインストールされている場合があります。 既にインストールされている場合は、以下の手順を確認できますが、設定を変更する必要はありません。
-
-[https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor](https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor){target="_blank"} に移動します。
-
-このプラグインの **toggle** が **有効** に設定されていることを確認します。 次に、「**歯車** アイコンをクリックします。
-
-![WF](./images/wfb8.png)
-
-**拡張機能設定** ポップアップが表示されます。 このプラグインを使用するために、以下のフィールドを設定します。
-
-| キー | 値 |
-| --------------- | ------------------------------ | 
-| **`IMS_ENV`** | **PROD** |
-| **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
-| **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;: true, &quot;publishUrl&quot;: true}&#39;** |
-
-「**保存**」をクリックします。
-
-![WF](./images/wfb8.png)
-
-Workfront UI に戻り、9 つのドット **ハンバーガー** アイコンをクリックします。 **設定** を選択します。
-
-![WF](./images/wfb9.png)
-
-左側のメニューで **カスタムForms** に移動し、「**フォーム**」を選択します。 「**+新規カスタムフォーム**」をクリックします。
-
-![WF](./images/wfb10.png)
-
-**タスク** を選択し、「**続行**」をクリックします。
-
-![WF](./images/wfb11.png)
-
-空のカスタムフォームが表示されます。 フォーム名 `Content Fragment & Integration ID` を入力します。
-
-![WF](./images/wfb12.png)
-
-新しい **1 行のテキスト** フィールドをキャンバスにドラッグ&amp;ドロップします。
-
-![WF](./images/wfb13.png)
-
-新しいフィールドを次のように設定します。
-
-- **ラベル**:**コンテンツフラグメント**
-- **名前**: **`aem_workfront_integration_content_fragment`**
-
-![WF](./images/wfb14.png)
-
-キャンバスに新しい **1 行のテキスト** フィールドを追加し、次のように新しいフィールドを設定します。
-
-- **ラベル**: **統合 ID**
-- **名前**: **`aem_workfront_integration_id`**
-
-「**適用**」をクリックします。
-
-![WF](./images/wfb15.png)
-
-次に、2 番目のカスタムフォームを設定する必要があります。 「**+新規カスタムフォーム**」をクリックします。
-
-![WF](./images/wfb10.png)
-
-**タスク** を選択し、「**続行**」をクリックします。
-
-![WF](./images/wfb11.png)
-
-空のカスタムフォームが表示されます。 フォーム名 `Preview & Publish URL` を入力します。
-
-![WF](./images/wfb16.png)
-
-新しい **1 行のテキスト** フィールドをキャンバスにドラッグ&amp;ドロップします。
-
-![WF](./images/wfb17.png)
-
-新しいフィールドを次のように設定します。
-
-- **ラベル**: **プレビュー URL**
-- **名前**: **`aem_workfront_integration_preview_url`**
-
-![WF](./images/wfb18.png)
-
-キャンバスに新しい **1 行のテキスト** フィールドを追加し、次のように新しいフィールドを設定します。
-
-- **ラベル**: **パブリッシュ URL**
-- **名前**: **`aem_workfront_integration_publish_url`**
-
-「**適用**」をクリックします。
-
-![WF](./images/wfb19.png)
-
-その後、2 つのカスタムフォームを使用できるようになります。
-
-![WF](./images/wfb20.png)
 
 次の手順：Workfrontで [1.2.2 を校正する ](./ex2.md){target="_blank"}
 

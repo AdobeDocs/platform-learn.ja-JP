@@ -3,9 +3,9 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 このチュートリアルは非常に多様で、次のアプリケーションで明確なインサイトを提供します。
 
 - Adobe Firefly Services、Adobe Photoshop、Adobe Frame I/O、Adobe Substance 3D ステージング
-- Adobe Workfront、Adobe Workfrontプランニング、Adobe Workfront Fusion
+- Adobe Workfront Workflow、Adobe Workfront計画およびAdobe Workfront Fusion
 - Adobe Experience Manager Cloud Service、Sites、Assets、Forms、Edge Delivery Services
 - AEM Assets Dynamic Media、Content Hub
 - Adobe Experience Platform
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ここでは、Adobe Workfront Planning を使用して、新しいワークスペースの作成、レコードタイプの定義、レコードの管理、新しいリクエストフォームの作成および AI アシスタントの使用を行います。
 
-[1.2 Adobe Workfrontを使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2 Adobe Workfront Workflow を使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 このモジュールでは、Adobe Workfrontを設定および使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサルエディター、Photoshopなどとの統合を使用します。
 

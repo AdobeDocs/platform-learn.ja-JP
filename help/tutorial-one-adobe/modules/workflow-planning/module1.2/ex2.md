@@ -3,20 +3,23 @@ title: Workfrontでのプルーフ
 description: Workfrontでのプルーフ
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
 
 # 1.2.2 Workfrontでのプルーフ
 
+>[!IMPORTANT]
+>
+>以前にAEM CS プログラムをAEM Assets CS 環境で設定している場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
+
 ## 新 1.2.2.1 い承認フローを作成するには
 
-[https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"} に移動します。
-
-9 つのドット **ハンバーガー** アイコンをクリックし、「**プルーフ** を選択します。
+**Adobe Workfront** に戻ります。 **メニュー** アイコンをクリックし、「**プルーフ**」を選択します。
 
 ![WF](./images/wfp1.png)
 
@@ -28,7 +31,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp3.png)
 
-下にスクロールして、**ステージ**/**ステージ 1** で **Wouter Van Geluwe** を **レビュアーと承認者** の **役割** に追加します。
+下にスクロールして、**ステージ**/**ステージ 1** の下で、**レビュアーと承認者** の **役割** を自分に追加します。
 
 「**作成**」をクリックします。
 
@@ -40,13 +43,35 @@ ht-degree: 0%
 
 ## 新 1.2.2.2 いプロジェクトを作成するには
 
-Workfrontのホームページで、「**マイプロジェクト** タブの **新規** をクリックします。 「**空のプロジェクト**」を選択します。
+**メニュー** を開き、**プログラム** に移動します。
+
+![WF](./images/wfp6a.png)
+
+前に作成したプログラムをクリックします。名前は `--aepUserLdap-- CitiSignal Fiber Launch` です。
+
+>[!NOTE]
+>
+>作成および実行した自動処理を使用して、[Workfront計画 ](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
+
+![WF](./images/wfp6b.png)
+
+プログラムで、「**プロジェクト**」に移動します。 「**+新規プロジェクト**」をクリックし、「**新規プロジェクト**」を選択します。
 
 ![WF](./images/wfp6.png)
 
 この画像が表示されます。 名前を `--aepUserLdap-- - CitiSignal Fiber Launch` に変更します。
 
-![WF](./images/wfp6a.png)
+![WF](./images/wfp6c.png)
+
+**プロジェクト詳細** に移動します。 **説明** の下の「**+追加**」をクリックします。
+
+![WF](./images/wfp6d.png)
+
+説明を `The CitiSignal Fiber Launch project is used to plan the upcoming launch of CitiSignal Fiber.` に設定
+
+「**変更を保存**」をクリックします。
+
+![WF](./images/wfp6e.png)
 
 これで、プロジェクトが作成されました。
 
@@ -54,7 +79,15 @@ Workfrontのホームページで、「**マイプロジェクト** タブの **
 
 ## 新規タスクを作成 1.2.2.3 るには
 
-タスクの名前 **ファイバーキャンペーンのアセットを作成** を入力します。 **タスクを作成** をクリックします。
+**タスク** に移動し、「**+新規タスク**」をクリックします。
+
+![WF](./images/wfp7a.png)
+
+タスクの名前 `Create assets for Fiber campaign` を入力します。
+
+フィールド **説明** を `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.` に設定します。
+
+**タスクを作成** をクリックします。
 
 ![WF](./images/wfp8.png)
 
@@ -62,9 +95,25 @@ Workfrontのホームページで、「**マイプロジェクト** タブの **
 
 ![WF](./images/wfp9.png)
 
+列 **割り当て** に、独自の名前を追加します。
+
+![WF](./images/wfp9a.png)
+
+その後、タスクが割り当てられます。
+
+![WF](./images/wfp9b.png)
+
 ## タスク 1.2.2.4 新規ドキュメントを追加するには、承認フローを実行します
 
-「**+新規追加」をクリックし** 「**ドキュメント**」を選択します。
+**Workfront** のロゴをクリックして、概要ページに戻ります。 作成したプロジェクトが概要に表示されます。 プロジェクトをクリックして開きます。
+
+![WF](./images/wfp9c.png)
+
+**タスク** で、をクリックしてタスクを開きます。
+
+![WF](./images/wfp9d.png)
+
+**ドキュメント** に移動します。 「**+新規追加」をクリックし** 「**ドキュメント**」を選択します。
 
 ![WF](./images/wfp10.png)
 
@@ -76,21 +125,13 @@ Workfrontのホームページで、「**マイプロジェクト** タブの **
 
 ![WF](./images/wfp12.png)
 
-これで完了です。 「**プルーフを作成**」をクリックして、「**詳細プルーフ**」を選択します。
+これで完了です。 アップロードしたドキュメントにポインタを合わせます。 「**プルーフを作成**」をクリックして、「**詳細プルーフ**」を選択します。
 
 ![WF](./images/wfp13.png)
 
-**新しいプルーフ** ウィンドウで、以前に作成した、`--aepUserLdap-- - Approval Workflow` という名前のワークフローテンプレートを選択します。 **プルーフを作成** をクリックします。
+**新しいプルーフ** ウィンドウで、「**自動** を選択したあと、以前に作成したワークフローテンプレートを選択します。このテンプレートには、`--aepUserLdap-- - Approval Workflow` という名前を付ける必要があります。 **プルーフを作成** をクリックします。
 
 ![WF](./images/wfp14.png)
-
-その後、タスクに戻ります。 **割り当て先** ボタンをクリックし、「自分に割り当て **を選択し** す。
-
-![WF](./images/wfp15.png)
-
-「**保存**」をクリックします。
-
-![WF](./images/wfp16.png)
 
 **作業** をクリックします。
 
@@ -124,7 +165,7 @@ Workfrontのホームページで、「**マイプロジェクト** タブの **
 
 ![WF](./images/wfp24.png)
 
-その後、あなたはここに戻るべきです。 ここで、提供されたコメントを考慮した 2 つ目の画像をアップロードする必要があります。
+**タスク** と **ドキュメント** に戻ります。 ここで、提供されたコメントを考慮した 2 つ目の画像をアップロードする必要があります。
 
 ![WF](./images/wfp25.png)
 
@@ -160,7 +201,7 @@ Workfrontのホームページで、「**マイプロジェクト** タブの **
 
 ![WF](./images/wfp32.png)
 
-プルーフのプレビューを閉じます。
+**タスク名** をクリックして、タスクの概要に戻ります。
 
 ![WF](./images/wfp33.png)
 
@@ -168,11 +209,11 @@ Workfrontのホームページで、「**マイプロジェクト** タブの **
 
 ![WF](./images/wfp34.png)
 
-**矢印を共有** アイコンをクリックし、AEM Assets統合を選択します。これは、`--aepUserLdap-- - Citi Signal AEM` という名前にする必要があります。
+承認済みドキュメントを選択します。 **矢印を共有** アイコンをクリックし、AEM Assets統合を選択します。これは、`--aepUserLdap-- - CitiSignal AEM` という名前にする必要があります。
 
 ![WF](./images/wfp35.png)
 
-前に作成したフォルダーをダブルクリックします。フォルダーの名前は `--aepUserLdap-- - Workfront Assets` にする必要があります。
+前に作成したフォルダーをダブルクリックします。フォルダーの名前は `--aepUserLdap-- - CitiSignal Fiber Launch Assets` にする必要があります。
 
 ![WF](./images/wfp36.png)
 
@@ -184,29 +225,13 @@ Workfrontのホームページで、「**マイプロジェクト** タブの **
 
 ![WF](./images/wfp37a.png)
 
-**概要を開く** をクリックします。
-
-![WF](./images/wfp38.png)
-
-**メタデータ** に移動すると、次のように表示されます。
-
-![WF](./images/wfp39.png)
-
-**概要** に移動し、「**+追加**」をクリックして説明を追加します。
-
-![WF](./images/wfp40.png)
-
-説明を入力します。 これで、プルーフとドキュメントの設定が完了しました。
-
-![WF](./images/wfp41.png)
-
 ## 1.2.2.5 AEM Assetsでファイルを表示
 
-AEM Assetsの `--aepUserLdap-- - Workfront Assets` というフォルダーに移動します。
+AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という名前のフォルダーに移動します。
 
 ![WF](./images/wfppaem1.png)
 
-画像の下の 3 ドットをクリックし、「**詳細**」を選択します。
+画像を選択し、「**詳細**」を選択します。
 
 ![WF](./images/wfppaem2.png)
 

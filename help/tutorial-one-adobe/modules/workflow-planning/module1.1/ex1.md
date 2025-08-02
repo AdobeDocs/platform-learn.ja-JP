@@ -3,9 +3,10 @@ title: Workfrontの計画の概要
 description: Workfrontの計画の概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -196,7 +197,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront計画 ](./images/wfpl35.png)
 
-## 自動処理 1.1.1.7 作成するには
+## 1.1.1.7 Portfolioとカスタムフォームの作成
 
 次の手順では、Workfront Planning で作成したキャンペーンから情報を取得し、その情報をWorkfrontで使用してプログラムを作成する自動処理を作成します。 自動処理を作成する前に、Workfrontでまず設定すべき 2 つの事項、すなわちポートフォリオとカスタムフォームがあります。
 
@@ -224,7 +225,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront計画 ](./images/wfplss6.png)
 
-フォームの名前を `--aepUserLdap-- Program Information` に変更します。
+フォームの名前を `--aepUserLdap-- - Program Information` に変更します。
 
 ![Workfront計画 ](./images/wfplss7.png)
 

@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1239'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 3%
 # 1 つのAdobe技術チュートリアル {#tutorial-one-adobe}
 
 + [チュートリアルの概要](/help/tutorial-one-adobe/overview.md)
++ [コンテンツサプライチェーンに関するGenStudioの技術的イネーブルメント](/help/tutorial-one-adobe/genstudiocsc.md)
 + [コンテンツステータス](/help/tutorial-one-adobe/status.md)
 + [完了](/help/tutorial-one-adobe/completion.md)
 
@@ -36,10 +37,11 @@ ht-degree: 3%
       + [概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
       + [1.1.1 Workfrontの計画の概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
-   + 1.2 Workfront {#wfpl2}
+   + 1.2 Workfront ワークフロー {#wfpl2}
       + [概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
-      + [1.2.1 Workfrontの概要](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.1 WorkfrontとAEM Assets CS メタデータの統合](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
       + [1.2.2 Workfrontでのプルーフ](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.4 WorkfrontとAEM Sites CS の統合](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
       + [1.2.5 WorkfrontとPhotoshopの統合](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 

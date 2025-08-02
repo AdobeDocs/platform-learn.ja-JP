@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1326'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->この演習を行うには、AEM Content Hubを有効にした状態で、動作するAEM Assets CS オーサー環境にアクセスできる必要があります。 演習 [Adobe Experience Manager Cloud ServiceおよびEdge Delivery Servicesに従うと ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} このような環境にアクセスできます。
+>この演習を行うには、AEM Assets Content Hubを有効にした状態で、動作するAEM Assets CS オーサー環境にアクセスできる必要があります。
+>
+>考慮すべき 2 つのオプションがあります。
+>
+>- GenStudio for CSC テクニカルイネーブルメントワークショップに参加している場合、インストラクターがAEM Assets CS オーサー環境を作成します。 名前と進め方をチェックしてください。
+>
+>- One Adobeのチュートリアルパスをすべて使用している場合は、[Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} の演習にアクセスしてください。 指示に従うと、そのような環境にアクセスできます。
 
 >[!IMPORTANT]
 >
@@ -302,7 +308,7 @@ Campaign `--aepUserLdap-- - CitiSignal Fiber Launch Campaign` を選択し、「
 
 ![GSPeM](./images/gsmetaad1.png)
 
-リストから **0&rbrace;Call to action&rbrace; を選択し、URL の例を入力します。**「**次へ**」をクリックします。
+リストから **0}Call to action} を選択し、URL の例を入力します。**「**次へ**」をクリックします。
 
 ![GSPeM](./images/gsmetaad3.png)
 
