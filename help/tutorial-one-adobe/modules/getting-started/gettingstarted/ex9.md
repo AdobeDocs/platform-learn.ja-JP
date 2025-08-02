@@ -42,7 +42,7 @@ ht-degree: 1%
 
 ![Adobe I/O新規統合 ](./images/prpro1.png)
 
-**2}Premiere Pro（Beta）** アプリ用のカードで「**インストール」をクリックします。**
+**2&rbrace;Premiere Pro（Beta）** アプリ用のカードで「**インストール」をクリックします。**
 
 ![Adobe I/O新規統合 ](./images/prpro2.png)
 
