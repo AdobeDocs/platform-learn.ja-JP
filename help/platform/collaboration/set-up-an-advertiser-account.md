@@ -18,6 +18,6 @@ ht-degree: 25%
 
 # Real-Time CDP Collaborationでの広告主アカウントの設定
 
-Real-Time CDP Collaborationで広告主アカウントを設定する方法を説明します。 詳細なドキュメントについては、[ 組織のオンボーディングと管理 ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"} を参照してください。
+Real-Time CDP Collaborationで広告主アカウントを設定する方法を説明します。 詳細なドキュメントについては、[ 組織のオンボーディングと管理 ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"} を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)
