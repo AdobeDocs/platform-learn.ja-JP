@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,13 +27,13 @@ ht-degree: 0%
 
    ![ ジャーニーの作成 ](assets/create-journey.png)
 
-2. 新しい名前でジャーニープロパティを更新します：`SecurFinancial - Home Loan Offer - [your lab user ID]`。
+2. 新しい名前でジャーニープロパティを更新します：**`SecurFinancial - Home Loan Offer`**。
 
 3. **オーケストレーション** をクリックし、**オーディエンスを読み取り** タイルをキャンバスにドラッグ&amp;ドロップします。
 
 4. 画面の右側にあるオーディエンスボックスの横にある **鉛筆アイコン** をクリックします。
 
-5. 検索バーで `SecureFinancial Customers - No Loans, Good Credit` を検索し、「**保存**」をクリックします。
+5. 検索バーで **`SecureFinancial Customers - No Loans, Good Credit`** を検索し、「**保存**」をクリックします。
 
    ![ ジャーニーの作成 ](assets/select-audience.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 2. 右側のメニューで「**メール設定**」をクリックし、「**メールマーケティング**」を選択します。 次に、「**コンテンツを編集** をクリックします。
 
-3. 件名に、`Learn more about SecurFinancial Home Loan` を追加します。 次に、「**メール本文を編集**」をクリックします。
+3. 件名に、**`Learn more about SecurFinancial Home Loan`** を追加します。 次に、「**メール本文を編集**」をクリックします。
 
 4. 右上隅の **コンテンツテンプレート** ボタンをクリックします。 `SecureFinancial Template` を検索して選択し、「**確認**」をクリックします。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 6. メールDesignerに移動します。 `{profile.person.name.firstName}` マクロの上にマウスポインターを置いて、「**パーソナライゼーションアバター**」をクリックします。
 
-7. パーソナライゼーションウィンドウで、次のフォルダーパスにドリルダウンします。`[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. パーソナライゼーションウィンドウで、次のフォルダーパスにドリルダウンします。**`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. **オーディエンスを読み取り** フォルダーをクリックします。 フェデレーションされたオーディエンスのエンリッチメント属性は、こちらで確認できます。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 11. 名のパーソナライゼーションが追加されたので、パーソナライゼーション変数の前に `Hi, ` を追加します。 次に、「**保存**」をクリックします。
 
-    ![journey-email-save](assets/journey-email-save.png)
+   ![journey-email-save](assets/journey-email-save.png)
 
 12. 「**戻る** ボタンを 2 回クリックして、ジャーニーキャンバスに戻ります。 次に、右側の **アクション：メール** メニューで、「**保存**」をクリックします。
 

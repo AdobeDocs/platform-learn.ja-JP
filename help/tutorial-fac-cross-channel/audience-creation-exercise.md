@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '300'
 ht-degree: 3%
 
 ---
@@ -26,19 +26,21 @@ ht-degree: 3%
 
    ![create-composition](assets/create-composition.png)
 
-3. コンポジションに `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]` のラベルを付けます。 「**作成**」をクリックします。
+3. コンポジションに `SecurFinancial Customers - No Loans, Good Credit` のラベルを付けます。 「**作成**」をクリックします。
 
 4. キャンバスで「**+**」ボタンをクリックし、「**オーディエンスを作成**」を選択します。 右側のレールが表示されます。
 
 5. 「**スキーマを選択**」をクリックして、「**FSI_CRM**」スキーマを選択し、「**確認**」をクリックします。
 
 6. 「**続行**」をクリックします。Query Builder ウィンドウで、「**+**」ボタン、「**カスタム条件** の順にクリックします。 次の条件を作成します。
-   - `CURRENTPRODUCTS does not contain loan`
-   - `AND`
-   - `CREDITSCORE greater than or equal to 650`
-   - マーケティング環境設定データを使用して、メールを好みのコミュニケーションチャネルとして選択した顧客をセグメント化します。
-   - `AND`
-   - `CONSENTSMARKETINGPREFERRED equal to email`
+
+   `CURRENTPRODUCTS does not contain loan`
+   `AND`
+   `CREDITSCORE greater than or equal to 650`
+   `AND`
+   `CONSENTSMARKETINGPREFERRED equal to email`
+
+   *最後の条件により、マーケティング環境設定データを使用して、希望するコミュニケーションチャネルとしてメールを選択した顧客をセグメント化できます*。
 
    **メモ：** 値フィールドでは大文字と小文字が区別されます。
 
@@ -46,16 +48,16 @@ ht-degree: 3%
 
    ![query-builder](assets/query-builder.png)
 
-7. 次の **+** ボタンをクリックし、「**オーディエンスを保存**」をクリックします。
-
-   この手順に `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]` というラベルを付けます。 オーディエンスラベルと同じ値を使用します。
+7. 次の **+** ボタンをクリックし、「**オーディエンスを保存**」をクリックします。 この手順に `SecurFinancial Customers - No Loans, Good Credit` というラベルを付けます。 オーディエンスラベルと同じ値を使用します。
 
 8. 次のオーディエンスマッピングを追加します。
+
    - **Source オーディエンスフィールド：** メール
    - **Source オーディエンスフィールド：** CURRENTPRODUCTS
    - **Source オーディエンスフィールド：** 名
 
 9. プロファイルに使用するプライマリ ID と名前空間を選択：
+
    - **プライマリ ID フィールド：** メール
    - **ID 名前空間：** メール
 
@@ -63,6 +65,6 @@ ht-degree: 3%
 
 **メモ：** 製品とクレジット情報を使用して、クレジットスコアなどの機密データをアクティベーション用のダウンストリームプラットフォームに移動しないオーディエンスを作成しました。
 
-オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
+オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
 federated audience が作成されたので、次に進みます [S3 アカウントへのマッピング ](map-federated-audience-to-s3.md)。
