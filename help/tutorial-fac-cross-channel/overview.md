@@ -66,4 +66,4 @@ SecurFinancial は、SecurFinancial のポートフォリオに有効なロー�
 - **サンドボックス環境**：組織のReal-Time CDP インスタンスにサンドボックスを作成して、実稼動データに影響を与えずに安全に実験します。
 - **Data Warehouse接続**：このチュートリアルではSnowflake接続を使用しますが、任意の [ サポートされている Cloud Warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) を使用することもできます。
 
-[0}Data Warehouse接続 } のレッスンから始めて、環境の設定を開始します。](data-warehouse-connection.md)
+[0&rbrace;Data Warehouse接続 &rbrace; のレッスンから始めて、環境の設定を開始します。](data-warehouse-connection.md)
