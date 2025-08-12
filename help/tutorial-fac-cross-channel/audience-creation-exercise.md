@@ -63,6 +63,6 @@ ht-degree: 3%
 
 **メモ：** 製品とクレジット情報を使用して、クレジットスコアなどの機密データをアクティベーション用のダウンストリームプラットフォームに移動しないオーディエンスを作成しました。
 
-オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
+オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
 federated audience が作成されたので、次に進みます [S3 アカウントへのマッピング ](map-federated-audience-to-s3.md)。

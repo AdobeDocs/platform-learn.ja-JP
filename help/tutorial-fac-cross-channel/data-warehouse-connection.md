@@ -19,7 +19,7 @@ ht-degree: 2%
 
 このレッスンでは、Adobe Experience Platformと Enterprise Data Warehouseの間の接続を設定して、Federated Audience Composition を有効にします。 これにより、レプリケーションを行わずに、サポートされているウェアハウスから直接データに対してクエリを実行できます。 さらに、Data Warehouse テーブルに基づいてスキーマとデータモデルを作成します。
 
-このラボでは、Snowflake アカウントに接続します。 Federated Audience Composition では、増え続けるクラウドウェアハウス接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+このラボでは、Snowflake アカウントに接続します。 Federated Audience Composition では、増え続けるクラウドウェアハウス接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 
 ## 手順
