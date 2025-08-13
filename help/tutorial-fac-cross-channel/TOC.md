@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 5%
+source-wordcount: '81'
+ht-degree: 4%
 
 ---
 
@@ -22,5 +22,6 @@ ht-degree: 5%
 + [&#x200B;2. オーディエンス作成演習](audience-creation-exercise.md)
 + [&#x200B;3. Federated Audience の S3 へのマッピング](map-federated-audience-to-s3.md)
 + [&#x200B;4. Federated Audience Data を使用したジャーニーの作成](build-journey-federated-audience.md)
-+ [&#x200B;5. オーディエンスエンリッチメントデモ](audience-enrichment-demo.md)
++ [&#x200B;5. Federated Data によるオーディエンスのエンリッチメント](federated-audience-composition.md)
++ [&#x200B;6. Edgeでの「その時点の」パーソナライゼーションの促進](drive-in-the-moment-personalization.md)
 + [まとめ](conclusion.md)

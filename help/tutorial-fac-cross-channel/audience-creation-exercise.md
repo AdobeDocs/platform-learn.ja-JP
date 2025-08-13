@@ -2,22 +2,22 @@
 title: オーディエンスの作成
 seo-title: Create an audience | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: オーディエンスの作成
-description: このレッスンでは、Adobe Experience Platformと Enterprise Data Warehouseの間の接続を設定して、Federated Audience Composition を有効にします。
+description: この視覚的な演習では、Adobe Experience Platformと Enterprise Data Warehouseの間の接続を設定して、Federated Audience Composition を有効にします。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '341'
 ht-degree: 3%
 
 ---
 
-
 # オーディエンス作成演習
 
-この演習では、Federated Audience Composition を使用してData Warehouseからオーディエンスを作成する手順を説明します。 SecurFinancial の信用スコアが 650 以上で、現在 SecurFinancial ポートフォリオにローンを持っていない SecurFinancial のお客様を選定するオーディエンスを作成します。
+次に、Federated Audience Composition を使用してData Warehouseからオーディエンスを作成する手順について説明します。 オーディエンスは、信用スコアが 650 以上で、現在 SecurFinancial ポートフォリオにローンを持っていない SecurFinancial のお客様で構成されています。
 
 ## 手順
 
@@ -26,13 +26,13 @@ ht-degree: 3%
 
    ![create-composition](assets/create-composition.png)
 
-3. コンポジションに `SecurFinancial Customers - No Loans, Good Credit` のラベルを付けます。 「**作成**」をクリックします。
+3. コンポジションにラベルを付けます。 この例では `SecurFinancial Customers - No Loans, Good Credit` です。 「**作成**」をクリックします。
 
-4. キャンバスで「**+**」ボタンをクリックし、「**オーディエンスを作成**」を選択します。 右側のレールが表示されます。
+4. キャンバスで「**+**」ボタンをクリックし、「**オーディエンスを作成**」を選択します。 右側のパネルが表示されます。
 
-5. 「**スキーマを選択**」をクリックして、「**FSI_CRM**」スキーマを選択し、「**確認**」をクリックします。
+5. 「**スキーマを選択**」をクリックし、適切なスキーマを選択して「**確認**」をクリックします。
 
-6. 「**続行**」をクリックします。Query Builder ウィンドウで、「**+**」ボタン、「**カスタム条件** の順にクリックします。 次の条件を作成します。
+6. 「**続行**」をクリックします。Query Builder ウィンドウで、「**+**」ボタン、「**カスタム条件** の順にクリックします。 条件を記述します。 この例では、次を使用します。
 
    `CURRENTPRODUCTS does not contain loan`
    `AND`
@@ -44,27 +44,27 @@ ht-degree: 3%
 
    **メモ：** 値フィールドでは大文字と小文字が区別されます。
 
-   クエリは次のようになります。
-
    ![query-builder](assets/query-builder.png)
 
-7. 次の **+** ボタンをクリックし、「**オーディエンスを保存**」をクリックします。 この手順に `SecurFinancial Customers - No Loans, Good Credit` というラベルを付けます。 オーディエンスラベルと同じ値を使用します。
+7. 次の **+** ボタンをクリックし、「**オーディエンスを保存**」をクリックします。 この手順にラベルを付けます。 この例では、`SecurFinancial Customers - No Loans, Good Credit` のようにラベルを付けます。
 
-8. 次のオーディエンスマッピングを追加します。
+8. 関連するオーディエンスマッピングを追加します。 この例では、次のようになります。
 
    - **Source オーディエンスフィールド：** メール
    - **Source オーディエンスフィールド：** CURRENTPRODUCTS
    - **Source オーディエンスフィールド：** 名
 
-9. プロファイルに使用するプライマリ ID と名前空間を選択：
+9. プロファイルに使用するプライマリ ID と名前空間を選択します。 これらは、データに使用される ID とフィールドです。
 
    - **プライマリ ID フィールド：** メール
    - **ID 名前空間：** メール
 
-10. 「**保存**」をクリックし、次に「**開始**」をクリックして、作成したコンポジションのクエリを実行します。
+10. 「**保存**」をクリックしてから「**開始**」をクリックして、コンポジションのクエリを実行します。
 
-**メモ：** 製品とクレジット情報を使用して、クレジットスコアなどの機密データをアクティベーション用のダウンストリームプラットフォームに移動しないオーディエンスを作成しました。
+>[**概要**]
+>
+> この例では、商品とクレジット情報を使用して、Adobe Experience Platformからコピーを作成せずにSnowflakeのエンタープライズデータに直接アクセスしてオーディエンスを作成しました。 外部システムがクエリを処理すると、関連するメール、現在の製品、名の値のみがダウンストリームのアクティベーション用にオーディエンス定義に引き継がれます。 これは、RTCDPがサポートするすべての宛先に適用されます。
 
-オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
+オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
-federated audience が作成されたので、次に進みます [S3 アカウントへのマッピング ](map-federated-audience-to-s3.md)。
+federated audience が作成されたので、[S3 アカウントにマッピング ](map-federated-audience-to-s3.md) します。

@@ -2,29 +2,30 @@
 title: まとめ
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: まとめ
-description: このレッスンでは、学習と重要な留意点をまとめます。
+description: 最後に、学習と重要な留意点をまとめます。
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
-
 
 # まとめ
 
 Experience Platform Federated Audience Composition は、新しい道筋を提供し、エンタープライズのデータウェアハウスからブランドが立ち上げた即時のエクスペリエンスに至るまで、オーディエンスを作成するための拡張されたアクセス権を提供します。
 
-このチュートリアルでは、Adobe Experience Platformの Federated Audience Composition の実践的な概要を説明しました。 学習内容：
+このビジュアルガイドは、Adobe Experience Platformでの Federated Audience コンポジションの概要です。 学習内容：
 
-- Data Warehouse をAdobe Experience Platformに接続します。
-- レプリケーションを使用しないウェアハウスデータを使用して、オーディエンスを作成およびエンリッチメントします。
-- ダウンストリームで使用するために、オーディエンスをAmazon S3 に書き出します。
-- federated audiences を使用してパーソナライズされたカスタマージャーニーを構築します。
-- Federated Data を使用してExperience Platform オーディエンスを強化します。
+- Adobe Experience Platformをエンタープライズデータウェアハウスに接続します。
+- Federated Audience Composition を使用してオーディエンスを作成および管理します。
+- フェデレーションされたオーディエンスをAmazon S3 などの外部の宛先にマッピングします。
+- Federated Data を使用して既存のオーディエンスを強化します。
+- 「その場の」パーソナライゼーションを推進するオーディエンスを作成します。
+- federated audience データを使用してカスタマージャーニーを作成します。
 
 ## 重要な留意点
 
