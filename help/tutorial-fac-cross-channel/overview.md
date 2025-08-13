@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 概要
 
-Federated Audience Composition は、Adobe Real-Time Customer Data Platform（Real-Time CDP）およびAdobe Journey Optimizer環境で使用できる強力な機能です。 データアーキテクトとデータエンジニアは、データをAdobe Experience Platformにレプリケートすることなく、[ サポートされているサードパーティのデータウェアハウス ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} から直接オーディエンスを作成および強化できます。 このチュートリアルでは、技術ユーザーがエンタープライズデータウェアハウスを接続し、オーディエンスを作成および強化し、パーソナライズされたマーケティングエクスペリエンス用にアクティブ化するための実践的なガイダンスを提供します。
+Federated Audience Composition は、Adobe Real-Time Customer Data Platform（Real-Time CDP）およびAdobe Journey Optimizer環境で使用できる強力な機能です。 データアーキテクトとデータエンジニアは、データをAdobe Experience Platformにレプリケートすることなく、[ サポートされているサードパーティのデータウェアハウス ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} から直接オーディエンスを作成および強化できます。 このチュートリアルでは、技術ユーザーがエンタープライズデータウェアハウスを接続し、オーディエンスを作成および強化し、パーソナライズされたマーケティングエクスペリエンス用にアクティブ化するための実践的なガイダンスを提供します。
 
 ## ビジュアルガイド
 
@@ -51,10 +51,10 @@ SecurFinancial は、SecurFinancial のポートフォリオに有効なロー�
 
 - Real-Time CDPまたはJourney OptimizerでプロビジョニングされたAdobe Experience Platform アカウントへのアクセス。
 - システム管理者の権限、または権限を設定する機能。
-- スキーマ、データセット、オーディエンスなど、Adobe Experience Platformの概念に精通している（推奨：Experience Leagueの [Adobe Experience Platform プレイリストの概要 ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} を完了する）。
+- スキーマ、データセット、オーディエンスなど、Adobe Experience Platformの概念に精通している（推奨：Experience Leagueの [Adobe Experience Platform プレイリストの概要 ](https://experienceleague.adobe.com/ja/playlists/experience-platform-introduction?lang=en){target="_blank"} を完了する）。
 - サポートされているエンタープライズデータウェアハウス（Amazon Redshift、Azure Synapse Analytics、Snowflake、Google BigQuery など）へのアクセス。
 - データウェアハウスをクエリするための SQL の基本知識。
 - **サンドボックス環境**：組織のReal-Time CDP インスタンスにサンドボックスを作成して、実稼動データに影響を与えずに安全に実験します。
-- **Data Warehouse接続**：このチュートリアルではSnowflake接続を使用しますが、任意の [ サポートされている Cloud Warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) を使用することもできます。
+- **Data Warehouse接続**：このチュートリアルではSnowflake接続を使用しますが、任意の [ サポートされている Cloud Warehouse](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites) を使用することもできます。
 
 [Data Warehouse接続 ](data-warehouse-connection.md) から始めましょう。
