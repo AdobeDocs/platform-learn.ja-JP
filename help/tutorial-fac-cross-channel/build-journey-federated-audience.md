@@ -6,9 +6,8 @@ description: この視覚的演習では、Journey Optimizer ジャーニーで�
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
-hide: true
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -71,7 +70,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 11. 名のパーソナライゼーションが追加されたので、パーソナライゼーション変数の前に `Hi, ` を追加します。 次に、「**保存**」をクリックします。
 
-    ![journey-email-save](assets/journey-email-save.png)
+   ![journey-email-save](assets/journey-email-save.png)
 
 12. 「**戻る** ボタンを 2 回クリックして、ジャーニーキャンバスに戻ります。 次に、右側の **アクション：メール** メニューで、「**保存**」をクリックします。
 

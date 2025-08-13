@@ -6,9 +6,8 @@ description: この視覚的な演習では、Adobe Experience Platformと Enter
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
-hide: true
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 3%
@@ -19,7 +18,7 @@ ht-degree: 3%
 
 まず、Adobe Experience Platformと Enterprise Data Warehouseの間の接続を設定し、Federated Audience Composition を有効にします。 これにより、レプリケーションを行わずに、サポートされているウェアハウスから直接データに対してクエリを実行できます。 さらに、Data Warehouse テーブルに基づいてスキーマとデータモデルを作成します。
 
-デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増え続けるクラウドウェアハウス接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増え続けるクラウドウェアハウス接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 手順
 
