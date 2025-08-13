@@ -1,21 +1,21 @@
 ---
-title: オーディエンスの作成
-seo-title: Create an audience | Unlock cross-channel insights with Federated Audience Composition
-breadcrumb-title: オーディエンスの作成
+title: フェデレーションされたオーディエンスの作成
+seo-title: Create a federated audience | Unlock cross-channel insights with Federated Audience Composition
+breadcrumb-title: フェデレーションされたオーディエンスの作成
 description: この視覚的な演習では、Adobe Experience Platformと Enterprise Data Warehouseの間の接続を設定して、Federated Audience Composition を有効にします。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 3%
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
-# オーディエンス作成演習
+# Federated Audience の作成
 
 次に、Federated Audience Composition を使用してData Warehouseからオーディエンスを作成する手順について説明します。 オーディエンスは、信用スコアが 650 以上で、現在 SecurFinancial ポートフォリオにローンを持っていない SecurFinancial のお客様で構成されています。
 
@@ -65,6 +65,6 @@ ht-degree: 3%
 >
 > この例では、商品とクレジット情報を使用して、Adobe Experience Platformからコピーを作成せずにSnowflakeのエンタープライズデータに直接アクセスしてオーディエンスを作成しました。 外部システムがクエリを処理すると、関連するメール、現在の製品、名の値のみがダウンストリームのアクティベーション用にオーディエンス定義に引き継がれます。 これは、RTCDPがサポートするすべての宛先に適用されます。
 
-オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
+オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
 federated audience が作成されたので、[S3 アカウントにマッピング ](map-federated-audience-to-s3.md) します。
