@@ -4,9 +4,9 @@ description: はじめに – Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->選択したラーニングパスによっては、Firefly Services API にアクセスできない場合があります。 Firefly Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、&lbrace;ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
+>選択したラーニングパスによっては、Firefly Services API にアクセスできない場合があります。 Firefly Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、{ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
 
 この画像が表示されます。 「**+ プロジェクトに追加**」、「**API**」の順に選択します。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 ![Adobe I/O新規統合 ](./images/api1.png)
 
-「**Creative Cloud**」、「**Firefly - Firefly Services**」の順に選択して、「**次へ**」を選択します。
+「**Adobe Firefly Services**」、「**Firefly - Firefly Services**」の順に選択して、「**次へ**」を選択します。
 
 ![Adobe I/O新規統合 ](./images/api3.png)
 
@@ -65,13 +65,13 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->選択したラーニングパスによっては、Photoshop Services API にアクセスできない場合があります。 Photoshop Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、&lbrace;ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
+>選択したラーニングパスによっては、Photoshop Services API にアクセスできない場合があります。 Photoshop Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、{ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
 >
->「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
+「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
 
 ![Azure ストレージ ](./images/ps2.png)
 
-**Creative Cloud** を選択してから、**Photoshop - Firefly Services** を選択してください。 「**次へ**」を選択します。
+**Adobe Firefly Services** を選択してから、**Photoshop - Firefly Services** を選択してください。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/ps3.png)
 
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 ![Azure ストレージ ](./images/aep1.png)
 
-**Adobe Experience Platform を選択し**&#x200B;**Experience Platform API** を選択します。 「**次へ**」を選択します。
+**Adobe Experience Platform を選択し****Experience Platform API** を選択します。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/aep2.png)
 
