@@ -1,24 +1,24 @@
 ---
-title: ウェアハウスのデータを使用してオーディエンスを強化
-seo-title: Enrich Audiences with Warehouse Data | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: ウェアハウスのデータを使用してオーディエンスを強化
+title: ウェアハウスデータでオーディエンスをエンリッチメント
+seo-title: Enrich Audiences with warehouse data | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: ウェアハウスデータでオーディエンスをエンリッチメント
 description: この演習では、Experience Platform オーディエンスをウェアハウスデータでエンリッチメントします。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 7%
 
 ---
 
-# ウェアハウスのデータを使用してオーディエンスを強化
+# ウェアハウスデータでオーディエンスをエンリッチメント
 
 Federated Audience Composition を使用すると、Enterprise Data Warehouse からフェデレーションされた構成オーディエンスデータを利用して、Adobe Experience Platform（AEP）の既存のオーディエンスを強化できます。 このデータは、Adobe Experience Platform の顧客プロファイルには保存されません。
 
-## フェデレーション構成内のオーディエンスの読み取り
+## フェデレーション作成内のオーディエンスの読み取り
 
 この演習では、Experience Platformのプロファイルサービスに保存されている **SecurFinancial Loan Application Page Visitor** オーディエンスを使用して、フェデレーション コンポジションを開始します。 Snowflakeの連合データを使用して、信用スコアとローンアクティビティに基づいて事前承認を判断します。
 

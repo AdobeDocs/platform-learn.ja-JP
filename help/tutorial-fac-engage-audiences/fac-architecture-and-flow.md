@@ -1,12 +1,13 @@
 ---
 title: Federated Audience Composition の全体的なアーキテクチャとフロー
-seo-title: Federated Audience Composition High-level Architecture & Flow | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Federated Audience Composition の全体的なアーキテクチャとフロー
 description: Federated Audience Composition のアーキテクチャ概要とフローの概要です。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
+source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -27,4 +28,3 @@ Adobe Experience Platformの Federated Audience Composition モジュールで�
 ![fac-architecture](assets/fac-architecture.png)
 
 次に、[Data Warehouse接続 ](data-warehouse-connection.md) の作成に進みます。
-

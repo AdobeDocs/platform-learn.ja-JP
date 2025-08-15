@@ -1,24 +1,24 @@
 ---
-title: Data Warehouse接続
-seo-title: Configure a Data Warehouse connection | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Data Warehouse接続
+title: データウェアハウス接続
+seo-title: Configure a data warehouse connection | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: データウェアハウス接続
 description: この演習では、Adobe Experience Platformと Enterprise Data Warehouseの間の接続を設定して、Federated Audience Composition を有効にします。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 3%
 
 ---
 
-# Data Warehouse接続
+# データウェアハウス接続
 
 まず、Adobe Experience Platformと Enterprise Data Warehouse間の接続を設定します。 Data Warehouseでのデータの位置に基づいてスキーマとデータモデルを使用し、クエリの作成をサポートします。
 
-デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増え続けるクラウドウェアハウス接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増加する Data Warehouse 接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 手順
 

@@ -1,24 +1,24 @@
 ---
 title: Edge Networkを使用して「その時点の」パーソナライゼーションを提供する
-seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Edge Networkを使用して「その時点の」パーソナライゼーションを提供する
 description: この演習では、フェデレーション オーディエンスがEdge上で評価され、即時の「その時点の」リターゲティングが可能になります。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-drive-in-the-moment-personalization.jpg
 exl-id: 20bfafb1-1d1b-48d8-84eb-97d4c9e03b76
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
 # Edge Networkを使用して「その時点の」パーソナライゼーションを提供する
 
-Federated Audience Composition を使用すると、Enterprise Data Warehouse からフェデレーションされた構成オーディエンスデータを利用して、Adobe Experience Platform（AEP）の既存のオーディエンスを強化できます。 このデータはAdobe Experience Platformには保持されません。
+Federated Audience Composition を使用すると、Enterprise Data Warehouse からフェデレーションされた構成オーディエンスデータを利用して、Adobe Experience Platform（AEP）の既存のオーディエンスを強化できます。 このデータはAdobe Experience Platformに保持されませんが、[ イベント転送 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} 機能を使用して、このデータをデータウェアハウスに直接送信できます。
 
-この視覚的演習では、クレジットスコアとローンアクティビティでクエリされたフェデレーテッド オーディエンスを使用して、ローン申請 web ページ訪問者の行動オーディエンスを強化します。
+この演習では、クレジットスコアおよびローンアクティビティでクエリされたフェデレーテッド オーディエンスを使用して、ローン申請 web ページ訪問者の行動オーディエンスを強化します。
 
 Edgeでこのオーディエンスを評価すると、事前に承認されたローン申し込みページの訪問者を、サイト上のパーソナライズされたオファーで即座にリターゲティングします。
 

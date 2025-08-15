@@ -1,22 +1,22 @@
 ---
 title: フェデレーションされたオーディエンスの作成
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: フェデレーションされたオーディエンスの作成
-description: この演習では、Adobe Experience Platformと Enterprise Data Warehouseの間の接続を設定して、Federated Audience Composition を有効にします。
+description: この演習では、Federated Audience Composition を使用して、Snowflake Data Warehouse からオーディエンスを作成します。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
 
 # Federated Audience の作成
 
-次に、Federated Audience Composition を使用してData Warehouseからオーディエンスを作成する手順について説明します。 オーディエンスは、信用スコアが 650 以上で、現在 SecurFinancial ポートフォリオにローンを持っていない SecurFinancial のお客様で構成されています。
+次に、Federated Audience Composition を使用してSnowflake Data Warehouse からオーディエンスを作成する手順について説明します。 オーディエンスは、信用スコアが 650 以上で、現在 SecurFinancial ポートフォリオにローンを持っていない SecurFinancial のお客様で構成されています。
 
 ## 手順
 
@@ -64,6 +64,6 @@ ht-degree: 1%
 >
 > この例では、商品とクレジット情報を使用して、Adobe Experience Platformからコピーを作成せずにSnowflakeのエンタープライズデータに直接アクセスしてオーディエンスを作成しました。 外部システムがクエリを処理すると、関連するメール、現在の製品、名の値のみがダウンストリームのアクティベーション用にオーディエンス定義に引き継がれます。 これは、RTCDPがサポートするすべての宛先に適用されます。
 
-オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
+オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
 federated audience が作成されたので、[S3 アカウントにマッピング ](map-federated-audience-to-s3.md) します。

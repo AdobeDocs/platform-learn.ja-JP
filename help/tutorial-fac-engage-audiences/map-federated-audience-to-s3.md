@@ -1,20 +1,20 @@
 ---
-title: フェデレーションされたオーディエンスの S3 へのマッピング
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: フェデレーションされたオーディエンスの S3 へのマッピング
+title: Federated Audience の S3 の宛先へのマッピング
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Federated Audience の S3 へのマッピング
 description: この演習では、パーソナライズされたオフラインエクスペリエンスをサポートするために、フェデレーテッド オーディエンスをダウンストリーム Real-Time CDPの宛先にマッピングします。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Federated Audience を S3 にマッピングして、オーディエンス属性を活用してエンリッチメントを行います
+# Federated Audience を S3 の宛先にマッピングして、オーディエンス属性を活用してエンリッチメントを行います
 
 Data Warehouse でオーディエンス属性を活用すると、RTCDPの宛先を使用したダウンストリームアクティベーションワークフローでのオーディエンスのエクスペリエンスを強化できます。 SecurFinancial の場合、これらのフェデレーション属性を使用して、顧客オーディエンスのパーソナライゼーションエクスペリエンスをオフラインで強化できます。 以下では、federated audience が事前設定済みのAmazon S3 の宛先にマッピングされます。
 
@@ -50,6 +50,6 @@ Data Warehouse でオーディエンス属性を活用すると、RTCDPの宛先
 
 >[**!SUMMARY**]
 >
-> オーディエンスを正常に作成し、S3 の宛先に対して簡単にアクティブ化しました。 この使いやすいインターフェイスを使用することで、マーケティングチームは、基になるデータを移動することなく、オーディエンスをすばやく作成してアクティブ化できます。
+> オーディエンスを正常に作成し、S3 の宛先に対して簡単にアクティブ化しました。 他のソリューションでは、このオーディエンスを受け取り、すぐに使用できます。 この使いやすいインターフェイスを使用することで、マーケティングチームは、基になるデータを移動することなく、オーディエンスをすばやく作成してアクティブ化できます。 このアプローチを採用するお客様は、約 1 か月で初めて使用を開始しました。
 
 次に、[ ジャーニーの構築 ](build-journey-federated-audience.md) を行います。
