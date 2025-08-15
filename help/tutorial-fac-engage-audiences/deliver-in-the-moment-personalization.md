@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Edge Networkを使用して「その時点の」パーソナライゼーションを提供する
 
-Federated Audience Composition を使用すると、Enterprise Data Warehouse からフェデレーションされた構成オーディエンスデータを利用して、Adobe Experience Platform（AEP）の既存のオーディエンスを強化できます。 このデータはAdobe Experience Platformに保持されませんが、[ イベント転送 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} 機能を使用して、このデータをデータウェアハウスに直接送信できます。
+Federated Audience Composition を使用すると、Enterprise Data Warehouse からフェデレーションされた構成オーディエンスデータを利用して、Adobe Experience Platform（AEP）の既存のオーディエンスを強化できます。 このデータはAdobe Experience Platformに保持されませんが、[ イベント転送 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} 機能を使用して、このデータをデータウェアハウスに直接送信できます。
 
 この演習では、クレジットスコアおよびローンアクティビティでクエリされたフェデレーテッド オーディエンスを使用して、ローン申請 web ページ訪問者の行動オーディエンスを強化します。
 
