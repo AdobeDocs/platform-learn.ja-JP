@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '478'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 まず、Adobe Experience Platformと Enterprise Data Warehouse間の接続を設定します。 Data Warehouseでのデータの位置に基づいてスキーマとデータモデルを使用し、クエリの作成をサポートします。
 
-デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増加する Data Warehouse 接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増加する Data Warehouse 接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 手順
 
@@ -78,4 +78,4 @@ Federated Audience Composition でスキーマを作成するには、次の手�
 
 ![preview-data-model](assets/preview-data-model.png)
 
-次に、[ 作成とオーディエンス ](create-a-federated-audience.md) の準備を行います。
+次に、[Federated Audience の作成 ](create-a-federated-audience.md) を行う準備が整いました。

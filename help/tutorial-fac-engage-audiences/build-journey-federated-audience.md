@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 11. 名のパーソナライゼーションが追加されたので、パーソナライゼーション変数の前に `Hi, ` を追加します。 次に、「**保存**」をクリックします。
 
-    ![journey-email-save](assets/journey-email-save.png)
+   ![journey-email-save](assets/journey-email-save.png)
 
 12. 「**戻る** ボタンを 2 回クリックして、ジャーニーキャンバスに戻ります。 次に、右側の **アクション：メール** メニューで、「**保存**」をクリックします。
 
@@ -78,4 +78,4 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 AJOで、federated audience 属性と federated enrichment 属性を使用してジャーニーを作成しました。
 
-次に、Data Warehouse のフェデレーティッドデータを使用して、Experience Platformで [ 既存のオーディエンスを強化 ](federated-audience-composition.md) する方法を見ていきます。
+次に、Data Warehouse のデータを使用して、Experience Platformで [ オーディエンスを強化 ](federated-audience-composition.md) する方法を見ていきます。
