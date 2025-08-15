@@ -70,7 +70,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 11. 名のパーソナライゼーションが追加されたので、パーソナライゼーション変数の前に `Hi, ` を追加します。 次に、「**保存**」をクリックします。
 
-   ![journey-email-save](assets/journey-email-save.png)
+    ![journey-email-save](assets/journey-email-save.png)
 
 12. 「**戻る** ボタンを 2 回クリックして、ジャーニーキャンバスに戻ります。 次に、右側の **アクション：メール** メニューで、「**保存**」をクリックします。
 
