@@ -35,7 +35,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->選択したラーニングパスによっては、Firefly Services API にアクセスできない場合があります。 Firefly Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、{ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
+>選択したラーニングパスによっては、Firefly Services API にアクセスできない場合があります。 Firefly Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、&lbrace;ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
 
 この画像が表示されます。 「**+ プロジェクトに追加**」、「**API**」の順に選択します。
 
@@ -61,9 +61,9 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->選択したラーニングパスによっては、Photoshop Services API にアクセスできない場合があります。 Photoshop Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、{ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
+>選択したラーニングパスによっては、Photoshop Services API にアクセスできない場合があります。 Photoshop Services API へのアクセスは、ラーニングパス **Firefly**、**Workfront Fusion**、&lbrace;ALL **を使用している場合、または** 対面ライブワークショップ **に参加している場合のみ** 利用できます。 これらの学習パスに参加していない場合は、この手順をスキップできます。
 >
-「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
+>「**+ プロジェクトに追加」を選択し** 「**API**」を選択します。
 
 ![Azure ストレージ ](./images/ps2.png)
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 
 ![Azure ストレージ ](./images/aep1.png)
 
-**Adobe Experience Platform を選択し****Experience Platform API** を選択します。 「**次へ**」を選択します。
+**Adobe Experience Platform を選択し**&#x200B;**Experience Platform API** を選択します。 「**次へ**」を選択します。
 
 ![Azure ストレージ ](./images/aep2.png)
 
