@@ -4,10 +4,10 @@ description: Workfrontの計画の概要
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 2%
+source-wordcount: '1234'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +85,7 @@ Workfrontで、をクリックしてメニューを開き、「**計画**」を�
 
 ![Workfront計画 ](./images/wfpl10.png)
 
-新しく作成されたレコードタイプにはフィールドがまだ定義されていないので、空のテーブルビューが表示されます。
+新しく作成されたレコードタイプではビジネスユニットのレコードがまだ定義されていないので、空のテーブル表示が表示されます。
 
 ![Workfront計画 ](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Workfrontで、をクリックしてメニューを開き、「**計画**」を�
 
 ![Workfront計画 ](./images/wfpl17.png)
 
-新しいレコードタイプを作成し、フィールドを削除および作成しました。 左上隅の矢印をクリックして、Workspaceの概要画面に戻ります。
+最初のレコードの 3 ドット **...** をクリックし、「**表示**」を選択します。
+
+![Workfront計画 ](./images/wfpla1.png)
+
+**Name** を `Consumer Services` に設定します。
+
+**説明** を `Handles residential offerings like mobile plans, internet packages, and customer support.` に設定します。
+
+自分に **ビジネスユニットリード** を設定します。
+
+完了したら、矢印をクリックして前の画面に戻ります。
+
+![Workfront計画 ](./images/wfpla2.png)
+
+2 番目のレコードの 3 ドット **...** をクリックし、「**表示**」を選択します。
+
+![Workfront計画 ](./images/wfpla3.png)
+
+**Name** を `Enterprise & Business Solutions` に設定します。
+
+**説明** を `Provides connectivity, cloud, and managed services to corporate clients and government entities.` に設定します。
+
+自分に **ビジネスユニットリード** を設定します。
+
+完了したら、矢印をクリックして前の画面に戻ります。
+
+![Workfront計画 ](./images/wfpla4.png)
+
+3 番目のレコードの 3 ドット **...** をクリックし、「**表示**」を選択します。
+
+![Workfront計画 ](./images/wfpla5.png)
+
+**Name** を `Sales & Marketing` に設定します。
+
+**説明** を `Drives customer acquisition, brand strategy, advertising, and market segmentation.` に設定します。
+
+自分に **ビジネスユニットリード** を設定します。
+
+完了したら、矢印をクリックして前の画面に戻ります。
+
+![Workfront計画 ](./images/wfpla6.png)
+
+新しいレコードタイプを作成し、フィールドを削除および作成し、3 つのビジネスユニットを作成しました。 左上隅の矢印をクリックして、Workspaceの概要画面に戻ります。
 
 ![Workfront計画 ](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Workfrontで、をクリックしてメニューを開き、「**計画**」を�
 
 ![Workfront計画 ](./images/wfpl20.png)
 
-**+** アイコンをクリックして、新しいフィールドを作成します。 **新しい接続** を選択してから、「**ペルソナ** を選択します。
+**+** アイコンをクリックして、新しいフィールドを作成します。 **新しい接続** を選択してから、**ビジネスユニット** を選択します。
 
 ![Workfront計画 ](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ Campaigns の概要画面で、「。..**」の 3 つのドット** クリック
 
 ![Workfront計画 ](./images/wfpl25.png)
 
-名前を `Campaign Request Form` に変更します。 「**保存**」をクリックします。
+名前を `Campaign Request Form` に変更します。 「**作成**」をクリックします。
 
 ![Workfront計画 ](./images/wfpl26.png)
 
@@ -187,6 +229,8 @@ Campaigns の概要画面で、「。..**」の 3 つのドット** クリック
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
 
+その他のフィールドを必要に応じて入力します。
+
 **リクエストを送信** をクリックします。
 
 ![Workfront計画 ](./images/wfpl33.png)
@@ -195,7 +239,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront計画 ](./images/wfpl34.png)
 
-すると、新しく作成されたキャンペーンが概要に表示されます。
+新しく作成したキャンペーンが概要に表示されます。
 
 ![Workfront計画 ](./images/wfpl35.png)
 
@@ -297,19 +341,15 @@ Campaigns の概要画面で、「。..**」の 3 つのドットをクリック
 
 ![Workfront計画 ](./images/wfpl47.png)
 
-Workfrontでプログラムを確認するには、メニューを開いて **ポートフォリオ** をクリックします。
+Workfrontでプログラムを確認するには、右にスクロールして「**接続されたプログラム**」列のプログラムをクリックします。
 
 ![Workfront計画 ](./images/wfpl48.png)
 
-`--aepUserLdap-- - Marketing` という名前のポートフォリオを開きます。
-
-![Workfront計画 ](./images/wfpl49.png)
-
-**プログラム** に移動すると、設定した自動化によって作成されたプログラムが表示されます。
+設定した自動処理で作成されたプログラムが表示されます。
 
 ![Workfront計画 ](./images/wfpl50.png)
 
-次の手順：[1.2.2 未定 ](./ex1.md){target="_blank"}
+次の手順：[ 概要とメリット ](./summary.md){target="_blank"}
 
 [Workfront計画の概要 ](./wfplanning.md){target="_blank"} に戻る
 
