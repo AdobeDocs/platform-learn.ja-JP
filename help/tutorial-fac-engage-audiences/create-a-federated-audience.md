@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 1%
@@ -60,10 +60,10 @@ ht-degree: 1%
 
 10. 「**保存**」をクリックしてから「**開始**」をクリックして、コンポジションのクエリを実行します。
 
->[**概要**]
->
-> この例では、商品とクレジット情報を使用して、Adobe Experience Platformからコピーを作成せずにSnowflakeのエンタープライズデータに直接アクセスしてオーディエンスを作成しました。 外部システムがクエリを処理すると、関連するメール、現在の製品、名の値のみがダウンストリームのアクティベーション用にオーディエンス定義に引き継がれます。 これは、RTCDPがサポートするすべての宛先に適用されます。
+### 概要
 
-オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
+この例では、商品とクレジット情報を使用して、Adobe Experience Platformからコピーを作成せずにSnowflakeのエンタープライズデータに直接アクセスしてオーディエンスを作成しました。 外部システムがクエリを処理すると、関連するメール、現在の製品、名の値のみがダウンストリームのアクティベーション用にオーディエンス定義に引き継がれます。 これは、RTCDPがサポートするすべての宛先に適用されます。
+
+オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
 これで、federated audience が作成されたので、[Experience Platformの S3 の宛先にマッピング ](map-federated-audience-to-s3.md) します。
