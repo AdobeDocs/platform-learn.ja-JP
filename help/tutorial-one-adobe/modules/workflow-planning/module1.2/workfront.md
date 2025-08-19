@@ -4,10 +4,10 @@ description: Adobe Workfrontを使用したワークフロー管理
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,17 @@ ht-degree: 2%
 
 ## 学習内容
 
-- 様々な方法でAdobe Workfrontを使用する方法を説明します。
+この実習を修了すると、次の項目について理解できるようになります。
+
+- ポートフォリオ、プログラム、プロジェクト、タスクを含む、Workfront オブジェクトの階層について
+- マーケティングキャンペーン用にカスタマイズされたテンプレートを使用して新しいプロジェクトを作成します。
+- 役割および空き時間別にリソースにタスクを割り当てます。
+- ドキュメントをアップロードして承認をリクエスト
+- 統合機能が組み込まれたAEM Assets CS への承認済みドキュメントの送信
 
 ## 前提条件
 
-- WorkfrontおよびWorkfront Fusion へのアクセス
+- Workfront standard/planner ライセンスが必要なAdobe Workfrontにアクセスします。
 
 ## 演習
 
