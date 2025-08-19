@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+exl-id: 2b22fc2b-ce95-4860-8ba6-71163bacf5e7
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 2%
+source-wordcount: '126'
+ht-degree: 1%
 
 ---
 
@@ -25,6 +26,14 @@ ht-degree: 2%
 [1.5.1 Frame.io の概要 ](./ex1.md){target="_blank"}
 
 この演習では、Frame.io を探索し、その機能を理解します。
+
+[1.5.2 Frame.io を使用した承認 ](./ex2.md){target="_blank"}
+
+この演習では、Frame.io を使用した標準的な承認フローを実行します。
+
+[1.5.3 Frame.io とPremiere Pro](./ex3.md){target="_blank"}
+
+この演習では、Frame.io とAdobe Premiere Proの統合について説明します。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 

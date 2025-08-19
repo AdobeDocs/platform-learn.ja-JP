@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 6%
@@ -68,7 +68,7 @@ ht-degree: 6%
 
 ![GSPeM](./images/gsemail9.png)
 
-その後、複雑さのスコアを最適化するために何ができるかについて、より詳細を確認できます。
+その後、準拠スコアを最適化するために何ができるかについて詳しく確認できます。
 
 ![GSPeM](./images/gsemail10.png)
 

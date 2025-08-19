@@ -4,7 +4,7 @@ description: Workfrontでのプルーフ
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -162,7 +162,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfpwlb2.png)
 
-**2&rbrace;Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0&rbrace;Designer&rbrace; のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
+**2}Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0}Designer} のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
 
 ![WF](./images/wfpwlb3.png)
 
@@ -197,7 +197,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 このタスクの一環として、新しい画像を作成し、Workfrontにドキュメントとしてアップロードする必要があります。 次に、Adobe Expressを使用して自分でそのアセットを作成します。
 
-## Adobe Firely Services1.2.2.5Adobe Expressを使用したアセットの作成
+## Adobe Firefly Services1.2.2.5Adobe Expressを使用したアセットの作成
 
 [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"} に移動します。 プロンプト `a neon rabbit running very fast through space` を入力し、「**生成**」をクリックします。
 

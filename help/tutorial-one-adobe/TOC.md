@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1298'
 ht-degree: 3%
 
 ---
@@ -78,6 +78,8 @@ ht-degree: 3%
    + 1.5 Frame.io でワークフローを効率化 {#crpr5}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
       + [1.5.1 Frame.io の概要](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+      + [1.5.2 Frame.io での承認](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
+      + [1.5.3 Frame.io とPremiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + アセット管理 {#assetmgmt}
@@ -90,6 +92,10 @@ ht-degree: 3%
       + [1.1.5 高度なカスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 AEM Edge Delivery Services MarTech プラグイン](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
+   + 1.2 Adobe Experience Manager Assets {#assetm2}
+      + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
+      + [1.2.1 AEM Assetsの概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
+      + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + 配信とアクティブ化 {#activation}
    + データ収集 {#dc}

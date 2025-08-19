@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
+exl-id: 09e8fdfd-e02f-43ff-a4f4-fa92eb3f01a3
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 1%
+source-wordcount: '466'
+ht-degree: 0%
 
 ---
 
@@ -114,37 +115,9 @@ Adobe アカウントのメールアドレスを入力し、「**やってみま
 
 ![Frame.io](./images/frameio21.png)
 
-## 1.5.1.3 Adobe Premiere Pro Betaのセットアップ
-
-「はじめに」モジュールの一部として、Adobe Premiere Pro Betaが既にインストールされています。 Frame.io をAdobe Premiere Pro Betaと組み合わせて使用するには、この統合用に開発されたプラグインを使用できます。
-
-Creative Cloud アプリを開き、`frame.io` を検索します。
-
-![Frame.io](./images/frameio23.png)
-
-検索結果を下にスクロールして、プラグイン **Frame.io V4 Comments** を見つけます。 クリックします。
-
-![Frame.io](./images/frameio24.png)
-
-この画像が表示されます。 **インストール** をクリックします。
-
-![Frame.io](./images/frameio25.png)
-
-Adobe Premiere Pro Betaが開いている場合は、まず **閉じる** 必要があります。
-
-![Frame.io](./images/frameio26.png)
-
-「**OK**」をクリックします。プラグインをインストールしています。
-
-![Frame.io](./images/frameio27.png)
-
-プラグインをインストールしたら、コンピューターでAdobe Premiere Pro Betaを開きます。
-
-![Frame.io](./images/frameio22.png)
-
 ## 次の手順
 
-[-](./ex1.md){target="_blank"} に移動
+[1.5.2 Frame.io を使用した承認 ](./ex2.md){target="_blank"} に移動
 
 [Frame.io によるワークフローの効率化 ](./frameio.md){target="_blank"} に戻る
 
