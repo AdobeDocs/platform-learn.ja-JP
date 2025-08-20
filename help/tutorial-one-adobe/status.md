@@ -3,9 +3,9 @@ title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '432'
 ht-degree: 12%
 
 ---
@@ -36,13 +36,15 @@ ht-degree: 12%
 | [1.3GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | ○ | - |
 | [1.4 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | ○ | - |
 | [1.5 Frame.io でワークフローを効率化 ](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 2025/08/02 | ○ | - |
+| [1.6 GenStudio for Performance Marketing – 拡張性 ](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 20/08/2025 | - | - |
 
 
 ## 3.資産管理
 
 | 名前 | 最終更新日 | 作業 100% | 備考 |
 | ---------------------- | ------------ | ------------ |------------ |
-| [2.1 Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | ○ | - |
+| [1.1 Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | ○ | - |
+| [1.2Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | ○ | - |
 
 ## 4.配信とアクティベーション
 

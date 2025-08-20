@@ -3,9 +3,9 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1207'
 ht-degree: 2%
 
 ---
@@ -90,11 +90,19 @@ ht-degree: 2%
 
 このモジュールでは、Adobe Frame.io をAdobe Premiere Proと組み合わせて使用し、画像やビデオの共同作業やレビューを行います。
 
+[1.6 GenStudio for Performance Marketing – 拡張性 ](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+
+このモジュールでは、Adobe IO とApp Builderを使用して、GenStudio for Performance Marketingの機能を拡張するカスタムアプリケーションを作成します。
+
 ### 3.資産管理
 
 [1.1 Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
-この基本モジュールでは、Adobe Experience Manager Cloud Service プログラム、サイトおよびAssets リポジトリを設定します。
+このモジュールでは、Adobe Experience Manager Cloud Service プログラム、サイトおよびAssets リポジトリを設定します。
+
+[1.2Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+
+このモジュールでは、AEM Assetsを探索します。
 
 ### 4.配信とアクティベーション
 
