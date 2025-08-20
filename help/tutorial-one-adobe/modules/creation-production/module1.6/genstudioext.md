@@ -1,14 +1,15 @@
 ---
-title: GenStudio for Performance Marketing
-description: GenStudio for Performance Marketing
+title: GenStudio for Performance Marketing – 拡張性
+description: GenStudio for Performance Marketing – 拡張性
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 3%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -36,13 +37,13 @@ GenStudio for Performance Marketing アドオンは、組織のコンテンツ�
 
 この演習では、Amazon AWS S3 バケットと IAM ユーザーを作成します。
 
-[1.6.3 外部 DAM アプリの作成 ](./ex3.md){target="_blank"}
+[1.6.3 外部 DAM アプリの作成とデプロイ ](./ex3.md){target="_blank"}
 
 この演習では、事前定義済みテンプレートを使用して外部 DAM アプリを作成します。
 
-[1.6.4 コードをデプロイし、アプリを非公開で公開する ](./ex4.md){target="_blank"}
+[1.6.4 アプリを非公開で公開する ](./ex4.md){target="_blank"}
 
-この演習では、コードをAdobe IO およびApp Builderにデプロイし、アプリを非公開で公開します。
+この演習では、アプリを非公開で公開します。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 

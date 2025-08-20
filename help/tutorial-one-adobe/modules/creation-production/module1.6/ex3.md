@@ -5,14 +5,15 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 1%
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
-# 1.6.3 外部 DAM アプリケーションの作成
+# 1.6.3 外部 DAM アプリケーションの作成とデプロイ
 
 ## 1.6.3.1 サンプルアプリファイルのダウンロード
 
@@ -131,15 +132,15 @@ AWS_REGION=
 AWS_BUCKET_NAME=
 ```
 
-フィールド **AWS_ACCESS_KEY_ID** および **AWS_SECRET_ACCESS_KEY** は、前の演習で IAM ユーザーを作成した後で使用できます。 あなたはそれらを書き留めるように頼まれました、あなたは今、値をコピーすることができます。
+フィールド **`AWS_ACCESS_KEY_ID`** と **`AWS_SECRET_ACCESS_KEY`** は、前の演習で IAM ユーザーを作成した後で使用できます。 あなたはそれらを書き留めるように頼まれました、あなたは今、値をコピーすることができます。
 
 ![ETL](./images/cred1.png)
 
-フィールド **0&rbrace;AWS_REGION&rbrace; は、AWS S3 ホームビュー（バケット名の横）から取得できます。**&#x200B;この例では、領域は **us-west-2** です。
+このフィールド **`AWS_REGION`** は、AWS S3 ホームビューの、バケット名の横から取得できます。 この例では、領域は **us-west-2** です。
 
 ![ETL](./images/bucket2.png)
 
-フィールド **AWS_BUCKET_NAME** は `--aepUserLdap---gspem-dam` にしてください。
+フィールド **`AWS_BUCKET_NAME`** は `--aepUserLdap---gspem-dam` にする必要があります。
 
 この情報を使用すると、これらの各変数の値を更新できます。
 
@@ -169,9 +170,53 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 
 ![ 内線 DAM](./images/extdam24.png)
 
+これで、アプリが実行中であることを確認しました。 次の手順では、デプロイします。
+
+まず、**Ctrl+C** を押して、アプリの実行を停止します。 次に、コマンド `aio app deploy` を入力します。 このコマンドは、コードをAdobe IO にデプロイします。
+
+その結果、デプロイされたアプリケーションにアクセスするための同様の URL が届きます。
+
+`https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+![ 内線 DAM](./images/extdam27.png)
+
+テストの目的で、上記の URL に `?ext=` をプレフィックスとして追加することで、その URL をクエリ文字列パラメーターとして使用できるようになりました。 その結果、次のクエリ文字列パラメーターが得られます。
+
+`?ext=https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+[https://experience.adobe.com/genstudio/create](https://experience.adobe.com/genstudio/create) に移動します。
+
+![ 内線 DAM](./images/extdam25.png)
+
+次に、クエリ文字列パラメーターを **#** の直前に追加します。 新しい URL は次のようになります。
+
+`https://experience.adobe.com/?ext=https://133309-201burgundyguan.adobeio-static.net/index.html#/@experienceplatform/genstudio/create`
+
+ページは通常どおり読み込まれます。 **バナー** をクリックして、新しいバナーの作成を開始します。
+
+![ 内線 DAM](./images/extdam26.png)
+
+テンプレートを選択し、「**使用**」をクリックします。
+
+![ 内線 DAM](./images/extdam28.png)
+
+**コンテンツから選択** をクリックします。
+
+![ 内線 DAM](./images/extdam29.png)
+
+すると、ドロップダウンリストから外部 DAM を選択できるようになります。
+
+![ 内線 DAM](./images/extdam30.png)
+
+ローカルマシンのコードに変更を加える場合は、アプリを再デプロイする必要があります。 再デプロイする場合は、次のターミナルコマンドを使用します。
+
+`aio app deploy --force-build --force-deploy`
+
+これで、アプリを公開する準備が整いました。
+
 ## 次の手順
 
-[ コードをデプロイし、アプリを非公開で公開する ](./ex4.md){target="_blank"} に移動します。
+[ アプリを非公開で公開する ](./ex4.md){target="_blank"} に移動します。
 
 [GenStudio for Performance Marketing – 拡張機能 ](./genstudioext.md){target="_blank"} に戻る
 

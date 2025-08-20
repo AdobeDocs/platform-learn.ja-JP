@@ -1,18 +1,19 @@
 ---
-title: GenStudio for Performance Marketingの概要と利点
-description: GenStudio for Performance Marketingの概要と利点
+title: GenStudio for Performance Marketingの概要とメリット – 拡張性
+description: GenStudio for Performance Marketingの概要とメリット – 拡張性
 kt: 5342
 doc-type: tutorial
-source-git-commit: 52234e7b3b6743db79dec570b1a1f2d3ac4cf1ab
+exl-id: f5b9f7bf-ea95-410f-a2ae-e244641e2412
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '50'
 ht-degree: 4%
 
 ---
 
 # 概要とメリット
 
-Adobe GenStudio for Performance Marketingの学習に時間を費やしていただきありがとうございます。
+Adobe GenStudio for Performance Marketing – 拡張性の学習に時間を費やしていただき、ありがとうございます。
 
 
 ## 次の手順
