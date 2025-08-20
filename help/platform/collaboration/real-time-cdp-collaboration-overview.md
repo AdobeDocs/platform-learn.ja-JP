@@ -21,9 +21,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
 
 以下に、Real-Time CDP Collaborationのセットアップ、使用、および価値の取得方法を学ぶのに役立つビデオやその他のリソースを示します。 このページおよびサイトには追加のアセットが追加されますので、頻繁に確認してください。 お疲れ様でした。
 
-詳しくは、Real-Time CDP Collaboration[ ドキュメント ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"} を参照してください。
+詳しくは、Real-Time CDP Collaboration[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/home){target="_blank"} を参照してください。
 
-[![ExL LIVE 2025 年 4 月 10 日（Pt）](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 2025 年 4 月 10 日（Pt）](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## はじめに
 
