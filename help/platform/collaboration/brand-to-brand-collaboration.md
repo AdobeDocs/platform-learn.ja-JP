@@ -20,4 +20,4 @@ ht-degree: 0%
 
 ブランド間コラボレーションでサポートされるユースケースと、これらのワークフローをサポートするために導入された特定の機能について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470937/?learn=on&enablevpops&captions=jpn)
