@@ -135,7 +135,7 @@ AWS_BUCKET_NAME=
 
 ![ETL](./images/cred1.png)
 
-フィールド **0}AWS_REGION} は、AWS S3 ホームビュー（バケット名の横）から取得できます。**&#x200B;この例では、領域は **us-west-2** です。
+フィールド **0&rbrace;AWS_REGION&rbrace; は、AWS S3 ホームビュー（バケット名の横）から取得できます。**&#x200B;この例では、領域は **us-west-2** です。
 
 ![ETL](./images/bucket2.png)
 
