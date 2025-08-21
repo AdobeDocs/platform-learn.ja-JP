@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 6%
+source-wordcount: '502'
+ht-degree: 7%
 
 ---
 
@@ -139,19 +140,39 @@ AWS リソースへのアクセスは、Amazon Identity and Access Management �
 
 ![ETL](./images/bucket4.png)
 
-CitiSignal 画像ファイルは [ こちら ](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"} からダウンロードできます。
+CitiSignal 画像ファイルは [ こちら ](./images/package.zip){target="_blank"} からダウンロードできます。
 
 ファイルをデスクトップに書き出します。
 
 ![ETL](./images/bucket5.png)
 
-そのフォルダーに 2 つの画像ファイルを取り込み、S3 バケットのアップロードウィンドウにドロップします。 **アップロード** をクリックします。
+**フォルダーを追加** をクリックします。
 
 ![ETL](./images/bucket6.png)
 
-この画像が表示されます。 これで、S3 バケット、画像ファイルおよび IAM ユーザーを外部 DAM アプリで使用する準備が整いました。
+ダウンロードフォルダー **package** からフォルダー **assets** を選択します。 **アップロード** をクリックします。
 
 ![ETL](./images/bucket7.png)
+
+この画像が表示されます。 もう一度 **フォルダーを追加** をクリックします。
+
+![ETL](./images/bucket8.png)
+
+ダウンロードフォルダー **package** から、フォルダー **サムネール** を選択します。 **アップロード** をクリックします。
+
+![ETL](./images/bucket9.png)
+
+この画像が表示されます。 **アップロード** をクリックします。
+
+![ETL](./images/bucket10.png)
+
+アップロードが完了しました。 「**閉じる**」をクリックします。
+
+![ETL](./images/bucket11.png)
+
+これで、S3 バケットにこのフォルダー構造が作成されました。
+
+![ETL](./images/bucket12.png)
 
 ## 次の手順
 

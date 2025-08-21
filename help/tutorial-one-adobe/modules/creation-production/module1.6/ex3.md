@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 0%
+source-wordcount: '877'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 1.6.3.1 サンプルアプリファイルのダウンロード
 
-[https://github.com/adobe/genstudio-extensibility-examples](https://github.com/adobe/genstudio-extensibility-examples) に移動します。 「**コード**」をクリックし、「**ZIP をダウンロード**」を選択します。
+[https://github.com/woutervangeluwe/genstudio-external-dam-app](https://github.com/woutervangeluwe/genstudio-external-dam-app) に移動します。 「**コード**」をクリックし、「**ZIP をダウンロード**」を選択します。
 
 ![ 内線 DAM](./images/extdam1.png)
 
@@ -25,21 +25,9 @@ zip ファイルをデスクトップに解凍します。
 
 ![ 内線 DAM](./images/extdam2.png)
 
-フォルダー **genstudio-extensibility-examples-main** を開きます。 複数のサンプルアプリが表示されます。 この演習で関心があるのは **genstudio-external-dam-app** です。
-
-そのディレクトリをコピーしてデスクトップに貼り付けます。
-
-![ 内線 DAM](./images/extdam4.png)
-
-これで、デスクトップに次の機能が搭載されました。
-
-![ 内線 DAM](./images/extdam3.png)
-
-次の演習では、**genstudio-external-dam-app** フォルダーのみを使用します。
-
 ## 1.6.3.2 Adobe Developer コマンドラインインターフェイスの設定
 
-**genstudio-external-dam-app** フォルダーを右クリックし、「**フォルダーにターミナルを新規作成**」を選択します。
+**genstudio-external-dam-app-main** フォルダーを右クリックし、「**フォルダーに新しいターミナル**」を選択します。
 
 ![ 内線 DAM](./images/extdam5.png)
 
@@ -75,7 +63,7 @@ zip ファイルをデスクトップに解凍します。
 
 >[!NOTE]
 >
->ファイル名と一致するようにファイル名を変更する必要があります。
+>上記のコマンドでファイルの名前をファイル名と一致するように変更する必要があります。
 
 コマンドが実行されると、外部 DAM アプリが、以前に作成したApp Builderを使用してAdobe I/O プロジェクトに接続されるようになります。
 
@@ -101,7 +89,7 @@ Visual Studio Code を開きます。 **開く…** をクリックしてフォ�
 
 ![ 内線 DAM](./images/extdam15.png)
 
-前にダウンロードしたアプリが含まれているフォルダー **genstudio-external-dam-app** を選択します。
+前にダウンロードしたアプリを含んだフォルダー **genstudio-external-dam-app-main** を選択します。 「**開く**」をクリックします。
 
 ![ 内線 DAM](./images/extdam16.png)
 
@@ -113,17 +101,7 @@ Visual Studio Code を開きます。 **開く…** をクリックしてフォ�
 
 ![ 内線 DAM](./images/extdam18.png)
 
-ここで、フォルダーのルートに 2 つの新しいファイルを作成する必要があります。
-
-- `.env.dev`。**新規ファイル** ボタンをクリックし、ファイル名の `.env.dev` を入力します。
-
-![ 内線 DAM](./images/extdam19.png)
-
-- `.env.prod`。  **新規ファイル** ボタンをクリックし、ファイル名の `.env.prod` を入力します。
-
-![ 内線 DAM](./images/extdam20.png)
-
-これらのファイルには、以前に作成したAWS S3 バケットに接続するために必要な資格情報が含まれます。
+外部 DAM アプリが、以前作成したAWS S3 バケットに接続できるように、次の詳細を **.env** ファイルに追加する必要があります。
 
 ```
 AWS_ACCESS_KEY_ID=
@@ -155,14 +133,21 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 
 ![ 内線 DAM](./images/extdam21.png)
 
-
-![ 内線 DAM](./images/extdam22.png)
-
 次に、ターミナルウィンドウに戻ります。 次のコマンドを実行します。
 
-`export $(grep -v '^#' .env.dev | xargs)`
+`export $(grep -v '^#' .env | xargs)`
 
 ![ 内線 DAM](./images/extdam23.png)
+
+最後に、外部 DAM アプリと他の統合機能を区別できるように、GenStudio for Performance Marketing内に表示されるラベルを変更する必要があります。 これを行うには、エクスプローラーで **src/genstudiopem/web-src/src** にドリルダウンして、ファイル **Constants.ts** を開きます。
+
+行 14 をに変更する必要があります。
+
+`export const extensionLabel: string = "--aepUserLdap-- - External S3 DAM";`
+
+忘れずに変更を保存してください。
+
+![ 内線 DAM](./images/extdam22.png)
 
 ## 1.6.3.5 外部 DAM アプリの実行
 
@@ -204,13 +189,23 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 
 ![ 内線 DAM](./images/extdam29.png)
 
-すると、ドロップダウンリストから外部 DAM を選択できるようになります。
+これで、ドロップダウンリストから `--aepUserLdap-- - External S3 DAM` という名前の外部 DAM を選択できるようになります。
 
 ![ 内線 DAM](./images/extdam30.png)
+
+この画像が表示されます。 画像 **neon_rabbit_banner.jpg** を選択し、「**使用**」をクリックします。
+
+![ 内線 DAM](./images/extdam31.png)
+
+これで、S3 バケットで実行されている外部 DAM から画像を選択しました。 画像を選択した状態で、メタ広告の作成と承認の演習に記載されてい [1.3.3.4 通常のワークフローに従うことができ ](./../module1.3/ex3.md#create--approve-meta-ad) す。
+
+![ 内線 DAM](./images/extdam32.png)
 
 ローカルマシンのコードに変更を加える場合は、アプリを再デプロイする必要があります。 再デプロイする場合は、次のターミナルコマンドを使用します。
 
 `aio app deploy --force-build --force-deploy`
+
+![ 内線 DAM](./images/extdam33.png)
 
 これで、アプリを公開する準備が整いました。
 
