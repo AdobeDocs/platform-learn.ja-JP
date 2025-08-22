@@ -19,4 +19,4 @@ ht-degree: 31%
 
 Real-Time Customer Data Platform（CDP）のユーザーインターフェイスをナビゲートして、その機能がどのように連携し、デジタルカスタマージャーニー全体でリアルタイムのアクティベーションを提供するかを確認する方法を説明します。 詳しくは、[Real-Time Customer Data Platform ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37018?learn=on&enablevpops&captions=jpn)
