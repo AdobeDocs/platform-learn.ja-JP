@@ -3,9 +3,9 @@ title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+source-git-commit: d3f1a571cdb937c49b39cc149ce3f07f0f10dfab
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '433'
 ht-degree: 12%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 12%
 | [1.3GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | ○ | - |
 | [1.4 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | ○ | - |
 | [1.5 Frame.io でワークフローを効率化 ](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 2025/08/02 | ○ | - |
-| [1.6 GenStudio for Performance Marketing – 拡張性 ](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 20/08/2025 | - | - |
+| [1.6 GenStudio for Performance Marketing – 拡張性 ](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | ○ | - |
 
 
 ## 3.資産管理

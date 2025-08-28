@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ AWS_REGION=us-west-2
 AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ```
 
-このテキストをファイル `.env.dev` と `.env.prod` の両方に貼り付ける必要があります。 忘れずに変更を保存してください。
+このテキストを `.env` ファイルに貼り付ける必要があります。 忘れずに変更を保存してください。
 
 ![ 内線 DAM](./images/extdam21.png)
 
@@ -152,6 +152,10 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ## 1.6.3.5 外部 DAM アプリの実行
 
 ターミナルウィンドウで、`aio app run` コマンドを実行します。 その後 1～2 分後にこれを表示します。
+
+>[!NOTE]
+>
+>`aio app run` を初めて実行する場合は、新しい証明書を受け入れるためにブラウザーにリダイレクトされることがあります。 その場合は、証明書を受け入れると、次の手順を続行できます。
 
 ![ 内線 DAM](./images/extdam24.png)
 

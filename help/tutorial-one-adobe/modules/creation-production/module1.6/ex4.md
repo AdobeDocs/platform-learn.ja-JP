@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ App BuilderでAdobe IO プロジェクトを開きます。`--aepUserLdap-- GSPe
 ![GSPeM 拡張機能 ](./images/gspemextpub6.png)
 
 ## 1.6.4.2 アプリを承認する
+
+>[!IMPORTANT]
+>
+>この手順は、Adobe Admin Consoleのシステム管理者のみが実行できます。 システム管理者でない場合は、これを実行できません。 代わりに、システム管理者に連絡して、アプリの承認をリクエストしてください。
 
 開発者が公開用の新しいアプリを送信すると、組織のシステム管理者に通知され、レビューおよび承認を求められます。
 
