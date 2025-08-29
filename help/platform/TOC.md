@@ -75,7 +75,7 @@ Campaigns
    + [エンドツーエンドのデモ](rtcdp/demo.md)
    + [B2B editionの概要](rtcdp/b2b-overview.md)
    + [Marketo Engageでキャンペーンを調整](rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [ はじめに：データアーキテクトとデータエンジニア ](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
++ [ はじめに：データアーキテクトとデータエンジニア](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
 + [Experience Platformへのサンプルデータの読み込み](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [概要](/help/platform/admin/overview.md)
@@ -133,9 +133,9 @@ Campaigns
       + [セグメントの一致によるインサイトの事前共有](/help/platform/audiences/segment-match/segment-match-pre-share-insights.md)
       + [セグメントは受信データに一致します](/help/platform/audiences/segment-match/segment-match-receiving-data.md)
    + チュートリアル{#audience-tutorials}
-      + [ オーディエンスルールの評価 ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
+      + [ オーディエンスルールの評価](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
       + [データを書き出すデータセットの作成](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"}
-      + [ データウェアハウスのオーディエンスとのエンゲージ ](https://experienceleague.adobe.com/en/docs/platform-learn/engage-with-audiences-from-your-data-warehouse-using-fac/overview){target="_blank"}
+      + [ データウェアハウスのオーディエンスとのエンゲージ](https://experienceleague.adobe.com/en/docs/platform-learn/engage-with-audiences-from-your-data-warehouse-using-fac/overview){target="_blank"}
 + [監査ログ](/help/platform/governance/audit-logs.md)
 + [データ収集](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview){target="_blank"}
 + コラボレーション {#collaboration}
@@ -184,8 +184,8 @@ Campaigns
    + [ストリーミングインジェストの概要](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [HTTP API を使用したデータのストリーミング](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api)
    + [ソースコネクタを使用したデータのストリーミング](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector)
-   + [Web SDK チュートリアル ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
-   + [Mobile SDK チュートリアル ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
+   + [Web SDK チュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
+   + [Mobile SDK チュートリアル](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
 + データライフサイクル {#data-lifecycle}
    + [データセットの有効期限](/help/platform/data-lifecycle/expire-datasets.md)
 + 宛先 {#destinations}
@@ -238,7 +238,7 @@ Campaigns
    + [リアルタイムの顧客プロファイルについて](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [プロファイルの概要図](/help/platform/profiles/overview-diagram.md)
    + [データをプロファイルに取り込む](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [ プロファイルビューの詳細のカスタマイズ ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
+   + [ プロファイルビューの詳細のカスタマイズ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
    + [アカウントプロファイルの表示](/help/platform/profiles/view-account-profiles.md)
    + [結合ポリシーの作成](/help/platform/profiles/create-merge-policies.md)
    + [結合スキーマの概要](/help/platform/profiles/union-schemas-overview.md)
@@ -267,12 +267,12 @@ Campaigns
    + [クエリサービス API](/help/platform/queries/query-service-api.md)
    + [Adobe定義関数](/help/platform/queries/adobe-defined-functions.md)
    + [データ使用パターン](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
-   + [ クエリ結果からのデータセットの生成 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
+   + [ クエリ結果からのデータセットの生成](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [データの分析と視覚化](/help/platform/queries/analyze-and-visualize.md)
    + [BI ツールを使用したダッシュボードの構築](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [顧客データの再充電](/help/platform/queries/recharge-your-customer-data.md)
-   + [ クエリサービスへのクライアントの接続 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
+   + [ クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
    + [データレイク内のデータを検証](/help/platform/queries/validate-data-in-the-datalake.md)
 + スキーマ {#schemas}
    + [概要](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -288,7 +288,7 @@ Campaigns
    + [列挙フィールドと推奨値を使用する](/help/platform/schemas/use-enumerated-fields.md)
    + [サンドボックス間でのスキーマのコピー](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [スキーマの更新](/help/platform/schemas/update-schemas.md)
-   + [ アドホックスキーマの作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
+   + [ アドホックスキーマの作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
 + ソース {#sources}
    + [概要](/help/platform/sources/overview.md)
    + [Adobe Analyticsからのデータの取り込み](/help/platform/sources/ingest-data-from-adobe-analytics.md)
