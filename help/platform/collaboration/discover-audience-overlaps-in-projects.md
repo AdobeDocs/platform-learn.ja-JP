@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Collaboration プロジェクト内でのオーディエンスの重複を検出
 
-Real-Time CDP Collaboration プロジェクト内でオーディエンスの重複を比較する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"} を参照してください。
+Real-Time CDP Collaboration プロジェクト内でオーディエンスの重複を比較する方法を説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"} を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
