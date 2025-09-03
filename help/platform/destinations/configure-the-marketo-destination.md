@@ -25,5 +25,5 @@ ht-degree: 1%
 
 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440159?learn=on&enablevpops&captions=jpn)
 
