@@ -3,10 +3,10 @@ title: Platform Mobile SDKでの場所の使用
 description: モバイルアプリで Places geolocation サービスを使用する方法を説明します。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 3%
+source-wordcount: '1825'
+ht-degree: 2%
 
 ---
 
@@ -47,23 +47,23 @@ Places サービスでいくつかの目標点を定義します。
 1. データ収集 UI で、「**[!UICONTROL 場所]**」を選択します。
 1. ![ 詳細 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) を選択します。
 1. コンテキストメニューから、「**[!UICONTROL ライブラリを管理]**」を選択します。
-   ![ ライブラリの管理 ](assets/places-manage-libraries.png)
+   ![ ライブラリの管理 ](assets/places-manage-libraries.png){zoomable="yes"}
 1. **[!UICONTROL ライブラリを管理]** ダイアログで、「**[!UICONTROL 新規]**」を選択します。
 1. **[!UICONTROL ライブラリを作成]** ダイアログで **[!UICONTROL 名前]** を入力（例：`Luma`）。
 1. 「**[!UICONTROL 確認]**」を選択します。
-   ![ ライブラリを作成 ](assets/places-create-library.png)
+   ![ ライブラリを作成 ](assets/places-create-library.png){zoomable="yes"}
 1. **[!UICONTROL ライブラリを管理]** ダイアログを閉じるには、「**[!UICONTROL 閉じる]**」を選択します。
 1. **[!UICONTROL POI 管理]** に戻り、「**[!UICONTROL POI を読み込み]**」を選択します。
 1. **[!UICONTROL 場所を読み込み]** ダイアログで **[!UICONTROL 開始]** を選択します。
 1. ライブラリのリストから **[!DNL Luma]** を選択します。
 1. 「**[!UICONTROL 次へ]**」を選択します。
-   ![ ライブラリを選択 ](assets/places-import-select-library.png)
+   ![ ライブラリを選択 ](assets/places-import-select-library.png){zoomable="yes"}
 1. [Luma POI ZIP ファイルをダウンロードし ](assets/luma_pois.csv.zip) コンピューター上の場所に抽出します。
 1. **[!UICONTROL 場所を読み込み]** ダイアログで、抽出した `luma_pois.csv` ファイルをにドラッグ&amp;ドロップします **[!UICONTROL CSV ファイルを選択 – ファイルをドラッグ&amp;ドロップ]**。 **[!UICONTROL 検証成功]** - **[!UICONTROL CSV ファイルの検証に成功しました]** と表示されます。
 1. **[!UICONTROL 読み込みを開始]** を選択します。 **[!UICONTROL 成功]** - **[!UICONTROL 6 つの新しい POI が正常に追加されました]** が表示されます。
 1. 「**[!UICONTROL 完了]**」を選択します。
 1. **[!UICONTROL POI 管理]** で、6 つの新しい Luma ストアがリストに追加されます。 ![ リスト ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) リストと ![ マップ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) マップビューを切り替えることができます。
-   ![ 場所リスト ](assets/places-list.png)。
+   ![ 場所リスト ](assets/places-list.png){zoomable="yes"}。
 
 
 ### Places 拡張機能のインストール
@@ -74,14 +74,13 @@ Places サービスでいくつかの目標点を定義します。
 1. **[!UICONTROL 場所]** 拡張機能を検索します。
 1. 拡張機能をインストールします。
 
-   ![Offer Decisioningと Target 拡張機能の追加 ](assets/tag-places-extension.png)
+   ![ 場所を追加 ](assets/tag-places-extension.png)
 
 1. **[!UICONTROL 拡張機能をインストール]** ダイアログで、次の手順を実行します。
    1. **[!DNL Luma]** ライブラリを選択 **[!UICONTROL リストから「]**」を選択します。
    1. **[!UICONTROL 初期ビルド]** など、作業ライブラリが選択されていることを確認します。
    1. **[!UICONTROL ライブラリに保存]** から **[!UICONTROL ライブラリとビルドに保存]** を選択します。
-
-      ![Places 拡張機能をインストール ](assets/places-install-extension.png) ます。
+      ![Places 拡張機能をインストール ](assets/places-install-extension.png){zoomable="yes"} ます。
 
 1. ライブラリが再構築されます。
 
@@ -95,7 +94,7 @@ Places サービスでいくつかの目標点を定義します。
 1. スキーマを選択して開きます。
 1. スキーマエディターで、「**[!UICONTROL 消費者エクスペリエンスイベント]**」を選択します。
 1. POI インタラクションと位置情報データをキャプチャするオブジェクトとフィールドを持つ **[!UICONTROL placeContext]** オブジェクトが表示されます。
-   ![ スキーマの場所 ](assets/schema-places-context.png).
+   ![ スキーマの場所 ](assets/schema-places-context.png){zoomable="yes"}.
 
 
 ### タグプロパティの更新
@@ -114,7 +113,7 @@ Places サービスでいくつかの目標点を定義します。
 1. **[!UICONTROL データ要素タイプ]** リストから **[!UICONTROL 名前]** を選択します。
 1. **[!UICONTROL TARGET]** の下の **[!UICONTROL 現在の POI]** を選択します。
 1. **[!UICONTROL ライブラリに保存]** を選択します。
-   ![データ要素](assets/tags-create-data-element.png)
+   ![データ要素](assets/tags-create-data-element.png){zoomable="yes"}
 
 1. 以下の表の情報を使用して手順 4 ～ 8 を繰り返し、追加のデータ要素を作成します。
 
@@ -128,7 +127,7 @@ Places サービスでいくつかの目標点を定義します。
 
    次のデータ要素のリストが表示されます。
 
-   ![ データ要素のリスト ](assets/tags-data-elements-list.png)
+   ![ データ要素のリスト ](assets/tags-data-elements-list.png){zoomable="yes"}
 
 **ルール**
 
@@ -140,7 +139,6 @@ Places サービスでいくつかの目標点を定義します。
 1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]** を選択します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL 場所]** を選択し、**[!UICONTROL イベントタイプ]** リストから **[!UICONTROL POI を入力]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-
       ![ タグイベント ](assets/tags-event-mobile-core.png)。
 1. ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「**[!UICONTROL 追加]**」を選択します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Mobile Core]** を選択し、**[!UICONTROL アクションタイプ]** リストから **[!UICONTROL データを添付]** を選択します。 ペイロードデータを添付します。
@@ -171,8 +169,7 @@ Places サービスでいくつかの目標点を定義します。
       また、「`{%% ... %%}`Data![」 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 選択すると、JSON にデータ要素のプレースホルダー値を挿入できます。 ポップアップダイアログが表示され、作成したデータ要素を選択できます。
 
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-
-      ![ タグアクション ](assets/tags-action-mobile-core.png)
+      ![ タグアクション ](assets/tags-action-mobile-core.png){zoomable="yes"}
 
 1. ![ モバイルコア – データを添付 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) アクションの横にある **[!UICONTROL 追加]** を選択します。
    1. **[!UICONTROL 拡張機能]** リストから **[!UICONTROL Adobe Experience Platform Edge Network]** を選択し、「**[!UICONTROL イベントをEdge Networkに転送]**」を選択します。 これにより、イベントと追加のペイロードデータが Platform Edge Networkに転送されます。
@@ -180,7 +177,7 @@ Places サービスでいくつかの目標点を定義します。
 
 1. ルールを保存するには、「**[!UICONTROL ライブラリに保存]**」を選択します。
 
-   ![ ルール ](assets/tags-rule-poi-entry.png)
+   ![ ルール ](assets/tags-rule-poi-entry.png){zoomable="yes"}
 
 別のルールを作成しましょう
 
@@ -222,14 +219,14 @@ Places サービスでいくつかの目標点を定義します。
 
 1. ルールを保存するには、「**[!UICONTROL ライブラリに保存]**」を選択します。
 
-   ![ ルール ](assets/tags-rule-poi-exit.png)
+   ![ ルール ](assets/tags-rule-poi-exit.png){zoomable="yes"}
 
 
 タグ内のすべての変更が公開されていることを確認するには
 
 1. ビルドするライブラリとして **[!UICONTROL 初期ビルド]** を選択します。
 1. **[!UICONTROL ビルド]** を選択します。
-   ![ ライブラリを作成 ](assets/tags-build-library.png)
+   ![ ライブラリを作成 ](assets/tags-build-library.png){zoomable="yes"}
 
 
 
@@ -246,9 +243,12 @@ Assuranceの設定を検証するには：
 1. 「![ 歯車 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 負荷 POI をシミュレート」を選択します。 POI は、円とピンを使用して識別されます。
 1. POI を選択します。
 1. ポップアップから、「![ 歯車 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 入力イベントをシミュレート]**」を選択します。
-   ![ エントリイベントをシミュレート ](assets/places-simulate.png)
+
+   ![ エントリイベントをシミュレート ](assets/places-simulate.png){zoomable="yes"}
+
 1. 左パネルから **[!UICONTROL イベント]** を選択すると、シミュレーションしたイベントが表示されます。
-   ![AJO Decisioning の検証 ](assets/places-events.png)
+
+   ![AJO Decisioning の検証 ](assets/places-events.png){zoomable="yes"}
 
 
 ## アプリへの Places の実装
@@ -259,6 +259,14 @@ Assuranceの設定を検証するには：
 >
 >[SDK のインストール ](install-sdks.md) の節を完了した場合、Places SDKは既にインストールされているので、この手順をスキップできます。
 >
+
+>[!IMPORTANT]
+>
+>アプリでAndroidのマップ SDKを設定するには、使用状況に伴うコストとして請求を設定する必要があります。 一意のアプリケーション ID と SHA-1 キーを使用して、コストを制限できます。 詳しくは、[SDKをAndroidにマッピング ](https://developers.google.com/maps/documentation/android-sdk/overview) を参照してください。 請求を設定しない場合やコストを負担する場合は、このレッスンをスキップしてください。
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Xcode で、[AEP Places](https://github.com/adobe/aepsdk-places-ios) がパッケージの依存関係のパッケージの一覧に追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL AppDelegate]** に移動します。
@@ -297,31 +305,100 @@ Assuranceの設定を検証するには：
 
 1. Xcode のプロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Location]**/**[!DNL GeofenceSheet]** に移動します。
 
-   1. 「入力」ボタンに、次のコードを入力します
+   1. 「入力」ボタンに、次のコードを入力します。
 
-   ```swift
-   // Simulate geofence entry event
-   Task {
-       await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
-   }
+      ```swift
+      // Simulate geofence entry event
+      Task {
+          await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
+      }
+      ```
+
+   1. 「終了」ボタンに、次のコードを入力します。
+
+      ```swift
+      // Simulate geofence exit event
+      Task {
+          await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
+      }
+      ```
+
+>[!TAB Android]
+
+1. Android Studio で、[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) が **[!UICONTROL Android:app]** ChevronDown **** Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
+1. Android Studio プロジェクトナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL LumaApplication]** に移動します。
+1. `com.adobe.marketing.mobile.Messaging` が読み込みのリストに含まれていることを確認します。
+
+   `import import com.adobe.marketing.mobile.Places`
+
+1. `Places.EXTENSION` が、登録している拡張機能の配列の一部であることを確認します。
+
+   ```kotlin
+   val extensions = listOf(
+       Identity.EXTENSION,
+       Lifecycle.EXTENSION,
+       Signal.EXTENSION,
+       Edge.EXTENSION,
+       Consent.EXTENSION,
+       UserProfile.EXTENSION,
+       Places.EXTENSION,
+       Messaging.EXTENSION,
+       Optimize.EXTENSION,
+       Assurance.EXTENSION
+   )
    ```
 
-   1. 「終了」ボタンに、次のコードを入力します
+1. Android Studio プロジェクトナビゲーターで、**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL models]**/**[!UICONTROL MobileSDK]** に移動します。 `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` 関数を検索します。 次のコードを追加します。
 
-   ```swift
-   // Simulate geofence exit event
-   Task {
-       await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
-   }
+   ```kotlin
+   // Process geolocation event
+   Places.processGeofence(geofence, transitionType)
    ```
+
+   この [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API は、位置情報を Places サービスに送信します。
+
+
+1. Android Studio プロジェクトナビゲーターで、**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL views]**/**[!UICONTROL LocationView.k]** に移動します。
+
+   1. 「入力」ボタンに、次のコードを入力します。
+
+      ```kotlin
+      // Simulate geofence entry event
+      coroutineScope.launch {
+          MobileSDK.shared.processGeofence(
+             region,
+             Geofence.GEOFENCE_TRANSITION_ENTER
+          )
+      }
+      ```
+
+   1. 「終了」ボタンに、次のコードを入力します。
+
+      ```kotlin
+      // Simulate geofence entry event
+      coroutineScope.launch {
+          MobileSDK.shared.processGeofence(
+              region,
+              Geofence.GEOFENCE_TRANSITION_EXIT
+          )
+      }
+      ```
+
+>[!ENDTABS]
 
 ## アプリを使用した検証
+
+アプリでジオロケーション機能を検証するには：
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. アプリをデバイスまたはシミュレーターで開きます。
 
 1. 「**[!UICONTROL Location]**」タブに移動します。
 
-1. マップを移動（ドラッグ）して、青い中央の円が POI の 1 つ（例：ロンドン）の上にあることを確認します。
+1. マップを移動（ドラッグ）して、青い中央の円がいずれかの POI （例：ロンドン）の上にあることを確認します。
 
 1. タップ カテゴリと名前がラベルの赤い場所にピンと共に表示されるまで <img src="assets/geobutton.png" width="20" /> きます。
 
@@ -333,7 +410,27 @@ Assuranceの設定を検証するには：
 
    <img src="assets/appentryexit.png" width="300" />
 
+1. Assurance UI にイベントが表示されます。 イベントと Places Service イベントの両方で。
+
+>[!TAB Android]
+
+1. 「**[!UICONTROL Location]**」タブに移動します。
+
+1. **[!UICONTROL ジオフェンスを使用またはシミュレート]** を選択します。
+
+1. 表示される赤い円の中のどこかをタップします。
+
+   <img src="assets/appgeolocation-android.png" width="300" />
+
+
+1. **[!UICONTROL Entry]** または **[!UICONTROL Exit]** ボタンを押して、アプリからのジオフェンスの入口イベントと出口イベントをシミュレートします。
+
+   <img src="assets/appentryexit-android.png" width="300" />
+
 1. Assurance UI にイベントが表示されます。
+
+
+>[!ENDTABS]
 
 
 
@@ -341,14 +438,14 @@ Assuranceの設定を検証するには：
 
 これで、アプリのジオロケーション機能にさらに機能を追加するためのツールがすべて揃いました。 イベントをEdge Networkに転送したので、[Experience Platform](platform.md) のアプリを設定すると、アプリで使用されるプロファイルにエクスペリエンスイベントが表示されます。
 
-このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガーJourney Optimizer化できることを確認します（[ プッシュ通知 ](journey-optimizer-inapp.md) および [ アプリ内メッセージ ](journey-optimizer-push.md) を参照）。 例えば、通常の例では、アプリユーザーが物理的なストアのジオフェンスに入ると、製品プロモーションを伴うプッシュ通知が送信されます。
+このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガーJourney Optimizerできることを確認します（[ プッシュ通知 ](journey-optimizer-inapp.md) および [ アプリ内メッセージ ](journey-optimizer-push.md) を参照）。 例えば、通常の例では、アプリユーザーが物理的なストアのジオフェンスに入ると、製品プロモーションを伴うプッシュ通知が送信されます。
 
-アプリの機能の実装は、ほとんどが Places サービスと、タグプロパティで定義したデータ要素およびルールによって駆動されています。 そのため、アプリ内のコードは最小限に抑えます。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) [ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
+アプリのジオロケーション機能のこの実装により、コードが最小限に抑えられます。 タグプロパティで定義した Places サービス、データ要素、ルールが、ほとんどの機能を提供します。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
 
 >[!SUCCESS]
 >
 >これで、Experience Platform Mobile SDKの Places 拡張機能を使用して、アプリにジオロケーションサービスを有効にしました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[Adobe Analyticsへのデータのマッピング](analytics.md)**

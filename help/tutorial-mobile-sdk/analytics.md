@@ -1,13 +1,13 @@
 ---
-title: Platform Mobile SDK で収集されたデータをAdobe Analyticsにマッピングする
+title: Platform Mobile SDKで収集されたデータをAdobe Analyticsにマッピングする
 description: モバイルアプリでAdobe Analyticsのデータを収集し、マッピングする方法を説明します。
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 1%
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 以前のレッスンで収集して Platform Edge Networkに送信した [ イベント ](events.md) データは、Adobe Analyticsを含むデータストリームで設定されたサービスに転送されます。 データをレポートスイートの正しい変数にマッピングします。
 
-![アーキテクチャ](assets/architecture-aa.png)
+![アーキテクチャ](assets/architecture-aa.png){zoomable="yes"}
 
 ## 前提条件
 
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 ## Adobe Analytics データストリームサービスを追加
 
-Edge NetworkからAdobe Analyticsに XDM データを送信するには、[ データストリームの作成 ](create-datastream.md) の一部として設定したデータストリームに対して、Adobe Analytics サービスを設定します。
+XDM データをEdge NetworkからAdobe Analyticsに送信するには、[ データストリームの作成 ](create-datastream.md) の一部として設定したデータストリームに対して、Adobe Analytics サービスを設定します。
 
 1. データ収集 UI で、「**[!UICONTROL データストリーム]** とデータストリームを選択します。
 
 1. 次に、「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL サービスを追加]**」を選択します。
 
-1. [!UICONTROL &#x200B; サービス &#x200B;]&#x200B;**リストから**&#x200B;[!UICONTROL &#x200B; Adobe Analytics] を追加します。
+1. **[!UICONTROL サービス]** リストから [!UICONTROL Adobe Analytics] を追加します。
 
 1. **[!UICONTROL レポートスイート ID]** で使用する、Adobe Analyticsのレポートスイートの名前を入力します。
 
@@ -49,16 +49,16 @@ Edge NetworkからAdobe Analyticsに XDM データを送信するには、[ デ�
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![Adobe Analyticsをデータストリームサービスとして追加 ](assets/datastream-service-aa.png)
+   ![Adobe Analyticsをデータストリームサービスとして追加 ](assets/datastream-service-aa.png){zoomable="yes"}
 
 
 ## 自動マッピング
 
-標準 XDM フィールドの多くは、Analytics 変数に自動的にマッピングされます。 完全なリストについては、[こちら](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=ja)を参照してください。
+標準 XDM フィールドの多くは、Analytics 変数に自動的にマッピングされます。 [ 完全なリスト ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) を参照してください。
 
 ### 例#1 - s.products
 
-良い例は、処理ルールを使用して入力できない [products 変数 ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=ja) です。 XDM 実装を使用すると、必要なデータをすべて `productListItems` に渡し、Analytics マッピング `s.products` よってデータが自動的に入力されます。
+良い例は、処理ルールを使用して入力できない [products 変数 ](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products) です。 XDM 実装を使用すると、必要なデータをすべて `productListItems` に渡し、Analytics マッピング `s.products` よってデータが自動的に入力されます。
 
 このオブジェクトは、
 
@@ -87,12 +87,12 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->`productListItems[].SKU` と `productListItems[].name` の両方にデータが含まれている場合、`productListItems[].SKU` の値が使用されます。 詳しくは、[Adobe Experience Edgeの Analytics 変数のマッピング ](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=ja) を参照してください。
+>`productListItems[].SKU` と `productListItems[].name` の両方にデータが含まれている場合、`productListItems[].SKU` の値が使用されます。 詳しくは、[Adobe Experience Edgeの Analytics 変数のマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) を参照してください。
 
 
 ### 例#2 - scAdd
 
-詳しく見ると、すべてのイベントには（必須）と（オプション）の 2 つのフィールド `value` あ `id` ます。 `value` フィールドは、イベント数を増分するために使用されます。 シリアル化には `id` フィールドを使用します。
+詳しく見ると、すべてのイベントには `value` （必須）と `id` （オプション）の 2 つのフィールドがあります。 `value` フィールドは、イベント数を増分するために使用されます。 シリアル化には `id` フィールドを使用します。
 
 このオブジェクトは、
 
@@ -137,7 +137,7 @@ s.events = "scAdd:321435"
 
 1. ExperienceEvent ヒットを表示します。
 
-   ![analytics xdm ヒット ](assets/analytics-assurance-experiencevent.png)
+   ![analytics xdm ヒット ](assets/analytics-assurance-experiencevent.png){zoomable="yes"}
 
 1. JSON の XDM 部分を確認します。
 
@@ -160,18 +160,18 @@ s.events = "scAdd:321435"
 
 1. **[!UICONTROL analytics.mapping]** イベントを確認します。
 
-   ![analytics xdm ヒット ](assets/analytics-assurance-mapping.png)
+   ![analytics xdm ヒット ](assets/analytics-assurance-mapping.png){zoomable="yes"}
 
 Analytics マッピングには、以下のことに注意してください。
 
-* **[!UICONTROL イベント]** には、`commerce.productListAdds` に基づく `scAdd` が入力されます。
+* **[!UICONTROL イベント]** には、`scAdd` に基づく `commerce.productListAdds` が入力されます。
 * **[!UICONTROL pl]** （products 変数）には、`productListItems` に基づいて連結された値が入力されます。
 * このイベントには、すべてのコンテキストデータを含む他の興味深い情報があります。
 
 
 ## コンテキストデータを使用したマッピング
 
-Analytics に転送された XDM データは、標準フィールドとカスタムフィールドの両方を含む [ コンテキストデータ ](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=ja) に変換されます。
+Analytics に転送された XDM データは、標準フィールドとカスタムフィールドの両方を含む [ コンテキストデータ ](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/getting-started/proc-rules.md?lang=en) に変換されます。
 
 コンテキストデータキーは、次の構文に従って作成されます。
 
@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >カスタムフィールドは、Experience Cloud組織識別子の下に配置されます。
 >
->`_techmarketingdemos` は組織の一意の値に置き換えられます。
+テナント名 `_techmarketingdemos` は組織の一意の値に置き換えられます。
 
 
 
@@ -203,15 +203,15 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 * **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** フィールドグループをスキーマに追加します。
 
-  ![Analytics ExperienceEvent FullExtension フィールドグループ ](assets/schema-analytics-extension.png)
+  ![Analytics ExperienceEvent FullExtension フィールドグループ ](assets/schema-analytics-extension.png){zoomable="yes"}
 
 * [ イベントデータを追跡 ](events.md) レッスン、またはで行ったのと同様に、Adobe Analytics ExperienceEvent フル拡張機能フィールドグループに従って、アプリに XDM ペイロードを作成します
-* ルールアクションを使用してAdobe Analytics ExperienceEvent 完全拡張フィールドグループにデータを添付または変更するルールを、タグプロパティ内に作成します。 詳しくは、[SDK イベントへのデータの添付 ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) または [SDK イベントでのデータの変更 ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) を参照してください。
+* ルールアクションを使用してAdobe Analytics ExperienceEvent 完全拡張フィールドグループにデータを添付または変更するルールを、タグプロパティ内に作成します。 詳しくは、[SDK イベントへのデータの添付 ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) または [SDK イベントのデータの変更 ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) を参照してください。
 
 
 ### マーチャンダイジング eVar
 
-`&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` などの製品の色を取得するなど、Analytics 設定で [ マーチャンダイジング eVar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=ja) を使用している場合は、[ イベントデータの追跡 ](events.md) で定義した XDM ペイロードを拡張して、そのマーチャンダイジング情報を取得する必要があります。
+Analytics の設定で [ マーチャンダイジング eVar](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) を使用している場合、そのマーチャンダイジング情報を取得するために、[ イベントデータの追跡 ](events.md) で定義した XDM ペイロードを拡張する必要があります。 マーチャンダイジング var の例として、商品の色を取得するタイミング（`evar1` など）を `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` します
 
 * JSON の場合：
 
@@ -286,11 +286,11 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 このデータを使用した処理ルールは、次のようになります。
 
-* **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** （4） **[!UICONTROL が設定されている場合、（1）]** アプリ画面名（eVar2） **[!UICONTROL 2）**&#x200B;[!UICONTROL &#x200B; アプリ画面名を上書きします &#x200B;]&#x200B;**（3）**&#x200B;**5]**。
+* **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** （4） **[!UICONTROL が設定されている場合は、（1）]** アプリ画面名（eVar2） **[!UICONTROL （2）を]** a.x._techmarketingdemo.appinformation.appstatedetails.screenname **** a.x._techmarketingdemo.appinformation.appstatedetails.screenname **[!UICONTROL の値に上書き]** （5）します。
 
 * **[!UICONTROL a.x.commerce.saveForLaters.value （コンテキスト）]** （9） **[!UICONTROL が設定されている場合は、（イベント]** （6） **[!UICONTROL ウィッシュリストに追加（イベント 3）]** （7）を **[!UICONTROL a.x.commerce.saveForLaters.value （コンテキスト）]** （8）に **[!UICONTROL 追加]** （10）します。
 
-![analytics 処理ルール ](assets/analytics-processing-rules.png)
+![analytics 処理ルール ](assets/analytics-processing-rules.png){zoomable="yes"}
 
 >[!IMPORTANT]
 >
@@ -301,7 +301,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >処理ルールに初めてマッピングする場合、インターフェイスには XDM オブジェクトからのコンテキストデータ変数は表示されません。 この問題を修正するには、任意の値を選択し、保存してから、編集に戻ります。 すべての XDM 変数が表示されます。
 
 
-処理ルールとコンテキストデータについて詳しくは、[ こちら ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=ja) を参照してください。
+[ 処理ルールを使用した contextData 変数の prop および eVar へのマッピング ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules) を参照してください。
 
 >[!TIP]
 >
@@ -309,11 +309,11 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 ## Analytics モバイル拡張機能からの移行
 
-[Adobe Analytics モバイル拡張機能を使用してモバイルアプリケーションを開発した場合は ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) の API 呼び出しを使用している可能性が最も高くなります。
+[Adobe Analytics モバイル拡張機能 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) を使用してモバイルアプリケーションを開発した場合は、[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) の API 呼び出しを使用している可能性が高くなります。
 
-推奨Edge Networkを使用して移行する場合は、次の選択肢があります。
+推奨されるEdge Networkを使用して移行する場合は、次の選択肢があります。
 
-* [ イベントデータのトラッキング ](events.md) 方法のレッスンで示すように [&#128279;](configure-tags.md#extension-configuration)Edge Network拡張機能を実装し、[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) API を使用します。 このチュートリアルでは、この実装に焦点を当てています。
+* [ イベントデータのトラッキング ](configure-tags.md#extension-configuration) 方法のレッスンで示すように [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)Edge Network拡張機能を実装し、[](events.md) API を使用します。 このチュートリアルでは、この実装に焦点を当てています。
 * [Edge Bridge拡張機能 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を実装し、[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API 呼び出しを引き続き使用します。 詳細と別のチュートリアルについては、[Edge Bridge拡張機能の実装 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を参照してください。
 
 
@@ -321,6 +321,6 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 >[!SUCCESS]
 >
->Experience Edge XDM オブジェクトをAdobe Analytics変数にマッピングするようにアプリを設定し、データストリームでAdobe Analytics サービスを有効にし、必要に応じて処理ルールを使用します。<br/> Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>データストリームでAdobe Analytics サービスを有効にして、Experience Edge XDM オブジェクトをAdobe Analytics変数にマッピングするようにアプリを設定しました。 該当する場合は、処理ルールを使用します。<br/> Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[Experience Platformへのデータの送信](platform.md)**

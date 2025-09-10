@@ -1,12 +1,12 @@
 ---
-title: Platform Mobile SDK を使用したプロファイルデータの収集
+title: Platform Mobile SDKでのプロファイルデータの収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 1%
+source-wordcount: '775'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,9 @@ ht-degree: 1%
 
 モバイルアプリでプロファイルデータを収集する方法を説明します。
 
-プロファイル拡張機能を使用して、クライアント上のユーザーに関する属性を保存できます。 この情報を後で使用すると、最適なパフォーマンスを得るためにサーバーに接続することなく、オンラインまたはオフラインのシナリオ中にメッセージをターゲットにしてパーソナライズできます。 プロファイル拡張機能は、クライアントサイド操作プロファイル（CSOP）の管理、API への対応方法の提供、ユーザープロファイル属性の更新、生成されたイベントとしてのシステムのその他の部分とのユーザープロファイル属性の共有を行います。
+プロファイル拡張機能を使用して、クライアント上のユーザーに関する属性を保存できます。 この情報を後で使用すると、最適なパフォーマンスを得るためにサーバーに接続することなく、オンラインまたはオフラインのシナリオ中にメッセージをターゲットにしてパーソナライズできます。
+
+プロファイル拡張機能は、クライアントサイド操作プロファイル（CSOP）の管理、API への対応方法の提供、ユーザープロファイル属性の更新、生成されたイベントとしてのシステムのその他の部分とのユーザープロファイル属性の共有を行います。
 
 プロファイルデータは、他の拡張機能でプロファイル関連のアクションを実行する際に使用されます。 例えば、プロファイルデータを使用し、プロファイルデータに基づいてルールを実行するルールエンジン拡張機能があります。 [ プロファイル拡張機能 ](https://developer.adobe.com/client-sdks/documentation/profile/) について詳しくは、ドキュメントを参照してください
 
@@ -37,7 +39,11 @@ ht-degree: 1%
 
 ## ユーザー属性の設定と更新
 
-ユーザーが過去または最近に購入したかどうかをアプリ内でターゲティングやパーソナライゼーションですばやく把握すると便利です。 これを Luma アプリで設定しましょう。
+これは、ユーザーが過去または最近に購入を行ったかどうかをアプリ内ですばやく把握できるので、ターゲティングとパーソナライゼーションに役立ちます。 これを Luma アプリで設定しましょう。
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!DNL MobileSDK]** に移動し、`func updateUserAttribute(attributeName: String, attributeValue: String)` 関数を見つけます。 次のコードを追加します。
 
@@ -54,7 +60,7 @@ ht-degree: 1%
 
    1. `attributeName` （例：`isPaidUser`）および `attributeValue` （例：`yes`）を使用して、要素を辞書に追加します。
 
-   1. `profileMap` ディクショナリを [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 呼び出しの `attributeDict` パラメーターへの値として使用します。
+   1. `profileMap` ディクショナリを `attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
 
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Products]**/**[!DNL ProductView]** に移動し、（購入のコード内で） `updateUserAttributes` へのコールを見つけます <img src="assets/purchase.png" width="15" /> ボタン）を使用します。 次のコードを追加します。
 
@@ -63,10 +69,40 @@ ht-degree: 1%
    MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
+>[!TAB Android]
+
+1. Android Studio ナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL models]**/**[!UICONTROL MobileSDK]** に移動し、`func updateUserAttribute(attributeName: String, attributeValue: String)` 関数を見つけます。 次のコードを追加します。
+
+   ```kotlin
+   // Create a profile map, add attributes to the map and update profile using the map
+   val profileMap = mapOf(attributeName to attributeValue)
+   UserProfile.updateUserAttributes(profileMap)
+   ```
+
+   このコード：
+
+   1. `profileMap` という名前の空のマップを設定します。
+
+   1. `attributeName` （例：`isPaidUser`）および `attributeValue` （例：`yes`）を使用して、マップに要素を追加します。
+
+   1. `profileMap` マップを、`attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
+
+1. **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL views]**/**[!UICONTROL ProductView.kt]** に移動し、（購入のコード内で） `updateUserAttributes` の呼び出しを見つけます <img src="assets/purchase.png" width="15" /> ボタン）を使用します。 次のコードを追加します。
+
+   ```kotlin
+   // Update attributes
+   MobileSDK.shared.updateUserAttribute("isPaidUser", "yes")
+   ```
+
+>[!ENDTABS]
 
 ## ユーザー属性の取得
 
-ユーザーの属性を更新すると、他のAdobeSDK で使用できるようになりますが、属性を明示的に取得して、アプリが思いどおりに動作するようにすることもできます。
+ユーザーの属性を更新すると、他のAdobe SDK で使用できるようになりますが、属性を明示的に取得して、アプリが思いどおりに動作するようにすることもできます。
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]** / **[!DNL Luma]** / **[!DNL Views]** / **[!DNL General]** / **[!DNL HomeView]** に移動し、`.onAppear` 修飾子を見つけます。 次のコードを追加します。
 
@@ -86,48 +122,98 @@ ht-degree: 1%
 
    このコード：
 
-   1. `isPaidUser` の属性名を持つ [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API を `attributeNames` 配列の単一の要素として呼び出します。
+   1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
    1. 次に、`isPaidUser` 属性の値をチェックし、`yes` の場合は 右上 <img src="assets/paiduser.png" width="20" /> ツールバーにあるアイコン。
 
-その他のドキュメントについては、[ こちら ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を参照してください。
+>[!TAB Android]
+
+1. Android Studio プロジェクトナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.androi]**/**[!DNL views]**/**[!DNL HomeView.kt]** に移動し、`.onAppear` 修飾子を見つけます。 次のコードを追加します。
+
+   ```kotlin
+   // Get attributes
+   UserProfile.getUserAttributes(listOf("isPaidUser")) { attributes ->
+       showBadgeForUser = attributes?.get("isPaidUser") == "yes"
+   }
+   ```
+
+   このコード：
+
+   1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
+   1. 次に、`isPaidUser` 属性の値を確認します。 `yes` の場合、コードによって人物アイコンがアイコンに置き換わり、 右上 <img src="assets/paiduser.png" width="20" /> ツールバーにあるアイコン。
+
+>[!ENDTABS]
+
+詳しくは、[API リファレンス ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を参照してください。
 
 ## Assurance での検証
 
-1. シミュレーターまたはデバイスを Assurance に接続するには、「[ 設定手順 ](assurance.md#connecting-to-a-session)」セクションを確認してください。
+1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 1. アプリを実行してログインし、製品とやり取りします。
 
-   1. Assurance アイコンを左に移動します。
-   1. タブバーの **[!UICONTROL ホーム]** を選択します。
-   1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> ボタン。
+>[!BEGINTABS]
 
-      <img src="./assets/mobile-app-events-1.png" width="300">
+>[!TAB iOS]
 
-   1. ランダムなメールと顧客 ID を挿入するには、 「」ボタン <img src="assets/insert.png" width="15" /> クリックします。
-   1. **[!UICONTROL ログイン]** を選択します。
+1. タブバーの **[!UICONTROL ホーム]** を選択します。
+1. Assurance アイコンを左に移動します。
+1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> ボタン。
 
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. タブバーで「**[!DNL Products]**」を選択します。
-   1. 製品を 1 つ選択します。
-   1. 選択 <img src="assets/saveforlater.png" width="15" />。
-   1. 選択 <img src="assets/addtocart.png" width="20" />。
-   1. 選択 <img src="assets/purchase.png" width="15" />。
+1. ランダムなメールと顧客 ID を挿入するには、 「」ボタン <img src="assets/insert.png" width="15" /> クリックします。
+1. **[!UICONTROL ログイン]** を選択します。
 
-      <img src="./assets/mobile-app-events-3.png" width="300">
+   <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. **[!UICONTROL ホーム]** 画面に戻ります。 バッジが追加されたことがわかります <img src="assets/person-badge-icon.png" width="15" />。
+1. タブバーで「**[!DNL Products]**」を選択します。
+1. 製品を 1 つ選択します。
+1. 選択 <img src="assets/saveforlater.png" width="15" />。
+1. 選択 <img src="assets/addtocart.png" width="20" />。
+1. 選択 <img src="assets/purchase.png" width="15" />。
 
-      <img src="./assets/personbadges.png" width="300">
+   <img src="./assets/mobile-app-events-3.png" width="300">
+
+1. **[!UICONTROL ホーム]** 画面に戻ります。 バッジが追加されたことがわかります <img src="assets/person-badge-icon.png" width="15" />。
+
+   <img src="./assets/personbadges.png" width="300">
 
 
+>[!TAB Android]
 
-1. Assurance UI で、更新された `profileMap` 値を持つ **[!UICONTROL UserProfileUpdate]** および **[!UICONTROL getUserAttributes]** イベントが表示されます。
-   ![ プロファイルを検証 ](assets/profile-validate.png)
+1. タブバーの **[!UICONTROL ホーム]** を選択します。
+1. Assurance アイコンを左に移動します。
+1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> ボタン。
+
+   <img src="./assets/mobile-app-events-1-android.png" width="300">
+
+1. ランダムなメールと顧客 ID を挿入するには、 「」ボタン <img src="assets/insert.png" width="15" /> クリックします。
+1. **[!UICONTROL ログイン]** を選択します。
+
+   <img src="./assets/mobile-app-events-2-android.png" width="300">
+
+1. タブバーで「**[!DNL Products]**」を選択します。
+1. 製品を 1 つ選択します。
+1. 選択<img src="assets/heart.png" width="25" />。
+1. 選択 <img src="assets/addtocart.png" width="20" />。
+1. 選択 <img src="assets/purchase.png" width="15" />。
+
+   <img src="./assets/mobile-app-events-3-android.png" width="300">
+
+1. **[!UICONTROL ホーム]** 画面に戻ります。 人物アイコンが更新されていることがわかります。
+
+   <img src="./assets/personbadges-android.png" width="300">
+
+>[!ENDTABS]
+
+
+Assurance UI に、更新された **[!UICONTROL 値を持つ]** UserProfileUpdate **[!UICONTROL および]** getUserAttributes`profileMap` イベントが表示されます。
+
+![ プロファイルを検証 ](assets/profile-validate.png){zoomable="yes"}
 
 >[!SUCCESS]
 >
->これで、Edge Network内および（設定時に）Adobe Experience Platformでプロファイルの属性を更新するようにアプリを設定しました。
+>これで、Edge Network内および（設定時に）Adobe Experience Platformでプロファイルの属性を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[場所を使用](places.md)**

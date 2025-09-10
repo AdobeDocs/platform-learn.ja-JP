@@ -1,13 +1,13 @@
 ---
-title: Platform Mobile SDK 実装用の XDM スキーマの作成
+title: Platform Mobile SDK実装用の XDM スキーマの作成
 description: モバイルアプリイベント用の XDM スキーマを作成する方法を説明します。
 feature: Mobile SDK,Schemas
 jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 14%
+source-wordcount: '1445'
+ht-degree: 13%
 
 ---
 
@@ -25,15 +25,15 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 データを Platform に取り込む前に、スキーマを構成して、データの構造を記述し、各フィールドに含めることができるデータの種類を制限する必要があります。スキーマは、基本クラスと 0 個以上のスキーマフィールドグループで構成されます。
 
-デザインの原則やベストプラクティスなど、スキーマ構成モデルについて詳しくは、[ スキーマ構成の基本 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) またはプレイリスト [XDM を使用した顧客体験データのモデル化 ](https://experienceleague.adobe.com/ja/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を参照してください。
+デザインの原則やベストプラクティスなど、スキーマ構成モデルについて詳しくは、[ スキーマ構成の基本 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition) またはプレイリスト [XDM を使用した顧客体験データのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を参照してください。
 
 >[!TIP]
 >
->分析ソリューションデザインリファレンス（SDR）を熟知している場合、スキーマは、より堅牢な SDR と考えることができます。 詳しくは、[ ソリューションデザインリファレンス（SDR）ドキュメントの作成と管理 ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=ja) を参照してください。
+>分析ソリューションデザインリファレンス（SDR）を熟知している場合、スキーマは、より堅牢な SDR と考えることができます。 詳しくは、[ ソリューションデザインリファレンス（SDR）ドキュメントの作成と管理 ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) を参照してください。
 
 ## 前提条件
 
-このレッスンを完了するには、Experience Platformスキーマを作成する権限が必要です。
+このレッスンを完了するには、Experience Platform スキーマを作成するための権限が必要です。
 
 ## 学習目標
 
@@ -47,22 +47,22 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. Adobe Experience Cloudにログインします。
 
-1. このチュートリアルに使用するExperience Platformサンドボックスに属していることを確認します。
+1. このチュートリアルに使用するExperience Platform サンドボックスに属していることを確認します。
 
 1. アプリ切り替えツール ![ アプリ切り替えツール ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) 右上）を開き、
 
 1. メニューから **[!UICONTROL データ収集]** を選択します。
 
-   ![Experience Cloudへのログイン ](assets/experiencecloud-login.png)
+   ![Experience Cloudへのログイン ](assets/experiencecloud-login.png){zoomable="yes"}
 
    >[!NOTE]
    >
    > Real-Time CDPなどの Platform ベースのアプリケーションを使用しているお客様は、このチュートリアルで開発用サンドボックスを使用する必要があります。 その他の顧客は、デフォルトの実稼動サンドボックスを使用します。
 
 
-1. 左パネルの **[!UICONTROL データ管理**&#x200B;[!UICONTROL &#x200B; の下の &#x200B;]&#x200B;**スキーマ]** を選択します。
+1. 左側のパネルで ![ データ管理 ](/help/assets/icons/Schemas.svg) の下の **[!UICONTROL スキーマ]****[!UICONTROL スキーマ]** を選択します。
 
-   ![ タグのホーム画面 ](assets/mobile-schema-navigate.png)
+   ![ タグのホーム画面 ](assets/mobile-schema-navigate.png){zoomable="yes"}
 
 メインスキーマページが開き、既存のスキーマのリストが表示されます。 また、スキーマのコア構成要素に対応するタブも表示されます。
 
@@ -70,13 +70,13 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 * **クラス** スキーマに含まれるデータの行動の側面を定義します。 例：`XDM ExperienceEvent` は、時系列、イベントデータを取得し、`XDM Individual Profile` は、個人に関する属性データを取得します。
 * **データ型** は、基本的なリテラルフィールドと同じ方法で、クラスまたはフィールドグループの参照フィールド型として使用されます。
 
-上記の説明は概要です。 詳しくは、[ スキーマ構成要素 ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=ja) ビデオを参照するか、製品ドキュメントの [ スキーマ構成の基本 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja) を参照してください。
+上記の説明は概要です。 詳しくは、[ スキーマ構成要素 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) ビデオを参照するか、製品ドキュメントの [ スキーマ構成の基本 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition) を参照してください。
 
 このチュートリアルでは、「コンシューマーエクスペリエンスイベント」フィールドグループを使用して、プロセスを示すカスタムイベントを作成します。
 
 >[!NOTE]
 >
->Adobeは、より標準のフィールドグループを引き続き追加し、これらのフィールドはExperience Platformサービスによって暗黙的に理解され、Platform コンポーネント間で使用される場合は一貫性が高まるので、可能な限り使用する必要があります。 標準のフィールドグループを使用すると、Analytics での自動マッピングや Platform の AI 機能など、目に見えるメリットが得られます。
+>Adobeでは、引き続き標準フィールドグループを追加するので、可能な限り使用してください。 これらのフィールドは、Experience Platform サービスによって暗黙的に理解され、Platform コンポーネント間で使用される場合に一貫性が高くなります。 標準フィールドグループを使用すると、Analytics での自動マッピングや Platform の AI 機能など、目に見えるメリットが得られます。
 
 ## Luma アプリスキーマアーキテクチャ
 
@@ -95,15 +95,19 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 ## スキーマの作成
 
-1. 「**[!UICONTROL スキーマを作成]**」を選択します。
+1. ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Create Schema]** を選択します。
+
+1. **[!UICONTROL スキーマを作成]** ダイアログで、「**[!UICONTROL 手動]**」を選択します。 **[!UICONTROL 選択]** を使用して続行します。
+
+   ![ スキーママニュアル ](assets/schema-manual.png){zoomable="yes"}
 
 1. **[!UICONTROL スキーマを作成]** ウィザードの **[!UICONTROL クラスを選択]** 手順で、「**[!UICONTROL このスキーマの基本クラスを選択]** の下の **[!UICONTROL エクスペリエンスイベント]** を選択します。
 
 1. 「**[!UICONTROL 次へ]**」を選択します。
 
-   ![ スキーマ ウィザードの基本クラス ](assets/schema-wizard-base-class.png)
+   ![ スキーマ ウィザードの基本クラス ](assets/schema-wizard-base-class.png){zoomable="yes"}
 
-1. **[!UICONTROL スキーマを作成]** ウィザードの **[!UICONTROL 名前とレビュー]** 手順で、**[!UICONTROL スキーマ表示名]** （例：`Luma Mobile Event Schema`）および [!UICONTROL &#x200B; 説明 &#x200B;] （例：`Schema for Luma mobile app experience events`）を入力します。
+1. **[!UICONTROL スキーマを作成]** ウィザードの **[!UICONTROL 名前とレビュー]** 手順で、**[!UICONTROL スキーマ表示名]** （例：`Luma Mobile Event Schema`）および [!UICONTROL  説明 ] （例：`Schema for Luma mobile app experience events`）を入力します。
 
    >[!NOTE]
    >
@@ -111,12 +115,12 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 「**[!UICONTROL 完了]**」を選択して、ウィザードを終了します。
 
-   ![ スキーマ名とレビュー ](assets/schema-wizard-name-and-review.png)
+   ![ スキーマ名とレビュー ](assets/schema-wizard-name-and-review.png){zoomable="yes"}
 
 
-1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**[!UICONTROL プラス**&#x200B;**追加]**」を選択します。
+1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**プラス****[!UICONTROL 追加]**」を選択します。
 
-   ![フィールドグループを追加](assets/add-field-group.png)
+   ![フィールドグループを追加](assets/add-field-group.png){zoomable="yes"}
 
 1. `Consumer Experience Event` を検索します。
 
@@ -126,19 +130,21 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
 
-   ![ フィールドグループの選択 ](assets/schema-select-field-groups.png)
+   ![ フィールドグループの選択 ](assets/schema-select-field-groups.png){zoomable="yes"}
 
    スキーマ構成のメイン画面に戻り、使用可能なすべてのフィールドを確認できます。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
+1. ![ データ管理 ](/help/assets/icons/Schemas.svg) の下の **[!UICONTROL スキーマ]** **[!UICONTROL スキーマ]** を選択して、メインの **[!UICONTROL スキーマ]** インターフェイスに戻ります。
 
 >[!NOTE]
 >
 >グループ内のすべてのフィールドを使用する必要はないことに注意してください。 また、フィールドを削除して、スキーマを簡潔で理解可能な状態に保つこともできます。 役に立つ場合、スキーマは空のデータレイヤーと考えることができます。 アプリでは、適切なタイミングで関連する値を入力します。
 
-[!UICONTROL &#x200B; 消費者エクスペリエンスイベント &#x200B;] フィールドグループのデータタイプは [!UICONTROL Web 情報 &#x200B;] で、ページビュー数やリンククリック数などのイベントを記述します。 執筆時点では、この機能にモバイルアプリの同等機能はないので、独自の機能を作成します。
+[!UICONTROL  消費者エクスペリエンスイベント ] フィールドグループのデータタイプは [!UICONTROL Web 情報 ] で、ページビュー数やリンククリック数などのイベントを記述します。 執筆時点では、この機能にモバイルアプリの同等機能はないので、独自の機能を作成します。
 
 ## カスタムデータタイプの作成
+
 
 まず、2 つのイベントを記述するカスタムデータタイプを作成します。
 
@@ -149,27 +155,27 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. **[!UICONTROL データタイプを作成]** を選択します。
 
-   ![ データタイプメニューの選択 ](assets/schema-datatype-create.png)
+   ![ データタイプメニューの選択 ](assets/schema-datatype-create.png){zoomable="yes"}
 
 1. **[!UICONTROL 表示名]** および **[!UICONTROL 説明]** を入力（例：`App Information` および `Custom data type describing "Screen Views" & "App Actions"`）
 
-   ![ 名前と説明の入力 ](assets/schema-datatype-name.png)
+   ![ 名前と説明の入力 ](assets/schema-datatype-name.png){zoomable="yes"}
 
    >[!TIP]
    >
-   > カスタムフィールドには、常にわかりやすい [!UICONTROL &#x200B; 表示名 &#x200B;] を使用します。この方法では、セグメントビルダーなどのダウンストリームサービスにフィールドが表示される際に、マーケターがカスタムフィールドにアクセスしやすくなります。
+   > カスタムフィールドには、常にわかりやすい [!UICONTROL  表示名 ] を使用します。 これにより、セグメントビルダーなどのダウンストリームサービスにフィールドが表示される際に、マーケターがカスタムフィールドにアクセスしやすくなります。
 
 
 1. フィールドを追加するには、「![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」ボタンを選択します。
 
 
-1. このフィールドは、アプリインタラクションのコンテナオブジェクトなので、キャメルケースの **[!UICONTROL フィールド名]** `appInteraction`、**[!UICONTROL 表示名]** `App Interaction` を入力し、**[!UICONTROL タイプ]** リストから `Object` を選択します。
+1. このフィールドは、アプリインタラクションのコンテナオブジェクトなので、キャメルケースの **[!UICONTROL フィールド名]** `appInteraction`、**[!UICONTROL 表示名]** `App Interaction` を入力し、`Object` タイプ **[!UICONTROL リストから]** を選択します。
 
 1. 「**[!UICONTROL 適用]**」を選択します。
 
-   ![ 新しいアプリアクションイベントの追加 ](assets/schema-datatype-app-action.png)
+   ![ 新しいアプリアクションイベントの追加 ](assets/schema-datatype-app-action.png){zoomable="yes"}
 
-1. アクションが発生した頻度を測定するには、作成した **[!UICONTROL appInteraction]** オブジェクトの横にある ![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ボタンを選択してフィールドを追加します。
+1. アクションが発生した頻度を測定するには、作成した ![appInteraction](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) オブジェクトの横にある **[!UICONTROL プラス]** ボタンを選択してフィールドを追加します。
 
 1. キャメルケース **[!UICONTROL フィールド名]**`appAction`、**[!UICONTROL 表示名]**`App Action`、**[!UICONTROL タイプ]**`Measure` を入力します。
 
@@ -177,23 +183,23 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 「**[!UICONTROL 適用]**」を選択します。
 
-   ![ アクション名フィールドの追加 ](assets/schema-datatype-action-name.png)
+   ![ アクション名フィールドの追加 ](assets/schema-datatype-action-name.png){zoomable="yes"}
 
-1. **[!UICONTROL appInteraction]** オブジェクトの横にある ![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ボタンを選択して、インタラクションのタイプを説明するフィールドを追加します。
+1. ![appInteraction](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) オブジェクトの横にある **[!UICONTROL プラス]** ボタンを選択して、インタラクションのタイプを説明するフィールドを追加します。
 
 1. **[!UICONTROL フィールド名]**`name`、**[!UICONTROL 表示名]**`Name`、**[!UICONTROL タイプ]**`String` を入力します。
 
    この手順はAdobe Analyticsのディメンションと同等です。
 
-   ![ 「適用」を選択 ](assets/schema-datatype-apply.png)
+   ![ 「適用」を選択 ](assets/schema-datatype-apply.png){zoomable="yes"}
 
 1. 右パネルの下部までスクロールし、「**[!UICONTROL 適用]**」を選択します。
 
-1. `screenView` と呼ばれる **[!UICONTROL Measure]** フィールドと、`screenName` と `screenType` と呼ばれる 2 つの **[!UICONTROL String]** フィールドを含む `appStateDetails` オブジェクトを作成するには、**[!UICONTROL appInteraction]** オブジェクトの作成時と同じ手順に従います。
+1. `appStateDetails` と呼ばれる **[!UICONTROL Measure]** フィールドと、`screenView` と **[!UICONTROL と呼ばれる 2 つの]** String`screenName` フィールドを含む `screenType` オブジェクトを作成するには、**[!UICONTROL appInteraction]** オブジェクトの作成時と同じ手順に従います。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![ データタイプの最終状態 ](assets/schema-datatype-final.png)
+   ![ データタイプの最終状態 ](assets/schema-datatype-final.png){zoomable="yes"}
 
 ## カスタムフィールドグループの追加
 
@@ -201,9 +207,9 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. このレッスンで作成したスキーマを開きます。
 
-1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**[!UICONTROL プラス]**&#x200B;**[!UICONTROL 追加]**」を選択します。
+1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**[!UICONTROL プラス]****[!UICONTROL 追加]**」を選択します。
 
-   ![ 新しいフィールドグループの追加 ](assets/schema-fieldgroup-add.png)
+   ![ 新しいフィールドグループの追加 ](assets/schema-fieldgroup-add.png){zoomable="yes"}
 
 1. 「**[!UICONTROL 新しいフィールドグループを作成]**」を選択します。
 
@@ -211,13 +217,13 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 「**フィールドグループを追加**」を選択します。
 
-   ![ 名前と説明の入力 ](assets/schema-fieldgroup-name.png)
+   ![ 名前と説明の入力 ](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
-1. メインのコンポジション画面から、「**[!UICONTROL &#x200B; アプリのインタラクション**]」を選択します。
+1. メインのコンポジション画面から、「**[!UICONTROL  アプリのインタラクション**]」を選択します。
 
 1. スキーマ名の横にある ![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ボタンを選択して、スキーマのルートにフィールドを追加します。
 
-1. 右側のパネルで、`appInformation` の **[!UICONTROL フィールド名]**、`App Information` の **[!UICONTROL 表示名]**、`App Information` の **[!UICONTROL タイプ]** を入力します。
+1. 右側のパネルで、**[!UICONTROL の]** フィールド名 `appInformation`、**[!UICONTROL の]** 表示名 `App Information`、**[!UICONTROL の]** タイプ `App Information` を入力します。
 
 1. **[!UICONTROL フィールドグループ]** ドロップダウンから「**[!UICONTROL アプリのインタラクション]**」を選択し、フィールドを新しいフィールドグループに割り当てます。
 
@@ -225,7 +231,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![ 「適用」を選択 ](assets/schema-fieldgroup-apply.png)
+   ![ 「適用」を選択 ](assets/schema-fieldgroup-apply.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -236,6 +242,6 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 >
 >これで、チュートリアルの残りの部分で使用するスキーマができました。
 >
->Adobe Experience Platform Mobile SDK の学習に時間を費やしていただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League コミュニティ ディスカッションの投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
-次のトピック：**[データストリーム [!UICONTROL &#x200B; の作成]](create-datastream.md)**
+次のトピック：**[データストリーム [!UICONTROL  の作成]](create-datastream.md)**
