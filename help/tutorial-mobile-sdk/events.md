@@ -610,9 +610,9 @@ Edge.sendEvent(event, null)
       * マップを使用してエクスペリエンスイベントを設定します。
       * [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API を使用してエクスペリエンスイベントを送信します。
 
-1. **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL  views ]**/**[!UICONTROL  LoginSheet.kt ]**に移動します
+1. **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL &#x200B; views &#x200B;]**/**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**&#x200B;に移動します
 
-   1. **[!UICONTROL Button]****[!UICONTROL onClick]** イベントに次のハイライトされたコードを追加します。
+   1. **[!UICONTROL Button]**&#x200B;**[!UICONTROL onClick]** イベントに次のハイライトされたコードを追加します。
 
       ```kotlin
       // Send app interaction event
