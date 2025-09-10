@@ -64,7 +64,7 @@ Experience Platform Mobile SDKは、Adobe Experience Cloudのお客様がAdobe E
    * **[!UICONTROL プロパティ権限]** - **[!UICONTROL 開発]**、**[!UICONTROL 承認]**、**[!UICONTROL 公開]**、**[!UICONTROL 拡張機能の管理]**、**[!UICONTROL 環境の管理]** の権限項目。
    * **[!UICONTROL 会社権限]** - プロパティを管理するための権限項目 **[!UICONTROL 管理]**
 
-     タグ権限について詳しくは、製品ドキュメントの [ タグのユーザー権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} を参照してください。
+     タグ権限について詳しくは、製品ドキュメントの [ タグのユーザー権限 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/admin/user-permissions){target="_blank"} を参照してください。
 * Experience Platformには、以下が必要です。
    * **[!UICONTROL データモデリング]** - スキーマを管理および表示する権限項目。
    * **[!UICONTROL Identity Management]** - ID 名前空間を管理および表示する権限項目です。
@@ -74,7 +74,7 @@ Experience Platform Mobile SDKは、Adobe Experience Cloudのお客様がAdobe E
       * **[!UICONTROL データ管理]** - データセットを管理および表示する権限項目。
       * このチュートリアルに使用できる開発 **サンドボックス**。
 
-   * Journey Optimizerのレッスンでは、**プッシュ通知サービス** を設定し、**アプリサーフェス**、**ジャーニー**、**メッセージ** および **メッセージプリセット** を作成するための権限が必要です。 さらに、意思決定管理の場合は、「権限レベル **で説明されているように、** オファーを管理 **および** 決定 [ のための適切な権限が必要 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions) なります。
+   * Journey Optimizerのレッスンでは、**プッシュ通知サービス** を設定し、**アプリサーフェス**、**ジャーニー**、**メッセージ** および **メッセージプリセット** を作成するための権限が必要です。 さらに、意思決定管理の場合は、「権限レベル **で説明されているように、** オファーを管理 **および** 決定 [ のための適切な権限が必要 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/high-low-permissions) なります。
 
 * Adobe Analyticsの場合、このチュートリアルを完了するために使用できる **レポートスイート** がわかっている必要があります。
 
@@ -129,6 +129,6 @@ Google Playから、製品化された最終的なテストバージョンのア
 
 >[!SUCCESS]
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[XDM スキーマの作成](create-schema.md)**

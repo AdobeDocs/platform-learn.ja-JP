@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Experience Platform Mobile SDKとJourney Optimizerを使用して、モバイルアプリ用のプッシュ通知を作成する方法を説明します。
 
-Journey Optimizerでは、ジャーニーを作成し、ターゲットとなるオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerでのプッシュ通知のデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-gs) を参照してください。
+Journey Optimizerでは、ジャーニーを作成し、ターゲットとなるオーディエンスにメッセージを送信できます。 Journey Optimizerでプッシュ通知を送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerでのプッシュ通知のデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/push/push-config/push-gs) を参照してください。
 
 ![アーキテクチャ](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -30,7 +30,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 
 * SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 * Adobe Experience Platform用にアプリを設定します。
-* Journey Optimizerへのアクセスおよび [ 十分な権限 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-configuration)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
+* Journey Optimizerへのアクセスおよび [ 十分な権限 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/push/push-config/push-configuration)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
    * プッシュ資格情報を作成します。
    * プッシュチャネル設定を作成します。
    * ジャーニーを作成します。
@@ -174,12 +174,12 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
    > 名前は、文字（A ～ Z）で始める必要があります。使用できるのは英数字のみです。アンダースコア（`_`）、ドット（`.`）、ハイフン（`-`）も使用できます。
 
 
-1. 設定にカスタムまたはコアのデータ使用ラベルを割り当てるには、「**[!UICONTROL アクセスを管理]**」を選択します。[詳しくは、オブジェクトレベルのアクセス制御（OLAC）を参照してください](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
+1. 設定にカスタムまたはコアのデータ使用ラベルを割り当てるには、「**[!UICONTROL アクセスを管理]**」を選択します。[詳しくは、オブジェクトレベルのアクセス制御（OLAC）を参照してください](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/object-based-access)。
 
 1. **プッシュ** チャネルを選択します。
 
 
-1. 「**[!UICONTROL マーケティングアクション]**」を選択し、この設定を使用して同意ポリシーをメッセージに関連付けます。 マーケティングアクションに関連するすべての同意ポリシーは、顧客の環境設定に従って活用されます。 [ マーケティングアクションの詳細情報 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
+1. 「**[!UICONTROL マーケティングアクション]**」を選択し、この設定を使用して同意ポリシーをメッセージに関連付けます。 マーケティングアクションに関連するすべての同意ポリシーは、顧客の環境設定に従って活用されます。 [ マーケティングアクションの詳細情報 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
 
 1. **[!UICONTROL Platform]** を選択します。 チャネル設定には、**[!UICONTROL iOS]** と **[!UICONTROL Android]** の両方を設定できます。
 
@@ -443,7 +443,7 @@ Androidのプッシュ通知では、アプリ内とプッシュ通知の送信�
 
 ### イベントを定義
 
-Journey Optimizerのイベントを使用すると、プッシュ通知などのメッセージを送信するジャーニーをトリガーに設定できます。 詳しくは、[ イベントについて ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) を参照してください。
+Journey Optimizerのイベントを使用すると、プッシュ通知などのメッセージを送信するジャーニーをトリガーに設定できます。 詳しくは、[ イベントについて ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) を参照してください。
 
 1. Journey Optimizer UI の左パネルで「**[!UICONTROL 設定]**」をクリックします。
 
@@ -711,6 +711,6 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 >
 >これで、Journey Optimizerと、Experience Platform Mobile SDK用のJourney Optimizer拡張機能を使用して、アプリにプッシュ通知を有効にしました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[アプリ内メッセージの作成および送信](journey-optimizer-inapp.md)**

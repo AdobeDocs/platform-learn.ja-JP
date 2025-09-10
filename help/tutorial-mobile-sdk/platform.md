@@ -106,7 +106,7 @@ Platform インターフェイスでデータセットを開きます。 デー�
 また、**[!UICONTROL データセットをプレビュー]** 機能を使用してレコードとフィールドの例を確認することもできます。
 ![Platform データセットに送信されたライフサイクルを検証 ](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-データを検証するためのより堅牢なツールは、Platform の [ クエリサービス ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) です。
+データを検証するためのより堅牢なツールは、Platform の [ クエリサービス ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/queries/explore-data) です。
 
 ## リアルタイム顧客プロファイルを有効にする
 
@@ -169,7 +169,7 @@ Platform インターフェイスで、
 
 >[!SUCCESS]
 >
->これで、Edge NetworkだけでなくAdobe Experience Platformにもデータを送信するようにアプリを設定しました。<br>Adobe Experience Platform Mobile SDKの学習に時間を費やしていただきありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>これで、Edge NetworkだけでなくAdobe Experience Platformにもデータを送信するようにアプリを設定しました。<br>Adobe Experience Platform Mobile SDKの学習に時間を費やしていただきありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 >
 
 次のトピック：**[プッシュ通知の作成および送信](journey-optimizer-push.md)**

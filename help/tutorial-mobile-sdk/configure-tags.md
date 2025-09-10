@@ -15,7 +15,7 @@ ht-degree: 4%
 
 [!UICONTROL データ収集]インターフェイスでタグプロパティを設定する方法を説明します。
 
-Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ管理機能です。タグは、適切な顧客体験の実現に必要な分析、マーケティングおよび広告タグをデプロイおよび管理するためのシンプルな手段を提供します。 [ タグ ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) について詳しくは、製品ドキュメントを参照してください。
+Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ管理機能です。タグは、適切な顧客体験の実現に必要な分析、マーケティングおよび広告タグをデプロイおよび管理するためのシンプルな手段を提供します。 [ タグ ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) について詳しくは、製品ドキュメントを参照してください。
 
 ## 前提条件
 
@@ -23,7 +23,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
 >[!NOTE]
 >
-> Platform Launch（クライアントサイド）は [ タグ ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) になりました
+> Platform Launch（クライアントサイド）は [ タグ ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) になりました
 
 ## 学習目標
 
@@ -186,6 +186,6 @@ Tags （以前の Launch）の web バージョンを熟知している場合は
 >
 >これで、このチュートリアルの残りの部分で使用するモバイルタグプロパティが作成されました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[SDK のインストール](install-sdks.md)**

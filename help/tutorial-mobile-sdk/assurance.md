@@ -35,7 +35,7 @@ Assuranceは、Adobe Experience Platform Mobile SDKで生成された生のSDK �
 
 ## アクセスを確認
 
-組織がAssuranceにアクセスできることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) を参照してください。
+組織がAssuranceにアクセスできることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/user-access) を参照してください。
 
 ## 実装方法
 
@@ -388,7 +388,7 @@ Android Studio で以下を行います。
 >
 >これで、チュートリアルの残りの部分でAssuranceを使用するようにアプリを設定しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 
 次のトピック：**[同意の実装](consent.md)**

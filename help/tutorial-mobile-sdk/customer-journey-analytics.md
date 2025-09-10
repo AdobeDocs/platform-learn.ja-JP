@@ -18,7 +18,7 @@ Customer Journey Analyticsとのモバイルアプリのやり取りをレポー
 
 Adobe Analyticsとは異なり、Customer Journey AnalyticsはExperience Platformで作成されたデータセットのデータを *使用* します。 Adobe Experience Platform Mobile SDKを使用してCustomer Journey Analyticsに直接データが送信されるのではなく、データセットにデータが送信されます。 その後、接続はCustomer Journey Analyticsで設定され、Reporting and Analysis プロジェクトで使用するデータセットを選択します。
 
-チュートリアルのこのレッスンでは、Luma チュートリアルアプリから取得したデータのレポートと分析に焦点を当てています。 Customer Journey Analyticsのユニークな機能の 1 つは、複数のソース（CRM、POS、ロイヤルティアプリケーション、コールセンター）とチャネル（web、モバイル、オフライン）のデータを組み合わせて、カスタマージャーニーに関する深いインサイトを得ることです。 この機能はこのレッスンの範囲外です。 詳しくは、[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) 概要を参照してください。
+チュートリアルのこのレッスンでは、Luma チュートリアルアプリから取得したデータのレポートと分析に焦点を当てています。 Customer Journey Analyticsのユニークな機能の 1 つは、複数のソース（CRM、POS、ロイヤルティアプリケーション、コールセンター）とチャネル（web、モバイル、オフライン）のデータを組み合わせて、カスタマージャーニーに関する深いインサイトを得ることです。 この機能はこのレッスンの範囲外です。 詳しくは、[Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-overview) 概要を参照してください。
 
 
 ## 前提条件
@@ -213,7 +213,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
 ## プロジェクトの作成
 
-Workspace プロジェクトは、Customer Journey Analyticsでレポートとビジュアライゼーションを作成するために使用されます。 包括的なレポートと魅力的なビジュアライゼーションを作成する方法は多数ありますが、これはこのチュートリアルの範囲外です。 詳しくは、[Workspaceの概要 ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) および [ 新規プロジェクトのビルド ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) を参照してください。
+Workspace プロジェクトは、Customer Journey Analyticsでレポートとビジュアライゼーションを作成するために使用されます。 包括的なレポートと魅力的なビジュアライゼーションを作成する方法は多数ありますが、これはこのチュートリアルの範囲外です。 詳しくは、[Workspaceの概要 ](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) および [ 新規プロジェクトのビルド ](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) を参照してください。
 
 レッスンのこのセクションでは、次の場所でレポートとビジュアライゼーションを表示するプロジェクトを作成します。
 
@@ -468,6 +468,6 @@ Commerceのイベントレポートが完成しました。
 >[!SUCCESS]
 >
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[結論と次のステップ](conclusion.md)**

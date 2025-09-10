@@ -54,11 +54,11 @@ XDM データをEdge NetworkからAdobe Analyticsに送信するには、[ デ�
 
 ## 自動マッピング
 
-標準 XDM フィールドの多くは、Analytics 変数に自動的にマッピングされます。 [ 完全なリスト ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) を参照してください。
+標準 XDM フィールドの多くは、Analytics 変数に自動的にマッピングされます。 [ 完全なリスト ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) を参照してください。
 
 ### 例#1 - s.products
 
-良い例は、処理ルールを使用して入力できない [products 変数 ](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products) です。 XDM 実装を使用すると、必要なデータをすべて `productListItems` に渡し、Analytics マッピング `s.products` よってデータが自動的に入力されます。
+良い例は、処理ルールを使用して入力できない [products 変数 ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/products) です。 XDM 実装を使用すると、必要なデータをすべて `productListItems` に渡し、Analytics マッピング `s.products` よってデータが自動的に入力されます。
 
 このオブジェクトは、
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->`productListItems[].SKU` と `productListItems[].name` の両方にデータが含まれている場合、`productListItems[].SKU` の値が使用されます。 詳しくは、[Adobe Experience Edgeの Analytics 変数のマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) を参照してください。
+>`productListItems[].SKU` と `productListItems[].name` の両方にデータが含まれている場合、`productListItems[].SKU` の値が使用されます。 詳しくは、[Adobe Experience Edgeの Analytics 変数のマッピング ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) を参照してください。
 
 
 ### 例#2 - scAdd
@@ -211,7 +211,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 ### マーチャンダイジング eVar
 
-Analytics の設定で [ マーチャンダイジング eVar](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) を使用している場合、そのマーチャンダイジング情報を取得するために、[ イベントデータの追跡 ](events.md) で定義した XDM ペイロードを拡張する必要があります。 マーチャンダイジング var の例として、商品の色を取得するタイミング（`evar1` など）を `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` します
+Analytics の設定で [ マーチャンダイジング eVar](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) を使用している場合、そのマーチャンダイジング情報を取得するために、[ イベントデータの追跡 ](events.md) で定義した XDM ペイロードを拡張する必要があります。 マーチャンダイジング var の例として、商品の色を取得するタイミング（`evar1` など）を `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` します
 
 * JSON の場合：
 
@@ -301,7 +301,7 @@ Analytics の設定で [ マーチャンダイジング eVar](https://experience
 >処理ルールに初めてマッピングする場合、インターフェイスには XDM オブジェクトからのコンテキストデータ変数は表示されません。 この問題を修正するには、任意の値を選択し、保存してから、編集に戻ります。 すべての XDM 変数が表示されます。
 
 
-[ 処理ルールを使用した contextData 変数の prop および eVar へのマッピング ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules) を参照してください。
+[ 処理ルールを使用した contextData 変数の prop および eVar へのマッピング ](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules) を参照してください。
 
 >[!TIP]
 >

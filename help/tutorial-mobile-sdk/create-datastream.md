@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Experience Platform でデータストリームを作成する方法を説明します。
 
-データストリームは、Platform Edge Network上のサーバーサイド設定です。 データストリームは、Platform Edge Networkへの受信データがAdobe Experience Cloud アプリケーションおよびサービスに適切にルーティングされるようにします。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) またはこの [ ビデオ ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams) を参照してください。
+データストリームは、Platform Edge Network上のサーバーサイド設定です。 データストリームは、Platform Edge Networkへの受信データがAdobe Experience Cloud アプリケーションおよびサービスに適切にルーティングされるようにします。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) またはこの [ ビデオ ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/edge-network/configure-datastreams) を参照してください。
 
 ![アーキテクチャ](assets/architecture.png){zoomable="yes"}
 
@@ -110,6 +110,6 @@ You might also want to enable the Adobe Experience Platform service.
 >
 >これで、チュートリアルの残りの部分で使用するデータストリームが作成されました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[タグプロパティの設定](configure-tags.md)**

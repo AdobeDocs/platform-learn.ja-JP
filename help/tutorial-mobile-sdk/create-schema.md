@@ -25,11 +25,11 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 データを Platform に取り込む前に、スキーマを構成して、データの構造を記述し、各フィールドに含めることができるデータの種類を制限する必要があります。スキーマは、基本クラスと 0 個以上のスキーマフィールドグループで構成されます。
 
-デザインの原則やベストプラクティスなど、スキーマ構成モデルについて詳しくは、[ スキーマ構成の基本 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition) またはプレイリスト [XDM を使用した顧客体験データのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を参照してください。
+デザインの原則やベストプラクティスなど、スキーマ構成モデルについて詳しくは、[ スキーマ構成の基本 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition) またはプレイリスト [XDM を使用した顧客体験データのモデル化 ](https://experienceleague.adobe.com/ja/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を参照してください。
 
 >[!TIP]
 >
->分析ソリューションデザインリファレンス（SDR）を熟知している場合、スキーマは、より堅牢な SDR と考えることができます。 詳しくは、[ ソリューションデザインリファレンス（SDR）ドキュメントの作成と管理 ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) を参照してください。
+>分析ソリューションデザインリファレンス（SDR）を熟知している場合、スキーマは、より堅牢な SDR と考えることができます。 詳しくは、[ ソリューションデザインリファレンス（SDR）ドキュメントの作成と管理 ](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) を参照してください。
 
 ## 前提条件
 
@@ -70,7 +70,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 * **クラス** スキーマに含まれるデータの行動の側面を定義します。 例：`XDM ExperienceEvent` は、時系列、イベントデータを取得し、`XDM Individual Profile` は、個人に関する属性データを取得します。
 * **データ型** は、基本的なリテラルフィールドと同じ方法で、クラスまたはフィールドグループの参照フィールド型として使用されます。
 
-上記の説明は概要です。 詳しくは、[ スキーマ構成要素 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) ビデオを参照するか、製品ドキュメントの [ スキーマ構成の基本 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition) を参照してください。
+上記の説明は概要です。 詳しくは、[ スキーマ構成要素 ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/schemas/schema-building-blocks) ビデオを参照するか、製品ドキュメントの [ スキーマ構成の基本 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition) を参照してください。
 
 このチュートリアルでは、「コンシューマーエクスペリエンスイベント」フィールドグループを使用して、プロセスを示すカスタムイベントを作成します。
 
@@ -242,6 +242,6 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 >
 >これで、チュートリアルの残りの部分で使用するスキーマができました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[データストリーム [!UICONTROL &#x200B; の作成]](create-datastream.md)**

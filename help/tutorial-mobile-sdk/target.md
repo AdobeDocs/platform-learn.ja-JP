@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Platform Mobile SDKとAdobe Targetを使用して、モバイルアプリのエクスペリエンスを最適化およびパーソナライズする方法について説明します。
 
-Target は、顧客体験をカスタマイズおよびパーソナライズするために必要なすべてを提供します。 Target は、Web サイト、モバイルサイト、アプリ、ソーシャルメディア、その他のデジタルチャネルの売上高を最大化するのに役立ちます。 Target は、A/B テスト、多変量分析テスト、製品とコンテンツのレコメンデーション、コンテンツのターゲット設定、AI を使用したコンテンツの自動パーソナライズなどを実行できます。 このレッスンでは、Target の A/B テスト機能に焦点を当てます。 詳しくは、[A/B テストの概要 ](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab) 参照してください。
+Target は、顧客体験をカスタマイズおよびパーソナライズするために必要なすべてを提供します。 Target は、Web サイト、モバイルサイト、アプリ、ソーシャルメディア、その他のデジタルチャネルの売上高を最大化するのに役立ちます。 Target は、A/B テスト、多変量分析テスト、製品とコンテンツのレコメンデーション、コンテンツのターゲット設定、AI を使用したコンテンツの自動パーソナライズなどを実行できます。 このレッスンでは、Target の A/B テスト機能に焦点を当てます。 詳しくは、[A/B テストの概要 ](https://experienceleague.adobe.com/ja/docs/target/using/activities/abtest/test-ab) 参照してください。
 
 ![アーキテクチャ](assets/architecture-at.png){zoomable="yes"}
 
@@ -31,7 +31,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 ## 前提条件
 
 * SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
-* [ 権限、適切に設定された役割、ワークスペース、プロパティ ](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/property-channel) を使用して、Adobe Targetにアクセスします。
+* [ 権限、適切に設定された役割、ワークスペース、プロパティ ](https://experienceleague.adobe.com/ja/docs/target/using/administer/manage-users/enterprise/property-channel) を使用して、Adobe Targetにアクセスします。
 
 
 ## 学習目標
@@ -66,7 +66,7 @@ Target で A/B テストを実行する前に、設定と統合が適切に行�
 
    Target UI の **[!UICONTROL 管理]**/**[!UICONTROL プロパティ]** で、プロパティを確認できます。 「![ コード ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)」を選択して、使用するプロパティのプロパティトークンを表示します。 プロパティトークンには `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"` のような形式があります。値 `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` のみを入力する必要があります。
 
-   オプションで、ターゲット環境 ID を指定できます。 Target では、環境を使用してサイトと実稼動前の環境を整理し、管理を容易にし、レポートを個別に作成できます。 プリセットされた環境には、実稼働、ステージング、開発が含まれます。 詳しくは、[ 環境 ](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) および [ ターゲット環境 ID](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) を参照してください。
+   オプションで、ターゲット環境 ID を指定できます。 Target では、環境を使用してサイトと実稼動前の環境を整理し、管理を容易にし、レポートを個別に作成できます。 プリセットされた環境には、実稼働、ステージング、開発が含まれます。 詳しくは、[ 環境 ](https://experienceleague.adobe.com/ja/docs/target/using/administer/environments) および [ ターゲット環境 ID](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) を参照してください。
 
    オプションで、Target サードパーティ ID 名前空間を指定して、ID 名前空間（例：CRM ID）でのプロファイル同期をサポートすることができます。 詳しくは、[Target サードパーティ ID 名前空間 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) を参照してください。
 
@@ -399,6 +399,6 @@ Assuranceで A/B テストを検証するには：
 >
 >A/B テストに対してアプリを有効にし、Adobe Experience Platform Mobile SDKのOffer Decisioningおよび Target 拡張機能を使用した A/B テストの結果を表示しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[結論と次のステップ](conclusion.md)**

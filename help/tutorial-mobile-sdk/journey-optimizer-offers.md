@@ -35,7 +35,7 @@ Journey Optimizerの意思決定管理は、すべてのタッチポイントを
 
 * SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 * Adobe Experience Platform用にアプリを設定します。
-* Journey Optimizerへのアクセス - [ オファーと意思決定を管理する適切な権限 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions) を持つ意思決定管理。
+* Journey Optimizerへのアクセス - [ オファーと意思決定を管理する適切な権限 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/high-low-permissions) を持つ意思決定管理。
 
 
 ## 学習目標
@@ -237,7 +237,7 @@ Assuranceの設定を検証するには：
 * 実施要件ルール：例えば、は、特定のオーディエンスに対してのみ使用できるオファーです。
 * ランキング方法：複数のオファーを選択できる場合、ランク付けにどの方法を使用するか（オファーの優先度、式の使用、AI モデルなど）。
 
-プレースメント、ルール、ランキング、オファー、表示域、コレクション、決定などの相互関係および関係性を理解するには、[ オファーを作成および管理するための主な手順 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) を参照してください。 このレッスンでは、Journey Optimizer - Decision Management 内で柔軟に意思決定を定義することよりも、意思決定の出力を使用することに重点を置いています。
+プレースメント、ルール、ランキング、オファー、表示域、コレクション、決定などの相互関係および関係性を理解するには、[ オファーを作成および管理するための主な手順 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) を参照してください。 このレッスンでは、Journey Optimizer - Decision Management 内で柔軟に意思決定を定義することよりも、意思決定の出力を使用することに重点を置いています。
 
 1. Journey Optimizer UI の左パネルで「**[!UICONTROL オファー]**」をクリックします。
 1. 上部バーの「**[!UICONTROL 決定]**」を選択します。
@@ -543,6 +543,6 @@ Assuranceでオファー実装を検証するには：
 >
 >Experience Platform Mobile SDKのOffer Decisioningおよび Target 拡張機能を使用してオファーを表示するように、アプリを有効にしました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[A/B テストの実行](target.md)**
