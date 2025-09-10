@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >カスタムフィールドは、Experience Cloud組織識別子の下に配置されます。
 >
-テナント名 `_techmarketingdemos` は組織の一意の値に置き換えられます。
+>テナント名 `_techmarketingdemos` は組織の一意の値に置き換えられます。
 
 
 
@@ -286,7 +286,7 @@ Analytics の設定で [ マーチャンダイジング eVar](https://experience
 
 このデータを使用した処理ルールは、次のようになります。
 
-* **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** （4） **[!UICONTROL が設定されている場合は、（1）]** アプリ画面名（eVar2） **[!UICONTROL （2）を]** a.x._techmarketingdemo.appinformation.appstatedetails.screenname **** a.x._techmarketingdemo.appinformation.appstatedetails.screenname **[!UICONTROL の値に上書き]** （5）します。
+* **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** （4） **[!UICONTROL が設定されている場合は、（1）]** アプリ画面名（eVar2） **[!UICONTROL （2）を]** a.x._techmarketingdemo.appinformation.appstatedetails.screenname **&#x200B;**&#x200B;a.x._techmarketingdemo.appinformation.appstatedetails.screenname **[!UICONTROL の値に上書き]** （5）します。
 
 * **[!UICONTROL a.x.commerce.saveForLaters.value （コンテキスト）]** （9） **[!UICONTROL が設定されている場合は、（イベント]** （6） **[!UICONTROL ウィッシュリストに追加（イベント 3）]** （7）を **[!UICONTROL a.x.commerce.saveForLaters.value （コンテキスト）]** （8）に **[!UICONTROL 追加]** （10）します。
 
@@ -313,7 +313,7 @@ Analytics の設定で [ マーチャンダイジング eVar](https://experience
 
 推奨されるEdge Networkを使用して移行する場合は、次の選択肢があります。
 
-* [ イベントデータのトラッキング ](configure-tags.md#extension-configuration) 方法のレッスンで示すように [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)Edge Network拡張機能を実装し、[](events.md) API を使用します。 このチュートリアルでは、この実装に焦点を当てています。
+* [ イベントデータのトラッキング ](configure-tags.md#extension-configuration) 方法のレッスンで示すように [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)Edge Network拡張機能を実装し、[&#128279;](events.md) API を使用します。 このチュートリアルでは、この実装に焦点を当てています。
 * [Edge Bridge拡張機能 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を実装し、[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API 呼び出しを引き続き使用します。 詳細と別のチュートリアルについては、[Edge Bridge拡張機能の実装 ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) を参照してください。
 
 

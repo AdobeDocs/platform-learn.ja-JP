@@ -60,7 +60,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
    > Real-Time CDPなどの Platform ベースのアプリケーションを使用しているお客様は、このチュートリアルで開発用サンドボックスを使用する必要があります。 その他の顧客は、デフォルトの実稼動サンドボックスを使用します。
 
 
-1. 左側のパネルで ![ データ管理 ](/help/assets/icons/Schemas.svg) の下の **[!UICONTROL スキーマ]****[!UICONTROL スキーマ]** を選択します。
+1. 左側のパネルで ![ データ管理 ](/help/assets/icons/Schemas.svg) の下の **[!UICONTROL スキーマ]**&#x200B;**[!UICONTROL スキーマ]** を選択します。
 
    ![ タグのホーム画面 ](assets/mobile-schema-navigate.png){zoomable="yes"}
 
@@ -107,7 +107,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    ![ スキーマ ウィザードの基本クラス ](assets/schema-wizard-base-class.png){zoomable="yes"}
 
-1. **[!UICONTROL スキーマを作成]** ウィザードの **[!UICONTROL 名前とレビュー]** 手順で、**[!UICONTROL スキーマ表示名]** （例：`Luma Mobile Event Schema`）および [!UICONTROL  説明 ] （例：`Schema for Luma mobile app experience events`）を入力します。
+1. **[!UICONTROL スキーマを作成]** ウィザードの **[!UICONTROL 名前とレビュー]** 手順で、**[!UICONTROL スキーマ表示名]** （例：`Luma Mobile Event Schema`）および [!UICONTROL &#x200B; 説明 &#x200B;] （例：`Schema for Luma mobile app experience events`）を入力します。
 
    >[!NOTE]
    >
@@ -118,7 +118,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
    ![ スキーマ名とレビュー ](assets/schema-wizard-name-and-review.png){zoomable="yes"}
 
 
-1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**プラス****[!UICONTROL 追加]**」を選択します。
+1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**プラス**&#x200B;**[!UICONTROL 追加]**」を選択します。
 
    ![フィールドグループを追加](assets/add-field-group.png){zoomable="yes"}
 
@@ -141,7 +141,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 >
 >グループ内のすべてのフィールドを使用する必要はないことに注意してください。 また、フィールドを削除して、スキーマを簡潔で理解可能な状態に保つこともできます。 役に立つ場合、スキーマは空のデータレイヤーと考えることができます。 アプリでは、適切なタイミングで関連する値を入力します。
 
-[!UICONTROL  消費者エクスペリエンスイベント ] フィールドグループのデータタイプは [!UICONTROL Web 情報 ] で、ページビュー数やリンククリック数などのイベントを記述します。 執筆時点では、この機能にモバイルアプリの同等機能はないので、独自の機能を作成します。
+[!UICONTROL &#x200B; 消費者エクスペリエンスイベント &#x200B;] フィールドグループのデータタイプは [!UICONTROL Web 情報 &#x200B;] で、ページビュー数やリンククリック数などのイベントを記述します。 執筆時点では、この機能にモバイルアプリの同等機能はないので、独自の機能を作成します。
 
 ## カスタムデータタイプの作成
 
@@ -163,7 +163,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    >[!TIP]
    >
-   > カスタムフィールドには、常にわかりやすい [!UICONTROL  表示名 ] を使用します。 これにより、セグメントビルダーなどのダウンストリームサービスにフィールドが表示される際に、マーケターがカスタムフィールドにアクセスしやすくなります。
+   > カスタムフィールドには、常にわかりやすい [!UICONTROL &#x200B; 表示名 &#x200B;] を使用します。 これにより、セグメントビルダーなどのダウンストリームサービスにフィールドが表示される際に、マーケターがカスタムフィールドにアクセスしやすくなります。
 
 
 1. フィールドを追加するには、「![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」ボタンを選択します。
@@ -207,7 +207,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
 1. このレッスンで作成したスキーマを開きます。
 
-1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**[!UICONTROL プラス]****[!UICONTROL 追加]**」を選択します。
+1. ![ フィールドグループ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「**[!UICONTROL プラス]**&#x200B;**[!UICONTROL 追加]**」を選択します。
 
    ![ 新しいフィールドグループの追加 ](assets/schema-fieldgroup-add.png){zoomable="yes"}
 
@@ -219,7 +219,7 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 
    ![ 名前と説明の入力 ](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
-1. メインのコンポジション画面から、「**[!UICONTROL  アプリのインタラクション**]」を選択します。
+1. メインのコンポジション画面から、「**[!UICONTROL &#x200B; アプリのインタラクション**]」を選択します。
 
 1. スキーマ名の横にある ![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ボタンを選択して、スキーマのルートにフィールドを追加します。
 
@@ -244,4 +244,4 @@ Experience Platform では、スキーマを使用して、一貫性のある再
 >
 >Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
-次のトピック：**[データストリーム [!UICONTROL  の作成]](create-datastream.md)**
+次のトピック：**[データストリーム [!UICONTROL &#x200B; の作成]](create-datastream.md)**

@@ -142,7 +142,7 @@ Customer Journey Analyticsのデータビューは、接続からのデータを
 
         ![CJAのデータビュー 2a](assets/cja-dataview-2b.png){zoomable="yes"}
 
-   1. 「スキーマフィールド」ペインから特定のスキーマフィールドをドラッグし、「**[!UICONTROL 含まれるコンポーネント]**」ペインの **[!UICONTROL 指標]** または [!UICONTROL  ディメンション ] リストにドロップします。
+   1. 「スキーマフィールド」ペインから特定のスキーマフィールドをドラッグし、「**[!UICONTROL 含まれるコンポーネント]**」ペインの **[!UICONTROL 指標]** または [!UICONTROL &#x200B; ディメンション &#x200B;] リストにドロップします。
 
       ![CJAのデータビュー 2a](assets/cja-dataview-3.png){zoomable="yes"}
 
@@ -226,7 +226,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. 右上のアプリ ![ アプリ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) メニューを使用して、Customer Journey Analytics インターフェイスに移動します。
 
-1. 上部メニューバーから **[!UICONTROL 0}Workspace} を選択します。]**
+1. 上部メニューバーから **[!UICONTROL 0&rbrace;Workspace&rbrace; を選択します。]**
 
 1. **[!UICONTROL プロジェクトを作成]** を選択します。
 
@@ -275,7 +275,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. **[!UICONTROL 指標]** リストの下の **[!UICONTROL すべて表示]** を選択します。
 
-1. **[!UICONTROL スクリーンビュー]** コンポーネントを [!UICONTROL _**指標**をここに（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。
+1. **[!UICONTROL スクリーンビュー]** コンポーネントを [!UICONTROL _&#x200B;**指標**&#x200B;をここに（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。
    ![CJA プロジェクト 7](assets/cja-projects-7.png){zoomable="yes"}
 フリーフォームテーブルに、選択した期間の各日の画面ビューが表示されるようになりました。 ただし、アプリで使用される様々な画面ごとの画面ビュー数を表示する必要があります。
 
@@ -305,7 +305,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. **[!UICONTROL フリーフォームテーブル （2）]** の名前を `App Interactions` に変更します。
 
-1. **[!UICONTROL アプリインタラクション]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_）にドラッグ&amp;ドロップ ] ます。
+1. **[!UICONTROL アプリインタラクション]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_）にドラッグ&amp;ドロップ &#x200B;] ます。
 
 1. **[!UICONTROL アプリインタラクション名]** ディメンションを **[!UICONTROL 日]** ヘッダーにドラッグ&amp;ドロップして、このディメンションを置き換えます。
 
@@ -325,7 +325,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 #### Commerce イベント
 
-1. 現在の ![ アプリの使用状況 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネルの外部にある [!UICONTROL  追加 ] を選択して、新しいパネルを作成します。
+1. 現在の ![ アプリの使用状況 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネルの外部にある [!UICONTROL &#x200B; 追加 &#x200B;] を選択して、新しいパネルを作成します。
    ![CJA プロジェクト 13](assets/cja-projects-13.png){zoomable="yes"}
 
 1. 適切な期間を選択してください。
@@ -337,7 +337,7 @@ Workspace プロジェクトは、Customer Journey Analyticsでレポートと�
 
 1. **[!UICONTROL フリーフォームテーブル]** の名前を `Commerce Events` に変更します。
 
-1. **[!UICONTROL 製品表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。
+1. **[!UICONTROL 製品表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。
 
 1. 「**[!UICONTROL 製品表示]**」列の右側の「**[!UICONTROL リストに製品追加]**」指標をドラッグ&amp;ドロップして、フリーフォームテーブルにこの列を挿入します。 列を挿入する際に、「**[!UICONTROL +追加]**」（青色）が表示されていることを確認します。
    ![CJA プロジェクト 15](assets/cja-projects-15.png){zoomable="yes"}
@@ -358,7 +358,7 @@ Commerceのイベントレポートが完成しました。
 
 次に、コマースファネルのフォールアウトビジュアライゼーションを作成します。このビジュアライゼーションでは、商品を閲覧したユーザーのうち何人が買い物かごに商品を追加したかを表示し、そこから後で購入するために商品を保存したユーザーの数を表示します。
 
-1. ![2}Commerce](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネル内の「追加 **[!UICONTROL を選択し、ポップアップから]** フォールアウト ![ （フォールアウトビジュアライゼーションを表す）を選択します。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg)
+1. ![2&rbrace;Commerce](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) パネル内の「追加 **[!UICONTROL を選択し、ポップアップから]** フォールアウト ![ （フォールアウトビジュアライゼーションを表す）を選択します。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg)
 
 1. **[!UICONTROL タッチポイントを追加]** ドロップダウンリストから [!UICONTROL *製品表示*] を選択します。
    ![CJA プロジェクト 18](assets/cja-projects-18.png){zoomable="yes"}
@@ -390,7 +390,7 @@ Commerceのイベントレポートが完成しました。
 
 1. **[!UICONTROL フリーフォームテーブル]** の名前を `Monthly Overview` に変更します。
 
-1. **[!UICONTROL 表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。
+1. **[!UICONTROL 表示]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。
 
 1. **[!UICONTROL 月]** ディメンションを **[!UICONTROL 日]** 列にドラッグ&amp;ドロップして、ディメンションを置き換えます。
 
@@ -411,7 +411,7 @@ Commerceのイベントレポートが完成しました。
 
 1. **[!UICONTROL フリーフォームテーブル （2）]** の名前を `People` に変更します。
 
-1. **[!UICONTROL 人物]** 指標をこちら（または他のコンポーネント [!UICONTROL _）にドラッグ&amp;ドロップ&#x200B;****指標_ ドロップ ] ます。
+1. **[!UICONTROL 人物]** 指標をこちら（または他のコンポーネント [!UICONTROL _）にドラッグ&amp;ドロップ&#x200B;**&#x200B;**&#x200B;指標_ ドロップ &#x200B;] ます。
 
 1. **[!UICONTROL アクティビティ名]** を **[!UICONTROL 日]** 列にドラッグ&amp;ドロップして、ディメンションを置き換えます。
 
@@ -443,7 +443,7 @@ Commerceのイベントレポートが完成しました。
 
 1. **[!UICONTROL フリーフォームテーブル]** の名前を `Store Entries / Exits Across Cities` に変更します。
 
-1. **[!UICONTROL 場所イベント]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） ] にドラッグ&amp;ドロップします。 レポートには、アプリで発生したすべての場所イベントの日別概要が表示されるようになりました。 [ データビュー ](#create-a-data-view) の一部として、このディメンションを具体的に設定した方法に注意してください。
+1. **[!UICONTROL 場所イベント]** 指標を [!UICONTROL _ここに&#x200B;**指標**（または他のコンポーネント_） &#x200B;] にドラッグ&amp;ドロップします。 レポートには、アプリで発生したすべての場所イベントの日別概要が表示されるようになりました。 [ データビュー ](#create-a-data-view) の一部として、このディメンションを具体的に設定した方法に注意してください。
 
 1. **[!UICONTROL 市区町村]** ディメンションを **[!UICONTROL 日]** 列ヘッダーにドラッグ&amp;ドロップして、ディメンションを置き換えます。 このレポートには、場所イベントの市区町村が表示されます。
 

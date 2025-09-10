@@ -325,7 +325,7 @@ Assuranceの設定を検証するには：
 
 >[!TAB Android]
 
-1. Android Studio で、[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) が **[!UICONTROL Android:app]** ChevronDown **** Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
+1. Android Studio で、[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) が **[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
 1. Android Studio プロジェクトナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL LumaApplication]** に移動します。
 1. `com.adobe.marketing.mobile.Messaging` が読み込みのリストに含まれていることを確認します。
 
@@ -440,7 +440,7 @@ Assuranceの設定を検証するには：
 
 このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガーJourney Optimizerできることを確認します（[ プッシュ通知 ](journey-optimizer-inapp.md) および [ アプリ内メッセージ ](journey-optimizer-push.md) を参照）。 例えば、通常の例では、アプリユーザーが物理的なストアのジオフェンスに入ると、製品プロモーションを伴うプッシュ通知が送信されます。
 
-アプリのジオロケーション機能のこの実装により、コードが最小限に抑えられます。 タグプロパティで定義した Places サービス、データ要素、ルールが、ほとんどの機能を提供します。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
+アプリのジオロケーション機能のこの実装により、コードが最小限に抑えられます。 タグプロパティで定義した Places サービス、データ要素、ルールが、ほとんどの機能を提供します。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) [ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
 
 >[!SUCCESS]
 >

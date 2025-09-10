@@ -46,7 +46,7 @@ Adobe Experience Platform のタグは、Adobe が提供する次世代のタグ
 
       >[!NOTE]
       >
-      > このレッスンで行っているような、エッジベースの Mobile SDK実装のデフォルトの同意設定は、タグプロパティ設定の [!UICONTROL  プライバシー ] 設定ではなく、[!UICONTROL  同意拡張機能 ] から取得されます。 同意拡張機能を追加および設定する方法は、このレッスンの後半で説明します。 詳しくは、[ ドキュメント ](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/) を参照してください。
+      > このレッスンで行っているような、エッジベースの Mobile SDK実装のデフォルトの同意設定は、タグプロパティ設定の [!UICONTROL &#x200B; プライバシー &#x200B;] 設定ではなく、[!UICONTROL &#x200B; 同意拡張機能 &#x200B;] から取得されます。 同意拡張機能を追加および設定する方法は、このレッスンの後半で説明します。 詳しくは、[ ドキュメント ](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/) を参照してください。
 
 
 1. 新規プロパティを開きます。

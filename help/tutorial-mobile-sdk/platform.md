@@ -45,7 +45,7 @@ ht-degree: 6%
 
 Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイク内にデータセットとして保持されます。 データセットは、スキーマ（列）とフィールド（行）を含んだデータのコレクション（通常はテーブル）のストレージおよび管理用の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。詳しくは、[ドキュメント](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)を参照してください。
 
-1. Experience Platform UI に移動します。 右上のアプリ **[!UICONTROL アプリ]** メニューから ![0}Experience Platform} を選択します。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)
+1. Experience Platform UI に移動します。 右上のアプリ **[!UICONTROL アプリ]** メニューから ![0&rbrace;Experience Platform&rbrace; を選択します。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)
 
 
 1. 左側のナビゲーションメニューから **[!UICONTROL データセット]** を選択します。
@@ -144,7 +144,7 @@ Platform インターフェイスで、
 
 ![ID 値の検索 ](assets/platform-profile-lookup.png){zoomable="yes"}
 
-**[!UICONTROL 詳細]** 画面には、**[!UICONTROL ** リンクされた ID **]** など、ユーザーに関する基本情報が表示されます。
+**[!UICONTROL 詳細]** 画面には、**[!UICONTROL **&#x200B; リンクされた ID &#x200B;**]** など、ユーザーに関する基本情報が表示されます。
 ![ プロファイルの詳細 ](assets/platform-profile-details.png){zoomable="yes"}
 
 **[!UICONTROL イベント]** には、このユーザーについてモバイルアプリ実装から収集されたイベントが表示されます。

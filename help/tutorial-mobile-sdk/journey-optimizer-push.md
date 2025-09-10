@@ -77,7 +77,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
    ![ 新しいキーを作成 ](assets/mobile-push-apple-dev-new-key.png){zoomable="yes"}
 
 1. **[!UICONTROL キー名]** を入力します。
-1. 「**[!UICONTROL Apple プッシュ通知サービス ] （APN）**」を選択し、「**[!UICONTROL 設定]**」を選択します。
+1. 「**[!UICONTROL Apple プッシュ通知サービス &#x200B;] （APN）**」を選択し、「**[!UICONTROL 設定]**」を選択します。
    1. **[!UICONTROL キーを設定]** 画面で、**[!UICONTROL 環境]** ドロップダウンメニューから **[!UICONTROL サンドボックスと実稼動]** を選択します。
    1. 「**[!UICONTROL 保存]**」を選択します。
 1. 「**[!UICONTROL 続行]**」を選択します。
@@ -101,7 +101,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
    1. **[!UICONTROL プロジェクト名]** を入力します。
    1. **[!UICONTROL プロジェクトを作成]** - **[!UICONTROL プロジェクトの名前から始めましょう]** で「**[!UICONTROL 続行]**」を選択します。 例：`Luma Android App.`
    1. 「**[!UICONTROL Firebase の Gemini]**」を無効にし、「**[!UICONTROL プロジェクトを作成する]**- **[!UICONTROL Firebase プロジェクトの AI アシスタンス]**」で「**[!UICONTROL 続行]**」を選択します。
-   1. このプロジェクトの **[!UICONTROL Google Analyticsを無効にし]****[!UICONTROL プロジェクトの作成]** - **[!UICONTROL Firebase プロジェクトのGoogle Analytics]** で **[!UICONTROL 続行]** を選択します。
+   1. このプロジェクトの **[!UICONTROL Google Analyticsを無効にし]**&#x200B;**[!UICONTROL プロジェクトの作成]** - **[!UICONTROL Firebase プロジェクトのGoogle Analytics]** で **[!UICONTROL 続行]** を選択します。
    1. **[!UICONTROL プロジェクトを作成]** を選択します。
    1. プロジェクトの準備が整ったら、「**[!UICONTROL 続行]**」を選択します。
 
@@ -141,14 +141,14 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 1. **[!UICONTROL アプリサーフェスを作成]** を選択します。
 1. **[!UICONTROL アプリサーフェスを作成]** インターフェイスで、次の操作を行います。
    1. **[!UICONTROL 名前]** を入力します。
-   1. iOSのプッシュ通知を送信する場合は **** Apple iOS} を選択します。
+   1. iOSのプッシュ通知を送信する場合は **&#x200B;**&#x200B;Apple iOS&rbrace; を選択します。
       1. **[!UICONTROL アプリ ID]** （例：`com.adobe.luma.tutorial.swiftui`）を入力します。
       1. サンドボックスを選択します（オプション）。
       1. **[!UICONTROL プッシュ資格情報]** を有効にします。
       1. 保存した `.p8` 秘密鍵ファイルを **[!UICONTROL ファイルをドラッグ&amp;ドロップ]** にドロップします。
       1. **[!UICONTROL キー ID]** を入力します。
       1. **[!UICONTROL チーム ID]** を入力します。
-   1. Androidのプッシュ通知を送信する場合は **** Android} を選択します。
+   1. Androidのプッシュ通知を送信する場合は **&#x200B;**&#x200B;Android&rbrace; を選択します。
       1. **[!UICONTROL アプリ ID]** （例：`com.adobe.luma.tutorial.android`）を入力します。
       1. サンドボックスを選択します（オプション）。
       1. **[!UICONTROL プッシュ資格情報]** を有効にします。
@@ -198,7 +198,7 @@ Journey Optimizerでは、ジャーニーを作成し、ターゲットとなる
 モバイルアプリから Experience Edgeに送信されるデータが確実にEdge Networkに転送されるようにするには、Journey Optimizer設定を更新します。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
+1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、次の操作を行います。
 
    1. まだ選択していない場合は、{ プロファイルデータセット **[!UICONTROL から]** 0}AJO プッシュプロファイルデータセット **[!UICONTROL を選択します。]**&#x200B;このプロファイルデータセットは、`MobileCore.setPushIdentifier` API 呼び出しを使用する場合に必要です（[ プッシュ通知用のデバイストークンの登録 ](#register-device-token-for-push-notifications) を参照）。 また、この選択により、プッシュ通知の一意の識別子（プッシュ識別子など）がユーザーのプロファイルの一部として保存されます。
@@ -357,7 +357,7 @@ Androidのプッシュ通知では、アプリ内とプッシュ通知の送信�
 
 >[!TAB Android]
 
-1. Android Studio で、[aepsdk-messing-android](https://github.com/adobe/aepsdk-messaging-android) が **[!UICONTROL Android:app]** ChevronDown **** Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
+1. Android Studio で、[aepsdk-messing-android](https://github.com/adobe/aepsdk-messaging-android) が **[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
 1. Android Studio プロジェクトナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL LumaApplication]** に移動します。
 1. `com.adobe.marketing.mobile.Messaging` が読み込みのリストに含まれていることを確認します。
 
@@ -419,7 +419,7 @@ Androidのプッシュ通知では、アプリ内とプッシュ通知の送信�
 >[!IMPORTANT]
 >
 >**iOSのみ**：この `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` 定により、プッシュ通知で APN サンドボックスまたは実稼動サーバーを使用してプッシュ通知を送信するかどうかが決まります。 シミュレーターまたはデバイスでアプリをテストする場合は、プッシュ通知を受信できるように、`messaging.useSandbox` が `true` に設定されていることを確認します。 Appleの Testflight を使用してテストするために実稼動用にアプリをデプロイする場合は、`messaging.useSandbox` を `false` に設定します。そうしないと、実稼動アプリはプッシュ通知を受信できません。<br/><br/>
->>Firebase Cloud Messaging （FCM）では、プッシュ通知用のサンドボックスの概念をサポート **していません**。
+>&#x200B;>Firebase Cloud Messaging （FCM）では、プッシュ通知用のサンドボックスの概念をサポート **していません**。
 
 
 ## 独自のプッシュ通知を作成
@@ -461,7 +461,7 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
       ![ イベントを編集ステップ 1](assets/ajo-edit-event1.png){zoomable="yes"}
 
-      **[!UICONTROL フィールド]** ダイアログで、（常に選択されるデフォルトフィールド（**[!UICONTROL _id]**、**[!UICONTROL id]** および **[!UICONTROL timestamp]**）に加えて）次のフィールドが選択されていることを確認します。 ドロップダウンリストを使用して、「選択済み **[!UICONTROL 、「すべて]**、{4 **[!UICONTROL プライマリ]** を切り替えたり **[!UICONTROL 「]** 検索 ![」フィールドを使用したりできます。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)
+      **[!UICONTROL フィールド]** ダイアログで、（常に選択されるデフォルトフィールド（**[!UICONTROL _id]**、**[!UICONTROL id]** および **[!UICONTROL timestamp]**）に加えて）次のフィールドが選択されていることを確認します。 ドロップダウンリストを使用して、「選択済み **[!UICONTROL 、「すべて]**、&lbrace;4 **[!UICONTROL プライマリ]** を切り替えたり **[!UICONTROL 「]** 検索 ![」フィールドを使用したりできます。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)
 
       * **[!UICONTROL アプリケーションが識別されました（ID）]**、
       * **[!UICONTROL イベントタイプ （eventType）]**、
@@ -473,7 +473,7 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
    1. ![ イベント ID 条件 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) フィールドの横にある **[!UICONTROL 編集]** を選択します。
 
-      1. **[!UICONTROL イベント ID 条件を追加]** ダイアログで、**[!UICONTROL イベントタイプ （eventType）]****[!UICONTROL ここに要素をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。
+      1. **[!UICONTROL イベント ID 条件を追加]** ダイアログで、**[!UICONTROL イベントタイプ （eventType）]**&#x200B;**[!UICONTROL ここに要素をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。
       1. ポップオーバーで、下までスクロールして「**[!UICONTROL application.test]**」を選択します（これは、[ スキーマを更新 ](#update-your-schema) の一部としてイベントタイプのリストに以前に追加したイベントタイプです）。 次に、上までスクロールして、「**[!UICONTROL OK]**」を選択します。
       1. 「**[!UICONTROL OK]**」を選択して、条件を保存します。
          ![ イベント条件を編集 ](assets/ajo-edit-condition.png){zoomable="yes"}
@@ -488,13 +488,13 @@ Journey Optimizerのイベントを使用すると、プッシュ通知などの
 
 次の手順では、適切なイベントを受け取ったときにプッシュ通知の送信をトリガーにするジャーニーを作成します。
 
-1. Journey Optimizer UI の左パネルから **[!UICONTROL 0}ジャーニー} を選択します。]**
+1. Journey Optimizer UI の左パネルから **[!UICONTROL 0&rbrace;ジャーニー&rbrace; を選択します。]**
 1. **[!UICONTROL ジャーニーを作成]** を選択します。
 1. **[!UICONTROL ジャーニーのプロパティ]** パネルで、次の操作を行います。
 
    1. ジャーニーの **[!UICONTROL 名前]** を入力します（例：`Luma - Test Push Notification Journey`）。
    1. ジャーニーの **[!UICONTROL 説明]** を入力します（例：`Journey for test push notifications in Luma mobile app`）。
-   1. **[!UICONTROL 再エントリを許可]** が選択されていることを確認し、**[!UICONTROL 再エントリ待機期間]** を **[!UICONTROL 30]****[!UICONTROL 秒]** に設定します。
+   1. **[!UICONTROL 再エントリを許可]** が選択されていることを確認し、**[!UICONTROL 再エントリ待機期間]** を **[!UICONTROL 30]**&#x200B;**[!UICONTROL 秒]** に設定します。
    1. 「**[!UICONTROL OK]**」を選択します。
       ![ジャーニーのプロパティ](assets/ajo-journey-properties.png){zoomable="yes"}
 
