@@ -3,7 +3,7 @@ title: Platform Mobile SDKを使用したライフサイクルデータの収集
 description: モバイルアプリでライフサイクルデータを収集する方法を説明します。
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 2%
@@ -86,7 +86,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 1. アプリがバックグラウンドに入ると、アプリの `override fun onActivityPaused` 機能からライフサイクルデータ収集を一時停止する必要があります。 `override fun onActivityPaused(activity: Activity)` に次のコードを追加します。
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
@@ -112,7 +112,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 1. **[!UICONTROL 新規ルールを作成]** を選択します。
    ![ 新しいルールの作成 ](assets/rules-create-new.png){zoomable="yes"}
 1. **[!UICONTROL ルールの作成]** 画面で、「`Application Status` 名前 **[!UICONTROL 」に]** と入力します。
-1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]**&#x200B;**[!UICONTROL 追加]** を選択します。
+1. ![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]****[!UICONTROL 追加]** を選択します。
    ![ ルールを作成ダイアログ ](assets/rule-create-name.png){zoomable="yes"}
 1. **[!UICONTROL イベント設定]** 手順で、次の操作を行います。
    1. **[!UICONTROL 拡張機能]** として **[!UICONTROL Mobile Core]** を選択します。
@@ -126,12 +126,12 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. **[!UICONTROL イベントタイプ]** として **[!UICONTROL 背景]** を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
       ![ ルールイベントの設定 ](assets/rule-event-configuration-background.png){zoomable="yes"}
-1. **[!UICONTROL ルールを作成]** 画面に戻り、「![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]**&#x200B;**[!UICONTROL 追加]** を選択します。
+1. **[!UICONTROL ルールを作成]** 画面に戻り、「![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL 追加]****[!UICONTROL 追加]** を選択します。
 
    ![ ルール追加アクション ](assets/rule-action-button.png){zoomable="yes"}
 
 1. **[!UICONTROL アクションの設定]** 手順で、次の操作を行います。
-   1. **[!UICONTROL 拡張機能]** として **[!UICONTROL 0&rbrace;Adobe Experience Edge Network&rbrace; を選択します。]**
+   1. **[!UICONTROL 拡張機能]** として **[!UICONTROL 0}Adobe Experience Edge Network} を選択します。]**
    1. **[!UICONTROL アクションタイプ]** として **[!UICONTROL 「Edge Networkにイベントを転送]**」を選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
       ![ ルールアクションの設定 ](assets/rule-action-configuration.png){zoomable="yes"}
@@ -150,6 +150,6 @@ Assuranceに XDM データを含む **[!UICONTROL Application Close （バック
 >
 >これで、アプリケーションステート（フォアグラウンド、バックグラウンド）イベントをAdobe Experience Platform Edge Networkと、データストリームで定義したすべてのサービスに送信するようにアプリを設定しました。
 >
-> Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+> Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 次のトピック：**[イベント・データの追跡](events.md)**
