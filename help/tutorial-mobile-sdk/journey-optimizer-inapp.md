@@ -21,7 +21,7 @@ Journey Optimizerでは、ターゲットオーディエンスにアプリ内メ
 
 ![アーキテクチャ](assets/architecture-ajo.png){zoomable="yes"}
 
-Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration) を参照してください。
+Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/in-app/inapp-configuration) を参照してください。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 * SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 * Adobe Experience Platform用にアプリを設定します。
-* Journey Optimizerへのアクセスおよび [ プッシュ通知に対する十分な権限 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
+* Journey Optimizerへのアクセスおよび [ プッシュ通知に対する十分な権限 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/push/push-config/push-configuration)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
    * キャンペーンの管理。
 * テスト用の物理的なiOSデバイスまたはシミュレーター。
 
@@ -67,11 +67,11 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
    >
    > 名前は、文字（A ～ Z）で始める必要があります。使用できるのは英数字のみです。アンダースコア（`_`）、ドット（`.`）、ハイフン（`-`）も使用できます。
 
-1. 設定にカスタムまたはコアのデータ使用ラベルを割り当てるには、「**[!UICONTROL アクセスを管理]**」を選択します。[詳しくは、オブジェクトレベルのアクセス制御（OLAC）を参照してください](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
+1. 設定にカスタムまたはコアのデータ使用ラベルを割り当てるには、「**[!UICONTROL アクセスを管理]**」を選択します。[詳しくは、オブジェクトレベルのアクセス制御（OLAC）を参照してください](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/object-based-access)。
 
 1. **アプリ内メッセージ** チャネルを選択します。
 
-1. **[!UICONTROL マーケティングアクション]** を選択し、この設定を使用して同意ポリシーをメッセージに関連付けます。 マーケティングアクションに関連するすべての同意ポリシーは、顧客の環境設定に従って活用されます。 [ マーケティングアクションの詳細情報 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。 例：プッシュターゲティング。
+1. **[!UICONTROL マーケティングアクション]** を選択し、この設定を使用して同意ポリシーをメッセージに関連付けます。 マーケティングアクションに関連するすべての同意ポリシーは、顧客の環境設定に従って活用されます。 [ マーケティングアクションの詳細情報 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。 例：プッシュターゲティング。
 
 1. 設定を定義するプラットフォームを選択します。 この設定を使用すると、各プラットフォームに対してターゲットアプリを指定し、複数のプラットフォーム間で一貫したコンテンツ配信を確保できます。
 
@@ -354,6 +354,6 @@ Assurance UI でアプリ内メッセージを検証できます。
 >
 >アプリ内メッセージ用にアプリを有効にし、Journey Optimizerと、Experience Platform Mobile SDK用のJourney Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[オファーの作成および表示](journey-optimizer-offers.md)**
