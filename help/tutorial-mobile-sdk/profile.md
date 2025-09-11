@@ -3,7 +3,7 @@ title: Platform Mobile SDKでのプロファイルデータの収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 2%
@@ -123,7 +123,7 @@ ht-degree: 2%
    このコード：
 
    1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
-   1. 次に、`isPaidUser` 属性の値をチェックし、`yes` の場合は 右上 <img src="assets/paiduser.png" width="20" /> ツールバーにあるアイコン。
+   1. 次に、`isPaidUser` 属性の値をチェックし、`yes` の場合は 右上 <img src="assets/paiduser.png" width="20"> ツールバーにあるアイコン。
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ ht-degree: 2%
    このコード：
 
    1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
-   1. 次に、`isPaidUser` 属性の値を確認します。 `yes` の場合、コードによって人物アイコンがアイコンに置き換わり、 右上 <img src="assets/paiduser.png" width="20" /> ツールバーにあるアイコン。
+   1. 次に、`isPaidUser` 属性の値を確認します。 `yes` の場合、コードによって人物アイコンがアイコンに置き換わり、 右上 <img src="assets/paiduser.png" width="20"> ツールバーにあるアイコン。
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ ht-degree: 2%
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 製品を 1 つ選択します。
 1. 選択 <img src="assets/saveforlater.png" width="15" />。
-1. 選択 <img src="assets/addtocart.png" width="20" />。
+1. 選択 <img src="assets/addtocart.png" width="20">。
 1. 選択 <img src="assets/purchase.png" width="15" />。
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ ht-degree: 2%
 
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 製品を 1 つ選択します。
-1. 選択<img src="assets/heart.png" width="25" />。
-1. 選択 <img src="assets/addtocart.png" width="20" />。
+1. 選択<img src="assets/heart.png" width="25">。
+1. 選択 <img src="assets/addtocart.png" width="20">。
 1. 選択 <img src="assets/purchase.png" width="15" />。
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
@@ -214,6 +214,6 @@ Assurance UI に、更新された **[!UICONTROL 値を持つ]** UserProfileUpda
 >
 >これで、Edge Network内および（設定時に）Adobe Experience Platformでプロファイルの属性を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[場所を使用](places.md)**

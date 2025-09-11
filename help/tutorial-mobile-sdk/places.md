@@ -3,7 +3,7 @@ title: Platform Mobile SDKでの場所の使用
 description: モバイルアプリで Places geolocation サービスを使用する方法を説明します。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 2%
@@ -325,7 +325,7 @@ Assuranceの設定を検証するには：
 
 >[!TAB Android]
 
-1. Android Studio で、[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) が **[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
+1. Android Studio で、[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) が **[!UICONTROL Android:app]** ChevronDown **** Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
 1. Android Studio プロジェクトナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL LumaApplication]** に移動します。
 1. `com.adobe.marketing.mobile.Messaging` が読み込みのリストに含まれていることを確認します。
 
@@ -400,15 +400,15 @@ Assuranceの設定を検証するには：
 
 1. マップを移動（ドラッグ）して、青い中央の円がいずれかの POI （例：ロンドン）の上にあることを確認します。
 
-1. タップ カテゴリと名前がラベルの赤い場所にピンと共に表示されるまで <img src="assets/geobutton.png" width="20" /> きます。
+1. タップ カテゴリと名前がラベルの赤い場所にピンと共に表示されるまで <img src="assets/geobutton.png" width="20"> きます。
 
 1. POI のラベルをタップすると、**[!UICONTROL 近くの POI]** シートが開きます。
 
-   <img src="assets/appgeolocation.png" width="300" />
+   <img src="assets/appgeolocation.png" width="300">
 
 1. **[!UICONTROL Entry]** または **[!UICONTROL Exit]** ボタンを押して、アプリからのジオフェンスの入口イベントと出口イベントをシミュレートします。
 
-   <img src="assets/appentryexit.png" width="300" />
+   <img src="assets/appentryexit.png" width="300">
 
 1. Assurance UI にイベントが表示されます。 イベントと Places Service イベントの両方で。
 
@@ -420,12 +420,12 @@ Assuranceの設定を検証するには：
 
 1. 表示される赤い円の中のどこかをタップします。
 
-   <img src="assets/appgeolocation-android.png" width="300" />
+   <img src="assets/appgeolocation-android.png" width="300">
 
 
 1. **[!UICONTROL Entry]** または **[!UICONTROL Exit]** ボタンを押して、アプリからのジオフェンスの入口イベントと出口イベントをシミュレートします。
 
-   <img src="assets/appentryexit-android.png" width="300" />
+   <img src="assets/appentryexit-android.png" width="300">
 
 1. Assurance UI にイベントが表示されます。
 
@@ -440,12 +440,12 @@ Assuranceの設定を検証するには：
 
 このチュートリアルのJourney Optimizerの節では、エクスペリエンスイベントを使用してジャーニーをトリガーJourney Optimizerできることを確認します（[ プッシュ通知 ](journey-optimizer-inapp.md) および [ アプリ内メッセージ ](journey-optimizer-push.md) を参照）。 例えば、通常の例では、アプリユーザーが物理的なストアのジオフェンスに入ると、製品プロモーションを伴うプッシュ通知が送信されます。
 
-アプリのジオロケーション機能のこの実装により、コードが最小限に抑えられます。 タグプロパティで定義した Places サービス、データ要素、ルールが、ほとんどの機能を提供します。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) [ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
+アプリのジオロケーション機能のこの実装により、コードが最小限に抑えられます。 タグプロパティで定義した Places サービス、データ要素、ルールが、ほとんどの機能を提供します。 または、入力された [`Edge.sendEvent` オブジェクトを含む XDM ペイロードで、](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API （詳しくは ](events.md) イベント `placeContext` を参照）を使用して、同じ機能をアプリに直接実装できます。
 
 >[!SUCCESS]
 >
 >これで、Experience Platform Mobile SDKの Places 拡張機能を使用して、アプリにジオロケーションサービスを有効にしました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[Adobe Analyticsへのデータのマッピング](analytics.md)**

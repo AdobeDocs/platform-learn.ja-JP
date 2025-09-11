@@ -3,7 +3,7 @@ title: Platform Mobile SDKでの WebView の処理
 description: モバイルアプリで WebView を使用してデータ収集を処理する方法を説明します。
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 潜在的なトラッキングの問題
 
-個別（Experience Cloud ID）の ECID は、アプリのネイティブ部分と、アプリ内の WebView からデータを送信する際に生成されます。 これらの別々の ECID により、ヒットが切断され、訪問および訪問者データが水増しされます。 ECID について詳しくは、[ECID の概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/ecid) を参照してください。
+個別（Experience Cloud ID）の ECID は、アプリのネイティブ部分と、アプリ内の WebView からデータを送信する際に生成されます。 これらの別々の ECID により、ヒットが切断され、訪問および訪問者データが水増しされます。 ECID について詳しくは、[ECID の概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) を参照してください。
 
 切断されたヒットと水増しされたデータを解決するには、アプリのネイティブ部分から、アプリで使用する可能性のある WebView にユーザーの ECID を渡す必要があります。
 
@@ -110,18 +110,18 @@ Identity.getUrlVariables {
 
 >[!TAB iOS]
 
-<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+<img src="./assets/tou1.png" width="300"> <img src="./assets/tou2.png" width="300">
 
 >[!TAB Android]
 
-<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+<img src="./assets/tou1-android.png" width="300"> <img src="./assets/tou2-android.png" width="300">
 
 >[!ENDTABS]
 
 
 ## Assurance での検証
 
-1. Assurance UI で、&lbrace;com.adobe.griffon.mobile **[!UICONTROL ベンダーの &lbrace;0]** Edge ID 応答 URL 変数 **[!UICONTROL イベントを探します。]**
+1. Assurance UI で、{com.adobe.griffon.mobile **[!UICONTROL ベンダーの {0]** Edge ID 応答 URL 変数 **[!UICONTROL イベントを探します。]**
 1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトの **[!UICONTROL urlvariable]** フィールドを確認し、URL に `adobe_mc`、`mcmid` および `mcorgid` のパラメーターが存在することを確認します。
 
    ![webview 検証 ](assets/webview-validation.png){zoomable="yes"}
@@ -151,6 +151,6 @@ Identity.getUrlVariables {
 >
 >これで、Adobe Experience Platform Mobile SDKで既に発行されている ECID と同じ ECID を使用して、Web ビュー内の URL に基づいたコンテンツを表示するように、アプリを設定しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 次のトピック：**[ID](identity.md)**

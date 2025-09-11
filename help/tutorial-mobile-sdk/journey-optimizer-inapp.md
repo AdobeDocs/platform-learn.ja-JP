@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 4%
@@ -21,7 +21,7 @@ Journey Optimizerでは、ターゲットオーディエンスにアプリ内メ
 
 ![アーキテクチャ](assets/architecture-ajo.png){zoomable="yes"}
 
-Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/in-app/inapp-configuration) を参照してください。
+Journey Optimizerでアプリ内メッセージを送信する前に、適切な設定と統合が行われていることを確認する必要があります。 Journey Optimizerのアプリ内メッセージデータフローについては、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration) を参照してください。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 * SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 * Adobe Experience Platform用にアプリを設定します。
-* Journey Optimizerへのアクセスおよび [ プッシュ通知に対する十分な権限 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/push/push-config/push-configuration)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
+* Journey Optimizerへのアクセスおよび [ プッシュ通知に対する十分な権限 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration)。 また、次のJourney Optimizer機能に対する十分な権限も必要です。
    * キャンペーンの管理。
 * テスト用の物理的なiOSデバイスまたはシミュレーター。
 
@@ -67,11 +67,11 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
    >
    > 名前は、文字（A ～ Z）で始める必要があります。使用できるのは英数字のみです。アンダースコア（`_`）、ドット（`.`）、ハイフン（`-`）も使用できます。
 
-1. 設定にカスタムまたはコアのデータ使用ラベルを割り当てるには、「**[!UICONTROL アクセスを管理]**」を選択します。[詳しくは、オブジェクトレベルのアクセス制御（OLAC）を参照してください](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/object-based-access)。
+1. 設定にカスタムまたはコアのデータ使用ラベルを割り当てるには、「**[!UICONTROL アクセスを管理]**」を選択します。[詳しくは、オブジェクトレベルのアクセス制御（OLAC）を参照してください](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
 
 1. **アプリ内メッセージ** チャネルを選択します。
 
-1. **[!UICONTROL マーケティングアクション]** を選択し、この設定を使用して同意ポリシーをメッセージに関連付けます。 マーケティングアクションに関連するすべての同意ポリシーは、顧客の環境設定に従って活用されます。 [ マーケティングアクションの詳細情報 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。 例：プッシュターゲティング。
+1. **[!UICONTROL マーケティングアクション]** を選択し、この設定を使用して同意ポリシーをメッセージに関連付けます。 マーケティングアクションに関連するすべての同意ポリシーは、顧客の環境設定に従って活用されます。 [ マーケティングアクションの詳細情報 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。 例：プッシュターゲティング。
 
 1. 設定を定義するプラットフォームを選択します。 この設定を使用すると、各プラットフォームに対してターゲットアプリを指定し、複数のプラットフォーム間で一貫したコンテンツ配信を確保できます。
 
@@ -92,7 +92,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
+1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Adobe Journey Optimizer]**」が選択されていることを確認します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure) 設定を参照してください。
 1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
@@ -207,7 +207,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 1. Journey Optimizer UI の左パネルで「**[!UICONTROL キャンペーン]**」をクリックします。
 1. **[!UICONTROL キャンペーンを作成]** を選択します。
 1. **[!UICONTROL キャンペーンを作成]** ダイアログで、「![ 時計 ](/help/assets/icons/Clock.svg)**[!UICONTROL スケジュール済み – マーケティング]**」を選択し、「**[!UICONTROL 確認]**」を選択します。
-1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**&#x200B;画面で、
+1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**画面で、
 
    1. 「**[!UICONTROL プロパティ]**」タブで、次のように設定します。
 
@@ -264,7 +264,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 
 >[!TAB iOS]
 
-1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動します。 `func sendTrackAction(action: String, data: [String: Any]?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action` `data` 関数を呼び出す次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動します。 `func sendTrackAction(action: String, data: [String: Any]?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action``data` 関数を呼び出す次のコードを追加します。
 
 
    ```swift
@@ -283,7 +283,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 
 >[!TAB Android]
 
-1. Android Studio ナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!DNL models]**/**[!UICONTROL MobileSDK]** に移動します。 `fun sendTrackAction(action: String, data: Map<String, String>?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action` `data` 関数を呼び出す次のコードを追加します。
+1. Android Studio ナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!DNL models]**/**[!UICONTROL MobileSDK]** に移動します。 `fun sendTrackAction(action: String, data: Map<String, String>?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action``data` 関数を呼び出す次のコードを追加します。
 
 
    ```kotlin
@@ -317,7 +317,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 
 1. **[!UICONTROL アプリ内メッセージ]** をタップします。 アプリ内メッセージがアプリに表示されます。
 
-   <img src="assets/ajo-in-app-message.png" width="300" />
+   <img src="assets/ajo-in-app-message.png" width="300">
 
 
 >[!TAB Android]
@@ -328,7 +328,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 
 1. **[!UICONTROL アプリ内メッセージ]** をタップします。 アプリ内メッセージがアプリに表示されます。
 
-   <img src="assets/ajo-in-app-message-android.png" width="300" />
+   <img src="assets/ajo-in-app-message-android.png" width="300">
 
 
 >[!ENDTABS]
@@ -354,6 +354,6 @@ Assurance UI でアプリ内メッセージを検証できます。
 >
 >アプリ内メッセージ用にアプリを有効にし、Journey Optimizerと、Experience Platform Mobile SDK用のJourney Optimizer拡張機能を使用して、アプリ内メッセージキャンペーンを追加しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[オファーの作成および表示](journey-optimizer-offers.md)**

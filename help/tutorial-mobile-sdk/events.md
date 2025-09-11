@@ -3,7 +3,7 @@ title: Experience Platform Mobile SDKを使用したモバイルアプリでの�
 description: モバイルアプリでイベントデータをトラッキングする方法を説明します。
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -200,9 +200,9 @@ Edge.sendEvent(productViewEvent, null)
 アプリに様々なコマース製品関連のアクションがあり、ユーザーが実行したこれらのアクションに基づいてイベントを送信する場合：
 
 * 表示：ユーザーが特定の製品を表示すると発生します。
-* 買い物かごに追加：ユーザーがタップしたとき 製品の詳細画面に <img src="assets/addtocart.png" width="20" /> 示
-* 後で使用するために保存：ユーザーがタップした場合 <img src="assets/saveforlater.png" width="15" /> / 製品の詳細画面に <img src="assets/heart.png" width="25" /> 示
-* 購入：ユーザーがタップした場合 製品の詳細画面に <img src="assets/purchase.png" width="20" /> 示されます。
+* 買い物かごに追加：ユーザーがタップしたとき 製品の詳細画面に <img src="assets/addtocart.png" width="20"> 示
+* 後で使用するために保存：ユーザーがタップした場合 <img src="assets/saveforlater.png" width="15" /> / 製品の詳細画面に <img src="assets/heart.png" width="25"> 示
+* 購入：ユーザーがタップした場合 製品の詳細画面に <img src="assets/purchase.png" width="20"> 示されます。
 
 コマース関連のエクスペリエンスイベントの送信を再利用可能な方法で実装するには、専用の関数を使用します。
 
@@ -249,7 +249,7 @@ Edge.sendEvent(productViewEvent, null)
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. ボタンごとに（<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> と <img src="assets/purchase.png" width="20" />）ツールバーで、関連する呼び出しを `ATTrackingManager.trackingAuthorizationStatus == .authorized` クロージャ内に追加します。
+   1. ボタンごとに（<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20"> と <img src="assets/purchase.png" width="20">）ツールバーで、関連する呼び出しを `ATTrackingManager.trackingAuthorizationStatus == .authorized` クロージャ内に追加します。
 
       1. の場合 <img src="assets/saveforlater.png" width="15" />：
 
@@ -258,14 +258,14 @@ Edge.sendEvent(productViewEvent, null)
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. の場合 <img src="assets/addtocart.png" width="20" />：
+      1. の場合 <img src="assets/addtocart.png" width="20">：
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. の場合 <img src="assets/purchase.png" width="20" />：
+      1. の場合 <img src="assets/purchase.png" width="20">：
 
          ```swift
          // Send purchase commerce experience event
@@ -308,23 +308,23 @@ Edge.sendEvent(productViewEvent, null)
       MobileSDK.shared.sendCommerceExperienceEvent("productViews", product)
       ```
 
-   1. ボタンごとに（<img src="assets/heart.png" width="25" />, <img src="assets/addtocart.png" width="20" /> と <img src="assets/purchase.png" width="20" />）をクリックします。ツールバーで、`scope.launch` の `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` 内で関連する呼び出しを追加します。
+   1. ボタンごとに（<img src="assets/heart.png" width="25">, <img src="assets/addtocart.png" width="20"> と <img src="assets/purchase.png" width="20">）をクリックします。ツールバーで、`scope.launch` の `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` 内で関連する呼び出しを追加します。
 
-      1. の場合 <img src="assets/heart.png" width="25" />：
+      1. の場合 <img src="assets/heart.png" width="25">：
 
          ```kotlin
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("saveForLaters", product)
          ```
 
-      1. の場合 <img src="assets/addtocart.png" width="20" />：
+      1. の場合 <img src="assets/addtocart.png" width="20">：
 
          ```kotlin
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("productListAdds", product)
          ```
 
-      1. の場合 <img src="assets/purchase.png" width="20" />：
+      1. の場合 <img src="assets/purchase.png" width="20">：
 
          ```kotlin
          // Send purchase commerce experience event
@@ -610,9 +610,9 @@ Edge.sendEvent(event, null)
       * マップを使用してエクスペリエンスイベントを設定します。
       * [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API を使用してエクスペリエンスイベントを送信します。
 
-1. **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL &#x200B; views &#x200B;]**/**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**&#x200B;に移動します
+1. **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL  views ]**/**[!UICONTROL  LoginSheet.kt ]**に移動します
 
-   1. **[!UICONTROL Button]**&#x200B;**[!UICONTROL onClick]** イベントに次のハイライトされたコードを追加します。
+   1. **[!UICONTROL Button]****[!UICONTROL onClick]** イベントに次のハイライトされたコードを追加します。
 
       ```kotlin
       // Send app interaction event
@@ -638,9 +638,9 @@ Edge.sendEvent(event, null)
    1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
    1. タブバーで「**[!DNL Products]**」を選択します。
    1. 商品を選択します。
-   1. 選択 <img src="assets/saveforlater.png" width="15" /> （iOS）または <img src="assets/heart.png" width="25" /> （Android）。
-   1. 選択 <img src="assets/addtocart.png" width="20" />。
-   1. 選択 <img src="assets/purchase.png" width="15" />。
+   1. 選択 <img src="assets/saveforlater.png" width="15"> （iOS）または <img src="assets/heart.png" width="25"> （Android）。
+   1. 選択 <img src="assets/addtocart.png" width="20">。
+   1. 選択 <img src="assets/purchase.png" width="15">。
 
 >[!BEGINTABS]
 
@@ -681,6 +681,6 @@ Edge.sendEvent(event, null)
 >
 >これで、Adobe Experience Platform Edge Networkに対するコマース、アプリのインタラクション、画面トラッキングイベントを追跡するアプリの設定が完了しました。 およびデータストリームで定義したすべてのサービスに適用されます。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[WebViews の処理](web-views.md)**
