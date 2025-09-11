@@ -92,7 +92,7 @@ Journey Optimizerでアプリ内メッセージを送信する前に、適切な
 
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2}Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
+1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
 1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、「**[!UICONTROL Adobe Journey Optimizer]**」が選択されていることを確認します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure) 設定を参照してください。
 1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
@@ -207,7 +207,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 1. Journey Optimizer UI の左パネルで「**[!UICONTROL キャンペーン]**」をクリックします。
 1. **[!UICONTROL キャンペーンを作成]** を選択します。
 1. **[!UICONTROL キャンペーンを作成]** ダイアログで、「![ 時計 ](/help/assets/icons/Clock.svg)**[!UICONTROL スケジュール済み – マーケティング]**」を選択し、「**[!UICONTROL 確認]**」を選択します。
-1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**画面で、
+1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**&#x200B;画面で、
 
    1. 「**[!UICONTROL プロパティ]**」タブで、次のように設定します。
 
@@ -264,7 +264,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 
 >[!TAB iOS]
 
-1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動します。 `func sendTrackAction(action: String, data: [String: Any]?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action``data` 関数を呼び出す次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Utils]**/**[!UICONTROL MobileSDK]** に移動します。 `func sendTrackAction(action: String, data: [String: Any]?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action` `data` 関数を呼び出す次のコードを追加します。
 
 
    ```swift
@@ -283,7 +283,7 @@ SDK イベントハブは、Adobeやサードパーティソリューション�
 
 >[!TAB Android]
 
-1. Android Studio ナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!DNL models]**/**[!UICONTROL MobileSDK]** に移動します。 `fun sendTrackAction(action: String, data: Map<String, String>?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action``data` 関数を呼び出す次のコードを追加します。
+1. Android Studio ナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!DNL models]**/**[!UICONTROL MobileSDK]** に移動します。 `fun sendTrackAction(action: String, data: Map<String, String>?)` 関数を検索し、パラメーター [`MobileCore.track` および ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) に基づいて `action` `data` 関数を呼び出す次のコードを追加します。
 
 
    ```kotlin

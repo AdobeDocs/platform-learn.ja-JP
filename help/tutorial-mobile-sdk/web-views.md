@@ -121,7 +121,7 @@ Identity.getUrlVariables {
 
 ## Assurance での検証
 
-1. Assurance UI で、{com.adobe.griffon.mobile **[!UICONTROL ベンダーの {0]** Edge ID 応答 URL 変数 **[!UICONTROL イベントを探します。]**
+1. Assurance UI で、&lbrace;com.adobe.griffon.mobile **[!UICONTROL ベンダーの &lbrace;0]** Edge ID 応答 URL 変数 **[!UICONTROL イベントを探します。]**
 1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトの **[!UICONTROL urlvariable]** フィールドを確認し、URL に `adobe_mc`、`mcmid` および `mcorgid` のパラメーターが存在することを確認します。
 
    ![webview 検証 ](assets/webview-validation.png){zoomable="yes"}
