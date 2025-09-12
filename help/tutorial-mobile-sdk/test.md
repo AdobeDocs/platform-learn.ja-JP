@@ -6,7 +6,7 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 hidefromtoc: true
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 2b2267e84b26f8c2571e40d7f4c0e08281d36c6c
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 2%
@@ -93,6 +93,6 @@ ht-degree: 2%
 1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 商品を選択します。
-1. ![ 後で使用するために保存 ](assets/saveforlater.png) （iOS）または ![ 後で使用するために保存 ](assets/heart.png){width=25} （Android）を選択します。
+1. ![ 後で使用するために保存 ](assets/saveforlater.png) （iOS）または ![ 後で使用するために保存 ](assets/heart.png) （Android）を選択します。
 1. ![ 買い物かごに追加 ](assets/addtocart.png) を選択します。
 1. ![ 購入 ](assets/purchase.png) を選択します。
