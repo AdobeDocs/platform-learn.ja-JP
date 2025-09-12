@@ -3,10 +3,10 @@ title: Platform Mobile SDKでのプロファイルデータの収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 2%
+source-wordcount: '786'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
    1. `profileMap` ディクショナリを `attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
 
-1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Products]**/**[!DNL ProductView]** に移動し、（購入のコード内で） `updateUserAttributes` へのコールを見つけます <img src="assets/purchase.png" width="15" /> ボタン）を使用します。 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Products]**/**[!DNL ProductView]** に移動し、（購入のコード `updateUserAttributes`CreditCard![ ボタン内で） ](/help/assets/icons/CreditCard.svg) への呼び出しを見つけます。 次のコードを追加します。
 
    ```swift
    // Update attributes
@@ -87,7 +87,7 @@ ht-degree: 2%
 
    1. `profileMap` マップを、`attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
 
-1. **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL views]**/**[!UICONTROL ProductView.kt]** に移動し、（購入のコード内で） `updateUserAttributes` の呼び出しを見つけます <img src="assets/purchase.png" width="15" /> ボタン）を使用します。 次のコードを追加します。
+1. **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL views]**/**[!UICONTROL ProductView.kt]** に移動し、（購入 `updateUserAttributes`CreditCard![ ボタンのコード内で） ](/help/assets/icons/CreditCard.svg) の呼び出しを見つけます。 次のコードを追加します。
 
    ```kotlin
    // Update attributes
@@ -123,7 +123,7 @@ ht-degree: 2%
    このコード：
 
    1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
-   1. 次に、`isPaidUser` 属性の値をチェックし、`yes` の場合は 右上 <img src="assets/paiduser.png" width="20"> ツールバーにあるアイコン。
+   1. 次に、`isPaidUser` 属性の値をチェックし、`yes` 定すると、右上のツールバーにある ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) アイコンにバッジが付きます。
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ ht-degree: 2%
    このコード：
 
    1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
-   1. 次に、`isPaidUser` 属性の値を確認します。 `yes` の場合、コードによって人物アイコンがアイコンに置き換わり、 右上 <img src="assets/paiduser.png" width="20"> ツールバーにあるアイコン。
+   1. 次に、`isPaidUser` 属性の値を確認します。 `yes` の場合、コードは右上のツールバーにある人物アイコンをバッジアイコンに置き換えます。
 
 >[!ENDTABS]
 
@@ -156,24 +156,24 @@ ht-degree: 2%
 
 1. タブバーの **[!UICONTROL ホーム]** を選択します。
 1. Assurance アイコンを左に移動します。
-1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> ボタン。
+1. ログインシートを開くには、「![ ユーザー ](/help/assets/icons/User.svg)」ボタンを選択します。
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. ランダムなメールと顧客 ID を挿入するには、 「」ボタン <img src="assets/insert.png" width="15" /> クリックします。
+1. ランダムなメールと顧客 ID を挿入するには、「>」ボタンを選択します。
 1. **[!UICONTROL ログイン]** を選択します。
 
    <img src="./assets/mobile-app-events-2.png" width="300">
 
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 製品を 1 つ選択します。
-1. 選択 <img src="assets/saveforlater.png" width="15" />。
-1. 選択 <img src="assets/addtocart.png" width="20">。
-1. 選択 <img src="assets/purchase.png" width="15" />。
+1. ![ ハート ](/help/assets/icons/Heart.svg) を選択します。
+1. ![ShoppingCart](/help/assets/icons/ShoppingCart.svg) を選択します。
+1. ![CreditCard](/help/assets/icons/CreditCard.svg) を選択します。
 
    <img src="./assets/mobile-app-events-3.png" width="300">
 
-1. **[!UICONTROL ホーム]** 画面に戻ります。 バッジが追加されたことがわかります <img src="assets/person-badge-icon.png" width="15" />。
+1. **[!UICONTROL ホーム]** 画面に戻ります。 バッジが追加された ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) ことがわかります。
 
    <img src="./assets/personbadges.png" width="300">
 
@@ -182,20 +182,20 @@ ht-degree: 2%
 
 1. タブバーの **[!UICONTROL ホーム]** を選択します。
 1. Assurance アイコンを左に移動します。
-1. ログインシートを開くには、 <img src="assets/login.png" width="15" /> ボタン。
+1. ログインシートを開くには、「![ ユーザー ](/help/assets/icons/User.svg)」ボタンを選択します。
 
    <img src="./assets/mobile-app-events-1-android.png" width="300">
 
-1. ランダムなメールと顧客 ID を挿入するには、 「」ボタン <img src="assets/insert.png" width="15" /> クリックします。
+1. ランダムなメールと顧客 ID を挿入するには、「**[!UICONTROL ランダムなメールを生成]**」を選択します。
 1. **[!UICONTROL ログイン]** を選択します。
 
    <img src="./assets/mobile-app-events-2-android.png" width="300">
 
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 製品を 1 つ選択します。
-1. 選択<img src="assets/heart.png" width="25">。
-1. 選択 <img src="assets/addtocart.png" width="20">。
-1. 選択 <img src="assets/purchase.png" width="15" />。
+1. 「![ThumbUp](/help/assets/icons/ThumbUp.svg)」を選択します。
+1. ![ShoppingCart](/help/assets/icons/ShoppingCart.svg) を選択します。
+1. ![CreditCard](/help/assets/icons/CreditCard.svg) を選択します。
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
 
@@ -214,6 +214,6 @@ Assurance UI に、更新された **[!UICONTROL 値を持つ]** UserProfileUpda
 >
 >これで、Edge Network内および（設定時に）Adobe Experience Platformでプロファイルの属性を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[場所を使用](places.md)**
