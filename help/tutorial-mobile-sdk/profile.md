@@ -3,9 +3,9 @@ title: Platform Mobile SDKでのプロファイルデータの収集
 description: モバイルアプリでプロファイルデータを収集する方法を説明します。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 1%
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. ランダムなメールと顧客 ID を挿入するには、「>」ボタンを選択します。
+1. ランダムなメールと顧客 ID を挿入するには、**[!UICONTROL A |]** ボタン。
 1. **[!UICONTROL ログイン]** を選択します。
 
    <img src="./assets/mobile-app-events-2.png" width="300">
@@ -214,6 +214,6 @@ Assurance UI に、更新された **[!UICONTROL 値を持つ]** UserProfileUpda
 >
 >これで、Edge Network内および（設定時に）Adobe Experience Platformでプロファイルの属性を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) でお知らせください。
 
 次のトピック：**[場所を使用](places.md)**

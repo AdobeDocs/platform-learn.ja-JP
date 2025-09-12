@@ -4,9 +4,9 @@ description: モバイルアプリで ID データを収集する方法を説明
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '966'
 ht-degree: 2%
 
 ---
@@ -179,7 +179,7 @@ ID 名前空間を新規作成するには：
 
 ## ID を削除
 
-[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、Edge Networkへの識別情報の送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/identities/view-identity-graphs) を参照してください。
+[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、Edge Networkへの識別情報の送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) を参照してください。
 
 
 >[!BEGINTABS]
@@ -247,6 +247,8 @@ MobileSDK.shared.removeIdentities(
 
 >[!ENDTABS]
 
+**[!UICONTROL ID]** 画面で、次の操作を行います。
+
 1. メールアドレスと CRM ID を入力する
 1. **[!UICONTROL A を選択]** E メール）および **[!UICONTROL CRM ID]** をランダムに生成するには、|**[!UICONTROL （iOS）または]** ランダムな E メールを生成 **[!UICONTROL Android]** を使用します。
 1. **[!UICONTROL ログイン]** を選択します。
@@ -290,6 +292,6 @@ Assuranceに戻る：
 >
 >これで、Edge Networkおよび（設定時に）Adobe Experience Platformで ID を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 次のトピック：**[プロファイル・データの収集](profile.md)**

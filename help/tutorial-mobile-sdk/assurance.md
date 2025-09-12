@@ -4,7 +4,7 @@ description: モバイルアプリでAssurance拡張機能を実装する方法�
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Assurance（旧称：プロジェクトグリフォン）は、モバイルアプリでデータを収集したりエクスペリエンスを提供したりする方法の検査、配達確認、シミュレーションおよび検証に役立つように設計されています。
 
-Assuranceは、Adobe Experience Platform Mobile SDKで生成された生のSDK イベントを調べるのに役立ちます。 SDKで収集されたすべてのイベントは、閲覧できます。 SDK イベントは、時間順に並べ替えられたリストビューに読み込まれます。 各イベントには、詳細を提供する詳細ビューがあります。 SDK設定、データ要素、共有状態、SDK拡張機能の各バージョンを参照するための追加のビューも提供されます。 [0&rbrace;Assurance&rbrace; について詳しくは、製品ドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home)
+Assuranceは、Adobe Experience Platform Mobile SDKで生成された生のSDK イベントを調べるのに役立ちます。 SDKで収集されたすべてのイベントは、閲覧できます。 SDK イベントは、時間順に並べ替えられたリストビューに読み込まれます。 各イベントには、詳細を提供する詳細ビューがあります。 SDK設定、データ要素、共有状態、SDK拡張機能の各バージョンを参照するための追加のビューも提供されます。 [0}Assurance} について詳しくは、製品ドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home)
 
 
 ## 前提条件
@@ -35,7 +35,7 @@ Assuranceは、Adobe Experience Platform Mobile SDKで生成された生のSDK �
 
 ## アクセスを確認
 
-組織がAssuranceにアクセスできることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/user-access) を参照してください。
+組織がAssuranceにアクセスできることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) を参照してください。
 
 ## 実装方法
 
@@ -45,7 +45,7 @@ Assuranceをアプリに実装するには：
 
 >[!TAB iOS]
 
-iOSでアプリケーションのAssurance セッションを開始するには、[0&rbrace;SDKの一般的なインストール &rbrace; に加えて、次のコードが必要です。](install-sdks.md)
+iOSでアプリケーションのAssurance セッションを開始するには、[0}SDKの一般的なインストール } に加えて、次のコードが必要です。](install-sdks.md)
 
 1. Xcode のプロジェクトナビゲーターで **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** に移動します。
 
@@ -63,7 +63,7 @@ iOSでアプリケーションのAssurance セッションを開始するには�
 
 >[!TAB Android]
 
-AndroidでアプリケーションのAssurance セッションを開始するには、[0&rbrace;SDKの一般的なインストール &rbrace; に加えて、次のコードが必要です。](install-sdks.md)
+AndroidでアプリケーションのAssurance セッションを開始するには、[0}SDKの一般的なインストール } に加えて、次のコードが必要です。](install-sdks.md)
 
 1. Android Studio の **[!UICONTROL Android]** ビューで、**[!UICONTROL app]**/**[!UICONTROL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL LumaApplication]** に移動します。
 
@@ -105,7 +105,7 @@ AndroidでアプリケーションのAssurance セッションを開始するに
 
 各バンドル ID は一意である必要があるので、_unique_ バンドル ID を使用し、`com.adobe.luma.tutorial.swiftui` バンドル ID を置き換えてください。 通常は、バンドル ID 文字列（`com.organization.brand.uniqueidentifier` など）に逆 DNS 形式を使用します。 たとえば、このチュートリアルの完成バージョンでは `com.adobe.luma.tutorial.swiftui` を使用します。
 
-![Xcode 署名機能 ](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![Xcode 署名機能 ](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB Android]
 
@@ -146,7 +146,7 @@ Assuranceは、ブラウザーまたは QR コードを使用して URL を開�
 
 >[!TAB Android]
 
-1. Android Studio のプロジェクトの **[!UICONTROL 0&rbrace;Android&rbrace; ビューに移動します。]**
+1. Android Studio のプロジェクトの **[!UICONTROL 0}Android} ビューに移動します。]**
 1. ナビゲーターで **[!UICONTROL app]**/**[!UICONTROL manifest]**/**[!UICONTROL AndroidManifest.xml]** を選択します。
 1. **[!UICONTROL manifest]**/**[!UICONTROL application]**/**[!UICONTROL activity]** XML 要素が次のようになっていることを確認します。
 
@@ -216,7 +216,7 @@ Xcode で：
 ブラウザーで以下を実行します。
 
 1. データ収集 UI に移動します。
-1. 左パネルから **[!UICONTROL 0&rbrace;Assurance&rbrace; を選択します。]**
+1. 左パネルから **[!UICONTROL 0}Assurance} を選択します。]**
 1. 「**[!UICONTROL 新規セッションを作成]**」を選択し、「**[!UICONTROL ディープリンク接続]**」オプションを選択します。
 1. **[!UICONTROL 開始]** を選択します。
 1. **[!UICONTROL などの]** セッション名 `Luma Mobile App Session` と **[!UICONTROL ベース URL]** を指定します。これは、Xcode で入力した URL スキームであり、`://` の後に続きます。例：`lumatutorialswiftui://`
@@ -295,7 +295,7 @@ Android Studio で以下を行います。
 ブラウザーで以下を実行します。
 
 1. データ収集 UI に移動します。
-1. 左パネルから **[!UICONTROL 0&rbrace;Assurance&rbrace; を選択します。]**
+1. 左パネルから **[!UICONTROL 0}Assurance} を選択します。]**
 1. 「**[!UICONTROL 新規セッションを作成]**」を選択し、「**[!UICONTROL ディープリンク接続]**」オプションを選択します。
 1. **[!UICONTROL 開始]** を選択します。
 1. **[!UICONTROL などの]** セッション名 `Luma Mobile App Session` と、**[!UICONTROL ベース URL]** を指定します。これは、Android Studio の `android:scheme`AndroidManifest.xml`android:host` で定義した **[!UICONTROL と]** です（`://` で区切ります）。例：`lumatutorialandroid://default`
@@ -388,7 +388,7 @@ Android Studio で以下を行います。
 >
 >これで、チュートリアルの残りの部分でAssuranceを使用するようにアプリを設定しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 次のトピック：**[同意の実装](consent.md)**
