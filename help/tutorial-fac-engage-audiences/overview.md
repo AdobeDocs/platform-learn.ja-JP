@@ -1,6 +1,6 @@
 ---
-title: Federated Audience Composition の概要を使用して、Data Warehouse から直接オーディエンスを取り込みます
-description: Federated Audience Composition は、データアーキテクトとデータエンジニアが、サポート対象のデータウェアハウスから直接高価値オーディエンスをキュレーションおよびアクティブ化できる強力な機能です。
+title: Federated Audience Composition を使用してオーディエンスをエンゲージ
+description: Federated Audience Composition （FAC）の概要と、データアーキテクトとデータエンジニアがサポート対象のデータウェアハウスから直接高価値オーディエンスをキュレーションおよびアクティブ化できるようにする仕組みについて説明します。
 breadcrumb-title: 概要
 role: Data Architect, Data Engineer
 jira: KT-18743
@@ -8,24 +8,24 @@ thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11T00:00:00Z
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
-source-git-commit: ab9563d1ac4a0b97f45de0fd18186b34c98e2a36
+source-git-commit: e7484bcb8fa643a5c86b7d97da8c45d333e2e0ae
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
 
-# Federated Audience Composition の概要を使用して、Data Warehouse から直接オーディエンスを取り込みます
+# Federated Audience Composition を使用して Data Warehouse のオーディエンスを操作します
 
-Federated Audience Composition （FAC）は、Adobe Real-Time Customer Data Platform（Real-Time CDP）およびAdobe Journey Optimizer用のモジュールです。 また、Adobe Real-Time CDP Composable Audiences （構成可能な CDP としてのお客様向けにカスタマイズされたソリューション）でも利用できます。 これにより、データアーキテクトやデータエンジニアは、顧客データをコピーしたりAdobe Experience Platform（AEP[ に移動したりすることなく、](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} サポートされているエンタープライズデータウェアハウス）から直接価値の高いオーディエンスをキュレーションおよびアクティブ化できます。 この構成可能な CDP アプローチ（顧客向けにカスタマイズされたソリューション）は、業界の傾向に合わせており、企業がデータガバナンスを維持しながら、パーソナライズされたデジタルエクスペリエンスのためにデータインフラストラクチャを活用できるようにします。
+Federated Audience Composition （FAC）は、Adobe Real-Time Customer Data Platform（Real-Time CDP）およびAdobe Journey Optimizer用のモジュールです。 また、Adobe Real-Time CDP Composable Audiences （構成可能な CDP としてのお客様向けにカスタマイズされたソリューション）でも利用できます。 これにより、データアーキテクトやデータエンジニアは、顧客データをコピーしたりAdobe Experience Platform（AEP[ に移動したりすることなく、](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} サポートされているエンタープライズデータウェアハウス）から直接価値の高いオーディエンスをキュレーションおよびアクティブ化できます。 この構成可能な CDP アプローチ（顧客向けにカスタマイズされたソリューション）は、業界の傾向に合わせており、企業がデータガバナンスを維持しながら、パーソナライズされたデジタルエクスペリエンスのためにデータインフラストラクチャを活用できるようにします。
 
 ## ビジネスコンテキスト
 
-SecurFinancial 社は、金融サービスを提供する大手企業です。 異なるソースをまたぐ豊富な顧客データを活用して、多数のセグメント向けにオファーとキャンペーンをパーソナライズします。 同社は、Adobe Experience Platformを使用してパーソナライズされたカスタマーエクスペリエンスを提供しながら、企業が Data Warehouse を使用してデータを管理できるAdobe Real-Time CDP Federated Audience Composition モジュールを使用する予定です。 主なメリットは次のとおりです。
+SecurFinancial 社は、金融サービスを提供する大手企業です。 異なるソースをまたぐ豊富な顧客データを活用して、多数のセグメント向けにオファーとキャンペーンをパーソナライズします。 同社は、Adobe Real-Time CDP Federated Audience Composition モジュールを使用する予定です。このモジュールを使用すると、企業は Data Warehouse を使用してデータを管理しながら、Experience Platformを使用してパーソナライズされたカスタマーエクスペリエンスを提供できます。 主なメリットは次のとおりです。
 
 - **ウェアハウスデータへのアクセス**：データのレプリケーションを行わずに、サポート対象のデータウェアハウスのデータセットから価値の高いオーディエンスを作成します。
 - **データの移動を最小限に抑える**：データの重複やガバナンスの維持を行うことなく、ウェアハウス内でデータを直接クエリします。
-- **統合エクスペリエンスワークフロー**：クロスチャネルのユースケースに対して、Adobe Experience Platform内のオーディエンスをキュレーションおよびアクティブ化します。
+- **統合エクスペリエンスワークフロー**：クロスチャネルのユースケース向けに、Adobe Experience Platform内のオーディエンスをキュレーションおよびアクティブ化します。
 - **パーソナライゼーションの強化**: ウェアハウス属性を使用してプロファイルとオーディエンスを強化し、リアルタイムのトリガーエクスペリエンスを強化します。
 
 ## ビジネスシナリオ
@@ -51,10 +51,10 @@ SecurFinancial は、SecurFinancial のポートフォリオに有効なロー�
 
 - Real-Time CDPまたはJourney OptimizerでプロビジョニングされたAdobe Experience Platform アカウントへのアクセス。
 - システム管理者の権限、または権限を設定する機能。
-- スキーマ、データセット、オーディエンスなど、Adobe Experience Platformの概念に精通している（推奨：Experience Leagueの [Adobe Experience Platform プレイリストの概要 ](https://experienceleague.adobe.com/ja/playlists/experience-platform-introduction?lang=en){target="_blank"} を完了する）。
-- サポートされている [ エンタープライズデータウェアハウス ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} へのアクセス。
+- スキーマ、データセット、オーディエンスなど、Adobe Experience Platformの概念に精通している（推奨：Experience Leagueの [Adobe Experience Platform プレイリストの概要 ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} を完了する）。
+- サポートされている [ エンタープライズデータウェアハウス ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} へのアクセス。
 - データウェアハウスをクエリするための SQL の基本知識。
 - **サンドボックス環境**：組織のインスタンスにサンドボックスを作成して、実稼動データに影響を与えずに安全に実験します。
-- **Data Warehouse接続**：このチュートリアルではSnowflake接続を使用しますが、任意の [ サポートされている Data Warehouse](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/start/access-prerequisites) を使用できます。
+- **Data Warehouse接続**：このチュートリアルではSnowflake接続を使用しますが、任意の [ サポートされている Data Warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) を使用できます。
 
 最初に、[Federated Audience Composition のアーキテクチャの概要とフロー ](fac-architecture-and-flow.md) を見てみましょう。
