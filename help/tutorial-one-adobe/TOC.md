@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 10c3f0a3ae1540562f0f46a5936b1556e37a251b
+source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1377'
 ht-degree: 3%
 
 ---
@@ -103,6 +103,12 @@ ht-degree: 3%
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 AEM Assetsの概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
+      + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
+      + [1.5.1 Adobe Commerce as a Cloud Serviceの概要](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
+      + [1.5.2 ACCS をAEM Sites CS/EDS ストアフロントに接続する](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex2.md)
+      + [1.5.3 ACCS をAEM Assets CS に接続する](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex3.md)
+      + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + 配信とアクティブ化 {#activation}
    + データ収集 {#dc}

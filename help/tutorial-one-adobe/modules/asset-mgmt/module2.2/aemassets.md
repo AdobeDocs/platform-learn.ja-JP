@@ -3,9 +3,10 @@ title: Adobe Experience Manager Assets
 description: Adobe Experience Manager Assets
 kt: 5342
 doc-type: tutorial
-source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
+exl-id: 89d1fa65-0a1e-4565-b4c2-a12fc9d6dad9
+source-git-commit: 2deb2f9aa0221939210e307cdbc10e4dc6c338ee
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '98'
 ht-degree: 12%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 12%
 
 [1.2.1 AEM Assetsの概要 ](./ex1.md){target="_blank"}
 
-この演習では、Workfrontで多数の基本設定を行います。
+この演習では、Adobe Experience Manager Assetsで多数の基本設定を行います。
 
 [ 概要とメリット ](./summary.md){target="_blank"}
 
