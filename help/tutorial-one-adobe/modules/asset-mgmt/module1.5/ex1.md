@@ -242,7 +242,7 @@ ht-degree: 16%
 
 ![AEM Assets](./images/accs46.png)
 
-これで、商品カタログに商品 **0}iPhone Air} とそのバリエーションが表示されます。**
+これで、商品カタログに商品 **0&rbrace;iPhone Air&rbrace; とそのバリエーションが表示されます。**
 
 ![AEM Assets](./images/accs47.png)
 
