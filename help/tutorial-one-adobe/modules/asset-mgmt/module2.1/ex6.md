@@ -4,14 +4,14 @@ description: AEM CS - MarTech プラグイン
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 1.1.6 AEM Edge Delivery Services MarTech プラグイン
+# 1.1.5 AEM Edge Delivery Services MarTech プラグイン
 
 AEM MarTech プラグインを使用すると、AEM プロジェクトの完全な MarTech スタックをすばやく設定できます。
 
@@ -19,7 +19,7 @@ AEM MarTech プラグインを使用すると、AEM プロジェクトの完全�
 >
 >現在、このプラグインは、共同開発プロジェクトを通じてAEMエンジニアリングと連携しているお客様が利用できます。 詳細については、[https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech) を参照してください。
 
-## 1.1.6.1 リポジトリへのプラグインの追加
+## 1.1.5.1 リポジトリへのプラグインの追加
 
 **citignal** GitHub リポジトリに使用しているフォルダーに移動します。 フォルダ名を右クリックし、[**フォルダに新しいターミナル**] を選択します。
 
@@ -39,7 +39,7 @@ git subtree add --squash --prefix plugins/martech https://github.com/adobe-rnd/a
 
 ![AEMCS](./images/mtplugin4.png){zoomable="yes"}
 
-## 1.1.6.2 head.html
+## 1.1.5.2 head.html
 
 Visual Studio Code で、ファイル **head.html** を開きます。 以下のコードをコピーして、ファイル **head.html** に貼り付けます。
 
@@ -54,7 +54,7 @@ Visual Studio Code で、ファイル **head.html** を開きます。 以下の
 
 ![AEMCS](./images/mtplugin5.png){zoomable="yes"}
 
-## 1.1.6.3 scripts.js
+## 1.1.5.3 scripts.js
 
 Visual Studio Code で、**scripts** フォルダーに移動し、**scripts.js** ファイルを開きます。 以下のコードをコピーして、既存のインポートスクリプトの下の **scripts.js** ファイルに貼り付けます。
 
@@ -88,25 +88,25 @@ const AUDIENCES = {
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -151,13 +151,13 @@ const AUDIENCES = {
 
 ### datastreamId
 
-[https://platform.adobe.com/](https://platform.adobe.com/) に移動し、左メニューで **データストリーム** に移動します。 正しいサンドボックスにいることを確認します。これは `--aepSandboxName--` です。 このチュートリアルのはじめにの節で作成した、`--aepUserLdap-- - One Adobe Datastream` という名前のデータストリームを検索します。 「**コピー**」アイコンをクリックして **データストリーム ID** をコピーし、Visual Studio Code の **scripts.js** ファイルに、`datastreamId:` の横にあるプレースホルダー値 `XXX` を置き換えて貼り付けます。
+[https://platform.adobe.com/](https://platform.adobe.com/) に移動し、左メニューで **データストリーム** に移動します。 正しいサンドボックスにいることを確認します。これは `--aepSandboxName--` です。 このチュートリアルのはじめにの節で作成した、`--aepUserLdap-- - One Adobe Datastream` という名前のデータストリームを検索します。 「**コピー**」アイコンをクリックして **データストリーム ID** をコピーし、Visual Studio Code の **scripts.js** ファイルに、`XXX` の横にあるプレースホルダー値 `datastreamId:` を置き換えて貼り付けます。
 
 ![AEMCS](./images/scriptsvar1.png){zoomable="yes"}
 
 ### orgId
 
-[https://platform.adobe.com/](https://platform.adobe.com/) に移動し、左メニューの **クエリ** に移動します。 **資格情報** の下に、**IMS 組織 ID** が **ユーザー名** として表示されます。 **コピー** アイコンをクリックして **IMS 組織 ID** をコピーし、Visual Studio Code の **scripts.js** ファイルに貼り付けます。`orgId:` の横にあるプレースホルダー値 `XXX` を置き換えます。
+[https://platform.adobe.com/](https://platform.adobe.com/) に移動し、左メニューの **クエリ** に移動します。 **資格情報** の下に、**IMS 組織 ID** が **ユーザー名** として表示されます。 **コピー** アイコンをクリックして **IMS 組織 ID** をコピーし、Visual Studio Code の **scripts.js** ファイルに貼り付けます。`XXX` の横にあるプレースホルダー値 `orgId:` を置き換えます。
 
 ![AEMCS](./images/scriptsvar2.png){zoomable="yes"}
 
@@ -175,7 +175,7 @@ const AUDIENCES = {
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 
-URL は次のようになります。`https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js` エラーの原因となる他のテキストがコピーされていないことを確認してください。 Visual Studio Code の **scripts.js** ファイルで、`launchUrls:` 配列のプレースホルダー値 `XXX` を置き換えます。
+URL は次のようになります。`https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js` エラーの原因となる他のテキストがコピーされていないことを確認してください。 Visual Studio Code の **scripts.js** ファイルで、`XXX` 配列のプレースホルダー値 `launchUrls:` を置き換えます。
 
 これで、必要な 3 つの変数が作成されました。 ファイル `scripts.js` は次のようになります。
 
@@ -315,7 +315,7 @@ GitHub デスクトップクライアントを開き、変更をコミットし�
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## タグプロパティの ACDL 拡張 1.1.6.4 能
+## タグプロパティの ACDL 拡張 1.1.5.4 能
 
 AEM Edge Delivery Services MarTech プラグインを正しく機能させるには、以下の拡張子を追加する必要があります。
 
@@ -323,7 +323,7 @@ AEM Edge Delivery Services MarTech プラグインを正しく機能させるに
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-**拡張機能**、**カタログ** に移動します。 拡張子 **Adobe Client Data Layer をクリックしてから**&#x200B;**インストール** をクリックします。
+**拡張機能**、**カタログ** に移動します。 拡張子 **Adobe Client Data Layer をクリックしてから****インストール** をクリックします。
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 
@@ -341,9 +341,9 @@ AEM Edge Delivery Services MarTech プラグインを正しく機能させるに
 
 これで、変更がデプロイされました。
 
-## Adobe Experience Platform Edge Networkへの 1.1.6.5 データの送信
+## Adobe Experience Platform Edge Networkへの 1.1.5.5 データの送信
 
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en/` や `main--citisignal--XXX.aem.live/us/en/` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `main--citisignal--XXX.aem.page/us/en/`）に置き換えた後、`main--citisignal--XXX.aem.live/us/en/` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
@@ -366,7 +366,7 @@ Chromeで、**その他のツール**/**デベロッパーツール** に移動�
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## Adobe Experience Platform1.1.6.6 顧客プロファイルを表示するには
+## Adobe Experience Platform1.1.5.6 顧客プロファイルを表示するには
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 

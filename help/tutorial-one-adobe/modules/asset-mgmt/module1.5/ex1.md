@@ -3,10 +3,10 @@ title: Adobe Commerce as a Cloud Serviceの概要
 description: Adobe Commerce as a Cloud Serviceの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 16%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -100,6 +100,16 @@ ht-degree: 16%
 このメッセージが表示されます。 「**OK**」をクリックします。
 
 ![AEM Assets](./images/accs15.png)
+
+その後、あなたはここに戻るべきです。 **CitiSignal** Web サイトをクリックして開きます。
+
+![AEM Assets](./images/accs16.png)
+
+この web サイトをデフォルトの web サイトとして設定するには、チェックボックスをオンにします。
+
+**Web サイトを保存** をクリックします。
+
+![AEM Assets](./images/accs16a.png)
 
 その後、あなたはここに戻るべきです。
 
@@ -242,7 +252,7 @@ ht-degree: 16%
 
 ![AEM Assets](./images/accs46.png)
 
-これで、商品カタログに商品 **0&rbrace;iPhone Air&rbrace; とそのバリエーションが表示されます。**
+これで、商品カタログに商品 **0}iPhone Air} とそのバリエーションが表示されます。**
 
 ![AEM Assets](./images/accs47.png)
 

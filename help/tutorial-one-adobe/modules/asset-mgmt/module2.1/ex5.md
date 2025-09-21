@@ -4,14 +4,14 @@ description: AEM CS – 高度なカスタムブロック
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 高度なカスタムブロック
+# 1.1.4 高度なカスタムブロック
 
 前の演習では、**オファーテキスト**、**オファーCTA**、**オファー画像** などのフィールドを表示する **ファイバーオファー** という基本的なカスタムブロックを Web サイトに設定しました。
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1 ブロックのスタイル設定
+## 1.1.4.1 ブロックのスタイル設定
 
 作業する **fiberoffer** ブロックができたので、スタイルを適用できます。
 
@@ -106,7 +106,7 @@ PR、`js css` の名前を入力します。 「**メインにコミット**」�
 
 ![ ブロック ](./images/blockadv12.png){zoomable="yes"}
 
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en/` や `main--citisignal--XXX.aem.live/us/en/` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `main--citisignal--XXX.aem.page/us/en/`）に置き換えた後、`main--citisignal--XXX.aem.live/us/en/` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
@@ -115,7 +115,7 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 
 ![ ブロック ](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 外部エンドポイントからのロジックの追加とデータの読み込み
+## 1.1.4.2 外部エンドポイントからのロジックの追加とデータの読み込み
 
 この演習では、Adobeの web SDKの「生」設定を行い、Adobe Journey Optimizer Offer Decisioningから次善のオファーをリクエストします。
 
@@ -336,7 +336,7 @@ async function getOffer(ECID) {
 
 ![ ブロック ](./images/blockadv19.png){zoomable="yes"}
 
-XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`）に置き換えた後、`main--citisignal--XXX.aem.page/us/en/` や `main--citisignal--XXX.aem.live/us/en/` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `main--citisignal--XXX.aem.page/us/en/`）に置き換えた後、`main--citisignal--XXX.aem.live/us/en/` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
@@ -345,7 +345,7 @@ XXX を GitHub ユーザーアカウント（この例では `woutervangeluwe`�
 
 ![ ブロック ](./images/blockadv20.png){zoomable="yes"}
 
-次の手順：[1.1.6 AEM Edge Delivery Services MarTech プラグイン ](./ex6.md){target="_blank"}
+次の手順：[AEM Edge Delivery Services MarTech プラグイン ](./ex6.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 

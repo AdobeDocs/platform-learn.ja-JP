@@ -4,16 +4,16 @@ description: AEM CS – 基本カスタムブロック
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 2%
 
 ---
 
-# 1.1.4 基本的なカスタムブロックの作成
+# 1.1.3 基本的なカスタムブロックの作成
 
-## 1.1.4.1ローカル開発環境のセットアップ
+## 1.1.3.1ローカル開発環境のセットアップ
 
 [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"} に移動し、**Github デスクトップ** をダウンロードしてインストールします。
 
@@ -43,7 +43,7 @@ Visual Studio Code でそのフォルダーが開いていることが確認で�
 
 ![ ブロック ](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 基本カスタムブロックの作成
+## 1.1.3.2 基本カスタムブロックの作成
 
 Adobeでは、次の 3 つの段階アプローチでブロックを開発することをお勧めします。
 
@@ -145,7 +145,7 @@ Visual Studio Code で、ファイル **component-filters.json** を開きます
 
 ![ ブロック ](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 変更をコミットします
+## 1.1.3.3 変更をコミットします
 
 これで、プロジェクトで、GitHub リポジトリにコミットして戻す必要のある変更をいくつか加えました。 それには、**GitHub デスクトップ** を開きます。
 
@@ -169,7 +169,7 @@ PR、`Fiber Offer custom block` の名前を入力します。 「**メインに
 
 ![ ブロック ](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 ページにブロックを追加
+## 1.1.3.4 ページにブロックを追加
 
 基本的な引用ブロックが定義され、CitiSignal プロジェクトにコミットされたので、既存のページに **fiberoffer** ブロックを追加できます。
 
@@ -249,7 +249,7 @@ AEM オーサー環境が表示されます。 **サイト** に移動します�
 
 これで、新しいページが公開されました。
 
-## 1.1.4.5 ナビゲーション メニューに新しいページを追加する
+## 1.1.3.5 ナビゲーション メニューに新しいページを追加する
 
 AEM Sitesの概要で、**CitiSignal**/**Fragments** に移動し、「**Header**」のチェックボックスをオンにします。 「**編集**」をクリックします。
 
@@ -284,7 +284,7 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal--
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-次の手順：[1.1.5 詳細カスタムブロック ](./ex5.md){target="_blank"}
+次の手順：[ 詳細カスタムブロック ](./ex5.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 

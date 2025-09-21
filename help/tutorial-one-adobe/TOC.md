@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1371'
 ht-degree: 3%
 
 ---
@@ -93,11 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience ManagerCloud Service {#assetm1}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Cloud Manager プログラムを作成する](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2 ドキュメントベースの web サイトの作成](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
-      + [1.1.3 AEM CS 環境のセットアップ](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.4 基本カスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.5 高度なカスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [1.1.6 AEM Edge Delivery Services MarTech プラグイン](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2 AEM CS 環境のセットアップ](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.3 基本カスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [1.1.4 高度なカスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
+      + [1.1.5 AEM Edge Delivery Services MarTech プラグイン](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)

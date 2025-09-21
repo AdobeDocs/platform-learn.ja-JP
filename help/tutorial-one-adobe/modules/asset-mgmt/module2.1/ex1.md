@@ -4,9 +4,9 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '344'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcs1.png)
 
-**プログラム名** には、`--aepUserLdap-- - CitiSignal` を使用します。 「**サンドボックスを設定**」オプションを選択します。 「**続行**」をクリックします。
+**プログラム名** には、`--aepUserLdap-- - CitiSignal AEM+ACCS` を使用します。 「**サンドボックスを設定**」オプションを選択します。 「**続行**」をクリックします。
 
 ![AEMCS](./images/aemcs2.png)
 
@@ -51,8 +51,6 @@ ht-degree: 3%
 環境の作成には時間がかかります（10 ～ 20 分）。
 
 ![AEMCS](./images/aemcs4.png)
-
-お待ちください。演習 [1.1.2 ドキュメントベースの web サイトの作成 ](./ex2.md){target="_blank"} から既に開始できます。
 
 環境が作成され、使用する準備が整うと、確認のメールが届きます。その後、ここに戻ることができます。
 
@@ -107,7 +105,7 @@ ht-degree: 3%
 
 パイプラインの実行が完了したら、次の演習に進むことができます。
 
-次の手順：[1.1.2 ドキュメントベースの web サイトを作成する ](./ex2.md){target="_blank"}
+次の手順：[AEM CS 環境のセットアップ ](./ex3.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 
