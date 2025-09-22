@@ -3,9 +3,9 @@ title: ACCS をAEM Assets CS に接続する
 description: ACCS をAEM Assets CS に接続する
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca895385f5c1f318a7c4d0b338dcfa4e91763005
+source-git-commit: 58448049d54ee6124985159577df0e307896a312
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >以前、AEM CS プログラムをAEM SitesとAssets CS 環境で設定したことがある場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
+
+前の演習を完了すると、ACCS から web サイトに製品が返されるのがわかりますが、まだ画像がありません。 この演習の最後では、画像が返されることも確認できます。
+
+![ACCS+AEM Sites](./images/accsaemsites11.png)
 
 ## 1.5.3.1 パイプライン設定を更新
 
@@ -96,7 +100,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets17.png)
 
-次に、**Microsoft Visual Studio Code を開き**&#x200B;**Microsoft Visual Studio Code&rbrace; でプログラムのパイプラインリポジトリを含むフォルダーを開き** す。
+次に、**Microsoft Visual Studio Code を開き****Microsoft Visual Studio Code} でプログラムのパイプラインリポジトリを含むフォルダーを開き** す。
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
@@ -110,7 +114,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets20.png)
 
-これで、プログラムのパイプラインリポジトリにリンクされている Git リポジトリに、新しいファイルをアップロードして戻す準備が整いました。 それには、フォルダー **AEM Pipeline GitHub&rbrace; を開き** 新しいファイルを含むフォルダーを右クリックします。 **フォルダーに新しいターミナル** を選択します。
+これで、プログラムのパイプラインリポジトリにリンクされている Git リポジトリに、新しいファイルをアップロードして戻す準備が整いました。 それには、フォルダー **AEM Pipeline GitHub} を開き** 新しいファイルを含むフォルダーを右クリックします。 **フォルダーに新しいターミナル** を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
@@ -148,7 +152,7 @@ ACCS インスタンスに戻ります。 左側のメニューで、**ストア
 
 ![ACCS+AEM Assets](./images/accsaemassets49.png)
 
-メニューを下にスクロールして **ADOBE サービスを表示し**&#x200B;**AEM Assets Integration** を開きます。 この画像が表示されます。
+メニューを下にスクロールして **ADOBE サービスを表示し****AEM Assets Integration** を開きます。 この画像が表示されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
@@ -171,6 +175,10 @@ ACCS インスタンスに戻ります。 左側のメニューで、**ストア
 「**設定を保存**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets51.png)
+
+この画像が表示されます。
+
+![ACCS+AEM Assets](./images/accsaemassets52.png)
 
 ## config.json の 1.5.3.3 更新
 
@@ -216,7 +224,7 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets33.png)
 
-2 つの新しいメタデータ属性を含む **0&rbrace;Commerce&rbrace; タブが表示されます。**
+2 つの新しいメタデータ属性を含む **0}Commerce} タブが表示されます。**
 
 ![ACCS+AEM Assets](./images/accsaemassets34.png)
 
@@ -252,37 +260,139 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets41.png)
 
-その後、画像はフォルダーで使用できるようになります。
+その後、画像はフォルダーで使用できるようになります。 商品 **iPhone-Air-Light-Gold.png** にポインタを合わせて、「**プロパティ** アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets42.png)
 
-最初の製品画像をクリックして開きます。
-
-![ACCS+AEM Assets](./images/accsaemassets43.png)
-
-製品画像のステータスを **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
+下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
 
 ![ACCS+AEM Assets](./images/accsaemassets44.png)
 
-「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets45.png)
 
-画像ファイル名から製品 SKU を取得し、値を 1 に増やして、「**使用状況** ドロップダウンリストですべてのオプションを選択します。
+この製品に次の SKU を追加します：
 
-![ACCS+AEM Assets](./images/accsaemassets46.png)
+| キー | 値 | 用途 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Light-Gold` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
 これで完了です。 **保存して閉じる** をクリックします。
 
+![ACCS+AEM Assets](./images/accsaemassets46.png)
+
+商品 **iPhone-Air-Space-Black.png にポインタを合わせ** 「プロパティ **アイコンをクリック** ます。
+
 ![ACCS+AEM Assets](./images/accsaemassets47.png)
 
-このフォルダーに読み込んだすべての画像に対して、アセットの承認と「Commerce」タブの設定のアクションを繰り返します。 完了したら、すべての画像に **アセットが承認されたことを示す緑のサムスン** が表示される必要があります。
+下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
+上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+
+![ACCS+AEM Assets](./images/accsaemassets201.png)
+
+この製品に次の SKU を追加します：
+
+| キー | 値 | 用途 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Space-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+これで完了です。 **保存して閉じる** をクリックします。
+
+![ACCS+AEM Assets](./images/accsaemassets202.png)
+
+商品 **iPhone-Air-Sky-Blue.png にポインタを合わせ** 「プロパティ **アイコンをクリック** ます。
+
+![ACCS+AEM Assets](./images/accsaemassets203.png)
+
+下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
+
+![ACCS+AEM Assets](./images/accsaemassets204.png)
+
+上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+
+![ACCS+AEM Assets](./images/accsaemassets205.png)
+
+この製品に次の SKU を追加します：
+
+| キー | 値 | 用途 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Sky-Blue` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+これで完了です。 **保存して閉じる** をクリックします。
+
+![ACCS+AEM Assets](./images/accsaemassets206.png)
+
+商品 **iPhone-Air-Cloud-White.png にポインタを合わせ** 「プロパティ **アイコンをクリック** ます。
+
+![ACCS+AEM Assets](./images/accsaemassets207.png)
+
+下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
+
+![ACCS+AEM Assets](./images/accsaemassets208.png)
+
+上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+
+![ACCS+AEM Assets](./images/accsaemassets209.png)
+
+この製品に次の SKU を追加します：
+
+| キー | 値 | 用途 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Cloud-White` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+これで完了です。 **保存して閉じる** をクリックします。
+
+![ACCS+AEM Assets](./images/accsaemassets210.png)
+
+すべての **iPhone Air** の画像に、アセットが承認されたことを示す **緑のサムズアップ** が表示されるようになりました。
+
+![ACCS+AEM Assets](./images/accsaemassets250.png)
+
 ## AEM Sites CS/EDS ストアフロントでの製品イメージの 1.5.3.5 検証
 
+>[!NOTE]
+>
+>上記の変更が正常にデプロイされるまでに、最大 15 分かかる場合があります。 画像がまだ表示されていない場合は、15 分待ってから再試行してください。
 
+統合が機能していることを確認するには、CitiSignal の Web サイトを開く必要があります。
+
+Web サイトにアクセスするには、XXX を GitHub ユーザーアカウント（この例では `main--citisignal-aem-accs--XXX.aem.page`）に置き換えた後、`main--citisignal-aem-accs--XXX.aem.live` や `woutervangeluwe` に移動します。
+
+この例では、完全な URL は次のようになります。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` や `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
+
+この画像が表示されます。 **電話** に移動します。
+
+![ACCS+AEM Assets](./images/accsaemassets150.png)
+
+**iPhone Air** の商品画像が表示されます。 **iPhone Air** をクリックします。
+
+![ACCS+AEM Assets](./images/accsaemassets151.png)
+
+この画像が表示されます。 カラーおよびストレージオプションを変更すると、選択内容に応じて画像が動的に変化します。
+
+![ACCS+AEM Assets](./images/accsaemassets152.png)
+
+色を **ライトゴールド** に、保存サイズを **256 GB** に変更する例を以下に示します。
+
+![ACCS+AEM Assets](./images/accsaemassets153.png)
 
 次の手順：[ 概要とメリット ](./summary.md){target="_blank"}
 
