@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets17.png)
 
-次に、**Microsoft Visual Studio Code を開き****Microsoft Visual Studio Code} でプログラムのパイプラインリポジトリを含むフォルダーを開き** す。
+次に、**Microsoft Visual Studio Code を開き**&#x200B;**Microsoft Visual Studio Code&rbrace; でプログラムのパイプラインリポジトリを含むフォルダーを開き** す。
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets20.png)
 
-これで、プログラムのパイプラインリポジトリにリンクされている Git リポジトリに、新しいファイルをアップロードして戻す準備が整いました。 それには、フォルダー **AEM Pipeline GitHub} を開き** 新しいファイルを含むフォルダーを右クリックします。 **フォルダーに新しいターミナル** を選択します。
+これで、プログラムのパイプラインリポジトリにリンクされている Git リポジトリに、新しいファイルをアップロードして戻す準備が整いました。 それには、フォルダー **AEM Pipeline GitHub&rbrace; を開き** 新しいファイルを含むフォルダーを右クリックします。 **フォルダーに新しいターミナル** を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
@@ -152,7 +152,7 @@ ACCS インスタンスに戻ります。 左側のメニューで、**ストア
 
 ![ACCS+AEM Assets](./images/accsaemassets49.png)
 
-メニューを下にスクロールして **ADOBE サービスを表示し****AEM Assets Integration** を開きます。 この画像が表示されます。
+メニューを下にスクロールして **ADOBE サービスを表示し**&#x200B;**AEM Assets Integration** を開きます。 この画像が表示されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
@@ -224,7 +224,7 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets33.png)
 
-2 つの新しいメタデータ属性を含む **0}Commerce} タブが表示されます。**
+2 つの新しいメタデータ属性を含む **0&rbrace;Commerce&rbrace; タブが表示されます。**
 
 ![ACCS+AEM Assets](./images/accsaemassets34.png)
 
