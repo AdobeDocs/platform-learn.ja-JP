@@ -215,7 +215,7 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 ![AEMCS](./images/aemcsassets2.png)
 
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]**をクリック** ます。
+フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]&#x200B;**をクリック** ます。
 
 ![AEMCS](./images/aemcsassets3.png)
 
