@@ -1,6 +1,6 @@
 ---
 title: Experience Platform API の認証とアクセス
-description: Adobe Experience Platform API へアクセスする方法を学習します。
+description: Adobe Experience Platform API へアクセスする方法を学びます。
 feature: API
 role: Developer
 level: Beginner,Intermediate
@@ -12,7 +12,7 @@ exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 source-git-commit: 311b296d67cf39867e7c9f3fd9f0458dfefcfdfd
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -26,14 +26,14 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
 
 >[!IMPORTANT]
 >
->[Adobe Developer Console](https://developer.adobe.com/console/home) にアクセスするには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) で [ システム管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) または [ 開発者 ](https://adminconsole.adobe.com) である必要があります。
+>[Adobe Developer Console](https://developer.adobe.com/console/home) にアクセスするには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) で [ システム管理者 ](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) または [ 開発者 ](https://adminconsole.adobe.com) である必要があります。
 >
 > システム管理者は、API 認証情報を作成した後、認証情報をExperience Platformのロールに関連付ける必要があります。
 >
 >手順について詳しくは、[ 開発者の追加と API 資格情報への権限の付与チュートリアル ](../admin/add-developers.md) を参照してください。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/31656/?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Postmanを使用したExperience Platform API アクセストークンの生成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34080/?format=jpeg&nocache=1752259602830&captions=jpn" alt="Postmanを使用したExperience Platform API アクセストークンの生成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Postmanを使用したExperience Platform API アクセストークンの生成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
                     <p class="is-size-6">PostmanでExperience Platform API アクセストークンを生成する方法を説明します</p>
                 </div>
                 <a href="generate-an-access-token.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>
@@ -69,7 +69,7 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="PostmanでのExperience Platform API の使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34079/?format=jpeg&nocache=1752259602844&captions=jpn" alt="PostmanでのExperience Platform API の使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="PostmanでのExperience Platform API の使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
                     <p class="is-size-6">Adobe Experience Platformが提供するPostman コレクションを使用してAdobe API を調べます</p>
                 </div>
                 <a href="use-apis-with-postman.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>
