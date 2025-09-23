@@ -1,370 +1,290 @@
 ---
-title: AEM CS 環境のセットアップ
-description: AEM CS 環境のセットアップ
+title: AEM CS – 基本カスタムブロック
+description: AEM CS – 基本カスタムブロック
 kt: 5342
 doc-type: tutorial
-exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 1%
+source-wordcount: '812'
+ht-degree: 2%
 
 ---
 
-# 1.1.2 AEM CS 環境のセットアップ
+# 1.1.3 基本的なカスタムブロックの作成
 
-## 1.1.2.1 GitHub リポジトリの設定
+## 1.1.3.1ローカル開発環境のセットアップ
 
-[https://github.com](https://github.com){target="_blank"} に移動します。 「**ログイン**」をクリックします。
+[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"} に移動し、**Github デスクトップ** をダウンロードしてインストールします。
 
-![AEMCS](./images/aemcssetup1.png)
+![ ブロック ](./images/block1.png){zoomable="yes"}
 
-資格情報を入力します。 「**ログイン**」をクリックします。
+Github デスクトップがインストールされたら、前の演習で作成した GitHub リポジトリに移動します。 「**&lt;> コード」をクリックしてから** 「**GitHub デスクトップで開く**」をクリックします。
 
-![AEMCS](./images/aemcssetup2.png)
+![ ブロック ](./images/block2.png){zoomable="yes"}
 
-ログインすると、GitHub ダッシュボードが表示されます。
+GitHub リポジトリは、GitHub デスクトップで開かれます。 **ローカルパス** を自由に変更できます。 **クローン** をクリックします。
 
-![AEMCS](./images/aemcssetup3.png)
+![ ブロック ](./images/block3.png){zoomable="yes"}
 
-[https://github.com/adobe-rnd/aem-boilerplate-xcom](https://github.com/adobe-rnd/aem-boilerplate-xcom){target="_blank"} に移動します。 その後、これが表示されます。 「**このテンプレートを使用**」をクリックし、「**新しいリポジトリを作成**」をクリックします。
+これで、ローカルフォルダーが作成されます。
 
-![AEMCS](./images/aemcssetup4.png)
+![ ブロック ](./images/block4.png){zoomable="yes"}
 
-**リポジトリ名** には、`citisignal-aem-accs` を使用します。 表示を **プライベート** に設定します。 **リポジトリを作成** をクリックします。
+Visual Studio Code を開きます。 **File**/**Open Folder** に移動します。
 
-![AEMCS](./images/aemcssetup5.png)
+![ ブロック ](./images/block5.png){zoomable="yes"}
 
-数秒後に、リポジトリが作成されます。
+**citisignal** 用の GitHub 設定で使用するフォルダーを選択します。
 
-![AEMCS](./images/aemcssetup6.png)
+![ ブロック ](./images/block6.png){zoomable="yes"}
 
-次に、[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"} に移動します。 **インストール** または **設定** をクリックします。
+Visual Studio Code でそのフォルダーが開いていることが確認できます。新しいブロックを作成する準備が整いました。
 
-![AEMCS](./images/aemcssetup7.png)
+![ ブロック ](./images/block7.png){zoomable="yes"}
 
-GitHub ユーザーアカウントの横にある **続行** ボタンをクリックします。
+## 1.1.3.2 基本カスタムブロックの作成
 
-![AEMCS](./images/aemcssetup8.png)
+Adobeでは、次の 3 つの段階アプローチでブロックを開発することをお勧めします。
 
-GitHub ユーザーアカウントの横にある **設定** をクリックします。
+- ブロックの定義とモデルを作成し、レビューして、実稼動環境に取り込みます。
+- 新しいブロックでコンテンツを作成します。
+- 新しいブロックの装飾とスタイルを実装します。
 
-![AEMCS](./images/aemcssetup8a.png)
+### component-definition.json
 
-**リポジトリのみを選択** をクリックし、作成したリポジトリを追加します。
+Visual Studio Code で、ファイル **component-definition.json** を開きます。
 
-![AEMCS](./images/aemcssetup9.png)
+![ ブロック ](./images/block8.png){zoomable="yes"}
 
-下にスクロールして、「**保存**」をクリックします。
+コンポーネント **Quote** が表示されるまで下にスクロールします。 最後のコンポーネントの閉じブラケットの隣にカーソルを置きます。
 
-![AEMCS](./images/aemcssetup9a.png)
+![ ブロック ](./images/block9.png){zoomable="yes"}
 
-この確認が表示されます。
+このコードを貼り付け、コードのブロックの後にコンマ **,** を入力します。
 
-![AEMCS](./images/aemcssetup10.png)
+```json
+{
+  "title": "FiberOffer",
+  "id": "fiberoffer",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "FiberOffer",
+          "model": "fiberoffer",
+          "offerText": "<p>Fiber will soon be available in your region!</p>",
+          "offerCallToAction": "Get your offer now!",
+          "offerImage": ""
+        }
+      }
+    }
+  }
+}
+```
 
-## 1.1.2.2 更新ファイル fstab.yaml
+変更を保存します。
 
-GitHub リポジトリで、をクリックしてファイル `fstab.yaml` を開きます。
+![ ブロック ](./images/block10.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup11.png)
+### component-models.json
 
-**編集** アイコンをクリックします。
+Visual Studio Code で、ファイル **component-models.json** を開きます。
 
-![AEMCS](./images/aemcssetup12.png)
+![ ブロック ](./images/block11.png){zoomable="yes"}
 
-ここで、3 行目のフィールド **url** の値を更新する必要があります。
+最後の項目が表示されるまで下にスクロールします。 最後のコンポーネントの閉じブラケットの隣にカーソルを置きます。
 
-![AEMCS](./images/aemcssetup13.png)
+![ ブロック ](./images/block12.png){zoomable="yes"}
 
-GitHub リポジトリの設定と組み合わせて、特定のAEM Sites CS 環境の URL で現在の値を置き換える必要があります。
+コンマ **,** を入力し、enter キーを押して、次の行に次のコードをペーストします。
 
-URL の現在の値：`https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xcom/main`。
+```json
+{
+  "id": "fiberoffer",
+  "fields": [
+     {
+       "component": "richtext",
+       "name": "offerText",
+       "value": "",
+       "label": "Offer Text",
+       "valueType": "string"
+     },
+     {
+       "component": "richtext",
+       "valueType": "string",
+       "name": "offerCallToAction",
+       "label": "Offer CTA",
+       "value": ""
+     },
+     {
+       "component": "reference",
+       "valueType": "string",
+       "name": "offerImage",
+       "label": "Offer Image",
+        "multi": false
+     }
+   ]
+}
+```
 
-URL には、更新が必要な 3 つの部分があります
+変更を保存します。
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
+![ ブロック ](./images/block13.png){zoomable="yes"}
 
-XXX は、AEM CS オーサー環境の URL に置き換える必要があります。
+### component-filters.json
 
-YYY は GitHub ユーザーアカウントに置き換える必要があります。
+Visual Studio Code で、ファイル **component-filters.json** を開きます。
 
-ZZZ は、前の演習で使用した GitHub リポジトリの名前に置き換える必要があります。
+![ ブロック ](./images/block14.png){zoomable="yes"}
 
-AEM CS オーサー環境の URL は、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} で確認できます。 **プログラム** をクリックして開きます。
+**セクション** で、コンマ **,** を入力し、現在の最後の行の後にコンポーネントの ID **フィバーオファー** を入力します。
 
-![AEMCS](./images/aemcs6.png)
+変更を保存します。
+
+![ ブロック ](./images/block15.png){zoomable="yes"}
+
+## 1.1.3.3 変更をコミットします
+
+これで、プロジェクトで、GitHub リポジトリにコミットして戻す必要のある変更をいくつか加えました。 それには、**GitHub デスクトップ** を開きます。
+
+編集した 3 つのファイルが「変更 **の下に表示され** す。 変更をレビューします。
+
+![ ブロック ](./images/block16.png){zoomable="yes"}
+
+PR、`Fiber Offer custom block` の名前を入力します。 「**メインにコミット**」をクリックします。
+
+![ ブロック ](./images/block17.png){zoomable="yes"}
+
+この画像が表示されます。 **接触チャネルをプッシュ** をクリックします。
+
+![ ブロック ](./images/block18.png){zoomable="yes"}
+
+数秒後に、変更が GitHub リポジトリにプッシュされます。
+
+![ ブロック ](./images/block19.png){zoomable="yes"}
+
+ブラウザーで、GitHub アカウントと、CitiSignal 用に作成したリポジトリに移動します。 変更を受け取ったことを示す、次のようなメッセージが表示されます。
+
+![ ブロック ](./images/block20.png){zoomable="yes"}
+
+## 1.1.3.4 ページにブロックを追加
+
+基本的な引用ブロックが定義され、CitiSignal プロジェクトにコミットされたので、既存のページに **fiberoffer** ブロックを追加できます。
+
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
+
+![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
 次に、「**環境**」タブの 3 つのドット **...** をクリックし、「**詳細を表示**」をクリックします。
 
-![AEMCS](./images/aemcs9.png)
+![AEMCS](./images/aemcs9.png){zoomable="yes"}
 
-**オーサー** 環境の URL など、環境の詳細が表示されます。 URL をコピーします。
+その後、環境の詳細が表示されます。 **オーサー** 環境の URL をクリックします。
 
-![AEMCS](./images/aemcs10.png)
+>[!NOTE]
+>
+>環境が休止状態になっている可能性があります。 その場合は、まず環境の休止状態を解除する必要があります。
 
-XXX = `author-p166717-e1786231.adobeaemcloud.com`
+![AEMCS](./images/aemcs10.png){zoomable="yes"}
 
-GitHub ユーザーアカウント名の場合は、ブラウザーの URL で簡単に見つけることができます。 この例では、ユーザーアカウント名は `woutervangeluwe` です。
+AEM オーサー環境が表示されます。 **サイト** に移動します。
 
-YYY = `woutervangeluwe`
+![AEMCS](./images/block21.png){zoomable="yes"}
 
-![AEMCS](./images/aemcs11.png)
+**CitiSignal**/**us**/**en** に移動します。
 
-GitHub リポジトリ名については、GitHub で開いたブラウザーウィンドウでも見つけることができます。 この場合、リポジトリ名は `citisignal` です。
+![AEMCS](./images/block22.png){zoomable="yes"}
 
-ZZZ = `citisignal-aem-accs`
+**作成** をクリックし、「**ページ**」を選択します。
 
-![AEMCS](./images/aemcs12.png)
+![AEMCS](./images/block23.png){zoomable="yes"}
 
-これらの 3 つの値を組み合わせると、この新しい URL が表示されます。この URL はファイル `fstab.yaml` で設定する必要があります。
+**ページ** を選択し、「**次へ**」をクリックします。
 
-`https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
+![AEMCS](./images/block24.png){zoomable="yes"}
 
-「**変更をコミット…**」をクリックします。
+次の値を入力します。
 
-![AEMCS](./images/aemcs13.png)
+- タイトル：**CitiSignal ファイバー**
+- 名前：**citisignal-fiber**
+- ページタイトル：**CitiSignal ファイバー**
 
-「**変更をコミット**」をクリックします。
+「**作成**」をクリックします。
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/block25.png){zoomable="yes"}
 
-ファイル `fstab.yaml` が更新されました。
+この画像が表示されます。
 
-## 1.1.2.3 CitiSignal アセットのアップロード
+![AEMCS](./images/block26.png){zoomable="yes"}
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
+空白領域をクリックして、「**セクション**」コンポーネントを選択します。 次に、右側のメニューのプラス **+** アイコンをクリックします。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/block27.png){zoomable="yes"}
 
-次に、オーサー環境の URL をクリックします。
+カスタムブロックが、使用可能なブロックのリストに表示されます。 クリックして選択します。
 
-![AEMCS](./images/aemcssetup18.png)
+![AEMCS](./images/block28.png){zoomable="yes"}
 
-**Adobeでログイン** をクリックします。
+**オファーテキスト**、**オファーCTA**、**オファー画像** などのフィールドがエディターに追加されます。 **オファー画像** フィールドの「**+追加** をクリックして、画像を選択します。
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/block29.png){zoomable="yes"}
 
-その後、オーサー環境が表示されます。
+この画像が表示されます。 クリックしてフォルダー **citisignal** を開きます。
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/blockpub1.png){zoomable="yes"}
 
-URL は次のようになります：`https://author-p166717-e1786231.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+画像 **product-enrichment-1.png** を選択します。 「**選択**」をクリックします。
 
-次に、AEMの **CRX パッケージマネージャー** 環境にアクセスする必要があります。 それには、URL から `ui#/aem/aem/start.html?appId=aemshell` を削除し、`crx/packmgr` に置き換えます。つまり、URL は次のようになります。
-`https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`。
-**Enter** キーを押して、パッケージマネージャー環境を読み込みます
+![AEMCS](./images/blockpub2.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup22.png)
+これで完了です。 「**公開**」をクリックします。
 
-次に、「**パッケージをアップロード**」をクリックします。
+![AEMCS](./images/blockpub3.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup21.png)
+もう一度 **公開** をクリックします。
 
-**参照** をクリックして、アップロードするパッケージを探します。
+![AEMCS](./images/blockpub4.png){zoomable="yes"}
 
-アップロードするパッケージは **citisignal-assets.zip** と呼ばれ、次の場所でダウンロードできます。[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}
+これで、新しいページが公開されました。
 
-![AEMCS](./images/aemcssetup23.png)
+## 1.1.3.5 ナビゲーション メニューに新しいページを追加する
 
-パッケージを選択して **開く** をクリックします。
+AEM Sitesの概要で、**CitiSignal**/**Fragments** に移動し、「**Header**」のチェックボックスをオンにします。 「**編集**」をクリックします。
 
-![AEMCS](./images/aemcssetup24.png)
+![AEMCS](./images/nav0.png){zoomable="yes"}
 
-次に、「**OK**」をクリックします。
+テキスト `Fiber` を使用して、ナビゲーションメニューにメニューオプションを追加します。 テキスト **Fibre** を選択し、「**リンク**」アイコンをクリックします。
 
-![AEMCS](./images/aemcssetup25.png)
+![AEMCS](./images/nav1.png){zoomable="yes"}
 
-その後、パッケージがアップロードされます。
+**URL** `/us/en/citisignal-fiber` に対してこれを入力し、**V** アイコンをクリックして確認します。
 
-![AEMCS](./images/aemcssetup26.png)
+![AEMCS](./images/nav3.png){zoomable="yes"}
 
-次に、アップロードしたパッケージの **インストール** をクリックします。
+これで完了です。 「**公開**」をクリックします。
 
-![AEMCS](./images/aemcssetup27.png)
+![AEMCS](./images/nav4.png){zoomable="yes"}
 
-**インストール** をクリックします。
+もう一度 **公開** をクリックします。
 
-![AEMCS](./images/aemcssetup28.png)
+![AEMCS](./images/nav5.png){zoomable="yes"}
 
-数分後、パッケージがインストールされます。
-
-![AEMCS](./images/aemcssetup29.png)
-
-これで、このウィンドウを閉じることができます。
-
-## CitiSignal アセッ 1.1.2.4 の公開
-
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
-
-![AEMCS](./images/aemcs6.png)
-
-次に、オーサー環境の URL をクリックします。
-
-![AEMCS](./images/aemcssetup18.png)
-
-**Adobeでログイン** をクリックします。
-
-![AEMCS](./images/aemcssetup19.png)
-
-その後、オーサー環境が表示されます。 **Assets** をクリックします。
-
-![AEMCS](./images/aemcsassets1.png)
-
-**ファイル** をクリックします。
-
-![AEMCS](./images/aemcsassets2.png)
-
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]&#x200B;**をクリック** ます。
-
-![AEMCS](./images/aemcsassets3.png)
-
-「**次へ**」をクリックします。
-
-![AEMCS](./images/aemcsassets4.png)
-
-「**公開**」をクリックします。
-
-![AEMCS](./images/aemcsassets5.png)
-
-アセットが公開されました。
-
-## 1.1.2.5 Create CitiSignal web サイト
-
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
-
-![AEMCS](./images/aemcs6.png)
-
-次に、オーサー環境の URL をクリックします。
-
-![AEMCS](./images/aemcssetup18.png)
-
-**Adobeでログイン** をクリックします。
-
-![AEMCS](./images/aemcssetup19.png)
-
-その後、オーサー環境が表示されます。 **サイト** をクリックします。
-
-![AEMCS](./images/aemcssetup30.png)
-
-**作成** をクリックし、**テンプレートからのサイト** をクリックします。
-
-![AEMCS](./images/aemcssetup31.png)
-
-**インポート** をクリックします。
-
-![AEMCS](./images/aemcssetup32.png)
-
-次に、事前設定済みのテンプレートをサイトに読み込む必要があります。 テンプレートは [ こちら ](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"} からダウンロードできます。 ファイルをデスクトップに保存します。
-
-次に、ファイル `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` を選択し、「**開く** をクリックします。
-
-![AEMCS](./images/aemcssetup33.png)
-
-その後、これが表示されます。 アップロードしたテンプレートをクリックして選択し、「**次へ**」をクリックします。
-
-![AEMCS](./images/aemcssetup34.png)
-
-ここで、いくつかの詳細を入力する必要があります。
-
-- サイトのタイトル：**CitiSignal** を使用
-- サイト名：**CitiSignal** を使用
-- GitHub URL：以前に使用していた GitHub リポジトリの URL をコピーします
-
-![AEMCS](./images/aemcssetup35.png)
-
-これで完了です。 「**作成**」をクリックします。
-
-![AEMCS](./images/aemcssetup36.png)
-
-現在、サイトを作成しています。 これには数分かかることがあります。 「**OK**」をクリックします。
-
-![AEMCS](./images/aemcssetup37.png)
-
-数分後に画面を更新すると、新しく作成した CitiSignal Web サイトが表示されます。
-
-![AEMCS](./images/aemcssetup38.png)
-
-## 1.1.2.6 ファイル paths.json の更新
-
-GitHub リポジトリで、をクリックしてファイル `paths.json` を開きます。
-
-![AEMCS](./images/aemcssetupjson1.png)
-
-**編集** アイコンをクリックします。
-
-![AEMCS](./images/aemcssetupjson2.png)
-
-次に、3、4、5、6、7、10 行目の `aem-boilerplate-commerce` で、置き換えテキスト `CitiSignal` を更新する必要があります。
-
-「**変更をコミット**」をクリックします。
-
-![AEMCS](./images/aemcssetupjson3.png)
-
-「**変更をコミット**」をクリックします。
-
-![AEMCS](./images/aemcssetupjson4.png)
-
-ファイル `paths.json` が更新されました。
-
-## 1.1.2.7 CitiSignal web サイトの公開
-
-次に、**CitiSignal** の前にあるチェックボックスをクリックします。 次に、「**公開を管理**」をクリックします。
-
-![AEMCS](./images/aemcssetup39.png)
-
-「**次へ**」をクリックします。
-
-![AEMCS](./images/aemcssetup40.png)
-
-**子を含める設定** をクリックします。
-
-![AEMCS](./images/aemcssetup41.png)
-
-チェックボックス **子を含める** をクリックして選択し、他のチェックボックスをクリックして選択解除します。 「**OK**」をクリックします。
-
-![AEMCS](./images/aemcssetup42.png)
-
-「**公開**」をクリックします。
-
-![AEMCS](./images/aemcssetup43.png)
-
-その後、あなたはここに送り返されます。 **CitiSignal** をクリックし、**index** の前にあるチェックボックスを選択して、**編集** をクリックします。
-
-![AEMCS](./images/aemcssetup44.png)
-
-Web サイトは **ユニバーサルエディター** で開きます。
-
-![AEMCS](./images/aemcssetup45.png)
-
-XXX を GitHub ユーザーアカウント（この例では `main--citisignal-aem-accs--XXX.aem.page`）に置き換えた後、`main--citisignal-aem-accs--XXX.aem.live` や `woutervangeluwe` に移動して、web サイトにアクセスできるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `main--citisignal--XXX.aem.page/us/en/`）に置き換えた後、`main--citisignal--XXX.aem.live/us/en/` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` や `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
-最初に公開する必要があるので、すべてのアセットが正しく表示されるまでには時間がかかる場合があります。
+この画像が表示されます。 **ファイバ** をクリックします。
 
-次の画面が表示されます。
+![AEMCS](./images/nav6.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup46.png)
+これが基本的なカスタムブロックですが、web サイトにレンダリングされています。
 
-## 1.1.2.8 テストページのパフォーマンス
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
-[https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"} に移動します。 URL を入力し、「**分析**」をクリックします。
-
-![AEMCS](./images/aemcssetup48.png)
-
-次に、モバイルとデスクトップの両方のビジュアライゼーションで、web サイトのスコアが高くなることがわかります。
-
-**モバイル**:
-
-![AEMCS](./images/aemcssetup49.png)
-
-**デスクトップ**:
-
-![AEMCS](./images/aemcssetup50.png)
-
-次の手順：[ カスタムブロックの開発 ](./ex4.md){target="_blank"}
+次の手順：[ 詳細カスタムブロック ](./ex5.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 

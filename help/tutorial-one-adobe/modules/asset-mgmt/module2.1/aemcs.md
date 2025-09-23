@@ -4,7 +4,7 @@ description: Adobe Experience ManagerCloud ServiceとEdge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 1%
@@ -27,19 +27,19 @@ ht-degree: 1%
 
 この演習では、Cloud Manager プログラムを作成して、Sites、Assets、Edge Delivery Servicesの各製品を作成します。
 
-[1.1.2 AEM CS 環境のセットアップ ](./ex3.md){target="_blank"}
+[1.1.2 AEM CS 環境のセットアップ ](./ex2.md){target="_blank"}
 
 この演習では、AEM CS 環境を設定し、CitiSignal web サイトにアクセスします。
 
-[1.1.3 基本カスタムブロック ](./ex4.md){target="_blank"}
+[1.1.3 基本カスタムブロック ](./ex3.md){target="_blank"}
 
 この演習では、web サイトの基本的なカスタムブロックを作成します。
 
-[1.1.4 高度なカスタムブロック ](./ex5.md){target="_blank"}
+[1.1.4 高度なカスタムブロック ](./ex4.md){target="_blank"}
 
 この演習では、web サイトの高度なカスタムブロックを開発します。
 
-[1.1.5 AEM Edge Delivery Services MarTech プラグイン ](./ex6.md){target="_blank"}
+[1.1.5 AEM Edge Delivery Services MarTech プラグイン ](./ex5.md){target="_blank"}
 
 この演習では、AEM MarTech プラグインを実装します。 AEM MarTech プラグインを使用すると、AEM プロジェクトの完全な MarTech スタックをすばやく設定できます。
 

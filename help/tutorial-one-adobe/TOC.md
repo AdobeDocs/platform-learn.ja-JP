@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1403'
 ht-degree: 3%
 
 ---
@@ -93,10 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience ManagerCloud Service {#assetm1}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Cloud Manager プログラムを作成する](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2 AEM CS 環境のセットアップ](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.3 基本カスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.4 高度なカスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [1.1.5 AEM Edge Delivery Services MarTech プラグイン](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2 AEM CS 環境のセットアップ](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
+      + [1.1.3 基本カスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.4 高度なカスタムブロック](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [1.1.5 AEM Edge Delivery Services MarTech プラグイン](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
@@ -270,3 +270,11 @@ ht-degree: 3%
          + [概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analyticsの概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
++ [WIP - Agentic AI](/help/tutorial-one-adobe/ai.md)
++ WIP - Agentic AI {#agenticai}
+   + 1.1 エージェントと AI の基本を学ぶ {#agenticai1}
+      + [概要](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
+      + [1.1.1 Agentic AI の概要](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
+   + 1.2 エージェントのCollaboration {#agenticai2}
+      + [概要](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
+      + [1.2.1 エージェントCollaborationの概要](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)

@@ -3,9 +3,9 @@ title: コンテンツステータス
 description: コンテンツステータス
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '467'
 ht-degree: 12%
 
 ---
@@ -77,6 +77,13 @@ ht-degree: 12%
 | [1.2 Customer Journey Analytics:BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 ](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 07/01/2025 | × | ソースデータのデータ準備モデリングに問題があります。 これは修正待ちの状態です。 |
 | [2.1 クエリサービス ](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | ○ | - |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 2025/08/02 | × | 開発中のコンテンツ |
+
+## 6.エージェンティック AI
+
+| 名前 | 最終更新日 | 作業 100% | 備考 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 不可 | - |
+| [1.2 無開発 AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 不可 | - |
 
 {style="table-layout:auto"}
 
