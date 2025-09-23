@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Audience Agentは、B2B/B2C アプリ間での会話作成、最適化、インサイト、安全な統合により、オーディエンス管理を合理化します。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](audience-agent-overview)
 

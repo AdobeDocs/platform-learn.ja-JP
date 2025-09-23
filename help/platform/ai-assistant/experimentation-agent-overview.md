@@ -20,5 +20,5 @@ ht-degree: 0%
 
 実験エージェントは、マーケター、アナリスト、管理者のためのインサイト、ガイド付き設定および自動分析を使用して、デジタル最適化を高速化します。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 

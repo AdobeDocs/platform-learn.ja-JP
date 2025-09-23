@@ -19,6 +19,6 @@ ht-degree: 0%
 
 Agent Orchestratorは、スマートエージェントと会話型インターフェイスを使用して、カスタマーエクスペリエンスのワークフローを合理化します。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](agent-orchestrator-overview)

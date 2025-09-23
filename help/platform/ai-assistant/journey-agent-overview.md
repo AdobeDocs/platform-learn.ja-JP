@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Journey Agentは、AI を使用して、対話型インターフェイスを通じて B2B/B2C ジャーニーを作成、分析および最適化します。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 
 
