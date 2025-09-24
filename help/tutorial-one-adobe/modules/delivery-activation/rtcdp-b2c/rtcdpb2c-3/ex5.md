@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL &#x200B; サンドボックス &#x200B;] を選択すると、画面が変更され、専用の [!UICONTROL &#x200B; サンドボックス &#x200B;] が表示されます。
 
 ![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
@@ -33,7 +33,7 @@ Real-Time CDPのAdobe Targetの宛先は、Adobe Edge Network へのデータの
 
 ![データ取り込み](./images/atdestds4.png)
 
-**Personalization セグメント化** と **2}Edgeの両方の宛先** チェックボックスをオンにします。 「**保存**」をクリックします。
+**Personalization セグメント化** と **2&rbrace;Edgeの両方の宛先** チェックボックスをオンにします。 「**保存**」をクリックします。
 
 ![データ取り込み](./images/atdestds4a.png)
 
@@ -127,7 +127,7 @@ Real-Time CDP オーディエンスがAdobe Targetに送信されるように設
 
 ![RTCDP](./images/atform2.png)
 
-デフォルトオーディエンスは、現在 **すべての訪問者** です。 **すべての訪問者** の横にある **3 ドットをクリックし****オーディエンスを変更** をクリックします。
+デフォルトオーディエンスは、現在 **すべての訪問者** です。 **すべての訪問者** の横にある **3 ドットをクリックし**&#x200B;**オーディエンスを変更** をクリックします。
 
 ![RTCDP](./images/atform3.png)
 
