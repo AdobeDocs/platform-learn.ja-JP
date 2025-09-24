@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 510e9f59-1399-4a52-ad51-67e3f407037f
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 13%
 
 ---
 
 # 1.4.2 Adobe Expressのアニメーションとビデオ
 
-この演習を開始する前に、[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zipから必要なアセットをダウンロードし ](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} デスクトップに解凍します。
+この演習を開始する前に、[https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zipから必要なアセットをダウンロードし ](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} デスクトップに解凍します。
 
 ![Adobe Express](./images/expressassets.png)
 
@@ -75,7 +75,7 @@ CitiSignal ロゴを画像の上部の中央に配置します。
 
 ![Adobe Express](./images/expressv16.png)
 
-**横（4:3）** を選択します。
+「**横（4:3）**」を選択します。
 
 ![Adobe Express](./images/expressv15.png)
 
@@ -87,7 +87,7 @@ CitiSignal ロゴを画像の上部の中央に配置します。
 
 ![Adobe Express](./images/expressv18.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含む **0&rbrace;Adobe_Express&rbrace; フォルダーに移動します。**&#x200B;ファイル **CitiSignalPhoneLogo.png** を選択し、「**開く**」をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含む **0}Adobe_Express} フォルダーに移動します。**&#x200B;ファイル **CitiSignalPhoneLogo.png** を選択し、「**開く**」をクリックします。
 
 ![Adobe Express](./images/expressv19.png)
 
@@ -127,7 +127,7 @@ CitiSignal ロゴを画像の上部の中央に配置します。
 
 ![Adobe Express](./images/expressv28.png)
 
-次に、「**ダウンロード**」をクリックします。 **ファイル形式**&#x200B;**MP4** を選択し、**ビデオの解像度** を **1080p** に設定します。 **ダウンロード** をクリックします。
+次に、「**ダウンロード**」をクリックします。 **ファイル形式****MP4** を選択し、**ビデオの解像度** を **1080p** に設定します。 **ダウンロード** をクリックします。
 
 ![Adobe Express](./images/expressv29.png)
 
@@ -157,7 +157,7 @@ CitiSignal ロゴを画像の上部の中央に配置します。
 
 ![Adobe Express](./images/expressv36.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含む **0&rbrace;Adobe_Express&rbrace; フォルダーに移動します。**&#x200B;ファイル **`AdobeStock_648887461_trimmed.mp4`** を選択し、「**開く** をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含む **0}Adobe_Express} フォルダーに移動します。**&#x200B;ファイル **`AdobeStock_648887461_trimmed.mp4`** を選択し、「**開く** をクリックします。
 
 ![Adobe Express](./images/expressv37.png)
 
@@ -235,7 +235,7 @@ CitiSignal ロゴを画像の上部の中央に配置します。
 
 ![Adobe Express](./images/expressv56.png)
 
-[https://experience.adobe.com/&rbrace; に移動し ](https://experience.adobe.com/){target="_blank"}**Experience Manager Assets** をクリックします。
+[https://experience.adobe.com/} に移動し ](https://experience.adobe.com/){target="_blank"}**Experience Manager Assets** をクリックします。
 
 ![Adobe Express](./images/expressv57a.png)
 

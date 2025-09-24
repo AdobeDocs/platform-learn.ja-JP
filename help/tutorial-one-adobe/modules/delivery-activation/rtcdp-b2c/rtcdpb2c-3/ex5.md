@@ -4,7 +4,7 @@ description: Real-time CDP - オーディエンスを作成してアクション
 kt: 5342
 doc-type: tutorial
 exl-id: 2a9a982b-0ffd-468d-9b71-77224e2c7e1d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 [Adobe Experience Platform](https://experience.adobe.com/platform) に移動します。 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL &#x200B; サンドボックス &#x200B;] を選択すると、画面が変更され、専用の [!UICONTROL &#x200B; サンドボックス &#x200B;] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 ## データストリームの検証
 
@@ -27,27 +27,27 @@ Real-Time CDPのAdobe Targetの宛先は、Adobe Edge Network へのデータの
 
 左側のメニューで、下にスクロールし、**データストリーム** をクリックします。 データストリームで、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを検索します。 データストリームをクリックして開きます。
 
-![データ取得](./images/atdestds1.png)
+![データ取り込み](./images/atdestds1.png)
 
 表示されたら、「**Adobe Experience Platform」の横にある「**...**」をクリックし** 「**編集**」をクリックします。
 
-![データ取得](./images/atdestds4.png)
+![データ取り込み](./images/atdestds4.png)
 
-**Personalization セグメント化** と **2&rbrace;Edgeの両方の宛先** チェックボックスをオンにします。 「**保存**」をクリックします。
+**Personalization セグメント化** と **2}Edgeの両方の宛先** チェックボックスをオンにします。 「**保存**」をクリックします。
 
-![データ取得](./images/atdestds4a.png)
+![データ取り込み](./images/atdestds4a.png)
 
 次に、「**+ サービスを追加**」をクリックします。
 
-![データ取得](./images/atdestds4b.png)
+![データ取り込み](./images/atdestds4b.png)
 
 サービス **Adobe Target** を選択します。 「**保存**」をクリックします。
 
-![データ取得](./images/atdestds5.png)
+![データ取り込み](./images/atdestds5.png)
 
 これで、データストリームがAdobe Target用に設定されました。
 
-![データ取得](./images/atdestds5a.png)
+![データ取り込み](./images/atdestds5a.png)
 
 ## Adobe Targetの宛先の設定
 
@@ -127,7 +127,7 @@ Real-Time CDP オーディエンスがAdobe Targetに送信されるように設
 
 ![RTCDP](./images/atform2.png)
 
-デフォルトオーディエンスは、現在 **すべての訪問者** です。 **すべての訪問者** の横にある **3 ドットをクリックし**&#x200B;**オーディエンスを変更** をクリックします。
+デフォルトオーディエンスは、現在 **すべての訪問者** です。 **すべての訪問者** の横にある **3 ドットをクリックし****オーディエンスを変更** をクリックします。
 
 ![RTCDP](./images/atform3.png)
 
@@ -146,7 +146,7 @@ Adobe Experience Platform オーディエンスは、このエクスペリエン
 次のコードを貼り付けます。
 
 ```javascript
-<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
+<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
 document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > div > div > p").innerHTML="What about 10% off of your next Galaxy S24 smartphone?";
 </script>
 ```

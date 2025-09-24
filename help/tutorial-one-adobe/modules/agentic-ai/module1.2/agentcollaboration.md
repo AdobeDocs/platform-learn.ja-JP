@@ -3,10 +3,11 @@ title: Collaboration捜査官
 description: Collaboration捜査官
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 96f8490e-a7f4-4b81-8e7a-1ae2cab158fe
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 7%
+source-wordcount: '71'
+ht-degree: 5%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 ## 学習内容
 
-- ...
+このモジュールでは、前に作成したエージェントが、様々なAdobe エージェントと連携し始めます。
 
 ## 前提条件
 

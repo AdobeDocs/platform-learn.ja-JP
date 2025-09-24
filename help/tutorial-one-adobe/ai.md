@@ -2,7 +2,8 @@
 title: 概要 Agentic AI テクニカルラボ
 description: 概要 Agentic AI テクニカルラボ
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Agentic AI Tech Labs は進行中の作業で、2025 年 11 月/12 月にリリースされる予定です。
 
-## 1.1 エージェントと AI の基本を学ぶ
+[1.1 エージェントと AI の基本を学ぶ](./modules/agentic-ai/module1.1/agenticai.md)
 
 **目標**
 
@@ -37,7 +38,7 @@ Agentic AI Tech Labs は進行中の作業で、2025 年 11 月/12 月にリリ�
 - MCP サーバー、Python ノートブック
 - ADOBE API
 
-## 1.2 エージェントのCollaboration
+[1.2 エージェントのCollaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **目標**
 

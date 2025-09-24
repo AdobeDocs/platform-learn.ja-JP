@@ -4,7 +4,7 @@ description: Cloud Manager プログラムの作成
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
@@ -105,7 +105,7 @@ ht-degree: 3%
 
 パイプラインの実行が完了したら、次の演習に進むことができます。
 
-次の手順：[AEM CS 環境のセットアップ ](./ex3.md){target="_blank"}
+次の手順：[AEM CS 環境のセットアップ ](./ex2.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 

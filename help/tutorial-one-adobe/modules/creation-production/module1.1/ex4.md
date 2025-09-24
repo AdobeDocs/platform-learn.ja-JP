@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Fireflyのカスタムモデルを使用すると、次のことができます�
 
 ![Firefly カスタムモデル ](./images/ffcm7.png){zoomable="yes"}
 
-参照画像を [ こちら ](https://tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip) からダウンロードします。 ダウンロードファイルを解凍すると、次の情報が得られます。
+参照画像を [ こちら ](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip) からダウンロードします。 ダウンロードファイルを解凍すると、次の情報が得られます。
 
 ![Firefly カスタムモデル ](./images/ffcm8.png){zoomable="yes"}
 

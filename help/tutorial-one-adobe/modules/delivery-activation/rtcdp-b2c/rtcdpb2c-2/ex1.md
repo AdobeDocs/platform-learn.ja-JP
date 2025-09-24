@@ -4,10 +4,10 @@ description: 顧客 AI - データ準備（取り込み）
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -24,13 +24,13 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-![データ取得](../../datacollection/dc1.2/images/home.png)
+![データ取り込み](../../datacollection/dc1.2/images/home.png)
 
 続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
-![データ取得](../../datacollection/dc1.2/images/sb1.png)
+![データ取り込み](../../datacollection/dc1.2/images/sb1.png)
 
-左側のメニューから **スキーマ** をクリックし、**参照** に移動します。 **スキーマを作成** をクリックします。
+左側のメニューから **スキーマ** をクリックし、**参照** に移動します。 「**スキーマを作成**」をクリックします。
 
 ![ 新しいスキーマの作成 ](./images/createschemabutton.png)
 
@@ -112,7 +112,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 この演習のエクスペリエンスイベント用に準備するデータは、[ 消費者エクスペリエンスイベント XDM フィールドグループ ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) の要件とスキーマに準拠している必要があります。
 
-デモデータが入った zip ファイルを [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip) からダウンロードしてください。
+デモデータが入った zip ファイルを [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip) からダウンロードしてください。
 
 これで、**CUSTOM-CAI-EVENTS-WEB.zip** という名前のファイルをダウンロードしました。 ファイルをコンピューターのデスクトップに配置し、展開すると、**CUSTOM-CAI-EVENTS-WEB** という名前のフォルダーが表示されます。
 

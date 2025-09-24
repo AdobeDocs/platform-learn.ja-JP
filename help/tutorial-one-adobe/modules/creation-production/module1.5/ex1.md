@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 09e8fdfd-e02f-43ff-a4f4-fa92eb3f01a3
-source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![Frame.io](./images/frameio7.png)
 
-次のファイルをダウンロードします：[https://tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip) デスクトップにダウンロードし、デスクトップに展開します。
+次のファイルをダウンロードします：[https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip) デスクトップにダウンロードし、デスクトップに展開します。
 
 ![Frame.io](./images/frameio8.png)
 

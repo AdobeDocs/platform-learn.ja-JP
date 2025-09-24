@@ -4,9 +4,9 @@ description: AEM CS 環境のセットアップ
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
@@ -131,7 +131,7 @@ ZZZ = `citisignal-aem-accs`
 
 ファイル `fstab.yaml` が更新されました。
 
-## 1.1.2.3 CitiSignal アセットのアップロード
+## 1.1.2.3 CitiSignal アセットおよびサイトのアップロード
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
 
@@ -163,11 +163,11 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 **参照** をクリックして、アップロードするパッケージを探します。
 
-アップロードするパッケージは **citisignal-assets.zip** と呼ばれ、次の場所でダウンロードできます。[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}
+アップロードするパッケージは **citisignal-assets.zip** と呼ばれ、次の場所でダウンロードできます。[https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}
 
 ![AEMCS](./images/aemcssetup23.png)
 
-パッケージを選択して **開く** をクリックします。
+パッケージ `citisignal_aem_accs.zip` を選択し、「**開く** をクリックします。
 
 ![AEMCS](./images/aemcssetup24.png)
 
@@ -175,11 +175,7 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 ![AEMCS](./images/aemcssetup25.png)
 
-その後、パッケージがアップロードされます。
-
-![AEMCS](./images/aemcssetup26.png)
-
-次に、アップロードしたパッケージの **インストール** をクリックします。
+その後、パッケージがアップロードされます。 次に、アップロードしたパッケージの **インストール** をクリックします。
 
 ![AEMCS](./images/aemcssetup27.png)
 
@@ -215,7 +211,7 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 ![AEMCS](./images/aemcsassets2.png)
 
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]&#x200B;**をクリック** ます。
+フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]**をクリック** ます。
 
 ![AEMCS](./images/aemcsassets3.png)
 
@@ -229,61 +225,66 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 アセットが公開されました。
 
-## 1.1.2.5 Create CitiSignal web サイト
+## 1.1.2.5 CitiSignal web サイトの公開
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
+画面の左上隅にある **Adobe Experience Manager** の商品名をクリックし、**Assets** の横にある **矢印** をクリックします。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcssetup30a.png)
 
-次に、オーサー環境の URL をクリックします。
-
-![AEMCS](./images/aemcssetup18.png)
-
-**Adobeでログイン** をクリックします。
-
-![AEMCS](./images/aemcssetup19.png)
-
-その後、オーサー環境が表示されます。 **サイト** をクリックします。
+次に、「**サイト**」をクリックします。
 
 ![AEMCS](./images/aemcssetup30.png)
 
-**作成** をクリックし、**テンプレートからのサイト** をクリックします。
+その後、パッケージをインストールする前に作成した **CitiSignal** web サイトが表示されます。
 
 ![AEMCS](./images/aemcssetup31.png)
 
-**インポート** をクリックします。
+以前に作成した GitHub リポジトリにサイトをリンクするには、**Edge Delivery Services Configuration** を作成する必要があります。
+
+その最初の手順は、**クラウド設定** を作成することです。
+
+これを行うには、画面の左上隅にある **Adobe Experience Manager** の製品名をクリックし、**ツール** アイコンをクリックして **一般** を選択します。 **設定ブラウザー** をクリックして開きます。
+
+![AEMCS](./images/aemcssetup31a.png)
+
+この画像が表示されます。 **作成** をクリックします。
+
+![AEMCS](./images/aemcssetup31b.png)
+
+「**タイトル**」フィールドと「**名前**」フィールドを `CitiSignal` に設定します。 **クラウド設定** のチェックボックスを有効にします。
+
+「**作成**」をクリックします。
+
+![AEMCS](./images/aemcssetup31c.png)
+
+これで完了です。
+
+![AEMCS](./images/aemcssetup31d.png)
+
+次に、作成した **クラウド設定** のいくつかのフィールドを更新する必要があります。
+
+これを行うには、画面の左上隅にある **Adobe Experience Manager** の製品名をクリックし、「**ツール**」アイコンをクリックして「**クラウドサービス**」を選択します。 クリックして、**Edge Delivery Services Configuration** を開きます。
 
 ![AEMCS](./images/aemcssetup32.png)
 
-次に、事前設定済みのテンプレートをサイトに読み込む必要があります。 テンプレートは [ こちら ](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"} からダウンロードできます。 ファイルをデスクトップに保存します。
+**CitiSignal** を選択し、**作成** をクリックして、**設定** を選択します。
 
-次に、ファイル `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` を選択し、「**開く** をクリックします。
+![AEMCS](./images/aemcssetup31e.png)
+
+ここで、「組織」フィールドと **サイト名** フィールドに入力する必要が **り** す。 これをおこなうには、まず GitHub リポジトリの URL を参照します。
+
+![AEMCS](./images/aemcssetup31f.png)
+
+- **組織**:GitHub 組織名を使用します。この例では、`woutervangeluwe` です
+- **サイト名**:GitHub リポジトリの名前を使用します。この名前は `citisignal-aem-accs` にする必要があります。
+
+**保存して閉じる** をクリックします。
 
 ![AEMCS](./images/aemcssetup33.png)
 
-その後、これが表示されます。 アップロードしたテンプレートをクリックして選択し、「**次へ**」をクリックします。
+これで完了です。 新しく作成したEdge Cloud Configuration の前にあるチェックボックスを有効にし、「**公開**」をクリックします。
 
 ![AEMCS](./images/aemcssetup34.png)
-
-ここで、いくつかの詳細を入力する必要があります。
-
-- サイトのタイトル：**CitiSignal** を使用
-- サイト名：**CitiSignal** を使用
-- GitHub URL：以前に使用していた GitHub リポジトリの URL をコピーします
-
-![AEMCS](./images/aemcssetup35.png)
-
-これで完了です。 「**作成**」をクリックします。
-
-![AEMCS](./images/aemcssetup36.png)
-
-現在、サイトを作成しています。 これには数分かかることがあります。 「**OK**」をクリックします。
-
-![AEMCS](./images/aemcssetup37.png)
-
-数分後に画面を更新すると、新しく作成した CitiSignal Web サイトが表示されます。
-
-![AEMCS](./images/aemcssetup38.png)
 
 ## 1.1.2.6 ファイル paths.json の更新
 
@@ -308,6 +309,10 @@ GitHub リポジトリで、をクリックしてファイル `paths.json` を�
 ファイル `paths.json` が更新されました。
 
 ## 1.1.2.7 CitiSignal web サイトの公開
+
+画面左上隅の商品名 **0}Adobe Experience Manager} をクリックし、「** Sites **」を選択します。**
+
+![AEMCS](./images/aemcssetup38.png)
 
 次に、**CitiSignal** の前にあるチェックボックスをクリックします。 次に、「**公開を管理**」をクリックします。
 
@@ -364,7 +369,7 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal-a
 
 ![AEMCS](./images/aemcssetup50.png)
 
-次の手順：[ カスタムブロックの開発 ](./ex4.md){target="_blank"}
+次の手順：[ カスタムブロックの開発 ](./ex3.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 

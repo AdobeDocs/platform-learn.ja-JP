@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # 1.4.3 Adobe ExpressでのAssetsの一括作成
 
-この演習を開始する前に、[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zipから必要なアセットをダウンロードし ](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} デスクトップに解凍します。
+この演習を開始する前に、[https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zipから必要なアセットをダウンロードし ](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} デスクトップに解凍します。
 
 ![Adobe Express](./images/expressassets.png)
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 
 ![Adobe Express](./images/expressbc1.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含む **0&rbrace;Adobe_Express&rbrace; フォルダーに移動します。**&#x200B;ファイル **banner.png** を選択し、「**開く**」をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含む **0}Adobe_Express} フォルダーに移動します。**&#x200B;ファイル **banner.png** を選択し、「**開く**」をクリックします。
 
 ![Adobe Express](./images/expressbc2.png)
 
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 ![Adobe Express](./images/expressbc3.png)
 
-次に、**メディア** に移動し、**画像をアップロード** を選択します。 デスクトップに移動し、以前にダウンロードしたアセットを含む **0&rbrace;Adobe_Express&rbrace; フォルダーに移動します。**&#x200B;ファイル **man.png** を選択し、「**開く** をクリックします。
+次に、**メディア** に移動し、**画像をアップロード** を選択します。 デスクトップに移動し、以前にダウンロードしたアセットを含む **0}Adobe_Express} フォルダーに移動します。**&#x200B;ファイル **man.png** を選択し、「**開く** をクリックします。
 
 ![Adobe Express](./images/expressbc4.png)
 
@@ -105,7 +105,7 @@ CitiSignal ロゴ画像の場所を調整して、下の画像の同じ位置を
 
 ![Adobe Express](./images/expressbc19.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2&rbrace;Adobe_Express** の **Express Bulk Create」フォルダーに移動します。**&#x200B;ファイル **CTA-options.csv** を選択し、「**開く** をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2}Adobe_Express** の **Express Bulk Create」フォルダーに移動します。**&#x200B;ファイル **CTA-options.csv** を選択し、「**開く** をクリックします。
 
 ![Adobe Express](./images/expressbc20.png)
 
@@ -141,7 +141,7 @@ CitiSignal ロゴ画像の場所を調整して、下の画像の同じ位置を
 
 ![Adobe Express](./images/expressbc28.png)
 
-デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2&rbrace;Adobe_Express** の **Express Bulk Create」フォルダーに移動します。** 6～7 の画像ファイルを選択し、「**開く**」をクリックします。
+デスクトップに移動し、以前にダウンロードしたアセットを含むフォルダー **2}Adobe_Express** の **Express Bulk Create」フォルダーに移動します。** 6～7 の画像ファイルを選択し、「**開く**」をクリックします。
 
 ![Adobe Express](./images/expressbc29.png)
 
