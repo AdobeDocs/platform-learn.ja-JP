@@ -3,9 +3,10 @@ title: ACCS をAEM Assets CS に接続する
 description: ACCS をAEM Assets CS に接続する
 kt: 5342
 doc-type: tutorial
-source-git-commit: 58448049d54ee6124985159577df0e307896a312
+exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,7 +91,9 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce) に移動します。
+[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce) に移動します。 「**&lt;> コード**」をクリックし、「**ZIP をダウンロード**」を選択します。 ファイルをダウンロードして、デスクトップにドロップします。
+
+![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
 次に、ファイル **assets-commerce-main.zip** をデスクトップにコピーし、解凍します。 フォルダー **assets-commerce-main** を開きます。
 
@@ -100,7 +103,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets17.png)
 
-次に、**Microsoft Visual Studio Code を開き**&#x200B;**Microsoft Visual Studio Code&rbrace; でプログラムのパイプラインリポジトリを含むフォルダーを開き** す。
+次に、**Microsoft Visual Studio Code を開き****Microsoft Visual Studio Code} でプログラムのパイプラインリポジトリを含むフォルダーを開き** す。
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
@@ -114,7 +117,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets20.png)
 
-これで、プログラムのパイプラインリポジトリにリンクされている Git リポジトリに、新しいファイルをアップロードして戻す準備が整いました。 それには、フォルダー **AEM Pipeline GitHub&rbrace; を開き** 新しいファイルを含むフォルダーを右クリックします。 **フォルダーに新しいターミナル** を選択します。
+これで、プログラムのパイプラインリポジトリにリンクされている Git リポジトリに、新しいファイルをアップロードして戻す準備が整いました。 それには、フォルダー **AEM Pipeline GitHub} を開き** 新しいファイルを含むフォルダーを右クリックします。 **フォルダーに新しいターミナル** を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
@@ -152,7 +155,7 @@ ACCS インスタンスに戻ります。 左側のメニューで、**ストア
 
 ![ACCS+AEM Assets](./images/accsaemassets49.png)
 
-メニューを下にスクロールして **ADOBE サービスを表示し**&#x200B;**AEM Assets Integration** を開きます。 この画像が表示されます。
+メニューを下にスクロールして **ADOBE サービスを表示し****AEM Assets Integration** を開きます。 この画像が表示されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
@@ -224,7 +227,7 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets33.png)
 
-2 つの新しいメタデータ属性を含む **0&rbrace;Commerce&rbrace; タブが表示されます。**
+2 つの新しいメタデータ属性を含む **0}Commerce} タブが表示されます。**
 
 ![ACCS+AEM Assets](./images/accsaemassets34.png)
 

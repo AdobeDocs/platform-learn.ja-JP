@@ -3,10 +3,11 @@ title: Adobe Commerce as a Cloud Serviceの概要
 description: Adobe Commerce as a Cloud Serviceの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +182,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs30.png)
 
-3 列すべてに `1TB` という名前を使用して 3 つ目のオプションを設定し、もう一度 **オプションを追加** をクリックします。
+3 列すべてに `1TB` という名前を使用して、3 番目のオプションを設定します。
 
 ![AEM Assets](./images/accs31.png)
 
@@ -198,7 +199,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs33.png)
 
-この画像が表示されます。 **カラー** と **ストレージ** の両方の属性を選択し、「**次へ**」をクリックします。
+この画像が表示されます。 **color** と **storage** の両方の属性を選択し、「**次へ**」をクリックします。
 
 ![AEM Assets](./images/accs34.png)
 
@@ -234,7 +235,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs42.png)
 
-「**保存**」をクリックします。
+各商品の **数量** を `10000` に設定します。 「**保存**」をクリックします。
 
 ![AEM Assets](./images/accs43.png)
 
@@ -252,10 +253,9 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs46.png)
 
-これで、商品カタログに商品 **0&rbrace;iPhone Air&rbrace; とそのバリエーションが表示されます。**
+これで、商品カタログに商品 **0}iPhone Air} とそのバリエーションが表示されます。**
 
 ![AEM Assets](./images/accs47.png)
-
 
 次の手順：[ACCS をAEM Sites CS/EDS ストアフロントに接続する ](./ex2.md){target="_blank"}
 

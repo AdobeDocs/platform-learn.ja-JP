@@ -3,9 +3,10 @@ title: ACCS をAEM Sites CS/EDS ストアフロントに接続する
 description: ACCS をAEM Sites CS/EDS ストアフロントに接続する
 kt: 5342
 doc-type: tutorial
-source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
+exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,6 +76,11 @@ AEM Sites CS/EDS 環境の設定時に作成した GitHub リポジトリに移�
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 **config.json** ファイルが更新されました。 数分以内に web サイトに変更が表示されます。 変更が正常に取得されたかどうかを確認するには、**Phones** 製品ページに移動します。 これで、**iPhone Air** がページに表示されます。
+
+Web サイトにアクセスするには、XXX を GitHub ユーザーアカウントに置き換えた後、`main--citisignal-aem-accs--XXX.aem.page` または `main--citisignal-aem-accs--XXX.aem.live` （この例では `woutervangeluwe`）に移動する必要があります。
+
+この例では、完全な URL は次のようになります。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` や `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
