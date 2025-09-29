@@ -20,4 +20,4 @@ ht-degree: 0%
 
 処理能力とストリーミングの監視ダッシュボードにより、企業はプラットフォームの使用状況を可視化および制御できます。 スループットの割り当て、スパイクや未使用の検出、パフォーマンスに関するリアルタイムのインサイトを提供できるので、プロアクティブな決定とアラートが可能になり、過負荷を防ぎ、重要なサービスを安定した状態に保つことができます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475274/?learn=on&enablevpops&captions=jpn)
