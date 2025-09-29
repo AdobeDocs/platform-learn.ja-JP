@@ -18,4 +18,4 @@ ht-degree: 0%
 
 PostgreSQL プロトコルをサポートする様々なデスクトップクライアントアプリケーションからクエリサービスに接続する方法と、PostgreSQL ツールとドライバーを使用してクエリを接続し、書き込む方法について説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414045?learn=on&enablevpops&captions=jpn)

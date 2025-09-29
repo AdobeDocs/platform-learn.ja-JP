@@ -19,4 +19,4 @@ ht-degree: 0%
 
 このビデオでは、クエリエディターインターフェイス、PSQL クライアント、Business Intelligence （BI）ソリューション、および HTTP API でのクエリの実行に関するヒントとベストプラクティスを紹介します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35088?learn=on&enablevpops&captions=jpn)

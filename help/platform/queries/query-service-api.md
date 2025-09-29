@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Adobe Experience Platform クエリサービス API を使用して、クエリの記述と実行、スケジュールクエリの作成、およびクエリテンプレートの作成をおこなう方法について説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333700?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414087?learn=on&enablevpops&captions=jpn)

@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Adobe Experience Platform クエリサービスを使用すると、SQL を使用して、データレイクに保存されたカスタマーエクスペリエンスデータを調査、検証、変換できます。また、データ出力やスケジュールなどの強化機能は、Data Distiller アドオンから利用できます。 このビデオでは、主な機能の概要を説明します。これにより、ユーザーは、様々な Platform ベースのアプリケーションでクエリサービスを活用する方法を理解できるようになります。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35089?learn=on&enablevpops&captions=jpn)
 
 ## 基本的な使用方法
 
@@ -35,7 +35,7 @@ Adobe Experience Platform クエリサービスを使用すると、SQL を使�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="クエリサービスでのクエリの実行" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="クエリサービスでのクエリの実行"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34782?format=jpeg&nocache=1759180596408&captions=jpn" alt="クエリサービスでのクエリの実行"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Adobe Experience Platform クエリサービスを使用すると、SQL を使�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="クエリサービスでデータを検証" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="クエリサービスでデータを検証"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414057?format=jpeg&nocache=1759180596397&captions=jpn" alt="クエリサービスでデータを検証"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ Adobe Experience Platform クエリサービスを使用すると、SQL を使�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Data Distillerを使用したデータの取得" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Data Distillerを使用したデータの取得"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414069?format=jpeg&nocache=1759180596403&captions=jpn" alt="Data Distillerを使用したデータの取得"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Adobe Experience Platform クエリサービスを使用すると、SQL を使�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="Tableau のクエリサービスへの接続" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1759180596876" alt="Tableau のクエリサービスへの接続"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414045?format=jpeg&nocache=1759180596876&captions=jpn" alt="Tableau のクエリサービスへの接続"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Adobe Experience Platform クエリサービスを使用すると、SQL を使�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="顧客データを再充電して、魅力的なエクスペリエンスを提供します" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="顧客データを再充電して、魅力的なエクスペリエンスを提供します"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454936?format=jpeg&nocache=1759180596865&captions=jpn" alt="顧客データを再充電して、魅力的なエクスペリエンスを提供します"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
