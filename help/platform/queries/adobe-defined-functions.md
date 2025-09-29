@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Adobe定義関数
 
-Adobe Experience Platform クエリサービスのAdobe定義関数を使用して、エクスペリエンスイベントデータに対して一般的なビジネス関連タスクを実行する方法について説明します。 詳しくは、[ クエリサービスでAdobeで定義された SQL 関数 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions) を参照してください。
+Adobe Experience Platform クエリサービスのAdobe定義関数を使用して、エクスペリエンスイベントデータに対して一般的なビジネス関連タスクを実行する方法について説明します。 詳しくは、[ クエリサービスでAdobeで定義された SQL 関数 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/adobe-defined-functions) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)
