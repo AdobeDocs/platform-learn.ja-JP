@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Data Distillerを使用したデータの取得
 
-データエンジニアがクエリサービスを使用してデータを変換し、新しいデータセットを出力する方法について説明します。 これらのクエリをスケジュールに従って実行し、自動ダッシュボードとセグメント化を強化します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) を参照してください。
+データエンジニアがクエリサービスを使用してデータを変換し、新しいデータセットを出力する方法について説明します。 これらのクエリをスケジュールに従って実行し、自動ダッシュボードとセグメント化を強化します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
