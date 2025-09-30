@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Adobe Experience Platform Agent Orchestratorの概要
 
-Agent Orchestratorは、Adobe Experience Platformのエージェンティックレイヤーで、専用のエージェント、高度な推論エンジン、強力な対話型インターフェイスを使用して、カスタマーエクスペリエンスのオーケストレーションを強化します。 詳しくは、[Agent Orchestrator ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator) を参照してください。
+Agent Orchestratorは、Adobe Experience Platformのエージェンティックレイヤーで、専用のエージェント、高度な推論エンジン、強力な対話型インターフェイスを使用して、カスタマーエクスペリエンスのオーケストレーションを強化します。 詳しくは、[Agent Orchestrator ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator) を参照してください。
 
 >[!SLIDE](agent-orchestrator-overview)
