@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Data Insights Agentの概要
 
-Data Insight Agent は、イベント、プロファイル、ジャーニー、オフラインのデータを利用して、検出を簡素化し、パーソナライズされたダッシュボードを即座に有効にします。 詳しくは、[Data Insights Agent ドキュメント ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) を参照してください。
+Data Insight Agent は、イベント、プロファイル、ジャーニー、オフラインのデータを利用して、検出を簡素化し、パーソナライズされたダッシュボードを即座に有効にします。 詳しくは、[Data Insights Agent ドキュメント ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) を参照してください。
 
 >[!SLIDE](data-insights-agent-overview)
