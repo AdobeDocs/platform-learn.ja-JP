@@ -21,36 +21,36 @@ ht-degree: 10%
 
 タグ拡張機能は、Adobe Experience Platform データ収集インターフェイスとライブラリ機能を拡張する、パッケージ化されたコードセットです。 Adobe Experience Platform Data Collection はプラットフォームであり、タグ拡張機能はプラットフォーム上で実行されるアプリのようなものです。 このチュートリアルで使用する拡張機能はすべてAdobeが作成および管理しますが、サードパーティは独自の拡張機能を作成して、Adobe Experience Platform データ収集ユーザーが管理する必要があるカスタムコードの量を制限できます。
 
-[Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
+[Adobe Experience Platform Data Collection に移動し &#x200B;](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
 
 これは、以前に表示したAdobe Experience Platform データ収集のプロパティページです。
 
-![ プロパティページ ](./images/launch1.png)
+![&#x200B; プロパティページ &#x200B;](./images/launch1.png)
 
 **はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。
 クリックして **Web** プロパティを開きます。
 
-![ 検索ボックス ](./images/property6.png)
+![&#x200B; 検索ボックス &#x200B;](./images/property6.png)
 
 
 
 次に、プロパティの概要ページが表示されます。 左側のパネルで **[!UICONTROL 拡張機能]** をクリックし、**Adobe Experience Platform Web SDKをクリックしてから**&#x200B;**[!UICONTROL 設定]** をクリックします。
 
-![ プロパティの概要ページ ](./images/property7.png)
+![&#x200B; プロパティの概要ページ &#x200B;](./images/property7.png)
 
-Adobe Experience Platform Web SDKへようこそ。 ここでは、[ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームやその他の高度な設定を使用して拡張機能を設定できます。
+Adobe Experience Platform Web SDKへようこそ。 ここでは、[&#x200B; はじめに &#x200B;](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームやその他の高度な設定を使用して拡張機能を設定できます。
 
 デフォルトのエッジドメインは、常に **edge.adobedc.net** です。 Adobe Experience CloudまたはAdobe Experience Platform環境に CNAME 設定を実装した場合は、**[!UICONTROL Edge ドメイン]** を更新する必要があります。
 
 インスタンスのエッジドメインがデフォルトのドメインと異なる場合は、ここでエッジドメインを更新してください。 不明な場合は、デフォルトのドメインを使用します。 エッジドメインを使用すると、ファーストパーティトラッキングサーバーを設定することができ、その後、バックエンドで CNAME 設定を使用して、データがAdobeに確実に収集されるようにします。
 
-![ 拡張機能ホーム ](./images/property9edgedomain.png)
+![&#x200B; 拡張機能ホーム &#x200B;](./images/property9edgedomain.png)
 
 「**[!UICONTROL データストリーム]**」の「**はじめに**」セクションで、データストリームを既に選択しています。 各環境に対して、「**[!UICONTROL データストリーム]** ボックスのリストから `--aepUserLdap-- - Demo System Datastream` のデータストリームを選択しました。
 
 「**[!UICONTROL 保存]**」をクリックして、拡張機能ビューに戻ります。
 
-![ 拡張機能ホーム ](./images/property9edge.png)
+![&#x200B; 拡張機能ホーム &#x200B;](./images/property9edge.png)
 
 ## データ要素
 
@@ -62,7 +62,7 @@ Adobe Experience Platform Web SDKへようこそ。 ここでは、[ はじめ�
 
 左側のパネルで「データ要素」をクリックして、データ要素ページに移動します。
 
-![ データ要素ホームページ ](./images/dataelement1.png)
+![&#x200B; データ要素ホームページ &#x200B;](./images/dataelement1.png)
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Adobe Experience Platform Web SDKへようこそ。 ここでは、[ はじめ�
 
 検索バーに「**XDM – 製品表示**」と入力し、返されるデータ要素をクリックします。
 
-![ruleArticlePages の検索 ](./images/dataelement2.png)
+![ruleArticlePages の検索 &#x200B;](./images/dataelement2.png)
 
 この画面には、編集する XDM オブジェクトが表示されます。 エクスペリエンスデータモデル（XDM）は、このテクニカルチュートリアルでさらに詳しく説明する概念ですが、現時点では、Adobe Experience Platform web SDKで必要な形式として理解すれば十分です。 デモ Web サイトの記事ページで収集されたデータに、もう少し情報を追加します。
 
@@ -80,7 +80,7 @@ Adobe Experience Platform Web SDKへようこそ。 ここでは、[ はじめ�
 
 **siteSection** をクリックします。 **siteSection** がまだデータ要素にリンクされていないことがわかります。 それを変えましょう。
 
-![ サイトセクションに移動 ](./images/dataelement3.png)
+![&#x200B; サイトセクションに移動 &#x200B;](./images/dataelement3.png)
 
 上にスクロールし、テキスト `%Product Category%` を入力します。 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -102,13 +102,13 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 返されるルールをクリックします。
 
-![ メディア – 記事ページルールの検索 ](./images/rule1.png)
+![&#x200B; メディア – 記事ページルールの検索 &#x200B;](./images/rule1.png)
 
 このルールを構成する個々の要素を見てみましょう。
 
 すべてのルールに対して：指定した **[!UICONTROL イベント]** が発生すると、**[!UICONTROL 条件]** が評価され、必要に応じて指定した **[!UICONTROL アクション]** が実行されます。
 
-![ メディア – 記事ページルール ](./images/rule2.png)
+![&#x200B; メディア – 記事ページルール &#x200B;](./images/rule2.png)
 
 イベント **コア – カスタムイベント** をクリックします。 これは、が読み込まれるビューです。
 
@@ -122,11 +122,11 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 アクション **「製品表示」エクスペリエンスイベントを送信** をクリックします。
 
-![ イベント送信アクション ](./images/rule5a.png)
+![&#x200B; イベント送信アクション &#x200B;](./images/rule5a.png)
 
 ここでは、Adobe Experience Platform web SDKによって Edge に送信されているデータを確認できます。 具体的には、Web SDKの **alloy** **[!UICONTROL インスタンス]** を使用します。 イベント **[!UICONTROL タイプ]** は **Commerce商品（買い物かご）表示** に設定されており、送信している XDM データは、以前に変更した **XDM – 商品表示** データ要素です。
 
-![ イベント送信アクション ](./images/rule5.png)
+![&#x200B; イベント送信アクション &#x200B;](./images/rule5.png)
 
 これでルールを確認したので、Adobe Experience Platform Data Collection ですべての変更を公開できます。
 
@@ -138,20 +138,20 @@ Adobe Experience Platformのデータ収集は、ルールベースのシステ�
 
 **メイン** という既存のライブラリをクリックします。
 
-![ ライブラリアクセス ](./images/publish1.png)
+![&#x200B; ライブラリアクセス &#x200B;](./images/publish1.png)
 
 「**変更されたすべてのリソースを追加**」ボタンをクリックします。 次に、
 **開発用に保存してビルド** ボタンをクリックします。
 
-![ ライブラリアクセス ](./images/publish1a.png)
+![&#x200B; ライブラリアクセス &#x200B;](./images/publish1a.png)
 
 ライブラリのビルドには数分かかる場合があり、完了すると、ライブラリ名の左側に緑のドットが表示されます。
 
-![ コンテンツライブラリ ](./images/publish2.png)
+![&#x200B; コンテンツライブラリ &#x200B;](./images/publish2.png)
 
 公開フロー画面で確認できるように、Adobe Experience Platform データ収集の公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 開発環境では、単一のライブラリを使用します。
 
-次の手順：[1.1.4 クライアントサイドの Web データ収集 ](./ex4.md)
+次の手順：[1.1.4 クライアントサイドの Web データ収集 &#x200B;](./ex4.md)
 
 [モジュール 1.1 に戻る](./data-ingestion-launch-web-sdk.md)
 

@@ -57,7 +57,7 @@ HTTP API Source コネクタを作成するには、次の URL に移動して�
 
 この演習は完了しました。
 
-次のステップ：[2.6.4 Kafka Connect とAdobe Experience Platformシンクコネクタをインストールして設定する ](./ex4.md)
+次のステップ：[2.6.4 Kafka Connect とAdobe Experience Platformシンクコネクタをインストールして設定する &#x200B;](./ex4.md)
 
 [モジュール 2.6 に戻る](./aep-apache-kafka.md)
 

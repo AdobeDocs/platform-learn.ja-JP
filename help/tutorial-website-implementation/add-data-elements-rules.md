@@ -117,7 +117,7 @@ ht-degree: 54%
 1. 「**[!UICONTROL 保存]**」をクリックして、ルールを保存します
 
 ルール ページに新しいルールが表示されます。
-![ ルールがページに表示されます ](images/launch-savedRule.png)
+![&#x200B; ルールがページに表示されます &#x200B;](images/launch-savedRule.png)
 
 ## ライブラリへの変更の保存
 

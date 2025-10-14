@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # ソーシャルの宛先の設定
 
-ソーシャルの宛先にオーディエンスを接続してアクティブ化する方法を説明します。 このビデオでは、Adobe Real-Time Customer Data Platformで LinkedIn Matched Audiences 宛先を使用するワークフローについて説明します。  詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/social/overview) を参照してください。
+ソーシャルの宛先にオーディエンスを接続してアクティブ化する方法を説明します。 このビデオでは、Adobe Real-Time Customer Data Platformで LinkedIn Matched Audiences 宛先を使用するワークフローについて説明します。  詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/social/overview) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411787/?learn=on&enablevpops&captions=jpn)
 

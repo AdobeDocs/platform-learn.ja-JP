@@ -31,17 +31,17 @@ ht-degree: 1%
 
 Customer Journey Analyticsホームページで、「**接続**」に移動します。
 
-![ デモ ](./images/cja2.png)
+![&#x200B; デモ &#x200B;](./images/cja2.png)
 
 ここでは、CJA と Platform の間で行われたすべての異なる接続を確認できます。 これらの接続の目標は、Adobe Analyticsのレポートスイートと同じです。 ただし、データの収集は完全に異なります。 すべてのデータは、Adobe Experience Platform データセットから取得されます。
 
 最初の接続を作成しましょう。 **新しい接続を作成** をクリックします。
 
-![ デモ ](./images/cja4.png)
+![&#x200B; デモ &#x200B;](./images/cja4.png)
 
 その後、**接続を作成** UI が表示されます。
 
-![ デモ ](./images/cja5.png)
+![&#x200B; デモ &#x200B;](./images/cja5.png)
 
 接続に名前を付けられるようになりました。
 
@@ -51,23 +51,23 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 また、使用する正しいサンドボックスを選択する必要があります。 サンドボックスメニューで、`Bootcamp` すサンドボックスを選択します。 この例では、使用するサンドボックスは **Bootcamp** です。 また、**毎日のイベントの平均数** を **100 万未満** に設定する必要があります。
 
-![ デモ ](./images/cjasb.png)
+![&#x200B; デモ &#x200B;](./images/cjasb.png)
 
 サンドボックスを選択したら、この接続にデータセットを追加できます。 「**データセットを追加**」をクリックします。
 
-![ デモ ](./images/cjasb1.png)
+![&#x200B; デモ &#x200B;](./images/cjasb1.png)
 
 ## 4.2.2 Adobe Experience Platform データセットの選択
 
 データセット `Demo System - Event Dataset for Website (Global v1.1)` を検索します。 「**+**」をクリックして、この接続にデータセットを追加します。
 
-![ デモ ](./images/cja7.png)
+![&#x200B; デモ &#x200B;](./images/cja7.png)
 
 次に、`Demo System - Profile Dataset for Loyalty (Global v1.1)` と `Demo System - Event Dataset for Call Center (Global v1.1)` のチェックボックスを検索してオンにします。
 
 これで完了です。 「**次へ**」をクリックします。
 
-![ デモ ](./images/cja9.png)
+![&#x200B; デモ &#x200B;](./images/cja9.png)
 
 ## 4.2.3 人物 ID とデータステッチ
 
@@ -75,15 +75,15 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 現在の目標は、これらのデータセットを結合することです。 選択した各データセットに、「ユーザー ID **というフィールドが表示され** す。 各データセットには、独自のユーザー ID フィールドがあります。
 
-![ デモ ](./images/cja11.png)
+![&#x200B; デモ &#x200B;](./images/cja11.png)
 
 ご覧のように、ほとんどの場合、ユーザー ID が自動的に選択されます。 これは、Adobe Experience Platformのすべてのスキーマでプライマリ ID が選択されているからです。 例として、`Demo System - Event Schema for Call Center (Global v1.1)` のスキーマを見てみましょう。この場合、プライマリ ID が `phoneNumber` に設定されています。
 
-![ デモ ](./images/cja13.png)
+![&#x200B; デモ &#x200B;](./images/cja13.png)
 
 ただし、接続のためにデータセットをつなぎ合わせるために使用する識別子には、引き続き影響を与えることができます。 データセットにリンクされたスキーマに設定されている任意の識別子を使用できます。 ドロップダウンをクリックして、各データセットで使用できる ID を調べます。
 
-![ デモ ](./images/cja14.png)
+![&#x200B; デモ &#x200B;](./images/cja14.png)
 
 前述のように、データセットごとに異なるユーザー ID を設定できます。 これにより、CJA で複数のオリジンの異なるデータセットを統合できます。 NPS や調査データを取り込むと、コンテキストや何かが起きた理由を理解するのに非常に興味深く役立つだろうと想像してください。
 
@@ -95,15 +95,15 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 これで、ユーザー ID を使用してデータセットをステッチするという概念を理解できたので、各データセットのユーザー ID として `email` を選択します。
 
-![ デモ ](./images/cja15.png)
+![&#x200B; デモ &#x200B;](./images/cja15.png)
 
 各データセットに移動して、ユーザー ID を更新します。
 
-![ デモ ](./images/cja12a.png)
+![&#x200B; デモ &#x200B;](./images/cja12a.png)
 
 次に、ドロップダウンリストで `email` を選択して、「ユーザー ID」フィールドに入力します。
 
-![ デモ ](./images/cja17.png)
+![&#x200B; デモ &#x200B;](./images/cja17.png)
 
 3 つのデータセットをステッチしたら、続行する準備が整います。
 
@@ -120,14 +120,14 @@ Customer Journey Analyticsホームページで、「**接続**」に移動し�
 
 「**データセットを追加**」をクリックします。
 
-![ デモ ](./images/cja16.png)
+![&#x200B; デモ &#x200B;](./images/cja16.png)
 
 「**保存**」をクリックして、次の演習に進みます。
 **接続** を作成した後、CJA でデータを使用できるようになるまで数時間かかる場合があります。
 
-![ デモ ](./images/cja20.png)
+![&#x200B; デモ &#x200B;](./images/cja20.png)
 
-次の手順：[4.3 データビューの作成 ](./ex3.md)
+次の手順：[4.3 データビューの作成 &#x200B;](./ex3.md)
 
 [ユーザーフロー 4 に戻る](./uc4.md)
 

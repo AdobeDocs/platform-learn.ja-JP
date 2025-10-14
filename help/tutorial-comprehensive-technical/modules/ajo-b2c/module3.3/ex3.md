@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 3.3.3.1 データストリームの更新
 
-[ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で、独自の **データストリーム** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
+[&#x200B; はじめに &#x200B;](./../../../modules/gettingstarted/gettingstarted/ex2.md) で、独自の **データストリーム** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
 
 この演習では、**Offer decisioning** と連携するように **データストリーム** を設定する必要があります。
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
 
-![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
+![&#x200B; 左側のナビゲーションで「Edge設定」アイコンをクリック &#x200B;](./images/edgeconfig1b.png)
 
 **Datastream** を検索します。名前は `--aepUserLdap-- - Demo System Datastream` です。 **データストリーム** をクリックして開きます。
 
@@ -213,7 +213,7 @@ Adobe Experience Platform Data Collection で、**[!UICONTROL 公開フロー]**
 
 次の演習では、Adobe Journey Optimizerで作成したオファーと決定を、Adobe Target エクスペリエンスのターゲット設定アクティビティと組み合わせる方法を説明します。
 
-次の手順：[3.3.4 Adobe TargetとOffer decisioningを組み合わせる ](./ex4.md)
+次の手順：[3.3.4 Adobe TargetとOffer decisioningを組み合わせる &#x200B;](./ex4.md)
 
 [モジュール 3.3 に戻る](./offer-decisioning.md)
 

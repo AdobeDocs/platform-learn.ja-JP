@@ -41,8 +41,8 @@ ht-degree: 3%
 
 ## 次の手順
 
-[2.3.4 に移動アクションの実行：オーディエンスを S3 の宛先に送信します ](./ex4.md){target="_blank"}
+[2.3.4 に移動アクションの実行：オーディエンスを S3 の宛先に送信します &#x200B;](./ex4.md){target="_blank"}
 
-[Real-time CDP - オーディエンスの作成とアクションの実行 ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
+[Real-time CDP - オーディエンスの作成とアクションの実行 &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

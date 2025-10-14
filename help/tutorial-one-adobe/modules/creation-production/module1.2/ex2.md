@@ -194,7 +194,7 @@ Workfront Fusion でAdobe API を使用する方法を説明します。
 
 変数を見つけるには、Postmanに戻って **環境変数** を開きます。
 
-![Azure ストレージ ](./../module1.1/images/az105.png)
+![Azure ストレージ &#x200B;](./../module1.1/images/az105.png)
 
 これらの値をWorkfront Fusion にコピーし、これら 4 つの変数のそれぞれに新しい項目を追加します。
 
@@ -448,8 +448,8 @@ HTTP リクエストのクローンを右クリックして、「**名前を変�
 
 ## 次の手順
 
-[Workfront Fusion によるプロセスの自動化 ](./ex3.md){target="_blank"} に移動します。
+[Workfront Fusion によるプロセスの自動化 &#x200B;](./ex3.md){target="_blank"} に移動します。
 
-[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

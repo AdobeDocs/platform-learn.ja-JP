@@ -15,13 +15,13 @@ ht-degree: 1%
 
 ## カスタム Webhook の作成
 
-[https://pipedream.com/requestbin](https://pipedream.com/requestbin) に移動します。 このアプリケーションは [SDKの宛先 2.3.6 を参照 ](./../../../modules/rtcdp-b2c/module2.3/ex6.md) で既に使用しています
+[https://pipedream.com/requestbin](https://pipedream.com/requestbin) に移動します。 このアプリケーションは [SDKの宛先 2.3.6 を参照 &#x200B;](./../../../modules/rtcdp-b2c/module2.3/ex6.md) で既に使用しています
 
 そのサービスをまだ使用していない場合は、アカウントを作成してからワークスペースを作成します。 ワークスペースを作成すると、次のような情報が表示されます。
 
 「**コピー**」をクリックして、URL をコピーします。 次の演習では、この URL を指定する必要があります。 この例の URL は `https://eodts05snjmjz67.m.pipedream.net` です。
 
-![ デモ ](./images/webhook1.png)
+![&#x200B; デモ &#x200B;](./images/webhook1.png)
 
 この web サイトは、あなたのためにこの Webhook を作成しました。イベントの転送のテストを開始するために、**[!DNL Event Forwarding property]** でこの Webhook を設定できるようになります。
 
@@ -143,27 +143,27 @@ ht-degree: 1%
 
 ブラウザーの開発者ビューを開くと、次に示すようにネットワークリクエストを調べることができます。 フィルター **interact** を使用すると、Adobe Experience Platform データ収集クライアントからAdobe Edgeに送信されるネットワークリクエストが表示されます。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook1.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hook1.png)
 
 生のペイロードを選択した場合は、[https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) に移動して、ペイロードを貼り付けます。 **縮小/美化** をクリックします。 次に、JSON ペイロード、**events** オブジェクト、および **xdm** オブジェクトが表示されます。 前の手順の 1 つで、データ要素を定義したとき、参照 **arc.event.xdm** を使用しました。これにより、このペイロードの **xdm** オブジェクトが解析されます。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook2.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hook2.png)
 
 前の手順のいずれかで使用したカスタム Webhook [&#128279;](https://pipedream.com/requestbin)0&rbrace;https://pipedream.com/requestbin&rbrace; に表示を切り替えます。 これで、これに類似したビューが作成され、左側のメニューにネットワークリクエストが表示されます。 上記のネットワークリクエストから除外された **xdm** ペイロードが表示されます。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook3.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hook3.png)
 
 ペイロードを少し下にスクロールして、ページ名（この場合は **home**）を見つけます。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook4.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hook4.png)
 
 Web サイト上を移動すると、追加のネットワークリクエストが、このカスタム Webhook でリアルタイムに利用できるようになります。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook5.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hook5.png)
 
 これで、外部のカスタム Webhook への Web SDK/XDM ペイロードのサーバーサイドイベント転送を設定しました。 次の演習では、同様のアプローチを設定し、同じデータをGoogle Cloud Platform とAWSに送信します。
 
-次の手順：[2.5.4 イベントを GCP Pub/Sub に転送する ](./ex4.md)
+次の手順：[2.5.4 イベントを GCP Pub/Sub に転送する &#x200B;](./ex4.md)
 
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 

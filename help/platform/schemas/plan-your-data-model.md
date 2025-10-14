@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # データモデルの計画
 
-このビデオでは、Adobe Experience Platformでスキーマの構築を開始する前にすべきことについて説明します。 ビジネスユースケースを文書化し、Platform ライセンスを理解、製品ガードレールを把握、取り込むデータを特定してからデータモデルを仕上げます。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
+このビデオでは、Adobe Experience Platformでスキーマの構築を開始する前にすべきことについて説明します。 ビジネスユースケースを文書化し、Platform ライセンスを理解、製品ガードレールを把握、取り込むデータを特定してからデータモデルを仕上げます。 詳しくは、[&#x200B; スキーマドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413632?learn=on&enablevpops&captions=jpn)

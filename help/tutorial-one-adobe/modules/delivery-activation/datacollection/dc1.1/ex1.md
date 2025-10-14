@@ -30,7 +30,7 @@ Adobe Experience Platform Data Collection は、企業が様々なユースケ�
 >
 >このチュートリアルは、環境 **Experience Platform International** を使用してドキュメント化されています。 環境名は異なる可能性が高いので、スクリーンショットに **Experience Platform International** という名前が表示される場合は、必ず `--aepImsOrgName--` を付けた独自の環境名に置き換える必要があります。
 
-![Launch のプロパティビュー ](./images/launch0.png)
+![Launch のプロパティビュー &#x200B;](./images/launch0.png)
 
 **タグ** に移動します。 **[!UICONTROL プロパティ]** ビューが表示されます。 ここに一覧表示されるプロパティは、チュートリアル管理のためのものです。 これらのプロパティは、次の項目を表します。
 
@@ -40,16 +40,16 @@ Adobe Experience Platform Data Collection は、企業が様々なユースケ�
 - 複数の異なる web サイトに共通の特定のAdobe Analytics デザイン
 - 内部イントラネットページと外部サイト
 
-![Launch のプロパティビュー ](./images/launch1.png)
+![Launch のプロパティビュー &#x200B;](./images/launch1.png)
 
 次に、左側のレールを見てみましょう。
 
-![ 左パネルを開く ](./images/launch2.png)
+![&#x200B; 左パネルを開く &#x200B;](./images/launch2.png)
 
 - **[!UICONTROL タグ]** クライアントサイドのすべてのプロパティの概要を説明します
 - **[!UICONTROL アプリサーフェス]** では、プッシュ通知を有効にするすべてのアプリ設定の概要を示します（この設定は Project Sierra と組み合わせて使用または有効になります）
-- **[!UICONTROL データストリーム]** については、[ 次の演習 ](./ex2.md) で説明します
-- **[!UICONTROL イベント転送]** では、[ モジュール 2.5 - Real-Time CDP Connections：イベント転送 ](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md) で説明するすべてのサーバーサイドプロパティの概要を説明します。
+- **[!UICONTROL データストリーム]** については、[&#x200B; 次の演習 &#x200B;](./ex2.md) で説明します
+- **[!UICONTROL イベント転送]** では、[&#x200B; モジュール 2.5 - Real-Time CDP Connections：イベント転送 &#x200B;](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md) で説明するすべてのサーバーサイドプロパティの概要を説明します。
 - **[!UICONTROL 監視]** イベント転送を通じた送受信イベントトラフィックの概要を示します
 - **[!UICONTROL Assurance]** Adobe Debuggerを使用して実装をデバッグするためのアクセスを提供します
 - **[!UICONTROL Places]** を使用すると、モバイルアプリケーションで場所ベースのパーソナライゼーションにアクセス可能になる POI を管理できます
@@ -61,15 +61,15 @@ Adobe Experience Platform Data Collection は、企業が様々なユースケ�
 Adobe Experience Platform Data Collection は、Adobe Experience Platform チュートリアルの範囲を超えた非常に高度なツールです。 組織では、タグ管理機能にAdobe Experience Platform Data Collection を使用せず、代わりにAdobe以外のタグ管理ソリューションを使用して、コードの挿入やタグの管理を行っている場合があります。 Adobe以外のタグ管理ソリューションの使用は、AdobeおよびAdobe Professional Servicesでサポートされています。
 Adobe Experience Platform Data Collection の理解に興味があるユーザー向けの参考資料を以下に示します。
 
-- [Adobe Experience Platform データ収集ユーザーガイド ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)
+- [Adobe Experience Platform データ収集ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)
 - [Web SDK を使用した Adobe Experience Cloud 実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja)
-- [ ユーザー権限の設定 ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja)
-- [API ドキュメント ](https://developer.adobelaunch.com/api/)
+- [&#x200B; ユーザー権限の設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja)
+- [API ドキュメント &#x200B;](https://developer.adobelaunch.com/api/)
 
 ## 次の手順
 
-[1.1.2 Edge Network、データストリーム、サーバーサイドのデータ収集に移動します ](./ex2.md){target="_blank"}
+[1.1.2 Edge Network、データストリーム、サーバーサイドのデータ収集に移動します &#x200B;](./ex2.md){target="_blank"}
 
-[Adobe Experience Platform データ収集の設定と web SDK タグ拡張機能 ](./data-ingestion-launch-web-sdk.md){target="_blank"} に戻ります
+[Adobe Experience Platform データ収集の設定と web SDK タグ拡張機能 &#x200B;](./data-ingestion-launch-web-sdk.md){target="_blank"} に戻ります
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

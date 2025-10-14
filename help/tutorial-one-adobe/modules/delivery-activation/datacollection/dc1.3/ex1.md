@@ -544,8 +544,8 @@ SELECT user_id,
 
 ## 次の手順
 
-[1.3.2 スキーマ、データモデル、リンクの作成 ](./ex2.md){target="_blank"} を参照してください。
+[1.3.2 スキーマ、データモデル、リンクの作成 &#x200B;](./ex2.md){target="_blank"} を参照してください。
 
 [Federated Audience Composition](./fac.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

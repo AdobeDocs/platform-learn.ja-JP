@@ -168,7 +168,7 @@ Adobe Experience Platformのデータランディングゾーンに移動しま�
 
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 1.2 に戻る](./data-ingestion.md)
 

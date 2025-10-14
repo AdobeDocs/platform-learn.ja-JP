@@ -17,7 +17,7 @@ ht-degree: 43%
 
 # インテリジェントサービスの概要
 
-データサイエンスの専門知識がなくても、マーケティングアナリストや実務担当者が人工知能や機械学習の力を顧客体験のユースケースで活用できるようにする、インテリジェントサービスの概要を説明します。 詳しくは、[ インテリジェントサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja) を参照してください。
+データサイエンスの専門知識がなくても、マーケティングアナリストや実務担当者が人工知能や機械学習の力を顧客体験のユースケースで活用できるようにする、インテリジェントサービスの概要を説明します。 詳しくは、[&#x200B; インテリジェントサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/36582?learn=on&enablevpops&captions=jpn)
 

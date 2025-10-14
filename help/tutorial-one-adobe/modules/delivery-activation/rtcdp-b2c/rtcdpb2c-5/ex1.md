@@ -77,8 +77,8 @@ Adobe Experience Platform Data Collection Event Forwarding プロパティのリ
 
 ## 次の手順
 
-[2.5.2 データストリームを更新して、データ収集イベント転送プロパティでデータを使用できるようにするに ](./ex2.md){target="_blank"}
+[2.5.2 データストリームを更新して、データ収集イベント転送プロパティでデータを使用できるようにするに &#x200B;](./ex2.md){target="_blank"}
 
-[Real-Time CDP Connections：イベント転送 ](./aep-data-collection-ssf.md){target="_blank"} に戻る
+[Real-Time CDP Connections：イベント転送 &#x200B;](./aep-data-collection-ssf.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

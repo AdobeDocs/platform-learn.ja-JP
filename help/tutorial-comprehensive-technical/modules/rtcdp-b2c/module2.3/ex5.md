@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## データストリームの検証
 
-Real-Time CDPのAdobe Targetの宛先は、Adobe Edge Network へのデータの取り込みに使用されるデータストリームに接続されています。 Adobe Targetの宛先を設定する場合、まず、データストリームが既にAdobe Targetで有効になっているかどうかを確認する必要があります。 データストリームは、[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定し、`--aepUserLdap-- - Demo System Datastream` という名前を付けました。
+Real-Time CDPのAdobe Targetの宛先は、Adobe Edge Network へのデータの取り込みに使用されるデータストリームに接続されています。 Adobe Targetの宛先を設定する場合、まず、データストリームが既にAdobe Targetで有効になっているかどうかを確認する必要があります。 データストリームは、[&#x200B; 演習 0.2 データストリームの作成 &#x200B;](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定し、`--aepUserLdap-- - Demo System Datastream` という名前を付けました。
 
 左側のメニューで、下にスクロールし、**データストリーム** をクリックします。 データストリームで、`--aepUserLdap-- - Demo System Datastream` という名前のデータストリームを検索します。 データストリームをクリックして開きます。
 
@@ -64,7 +64,7 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 その後、これが表示されます。 独自のAdobe Targetの宛先を作成するには、次のガイドラインに従う必要があります。
 
 - 名前：名前 `--aepUserLdap-- - Adobe Target v2  (Web)` を使用します。
-- データストリーム ID:[ 演習 0.2 データストリームの作成 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定したデータストリームを選択する必要があります。 データストリームの名前は、`--aepUserLdap-- - Demo System Datastream` にする必要があります。
+- データストリーム ID:[&#x200B; 演習 0.2 データストリームの作成 &#x200B;](./../../../modules/gettingstarted/gettingstarted/ex2.md) で設定したデータストリームを選択する必要があります。 データストリームの名前は、`--aepUserLdap-- - Demo System Datastream` にする必要があります。
 - Workspace：これはAdobe Target workspaces に関連しています。 使用する必要のある特定のワークスペースがない場合は、「**デフォルトのWorkspace**」を選択します。
 
 「**次へ**」をクリックします。
@@ -75,7 +75,7 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 
 ![AT](./images/atdest2.png)
 
-使用可能なオーディエンスのリストで、前の演習 [ オーディエンスの作成 ](./ex1.md) で作成したオーディエンス（`--aepUserLdap-- - Interest in Galaxy S24` という名前）を選択します。 次に、「**次へ**」をクリックします。
+使用可能なオーディエンスのリストで、前の演習 [&#x200B; オーディエンスの作成 &#x200B;](./ex1.md) で作成したオーディエンス（`--aepUserLdap-- - Interest in Galaxy S24` という名前）を選択します。 次に、「**次へ**」をクリックします。
 
 ![AT](./images/atdest8.png)
 

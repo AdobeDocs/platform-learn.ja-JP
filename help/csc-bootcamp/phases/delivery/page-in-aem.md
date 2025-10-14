@@ -26,7 +26,7 @@ AEMには 2 つの環境（オーサー環境とPublish環境）があります�
 
 Web サイトの構造は、コンテンツページを保持する「ツリー構造」と見なすことができます。 これらのコンテンツページの名前は、URL の形成に使用されます。一方でタイトルは、ページコンテンツを表示したときに表示されます。 次の例では、ページのアクセス可能な URL は/content/adobike/language-masters/en.htmlになります。
 
-![ ページ構造 ](./images/delivery-web-structure.png)
+![&#x200B; ページ構造 &#x200B;](./images/delivery-web-structure.png)
 
 既存の web サイトに新しいページを追加する方法と、一部のコンテンツを再利用する方法を見てみましょう。
 
@@ -38,31 +38,31 @@ Web サイトの構造は、コンテンツページを保持する「ツリー�
 
 - AEMの [ スタート ] メニューから、[ ナビゲーション ] \> [ サイト ] を選択します。
 
-![ サイトアイコンを選択 ](./images/delivery-web-aem-sites.png)
+![&#x200B; サイトアイコンを選択 &#x200B;](./images/delivery-web-aem-sites.png)
 
 - まず、既存のツリー構造を、ホームページを作成する場所に移動します。 最初の列で「Adobike」を選択し、2 番目の列で「Bootcamp」を選択して、ツリー構造に移動します。 次に、このページの下にページを作成するには、「作成」ボタンをクリックして、ポップアップ表示されるメニューで「ページ」を選択します。
 
-![bootcamp コンテンツを探す ](./images/delivery-web-create-page.png)
+![bootcamp コンテンツを探す &#x200B;](./images/delivery-web-create-page.png)
 
 - これにより、新しい画面が開き、新しいページを設定します。 まず、ページテンプレートを選択します。 AEMのページテンプレートを使用すると、ページの構造を定義したり、このページで使用できるコンテンツを定義したりできます。 ランディングページであるホームページを作成する場合は、ランディングページテンプレートを選択し、「次へ」ボタンをクリックして続行します。
 
-![ 正しいテンプレートを選択する ](./images/delivery-web-create-page-template.png)
+![&#x200B; 正しいテンプレートを選択する &#x200B;](./images/delivery-web-create-page-template.png)
 
 - 次の画面で、ページに初期情報を入力できます。 最も重要な情報はタイトル（必須プロパティで、\*で示されます）です。これは、ページにわかりやすい名前を付けることを目的としています。 「名前」に入力しない場合、AEMは SEO のベストプラクティスに従って、ページが使用可能な URL を自動的に生成します。 この場合、このフィールドは空のままにすることができます。 他のプロパティも入力できますが、他のタブを調べる場合もありますが、このブートキャンプの目的では、まだ他のプロパティは入力しないでください。 ページを作成する準備ができたら、「作成」ボタンをクリックするだけです。
 
-![ プロパティの入力 ](./images/delivery-web-create-page-properties.png)
+![&#x200B; プロパティの入力 &#x200B;](./images/delivery-web-create-page-properties.png)
 
 - AEMでページが作成されます。 完了すると、ポップアップが表示され、「開く」ボタンをクリックして新しく作成したページを開くことができます。
 
-![ 新しく作成したページを開く ](./images/delivery-web-create-page-success.png)
+![&#x200B; 新しく作成したページを開く &#x200B;](./images/delivery-web-create-page-success.png)
 
 - これで、AEM Editor に移動します。 これは、「表示されているものこそ」（または WYSIWYG）エディターで、コンポーネントをページにドラッグ&amp;ドロップしてページを作成できます。 ナビゲーションを見てみましょう。
-  ![aem wysiwig エディター ](./images/delivery-web-page-editor-home.png)
+  ![aem wysiwig エディター &#x200B;](./images/delivery-web-page-editor-home.png)
    - 左側には、ページで使用できるアセット、このページで使用できるコンポーネント（または構築ブロック）を含むサイドパネルと、ページの構造を示す便利なツリービューがあります。 これらのアイコンのいずれかをクリックして、表示を開きます。
    - 右側には、「レイアウトコンテナ」が表示されます。 これは、目的のコンポーネントをドロップできる領域です。
    - ページにコンテンツを入力しましょう。 自由にホームページに入力してください。 以下の例では、製品ページにリンクする画像コンポーネントと 2 つのティーザーコンポーネントを使用しました。
 
-![ ホームページ ](./images/delivery-web-homepage.png)
+![&#x200B; ホームページ &#x200B;](./images/delivery-web-homepage.png)
 
 ## エクスペリエンスフラグメントを活用したエクスペリエンスの再利用
 
@@ -76,43 +76,43 @@ Web サイトの構造は、コンテンツページを保持する「ツリー�
 
 - AEM スタートメニューから、「ナビゲーション \> エクスペリエンスフラグメント」を選択します
 
-![XF アイコンを選択 ](./images/delivery-web-xf.png)
+![XF アイコンを選択 &#x200B;](./images/delivery-web-xf.png)
 
 - 次の画面で、チームが再利用可能なエクスペリエンスを保存するために使用できるフォルダーを作成します。 列表示で、Adobike \> Bootcamp に移動し、「作成\> フォルダー」ボタンをクリックします。
 
-![ フォルダーの作成 ](./images/delivery-web-create-xf-folder.png)
+![&#x200B; フォルダーの作成 &#x200B;](./images/delivery-web-create-xf-folder.png)
 
 - モーダルがポップアップ表示されたら、フォルダーにチームの名前を付けます。 「名前」フィールドは空のままにすることができます。AEMによって自動的に生成されます。 フォルダーに名前を付けたら、「作成」ボタンをクリックしてフォルダーを作成します。
 
-![ 名前を付ける ](./images/delivery-web-create-xf-folder-name.png)
+![&#x200B; 名前を付ける &#x200B;](./images/delivery-web-create-xf-folder-name.png)
 
 - これで、フォルダーのポップアップが表示されます。 エクスペリエンスフラグメントを作成ボタンをクリックしてから、作成\> エクスペリエンスフラグメント ボタンをクリックします。
 
-![xf の作成 ](./images/delivery-web-create-xf.png)
+![xf の作成 &#x200B;](./images/delivery-web-create-xf.png)
 
 - まず、エクスペリエンスフラグメントのテンプレートを選択します。 ページと同様に、エクスペリエンスフラグメントは複数のテンプレートに基づくことができ、それぞれが事前定義されたエクスペリエンスを予測します。 この場合は、web サイトでコンテンツを再利用するので、左上隅のチェックボックスをオンにして「次へ」ボタンをクリックし、「エクスペリエンスフラグメント web バリエーションテンプレート」を選択します。
 
-![xf テンプレートを選択 ](./images/delivery-web-create-xf-template.png)
+![xf テンプレートを選択 &#x200B;](./images/delivery-web-create-xf-template.png)
 
 - エクスペリエンスフラグメントに「Adobike USPs」などの意味のあるタイトルを付け、「作成」ボタンをクリックします。
 
-![xf にタイトルを付けます ](./images/create-xf-properties.png)。
+![xf にタイトルを付けます &#x200B;](./images/create-xf-properties.png)。
 
 - エクスペリエンスフラグメントを作成したら、モーダルの「開く」ボタンをクリックして、エクスペリエンスフラグメントにコンテンツを追加します。
 
-![[ 開く ] をクリック ](./images/delivery-web-create-xf-success.png)
+![[ 開く ] をクリック &#x200B;](./images/delivery-web-create-xf-success.png)
 
 - ページの編集時と同様に、コンテンツを追加できるレイアウトコンテナが表示されます。
 
-![xf エディター ](./images/delivery-web-xf-editor.png)
+![xf エディター &#x200B;](./images/delivery-web-xf-editor.png)
 
 - 次に、ホームページからコンポーネントをコピーします。 新しいタブで、前の章で説明したようにホームページに移動し、コピーするコンポーネントを選択して、コピーアイコンをクリックします。
 
-![ コンポーネントのコピー ](./images/delivery-web-copy-from-home.png)
+![&#x200B; コンポーネントのコピー &#x200B;](./images/delivery-web-copy-from-home.png)
 
 - 次に、エクスペリエンスフラグメントに戻り、レイアウトコンテナをクリックして、貼り付けボタンをクリックします。
 
-![ コンポーネントを貼り付け ](./images/delivery-web-paste-to-xf.png)
+![&#x200B; コンポーネントを貼り付け &#x200B;](./images/delivery-web-paste-to-xf.png)
 
 >[!NOTE]
 >
@@ -120,33 +120,33 @@ Web サイトの構造は、コンテンツページを保持する「ツリー�
 
 - トップメニューからドロップダウンを開き、「レイアウト」を選択してレイアウトモードに入ります。
 
-![ レイアウトモードへの変更 ](./images/delivery-web-layout-mode.png)
+![&#x200B; レイアウトモードへの変更 &#x200B;](./images/delivery-web-layout-mode.png)
 
 - 次に、任意のコンポーネントを選択し、コンポーネントの両側にあるハンドルをドラッグするだけで、そのコンポーネントのサイズを画面に表示される列にスナップできます。
 
-![ コンポーネントのサイズを自由に変更 ](./images/delivery-web-layout-resize.png)
+![&#x200B; コンポーネントのサイズを自由に変更 &#x200B;](./images/delivery-web-layout-resize.png)
 
 - デフォルトでは、すべてのブレークポイントに対して編集を行います。 ただし、特定のブレークポイントについて編集する場合は、ページ上部のツールバーから一致するデバイスを選択できます。 オーサリングするブレークポイントがハイライト表示されます。
 
-![ ブレークポイントの選択 ](./images/delivery-web-bp-before.png)
+![&#x200B; ブレークポイントの選択 &#x200B;](./images/delivery-web-bp-before.png)
 
 - ご覧のように、モバイル上の 2 列のレイアウトは見栄えがありません。 モバイルで 1 列のレイアウトを作成しましょう。 デスクトップでのエクスペリエンスは同じですが、モバイルの方がコンテンツの列が 1 つだけなので、エクスペリエンスが向上します。
 
-![ モバイル用に最適化 ](./images/delivery-web-bp-after.png)
+![&#x200B; モバイル用に最適化 &#x200B;](./images/delivery-web-bp-after.png)
 
 - 最後に、ホームページでこのエクスペリエンスを再利用できるようになりました。 「エクスペリエンスフラグメント」コンポーネントを、コンテンツを表示する場所のページにドラッグ&amp;ドロップします。 エクスペリエンスフラグメントから使用するので、コピーしたコンテンツを削除できます。
 
-![xf コンポーネントをドラッグ&amp;ドロップ ](./images/delivery-web-xf-on-home.png)
+![xf コンポーネントをドラッグ&amp;ドロップ &#x200B;](./images/delivery-web-xf-on-home.png)
 
 - エクスペリエンスフラグメントコンポーネントの設定ダイアログを開き、パスピッカーを使用して、エクスペリエンスフラグメントを作成した場所を選択します。
 
-![ フォルダーアイコンをクリック ](./images/delivery-web-xf-dialog.png)
+![&#x200B; フォルダーアイコンをクリック &#x200B;](./images/delivery-web-xf-dialog.png)
 
-![ 正しい XF を選択する ](./images/delivery-web-select-xf.png)
+![&#x200B; 正しい XF を選択する &#x200B;](./images/delivery-web-select-xf.png)
 
 - 最後に、ページで再利用可能なエクスペリエンスを提供します。
 
-![ 更新されたホームページ ](./images/delivery-web-xf-result.png)
+![&#x200B; 更新されたホームページ &#x200B;](./images/delivery-web-xf-result.png)
 
 ## 製品ページの作成
 
@@ -156,15 +156,15 @@ Adobe CommerceをAEMと統合して使用する場合、生成された概要か
 
 - AEMの [ スタート ] メニューから、[ ナビゲーション ] \> [ サイト ] を選択します。
 
-![ サイトアイコンを選択 ](./images/delivery-web-aem-sites.png)
+![&#x200B; サイトアイコンを選択 &#x200B;](./images/delivery-web-aem-sites.png)
 
 - 列の概要で、事前に作成された web サイトをショップに移動します（Adobike \> 言語マスター\> Adobike \> ショップ）。 次に、チェックボックスのあるショップページを選択し、「作成\> ライブコピー」をクリックします。 あまり詳細に立ち入ることなく、ページのコピーを作成してサイトで使用できます。これにより、AEM Multi Site Manager を使用して既存のページやコンテンツを再利用できます。
 
-![ ライブコピーの作成 ](./images/delivery-web-create-lc.png)
+![&#x200B; ライブコピーの作成 &#x200B;](./images/delivery-web-create-lc.png)
 
 - ポップアップ表示される画面で、名前の横にあるチェックボックスをオンにして、チームのサイトを宛先として選択します。 次に、「次へ」ボタンをクリックします。
 
-![ 宛先の選択 ](./images/delivery-web-lc-destination.png)
+![&#x200B; 宛先の選択 &#x200B;](./images/delivery-web-lc-destination.png)
 
 - マルチサイトマネージャーの詳細については説明しないので、この設定は引き継ぐことができます。\
   タイトル：ショップ\
@@ -172,35 +172,35 @@ Adobe CommerceをAEMと統合して使用する場合、生成された概要か
   ロールアウト設定：標準のロールアウト設定\
   ライブコピーを設定したら、「作成」ボタンをクリックします。
 
-![ ライブコピーの設定 ](./images/delivery-web-lc-config.png)
+![&#x200B; ライブコピーの設定 &#x200B;](./images/delivery-web-lc-config.png)
 
 >[!NOTE]
 >
-> ライブコピーの詳細については、 「ライブコピー [ 作成と同期」を参照してください ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=ja)。
+> ライブコピーの詳細については、 「ライブコピー [&#x200B; 作成と同期」を参照してください &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=ja)。
 
 - 完了すると、web サイトで使用可能なストアが表示されます。 選択して作成\> ページをクリックし、インスピレーションを得る製品ページを作成します。
 
-![ 製品ページの作成 ](./images/delivery-web-create-pdp.png)
+![&#x200B; 製品ページの作成 &#x200B;](./images/delivery-web-create-pdp.png)
 
 - ページ上に商品情報を表示する場合は、商品ページテンプレートを使用してページを作成します。 選択したら、「次へ」ボタンをクリックします。
 
-![ 製品ページテンプレートの使用 ](./images/delivery-web-create-pdp-template.png)
+![&#x200B; 製品ページテンプレートの使用 &#x200B;](./images/delivery-web-create-pdp-template.png)
 
 - ページのメタデータを入力し、ホームページの場合と同様に「作成」ボタンをクリックします。 作成されたら、「開く」ボタンをクリックしてページを開くことができます。 ご覧のように、製品の詳細コンポーネントが既に入力されています。
 
-![ 設定の最終処理 ](./images/delivery-web-pdp-initial.png)
+![&#x200B; 設定の最終処理 &#x200B;](./images/delivery-web-pdp-initial.png)
 
 - まず、前に作成したエクスペリエンスフラグメントを追加します。 次に、ページに必要なコンテンツを追加します。 最後に、Adobike 製品を表示するように製品詳細コンポーネントを設定します。設定ダイアログで製品ファインダーを選択し、Adobike カテゴリを選択して、製品の横にあるボックスをオンにします。 次に、「追加」ボタンをクリックします。
 
-![ 製品ファインダーの選択 ](./images/delivery-web-configure-product.png)
+![&#x200B; 製品ファインダーの選択 &#x200B;](./images/delivery-web-configure-product.png)
 
-![ 製品を選択 ](./images/delivery-web-select-product.png)
+![&#x200B; 製品を選択 &#x200B;](./images/delivery-web-select-product.png)
 
 - Adobe Commerceから提供されるコンテンツや商品に関する情報を一元的に管理できるページが用意されました。
 
-![ 製品ページ ](./images/delivery-web-pdp-result.png)
+![&#x200B; 製品ページ &#x200B;](./images/delivery-web-pdp-result.png)
 
-次の手順：[ フェーズ 3 – 配信：キャンペーンは開始/終了 ](./go-nogo.md)
+次の手順：[&#x200B; フェーズ 3 – 配信：キャンペーンは開始/終了 &#x200B;](./go-nogo.md)
 
 [フェーズ 3 に戻る – 配信：モバイルアプリの検証](./app.md)
 

@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # プレイブックインスタンスの作成と公開
 
-このエンドツーエンドのデモビデオで、ユースケースプレイブックのインスタンスを検出、作成、公開、トラブルシューティングする方法を説明します。 詳しくは、[ プレイブックインスタンスの作成、共有、再利用 ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=ja) を参照してください。
+このエンドツーエンドのデモビデオで、ユースケースプレイブックのインスタンスを検出、作成、公開、トラブルシューティングする方法を説明します。 詳しくは、[&#x200B; プレイブックインスタンスの作成、共有、再利用 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

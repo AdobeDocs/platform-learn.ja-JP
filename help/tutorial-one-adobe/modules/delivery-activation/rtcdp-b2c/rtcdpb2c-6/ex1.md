@@ -105,8 +105,8 @@ ZooKeeper は、基本的に、階層キー値ストアを提供する分散シ�
 
 ## 次の手順
 
-[2.6.2 Kafka クラスターのインストールと設定 ](./ex2.md){target="_blank"}
+[2.6.2 Kafka クラスターのインストールと設定 &#x200B;](./ex2.md){target="_blank"}
 
-[Apache Kafka からAdobe Experience Platformへのデータのストリーミング ](./aep-apache-kafka.md){target="_blank"} に戻る
+[Apache Kafka からAdobe Experience Platformへのデータのストリーミング &#x200B;](./aep-apache-kafka.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

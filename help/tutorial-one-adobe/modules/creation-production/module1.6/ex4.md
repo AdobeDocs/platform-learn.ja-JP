@@ -27,35 +27,35 @@ ht-degree: 1%
 
 App BuilderでAdobe IO プロジェクトを開きます。`--aepUserLdap-- GSPeM EXT` という名前にする必要があります。
 
-![GSPeM 拡張機能 ](./images/gspemextpub1.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub1.png)
 
 **実稼動** に移動します。
 
-![GSPeM 拡張機能 ](./images/gspemextpub2.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub2.png)
 
 **非公開で公開** をクリックします。
 
-![GSPeM 拡張機能 ](./images/gspemextpub3.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub3.png)
 
 その後、いくつかのフィールドに入力する必要があります。
 
-![GSPeM 拡張機能 ](./images/gspemextpub4.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub4.png)
 
 以下のようにフィールドに入力します。
 
 - **アプリのタイトル**: `--aepUserLdap-- - External DAM AWS S3`。
 - **アプリの説明**: `External DAM AWS S3`
 - **連絡先メール**：メールアドレスを入力します
-- **アプリアイコン**：次の画像をダウンロードして使用します：[S3 画像 ](./images/s3.jpeg)
+- **アプリアイコン**：次の画像をダウンロードして使用します：[S3 画像 &#x200B;](./images/s3.jpeg)
 - **レビュアーへのメモ**：外部 DAM AWS S3
 
 「**送信**」をクリックします。
 
-![GSPeM 拡張機能 ](./images/gspemextpub5.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub5.png)
 
 「**送信**」をクリックします。
 
-![GSPeM 拡張機能 ](./images/gspemextpub6.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub6.png)
 
 ## 1.6.4.2 アプリを承認する
 
@@ -67,22 +67,22 @@ App BuilderでAdobe IO プロジェクトを開きます。`--aepUserLdap-- GSPe
 
 システム管理者の場合は、この電子メールが届きます。その後、[My Exchange **] をクリックしてプロセスを開始** きます。
 
-![GSPeM 拡張機能 ](./images/gspemextpub7.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub7.png)
 
 **Adobe Exchange** にはApp Builderのアプリが表示され、送信されたばかりのアプリは現在確認待ちとなっています。 アプリ **ージの** レビュー `--aepUserLdap-- - External DAM AWS S3` ボタンをクリックします。
 
-![GSPeM 拡張機能 ](./images/gspemextpub8.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub8.png)
 
 コメントを追加して、「承認 **をクリックし** す。
 
-![GSPeM 拡張機能 ](./images/gspemextpub9.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemextpub9.png)
 
 これで、アプリが承認され、GenStudio for Performance Marketingで自動的に機能するようになります。クエリ文字列パラメーターを指定する必要はありません。
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
-[GenStudio for Performance Marketing – 拡張機能 ](./genstudioext.md){target="_blank"} に戻る
+[GenStudio for Performance Marketing – 拡張機能 &#x200B;](./genstudioext.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

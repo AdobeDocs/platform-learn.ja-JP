@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Real-Time Customer Data Platform（CDP）におけるファイルベースの宛先設定のウォークスルーからヒントを得ます。 これは、[!UICONTROL &#x200B; クラウドストレージ &#x200B;] 宛先（S3 や SFTP など）および [!UICONTROL &#x200B; メールマーケティング &#x200B;] 宛先に適用されます。 製品ドキュメントについて詳しくは、以下を参照してください。
 
-* Experience Platform UI を使用してバッチまたはメールマーケティングの宛先に対してデータをアクティブ化する方法については、[ プロファイル書き出しのバッチ宛先に対してオーディエンスデータをアクティブ化 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=ja) を参照してください
-* [Flow Service API を使用してバッチまたはメールマーケティングの宛先に対してデータを有効化する方法については ](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=ja)Flow Service API を使用してバッチ宛先に接続しデータを有効化する方法を参照してください
+* Experience Platform UI を使用してバッチまたはメールマーケティングの宛先に対してデータをアクティブ化する方法については、[&#x200B; プロファイル書き出しのバッチ宛先に対してオーディエンスデータをアクティブ化 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=ja) を参照してください
+* [Flow Service API を使用してバッチまたはメールマーケティングの宛先に対してデータを有効化する方法については &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=ja)Flow Service API を使用してバッチ宛先に接続しデータを有効化する方法を参照してください
 
 >[!VIDEO](https://video.tv.adobe.com/v/340715/?learn=on&enablevpops&captions=jpn)

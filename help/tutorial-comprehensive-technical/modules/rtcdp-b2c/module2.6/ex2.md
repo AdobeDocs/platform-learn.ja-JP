@@ -19,15 +19,15 @@ ht-degree: 0%
 
 [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) に移動して、最新のリリース版をダウンロードします。 最新のバイナリリリース（この場合は **3.9.0**）を選択します。 ダウンロードが開始されます。
 
-![ カフカ ](./images/kafka1.png)
+![&#x200B; カフカ &#x200B;](./images/kafka1.png)
 
 デスクトップに **Kafka_AEP** という名前のフォルダーを作成し、ダウンロードしたファイルをそのディレクトリに配置します。
 
-![ カフカ ](./images/kafka3.png)
+![&#x200B; カフカ &#x200B;](./images/kafka3.png)
 
 フォルダを右クリックして [**新しい端子**] をクリックし、[**端子**] ウィンドウを開きます。
 
-![ カフカ ](./images/kafka4.png)
+![&#x200B; カフカ &#x200B;](./images/kafka4.png)
 
 ターミナルウィンドウで次のコマンドを実行し、ダウンロードしたファイルを解凍します。
 
@@ -37,19 +37,19 @@ ht-degree: 0%
 >
 >上記のコマンドがダウンロードしたファイルのバージョンと一致することを確認してください。 お使いのバージョンが新しい場合は、上記のコマンドを更新してそのバージョンに合わせる必要があります。
 
-![ カフカ ](./images/kafka5.png)
+![&#x200B; カフカ &#x200B;](./images/kafka5.png)
 
 次の画面が表示されます。
 
-![ カフカ ](./images/kafka6.png)
+![&#x200B; カフカ &#x200B;](./images/kafka6.png)
 
 そのファイルを解凍すると、次のようなディレクトリになります。
 
-![ カフカ ](./images/kafka7.png)
+![&#x200B; カフカ &#x200B;](./images/kafka7.png)
 
 このディレクトリには、次のサブディレクトリが表示されます。
 
-![ カフカ ](./images/kafka8.png)
+![&#x200B; カフカ &#x200B;](./images/kafka8.png)
 
 ターミナルウィンドウに戻ります。 次のコマンドを入力します。
 
@@ -59,15 +59,15 @@ ht-degree: 0%
 >
 >上記のコマンドがダウンロードしたファイルのバージョンと一致することを確認してください。 お使いのバージョンが新しい場合は、上記のコマンドを更新してそのバージョンに合わせる必要があります。
 
-![ カフカ ](./images/kafka9.png)
+![&#x200B; カフカ &#x200B;](./images/kafka9.png)
 
 次に、コマンド `bin/kafka-topics.sh` を入力します。
 
-![ カフカ ](./images/kafka10a.png)
+![&#x200B; カフカ &#x200B;](./images/kafka10a.png)
 
 この応答が表示されます。 これは、Kafka が正しくインストールされ、Java が正常に動作していることを意味します。 （注意：この機能には Java 23 JDK がインストールされている必要があります。 コマンド `java -version` を使用すると、インストールした Java のバージョンを確認できます）。
 
-![ カフカ ](./images/kafka10.png)
+![&#x200B; カフカ &#x200B;](./images/kafka10.png)
 
 ## Kafka を起動
 
@@ -75,33 +75,33 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 **kafka_2.13-3.9.0** フォルダーを右クリックし、**フォルダーに新しいターミナル** をクリックして **ターミナル** ウィンドウを開きます。
 
-![ カフカ ](./images/kafka11.png)
+![&#x200B; カフカ &#x200B;](./images/kafka11.png)
 
 次のコマンドを入力します。
 
 `bin/zookeeper-server-start.sh config/zookeeper.properties`
 
-![ カフカ ](./images/kafka12.png)
+![&#x200B; カフカ &#x200B;](./images/kafka12.png)
 
 次の画面が表示されます。
 
-![ カフカ ](./images/kafka13.png)
+![&#x200B; カフカ &#x200B;](./images/kafka13.png)
 
 これらの演習を行っている間、このウィンドウを開いたままにしてください。
 
 フォルダ **kafka_2.13-3.9.0** を右クリックし、「**フォルダに新しいターミナル**」をクリックして、別の新しい **ターミナル** ウィンドウを開きます。
 
-![ カフカ ](./images/kafka11.png)
+![&#x200B; カフカ &#x200B;](./images/kafka11.png)
 
 次のコマンドを入力します。
 
 `bin/kafka-server-start.sh config/server.properties`
 
-![ カフカ ](./images/kafka14.png)
+![&#x200B; カフカ &#x200B;](./images/kafka14.png)
 
 次の画面が表示されます。
 
-![ カフカ ](./images/kafka15.png)
+![&#x200B; カフカ &#x200B;](./images/kafka15.png)
 
 これらの演習を行っている間、このウィンドウを開いたままにしてください。
 
@@ -109,7 +109,7 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 **kafka_2.13-3.9.0** フォルダーを右クリックし、**フォルダーに新しいターミナル** をクリックして **ターミナル** ウィンドウを開きます。
 
-![ カフカ ](./images/kafka11.png)
+![&#x200B; カフカ &#x200B;](./images/kafka11.png)
 
 次のコマンドを入力して、**aeptest** という名前で新しい Kafka トピックを作成します。 このトピックは、この演習でのテストに使用します。
 
@@ -117,7 +117,7 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 確認メッセージが表示されます。
 
-![ カフカ ](./images/kafka17a.png)
+![&#x200B; カフカ &#x200B;](./images/kafka17a.png)
 
 次のコマンドを入力して、**aep** という名前で新しい Kafka トピックを作成します。 このトピックは、次の演習で設定するAdobe Experience Platform シンク コネクタで使用されます。
 
@@ -125,7 +125,7 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 その後、同様の確認が表示されます。
 
-![ カフカ ](./images/kafka17.png)
+![&#x200B; カフカ &#x200B;](./images/kafka17.png)
 
 ## イベントの作成
 
@@ -133,15 +133,15 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 `bin/kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic aeptest`
 
-![ カフカ ](./images/kafka18.png)
+![&#x200B; カフカ &#x200B;](./images/kafka18.png)
 
 その後、これが表示されます。 改行してから Enter ボタンを押すと、新しいメッセージがトピック **aeptest** に送信されます。
 
-![ カフカ ](./images/kafka19.png)
+![&#x200B; カフカ &#x200B;](./images/kafka19.png)
 
 `Hello AEP` と入力し、Enter キーを押します。 これで、最初のイベントがローカルの Kafka インスタンスのトピック **aeptest** に送信されました。
 
-![ カフカ ](./images/kafka20.png)
+![&#x200B; カフカ &#x200B;](./images/kafka20.png)
 
 `Hello AEP again.` と入力し、Enter キーを押します。
 
@@ -149,11 +149,11 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 これで、トピック **aeptest** に 3 つのイベントを作成しました。 これらのイベントは、そのデータを必要とする可能性のあるアプリケーションで使用できるようになりました。
 
-![ カフカ ](./images/kafka21.png)
+![&#x200B; カフカ &#x200B;](./images/kafka21.png)
 
 キーボードで `Control` と `C` を同時にクリックして、プロデューサーを閉じます。
 
-![ カフカ ](./images/kafka22.png)
+![&#x200B; カフカ &#x200B;](./images/kafka22.png)
 
 ## イベントの使用
 
@@ -163,11 +163,11 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 その後、トピックの前の演習で生成されたすべてのメッセージ **aeptest** が消費者に表示されます。 これが Apache Kafka の仕組みです。プロデューサーがパイプラインにイベントを作成し、消費者がそれらのイベントを使用します。
 
-![ カフカ ](./images/kafka23.png)
+![&#x200B; カフカ &#x200B;](./images/kafka23.png)
 
 キーボードで `Control` と `C` を同時にクリックして、プロデューサーを閉じます。
 
-![ カフカ ](./images/kafka24.png)
+![&#x200B; カフカ &#x200B;](./images/kafka24.png)
 
 この演習では、ローカル Kafka クラスターの設定、Kafka トピックの作成、イベントの生成、イベントの使用に関する、すべての基本を確認しました。
 
@@ -181,7 +181,7 @@ Kafka を起動するには、この順序で Kafka Zookeeper と Kafka を起�
 
 この演習は完了しました。
 
-次の手順：[2.6.3 Adobe Experience Platformで HTTP API エンドポイントを設定する ](./ex3.md)
+次の手順：[2.6.3 Adobe Experience Platformで HTTP API エンドポイントを設定する &#x200B;](./ex3.md)
 
 [モジュール 2.6 に戻る](./aep-apache-kafka.md)
 

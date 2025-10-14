@@ -23,7 +23,7 @@ ht-degree: 1%
 
 [!DNL Marketo Engage] 宛先を使用して、オーディエンスデータとプロファイル属性のシームレスなリアルタイム同期を可能にし、テクニカルスタック全体で統合マーケティングを強化する方法を説明します。 柔軟な同期オプションと合理化されたセットアップにより、リードの再獲得、プロファイルの更新、パーソナライズされた B2B ジャーニーのリーチの拡大などのユースケースをサポートします。
 
-詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection) を参照してください。
+詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440159?learn=on&enablevpops&captions=jpn)
 

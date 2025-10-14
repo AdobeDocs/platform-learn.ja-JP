@@ -23,11 +23,11 @@ ht-degree: 1%
 
 ## 演習
 
-[1.5.1 Frame.io の概要 ](./ex1.md){target="_blank"}
+[1.5.1 Frame.io の概要 &#x200B;](./ex1.md){target="_blank"}
 
 この演習では、Frame.io を探索し、その機能を理解します。
 
-[1.5.2 Frame.io を使用した承認 ](./ex2.md){target="_blank"}
+[1.5.2 Frame.io を使用した承認 &#x200B;](./ex2.md){target="_blank"}
 
 この演習では、Frame.io を使用した標準的な承認フローを実行します。
 
@@ -35,14 +35,14 @@ ht-degree: 1%
 
 この演習では、Frame.io とAdobe Premiere Proの統合について説明します。
 
-[ 概要とメリット ](./summary.md){target="_blank"}
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
 
 このモジュールの概要とメリットの概要
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[ すべてのモジュール ](../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る

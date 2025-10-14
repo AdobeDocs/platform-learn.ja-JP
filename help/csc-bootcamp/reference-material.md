@@ -16,13 +16,13 @@ ht-degree: 4%
 
 ## スライドデッキ
 
-このドキュメントは、この Bootcamp の概念とコンテンツサプライチェーンを理解するのに役立ちます。 しかし、私たちが見せたいものがもうそれを含めることができないものがしばしばあります。 この情報は、[ 次のスライドデッキ ](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) と [ 考えられるデモの技術 ](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen) で確認できます。
+このドキュメントは、この Bootcamp の概念とコンテンツサプライチェーンを理解するのに役立ちます。 しかし、私たちが見せたいものがもうそれを含めることができないものがしばしばあります。 この情報は、[&#x200B; 次のスライドデッキ &#x200B;](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&csf=1&web=1&e=57aFUU) と [&#x200B; 考えられるデモの技術 &#x200B;](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen) で確認できます。
 
 ## Adobike に会う
 
 アドビケはブリュッセルを拠点とする企業で、すでに市場でのプレゼンスを確立しています。 彼らは 50,000 人のライダーのコミュニティを横に持っています。 彼らは最近新しい革新的な電子バイクを開発しました、そしてその過程で、同社はまた、マーケティングチームの設定だけでなく、関連するプロセスや技術も変革しています。
 
-![ アドビ池 ](./images/adobike-logo.png)
+![&#x200B; アドビ池 &#x200B;](./images/adobike-logo.png)
 
 新しい自転車の発売に伴い、作業効率の問題に関する課題が生じています。 1 つのソリューションで、最初のリクエストから最終的な配信まで、作業のライフサイクル全体を完全に把握することが重要です。 高度なオーケストレーションで機能するには、チーム間のコラボレーションを可能にする必要があります。
 
@@ -35,21 +35,21 @@ Adobike はまた、顧客が自転車をオンラインで簡単に注文でき
 
 ### コンテンツのサプライチェーン
 
-- [ 拡大するコンテンツ・サプライ・チェーンの構築 ](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
+- [&#x200B; 拡大するコンテンツ・サプライ・チェーンの構築 &#x200B;](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
 
 ### Adobe Experience Manager
 
-- [Creative Cloudサービスを使用したコンテンツ自動処理の概要 ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=ja)
+- [Creative Cloudサービスを使用したコンテンツ自動処理の概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=ja)
 - [AEM Commerce as a Cloud Service を使い始める](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ja)
-- [Adobe Experience Manager as a Headless CMS の概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
+- [Adobe Experience Manager as a Headless CMS の概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
 
 ### Adobe Express
 
-- [Adobe Expressテンプレートの概要 ](https://helpx.adobe.com/jp/express/using/work-with-templates.html)
+- [Adobe Expressテンプレートの概要 &#x200B;](https://helpx.adobe.com/jp/express/using/work-with-templates.html)
 
 ### Adobe Workfront
 
-- [ 製品ドキュメントのAdobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=ja)
+- [&#x200B; 製品ドキュメントのAdobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=ja)
 - [AEM AssetsのWorkfront](https://exchange.adobe.com/apps/ec/101385/workfront-for-aem-assets)
 
 

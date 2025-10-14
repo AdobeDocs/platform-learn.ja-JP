@@ -21,7 +21,7 @@ ht-degree: 42%
 
 ## 追加情報
 
-* [API ドキュメントを使用したストリーミング接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=ja)。
-* [ ストリーミング取得 API ドキュメントを使用したレコードデータのストリーミング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=ja)
-* [ ストリーミング取得 API ドキュメントを使用した時系列データのストリーミング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=ja)
-* [1 つの HTTP リクエストドキュメントでの複数メッセージの送信 ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=ja)
+* [API ドキュメントを使用したストリーミング接続の作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=ja)。
+* [&#x200B; ストリーミング取得 API ドキュメントを使用したレコードデータのストリーミング &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=ja)
+* [&#x200B; ストリーミング取得 API ドキュメントを使用した時系列データのストリーミング &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=ja)
+* [1 つの HTTP リクエストドキュメントでの複数メッセージの送信 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=ja)

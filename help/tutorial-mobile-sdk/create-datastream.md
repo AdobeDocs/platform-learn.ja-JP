@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Experience Platform でデータストリームを作成する方法を説明します。
 
-データストリームは、Platform Edge Network上のサーバーサイド設定です。 データストリームは、Platform Edge Networkへの受信データがAdobe Experience Cloud アプリケーションおよびサービスに適切にルーティングされるようにします。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) またはこの [ ビデオ ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/edge-network/configure-datastreams) を参照してください。
+データストリームは、Platform Edge Network上のサーバーサイド設定です。 データストリームは、Platform Edge Networkへの受信データがAdobe Experience Cloud アプリケーションおよびサービスに適切にルーティングされるようにします。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) またはこの [&#x200B; ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/edge-network/configure-datastreams) を参照してください。
 
 ![アーキテクチャ](assets/architecture.png){zoomable="yes"}
 
@@ -39,18 +39,18 @@ Experience Platform でデータストリームを作成する方法を説明し
 1. 左パネルで **[!UICONTROL データストリーム]** を選択します。
 1. **[!UICONTROL 新規データストリーム]** を選択します。
 
-   ![ データストリームのホーム ](assets/datastream-new.png){zoomable="yes"}
+   ![&#x200B; データストリームのホーム &#x200B;](assets/datastream-new.png){zoomable="yes"}
 
 1. **[!UICONTROL 名前]** を入力（例：`Luma Mobile App`）し、**[!UICONTROL 説明]** を入力（例：`Datastream for Luma Mobile App`）します。
 
    >[!NOTE]
    >
-   >最後に、このチュートリアルを 1 つのサンドボックスで複数のユーザーと共に行う場合や、共有アカウントを使用する場合は、命名規則の一部として ID を追加またはプレフィックスすることを検討してください。 例えば、`Luma Mobile App Event Dataset` の代わりに `Luma Mobile App Event Dataset - Joe Smith` を使用します。 [ 概要 ](overview.md) のメモも参照してください。
+   >最後に、このチュートリアルを 1 つのサンドボックスで複数のユーザーと共に行う場合や、共有アカウントを使用する場合は、命名規則の一部として ID を追加またはプレフィックスすることを検討してください。 例えば、`Luma Mobile App Event Dataset` の代わりに `Luma Mobile App Event Dataset - Joe Smith` を使用します。 [&#x200B; 概要 &#x200B;](overview.md) のメモも参照してください。
 
 1. 前のレッスンで作成したスキーマを「**イベントスキーマ**」リストから選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![ 新しいデータストリーム ](assets/datastream-name.png){zoomable="yes"}
+   ![&#x200B; 新しいデータストリーム &#x200B;](assets/datastream-name.png){zoomable="yes"}
 
 
 ## サービスを追加
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->組織が使用する各サービスを有効にすると、モバイルアプリで収集されたデータをどこでも使用できるようになります。 詳しくは、[ データストリーム設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) を参照してください。
+>組織が使用する各サービスを有効にすると、モバイルアプリで収集されたデータをどこでも使用できるようになります。 詳しくは、[&#x200B; データストリーム設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview) を参照してください。
 
 独自のアプリに Platform Mobile SDKを実装する場合は、3 つのタグ環境（開発、ステージ、実稼動）にマッピングするために、最終的に 3 つのデータストリームを作成する必要があります。 Adobe Real-Time Customer Data PlatformやAdobe Journey Optimizerなどの Platform ベースのアプリケーションで Platform Mobile SDKを使用している場合は、適切なサンドボックスにこれらのデータストリームを作成する必要があります。
 
@@ -110,6 +110,6 @@ You might also want to enable the Adobe Experience Platform service.
 >
 >これで、チュートリアルの残りの部分で使用するデータストリームが作成されました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[タグプロパティの設定](configure-tags.md)**

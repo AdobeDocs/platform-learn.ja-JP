@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## HTML/幅（引用符なし）
 
-[ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
 1. Assurance アイコンを左に移動します。
 1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## HTML/幅（引用符あり）
 
-[ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
 1. Assurance アイコンを左に移動します。
 1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
@@ -48,33 +48,33 @@ ht-degree: 2%
 
 ## Markdown/幅（引用符なし）
 
-[ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
 1. Assurance アイコンを左に移動します。
 1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 商品を選択します。
-1. ![ 後で使用するために保存 ](assets/saveforlater.png){width=15} （iOS）または ![ 後で使用するために保存 ](assets/heart.png){width=25} （Android）を選択します。
-1. ![ 買い物かごに追加 ](assets/addtocart.png){width=20} を選択します。
-1. ![ 購入 ](assets/purchase.png){width=15} を選択します。
+1. ![&#x200B; 後で使用するために保存 &#x200B;](assets/saveforlater.png){width=15} （iOS）または ![&#x200B; 後で使用するために保存 &#x200B;](assets/heart.png){width=25} （Android）を選択します。
+1. ![&#x200B; 買い物かごに追加 &#x200B;](assets/addtocart.png){width=20} を選択します。
+1. ![&#x200B; 購入 &#x200B;](assets/purchase.png){width=15} を選択します。
 
 
 ## マークダウン/幅（引用符あり）
 
-[ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
 1. Assurance アイコンを左に移動します。
 1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 商品を選択します。
-1. ![ 後で使用するために保存 ](assets/saveforlater.png){width="15"} （iOS）または ![ 後で使用するために保存 ](assets/heart.png){width="25"} （Android）を選択します。
-1. ![ 買い物かごに追加 ](assets/addtocart.png){width="20"} を選択します。
-1. ![ 購入 ](assets/purchase.png){width="15"} を選択します。
+1. ![&#x200B; 後で使用するために保存 &#x200B;](assets/saveforlater.png){width="15"} （iOS）または ![&#x200B; 後で使用するために保存 &#x200B;](assets/heart.png){width="25"} （Android）を選択します。
+1. ![&#x200B; 買い物かごに追加 &#x200B;](assets/addtocart.png){width="20"} を選択します。
+1. ![&#x200B; 購入 &#x200B;](assets/purchase.png){width="15"} を選択します。
 
 
 ## HTML/幅なし
 
-[ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
 1. Assurance アイコンを左に移動します。
 1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
@@ -87,12 +87,12 @@ ht-degree: 2%
 
 ## マークダウン/幅なし
 
-[ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
 1. Assurance アイコンを左に移動します。
 1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 商品を選択します。
-1. ![ 後で使用するために保存 ](assets/saveforlater.png) （iOS）または ![ 後で使用するために保存 ](assets/heart.png) （Android）を選択します。
-1. ![ 買い物かごに追加 ](assets/addtocart.png) を選択します。
-1. ![ 購入 ](assets/purchase.png) を選択します。
+1. ![&#x200B; 後で使用するために保存 &#x200B;](assets/saveforlater.png) （iOS）または ![&#x200B; 後で使用するために保存 &#x200B;](assets/heart.png) （Android）を選択します。
+1. ![&#x200B; 買い物かごに追加 &#x200B;](assets/addtocart.png) を選択します。
+1. ![&#x200B; 購入 &#x200B;](assets/purchase.png) を選択します。

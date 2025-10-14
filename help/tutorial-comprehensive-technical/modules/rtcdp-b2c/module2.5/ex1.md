@@ -75,7 +75,7 @@ Adobe Experience Platform Data Collection Event Forwarding プロパティのリ
 
 ![Adobe Experience Platform データ収集 SSF](./images/ssf10.png)
 
-次の手順：[2.5.2 データ収集イベント転送プロパティでデータを使用できるように、データストリームを更新する ](./ex2.md)
+次の手順：[2.5.2 データ収集イベント転送プロパティでデータを使用できるように、データストリームを更新する &#x200B;](./ex2.md)
 
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 

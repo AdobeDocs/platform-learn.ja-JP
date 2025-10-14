@@ -138,8 +138,8 @@ Adobe Experience Platformで、画面左側のメニューにある **[!UICONTRO
 
 ## 次の手順
 
-オフラインソースからの [1.2.4 データ取り込み ](./ex4.md){target="_blank"}
+オフラインソースからの [1.2.4 データ取り込み &#x200B;](./ex4.md){target="_blank"}
 
-[ データ取り込み ](./data-ingestion.md){target="_blank"} に戻る
+[&#x200B; データ取り込み &#x200B;](./data-ingestion.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

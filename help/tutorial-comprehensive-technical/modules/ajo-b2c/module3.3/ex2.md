@@ -36,31 +36,31 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 左側のメニューで **オファー** をクリックし、**オファー** に移動します。 「**+ オファーを作成**」をクリックします。
 
-![ 決定ルール ](./images/offers1.png)
+![&#x200B; 決定ルール &#x200B;](./images/offers1.png)
 
 このポップアップが表示されます。 「**パーソナライズされたオファー**」を選択し、「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/offers2.png)
+![&#x200B; 決定ルール &#x200B;](./images/offers2.png)
 
 **詳細** ビューを開きます。
 
-![ 決定ルール ](./images/offers3.png)
+![&#x200B; 決定ルール &#x200B;](./images/offers3.png)
 
 この場合、オファー `--aepUserLdap-- - AirPods Max` を設定する必要があります。 上記のテーブルの情報を使用して、フィールドに入力します。 この例では、パーソナライズされたオファーの名前は **vangeluw - AirPods Max** です。 また、**開始日時** を今日に設定し、**終了日時** を今後 1 か月の日付に設定します。
 
 完了したら、次のようになります。 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/offers4.png)
+![&#x200B; 決定ルール &#x200B;](./images/offers4.png)
 
 次の画面が表示されます。
 
-![ 決定ルール ](./images/constraints.png)
+![&#x200B; 決定ルール &#x200B;](./images/constraints.png)
 
 **定義済みの決定ルール別** を選択し、「**+**」アイコンをクリックしてルール **すべて – 女性顧客** を追加します。
 
 上記の表に示すように、**優先度** を入力します。 次に、「**+ キャッピングを作成」をクリックして** このオファーを顧客に表示できる回数を定義します。
 
-![ 決定ルール ](./images/constraints1.png)
+![&#x200B; 決定ルール &#x200B;](./images/constraints1.png)
 
 キャッピングの場合は、次のオプションを選択します。
 
@@ -74,11 +74,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 「**作成**」をクリックします。
 
-![ 決定ルール ](./images/constraints2.png)
+![&#x200B; 決定ルール &#x200B;](./images/constraints2.png)
 
 その後、ここに戻ります。 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/constraints3.png)
+![&#x200B; 決定ルール &#x200B;](./images/constraints3.png)
 
 ここで、**表示域** を作成する必要があります。 表示域は、**プレースメント** と実際のアセットの組み合わせです。
 
@@ -89,19 +89,19 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 - コンテンツ : URL
 - 公開場所：前述の表の列 **Web の画像リンク** から URL をコピーします
 
-![ 決定ルール ](./images/addcontent1.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent1.png)
 
 または、コンテンツの **アセットライブラリ** を選択し、「**参照** をクリックすることもできます。
 
-![ 決定ルール ](./images/addcontent2.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent2.png)
 
 次に、Assets ライブラリのポップアップが表示されます。**enablement-assets** フォルダーに移動して、画像ファイル **Apple AirPods Max - Female.jpg** を選択します。 次に、「**選択**」をクリックします。
 
-![ 決定ルール ](./images/addcontent3.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent3.png)
 
 その後、これが表示されます。 「**+表示域を追加**」をクリックします。
 
-![ 決定ルール ](./images/addcontentrep20.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep20.png)
 
 **表示域 2** について、次を選択します。
 
@@ -110,15 +110,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 - コンテンツ : URL
 - 公開場所：**アセットライブラリ** を選択します。 **参照** をクリックします
 
-![ 決定ルール ](./images/addcontentrep21.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep21.png)
 
 次に、Assets ライブラリのポップアップが表示されます。**enablement-assets** フォルダーに移動して、画像ファイル **Apple AirPods Max - Female.jpg** を選択します。 次に、「**選択**」をクリックします。
 
-![ 決定ルール ](./images/addcontent3b.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent3b.png)
 
 その後、これが表示されます。 次に、「**+表示域を追加**」をクリックします。
 
-![ 決定ルール ](./images/addcontentrep20b.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep20b.png)
 
 **表示域 3** について、次を選択します。
 
@@ -129,11 +129,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **カスタム** を選択し、「**コンテンツを追加**」をクリックします。
 
-![ 決定ルール ](./images/addcontentrep31.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep31.png)
 
 このポップアップが表示されます。
 
-![ 決定ルール ](./images/addcontent3text.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent3text.png)
 
 上記のテーブルの **テキスト** フィールドを見て、ここにテキストを入力します。この場合は、「`{{ profile.person.name.firstName }}, 10% discount on AirPods Max`」とします。
 
@@ -141,29 +141,29 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 その後、これが表示されます。 「**保存**」をクリックします。
 
-![ 決定ルール ](./images/addcontentrep3text.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep3text.png)
 
 あなたはこれを手に入れました。 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/addcontentrep3textdone.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep3textdone.png)
 
 次に、新しい **パーソナライズされたオファー** の概要が表示されます。 「**完了**」をクリックします。
 
-![ 決定ルール ](./images/offeroverview.png)
+![&#x200B; 決定ルール &#x200B;](./images/offeroverview.png)
 
 **保存して承認** をクリックします。
 
-![ 決定ルール ](./images/saveapprove.png)
+![&#x200B; 決定ルール &#x200B;](./images/saveapprove.png)
 
 次に、新しく作成したパーソナライズされたオファーがオファーの概要で使用できるようになります。
 
-![ 決定ルール ](./images/offeroverview1.png)
+![&#x200B; 決定ルール &#x200B;](./images/offeroverview1.png)
 
 ここで、上記の手順を繰り返して、上記の表にある製品の他の 3 つのパーソナライズされたオファーを作成します。
 
 完了すると、**パーソナライズされたオファー** の **オファーの概要** 画面にすべてのオファーが表示されます。
 
-![ 最終オファー ](./images/finaloffers.png)
+![&#x200B; 最終オファー &#x200B;](./images/finaloffers.png)
 
 ## 3.3.2.2 フォールバックオファーの作成
 
@@ -171,15 +171,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **オファー** ビューにいることを確認します。 「**+ オファーを作成**」をクリックします。
 
-![ 決定ルール ](./images/createoffer.png)
+![&#x200B; 決定ルール &#x200B;](./images/createoffer.png)
 
 このポップアップが表示されます。 **フォールバックオファー** を選択し、「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/foffers2.png)
+![&#x200B; 決定ルール &#x200B;](./images/foffers2.png)
 
 その後、これが表示されます。 フォールバックオファーの名前を入力：`--aepUserLdap-- - CitiSignal Fallback Offer`。 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/foffers4.png)
+![&#x200B; 決定ルール &#x200B;](./images/foffers4.png)
 
 ここで、**表示域** を作成する必要があります。 表示域は、**プレースメント** と実際のアセットの組み合わせです。
 
@@ -191,15 +191,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **参照** をクリックして、画像を選択します。
 
-![ 決定ルール ](./images/addcontent1fb.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent1fb.png)
 
 次に、Assets ライブラリのポップアップが表示されます。**citi-signal-images** フォルダーに移動して、画像ファイル **App-Banner-Ad.jpg** を選択します。 次に、「**選択**」をクリックします。
 
-![ 決定ルール ](./images/addcontent3fb.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent3fb.png)
 
 その後、これが表示されます。 「**+表示域を追加**」をクリックします。
 
-![ 決定ルール ](./images/addcontentrep20fb.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep20fb.png)
 
 **表示域 2** について、次を選択します。
 
@@ -209,15 +209,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **参照** をクリックして、画像を選択します。
 
-![ 決定ルール ](./images/addcontentrep21fb.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep21fb.png)
 
 次に、Assets ライブラリのポップアップが表示されます。**citi-signal-images** フォルダーに移動して、画像ファイル **App-Banner-Ad.jpg** を選択します。 次に、「**選択**」をクリックします。
 
-![ 決定ルール ](./images/addcontent3bfb.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontent3bfb.png)
 
 その後、これが表示されます。 「**+表示域を追加**」をクリックします。
 
-![ 決定ルール ](./images/addcontentrep20bfb.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep20bfb.png)
 
 **表示域 3** について、次を選択します。
 
@@ -227,27 +227,27 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **コンテンツを追加** をクリックします。
 
-![ 決定ルール ](./images/addcontentrep21text.png)
+![&#x200B; 決定ルール &#x200B;](./images/addcontentrep21text.png)
 
 このポップアップが表示されます。 テキスト `{{ profile.person.name.firstName }}, download the CitiSignal app now!` を入力し、「保存 **をクリック** ます。
 
-![ 決定ルール ](./images/faddcontent3text.png)
+![&#x200B; 決定ルール &#x200B;](./images/faddcontent3text.png)
 
 その後、これが表示されます。 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/faddcontentrep3.png)
+![&#x200B; 決定ルール &#x200B;](./images/faddcontentrep3.png)
 
 次に、新しい **フォールバックオファー** の概要が表示されます。 「**完了**」をクリックします。
 
-![ 決定ルール ](./images/fofferoverview.png)
+![&#x200B; 決定ルール &#x200B;](./images/fofferoverview.png)
 
 最後に、「**保存して承認**」をクリックします。
 
-![ 決定ルール ](./images/saveapprovefb.png)
+![&#x200B; 決定ルール &#x200B;](./images/saveapprovefb.png)
 
 **オファーの概要** 画面に、次の情報が表示されます。
 
-![ 最終オファー ](./images/ffinaloffers.png)
+![&#x200B; 最終オファー &#x200B;](./images/ffinaloffers.png)
 
 ## 3.3.2.3 コレクションの作成
 
@@ -255,7 +255,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **コレクション** に移動します。 「**+ コレクションを作成**」をクリックします。
 
-![ 決定ルール ](./images/collections.png)
+![&#x200B; 決定ルール &#x200B;](./images/collections.png)
 
 このポップアップが表示されます。 このようにコレクションを設定します。 「**次へ**」をクリックします。
 
@@ -264,15 +264,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/createcollectionpopup1.png)
+![&#x200B; 決定ルール &#x200B;](./images/createcollectionpopup1.png)
 
 次の画面で、前の演習で作成した 4 つの **パーソナライズされたオファー** を選択します。 「**保存**」をクリックします。
 
-![ 決定ルール ](./images/createcollectionpopup2.png)
+![&#x200B; 決定ルール &#x200B;](./images/createcollectionpopup2.png)
 
 次の項目が表示されます。
 
-![ 決定ルール ](./images/colldone.png)
+![&#x200B; 決定ルール &#x200B;](./images/colldone.png)
 
 ## 3.3.2.4 決定の作成
 
@@ -280,7 +280,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **決定** を設定するには、**決定** に移動します。 「**+決定を作成**」をクリックします。
 
-![ 決定ルール ](./images/activitydd.png)
+![&#x200B; 決定ルール &#x200B;](./images/activitydd.png)
 
 その後、これが表示されます。 このようなフィールドに入力します。 「**次へ**」をクリックします。
 
@@ -288,51 +288,51 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 - 開始日時：今日
 - 終了日時：今日+ 1 か月
 
-![ 決定ルール ](./images/activity2.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity2.png)
 
 次の画面では、決定範囲にプレースメントを追加する必要があります。 プレースメント **web – 画像**、**メール – 画像**、**非デジタル – テキスト** の決定範囲を作成する必要があります。
 
-![ 決定ルール ](./images/addplacements.png)
+![&#x200B; 決定ルール &#x200B;](./images/addplacements.png)
 
 まず、ドロップダウンでプレースメントを選択して、**非デジタル – テキスト** の決定範囲を作成します。 次に、「**追加** ボタンをクリックして、評価条件を追加します。
 
-![ 決定ルール ](./images/activity3.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity3.png)
 
 コレクション `--aepUserLdap-- - CitiSignal Collection` を選択し、「**追加**」をクリックします。
 
-![ 決定ルール ](./images/activity4text.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity4text.png)
 
 その後、これが表示されます。 「**+**」ボタンをクリックして、新しい決定範囲を追加します。
 
-![ 決定ルール ](./images/activity5text.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity5text.png)
 
 プレースメント **Web – 画像** を選択し、評価条件の下にコレクション `--aepUserLdap-- - CitiSignal Collection` を追加します。 次に、「**+**」ボタンを再度クリックして、新しい決定範囲を追加します。
 
-![ 決定ルール ](./images/activity6text.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity6text.png)
 
 プレースメント **メール – 画像** を選択し、評価条件の下でコレクション `--aepUserLdap-- - CitiSignal Collection` を追加します。 次に、「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/activity4.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity4.png)
 
 次に、`--aepUserLdap-- - CitiSignal Fallback Offer` という名前の **フォールバックオファー** を選択する必要があります。 「**次へ**」をクリックします。
 
-![ 決定ルール ](./images/activity10.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity10.png)
 
 決定をレビューします。 「**完了**」をクリックします。
 
-![ 決定ルール ](./images/activity11.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity11.png)
 
 ポップアップで、「保存して有効化 **をクリックし** す。
 
-![ 決定ルール ](./images/activity12.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity12.png)
 
 最後に、概要に決定が表示されます。
 
-![ 決定ルール ](./images/activity13.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity13.png)
 
 これで、決定が正常に設定されました。 これで決定が実稼働し、最適化され、パーソナライズされたオファーをリアルタイムで顧客に提供できるようになります。
 
-次の手順：[3.3.3 データ収集クライアントプロパティと、Offer decisioning用の web SDK設定を準備する ](./ex3.md)
+次の手順：[3.3.3 データ収集クライアントプロパティと、Offer decisioning用の web SDK設定を準備する &#x200B;](./ex3.md)
 
 [モジュール 3.3 に戻る](./offer-decisioning.md)
 

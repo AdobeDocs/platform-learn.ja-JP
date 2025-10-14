@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # Federated Audience コンポジションの接続と設定
 
-Data Warehouse に接続し、Federated Audience Composition 用に接続を設定する方法について説明します。 詳しくは、[Federated Audience Composition ドキュメント ](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/home){target="_blank"} を参照してください。
+Data Warehouse に接続し、Federated Audience Composition 用に接続を設定する方法について説明します。 詳しくは、[Federated Audience Composition ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/home){target="_blank"} を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)

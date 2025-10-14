@@ -14,7 +14,7 @@ ht-degree: 2%
 
 モバイルアプリでイベントをトラッキングする方法を説明します。
 
-Edge Network拡張機能は、エクスペリエンスイベントを Platform Edge Networkに送信する API を提供します。 エクスペリエンスイベントは、XDM ExperienceEvent スキーマ定義に準拠するデータを含むオブジェクトです。 より簡単に言えば、これらのイベントは、ユーザーがモバイルアプリで何をしているかをキャプチャします。 Platform Edge Networkがデータを受信すると、そのデータは、データストリームに設定されたアプリケーションおよびサービス（Adobe AnalyticsやExperience Platformなど）に転送できます。 [ エクスペリエンスイベント ](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) について詳しくは、製品ドキュメントを参照してください。
+Edge Network拡張機能は、エクスペリエンスイベントを Platform Edge Networkに送信する API を提供します。 エクスペリエンスイベントは、XDM ExperienceEvent スキーマ定義に準拠するデータを含むオブジェクトです。 より簡単に言えば、これらのイベントは、ユーザーがモバイルアプリで何をしているかをキャプチャします。 Platform Edge Networkがデータを受信すると、そのデータは、データストリームに設定されたアプリケーションおよびサービス（Adobe AnalyticsやExperience Platformなど）に転送できます。 [&#x200B; エクスペリエンスイベント &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) について詳しくは、製品ドキュメントを参照してください。
 
 ## 前提条件
 
@@ -59,7 +59,7 @@ Adobe Experience Platform Edge拡張機能は、事前に定義された XDM ス
 
 * スキーマで、収集しようとしているイベントを識別します。 この例では、商品表示（**[!UICONTROL productViews]**）イベントなど、コマースエクスペリエンスイベントを追跡します。
 
-  ![ 製品表示スキーマ ](assets/datacollection-prodView-schema.png){zoomable="yes"}
+  ![&#x200B; 製品表示スキーマ &#x200B;](assets/datacollection-prodView-schema.png){zoomable="yes"}
 
 * アプリでエクスペリエンスイベントデータを含むオブジェクトを作成するには、次のようなコードを使用します。
 
@@ -80,7 +80,7 @@ var xdmData: [String: Any] = [
 
 このコードにおいて、
 
-* `eventType`：発生したイベントを表し、可能な場合は [ 既知の値 ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) を使用します。
+* `eventType`：発生したイベントを表し、可能な場合は [&#x200B; 既知の値 &#x200B;](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) を使用します。
 
 * `commerce.productViews.value`：イベントの数値またはブール値。 ブール値（Adobe Analyticsでは「カウンター」）の場合、値は常に 1 に設定されます。 数値イベントまたは通貨イベントの場合、値は 1 を超える場合があります。
 
@@ -99,7 +99,7 @@ val xdmData = mapOf(
 
 このコードにおいて、
 
-* `eventType`：発生したイベントを表し、可能な場合は [ 既知の値 ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) を使用します。
+* `eventType`：発生したイベントを表し、可能な場合は [&#x200B; 既知の値 &#x200B;](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) を使用します。
 
 * `commerce.productViews.value`：イベントの数値またはブール値。 ブール値（Adobe Analyticsでは「カウンター」）の場合、値は常に 1 に設定されます。 数値イベントまたは通貨イベントの場合、値は 1 を超える場合があります。
 
@@ -108,7 +108,7 @@ val xdmData = mapOf(
 
 * スキーマで、コマース製品表示イベントに関連付けられている追加データを特定します。 この例では、**[!UICONTROL productListItems]** を含めます。これは、コマース関連のイベントで使用されるフィールドの標準セットです。
 
-  ![ 製品リスト項目スキーマ ](assets/datacollection-prodListItems-schema.png){zoomable="yes"}
+  ![&#x200B; 製品リスト項目スキーマ &#x200B;](assets/datacollection-prodListItems-schema.png){zoomable="yes"}
    * **[!UICONTROL productListItems]** は配列なので、複数の製品を指定できます。
 
 * このデータを追加するには、`xdmData` オブジェクトを展開して補足データを含めます。
@@ -194,14 +194,14 @@ Edge.sendEvent(productViewEvent, null)
 >[!ENDTABS]
 
 
-[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API は、[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API 呼び出しと同等のAEP Mobile SDKです。 詳しくは、[Analytics Mobile 拡張機能からAdobe Experience Platform Edge Networkへの移行 ](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) を参照してください。
+[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API は、[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) および [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API 呼び出しと同等のAEP Mobile SDKです。 詳しくは、[Analytics Mobile 拡張機能からAdobe Experience Platform Edge Networkへの移行 &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) を参照してください。
 
 次に、このコードをプロジェクトに実装します。
 アプリに様々なコマース製品関連のアクションがあり、ユーザーが実行したこれらのアクションに基づいてイベントを送信する場合：
 
 * 表示：ユーザーが特定の製品を表示すると発生します。
 * 買い物かごに追加：製品の詳細画面でユーザーが ![ShoppingCart](/help/assets/icons/ShoppingCart.svg) をタップすると、
-* 後で使用するために保存：製品の詳細画面で ![ ハート ](/help/assets/icons/Heart.svg)/![ サムアップ ](/help/assets/icons/ThumbUp.svg) をタップした場合、
+* 後で使用するために保存：製品の詳細画面で ![&#x200B; ハート &#x200B;](/help/assets/icons/Heart.svg)/![&#x200B; サムアップ &#x200B;](/help/assets/icons/ThumbUp.svg) をタップした場合、
 * 購入：製品の詳細画面で ![CreditCard](/help/assets/icons/CreditCard.svg) をタップした場合。
 
 コマース関連のエクスペリエンスイベントの送信を再利用可能な方法で実装するには、専用の関数を使用します。
@@ -249,9 +249,9 @@ Edge.sendEvent(productViewEvent, null)
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. ツールバーの各ボタン（![ ハート ](/help/assets/icons/Heart.svg)、![ShoppingCart](/help/assets/icons/ShoppingCart.svg) および ![CreditCard](/help/assets/icons/CreditCard.svg)）に対して、`ATTrackingManager.trackingAuthorizationStatus == .authorized` クロージャ内で関連する呼び出しを追加します。
+   1. ツールバーの各ボタン（![&#x200B; ハート &#x200B;](/help/assets/icons/Heart.svg)、![ShoppingCart](/help/assets/icons/ShoppingCart.svg) および ![CreditCard](/help/assets/icons/CreditCard.svg)）に対して、`ATTrackingManager.trackingAuthorizationStatus == .authorized` クロージャ内で関連する呼び出しを追加します。
 
-      1. ![ ハート ](/help/assets/icons/Heart.svg) の場合：
+      1. ![&#x200B; ハート &#x200B;](/help/assets/icons/Heart.svg) の場合：
 
          ```swift
          // Send saveForLater commerce experience event
@@ -343,7 +343,7 @@ Edge.sendEvent(productViewEvent, null)
 画面のビュー数とインタラクションをアプリ自体で追跡するとします。 このタイプのイベントにカスタムフィールドグループを定義したことに注意してください。
 
 * スキーマで、収集しようとしているイベントを識別します。
-  ![ アプリインタラクションスキーマ ](assets/datacollection-appInteraction-schema.png){zoomable="yes"}
+  ![&#x200B; アプリインタラクションスキーマ &#x200B;](assets/datacollection-appInteraction-schema.png){zoomable="yes"}
 
 * オブジェクトの作成を開始します。
 
@@ -610,7 +610,7 @@ Edge.sendEvent(event, null)
       * マップを使用してエクスペリエンスイベントを設定します。
       * [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API を使用してエクスペリエンスイベントを送信します。
 
-1. **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL &#x200B; views &#x200B;]**/**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**&#x200B;に移動します
+1. **[!UICONTROL Android]** ![ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL &#x200B; views &#x200B;]**/**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**&#x200B;に移動します
 
    1. **[!UICONTROL Button]**&#x200B;**[!UICONTROL onClick]** イベントに次のハイライトされたコードを追加します。
 
@@ -632,13 +632,13 @@ Edge.sendEvent(event, null)
 
 ## 検証
 
-1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+1. [&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 
    1. Assurance アイコンを左に移動します。
    1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
    1. タブバーで「**[!DNL Products]**」を選択します。
    1. 商品を選択します。
-   1. ![ ハート ](/help/assets/icons/Heart.svg) （iOS）または ![ サムアップ ](/help/assets/icons/ThumbUp.svg) （Android）を選択します。
+   1. ![&#x200B; ハート &#x200B;](/help/assets/icons/Heart.svg) （iOS）または ![&#x200B; サムアップ &#x200B;](/help/assets/icons/ThumbUp.svg) （Android）を選択します。
    1. ![ShoppingCartAdd](/help/assets/icons/ShoppingCart.svg) を選択します。
    1. ![CreditCard](/help/assets/icons/CreditCard.svg) を選択します。
 
@@ -655,9 +655,9 @@ Edge.sendEvent(event, null)
 >[!ENDTABS]
 
 1. Assurance UI で、.com.adobe.edge.konductor **[!UICONTROL ベンダーの]** hitReceived **[!UICONTROL イベントを探し]** す。
-1. イベントを選択し、**[!UICONTROL messages]** オブジェクトの XDM データを確認します。 または、「![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL Raw イベントをコピー]** を使用し、好みのテキストエディターまたはコードエディターを使用してイベントを貼り付けて検査することもできます。
+1. イベントを選択し、**[!UICONTROL messages]** オブジェクトの XDM データを確認します。 または、「![&#x200B; コピー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL Raw イベントをコピー]** を使用し、好みのテキストエディターまたはコードエディターを使用してイベントを貼り付けて検査することもできます。
 
-   ![ データ収集の検証 ](assets/datacollection-validation.png){zoomable="yes"}
+   ![&#x200B; データ収集の検証 &#x200B;](assets/datacollection-validation.png){zoomable="yes"}
 
 
 ## 次の手順
@@ -670,17 +670,17 @@ Edge.sendEvent(event, null)
 
 >[!TIP]
 >
->その他の例については、[ 完成したアプリ ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) を確認してください。
+>その他の例については、[&#x200B; 完成したアプリ &#x200B;](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) を確認してください。
 
 
 ## Analytics と Platform へのイベントの送信
 
-イベントを収集して Platform Edge Networkに送信したら、[ データストリーム ](create-datastream.md) で設定されたアプリケーションとサービスに送信されます。 後のレッスンでは、このデータを [Adobe Analytics](analytics.md)、[Adobe Experience Platform](platform.md) およびその他のAdobe Experience Cloud ソリューション（[Adobe Target](target.md) やAdobe Journey Optimizerなど）にマッピングします。
+イベントを収集して Platform Edge Networkに送信したら、[&#x200B; データストリーム &#x200B;](create-datastream.md) で設定されたアプリケーションとサービスに送信されます。 後のレッスンでは、このデータを [Adobe Analytics](analytics.md)、[Adobe Experience Platform](platform.md) およびその他のAdobe Experience Cloud ソリューション（[Adobe Target](target.md) やAdobe Journey Optimizerなど）にマッピングします。
 
 >[!SUCCESS]
 >
 >これで、Adobe Experience Platform Edge Networkに対するコマース、アプリのインタラクション、画面トラッキングイベントを追跡するアプリの設定が完了しました。 およびデータストリームで定義したすべてのサービスに適用されます。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[WebViews の処理](web-views.md)**

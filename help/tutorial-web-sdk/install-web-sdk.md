@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Adobe Experience Platform Web SDK タグ拡張機能のインストール
 
-Adobe Experience Platform Web SDK拡張機能をインストールして設定する方法について説明します。 Web SDKを実装する最も簡単な方法は、Adobeのタグマネージャー、タグ（旧称：Launch）を使用することです。 Platform Web SDK タグ拡張機能は _唯一のタグ拡張機能_ で、&lbrace;Analytics __ [、&lbrace;Target](setup-analytics.md)、[Audience Manager](setup-target.md)、Real-Time Customer Data Platform、[Journey Optimizer](setup-audience-manager.md) など、[ すべてのAdobe Experience Cloud アプリケーション ](setup-web-channel.md) にデータを送信するために必要です。
+Adobe Experience Platform Web SDK拡張機能をインストールして設定する方法について説明します。 Web SDKを実装する最も簡単な方法は、Adobeのタグマネージャー、タグ（旧称：Launch）を使用することです。 Platform Web SDK タグ拡張機能は _唯一のタグ拡張機能_ で、&lbrace;Analytics __ [、&lbrace;Target](setup-analytics.md)、[Audience Manager](setup-target.md)、Real-Time Customer Data Platform、[Journey Optimizer](setup-audience-manager.md) など、[&#x200B; すべてのAdobe Experience Cloud アプリケーション &#x200B;](setup-web-channel.md) にデータを送信するために必要です。
 
 ## 学習目標
 
@@ -35,14 +35,14 @@ Adobe Experience Platform Web SDK拡張機能をインストールして設定�
 
 チュートリアル用に新しいタグプロパティを作成します。
 
-1. [ データ収集インターフェイス ](https://experience.adobe.com/data-collection/){target="_blank"} を開きます。
+1. [&#x200B; データ収集インターフェイス &#x200B;](https://experience.adobe.com/data-collection/){target="_blank"} を開きます。
 1. 左側のナビゲーションで **[!UICONTROL タグ]** を選択します
 1. 「**[!UICONTROL 新しいプロパティ]**」ボタンを選択します
-   ![ 新しいプロパティを追加 ](assets/websdk-property-addNewProperty.png)
+   ![&#x200B; 新しいプロパティを追加 &#x200B;](assets/websdk-property-addNewProperty.png)
 1. **[!UICONTROL 名前]** として、`Web SDK Course` と入力します（会社の複数のユーザーがこのチュートリアルを受講している場合は、最後に名前を追加します）。
 1. **[!UICONTROL ドメイン]** として、`enablementadobe.com` と入力します（後で説明します）。
 1. 「**[!UICONTROL 保存]**」を選択します
-   ![ プロパティの詳細 ](assets/websdk-property-propertyDetails.png)
+   ![&#x200B; プロパティの詳細 &#x200B;](assets/websdk-property-propertyDetails.png)
 
 ## Web SDK拡張機能を追加します
 
@@ -53,7 +53,7 @@ Adobe Experience Platform Web SDK拡張機能をインストールして設定�
 1. `Adobe Experience Platform Web SDK` を検索
 1. 「**[!UICONTROL インストール]**」を選択します。
 
-   ![Web SDK拡張機能のインストール ](assets/extension-platform-web-sdk.png)
+   ![Web SDK拡張機能のインストール &#x200B;](assets/extension-platform-web-sdk.png)
 
 
 ## 拡張機能のデータストリームへのリンク
@@ -67,11 +67,11 @@ Adobe Experience Platform Web SDK拡張機能をインストールして設定�
 
    >[!NOTE]
    >
-   > データストリームが見つからない場合は、[ データストリームの設定 ](configure-datastream.md) のレッスンに移動し、手順に従って作成します
+   > データストリームが見つからない場合は、[&#x200B; データストリームの設定 &#x200B;](configure-datastream.md) のレッスンに移動し、手順に従って作成します
 
-   ![ データストリーム選択 ](assets/extension-luma-web-sdk-datastream-extension.png)
+   ![&#x200B; データストリーム選択 &#x200B;](assets/extension-luma-web-sdk-datastream-extension.png)
 
-拡張機能の各セクションについて詳しくは、[Adobe Experience Platform Web SDK拡張機能の設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
+拡張機能の各セクションについて詳しくは、[Adobe Experience Platform Web SDK拡張機能の設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。
 
 >[!NOTE]
 >
@@ -85,4 +85,4 @@ Platform Web SDKをインストールし、データストリームに関連付�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

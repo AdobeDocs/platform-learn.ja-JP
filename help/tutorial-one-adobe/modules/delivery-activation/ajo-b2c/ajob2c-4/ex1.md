@@ -132,7 +132,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc9.png)
 
-左側のメニューで、**フラグメント** に移動します。 [ 演習 3.1.2.1](./../ajob2c-1/ex2.md) で前に作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 [exercise 3.1.2.2](./../ajob2c-1/ex2.md) で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
+左側のメニューで、**フラグメント** に移動します。 [&#x200B; 演習 3.1.2.1](./../ajob2c-1/ex2.md) で前に作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 [exercise 3.1.2.2](./../ajob2c-1/ex2.md) で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -343,15 +343,15 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ## Adobe Experience Platform Data Collection Client プロパティを更新 3.4.1.5 るには
 
-[Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
+[Adobe Experience Platform Data Collection に移動し &#x200B;](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
 
 これは、以前に表示したAdobe Experience Platform データ収集プロパティページです。
 
-![ プロパティページ ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
+![&#x200B; プロパティページ &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
 **はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 `--aepUserLdap--` 検索 **[!UICONTROL ボックスで]** を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
-![ 検索ボックス ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
+![&#x200B; 検索ボックス &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
 **データ要素** に移動します。 データ要素 **XDM – 購入** を検索して開きます。
 
@@ -431,8 +431,8 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ## 次の手順
 
-[3.4.2 バッチベースのニュースレタージャーニーの設定を参照してください ](./ex2.md){target="_blank"}
+[3.4.2 バッチベースのニュースレタージャーニーの設定を参照してください &#x200B;](./ex2.md){target="_blank"}
 
 [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # AI アシスタントでExperience Platform アプリケーションを学ぶ
 
-AI アシスタントからAdobe Experience Platform アプリケーションについて説明します。 詳しくは、[AI アシスタントのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
+AI アシスタントからAdobe Experience Platform アプリケーションについて説明します。 詳しくは、[AI アシスタントのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441025/?learn=on&enablevpops&captions=jpn)

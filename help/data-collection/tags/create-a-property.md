@@ -16,7 +16,7 @@ ht-degree: 34%
 
 # タグプロパティの作成
 
-タグプロパティを作成して web サイト上のマーケティングタグを管理する方法を説明します。 詳しくは、[ プロパティ ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ja) ドキュメントを参照してください。
+タグプロパティを作成して web サイト上のマーケティングタグを管理する方法を説明します。 詳しくは、[&#x200B; プロパティ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428597/?learn=on&enablevpops&captions=jpn)
 

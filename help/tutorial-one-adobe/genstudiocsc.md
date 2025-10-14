@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 概要 – コンテンツサプライチェーン向けGenStudioのテクニカルイネーブルメント
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 - Adobe Experience ManagerCloud ServiceAssets
 - Adobe Journey Optimizer
 
-受講する Tech Labs は、1 つのAdobeの幅広いチュートリアルの一部であり、Adobe Creative CloudとAdobe Experience Cloudの幅広いソリューションについてさらに詳しく学ぶことができます。 利用可能な機能について知りたい場合は、こちらをご覧ください。[1 つのAdobe チュートリアルの概要 ](./overview.md)
+受講する Tech Labs は、1 つのAdobeの幅広いチュートリアルの一部であり、Adobe Creative CloudとAdobe Experience Cloudの幅広いソリューションについてさらに詳しく学ぶことができます。 利用可能な機能について知りたい場合は、こちらをご覧ください。[1 つのAdobe チュートリアルの概要 &#x200B;](./overview.md)
 
 ## コンテンツサプライチェーン向けGenStudioテクニカルラボ
 
@@ -40,11 +40,11 @@ ht-degree: 1%
 
 ### ワークフローと計画
 
-[Adobe Workfront計画 ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+[Adobe Workfront計画 &#x200B;](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
 
 ここでは、Adobe Workfront Planning を使用して、新しいワークスペースの作成、レコードタイプの定義、レコードの管理、新しいリクエストフォームの作成および AI アシスタントの使用を行います。
 
-[Adobe Workfront Workflow を使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[Adobe Workfront Workflow を使用したワークフロー管理 &#x200B;](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 このモジュールでは、Adobe Workfrontを設定および使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサルエディター、Photoshopなどとの統合を使用します。
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 この基本モジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
 
-[Frame.io でワークフローを効率化 ](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+[Frame.io でワークフローを効率化 &#x200B;](./modules/creation-production/module1.5/frameio.md){target="_blank"}
 
 このモジュールでは、Adobe Frame.io をAdobe Premiere Proと組み合わせて使用し、画像やビデオの共同作業やレビューを行います。
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 このモジュールでは、Adobe Content Analyticsを実装して使用する方法を説明します。
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

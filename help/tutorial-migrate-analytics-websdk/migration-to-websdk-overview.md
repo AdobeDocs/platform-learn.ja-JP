@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # タグを使用したAdobe Analyticsの Web SDKへの移行
 
-Experience Platformタグ（旧称 Launch）の Analytics 拡張機能を使用してAdobe Analytics実装を Web SDKに移行する手順を説明します。タグでも Web SDK拡張機能を使用します。 タグでAdobe Analytics拡張機能を使用すると、バックグラウンドで「AppMeasurement.js」コードが使用されます。 そのため、これはAppMeasurementを Web SDKに移行するチュートリアルと考えることができますが、このチュートリアルは完全に Tags を対象としており、JavaScript実装との間の移行には対応していません（タグ UI 内で使用されるJavaScript コードを除く）。 JavaScript実装の移行については、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) を参照してください。
+Experience Platformタグ（旧称 Launch）の Analytics 拡張機能を使用してAdobe Analytics実装を Web SDKに移行する手順を説明します。タグでも Web SDK拡張機能を使用します。 タグでAdobe Analytics拡張機能を使用すると、バックグラウンドで「AppMeasurement.js」コードが使用されます。 そのため、これはAppMeasurementを Web SDKに移行するチュートリアルと考えることができますが、このチュートリアルは完全に Tags を対象としており、JavaScript実装との間の移行には対応していません（タグ UI 内で使用されるJavaScript コードを除く）。 JavaScript実装の移行については、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) を参照してください。
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Web SDKがどのように役立つかについては、Adobe Analyticsの担当�
 手順を実行する際は、次の点を理解することが重要です。
 
 1. まず、これらのすべての手順が必要な場合とそうでない場合があります。 例えば、カスタムコードの移行に関するレッスンがあります。 カスタムコード（プラグインの使用を含む）を使用しないタグ実装がある場合、このレッスンは必要ありません。 ほとんどのユーザーが必要とするレッスンを取り入れようとしたので、少なくともレッスンを読んで、移行中にサイトを調整する必要があるかどうかを確認します。
-1. また、すべてのユーザーが使用しているユースケースの 100% をカバーする移行チュートリアルを作成することはできません。 前の項目で述べたように、ほとんどの人が必要とするレッスンを含めようとしました。それは主なユースケースのほとんどをカバーします。 ただし、このチュートリアルで扱わないユースケースも間違いなくあります。 この場合は、含まれているレッスンで、ユースケースに合わせて移行する方法の良いアイデアが得られるかどうかを確認してください。 また、[Experience League コミュニティの同業者にデータ収集を依頼することもでき ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=ja) す。
+1. また、すべてのユーザーが使用しているユースケースの 100% をカバーする移行チュートリアルを作成することはできません。 前の項目で述べたように、ほとんどの人が必要とするレッスンを含めようとしました。それは主なユースケースのほとんどをカバーします。 ただし、このチュートリアルで扱わないユースケースも間違いなくあります。 この場合は、含まれているレッスンで、ユースケースに合わせて移行する方法の良いアイデアが得られるかどうかを確認してください。 また、[Experience League コミュニティの同業者にデータ収集を依頼することもでき &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=ja) す。
 
 移行プロセスには、次の主な手順が含まれます。
 
@@ -81,5 +81,5 @@ Web SDKがどのように役立つかについては、Adobe Analyticsの担当�
 
 >[!NOTE]
 >
->アドビは、Analytics を web SDKに移行する際にお客様が成功できるよう、取り組みを進めています。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=ja#M604){target="_blank"} に投稿してお知らせください。
+>アドビは、Analytics を web SDKに移行する際にお客様が成功できるよう、取り組みを進めています。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=ja#M604){target="_blank"} に投稿してお知らせください。
 

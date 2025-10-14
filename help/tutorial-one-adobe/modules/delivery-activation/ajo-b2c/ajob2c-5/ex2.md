@@ -15,7 +15,7 @@ ht-degree: 9%
 
 [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
 
-![ 翻訳 ](./images/ajolp1.png)
+![&#x200B; 翻訳 &#x200B;](./images/ajolp1.png)
 
 Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。
 
@@ -23,7 +23,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 >[!NOTE]
 >
->演習 [ 演習 3.1.2.1](./../ajob2c-1/ex2.md) および [ 演習 3.1.2.2](./../ajob2c-1/ex2.md) の一部として既にヘッダーとフッターのフラグメントを作成している場合は、演習 3.5.2.3 のファイバーの作成キャンペーンに進んでください。 ヘッダーフラグメントとフッターフラグメントを再度作成しないでください。
+>演習 [&#x200B; 演習 3.1.2.1](./../ajob2c-1/ex2.md) および [&#x200B; 演習 3.1.2.2](./../ajob2c-1/ex2.md) の一部として既にヘッダーとフッターのフラグメントを作成している場合は、演習 3.5.2.3 のファイバーの作成キャンペーンに進んでください。 ヘッダーフラグメントとフッターフラグメントを再度作成しないでください。
 
 ## 3.5.2.1 ヘッダーフラグメントを作成する
 
@@ -51,7 +51,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 >[!NOTE]
 >
->AEM Assetsライブラリに Citi Signal 画像が表示されない場合は、[ こちら ](./../../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
+>AEM Assetsライブラリに Citi Signal 画像が表示されない場合は、[&#x200B; こちら &#x200B;](./../../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -266,7 +266,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-**オーディエンス** については、[1.3.3 フェデレーション構成の作成 ](./../../datacollection/dc1.3/ex3.md) で作成したオーディエンス（「`--aepUserLdap-- - CitiSignal Eligible for Fiber`」という名前）を選択します。 「**保存**」をクリックします。
+**オーディエンス** については、[1.3.3 フェデレーション構成の作成 &#x200B;](./../../datacollection/dc1.3/ex3.md) で作成したオーディエンス（「`--aepUserLdap-- - CitiSignal Eligible for Fiber`」という名前）を選択します。 「**保存**」をクリックします。
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -362,8 +362,8 @@ Stay connected.
 
 ## 次の手順
 
-[3.5.3 メールへの言語の追加 ](./ex3.md)
+[3.5.3 メールへの言語の追加 &#x200B;](./ex3.md)
 
-[Adobe Journey Optimizer：翻訳サービス ](./ajotranslationsvcs.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：翻訳サービス &#x200B;](./ajotranslationsvcs.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -369,8 +369,8 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal-a
 
 ![AEMCS](./images/aemcssetup50.png)
 
-次の手順：[ カスタムブロックの開発 ](./ex3.md){target="_blank"}
+次の手順：[&#x200B; カスタムブロックの開発 &#x200B;](./ex3.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

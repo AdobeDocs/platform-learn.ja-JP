@@ -28,11 +28,11 @@ ht-degree: 0%
 
 この節で最初に取り上げるコードは、「変数を設定 **アクションを含むすべてのAdobe Analyticsアクションの「カスタムコード」ウィンドウに表示されるコード** す。 つまり、ルールの 1 つを開き、「アクション」セクションを見下ろします。 「Adobe Analytics – 変数を設定」アクションがある場合は、クリックして開きます。
 
-![ 変数を設定コード ](assets/set-variables-action.jpg)
+![&#x200B; 変数を設定コード &#x200B;](assets/set-variables-action.jpg)
 
 次に、右下にスクロールすると、カスタムコードウィンドウの「エディターを開く」ボタンが表示されます。 クリックして開きます。
 
-![ カスタムコードエディターを開く ](assets/open-aa-custom-code-editor.jpg)
+![&#x200B; カスタムコードエディターを開く &#x200B;](assets/open-aa-custom-code-editor.jpg)
 
 コードが含まれている場合は、Web SDKでコードを実行してAdobe Analyticsに送信できるように、移行する必要があります。
 ここでの主な考え方は、「s」オブジェクトを「コンテンツ」に変換するということです。__adobe.analytics」に、
@@ -67,20 +67,20 @@ const s = content.__adobe.analytics;
 1. そのコードウィンドウを閉じ、アクションを閉じる（キャンセルアウトする）ことができます。
 1. 「Web SDK – 変数を更新」アクションをクリックして開きます（まだ追加していない場合は追加します）。
 
-   ![ 変数の更新アクションを開く ](assets/open-sdk-update-variable.jpg)
+   ![&#x200B; 変数の更新アクションを開く &#x200B;](assets/open-sdk-update-variable.jpg)
 
 1. 右側のウィンドウの上部にある Analytics オブジェクトを選択します
 
-   ![Analytics オブジェクトの選択 ](assets/select-analytics-object.jpg)
+   ![Analytics オブジェクトの選択 &#x200B;](assets/select-analytics-object.jpg)
 
 1. 一番下までスクロールし、カスタムコード ウィンドウを開きます
 
-   ![sdk カスタムコードウィンドウを開きます ](assets/open-sdk-custom-code.jpg)。
+   ![sdk カスタムコードウィンドウを開きます &#x200B;](assets/open-sdk-custom-code.jpg)。
 
 1. Analytics カスタムコードウィンドウから取り込んだコードを貼り付けます。
 1. 次に、以下の例のように、新しいコード行を既存のコードの中央に配置して、s オブジェクトの最初のメンションの上になるようにします。
 
-![ 新規 s コード ](assets/new-s-code.jpg)
+![&#x200B; 新規 s コード &#x200B;](assets/new-s-code.jpg)
 
 これで、「カスタムコード」ウィンドウでコードを保存して、「変数を更新」アクションの変更を維持できます。 また、ルールを保存して、作業ライブラリで新しい変更を公開する必要もあります。
 
@@ -92,12 +92,12 @@ Experience Platformタグ（旧称「Launch」）の Analytics 拡張機能を�
 1. ページ上部の「**インストール済み**」タブを選択し、Adobe Analytics拡張機能を選択します。
 1. 次に、ページの右側で「**設定**」をクリックします
 
-   ![analytics 拡張機能の設定 ](assets/configure-analytics-extension.jpg)
+   ![analytics 拡張機能の設定 &#x200B;](assets/configure-analytics-extension.jpg)
 
 1. 「**カスタムコードを使用したトラッカーの設定**」セクションを展開します
 1. クリックして **エディターを開く**
 
-   ![ メインエディターを開く ](assets/aa-extension-custom-code-window.jpg)
+   ![&#x200B; メインエディターを開く &#x200B;](assets/aa-extension-custom-code-window.jpg)
 
 この時点で、そこに含まれているコードを確認できます。JavaScriptの「プラグイン」を使用する場合があります。つまり、必要なデータを取得し、カスタムディメンションに割り当てるのに役立つコードスニペットなどです。
 
@@ -114,7 +114,7 @@ Experience Platformタグ（旧称「Launch」）の Analytics 拡張機能を�
 1. プロパティに web SDK拡張機能が既に追加されている場合は、「**拡張機能**」に移動し、「**インストール済み**」タブを選択します
 1. **Adobe Experience Platform Web SDK拡張機能** を選択し、右側のパネルで **設定** をクリックして開きます。
 
-   ![Web SDK拡張機能の設定 ](assets/configure-websdk-extension.jpg)
+   ![Web SDK拡張機能の設定 &#x200B;](assets/configure-websdk-extension.jpg)
 
 1. **データ収集** セクションまでスクロールし、クリックして **onBeforeEventSend** のコードウィンドウを開きます。
 
@@ -131,7 +131,7 @@ Experience Platformタグ（旧称「Launch」）の Analytics 拡張機能を�
 _&#x200B;**コード変更 1:**&#x200B;_
 Web SDK拡張機能のコードウィンドウに「プラグイン」コードを貼り付けた後（または選択した前 **、コードから「doPlugin** 行を「削除」します。 これらは appMeasurement.js の一部であり、web SDK コードではないので、必要なく、エラーの原因になります。
 
-![doPlugins コード行を削除 ](assets/remove-doplugins.jpg)
+![doPlugins コード行を削除 &#x200B;](assets/remove-doplugins.jpg)
 
 _&#x200B;**コード変更 2:**&#x200B;_
 もう 1 つの変更は、「s」オブジェクトが定義されるようにコードを追加することです。これは、ルールアクションのコードに関して上記で説明したものと非常に似ています。 この場合は、少し異なる方法でコードを定義し、ルールアクションで既に定義されている「data」ノードを追加する必要がありますが、ここでは追加しません。
@@ -146,14 +146,14 @@ const s = content.data.__adobe.analytics;
 _&#x200B;**両方のコードを変更した場合：**&#x200B;_
 以下は上記のコードですが、両方の変更について説明しました。
 
-![ 更新されたコード ](assets/update-code.jpg)
+![&#x200B; 更新されたコード &#x200B;](assets/update-code.jpg)
 
 ### メイン拡張機能コードを Web SDKに移行する手順
 
 前述のように、新しい Common Web SDK Plugins 拡張機能を使用する方法と、Analytics 拡張機能の設定から Web SDK拡張機能の設定にコードをコピーして貼り付ける方法の 2 つをお勧めします。 これを念頭に置き、コードをクリーンアップするためのページの上部にある重要な注意事項とともに、大まかには次の手順を推奨します。
 
 1. Analytics 拡張機能の設定コードウィンドウからすべてのコードをコピーし、web SDK拡張機能の設定の onBeforeEventSend ウィンドウに貼り付けます（削除または更新が必要なコードはコピーされる場合がありますが、新しいウィンドウのコードを少し見直します）。
-1. Web SDK拡張機能でコードを実行し、「Common Web SDK Plugins **拡張機能で定義されているプラグインの呼び出しや関数定義を探し** す。 プラグインの一覧は、プラグイン拡張機能をインストールした後、Web SDKのデータ要素定義ウィンドウに表示されます。 また、[ その拡張機能のドキュメント ](https://exchange.adobe.com/apps/ec/108520) でも確認できます。
+1. Web SDK拡張機能でコードを実行し、「Common Web SDK Plugins **拡張機能で定義されているプラグインの呼び出しや関数定義を探し** す。 プラグインの一覧は、プラグイン拡張機能をインストールした後、Web SDKのデータ要素定義ウィンドウに表示されます。 また、[&#x200B; その拡張機能のドキュメント &#x200B;](https://exchange.adobe.com/apps/ec/108520) でも確認できます。
 1. 新しい Web SDK plugins 拡張機能で見つかった各プラグインについて、拡張機能とコードからの呼び出しを削除し、次に、データ要素を作成して適切なルールでそのデータ要素を呼び出し、変数を設定するなど、削除に対応してください。
 1. 次に、コードを参照して、appMeasurement.js ファイルで定義された関数への呼び出しがあるかどうかを確認します。 上記の **コード変更 1** はその例であり、まだ削除していない場合は、この時点で doPlugins コードの削除を行うことができます。 他の例では、コード内のどこにも定義されていない関数を呼び出した場合に、これが最も顕著になります。 また、AdobeカスタマーサポートやExperience Leagueコミュニティの同業者に確認して、そのコードにこれが当てはまることを確認することもできます。
 1. 次に、コードをパススルーして、分析のニーズに適用されなくなった古いコードを更新または削除します（このページの上部で推奨されています）。

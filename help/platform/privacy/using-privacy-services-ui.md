@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Privacy Service インターフェイスの使用
 
-ダッシュボードでプライバシーリクエストを作成する方法と、Privacy Serviceでそのステータスを監視およびレビューする方法について説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
+ダッシュボードでプライバシーリクエストを作成する方法と、Privacy Serviceでそのステータスを監視およびレビューする方法について説明します。 詳しくは、[&#x200B; プライバシーサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336079?learn=on&enablevpops)

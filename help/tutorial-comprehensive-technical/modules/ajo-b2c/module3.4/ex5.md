@@ -15,7 +15,7 @@ ht-degree: 0%
 
 これで、この演習は完了です。
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 3.4 に戻る](./journeyoptimizer.md)
 

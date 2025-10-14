@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Adobe社員の方は、こちらの説明に従って [PostBuster](./../../../postbuster.md) を使用してください。
 
-[ このOffer decisioning用Postman コレクション ](./../../../assets/postman/postman_offer-decisioning.zip) をデスクトップにダウンロードして解凍します。 すると、次のようになります。
+[&#x200B; このOffer decisioning用Postman コレクション &#x200B;](./../../../assets/postman/postman_offer-decisioning.zip) をデスクトップにダウンロードして解凍します。 すると、次のようになります。
 
 ![OD API](./images/unzip.png)
 
@@ -27,17 +27,17 @@ ht-degree: 0%
 
 - `_AJO- Decisioning Service.postman_collection.json`
 
-[ 演習 2.1.3 - Adobe I/Oに対するPostman認証 ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) では、Postmanをインストールしました。 この演習では、Postmanを再度使用する必要があります。
+[&#x200B; 演習 2.1.3 - Adobe I/Oに対するPostman認証 &#x200B;](./../../../modules/rtcdp-b2c/module2.1/ex3.md) では、Postmanをインストールしました。 この演習では、Postmanを再度使用する必要があります。
 
 Postmanを開き、ファイル `_AJO- Decisioning Service.postman_collection.json` を読み込みます。 このコレクションをPostmanで使用できるようになります。
 
-![Adobe I/Oの新規統合 ](./images/postmanui.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/postmanui.png)
 
 これで、API を使用してPostmanとの対話を開始するためにAdobe Experience Platformで必要なすべてが揃いました。
 
 以下の API を使用する前に、演習 2.1.3 で設定したコレクション **Adobe IO - OAuth** を使用して再認証してください。
 
-![Adobe I/Oの新規統合 ](./images/postmanui1.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/postmanui1.png)
 
 
 ### 3.3.6.2 顧客プロファイルのオファーの取得
@@ -73,7 +73,7 @@ Postmanを開き、ファイル `_AJO- Decisioning Service.postman_collection.js
 
 これで、この演習が完了しました。
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 3.3 に戻る](./offer-decisioning.md)
 

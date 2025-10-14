@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 順次オーディエンスの作成
 
-このビデオでは、一定時間内に特定の順序でアクションを実行したオーディエンスを作成するために、オーディエンスのタイムラインにエクスペリエンスイベントを追加する方法を説明します。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+このビデオでは、一定時間内に特定の順序でアクションを実行したオーディエンスを作成するために、オーディエンスのタイムラインにエクスペリエンスイベントを追加する方法を説明します。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

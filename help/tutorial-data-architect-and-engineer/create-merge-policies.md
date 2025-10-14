@@ -35,7 +35,7 @@ Adobe Experience Platformでは、複数のソースからのデータを統合�
 
 ## 必要な権限
 
-[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
@@ -53,11 +53,11 @@ Adobe Experience Platformでは、複数のソースからのデータを統合�
 1. 「**[!UICONTROL 結合ポリシー]**」タブに移動します。
 1. デフォルトの結合ポリシーは順序付きタイムスタンプです。 ロイヤルティデータの後に CRM データをアップロードしたので、`Danny` はプロファイルの名として獲得できました。
 
-![ 結合ポリシー画面 ](assets/mergepolicies-default.png)
+![&#x200B; 結合ポリシー画面 &#x200B;](assets/mergepolicies-default.png)
 
 プロファイルに対して複数のスキーマが有効な場合、基本クラスを共有するすべてのプロファイル対応レコードスキーマに対して、[!UICONTROL &#x200B; 結合スキーマ &#x200B;] が自動的に作成されます。 [!UICONTROL &#x200B; 和集合スキーマ &#x200B;] タブに移動すると **[!UICONTROL 和集合スキーマ]** を表示できます。
 
-![ 結合ポリシー画面 ](assets/mergepolicies-unionSchema.png)
+![&#x200B; 結合ポリシー画面 &#x200B;](assets/mergepolicies-unionSchema.png)
 
 ExperienceEvent クラスには結合スキーマがないことに注意してください。 ExperienceEvent データは時系列ベースなので、引き続きプロファイルに格納されますが、各イベントにはタイムスタンプと ID が含まれ、競合は問題になりません。
 
@@ -74,7 +74,7 @@ ExperienceEvent クラスには結合スキーマがないことに注意して�
 1. `Luma CRM Dataset` の上 `Luma Loyalty Dataset` ドラッグ&amp;ドロップして、手前にあることを確認します
 1. 「**[!UICONTROL 保存]** ボタンを選択します
    <!--do i need to explain Private Graph? Is that GA?-->
-   ![ 結合ポリシー ](assets/mergepolicies-newPolicy.png)
+   ![&#x200B; 結合ポリシー &#x200B;](assets/mergepolicies-newPolicy.png)
 
 ## 結合ポリシーの検証
 
@@ -87,7 +87,7 @@ ExperienceEvent クラスには結合スキーマがないことに注意して�
 1. 「**[!UICONTROL プロファイルを表示]**」ボタンを選択します
 1. `Daniel` が帰ってきた！
 
-![ 異なる結合ポリシーを持つプロファイルの表示 ](assets/mergepolicies-lookupProfileWithMergePolicy.png)
+![&#x200B; 異なる結合ポリシーを持つプロファイルの表示 &#x200B;](assets/mergepolicies-lookupProfileWithMergePolicy.png)
 
 ## 制限付きデータセットを使用した結合ポリシーの作成
 
@@ -101,7 +101,7 @@ ExperienceEvent クラスには結合スキーマがないことに注意して�
 1. `Luma Loyalty Dataset` のみを **[!UICONTROL 選択されたデータセット]** パネルにドラッグ&amp;ドロップします。
 1. 「**[!UICONTROL 保存]** ボタンを選択します
 
-![ ロイヤルティのみの結合ポリシー ](assets/mergepolicies-loyaltyOnly.png)
+![&#x200B; ロイヤルティのみの結合ポリシー &#x200B;](assets/mergepolicies-loyaltyOnly.png)
 
 ## 結合ポリシーの検証
 
@@ -113,7 +113,7 @@ ExperienceEvent クラスには結合スキーマがないことに注意して�
 1. **[!UICONTROL ID 値]** として、`b642b4217b34b1e8d3bd915fc65c4452` を使用します
 1. 「**[!UICONTROL プロファイルを表示]**」ボタンを選択します
 1. プロファイルが見つからないことを確認します。
-   ![ ロイヤルティのみ。CRM ID はルックアップされません。](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
+   ![&#x200B; ロイヤルティのみ。CRM ID はルックアップされません。](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
 
 CRM ID は `Luma Loyalty Dataset` の ID フィールドですが、プロファイルの検索に使用できるのはプライマリ ID のみです。 次に、プライマリ ID を使用してプロファイルを検索します。`Luma Loyalty Id`」
 
@@ -123,16 +123,16 @@ CRM ID は `Luma Loyalty Dataset` の ID フィールドですが、プロファ
 1. プロファイル ID を選択してプロファイルを開きます
 1. 「**[!UICONTROL 属性]** タブに移動します。
 1. CRM データセットから、携帯電話番号やメールアドレスなどの他のプロファイルの詳細は、のみ使用できるので、使用できません
-   ![CRM データは、ロイヤルティのみのポリシーでは表示されません ](assets/mergepolicies-loyaltyOnly-attributes.png)
+   ![CRM データは、ロイヤルティのみのポリシーでは表示されません &#x200B;](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. **[!UICONTROL イベント]** タブに移動します
 1. ExperienceEvent データは、結合ポリシーデータセットに明示的に含まれていなくても使用可能です。
-   ![ イベントはロイヤルティのみのポリシーで表示されます ](assets/mergepolicies-loyaltyOnly-events.png)
+   ![&#x200B; イベントはロイヤルティのみのポリシーで表示されます &#x200B;](assets/mergepolicies-loyaltyOnly-events.png)
 
 ## 結合ポリシーの詳細
 
 プロファイル検索で、使用していた結合ポリシーを `Default Timebased` に戻し、「**[!UICONTROL プロファイルを表示]**」ボタンを選択します。 ダニーが戻ってきた！
 
-![ 異なる結合ポリシーを持つプロファイルの表示 ](assets/mergepolicies-backToDanny.png)
+![&#x200B; 異なる結合ポリシーを持つプロファイルの表示 &#x200B;](assets/mergepolicies-backToDanny.png)
 
 ここで何が起こっているのですか。 さて、プロファイルの結合は 1 回限りではありません。 リアルタイム顧客プロファイルは、使用する結合ポリシーを含む様々な要因に基づいて、その場で組み立てられます。 顧客の表示に応じて、異なるコンテキストで使用する複数の結合ポリシーを作成できます。
 
@@ -140,7 +140,7 @@ CRM ID は `Luma Loyalty Dataset` の ID フィールドですが、プロファ
 
 ## その他のリソース
 
-* [ 結合ポリシードキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ja)
-* [ 結合ポリシー API （リアルタイム顧客プロファイル API の一部）リファレンス ](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
+* [&#x200B; 結合ポリシードキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ja)
+* [&#x200B; 結合ポリシー API （リアルタイム顧客プロファイル API の一部）リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
-次に、[ データガバナンスフレームワーク ](apply-data-governance-framework.md) に進みます。
+次に、[&#x200B; データガバナンスフレームワーク &#x200B;](apply-data-governance-framework.md) に進みます。

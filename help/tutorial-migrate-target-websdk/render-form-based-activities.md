@@ -100,7 +100,7 @@ Platform Web SDK は、`applyPropositions` コマンドで `actionType` を指�
 | `replaceHtml` | コンテナを削除してオファーに置き換えます | × | ○ |
 | `appendHtml` | 指定されたセレクターの後にオファーを追加します | × | ○ |
 
-追加のレンダリングオプションと例については、Platform Web SDK を使用したコンテンツのレンダリングに関する [ 専用のドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja) を参照してください。
+追加のレンダリングオプションと例については、Platform Web SDK を使用したコンテンツのレンダリングに関する [&#x200B; 専用のドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja) を参照してください。
 
 ## 実装の例
 
@@ -197,8 +197,8 @@ Platform Web SDK は、`applyPropositions` コマンドで `actionType` を指�
 </html>
 ```
 
-次に、[Platform Web SDK を使用して Target パラメーターを渡す ](send-parameters.md) 方法について説明します。
+次に、[Platform Web SDK を使用して Target パラメーターを渡す &#x200B;](send-parameters.md) 方法について説明します。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

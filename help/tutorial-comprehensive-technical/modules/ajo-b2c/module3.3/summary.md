@@ -22,8 +22,8 @@ ht-degree: 1%
 
 ## これを確認する
 
-- 製品ドキュメント：[Offer decisioning用語 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=ja)
-- 製品ドキュメント：[Web SDK -Offer decisioningの概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=ja)
+- 製品ドキュメント：[Offer decisioning用語 &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=ja)
+- 製品ドキュメント：[Web SDK -Offer decisioningの概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=ja)
 
 [モジュール 3.3 に戻る](./offer-decisioning.md)
 

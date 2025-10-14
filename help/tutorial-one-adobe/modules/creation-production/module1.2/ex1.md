@@ -240,8 +240,8 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ## 次の手順
 
-[Workfront Fusion 内でのAdobe API の使用 ](./ex2.md){target="_blank"} に移動します。
+[Workfront Fusion 内でのAdobe API の使用 &#x200B;](./ex2.md){target="_blank"} に移動します。
 
-[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

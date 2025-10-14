@@ -25,7 +25,7 @@ Adobe Experience Platform Assuranceは、データの収集方法やエクスペ
 
 ## 前提条件
 
-データ収集タグと [Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} に精通し、チュートリアルの前のレッスンを完了しました。
+データ収集タグと [Luma デモサイト &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} に精通し、チュートリアルの前のレッスンを完了しました。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
@@ -47,32 +47,32 @@ Adobe Experience Platform DebuggerでEdge Trace を有効にするたびに、�
 
 デバッガーのレッスンで、この方法を確認します。
 
-1. [Luma デモサイト ](https://luma.enablementadobe.com/content/luma/us/en.html) に移動し、デバッガーを使用して [ サイトのタグプロパティを独自の開発プロパティに切り替える ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. [Luma デモサイト &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) に移動し、デバッガーを使用して [&#x200B; サイトのタグプロパティを独自の開発プロパティに切り替える &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. **[!UICONTROL Experience Platform Debugger の左側のナビゲーションで]** 「**[!UICONTROL ログ]**」を選択します
 1. 「**[!UICONTROL Edge]**」タブを選択し、「**[!UICONTROL 接続]**」を選択します
 
    ![Connect Edge Trace](assets/analytics-debugger-edgeTrace.png)
 1. Edge Trace を有効にすると、上部に送信リンクアイコンが表示されます。 アイコンを選択して、Assuranceを開きます。
 
-   ![Assurance セッションの開始 ](assets/validate-debugger-start-assurnance.png)
+   ![Assurance セッションの開始 &#x200B;](assets/validate-debugger-start-assurnance.png)
 
 1. Assurance インターフェイスが表示された新しいブラウザータブが開きます。
 
 ### Assurance インターフェイスからのAssurance セッションの開始
 
-1. [ データ収集インターフェイス ](https://experience.adobe.com/#/data-collection/home){target="_blank"} を開きます。
+1. [&#x200B; データ収集インターフェイス &#x200B;](https://experience.adobe.com/#/data-collection/home){target="_blank"} を開きます。
 1. 左側のナビゲーションの「Assurance」を選択します
 1. Create Session を選択します。
-   ![Assurance セッションの作成 ](assets/assurance-create-session.png)
+   ![Assurance セッションの作成 &#x200B;](assets/assurance-create-session.png)
 1. 開始を選択
 1. セッションに名前を付けます（例：`Luma Web SDK validation`）。
 1. **[!UICONTROL ベース URL]** として、`https://luma.enablementadobe.com/` と入力します
-   ![Assurance セッションに名前を付ける ](assets/assurance-name-session.png)
+   ![Assurance セッションに名前を付ける &#x200B;](assets/assurance-name-session.png)
 1. 次の画面で、「**[!UICONTROL リンクをコピー]**」を選択します
 1. アイコンを選択して、クリップボードにリンクをコピーします
 1. URL をブラウザーに貼り付けます。これにより、特別な URL パラメーター `adb_validation_sessionid` を持つ Luma web サイトが開き、セッションが開始されます
 1. Assurance インターフェイスには、セッションに正常に接続したことを示すメッセージが表示され、Assurance インターフェイスにキャプチャされたイベントが表示されます。
-   ![Assurance セッションが接続されました ](assets/assurance-success.png)
+   ![Assurance セッションが接続されました &#x200B;](assets/assurance-success.png)
 
 ## Web SDK実装の現在の状態の検証
 
@@ -82,7 +82,7 @@ Adobe Experience Platform DebuggerでEdge Trace を有効にするたびに、�
 1. メニューが右側に表示されます。 「`+`」の横にある `[!UICONTROL ACPExtensionEventData]` 記号を選択します
 1. `[!UICONTROL payload > 0 > payload > 0 > namespace]` を選択してドリルダウンします。 最後の `0` の下に表示される ID は、`ECID` に対応しています。 一致する `namespace` の下に表示される値によって `ECID` わかります
 
-   ![Assuranceによる ECID の検証 ](assets/validate-assurance-ecid.png)
+   ![Assuranceによる ECID の検証 &#x200B;](assets/validate-assurance-ecid.png)
 
    >[!CAUTION]
    >
@@ -94,4 +94,4 @@ XDM オブジェクトをページで実行し、データ収集の検証方法�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

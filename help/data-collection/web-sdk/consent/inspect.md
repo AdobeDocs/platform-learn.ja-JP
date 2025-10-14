@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 同意シグナルの検査と検証
 
-Adobe Experience Platformで同意設定がデータに適切に適用されていることを検証する方法を説明します。 [ 実装のテスト ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=ja#test-implementation) について詳しくは、同意に関するドキュメントを参照してください。
+Adobe Experience Platformで同意設定がデータに適切に適用されていることを検証する方法を説明します。 [&#x200B; 実装のテスト &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=ja#test-implementation) について詳しくは、同意に関するドキュメントを参照してください。
 
 >[!NOTE]
 >

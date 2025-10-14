@@ -66,4 +66,4 @@ ht-degree: 1%
 
 オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
-これで、federated audience が作成されたので、[Experience Platformの S3 の宛先にマッピング ](map-federated-audience-to-s3.md) します。
+これで、federated audience が作成されたので、[Experience Platformの S3 の宛先にマッピング &#x200B;](map-federated-audience-to-s3.md) します。

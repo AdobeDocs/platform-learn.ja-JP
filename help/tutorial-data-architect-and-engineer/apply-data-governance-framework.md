@@ -52,7 +52,7 @@ Luma は、ロイヤルティデータがサードパーティと共有されな
 
 すぐに使用できるラベルが多数あり、「[!UICONTROL &#x200B; ラベルを作成 &#x200B;] ボタンを使用して独自のラベルを作成できます。 主なタイプは 3 つあります。[!UICONTROL &#x200B; 契約ラベル &#x200B;]、[!UICONTROL ID ラベル &#x200B;]、および [!UICONTROL &#x200B; 機密ラベル &#x200B;] で、データが制限される一般的な理由に対応しています。 各ラベルには、[!UICONTROL &#x200B; わかりやすい名前 &#x200B;] と、タイプと数値の略語である短い [!UICONTROL &#x200B; 名前 &#x200B;] が含まれています。 例えば、[!DNL C1] のラベルは「サードパーティの書き出しなし」のためのものであり、これはロイヤルティポリシーに必要なものです。
 
-![ データガバナンスラベル ](assets/governance-policies.png)
+![&#x200B; データガバナンスラベル &#x200B;](assets/governance-policies.png)
 
 次に、使用を制限するデータにラベルを付けます。
 
@@ -91,8 +91,8 @@ Luma は、ロイヤルティデータがサードパーティと共有されな
 
 ## その他のリソース
 
-* [ データガバナンスに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)
-* [ データセットサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
-* [ ガバナンスポリシーサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/policy-service/)
+* [&#x200B; データガバナンスに関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)
+* [&#x200B; データセットサービス API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
+* [&#x200B; ガバナンスポリシーサービス API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
-次に、[ クエリサービス ](run-queries.md) に進みます。
+次に、[&#x200B; クエリサービス &#x200B;](run-queries.md) に進みます。

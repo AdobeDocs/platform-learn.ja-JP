@@ -28,7 +28,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Experience LeagueドキュメントのChrome拡張機能のインストール [ で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
+>Experience LeagueドキュメントのChrome拡張機能のインストール [&#x200B; で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## 演習
 
@@ -44,7 +44,7 @@ ht-degree: 9%
 
 モデルのトレーニングとスコアリングが完了すると、スコアが Platform に書き戻されます。 セグメントの定義、カスタムダッシュボードの作成など、予測に基づいてどのようなアクションを実行するかを決定できます。
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

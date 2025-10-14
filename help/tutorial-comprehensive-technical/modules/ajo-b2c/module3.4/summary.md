@@ -36,8 +36,8 @@ ht-degree: 0%
 
 ## これを確認する
 
-- テクニカルブログ：[Adobe Experience Platform Mobile SDK はiOSの Swift に移行しました ](https://medium.com/adobetech/adobe-experience-platform-mobile-sdks-move-to-swift-for-ios-6aa67b67b4d4)
-- Tech Blog: [Adobe Experience Platform Journey Orchestrationでの外部データプラットフォームの活用 ](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
+- テクニカルブログ：[Adobe Experience Platform Mobile SDK はiOSの Swift に移行しました &#x200B;](https://medium.com/adobetech/adobe-experience-platform-mobile-sdks-move-to-swift-for-ios-6aa67b67b4d4)
+- Tech Blog: [Adobe Experience Platform Journey Orchestrationでの外部データプラットフォームの活用 &#x200B;](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
 
 [モジュール 3.4 に戻る](./journeyoptimizer.md)
 

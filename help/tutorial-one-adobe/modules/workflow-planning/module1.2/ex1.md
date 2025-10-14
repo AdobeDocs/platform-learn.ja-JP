@@ -45,7 +45,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 クリックして **Workfront** を開きます。
 
-![Workfront計画 ](./../module1.1/images/wfpl1.png)
+![Workfront計画 &#x200B;](./../module1.1/images/wfpl1.png)
 
 その後、これが表示されます。
 
@@ -229,8 +229,8 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 ![WF](./images/wfbaem17.png)
 
-次の手順：Workfrontで [1.2.2 を校正する ](./ex2.md){target="_blank"}
+次の手順：Workfrontで [1.2.2 を校正する &#x200B;](./ex2.md){target="_blank"}
 
-[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

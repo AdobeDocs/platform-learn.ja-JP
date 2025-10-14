@@ -27,13 +27,13 @@ ht-degree: 0%
 1. いずれかのルール（デフォルトのページ読み込みルールなど）を開きます。
 1. このルールの移行作業を経て、おそらく 4 つ（またはそれ以上）のアクションが存在することになります。
 
-   ![4 つのアクションすべて ](assets/all-four-actions.jpg)
+   ![4 つのアクションすべて &#x200B;](assets/all-four-actions.jpg)
 
 1. 最初の 2 つには「Adobe Analytics」 ID があることがわかります。 これらは、削除するアクションです。
 1. 「Adobe Analytics – 変数を設定」アクションのように最初のアクションの上にマウスポインターを置くと、削除を許可する X が表示されます。 X をクリックして、アクションが消えることを確認します。 ルール内のすべてのAdobe Analytics アクション（この場合は「変数を設定」アクションと「ビーコンを送信」アクション）を削除します。
 1. Web SDKのアクションのみが残ります
 
-   ![Web SDKのアクションのみ ](assets/websdk-actions-only.jpg)
+   ![Web SDKのアクションのみ &#x200B;](assets/websdk-actions-only.jpg)
 
 1. ライブラリに保存
 1. ライブラリを構築してサイトをテストし、新しいエラーがなく、すべてが正しく機能していることを確認します
@@ -48,7 +48,7 @@ Adobe Analytics拡張機能への参照を削除したので、拡張機能と�
 1. Adobe Analytics拡張機能を選択します。
 1. 右側のパネルで、拡張機能を無効にするかを選択します（または、必要に応じて 3 つのドットをクリックしてアンインストールします）。
 
-   ![Analytics 拡張機能の無効化 ](assets/disable-analytics-extension.jpg)
+   ![Analytics 拡張機能の無効化 &#x200B;](assets/disable-analytics-extension.jpg)
 
 1. 不要になるので、Experience CloudID サービス拡張機能にも同じ操作を行います。 Web SDK拡張機能で ID が処理されるので、特別な拡張機能は必要ありません。
 1. Adobe Analytics拡張機能に関連付けられている他の拡張機能にも同じ操作を行いますが、必要な移行の変更を行った後でのみです。

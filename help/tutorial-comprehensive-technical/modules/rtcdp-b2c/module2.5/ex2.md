@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## データストリームの更新
 
-[ はじめに ](./../../gettingstarted/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
+[&#x200B; はじめに &#x200B;](./../../gettingstarted/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
 
 この演習では、**[!UICONTROL データ収集サーバープロパティ]** と連携するように **Datastream** を設定する必要があります。
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
 
-![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
+![&#x200B; 左側のナビゲーションで「Edge設定」アイコンをクリック &#x200B;](./images/edgeconfig1b.png)
 
 **[!UICONTROL Datastream]** を検索します。名前は `--aepUserLdap-- - Demo System Datastream` です。 **[!UICONTROL データストリーム]** をクリックして開きます。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 これで、データストリームが **[!DNL Event Forwarding property]** で動作する準備ができました。
 
-次の手順：[2.5.3 カスタム Webhook を作成して設定する ](./ex3.md)
+次の手順：[2.5.3 カスタム Webhook を作成して設定する &#x200B;](./ex3.md)
 
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 

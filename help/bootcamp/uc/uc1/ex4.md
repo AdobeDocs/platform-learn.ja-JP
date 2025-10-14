@@ -37,7 +37,7 @@ Adobe Targetは、Real-Time CDPから入手できます。 Adobe Target統合を
 
 ![AT](./images/atdest3.png)
 
-使用可能なオーディエンスのリストで、「[1.3 オーディエンスの作成 ](./ex3.md)」で作成したオーディエンス（「`yourLastName - Interest in Real-Time CDP`」という名前）を選択します。 次に、「**次へ**」をクリックします。
+使用可能なオーディエンスのリストで、「[1.3 オーディエンスの作成 &#x200B;](./ex3.md)」で作成したオーディエンス（「`yourLastName - Interest in Real-Time CDP`」という名前）を選択します。 次に、「**次へ**」をクリックします。
 
 ![AT](./images/atdest8.png)
 
@@ -182,7 +182,7 @@ Adobe Experience Platform オーディエンスは、このエクスペリエン
 
 ![RTCDP](./images/atform12a.png)
 
-次の手順：[1.5 対処：オーディエンスをFacebookに送信 ](./ex5.md)
+次の手順：[1.5 対処：オーディエンスをFacebookに送信 &#x200B;](./ex5.md)
 
 [ユーザーフロー 1 に戻る](./uc1.md)
 

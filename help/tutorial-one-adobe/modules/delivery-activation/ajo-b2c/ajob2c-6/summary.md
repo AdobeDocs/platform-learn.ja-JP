@@ -18,6 +18,6 @@ ht-degree: 6%
 
 ## 次の手順
 
-[Adobe Journey Optimizer：コンテンツ管理 ](./ajocontent.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：コンテンツ管理 &#x200B;](./ajocontent.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

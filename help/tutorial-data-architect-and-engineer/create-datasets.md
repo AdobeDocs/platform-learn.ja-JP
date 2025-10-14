@@ -30,7 +30,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 ## 必要な権限
 
-[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
@@ -49,12 +49,12 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 1. 次の画面で、「**スキーマからデータセットを作成**」を選択します
 1. 次の画面で、`Luma Loyalty Schema` を選択し、「**[!UICONTROL 次へ]** ボタンを選択します
-   ![ データセットの選択 ](assets/datasets-selectSchema.png)
+   ![&#x200B; データセットの選択 &#x200B;](assets/datasets-selectSchema.png)
 
 1. データセットに「`Luma Loyalty Dataset`」という名前を付け、「**[!UICONTROL 完了]**」ボタンを選択します
-   ![ データセットに名前を付ける ](assets/datasets-nameDataset.png)
+   ![&#x200B; データセットに名前を付ける &#x200B;](assets/datasets-nameDataset.png)
 1. データセットを保存すると、次のような画面が表示されます。
-   ![ 作成されたデータセット ](assets/datasets-created.png)
+   ![&#x200B; 作成されたデータセット &#x200B;](assets/datasets-created.png)
 
 これで作業は完了です。早いって言ったじゃん。 同じ手順を使用して、他のこれらのデータセットを作成します。
 
@@ -81,13 +81,13 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 1. `Luma CRM Schema` 項目の応答を探し、`$id` の値をコピーします
-   ![$id をコピーします ](assets/dataset-crm-getSchemaId.png)
+   ![$id をコピーします &#x200B;](assets/dataset-crm-getSchemaId.png)
 
 ### データセットの作成
 
 これで、データセットを作成できます。
 
-1. [ カタログサービス API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) を `Luma Tutorial Assets` フォルダーにダウンロードします。
+1. [&#x200B; カタログサービス API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) を `Luma Tutorial Assets` フォルダーにダウンロードします。
 1. コレクションの [!DNL Postman] への読み込み
 1. リクエスト **[!DNL Catalog Service API > Datasets > Create a new dataset.]** を選択
 1. 次をリクエストの **本文** として貼り付けます。***id 値を独自の値に置き換えます***。
@@ -123,12 +123,12 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 
 Platform ユーザーインターフェイスの **[!UICONTROL データセット]** 画面に戻ると、5 つのデータセットすべてが正常に作成されたことを確認できます。
-![5 つのデータセットが完了しました ](assets/datasets-allComplete.png)
+![5 つのデータセットが完了しました &#x200B;](assets/datasets-allComplete.png)
 
 
 ## その他のリソース
 
-* [ データセットドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja)
-* [ データセット API （カタログサービスの一部）リファレンス ](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
+* [&#x200B; データセットドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja)
+* [&#x200B; データセット API （カタログサービスの一部）リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
 
-これで、すべてのスキーマ、ID およびデータセットが用意されたので、[ リアルタイム顧客プロファイル用に有効にする ](enable-profiles.md) ことができます。
+これで、すべてのスキーマ、ID およびデータセットが用意されたので、[&#x200B; リアルタイム顧客プロファイル用に有効にする &#x200B;](enable-profiles.md) ことができます。

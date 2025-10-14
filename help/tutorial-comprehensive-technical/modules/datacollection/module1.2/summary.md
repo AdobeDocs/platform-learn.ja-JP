@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## これを確認する
 
-- テクニカルブログ：[Adobe Experience PlatformのPrivacy Serviceとその先 ](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
+- テクニカルブログ：[Adobe Experience PlatformのPrivacy Serviceとその先 &#x200B;](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
 
 [モジュール 1.2 に戻る](./data-ingestion.md)
 

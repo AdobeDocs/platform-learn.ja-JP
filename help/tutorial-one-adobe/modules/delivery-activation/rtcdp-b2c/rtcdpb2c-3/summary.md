@@ -25,11 +25,11 @@ Adobe Experience Platformで行動を起こすメリットを強調しましょ�
 
 ## これを確認する
 
-- テクニカルブログ：[Adobe Experience Platform内での大規模なストリーム処理 ](https://medium.com/adobetech/stream-processing-at-scale-within-adobe-experience-platform-909ed502da71)
-- テクニカルブログ：[Adobe Experience Platformで Developer Conference のエクスペリエンスを革新する ](https://medium.com/adobetech/innovating-developer-conference-with-adobe-experience-platform-c8c2d1fe8d88)
+- テクニカルブログ：[Adobe Experience Platform内での大規模なストリーム処理 &#x200B;](https://medium.com/adobetech/stream-processing-at-scale-within-adobe-experience-platform-909ed502da71)
+- テクニカルブログ：[Adobe Experience Platformで Developer Conference のエクスペリエンスを革新する &#x200B;](https://medium.com/adobetech/innovating-developer-conference-with-adobe-experience-platform-c8c2d1fe8d88)
 
 ## 次の手順
 
-[Real-time CDP - オーディエンスの作成とアクションの実行 ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
+[Real-time CDP - オーディエンスの作成とアクションの実行 &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

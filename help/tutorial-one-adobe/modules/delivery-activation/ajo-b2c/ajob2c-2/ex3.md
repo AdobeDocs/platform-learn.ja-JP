@@ -96,8 +96,8 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 次の手順
 
-[3.2.4 ジャーニーとメッセージの作成 ](./ex4.md){target="_blank"} に移動します。
+[3.2.4 ジャーニーとメッセージの作成 &#x200B;](./ex4.md){target="_blank"} に移動します。
 
-[Adobe Journey Optimizer：外部データソースとカスタムアクション ](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：外部データソースとカスタムアクション &#x200B;](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

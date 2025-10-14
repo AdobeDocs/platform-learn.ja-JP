@@ -22,15 +22,15 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
 
 [[!DNL Postman]](https://www.postman.com/) は、デベロッパーがAdobe Experience Platform API を素早く簡単に操作するのに役立つサードパーティアプリケーションです。
 
-[Adobe Developer Consoleの ](https://developer.adobe.com/console/home)**Postmanの詳細をエクスポート** 機能を使用すると、1 つのPostman環境ファイルで、Experience Platform API へのアクセスと操作に必要なアカウントの詳細を簡単にエクスポートでき、Adobe Developer ConsoleからPostmanに値をコピー&amp;ペーストする必要がなくなります。
+[Adobe Developer Consoleの &#x200B;](https://developer.adobe.com/console/home)**Postmanの詳細をエクスポート** 機能を使用すると、1 つのPostman環境ファイルで、Experience Platform API へのアクセスと操作に必要なアカウントの詳細を簡単にエクスポートでき、Adobe Developer ConsoleからPostmanに値をコピー&amp;ペーストする必要がなくなります。
 
 >[!IMPORTANT]
 >
->[Adobe Developer Console](https://developer.adobe.com/console/home) にアクセスするには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) で [ システム管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) または [ 開発者 ](https://adminconsole.adobe.com) である必要があります。
+>[Adobe Developer Console](https://developer.adobe.com/console/home) にアクセスするには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) で [&#x200B; システム管理者 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) または [&#x200B; 開発者 &#x200B;](https://adminconsole.adobe.com) である必要があります。
 >
 > システム管理者は、API 認証情報を作成した後、認証情報をExperience Platformのロールに関連付ける必要があります。
 >
->手順について詳しくは、[ 開発者の追加と API 資格情報への権限の付与チュートリアル ](../admin/add-developers.md) を参照してください。
+>手順について詳しくは、[&#x200B; 開発者の追加と API 資格情報への権限の付与チュートリアル &#x200B;](../admin/add-developers.md) を参照してください。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/31656/?learn=on&enablevpops&captions=jpn)

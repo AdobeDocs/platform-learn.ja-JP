@@ -15,7 +15,7 @@ ht-degree: 11%
 
 [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
 
-![ 翻訳 ](./images/ajolp1.png)
+![&#x200B; 翻訳 &#x200B;](./images/ajolp1.png)
 
 Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。
 
@@ -89,8 +89,8 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md) に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md) に移動します。
 
-[ モジュール 3.5](./ajotranslationsvcs.md){target="_blank"} に戻ります。
+[&#x200B; モジュール 3.5](./ajotranslationsvcs.md){target="_blank"} に戻ります。
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

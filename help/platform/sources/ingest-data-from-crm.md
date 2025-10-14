@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # CRM ソースコネクタを使用したデータの取り込み
 
-CRM ソースからAdobe Experience Platformにリアルタイム顧客プロファイルとデータレイクをシームレスかつ簡単に一括で取り込む方法を説明します。 製品ドキュメントについて詳しくは、Source コネクタの概要ページの [ 顧客関係管理（CRM） ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#access-control-for-sources-in-data-ingestion) を参照してください。
+CRM ソースからAdobe Experience Platformにリアルタイム顧客プロファイルとデータレイクをシームレスかつ簡単に一括で取り込む方法を説明します。 製品ドキュメントについて詳しくは、Source コネクタの概要ページの [&#x200B; 顧客関係管理（CRM） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#access-control-for-sources-in-data-ingestion) を参照してください。
 
 ## 標準ワークフロー
 
@@ -32,6 +32,6 @@ CRM ソースからAdobe Experience Platformにリアルタイム顧客プロフ
 >[!VIDEO](https://video.tv.adobe.com/v/3453324?learn=on&enablevpops&captions=jpn)
 
 詳しくは、次のドキュメントを参照してください。
-* [Salesforce接続ドキュメントの作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=ja)。
-* [UI のテンプレートを使用してソースデータフローを作成する ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=ja#)。
+* [Salesforce接続ドキュメントの作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=ja)。
+* [UI のテンプレートを使用してソースデータフローを作成する &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=ja#)。
 

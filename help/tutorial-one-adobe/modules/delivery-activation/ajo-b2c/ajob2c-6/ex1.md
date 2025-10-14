@@ -25,11 +25,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 左側のメニューで、**チャネル** に移動し、**チャネル設定** を選択します。 **チャネル設定を作成** をクリックします。
 
-![ コンテンツカード ](./images/contentcard1.png)
+![&#x200B; コンテンツカード &#x200B;](./images/contentcard1.png)
 
 名前 `--aepUserLdap--_Content_Cards_Web` を入力し、チャネル **コンテンツカード** を選択して、プラットフォーム **Web** を有効にします。
 
-![ コンテンツカード ](./images/contentcard2.png)
+![&#x200B; コンテンツカード &#x200B;](./images/contentcard2.png)
 
 下にスクロールし、「**単一ページ**」オプションが有効になっていることを確認します。
 
@@ -41,59 +41,59 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 フィールド **ページ上の場所** を `CitiSignalContentCardContainer` に設定します。
 
-![ コンテンツカード ](./images/contentcard4.png)
+![&#x200B; コンテンツカード &#x200B;](./images/contentcard4.png)
 
 上にスクロールして、「送信 **をクリックし** す。
 
-![ コンテンツカード ](./images/contentcard5.png)
+![&#x200B; コンテンツカード &#x200B;](./images/contentcard5.png)
 
 これで、チャネル設定を使用する準備が整いました。
 
-![ コンテンツカード ](./images/contentcard6.png)
+![&#x200B; コンテンツカード &#x200B;](./images/contentcard6.png)
 
 ## コンテンツカード用にスケジュール済みキャンペーンを設定で 3.6.1.2 ない
 
 左側のメニューで **キャンペーン** に移動し、「**キャンペーンを作成**」をクリックします。
 
-![ アプリ内 ](./images/contentcard7.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard7.png)
 
 **スケジュール済み – マーケティング** を選択し、「**作成**」をクリックします。
 
-![ アプリ内 ](./images/contentcard8.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard8.png)
 
 `--aepUserLdap-- - CitiSignal Fiber Max Content Cards` という名前を入力し、「**アクション**」をクリックします。
 
-![ アプリ内 ](./images/contentcard9.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard9.png)
 
 「**+アクションを追加**」をクリックし、「**コンテンツカード**」を選択します。
 
-![ アプリ内 ](./images/contentcard10.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard10.png)
 
 前の手順で作成したコンテンツカードチャネル設定（`--aepUserLdap--_Content_Cards_Web`）を選択します。
 
 次に、「**ルールを編集**」をクリックします。
 
-![ アプリ内 ](./images/contentcard11.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard11.png)
 
 **X** をクリックして、現在のルールを削除します。
 
-![ アプリ内 ](./images/contentcard11b.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard11b.png)
 
 「**+条件を追加**」をクリックします。
 
-![ アプリ内 ](./images/contentcard11c.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard11c.png)
 
 条件 **Platform にデータを送信** を選択します。 「**完了**」をクリックします。
 
-![ アプリ内 ](./images/contentcard11d.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard11d.png)
 
 この画像が表示されます。 「**コンテンツを編集**」をクリックします。
 
-![ アプリ内 ](./images/contentcard11e.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard11e.png)
 
 この画像が表示されます。
 
-![ アプリ内 ](./images/contentcard12.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard12.png)
 
 次の設定を行います。
 
@@ -107,15 +107,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 アイコンをクリックし、AEM Assetsからアセットを選択して URL を変更します。
 
-![ アプリ内 ](./images/contentcard13.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard13.png)
 
 folder **citignal-imaes に移動し** ファイル **`neon_rabbit_banner.jpg`** を選択します。 「**選択**」をクリックします。
 
-![ アプリ内 ](./images/contentcard14.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard14.png)
 
 これで完了です。 「**+追加ボタン**」をクリックします。
 
-![ アプリ内 ](./images/contentcard15.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard15.png)
 
 ボタンの次の設定を行います。
 
@@ -129,19 +129,19 @@ folder **citignal-imaes に移動し** ファイル **`neon_rabbit_banner.jpg`**
 
 **アクティブ化するレビュー** をクリックします。
 
-![ アプリ内 ](./images/contentcard16.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard16.png)
 
 **アクティブ化** をクリックします。
 
-![ アプリ内 ](./images/contentcard17.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard17.png)
 
 その後、キャンペーンがアクティブ化されます（数分かかる場合があります）。
 
-![ アプリ内 ](./images/contentcard18.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard18.png)
 
 数分後、キャンペーンはライブになります。
 
-![ アプリ内 ](./images/contentcard19.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard19.png)
 
 ## 3.6.1.3 DSN Web サイトの更新
 
@@ -149,41 +149,41 @@ Web サイトにコンテンツカードを表示するには、CitiSignal デ�
 
 [https://dsn.adobe.com/](https://dsn.adobe.com/) に移動します。 Web サイトで「**3 ドット**」をクリックし、「**編集**」をクリックします。
 
-![ アプリ内 ](./images/contentcard20.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard20.png)
 
 クリックしてページ **ホーム** を選択します。 「**コンテンツを編集**」をクリックします。
 
-![ アプリ内 ](./images/contentcard21.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard21.png)
 
 ヒーロー画像の上にマウスポインターを置き、「**+**」ボタンをクリックします。
 
-![ アプリ内 ](./images/contentcard22.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard22.png)
 
 **一般** に移動し、「**バナー**」を選択してから「**追加**」をクリックします。
 
-![ アプリ内 ](./images/contentcard23.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard23.png)
 
 新しく作成したバナーをクリックして選択します。 **スタイル** に移動し、「`CitiSignalContentCardContainer` カスタム CSS クラス **」フィールドに** と入力します。
 
-![ アプリ内 ](./images/contentcard24.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard24.png)
 
 **整列** に移動します。 フィールド **Alignment** を `left` に設定し、フィールド **Vertical Alignment** を `middle` に設定します。
 
 **X** アイコンをクリックして、ダイアログウィンドウを閉じます。
 
-![ アプリ内 ](./images/contentcard25.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard25.png)
 
 これで、web サイトデザインの変更が行われました。
 
 新しいブラウザーウィンドウでサイトを開くと、次のようになります。 グレーの領域は新しく作成されたバナーですが、まだコンテンツがありません。
 
-![ アプリ内 ](./images/contentcard25a.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard25a.png)
 
 コンテンツが新しく作成されたバナーに動的に読み込まれるようにするには、データ収集タグのプロパティを変更する必要があります。
 
 ## デ 3.6.1.4 タ収集タグプロパティを更新するには
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) の **Tags** に移動します。 [ はじめに ](./../../../../modules/getting-started/gettingstarted/ex1.md) モジュールの一部として、データ収集タグのプロパティが作成されました。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) の **Tags** に移動します。 [&#x200B; はじめに &#x200B;](./../../../../modules/getting-started/gettingstarted/ex1.md) モジュールの一部として、データ収集タグのプロパティが作成されました。
 
 これらのデータ収集タグのプロパティは、既に以前のモジュールの一部として使用しています。
 
@@ -193,11 +193,11 @@ Web サイトにコンテンツカードを表示するには、CitiSignal デ�
 
 左側のメニューで、**ルール** に移動し、をクリックしてルール **ページビュー** を開きます。
 
-![ アプリ内 ](./images/contentcard101.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard101.png)
 
 アクション **「ページビュー」エクスペリエンスイベントを送信** をクリックします。
 
-![ アプリ内 ](./images/contentcard102.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard102.png)
 
 **ページビュー** ルールの一部として、特定のサーフェスについて、Edgeからパーソナライゼーション手順をリクエストする必要があります。 サーフェスは、前の手順で設定したバナーです。 これを行うには、**Personalizationまでスクロールし** 「`web://dsn.adobe.com/web/--aepUserLdap---XXXX#CitiSignalContentCardContainer` サーフェス **」に** と入力します。
 
@@ -207,20 +207,20 @@ Web サイトにコンテンツカードを表示するには、CitiSignal デ�
 
 「**変更を保存**」をクリックします。
 
-![ アプリ内 ](./images/contentcard103.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard103.png)
 
 **保存** または **ライブラリに保存** をクリックします。
 
-![ アプリ内 ](./images/contentcard104.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard104.png)
 
 
 左側のメニューで、「**ルール**」に移動し、「**ルールを追加**」をクリックします。
 
-![ アプリ内 ](./images/contentcard26.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard26.png)
 
 `Display AJO Content Cards` という名前を入力します。 「**+追加**」をクリックして、新しいイベントを追加します。
 
-![ アプリ内 ](./images/contentcard27.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard27.png)
 
 **拡張機能**:**Adobe Experience Platform Web SDK** を選択し、**イベントタイプ**: **購読ルールセットの項目** を選択します。
 
@@ -234,21 +234,21 @@ Web サイトにコンテンツカードを表示するには、CitiSignal デ�
 
 「**変更を保存**」をクリックします。
 
-![ アプリ内 ](./images/contentcard28.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard28.png)
 
 この画像が表示されます。 「**+追加**」をクリックして、新しいアクションを追加します。
 
-![ アプリ内 ](./images/contentcard29.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard29.png)
 
 **拡張機能**:**コア** を選択し、**アクションタイプ**:**カスタムコード** を選択します。
 
 **Language**:**JavaScript&rbrace; のチェックボックスをオンにして** 編集画面を開く **をクリックし** す。
 
-![ アプリ内 ](./images/contentcard30.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard30.png)
 
 すると、空のエディターウィンドウが表示されます。
 
-![ アプリ内 ](./images/contentcard31.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard31.png)
 
 以下のコードをエディターに貼り付けて、「**保存**」をクリックします。
 
@@ -285,23 +285,23 @@ event.propositions.forEach(function (payload) {
 });
 ```
 
-![ アプリ内 ](./images/contentcard32.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard32.png)
 
 「**変更を保存**」をクリックします。
 
-![ アプリ内 ](./images/contentcard33.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard33.png)
 
 **保存** または **ライブラリに保存** をクリックします。
 
-![ アプリ内 ](./images/contentcard34.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard34.png)
 
 左側のメニューで、**公開フロー** に移動し、をクリックして **メイン** ライブラリを開きます。
 
-![ アプリ内 ](./images/contentcard35.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard35.png)
 
 「**変更されたリソースをすべて追加**」をクリックし、「**開発用に保存およびビルド**」をクリックします。
 
-![ アプリ内 ](./images/contentcard36.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard36.png)
 
 ## 3.6.1.5 Web サイトでのコンテンツカードのテスト
 
@@ -327,12 +327,12 @@ event.propositions.forEach(function (payload) {
 
 CitiSignal web サイトが読み込まれ、以前に設定した空のグレーの領域ではなく、設定したコンテンツカードが表示されます。
 
-![ アプリ内 ](./images/contentcard37.png)
+![&#x200B; アプリ内 &#x200B;](./images/contentcard37.png)
 
 ## 次の手順
 
-[3.6.2 ランディングページ ](./ex2.md) 移動
+[3.6.2 ランディングページ &#x200B;](./ex2.md) 移動
 
-[Adobe Journey Optimizer：コンテンツ管理 ](./ajocontent.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：コンテンツ管理 &#x200B;](./ajocontent.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

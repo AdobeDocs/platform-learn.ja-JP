@@ -57,8 +57,8 @@ ht-degree: 1%
 
 ## 次の手順
 
-[ データストリームの作成 ](./ex3.md){target="_blank"} に移動します。
+[&#x200B; データストリームの作成 &#x200B;](./ex3.md){target="_blank"} に移動します。
 
-[ はじめに ](./getting-started.md){target="_blank"} に戻る
+[&#x200B; はじめに &#x200B;](./getting-started.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

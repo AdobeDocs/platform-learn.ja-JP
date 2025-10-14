@@ -38,10 +38,10 @@ Customer journey Analytics を使用すると、高度なアトリビューシ�
 
 ## これを確認する
 
-- Experience Platform ドキュメント：[Customer Journey Analytics – 製品ドキュメント ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja)
+- Experience Platform ドキュメント：[Customer Journey Analytics – 製品ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja)
 
 ## 次の手順
 
 [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

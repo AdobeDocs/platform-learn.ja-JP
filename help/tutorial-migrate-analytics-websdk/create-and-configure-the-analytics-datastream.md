@@ -18,7 +18,7 @@ Web サイトデータをAdobe Analyticsにルーティングできるように�
 
 このレッスンでは、web サイトからAdobe Analyticsにデータが送られ、そこからAdobe Edgeにルーティングされるようにシステムを作成および設定する方法を学びます。
 
-![ アーキテクチャ図 ](assets/architecture_diagram.jpg)
+![&#x200B; アーキテクチャ図 &#x200B;](assets/architecture_diagram.jpg)
 
 ## 新しい開発データストリームの作成
 
@@ -27,7 +27,7 @@ Web サイトデータをAdobe Analyticsにルーティングできるように�
    1. ページの上部で正しい組織が選択されていることを確認します（例：下の画像のAdobe実稼働 – テクニカルマーケティングデモ）。
    1. アプリケーションスイッチャーと呼ばれる「9 つのドット」をクリックし、「データ収集 **を選択** ます。
 
-      ![ データ収集に移動 ](assets/navigate-to-data-collection.jpg)
+      ![&#x200B; データ収集に移動 &#x200B;](assets/navigate-to-data-collection.jpg)
 
 1. 左側のナビゲーションの **[!UICONTROL データストリーム]** に移動します
 1. **[!UICONTROL 新規データストリーム]** を選択します。
@@ -35,16 +35,16 @@ Web サイトデータをAdobe Analyticsにルーティングできるように�
 
    >[!NOTE]
    >
-   >[ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/edge-network/data-prep) 機能を使用する場合にのみ、スキーマを選択する必要があります。このチュートリアルでは、この機能を使用しません。 詳しくは、リンクを参照してください。
+   >[&#x200B; データ収集のためのデータ準備 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/edge-network/data-prep) 機能を使用する場合にのみ、スキーマを選択する必要があります。このチュートリアルでは、この機能を使用しません。 詳しくは、リンクを参照してください。
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![ データストリームの作成 ](assets/create-new-datastream.jpg)
+   ![&#x200B; データストリームの作成 &#x200B;](assets/create-new-datastream.jpg)
 
 1. データストリームが保存されると、新しい画面が表示され、まだサービスが設定されていないことを知らせます。 つまり、お客様のデータはEdge サーバーに送信されますが、サービスを追加するまでは、どのアプリケーションにも送信されません。 次に、データをAdobe Analyticsに送信するようにデータストリームを設定します。 **[!UICONTROL サービスを追加]** をクリックします。
-   ![ サービスを追加 ](assets/datastream-add-service.jpg)
+   ![&#x200B; サービスを追加 &#x200B;](assets/datastream-add-service.jpg)
 1. サービス ドロップダウンメニューで、「**[!UICONTROL Adobe Analytics]**」を選択します。
-1. 「レポートスイート ID」フィールドで、[ 検証レポートスイートを作成 ](create-a-validation-report-suite.md) アクティビティで作成した検証レポートスイートの ID （タイトルではなく、レポートスイート ID です）を入力します。 「**[!UICONTROL 保存]**」をクリックします。
+1. 「レポートスイート ID」フィールドで、[&#x200B; 検証レポートスイートを作成 &#x200B;](create-a-validation-report-suite.md) アクティビティで作成した検証レポートスイートの ID （タイトルではなく、レポートスイート ID です）を入力します。 「**[!UICONTROL 保存]**」をクリックします。
 
 ## ステージングおよび実稼動データストリーム
 

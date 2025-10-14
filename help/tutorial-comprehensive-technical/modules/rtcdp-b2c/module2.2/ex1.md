@@ -32,47 +32,47 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 左側のメニューから **スキーマ** をクリックし、**参照** に移動します。 **スキーマを作成** をクリックします。
 
-![ 新しいスキーマの作成 ](./images/createschemabutton.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/createschemabutton.png)
 
 ポップアップで「**手動**」を選択し、「**選択** をクリックします。
 
-![ 新しいスキーマの作成 ](./images/schmanual.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/schmanual.png)
 
 次に、「**エクスペリエンスイベント**」を選択し、「**次へ**」をクリックします。
 
-![ 新しいスキーマの作成 ](./images/xdmee.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/xdmee.png)
 
 ここでスキーマの名前を指定する必要があります。 スキーマの名前として、`--aepUserLdap-- - Demo System - Customer Experience Event` を使用し、「終了 **をクリックし** す。
 
-![ 新しいスキーマの作成 ](./images/schname.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/schname.png)
 
 その後、これが表示されます。 フィールドグループの下の「**+追加**」をクリックします。
 
-![ 新しいスキーマの作成 ](./images/xdmee1.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/xdmee1.png)
 
 次の **フィールドグループ** を検索して選択し、このスキーマに追加します。
 
 - コンシューマーエクスペリエンスイベント
 
-![ 新しい CEE スキーマ ](./images/cee1.png)
+![&#x200B; 新しい CEE スキーマ &#x200B;](./images/cee1.png)
 
 - identityMap
 
 「**フィールドグループを追加**」をクリックします。
 
-![ 新しい CEE スキーマ ](./images/cee2.png)
+![&#x200B; 新しい CEE スキーマ &#x200B;](./images/cee2.png)
 
 その後、これが表示されます。 次に、スキーマの名前を選択します。 これで、「プロファイル **切り替えをクリックして、** プロファイル **のスキーマを有効に** ます。
 
-![ 新しいスキーマの作成 ](./images/xdmee3.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/xdmee3.png)
 
 その後、これが表示されます。 **このスキーマのデータには、identityMap フィールドにプライマリ ID が含まれます。**。**有効にする** をクリックします。
 
-![ 新しいスキーマの作成 ](./images/xdmee4.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/xdmee4.png)
 
 これで、このが得られます。 「**保存**」をクリックしてスキーマを保存します。
 
-![ 新しいスキーマの作成 ](./images/xdmee5.png)
+![&#x200B; 新しいスキーマの作成 &#x200B;](./images/xdmee5.png)
 
 ## データセットを作成
 
@@ -110,7 +110,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 **スキーマ** と **データセット** を設定したら、エクスペリエンスイベントデータを取り込む準備が整います。 顧客 AI には特定のデータ要件があるので、外部で準備されたデータを取り込む必要があります。
 
-この演習のエクスペリエンスイベント用に準備するデータは、[ 消費者エクスペリエンスイベント XDM フィールドグループ ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) の要件とスキーマに準拠している必要があります。
+この演習のエクスペリエンスイベント用に準備するデータは、[&#x200B; 消費者エクスペリエンスイベント XDM フィールドグループ &#x200B;](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) の要件とスキーマに準拠している必要があります。
 
 デモデータが入った zip ファイルを [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip) からダウンロードしてください。
 
@@ -152,7 +152,7 @@ Adobe Experience Platformで、**データセット** に移動し、データ�
 
 ![データセット](./images/ingest7.png)
 
-次の手順：[2.2.2 顧客 AI – 新しいインスタンスの作成（設定） ](./ex2.md)
+次の手順：[2.2.2 顧客 AI – 新しいインスタンスの作成（設定） &#x200B;](./ex2.md)
 
 [モジュール 2.2 に戻る](./intelligent-services.md)
 

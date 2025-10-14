@@ -28,7 +28,7 @@ ht-degree: 0%
 
 - [Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
 - [Adobe I/O プロジェクトの設定](./ex6.md)
-- [ 方法 1:Postmanの設定 ](./ex7.md) または [ 方法 2:PostBuster の設定 ](./ex8.md)
+- [&#x200B; 方法 1:Postmanの設定 &#x200B;](./ex7.md) または [&#x200B; 方法 2:PostBuster の設定 &#x200B;](./ex8.md)
 - [インストールするアプリケーション](./ex9.md)
 
 ### パス：Workfront Fusion
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 - [Experience League ドキュメント用のChrome拡張機能のインストール](./ex1.md)
 - [Adobe I/O プロジェクトの設定](./ex6.md)
-- [ 方法 1:Postmanの設定 ](./ex7.md) または [ 方法 2:PostBuster の設定 ](./ex8.md)
+- [&#x200B; 方法 1:Postmanの設定 &#x200B;](./ex7.md) または [&#x200B; 方法 2:PostBuster の設定 &#x200B;](./ex8.md)
 - [インストールするアプリケーション](./ex9.md)
 
 ### パス：AEM CS と EDS
@@ -57,7 +57,7 @@ ht-degree: 0%
 - [Web サイトの使用](./ex4.md)
 - [モバイルアプリの使用](./ex5.md)
 - [Adobe I/O プロジェクトの設定](./ex6.md)
-- [ 方法 1:Postmanの設定 ](./ex7.md) または [ 方法 2:PostBuster の設定 ](./ex8.md)
+- [&#x200B; 方法 1:Postmanの設定 &#x200B;](./ex7.md) または [&#x200B; 方法 2:PostBuster の設定 &#x200B;](./ex8.md)
 - [インストールするアプリケーション](./ex9.md)
 
 ## 演習
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 この演習では、チュートリアルを開始する前に、コンピュータに必要なすべてのアプリケーションをインストールする方法を説明します。
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -18,33 +18,33 @@ ht-degree: 1%
 
 [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"} に移動します。
 
-![Adobe I/O新規統合 ](./images/cc.png)
+![Adobe I/O新規統合 &#x200B;](./images/cc.png)
 
 ## Adobe Photoshop
 
 **Adobe Creative Cloud** アプリを開き、**アプリ** に移動します。 お使いのコンピューターにPhotoshopをインストールします。
 
-![Adobe I/O新規統合 ](./images/psd.png)
+![Adobe I/O新規統合 &#x200B;](./images/psd.png)
 
 ## Adobe Illustrator
 
 **Adobe Creative Cloud** アプリを開き、**アプリ** に移動します。 お使いのコンピューターにIllustratorをインストールします。
 
-![Adobe I/O新規統合 ](./images/psd.png)
+![Adobe I/O新規統合 &#x200B;](./images/psd.png)
 
 ## Adobe Premiere Pro
 
 [https://helpx.adobe.com/jp/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/jp/premiere-pro/using/premiere-pro-beta.html) からAdobe Premiere Pro Beta版をコンピューターにインストールします
 
-![Adobe I/O新規統合 ](./images/prpro.png)
+![Adobe I/O新規統合 &#x200B;](./images/prpro.png)
 
 **Creative Cloud デスクトップアプリを開く** をクリックします。
 
-![Adobe I/O新規統合 ](./images/prpro1.png)
+![Adobe I/O新規統合 &#x200B;](./images/prpro1.png)
 
 **2&rbrace;Premiere Pro（Beta）** アプリ用のカードで「**インストール」をクリックします。**
 
-![Adobe I/O新規統合 ](./images/prpro2.png)
+![Adobe I/O新規統合 &#x200B;](./images/prpro2.png)
 
 ## Frame.io 転送アプリ
 
@@ -56,36 +56,36 @@ ht-degree: 1%
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/){target="_blank"} に移動し、**Visual Studio Code** をダウンロードしてインストールします。
 
-![ ブロック ](./images/vsc1.png)
+![&#x200B; ブロック &#x200B;](./images/vsc1.png)
 
 ## テキストエディター
 
 テキスト エディターアプリがない場合は、[https://www.sublimetext.com/](https://www.sublimetext.com/){target="_blank"} にアクセスして、このテキスト エディターをダウンロードしてインストールしてください。
 
-![ ブロック ](./images/text1.png)
+![&#x200B; ブロック &#x200B;](./images/text1.png)
 
 ## GitHub アカウント
 
 GitHub アカウントをまだお持ちでない場合は、[https://github.com/](https://github.com/){target="_blank"} にアクセスし、「**新規登録**」をクリックします。 あなたの個人の電子メールアドレスを使用して、アカウントを作成します。
 
-![ ブロック ](./images/git.png)
+![&#x200B; ブロック &#x200B;](./images/git.png)
 
 ## GitHub デスクトップ
 
 [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"} に移動し、**Github デスクトップ** をダウンロードしてインストールします。
 
-![ ブロック ](./images/block1.png)
+![&#x200B; ブロック &#x200B;](./images/block1.png)
 
 ## Azure ストレージエクスプローラー
 
-[Microsoft Azure ストレージエクスプローラーをダウンロードしてファイルを管理 ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} ます。 特定の OS に適したバージョンを選択し、ダウンロードしてインストールします。
+[Microsoft Azure ストレージエクスプローラーをダウンロードしてファイルを管理 &#x200B;](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} ます。 特定の OS に適したバージョンを選択し、ダウンロードしてインストールします。
 
-![Azure ストレージ ](./images/az10.png){zoomable="yes"}
+![Azure ストレージ &#x200B;](./images/az10.png){zoomable="yes"}
 
 これで、はじめる前にモジュールが完了しました。
 
 ## 次の手順
 
-[ はじめに ](./getting-started.md){target="_blank"} に戻る
+[&#x200B; はじめに &#x200B;](./getting-started.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻ります。/images
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻ります。/images

@@ -257,8 +257,8 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs47.png)
 
-次の手順：[ACCS をAEM Sites CS/EDS ストアフロントに接続する ](./ex2.md){target="_blank"}
+次の手順：[ACCS をAEM Sites CS/EDS ストアフロントに接続する &#x200B;](./ex2.md){target="_blank"}
 
 [Adobe Commerce as a Cloud Service](./accs.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

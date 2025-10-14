@@ -38,7 +38,7 @@ ht-degree: 13%
 
 新しく作成したフォルダーを開きます。 前の演習の 1 つで、`CitiSignal - Neon Rabbit - Get On Board Now!.png` と `CitiSignal - Neon Rabbit - Timetravel now!.png` という名前の 2 つの画像を作成しました。 これらの画像がまだない場合は、このフォルダーにアップロードする必要があります。
 
-これらのファイルがもはや存在しない場合は、[ こちら ](./images/CitiSignal_Neon_Rabbit.zip){target="_blank"} からダウンロードすることができます。
+これらのファイルがもはや存在しない場合は、[&#x200B; こちら &#x200B;](./images/CitiSignal_Neon_Rabbit.zip){target="_blank"} からダウンロードすることができます。
 
 **Assetsを追加** をクリックします。
 
@@ -112,8 +112,8 @@ ht-degree: 13%
 
 ![AEM Assets](./images/aemassets23.png)
 
-次の手順：[ 概要とメリット ](./summary.md){target="_blank"}
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
 
 [Adobe Experience Manager Assets](./aemassets.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Collaboration プロジェクトでのオーディエンスのアクティブ化
 
-Real-Time CDP Collaboration プロジェクトで共同作業パートナーに対してオーディエンスをアクティブ化する方法について説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"} を参照してください。
+Real-Time CDP Collaboration プロジェクトで共同作業パートナーに対してオーディエンスをアクティブ化する方法について説明します。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"} を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471677/?learn=on&enablevpops)

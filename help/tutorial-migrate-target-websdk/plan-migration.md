@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ### サポートされている機能
 
-Platform Web SDK は継続的に活発に開発中で、機能および機能強化が定期的に追加されています。 現在の at.js 実装を評価する際に、最新情報については [ サポートされるユースケース ](https://github.com/orgs/adobe/projects/18/views/1) ページを参照してください。
+Platform Web SDK は継続的に活発に開発中で、機能および機能強化が定期的に追加されています。 現在の at.js 実装を評価する際に、最新情報については [&#x200B; サポートされるユースケース &#x200B;](https://github.com/orgs/adobe/projects/18/views/1) ページを参照してください。
 
 ### 現在どんな関数を使っていますか？
 
@@ -49,8 +49,8 @@ Platform Web SDK では複数のAdobeアプリケーションを組み合わせ�
 >あるライブラリを持つページから別のライブラリを持つページにリダイレクトする場合、リダイレクトオファーはページごとの移行ではサポートされません
 
 
-次に、詳細な [at.js と Platform Web SDK の比較 ](detailed-comparison.md) を確認して、技術的な違いをより深く理解し、さらに焦点を当てる必要がある領域を特定します。
+次に、詳細な [at.js と Platform Web SDK の比較 &#x200B;](detailed-comparison.md) を確認して、技術的な違いをより深く理解し、さらに焦点を当てる必要がある領域を特定します。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

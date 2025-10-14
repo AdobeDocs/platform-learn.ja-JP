@@ -15,6 +15,6 @@ ht-degree: 1%
 
 # Adobe Experience Platform Edge Network Server API の概要
 
-安全な、認証されたサーバー API を使用して Platform Edge Networkにデータを送信するメリットについて説明します。 詳しくは、[Server API ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=ja) を参照してください。
+安全な、認証されたサーバー API を使用して Platform Edge Networkにデータを送信するメリットについて説明します。 詳しくは、[Server API ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/344660?learn=on&enablevpops&captions=jpn)

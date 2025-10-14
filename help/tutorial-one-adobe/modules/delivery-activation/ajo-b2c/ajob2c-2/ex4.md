@@ -303,6 +303,6 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 ジャーニーをトリガーする [3.2.5](./ex5.md){target="_blank"} に移動します
 
-[Adobe Journey Optimizer：外部データソースとカスタムアクション ](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：外部データソースとカスタムアクション &#x200B;](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

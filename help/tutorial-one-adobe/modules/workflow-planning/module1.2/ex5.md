@@ -81,6 +81,6 @@ Photoshopに戻ると、プラグインを使用する準備が整い、アク�
 
 ![WF](./images/wf16.png)
 
-[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

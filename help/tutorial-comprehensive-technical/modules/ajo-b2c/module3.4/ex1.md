@@ -136,7 +136,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/oc9.png)
 
-左側のメニューで、**フラグメント** に移動します。 先ほど [ 演習 3.1.2.1](./../module3.1/ex2.md) で作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 先ほど [ 演習 3.1.2.2](./../module3.1/ex2.md) で作成したフッターをキャンバスの最後のコンポーネントにドラッグします。
+左側のメニューで、**フラグメント** に移動します。 先ほど [&#x200B; 演習 3.1.2.1](./../module3.1/ex2.md) で作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 先ほど [&#x200B; 演習 3.1.2.2](./../module3.1/ex2.md) で作成したフッターをキャンバスの最後のコンポーネントにドラッグします。
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -347,15 +347,15 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ## 3.4.1.5 Adobe Experience Platform Data Collection クライアントプロパティを更新する
 
-[Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
+[Adobe Experience Platform Data Collection に移動し &#x200B;](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
 
 これは、以前に表示したAdobe Experience Platform データ収集のプロパティページです。
 
-![ プロパティページ ](./../../../modules/datacollection/module1.1/images/launch1.png)
+![&#x200B; プロパティページ &#x200B;](./../../../modules/datacollection/module1.1/images/launch1.png)
 
 **はじめに** で、デモシステムは 2 つのクライアントプロパティを作成しました。1 つは Web サイト用、もう 1 つはモバイルアプリ用です。 **[!UICONTROL 検索]** ボックスで `--aepUserLdap--` を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
-![ 検索ボックス ](./../../../modules/datacollection/module1.1/images/property6.png)
+![&#x200B; 検索ボックス &#x200B;](./../../../modules/datacollection/module1.1/images/property6.png)
 
 **データ要素** に移動します。 データ要素 **XDM – 購入** を検索して開きます。
 
@@ -437,7 +437,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 この演習は完了しました。
 
-次の手順：[3.4.2 バッチベースのニュースレタージャーニーを設定する ](./ex2.md)
+次の手順：[3.4.2 バッチベースのニュースレタージャーニーを設定する &#x200B;](./ex2.md)
 
 [モジュール 3.4 に戻る](./journeyoptimizer.md)
 

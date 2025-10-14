@@ -25,15 +25,15 @@ Analytics 実装の規模と複雑さによっては、web SDKへの移行に時
 
 1. **[!UICONTROL レポートスイートを追加]** を選択します
 
-   ![ レポートスイートの追加 ](assets/add-report-suite.jpg)
+   ![&#x200B; レポートスイートの追加 &#x200B;](assets/add-report-suite.jpg)
 
 1. 新しいレポートスイートを作成するには、フォームに入力します。 テンプレートから新しいレポートスイートを作成することもできますが（空白のテンプレートでも）、「**既存のレポートスイートを複製**」オプションを選択して、Web SDKに移行するレポートスイートを選択する方が適切な場合があります。 これにより、新しく移行したデータをテストする際と同じ名前と設定を使用できるので、途中での検証が容易になります。 すべての必須フィールドに入力し、新しい移行開発レポートスイートを保存します。
 
-   ![ 新しい移行開発レポートスイート ](assets/new-websdk-validation-report-suite.jpg)
+   ![&#x200B; 新しい移行開発レポートスイート &#x200B;](assets/new-websdk-validation-report-suite.jpg)
 
 1. 新しいレポートスイートの ID をメモします。これは、次のレッスンで、Web SDK実装用のデータストリームを設定する際に必要になります。 サイトのタイトルも覚えておくと便利です。Analysis Workspaceで使用して、Analytics プロジェクトで移行開発レポートスイートを選択できるからです。
 
 >[!TIP]
 >
->レポートスイートの作成に関するビデオウォークスルーについては、[ レポートスイートの概要と作成 ](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"} を参照してください。
+>レポートスイートの作成に関するビデオウォークスルーについては、[&#x200B; レポートスイートの概要と作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"} を参照してください。
 

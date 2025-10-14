@@ -200,8 +200,8 @@ AEPは各テーブルの情報を読み込み、UI に表示します。
 
 ## 次の手順
 
-[1.3.3 フェデレーション構成の作成 ](./ex3.md){target="_blank"} に移動
+[1.3.3 フェデレーション構成の作成 &#x200B;](./ex3.md){target="_blank"} に移動
 
 [Federated Audience Composition](./fac.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

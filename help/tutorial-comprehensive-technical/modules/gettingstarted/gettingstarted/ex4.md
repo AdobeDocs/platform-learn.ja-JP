@@ -101,7 +101,7 @@ ht-degree: 0%
 
 ![DSN](./images/web7.png)
 
-次の手順：[ モバイルアプリの使用 ](./ex5.md)
+次の手順：[&#x200B; モバイルアプリの使用 &#x200B;](./ex5.md)
 
 [「はじめに」に戻る](./getting-started.md)
 

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # PostmanでのExperience Platform API の使用
 
-[Adobe Experience Platform環境変数 ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) および [ 生成されたアクセストークン ](platform-api-authentication.md) に基づいて、[Adobeが提供するExperience Platform API Postman コレクション ](generate-an-access-token.md) を使用してAdobe Developer Console API を調べます。
+[Adobe Experience Platform環境変数 &#x200B;](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) および [&#x200B; 生成されたアクセストークン &#x200B;](platform-api-authentication.md) に基づいて、[Adobeが提供するExperience Platform API Postman コレクション &#x200B;](generate-an-access-token.md) を使用してAdobe Developer Console API を調べます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34079/?learn=on&enablevpops&captions=jpn)

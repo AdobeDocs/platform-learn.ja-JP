@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # [!DNL Real-Time CDP] のファーストパーティプロファイルへのパートナー属性の追加
 
-[!DNL Real-Time CDP] で追加のチャネルを通じてリーチを拡大するために、ファーストパーティプロファイルにパートナー属性を追加する方法を説明します。 詳しくは、[ パートナー提供の属性を使用したファーストパーティプロファイルの補足 ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=ja) ドキュメントを参照してください。
+[!DNL Real-Time CDP] で追加のチャネルを通じてリーチを拡大するために、ファーストパーティプロファイルにパートナー属性を追加する方法を説明します。 詳しくは、[&#x200B; パートナー提供の属性を使用したファーストパーティプロファイルの補足 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452449/?learn=on&enablevpops&captions=jpn)

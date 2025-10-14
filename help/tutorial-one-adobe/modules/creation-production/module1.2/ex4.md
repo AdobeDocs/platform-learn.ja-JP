@@ -117,7 +117,7 @@ Workfront Fusion Webhook は入力待ちの状態です。
 - **クライアント ID**:`--aepUserLdap-- - One Adobe tutorial` という名前のAdobe I/O プロジェクトから **クライアント ID** をコピーします。
 - **クライアント秘密鍵**: **クライアント秘密鍵** を `--aepUserLdap-- - One Adobe tutorial` という名前のAdobe I/O プロジェクトからコピーします。
 
-Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [ で確認でき ](https://developer.adobe.com/console/projects.){target="_blank"} す。
+Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [&#x200B; で確認でき &#x200B;](https://developer.adobe.com/console/projects.){target="_blank"} す。
 
 ![WF Fusion](./images/wffc20.png)
 
@@ -417,8 +417,8 @@ Azure ストレージエクスプローラーを使用すると、Azure スト�
 
 ## 次の手順
 
-[1.2.5 Frame.io とWorkfront Fusion に移動します ](./ex5.md){target="_blank"}
+[1.2.5 Frame.io とWorkfront Fusion に移動します &#x200B;](./ex5.md){target="_blank"}
 
-[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

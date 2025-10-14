@@ -35,7 +35,7 @@ Assuranceは、Adobe Experience Platform Mobile SDKで生成された生のSDK �
 
 ## アクセスを確認
 
-組織がAssuranceにアクセスできることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [ ユーザーアクセス ](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/user-access) を参照してください。
+組織がAssuranceにアクセスできることを確認します。 ユーザーとして、Adobe Experience Platformのプロファイルに追加される必要があります。 詳しくは、Assurance ガイドの [&#x200B; ユーザーアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/user-access) を参照してください。
 
 ## 実装方法
 
@@ -85,7 +85,7 @@ AndroidでアプリケーションのAssurance セッションを開始するに
 >[!ENDTABS]
 
 
-詳しくは、[Assurance API リファレンス ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"} を参照してください。
+詳しくは、[Assurance API リファレンス &#x200B;](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"} を参照してください。
 
 
 
@@ -105,7 +105,7 @@ AndroidでアプリケーションのAssurance セッションを開始するに
 
 各バンドル ID は一意である必要があるので、_unique_ バンドル ID を使用し、`com.adobe.luma.tutorial.swiftui` バンドル ID を置き換えてください。 通常は、バンドル ID 文字列（`com.organization.brand.uniqueidentifier` など）に逆 DNS 形式を使用します。 たとえば、このチュートリアルの完成バージョンでは `com.adobe.luma.tutorial.swiftui` を使用します。
 
-![Xcode 署名機能 ](assets/xcode-signing-capabilities.png){zoomable="yes"}
+![Xcode 署名機能 &#x200B;](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB Android]
 
@@ -116,7 +116,7 @@ AndroidでアプリケーションのAssurance セッションを開始するに
 
 通常は、バンドル ID 文字列（`com.organization.brand.uniqueidentifier` など）に逆 DNS 形式を使用します。 たとえば、このチュートリアルの完成バージョンでは `com.adobe.luma.tutorial.android` を使用します。
 
-![Android署名機能 ](assets/android-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![Android署名機能 &#x200B;](assets/android-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -138,9 +138,9 @@ AndroidでアプリケーションのAssurance セッションを開始するに
 
    ![assurance url](assets/assurance-url-type.png){zoomable="yes"}
 
-各バンドル ID は一意である必要があるので、_unique_ バンドル ID を使用し、`com.adobe.luma.tutorial.swiftui` バンドル ID を置き換えてください。 通常は、バンドル ID 文字列（`com.organization.brand.uniqueidentifier` など）に逆 DNS 形式を使用します。 [ バンドル識別子の定義 ](#define-bundle-identifier) で使用したのと同じバンドル識別子を使用できます。<br/> 同様に、一意の URL スキームを使用し、既に提供されている `lumatutorialswiftui` を一意の URL スキームに置き換えます。
+各バンドル ID は一意である必要があるので、_unique_ バンドル ID を使用し、`com.adobe.luma.tutorial.swiftui` バンドル ID を置き換えてください。 通常は、バンドル ID 文字列（`com.organization.brand.uniqueidentifier` など）に逆 DNS 形式を使用します。 [&#x200B; バンドル識別子の定義 &#x200B;](#define-bundle-identifier) で使用したのと同じバンドル識別子を使用できます。<br/> 同様に、一意の URL スキームを使用し、既に提供されている `lumatutorialswiftui` を一意の URL スキームに置き換えます。
 
-iOSの URL スキームについて詳しくは、[Appleのドキュメント ](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"} を参照してください。
+iOSの URL スキームについて詳しくは、[Appleのドキュメント &#x200B;](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"} を参照してください。
 
 Assuranceは、ブラウザーまたは QR コードを使用して URL を開くことで機能します。 この URL は、アプリを開くベース URL で始まり、追加のパラメーターが含まれています。 これらの一意のパラメーターは、セッションへの接続に使用されます。 サンプルアプリでは、ディープリンクは `lumatutorialswiftui://` です。
 
@@ -172,7 +172,7 @@ Assuranceは、ブラウザーまたは QR コードを使用して URL を開�
 
 必ず `android:scheme` （例：）を指定します。 `lumatutorialandroid`）と `android:host` （例：`default`）を使用して、ベース URL を定義します。
 
-Androidのディープリンクについて詳しくは、[ アプリコンテンツへのディープリンクの作成 ](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"} を参照してください。
+Androidのディープリンクについて詳しくは、[&#x200B; アプリコンテンツへのディープリンクの作成 &#x200B;](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"} を参照してください。
 
 Assuranceは、ブラウザーまたは QR コードを使用して URL を開くことで機能します。 その URL はベース URL で始まり、アプリが開き、追加のパラメーターが含まれます。 これらの一意のパラメーターは、セッションへの接続に使用されます。  サンプルアプリでは、ディープリンクは `lumatutorialandroid://default` です。
 
@@ -221,20 +221,20 @@ Xcode で：
 1. **[!UICONTROL 開始]** を選択します。
 1. **[!UICONTROL などの]** セッション名 `Luma Mobile App Session` と **[!UICONTROL ベース URL]** を指定します。これは、Xcode で入力した URL スキームであり、`://` の後に続きます。例：`lumatutorialswiftui://`
 1. 「**[!UICONTROL 次へ]**」を選択します。
-   ![assurance 作成セッション ](assets/assurance-create-session.png){zoomable="yes"}
+   ![assurance 作成セッション &#x200B;](assets/assurance-create-session.png){zoomable="yes"}
 1. **[!UICONTROL 新規セッションを作成]** モーダルダイアログで、次の操作を行います。
 
    物理デバイスを使用している場合：
 
    * 「**[!UICONTROL QR コードをスキャン]**」を選択します。 アプリを開くには、物理デバイスのカメラを使用して QR コードをスキャンし、リンクをタップします。
 
-     ![assurance qa コード ](assets/assurance-qr-code.png){zoomable="yes"}
+     ![assurance qa コード &#x200B;](assets/assurance-qr-code.png){zoomable="yes"}
 
    シミュレーターを使用する場合：
 
    1. **[!UICONTROL リンクをコピー]** を選択します。
-   1. ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用してディープリンクをコピーし、ディープリンクを使用してシミュレーターの Safari でアプリを開きます。
-      ![Assurance コピーリンク ](assets/assurance-copy-link.png){zoomable="yes"}
+   1. ![&#x200B; コピー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用してディープリンクをコピーし、ディープリンクを使用してシミュレーターの Safari でアプリを開きます。
+      ![Assurance コピーリンク &#x200B;](assets/assurance-copy-link.png){zoomable="yes"}
 
 1. アプリが読み込まれると、手順 7 に示すように、PIN を入力するよう求めるモーダルダイアログが表示されます。
 
@@ -254,7 +254,7 @@ Xcode で：
       1. 選択したイベントの詳細。
       1. デバイスとタイムライン。
 
-         ![assurance イベント ](assets/assurance-events.png){zoomable="yes"}
+         ![assurance イベント &#x200B;](assets/assurance-events.png){zoomable="yes"}
 
 1. 「**[!UICONTROL 続行]**」を選択して、ホーム画面に移動します。
 
@@ -262,7 +262,7 @@ Xcode で：
 
 Android Studio で以下を行います。
 
-1. ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレーターまたはAndroid Studio の物理デバイスでアプリを作成または再構築して実行します。
+1. ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレーターまたはAndroid Studio の物理デバイスでアプリを作成または再構築して実行します。
 
    必要に応じて、特に予期しない結果が発生した場合に、ビルドを *クリーン* する必要がある場合があります。 Android Studio の **[!UICONTROL ビルド]** メニューから **[!UICONTROL プロジェクトをクリーン]** を選択します。
 
@@ -300,7 +300,7 @@ Android Studio で以下を行います。
 1. **[!UICONTROL 開始]** を選択します。
 1. **[!UICONTROL などの]** セッション名 `Luma Mobile App Session` と、**[!UICONTROL ベース URL]** を指定します。これは、Android Studio の `android:scheme`AndroidManifest.xml`android:host` で定義した **[!UICONTROL と]** です（`://` で区切ります）。例：`lumatutorialandroid://default`
 1. 「**[!UICONTROL 次へ]**」を選択します。
-   ![assurance 作成セッション ](assets/assurance-create-session-android.png){zoomable="yes"}
+   ![assurance 作成セッション &#x200B;](assets/assurance-create-session-android.png){zoomable="yes"}
 
 1. **[!UICONTROL 新規セッションを作成]** モーダルダイアログで、次の操作を行います。
 
@@ -308,14 +308,14 @@ Android Studio で以下を行います。
 
    * 「**[!UICONTROL QR コードをスキャン]**」を選択します。 アプリを開くには、物理デバイスのカメラを使用して QR コードをスキャンし、リンクをタップします。
 
-     ![assurance qa コード ](assets/assurance-qr-code.png){zoomable="yes"}
+     ![assurance qa コード &#x200B;](assets/assurance-qr-code.png){zoomable="yes"}
 
    シミュレーターを使用する場合：
 
    1. **[!UICONTROL リンクをコピー]** を選択します。
-   1. ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用してディープリンクをコピーし、ディープリンクを使用してシミュレーターのChromeでアプリを開きます。
+   1. ![&#x200B; コピー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用してディープリンクをコピーし、ディープリンクを使用してシミュレーターのChromeでアプリを開きます。
 
-   ![Assurance コピーリンク ](assets/assurance-copy-link.png){zoomable="yes"}
+   ![Assurance コピーリンク &#x200B;](assets/assurance-copy-link.png){zoomable="yes"}
 
    Chromeで **Luma Androidを続行** するように求められたら、**続行** を選択します。
 
@@ -337,11 +337,11 @@ Android Studio で以下を行います。
       1. 選択したイベントの詳細。
       1. デバイスとタイムライン。
 
-         ![assurance イベント ](assets/assurance-events.png){zoomable="yes"}
+         ![assurance イベント &#x200B;](assets/assurance-events.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-課題が発生した場合は、[ 技術ドキュメント ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} および [ 一般ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home){target="_blank"} を確認してください。
+課題が発生した場合は、[&#x200B; 技術ドキュメント &#x200B;](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} および [&#x200B; 一般ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/assurance/home){target="_blank"} を確認してください。
 
 
 ## 拡張機能の検証
@@ -350,11 +350,11 @@ Android Studio で以下を行います。
 
 1. **[!UICONTROL 設定]** を選択します。
 
-1. ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ![ 拡張機能バージョン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) の場合は **[!UICONTROL 追加]** を選択します。
+1. ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ![&#x200B; 拡張機能バージョン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) の場合は **[!UICONTROL 追加]** を選択します。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![ 拡張機能のバージョンの設定 ](assets/assurance-configure-extension-versions.png){zoomable="yes"}
+   ![&#x200B; 拡張機能のバージョンの設定 &#x200B;](assets/assurance-configure-extension-versions.png){zoomable="yes"}
 
 1. ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 拡張機能のバージョン]** を選択すると、使用可能な最新の拡張機能と、お使いのバージョンのアプリで使用されている拡張機能の概要が表示されます。
 
@@ -362,22 +362,22 @@ Android Studio で以下を行います。
 
 >[!TAB iOS]
 
-![ 拡張機能のバージョン ](assets/assurance-extension-versions.png){zoomable="yes"}
+![&#x200B; 拡張機能のバージョン &#x200B;](assets/assurance-extension-versions.png){zoomable="yes"}
 
 拡張機能のバージョン（例：**[!UICONTROL Messaging]** および **[!UICONTROL Optimize]**）を更新するには、**[!UICONTROL パッケージの依存関係]** （例：**[!UICONTROL AEPMessaging]**）からパッケージ（拡張機能）を選択し、コンテキストメニューから「**[!UICONTROL パッケージを更新]**」を選択します。 Xcode はパッケージの依存関係を更新します。
 
 >[!TAB Android]
 
-![ 拡張機能のバージョン ](assets/assurance-extension-versions-android.png){zoomable="yes"}
+![&#x200B; 拡張機能のバージョン &#x200B;](assets/assurance-extension-versions-android.png){zoomable="yes"}
 
-古い拡張機能が表示される場合は、[Android Studio のドキュメント ](https://developer.android.com/build/agp-upgrade-assistant) でプロジェクトのディペンデンシーモジュールを更新する方法を参照してください。
+古い拡張機能が表示される場合は、[Android Studio のドキュメント &#x200B;](https://developer.android.com/build/agp-upgrade-assistant) でプロジェクトのディペンデンシーモジュールを更新する方法を参照してください。
 
 
 >[!ENDTABS]
 
 >[!NOTE]
 >
->開発環境で拡張機能（パッケージ）を更新したら、現在のセッションを閉じて削除し、[ セッションへの接続 ](#connecting-to-a-session) および [ 拡張機能の検証 ](#verify-extensions) のすべての手順を繰り返して、Assuranceが新しいAssurance セッションで正しい拡張機能を適切にレポートしていることを確認します。
+>開発環境で拡張機能（パッケージ）を更新したら、現在のセッションを閉じて削除し、[&#x200B; セッションへの接続 &#x200B;](#connecting-to-a-session) および [&#x200B; 拡張機能の検証 &#x200B;](#verify-extensions) のすべての手順を繰り返して、Assuranceが新しいAssurance セッションで正しい拡張機能を適切にレポートしていることを確認します。
 >
 
 
@@ -388,7 +388,7 @@ Android Studio で以下を行います。
 >
 >これで、チュートリアルの残りの部分でAssuranceを使用するようにアプリを設定しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 
 次のトピック：**[同意の実装](consent.md)**

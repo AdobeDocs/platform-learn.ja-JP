@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # Attribution AI の設定
 
-アトリビューション AI のインスタンスを作成して、マーケティングチャネルやキャンペーンが及ぼす影響を理解する方法について説明します。 詳しくは、[ アトリビューション AI ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ja) を参照してください。
+アトリビューション AI のインスタンスを作成して、マーケティングチャネルやキャンペーンが及ぼす影響を理解する方法について説明します。 詳しくは、[&#x200B; アトリビューション AI ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/36579?learn=on&enablevpops&captions=jpn)

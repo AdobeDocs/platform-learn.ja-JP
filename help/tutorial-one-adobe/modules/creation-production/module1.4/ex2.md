@@ -15,7 +15,7 @@ ht-degree: 13%
 
 # 1.4.2 Adobe Expressのアニメーションとビデオ
 
-この演習を開始する前に、[https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zipから必要なアセットをダウンロードし ](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} デスクトップに解凍します。
+この演習を開始する前に、[https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zipから必要なアセットをダウンロードし &#x200B;](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} デスクトップに解凍します。
 
 ![Adobe Express](./images/expressassets.png)
 
@@ -235,7 +235,7 @@ CitiSignal ロゴを画像の上部の中央に配置します。
 
 ![Adobe Express](./images/expressv56.png)
 
-[https://experience.adobe.com/&rbrace; に移動し ](https://experience.adobe.com/){target="_blank"}**Experience Manager Assets** をクリックします。
+[https://experience.adobe.com/&rbrace; に移動し &#x200B;](https://experience.adobe.com/){target="_blank"}**Experience Manager Assets** をクリックします。
 
 ![Adobe Express](./images/expressv57a.png)
 
@@ -253,8 +253,8 @@ Adobe Expressで作成されたビデオをAdobe Experience Manager Assetsで使
 
 ## 次の手順
 
-[Adobe ExpressでAssetsを一括作成 ](./ex3.md){target="_blank"} に移動します。
+[Adobe ExpressでAssetsを一括作成 &#x200B;](./ex3.md){target="_blank"} に移動します。
 
 [Adobe ExpressとAdobe Experience Cloud](./express.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

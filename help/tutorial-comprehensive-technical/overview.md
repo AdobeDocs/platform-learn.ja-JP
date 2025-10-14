@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Adobe Experience Platform の包括的な技術チュートリアル
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 ## 前提条件
 
-独自のAdobe Experience Platform インスタンスを使用してこのチュートリアルを受ける場合は、手順 [ こちら ](./setup.md) に従って組織をチュートリアルに備えます。
+独自のAdobe Experience Platform インスタンスを使用してこのチュートリアルを受ける場合は、手順 [&#x200B; こちら &#x200B;](./setup.md) に従って組織をチュートリアルに備えます。
 
 - Adobe Experience Platformへのアクセス：[https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Adobe Experience Platform Data Collection へのアクセス：[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
@@ -60,17 +60,17 @@ ht-degree: 2%
 
 ## ビデオ
 
-Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [Experience Makers Community YouTube チャンネル ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) で多数紹介しています。
+Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [Experience Makers Community YouTube チャンネル &#x200B;](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) で多数紹介しています。
 
 ## 完了と資格認定
 
 このチュートリアルは、Adobe資格認定コースの一部です。 このチュートリアルと共にコースに新規登録するには、[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258) にアクセスします。
 
-以下のチュートリアルを使用して完了するすべてのモジュールについて、以下に示すように完了証明書を送信する必要があります [ こちら ](./completion.md)。
+以下のチュートリアルを使用して完了するすべてのモジュールについて、以下に示すように完了証明書を送信する必要があります [&#x200B; こちら &#x200B;](./completion.md)。
 
 ## コンテンツ
 
-以下の内容のステータスを確認するには、[ ステータスページ ](./status.md) をご覧ください。
+以下の内容のステータスを確認するには、[&#x200B; ステータスページ &#x200B;](./status.md) をご覧ください。
 
 [0.はじめに](./modules/gettingstarted/gettingstarted/getting-started.md)
 
@@ -191,7 +191,7 @@ Tech Academy のウェビナーや Bootcamps などの興味深いビデオを [
 
 **時間的投資：** 90 分
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

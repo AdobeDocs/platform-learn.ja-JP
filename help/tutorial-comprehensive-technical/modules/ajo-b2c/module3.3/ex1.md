@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## 3.3.1.1 用語
 
-offer decisioningに関する理解を深めるために、Offer decisioningアプリケーションサービスとAdobe Experience Platformの連携に関する [ 概要 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=ja) を読むことを強くお勧めします。
+offer decisioningに関する理解を深めるために、Offer decisioningアプリケーションサービスとAdobe Experience Platformの連携に関する [&#x200B; 概要 &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=ja) を読むことを強くお勧めします。
 
 offer decisioningを使用するには、次の概念を理解している必要があります。
 
@@ -99,11 +99,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **ルール** に移動します。 「**+ ルールを作成**」をクリックします。
 
-![ 決定規程 ](./images/rules.png)
+![&#x200B; 決定規程 &#x200B;](./images/rules.png)
 
 Adobe Experience Platformのオーディエンス作成インターフェイスが表示されます。
 
-![ 決定規程 ](./images/createrule1.png)
+![&#x200B; 決定規程 &#x200B;](./images/createrule1.png)
 
 これで、リアルタイム顧客プロファイルの結合スキーマの一部であるすべてのフィールドにアクセスし、任意のルールを作成できるようになりました。
 
@@ -111,7 +111,7 @@ Adobe Experience Platformのオーディエンス作成インターフェイス�
 
 次の画面が表示されます。
 
-![ 決定ルール ](./images/decisionruleaud.png)
+![&#x200B; 決定ルール &#x200B;](./images/decisionruleaud.png)
 
 必要に応じて、独自のルールを設定できるようになりました。 この演習では、次の 2 つのルールが必要です。
 
@@ -124,21 +124,21 @@ Adobe Experience Platformのオーディエンス作成インターフェイス�
 
 例えば、ルール **すべて – 男性の顧客** のルール定義を次に示します。
 
-![ 決定ルール ](./images/allmale.png)
+![&#x200B; 決定ルール &#x200B;](./images/allmale.png)
 
 例えば、ルール **all - Female Customers** のルール定義を次に示します。
 
-![ 決定ルール ](./images/allfemale.png)
+![&#x200B; 決定ルール &#x200B;](./images/allfemale.png)
 
 ## 3.3.1.5 のオファー
 
 **オファー** に移動し、「**オファー**」を選択します。 「**+ オファーを作成**」をクリックします。
 
-![ 決定ルール ](./images/offers1.png)
+![&#x200B; 決定ルール &#x200B;](./images/offers1.png)
 
 このポップアップが表示されます。
 
-![ 決定ルール ](./images/offers2.png)
+![&#x200B; 決定ルール &#x200B;](./images/offers2.png)
 
 今はオファーを作成しないでください。次の演習で作成します。
 
@@ -157,11 +157,11 @@ Adobe Experience Platformのオーディエンス作成インターフェイス�
 
 **決定** を設定するには、「**決定**」をクリックします。
 
-![ 決定ルール ](./images/activity.png)
+![&#x200B; 決定ルール &#x200B;](./images/activity.png)
 
 次の演習では、独自のオファーと決定を設定します。
 
-次の手順：[3.3.2 オファーと決定の設定 ](./ex2.md)
+次の手順：[3.3.2 オファーと決定の設定 &#x200B;](./ex2.md)
 
 [モジュール 3.3 に戻る](./offer-decisioning.md)
 

@@ -25,18 +25,18 @@ Visual Editing Helper のブラウザー拡張機能は、at.js または Platfo
 
 ### Visual Editing Helper の取得とインストール
 
-1. [Chrome Web ストアのAdobe Experience Cloud Visual Editing Helper ブラウザー拡張機能 ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) に移動します。
+1. [Chrome Web ストアのAdobe Experience Cloud Visual Editing Helper ブラウザー拡張機能 &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) に移動します。
 1. **Chromeに追加** / **拡張機能を追加** をクリックします。
 1. Target で VEC を開きます。
-1. この拡張機能を使用するには、VEC または QA モードで、Chrome ブラウザーのツールバーにある「Visual Editing Helper」ブラウザー拡張機能アイコン ![Visual Editing 拡張機能アイコン ](assets/VEC-Helper.png){zoomable="yes"}Visual Editing 拡張機能アイコン）をクリックします。
+1. この拡張機能を使用するには、VEC または QA モードで、Chrome ブラウザーのツールバーにある「Visual Editing Helper」ブラウザー拡張機能アイコン ![Visual Editing 拡張機能アイコン &#x200B;](assets/VEC-Helper.png){zoomable="yes"}Visual Editing 拡張機能アイコン）をクリックします。
 
 Target VEC で web サイトを開くと、Visual Editing Helper が自動的に有効になり、オーサリング機能が強化されます。 この拡張機能には、条件付き設定はありません。 この拡張機能では、SameSite Cookie の設定を含むすべての設定を自動的に処理します。
 
-[Visual Editing Helper 拡張機能の詳細 ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=ja) および [Visual Experience Composer のトラブルシューティング ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=ja) については、専用のドキュメントを参照してください。
+[Visual Editing Helper 拡張機能の詳細 &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=ja) および [Visual Experience Composer のトラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=ja) については、専用のドキュメントを参照してください。
 
 >[!IMPORTANT]
 >
->新しい [Visual Editing Helper 拡張機能 ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) は、以前の [Target VEC Helper ブラウザー拡張機能 ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=ja) に代わるものです。 古い VEC Helper 拡張機能がインストールされている場合は、Visual Editing Helper 拡張機能を使用する前に、その拡張機能を削除または無効にする必要があります。
+>新しい [Visual Editing Helper 拡張機能 &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) は、以前の [Target VEC Helper ブラウザー拡張機能 &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=ja) に代わるものです。 古い VEC Helper 拡張機能がインストールされている場合は、Visual Editing Helper 拡張機能を使用する前に、その拡張機能を削除または無効にする必要があります。
 
 ## コンテンツのリクエストと自動適用
 
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 タグでは、「[!UICONTROL &#x200B; ビジュアルパーソナライゼーションの決定をレンダリング &#x200B;] オプションが選択された状態で [!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションタイプを使用します。
 
-![ タグで選択されたレンダリングとビジュアルパーソナライゼーションの決定を使用してイベントを送信 ](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
+![&#x200B; タグで選択されたレンダリングとビジュアルパーソナライゼーションの決定を使用してイベントを送信 &#x200B;](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Visual Experience Composer で行われた [ 手動での変更のレンダリング ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja#manually-rendering-content) を可能にします。 VEC ベースの変更を手動でレンダリングすることは一般的ではありません。 at.js の実装で `getOffers()` 関数を使用して Target `pageLoad` リクエストを手動で実行し、`applyOffers()` を使用してコンテンツをページに適用していないかどうかを確認します。
+>Visual Experience Composer で行われた [&#x200B; 手動での変更のレンダリング &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja#manually-rendering-content) を可能にします。 VEC ベースの変更を手動でレンダリングすることは一般的ではありません。 at.js の実装で `getOffers()` 関数を使用して Target `pageLoad` リクエストを手動で実行し、`applyOffers()` を使用してコンテンツをページに適用していないかどうかを確認します。
 
-Platform Web SDK は、開発者に対して、コンテンツのリクエストとレンダリングに非常に柔軟に対応します。 その他のオプションと詳細については、[ パーソナライズされたコンテンツのレンダリングに関する専用ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja) を参照してください。
+Platform Web SDK は、開発者に対して、コンテンツのリクエストとレンダリングに非常に柔軟に対応します。 その他のオプションと詳細については、[&#x200B; パーソナライズされたコンテンツのレンダリングに関する専用ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ja) を参照してください。
 
 ## 実装の例
 
@@ -249,18 +249,18 @@ Platform Web SDK は、開発者に対して、コンテンツのリクエスト
 
 タグにAdobe Experience Platform Web SDK 拡張機能を追加します。
 
-![Adobe Experience Platform Web SDK 拡張機能の追加 ](assets/library-tags-addExtension.png){zoomable="yes"}
+![Adobe Experience Platform Web SDK 拡張機能の追加 &#x200B;](assets/library-tags-addExtension.png){zoomable="yes"}
 
 必要な設定を追加します。
-![Web SDK タグ拡張機能の移行オプションの設定 ](assets/tags-config-migration.png){zoomable="yes"}
+![Web SDK タグ拡張機能の移行オプションの設定 &#x200B;](assets/tags-config-migration.png){zoomable="yes"}
 
 [!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションと [!UICONTROL &#x200B; ビジュアルパーソナライゼーションの決定をレンダリング &#x200B;] を選択したルールを作成：
-![ タグでレンダーパーソナライゼーションを選択してイベントを送信 ](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
+![&#x200B; タグでレンダーパーソナライゼーションを選択してイベントを送信 &#x200B;](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-次に、をリクエストし、[ フォームベースの Target アクティビティをレンダリング ](render-form-based-activities.md) する方法を説明します。
+次に、をリクエストし、[&#x200B; フォームベースの Target アクティビティをレンダリング &#x200B;](render-form-based-activities.md) する方法を説明します。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

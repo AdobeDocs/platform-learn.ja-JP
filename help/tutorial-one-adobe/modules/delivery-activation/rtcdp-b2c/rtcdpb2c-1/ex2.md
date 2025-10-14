@@ -31,11 +31,11 @@ ht-degree: 1%
 
 左側のメニューで、**プロファイル**、「参照 **の順に移動** ます。
 
-![ 顧客プロファイル ](./images/homemenu.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/homemenu.png)
 
 Web サイトのプロファイルビューアパネルでは、複数の ID を検索できます。 すべての ID は名前空間にリンクされています。
 
-![ 顧客プロファイル ](./images/identities.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/identities.png)
 
 プロファイルビューアパネルでは、ID と名前空間の次の組み合わせを表示できます。
 
@@ -52,30 +52,30 @@ Adobe Experience Platformでは、すべての ID が同じように重要です
 
 「**ID 名前空間**」フィールドで「**メール**」を選択し、「**ID 値**」フィールドで、前の演習で登録に使用したメールアドレスを入力します。 **表示** をクリックします。 すると、リストにプロファイルが表示されます。 **プロファイル ID** をクリックして、プロファイルを開きます。
 
-![ 顧客プロファイル ](./images/popupecid.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/popupecid.png)
 
 これで、顧客プロファイルの重要な **プロファイル属性** の概要が表示されます。 プロファイルで使用可能なすべてのプロファイル属性を表示するには、「**属性**」をクリックします。
 
-![ 顧客プロファイル ](./images/profile.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/profile.png)
 
 すべての属性の完全なリストが表示されます。
 
-![ 顧客プロファイル ](./images/profilattr.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/profilattr.png)
 
 **イベント** に移動すると、プロファイルにリンクされているすべてのエクスペリエンスイベントのエントリを確認できます。
 
-![ 顧客プロファイル ](./images/profileee.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/profileee.png)
 
 最後に、メニューオプション **オーディエンスメンバーシップ** に移動します。 ここでは、この顧客の選定中のすべてのオーディエンスを確認できます。 現在リストは空の場合がありますが、次のモジュールでは変更されます。
 
-![ 顧客プロファイル ](./images/profileseg.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/profileseg.png)
 
 これで、Adobe Experience Platformのユーザーインターフェイスを使用して顧客のリアルタイムプロファイルを表示する方法を説明しました。次に、PostmanとAdobe I/Oを使用してAdobe Experience Platformの API に対してクエリを実行し、API を通じて同じ操作を実行します。
 
 ## 次の手順
 
-[2.1.3 に移動する独自のリアルタイム顧客プロファイル - API を視覚化する ](./ex3.md){target="_blank"}
+[2.1.3 に移動する独自のリアルタイム顧客プロファイル - API を視覚化する &#x200B;](./ex3.md){target="_blank"}
 
-[ リアルタイム顧客プロファイル ](./real-time-customer-profile.md){target="_blank"} に戻る
+[&#x200B; リアルタイム顧客プロファイル &#x200B;](./real-time-customer-profile.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

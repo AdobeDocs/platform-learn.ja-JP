@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # セグメントの一致の設定フロー
 
-データパートナーとのセグメント共有が接続されると、データを探索し、パートナーとのデータの共有を開始できます。このビデオでは、データ共有用に Segment Match インスタンスを設定するプロセスについて説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ja) を参照してください。
+データパートナーとのセグメント共有が接続されると、データを探索し、パートナーとのデータの共有を開始できます。このビデオでは、データ共有用に Segment Match インスタンスを設定するプロセスについて説明します。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/346707/?learn=on&enablevpops&captions=jpn)

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # アカウントプロファイルの表示
 
-Real-Time Customer Data Platform、B2B editionおよびAdobe Experience Platformでアカウントプロファイルとオポチュニティを表示する方法を説明します。 詳しくは、[ プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=ja) を参照してください。
+Real-Time Customer Data Platform、B2B editionおよびAdobe Experience Platformでアカウントプロファイルとオポチュニティを表示する方法を説明します。 詳しくは、[&#x200B; プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3446578?learn=on&enablevpops&captions=jpn)
 

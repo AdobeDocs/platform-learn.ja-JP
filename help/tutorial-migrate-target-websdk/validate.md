@@ -19,7 +19,7 @@ Target 実装を at.js から Platform Web SDK に移行した後、実稼動サ
 * オーディエンスとプロファイルスクリプトを再確認して、Platform Web SDK と互換性があることを確認します
 * Adobeまたはサードパーティアプリケーションとの統合が正しく機能することを確認します
 
-Target の実装は、使用するサイトのアーキテクチャと機能によって異なります。 以下の表を出発点として使用し、実装に固有の項目を追加することができます。 このチュートリアルの [ デバッグページ ](debugging.md) には、この検証に役立つツールが表示されています。
+Target の実装は、使用するサイトのアーキテクチャと機能によって異なります。 以下の表を出発点として使用し、実装に固有の項目を追加することができます。 このチュートリアルの [&#x200B; デバッグページ &#x200B;](debugging.md) には、この検証に役立つツールが表示されています。
 
 ## 技術的検証
 
@@ -92,8 +92,8 @@ Target の実装は、使用するサイトのアーキテクチャと機能に�
 
 上記の検証手順を実行すれば、Platform Web SDK 実装を実稼動に移行する準備が整ったことが確認できます。
 
-次に、Platform Web SDK を使用した Target 実装のトラブルシューティング [ 方法を説明 ](debugging.md) ます。
+次に、Platform Web SDK を使用した Target 実装のトラブルシューティング [&#x200B; 方法を説明 &#x200B;](debugging.md) ます。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

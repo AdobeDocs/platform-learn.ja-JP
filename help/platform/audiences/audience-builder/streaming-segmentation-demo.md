@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # ストリーミングセグメント化のデモ
 
-Adobe Experience Platformのストリーミングセグメント化機能を使用して、リアルタイムデータに基づいてカスタマーエクスペリエンスをパーソナライズする方法を説明します。 カスタマーエクスペリエンスの例を参照し、インターフェイスのクイックツアーを取得します。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+Adobe Experience Platformのストリーミングセグメント化機能を使用して、リアルタイムデータに基づいてカスタマーエクスペリエンスをパーソナライズする方法を説明します。 カスタマーエクスペリエンスの例を参照し、インターフェイスのクイックツアーを取得します。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

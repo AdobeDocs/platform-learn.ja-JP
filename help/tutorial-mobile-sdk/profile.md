@@ -18,7 +18,7 @@ ht-degree: 1%
 
 プロファイル拡張機能は、クライアントサイド操作プロファイル（CSOP）の管理、API への対応方法の提供、ユーザープロファイル属性の更新、生成されたイベントとしてのシステムのその他の部分とのユーザープロファイル属性の共有を行います。
 
-プロファイルデータは、他の拡張機能でプロファイル関連のアクションを実行する際に使用されます。 例えば、プロファイルデータを使用し、プロファイルデータに基づいてルールを実行するルールエンジン拡張機能があります。 [ プロファイル拡張機能 ](https://developer.adobe.com/client-sdks/documentation/profile/) について詳しくは、ドキュメントを参照してください
+プロファイルデータは、他の拡張機能でプロファイル関連のアクションを実行する際に使用されます。 例えば、プロファイルデータを使用し、プロファイルデータに基づいてルールを実行するルールエンジン拡張機能があります。 [&#x200B; プロファイル拡張機能 &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/) について詳しくは、ドキュメントを参照してください
 
 >[!IMPORTANT]
 >
@@ -60,9 +60,9 @@ ht-degree: 1%
 
    1. `attributeName` （例：`isPaidUser`）および `attributeValue` （例：`yes`）を使用して、要素を辞書に追加します。
 
-   1. `profileMap` ディクショナリを `attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
+   1. `profileMap` ディクショナリを `attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
 
-1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Products]**/**[!DNL ProductView]** に移動し、（購入のコード `updateUserAttributes`CreditCard![ ボタン内で） ](/help/assets/icons/CreditCard.svg) への呼び出しを見つけます。 次のコードを追加します。
+1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!DNL Views]**/**[!DNL Products]**/**[!DNL ProductView]** に移動し、（購入のコード `updateUserAttributes`CreditCard![&#x200B; ボタン内で） &#x200B;](/help/assets/icons/CreditCard.svg) への呼び出しを見つけます。 次のコードを追加します。
 
    ```swift
    // Update attributes
@@ -85,9 +85,9 @@ ht-degree: 1%
 
    1. `attributeName` （例：`isPaidUser`）および `attributeValue` （例：`yes`）を使用して、マップに要素を追加します。
 
-   1. `profileMap` マップを、`attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
+   1. `profileMap` マップを、`attributeDict`[`UserProfile.updateUserAttributes` API 呼び出しの &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) パラメーターへの値として使用します。
 
-1. **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL views]**/**[!UICONTROL ProductView.kt]** に移動し、（購入 `updateUserAttributes`CreditCard![ ボタンのコード内で） ](/help/assets/icons/CreditCard.svg) の呼び出しを見つけます。 次のコードを追加します。
+1. **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!DNL com.adobe.luma.tutorial.android]**/**[!UICONTROL views]**/**[!UICONTROL ProductView.kt]** に移動し、（購入 `updateUserAttributes`CreditCard![&#x200B; ボタンのコード内で） &#x200B;](/help/assets/icons/CreditCard.svg) の呼び出しを見つけます。 次のコードを追加します。
 
    ```kotlin
    // Update attributes
@@ -122,7 +122,7 @@ ht-degree: 1%
 
    このコード：
 
-   1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
+   1. [`UserProfile.getUserAttributes` の属性名を持つ &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
    1. 次に、`isPaidUser` 属性の値をチェックし、`yes` 定すると、右上のツールバーにある ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) アイコンにバッジが付きます。
 
 >[!TAB Android]
@@ -138,16 +138,16 @@ ht-degree: 1%
 
    このコード：
 
-   1. [`UserProfile.getUserAttributes` の属性名を持つ ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
+   1. [`UserProfile.getUserAttributes` の属性名を持つ &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API を `attributeNames` 配列の単一の要素として呼び出します。
    1. 次に、`isPaidUser` 属性の値を確認します。 `yes` の場合、コードは右上のツールバーにある人物アイコンをバッジアイコンに置き換えます。
 
 >[!ENDTABS]
 
-詳しくは、[API リファレンス ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を参照してください。
+詳しくは、[API リファレンス &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) を参照してください。
 
 ## Assurance での検証
 
-1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+1. [&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 1. アプリを実行してログインし、製品とやり取りします。
 
 >[!BEGINTABS]
@@ -156,7 +156,7 @@ ht-degree: 1%
 
 1. タブバーの **[!UICONTROL ホーム]** を選択します。
 1. Assurance アイコンを左に移動します。
-1. ログインシートを開くには、「![ ユーザー ](/help/assets/icons/User.svg)」ボタンを選択します。
+1. ログインシートを開くには、「![&#x200B; ユーザー &#x200B;](/help/assets/icons/User.svg)」ボタンを選択します。
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
@@ -167,7 +167,7 @@ ht-degree: 1%
 
 1. タブバーで「**[!DNL Products]**」を選択します。
 1. 製品を 1 つ選択します。
-1. ![ ハート ](/help/assets/icons/Heart.svg) を選択します。
+1. ![&#x200B; ハート &#x200B;](/help/assets/icons/Heart.svg) を選択します。
 1. ![ShoppingCart](/help/assets/icons/ShoppingCart.svg) を選択します。
 1. ![CreditCard](/help/assets/icons/CreditCard.svg) を選択します。
 
@@ -182,7 +182,7 @@ ht-degree: 1%
 
 1. タブバーの **[!UICONTROL ホーム]** を選択します。
 1. Assurance アイコンを左に移動します。
-1. ログインシートを開くには、「![ ユーザー ](/help/assets/icons/User.svg)」ボタンを選択します。
+1. ログインシートを開くには、「![&#x200B; ユーザー &#x200B;](/help/assets/icons/User.svg)」ボタンを選択します。
 
    <img src="./assets/mobile-app-events-1-android.png" width="300">
 
@@ -208,12 +208,12 @@ ht-degree: 1%
 
 Assurance UI に、更新された **[!UICONTROL 値を持つ]** UserProfileUpdate **[!UICONTROL および]** getUserAttributes`profileMap` イベントが表示されます。
 
-![ プロファイルを検証 ](assets/profile-validate.png){zoomable="yes"}
+![&#x200B; プロファイルを検証 &#x200B;](assets/profile-validate.png){zoomable="yes"}
 
 >[!SUCCESS]
 >
 >これで、Edge Network内および（設定時に）Adobe Experience Platformでプロファイルの属性を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[場所を使用](places.md)**

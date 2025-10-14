@@ -20,11 +20,11 @@ ht-degree: 3%
 
 Adobe Analytics拡張機能には、「グローバル変数」という設定セクションがあります。
 
-![ グローバル変数ラベル ](assets/analytics-global-variables-label.jpg)
+![&#x200B; グローバル変数ラベル &#x200B;](assets/analytics-global-variables-label.jpg)
 
 グローバル変数は、Analytics トラッキングオブジェクトがページ上で初期化されたときに、そのオブジェクトで設定される変数です。ここで設定した変数は、トラッキングオブジェクトが各ページで作成されたときに設定されます。
 
-![ グローバル変数セット ](assets/analytics-set-global-variables.jpg)
+![&#x200B; グローバル変数セット &#x200B;](assets/analytics-set-global-variables.jpg)
 
 変数が設定されている場合は、これらを web SDKにも移行する必要があります。
 
@@ -39,7 +39,7 @@ Adobe Analytics拡張機能には、「グローバル変数」という設定�
 
 1. Adobe Analytics拡張機能の設定を開きます
 
-   ![AA 拡張機能の設定 ](assets/configure-analytics-extension.jpg)
+   ![AA 拡張機能の設定 &#x200B;](assets/configure-analytics-extension.jpg)
 
 1. 「グローバル変数」セクション（上の画像）までスクロールして開き、設定されている任意の変数またはすべての変数をメモします。 これらの変数と値については、後の手順で知る必要があります。
 1. Analytics 拡張機能から取り消します。
@@ -47,7 +47,7 @@ Adobe Analytics拡張機能には、「グローバル変数」という設定�
 1. 新しいルールに「グローバル変数」という名前を付けます。
 1. 「イベント」の下の「追加」ボタンをクリックします。
 
-   ![ グローバル変数ルール 1](assets/global-variable-rule-1.jpg)
+   ![&#x200B; グローバル変数ルール 1](assets/global-variable-rule-1.jpg)
 
 1. 他のルールの前にトリガーするようにイベントを設定します。 イベントタイプと、他のルールで使用した順序を知っておく必要があります。 値の例：
    1. **拡張機能** をコアに設定
@@ -55,7 +55,7 @@ Adobe Analytics拡張機能には、「グローバル変数」という設定�
    1. **詳細オプション** を展開します。
    1. **順序** を他のルールよりも小さい数に設定して、最初に実行されるようにします。
 
-      ![ グローバル変数イベントの設定 ](assets/configure-global-variable-event.jpg)
+      ![&#x200B; グローバル変数イベントの設定 &#x200B;](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >
       >ここでの主な理由は、デフォルトのページ読み込みルールの前にこのルールが起動し、このルールで設定されたすべての変数が sendEvent ルールを介して Analytics に送信できるということです。 ただし、Analytics 拡張機能のグローバル変数セクションで設定された変数は他のルールで変更される可能性があるので、このルールが全体として **最初** に実行されることを示唆しています。 私たちはその機能を模倣しています。 上記のサンプルでは、「10」が他のルールよりも低い順序番号であると仮定しています。 それが正しくない場合は、他のルールよりも小さい数値に変更してください。

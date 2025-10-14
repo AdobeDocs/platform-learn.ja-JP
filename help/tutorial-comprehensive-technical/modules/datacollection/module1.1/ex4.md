@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使用できる拡張機能で、web ページに実装されたAdobe テクノロジーを確認するのに役立ちます。 使用するブラウザーのバージョンをインストールします。
 
-- [Firefox 拡張機能 ](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
+- [Firefox 拡張機能 &#x200B;](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
 
-- [Chrome拡張機能 ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+- [Chrome拡張機能 &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 初めて Debugger を使用する場合は（以前のAdobe Experience Cloud Debugger とは異なります）、次の 5 分間の概要ビデオをご覧ください。
 
@@ -34,7 +34,7 @@ Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使
 - 開発者モード
 - 匿名モードで許可
 
-![EXP ニュースホームページ ](./images/ext1.png)
+![EXP ニュースホームページ &#x200B;](./images/ext1.png)
 
 ### デモ Web サイトを開きます。
 
@@ -66,45 +66,45 @@ Experience Platform Debugger は、Chromeおよび Firefox ブラウザーで使
 
 デモ Web サイトが開いていることを確認し、Experience Platform Debugger 拡張機能アイコンをクリックします。
 
-![EXP ニュースホームページ ](./images/ext2.png)
+![EXP ニュースホームページ &#x200B;](./images/ext2.png)
 
 デバッガーが開き、Adobe Experience Platform Data Collection プロパティで作成した実装の詳細が表示されます。 編集中の拡張機能とルールをデバッグしていることを忘れないでください。
 
 右上の **[!UICONTROL ログイン]** ボタンをクリックして認証します。 Adobe Experience Platform Data Collection インターフェイスで既にブラウザータブを開いている場合、認証手順は自動的に行われ、ユーザー名とパスワードを再度入力する必要はありません。
 
-![AEP デバッガー ](./images/validate2.png)
+![AEP デバッガー &#x200B;](./images/validate2.png)
 
 その後、デバッガーにログインします。
 
-![AEP デバッガー ](./images/validate2ab.png)
+![AEP デバッガー &#x200B;](./images/validate2ab.png)
 
 デモ Web サイトでリロードボタンを押して、デバッガーをその特定のタブに接続します。
 
-![AEP デバッガー ](./images/validate2a.png)
+![AEP デバッガー &#x200B;](./images/validate2a.png)
 
 上の図のように、デバッガーが **[!UICONTROL ホームに接続]** されていることを確認し、**[!UICONTROL lock]** アイコンをクリックして、デバッガーをデモ Web サイトにロックします。 そうしないと、デバッガーが切り替わり続けて、フォーカスされているブラウザータブの実装の詳細が表示されるので、混乱が生じるおそれがあります。 デバッガーがロックされると、アイコンが **ロック解除** に変わります。
 
-![AEP デバッガー ](./images/validate3.png)
+![AEP デバッガー &#x200B;](./images/validate3.png)
 
 次に、デモ Web サイトの任意のページ（例：**プラン** カテゴリページ）に移動します。
 
-![AEP デバッガー AEP Web SDK拡張機能 ](./images/validate4.png)
+![AEP デバッガー AEP Web SDK拡張機能 &#x200B;](./images/validate4.png)
 
 左側のナビゲーションで **[!UICONTROL Experience Platform Web SDK]** をクリックして、**[!UICONTROL ネットワークリクエスト]** を表示します。
 
 各リクエストには **[!UICONTROL events]** 行が含まれます。
 
-![AEP デバッガー AEP Web SDK拡張機能 ](./images/validate5.png)
+![AEP デバッガー AEP Web SDK拡張機能 &#x200B;](./images/validate5.png)
 
 クリックすると、**[!UICONTROL events]** 行が開きます。 **web.webpagedetails.pageViews** イベントと、**Web SDK ExperienceEvent XDM** 形式に準拠するその他の標準変数を確認する方法に注意してください。
 
-![Events 値 ](./images/validate8.png)
+![Events 値 &#x200B;](./images/validate8.png)
 
 このようなリクエストの詳細は、「ネットワーク」タブにも表示されます。 **インタラクション** を使用してリクエストをフィルタリングし、web SDKから送信されたリクエストを特定します。 XDM ペイロードのすべての詳細については、ペイロード セクションを参照してください。
 
-![ 「ネットワーク」タブ ](./images/validate9.png)
+![&#x200B; 「ネットワーク」タブ &#x200B;](./images/validate9.png)
 
-次の手順：[1.1.5 Adobe AnalyticsとAdobe Audience Managerを実装する ](./ex5.md)
+次の手順：[1.1.5 Adobe AnalyticsとAdobe Audience Managerを実装する &#x200B;](./ex5.md)
 
 [モジュール 1.1 に戻る](./data-ingestion-launch-web-sdk.md)
 

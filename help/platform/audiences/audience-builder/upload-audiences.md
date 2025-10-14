@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # Adobe Experience Platformへのオーディエンスのアップロード
 
-オーディエンスを CSV 形式でAdobe Experience Platformにアップロードする方法を説明します。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/audience-portal#import-audience) を参照してください。
+オーディエンスを CSV 形式でAdobe Experience Platformにアップロードする方法を説明します。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/audience-portal#import-audience) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423359/?learn=on&enablevpops&captions=jpn)

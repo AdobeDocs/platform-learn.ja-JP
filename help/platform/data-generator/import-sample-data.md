@@ -26,14 +26,14 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 >[!NOTE]
 >
->このチュートリアルの最終結果は、[ データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの基本を学ぶ ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja) チュートリアルと同様のデータを含んだサンドボックスになります。 [Journey Optimizerの課題 ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja) をサポートするために 2023 年 4 月に更新されました。 認証方法を OAuth に切り替えるために 2023 年 6 月に更新されました。
+>このチュートリアルの最終結果は、[&#x200B; データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの基本を学ぶ &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja) チュートリアルと同様のデータを含んだサンドボックスになります。 [Journey Optimizerの課題 &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja) をサポートするために 2023 年 4 月に更新されました。 認証方法を OAuth に切り替えるために 2023 年 6 月に更新されました。
 
 
 ## 前提条件
 
-* Experience Platform API にアクセスし、認証方法を理解している。 そうでない場合は、この [ チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ja) を確認してください。
+* Experience Platform API にアクセスし、認証方法を理解している。 そうでない場合は、この [&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ja) を確認してください。
 * Experience Platform開発用サンドボックスにアクセスできます。
-* Experience Platform テナント ID を把握している。 認証済みの [API リクエスト ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ja#know-your-tenant_id) を行うことで取得できます
+* Experience Platform テナント ID を把握している。 認証済みの [API リクエスト &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ja#know-your-tenant_id) を行うことで取得できます
 または、Platform アカウントにログインする際に URL から抽出します。 例えば、次の URL では、テナントは「`techmarketingdemos`」 `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home` です。
 
 ## 使用 [!DNL Postman] {#postman}
@@ -56,17 +56,17 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
    >[!NOTE]
    > Macのファイルパスを取得するには、`platform-utils-main` フォルダーに移動し、そのフォルダーを右クリックして **情報を取得** オプションを選択します。
    >
-   > ![MAC ファイル パス ](../assets/data-generator/images/mac-file-path.png)
+   > ![MAC ファイル パス &#x200B;](../assets/data-generator/images/mac-file-path.png)
 
    >[!NOTE]
    > Windows でファイル パスを取得するには、目的のフォルダの場所をクリックして開き、アドレス バーのパスの右側を右クリックします。 アドレスをコピーしてファイルパスを取得します。
    > 
-   > ![Windows ファイルパス ](../assets/data-generator/images/windows-file-path.png)
+   > ![Windows ファイルパス &#x200B;](../assets/data-generator/images/windows-file-path.png)
 
 1. [!DNL Postman] を開き、**ワークスペース** ドロップダウンメニューからワークスペースを作成します。\
-   ![ ワークスペースを作成 ](../assets/data-generator/images/create-workspace.png)
+   ![&#x200B; ワークスペースを作成 &#x200B;](../assets/data-generator/images/create-workspace.png)
 1. ワークスペースの **名前** とオプションの **概要** を入力し、「**Workspaceを作成**」をクリックします。 新 [!DNL Postman] いワークスペースを作成すると、そのワークスペースに切り替わります。
-   ![ ワークスペースを保存 ](../assets/data-generator/images/save-workspace.png)
+   ![&#x200B; ワークスペースを保存 &#x200B;](../assets/data-generator/images/save-workspace.png)
 1. 次に、このワークスペースで [!DNL Postman] コレクションを実行するように、いくつかの設定を調整します。 [!DNL Postman] のヘッダーで、歯車アイコンをクリックし、「**設定** を選択して、設定モーダルを開きます。 キーボードショートカット（CMD/CTRL +）を使用してモーダルを開くこともできます。
 1. 「`General`」タブで、リクエストタイムアウトをミリ秒単位で更新して、`5000 ms` を有効にし `allow reading file outside this directory` す。
    ![設定](../assets/data-generator/images/settings.png)
@@ -76,12 +76,12 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 1. **設定** パネルを閉じます。
 1. **環境** を選択してから、「**読み込み**」を選択します。
-   ![ 環境のインポート ](../assets/data-generator/images/env-import.png)
+   ![&#x200B; 環境のインポート &#x200B;](../assets/data-generator/images/env-import.png)
 1. ダウンロードした json 環境ファイル `DataInExperiencePlatform.postman_environment` を読み込みます。
 1. Postmanで、右上のドロップダウンで環境を選択し、目のアイコンをクリックして、環境変数を表示します。
-   ![ 環境の選定 ](../assets/data-generator/images/env-selection.png)
+   ![&#x200B; 環境の選定 &#x200B;](../assets/data-generator/images/env-selection.png)
 
-1. 次の環境変数が入力されていることを確認します。 環境変数の値の取得方法について詳しくは、[Experience Platform API への認証 ](/help/platform/api/platform-api-authentication.md) チュートリアルを参照してください。
+1. 次の環境変数が入力されていることを確認します。 環境変数の値の取得方法について詳しくは、[Experience Platform API への認証 &#x200B;](/help/platform/api/platform-api-authentication.md) チュートリアルを参照してください。
 
    * `CLIENT_SECRET`
    * `API_KEY`—Adobe Developer Consoleの `Client ID`
@@ -116,7 +116,7 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
    * `6-Luma-Test-Profiles.postman_collection.json`
    * `7-Luma-Web-Events.postman_collection.json`
 
-   ![ コレクションのインポート ](../assets/data-generator/images/collection-files.png)
+   ![&#x200B; コレクションのインポート &#x200B;](../assets/data-generator/images/collection-files.png)
 
 ### 認証
 
@@ -124,7 +124,7 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 1. `0-Authentication` コレクションを開き、`OAuth: Request Access Token` リクエストを選択し、「`SEND`」をクリックして認証し、アクセストークンを取得します。
 
-   ![ コレクションのインポート ](../assets/data-generator/images/authentication.png)
+   ![&#x200B; コレクションのインポート &#x200B;](../assets/data-generator/images/authentication.png)
 
 1. 環境変数を確認し、`ACCESS_TOKEN` が入力されていることを確認します。
 
@@ -134,11 +134,11 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 1. `1-Luma-Loyalty-Data` コレクションを開き、「概要」タブで **実行** をクリックして、コレクションランナーを起動します。
 
-   ![ コレクションのインポート ](../assets/data-generator/images/loyalty.png)
+   ![&#x200B; コレクションのインポート &#x200B;](../assets/data-generator/images/loyalty.png)
 
 1. コレクションランナーウィンドウで、必ずドロップダウンから環境を選択し、「**遅延**」を `4000ms` に更新して、「**応答を保存**」オプションをオンにし、実行順序が正しいことを確認します。 **Luma ロイヤルティデータを実行** ボタンをクリックします
 
-   ![ コレクションのインポート ](../assets/data-generator/images/loyalty-run.png)
+   ![&#x200B; コレクションのインポート &#x200B;](../assets/data-generator/images/loyalty-run.png)
 
    >[!NOTE]
    >
@@ -150,11 +150,11 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 1. 問題がなければ、`Luma-Loyalty-Data` コレクション内のすべてのリクエストが合格します。
 
-   ![ ロイヤルティの結果 ](../assets/data-generator/images/loyalty-result.png)
+   ![&#x200B; ロイヤルティの結果 &#x200B;](../assets/data-generator/images/loyalty-result.png)
 
-1. 次に、[Adobe Experience Platform インターフェイスにログインし ](https://platform.adobe.com/) データセットに移動します。
+1. 次に、[Adobe Experience Platform インターフェイスにログインし &#x200B;](https://platform.adobe.com/) データセットに移動します。
 1. `Luma Loyalty Dataset` データセットを開き、データセットアクティビティ ウィンドウで、1,000 件のレコードを取り込んだ正常なバッチ実行を表示できます。 「データセットをプレビュー」オプションをクリックして、取り込んだレコードを確認することもできます。 1,000 個の [!UICONTROL &#x200B; 新しいプロファイルフラグメント &#x200B;] が作成されたことを確認するには、数分待つ必要がある場合があります。
-   ![ ロイヤルティデータセット ](../assets/data-generator/images/loyalty-dataset.png)
+   ![&#x200B; ロイヤルティデータセット &#x200B;](../assets/data-generator/images/loyalty-dataset.png)
 1. 手順 1 ～ 3 を繰り返し、他のコレクションを実行します。
    * `2-Luma-CRM-Data.postman_collection.json` は、顧客の CRM データ用のスキーマと入力されたデータセットを作成します。 このスキーマは、デモグラフィックの詳細、個人の連絡先の詳細、環境設定の詳細、カスタム ID フィールドグループで構成される XDM 個人プロファイル クラスに基づいています。
    * `3-Luma-Product-Catalog.postman_collection.json` は、製品カタログ情報のスキーマと入力されたデータセットを作成します。 このスキーマは、カスタム製品カタログクラスに基づいており、カスタム製品カタログフィールドグループを使用します。
@@ -166,7 +166,7 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 
 ## 検証
 
-サンプルデータは、コレクションを実行すると、複数のシステムからのデータを組み合わせたリアルタイム顧客プロファイルが構築されるように設計されています。 この良い例としては、ロイヤルティ、CRM、オフライン購入の各データセットの最初のレコードがあります。 そのプロファイルを検索して、データが取り込まれたことを確認します。 [Adobe Experience Platform インターフェイス ](https://experience.adobe.com/platform/):
+サンプルデータは、コレクションを実行すると、複数のシステムからのデータを組み合わせたリアルタイム顧客プロファイルが構築されるように設計されています。 この良い例としては、ロイヤルティ、CRM、オフライン購入の各データセットの最初のレコードがあります。 そのプロファイルを検索して、データが取り込まれたことを確認します。 [Adobe Experience Platform インターフェイス &#x200B;](https://experience.adobe.com/platform/):
 
 1. **[!UICONTROL プロファイル]**/**[!UICONTROL 参照]** に移動します。
 1. `Luma Loyalty Id`ID 名前空間 **[!UICONTROL として]** を選択します
@@ -178,25 +178,25 @@ Experience Platformのビジネスユーザーは、多くの場合、フィー�
 >プロファイルが表示されない場合は、「[!UICONTROL &#x200B; データセット &#x200B;]」ページをチェックして、すべてのデータセットが正常に作成されてデータを取り込んだことを確認します。 問題がないようであれば、15 分待って、プロファイルがビューアで使用できるかどうかを確認します。  データの取り込みに問題があった場合は、エラーメッセージを確認して問題を見つけます。 また、[!UICONTROL &#x200B; データセット &#x200B;] ページでエラー診断を有効にし、json データファイルをドラッグ&amp;ドロップしてデータを再度取り込むこともできます。
 
 
-![ プロファイルを開く ](../assets/data-generator/images/validation-profile-open.png)
+![&#x200B; プロファイルを開く &#x200B;](../assets/data-generator/images/validation-profile-open.png)
 
 「**[!UICONTROL 属性]**」タブと **[!UICONTROL イベント]** タブでデータを参照すると、プロファイルに様々なデータファイルのデータが含まれていることがわかります。
-![ オフライン購入イベントファイルからのイベントデータ ](../assets/data-generator/images/validation-profile-events.png)
+![&#x200B; オフライン購入イベントファイルからのイベントデータ &#x200B;](../assets/data-generator/images/validation-profile-events.png)
 
 ## 次の手順
 
-Adobe Journey Optimizerについて学びたい場合は、このサンドボックスに、[Journey Optimizerの課題に取り組むために必要なすべてが含まれています ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja)
+Adobe Journey Optimizerについて学びたい場合は、このサンドボックスに、[Journey Optimizerの課題に取り組むために必要なすべてが含まれています &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ja)
 
-結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて詳しくは、[ データアーキテクトおよびデータエンジニア向けスタートガイド チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ja) に進んでください。 この他のチュートリアルの前のレッスンでは、これらのPostman コレクションで入力されたすべてのものを手動で構築しました。すぐに始めましょう。
+結合ポリシー、データガバナンス、クエリサービス、セグメントビルダーについて詳しくは、[&#x200B; データアーキテクトおよびデータエンジニア向けスタートガイド チュートリアルのレッスン 11](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ja) に進んでください。 この他のチュートリアルの前のレッスンでは、これらのPostman コレクションで入力されたすべてのものを手動で構築しました。すぐに始めましょう。
 
 このサンドボックスにリンクする web SDKのサンプル実装を作成する場合は、
-[Web SDKを使用したAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「タグ設定」、「Experience Platformの設定」の各レッスンを設定したら、パスワード `luma-crm.json` を使用して、`test` ファイルの最初の 10 個のメールアドレスで Luma web サイトにログインし、プロファイルフラグメントがこのチュートリアルでアップロードしたデータと結合されることを確認します。
+[Web SDKを使用したAdobe Experience Cloudの実装チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「タグ設定」、「Experience Platformの設定」の各レッスンを設定したら、パスワード `luma-crm.json` を使用して、`test` ファイルの最初の 10 個のメールアドレスで Luma web サイトにログインし、プロファイルフラグメントがこのチュートリアルでアップロードしたデータと結合されることを確認します。
 
 サンプルの Mobile SDK実装を作成して、このサンドボックスにリンクするには、以下を実行します
-[ モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「アプリの実装」、「Experience Platform」のレッスンを設定したら、`luma-crm.json` ファイルの最初のメールアドレスを使用して Luma web サイトにログインし、このチュートリアルでアップロードされたデータとプロファイルフラグメントの結合を確認します。
+[&#x200B; モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)。 Web SDK チュートリアルの「初期設定」、「アプリの実装」、「Experience Platform」のレッスンを設定したら、`luma-crm.json` ファイルの最初のメールアドレスを使用して Luma web サイトにログインし、このチュートリアルでアップロードされたデータとプロファイルフラグメントの結合を確認します。
 
 ## サンドボックス環境のリセット {#reset-sandbox}
 
 実稼動以外のサンドボックスをリセットすると、サンドボックスの名前と関連付けられた権限は保持されたまま、そのサンドボックスに関連付けられているすべてのスキーマ（リソース、データセットなど）が削除されます。この「クリーンな」サンドボックスは、引き続き、アクセス権を持つユーザーと同じ名前で使用できます。
 
-サンドボックス環境をリセットするには、[ こちら ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=ja#reset-a-sandbox) の手順に従います。
+サンドボックス環境をリセットするには、[&#x200B; こちら &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=ja#reset-a-sandbox) の手順に従います。

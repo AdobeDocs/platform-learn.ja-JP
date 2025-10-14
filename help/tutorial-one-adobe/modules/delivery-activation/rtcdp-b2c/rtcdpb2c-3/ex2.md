@@ -66,8 +66,8 @@ ht-degree: 2%
 
 ## 次の手順
 
-[2.3.3 に移動アクションの実行：オーディエンスを DV360 に送信 ](./ex3.md){target="_blank"}
+[2.3.3 に移動アクションの実行：オーディエンスを DV360 に送信 &#x200B;](./ex3.md){target="_blank"}
 
-[Real-time CDP - オーディエンスの作成とアクションの実行 ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
+[Real-time CDP - オーディエンスの作成とアクションの実行 &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

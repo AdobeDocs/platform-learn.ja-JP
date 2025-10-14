@@ -338,15 +338,15 @@ Adobe Journey Optimizerでランディングページを使用するには、プ
 
 メールに記載されているリンクをクリックして、環境設定を更新します。
 
-![Launch の設定 ](./images/email.png)
+![Launch の設定 &#x200B;](./images/email.png)
 
 作成したフォームが表示されます。 一部のチェックボックスを有効にして、「**保存**」をクリックします。
 
-![Launch の設定 ](./images/email1.png)
+![Launch の設定 &#x200B;](./images/email1.png)
 
 確認メッセージが表示されます。
 
-![Launch の設定 ](./images/email2.png)
+![Launch の設定 &#x200B;](./images/email2.png)
 
 ## 3.6.2.6 購読リストのレポート
 
@@ -366,6 +366,6 @@ Adobe Journey Optimizerでランディングページを使用するには、プ
 
 [3.6.3 AJOとGenStudio for Performance Marketing](./ex3.md)
 
-[Adobe Journey Optimizer：コンテンツ管理 ](./ajocontent.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：コンテンツ管理 &#x200B;](./ajocontent.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -37,31 +37,31 @@ ht-degree: 0%
 
 1. 条件付きルールを見つけます。 この例では、キャンペーントラッキングコードルールを見つけて選択します。
 
-   ![ キャンペーントラッキングコードルールの選択 ](assets/campaign-tracking-code-rule-select.jpg)
+   ![&#x200B; キャンペーントラッキングコードルールの選択 &#x200B;](assets/campaign-tracking-code-rule-select.jpg)
 
 1. ルールが開くと、このルールがクエリ文字列パラメーターに基づいて起動する条件があることがわかります。 イベントや条件ではなく、アクションを更新または移行するだけなので、条件に関する変更は必要ありません。
 1. **Adobe Analytics – 変数を設定** アクションをクリックします
 1. アクションで設定されている内容をメモします。 この例では、**event101** と **Campaign** 変数が設定されています。
 
    ![event101](assets/event101.jpg)
-   ![ キャンペーン変数 ](assets/campaign-variable.jpg)
+   ![&#x200B; キャンペーン変数 &#x200B;](assets/campaign-variable.jpg)
 
 1. ここではクリックするだけでメモを作成します。何も変更する必要はありません。ここでは、「**キャンセル**」をクリックするだけです。
 1. 「アクション」セクションの **プラスアイコン** をクリックして、新しいアクションを作成します
 
-   ![ 新規アクション ](assets/new-action-conditional-rule.jpg)
+   ![&#x200B; 新規アクション &#x200B;](assets/new-action-conditional-rule.jpg)
 
 1. 新しいルールの設定
    1. 拡張機能ドロップダウンから **0&rbrace;Adobe Experience Platform Web SDK&rbrace; を選択します。**
    1. 「アクションタイプ」ドロップダウンから **変数を更新** を選択します。
    1. 右側のパネルで、データオブジェクト内の **Analytics** オブジェクトを選択します
 
-      ![ 変数を更新アクション ](assets/configure-conditional-rule-action.jpg)
+      ![&#x200B; 変数を更新アクション &#x200B;](assets/configure-conditional-rule-action.jpg)
 
 1. 次に、event101 と campaign 変数を、既存のアクションで設定したのと同じ値に設定します。
 
-   ![event101 を設定 ](assets/web-sdk-event101.jpg)
-   ![ キャンペーンを設定 ](assets/web-sdk-campaign-var.jpg)
+   ![event101 を設定 &#x200B;](assets/web-sdk-event101.jpg)
+   ![&#x200B; キャンペーンを設定 &#x200B;](assets/web-sdk-campaign-var.jpg)
 
 1. これで **変更を保持** および **ライブラリに保存** でき、ルールが Web SDKに移行されました。
 

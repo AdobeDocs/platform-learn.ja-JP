@@ -53,7 +53,7 @@ ACCS インスタンスの横にある **info** アイコンをクリックし�
 
 ![ACCS+AEM Sites](./images/accsaemsites5.png)
 
-AEM Sites CS/EDS 環境の設定時に作成した GitHub リポジトリに移動します。 このリポジトリは、演習 [1.1.2 AEM CS 環境の設定で作成し ](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}**citisignal-aem-accs** という名前にする必要があります。
+AEM Sites CS/EDS 環境の設定時に作成した GitHub リポジトリに移動します。 このリポジトリは、演習 [1.1.2 AEM CS 環境の設定で作成し &#x200B;](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}**citisignal-aem-accs** という名前にする必要があります。
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 
@@ -86,8 +86,8 @@ Web サイトにアクセスするには、XXX を GitHub ユーザーアカウ�
 
 製品の表示中は、まだ製品の画像を利用できません。 次の演習では、商品画像用のリンクをAEM Assets CS と設定します。
 
-次の手順：[ACCS をAEM Assets CS に接続する ](./ex3.md){target="_blank"}
+次の手順：[ACCS をAEM Assets CS に接続する &#x200B;](./ex3.md){target="_blank"}
 
 [Adobe Commerce as a Cloud Service](./accs.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

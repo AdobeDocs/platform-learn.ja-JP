@@ -49,7 +49,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 >[!NOTE]
 >
->AEM Assetsライブラリに Citi Signal 画像が表示されない場合は、[ こちら ](../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
+>AEM Assetsライブラリに Citi Signal 画像が表示されない場合は、[&#x200B; こちら &#x200B;](../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -234,7 +234,7 @@ Unsubscribe
 
 これで、この演習が完了しました。
 
-次の手順：[3.1.3 ジャーニーとメールメッセージを作成する ](./ex3.md)
+次の手順：[3.1.3 ジャーニーとメールメッセージを作成する &#x200B;](./ex3.md)
 
 [モジュール 3.1 に戻る](./journey-orchestration-create-account.md)
 

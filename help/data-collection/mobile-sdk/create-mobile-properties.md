@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # モバイルタグプロパティの作成
 
-データ収集でモバイルタグプロパティを作成する方法を説明します。 Mobile Core とその他の拡張機能を追加し、設定を環境に公開して、モバイルアプリでプロパティを参照します。 詳しくは、[Mobile SDK ドキュメント ](https://developer.adobe.com/client-sdks/documentation/) を参照してください。
+データ収集でモバイルタグプロパティを作成する方法を説明します。 Mobile Core とその他の拡張機能を追加し、設定を環境に公開して、モバイルアプリでプロパティを参照します。 詳しくは、[Mobile SDK ドキュメント &#x200B;](https://developer.adobe.com/client-sdks/documentation/) を参照してください。
 
 >[!NOTE]
 >

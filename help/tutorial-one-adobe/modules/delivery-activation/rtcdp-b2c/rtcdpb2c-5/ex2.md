@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## データストリームの更新
 
-[ はじめに ](./../../../getting-started/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
+[&#x200B; はじめに &#x200B;](./../../../getting-started/gettingstarted/ex2.md) で、独自の **[!UICONTROL データストリーム]** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
 
 この演習では、**[!UICONTROL データ収集サーバープロパティ]** と連携するように **Datastream** を設定する必要があります。
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。
 
-![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
+![&#x200B; 左側のナビゲーションで「Edge設定」アイコンをクリック &#x200B;](./images/edgeconfig1b.png)
 
 **[!UICONTROL Datastream]** を検索します。名前は `--aepUserLdap-- - Demo System Datastream` です。 **[!UICONTROL データストリーム]** をクリックして開きます。
 
@@ -45,8 +45,8 @@ ht-degree: 2%
 
 ## 次の手順
 
-[2.5.3 カスタム Webhook の作成と設定に移動し ](./ex3.md){target="_blank"} す。
+[2.5.3 カスタム Webhook の作成と設定に移動し &#x200B;](./ex3.md){target="_blank"} す。
 
-[Real-Time CDP Connections：イベント転送 ](./aep-data-collection-ssf.md){target="_blank"} に戻る
+[Real-Time CDP Connections：イベント転送 &#x200B;](./aep-data-collection-ssf.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -396,8 +396,8 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 これで、この演習が完了しました。
 
-次の手順：[ 概要とメリット ](./summary.md){target="_blank"}
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

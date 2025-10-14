@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Adobe Experience Platform ID サービスを使用すると、顧客とその行動をより確実に把握できます。 このサービスは、デバイスやシステム間で ID を結び付け、インパクトのある個人的なデジタルエクスペリエンスをリアルタイムで提供できます。 ID フィールドと名前空間は、異なるデータソースを結合して 360 度リアルタイム顧客プロファイルを作成する接着剤です。
 
-[ID 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) および [ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) について詳しくは、ドキュメントを参照してください。
+[ID 拡張機能 &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) および [ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) について詳しくは、ドキュメントを参照してください。
 
 ## 前提条件
 
@@ -35,7 +35,7 @@ Adobe Experience Platform ID サービスを使用すると、顧客とその行
 
 ## カスタム ID 名前空間の設定
 
-ID 名前空間は、ID の関連先コンテキストのインジケーターとして機能する [ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) のコンポーネントです。 例えば、値 `name@email.com` をメールアドレスとして、または `443522` を数値 CRM ID として区別します。
+ID 名前空間は、ID の関連先コンテキストのインジケーターとして機能する [ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) のコンポーネントです。 例えば、値 `name@email.com` をメールアドレスとして、または `443522` を数値 CRM ID として区別します。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ID 名前空間を新規作成するには：
 1. **[!UICONTROL クロスデバイス ID]** を選択します。
 1. 「**[!UICONTROL 作成]**」を選択します。
 
-   ![ID 名前空間を作成 ](assets/identity-create.png){zoomable="yes"}
+   ![ID 名前空間を作成 &#x200B;](assets/identity-create.png){zoomable="yes"}
 
 
 
@@ -179,7 +179,7 @@ ID 名前空間を新規作成するには：
 
 ## ID を削除
 
-[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、Edge Networkへの識別情報の送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/identities/view-identity-graphs) を参照してください。
+[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API を使用して、保存されたクライアントサイド ID マップから ID を削除できます。 ID 拡張機能は、Edge Networkへの識別情報の送信を停止します。 この API を使用しても、サーバーサイドの ID グラフから識別子が削除されることはありません。 ID グラフについて詳しくは、[ID グラフの表示 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/identities/view-identity-graphs) を参照してください。
 
 
 >[!BEGINTABS]
@@ -230,10 +230,10 @@ MobileSDK.shared.removeIdentities(
 
 ## Assurance での検証
 
-1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+1. [&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 1. Luma アプリ内
    1. 「**[!UICONTROL ホーム]**」タブを選択し、「Assurance」アイコンを左に動かします。
-   1. 右上の ![ ユーザー ](/help/assets/icons/User.svg) アイコンを選択します。
+   1. 右上の ![&#x200B; ユーザー &#x200B;](/help/assets/icons/User.svg) アイコンを選択します。
 
 >[!BEGINTABS]
 
@@ -270,28 +270,28 @@ Assuranceに戻る：
 
 1. **[!UICONTROL com.adobe.griffon.mobile]** ベンダーからの **[!UICONTROL Edge ID 更新 ID]** イベントについて、Assurance Web インターフェイスを調べます。
 1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトのデータを確認します。 更新した ID が表示されます。
-   ![id 更新の検証 ](assets/identity-validate-assurance.png){zoomable="yes"}
+   ![id 更新の検証 &#x200B;](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## ID グラフを使用して検証
 
-[Experience Platformのレッスン ](platform.md) の手順を完了したら、Experience Platform ID グラフビューアで ID の取り込みを確認できます。
+[Experience Platformのレッスン &#x200B;](platform.md) の手順を完了したら、Experience Platform ID グラフビューアで ID の取り込みを確認できます。
 
 1. データ収集 UI で **[!UICONTROL ID]** を選択します。
 1. 上部バーの「**[!UICONTROL ID グラフ]**」を選択します。
 1. `Luma CRM ID`ID 名前空間 **[!UICONTROL として]** を入力し、`24e620e255734d8489820e74f357b5c8`ID 値 **[!UICONTROL として CRM ID （例：]**）を入力します。
 1. **[!UICONTROL ID]** が表示されます。
 
-   ![id グラフを検証 ](assets/identity-validate-graph.png){zoomable="yes"}
+   ![id グラフを検証 &#x200B;](assets/identity-validate-graph.png){zoomable="yes"}
 
 >[!INFO]
 >
->ECID をリセットするコードがアプリにありません。 アプリケーションのアンインストールと再インストールを行って実行できるのは、ECID をリセットすること（および新しい ECID を持つ新しいプロファイルを効果的に作成すること）のみです。 識別子のリセットを実装するには、[`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) および [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 呼び出しを参照してください。 プッシュ通知識別子を使用すると（[ プッシュ通知の送信 ](journey-optimizer-push.md) を参照）、その識別子はデバイス上で別の「固定」プロファイル識別子になります。
+>ECID をリセットするコードがアプリにありません。 アプリケーションのアンインストールと再インストールを行って実行できるのは、ECID をリセットすること（および新しい ECID を持つ新しいプロファイルを効果的に作成すること）のみです。 識別子のリセットを実装するには、[`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) および [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 呼び出しを参照してください。 プッシュ通知識別子を使用すると（[&#x200B; プッシュ通知の送信 &#x200B;](journey-optimizer-push.md) を参照）、その識別子はデバイス上で別の「固定」プロファイル識別子になります。
 
 
 >[!SUCCESS]
 >
 >これで、Edge Networkおよび（設定時に）Adobe Experience Platformで ID を更新するアプリの設定が完了しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[プロファイル・データの収集](profile.md)**

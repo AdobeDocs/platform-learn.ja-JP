@@ -69,7 +69,7 @@ ht-degree: 58%
 
 1. Chrome ブラウザーで [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. [ デバッガーアイコン ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、![Experience Platformデバッガー拡張機能を開 ](images/icon-debugger.png) ます
+1. [&#x200B; デバッガーアイコン &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、![Experience Platformデバッガー拡張機能を開 &#x200B;](images/icon-debugger.png) ます
 
    ![デバッガーアイコンをクリックする](images/switchEnvironments-openDebugger.png)
 
@@ -80,11 +80,11 @@ ht-degree: 58%
 
 1. ディスクアイコンをクリックして保存します。
 
-   ![Debugger に表示されるタグ環境 ](images/switchEnvironments-debugger-save.png)
+   ![Debugger に表示されるタグ環境 &#x200B;](images/switchEnvironments-debugger-save.png)
 
 1. デバッガーの「概要」タブをリロードして確認します。「ローンチ」セクションに、ステージングプロパティが実装され、プロパティ名（「タグチュートリアル」など、プロパティに名前を付けたもの）が表示されます。
 
-   ![Debugger に表示されるタグ環境 ](images/publishing-debugger-staging.png)
+   ![Debugger に表示されるタグ環境 &#x200B;](images/publishing-debugger-staging.png)
 
 実際には、QA チームがステージング環境の変更を確認してサインオフしたら、実稼動環境にパブリッシュします。
 

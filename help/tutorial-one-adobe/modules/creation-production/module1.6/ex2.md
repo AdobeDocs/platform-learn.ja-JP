@@ -140,7 +140,7 @@ AWS リソースへのアクセスは、Amazon Identity and Access Management �
 
 ![ETL](./images/bucket4.png)
 
-CitiSignal 画像ファイルは [ こちら ](./images/package.zip){target="_blank"} からダウンロードできます。
+CitiSignal 画像ファイルは [&#x200B; こちら &#x200B;](./images/package.zip){target="_blank"} からダウンロードできます。
 
 ファイルをデスクトップに書き出します。
 
@@ -176,8 +176,8 @@ CitiSignal 画像ファイルは [ こちら ](./images/package.zip){target="_bl
 
 ## 次の手順
 
-[ 外部 DAM アプリの作成 ](./ex3.md){target="_blank"} に移動します。
+[&#x200B; 外部 DAM アプリの作成 &#x200B;](./ex3.md){target="_blank"} に移動します。
 
-[GenStudio for Performance Marketing – 拡張機能 ](./genstudioext.md){target="_blank"} に戻る
+[GenStudio for Performance Marketing – 拡張機能 &#x200B;](./genstudioext.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

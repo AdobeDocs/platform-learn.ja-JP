@@ -19,6 +19,6 @@ ht-degree: 2%
 
 ## これを確認する
 
-[ モジュール 3.2](./ajotranslationsvcs.md){target="_blank"} に戻ります。
+[&#x200B; モジュール 3.2](./ajotranslationsvcs.md){target="_blank"} に戻ります。
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

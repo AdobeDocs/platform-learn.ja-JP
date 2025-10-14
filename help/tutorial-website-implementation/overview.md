@@ -18,7 +18,7 @@ _Tags を使用して web サイトにExperience Cloudを実装する_ は、web
 
 >[!INFO]
 >
->このチュートリアルでは、アプリケーション固有の拡張機能およびライブラリ（Adobe AnalyticsのAppMeasurement.js、Adobe Targetの at.js）を使用します。 Adobe Experience Platform Web SDK の実装を行う場合は、[Web SDK を使用したAdobe Experience Cloudの実装 ](/help/tutorial-web-sdk/overview.md) チュートリアルを参照してください。
+>このチュートリアルでは、アプリケーション固有の拡張機能およびライブラリ（Adobe AnalyticsのAppMeasurement.js、Adobe Targetの at.js）を使用します。 Adobe Experience Platform Web SDK の実装を行う場合は、[Web SDK を使用したAdobe Experience Cloudの実装 &#x200B;](/help/tutorial-web-sdk/overview.md) チュートリアルを参照してください。
 
 
 このチュートリアルでは、以下の内容について学習します。
@@ -55,7 +55,7 @@ _Tags を使用して web サイトにExperience Cloudを実装する_ は、web
 
 このレッスンでは、練習を完了するために必要な Adobe ID と権限があることを前提としています。Adobe ID と権限がない場合は、Experience Cloud 管理者に連絡して、アクセスをリクエストする必要がある場合があります。
 
-* タグの場合、環境の開発、承認、Publish、拡張機能の管理および管理を行う権限が必要です。 タグユーザー権限について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
+* タグの場合、環境の開発、承認、Publish、拡張機能の管理および管理を行う権限が必要です。 タグユーザー権限について詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
 * Adobe Analytics の場合は、このチュートリアルを完了させるために使用するトラッキングサーバーとレポートスイートについて把握しておく必要があります。
 * Audience Managerするには、Audience Managerサブドメイン（「パートナー名」、「パートナー ID」、「パートナーサブドメイン」とも呼ばれます）を把握している必要があります
 
@@ -75,7 +75,7 @@ Web サイト用タグを使用すると、デスクトップサイトやモバ�
 
 このレッスンでは、Adobe Experience Cloud を練習用の小売 Web サイト「Luma」に実装します。[Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)には、現実的な実装を構築できる豊富なデータレイヤーと機能があります。独自のExperience CloudExperience Cloud Debuggerで独自のタグプロパティを作成し、組織を使用してホストされている Luma サイトにマッピングします。
 
-[![Luma web サイト ](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma web サイト &#x200B;](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## ツールの取得
 

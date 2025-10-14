@@ -299,7 +299,7 @@ Path1 をダブルクリックして、名前を **25 C より暖かい** に変
 
 ![デモ](./images/jopublish2.png)
 
-次の手順：[3.2.5 ジャーニーをトリガーにする ](./ex5.md)
+次の手順：[3.2.5 ジャーニーをトリガーにする &#x200B;](./ex5.md)
 
 [モジュール 3.2 に戻る](journey-orchestration-external-weather-api-sms.md)
 

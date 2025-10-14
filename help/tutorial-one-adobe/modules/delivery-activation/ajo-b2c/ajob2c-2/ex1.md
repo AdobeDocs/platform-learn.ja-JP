@@ -117,8 +117,8 @@ Adobe Journey Optimizerには、顧客を識別するための ID も必要で�
 
 ## 次の手順
 
-[3.2.2 外部データソースの定義を参照してください ](./ex2.md){target="_blank"}
+[3.2.2 外部データソースの定義を参照してください &#x200B;](./ex2.md){target="_blank"}
 
-[Adobe Journey Optimizer：外部データソースとカスタムアクション ](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：外部データソースとカスタムアクション &#x200B;](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -37,7 +37,7 @@ Adobe Experience PlatformのSource コネクタを使用すると、データを
 
 >[!NOTE]
 >
->Experience LeagueドキュメントのChrome拡張機能のインストール [ で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
+>Experience LeagueドキュメントのChrome拡張機能のインストール [&#x200B; で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## 演習
 
@@ -65,7 +65,7 @@ Customer Journey AnalyticsのGoogle Analyticsデータを分析し、ロイヤ�
 
 このモジュールの概要とメリットの概要
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

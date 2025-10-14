@@ -89,8 +89,8 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 次の手順
 
-[3.1.2 メッセージで使用するフラグメントの作成に移動します ](./ex2.md){target="_blank"}
+[3.1.2 メッセージで使用するフラグメントの作成に移動します &#x200B;](./ex2.md){target="_blank"}
 
-[Adobe Journey Optimizer: オーケストレーション ](./journey-orchestration-create-account.md){target="_blank"} に戻る
+[Adobe Journey Optimizer: オーケストレーション &#x200B;](./journey-orchestration-create-account.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

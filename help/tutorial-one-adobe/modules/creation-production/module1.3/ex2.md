@@ -390,8 +390,8 @@ GenStudio for Performance Marketingではアプリケーション内でテンプ
 
 ## 次の手順
 
-[Meta に対するキャンペーンのアクティブ化 ](./ex3.md){target="_blank"} に移動します
+[Meta に対するキャンペーンのアクティブ化 &#x200B;](./ex3.md){target="_blank"} に移動します
 
 [GenStudio for Performance Marketing](./genstudio.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

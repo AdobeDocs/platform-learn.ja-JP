@@ -15,7 +15,7 @@ ht-degree: 5%
 
 ## Adobe I/Oプロジェクトの設定
 
-この演習では、Adobe I/Oを再度使用して、Adobe Experience Platform API に対してクエリを実行します。まだAdobe I/Oプロジェクトを設定していない場合は、[ モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻り、その指示に従います。
+この演習では、Adobe I/Oを再度使用して、Adobe Experience Platform API に対してクエリを実行します。まだAdobe I/Oプロジェクトを設定していない場合は、[&#x200B; モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻り、その指示に従います。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 ## Adobe I/Oに対する認証
 
-この演習では、Postmanを再度使用して、Adobe Experience Platform API に対してクエリを実行します。Postman アプリケーションをまだ設定していない場合は、[ モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻って、その指示に従ってください。
+この演習では、Postmanを再度使用して、Adobe Experience Platform API に対してクエリを実行します。Postman アプリケーションをまだ設定していない場合は、[&#x200B; モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻って、その指示に従ってください。
 
 >[!IMPORTANT]
 >
@@ -68,7 +68,7 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、P
 
 >[!NOTE]
 >
->そのPostman コレクションがない場合は、[ モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻り、その手順に従って、提供されたPostman コレクションでPostmanを設定します。
+>そのPostman コレクションがない場合は、[&#x200B; モジュール 2.1 の演習 3](../module2.1/ex3.md) に戻り、その手順に従って、提供されたPostman コレクションでPostmanを設定します。
 
 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
 
@@ -298,7 +298,7 @@ Postmanの **Destination Authoring API** で、**Destination configurations&rbra
 
 ![データ取得](./images/destsdk10.png)
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 2.3 に戻る](./real-time-cdp-build-a-segment-take-action.md)
 

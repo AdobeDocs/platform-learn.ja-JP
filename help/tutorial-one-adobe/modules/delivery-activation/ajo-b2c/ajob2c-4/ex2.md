@@ -95,7 +95,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/campaign8.png)
 
-左側のメニューで、**フラグメント** に移動します。 [ 演習 3.1.2.1](./../ajob2c-1/ex2.md) で前に作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 [exercise 3.1.2.2](./../ajob2c-1/ex2.md) で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
+左側のメニューで、**フラグメント** に移動します。 [&#x200B; 演習 3.1.2.1](./../ajob2c-1/ex2.md) で前に作成したヘッダーを、キャンバスの最初のコンポーネントにドラッグします。 [exercise 3.1.2.2](./../ajob2c-1/ex2.md) で前に作成したフッターを、キャンバスの最後のコンポーネントにドラッグします。
 
 ![Journey Optimizer](./images/campaign9.png)
 
@@ -189,8 +189,8 @@ Make the switch to CitiSignal and say goodbye to phone payments! Switching to Ci
 
 ## 次の手順
 
-[3.4.3 メールメッセージでセグメントベースのパーソナライゼーションを適用するを参照してください ](./ex3.md){target="_blank"}
+[3.4.3 メールメッセージでセグメントベースのパーソナライゼーションを適用するを参照してください &#x200B;](./ex3.md){target="_blank"}
 
 [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

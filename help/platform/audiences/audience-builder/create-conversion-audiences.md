@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # コンバージョンオーディエンスの作成
 
-このビデオでは、Experience Platformのオーディエンスルールビルダーを使用して、Web サイトまたは他のデータシステムでコンバージョンイベントを実行したオーディエンスを作成する方法を説明します。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+このビデオでは、Experience Platformのオーディエンスルールビルダーを使用して、Web サイトまたは他のデータシステムでコンバージョンイベントを実行したオーディエンスを作成する方法を説明します。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

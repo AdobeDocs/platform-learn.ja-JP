@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 既存のオーディエンスからのオーディエンスの作成
 
-Experience Platformのオーディエンスルールビルダーを使用すると、新しいオーディエンスルール定義の一部として既存のオーディエンスを使用できます。 このビデオを見て、その方法に関するヒントをご覧ください。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+Experience Platformのオーディエンスルールビルダーを使用すると、新しいオーディエンスルール定義の一部として既存のオーディエンスを使用できます。 このビデオを見て、その方法に関するヒントをご覧ください。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

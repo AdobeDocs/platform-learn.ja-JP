@@ -290,7 +290,7 @@ Source スキーマフィールド **consent.any** は、ターゲットフィ�
 
 これで、Adobe Experience Platformに CRM データを正常に取り込み、分類できました。
 
-次の手順：[1.2.5 データランディングゾーン ](./ex5.md)
+次の手順：[1.2.5 データランディングゾーン &#x200B;](./ex5.md)
 
 [モジュール 1.2 に戻る](./data-ingestion.md)
 

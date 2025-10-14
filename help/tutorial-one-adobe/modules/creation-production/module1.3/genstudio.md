@@ -36,30 +36,30 @@ GenStudio for Performance Marketingは、ブランドと市場に関する情報
 
 ## 演習
 
-[1.3.1 設定：ブランド ](./ex1.md){target="_blank"}
+[1.3.1 設定：ブランド &#x200B;](./ex1.md){target="_blank"}
 
 この演習では、GenStudio for Performance Marketingで CitiSignal ブランドを設定します。
 
-[1.3.2 設定：ペルソナ、製品、テンプレート ](./ex2.md){target="_blank"}
+[1.3.2 設定：ペルソナ、製品、テンプレート &#x200B;](./ex2.md){target="_blank"}
 
 この演習では、GenStudio for Performance Marketingでペルソナ、製品、テンプレートを設定します。
 
-[1.3.3 Meta に対する Campaign のアクティブ化 ](./ex3.md){target="_blank"}
+[1.3.3 Meta に対する Campaign のアクティブ化 &#x200B;](./ex3.md){target="_blank"}
 
 この演習では、キャンペーンを作成します。 また、Meta への接続を設定し、広告の作成、Adobe Workfrontを使用した広告の承認、Meta への広告の公開を行うために必要なすべての手順について説明します。
 
-[1.3.4 AJO用のメールエクスペリエンスの作成 ](./ex4.md){target="_blank"}
+[1.3.4 AJO用のメールエクスペリエンスの作成 &#x200B;](./ex4.md){target="_blank"}
 
 この演習では、GenStudio for Performance Marketingのテンプレートを使用してメールエクスペリエンスを作成し、そのエクスペリエンスをAdobe Journey Optimizerと共有してメールキャンペーンを送信します。
 
-[ 概要とメリット ](./summary.md){target="_blank"}
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
 
 このモジュールの概要とメリットの概要
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[ すべてのモジュール ](../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る

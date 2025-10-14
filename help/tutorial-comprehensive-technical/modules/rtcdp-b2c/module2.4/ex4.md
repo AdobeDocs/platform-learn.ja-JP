@@ -66,7 +66,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![4-05-create-ee-2-brand.png](./images/405createee2brand1.png)
 
-次の手順：[2.4.5 オーディエンスをアクティベートする ](./ex5.md)
+次の手順：[2.4.5 オーディエンスをアクティベートする &#x200B;](./ex5.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

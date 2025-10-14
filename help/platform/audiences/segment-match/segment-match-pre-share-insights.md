@@ -16,6 +16,6 @@ ht-degree: 53%
 
 # セグメントの一致によるインサイトの事前共有
 
-データを共有する戦略的パートナーを決定する際に、そのデータ共有の有用性を知るには、顧客とのマッチングを把握ことが重要です。セグメントの一致を使用すると、データを共有する前に、潜在的なデータパートナーとの重複を確認できます。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ja) を参照してください。
+データを共有する戦略的パートナーを決定する際に、そのデータ共有の有用性を知るには、顧客とのマッチングを把握ことが重要です。セグメントの一致を使用すると、データを共有する前に、潜在的なデータパートナーとの重複を確認できます。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/346346/?learn=on&enablevpops&captions=jpn)

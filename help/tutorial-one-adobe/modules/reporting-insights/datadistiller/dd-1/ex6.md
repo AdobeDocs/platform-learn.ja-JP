@@ -75,6 +75,6 @@ Navigator ダイアログで、検索フィールドに **LDAP** を入力して
 
 [2.1.8 Query Service API](./ex8.md){target="_blank"} に移動します。
 
-[ クエリサービス ](./query-service.md){target="_blank"} に戻る
+[&#x200B; クエリサービス &#x200B;](./query-service.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

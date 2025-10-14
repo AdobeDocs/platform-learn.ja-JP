@@ -26,8 +26,8 @@ ht-degree: 0%
 
 ## これを確認する
 
-- テクニカルブログ：[Adobe Experience Platform ID グラフは統合プロファイルの基盤 ](https://medium.com/adobetech/adobe-experience-platform-identity-graph-is-the-foundation-for-the-unified-profile-e8435d26dce7)
-- テクニカルブログ：[Adobe Experience Platformの ID サービス – 顧客 ID の問題を解決する方法 ](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
+- テクニカルブログ：[Adobe Experience Platform ID グラフは統合プロファイルの基盤 &#x200B;](https://medium.com/adobetech/adobe-experience-platform-identity-graph-is-the-foundation-for-the-unified-profile-e8435d26dce7)
+- テクニカルブログ：[Adobe Experience Platformの ID サービス – 顧客 ID の問題を解決する方法 &#x200B;](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
 
 [モジュール 2.1 に戻る](./real-time-customer-profile.md)
 

@@ -40,11 +40,11 @@ Adobe Experience Platformで BigQuery Source コネクタを設定するには�
 
 上部のメニューバーで **プロジェクト名** をクリックすると、いつでもプロジェクト ID を確認できます。
 
-![ デモ ](./images/ex1projectMenu.png)
+![&#x200B; デモ &#x200B;](./images/ex1projectMenu.png)
 
 プロジェクト ID が右側に表示されます。
 
-![ デモ ](./images/ex1projetcselection.png)
+![&#x200B; デモ &#x200B;](./images/ex1projetcselection.png)
 
 この演習では、他の 3 つの必須フィールドを取得する方法を説明します。
 
@@ -56,15 +56,15 @@ Adobe Experience Platformで BigQuery Source コネクタを設定するには�
 
 開始するには、Google Cloud Platform のホームページに戻ります。 これを行うには、画面の左上隅にあるロゴをクリックするだけです。
 
-![ デモ ](./images/ex25.png)
+![&#x200B; デモ &#x200B;](./images/ex25.png)
 
 ホームページに移動したら、検索バーで **0&rbrace;Google Auth Platform&rbrace; を検索します。**&#x200B;最初の結果をクリックして開きます。
 
-![ デモ ](./images/ex24.png)
+![&#x200B; デモ &#x200B;](./images/ex24.png)
 
 **Google Auth Platform** ホームページが表示されます。 「**GET開始**」をクリックします。
 
-![ デモ ](./images/ex26.png)
+![&#x200B; デモ &#x200B;](./images/ex26.png)
 
 **アプリ名** には、次を使用します。
 
@@ -76,33 +76,33 @@ Adobe Experience Platformで BigQuery Source コネクタを設定するには�
 
 **次へ** をクリックします。
 
-![ デモ ](./images/go1.png)
+![&#x200B; デモ &#x200B;](./images/go1.png)
 
 **外部** を選択し、「**次へ**」をクリックします。
 
-![ デモ ](./images/go2.png)
+![&#x200B; デモ &#x200B;](./images/go2.png)
 
 メールアドレスを入力し、「**次へ**」をクリックします。
 
-![ デモ ](./images/go3.png)
+![&#x200B; デモ &#x200B;](./images/go3.png)
 
 チェックボックスをオンにして **続行** をクリックします。 次に、「**作成**」をクリックします。
 
-![ デモ ](./images/go4.png)
+![&#x200B; デモ &#x200B;](./images/go4.png)
 
 ## 1.2.3.2 OAuth クライアントの作成
 
 「**OAUTH クライアントを作成**」をクリックします。
 
-![ デモ ](./images/ex261.png)
+![&#x200B; デモ &#x200B;](./images/ex261.png)
 
 その後、これが表示されます。
 
-![ デモ ](./images/ex2611.png)
+![&#x200B; デモ &#x200B;](./images/ex2611.png)
 
 **Web アプリケーション** を選択します。
 
-![ デモ ](./images/ex212.png)
+![&#x200B; デモ &#x200B;](./images/ex212.png)
 
 いくつかの新しいフィールドがポップアップ表示されます。 次に、OAuth クライアント ID の **名前** を入力し、**承認済みリダイレクト URI** も入力する必要があります。
 
@@ -112,7 +112,7 @@ Adobe Experience Platformで BigQuery Source コネクタを設定するには�
 | ----------------- |-------------| -------------| 
 | 名前 | ldap - AEP BigQuery コネクタ | vangeluw - Platform BigQuery コネクタ |
 
-![ デモ ](./images/ex2122.png)
+![&#x200B; デモ &#x200B;](./images/ex2122.png)
 
 
 **承認済みのリダイレクト URI** の下の「**+ URI を追加**」をクリックします。 以下の新しい URI を追加します。
@@ -125,11 +125,11 @@ Adobe Experience Platformで BigQuery Source コネクタを設定するには�
 
 「**作成**」をクリックします。
 
-![ デモ ](./images/ex2121.png)
+![&#x200B; デモ &#x200B;](./images/ex2121.png)
 
 これで、OAuth クライアント ID が作成されました。 クリックすると、クライアント ID とクライアント秘密鍵が表示されます。
 
-![ デモ ](./images/ex220.png)
+![&#x200B; デモ &#x200B;](./images/ex220.png)
 
 「クライアント ID」と「クライアント秘密鍵」の値が表示されます。
 
@@ -143,15 +143,15 @@ Adobe Experience Platformでの BigQuery Source コネクタの設定の概要�
 | clientid | yourclientid |
 | clientsecret | yourclientsecret |
 
-![ デモ ](./images/ex2200.png)
+![&#x200B; デモ &#x200B;](./images/ex2200.png)
 
 次に、OAuth アプリを公開する必要があります。 **オーディエンス** に移動し、「**アプリを公開**」をクリックします。
 
-![ デモ ](./images/ex2pub1.png)
+![&#x200B; デモ &#x200B;](./images/ex2pub1.png)
 
 **確認** をクリックします。
 
-![ デモ ](./images/ex2pub2.png)
+![&#x200B; デモ &#x200B;](./images/ex2pub2.png)
 
 **refreshToken** が見つかりません。 セキュリティ上の理由から、refreshToken は必須です。 API の世界では、トークンは通常、24 時間ごとに期限切れになります。 そのため、セキュリティトークンを 24 時間ごとに更新して、Source コネクタのセットアップがGoogle Cloud Platform と BigQuery に引き続き接続できるようにする **refreshToken** が必要です。
 
@@ -164,13 +164,13 @@ refreshToken を取得してGoogle Cloud Platform API にアクセスする方�
 
 **OAuth 2.0 Playground** ホームページが表示されます。
 
-![ デモ ](./images/ex222.png)
+![&#x200B; デモ &#x200B;](./images/ex222.png)
 
 画面の右上にある **歯車** アイコンをクリックします。 設定が上の画像と同じであることを確認します。
 
 「**独自の OAuth 認証情報を使用**」チェックボックスをオンにします。
 
-![ デモ ](./images/ex2221.png)
+![&#x200B; デモ &#x200B;](./images/ex2221.png)
 
 2 つのフィールドが表示されます。
 
@@ -183,53 +183,53 @@ refreshToken を取得してGoogle Cloud Platform API にアクセスする方�
 
 資格情報を入力したら、「**閉じる**」をクリックしてください。
 
-![ デモ ](./images/ex223a.png)
+![&#x200B; デモ &#x200B;](./images/ex223a.png)
 
 左側のメニューに、使用可能なすべてのGoogle API が表示されます。 **BigQuery API v2** を検索し、クリックして開きます。
 
-![ デモ ](./images/ex227.png)
+![&#x200B; デモ &#x200B;](./images/ex227.png)
 
 次に、下図に示すように範囲を選択します。 使用可能な各 API をクリックする必要があります。選択した各 API にチェックマークが表示されます。
 
 次に、「**API を認証**」をクリックします。
 
-![ デモ ](./images/ex226.png)
+![&#x200B; デモ &#x200B;](./images/ex226.png)
 
 GCP および BigQuery の設定に使用したメールアドレスをクリックします。
 
-![ デモ ](./images/ex2266.png)
+![&#x200B; デモ &#x200B;](./images/ex2266.png)
 
 その後、**このアプリは検証されていません** という大きな警告が表示されます。 これは、Platform BigQuery コネクタがまだ正式にレビューされていないので、Googleが本格的なアプリかどうかを知らないために発生しています。
 
 **詳細** をクリックします。
 
-![ デモ ](./images/ex232.png)
+![&#x200B; デモ &#x200B;](./images/ex232.png)
 
 次に、「**移動 – aepUserLdap— - AEP BigQuery コネクタ（安全でない）**」をクリックします。
 
-![ デモ ](./images/ex233.png)
+![&#x200B; デモ &#x200B;](./images/ex233.png)
 
 その後、アクセスするためのセキュリティプロンプトが表示されます。 **すべてを選択** をクリックします。
 
-![ デモ ](./images/ex229.png)
+![&#x200B; デモ &#x200B;](./images/ex229.png)
 
 下にスクロールして、「**続行**」をクリックします。
 
-![ デモ ](./images/ex230.png)
+![&#x200B; デモ &#x200B;](./images/ex230.png)
 
 OAuth 2.0 プレイグラウンドに送り返され、これが表示されます。 「**トークンの認証コードの交換**」をクリックします。
 
-![ デモ ](./images/ex236.png)
+![&#x200B; デモ &#x200B;](./images/ex236.png)
 
 数秒後、**手順 2 - トークンの認証コードの交換** ビューが自動的に閉じ、**手順 3 - API へのリクエストの設定** が表示されます。
 
 **手順 2 トークンの認証コードの交換** に戻る必要があるので、もう一度 **手順 2 トークンの認証コードの交換** をクリックして **更新トークン** を視覚化します。
 
-![ デモ ](./images/ex237.png)
+![&#x200B; デモ &#x200B;](./images/ex237.png)
 
 **更新トークン** が表示されます。
 
-![ デモ ](./images/ex238.png)
+![&#x200B; デモ &#x200B;](./images/ex238.png)
 
 **更新トークン** をコピーして、デスクトップ上のテキストファイルに、他の BigQuery Source コネクタ資格情報と共に貼り付けます。
 
@@ -256,13 +256,13 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 左側のメニューで、「ソース」に移動します。 その後、**Sources** ホームページが表示されます。 **ソース** メニューで、「**データベース**」をクリックします。 **Google BigQuery** カードをクリックします。 次に、「設定 **をクリックし** す。
 
-![ デモ ](./images/s1.png)
+![&#x200B; デモ &#x200B;](./images/s1.png)
 
 新しい接続を作成する必要があります。
 
 **新規アカウント** をクリックします。 次に、GCP と BigQuery での設定に基づいて、以下のすべてのフィールドに入力する必要があります。
 
-![ デモ ](./images/s3.png)
+![&#x200B; デモ &#x200B;](./images/s3.png)
 
 まず、接続に名前を付けます。
 
@@ -275,7 +275,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 すると、次のようになります。
 
-![ デモ ](./images/ex239a.png)
+![&#x200B; デモ &#x200B;](./images/ex239a.png)
 
 次に、デスクトップ上のテキストファイルに保存した GCP および BigQuery API **アカウント認証** の詳細を入力します。
 
@@ -288,22 +288,22 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 **アカウント認証** の詳細は、次のようになります。 **ソースに接続** をクリックします。
 
-![ デモ ](./images/ex239xx.png)
+![&#x200B; デモ &#x200B;](./images/ex239xx.png)
 
 **アカウント認証** の詳細が正しく入力されていた場合、**接続済み** の確認が表示され、接続が正しく動作していることを示す視覚的な確認が表示されます。 「**次へ**」をクリックします。
 
-![ デモ ](./images/ex2projectid.png)
+![&#x200B; デモ &#x200B;](./images/ex2projectid.png)
 
 前の演習で作成した BigQuery データセットが表示されます。
 
-![ デモ ](./images/datasets.png)
+![&#x200B; デモ &#x200B;](./images/datasets.png)
 
 よくやった！ 次の演習では、このテーブルからデータを読み込み、Adobe Experience Platformのスキーマとデータセットにマッピングします。
 
 ## 次の手順
 
-[1.2.4 BigQuery からAdobe Experience Platformへのデータの読み込みを参照してください ](./ex4.md){target="_blank"}
+[1.2.4 BigQuery からAdobe Experience Platformへのデータの読み込みを参照してください &#x200B;](./ex4.md){target="_blank"}
 
-[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
+[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

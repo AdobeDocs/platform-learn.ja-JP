@@ -18,10 +18,10 @@ ht-degree: 62%
 
 # Adobe Experience Platform Web SDK および Edge ネットワークのデモ
 
-Adobeへの 1 回の呼び出しでExperience Platform、Analytics、Audience Managerおよび Target にデータを送信する、Adobe Experience Platform Web SDKおよびEdge Networkの動作をご覧ください。 詳しくは、[Adobe Experience Platform web SDKのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) を参照してください。
+Adobeへの 1 回の呼び出しでExperience Platform、Analytics、Audience Managerおよび Target にデータを送信する、Adobe Experience Platform Web SDKおよびEdge Networkの動作をご覧ください。 詳しくは、[Adobe Experience Platform web SDKのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413667?learn=on&enablevpops&captions=jpn)
 
 >[!NOTE]
 >
->このビデオは、Adobe Summit 2020 セッション *[Alloy.js を満たし、eVarまたは Mbox を二度とタグ付けしない ](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)* の抜粋です。
+>このビデオは、Adobe Summit 2020 セッション *[Alloy.js を満たし、eVarまたは Mbox を二度とタグ付けしない &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)* の抜粋です。

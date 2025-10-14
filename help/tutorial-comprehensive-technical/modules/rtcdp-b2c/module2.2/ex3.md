@@ -29,11 +29,11 @@ ht-degree: 2%
 
 顧客 AI ダッシュボードには、スコア、母集団の分布および評価するモデルに影響を与えた要因に関する概要が表示されます。
 
-![AI の説明 ](./images/caidescription.png)
+![AI の説明 &#x200B;](./images/caidescription.png)
 
 影響を及ぼす要因にポインタを合わせると、データ配分のさらなる分類が表示されます。
 
-![ 影響要因 ](./images/caiinfluencefactors.png)
+![&#x200B; 影響要因 &#x200B;](./images/caiinfluencefactors.png)
 
 ## ビジネスアクション
 
@@ -45,11 +45,11 @@ ht-degree: 2%
 
 セグメント定義が自動的に作成されていることがわかります。
 
-![ セグメントルール ](./images/caicreatesegment.png)
+![&#x200B; セグメントルール &#x200B;](./images/caicreatesegment.png)
 
 次の命名規則に従って、セグメントに名前を付けます：`--aepUserLdap-- - Customer AI High Propensity`。 「**公開**」をクリックします。
 
-![ セグメントルール ](./images/caicreatesegment1.png)
+![&#x200B; セグメントルール &#x200B;](./images/caicreatesegment1.png)
 
 これで、例えば Real-time CDP、Journey OptimizerおよびAdobe Targetを使用したターゲティングに、このセグメントを使用できるようになりました。
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 ![プロファイル](./images/cleanup.png)
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 2.2 に戻る](./intelligent-services.md)
 

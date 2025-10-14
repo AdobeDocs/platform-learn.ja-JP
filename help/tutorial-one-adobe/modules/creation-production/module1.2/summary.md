@@ -17,6 +17,6 @@ Adobe アプリケーションの学習にご協力いただき、ありがと�
 
 ## 次の手順
 
-[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

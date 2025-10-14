@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 潜在的なトラッキングの問題
 
-個別（Experience Cloud ID）の ECID は、アプリのネイティブ部分と、アプリ内の WebView からデータを送信する際に生成されます。 これらの別々の ECID により、ヒットが切断され、訪問および訪問者データが水増しされます。 ECID について詳しくは、[ECID の概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/ecid) を参照してください。
+個別（Experience Cloud ID）の ECID は、アプリのネイティブ部分と、アプリ内の WebView からデータを送信する際に生成されます。 これらの別々の ECID により、ヒットが切断され、訪問および訪問者データが水増しされます。 ECID について詳しくは、[ECID の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/ecid) を参照してください。
 
 切断されたヒットと水増しされたデータを解決するには、アプリのネイティブ部分から、アプリで使用する可能性のある WebView にユーザーの ECID を渡す必要があります。
 
@@ -66,7 +66,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API は、ECID などのすべての関連情報を含むように URL の変数を設定します。 この例では、ローカルファイルを使用していますが、同じ概念がリモートページにも適用されます。
 
-`Identity.getUrlVariables` API について詳しくは、[Edge Network拡張機能 API リファレンスガイド ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) を参照してください。
+`Identity.getUrlVariables` API について詳しくは、[Edge Network拡張機能 API リファレンスガイド &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) を参照してください。
 
 
 >[!TAB Android]
@@ -94,7 +94,7 @@ Identity.getUrlVariables {
 
 [`Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API は、ECID などのすべての関連情報を含むように URL の変数を設定します。 この例では、ローカルファイルを使用していますが、同じ概念がリモートページにも適用されます。
 
-`Identity.getUrlVariables` API について詳しくは、[Edge Network拡張機能 API リファレンスガイド ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) を参照してください。
+`Identity.getUrlVariables` API について詳しくは、[Edge Network拡張機能 API リファレンスガイド &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) を参照してください。
 
 >[!ENDTABS]
 
@@ -102,7 +102,7 @@ Identity.getUrlVariables {
 
 コードを実行するには：
 
-1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+1. [&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 1. アプリの **[!UICONTROL 設定]** に移動します
 1. 「**[!DNL View...]**」ボタンをタップして **[!DNL Terms of Use]** を表示します。
 
@@ -124,7 +124,7 @@ Identity.getUrlVariables {
 1. Assurance UI で、&lbrace;com.adobe.griffon.mobile **[!UICONTROL ベンダーの &lbrace;0]** Edge ID 応答 URL 変数 **[!UICONTROL イベントを探します。]**
 1. イベントを選択し、**[!UICONTROL ACPExtensionEventData]** オブジェクトの **[!UICONTROL urlvariable]** フィールドを確認し、URL に `adobe_mc`、`mcmid` および `mcorgid` のパラメーターが存在することを確認します。
 
-   ![webview 検証 ](assets/webview-validation.png){zoomable="yes"}
+   ![webview 検証 &#x200B;](assets/webview-validation.png){zoomable="yes"}
 
    `urvariables` フィールドの例を以下に示します。
 
@@ -151,6 +151,6 @@ Identity.getUrlVariables {
 >
 >これで、Adobe Experience Platform Mobile SDKで既に発行されている ECID と同じ ECID を使用して、Web ビュー内の URL に基づいたコンテンツを表示するように、アプリを設定しました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[ID](identity.md)**

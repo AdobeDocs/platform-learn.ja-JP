@@ -19,6 +19,6 @@ ht-degree: 7%
 
 ## 次の手順
 
-[Adobe Journey Optimizer：翻訳サービス ](./ajotranslationsvcs.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：翻訳サービス &#x200B;](./ajotranslationsvcs.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

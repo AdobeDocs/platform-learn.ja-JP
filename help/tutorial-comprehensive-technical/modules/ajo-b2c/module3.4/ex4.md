@@ -47,13 +47,13 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。
 
-左側のメニューで、**[!UICONTROL データストリーム]** に移動し、[ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームを検索します。名前は `--aepUserLdap-- - Demo System Datastream (Mobile)` です。 クリックして開きます。
+左側のメニューで、**[!UICONTROL データストリーム]** に移動し、[&#x200B; はじめに &#x200B;](./../../../modules/gettingstarted/gettingstarted/ex2.md) で作成したデータストリームを検索します。名前は `--aepUserLdap-- - Demo System Datastream (Mobile)` です。 クリックして開きます。
 
-![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1a.png)
+![&#x200B; 左側のナビゲーションでデータストリームアイコンをクリック &#x200B;](./images/edgeconfig1a.png)
 
 **2&rbrace;Adobe Experience Platform** サービスの「編集 **をクリックします。**
 
-![ 左側のナビゲーションでデータストリームアイコンをクリック ](./images/edgeconfig1.png)
+![&#x200B; 左側のナビゲーションでデータストリームアイコンをクリック &#x200B;](./images/edgeconfig1.png)
 
 次に、定義したデータストリーム設定と、どのデータセットイベントおよびプロファイル属性に保存されるかを確認します。
 
@@ -65,11 +65,11 @@ Adobe Journey Optimizerは、データセットを使用して、モバイルデ
 
 「**保存**」をクリックします。
 
-![ データストリームに名前を付けて保存する ](./images/edgeconfig2.png)
+![&#x200B; データストリームに名前を付けて保存する &#x200B;](./images/edgeconfig2.png)
 
 ## 3.4.4.3 モバイルのデータ収集プロパティを確認する
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 [ はじめに ](./../../../modules/gettingstarted/gettingstarted/ex1.md) の一部として、2 つのデータ収集プロパティが作成されました。
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) に移動します。 [&#x200B; はじめに &#x200B;](./../../../modules/gettingstarted/gettingstarted/ex1.md) の一部として、2 つのデータ収集プロパティが作成されました。
 これらのデータ収集クライアントプロパティは、既に以前のモジュールの一部として使用しています。
 
 クリックして、モバイルのデータ収集プロパティを開きます。
@@ -359,7 +359,7 @@ DX Demo 2.0 モバイルアプリケーションで、**設定** 画面に移動
 
 この演習は完了しました。
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 3.4 に戻る](./journeyoptimizer.md)
 

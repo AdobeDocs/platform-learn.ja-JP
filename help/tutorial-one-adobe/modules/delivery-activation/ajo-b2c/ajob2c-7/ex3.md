@@ -14,7 +14,7 @@ ht-degree: 2%
 
 ## 3.7.3.1 データストリームを更新する
 
-[ はじめに ](./../../../../modules/getting-started/gettingstarted/ex2.md) で、独自の **データストリーム** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
+[&#x200B; はじめに &#x200B;](./../../../../modules/getting-started/gettingstarted/ex2.md) で、独自の **データストリーム** を作成しました。 その後、`--aepUserLdap-- - Demo System Datastream` という名前を使用しました。
 
 ## パーソナライズされたオファー 3.7.3.2 リクエストするようにAdobe Experience Platform データ収集クライアントプロパティを設定するには、
 
@@ -30,8 +30,8 @@ ht-degree: 2%
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
 [Experience Decisioning](ajo-decisioning.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

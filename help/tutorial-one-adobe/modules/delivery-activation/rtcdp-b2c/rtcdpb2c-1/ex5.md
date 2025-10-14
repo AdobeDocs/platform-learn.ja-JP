@@ -41,7 +41,7 @@ CX アプリケーション・プロジェクトで、**統合** に移動しま
 
 次に、ID の 1 つおよび対応する名前空間を選択し、**検索アイコン** をクリックする必要があります。
 
-![ 顧客プロファイル ](./images/identities.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/identities.png)
 
 | ID | 名前空間 |
 |:-------------:| :---------------:|
@@ -58,8 +58,8 @@ CX アプリケーション・プロジェクトで、**統合** に移動しま
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
-[ リアルタイム顧客プロファイル ](./real-time-customer-profile.md){target="_blank"} に戻る
+[&#x200B; リアルタイム顧客プロファイル &#x200B;](./real-time-customer-profile.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

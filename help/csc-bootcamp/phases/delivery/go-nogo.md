@@ -20,19 +20,19 @@ ht-degree: 0%
 
 実施しているプロセスを見てみましょう。 タスク 20 の名前「キャンペーンに参加/参加しない」をクリックします。
 
-![ タスクをクリック ](./images/gonogo-button.png)
+![&#x200B; タスクをクリック &#x200B;](./images/gonogo-button.png)
 
-![ 詳細を更新 ](./images/gonogo-details.png)
+![&#x200B; 詳細を更新 &#x200B;](./images/gonogo-details.png)
 
 次に、承認セクションについて見てみましょう。
 
-![ 承認をクリックする ](./images/gonogo-approvals.png)
+![&#x200B; 承認をクリックする &#x200B;](./images/gonogo-approvals.png)
 
 これは、私自身、Petra、またはお客様の誰かが、この Go/No を最初のステップとして確認および/または承認する必要がある 2 つのステップのプロセスであることがわかります。その後、Olivia （マーケティング業務のDirector）が彼女に最終的な Go を与えることができます。
 
 したがって、右上に承認ボタンが表示され、最初の手順でこの「Go No/Go」を承認できるようになりました。 緑のチェックマークをクリックして承認します。
 
-![ キャンペーンを承認 ](./images/gongo-given-approvals.png)
+![&#x200B; キャンペーンを承認 &#x200B;](./images/gongo-given-approvals.png)
 
 私たちのプロジェクトはすべて、オリビアの承認を待っています。 彼女が承認したら（もちろん承認されるでしょうが）、私たちのキャンペーンを公開することができます。
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 キャンペーンの開始準備が整い、自転車の販売を開始する準備が整ったら、いよいよ話題です。 そして、それを行うためのより良い方法、そしてソーシャルメディアの投稿で？
 
-![ デモ Instagramのページ ](./images/instagram-overview.png)
+![&#x200B; デモ Instagramのページ &#x200B;](./images/instagram-overview.png)
 
 ソーシャルメディアへの投稿は作成済みで承認済みなので、デモ Instagram アカウントに投稿できます。
 
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 ## おめでとうございます。キャンペーンが公開されました。
 
-![Campaign のローンチ ](./images/launch.jpg)
+![Campaign のローンチ &#x200B;](./images/launch.jpg)
 
-次の手順：[ フェーズ 4 - インサイト：概要 ](../insights/overview.md)
+次の手順：[&#x200B; フェーズ 4 - インサイト：概要 &#x200B;](../insights/overview.md)
 
 [フェーズ 3 – 配信：AEMでページを作成に戻る](./app.md)
 

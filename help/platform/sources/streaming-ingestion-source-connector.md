@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## その他のリソース
 
-* [UI でのAmazon Kinesis ソースコネクタの作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=ja)
-* [UI での Azure Event Hubs ソース接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=ja)
-* [Azure Event Hubs のドキュメント ](https://docs.microsoft.com/en-us/azure/event-hubs/)
-* [Amazon Kinesis データストリームのドキュメント ](https://docs.aws.amazon.com/kinesis/index.html)
+* [UI でのAmazon Kinesis ソースコネクタの作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=ja)
+* [UI での Azure Event Hubs ソース接続の作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=ja)
+* [Azure Event Hubs のドキュメント &#x200B;](https://docs.microsoft.com/en-us/azure/event-hubs/)
+* [Amazon Kinesis データストリームのドキュメント &#x200B;](https://docs.aws.amazon.com/kinesis/index.html)

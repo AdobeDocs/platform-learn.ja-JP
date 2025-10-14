@@ -23,7 +23,7 @@ ht-degree: 3%
 
 前の演習が完了したら、Adobe Experience Platformでこのページを開く必要があります。
 
-![ デモ ](./images/datasets.png)
+![&#x200B; デモ &#x200B;](./images/datasets.png)
 
 **開いている場合は、次の演習に進みます。**
 
@@ -31,15 +31,15 @@ ht-degree: 3%
 
 左側のメニューで、「ソース」に移動します。 その後、**Sources** ホームページが表示されます。 **ソース** メニューで、**Google BigQuery** ソースコネクタに移動し、**設定** をクリックします。
 
-![ デモ ](./images/sourceshome.png)
+![&#x200B; デモ &#x200B;](./images/sourceshome.png)
 
 Google BigQuery アカウント選択画面が表示されます。 アカウントを選択して、「**次へ**」をクリックします。
 
-![ デモ ](./images/0c.png)
+![&#x200B; デモ &#x200B;](./images/0c.png)
 
 次に、**データを選択** 画面が表示されます。
 
-![ デモ ](./images/datasets.png)
+![&#x200B; デモ &#x200B;](./images/datasets.png)
 
 ## 4.2.4.1 BigQuery テーブルの選択
 
@@ -47,23 +47,23 @@ Google BigQuery アカウント選択画面が表示されます。 アカウン
 
 「**次へ**」をクリックします。
 
-![ デモ ](./images/datasets1.png)
+![&#x200B; デモ &#x200B;](./images/datasets1.png)
 
 ## 4.2.4.2 XDM マッピング
 
 次の項目が表示されます。
 
-![ デモ ](./images/xdm4a.png)
+![&#x200B; デモ &#x200B;](./images/xdm4a.png)
 
 次に、新しいデータセットを作成するか、既存のデータセットを選択して、Google Analyticsデータをに読み込む必要があります。 この演習では、データセットとスキーマは既に作成されています。 新しいスキーマやデータセットを作成する必要はありません。
 
 **既存のデータセット** を選択します。 ドロップダウンメニューを開いて、データセットを選択します。 `Demo System - Event Dataset for BigQuery (Global v1.1)` という名前のデータセットを検索して選択します。 「**次へ**」をクリックします。
 
-![ デモ ](./images/xdm6.png)
+![&#x200B; デモ &#x200B;](./images/xdm6.png)
 
 下にスクロールします。 次に、Google Analytics/BigQuery から各 **0&rbrace;Source フィールド &rbrace; を、フィールドごとに XDM** ターゲットフィールド **にマッピングする必要があります。**&#x200B;多数のエラーが表示される場合があります。これらは、以下のマッピング演習で対処します。
 
-![ デモ ](./images/xdm8.png)
+![&#x200B; デモ &#x200B;](./images/xdm8.png)
 
 この演習では、以下のマッピングテーブルを使用します。
 
@@ -97,11 +97,11 @@ Google BigQuery アカウント選択画面が表示されます。 アカウン
 
 **計算フィールド** を作成するには、[**+新しいフィールドの種類 ] をクリックし**&#x200B;[**計算フィールド**] をクリックします。
 
-![ デモ ](./images/xdm8a.png)
+![&#x200B; デモ &#x200B;](./images/xdm8a.png)
 
 上記のルールを貼り付け、上記のテーブルの各フィールドに対して **保存** をクリックします。
 
-![ デモ ](./images/xdm8b.png)
+![&#x200B; デモ &#x200B;](./images/xdm8b.png)
 
 これで、このような **マッピング** が作成されました。
 
@@ -109,7 +109,7 @@ Google BigQuery アカウント選択画面が表示されます。 アカウン
 
 「**次へ**」をクリックします。
 
-![ デモ ](./images/xdm34.png)
+![&#x200B; デモ &#x200B;](./images/xdm34.png)
 
 ## 4.2.4.3 接続とデータ取り込みスケジュール
 
@@ -132,7 +132,7 @@ Google BigQuery でデモデータを使用していますが、これは更新�
 差分フィールドとして **timeStamp** を選択します。
 「**次へ**」をクリックします。
 
-![ デモ ](./images/ex437.png)
+![&#x200B; デモ &#x200B;](./images/ex437.png)
 
 ## 4.2.4.4 接続の確認と開始
 
@@ -140,15 +140,15 @@ Google BigQuery でデモデータを使用していますが、これは更新�
 
 「**完了**」をクリックします。
 
-![ デモ ](./images/xdm46.png)
+![&#x200B; デモ &#x200B;](./images/xdm46.png)
 
 接続を作成すると、次の画面が表示されます。
 
-![ デモ ](./images/xdm48.png)
+![&#x200B; デモ &#x200B;](./images/xdm48.png)
 
 次の演習では、Customer Journey Analyticsを使用して、Google Analyticsデータの上に強力なビジュアライゼーションを作成します。
 
-次の手順：[4.2.5Customer Journey Analyticsを使用してGoogle Analyticsデータを分析する ](./ex5.md)
+次の手順：[4.2.5Customer Journey Analyticsを使用してGoogle Analyticsデータを分析する &#x200B;](./ex5.md)
 
 [モジュール 4.2 に戻る](./customer-journey-analytics-bigquery-gcp.md)
 

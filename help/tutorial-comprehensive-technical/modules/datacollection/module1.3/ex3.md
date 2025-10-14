@@ -145,7 +145,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp22.png)
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 1.3 に戻る](./fac.md)
 

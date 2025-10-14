@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## ドキュメント
 
-- [Adobe Experience Platform Query Service ヘルプ ](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=ja)
+- [Adobe Experience Platform Query Service ヘルプ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=ja)
 - [クエリサービス API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## クエリサービス API
@@ -34,7 +34,7 @@ Query Service API を使用すると、Adobe Experience Platform Data-Lake に�
 
 ## サンプルクエリ
 
-サンプルクエリとして、[4.3 - クエリ、クエリ、クエリ…およびチャーン分析にリストされた最初のクエリを使用し ](./ex3.md) す。
+サンプルクエリとして、[4.3 - クエリ、クエリ、クエリ…およびチャーン分析にリストされた最初のクエリを使用し &#x200B;](./ex3.md) す。
 
 1 日に表示される製品の数
 
@@ -56,9 +56,9 @@ limit 10;
 >
 >Adobeの従業員の場合は、こちらの手順に従って [PostBuster](./../../../../modules/getting-started/gettingstarted/ex8.md) を使用してください。
 
-コンピューターでPostmanを開きます。 モジュール 2.1 の一部として、Postman環境を作成し、Postman コレクションをインポートしました。 まだ実行していない場合は、[ 演習 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) の手順に従います。
+コンピューターでPostmanを開きます。 モジュール 2.1 の一部として、Postman環境を作成し、Postman コレクションをインポートしました。 まだ実行していない場合は、[&#x200B; 演習 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) の手順に従います。
 
-読み込んだPostman コレクションの一部として、フォルダー **3 が表示されます。 クエリサービス**. このフォルダーが表示されない場合は、[Postman コレクションを再度ダウンロードし ](./../../../../assets/postman/postman_profile.zip) [ 演習 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) の指示に従って、Postmanでそのコレクションを再読み込みしてください。
+読み込んだPostman コレクションの一部として、フォルダー **3 が表示されます。 クエリサービス**. このフォルダーが表示されない場合は、[Postman コレクションを再度ダウンロードし &#x200B;](./../../../../assets/postman/postman_profile.zip) [&#x200B; 演習 2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) の指示に従って、Postmanでそのコレクションを再読み込みしてください。
 
 ![QS](./images/pm3.png)
 
@@ -424,8 +424,8 @@ limit 10;
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
-[ クエリサービス ](./query-service.md){target="_blank"} に戻る
+[&#x200B; クエリサービス &#x200B;](./query-service.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

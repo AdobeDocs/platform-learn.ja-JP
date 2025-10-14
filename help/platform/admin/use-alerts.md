@@ -17,6 +17,6 @@ ht-degree: 43%
 
 # アラートを使用
 
-Adobe Experience Platform でアラートを登録および管理する方法について説明します。アラートは、様々なプロセスを監視して、Platform 実装がスムーズに実行されていることを確認するのに役立ちます。 詳しくは、[ アラートドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=ja) を参照してください。
+Adobe Experience Platform でアラートを登録および管理する方法について説明します。アラートは、様々なプロセスを監視して、Platform 実装がスムーズに実行されていることを確認するのに役立ちます。 詳しくは、[&#x200B; アラートドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336218?learn=on&enablevpops)

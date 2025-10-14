@@ -18,7 +18,7 @@ ht-degree: 1%
 
 [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動します。
 
-![GSPeM 拡張機能 ](./images/gspemext1.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext1.png)
 
 画面の右上隅で正しいインスタンスを選択してください。 インスタンスは `--aepImsOrgName--` です。
 
@@ -28,19 +28,19 @@ ht-degree: 1%
 
 次に、「**テンプレートからプロジェクトを作成**」を選択します。
 
-![GSPeM 拡張機能 ](./images/gspemext2.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext2.png)
 
 「**App Builder**」を選択します。
 
-![GSPeM 拡張機能 ](./images/gspemext4.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext4.png)
 
 `--aepUserLdap-- GSPeM EXT` という名前を入力します。 「**保存**」をクリックします。
 
-![GSPeM 拡張機能 ](./images/gspemext5.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext5.png)
 
 次のようなメッセージが表示されます。
 
-![GSPeM 拡張機能 ](./images/gspemext6.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext6.png)
 
 ## 開発環境 1.6.1.2 設定するには
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 [https://nodejs.org/en/download](https://nodejs.org/en/download) に移動します。 Node.js と npm をインストールするために実行する必要がある多数のターミナルコマンドが表示されます。 ここに示すコマンドは、MacBook に適用できます。
 
-![GSPeM 拡張機能 ](./images/gspemext7.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext7.png)
 
 まず、新しいターミナルウィンドウを開きます。 スクリーンショットの 2 行目で示されているコマンドを貼り付けて実行します。
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 返されるバージョン番号が表示されます。
 
-![GSPeM 拡張機能 ](./images/gspemext8.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext8.png)
 
 次に、次のコマンドを実行します。
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 返されるバージョン番号が表示されます。
 
-![GSPeM 拡張機能 ](./images/gspemext9.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext9.png)
 
 最後の 2 つのコマンドが正常にバージョン番号を返した場合、これらの 2 つの機能の設定は成功しています。
 
@@ -92,7 +92,7 @@ Adobe Developer コマンドラインインターフェイス（CLI）をイン�
 
 このコマンドの実行には数分かかることがあります。最終的な結果は次のようになります。
 
-![GSPeM 拡張機能 ](./images/gspemext10.png)
+![GSPeM 拡張機能 &#x200B;](./images/gspemext10.png)
 
 これで、Adobe Developer コマンドラインインターフェイス（CLI）も正常にインストールされました。
 
@@ -100,8 +100,8 @@ Adobe Developer コマンドラインインターフェイス（CLI）をイン�
 
 ## 次の手順
 
-[AWS S3 バケットの作成 ](./ex2.md){target="_blank"} に移動します。
+[AWS S3 バケットの作成 &#x200B;](./ex2.md){target="_blank"} に移動します。
 
-[GenStudio for Performance Marketing – 拡張機能 ](./genstudioext.md){target="_blank"} に戻る
+[GenStudio for Performance Marketing – 拡張機能 &#x200B;](./genstudioext.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

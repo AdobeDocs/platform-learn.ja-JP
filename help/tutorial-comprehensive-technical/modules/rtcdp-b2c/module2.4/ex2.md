@@ -120,7 +120,7 @@ Azure で初めてリソースを作成する場合は、新しい **リソー�
 
 ![1-22-event-hub-deploy-resources-list.png](./images/122eventhubdeployresourceslist.png)
 
-次の手順：[2.4.3 Adobe Experience Platformで Azure Event Hub の宛先を設定する ](./ex3.md)
+次の手順：[2.4.3 Adobe Experience Platformで Azure Event Hub の宛先を設定する &#x200B;](./ex3.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

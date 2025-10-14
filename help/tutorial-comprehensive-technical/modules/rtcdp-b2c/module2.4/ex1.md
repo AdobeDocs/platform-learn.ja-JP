@@ -39,7 +39,7 @@ Azure サブスクリプションフォームに入力し、アクティベー�
 
 ## Visual Code Studio のインストール
 
-Microsoft Visual Code Studio を使用して、Azure プロジェクトを管理します。 [ このリンク ](https://code.visualstudio.com/download) からダウンロードできます。 同じ Web サイト上の特定の OS のインストール手順に従います。
+Microsoft Visual Code Studio を使用して、Azure プロジェクトを管理します。 [&#x200B; このリンク &#x200B;](https://code.visualstudio.com/download) からダウンロードできます。 同じ Web サイト上の特定の OS のインストール手順に従います。
 
 ## ビジュアルコード拡張機能のインストール
 
@@ -59,9 +59,9 @@ Azure アカウントをインストールし、[https://marketplace.visualstudi
 
 ### macOS
 
-最初に [Homebrew](https://brew.sh/) がインストールされていることを確認します。 [ こちら ](https://brew.sh/) の手順に従います。
+最初に [Homebrew](https://brew.sh/) がインストールされていることを確認します。 [&#x200B; こちら &#x200B;](https://brew.sh/) の手順に従います。
 
-![ ノード ](./images/brew.png)
+![&#x200B; ノード &#x200B;](./images/brew.png)
 
 Homebrew をインストールしたら、次のコマンドを実行します。
 
@@ -71,7 +71,7 @@ brew install node
 
 ### Windows
 
-[nodejs.org](https://nodejs.org/en/#home-downloadhead) web サイトから [Windows インストーラー ](https://nodejs.org/en/) を直接ダウンロードします。
+[nodejs.org](https://nodejs.org/en/#home-downloadhead) web サイトから [Windows インストーラー &#x200B;](https://nodejs.org/en/) を直接ダウンロードします。
 
 ## node.js のバージョンの確認
 
@@ -126,7 +126,7 @@ brew tap azure/functions
 brew install azure-functions-core-tools@4
 ```
 
-次の手順：[2.4.2 Microsoft Azure EventHub 環境を設定する ](./ex2.md)
+次の手順：[2.4.2 Microsoft Azure EventHub 環境を設定する &#x200B;](./ex2.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

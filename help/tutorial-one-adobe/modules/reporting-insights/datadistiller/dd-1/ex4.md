@@ -179,7 +179,7 @@ limit 10;
 
 ### Adobe定義関数
 
-Adobeでは、標準 SQL 構文に一連の **0&rbrace;Adobe定義関数 &rbrace; が追加され、エクスペリエンスデータをより深く理解できるようになりました。**&#x200B;次のクエリでは、これらの ADF 関数について説明します。 詳細と完全なリストについては、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=ja) を参照してください。
+Adobeでは、標準 SQL 構文に一連の **0&rbrace;Adobe定義関数 &rbrace; が追加され、エクスペリエンスデータをより深く理解できるようになりました。**&#x200B;次のクエリでは、これらの ADF 関数について説明します。 詳細と完全なリストについては、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=ja) を参照してください。
 
 ### セッションの 3 番目のページとして「サービスをキャンセル」ページに到達する前に、サイト上でユーザーはどうしますか？
 
@@ -580,8 +580,8 @@ and    l._experienceplatform.identification.core.ecid = e._experienceplatform.id
 
 ## 次の手順
 
-[2.1.5 クエリからデータセットを生成に移動する ](./ex5.md){target="_blank"}
+[2.1.5 クエリからデータセットを生成に移動する &#x200B;](./ex5.md){target="_blank"}
 
-[ クエリサービス ](./query-service.md){target="_blank"} に戻る
+[&#x200B; クエリサービス &#x200B;](./query-service.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

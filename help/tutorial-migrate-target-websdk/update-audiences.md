@@ -25,7 +25,7 @@ Target を Platform Web SDK に移行する技術的な更新を完了した後�
 
 at.js と Platform Web SDK の両方との互換性を確保する 1 つのアプローチは、以下に示すように、関連するオーディエンスを更新して、`OR` の条件が使用されるようにすることです。
 
-![Platform Web SDK 互換性のターゲットオーディエンス更新の表示方法 ](assets/target-audience-update.png){zoomable="yes"}
+![Platform Web SDK 互換性のターゲットオーディエンス更新の表示方法 &#x200B;](assets/target-audience-update.png){zoomable="yes"}
 
 ## プロファイルスクリプトの編集
 
@@ -49,11 +49,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-詳細とベストプラクティスについては、[ プロファイルスクリプト ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ja) に関する専用ドキュメントを参照してください。
+詳細とベストプラクティスについては、[&#x200B; プロファイルスクリプト &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=ja) に関する専用ドキュメントを参照してください。
 
 ## 動的コンテンツのパラメータートークンの更新
 
-[ 動的コンテンツ置換 ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=ja) を使用するオファー、レコメンデーションデザインまたはアクティビティがある場合は、新しい XDM パラメーター名を考慮して、それに応じて更新する必要がある場合があります。
+[&#x200B; 動的コンテンツ置換 &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=ja) を使用するオファー、レコメンデーションデザインまたはアクティビティがある場合は、新しい XDM パラメーター名を考慮して、それに応じて更新する必要がある場合があります。
 
 mbox パラメーターのトークン置き換えの使用方法によっては、古いパラメーター名と新しいパラメーター名の両方が考慮されるように、既存の設定を強化できる場合があります。 ただし、JSON オファーなど、カスタム JavaScript コードが利用できない状況では、移行が完了して実稼動サイトに移行した後、コピーを作成して更新を行う必要があります。
 
@@ -77,8 +77,8 @@ Platform Web SDK パラメーター名を使用した JSON オファーの例：
 
 移行後に調整を行って新しい XDM mbox パラメーター名を考慮する場合は、影響を受けるアクティビティを移行イベント中に一時停止して、訪問者にアクティビティ表示エラーが表示されないようにしてください。
 
-次に、[Target 実装の検証 ](validate.md) 方法を説明します。
+次に、[Target 実装の検証 &#x200B;](validate.md) 方法を説明します。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

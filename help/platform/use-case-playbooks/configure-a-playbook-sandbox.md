@@ -24,6 +24,6 @@ ht-degree: 1%
 1. サンドボックスへの権限とユーザーの追加
 1. メール、プッシュおよび SMS のチャネルサーフェスの設定
 
-詳しくは、[ ユースケースプレイブックの概要 ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=ja) を参照してください。
+詳しくは、[&#x200B; ユースケースプレイブックの概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3449827/?learn=on&enablevpops&captions=jpn)

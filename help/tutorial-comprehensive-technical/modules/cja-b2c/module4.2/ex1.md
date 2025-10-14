@@ -44,11 +44,11 @@ GCP/BigQuery Source コネクタは、以下の目的で使用する必要があ
 
 次に、「**プロジェクトを選択** または既存のプロジェクトをクリックします。
 
-![ デモ ](./images/ex12.png)
+![&#x200B; デモ &#x200B;](./images/ex12.png)
 
 まだプロジェクトがない場合は、「**新規プロジェクト**」をクリックします。 既にプロジェクトがある場合は、そのプロジェクトを選択して次の手順に進むことができます。
 
-![ デモ ](./images/ex1createproject.png)
+![&#x200B; デモ &#x200B;](./images/ex1createproject.png)
 
 この命名規則に従ってプロジェクトに名前を付けます。 **作成** をクリックします。
 
@@ -56,45 +56,45 @@ GCP/BigQuery Source コネクタは、以下の目的で使用する必要があ
 | ----------------- |
 | `--aepUserLdap---googlecloud` |
 
-![ デモ ](./images/ex13.png)
+![&#x200B; デモ &#x200B;](./images/ex13.png)
 
 画面の右上に表示される通知で、作成が完了したことが示されるまで待ちます。 次に、「**プロジェクトを選択**」をクリックします。
 
-![ デモ ](./images/ex14.png)
+![&#x200B; デモ &#x200B;](./images/ex14.png)
 
 次に、画面上部の検索バーに移動し、「**BigQuery**」と入力します。 最初の結果を選択します。
 
-![ デモ ](./images/ex17.png)
+![&#x200B; デモ &#x200B;](./images/ex17.png)
 
 このモジュールの目標は、Google AnalyticsデータをAdobe Experience Platformに取り込むことです。 そのためには、まず、Google Analyticsデータセットにダミーデータが必要です。
 
 「**+追加**」をクリックし、右側のメニューで **公開データセット** をクリックします。
 
-![ デモ ](./images/ex118.png)
+![&#x200B; デモ &#x200B;](./images/ex118.png)
 
 次のウィンドウが表示されます。
 
-![ デモ ](./images/ex119.png)
+![&#x200B; デモ &#x200B;](./images/ex119.png)
 
 検索バーに検索語句「**Google Analyticsサンプル**」を入力し、最初の検索結果をクリックします。
 
-![ デモ ](./images/ex120.png)
+![&#x200B; デモ &#x200B;](./images/ex120.png)
 
 次の画面に、データセットの説明が表示されます。 **データセットを表示** をクリックします。
 
-![ デモ ](./images/ex121.png)
+![&#x200B; デモ &#x200B;](./images/ex121.png)
 
 その後、BigQuery にリダイレクトされ、この **bigquery-public-data** データセットが **エクスプローラー** に表示されます。
 
-![ デモ ](./images/ex122a.png)
+![&#x200B; デモ &#x200B;](./images/ex122a.png)
 
 **エクスプローラー** には、多数のテーブルが表示されます。 自由に探索してください。 `google_analytics_sample` に移動します。
 
-![ デモ ](./images/ex122.png)
+![&#x200B; デモ &#x200B;](./images/ex122.png)
 
 クリックしてテーブル `ga_sessions` を開きます。
 
-![ デモ ](./images/ex123.png)
+![&#x200B; デモ &#x200B;](./images/ex123.png)
 
 次の演習に進む前に、次の内容をコンピュータ上の別のテキスト ファイルに書き留めてください。
 
@@ -105,15 +105,15 @@ GCP/BigQuery Source コネクタは、以下の目的で使用する必要があ
 
 上部のメニューバーで **プロジェクト名** をクリックすると、プロジェクト名とプロジェクト ID を確認できます。
 
-![ デモ ](./images/ex1projectMenu.png)
+![&#x200B; デモ &#x200B;](./images/ex1projectMenu.png)
 
 プロジェクト ID が右側に表示されます。
 
-![ デモ ](./images/ex1projetcselection.png)
+![&#x200B; デモ &#x200B;](./images/ex1projetcselection.png)
 
 次の演習では、Google Analyticsデータに対してクエリを実行して手を汚します。
 
-次の手順：[4.2.2 BigQuery で最初のクエリを作成する ](./ex2.md)
+次の手順：[4.2.2 BigQuery で最初のクエリを作成する &#x200B;](./ex2.md)
 
 [モジュール 4.2 に戻る](./customer-journey-analytics-bigquery-gcp.md)
 

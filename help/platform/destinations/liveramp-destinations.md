@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # LiveRamp 宛先を通じて広告パートナーに対してアクティブ化
 
-Real-Time CDPで LiveRamp 宛先を設定し、オーディエンスをアクティベーションパートナーに送信する方法について説明します。 詳細なドキュメントは、[LiveRamp - オンボーディング接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=ja) および [LiveRamp – 配布接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=ja) を参照してください。
+Real-Time CDPで LiveRamp 宛先を設定し、オーディエンスをアクティベーションパートナーに送信する方法について説明します。 詳細なドキュメントは、[LiveRamp - オンボーディング接続 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=ja) および [LiveRamp – 配布接続 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452655/?learn=on&enablevpops&captions=jpn)

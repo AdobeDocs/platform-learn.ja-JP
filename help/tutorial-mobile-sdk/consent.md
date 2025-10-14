@@ -15,7 +15,7 @@ ht-degree: 1%
 
 モバイルアプリで同意を実装する方法を説明します。
 
-Adobe Experience Platform同意モバイル拡張機能を使用すると、Adobe Experience Platform Mobile SDKおよびEdge Network拡張機能を使用する際に、モバイルアプリから同意環境設定を収集できます。 [ 同意拡張機能 ](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) について詳しくは、ドキュメントを参照してください。
+Adobe Experience Platform同意モバイル拡張機能を使用すると、Adobe Experience Platform Mobile SDKおよびEdge Network拡張機能を使用する際に、モバイルアプリから同意環境設定を収集できます。 [&#x200B; 同意拡張機能 &#x200B;](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) について詳しくは、ドキュメントを参照してください。
 
 ## 前提条件
 
@@ -178,15 +178,15 @@ Adobe Experience Platform同意モバイル拡張機能を使用すると、Adob
 ## Assurance での検証
 
 1. デバイスまたはシミュレーターからアプリケーションを削除して、トラッキングと同意を適切にリセットおよび初期化します。
-1. シミュレーターやデバイスをAssuranceに接続するには、[ 設定手順 ](assurance.md#connecting-to-a-session) セクションを確認してください。
+1. シミュレーターやデバイスをAssuranceに接続するには、[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) セクションを確認してください。
 1. アプリを **[!UICONTROL ホーム]** 画面から **[!UICONTROL 製品]** 画面に移動し、**[!UICONTROL ホーム]** 画面に戻ると、Assurance UI に **[!UICONTROL 同意応答を取得]** イベントが表示されます。
-   ![ 同意を検証 ](assets/consent-update.png){zoomable="yes"}
+   ![&#x200B; 同意を検証 &#x200B;](assets/consent-update.png){zoomable="yes"}
 
 
 >[!SUCCESS]
 >
 >これで、Adobe Experience Platform Mobile SDKを使用して、インストール（または再インストール）後、最初にユーザーに同意を求めるプロンプトをアプリで表示できるようになりました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)
 
 次のトピック：**[ライフサイクル・データの収集](lifecycle-data.md)**

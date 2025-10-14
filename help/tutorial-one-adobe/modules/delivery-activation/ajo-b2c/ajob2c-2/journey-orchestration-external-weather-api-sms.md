@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[Experience League ドキュメントのChrome拡張機能のインストール ](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
+>[Experience League ドキュメントのChrome拡張機能のインストール &#x200B;](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
 
 ## 演習
 
@@ -65,7 +65,7 @@ Adobe Journey Optimizerを使用して外部アクションを定義する方法
 
 このモジュールの概要とメリットの概要
 
-![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

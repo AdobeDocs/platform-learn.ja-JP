@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # コンテンツのサプライチェーンを 4 段階に分けて
 
-世界は今やデジタルを第一に考えています。 企業が折り合いを付けざるを得ない現実であり、近い将来に実現するわけではありません。 このデジタル世界の一部として、私たちは、より多くの人々がソーシャルメディアを閲覧し、デジタルスペースに時間を費やし、リモートで作業することによって推進される [ コンテンツの巨大なサージ ](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html) に直面しています。
+世界は今やデジタルを第一に考えています。 企業が折り合いを付けざるを得ない現実であり、近い将来に実現するわけではありません。 このデジタル世界の一部として、私たちは、より多くの人々がソーシャルメディアを閲覧し、デジタルスペースに時間を費やし、リモートで作業することによって推進される [&#x200B; コンテンツの巨大なサージ &#x200B;](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html) に直面しています。
 
 つまり、コンテンツを配信するチャネル、市場、形式が増え、そのコンテンツを動的かつ最適化する必要性が高まっているということです。
 
-![ マーケターの 85% は、コンテンツをより迅速に作成および配信しなければならないというプレッシャーを受けていると答えています。](./images/pressure-to-create-content.png)
+![&#x200B; マーケターの 85% は、コンテンツをより迅速に作成および配信しなければならないというプレッシャーを受けていると答えています。](./images/pressure-to-create-content.png)
 
 _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
 
@@ -26,7 +26,7 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 
 コンテンツのサプライチェーンとは、人物、ツール、ワークストリームを統合して、コンテンツを効果的に計画、作成、管理および配信するプロセスです。 顧客はますます速いペースでより多くの優れたエクスペリエンスを求めているので、後ではなく、現時点でコンテンツを適切に取得する必要があります。 そうすることで、サイロを解消し、ワークフローを統合して、すべてのチームにプレッシャーをかけずに済みます。 また、テクノロジーへの投資からより多くの価値を引き出し、効率と価値の向上を支援します。
 
-![ コンテンツサプライチェーンにどのようなフェーズやチームが関わっているかの概要 ](./images/csc-overview.png)
+![&#x200B; コンテンツサプライチェーンにどのようなフェーズやチームが関わっているかの概要 &#x200B;](./images/csc-overview.png)
 
 理論的には、あらゆる場所の企業がコンテンツをより迅速に提供できるようにするプロセスです。 しかし実際には、部門横断的なコンテンツのライフサイクルの自然な仕組みにより、ほとんどのサプライチェーンが機能しなくなっています。 残念ながら、これらのチェーンが壊れると、内部のミスアライメントが生じ、予算が減り、従業員が消耗し、市場に重要なメッセージを届ける速度が遅くなる可能性があります。
 
@@ -42,7 +42,7 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 2. **実稼動環境** では、サイロ化されたシステムと切断されたワークフローにより、ライブコラボレーション、アセットの検索、遅延、バーンアウトが制限されます。 また、クリエイティブ担当者は、タスクとアセットを手動で追跡し、繰り返しタスクを手動で実行する必要があるので、最終的にはコストが高くなり、エラーが増えます。
 3. **配信** の時期が来ると、一元的なアセット管理システムを持たず、コンテンツを拡張するための自動化を限定的に行うことで、チームがチャネルをまたいで、パーソナライズされた包括的なエクスペリエンスを開始する能力を低下させます。 そのうえ、配信ツールとデータが断片化されると、アセットのパフォーマンスの正確な測定が制限されます。
 
-![ サプライチェーンが崩壊すると、システムの断片化が混乱を生む。](./images/fragmented-supply-chain.png)
+![&#x200B; サプライチェーンが崩壊すると、システムの断片化が混乱を生む。](./images/fragmented-supply-chain.png)
 
 ## コンテンツのサプライチェーンを見直す時期です
 
@@ -52,7 +52,7 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 
 マーケティングチームが、部門横断的なコラボレーションを可能にし、プロジェクトを計画されたデータ駆動型の結果に結び付ける作業管理ソリューションを使用するのが理想的です。 また、マーケティングチームが戦略的に作業の優先順位を付け、それらの優先順位をクリエイティブチームに通知できるようにする必要もあります。 そこから、クリエイティブブリーフ、コンテンツバージョン、フィードバックを各プロジェクト内で結び付ける必要があります。これにより、チームが探しているものを見つけるために古いメールを検索する必要がなくなります。
 
-クリエイティブチームは、クリエイティブおよび作業管理ツールと統合された [ 優れたデジタルアセット管理 ](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [ （DAM） ](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [ システム ](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) をセットアップする必要があります。 これにより、顧客は関連するアセットを簡単に検索、使用、更新または再利用できます。 これらをすべて行うことで、市場投入のスピードを向上させ、内部の運用とプロセスを簡素化できます。
+クリエイティブチームは、クリエイティブおよび作業管理ツールと統合された [&#x200B; 優れたデジタルアセット管理 &#x200B;](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [&#x200B; （DAM） &#x200B;](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [&#x200B; システム &#x200B;](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) をセットアップする必要があります。 これにより、顧客は関連するアセットを簡単に検索、使用、更新または再利用できます。 これらをすべて行うことで、市場投入のスピードを向上させ、内部の運用とプロセスを簡素化できます。
 
 ### シームレスなワークフローにより、実稼動環境の効率を高めます
 
@@ -70,15 +70,15 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 
 ## Adobeでは、クラス最高のコンテンツサプライチェーンを構築しています
 
-アドビ独自の [Adobe Experience Cloud ビジネスは ](https://business.adobe.com/) キャンペーンに活気を与え、複数のセグメントをサポートするために、前に概要を説明した手順に従うことに焦点を当てています。 アドビのビジョンは、キャンペーンのフレームワークやメッセージに沿った、魅力的なコンテンツをグローバルに提供することです。
+アドビ独自の [Adobe Experience Cloud ビジネスは &#x200B;](https://business.adobe.com/) キャンペーンに活気を与え、複数のセグメントをサポートするために、前に概要を説明した手順に従うことに焦点を当てています。 アドビのビジョンは、キャンペーンのフレームワークやメッセージに沿った、魅力的なコンテンツをグローバルに提供することです。
 
-エンドツーエンドのコンテンツ作成プロセスの鍵は、[Adobe Workfront&rbrace; と ](https://business.adobe.com/products/workfront/main.html)2&rbrace;Adobe Experience Manager Assets[&#128279;](https://business.adobe.com/products/experience-manager/assets/aem-assets.html) を組み合わせることです。 同じ 3 つのフェーズで、どのようにプロセスにアプローチしたかを見てみましょう。
+エンドツーエンドのコンテンツ作成プロセスの鍵は、[Adobe Workfront&rbrace; と &#x200B;](https://business.adobe.com/products/workfront/main.html)2&rbrace;Adobe Experience Manager Assets[&#128279;](https://business.adobe.com/products/experience-manager/assets/aem-assets.html) を組み合わせることです。 同じ 3 つのフェーズで、どのようにプロセスにアプローチしたかを見てみましょう。
 
 まず **プランニング** から始めます。ここでは、ビジネス全体から数百ものコンテンツ・リクエストを取り込み、四半期ごとの優先順位に基づいて優先順位を付けます。 次に、Workfrontのコンテンツ提案ダッシュボードを使用して透明性を提供し、関係者と連携して、マーケティング、クリエイティブ、web、営業の各チーム間ですばやく承認を得ることができます。 これにより、四半期の目標の記録を作成し、クリエイティブチームと web チームにリクエスト量の合計を可視化して、リソースの計画を立てることができます。 さらに、マネージャーはチームのワークロードを簡単に監視できます。
 
 **実稼動** に移行すると、承認されたリクエストは、クリエイティブブリーフ、web ランディング場所、プロモーション要件など、クリエイティブチームにより詳細な情報を提供するプロジェクトに変わります。 その後、コンテンツ戦略担当者は、Workfrontの関係者やクリエイティブと協力して、コンテンツをレビューし、期限に間に合わせます。 Workfrontでこれらをすべて行うので、重複した手順、不要なメール、複数のフォーム入力を排除し、アセットタイプ別に実稼動サイクルをトラッキングし始めています。 これにより、プロジェクトデータを詳細に調べることで、スタッフのリソースのバランスを取り、必要に応じて優先順位を再設定できます。
 
-コンテンツを **配信** する準備ができたら、[ オファー、アセットおよびプロモーションコンテンツをExperience Manager Assetsに公開 ](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) します。 特に、すべては社内のマーケティングハブに送られ、社内の誰もが必要なときに必要なコンテンツの正確な部分をすばやく見つけることができます。
+コンテンツを **配信** する準備ができたら、[&#x200B; オファー、アセットおよびプロモーションコンテンツをExperience Manager Assetsに公開 &#x200B;](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) します。 特に、すべては社内のマーケティングハブに送られ、社内の誰もが必要なときに必要なコンテンツの正確な部分をすばやく見つけることができます。
 
 コンテンツの実用的なサプライチェーンを構築することで、大きな成果が得られたと思います。 具体的には、1 つの作業管理システムに移行することで、重複データのエントリを半分に減らしました。 常に改善の余地があるとは言え、顧客の期待に一歩先んじて取り組むためのプロセスに向かう準備が整っていることを我々は理解しています。
 
@@ -90,10 +90,10 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 
 コンテンツサプライチェーンは、すべての問題に魔法のような解決策ではありません。 これは、顧客に提供したいすべてのエクスペリエンスをより効率的に管理できる作業方法です。 あなたは歩いて最終的に実行することができます前に、クロールする必要があります。
 
-![ クロール ウォーク ラン ](./images/crawl-walk-run.png)
+![&#x200B; クロール ウォーク ラン &#x200B;](./images/crawl-walk-run.png)
 
 そして、最後に立ち上げて運用したら、エンドツーエンドのコンテンツサプライチェーンから引き出すことができる追加の事項、つまりインサイトが必要になります。 実際、しばらくすると、特定のアクションが時間、予算にどのように影響するかを調べることができます。これについては、ブートキャンプの最後でも説明します。
 
-次の手順：[ クリエイティブブリーフ ](./creative-brief.md)
+次の手順：[&#x200B; クリエイティブブリーフ &#x200B;](./creative-brief.md)
 
 [すべてのモジュールに戻る](./overview.md)

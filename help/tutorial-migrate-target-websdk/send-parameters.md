@@ -122,11 +122,11 @@ Platform Web SDK は、追加の関数を必要とせずにデータを送信す
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | カスタムエンティティパラメーターは、Recommendations商品カタログの更新に使用されます。 これらのカスタムパラメーターは、`data` オブジェクトの一部として渡す必要があります。 |
 | `cartIds` | `data.__adobe.target.cartIds` | Target の買い物かごベースのレコメンデーションアルゴリズムに使用します。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Recommendations デザインで特定のエンティティ ID が返されるのを防ぐために使用します。 |
-| `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[ データストリームの Target 設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=ja) で指定する必要があります。 |
+| `mbox3rdPartyId` | `xdm.identityMap` オブジェクトに設定 | デバイスや顧客属性をまたいで Target プロファイルを同期するために使用します。 顧客 ID に使用する名前空間は、[&#x200B; データストリームの Target 設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=ja) で指定する必要があります。 |
 | `orderId` | `xdm.commerce.order.purchaseID` | Target コンバージョントラッキングの一意の順序を識別するために使用します。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Target のコンバージョンと最適化の目標で、注文の合計をトラッキングするために使用します。 |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br> または <br> `xdm.productListItems[0-n].SKU` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 詳しくは、以下の [ エンティティパラメーター ](#entity-parameters) の節を参照してください。 |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [ カスタムスコア ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=ja) アクティビティ目標に使用します。 |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br> または <br> `xdm.productListItems[0-n].SKU` | Target のコンバージョントラッキングとレコメンデーションアルゴリズムに使用します。 詳しくは、以下の [&#x200B; エンティティパラメーター &#x200B;](#entity-parameters) の節を参照してください。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [&#x200B; カスタムスコア &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=ja) アクティビティ目標に使用します。 |
 
 {style="table-layout:auto"}
 
@@ -167,18 +167,18 @@ alloy("sendEvent", {
 
 タグでは、まず [!UICONTROL XDM object] データ要素を使用して XDM フィールドにマッピングします。
 
-![XDM オブジェクトデータ要素の XDM フィールドへのマッピング ](assets/params-tags-pageName.png){zoomable="yes"}
+![XDM オブジェクトデータ要素の XDM フィールドへのマッピング &#x200B;](assets/params-tags-pageName.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
-![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent.png){zoomable="yes"}
+![XDM オブジェクトデータ要素を送信イベントに含める &#x200B;](assets/params-tags-sendEvent.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->カスタム mbox パラメーターは `xdm` のオブジェクトの一部なので、新しい名前を使用して、これらの mbox パラメーターを参照するオーディエンス、アクティビティまたはプロファイルスクリプトを更新する必要があります。 詳しくは、このチュートリアルの [Platform Web SDK 互換性のための Target オーディエンスとプロファイルスクリプトの更新 ](update-audiences.md) ページを参照してください。
+>カスタム mbox パラメーターは `xdm` のオブジェクトの一部なので、新しい名前を使用して、これらの mbox パラメーターを参照するオーディエンス、アクティビティまたはプロファイルスクリプトを更新する必要があります。 詳しくは、このチュートリアルの [Platform Web SDK 互換性のための Target オーディエンスとプロファイルスクリプトの更新 &#x200B;](update-audiences.md) ページを参照してください。
 
 
 ## プロファイルパラメーター
@@ -221,17 +221,17 @@ alloy("sendEvent", {
 
 タグで、最初にデータ要素を作成して、`data.__adobe.target` のオブジェクトを定義します。
 
-![ データ要素でのデータオブジェクトの定義 ](assets/params-tags-dataObject.png){zoomable="yes"}
+![&#x200B; データ要素でのデータオブジェクトの定義 &#x200B;](assets/params-tags-dataObject.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
-![ データオブジェクトを送信イベントに含める ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
+![&#x200B; データオブジェクトを送信イベントに含める &#x200B;](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 ## エンティティパラメーター
 
-エンティティパラメーターは、Target Recommendationsの行動データと追加のカタログ情報を渡すために使用されます。 at.js でサポートされているすべての [ エンティティパラメーター ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ja) も、Platform Web SDK でサポートされています。 プロファイルパラメーターと同様に、すべてのエンティティパラメーターは、Platform Web SDK `sendEvent` コマンドペイロードの `data.__adobe.target` オブジェクトの下に渡す必要があります。
+エンティティパラメーターは、Target Recommendationsの行動データと追加のカタログ情報を渡すために使用されます。 at.js でサポートされているすべての [&#x200B; エンティティパラメーター &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ja) も、Platform Web SDK でサポートされています。 プロファイルパラメーターと同様に、すべてのエンティティパラメーターは、Platform Web SDK `sendEvent` コマンドペイロードの `data.__adobe.target` オブジェクトの下に渡す必要があります。
 
 適切にデータを取得するには、特定の項目のエンティティパラメーターの先頭に `entity.` を付ける必要があります。 Recommendations アルゴリズムの予約済みの `cartIds` と `excludedIds` のパラメーターにはプレフィックスを付けてはいけません。また、それぞれの値には、エンティティ ID のコンマ区切りリストを含める必要があります。
 
@@ -275,11 +275,11 @@ alloy("sendEvent", {
 
 タグで、最初にデータ要素を作成して、`data.__adobe.target` のオブジェクトを定義します。
 
-![ データ要素でのデータオブジェクトの定義 ](assets/params-tags-dataObject-entities.png){zoomable="yes"}
+![&#x200B; データ要素でのデータオブジェクトの定義 &#x200B;](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
-![ データオブジェクトを送信イベントに含める ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
+![&#x200B; データオブジェクトを送信イベントに含める &#x200B;](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -347,11 +347,11 @@ alloy("sendEvent", {
 
 タグでは、まず [!UICONTROL XDM オブジェクト &#x200B;] データ要素を使用して、必須の XDM フィールド（JavaScriptの例を参照）およびオプションのカスタムスコープにマッピングします。
 
-![XDM オブジェクトデータ要素の XDM フィールドへのマッピング ](assets/params-tags-purchase.png){zoomable="yes"}
+![XDM オブジェクトデータ要素の XDM フィールドへのマッピング &#x200B;](assets/params-tags-purchase.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][ 結合 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
-![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
+![XDM オブジェクトデータ要素を送信イベントに含める &#x200B;](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -412,17 +412,17 @@ alloy("sendEvent", {
 >[!TAB タグ]
 
 [!UICONTROL ID] 値、[!UICONTROL &#x200B; 認証状態 &#x200B;] および [!UICONTROL &#x200B; 名前空間 &#x200B;] は、[!UICONTROL ID マップ &#x200B;] データ要素に取り込まれます。
-![ 顧客 ID をキャプチャする ID マップデータ要素 ](assets/params-tags-customerIdDataElement.png){zoomable="yes"}
+![&#x200B; 顧客 ID をキャプチャする ID マップデータ要素 &#x200B;](assets/params-tags-customerIdDataElement.png){zoomable="yes"}
 
 次に、[!UICONTROL Identity map] データ要素を使用して、[!UICONTROL XDM オブジェクト &#x200B;] データ要素の [!UICONTROL identityMap] フィールドを設定します。
-![XDM オブジェクトデータ要素で使用される ID マップデータ要素 ](assets/params-tags-customerIdInXDMObject.png){zoomable="yes"}
+![XDM オブジェクトデータ要素で使用される ID マップデータ要素 &#x200B;](assets/params-tags-customerIdInXDMObject.png){zoomable="yes"}
 
 次に、[!UICONTROL XDM オブジェクト &#x200B;] がルールの [!UICONTROL &#x200B; イベントを送信 &#x200B;] アクションに含まれます。
 
-![XDM オブジェクトデータ要素を送信イベントに含める ](assets/params-tags-sendEvent-xdm.png){zoomable="yes"}
+![XDM オブジェクトデータ要素を送信イベントに含める &#x200B;](assets/params-tags-sendEvent-xdm.png){zoomable="yes"}
 
 データストリームのAdobe Target サービスで、[!UICONTROL Target サードパーティ ID 名前空間 &#x200B;] を [!UICONTROL ID マップ &#x200B;] データ要素で使用されているのと同じ名前空間に設定してください。
-![ データストリームで Target サードパーティ ID 名前空間を設定する ](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
+![&#x200B; データストリームで Target サードパーティ ID 名前空間を設定する &#x200B;](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -600,8 +600,8 @@ alloy("sendEvent", {
 
 +++
 
-次に、Platform Web SDK を使用して Target コンバージョンイベントを [ トラッキング ](track-events.md) する方法について説明します。
+次に、Platform Web SDK を使用して Target コンバージョンイベントを [&#x200B; トラッキング &#x200B;](track-events.md) する方法について説明します。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

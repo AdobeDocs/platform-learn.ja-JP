@@ -16,7 +16,7 @@ ht-degree: 17%
 
 # データ取り込みの概要
 
-Adobe Experience Platformのデータ取得機能を使用すると、オープンでスケーラブルな 1 つのプラットフォームにデータを統合して、リアルタイム顧客プロファイルを管理できます。 詳しくは、[ データ取り込みドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) を参照してください。
+Adobe Experience Platformのデータ取得機能を使用すると、オープンでスケーラブルな 1 つのプラットフォームにデータを統合して、リアルタイム顧客プロファイルを管理できます。 詳しくは、[&#x200B; データ取り込みドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/346833?learn=on&enablevpops&captions=jpn)
 

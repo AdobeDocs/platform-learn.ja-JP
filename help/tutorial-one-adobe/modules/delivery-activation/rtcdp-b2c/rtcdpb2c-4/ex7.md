@@ -110,8 +110,8 @@ Visual Studio Code に戻り、「**TERMINAL**」タブを見ると、特定の 
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
-[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # 宛先の概要
 
-宛先は、宛先プラットフォームとの事前定義済みの統合で、シームレスな方法でデータをアクティブ化し、それらのパートナーに書き出します。 [!DNL Real-Time CDP]、[!DNL Experience Platform]、[!DNL Tags] からデータを取得して、様々なユースケースをサポートするために使用できる宛先タイプについて説明します。 詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ja) を参照してください。
+宛先は、宛先プラットフォームとの事前定義済みの統合で、シームレスな方法でデータをアクティブ化し、それらのパートナーに書き出します。 [!DNL Real-Time CDP]、[!DNL Experience Platform]、[!DNL Tags] からデータを取得して、様々なユースケースをサポートするために使用できる宛先タイプについて説明します。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34116?learn=on&enablevpops&captions=jpn)
 

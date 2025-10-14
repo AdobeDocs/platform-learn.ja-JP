@@ -49,9 +49,9 @@ A4T の実装に必要な主な要件は、次のとおりです（既に済ん�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. [ 前のレッスン ](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
+1. [&#x200B; 前のレッスン &#x200B;](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
 
-   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「ネットワーク」タブに移動します。
 
@@ -88,9 +88,9 @@ A4T 統合を検証する最善の方法は、A4T を使用して実際に Targe
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. [ 前のレッスン ](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
+1. [&#x200B; 前のレッスン &#x200B;](switch-environments.md) の説明に従って、Debugger がタグプロパティを *自分の* 開発環境にマッピングしていることを確認します。
 
-   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「ネットワーク」タブに移動します。
 
@@ -130,7 +130,7 @@ A4Tアクティビティの一貫としてページ読み込みの範囲（単�
 
 1. サイトの右上隅にある「**[!UICONTROL ログイン]**」リンクをクリックします
 
-   ![ 右上の「ログイン」をクリックします ](images/idservice-loginNav.png)
+   ![&#x200B; 右上の「ログイン」をクリックします &#x200B;](images/idservice-loginNav.png)
 
 1. ユーザー名として `test@test.com` を入力します。
 1. パスワードとして `test` を入力します。

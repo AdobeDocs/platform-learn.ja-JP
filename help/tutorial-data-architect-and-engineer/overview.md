@@ -28,7 +28,7 @@ _データアーキテクトおよびデータエンジニア向けAdobe Experie
 
 データアーキテクトとデータエンジニアが緊密に連携して、Experience Platformの導入を成功させる必要があります。 この実践チュートリアルでは、_両方の役割_ で実行される主なタスクについて説明するので、自分のビジネスに Platform を実装する方法を理解できます。 Experience Platformの主な用語、機能、インターフェイス、API を紹介する演習を通じてガイドされます。 Real-time Customer Data Platform、Customer Journey Analytics、Journey OptimizerなどのAdobe Experience Cloud アプリケーションのお客様も、Platform サービスがこれらのアプリケーションの重要な基盤となるので、このコンテンツが役立つことに気付くでしょう。
 
-![ このチュートリアルで扱う Platform サービスを重点的に解説したAdobe Experience Cloud マーケテクチャ - ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス ](assets/marketecture.png)
+![&#x200B; このチュートリアルで扱う Platform サービスを重点的に解説したAdobe Experience Cloud マーケテクチャ - ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス &#x200B;](assets/marketecture.png)
 
 トピックは次のとおりです。
 
@@ -48,9 +48,9 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 ## 前提条件
 
-* あなたはExperience Leagueーで [Adobe Experience Platform プレイリストの概要 ](https://experienceleague.adobe.com/ja/playlists/experience-platform-introduction) を見ており、Platform の機能をよく知っています
+* あなたはExperience Leagueーで [Adobe Experience Platform プレイリストの概要 &#x200B;](https://experienceleague.adobe.com/ja/playlists/experience-platform-introduction) を見ており、Platform の機能をよく知っています
 * Adobe Experience Platform（またはReal-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーション）とデータ収集（以前の Launch）でプロビジョニングされたアカウントにアクセスできます。
-* そのアカウントのシステム管理者であるか、1 つの [ ユーザー権限の設定 ](configure-permissions.md) を持つことができます。
+* そのアカウントのシステム管理者であるか、1 つの [&#x200B; ユーザー権限の設定 &#x200B;](configure-permissions.md) を持つことができます。
 
 ## このチュートリアルの使用
 
@@ -58,7 +58,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 このチュートリアルで様々な Platform 要素を作成する際は、できるだけ推奨する名前に従ってください。 ただし、組織で複数のユーザーが同時にこのチュートリアルを実行する場合に備えて、カスタマイズした高レベルの要素名がいくつかあります。 例えば、Platform サンドボックスに、単に「Luma チュートリアルプラットフォーム」ではなく「Luma チュートリアルプラットフォーム - Ignatius J Reilly」という名前を付けることができます。
 
-問題が発生した場合は、最初に手順を再度読んでから、各ページのサイドバーにある ![ 問題を記録 ](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=ja) リンクを使用して連絡してください。
+問題が発生した場合は、最初に手順を再度読んでから、各ページのサイドバーにある ![&#x200B; 問題を記録 &#x200B;](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=ja) リンクを使用して連絡してください。
 
 ## テクニカルノート
 
@@ -79,4 +79,4 @@ Platform は、API ファーストで構築されています。 インターフ
 * 2023 年 6 月：新しい権限ワークフローを含み、OAuth サーバー間 API 資格情報を使用するように更新されました
 
 
-次に、最初のレッスンである [ 権限の設定 ](configure-permissions.md) に進みます。
+次に、最初のレッスンである [&#x200B; 権限の設定 &#x200B;](configure-permissions.md) に進みます。

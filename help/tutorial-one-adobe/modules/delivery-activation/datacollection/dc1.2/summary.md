@@ -32,6 +32,6 @@ ht-degree: 1%
 
 ## 次の手順
 
-[ データ取り込み ](./data-ingestion.md){target="_blank"} に戻る
+[&#x200B; データ取り込み &#x200B;](./data-ingestion.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -16,9 +16,9 @@ ht-degree: 0%
 
 「PIN」行で「モバイルアプリの認識」をクリックし、「指標」をクリックします。
 
-![ モバイルアプリ対応をクリック ](./images/mobile-app-awareness.png)
+![&#x200B; モバイルアプリ対応をクリック &#x200B;](./images/mobile-app-awareness.png)
 
-![ プロジェクトに関する詳細の表示 ](./images/awareness-view.png)
+![&#x200B; プロジェクトに関する詳細の表示 &#x200B;](./images/awareness-view.png)
 
 ここには、1 つのプロジェクト/キャンペーンのステータスがグラフィカルに表示されます。
 
@@ -30,23 +30,23 @@ ht-degree: 0%
 
 「PIN」行で、「プロジェクト」をクリックします。
 
-![ プロジェクトをクリック ](./images/projects.png)
+![&#x200B; プロジェクトをクリック &#x200B;](./images/projects.png)
 
 左側の列で「キャンペーンステータス」をクリックします。
 
 上部では、1 つの単一キャンペーンに関して、各チャネルの 1/キャンペーン **予定対実際** 滞在時間および 2/**キャンペーン条件** について次のインサイトを提供します。
 
-![ キャンペーンインサイト ](./images/campaign-insights.png)
+![&#x200B; キャンペーンインサイト &#x200B;](./images/campaign-insights.png)
 
 下部では、**キャンペーン成果物** ステータスに関するインサイトが提供されます。
 
-![ キャンペーン成果物 ](./images/deliverables-status.png)
+![&#x200B; キャンペーン成果物 &#x200B;](./images/deliverables-status.png)
 
 ## 複数のプロジェクトに基づくインサイト
 
 左側の列で、「監視」をクリックします。
 
-![ 監視をクリック ](./images/monitoring.png)
+![&#x200B; 監視をクリック &#x200B;](./images/monitoring.png)
 
 上部では、**タスクのステータス** という視点と、**プロジェクトの状態** という視点の両方から、プロジェクトのグループのステータスに関するインサイトを提供します。
 
@@ -54,23 +54,23 @@ ht-degree: 0%
 
 下部には、すべての **危険な承認** が表示され、追跡が必要になります。
 
-![ 特定されたリスク ](./images/risk-approvals.png)
+![&#x200B; 特定されたリスク &#x200B;](./images/risk-approvals.png)
 
 ## コンテンツダッシュボード
 
 左側の列のまま、「コンテンツダッシュボード」をクリックします。
 
-![ コンテンツダッシュボードのクリック ](./images/content-dashboard.png)
+![&#x200B; コンテンツダッシュボードのクリック &#x200B;](./images/content-dashboard.png)
 
 上部では、すべての **ドキュメントのプルーフの承認** ステータス（承認済みか、必要なバージョンの数など）について優れたインサイトが得られます。
 
-![ 承認の証明 ](./images/proof-of-approval.png)
+![&#x200B; 承認の証明 &#x200B;](./images/proof-of-approval.png)
 
 下部は **プルーフ承認のレビュー** であり、プルーフ承認のステータスに対する別の角度からのビジョンを提供します。
 
-![ プルーフのレビュー ](./images/poa-review.png)
+![&#x200B; プルーフのレビュー &#x200B;](./images/poa-review.png)
 
-次の手順：[ フェーズ 4 - マーケティングマネージャーのためのインサイト ](./marketing-manager.md)
+次の手順：[&#x200B; フェーズ 4 - マーケティングマネージャーのためのインサイト &#x200B;](./marketing-manager.md)
 
 [フェーズ 4 - インサイト：概要に戻る](./overview.md)
 

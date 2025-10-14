@@ -117,8 +117,8 @@ Adobe アカウントのメールアドレスを入力し、「**やってみま
 
 ## 次の手順
 
-[1.5.2 Frame.io を使用した承認 ](./ex2.md){target="_blank"} に移動
+[1.5.2 Frame.io を使用した承認 &#x200B;](./ex2.md){target="_blank"} に移動
 
-[Frame.io によるワークフローの効率化 ](./frameio.md){target="_blank"} に戻る
+[Frame.io によるワークフローの効率化 &#x200B;](./frameio.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

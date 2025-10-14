@@ -16,6 +16,6 @@ ht-degree: 2%
 
 # スキーマの更新
 
-このビデオでは、Adobe Experience Platformの既存のスキーマを更新する際に注意すべき基本的な事項をいくつか説明します。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
+このビデオでは、Adobe Experience Platformの既存のスキーマを更新する際に注意すべき基本的な事項をいくつか説明します。 詳しくは、[&#x200B; スキーマドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413639?learn=on&enablevpops&captions=jpn)

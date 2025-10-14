@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # クエリサービスでデータを検証
 
-SQL 関数を使用して取り込んだデータを検証する方法を説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
+SQL 関数を使用して取り込んだデータを検証する方法を説明します。 詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3414057?learn=on&enablevpops&captions=jpn)

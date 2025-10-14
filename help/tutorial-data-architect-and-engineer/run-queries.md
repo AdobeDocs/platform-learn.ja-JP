@@ -29,7 +29,7 @@ Adobe Experience Platform クエリサービスは、標準の SQL を使用し�
 
 ## 必要な権限
 
-[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -51,7 +51,7 @@ Adobe Experience Platform クエリサービスは、標準の SQL を使用し�
 
 1. 使用可能なテーブルのリストが表示されます
 
-   ![ テーブル クエリの表示 ](assets/queries-showTables.png)
+   ![&#x200B; テーブル クエリの表示 &#x200B;](assets/queries-showTables.png)
 
 
 1. 次に、このクエリを試して、`_techmarketingdemos` を独自のテナント名前空間に置き換えます。この名前空間は、思い出すと、スキーマに表示されます。
@@ -62,14 +62,14 @@ Adobe Experience Platform クエリサービスは、標準の SQL を使用し�
    WHERE loyalty.tier ='gold'
    ```
 
-   ![ ロイヤルティデータセットからのデータの選択 ](assets/queries-loyaltySelect.png)
+   ![&#x200B; ロイヤルティデータセットからのデータの選択 &#x200B;](assets/queries-loyaltySelect.png)
 
 1. エラーが発生した場合は、次の図のように、詳細なメッセージが **[!UICONTROL コンソール]** タブに表示されます
-   ![ クエリのエラー ](assets/queries-error.png)
+   ![&#x200B; クエリのエラー &#x200B;](assets/queries-error.png)
 
 1. 正常に完了したクエリでは、**[!UICONTROL Name]** が `Luma Gold Level Customers` されます
 1. 「**[!UICONTROL 保存]** ボタンを選択します
-   ![ クエリの保存 ](assets/queries-loyaltySelect-save.png)
+   ![&#x200B; クエリの保存 &#x200B;](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## その他のリソース
 
-* [ クエリサービスドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
-* [ クエリサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [&#x200B; クエリサービスドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
+* [&#x200B; クエリサービス API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-最後の実践レッスンとして、[ セグメントの作成 ](build-segments.md) を行います。
+最後の実践レッスンとして、[&#x200B; セグメントの作成 &#x200B;](build-segments.md) を行います。

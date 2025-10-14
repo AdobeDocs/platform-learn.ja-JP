@@ -32,7 +32,7 @@ offer decisioningを使用すると、選択可能な選択肢の中から最適
 
 >[!NOTE]
 >
->Experience LeagueドキュメントのChrome拡張機能のインストール [ で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください ](../../gettingstarted/gettingstarted/ex1.md)
+>Experience LeagueドキュメントのChrome拡張機能のインストール [&#x200B; で参照されているように、Chrome拡張機能をインストール、設定および使用することを忘れないでください &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## 演習
 
@@ -64,7 +64,7 @@ offer decisioningを使用すると、選択可能な選択肢の中から最適
 
 このモジュールの概要とメリットの概要
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

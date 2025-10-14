@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # Tableau でのクエリサービスを使用したオムニチャネルインサイトの分析と視覚化
 
-チャーン分析の例を使用して、Adobe Experience Platformのクエリサービスを外部データビジュアライゼーションツールで使用する方法を説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
+チャーン分析の例を使用して、Adobe Experience Platformのクエリサービスを外部データビジュアライゼーションツールで使用する方法を説明します。 詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)

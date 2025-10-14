@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Real-Time CDP Collaborationの広告主としてのSource オーディエンス
 
-広告主として、オーディエンスをソースにしてインターフェイスに取り込み、パートナーと共同作業する際に使用できるようにする方法を説明します。 詳細なドキュメントについては、[ オーディエンスのソース化と管理 ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"} を参照してください。
+広告主として、オーディエンスをソースにしてインターフェイスに取り込み、パートナーと共同作業する際に使用できるようにする方法を説明します。 詳細なドキュメントについては、[&#x200B; オーディエンスのソース化と管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"} を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

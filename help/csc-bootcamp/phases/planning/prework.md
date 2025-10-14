@@ -18,23 +18,23 @@ ht-degree: 0%
 
 - タスク 1 の「初期タスク」を展開し、タスクをクリックして「5 つのブランドアセット（前面、背面など）を選択」を開きます。
 
-![ アセットを開くタスク ](./images/wf-open-assets-task.png)
+![&#x200B; アセットを開くタスク &#x200B;](./images/wf-open-assets-task.png)
 
 - 「ドキュメント」をクリックしてから「新規追加」をクリックします：
 
-![ ドキュメントを追加 ](./images/wf-add-new-doc.png)
+![&#x200B; ドキュメントを追加 &#x200B;](./images/wf-add-new-doc.png)
 
 - 「From experience-manager」を選択します。これにより、AEM Assetsで既に使用可能なブランドアセットを選択できます。
 
-![experience-manager から ](./images/wf-from-aem.png)
+![experience-manager から &#x200B;](./images/wf-from-aem.png)
 
 - AEM フォルダー階層が表示されたら、次のパスに移動します。experience-manager/Adobike Assets/バイクショット 5 つのアセットを選択し、「リンク」をクリックします。
 
-![ 選択されたアセット ](./images/selected-assets.png)
+![&#x200B; 選択されたアセット &#x200B;](./images/selected-assets.png)
 
 - これで、タスクにブランドアセットが追加されました。 つまり、タスク 2 を 100% 完了として設定できます。
 
-![ タスクを完了 ](./images/wf-task-2-complete.png)
+![&#x200B; タスクを完了 &#x200B;](./images/wf-task-2-complete.png)
 
 
 ## Adobe Commerceのデモ
@@ -53,32 +53,32 @@ Adobe Commerceは、最高のデジタルエクスペリエンスを顧客に提
 
 - タスクリストに移動し、「製品ホームページバナーを作成」タスクをタスク 4 「PRODUCTION」のすぐ下に追加します。 それには、「モバイルアプリのコンテンツを準備」タスクを選択し、「上にタスクを追加」アイコンをクリックします。
 
-![ 上記にタスクを追加 ](./images/wf-add-task-above.png)
+![&#x200B; 上記にタスクを追加 &#x200B;](./images/wf-add-task-above.png)
 
 - 追加したタスクに意味のある名前を付けます（「製品ホームページバナーを作成」など）。
 
-![ タスクを作成 ](./images/wf-create-banner.png)
+![&#x200B; タスクを作成 &#x200B;](./images/wf-create-banner.png)
 
 - タスクを作成したので、コンテンツを追加します。 プロジェクトタイトルの右側にある 3 ドットアイコンをクリックし、「テンプレートを添付」を選択します。
 
-![ テンプレートを添付 ](./images/wf-attach-template.png)
+![&#x200B; テンプレートを添付 &#x200B;](./images/wf-attach-template.png)
 
 - 「製品ホームページバナーを作成」を選択し、「カスタマイズと添付」をクリックします。
 
-![ 製品ホームページバナーを作成 ](./images/wf-homepage-banner.png)
+![&#x200B; 製品ホームページバナーを作成 &#x200B;](./images/wf-homepage-banner.png)
 
 - カスタマイズ画面で、「製品のホームページバナーを作成」タスクを親として指定していることを確認します。
 
-![ 親を追加 ](./images/wf-create-banner-parent.png)
+![&#x200B; 親を追加 &#x200B;](./images/wf-create-banner-parent.png)
 
 - 最後に、タスク 3 の先行タスクを持つ親タスク「製品のホームページを作成」を、Adobe Commerceで製品を作成するまで実稼動を開始できないようにマークしてください。
 
-![ 正しい先行タスクの追加 ](./images/wf-predecessor.png)
+![&#x200B; 正しい先行タスクの追加 &#x200B;](./images/wf-predecessor.png)
 
 これで、キャンペーンが完了し、計画が完了しました。つまり、キャンペーンの制作と配信から始めることができます。
 
 
-次の手順：[ フェーズ 2 – 実稼動：製品ホームページバナーの作成 ](../production/banner.md)
+次の手順：[&#x200B; フェーズ 2 – 実稼動：製品ホームページバナーの作成 &#x200B;](../production/banner.md)
 
 [フェーズ 1 – 計画：計画に戻ります。](./planning.md)
 

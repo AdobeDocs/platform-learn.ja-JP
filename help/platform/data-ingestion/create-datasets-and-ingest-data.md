@@ -16,7 +16,7 @@ ht-degree: 9%
 
 # データセットの作成とデータの取り込み
 
-このビデオでは、Adobe Experience Platform インターフェイスでデータセットを作成しデータを取り込む方法を説明します。 製品ドキュメントについて詳しくは、[UI を使用したバッチデータの取り込み ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=ja) および [API を使用したデータセットの作成 ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html?lang=ja) を参照してください。 詳しくは、[ データ取り込みドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) を参照してください。
+このビデオでは、Adobe Experience Platform インターフェイスでデータセットを作成しデータを取り込む方法を説明します。 製品ドキュメントについて詳しくは、[UI を使用したバッチデータの取り込み &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=ja) および [API を使用したデータセットの作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html?lang=ja) を参照してください。 詳しくは、[&#x200B; データ取り込みドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34394?learn=on&enablevpops&captions=jpn)
 

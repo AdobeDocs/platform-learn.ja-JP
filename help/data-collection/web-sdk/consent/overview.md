@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 同意の概要
 
-Adobe Experience Platform Web SDKでの同意管理が、法的なプライバシー要件を遵守し、顧客の環境設定に従うのに役立つ方法について説明します。 詳しくは、[Platform におけるガバナンス、プライバシー、セキュリティ ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=ja#consent) の概要を参照してください。
+Adobe Experience Platform Web SDKでの同意管理が、法的なプライバシー要件を遵守し、顧客の環境設定に従うのに役立つ方法について説明します。 詳しくは、[Platform におけるガバナンス、プライバシー、セキュリティ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=ja#consent) の概要を参照してください。
 
 >[!NOTE]
 >

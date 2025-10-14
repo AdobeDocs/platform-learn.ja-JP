@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->ここに示す例は例として示したものであり、実際の Target の実装は状況によって異なります。 既存の Target 実装でAdobeの Data Collection Tag Manager を使用している場合、詳しくは [Platform Web SDK Target 実装のチュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ja) も参照してください。
+>ここに示す例は例として示したものであり、実際の Target の実装は状況によって異なります。 既存の Target 実装でAdobeの Data Collection Tag Manager を使用している場合、詳しくは [Platform Web SDK Target 実装のチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ja) も参照してください。
 
 
 ## Target 管理設定の確認
@@ -52,7 +52,7 @@ Platform Web SDK は、開発、ステージング、実稼動の各データス
 >
 >データストリーム設定で環境 ID が指定されていない場合、Target は、「**Hosts**」セクションで指定されているドメインと環境のマッピングを使用します。
 
-詳しくは、[ データストリーム設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#target) ガイドおよび Target [ ホスト ](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ja) ドキュメントを参照してください。
+詳しくは、[&#x200B; データストリーム設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#target) ガイドおよび Target [&#x200B; ホスト &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ja) ドキュメントを参照してください。
 
 ## Platform Web SDK のデプロイ
 
@@ -166,14 +166,14 @@ Platform Web SDK を使用するように Target をアップグレードする�
 
 タグプロパティに、Adobe Experience Platform Web SDK 拡張機能を追加します。
 
-![Adobe Experience Platform Web SDK 拡張機能の追加 ](assets/library-tags-addExtension.png){zoomable="yes"}
+![Adobe Experience Platform Web SDK 拡張機能の追加 &#x200B;](assets/library-tags-addExtension.png){zoomable="yes"}
 
 
 >[!ENDTABS]
 
 事前ビルドスタンドアロンバージョンでは、alloy というグローバル関数を作成するページに直接追加された「ベースコード」が必要です。 この関数を使用して SDK を操作します。グローバル関数に別の名前を付ける場合は、`alloy` の名前を変更します。
 
-詳細とデプロイメントオプションについては、[Platform Web SDK のインストール ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=ja) ドキュメントを参照してください。
+詳細とデプロイメントオプションについては、[Platform Web SDK のインストール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=ja) ドキュメントを参照してください。
 
 
 ## コンテンツを事前非表示にするアプローチを更新
@@ -215,7 +215,7 @@ Adobeでは、ページ全体のパフォーマンスを最大限に高めるに
 
 同期実装の事前非表示スタイルは、[`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ja#prehidingStyle) オプションを使用して設定できます。 Platform Web SDK の設定については、次の節で説明します。
 
-Platform Web SDK によるちらつきの管理方法について詳しくは、ガイドの節 [ パーソナライズされたエクスペリエンスのためのちらつきの管理 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=ja) を参照してください。
+Platform Web SDK によるちらつきの管理方法について詳しくは、ガイドの節 [&#x200B; パーソナライズされたエクスペリエンスのためのちらつきの管理 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=ja) を参照してください。
 
 ## Platform Web SDK の設定
 
@@ -238,7 +238,7 @@ alloy("configure", {
 
 タグ実装では、多くのフィールドが自動入力されるか、ドロップダウンメニューから選択できます。 環境ごとに異なる Platform[!UICONTROL &#x200B; サンドボックス &#x200B;] および [!UICONTROL &#x200B; データストリーム &#x200B;] を選択できます。 データストリームは、公開プロセスのタグライブラリの状態に基づいて変更されます。
 
-![Web SDK タグ拡張機能の設定 ](assets/tags-config.png){zoomable="yes"}
+![Web SDK タグ拡張機能の設定 &#x200B;](assets/tags-config.png){zoomable="yes"}
 >[!ENDTABS]
 
 at.js から Platform Web SDK にページごとに移行する場合は、次の設定オプションが必要です。
@@ -259,7 +259,7 @@ alloy("configure", {
 
 >[!TAB タグ]
 
-![Web SDK タグ拡張機能の移行オプションの設定 ](assets/tags-config-migration.png){zoomable="yes"}
+![Web SDK タグ拡張機能の移行オプションの設定 &#x200B;](assets/tags-config-migration.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -274,7 +274,7 @@ Target に関連する注目すべき設定オプションの概要を次に示�
 | `thirdPartyCookiesEnabled` | アドビのサードパーティ Cookie の設定を有効にします。SDK は、訪問者 ID をサードパーティコンテキストに保持して、同じ訪問者 ID をサイト間で使用できるようにします。 複数のサイトがある場合は、このオプションを使用します。ただし、プライバシー上の理由から、このオプションが望ましくない場合があります。 | `true` |
 | `prehidingStyle` | パーソナライズされたコンテンツをサーバーから読み込む際に、Web ページのコンテンツ領域を非表示にする CSS スタイル定義を作成するために使用します。これは、SDK の同期デプロイメントでのみ使用されます。 | `body { opacity: 0 !important }` |
 
-オプションの完全なリストについては、[Platform Web SDK の設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ja) ガイドを参照してください。
+オプションの完全なリストについては、[Platform Web SDK の設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ja) ガイドを参照してください。
 
 ## 実装の例
 
@@ -384,10 +384,10 @@ Platform Web SDK が適切に配置されると、サンプルページは次の
 
 タグにAdobe Experience Platform Web SDK 拡張機能を追加します。
 
-![Adobe Experience Platform Web SDK 拡張機能の追加 ](assets/library-tags-addExtension.png){zoomable="yes"}
+![Adobe Experience Platform Web SDK 拡張機能の追加 &#x200B;](assets/library-tags-addExtension.png){zoomable="yes"}
 
 必要な設定を追加します。
-![Web SDK タグ拡張機能の移行オプションの設定 ](assets/tags-config-migration.png){zoomable="yes"}
+![Web SDK タグ拡張機能の移行オプションの設定 &#x200B;](assets/tags-config-migration.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -396,8 +396,8 @@ Platform Web SDK が適切に配置されると、サンプルページは次の
 
 上記のように Platform Web SDK ライブラリを単に含めて設定するだけでは、Adobe Edge Network へのネットワーク呼び出しは実行されないことに注意する必要があります。
 
-次に、VEC ベースのアクティビティをリクエストして適用する [ 方法をページ ](render-vec-activities.md) 説明します。
+次に、VEC ベースのアクティビティをリクエストして適用する [&#x200B; 方法をページ &#x200B;](render-vec-activities.md) 説明します。
 
 >[!NOTE]
 >
->アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から Web SDK への Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

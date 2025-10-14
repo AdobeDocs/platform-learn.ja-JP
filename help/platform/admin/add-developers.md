@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 開発者を追加し、API 資格情報に権限を付与します。
 
-Real-Time Customer Data PlatformやJourney OptimizerなどのAdobe Experience Platform ベースのアプリケーションに開発者を追加する方法について説明します。 開発者は、まずAdmin Consoleで追加されます。 Developer Consoleで Platform プロジェクトを作成すると、API 資格情報に Platform またはJourney Optimizer インターフェイスで権限が割り当てられます。 詳しくは、[ アクセス制御ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
+Real-Time Customer Data PlatformやJourney OptimizerなどのAdobe Experience Platform ベースのアプリケーションに開発者を追加する方法について説明します。 開発者は、まずAdmin Consoleで追加されます。 Developer Consoleで Platform プロジェクトを作成すると、API 資格情報に Platform またはJourney Optimizer インターフェイスで権限が割り当てられます。 詳しくは、[&#x200B; アクセス制御ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3446399?learn=on&enablevpops&captions=jpn)
 
@@ -27,4 +27,4 @@ Real-Time Customer Data PlatformやJourney OptimizerなどのAdobe Experience Pl
 
 >[!TIP]
 >
->また、開発者を **ユーザー** としてAdmin Consoleの `AEP-Default-All-Users` 製品プロファイルに追加し、Platform インターフェイスで API 資格情報と同じロールに追加することをお勧めします。 これにより、必要に応じてインターフェイスを使用できます。 詳しくは、[ ユーザーの追加 ](add-users.md) を参照してください。
+>また、開発者を **ユーザー** としてAdmin Consoleの `AEP-Default-All-Users` 製品プロファイルに追加し、Platform インターフェイスで API 資格情報と同じロールに追加することをお勧めします。 これにより、必要に応じてインターフェイスを使用できます。 詳しくは、[&#x200B; ユーザーの追加 &#x200B;](add-users.md) を参照してください。

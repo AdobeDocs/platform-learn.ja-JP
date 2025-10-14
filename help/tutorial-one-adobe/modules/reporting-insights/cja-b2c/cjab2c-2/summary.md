@@ -36,11 +36,11 @@ Adobe Experience Platformには、既存のテクノロジースタックと簡�
 
 ## これを確認する
 
-- ヘルプセンター：[Source コネクタ - Google BigQuery コネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=ja)
-- Experience Platform ドキュメント：[Customer Journey Analytics – 製品ドキュメント ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja)
+- ヘルプセンター：[Source コネクタ - Google BigQuery コネクタ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=ja)
+- Experience Platform ドキュメント：[Customer Journey Analytics – 製品ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja)
 
 ## 次の手順
 
-[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
+[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Audience Portal とコンポジションの概要
 
-オーディエンスのインポート、作成、管理の方法など、AdobeがAdobe Experience Platformでどのようにオーディエンスを再考しているのかを確認します。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+オーディエンスのインポート、作成、管理の方法など、AdobeがAdobe Experience Platformでどのようにオーディエンスを再考しているのかを確認します。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423368/?learn=on&enablevpops&captions=jpn)

@@ -37,7 +37,7 @@ Adobe Experience Platform ID サービスを利用すると、デバイスやシ
 
 ## 必要な権限
 
-[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Identity Management]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
@@ -113,7 +113,7 @@ ID 名前空間 `Luma CRM Id` を作成しましょう。
    ![ID 名前空間](assets/identity-createUsingApi.png)
 
 ユーザーインターフェイスに戻ると、次の 3 つの新しいカスタム名前空間が表示されます。
-![IDサービス 名前空間 ](assets/identity-newIdentities.png)
+![IDサービス 名前空間 &#x200B;](assets/identity-newIdentities.png)
 
 
 ## スキーマの ID フィールドラベル
@@ -136,7 +136,7 @@ Real-時間 Customer プロフィール で使用される各スキーマには�
 1. 「**[!UICONTROL 適用]**」を選択します
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![プライマリIDサービス ](assets/identity-loyalty-primary.png)
+   ![プライマリIDサービス &#x200B;](assets/identity-loyalty-primary.png)
 
 他のいくつかのスキーマについてもこのプロセスを繰り返します。
 
@@ -184,13 +184,13 @@ ID フィールドにラベルが付けられたので、Luma の製品カタロ
 
 関係を定義した後は、スキーマ編集者の **[!UICONTROL 構成]** セクションと **[!UICONTROL 構造]** セクションの両方に示されることに注意してください。
 
-![ スキーマエディターでの関係ビジュアライゼーション ](assets/identity-webEvents-relationship.png)
+![&#x200B; スキーマエディターでの関係ビジュアライゼーション &#x200B;](assets/identity-webEvents-relationship.png)
 
 <!--need to verify that the relationship schema works-->
 
 ## その他のリソース
 
-* [ID サービスドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)
+* [ID サービスドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)
 * [ID サービス API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
-ID が用意されたので、「データセットを作成 [ できます ](create-datasets.md)。
+ID が用意されたので、「データセットを作成 [&#x200B; できます &#x200B;](create-datasets.md)。

@@ -219,13 +219,13 @@ Google アカウントをクリックして選択します。
 
 Google Cloud Pub/Sub にビューを切り替え、**MESSAGES** に移動します。 **PULL** をクリックすると、数秒後にリストにメッセージが表示されます。 メッセージをクリックして、そのコンテンツを視覚化します。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook3gcp.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hook3gcp.png)
 
 Google Pub/Sub でイベントの XDM ペイロードを確認できるようになりました。 これで、Adobe Experience Platform Data Collection でリアルタイムに収集されたデータを、Google Cloud Pub/Sub エンドポイントに正常に送信しました。 その後、そのデータは、BigQuery などの任意のGoogle Cloud Platform アプリケーションでストレージおよびレポート用や機械学習のユースケースに使用できます。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hook4gcp.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hook4gcp.png)
 
-次の手順：[2.5.5 AWS KinesisおよびAWS S3 へのイベントの転送 ](./ex5.md)
+次の手順：[2.5.5 AWS KinesisおよびAWS S3 へのイベントの転送 &#x200B;](./ex5.md)
 
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 

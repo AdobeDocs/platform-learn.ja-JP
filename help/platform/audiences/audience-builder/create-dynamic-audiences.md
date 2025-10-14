@@ -16,7 +16,7 @@ ht-degree: 7%
 
 # 動的オーディエンスを作成
 
-動的オーディエンスは、Adobe Experience Platformの高度なセグメント化機能で、マーケティングキャンペーン用のオーディエンスを作成する際にマーケターが直面してきたスケーラビリティの問題を解決するものです。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+動的オーディエンスは、Adobe Experience Platformの高度なセグメント化機能で、マーケティングキャンペーン用のオーディエンスを作成する際にマーケターが直面してきたスケーラビリティの問題を解決するものです。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

@@ -16,6 +16,6 @@ ht-degree: 7%
 
 # データ使用ポリシーの作成
 
-宛先に対してオーディエンスをアクティブ化する際に、データ使用ポリシーを適用する方法を説明します。 宛先にマーケティングアクションを追加する方法、アクティベーション中にポリシー違反を分析する方法、データ系列を使用してポリシー違反を理解し、修正する方法について説明します。 API ベースのアプローチについては、[Policy Service API を使用したデータ使用ポリシーの適用 ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html?lang=ja) を参照してください。
+宛先に対してオーディエンスをアクティブ化する際に、データ使用ポリシーを適用する方法を説明します。 宛先にマーケティングアクションを追加する方法、アクティベーション中にポリシー違反を分析する方法、データ系列を使用してポリシー違反を理解し、修正する方法について説明します。 API ベースのアプローチについては、[Policy Service API を使用したデータ使用ポリシーの適用 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/33631?learn=on&enablevpops)

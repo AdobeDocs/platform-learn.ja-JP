@@ -26,7 +26,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 1. **ジャーニー** ポータルに移動し、「**ジャーニーを作成**」ボタンをクリックします。
 
-   ![ ジャーニーの作成 ](assets/create-journey.png)
+   ![&#x200B; ジャーニーの作成 &#x200B;](assets/create-journey.png)
 
 2. 新しい名前でジャーニープロパティを更新します。 私たちの例では **`SecurFinancial - Home Loan Offer`** です。
 
@@ -36,7 +36,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 5. 検索バーでオーディエンスを検索します。 この例では **`SecureFinancial Customers - No Loans, Good Credit`** です。 「**保存**」をクリックします。
 
-   ![ ジャーニーの作成 ](assets/select-audience.png)
+   ![&#x200B; ジャーニーの作成 &#x200B;](assets/select-audience.png)
 
 6. 右側のメニューで、すべての設定をデフォルトのままにして、「**保存**」をクリックします。
 
@@ -78,4 +78,4 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 AJOで、federated audience 属性と federated enrichment 属性を使用してジャーニーを作成しました。
 
-次に、Data Warehouse のデータを使用して、Experience Platformで [ オーディエンスを強化 ](federated-audience-composition.md) する方法を見ていきます。
+次に、Data Warehouse のデータを使用して、Experience Platformで [&#x200B; オーディエンスを強化 &#x200B;](federated-audience-composition.md) する方法を見ていきます。

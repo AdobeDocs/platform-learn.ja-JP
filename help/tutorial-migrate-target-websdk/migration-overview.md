@@ -58,8 +58,8 @@ Platform Web SDKは、Target at.js ライブラリを進化させたものでは
 
 >[!VIDEO](https://video.tv.adobe.com/v/37263/?learn=on&enablevpops&captions=jpn)
 
-at.js と Platform Web SDKの大きな違いを理解したら、[ 移行を計画 ](plan-migration.md) できます。
+at.js と Platform Web SDKの大きな違いを理解したら、[&#x200B; 移行を計画 &#x200B;](plan-migration.md) できます。
 
 >[!NOTE]
 >
->アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。
+>アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ja#M463) に投稿してお知らせください。

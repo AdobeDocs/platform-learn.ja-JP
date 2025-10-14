@@ -16,6 +16,6 @@ ht-degree: 25%
 
 # タグライブラリの作成と公開
 
-タグプロパティでライブラリを作成し、開発環境、ステージング環境、実稼動環境を通じて変更をプッシュする方法について説明します。複数の開発環境を使用して、複数のチームが並行したワークストリームでプロパティを更新できるようにする方法を説明します。 詳しくは、[ 公開 ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja) ドキュメントを参照してください。
+タグプロパティでライブラリを作成し、開発環境、ステージング環境、実稼動環境を通じて変更をプッシュする方法について説明します。複数の開発環境を使用して、複数のチームが並行したワークストリームでプロパティを更新できるようにする方法を説明します。 詳しくは、[&#x200B; 公開 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34020/?learn=on&enablevpops&captions=jpn)

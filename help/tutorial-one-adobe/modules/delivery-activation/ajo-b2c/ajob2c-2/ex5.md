@@ -17,39 +17,39 @@ ht-degree: 1%
 
 ## 3.2.5.1 ジオフェンスイベント設定の更新
 
-[Adobe Experience Platform Data Collection に移動し ](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
+[Adobe Experience Platform Data Collection に移動し &#x200B;](https://experience.adobe.com/launch/) 「**Tags**」を選択します。
 
 これは、以前に表示したAdobe Experience Platform データ収集のプロパティページです。
 
-![ プロパティページ ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
+![&#x200B; プロパティページ &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
 **はじめに** で、デモシステムは次に、Web サイト用とモバイルアプリ用に 1 つのタグプロパティを作成しました。 `--aepUserLdap--` 検索 **[!UICONTROL ボックスで]** を検索して見つけます。 クリックして **Web** プロパティを開きます。
 
-![ 検索ボックス ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
+![&#x200B; 検索ボックス &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
 その後、これが表示されます。
 
-![Launch の設定 ](./images/rule1.png)
+![Launch の設定 &#x200B;](./images/rule1.png)
 
 左側のメニューで、**ルール** に移動し、ルール **ジオフェンスイベント** を検索します。 ルール **ジオフェンスイベント** をクリックして開きます。
 
-![Launch の設定 ](./images/rule2.png)
+![Launch の設定 &#x200B;](./images/rule2.png)
 
 このルールの詳細が表示されます。 クリックしてアクション **Adobe Experience Platform Web SDK - イベントを送信** を開きます。
 
-![Launch の設定 ](./images/rule3.png)
+![Launch の設定 &#x200B;](./images/rule3.png)
 
-次に、このアクションがトリガーされると、特定のデータ要素を使用して XDM データ構造が定義されます。 そのデータ要素を更新し、**演習 3.2.1** で設定したイベントの [ イベント ID](./ex1.md) を定義する必要があります。
+次に、このアクションがトリガーされると、特定のデータ要素を使用して XDM データ構造が定義されます。 そのデータ要素を更新し、**演習 3.2.1** で設定したイベントの [&#x200B; イベント ID](./ex1.md) を定義する必要があります。
 
-![Launch の設定 ](./images/rule4.png)
+![Launch の設定 &#x200B;](./images/rule4.png)
 
 ここで、データ要素 **XDM - ジオフェンスイベント** を更新する必要があります。 これを行うには、**データ要素** に移動します。 **XDM - ジオフェンスイベント** を検索し、クリックしてデータ要素を開きます。
 
-![Launch の設定 ](./images/rule5.png)
+![Launch の設定 &#x200B;](./images/rule5.png)
 
 次の画面が表示されます。
 
-![Launch の設定 ](./images/rule6.png)
+![Launch の設定 &#x200B;](./images/rule6.png)
 
 フィールド `_experience.campaign.orchestration.eventID` に移動します。 現在の値を削除し、eventID をそこに貼り付けます。
 
@@ -63,11 +63,11 @@ ht-degree: 1%
 
 最後に、変更を公開する必要があります。 左側のメニューで **公開フロー** に移動し、「**Man**」をクリックしてライブラリを開きます。
 
-![Launch の設定 ](./images/rule8.png)
+![Launch の設定 &#x200B;](./images/rule8.png)
 
 「**変更されたリソースをすべて追加**」をクリックし、「**開発用に保存およびビルド**」をクリックします。
 
-![Launch の設定 ](./images/rule9.png)
+![Launch の設定 &#x200B;](./images/rule9.png)
 
 ## 3.2.5.2 ジャーニーのトリガー
 
@@ -121,8 +121,8 @@ ht-degree: 1%
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
-[Adobe Journey Optimizer：外部データソースとカスタムアクション ](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：外部データソースとカスタムアクション &#x200B;](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

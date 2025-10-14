@@ -32,8 +32,8 @@ ht-degree: 2%
    + [2.1 ウェブサイトにアクセスしてアカウントを作成する](/help/bootcamp/uc/uc2/ex1.md)
    + [2.2 イベントの作成](/help/bootcamp/uc/uc2/ex2.md)
    + [2.3 ジャーニーとメールメッセージの作成](/help/bootcamp/uc/uc2/ex3.md)
-   + [2.4 ジャーニーのテスト ](/help/bootcamp/uc/uc2/ex4.md)
-   + [2.5 モバイルアプリをインストールして使用する ](/help/bootcamp/uc/uc2/ex5.md)
+   + [2.4 ジャーニーのテスト &#x200B;](/help/bootcamp/uc/uc2/ex4.md)
+   + [2.5 モバイルアプリをインストールして使用する &#x200B;](/help/bootcamp/uc/uc2/ex5.md)
    + [2.6 コールセンターのPersonalization](/help/bootcamp/uc/uc2/ex6.md)
 + 3 - フィジカルとデジタルの ータの融合 {#uc3}
    + [概要](/help/bootcamp/uc/uc3/uc3.md)

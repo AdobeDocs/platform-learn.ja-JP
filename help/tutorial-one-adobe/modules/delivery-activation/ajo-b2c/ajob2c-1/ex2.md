@@ -49,7 +49,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 >[!NOTE]
 >
->AEM Assets ライブラリに CitiSignal 画像が表示されない場合は、[ こちら ](./../../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
+>AEM Assets ライブラリに CitiSignal 画像が表示されない場合は、[&#x200B; こちら &#x200B;](./../../../../assets/ajo/CitiSignal-images.zip) で見つけることができます。 デスクトップにダウンロードし、フォルダー **citi-signal-images** を作成し、そのフォルダー内のすべての画像をアップロードします。
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -234,8 +234,8 @@ Unsubscribe
 
 ## 次の手順
 
-[3.1.3 ジャーニーとメールメッセージの作成 ](./ex3.md){target="_blank"} に移動します。
+[3.1.3 ジャーニーとメールメッセージの作成 &#x200B;](./ex3.md){target="_blank"} に移動します。
 
-[Adobe Journey Optimizer: オーケストレーション ](./journey-orchestration-create-account.md){target="_blank"} に戻る
+[Adobe Journey Optimizer: オーケストレーション &#x200B;](./journey-orchestration-create-account.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

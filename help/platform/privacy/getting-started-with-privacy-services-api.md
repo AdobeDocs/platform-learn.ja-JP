@@ -16,6 +16,6 @@ ht-degree: 2%
 
 # Privacy Service API の概要
 
-を設定し、Privacy Service API に対して認証する方法について説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
+を設定し、Privacy Service API に対して認証する方法について説明します。 詳しくは、[&#x200B; プライバシーサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447177?learn=on&enablevpops&captions=jpn)

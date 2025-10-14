@@ -200,7 +200,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
 
-次の手順：[2.4.7 エンドツーエンドのシナリオ ](./ex7.md)
+次の手順：[2.4.7 エンドツーエンドのシナリオ &#x200B;](./ex7.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

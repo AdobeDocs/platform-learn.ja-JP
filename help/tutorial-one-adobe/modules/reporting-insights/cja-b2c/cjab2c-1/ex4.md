@@ -36,19 +36,19 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 次に、最初の CJA ワークスペースを作成します。 CJA の「**Workspace**」タブに移動します。
 **プロジェクトを作成** をクリックします。
 
-![ デモ ](./images/prmenu.png)
+![&#x200B; デモ &#x200B;](./images/prmenu.png)
 
 その後、これが表示されます。 **空のWorkspace プロジェクト** を選択し、「**作成**」をクリックします。
 
-![ デモ ](./images/prmenu1.png)
+![&#x200B; デモ &#x200B;](./images/prmenu1.png)
 
 その後、空のプロジェクトが表示されます。
 
-![ デモ ](./images/premptyprojects.png)
+![&#x200B; デモ &#x200B;](./images/premptyprojects.png)
 
 最初に、画面の右上隅で正しいデータビューを選択してください。 選択するデータビューは `--aepUserLdap-- - Omnichannel Data View` です。
 
-![ デモ ](./images/prdv.png)
+![&#x200B; デモ &#x200B;](./images/prdv.png)
 
 次に、プロジェクトを保存し、名前を付けます。 次のコマンドを使用して保存できます。
 
@@ -59,7 +59,7 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 
 次のポップアップが表示されます。
 
-![ デモ ](./images/prsave.png)
+![&#x200B; デモ &#x200B;](./images/prsave.png)
 
 次の命名規則を使用してください。
 
@@ -69,7 +69,7 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 
 次に、「**保存** をクリックします。
 
-![ デモ ](./images/prsave2.png)
+![&#x200B; デモ &#x200B;](./images/prsave2.png)
 
 ## 1.1.4.2 計算指標
 
@@ -81,31 +81,31 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 
 計算指標ビルダーを開きます。 「**+**」をクリックして、Analysis Workspaceで最初の計算指標を作成します。
 
-![ デモ ](./images/pradd.png)
+![&#x200B; デモ &#x200B;](./images/pradd.png)
 
 **計算指標ビルダー** が表示されます。
 
-![ デモ ](./images/prbuilder.png)
+![&#x200B; デモ &#x200B;](./images/prbuilder.png)
 
 左側のメニューの指標のリストで **購入** を見つけます。 **指標** で **すべて表示** をクリックします
 
-![ デモ ](./images/calcbuildercr1.png)
+![&#x200B; デモ &#x200B;](./images/calcbuildercr1.png)
 
 次に、**購入** 指標を計算指標の定義にドラッグ&amp;ドロップします。
 
-![ デモ ](./images/calcbuildercr2.png)
+![&#x200B; デモ &#x200B;](./images/calcbuildercr2.png)
 
 通常、コンバージョン率は **コンバージョン / セッション** を意味します。 計算指標の定義キャンバスでも同じ計算を行います。 **セッション** 指標を見つけて、**購入** イベントの下の定義ビルダーにドラッグ&amp;ドロップします。
 
-![ デモ ](./images/calcbuildercr3.png)
+![&#x200B; デモ &#x200B;](./images/calcbuildercr3.png)
 
 除算演算子が自動的に選択されます。
 
-![ デモ ](./images/calcbuildercr4.png)
+![&#x200B; デモ &#x200B;](./images/calcbuildercr4.png)
 
 コンバージョン率は通常、パーセンテージで表されます。 そのため、形式をパーセンテージに変更し、2 桁の小数も選択します。
 
-![ デモ ](./images/calcbuildercr5.png)
+![&#x200B; デモ &#x200B;](./images/calcbuildercr5.png)
 
 最後に、計算指標の名前と説明を変更します。
 
@@ -115,11 +115,11 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 
 これで完了です。 「**保存**」をクリックします。
 
-![ デモ ](./images/calcbuildercr6.png)
+![&#x200B; デモ &#x200B;](./images/calcbuildercr6.png)
 
 もう一度 **保存** をクリックします。
 
-![ デモ ](./images/calcbuildercr6a.png)
+![&#x200B; デモ &#x200B;](./images/calcbuildercr6a.png)
 
 ## 1.1.4.3 計算されたディメンション：フィルター（セグメント化）と日付範囲
 
@@ -127,7 +127,7 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 
 計算は、指標のみに使用するためのものではありません。 分析を開始する前に、いくつかの **計算済みディメンション** を作成するのも興味深いです。 これは基本的に、Adobe Analyticsに戻ると **セグメント** を意味していました。 Customer Journey Analyticsでは、これらのセグメントは **フィルター** と呼ばれます。
 
-![ デモ ](./images/prfilters.png)
+![&#x200B; デモ &#x200B;](./images/prfilters.png)
 
 フィルターを作成すると、ビジネスユーザーは、いくつかの有用な計算ディメンションを使用して分析を開始できます。 これにより、一部のタスクが自動化され、導入の部分も支援されます。 次に例を示します。
 
@@ -147,14 +147,14 @@ Customer Journey Analyticsでは、このソリューションを Platform デ�
 - 12 月のテレビキャンペーンはいつ行われましたか？
 - 2018 年のサマーセールはいつからいつまで行われたのですか？ 2019 年と比較したい。 ところで、2019 年の正確な日を知っていますか。
 
-![ デモ ](./images/timedimensions.png)
+![&#x200B; デモ &#x200B;](./images/timedimensions.png)
 
 これで、CJA Analysis Workspaceを使用したデータ準備演習が完了しました。
 
 ## 次の手順
 
-Customer Journey Analyticsを使用した [1.1.5 ビジュアライゼーションに移動 ](./ex5.md){target="_blank"} （./ex2.md） 
+Customer Journey Analyticsを使用した [1.1.5 ビジュアライゼーションに移動 &#x200B;](./ex5.md){target="_blank"} （./ex2.md） 
 
 [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

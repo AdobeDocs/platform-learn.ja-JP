@@ -26,7 +26,7 @@ ht-degree: 2%
 
 驚くべきことに、プロファイルに対して *すべてのデータ* をアクティブ化する必要はありません。 実際には、アクティベーションのユースケースに必要なデータのみを有効にしてください。 堅牢な顧客プロファイルにすばやくアクセスする必要があるマーケティングのユースケース、コールセンターの統合などに使用したいデータを有効にします。 分析用のデータのみをアップロードしている場合は、プロファイルに対してデータを有効にしないでください。
 
-リアルタイム顧客プロファイルデータには重要な [ ガードレール ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ja) があり、プロファイルに対して有効にする必要がある独自のデータを決定する際に確認する必要があります。
+リアルタイム顧客プロファイルデータには重要な [&#x200B; ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ja) があり、プロファイルに対して有効にする必要がある独自のデータを決定する際に確認する必要があります。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 ## 必要な権限
 
-[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -68,7 +68,7 @@ ht-degree: 2%
    > 1. データの取り込み
 
 
-   ![ プロファイル切り替え ](assets/profile-loyalty-enableSchema.png)
+   ![&#x200B; プロファイル切り替え &#x200B;](assets/profile-loyalty-enableSchema.png)
 
 簡単だろ？ その他のスキーマに対して、上記の手順を繰り返します。
 
@@ -90,7 +90,7 @@ ht-degree: 2%
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 1. `Luma CRM Schema` 項目の応答を探し、`meta:altId` の値をコピーします
-   ![meta:altId をコピー ](assets/profile-crm-getMetaAltId.png)
+   ![meta:altId をコピー &#x200B;](assets/profile-crm-getMetaAltId.png)
 
 ### スキーマの有効化
 
@@ -111,7 +111,7 @@ ht-degree: 2%
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 
-   ![ カスタムの meta:altId を SCHEMA_ID パラメーターとして使用して、プロファイルの CRM スキーマを有効にします ](assets/profile-crm-enableProfile.png)
+   ![&#x200B; カスタムの meta:altId を SCHEMA_ID パラメーターとして使用して、プロファイルの CRM スキーマを有効にします &#x200B;](assets/profile-crm-enableProfile.png)
 
 ユーザーインターフェイスに、5 つのスキーマすべてがプロファイルに対して有効になっていることを確認できます（`Luma CRM Schema` が有効になっていることを確認するには、SHIFT キーを押しながら再読み込みが必要な場合があります）。
 ![All schemas enabled](assets/profile-allSchemasEnabled.png)
@@ -125,7 +125,7 @@ ht-degree: 2%
 1. **[!UICONTROL プロファイル]** スイッチを切り替えます
 1. 確認モーダルで、「**[!UICONTROL 有効]** ボタンを押して確認します
 
-   ![ プロファイルの切り替え ](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; プロファイルの切り替え &#x200B;](assets/profile-loyalty-enableDataset.png)
 
 その他のデータセットに対して、上記の手順を繰り返します。
 
@@ -151,7 +151,7 @@ ht-degree: 2%
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 1. `Luma CRM Dataset` の項目の応答を探し、id をコピーします。
-   ![ID をコピー ](assets/profile-crm-copyDatasetId.png)
+   ![ID をコピー &#x200B;](assets/profile-crm-copyDatasetId.png)
 
 ### データセットの有効化
 
@@ -175,10 +175,10 @@ ht-degree: 2%
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 
-   ![ プロファイルの CRM データセットを有効にします。カスタムデータセット ID を DATASET_ID パラメーターとして使用してください ](assets/profile-crm-enableDataset.png)
+   ![&#x200B; プロファイルの CRM データセットを有効にします。カスタムデータセット ID を DATASET_ID パラメーターとして使用してください &#x200B;](assets/profile-crm-enableDataset.png)
 
 また、ユーザーインターフェイスでデータセットが有効になっていることを確認できます。
-![ 確認 ](assets/profile-crm-confirmEnabled.png)
+![&#x200B; 確認 &#x200B;](assets/profile-crm-confirmEnabled.png)
 
 >[!IMPORTANT]
 >
@@ -186,9 +186,9 @@ ht-degree: 2%
 
 ## その他のリソース
 
-* [ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
-* [ リアルタイム顧客プロファイル API リファレンス ](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [&#x200B; リアルタイム顧客プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
+* [&#x200B; リアルタイム顧客プロファイル API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**データエンジニア** は、引き続き [ データ取り込みイベントの購読 ](subscribe-to-data-ingestion-events.md) レッスンに進んでください。
-**データアーキテクト**&#x200B;_スキップして先に進み_[ バッチ取り込みレッスン ](ingest-batch-data.md) に進むことができます。
+**データエンジニア** は、引き続き [&#x200B; データ取り込みイベントの購読 &#x200B;](subscribe-to-data-ingestion-events.md) レッスンに進んでください。
+**データアーキテクト**&#x200B;_スキップして先に進み_[&#x200B; バッチ取り込みレッスン &#x200B;](ingest-batch-data.md) に進むことができます。

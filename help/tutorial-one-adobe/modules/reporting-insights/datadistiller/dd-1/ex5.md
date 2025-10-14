@@ -83,6 +83,6 @@ Adobe Experience Platform Query UI の検索フィールドに ldap を入力し
 
 オプション B （[2.1.7 クエリサービスと Tableau](./ex7.md){target="_blank"}）に移動します。
 
-[ クエリサービス ](./query-service.md){target="_blank"} に戻る
+[&#x200B; クエリサービス &#x200B;](./query-service.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

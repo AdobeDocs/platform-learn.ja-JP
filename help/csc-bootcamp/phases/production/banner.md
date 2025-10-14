@@ -20,74 +20,74 @@ ht-degree: 0%
 
 - ホームページから、ツール / Assets /処理プロファイルに移動します。
 
-![ ツール/Assets/処理プロファイル ](./images/prod-processing-profiles.png)
+![&#x200B; ツール/Assets/処理プロファイル &#x200B;](./images/prod-processing-profiles.png)
 
 - インターフェイスには、既存のすべての処理プロファイルが表示されます。 これらを使用して、特定の自動化を有効にできます。
 
-![ 処理プロファイルのリスト ](./images/prod-profile-list.png)
+![&#x200B; 処理プロファイルのリスト &#x200B;](./images/prod-profile-list.png)
 
 
 - 次の項目に関心があります。
    - Adobike Banner Dark：選択したアセットに基づいて、暗いオーバーレイを含む Adobike バナーを作成します
 
-     ![ ダークバナー ](./images/prod-banner-dark.jpg)
+     ![&#x200B; ダークバナー &#x200B;](./images/prod-banner-dark.jpg)
    - Adobike バナーライト：選択したアセットに基づいて、ライトオーバーレイを含む Adobike バナーを作成します
 
-     ![ ライトバナー ](./images/prod-banner-light.jpg)
+     ![&#x200B; ライトバナー &#x200B;](./images/prod-banner-light.jpg)
    - Adobike バナーグリーン：選択したアセットに基づいて、緑色のオーバーレイを含む Adobike バナーを作成します
 
-     ![ 緑色のバナー ](./images/prod-banner-green.jpg)
+     ![&#x200B; 緑色のバナー &#x200B;](./images/prod-banner-green.jpg)
 
 - 作成するバナーのタイプを選択したら、その処理プロファイルを選択し、「プロファイルをフォルダーに適用」を選択します。
 
-![ プロファイルをフォルダーに適用 ](./images/prod-apply-profile.png)
+![&#x200B; プロファイルをフォルダーに適用 &#x200B;](./images/prod-apply-profile.png)
 
 - 次の画面で、AEM Assetsのチームのフォルダーを参照します。 次に、左上から「作成」ボタンを選択して、新しいフォルダーを作成し、意味のある名前を付けます（例：「ダークバナーを作成」）。
 
-![ フォルダーを作成 ](./images/prod-create-profile-folder.png)
+![&#x200B; フォルダーを作成 &#x200B;](./images/prod-create-profile-folder.png)
 
-![ フォルダーの詳細を作成 ](./images/prod-profile-folder-details.png)
+![&#x200B; フォルダーの詳細を作成 &#x200B;](./images/prod-profile-folder-details.png)
 
 - フォルダーを作成したら、その名前の横にあるチェックボックスをオンにし、右上の「適用」ボタンをクリックします。
 
-![ 作成したフォルダーに適用 ](./images/prod-select-profile-folder.png)
+![&#x200B; 作成したフォルダーに適用 &#x200B;](./images/prod-select-profile-folder.png)
 
 必要な設定が完了したので、バナーを生成します。
 
 - 左上隅のAEM ロゴをクリックしてナビゲーションを開き、ナビゲーション \> Assets \> ファイルに移動します。
 
-![aem ホーム画面 ](./images/prod-select-assets.png)
-![aem assets 画面 ](./images/prod-select-assets-2.png)
+![aem ホーム画面 &#x200B;](./images/prod-select-assets.png)
+![aem assets 画面 &#x200B;](./images/prod-select-assets-2.png)
 
 - 「Generated Adobike Assets」フォルダーを見つけ、カードをクリックして開きます。 生成されたバナーは、ここに表示されます。
 
-![ 生成された adobike アセット ](./images/prod-generated-banners.png)
+![&#x200B; 生成された adobike アセット &#x200B;](./images/prod-generated-banners.png)
 
 - 新しいタブを開き、AEM Assetsに再度移動します。 次に、処理プロファイルを適用したフォルダーに移動します。
 
 - フォルダーで、バナーを作成する画像をアップロードします。そのためには、画像をブラウザーにドラッグ&amp;ドロップするか、インターフェイスの右上隅にある「作成\> ファイル」をクリックします。
 
-![ ドラッグ&amp;ドロップでアップロード ](./images/prod-drag-drop-banner.png)
+![&#x200B; ドラッグ&amp;ドロップでアップロード &#x200B;](./images/prod-drag-drop-banner.png)
 
-![ ファイルを作成を使用したアップロード ](./images/prod-create-file.png)
+![&#x200B; ファイルを作成を使用したアップロード &#x200B;](./images/prod-create-file.png)
 
 
 - アセットが処理されるまでしばらく待ってから、画面をリロードします。 アセットの状態が「新規」の場合は、処理が完了しています。
 
-![ 新しい状態のアセット ](./images/prod-asset-processed.png)
+![&#x200B; 新しい状態のアセット &#x200B;](./images/prod-asset-processed.png)
 
 - 前のタブに戻り、ここでも画面をリロードします。 状態が「New」の新しいアセットがあります。 これは生成されたバナーで、すべて DAM から取得されます。 まだ見てないの？ もう 1 分待ってから、画面をリロードします。
 
-![ 生成されたバナー ](./images/prod-new-banner.png)
+![&#x200B; 生成されたバナー &#x200B;](./images/prod-new-banner.png)
 
 >[!NOTE]
 >
 > 結果に満足していませんか？ フォルダーに別の処理プロファイルを適用し、アセットを再アップロードして別のバナーを生成します（もちろん、別のアセットをアップロードします）。 再アップロード中に、システムは既存のアセットで何をしたいのかを尋ね、「置換」を選択します。
-> ![既存のを置換 ](./images/prod-replace-asset.png)
+> ![既存のを置換 &#x200B;](./images/prod-replace-asset.png)
 
 これで、キャンペーンの配信中に後で使用できる、生成されたバナーが用意されました。 バナーを選択し、リボンの「クイックPublish」ボタンをクリックして公開してください。
 
-![ アセットを公開 ](./images/prod-publish-banner.png)
+![&#x200B; アセットを公開 &#x200B;](./images/prod-publish-banner.png)
 
 ## Workfrontでのフォローアップ
 
@@ -99,15 +99,15 @@ Assetsの正式で監査可能なレビューおよび承認プロセスが必�
 
 - プロジェクトに戻り、「Go/No Go Banner Review」アコーディオンを展開し、タスクをクリックして開きます。
 
-![ バナー移動/中止 ](./images/banner-gonogo.png)
+![&#x200B; バナー移動/中止 &#x200B;](./images/banner-gonogo.png)
 
 - タスクの「ドキュメント」セクション（左の列）をクリックしてから、AEM Assetsにリンクされたフォルダー「最終」をクリックします。 ゾーンをクリックしてアセットを選択し、「配達確認を作成」をクリックします。 プルーフとは、画像、テキスト、ビデオ、web サイトなどのコンテンツを、構造化された連携方法でプルーフする機能です。関連する関係者のコメント、修正、変更を収集し、バージョンと結果を比較して、1 回のクリックで最終的に承認できます。
 
-![ プルーフを作成 ](./images/wf-create-proof.png)
+![&#x200B; プルーフを作成 &#x200B;](./images/wf-create-proof.png)
 
 - 入念な承認プロセスが必要な場合は、「詳細なプルーフ」を選択します。
 
-![ 詳細プルーフ ](./images/wf-advanced-proof.png)
+![&#x200B; 詳細プルーフ &#x200B;](./images/wf-advanced-proof.png)
 
 >[!NOTE]
 >
@@ -115,55 +115,55 @@ Assetsの正式で監査可能なレビューおよび承認プロセスが必�
 
 - デフォルトでは、ワークフロータイプは「basic」で、Workfront Bootcamp スペシャリストをレビュアーおよび承認者として選択します。 Bootcamp Workfront スペシャリストの名前を入力します。この名前には、「受信者を追加するには、連絡先の名前またはメールアドレスを入力してください：
 
-![ プルーフの割り当て ](./images/wf-proof-assign.png)
+![&#x200B; プルーフの割り当て &#x200B;](./images/wf-proof-assign.png)
 
-![ プルーフの割り当て ](./images/wf-assign-proof-2.png)
+![&#x200B; プルーフの割り当て &#x200B;](./images/wf-assign-proof-2.png)
 
 - 「レビュアーおよび承認者」として設定：
 
-![ レビュアーと承認者 ](./images/wf-review-approve.png)
+![&#x200B; レビュアーと承認者 &#x200B;](./images/wf-review-approve.png)
 
 - 「プルーフを作成」をクリックします。 Workfrontでプルーフを生成するのにしばらく時間がかかります。
 
-![ プルーフを作成中 ](./images/wf-generating-proof.png)
+![&#x200B; プルーフを作成中 &#x200B;](./images/wf-generating-proof.png)
 
 - これで、Workfront スペシャリストに、レビューおよび/または承認するプルーフがあることを知らせる新しい通知が届きます。
 
-![workfront タスク ](./images/wf-proof-task.png)
+![workfront タスク &#x200B;](./images/wf-proof-task.png)
 
 - 通知をクリックすると、そのユーザーはプルーフに直面し、コメントを付けたり、このプルーフを承認したりできます。
 
    - コメントがある場合は、画面上部の「コメントを追加」をクリックできます。
 
-  ![ コメントを追加 ](./images/wf-proof-add-comment.png)
+  ![&#x200B; コメントを追加 &#x200B;](./images/wf-proof-add-comment.png)
 
    - その後、コメントを追加するだけでなく、小さなポインタツールバーを使用して、変更が必要な領域を明確に定義できます。
 
-  ![ ピン ポイントのコメント ](./images/wf-proof-comment.png)
+  ![&#x200B; ピン ポイントのコメント &#x200B;](./images/wf-proof-comment.png)
 
    - コメントを追加すると、プルーフの新しいバージョンに対して追加の作業を行う必要があることを伝えることができます。 Workfront タブを更新すると、そのことがわかる新しい通知が表示されます。 必要な変更がわかったら、AEMで変更を加えてから、新しいバージョンをこちらにアップロードします。
 
-  ![ 新しいバージョンをアップロード ](./images/wf-upload-version.png)
+  ![&#x200B; 新しいバージョンをアップロード &#x200B;](./images/wf-upload-version.png)
 
    - 更新したアセットを選択し（bootcamp シナリオで変更が必要ない場合は、同じアセットをもう一度アップロードします）、「リンク」をクリックします。
 
-  ![ アセットをリンク ](./images/wf-link-new-asset.png)
+  ![&#x200B; アセットをリンク &#x200B;](./images/wf-link-new-asset.png)
 
    - 次に、右側の「プルーフを作成」をクリックします。
 
-  ![ プルーフを作成 ](./images/create-new-proof.png)
+  ![&#x200B; プルーフを作成 &#x200B;](./images/create-new-proof.png)
 
    - プルーフが生成されると（しばらく時間がかかる場合があります）、Workfront スペシャリストに通知が届き、レビューして、この新しいバージョンを承認できるようになります。  例えば、「プルーフ比較」ボタンを使用すると、V1 と V2 と、作成されたすべてのコメントを横に並べて比較できます。
 
-  ![ プルーフの比較 ](./images/wf-proof-compare.png)
+  ![&#x200B; プルーフの比較 &#x200B;](./images/wf-proof-compare.png)
 
-  ![ 決定する ](./images/make-decision-proof.png)
+  ![&#x200B; 決定する &#x200B;](./images/make-decision-proof.png)
 
-  ![ 承認済み ](./images/approved.png)
+  ![&#x200B; 承認済み &#x200B;](./images/approved.png)
 
 これで、バナーの使用に対する正式な承認が得られました。 プロセスのどの段階にあるかを追跡したり、自動で通知をトリガーに更新したりすることが簡単にできるので、できるだけ効率的に作業できます。
 
-次の手順：[ フェーズ 2 – 実稼動：ソーシャルメディア広告の作成 ](./social.md)
+次の手順：[&#x200B; フェーズ 2 – 実稼動：ソーシャルメディア広告の作成 &#x200B;](./social.md)
 
 [フェーズ 1 – 計画：その他の事前作業に戻る](../planning/prework.md)
 

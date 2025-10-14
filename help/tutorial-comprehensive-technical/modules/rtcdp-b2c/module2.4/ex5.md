@@ -51,7 +51,7 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![5-07-destination-segment-added.png](./images/507destinationsegmentadded.png)
 
-次の手順：[2.4.6 Microsoft Azure プロジェクトを作成する ](./ex6.md)
+次の手順：[2.4.6 Microsoft Azure プロジェクトを作成する &#x200B;](./ex6.md)
 
 [モジュール 2.4 に戻る](./segment-activation-microsoft-azure-eventhub.md)
 

@@ -198,8 +198,8 @@ PSD テンプレートを外部システムから提供される変数として�
 
 ## 次の手順
 
-コネクタを使用した [1.2.4 の自動化に進む ](./ex4.md){target="_blank"}
+コネクタを使用した [1.2.4 の自動化に進む &#x200B;](./ex4.md){target="_blank"}
 
-[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

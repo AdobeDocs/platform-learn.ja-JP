@@ -21,7 +21,7 @@ Journey Optimizerの意思決定管理は、すべてのタッチポイントを
 
 ![アーキテクチャ](assets/architecture-ajo.png){zoomable="yes"}
 
-意思決定管理では、マーケティングオファーの一元化されたライブラリと、Adobe Experience Platformで作成されるリッチなリアルタイムプロファイルにルールと制約を適用する意思決定エンジンにより、パーソナライゼーションを簡単にします。 その結果、顧客に適切なオファーを適切なタイミングで送信できます。 詳しくは [ 意思決定管理について ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning) を参照してください。
+意思決定管理では、マーケティングオファーの一元化されたライブラリと、Adobe Experience Platformで作成されるリッチなリアルタイムプロファイルにルールと制約を適用する意思決定エンジンにより、パーソナライゼーションを簡単にします。 その結果、顧客に適切なオファーを適切なタイミングで送信できます。 詳しくは [&#x200B; 意思決定管理について &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning) を参照してください。
 
 
 
@@ -35,7 +35,7 @@ Journey Optimizerの意思決定管理は、すべてのタッチポイントを
 
 * SDK がインストールおよび設定された状態で、アプリケーションが正常に構築および実行されました。
 * Adobe Experience Platform用にアプリを設定します。
-* Journey Optimizerへのアクセス - [ オファーと意思決定を管理する適切な権限 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/high-low-permissions) を持つ意思決定管理。
+* Journey Optimizerへのアクセス - [&#x200B; オファーと意思決定を管理する適切な権限 &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/high-low-permissions) を持つ意思決定管理。
 
 
 ## 学習目標
@@ -55,18 +55,18 @@ Journey Optimizerの意思決定管理は、すべてのタッチポイントを
 
 >[!TIP]
 >
->[Target を使用した A/B テストのセットアップ ](target.md) レッスンの一部として既に環境をセットアップしている場合は、このセットアップの節の手順のいくつかが既に実行されている可能性があります。
+>[Target を使用した A/B テストのセットアップ &#x200B;](target.md) レッスンの一部として既に環境をセットアップしている場合は、このセットアップの節の手順のいくつかが既に実行されている可能性があります。
 
 ### データストリーム設定を更新
 
 モバイルアプリから Platform Edge Networkに送信されたデータがJourney Optimizer - Decision Management に転送されるようにするには、データストリームを更新します。
 
 1. データ収集 UI で「**[!UICONTROL データストリーム]**」を選択し、データストリームを選択します（例：**[!DNL Luma Mobile App]**）。
-1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
-1. **[!UICONTROL データストリーム]**/![ フォルダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge セグメント化]**、**[!UICONTROL Adobe Journey Optimizer]** が選択されていることを確認します。 Target レッスンを行う場合は、「**[!UICONTROL Personalizationの宛先]**」も選択します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure) 設定を参照してください。
+1. ![2&rbrace;Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) の「詳細 **[!UICONTROL 」を選択し、コンテキストメニューから]** 編集 ![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 編集 **[!UICONTROL を選択します。]**
+1. **[!UICONTROL データストリーム]**/![&#x200B; フォルダー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)/**[!UICONTROL Adobe Experience Platform]** 画面で、**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge セグメント化]**、**[!UICONTROL Adobe Journey Optimizer]** が選択されていることを確認します。 Target レッスンを行う場合は、「**[!UICONTROL Personalizationの宛先]**」も選択します。 詳しくは、[Adobe Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure) 設定を参照してください。
 1. データストリーム設定を保存するには、「**[!UICONTROL 保存]**」を選択します。
 
-   ![AEP データストリーム設定 ](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
+   ![AEP データストリーム設定 &#x200B;](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
 
 
 ### Offer Decisioningと Target のタグ拡張機能のインストール
@@ -77,7 +77,7 @@ Journey Optimizerの意思決定管理は、すべてのタッチポイントを
 1. **[!UICONTROL Offer Decisioningと Target]** 拡張機能を検索します。
 1. 拡張機能をインストールします。 拡張機能では、追加の設定は必要ありません。
 
-   ![Offer Decisioningと Target 拡張機能の追加 ](assets/tag-add-decisioning-extension.png){zoomable="yes"}
+   ![Offer Decisioningと Target 拡張機能の追加 &#x200B;](assets/tag-add-decisioning-extension.png){zoomable="yes"}
 
 
 ### スキーマを更新
@@ -85,9 +85,9 @@ Journey Optimizerの意思決定管理は、すべてのタッチポイントを
 1. データ収集インターフェイスに移動し、左パネルから **[!UICONTROL スキーマ]** を選択します。
 1. 上部のバーから **[!UICONTROL 参照]** を選択します。
 1. スキーマを選択して開きます。
-1. スキーマエディターで、「フィールドグループ」の横にある「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 追加]** を選択します。
-1. **[!UICONTROL フィールドグループを追加]** ダイアログの ![ 検索 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)`proposition` を検索し、**[!UICONTROL エクスペリエンスイベント – 提案インタラクション]** と **[!UICONTROL フィールドグループを追加]** を選択します。 このフィールドグループは、オファーに関連するエクスペリエンスイベントデータ（提示されるオファーなど）を、どの収集、決定、その他のパラメーターの一部として収集します（このレッスンの後半を参照）。 しかし、また、オファーには何が起こっていますか？ 表示、インタラクション、却下などが行われますか？
-   ![ 提案 ](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
+1. スキーマエディターで、「フィールドグループ」の横にある「![&#x200B; 追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 追加]** を選択します。
+1. **[!UICONTROL フィールドグループを追加]** ダイアログの ![&#x200B; 検索 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)`proposition` を検索し、**[!UICONTROL エクスペリエンスイベント – 提案インタラクション]** と **[!UICONTROL フィールドグループを追加]** を選択します。 このフィールドグループは、オファーに関連するエクスペリエンスイベントデータ（提示されるオファーなど）を、どの収集、決定、その他のパラメーターの一部として収集します（このレッスンの後半を参照）。 しかし、また、オファーには何が起こっていますか？ 表示、インタラクション、却下などが行われますか？
+   ![&#x200B; 提案 &#x200B;](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. 「**[!UICONTROL 保存]**」を選択して、スキーマに対する変更を保存します。
 
 
@@ -99,43 +99,43 @@ Assuranceの設定を検証するには：
 1. 左側のパネルで **[!UICONTROL 設定]** を選択し、&lbrace;6![OFFER DECISIONINGと TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下にある **[!UICONTROL 設定を検証]** の横にある「追加 **[!UICONTROL を選択します。]**
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで **[!UICONTROL 設定を検証]** を選択します。 アプリケーションでのデータストリーム設定とSDK設定の両方が検証されます。
-   ![AJO Decisioning の検証 ](assets/ajo-decisioning-validation.png){zoomable="yes"}
+   ![AJO Decisioning の検証 &#x200B;](assets/ajo-decisioning-validation.png){zoomable="yes"}
 
 
 ## プレースメントを作成
 
 実際にオファーを作成する前に、モバイルアプリでこれらのオファーを配置する方法と場所を定義する必要があります。 意思決定管理では、この用途に合わせたプレースメントを定義し、JSON ペイロードをサポートするモバイルチャネル用のプレースメントを定義します。
 
-1. Journey Optimizer UI の左パネルで、「![ 意思決定管理 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)**[!UICONTROL から「コンポーネント]**&#x200B;**[!UICONTROL コンポーネント]** を選択します。
+1. Journey Optimizer UI の左パネルで、「![&#x200B; 意思決定管理 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)**[!UICONTROL から「コンポーネント]**&#x200B;**[!UICONTROL コンポーネント]** を選択します。
 
 1. 上部バーの「**[!UICONTROL プレースメント]**」を選択します。
 
-1. 名前が **[!UICONTROL モバイル JSON]**、**[!UICONTROL モバイル]** が **[!UICONTROL チャネルタイプ]**、**[!UICONTROL JSON]** が **[!UICONTROL コンテンツタイプ]** のプレースメントが表示されない場合は、プレースメントを作成する必要があります。 それ以外の場合は、引き続き [ オファーを作成 ](#create-offers) します。
+1. 名前が **[!UICONTROL モバイル JSON]**、**[!UICONTROL モバイル]** が **[!UICONTROL チャネルタイプ]**、**[!UICONTROL JSON]** が **[!UICONTROL コンテンツタイプ]** のプレースメントが表示されない場合は、プレースメントを作成する必要があります。 それ以外の場合は、引き続き [&#x200B; オファーを作成 &#x200B;](#create-offers) します。
 
 モバイル JSON プレースメントを作成するには：
 
-1. 「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) プレースメントを作成」を選択します。
+1. 「![&#x200B; 追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) プレースメントを作成」を選択します。
 
    1. 「**[!UICONTROL 詳細]**」セクションで、「`Mobile JSON` 名前 **[!UICONTROL 」に「]**」と入力し、「**[!UICONTROL チャネルタイプ]**」から「**[!UICONTROL モバイル]**」を選択し、「**[!UICONTROL コンテンツタイプ]**」から「**[!UICONTROL JSON]**」を選択します。
    1. 「**[!UICONTROL 保存]**」を選択して、プレースメントを保存します。
 
-   ![ プレースメントを作成 ](assets/ajo-create-placement.png){zoomable="yes"}
+   ![&#x200B; プレースメントを作成 &#x200B;](assets/ajo-create-placement.png){zoomable="yes"}
 
 
 
 ## オファーの作成
 
-1. Journey Optimizer UI の左パネルで、「![ 意思決定管理 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)」から「**[!UICONTROL オファー]**&#x200B;**[!UICONTROL オファー]** を選択します。
+1. Journey Optimizer UI の左パネルで、「![&#x200B; 意思決定管理 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)」から「**[!UICONTROL オファー]**&#x200B;**[!UICONTROL オファー]** を選択します。
 1. **[!UICONTROL オファー]** 画面で、「**[!UICONTROL 参照]** を選択して、オファーのリストを表示します。
 1. **[!UICONTROL オファーを作成]** を選択します。
 1. **[!UICONTROL 新しいオファー]** ダイアログで、「**[!UICONTROL パーソナライズされたオファー]**」を選択し、「次へ **[!UICONTROL をクリックし]** す。
 1. **[!UICONTROL 新しいパーソナライズされたオファーを作成]** の **[!UICONTROL 詳細]** 手順で、次の操作を行います。
    1. オファーの **[!UICONTROL 名前]** （例：`Luma - Juno Jacket`）を入力し、**[!UICONTROL 開始日時]** および **[!UICONTROL 終了日時]** を入力します。 決定エンジンでは、これらの日付内のオファーのみが選択されます。
    1. 「**[!UICONTROL 次へ]**」を選択します。
-      ![ オファー – 詳細 ](assets/ajo-offers-details.png){zoomable="yes"}
+      ![&#x200B; オファー – 詳細 &#x200B;](assets/ajo-offers-details.png){zoomable="yes"}
 
 1. **[!UICONTROL 新しいパーソナライズされたオファーを作成]** の **[!UICONTROL 表示域を追加]** 手順で、以下を行います。
-   1. ![ チャネル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) リストから **[!UICONTROL モバイル]**&#x200B;**[!UICONTROL モバイル]** を選択し、**[!UICONTROL プレースメント]** リストから **[!UICONTROL モバイル JSON]** を選択します。
+   1. ![&#x200B; チャネル &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) リストから **[!UICONTROL モバイル]**&#x200B;**[!UICONTROL モバイル]** を選択し、**[!UICONTROL プレースメント]** リストから **[!UICONTROL モバイル JSON]** を選択します。
    1. **[!UICONTROL コンテンツ]** に **[!UICONTROL カスタム]** を選択します。
    1. **[!UICONTROL コンテンツを追加]** を選択します。 **[!UICONTROL パーソナライゼーションを追加]** ダイアログで、次の手順を実行します。
       1. [!UICONTROL &#x200B; モード &#x200B;] セレクターが使用可能な場合は、そのセレクターが **[!UICONTROL JSON]** に設定されていることを確認します。
@@ -150,15 +150,15 @@ Assuranceの設定を検証するには：
          ```
 
       1. 「**[!UICONTROL 保存]**」を選択します。
-         ![ オファー – カスタムコンテンツ ](assets/ajo-offers-customcontent.png){zoomable="yes"}
+         ![&#x200B; オファー – カスタムコンテンツ &#x200B;](assets/ajo-offers-customcontent.png){zoomable="yes"}
    1. 「**[!UICONTROL 次へ]**」を選択します。
-      ![ オファー表示域 ](assets/ajo-offers-representations.png){zoomable="yes"}
+      ![&#x200B; オファー表示域 &#x200B;](assets/ajo-offers-representations.png){zoomable="yes"}
 
 1. **[!UICONTROL 新しいパーソナライズされたオファーを作成]** の **[!UICONTROL 制約を追加]** 手順で、以下を行います。
    1. **[!UICONTROL 優先度]** を `10` に設定します。
    1. **[!UICONTROL キャッピングを含める]** をオフに切り替えます。
    1. 「**[!UICONTROL 次へ]**」を選択します。
-      ![ オファー – 制約 ](assets/ajo-offers-constraints.png){zoomable="yes"}
+      ![&#x200B; オファー – 制約 &#x200B;](assets/ajo-offers-constraints.png){zoomable="yes"}
 
 1. **[!UICONTROL 新しいパーソナライズされたオファーを作成]** の **[!UICONTROL レビュー]** 手順で、次の操作を行います。
    1. オファーを確認し、「**[!UICONTROL 終了]**」を選択します。
@@ -166,9 +166,9 @@ Assuranceの設定を検証するには：
 
 1. 手順 3～8 を繰り返し、異なる名前とコンテンツを持つさらに 4 つのオファーを作成します。 開始日時や優先度などのその他の設定値はすべて、最初に作成したオファーに似ています。 重複するオファーをすばやく作成して編集できます。
 
-   1. Journey Optimizerの UI で、左側のレールから ![ オファー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)**[!UICONTROL オファー]** を選択したあと、上部のバーから「オファー」を選択します。
+   1. Journey Optimizerの UI で、左側のレールから ![&#x200B; オファー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)**[!UICONTROL オファー]** を選択したあと、上部のバーから「オファー」を選択します。
    1. 作成したオファーの行を選択します。
-   1. 右側のペインで ![ その他 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmall_18_N.svg)**[!UICONTROL その他のアクション]** を選択し、コンテキストメニューから ![ 複製 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Duplicate_18_N.svg) **[!UICONTROL 複製]** を選択します。
+   1. 右側のペインで ![&#x200B; その他 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmall_18_N.svg)**[!UICONTROL その他のアクション]** を選択し、コンテキストメニューから ![&#x200B; 複製 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Duplicate_18_N.svg) **[!UICONTROL 複製]** を選択します。
 
       次の表を使用して、他の 4 つのオファーを定義します。
 
@@ -187,7 +187,7 @@ Assuranceの設定を検証するには：
    1. **[!UICONTROL 新しいフォールバックオファーを作成]** の **[!UICONTROL 詳細]** 手順で、オファーの **[!UICONTROL 名前]** （例：`Luma - Fallback Offer`）を入力し、「**[!UICONTROL 次へ]**」を選択します。
 
    1. **[!UICONTROL 新しいフォールバックオファーを作成]** の **[!UICONTROL 表示域を追加]** 手順で、以下を行います。
-      1. ![ チャネル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) リストから **[!UICONTROL モバイル]**&#x200B;**[!UICONTROL モバイル]** を選択し、**[!UICONTROL プレースメント]** リストから **[!UICONTROL モバイル JSON]** を選択します。
+      1. ![&#x200B; チャネル &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) リストから **[!UICONTROL モバイル]**&#x200B;**[!UICONTROL モバイル]** を選択し、**[!UICONTROL プレースメント]** リストから **[!UICONTROL モバイル JSON]** を選択します。
       1. **[!UICONTROL コンテンツ]** に **[!UICONTROL カスタム]** を選択します。
       1. **[!UICONTROL コンテンツを追加]** を選択します。
       1. **[!UICONTROL パーソナライゼーションを追加]** ダイアログで、次の JSON を入力して「**[!UICONTROL 保存]**」を選択します。
@@ -208,7 +208,7 @@ Assuranceの設定を検証するには：
    1. **[!UICONTROL オファーを保存]** ダイアログで、「**[!UICONTROL 保存して承認]**」を選択します。
 
 これで、次のオファーリストが表示されます。
-![ オファーリスト ](assets/ajo-offers-list.png){zoomable="yes"}
+![&#x200B; オファーリスト &#x200B;](assets/ajo-offers-list.png){zoomable="yes"}
 
 
 ## コレクションの作成
@@ -217,12 +217,12 @@ Assuranceの設定を検証するには：
 
 1. Journey Optimizer UI の左パネルで「**[!UICONTROL オファー]**」をクリックします。
 1. 上部バーの「**[!UICONTROL コレクション]**」を選択します。
-1. 「![ コレクションを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 作成]**」を選択します。
+1. 「![&#x200B; コレクションを追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 作成]**」を選択します。
 1. **[!UICONTROL 新規コレクション]** ダイアログで、コレクションの **[!UICONTROL 名前]** を入力（例：`Luma - Mobile App Collection`）し、「**[!UICONTROL 静的コレクションを作成]**」を選択して **[!UICONTROL 次へ]** をクリックします。
 1. **[!DNL Luma - Mobile App Collection]** で、コレクションに含めるオファーを選択します。 このチュートリアルでは、作成した 5 つのオファーを選択します。 検索フィールドを使用して、**[!DNL Luma]** などを入力するなどしてリストを簡単にフィルタリングできます。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![ オファー – コレクション ](assets/ajo-collection-offersselected.png){zoomable="yes"}
+   ![&#x200B; オファー – コレクション &#x200B;](assets/ajo-collection-offersselected.png){zoomable="yes"}
 
 
 ## 決定の作成
@@ -237,27 +237,27 @@ Assuranceの設定を検証するには：
 * 実施要件ルール：例えば、は、特定のオーディエンスに対してのみ使用できるオファーです。
 * ランキング方法：複数のオファーを選択できる場合、ランク付けにどの方法を使用するか（オファーの優先度、式の使用、AI モデルなど）。
 
-プレースメント、ルール、ランキング、オファー、表示域、コレクション、決定などの相互関係および関係性を理解するには、[ オファーを作成および管理するための主な手順 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) を参照してください。 このレッスンでは、Journey Optimizer - Decision Management 内で柔軟に意思決定を定義することよりも、意思決定の出力を使用することに重点を置いています。
+プレースメント、ルール、ランキング、オファー、表示域、コレクション、決定などの相互関係および関係性を理解するには、[&#x200B; オファーを作成および管理するための主な手順 &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) を参照してください。 このレッスンでは、Journey Optimizer - Decision Management 内で柔軟に意思決定を定義することよりも、意思決定の出力を使用することに重点を置いています。
 
 1. Journey Optimizer UI の左パネルで「**[!UICONTROL オファー]**」をクリックします。
 1. 上部バーの「**[!UICONTROL 決定]**」を選択します。
-1. 「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 決定を作成]**」を選択します。
+1. 「![&#x200B; 追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 決定を作成]**」を選択します。
 1. **[!UICONTROL 新しいオファー決定を作成]** の **[!UICONTROL 詳細]** 手順で、以下を行います。
    1. 決定の **[!UICONTROL 名前]** を入力します（例：`Luma - Mobile App Decision`）。**[!UICONTROL 開始日時]** および **[!UICONTROL 終了日時]** と入力します。
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 1. **[!UICONTROL 新しいオファーの決定を作成]** の **[!UICONTROL 決定範囲を追加]** 手順で、以下を行います。
    1. **[!UICONTROL プレースメント]** リストから「**[!UICONTROL モバイル JSON]**」を選択します。
-   1. **[!UICONTROL 評価条件]** タイルで、「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]**」を選択します。
+   1. **[!UICONTROL 評価条件]** タイルで、「![&#x200B; 追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 追加]**」を選択します。
       1. **[!UICONTROL オファーコレクションを追加]** ダイアログで、オファーコレクションを選択します。 例：**[!DNL Luma - Mobile App Collection]**。
       1. 「**[!UICONTROL 追加]**」を選択します。
 
-         ![ 決定 – コレクションを選択 ](assets/ajo-decision-selectcollection.png){zoomable="yes"}
+         ![&#x200B; 決定 – コレクションを選択 &#x200B;](assets/ajo-decision-selectcollection.png){zoomable="yes"}
 
    1. **[!UICONTROL 実施要件]** に対して **[!UICONTROL なし]** が選択され、**[!UICONTROL ランキングメソッド]** として **[!UICONTROL オファーの優先度]** が選択されていることを確認します。
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
-      ![ 決定範囲 ](assets/ajo-decision-scopes.png){zoomable="yes"}
+      ![&#x200B; 決定範囲 &#x200B;](assets/ajo-decision-scopes.png){zoomable="yes"}
 
 1. **[!UICONTROL 新しいオファー決定を作成]** の **[!UICONTROL フォールバックオファーを追加]** 手順で、以下を行います。
    1. フォールバックオファー（**[!DNL Luma - Fallback offer]** など）を選択します。
@@ -272,10 +272,10 @@ Assuranceの設定を検証するには：
 1. Journey Optimizer UI で、「**[!UICONTROL オファー]**」を選択します。
 1. 上部バーの「**[!UICONTROL 決定]**」を選択します。
 1. 決定を選択します（例：**[!DNL Luma - Mobile App Decision]**）。
-1. **[!UICONTROL 決定範囲]** タイルで、「![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL コピー]**」を選択します。
+1. **[!UICONTROL 決定範囲]** タイルで、「![&#x200B; コピー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL コピー]**」を選択します。
 1. コンテキストメニューから、「**[!UICONTROL 決定範囲]**」を選択します。
 
-   ![ 決定範囲をコピー ](assets/ajo-copy-decisionscope.png){zoomable="yes"}
+   ![&#x200B; 決定範囲をコピー &#x200B;](assets/ajo-copy-decisionscope.png){zoomable="yes"}
 
 1. 任意のテキストエディターを使用して、後で使用するために決定範囲を貼り付けることができます。 決定範囲の JSON 形式は次のとおりです。
 
@@ -288,18 +288,18 @@ Assuranceの設定を検証するには：
 
 ## アプリへのオファーの実装
 
-前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、Optimize SDKをインストールして登録する必要があります。 これらの手順が明確でない場合は、「SDK のインストール [ の節を参照し ](install-sdks.md) ください。
+前のレッスンで説明したように、モバイルタグ拡張機能をインストールしても、設定のみが提供されます。 次に、Optimize SDKをインストールして登録する必要があります。 これらの手順が明確でない場合は、「SDK のインストール [&#x200B; の節を参照し &#x200B;](install-sdks.md) ください。
 
 >[!NOTE]
 >
->[SDK のインストール ](install-sdks.md) の節を完了した場合、SDKは既にインストールされているので、この手順をスキップできます。
+>[SDK のインストール &#x200B;](install-sdks.md) の節を完了した場合、SDKは既にインストールされているので、この手順をスキップできます。
 >
 
 >[!BEGINTABS]
 
 >[!TAB iOS]
 
-1. Xcode で、[AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) がパッケージの依存関係のパッケージの一覧に追加されていることを確認します。 [Swift パッケージマネージャー ](install-sdks.md#swift-package-manager) を参照してください。
+1. Xcode で、[AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) がパッケージの依存関係のパッケージの一覧に追加されていることを確認します。 [Swift パッケージマネージャー &#x200B;](install-sdks.md#swift-package-manager) を参照してください。
 1. Xcode プロジェクトナビゲーターで **[!DNL Luma]**/**[!DNL Luma]**/**[!UICONTROL AppDelegate]** に移動します。
 1. `AEPOptimize` が読み込みのリストに含まれていることを確認します。
 
@@ -348,7 +348,7 @@ Assuranceの設定を検証するには：
    この関数：
 
    * オファーを提示する必要があるプロファイルを識別する ECID を含む、XDM 辞書 `xdmData` ールを設定します。
-   * Journey Optimizer - Decision Management インターフェイスで定義した決定に基づくオブジェクトで、`decisionScope` 決定を作成 [ からコピーした決定範囲を使用して定義される ](#create-a-decision) を定義します。  Luma アプリは、次の JSON 形式に基づいてスコープパラメーターを取得する設定ファイル（`decisions.json`）を使用します。
+   * Journey Optimizer - Decision Management インターフェイスで定義した決定に基づくオブジェクトで、`decisionScope` 決定を作成 [&#x200B; からコピーした決定範囲を使用して定義される &#x200B;](#create-a-decision) を定義します。  Luma アプリは、次の JSON 形式に基づいてスコープパラメーターを取得する設定ファイル（`decisions.json`）を使用します。
 
      ```json
      "scopes": [
@@ -391,7 +391,7 @@ Assuranceの設定を検証するには：
 >[!TAB Android]
 
 
-1. Android Studio で、[aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) が **[!UICONTROL Android:app]** ChevronDown **[!UICONTROL >]** Gradle Scripts![ の ](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
+1. Android Studio で、[aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) が **[!UICONTROL Android:app]** ChevronDown **[!UICONTROL >]** Gradle Scripts![&#x200B; の &#x200B;](/help/assets/icons/ChevronDown.svg)build.gradle.kts （Module **[!UICONTROL ）]** の依存関係に含まれていることを確認します。 [Gradle](install-sdks.md#gradle) を参照。
 1. Android Studio ナビゲーターで **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)/**[!DNL app]**/**[!DNL kotlin+java]**/**[!UICONTROL com.adobe.luma.tutorial.android]**/**[!UICONTROL MainActivity]** に移動します。
 1. `Optimize` が読み込みのリストに含まれていることを確認します。
 
@@ -445,7 +445,7 @@ Assuranceの設定を検証するには：
    この関数：
 
    * オファーを提示する必要があるプロファイルを識別する ECID を含む、XDM 辞書 `xdmData` ールを設定します。
-   * Journey Optimizer - Decision Management インターフェイスで定義した決定に基づくオブジェクトで、`decisionScope` 決定を作成 [ からコピーした決定範囲を使用して定義される ](#create-a-decision) を定義します。  Luma アプリは、次の JSON 形式に基づいてスコープパラメーターを取得する設定ファイル（`decisions.json`）を使用します。
+   * Journey Optimizer - Decision Management インターフェイスで定義した決定に基づくオブジェクトで、`decisionScope` 決定を作成 [&#x200B; からコピーした決定範囲を使用して定義される &#x200B;](#create-a-decision) を定義します。  Luma アプリは、次の JSON 形式に基づいてスコープパラメーターを取得する設定ファイル（`decisions.json`）を使用します。
 
      ```json
      "scopes": [
@@ -493,7 +493,7 @@ Assuranceの設定を検証するには：
 
 >[!TAB iOS]
 
-1. ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレータまたは Xcode の物理デバイスでアプリを再構築して実行します。
+1. ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレータまたは Xcode の物理デバイスでアプリを再構築して実行します。
 
 1. 「**[!DNL Personalization]**」タブに移動します。
 
@@ -506,7 +506,7 @@ Assuranceの設定を検証するには：
 
 >[!TAB Android]
 
-1. ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレーターまたはAndroid Studio の物理デバイスでアプリを再構築して実行します。
+1. ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) を使用して、シミュレーターまたはAndroid Studio の物理デバイスでアプリを再構築して実行します。
 
 1. 「**[!DNL Personalization]**」タブに移動します。
 
@@ -522,12 +522,12 @@ Assuranceの設定を検証するには：
 
 Assuranceでオファー実装を検証するには：
 
-1. [ 設定手順 ](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+1. [&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
 1. 左側のパネルで **[!UICONTROL 設定]** を選択し、&lbrace;6![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の **[!UICONTROL レビューとシミュレーション]** の横にある「追加 **[!UICONTROL を選択します。]**
 1. 「**[!UICONTROL 保存]**」を選択します。
 1. 左パネルで **[!UICONTROL レビューとシミュレート]** を選択します。 データストリームの設定と、アプリケーションでのSDKの設定の両方が検証されます。
 1. 上部のバーで「**[!UICONTROL リクエスト]**」を選択します。 **[!UICONTROL オファー]** リクエストが表示されます。
-   ![AJO Decisioning の検証 ](assets/assurance-decisioning-requests.png){zoomable="yes"}
+   ![AJO Decisioning の検証 &#x200B;](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
 1. 「**[!UICONTROL シミュレート]**」タブや「**[!UICONTROL イベントリスト]** タブを調べて、さらに機能を追加したり、Journey Optimizer Decision Management の設定を確認したりできます。
 
@@ -536,13 +536,13 @@ Assuranceでオファー実装を検証するには：
 これで、Journey Optimizer - Decision Management 実装への機能追加を開始するためのすべてのツールが用意できました。 例：
 
 * オファーに様々なパラメーター（優先度、キャッピングなど）を適用
-* アプリでプロファイル属性（「プロファイル [ を参照 ](profile.md) を収集し、これらのプロファイル属性を使用してオーディエンスを構築します。 次に、これらのオーディエンスを決定の実施要件ルールの一部として使用します。
+* アプリでプロファイル属性（「プロファイル [&#x200B; を参照 &#x200B;](profile.md) を収集し、これらのプロファイル属性を使用してオーディエンスを構築します。 次に、これらのオーディエンスを決定の実施要件ルールの一部として使用します。
 * 複数の決定範囲を組み合わせます。
 
 >[!SUCCESS]
 >
 >Experience Platform Mobile SDKのOffer Decisioningおよび Target 拡張機能を使用してオファーを表示するように、アプリを有効にしました。
 >
->Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>Adobe Experience Platform Mobile SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 
 次のトピック：**[A/B テストの実行](target.md)**

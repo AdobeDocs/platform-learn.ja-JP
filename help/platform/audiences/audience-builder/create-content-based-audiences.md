@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # コンテンツベースのオーディエンスの作成
 
-Experience Platformのオーディエンスルールビルダーでコンテンツ親和性オーディエンスを作成する際の基本を説明します。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+Experience Platformのオーディエンスルールビルダーでコンテンツ親和性オーディエンスを作成する際の基本を説明します。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

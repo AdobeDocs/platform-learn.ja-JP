@@ -112,7 +112,7 @@ ht-degree: 3%
 
 ![セグメント化](./images/savedsegment.png)
 
-次の手順：[2.3.2 宛先を使用して DV360 の宛先を設定する方法を確認する ](./ex2.md)
+次の手順：[2.3.2 宛先を使用して DV360 の宛先を設定する方法を確認する &#x200B;](./ex2.md)
 
 [モジュール 2.3 に戻る](./real-time-cdp-build-a-segment-take-action.md)
 

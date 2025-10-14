@@ -179,7 +179,7 @@ limit 10;
 
 ### Adobe定義関数
 
-Adobeでは、標準 SQL 構文に一連の **Adobe定義関数** が追加され、エクスペリエンスデータをより深く理解できるようになりました。 次のクエリでは、これらの ADF 関数について説明します。 詳細と完全なリストについては、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=ja) を参照してください。
+Adobeでは、標準 SQL 構文に一連の **Adobe定義関数** が追加され、エクスペリエンスデータをより深く理解できるようになりました。 次のクエリでは、これらの ADF 関数について説明します。 詳細と完全なリストについては、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=ja) を参照してください。
 
 ### セッションの 3 番目のページとして「サービスをキャンセル」ページに到達する前に、サイト上でユーザーはどうしますか？
 
@@ -578,7 +578,7 @@ and    l._experienceplatform.identification.core.ecid = e._experienceplatform.id
 
 次に、クエリ（**create table as select** または **CTAS** とも呼ばれます）を、Microsoft Power BIで使用する新しいデータセットとして永続化します。
 
-次の手順：[5.1.5 クエリからデータセットを生成する ](./ex5.md)
+次の手順：[5.1.5 クエリからデータセットを生成する &#x200B;](./ex5.md)
 
 [モジュール 5.1 に戻る](./query-service.md)
 

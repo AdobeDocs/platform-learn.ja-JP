@@ -15,9 +15,9 @@ ht-degree: 12%
 
 Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法について説明します。
 
-[Adobe Experience Cloud ID サービス ](https://experienceleague.adobe.com/ja/docs/id-service/using/home) は、SDK ベースのAdobe アプリケーション間で共通の訪問者 ID （ECID）を設定して、アプリケーション間のオーディエンス共有などのExperience Cloud機能を強化します。 また、独自の顧客 ID をサービスに送信して、クロスデバイスターゲティングや、顧客関係管理（CRM）システムなどの他のシステムとの統合を有効にすることもできます。
+[Adobe Experience Cloud ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/id-service/using/home) は、SDK ベースのAdobe アプリケーション間で共通の訪問者 ID （ECID）を設定して、アプリケーション間のオーディエンス共有などのExperience Cloud機能を強化します。 また、独自の顧客 ID をサービスに送信して、クロスデバイスターゲティングや、顧客関係管理（CRM）システムなどの他のシステムとの統合を有効にすることもできます。
 
-[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) （はい、2 つあります）は、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できるようにします。
+[Adobe Experience Platform ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) （はい、2 つあります）は、ECID と顧客 ID を使用して ID グラフを生成し、属性と行動をリアルタイム顧客プロファイルに結合できるようにします。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 >[!NOTE]
 >
-> デモ目的で、このレッスンの演習では、資格情報 [ ユーザー：](https://luma.enablementadobe.com/content/luma/us/en.html) / パスワード：テスト **を使用して `test@test.com`Luma デモサイト** にログインした架空の顧客の ID の詳細を取得します。
+> デモ目的で、このレッスンの演習では、資格情報 [&#x200B; ユーザー：](https://luma.enablementadobe.com/content/luma/us/en.html) / パスワード：テスト **を使用して `test@test.com`Luma デモサイト** にログインした架空の顧客の ID の詳細を取得します。
 
 ## 学習目標
 
@@ -43,9 +43,9 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 >[!IMPORTANT]
 >
->Experience Cloud Web SDK ライブラリには訪問者 ID サービス機能が含まれているので、Adobe Experience Platform Web SDKを実装する場合、[JavaScript ID 拡張 ](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) は必要ありません。
+>Experience Cloud Web SDK ライブラリには訪問者 ID サービス機能が含まれているので、Adobe Experience Platform Web SDKを実装する場合、[JavaScript ID 拡張 &#x200B;](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) は必要ありません。
 >
-> Web サイトで既に（Visitor API またはExperience Cloud ID Service Tag extension を通じて）Experience Cloud ID サービスを使用している場合に、Adobe Experience Platform Web SDKへの移行中もそのサービスを引き続き使用するには、最新バージョンの Visitor API またはExperience Cloud ID Service Tag extension を使用する必要があります。 詳しくは、「[ID の移行 ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/identity/overview)」を参照してください。
+> Web サイトで既に（Visitor API またはExperience Cloud ID Service Tag extension を通じて）Experience Cloud ID サービスを使用している場合に、Adobe Experience Platform Web SDKへの移行中もそのサービスを引き続き使用するには、最新バージョンの Visitor API またはExperience Cloud ID Service Tag extension を使用する必要があります。 詳しくは、「[ID の移行 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/identity/overview)」を参照してください。
 
 ## ID 名前空間の作成
 
@@ -57,7 +57,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 次に、Luma CRM ID の名前空間を作成します。
 
-1. [ データ収集インターフェイス ](https://experience.adobe.com/data-collection/){target="_blank"} を開きます。
+1. [&#x200B; データ収集インターフェイス &#x200B;](https://experience.adobe.com/data-collection/){target="_blank"} を開きます。
 1. チュートリアルに使用するサンドボックスを選択します
 
    >[!NOTE]
@@ -71,7 +71,7 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 1. **[!UICONTROL ID 名前空間を作成]** を選択します
 
-   ![ID の表示 ](assets/configure-identities-screen.png)
+   ![ID の表示 &#x200B;](assets/configure-identities-screen.png)
 
 1. 詳細を以下のように入力して、「**[!UICONTROL 作成]**」を選択します。
 
@@ -92,10 +92,10 @@ Adobe Experience Platform Web SDK で使用する ID 名前空間の設定方法
 
 >[!NOTE]
 >
-> [ID の作成 ](create-identities.md) レッスンでは、ID を Platform Edge Networkに送信する際にこの名前空間を使用する方法を学びます。
+> [ID の作成 &#x200B;](create-identities.md) レッスンでは、ID を Platform Edge Networkに送信する際にこの名前空間を使用する方法を学びます。
 
 ID が配置されたので、データストリームを設定できます。
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

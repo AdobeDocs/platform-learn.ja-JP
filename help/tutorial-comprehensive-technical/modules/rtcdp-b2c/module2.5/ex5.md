@@ -20,7 +20,7 @@ ht-degree: 3%
 ## 知っておいて良い
 
 Adobe Experience Platformは、様々なAmazon サービスを宛先としてサポートしています。
-Kinesisと S3 は、どちらも [ プロファイル書き出し先 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=ja) であり、Adobe Experience Platform Real-Time CDPの一部として使用できます。
+Kinesisと S3 は、どちらも [&#x200B; プロファイル書き出し先 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=ja) であり、Adobe Experience Platform Real-Time CDPの一部として使用できます。
 価値の高いセグメントイベントや関連するプロファイル属性を、選択したシステムに簡単にフィードできます。
 
 この演習では、Amazon Kinesis エコシステムから得られたイベントデータをAmazon S3 などのクラウドストレージ宛先にストリーミングするために独自のAdobe Experience Platform Edge ストリームを設定する方法について説明します。 これは、web およびモバイルプロパティからエクスペリエンスイベントを収集し、分析と運用レポートのためにデータレイクにプッシュする場合に便利です。 データレイクは通常、大規模な毎日のファイルインポートでバッチ方式でデータを取り込み、イベント転送と組み合わせて使用できるパブリック http エンドポイントを公開しません。
@@ -325,25 +325,25 @@ AWSの地域は、次の場所で確認できます。
 
 ビューを **AWS** に切り替えます。 データストリームを開いて「**監視**」タブに移動すると、受信トラフィックが表示されます。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hookaws3.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hookaws3.png)
 
 Data Firehose ストリームを開いて「**モニタリング**」タブに移動すると、受信トラフィックも表示されます。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hookaws4.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hookaws4.png)
 
 最後に、S3 バケットを見ると、データ取り込みの結果として、そこにファイルが作成されていることがわかります。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hookaws5.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hookaws5.png)
 
 そのようなファイルをダウンロードし、テキストエディターを使用して開くと、転送されたイベントの XDM ペイロードが含まれていることがわかります。
 
-![Adobe Experience Platform データ収集のセットアップ ](./images/hookaws6.png)
+![Adobe Experience Platform データ収集のセットアップ &#x200B;](./images/hookaws6.png)
 
 >[!IMPORTANT]
 >
 >設定が期待どおりに動作したら、充電を避けるために、AWS Kinesis データストリームおよび Data Firehose を必ず有効にしてください。
 
-次の手順：[ 概要とメリット ](./summary.md)
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md)
 
 [モジュール 2.5 に戻る](./aep-data-collection-ssf.md)
 

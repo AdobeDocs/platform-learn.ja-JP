@@ -83,7 +83,7 @@ ht-degree: 1%
 
 実践的な演習を開始する前に、このチュートリアルの背後にあるアーキテクチャを確認してください。 この Bootcamp では、Adobe Experience Platformの様々な機能について詳しく説明し、様々なソースや宛先にわたる複数の統合についても説明します。 このチュートリアルの背後にあるアーキテクチャや、大規模法人エコシステムにおけるAdobe Experience Platformの全体的な位置を適切に理解するには、アーキテクチャに関するビデオと図を確認することから始めます。
 
-[ アーキテクチャ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=ja) に移動します。
+[&#x200B; アーキテクチャ &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=ja) に移動します。
 
 ## ビデオ
 
@@ -93,27 +93,27 @@ Experience Makers Bootcamp の主な目的は、大規模なパーソナライ�
 
 その他にも、bootcamp の要素や、Adobe Experience PlatformとAdobe以外のアプリケーションとの強力な統合機能を紹介するビデオがいくつか作成されています。 以下のリンクをクリックして、それらのビデオの概要を参照してください。
 
-[ ビデオ ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=ja) に移動します。
+[&#x200B; ビデオ &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=ja) に移動します。
 
 ## YouTube
 
-その他の興味深いビデオは [YouTube チャンネルで ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) 見つけることができます。
+その他の興味深いビデオは [YouTube チャンネルで &#x200B;](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) 見つけることができます。
 
 ## ユーザーフロー
 
-[1.獲得 ](./uc/uc1/uc1.md)
+[1.獲得 &#x200B;](./uc/uc1/uc1.md)
 
 このユーザーフローでは、Real-Time CDPを使用して、既知の認証済みユーザーと共に、未認証の未知のユーザーに対して獲得に焦点を当てたユースケースを実装するために必要なすべての要素を理解します。
 
-[2. 登録とオンボーディング ](./uc/uc2/uc2.md)
+[2. 登録とオンボーディング &#x200B;](./uc/uc2/uc2.md)
 
 このユーザーフローでは、Real-Time CDPとAdobe Journey Optimizerを使用して、登録とオンボーディングのユースケースを実装するために必要なすべての要素を説明します。
 
-[3.物理とデジタルの融合 ](./uc/uc3/uc3.md)
+[3.物理とデジタルの融合 &#x200B;](./uc/uc3/uc3.md)
 
 このユーザーフローでは、Real-Time CDPとAdobe Journey Optimizerを使用して、一貫した方法でオンラインチャネルとオフラインチャネルにわたるカスタマーエクスペリエンスをパーソナライズします。
 
-[4. カスタマージャーニー分析 ](./uc/uc4/uc4.md)
+[4. カスタマージャーニー分析 &#x200B;](./uc/uc4/uc4.md)
 
 このユーザーフローでは、Customer Journey Analyticsについて理解し、オンラインからオフライン、コールセンターなど、お客様がチャネル間でどのように変化しているかについて洞察を得ることができます。
 

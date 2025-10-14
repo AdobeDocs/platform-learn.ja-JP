@@ -37,9 +37,9 @@ Adobe Experience Platformとクエリサービスを使用してデータとや�
 
 ## これを確認する
 
-- テクニカルブログ：[Adobe Experience Platformでクエリサービスが強化され、使いやすくなりました ](https://medium.com/adobetech/adobe-experience-platform-now-offers-the-power-and-ease-of-query-service-8c25ecf8eb1b)
-- Tech Blog: [Adobe Experience Platform Data Science Workspaceによるインテリジェントインサイトの加速 ](https://medium.com/adobetech/accelerate-intelligent-insights-with-adobe-experience-platform-data-science-workspace-89538bacbbea)
-- Experience Platformドキュメント：[ クエリサービスの概要 ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
+- テクニカルブログ：[Adobe Experience Platformでクエリサービスが強化され、使いやすくなりました &#x200B;](https://medium.com/adobetech/adobe-experience-platform-now-offers-the-power-and-ease-of-query-service-8c25ecf8eb1b)
+- Tech Blog: [Adobe Experience Platform Data Science Workspaceによるインテリジェントインサイトの加速 &#x200B;](https://medium.com/adobetech/accelerate-intelligent-insights-with-adobe-experience-platform-data-science-workspace-89538bacbbea)
+- Experience Platformドキュメント：[&#x200B; クエリサービスの概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
 
 [モジュール 5.1 に戻る](./query-service.md)
 

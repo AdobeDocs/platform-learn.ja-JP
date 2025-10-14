@@ -25,7 +25,7 @@ ht-degree: 2%
 
 Web サイトのプロファイルビューアパネルでは、複数の ID を検索できます。 すべての ID は名前空間にリンクされています。
 
-![ 顧客プロファイル ](./images/identities.png)
+![&#x200B; 顧客プロファイル &#x200B;](./images/identities.png)
 
 X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが表示されます。
 
@@ -44,27 +44,27 @@ X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが
 
 [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home) に移動します
 
-![Adobe I/Oの新規統合 ](./images/iohome.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/iohome.png)
 
 画面の右上隅で正しいAdobe Experience Platform インスタンスを選択していることを確認してください。 インスタンスは `--aepImsOrgName--` です。 **新規プロジェクトを作成** をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/iocomp.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/iocomp.png)
 
 「**+ プロジェクトに追加**」を選択し、「**API**」を選択します。
 
-![Adobe I/Oの新規統合 ](./images/adobe_io_access_api.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/adobe_io_access_api.png)
 
 次の画面が表示されます。
 
-![Adobe I/Oの新規統合 ](./images/api1.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api1.png)
 
 「**Experience PlatformAPI**」を選択し、「**次へ**」をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/api3.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api3.png)
 
 この画面が表示されます。 資格情報の名前を指定：`--aepUserLdap-- - OAuth credential`。 「**次へ**」をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/api4.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api4.png)
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
@@ -76,33 +76,33 @@ X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが
 
 **設定済み API を保存** をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/api9.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api9.png)
 
 これで、Adobe I/Oの統合の準備が整いました。
 
-![Adobe I/Oの新規統合 ](./images/api11.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api11.png)
 
 **Postman用にダウンロード** ボタンをクリックし、**OAuth サーバー間** をクリックして、Postman環境をダウンロードします（環境がダウンロードされるまで待ちます。これには数秒かかる場合があります）。
 
-![Adobe I/Oの新規統合 ](./images/iopm.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/iopm.png)
 
 IO プロジェクトには現在、汎用名があります。 統合にはわかりやすい名前を付ける必要があります。 示されているように、**プロジェクト X** （または類似の名前）をクリックします
 
-![Adobe I/Oの新規統合 ](./images/api13.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api13.png)
 
 **プロジェクトを編集** をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/api14.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api14.png)
 
 統合の名前と説明を入力：`--aepUserLdap-- AEP Tutorial`。
 
 「**保存**」をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/api15.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api15.png)
 
 これで、Adobe I/Oの統合が完了しました。
 
-![Adobe I/Oの新規統合 ](./images/api16.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/api16.png)
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 お使いの OS に関連するバージョンのPostmanをダウンロードしてインストールします。
 
-![Adobe I/Oの新規統合 ](./images/getstarted.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/getstarted.png)
 
 Postmanをインストールしたら、アプリケーションを起動します。
 
@@ -169,23 +169,23 @@ Postmanには、環境とコレクションという 2 つのコンセプトが�
 
 **postman.zip** ファイルを解凍し、これらの 3 つのファイルをAdobe I/OからダウンロードしたPostmanと共に、デスクトップ上のフォルダーに保存します。そのフォルダーには、次の 4 つのファイルが必要です。
 
-![Adobe I/Oの新規統合 ](./images/pmfolder.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/pmfolder.png)
 
 Postmanに戻ります。 **インポート** をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/postmanui.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/postmanui.png)
 
 **ファイル** をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/choosefiles.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/choosefiles.png)
 
 ダウンロードした 4 つのファイルを抽出したデスクトップ上のフォルダーに移動します。 これらの 4 つのファイルを同時に選択し、「開く **をクリックし** す。
 
-![Adobe I/Oの新規統合 ](./images/selectfiles.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/selectfiles.png)
 
 **開く** をクリックすると、Postmanに読み込む環境とコレクションの概要が表示されます。 **インポート** をクリックします。
 
-![Adobe I/Oの新規統合 ](./images/impconfirm.png)
+![Adobe I/Oの新規統合 &#x200B;](./images/impconfirm.png)
 
 これで、API を使用してPostmanとの対話を開始するためにAdobe Experience Platformで必要なすべてが揃いました。
 

@@ -16,67 +16,67 @@ ht-degree: 0%
 
 左側の列で、「プロジェクトリーダーの週別表示」をクリックします。
 
-![ プロジェクトリーダーの週別表示 ](./images/weekly-view.png)
+![&#x200B; プロジェクトリーダーの週別表示 &#x200B;](./images/weekly-view.png)
 
 これには、豊富なレポートが含まれ、常にクリック可能またはアクションにつながる方法で詳細を確認できます。
 
 - **プロジェクト別の今週が期限のタスク**
 
-![ 今週中 ](./images/tasks-due.png)
+![&#x200B; 今週中 &#x200B;](./images/tasks-due.png)
 
 - **プロジェクト管理の今後のマイルストーン**:
 
-![ 今後のマイルストーン ](./images/upcoming-milestones.png)
+![&#x200B; 今後のマイルストーン &#x200B;](./images/upcoming-milestones.png)
 
 - **優先度別のオープン問題**
 
-![ 優先度別の問題 ](./images/open-issues.png)
+![&#x200B; 優先度別の問題 &#x200B;](./images/open-issues.png)
 
 - **部門別の遅延タスク**
 
-![ 遅延タスク ](./images/late-tasks.png)
+![&#x200B; 遅延タスク &#x200B;](./images/late-tasks.png)
 
 - **個人ごとの遅延タスク**
 
-![ 個々の遅延タスク ](./images/individual-late-tasks.png)
+![&#x200B; 個々の遅延タスク &#x200B;](./images/individual-late-tasks.png)
 
 ## スクラム関連のインサイト
 
 左側の列で、「反復ステータス」をクリックします
 
-![ イテレーションステータスをクリック ](./images/iteration-status.png)
+![&#x200B; イテレーションステータスをクリック &#x200B;](./images/iteration-status.png)
 
 チームがスクラム手法を使用している場合、これは興味深い管理レポートセットです。
 
 - **反復による速度**
 
-![ 速度 ](./images/velocity.png)
+![&#x200B; 速度 &#x200B;](./images/velocity.png)
 
 - **チーム別平均速度**
 
-![ 平均速度 ](./images/average-velocity.png)
+![&#x200B; 平均速度 &#x200B;](./images/average-velocity.png)
 
 - **現在の反復の完了時間の合計（担当者別）**
 
-![ 完了時間の合計 ](./images/iteration-status.png)
+![&#x200B; 完了時間の合計 &#x200B;](./images/iteration-status.png)
 
 - **チーム別イテレーション**
 
-![ チームによるイテレーション ](./images/iterations-by-team.png)
+![&#x200B; チームによるイテレーション &#x200B;](./images/iterations-by-team.png)
 
 ## 効率レポート
 
 左側の列に残り、「効率性」をクリックします。
 
-![ クリックの効率 ](./images/efficiency.png)
+![&#x200B; クリックの効率 &#x200B;](./images/efficiency.png)
 
 - **計画/未計画の比率** （完了した作業の）
 
-![ 予定/予定外比率 ](./images/planned-unplanned.png)
+![&#x200B; 予定/予定外比率 &#x200B;](./images/planned-unplanned.png)
 
 - **完了したリクエスト （週別）**
 
-![ 完了したリクエスト ](./images/completed-requests.png)
+![&#x200B; 完了したリクエスト &#x200B;](./images/completed-requests.png)
 
 ## 進行中のプロジェクトインサイト
 
@@ -84,25 +84,25 @@ ht-degree: 0%
 
 - **作業中の事業の状況**
 
-![ 進行中のプロジェクト ](./images/inflight-projects.png)
+![&#x200B; 進行中のプロジェクト &#x200B;](./images/inflight-projects.png)
 
 - **プロジェクト （状況別、月別）**
 
-![ 状況別プロジェクト ](./images/project-by-condition.png)
+![&#x200B; 状況別プロジェクト &#x200B;](./images/project-by-condition.png)
 
 - **進行中のプロジェクト** のリスト、進捗状況および財務の詳細
 
-![ 財務の詳細 ](./images/inflights-projects.png)
+![&#x200B; 財務の詳細 &#x200B;](./images/inflights-projects.png)
 
 ## （プロジェクト間の）依存関係の視覚化
 
 「PIN」ラインに戻り、「Portfolioの切り子面」をクリックします。
 
-![ ポートフォリオ ガント ビューのクリック ](./images/gant-view.png)
+![&#x200B; ポートフォリオ ガント ビューのクリック &#x200B;](./images/gant-view.png)
 
 ここでは、プロジェクト間で考えられる依存関係（先行タスク）を含む **プロジェクトのグループの** ガント チャート ビュー）を示します
 
-![ プロジェクト間の依存関係 ](./images/gant-chart.png)
+![&#x200B; プロジェクト間の依存関係 &#x200B;](./images/gant-chart.png)
 
 ## サードパーティの統合インサイト
 
@@ -118,13 +118,13 @@ ht-degree: 0%
 
 - **Adobe Campaignが開封数に送信されました**
 
-![ 開封に送信済み ](./images/sent-to-open.png)
+![&#x200B; 開封に送信済み &#x200B;](./images/sent-to-open.png)
 
 - **Adobe Campaignの開封数**
 
-![ 開いてクリック ](./images/open-to-click.png)
+![&#x200B; 開いてクリック &#x200B;](./images/open-to-click.png)
 
-次のステップ：[ まとめ ](../../conclusion.md)
+次のステップ：[&#x200B; まとめ &#x200B;](../../conclusion.md)
 
 [フェーズ 4 - プロジェクトマネージャーのインサイトに戻る](./project-manager.md)
 

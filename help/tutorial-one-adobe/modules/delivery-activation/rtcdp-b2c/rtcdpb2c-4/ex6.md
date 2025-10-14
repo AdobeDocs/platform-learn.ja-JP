@@ -151,6 +151,6 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 ## 次の手順
 
-[2.4.7 エンドツーエンドのシナリオに移動 ](./ex7.md){target="_blank"}
-[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[2.4.7 エンドツーエンドのシナリオに移動 &#x200B;](./ex7.md){target="_blank"}
+[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

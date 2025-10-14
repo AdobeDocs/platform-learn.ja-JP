@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # アトリビューション AI の概要
 
-マーケターとアナリストがアトリビューション AI を使用して、マーケティングチャネルやキャンペーンの影響を理解する方法の概要です。 詳しくは、[ アトリビューション AI ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ja) を参照してください。
+マーケターとアナリストがアトリビューション AI を使用して、マーケティングチャネルやキャンペーンの影響を理解する方法の概要です。 詳しくは、[&#x200B; アトリビューション AI ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/36573?learn=on&enablevpops&captions=jpn)

@@ -122,8 +122,8 @@ Azure で初めてリソースを作成する場合は、新しい **リソー�
 
 ## 次の手順
 
-[2.4.3 Adobe Experience Platformでの Azure Event Hub の宛先の設定に移動し ](./ex3.md){target="_blank"} す。
+[2.4.3 Adobe Experience Platformでの Azure Event Hub の宛先の設定に移動し &#x200B;](./ex3.md){target="_blank"} す。
 
-[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

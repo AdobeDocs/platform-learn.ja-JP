@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 依存関係マネージャーの使用
 
-CocoaPods と Gradle を使用してAdobe Experience Platform Mobile SDKの拡張機能と依存関係を管理する方法を説明します。 CocoaPods と Gradle を使用したSDKのインストールについて詳しくは、[ ドキュメント ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) を参照してください。
+CocoaPods と Gradle を使用してAdobe Experience Platform Mobile SDKの拡張機能と依存関係を管理する方法を説明します。 CocoaPods と Gradle を使用したSDKのインストールについて詳しくは、[&#x200B; ドキュメント &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) を参照してください。
 
 >[!NOTE]
 >

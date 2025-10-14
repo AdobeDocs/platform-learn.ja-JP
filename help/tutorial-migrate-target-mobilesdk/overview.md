@@ -16,14 +16,14 @@ ht-degree: 1%
 
 Adobe Experience Platform Mobile SDKは、モバイルアプリケーションにおけるエンドツーエンドのエンゲージメントを強化します。 Target 拡張機能は、Mobile SDKに基づいて構築されており、Adobe Targetでアプリのエクスペリエンスをパーソナライズするのに役立ちます。 Offer Decisioningと Target 拡張機能は、Target をReal-Time CDPやJourney OptimizerなどのAdobe Target ベースのアプリと統合するのに役立つAdobe Experience Platform Edge Network機能を使用する、モバイルアプリに Platform を実装するための新しいアプローチです。
 
-![Offer Decisioningと Target 拡張機能を備えたEdge Networkを通じて Target に接続するモバイルSDKを示す図 ](assets/datacollection.png)
+![Offer Decisioningと Target 拡張機能を備えたEdge Networkを通じて Target に接続するモバイルSDKを示す図 &#x200B;](assets/datacollection.png)
 
 ## 主なメリット
 
 Target 拡張機能と比較したAdobe Journey Optimizer Offer Decisioningおよび Target 拡張機能のメリットには、次のようなものがあります。
 
 * [Real-Time Customer Data Platform](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/destinations/target/next-hit-personalization) からのオーディエンスの共有を高速化
-* [Offer Decisioning配信をサポートするための Target とJourney Optimizerの統合 ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/ajo/offer-decision)
+* [Offer Decisioning配信をサポートするための Target とJourney Optimizerの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/target/using/integrate/ajo/offer-decision)
 * Adobe Analyticsとの緊密な統合：個別のネットワーク呼び出しからの情報のステッチに依存しない
 * 開発者向けの実装の柔軟性の向上
 
@@ -58,8 +58,8 @@ Target 拡張機能から Target 拡張機能およびOffer Decisioning拡張機
 > * **Target SDK** は、**Adobe Target拡張機能を実装しています**
 > * **SDKの最適化** は、**Offer Decisioningおよび Target 拡張機能を実装します**
 
-次に、詳細な [Target 拡張機能とOffer Decisioningおよび Target 拡張機能の比較 ](comparison.md) を確認して、技術的な違いをより深く理解し、さらに注目が必要な領域を特定します。
+次に、詳細な [Target 拡張機能とOffer Decisioningおよび Target 拡張機能の比較 &#x200B;](comparison.md) を確認して、技術的な違いをより深く理解し、さらに注目が必要な領域を特定します。
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。
+>アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。

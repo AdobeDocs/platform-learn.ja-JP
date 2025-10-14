@@ -34,7 +34,7 @@ Offer Decisioningと Target の拡張機能は、モバイルアプリ用のAdob
 | 依存関係 | Mobile Core SDKにのみ依存 | Mobile Core とEdge Network SDKに依存 |
 | ライブラリ機能 | Adobe Targetからのコンテンツの取得のみをサポート | Adobe Targetおよび Offer Decisioning からのコンテンツ取得のサポート |
 | リクエスト | Target 呼び出しは、他のネットワーク呼び出しからほとんど独立しています | Target ネットワーク呼び出しは、Edge SDKでのメッセージングなどの他のEdge ベースのソリューションのネットワーク呼び出しと共にキューに入れられ、連続して実行されます。 |
-| Edge Network | Target サーバーの値またはAdobe Experience Cloud Edge Networkを、クライアントコード（clientcode.tt.omtrdc.net）と共に使用します。どちらも、データ収集 UI の [Target 設定 ](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) で指定されています | データ収集 UI のEdge [Edge Network configuration](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) で指定されたAdobe Experience Platform ネットワークドメインを使用します。 |
+| Edge Network | Target サーバーの値またはAdobe Experience Cloud Edge Networkを、クライアントコード（clientcode.tt.omtrdc.net）と共に使用します。どちらも、データ収集 UI の [Target 設定 &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) で指定されています | データ収集 UI のEdge [Edge Network configuration](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) で指定されたAdobe Experience Platform ネットワークドメインを使用します。 |
 | 基本用語 | mbox、TargetParameters | DecisionScope, Map （Android）/Dictionary （iOS） （Target パラメーター用） |
 | デフォルトコンテンツ | ネットワーク呼び出しが失敗した場合やエラーが発生した場合に返される、クライアントサイドのデフォルトコンテンツを TargetRequest で渡すことを許可します。 | クライアントサイドのデフォルトコンテンツを渡すことはできません。 ネットワーク呼び出しが失敗した場合やエラーが発生した場合に、コンテンツを返さない。 |
 | ターゲットパラメーター | リクエストごとにグローバル TargetParameters を渡し、mbox ごとに異なる TargetParameters を渡すことができます。 | リクエストごとにグローバル TargetParameters のみを渡すことができます |
@@ -85,9 +85,9 @@ Offer Decisioningと Target の拡張機能は、モバイルアプリ用のAdob
 
 次の図は、Offer Decisioningと Target 拡張機能を使用したデータフローを理解するのに役立ちます。
 
-![ クライアントサイドのモバイルSDKを使用したAdobe Target Edge Decisioning](assets/diagram.png)
+![&#x200B; クライアントサイドのモバイルSDKを使用したAdobe Target Edge Decisioning](assets/diagram.png)
 
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。
+>アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。

@@ -22,11 +22,11 @@ ht-degree: 0%
 
 このログインページが表示されます。  Bootcamp に登録しているプロのメールアドレスで、ユーザー名としてログインします。
 
-![Adobeログインページ ](./images/adobe-login.png)
+![Adobeログインページ &#x200B;](./images/adobe-login.png)
 
 ログインに成功すると、次のホームページが表示されます。
 
-![Workfront ホームページ ](./images/wf-homepage.png)
+![Workfront ホームページ &#x200B;](./images/wf-homepage.png)
 
 ## 使用するWorkfrontの準備
 
@@ -34,43 +34,43 @@ ht-degree: 0%
 
 まず、チームのワークロードページを表示します。  右上のワッフルをクリックして、「チーム」を選択します
 
-![ チーム メニュー ](./images/wf-teams.png)
+![&#x200B; チーム メニュー &#x200B;](./images/wf-teams.png)
 
 チーム（マーケティング/デジタル）が画面に表示されたら、上部のリボンに「ピン留め」します。
 
-![ ページを固定 ](./images/wf-pin.png)
+![&#x200B; ページを固定 &#x200B;](./images/wf-pin.png)
 
 上部のリボンは次のようになります。
 
-![ 上部リボン ](./images/wf-top-ribbon.png)
+![&#x200B; 上部リボン &#x200B;](./images/wf-top-ribbon.png)
 
 次に、後で詳しく分析するプロジェクトをピン留めしましょう。  プロジェクトのピン留めページをクリックし、検索ボタンをクリックします。  「モバイルアプリ認識キャンペーン」と入力し、プロジェクト名をクリックします。
 
-![ モバイルアプリ認識 ](./images/wf-app-awareness.png)
+![&#x200B; モバイルアプリ認識 &#x200B;](./images/wf-app-awareness.png)
 
 プロジェクトが画面に表示されたら、以前と同様にトップリボンにピン留めします。
 
-![ もう一度ページをピン留め ](./images/wf-pin-2.png)
+![&#x200B; もう一度ページをピン留め &#x200B;](./images/wf-pin-2.png)
 
 上部のリボンは次のようになります。
 
-![ 更新された上部のリボン ](./images/wf-ribbon-2.png)
+![&#x200B; 更新された上部のリボン &#x200B;](./images/wf-ribbon-2.png)
 
 最後に、右上のワッフルをもう一度クリックして、「PORTFOLIO」を選択します。
 
-![ ポートフォリオ ](./images/wf-portfolios.png)
+![&#x200B; ポートフォリオ &#x200B;](./images/wf-portfolios.png)
 
 検索ボタンをクリックして「TRANSFORM」と入力します。  「カスタマーエクスペリエンスを変革」Portfolioをクリックして開きます。
 
-![ カスタマーエクスペリエンスの変換 ](./images/wf-transform-cx.png)
+![&#x200B; カスタマーエクスペリエンスの変換 &#x200B;](./images/wf-transform-cx.png)
 
 Portfolioを開いたら、上部のリボンにピン留めします。
 
-![ ポートフォリオの固定 ](./images/wf-portfolio-pin.png)
+![&#x200B; ポートフォリオの固定 &#x200B;](./images/wf-portfolio-pin.png)
 
 上部のリボンは次のようになります。
 
-![ 最終上部リボン ](./images/wf-final-top-ribbon.png)
+![&#x200B; 最終上部リボン &#x200B;](./images/wf-final-top-ribbon.png)
 
 これで、定期的に必要なものを正確に示すインターフェイスでワークフローを開始する準備が整いました。
 
@@ -80,41 +80,41 @@ Portfolioを開いたら、上部のリボンにピン留めします。
 
 - 左上の「リクエスト」をクリックします。
 
-![Workfront リクエスト ](./images/wf-homepage-requests.png)
+![Workfront リクエスト &#x200B;](./images/wf-homepage-requests.png)
 
 - 次に、「新しいリクエスト」をクリックします。
 
-![ 新しいリクエスト ](./images/wf-new-request.png)
+![&#x200B; 新しいリクエスト &#x200B;](./images/wf-new-request.png)
 
 - リクエストタイプとして、「マーケティングリクエスト」、「CSB - キャンペーンリクエスト」の順に選択します。
 
-![CSB リクエスト ](./images/wf-csb-request.png)
+![CSB リクエスト &#x200B;](./images/wf-csb-request.png)
 
 - 件名：「Adobike Campaign - \*team\*」（チーム番号を入力）を入力します。 説明や優先度を自由に追加できます。
 
-![ リクエストの詳細 ](./images//wf-request-details.png)
+![&#x200B; リクエストの詳細 &#x200B;](./images//wf-request-details.png)
 
 - 「CSB - マーケティングキャンペーン概要」ヘッダーの下はすべて完全にカスタマイズ可能です。 この場合、これらはすべてカスタムフィールドであり、独自のマーケティング概要のニーズに適応させることができます。 この Bootcamp 用に作成した簡単なフィールドを次に示します。
 
-![Workfrontのカスタムフィールド ](./images//wf-custom-fields.png)
+![Workfrontのカスタムフィールド &#x200B;](./images//wf-custom-fields.png)
 
 - 概要を入力してみましょう。
 
    - 開始日を 2023/01/06 に設定 – 終了日を 2023/30/06 に設定します。
 
-  ![ 開始日と終了日を設定 ](./images/wf-start-end-date.png)
+  ![&#x200B; 開始日と終了日を設定 &#x200B;](./images/wf-start-end-date.png)
 
    - AEM Assetsを選択します。このキャンペーンで使用できるアセットがそこにあるからです。
 
-  ![AEM Assetsの既存のコンテンツ ](./images/wf-aem-assets.png)
+  ![AEM Assetsの既存のコンテンツ &#x200B;](./images/wf-aem-assets.png)
 
    - 「新しいコンテンツ」で、「はい」をクリックすると、追加の（条件付き）フィールドが表示され、タイムラインに次の警告が表示されます。
 
-  ![ 新しいコンテンツに警告が表示される ](./images/wf-new-content.png)
+  ![&#x200B; 新しいコンテンツに警告が表示される &#x200B;](./images/wf-new-content.png)
 
    - 締め切りに間に合わないので、選択を「NO」に変更しよう。
 
-  ![ 新しいコンテンツはありません ](./images/wf-no-new-content.png)
+  ![&#x200B; 新しいコンテンツはありません &#x200B;](./images/wf-no-new-content.png)
 
    - チャネルでは、デフォルトで一部を事前選択することを選択しました。 これらは次の手順で必要になるものです。ここでは変更は不要です。
 
@@ -122,17 +122,17 @@ Portfolioを開いたら、上部のリボンにピン留めします。
 
    - Adobe Commerceで「はい」を選択します。
 
-  ![Commerceを選択 ](./images/wf-commerce.png)
+  ![Commerceを選択 &#x200B;](./images/wf-commerce.png)
 
 - 最後に、「ドキュメント」セクションで、リクエストに関連するドキュメントを追加できます。  ここでは、AEM コネクタを利用して、AEM Assets インスタンスから既存のコンテンツを取得する方法を示します。
 
    - 「ファイルを追加またはリンク」をクリックし、「experience-manager」から「リンク」を選択します。
 
-  ![ リンクを追加 ](./images/wf-add-links.png)
+  ![&#x200B; リンクを追加 &#x200B;](./images/wf-add-links.png)
 
    - これでAEM Assets フォルダーが表示され、それらを参照して（または検索エンジンを使用して）、リクエストに必要なドキュメントやアセットを取得できます。
 
-  ![ フォルダーを選択 ](./images/wf-linked-folders.png)
+  ![&#x200B; フォルダーを選択 &#x200B;](./images/wf-linked-folders.png)
 
    - このプロジェクトに関係があると思われるアイテムがあれば、AEM Assetsから自由に添付してください。 完了したら、「リンク」をクリックしてアセットにリンクするか、フォルダーをリンクしていない場合は「閉じる」をクリックします。
 
@@ -140,7 +140,7 @@ Portfolioを開いたら、上部のリボンにピン留めします。
 
 - リクエストが完了し、送信する準備が整いました。
 
-![ 要求の送信 ](./images/wf-submit-request.png)
+![&#x200B; 要求の送信 &#x200B;](./images/wf-submit-request.png)
 
 
 ## プロジェクト管理者
@@ -149,80 +149,80 @@ Portfolioを開いたら、上部のリボンにピン留めします。
 
 - 「Adobe」ロゴをクリックすると、「新しいマーケティングリクエスト」ページ（これは一般的な「プロジェクト管理者」ホームページ）に移動します。
 
-![Adobeのロゴをクリック ](./images/wf-click-adobe-logo.png)
+![Adobeのロゴをクリック &#x200B;](./images/wf-click-adobe-logo.png)
 
 - 「マーケティング – 新しいキャンペーンリクエスト」セクションで、新しく作成したリクエストを見つけることができます。
 
-![ 新しく作成されたリクエスト ](./images/wf-newly-created-request.png)
+![&#x200B; 新しく作成されたリクエスト &#x200B;](./images/wf-newly-created-request.png)
 
 - リクエスト名をクリックします。
 
-![ リクエスト名 ](./images/wf-request-name.png)
+![&#x200B; リクエスト名 &#x200B;](./images/wf-request-name.png)
 
 - 「リクエストの詳細」をクリックします。
 
-![ リクエストの詳細 ](./images/wf-request-details2.png)
+![&#x200B; リクエストの詳細 &#x200B;](./images/wf-request-details2.png)
 
 - 「CSB - マーケティングキャンペーン概要」セクションまでスクロールして、展開します。
 
-![ 展開された CSB セクション ](./images/wf-csb-expand.png)
+![&#x200B; 展開された CSB セクション &#x200B;](./images/wf-csb-expand.png)
 
 - 要求者の概要のすべての詳細を表示し、この情報を使用して、テンプレートに基づくプロジェクト計画を開始できます。
    - 上部のリクエスト名の横にある 3 つのドットをクリックします。
 
-  ![3 つのドットをクリック ](./images/wf-request-threedots.png)
+  ![3 つのドットをクリック &#x200B;](./images/wf-request-threedots.png)
 
    - 「テンプレートからプロジェクトに変換」をクリックします。
 
-  ![ プロジェクトに変換 ](./images/wf-convert-to-project.png)
+  ![&#x200B; プロジェクトに変換 &#x200B;](./images/wf-convert-to-project.png)
 
    - 「CSB - マーケティングキャンペーン」を選択し、「テンプレートを使用」をクリックします。
 
-  ![ テンプレートを使用 ](./images/wf-use-template.png)
+  ![&#x200B; テンプレートを使用 &#x200B;](./images/wf-use-template.png)
 
    - ページ下部の「プロジェクトに変換」をクリックします。
 
-  ![ プロジェクトに変換 ](./images/wf-convert-to-project.png)
+  ![&#x200B; プロジェクトに変換 &#x200B;](./images/wf-convert-to-project.png)
 
 - これで、テンプレートに基づいた Campaign プロジェクトのワークフローが作成されました。 後でプロジェクトをピン留めしましょう。 「現在のページをピン留め」をクリックします。
 
-![ ページを固定 ](./images/wf-pin-page.png)
+![&#x200B; ページを固定 &#x200B;](./images/wf-pin-page.png)
 
 - 次の点に注意してください。
 
-![ 留意事項 ](./images/wf-areas-of-attention.png)
+![&#x200B; 留意事項 &#x200B;](./images/wf-areas-of-attention.png)
 
 1. 期間の概念 – タスクを完了する機会のウィンドウです。\
    予定時間数の概念 – タスクを完了するために必要な実際の時間です。
 
 1. 先行タスクの概念（依存関係） – これらは、タスクが相互に持つことのできる制約です（通常、このタスクは、このタスクの完了前に開始することはできません）。 これにより、各プロジェクトのクリティカルパスを示す明確なガント チャートを作成できます。 下のアイコンをクリックして、Gant グラフを表示します。
-   ![ 切れ目グラフ ](./images/wf-gant-chart.png)
+   ![&#x200B; 切れ目グラフ &#x200B;](./images/wf-gant-chart.png)
 
 1. 割り当ての概念 – プロジェクトが作成された時点では、割り当てはテンプレートから派生しているので、依然として一般主義的です。 担当業務は、ハンマーアイコン（この特定のタスクを完了するスキルを持つユーザーのグループ）で表されるか、チーム（ユーザーの会社グループが定義）で表されます。 今こそ、これらのタスクを個人に割り当てる瞬間です。
 
 - 今日は、チームの事前割り当てと、それらを個人に割り当てる方法に専念します。
 
 - ご覧のように、タスク 11 「ソーシャルメディア広告の作成」は「マーケティング – デジタル」チームに割り当てられています。
-  ![ タスクの割当て ](./images/wf-social-media.png)
+  ![&#x200B; タスクの割当て &#x200B;](./images/wf-social-media.png)
 
 - これがチームの計画にどのように反映されるかを、リソース管理ページを開いて確認します。 ページ上部の「マーケティング – デジタル」 PIN をクリックします。
-  ![ マーケティングデジタルピン ](./images/wf-marketing-digital.png)
+  ![&#x200B; マーケティングデジタルピン &#x200B;](./images/wf-marketing-digital.png)
 
 - これで、次のチーム計画表示が得られました。
 
-![ チーム計画表示 ](./images/wf-teams-planning-view.png)
+![&#x200B; チーム計画表示 &#x200B;](./images/wf-teams-planning-view.png)
 
 1. 一番上の部分は、その特定のチームの未割り当て作業をカバーしています。 チームが割り当てられているプロジェクトのリストが表示され、ここの矢印をクリックすると、プロジェクトでカバーする必要がある正確なタスクが表示されます。
-   ![ 未割り当て作業 ](./images/wf-unassigned.png)
+   ![&#x200B; 未割り当て作業 &#x200B;](./images/wf-unassigned.png)
 
 1. 下部には、チーム内の個人に割り当てられた作業が表示されますが、実際には、チームの各メンバーの実際のワークロードだけでなく、スケジュール（月 – 金または月 – 土）、休日なども表示されます。
-   ![ 割り当てられた作業 ](./images/wf-assigned.png)
+   ![&#x200B; 割り当てられた作業 &#x200B;](./images/wf-assigned.png)
 
 - タスクを個人に割り当てるには、上部のタスクを下部の個人の行にドラッグするだけです。Bea のワークロードが調整され、タスク割り当ての詳細が追加された方法を確認します。
-  ![ 個別割り当て作業 ](./images/wf-individually-assigned.png)
+  ![&#x200B; 個別割り当て作業 &#x200B;](./images/wf-individually-assigned.png)
 
 
-次の手順：[ フェーズ 1 – 計画：その他の事前作業 ](./prework.md)
+次の手順：[&#x200B; フェーズ 1 – 計画：その他の事前作業 &#x200B;](./prework.md)
 
 [クリエイティブブリーフに戻る](../../creative-brief.md)
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Real-Time CDP Collaborationの権限の設定
 
-Real-Time CDP Collaborationへのアクセスと使用に必要な権限の設定方法を説明します。 詳細なドキュメントについては、[ アクセス制御の概要 ](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"} を参照してください。
+Real-Time CDP Collaborationへのアクセスと使用に必要な権限の設定方法を説明します。 詳細なドキュメントについては、[&#x200B; アクセス制御の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"} を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452231/?learn=on&enablevpops&captions=jpn)
 

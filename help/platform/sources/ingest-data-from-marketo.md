@@ -35,5 +35,5 @@ ht-degree: 18%
 >[!VIDEO](https://video.tv.adobe.com/v/3452902?learn=on&enablevpops&captions=jpn)
 
 詳しくは、次のドキュメントを参照してください。
-* [Marketo Engage ソースコネクタのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=ja)。
-* [UI のテンプレートを使用したソースデータフローの作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=ja#)
+* [Marketo Engage ソースコネクタのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=ja)。
+* [UI のテンプレートを使用したソースデータフローの作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=ja#)

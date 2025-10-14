@@ -15,7 +15,7 @@ ht-degree: 19%
 
 # イベント転送拡張機能の追加
 
-データ収集にイベント転送拡張機能を追加する方法を説明します。 詳しくは、[ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
+データ収集にイベント転送拡張機能を追加する方法を説明します。 詳しくは、[&#x200B; イベント転送ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

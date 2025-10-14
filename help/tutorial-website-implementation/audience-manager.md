@@ -36,7 +36,7 @@ ht-degree: 73%
 
 このレッスンを完了するには、次が必要です。
 
-1. [ タグの設定 ](create-a-property.md)、[Adobe Analyticsの追加 ](analytics.md)、[ID サービスの追加 ](id-service.md) のレッスンを完了するには、
+1. [&#x200B; タグの設定 &#x200B;](create-a-property.md)、[Adobe Analyticsの追加 &#x200B;](analytics.md)、[ID サービスの追加 &#x200B;](id-service.md) のレッスンを完了するには、
 
 1. このチュートリアルで使用するレポートスイートのサーバーサイド転送を有効化するための、Adobe Analytics への管理者アクセス。または、以下の手順に従って、組織の既存の管理に依頼することもできます。
 
@@ -111,7 +111,7 @@ Adobe Analytics から Adobe Audience Manager へのデータの転送を開始�
 
 1. **[!UICONTROL 拡張機能/インストール済み]** に移動し、をクリックして Analytics 拡張機能を設定します。
 
-   ![ Analytics 拡張機能の設定](images/aam-configAnalyticsExtension.png)
+   ![&#x200B; Analytics 拡張機能の設定](images/aam-configAnalyticsExtension.png)
 
 1. 「`Adobe Audience Manager`」セクションを展開します。
 

@@ -209,7 +209,7 @@ AWS S3 に書き出すプロファイル属性を選択できるようになり�
 
 ![RTCDP](./images/s3j.png)
 
-次の手順：[2.3.5 アクションを実行する：オーディエンスをAdobe Targetに送信します ](./ex5.md)
+次の手順：[2.3.5 アクションを実行する：オーディエンスをAdobe Targetに送信します &#x200B;](./ex5.md)
 
 [モジュール 2.3 に戻る](./real-time-cdp-build-a-segment-take-action.md)
 

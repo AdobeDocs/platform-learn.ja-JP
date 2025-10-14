@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # スキーマ構築ブロック
 
-このビデオでは、フィールド、データタイプ、スキーマフィールドグループ、クラス、動作など、エクスペリエンスデータモデル（XDM）スキーマの主要な構築ブロック要素について説明します。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
+このビデオでは、フィールド、データタイプ、スキーマフィールドグループ、クラス、動作など、エクスペリエンスデータモデル（XDM）スキーマの主要な構築ブロック要素について説明します。 詳しくは、[&#x200B; スキーマドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413660?learn=on&enablevpops&captions=jpn)

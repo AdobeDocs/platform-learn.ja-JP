@@ -16,6 +16,6 @@ ht-degree: 16%
 
 # スキーマと Experience Data Model （XDM）の概要
 
-エクスペリエンスデータモデル（XDM）は、カスタマーエクスペリエンス（顧客体験）を記述するための標準データモデルです。 XDM を使用してスキーマを作成し、これらのスキーマに従ったデータを取り込むと、XDM システムの使用を開始できます。 XDM システムは、Adobe Experience Platformでリアルタイム顧客プロファイル、機械学習、Customer Journey Analyticsをサポートするインフラストラクチャです。 詳しくは、[ スキーマドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
+エクスペリエンスデータモデル（XDM）は、カスタマーエクスペリエンス（顧客体験）を記述するための標準データモデルです。 XDM を使用してスキーマを作成し、これらのスキーマに従ったデータを取り込むと、XDM システムの使用を開始できます。 XDM システムは、Adobe Experience Platformでリアルタイム顧客プロファイル、機械学習、Customer Journey Analyticsをサポートするインフラストラクチャです。 詳しくは、[&#x200B; スキーマドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/38507?learn=on&enablevpops&captions=jpn)

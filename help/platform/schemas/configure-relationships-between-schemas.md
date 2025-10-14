@@ -16,7 +16,7 @@ ht-degree: 15%
 
 # スキーマ間の関係の設定
 
-このビデオでは、Adobe Experience Platformで 2 つのスキーマ間の関係を設定する方法を説明します。 関係を使用すると、あるデータセットを別のデータセットのルックアップテーブルとして使用できます。 製品ドキュメントについて詳しくは、[ スキーマエディターを使用した 2 つのスキーマ間の関係の定義 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=ja) および [ スキーマレジストリ API を使用した 2 つのスキーマ間の関係の定義 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html?lang=ja) を参照してください。
+このビデオでは、Adobe Experience Platformで 2 つのスキーマ間の関係を設定する方法を説明します。 関係を使用すると、あるデータセットを別のデータセットのルックアップテーブルとして使用できます。 製品ドキュメントについて詳しくは、[&#x200B; スキーマエディターを使用した 2 つのスキーマ間の関係の定義 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=ja) および [&#x200B; スキーマレジストリ API を使用した 2 つのスキーマ間の関係の定義 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413653?learn=on&enablevpops&captions=jpn)
 

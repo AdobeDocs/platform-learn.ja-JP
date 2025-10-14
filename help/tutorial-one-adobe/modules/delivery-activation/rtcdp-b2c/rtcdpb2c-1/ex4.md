@@ -120,8 +120,8 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 
 ## 次の手順
 
-[2.1.5 に移動します。コールセンターでのリアルタイム顧客プロファイルの動作を確認してください ](./ex5.md){target="_blank"}
+[2.1.5 に移動します。コールセンターでのリアルタイム顧客プロファイルの動作を確認してください &#x200B;](./ex5.md){target="_blank"}
 
-[ リアルタイム顧客プロファイル ](./real-time-customer-profile.md){target="_blank"} に戻る
+[&#x200B; リアルタイム顧客プロファイル &#x200B;](./real-time-customer-profile.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

@@ -120,7 +120,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/msg12.png)
 
-**HTMLを読み込み** を選択した場合、ファイル **mailtemplatebootcamp.html** をドラッグ&amp;ドロップして、[ こちら ](../../assets/html/mailtemplatebootcamp.html.zip) からダウンロードできます。 「インポート」をクリックします。
+**HTMLを読み込み** を選択した場合、ファイル **mailtemplatebootcamp.html** をドラッグ&amp;ドロップして、[&#x200B; こちら &#x200B;](../../assets/html/mailtemplatebootcamp.html.zip) からダウンロードできます。 「インポート」をクリックします。
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -182,7 +182,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 これで、この演習が完了しました。
 
-次の手順：[2.4 ジャーニーのテスト ](./ex4.md)
+次の手順：[2.4 ジャーニーのテスト &#x200B;](./ex4.md)
 
 [ユーザーフロー 2 に戻る](./uc2.md)
 

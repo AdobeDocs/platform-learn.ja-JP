@@ -16,7 +16,7 @@ ht-degree: 13%
 
 # リアルタイム顧客プロファイルの概要
 
-このビデオでは、Adobe Experience Platformがリアルタイム顧客プロファイルを構築および更新する方法と、それらのプロファイルにアクセスして使用する方法について説明します。 詳しくは、[ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) を参照してください。
+このビデオでは、Adobe Experience Platformがリアルタイム顧客プロファイルを構築および更新する方法と、それらのプロファイルにアクセスして使用する方法について説明します。 詳しくは、[&#x200B; リアルタイム顧客プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31660?learn=on&enablevpops&captions=jpn)
 

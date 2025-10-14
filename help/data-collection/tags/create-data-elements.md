@@ -16,6 +16,6 @@ ht-degree: 39%
 
 # データ要素の作成
 
-データ要素を作成して、データレイヤーから取り込まれた値を保存し、タグプロパティのルールや拡張機能で使用できるようにする方法を説明します。 詳しくは、[ データ要素 ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja) ドキュメントを参照してください。
+データ要素を作成して、データレイヤーから取り込まれた値を保存し、タグプロパティのルールや拡張機能で使用できるようにする方法を説明します。 詳しくは、[&#x200B; データ要素 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja) ドキュメントを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430470/?learn=on&enablevpops&captions=jpn)

@@ -20,7 +20,7 @@ Platform Web SDKを使用してAdobe Journey Optimizerの意思決定管理機�
 このチュートリアルに従うと、Journey Optimizer ユーザーは意思決定管理機能を使用できるようになり、顧客とのやり取りのパーソナライズ機能と関連性が高まります。
 
 
-![Web SDKとAdobe Analyticsの図 ](assets/dc-websdk-ajo.png)
+![Web SDKとAdobe Analyticsの図 &#x200B;](assets/dc-websdk-ajo.png)
 
 ## 学習内容
 
@@ -56,7 +56,7 @@ Platform Web SDKを使用してAdobe Journey Optimizerの意思決定管理機�
 
 ## 意思決定管理へのアクセスの許可
 
-意思決定管理機能へのアクセス権を付与するには、**製品プロファイル** を作成し、対応する権限をユーザーに割り当てる必要があります。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)。
+意思決定管理機能へのアクセス権を付与するには、**製品プロファイル** を作成し、対応する権限をユーザーに割り当てる必要があります。 [Journey Optimizer ユーザーと権限の管理について詳しくは、この節を参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)。
 
 ## データストリームの設定
 
@@ -64,21 +64,21 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
 データストリームでOffer Decisioningを設定するには：
 
-1. [ データ収集 ](https://experience.adobe.com/#/data-collection) インターフェイスに移動します。
+1. [&#x200B; データ収集 &#x200B;](https://experience.adobe.com/#/data-collection) インターフェイスに移動します。
 
 1. 左側のナビゲーションで「**データストリーム**」を選択します。
 
 1. 以前に作成した Luma Web SDK データストリームを選択します。
 
-   ![ データストリームを選択 ](assets/decisioning-datastream-select.png)
+   ![&#x200B; データストリームを選択 &#x200B;](assets/decisioning-datastream-select.png)
 
 1. **2&rbrace;Adobe Experience Platform サービス** 内の「編集 **を選択します。**
 
-   ![ サービスを編集 ](assets/decisioning-edit-datastream.png)
+   ![&#x200B; サービスを編集 &#x200B;](assets/decisioning-edit-datastream.png)
 
 1. 「**Offer Decisioning**」ボックスをオンにします。
 
-   ![ スクリーンショットを追加 ](assets/decisioning-check-offer-box.png)
+   ![&#x200B; スクリーンショットを追加 &#x200B;](assets/decisioning-check-offer-box.png)
 
 1. 「**保存**」を選択します。
 
@@ -106,7 +106,7 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
    1. 左側のナビゲーションで「**タグ**」を選択します。
 
-      ![ タグを選択 ](assets/decisioning-data-collection-tags.png)
+      ![&#x200B; タグを選択 &#x200B;](assets/decisioning-data-collection-tags.png)
 
    1. **タグプロパティ** を選択します。
 
@@ -155,13 +155,13 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
 プレースメントのリストには&#x200B;**コンポーネント**&#x200B;メニューからアクセスできます。フィルターは、特定のチャネルやコンテンツに従ってプレースメントを取得するのに役立ちます。
 
-![ プレースメントを表示 ](assets/decisioning-placements-list.png)
+![&#x200B; プレースメントを表示 &#x200B;](assets/decisioning-placements-list.png)
 
 プレースメントを作成するには、次の手順に従います。
 
 1. 「**プレースメントを作成**」をクリックします。
 
-   ![ プレースメントを作成 ](assets/decisioning-create-placement.png)
+   ![&#x200B; プレースメントを作成 &#x200B;](assets/decisioning-create-placement.png)
 
 1. プレースメントのプロパティを定義します。
    * **名前**：プレースメントの名前。例のプレースメントを「ホームペ *ジのバナー」と呼びま* ょう。
@@ -169,13 +169,13 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
    * **コンテンツタイプ**：プレースメントに表示できるコンテンツのタイプ（テキスト、HTML、画像リンク、JSON のいずれか）。 オファーには *HTML」* 使用できます。
    * **説明**：プレースメントの説明（オプション）。
 
-   ![ 詳細を追加 ](assets/decisioning-placement-details.png)
+   ![&#x200B; 詳細を追加 &#x200B;](assets/decisioning-placement-details.png)
 
 1. 「**保存**」をクリックします。
 1. プレースメントが作成されると、プレースメント リストに表示されます。
 1. 新しいプレースメントを含む行を選択し、プレースメント ID をメモします。これは、決定範囲内での設定に必要になる場合があります。
 
-   ![ プレースメント ID の ](assets/decisioning-placement-id.png) を参照
+   ![&#x200B; プレースメント ID の &#x200B;](assets/decisioning-placement-id.png) を参照
 
 ### ロイヤルティステータスの決定ルール
 
@@ -187,16 +187,16 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
 1. 「**ルール**」タブに移動し、「**ルールを作成**」をクリックします。
 
-   ![ ルールの作成 ](assets/decisioning-create-rule.png)
+   ![&#x200B; ルールの作成 &#x200B;](assets/decisioning-create-rule.png)
 
 1. 最初のルールに「*ゴールドロイヤルティステータスルール*」という名前を付けましょう。 XDM フィールドを使用してルールを定義できます。 Adobe Experience Platform **セグメントビルダー** は、ルール条件の作成に使用できる直感的なインターフェイスです。
 
-   ![ ルールの定義 ](assets/decisioning-define-rule.png)
+   ![&#x200B; ルールの定義 &#x200B;](assets/decisioning-define-rule.png)
 
 1. 「**保存**」をクリックして、ルール条件を確定します。
 1. 新しく保存した「*ゴールドロイヤルティステータスルール*」が **ルールリスト** に表示されます。 選択すると、プロパティが表示されます。
 
-   ![ 作成されたルールを表示 ](assets/decisioning-view-rules.png)
+   ![&#x200B; 作成されたルールを表示 &#x200B;](assets/decisioning-view-rules.png)
 
 1. 次に、ユースケースに残りのロイヤルティオファールール条件を作成します。
 
@@ -211,11 +211,11 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
 1. 「**コレクション修飾子**」タブに移動し、「**コレクション修飾子を作成**」をクリックします。
 
-   ![ コレクション修飾子を作成 ](assets/decisioning-create-collection-qualifier.png)
+   ![&#x200B; コレクション修飾子を作成 &#x200B;](assets/decisioning-create-collection-qualifier.png)
 
 1. コレクション修飾子に「*ロイヤルティ報酬*」という名前を付けましょう
 
-   ![ コレクションに名前を付ける ](assets/decisioning-name-collection.png)
+   ![&#x200B; コレクションに名前を付ける &#x200B;](assets/decisioning-name-collection.png)
 
 1. 新しいコレクション修飾子が「**コレクション修飾子** タブに表示されます
 
@@ -225,7 +225,7 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
 オファーのリストには、「**オファー** メニューでアクセスできます。
 
-![ オファーを表示メニュー ](assets/decisioning-offers-menu.png)
+![&#x200B; オファーを表示メニュー &#x200B;](assets/decisioning-offers-menu.png)
 
 
 ### 様々なロイヤルティ層用のオファーの作成
@@ -238,23 +238,23 @@ Platform Web SDKで意思決定管理アクティビティを配信するには�
 
 1. 最初のオファーに「*Luma ロイヤルティ層 – ゴールド*」という名前を付けましょう。 このオファーの開始日時/終了日時を指定する必要があります。 また、**コレクション修飾子** 「*ロイヤルティ報酬*」をオファーに関連付けて、**オファーライブラリ** 内をより適切に整理できるようにする必要があります。 その後、「**次へ**」をクリックします。
 
-   ![ オファーの詳細を追加 ](assets/decisioning-add-offer-details.png)
+   ![&#x200B; オファーの詳細を追加 &#x200B;](assets/decisioning-add-offer-details.png)
 
 1. 次に、**表示域** を追加して、オファーの表示場所を定義する必要があります。 **web チャネル** を選択します。 また、以前に設定した「*ホームページバナー*」 **プレースメント** を選択します。 選択した **プレースメント** はHTMLタイプなので、HTML、JSON、TEXT のいずれかのコンテンツをエディターに直接追加し、「**カスタム**」ラジオボタンを使用してオファーを作成できます。
 
-   ![ 表示域の詳細を追加 ](assets/decisioning-add-representation-details.png)
+   ![&#x200B; 表示域の詳細を追加 &#x200B;](assets/decisioning-add-representation-details.png)
 
 1. オファーコンテンツを **式エディター** で直接編集します。 このプレースメントには、HTML、JSON または TEXT コンテンツを追加できます。 エディターの下部で、コンテンツタイプに応じて正しい **モード** を選択してください。 また、**validate** をクリックして、エラーがないことを確認することもできます。
 
-   ![ オファーのHTMLを追加 ](assets/decisioning-add-offer-html.png)
+   ![&#x200B; オファーのHTMLを追加 &#x200B;](assets/decisioning-add-offer-html.png)
 
 1. また、式エディターを使用して、Adobe Experience Platformに保存されている属性を取得することもできます。 :11 レベルのロイヤルティメンバー向けにパーソナライズするために、オファーコンテンツにプロファイルの名を追加しましょう。
 
-   ![ オファーのパーソナライゼーションの追加 ](assets/decisioning-add-offer-personalization.png)
+   ![&#x200B; オファーのパーソナライゼーションの追加 &#x200B;](assets/decisioning-add-offer-personalization.png)
 
 1. 制約を追加して、「*ゴールドのロイヤルティステータスルール*」に適合するプロファイルにのみオファーを表示します。
 
-   ![ ルール制約の追加 ](assets/decisioning-add-rule-constraint.png)
+   ![&#x200B; ルール制約の追加 &#x200B;](assets/decisioning-add-rule-constraint.png)
 
 1. オファーのレビューが完了したら、「**終了**」をクリックします。 「**保存して承認**」を選択します。
 
@@ -339,7 +339,7 @@ Luma ロイヤルティ報酬のユースケースの決定を作成しましょ
 
 ### ロイヤルティオファーのテスト
 
-1. シミュレーションに使用するテストプロファイルを選択します。 **プロファイルを管理** をクリックします。 [ オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください ](https://experienceleague.adobe.com/ja/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
+1. シミュレーションに使用するテストプロファイルを選択します。 **プロファイルを管理** をクリックします。 [&#x200B; オファーテスト用の新しいテストプロファイルを作成または指定するには、このガイドに従ってください &#x200B;](https://experienceleague.adobe.com/ja/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Chromeと Firefox の両方で利用できる **Adobe Experience Platform Debugg
 
 Luma サイトでデバッガーを使用して、実稼動環境で意思決定ロジックを検証できます。 この検証は、ロイヤルティ報酬のユースケースを立ち上げて実行し、すべてが正しく設定されていることを確認した後のベストプラクティスです。
 
-[ こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview)。
+[&#x200B; こちらのガイドを使用して、ブラウザーでデバッガーを設定する方法を説明します &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview)。
 
 デバッガーを使用して検証を開始するには：
 
@@ -402,4 +402,4 @@ Luma サイトでデバッガーを使用して、実稼動環境で意思決定
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ja)

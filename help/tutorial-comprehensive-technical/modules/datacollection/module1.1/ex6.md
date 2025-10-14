@@ -21,17 +21,17 @@ Web SDKで収集したデータをAdobe Targetに送信し、すべてのお客�
 
 画面の右上隅にあるサンドボックス名を選択します（`--aepSandboxName--` にする必要があります）。 特定のデータストリーム（`--aepUserLdap-- - Demo System Datastream` という名前）を開きます。
 
-![ 左側のナビゲーションで「Edge設定」アイコンをクリック ](./images/edgeconfig1b.png)
+![&#x200B; 左側のナビゲーションで「Edge設定」アイコンをクリック &#x200B;](./images/edgeconfig1b.png)
 
 その後、これが表示されます。 Adobe Targetを有効にするには、「**サービスを追加**」をクリックします。
 
-![AEP デバッガー ](./images/aa2.png)
+![AEP デバッガー &#x200B;](./images/aa2.png)
 
 その後、これが表示されます。 サービス **Adobe Target** を選択します。オプションで、追加情報を指定できます。 「**保存**」をクリックします。
 
-![AEP デバッガー ](./images/at1.png)
+![AEP デバッガー &#x200B;](./images/at1.png)
 
-次の手順：Adobe Experience Platformにおける [1.1.7 XDM スキーマの要件 ](./ex7.md)
+次の手順：Adobe Experience Platformにおける [1.1.7 XDM スキーマの要件 &#x200B;](./ex7.md)
 
 [モジュール 1.1 に戻る](./data-ingestion-launch-web-sdk.md)
 

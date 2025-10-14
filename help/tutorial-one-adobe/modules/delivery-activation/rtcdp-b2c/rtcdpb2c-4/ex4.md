@@ -68,8 +68,8 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ## 次の手順
 
-[2.4.5 オーディエンスのアクティブ化 ](./ex5.md){target="_blank"} に移動します。
+[2.4.5 オーディエンスのアクティブ化 &#x200B;](./ex5.md){target="_blank"} に移動します。
 
-[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

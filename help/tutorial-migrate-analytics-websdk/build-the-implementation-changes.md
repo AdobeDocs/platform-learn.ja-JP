@@ -32,15 +32,15 @@ ht-degree: 0%
 1. **開発** 環境を選択します。
 1. **変更したすべてのリソースを追加** を選択して、作業中のすべての項目を追加します。
 
-   ![ 新しいライブラリ ](assets/new-library-websdk-migration.jpg)
+   ![&#x200B; 新しいライブラリ &#x200B;](assets/new-library-websdk-migration.jpg)
 
 1. 開発用に保存してビルド
 
-   ![ 開発への保存とビルド ](assets/save-and-build-to-dev.jpg)
+   ![&#x200B; 開発への保存とビルド &#x200B;](assets/save-and-build-to-dev.jpg)
 
 1. ビルドが完了すると、ビルドが成功したかどうかを確認できます。 公開フローの新しいライブラリの左側にある緑の点にマウスポインターを合わせます。実際に、緑の場合は正常に終了し、その旨が表示されます。
 
-   ![ 公開の成功 ](assets/successful-publish.jpg)
+   ![&#x200B; 公開の成功 &#x200B;](assets/successful-publish.jpg)
 
 ### 作業ライブラリを選択
 
@@ -48,5 +48,5 @@ ht-degree: 0%
 
 1. タグ UI の大部分から、UI の右上から「作業ライブラリを選択」をクリックし、必要なライブラリを選択します。 このチュートリアルでは、「初期 Web SDK移行」を選択します。
 
-   ![ 作業ライブラリを選択 ](assets/select-working-library.jpg)
+   ![&#x200B; 作業ライブラリを選択 &#x200B;](assets/select-working-library.jpg)
 

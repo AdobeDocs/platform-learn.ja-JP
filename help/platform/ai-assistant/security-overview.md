@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AI アシスタントのセキュリティの概要
 
-<a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf"> セキュリティファクトシート </a> に基づいた、AI アシスタントのセキュリティ機能の概要です。  詳しくは、[AI アシスタントのプライバシーに関するドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/privacy) を参照してください。
+<a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf"> セキュリティファクトシート </a> に基づいた、AI アシスタントのセキュリティ機能の概要です。  詳しくは、[AI アシスタントのプライバシーに関するドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/privacy) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441081/?learn=on&enablevpops&captions=jpn)

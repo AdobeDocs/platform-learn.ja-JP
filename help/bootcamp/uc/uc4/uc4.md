@@ -26,7 +26,7 @@ Customer Journey Analyticsは、ビジネスインテリジェンスおよびデ
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
-Customer Journey Analyticsについて詳しくは、[ こちら ](https://spark.adobe.com/page/t62eiRu9l6iWJ/) を参照してください。
+Customer Journey Analyticsについて詳しくは、[&#x200B; こちら &#x200B;](https://spark.adobe.com/page/t62eiRu9l6iWJ/) を参照してください。
 
 ## 学習内容
 

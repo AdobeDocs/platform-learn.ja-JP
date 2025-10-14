@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->この演習のすべての手順を実行するには、既存のAdobe Workfront環境にアクセスする必要があり、その環境でプロジェクトと承認ワークフローを作成する必要があります。 [Adobe Workfrontによるワークフロー管理 ](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} の演習に従うと、必要な設定を使用できるようになります。
+>この演習のすべての手順を実行するには、既存のAdobe Workfront環境にアクセスする必要があり、その環境でプロジェクトと承認ワークフローを作成する必要があります。 [Adobe Workfrontによるワークフロー管理 &#x200B;](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} の演習に従うと、必要な設定を使用できるようになります。
 
 >[!IMPORTANT]
 >
@@ -354,8 +354,8 @@ Campaign `--aepUserLdap-- - CitiSignal Fiber Launch Campaign` を選択し、「
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
 [GenStudio for Performance Marketing](./genstudio.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

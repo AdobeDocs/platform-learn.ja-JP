@@ -27,7 +27,7 @@ ht-degree: 6%
 
 組織をプロビジョニングし、Adobe Experience Platformの権限を付与する必要があります。
 
-アクセス権がない場合は、[ このレッスンをスキップ ](install-sdks.md) できます。
+アクセス権がない場合は、[&#x200B; このレッスンをスキップ &#x200B;](install-sdks.md) できます。
 
 ## 学習目標
 
@@ -50,26 +50,26 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 1. 左側のナビゲーションメニューから **[!UICONTROL データセット]** を選択します。
 
-1. 「![ データセットを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 作成]**」を選択します。
+1. 「![&#x200B; データセットを追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL 作成]**」を選択します。
 
 1. 「**[!UICONTROL スキーマからデータセットを作成]**」をクリックします。
-   ![ データセットホーム ](assets/dataset-create.png){zoomable="yes"}
+   ![&#x200B; データセットホーム &#x200B;](assets/dataset-create.png){zoomable="yes"}
 
 1. スキーマを検索します。 例えば、検索フィールドに `Luma Mobile` を使用します。
 1. スキーマを選択します（例：**[!DNL Luma Mobile App Event Schema]**）。
 
 1. 「**[!UICONTROL 次へ]**」を選択します。
-   ![ データセットの設定 ](assets/dataset-configure.png){zoomable="yes"}
+   ![&#x200B; データセットの設定 &#x200B;](assets/dataset-configure.png){zoomable="yes"}
 
 1. **[!UICONTROL 名前]**、例：`Luma Mobile App Events Dataset` および **[!UICONTROL 説明]** を入力します。
 
 1. 「**[!UICONTROL 完了]**」を選択します。
-   ![ データセット完了 ](assets/dataset-finish.png){zoomable="yes"}
+   ![&#x200B; データセット完了 &#x200B;](assets/dataset-finish.png){zoomable="yes"}
 
 
 ## Adobe Experience Platform データストリームサービスを追加
 
-XDM データをEdge NetworkからAdobe Experience Platformに送信するには、[ データストリームの作成 ](create-datastream.md) の一部として設定したデータストリームにAdobe Experience Platform サービスを追加します。
+XDM データをEdge NetworkからAdobe Experience Platformに送信するには、[&#x200B; データストリームの作成 &#x200B;](create-datastream.md) の一部として設定したデータストリームにAdobe Experience Platform サービスを追加します。
 
 >[!IMPORTANT]
 >
@@ -77,7 +77,7 @@ XDM データをEdge NetworkからAdobe Experience Platformに送信するには
 
 1. データ収集 UI で、「**[!UICONTROL データストリーム]** とデータストリームを選択します。
 
-1. 次に、「![ 追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL サービスを追加]**」を選択します。
+1. 次に、「![&#x200B; 追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**[!UICONTROL サービスを追加]**」を選択します。
 
 1. **[!UICONTROL サービス]** リストから [!UICONTROL Adobe Experience Platform] を選択します。
 
@@ -87,10 +87,10 @@ XDM データをEdge NetworkからAdobe Experience Platformに送信するには
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   ![Adobe Experience Platformをデータストリームサービスとして追加 ](assets/datastream-service-aep.png){zoomable="yes"}
+   ![Adobe Experience Platformをデータストリームサービスとして追加 &#x200B;](assets/datastream-service-aep.png){zoomable="yes"}
 1. 最終的な設定は次のようになります。
 
-   ![ データストリーム設定 ](assets/datastream-settings.png){zoomable="yes"}
+   ![&#x200B; データストリーム設定 &#x200B;](assets/datastream-settings.png){zoomable="yes"}
 
 
 ## データセット内のデータの検証
@@ -101,12 +101,12 @@ XDM データをEdge NetworkからAdobe Experience Platformに送信するには
 
 Platform インターフェイスでデータセットを開きます。 データセットにバッチで到着するデータが表示されます。 通常、データは 15 分ごとにマイクロバッチで送信されるので、データがすぐに表示されない場合があります。
 
-![ データランディング Platform データセットバッチの検証 ](assets/platform-dataset-batches.png){zoomable="yes"}
+![&#x200B; データランディング Platform データセットバッチの検証 &#x200B;](assets/platform-dataset-batches.png){zoomable="yes"}
 
 また、**[!UICONTROL データセットをプレビュー]** 機能を使用してレコードとフィールドの例を確認することもできます。
-![Platform データセットに送信されたライフサイクルを検証 ](assets/lifecycle-platform-dataset.png){zoomable="yes"}
+![Platform データセットに送信されたライフサイクルを検証 &#x200B;](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-データを検証するためのより堅牢なツールは、Platform の [ クエリサービス ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/queries/explore-data) です。
+データを検証するためのより堅牢なツールは、Platform の [&#x200B; クエリサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/queries/explore-data) です。
 
 ## リアルタイム顧客プロファイルを有効にする
 
@@ -119,14 +119,14 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 1. 「**[!UICONTROL このスキーマのデータには、identityMap フィールドにプライマリ ID が含まれる」を選択します。ダイアログで]** をクリックします。
 1. **[!UICONTROL 保存]** スキーマ。
 
-   ![ プロファイルでスキーマを有効にする ](assets/platform-profile-schema.png){zoomable="yes"}
+   ![&#x200B; プロファイルでスキーマを有効にする &#x200B;](assets/platform-profile-schema.png){zoomable="yes"}
 
 ### データセットの有効化
 
 1. データセット（例：**[!DNL Luma Mobile App Event Dataset]**）を開きます。
 1. **[!UICONTROL プロファイル]** を有効にします。
 
-   ![ プロファイル用データセットを有効にする ](assets/platform-profile-dataset.png){zoomable="yes"}
+   ![&#x200B; プロファイル用データセットを有効にする &#x200B;](assets/platform-profile-dataset.png){zoomable="yes"}
 
 ### プロファイル内のデータの検証
 
@@ -134,7 +134,7 @@ Experience Platformのリアルタイム顧客プロファイルを使用する�
 
 Assuranceを使用して、identityMap に渡される ID の 1 つ（メール、lumaCrmId、ECID）を検索します（例：CRM ID）。
 
-![ID 値を取得 ](assets/platform-identity.png){zoomable="yes"}
+![ID 値を取得 &#x200B;](assets/platform-identity.png){zoomable="yes"}
 
 Platform インターフェイスで、
 
@@ -142,14 +142,14 @@ Platform インターフェイスで、
 1. 取り込んだ ID の詳細（例：`Luma CRM ID`ID 名前空間 **[!UICONTROL の]**）と、コピーした値 **[!UICONTROL ID 値]** を指定します。 次に、「**[!UICONTROL 表示]**」を選択します。
 1. 詳細を表示するには、プロファイルを選択します。
 
-![ID 値の検索 ](assets/platform-profile-lookup.png){zoomable="yes"}
+![ID 値の検索 &#x200B;](assets/platform-profile-lookup.png){zoomable="yes"}
 
 **[!UICONTROL 詳細]** 画面には、**[!UICONTROL **&#x200B; リンクされた ID &#x200B;**]** など、ユーザーに関する基本情報が表示されます。
-![ プロファイルの詳細 ](assets/platform-profile-details.png){zoomable="yes"}
+![&#x200B; プロファイルの詳細 &#x200B;](assets/platform-profile-details.png){zoomable="yes"}
 
 **[!UICONTROL イベント]** には、このユーザーについてモバイルアプリ実装から収集されたイベントが表示されます。
 
-![ プロファイルイベント ](assets/platform-profile-events.png){zoomable="yes"}
+![&#x200B; プロファイルイベント &#x200B;](assets/platform-profile-events.png){zoomable="yes"}
 
 
 プロファイルの詳細画面から、次の操作を行います。
@@ -157,9 +157,9 @@ Platform インターフェイスで、
 1. ID グラフを表示するには、リンクをクリックするか、**[!UICONTROL ID]** に移動し、上部バーから **[!UICONTROL ID グラフ]** を選択します。
 1. ID 値を検索するには、`Luma CRM ID` を **[!UICONTROL ID 名前空間]** として指定し、コピーした値を **[!UICONTROL ID 値]** として指定します。 次に、「**[!UICONTROL 表示]**」を選択します。
 
-   このビジュアライゼーションは、プロファイル内でリンクされている ID とその接触チャネルを表示します。 次に、この Mobile SDK チュートリアル（Data Source 2）と [Web SDK チュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) （Data Source 1）の両方で収集されたデータを使用して構成された ID グラフの例を示します。
+   このビジュアライゼーションは、プロファイル内でリンクされている ID とその接触チャネルを表示します。 次に、この Mobile SDK チュートリアル（Data Source 2）と [Web SDK チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) （Data Source 1）の両方で収集されたデータを使用して構成された ID グラフの例を示します。
 
-   ![ID 値を取得 ](assets/platform-profile-identitygraph.png){zoomable="yes"}
+   ![ID 値を取得 &#x200B;](assets/platform-profile-identitygraph.png){zoomable="yes"}
 
 
 ## 次の手順
@@ -169,7 +169,7 @@ Platform インターフェイスで、
 
 >[!SUCCESS]
 >
->これで、Edge NetworkだけでなくAdobe Experience Platformにもデータを送信するようにアプリを設定しました。<br>Adobe Experience Platform Mobile SDKの学習に時間を費やしていただきありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
+>これで、Edge NetworkだけでなくAdobe Experience Platformにもデータを送信するようにアプリを設定しました。<br>Adobe Experience Platform Mobile SDKの学習に時間を費やしていただきありがとうございます。 ご不明な点がある場合や、一般的なフィードバックをお寄せになる場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja) でお知らせください。
 >
 
 次のトピック：**[プッシュ通知の作成および送信](journey-optimizer-push.md)**

@@ -25,12 +25,12 @@ ht-degree: 1%
 
 ## これを確認する
 
-- テクニカルブログ：[Adobe Experience Platform Web SDKを使用してカスタマーワークフローを簡素化する ](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-- テクニカルブログ：[Adobe Experience Platform Edge Networkによるクライアントとサーバーの統合の効率化 ](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
-- テクニカルブログ：[Adobe Experience Platform Web SDKでAdobe Experience Platform サービスを統合する ](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+- テクニカルブログ：[Adobe Experience Platform Web SDKを使用してカスタマーワークフローを簡素化する &#x200B;](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+- テクニカルブログ：[Adobe Experience Platform Edge Networkによるクライアントとサーバーの統合の効率化 &#x200B;](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+- テクニカルブログ：[Adobe Experience Platform Web SDKでAdobe Experience Platform サービスを統合する &#x200B;](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
 
 ## 次の手順
 
-[Adobe Experience Platform データ収集の設定と web SDK タグ拡張機能 ](./data-ingestion-launch-web-sdk.md){target="_blank"} に戻ります
+[Adobe Experience Platform データ収集の設定と web SDK タグ拡張機能 &#x200B;](./data-ingestion-launch-web-sdk.md){target="_blank"} に戻ります
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

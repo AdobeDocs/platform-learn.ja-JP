@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 実験エージェントの概要
 
-実験エージェントは、マーケター、アナリスト、管理者のためのインサイト、ガイド付き設定および自動分析を使用して、デジタル最適化を高速化します。 詳しくは、[ 実験アクセラレーターのドキュメント ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator) を参照してください。
+実験エージェントは、マーケター、アナリスト、管理者のためのインサイト、ガイド付き設定および自動分析を使用して、デジタル最適化を高速化します。 詳しくは、[&#x200B; 実験アクセラレーターのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator) を参照してください。
 
 >[!SLIDE](experimentation-agent-overview)

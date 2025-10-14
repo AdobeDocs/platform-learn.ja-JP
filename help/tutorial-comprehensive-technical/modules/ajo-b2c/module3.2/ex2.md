@@ -40,31 +40,31 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 [https://openweathermap.org/](https://openweathermap.org/) に移動します。 ホームページで、「**ログイン**」をクリックします。
 
-![ 天気マップ ](./images/owm.png)
+![&#x200B; 天気マップ &#x200B;](./images/owm.png)
 
 **アカウントを作成** をクリックします。
 
-![ 天気マップ ](./images/owm1.png)
+![&#x200B; 天気マップ &#x200B;](./images/owm1.png)
 
 詳細を入力します。 **アカウントを作成** をクリックします。
 
-![ 天気マップ ](./images/owm2.png)
+![&#x200B; 天気マップ &#x200B;](./images/owm2.png)
 
 その後、アカウントページにリダイレクトされます。
 
-![ 天気マップ ](./images/owm4.png)
+![&#x200B; 天気マップ &#x200B;](./images/owm4.png)
 
 メニューで、**API キー** をクリックして、カスタム外部データソースを設定する必要がある API キーを取得します。
 
-![ 天気マップ ](./images/owm5.png)
+![&#x200B; 天気マップ &#x200B;](./images/owm5.png)
 
 **API キー** は `b2c4c36b6bb59c3458d6686b05311dc3` のようになります。
 
-**Current Weather** については、**API のドキュメント** を参照してください [ こちら ](https://openweathermap.org/current)。
+**Current Weather** については、**API のドキュメント** を参照してください [&#x200B; こちら &#x200B;](https://openweathermap.org/current)。
 
 このユースケースでは、**都市名による組み込み API リクエスト** を使用して、顧客の市区町村に基づく Open Weather Map との接続を実装します。
 
-![ 天気マップ ](./images/owm6.png)
+![&#x200B; 天気マップ &#x200B;](./images/owm6.png)
 
 **Adobe Journey Optimizer** に戻り、空の **外部データSource** ポップアップに移動します。
 
@@ -109,7 +109,7 @@ Weather API のドキュメントによると、パラメーター `q=City` を�
 
 応答ペイロードには、Weather API から送信される応答の例を貼り付ける必要があります。
 
-期待される API JSON 応答は、API ドキュメントページ [ こちら ](https://openweathermap.org/current)、「**JSON**」件名の下にあります。
+期待される API JSON 応答は、API ドキュメントページ [&#x200B; こちら &#x200B;](https://openweathermap.org/current)、「**JSON**」件名の下にあります。
 
 ![デモ](./images/owmapi1.png)
 
@@ -189,7 +189,7 @@ JSON 応答を貼り付けると、これが表示されます。 「**保存**�
 
 ![デモ](./images/dslist.png)
 
-次の手順：[3.2.3 カスタムアクションの定義 ](./ex3.md)
+次の手順：[3.2.3 カスタムアクションの定義 &#x200B;](./ex3.md)
 
 [モジュール 3.2 に戻る](journey-orchestration-external-weather-api-sms.md)
 

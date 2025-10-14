@@ -26,13 +26,13 @@ ht-degree: 1%
 
 ## これを確認する
 
-- テクニカルブログ：[ オムニチャネルの世界のAdobe Journey Optimizer](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
-- テクニカルブログ：[ パーソナライズされたオムニチャネルエクスペリエンスをリアルタイムで構築する、Adobeの新しいAdobe Journey Optimizer サービスの力を示す ](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
-- チュートリアル：[Adobe Journey Optimizer チュートリアル ](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=ja)
-- Experience Platform ドキュメント：[Adobe Journey Optimizer ヘルプ ](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html?lang=ja)
+- テクニカルブログ：[&#x200B; オムニチャネルの世界のAdobe Journey Optimizer](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
+- テクニカルブログ：[&#x200B; パーソナライズされたオムニチャネルエクスペリエンスをリアルタイムで構築する、Adobeの新しいAdobe Journey Optimizer サービスの力を示す &#x200B;](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
+- チュートリアル：[Adobe Journey Optimizer チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=ja)
+- Experience Platform ドキュメント：[Adobe Journey Optimizer ヘルプ &#x200B;](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html?lang=ja)
 
 ## 次の手順
 
-[Adobe Journey Optimizer：外部データソースとカスタムアクション ](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：外部データソースとカスタムアクション &#x200B;](journey-orchestration-external-weather-api-sms.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

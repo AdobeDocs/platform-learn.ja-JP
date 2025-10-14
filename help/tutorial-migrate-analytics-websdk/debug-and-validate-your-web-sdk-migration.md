@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Adobe Experience Platform Debugger
 
-このデバッガーはブラウザー拡張機能で、Chrome ストアから入手できます。 デバッガーのダウンロード方法と使用方法について説明した [ ビデオチュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview) があります。基本的な使用方法を知るには、まずそれを実行することをお勧めします。
+このデバッガーはブラウザー拡張機能で、Chrome ストアから入手できます。 デバッガーのダウンロード方法と使用方法について説明した [&#x200B; ビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/debugger/overview) があります。基本的な使用方法を知るには、まずそれを実行することをお勧めします。
 
 デバッガーを起動して実行したら、それを使用して、サイトとEdge Networkからのデータのフローが正しいことを確認できます。 このチュートリアルは引き続きかなり基本的な用途で使用できますが、データを確認するにはデバッガーを最大限に使用してください。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 1. ブラウザーでサイトの開発環境を開きます。
 1. ブラウザーウィンドウ上部の拡張機能トレイにあるブラウザー拡張機能をクリックして、デバッガーを開きます。
 
-   ![ デバッガー拡張機能 ](assets/debugger-extension.jpg)
+   ![&#x200B; デバッガー拡張機能 &#x200B;](assets/debugger-extension.jpg)
 
    >[!TIP]
    >
@@ -44,19 +44,19 @@ ht-degree: 0%
 
 1. デバッガーの **概要** ページ（左上の「ホーム」アイコン）をクリックします。 ブラウザーウィンドウで **サイトを更新** します。 サイト上でデバッガーによって埋め込みコードが取得されていて、Analytics コードを削除しなかった場合（このチュートリアルに従って）、Adobe Experience Platform タグに加えて、Adobe Experience Platform Web SDKとAdobe Analyticsの両方のコードが存在することが示されます。 その他はグレー表示されます。
 
-   ![ デバッガーの概要 ](assets/debugger-summary.jpg)
+   ![&#x200B; デバッガーの概要 &#x200B;](assets/debugger-summary.jpg)
 
 1. Web SDKを使用して追加されたデータを表示するには、左側のレールの **Experience PlatformWeb SDK** リンクをクリックします
 1. 発生したヒットを削除するには、「**イベントをクリア**」をクリックします
 1. サイトを再度更新し、デバッガーに戻ります
 1. 次に、テーブルの **イベント** の横にあるデータフィールドをクリックします
 
-   ![ デバッガーのイベントフィールド ](assets/events-field-in-debugger.jpg)
+   ![&#x200B; デバッガーのイベントフィールド &#x200B;](assets/events-field-in-debugger.jpg)
 
 1. 「値」フィールドで、0、data、__adobe および analytics まで展開します
 1. デフォルトのページ読み込みルールや特別なルールなど、そのページで実行されるルールに設定した変数も表示されます。
 
-   ![ デバッガー内のデータオブジェクト ](assets/data-object-in-debugger.jpg)
+   ![&#x200B; デバッガー内のデータオブジェクト &#x200B;](assets/data-object-in-debugger.jpg)
 
 1. タグプロパティの項目を変更し、開発に対して変更を公開したら、Analytics 実装に加えた変更の影響を確認できるように、これらの手順を実行します。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 次のようになります（これらの空のデモレポートスイートにはデータがないことを理解しています）。
 
-![ レポートスイート番号の比較 ](assets/compare-report-suite-numbers-panels.jpg)
+![&#x200B; レポートスイート番号の比較 &#x200B;](assets/compare-report-suite-numbers-panels.jpg)
 
 ご覧のように、レポートは両方のパネルで同じであり、カレンダーも同じです。 違いは、上記の手順で説明されているレポートスイートです。
 **このオプションの利点：** レポートやディメンションを 1 つずつ選択して、実装を変更しながらテストしたいものを正確にテストできます。

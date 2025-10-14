@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # オーディエンスルールビルダーの概要
 
-オーディエンスの構成要素、ユーザーインターフェイス、オーディエンスルールの作成を開始するためのヒントなど、Experience Platformのオーディエンスルールビルダーの概要を説明します。 詳しくは、[ セグメントビルダーのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
+オーディエンスの構成要素、ユーザーインターフェイス、オーディエンスルールの作成を開始するためのヒントなど、Experience Platformのオーディエンスルールビルダーの概要を説明します。 詳しくは、[&#x200B; セグメントビルダーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

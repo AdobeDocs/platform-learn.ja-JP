@@ -20,6 +20,6 @@ ht-degree: 4%
 
 ## これを確認する
 
-[Workfront計画の概要 ](./wfplanning.md){target="_blank"} に戻る
+[Workfront計画の概要 &#x200B;](./wfplanning.md){target="_blank"} に戻る
 
 [すべてのモジュールに戻る](../../../overview.md)

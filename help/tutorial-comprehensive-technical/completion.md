@@ -170,7 +170,7 @@ ID は **675033c903fb3b2aefed8a0a** のようになります。
 
 ![12](./assets/images/completemodule7.png)
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 
 >[!NOTE]
 >

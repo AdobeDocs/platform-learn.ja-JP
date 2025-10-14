@@ -114,7 +114,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 
 ![セグメント化](./images/savedsegment.png)
 
-次の手順：[2.1.5 コールセンターでリアルタイム顧客プロファイルの動作を確認する ](./ex5.md)
+次の手順：[2.1.5 コールセンターでリアルタイム顧客プロファイルの動作を確認する &#x200B;](./ex5.md)
 
 [モジュール 2.1 に戻る](./real-time-customer-profile.md)
 

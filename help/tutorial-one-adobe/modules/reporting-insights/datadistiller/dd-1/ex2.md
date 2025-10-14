@@ -109,6 +109,6 @@ MacOS:
 
 クエリサービスを使用して、[2.1.3](./ex3.md){target="_blank"} 移動します。
 
-[ クエリサービス ](./query-service.md){target="_blank"} に戻る
+[&#x200B; クエリサービス &#x200B;](./query-service.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

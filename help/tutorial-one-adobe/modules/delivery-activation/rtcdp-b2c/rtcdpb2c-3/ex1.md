@@ -114,8 +114,8 @@ ht-degree: 3%
 
 ## 次の手順
 
-[2.3.2 へ宛先を使用した DV360 の宛先の設定方法を確認する ](./ex2.md){target="_blank"}
+[2.3.2 へ宛先を使用した DV360 の宛先の設定方法を確認する &#x200B;](./ex2.md){target="_blank"}
 
-[Real-time CDP - オーディエンスの作成とアクションの実行 ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
+[Real-time CDP - オーディエンスの作成とアクションの実行 &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
