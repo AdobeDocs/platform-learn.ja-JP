@@ -52,7 +52,7 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 
 マーケティングチームが、部門横断的なコラボレーションを可能にし、プロジェクトを計画されたデータ駆動型の結果に結び付ける作業管理ソリューションを使用するのが理想的です。 また、マーケティングチームが戦略的に作業の優先順位を付け、それらの優先順位をクリエイティブチームに通知できるようにする必要もあります。 そこから、クリエイティブブリーフ、コンテンツバージョン、フィードバックを各プロジェクト内で結び付ける必要があります。これにより、チームが探しているものを見つけるために古いメールを検索する必要がなくなります。
 
-クリエイティブチームは、クリエイティブおよび作業管理ツールと統合された [&#x200B; 優れたデジタルアセット管理 &#x200B;](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [&#x200B; （DAM） &#x200B;](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [&#x200B; システム &#x200B;](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) をセットアップする必要があります。 これにより、顧客は関連するアセットを簡単に検索、使用、更新または再利用できます。 これらをすべて行うことで、市場投入のスピードを向上させ、内部の運用とプロセスを簡素化できます。
+クリエイティブチームは、クリエイティブおよび作業管理ツールと統合された [&#x200B; 優れたデジタルアセット管理 &#x200B;](https://business.adobe.com/jp/products/experience-manager/assets/digital-asset-management.html) [&#x200B; （DAM） &#x200B;](https://business.adobe.com/jp/products/experience-manager/assets/digital-asset-management.html) [&#x200B; システム &#x200B;](https://business.adobe.com/jp/products/experience-manager/assets/digital-asset-management.html) をセットアップする必要があります。 これにより、顧客は関連するアセットを簡単に検索、使用、更新または再利用できます。 これらをすべて行うことで、市場投入のスピードを向上させ、内部の運用とプロセスを簡素化できます。
 
 ### シームレスなワークフローにより、実稼動環境の効率を高めます
 
@@ -70,9 +70,9 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 
 ## Adobeでは、クラス最高のコンテンツサプライチェーンを構築しています
 
-アドビ独自の [Adobe Experience Cloud ビジネスは &#x200B;](https://business.adobe.com/) キャンペーンに活気を与え、複数のセグメントをサポートするために、前に概要を説明した手順に従うことに焦点を当てています。 アドビのビジョンは、キャンペーンのフレームワークやメッセージに沿った、魅力的なコンテンツをグローバルに提供することです。
+アドビ独自の [Adobe Experience Cloud ビジネスは &#x200B;](https://business.adobe.com/jp/) キャンペーンに活気を与え、複数のセグメントをサポートするために、前に概要を説明した手順に従うことに焦点を当てています。 アドビのビジョンは、キャンペーンのフレームワークやメッセージに沿った、魅力的なコンテンツをグローバルに提供することです。
 
-エンドツーエンドのコンテンツ作成プロセスの鍵は、[Adobe Workfront&rbrace; と &#x200B;](https://business.adobe.com/products/workfront/main.html)2&rbrace;Adobe Experience Manager Assets[&#128279;](https://business.adobe.com/products/experience-manager/assets/aem-assets.html) を組み合わせることです。 同じ 3 つのフェーズで、どのようにプロセスにアプローチしたかを見てみましょう。
+エンドツーエンドのコンテンツ作成プロセスの鍵は、[Adobe Workfront&rbrace; と &#x200B;](https://business.adobe.com/jp/products/workfront/main.html)2&rbrace;Adobe Experience Manager Assets[&#128279;](https://business.adobe.com/jp/products/experience-manager/assets/aem-assets.html) を組み合わせることです。 同じ 3 つのフェーズで、どのようにプロセスにアプローチしたかを見てみましょう。
 
 まず **プランニング** から始めます。ここでは、ビジネス全体から数百ものコンテンツ・リクエストを取り込み、四半期ごとの優先順位に基づいて優先順位を付けます。 次に、Workfrontのコンテンツ提案ダッシュボードを使用して透明性を提供し、関係者と連携して、マーケティング、クリエイティブ、web、営業の各チーム間ですばやく承認を得ることができます。 これにより、四半期の目標の記録を作成し、クリエイティブチームと web チームにリクエスト量の合計を可視化して、リソースの計画を立てることができます。 さらに、マネージャーはチームのワークロードを簡単に監視できます。
 
@@ -84,7 +84,7 @@ _Source:_ [_Deloitte デジタル_](https://www2.deloitte.com/content/dam/Deloit
 
 >[!NOTE]
 >
-> この記事は当初、[_Adobe Experience Cloudのブログ_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time) で公開されました。
+> この記事は当初、[_Adobe Experience Cloudのブログ_](https://business.adobe.com/jp/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time) で公開されました。
 
 ## 第 4 段階：インサイト
 

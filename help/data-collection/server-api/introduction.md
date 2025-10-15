@@ -47,7 +47,7 @@ Web ページ内のリンクをクリックしようと考える場合、ブラ�
 
 ほとんどのブラウザーには、web ページの「アドレス」の一部またはすべてを表示する「アドレスバー」があります。 ブラウザーは、クリックしたリンクのページを「取得」すると、このアドレスバーにページの「アドレス」が表示されます。 では、Web ページの「アドレス」とは何でしょうか。
 
-上記の `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` は Web 上のページのアドレスであり、URL または Uniform Resource Locator と呼ばれます。 URL は、このようなページ、画像ファイル、ビデオなどのページ、または他のファイルタイプを参照できます。
+上記の `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` は Web 上のページのアドレスであり、URL または Uniform Resource Locator と呼ばれます。 URL は、このようなページ、画像ファイル、ビデオなどのページ、または他のファイルタイプを参照できます。
 
 ![URL の一部 &#x200B;](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ Web API の場合、これらのリソースの転送は HTTP リクエスト（
 
 **接触チャネル**
 
-オリジンは、URL の一部に密接に関連していることを認識しておくべき別の用語です。 基本レベルでは、原点は `https://business.adobe.com` のような `scheme` と `host` と `domain` の大まかな関係です。 値が異なれば `https://business.adobe.com` のように元も異なることが多く、`http://business.adobe.com` はスキームが異なるので元も同じではありません。 また、`https://www.adobe.com` と `https://business.adobe.com` は、サブドメインが異なるので、多くの用途で同じオリジンではありません。
+オリジンは、URL の一部に密接に関連していることを認識しておくべき別の用語です。 基本レベルでは、原点は `https://business.adobe.com/jp` のような `scheme` と `host` と `domain` の大まかな関係です。 値が異なれば `https://business.adobe.com/jp` のように元も異なることが多く、`http://business.adobe.com/jp` はスキームが異なるので元も同じではありません。 また、`https://www.adobe.com` と `https://business.adobe.com/jp` は、サブドメインが異なるので、多くの用途で同じオリジンではありません。
 
 **パス**
 
@@ -133,13 +133,13 @@ Adobe Experience Platform Data Access API は、プログラマーがAdobe Exper
 
 API に関する基本的な用語、概念、手順が理解できたので、実際の API リクエストの例を見てみましょう。
 
-このブラウザーの例で使用するページの URL は `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` です。 Adobe Experience Platformのリンクがクリックされると、ブラウザーはこのページに対して `GET` リクエストを行います。 ブラウザーに代わって作業を行わせてもらうので、私たちがしなければならないのはクリックだけですが、プログラマーがそのリクエストをソフトウェアアプリケーションで実行したい場合、API リクエストが正常に実行されるために必要なすべての詳細を提供する必要があります。
+このブラウザーの例で使用するページの URL は `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` です。 Adobe Experience Platformのリンクがクリックされると、ブラウザーはこのページに対して `GET` リクエストを行います。 ブラウザーに代わって作業を行わせてもらうので、私たちがしなければならないのはクリックだけですが、プログラマーがそのリクエストをソフトウェアアプリケーションで実行したい場合、API リクエストが正常に実行されるために必要なすべての詳細を提供する必要があります。
 
 コードでは、次のようになります。
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:

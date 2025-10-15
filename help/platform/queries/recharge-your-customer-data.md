@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->このビデオは、Adobe Summit 2020 セッション *[エクスペリエンスを電動化するためのオムニチャネルデータの充電 &#x200B;](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* の抜粋です。
+>このビデオは、Adobe Summit 2020 セッション *[エクスペリエンスを電動化するためのオムニチャネルデータの充電 &#x200B;](https://business.adobe.com/jp/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* の抜粋です。

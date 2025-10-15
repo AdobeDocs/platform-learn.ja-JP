@@ -24,4 +24,4 @@ Adobeへの 1 回の呼び出しでExperience Platform、Analytics、Audience Ma
 
 >[!NOTE]
 >
->このビデオは、Adobe Summit 2020 セッション *[Alloy.js を満たし、eVarまたは Mbox を二度とタグ付けしない &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)* の抜粋です。
+>このビデオは、Adobe Summit 2020 セッション *[Alloy.js を満たし、eVarまたは Mbox を二度とタグ付けしない &#x200B;](https://business.adobe.com/jp/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)* の抜粋です。
