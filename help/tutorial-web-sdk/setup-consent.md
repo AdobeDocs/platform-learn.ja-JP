@@ -69,7 +69,7 @@ Adobe Experience Platform Web SDK タグ拡張機能のプライバシーを設�
 Klaro の設定が完了したら、次の設定でタグルールを作成します。
 
 * [!UICONTROL &#x200B; 名前 &#x200B;]: `all pages - library load - Klaro`
-* [!UICONTROL &#x200B; イベント &#x200B;]:[!UICONTROL &#x200B; ライブラリが読み込まれました（ページのトップ） &#x200B;][!UICONTROL &#x200B; 詳細オプション &#x200B;]/[!UICONTROL &#x200B; 順序 &#x200B;] が 1 に設定されました
+* [!UICONTROL &#x200B; イベント &#x200B;]:[!UICONTROL &#x200B; ライブラリが読み込まれました（ページのトップ） &#x200B;]&#x200B;[!UICONTROL &#x200B; 詳細オプション &#x200B;]/[!UICONTROL &#x200B; 順序 &#x200B;] が 1 に設定されました
 * [!UICONTROL &#x200B; 操作 &#x200B;]: [!UICONTROL &#x200B; カスタムコード &#x200B;]、[!UICONTROL &#x200B; 言語 &#x200B;]: CMP スクリプトを読み込むためのHTML。
 
 ![CMP ルールの挿入 &#x200B;](assets/consent-cmp-inject-rule-1.png)

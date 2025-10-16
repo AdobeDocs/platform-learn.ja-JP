@@ -169,7 +169,7 @@ alloy("sendEvent", {
 
 ![XDM オブジェクトデータ要素の XDM フィールドへのマッピング &#x200B;](assets/params-tags-pageName.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;]&#x200B;[!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![XDM オブジェクトデータ要素を送信イベントに含める &#x200B;](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -223,7 +223,7 @@ alloy("sendEvent", {
 
 ![&#x200B; データ要素でのデータオブジェクトの定義 &#x200B;](assets/params-tags-dataObject.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;]&#x200B;[!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![&#x200B; データオブジェクトを送信イベントに含める &#x200B;](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -277,7 +277,7 @@ alloy("sendEvent", {
 
 ![&#x200B; データ要素でのデータオブジェクトの定義 &#x200B;](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、データオブジェクトを [!UICONTROL &#x200B; 送信イベント &#x200B;]&#x200B;[!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL &#x200B; オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![&#x200B; データオブジェクトを送信イベントに含める &#x200B;](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ alloy("sendEvent", {
 
 ![XDM オブジェクトデータ要素の XDM フィールドへのマッピング &#x200B;](assets/params-tags-purchase.png){zoomable="yes"}
 
-次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;][!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
+次に、[!UICONTROL XDM オブジェクト &#x200B;] を [!UICONTROL &#x200B; 送信イベント &#x200B;]&#x200B;[!UICONTROL &#x200B; アクション &#x200B;] に含めます（複数の [!UICONTROL XDM オブジェクト &#x200B;][&#x200B; 結合 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ja#merged-objects) できます）。
 
 ![XDM オブジェクトデータ要素を送信イベントに含める &#x200B;](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
