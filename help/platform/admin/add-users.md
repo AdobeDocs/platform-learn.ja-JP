@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Real-Time Customer Data PlatformやJourney OptimizerなどのAdobe Experience Platform ベースのアプリケーションで、ユーザーを追加し、権限を管理する方法について説明します。 ユーザーはまずAdmin Consoleに追加され、次に Platform またはJourney Optimizer インターフェイスで権限が付与されます。 詳しくは、[&#x200B; アクセス制御ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475974?captions=jpn&learn=on&enablevpops)

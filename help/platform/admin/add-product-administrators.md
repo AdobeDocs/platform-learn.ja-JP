@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Adobe Experience Platformの製品管理者を追加する方法について説明します。 製品管理者は、Real-Time Customer Data PlatformやJourney Optimizerなどの Platform ベースのアプリケーションのアクセス制御を管理します。 ユーザー、デベロッパー、管理者をAdmin Consoleに作成し、Platform またはJourney Optimizer インターフェイスでそれらのユーザー（および API 資格情報）に権限を付与できます。 詳しくは、[&#x200B; アクセス制御ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475942?captions=jpn&learn=on&enablevpops)
 
 >[!TIP]
 >

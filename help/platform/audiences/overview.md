@@ -290,7 +290,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="Federated Audience コンポジションの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="Federated Audience コンポジションの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450879/?captions=jpn&format=jpeg&nocache=1740173579477" alt="Federated Audience コンポジションの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ Adobe Experience Platformのオーディエンスについて説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Federated Audience コンポジションの接続と設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Federated Audience コンポジションの接続と設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451557/?captions=jpn&format=jpeg&nocache=1740173579488" alt="Federated Audience コンポジションの接続と設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

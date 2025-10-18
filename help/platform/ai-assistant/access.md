@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Adobe Experience Platformで AI アシスタントのアクセス権と権限を設定する方法について説明します。 詳しくは、[Experience Platformの AI アシスタントへのアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/access) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3436470/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475920/?captions=jpn&learn=on&enablevpops)

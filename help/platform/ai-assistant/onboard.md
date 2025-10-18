@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI アシスタントを使用して新機能をすばやく追加し、オンボーディング時間を短縮する方法を説明します。 詳しくは、[AI アシスタントの質問ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/questions) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475931/?captions=jpn&learn=on&enablevpops)

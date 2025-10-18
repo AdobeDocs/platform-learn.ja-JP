@@ -38,7 +38,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="AI アシスタントにアクセスする" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="AI アシスタントにアクセスする"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475920/?captions=jpn&format=jpeg&nocache=1748392732990" alt="AI アシスタントにアクセスする"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="AI アシスタントを使用したオンボーディング時間の短縮" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="AI アシスタントを使用したオンボーディング時間の短縮"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475931/?captions=jpn&format=jpeg&nocache=1748392735030" alt="AI アシスタントを使用したオンボーディング時間の短縮"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

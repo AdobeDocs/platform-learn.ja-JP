@@ -128,7 +128,7 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Adobe Experience Platform ベースのアプリケーションの製品管理者を追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Adobe Experience Platform ベースのアプリケーションの製品管理者を追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475942?captions=jpn&format=jpeg&nocache=1756504085478" alt="Adobe Experience Platform ベースのアプリケーションの製品管理者を追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

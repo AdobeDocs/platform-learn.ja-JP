@@ -34,7 +34,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="ユーザーの追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="ユーザーの追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475974?captions=jpn&format=jpeg&nocache=1740173302150" alt="ユーザーの追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,7 +80,7 @@ Adobe Experience Platformの管理機能を使用して、詳細なコントロ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="管理者を追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="管理者を追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475942?captions=jpn&format=jpeg&nocache=1740173302208" alt="管理者を追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

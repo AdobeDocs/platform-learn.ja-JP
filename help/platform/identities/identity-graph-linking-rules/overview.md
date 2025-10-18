@@ -60,7 +60,7 @@ ht-degree: 20%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="ID グラフリンクルール - ID 設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="ID グラフリンクルール - ID 設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458488/?captions=jpn&format=jpeg&nocache=1747355376336" alt="ID グラフリンクルール - ID 設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -20,4 +20,4 @@ ht-degree: 45%
 
 Experience Platform 連合オーディエンス構成は、Adobe Real-time CDP および Adobe Journey Optimizer のユーザーにデータ管理の柔軟性と効率性を提供します。Federated Audience Composition を使用すると、マーケター向けの使いやすい UI から Enterprise Data Warehouse にアクセスしてオーディエンスを作成したり、Adobe Experience Platform ワークフローでデータセットを活用したりできます。データウェアハウスからExperience Platformにすべてのデータをインポートする必要はありません。
 
->[!VIDEO](https://video.tv.adobe.com/v/3432261/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450879/?captions=jpn&learn=on&enablevpops)
