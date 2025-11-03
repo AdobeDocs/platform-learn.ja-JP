@@ -4,9 +4,9 @@ description: Workfrontでのプルーフ
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 >[!NOTE]
 >
->作成および実行した自動処理を使用して、[Workfront計画 &#x200B;](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
+>作成および実行した自動処理を使用して、[Workfront計画 ](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
 
 ![WF](./images/wfp6b.png)
 
@@ -162,7 +162,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfpwlb2.png)
 
-**2&rbrace;Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0&rbrace;Designer&rbrace; のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
+**2}Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0}Designer} のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
 
 ![WF](./images/wfpwlb3.png)
 
@@ -197,66 +197,11 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 このタスクの一環として、新しい画像を作成し、Workfrontにドキュメントとしてアップロードする必要があります。 次に、Adobe Expressを使用して自分でそのアセットを作成します。
 
-## Adobe Firefly Services1.2.2.5Adobe Expressを使用したアセットの作成
+## タスク 1.2.2.5 新規ドキュメントを追加し、承認フローを開始するには
 
-[https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"} に移動します。 プロンプト `a neon rabbit running very fast through space` を入力し、「**生成**」をクリックします。
+この演習では、次のアセットをダウンロードして使用する必要があります。[timetravelnow.png](./images/timetravelnow.png)
 
-![GSPeM](./images/gsasset1.png)
-
-その後、複数の画像が生成されます。 最も気に入った画像を選択し、画像上の **共有** アイコンをクリックして、「**Adobe Expressで開く**」を選択します。
-
-![GSPeM](./images/gsasset2.png)
-
-生成した画像がAdobe Expressで編集できるようになります。 次に、画像に CitiSignal ロゴを追加する必要があります。 それには、**Brands** に移動します。
-
-![GSPeM](./images/gsasset3.png)
-
-CitiSignal ブランドテンプレートが表示されます。 GenStudio for Performance Marketingで作成されたものがAdobe Expressに表示されます。 名前に `CitiSignal` が含まれるブランドテンプレートをクリックして選択します。
-
-![GSPeM](./images/gsasset4.png)
-
-**ロゴ** に移動し、**白** Citignal ロゴをクリックして画像にドロップします。
-
-![GSPeM](./images/gsasset5.png)
-
-CitiSignal ロゴは、画像の中央からそれほど遠くない位置に配置します。
-
-![GSPeM](./images/gsasset6.png)
-
-**テキスト** に移動します。
-
-![GSPeM](./images/gsasset6a.png)
-
-「**テキストを追加**」をクリックします。
-
-![GSPeM](./images/gsasset6b.png)
-
-テキスト `Timetravel now!` を入力し、フォントカラーとフォントサイズを変更し、テキストを **太字** に設定して、これに類似した画像が表示されるようにします。
-
-![GSPeM](./images/gsasset6c.png)
-
-次に、「**共有**」をクリックします。
-
-![GSPeM](./images/gsasset7.png)
-
-「**AEM Assets**」を選択します。
-
-![GSPeM](./images/gsasset8.png)
-
-ファイル名を `CitiSignal - Neon Rabbit - Timetravel now!` に変更します。
-**フォルダーを選択** をクリックします。
-
-![GSPeM](./images/gsasset9.png)
-
-AEM Assets CS リポジトリ（`--aepUserLdap-- - CitiSignal` という名前）を選択し、フォルダー `--aepUserLdap-- - CitiSignal Fiber Campaign` を選択します。 「**選択**」をクリックします。
-
-![GSPeM](./images/gsasset11.png)
-
-この画像が表示されます。 **1 個のアセットをアップロード** をクリックします。 これで、画像がAEM Assets CS にアップロードされます。
-
-![GSPeM](./images/gsasset12.png)
-
-## タスク 1.2.2.6 新規ドキュメントを追加し、承認フローを開始するには
+![WF](./images/timetravelnow.png)
 
 **タスクの詳細** 画面に戻ります。 **ドキュメント** に移動します。 「**+新規追加」をクリックし** AEM Assets CS リポジトリを選択します。このリポジトリには `--aepUserLdap-- - CitiSignal` という名前を付ける必要があります。
 
@@ -300,35 +245,11 @@ AEM Assets CS リポジトリ（`--aepUserLdap-- - CitiSignal` という名前�
 
 次に、Adobe Expressで行うデザインの変更を行う必要があります。
 
-## 1.2.2.7 Adobe Expressでデザインを変更する
+## 1.2.2.6 ドキュメントの新しいバージョンをタスクに追加
 
-[https://new.express.adobe.com/your-stuff/files](https://new.express.adobe.com/your-stuff/files) に移動し、前に作成した画像を再度開きます。
+この演習では、[getonboard.png](./images/getonboard.png) をダウンロードしてアセットを使用する必要があります
 
-![WF](./images/wfp25a.png)
-
-CTAのテキストを `Get On Board Now!` に変更します。
-
-![WF](./images/wfp25b.png)
-
-「**共有**」をクリックし、「**AEM Assets**」を選択します。
-
-![WF](./images/wfp25c.png)
-
-`CitiSignal - Neon Rabbit - Get On Board Now!` という名前を入力し、**フォルダーを選択** をクリックして宛先フォルダーを選択します。
-
-![WF](./images/wfp25d.png)
-
-AEM Assets CS リポジトリ（`--aepUserLdap-- - CitiSignal` という名前）を選択し、フォルダー `--aepUserLdap-- - CitiSignal Fiber Campaign` を選択します。 「**選択**」をクリックします。
-
-![WF](./images/wfp25e.png)
-
-**1 個のアセットをアップロード** をクリックします。
-
-![WF](./images/wfp25f.png)
-
-これで、新しいアセットが作成され、AEM Assetsに保存されました。
-
-## 1.2.2.8 ドキュメントの新しいバージョンをタスクに追加
+![WF](./images/getonboard.png)
 
 Adobe Workfrontのタスクビューで、承認されなかった古い画像ファイルを選択します。 次に、「**+新規追加**」をクリックし、「**バージョン**」を選択してから、`--aepUserLdap-- - CitiSignal` という名前が付くAEM Assets CS リポジトリを選択します。
 
@@ -394,7 +315,7 @@ Adobe Workfrontのタスクビューで、承認されなかった古い画像�
 
 ![WF](./images/wfp37c.png)
 
-## 1.2.2.9 AEM Assetsでファイルを表示
+## 1.2.2.7 AEM Assetsでファイルを表示
 
 AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という名前のフォルダーに移動します。
 
@@ -408,6 +329,6 @@ AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という�
 
 ![WF](./images/wfppaem3.png)
 
-[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

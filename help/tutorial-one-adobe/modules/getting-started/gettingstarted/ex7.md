@@ -4,10 +4,10 @@ description: はじめに – Postmanの設定
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -15,23 +15,29 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobeの社員の場合は、手順に従って [PostBuster のインストール &#x200B;](./ex8.md){target="_blank"} を行ってください。
+>Adobeの社員の場合は、手順に従って [PostBuster のインストール ](./ex8.md){target="_blank"} を行ってください。
+
+## ビデオ
+
+このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
 
 ## Postman環境のダウンロード
 
 [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動し、プロジェクトを開きます。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopr.png)
+![Adobe I/O新規統合 ](./images/iopr.png)
 
 **Firefly - Firefly Services** API をクリックします。 次に、「**Postman用にダウンロード**」をクリックし、「**OAuth サーバー間**」を選択してPostman環境をダウンロードします。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopm.png)
+![Adobe I/O新規統合 ](./images/iopm.png)
 
 ## Adobe I/Oに対するPostman認証
 
 [Postman Downloads](https://www.postman.com/downloads/){target="_blank"} で、OS に関連するバージョンのPostmanをダウンロードしてインストールします。
 
-![Adobe I/O新規統合 &#x200B;](./images/getstarted.png)
+![Adobe I/O新規統合 ](./images/getstarted.png)
 
 アプリケーションを起動します。
 
@@ -47,7 +53,7 @@ Postmanには、環境とコレクションという 2 つのコンセプトが�
 
 [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} をローカルデスクトップにダウンロードします。
 
-![Adobe I/O新規統合 &#x200B;](./images/pmfolder.png)
+![Adobe I/O新規統合 ](./images/pmfolder.png)
 
 **postman-ff.zip** ファイルには次のファイルがあります。
 
@@ -62,23 +68,23 @@ Postmanには、環境とコレクションという 2 つのコンセプトが�
 - `Frame.io V4 - Tech Insiders.postman_collection.json`
 - `oauth_server_to_server.postman_environment.json`
 
-![Adobe I/O新規統合 &#x200B;](./images/pmfolder1.png)
+![Adobe I/O新規統合 ](./images/pmfolder1.png)
 
 Postmanで、「**読み込み**」を選択します。
 
-![Adobe I/O新規統合 &#x200B;](./images/postmanui.png)
+![Adobe I/O新規統合 ](./images/postmanui.png)
 
 **ファイル** を選択します。
 
-![Adobe I/O新規統合 &#x200B;](./images/choosefiles.png)
+![Adobe I/O新規統合 ](./images/choosefiles.png)
 
 フォルダーからすべてのファイルを選択し、「**開く**」および「**読み込み** を選択します。
 
-![Adobe I/O新規統合 &#x200B;](./images/selectfiles.png)
+![Adobe I/O新規統合 ](./images/selectfiles.png)
 
 **インポート** をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/impconfirm.png)
+![Adobe I/O新規統合 ](./images/impconfirm.png)
 
 これで、API を使用してFirefly Servicesとの対話を開始するためにPostmanで必要なすべてが揃いました。
 
@@ -120,8 +126,8 @@ Adobe I/O **bearer-token** には、特定の値（非常に長い access_token�
 
 ## 次の手順
 
-[&#x200B; インストールするアプリケーション &#x200B;](./ex9.md){target="_blank"} に移動します
+[ インストールするアプリケーション ](./ex9.md){target="_blank"} に移動します
 
-[&#x200B; はじめに &#x200B;](./getting-started.md){target="_blank"} に戻る
+[ はじめに ](./getting-started.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

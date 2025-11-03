@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -27,32 +27,42 @@ GenStudio for Performance Marketing アドオンは、組織のコンテンツ�
 - App Builderへのアクセス
 - Amazon AWS S3 バケットへのアクセス
 
+## ビデオ
+
+このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+
+>[!NOTE]
+>
+>このビデオはまだオーディオがありません。 音声が利用可能になると、新しいバージョンがアップロードされます。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
+
 ## 演習
 
 [1.6.1 Adobe IO とApp Builder](./ex1.md){target="_blank"}
 
 この演習では、App Builderを使用してAdobe IO プロジェクトを設定します。
 
-[1.6.2 AWS S3 バケット &#x200B;](./ex2.md){target="_blank"} 作成
+[1.6.2 AWS S3 バケット ](./ex2.md){target="_blank"} 作成
 
 この演習では、Amazon AWS S3 バケットと IAM ユーザーを作成します。
 
-[1.6.3 外部 DAM アプリの作成とデプロイ &#x200B;](./ex3.md){target="_blank"}
+[1.6.3 外部 DAM アプリの作成とデプロイ ](./ex3.md){target="_blank"}
 
 この演習では、事前定義済みテンプレートを使用して外部 DAM アプリを作成します。
 
-[1.6.4 アプリを非公開で公開する &#x200B;](./ex4.md){target="_blank"}
+[1.6.4 アプリを非公開で公開する ](./ex4.md){target="_blank"}
 
 この演習では、アプリを非公開で公開します。
 
-[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
+[ 概要とメリット ](./summary.md){target="_blank"}
 
 このモジュールの概要とメリットの概要
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](../../../overview.md){target="_blank"} に戻る
