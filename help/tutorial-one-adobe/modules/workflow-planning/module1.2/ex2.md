@@ -81,7 +81,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 >[!NOTE]
 >
->作成および実行した自動処理を使用して、[Workfront計画 ](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
+>作成および実行した自動処理を使用して、[Workfront計画 &#x200B;](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
 
 ![WF](./images/wfp6b.png)
 
@@ -162,7 +162,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfpwlb2.png)
 
-**2}Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0}Designer} のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
+**2&rbrace;Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0&rbrace;Designer&rbrace; のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
 
 ![WF](./images/wfpwlb3.png)
 
@@ -329,6 +329,6 @@ AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Campaign` という名前�
 
 ![WF](./images/wfppaem3.png)
 
-[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
