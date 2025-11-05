@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1388'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 # 1 つのAdobe技術チュートリアル {#tutorial-one-adobe}
 
 + [チュートリアルの概要](/help/tutorial-one-adobe/overview.md)
-+ [コンテンツサプライチェーンに関するGenStudioの技術的イネーブルメント](/help/tutorial-one-adobe/genstudiocsc.md)
++ [コンテンツSupply chain向けGenStudioのテクニカルイネーブルメント](/help/tutorial-one-adobe/genstudiocsc.md)
 + [コンテンツステータス](/help/tutorial-one-adobe/status.md)
 + [完了](/help/tutorial-one-adobe/completion.md)
 
@@ -56,17 +56,15 @@ ht-degree: 3%
    + 1.2 Workfront Fusion によるCreative ワークフローの自動化 {#crpr2}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Workfront Fusion の概要](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
-      + [1.2.2 Workfront Fusion 内でのAdobe API の使用](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
-      + [1.2.3 Workfront Fusion によるプロセスの自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
-      + [1.2.4 コネクタを使用した自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.5 Frame.io とWorkfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [1.2.6 Workfront Fusion とAEM Assetsの Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.2 コネクタを使用した自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.3 Frame.io とWorkfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.4 Workfront Fusion とAEM Assetsの Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
       + [1.3.1 設定：ブランド](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 設定：ペルソナ、製品、テンプレート](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3 Meta に対する Campaign のアクティブ化](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.3 Metaへの Campaign のアクティベーション](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [1.3.4 AJO用のメールエクスペリエンスの作成](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe ExpressとAdobe Experience Cloud {#crpr4}
@@ -126,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federated Audience の構成 {#dc13}

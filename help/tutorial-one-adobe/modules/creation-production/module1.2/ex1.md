@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion11.png)
 
-**変数名**:**CONST_client_id** とその **変数値** を入力し、「**追加**」を選択します。
+**変数名** と **`CONST_client_id`** およびその **変数値** を入力し、「**追加**」を選択します。
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion13.png)
 
-**変数名**:**CONST_client_secret** とその **変数値** を入力し、「**追加**」を選択します。
+**変数名**:**`CONST_client_secret`** とその **変数値** を入力し、「**追加**」を選択します。
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion15.png)
 
-**変数名**:**CONST_scope** とその **変数値** を入力し、「**追加**」を選択します。
+**変数名**:**`CONST_scope`** とその **変数値** を入力し、「**追加**」を選択します。
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -194,7 +194,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion36.png)
 
-**変数名** を `bearer_token` に設定します。 動的な **変数値** として「`access_token`」を選択します。 「**追加**」を選択します。
+**変数名** を `bearer_token` に設定します。 動的な `access_token` 変数値 **として「**」を選択します。 「**追加**」を選択します。
 
 ![WF Fusion](./images/wffusion37.png)
 
@@ -230,7 +230,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion45.png)
 
-次に、シナリオの名前を `--aepUserLdap-- - Adobe I/O Authentication` に変更します。
+次に、シナリオの名前を `--aepUserLdap-- - Firefly + Photoshop` に変更します。
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,8 +240,8 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ## 次の手順
 
-[Workfront Fusion 内でのAdobe API の使用 &#x200B;](./ex2.md){target="_blank"} に移動します。
+[ コネクタを使用した自動化 ](./ex4.md){target="_blank"} を参照してください
 
-[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

@@ -4,9 +4,9 @@ description: Workfrontでのプルーフ
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 >[!NOTE]
 >
->作成および実行した自動処理を使用して、[Workfront計画 &#x200B;](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
+>作成および実行した自動処理を使用して、[Workfront計画 ](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
 
 ![WF](./images/wfp6b.png)
 
@@ -162,7 +162,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfpwlb2.png)
 
-**2&rbrace;Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0&rbrace;Designer&rbrace; のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
+**2}Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0}Designer} のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
 
 ![WF](./images/wfpwlb3.png)
 
@@ -197,25 +197,25 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 このタスクの一環として、新しい画像を作成し、Workfrontにドキュメントとしてアップロードする必要があります。 次に、Adobe Expressを使用して自分でそのアセットを作成します。
 
-## タスク 1.2.2.5 新規ドキュメントを追加し、承認フローを開始するには
+## 新しいドキュメントをプロジェクトに追加し、承認フローを開始してくださ 1.2.2.5
 
 この演習では、次のアセットをダウンロードして使用する必要があります。[timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-**タスクの詳細** 画面に戻ります。 **ドキュメント** に移動します。 「**+新規追加」をクリックし** AEM Assets CS リポジトリを選択します。このリポジトリには `--aepUserLdap-- - CitiSignal` という名前を付ける必要があります。
+**プロジェクト詳細** 画面に戻ります。 **ドキュメント** に移動します。 「**+新規追加」をクリックし** 「**ドキュメント**」を選択します。
 
 ![WF](./images/wfp10.png)
 
-ダブルクリックして、フォルダー `--aepUserLdap-- CitiSignal Fiber Campaign` を開きます。
+クリックしてファイル `timetravelnow.png` を選択します。 「**開く**」をクリックします。
 
 ![WF](./images/wfp10a.png)
 
-前の手順で作成したファイル（「CitiSignal - Neon rabbit - Timetravel Now **という名前）を選択します。png**. 「**選択**」をクリックします。
+これで完了です。
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-これで完了です。 アップロードしたドキュメントにポインタを合わせます。 「**プルーフを作成**」をクリックして、「**詳細プルーフ**」を選択します。
+アップロードしたドキュメントにポインタを合わせます。 「**プルーフを作成**」をクリックして、「**詳細プルーフ**」を選択します。
 
 ![WF](./images/wfp13.png)
 
@@ -329,6 +329,6 @@ AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という�
 
 ![WF](./images/wfppaem3.png)
 
-[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
