@@ -1,448 +1,393 @@
 ---
-title: コネクタを使用した自動化
-description: コネクタを使用した自動化
+title: Workfront Fusion とAEM Assetsの間の Frame I/O
+description: Workfront Fusion とAEM Assetsの間の Frame I/O
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
+source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.4 コネクタを使用した自動化
+# 1.2.4 Workfront Fusion からAEM Assetsへのフレーム I/O
 
-次に、Photoshop用Workfront Fusion の標準コネクタの使用を開始し、Firefly Text-2-Image リクエストとPhotoshop リクエストを 1 つのシナリオに接続します。
+>[!IMPORTANT]
+>
+>この演習を完了するには、動作しているAEM Assets CS オーサー環境にアクセスできる必要があります。 演習 [Adobe Experience Manager Cloud ServiceおよびEdge Delivery Servicesに従うと ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} このような環境にアクセスできます。
 
-## 1.2.4.1 変数の更新
+>[!IMPORTANT]
+>
+>以前にAEM Assets CS プログラムをオーサー環境で設定している場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で停止しないように、今すぐ休止解除プロセスを開始することをお勧めします。
 
-コネクタのセットアップを続行する前に、次の変数を **Initialize Constants** モジュールに追加する必要があります。
+前の演習では、Adobe Firefly、Photoshop API およびWorkfront Fusion を使用してAdobe Photoshop PSD ファイルのバリエーションを自動的に生成するシナリオを設定しました。 そのシナリオの出力は、新しいPhotoshop PSD ファイルでした。
 
-- `AZURE_STORAGE_URL`
-- `AZURE_STORAGE_CONTAINER`
-- `AZURE_STORAGE_SAS_READ`
-- `AZURE_STORAGE_SAS_WRITE`
+ただし、ビジネスチームにはPSD ファイルは必要なく、PNG ファイルまたはJPG ファイルが必要です。 この演習では、新しい自動処理を設定して、フレーム I/O 内のアセットが承認されると PNG ファイルが生成され、その PNG ファイルがAEM Assetsに自動的に保存されるようにします。
 
-最初のノードに戻り、「**定数を初期化**」を選択し、次にこれらの変数ごとに **項目を追加** を選択します。
+## 新 1.2.4.1 いシナリオを作成するには
 
-![WF Fusion](./images/wffusion69.png)
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **Workfront Fusion** を開きます。
 
-| キー | 値の例 |
+![WF Fusion](./images/wffusion1.png)
+
+左側のメニューで、**シナリオ** に移動し、フォルダー `--aepUserLdap--` を選択します。 「**新しいシナリオを作成**」をクリックします。
+
+![ フレーム IO](./images/aemf1.png)
+
+`--aepUserLdap-- - Asset Approved PNG AEM Assets` という名前を使用します。 次に、**?モジュ** ルに検索語 `webhook` を入力し、「**Webhook**」をクリックします。
+
+![ フレーム IO](./images/aemf2.png)
+
+**カスタム Webhook** をクリックします。
+
+![ フレーム IO](./images/aemf3.png)
+
+**追加** をクリックして、新しい Webhook を作成します。
+
+![ フレーム IO](./images/aemf4.png)
+
+`--aepUserLdap-- - Frame.io Webhook` という名前を使用します。 「**保存**」をクリックします。
+
+![ フレーム IO](./images/aemf5.png)
+
+この画像が表示されます。 **アドレスをクリップボードにコピー** をクリックします。
+
+![ フレーム IO](./images/aemf6.png)
+
+## 1.2.4.2 Frame.io での Webhook の設定
+
+Postmanに移動し、コレクション **2}Adobe IO - OAuth** でリクエスト {POST - アクセストークンの取得 **を開きます。**&#x200B;次に、「**送信**」をクリックして、新しい **access_token** をリクエストします。
+
+![ フレーム IO](./images/frameV4api2.png)
+
+左側のメニューで、**コレクション** に戻ります。 **Webhook** フォルダーのコレクション **Frame.io V4 - Tech Insiders** でリクエスト **POST - Create Webhook** を開きます。
+
+リクエストの **本文** に移動します。 フィールド **name** を `--aepUserLdap--  - Fusion to AEM Assets` に変更し、フィールド **url** を、Workfront Fusion からコピーした Webhook URL の値に変更します。
+
+「**送信**」をクリックします。
+
+![ フレーム IO](./images/framewh1.png)
+
+これで、Frame.io V4 カスタムアクションが作成されました。
+
+![ フレーム IO](./images/framewh2.png)
+
+[https://next.frame.io/project](https://next.frame.io/project){target="_blank"} に移動し、以前に作成したプロジェクト（`--aepUserLdap--` という名前）に移動して、フォルダー **CitiSignal Fiber Campaign** を開きます。 前の演習で作成したアセットが表示されます。
+
+![ フレーム IO](./images/aemf11a.png)
+
+フィールド **ステータス** をクリックし、ステータスを **処理中** に変更します。
+
+![ フレーム IO](./images/aemf12.png)
+
+Workfront Fusion に戻ります。 接続が **正常に決定** されたことがわかります。
+
+![ フレーム IO](./images/aemf13.png)
+
+**保存** をクリックして変更を保存し、**1 回実行** をクリックして簡単なテストを実行します。
+
+![ フレーム IO](./images/aemf14.png)
+
+Frame.io に戻り、「進行中 **フィールドをクリックして、ステータスを** レビューが必要 **に変更し** す。
+
+![ フレーム IO](./images/aemf15.png)
+
+Workfront Fusion に戻り、「**カスタム Webhook** モジュールのバブルをクリックします。
+
+バブルの詳細ビューには、Frame.io から受信したデータが表示されます。 様々な ID が表示されます。例えば、「**resource.id**」フィールドには、アセットの Frame.io 内の一意の ID **citisignal-fiber.psd** が表示されます。
+
+![ フレーム IO](./images/aemf16.png)
+
+## 1.2.4.3 Frame.io からアセットの詳細を取得
+
+これで、カスタム Webhook を介して Frame.io とWorkfront Fusion 間の通信が確立されたので、ステータスラベルが更新されたアセットに関する詳細を取得できます。 これを行うには、前の演習と同様に、Workfront Fusion で Frame.io コネクタを再び使用します。
+
+**カスタム Webhook** オブジェクトにポインタを合わせて、「**+**」アイコンをクリックすると、別のモジュールが追加されます。
+
+![ フレーム IO](./images/aemf18a.png)
+
+検索語句 `frame` を入力します。 **Frame.io** をクリックします。
+
+![ フレーム IO](./images/aemf18.png)
+
+**Frame.io** をクリックします。
+
+![ フレーム IO](./images/aemf19.png)
+
+「**カスタム API 呼び出しを行う**」をクリックします。
+
+![ フレーム IO](./images/aemf20.png)
+
+接続が、前の演習で作成したのと同じ接続に設定されており、`--aepUserLdap-- - Adobe I/O - Frame.io S2S` という名前であることを確認します。
+
+![ フレーム IO](./images/aemf21.png)
+
+モジュール **Frame.io - カスタム API 呼び出しを行う** の設定については、URL `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}` を使用します。
+
+>[!NOTE]
+>
+>Workfront Fusion の変数は、`{{1.account.id}}` と `{{1.resource.id}}` の構文を使用して手動で指定できます。 変数内の数値は、シナリオ内のモジュールを参照します。 この例では、シナリオの最初のモジュールが **Webhook** と呼ばれ、シーケンス番号が **1** であることがわかります。 つまり、変数 `{{1.account.id}}` と `{{1.resource.id}}` は、シーケンス番号 1 のモジュールからそのフィールドにアクセスします。 シーケンス番号は異なる場合があるので、変数をコピー/貼り付ける際には注意し、常に使用するシーケンス番号が正しいことを確認してください。
+
+次に、「**クエリ文字列** の下の「**+項目を追加**」をクリックします。
+
+![ フレーム IO](./images/aemf21a.png)
+
+これらの値を入力し、「**追加**」をクリックします。
+
+| キー | 値 |
 |:-------------:| :---------------:| 
-| `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
-| `AZURE_STORAGE_CONTAINER` | `vangeluw` |
-| `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
-| `AZURE_STORAGE_SAS_WRITE` | `?sv=2023-01-03&st=2025-01-13T17%3A21%3A09Z&se=2025-01-14T17%3A21%3A09Z&sr=c&sp=racwl&sig=FD4m0YyyqUj%2B5T8YyTFJDi55RiTDC9xKtLTgW0CShps%3D` |
+| `include` | `media_links.original` |
 
-変数を見つけるには、Postmanに戻って **環境変数** を開きます。
+![ フレーム IO](./images/aemf21b.png)
 
-![Azure ストレージ &#x200B;](./../module1.1/images/az105.png)
+これで、このが得られます。 「**OK**」をクリックします。
 
-これらの値をWorkfront Fusion にコピーし、これら 4 つの変数のそれぞれに新しい項目を追加します。
-
-画面は次のようになります。 **OK** を選択します。
-
-![WF Fusion](./images/wffusion68.png)
-
-## Webhook1.2.4.2 使用してシナリオをアクティブ化するには
-
-これまでのところ、シナリオを手動で実行してテストしてきました。 次に、Webhook を使用してシナリオを更新し、外部環境からアクティブ化できるようにします。
-
-**+** を選択し、**Webhook** を検索してから **Webhook** を選択します。
-
-![WF Fusion](./images/wffusion216.png)
-
-**Custom Webhook** を選択します。
-
-![WF Fusion](./images/wffusion217.png)
-
-**Custom Webhook** モジュールをシナリオの最初にドラッグします。 次に、「**clock**」アイコンを選択し、「**Custom Webhook**」モジュールにドラッグします。
-
-![WF Fusion](./images/wffusion217a.png)
-
-この画像が表示されます。 次に、最初のモジュールの赤い点を、2 番目のモジュールの紫色の点に向かってドラッグします。
-
-![WF Fusion](./images/wffusion217b.png)
-
-この画像が表示されます。 新規、「**カスタム Webhook**」モジュールをクリックします。
-
-![WF Fusion](./images/wffusion217c.png)
-
-「**追加**」をクリックします。
-
-![WF Fusion](./images/wffusion218.png)
-
-**Webhook 名** を `--aepUserLdap-- - Firefly + Photoshop Webhook` に設定します。 「**保存**」をクリックします。
-
-![WF Fusion](./images/wffusion219.png)
-
-これで、Webhook URL が使用できるようになります。 **アドレスをクリップボードにコピー** をクリックして、URL をコピーします。
-
-![WF Fusion](./images/wffusion221.png)
-
-Postmanを開き、コレクションに新しいフォルダーを追加します **FF - Firefly Services テクニカルインサイダー**。
-
-![WF Fusion](./images/wffusion222.png)
-
-フォルダーに `--aepUserLdap-- - Workfront Fusion` という名前を付けます。
-
-![WF Fusion](./images/wffusion223.png)
-
-先ほど作成したフォルダーで、3 つのドット **...** を選択し、「**リクエストを追加**」を選択します。
-
-![WF Fusion](./images/wffusion224.png)
-
-**メソッドタイプ** を **POST** に設定し、Webhook の URL をアドレスバーに貼り付けます。
-
-![WF Fusion](./images/wffusion225.png)
-
-変数要素を外部ソースからWorkfront Fusion シナリオに提供できるように、カスタム本文を送信する必要があります。
-
-**本文** に移動し、「**生**」を選択します。
-
-![WF Fusion](./images/wffusion226.png)
-
-以下のテキストをリクエストの本文に貼り付けます。 **送信** を選択します。
-
-```json
-{
-    "psdTemplate": "citisignal-fiber.psd",
-    "xlsFile": "placeholder",
-    "prompt":"misty meadows",
-    "cta": "Buy this now!",
-    "button": "Click here to buy!"
-}
-```
-
-![WF Fusion](./images/wffusion229.png)
-
-Workfront Fusion に戻ると、カスタム Webhook に「**正常に決定されました**」というメッセージが表示されます。
-
-![WF Fusion](./images/wffusion227.png)
-
-## 1.2.4.3 Adobe Firefly コネクタ
-
-**+** アイコンをクリックして、新しいモジュールを追加します。
-
-![WF Fusion](./images/wffcff2.png)
-
-検索語句 `Adobe Firefly` を入力し、「**Adobe Firefly**」を選択します。
-
-![WF Fusion](./images/wffcff2a.png)
-
-**画像を生成** を選択します。
-
-![WF Fusion](./images/wffcff3.png)
-
-**Adobe Firefly** モジュールをクリックして開き、「**追加**」をクリックして新しい接続を作成します。
-
-![WF Fusion](./images/wffcff5.png)
-
-次のフィールドに入力します。
-
-- **接続名**:`--aepUserLdap-- - Firefly connection` を使用します。
-- **環境**: **実稼動** を使用します。
-- **タイプ**: **個人用アカウント** を使用します。
-- **クライアント ID**:**という名前のAdobe I/O プロジェクトから** クライアント ID`--aepUserLdap-- - One Adobe tutorial` をコピーします。
-- **クライアント秘密鍵**: **クライアント秘密鍵** を `--aepUserLdap-- - One Adobe tutorial` という名前のAdobe I/O プロジェクトからコピーします。
-
-Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [&#x200B; で確認でき &#x200B;](https://developer.adobe.com/console/projects.){target="_blank"} す。
-
-![WF Fusion](./images/wffc20.png)
-
-すべてのフィールドに入力したら、「**続行**」をクリックします。 すると、接続が自動的に検証されます。
-
-![WF Fusion](./images/wffcff6.png)
-
-次に、受信した **Custom Webhook** によってシナリオに提供される **prompt** 変数を選択します。
-
-![WF Fusion](./images/wffcff7.png)
-
-**モデルバージョン** **プロンプト** を **image4 standard** に設定します。 「**OK**」をクリックします。
-
-![WF Fusion](./images/wffcff7b.png)
+![ フレーム IO](./images/aemf22.png)
 
 「**保存**」をクリックして変更を保存し、「**1 回実行**」をクリックして設定をテストします。
 
-![WF Fusion](./images/wffcff8.png)
+![ フレーム IO](./images/aemf23.png)
 
-Postmanに移動し、リクエストのプロンプトを確認して、「**送信**」をクリックします。
+Frame.io に戻り、ステータスを **処理中** に変更します。
 
-![WF Fusion](./images/wffcff8a.png)
+![ フレーム IO](./images/aemf24.png)
 
-「送信」をクリックしたら、Workfront Fusion に戻り、**Adobe Firefly** モジュールのバブルアイコンをクリックして詳細を確認します。
+Workfront Fusion に戻り、「**Frame.io - カスタム API 呼び出しを行う**」モジュールのバブルをクリックします。 同様の概要が表示されます。
 
-![WF Fusion](./images/wffcff9.png)
+![ フレーム IO](./images/aemf25.png)
 
-**OUTPUT** から **Details** / **url** に移動し、**Adobe Firefly** で生成された画像の URl を見つけます。
+次に、フィルターを設定して、ステータスが **承認済み** のアセットについてのみ PNG ファイルがレンダリングされるようにします。 これを行うには、モジュール **Custom Webhook** と **Frame.io - カスタム API 呼び出しを行う** の間にある **レンチ** アイコンをクリックして、**フィルターを設定** を選択します。
 
-![WF Fusion](./images/wffcff10.png)
+![ フレーム IO](./images/aemf25a.png)
 
-URL をコピーして、ブラウザーで貼り付けます。 Postman リクエストから送信されたプロンプト（この場合は **Misty Meadows** を表す画像が表示されます。
+次のフィールドを設定します。
 
-![WF Fusion](./images/wffcff11.png)
+- **ラベル**:`Status = Approved` を使用します。
+- **条件**: `{{1.metadata.value[]}}`。
+- **基本演算子**:「**次と等しい**」を選択します。
+- **値**:`Approved`。
 
-## 1.2.4.2 PSD ファイルの背景の変更
+「**OK**」をクリックします。
 
-次に、標準搭載のコネクタを使用してシナリオを更新し、よりスマートにします。 また、Fireflyからの出力をFireflyに接続して、Photoshopの「画像を生成」アクションからの出力を使用してPSD ファイルの背景画像が動的に変化するようにします。
+![ フレーム IO](./images/aemf35.png)
 
-この画像が表示されます。 次に、**Adobe Firefly** モジュールにポインタを合わせて、「**+**」アイコンをクリックします。
+これで完了です。 「**保存**」をクリックして変更を保存します。
 
-![WF Fusion](./images/wffc15.png)
+![ フレーム IO](./images/aemf35a.png)
 
-検索メニューで、「`Photoshop`」と入力して「**Adobe Photoshop**」アクションをクリックします。
+## 1.2.4.4 PNG に変換
 
-![WF Fusion](./images/wffc16.png)
+モジュール **Frame.io - カスタム API 呼び出しを行う** にカーソルを合わせ、「**+**」アイコンをクリックしてください。
 
-**PSDの編集内容を適用** を選択します。
+![ フレーム IO](./images/aemf27.png)
 
-![WF Fusion](./images/wffc17.png)
+検索語句 `photoshop` を入力し、「**Adobe Photoshop**」をクリックします。
 
-この画像が表示されます。 **追加** をクリックして、Adobe Photoshopへの新しい接続を追加します。
+![ フレーム IO](./images/aemf28.png)
 
-![WF Fusion](./images/wffc18.png)
+**画像形式を変換** をクリックします。
 
-次のように接続を設定します。
+![ フレーム IO](./images/aemf29.png)
 
-- 接続の種類：**Adobe Photoshop （サーバー間）を選択してください**
-- 接続名：`--aepUserLdap-- - Adobe I/O` と入力します
-- クライアント ID: クライアント ID を貼り付けます
-- クライアント秘密鍵：クライアント秘密鍵を貼り付けます
+以前に作成した接続（**という名前** をフィールド `--aepUserLdap-- - Adobe IO` 接続が使用していることを確認します。
 
-「**続行**」をクリックします。
+**Input** の下で、「**Storage**」フィールドを **External** に設定し、「**File Location**」をモジュールが返す変数 **Original** を使用するように設定します **Frame.io - カスタム API 呼び出しを行う**。
 
-![WF Fusion](./images/wffc19.png)
+次に、「出力 **の下の「項目を追加****をクリック** ます。
 
-**クライアント ID** と **クライアントシークレット** を見つけるには、[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動し、`--aepUserLdap-- One Adobe tutorial` という名前のAdobe I/O プロジェクトを開きます。 **OAuth サーバー間** に移動して、クライアント ID とクライアントシークレットを検索します。 これらの値をコピーして、Workfront Fusion の接続設定に貼り付けます。
+![ フレーム IO](./images/aemf30.png)
 
-![WF Fusion](./images/wffc20.png)
+**出力** 設定については、フィールド **ストレージ** を **Fusion 内部ストレージ** に設定し、**タイプ** を **image/png** に設定します。 「**追加**」をクリックします。
 
-**続行** をクリックすると、資格情報の検証中にポップアップウィンドウが短時間表示されます。 完了したら、次の画面が表示されます。
+![ フレーム IO](./images/aemf31.png)
 
-![WF Fusion](./images/wffc21.png)
+「**OK**」をクリックします。
 
-次に、Fusion で操作するPSD ファイルの場所を入力する必要があります。 **ストレージ** には **Azure** を選択し、**ファイルの場所** には `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}` と入力します。 2 番目の `/` の隣にカーソルを置きます。 次に、使用可能な変数を確認し、下にスクロールして変数 **psdTemplate** を見つけます。 変数 **psdTemplate** をクリックして選択します。
-
-![WF Fusion](./images/wffc22.png)
-
-この画像が表示されます。
-
-![WF Fusion](./images/wffc23.png)
-
-**レイヤー** が表示されるまで下にスクロールします。 **項目を追加** をクリックします。
-
-![WF Fusion](./images/wffc24.png)
-
-この画像が表示されます。 次に、ファイルの背景に使用するPhotoshop PSD テンプレートのレイヤーの名前を入力する必要があります。
-
-![WF Fusion](./images/wffc25.png)
-
-**citisignal-fiber.psd** ファイルには、背景に使用するレイヤーがあります。 この例では、レイヤーの名前は **2048 x 2048-background** です。
-
-![WF Fusion](./images/wffc26.png)
-
-Workfront Fusion ダイアログに、**2048x2048-background** という名前を貼り付けます。
-
-![WF Fusion](./images/wffc27.png)
-
-**入力** が表示されるまで下にスクロールします。 ここで、背景レイヤーに挿入する必要があるものを定義する必要があります。 この場合、動的に生成された画像を含む **Adobe Firefly** モジュールの出力を選択する必要があります。
-
-**ストレージ** については、「**外部**」を選択します。 **ファイルの場所** の場合は、`{{XX.details[].url}}`Adobe Firefly **モジュールの出力から変数** をコピーして貼り付ける必要がありますが、変数内の **XX** を、**Adobe Firefly** モジュールのシーケンス番号（この例では **5**）に置き換える必要があります。
-
-![WF Fusion](./images/wffc28.png)
-
-次に、**編集** が表示されるまで下にスクロールします。 **編集** を **はい** に設定し、**タイプ** を **レイヤー** に設定します。 「**追加**」をクリックします。
-
-![WF Fusion](./images/wffc29.png)
-
-この画像が表示されます。 次に、アクションの出力を定義する必要があります。 **output** の下の **項目を追加** をクリックします。
-
-![WF Fusion](./images/wffc30.png)
-
-**ストレージ** の場合は **Azure** を選択し、この `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` を **ファイルの場所** の下に貼り付けて、**タイプ** の下の **vnd.adobe.photoshop** を選択します。 クリックして **詳細設定を表示** を有効にします。
-
-![WF Fusion](./images/wffc31.png)
-
-[**詳細設定**] で、[**はい**] を選択して、同じ名前のファイルを上書きします。
-「**追加**」をクリックします。
-
-![WF Fusion](./images/wffc32.png)
-
-これで完了です。 「**OK**」をクリックします。
-
-![WF Fusion](./images/wffc33.png)
+![ フレーム IO](./images/aemf33.png)
 
 「**保存**」をクリックして変更を保存し、「**1 回実行**」をクリックして設定をテストします。
 
-![WF Fusion](./images/wffc33a.png)
+![ フレーム IO](./images/aemf32.png)
 
-Postmanに移動し、リクエストのプロンプトを確認して、「**送信**」をクリックします。
+Frame.io に戻り、「**進行中**」フィールドをクリックして、ステータスを **承認済み** に変更します。
 
-![WF Fusion](./images/wffcff8a.png)
+![ フレーム IO](./images/aemf37.png)
 
-この画像が表示されます。 **Adobe Photoshop - PSDの編集を適用** モジュールのバブルをクリックします。
+Workfront Fusion に戻ります。 シナリオ内のすべてのモジュールが正常に実行されたことがわかります。 **Adobe Photoshop – 画像フォーマットを変換** モジュールのバブルをクリックします。
 
-![WF Fusion](./images/wffc33b.png)
+![ フレーム IO](./images/aemf38.png)
 
-新しいPSD ファイルが正常に生成され、Microsoft Azure ストレージアカウントに保存されたことを確認できます。
+**Adobe Photoshop – 画像形式を変換** モジュールの実行の詳細では、PNG ファイルが生成されたことがわかります。 次の手順では、そのファイルをAEM Assets CS に保存します。
 
-![WF Fusion](./images/wffc33c.png)
+![ フレーム IO](./images/aemf39.png)
 
-## 1.2.4.3 PSD ファイルのテキストレイヤーの変更
+## AEM Assets CS での 1.2.4.5 Store PNG
 
-次に、**Adobe Photoshop - PSDの編集を適用** モジュールにカーソルを合わせ、「**+**」アイコンをクリックします。
+**Adobe Photoshop – 画像形式を変換** モジュールにポインタを合わせて、「**+**」アイコンをクリックします。
 
-![WF Fusion](./images/wffc34.png)
+![ フレーム IO](./images/aemf40.png)
 
-「**Adobe Photoshop**」を選択します。
+検索語句 `aem` を入力し、「**AEM Assets**」を選択します。
 
-![WF Fusion](./images/wffc35.png)
+![ フレーム IO](./images/aemf41.png)
 
-**テキストレイヤーを編集** を選択します。
+**アセットをアップロード** をクリックします。
 
-![WF Fusion](./images/wffc36.png)
+![ フレーム IO](./images/aemf42.png)
 
-この画像が表示されます。 まず、以前に設定済みのAdobe Photoshop接続を選択します（`--aepUserLdap-- Adobe I/O` という名前にする必要があります）。
+ここで、AEM Assets CS への接続を設定する必要があります。 「**追加**」をクリックします。
 
-![WF Fusion](./images/wffc37.png)
+![ フレーム IO](./images/aemf43.png)
 
-**入力ファイル** の場合、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください **Adobe Photoshop - PSDの編集を適用**。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュールのシーケンス番号に置き換えます。Adobe Photoshop - PSDの編集を適用）
+次の設定を使用します。
 
-次に、**レイヤー** の下の「**+項目を追加**」をクリックして、更新する必要があるテキストレイヤーの追加を開始します。
+- **接続の種類**: **AEM Assets as a Cloud Service**。
+- **接続名**: `--aepUserLdap-- AEM Assets CS`。
+- **インスタンス URL**:AEM Assets CS オーサー環境のインスタンス URL を次のようにコピーします。`https://author-pXXXXX-eXXXXXXX.adobeaemcloud.com`
+- **詳細入力オプションにアクセス**:「**JSON を提供**」を選択します。
 
-![WF Fusion](./images/wffc37a.png)
+**テクニカルアカウント資格情報を JSON 形式** で指定する必要があります。 これを行うには、AEM Cloud Managerを使用して従うべき手順がいくつかあります。 その間は、この画面を開いたままにしてください。
 
-2 つの変更を加える必要があります。ファイル **citisignal-fiber.psd** 内のCTA テキストとボタンテキストを更新する必要があります。
+![ フレーム IO](./images/aemf44.png)
 
-レイヤー名を見つけるには、ファイル **citisignal-fiber.psd** を開きます。 ファイルには、call to actionを含むレイヤーの名前が **2048 x 2048-cta** になっていることがわかります。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 選択する組織は `--aepImsOrgName--` です。 次のようなメッセージが表示されます。 クリックしてプログラムを開きます。プログラムの名前は `--aepUserLdap-- - Citi Signal` にします。
 
-![WF Fusion](./images/wffc38.png)
+![ フレーム IO](./images/aemf45.png)
 
-ファイル **citisignal-fiber.psd** 内で、call to actionを含むレイヤーの名前が **2048x2048-button-text** になっていることにも注目してください。
+3 つのドット「**...**」をクリックし、「**Developer Console**」を選択します。
 
-![WF Fusion](./images/wffc44.png)
+![ フレーム IO](./images/aemf46.png)
 
-まず、レイヤー **2048 x 2048-cta** に対して行う必要がある変更を設定する必要があります。 ダイアログの **名前** の下に、**2048x2048-cta** と入力します。
+**Adobeでログイン** をクリックします。
 
-![WF Fusion](./images/wffc39.png)
+![ フレーム IO](./images/aemf47.png)
 
-下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **cta** を選択します。 「**追加**」をクリックします。
+**ツール**/**統合** に移動します。
 
-![WF Fusion](./images/wffc40.png)
+![ フレーム IO](./images/aemf47a.png)
 
-この画像が表示されます。 **レイヤー** の下の「**+項目を追加**」をクリックして、更新する必要がある次のテキストレイヤーの追加を開始します。
+**新しいテクニカルアカウントを作成** をクリックします。
 
-![WF Fusion](./images/wffc40a.png)
+![ フレーム IO](./images/aemf48.png)
 
-ダイアログの **Name** の下に、名前 **2048x2048-button-text** を入力します。
+次のようなメッセージが表示されます。 新しく作成したテクニカルアカウントを開きます。 3 つのドット **...** をクリックし、「**表示**」を選択します。
 
-![WF Fusion](./images/wffc40b.png)
+![ フレーム IO](./images/aemf48a.png)
 
-下にスクロールして **テキスト**/**コンテンツ** を表示します。 Webhook ペイロードから変数 **button** を選択します。 「**追加**」をクリックします。
+同様のテクニカルアカウントトークンペイロードが表示されます。 JSON ペイロード全体をクリップボードにコピーします。
 
-![WF Fusion](./images/wffc40c.png)
+![ フレーム IO](./images/aemf50.png)
 
-この画像が表示されます。
+Workfront Fusion に戻り、完全な JSON ペイロードを「**JSON 形式のテクニカルアカウント資格情報**」フィールドに貼り付けます。 「**続行**」をクリックします。
 
-![WF Fusion](./images/wffc40d.png)
+![ フレーム IO](./images/aemf49.png)
 
-**出力** が表示されるまで下にスクロールします。 **ストレージ** については、「**Azure**」を選択します。 **ファイルの場所** には、次の場所を入力します。 生成される各ファイルの名前が必ず一意になるようにするために使用されるファイル名に、変数 `{{timestamp}}` が追加されることに注意してください。 また、**タイプ** を **vnd.adobe.photoshop** に設定します。
+接続が検証され、成功すると、AEM Assets モジュールで接続が自動的に選択されます。 次にすることは、フォルダーを設定することです。 演習の一環として、新しい専用フォルダーを作成する必要があります。
 
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
+![ フレーム IO](./images/aemf51.png)
 
-**タイプ** を **vnd.adobe.photoshop** に設定します。 「**OK**」をクリックします。
+新しい専用フォルダーを作成するには、[https://experience.adobe.com](https://experience.adobe.com/){target="_blank"} にアクセスしてください。 適切なExperience Cloud インスタンスが選択されていることを確認します。このインスタンスは `--aepImsOrgName--` である必要があります。 次に、**Experience Manager Assets** をクリックします。
 
-![WF Fusion](./images/wffc41.png)
+![ フレーム IO](./images/aemf52.png)
+
+AEM Assets CS 環境で「**選択**」をクリックします。`--aepUserLdap-- - Citi Signal dev` という名前にする必要があります。
+
+![ フレーム IO](./images/aemf53.png)
+
+**アセット** に移動し、「**フォルダーを作成**」をクリックします。
+
+![ フレーム IO](./images/aemf54.png)
+
+`--aepUserLdap-- - CitiSignal Fiber Campaign` という名前を入力し、「作成 **をクリックし** す。
+
+![ フレーム IO](./images/aemf55.png)
+
+これで、フォルダーが作成されました。
+
+![ フレーム IO](./images/aemf56.png)
+
+Workfront Fusion に戻り、「**ここをクリックしてフォルダーを選択** を選択してから、フォルダー `--aepUserLdap-- - CitiSignal Fiber Campaign` を選択します。
+
+![ フレーム IO](./images/aemf57.png)
+
+宛先が `--aepUserLdap-- - CitiSignal Fiber Campaign` に設定されていることを確認します。 次に、**Source ファイル** の下で、「**マップ**」を選択します。
+
+**ファイル名** で、変数 `{{3.filenames[1]}}` を選択します。
+
+**データ** の下で、変数 `{{3.files[1]}}` を選択します。
+
+>[!NOTE]
+>
+>Workfront Fusion の変数は、次の構文を使用して手動で指定できます。`{{3.filenames[1]}}` 変数内の数値は、シナリオ内のモジュールを参照します。 この例では、シナリオの 3 番目のモジュールが **Adobe Photoshop - Convert image format という名前で** シーケンス番号が **3** であることがわかります。 つまり、変数 `{{3.filenames[1]}}` は、シーケンス番号 3 のモジュールからフィールド **filenames[]** にアクセスします。 シーケンス番号は異なる場合があるので、変数をコピー/貼り付ける際には注意し、常に使用するシーケンス番号が正しいことを確認してください。
+
+「**OK**」をクリックします。
+
+![ フレーム IO](./images/aemf58.png)
 
 「**保存**」をクリックして変更を保存します。
 
-![WF Fusion](./images/wffc47.png)
+![ フレーム IO](./images/aemf59.png)
 
-## 1.2.4.4 Webhook 応答
+次に、作成したばかりのテクニカルアカウントに特定の権限を設定する必要があります。 アカウントが **Cloud Manager** の **Developer Console** で作成された際には、**読み取り** アクセス権が付与されていましたが、このユースケースでは、**書き込み** アクセス権が必要です。 それには、AEM CS オーサー環境に移動します。
 
-これらの変更をPhotoshop ファイルに適用した後、次に **Webhook レスポンス** を設定する必要があります。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 選択する組織は `--aepImsOrgName--` です。 クリックしてプログラムを開きます。プログラムの名前は `--aepUserLdap-- - Citi Signal` にします。 次のようなメッセージが表示されます。 オーサー URL をクリックします。
 
-モジュール **Adobe Photoshop - テキストレイヤーを編集にカーソルを合わせ** 「**+**」アイコンをクリックしてください。
+![ フレーム IO](./images/aemf60.png)
 
-![WF Fusion](./images/wffc48.png)
+**Adobeでログイン** をクリックします。
 
-`webhooks` を検索し、「**Webhook**」を選択します。
+![ フレーム IO](./images/aemf61.png)
 
-![WF Fusion](./images/wffc49.png)
+**設定**/**セキュリティ**/**ユーザー** に移動します。
 
-**Webhook 応答** を選択します。
+![ フレーム IO](./images/aemf62.png)
 
-![WF Fusion](./images/wffc50.png)
+クリックして、テクニカルアカウントユーザーアカウントを開きます。
 
-この画像が表示されます。 以下のペイロードを **本文** に貼り付けます。
+![ フレーム IO](./images/aemf63.png)
 
-```json
-{
-    "newPsdTemplate": ""
-}
-```
+**グループ** に移動し、このテクニカルアカウントユーザーをグループ **DAM-Users** に追加します。
 
-![WF Fusion](./images/wffc51.png)
+![ フレーム IO](./images/aemf64.png)
 
-変数 `{{XX.data[]._links.renditions[].href}}` をコピーして貼り付け、**XX** を最後の **Adobe Photoshop - テキストレイヤーを編集** モジュール（この場合は **7** のシーケンス番号に置き換えます。
+**保存して閉じる** をクリックします。
 
-![WF Fusion](./images/wffc52.png)
+![ フレーム IO](./images/aemf65.png)
 
-**詳細設定を表示** のチェックボックスを有効にして、「**項目を追加**」をクリックします。
+Workfront Fusion に戻ります。 「**1 回実行**」をクリックして、シナリオをテストします。
 
-![WF Fusion](./images/wffc52b.png)
+![ フレーム IO](./images/aemf66.png)
 
-「**キー**」フィールドに「`Content-Type`」と入力します。 **値** フィールドに「`application/json`」と入力します。 「**追加**」をクリックします。
+Frame.io に戻り、アセットのステータスが再度 **承認済み** に変更されていることを確認します。
 
-![WF Fusion](./images/wffc52a.png)
+>[!NOTE]
+>
+>最初に変更を **進行中** または **レビューが必要** に戻してから、**承認済み** に戻す必要があります。
 
-これで完了です。 「**OK**」をクリックします。
+![ フレーム IO](./images/aemf15.png)
 
-![WF Fusion](./images/wffc53.png)
+Workfront Fusio シナリオがアクティベートされ、正常に完了します。 **AEM Assets** モジュールのバブルの情報を確認すると、PNG ファイルがAEM Assets CS に正常に保存されていることがわかります。
 
-**自動整列** をクリックします。
+![ フレーム IO](./images/aemf67.png)
 
-![WF Fusion](./images/wffc54.png)
+AEM Assets CS に戻り、フォルダー `--aepUserLdap-- - Frame.io PNG` を開きます。 Workfront Fusion シナリオの一部として生成された PNG ファイルが表示されます。 ファイルをダブルクリックして開きます。
 
-この画像が表示されます。 「**保存**」をクリックして変更を保存し、「**1 回実行**」をクリックしてシナリオをテストします。
+![ フレーム IO](./images/aemf68.png)
 
-![WF Fusion](./images/wffc55.png)
+生成された PNG ファイルのメタデータの詳細を確認できるようになりました。
 
-Postmanに戻り、「**送信**」をクリックします。 ここで使用されているプロンプトは **霧の深い牧草地** です。
+![ フレーム IO](./images/aemf69.png)
 
-![WF Fusion](./images/wffc56.png)
-
-その後、シナリオがアクティブ化され、しばらくすると、新しく作成されたPSD ファイルの URL を含むレスポンスがPostmanに表示されます。
-
-![WF Fusion](./images/wffc58.png)
-
-注意：Workfront Fusion でシナリオを実行したら、各モジュールの上にあるバブルをクリックすると、各モジュールに関する情報を確認できます。
-
-![WF Fusion](./images/wffc59.png)
-
-Azure ストレージエクスプローラーを使用すると、Azure ストレージエクスプローラー内で新しく作成したPSD ファイルをダブルクリックして、ファイルを探して開くことができます。
-
-![WF Fusion](./images/wffc60.png)
-
-これでファイルは次のようになります。背景は **misty meadows** です。
-
-![WF Fusion](./images/wffc61.png)
-
-シナリオを再度実行し、別のプロンプトを使用してPostmanから新しいリクエストを送信すると、シナリオが簡単で再利用可能になったことがわかります。 この例では、新しく使用するプロンプトは **sunny desert** です。
-
-![WF Fusion](./images/wffc62.png)
-
-数分後、新しい背景を持つ新しいPSD ファイルが生成されました。
-
-![WF Fusion](./images/wffc63.png)
+この演習を正常に完了しました。
 
 ## 次の手順
 
-[1.2.5 Frame.io とWorkfront Fusion に移動します &#x200B;](./ex5.md){target="_blank"}
+[Workfront Fusion を使用したCreative Workflow Automation の概要とメリット ](./summary.md){target="_blank"} に移動します。
 
-[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+1.2.4
