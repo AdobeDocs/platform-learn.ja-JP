@@ -4,9 +4,9 @@ description: Workfrontでのプルーフ
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 >[!NOTE]
 >
->作成および実行した自動処理を使用して、[Workfront計画 &#x200B;](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
+>作成および実行した自動処理を使用して、[Workfront計画 ](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
 
 ![WF](./images/wfp6b.png)
 
@@ -162,7 +162,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfpwlb2.png)
 
-**2&rbrace;Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0&rbrace;Designer&rbrace; のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
+**2}Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0}Designer} のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
 
 ![WF](./images/wfpwlb3.png)
 
@@ -203,7 +203,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/timetravelnow.png)
 
-**プロジェクト詳細** 画面に戻ります。 **ドキュメント** に移動します。 「**+新規追加」をクリックし** 「**ドキュメント**」を選択します。
+タスクの **ドキュメント** に移動します。 「**+新規追加」をクリックし** 「**ドキュメント**」を選択します。
 
 ![WF](./images/wfp10.png)
 
@@ -243,7 +243,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfp25.png)
 
-次に、Adobe Expressで行うデザインの変更を行う必要があります。
+デザインを変更し、新しいバージョンの画像をアップロードする必要があります。
 
 ## 1.2.2.6 ドキュメントの新しいバージョンをタスクに追加
 
@@ -251,11 +251,11 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/getonboard.png)
 
-Adobe Workfrontのタスクビューで、承認されなかった古い画像ファイルを選択します。 次に、「**+新規追加**」をクリックし、「**バージョン**」を選択してから、`--aepUserLdap-- - CitiSignal` という名前が付くAEM Assets CS リポジトリを選択します。
+Adobe Workfrontのタスクビューで、承認されなかった古い画像ファイルを選択します。 次に、「**+新規追加**」をクリックし、「**バージョン**」を選択してから、「**ドキュメント**」を選択します。
 
 ![WF](./images/wfp26.png)
 
-フォルダー `--aepUserLdap-- CitiSignal Fiber Campaign` に移動し、ファイル `CitiSignal - Neon Rabit - Get On Board Now!.png` を選択します。 「**選択**」をクリックします。
+クリックしてファイル `getonboardnow.png` を選択します。 「**開く**」をクリックします。
 
 ![WF](./images/wfp26a.png)
 
@@ -291,11 +291,11 @@ Adobe Workfrontのタスクビューで、承認されなかった古い画像�
 
 ![WF](./images/wfp34.png)
 
-承認済みドキュメントを選択します。 **矢印を共有** アイコンをクリックし、AEM Assets統合を選択します。これは、`--aepUserLdap-- - CitiSignal AEM` という名前にする必要があります。
+承認済みドキュメントを選択します。 **矢印を共有** アイコンをクリックし、AEM Assets統合を選択します。これは、`--aepUserLdap-- - CitiSignal AEM+ACCS` という名前にする必要があります。
 
 ![WF](./images/wfp35.png)
 
-前に作成したフォルダーをダブルクリックします。フォルダーの名前は `--aepUserLdap-- - CitiSignal Fiber Launch Assets` にする必要があります。
+前に作成したフォルダーをダブルクリックします。フォルダーの名前は `--aepUserLdap-- - CitiSignal Fiber Campaign` にする必要があります。
 
 ![WF](./images/wfp36.png)
 
@@ -317,7 +317,7 @@ Adobe Workfrontのタスクビューで、承認されなかった古い画像�
 
 ## 1.2.2.7 AEM Assetsでファイルを表示
 
-AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という名前のフォルダーに移動します。
+AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Campaign` という名前のフォルダーに移動します。
 
 ![WF](./images/wfppaem1.png)
 
@@ -329,6 +329,6 @@ AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という�
 
 ![WF](./images/wfppaem3.png)
 
-[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

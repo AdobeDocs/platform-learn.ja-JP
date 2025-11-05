@@ -4,7 +4,7 @@ description: Workfrontの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 クリックして **Workfront** を開きます。
 
-![Workfront計画 &#x200B;](./../module1.1/images/wfpl1.png)
+![Workfront計画 ](./../module1.1/images/wfpl1.png)
 
 その後、これが表示されます。
 
@@ -109,7 +109,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 ![WF](./images/wfbaem3a.png)
 
-フォルダーに `--aepUserLdap-- - CitiSignal Fiber Launch Assets` という名前を付け、「作成 **をクリック** ます。
+フォルダーに `--aepUserLdap-- - CitiSignal Fiber Campaign` という名前を付け、「作成 **をクリック** ます。
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 ![WF](./images/wfbaem11a.png)
 
-その後、このポップアップが再び表示されます。 検索フィールドに「`wm:document`」と入力し、「**プロジェクト ID**」フィールドを選択します。 「**選択**」をクリックします。
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:document`」と入力し、「**ドキュメントステータス**」フィールドを選択します。 「**選択**」をクリックします。
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 ![WF](./images/wfbaem103.png)
 
-その後、このポップアップが再び表示されます。 検索フィールドに「`wm:document`」と入力し、「**プロジェクト ID**」フィールドを選択します。 「**選択**」をクリックします。
+その後、このポップアップが再び表示されます。 検索フィールドに「`wm:document`」と入力し、「ドキュメント名 **フィールドを選択** ます。 「**選択**」をクリックします。
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 ![WF](./images/wfbaem15.png)
 
-`--aepUserLdap-- - CitiSignal Fiber Launch Assets` という名前のフォルダーを選択します。 **割り当て** をクリックします。
+`--aepUserLdap-- - CitiSignal Fiber Campaign` という名前のフォルダーを選択します。 **割り当て** をクリックします。
 
 ![WF](./images/wfbaem16.png)
 
@@ -229,8 +229,8 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 ![WF](./images/wfbaem17.png)
 
-次の手順：Workfrontで [1.2.2 を校正する &#x200B;](./ex2.md){target="_blank"}
+次の手順：Workfrontで [1.2.2 を校正する ](./ex2.md){target="_blank"}
 
-[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
