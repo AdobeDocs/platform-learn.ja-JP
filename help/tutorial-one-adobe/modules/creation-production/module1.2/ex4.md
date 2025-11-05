@@ -39,7 +39,7 @@ ht-degree: 1%
 
 変数を見つけるには、Postmanに戻って **環境変数** を開きます。
 
-![Azure ストレージ ](./../module1.1/images/az105.png)
+![Azure ストレージ &#x200B;](./../module1.1/images/az105.png)
 
 これらの値をWorkfront Fusion にコピーし、これら 4 つの変数のそれぞれに新しい項目を追加します。
 
@@ -149,7 +149,7 @@ Workfront Fusion に戻ると、カスタム Webhook に「**正常に決定さ�
 - **クライアント ID**:**という名前のAdobe I/O プロジェクトから** クライアント ID`--aepUserLdap-- - One Adobe tutorial` をコピーします。
 - **クライアント秘密鍵**: **クライアント秘密鍵** を `--aepUserLdap-- - One Adobe tutorial` という名前のAdobe I/O プロジェクトからコピーします。
 
-Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [ で確認でき ](https://developer.adobe.com/console/projects.){target="_blank"} す。
+Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [&#x200B; で確認でき &#x200B;](https://developer.adobe.com/console/projects.){target="_blank"} す。
 
 ![WF Fusion](./images/wffc20.png)
 
@@ -309,7 +309,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc37.png)
 
-**入力ファイル** の場合、「入力ファイルストレージ **に** Azure **** を選択し、前のリクエストの出力を必ず選択してください **Adobe Photoshop - PSDの編集を適用**。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュールのシーケンス番号に置き換えます。Adobe Photoshop - PSDの編集を適用）
+**入力ファイル** の場合、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください **Adobe Photoshop - PSDの編集を適用**。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュールのシーケンス番号に置き換えます。Adobe Photoshop - PSDの編集を適用）
 
 次に、**レイヤー** の下の「**+項目を追加**」をクリックして、更新する必要があるテキストレイヤーの追加を開始します。
 
@@ -441,8 +441,8 @@ Azure ストレージエクスプローラーを使用すると、Azure スト�
 
 ## 次の手順
 
-[1.2.5 Frame.io とWorkfront Fusion に移動します ](./ex5.md){target="_blank"}
+[1.2.5 Frame.io とWorkfront Fusion に移動します &#x200B;](./ex5.md){target="_blank"}
 
-[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
