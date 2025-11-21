@@ -21,11 +21,11 @@ Adobe Experience Cloud アプリケーションは、従来、次のような様
 1. ドメイン名の CNAME 設定を使用してAdobe サーバーによって設定されたファーストパーティ cookie
 1. JavaScriptによって設定されたファーストパーティ cookie
 
-最近のブラウザーの変更により、これらのタイプの cookie の有効期間が制限されます。 ファーストパーティ cookie は、DNS CNAME ではなく、DNS A/AAAA レコードを使用して顧客が所有するサーバーを使用して設定されている場合に最も効果的です。 [ ファーストパーティデバイス ID （FPID）機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) により、Adobe Experience Platform web SDKを実装しているお客様は、DNS A/AAAA レコードを使用して、サーバーからの cookie でデバイス ID を使用できます。 その後、これらの ID をAdobeに送信し、シードとして使用してExperience Cloud ID （ECID）を生成できます。ECID は、Adobe Experience Cloud アプリケーションの主な識別情報です。
+最近のブラウザーの変更により、これらのタイプの cookie の有効期間が制限されます。 ファーストパーティ cookie は、DNS CNAME ではなく、DNS A/AAAA レコードを使用して顧客が所有するサーバーを使用して設定されている場合に最も効果的です。 [&#x200B; ファーストパーティデバイス ID （FPID）機能 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) により、Adobe Experience Platform web SDKを実装しているお客様は、DNS A/AAAA レコードを使用して、サーバーからの cookie でデバイス ID を使用できます。 その後、これらの ID をAdobeに送信し、シードとして使用してExperience Cloud ID （ECID）を生成できます。ECID は、Adobe Experience Cloud アプリケーションの主な識別情報です。
 
 次に、機能の仕組みの簡単な例を示します。
 
-![ ファーストパーティデバイス ID （FPID）とExperience Cloud ID （ECID） ](../assets/kt-9728.png)
+![&#x200B; ファーストパーティデバイス ID （FPID）とExperience Cloud ID （ECID） &#x200B;](../assets/kt-9728.png)
 
 1. エンドユーザーのブラウザーが、顧客の web サーバーまたは CDN から web ページをリクエストします。
 1. 顧客が web サーバーまたは CDN でデバイス ID （FPID）を生成します（web サーバーはドメイン名の DNS A/AAAA レコードに結び付ける必要があります）。
@@ -152,4 +152,4 @@ PHP には UUID 生成用のネイティブライブラリがないので、こ�
 1. Platform Edge Networkに別のリクエストを送信します。
 1. `AMCV_<IMSORGID@AdobeOrg>` cookie の値が、削除された `ECID` cookie の `AMCV_` 値と同じであることを確認します。 特定の FPID の cookie 値が同じ場合、ECID のシーディングプロセスは成功しました。
 
-この機能について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) を参照してください。
+この機能について詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) を参照してください。

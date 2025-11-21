@@ -16,7 +16,7 @@ ht-degree: 13%
 
 # ソースの概要
 
-Adobe Experience Platform インターフェイスでソース（ソースコネクタ）を使用する方法を説明します。 ソースは、Adobe、ファーストパーティおよびサードパーティのアプリケーションから Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを取り込むための簡単に設定できる統合です。 詳しくは、[ ソースのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) を参照してください。
+Adobe Experience Platform インターフェイスでソース（ソースコネクタ）を使用する方法を説明します。 ソースは、Adobe、ファーストパーティおよびサードパーティのアプリケーションから Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを取り込むための簡単に設定できる統合です。 詳しくは、[&#x200B; ソースのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
 
