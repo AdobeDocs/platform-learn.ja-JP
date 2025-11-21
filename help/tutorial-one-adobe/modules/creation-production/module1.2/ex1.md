@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -170,11 +170,11 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion30.png)
 
-**複数の変数を設定** オブジェクトの **疑問符** アイコンを選択して、そのオブジェクトが実行されたときに何が起こったかを確認します。
+**複数の変数を設定** オブジェクトの **虫眼鏡** アイコンを選択して、そのオブジェクトが実行されたときに何が起こったかを確認します。
 
 ![WF Fusion](./images/wffusion31.png)
 
-**HTTP - リクエストを行う** オブジェクトの **疑問符** アイコンを選択して、そのオブジェクトが実行されたときに何が起こったかを確認します。 **OUTPUT** で、Adobe I/Oから返される **access_token** を参照してください。
+**HTTP - リクエストを行う** オブジェクトの **虫眼鏡** アイコンを選択して、そのオブジェクトが実行されたときに何が起こったかを確認します。 **OUTPUT** で、Adobe I/Oから返される **access_token** を参照してください。
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ![WF Fusion](./images/wffusion39.png)
 
-シナリオを実行したら、最後の **複数の変数を設定** オブジェクトの **疑問符** アイコンを選択します。 access_token が変数 `bearer_token` に格納されていることがわかります。
+シナリオを実行したら、最後の **複数の変数を設定** オブジェクトの **虫眼鏡** アイコンを選択します。 access_token が変数 `bearer_token` に格納されていることがわかります。
 
 ![WF Fusion](./images/wffusion40.png)
 
@@ -240,8 +240,8 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ## 次の手順
 
-[&#x200B; コネクタを使用した自動化 &#x200B;](./ex4.md){target="_blank"} を参照してください
+[ コネクタを使用した自動化 ](./ex4.md){target="_blank"} を参照してください
 
-[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

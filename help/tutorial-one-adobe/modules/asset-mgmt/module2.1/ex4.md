@@ -4,7 +4,7 @@ description: AEM CS – 高度なカスタムブロック
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -96,24 +96,24 @@ export default function decorate(block) {
 
 PR、`js css` の名前を入力します。 「**メインにコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv10.png){zoomable="yes"}
+![ ブロック ](./images/blockadv10.png){zoomable="yes"}
 
 この画像が表示されます。 **接触チャネルをプッシュ** をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv11.png){zoomable="yes"}
+![ ブロック ](./images/blockadv11.png){zoomable="yes"}
 
 ブラウザーで、GitHub アカウントと、CitiSignal 用に作成したリポジトリに移動します。 変更を受け取ったことを示す、次のようなメッセージが表示されます。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv12.png){zoomable="yes"}
+![ ブロック ](./images/blockadv12.png){zoomable="yes"}
 
-XXX を GitHub ユーザーアカウント（この例では `main--citisignal--XXX.aem.page/us/en/`）に置き換えた後、`main--citisignal--XXX.aem.live/us/en/` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `main--citisignal-aem-accs--XXX.aem.page`）に置き換えた後、`main--citisignal-aem-accs--XXX.aem.live` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` や `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 ページにスタイルが適用されたことがわかります。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv13.png){zoomable="yes"}
+![ ブロック ](./images/blockadv13.png){zoomable="yes"}
 
 ## 1.1.4.2 外部エンドポイントからのロジックの追加とデータの読み込み
 
@@ -156,11 +156,11 @@ var script1 = document.createElement('script');
 
 現時点では、「**edgeConfigId** フィールドを変更する必要はありません。 次の演習では、**MarTech** プラグインを使用してこれを行うことができます。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv15.png){zoomable="yes"}
+![ ブロック ](./images/blockadv15.png){zoomable="yes"}
 
 これで、このが得られます。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv14.png){zoomable="yes"}
+![ ブロック ](./images/blockadv14.png){zoomable="yes"}
 
 次に、このブロックを、追加した前のコードの下に追加します。
 
@@ -185,7 +185,7 @@ var ECID = "";
 
 上記のコードでわかるように、ECID が取得されると、別の関数が呼び出されます。 この関数は **getOffer （）と呼ばれ** 次に追加します。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv16.png){zoomable="yes"}
+![ ブロック ](./images/blockadv16.png){zoomable="yes"}
 
 次に、の下に以下のコードを追加します。
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 このコードブロックは、この例の 42 行目に表示される閉じブラケットの下に貼り付けることが非常に重要です。 先ほど貼り付けたコードは、このファイル内に独自の場所を必要とする別の関数であり、上記の **デフォルトの関数** 内にネストすることはできません。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv17.png){zoomable="yes"}
+![ ブロック ](./images/blockadv17.png){zoomable="yes"}
 
 先ほど貼り付けたコードブロックは、通常 Web SDK/alloy.jsがおこなうリクエストをシミュレートします。 この例では、**fetch** リクエストが **edge.adobedc.net** に対して行われます。
 
@@ -330,23 +330,23 @@ async function getOffer(ECID) {
 
 変更を保存します。次に、**Github デスクトップ** を開き、PR に名前を付けて、「**メインにコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv18.png){zoomable="yes"}
+![ ブロック ](./images/blockadv18.png){zoomable="yes"}
 
 次に、「**接触チャネルをプッシュ**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv19.png){zoomable="yes"}
+![ ブロック ](./images/blockadv19.png){zoomable="yes"}
 
-XXX を GitHub ユーザーアカウント（この例では `main--citisignal--XXX.aem.page/us/en/`）に置き換えた後、`main--citisignal--XXX.aem.live/us/en/` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
+XXX を GitHub ユーザーアカウント（この例では `main--citisignal-aem-accs--XXX.aem.page`）に置き換えた後、`main--citisignal-aem-accs--XXX.aem.live` や `woutervangeluwe` に移動して、web サイトの変更を表示できるようになりました。
 
 この例では、完全な URL は次のようになります。
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` や `https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` や `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 この画像が表示されます。
 
-![&#x200B; ブロック &#x200B;](./images/blockadv20.png){zoomable="yes"}
+![ ブロック ](./images/blockadv20.png){zoomable="yes"}
 
-次の手順：[AEM Edge Delivery Services MarTech プラグイン &#x200B;](./ex5.md){target="_blank"}
+次の手順：[AEM Edge Delivery Services MarTech プラグイン ](./ex5.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

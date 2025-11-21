@@ -4,9 +4,9 @@ description: Workfrontでのプルーフ
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/blueprint3.png)
 
+**プロジェクトテンプレート名** を `--aepUserLdap-- - Integrated Campaign Execution` に変更します。
+
 「**現状のままインストール…**」をクリックします。
 
 ![WF](./images/blueprint4.png)
@@ -81,7 +83,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 >[!NOTE]
 >
->作成および実行した自動処理を使用して、[Workfront計画 &#x200B;](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
+>作成および実行した自動処理を使用して、[Workfront計画 ](./../module1.1/ex1.md) の演習の一部としてプログラムを作成しました。 まだその手順を実行していない場合は、手順を参照してください。
 
 ![WF](./images/wfp6b.png)
 
@@ -89,7 +91,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfp6.png)
 
-テンプレート **統合キャンペーン実行** を選択し、「**テンプレートを使用**」をクリックします。
+テンプレート `--aepUserLdap-- - Integrated Campaign Execution` を選択し、「**テンプレートを使用**」をクリックします。
 
 ![WF](./images/wfp6g.png)
 
@@ -162,7 +164,7 @@ CitiSignal のユースケースでは、ブループリント **統合された
 
 ![WF](./images/wfpwlb2.png)
 
-**2&rbrace;Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0&rbrace;Designer&rbrace; のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
+**2}Designer** の「役割の割り当て **を選択し、フィールド** 割り当てるユーザー **をクリックします。** Workfront インスタンスで **0}Designer} のロールを持つすべてのユーザーが表示されます。**&#x200B;この場合は、架空のユーザー **Melissa Jenkins** を選択します。
 
 ![WF](./images/wfpwlb3.png)
 
@@ -329,6 +331,6 @@ AEM Assets CS の `--aepUserLdap-- - CitiSignal Fiber Campaign` という名前�
 
 ![WF](./images/wfppaem3.png)
 
-[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

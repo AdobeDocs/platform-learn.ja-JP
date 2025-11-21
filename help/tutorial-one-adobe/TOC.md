@@ -4,7 +4,7 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 + [チュートリアルの概要](/help/tutorial-one-adobe/overview.md)
 + [コンテンツSupply chain向けGenStudioのテクニカルイネーブルメント](/help/tutorial-one-adobe/genstudiocsc.md)
 + [コンテンツステータス](/help/tutorial-one-adobe/status.md)
-+ [完了](/help/tutorial-one-adobe/completion.md)
++ [アーキテクチャ](/help/tutorial-one-adobe/architecture.md)
 
 + はじめに {#gettingstarted}
    + はじめに {#gettingstarted}
@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federated Audience の構成 {#dc13}
@@ -268,8 +268,8 @@ ht-degree: 3%
          + [概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analyticsの概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [WIP - Agentic AI](/help/tutorial-one-adobe/ai.md)
-+ WIP - Agentic AI {#agenticai}
++ （WIP） Agentic AI {#agenticai}
+   + [Agentic AI の概要](/help/tutorial-one-adobe/ai.md)
    + 1.1 エージェントと AI の基本を学ぶ {#agenticai1}
       + [概要](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
       + [1.1.1 Agentic AI の概要](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
