@@ -17,4 +17,4 @@ ht-degree: 36%
 
 Web およびモバイル SDK実装用のデータストリームを作成および設定する方法について説明します。 詳しくは、[&#x200B; データストリームのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344994?captions=jpn&learn=on&enablevpops)

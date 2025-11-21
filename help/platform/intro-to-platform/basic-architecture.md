@@ -18,6 +18,6 @@ ht-degree: 80%
 
 概要図のガイド付きウォークスルーから、Adobe Experience Platform のアーキテクチャの概要を学習します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422783?captions=jpn&learn=on&enablevpops)
 
 

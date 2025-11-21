@@ -19,7 +19,7 @@ ht-degree: 54%
 
 Adobe Experience Platform Debugger [Chrome拡張機能 &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) および [Firefox アドオン &#x200B;](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/) を使用して、Adobe Experience Platform Web SDK、Adobe Analytics、Adobe Target、Adobe Audience Manager、タグなどの web 実装をデバッグする方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36086?captions=jpn&learn=on&enablevpops)
 
 ## その他のリソース
 
