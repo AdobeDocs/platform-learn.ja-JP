@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobeの 1 つのチュートリアル – アーキテクチャの概要
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## GenStudio アーキテクチャの概要
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 このビデオでは、完全なエンドツーエンドチュートリアルの背後にあるアーキテクチャについて説明します。
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

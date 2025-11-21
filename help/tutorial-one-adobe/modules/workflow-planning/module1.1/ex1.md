@@ -39,41 +39,41 @@ Workfront Planning の主なオブジェクトと概念を次に示します。
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 クリックして **Workfront** を開きます。
 
-![Workfront計画 ](./images/wfpl1.png)
+![Workfront計画 &#x200B;](./images/wfpl1.png)
 
 Workfrontで、をクリックしてメニューを開き、「**計画**」を選択します。
 
-![Workfront計画 ](./images/wfpl2.png)
+![Workfront計画 &#x200B;](./images/wfpl2.png)
 
 この画像が表示されます。 **Workspaceを作成** をクリックします。
 
-![Workfront計画 ](./images/wfpl3.png)
+![Workfront計画 &#x200B;](./images/wfpl3.png)
 
 テンプレート **基本マーケティング管理** の「**テンプレートを使用**」をクリックします。
 
-![Workfront計画 ](./images/wfpl4.png)
+![Workfront計画 &#x200B;](./images/wfpl4.png)
 
 これで、新しいワークスペースが作成されました。 続行する前に、ワークスペースの名前を変更する必要があります。 3 つのドット **...** をクリックし、「**編集**」を選択します。
 
-![Workfront計画 ](./images/wfpl5.png)
+![Workfront計画 &#x200B;](./images/wfpl5.png)
 
 名前を `--aepUserLdap-- - Basic: Marketing Management` に変更します。 「**保存**」をクリックします。
 
-![Workfront計画 ](./images/wfpl6.png)
+![Workfront計画 &#x200B;](./images/wfpl6.png)
 
 これで完了です。
 
-![Workfront計画 ](./images/wfpl7a.png)
+![Workfront計画 &#x200B;](./images/wfpl7a.png)
 
 ## 1.1.1.4 分類：レコードタイプとフィールド
 
 「**分類**」で、「**+ レコードタイプを追加」をクリックし** 「**手動で追加**」を選択します。
 
-![Workfront計画 ](./images/wfpl7.png)
+![Workfront計画 &#x200B;](./images/wfpl7.png)
 
 **レコードタイプを追加** ポップアップが表示されます。
 
-![Workfront計画 ](./images/wfpl8.png)
+![Workfront計画 &#x200B;](./images/wfpl8.png)
 
 「**外観** タブの次の情報を更新します。
 
@@ -83,45 +83,45 @@ Workfrontで、をクリックしてメニューを開き、「**計画**」を�
 
 「**保存**」をクリックします。
 
-![Workfront計画 ](./images/wfpl9.png)
+![Workfront計画 &#x200B;](./images/wfpl9.png)
 
 クリックして、新しく作成した **事業部門** レコードタイプを開きます。
 
-![Workfront計画 ](./images/wfpl10.png)
+![Workfront計画 &#x200B;](./images/wfpl10.png)
 
 新しく作成されたレコードタイプではビジネスユニットのレコードがまだ定義されていないので、空のテーブル表示が表示されます。
 
-![Workfront計画 ](./images/wfpl11.png)
+![Workfront計画 &#x200B;](./images/wfpl11.png)
 
 フィールド **開始日** のドロップダウンボタンをクリックし、「**削除** を選択します。
 
-![Workfront計画 ](./images/wfpl12.png)
+![Workfront計画 &#x200B;](./images/wfpl12.png)
 
 「**削除**」を選択します。
 
-![Workfront計画 ](./images/wfpl13.png)
+![Workfront計画 &#x200B;](./images/wfpl13.png)
 
 フィールド **終了日** のドロップダウンボタンをクリックし、「**削除** を選択します。
 
-![Workfront計画 ](./images/wfpl14.png)
+![Workfront計画 &#x200B;](./images/wfpl14.png)
 
 「**削除**」を選択します。
 
-![Workfront計画 ](./images/wfpl15.png)
+![Workfront計画 &#x200B;](./images/wfpl15.png)
 
 次に、**+** アイコンをクリックして、新しいフィールドを追加します。 使用可能なフィールドタイプのリストを下にスクロールし、「**人物**」を選択します。
 
-![Workfront計画 ](./images/wfpl16.png)
+![Workfront計画 &#x200B;](./images/wfpl16.png)
 
 フィールドの **名前** を `Business Unit Lead` に、フィールドの説明を `Business Unit Lead responsible for budget and resources (VP, Head).` に設定します
 
 「**作成**」をクリックします。
 
-![Workfront計画 ](./images/wfpl17.png)
+![Workfront計画 &#x200B;](./images/wfpl17.png)
 
 最初のレコードの 3 ドット **...** をクリックし、「**表示**」を選択します。
 
-![Workfront計画 ](./images/wfpla1.png)
+![Workfront計画 &#x200B;](./images/wfpla1.png)
 
 **Name** を `Consumer Services` に設定します。
 
@@ -131,11 +131,11 @@ Workfrontで、をクリックしてメニューを開き、「**計画**」を�
 
 完了したら、矢印をクリックして前の画面に戻ります。
 
-![Workfront計画 ](./images/wfpla2.png)
+![Workfront計画 &#x200B;](./images/wfpla2.png)
 
 2 番目のレコードの 3 ドット **...** をクリックし、「**表示**」を選択します。
 
-![Workfront計画 ](./images/wfpla3.png)
+![Workfront計画 &#x200B;](./images/wfpla3.png)
 
 **Name** を `Enterprise & Business Solutions` に設定します。
 
@@ -145,11 +145,11 @@ Workfrontで、をクリックしてメニューを開き、「**計画**」を�
 
 完了したら、矢印をクリックして前の画面に戻ります。
 
-![Workfront計画 ](./images/wfpla4.png)
+![Workfront計画 &#x200B;](./images/wfpla4.png)
 
 3 番目のレコードの 3 ドット **...** をクリックし、「**表示**」を選択します。
 
-![Workfront計画 ](./images/wfpla5.png)
+![Workfront計画 &#x200B;](./images/wfpla5.png)
 
 **Name** を `Sales & Marketing` に設定します。
 
@@ -159,69 +159,69 @@ Workfrontで、をクリックしてメニューを開き、「**計画**」を�
 
 完了したら、矢印をクリックして前の画面に戻ります。
 
-![Workfront計画 ](./images/wfpla6.png)
+![Workfront計画 &#x200B;](./images/wfpla6.png)
 
 新しいレコードタイプを作成し、フィールドを削除および作成し、3 つのビジネスユニットを作成しました。 左上隅の矢印をクリックして、Workspaceの概要画面に戻ります。
 
-![Workfront計画 ](./images/wfpl18.png)
+![Workfront計画 &#x200B;](./images/wfpl18.png)
 
 この画像が表示されます。
 
-![Workfront計画 ](./images/wfpl19.png)
+![Workfront計画 &#x200B;](./images/wfpl19.png)
 
 ## 1.1.1.5 運用中のレコードタイプ：フィールド
 
 クリックして **キャンペーン** を開きます。
 
-![Workfront計画 ](./images/wfpl20.png)
+![Workfront計画 &#x200B;](./images/wfpl20.png)
 
 **+** アイコンをクリックして、新しいフィールドを作成します。 **新しい接続** を選択してから、**ビジネスユニット** を選択します。
 
-![Workfront計画 ](./images/wfpl21.png)
+![Workfront計画 &#x200B;](./images/wfpl21.png)
 
 デフォルト設定はそのままにしておきます。 「**作成**」をクリックします。
 
-![Workfront計画 ](./images/wfpl22.png)
+![Workfront計画 &#x200B;](./images/wfpl22.png)
 
 **スキップ** を選択します。
 
-![Workfront計画 ](./images/wfpl23.png)
+![Workfront計画 &#x200B;](./images/wfpl23.png)
 
 新しいフィールドがテーブル表示に表示されます。
 
-![Workfront計画 ](./images/wfpl24.png)
+![Workfront計画 &#x200B;](./images/wfpl24.png)
 
 ## リクエストフォームを作成 1.1.1.6 るには
 
 Campaigns の概要画面で、「。..**」の 3 つのドット** クリックし、「**リクエストフォームを作成**」を選択します。
 
-![Workfront計画 ](./images/wfpl25.png)
+![Workfront計画 &#x200B;](./images/wfpl25.png)
 
 名前を `Campaign Request Form` に変更します。 「**作成**」をクリックします。
 
-![Workfront計画 ](./images/wfpl26.png)
+![Workfront計画 &#x200B;](./images/wfpl26.png)
 
 現時点では、フォームに変更を加える必要はありません。 あなたはそれを変更せずに使うでしょう。 最初に **保存** をクリックしてから、**公開** をクリックします。
 
-![Workfront計画 ](./images/wfpl27.png)
+![Workfront計画 &#x200B;](./images/wfpl27.png)
 
 左上隅の矢印をクリックして、Formsをリクエストの概要画面に戻ります。
 
-![Workfront計画 ](./images/wfpl28.png)
+![Workfront計画 &#x200B;](./images/wfpl28.png)
 
 左上隅の矢印をクリックして、キャンペーンの概要画面に戻ります。
 
-![Workfront計画 ](./images/wfpl29.png)
+![Workfront計画 &#x200B;](./images/wfpl29.png)
 
 ## リクエストフォームを使用して新しいレコードを送信で 1.1.1.7 ない
 
 キャンペーンの概要画面で、「**+新しいレコード**」をクリックします。
 
-![Workfront計画 ](./images/wfpl31.png)
+![Workfront計画 &#x200B;](./images/wfpl31.png)
 
 **リクエストを送信** を選択し、「**続行**」をクリックします。
 
-![Workfront計画 ](./images/wfpl32.png)
+![Workfront計画 &#x200B;](./images/wfpl32.png)
 
 **件名** を `--aepUserLdap-- - New Campaign Creation Request` に設定します。
 
@@ -237,15 +237,15 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 **リクエストを送信** をクリックします。
 
-![Workfront計画 ](./images/wfpl33.png)
+![Workfront計画 &#x200B;](./images/wfpl33.png)
 
 **X** をクリックして、ポップアップを閉じます。
 
-![Workfront計画 ](./images/wfpl34.png)
+![Workfront計画 &#x200B;](./images/wfpl34.png)
 
 新しく作成したキャンペーンが概要に表示されます。
 
-![Workfront計画 ](./images/wfpl35.png)
+![Workfront計画 &#x200B;](./images/wfpl35.png)
 
 ## 1.1.1.8 Portfolioとカスタムフォームの作成
 
@@ -253,41 +253,41 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ポートフォリオを作成するには、メニューを開いて「**ポートフォリオ**」をクリックします。
 
-![Workfront計画 ](./images/wfplss1.png)
+![Workfront計画 &#x200B;](./images/wfplss1.png)
 
 「**+ New Portfolio**」をクリックします。
 
-![Workfront計画 ](./images/wfplss2.png)
+![Workfront計画 &#x200B;](./images/wfplss2.png)
 
 ポートフォリオの名前を `--aepUserLdap-- - Marketing` に設定します。
 
-![Workfront計画 ](./images/wfplss3.png)
+![Workfront計画 &#x200B;](./images/wfplss3.png)
 
 次に、メニューを開いて **設定** をクリックし、カスタムフォームを作成します。
 
-![Workfront計画 ](./images/wfplss4.png)
+![Workfront計画 &#x200B;](./images/wfplss4.png)
 
 左側のメニューで、**カスタムForms**/**Forms** に移動し、「**+新規カスタムフォーム**」をクリックします。
 
-![Workfront計画 ](./images/wfplss5.png)
+![Workfront計画 &#x200B;](./images/wfplss5.png)
 
 **プログラム** を選択し、「**続行**」をクリックします。
 
-![Workfront計画 ](./images/wfplss6.png)
+![Workfront計画 &#x200B;](./images/wfplss6.png)
 
 フォームの名前を `--aepUserLdap-- - Program Information` に変更します。
 
-![Workfront計画 ](./images/wfplss7.png)
+![Workfront計画 &#x200B;](./images/wfplss7.png)
 
 次に、**フィールドライブラリ** に移動し、`budget` を検索します。 既存のフィールド **予算** をフォームにドラッグ&amp;ドロップします。
 
 「**適用**」をクリックします。
 
-![Workfront計画 ](./images/wfplss8.png)
+![Workfront計画 &#x200B;](./images/wfplss8.png)
 
 これで、カスタムフォーム設定が保存されました。
 
-![Workfront計画 ](./images/wfplss9.png)
+![Workfront計画 &#x200B;](./images/wfplss9.png)
 
 ## 自動処理 1.1.1.8 作成するには
 
@@ -295,23 +295,23 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 クリックしてメニューを開き、「**計画**」を選択します。
 
-![Workfront計画 ](./images/wfpl36.png)
+![Workfront計画 &#x200B;](./images/wfpl36.png)
 
 クリックすると、前に作成したワークスペース（`--aepUserLdap-- - Basic: Marketing Management`）が開きます。
 
-![Workfront計画 ](./images/wfpl37.png)
+![Workfront計画 &#x200B;](./images/wfpl37.png)
 
 クリックして **キャンペーン** を開きます。
 
-![Workfront計画 ](./images/wfpl38.png)
+![Workfront計画 &#x200B;](./images/wfpl38.png)
 
 Campaigns の概要画面で、「。..**」の 3 つのドットをクリックし**、「**自動化を管理**」を選択します。
 
-![Workfront計画 ](./images/wfpl40.png)
+![Workfront計画 &#x200B;](./images/wfpl40.png)
 
 **新しい自動処理** をクリックします。
 
-![Workfront計画 ](./images/wfpl41.png)
+![Workfront計画 &#x200B;](./images/wfpl41.png)
 
 オートメーションの名前を `Campaign to Program` に設定します。
 
@@ -319,11 +319,11 @@ Campaigns の概要画面で、「。..**」の 3 つのドットをクリック
 
 「**保存**」をクリックします。
 
-![Workfront計画 ](./images/wfpl42.png)
+![Workfront計画 &#x200B;](./images/wfpl42.png)
 
 **アクション** を **プログラムを作成** に設定します。 「**+接続フィールドを追加**」をクリックします。
 
-![Workfront計画 ](./images/wfpl43.png)
+![Workfront計画 &#x200B;](./images/wfpl43.png)
 
 **プログラムポートフォリオ**: `--aepUserLdap-- - Marketing` を選択します。
 
@@ -331,30 +331,30 @@ Campaigns の概要画面で、「。..**」の 3 つのドットをクリック
 
 「**保存**」をクリックします。
 
-![Workfront計画 ](./images/wfpl44.png)
+![Workfront計画 &#x200B;](./images/wfpl44.png)
 
 この画像が表示されます。 矢印をクリックして、キャンペーンの概要画面に戻ります。
 
-![Workfront計画 ](./images/wfpl45.png)
+![Workfront計画 &#x200B;](./images/wfpl45.png)
 
 前に作成したキャンペーンの前にあるチェックボックスをオンにします。 次に、「**プログラムにキャンペーン**」自動処理をクリックします。
 
-![Workfront計画 ](./images/wfpl46.png)
+![Workfront計画 &#x200B;](./images/wfpl46.png)
 
 数秒後、自動化が正常に終了したことを示す確認が表示されます。 つまり、Workfront計画のキャンペーンオブジェクトに基づいて、Workfrontでプログラムが作成されました。
 
-![Workfront計画 ](./images/wfpl47.png)
+![Workfront計画 &#x200B;](./images/wfpl47.png)
 
 Workfrontでプログラムを確認するには、右にスクロールして「**接続されたプログラム**」列のプログラムをクリックします。
 
-![Workfront計画 ](./images/wfpl48.png)
+![Workfront計画 &#x200B;](./images/wfpl48.png)
 
 設定した自動処理で作成されたプログラムが表示されます。
 
-![Workfront計画 ](./images/wfpl50.png)
+![Workfront計画 &#x200B;](./images/wfpl50.png)
 
-次の手順：[ 概要とメリット ](./summary.md){target="_blank"}
+次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
 
-[Workfront計画の概要 ](./wfplanning.md){target="_blank"} に戻る
+[Workfront計画の概要 &#x200B;](./wfplanning.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
