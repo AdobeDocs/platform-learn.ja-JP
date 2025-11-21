@@ -26,7 +26,7 @@ Adobe Experience Platform API の使用を開始する方法を説明します�
 
 >[!IMPORTANT]
 >
->[Adobe Developer Console](https://developer.adobe.com/console/home) にアクセスするには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) で [&#x200B; システム管理者 &#x200B;](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) または [&#x200B; 開発者 &#x200B;](https://adminconsole.adobe.com) である必要があります。
+>[Adobe Developer Console](https://developer.adobe.com/console/home) にアクセスするには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) で [&#x200B; システム管理者 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) または [&#x200B; 開発者 &#x200B;](https://adminconsole.adobe.com) である必要があります。
 >
 > システム管理者は、API 認証情報を作成した後、認証情報をExperience Platformのロールに関連付ける必要があります。
 >
