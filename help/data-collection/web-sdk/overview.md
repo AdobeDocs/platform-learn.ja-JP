@@ -20,17 +20,17 @@ ht-degree: 42%
 
 Adobe Experience Platform Web SDK および Edge Network により、1 つの JavaScript ライブラリと 1 つのビーコンを使用して、アドビアプリケーションやサードパーティの宛先にデータを送信する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/37263?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->このビデオは、Adobe Summit 2020 セッション *[Alloy.js を満たし、eVarまたは Mbox を二度とタグ付けしない &#x200B;](https://business.adobe.com/jp/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)* の抜粋です。
+>このビデオは、Adobe Summit 2020 セッション *[Alloy.js を満たし、eVarまたは Mbox を二度とタグ付けしない ](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)* の抜粋です。
 >
->このビデオで説明するサーバーサイド転送機能は、ライセンスを取得したすべての顧客が一般に利用できるようになりました。 [&#x200B; イベント転送ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
+>このビデオで説明するサーバーサイド転送機能は、ライセンスを取得したすべての顧客が一般に利用できるようになりました。 [ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
 
 ## その他のリソース
 
-* [Adobe Experience Platform Web SDK ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)
-* [Adobe Experience Platform Web SDKのブログ投稿を使用してカスタマーワークフローを簡素化する &#x200B;](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-* [Adobe Experience Platform Experience Edgeのブログ投稿を使用したクライアントサーバー統合の合理化 &#x200B;](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
-* [Adobe Experience Platform Web SDKのブログ投稿を使用してAdobe Experience Platform サービスを統合する &#x200B;](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+* [Adobe Experience Platform Web SDK ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)
+* [Adobe Experience Platform Web SDKのブログ投稿を使用してカスタマーワークフローを簡素化する ](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+* [Adobe Experience Platform Experience Edgeのブログ投稿を使用したクライアントサーバー統合の合理化 ](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+* [Adobe Experience Platform Web SDKのブログ投稿を使用してAdobe Experience Platform サービスを統合する ](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)

@@ -18,7 +18,7 @@ ht-degree: 8%
 
 # AI アシスタント
 
-Real-Time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform ベースのアプリケーションで AI アシスタントを使用して実行できることを説明します。 詳しくは、[AI アシスタントのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
+Real-Time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform ベースのアプリケーションで AI アシスタントを使用して実行できることを説明します。 詳しくは、[AI アシスタントのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 
@@ -38,7 +38,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="AI アシスタントにアクセスする" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475920/?captions=jpn&format=jpeg&nocache=1748392732990" alt="AI アシスタントにアクセスする"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="AI アシスタントにアクセスする"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="AI アシスタントの検出性パネルの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440963/?format=jpeg&nocache=1748392732984&captions=jpn" alt="AI アシスタントの検出性パネルの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="AI アシスタントの検出性パネルの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="AI アシスタントからの応答を検証" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441739/?format=jpeg&nocache=1748392733006&captions=jpn" alt="AI アシスタントからの応答を検証"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="AI アシスタントからの応答を検証"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="AI アシスタントで運用インサイトを取得" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444033/?format=jpeg&nocache=1748392734347&captions=jpn" alt="AI アシスタントで運用インサイトを取得"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="AI アシスタントで運用インサイトを取得"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -145,7 +145,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI アシスタント – オーディエンスクリーンアップのユースケース" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441988/?format=jpeg&nocache=1748392734324&captions=jpn" alt="AI アシスタント – オーディエンスクリーンアップのユースケース"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="AI アシスタント – オーディエンスクリーンアップのユースケース"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="AI アシスタントによる影響分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441681/?format=jpeg&nocache=1748392734336&captions=jpn" alt="AI アシスタントによる影響分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="AI アシスタントによる影響分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="AI アシスタントでExperience Platform アプリケーションを学ぶ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441025/?format=jpeg&nocache=1748392735046&captions=jpn" alt="AI アシスタントでExperience Platform アプリケーションを学ぶ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="AI アシスタントでExperience Platform アプリケーションを学ぶ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="AI アシスタントを使用したオンボーディング時間の短縮" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475931/?captions=jpn&format=jpeg&nocache=1748392735030" alt="AI アシスタントを使用したオンボーディング時間の短縮"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="AI アシスタントを使用したオンボーディング時間の短縮"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -262,7 +262,7 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="製品サポート担当者" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443184/?format=jpeg&nocache=1748392735554&captions=jpn" alt="製品サポート担当者"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="製品サポート担当者"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -297,7 +297,7 @@ AI アシスタントのセキュリティ機能について説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI アシスタントのセキュリティの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441081/?format=jpeg&nocache=1748392736016&captions=jpn" alt="AI アシスタントのセキュリティの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="AI アシスタントのセキュリティの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

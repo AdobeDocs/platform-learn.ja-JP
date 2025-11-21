@@ -10,12 +10,12 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 25%
+ht-degree: 29%
 
 ---
 
 
-# Web SDK を使用したAdobe Experience Cloudの実装のチュートリアル。 {#implement-web-sdk}
+# Web SDKを使用したAdobe Experience Cloudの実装のチュートリアル {#implement-web-sdk}
 
 + [チュートリアルの概要](overview.md)
 + 初期設定 {#initial-configuration}
@@ -23,7 +23,7 @@ ht-degree: 25%
    + [ID 名前空間の設定](configure-identities.md)
    + [データストリームの設定](configure-datastream.md)
 
-+ タグ設定 {#tags-configuration}
++ タグの設定 {#tags-configuration}
    + [Web SDK 拡張機能のインストール](install-web-sdk.md)
    + [データ要素の作成](create-data-elements.md)
    + [ID の作成](create-identities.md)

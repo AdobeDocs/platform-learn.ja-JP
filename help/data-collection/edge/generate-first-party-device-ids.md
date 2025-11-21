@@ -18,24 +18,24 @@ ht-degree: 0%
 Adobe Experience Cloud アプリケーションは、従来、次のような様々なテクノロジーを使用してデバイス id を保存する cookie を生成してきました。
 
 1. サードパーティ Cookie
-1. ドメイン名の CNAME 設定を使用してAdobeサーバーによって設定されたファーストパーティ cookie
+1. ドメイン名の CNAME 設定を使用してAdobe サーバーによって設定されたファーストパーティ cookie
 1. JavaScriptによって設定されたファーストパーティ cookie
 
-最近のブラウザーの変更により、これらのタイプの cookie の有効期間が制限されます。 ファーストパーティ cookie は、DNS CNAME ではなく、DNS A/AAAA レコードを使用して顧客が所有するサーバーを使用して設定されている場合に最も効果的です。 [&#x200B; ファーストパーティデバイス ID （FPID）機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/identity/first-party-device-ids) により、Adobe Experience Platform Web SDK を実装しているお客様は、DNS A/AAAA レコードを使用して、サーバーからの Cookie でデバイス ID を使用できます。 その後、これらの ID をAdobeに送信し、シードとして使用してExperience CloudID （ECID）を生成できます。ECID は、Adobe Experience Cloud アプリケーションの主な識別情報です。
+最近のブラウザーの変更により、これらのタイプの cookie の有効期間が制限されます。 ファーストパーティ cookie は、DNS CNAME ではなく、DNS A/AAAA レコードを使用して顧客が所有するサーバーを使用して設定されている場合に最も効果的です。 [ ファーストパーティデバイス ID （FPID）機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) により、Adobe Experience Platform web SDKを実装しているお客様は、DNS A/AAAA レコードを使用して、サーバーからの cookie でデバイス ID を使用できます。 その後、これらの ID をAdobeに送信し、シードとして使用してExperience Cloud ID （ECID）を生成できます。ECID は、Adobe Experience Cloud アプリケーションの主な識別情報です。
 
 次に、機能の仕組みの簡単な例を示します。
 
-![&#x200B; ファーストパーティデバイス ID （FPID）とExperience CloudID （ECID） &#x200B;](../assets/kt-9728.png)
+![ ファーストパーティデバイス ID （FPID）とExperience Cloud ID （ECID） ](../assets/kt-9728.png)
 
 1. エンドユーザーのブラウザーが、顧客の web サーバーまたは CDN から web ページをリクエストします。
 1. 顧客が web サーバーまたは CDN でデバイス ID （FPID）を生成します（web サーバーはドメイン名の DNS A/AAAA レコードに結び付ける必要があります）。
 1. お客様は、ファーストパーティ cookie を設定して、エンドユーザーのブラウザーに FPID を保存します。
-1. お客様のAdobe Experience Platform Web SDK 実装が、Platform Edge Networkに対してリクエストを行い、次のいずれかを行います。
+1. お客様のAdobe Experience Platform Web SDK実装が、Platform Edge Networkに対してリクエストを行います。また、次のいずれかを行います。
    1. FPID を ID マップに含めます。
    1. Web SDK リクエストの CNAME を設定し、FPID cookie の名前を使用してデータストリームを設定します。
-1. Experience PlatformEdge Networkは FPID を受け取り、それを使用してExperience CloudID （ECID）を生成します。
-1. Platform Web SDK 応答は、ECID をエンドユーザーのブラウザーに送り返します。
-1. `idMigrationEnabled=true` の場合、Platform Web SDK は、JavaScriptを使用して、ECID を `AMCV_` Cookie としてエンドユーザーのブラウザーに保存します。
+1. Experience Platform Edge Networkは FPID を受け取り、それを使用してExperience Cloud ID （ECID）を生成します。
+1. Platform Web SDK応答は、ECID をエンドユーザーのブラウザーに送り返します。
+1. `idMigrationEnabled=true` の場合、Platform Web SDKはJavaScriptを使用して、ECID を `AMCV_` Cookie としてエンドユーザーのブラウザーに保存します。
 1. `AMCV_` cookie の有効期限が切れた場合、プロセスは繰り返されます。 同じファーストパーティデバイス ID が使用可能であれば、以前と同じ ECID 値を使用して新しい `AMCV_` Cookie が作成されます。
 
 >[!NOTE]
@@ -146,10 +146,10 @@ PHP には UUID 生成用のネイティブライブラリがないので、こ�
 同じ ECID がファーストパーティデバイス ID から生成されることを確認し、実装を検証します。
 
 1. FPID cookie を生成します。
-1. Platform Web SDK を使用して、Platform Edge Networkにリクエストを送信します。
+1. Platform Web SDKを使用して、Platform Edge Networkにリクエストを送信します。
 1. `AMCV_<IMSORGID@AdobeOrg>` という形式の cookie が生成されます。 この cookie には ECID が含まれています。
 1. 生成された Cookie の値をメモし、`FPID` Cookie を除く、サイトのすべての Cookie を削除します。
-1. 別のリクエストを Platform Edge Networkに送信します。
-1. `AMCV_<IMSORGID@AdobeOrg>` cookie の値が、削除された `AMCV_` cookie の `ECID` 値と同じであることを確認します。 特定の FPID の cookie 値が同じ場合、ECID のシーディングプロセスは成功しました。
+1. Platform Edge Networkに別のリクエストを送信します。
+1. `AMCV_<IMSORGID@AdobeOrg>` cookie の値が、削除された `ECID` cookie の `AMCV_` 値と同じであることを確認します。 特定の FPID の cookie 値が同じ場合、ECID のシーディングプロセスは成功しました。
 
-この機能について詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja) を参照してください。
+この機能について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) を参照してください。

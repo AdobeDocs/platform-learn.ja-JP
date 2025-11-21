@@ -11,15 +11,15 @@ exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
 source-git-commit: 695093c3ddc1952b1d6ffbe7bb4f3f489264d37d
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
 # インテリジェントサービスの概要
 
-データサイエンスの専門知識がなくても、マーケティングアナリストや実務担当者が人工知能や機械学習の力を顧客体験のユースケースで活用できるようにする、インテリジェントサービスの概要を説明します。 詳しくは、[&#x200B; インテリジェントサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja) を参照してください。
+データサイエンスの専門知識がなくても、マーケティングアナリストや実務担当者が人工知能や機械学習の力を顧客体験のユースケースで活用できるようにする、インテリジェントサービスの概要を説明します。 詳しくは、[ インテリジェントサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/36582?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 
 ## 顧客 AI
 
@@ -39,7 +39,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="顧客 AI の概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36509?format=jpeg&nocache=1740250112240&captions=jpn" alt="顧客 AI の概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="顧客 AI の概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ ht-degree: 43%
                     <p class="is-size-6">マーケターが顧客 AI を使用して顧客予測を生成する方法の概要です。</p>
                 </div>
                 <a href="introduction-to-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -62,7 +62,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="Customer AI の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36581?format=jpeg&nocache=1740250112226&captions=jpn" alt="Customer AI の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="Customer AI の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -75,7 +75,7 @@ ht-degree: 43%
                     <p class="is-size-6">顧客 AI のインスタンスを作成して、顧客の行動を予測する方法について説明します。</p>
                 </div>
                 <a href="configure-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -85,7 +85,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-customer-ai-scores-and-insights.md" title="Customer AI スコアおよびインサイトの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36580?format=jpeg&nocache=1740250112262&captions=jpn" alt="Customer AI スコアおよびインサイトの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="Customer AI スコアおよびインサイトの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -98,7 +98,7 @@ ht-degree: 43%
                     <p class="is-size-6">顧客 AI の傾向スコアおよびインサイトを使用した、顧客のコンバージョンおよび定着方法について説明します。</p>
                 </div>
                 <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -108,7 +108,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="顧客 AI のビジネス価値" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328478?format=jpeg&nocache=1740250112251&captions=jpn" alt="顧客 AI のビジネス価値"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="顧客 AI のビジネス価値"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -121,7 +121,7 @@ ht-degree: 43%
                     <p class="is-size-6">このビデオでは、顧客 AI が AI ベースの傾向を使用して顧客プロファイルを充実させ、顧客のセグメント化とターゲティングの取り組みを強化する方法を示します。</p>
                 </div>
                 <a href="business-value-of-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -147,7 +147,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="アトリビューション AI の概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36573?format=jpeg&nocache=1740250113366&captions=jpn" alt="アトリビューション AI の概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="アトリビューション AI の概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -160,7 +160,7 @@ ht-degree: 43%
                     <p class="is-size-6">マーケターとアナリストがアトリビューション AI を使用して、マーケティングチャネルやキャンペーンの影響を理解する方法の概要です。</p>
                 </div>
                 <a href="introduction-to-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -170,7 +170,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="Attribution AI の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36579?format=jpeg&nocache=1740250113378&captions=jpn" alt="Attribution AI の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="Attribution AI の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -183,7 +183,7 @@ ht-degree: 43%
                     <p class="is-size-6">Attribution AI のインスタンスを作成して、マーケティングチャネルやキャンペーンが及ぼす影響を理解する方法について説明します。</p>
                 </div>
                 <a href="configure-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -193,7 +193,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-attribution-ai-scores-and-insights.md" title="Attribution AI スコアおよびインサイトの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345102?format=jpeg&nocache=1740250113402&captions=jpn" alt="Attribution AI スコアおよびインサイトの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="Attribution AI スコアおよびインサイトの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -206,7 +206,7 @@ ht-degree: 43%
                     <p class="is-size-6">アトリビューション AI Insights ページを使用してマーケティングチャネルとキャンペーンの ROI を把握する方法について説明します。</p>
                 </div>
                 <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -216,7 +216,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="アトリビューション AI のビジネス価値" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328469?format=jpeg&nocache=1740250113390&captions=jpn" alt="アトリビューション AI のビジネス価値"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="アトリビューション AI のビジネス価値"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -229,7 +229,7 @@ ht-degree: 43%
                     <p class="is-size-6">このビデオでは、アトリビューション AI を使用して、カスタマージャーニーの各段階における個々の顧客インタラクションの影響を把握することで、マーケターがマーケティング費用と広告費用を測定し、最適化する方法を示します。</p>
                 </div>
                 <a href="business-value-of-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
