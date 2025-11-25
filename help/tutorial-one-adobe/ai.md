@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 概要 – Agentic AI テクニカルラボ
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -71,7 +71,7 @@ A2A のアーキテクチャはどのようなものですか。
 
 - A2A プロトコルをGoogleしたエージェントの相互運用性
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
