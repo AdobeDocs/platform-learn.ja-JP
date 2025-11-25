@@ -3,42 +3,52 @@ title: Agent Orchestratorの概要
 description: Agent Orchestratorの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: e90dee164dfe098c9fc56a04c481a733c0843858
+source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Agent Orchestratorの概要
 
-## 1.1.1 Agent Orchestratorでコンテキストを設定する
+## Agent Orchestratorでのコンテキストの 1.1.1.1 定
 
-AI アシスタントに移動して、大画面に切り替えます。
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat) に移動します。
 
-Analytics タスクに関するCJA コンテキストで作業していることを確認します。
+この画像が表示されます。 **Experience Platform インターナショナル** に所属していることを確認してください。
+
+![Agent Orchestrator](./images/ao1.png)
+
+**context** ウィンドウをクリックします。
+
+![Agent Orchestrator](./images/ao2.png)
+
+コンテキストをに設定します。
+
+- **ドキュメントSource**:**Customer Journey Analytics**
+- **サンドボックス**: **高速化**
+- **Dataview**:**2026 B2C の高速化**
+
+**コンテキストを設定** をクリックします。
+
+![Agent Orchestrator](./images/ao3.png)
 
 >[!NOTE]
 >
->分析（CJA）とオーケストレーション（JO）の間を移動する際に、コンテキストの切り替えを使用します。
+>このラボでは、分析とオーケストレーションの間を移動する際に、コンテキストを切り替えます。
 
-## 1.1.2 全体的な購入トレンドから始めて、コンテキストを固定し、ファイバーにズームインします
-
-**プロンプト**:
-
-```javascript
-Show me purchases by mainCategory over the last 2 month
-```
+## 1.1.1.2 購入トレンド全体から始めて、コンテキストを固定し、ファイバーにズームインする
 
 **目的**：特に最新 60 日間、カテゴリの需要（モバイル、固定電話、インターネット、テレビ、ファイバー）に応じてトップレベルのパルスを取得します。 これにより、NY ロールアウト後の季節性、プロモ効果、地域差のベースラインが設定されます。
 
-考え：
+**考え**:
 
 「Fiber は postNY でシェアを獲得していますか？ 銅線/DSL インターネットの競合は発生していますか。 ミックスシフトとテレビバンドルの違いは何ですか？」
 
 「これは、私がウィーンのアドレス可能なオーディエンスのサイズを決め、現実的な目標を設定するのに役立ちます。」
 
-マーケターが想定する、実用的な読み上げ：
+**マーケターが想定する、実用的な読み上げ**:
 
 mainCategory 別の購入の積み重ね棒/折れ線グラフ（日次/週次グレイン）。
 
@@ -46,35 +56,37 @@ mainCategory 別の購入の積み重ね棒/折れ線グラフ（日次/週次�
 
 プロモーションの日付と関連する注目すべきスパイク。
 
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
+
+```javascript
+Show me purchases by mainCategory over the last 2 months.
+```
+
+![Agent Orchestrator](./images/ao4.png)
+
+次の情報が表示されます。
+
 >[!NOTE]
 >
 >属性のラグに注目してください。一部のレガシースキーマでは、ファイバー注文が「インターネット」でキャプチャされる場合があります。 その場合は、決定の前に分類を調整します。
 
-  
+![Agent Orchestrator](./images/ao5.png)
 
-**プロンプト**:
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
-```javascript
-Show me purchases by mainCategory over the last 2 monthzoom into fiber performance
-```
+`Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
-**次のプロンプト**
+![Agent Orchestrator](./images/ao6.png)
 
-`Show me purchases by mainCategory = Fiber over the last 2 months`
+これを確認すると、ファイバ固有のトレンドにドリル・ダウンされます。
 
-ファイバ固有のトレンドをドリル・ダウンします。
+**アクション**：成長曲線と地域のスパイクに注意してください。
 
-**アクション** 成長曲線と地域のスパイクに注意してください。
+![Agent Orchestrator](./images/ao7.png)
 
-## 1.1.3 注文とコンテンツ環境設定の関連付け
+## 注文 1.1.1.3 コンテンツの環境設定に関連付けるには
 
-**プロンプト**:
-
-```javascript
-Show me ordersYTD by preferred genre for the last 2 months
-```
-
-**目的** コンテンツの環境設定（SciFi、スポーツ、ドラマなど）で、特に高帯域幅のニーズに対してブロードバンドのアップグレード動作が予測されるという仮説をテストします。
+**目的**：コンテンツの環境設定（SciFi、スポーツ、ドラマなど）で、特に広帯域幅のニーズに対してブロードバンドのアップグレード動作が予測されるという仮説をテストします。
 
 **考え中**
 
@@ -90,23 +102,37 @@ Show me ordersYTD by preferred genre for the last 2 months
 
 決定：SciFi が強いシグナルを示した場合、これはウィーンの Fiber Max の打ち上げの主要なクリエイティブの柱になります（例えば、「再びバッファーしない」メッセージ、プレミアムバンドル）。
 
-**プロンプト**
-
-`Show me ordersYTD by preferred genre for the last 2 months`
-
 **故意**
 
 ジャンル（SF、スポーツなど）別にコンバージョンを分析します。
 
 **目標** ファイバ・アップグレードに関する SF ファンのインデックスが過剰であるかどうかを検証します。
 
-## 1.1.4 既存のファイバジャーニーの特定
-
-**プロンプト**:
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
 ```javascript
-What journey was running and had Fiber in the name
+Show me ordersYTD by preferredGenre for the last 2 months
 ```
+
+![Agent Orchestrator](./images/ao8.png)
+
+次の情報が表示されます。
+
+![Agent Orchestrator](./images/ao9.png)
+
+## 既存のファイバジャーニーを特定 1.1.1.4 る
+
+**context** ウィンドウをクリックします。
+
+![Agent Orchestrator](./images/ao10.png)
+
+コンテキストをに設定します。
+
+- **ドキュメントSource**:**Adobe Journey Optimizer**
+- **サンドボックス**: **高速化**
+- **Dataview**:**2026 B2C の高速化**
+
+![Agent Orchestrator](./images/ao11.png)
 
 **目的** タイトルに「ファイバ」が含まれているアクティブなジャーニーまたは最近締結されたジャーニーを特定します（例：「ファイバアップグレード NYC - 9 月」、「ファイバ体験版 – ストリーミングバンドル」）。
 
@@ -122,23 +148,39 @@ What journey was running and had Fiber in the name
 
 次のステップ：クローン作成/適合化のために、成功したファイバジャーニーを 1 つか 2 つ絞り込みます。
 
-**プロンプト**
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
-`What journey was running and had Fiber in the name?`
+```javascript
+What journeys exist? 
+```
+
+![Agent Orchestrator](./images/ao12.png)
+
+次の情報が表示されます。
+
+![Agent Orchestrator](./images/ao13.png)
 
 ファイバーメッセージを使用して、アクティブなジャーニーや過去のジャーニーをリストします。
 
 アクション：複製する高パフォーマンスのジャーニーを絞り込みます。
 
-## 1.1.5 関連する履歴プロモのシードオーディエンスを確認する
-
-**プロンプト**:
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey
+Which of these journeys has 'Fiber' in its name?
 ```
 
-**目的** 「SciFi プロモ 2024 - jl」ジャーニーのシード定義 – ターゲット設定に推進された特性（「SciFi ジャンルの環境設定」、「4 台以上のデバイス」、「300 GB/月のストリーム≥」など）を理解します。
+![Agent Orchestrator](./images/ao14.png)
+
+次の情報が表示されます。
+
+![Agent Orchestrator](./images/ao15.png)
+
+## 1.1.1.5 シードを確認
+
+**目的**:
+
+「CitiSignal - Fiber Max Launch Promotion」ジャーニーのシード定義を理解します。ターゲット設定を促した特性は何ですか（例：「SciFi Genre Preference」、「4+ devices」、「stream ≥ 300GB/month」）。
 
 **考え中**
 
@@ -156,41 +198,44 @@ What was the initial audience in that SCi-Fi promo 2024 - jl journey
 
 これ以降、マーケターは適切なレポートを確実に作成するために、分析モードに切り替えます。
 
-**プロンプト**:
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey?
+What was the initial audience in the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
+![Agent Orchestrator](./images/ao16.png)
 オーディエンス条件（ストリーミング習慣、デバイス数）を確認します。
 
-目標：高帯域幅のニーズに対する特性を理解する。
+**目標**：広帯域幅のニーズに対する特性を理解する。
 
-## 1.1.6 フォールアウト分析によるジャーニーのパフォーマンスの検証
+## 1.1.1.6 フォールアウト分析によるジャーニーのパフォーマンスの検証
 
-**プロンプト**:
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
 >[!NOTE]
 >
 >コンテキストをCJAに変更）
 
-**目的** Customer Journey Analyticsで段階的にfunnelを構築
+**目的**:
+
+Customer Journey Analyticsでの段階的なfunnelの構築
 
 配信済み→開→済み→ クリック済み→製品表示→買い物かごに追加→ チェックアウト →注文完了
 
 ファイバー関連の SKU ビューを分岐として含めます。
 
-考え：
+**考え**:
 
 「メールの開封、ランディングページの読み込み、PDP、チェックアウトの問題など、ユーザーが失われる状況はどこにありますか？」
 
 「SciFi ユーザーはファイバー PDP で平均よりも多く、または少なくバウンスしますか？」
 
-期待される出力：
+**期待される出力**:
 
 各ステップでのドロップオフ率を備えたフォールアウトビジュアライゼーション。
 
@@ -198,7 +243,7 @@ Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey
 
 技術的な摩擦に対するデバイス/ブラウザーの分類。
 
-決定：
+**決定**:
 
 チェックアウトのドロップオフが大きい場合は、製品/UX と調整して支払いフローを修正します。
 
@@ -210,20 +255,19 @@ PDP の出口が大きい場合は、クレームの明確さ（速度、イン�
 
 これで、マーケターはオーケストレーションとオーディエンス運用のためにAdobe Journey Optimizerに移動します。
 
-**プロンプト**:
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey 
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey 
 ```
 
 funnelを作成ビジュアライゼーション：配信され→注文のチェックアウト→開→またはクリック→ます。
 
-アクション：ドロップオフポイントを特定し、メッセージングまたは UX を最適化します。
+**アクション**：ドロップオフポイントを特定し、メッセージングまたは UX を最適化します。
 
+## 1.1.1.7 高使用率に合わせた既存オーディエンスの検索
 
-## 1.1.7 使用率の高いオーディエンスに合わせて既存のオーディエンスを検索する
-
-**プロンプト**:
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
@@ -233,77 +277,67 @@ Is there an audience that has "heavy downloaders" in the title?
 >
 >コンテキストをAdobe Journey Optimizerに変更
 
-目的：「大量のダウンローダー」という名前の JO オーディエンスを見つけます。これは、毎月のデータ使用しきい値、ストリーミング時間、デバイスの同時実行性によって定義される可能性があります。
+**目的**:
 
-考え：
+「大量のダウンローダー」という名前の JO オーディエンスを見つけます。これは、毎月のデータ使用しきい値、ストリーミング時間、デバイスの同時実行性によって定義される可能性が高いです。
+
+**考え**:
 
 「Heavy Downloaders のようなオーディエンスが存在する場合は、Fiber Max の位置づけに最適です。スピード、信頼性、無制限の階層。」
 
-期待される出力：
+**期待される出力**:
 
 オーディエンスメタデータ：定義条件、サイズ、最終更新、ガバナンスタグ、地域の可用性。
 
-**プロンプト**:
-
-```javascript
-Is there an audience that has " heavy downloaders" in the title 
-```
-
 データ使用量が多いオーディエンスを見つけます。
 
-目標：Fiber Max のターゲット設定に関する SF 設定と組み合わせる。
+**目標**:Fiber Max ターゲティングの SF 環境設定と組み合わせます。
 
-## 1.1.8 オーディエンスが既に使用されているかどうかを判断する
+## 1.1.1.8 これらのオーディエンスが既に使用されているかどうかを判断します
 
-**プロンプト**:
+**目的**:
 
-```javascript
-Which of the above are used in a journey? 
-```
+オーディエンスとジャーニーの連携を確認 – 重複や現在のプログラムとの競合を避けます。
 
-目的：オーディエンスとジャーニーのリンケージを確認する – 重複や現在のプログラムと競合しないようにします。
-
-考え：
+**考え**:
 
 「ヘビーダウンローダーがすでにリテンションのジャーニーに入っている場合、疲労を避けるために抑制ロジックまたはフリークエンシーキャップが必要です。」
 
-期待される出力：
+**期待される出力**:
 
 マッピング：オーディエンス → ジャーニー名、ステータス、連絡先ポリシー、最終送信、パフォーマンス。
 
-決定：
+**決定**:
 
 使用している場合は、ウィーンでのローンチ用に除外または共有抑制を作成します。
 
 使用されていない場合は、新しいジャーニー用の greenlight。
 
-プロンプト：
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
-ジャーニーで使用されるのは上記のうちどれですか？
+```javascript
+Which of the above are used in a journey? 
+```
 
 アクティブなキャンペーンと重複しないようにします。
 
-アクション：必要に応じて抑制を適用します。
+**アクション**：必要に応じて抑制を適用します。
 
-## 1.1.9 Fibre Max Launch の新しいジャーニーの作成
+## 1.1.1.9 Fibre Max Launch の新しいジャーニーを作成
 
-**プロンプト**:
+**目的**:
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
-```
-
-インテント：複合オーディエンスをターゲットにした新しい JO ジャーニーを作成します。
+複合オーディエンスをターゲットにした新しいジャーニーを作成します。
 
 重いダウンローダー∩SciFi 環境設定（kbaa_5207bf オーディエンスキー）。
 
-考え：
+**考え**:
 
 「これは Fiber Max のスイートスポットです：高い傾向+創造的な関連性。」
 
 「私たちは、ウィーンの可用性に関連したマルチタッチエクスペリエンスを調整します。」
 
-ジャーニーデザイン（JO）:
+**ジャーニーデザイン （JO）**:
 
 エントリ条件：
 
@@ -353,7 +387,7 @@ KPI：ファイバの最大使用量へのコンバージョン率、アップ�
 
 需要を診断する（全体的なカテゴリ→特にファイバ）。
 
-contenttoconversion シグナル （ジャンル別の順序）を検証します。
+コンテンツをコンバージョン信号（ジャンル別の順序）に対して証明します。
 
 成功したジャーニーを探す（Fibernamed ジャーニーと SciFi プロモーションオーディエンスを見つける）。
 
@@ -361,7 +395,12 @@ contenttoconversion シグナル （ジャンル別の順序）を検証しま�
 
 傾向が高いセグメント（大量のダウンローダー∩SciFi）に対してアクティブ化します。
 
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
+
+```javascript
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
