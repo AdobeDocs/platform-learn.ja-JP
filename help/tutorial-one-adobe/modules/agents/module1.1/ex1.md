@@ -3,9 +3,9 @@ title: Agent Orchestratorの概要
 description: Agent Orchestratorの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
+source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -373,15 +373,13 @@ SF 愛好家のための動的コピー（待ち時間/4K ストリーミング�
 
 オプトアウト環境設定に従います。
 
-測定計画（CJA）:
+**計量計画（CJA）**:
 
 追跡：配信、オープン、クリック、PDP 表示、チェックアウト開始、注文完了。
 
 KPI：ファイバの最大使用量へのコンバージョン率、アップライトとコントロール、インストール時間。
 
 診断：デバイス/ジャンルセグメントごとのフォールアウトレポート。
-
-形状
 
 これをすべて統合する方法（マーケターのメンタルモデル）
 
@@ -395,12 +393,104 @@ KPI：ファイバの最大使用量へのコンバージョン率、アップ�
 
 傾向が高いセグメント（大量のダウンローダー∩SciFi）に対してアクティブ化します。
 
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat) に移動します。
+
+この画像が表示されます。 **Experience Platform インターナショナル** に所属していることを確認してください。
+
+**context** ウィンドウをクリックします。
+
+![Agent Orchestrator](./images/ao2.png)
+
+コンテキストをに設定します。
+
+- **ドキュメントSource**:**Journey Optimizer**
+- **サンドボックス**: **高速化**
+- **Dataview**:**2026 B2C の高速化**
+
+**コンテキストを設定** をクリックします。
+
+![Agent Orchestrator](./images/aoea3.png)
+
 次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
+![Agent Orchestrator](./images/aocj1.png)
+
+この画像が表示されます。 `yes` と入力し、「生成」をクリックします。
+
+![Agent Orchestrator](./images/aocj2.png)
+
+この画像が表示されます。 `yes` と入力し、「生成」をクリックします。
+
+![Agent Orchestrator](./images/aocj3.png)
+
+この画像が表示されます。 `The first one` と入力し、「生成」をクリックします。
+
+![Agent Orchestrator](./images/aocj4.png)
+
+この画像が表示されます。 `yes` と入力し、「生成」をクリックします。
+
+![Agent Orchestrator](./images/aocj5.png)
+
+応答を確認します。 `yes` と入力し、「生成」をクリックします。
+
+![Agent Orchestrator](./images/aocj6.png)
+
+**レビュー** をクリックします。
+
+![Agent Orchestrator](./images/aocj7.png)
+
+ジャーニー名を LDAP で更新して、一意にします。 「**保存**」をクリックします。
+
+![Agent Orchestrator](./images/aocj8.png)
+
+これで、ジャーニーがドラフトモードで作成されました。
+
+![Agent Orchestrator](./images/aocj9.png)
+
+## 1.1.1.10 実験
+
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat) に移動します。
+
+この画像が表示されます。 **Experience Platform インターナショナル** に所属していることを確認してください。
+
+**context** ウィンドウをクリックします。
+
+![Agent Orchestrator](./images/ao2.png)
+
+コンテキストをに設定します。
+
+- **ドキュメントSource**:**Journey Optimizer**
+- **サンドボックス**: **高速化**
+- **Dataview**:**2026 B2C の高速化**
+
+**コンテキストを設定** をクリックします。
+
+![Agent Orchestrator](./images/aoea3.png)
+
+次の **プロンプト** を入力し、「**生成**」ボタンをクリックします。
+
+```javascript
+How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+```
+
+![Agent Orchestrator](./images/aoea0.png)
+
+次の情報が表示されます。
+
+![Agent Orchestrator](./images/aoea1.png)
+
+提案をクリックして各処理のコンバージョン率を比較し、「**生成**」をクリックします。
+
+![Agent Orchestrator](./images/aoea2.png)
+
+次のような詳細な比較が表示されます。
+
+![Agent Orchestrator](./images/aoea4.png)
+
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
