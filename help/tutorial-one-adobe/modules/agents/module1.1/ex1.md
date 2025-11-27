@@ -3,14 +3,20 @@ title: Agent Orchestratorの概要
 description: Agent Orchestratorの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: bb31fe8a36f1c9ee9d212500e2e58e01be1129b8
+source-git-commit: 121cbb5ea8f8b713c6ebae008f7f0d9b3a79e476
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1393'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Agent Orchestratorの概要
+
+## ビデオ
+
+このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
 
 ## Agent Orchestratorでのコンテキストの 1.1.1.1 定
 
@@ -62,7 +68,9 @@ Show me purchases by mainCategory over the last 2 months.
 
 次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
 
-`Show me purchases by mainCategory = Fiber over the last 2 months per week`
+```javascript
+Show me purchases by mainCategory = Fiber over the last 2 months per week
+```
 
 ![Agent Orchestrator](./images/ao6.png)
 
@@ -213,7 +221,7 @@ AI アシスタントは、観察と推奨事項を提供します。
 次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
 
 ```javascript
-Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
 ![Agent Orchestrator](./images/ao32.png)
@@ -436,4 +444,4 @@ How are the experiments performing for the journey named 'CitiSignal - Fiber Max
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
