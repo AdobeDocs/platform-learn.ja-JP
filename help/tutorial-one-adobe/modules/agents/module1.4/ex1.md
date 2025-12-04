@@ -3,18 +3,14 @@ title: Brand Conciergeの概要
 description: Brand Conciergeの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Conciergeの概要
-
->[!IMPORTANT]
->
->この演習は作業中で、まだ終了していません。
 
 ## ビデオ
 
@@ -107,7 +103,7 @@ Brand Concierge should help customers find their best device, plan or entertainm
 
 この画像が表示されます。 ナレッジソースの名前として `CitiSignal website` を入力します。
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal web サイトは CSV ファイル &#x200B;](./assets/citisignal-website-links.csv) をデスクトップにダウンロードします。
+次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal web サイトは CSV ファイル ](./assets/citisignal-website-links.csv) をデスクトップにダウンロードします。
 
 **ファイルを参照** をクリックします。
 
@@ -191,7 +187,7 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc21.png)
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal 製品カタログ &#x200B;](./assets/CitiSignal-catalog.json.zip) をデスクトップにダウンロードして展開します。
+次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal 製品カタログ ](./assets/CitiSignal-catalog.json.zip) をデスクトップにダウンロードして展開します。
 
 ![Brand Concierge](./images/bc26.png)
 
@@ -210,6 +206,34 @@ Competitor pricing, competitor products
 その後、ここに戻ります。
 
 ![Brand Concierge](./images/bc25.png)
+
+10 ～ 20 分後に、両方のナレッジソースの **ステータス** を **完了** にする必要があります。 **ホーム** をクリックします。
+
+![Brand Concierge](./images/bc27.png)
+
+この画像が表示されます。 **Website links** カードの「**+ Connect**」をクリックします。
+
+![Brand Concierge](./images/bc28.png)
+
+ナレッジソース **CitiSignal Website** を選択し、「**保存**」をクリックします。
+
+![Brand Concierge](./images/bc29.png)
+
+この画像が表示されます。 **製品カタログ** カードの「**+接続**」をクリックします。
+
+![Brand Concierge](./images/bc30.png)
+
+ナレッジソース **CitiSignal 製品** を選択し、「**保存**」をクリックします。
+
+![Brand Concierge](./images/bc31.png)
+
+この画像が表示されます。 「**プレビュー**」をクリックして、Brand Conciergeの操作を開始します。
+
+![Brand Concierge](./images/bc32.png)
+
+これで、提供されたナレッジソースに関連する質問を開始できます。
+
+![Brand Concierge](./images/bc33.png)
 
 ## AEP1.4.1.3 オンボーディング手順
 
@@ -243,6 +267,10 @@ Brand Conciergeは、Adobe Experience Platformを使用して、会話からの�
 
 次に、Brand Concierge Configuration Management API を有効にして、作成したデータストリームを設定します。 これは、リクエスト処理中に IMS 組織 ID やサンドボックスの詳細などを解決するために必要です。
 
+これは現在、Adobeの内部手順で実行する必要があります。 この手順は必須です。そうでない場合、データストリームの設定がBrand Conciergeで使用できるように正しくありません。
+
+次の手順：[Web サイトにBrand Conciergeを実装する ](./ex2.md){target="_blank"}
+
 [Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

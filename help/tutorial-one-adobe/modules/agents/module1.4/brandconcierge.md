@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 69a0bdd4d8150f3e0a9a294a409eab958211388e
+source-git-commit: b384842ce17731e241a1404a1d5c41cc70b434ff
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -21,19 +21,23 @@ Adobe Experience Platform エージェントとBrand Conciergeを使用して以
 ## 前提条件
 
 - Adobe Journey OptimizerとCustomer Journey Analyticsへのアクセス
-- [Brand Conciergeの概念に精通している &#x200B;](https://experienceleague.adobe.com/ja/docs/brand-concierge/content/home)
+- [Brand Conciergeの概念に精通している ](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - CitiSignal デモデータへのアクセス：購入、注文、オーディエンス、ジャーニー
 
 ## 演習
 
-[1.4.1 Brand Conciergeの概要 &#x200B;](./ex1.md){target="_blank"}
+[1.4.1 Brand Conciergeの概要 ](./ex1.md){target="_blank"}
 
 この演習では、Brand Conciergeの機能を探索します。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[1.4.2 Web サイトへのBrand Conciergeの実装 ](./ex1.md){target="_blank"}
+
+この演習では、web サイトにBrand Concierge インスタンスを実装します。
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}
