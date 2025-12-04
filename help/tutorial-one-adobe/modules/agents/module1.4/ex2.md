@@ -37,21 +37,21 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 新しいカスタムブロックを作成するには、Web サイトにリンクされている GitHub リポジトリに移動します。
 
-![ ブロック ](./images/block1.png)
+![&#x200B; ブロック &#x200B;](./images/block1.png)
 
 #### component-definition.json
 
 ファイル **component-definition.json** が表示されるまで下にスクロールして開きます
 
-![ ブロック ](./images/block8.png)
+![&#x200B; ブロック &#x200B;](./images/block8.png)
 
 **pencl** アイコンをクリックして、ファイルの編集を開始します。
 
-![ ブロック ](./images/block8a.png)
+![&#x200B; ブロック &#x200B;](./images/block8a.png)
 
 **ブロック** が表示されるまで下にスクロールします。 カーソルをコンポーネントの閉じブラケットの下に置きます **カード**
 
-![ ブロック ](./images/block9.png)
+![&#x200B; ブロック &#x200B;](./images/block9.png)
 
 このコードを貼り付け、コードのブロックの後にコンマ **,** を入力します。
 
@@ -75,21 +75,21 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 「**変更をコミット…**」をクリックします。
 
-![ ブロック ](./images/block10.png)
+![&#x200B; ブロック &#x200B;](./images/block10.png)
 
 「**変更をコミット**」をクリックします。
 
-![ ブロック ](./images/block10a.png)
+![&#x200B; ブロック &#x200B;](./images/block10a.png)
 
 #### component-models.json
 
 ファイル **component-models.json** が表示されるまで下にスクロールし、**鉛筆** アイコンをクリックしてファイルの編集を開始します。
 
-![ ブロック ](./images/block11.png)
+![&#x200B; ブロック &#x200B;](./images/block11.png)
 
 最後の項目が表示されるまで下にスクロールします。 最後のコンポーネントの閉じブラケットの隣にカーソルを置きます。
 
-![ ブロック ](./images/block12.png)
+![&#x200B; ブロック &#x200B;](./images/block12.png)
 
 コンマ **,** を入力し、enter キーを押して、次の行に次のコードをペーストします。
 
@@ -102,31 +102,31 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 「**変更をコミット…**」をクリックします。
 
-![ ブロック ](./images/block13.png)
+![&#x200B; ブロック &#x200B;](./images/block13.png)
 
 「**変更をコミット**」をクリックします。
 
-![ ブロック ](./images/block13a.png)
+![&#x200B; ブロック &#x200B;](./images/block13a.png)
 
 #### component-filters.json
 
 ファイル **component-filters.json** が表示されるまで下にスクロールし、「**鉛筆**」アイコンをクリックしてファイルの編集を開始します。
 
-![ ブロック ](./images/block14.png)
+![&#x200B; ブロック &#x200B;](./images/block14.png)
 
 この画像が表示されます。
 
-![ ブロック ](./images/block14a.png)
+![&#x200B; ブロック &#x200B;](./images/block14a.png)
 
 **セクション** の下で、コンマ `,` を入力し、現在の最後の行の後にコンポーネント `"brandconcierge"` の ID を貼り付けます。
 
 「**変更をコミット…**」をクリックします。
 
-![ ブロック ](./images/block15.png)
+![&#x200B; ブロック &#x200B;](./images/block15.png)
 
 「**変更をコミット**」をクリックします。
 
-![ ブロック ](./images/block15a.png)
+![&#x200B; ブロック &#x200B;](./images/block15a.png)
 
 #### brandconcierge.css
 
@@ -134,15 +134,15 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 **blocks** フォルダーに移動します。 次に、「**ファイルを追加**」をクリックし、「**新しいファイルを作成**」を選択します。
 
-![ ブロック ](./images/css1.png)
+![&#x200B; ブロック &#x200B;](./images/css1.png)
 
 テキストボックスに `brandconcierge/brandconcierge.css` と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
 
-![ ブロック ](./images/css2.png)
+![&#x200B; ブロック &#x200B;](./images/css2.png)
 
 「**変更をコミット**」をクリックします。
 
-![ ブロック ](./images/css3.png)
+![&#x200B; ブロック &#x200B;](./images/css3.png)
 
 #### brandconcierge.js
 
@@ -150,7 +150,7 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 **ファイルを追加** をクリックし、「**新しいファイルを作成**」を選択します。
 
-![ ブロック ](./images/js1.png)
+![&#x200B; ブロック &#x200B;](./images/js1.png)
 
 テキストボックスに `brandconcierge.js` と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
 
@@ -160,11 +160,11 @@ export default function decorate(block) {
 }
 ```
 
-![ ブロック ](./images/js2.png)
+![&#x200B; ブロック &#x200B;](./images/js2.png)
 
 「**変更をコミット**」をクリックします。
 
-![ ブロック ](./images/js3.png)
+![&#x200B; ブロック &#x200B;](./images/js3.png)
 
 ### 新しいページを作成して新しいカスタムブロックをリンク
 
@@ -412,4 +412,4 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal-a
 
 [Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
