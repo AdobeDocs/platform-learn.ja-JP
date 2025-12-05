@@ -25,4 +25,4 @@ Real-Time CDPでデータガバナンスコントロールを設定および使�
 > * 米国、カナダ、EMEA、オーストラリア、ニュージーランドのお客様の場合：Adobeでは、Real-Time CDP PrimeおよびUltimateのお客様に、データの共同作業のユースケースを Segment Match からReal-Time CDP Collaborationに移行することをお勧めします。 Real-Time CDP Collaborationの [&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/home){target="_blank"} および [&#x200B; クイックスタートガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/quick-start-guide){target="_blank"} を表示し、Adobe アカウントチームに連絡して詳細を問い合わせてください。
 > * 他のすべての地域のお客様に対して：2026 年にこれらの地域でReal-Time CDP Collaborationがリリースされるまでは、Segment Match をお勧めします。
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346360/?captions=jpn&learn=on&enablevpops)
