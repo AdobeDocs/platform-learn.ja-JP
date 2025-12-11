@@ -19,7 +19,7 @@ ht-degree: 51%
 
 Adobe Experience Platform Debugger [Chrome拡張機能 &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) が、Adobe Experience Platform Web SDK、AppMeasurement.js、at.js の実装のデバッグにどのように役立つかを説明します。これらのライブラリは、Real-Time CDP、Journey Optimizer、Customer Journey Analytics、Adobe Analytics、Adobe Target、Adobe Audience Manager、タグなどを強化します。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36086?captions=jpn&learn=on&enablevpops)
 
 ## その他のリソース
 
