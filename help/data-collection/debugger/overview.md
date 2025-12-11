@@ -17,13 +17,13 @@ ht-degree: 51%
 
 # Adobe Experience Platform Debuggerの概要
 
-Adobe Experience Platform Debugger [Chrome拡張機能 ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) が、Adobe Experience Platform Web SDK、AppMeasurement.js、at.js の実装のデバッグにどのように役立つかを説明します。これらのライブラリは、Real-Time CDP、Journey Optimizer、Customer Journey Analytics、Adobe Analytics、Adobe Target、Adobe Audience Manager、タグなどを強化します。
+Adobe Experience Platform Debugger [Chrome拡張機能 &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) が、Adobe Experience Platform Web SDK、AppMeasurement.js、at.js の実装のデバッグにどのように役立つかを説明します。これらのライブラリは、Real-Time CDP、Journey Optimizer、Customer Journey Analytics、Adobe Analytics、Adobe Target、Adobe Audience Manager、タグなどを強化します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## その他のリソース
 
-* [Firefox アドオンのダウンロード ](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
-* [Chrome拡張機能のダウンロード ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [Experience Platform Debugger ドキュメント ](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=ja)
-* [ タグ実装のデバッグ ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=ja)
+* [Firefox アドオンのダウンロード &#x200B;](https://addons.mozilla.org/ja/firefox/addon/adobe-experience-platform-dbg/)
+* [Chrome拡張機能のダウンロード &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Experience Platform Debugger ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=ja)
+* [&#x200B; タグ実装のデバッグ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=ja)
