@@ -4,9 +4,9 @@ description: AEM CS 環境のセットアップ
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
+source-git-commit: 13f74467a74eb3d8bbd135f5b8c7d9bb1a177f8b
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -121,6 +121,17 @@ ZZZ = `citisignal-aem-accs`
 
 `https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
 
+また、次のコード行もファイルに追加されていることを確認してください。
+
+```
+folders:
+  /products/: /products/default
+```
+
+>[!IMPORTANT]
+>
+>以下の画像の 6 行目と 7 行目に、これらのコード行が表示されます。 これらの行が見つからない場合は、手動で追加してください。
+
 「**変更をコミット…**」をクリックします。
 
 ![AEMCS](./images/aemcs13.png)
@@ -211,7 +222,7 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 ![AEMCS](./images/aemcsassets2.png)
 
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]&#x200B;**をクリック** ます。
+フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]**をクリック** ます。
 
 ![AEMCS](./images/aemcsassets3.png)
 
@@ -247,7 +258,7 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 ![AEMCS](./images/aemcssetup31a.png)
 
-この画像が表示されます。 **作成** をクリックします。
+この画像が表示されます。 「**作成**」をクリックします
 
 ![AEMCS](./images/aemcssetup31b.png)
 
@@ -278,7 +289,7 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 - **組織**:GitHub 組織名を使用します。この例では、`woutervangeluwe` です
 - **サイト名**:GitHub リポジトリの名前を使用します。この名前は `citisignal-aem-accs` にする必要があります。
 
-**保存して閉じる** をクリックします。
+「**保存して閉じる**」をクリックします。
 
 ![AEMCS](./images/aemcssetup33.png)
 
@@ -310,7 +321,7 @@ GitHub リポジトリで、をクリックしてファイル `paths.json` を�
 
 ## 1.1.2.7 CitiSignal web サイトの公開
 
-画面左上隅の商品名 **0&rbrace;Adobe Experience Manager&rbrace; をクリックし、「** Sites **」を選択します。**
+画面左上隅の商品名 **0}Adobe Experience Manager} をクリックし、「** Sites **」を選択します。**
 
 ![AEMCS](./images/aemcssetup38.png)
 
@@ -369,8 +380,8 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal-a
 
 ![AEMCS](./images/aemcssetup50.png)
 
-次の手順：[&#x200B; カスタムブロックの開発 &#x200B;](./ex3.md){target="_blank"}
+次の手順：[ カスタムブロックの開発 ](./ex3.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
