@@ -17,31 +17,31 @@ ht-degree: 2%
 
 [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"} に移動し、**Github デスクトップ** をダウンロードしてインストールします。
 
-![ ブロック ](./images/block1.png)
+![&#x200B; ブロック &#x200B;](./images/block1.png)
 
 Github デスクトップがインストールされたら、前の演習で作成した GitHub リポジトリに移動します。 「**&lt;> コード」をクリックしてから** 「**GitHub デスクトップで開く**」をクリックします。
 
-![ ブロック ](./images/block2.png)
+![&#x200B; ブロック &#x200B;](./images/block2.png)
 
 GitHub リポジトリは、GitHub デスクトップで開かれます。 **ローカルパス** を自由に変更できます。 **クローン** をクリックします。
 
-![ ブロック ](./images/block3.png)
+![&#x200B; ブロック &#x200B;](./images/block3.png)
 
 これで、ローカルフォルダーが作成されます。
 
-![ ブロック ](./images/block4.png)
+![&#x200B; ブロック &#x200B;](./images/block4.png)
 
 Visual Studio Code を開きます。 **File**/**Open Folder** に移動します。
 
-![ ブロック ](./images/block5.png)
+![&#x200B; ブロック &#x200B;](./images/block5.png)
 
 GitHub の設定で使用されるフォルダーを選択します **citisignal-aem-accs**。
 
-![ ブロック ](./images/block6.png)
+![&#x200B; ブロック &#x200B;](./images/block6.png)
 
 Visual Studio Code でそのフォルダーが開いていることが確認できます。新しいブロックを作成する準備が整いました。
 
-![ ブロック ](./images/block7.png)
+![&#x200B; ブロック &#x200B;](./images/block7.png)
 
 ## 1.1.3.2 基本カスタムブロックの作成
 
@@ -55,11 +55,11 @@ Adobeでは、次の 3 つの段階アプローチでブロックを開発する
 
 Visual Studio Code で、ファイル **component-definition.json** を開きます。
 
-![ ブロック ](./images/block8.png)
+![&#x200B; ブロック &#x200B;](./images/block8.png)
 
 **ブロック** が表示されるまで下にスクロールします。 カーソルをコンポーネントの閉じブラケットの下に置きます **カード**
 
-![ ブロック ](./images/block9.png)
+![&#x200B; ブロック &#x200B;](./images/block9.png)
 
 このコードを貼り付け、コードのブロックの後にコンマ **,** を入力します。
 
@@ -86,17 +86,17 @@ Visual Studio Code で、ファイル **component-definition.json** を開きま
 
 変更を保存します。
 
-![ ブロック ](./images/block10.png)
+![&#x200B; ブロック &#x200B;](./images/block10.png)
 
 ### component-models.json
 
 Visual Studio Code で、ファイル **component-models.json** を開きます。
 
-![ ブロック ](./images/block11.png)
+![&#x200B; ブロック &#x200B;](./images/block11.png)
 
 最後の項目が表示されるまで下にスクロールします。 最後のコンポーネントの閉じブラケットの隣にカーソルを置きます。
 
-![ ブロック ](./images/block12.png)
+![&#x200B; ブロック &#x200B;](./images/block12.png)
 
 コンマ **,** を入力し、enter キーを押して、次の行に次のコードをペーストします。
 
@@ -131,19 +131,19 @@ Visual Studio Code で、ファイル **component-models.json** を開きます�
 
 変更を保存します。
 
-![ ブロック ](./images/block13.png)
+![&#x200B; ブロック &#x200B;](./images/block13.png)
 
 ### component-filters.json
 
 Visual Studio Code で、ファイル **component-filters.json** を開きます。
 
-![ ブロック ](./images/block14.png)
+![&#x200B; ブロック &#x200B;](./images/block14.png)
 
 **セクション** の下で、コンマ `,` を入力し、現在の最後の行の後にコンポーネント `"fiberoffer"` の ID を貼り付けます。
 
 変更を保存します。
 
-![ ブロック ](./images/block15.png)
+![&#x200B; ブロック &#x200B;](./images/block15.png)
 
 ## 1.1.3.3 変更をコミットします
 
@@ -151,23 +151,23 @@ Visual Studio Code で、ファイル **component-filters.json** を開きます
 
 編集した 3 つのファイルが「変更 **の下に表示され** す。 変更をレビューします。
 
-![ ブロック ](./images/block16.png)
+![&#x200B; ブロック &#x200B;](./images/block16.png)
 
 PR、`Fiber Offer custom block` の名前を入力します。 「**メインにコミット**」をクリックします。
 
-![ ブロック ](./images/block17.png)
+![&#x200B; ブロック &#x200B;](./images/block17.png)
 
 この画像が表示されます。 **接触チャネルをプッシュ** をクリックします。
 
-![ ブロック ](./images/block18.png)
+![&#x200B; ブロック &#x200B;](./images/block18.png)
 
 数秒後に、変更が GitHub リポジトリにプッシュされます。
 
-![ ブロック ](./images/block19.png)
+![&#x200B; ブロック &#x200B;](./images/block19.png)
 
 ブラウザーで、GitHub アカウントと、CitiSignal 用に作成したリポジトリに移動します。 変更を受け取ったことを示す、次のようなメッセージが表示されます。
 
-![ ブロック ](./images/block20.png)
+![&#x200B; ブロック &#x200B;](./images/block20.png)
 
 ## 1.1.3.4 ページにブロックを追加
 
@@ -294,8 +294,8 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal--
 
 ![AEMCS](./images/nav7.png)
 
-次の手順：[ 詳細カスタムブロック ](./ex4.md){target="_blank"}
+次の手順：[&#x200B; 詳細カスタムブロック &#x200B;](./ex4.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

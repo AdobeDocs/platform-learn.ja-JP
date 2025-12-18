@@ -222,7 +222,7 @@ URL は次のようになります：`https://author-p166717-e1786231.adobeaemcl
 
 ![AEMCS](./images/aemcsassets2.png)
 
-フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]**をクリック** ます。
+フォルダ **CitiSignal** をクリックして選択し、[ 公開の管理 ]&#x200B;**をクリック** ます。
 
 ![AEMCS](./images/aemcsassets3.png)
 
@@ -321,7 +321,7 @@ GitHub リポジトリで、をクリックしてファイル `paths.json` を�
 
 ## 1.1.2.7 CitiSignal web サイトの公開
 
-画面左上隅の商品名 **0}Adobe Experience Manager} をクリックし、「** Sites **」を選択します。**
+画面左上隅の商品名 **0&rbrace;Adobe Experience Manager&rbrace; をクリックし、「** Sites **」を選択します。**
 
 ![AEMCS](./images/aemcssetup38.png)
 
@@ -380,8 +380,8 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal-a
 
 ![AEMCS](./images/aemcssetup50.png)
 
-次の手順：[ カスタムブロックの開発 ](./ex3.md){target="_blank"}
+次の手順：[&#x200B; カスタムブロックの開発 &#x200B;](./ex3.md){target="_blank"}
 
 [Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./aemcs.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
