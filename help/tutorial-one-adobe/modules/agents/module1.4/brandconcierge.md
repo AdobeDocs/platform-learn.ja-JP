@@ -30,7 +30,7 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 ## 前提条件
 
 - Adobe Journey OptimizerとCustomer Journey Analyticsへのアクセス
-- [Brand Conciergeの概念に精通している &#x200B;](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
+- [Brand Conciergeの概念に精通している &#x200B;](https://experienceleague.adobe.com/ja/docs/brand-concierge/content/home)
 - CitiSignal デモデータへのアクセス：購入、注文、オーディエンス、ジャーニー
 
 ## 演習
