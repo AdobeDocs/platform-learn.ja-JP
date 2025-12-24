@@ -3,10 +3,10 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 4%
+source-wordcount: '176'
+ht-degree: 3%
 
 ---
 
@@ -30,19 +30,23 @@ Adobe Experience Platform エージェントとAgent Orchestratorを使用して
 ## 前提条件
 
 - Adobe Journey OptimizerとCustomer Journey Analyticsへのアクセス
-- [Agent Orchestratorの概念に精通している &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)
+- [Agent Orchestratorの概念に精通している ](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)
 - CitiSignal デモデータへのアクセス：購入、注文、オーディエンス、ジャーニー
 
 ## 演習
 
-[1.1.1 Agent Orchestratorの概要 &#x200B;](./ex1.md){target="_blank"}
+[1.1.1 Agent Orchestratorの概要 ](./ex1.md){target="_blank"}
 
 この演習では、Fiber Max 向けの CitiSignal ローンチキャンペーンを背景としたAgent Orchestratorの能力を調べます。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[1.1.2 ChatGPT のAdobe Marketing Agent](./ex2.md){target="_blank"}
+
+この演習では、Adobe Marketing Agentを ChatGPT と併用することで、Fiber Max 向けの CitiSignal ローンチキャンペーンを背景にAgent Orchestratorの能力を探索します。
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}
