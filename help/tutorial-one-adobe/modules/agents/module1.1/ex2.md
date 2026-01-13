@@ -3,14 +3,18 @@ title: ChatGPT のAdobe Marketing Agent
 description: ChatGPT のAdobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
 
 # 1.1.2 ChatGPT のAdobe Marketing Agent
+
+>[!IMPORTANT]
+>
+>このラボでは、まだリリースされていない機能を使用します。 この機能は開発中のため、まだ一般公開されていません。
 
 ## ビデオ
 
@@ -38,7 +42,7 @@ https://chatgpt.com/に移動し、アカウントの詳細を使用してログ
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
+**開発者モード** をオンにしてから、[ 戻る **をクリック** します。
 
 ![ChatGPT](./images/chatgpt4.png)
 
@@ -294,4 +298,4 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
