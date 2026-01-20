@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Adobe Audience Manager コネクタを使用したデータの取り込み
 
-この統合ビデオでは、Audience Manager データコネクタを使用して、AAMの特性とセグメントを Platform に取り込み、他のリッチデータと組み合わせる方法を説明します。 詳しくは、[Audience Manager ソースコネクタのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) を参照してください。
+この統合ビデオでは、Audience Manager データコネクタを使用して、AAMの特性とセグメントを Platform に取り込み、他のリッチデータと組み合わせる方法を説明します。 詳しくは、[Audience Manager ソースコネクタのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

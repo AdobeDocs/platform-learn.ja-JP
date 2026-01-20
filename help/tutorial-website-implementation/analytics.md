@@ -12,7 +12,7 @@ ht-degree: 71%
 
 # Adobe Analytics の追加
 
-このレッスンでは、[Adobe Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)を実装し、Adobe Analytics にデータを送信するルールを作成します。
+このレッスンでは、[Adobe Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ja)を実装し、Adobe Analytics にデータを送信するルールを作成します。
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ja) は、顧客像を把握し、顧客インテリジェンスを活用してビジネスを導く力をユーザーに提供する、業界最先端のソリューションです。
 
@@ -41,7 +41,7 @@ ht-degree: 71%
 
 [&#x200B; タグの設定 &#x200B;](create-a-property.md) および [ID サービスの追加 &#x200B;](id-service.md) のレッスンを既に完了しているはずです。
 
-さらに、1 つ以上のレポートスイート ID とトラッキングサーバーが必要です。このチュートリアルで使用できるテスト／開発用レポートトスイートがない場合は、作成してください。方法が分からない場合は、[ドキュメント](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)を参照してください。トラッキングサーバーは、現在の実装、アドビコンサルタントまたはカスタマーケア担当者から取得できます。
+さらに、1 つ以上のレポートスイート ID とトラッキングサーバーが必要です。このチュートリアルで使用できるテスト／開発用レポートトスイートがない場合は、作成してください。方法が分からない場合は、[ドキュメント](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)を参照してください。トラッキングサーバーは、現在の実装、アドビコンサルタントまたはカスタマーケア担当者から取得できます。
 
 ## Analytics 拡張機能の追加
 
@@ -426,7 +426,7 @@ doPlugins 関数（以下）を追加してプラグインを使用する場合�
 
 このプラグインの目的は、訪問者がページを更新したとき、またはブラウザーの戻るボタンを使用して値が設定されたページに戻ったときに、コード内で誤って値が複製されるのを防ぐことです。このレッスンでは、`clickthrough` イベントの重複を防ぐためにこれを使用します。
 
-このプラグインのコードは [Analytics のドキュメント](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html)で入手できますが、簡単にコピーして貼り付けられるよう、ここに含まれています。
+このプラグインのコードは [Analytics のドキュメント](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=ja)で入手できますが、簡単にコピーして貼り付けられるよう、ここに含まれています。
 
 1. 次のコードをコピーします。
 

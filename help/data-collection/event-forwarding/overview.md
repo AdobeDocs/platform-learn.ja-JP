@@ -14,7 +14,7 @@ ht-degree: 56%
 
 # イベント転送の概要
 
-イベント転送によりデータ収集を一元化して web およびモバイルアプリに必要なコードの量を減らし、Adobe Experience Platform Edge Networkを介してAdobe以外のソリューションにデータをストリーミングする方法について説明します。 詳しくは、[&#x200B; イベント転送ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview) を参照してください。
+イベント転送によりデータ収集を一元化して web およびモバイルアプリに必要なコードの量を減らし、Adobe Experience Platform Edge Networkを介してAdobe以外のソリューションにデータをストリーミングする方法について説明します。 詳しくは、[&#x200B; イベント転送ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/event-forwarding/overview) を参照してください。
 
 >[!NOTE]
 >

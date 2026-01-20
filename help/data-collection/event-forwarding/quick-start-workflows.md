@@ -22,6 +22,6 @@ ht-degree: 0%
 1. ワークフローを使用して参照オブジェクトを作成します。 
 1. 参照オブジェクトを既存の実装にコピーする。
 
-Meta Conversions API クイックスタートワークフローについて詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview#quick-start) を参照してください。
+Meta Conversions API クイックスタートワークフローについて詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/server/meta/overview#quick-start) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)
