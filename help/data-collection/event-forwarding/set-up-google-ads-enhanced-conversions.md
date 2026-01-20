@@ -18,4 +18,4 @@ ht-degree: 0%
 
 イベント転送とGoogle Ads API を使用して、ファーストパーティのハッシュ化されたデータでGoogle コンバージョンデータを強化します。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=ja) を参照してください
 
->[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3416064/?captions=jpn&learn=on&enablevpops)

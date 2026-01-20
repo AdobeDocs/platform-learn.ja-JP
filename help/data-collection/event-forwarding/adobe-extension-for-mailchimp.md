@@ -16,4 +16,4 @@ ht-degree: 0%
 
 Mailchimp のAdobe イベント転送拡張機能の概要ビデオ。 詳しくは、[Mailchimp イベント転送拡張機能ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411293/?captions=jpn&learn=on&enablevpops)

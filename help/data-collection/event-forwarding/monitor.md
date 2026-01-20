@@ -16,4 +16,4 @@ ht-degree: 28%
 
 データ収集インターフェイスでイベント転送を監視する方法を説明します。 詳しくは、[&#x200B; イベント転送ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/event-forwarding/monitoring) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411269?captions=jpn&learn=on&enablevpops)
