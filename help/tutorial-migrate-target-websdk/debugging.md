@@ -18,7 +18,7 @@ Target アクティビティの検証と Web SDKのデバッグによる、実�
 | 機能またはツール | at.js のサポート | Platform Web SDK サポート |
 | --- | --- | --- |
 | アクティビティ QA URL | ○ | ○ |
-| `mboxDisable` URL パラメーター | ○ | 詳しくは、以下の情報を参照してください [Target 機能の無効化 ](#disable-target-functionality) |
+| `mboxDisable` URL パラメーター | ○ | 詳しくは、以下の情報を参照してください [Target 機能の無効化 &#x200B;](#disable-target-functionality) |
 | `mboxDebug` URL パラメーター | ○ | 同様 `alloy_debug` デバッグ情報にはパラメーターを使用してください |
 | `mboxTrace` URL パラメーター | ○ | Experience Platform Debugger ブラウザー拡張機能の使用 |
 | Adobe Experience Platform Debugger拡張機能 | ○ | ○ |
@@ -39,7 +39,7 @@ Adobe Experience Platform Debuggerは、Google Chromeにインストールでき
 
 Chrome拡張機能または Firefox アドオンをインストールすると、拡張機能バーにアイコン（![](assets/start-icon.jpg)）が追加されます。 このアイコンを選択して、拡張機能を開きます。
 
-[Adobe Experience Platform Debugger拡張機能の詳細と、すべてのAdobe web アプリケーションをデバッグする方法については ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 専用ガイドを参照してください。
+[Adobe Experience Platform Debugger拡張機能の詳細と、すべてのAdobe web アプリケーションをデバッグする方法については &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 専用ガイドを参照してください。
 
 ## QA URL で Target アクティビティをプレビューする
 
@@ -51,7 +51,7 @@ at.js または Platform Web SDKに対し、`at_qa_mode` という名前のブ�
 >
 >Target QA モード機能は、Platform Web SDK バージョン 2.13.0 以降でサポートされています。 ターゲット QA モードは、`xdm.web.webPageDetails.URL` 呼び出しで渡された `sendEvent` 値に基づいて有効になります。 この値を変更（すべての文字を小文字にするなど）すると、Target QA モードが正しく動作しなくなる可能性があります。
 
-[ ターゲットアクティビティ QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) について詳しくは、専用ガイドを参照してください。
+[&#x200B; ターゲットアクティビティ QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) について詳しくは、専用ガイドを参照してください。
 
 ## Target 実装のデバッグ
 
@@ -120,7 +120,7 @@ Adobe Experience Platform Debuggerで Platform Web SDK Target のトレースを
 1. ページをリロードすると、ログにエッジネットワークインタラクションに関する詳細情報が表示されます
 1. 説明に「Target Traces」で始まるログエントリに焦点を当て、「表示 **[!UICONTROL を選択して Target Trace の詳細を確認し]** す
 
-![Adobe Experience Platform Debuggerで Target トレースを表示する方法 ](assets/target-trace-debugger.png){zoomable="yes"}
+![Adobe Experience Platform Debuggerで Target トレースを表示する方法 &#x200B;](assets/target-trace-debugger.png){zoomable="yes"}
 
 「**[!UICONTROL 表示]**」を選択すると、オーバーレイが表示され、リクエストに関連する次の情報を確認できます。
 
@@ -129,7 +129,7 @@ Adobe Experience Platform Debuggerで Platform Web SDK Target のトレースを
 - リクエストの詳細
 - プロファイルスナップショット
 
-Target のトレースについて詳しくは、[Target コンテンツ配信のデバッグ ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) に関する専用ガイドを参照してください。
+Target のトレースについて詳しくは、[Target コンテンツ配信のデバッグ &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) に関する専用ガイドを参照してください。
 
 ### Assuranceを使用したトラブルシューティング
 
@@ -142,7 +142,7 @@ Target トレース情報は、Adobe Experience Platform Debugger ブラウザ�
 1. タイプが「`com.adobe.target.trace`」のログエントリを選択します
 1. ペイロードの詳細を展開し、`context > targetTrace` の下の情報を表示します
 
-![Assuranceで Target トレースを表示する方法 ](assets/target-trace-assurance.png){zoomable="yes"}
+![Assuranceで Target トレースを表示する方法 &#x200B;](assets/target-trace-assurance.png){zoomable="yes"}
 
 ## ネットワーク要求と応答を調べる
 
@@ -150,7 +150,7 @@ Platform Web SDK `sendEvent` 呼び出しのリクエストペイロードと応
 
 ### コンテンツリクエストペイロード
 
-![Platform Web SDK ペイロードの Target 固有の要素 ](assets/target-payload.png){zoomable="yes"}
+![Platform Web SDK ペイロードの Target 固有の要素 &#x200B;](assets/target-payload.png){zoomable="yes"}
 
 - プロファイル、エンティティ、その他の mbox 以外のパラメーターは、`data.__adobe.target` のイベント配列で渡されます
 - 決定範囲は、`query.personalization.decisionScopes` の下のイベント配列にあります
@@ -158,7 +158,7 @@ Platform Web SDK `sendEvent` 呼び出しのリクエストペイロードと応
 
 ### コンテンツ応答本文
 
-![Platform Web SDK応答本文の Target 固有の要素 ](assets/target-response.png){zoomable="yes"}
+![Platform Web SDK応答本文の Target 固有の要素 &#x200B;](assets/target-response.png){zoomable="yes"}
 
 - Platform Web SDKは、`handle` オブジェクトの下にあるすべてのAdobe アプリケーションに対するアクションを返します
 - `personalization:decisions` アクションは、Target または Offer Decisioning からの応答を示します
@@ -169,7 +169,7 @@ Platform Web SDK `sendEvent` 呼び出しのリクエストペイロードと応
 
 ### 提案イベントペイロード
 
-![Target の提案イベントの例 ](assets/target-proposition-event.png){zoomable="yes"}
+![Target の提案イベントの例 &#x200B;](assets/target-proposition-event.png){zoomable="yes"}
 
 - Target 固有のSDK イベントは、インプレッションの場合は `decisioning.propositionDisplay`、クリックなどのインタラクションの場合は `decisioning.propositionInteract` です
 - 提案イベントの詳細は、`xdm._experience.decisioning` の下のイベント配列にあります
@@ -180,4 +180,4 @@ Platform Web SDK `sendEvent` 呼び出しのリクエストペイロードと応
 
 >[!NOTE]
 >
->アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

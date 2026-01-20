@@ -14,7 +14,7 @@ ht-degree: 39%
 
 # イベント転送プロパティの作成
 
-データ収集でイベント転送プロパティを作成する方法を説明します。 詳しくは、[ イベント転送プロパティの作成 ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property) ドキュメントを参照してください。
+データ収集でイベント転送プロパティを作成する方法を説明します。 詳しくは、[&#x200B; イベント転送プロパティの作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property) ドキュメントを参照してください。
 
 >[!NOTE]
 >

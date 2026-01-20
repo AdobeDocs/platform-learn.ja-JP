@@ -39,7 +39,7 @@ ht-degree: 71%
 
 ## 前提条件
 
-[ タグの設定 ](create-a-property.md) および [ID サービスの追加 ](id-service.md) のレッスンを既に完了しているはずです。
+[&#x200B; タグの設定 &#x200B;](create-a-property.md) および [ID サービスの追加 &#x200B;](id-service.md) のレッスンを既に完了しているはずです。
 
 さらに、1 つ以上のレポートスイート ID とトラッキングサーバーが必要です。このチュートリアルで使用できるテスト／開発用レポートトスイートがない場合は、作成してください。方法が分からない場合は、[ドキュメント](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)を参照してください。トラッキングサーバーは、現在の実装、アドビコンサルタントまたはカスタマーケア担当者から取得できます。
 
@@ -61,19 +61,19 @@ Analytics 拡張機能は、次の 2 つの主要部分で構成されます。
 
    ![Analytics 拡張機能のインストール](images/analytics-catalog-install.png)
 
-1. [!UICONTROL  ライブラリ管理/レポートスイート ] で、各タグ環境で使用するレポートスイート ID を入力します。 ユーザーがAdobe Analyticsにアクセスできる場合、ボックスに入力を開始すると、すべてのレポートスイートの事前入力リストが表示されます。 （このチュートリアルでは、すべての環境に対して 1 つのレポートスイートを使用しても構いませんが、実際の環境では、次の画像のように別々のレポートスイートを使用する必要があります）。
+1. [!UICONTROL &#x200B; ライブラリ管理/レポートスイート &#x200B;] で、各タグ環境で使用するレポートスイート ID を入力します。 ユーザーがAdobe Analyticsにアクセスできる場合、ボックスに入力を開始すると、すべてのレポートスイートの事前入力リストが表示されます。 （このチュートリアルでは、すべての環境に対して 1 つのレポートスイートを使用しても構いませんが、実際の環境では、次の画像のように別々のレポートスイートを使用する必要があります）。
 
    ![レポートスイート ID の入力](images/analytics-config-reportSuite.png)
 
    >[!TIP]
    >
-   >[!UICONTROL  ライブラリ管理 ] 設定として「[!UICONTROL  ライブラリをシス ] ムで管理」オプションを使用すると、ライブラリを最新の状態に保つことが非常に容易になるため `AppMeasurement.js` 推奨しています。
+   >[!UICONTROL &#x200B; ライブラリ管理 &#x200B;] 設定として「[!UICONTROL &#x200B; ライブラリをシス &#x200B;] ムで管理」オプションを使用すると、ライブラリを最新の状態に保つことが非常に容易になるため `AppMeasurement.js` 推奨しています。
 
-1. [!UICONTROL  一般/トラッキングサーバー ] に、トラッキングサーバーを入力します（例：`tmd.sc.omtrdc.net`） サイトが `https://` に対応している場合は、SSL トラッキングサーバーを入力します。
+1. [!UICONTROL &#x200B; 一般/トラッキングサーバー &#x200B;] に、トラッキングサーバーを入力します（例：`tmd.sc.omtrdc.net`） サイトが `https://` に対応している場合は、SSL トラッキングサーバーを入力します。
 
    ![トラッキングサーバーの入力](images/analytics-config-trackingServer.png)
 
-1. [!UICONTROL  グローバル変数 ] セクションの [!UICONTROL  追加設定 ] で、[!UICONTROL  データ要素を使用して ] ページ名 `Page Name` 変数を設定します。 ![データ要素アイコン](images/icon-dataElement.png)をクリックしてモーダルを開き、ページの `Page Name` データ要素を選択します。
+1. [!UICONTROL &#x200B; グローバル変数 &#x200B;] セクションの [!UICONTROL &#x200B; 追加設定 &#x200B;] で、[!UICONTROL &#x200B; データ要素を使用して &#x200B;] ページ名 `Page Name` 変数を設定します。 ![データ要素アイコン](images/icon-dataElement.png)をクリックしてモーダルを開き、ページの `Page Name` データ要素を選択します。
 
 1. 「**[!UICONTROL ライブラリに保存]**」をクリックします
 
@@ -87,7 +87,7 @@ Analytics 拡張機能は、次の 2 つの主要部分で構成されます。
 
 次に、Analytics ビーコンを起動するルールを作成します。このルールは、拡張機能設定で設定された[!UICONTROL ページ名]変数を送信します。
 
-このチュートリアルの [ データ要素、ルール、ライブラリの追加 ](add-data-elements-rules.md) レッスンでは、「すべてのページ – ライブラリの読み込み」ルールを作成済みです。このルールは、タグライブラリの読み込み時にすべてのページでトリガーされます。 このルールを Analytics にも使用できます *ただし* この設定では、Analytics ビーコンで使用されるすべてのデータレイヤー属性を、タグ埋め込みコードの前に定義する必要があります。 データ収集をより柔軟に実行できるようにするには、「DOM Ready」でトリガーして Analytics ビーコンを起動する、新しい「all pages」ルールを作成します。
+このチュートリアルの [&#x200B; データ要素、ルール、ライブラリの追加 &#x200B;](add-data-elements-rules.md) レッスンでは、「すべてのページ – ライブラリの読み込み」ルールを作成済みです。このルールは、タグライブラリの読み込み時にすべてのページでトリガーされます。 このルールを Analytics にも使用できます *ただし* この設定では、Analytics ビーコンで使用されるすべてのデータレイヤー属性を、タグ埋め込みコードの前に定義する必要があります。 データ収集をより柔軟に実行できるようにするには、「DOM Ready」でトリガーして Analytics ビーコンを起動する、新しい「all pages」ルールを作成します。
 
 **ページビュービーコンを送信するには、以下を実行します。**
 
@@ -127,10 +127,10 @@ Analytics 拡張機能は、次の 2 つの主要部分で構成されます。
 ビーコンを送信するためのルールを作成したら、Experience Cloud デバッガーでそのリクエストを表示できるようになります。
 
 1. Chrome ブラウザーで [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
-1. ![Experience Cloud Debugger を開く ](images/analytics-debuggerIcon.png) デバッガーアイコンをクリックして、**[!UICONTROL Adobe Experience Cloud Debugger を開きます]**
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. ![Experience Cloud Debugger を開く &#x200B;](images/analytics-debuggerIcon.png) デバッガーアイコンをクリックして、**[!UICONTROL Adobe Experience Cloud Debugger を開きます]**
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. クリックして「Analytics」タブを開きます。
 1. レポートスイート名を展開して、それに対するすべての要求を表示します。
@@ -228,7 +228,7 @@ Adobe Analytics の実装に詳しい方は、[products](https://experienceleagu
 1. 「**[!UICONTROL 変更を保持]**」をクリックします
    ![イベントの設定](images/analytics-configDOMReadyEvent.png)
 
-1. **[!UICONTROL 条件]** で ![ プラスアイコンをクリック ](images/icon-plus.png) して `Condition Configuration` 画面を開きます
+1. **[!UICONTROL 条件]** で ![&#x200B; プラスアイコンをクリック &#x200B;](images/icon-plus.png) して `Condition Configuration` 画面を開きます
    ![「+」アイコンをクリックし、新しい条件を追加する](images/analytics-PDPRuleAddCondition.png)
 
    1. **[!UICONTROL 条件タイプ/値の比較]** を選択します。
@@ -281,7 +281,7 @@ Adobe Analytics の実装に詳しい方は、[products](https://experienceleagu
 
 1. Chrome ブラウザーで [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 1. 製品の詳細ページに移動します。
-1. ![Experience Cloud Debugger を開く ](images/analytics-debuggerIcon.png) デバッガーアイコンをクリックして、**[!UICONTROL Adobe Experience Cloud Debugger を開きます]**
+1. ![Experience Cloud Debugger を開く &#x200B;](images/analytics-debuggerIcon.png) デバッガーアイコンをクリックして、**[!UICONTROL Adobe Experience Cloud Debugger を開きます]**
 1. 「Analytics」タブをクリックします。
 1. レポートスイートを展開します。
 1. 製品詳細変数がデバッガーに表示されています。`eVar1` は「製品詳細ページ」に設定されており、`Events` 変数は「event1」および「prodView」に設定されています。製品変数は表示している製品の製品 ID とともに設定されています。ページ名は引き続き Analytics 拡張機能によって設定されています。
@@ -307,7 +307,7 @@ Adobe Analytics の実装に詳しい方は、[products](https://experienceleagu
 1. ルール名を設定します。`Homepage - Featured Products enters Viewport`
 1. **[!UICONTROL イベント /追加]** をクリックして、`Event Configuration` 画面を開きます
 
-   ![ おすすめ製品の追加ルール ](images/analytics-newArrivalsRuleAdd2.png)
+   ![&#x200B; おすすめ製品の追加ルール &#x200B;](images/analytics-newArrivalsRuleAdd2.png)
 
 1. **[!UICONTROL Event Type > Enters Viewport]** を選択します。 表示されたフィールドに CSS セレクターを入力します。このセレクターは、ブラウザーにルールが表示されたときにルールをトリガーする必要のあるページ上の項目を識別します。
 1. Luma のホームページに戻り、注目の製品セクションまで下にスクロールします。
@@ -349,7 +349,7 @@ Adobe Analytics の実装に詳しい方は、[products](https://experienceleagu
 1. 「**[!UICONTROL リンク名]**」フィールドに「`Scrolled down to Featured Products`」と入力します。 この値は、Analytics のカスタムリンクレポートに配置されます。
 1. 「**[!UICONTROL 変更を保持]**」をクリックします
 
-   ![Config Featured Products ビーコン ](images/analytics-configEntersViewportBeacon.png)
+   ![Config Featured Products ビーコン &#x200B;](images/analytics-configEntersViewportBeacon.png)
 
 1. 「**[!UICONTROL ライブラリおよびビルドに保存]**」をクリックします
 
@@ -360,7 +360,7 @@ Adobe Analytics の実装に詳しい方は、[products](https://experienceleagu
 次に、サイトのホームページの「特集製品」セクションまでスクロールダウンしたときに、このヒットが表示されるようにする必要があります。 最初にホームページを読み込んだときには、リクエストは実行されませんが、下にスクロールしてセクションが表示されると、新しい値でヒットが起動します。
 
 1. Chrome ブラウザーで [Lumaサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開き、ホームページの先頭に来ていることを確認します。
-1. **[!UICONTROL debugger アイコン]**![Experience Cloud Debugger を開く ](images/analytics-debuggerIcon.png) をクリックして、[!UICONTROL Adobe Experience Cloud Debugger を開きます ]
+1. **[!UICONTROL debugger アイコン]**![Experience Cloud Debugger を開く &#x200B;](images/analytics-debuggerIcon.png) をクリックして、[!UICONTROL Adobe Experience Cloud Debugger を開きます &#x200B;]
 1. 「Analytics」タブをクリックします。
 1. レポートスイートのヒットを展開します。
 1. ホームページの通常のページビューヒットにページ名などが付いています。（ただし、eVar3 や prop3 には何も含まれません）。
@@ -398,7 +398,7 @@ doPlugins 関数（以下）を追加してプラグインを使用する場合�
    ![Analytics の設定](images/analytics-configureExtension.png)
 
 1. **[!UICONTROL ライブラリ管理]** で、「`Make tracker globally accessible`」というラベルの付いたボックスを選択します。 ヘルプバブルに表示されるように、トラッカーは、window.s の下でグローバルにスコープされるので、顧客の JavaScript で参照する際に重要です。
-   ![ トラッカーをグローバルにアクセスできるようにする ](images/analytics-makeTrackerGlobal.png)
+   ![&#x200B; トラッカーをグローバルにアクセスできるようにする &#x200B;](images/analytics-makeTrackerGlobal.png)
 
 ### doPlugins 関数を含める
 
@@ -476,7 +476,7 @@ doPlugins 関数（以下）を追加してプラグインを使用する場合�
 **プラグインを検証するには、以下を実行します。**
 
 1. Chrome ブラウザーで [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
-1. ![Experience Cloud Debugger を開く ](images/analytics-debuggerIcon.png) デバッガーアイコンをクリックして、**[!UICONTROL Adobe Experience Cloud Debugger を開きます]**
+1. ![Experience Cloud Debugger を開く &#x200B;](images/analytics-debuggerIcon.png) デバッガーアイコンをクリックして、**[!UICONTROL Adobe Experience Cloud Debugger を開きます]**
 1. 「Analytics」タブをクリックします。
 1. レポートスイートを展開します。
 1. Analytics ヒットには Campaign 変数はありません。
