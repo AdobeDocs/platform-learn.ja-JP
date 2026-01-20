@@ -4,18 +4,17 @@ description: データ収集でイベント転送ルールを作成する方法�
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
-thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 19%
+ht-degree: 41%
 
 ---
 
 # イベント転送ルールの作成
 
-データ収集でイベント転送ルールを作成する方法を説明します。 詳しくは、[&#x200B; イベント転送ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
+データ収集でイベント転送ルールを作成する方法を説明します。 詳しくは、[ イベント転送ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ ht-degree: 19%
 > * Platform Launch サーバーサイドが **[!DNL event forwarding]** になりました
 > * Edgeの設定が **[!DNL datastreams]** になりました
 
->[!VIDEO](https://video.tv.adobe.com/v/3410374?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)
