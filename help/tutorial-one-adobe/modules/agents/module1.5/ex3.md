@@ -12,6 +12,6 @@ ht-degree: 0%
 
 # 1.5.3 MCP サーバとAdobe Analyticsおよび ChatGPT
 
-[Analytics とエージェント ](./analyticsagents.md){target="_blank"} に戻る
+[Analytics とエージェント &#x200B;](./analyticsagents.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

@@ -35,10 +35,10 @@ ht-degree: 1%
 
 この演習では、ChatGPT でカスタム MCP サーバーを設定して、ChatGPT をAdobe Analyticsに直接接続し、Adobe Analytics（AA）でホストされているデータを ChatGPT から直接分析します。
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}

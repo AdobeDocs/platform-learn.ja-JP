@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 概要 – Agentic AI テクニカルラボ
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -62,7 +62,7 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 - Adobe Experience Platform サンドボックスでのBrand Concierge インスタンスの設定
 - AEM CS/EDS Web サイトへのBrand Conciergeの実装
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

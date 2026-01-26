@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ChatGPT と MCP サーバーを設定して使用しCJAに接続する方法に関するこの演習は、この演習 [1.1 Customer Journey Analytics:Adobe Experience Platform上でAnalysis Workspaceを使用してダッシュボードを作成する ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md) に関連しています。 以下の演習で使用しているCJA データビューと接続は、その演習で設定したデータビューと接続です。 以下の結果をレプリケートする場合は、最初にその手順に従う必要があります。
+>ChatGPT と MCP サーバーを設定して使用しCJAに接続する方法に関するこの演習は、この演習 [1.1 Customer Journey Analytics:Adobe Experience Platform上でAnalysis Workspaceを使用してダッシュボードを作成する &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md) に関連しています。 以下の演習で使用しているCJA データビューと接続は、その演習で設定したデータビューと接続です。 以下の結果をレプリケートする場合は、最初にその手順に従う必要があります。
 
 ## ビデオ
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、[ 戻る **をクリック** します。
+**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
 
 ![ChatGPT](./images/chatgpt4.png)
 
@@ -119,7 +119,7 @@ switch to dataview --aepUserLdap-- - Omnichannel Data View
 
 >[!NOTE]
 >
->ここで使用するデータビューは、演習 [ データビューの作成 ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定されています。
+>ここで使用するデータビューは、演習 [&#x200B; データビューの作成 &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定されています。
 
 次の **プロンプト** を入力し、「**送信**」ボタンをクリックして、使用可能な指標とディメンションを調べます。
 
@@ -129,7 +129,7 @@ list the available metrics and dimensions
 
 ![ChatGPT とCJA](./images/chatgpt101.png)
 
-次に、この応答が表示されます。この応答には、演習 [ データビューの作成 ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定された指標とディメンションが含まれています。
+次に、この応答が表示されます。この応答には、演習 [&#x200B; データビューの作成 &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定された指標とディメンションが含まれています。
 
 ![ChatGPT とCJA](./images/chatgpt102.png)
 
@@ -261,6 +261,6 @@ break down the fallout analysis at the touchpoint of the add to carts
 
 ![ChatGPT とCJA](./images/chatgpt124.png)
 
-[Analytics とエージェント ](./analyticsagents.md){target="_blank"} に戻る
+[Analytics とエージェント &#x200B;](./analyticsagents.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
