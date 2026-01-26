@@ -3,14 +3,21 @@ title: ChatGPT のAdobe Marketing Agent
 description: ChatGPT のAdobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 0%
+source-wordcount: '1003'
+ht-degree: 4%
 
 ---
 
 # 1.1.2 ChatGPT のAdobe Marketing Agent
+
+[!BADGE Beta]
+
++++詳細を表示
+Adobe Marketing Agentを ChatGPT Betaと併用することにより、お客様は、Betaが「現状のまま」でいかなる保証もなく提供されていることを承諾します。 Adobeは、Betaを維持、修正、更新、変更、修正、またはその他の方法でサポートする義務を負いません。 このようなBetaおよび付属の資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないことをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
+
++++
 
 >[!IMPORTANT]
 >
@@ -30,7 +37,7 @@ ht-degree: 0%
 >- openai の ChatGPT の有料版
 >- chatGPT web クライアントの使用
 
-https://chatgpt.com/に移動し、アカウントの詳細を使用してログインします。 ログインすると、このが表示されます。 ユーザー名をクリックします。
+[https://chatgpt.com/](https://chatgpt.com/){target="_blank"} に移動し、アカウントの詳細を使用してログインします。 ログインすると、このが表示されます。 ユーザー名をクリックします。
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -42,7 +49,7 @@ https://chatgpt.com/に移動し、アカウントの詳細を使用してログ
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
+**開発者モード** をオンにしてから、[ 戻る **をクリック** します。
 
 ![ChatGPT](./images/chatgpt4.png)
 
@@ -86,11 +93,11 @@ ChatGPT を通じてAdobe Marketing Agentとさらに対話する前に、コン
 
 - **サンドボックス**: **実稼動 – 高速化（VA7）**
 
-サンドボックス設定は、質問をする際に AI Assistant が参照するサンドボックスを識別するのに役立ちます。
+サンドボックス設定は、質問をする際に ChatGPT が参照するサンドボックスを識別するのに役立ちます。
 
 - **Dataview**:**2026 B2C の高速化**
 
-データビュー設定は、質問をする際に AI Assistant が調べるデータビューを識別するのに役立ちます。
+データビュー設定は、ChatGPT が質問をする際に参照するデータビューを特定するのに役立ちます。
 
 次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
 
@@ -122,9 +129,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-使用可能なサンドボックスの同様のリストが表示されます。 この例では、現在のサンドボックスが **prod** に設定されています。
+使用可能なデータビューの同様のリストが表示されます。
 
-これを使用する必要があるサンドボックスに変更するには、次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+使用する必要があるデータビューを設定するには、次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
 
 ```javascript
 switch to Accelerate 2026 B2C
@@ -298,4 +305,4 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

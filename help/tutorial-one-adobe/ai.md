@@ -3,16 +3,16 @@ title: 概要 Agentic AI テクニカルラボ
 description: 概要 Agentic AI テクニカルラボ
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
 # 概要 – Agentic AI テクニカルラボ
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -51,27 +51,18 @@ Adobe Experience Platform エージェントとAgent Orchestratorを使用して
 - MCP サーバー、Python ノートブック
 - ADOBE API
 
-[1.3 エージェントのCollaboration](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->このモジュールはまだリリースされていません。
+[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **目標**
 
-独自のエージェントをAdobe エージェントに接続します。 学習者は、エージェントをAEP Agent Orchestratorと接続するために Agent2Agent （A2A）プロトコルを設定します。
+Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関わり方を変えるデジタルコンパニオンです。 一般的なチャットボットとは異なり、Brand Conciergeは各訪問者の意図に合わせてパーソナライズされた対話型エクスペリエンスを提供します。 訪問者が製品を発見し、オプションを比較し、即座に回答を得て、ガイド付きのレコメンデーションをリアルタイムで受け取るのに役立ちます。 プラットフォームは、B2C と B2B の両方に対応し、ブランドの声、コンテンツの整合性、コンプライアンスを維持しながら、あらゆるデジタルチャネルでブランドのインテリジェントな拡張として機能します。
 
-- エージェントの連結
-- Collaboration捜査官
+この演習では、次の方法を学びます。
 
-Adobeエージェントの背後にあるアーキテクチャとは何ですか。
-A2A のアーキテクチャはどのようなものですか。
+- Adobe Experience Platform サンドボックスでのBrand Concierge インスタンスの設定
+- AEM CS/EDS Web サイトへのBrand Conciergeの実装
 
-技術的要素：
-
-- A2A プロトコルをGoogleしたエージェントの相互運用性
-
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

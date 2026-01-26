@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1446'
 ht-degree: 3%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federated Audience の構成 {#dc13}
@@ -274,13 +274,16 @@ ht-degree: 3%
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Agent Orchestratorの概要](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 ChatGPT のAdobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing AgentとMicrosoft コパイロット](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
    + 1.2 エージェントと AI の基本を学ぶ {#agents2}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI の概要](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.3 エージェントのCollaboration {#agents3}
-      + [概要](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-      + [1.3.1 エージェントCollaborationの概要](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
    + 1.4 Brand Concierge {#agents4}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
       + [1.4.1 Brand Conciergeの概要](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
       + [1.4.2 Web サイトへのBrand Conciergeの実装](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analytics およびエージェント {#agents5}
+      + [概要](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 MCP サーバとCJAおよび ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 MCP サーバを搭載したCJAおよび Claude.ai](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 MCP サーバとAdobe Analyticsおよび ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
