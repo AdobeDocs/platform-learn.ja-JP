@@ -16,7 +16,7 @@ ht-degree: 4%
 >
 >このラボでは、まだリリースされていない機能を使用します。 この機能は開発中のため、まだ一般公開されていません。
 
-[!BADGE  開発中 ]
+[!BADGE &#x200B; 開発中 &#x200B;]
 
 +++開発内の詳細
 Adobe Marketing Agent for ChatGPT Enterprise Betaを使用することにより、お客様は、Betaが「現状のまま」でいかなる保証もなく提供されていることを承諾します。 Adobeは、Betaを維持、修正、更新、変更、修正、またはその他の方法でサポートする義務を負いません。 このようなBetaおよび付属の資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないことをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
@@ -49,7 +49,7 @@ Adobe Marketing Agent for ChatGPT Enterprise Betaを使用することにより�
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、[ 戻る **をクリック** します。
+**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
 
 ![ChatGPT](./images/chatgpt4.png)
 
@@ -305,4 +305,4 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
