@@ -25,15 +25,15 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 左側のメニューで、**チャネル** に移動し、**チャネル設定** を選択します。 **チャネル設定を作成** をクリックします。
 
-![ アプリ内 ](./images/inapp1.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp1.png)
 
 名前 `--aepUserLdap--_In-app_Messages` を入力し、チャンネル **アプリ内メッセージ** を選択してから、プラットフォーム **Web**、**iOS** および **Android** を有効にします。
 
-![ アプリ内 ](./images/inapp2.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp2.png)
 
 下にスクロールすると、これが表示されます。
 
-![ アプリ内 ](./images/inapp3.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp3.png)
 
 **単一ページ** が有効になっていることを確認します。
 
@@ -41,92 +41,92 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 **iOS** および **Android** には、`com.adobe.dsn.dxdemo` と入力します。
 
-![ アプリ内 ](./images/inapp4.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp4.png)
 
 上にスクロールして、「送信 **をクリックし** す。
 
-![ アプリ内 ](./images/inapp5.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp5.png)
 
 これで、チャネル設定を使用する準備が整いました。
 
-![ アプリ内 ](./images/inapp6.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp6.png)
 
 ## 3.3.3.2 アプリ内メッセージ用のスケジュール済みキャンペーンの設定
 
 左側のメニューで **キャンペーン** に移動し、「**キャンペーンを作成**」をクリックします。
 
-![ アプリ内 ](./images/inapp7.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp7.png)
 
 **スケジュール済み – マーケティング** を選択し、「**作成**」をクリックします。
 
-![ アプリ内 ](./images/inapp8.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp8.png)
 
 `--aepUserLdap-- - CitiSignal Fiber Max` という名前を入力し、「**アクション**」をクリックします。
 
-![ アプリ内 ](./images/inapp9.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp9.png)
 
 「**+アクションを追加**」をクリックし、「**アプリ内メッセージ**」を選択します。
 
-![ アプリ内 ](./images/inapp10.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp10.png)
 
 前の手順で作成したアプリ内メッセージチャネル設定（`--aepUserLdap--_In-app_Messages`）を選択します。 「**コンテンツを編集**」をクリックします。
 
-![ アプリ内 ](./images/inapp11.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp11.png)
 
 この画像が表示されます。 **モーダル** をクリックします。
 
-![ アプリ内 ](./images/inapp12.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp12.png)
 
 **レイアウトを変更** をクリックします。
 
-![ アプリ内 ](./images/inapp13.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp13.png)
 
 **メディア URL** アイコンをクリックして、AEM Assetsからアセットを選択します。
 
-![ アプリ内 ](./images/inapp14.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp14.png)
 
 フォルダー **citignal-images** に移動し、画像ファイル **neon-rabbit.jpg** を選択します。 「**選択**」をクリックします。
 
-![ アプリ内 ](./images/inapp15.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp15.png)
 
 **ヘッダー** テキストには、`CitiSignal Fiber Max` を使用します。
 **本文** テキストには、`Conquer lag with Fiber Max` を使用します。
 
-![ アプリ内 ](./images/inapp16.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp16.png)
 
 **Button #1 text** を `Go to Plans` に設定します。
 **target** を `com.adobe.dsn.dxdemo://plans` に設定します。
 
 **アクティブ化するレビュー** をクリックします。
 
-![ アプリ内 ](./images/inapp17.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp17.png)
 
 **アクティブ化** をクリックします。
 
-![ アプリ内 ](./images/inapp18.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp18.png)
 
 これで、キャンペーンのステータスが「**アクティブ化中** に設定されました。 キャンペーンが開始されるまでに数分かかる場合があります。
 
-![ アプリ内 ](./images/inapp19.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp19.png)
 
 ステータスが **ライブ** に変更されたら、キャンペーンをテストできます。
 
-![ アプリ内 ](./images/inapp20.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp20.png)
 
 ## 3.3.3.3 モバイルでのアプリ内メッセージキャンペーンのテスト
 
 モバイルデバイスで、アプリを開きます。 アプリを起動すると、新しいアプリ内メッセージが表示されます。 「計画に進む **ボタンをクリックし** す。
 
-![ アプリ内 ](./images/inapp21.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp21.png)
 
 その後、**プラン** ページに移動します。
 
-![ アプリ内 ](./images/inapp22.png)
+![&#x200B; アプリ内 &#x200B;](./images/inapp22.png)
 
 ## 次の手順
 
-[ 概要とメリット ](./summary.md){target="_blank"} に移動します。
+[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
 
-[Adobe Journey Optimizer: プッシュとアプリ内メッセージ ](ajopushinapp.md){target="_blank"} に戻る
+[Adobe Journey Optimizer: プッシュとアプリ内メッセージ &#x200B;](ajopushinapp.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

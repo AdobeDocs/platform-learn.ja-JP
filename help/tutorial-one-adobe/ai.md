@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 概要 – Agentic AI テクニカルラボ
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -73,7 +73,7 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 - ChatGPT や Claude.ai を **Customer Journey Analytics** に接続して、データ分析タスクを実行します
 - ChatGPT や Claude.ai を **Adobe Analytics** に接続して、データ分析タスクを実行します
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
