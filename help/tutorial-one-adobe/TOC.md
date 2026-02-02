@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,9 @@ ht-degree: 3%
       + [1.6.3 外部 DAM アプリケーションの作成とデプロイ](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 アプリを非公開で公開する](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7 ワークフロービルダー {#crpr7}
+      + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1 ワークフロービルダーの概要](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + アセット管理 {#assetmgmt}
    + 1.1 Adobe Experience ManagerCloud Service {#assetm1}
@@ -124,7 +127,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federated Audience の構成 {#dc13}
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analyticsの概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + 代理店 {#agents}
    + [Agentic AI の概要](/help/tutorial-one-adobe/ai.md)
    + 1.1 Agent Orchestrator {#agents1}

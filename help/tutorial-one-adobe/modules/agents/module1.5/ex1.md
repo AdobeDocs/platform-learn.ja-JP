@@ -3,23 +3,25 @@ title: MCP サーバーを使用したCJAと ChatGPT
 description: MCP サーバーを使用したCJAと ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca2812e14a22b80b7f00066f9cc482e708b4ac6a
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 1.5.1 MCP サーバとCJAおよび ChatGPT
 
->[!IMPORTANT]
->
->このラボでは、まだリリースされていない機能を使用します。 この機能は開発中のため、まだ一般公開されていません。
+[!BADGE Alpha]
 
++++Alphaの詳細
+CJAおよび Claude.ai を MCP サーバーAlphaと併用することにより、お客様は、Alphaが「現状のまま」でいかなる保証もなく提供されていることを承諾します。 Adobeは、Alphaを維持、修正、更新、変更、修正、またはその他の方法でサポートする義務を負いません。 このようなAlphaおよび付属の資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないことをお勧めします。 AlphaはAdobeの機密情報と見なされます。 お客様がAdobeに提供するあらゆる「フィードバック」（Alphaの使用中に発生した問題や欠陥、提案、改善点、推奨事項を含むがこれに限定されないAlphaに関する情報）は、かかるフィードバックに関するすべての権利、所有権、利益を含め、Adobeに帰属します。
+
++++
 
 >[!NOTE]
 >
->ChatGPT と MCP サーバーを設定して使用しCJAに接続する方法に関するこの演習は、この演習 [1.1 Customer Journey Analytics:Adobe Experience Platform上でAnalysis Workspaceを使用してダッシュボードを作成する &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md) に関連しています。 以下の演習で使用しているCJA データビューと接続は、その演習で設定したデータビューと接続です。 以下の結果をレプリケートする場合は、最初にその手順に従う必要があります。
+>ChatGPT と MCP サーバーを設定して使用しCJAに接続する方法に関するこの演習は、この演習 [1.1 Customer Journey Analytics:Adobe Experience Platform上でAnalysis Workspaceを使用してダッシュボードを作成する ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md) に関連しています。 以下の演習で使用しているCJA データビューと接続は、その演習で設定したデータビューと接続です。 以下の結果をレプリケートする場合は、最初にその手順に従う必要があります。
 
 ## ビデオ
 
@@ -47,7 +49,7 @@ ht-degree: 0%
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
+**開発者モード** をオンにしてから、[ 戻る **をクリック** します。
 
 ![ChatGPT](./images/chatgpt4.png)
 
@@ -119,7 +121,7 @@ switch to dataview --aepUserLdap-- - Omnichannel Data View
 
 >[!NOTE]
 >
->ここで使用するデータビューは、演習 [&#x200B; データビューの作成 &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定されています。
+>ここで使用するデータビューは、演習 [ データビューの作成 ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定されています。
 
 次の **プロンプト** を入力し、「**送信**」ボタンをクリックして、使用可能な指標とディメンションを調べます。
 
@@ -129,7 +131,7 @@ list the available metrics and dimensions
 
 ![ChatGPT とCJA](./images/chatgpt101.png)
 
-次に、この応答が表示されます。この応答には、演習 [&#x200B; データビューの作成 &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定された指標とディメンションが含まれています。
+次に、この応答が表示されます。この応答には、演習 [ データビューの作成 ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md) の一部として設定された指標とディメンションが含まれています。
 
 ![ChatGPT とCJA](./images/chatgpt102.png)
 
@@ -261,6 +263,6 @@ break down the fallout analysis at the touchpoint of the add to carts
 
 ![ChatGPT とCJA](./images/chatgpt124.png)
 
-[Analytics とエージェント &#x200B;](./analyticsagents.md){target="_blank"} に戻る
+[Analytics とエージェント ](./analyticsagents.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

@@ -3,16 +3,16 @@ title: 概要 Agentic AI テクニカルラボ
 description: 概要 Agentic AI テクニカルラボ
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
 # 概要 – Agentic AI テクニカルラボ
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -51,7 +51,7 @@ Adobe Experience Platform エージェントとAgent Orchestratorを使用して
 - MCP サーバー、Python ノートブック
 - ADOBE API
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **目標**
 
@@ -62,7 +62,18 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 - Adobe Experience Platform サンドボックスでのBrand Concierge インスタンスの設定
 - AEM CS/EDS Web サイトへのBrand Conciergeの実装
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+[1.5 Analytics およびエージェント](./modules/agents/module1.5/analyticsagents.md)
+
+**目標**
+
+データアナリスト、AI 開発者、または AI アプリケーションアーキテクトとして、外部エージェントを使用したレポート作成、スケジュール分析などのレポートタスクを自動化する方法を学びます。 新しいキャンペーンデータ、オーディエンスデータまたはパフォーマンスデータをエージェンティックワークフローに取り込む方法を説明します。
+
+この演習では、次の方法を学びます。
+
+- ChatGPT や Claude.ai を **Customer Journey Analytics** に接続して、データ分析タスクを実行します
+- ChatGPT や Claude.ai を **Adobe Analytics** に接続して、データ分析タスクを実行します
+
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
