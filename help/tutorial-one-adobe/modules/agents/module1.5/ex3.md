@@ -3,9 +3,9 @@ title: MCP サーバーを使用したAdobe Analyticsと Claude.ai
 description: MCP サーバーを使用したAdobe Analyticsと Claude.ai
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -192,8 +192,28 @@ Analyze different metrics by marketing channel
 
 ![Claude.ai とCJA](./images/claudeaa113.png)
 
+次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![Claude.ai とCJA](./images/claudeaa114.png)
+
+次のような情報が表示され、最初に **訪問別のトップトラッキングコード** が表示されます。
+
+![Claude.ai とCJA](./images/claudeaa115.png)
+
+最も多くの購入を促したトラッキングコードを **注文による上位のトラッキングコード （購入）** レポートで確認できます。
+
+![Claude.ai とCJA](./images/claudeaa116.png)
+
+次に、Adobe Analyticsから得られたデータに基づいて、Claude.ai が提供する追加のインサイトを見つけます。
+
+![Claude.ai とCJA](./images/claudeaa117.png)
+
 これで、この演習が完了しました。
 
-[Analytics とエージェント &#x200B;](./analyticsagents.md){target="_blank"} に戻る
+[Analytics とエージェント ](./analyticsagents.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
