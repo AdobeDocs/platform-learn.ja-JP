@@ -214,6 +214,6 @@ which tracking codes drove the most visits and purchases?
 
 これで、この演習が完了しました。
 
-[Analytics とエージェント ](./analyticsagents.md){target="_blank"} に戻る
+[Analytics とエージェント &#x200B;](./analyticsagents.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

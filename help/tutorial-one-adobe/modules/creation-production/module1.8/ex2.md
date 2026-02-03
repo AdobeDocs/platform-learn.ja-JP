@@ -18,6 +18,6 @@ ht-degree: 7%
 
 次の手順：[Adobe Expressおよび ESM](./ex3.md){target="_blank"}
 
-[ エンタープライズストレージ管理 ](./esm.md){target="_blank"} に戻る
+[&#x200B; エンタープライズストレージ管理 &#x200B;](./esm.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
