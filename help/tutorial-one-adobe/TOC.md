@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
+source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1501'
 ht-degree: 3%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federated Audience の構成 {#dc13}
@@ -296,3 +296,9 @@ ht-degree: 3%
       + [1.5.1 MCP サーバとCJAおよび ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
       + [1.5.2 MCP サーバを搭載したCJAおよび Claude.ai](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
       + [1.5.3 MCP サーバを搭載したAdobe Analyticsおよび Claude.ai](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6 AEMおよびエージェント {#agents6}
+      + [概要](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+   + 1.7 Adobe Commerce用のインテリジェント開発者ツール {#agents7}
+      + [概要](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1 開発環境のセットアップ](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
