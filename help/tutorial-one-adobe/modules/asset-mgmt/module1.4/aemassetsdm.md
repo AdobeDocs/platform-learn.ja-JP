@@ -25,18 +25,18 @@ ht-degree: 2%
 
 ## 演習
 
-[1.4.1 アセットと Dynamic Media テンプレートの作成 ](./ex1.md){target="_blank"}
+[1.4.1 アセットと Dynamic Media テンプレートの作成 &#x200B;](./ex1.md){target="_blank"}
 
 この演習では、Adobe Photoshopを使用して様々な画像を作成し、AEM Assets Dynamic Media での動的テンプレートとして設定します。
 
-[1.4.2 Adobe Journey Optimizerで Dynamic Media テンプレートを使用する ](./ex2.md){target="_blank"}
+[1.4.2 Adobe Journey Optimizerで Dynamic Media テンプレートを使用する &#x200B;](./ex2.md){target="_blank"}
 
 この演習では、Adobe Journey OptimizerのAEM Assets Dynamic Media で作成したテンプレートを使用して、メールを高度にパーソナライズします。
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}
