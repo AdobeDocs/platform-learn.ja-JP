@@ -12,7 +12,7 @@ ht-degree: 64%
 
 # Adobe Experience Platform ID サービスの追加
 
-このレッスンでは、[Adobe Experience Platform ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)の実装と顧客 ID の送信に必要な手順を説明します。
+このレッスンでは、[Adobe Experience Platform ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ja)の実装と顧客 ID の送信に必要な手順を説明します。
 
 [Adobe Experience Platform ID サービス &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、ソリューション間のオーディエンス共有などのExperience Cloud機能を強化するために、すべてのAdobe ソリューションで共通の訪問者 ID を設定します。 また、サービスに独自の顧客 ID を送信して、クロスデバイスターゲティングを有効にし、顧客関係管理（CRM）システムとのさらなる統合を可能にすることもできます。
 
