@@ -1,22 +1,29 @@
 ---
-title: エンタープライズストレージ管理
-description: エンタープライズストレージ管理
+title: Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合
+description: Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
+exl-id: ebd87a10-b96c-4543-82d7-ee924d4f4109
+source-git-commit: c92e21cbc385eb1cf31887c1f829af0e9ddf6ae6
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 2%
+source-wordcount: '289'
+ht-degree: 1%
 
 ---
 
-# 1.8 エンタープライズストレージ管理
+# 1.8 Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合
 
-## 前提条件
+Workfrontと Frame.io の統合により、クリエイティブオペレーションが一連の切り離されたステップから単一の接続されたエクスペリエンスに変換されます。 これにより、組織は、より多くのコンテンツを高品質で短時間で作成できると同時に、すべての関係者に必要な可視性と信頼性を提供できます。
 
-- ...
+Workfrontのプロジェクトおよび作業管理機能を Frame.io のリアルタイムのレビューおよび共同作業エクスペリエンスと直接結び付けることで、チームはハンドオフ、重複した更新、ステータス追跡を排除します。
+
+Creativeの作業は、計画から実行およびレビューまでシームレスに進むため、チームは次のことが可能になります。
+
+- 遅延を減らしながら短期資産から最終資産に移行
+- フィードバックを状況に応じて一元化することで、レビューサイクルを短縮
+- ツールを切り替えたり、勢いを失ったりすることなく、プロジェクトを継続できます
 
 ## ビデオ
 
@@ -24,24 +31,25 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479582?quality=12&learn=on)
 
+## 前提条件
+
+- 同じ IMS 組織にデプロイされたWorkfrontと Frame.io へのアクセス。
+- Workfront インスタンスは、Adobe統合エクスペリエンスとAdobe エンタープライズストレージで有効にする必要があります。
+
 ## 演習
 
-[1.8.1 Workfrontおよび ESM](./ex1.md){target="_blank"}
+[1.8.1 Workfront、Frame.io および ESM の概要 ](./ex1.md){target="_blank"}
 
-この演習では、Adobe Workfrontをエンタープライズストレージ管理と組み合わせて使用します。
+この演習では、Adobe Workfrontで必要な様々な設定を段階的に説明し、デザイナーが新しいアセットを作成できるように参照画像を提供します。
 
-[1.8.2 Frame.io および ESM](./ex2.md){target="_blank"}
+[1.8.2 新しいアセットの作成、アセットのレビューおよび承認 ](./ex2.md){target="_blank"}
 
-この実習では、Frame.io をエンタープライズ・ストレージ管理と組み合わせて使用します。
+この演習では、Adobe Expressを使用して新しいアセットを作成し、その新しいアセットを Frame.io にアップロードして、レビューと承認のプロセスを開始します。
 
-[1.8.3Adobe Expressおよび ESM](./ex3.md){target="_blank"}
-
-この演習では、Adobe Expressをエンタープライズストレージ管理と組み合わせて使用します。
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](../../../overview.md){target="_blank"} に戻る
