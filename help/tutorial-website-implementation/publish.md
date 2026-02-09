@@ -1,24 +1,29 @@
 ---
-title: タグプロパティのPublish
-description: タグプロパティを開発環境からステージング環境と実稼動環境に公開する方法について説明します。 このレッスンは、web サイトでのExperience Cloudの実装チュートリアルの一部です。
+title: タグプロパティの公開
+description: タグプロパティを開発環境からステージング環境と実稼動環境に公開する方法について説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 58%
+source-wordcount: '603'
+ht-degree: 67%
 
 ---
 
-# タグプロパティのPublish
+# タグプロパティの公開
 
 開発環境で Adobe Experience Cloud の主要ソリューションをいくつか実装したら、パブリッシュのワークフローについて学習しましょう。
+
+
+>[!WARNING]
+>
+> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
 >
-> * Platform launch（クライアントサイド）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
+> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
+> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
 > * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
@@ -26,8 +31,8 @@ ht-degree: 58%
 このレッスンを最後まで学習すると、以下の内容を習得できます。
 
 1. ステージング環境へ開発ライブラリをパブリッシュする
-1. デバッガーを使用してステージングライブラリを実稼動 Web サイトにマッピングする
-1. ステージングライブラリを実稼動環境にパブリッシュする
+1. デバッガーを使用してステージングライブラリを本番稼働 web サイトにマッピングする
+1. ステージングライブラリを本番環境に公開する
 
 ## ステージングへのパブリッシュ
 
@@ -55,7 +60,7 @@ ht-degree: 58%
 
 **ステージングライブラリで変更を検証するには、以下を実行します。**
 
-1. タグプロパティで、[!UICONTROL &#x200B; 環境 &#x200B;] ページを開きます
+1. タグプロパティで、[!UICONTROL  環境 ] ページを開きます
 
 1. [!UICONTROL ステージング]行で、インストールアイコン![インストールアイコン](images/launch-installIcon.png) をクリックして、モーダルを開きます。
 
@@ -63,32 +68,32 @@ ht-degree: 58%
 
 1. コピーアイコン![コピーアイコン](images/launch-copyIcon.png)をクリックして、埋め込みコードをクリップボードにコピーします。
 
-1. 「**[!UICONTROL 閉じる]**」をクリックしてモーダルを閉じます
+1. 「**[!UICONTROL 閉じる]**」をクリックして、モーダルを閉じます
 
    ![インストールアイコン](images/publishing-copyStagingCode.png)
 
 1. Chrome ブラウザーで [Luma デモサイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. [&#x200B; デバッガーアイコン &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) アイコンをクリックして、![Experience Platformデバッガー拡張機能を開 &#x200B;](images/icon-debugger.png) ます
+1. ![Debugger アイコン](images/icon-debugger.png) アイコンをクリックして、[Experience Platform Debugger 拡張機能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)を開きます
 
    ![デバッガーアイコンをクリックする](images/switchEnvironments-openDebugger.png)
 
 1. 「ツール」タブに移動します。
 
-1. 「**[!UICONTROL Adobeのローンチ/ローンチの埋め込みコードの置き換え]**」セクションで、クリップボードにあるステージング埋め込みコードを貼り付けます
+1. 「**[!UICONTROL Adobe Launch/Launch 埋め込みコードの置き換え」セクションで]** クリップボードにあるステージング埋め込みコードを貼り付けます
 1. **[!UICONTROL luma.enablementadobe.com 全体に適用]** スイッチをオンにします
 
 1. ディスクアイコンをクリックして保存します。
 
-   ![Debugger に表示されるタグ環境 &#x200B;](images/switchEnvironments-debugger-save.png)
+   ![Debugger に表示されるタグ環境](images/switchEnvironments-debugger-save.png)
 
 1. デバッガーの「概要」タブをリロードして確認します。「ローンチ」セクションに、ステージングプロパティが実装され、プロパティ名（「タグチュートリアル」など、プロパティに名前を付けたもの）が表示されます。
 
-   ![Debugger に表示されるタグ環境 &#x200B;](images/publishing-debugger-staging.png)
+   ![Debugger に表示されるタグ環境](images/publishing-debugger-staging.png)
 
-実際には、QA チームがステージング環境の変更を確認してサインオフしたら、実稼動環境にパブリッシュします。
+実際には、QA チームがステージング環境の変更を確認してサインオフしたら、本番環境に公開します。
 
-## 実稼動環境へのパブリッシュ
+## 本番環境への公開
 
 1. [!UICONTROL パブリッシング]ページに移動します。
 
@@ -102,11 +107,11 @@ ht-degree: 58%
 
 1. ライブラリが[!UICONTROL 承認済み]列に未ビルド（黄色の点）として表示されます。
 
-1. ドロップダウンを開き、「**[!UICONTROL ビルドして実稼動環境にPublish]**」を選択します。
+1. ドロップダウンを開き、「**[!UICONTROL ビルドして実稼動環境に公開]**」を選択します。
 
-   ![「ビルドして実稼動環境にパブリッシュ」をクリックする](images/publishing-buildAndPublishToProduction.png)
+   ![「ビルドして本番環境に公開」をクリックする](images/publishing-buildAndPublishToProduction.png)
 
-1. ダイアログボックスで **0&rbrace;Publish&rbrace; をクリックします。**
+1. ダイアログボックスで **[!UICONTROL 公開]** をクリックします。
 
    ![「パブリッシュ」をクリックする](images/publishing-publish.png)
 

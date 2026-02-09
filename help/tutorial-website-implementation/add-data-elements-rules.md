@@ -1,11 +1,11 @@
 ---
 title: データ要素、ルールおよびライブラリの追加
-description: タグでデータ要素、ルールおよびライブラリを作成する方法について説明します。 このレッスンは、web サイトでのExperience Cloudの実装チュートリアルの一部です。
+description: タグでデータ要素、ルールおよびライブラリを作成する方法について説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 54%
+source-wordcount: '1473'
+ht-degree: 56%
 
 ---
 
@@ -15,12 +15,17 @@ ht-degree: 54%
 
 データ要素とルールは、タグの基本的な構成要素です。 データ要素には、マーケティングソリューションと広告ソリューションに送信する属性が格納され、ルールは、適切な条件下でこれらのソリューションに対する要求を実行します。ライブラリは、すべての作業を実行するため、ページに読み込まれる JavaScript ファイルです。このレッスンでは、3 つすべてを使用して、サンプルページで何らかの処理をおこなうようにします。
 
+
+>[!WARNING]
+>
+> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
 >
-> * Platform launch（クライアントサイド）が **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform launchサーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
+> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
+> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
 > * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
@@ -117,7 +122,7 @@ ht-degree: 54%
 1. 「**[!UICONTROL 保存]**」をクリックして、ルールを保存します
 
 ルール ページに新しいルールが表示されます。
-![&#x200B; ルールがページに表示されます &#x200B;](images/launch-savedRule.png)
+![ ルールがページに表示されます ](images/launch-savedRule.png)
 
 ## ライブラリへの変更の保存
 
@@ -195,4 +200,4 @@ console.log('The page name is: '+_satellite.getVar('Page Name'));
 
 これで作業がはるかに高速になるので、チュートリアルの残りの部分ではこの方法を使用します。
 
-[次へ「Experience Cloud Debuggerを使用した環境の切り替え」 >](switch-environments.md)
+[次へ「Experience Cloud Debugger を使用した環境の切り替え」 >](switch-environments.md)
