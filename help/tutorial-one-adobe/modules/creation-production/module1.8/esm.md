@@ -38,18 +38,18 @@ Creativeの作業は、計画から実行およびレビューまでシームレ
 
 ## 演習
 
-[1.8.1 Workfront、Frame.io および ESM の概要 ](./ex1.md){target="_blank"}
+[1.8.1 Workfront、Frame.io および ESM の概要 &#x200B;](./ex1.md){target="_blank"}
 
 この演習では、Adobe Workfrontで必要な様々な設定を段階的に説明し、デザイナーが新しいアセットを作成できるように参照画像を提供します。
 
-[1.8.2 新しいアセットの作成、アセットのレビューおよび承認 ](./ex2.md){target="_blank"}
+[1.8.2 新しいアセットの作成、アセットのレビューおよび承認 &#x200B;](./ex2.md){target="_blank"}
 
 この演習では、Adobe Expressを使用して新しいアセットを作成し、その新しいアセットを Frame.io にアップロードして、レビューと承認のプロセスを開始します。
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[ すべてのモジュール ](../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る
