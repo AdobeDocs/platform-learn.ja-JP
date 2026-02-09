@@ -22,7 +22,7 @@ ht-degree: 60%
 
 ## 前提条件
 
-次の数つのレッスンを完了するには、タグで環境を開発、承認、公開、管理、管理する権限が必要です。 ユーザーインターフェイスオプションが使用できないためにこれらの手順を完了できない場合は、Experience Cloud 管理者に連絡してアクセス権をもらってください。タグユーザー権限について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
+次の数つのレッスンを完了するには、タグで環境を開発、承認、公開、管理、管理する権限が必要です。 ユーザーインターフェイスオプションが使用できないためにこれらの手順を完了できない場合は、Experience Cloud 管理者に連絡してアクセス権をもらってください。タグユーザー権限について詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >
@@ -44,11 +44,11 @@ ht-degree: 60%
 
 **データ収集を表示するには**
 
-1. [Adobe Experience Cloud ](https://experiencecloud.adobe.com)にログインします。
+1. [Adobe Experience Cloud &#x200B;](https://experiencecloud.adobe.com)にログインします。
 
-1. ![ ソリューション切り替えアイコン ](images/launch-solutionSwitcher.png) アイコンをクリックして、アプリ切り替えボタンを開きます
+1. ![&#x200B; ソリューション切り替えアイコン &#x200B;](images/launch-solutionSwitcher.png) アイコンをクリックして、アプリ切り替えボタンを開きます
 
-1. **[!UICONTROL アイコンを使用してソリューション切り替えボタンを開き]** メニューから ![Launch/データ収集 ](images/launch-solutionSwitcherActivation.png) を選択し、「Launch/データ収集」をクリックします。
+1. **[!UICONTROL アイコンを使用してソリューション切り替えボタンを開き]** メニューから ![Launch/データ収集 &#x200B;](images/launch-solutionSwitcherActivation.png) を選択し、「Launch/データ収集」をクリックします。
 
 `Tags Properties` 画面が表示されます（アカウントでプロパティを作成したことがない場合は、この画面が空になる可能性があります）。
 
