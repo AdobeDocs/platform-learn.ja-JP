@@ -75,7 +75,7 @@ ht-degree: 2%
 
 このビデオでは、プロセスの概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454028/?captions=jpn&learn=on&enablevpops)
 
 ### グローバル設定フィールド
 
