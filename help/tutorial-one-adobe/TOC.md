@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
+source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1540'
 ht-degree: 3%
 
 ---
@@ -109,7 +109,8 @@ ht-degree: 3%
       + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
    + 1.4 Adobe Experience Manager Assetsおよび Dynamic Media {#assetm4}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
-      + [1.4.1 AEM Assetsと Dynamic Media の基本を学ぶ](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
+      + [1.4.1 アセットと dynamic media テンプレートの作成](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
+      + [1.4.2 Adobe Journey Optimizerで dynamic media テンプレートを使用する](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex2.md)
    + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
       + [1.5.1 Adobe Commerce as a Cloud Serviceの概要](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
@@ -134,7 +135,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federated Audience の構成 {#dc13}
