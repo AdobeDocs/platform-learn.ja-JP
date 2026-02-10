@@ -3,10 +3,11 @@ title: Adobe Journey Optimizerでの dynamic media テンプレートの使用
 description: Adobe Journey Optimizerでの dynamic media テンプレートの使用
 kt: 5342
 doc-type: tutorial
-source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
+exl-id: 0dd499cc-ec3b-42c3-9c08-6512ea5b9377
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 8%
+source-wordcount: '637'
+ht-degree: 9%
 
 ---
 
@@ -82,12 +83,72 @@ Dynamic Media テンプレートを保存したフォルダーに移動します
 
 ![Journey Optimizer](./images/gsemail32.png)
 
-この画像が表示されます。
+この画像が表示されます。 あなたも。 dynamic media テンプレートのパラメーターを変更できる **パラメーター** に注意してください。
 
 ![Journey Optimizer](./images/gsemail33.png)
+
+## 1.4.2.2 Dynamic Media テンプレートのパーソナライズ
+
+前の演習で説明したように、AJOでは、Dynamic Media テンプレートの一部になる値を動的に決定する必要があります。
+
+前の演習の **プレビュー** 手順と同様に、フィールド **city_paris**、**city_dubai** および **city_ny** は 1 に設定する必要があります。つまり、これらの画像は非表示になります。
+
+フィールド **タイトル** で、パーソナライゼーションアイコンをクリックします。
+
+![Journey Optimizer](./images/gsemail34.png)
+
+既定のテキストを `Hi {{profile.person.name.firstName}}` に置き換えます。 「**保存**」をクリックします。
+
+![Journey Optimizer](./images/gsemail35.png)
+
+フィールド **本文** で、パーソナライゼーションアイコンをクリックします。
+
+![Journey Optimizer](./images/gsemail36.png)
+
+既定のテキストを `CitiSignal is coming to {{profile.homeAddress.city}}!` に置き換えます。 「**保存**」をクリックします。
+
+![Journey Optimizer](./images/gsemail37.png)
+
+フィールド **`dynamic_city_hide`** が 0 に設定されていることを確認します。 フィールド **`dynamic_city_image`** のパーソナライゼーションアイコンをクリックします。
+
+![Journey Optimizer](./images/gsemail38.png)
+
+既定のテキストを `--aepUserLdap--CitiSignalDM/citisignal-fiber-max-is-coming_citisignal-{{profile._experienceplatform.individualCharacteristics.fiber_rollout.closest_rollout_city}}-1` に置き換えます。 「**保存**」をクリックします。
+
+![Journey Optimizer](./images/gsemail39.png)
+
+この画像が表示されます。 画像は、メールエディターのコンテキストで動的変数が使用できないので、ここではレンダリングされません。
+
+「**保存**」をクリックします。
+
+![Journey Optimizer](./images/gsemail40.png)
+
+上部テスト設定、「**コンテンツをシミュレート**」の順にクリックし、「**コンテンツをシミュレート**」を選択します。
+
+![Journey Optimizer](./images/gsemail41.png)
+
+次のようなメッセージが表示されます。 使用可能なテストプロファイルがない場合は、「**テストプロファイルの管理**」に移動して追加できます。
+
+このユースケースのテストに必要なデータを含んだテストプロファイルを使用可能にしたら、プロファイルを切り替えて、変更が動的に行われることを確認できます。
+
+ロールアウト都市ニューヨークにリンクされているプロファイルを以下に示します。
+
+![Journey Optimizer](./images/gsemail42.png)
+
+ロールアウト都市パリにリンクされているプロファイルを次に示します。
+
+![Journey Optimizer](./images/gsemail43.png)
+
+ロールアウト都市ドバイにリンクされているプロファイルを以下に示します。
+
+「**閉じる**」をクリックします。
+
+![Journey Optimizer](./images/gsemail44.png)
+
+これで、この演習が完了しました。 メールキャンペーンを公開する必要はありません。
 
 ## 次の手順
 
 [Adobe Experience Manager Assetsと Dynamic Media](./aemassetsdm.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

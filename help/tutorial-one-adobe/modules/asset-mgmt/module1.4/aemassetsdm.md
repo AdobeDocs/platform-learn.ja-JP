@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assetsと Dynamic Media
 kt: 5342
 doc-type: tutorial
 exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
-source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 2%
 
 - AEM Assetsと Dynamic Media を様々な方法で使用する方法を説明します。
 
+## ビデオ
+
+このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479788?quality=12&learn=on)
+
 ## 前提条件
 
 - AEM Assetsおよび Dynamic Media へのアクセス
@@ -25,18 +31,18 @@ ht-degree: 2%
 
 ## 演習
 
-[1.4.1 アセットと Dynamic Media テンプレートの作成 &#x200B;](./ex1.md){target="_blank"}
+[1.4.1 アセットと Dynamic Media テンプレートの作成 ](./ex1.md){target="_blank"}
 
 この演習では、Adobe Photoshopを使用して様々な画像を作成し、AEM Assets Dynamic Media での動的テンプレートとして設定します。
 
-[1.4.2 Adobe Journey Optimizerで Dynamic Media テンプレートを使用する &#x200B;](./ex2.md){target="_blank"}
+[1.4.2 Adobe Journey Optimizerで Dynamic Media テンプレートを使用する ](./ex2.md){target="_blank"}
 
 この演習では、Adobe Journey OptimizerのAEM Assets Dynamic Media で作成したテンプレートを使用して、メールを高度にパーソナライズします。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}
