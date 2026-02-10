@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-次のようなメールが届きます。このメールには、一時パスワードが記載されています。 パスワードを変更する場合や、メールを受信しなかった場合にパスワードを取得する場合は、**Adobe Dynamic Media Classic デスクトップアプリ** をインストールしてください。 インストール手順については、[https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app) を参照してください。
+次のようなメールが届きます。このメールには、一時パスワードが記載されています。 パスワードを変更する場合や、メールを受信しなかった場合にパスワードを取得する場合は、**Adobe Dynamic Media Classic デスクトップアプリ** をインストールしてください。 インストール手順については、[https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app) を参照してください。
 
 手順に従い、アプリケーションをシステムにインストールしたら、ここに戻ります。
 
