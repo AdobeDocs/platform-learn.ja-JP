@@ -433,8 +433,8 @@ URL で **paris** という単語を選択します。
 
 ## 次の手順
 
-次の手順：[Adobe Journey Optimizerで dynamic media テンプレートを使用する ](./ex2.md){target="_blank"}
+次の手順：[Adobe Journey Optimizerで dynamic media テンプレートを使用する &#x200B;](./ex2.md){target="_blank"}
 
 [Adobe Experience Manager Assetsと Dynamic Media](./aemassetsdm.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
