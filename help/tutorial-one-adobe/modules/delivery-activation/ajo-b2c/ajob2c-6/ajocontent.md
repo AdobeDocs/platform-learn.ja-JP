@@ -37,7 +37,7 @@ ht-degree: 2%
 
 この演習では、GenStudio for Performance Marketingからブランドテンプレートを読み込んでAdobe Journey Optimizerで使用し、GenStudio for Performance Marketingで生成 AI を使用してメールエクスペリエンスを作成してから、Adobe Journey Optimizerで使用します。
 
-![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

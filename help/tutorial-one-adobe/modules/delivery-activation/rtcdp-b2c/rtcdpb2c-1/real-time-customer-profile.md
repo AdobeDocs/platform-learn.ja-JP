@@ -30,7 +30,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[Experience League ドキュメントのChrome拡張機能のインストール ](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
+>[Experience League ドキュメントのChrome拡張機能のインストール &#x200B;](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
 
 ## 演習
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 この演習では、顧客から電話を受けるコールセンターの従業員として実行します。 この顧客のエクスペリエンスに本当に影響を与えるためには、利用可能なすべての情報にリアルタイムでアクセスする必要があります。
 
-![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
