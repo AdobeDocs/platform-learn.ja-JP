@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer翻訳サービス
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 前提条件
 
 - Adobe Journey Optimizerへのアクセス
-- Microsoft Azure トランスレーターへのアクセス
+- Microsoft Azure翻訳者へのアクセス
 
 ## 演習
 
@@ -36,11 +36,7 @@ ht-degree: 2%
 
 この演習では、キャンペーンのメールに言語を追加します。
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

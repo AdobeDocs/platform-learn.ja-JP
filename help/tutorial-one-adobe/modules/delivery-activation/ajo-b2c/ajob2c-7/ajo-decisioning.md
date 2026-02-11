@@ -1,18 +1,19 @@
 ---
-title: Experience Decisioning
-description: Experience Decisioning
+title: Adobe Journey Optimizerの決定
+description: Adobe Journey Optimizerの決定
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '277'
 ht-degree: 1%
 
 ---
 
-# 3.7 Adobe Journey Optimizer:Experience Decisioning
+# 3.7 Adobe Journey Optimizer：決定
 
 このモジュールでは、Adobe Journey Optimizerの Experience Decisioning 機能の実践的なチュートリアルを学びます。
 
@@ -31,11 +32,11 @@ Experience Decisioning を使用すると、利用可能な一連の選択肢か
 
 >[!NOTE]
 >
->[Experience League ドキュメントのChrome拡張機能のインストール &#x200B;](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
+>[Experience League ドキュメントのChrome拡張機能のインストール ](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
 
 ## 演習
 
-[3.7.1 Experience Decisioning 101](./ex1.md)
+[3.7.1 Adobe Journey Optimizer Decisioning 101](./ex1.md)
 
 この演習では、Adobe Journey Optimizerのすべての様々なコンセプトと、Offer DecisioningでOffer Decisioningにアクセスする方法について、より深く理解します。
 
@@ -43,15 +44,11 @@ Experience Decisioning を使用すると、利用可能な一連の選択肢か
 
 この演習では、独自にパーソナライズされたオファーと独自の決定を設定し、それらを公開します。
 
-[3.7.3 Experience Decisioning の Web SDKのセットアップ](./ex3.md)
+[3.7.3 Adobe Journey Optimizer Decisioning のための Web SDKのセットアップ](./ex3.md)
 
 この演習では、デモ Web サイトを使用して決定をテストします。
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

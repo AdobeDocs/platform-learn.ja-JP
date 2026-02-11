@@ -4,9 +4,9 @@ description: データ収集 – Federated Audience Composition
 kt: 5342
 doc-type: tutorial
 exl-id: a2449e72-794a-4ff0-a208-28303fd574d1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -42,17 +42,13 @@ Federated Audience Composition を使用すると、Real-Time CDPおよびJourne
 
 [1.3.2 スキーマ、データモデル、リンクの作成](./ex2.md)
 
-この演習では、AEP で統合データのデータモデルを設定します。
+この演習では、AEPで統合データのデータモデルを設定します。
 
 [1.3.3 フェデレーション構成の作成](./ex3.md)
 
-この演習では、AEP で統合データのデータモデルを設定します。
+この演習では、AEPで統合データのデータモデルを設定します。
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

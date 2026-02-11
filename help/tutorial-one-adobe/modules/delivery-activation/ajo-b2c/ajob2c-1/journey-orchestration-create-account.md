@@ -4,16 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer：オーケストレーション
 
-このモジュールでは、Adobe Journey Optimizerを使用する手順を説明します。 AEP に送信されたエクスペリエンスイベントからのトリガーに基づいて開始するイベントとジャーニーを設定します。
+このモジュールでは、Adobe Journey Optimizerを使用する手順を説明します。 AEPに送信されたエクスペリエンスイベントからのトリガーに基づいて開始するイベントとジャーニーを設定します。
 
 ## 学習内容
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[Experience League ドキュメントのChrome拡張機能のインストール &#x200B;](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
+>[Experience League ドキュメントのChrome拡張機能のインストール ](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
 
 ## 演習
 
@@ -47,11 +47,7 @@ ht-degree: 3%
 
 これにより、イベントをトリガーして適切なペイロードを提供するための Launch の設定がガイドされ、最後に、自分自身にメールを送信できるようになります。
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

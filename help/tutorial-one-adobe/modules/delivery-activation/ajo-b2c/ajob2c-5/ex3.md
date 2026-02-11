@@ -4,9 +4,9 @@ description: AJO翻訳サービス
 kt: 5342
 doc-type: tutorial
 exl-id: fff315ce-88d2-407f-b8c4-c24517688e60
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '317'
 ht-degree: 11%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 [https://experience.adobe.com/](https://experience.adobe.com/) に移動します。 **Journey Optimizer** をクリックします。
 
-![&#x200B; 翻訳 &#x200B;](./images/ajolp1.png)
+![ 翻訳 ](./images/ajolp1.png)
 
 Journey Optimizerの **ホーム** ビューにリダイレクトされます。 最初に、正しいサンドボックスを使用していることを確認します。 使用するサンドボックスは `--aepSandboxName--` です。
 
@@ -41,7 +41,7 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ![Journey Optimizer](./images/camploc5.png)
 
-`--aepUserLdap--_translations` という名前の **言語設定** を選択します。 「**選択**」をクリックします。
+**という名前の** 言語設定 `--aepUserLdap--_translations` を選択します。 「**選択**」をクリックします。
 
 ![Journey Optimizer](./images/camplocs1.png)
 
@@ -89,8 +89,6 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 次の手順
 
-[&#x200B; 概要とメリット &#x200B;](./summary.md) に移動します。
+[Adobe Journey Optimizer：翻訳サービス ](./ajotranslationsvcs.md){target="_blank"} に戻る
 
-[Adobe Journey Optimizer：翻訳サービス &#x200B;](./ajotranslationsvcs.md){target="_blank"} に戻る
-
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

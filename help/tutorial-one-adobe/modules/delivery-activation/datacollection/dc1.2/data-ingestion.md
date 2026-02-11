@@ -4,9 +4,9 @@ description: Foundation - データ取り込み
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[Experience League ドキュメントのChrome拡張機能のインストール &#x200B;](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
+>[Experience League ドキュメントのChrome拡張機能のインストール ](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
 
 ## 演習
 
@@ -54,13 +54,9 @@ ht-degree: 1%
 
 [1.2.5 データランディングゾーン](./ex5.md)
 
-Azure Blob Storage を使用して Data Landing Zone Source コネクタを設定します。
+Azure Blob ストレージを使用して Data Landing Zone Source コネクタを設定します。
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

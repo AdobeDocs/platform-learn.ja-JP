@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: fcf4fd2d-8225-408c-b394-539860ee2997
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[Experience League ドキュメントのChrome拡張機能のインストール &#x200B;](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
+>[Experience League ドキュメントのChrome拡張機能のインストール ](../../../getting-started/gettingstarted/ex1.md) で参照されているように、Chrome拡張機能をインストール、設定、使用することを忘れないでください。
 
 ## 演習
 
@@ -45,11 +45,7 @@ ht-degree: 3%
 
 この演習では、アプリ内メッセージを顧客に配信するキャンペーンを設定します。
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

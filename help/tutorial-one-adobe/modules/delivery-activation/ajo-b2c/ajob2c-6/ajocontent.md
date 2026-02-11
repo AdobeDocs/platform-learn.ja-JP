@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer Content Management
 description: Adobe Journey Optimizer Content Management
 kt: 5342
 doc-type: tutorial
-source-git-commit: 37e7d88e77f424d30e4f7c210f703cd1748a6c13
+exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 2%
 
 ---
@@ -36,11 +37,7 @@ ht-degree: 2%
 
 この演習では、GenStudio for Performance Marketingからブランドテンプレートを読み込んでAdobe Journey Optimizerで使用し、GenStudio for Performance Marketingで生成 AI を使用してメールエクスペリエンスを作成してから、Adobe Journey Optimizerで使用します。
 
-[概要と利点](./summary.md)
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

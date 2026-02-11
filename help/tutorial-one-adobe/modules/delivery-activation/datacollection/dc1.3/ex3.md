@@ -4,9 +4,9 @@ description: 基盤 – FAC - フェデレーション構成の作成
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -147,8 +147,6 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ## 次の手順
 
-[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"} に移動します。
-
 [Federated Audience Composition](./fac.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

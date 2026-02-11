@@ -3,14 +3,26 @@ title: Adobe Journey Optimizer キャンペーン
 description: Adobe Journey Optimizer キャンペーン
 kt: 5342
 doc-type: tutorial
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '170'
+ht-degree: 6%
 
 ---
 
-# 3.8 Adobe Journey Optimizer：キャンペーン
+# 3.8 Adobe Journey Optimizer:Campaign オーケストレーション
+
+Adobe Journey Optimizer Campaign Orchestration を使用すると、ブランド主導のカスタマーエンゲージメントに重点を置いた高度なキャンペーンオーケストレーションのユースケースを解決して、売上高とカスタマーロイヤルティを向上させることができます。
+
+Adobe Journey Optimizer Campaign Orchestration は、以下をサポートしています。
+
+- オンデマンドオーディエンス
+- マルチエンティティのセグメント化
+- 事前送信の可視性と精度
+- マルチステップキャンペーンのワークフロー
+
+Adobe Journey Optimizer キャンペーンオーケストレーションには、キャンペーンオーケストレーションのユースケースを可能にするために、既存のアーキテクチャに追加されたリレーショナル XDM スキーマが付属しています。
 
 ## 学習内容
 
@@ -22,15 +34,15 @@ ht-degree: 4%
 
 ## 演習
 
-[3.8.1 キャンペーンの概要](./ex1.md)
+[3.8.1 リレーショナル・データ基盤の設定](./ex1.md)
 
 この演習では、Adobe Journey Optimizerでキャンペーンを設定および使用します。
 
-[概要と利点](./summary.md)
+[3.8.2 オーケストレーションされたキャンペーンの作成](./ex2.md)
 
-このモジュールの概要とメリットの概要
+この演習では、調整されたキャンペーンを作成します。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
