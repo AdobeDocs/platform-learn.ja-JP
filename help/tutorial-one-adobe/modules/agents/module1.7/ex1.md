@@ -31,4 +31,4 @@ https://github.com/adobe/commerce-integration-starter-kit
 
 [Intelligent Developer Tools for Adobe Commerce](./aiassisteddev.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

@@ -110,6 +110,6 @@ Visual Studio Code に戻り、「**TERMINAL**」タブを見ると、特定の 
 
 ## 次の手順
 
-[Real-Time CDP Audience Activation:Microsoft Azure Event Hub に戻る &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[Real-Time CDP Audience Activation:Microsoft Azure Event Hub に戻る ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

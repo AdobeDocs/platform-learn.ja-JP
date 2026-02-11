@@ -32,6 +32,6 @@ ht-degree: 2%
 
 ## 次の手順
 
-[Adobe Journey Optimizer：キャンペーン &#x200B;](./ajocampaigns.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：キャンペーン ](./ajocampaigns.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
