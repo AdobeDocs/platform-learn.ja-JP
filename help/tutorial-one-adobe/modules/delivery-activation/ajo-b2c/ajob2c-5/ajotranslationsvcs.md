@@ -36,7 +36,7 @@ ht-degree: 2%
 
 この演習では、キャンペーンのメールに言語を追加します。
 
-![ 技術インサイダー ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
