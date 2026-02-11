@@ -3,16 +3,16 @@ title: 概要 Agentic AI テクニカルラボ
 description: 概要 Agentic AI テクニカルラボ
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # 概要 – Agentic AI テクニカルラボ
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -73,7 +73,13 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 - ChatGPT や Claude.ai を **Customer Journey Analytics** に接続して、データ分析タスクを実行します
 - ChatGPT や Claude.ai を **Adobe Analytics** に接続して、データ分析タスクを実行します
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+[1.7 Adobe Commerce用のインテリジェント開発者ツール](./modules/agents/module1.7/aiassisteddev.md)
+
+**目標**
+
+このモジュールでは、Cursor.ai などのインテリジェント開発者ツールを使用して、Adobe Commerce as a Cloud Service環境に対する拡張機能を開発します。 この拡張機能の目標は、着信注文イベントをサードパーティのエンドポイントに転送することです。 Adobe Commerce as a Cloud Serviceのイベント転送は、Adobe I/O App Builder、Adobe I/O EventsおよびAdobe I/O Runtimeに依存します。 これらすべてのサービスの設定は、Cursor.ai によって支援されます。
+
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

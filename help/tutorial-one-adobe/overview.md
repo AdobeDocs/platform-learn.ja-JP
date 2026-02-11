@@ -3,16 +3,16 @@ title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
 description: 包括的なテクニカルチュートリアル - 1 つのAdobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
 
 # 包括的なテクニカルチュートリアル - 1 つのAdobe
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要
 
@@ -32,25 +32,25 @@ ht-degree: 2%
 
 - AmazonAWS
 - Google Cloud Platform
-- Microsoft Azure
+- MicrosoftAzure
 - Postman
 - Snowflake
 - ...
 
 ## 知識を示す
 
-![Adobe認定 &#x200B;](./assets/images/badge.png){width="100px" align="left"}
+![Adobe認定 ](./assets/images/badge.png){width="100px" align="left"}
 
 このチュートリアルの一部のモジュールを完了したら、Adobeの資格試験を受けて、**Adobe認定済み** バッジを受けることができます。
 
-- モジュール [Adobe Firefly Servicesの概要 &#x200B;](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} を完了すると、**Adobe認定試験** AD2-E901 **に合格する準備が整います**
+- モジュール [Adobe Firefly Servicesの概要 ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} を完了すると、**Adobe認定試験** AD2-E901 **に合格する準備が整います**
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}。
 - モジュール [Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} を使用したCreative Workflow Automation を完了すると、**Adobe認定済み** 試験 **AD2-E902** に合格する準備が整います。
   [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}。
 
 ## コンテンツステータス
 
-以下の内容のステータスを確認するには、[&#x200B; ステータスページ &#x200B;](./status.md){target="_blank"} をご覧ください。
+以下の内容のステータスを確認するには、[ ステータスページ ](./status.md){target="_blank"} をご覧ください。
 
 ### はじめに
 
@@ -60,21 +60,21 @@ ht-degree: 2%
 
 ### &#x200B;1. ワークフローと計画
 
-[1.1 Adobe Workfrontの計画 &#x200B;](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+[1.1 Adobe Workfrontの計画 ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
 
 ここでは、Adobe Workfront Planning を使用して、新しいワークスペースの作成、レコードタイプの定義、レコードの管理、新しいリクエストフォームの作成および AI アシスタントの使用を行います。
 
-[1.2 Adobe Workfront Workflow を使用したワークフロー管理 &#x200B;](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2 Adobe Workfront Workflow を使用したワークフロー管理 ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 このモジュールでは、Adobe Workfrontを設定および使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサルエディター、Photoshopなどとの統合を使用します。
 
 ### 2.創造・生産
 
-[1.1 Adobe Firefly Servicesの概要 &#x200B;](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Firefly Servicesの概要 ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 このモジュールでは、Adobe Firefly Services API、Photoshop API およびMicrosoft Azure ストレージサービスを使用して、画像を生成し、プログラムで保存します。
 
-[1.2 Workfront Fusion によるCreative ワークフローの自動化 &#x200B;](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Workfront Fusion によるCreative ワークフローの自動化 ](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 このモジュールでは、Adobe Workfront Fusion を使用して、コンテンツ作成ワークフローの自動化と拡張を行います。
 
@@ -86,13 +86,21 @@ ht-degree: 2%
 
 このモジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
 
-[1.5 Frame.io でワークフローを効率化 &#x200B;](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+[1.5 Frame.io でワークフローを効率化 ](./modules/creation-production/module1.5/frameio.md){target="_blank"}
 
 このモジュールでは、Adobe Frame.io をAdobe Premiere Proと組み合わせて使用し、画像やビデオの共同作業やレビューを行います。
 
-[1.6 GenStudio for Performance Marketing – 拡張性 &#x200B;](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+[1.6 GenStudio for Performance Marketing – 拡張性 ](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
 
 このモジュールでは、Adobe IO とApp Builderを使用して、GenStudio for Performance Marketingの機能を拡張するカスタムアプリケーションを作成します。
+
+[1.7 ワークフロービルダー ](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+
+このモジュールでは、ワークフロービルダーを使用して、繰り返し可能なクリエイティブデザインおよび自動化のユースケースについて解決します。
+
+[1.8 Workfront、Frame.io、Enterprise Storage Management との統一されたレビューと承認 ](./modules/creation-production/module1.8/esm.md){target="_blank"}
+
+このモジュールでは、Workfrontのプロジェクトおよび作業管理機能を、Frame.io のリアルタイムのレビューおよび共同作業エクスペリエンスと直接結び付けます。
 
 ### &#x200B;3. アセット管理とサイト
 
@@ -103,6 +111,10 @@ ht-degree: 2%
 [1.2Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 このモジュールでは、AEM Assetsを探索します。
+
+[1.4 Adobe Experience Manager Assetsおよび Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+
+このモジュールでは、AEM Assets Dynamic Media を設定し、Adobe Journey Optimizerで Dynamic Media テンプレートを使用します。
 
 [1.5 Adobe Commerceas a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
@@ -208,7 +220,7 @@ ht-degree: 2%
 
 このモジュールでは、Adobe Content Analyticsを実装して使用する方法を説明します。
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
