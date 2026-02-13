@@ -3,9 +3,10 @@ title: 調整したキャンペーンの作成
 description: 調整したキャンペーンの作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
+exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
+source-git-commit: d5008825c083357b5b1479157cb01f795120d409
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '68'
 ht-degree: 2%
 
 ---
@@ -32,6 +33,6 @@ ht-degree: 2%
 
 ## 次の手順
 
-[Adobe Journey Optimizer：キャンペーン &#x200B;](./ajocampaigns.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：調整されたキャンペーン ](./ajocampaigns.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 3%
 
 ---
@@ -86,9 +86,9 @@ ht-degree: 3%
       + [1.6.3 外部 DAM アプリケーションの作成とデプロイ](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 アプリを非公開で公開する](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 ワークフロービルダー {#crpr7}
+   + 1.7 Fireflyのカスタムワークフロー {#crpr7}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 ワークフロービルダーの概要](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Fireflyのカスタムワークフローの概要](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
    + 1.8 Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合 {#crpr8}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Workfront、Frame.io、および ESM の概要](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
@@ -134,7 +134,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federated Audience の構成 {#dc13}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
