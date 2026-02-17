@@ -3,18 +3,15 @@ title: Adobe Marketing Agent for Microsoft 365 Copilot
 description: Microsoft 365 CopilotCopilot のAdobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
+source-git-commit: 88f0121cd0bf73f2456c349908a7f8193ebddafa
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '973'
 ht-degree: 5%
 
 ---
 
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
-
->[!IMPORTANT]
->
->このラボでは、まだリリースされていない機能を使用します。 この機能は開発中のため、まだ一般公開されていません。
 
 [!BADGE Beta]
 
@@ -286,4 +283,4 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
