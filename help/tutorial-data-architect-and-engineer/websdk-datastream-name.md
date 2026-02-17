@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,7 @@ ht-degree: 0%
 
 [!UICONTROL  データストリーム ] を作成するには：
 
-1. [Experience Platform Data Collection ユーザーインターフェイスにログインします ](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. サンドボックスにいることを確認 ` Luma Tutorial` ます
 1. 左側のナビゲーションで **[!UICONTROL データストリーム]** を選択します
 1. 右上隅の **[!UICONTROL 新しいデータストリーム]** ボタンを選択します
 
@@ -105,18 +103,19 @@ ht-degree: 0%
 
    ![ データストリームに名前を付けて保存します ](assets/websdk-edgeConfig-name.png)
 
-次の画面で、データを送信する場所を指定します。 データをExperience Platformに送信するには：
+データがEdgeに到達すると、[!UICONTROL  データストリーム ] は、設定済みの [!UICONTROL  サービス ] にデータを転送します。 データをExperience Platformに送信するには：
 
-1. **[!UICONTROL Adobe Experience Platform]** をオンにして、追加のフィールドを公開します
-1. **[!UICONTROL サンドボックス]** で、`Luma Tutorial` を選択します
-1. **[!UICONTROL イベントデータセット]** で、`Luma Web Events Dataset` を選択します
-1. 他のAdobe アプリケーションを使用している場合は、自由に他の節を参照して、これらの他のソリューションのEdge設定で必要な情報を確認してください。 Web SDKは、データをExperience Platformにストリーミングするだけでなく、他のAdobe アプリケーションで使用される以前のJavaScript ライブラリをすべて置き換えるために開発されました。 Edge Configuration は、データを送信する各アプリケーションのアカウントの詳細を指定するために使用されます。
+1. 「**[!UICONTROL サービスを追加]**」を選択します。
+   ![ サービスを追加 ](assets/websdk-datastream-addService.png)
+
+1. `Luma Web Events Dataset` を選択
 1. 「**[!UICONTROL 保存]**」を選択します
-   ![ データストリームの設定と保存 ](assets/websdk-edgeConfig-addEnvironment.png)
 
-Edge Configuration を保存すると、開発用、ステージング用、実稼動用の 3 つの環境が作成されていることが画面に表示されます。 さらに開発環境を追加できます。
-![ 各Edge設定に複数の環境を含めることができます ](assets/websdk-edgeConfig-environments.png)
-3 つの環境すべてに、入力したプラットフォームの詳細が含まれます。 ただし、これらの詳細は環境ごとに異なる方法で設定できます。 例えば、各環境で異なる Platform サンドボックスにデータを送信することができます。 このチュートリアルでは、データストリームに対して追加のカスタマイズを行いません。
+   ![ データセットを選択して保存する ](assets/websdk-datastream-addPlatformService.png)
+
+データストリーム設定にはプロファイルデータセット オプションがありますが、通常の XDM 個人プロファイルデータを Platform に送信する場合は、これを使用しないでください。 この設定は、同意、プッシュトークン、ユーザーアクティビティ地域の詳細を送信する場合にのみ使用してください。
+
+[!UICONTROL Offer Decisioning]、[!UICONTROL Edge セグメント化、]Edgeの宛先 [!UICONTROL 、]Personalization[!UICONTROL  のチェックボックスを使用して ]Adobe Journey Optimizer上のデータをアクティブ化できますが、このチュートリアルでは使用しません。
 
 ## Web SDK拡張機能のインストール
 
