@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44a7679ab3eab5fbc24c86a31fec620e789acffe
+source-git-commit: 7315383e72017a9922cc5f06b727c465c07f4052
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1525'
 ht-degree: 3%
 
 ---
@@ -107,6 +107,9 @@ ht-degree: 3%
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 AEM Assetsの概要](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [概要と利点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.3 Edge Delivery ServicesのAdobe Experience Manager Forms {#assetm5}
+      + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/aemforms.md)
+      + [1.3.1 最初のフォームを作成する](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex1.md)
    + 1.4 Adobe Experience Manager Assetsおよび Dynamic Media {#assetm4}
       + [概要](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
       + [1.4.1 アセットと dynamic media テンプレートの作成](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
@@ -134,7 +137,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federated Audience の構成 {#dc13}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
