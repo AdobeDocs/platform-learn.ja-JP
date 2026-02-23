@@ -3,16 +3,16 @@ title: 概要 Agentic AI テクニカルラボ
 description: 概要 Agentic AI テクニカルラボ
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
 # 概要 – Agentic AI テクニカルラボ
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -73,13 +73,27 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 - ChatGPT や Claude.ai を **Customer Journey Analytics** に接続して、データ分析タスクを実行します
 - ChatGPT や Claude.ai を **Adobe Analytics** に接続して、データ分析タスクを実行します
 
+[1.6 AEMおよびエージェント ](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**目標**
+
+Adobe Experience Managerには、今では専用のエージェントがいくつか組み込まれており、それぞれが従来は大量の手作業が必要だった作業を行うように設計されています。 これらは一般的な AI アシスタントではなく、AEMを深く理解し、コンテンツ、コード、アセット、ガバナンスおよび最適化全体を扱う、ドメイントレーニング済みエージェントです。
+
+- **Experience Production Agent**：アップデート、コンテンツ変更、さらには完全なサイト移行を加速します。
+- **ガバナンスエージェント** は、ブランド、権限、コンプライアンスルールを自動的に適用します。
+- **ディスカバリーエージェント** は、AI ネイティブの検出に向けてコンテンツを準備し、インテリジェントなストラテジストとして機能します。
+- **コンテンツ最適化エージェント** は、パフォーマンスに対応した、チャネル固有のアセットバリエーションを即座に作成します。
+- **開発エージェント** は、AI を利用したトラブルシューティングとパフォーマンスチューニングにより、開発者を高速化します。
+
+この演習では、カスタム MCP サーバ セットアップを通じて、AI アシスタントとカーソルの両方を使用してこれらのエージェントを使用する方法を学習します。
+
 [1.7 Adobe Commerce用のインテリジェント開発者ツール](./modules/agents/module1.7/aiassisteddev.md)
 
 **目標**
 
 このモジュールでは、Cursor などのインテリジェントな開発者ツールを使用して、Adobe Commerce as a Cloud Service環境に対する拡張機能を開発します。 この拡張機能の目標は、着信注文イベントをサードパーティのエンドポイントに転送することです。 Adobe Commerce as a Cloud Serviceのイベント転送は、Adobe I/O App Builder、Adobe I/O EventsおよびAdobe I/O Runtimeに依存します。 これらすべてのサービスの設定は、Cursor によって支援されます。
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

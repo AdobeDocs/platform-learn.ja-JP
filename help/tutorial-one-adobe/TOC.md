@@ -4,9 +4,9 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7315383e72017a9922cc5f06b727c465c07f4052
+source-git-commit: 13a411645ea4e06d06ee6ab27e4f726e87dbbf22
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1531'
 ht-degree: 3%
 
 ---
@@ -137,7 +137,7 @@ ht-degree: 3%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federated Audience の構成 {#dc13}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
@@ -289,6 +289,7 @@ ht-degree: 3%
    + 1.6 AEMおよびエージェント {#agents6}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
       + [1.6.1 AEM Agents の概要](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 AEM MCP サーバとカーソル](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
    + 1.7 Adobe Commerce用のインテリジェント開発者ツール {#agents7}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 開発環境のセットアップ](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
