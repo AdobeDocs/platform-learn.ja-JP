@@ -3,9 +3,9 @@ title: 最初のフォームを作成
 description: 最初のフォームを作成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8f59b9fdadc9c5aeadb1d4ecccd75090c339b43e
+source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '1109'
 ht-degree: 10%
 
 ---
@@ -22,7 +22,85 @@ ht-degree: 10%
 >
 >以前にAEM CS プログラムをAEM Assets CS 環境で設定している場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
 
-## 1.3.1.1 -
+## AEM FormsをEdge Delivery Servicesと共に使用するための 1.3.1.1 環境要件
+
+最初のフォームを設定する前に、次の手順に従う前に満たす必要のある要件がいくつかあります。
+
+### プログラム設定
+
+Cloud Manager プログラムの **ソリューションとアドオン** で、**Forms** を有効にする必要があります。
+
+![AEM Forms](./images/program.png)
+
+### ブロック
+
+Github リポジトリで、次のブロックを使用できる必要があります。
+
+- **form**
+- **embed-adaptive-form**
+
+![AEM Forms](./images/block.png)
+
+### スクリプト
+
+Github リポジトリで、次のスクリプトを使用できる必要があります。
+
+- **form-editor-support.css**
+- **form-editor-support.js**
+
+![AEM Forms](./images/scripts1.png)
+
+さらに、ユニバーサルエディターでフォームの編集を有効にするには、ファイル **editor-support.js** で、次の変更を行う必要があります。
+
+- **function attachEventListners （main）** から **async function attachEventListners （main）** への関数宣言の変更
+- 152 行目と 153 行目を追加します。
+
+```
+const module = await import('./form-editor-support.js');
+module.attachEventListners(main);
+```
+
+![AEM Forms](./images/scripts2.png)
+
+また、ファイル **editor-support.js** で、90～92 行目を次のように変更します。
+
+```
+if (block.dataset.aueModel === 'form') {
+        return true;
+      } else if (newBlock) {
+```
+
+![AEM Forms](./images/scripts3.png)
+
+### paths.json
+
+特に **paths.json** ファイルで、Github リポジトリ設定を確認してください。 ファイルには、次の行が必要です。
+
+- マッピングの下：**&quot;/content/forms/af/:/forms/&quot;**
+- 次を含む：**&quot;/content/forms/af/&quot;**
+
+```json
+{
+  "mappings": [
+    "/content/CitiSignal/:/",
+    "/content/CitiSignal/configuration:/.helix/config.json",
+    "/content/CitiSignal/headers:/.helix/headers.json",
+    "/content/CitiSignal/metadata:/metadata.json",
+    "/content/CitiSignal.resource/enrichment/enrichment.json:/enrichment/enrichment.json",
+    "/content/forms/af/:/forms/"
+  ],
+  "includes": [
+    "/content/CitiSignal/",
+    "/content/forms/af/"
+  ]
+}
+```
+
+![AEM Forms](./images/paths.png)
+
+これらの要件を満たしたら、最初のフォームを作成できます。
+
+## 1.3.1.1 フォームを作成
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 選択する組織は `--aepImsOrgName--` です。 環境を開きます。
 
@@ -186,10 +264,108 @@ ht-degree: 10%
 
 ![AEM Forms](./images/aemforms28.png)
 
+フォームを公開すると、Edge Delivery Services ドメインでも次のように使用できるようになります。
+
+`https://main--techinsidersXX-citisignal-aem-accs--woutervangeluwe.aem.page/forms/fiber-max-interest-form`
+
+![AEM Forms](./images/aemforms29.png)
+
+## 1.3.1.2 送信フォーム
+
+フォームを送信するには、次の 2 つが必要です。
+
+- **送信** ボタン
+- **送信** アクション
+
+また、この演習では、Google スプレッドシートを使用してこのフォームの送信を記録する必要があります。
+
+### Google スプレッドシート
+
+[https://drive.google.com](https://drive.google.com) に移動して、新しい空のスプレッドシートを作成します。
+
+![AEM Forms](./images/sheet1.png)
+
+ファイルに `citisignal-fiber-max-interest` という名前を付けます。
+
+1 行目のセル A-B-C-D に、次のフィールド名を入力します：
+
+- 名
+- 姓
+- メール
+- 都市
+
+次に、「**共有**」をクリックします。
+
+![AEM Forms](./images/sheet2.png)
+
+**エディター** レベルのアクセス権を持つ **0}forms@adobe.com} とファイルを共有します。**
+
+次に、「**リンクをコピー**」をクリックします。
+
+「**送信**」をクリックします。
+
+![AEM Forms](./images/sheet3.png)
+
+次の手順では、コピーしたリンクを使用する必要があります。
+
+### 送信ボタン
+
+「**送信**」ボタンを設定するには、**コンテンツツリー** に移動し、「**アダプティブフォーム**」を選択し、「**+**」アイコンをクリックしてから、「**送信**」を選択します。
+
+![AEM Forms](./images/aemforms30.png)
+
+この画像が表示されます。
+
+![AEM Forms](./images/aemforms31.png)
+
+### 送信アクション
+
+送信アクションは、ユニバーサルエディターの拡張機能の一部です。
+
+>[!NOTE]
+>
+>**フォームプロパティを編集** アイコンが表示されない場合は、この拡張機能がまだ環境で有効になっていないことを意味します。 この拡張機能を有効にするには、[https://experience.adobe.com/#/aem/extension-manager](https://experience.adobe.com/#/aem/extension-manager) に移動して、「**フォームプロパティを編集** 拡張機能を有効にします。
+>
+>![AEM Forms](./images/extmgr.png)
+
+**フォームプロパティを編集** アイコンをクリックします。
+
+![AEM Forms](./images/aemforms32.png)
+
+**スプレッドシートに送信** を選択します。 先ほど作成したGoogle シートの URL を貼り付けます。
+
+「**保存して閉じる**」をクリックします。
+
+![AEM Forms](./images/aemforms33.png)
+
+>[!NOTE]
+>
+>「401 - Unauthorized」というエラーが表示される場合は、次の可能性があります。 お使いの環境では、Google シートとの連携が有効になっていないためです。 環境を有効にするには、Adobeの担当者にお問い合わせください。
+
+「**公開**」をクリックします。
+
+![AEM Forms](./images/aemforms34.png)
+
+もう一度 **公開** をクリックします。
+
+![AEM Forms](./images/aemforms35.png)
+
+次に、サイトを更新し、フォームに入力して、「**送信**」をクリックします。
+
+![AEM Forms](./images/aemforms36.png)
+
+送信が成功します。
+
+![AEM Forms](./images/aemforms37.png)
+
+Googleのシートを見ると、そこに送信が成功したことが表示されます。
+
+![AEM Forms](./images/aemforms38.png)
+
+この演習は正常に完了しました。
+
 ## 次の手順
 
-次の手順：[-](./ex1.md){target="_blank"}
+Edge Delivery Servicesで [Adobe Experience Manager Formsに戻る ](./aemforms.md){target="_blank"}
 
-Edge Delivery Servicesで [Adobe Experience Manager Formsに戻る &#x200B;](./aemforms.md){target="_blank"}
-
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
