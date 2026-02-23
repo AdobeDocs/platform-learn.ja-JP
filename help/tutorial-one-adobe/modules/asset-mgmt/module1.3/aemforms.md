@@ -28,7 +28,7 @@ ht-degree: 4%
 
 ## 演習
 
-[1.3.1 最初のフォームを作成する ](./ex1.md){target="_blank"}
+[1.3.1 最初のフォームを作成する &#x200B;](./ex1.md){target="_blank"}
 
 この演習では、...
 
@@ -36,10 +36,10 @@ ht-degree: 4%
 
 この演習では、...
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}

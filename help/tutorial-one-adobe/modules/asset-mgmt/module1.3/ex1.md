@@ -190,6 +190,6 @@ ht-degree: 10%
 
 次の手順：[-](./ex1.md){target="_blank"}
 
-Edge Delivery Servicesで [Adobe Experience Manager Formsに戻る ](./aemforms.md){target="_blank"}
+Edge Delivery Servicesで [Adobe Experience Manager Formsに戻る &#x200B;](./aemforms.md){target="_blank"}
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
