@@ -328,7 +328,7 @@ aio app deploy
 1. 商品として **[!UICONTROL 0&rbrace;Adobe Experience Platform&rbrace; を選択します。]**
 1. イベントのタイプとして **[!UICONTROL Platform 通知]** を選択します。
 1. Slackで通知を受け取りたい特定のイベント（またはすべてのイベント）を選択し、「**[!UICONTROL 次へ]**」を選択します。
-1. または [OAuth 認証情報を作成 &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank} を選択します。
+1. または [OAuth 認証情報を作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank} を選択します。
 1. 設定 **[!UICONTROL イベント登録の詳細]**:
    1. **[!UICONTROL 登録名]**：登録にわかりやすい名前を付けます。
    1. **[!UICONTROL 登録の説明]**：他のコントリビューターが内容を認識できるように、これが明示的であることを確認します。
