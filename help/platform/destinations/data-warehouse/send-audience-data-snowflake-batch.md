@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe Real-Time CDPでSnowflake バッチ宛先を設定および使用して、毎日の完全な更新オーディエンススナップショットをSnowflake アカウントに配信する方法を説明します。 Snowflakeでのエンドツーエンドのワークフロー、Adobe Experience Platformでデータが動的テーブルとして表示される方法、統合を成功に導くための主要な設定手順と検証について説明します。
 
-詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch) を参照してください。
+詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch) を参照してください。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
