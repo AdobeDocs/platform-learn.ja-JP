@@ -20,7 +20,7 @@ ht-degree: 0%
 Adobe App Builder Webhook プロキシと統合して、SlackでExperience Platform通知を受け取る方法を説明します。 データエンジニアと管理者は、Platform 実装の正常性を監視するために、Adobe Experience PlatformからSlackでプロアクティブな通知を受け取る必要が生じる場合があります。 このチュートリアルでは、Adobe App Builderを使用してAdobe I/O EventsをSlackに接続するためのアーキテクチャと実装手順の概要を説明します。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480183?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3480196?captions=jpn&learn=on)
 
 ## Webhook プロキシを使用する理由
 
