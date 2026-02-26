@@ -184,7 +184,8 @@ CREATE TABLE citisignal_mobile_subscriptions (
     lastmodified TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (account_id) REFERENCES citisignal_accounts(account_id),
     FOREIGN KEY (product_id) REFERENCES citisignal_products(product_id),
-    FOREIGN KEY (line_user_recipient_id) REFERENCES citisignal_recipients(recipient_id)
+    FOREIGN KEY (line_user_recipient_id) REFERENCES citisignal_recipients(recipient_id),
+    FOREIGN KEY (current_device_id) REFERENCES citisignal_equipment_subscriptions(equipment_id)
 );
 
 -- Active home internet services
@@ -264,6 +265,7 @@ CREATE TABLE citisignal_equipment_subscriptions (
     upgrade_eligible_date DATE,
     is_upgrade_eligible BOOLEAN DEFAULT FALSE,
     recommended_upgrade_product_id VARCHAR(50),
+    recommended_device_model VARCHAR(100),
     equipment_status VARCHAR(50) DEFAULT 'active',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     lastmodified TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
