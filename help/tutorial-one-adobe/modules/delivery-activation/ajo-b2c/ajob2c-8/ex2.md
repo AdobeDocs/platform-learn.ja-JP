@@ -4,9 +4,9 @@ description: 調整したキャンペーンの作成
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -579,8 +579,32 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc126.png)
 
+[family_account_review.zip](./assets/family_account_review.zip) ファイルをデスクトップにダウンロードします。
+
+![AJO OC](./images/ajooc127.png)
+
+**HTMLを読み込み** をクリックします。
+
+![AJO OC](./images/ajooc128.png)
+
+クリックしてファイルを選択します。
+
+![AJO OC](./images/ajooc129.png)
+
+ファイル **`family_account_review.zip`** を選択します。
+
+![AJO OC](./images/ajooc130.png)
+
+「**次へ**」をクリックします。
+
+![AJO OC](./images/ajooc131.png)
+
+この画像が表示されます。
+
+![AJO OC](./images/ajooc132.png)
+
 ## 次の手順
 
-[Adobe Journey Optimizer：調整されたキャンペーン &#x200B;](./ajocampaigns.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：調整されたキャンペーン ](./ajocampaigns.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
