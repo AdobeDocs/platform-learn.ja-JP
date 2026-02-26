@@ -4,9 +4,9 @@ description: 調整したキャンペーンの作成
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 53be5cf34db144e346f9810359b583072743382f
+source-git-commit: 0328260e8699107bc82103af98caae684319a60d
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -195,6 +195,10 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc41.png)
 
+**プロファイルマッピングフィールド** を **`--aepUserLdap--_citisignal_recipients - account_id`** に設定します。
+
+![AJO OC](./images/ajooc41a.png)
+
 ### エンリッチメント：インターネット購読
 
 **+** アイコンをクリックします。
@@ -253,7 +257,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc53.png)
 
-「**`avg_dowload_usage_gb`**」を選択し、「**確認**」をクリックします。
+「**`avg_bandwidth_usage_gb`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc54.png)
 
@@ -303,11 +307,15 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc64.png)
 
-**`citisignal_mobile_subscriptions`** にドリルダウンします。
+**`citisignal_accounts`** にドリルダウンします。
 
 ![AJO OC](./images/ajooc65.png)
 
-「**`account_id`**」を選択し、「**確認**」をクリックします。
+**`citisignal_mobile_subscriptions`** にドリルダウンします。
+
+![AJO OC](./images/ajooc65a.png)
+
+「**`phone_number`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc66.png)
 
@@ -315,15 +323,23 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc67.png)
 
-「**`subscription_id`**」を選択し、「**確認**」をクリックします。
+**`citisignal_equipment_subscriptions`** にドリルダウンします。
 
 ![AJO OC](./images/ajooc68.png)
+
+「**`model`**」を選択し、「**確認**」をクリックします。
+
+![AJO OC](./images/ajooc68a.png)
 
 **属性を追加** をクリックします。
 
 ![AJO OC](./images/ajooc69.png)
 
-「**`phone_number`**」を選択し、「**確認**」をクリックします。
+**`citisignal_equipment_subscriptions`** にドリルダウンします。
+
+![AJO OC](./images/ajooc69a.png)
+
+「**`recommended_device_model`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc70.png)
 
@@ -331,15 +347,35 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc71.png)
 
-「**`renewal_eligibility_date`**」を選択し、「**確認**」をクリックします。
+**`citisignal_equipment_subscriptions`** にドリルダウンします。
+
+![AJO OC](./images/ajooc71a.png)
+
+「**`is_upgrade_eligible`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc72.png)
+
+これで、テスト実行を行って進捗をテストし、キャンペーンで使用可能なデータを確認できます。
+
+変更を保存し、「**開始**」をクリックします。
+
+![AJO OC](./images/ajooctest1.png)
+
+しばらくすると、これが表示されます。 **結果をプレビュー** をクリックします。
+
+![AJO OC](./images/ajooctest2.png)
+
+これに似た情報が表示されます。 「**閉じる**」をクリックします。
+
+![AJO OC](./images/ajooctest3.png)
+
+ノード **エンリッチメント：モバイルデバイス購読** に戻ります。
 
 **属性を追加** をクリックします。
 
 ![AJO OC](./images/ajooc73.png)
 
-「**`line_user_recipient_id`**」を選択し、「**確認**」をクリックします。
+「**`account_id`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc74.png)
 
@@ -347,7 +383,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc75.png)
 
-「**`is_upgrade_eligible`**」を選択し、「**確認**」をクリックします。
+「**`subscription_id`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc76.png)
 
@@ -355,7 +391,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc77.png)
 
-「**`current_device_id`**」を選択し、「**確認**」をクリックします。
+「**`renewal_eligibility_date`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc78.png)
 
@@ -363,7 +399,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc79.png)
 
-「**`contract_start_date`**」を選択し、「**確認**」をクリックします。
+「**`line_user_recipient_id`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc80.png)
 
@@ -371,25 +407,17 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc81.png)
 
-**`citisignal_equipment_subscriptions`** にドリルダウンします。
+「**`current_device_id`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc82.png)
-
-「**`model`**」を選択し、「**確認**」をクリックします。
-
-![AJO OC](./images/ajooc83.png)
 
 **属性を追加** をクリックします。
 
 ![AJO OC](./images/ajooc86.png)
 
-**`citisignal_equipment_subscriptions`** にドリルダウンします。
+「**`contract_start_date`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc87.png)
-
-「**`manufacturer`**」を選択し、「**確認**」をクリックします。
-
-![AJO OC](./images/ajooc88.png)
 
 **属性を追加** をクリックします。
 
@@ -399,7 +427,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc90.png)
 
-「**`device_age_months`**」を選択し、「**確認**」をクリックします。
+「**`manufacturer`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc91.png)
 
@@ -411,7 +439,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc93.png)
 
-「**`is_upgrade_eligible`**」を選択し、「**確認**」をクリックします。
+「**`device_age_months`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc94.png)
 
@@ -423,7 +451,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc96.png)
 
-「**`recommended_upgrade_product_id`**」を選択し、「**確認**」をクリックします。
+「**`trade_in_value`**」を選択し、「**確認**」をクリックします。
 
 ![AJO OC](./images/ajooc97.png)
 
@@ -439,51 +467,120 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc100.png)
 
-**属性を追加** をクリックします。
+### エンリッチメント：モバイルデバイス購読
+
+これで完了です。 「**保存**」をクリックします。次に、「**+**」アイコンをクリックして新しいノードを追加し、「**エンリッチメント**」を選択します。
 
 ![AJO OC](./images/ajooc101.png)
 
-**`citisignal_equipment_subscriptions`** にドリルダウンします。
+この画像が表示されます。 「**エンリッチメントデータを追加**」をクリックします。
 
 ![AJO OC](./images/ajooc102.png)
 
-**並べ替えを有効にする** のスイッチを有効にします。 **編集**&#x200B;アイコンをクリックします。
+**ターゲティングディメンション** にドリルダウンします。
 
 ![AJO OC](./images/ajooc103.png)
 
-「**`phone_number`**」を選択し、「**確認**」をクリックします。
+**`citisignal_offer_eligibility`** にドリルダウンします。
 
 ![AJO OC](./images/ajooc104.png)
 
-これで完了です。
+**`citisignal_offers`** にドリルダウンします。
 
 ![AJO OC](./images/ajooc105.png)
 
+「**`offer_name`**」を選択し、「**確認**」をクリックします。
 
+![AJO OC](./images/ajooc106.png)
 
+**属性を追加** をクリックします。
 
-これで完了です。 「**保存**」をクリックします。
+![AJO OC](./images/ajooc107.png)
 
-![AJO OC](./images/ajooc80a.png)
+**`citisignal_offers`** にドリルダウンします。
 
+![AJO OC](./images/ajooc108.png)
 
+「**`offer_code`**」を選択し、「**確認**」をクリックします。
 
+![AJO OC](./images/ajooc109.png)
 
+**属性を追加** をクリックします。
 
+![AJO OC](./images/ajooc110.png)
 
+**`citisignal_offers`** にドリルダウンします。
 
+![AJO OC](./images/ajooc111.png)
 
+「**`offer_description`**」を選択し、「**確認**」をクリックします。
 
+![AJO OC](./images/ajooc112.png)
 
+**属性を追加** をクリックします。
 
+![AJO OC](./images/ajooc110.png)
 
+**`citisignal_offers`** にドリルダウンします。
 
+![AJO OC](./images/ajooc113.png)
 
-![AJO OC](./images/ajooc103.png)
+「**`offer_description`**」を選択し、「**確認**」をクリックします。
 
+![AJO OC](./images/ajooc114.png)
+
+**並べ替えを有効にする** をオンにします。
+
+![AJO OC](./images/ajooc115.png)
+
+**`citisignal_offers`** にドリルダウンします。
+
+![AJO OC](./images/ajooc116.png)
+
+「**`offer_priority`**」を選択し、「**確認**」をクリックします。
+
+![AJO OC](./images/ajooc117.png)
+
+これで、キャンペーンをテストできます。 「**開始**」をクリックします。
+
+![AJO OC](./images/ajooc118.png)
+
+しばらくするとこれが表示されます。 **結果** をクリックし、**結果をプレビュー** を選択します。
+
+![AJO OC](./images/ajooc120.png)
+
+これに似た情報が表示されます。
+
+![AJO OC](./images/ajooc121.png)
+
+### メールアクティビティ
+
+**+** アイコンをクリックし、「**メール**」を選択します。
+
+![AJO OC](./images/ajooc122.png)
+
+**メールを編集** をクリックします。
+
+![AJO OC](./images/ajooc123.png)
+
+**アクション** に移動します。
+
+![AJO OC](./images/ajooc124.png)
+
+前に作成した **メールチャネル設定** を選択し、「**コンテンツを編集**」をクリックします。
+
+![AJO OC](./images/ajooc125.png)
+
+**件名** に、次を貼り付けます。
+
+`{{target.--aepUserLdap--_citisignal_recipients.first_name}}, Your CitiSignal Family Account Summary`
+
+**メール本文を編集** をクリックします。
+
+![AJO OC](./images/ajooc126.png)
 
 ## 次の手順
 
-[Adobe Journey Optimizer：調整されたキャンペーン &#x200B;](./ajocampaigns.md){target="_blank"} に戻る
+[Adobe Journey Optimizer：調整されたキャンペーン ](./ajocampaigns.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
