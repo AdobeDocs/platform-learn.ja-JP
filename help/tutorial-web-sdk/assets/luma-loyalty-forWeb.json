@@ -997,4 +997,6 @@
 {"personID":"80e0424e522a2a3e229890975410dc49","loyalty":{"points":597594,"tier":"silver","joinDate":"1988-10-21"},"person":{"name":{"firstName":"Bartlet","lastName":"Leckie"}}},
 {"personID":"70ddcc9806e3f41d24a151047f8471d7","loyalty":{"points":692326,"tier":"silver","joinDate":"1981-03-27"},"person":{"name":{"firstName":"Halsey","lastName":"Scroggie"}}},
 {"personID":"b10bdbe18354a8f553eb4e46de5b93ea","loyalty":{"points":922543,"tier":"gold","joinDate":"2009-03-04"},"person":{"name":{"firstName":"Cleavland","lastName":"Euler"}}},
-{"personID":"67ec0bcf4ee47aa719a0cd7a265b3dc6","loyalty":{"points":41284,"tier":"platinum","joinDate":"2017-08-21"},"person":{"name":{"firstName":"Fawnia","lastName":"Bosman"}}}]
+{"personID":"67ec0bcf4ee47aa719a0cd7a265b3dc6","loyalty":{"points":41284,"tier":"platinum","joinDate":"2017-08-21"},"person":{"name":{"firstName":"Fawnia","lastName":"Bosman"}}},
+{"personID":"f660ab912ec121d1b1e928a0bb4bc61b","loyalty":{"points":41284,"tier":"gold","joinDate":"2017-08-21"},"person":{"name":{"firstName":"Test","lastName":"Test"}}}
+]
