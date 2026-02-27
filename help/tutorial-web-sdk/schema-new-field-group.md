@@ -6,7 +6,7 @@ jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1547'
 ht-degree: 3%
 
 ---
@@ -91,6 +91,7 @@ XDM スキーマはExperience Platformの標準的なデータ記述方法で、
 1. 右上の **[!UICONTROL スキーマを作成]** ボタンを選択します
 
    ![ スキーマを作成 ](assets/schema-xdm-create-schema.png)
+1. 次の画面で「**[!UICONTROL 手動]**」を選択します
 1. 次の画面で **[!UICONTROL エクスペリエンスイベント]** を選択します
 1. 「**[!UICONTROL 次へ]**」を選択します。
 
@@ -103,7 +104,7 @@ XDM スキーマはExperience Platformの標準的なデータ記述方法で、
    >XDM スキーマの一般的な命名規則は、データのソースの後にスキーマを命名することです。
 
 
-1. 「終了」を選択します
+1. 「**[!UICONTROL 終了]**」を選択します。
 
    ![ スキーマエクスペリエンスイベント検索 ](assets/schema-name-schema.png)
 
