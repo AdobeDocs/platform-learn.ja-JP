@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ## 前提条件
 
-データ収集タグと [Luma デモサイト ](https://newluma.enablementadobe.com) に精通し、チュートリアルの前のレッスンを完了しました。
+データ収集タグと [Luma デモサイト &#x200B;](https://newluma.enablementadobe.com) に精通し、チュートリアルの前のレッスンを完了しました。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
@@ -61,7 +61,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 1. **[!UICONTROL Adobe Client Data Layer]** にフィルタリング
 1. 「**[!UICONTROL インストール]**」を選択します。
 
-   ![Adobe クライアントデータレイヤー拡張機能を追加する ](assets/rules-acdl-extension.png)
+   ![Adobe クライアントデータレイヤー拡張機能を追加する &#x200B;](assets/rules-acdl-extension.png)
 
 1. デフォルト設定のままにします
 1. 「**[!UICONTROL 保存]**」を選択します
@@ -97,13 +97,13 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 1. 「**[!UICONTROL 新規ルールを作成]**」ボタンを選択します
 
-   ![ ルールの作成 ](assets/rules-create.png)
+   ![&#x200B; ルールの作成 &#x200B;](assets/rules-create.png)
 
 1. ルール名を設定します。`all pages - adobeDataLayer push - set global variables - 1`
 
 1. 「**[!UICONTROL イベント]**」セクションで、「**[!UICONTROL 追加]**」を選択します
 
-   ![ ルールに名前を付けてイベントを追加する ](assets/rule-name-new.png)
+   ![&#x200B; ルールに名前を付けてイベントを追加する &#x200B;](assets/rule-name-new.png)
 
 1. **[!UICONTROL Adobe Client Data Layer]** 拡張機能を使用し、**[!UICONTROL Event Type]** として **[!UICONTROL Data Pushed]** を選択します
 
@@ -115,7 +115,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 1. リッスン **[!UICONTROL すべてのイベント]**
 1. 「**[!UICONTROL 変更を保持]**」を選択して、メインのルール画面に戻ります
-   ![ ライブラリの読み込みトリガーを選択 ](assets/create-tag-rule-trigger-loaded.png)
+   ![&#x200B; ライブラリの読み込みトリガーを選択 &#x200B;](assets/create-tag-rule-trigger-loaded.png)
 
 1. 「**[!UICONTROL アクション]**」セクションで、「**[!UICONTROL 追加]**」を選択します
 
@@ -123,9 +123,9 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 1. **[!UICONTROL アクションタイプ]** として、「**[!UICONTROL 変数を更新]**」を選択します
 
-1. **[!UICONTROL データ要素]** として、`xdm.variable.content` データ要素の作成 [ のレッスンで作成した ](create-data-elements.md) を選択します
+1. **[!UICONTROL データ要素]** として、`xdm.variable.content` データ要素の作成 [&#x200B; のレッスンで作成した &#x200B;](create-data-elements.md) を選択します
 
-   ![ 変数スキーマの更新 ](assets/create-rule-update-variable.png)
+   ![&#x200B; 変数スキーマの更新 &#x200B;](assets/create-rule-update-variable.png)
 
 1. 次に、XDM フィールドを適切な値にマッピングして指定します。
 
@@ -146,7 +146,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
    > Adobe Analyticsでビーコンをページビューとして処理する場合、`eventType` を `web.webpagedetails.pageViews` にも `web.webPageDetails.pageViews.value` にも設定する必要はありませんが、他のダウンストリームアプリケーションのページビューを示す標準的な方法があると便利です。
 
 1. 完了すると、`XDM Variable` は次のようになります。 次のように、入力されたフィールドと部分的に入力されたフィールドが青い円で示されます。
-   ![XDM 変数 ](assets/rule-xdm-variable.png)
+   ![XDM 変数 &#x200B;](assets/rule-xdm-variable.png)
 1. 次の画面で、ルールの **[!UICONTROL 変更を保持]** を選択してから **[!UICONTROL 保存]** を選択して、ルールを完了します
 
 
@@ -164,7 +164,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 1. 「**[!UICONTROL ルールを追加]**」を選択します
 1. [!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`] という名前を付けます
-1. イベントの下の ![+記号を選択し ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 新しいトリガーを追加します
+1. イベントの下の ![+記号を選択し &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 新しいトリガーを追加します
 1. **[!UICONTROL Extension]** で、「**[!UICONTROL Adobe Client Data Layer]**」を選択します
 1. **[!UICONTROL イベントタイプ]** で、「**[!UICONTROL プッシュされたデータ]**」を選択します
 1. 選択して **[!UICONTROL 詳細オプション]** を開き、`20` を入力します。 この順序値によって、ルールがグローバル変数ルールの _後_ に実行されるようになります。
@@ -172,7 +172,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 1. `productView` 登録するイベント / キー **[!UICONTROL として]** を入力
 1. 「**[!UICONTROL 変更を保持]**」を選択します
 
-   ![Analytics XDM ルール ](assets/rule-pdp-event.png)
+   ![Analytics XDM ルール &#x200B;](assets/rule-pdp-event.png)
 
 
 1. **[!UICONTROL アクション]** で **[!UICONTROL 追加]** を選択します
@@ -207,20 +207,20 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 説明するには、以下の Luma サイトデータレイヤー（左）と翻訳済みデータ要素（右）の比較を参照してください。
 
-![XDM オブジェクト配列形式 ](assets/data-element-xdm-array.png)
+![XDM オブジェクト配列形式 &#x200B;](assets/data-element-xdm-array.png)
 
 データ要素と `productListItems` 構造を比較します（ヒント。一致する必要があります）。
 
 >[!IMPORTANT]
 >
->数値変数がデータレイヤー内の文字列値（`price` や `qty` など）でデータ要素内の数値に再書式設定される方法に注意してください。 これらの形式要件は、Platform のデータ整合性にとって重要であり、[ スキーマの設定 ](configure-schemas.md) 手順で決定されます。 この例では、**[!UICONTROL quantity]** は **[!UICONTROL Integer]** データ型を使用しています。
-> ![XDM スキーマデータタイプ ](assets/set-up-analytics-quantity-integer.png)
+>数値変数がデータレイヤー内の文字列値（`price` や `qty` など）でデータ要素内の数値に再書式設定される方法に注意してください。 これらの形式要件は、Platform のデータ整合性にとって重要であり、[&#x200B; スキーマの設定 &#x200B;](configure-schemas.md) 手順で決定されます。 この例では、**[!UICONTROL quantity]** は **[!UICONTROL Integer]** データ型を使用しています。
+> ![XDM スキーマデータタイプ &#x200B;](assets/set-up-analytics-quantity-integer.png)
 
 次に、配列を XDM オブジェクトにマッピングします。
 
 
 1. `cart page - adobeDataLayer push - set cart variables - 20` という名前の新しいルールの作成
-1. イベントの下の ![+記号を選択し ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 新しいトリガーを追加します
+1. イベントの下の ![+記号を選択し &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 新しいトリガーを追加します
 1. **[!UICONTROL Extension]** で、「**[!UICONTROL Adobe Client Data Layer]**」を選択します
 1. **[!UICONTROL イベントタイプ]** で、「**[!UICONTROL プッシュされたデータ]**」を選択します
 1. 選択して **[!UICONTROL 詳細オプション]** を開き、`20` を入力します。 この順序値によって、ルールがグローバル変数ルールの _後_ に実行されるようになります。
@@ -229,7 +229,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 1. 「**[!UICONTROL 変更を保持]**」を選択します
 
 
-   ![ 買い物かごルールのイベント ](assets/rule-cart-event.png)
+   ![&#x200B; 買い物かごルールのイベント &#x200B;](assets/rule-cart-event.png)
 
 1. **[!UICONTROL アクション]** で **[!UICONTROL 追加]** を選択します
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します
@@ -288,7 +288,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 1. `commerce.order.purchaseID` データ要素に `cart.orderId` を設定します。
 1. ハードコードされた値 `commerce.order.currencyCode` に `USD` を設定します
 
-   ![Analytics の purchaseID の設定 ](assets/set-up-analytics-purchase.png)
+   ![Analytics の purchaseID の設定 &#x200B;](assets/set-up-analytics-purchase.png)
 
    >[!TIP]
    >
@@ -302,7 +302,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 完了すると、次のルールが作成されます。
 
-![Analytics XDM ルール ](assets/set-up-analytics-rules.png)
+![Analytics XDM ルール &#x200B;](assets/set-up-analytics-rules.png)
 
 
 ### イベントルールを送信
@@ -320,7 +320,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 1. **[!UICONTROL 詳細]** ドロップダウンを選択し、「`50` 順序 **[!UICONTROL 」に]** を入力します。 これにより、設定した他のすべてのルール（`1` または `20` を [!UICONTROL Order] として持つ）の後でこのルールが起動します。
 
 1. 「**[!UICONTROL 変更を保持]**」を選択して、メインのルール画面に戻ります
-   ![ ライブラリの読み込みトリガーを選択 ](assets/create-tag-rule-trigger-loaded-send.png)
+   ![&#x200B; ライブラリの読み込みトリガーを選択 &#x200B;](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 「**[!UICONTROL アクション]**」セクションで、「**[!UICONTROL 追加]**」を選択します
 
@@ -332,7 +332,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 1. 「**[!UICONTROL 変更を保持]**」を選択して、メインのルール画面に戻ります
 
-   ![ イベントを送信アクションの追加 ](assets/create-rule-send-event-action.png)
+   ![&#x200B; イベントを送信アクションの追加 &#x200B;](assets/create-rule-send-event-action.png)
 1. 「**[!UICONTROL 保存]**」を選択して、ルールを保存します
 
    ![ルールの保存](assets/create-rule-save-rule.png)
@@ -347,7 +347,7 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 1. 「**[!UICONTROL ライブラリを追加]**」を選択します。
 
-   ![ 「ライブラリを追加」を選択 ](assets/rule-publish-library.png)
+   ![&#x200B; 「ライブラリを追加」を選択 &#x200B;](assets/rule-publish-library.png)
 1. **[!UICONTROL 名前]** に `Luma Web SDK Tutorial` と入力します
 1. **[!UICONTROL 環境]** で、「`Development`」を選択します。
 1. 「**[!UICONTROL 変更されたすべてのリソースを追加]**」を選択します。
@@ -358,16 +358,16 @@ Luma の web サイトでは、Adobe Client Data Layer （ACDL）と呼ばれる
 
 1. **[!UICONTROL 開発用に保存してビルド]** を選択します
 
-   ![ ライブラリの作成とビルド ](assets/create-tag-rule-library-changes.png)
+   ![&#x200B; ライブラリの作成とビルド &#x200B;](assets/create-tag-rule-library-changes.png)
 
 ライブラリのビルドには数分かかる場合があり、完了すると、ライブラリ名の左側に緑のドットが表示されます。
 
-![ ビルド完了 ](assets/create-rule-development-success.png)
+![&#x200B; ビルド完了 &#x200B;](assets/create-rule-development-success.png)
 
-[!UICONTROL  公開フロー ] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
+[!UICONTROL &#x200B; 公開フロー &#x200B;] 画面で確認できるように、公開プロセスには多くの詳細があり、これはこのチュートリアルの範囲外です。 このチュートリアルでは、開発環境で 1 つのライブラリのみを使用します。
 
 これで、Adobe Experience Platform Debuggerを使用してリクエスト内のデータを検証する準備が整いました。
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
