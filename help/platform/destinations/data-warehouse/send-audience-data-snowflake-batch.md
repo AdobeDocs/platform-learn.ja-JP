@@ -24,4 +24,4 @@ Adobe Real-Time CDPでSnowflake バッチ宛先を設定および使用して、
 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch) を参照してください。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480185/?captions=jpn&learn=on&enablevpops)
