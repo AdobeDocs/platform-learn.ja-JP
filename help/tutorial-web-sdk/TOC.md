@@ -7,10 +7,10 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: 5645331be467c4128d9267b8c2656f46bada25c2
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 31%
+source-wordcount: '95'
+ht-degree: 29%
 
 ---
 
@@ -33,10 +33,11 @@ ht-degree: 31%
 
 + アプリケーション設定 {#applications-setup}
    + [Experience Platformの設定](setup-experience-platform.md)
+   + [プロファイルとEdgeのセグメント化の設定](setup-profile-and-edge-segmentation.md)
+   + [Journey Optimizer Web チャンネルの設定](setup-web-channel.md)
    + [Adobe Analyticsの設定](setup-analytics.md)
    + [Audience Managerの設定](setup-audience-manager.md)
    + [Target のセットアップ](setup-target.md)
-   + [Journey Optimizer Web チャンネルの設定](setup-web-channel.md)
 
 + 同意管理 {#consent-management}
    + [同意の設定](setup-consent.md)
