@@ -177,7 +177,7 @@ Luma web イベントデータのデータセットを設定しましょう。
 
 >[!INFO]
 >
->  クエリサービスは、データエンジニアやアナリストにとって非常に強力なツールです。 Adobe Experience Platformのクエリサービスについて詳しくは、Platform チュートリアルの節の [&#x200B; データの調査 &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) を参照してください。
+>  クエリサービスは、データエンジニアやアナリストにとって非常に強力なツールです。 Adobe Experience Platformのクエリサービスについて詳しくは、Platform チュートリアルの節の [&#x200B; データの調査 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/queries/explore-data) を参照してください。
 
 
 >[!NOTE]

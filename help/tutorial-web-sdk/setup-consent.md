@@ -215,7 +215,7 @@ Luma デモ Web サイトに移動して検証し、Cookie を拒否し、オプ
 ![&#x200B; 訪問者の同意後のオプション &#x200B;](assets/consent-post-user-optin.png)
 
 
-Web SDKの同意について詳しくは、[&#x200B; 顧客の同意環境設定のサポート &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent) を参照してください。
+Web SDKの同意について詳しくは、[&#x200B; 顧客の同意環境設定のサポート &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/consent/supporting-consent) を参照してください。
 
 >[!TIP]
 >
@@ -223,7 +223,7 @@ Web SDKの同意について詳しくは、[&#x200B; 顧客の同意環境設定
 
 
 
-[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションについて詳しくは、[&#x200B; 同意を設定 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
+[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションについて詳しくは、[&#x200B; 同意を設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
 
 >[!NOTE]
 >
