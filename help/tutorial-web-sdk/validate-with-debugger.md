@@ -23,7 +23,7 @@ Experience Platform Debugger は [Chrome拡張機能であり &#x200B;](https://
 
 デバッガーを初めて使用する場合は、次の 5 分間の概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36086?captions=jpn&learn=on&enablevpops)
 
 このレッスンでは、[Adobe Experience Platform Debugger拡張機能 &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) を使用して、[Luma デモ web サイト &#x200B;](https://luma.enablementadobe.com) でハードコードされたタグプロパティを独自のプロパティに置き換えます。
 
