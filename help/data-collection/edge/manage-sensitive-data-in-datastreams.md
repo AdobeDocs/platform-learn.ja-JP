@@ -18,4 +18,4 @@ ht-degree: 26%
 
 データストリームで機密データを管理する方法を説明します。  詳しくは、[&#x200B; データストリームのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413104/?captions=jpn&learn=on&enablevpops)

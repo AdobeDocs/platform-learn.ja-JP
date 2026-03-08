@@ -18,7 +18,7 @@ ht-degree: 2%
 
 顧客の同意環境設定を適用するポリシーを作成する方法を説明します。 詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3412101?captions=jpn&learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

@@ -26,7 +26,7 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 **データアーキテクト** は、このチュートリアル以外でデータセットを作成する必要があります。
 
 演習を開始する前に、この短いビデオを視聴して、データセットの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34394?captions=jpn&learn=on&enablevpops)
 
 ## 権限が必要です
 

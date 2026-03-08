@@ -22,7 +22,7 @@ Adobe Experience Platformのデータハイジーン機能を使用して、デ�
 データセット削除を使用すると、データスチュワードとデータエンジニアがデータセットの有効期限を設定できます。 詳しくは、[&#x200B; データハイジーンのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=ja) を参照してください。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430305?captions=jpn&learn=on&enablevpops)
 
 >[!NOTE]
 >

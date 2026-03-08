@@ -18,7 +18,7 @@ ht-degree: 13%
 
 Adobe Experience Platform インターフェイスでソース（ソースコネクタ）を使用する方法を説明します。 ソースは、Adobe、ファーストパーティおよびサードパーティのアプリケーションから Platform のリアルタイム顧客プロファイルおよびデータレイクにデータを取り込むための簡単に設定できる統合です。 詳しくは、[&#x200B; ソースのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34114?captions=jpn&learn=on&enablevpops)
 
 <!--should have a whole section for data prep-->
 
@@ -38,7 +38,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="CRM Source コネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="CRM Source コネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34110?captions=jpn&format=jpeg&nocache=1740415500926" alt="CRM Source コネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="クラウドストレージのSource コネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="クラウドストレージのSource コネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34108?captions=jpn&format=jpeg&nocache=1740415500914" alt="クラウドストレージのSource コネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="データベースソースコネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="データベースソースコネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345123?captions=jpn&format=jpeg&nocache=1740415500936" alt="データベースソースコネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,7 +107,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-source-connector.md" title="Source コネクタを使用したデータのストリーミング" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740415500903" alt="Source コネクタを使用したデータのストリーミング"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410105?captions=jpn&format=jpeg&nocache=1740415500903" alt="Source コネクタを使用したデータのストリーミング"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-http-api.md" title="ストリーミング接続 HTTP API エンドポイントを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740415500889" alt="ストリーミング接続 HTTP API エンドポイントを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410930?captions=jpn&format=jpeg&nocache=1740415500889" alt="ストリーミング接続 HTTP API エンドポイントを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Adobe Analytics ソースコネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Adobe Analytics ソースコネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430254?captions=jpn&format=jpeg&nocache=1740415502122" alt="Adobe Analytics ソースコネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Marketo Engageからのデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Marketo Engageからのデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451861?captions=jpn&format=jpeg&nocache=1740415502109" alt="Marketo Engageからのデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -211,7 +211,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-aam.md" title="Adobe Audience Manager コネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740415502093" alt="Adobe Audience Manager コネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346986/?captions=jpn&format=jpeg&nocache=1740415502093" alt="Adobe Audience Manager コネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -244,7 +244,7 @@ Adobe Experience Platform インターフェイスでソース（ソースコネ
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="トラブルシューティング - SFTP ソースコネクタに接続できない" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="トラブルシューティング - SFTP ソースコネクタに接続できない"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443468?captions=jpn&format=jpeg&nocache=1740415502267" alt="トラブルシューティング - SFTP ソースコネクタに接続できない"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

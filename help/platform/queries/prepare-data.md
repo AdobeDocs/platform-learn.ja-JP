@@ -18,4 +18,4 @@ ht-degree: 0%
 
 データエンジニアがクエリサービスを使用してデータを変換し、新しいデータセットを出力する方法について説明します。 これらのクエリをスケジュールに従って実行し、自動ダッシュボードとセグメント化を強化します。 詳しくは、[&#x200B; クエリ結果からの出力データセットの生成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/create-datasets) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414069?captions=jpn&learn=on&enablevpops)

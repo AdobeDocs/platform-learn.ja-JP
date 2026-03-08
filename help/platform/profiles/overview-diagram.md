@@ -18,4 +18,4 @@ ht-degree: 1%
 
 このビデオでは、Adobe Experience Platformのリアルタイム顧客プロファイル機能を示す概要図について説明します。 詳しくは、[&#x200B; リアルタイム顧客プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36809?captions=jpn&learn=on&enablevpops)

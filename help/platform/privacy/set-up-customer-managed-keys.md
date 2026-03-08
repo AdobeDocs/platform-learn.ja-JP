@@ -19,7 +19,7 @@ ht-degree: 20%
 
 独自の暗号化キーを使用して、保存データの暗号化を管理します。 詳しくは、[&#x200B; 顧客管理キーのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413984/?captions=jpn&learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

@@ -25,7 +25,7 @@ Adobe Experience Platform クエリサービスは、標準の SQL を使用し�
 **データアーキテクト** と **データエンジニア** は、このチュートリアル以外でクエリサービスを使用する必要があります。
 
 演習を開始する前に、この短いビデオを視聴してクエリサービスの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35089?captions=jpn&learn=on&enablevpops)
 
 ## 権限が必要です
 
