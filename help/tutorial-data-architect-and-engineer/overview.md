@@ -48,7 +48,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 ## 前提条件
 
-* あなたはExperience Leagueで [Adobe Experience Platform プレイリストの概要 &#x200B;](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) を視聴し、Platform の機能について知っています
+* あなたはExperience Leagueで [Adobe Experience Platform プレイリストの概要 &#x200B;](https://experienceleague.adobe.com/ja/playlists/experience-platform-introduction) を視聴し、Platform の機能について知っています
 * Adobe Experience Platform（またはReal-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーション）とデータ収集（以前の Launch）でプロビジョニングされたアカウントにアクセスできます。
 * そのアカウントのシステム管理者であるか、1 つの [&#x200B; ユーザー権限の設定 &#x200B;](configure-permissions.md) を持つことができます。
 
@@ -58,7 +58,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 このチュートリアルで様々な Platform 要素を作成する際は、できるだけ推奨する名前に従ってください。 ただし、組織で複数のユーザーが同時にこのチュートリアルを実行する場合に備えて、カスタマイズした高レベルの要素名がいくつかあります。 例えば、Platform サンドボックスに、単に「Luma チュートリアルプラットフォーム」ではなく「Luma チュートリアルプラットフォーム - Ignatius J Reilly」という名前を付けることができます。
 
-問題が発生した場合は、最初に手順を再度読んでから、各ページのサイドバーにある ![&#x200B; 問題を記録 &#x200B;](https://experienceleague.adobe.com/assets/img/feedback.svg) リンクを使用して連絡してください。
+問題が発生した場合は、最初に手順を再度読んでから、各ページのサイドバーにある ![&#x200B; 問題を記録 &#x200B;](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=ja) リンクを使用して連絡してください。
 
 ## テクニカルノート
 

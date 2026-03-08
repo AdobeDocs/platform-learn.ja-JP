@@ -44,7 +44,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このチュートリアルでは、Web SDKで web サイトからストリーミングで取り込む方法に重点を置いていますが、[Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) および [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http) を使用してデータをストリーミングすることもできます。
+>このチュートリアルでは、Web SDKで web サイトからストリーミングで取り込む方法に重点を置いていますが、[Mobile SDK](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/server-api/overview) および [HTTP API](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/streaming/http) を使用してデータをストリーミングすることもできます。
 
 ## 権限が必要です
 
