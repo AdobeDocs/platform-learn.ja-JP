@@ -2,9 +2,9 @@
 title: 移行の計画 – モバイルアプリのAdobe Target実装をOffer Decisioningおよび Target 拡張機能に移行します
 description: at.js と Platform Web SDKの主な違いと、移行作業の計画方法について説明します。
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,8 @@ Target 拡張機能から Target 拡張機能およびOffer Decisioning拡張機
 > * **SDKの最適化** は、**Offer Decisioningおよび Target 拡張機能を実装します**
 
 
-次に、詳細な [Target 拡張機能とOffer Decisioningおよび Target 拡張機能の比較 &#x200B;](detailed-comparison.md) を確認して、技術的な違いをより深く理解し、さらに注目が必要な領域を特定します。
+次に、詳細な <!--[comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md)--> を確認して、技術的な違いをより深く理解し、さらに焦点を当てる必要がある領域を特定します。
 
 >[!NOTE]
 >
->アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ja#M625) に投稿してお知らせください。
+>アドビは、Target 拡張機能からOffer Decisioningおよび Target 拡張機能への Mobile Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) に投稿してお知らせください。

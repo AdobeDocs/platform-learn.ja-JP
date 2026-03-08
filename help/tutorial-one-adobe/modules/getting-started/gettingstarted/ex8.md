@@ -4,7 +4,7 @@ description: はじめに – Postmanの設定
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobeの従業員でない場合は、手順に従って [Postmanをインストール &#x200B;](./ex7.md){target="_blank"} してください。 以下の手順は、Adobeのユーザーのみを対象としています。
+>Adobeの従業員でない場合は、手順に従って [Postmanをインストール ](./ex7.md){target="_blank"} してください。 以下の手順は、Adobeのユーザーのみを対象としています。
 
 ## ビデオ
 
@@ -25,105 +25,105 @@ ht-degree: 3%
 
 ## PostBuster のインストール
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"} に移動します。
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"} に移動します。
 
 **PostBuster** の最新リリースをダウンロードします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb1.png)
+![ ポストバスター ](./images/pb1.png)
 
 お使いの OS に適したバージョンをクリックします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb2.png)
+![ ポストバスター ](./images/pb2.png)
 
 ファイルをダウンロードします
 
-![&#x200B; ポストバスター &#x200B;](./images/pb2a.png)
+![ ポストバスター ](./images/pb2a.png)
 
 ダウンロードが完了し、インストールしたら、PostBuster を開きます。 この画像が表示されます。 **インポート** をクリックします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb3.png)
+![ ポストバスター ](./images/pb3.png)
 
 [postbuster.json.zip](./../../../assets/postman/postbuster.json.zip){target="_blank"} をダウンロードし、デスクトップに抽出します。
 
-![&#x200B; ポストバスター &#x200B;](./images/pbpb.png)
+![ ポストバスター ](./images/pbpb.png)
 
 **ファイルを選択** をクリックします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb4.png)
+![ ポストバスター ](./images/pb4.png)
 
 ファイル **postbuster.json** を選択します。 「**開く**」をクリックします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb5.png)
+![ ポストバスター ](./images/pb5.png)
 
 この画像が表示されます。 **スキャン** をクリックします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb6.png)
+![ ポストバスター ](./images/pb6.png)
 
 **インポート** をクリックします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb7.png)
+![ ポストバスター ](./images/pb7.png)
 
 この画像が表示されます。 クリックして、読み込んだコレクションを開きます。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb8.png)
+![ ポストバスター ](./images/pb8.png)
 
 これで、コレクションが表示されます。 環境変数を保持するには、引き続き環境を設定する必要があります。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb9.png)
+![ ポストバスター ](./images/pb9.png)
 
 **ベース環境** をクリックしてから、**編集** アイコンをクリックします。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb10.png)
+![ ポストバスター ](./images/pb10.png)
 
 この画像が表示されます。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb11.png)
+![ ポストバスター ](./images/pb11.png)
 
 以下の環境プレースホルダーをコピーし、**ベース環境** に貼り付けます。内容を置き換えます。
 
 ```json
 {
-	"CLIENT_SECRET": "",
-	"API_KEY": "",
-	"ACCESS_TOKEN": "",
-	"SCOPES": [
-		"openid",
-		"AdobeID",
-		"read_organizations", 
-		"additional_info.projectedProductContext", 
-		"session",
-		"ff_apis",
-		"firefly_api",
-		"frame.s2s.all"
-	],
-	"TECHNICAL_ACCOUNT_ID": "",
-	"IMS": "ims-na1.adobelogin.com",
-	"IMS_ORG": "",
-	"access_token": "",
-	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": "",
-	"FRAME_IO_BASE_URL": "https://api.frame.io",
-	"FRAME_IO_ACCOUNT_ID": "",
-	"FRAME_IO_WORKSPACE_ID": ""
+    "CLIENT_SECRET": "",
+    "API_KEY": "",
+    "ACCESS_TOKEN": "",
+    "SCOPES": [
+        "openid",
+        "AdobeID",
+        "read_organizations", 
+        "additional_info.projectedProductContext", 
+        "session",
+        "ff_apis",
+        "firefly_api",
+        "frame.s2s.all"
+    ],
+    "TECHNICAL_ACCOUNT_ID": "",
+    "IMS": "ims-na1.adobelogin.com",
+    "IMS_ORG": "",
+    "access_token": "",
+    "IMS_TOKEN": "",
+    "AZURE_STORAGE_URL": "",
+    "AZURE_STORAGE_CONTAINER": "",
+    "AZURE_STORAGE_SAS_READ": "",
+    "AZURE_STORAGE_SAS_WRITE": "",
+    "FRAME_IO_BASE_URL": "https://api.frame.io",
+    "FRAME_IO_ACCOUNT_ID": "",
+    "FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
 これで完了です。
 
-![&#x200B; ポストバスター &#x200B;](./images/pb12.png)
+![ ポストバスター ](./images/pb12.png)
 
 ## Adobe I/O変数を入力
 
 [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} に移動し、プロジェクトを開きます。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopr.png)
+![Adobe I/O新規統合 ](./images/iopr.png)
 
 **OAuth サーバー間** に移動します。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopbvar1.png)
+![Adobe I/O新規統合 ](./images/iopbvar1.png)
 
 次に、Adobe I/O プロジェクトから次の値をコピーして、PostBuster のベース環境に貼り付ける必要があります。
 
@@ -132,12 +132,12 @@ ht-degree: 3%
 - テクニカルアカウント ID
 - 組織 ID （下にスクロールして組織 ID を探します）
 
-![Adobe I/O新規統合 &#x200B;](./images/iopbvar2.png)
+![Adobe I/O新規統合 ](./images/iopbvar2.png)
 
 上記の変数を 1 つずつコピーして、PostBuster の **ベース環境** に貼り付けます。
 
 | Adobe I/Oの変数名 | PostBuster ベース環境の変数名 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | クライアント ID | `API_KEY` |
 | クライアント秘密鍵 | `CLIENT_SECRET` |
 | テクニカルアカウント ID | `TECHNICAL_ACCOUNT_ID` |
@@ -147,30 +147,30 @@ ht-degree: 3%
 
 「**閉じる**」をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopbvar3.png)
+![Adobe I/O新規統合 ](./images/iopbvar3.png)
 
 **Adobe I/O - OAuth** コレクションで、「**POST - アクセストークンを取得**」という名前のリクエストを選択し、「**送信**」を選択します。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopbvar3a.png)
+![Adobe I/O新規統合 ](./images/iopbvar3a.png)
 
 次の情報を含む同様の応答が表示されます。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **ベアラー** |
 | access_token | **eyJhbGciOiJS...** |
 | expires_in | **86399** |
 
 Adobe I/O **bearer-token** には、特定の値（非常に長い access_token）と有効期限があり、24 時間有効になりました。 つまり、24 時間後にPostmanを使用してAdobe API とやり取りする場合は、このリクエストを再度実行して新しいトークンを生成する必要があります。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopbvar4.png)
+![Adobe I/O新規統合 ](./images/iopbvar4.png)
 
 これで、PostBuster 環境が設定され、機能するようになりました。 これで、この演習が完了しました。
 
 ## 次の手順
 
-[&#x200B; インストールするアプリケーション &#x200B;](./ex9.md){target="_blank"} に移動します
+[ インストールするアプリケーション ](./ex9.md){target="_blank"} に移動します
 
-[&#x200B; はじめに &#x200B;](./getting-started.md){target="_blank"} に戻る
+[ はじめに ](./getting-started.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

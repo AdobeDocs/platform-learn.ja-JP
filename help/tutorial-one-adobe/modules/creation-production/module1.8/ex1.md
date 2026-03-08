@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
-source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 Workfrontの主なオブジェクトと概念を次に示します。
 
 | 名前 | 最終更新日 |
-| ---------------------- | ------------ | 
+| ---------------------- | ------------ |
 | ポートフォリオ | 統一された特徴を持つプロジェクトのコレクション。 これらのプロジェクトは通常、同じリソース、予算、時間枠で競合します。 |
 | プログラム | ポートフォリオ内のサブセット。明確に定義されたメリットを達成するために、類似のプロジェクトをグループ化できます。 |
 | プロジェクト | 特定の期間内に完了する必要があり、特定の予算とリソース数を使用する必要がある大量の作業。 管理しやすくするために、プロジェクトを一連のタスクに分割します。 すべてのタスクを完了すると、プロジェクトは完了します。 |
@@ -33,7 +33,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 クリックして **Workfront** を開きます。
 
-![Workfront計画 &#x200B;](./images/wfpl1.png)
+![Workfront計画 ](./images/wfpl1.png)
 
 その後、これが表示されます。
 
@@ -187,7 +187,7 @@ Workfrontに戻りなさい。 **タスク** に移動し、タスク **デザ�
 
 ## 1.8.1.6 参照画像をアップロード
 
-参照画像 [&#x200B; こちら &#x200B;](./assets/reference_images.zip) をデスクトップにダウンロードして解凍します。
+参照画像 [ こちら ](./assets/reference_images.zip) をデスクトップにダウンロードして解凍します。
 
 ![WF](./images/wfrefimg1.png)
 
@@ -211,8 +211,8 @@ Workfrontで **プロジェクト** レベルに移動します。
 
 ## 次の手順
 
-次の手順：[&#x200B; 新しいアセットを作成、レビュー、承認する &#x200B;](./ex2.md){target="_blank"}
+次の手順：[ 新しいアセットを作成、レビュー、承認する ](./ex2.md){target="_blank"}
 
-[Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合 &#x200B;](./esm.md){target="_blank"} に戻る
+[Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合 ](./esm.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

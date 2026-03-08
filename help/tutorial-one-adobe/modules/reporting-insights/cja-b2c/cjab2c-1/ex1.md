@@ -4,9 +4,9 @@ description: Customer Journey Analytics- Customer Journey Analytics 101
 kt: 5342
 doc-type: tutorial
 exl-id: ea1469a4-cbfd-4633-8678-9467c2146a2a
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 1%
 
 ## 目標
 
-- CJA アプリケーションサービスについて
-- CJA のポジショニング方法を学ぶ
-- データ接続からインサイトまで、CJA のワークフローを理解します
+- CJA Application Service について
+- CJAのポジショニング方法を学ぶ
+- データ接続からインサイトまで、CJAのワークフローを理解する
 
 ## 1.1.1.1 Customer Journey Analyticsとは
 
-Customer Journey Analytics（CJA）は、クロスチャネルデータ（オンラインとオフライン）のステッチと分析のために、ビジネスインテリジェンスおよびデータサイエンスチーム用のツールキットを提供します。 CJA の機能は、複雑なマルチチャネルカスタマージャーニーにコンテキストと明確さを提供します。 提供されるコンテキストにより、顧客コンバージョンプロセスの問題点を取り除き、最も重要な瞬間に優れたエクスペリエンスを設計し提供するための実用的なインサイトが得られます。
+Customer Journey Analytics（CJA）は、ビジネスインテリジェンスおよびデータサイエンスチームに対して、クロスチャネルデータ（オンラインとオフライン）のステッチと分析のためのツールキットを提供します。 CJAの機能は、複雑なマルチチャネルカスタマージャーニーにコンテキストと明確さを提供します。 提供されたコンテキストにより、実用的なinsightを使用して、顧客コンバージョンプロセスの問題点を取り除き、最も重要な瞬間に優れたエクスペリエンスを設計し提供することができます。
 
-CJA はAnalysis WorkspaceをAdobe Experience Platformに追加します。 Adobe Experience Platformは、コミュニケーションとオーケストレーションの頭脳です。CJA を使用すると、企業はすべてのデータをコンテキスト化し、視覚化できるので、ビジネスチームやインサイトチームは、オンラインからオフラインへの完全なカスタマージャーニーを分析することで、そこから学ぶことができます。
+CJAはAnalysis WorkspaceをAdobe Experience Platformの上に置きます。 Adobe Experience Platformはコミュニケーションとオーケストレーションの頭脳であり、CJAを使用すると、企業はすべてのデータをコンテキスト化および視覚化できるので、ビジネスチームやInsight チームは、オンラインからオフラインへの完全なカスタマージャーニーを分析することで、そこから学ぶことができます。
 
-ビジネスチームやインサイトチームは、Analysis Workspaceのドラッグアンドドロップ、ポイントアンドクリック、使いやすい UI を使用して、CJA と話し、質問し、その場で回答を得ることができます。
+ビジネスチームやInsight チームは、CJAのドラッグアンドドロップ、ポイントアンドクリック、使いやすい UI を使用して、Analysis Workspaceと話したり、質問したり、その場で回答を得たりすることができます。
 
-![&#x200B; デモ &#x200B;](./images/cja-adv-analysis1.png)
+![ デモ ](./images/cja-adv-analysis1.png)
 
 ## 1.1.1.2 主なメリット
 
@@ -37,10 +37,10 @@ CJA はAnalysis WorkspaceをAdobe Experience Platformに追加します。 Adobe
 - 顧客をコンテキストジャーニーで表示する機能（オンラインとオフラインの両方の複数のチャネルにまたがるデータを順番に視覚化できます）
 - を必要とせずにデータの力を活用する機能（つまり、通常の人間がデータを使用して、マーケティングアクティベーションのための深いインサイトと分析を解き放つ）
 
-## 1.1.1.3 Customer Journey Analyticsを選ぶ理由
+## 1.1.1.3 Customer Journey Analyticsを選択する理由
 
-CJA は、現在の BI アプリケーション（Power BI、マイクロストラテジー、Locker、Tableau など）の代わりとなるつもりはありません。 これらの BI アプリケーションは、データを視覚化して企業ダッシュボードを作成し、組織内の全員が重要な指標をすばやく確認できるようにします。\
-CJA の目標は、マーケティングチームとビジネスチームに分析力をもたらし、それらのペルソナにとって「必須」の分析ツールにすることです。
+CJAは、現在の BI アプリケーション（Power BI、Microstrategy、Locker、Tableau など）の代わりとなるつもりはありません。 これらの BI アプリケーションは、データを視覚化して企業ダッシュボードを作成し、組織内の全員が重要な指標をすばやく確認できるようにします。\
+CJAの目標は、マーケティングチームとビジネスチームに分析力をもたらすことで、これらのペルソナにとって「必須」の分析ツールにすることです。
 
 従来、BI アプリケーションは真の顧客インテリジェンスを実現することはできませんでした。
 
@@ -53,15 +53,15 @@ CJA の目標は、マーケティングチームとビジネスチームに分�
 
 上記の理由から、ビジネスユーザーやアナリストはほぼ即座に行き詰まり、分析が高価で、遅く、柔軟性に欠け、行動システムから切り離されています。
 
-CJA を使用すると、適切なツールを使用してオフラインとオンラインのデータを使用し、カスタマージャーニーを 360 度にわたって把握し、インサイトを得るまでの時間を短縮し、発生した理由と対応方法をビジネスユーザーが把握するのを独立させることができます。
+CJAを使用すると、オフラインとオンラインのデータを使用して、カスタマージャーニーを 360 ビューで表示できます。適切なツールを使用すると、insightまでの時間を短縮し、発生した理由と対応方法を理解する上でビジネスユーザーを独立化できます。
 
-![&#x200B; デモ &#x200B;](./images/cja-use-case.png)
+![ デモ ](./images/cja-use-case.png)
 
-## 1.1.1.4 Customer Journey Analytics ワークフローについて
+## Customer Journey Analytics1.1.1.4 ワークフローについて
 
-次の演習を始める前に、Adobe Experience Platformから CJA にデータを取り込んで視覚化し、深いインサイトを得るために必要な手順を理解することが重要です。 これを CJA ワークフローと呼びます。 見てみましょう。
+次の演習を始める前に、Adobe Experience PlatformからCJAにデータを取り込んで視覚化し、深いインサイトを得るために必要な手順を理解することが重要です。 これをCJA Workflow と呼びます。 見てみましょう。
 
-![&#x200B; デモ &#x200B;](./images/cja-work-flow.jpg)
+![ デモ ](./images/cja-work-flow.jpg)
 
 上記の手順を始める前に、手順 0 を忘れないでください。手順 0 は、Adobe Experience Platformで使用可能なデータを理解することです。
 
@@ -73,16 +73,16 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 Adobe Experience Platformのこれらのスキーマとデータセットを確認してください。
 
 | データセット | スキーマ |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | デモシステム - Web サイトのイベントデータセット（グローバル v1.1） | デモシステム - Web サイトのイベントスキーマ（グローバル v1.1） |
 | デモシステム – コールセンターのイベントデータセット（グローバル v1.1） | デモシステム – コールセンターのイベントスキーマ（グローバル v1.1） |
 | デモシステム – 音声アシスタントのイベントデータセット（グローバル v1.1） | デモシステム – 音声アシスタントのイベントスキーマ（グローバル v1.1） |
@@ -90,22 +90,22 @@ Adobe Experience Platformのこれらのスキーマとデータセットを確�
 次の項目を少なくともオンにしていることを確認します。
 
 - ID:CRMID、phoneNumber、ECID、メール。 プライマリ識別子は ID、セカンダリ識別子は ID
-スキーマを開き、オブジェクト `--aepTenantId--.identification.core` を確認することで、識別子を見つけることができます。 スキーマ [&#x200B; デモシステム - Web サイトのイベントスキーマ（グローバル v1.1） &#x200B;](https://experience.adobe.com/platform/schema) を確認します。
+スキーマを開き、オブジェクト `--aepTenantId--.identification.core` を確認することで、識別子を見つけることができます。 スキーマ [ デモシステム - Web サイトのイベントスキーマ（グローバル v1.1） ](https://experience.adobe.com/platform/schema) を確認します。
 
-![&#x200B; デモ &#x200B;](./images/identity.png)
+![ デモ ](./images/identity.png)
 
-- スキーマ内のコマースオブジェクトを探索します [&#x200B; デモシステム - Web サイトのイベントスキーマ（グローバル v1.1） &#x200B;](https://experience.adobe.com/platform/schema)。
+- スキーマ内のコマースオブジェクトを探索します [ デモシステム - Web サイトのイベントスキーマ（グローバル v1.1） ](https://experience.adobe.com/platform/schema)。
 
-![&#x200B; デモ &#x200B;](./images/commerce.png)
+![ デモ ](./images/commerce.png)
 
-- すべての [&#x200B; データセット &#x200B;](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created) をプレビューし、データを確認します
+- すべての [ データセット ](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created) をプレビューし、データを確認します
 
 これで、Customer Journey Analytics UI の使用を開始する準備が整いました。
 
 ## 次の手順
 
-[1.1.2 Customer Journey AnalyticsのAdobe Experience Platform データセットに接続する &#x200B;](./ex2.md){target="_blank"}
+[1.1.2 Customer Journey AnalyticsのAdobe Experience Platform データセットに接続する ](./ex2.md){target="_blank"}
 
 [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

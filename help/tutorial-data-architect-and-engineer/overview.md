@@ -2,13 +2,13 @@
 title: データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要
 description: データアーキテクトおよびデータエンジニア向けAdobe Experience Platformの概要。
 breadcrumb-title: 概要
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -26,18 +26,18 @@ _データアーキテクトおよびデータエンジニア向けAdobe Experie
 
 ## 学習内容
 
-データアーキテクトとデータエンジニアが緊密に連携して、Experience Platformの導入を成功させる必要があります。 この実践チュートリアルでは、_両方の役割_ で実行される主なタスクについて説明するので、自分のビジネスに Platform を実装する方法を理解できます。 Experience Platformの主な用語、機能、インターフェイス、API を紹介する演習を通じてガイドされます。 Real-time Customer Data Platform、Customer Journey Analytics、Journey OptimizerなどのAdobe Experience Cloud アプリケーションのお客様も、Platform サービスがこれらのアプリケーションの重要な基盤となるので、このコンテンツが役立つことに気付くでしょう。
+Experience Platformを正常に導入するには、データアーキテクトとデータエンジニアが緊密に連携する必要があります。 この実践チュートリアルでは、_両方の役割_ で実行される主なタスクについて説明するので、自分のビジネスに Platform を実装する方法を理解できます。 Experience Platformの主な用語、機能、インターフェイス、API を紹介する演習を通じてガイドされます。 Platform サービスはAdobe Experience Cloud アプリケーションの重要な基盤なので、Real-Time Customer Data Platform、Customer Journey Analytics、Journey Optimizerなどの Platform アプリケーションのお客様も、このコンテンツが役に立つと思います。
 
-![&#x200B; このチュートリアルで扱う Platform サービスを重点的に解説したAdobe Experience Cloud マーケテクチャ - ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス &#x200B;](assets/marketecture.png)
+![ このチュートリアルで扱う Platform サービスを重点的に解説したAdobe Experience Cloud マーケテクチャ - ID、プロファイル、セグメント化、取り込み、クエリ、ガバナンス ](assets/marketecture.png)
 
-トピックは次のとおりです。
+このリファレンスには次のトピックが含まれます。
 
 * ユーザー権限の設定
 * サンドボックスの作成
 * Developer Console プロジェクトの設定と Platform API の使用
 * データ管理（スキーマ、データセット、ID、結合ポリシー、データガバナンスの作成を含む）
 * バッチモードとストリーミングモードを使用したデータ取り込み
-* Adobe Experience Platform Web SDK を使用した web データのキャプチャ
+* Adobe Experience Platform Web SDKを使用した web データのキャプチャ
 * リアルタイム顧客プロファイルの作成
 * クエリサービスを使用したデータの検証と抽出
 * セグメントの作成
@@ -48,9 +48,9 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 ## 前提条件
 
-* あなたはExperience Leagueーで [Adobe Experience Platform プレイリストの概要 &#x200B;](https://experienceleague.adobe.com/ja/playlists/experience-platform-introduction) を見ており、Platform の機能をよく知っています
+* あなたはExperience Leagueで [Adobe Experience Platform プレイリストの概要 ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) を視聴し、Platform の機能について知っています
 * Adobe Experience Platform（またはReal-Time CDPやJourney Optimizerなどの Platform ベースのアプリケーション）とデータ収集（以前の Launch）でプロビジョニングされたアカウントにアクセスできます。
-* そのアカウントのシステム管理者であるか、1 つの [&#x200B; ユーザー権限の設定 &#x200B;](configure-permissions.md) を持つことができます。
+* そのアカウントのシステム管理者であるか、1 つの [ ユーザー権限の設定 ](configure-permissions.md) を持つことができます。
 
 ## このチュートリアルの使用
 
@@ -58,7 +58,7 @@ Adobe Experience Platformは、マーケティング目標の達成を支援す�
 
 このチュートリアルで様々な Platform 要素を作成する際は、できるだけ推奨する名前に従ってください。 ただし、組織で複数のユーザーが同時にこのチュートリアルを実行する場合に備えて、カスタマイズした高レベルの要素名がいくつかあります。 例えば、Platform サンドボックスに、単に「Luma チュートリアルプラットフォーム」ではなく「Luma チュートリアルプラットフォーム - Ignatius J Reilly」という名前を付けることができます。
 
-問題が発生した場合は、最初に手順を再度読んでから、各ページのサイドバーにある ![&#x200B; 問題を記録 &#x200B;](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=ja) リンクを使用して連絡してください。
+問題が発生した場合は、最初に手順を再度読んでから、各ページのサイドバーにある ![ 問題を記録 ](https://experienceleague.adobe.com/assets/img/feedback.svg) リンクを使用して連絡してください。
 
 ## テクニカルノート
 
@@ -72,11 +72,11 @@ Platform は、API ファーストで構築されています。 インターフ
 
 ### サードパーティのテクノロジー
 
-このチュートリアルでは複数のテクノロジーを使用しますが、ほぼ完全にAdobeエコシステム内に残ります。 お客様の Platform 実装では、Platform を特定のサードパーティテクノロジーと統合する可能性が高くなります。 このチュートリアルをすべてのお客様に適切なものにするために、より一般的な実装を使用します。
+このチュートリアルでは複数のテクノロジーを使用しますが、ほぼ完全にAdobe エコシステム内に残ります。 お客様の Platform 実装では、Platform を特定のサードパーティテクノロジーと統合する可能性が高くなります。 このチュートリアルをすべてのお客様に適切なものにするために、より一般的な実装を使用します。
 
 ## チュートリアルの最新情報
 
 * 2023 年 6 月：新しい権限ワークフローを含み、OAuth サーバー間 API 資格情報を使用するように更新されました
 
 
-次に、最初のレッスンである [&#x200B; 権限の設定 &#x200B;](configure-permissions.md) に進みます。
+次に、最初のレッスンである [ 権限の設定 ](configure-permissions.md) に進みます。

@@ -4,9 +4,9 @@ description: BigQuery Google Analytics コネクタを使用したAdobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -25,44 +25,44 @@ Google Analytics データが BigQuery の場合、ディメンション、指�
 
 この問題の解決策は、Google Analytics データを読み取り可能な形式に変換して、Adobe Experience Platformへの取り込みを容易にすることです。
 
-## 1.2.2.1 新しい BigQuery テーブルを保存するデータセットを作成する
+## 新 1.2.2.1 い BigQuery テーブルを保存するデータセットを作成するには
 
-[BigQuery コンソール &#x200B;](https://console.cloud.google.com/bigquery) に移動します。
+[BigQuery コンソール ](https://console.cloud.google.com/bigquery) に移動します。
 
-![&#x200B; デモ &#x200B;](./images/ex31.png)
+![ デモ ](./images/ex31.png)
 
 **エクスプローラー** には、プロジェクト ID が表示されます。 プロジェクト ID をクリックします（**bigquery-public-data** データセットをクリックしないでください）。
 
-![&#x200B; デモ &#x200B;](./images/ex32.png)
+![ デモ ](./images/ex32.png)
 
 データセットがまだないことがわかるので、今すぐ作成します。
 「3 **...**」をクリックし、「**データセットを作成**」をクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex34.png)
+![ デモ ](./images/ex34.png)
 
 画面の右側に、**データセットを作成** メニューが表示されます。
 
-![&#x200B; デモ &#x200B;](./images/ex35.png)
+![ デモ ](./images/ex35.png)
 
 **データセット ID** には、次の命名規則を使用します。 その他のフィールドは、デフォルト設定のままにしてください。
 
 | 名前付け | 例 |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 **データセットを作成** をクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex36.png)
+![ デモ ](./images/ex36.png)
 
 データセットが作成された状態で、BigQuery コンソールに戻ります。
 
-![&#x200B; デモ &#x200B;](./images/ex38.png)
+![ デモ ](./images/ex38.png)
 
-## 1.2.2.2 最初の SQL BigQuery を作成する
+## 1.2.2.2 初めての SQL BigQuery の作成
 
 次に、BigQuery で最初のクエリを作成します。 このクエリの目的は、Google Analyticsのサンプルデータを取得し、Adobe Experience Platformで取り込めるように変換することです。 「**名称未設定クエリ**」タブに移動します。
 
-![&#x200B; デモ &#x200B;](./images/ex39.png)
+![ デモ ](./images/ex39.png)
 
 次の SQL クエリをコピーして、そのクエリエディターに貼り付けます。 このクエリをお読みいただき、Google Analytics BigQuery 構文を理解してください。
 
@@ -231,50 +231,50 @@ GROUP BY
 
 準備が整ったら、「**実行** をクリックしてクエリを実行します。
 
-![&#x200B; デモ &#x200B;](./images/ex310.png)
+![ デモ ](./images/ex310.png)
 
 クエリの実行には数分かかることがあります。
 
 クエリの実行が完了すると、次の出力が **クエリ結果** に表示されます。
 
-![&#x200B; デモ &#x200B;](./images/ex312.png)
+![ デモ ](./images/ex312.png)
 
-## 1.2.2.3 BigQuery SQL クエリの結果を保存する
+## 1.2.2.3 BigQuery SQL クエリの結果を保存します
 
 次の手順では、「結果を保存 **ボタンをクリックしてクエリの出力を保存し** す。
 
-![&#x200B; デモ &#x200B;](./images/ex313.png)
+![ デモ ](./images/ex313.png)
 
 出力の場所として、「**BigQuery テーブル**」を選択します。
 
-![&#x200B; デモ &#x200B;](./images/ex314.png)
+![ デモ ](./images/ex314.png)
 
 **プロジェクト名** と **データセット名** が事前入力された新しいポップアップが表示されます。 データセット名は、この演習の最初に作成したデータセットである必要があります（命名規則は次のとおりです）。
 
 | 名前付け | 例 |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 テーブル名を入力する必要があります。 次の命名規則を使用してください。
 
 | 名前付け | 例 |
-| ----------------- |------------- | 
+| ----------------- |------------- |
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 **保存** をクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex316.png)
+![ デモ ](./images/ex316.png)
 
-作成したテーブルでデータが準備できるようになるまで、時間がかかる場合があります。 数分後、ブラウザーを更新します。 データセット内に、BigQuery プロジェクト内の **エクスプローラー** の下にある `--aepUserLdap--_GAdataTableBigquery` テーブルが表示されます。
+作成したテーブルでデータが準備できるようになるまで、時間がかかる場合があります。 数分後、ブラウザーを更新します。 データセット内に、BigQuery プロジェクト内の `--aepUserLdap--_GAdataTableBigquery` エクスプローラー **の下にある** テーブルが表示されます。
 
-![&#x200B; デモ &#x200B;](./images/ex319.png)
+![ デモ ](./images/ex319.png)
 
 次の演習に進みます。ここでは、このテーブルをAdobe Experience Platformに接続します。
 
 ## 次の手順
 
-[1.2.3 GCP と BigQuery をAdobe Experience Platformに接続に移動 &#x200B;](./ex3.md){target="_blank"}
+[1.2.3 GCP と BigQuery をAdobe Experience Platformに接続に移動 ](./ex3.md){target="_blank"}
 
-[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
+[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

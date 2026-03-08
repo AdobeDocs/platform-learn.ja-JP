@@ -1,10 +1,10 @@
 ---
-title: Microsoft Azure Event Hub へのAudience Activation - Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
-description: Microsoft Azure Event Hub へのAudience Activation - Adobe Experience Platformでの Event Hub RTCDP 宛先の設定
+title: Microsoft Azure Event Hub へのAudience Activation - Adobe Experience Platformでの Event Hub RTCDPの宛先の設定
+description: Microsoft Azure Event Hub へのAudience Activation - Adobe Experience Platformでの Event Hub RTCDPの宛先の設定
 kt: 5342
 doc-type: tutorial
 exl-id: e48b7b50-c95b-46da-b696-494da3926325
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 2.4.3 Adobe Experience Platformでの Azure Event Hub の宛先の設定
 
-## 必要な Azure 接続パラメーターの特定
+## 必要なAzure接続パラメーターの特定
 
 Adobe Experience Platformでイベントハブの宛先を設定するには、次が必要です。
 
@@ -22,13 +22,13 @@ Adobe Experience Platformでイベントハブの宛先を設定するには、�
 - Azure SAS キー名
 - Azure SAS キー
 
-Event Hub と EventHub 名前空間は、前の演習 [Azure でのイベントハブのセットアップ &#x200B;](./ex2.md) で定義されています
+Event Hub と EventHub 名前空間は、前の演習 [Azureの Event Hub の設定 ](./ex2.md) で定義しています。
 
 ### Event Hubs 名前空間
 
-Azure Portal で上記の情報を参照するには、[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動します。 正しい Azure アカウントを使用していることを確認します。
+Azure ポータルで上記の情報を参照するには、[https://portal.azure.com/#home](https://portal.azure.com/#home) に移動します。 正しいAzure アカウントを使用していることを確認します。
 
-Azure portal で **すべてのリソース** をクリックします。
+Azure ポータルで **すべてのリソース** をクリックします。
 
 ![2-01-azure-all-resources.png](./images/201azureallresources.png)
 
@@ -60,7 +60,7 @@ Azure portal で **すべてのリソース** をクリックします。
 
 ### 宛先値の概要
 
-この時点で、Adobe Experience Platform Real-time CDP で Azure Event Hub の宛先を定義するために必要なすべての値が特定されています。
+この時点で、Adobe Experience Platform Real-time CDP でAzure イベントハブの宛先を定義するために必要なすべての値が特定されています。
 
 | 宛先属性名 | 宛先属性値 | 値の例 |
 |---|---|---|
@@ -69,17 +69,17 @@ Azure portal で **すべてのリソース** をクリックします。
 | 名前空間 | Event Hubs 名前空間 | `--aepUserLdap---aep-enablement` |
 | eventHubName | イベントハブ | `--aepUserLdap---aep-enablement-event-hub` |
 
-## Adobe Experience Platformでの Azure Event Hub の宛先の作成
+## Adobe Experience PlatformでのAzure Event Hub の宛先の作成
 
 URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platform) に移動して、Adobe Experience Platformにログインします。
 
 ログインすると、Adobe Experience Platformのホームページが表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切なサンドボックスを選択すると、画面が変更され、専用のサンドボックスが表示されます。
 
-![データ取得](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 **宛先** に移動し、**カタログ** に移動します。 **クラウドストレージ** を選択し、**Azure Event Hubs** に移動して **設定** をクリックします。
 
@@ -107,8 +107,8 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ## 次の手順
 
-[2.4.4 オーディエンスの作成 &#x200B;](./ex4.md){target="_blank"} に移動します。
+[2.4.4 オーディエンスの作成 ](./ex4.md){target="_blank"} に移動します。
 
-[Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub に戻る &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[Real-Time CDP Audience Activation:Microsoft Azure Event Hub に戻る ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

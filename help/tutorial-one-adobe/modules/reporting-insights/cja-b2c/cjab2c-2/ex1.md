@@ -4,9 +4,9 @@ description: BigQuery Google Analytics コネクタを使用したAdobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -32,23 +32,23 @@ GCP/BigQuery Source コネクタは、以下の目的で使用する必要があ
 - web サイト上のすべての顧客行動を追跡し、そのデータをAdobe Experience Platformに読み込むことで、リアルタイムのアクティベーションを必要としない分析、データサイエンス、パーソナライゼーションのユースケースを実現します。
 - Google Analyticsの履歴データをAdobe Experience Platformに読み込み、分析やデータサイエンスのユースケースにも使用する
 
-## 1.2.1.2 Google アカウント
+## Google アカウントの 1.2.1.2 定
 
 >[!NOTE]
 >
 >この演習では、Google Cloud Platform 環境にアクセスする必要があります。 まだ GCP へのアクセス権がない場合は、個人のメールアドレスを使用して新しいアカウントを作成します。
 
-## 1.2.1.3 プロジェクトの選択または作成
+## 1.2.1.3 プロジェクトを選択または作成
 
 [https://console.cloud.google.com/](https://console.cloud.google.com/) に移動します。
 
 次に、「**プロジェクトを選択** または既存のプロジェクトをクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex12.png)
+![ デモ ](./images/ex12.png)
 
 まだプロジェクトがない場合は、「**新規プロジェクト**」をクリックします。 既にプロジェクトがある場合は、そのプロジェクトを選択して次の手順に進むことができます。
 
-![&#x200B; デモ &#x200B;](./images/ex1createproject.png)
+![ デモ ](./images/ex1createproject.png)
 
 この命名規則に従ってプロジェクトに名前を付けます。 **作成** をクリックします。
 
@@ -56,45 +56,45 @@ GCP/BigQuery Source コネクタは、以下の目的で使用する必要があ
 | ----------------- |
 | `--aepUserLdap---googlecloud` |
 
-![&#x200B; デモ &#x200B;](./images/ex13.png)
+![ デモ ](./images/ex13.png)
 
 画面の右上に表示される通知で、作成が完了したことが示されるまで待ちます。 次に、「**プロジェクトを選択**」をクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex14.png)
+![ デモ ](./images/ex14.png)
 
 次に、画面上部の検索バーに移動し、「**BigQuery**」と入力します。 最初の結果を選択します。
 
-![&#x200B; デモ &#x200B;](./images/ex17.png)
+![ デモ ](./images/ex17.png)
 
 このモジュールの目標は、Google Analytics データをAdobe Experience Platformに取り込むことです。 そのためには、最初にGoogle Analytics データセットにダミーデータが必要です。
 
 「**+追加**」をクリックし、右側のメニューで **公開データセット** をクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex118.png)
+![ デモ ](./images/ex118.png)
 
 次のウィンドウが表示されます。
 
-![&#x200B; デモ &#x200B;](./images/ex119.png)
+![ デモ ](./images/ex119.png)
 
 検索バーに検索語句「**Google Analytics サンプル**」を入力し、最初の検索結果をクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex120.png)
+![ デモ ](./images/ex120.png)
 
 次の画面に、データセットの説明が表示されます。 **データセットを表示** をクリックします。
 
-![&#x200B; デモ &#x200B;](./images/ex121.png)
+![ デモ ](./images/ex121.png)
 
 その後、BigQuery にリダイレクトされ、この **bigquery-public-data** データセットが **エクスプローラー** に表示されます。
 
-![&#x200B; デモ &#x200B;](./images/ex122a.png)
+![ デモ ](./images/ex122a.png)
 
 **エクスプローラー** には、多数のテーブルが表示されます。 自由に探索してください。 `google_analytics_sample` に移動します。
 
-![&#x200B; デモ &#x200B;](./images/ex122.png)
+![ デモ ](./images/ex122.png)
 
 クリックしてテーブル `ga_sessions` を開きます。
 
-![&#x200B; デモ &#x200B;](./images/ex123.png)
+![ デモ ](./images/ex123.png)
 
 次の演習に進む前に、次の内容をコンピュータ上の別のテキスト ファイルに書き留めてください。
 
@@ -105,18 +105,18 @@ GCP/BigQuery Source コネクタは、以下の目的で使用する必要があ
 
 上部のメニューバーで **プロジェクト名** をクリックすると、プロジェクト名とプロジェクト ID を確認できます。
 
-![&#x200B; デモ &#x200B;](./images/ex1projectMenu.png)
+![ デモ ](./images/ex1projectMenu.png)
 
 プロジェクト ID が右側に表示されます。
 
-![&#x200B; デモ &#x200B;](./images/ex1projetcselection.png)
+![ デモ ](./images/ex1projetcselection.png)
 
 次の演習に進むには、Google Analytics データにクエリを実行して手を汚します。
 
 ## 次の手順
 
-[1.2.2 BigQuery で最初のクエリを作成する &#x200B;](./ex2.md){target="_blank"} に移動します。
+[1.2.2 BigQuery で最初のクエリを作成する ](./ex2.md){target="_blank"} に移動します。
 
-[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
+[BigQuery Source コネクタを使用した、Adobe Experience PlatformでのGoogle Analytics データの取り込みと分析 ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

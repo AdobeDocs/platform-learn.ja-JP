@@ -2,13 +2,13 @@
 title: 権限の設定
 seo-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 権限の設定
-description: このレッスンでは、AdobeのAdmin Consoleを使用してAdobe Experience Platform ユーザー権限を設定します。
-role: Data Architect, Data Engineer
+description: このレッスンでは、Adobe Admin Consoleを使用してAdobe Experience Platformのユーザー権限を設定します。
+role: Developer
 feature: Access Control
 jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 2%
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 <!--30min-->
 
-このレッスンでは、[!DNL Adobe's Admin Console] と Platform インターフェイスの [!UICONTROL &#x200B; 権限 &#x200B;] 画面を使用して、Adobe Experience Platform ユーザー権限を設定します。
+このレッスンでは、[!DNL Adobe's Admin Console] と Platform インターフェイスの [!UICONTROL  権限 ] 画面を使用して、Adobe Experience Platform ユーザー権限を設定します。
 
-アクセス制御は、Experience Platformの重要なプライバシー機能であり、ユーザーが職務を遂行するために必要な最小限の権限に制限することをお勧めします。 詳しくは、[&#x200B; アクセス制御のドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
+アクセス制御は、Experience Platformの重要なプライバシー機能であり、ユーザーが職務を遂行するために必要な最小限の権限に制限することをお勧めします。 詳しくは、[ アクセス制御のドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja) を参照してください。
 
 データアーキテクトとデータエンジニアはAdobe Experience Platformのパワーユーザーです。このチュートリアルおよび後の日常業務を完了するには、多くの権限が必要になります。 データアーキテクトは、マーケター、アナリスト、データサイエンティストなどの会社における *その他の Platform ユーザー* の管理に関与している可能性が高くなります。 このレッスンを完了する際は、これらの機能を使用して会社の他のユーザーを管理する方法を考えます。
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe Experience Cloud製品のシステム管理者は、このレッスンの手順の一部を完了する必要があります。この手順は、セクションの見出しで呼び出されます。 システム管理者でない場合は、会社の担当者に連絡して、これらのタスクを完了するように依頼してください。 また、[Developer ConsoleとPostmanの設定 &#x200B;](set-up-developer-console-and-postman.md) のレッスンで行う必要のあるタスクもあります。
+>Adobe Experience Cloud製品のシステム管理者は、このレッスンの手順の一部を完了する必要があります。この手順は、セクションの見出しで呼び出されます。 システム管理者でない場合は、会社の担当者に連絡して、これらのタスクを完了するように依頼してください。 また、[Developer ConsoleとPostmanの設定 ](set-up-developer-console-and-postman.md) のレッスンで行う必要のあるタスクもあります。
 
 ## Admin Console について
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 Platform に存在する役割の概要を次に示します。
 
 * 製品プロファイルの **ユーザー** は、製品プロファイルで割り当てられた権限に応じて、Platform のユーザーインターフェイスでタスクを完了できます。
-* **開発者** は、API 資格情報とプロジェクトをAdobe Developer Consoleで作成して、Experience PlatformAPI の使用を開始できます
+* **開発者** は、API 資格情報とプロジェクトをAdobe Developer Consoleで作成して、Experience Platform API の使用を開始できます
 * **製品管理者** は、Platform のAdobe Experience Platform製品にユーザーや開発者を追加できるほか、Adobe Admin Console インターフェイスの権限画面で詳細なユーザーアクセスを管理できます。
 * **システム管理者** は、製品管理者を追加し、基本的にすべてのAdobe Experience Cloud製品に対する権限を管理できます。
 
@@ -49,25 +49,25 @@ Platform に存在する役割の概要を次に示します。
 
 >[!NOTE]
 >
->このチュートリアルを受講するチームメンバーをシステム管理者が支援する場合は、チームメンバーをAdobe Experience Platformの *プロダクト管理者* として追加することを検討してください。 製品管理者は、後で自分でこれらの手順を実行して、他のExperience Platformユーザーを管理できるようになります。
+>このチュートリアルを受講するチームメンバーをシステム管理者が支援する場合は、チームメンバーをAdobe Experience Platformの *プロダクト管理者* として追加することを検討してください。 製品管理者であれば、これらの手順は自分で実行でき、将来、他のExperience Platform ユーザーを管理できます。
 
-チュートリアル参加者を [!UICONTROL &#x200B; ユーザー &#x200B;] および [!UICONTROL &#x200B; 開発者 &#x200B;] として追加するには：
+チュートリアル参加者を [!UICONTROL  ユーザー ] および [!UICONTROL  開発者 ] として追加するには：
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com) にログインします
 1. 上部ナビゲーションの「**[!UICONTROL 製品]**」を選択します。
 1. **Adobe Experience Platform** を選択
-   ![Adobe Experience Platformを選択 &#x200B;](assets/adminconsole-experiencePlatform.png)
-1. Experience Platformインスタンスに複数のプロファイルが既にある場合があります。 `AEP-Default-All-Users` プロファイルを選択します
-   ![&#x200B; 「新しいプロファイルを追加」を選択 &#x200B;](assets/adminconsole-newProfile.png)
+   ![Adobe Experience Platformを選択 ](assets/adminconsole-experiencePlatform.png)
+1. Experience Platform インスタンスに複数のプロファイルが既にある場合があります。 `AEP-Default-All-Users` プロファイルを選択します
+   ![ 「新しいプロファイルを追加」を選択 ](assets/adminconsole-newProfile.png)
 
 1. 「**[!UICONTROL ユーザー]** タブに移動します。
 1. 「**[!UICONTROL ユーザーを追加]**」ボタンを選択します
-   ![&#x200B; 「ユーザーを追加」を選択 &#x200B;](assets/adminconsole-addUser.png)
+   ![ 「ユーザーを追加」を選択 ](assets/adminconsole-addUser.png)
 1. ワークフローを完了して、チュートリアル参加者をユーザーとして製品プロファイルに追加します
 
 1. **[!UICONTROL 開発者]** タブに移動します。
 1. 「**[!UICONTROL 開発者を追加]**」ボタンを選択します
-   ![&#x200B; 「ユーザーを追加」を選択 &#x200B;](assets/adminconsole-addDeveloper.png)
+   ![ 「ユーザーを追加」を選択 ](assets/adminconsole-addDeveloper.png)
 1. ワークフローを完了して、チュートリアル参加者を開発者として製品プロファイルに追加します
 
 
@@ -78,13 +78,13 @@ Experience Platformに対する詳細な権限は、Platform インターフェ�
 権限は役割で管理されます。 チュートリアルの役割を作成します。
 
 1. [Adobe Experience Platform](https://platform.adobe.com) にログインします
-1. 左側のナビゲーションで **[!UICONTROL 権限]** を選択すると [!UICONTROL &#x200B; 役割 &#x200B;] 画面に移動します
+1. 左側のナビゲーションで **[!UICONTROL 権限]** を選択すると [!UICONTROL  役割 ] 画面に移動します
 1. 「**[!UICONTROL 役割を作成]**」を選択します。
 
-   ![Experience Platformでのロールの作成 &#x200B;](assets/permissions-addRole.png)
+   ![Experience Platformでの役割の作成 ](assets/permissions-addRole.png)
 1. 役割 `Luma Tutorial Platform` に名前を付け（会社の複数のユーザーがこのチュートリアルを受講する場合は、最後にチュートリアル参加者の名前を追加します）、「確認 **[!UICONTROL 」を選択します]**
 
-   ![Experience Platformでのロールの作成 &#x200B;](assets/permissions-nameRole.png)
+   ![Experience Platformでの役割の作成 ](assets/permissions-nameRole.png)
 
 
 1. **[!UICONTROL +]** と **[!UICONTROL すべて追加]** を使用して、次のリソースのすべての権限項目を追加します。
@@ -100,14 +100,14 @@ Experience Platformに対する詳細な権限は、Platform インターフェ�
    1. ダッシュボード
    1. アラート
 
-      ![&#x200B; 権限項目の追加 &#x200B;](assets/permissions-addPermissionItems.png)
+      ![ 権限項目の追加 ](assets/permissions-addPermissionItems.png)
 
 1. データ取り込みで、ソースの管理およびソースの表示権限項目を追加します。
 
 1. すべての権限項目を追加したら、必ず「保存」ボタンを選択します
-   ![&#x200B; 権限項目を保存 &#x200B;](assets/permissions-savePermissions.png)
+   ![ 権限項目を保存 ](assets/permissions-savePermissions.png)
 
-[&#x200B; サンドボックスの作成 &#x200B;](create-a-sandbox.md) および [Developer ConsoleとPostmanの設定 &#x200B;](set-up-developer-console-and-postman.md) のレッスン後、この役割にいくつかの小さな更新を加えます。
+[ サンドボックスの作成 ](create-a-sandbox.md) および [Developer ConsoleとPostmanの設定 ](set-up-developer-console-and-postman.md) のレッスン後、この役割にいくつかの小さな更新を加えます。
 
 ## データ収集製品プロファイルの作成（システム管理者または製品管理者が必要）
 
@@ -126,7 +126,7 @@ Experience Platformに対する詳細な権限は、Platform インターフェ�
 1. チュートリアル参加者をこのプロファイルの管理者として追加します
 
 これらの手順を完了すると、`Luma Tutorial Data Collection` プロファイルが 1 人の管理者で設定されていることがわかります。
-![&#x200B; データ収集プロファイルが作成されました &#x200B;](assets/adminconsole-dc-profileCreated.png)
+![ データ収集プロファイルが作成されました ](assets/adminconsole-dc-profileCreated.png)
 
 ## データ収集製品プロファイルの設定
 
@@ -142,19 +142,19 @@ Experience Platformに対する詳細な権限は、Platform インターフェ�
 1. **[!UICONTROL プラットフォーム]** を開きます。
 1. 使用可能なすべてのプラットフォームが選択されていることを確認します（ライセンスによってオプションが異なる場合があります）。
 1. 変更があれば **[!UICONTROL 保存]** します
-   ![&#x200B; プラットフォームの追加 &#x200B;](assets/adminconsole-launch-addPlatforms.png)
+   ![ プラットフォームの追加 ](assets/adminconsole-launch-addPlatforms.png)
 1. **[!UICONTROL プロパティ]** を開きます。
 1. **[!UICONTROL 自動インクルード]** の切り替えがオフになっていることを確認して、どのプロパティにもアクセスできないようにします（後で追加します）。
 1. 変更があれば **[!UICONTROL 保存]** します
-   ![&#x200B; プロパティの削除 &#x200B;](assets/adminconsole-launch-removeProperties.png)
+   ![ プロパティの削除 ](assets/adminconsole-launch-removeProperties.png)
 1. **[!UICONTROL プロパティ権限]** を開きます。
 1. **[!UICONTROL すべて追加]** を選択して、すべてのプロパティ権限を追加します
 1. **[!UICONTROL 保存]**
-   ![&#x200B; プロパティの削除 &#x200B;](assets/adminconsole-launch-addPropertyRights.png)
+   ![ プロパティの削除 ](assets/adminconsole-launch-addPropertyRights.png)
 1. オープン **[!UICONTROL 会社権限]**
 1. 追加 **[!UICONTROL プロパティの管理]**
 1. 「**[!UICONTROL 保存]**」を選択します
-   ![&#x200B; プロパティの削除 &#x200B;](assets/adminconsole-launch-companyRights.png)
+   ![ プロパティの削除 ](assets/adminconsole-launch-companyRights.png)
 
 
 ### ユーザーとしての自分の追加
@@ -163,9 +163,9 @@ Experience Platformに対する詳細な権限は、Platform インターフェ�
 
 1. 「**[!UICONTROL ユーザー]** タブに移動します。
 1. 「**[!UICONTROL ユーザーを追加]**」ボタンを選択します
-   ![&#x200B; 「ユーザーを追加」を選択 &#x200B;](assets/adminconsole-launch-addUser.png)
+   ![ 「ユーザーを追加」を選択 ](assets/adminconsole-launch-addUser.png)
 1. 製品プロファイルに自分自身をユーザーとして追加するには、ワークフローを完了します
 
 データ収集の開発者として自分自身を追加する必要はありません。
 
-これで、チュートリアルを完了するために必要な権限のほとんどが揃いました。 サンドボックス内には、さらに 2 つの調整があり、1 つは [!DNL Adobe Admin Console] ンドボックスを作成 [&#x200B; した後に行われ &#x200B;](create-a-sandbox.md) す。
+これで、チュートリアルを完了するために必要な権限のほとんどが揃いました。 サンドボックス内には、さらに 2 つの調整があり、1 つは [!DNL Adobe Admin Console] ンドボックスを作成 [ した後に行われ ](create-a-sandbox.md) す。

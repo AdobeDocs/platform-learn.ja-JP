@@ -4,7 +4,7 @@ description: コールセンターでのリアルタイム顧客プロファイ�
 kt: 5342
 doc-type: tutorial
 exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 6%
@@ -41,7 +41,7 @@ CX アプリケーション・プロジェクトで、**統合** に移動しま
 
 次に、ID の 1 つおよび対応する名前空間を選択し、**検索アイコン** をクリックする必要があります。
 
-![&#x200B; 顧客プロファイル &#x200B;](./images/identities.png)
+![ 顧客プロファイル ](./images/identities.png)
 
 | ID | 名前空間 |
 |:-------------:| :---------------:|
@@ -58,6 +58,6 @@ CX アプリケーション・プロジェクトで、**統合** に移動しま
 
 ## 次の手順
 
-[&#x200B; リアルタイム顧客プロファイル &#x200B;](./real-time-customer-profile.md){target="_blank"} に戻る
+[ リアルタイム顧客プロファイル ](./real-time-customer-profile.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

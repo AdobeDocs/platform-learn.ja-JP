@@ -2,11 +2,11 @@
 user-guide-title: Federated Audience Composition を使用して、データウェアハウスから直接オーディエンスを取り込みます
 breadcrumb-title: 連合オーディエンス構成
 user-guide-description: Federated Audience Composition を使用してオーディエンスを構築および強化するために、既存のテクニカルスタックを活用することで、データコピーを最小限に抑える方法を説明します。
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 3%

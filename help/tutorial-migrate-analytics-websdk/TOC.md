@@ -5,12 +5,12 @@ user-guide-description: Adobe Experience Platformのお客様向けの実践チ�
 solution: Analytics,Data Collection,Experience Platform
 feature-set: Analytics,Experience Platform
 feature: Web SDK
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 4fc3d8815c2f0f5bed7bb0d1fe8cfcd9b1599762
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -24,26 +24,26 @@ ht-degree: 0%
 
 + [2.検証レポートスイートの作成](create-a-validation-report-suite.md)
 
-+ [3. データストリームを作成する](create-and-configure-the-analytics-datastream.md)
++ [&#x200B;3. データストリームを作成する](create-and-configure-the-analytics-datastream.md)
 
-+ [4. Web SDK拡張機能を追加する](add-and-configure-the-web-sdk-extension.md)
++ [&#x200B;4. Web SDK拡張機能を追加する](add-and-configure-the-web-sdk-extension.md)
 
 + [5.変数データ要素の作成](create-a-variable-data-element.md)
 
-+ [6. デフォルトのページ読み込みルールの移行](migrate-your-default-page-load-rule.md)
++ [&#x200B;6. デフォルトのページ読み込みルールの移行](migrate-your-default-page-load-rule.md)
 
-+ [7. カスタムコードの移行](migrate-custom-code-to-the-web-sdk.md)
++ [&#x200B;7. カスタムコードの移行](migrate-custom-code-to-the-web-sdk.md)
 
 + [8.開発ライブラリの構築](build-the-implementation-changes.md)
 
-+ [9. デバッグと検証](debug-and-validate-your-web-sdk-migration.md)
++ [&#x200B;9. デバッグと検証](debug-and-validate-your-web-sdk-migration.md)
 
 + [10.追加のページルールの移行](migrate-additional-page-rules.md)
 
-+ [11. カスタムリンクルールを移行する](migrate-custom-link-rules.md)
++ [&#x200B;11. カスタムリンクルールを移行する](migrate-custom-link-rules.md)
 
-+ [12. グローバル変数を移行する](migrate-global-variables.md)
++ [&#x200B;12. グローバル変数を移行する](migrate-global-variables.md)
 
-+ [13. Analytics 拡張機能を削除する](delete-analytics-extension-items.md)
++ [&#x200B;13. Analytics 拡張機能を削除する](delete-analytics-extension-items.md)
 
-+ [14. ステージング環境および実稼動環境に公開](publish-the-migration.md)
++ [&#x200B;14. ステージング環境および実稼動環境に公開](publish-the-migration.md)

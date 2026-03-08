@@ -2,14 +2,14 @@
 title: データ管理人としてのマーケターの役割の向上
 description: 変わりやすい市場原理と様々な消費者プライバシー要件から描かれるシナリオは、デジタルマーケターにとって悲観的なものになる可能性があります。 キャンペーンを規制の右側に据え置くために、マーケティングチームは、IT 担当者がデータガバナンスプロセスを効率化するプロセスを持つ必要があります。このプロセスは、消費者データの責任ある使用に関するルールに従い、適用することを、全員に可能にするのが理想的です。 責任あるデータ管理に関する主な考慮事項について、アドビと Scotiabank Digital から話を伺います。
 feature: Privacy
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%

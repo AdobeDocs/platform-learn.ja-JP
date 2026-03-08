@@ -4,7 +4,7 @@ description: XDM で ID をキャプチャする方法、および ID マップ�
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # ID のキャプチャ
 
-Adobe Experience Platform Web SDK を使用して ID を取得する方法について説明します。未認証と認証済みの両方の ID データを [Luma デモ Web サイト &#x200B;](https://luma.enablementadobe.com) でキャプチャします。 ID マップと呼ばれる Platform Web SDK データ要素タイプを使用して認証済みデータを収集するために、前の手順で作成したデータ要素を使用する方法を説明します。
+Adobe Experience Platform Web SDK を使用して ID を取得する方法について説明します。未認証と認証済みの両方の ID データを [Luma デモ Web サイト ](https://luma.enablementadobe.com) でキャプチャします。 ID マップと呼ばれる Platform Web SDK データ要素タイプを使用して認証済みデータを収集するために、前の手順で作成したデータ要素を使用する方法を説明します。
 
 このレッスンでは、Adobe Experience Platform Web SDK タグ拡張機能で使用できる ID マップデータ要素に焦点を当てます。 認証済みユーザー ID と認証ステータスを含むデータ要素を XDM にマッピングします。
 
@@ -29,7 +29,7 @@ Adobe Experience Platform Web SDK を使用して ID を取得する方法につ
 
 ## 前提条件
 
-データレイヤーとは何かを理解し、[Luma デモ web サイト &#x200B;](https://luma.enablementadobe.com){target="_blank"} データレイヤーを理解し、タグでデータ要素を参照する方法を理解しました。 チュートリアルの前のレッスンを完了している必要があります。
+データレイヤーとは何かを理解し、[Luma デモ web サイト ](https://luma.enablementadobe.com){target="_blank"} データレイヤーを理解し、タグでデータ要素を参照する方法を理解しました。 チュートリアルの前のレッスンを完了している必要があります。
 
 * [XDM スキーマの設定](configure-schemas.md)
 * [ID 名前空間の設定](configure-identities.md)
@@ -40,7 +40,7 @@ Adobe Experience Platform Web SDK を使用して ID を取得する方法につ
 
 ## Experience Cloud ID
 
-[Experience Cloud ID （ECID） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/ecid) は、Adobe Experience PlatformおよびAdobe Experience Cloud アプリケーションで使用される共有 ID 名前空間です。 ECID は、顧客 ID の基盤を提供するもので、デジタルプロパティのデフォルト ID です。 ECID は常に存在するので、認証されていないユーザーの行動をトラッキングするための理想的な識別子です。
+[Experience Cloud ID （ECID） ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) は、Adobe Experience PlatformおよびAdobe Experience Cloud アプリケーションで使用される共有 ID 名前空間です。 ECID は、顧客 ID の基盤を提供するもので、デジタルプロパティのデフォルト ID です。 ECID は常に存在するので、認証されていないユーザーの行動をトラッキングするための理想的な識別子です。
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -49,13 +49,13 @@ Adobe Experience Platform Web SDK を使用して ID を取得する方法につ
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-詳しくは、Platform Web SDKを使用して [ECID をトラッキングする方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/identity/overview) を参照してください。
+詳しくは、Platform Web SDKを使用して [ECID をトラッキングする方法 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) を参照してください。
 
 ECID は、ファーストパーティ cookie と Platform Edge Networkを組み合わせて設定されます。 デフォルトでは、ファーストパーティ ID Cookie は Web SDKによってクライアントサイドで設定されます。 Cookie の有効期間に関するブラウザーの制限を考慮して、代わりに独自のファーストパーティ ID Cookie をサーバーサイドで設定することを選択できます。 これらの ID Cookie は、ファーストパーティデバイス ID （FPID）と呼ばれます。
 
 >[!IMPORTANT]
 >
->ID サービス機能はExperience Cloud Web SDKに組み込まれているので、Adobe Experience Platform Web SDKを実装する場合、[Platform ID サービス拡張機能 &#x200B;](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) は必要ありません。
+>ID サービス機能はExperience Cloud Web SDKに組み込まれているので、Adobe Experience Platform Web SDKを実装する場合、[Platform ID サービス拡張機能 ](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) は必要ありません。
 
 ## ファーストパーティデバイス ID （FPID）
 
@@ -63,7 +63,7 @@ FPID はファーストパーティ cookie です _ユーザーは独自の web 
 
 FPID cookie を設定すると、その値を取得し、イベントデータが収集されたときにAdobeに送信できます。 収集された FPID は、Platform Edge Networkで ECID を生成するためのシードとして使用されます。この ECID は、引き続きAdobe Experience Cloud アプリケーションのデフォルトの識別子となります。
 
-このチュートリアルでは FPID は使用しませんが、独自の web SDK実装で FPID を使用することをお勧めします。 詳しくは、[Platform Web SDKのファーストパーティデバイス ID](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/identity/first-party-device-ids) を参照してください。
+このチュートリアルでは FPID は使用しませんが、独自の web SDK実装で FPID を使用することをお勧めします。 詳しくは、[Platform Web SDKのファーストパーティデバイス ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids) を参照してください。
 
 >[!CAUTION]
 >
@@ -73,9 +73,9 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 
 上記のように、Platform Web SDKを使用すると、デジタルプロパティへのすべての訪問者に、Adobeによって ECID が割り当てられます。 ECID は、未認証のデジタル行動を追跡するためのデフォルト ID です。
 
-また、Platform で [ID グラフ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) を作成し、Target で [&#x200B; サードパーティ ID](https://experienceleague.adobe.com/ja/docs/target/using/audiences/visitor-profiles/3rd-party-id) を設定できるように、認証済みユーザー ID を送信することもできます。 認証済み ID の設定は、[!UICONTROL ID マップ &#x200B;] データ要素タイプを使用して行われます。
+また、Platform で [ID グラフ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) を作成し、Target で [ サードパーティ ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) を設定できるように、認証済みユーザー ID を送信することもできます。 認証済み ID の設定は、[!UICONTROL ID マップ ] データ要素タイプを使用して行われます。
 
-[!UICONTROL ID マップ &#x200B;] データ要素を作成するには：
+[!UICONTROL ID マップ ] データ要素を作成するには：
 
 1. **[!UICONTROL データ要素]** に移動し、「**[!UICONTROL データ要素を追加]**」を選択します。
 
@@ -85,24 +85,24 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 
 1. **[!UICONTROL データ要素タイプ]** として、「`Identity map`」を選択します
 
-1. **[!UICONTROL 名前空間]** として、`lumaCrmId`ID の設定 [&#x200B; レッスンで作成した &#x200B;](configure-identities.md) 名前空間を選択します。 ドロップダウンに表示されない場合は、と入力します。
+1. **[!UICONTROL 名前空間]** として、`lumaCrmId`ID の設定 [ レッスンで作成した ](configure-identities.md) 名前空間を選択します。 ドロップダウンに表示されない場合は、と入力します。
 
-1. **[!UICONTROL ID]** として、`User Id` データ要素の作成 [&#x200B; レッスンで作成した &#x200B;](create-data-elements.md#create-data-elements-to-capture-the-data-layer) データ要素を選択します。
+1. **[!UICONTROL ID]** として、`User Id` データ要素の作成 [ レッスンで作成した ](create-data-elements.md#create-data-elements-to-capture-the-data-layer) データ要素を選択します。
 
 1. **[!UICONTROL 認証状態]** として、「**[!UICONTROL 認証済み]**」を選択します
 1. **[!UICONTROL プライマリ]** を選択
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![&#x200B; データ収集インターフェイス &#x200B;](assets/identity-id-namespace.png)
+   ![ データ収集インターフェイス ](assets/identity-id-namespace.png)
 
 >[!IMPORTANT]
 >
-> Adobeでは、`Luma CRM Id` などの人物を表す ID を [!UICONTROL &#x200B; プライマリ &#x200B;] ID として送信することをお勧めします。
+> Adobeでは、`Luma CRM Id` などの人物を表す ID を [!UICONTROL  プライマリ ] ID として送信することをお勧めします。
 >
-> ID マップに人物識別子（例：`Luma CRM Id`）が含まれる場合、その人物識別子は [!UICONTROL &#x200B; プライマリ &#x200B;] ID になります。 それ以外の場合は、`ECID` が [!UICONTROL &#x200B; プライマリ &#x200B;] ID になります。
+> ID マップに人物識別子（例：`Luma CRM Id`）が含まれる場合、その人物識別子は [!UICONTROL  プライマリ ] ID になります。 それ以外の場合は、`ECID` が [!UICONTROL  プライマリ ] ID になります。
 >
-> さらに、Platform アプリケーションを使用しているお客様の場合、Adobeでは、グラフの折りたたみを防ぐために [ID グラフリンクルール &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) を実装することをお勧めします。
+> さらに、Platform アプリケーションを使用しているお客様の場合、Adobeでは、グラフの折りたたみを防ぐために [ID グラフリンクルール ](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) を実装することをお勧めします。
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 これらの手順の最後で、次のデータ要素が作成されているはずです。
 
 | コア拡張機能のデータ要素 | Platform Web SDK Extension のデータ要素 |
------------------------------|-------------------------------
+|-----------------------------|-------------------------------|
 | `Ecommerce Cart Products` | `Data Variable` |
 | `Ecommerce Product Category` | `Identity Map` |
 | `Ecommerce Product Id` | `XDM Variable` |
@@ -127,4 +127,4 @@ FPID cookie を設定すると、その値を取得し、イベントデータ�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

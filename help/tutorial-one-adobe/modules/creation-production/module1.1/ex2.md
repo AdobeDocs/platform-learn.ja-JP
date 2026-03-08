@@ -1,32 +1,32 @@
 ---
-title: Microsoft Azure と事前署名済み URL を使用したFirefly プロセスの最適化
-description: Microsoft Azure と事前署名済み URL を使用してFirefly プロセスを最適化する方法について説明します
+title: Microsoft Azureと事前署名済み URL を使用したFirefly プロセスの最適化
+description: Microsoft Azureと事前署名済み URL を使用してFirefly プロセスを最適化する方法について説明します
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 1%
 
 ---
 
-# 1.1.2 Microsoft Azure と事前署名済み URL を使用したFirefly プロセスの最適化
+# 1.1.2 Microsoft Azureと事前署名済み URL を使用したFirefly プロセスの最適化
 
-Microsoft Azure と事前署名済み URL を使用してFirefly プロセスを最適化する方法について説明します。
+Microsoft Azureと事前署名済み URL を使用してFirefly プロセスを最適化する方法について説明します。
 
 ## 1.1.2.1 事前署名済み URL とは
 
 事前署名済み URL は、ストレージの場所にある特定のオブジェクトへの一時的なアクセスを許可する URL です。 URL を使用すると、ユーザーは例えば、オブジェクトの読み取りや書き込み（または既存のオブジェクトの更新）を行うことができます。 URL には、アプリケーションで設定される特定のパラメーターが含まれます。
 
-コンテンツのサプライチェーン自動化を作成するコンテキストでは、特定のユースケースに対して実行する必要があるファイル操作が複数あることがよくあります。 例えば、ファイルの背景を変更したり、様々なレイヤーのテキストを変更したりする必要がある場合があります。 すべてのファイル操作を同時に実行できるとは限らないため、複数手順のアプローチが必要になります。 各中間ステップの後で、出力は次のステップを実行するために必要な一時ファイルになります。 その次の手順を実行すると、一時ファイルはすぐに値を失い、多くの場合、不要になるので削除する必要があります。
+コンテンツのsupply chain自動処理を作成するコンテキストでは、多くの場合、特定のユースケースに対して複数のファイル操作を行う必要があります。 例えば、ファイルの背景を変更したり、様々なレイヤーのテキストを変更したりする必要がある場合があります。 すべてのファイル操作を同時に実行できるとは限らないため、複数手順のアプローチが必要になります。 各中間ステップの後で、出力は次のステップを実行するために必要な一時ファイルになります。 その次の手順を実行すると、一時ファイルはすぐに値を失い、多くの場合、不要になるので削除する必要があります。
 
 Adobe Firefly Servicesは現在、次のドメインをサポートしています。
 
 - AmazonAWS: *.amazonaws.com
-- Microsoft Azure: *.windows.net
+- MicrosoftAzure: *.windows.net
 - Dropbox: *.dropboxusercontent.com
 
 クラウドストレージソリューションがよく使用される理由は、作成されている中間アセットの価値が急速に失われるからです。 事前署名された URL で解決される問題は、多くの場合、商品ストレージソリューションで解決するのが最善です。通常、これは上記のクラウドサービスの 1 つです。
@@ -40,54 +40,54 @@ Adobe エコシステム内には、Frame.io、Workfront Fusion、Adobe Experien
 
 事前署名済み URL は、ユーザーへのアクセスを制限するために次の 3 つのパラメーターを使用します。
 
-- ストレージの場所：AWS S3 バケットの場所、コンテナを使用したMicrosoft Azure ストレージアカウントの場所を指定できます
+- ストレージの場所：AWS S3 バケットの場所、コンテナを含むMicrosoft Azure ストレージアカウントの場所を指定できます
 - ファイル名：読み取り、更新、削除する必要がある特定のファイル。
 - クエリ文字列パラメーター：クエリ文字列パラメーターは、常に疑問符で始まり、後に複雑な一連のパラメーターが続きます
 
 例：
 
 - **AmazonAWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
-- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+- **MicrosoftAzure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
 
-## 1.1.2.2 Azure サブスクリプションを作成するには
-
->[!NOTE]
->
->既存の Azure サブスクリプションがある場合は、この手順をスキップできます。 その場合は次の演習に進んでください。
+## Azure サブスクリプションを作成で 1.1.2.2 ない
 
 >[!NOTE]
 >
->このチュートリアルに従って対面式のガイド付きワークショップまたはガイド付きのオンデマンドトレーニングを行う場合は、Microsoft Azure ストレージアカウントに既にアクセスしている可能性があります。 その場合、自分でアカウントを作成する必要はありません。トレーニングの一部として提供されたアカウントを使用してください。
+>既にAzure サブスクリプションがある場合は、この手順をスキップできます。 その場合は次の演習に進んでください。
 
-[https://portal.azure.com](https://portal.azure.com){target="_blank"} に移動し、Azure アカウントでログインします。 お持ちでない場合は、個人の電子メール アドレスを使用して Azure アカウントを作成してください。
+>[!NOTE]
+>
+>このチュートリアルを対面でのガイド付きワークショップまたはガイド付きオンデマンドトレーニングの一部として行っている場合は、Microsoft Azure ストレージアカウントに既にアクセスしている可能性があります。 その場合、自分でアカウントを作成する必要はありません。トレーニングの一部として提供されたアカウントを使用してください。
 
-![Azure ストレージ &#x200B;](./images/02azureportalemail.png){zoomable="yes"}
+[https://portal.azure.com](https://portal.azure.com){target="_blank"} に移動し、Azure アカウントでログインします。 お持ちでない場合は、個人のメールアドレスを使用してAzure アカウントを作成してください。
+
+![Azure ストレージ ](./images/02azureportalemail.png){zoomable="yes"}
 
 ログインに成功すると、次の画面が表示されます。
 
-![Azure ストレージ &#x200B;](./images/03azureloggedin.png){zoomable="yes"}
+![Azure ストレージ ](./images/03azureloggedin.png){zoomable="yes"}
 
-左側のメニューで **すべてのリソース** を選択すると、まだ購読していない場合は Azure サブスクリプション画面が表示されます。
+左側のメニューで **すべてのリソース** を選択し、まだ購読していない場合は、Azure購読画面が表示されます。
 
-まだ購読していない場合は、「**Azure 無料体験版で開始**」を選択します。
+まだ購読していない場合は、「**Azure無料体験版で開始** を選択します。
 
-![Azure ストレージ &#x200B;](./images/04azurestartsubscribe.png){zoomable="yes"}
+![Azure ストレージ ](./images/04azurestartsubscribe.png){zoomable="yes"}
 
-Azure のサブスクリプションフォームに入力し、アクティベーション用に携帯電話とクレジットカードを提供します（30 日間無料利用枠があり、アップグレードしない限り料金は発生しません）。
+Azureのサブスクリプションフォームに入力し、アクティベーション用に携帯電話とクレジットカードを提供します（30 日間無料利用枠があり、アップグレードしない限り料金は発生しません）。
 
 購読プロセスが完了したら、問題ありません。
 
-![Azure ストレージ &#x200B;](./images/06azuresubscriptionok.png){zoomable="yes"}
+![Azure ストレージ ](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.3 Azure ストレージアカウントを作成するには
+## Azure ストレ 1.1.2.3 ジアカウントの作成
 
 `storage account` を検索し、「**ストレージアカウント**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/azs1.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs1.png){zoomable="yes"}
 
 「**+作成**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/azs2.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs2.png){zoomable="yes"}
 
 **サブスクリプション** を選択し、**リソースグループ** を選択（または作成）します。
 
@@ -95,57 +95,57 @@ Azure のサブスクリプションフォームに入力し、アクティベ�
 
 「**レビューと作成**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/azs3.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs3.png){zoomable="yes"}
 
 「**作成**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/azs4.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs4.png){zoomable="yes"}
 
 確認後、「**リソースに移動**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/azs5.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs5.png){zoomable="yes"}
 
 これで、Azure ストレージアカウントを使用する準備が整いました。
 
-![Azure ストレージ &#x200B;](./images/azs6.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs6.png){zoomable="yes"}
 
 **データストレージ** を選択し、**コンテナ** に移動します。 「**+ コンテナ**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/azs7.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs7.png){zoomable="yes"}
 
 名前に `--aepUserLdap--` を使用し、「作成 **を選択し** す。
 
-![Azure ストレージ &#x200B;](./images/azs8.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs8.png){zoomable="yes"}
 
 これで、コンテナを使用する準備が整いました。
 
-![Azure ストレージ &#x200B;](./images/azs9.png){zoomable="yes"}
+![Azure ストレージ ](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.4 Azure ストレージエクスプローラーのインストール
+## Azure ストレージエクスプローラーのインストールの 1.1.2.4
 
-[Microsoft Azure ストレージエクスプローラーをダウンロードしてファイルを管理 &#x200B;](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} ます。 特定の OS に適したバージョンを選択し、ダウンロードしてインストールします。
+[Microsoft Azure Storage Explorer をダウンロードしてファイルを管理 ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} ます。 特定の OS に適したバージョンを選択し、ダウンロードしてインストールします。
 
-![Azure ストレージ &#x200B;](./images/az10.png){zoomable="yes"}
+![Azure ストレージ ](./images/az10.png){zoomable="yes"}
 
-アプリケーションを開き、「**Azure でログイン**」を選択します。
+アプリケーションを開き、「**Azureでログイン**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az11.png){zoomable="yes"}
+![Azure ストレージ ](./images/az11.png){zoomable="yes"}
 
 **購読** を選択します。
 
-![Azure ストレージ &#x200B;](./images/az12.png){zoomable="yes"}
+![Azure ストレージ ](./images/az12.png){zoomable="yes"}
 
-**Azure** を選択してから **次へ** を選択します。
+**Azure** を選択してから、**次へ** を選択します。
 
-![Azure ストレージ &#x200B;](./images/az13.png){zoomable="yes"}
+![Azure ストレージ ](./images/az13.png){zoomable="yes"}
 
 Microsoft Azure アカウントを選択し、認証プロセスを完了します。
 
-![Azure ストレージ &#x200B;](./images/az14.png){zoomable="yes"}
+![Azure ストレージ ](./images/az14.png){zoomable="yes"}
 
 認証後、このメッセージが表示されます。
 
-![Azure ストレージ &#x200B;](./images/az15.png){zoomable="yes"}
+![Azure ストレージ ](./images/az15.png){zoomable="yes"}
 
 Microsoft Azure ストレージエクスプローラーアプリに戻り、サブスクリプションを選択して **エクスプローラーを開く** を選択します。
 
@@ -153,19 +153,19 @@ Microsoft Azure ストレージエクスプローラーアプリに戻り、サ�
 >
 >アカウントが表示されない場合は、メールアドレスの横にある **歯車** アイコンをクリックし、「**フィルター解除**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az16.png){zoomable="yes"}
+![Azure ストレージ ](./images/az16.png){zoomable="yes"}
 
 ストレージアカウントは、「**ストレージアカウント** の下に表示されます。
 
-![Azure ストレージ &#x200B;](./images/az17.png){zoomable="yes"}
+![Azure ストレージ ](./images/az17.png){zoomable="yes"}
 
 **Blob コンテナ** を開き、前の演習で作成したコンテナを選択します。
 
-![Azure ストレージ &#x200B;](./images/az18.png){zoomable="yes"}
+![Azure ストレージ ](./images/az18.png){zoomable="yes"}
 
 ## 1.1.2.5 手動でのファイルのアップロードと、スタイル参照としての画像ファイルの使用
 
-選択した画像ファイルまたは [&#x200B; このファイル &#x200B;](./images/gradient.jpg){target="_blank"} をコンテナにアップロードします。
+選択した画像ファイルまたは [ このファイル ](./images/gradient.jpg){target="_blank"} をコンテナにアップロードします。
 
 >[!NOTE]
 >
@@ -174,48 +174,48 @@ Microsoft Azure ストレージエクスプローラーアプリに戻り、サ�
 >- image/png
 >- image/webp
 
-![Azure ストレージ &#x200B;](./images/gradient.jpg)
+![Azure ストレージ ](./images/gradient.jpg)
 
 アップロードが完了すると、コンテナに表示されます。
 
-![Azure ストレージ &#x200B;](./images/az19.png){zoomable="yes"}
+![Azure ストレージ ](./images/az19.png){zoomable="yes"}
 
 `gradient.jpg` を右クリックして、「**共有アクセス署名の取得**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az20.png){zoomable="yes"}
+![Azure ストレージ ](./images/az20.png){zoomable="yes"}
 
 **権限** では、**読み取り** のみが必要です。 「**作成**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az21.png){zoomable="yes"}
+![Azure ストレージ ](./images/az21.png){zoomable="yes"}
 
 Fireflyへの次の API リクエストで、この画像ファイルの事前署名済み URL をコピーします。
 
-![Azure ストレージ &#x200B;](./images/az22.png){zoomable="yes"}
+![Azure ストレージ ](./images/az22.png){zoomable="yes"}
 
 Postmanに戻り、リクエスト **POST - Firefly - T2I （styleref） V3** を開きます。
 これは **本文** に表示されます。
 
-![Azure ストレージ &#x200B;](./images/az23.png){zoomable="yes"}
+![Azure ストレージ ](./images/az23.png){zoomable="yes"}
 
 プレースホルダーの URL を画像ファイルの事前署名済み URL に置き換えて、「**送信**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az24.png){zoomable="yes"}
+![Azure ストレージ ](./images/az24.png){zoomable="yes"}
 
 ブラウザーで応答のFirefly Servicesの新しい画像を開きます。
 
-![Azure ストレージ &#x200B;](./images/az25.png){zoomable="yes"}
+![Azure ストレージ ](./images/az25.png){zoomable="yes"}
 
 別の画像には `horses in a field` が表示されますが、今回はスタイル参照として指定した画像ファイルとスタイルが似ています。
 
-![Azure ストレージ &#x200B;](./images/az26.png){zoomable="yes"}
+![Azure ストレージ ](./images/az26.png){zoomable="yes"}
 
 ## 1.1.2.6 プログラムによるファイルのアップロード
 
-Azure ストレージアカウントでプログラムによるファイルのアップロードを使用するには、ファイルを書き込むための権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。
+Azure ストレージアカウントでプログラムによるファイルのアップロードを使用するには、ファイルへの書き込みを許可する新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。
 
-Azure ストレージエクスプローラーで、コンテナを右クリックし、「**共有アクセス署名の取得**」を選択します。
+Azure ストレージエクスプローラーで、コンテナを右クリックし、**Get Shared Access Signature** を選択します。
 
-![Azure ストレージ &#x200B;](./images/az27.png){zoomable="yes"}
+![Azure ストレージ ](./images/az27.png){zoomable="yes"}
 
 **権限** で、次の必要な権限を選択します。
 
@@ -227,37 +227,37 @@ Azure ストレージエクスプローラーで、コンテナを右クリッ�
 
 「**作成**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az28.png){zoomable="yes"}
+![Azure ストレージ ](./images/az28.png){zoomable="yes"}
 
 **共有アクセス署名** を受け取ったら、「**コピー**」を選択して URL をコピーします。
 
-![Azure ストレージ &#x200B;](./images/az29.png){zoomable="yes"}
+![Azure ストレージ ](./images/az29.png){zoomable="yes"}
 
 **SAS-token URL** を使用して、Azure ストレージアカウントにファイルをアップロードします。
 
 Postmanに戻り、フォルダー **FF - Firefly Services テクニカルインサイダー** を選択し、「**Firefly**」フォルダーで「**...**」を選択してから「**リクエストを追加**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az30.png){zoomable="yes"}
+![Azure ストレージ ](./images/az30.png){zoomable="yes"}
 
 空のリクエストの名前を **Azure ストレージアカウントにファイルをアップロード** に変更し、**リクエストタイプ** を **PUT** に変更して、URL セクションに SAS-token URL を貼り付け、「**本文**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az31.png){zoomable="yes"}
+![Azure ストレージ ](./images/az31.png){zoomable="yes"}
 
-次に、ローカルマシンからファイルを選択するか、[&#x200B; こちら &#x200B;](./images/gradient2-p.jpg){target="_blank"} にある別の画像ファイルを使用します。
+次に、ローカルマシンからファイルを選択するか、[ こちら ](./images/gradient2-p.jpg){target="_blank"} にある別の画像ファイルを使用します。
 
-![&#x200B; グラデーション ファイル &#x200B;](./images/gradient2-p.jpg)
+![ グラデーション ファイル ](./images/gradient2-p.jpg)
 
 **本文** で、「**バイナリ**」、「**ファイルを選択**」の順に選択し、「**+ ローカルマシンからの新しいファイル**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az32.png){zoomable="yes"}
+![Azure ストレージ ](./images/az32.png){zoomable="yes"}
 
 目的のファイルを選択し、「**開く**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az33.png){zoomable="yes"}
+![Azure ストレージ ](./images/az33.png){zoomable="yes"}
 
-次に、疑問符 **？の前にカーソルを置いて、Azure ストレージアカウントで使用するファイル名を指定しますURL で次のように** します。
+Azure次に、クエスチョンマーク「**?URL で次のように** します。
 
-![Azure ストレージ &#x200B;](./images/az34.png){zoomable="yes"}
+![Azure ストレージ ](./images/az34.png){zoomable="yes"}
 
 URL は現在このように表示されていますが、変更する必要があります。
 
@@ -267,38 +267,38 @@ URL は現在このように表示されていますが、変更する必要が�
 
 `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-![Azure ストレージ &#x200B;](./images/az34a.png){zoomable="yes"}
+![Azure ストレージ ](./images/az34a.png){zoomable="yes"}
 
 次に、**ヘッダー** に移動して、次のように手動で新しいヘッダーを追加します。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-ms-blob-type` | `BlockBlob` |
 
 
-![Azure ストレージ &#x200B;](./images/az35.png){zoomable="yes"}
+![Azure ストレージ ](./images/az35.png){zoomable="yes"}
 
 **認証** に移動し、**認証タイプ** を **認証なし** に設定して、**送信** を選択します。
 
-![Azure ストレージ &#x200B;](./images/az36.png){zoomable="yes"}
+![Azure ストレージ ](./images/az36.png){zoomable="yes"}
 
 次に、この空の応答がPostmanに表示され、ファイルのアップロードが問題ありません。
 
-![Azure ストレージ &#x200B;](./images/az37.png){zoomable="yes"}
+![Azure ストレージ ](./images/az37.png){zoomable="yes"}
 
 Azure ストレージエクスプローラーに戻り、フォルダーのコンテンツを更新すると、新しくアップロードされたファイルが表示されます。
 
-![Azure ストレージ &#x200B;](./images/az38.png){zoomable="yes"}
+![Azure ストレージ ](./images/az38.png){zoomable="yes"}
 
 ## 1.1.2.7 プログラムによるファイル使用
 
-Azure ストレージアカウントからプログラムによって長期的にファイルを読み取るには、ファイルを読み取ることができる権限を持つ新しい **共有アクセス署名（SAS）** トークンを作成する必要があります。 技術的には、前の演習で作成した SAS トークンを使用できますが、**読み取り** 権限のみを持つ別のトークンと、**書き込み** 権限のみを持つ別のトークンを用意することをお勧めします。
+Azure ストレージアカウントからプログラムによって長期的にファイルを読み取るには、ファイルを読み取るためのアクセス許可を持つ新しい **Shared Access Signature （SAS）** トークンを作成する必要があります。 技術的には、前の演習で作成した SAS トークンを使用できますが、**読み取り** 権限のみを持つ別のトークンと、**書き込み** 権限のみを持つ別のトークンを用意することをお勧めします。
 
 ### 長期読み取り SAS トークン
 
-Azure ストレージエクスプローラーに戻り、コンテナを右クリックして **共有アクセス署名の取得** を選択します。
+Azure ストレージエクスプローラーに戻り、コンテナを右クリックして **Get Shared Access Signature** を選択します。
 
-![Azure ストレージ &#x200B;](./images/az27.png){zoomable="yes"}
+![Azure ストレージ ](./images/az27.png){zoomable="yes"}
 
 **権限** で、次の必要な権限を選択します。
 
@@ -309,11 +309,11 @@ Azure ストレージエクスプローラーに戻り、コンテナを右ク�
 
 「**作成**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az100.png){zoomable="yes"}
+![Azure ストレージ ](./images/az100.png){zoomable="yes"}
 
 URL をコピーしてコンピューター上のファイルに書き留め、読み取り権限を持つ長期の SAS トークンを取得します。
 
-![Azure ストレージ &#x200B;](./images/az101.png){zoomable="yes"}
+![Azure ストレージ ](./images/az101.png){zoomable="yes"}
 
 URL は次のようになります。
 
@@ -327,9 +327,9 @@ URL は次のようになります。
 
 ### 長期書き込み SAS トークン
 
-Azure ストレージエクスプローラーに戻り、コンテナを右クリックして **共有アクセスの署名を取得** を選択します。
+Azure ストレージエクスプローラーに戻り、コンテナを右クリックして **Get Shared Access Signature** を選択します。
 
-![Azure ストレージ &#x200B;](./images/az27.png){zoomable="yes"}
+![Azure ストレージ ](./images/az27.png){zoomable="yes"}
 
 **権限** で、次の必要な権限を選択します。
 
@@ -343,11 +343,11 @@ Azure ストレージエクスプローラーに戻り、コンテナを右ク�
 
 「**作成**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az102.png){zoomable="yes"}
+![Azure ストレージ ](./images/az102.png){zoomable="yes"}
 
 URL をコピーしてコンピューター上のファイルに書き込み、読み取り/書き込み権限を持つ長期の SAS トークンを取得します。
 
-![Azure ストレージ &#x200B;](./images/az103.png){zoomable="yes"}
+![Azure ストレージ ](./images/az103.png){zoomable="yes"}
 
 URL は次のようになります。
 
@@ -375,7 +375,7 @@ URL は次のようになります。
 
 Postmanで、「**環境**」を選択し、「**すべての変数**」を開いて「**環境**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az104.png){zoomable="yes"}
+![Azure ストレージ ](./images/az104.png){zoomable="yes"}
 
 表示されるテーブルにこれらの 4 つの変数を作成し、列 **初期値** および **現在の値** に対して、特定の個人の値を入力します。
 
@@ -386,7 +386,7 @@ Postmanで、「**環境**」を選択し、「**すべての変数**」を開�
 
 「**保存**」を選択します。
 
-![Azure ストレージ &#x200B;](./images/az105.png){zoomable="yes"}
+![Azure ストレージ ](./images/az105.png){zoomable="yes"}
 
 ### PostBuster の変数
 
@@ -401,23 +401,23 @@ Postmanで、「**環境**」を選択し、「**すべての変数**」を開�
 
 PostBuster を開きます。 「**Base Environment**」を選択し、「**edit**」アイコンをクリックして Base Environment を開きます。
 
-![Azure ストレージ &#x200B;](./images/pbbe1.png)
+![Azure ストレージ ](./images/pbbe1.png)
 
 次に、4 つの空の変数が表示されます。 Azure ストレージアカウントの詳細をここに入力します。
 
-![Azure ストレージ &#x200B;](./images/pbbe2.png)
+![Azure ストレージ ](./images/pbbe2.png)
 
 ベース環境ファイルは次のようになります。 「**閉じる**」をクリックします。
 
-![Azure ストレージ &#x200B;](./images/pbbe3.png)
+![Azure ストレージ ](./images/pbbe3.png)
 
 ### 設定のテスト
 
-前の演習の 1 つで、リクエスト **2&rbrace;Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
+前の演習の 1 つで、リクエスト **2}Firefly - T2I （styleref） V3** の **本文」は次のようになります。**
 
 `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
-![Azure ストレージ &#x200B;](./images/az24.png){zoomable="yes"}
+![Azure ストレージ ](./images/az24.png){zoomable="yes"}
 
 URL を次のように変更します。
 
@@ -425,20 +425,20 @@ URL を次のように変更します。
 
 「**送信**」を選択して、加えた変更をテストします。
 
-![Azure ストレージ &#x200B;](./images/az106.png){zoomable="yes"}
+![Azure ストレージ ](./images/az106.png){zoomable="yes"}
 
 変数が正しく設定されている場合は、画像 URL が返されます。
 
-![Azure ストレージ &#x200B;](./images/az107.png){zoomable="yes"}
+![Azure ストレージ ](./images/az107.png){zoomable="yes"}
 
 画像 URL を開いて画像を確認します。
 
-![Azure ストレージ &#x200B;](./images/az108.jpg)
+![Azure ストレージ ](./images/az108.jpg)
 
 ## 次の手順
 
-[Photoshop API の操作 &#x200B;](./ex3.md){target="_blank"} に移動します。
+[Photoshop API の操作 ](./ex3.md){target="_blank"} に移動します。
 
-[Adobe Firefly Servicesの概要 &#x200B;](./firefly-services.md){target="_blank"} に戻る
+[Adobe Firefly Servicesの概要 ](./firefly-services.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

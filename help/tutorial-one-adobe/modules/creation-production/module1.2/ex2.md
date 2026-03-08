@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 ![WF Fusion](./images/wffusion69.png)
 
 | キー | 値の例 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER` | `vangeluw` |
 | `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 変数を見つけるには、Postmanに戻って **環境変数** を開きます。
 
-![Azure ストレージ &#x200B;](./../module1.1/images/az105.png)
+![Azure ストレージ ](./../module1.1/images/az105.png)
 
 これらの値をWorkfront Fusion にコピーし、これら 4 つの変数のそれぞれに新しい項目を追加します。
 
@@ -149,7 +149,7 @@ Workfront Fusion に戻ると、カスタム Webhook に「**正常に決定さ�
 - **クライアント ID**:**という名前のAdobe I/O プロジェクトから** クライアント ID`--aepUserLdap-- - One Adobe tutorial` をコピーします。
 - **クライアント秘密鍵**: **クライアント秘密鍵** を `--aepUserLdap-- - One Adobe tutorial` という名前のAdobe I/O プロジェクトからコピーします。
 
-Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [&#x200B; で確認でき &#x200B;](https://developer.adobe.com/console/projects.){target="_blank"} す。
+Adobe I/O プロジェクトの **クライアント ID** と **クライアントシークレット** は、（こちら [ で確認でき ](https://developer.adobe.com/console/projects.){target="_blank"} す。
 
 ![WF Fusion](./images/wffc20.png)
 
@@ -224,7 +224,7 @@ URL をコピーして、ブラウザーで貼り付けます。 Postman リク�
 
 ![WF Fusion](./images/wffc21.png)
 
-次に、Fusion で操作するPSD ファイルの場所を入力する必要があります。 **ストレージ** には **Azure** を選択し、**ファイルの場所** には `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}` と入力します。 2 番目の `/` の隣にカーソルを置きます。 次に、使用可能な変数を確認し、下にスクロールして変数 **psdTemplate** を見つけます。 変数 **psdTemplate** をクリックして選択します。
+次に、Fusion で操作するPSD ファイルの場所を入力する必要があります。 **ストレージ** の場合は **Azure** を選択し、**ファイルの場所** の場合は `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}` と入力します。 2 番目の `/` の隣にカーソルを置きます。 次に、使用可能な変数を確認し、下にスクロールして変数 **psdTemplate** を見つけます。 変数 **psdTemplate** をクリックして選択します。
 
 ![WF Fusion](./images/wffc22.png)
 
@@ -262,7 +262,7 @@ Workfront Fusion ダイアログに、**2048x2048-background** という名前�
 
 ![WF Fusion](./images/wffc30.png)
 
-**ストレージ** の場合は **Azure** を選択し、この `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` を **ファイルの場所** の下に貼り付けて、**タイプ** の下の **vnd.adobe.photoshop** を選択します。 クリックして **詳細設定を表示** を有効にします。
+「**Azure**」を「**ストレージ**」に選択し、「`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` ファイルの場所 **にこの** を貼り付け、「**タイプ**」で「**vnd.adobe.photoshop**」を選択します。 クリックして **詳細設定を表示** を有効にします。
 
 ![WF Fusion](./images/wffc31.png)
 
@@ -309,7 +309,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc37.png)
 
-**入力ファイル** の場合、「入力ファイルストレージ **に** Azure **&#x200B;**&#x200B;を選択し、前のリクエストの出力を必ず選択してください **Adobe Photoshop - PSDの編集を適用**。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュールのシーケンス番号に置き換えます。Adobe Photoshop - PSDの編集を適用）
+**入力ファイル** に対して、**入力ファイルストレージ** に対して **Azure** を選択し、以前のリクエストの出力である **Adobe Photoshop - PSDの編集を適用** を選択します。次のように定義できます。``{{XX.data[].`_links`.renditions[].href}}`` （XX を前のモジュール Adobe Photoshop - PSDの編集を適用のシーケンス番号に置き換えます）。
 
 次に、**レイヤー** の下の「**+項目を追加**」をクリックして、更新する必要があるテキストレイヤーの追加を開始します。
 
@@ -349,7 +349,7 @@ Postmanに移動し、リクエストのプロンプトを確認して、「**�
 
 ![WF Fusion](./images/wffc40d.png)
 
-**出力** が表示されるまで下にスクロールします。 **ストレージ** については、「**Azure**」を選択します。 **ファイルの場所** には、次の場所を入力します。 生成される各ファイルの名前が必ず一意になるようにするために使用されるファイル名に、変数 `{{timestamp}}` が追加されることに注意してください。 また、**タイプ** を **vnd.adobe.photoshop** に設定します。
+**出力** が表示されるまで下にスクロールします。 **ストレージ** の場合は、**Azure** を選択します。 **ファイルの場所** には、次の場所を入力します。 生成される各ファイルの名前が必ず一意になるようにするために使用されるファイル名に、変数 `{{timestamp}}` が追加されることに注意してください。 また、**タイプ** を **vnd.adobe.photoshop** に設定します。
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
@@ -441,8 +441,8 @@ Azure ストレージエクスプローラーを使用すると、Azure スト�
 
 ## 次の手順
 
-[1.2.3 Frame.io とWorkfront Fusion に移動します &#x200B;](./ex3.md){target="_blank"}
+[1.2.3 Frame.io とWorkfront Fusion に移動します ](./ex3.md){target="_blank"}
 
-[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

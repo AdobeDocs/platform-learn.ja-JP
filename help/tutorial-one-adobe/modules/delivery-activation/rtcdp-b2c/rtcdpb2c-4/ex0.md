@@ -1,13 +1,13 @@
 ---
-title: Microsoft Azure Event Hub へのセグメントのアクティベーション - Microsoft Azure 環境を設定します
-description: Microsoft Azure Event Hub へのセグメントのアクティベーション - Microsoft Azure 環境を設定します
+title: Microsoft Azure Event Hub へのセグメントのアクティベーション - Microsoft Azure環境を設定します
+description: Microsoft Azure Event Hub へのセグメントのアクティベーション - Microsoft Azure環境を設定します
 kt: 5342
 doc-type: tutorial
 exl-id: 71200024-a56b-4705-adde-c109b4e86ea1
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '31'
-ht-degree: 6%
+source-wordcount: '26'
+ht-degree: 7%
 
 ---
 
@@ -15,4 +15,6 @@ ht-degree: 6%
 
 テスト
 
-[すべてのモジュールに戻る](./../../../overview.md)
+<!--
+[Go Back to All Modules](./../../../overview.md)
+-->

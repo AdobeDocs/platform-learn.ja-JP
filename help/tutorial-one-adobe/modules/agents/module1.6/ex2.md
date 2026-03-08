@@ -3,7 +3,8 @@ title: AEM MCP サーバーとカーソル
 description: AEM MCP サーバーとカーソル
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 1%
@@ -42,49 +43,49 @@ ht-degree: 1%
 
 デスクトップに新しい空のフォルダーを作成します。
 
-![&#x200B; カーソル + AEM](./images/cursorai1.png)
+![ カーソル + AEM](./images/cursorai1.png)
 
 カーソルを開きます。 **プロジェクトを開く** をクリックします。
 
-![&#x200B; カーソル + AEM](./images/cursorai2.png)
+![ カーソル + AEM](./images/cursorai2.png)
 
 前に作成したフォルダーを選択し、「**開く**」をクリックします。
 
-![&#x200B; カーソル + AEM](./images/cursorai3.png)
+![ カーソル + AEM](./images/cursorai3.png)
 
 **はい、作成者を信頼します** をクリックします。
 
-![&#x200B; カーソル + AEM](./images/cursorai4.png)
+![ カーソル + AEM](./images/cursorai4.png)
 
 この画像が表示されます。 キーボードショートカット `Cmd + Shift + J` を使用して、カーソル設定を開きます。 この画像が表示されます。 **ツールと MCP** に移動します。
 
-![&#x200B; カーソル + AEM](./images/cursorai5.png)
+![ カーソル + AEM](./images/cursorai5.png)
 
 [**+ New MCP Server**] をクリックします。
 
-![&#x200B; カーソル + AEM](./images/cursorai6.png)
+![ カーソル + AEM](./images/cursorai6.png)
 
 次の MCP サーバーをファイル **mcp.json** に追加します。 このファイルには既に他の MCP サーバが指定されている可能性があります。これらを削除せずに、以下の新しい行を追加してください。 変更を保存します。
 
 ```json
 "aem": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
-	}
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
+    }
 ```
 
-![&#x200B; カーソル + AEM](./images/cursorai7.png)
+![ カーソル + AEM](./images/cursorai7.png)
 
 タブ **カーソル設定** に戻ります。 **aem** というツールが MCP サーバーのリストに追加されました。 **接続** をクリックして、Adobe アカウントを使用して認証します。
 
-![&#x200B; カーソル + AEM](./images/cursorai8.png)
+![ カーソル + AEM](./images/cursorai8.png)
 
 このメッセージが表示されたら、「**開く**」をクリックします。 次に、ブラウザーで認証する必要があります。
 
-![&#x200B; カーソル + AEM](./images/cursorai9.png)
+![ カーソル + AEM](./images/cursorai9.png)
 
 認証が成功すると、次のように表示されます。
 
-![&#x200B; カーソル + AEM](./images/cursorai10.png)
+![ カーソル + AEM](./images/cursorai10.png)
 
 **Cursor Settings** タブと **mcp.json** タブを閉じます。 次のプロンプトをチャットに貼り付けて、「**送信**」をクリックします。
 
@@ -92,17 +93,17 @@ ht-degree: 1%
 I just created a new custom mcp server named 'aem'. what can I do with that?
 ```
 
-![&#x200B; カーソル + AEM](./images/cursorai11.png)
+![ カーソル + AEM](./images/cursorai11.png)
 
 **実行** をクリックします。
 
-![&#x200B; カーソル + AEM](./images/cursorai12.png)
+![ カーソル + AEM](./images/cursorai12.png)
 
 その後、同様の応答が表示されます。
 
-![&#x200B; カーソル + AEM](./images/cursorai13.png)
+![ カーソル + AEM](./images/cursorai13.png)
 
-![&#x200B; カーソル + AEM](./images/cursorai14.png)
+![ カーソル + AEM](./images/cursorai14.png)
 
 ご覧のように、前の演習で AI アシスタントを使用して可能だったものと比較して、カーソルの MCP サーバーを通じて同様の機能が公開されます。
 
@@ -112,7 +113,7 @@ I just created a new custom mcp server named 'aem'. what can I do with that?
 List AEM Author instances
 ```
 
-![&#x200B; カーソル + AEM](./images/cursorai15.png)
+![ カーソル + AEM](./images/cursorai15.png)
 
 次のようなメッセージが表示されます。 使用する環境を検索し、次のプロンプトを入力して「**送信**」をクリックします。
 
@@ -120,11 +121,11 @@ List AEM Author instances
 use environment number X
 ```
 
-![&#x200B; カーソル + AEM](./images/cursorai16.png)
+![ カーソル + AEM](./images/cursorai16.png)
 
 この画像が表示されます。
 
-![&#x200B; カーソル + AEM](./images/cursorai17.png)
+![ カーソル + AEM](./images/cursorai17.png)
 
 次のプロンプトを貼り付け、「**送信**」をクリックします。 このプロンプトで XXX を、前の演習でコピーした URL に置き換えます。
 
@@ -137,15 +138,15 @@ On the page https://author-p185022-e1936676.adobeaemcloud.com/content/CitiSignal
 - change the text '99.9% network reliability' to '99.998% network reliability'
 ```
 
-![&#x200B; カーソル + AEM](./images/cursorai18.png)
+![ カーソル + AEM](./images/cursorai18.png)
 
 1～2 分後、同様の応答が得られます。 URL をコピーし、ブラウザーでページを開きます。
 
-![&#x200B; カーソル + AEM](./images/cursorai19.png)
+![ カーソル + AEM](./images/cursorai19.png)
 
 この画像が表示されます。
 
-![&#x200B; カーソル + AEM](./images/cursorai20.png)
+![ カーソル + AEM](./images/cursorai20.png)
 
 次のプロンプトを入力し、「**送信**」をクリックします。
 
@@ -153,15 +154,15 @@ On the page https://author-p185022-e1936676.adobeaemcloud.com/content/CitiSignal
 promote the changes by creating a new launch and promoting it
 ```
 
-![&#x200B; カーソル + AEM](./images/cursorai21.png)
+![ カーソル + AEM](./images/cursorai21.png)
 
 1～2 分後、変更が昇格されました。
 
-![&#x200B; カーソル + AEM](./images/cursorai22.png)
+![ カーソル + AEM](./images/cursorai22.png)
 
 これで、変更が web サイトにライブで表示されるようになります。
 
-![&#x200B; カーソル + AEM](./images/cursorai23.png)
+![ カーソル + AEM](./images/cursorai23.png)
 
 AEM MCP サーバーのその他の機能については、ご自由に参照してください。
 
@@ -169,26 +170,26 @@ AEM MCP サーバーのその他の機能については、ご自由に参照し
 
 キーボードショートカット `Cmd + Shift + J` を使用して、カーソル設定を開きます。 この画像が表示されます。 **ツールと MCP** に移動します。 [**+ New MCP Server**] をクリックします。
 
-![&#x200B; カーソル + AEM](./images/cursoraiz5.png)
+![ カーソル + AEM](./images/cursoraiz5.png)
 
 次の MCP サーバーをファイル **mcp.json** に追加します。 このファイルには既に他の MCP サーバが指定されている可能性があります。これらを削除せずに、以下の新しい行を追加してください。 変更を保存します。
 
 ```
 ,
 "aem-discovery": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
 }
 ```
 
-![&#x200B; カーソル + AEM](./images/cursoraiz7.png)
+![ カーソル + AEM](./images/cursoraiz7.png)
 
 タブ **カーソル設定** に戻ります。 **aem** というツールが MCP サーバーのリストに追加されました。 **接続** をクリックして、Adobe アカウントを使用して認証します。
 
-![&#x200B; カーソル + AEM](./images/cursoraiz8.png)
+![ カーソル + AEM](./images/cursoraiz8.png)
 
 認証後、このメッセージが表示されます。
 
-![&#x200B; カーソル + AEM](./images/cursoraiz9.png)
+![ カーソル + AEM](./images/cursoraiz9.png)
 
 **Cursor Settings** タブと **mcp.json** タブを閉じます。 次のプロンプトをチャットに貼り付けて、「**送信**」をクリックします。
 
@@ -196,20 +197,20 @@ AEM MCP サーバーのその他の機能については、ご自由に参照し
 I just created a new custom mcp server named 'aem-discovery'. what can I do with that?
 ```
 
-![&#x200B; カーソル + AEM](./images/cursoraiz10.png)
+![ カーソル + AEM](./images/cursoraiz10.png)
 
 ```
 for the environment https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/, list all assets tagged with 'Spring 2026'
 ```
 
-![&#x200B; カーソル + AEM](./images/cursoraiz11.png)
+![ カーソル + AEM](./images/cursoraiz11.png)
 
 次のようなメッセージが表示されます。
 
-![&#x200B; カーソル + AEM](./images/cursoraiz12.png)
+![ カーソル + AEM](./images/cursoraiz12.png)
 
 ## 次の手順
 
-[AEMとエージェント &#x200B;](./aemagents.md){target="_blank"} に戻る
+[AEMとエージェント ](./aemagents.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: bbf82c32-44a5-4c17-aacf-48f7c0bf0ed8
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Experience Platformが、クロスチャネルジャーニーのためのオーディエンスの作成とアクティベーションをどのように強化するかについて説明します。
 
 <!-- 62_S655_3442541_49_adobes-approach-to-audience-strategy-and-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3459617/?learn=on&enablevpops=true&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3458225/?learn=on&enablevpops=true)

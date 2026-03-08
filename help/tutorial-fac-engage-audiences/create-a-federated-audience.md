@@ -3,14 +3,14 @@ title: フェデレーションされたオーディエンスの作成
 seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: フェデレーションされたオーディエンスの作成
 description: この演習では、Federated Audience Composition を使用して、Snowflake Data Warehouse からオーディエンスを作成します。
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -64,6 +64,6 @@ ht-degree: 1%
 
 この例では、商品とクレジット情報を使用して、Adobe Experience Platformからコピーを作成せずにSnowflakeのエンタープライズデータに直接アクセスしてオーディエンスを作成しました。 外部システムがクエリを処理すると、関連するメール、現在の製品、名の値のみがダウンストリームのアクティベーション用にオーディエンス定義に引き継がれます。 これは、RTCDPがサポートするすべての宛先に適用されます。
 
-オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/ja/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
+オーディエンス構成について詳しくは、[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"} を参照してください。
 
-これで、federated audience が作成されたので、[Experience Platformの S3 の宛先にマッピング &#x200B;](map-federated-audience-to-s3.md) します。
+これで、federated audience が作成されたので、[Experience Platformの S3 の宛先にマッピング ](map-federated-audience-to-s3.md) します。

@@ -6,11 +6,11 @@ doc-type: article
 feature-set: Experience Platform
 feature: Server API,API,Data Collection,Integrations
 level: Beginner
-role: User, Data Engineer, Developer
+role: User, Developer
 solution: Data Collection
 topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Web ページ内のリンクをクリックしようと考える場合、ブラ�
 
 単語やフレーズにはどのような意味がありますか？また、簡単かつ簡単に考えることはできますか？ API において、「アプリケーション」とは、ソフトウェアアプリケーションまたはプログラムを指す。 「プログラミングインタフェース」の部分は、特定の目的でアプリケーションが別のアプリケーションとやり取りする方法と場所を指します。 この web ページの例では、リンクをクリックすると、ブラウザーがその web ページのサーバーにリクエストを送信します。
 
-![&#x200B; 宛先 URL を含むハイパーリンクの画像 &#x200B;](../assets/api101-link-destination.png)
+![ 宛先 URL を含むハイパーリンクの画像 ](../assets/api101-link-destination.png)
 
 このスクリーンショットでは、マウスポインターがAdobe Experience Platformのリンク上に置かれています。 下部には、ブラウザーが取得するページの「アドレス」を示す web ブラウザーのステータスバーがあります。 つまり、Adobe Experience Platformのリンクをクリックすると、ブラウザーに「そのページを取得して、画面にここに表示する」ように指示されます。
 
@@ -43,13 +43,13 @@ Web ページ内のリンクをクリックしようと考える場合、ブラ�
 
 ### URL の一部
 
-![URL を含むブラウザーアドレスバー &#x200B;](../assets/api101-address-bar.png)
+![URL を含むブラウザーアドレスバー ](../assets/api101-address-bar.png)
 
 ほとんどのブラウザーには、web ページの「アドレス」の一部またはすべてを表示する「アドレスバー」があります。 ブラウザーは、クリックしたリンクのページを「取得」すると、このアドレスバーにページの「アドレス」が表示されます。 では、Web ページの「アドレス」とは何でしょうか。
 
-上記の `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` は Web 上のページのアドレスであり、URL または Uniform Resource Locator と呼ばれます。 URL は、このようなページ、画像ファイル、ビデオなどのページ、または他のファイルタイプを参照できます。
+上記の `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` は Web 上のページのアドレスであり、URL または Uniform Resource Locator と呼ばれます。 URL は、このようなページ、画像ファイル、ビデオなどのページ、または他のファイルタイプを参照できます。
 
-![URL の一部 &#x200B;](../assets/api101-url-parts.jpg)
+![URL の一部 ](../assets/api101-url-parts.jpg)
 
 このアドレス（URL）には、web およびブラウザー API に非常に関連する特定の部分があります。
 
@@ -65,11 +65,11 @@ Web API の場合、これらのリソースの転送は HTTP リクエスト（
 
 ドメイン名は、DNS と呼ばれるドメインネームシステムの一部です。 多くの人は `adobe.com` や `example.com` を「ドメイン名」と考えていますが、API に関連する部分があります。 `www.adobe.com` と `business.adobe.com` はドメイン名と呼ぶことができますが、`www.` と `business.` の部分はサブドメインと呼ばれます。 API は、多くの場合、`api.example.com` や `sub.www.example.com` などのサブドメインを含む URL を操作します。
 
-「_host_」という用語は、`business.adobe.com` のようなサブドメインを含んだ完全なドメイン名を指すことが非常に一般的です。 また、`adobe.com` のようなサブドメインのないホストを参照する場合、「_ドメイン_ または _ドメイン名_ という用語が表示されることも一般的です。 ここでは、ホストのパーツやバリエーションごとに具体的な用語を覚えることは重要ではありません。 ただし、ビジネスやディスカッションに関連する詳細を明確にするために、これらの用語が一般的に使用されていることを認識することが重要です。
+「_host_」という用語は、`business.adobe.com` のようなサブドメインを含んだ完全なドメイン名を指すことが非常に一般的です。 また、_のようなサブドメインのないホストを参照する場合、「_ ドメイン _または_ ドメイン名 `adobe.com` という用語が表示されることも一般的です。 ここでは、ホストのパーツやバリエーションごとに具体的な用語を覚えることは重要ではありません。 ただし、ビジネスやディスカッションに関連する詳細を明確にするために、これらの用語が一般的に使用されていることを認識することが重要です。
 
 **接触チャネル**
 
-オリジンは、URL の一部に密接に関連していることを認識しておくべき別の用語です。 基本レベルでは、原点は `https://business.adobe.com/jp` のような `scheme` と `host` と `domain` の大まかな関係です。 値が異なれば `https://business.adobe.com/jp` のように元も異なることが多く、`http://business.adobe.com/jp` はスキームが異なるので元も同じではありません。 また、`https://www.adobe.com` と `https://business.adobe.com/jp` は、サブドメインが異なるので、多くの用途で同じオリジンではありません。
+オリジンは、URL の一部に密接に関連していることを認識しておくべき別の用語です。 基本レベルでは、原点は `scheme` のような `host` と `domain` と `https://business.adobe.com` の大まかな関係です。 値が異なれば `https://business.adobe.com` のように元も異なることが多く、`http://business.adobe.com` はスキームが異なるので元も同じではありません。 また、`https://www.adobe.com` と `https://business.adobe.com` は、サブドメインが異なるので、多くの用途で同じオリジンではありません。
 
 **パス**
 
@@ -85,7 +85,7 @@ Web ページには、他のホストやソースからのコンテンツやリ�
 
 ## Web API の一般的な用途
 
-時間帯や天気、パーソナライズされたコンテンツを除き、web API の用途は多数あります。 twitter、TikTok、Facebook、LinkedIn、Snapchat、Pinterestなどのソーシャルメディアプラットフォームには、プログラマーがアプリケーションで使用できるさまざまな API があります。 もちろん、Adobeには、プログラマーがAdobeの商品やサービスとやり取りできるように使用する [&#x200B; 様々な API](https://developer.adobe.com/apis) もあります。 ソフトウェア製品およびサービスは、これらの API を通じて他のソフトウェア製品およびサービスにアクセスします。
+時間帯や天気、パーソナライズされたコンテンツを除き、web API の用途は多数あります。 Twitter、TikTok、Facebook、LinkedIn、Snapchat、Pinterestなどのソーシャルメディアプラットフォームには、プログラマーがアプリケーションで使用できるさまざまな API があります。 もちろん、Adobeには、プログラマーがAdobeの製品やサービスとやり取りできるように使用する [ 様々な API](https://developer.adobe.com/apis) もあります。 ソフトウェア製品およびサービスは、これらの API を通じて他のソフトウェア製品およびサービスにアクセスします。
 
 ## API の例
 
@@ -133,13 +133,13 @@ Adobe Experience Platform Data Access API は、プログラマーがAdobe Exper
 
 API に関する基本的な用語、概念、手順が理解できたので、実際の API リクエストの例を見てみましょう。
 
-このブラウザーの例で使用するページの URL は `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` です。 Adobe Experience Platformのリンクがクリックされると、ブラウザーはこのページに対して `GET` リクエストを行います。 ブラウザーに代わって作業を行わせてもらうので、私たちがしなければならないのはクリックだけですが、プログラマーがそのリクエストをソフトウェアアプリケーションで実行したい場合、API リクエストが正常に実行されるために必要なすべての詳細を提供する必要があります。
+このブラウザーの例で使用するページの URL は `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` です。 Adobe Experience Platformのリンクがクリックされると、ブラウザーはこのページに対して `GET` リクエストを行います。 ブラウザーに代わって作業を行わせてもらうので、私たちがしなければならないのはクリックだけですが、プログラマーがそのリクエストをソフトウェアアプリケーションで実行したい場合、API リクエストが正常に実行されるために必要なすべての詳細を提供する必要があります。
 
 コードでは、次のようになります。
 
 ```js
 fetch(
-  "https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:

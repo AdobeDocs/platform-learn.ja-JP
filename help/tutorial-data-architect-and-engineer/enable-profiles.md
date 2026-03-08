@@ -3,14 +3,14 @@ title: リアルタイム顧客プロファイルの有効化
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: リアルタイム顧客プロファイルの有効化
 description: このレッスンでは、リアルタイム顧客プロファイルのスキーマとデータセットを有効にします。
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1085'
 ht-degree: 2%
 
 ---
@@ -26,18 +26,18 @@ ht-degree: 2%
 
 驚くべきことに、プロファイルに対して *すべてのデータ* をアクティブ化する必要はありません。 実際には、アクティベーションのユースケースに必要なデータのみを有効にしてください。 堅牢な顧客プロファイルにすばやくアクセスする必要があるマーケティングのユースケース、コールセンターの統合などに使用したいデータを有効にします。 分析用のデータのみをアップロードしている場合は、プロファイルに対してデータを有効にしないでください。
 
-リアルタイム顧客プロファイルデータには重要な [&#x200B; ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ja) があり、プロファイルに対して有効にする必要がある独自のデータを決定する際に確認する必要があります。
+リアルタイム顧客プロファイルデータには重要な [ ガードレール ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) があり、プロファイルに対して有効にする必要がある独自のデータを決定する際に確認する必要があります。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **データアーキテクト** は、このチュートリアル以外でリアルタイム顧客プロファイルを有効にする必要があります。
 
 演習を開始する前に、この短いビデオを視聴してリアルタイム顧客プロファイルの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/31660?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
-## 必要な権限
+## 権限が必要です
 
-[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -68,7 +68,7 @@ ht-degree: 2%
    > 1. データの取り込み
 
 
-   ![&#x200B; プロファイル切り替え &#x200B;](assets/profile-loyalty-enableSchema.png)
+   ![ プロファイル切り替え ](assets/profile-loyalty-enableSchema.png)
 
 簡単だろ？ その他のスキーマに対して、上記の手順を繰り返します。
 
@@ -80,21 +80,21 @@ ht-degree: 2%
 
 次に、API を使用して `Luma CRM Schema` を有効にします。 この演習をスキップしてユーザーインターフェイスで有効にするだけの場合は、先に進んでください。
 
-### スキーマの meta:altId の取得
+### スキーマのメタ :altId を取得します
 
-まず、`Luma CRM Schema` の `meta:altId` を取得します。
+まず、`meta:altId` の `Luma CRM Schema` を取得します。
 
 1. Open [!DNL Postman]
-1. アクセストークンがない場合は、[!DNL Postman] のレッスンと同様に、リクエスト **[!DNL OAuth: Request Access Token]** を開き、「**送信**」を選択して新しいアクセストークンをリクエストします。
+1. アクセストークンがない場合は、**[!DNL OAuth: Request Access Token]** のレッスンと同様に、リクエスト **を開き、「** 送信 [!DNL Postman]」を選択して新しいアクセストークンをリクエストします。
 1. リクエスト **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** を開きます。
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 1. `Luma CRM Schema` 項目の応答を探し、`meta:altId` の値をコピーします
-   ![meta:altId をコピー &#x200B;](assets/profile-crm-getMetaAltId.png)
+   ![ メタをコピー :altIid](assets/profile-crm-getMetaAltId.png)
 
 ### スキーマの有効化
 
-スキーマの meta:altId を取得したので、これをプロファイルに対して有効にします。
+スキーマのメタ :altId が取得されたので、これをプロファイルに対して有効にできます。
 
 1. リクエスト **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** を開きます。
 1. **Params** に、`meta:altId` 値を `SCHEMA_ID` のパラメーター値として貼り付けます
@@ -111,7 +111,7 @@ ht-degree: 2%
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 
-   ![&#x200B; カスタムの meta:altId を SCHEMA_ID パラメーターとして使用して、プロファイルの CRM スキーマを有効にします &#x200B;](assets/profile-crm-enableProfile.png)
+   ![ カスタムメタを SCHEMA_ID パラメーターとして使用し :altIid プロファイルの CRM スキーマを有効にします ](assets/profile-crm-enableProfile.png)
 
 ユーザーインターフェイスに、5 つのスキーマすべてがプロファイルに対して有効になっていることを確認できます（`Luma CRM Schema` が有効になっていることを確認するには、SHIFT キーを押しながら再読み込みが必要な場合があります）。
 ![All schemas enabled](assets/profile-allSchemasEnabled.png)
@@ -125,7 +125,7 @@ ht-degree: 2%
 1. **[!UICONTROL プロファイル]** スイッチを切り替えます
 1. 確認モーダルで、「**[!UICONTROL 有効]** ボタンを押して確認します
 
-   ![&#x200B; プロファイルの切り替え &#x200B;](assets/profile-loyalty-enableDataset.png)
+   ![ プロファイルの切り替え ](assets/profile-loyalty-enableDataset.png)
 
 その他のデータセットに対して、上記の手順を繰り返します。
 
@@ -143,15 +143,15 @@ ht-degree: 2%
 
 ### データセットの ID の取得
 
-まず、`Luma CRM Dataset` の `id` を取得する必要があります。
+まず、`id` の `Luma CRM Dataset` を取得する必要があります。
 
 1. Open [!DNL Postman]
-1. アクセストークンがない場合は、[!DNL Postman] のレッスンと同様に、リクエスト **[!DNL OAuth: Request Access Token]** を開き、「**送信**」を選択して新しいアクセストークンをリクエストします。
+1. アクセストークンがない場合は、**[!DNL OAuth: Request Access Token]** のレッスンと同様に、リクエスト **を開き、「** 送信 [!DNL Postman]」を選択して新しいアクセストークンをリクエストします。
 1. リクエスト **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** を開きます。
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 1. `Luma CRM Dataset` の項目の応答を探し、id をコピーします。
-   ![ID をコピー &#x200B;](assets/profile-crm-copyDatasetId.png)
+   ![ID をコピー ](assets/profile-crm-copyDatasetId.png)
 
 ### データセットの有効化
 
@@ -175,10 +175,10 @@ ht-degree: 2%
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 
-   ![&#x200B; プロファイルの CRM データセットを有効にします。カスタムデータセット ID を DATASET_ID パラメーターとして使用してください &#x200B;](assets/profile-crm-enableDataset.png)
+   ![ プロファイルの CRM データセットを有効にします。カスタムデータセット ID を DATASET_ID パラメーターとして使用してください ](assets/profile-crm-enableDataset.png)
 
 また、ユーザーインターフェイスでデータセットが有効になっていることを確認できます。
-![&#x200B; 確認 &#x200B;](assets/profile-crm-confirmEnabled.png)
+![ 確認 ](assets/profile-crm-confirmEnabled.png)
 
 >[!IMPORTANT]
 >
@@ -186,9 +186,9 @@ ht-degree: 2%
 
 ## その他のリソース
 
-* [&#x200B; リアルタイム顧客プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
-* [&#x200B; リアルタイム顧客プロファイル API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
+* [ リアルタイム顧客プロファイル API リファレンス ](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**データエンジニア** は、引き続き [&#x200B; データ取り込みイベントの購読 &#x200B;](subscribe-to-data-ingestion-events.md) レッスンに進んでください。
-**データアーキテクト**&#x200B;_スキップして先に進み_[&#x200B; バッチ取り込みレッスン &#x200B;](ingest-batch-data.md) に進むことができます。
+**データエンジニア** は、引き続き [ データ取り込みイベントの購読 ](subscribe-to-data-ingestion-events.md) レッスンに進んでください。
+**データアーキテクト**_スキップして先に進み_[ バッチ取り込みレッスン ](ingest-batch-data.md) に進むことができます。

@@ -3,15 +3,15 @@ title: データセットの作成
 seo-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: データセットの作成
 description: このレッスンでは、データを受け取るデータセットを作成します。
-role: Data Architect, Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 9%
 
 このレッスンでは、データを受け取るデータセットを作成します。 これがチュートリアルの最短のレッスンであることを知って、ワクワクするでしょう。
 
-Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイクにデータセットとして保持されます。 データセットは、通常、スキーマ（列）とフィールド（行）を含むテーブルであるデータコレクションのストレージと管理をおこなう構成体です。データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+Adobe Experience Platformに正常に取り込まれたすべてのデータは、データレイクにデータセットとして保持されます。 データセットは、スキーマ（列）とフィールド（行）で構成されるデータコレクション（通常はテーブル）を格納し管理するための構造です。データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
 **データアーキテクト** は、このチュートリアル以外でデータセットを作成する必要があります。
 
 演習を開始する前に、この短いビデオを視聴して、データセットの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/34394?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
-## 必要な権限
+## 権限が必要です
 
-[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
@@ -49,18 +49,18 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 1. 次の画面で、「**スキーマからデータセットを作成**」を選択します
 1. 次の画面で、`Luma Loyalty Schema` を選択し、「**[!UICONTROL 次へ]** ボタンを選択します
-   ![&#x200B; データセットの選択 &#x200B;](assets/datasets-selectSchema.png)
+   ![ データセットの選択 ](assets/datasets-selectSchema.png)
 
 1. データセットに「`Luma Loyalty Dataset`」という名前を付け、「**[!UICONTROL 完了]**」ボタンを選択します
-   ![&#x200B; データセットに名前を付ける &#x200B;](assets/datasets-nameDataset.png)
+   ![ データセットに名前を付ける ](assets/datasets-nameDataset.png)
 1. データセットを保存すると、次のような画面が表示されます。
-   ![&#x200B; 作成されたデータセット &#x200B;](assets/datasets-created.png)
+   ![ 作成されたデータセット ](assets/datasets-created.png)
 
 これで作業は完了です。早いって言ったじゃん。 同じ手順を使用して、他のこれらのデータセットを作成します。
 
-1. `Luma Offline Purchase Events Schema` の `Luma Offline Purchase Events Dataset`
-1. `Luma Web Events Schema` の `Luma Web Events Dataset`
-1. `Luma Product Catalog Schema` の `Luma Product Catalog Dataset`
+1. `Luma Offline Purchase Events Dataset` の `Luma Offline Purchase Events Schema`
+1. `Luma Web Events Dataset` の `Luma Web Events Schema`
+1. `Luma Product Catalog Dataset` の `Luma Product Catalog Schema`
 
 
 ## API を使用したデータセットの作成
@@ -73,21 +73,21 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 ### データセットで使用されるスキーマの ID を取得します
 
-まず、`Luma CRM Schema` の `$id` を取得する必要があります。
+まず、`$id` の `Luma CRM Schema` を取得する必要があります。
 
 1. Open [!DNL Postman]
-1. アクセストークンがない場合は、[!DNL Postman] のレッスンと同様に、リクエスト **[!DNL OAuth: Request Access Token]** を開き、「**送信**」を選択して新しいアクセストークンをリクエストします。
+1. アクセストークンがない場合は、**[!DNL OAuth: Request Access Token]** のレッスンと同様に、リクエスト **を開き、「** 送信 [!DNL Postman]」を選択して新しいアクセストークンをリクエストします。
 1. リクエスト **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** を開きます。
 1. 「**送信** ボタンを選択します
 1. 200 の応答が返されます。
 1. `Luma CRM Schema` 項目の応答を探し、`$id` の値をコピーします
-   ![$id をコピーします &#x200B;](assets/dataset-crm-getSchemaId.png)
+   ![$id をコピーします ](assets/dataset-crm-getSchemaId.png)
 
 ### データセットの作成
 
 これで、データセットを作成できます。
 
-1. [&#x200B; カタログサービス API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) を `Luma Tutorial Assets` フォルダーにダウンロードします。
+1. [ カタログサービス API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) を `Luma Tutorial Assets` フォルダーにダウンロードします。
 1. コレクションの [!DNL Postman] への読み込み
 1. リクエスト **[!DNL Catalog Service API > Datasets > Create a new dataset.]** を選択
 1. 次をリクエストの **本文** として貼り付けます。***id 値を独自の値に置き換えます***。
@@ -123,12 +123,12 @@ Adobe Experience Platformに正常に取り込まれたすべてのデータは�
 
 
 Platform ユーザーインターフェイスの **[!UICONTROL データセット]** 画面に戻ると、5 つのデータセットすべてが正常に作成されたことを確認できます。
-![5 つのデータセットが完了しました &#x200B;](assets/datasets-allComplete.png)
+![5 つのデータセットが完了しました ](assets/datasets-allComplete.png)
 
 
 ## その他のリソース
 
-* [&#x200B; データセットドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja)
-* [&#x200B; データセット API （カタログサービスの一部）リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
+* [データセットのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja)
+* [ データセット API （カタログサービスの一部）リファレンス ](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
 
-これで、すべてのスキーマ、ID およびデータセットが用意されたので、[&#x200B; リアルタイム顧客プロファイル用に有効にする &#x200B;](enable-profiles.md) ことができます。
+これで、すべてのスキーマ、ID およびデータセットが用意されたので、[ リアルタイム顧客プロファイル用に有効にする ](enable-profiles.md) ことができます。

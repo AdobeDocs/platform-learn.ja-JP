@@ -4,7 +4,7 @@ description: Foundation - リアルタイム顧客プロファイル – 独自�
 kt: 5342
 doc-type: tutorial
 exl-id: dd80f379-76f2-4023-b958-6ee558e23e88
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2346'
 ht-degree: 2%
@@ -25,14 +25,14 @@ ht-degree: 2%
 
 Web サイトのプロファイルビューアパネルでは、複数の ID を検索できます。 すべての ID は名前空間にリンクされています。
 
-![&#x200B; 顧客プロファイル &#x200B;](./images/identities.png)
+![ 顧客プロファイル ](./images/identities.png)
 
 X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが表示されます。
 
 | ID | 名前空間 |
 |:-------------:| :---------------:|
-| Experience Cloud ID （ECID） | 79943948563923140522865572770524243489 |
-| Experience Cloud ID （ECID） | 70559351147248820114888181867542007989 |
+| Experience Cloud ID（ECID） | 79943948563923140522865572770524243489 |
+| Experience Cloud ID（ECID） | 70559351147248820114888181867542007989 |
 | メール ID | woutervangeluwe+18112024-01@gmail.com |
 | 携帯電話番号 ID | +32473622044+18112024-01 |
 
@@ -44,27 +44,27 @@ X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが
 
 [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home) に移動します
 
-![Adobe I/O新規統合 &#x200B;](./images/iohome.png)
+![Adobe I/O新規統合 ](./images/iohome.png)
 
 画面の右上隅で正しいAdobe Experience Platform インスタンスを選択していることを確認してください。 インスタンスは `--aepImsOrgName--` です。 **新規プロジェクトを作成** をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/iocomp.png)
+![Adobe I/O新規統合 ](./images/iocomp.png)
 
 「**+ プロジェクトに追加**」を選択し、「**API**」を選択します。
 
-![Adobe I/O新規統合 &#x200B;](./images/adobe_io_access_api.png)
+![Adobe I/O新規統合 ](./images/adobe_io_access_api.png)
 
 次の画面が表示されます。
 
-![Adobe I/O新規統合 &#x200B;](./images/api1.png)
+![Adobe I/O新規統合 ](./images/api1.png)
 
 「**Experience Platform API**」を選択し、「**次へ**」をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/api3.png)
+![Adobe I/O新規統合 ](./images/api3.png)
 
 この画面が表示されます。 資格情報の名前を指定：`--aepUserLdap-- - OAuth credential`。 「**次へ**」をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/api4.png)
+![Adobe I/O新規統合 ](./images/api4.png)
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
@@ -72,43 +72,43 @@ X 線パネルには、ID と名前空間の 4 つの異なる組み合わせが
 
 >[!NOTE]
 >
-> 製品プロファイル名は、インスタンス固有なので、Adobe Experience Platform インスタンスで異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin Consoleと AEP の権限 UI で設定します。
+> 製品プロファイル名は、インスタンス固有なので、Adobe Experience Platform インスタンスで異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin ConsoleとAEPの権限 UI で設定します。
 
 **設定済み API を保存** をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/api9.png)
+![Adobe I/O新規統合 ](./images/api9.png)
 
 これで、Adobe I/O統合の準備が整いました。
 
-![Adobe I/O新規統合 &#x200B;](./images/api11.png)
+![Adobe I/O新規統合 ](./images/api11.png)
 
 **Postman用にダウンロード** ボタンをクリックし、**OAuth サーバー間** をクリックして、Postman環境をダウンロードします（環境がダウンロードされるまで待ちます。これには数秒かかる場合があります）。
 
-![Adobe I/O新規統合 &#x200B;](./images/iopm.png)
+![Adobe I/O新規統合 ](./images/iopm.png)
 
 IO プロジェクトには現在、汎用名があります。 統合にはわかりやすい名前を付ける必要があります。 示されているように、**プロジェクト X** （または類似の名前）をクリックします
 
-![Adobe I/O新規統合 &#x200B;](./images/api13.png)
+![Adobe I/O新規統合 ](./images/api13.png)
 
 **プロジェクトを編集** をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/api14.png)
+![Adobe I/O新規統合 ](./images/api14.png)
 
 統合の名前と説明を入力：`--aepUserLdap-- AEP Tutorial`。
 
 「**保存**」をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/api15.png)
+![Adobe I/O新規統合 ](./images/api15.png)
 
 これで、Adobe I/Oの統合が完了しました。
 
-![Adobe I/O新規統合 &#x200B;](./images/api16.png)
+![Adobe I/O新規統合 ](./images/api16.png)
 
 >[!NOTE]
 >
 >このAdobe I/O プロジェクトがAdobe Experience Platformの権限設定にアクセスできるようにする追加の手順があります。 プロジェクトの API 資格情報は、Adobe Experience Platformの権限 UI に追加する必要があります。この UI には、システム管理者のアクセス権が必要です。 手順は以下に記載されていますが、必要なアクセス権限がない場合は、システム管理者に問い合わせて、これを処理してもらう必要がある場合があります。
 
-## API 資格情報の AEP 権限
+## API 認証情報のAEP権限
 
 >[!IMPORTANT]
 >
@@ -120,7 +120,7 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 >[!NOTE]
 >
-> 製品プロファイル名は、インスタンス固有なので、Adobe Experience Platform インスタンスで異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin Consoleと AEP の権限 UI で設定します。
+> 製品プロファイル名は、インスタンス固有なので、Adobe Experience Platform インスタンスで異なります。 適切なアクセス権を持つ製品プロファイルを 1 つ以上選択する必要があります。これらのプロファイルは、Adobe Admin ConsoleとAEPの権限 UI で設定します。
 
 ![権限](./images/perm1.png)
 
@@ -146,7 +146,7 @@ IO プロジェクトには現在、汎用名があります。 統合にはわ�
 
 お使いの OS に関連するバージョンのPostmanをダウンロードしてインストールします。
 
-![Adobe I/O新規統合 &#x200B;](./images/getstarted.png)
+![Adobe I/O新規統合 ](./images/getstarted.png)
 
 Postmanをインストールしたら、アプリケーションを起動します。
 
@@ -169,23 +169,23 @@ Postmanには、環境とコレクションという 2 つのコンセプトが�
 
 **postman.zip** ファイルを解凍し、これらの 3 つのファイルをAdobe I/OからダウンロードしたPostmanと共に、デスクトップ上のフォルダーに保存します。そのフォルダーには、次の 4 つのファイルが必要です。
 
-![Adobe I/O新規統合 &#x200B;](./images/pmfolder.png)
+![Adobe I/O新規統合 ](./images/pmfolder.png)
 
 Postmanに戻ります。 **インポート** をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/postmanui.png)
+![Adobe I/O新規統合 ](./images/postmanui.png)
 
 **ファイル** をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/choosefiles.png)
+![Adobe I/O新規統合 ](./images/choosefiles.png)
 
 ダウンロードした 4 つのファイルを抽出したデスクトップ上のフォルダーに移動します。 これらの 4 つのファイルを同時に選択し、「開く **をクリックし** す。
 
-![Adobe I/O新規統合 &#x200B;](./images/selectfiles.png)
+![Adobe I/O新規統合 ](./images/selectfiles.png)
 
 **開く** をクリックすると、Postmanに読み込む環境とコレクションの概要が表示されます。 **インポート** をクリックします。
 
-![Adobe I/O新規統合 &#x200B;](./images/impconfirm.png)
+![Adobe I/O新規統合 ](./images/impconfirm.png)
 
 これで、API を使用してPostmanとの対話を開始するためにAdobe Experience Platformで必要なすべてが揃いました。
 
@@ -210,7 +210,7 @@ Postmanに戻ります。 **インポート** をクリックします。
 設定が成功すると、次の情報を含む同様の応答が表示されます。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **ベアラー** |
 | access_token | **eyJhbGciOiJSU...jrNZ6mdaQ** |
 | expires_in | **86399** |
@@ -223,7 +223,7 @@ Adobe I/Oから、特定の値（非常に長い access_token **と有効期限�
 
 これで、最初のリクエストを Platform のリアルタイム顧客プロファイル API に送信できます。
 
-Postmanで、コレクションを探します **AEP チュートリアル**。
+Postmanで、コレクション **AEP Tutorial** を見つけます。
 
 ![Postman](./images/coll_enablement.png)
 
@@ -234,7 +234,7 @@ Postmanで、コレクションを探します **AEP チュートリアル**。
 このリクエストには、次の 3 つの必須変数があります。
 
 | キー | 値 | 定義 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | entityId | **id** | 特定の顧客 ID |
 | entityIdNS | **名前空間** | id に適用できる特定の名前空間 |
 | schema.name | **_xdm.context.profile** | 情報を受信する特定のスキーマ |
@@ -242,7 +242,7 @@ Postmanで、コレクションを探します **AEP チュートリアル**。
 そのため、Adobe Experience Platformの API に対して、独自の ECID のすべてのプロファイル情報を返すよう依頼する場合は、次のようにリクエストを設定する必要があります。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **yourECID** |
 | entityIdNS | **ecid** |
 | schema.name | **_xdm.context.profile** |
@@ -398,7 +398,7 @@ Postmanに戻り、コールセンターを紹介し、**Phone** の名前空間
 したがって、特定の電話のすべてのプロファイル情報を返すように Platform の API に依頼する場合は、次のようにリクエストを設定する必要があります。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **電話番号** |
 | entityIdNS | **電話** （ecid を電話で置き換える） |
 | schema.name | **_xdm.context.profile** |
@@ -433,7 +433,7 @@ Postmanに戻り、コールセンターを紹介し、**Phone** の名前空間
 したがって、特定のメールアドレスのすべてのプロファイル情報を返すように Platform の API に依頼する場合は、次のようにリクエストを設定する必要があります。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **youremail** |
 | entityIdNS | **メール** （電話をメールに置き換える） |
 | schema.name | **_xdm.context.profile** |
@@ -476,7 +476,7 @@ Postmanに戻り、コールセンターを紹介し、**Phone** の名前空間
 
 プロファイルデータに関する Platform の API のクエリが正常に完了したら、ExperienceEvent データにも同じクエリを実行します。
 
-Postmanで、コレクションを探します **AEP チュートリアル**。
+Postmanで、コレクション **AEP Tutorial** を見つけます。
 
 ![Postman](./images/coll_enablement.png)
 
@@ -487,7 +487,7 @@ Postmanで、コレクションを探します **AEP チュートリアル**。
 このリクエストには、次の 4 つの必須変数があります。
 
 | キー | 値 | 定義 |
-|:-------------:| :---------------:|  :---------------:| 
+|:-------------:| :---------------:|  :---------------:|
 | schema.name | **_xdm.context.experienceevent** | 情報を受信する特定のスキーマ。 この場合、ExperienceEvent スキーマにマッピングされたデータを探しています。 |
 | relatedSchema.name | **_xdm.context.profile** | ExperienceEvent スキーマにマッピングされたデータを探している間に、そのデータを受信する ID を指定する必要があります。 ID にアクセスできるスキーマは Profile-schema なので、この関連スキーマは Profile-schema です。 |
 | relatedEntityId | **id** | 特定の顧客 ID |
@@ -496,7 +496,7 @@ Postmanで、コレクションを探します **AEP チュートリアル**。
 したがって、Platform の API に対して、独自の ecid のすべてのプロファイル情報を返すように依頼する場合は、次のようにリクエストを設定する必要があります。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | schema.name | **_xdm.context.experienceevent** |
 | relatedSchema.name | **_xdm.context.profile** |
 | relatedEntityId | **yourECID** |
@@ -641,6 +641,6 @@ ECID を使用して、Adobe Experience Platformのリアルタイムプロフ�
 
 [2.1.4 オーディエンスの作成 – UI](./ex4.md){target="_blank"} に移動します。
 
-[&#x200B; リアルタイム顧客プロファイル &#x200B;](./real-time-customer-profile.md){target="_blank"} に戻る
+[ リアルタイム顧客プロファイル ](./real-time-customer-profile.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

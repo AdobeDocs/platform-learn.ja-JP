@@ -3,7 +3,7 @@ title: Data Collection Tags を使用したBrand Conciergeの実装
 description: Data Collection Tags を使用したBrand Conciergeの実装
 kt: 5342
 doc-type: tutorial
-source-git-commit: 3704abb57e9fa64c2ff6d6914b6da8b46a5f44aa
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 6%
@@ -120,10 +120,10 @@ window["alloy"]("sendEvent", {
         console.log("Conversation experience fetched", result);
         window["alloy"]("bootstrapConversationalExperience", {
             selector: "#brand-concierge-mount",
-						// src: "main.js",
+                       // src: "main.js",
             src: "https://experience-stage.adobe.net/solutions/experience-platform-brand-concierge-web-agent/static-assets/main.js",
             stylingConfigurations: window.styleConfiguration,
-						stickySession: true
+                        stickySession: true
         })
     });
 ```
@@ -167,4 +167,4 @@ window["alloy"]("sendEvent", {
 
 [Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

@@ -4,7 +4,7 @@ description: プッシュメッセージによるジャーニーの設定
 kt: 5342
 doc-type: tutorial
 exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 3%
@@ -103,11 +103,11 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 その後、これが表示されます。 リアルタイム顧客プロファイルから任意のプロファイル属性を直接選択できるようになりました。
 
-フィールド **名** を検索し、フィールド **名** の横にある **+** アイコンをクリックします。 次に、名のパーソナライゼーショントークンが追加されています：**{{profile.person.name.firstName}}**。
+フィールド **名** を検索し、フィールド **名** の横にある **+** アイコンをクリックします。 次に、名のパーソナライゼーショントークンが追加されています：**`{{profile.person.name.firstName}}`**。
 
 ![プッシュ](./images/bp9.png)
 
-次に、テキスト **を追加します。** の後ろに **{{profile.person.name.firstName}}** る。
+次に、テキスト **を追加します。** の後ろに **`{{profile.person.name.firstName}}`** る。
 
 「**保存**」をクリックします。
 
@@ -199,8 +199,8 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 次の手順
 
-[3.3.3 アプリ内メッセージを使用したキャンペーンの設定に移動 &#x200B;](./ex3.md){target="_blank"}
+[3.3.3 アプリ内メッセージを使用したキャンペーンの設定に移動 ](./ex3.md){target="_blank"}
 
-[Adobe Journey Optimizer: プッシュとアプリ内メッセージ &#x200B;](ajopushinapp.md){target="_blank"} に戻る
+[Adobe Journey Optimizer: プッシュとアプリ内メッセージ ](ajopushinapp.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

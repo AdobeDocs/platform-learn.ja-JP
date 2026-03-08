@@ -3,11 +3,11 @@ title: Federated Audience の S3 の宛先へのマッピング
 seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Federated Audience の S3 へのマッピング
 description: この演習では、パーソナライズされたオフラインエクスペリエンスをサポートするために、フェデレーテッド オーディエンスをダウンストリーム Real-Time CDPの宛先にマッピングします。
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Data Warehouse でオーディエンス属性を活用すると、RTCDPの宛先
 
 6. **マッピング** ステップで、重複除外キーを選択します。 この例では、`xdm: personalEmail.address` が含まれており、**重複除外キー** として選択されています。 次に、「**次へ** をクリックします。
 
-   ![&#x200B; 重複排除キー &#x200B;](assets/deduplication-key.png)
+   ![ 重複排除キー ](assets/deduplication-key.png)
 
 7. マッピングステップでは、フェデレーションされたオーディエンス構成のオーディエンスフィールドマッピングに基づいてエンリッチメント属性を選択します。 **鉛筆（編集）** アイコンをクリックして、事前に選択された属性を表示します。
 
@@ -53,4 +53,4 @@ Data Warehouse でオーディエンス属性を活用すると、RTCDPの宛先
 オーディエンスを正常に作成し、S3 の宛先に対して簡単にアクティブ化しました。 他のソリューションでは、このオーディエンスを受け取り、すぐに使用できます。 この使いやすいインターフェイスを使用することで、マーケティングチームは、基になるデータを移動することなく、オーディエンスをすばやく作成してアクティブ化できます。 このアプローチを採用しているお客様は、約 1 か月で初めてのユースケースを運用を開始しました。
 
 
-次に、[&#x200B; ジャーニーの構築 &#x200B;](build-journey-federated-audience.md) を行います。
+次に、[ ジャーニーの構築 ](build-journey-federated-audience.md) を行います。

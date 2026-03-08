@@ -2,12 +2,12 @@
 title: Data Distillerを使用したデータの取得
 description: データエンジニアがクエリサービスを使用してデータを変換し、新しいデータセットを出力する方法について説明します。 これらのクエリをスケジュールに従って実行し、自動ダッシュボードとセグメント化を強化します。
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-8005
 last-substantial-update: 2025-09-23T00:00:00Z
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: f5f3dcc655fffc056fe95c33a3cd7abba24d7f3a
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Data Distillerを使用したデータの取得
 
-データエンジニアがクエリサービスを使用してデータを変換し、新しいデータセットを出力する方法について説明します。 これらのクエリをスケジュールに従って実行し、自動ダッシュボードとセグメント化を強化します。 詳しくは、[&#x200B; クエリ結果からの出力データセットの生成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/create-datasets) を参照してください。
+データエンジニアがクエリサービスを使用してデータを変換し、新しいデータセットを出力する方法について説明します。 これらのクエリをスケジュールに従って実行し、自動ダッシュボードとセグメント化を強化します。 詳しくは、[ クエリ結果からの出力データセットの生成 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3414069?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)

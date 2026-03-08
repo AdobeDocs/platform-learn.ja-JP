@@ -3,12 +3,12 @@ title: スキーマのモデルデータ
 seo-title: Model data in schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: スキーマのモデルデータ
 description: このレッスンでは、Luma のデータをスキーマにモデル化します。 これはチュートリアルで最も長いレッスンの 1 つなので、水を飲んでバックルを締めてください。
-role: Data Architect
+role: Developer
 feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 7%
@@ -43,15 +43,15 @@ Key terms:
 **データアーキテクト** はこのチュートリアル以外でスキーマを作成する必要がありますが、**データエンジニア** は、データアーキテクトが作成したスキーマと緊密に連携します。
 
 演習を開始する前に、この短いビデオを視聴して、スキーマと Experience Data Model （XDM）について詳しく学びます。
->[!VIDEO](https://video.tv.adobe.com/v/38507?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Experience Platformのデータモデリングについて詳しくは、Experience Leagueで無償で利用できるプレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 &#x200B;](https://experienceleague.adobe.com/ja/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を視聴することをお勧めします。
+> Experience Platformのデータモデリングについて詳しくは、Experience Leagueで無償で利用できるプレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) を視聴することをお勧めします。
 
-## 必要な権限
+## 権限が必要です
 
-[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--, specifically:
 
@@ -72,26 +72,26 @@ Key terms:
 1. Platform ユーザーインターフェイスに移動し、サンドボックスが選択されていることを確認します。
 1. 左側のナビゲーションの **[!UICONTROL スキーマ]** に移動します。
 1. 右上の **[!UICONTROL スキーマを作成]** ボタンを選択します。
-   ![OOTB フィールドグループを持つスキーマ &#x200B;](assets/schemas-loyaltyCreateSchema.png)
+   ![OOTB フィールドグループを持つスキーマ ](assets/schemas-loyaltyCreateSchema.png)
 
 1. 個々の顧客の属性（ポイント、ステータスなど）をモデリングするので、スキーマの作成ワークフローで、スキーマの基本クラスとして **[!UICONTROL 個人プロファイル]** を選択します。
 1. 「**[!UICONTROL 次へ]**」を選択します。
-   ![&#x200B; 基本クラスを選択 &#x200B;](assets/schemas-loyaltySelectBaseClass.png)
+   ![ 基本クラスを選択 ](assets/schemas-loyaltySelectBaseClass.png)
 
-1. **[!UICONTROL スキーマ表示名]** テキストフィールドに「`Luma Loyalty Schema`」と入力します。 以下のキャンバスでは、選択したクラスによって提供されるベーススキーマ構造を確認および検証することもできます。
+1. `Luma Loyalty Schema` スキーマ表示名 **[!UICONTROL テキストフィールドに「]**」と入力します。 以下のキャンバスでは、選択したクラスによって提供されるベーススキーマ構造を確認および検証することもできます。
 1. 「**[!UICONTROL 完了]**」を選択して、スキーマを作成します。
-   ![&#x200B; ロイヤルティスキーマの作成の完了 &#x200B;](assets/schemas-loyaltyFinishSchemaCreation.png)
+   ![ ロイヤルティスキーマの作成の完了 ](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 標準フィールドグループの追加
 
 スキーマが作成されると、スキーマエディターにリダイレクトされ、スキーマにフィールドを追加できるようになります。 個々のフィールドをスキーマに直接追加したり、フィールドグループを使用したりできます。 個々のフィールドはすべて、引き続きクラスまたはフィールドグループに関連付けられています。 Adobeが提供する業界標準のフィールドグループの大規模なセットから選択することも、独自のフィールドグループを作成することもできます。 Adobeで独自のデータのモデリングを開始する際には、Experience Platformが提供する業界標準のフィールドグループについて理解しておくと役に立ちます。 これらは顧客 AI、アトリビューション AI、Adobe Analyticsなどのダウンストリームサービスを強化する場合があるので、可能な限り使用することをお勧めします。
 
-独自のデータを操作する際に重要な手順は、Platform で取得する独自のデータはどれか、およびそのデータをどのようにモデル化するかを決定することです。 この大きなトピックについては、プレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 &#x200B;](https://experienceleague.adobe.com/ja/playlists/experience-platform-model-your-customer-experience-data-with-xdm) で詳しく説明します。 このチュートリアルでは、事前に決定されたスキーマの実装について説明します。
+独自のデータを操作する際に重要な手順は、Platform で取得する独自のデータはどれか、およびそのデータをどのようにモデル化するかを決定することです。 この大きなトピックについては、プレイリスト [XDM を使用したカスタマーエクスペリエンスデータのモデル化 ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) で詳しく説明します。 このチュートリアルでは、事前に決定されたスキーマの実装について説明します。
 
 フィールドグループを追加するには：
 
 1. **[!UICONTROL フィールドグループ]** 見出しの下にある **[!UICONTROL 追加]** を選択します。
-   ![&#x200B; 新しいフィールドグループを追加 &#x200B;](assets/schemas-loyalty-addFieldGroup.png)
+   ![ 新しいフィールドグループを追加 ](assets/schemas-loyalty-addFieldGroup.png)
 1. **[!UICONTROL フィールドグループを追加]** モーダルで、次のフィールドグループを選択します。
    1. **[!UICONTROL デモグラフィックの詳細]**：名前や生年月日などの基本的な顧客データ
    1. **[!UICONTROL 個人の連絡先の詳細]**：メールアドレスや電話番号などの基本的な連絡先詳細
@@ -101,7 +101,7 @@ Key terms:
 1. **[!UICONTROL 業界]**/**[!UICONTROL 小売]** ボックスをオンにして、業界固有のフィールドグループを表示します。
 1. **[!UICONTROL ロイヤルティの詳細]** を選択して、ロイヤルティプログラムフィールドを追加します。
 1. 「**[!UICONTROL フィールドグループを追加]**」を選択して、3 つのフィールドグループをすべてスキーマに追加します。
-   ![&#x200B; ロイヤルティスキーマへの標準フィールドグループの追加 &#x200B;](assets/schemas-loyalty-saveOotbMixins.png)
+   ![ ロイヤルティスキーマへの標準フィールドグループの追加 ](assets/schemas-loyalty-saveOotbMixins.png)
 
 
 ここで、スキーマの現在の状態を確認するのに時間がかかります。 フィールドグループには、人物、連絡先の詳細、ロイヤルティプログラムのステータスに関連する標準フィールドが追加されています。 これら 2 つのフィールドグループは、自社データのスキーマを作成する際に役立つ場合があります。 特定のフィールドグループの行を選択するか、フィールドグループ名の横にあるチェックボックスをオンにして、ビジュアライゼーションの変化を確認します。
@@ -129,12 +129,12 @@ Key terms:
 フィールドグループを作成するには：
 
 1. **[!UICONTROL スキーマフィールドグループ]** 見出しの下にある **[!UICONTROL 追加]** を選択します
-   ![&#x200B; 新しいフィールドグループを追加 &#x200B;](assets/schemas-loyalty-addFieldGroup.png)
+   ![ 新しいフィールドグループを追加 ](assets/schemas-loyalty-addFieldGroup.png)
 1. **[!UICONTROL 新しいフィールドグループを作成]** を選択します
-1. **[!UICONTROL 表示名]** として `Luma Identity profile field group` を使用します
+1. `Luma Identity profile field group` 表示名 **[!UICONTROL として]** を使用します
 1. `system identifiers for XDM Individual Profile class` を **[!UICONTROL 説明]** として使用します
 1. 「**[!UICONTROL フィールドグループを追加]**」を選択します
-   ![&#x200B; 新しいフィールドグループを追加 &#x200B;](assets/schemas-loyalty-nameFieldGroup.png)
+   ![ 新しいフィールドグループを追加 ](assets/schemas-loyalty-nameFieldGroup.png)
 
 新しい空のフィールドグループがスキーマに追加されます。 **[!UICONTROL +]** ボタンを使用して、階層内の任意の場所に新しいフィールドを追加できます。 この例では、ルートレベルにフィールドを追加します。
 
@@ -144,11 +144,9 @@ Key terms:
    1. **[!UICONTROL 表示名]**: `System Identifier`
    1. **[!UICONTROL 型]**: **[!UICONTROL Object]**
    1. **[!UICONTROL フィールドグループ]** ドロップダウンで、作成した **Luma ID プロファイルフィールドグループ** を選択します。
-
-      ![&#x200B; 新しいフィールドグループを追加 &#x200B;](assets/schemas-loyalty-addSystemIdentifier.png)
+      ![ 新しいフィールドグループを追加 ](assets/schemas-loyalty-addSystemIdentifier.png)
    1. 「**[!UICONTROL 適用]**」を選択します
-
-      ![&#x200B; 新しいフィールドプロパティを適用 &#x200B;](assets/schemas-loyalty-applySystemIdentifier.png)
+      ![ 新しいフィールドプロパティを適用 ](assets/schemas-loyalty-applySystemIdentifier.png)
 
 次に、`systemIdentifier` オブジェクトの下に 2 つのフィールドを追加します。
 
@@ -162,7 +160,7 @@ Key terms:
    1. **[!UICONTROL 型]**: **[!UICONTROL String]**
 
 新しいフィールドグループは次のようになります。 「**[!UICONTROL 保存]**」ボタンを選択してスキーマを保存しますが、次の演習のためにスキーマを開いたままにします。
-![&#x200B; ロイヤルティフィールドグループの完了 &#x200B;](assets/schemas-loyalty-identityFieldGroupComplete.png)
+![ ロイヤルティフィールドグループの完了 ](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## データタイプの作成
 
@@ -172,11 +170,11 @@ Key terms:
 
 `Luma Loyalty Schema` が開いたままの状態で、`systemIdentifier` オブジェクトを選択して **[!UICONTROL 新しいデータタイプに変換]** を選択します。
 
-![&#x200B; ロイヤルティフィールドグループの完了 &#x200B;](assets/schemas-loyalty-convertToDataType.png)
+![ ロイヤルティフィールドグループの完了 ](assets/schemas-loyalty-convertToDataType.png)
 
 スキーマから **[!UICONTROL キャンセル]** して「**[!UICONTROL データタイプ]**」タブに移動すると、新しく作成したデータタイプが表示されます。 このデータタイプは、レッスンの後半で使用します。
 
-![&#x200B; ロイヤルティフィールドグループの完了 &#x200B;](assets/schemas-loyalty-confirmDataType.png)
+![ ロイヤルティフィールドグループの完了 ](assets/schemas-loyalty-confirmDataType.png)
 
 
 ## API を使用した CRM スキーマの作成
@@ -197,7 +195,7 @@ Key terms:
 1. アクセストークンがない場合は、リクエストフ **[!DNL OAuth: Request Access Token]** ールドを開いて「**送信**」を選択し、新しいアクセストークンをリクエストします。
 1. 環境変数を開き、**CONTAINER_ID** の値を `global` から `tenant` に変更します。 Platform で独自のカスタム要素を操作する場合（スキーマの作成など）は、`tenant` を使用する必要があります。
 1. 「**保存**」を選択します
-   ![CONTAINER_ID をテナントに変更 &#x200B;](assets/schemas-crm-changeContainerId.png)
+   ![CONTAINER_ID をテナントに変更 ](assets/schemas-crm-changeContainerId.png)
 1. リクエスト **[!DNL Schema Registry API > Schemas > Create a new custom schema.]** を開きます。
 1. 「**本文**」タブを開き、次のコードを貼り付けて「**送信**」を選択し、API 呼び出しを行います。 この呼び出しにより、同じ `XDM Individual Profile` 基本クラスを使用して新しいスキーマが作成されます。
 
@@ -218,14 +216,14 @@ Key terms:
 
 1. `201 Created` しい応答が返されます
 1. 応答本文から `meta:altId` をコピーします 後で別の演習で使用します。
-   ![CRM スキーマの作成 &#x200B;](assets/schemas-crm-createSchemaCall.png)
+   ![CRM スキーマの作成 ](assets/schemas-crm-createSchemaCall.png)
 
 1. 新しいスキーマは、フィールドグループを除いてユーザーインターフェイスに表示されます
-   ![CRM スキーマの作成 &#x200B;](assets/schemas-loyalty-emptySchemaInTheUI.png)
+   ![CRM スキーマの作成 ](assets/schemas-loyalty-emptySchemaInTheUI.png)
 
 >[!NOTE]
 >
-> `meta:altId` またはスキーマ ID は、**[!UICONTROL CONTAINER_ID]** を `tenant` に設定し、accept ヘッダー `application/vnd.adobe.xdm+json` を指定して API リクエスト **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** を実行することによっても取得できます。
+> `meta:altId` またはスキーマ ID は、**[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** CONTAINER_ID **[!UICONTROL を]** に設定し、accept ヘッダー `tenant` を指定して API リクエスト `application/vnd.adobe.xdm+json` を実行することによっても取得できます。
 
 >[!TIP]
 >
@@ -263,7 +261,7 @@ Key terms:
 
 1. 応答のステータスが 200 OK になり、フィールドグループが UI のスキーマの一部として表示されます
 
-   ![&#x200B; 追加された標準フィールドグループ &#x200B;](assets/schemas-crm-addMixins.png)
+   ![ 追加された標準フィールドグループ ](assets/schemas-crm-addMixins.png)
 
 
 ### カスタムフィールドグループを追加
@@ -272,11 +270,11 @@ Key terms:
 
 1. リクエスト **[!DNL Schema Registry API > Field groups > Retrieve a list of field groups within the specified container.]** を開きます。
 1. 「**送信**」ボタンを選択して、アカウント内のすべてのカスタムフィールドグループのリストを取得します
-1. `Luma Identity profile field group` の `$id` 値を取得します（このスクリーンショットの値とは異なります）
-   ![&#x200B; フィールドグループのリストを取得 &#x200B;](assets/schemas-crm-getListOfMixins.png)
+1. `$id` の `Luma Identity profile field group` 値を取得します（このスクリーンショットの値とは異なります）
+   ![ フィールドグループのリストを取得 ](assets/schemas-crm-getListOfMixins.png)
 1. リクエスト **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** ージを再度開きます
 1. 「**パラメーター**」タブには、スキーマの `$id` が引き続き表示されます
-1. 「**本文**」タブを開き、次のコードを貼り付けて、`$ref` の値を独自の `Luma Identity profile field group` の `$id` に置き換えます。
+1. 「**本文**」タブを開き、次のコードを貼り付けて、`$ref` の値を独自の `$id` の `Luma Identity profile field group` に置き換えます。
 
    ```json
    [{
@@ -289,7 +287,7 @@ Key terms:
    ```
 
 1. 「**送信**」を選択します。
-   ![ID フィールドグループの追加 &#x200B;](assets/schemas-crm-addIdentityMixin.png)
+   ![ID フィールドグループの追加 ](assets/schemas-crm-addIdentityMixin.png)
 
 API 応答とインターフェイスの両方をチェックして、フィールドグループがスキーマに追加されていることを確認します。
 
@@ -313,11 +311,11 @@ API 応答とインターフェイスの両方をチェックして、フィー�
 
 データタイプがすべてのフィールドをどのように追加したかに注意してください。
 
-![&#x200B; フィールドグループへのデータタイプの追加 &#x200B;](assets/schemas-offlinePurchases-addDatatype.png)
+![ フィールドグループへのデータタイプの追加 ](assets/schemas-offlinePurchases-addDatatype.png)
 
 また、**[!UICONTROL クラス]** 見出しの下の **[!UICONTROL XDM ExperienceEvent]** を選択し、このクラスによって提供されたフィールドの一部を調べます。 XDM ExperienceEvent クラスを使用する場合、_id フィールドと timestamp フィールドが必要です。これらのフィールドは、このスキーマを使用して取り込むすべてのレコードに対して入力する必要があります。
 
-![&#x200B; エクスペリエンスイベントのベース構造 &#x200B;](assets/schemas-offlinePurchase-experienceEventbase.png)
+![ エクスペリエンスイベントのベース構造 ](assets/schemas-offlinePurchase-experienceEventbase.png)
 
 ## Web イベントスキーマの作成
 
@@ -328,16 +326,16 @@ API 応答とインターフェイスの両方をチェックして、フィー�
 | クラス | エクスペリエンスイベント |
 | スキーマ名 | Luma Web イベントスキーマ |
 | フィールドグループ | AEP Web SDK ExperienceEvent |
-| フィールドグループ | コンシューマーエクスペリエンスイベント |
+| フィールドグループ | 消費者エクスペリエンスイベント |
 
-「**[!UICONTROL 消費者エクスペリエンスイベント]**」フィールドグループを選択します。 このフィールドグループには、[!UICONTROL Commerceの詳細 &#x200B;] にも含まれていた commerce および productListItems オブジェクトが含まれます。 Indeed [!UICONTROL &#x200B; コンシューマーエクスペリエンスイベント &#x200B;] は、他の標準フィールドグループをいくつか組み合わせたものであり、個別にも使用できます。 [!UICONTROL AEP Web SDK ExperienceEvent] フィールドグループには、他のフィールドグループも含まれています（[!UICONTROL &#x200B; コンシューマーエクスペリエンスイベント &#x200B;] の同じフィールドグループの一部を含む）。 幸い、シームレスに溶け合っています。
+「**[!UICONTROL 消費者エクスペリエンスイベント]**」フィールドグループを選択します。 このフィールドグループには、[!UICONTROL Commerceの詳細 ] にも含まれていた commerce および productListItems オブジェクトが含まれます。 Indeed [!UICONTROL  コンシューマーエクスペリエンスイベント ] は、他の標準フィールドグループをいくつか組み合わせたものであり、個別にも使用できます。 [!UICONTROL AEP Web SDK ExperienceEvent] フィールドグループには、他のフィールドグループも含まれています（[!UICONTROL Consumer Experience Event] の同じフィールドグループの一部を含む）。 幸い、シームレスに溶け合っています。
 
 このスキーマには `Luma Identity ExperienceEvent field group` を追加していないことに注意してください。 これは、web SDKでは ID を収集する方法が異なるからです。 スキーマエディターの **[!UICONTROL 構成]** セクションで **[!UICONTROL XDM ExperienceEvent]** クラスを選択すると、デフォルトで追加されるフィールドの 1 つが **[!UICONTROL IdentityMap]** という名前であることがわかります。 [!DNL IdentityMap] は、様々なAdobe アプリケーションで Platform にリンクするために使用されます。 identityMap を使用して ID が Platform にどのように送信されるかについては、ストリーミング取り込みのレッスンを参照してください。
 
 
 ## 製品カタログスキーマの作成
 
-Luma は、[!UICONTROL Commerceの詳細 &#x200B;] および [!UICONTROL &#x200B; コンシューマーエクスペリエンスイベント &#x200B;] フィールドグループを使用して、標準の productListItems データタイプを介して商品関連イベントの詳細をレポートします。 ただし、Platform に送信したい追加の製品詳細フィールドもあります。 Luma では、これらのフィールドをすべて POS （販売時点管理システム）や e コマースシステムで取り込む代わりに、製品カタログシステムから直接これらのフィールドを取り込むことをお勧めします。 「スキーマ関係」を使用すると、分類または検索のために 2 つのスキーマ間の関係を定義できます。 Luma は、関係を使用して製品の詳細を分類します。 今から始めて、次のレッスンの最後に完成させます。
+Luma は、[!UICONTROL Commerceの詳細 ] および [!UICONTROL  コンシューマーエクスペリエンスイベント ] フィールドグループを使用して、標準の productListItems データタイプを介して商品関連イベントの詳細をレポートします。 ただし、Platform に送信したい追加の製品詳細フィールドもあります。 Luma では、これらのフィールドをすべて POS （販売時点管理システム）や e コマースシステムで取り込む代わりに、製品カタログシステムから直接これらのフィールドを取り込むことをお勧めします。 「スキーマ関係」を使用すると、分類または検索のために 2 つのスキーマ間の関係を定義できます。 Luma は、関係を使用して製品の詳細を分類します。 今から始めて、次のレッスンの最後に完成させます。
 
 >[!NOTE]
 >
@@ -347,34 +345,34 @@ Luma は、[!UICONTROL Commerceの詳細 &#x200B;] および [!UICONTROL &#x200B
 
 1. 「**[!UICONTROL スキーマを作成]**」ボタンを選択します。
 1. スキーマを作成ワークフローで、「**[!UICONTROL その他]**」オプションを選択します。
-   ![&#x200B; 新しいスキーマの作成 &#x200B;](assets/schemas-newSchema-browseClasses.png)
+   ![ 新しいスキーマの作成 ](assets/schemas-newSchema-browseClasses.png)
 1. 「**[!UICONTROL クラスを作成]**」ボタンを選択します
 1. `Luma Product Catalog Class` という名前を付けます
 1. **[!UICONTROL 動作]** は **[!UICONTROL レコード]** のままにします
 1. 「**[!UICONTROL 作成]** ボタンを選択します。
-   ![&#x200B; 新しいクラスの作成 &#x200B;](assets/schemas-productClass.png)
+   ![ 新しいクラスの作成 ](assets/schemas-productClass.png)
 1. 作成した **Luma 製品カタログクラス** が、以下のクラス表に表示されます。 クラスが選択されていることを確認し、「**[!UICONTROL 次へ]**」を選択します。
-   ![&#x200B; 新しいクラスが追加されました &#x200B;](assets/schemas-productClassSelected.png)
+   ![ 新しいクラスが追加されました ](assets/schemas-productClassSelected.png)
 1. スキーマに `Luma Product Catalog Schema` という名前を付けます。
-1. 次のフィールドを持つ `Luma Product Catalog field group` という新しい [!UICONTROL &#x200B; フィールドグループ &#x200B;] を作成します。
+1. 次のフィールドを持つ [!UICONTROL  という新しい ] フィールドグループ `Luma Product Catalog field group` を作成します。
    1. productName：製品名：文字列
    1. productCategory：製品カテゴリ：文字列
    1. productColor：製品カラー：文字列
    1. productSku：製品 SKU：文字列 |必須
    1. productSize：製品サイズ：文字列
    1. productPrice：製品価格：Double
-1. スキーマ **&#x200B;**&#x200B;保存）
+1. スキーマ **** 保存）
 
-新しいスキーマは次のようになります。 「[!UICONTROL &#x200B; 必須フィールド &#x200B;]」セクションに `productSku` のフィールドがどのように表示されるかを確認します。
-![&#x200B; 製品スキーマ &#x200B;](assets/schemas-productSchema.png)
+新しいスキーマは次のようになります。 「`productSku` 必須フィールド [!UICONTROL 」セクションに ] のフィールドがどのように表示されるかを確認します。
+![ 製品スキーマ ](assets/schemas-productSchema.png)
 
 次の手順では、2 つの ExperienceEvent スキーマと `Luma Product Catalog Schema` の間の関係を定義しますが、それを行う前に、次のレッスンで取り組む必要がある追加の手順がいくつかあります。
 
 
 ## その他のリソース
 
-* [&#x200B; エクスペリエンスデータモデル（XDM）システムのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)
+* [ エクスペリエンスデータモデル（XDM）システムのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)
 * [スキーマレジストリ API](https://www.adobe.io/experience-platform-apis/references/schema-registry/)
 
 
-スキーマが用意できたので、次は [ID をマッピング &#x200B;](map-identities.md) できます。
+スキーマが用意できたので、次は [ID をマッピング ](map-identities.md) できます。

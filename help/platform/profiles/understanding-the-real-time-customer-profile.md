@@ -2,23 +2,23 @@
 title: リアルタイム顧客プロファイルについて
 description: このビデオでは、Adobe Experience Platform がリアルタイム顧客プロファイルをアセンブルおよび更新する方法、およびこれらのプロファイルにアクセスして使用する方法を説明します。
 feature: Profiles
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 # リアルタイム顧客プロファイルの概要
 
-このビデオでは、Adobe Experience Platformがリアルタイム顧客プロファイルを構築および更新する方法と、それらのプロファイルにアクセスして使用する方法について説明します。 詳しくは、[&#x200B; リアルタイム顧客プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) を参照してください。
+このビデオでは、Adobe Experience Platformがリアルタイム顧客プロファイルを構築および更新する方法と、それらのプロファイルにアクセスして使用する方法について説明します。 詳しくは、[ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/31660?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## アーキテクチャと機能
 
@@ -35,7 +35,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="リアルタイム顧客プロファイルの概要図" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36809?format=jpeg&nocache=1740415066741&captions=jpn" alt="リアルタイム顧客プロファイルの概要図"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="リアルタイム顧客プロファイルの概要図"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -48,7 +48,7 @@ ht-degree: 13%
                     <p class="is-size-6">このビデオでは、Adobe Experience Platformのリアルタイム顧客プロファイル機能を示す概要図について説明します。</p>
                 </div>
                 <a href="overview-diagram.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>
@@ -58,7 +58,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-merge-policies.md" title="結合ポリシーの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345078?format=jpeg&nocache=1740415066765&captions=jpn" alt="結合ポリシーの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330433?format=jpeg&nocache=1740415066765" alt="結合ポリシーの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ ht-degree: 13%
                     <p class="is-size-6">このビデオでは、Adobe Experience Platformで結合ポリシーを作成する方法を説明します。 結合ポリシーは、顧客プロファイルを作成するために異なるソースのデータセットを組み合わせる際に、どのデータを使用し、優先順位を付けるかを決定するために Platform で使用されるルールです。</p>
                 </div>
                 <a href="create-merge-policies.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>
@@ -81,7 +81,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="union-schemas-overview.md" title="結合スキーマの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342824?format=jpeg&nocache=1740415066755&captions=jpn" alt="結合スキーマの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329940?format=jpeg&nocache=1740415066755" alt="結合スキーマの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +94,7 @@ ht-degree: 13%
                     <p class="is-size-6">リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。</p>
                 </div>
                 <a href="union-schemas-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>
@@ -104,7 +104,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="購入合計の計算属性を作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443552?format=jpeg&nocache=1740415066775&captions=jpn" alt="購入合計の計算属性を作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="購入合計の計算属性を作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ ht-degree: 13%
                     <p class="is-size-6">計算属性を使用して、ユーザーが複数の販売チャネルで行った購入金額を合計する方法を説明します。</p>
                 </div>
                 <a href="create-a-computed-attribute-for-sum-of-purchases.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>
@@ -139,7 +139,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="bring-data-into-the-real-time-customer-profile.md" title="リアルタイム顧客プロファイルにデータを取り込む" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34393?format=jpeg&nocache=1740415067018&captions=jpn" alt="リアルタイム顧客プロファイルにデータを取り込む"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27301?format=jpeg&nocache=1740415067018" alt="リアルタイム顧客プロファイルにデータを取り込む"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -152,7 +152,7 @@ ht-degree: 13%
                     <p class="is-size-6">リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。</p>
                 </div>
                 <a href="bring-data-into-the-real-time-customer-profile.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>
@@ -175,7 +175,7 @@ ht-degree: 13%
                     <p class="is-size-6">リアルタイム顧客プロファイル API を使用してプロファイルストアからデータを削除する方法を説明します。 Profile API を使用すると、データレイクや ID グラフに影響を与えることなく、プロファイルストアからデータを削除できます。 これは、ID グラフの問題をトラブルシューティングし、少数のプロファイルにのみ影響するデータ取り込みでときどき発生するエラーを修正する場合に役立ちます。</p>
                 </div>
                 <a href="delete-profiles.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -185,7 +185,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="「upsert」を使用した特定のプロファイル属性の更新" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443442/?format=jpeg&nocache=1740415067029&captions=jpn" alt="「upsert」を使用した特定のプロファイル属性の更新"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="「upsert」を使用した特定のプロファイル属性の更新"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -198,7 +198,7 @@ ht-degree: 13%
                     <p class="is-size-6">Adobe Experience Platformの「アップサート」機能を使用して、プロファイルの特定の属性を更新する方法を説明します。</p>
                 </div>
                 <a href="update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -218,7 +218,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="アカウントプロファイルの表示" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446578?format=jpeg&nocache=1740415067214&captions=jpn" alt="アカウントプロファイルの表示"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="アカウントプロファイルの表示"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,7 +231,7 @@ ht-degree: 13%
                     <p class="is-size-6">Real-Time CDP B2B editionでアカウントプロファイルを表示する方法を説明します。</p>
                 </div>
                 <a href="view-account-profiles.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> 詳細情報 </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
                 </a>
             </div>
         </div>

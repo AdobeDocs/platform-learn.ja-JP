@@ -4,7 +4,7 @@ description: Real-time CDP – 宛先SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 ## Adobe I/O プロジェクトの設定
 
-この演習では、Adobe I/Oを再度使用して、Adobe Experience Platform API に対してクエリを実行します。Adobe I/O プロジェクトの設定が完了していない場合は、[&#x200B; モジュール 2.1 の演習 3](../rtcdpb2c-1/ex3.md) に戻り、指示に従います。
+この演習では、Adobe I/Oを再度使用して、Adobe Experience Platform API に対してクエリを実行します。Adobe I/O プロジェクトの設定が完了していない場合は、[ モジュール 2.1 の演習 3](../rtcdpb2c-1/ex3.md) に戻り、指示に従います。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 ## Adobe I/Oに対する認証
 
-この演習では、Postmanを再度使用して、Adobe Experience Platform API に対してクエリを実行します。Postman アプリケーションをまだ設定していない場合は、[&#x200B; モジュール 2.1 の演習 3](../rtcdpb2c-1/ex3.md) に戻って、その指示に従ってください。
+この演習では、Postmanを再度使用して、Adobe Experience Platform API に対してクエリを実行します。Postman アプリケーションをまだ設定していない場合は、[ モジュール 2.1 の演習 3](../rtcdpb2c-1/ex3.md) に戻って、その指示に従ってください。
 
 >[!IMPORTANT]
 >
@@ -68,9 +68,9 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、P
 
 >[!NOTE]
 >
->そのPostman コレクションがない場合は、[&#x200B; モジュール 2.1 の演習 3](../rtcdpb2c-1/ex3.md) に戻り、その手順に従って、提供されたPostman コレクションでPostmanを設定します。
+>そのPostman コレクションがない場合は、[ モジュール 2.1 の演習 3](../rtcdpb2c-1/ex3.md) に戻り、その手順に従って、提供されたPostman コレクションでPostmanを設定します。
 
-その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択します。
+その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **`{{SANDBOX_NAME}}`** を選択します。
 
 ![データ取り込み](./images/sdkpm1.png)
 
@@ -115,7 +115,7 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、P
 
 >[!NOTE]
 >
->リクエストをAdobe I/Oに送信する前に、有効な `access_token` が必要であることを忘れないでください。 有効な `access_token` を取得するには、コレクション **3&rbrace;Adobe IO - OAuth** でリクエスト **POST - アクセストークンの取得 &rbrace; を実行します。**
+>リクエストをAdobe I/Oに送信する前に、有効な `access_token` が必要であることを忘れないでください。 有効な `access_token` を取得するには、コレクション **3}Adobe IO - OAuth** でリクエスト **POST - アクセストークンの取得 } を実行します。**
 
 「**送信**」をクリックすると、サーバーテンプレートが作成され、応答の一部として **instanceId** という名前のフィールドが表示されます。 次の手順で必要になるので、書き留めてください。 この例では、**instanceId** は
 `52482c90-8a1e-42fc-b729-7f0252e5cebd`。
@@ -124,7 +124,7 @@ Adobe Experience Platformで独自の宛先を作成する最初の手順は、P
 
 ## 宛先設定の作成
 
-Postmanの **Destination Authoring API** で **Destination configurations** に移動し、クリックしてリクエストを開きます **POST – 宛先設定を作成する**。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **{{SANDBOX_NAME}}** を選択し、`--aepSandboxName--` で置き換えます。
+Postmanの **Destination Authoring API** で **Destination configurations** に移動し、クリックしてリクエストを開きます **POST – 宛先設定を作成する**。 その後、これが表示されます。 **ヘッダー** の下で、キー **x-sandbox-name** の値を手動で更新し、`--aepSandboxName--` に設定する必要があります。 値 **`{{SANDBOX_NAME}}`** を選択し、`--aepSandboxName--` で置き換えます。
 
 ![データ取り込み](./images/sdkpm7.png)
 
@@ -160,7 +160,7 @@ Postmanの **Destination Authoring API** で **Destination configurations** に�
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ja",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
@@ -213,7 +213,7 @@ Postmanの **Destination Authoring API** で **Destination configurations** に�
 
 ![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
-続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL &#x200B; サンドボックス &#x200B;] を選択すると、画面が変更され、専用の [!UICONTROL &#x200B; サンドボックス &#x200B;] が表示されます。
+続行する前に、**サンドボックス** を選択する必要があります。 選択するサンドボックスの名前は ``--aepSandboxName--`` です。 適切な [!UICONTROL  サンドボックス ] を選択すると、画面が変更され、専用の [!UICONTROL  サンドボックス ] が表示されます。
 
 ![データ取り込み](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
@@ -300,6 +300,6 @@ Postmanの **Destination Authoring API** で **Destination configurations** に�
 
 ## 次の手順
 
-[Real-time CDP - オーディエンスの作成とアクションの実行 &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
+[Real-time CDP - オーディエンスの作成とアクションの実行 ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る

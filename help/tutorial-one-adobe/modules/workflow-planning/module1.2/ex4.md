@@ -3,7 +3,8 @@ title: Workfrontの概要
 description: Workfrontの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 2%
@@ -35,7 +36,7 @@ ht-degree: 2%
 **拡張機能設定** ポップアップが表示されます。 このプラグインを使用するために、以下のフィールドを設定します。
 
 | キー | 値 |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **`IMS_ENV`** | **PROD** |
 | **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
 | **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;: true, &quot;publishUrl&quot;: true}&#39;** |
@@ -116,8 +117,8 @@ Workfront UI に戻り、9 つのドット **ハンバーガー** アイコン�
 
 ![WF](./images/wfb20.png)
 
-次の手順：Workfrontで [1.2.2 を校正する &#x200B;](./ex2.md){target="_blank"}
+次の手順：Workfrontで [1.2.2 を校正する ](./ex2.md){target="_blank"}
 
-[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

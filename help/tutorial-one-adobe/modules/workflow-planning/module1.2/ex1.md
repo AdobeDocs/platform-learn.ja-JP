@@ -4,7 +4,7 @@ description: Workfrontの概要
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 Workfrontの主なオブジェクトと概念を次に示します。
 
 | 名前 | 最終更新日 |
-| ---------------------- | ------------ | 
+| ---------------------- | ------------ |
 | ポートフォリオ | 統一された特徴を持つプロジェクトのコレクション。 これらのプロジェクトは通常、同じリソース、予算、時間枠で競合します。 |
 | プログラム | ポートフォリオ内のサブセット。明確に定義されたメリットを達成するために、類似のプロジェクトをグループ化できます。 |
 | プロジェクト | 特定の期間内に完了する必要があり、特定の予算とリソース数を使用する必要がある大量の作業。 管理しやすくするために、プロジェクトを一連のタスクに分割します。 すべてのタスクを完了すると、プロジェクトは完了します。 |
@@ -45,7 +45,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 クリックして **Workfront** を開きます。
 
-![Workfront計画 &#x200B;](./../module1.1/images/wfpl1.png)
+![Workfront計画 ](./../module1.1/images/wfpl1.png)
 
 その後、これが表示されます。
 
@@ -70,7 +70,7 @@ Workfrontの主なオブジェクトと概念を次に示します。
 **メタデータ** で、次のマッピングを設定します。
 
 | Workfront フィールド | Experience Manager Assets フィールド |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **ドキュメント** > **名前** | **wm:documentName** |
 | **プロジェクト** > **名前** | **wm:projectName** |
 | **プロジェクト** > **説明** | **wm:projectDescription** |
@@ -229,8 +229,8 @@ Workfrontの主なオブジェクトと概念を次に示します。
 
 ![WF](./images/wfbaem17.png)
 
-次の手順：Workfrontで [1.2.2 を校正する &#x200B;](./ex2.md){target="_blank"}
+次の手順：Workfrontで [1.2.2 を校正する ](./ex2.md){target="_blank"}
 
-[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

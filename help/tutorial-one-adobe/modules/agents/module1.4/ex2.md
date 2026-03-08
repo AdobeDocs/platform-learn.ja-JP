@@ -3,7 +3,8 @@ title: Web サイトへのBrand Conciergeの実装
 description: Web サイトへのBrand Conciergeの実装
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 0%
@@ -37,21 +38,21 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 新しいカスタムブロックを作成するには、Web サイトにリンクされている GitHub リポジトリに移動します。
 
-![&#x200B; ブロック &#x200B;](./images/block1.png)
+![ ブロック ](./images/block1.png)
 
 #### component-definition.json
 
 ファイル **component-definition.json** が表示されるまで下にスクロールして開きます
 
-![&#x200B; ブロック &#x200B;](./images/block8.png)
+![ ブロック ](./images/block8.png)
 
 **pencl** アイコンをクリックして、ファイルの編集を開始します。
 
-![&#x200B; ブロック &#x200B;](./images/block8a.png)
+![ ブロック ](./images/block8a.png)
 
 **ブロック** が表示されるまで下にスクロールします。 カーソルをコンポーネントの閉じブラケットの下に置きます **カード**
 
-![&#x200B; ブロック &#x200B;](./images/block9.png)
+![ ブロック ](./images/block9.png)
 
 このコードを貼り付け、コードのブロックの後にコンマ **,** を入力します。
 
@@ -75,21 +76,21 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block10.png)
+![ ブロック ](./images/block10.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block10a.png)
+![ ブロック ](./images/block10a.png)
 
 #### component-models.json
 
 ファイル **component-models.json** が表示されるまで下にスクロールし、**鉛筆** アイコンをクリックしてファイルの編集を開始します。
 
-![&#x200B; ブロック &#x200B;](./images/block11.png)
+![ ブロック ](./images/block11.png)
 
 最後の項目が表示されるまで下にスクロールします。 最後のコンポーネントの閉じブラケットの隣にカーソルを置きます。
 
-![&#x200B; ブロック &#x200B;](./images/block12.png)
+![ ブロック ](./images/block12.png)
 
 コンマ **,** を入力し、enter キーを押して、次の行に次のコードをペーストします。
 
@@ -102,31 +103,31 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block13.png)
+![ ブロック ](./images/block13.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block13a.png)
+![ ブロック ](./images/block13a.png)
 
 #### component-filters.json
 
 ファイル **component-filters.json** が表示されるまで下にスクロールし、「**鉛筆**」アイコンをクリックしてファイルの編集を開始します。
 
-![&#x200B; ブロック &#x200B;](./images/block14.png)
+![ ブロック ](./images/block14.png)
 
 この画像が表示されます。
 
-![&#x200B; ブロック &#x200B;](./images/block14a.png)
+![ ブロック ](./images/block14a.png)
 
 **セクション** の下で、コンマ `,` を入力し、現在の最後の行の後にコンポーネント `"brandconcierge"` の ID を貼り付けます。
 
 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block15.png)
+![ ブロック ](./images/block15.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block15a.png)
+![ ブロック ](./images/block15a.png)
 
 #### brandconcierge.css
 
@@ -134,15 +135,15 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 **blocks** フォルダーに移動します。 次に、「**ファイルを追加**」をクリックし、「**新しいファイルを作成**」を選択します。
 
-![&#x200B; ブロック &#x200B;](./images/css1.png)
+![ ブロック ](./images/css1.png)
 
 テキストボックスに `brandconcierge/brandconcierge.css` と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/css2.png)
+![ ブロック ](./images/css2.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/css3.png)
+![ ブロック ](./images/css3.png)
 
 #### brandconcierge.js
 
@@ -150,7 +151,7 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 **ファイルを追加** をクリックし、「**新しいファイルを作成**」を選択します。
 
-![&#x200B; ブロック &#x200B;](./images/js1.png)
+![ ブロック ](./images/js1.png)
 
 テキストボックスに `brandconcierge.js` と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
 
@@ -160,11 +161,11 @@ export default function decorate(block) {
 }
 ```
 
-![&#x200B; ブロック &#x200B;](./images/js2.png)
+![ ブロック ](./images/js2.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/js3.png)
+![ ブロック ](./images/js3.png)
 
 ### 新しいページを作成して新しいカスタムブロックをリンク
 
@@ -339,7 +340,7 @@ AEM CS/EDS web サイトの GitHub プロジェクトに移動します。 **ス
 <script src="/scripts/styleconfigurations.js"></script>
 
 <script>
-		!function (n, o) {
+    !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
           []).push(o), n[o] = function () {
@@ -349,14 +350,14 @@ AEM CS/EDS web サイトの GitHub プロジェクトに移動します。 **ス
       })
     }
       (window, ["alloy"]);
-	</script>
+    </script>
 
 
 <script src="/scripts/alloy.js"></script>
 
 <script>
-	alloy("configure", {
-		defaultConsent: "in",
+    alloy("configure", {
+        defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
         edgeBasePath: "ee",
         datastreamId: "XXXXX", // replace datastreamId
@@ -414,4 +415,4 @@ XXX を GitHub ユーザーアカウント（この例では `main--citisignal-a
 
 [Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

@@ -2,12 +2,12 @@
 title: 顧客データを再充電して、魅力的なエクスペリエンスを提供します
 description: 多数のユースケースに同じデータを使用することで、低品質データの影響を軽減し、価値創出までの時間を短縮し、ROI を向上させる方法を説明します。
 feature: Queries
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -17,14 +17,14 @@ ht-degree: 0%
 # 顧客データを再充電して、魅力的なエクスペリエンスを提供します
 
 オムニチャネルデータは、マーケターがアクティベーションを調整し、結果として生じるカスタマージャーニーを測定するために使用する、実用的な顧客プロファイルを強化するための重要な要素です。 ただし、組織は、このデータの品質、規模、多様性を管理する上で課題に直面しています。 そのためには、低品質のデータの影響を軽減し、価値実現までの時間を短縮し、多数のユースケースに同じデータを使用することで ROI を向上させる、合理化されたソリューションが必要となります。
-詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
+詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
 このビデオでは、以下について説明します。
 
 * 活用できるAdobe Experience Platformのデータ準備機能
 * Adobe Real-Time CDP、Adobe Journey Optimizer、Customer Journey Analyticsによる ROI の向上
 
->[!VIDEO](https://video.tv.adobe.com/v/3454936?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## SQL の例
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->このビデオは、Adobe Summit 2020 セッション *[エクスペリエンスを電動化するためのオムニチャネルデータの充電 &#x200B;](https://business.adobe.com/jp/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* の抜粋です。
+>このビデオは、Adobe Summit 2020 セッション *[エクスペリエンスを電動化するためのオムニチャネルデータの充電 ](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* の抜粋です。

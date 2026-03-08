@@ -4,9 +4,9 @@ description: Experience Platform Web SDK タグ拡張機能のプライバシー
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1604'
 ht-degree: 1%
 
 ---
@@ -54,12 +54,14 @@ Adobe Experience Platform Web SDK タグ拡張機能のプライバシーを設�
    * CCPA の場合、通常、デフォルトの同意は `true` に設定されています。 このチュートリアル全体を通して、このシナリオを **暗黙のオプトイン** として参照します
    * GDPR の場合、デフォルトの同意は一般的に `false` に設定されています。 このチュートリアル全体を通して、このシナリオを **暗黙のオプトアウト** として参照します。
 1. 設定のアクティベート
-<!--
+
+   <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
--->
-    >[!NOTE]
-    >
-    > 通常、上記の手順は、OneTrust や TrustArc など CMP を処理するチームまたは個人が実行し、注意を払います。
+    -->
+
+   >[!NOTE]
+   > 
+   >通常、上記の手順は、OneTrust や TrustArc など CMP を担当するチームまたは個人が実行し、注意を払って実行します。
 
 ## CMP の挿入
 
@@ -70,15 +72,15 @@ Adobe Experience Platform Web SDK タグ拡張機能のプライバシーを設�
 
 Klaro の設定が完了したら、次の設定でタグルールを作成します。
 
-* [!UICONTROL &#x200B; 名前 &#x200B;]: `all pages - library load - Klaro`
-* [!UICONTROL &#x200B; イベント &#x200B;]:[!UICONTROL &#x200B; ライブラリが読み込まれました（ページのトップ） &#x200B;]&#x200B;[!UICONTROL &#x200B; 詳細オプション &#x200B;]/[!UICONTROL &#x200B; 順序 &#x200B;] が 1 に設定されました
-* [!UICONTROL &#x200B; 操作 &#x200B;]: [!UICONTROL &#x200B; カスタムコード &#x200B;]、[!UICONTROL &#x200B; 言語 &#x200B;]: CMP スクリプトを読み込むためのHTML。
+* [!UICONTROL  名前 ]: `all pages - library load - Klaro`
+* [!UICONTROL  イベント ]:[!UICONTROL  ライブラリが読み込まれました（ページのトップ） ][!UICONTROL  詳細オプション ]/[!UICONTROL  順序 ] が 1 に設定されました
+* [!UICONTROL  操作 ]: [!UICONTROL  カスタムコード ]、[!UICONTROL  言語 ]: CMP スクリプトを読み込むためのHTML。
 
-![CMP ルールの挿入 &#x200B;](assets/consent-cmp-inject-rule-1.png)
+![CMP ルールの挿入 ](assets/consent-cmp-inject-rule-1.png)
 
 カスタムコードブロックは次のようになります。
 
-![CMP ルールの挿入 &#x200B;](assets/consent-cmp-inject-rule-2.png)
+![CMP ルールの挿入 ](assets/consent-cmp-inject-rule-2.png)
 
 次に、このルールを保存して開発ライブラリに作成します。タグライブラリを Luma サイトから独自のサイトに切り替えて、同意バナーが表示されていることを検証します。 以下のような CMP バナーが web サイトに表示されます。 現在の訪問者の同意権限を確認するには、ブラウザーのコンソールで次のスニペットを使用します。
 
@@ -86,20 +88,20 @@ Klaro の設定が完了したら、次の設定でタグルールを作成し�
     klaro.getManager().consents 
 ```
 
-![&#x200B; 同意バナー &#x200B;](assets/consent-cmp-banner.png)
+![ 同意バナー ](assets/consent-cmp-banner.png)
 
 デバッグモードに入るには、Adobe Experience Platform debugger で次のチェックボックスを使用します。
 
-![&#x200B; タグデバッグモード &#x200B;](assets/consent-rule-debugging.png)
+![ タグデバッグモード ](assets/consent-rule-debugging.png)
 
 また、訪問者の同意値がここに保存されるので、このチュートリアルを進めながら、Cookie とローカルストレージを複数回消去する必要がある場合もあります。 これは、次のようにして実行できます。
 
-![&#x200B; 貯蔵のクリア &#x200B;](assets/consent-clearning-cookies.png)
+![ 貯蔵のクリア ](assets/consent-clearning-cookies.png)
 
 ## 同意シナリオ
 
 GDPR、CCPA などのプライバシー上の行為は、同意実装の設計方法において重要な役割を果たします。 このレッスンでは、2 つの最も目立つプライバシー行為の下で、訪問者が同意バナーとやり取りする方法を調べます。
-![&#x200B; 同意シナリオ &#x200B;](assets/consent-scenarios.jpeg)
+![ 同意シナリオ ](assets/consent-scenarios.jpeg)
 
 
 ### シナリオ 1：暗黙のオプトイン
@@ -111,7 +113,7 @@ GDPR、CCPA などのプライバシー上の行為は、同意実装の設計�
 1. Experience Platform Web SDK タグ拡張機能の **[!UICONTROL 同意]** セクションで、**[!UICONTROL デフォルトの同意]** が **[!UICONTROL 受信]** に設定されていることを確認します。
 
 
-   ![&#x200B; 同意AEP拡張機能のプライバシー設定 &#x200B;](assets/consent-web-sdk-privacy-in.png)
+   ![ 同意AEP拡張機能のプライバシー設定 ](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
@@ -126,7 +128,7 @@ GDPR、CCPA などのプライバシー上の行為は、同意実装の設計�
 4. Luma サイトでタグデバッグを有効にし、ページをリロードします。 ブラウザーの開発者コンソールで、defaultConsent が **[!UICONTROL In]** と等しいことがわかります
 5. この設定を使用すると、訪問者が Cookie を拒否してオプトアウトするまで、Experience Platform Web SDK拡張機能は Platform Edge Networkにネットワークリクエストを送信します。
 
-   ![&#x200B; 同意の暗黙のオプトイン &#x200B;](assets/consent-Implied-optin-default.png)
+   ![ 同意の暗黙のオプトイン ](assets/consent-Implied-optin-default.png)
 
 
 
@@ -154,13 +156,13 @@ GDPR、CCPA などのプライバシー上の行為は、同意実装の設計�
 
 1. 訪問者が **拒否する** をクリックしたときにトリガーとなるルールを作成します。  このルールに `all pages - click consent banner - set consent "out"` という名前を付ける
 
-1. **[!UICONTROL イベント]** として、**[!UICONTROL CSS セレクターに一致する要素]**&#x200B;**[!UICONTROL で]** クリック `#klaro .cn-decline` を使用します
+1. **[!UICONTROL イベント]** として、**[!UICONTROL CSS セレクターに一致する要素]****[!UICONTROL で]** クリック `#klaro .cn-decline` を使用します
 
-   ![&#x200B; ルール条件ユーザーが「I decline」をクリックする &#x200B;](assets/consent-optOut-clickEvent.png)
+   ![ ルール条件ユーザーが「I decline」をクリックする ](assets/consent-optOut-clickEvent.png)
 
 1. **[!UICONTROL Action]** として、Experience Platform Web SDK拡張機能 [!UICONTROL Set consent] [!UICONTROL action type] を使用して、同意を「out」として設定します。
 
-   ![&#x200B; 同意ルールのオプトアウトアクション &#x200B;](assets/consent-rule-optout-action.png)
+   ![ 同意ルールのオプトアウトアクション ](assets/consent-rule-optout-action.png)
 
 1. ライブラリの保存と再構築
 
@@ -182,7 +184,7 @@ Luma デモ Web サイトに移動して検証し、Cookie を拒否し、オプ
 
 1. **保存** 更新した設定をタグライブラリに追加し、再構築します。
 
-   ![AEP拡張機能の同意設定 &#x200B;](assets/consent-implied-opt-out.png)
+   ![AEP拡張機能の同意設定 ](assets/consent-implied-opt-out.png)
 
 
    この設定を使用すると、Experience Platform Web SDKでは、同意権限が **[!UICONTROL In]** に変わらない限り、リクエストが実行されないようにします。 これは、訪問者がオプトインして手動で Cookie を受け入れた結果として発生する可能性があります。
@@ -192,30 +194,30 @@ Luma デモ Web サイトに移動して検証し、Cookie を拒否し、オプ
 
 1. Luma サイトをリロードすると、`defaultConsent` が **[!UICONTROL アウト]** に設定され、web SDK リクエストがおこなわれていないことがわかります
 
-   ![&#x200B; 同意の暗黙のオプトアウト &#x200B;](assets/consent-implied-out-cmp.png)
+   ![ 同意の暗黙のオプトアウト ](assets/consent-implied-out-cmp.png)
 
 訪問者がオプトイン （トラッキング cookie を受け入れる）を決定した場合、同意を変更し、**[!UICONTROL イン]** に設定する必要があります。 これをルールで行う方法を次に示します。
 
 1. 訪問者が **問題ありません** をクリックしたときにトリガーとなるルールを作成します。  このルールに `all pages - click consent banner - set consent "in"` という名前を付ける
 
-1. **[!UICONTROL イベント]** として、**[!UICONTROL CSS セレクターに一致する要素]**&#x200B;**[!UICONTROL で]** クリック `#klaro .cm-btn-success` を使用します
+1. **[!UICONTROL イベント]** として、**[!UICONTROL CSS セレクターに一致する要素]****[!UICONTROL で]** クリック `#klaro .cm-btn-success` を使用します
 
-   ![&#x200B; ルール条件ユーザーが「OK」をクリックする &#x200B;](assets/consent-optIn-clickEvent.png)
+   ![ ルール条件ユーザーが「OK」をクリックする ](assets/consent-optIn-clickEvent.png)
 
 1. 「[!UICONTROL In] として、Experience Platform Web SDK **[!UICONTROL Extension]**、**[!UICONTROL Action Type]** の **[!UICONTROL 同意の設定]**、**[!UICONTROL 一般的な同意]** を使用して、アクションを追加します。
 
-   ![&#x200B; 同意ルールのオプトインアクション &#x200B;](assets/consent-rule-optin-action.png)
+   ![ 同意ルールのオプトインアクション ](assets/consent-rule-optin-action.png)
 
-   ここで注意すべきことの 1 つは、この [!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションが、最初に送信されて ID を確立するリクエストになることです。 このため、最初のリクエスト自体で ID を同期することが重要な場合があります。 ID マップは、ID タイプデータ要素を渡すことで、[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションに追加できます。
+   ここで注意すべきことの 1 つは、この [!UICONTROL  同意を設定 ] アクションが、最初に送信されて ID を確立するリクエストになることです。 このため、最初のリクエスト自体で ID を同期することが重要な場合があります。 ID マップは、ID タイプデータ要素を渡すことで、[!UICONTROL  同意を設定 ] アクションに追加できます。
 
 1. **[!UICONTROL 保存]** ルールをライブラリに保存し、再構築します。
 
 このルールを設定したら、訪問者がオプトインしたときにイベントコレクションが開始されます。
 
-![&#x200B; 訪問者の同意後のオプション &#x200B;](assets/consent-post-user-optin.png)
+![ 訪問者の同意後のオプション ](assets/consent-post-user-optin.png)
 
 
-Web SDKの同意について詳しくは、[&#x200B; 顧客の同意環境設定のサポート &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/consent/supporting-consent) を参照してください。
+Web SDKの同意について詳しくは、[ 顧客の同意環境設定のサポート ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent) を参照してください。
 
 >[!TIP]
 >
@@ -223,8 +225,8 @@ Web SDKの同意について詳しくは、[&#x200B; 顧客の同意環境設定
 
 
 
-[!UICONTROL &#x200B; 同意を設定 &#x200B;] アクションについて詳しくは、[&#x200B; 同意を設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
+[!UICONTROL  同意を設定 ] アクションについて詳しくは、[ 同意を設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) を参照してください。
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

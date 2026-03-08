@@ -2,14 +2,14 @@
 title: データセットとバッチの削除
 description: Adobe Experience Platform でデータセットとバッチを削除する方法について説明します。
 feature: Data Hygiene, Datasets
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 356
 last-substantial-update: 2024-06-28T00:00:00Z
 jira: KT-12388
 exl-id: 76e6cba0-5175-4cc4-8b80-caa4c39bfba1
-source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 11%

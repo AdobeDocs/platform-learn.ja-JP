@@ -4,7 +4,7 @@ description: XDM オブジェクトを作成し、タグでデータ要素をマ
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # データ要素の作成
 
-[Luma デモ web サイト &#x200B;](https://luma.enablementadobe.com) で、コンテンツ、コマース、ID データのタグにデータ要素を作成する方法を説明します。 次に、XDM スキーマのフィールドに値を入力します。
+[Luma デモ web サイト ](https://luma.enablementadobe.com) で、コンテンツ、コマース、ID データのタグにデータ要素を作成する方法を説明します。 次に、XDM スキーマのフィールドに値を入力します。
 
 
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->このレッスンのデータは、`[!UICONTROL adobeDataLayer]`Luma サイト [&#x200B; の &#x200B;](https://luma.enablementadobe.com) データレイヤーから得られます。 データレイヤーを表示するには、開発者コンソールを開き、`[!UICONTROL adobeDataLayer]` と入力して、使用可能な完全なデータレイヤーを表示します。![adobeDataLayer データレイヤー &#x200B;](assets/data-element-data-layer-new.png)
+>このレッスンのデータは、`[!UICONTROL adobeDataLayer]`Luma サイト [ の ](https://luma.enablementadobe.com) データレイヤーから得られます。 データレイヤーを表示するには、開発者コンソールを開き、`[!UICONTROL adobeDataLayer]` と入力して、使用可能な完全なデータレイヤーを表示します。![adobeDataLayer データレイヤー ](assets/data-element-data-layer-new.png)
 
 
 ## データレイヤーのアプローチ
@@ -56,7 +56,7 @@ Adobe Experience Platformのタグ機能を使用して、データレイヤー�
 
 ### データレイヤーへの XDM の実装
 
-このアプローチでは、web 開発者は、データレイヤーの構造として完全に定義された XDM オブジェクトを実装します。 次に、データレイヤー全体をタグの XDM オブジェクトにマッピングするだけです。 実装でタグマネージャーを使用しない場合、[XDM sendEvent コマンド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data) を使用してアプリケーションから直接 XDM にデータを送信できるので、この方法が理想的な可能性があります。 タグを使用する場合は、データレイヤー全体をパススルー JSON オブジェクトとして XDM に取り込むカスタムコードデータ要素を作成できます。 次に、パススルー JSON をイベント送信アクションの XDM オブジェクトフィールドにマッピングします。
+このアプローチでは、web 開発者は、データレイヤーの構造として完全に定義された XDM オブジェクトを実装します。 次に、データレイヤー全体をタグの XDM オブジェクトにマッピングするだけです。 実装でタグマネージャーを使用しない場合、[XDM sendEvent コマンド ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data) を使用してアプリケーションから直接 XDM にデータを送信できるので、この方法が理想的な可能性があります。 タグを使用する場合は、データレイヤー全体をパススルー JSON オブジェクトとして XDM に取り込むカスタムコードデータ要素を作成できます。 次に、パススルー JSON をイベント送信アクションの XDM オブジェクトフィールドにマッピングします。
 
 以下に、Adobe Client Data Layer フォーマットを使用したデータレイヤーの外観の例を示します。
 
@@ -109,7 +109,7 @@ window.adobeDataLayer.push({
 * XDM に送信するデータを更新するために、開発チームと開発サイクルに完全に依存している
 * XDM はデータレイヤーから正確なペイロードを受け取るので、柔軟性は限られています
 * スクレーピング、永続性、迅速なデプロイメントのための機能など、ビルトインのタグ機能は使用できません
-* サードパーティのピクセルに対してデータレイヤーを使用するのは難しいです（ただし、これらのピクセルを [&#x200B; イベント転送 &#x200B;](setup-event-forwarding.md)）に移動する必要がある場合があります）。
+* サードパーティのピクセルに対してデータレイヤーを使用するのは難しいです（ただし、これらのピクセルを [ イベント転送 ](setup-event-forwarding.md)）に移動する必要がある場合があります）。
 * データレイヤーと XDM の間でデータを変換できない
 
 ### タグの XDM へのマッピング
@@ -133,12 +133,12 @@ window.adobeDataLayer.push({
 
 ### データストリームの XDM へのマッピング
 
-このアプローチでは、[&#x200B; データ収集のためのデータ準備 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep) と呼ばれるデータストリーム設定に組み込まれた機能を使用し、タグの XDM へのデータレイヤー変数のマッピングをスキップします。
+このアプローチでは、[ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) と呼ばれるデータストリーム設定に組み込まれた機能を使用し、タグの XDM へのデータレイヤー変数のマッピングをスキップします。
 
 #### 長所
 
 * ポイントアンドクリック UI での個々の変数の XDM への柔軟なマッピング
-* XDM に送信する前にデータレイヤーから [&#x200B; 新しい値を計算 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/functions) または [&#x200B; データタイプを変換 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/data-handling) する機能
+* XDM に送信する前にデータレイヤーから [ 新しい値を計算 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) または [ データタイプを変換 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) する機能
 
 #### 短所
 
@@ -151,7 +151,7 @@ window.adobeDataLayer.push({
 >
 > Google データレイヤー
 > 
-> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、タグの [0&rbrace;Google Data Layer extension&rbrace; を使用できます。 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/google-data-layer/overview)これにより、IT チームにサポートを依頼することなく、Adobe テクノロジーをより迅速にデプロイできます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
+> 組織が既にGoogle Analyticsを使用しており、web サイトに従来のGoogle dataLayer オブジェクトがある場合は、タグの [0}Google Data Layer extension} を使用できます。 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)これにより、IT チームにサポートを依頼することなく、Adobe テクノロジーをより迅速にデプロイできます。 Google データレイヤーを XDM にマッピングするには、上記と同じ手順に従います。
 
 
 ## データ要素を作成してデータレイヤーをキャプチャする
@@ -160,7 +160,7 @@ XDM フィールドに値を入力する前に、まず必要なデータポイ�
 
 1. **[!UICONTROL データ要素]** に移動し、「**[!UICONTROL データ要素を追加]** （タグプロパティに既存のデータ要素がない場合は「**[!UICONTROL 新しいデータ要素を作成]**」を選択します
 
-   ![&#x200B; データ要素の作成 &#x200B;](assets/data-element-create.png)
+   ![ データ要素の作成 ](assets/data-element-create.png)
 
 1. データ要素に「`Page Name`」と名前を付けます。
 1. **[!UICONTROL JavaScript変数]** **[!UICONTROL データ要素タイプ]** を使用して、Luma のデータレイヤーの値を指すようにします。`adobeDataLayer.0.page.name`
@@ -171,7 +171,7 @@ XDM フィールドに値を入力する前に、まず必要なデータポイ�
 
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![&#x200B; ページ名データ要素 &#x200B;](assets/data-element-pageName.png)
+   ![ ページ名データ要素 ](assets/data-element-pageName.png)
 
 同じ手順に従って、これらの追加のデータ要素を作成します。
 
@@ -184,7 +184,7 @@ XDM フィールドに値を入力する前に、まず必要なデータポイ�
 * **`Ecommerce Product Id`** にマッピングされた `adobeDataLayer.0.ecommerce.detail.products.0.id`
 * **`Ecommerce Product Name`** にマッピングされた `adobeDataLayer.0.ecommerce.detail.products.0.name`
 * **`Ecommerce Purchase Id`** にマッピングされた `adobeDataLayer.0.ecommerce.purchase.actionField.id`
-* **`Ecommerce Product Category`** カスタムコード **&#x200B;**&#x200B;データ要素タイプ **[!UICONTROL と次のカスタムコードを使用する]** 要があります。
+* **`Ecommerce Product Category`** カスタムコード **** データ要素タイプ **[!UICONTROL と次のカスタムコードを使用する]** 要があります。
 
   ```javascript
   return adobeDataLayer[0].ecommerce.detail.products[0].category+":"+adobeDataLayer[0].ecommerce.detail.products[0].subcategory;
@@ -227,13 +227,13 @@ XDM フィールドに値を入力する前に、まず必要なデータポイ�
 
 >[!CAUTION]
 >
->[!UICONTROL JavaScript変数 &#x200B;] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素を `adobeDataLayer[0].page.name` **として参照することは機能しません**。
+>[!UICONTROL JavaScript変数 ] データ要素タイプは、配列参照を角括弧ではなくドットとして扱うので、ユーザー名データ要素を `adobeDataLayer[0].page.name` **として参照することは機能しません**。
 
 ## XDM およびデータオブジェクト用の変数データ要素の作成
 
 作成したデータ要素は、XDM オブジェクト（Platform アプリケーション用）とデータオブジェクト（Analytics、Target およびAudience Manager用）の作成に使用されます。 これらのオブジェクトには、非常に簡単に作成できる **[!UICONTROL 変数]** データ要素と呼ばれる独自の特別なデータ要素があります。
 
-XDM の変数データ要素を作成するには、[&#x200B; スキーマの設定 &#x200B;](configure-schemas.md) レッスンで作成したスキーマに関連付けます。
+XDM の変数データ要素を作成するには、[ スキーマの設定 ](configure-schemas.md) レッスンで作成したスキーマに関連付けます。
 
 1. 「**[!UICONTROL データ要素を追加]**」を選択します。
 1. データ要素に `XDM Variable` という名前を付けます。 タグプロパティを整理しやすくするために、XDM に固有のデータ要素を「XDM」というプレフィックスを付けることをお勧めします
@@ -244,7 +244,7 @@ XDM の変数データ要素を作成するには、[&#x200B; スキーマの設
 1. 適切な **[!UICONTROL スキーマ]** を選択します。ここでは `Luma Web Event Data` です
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![XDM の変数データ要素 &#x200B;](assets/analytics-tags-data-element-xdm-variable.png)
+   ![XDM の変数データ要素 ](assets/analytics-tags-data-element-xdm-variable.png)
 
 次に、データオブジェクトの変数データ要素を作成します。
 
@@ -256,13 +256,13 @@ XDM の変数データ要素を作成するには、[&#x200B; スキーマの設
 1. このチュートリアルの一部として実装するExperience Cloud ソリューションを選択します
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![&#x200B; データオブジェクトの可変データ要素 &#x200B;](assets/data-element-data-variable.png)
+   ![ データオブジェクトの可変データ要素 ](assets/data-element-data-variable.png)
 
 
 これらの手順の最後で、次のデータ要素が作成されているはずです。
 
 | コア拡張機能のデータ要素 | Platform Web SDK Extension のデータ要素 |
------------------------------|-------------------------------
+| ----------------------------- | ------------------------------- |
 | `Ecommerce Cart Products` | `Data Variable` |
 | `Ecommerce Product Category` | `XDM Variable` |
 | `Ecommerce Product Id` | |
@@ -277,4 +277,4 @@ XDM の変数データ要素を作成するには、[&#x200B; スキーマの設
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=ja)
+>Adobe Experience Platform Web SDKの学習にご協力いただき、ありがとうございます。 ご不明な点がある場合や、一般的なフィードバックを共有したい場合、または今後のコンテンツに関するご提案がある場合は、この [Experience League Community Discussion の投稿でお知らせください ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

@@ -3,11 +3,11 @@ user-guide-title: Web SDK を使用した Adobe Experience Cloud 実装のチュ
 breadcrumb-title: Web SDK チュートリアル
 solution: Data Collection
 feature: Web SDK,Tags
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 5645331be467c4128d9267b8c2656f46bada25c2
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 29%

@@ -3,11 +3,11 @@ title: フェデレーションされたオーディエンスでジャーニー�
 seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: フェデレーションされたオーディエンスでジャーニーを作成
 description: この演習では、Journey Optimizer ジャーニーでフェデレーテッド オーディエンスを使用します。
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -26,7 +26,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 1. **ジャーニー** ポータルに移動し、「**ジャーニーを作成**」ボタンをクリックします。
 
-   ![&#x200B; ジャーニーの作成 &#x200B;](assets/create-journey.png)
+   ![ ジャーニーの作成 ](assets/create-journey.png)
 
 2. 新しい名前でジャーニープロパティを更新します。 私たちの例では **`SecurFinancial - Home Loan Offer`** です。
 
@@ -36,7 +36,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 5. 検索バーでオーディエンスを検索します。 この例では **`SecureFinancial Customers - No Loans, Good Credit`** です。 「**保存**」をクリックします。
 
-   ![&#x200B; ジャーニーの作成 &#x200B;](assets/select-audience.png)
+   ![ ジャーニーの作成 ](assets/select-audience.png)
 
 6. 右側のメニューで、すべての設定をデフォルトのままにして、「**保存**」をクリックします。
 
@@ -70,7 +70,7 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 11. 名のパーソナライゼーションが追加されたので、パーソナライゼーション変数の前に `Hi, ` を追加します。 次に、「**保存**」をクリックします。
 
-    ![journey-email-save](assets/journey-email-save.png)
+   ![journey-email-save](assets/journey-email-save.png)
 
 12. 「**戻る** ボタンを 2 回クリックして、ジャーニーキャンバスに戻ります。 次に、右側の **アクション：メール** メニューで、「**保存**」をクリックします。
 
@@ -78,4 +78,4 @@ SecurFinancial の話、特に顧客のリターゲティングとパーソナ�
 
 AJOで、federated audience 属性と federated enrichment 属性を使用してジャーニーを作成しました。
 
-次に、Data Warehouse のデータを使用して、Experience Platformで [&#x200B; オーディエンスを強化 &#x200B;](federated-audience-composition.md) する方法を見ていきます。
+次に、Data Warehouse のデータを使用して、Experience Platformで [ オーディエンスを強化 ](federated-audience-composition.md) する方法を見ていきます。

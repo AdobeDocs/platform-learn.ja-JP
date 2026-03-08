@@ -5,8 +5,8 @@ user-guide-description: Experience Platform でデータ収集のパワーユー
 solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
-role: Developer, Data Engineer
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+role: Developer
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 32%
@@ -27,15 +27,15 @@ ht-degree: 32%
    + [ルールの作成](tags/build-rules.md)
    + [スタックルール](tags/stack-rules.md)
    + [ライブラリのビルドと公開](tags/build-and-publish-a-library.md)
-   + [Web SDKを使用した web サイトへの実装](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Solution SDK を使用して web サイトに実装](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ja){target="_blank"}
-   + [&#x200B; モバイルアプリへの実装](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Web SDKを使用した web サイトへの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+   + [Solution SDK を使用して web サイトに実装 ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ja){target="_blank"}
+   + [ モバイルアプリへの実装 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web SDK{#web-sdk}
    + [概要](web-sdk/overview.md)
    + [デモ](web-sdk/demo.md)
-   + [&#x200B; 実装チュートリアル（タグ付き）](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Target の移行チュートリアル](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
-   + [Analytics の移行チュートリアル](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [ 実装チュートリアル（タグ付き） ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+   + [Target の移行チュートリアル ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Analytics の移行チュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + 同意{#consent}
       + [概要](web-sdk/consent/overview.md)
       + [Adobe標準を使用して同意値を設定する](web-sdk/consent/set-consent-adobe.md)
@@ -46,9 +46,9 @@ ht-degree: 32%
    + [概要](mobile-sdk/overview.md)
    + [モバイルプロパティの作成](mobile-sdk/create-mobile-properties.md)
    + [依存関係マネージャーの使用](mobile-sdk/use-dependency-managers.md)
-   + [&#x200B; モバイルアプリへの実装](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [ モバイルアプリへの実装 ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
-   + [Target の移行チュートリアル](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
+   + [Target の移行チュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + サーバー API{#server-api}
    + [概要](server-api/overview.md)
    + [API の基本](server-api/introduction.md)

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 以下の変数を定義する必要があります。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `CONST_client_id` | Adobe I/O プロジェクトのクライアント ID |
 | `CONST_client_secret` | Adobe I/O プロジェクトのクライアント秘密鍵 |
 | `CONST_scope` | Adobe I/O プロジェクトの範囲 |
@@ -124,7 +124,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 ![WF Fusion](./images/wffusion20.png)
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
 | `Method` | `POST` |
 | `Body Type` | `x-www-form-urlencoded` |
@@ -136,7 +136,7 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 次の各値の項目を追加します。
 
 | キー | 値 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `client_id` | `CONST_client_id` 用の事前定義済みの変数 |
 | `client_secret` | `CONST_client_secret` 用の事前定義済みの変数 |
 | `scope` | `CONST_scope` 用の事前定義済みの変数 |
@@ -240,8 +240,8 @@ Workfront Fusion とAdobe I/Oを使用してAdobe Firefly Services API をクエ
 
 ## 次の手順
 
-[&#x200B; コネクタを使用した自動化 &#x200B;](./ex4.md){target="_blank"} を参照してください
+[ コネクタを使用した自動化 ](./ex4.md){target="_blank"} を参照してください
 
-[Workfront Fusion のCreative Workflow Automation に戻る &#x200B;](./automation.md){target="_blank"}
+[Workfront Fusion のCreative Workflow Automation に戻る ](./automation.md){target="_blank"}
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

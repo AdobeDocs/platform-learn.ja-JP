@@ -2,11 +2,11 @@
 user-guide-title: データアーキテクトおよびデータエンジニア向け Experience Platform 使用の手引き
 breadcrumb-title: データアーキテクトおよびエンジニア向けスタートガイド
 user-guide-description: Platform の実装を開始するための実践チュートリアルです。 サンプルデータとアセットが用意されています。
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 40%
