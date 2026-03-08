@@ -27,4 +27,4 @@ Adobe Experience Platformの Federated Audience Composition モジュールで�
 
 ![fac-architecture](assets/fac-architecture.png)
 
-次に、[Data Warehouse接続 ](data-warehouse-connection.md) の作成に進みます。
+次に、[Data Warehouse接続 &#x200B;](data-warehouse-connection.md) の作成に進みます。

@@ -17,7 +17,7 @@ ht-degree: 0%
 # 顧客データを再充電して、魅力的なエクスペリエンスを提供します
 
 オムニチャネルデータは、マーケターがアクティベーションを調整し、結果として生じるカスタマージャーニーを測定するために使用する、実用的な顧客プロファイルを強化するための重要な要素です。 ただし、組織は、このデータの品質、規模、多様性を管理する上で課題に直面しています。 そのためには、低品質のデータの影響を軽減し、価値実現までの時間を短縮し、多数のユースケースに同じデータを使用することで ROI を向上させる、合理化されたソリューションが必要となります。
-詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
+詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
 このビデオでは、以下について説明します。
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->このビデオは、Adobe Summit 2020 セッション *[エクスペリエンスを電動化するためのオムニチャネルデータの充電 ](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* の抜粋です。
+>このビデオは、Adobe Summit 2020 セッション *[エクスペリエンスを電動化するためのオムニチャネルデータの充電 &#x200B;](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* の抜粋です。

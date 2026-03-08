@@ -117,8 +117,8 @@ Workfront UI に戻り、9 つのドット **ハンバーガー** アイコン�
 
 ![WF](./images/wfb20.png)
 
-次の手順：Workfrontで [1.2.2 を校正する ](./ex2.md){target="_blank"}
+次の手順：Workfrontで [1.2.2 を校正する &#x200B;](./ex2.md){target="_blank"}
 
-[Adobe Workfrontによるワークフロー管理 ](./workfront.md){target="_blank"} に戻る
+[Adobe Workfrontによるワークフロー管理 &#x200B;](./workfront.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

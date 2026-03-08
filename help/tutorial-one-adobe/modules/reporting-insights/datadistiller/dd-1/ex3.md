@@ -172,8 +172,8 @@ limit 1;
 
 ## 次の手順
 
-[2.1.4 クエリ、クエリ、クエリ…およびチャーン分析に移動 ](./ex4.md){target="_blank"}
+[2.1.4 クエリ、クエリ、クエリ…およびチャーン分析に移動 &#x200B;](./ex4.md){target="_blank"}
 
-[ クエリサービス ](./query-service.md){target="_blank"} に戻る
+[&#x200B; クエリサービス &#x200B;](./query-service.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

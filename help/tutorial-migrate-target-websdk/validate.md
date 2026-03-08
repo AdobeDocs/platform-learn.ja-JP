@@ -19,7 +19,7 @@ Target 実装を at.js から Platform Web SDKに移行した後、実稼動サ�
 * オーディエンスとプロファイルスクリプトを再確認して、Platform Web SDKと互換性があることを確認します
 * Adobeまたはサードパーティアプリケーションとの統合が正しく機能することを確認します
 
-Target の実装は、使用するサイトのアーキテクチャと機能によって異なります。 以下の表を出発点として使用し、実装に固有の項目を追加することができます。 このチュートリアルの [ デバッグページ ](debugging.md) には、この検証に役立つツールが表示されています。
+Target の実装は、使用するサイトのアーキテクチャと機能によって異なります。 以下の表を出発点として使用し、実装に固有の項目を追加することができます。 このチュートリアルの [&#x200B; デバッグページ &#x200B;](debugging.md) には、この検証に役立つツールが表示されています。
 
 ## 技術的検証
 
@@ -31,7 +31,7 @@ Target の実装は、使用するサイトのアーキテクチャと機能に�
 | ページリクエストを使用してカタログに入力する場合、Recommendations カタログは期待どおりに更新されます | |
 | プロファイルパラメーターが Target に正常に渡されました | Debugger でのEdge トレースの表示 |
 | データストリームマッパーで XDM にマッピングされたパラメーターは、Target に正しく渡されます | Debugger やAssuranceのEdge Trace 機能を使用した検証 |
-| Target コンテンツは、該当する `sendEvent` 応答で返されます | オプションが `renderDecisions``true` 設定されている場合か、範囲がリクエストされ、ユーザーが特定の Target アクティビティの対象となる場合に想定されます |
+| Target コンテンツは、該当する `sendEvent` 応答で返されます | オプションが `renderDecisions` `true` 設定されている場合か、範囲がリクエストされ、ユーザーが特定の Target アクティビティの対象となる場合に想定されます |
 | `decisioning.propositionDisplay` イベントは、VEC ベースのアクティビティのレンダリング後に発生します | 自動的かつオンデマンドにレンダリングされるアクティビティでは、別々のイベント呼び出しが想定されます |
 | `decisioning.propositionDisplay` イベントは、フォームベースのアクティビティのレンダリング後に発生します | 特定の実装にのみ適用できます。 この呼び出しを実行するには、カスタムコードが必要です。 |
 | `decisioning.propositionDisplay` イベントは、オファーが SPA ビューの変更に適用されたときに発生します | SPA 実装にのみ適用 |
@@ -92,8 +92,8 @@ Target の実装は、使用するサイトのアーキテクチャと機能に�
 
 上記の検証手順を実行すれば、Platform Web SDK実装を実稼動環境に移行する準備が整ったことが確認できます。
 
-次に、Platform Web SDKを使用した Target 実装のトラブルシューティング [ 方法について説明 ](debugging.md) ます。
+次に、Platform Web SDKを使用した Target 実装のトラブルシューティング [&#x200B; 方法について説明 &#x200B;](debugging.md) ます。
 
 >[!NOTE]
 >
->アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[ このコミュニティのディスカッション ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。
+>アドビは、at.js から web SDKへの Target の移行を成功させるために取り組んでいます。 移行の際に問題が発生した場合、またはこのガイドに重要な情報が欠落していると感じる場合は、[&#x200B; このコミュニティのディスカッション &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) に投稿してお知らせください。

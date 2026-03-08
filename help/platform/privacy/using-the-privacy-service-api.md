@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Privacy Service API の使用
 
-リストやルックアップ、ジョブリクエストの作成、同意リクエストの作成など、API エンドポイントへの呼び出しを行う方法について説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
+リストやルックアップ、ジョブリクエストの作成、同意リクエストの作成など、API エンドポイントへの呼び出しを行う方法について説明します。 詳しくは、[&#x200B; プライバシーサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)

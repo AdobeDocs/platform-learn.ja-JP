@@ -199,8 +199,8 @@ Journey Optimizerの **ホーム** ビューにリダイレクトされます。
 
 ## 次の手順
 
-[3.3.3 アプリ内メッセージを使用したキャンペーンの設定に移動 ](./ex3.md){target="_blank"}
+[3.3.3 アプリ内メッセージを使用したキャンペーンの設定に移動 &#x200B;](./ex3.md){target="_blank"}
 
-[Adobe Journey Optimizer: プッシュとアプリ内メッセージ ](ajopushinapp.md){target="_blank"} に戻る
+[Adobe Journey Optimizer: プッシュとアプリ内メッセージ &#x200B;](ajopushinapp.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

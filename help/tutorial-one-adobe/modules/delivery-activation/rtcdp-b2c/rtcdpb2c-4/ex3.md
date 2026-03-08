@@ -22,7 +22,7 @@ Adobe Experience Platformでイベントハブの宛先を設定するには、�
 - Azure SAS キー名
 - Azure SAS キー
 
-Event Hub と EventHub 名前空間は、前の演習 [Azureの Event Hub の設定 ](./ex2.md) で定義しています。
+Event Hub と EventHub 名前空間は、前の演習 [Azureの Event Hub の設定 &#x200B;](./ex2.md) で定義しています。
 
 ### Event Hubs 名前空間
 
@@ -107,8 +107,8 @@ URL:[https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ## 次の手順
 
-[2.4.4 オーディエンスの作成 ](./ex4.md){target="_blank"} に移動します。
+[2.4.4 オーディエンスの作成 &#x200B;](./ex4.md){target="_blank"} に移動します。
 
-[Real-Time CDP Audience Activation:Microsoft Azure Event Hub に戻る ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[Real-Time CDP Audience Activation:Microsoft Azure Event Hub に戻る &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-[ すべてのモジュール ](./../../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../../overview.md){target="_blank"} に戻る

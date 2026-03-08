@@ -34,4 +34,4 @@ Federated Audience Composition を使用すると、Enterprise Data Warehouse �
 
 ![federated-method-1-2](assets/federated-method-1-2.png)
 
-連合データを使用して [ 「その時点の」パーソナライゼーションを配信 ](deliver-in-the-moment-personalization.md) する別の例を見てみましょう。
+連合データを使用して [&#x200B; 「その時点の」パーソナライゼーションを配信 &#x200B;](deliver-in-the-moment-personalization.md) する別の例を見てみましょう。

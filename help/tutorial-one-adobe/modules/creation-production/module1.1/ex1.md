@@ -34,7 +34,7 @@ Firefly Servicesを使用すると、単にコンテンツを作成するだけ�
 
 ## 1.1.1.1 前提条件
 
-この演習を続ける前に、[Adobe I/O プロジェクト ](./../../../modules/getting-started/gettingstarted/ex6.md) の設定を完了し、[Postman](./../../../modules/getting-started/gettingstarted/ex7.md) や [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md) などの API を操作するアプリケーションも設定しておく必要があります。
+この演習を続ける前に、[Adobe I/O プロジェクト &#x200B;](./../../../modules/getting-started/gettingstarted/ex6.md) の設定を完了し、[Postman](./../../../modules/getting-started/gettingstarted/ex7.md) や [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md) などの API を操作するアプリケーションも設定しておく必要があります。
 
 ## 1.1.1.2 API の基本
 
@@ -76,7 +76,7 @@ API を使用すると、様々な API エンドポイントによって応答�
 
 ### 1.1.1.3.1 コンポジション参照画像の作成
 
-[ このサンプル画像 ](./images/CitiSignal.jpg) を使用するか、独自のテキストを作成して実験できます。 Adobe Illustratorで独自の画像ファイルを作成するには、次の手順に従います。 事前定義済みの画像を使用する場合は、以下の節をスキップし、手順 **1.1.1.3.2 画像の生成に進ん** ください。
+[&#x200B; このサンプル画像 &#x200B;](./images/CitiSignal.jpg) を使用するか、独自のテキストを作成して実験できます。 Adobe Illustratorで独自の画像ファイルを作成するには、次の手順に従います。 事前定義済みの画像を使用する場合は、以下の節をスキップし、手順 **1.1.1.3.2 画像の生成に進ん** ください。
 
 **Adobe Illustrator** を開きます。 **新規ファイル** をクリックします。
 
@@ -270,7 +270,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff1a.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff3a.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff4.png)
 
@@ -324,7 +324,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff6.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff7.png)
 
@@ -343,7 +343,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff9.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff9a.png)
 
@@ -367,7 +367,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff11a.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff12.png)
 
@@ -379,7 +379,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff13a.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff13b.png)
 
@@ -393,7 +393,7 @@ UI を再確認します。 **アスペクト比** を **ワイドスクリー�
 
 ![Firefly](./images/ff14.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ff14a.png)
 
@@ -415,7 +415,7 @@ Firefly Image Model 4では、人物や動物、詳細なシーンを卓越し�
 
 **FF - Firefly Services テクニカルインサイダー** コレクションから **POST - Firefly - T2I V4** という名前のリクエストを選択し、リクエストの **ヘッダー** に移動します。
 
-リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate} だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
+リクエストの URL が、**https://firefly-api.adobe.io/v3/images/generate&rbrace; だった** Firefly Services API, Text 2 Image, Image 3 **リクエストと異なることに気づくでし** う。 この URL は **https://firefly-api.adobe.io/v3/images/generate-async** を指しています。 URL に **-async** が追加されている場合は、非同期エンドポイントを使用しています。
 
 **Header** 変数には、**x-model-version** という新しい変数があります。 これは、Firefly Image 4 および Image 4 Ultra とやり取りする際に必要なヘッダーです。 画像の生成時にFirefly Image 4 または Image 4 Ultra を使用するには、ヘッダーの値を `image4_standard` または `image4_ultra` に設定する必要があります。 この例では、`image4_standard` を使用します。
 
@@ -431,7 +431,7 @@ Firefly Image Model 4では、人物や動物、詳細なシーンを卓越し�
 
 ![Firefly](./images/ffim4_3.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -463,7 +463,7 @@ Firefly Image Model 4では、人物や動物、詳細なシーンを卓越し�
 
 ![Firefly](./images/ffim4_13.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。
 
 ![Firefly](./images/ffim4_14.png)
 
@@ -491,7 +491,7 @@ Firefly Image Model 4では、人物や動物、詳細なシーンを卓越し�
 
 ![Firefly](./images/ffim4_18.png)
 
-実行中のジョブのステータスレポートを確認するには、{FF - Firefly Services Tech Insiders **コレクションから、{0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
+実行中のジョブのステータスレポートを確認するには、&lbrace;FF - Firefly Services Tech Insiders **コレクションから、&lbrace;0** GET - Firefly - ステータスレポートの取得 **という名前のリクエストを選択します。**&#x200B;クリックして開き、[**送信**] をクリックします。 生成された画像の URL を選択し、ブラウザーで開きます。
 
 ![Firefly](./images/ffim4_19.png)
 
@@ -501,8 +501,8 @@ Firefly Image Model 4では、人物や動物、詳細なシーンを卓越し�
 
 ## 次の手順
 
-[Microsoft Azureと事前署名済み URL を使用したFirefly プロセスの最適化 ](./ex2.md){target="_blank"} に移動します。
+[Microsoft Azureと事前署名済み URL を使用したFirefly プロセスの最適化 &#x200B;](./ex2.md){target="_blank"} に移動します。
 
-[Adobe Firefly Servicesの概要 ](./firefly-services.md){target="_blank"} に戻る
+[Adobe Firefly Servicesの概要 &#x200B;](./firefly-services.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る

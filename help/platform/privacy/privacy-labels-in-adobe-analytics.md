@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # プライバシーリクエストに関する Analytics データのラベル設定
 
-各ラベルタイプの意味の分類や使用するタイミングなど、Analytics 変数にデータプライバシーラベルを追加するプロセスについて説明します。 詳しくは、[ プライバシーサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
+各ラベルタイプの意味の分類や使用するタイミングなど、Analytics 変数にデータプライバシーラベルを追加するプロセスについて説明します。 詳しくは、[&#x200B; プライバシーサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)

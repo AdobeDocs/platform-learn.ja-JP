@@ -18,6 +18,6 @@ ht-degree: 40%
 
 # クエリサービス UI
 
-Adobe Experience Platform クエリサービスで、クエリの記述と実行、以前に実行されたクエリの表示、IMS 組織内の他のユーザーが保存したクエリへのアクセスをおこなう方法について説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
+Adobe Experience Platform クエリサービスで、クエリの記述と実行、以前に実行されたクエリの表示、IMS 組織内の他のユーザーが保存したクエリへのアクセスをおこなう方法について説明します。 詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333403?learn=on&enablevpops)

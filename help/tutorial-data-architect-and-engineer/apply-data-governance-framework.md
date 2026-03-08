@@ -50,9 +50,9 @@ Luma は、ロイヤルティデータがサードパーティと共有されな
 1. Platform ユーザーインターフェイスの左側のナビゲーションで **[!UICONTROL ポリシー]** を選択します
 1. アカウントのすべてのラベルを表示するには、「**[!UICONTROL ラベル]**」タブに移動します。
 
-すぐに使用できるラベルが多数あり、「[!UICONTROL  ラベルを作成 ] ボタンを使用して独自のラベルを作成できます。 主なタイプは 3 つあります。[!UICONTROL  契約ラベル ]、[!UICONTROL ID ラベル ]、および [!UICONTROL  機密ラベル ] で、データが制限される一般的な理由に対応しています。 各ラベルには、[!UICONTROL  わかりやすい名前 ] と、タイプと数値の略語である短い [!UICONTROL  名前 ] が含まれています。 例えば、[!DNL C1] のラベルは「サードパーティの書き出しなし」のためのものであり、これはロイヤルティポリシーに必要なものです。
+すぐに使用できるラベルが多数あり、「[!UICONTROL &#x200B; ラベルを作成 &#x200B;] ボタンを使用して独自のラベルを作成できます。 主なタイプは 3 つあります。[!UICONTROL &#x200B; 契約ラベル &#x200B;]、[!UICONTROL ID ラベル &#x200B;]、および [!UICONTROL &#x200B; 機密ラベル &#x200B;] で、データが制限される一般的な理由に対応しています。 各ラベルには、[!UICONTROL &#x200B; わかりやすい名前 &#x200B;] と、タイプと数値の略語である短い [!UICONTROL &#x200B; 名前 &#x200B;] が含まれています。 例えば、[!DNL C1] のラベルは「サードパーティの書き出しなし」のためのものであり、これはロイヤルティポリシーに必要なものです。
 
-![ データガバナンスラベル ](assets/governance-policies.png)
+![&#x200B; データガバナンスラベル &#x200B;](assets/governance-policies.png)
 
 次に、使用を制限するデータにラベルを付けます。
 
@@ -64,7 +64,7 @@ Luma は、ロイヤルティデータがサードパーティと共有されな
 1. モーダルで、「**[!UICONTROL 契約ラベル]**」セクションを展開し、「**[!UICONTROL C2]**」ラベルを確認します
 1. 「**[!UICONTROL 変更を保存]**」ボタンを選択します
    ![データガバナンス](assets/governance-applyLabel.png)
-1. [!UICONTROL  継承されたラベルを表示 ] 切替スイッチをオンにして、メインの **[!UICONTROL データガバナンス]** 画面に戻ると、データセット内のすべてのフィールドにどのようにラベルが適用されているかを確認できます。
+1. [!UICONTROL &#x200B; 継承されたラベルを表示 &#x200B;] 切替スイッチをオンにして、メインの **[!UICONTROL データガバナンス]** 画面に戻ると、データセット内のすべてのフィールドにどのようにラベルが適用されているかを確認できます。
    ![データガバナンス](assets/governance-labelsAdded.png)
 
 
@@ -76,7 +76,7 @@ Luma は、ロイヤルティデータがサードパーティと共有されな
 データにラベルが付いたので、ポリシーを作成できます。
 
 1. Platform ユーザーインターフェイスの左側のナビゲーションで **[!UICONTROL ポリシー]** を選択します
-1. 「参照」タブには、C2 ラベルをマーケティングアクション [!UICONTROL  サードパーティへの書き出し ] に関連付ける、「サードパーティの書き出し制限」という標準ポリシーが既に存在します。まさに必要なポリシーです。
+1. 「参照」タブには、C2 ラベルをマーケティングアクション [!UICONTROL &#x200B; サードパーティへの書き出し &#x200B;] に関連付ける、「サードパーティの書き出し制限」という標準ポリシーが既に存在します。まさに必要なポリシーです。
 1. ポリシーを選択してから、**[!UICONTROL ポリシーのステータス]** 切り替えスイッチで有効にします
    ![データガバナンス](assets/governance-enablePolicy.png)
 
@@ -91,8 +91,8 @@ Luma は、ロイヤルティデータがサードパーティと共有されな
 
 ## その他のリソース
 
-* [ データガバナンスに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)
-* [ データセットサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
-* [ ガバナンスポリシーサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/policy-service/)
+* [&#x200B; データガバナンスに関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)
+* [&#x200B; データセットサービス API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
+* [&#x200B; ガバナンスポリシーサービス API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
-次に、[ クエリサービス ](run-queries.md) に進みます。
+次に、[&#x200B; クエリサービス &#x200B;](run-queries.md) に進みます。

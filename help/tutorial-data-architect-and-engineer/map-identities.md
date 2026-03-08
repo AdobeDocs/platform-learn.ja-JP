@@ -37,7 +37,7 @@ Adobe Experience Platform ID サービスを利用すると、デバイスやシ
 
 ## 権限が必要です
 
-[ 権限の設定 ](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
 <!--
 * Permission items **[!UICONTROL Identity Management]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
@@ -97,7 +97,7 @@ ID 名前空間 `Luma CRM Id` を作成しましょう。
 1. [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) を `Luma Tutorial Assets` フォルダーにダウンロードします
 1. コレクションの [!DNL Postman] への読み込み
 1. アクセストークンがない場合は、リクエストフ **[!DNL OAuth: Request Access Token]** ールドを開いて「**送信**」を選択し、新しいアクセストークンをリクエストします。
-1. リクエスト **[!UICONTROL ID サービス ]/[!UICONTROL ID 名前空間 ]/[!UICONTROL  新しい ID 名前空間の作成 ] を選択します**。
+1. リクエスト **[!UICONTROL ID サービス &#x200B;]/[!UICONTROL ID 名前空間 &#x200B;]/[!UICONTROL &#x200B; 新しい ID 名前空間の作成 &#x200B;] を選択します**。
 1. 次をリクエストの [!DNL Body] として貼り付けます。
 
    ```json
@@ -113,7 +113,7 @@ ID 名前空間 `Luma CRM Id` を作成しましょう。
    ![ID 名前空間](assets/identity-createUsingApi.png)
 
 ユーザーインターフェイスに戻ると、次の 3 つの新しいカスタム名前空間が表示されます。
-![ID 名前空間 ](assets/identity-newIdentities.png)
+![ID 名前空間 &#x200B;](assets/identity-newIdentities.png)
 
 
 ## スキーマのラベル ID フィールド
@@ -136,7 +136,7 @@ ID 名前空間 `Luma CRM Id` を作成しましょう。
 1. 「**[!UICONTROL 適用]**」を選択します
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![プライマリ ID ](assets/identity-loyalty-primary.png)
+   ![プライマリ ID &#x200B;](assets/identity-loyalty-primary.png)
 
 他のスキーマの一部に対して、このプロセスを繰り返します。
 
@@ -178,19 +178,19 @@ ID 名前空間 `Luma CRM Id` を作成しましょう。
 1. 「**[!UICONTROL 適用]**」を選択します
 1. 「**[!UICONTROL 保存]**」を選択します
 
-   ![ 参照フィールド ](assets/identity-offlinePurchase-relationship.png)
+   ![&#x200B; 参照フィールド &#x200B;](assets/identity-offlinePurchase-relationship.png)
 
 このプロセスを繰り返して、`Luma Web Events Schema` と `Luma Product Catalog Schema` の間に関係を作成します。
 
 関係を定義すると、スキーマエディターの **[!UICONTROL 構成]** セクションと **[!UICONTROL 構造]** セクションの両方に示されます。
 
-![ スキーマエディターでの関係ビジュアライゼーション ](assets/identity-webEvents-relationship.png)
+![&#x200B; スキーマエディターでの関係ビジュアライゼーション &#x200B;](assets/identity-webEvents-relationship.png)
 
 <!--need to verify that the relationship schema works-->
 
 ## その他のリソース
 
-* [ID サービスドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)
+* [ID サービスドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)
 * [ID サービス API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
-ID が用意されたので、「データセットを作成 [ できます ](create-datasets.md)。
+ID が用意されたので、「データセットを作成 [&#x200B; できます &#x200B;](create-datasets.md)。

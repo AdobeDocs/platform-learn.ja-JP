@@ -16,6 +16,6 @@ ht-degree: 35%
 
 # ID データのラベル、取り込み、検証
 
-データフィールドを ID としてラベル付けし、ID データを取り込み、Adobe Experience Platform ID サービスのプライベートグラフでデータを検証する方法について説明します。 詳しくは、[ID サービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) を参照してください。
+データフィールドを ID としてラベル付けし、ID データを取り込み、Adobe Experience Platform ID サービスのプライベートグラフでデータを検証する方法について説明します。 詳しくは、[ID サービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)

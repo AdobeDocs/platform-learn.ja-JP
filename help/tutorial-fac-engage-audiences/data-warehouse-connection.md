@@ -18,7 +18,7 @@ ht-degree: 3%
 
 まず、Adobe Experience Platformと Enterprise Data Warehouse間の接続を設定します。 Data Warehouseでのデータの位置に基づいてスキーマとデータモデルを使用し、クエリの作成をサポートします。
 
-デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増加する Data Warehouse 接続のリストをサポートしています。 統合の最新のリスト [ を参照してください ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+デモを行うために、Snowflake アカウントに接続します。 Federated Audience Composition では、増加する Data Warehouse 接続のリストをサポートしています。 統合の最新のリスト [&#x200B; を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 手順
 
@@ -78,4 +78,4 @@ Federated Audience Composition でスキーマを作成するには、次の手�
 
 ![preview-data-model](assets/preview-data-model.png)
 
-次に、[Federated Audience の作成 ](create-a-federated-audience.md) を行う準備が整いました。
+次に、[Federated Audience の作成 &#x200B;](create-a-federated-audience.md) を行う準備が整いました。
