@@ -26,11 +26,11 @@ ht-degree: 2%
 
 Adobe Experience Manager オーサー環境の **ツール** に戻り、**設定ブラウザー** に移動します。
 
-![AEM エージェント ](./images/aemagentscfm1.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm1.png)
 
 「**作成**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfm2.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm2.png)
 
 フィールド `Content Fragments` タイトル **と** 名前 **に** を使用します。
 
@@ -38,127 +38,127 @@ Adobe Experience Manager オーサー環境の **ツール** に戻り、**設�
 
 「**作成**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfm3.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm3.png)
 
 Adobe Experience Manager オーサー環境に戻り、**コンテンツフラグメント** に移動します。
 
-![AEM エージェント ](./images/aemagentscf1.png)
+![AEM エージェント &#x200B;](./images/aemagentscf1.png)
 
 **コンテンツフラグメントモデル** に移動し、設定 **コンテンツフラグメント** を選択して **作成** をクリックします。
 
-![AEM エージェント ](./images/aemagentscfm4.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm4.png)
 
 `--aepUserLdap-- - CitiSignal CFM` という名前を使用します。 **作成して開く** をクリックします。
 
-![AEM エージェント ](./images/aemagentscfm5.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm5.png)
 
 この画像が表示されます。 **1 行のテキスト** フィールドをキャンバスにドラッグ&amp;ドロップします。
 
-![AEM エージェント ](./images/aemagentscfm6.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm6.png)
 
 フィールド **フィールドラベル** を `Header` に変更します。
 
-![AEM エージェント ](./images/aemagentscfm7.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm7.png)
 
 **データタイプ** に戻ります。 **1 行のテキスト** フィールドをキャンバスにドラッグ&amp;ドロップします。
 
-![AEM エージェント ](./images/aemagentscfm8.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm8.png)
 
 フィールド **フィールドラベル** を `Subheader` に変更します。
 
-![AEM エージェント ](./images/aemagentscfm9.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm9.png)
 
 **データタイプ** に戻ります。 **複数行テキスト** フィールドをキャンバスにドラッグ&amp;ドロップします。
 
-![AEM エージェント ](./images/aemagentscfm10.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm10.png)
 
 フィールド **フィールドラベル** を `Detail Description` に変更します。
 
-![AEM エージェント ](./images/aemagentscfm11.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm11.png)
 
 **データタイプ** に戻ります。 **1 行のテキスト** フィールドをキャンバスにドラッグ&amp;ドロップします。
 
-![AEM エージェント ](./images/aemagentscfm12.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm12.png)
 
 フィールド **フィールドラベル** を `CTA Text` に変更します。
 
-![AEM エージェント ](./images/aemagentscfm13.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm13.png)
 
 **データタイプ** に戻ります。 **1 行のテキスト** フィールドをキャンバスにドラッグ&amp;ドロップします。
 
-![AEM エージェント ](./images/aemagentscfm14.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm14.png)
 
 フィールド **フィールドラベル** を `CTA Link` に変更します。 「**保存**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfm15.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm15.png)
 
 この画像が表示されます。
 
-![AEM エージェント ](./images/aemagentscfm16.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm16.png)
 
 コンテンツフラグメントモデルを選択し、「**公開**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfm17.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm17.png)
 
 「**公開**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfm18.png)
+![AEM エージェント &#x200B;](./images/aemagentscfm18.png)
 
 ## 1.6.3.2 コンテンツフラグメントの作成
 
 Adobe Experience Manager オーサー環境に戻り、**コンテンツフラグメント** に移動します。
 
-![AEM エージェント ](./images/aemagentscf1.png)
+![AEM エージェント &#x200B;](./images/aemagentscf1.png)
 
 この画像が表示されます。 **作成** をクリックし、「**フォルダー**」を選択します。
 
-![AEM エージェント ](./images/aemagentscf2.png)
+![AEM エージェント &#x200B;](./images/aemagentscf2.png)
 
 タイトルを「`--aepUserLdap-- - CF`」と入力します。 「**作成**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscf3.png)
+![AEM エージェント &#x200B;](./images/aemagentscf3.png)
 
 Adobe Experience Manager オーサー環境に戻り、**Assets** に移動します。
 
-![AEM エージェント ](./images/aemagentscfmm1.png)
+![AEM エージェント &#x200B;](./images/aemagentscfmm1.png)
 
 **ファイル** に移動します。
 
-![AEM エージェント ](./images/aemagentscfmm2.png)
+![AEM エージェント &#x200B;](./images/aemagentscfmm2.png)
 
 作成したフォルダー（`--aepUserLdap-- - CF` という名前）を選択し、「**プロパティ**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfmm3.png)
+![AEM エージェント &#x200B;](./images/aemagentscfmm3.png)
 
 **クラウドサービス** に移動し、「**フォルダー**」アイコンをクリックします。
 
-![AEM エージェント ](./images/aemagentscfmm4.png)
+![AEM エージェント &#x200B;](./images/aemagentscfmm4.png)
 
 前に作成したクラウド設定を選択します。名前は **コンテンツフラグメント** にする必要があります。 「**選択**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfmm5.png)
+![AEM エージェント &#x200B;](./images/aemagentscfmm5.png)
 
 これを確認する必要があります。 「**保存して閉じる**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscfmm6.png)
+![AEM エージェント &#x200B;](./images/aemagentscfmm6.png)
 
 Adobe Experience Manager オーサー環境に戻り、**コンテンツフラグメント** に移動します。
 
-![AEM エージェント ](./images/aemagentscf1.png)
+![AEM エージェント &#x200B;](./images/aemagentscf1.png)
 
 この画像が表示されます。 **作成** をクリックし、「**コンテンツフラグメント**」を選択します。
 
-![AEM エージェント ](./images/aemagentscf4.png)
+![AEM エージェント &#x200B;](./images/aemagentscf4.png)
 
 前に作成した **コンテンツフラグメントモデル** を選択します。`--aepUserLdap-- - CitiSignal CFM` という名前を付ける必要があります。 `--aepUserLdap-- CitiSignal Fiber Max` という名前を使用します。
 
 **作成して開く** をクリックします。
 
-![AEM エージェント ](./images/aemagentscf5.png)
+![AEM エージェント &#x200B;](./images/aemagentscf5.png)
 
 この画像が表示されます。
 
-![AEM エージェント ](./images/aemagentscf5a.png)
+![AEM エージェント &#x200B;](./images/aemagentscf5a.png)
 
 次のようにフィールドに入力します。
 
@@ -183,11 +183,11 @@ Why Choose CitiSignal Fiber Max? Stay ahead with internet that works as hard as 
 
 「**公開**」をクリックし、「**今すぐ**」を選択します。
 
-![AEM エージェント ](./images/aemagentscf6.png)
+![AEM エージェント &#x200B;](./images/aemagentscf6.png)
 
 「**公開**」をクリックします。
 
-![AEM エージェント ](./images/aemagentscf7.png)
+![AEM エージェント &#x200B;](./images/aemagentscf7.png)
 
 ## 1.6.3.3 ChatGPT での MCP サーバーの設定
 
@@ -205,7 +205,7 @@ Why Choose CitiSignal Fiber Max? Stay ahead with internet that works as hard as 
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、[ 戻る **をクリック** します。
+**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
 
 ![ChatGPT](./images/chatgpt4.png)
 
@@ -283,6 +283,6 @@ AEM UI でも新しいバリエーションを表示できるようになりま�
 
 ## 次の手順
 
-[AEMとエージェント ](./aemagents.md){target="_blank"} に戻る
+[AEMとエージェント &#x200B;](./aemagents.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
