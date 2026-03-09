@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # AI クレジット使用状況の監視
 
-Experience Platform AI クレジットの仕組みを学び、1 日目から使用状況を追跡および管理できるようにします。 詳しくは、[Adobe Experience Platform エージェントジョブと AI クレジットの利用に関するドキュメント ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption) を参照してください。
+Experience Platform AI クレジットの仕組みを学び、1 日目から使用状況を追跡および管理できるようにします。 詳しくは、[Adobe Experience Platform エージェントジョブと AI クレジットの利用に関するドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption) を参照してください。
 
 >[!SLIDE](ai-credits)
