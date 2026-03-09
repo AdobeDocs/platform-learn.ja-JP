@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
-source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ Workfrontで提供されたすべての参照画像が表示されます。 Desi
 
 ![WF](./images/wffio3.png)
 
-## Adobe Firefly Services1.8.2.2Adobe Expressを使用した新規アセットの作成
+## Adobe Firefly1.8.2.2Adobe Expressを使用した新規アセットの作成
 
 >[!NOTE]
 >
->新しいアセットを自分で作成したくない場合は、完成したバージョンをダウンロードできます [&#x200B; こちら &#x200B;](./images/timetravelnow.png)。
+>新しいアセットを自分で作成したくない場合は、完成したバージョンをダウンロードできます [ こちら ](./images/timetravelnow.png)。
 
 [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"} に移動します。 プロンプト `a neon rabbit running very fast through space` を入力し、「**生成**」をクリックします。
 
@@ -179,6 +179,6 @@ Workfrontに戻り、ページを更新すると、ここのステータスも�
 
 ## 次の手順
 
-[Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合 &#x200B;](./esm.md){target="_blank"} に戻る
+[Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合 ](./esm.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る

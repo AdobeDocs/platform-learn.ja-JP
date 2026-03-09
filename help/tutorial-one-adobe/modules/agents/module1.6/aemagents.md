@@ -4,9 +4,9 @@ description: Adobe Experience Managerとエージェント
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Adobe Experience Managerには、今では専用のエージェントがいく�
 
 ## 演習
 
-[1.6.1 AEM Agents の概要 &#x200B;](./ex1.md){target="_blank"}
+[1.6.1 AEM Agents の概要 ](./ex1.md){target="_blank"}
 
 この演習では、**Discovery Agent** と **Experience Production Agent** を探索します。
 
@@ -47,11 +47,14 @@ Adobe Experience Managerには、今では専用のエージェントがいく�
 
 この演習では、AEM MCP Server を使用して Cursor 環境をAEMに接続します。
 
+[1.6.3 ChatGPT および MCP サーバーを使用したコンテンツフラグメントの拡張](./ex3.md)
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+この演習では、ChatGPT とカスタム MCP サーバー機能を使用して、コンテンツフラグメントを作成、管理および翻訳します。
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}AEM
+[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}AEM
