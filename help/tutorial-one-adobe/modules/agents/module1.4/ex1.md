@@ -3,18 +3,15 @@ title: Brand Conciergeの概要
 description: Brand Conciergeの概要
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
+source-git-commit: 1f4b945658834b7fd4f52f297fe761c49edd28fe
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1119'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Conciergeの概要
-
-## ビデオ
-
-このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
 
 ## 1.4.1.1 Brand Conciergeの概要
 
@@ -103,7 +100,7 @@ Brand Concierge should help customers find their best device, plan or entertainm
 
 この画像が表示されます。 ナレッジソースの名前として `CitiSignal website` を入力します。
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal web サイトは CSV ファイル &#x200B;](./assets/citisignal-website-links.csv) をデスクトップにダウンロードします。
+次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal web サイトは CSV ファイル ](./assets/citisignal-website-links.csv) をデスクトップにダウンロードします。
 
 **ファイルを参照** をクリックします。
 
@@ -187,7 +184,7 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc21.png)
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal 製品カタログ &#x200B;](./assets/CitiSignal-catalog.json.zip) をデスクトップにダウンロードして展開します。
+次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal 製品カタログ ](./assets/CitiSignal-catalog.json.zip) をデスクトップにダウンロードして展開します。
 
 ![Brand Concierge](./images/bc26.png)
 
@@ -263,14 +260,124 @@ Brand Conciergeは、Adobe Experience Platformを使用して、会話からの�
 
 ![Brand Concierge](./images/aep5.png)
 
-### Brand Concierge Configuration Management API
+### データストリーム設定管理
 
 次に、Brand Concierge Configuration Management API を有効にして、作成したデータストリームを設定します。 これは、リクエスト処理中に IMS 組織 ID やサンドボックスの詳細などを解決するために必要です。
 
-これは現在、Adobeの内部手順で実行する必要があります。 この手順は必須です。そうでない場合、データストリームの設定がBrand Conciergeで使用できるように正しくありません。
+**管理コントロール** に移動します。
 
-次の手順：[Web サイトにBrand Conciergeを実装する &#x200B;](./ex2.md){target="_blank"}
+![Brand Concierge](./images/admincontrols1.png)
+
+**データストリーム設定管理** に移動し、「**設定を追加**」をクリックします。
+
+![Brand Concierge](./images/admincontrols2.png)
+
+前の手順で作成したデータストリームの **データストリーム ID** を貼り付けます。 「**保存**」をクリックします。
+
+![Brand Concierge](./images/admincontrols3.png)
+
+次のようなメッセージが表示されます。
+
+![Brand Concierge](./images/admincontrols4.png)
+
+## 1.4.1.4 スタイル設定管理
+
+**スタイル設定管理** に移動します。 **スタイル設定を初期化** をクリックします。
+
+![Brand Concierge](./images/admincontrols7.png)
+
+**ブランド名** `CitiSignal` を入力し、「**スタイル設定を初期化**」をクリックします。
+
+![Brand Concierge](./images/admincontrols8.png)
+
+この画像が表示されます。
+
+![Brand Concierge](./images/admincontrols9.png)
+
+## 1.4.1.5 Agent Orchestrator マニフェスト
+
+**マニフェストを更新** に移動します。 この画像が表示されます。
+
+![Brand Concierge](./images/admincontrols5.png)
+
+ここで、マニフェスト内のフィールドを更新する必要があります。 それには以下の入力を使用します。
+
+**エージェント名**:
+
+```
+CitiSignal Sales Assistant
+```
+
+**はじめに**:
+
+```
+Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
+```
+
+**役割と責務**:
+
+```
+You are CitiSignal's AI Sales Assistant focused on:
+1. **Primary Goal**: Selling connectivity products from the knowledge base
+2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
+3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
+4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
+
+- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
+- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
+- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
+- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
+- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
+```
+
+**範囲**:
+
+```
+You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
+
+# Your Primary Objectives:
+1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
+2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
+3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
+
+# Sales Strategy:
+- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
+- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
+- Use natural transition phrases to introduce entertainment upsells.
+- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
+- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
+
+# Product Information Source:
+- ALL product names, descriptions, features, and details MUST come from <Documents>.
+- Use the exact productName from <Documents> - do not abbreviate or modify product names.
+- Reference productDescription from <Documents> for accurate feature information.
+- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
+```
+
+**マニフェストを更新** をクリックします。
+
+![Brand Concierge](./images/admincontrols6.png)
+
+**ホーム** をクリックします。
+
+![Brand Concierge](./images/admincontrols10.png)
+
+この画像が表示されます。 「**プレビュー**」をクリックして、Brand Conciergeの操作を開始します。
+
+![Brand Concierge](./images/bc101.png)
+
+これで、提供されたナレッジソースに関連する質問を開始できます。 質問 `what products do you sell?` を入力し、「**送信**」をクリックします。
+
+![Brand Concierge](./images/bc102.png)
+
+その後、同様の応答が返されます。
+
+![Brand Concierge](./images/bc103.png)
+
+これで、Brand Concierge インスタンスを web サイトに実装する準備が整いました。
+
+次の手順：[Web サイトにBrand Conciergeを実装する ](./ex2.md){target="_blank"}
 
 [Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
