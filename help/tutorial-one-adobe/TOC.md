@@ -4,10 +4,10 @@ breadcrumb-title: 1 つのAdobe技術チュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 4%
+source-wordcount: '1557'
+ht-degree: 3%
 
 ---
 
@@ -117,6 +117,7 @@ ht-degree: 4%
    + 1.7 Fireflyのカスタムワークフロー {#crpr7}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Fireflyのカスタムワークフローの概要](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.2 カスタムワークフローをプログラムで実行する](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Workfront、Frame.io、Enterprise Storage Management によるレビューと承認の統合 {#crpr8}
       + [概要](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Workfront、Frame.io、および ESM の概要](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
@@ -168,7 +169,7 @@ ht-degree: 4%
          + [1.2.1 Web サイトを参照する](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 スキーマ識別子とセット識別子の設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 データセットの設定](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [1.2.4 オフラインソースからのデータ取得 &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.4 オフラインソースからのデータ取得 ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 データランディングゾーン](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federated Audience の構成 {#dc13}
          + [概要](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)

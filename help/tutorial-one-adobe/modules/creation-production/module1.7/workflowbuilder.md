@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -43,14 +43,18 @@ Firefly カスタムワークフローを使用すると、次のことができ
 
 ## 演習
 
-[1.7.1 Fireflyのカスタムワークフローの概要 &#x200B;](./ex1.md){target="_blank"}
+[1.7.1 Fireflyのカスタムワークフローの概要 ](./ex1.md){target="_blank"}
 
 この演習では、ワークフロービルダーの使用を開始します。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[1.7.2 カスタムワークフローをプログラムで実行する ](./ex2.md){target="_blank"}
+
+この演習では、PostmanとWorkfront Fusion を使用して、カスタムワークフローをプログラムで実行します。
+
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る
+[ すべてのモジュール ](../../../overview.md){target="_blank"} に戻る
