@@ -26,11 +26,11 @@ Firefly カスタムワークフローBetaを使用することにより、お�
 
 **実稼動** に移動します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw1.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw1.png)
 
 この画像が表示されます。 **ワークフローを作成（ベータ版）** をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw2.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw2.png)
 
 ## 1.7.1.1 背景の削除
 
@@ -38,97 +38,97 @@ Fireflyのカスタムワークフローを理解するために、特定の画�
 
 ワークフローの名前を `vangeluw - remove background` に変更します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw3.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw3.png)
 
 **画像** を開きます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw4.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw4.png)
 
 **背景を削除** を選択して、このノードをキャンバスにドラッグ&amp;ドロップします。
 
 次に、入力画像ノードと出力画像ノードを **バックグラウンドの削除** に接続する必要があります。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw5.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw5.png)
 
 上にスクロールして、**入力と出力** に移動します。 **Input Images** ノードをクリックして、キャンバスにドラッグします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw6.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw6.png)
 
 これで完了です。 **入力画像** ノードの **画像** の横の青い点にマウスポインターを置き、**背景を削除** ノードの **入力画像** の横の青い点に線を描画して、**背景を削除** ノードに **入力画像** ノードを接続します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw7.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw7.png)
 
 これで完了です。 次に、**出力画像** ノードをクリックして、キャンバスにドラッグします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw8.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw8.png)
 
 これで完了です。 **背景を削除** ノードの **出力画像** の横の青い点にマウスポインターを置き、**出力画像** ノードの **画像** の横の青い点に線を引くことで、**背景を削除** ノードを **出力画像** ノードに接続します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw9.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw9.png)
 
 これで完了です。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw10.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw10.png)
 
 これで、基本ワークフローをテストする準備が整いました。 画像 [phone.png](./assets/phone.png) をデスクトップにダウンロードします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw11.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw11.png)
 
 ワークフローに戻ります。 **入力画像** ノードの **ドラッグ&amp;ドロップ** 領域をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw11a.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw11a.png)
 
 ファイル **phone.png** を選択します。 「**開く**」をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw12.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw12.png)
 
 この画像が表示されます。 **実行** をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw13.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw13.png)
 
 1～2 分の後、この結果が表示されます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw14.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw14.png)
 
 ## 1.7.1.2 背景を削除+切り抜き
 
 これで、キャンバスに **Crop** ノードを追加する必要があります。 メニューで、**画像** に移動し、下にスクロールして **切り抜き** を見つけます。 キャンバスにドラッグします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw15.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw15.png)
 
 **切り抜き** ノードを **背景を削除** ノードと **出力画像** ノードの間に配置します。
 
 次に、**バックグラウンドの削除** ノードと **出力画像** ノードの間の接続を削除する必要があります。 これを行うには、両方のノード間の線をダブルクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw16.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw16.png)
 
 これで完了です。 **背景の削除** ノードを **切り抜き** ノードに接続し、次に **切り抜き** ノードを **出力画像** ノードに接続します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw17.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw17.png)
 
 「**自動切り抜き**」のチェックボックスをオンにすると、「**実行** をクリックしてワークフローをテストできます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw18.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw18.png)
 
 1～2 分後、これが表示され、異なる解像度の画像が表示されます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw19.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw19.png)
 
 ## 1.7.1.3 背景を削除+切り抜き+合成画像
 
 メニューの **画像** の下で、**合成画像（2D）** ノードを選択してキャンバスにドラッグします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw20.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw20.png)
 
-**合成画像（2D）** ノードで、「切り抜き画像 **** の横にある青い点と **入力画像** の横にある青い点を接続して、「**切り抜き** ノードに 2 つ目の接続を追加します。
+**合成画像（2D）** ノードで、「切り抜き画像 **&#x200B;**&#x200B;の横にある青い点と **入力画像** の横にある青い点を接続して、「**切り抜き** ノードに 2 つ目の接続を追加します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw21.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw21.png)
 
 メニューの **入力と出力** の下で、**入力テキスト** ノードを選択してキャンバスにドラッグします。
 
 **入力テキスト** ノードの **テキスト** の横にある緑のドットを、**合成画像（2D）** ノードの **プロンプト** の横にある緑のドットに接続します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw22.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw22.png)
 
 これで完了です。 **テキストを入力** ノードに以下のプロンプトを入力します。
 
@@ -140,11 +140,11 @@ Fireflyのカスタムワークフローを理解するために、特定の画�
 
 **実行** をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw23.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw23.png)
 
 数分後、次のように、指定されたプロンプトに基づくコンポジションの元の画像が特定の解像度で表示されます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw24.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw24.png)
 
 ## 1.7.1.4 背景の削除+切り抜き+合成画像+ ビデオの生成
 
@@ -152,11 +152,11 @@ Fireflyのカスタムワークフローを理解するために、特定の画�
 
 **合成画像（2D）** ノードの **合成画像** の横の青い点を、**ビデオを生成** ノードの **入力画像** の横の青い点に接続します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw25.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw25.png)
 
 メニューで、**入力と出力** に移動します。 **入力テキスト** ノードを選択して、キャンバスにドラッグします。
 
-**入力テキスト** ノードの「テキスト **の横にある緑のドットを** ビデオを生成 **ノードの** プロンプト **** の横にある緑のドットに接続します。
+**入力テキスト** ノードの「テキスト **の横にある緑のドットを** ビデオを生成 **ノードの** プロンプト **&#x200B;**&#x200B;の横にある緑のドットに接続します。
 
 `background hearts fluttering` テキストを入力 **ノードにプロンプト** を入力します。
 
@@ -166,11 +166,11 @@ Fireflyのカスタムワークフローを理解するために、特定の画�
 
 **実行** をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw26.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw26.png)
 
 いくつかのビデオの後に、表示されるはずです。このビデオには、指定された画像とプロンプトの組み合わせに基づくビデオが表示されています。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw27.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw27.png)
 
 ## 1.7.1.5 Scale
 
@@ -181,27 +181,27 @@ Fireflyのカスタムワークフローを理解するために、特定の画�
 - [watch.jpg](./assets/watch.jpg)
 - [airpods.jpg](./assets/airpods.jpg)
 
-![Fireflyのカスタムワークフロー ](./images/ffcw28.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw28.png)
 
 ワークフローで、最初のノード **入力画像** に戻ります。 現在選択されている画像を削除します。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw29.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw29.png)
 
 **ドラッグ&amp;ドロップ** 領域をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw30.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw30.png)
 
 ダウンロードした 3 つの画像を選択します。 「**開く**」をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw31.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw31.png)
 
 この画像が表示されます。 **実行** をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw32.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw32.png)
 
 数分後、同様の出力が表示され、3 つの画像が生成され、3 つのビデオが表示されます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw33.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw33.png)
 
 ## AEM Assets CS の 1.7.1.5 Store
 
@@ -211,58 +211,58 @@ Fireflyのカスタムワークフローを理解するために、特定の画�
 
 その場合は、[https://experience.adobe.com](https://experience.adobe.com) にアクセスしてください。 クリックして **Experience Manager Assets** を開きます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw50.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw50.png)
 
 AEM Assets CS 環境を選択します。`--aepUserLdap-- - CitiSignal AEM + ACCS` という名前を付ける必要があります。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw51.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw51.png)
 
 **Assets** に移動し、「**フォルダーを作成**」をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw52.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw52.png)
 
 `--aepUserLdap-- - Firefly Custom Workflows` という名前を入力します。 「**作成**」をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw53.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw53.png)
 
 カスタムワークフローに戻り、**出力画像** ノードに移動します。 **デフォルト** をクリックしてから、**AEM Assets** を選択してください。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw57.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw57.png)
 
 このポップアップが表示されます。 AEM Assets CS リポジトリを選択し、作成したばかりのフォルダー（`--aepUserLdap-- - Firefly Custom Workflows`）を選択します。 「**選択**」をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw54.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw54.png)
 
 **出力ビデオ** ノードに移動します。 **デフォルト** をクリックしてから、**AEM Assets** を選択してください。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw55.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw55.png)
 
 このポップアップが表示されます。 AEM Assets CS リポジトリを選択し、作成したばかりのフォルダー（`--aepUserLdap-- - Firefly Custom Workflows`）を選択します。 「**選択**」をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw56.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw56.png)
 
 これで完了です。 **実行** をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw56a.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw56a.png)
 
 数分後、作成されたアセットがAEM Assets CS のフォルダーで使用できるようになります。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw58.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw58.png)
 
 ワークフローに戻ります。 「**公開**」をクリックします。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw59.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw59.png)
 
 この画像が表示されます。
 
-![Fireflyのカスタムワークフロー ](./images/ffcw60.png)
+![Fireflyのカスタムワークフロー &#x200B;](./images/ffcw60.png)
 
 これでワークフローが公開され、次の演習の一部としてプログラムで実行できるようになりました。
 
 ## 次の手順
 
-[1.7.2 カスタムワークフローをプログラムで実行に移動する ](./ex2.md){target="_blank"}
+[1.7.2 カスタムワークフローをプログラムで実行に移動する &#x200B;](./ex2.md){target="_blank"}
 
-[Fireflyのカスタムワークフロー ](./workflowbuilder.md){target="_blank"} に戻る
+[Fireflyのカスタムワークフロー &#x200B;](./workflowbuilder.md){target="_blank"} に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
