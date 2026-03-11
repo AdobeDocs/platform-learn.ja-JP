@@ -28,14 +28,14 @@ ht-degree: 3%
 
 ## 演習
 
-[1.8.1 Firefly ボードの概要 ](./ex1.md){target="_blank"}
+[1.8.1 Firefly ボードの概要 &#x200B;](./ex1.md){target="_blank"}
 
 この演習では、Firefly Boards を使用します。
 
-![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[ すべてのモジュール ](../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る

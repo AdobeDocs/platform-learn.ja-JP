@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 概要 – Agentic AI テクニカルラボ
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -49,7 +49,7 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 - ChatGPT や Claude.ai を **Customer Journey Analytics** に接続して、データ分析タスクを実行します
 - ChatGPT や Claude.ai を **Adobe Analytics** に接続して、データ分析タスクを実行します
 
-[1.6 AEMおよびエージェント ](./modules/agents/module1.6/aemagents.md){target="_blank"}
+[1.6 AEMおよびエージェント &#x200B;](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
 **目標**
 
@@ -69,7 +69,7 @@ Adobe Experience Managerには、今では専用のエージェントがいく�
 
 このモジュールでは、Cursor などのインテリジェントな開発者ツールを使用して、Adobe Commerce as a Cloud Service環境に対する拡張機能を開発します。 この拡張機能の目標は、着信注文イベントをサードパーティのエンドポイントに転送することです。 Adobe Commerce as a Cloud Serviceのイベント転送は、Adobe I/O App Builder、Adobe I/O EventsおよびAdobe I/O Runtimeに依存します。 これらすべてのサービスの設定は、Cursor によって支援されます。
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

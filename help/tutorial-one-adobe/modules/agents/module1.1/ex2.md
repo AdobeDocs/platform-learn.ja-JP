@@ -46,7 +46,7 @@ Adobe Marketing Agent for ChatGPT Enterprise Betaを使用することにより�
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、[ 戻る **をクリック** します。
+**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
 
 ![ChatGPT](./images/chatgpt4.png)
 
@@ -306,4 +306,4 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

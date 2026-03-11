@@ -20,4 +20,4 @@ Adobe GenStudio for Performance Marketing – 拡張性の学習に時間を費�
 
 <!--[GenStudio for Performance Marketing - Extensibility](./genstudioext.md){target="_blank"}--> に戻る
 
-[ すべてのモジュール ](./../../../overview.md){target="_blank"} に戻る
+[&#x200B; すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"} に戻る
