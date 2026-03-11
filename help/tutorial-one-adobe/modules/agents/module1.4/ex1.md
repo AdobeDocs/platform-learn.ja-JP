@@ -4,9 +4,9 @@ description: Brand Conciergeの概要
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 1f4b945658834b7fd4f52f297fe761c49edd28fe
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1121'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ Brand Concierge should help customers find their best device, plan or entertainm
 
 この画像が表示されます。 ナレッジソースの名前として `CitiSignal website` を入力します。
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal web サイトは CSV ファイル &#x200B;](./assets/citisignal-website-links.csv) をデスクトップにダウンロードします。
+次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal web サイトは CSV ファイル ](./assets/citisignal-website-links.csv) をデスクトップにダウンロードします。
 
 **ファイルを参照** をクリックします。
 
@@ -184,7 +184,7 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc21.png)
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal 製品カタログ &#x200B;](./assets/CitiSignal-catalog.json.zip) をデスクトップにダウンロードして展開します。
+次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal 製品カタログ ](./assets/CitiSignal-catalog.json.zip) をデスクトップにダウンロードして展開します。
 
 ![Brand Concierge](./images/bc26.png)
 
@@ -376,8 +376,10 @@ You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and 
 
 これで、Brand Concierge インスタンスを web サイトに実装する準備が整いました。
 
-次の手順：[Web サイトにBrand Conciergeを実装する &#x200B;](./ex2.md){target="_blank"}
+## 次の手順
+
+[Web サイトへのBrand Conciergeの実装 ](./ex2.md){target="_blank"} に移動します。
 
 [Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

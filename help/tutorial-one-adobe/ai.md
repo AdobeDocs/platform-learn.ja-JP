@@ -3,16 +3,16 @@ title: 概要 Agentic AI テクニカルラボ
 description: 概要 Agentic AI テクニカルラボ
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # 概要 – Agentic AI テクニカルラボ
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要 – 処理中の作業
 
@@ -26,30 +26,6 @@ Adobe Experience Platform エージェントとAgent Orchestratorを使用して
 - 傾向の高いオーディエンスの特定
 - ジャーニーのパフォーマンスの検証
 - CitiSignal Fiber Max ロールアウトの新しいジャーニーを作成します
-
-[1.2 エージェントと AI の基本を学ぶ](./modules/agents/module1.2/agenticai.md)
-
->[!NOTE]
->
->このモジュールはまだリリースされていません。
-
-**目標**
-
-独自のエージェントを構築します。
-
-学習者は、LLM を使用してリクエストを分析する独自のエージェントを作成します。 その後、リクエストの分析を使用して、指示を含むプランが作成され、1 つずつ実行されます。 これを可能にするには、エージェントはどのスキルが利用可能であるかを理解する必要があります。 学習者は様々なスキルを自分で構築します。これらのスキルはそれぞれ MCP サーバーを使用して構築され、Adobe Firefly Services、Workfront Fusion などのAdobe製品 API を使用します。
-
-- Image GenAI
-- テキスト生成 AI
-
-エージェントの背後にあるアーキテクチャはどのようなものですか？
-
-技術的要素：
-
-- Azure AI Foundry、LLM、共同パイロット
-- n8n
-- MCP サーバー、Python ノートブック
-- ADOBE API
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
@@ -73,7 +49,7 @@ Brand Conciergeは、AI を活用して、企業と Web サイト訪問者の関
 - ChatGPT や Claude.ai を **Customer Journey Analytics** に接続して、データ分析タスクを実行します
 - ChatGPT や Claude.ai を **Adobe Analytics** に接続して、データ分析タスクを実行します
 
-[1.6 AEMおよびエージェント &#x200B;](./modules/agents/module1.6/aemagents.md){target="_blank"}
+[1.6 AEMおよびエージェント ](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
 **目標**
 
@@ -93,7 +69,7 @@ Adobe Experience Managerには、今では専用のエージェントがいく�
 
 このモジュールでは、Cursor などのインテリジェントな開発者ツールを使用して、Adobe Commerce as a Cloud Service環境に対する拡張機能を開発します。 この拡張機能の目標は、着信注文イベントをサードパーティのエンドポイントに転送することです。 Adobe Commerce as a Cloud Serviceのイベント転送は、Adobe I/O App Builder、Adobe I/O EventsおよびAdobe I/O Runtimeに依存します。 これらすべてのサービスの設定は、Cursor によって支援されます。
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
