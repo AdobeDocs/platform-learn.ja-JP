@@ -4,9 +4,9 @@ description: Microsoft 365 CopilotCopilot のAdobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 5%
 
 ---
@@ -283,8 +283,8 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ## 次の手順
 
-[Google Gemini のAdobe Marketing Agentに移動 &#x200B;](./ex4.md){target="_blank"}
+Google Gemini Enterprise の [Adobe Marketing Agentに移動 ](./ex4.md){target="_blank"}
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}

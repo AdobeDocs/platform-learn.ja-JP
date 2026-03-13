@@ -4,9 +4,9 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 2%
 
 ---
@@ -31,12 +31,12 @@ Adobe Experience Platform エージェントとAgent Orchestratorを使用して
 ## 前提条件
 
 - Adobe Journey OptimizerとCustomer Journey Analyticsへのアクセス
-- [Agent Orchestratorの概念に精通している &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)
+- [Agent Orchestratorの概念に精通している ](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)
 - CitiSignal デモデータへのアクセス：購入、注文、オーディエンス、ジャーニー
 
 ## 演習
 
-[1.1.1 Agent Orchestratorの概要 &#x200B;](./ex1.md){target="_blank"}
+[1.1.1 Agent Orchestratorの概要 ](./ex1.md){target="_blank"}
 
 この演習では、Fiber Max 向けの CitiSignal ローンチキャンペーンを背景としたAgent Orchestratorの能力を調べます。
 
@@ -48,14 +48,14 @@ Adobe Experience Platform エージェントとAgent Orchestratorを使用して
 
 この演習では、Adobe Marketing AgentとMicrosoft Copilot を使用して、Fiber Max の CitiSignal ローンチキャンペーンを背景にAgent Orchestratorの能力を調べます。
 
-[1.1.4 Google Gemini 用Adobe Marketing Agent](./ex4.md){target="_blank"}
+[1.1.4 Google Gemini Enterprise のAdobe Marketing Agent](./ex4.md){target="_blank"}
 
 この演習では、Google Gemini でAdobe Marketing Agentを使用して、Fiber Max 向けの CitiSignal ローンチキャンペーンを背景にAgent Orchestratorの能力を調べます。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ 技術インサイダー ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}
+[ すべてのモジュールに戻る ](../../../overview.md){target="_blank"}
