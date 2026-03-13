@@ -283,8 +283,8 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ## 次の手順
 
-Google Gemini Enterprise の [Adobe Marketing Agentに移動 ](./ex4.md){target="_blank"}
+Google Gemini Enterprise の [Adobe Marketing Agentに移動 &#x200B;](./ex4.md){target="_blank"}
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
 
-[ すべてのモジュールに戻る ](./../../../overview.md){target="_blank"}
+[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobeの 1 つのチュートリアル – アーキテクチャの概要
 
-![ 技術インサイダー ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 1 つのAdobe アーキテクチャの概要
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 以下のアーキテクチャの概要画像をダウンロードします。
 
-![ 技術インサイダー ](./assets/images/architecture_all.jpg)
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_all.jpg)
 
 ## エージェント AI アーキテクチャの概要
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 以下のアーキテクチャの概要画像をダウンロードします。
 
-![ 技術インサイダー ](./assets/images/architecture_agentic.jpg)
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_agentic.jpg)
 
 ## コンテンツアーキテクチャの概要
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 以下のアーキテクチャの概要画像をダウンロードします。
 
-![ 技術インサイダー ](./assets/images/architecture_content.jpg)
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_content.jpg)
 
 ## データアーキテクチャの概要
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 以下のアーキテクチャの概要画像をダウンロードします。
 
-![ 技術インサイダー ](./assets/images/architecture_data.jpeg)
+![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_data.jpeg)
 
 >[!NOTE]
 >
