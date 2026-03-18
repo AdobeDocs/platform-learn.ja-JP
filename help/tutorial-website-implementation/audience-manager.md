@@ -3,10 +3,10 @@ title: Adobe Audience Manager の追加
 description: サーバーサイド転送とタグを使用して web サイトにAdobe Audience Managerを実装する方法を説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 72%
+source-wordcount: '1728'
+ht-degree: 71%
 
 ---
 
@@ -19,15 +19,8 @@ ht-degree: 72%
 
 >[!WARNING]
 >
-> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
->[!NOTE]
->
->Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
->
-> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
-> * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
 
@@ -41,7 +34,7 @@ ht-degree: 72%
 
 このレッスンを完了するには、次が必要です。
 
-1. [&#x200B; タグの設定 &#x200B;](create-a-property.md)、[Adobe Analyticsの追加 &#x200B;](analytics.md)、[ID サービスの追加 &#x200B;](id-service.md) のレッスンを完了するには、
+1. [ タグの設定 ](create-a-property.md)、[Adobe Analyticsの追加 ](analytics.md)、[ID サービスの追加 ](id-service.md) のレッスンを完了するには、
 
 1. このチュートリアルで使用するレポートスイートのサーバーサイド転送を有効化するための、Adobe Analytics への管理者アクセス。または、以下の手順に従って、組織の既存の管理に依頼することもできます。
 
@@ -49,7 +42,7 @@ ht-degree: 72%
 
    ![デバッガーを使用して、実際の Web サイトで Audience Manager サブドメインを検索する](images/aam-debugger-partner.png)
 
-Audience Manager をまだ実装していない場合は、次の手順に従って [Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=ja)してください。
+Audience Manager をまだ実装していない場合は、次の手順に従って [Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)してください。
 
 ## 実装オプション
 
@@ -100,7 +93,7 @@ Adobe Analytics から Adobe Audience Manager へのデータの転送を開始�
 >
 >SSF はレポートスイートごとに有効にする必要があるので、実際のサイトのレポートスイートに SSF をデプロイする場合は、実際のレポートスイートに対してこの手順を繰り返すことを忘れないでください。
 >
->また、SSF オプションが灰色表示になっている場合は、このオプションを有効にするには、レポートスイートを Experience Cloud 組織にマッピングする必要があります。これについては、[ドキュメント](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ja)で説明しています。
+>また、SSF オプションが灰色表示になっている場合は、このオプションを有効にするには、レポートスイートを Experience Cloud 組織にマッピングする必要があります。これについては、[ドキュメント](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)で説明しています。
 
 この手順が完了し、Adobe Experience Platform ID サービスを有効にしている場合、データは Analytics から AAM に転送されます。ただし、AAMからページ（およびAudience Analytics機能を介した Analytics にも）に正しく応答が返されるようにプロセスを完了するには、タグで次の手順も完了する必要があります。 これはごく簡単なので、心配無用です。
 
@@ -116,13 +109,13 @@ Adobe Analytics から Adobe Audience Manager へのデータの転送を開始�
 
 1. **[!UICONTROL 拡張機能/インストール済み]** に移動し、をクリックして Analytics 拡張機能を設定します。
 
-   ![&#x200B; Analytics 拡張機能の設定](images/aam-configAnalyticsExtension.png)
+   ![ Analytics 拡張機能の設定](images/aam-configAnalyticsExtension.png)
 
-1. 「`Adobe Audience Manager`」セクションを展開します。
+1.  「`Adobe Audience Manager`」セクションを展開します。
 
 1. 「**[!UICONTROL Analytics データをAudience Managerと自動的に共有]**」チェックボックスをオンにします。 これにより、Audience Manager の「モジュール」（コード）が Analytics `AppMeasurement.js` の実装に追加されます。
 
-1. 「Audience Manager サブドメイン」（「パートナー名」、「パートナー ID」、「パートナーサブドメイン」とも呼ばれます）を追加します。 [Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=ja)するには、次の手順に従います。
+1. 「Audience Manager サブドメイン」（「パートナー名」、「パートナー ID」、「パートナーサブドメイン」とも呼ばれます）を追加します。 [Audience Manager サブドメインを取得](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)するには、次の手順に従います。
 
 1. 「**[!UICONTROL ライブラリおよびビルドに保存]**」をクリックします
 

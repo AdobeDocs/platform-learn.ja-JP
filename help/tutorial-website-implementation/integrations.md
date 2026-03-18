@@ -2,9 +2,9 @@
 title: タグを使用したExperience Cloud統合の実装
 description: Adobe Experience Cloud の実装でオーディエンス、A4T および顧客属性の統合を検証する方法について説明します。このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1234'
 ht-degree: 84%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 >[!WARNING]
 >
-> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 ## 学習内容
 
@@ -33,8 +33,8 @@ ht-degree: 84%
 >
 >これらの統合を完全に使用するために必要なユーザー権限の要件、アカウント設定、プロビジョニング手順は多数ありますが、それらはこのチュートリアルの範囲外ですので、ここでは扱いません。 Experience Cloud の現在の実装でこれらの統合をまだ使用していない場合は、以下を検討する必要があります。
 >
->* [コアサービス統合](https://experienceleague.adobe.com/ja/docs/core-services/interface/services/getting-started)の完全な要件の確認
->* [Analytics for Target 統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/a4t/before-implement)の完全な要件の確認
+>* [コアサービス統合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)の完全な要件の確認
+>* [Analytics for Target 統合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)の完全な要件の確認
 
 ## オーディエンス
 
@@ -54,9 +54,9 @@ A4T の実装に必要な主な要件は、次のとおりです（既に済ん�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「ネットワーク」タブに移動します。
 
@@ -76,7 +76,7 @@ A4T の実装に必要な主な要件は、次のとおりです（既に済ん�
 
 ## Analytics for Target（A4T）
 
-[Analytics for Target（A4T）](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ja)統合を使用すれば、 Analytics データを Target のレポート指標のソースとして活用することができます。
+[Analytics for Target（A4T）](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)統合を使用すれば、 Analytics データを Target のレポート指標のソースとして活用することができます。
 
 A4T の実装に必要な主な要件は、次のとおりです（既に済んでいます）。
 
@@ -93,9 +93,9 @@ A4T 統合を検証する最善の方法は、A4T を使用して実際に Targe
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「ネットワーク」タブに移動します。
 
@@ -135,7 +135,7 @@ A4Tアクティビティの一貫としてページ読み込みの範囲（単�
 
 1. サイトの右上隅にある「**[!UICONTROL ログイン]**」リンクをクリックします
 
-   ![&#x200B; 右上の「ログイン」をクリックします &#x200B;](images/idservice-loginNav.png)
+   ![ 右上の「ログイン」をクリックします ](images/idservice-loginNav.png)
 
 1. ユーザー名として `test@test.com` を入力します。
 1. パスワードとして `test` を入力します。

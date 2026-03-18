@@ -2,10 +2,10 @@
 title: データ要素、ルールおよびライブラリの追加
 description: タグでデータ要素、ルールおよびライブラリを作成する方法について説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 56%
+source-wordcount: '1420'
+ht-degree: 54%
 
 ---
 
@@ -18,15 +18,8 @@ ht-degree: 56%
 
 >[!WARNING]
 >
-> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
->[!NOTE]
->
->Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
->
-> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
-> * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
 
@@ -122,7 +115,7 @@ ht-degree: 56%
 1. 「**[!UICONTROL 保存]**」をクリックして、ルールを保存します
 
 ルール ページに新しいルールが表示されます。
-![&#x200B; ルールがページに表示されます &#x200B;](images/launch-savedRule.png)
+![ ルールがページに表示されます ](images/launch-savedRule.png)
 
 ## ライブラリへの変更の保存
 

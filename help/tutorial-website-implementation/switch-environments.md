@@ -2,9 +2,9 @@
 title: Adobe Experience Cloud Debugger でのタグ環境の切り替え
 description: Experience Cloud Debugger を使用して様々なタグ埋め込みコードを読み込む方法について説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '567'
 ht-degree: 94%
 
 ---
@@ -16,17 +16,10 @@ ht-degree: 94%
 
 >[!WARNING]
 >
-> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 この手法は環境の切り替えと呼ばれ、後で自分の web サイトでタグを操作する際に役立ちます。 本番稼働用 web サイトをブラウザーに読み込むことができますが、*開発*&#x200B;タグ環境を使用します。 これにより、通常のコードリリースとは独立し、自信を持ってタグの変更を実行および検証できます。  結局、マーケティングタグリリースを通常のコードリリースから分離することが、顧客がタグを最初に使用する主な理由の 1 つです。
 
->[!NOTE]
->
->Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
->
-> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
-> * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
 

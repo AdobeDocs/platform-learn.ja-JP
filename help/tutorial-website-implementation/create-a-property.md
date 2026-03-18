@@ -2,10 +2,10 @@
 title: タグプロパティの作成
 description: データ収集インターフェイスにログインし、タグプロパティを作成する方法について説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: f83d374a-a831-4598-b9d3-6f183224b589
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 60%
+source-wordcount: '509'
+ht-degree: 56%
 
 ---
 
@@ -18,19 +18,12 @@ ht-degree: 60%
 
 >[!WARNING]
 >
-> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 ## 前提条件
 
-次の数つのレッスンを完了するには、タグで環境を開発、承認、公開、管理、管理する権限が必要です。 ユーザーインターフェイスオプションが使用できないためにこれらの手順を完了できない場合は、Experience Cloud 管理者に連絡してアクセス権をもらってください。タグユーザー権限について詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
+次の数つのレッスンを完了するには、タグで環境を開発、承認、公開、管理、管理する権限が必要です。 ユーザーインターフェイスオプションが使用できないためにこれらの手順を完了できない場合は、Experience Cloud 管理者に連絡してアクセス権をもらってください。タグユーザー権限について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
 
->[!NOTE]
->
->Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
->
-> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
-> * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
 
@@ -44,11 +37,11 @@ ht-degree: 60%
 
 **データ収集を表示するには**
 
-1. [Adobe Experience Cloud &#x200B;](https://experiencecloud.adobe.com)にログインします。
+1. [Adobe Experience Cloud ](https://experiencecloud.adobe.com)にログインします。
 
-1. ![&#x200B; ソリューション切り替えアイコン &#x200B;](images/launch-solutionSwitcher.png) アイコンをクリックして、アプリ切り替えボタンを開きます
+1. ![ ソリューション切り替えアイコン ](images/launch-solutionSwitcher.png) アイコンをクリックして、アプリ切り替えボタンを開きます
 
-1. **[!UICONTROL アイコンを使用してソリューション切り替えボタンを開き]** メニューから ![Launch/データ収集 &#x200B;](images/launch-solutionSwitcherActivation.png) を選択し、「Launch/データ収集」をクリックします。
+1. **[!UICONTROL アイコンを使用してソリューション切り替えボタンを開き]** メニューから ![Launch/データ収集 ](images/launch-solutionSwitcherActivation.png) を選択し、「Launch/データ収集」をクリックします。
 
 `Tags Properties` 画面が表示されます（アカウントでプロパティを作成したことがない場合は、この画面が空になる可能性があります）。
 

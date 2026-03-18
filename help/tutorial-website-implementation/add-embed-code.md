@@ -2,10 +2,10 @@
 title: 埋め込みコードの追加
 description: タグプロパティの埋め込みコードを取得して、Web サイトに実装する方法を説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 48%
+source-wordcount: '1016'
+ht-degree: 45%
 
 ---
 
@@ -16,15 +16,8 @@ ht-degree: 48%
 
 >[!WARNING]
 >
-> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
->[!NOTE]
->
->Adobe Experience Platform Launch は、データ収集テクノロジーのスイートとして Adobe Experience Platform に統合されています。 このコンテンツを使用する際に注意する必要があるインターフェイスで、いくつかの用語がロールアウトされました。
->
-> * Platform Launch（クライアントサイド）は **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)** になりました
-> * Platform Launch サーバーサイドが **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ja)** になりました
-> * Edgeの設定が **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ja)** になりました
 
 ## 学習内容
 
@@ -51,7 +44,7 @@ ht-degree: 48%
 
 次に、埋め込みコードをコピーします。
 
-1. **[!UICONTROL 開発]** 行で、「インストール」アイコン ![&#x200B; 「インストール」アイコン &#x200B;](images/launch-installIcon.png) をクリックしてモーダルを開きます。
+1. **[!UICONTROL 開発]** 行で、「インストール」アイコン ![ 「インストール」アイコン ](images/launch-installIcon.png) をクリックしてモーダルを開きます。
 
 1. タグは、デフォルトで非同期埋め込みコードに設定されます
 
@@ -109,7 +102,7 @@ ht-degree: 48%
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/ja-JP/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
@@ -125,7 +118,7 @@ ht-degree: 48%
 ```
 
 Web ブラウザーの開発者ツールを開き、「ネットワーク」タブに移動します。この時点で、タグ環境 URL に対して 404 エラーが表示されます。
-![404 エラー &#x200B;](images/samplepage-404.png)
+![404 エラー ](images/samplepage-404.png)
 
 このタグ環境ではまだライブラリを作成していないので、404 エラーが発生することが予想されます。 これについては、次のレッスンでおこないます。404 エラーではなく「Failed」メッセージが表示された場合は、埋め込みコードに `https://` プロトコルを追加し忘れている可能性があります。`file://` プロトコルを使用してサンプルページを読み込む場合にのみ、`https://` プロトコルを指定する必要があります。変更を加え、404 エラーが表示されるまでページをリロードします。
 

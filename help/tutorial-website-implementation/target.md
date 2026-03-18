@@ -3,9 +3,9 @@ title: タグ付きAdobe Targetの追加
 description: at.js のタグ、ページ読み込みリクエスト、パラメーター、注文リクエスト、カスタムのヘッダー/フッターコードを使用してAdobe Targetを実装する方法について説明します。 このレッスンは、「Web サイトでの Experience Cloud の実装」チュートリアルの一部です。
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4280'
 ht-degree: 68%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 68%
 
 >[!WARNING]
 >
-> このチュートリアルで使用する Luma の web サイトは、2026 年 2 月 16 日の週に置き換えられる予定です。 このチュートリアルの一部で行った作業は、新しい web サイトには適用されない場合があります。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 68%
 
 ## 前提条件
 
-この節のレッスンを完了するには、まず [&#x200B; タグを設定 &#x200B;](create-a-property.md) および [ID サービスを追加 &#x200B;](id-service.md) のレッスンを完了する必要があります。
+この節のレッスンを完了するには、まず [ タグを設定 ](create-a-property.md) および [ID サービスを追加 ](id-service.md) のレッスンを完了する必要があります。
 
 ## Target 非表示スニペットを追加します。
 
@@ -89,18 +89,18 @@ ht-degree: 68%
 
 サンプルページを開き、以下に示すように、タグ埋め込みコードの直前に貼り付けます（行番号が異なっても心配ありません）。 このスクリーンショットでは、事前非表示のスニペットは縮小されています。
 
-![&#x200B; 拡張機能にポインタを合わせる &#x200B;](images/target-prehidingSnippet.png)
+![ 拡張機能にポインタを合わせる ](images/target-prehidingSnippet.png)
 
 サンプルページを再度読み込みます。ページは、表示されるまでの 3 秒間、非表示になっています。この動作は一時的なもので、Target をデプロイすると消滅します。この事前非表示の動作は、スニペットの最後にある 2 つの設定で制御します。この設定は、カスタマイズすることもできますが、通常はデフォルト設定のまま残しておくのが最適です。
 
 * `body {opacity: 0 !important}` で、 Target が読み込まれるまでの間に事前非表示に使用する CSS 定義を指定します。デフォルトでは、本文全体が非表示になっています。ナビゲーション配下のすべてのコンテンツをラップする、識別しやすいコンテナ要素を使用した一貫性のある DOM 構造があり、ナビゲーションのテストやパーソナライズを実行したくない場合は、この設定を使用して、そのコンテナ要素の事前非表示を制限できます。
 * `3000` これは、事前非表示のタイムアウト設定を指定します。デフォルトでは、Target が 3 秒間で読み込まれない場合、ページが表示されます。これは極めてまれです。
 
-詳細について、および非圧縮の事前非表示スニペットを入手するには、[非同期デプロイメントを使用した Adobe Target 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ja#adobe-target-extension-with-an-asynchronous-deployment)を参照してください。
+詳細について、および非圧縮の事前非表示スニペットを入手するには、[非同期デプロイメントを使用した Adobe Target 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment)を参照してください。
 
 ## Target 拡張機能の追加
 
-Adobe Target拡張機能は、Target の at.js JavaScript ライブラリを使用したクライアントサイド実装をサポートしています。 Adobe Targetの Web SDKの実装については、[Experience Platform Web SDK チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) を参照してください。
+Adobe Target拡張機能は、Target の at.js JavaScript ライブラリを使用したクライアントサイド実装をサポートしています。 Adobe Targetの Web SDKの実装については、[Experience Platform Web SDK チュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) を参照してください。
 
 Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
@@ -191,9 +191,9 @@ Target v2 拡張機能を追加し、`Load Target` アクションと `Fire Page
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「概要」タブに移動します。
 
@@ -213,9 +213,9 @@ Target v2 拡張機能を追加し、`Load Target` アクションと `Fire Page
 
 Target リクエストにパラメーターを渡すと、ターゲティング、テスト、パーソナライゼーションアクティビティに強力な機能が追加されます。タグ拡張機能には、パラメーターを渡す 2 つのアクションが用意されています。
 
-1. `Add Params to Page Load Request` は、ページ読み込みリクエストにパラメーターを追加します（[targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=ja)メソッドと同じ）。
+1. `Add Params to Page Load Request` は、ページ読み込みリクエストにパラメーターを追加します（[targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html)メソッドと同じ）。
 
-1. `Add Params to All Requests` を呼び出すと、ページ読み込みリクエストに加えてカスタムコードアクションから行われた追加のリクエストや、サイトにハードコードされたなど、すべての Target リクエストにパラメーターが追加されます（[targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=ja)メソッドと同じ）。
+1. `Add Params to All Requests` を呼び出すと、ページ読み込みリクエストに加えてカスタムコードアクションから行われた追加のリクエストや、サイトにハードコードされたなど、すべての Target リクエストにパラメーターが追加されます（[targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html)メソッドと同じ）。
 
 これらのアクションは、`Load Target` アクションの&#x200B;*前に*&#x200B;使用して、ルール設定に基づいて異なるページに異なるパラメーターを設定できます。ID サービスで顧客 ID を設定するときに使用したルール順序付け機能を使用して、ルールがページ読み込み要求を実行する前に `Library Loaded` イベントに追加のパラメーターを設定します。
 >[!TIP]
@@ -282,7 +282,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ### プロファイルパラメーター
 
-要求パラメーターと同様、プロファイルパラメーターは Target 要求経由で渡されます。ただし、プロファイルパラメーターは Target の訪問者プロファイルデータベースに保存され、[訪問者のプロファイルの期間中](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=ja)保持されます。これらの設定はサイトのいずれかのページで指定し、他のページの Target アクティビティで使用できます。以下に、自動車の Web サイトの例を示します。訪問者が車両のページに移動したら、プロファイルパラメーター「profile.lastViewed=sportscar」を渡して、特定の車両への関心を記録することができます。訪問者が他のページ（車両以外のページ）を閲覧すると最後に閲覧した車に基づいてコンテンツをターゲット設定できます。プロファイルパラメーターは、ほとんど変更されない、または特定のページでのみ利用可能な属性に最適です。
+要求パラメーターと同様、プロファイルパラメーターは Target 要求経由で渡されます。ただし、プロファイルパラメーターは Target の訪問者プロファイルデータベースに保存され、[訪問者のプロファイルの期間中](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html)保持されます。これらの設定はサイトのいずれかのページで指定し、他のページの Target アクティビティで使用できます。以下に、自動車の Web サイトの例を示します。訪問者が車両のページに移動したら、プロファイルパラメーター「profile.lastViewed=sportscar」を渡して、特定の車両への関心を記録することができます。訪問者が他のページ（車両以外のページ）を閲覧すると最後に閲覧した車に基づいてコンテンツをターゲット設定できます。プロファイルパラメーターは、ほとんど変更されない、または特定のページでのみ利用可能な属性に最適です。
 
 このチュートリアルではプロファイルパラメーターは渡されませんが、ワークフローは `pageName` パラメーターを渡す際の操作とほぼ同じです。違いの 1 つは、プロファイルパラメーターに `profile.` 接頭辞を付ける必要があるという点です。この点で、「userType」と呼ばれるパラメーターは `Add Params to Page Load Request` アクションで以下のようになります。
 
@@ -290,7 +290,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ### エンティティパラメーター
 
-エンティティパラメーターは、主に次の 3 つの理由により、[レコメンデーションの実装](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=ja)で使用される特別なパラメーターです。
+エンティティパラメーターは、主に次の 3 つの理由により、[レコメンデーションの実装](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)で使用される特別なパラメーターです。
 
 1. 製品のレコメンデーションをトリガーするためのキー。例えば、「製品 Xを閲覧し、Y も閲覧した人」などのレコメンデーションアルゴリズムを使用する場合、「X」はレコメンデーションの「キー」になります。訪問者が現在閲覧している製品の sku（`entity.id`）またはカテゴリー（`entity.categoryId`）です。
 1. 「最近閲覧した製品」や「最も多く閲覧された製品」など、レコメンデーションアルゴリズムを強化する訪問者行動を収集する場合。
@@ -302,7 +302,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ### 顧客 ID パラメーターの追加
 
-Adobe Experience Platform ID サービスを使用して顧客 ID を収集すると、Adobe Experience Cloud の[顧客属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ja)機能を使用して CRM データを Target に簡単にインポートできます。また、[デバイスをまたいだ訪問者のステッチ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=ja)も可能で、顧客がデバイス（ノート PC とモバイルデバイスなど）を切り替えても、一貫したユーザーエクスペリエンスを維持できます。
+Adobe Experience Platform ID サービスを使用して顧客 ID を収集すると、Adobe Experience Cloud の[顧客属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ja)機能を使用して CRM データを Target に簡単にインポートできます。また、[デバイスをまたいだ訪問者のステッチ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)も可能で、顧客がデバイス（ノート PC とモバイルデバイスなど）を切り替えても、一貫したユーザーエクスペリエンスを維持できます。
 
 ページ読み込み要求を実行する前に、ID サービスの `Set Customer IDs` アクションに顧客 ID を設定する必要があります。そのためには、サイトに次の機能があることを確認します。
 
@@ -321,9 +321,9 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. 資格情報（`test@test.com`／`test`）を使用して Luma サイトにログインします。
 1. [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html)に戻ります。
@@ -339,7 +339,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=ja):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -405,9 +405,9 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 **プロパティトークンパラメーターを検証するには、いかを実行します。**
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. ブラウザーの開発者ツールを開きます。
 1. 「ネットワーク」タブをクリックします。
@@ -435,7 +435,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ベストプラクティスは、小売以外のサイトであっても、すべての注文ファネルで注文確認リクエストを使用することです。 例えば、リードジェネレーションサイトには通常、生成された一意の「リード ID」を持つリードファネルが最後にあります。これらのサイトでは、orderTotal に静的な値（「1」など）を使用して注文要求を実装する必要があります。
 
-ほとんどのレポートで Analytics for Target （A4T）統合を使用しているお客様は、A4T をサポートしていないAutomated Personalization アクティビティを使用している場合に注文リクエストを実装することもできます。 さらに、注文リクエストは、Recommendations 実装の重要な要素であり、購入行動に基づいてアルゴリズムを強化します。 A4T サポートの最新情報については、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ja#section_F487896214BF4803AF78C552EF1669AA) を参照してください。
+ほとんどのレポートで Analytics for Target （A4T）統合を使用しているお客様は、A4T をサポートしていないAutomated Personalization アクティビティを使用している場合に注文リクエストを実装することもできます。 さらに、注文リクエストは、Recommendations 実装の重要な要素であり、購入行動に基づいてアルゴリズムを強化します。 A4T サポートの最新情報については、[ ドキュメント ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA) を参照してください。
 
 注文確認要求は、注文確認ページまたはイベントでのみトリガーされるルールから実行する必要があります。多くの場合、注文確認要求は Adobe Analytics 購入イベントを設定するルールと組み合わせることができます。これは、コア拡張機能の「Custom Code」アクションで、適切なデータ要素を使用して orderId、orderTotal、productPurchasedId パラメーターを設定する適切なデータ要素を使用して設定する必要があります。
 
@@ -537,9 +537,9 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. サイトを参照し、買い物かごに複数の製品を追加します。
 1. チェックアウトを続行します。
@@ -569,11 +569,11 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ページの読み込みと注文確認リクエスト以外に、Target リクエストをおこなう必要がある場合はまれです。 例えば、パーソナライゼーションに使用する重要なデータが、タグ埋め込みコードの前のページで定義されていない場合があります。ページの下部でハードコードされている場合や、非同期 API リクエストから返される場合があります。 このデータは、追加のリクエストを使用して Target に送信できますが、ページが既に表示されるので、このリクエストをコンテンツ配信に使用することは最適ではありません。 このデータを使用して、後で使用するために訪問者プロファイルをエンリッチメントしたり（プロファイルパラメーターを使用）、Recommendations カタログに値を入力したりできます。
 
-このような場合、コア拡張機能のカスタムコードアクションを使用して、[getOffer （） &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=ja)/[applyOffer （） &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=ja) および [trackEvent （） &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=ja) メソッドを使用してリクエストを実行します。 これは、[&#x200B; 注文確認リクエスト &#x200B;](#order-confirmation-request) の演習で行ったものと非常によく似ていますが、別のリクエスト名を使用するだけであり、特別な注文パラメーターは使用しません。 カスタムコードから Target リクエストを実行する前に、必ず **[!UICONTROL ターゲットを読み込み]** アクションを使用してください。
+このような場合、コア拡張機能のカスタムコードアクションを使用して、[getOffer （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) および [trackEvent （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) メソッドを使用してリクエストを実行します。 これは、[ 注文確認リクエスト ](#order-confirmation-request) の演習で行ったものと非常によく似ていますが、別のリクエスト名を使用するだけであり、特別な注文パラメーターは使用しません。 カスタムコードから Target リクエストを実行する前に、必ず **[!UICONTROL ターゲットを読み込み]** アクションを使用してください。
 
 ## ライブラリのヘッダーとライブラリのフッター
 
-Target ユーザーインターフェイスの at.js 画面の編集画面には、at.js ファイルの直前または直後に実行するカスタム JavaScript を貼り付けることができます。ライブラリヘッダーは、[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=ja) 関数経由で at.js 設定を上書きしたり、[データプロバイダー](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=ja)機能を使用してサードパーティからデータを渡したりする場合に使用されます。ライブラリフッターは、[at.js カスタムイベント](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=ja)リスナーの追加に使用される場合があります。
+Target ユーザーインターフェイスの at.js 画面の編集画面には、at.js ファイルの直前または直後に実行するカスタム JavaScript を貼り付けることができます。ライブラリヘッダーは、[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 関数経由で at.js 設定を上書きしたり、[データプロバイダー](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)機能を使用してサードパーティからデータを渡したりする場合に使用されます。ライブラリフッターは、[at.js カスタムイベント](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html)リスナーの追加に使用される場合があります。
 
 この機能をタグにレプリケートするには、コア拡張機能のカスタムコードアクションを使用して、「ターゲットを読み込み」アクションの前（ライブラリヘッダー）または後（ライブラリフッター）にアクションを並べ替えます。 これは、以下の図のように、 `Load Target` アクションと同じルールで実行することも、`Load Target` の前後に確実に実行するイベントや順序の設定を使用して別のルールで実行することもできます。
 
@@ -581,8 +581,8 @@ Target ユーザーインターフェイスの at.js 画面の編集画面には
 
 カスタムヘッダーやフッターの使用例について詳しくは、以下のリソースを参照してください。
 
-* [dataProviders を使用してサードパーティデータを Adobe Target に統合する](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=ja)
-* [dataProviders を実装してサードパーティデータを Adobe Target に統合する](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=ja)
-* [Adobe Target での応答トークンと at.js カスタムイベントの使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=ja)
+* [dataProviders を使用してサードパーティデータを Adobe Target に統合する](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
+* [dataProviders を実装してサードパーティデータを Adobe Target に統合する](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
+* [Adobe Target での応答トークンと at.js カスタムイベントの使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
 [次の「Adobe Analyticsの追加」 >](analytics.md)
