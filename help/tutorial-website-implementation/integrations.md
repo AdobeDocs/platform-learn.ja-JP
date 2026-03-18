@@ -16,7 +16,7 @@ ht-degree: 84%
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 ## 学習内容
 
@@ -54,9 +54,9 @@ A4T の実装に必要な主な要件は、次のとおりです（既に済ん�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「ネットワーク」タブに移動します。
 
@@ -93,9 +93,9 @@ A4T 統合を検証する最善の方法は、A4T を使用して実際に Targe
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. デバッガーの「ネットワーク」タブに移動します。
 
@@ -135,7 +135,7 @@ A4Tアクティビティの一貫としてページ読み込みの範囲（単�
 
 1. サイトの右上隅にある「**[!UICONTROL ログイン]**」リンクをクリックします
 
-   ![ 右上の「ログイン」をクリックします ](images/idservice-loginNav.png)
+   ![&#x200B; 右上の「ログイン」をクリックします &#x200B;](images/idservice-loginNav.png)
 
 1. ユーザー名として `test@test.com` を入力します。
 1. パスワードとして `test` を入力します。

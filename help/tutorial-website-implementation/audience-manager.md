@@ -19,7 +19,7 @@ ht-degree: 71%
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 
 ## 学習内容
@@ -34,7 +34,7 @@ ht-degree: 71%
 
 このレッスンを完了するには、次が必要です。
 
-1. [ タグの設定 ](create-a-property.md)、[Adobe Analyticsの追加 ](analytics.md)、[ID サービスの追加 ](id-service.md) のレッスンを完了するには、
+1. [&#x200B; タグの設定 &#x200B;](create-a-property.md)、[Adobe Analyticsの追加 &#x200B;](analytics.md)、[ID サービスの追加 &#x200B;](id-service.md) のレッスンを完了するには、
 
 1. このチュートリアルで使用するレポートスイートのサーバーサイド転送を有効化するための、Adobe Analytics への管理者アクセス。または、以下の手順に従って、組織の既存の管理に依頼することもできます。
 
@@ -109,9 +109,9 @@ Adobe Analytics から Adobe Audience Manager へのデータの転送を開始�
 
 1. **[!UICONTROL 拡張機能/インストール済み]** に移動し、をクリックして Analytics 拡張機能を設定します。
 
-   ![ Analytics 拡張機能の設定](images/aam-configAnalyticsExtension.png)
+   ![&#x200B; Analytics 拡張機能の設定](images/aam-configAnalyticsExtension.png)
 
-1.  「`Adobe Audience Manager`」セクションを展開します。
+1. 「`Adobe Audience Manager`」セクションを展開します。
 
 1. 「**[!UICONTROL Analytics データをAudience Managerと自動的に共有]**」チェックボックスをオンにします。 これにより、Audience Manager の「モジュール」（コード）が Analytics `AppMeasurement.js` の実装に追加されます。
 

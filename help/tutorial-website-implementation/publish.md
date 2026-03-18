@@ -16,7 +16,7 @@ ht-degree: 64%
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 
 ## 学習内容
@@ -53,7 +53,7 @@ ht-degree: 64%
 
 **ステージングライブラリで変更を検証するには、以下を実行します。**
 
-1. タグプロパティで、[!UICONTROL  環境 ] ページを開きます
+1. タグプロパティで、[!UICONTROL &#x200B; 環境 &#x200B;] ページを開きます
 
 1. [!UICONTROL ステージング]行で、インストールアイコン![インストールアイコン](images/launch-installIcon.png) をクリックして、モーダルを開きます。
 

@@ -18,7 +18,7 @@ ht-degree: 54%
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 
 ## 学習内容
@@ -115,7 +115,7 @@ ht-degree: 54%
 1. 「**[!UICONTROL 保存]**」をクリックして、ルールを保存します
 
 ルール ページに新しいルールが表示されます。
-![ ルールがページに表示されます ](images/launch-savedRule.png)
+![&#x200B; ルールがページに表示されます &#x200B;](images/launch-savedRule.png)
 
 ## ライブラリへの変更の保存
 

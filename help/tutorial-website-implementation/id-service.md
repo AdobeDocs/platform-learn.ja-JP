@@ -14,12 +14,12 @@ ht-degree: 63%
 
 このレッスンでは、[Adobe Experience Platform ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)の実装と顧客 ID の送信に必要な手順を説明します。
 
-[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、ソリューション間のオーディエンス共有などのExperience Cloud機能を強化するために、すべてのAdobe ソリューションで共通の訪問者 ID を設定します。 また、サービスに独自の顧客 ID を送信して、クロスデバイスターゲティングを有効にし、顧客関係管理（CRM）システムとのさらなる統合を可能にすることもできます。
+[Adobe Experience Platform ID サービス &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) は、ソリューション間のオーディエンス共有などのExperience Cloud機能を強化するために、すべてのAdobe ソリューションで共通の訪問者 ID を設定します。 また、サービスに独自の顧客 ID を送信して、クロスデバイスターゲティングを有効にし、顧客関係管理（CRM）システムとのさらなる統合を可能にすることもできます。
 
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 
 ## 学習内容
@@ -33,7 +33,7 @@ ht-degree: 63%
 
 ## 前提条件
 
-[ タグの設定 ](create-a-property.md) の節のレッスンを既に完了しているはずです。
+[&#x200B; タグの設定 &#x200B;](create-a-property.md) の節のレッスンを既に完了しているはずです。
 
 ## ID サービス拡張機能の追加
 
@@ -71,7 +71,7 @@ ID サービス拡張機能は、ルールアクションを使用せずにリ�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* で説明したように、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境」にマッピングしていることを確認します。
+1. *前のレッスン* で説明したように、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境」にマッピングしていることを確認します。
 
 1. Debugger の「概要」タブで、「タグ」セクションに、Adobe Experience Platform ID サービス拡張機能が実装されていることを示す必要があります。
 
@@ -226,9 +226,9 @@ Adobe Experience Platform ID サービスは、「顧客 ID を設定」と呼�
 
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 
-1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [ 自分の ](switch-environments.md) 開発環境にマッピングしていることを確認します。
+1. *前のレッスン* の説明に従って、Debugger がタグプロパティを [&#x200B; 自分の &#x200B;](switch-environments.md) 開発環境にマッピングしていることを確認します。
 
-   ![ デバッガーに表示されるタグ開発環境 ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; デバッガーに表示されるタグ開発環境 &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Luma サイトの右上隅にある **[!UICONTROL ログイン]** リンクをクリックします
 
@@ -262,7 +262,7 @@ Adobe Experience Platform ID サービスは、「顧客 ID を設定」と呼�
 
 タグには、豊富なコンソールログ機能もあります。 有効にするには、デバッガーの「**[!UICONTROL ツール]**」タブに移動して、「**[!UICONTROL タグコンソールログ]**」トグルをオンにします。
 
-![ タグのコンソールログを切り替える ](images/idservice-debugger-logging.png)
+![&#x200B; タグのコンソールログを切り替える &#x200B;](images/idservice-debugger-logging.png)
 
 これにより、ブラウザーコンソールと、デバッガーの「ログ」タブで、コンソールのログがオンになります。これまでに作成したすべてのルールのログが表示されるはずです。新しいログエントリはリストの最上部に追加され、「All Pages - Library Loaded - Authenticated - 10」ルールが「All Pages - Library Loaded」ルールの前に実行され、デバッガーのコンソールログの下に表示されるようになります:
 

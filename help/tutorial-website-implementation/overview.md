@@ -18,7 +18,7 @@ _Tags を使用して web サイトにExperience Cloudを実装する_ は、web
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 
 このチュートリアルでは、以下の内容について学習します。
@@ -42,13 +42,13 @@ _Tags を使用して web サイトにExperience Cloudを実装する_ は、web
 
 >[!NOTE]
 >
->同様のマルチソリューションチュートリアルが [Web SDK](../tutorial-web-sdk/overview.md) および [ モバイルSDK](../tutorial-mobile-sdk/overview.md) でも利用できます。
+>同様のマルチソリューションチュートリアルが [Web SDK](../tutorial-web-sdk/overview.md) および [&#x200B; モバイルSDK](../tutorial-mobile-sdk/overview.md) でも利用できます。
 
 ## 前提条件
 
 このレッスンでは、練習を完了するために必要な Adobe ID と権限があることを前提としています。Adobe ID と権限がない場合は、Experience Cloud 管理者に連絡して、アクセスをリクエストする必要がある場合があります。
 
-* タグの場合、拡張機能の開発、承認、公開、管理および環境の管理を行う権限が必要です。 タグユーザー権限について詳しくは、[ ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
+* タグの場合、拡張機能の開発、承認、公開、管理および環境の管理を行う権限が必要です。 タグユーザー権限について詳しくは、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ja) を参照してください。
 * Adobe Analytics の場合は、このチュートリアルを完了させるために使用するトラッキングサーバーとレポートスイートについて把握しておく必要があります。
 * Audience Managerの場合、Audience Manager サブドメイン（「パートナー名」、「パートナー ID」、「パートナーサブドメイン」とも呼ばれます）を把握している必要があります
 
@@ -69,16 +69,16 @@ Web サイト用タグを使用すると、デスクトップサイトやモバ�
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 このレッスンでは、Adobe Experience Cloud を練習用の小売 Web サイト「Luma」に実装します。[Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)には、現実的な実装を構築できる豊富なデータレイヤーと機能があります。独自のExperience Cloud組織で独自のタグプロパティを作成し、Experience Cloud Debugger を使用してホストされている Luma サイトにマッピングします。
 
-[![Luma web サイト ](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma web サイト &#x200B;](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## ツールの取得
 
 1. 拡張機能にはブラウザー固有のものがあるため、[Chrome Web ブラウザー](https://www.google.com/chrome/)を使用してチュートリアルを完了することをお勧めします。
-1. Chrome ブラウザーに [0}Adobe Experience Platform Debugger} 拡張機能を追加します](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+1. Chrome ブラウザーに [0&rbrace;Adobe Experience Platform Debugger&rbrace; 拡張機能を追加します](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 1. サンプルの HTML ページコードをコピーします
 
    +++HTML ページコードのサンプル

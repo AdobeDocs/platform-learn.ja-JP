@@ -16,7 +16,7 @@ ht-degree: 94%
 
 >[!WARNING]
 >
-> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
+> このチュートリアルと Luma web サイトの演習はメンテナンスされなくなり、古いJavaScript ライブラリに依存するようになりました。 現在のベストプラクティスについては、[Web SDKを使用したAdobe Experience Cloudの実装 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview) チュートリアルを参照してください。
 
 この手法は環境の切り替えと呼ばれ、後で自分の web サイトでタグを操作する際に役立ちます。 本番稼働用 web サイトをブラウザーに読み込むことができますが、*開発*&#x200B;タグ環境を使用します。 これにより、通常のコードリリースとは独立し、自信を持ってタグの変更を実行および検証できます。  結局、マーケティングタグリリースを通常のコードリリースから分離することが、顧客がタグを最初に使用する主な理由の 1 つです。
 
