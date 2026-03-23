@@ -41,59 +41,59 @@ Google Gemini Enterprise BetaでAdobe Marketing Agentを使用することによ
 
 [https://cloud.google.com/gemini-enterprise](https://cloud.google.com/gemini-enterprise)に移動します。 「**30日間の無料体験を開始**」をクリックします。
 
-![ ゲミニ ](./images/gemini1.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini1.png)
 
 Google アカウントの電子メールアドレスを入力し、**電子メールで続行**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini2.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini2.png)
 
 姓と名を入力し、**同意して開始**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini3.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini3.png)
 
 「**後で行います**」をクリックします。
 
-![ ゲミニ ](./images/gemini4.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini4.png)
 
 そうすると、これが表示されます。
 
-![ ゲミニ ](./images/gemini5.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini5.png)
 
 [https://cloud.google.com/gemini-enterprise](https://cloud.google.com/gemini-enterprise)に移動します。
 
 このような表示になります。 また、最初に請求先アカウントを作成し、その後ここで選択する必要がある場合もあります。
 
-![ ゲミニ ](./images/gemini6.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini6.png)
 
 「**30日間の無料試用版を開始**」をクリックします。
 
-![ ゲミニ ](./images/gemini7.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini7.png)
 
 「**続行」をクリックして、API**&#x200B;をアクティブ化します。
 
-![ ゲミニ ](./images/gemini8.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini8.png)
 
 「**作成**」をクリックします。
 
-![ ゲミニ ](./images/gemini9.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini9.png)
 
 そうすると、これが表示されます。
 
-![ ゲミニ ](./images/gemini10.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini10.png)
 
 ## 1.1.4.2 A2Aを使用してカスタムエージェントを作成します
 
 [https://console.cloud.google.com/gemini-enterprise](https://console.cloud.google.com/gemini-enterprise)に移動します。 「**Agents**」をクリックします。
 
-![ ゲミニ ](./images/gemini10a.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini10a.png)
 
 「**+エージェントを追加**」をクリックします。
 
-![ ゲミニ ](./images/gemini11.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini11.png)
 
 A2A **経由で** カスタムエージェントを選択します。
 
-![ ゲミニ ](./images/gemini12.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini12.png)
 
 **エージェントカード JSON**&#x200B;を貼り付けます。
 
@@ -101,19 +101,19 @@ A2A **経由で** カスタムエージェントを選択します。
 >
 >Adobe担当者に問い合わせて、**Agent Card JSON**&#x200B;情報を取得してください。
 
-![ ゲミニ ](./images/gemini13.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini13.png)
 
 **エージェントカード JSON**&#x200B;をペーストしたら、**エージェントの詳細をプレビュー**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini14.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini14.png)
 
 このような表示になります。 下にスクロールして、**次へ**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini15.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini15.png)
 
 このような表示になります。
 
-![ ゲミニ ](./images/gemini16.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini16.png)
 
 インスタンスのフィールドに入力します。
 
@@ -149,49 +149,49 @@ openid email profile
 
 「**完了**」をクリックします。
 
-![ ゲミニ ](./images/gemini17.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini17.png)
 
 そうすると、これが表示されます。
 
-![ ゲミニ ](./images/gemini18.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini18.png)
 
 ## 1.1.4.3 Adobe Marketing Agentにログイン
 
 **概要**&#x200B;に移動し、**プレビュー**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini19.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini19.png)
 
 「**開始する**」をクリックします
 
-![ ゲミニ ](./images/gemini20.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini20.png)
 
 **Agents**&#x200B;に移動します。 **Adobe Marketing Agent**&#x200B;が表示されます。
 
-![ ゲミニ ](./images/gemini21.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini21.png)
 
 3つのドット **...**&#x200B;をクリックし、**ピン**&#x200B;を選択します。
 
-![ ゲミニ ](./images/gemini22.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini22.png)
 
 **新しいチャット**&#x200B;に移動し、チャットに記号&#x200B;**@**&#x200B;を入力します。 **Adobe Marketing Agent**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini23.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini23.png)
 
 コマンド `login`を入力し、**送信**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini24.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini24.png)
 
 そうすると、これが表示されます。 **認証**&#x200B;をクリックします。
 
-![ ゲミニ ](./images/gemini25.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini25.png)
 
 **アクセスを許可**&#x200B;をクリックし、Adobe IDを使用してログインを完了し、プロンプトが表示されたらインスタンス `--aepImsOrgName--`を選択します。
 
-![ ゲミニ ](./images/gemini26.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini26.png)
 
 そうすると、これが表示されます。
 
-![ ゲミニ ](./images/gemini27.png)
+![&#x200B; ゲミニ &#x200B;](./images/gemini27.png)
 
 ## 1.1.4.4 Adobe Marketing Agentでコンテキストを設定
 
