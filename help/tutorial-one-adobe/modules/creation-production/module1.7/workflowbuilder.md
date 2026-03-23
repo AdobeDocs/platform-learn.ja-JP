@@ -1,60 +1,60 @@
 ---
-title: Firefly カスタムワークフロー
-description: Firefly カスタムワークフロー
+title: Firefly Creative Production for Enterprise
+description: Firefly Creative Production for Enterprise
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
 
-# 1.7 Fireflyのカスタムワークフロー
+# 1.7 Firefly Creative Production for Enterprise
 
-Firefly カスタムワークフローの主な焦点は、ワークフローを作成および設定するクリエイティブテクノロジストやソリューションビルダーです。
+Firefly Creative Production for Enterpriseでは、主に、ワークフローを作成および設定するクリエイティブテクノロジストとソリューションビルダーに重点を置いています。
 
-Firefly カスタムワークフローを使用すると、次のことができます。
+Firefly Creative Production for Enterpriseでは、次のことが可能です。
 
-- ワークフローの作成：手動または AI の支援を受けた視覚的なインターフェイスを使用して、複数手順の実稼動ワークフローを作成します。
-- ワークフローの実行：ブラウザーの外部で動作する堅牢なランタイムを使用して、バッチ処理を含む大規模なワークフローを実行します。
-- ワークフローのデプロイ：ワークフローを API エンドポイントまたはプログラムによる UI として公開し、他のツールやシステムと統合します。
-- ワークフローの統合：DAM、アクティベーションストリーム、コンテンツサプライチェーンなどのエンタープライズシステムにワークフローを接続します。
+- ワークフローの構築：手動またはAIによる支援を伴うビジュアルインターフェイスを使用して、マルチステップの制作ワークフローを作成します。
+- ワークフローの実行：ブラウザー外で動作する堅牢なランタイムを使用して、バッチ処理を含む大規模なワークフローを実行します。
+- ワークフローのデプロイ：ワークフローをAPI エンドポイントまたはプログラマティック UIとして公開して、他のツールやシステムに統合します。
+- ワークフローの統合：ワークフローを、DAM、アクティベーションストリーム、コンテンツサプライチェーンなどのエンタープライズシステムに接続します。
 
-サポートされる主なユースケースは次のとおりです。
+サポートされている主なユースケースは次のとおりです。
 
-- ソーシャルメディアチャネルの適応（すべてのソーシャルメディアプラットフォームおよびタイプのサイズのバリエーションの作成など）。
-- アセット準備（印刷や web などの追加のサーフェスで使用するアセットを準備するなど）。
-- コンテンツのリターゲティング（更新やビジュアルの再利用など）により、関心のあるオーディエンスを再び引き付けます。
-- 商品画像の標準化や、様々なオーディエンス向けのセグメント固有のバリアントの作成などの e コマース。
+- ソーシャルメディアチャネルの適応：あらゆるソーシャルメディアプラットフォームやタイプに対応したサイズのバリエーションの作成など
+- アセットの準備（印刷やwebなどの追加のサーフェスで使用するアセットの準備など）。
+- ビジュアルの更新や再利用により、興味を抱いたオーディエンスに再エンゲージするなど、コンテンツのリターゲティング。
+- e コマース：商品画像の正規化や、様々なオーディエンス向けのセグメント固有のバリエーションの作成など
 
 ## 前提条件
 
-- Firefly カスタムワークフローへのアクセス
+- Firefly Creative Production for Enterpriseへのアクセス
 
 ## ビデオ
 
-このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+このビデオでは、この演習に関連するすべての手順の説明とデモを行います。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479377?quality=12&learn=on)
 
 ## 演習
 
-[1.7.1 Fireflyのカスタムワークフローの概要 &#x200B;](./ex1.md){target="_blank"}
+[1.7.1 Firefly Creative Production for Enterpriseの概要](./ex1.md){target="_blank"}
 
 この演習では、ワークフロービルダーの使用を開始します。
 
-[1.7.2 カスタムワークフローをプログラムで実行する &#x200B;](./ex2.md){target="_blank"}
+[1.7.2 カスタムワークフローをプログラムで実行する](./ex2.md){target="_blank"}
 
-この演習では、PostmanとWorkfront Fusion を使用して、カスタムワークフローをプログラムで実行します。
+この演習では、PostmanとWorkfront Fusionを使用して、カスタムワークフローをプログラムで実行します。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![技術関係者](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>ご質問がある場合は、**techinsiders@adobe.com**&#x200B;に電子メールを送信して、今後のコンテンツに関する提案の一般的なフィードバックを共有するには、Tech Insidersに直接お問い合わせください。
 
-[&#x200B; すべてのモジュール &#x200B;](../../../overview.md){target="_blank"} に戻る
+[すべてのモジュール ](../../../overview.md){target="_blank"}に戻る
