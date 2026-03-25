@@ -4,57 +4,57 @@ description: Web サイトへのBrand Conciergeの実装
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f3a365b1453ee34d9649202bdb523624a469b623
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 1%
 
 ---
 
-# 1.4.2 Web サイトへのBrand Conciergeの実装
+# 1.4.2 web サイトへのBrand Conciergeの実装
 
 >[!IMPORTANT]
 >
->この演習を行うには、動作しているAEM Assets CS オーサー環境とAEM CS/EDS Web サイトにアクセスできる必要があります。
+>この演習を完了するには、作業中のAEM Assets CS オーサー環境とAEM CS/EDS web サイトにアクセスする必要があります。
 >
->そのような環境がない場合は、[Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} に移動します。 指示に従うと、そのような環境にアクセスできます。
+>そのような環境がない場合は、[Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}に移動します。 そこに記載されている手順に従うと、そのような環境にアクセスできるようになります。
 
 >[!IMPORTANT]
 >
->以前にAEM CS プログラムをAEM Assets CS 環境で設定している場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
+>AEM Assets CS環境でAEM CS プログラムを既に設定している場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には10～15分かかることを考えると、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
 
-## 1.4.2.1 Brand Concierge - AEM オーサーを表示するように web サイトを設定する
+## 1.4.2.1 Brand Conciergeを表示するようにweb サイトを設定 – AEM オーサー
 
-Brand Conciergeを web サイトに表示するには、新しいページに追加する必要がある新しいカスタムブロックを作成し、新しいページが web サイトのナビゲーションに追加されていることを確認する必要があります。
+Brand Conciergeをweb サイトに表示するには、新しいページに追加する必要がある新しいカスタムブロックを作成する必要があり、新しいページがweb サイトのナビゲーションに追加されていることを確認する必要があります。
 
 次の項目をこの順序で設定する必要があります。
 
-- Web サイトにBrand Conciergeを読み込むために使用する、新しいカスタムブロックを作成します。
-- Web サイトにBrand Conciergeの新しいページを作成します。
-- 新しく作成したBrand Conciergeページに新しく作成したカスタムブロックをリンクします。
-- Web サイトのナビゲーションヘッダーファイルで新しく作成したBrand Conciergeページに移動するための参照を追加します。
+- Web サイトにBrand Conciergeを読み込むために使用する新しいカスタムブロックを作成します。
+- Brand Concierge用にweb サイトに新しいページを作成します。
+- 新しく作成したBrand Concierge ページで、新しく作成したカスタムブロックをリンクします。
+- Web サイトのナビゲーションヘッダーファイルで、新しく作成したBrand Concierge ページに移動するための参照を追加します。
 
 ### 新しいカスタムブロックを作成
 
-新しいカスタムブロックを作成するには、Web サイトにリンクされている GitHub リポジトリに移動します。
+新しいカスタムブロックを作成するには、web サイトにリンクされているGitHub リポジトリに移動します。
 
-![&#x200B; ブロック &#x200B;](./images/block1.png)
+![ ブロック ](./images/block1.png)
 
 #### component-definition.json
 
-ファイル **component-definition.json** が表示されるまで下にスクロールして開きます
+ファイル **component-definition.json**&#x200B;が表示されるまで下にスクロールして開きます
 
-![&#x200B; ブロック &#x200B;](./images/block8.png)
+![ ブロック ](./images/block8.png)
 
 **pencl** アイコンをクリックして、ファイルの編集を開始します。
 
-![&#x200B; ブロック &#x200B;](./images/block8a.png)
+![ ブロック ](./images/block8a.png)
 
-**ブロック** が表示されるまで下にスクロールします。 カーソルをコンポーネントの閉じブラケットの下に置きます **カード**
+**ブロック**&#x200B;が表示されるまで下にスクロールします。 コンポーネント **カード**&#x200B;の閉じ括弧の下にカーソルを設定します
 
-![&#x200B; ブロック &#x200B;](./images/block9.png)
+![ ブロック ](./images/block9.png)
 
-このコードを貼り付け、コードのブロックの後にコンマ **,** を入力します。
+このコードを貼り付け、コードブロックの後にコンマ **,**&#x200B;を入力します。
 
 ```json
 {
@@ -76,23 +76,23 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block10.png)
+![ ブロック ](./images/block10.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block10a.png)
+![ ブロック ](./images/block10a.png)
 
 #### component-models.json
 
-ファイル **component-models.json** が表示されるまで下にスクロールし、**鉛筆** アイコンをクリックしてファイルの編集を開始します。
+ファイル **component-models.json**&#x200B;が表示されるまで下にスクロールし、**鉛筆** アイコンをクリックしてファイルの編集を開始します。
 
-![&#x200B; ブロック &#x200B;](./images/block11.png)
+![ ブロック ](./images/block11.png)
 
-最後の項目が表示されるまで下にスクロールします。 最後のコンポーネントの閉じブラケットの隣にカーソルを置きます。
+最後の項目が表示されるまで下にスクロールします。 最後のコンポーネントの閉じ括弧の横にカーソルを設定します。
 
-![&#x200B; ブロック &#x200B;](./images/block12.png)
+![ ブロック ](./images/block12.png)
 
-コンマ **,** を入力し、enter キーを押して、次の行に次のコードをペーストします。
+コンマ **,**&#x200B;を入力し、Enter キーを押して次の行に次のコードを貼り付けます：
 
 ```json
 {
@@ -103,57 +103,57 @@ Brand Conciergeを web サイトに表示するには、新しいページに追
 
 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block13.png)
+![ ブロック ](./images/block13.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block13a.png)
+![ ブロック ](./images/block13a.png)
 
 #### component-filters.json
 
-ファイル **component-filters.json** が表示されるまで下にスクロールし、「**鉛筆**」アイコンをクリックしてファイルの編集を開始します。
+ファイル **component-filters.json**&#x200B;が表示されるまで下にスクロールし、**鉛筆** アイコンをクリックしてファイルの編集を開始します。
 
-![&#x200B; ブロック &#x200B;](./images/block14.png)
+![ ブロック ](./images/block14.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
-![&#x200B; ブロック &#x200B;](./images/block14a.png)
+![ ブロック ](./images/block14a.png)
 
-**セクション** の下で、コンマ `,` を入力し、現在の最後の行の後にコンポーネント `"brandconcierge"` の ID を貼り付けます。
+**セクション**&#x200B;で、コンマ `,`を入力し、現在の最終行の後にコンポーネント `"brandconcierge"`のIDを貼り付けます。
 
 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block15.png)
+![ ブロック ](./images/block15.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/block15a.png)
+![ ブロック ](./images/block15a.png)
 
 #### brandconcierge.css
 
-ブロックを作成するときは、ブロックのスタイルを設定するためのファイルを作成することをお勧めします。このファイルには、ブロックと同じ名前を付ける必要があります。 そのファイルを作成します。ここでは空のままにします。
+ブロックを作成する場合は、ブロックのスタイル設定のためのファイルを作成することをお勧めします。ブロックと同じ名前にする必要があります。 このファイルを作成する必要があります。今は空のままにしておきます。
 
-**blocks** フォルダーに移動します。 次に、「**ファイルを追加**」をクリックし、「**新しいファイルを作成**」を選択します。
+**ブロック** フォルダーに移動します。 次に、**ファイルを追加**&#x200B;をクリックし、**新しいファイルを作成**&#x200B;を選択します。
 
-![&#x200B; ブロック &#x200B;](./images/css1.png)
+![ ブロック ](./images/css1.png)
 
-テキストボックスに `brandconcierge/brandconcierge.css` と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
+テキストボックスに「`brandconcierge/brandconcierge.css`」と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/css2.png)
+![ ブロック ](./images/css2.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/css3.png)
+![ ブロック ](./images/css3.png)
 
 #### brandconcierge.js
 
-ブロックを作成するときは、ブロックに関連する Javascript 用のファイルを作成することをお勧めします。このファイルには、ブロックと同じ名前を付ける必要があります。
+ブロックを作成する場合は、ブロックに関連するJavaScript用のファイルを作成することをお勧めします。ブロックと同じ名前にする必要があります。
 
-**ファイルを追加** をクリックし、「**新しいファイルを作成**」を選択します。
+**ファイルを追加**&#x200B;をクリックし、**新しいファイルを作成**&#x200B;を選択します。
 
-![&#x200B; ブロック &#x200B;](./images/js1.png)
+![ ブロック ](./images/js1.png)
 
-テキストボックスに `brandconcierge.js` と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
+テキストボックスに「`brandconcierge.js`」と入力します。 ファイルは今のところ空のままです。 「**変更をコミット…**」をクリックします。
 
 ```javascript
 export default function decorate(block) {
@@ -161,41 +161,41 @@ export default function decorate(block) {
 }
 ```
 
-![&#x200B; ブロック &#x200B;](./images/js2.png)
+![ ブロック ](./images/js2.png)
 
 「**変更をコミット**」をクリックします。
 
-![&#x200B; ブロック &#x200B;](./images/js3.png)
+![ ブロック ](./images/js3.png)
 
-### 新しいページを作成して新しいカスタムブロックをリンク
+### 新しいページを作成し、新しいカスタムブロックをリンクする
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 **プログラム** をクリックして開きます。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}に移動します。 **プログラム**&#x200B;をクリックして開きます。
 
 ![AEMCS](./images/aemcs6.png)
 
-次に、「**環境**」タブの 3 つのドット **...** をクリックし、「**詳細を表示**」をクリックします。
+次に、**環境** タブの3つのドット **...**&#x200B;をクリックし、**詳細を表示**&#x200B;をクリックします。
 
 ![AEMCS](./images/aemcs9.png)
 
-その後、環境の詳細が表示されます。 **オーサー** 環境の URL をクリックします。
+環境の詳細が表示されます。 **Author**&#x200B;環境のURLをクリックします。
 
 >[!NOTE]
 >
->環境が休止状態になっている可能性があります。 その場合は、まず環境の休止状態を解除する必要があります。 休止状態を解除する方法については、以下のビデオを参照してください。
+>環境が休止状態になっている可能性があります。 そのような場合は、まず環境の休止を解除する必要があります。 休止状態を解除する方法については、以下のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 
-AEM オーサー環境が表示されます。 **サイト** に移動します。
+次に、AEM オーサー環境が表示されます。 **Sites**&#x200B;に移動します。
 
 ![AEMCS](./images/block21.png)
 
-**CitiSignal** に移動します。 **作成** をクリックし、「**ページ**」を選択します。
+**CitiSignal**&#x200B;に移動します。 **作成**&#x200B;をクリックし、**ページ**&#x200B;を選択します。
 
 ![AEMCS](./images/block23.png)
 
-**ページ** を選択し、「**次へ**」をクリックします。
+**ページ**&#x200B;を選択し、**次へ**&#x200B;をクリックします。
 
 ![AEMCS](./images/block24.png)
 
@@ -209,95 +209,95 @@ AEM オーサー環境が表示されます。 **サイト** に移動します�
 
 ![AEMCS](./images/block25.png)
 
-**開く** を選択します。
+「**開く**」を選択します。
 
 ![AEMCS](./images/block22.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![AEMCS](./images/block26.png)
 
-空白領域をクリックして、「**セクション**」コンポーネントを選択します。 次に、右側のメニューのプラス **+** アイコンをクリックします。
+空白の領域をクリックして、**セクション** コンポーネントを選択します。 次に、右側のメニューのプラス **+** アイコンをクリックします。
 
 ![AEMCS](./images/block27.png)
 
-カスタムブロックが、使用可能なブロックのリストに表示されます。 クリックして選択します。
+次に、利用可能なブロックのリストにカスタムブロックが表示されます。 クリックして選択します。
 
 ![AEMCS](./images/block28.png)
 
-このページに空のブロックが追加されているのが確認できます。 このブロックは、次の手順で追加する javascript ライブラリを使用して動的に読み込まれます。
+次に、空のブロックがこのページに追加されます。 このブロックは、次の手順で追加するjavacript ライブラリを使用して動的に読み込まれます。
 
 「**公開**」をクリックします。
 
 ![AEMCS](./images/block29.png)
 
-もう一度 **公開** をクリックします。
+**公開**&#x200B;をもう一度クリックします。
 
 ![AEMCS](./images/block30.png)
 
-これで新しいページが公開され、次の手順でナビゲーションヘッダーに追加できるようになります。
+これで新しいページが公開され、次の手順でナビゲーションヘッダーに追加できるようになりました。
 
 ### ナビゲーションヘッダーファイルを更新
 
-AEM Sitesの概要で **CitiSignal** に移動し、「Header/nav **ファイルのチェックボックスをオンに** ます。 「**編集**」をクリックします。
+AEM Sitesの概要で、**CitiSignal**&#x200B;に移動し、ファイル **Header/nav**&#x200B;のチェックボックスをオンにします。 「**編集**」をクリックします。
 
 ![AEMCS](./images/nav0.png)
 
-プレビュー画面で **テキスト** フィールドを選択し、画面の右側にある **テキスト** フィールドをクリックして編集します。
+プレビュー画面で「**テキスト**」フィールドを選択し、画面の右側にある「**テキスト**」フィールドをクリックして編集します。
 
 ![AEMCS](./images/nav0a.png)
 
-ナビゲーションメニューに新しいメニューオプションをテキスト `Brand Concierge` で作成します。 次に、テキスト「**Brand Concierge**」を選択し、「**リンク** アイコンをクリックします。
+ナビゲーションメニューにテキスト `Brand Concierge`を含む新しいメニューオプションを作成します。 次に、**Brand Concierge**&#x200B;というテキストを選択し、**リンク** アイコンをクリックします。
 
 ![AEMCS](./images/nav1.png)
 
-フィールド **パスまたは URL** に `/content/CitiSignal/brandconcierge.html` これを入力し、フィールド `Brand Concierge` タイトル **に** を入力します。 「**保存**」をクリックします。
+フィールド **パスまたはURL** `/content/CitiSignal/brandconcierge.html`に対してこれを入力し、フィールド `Brand Concierge` タイトル **に**&#x200B;と入力します。 「**保存**」をクリックします。
 
 ![AEMCS](./images/nav3.png)
 
-これで完了です。 「**完了**」をクリックします。
+では、これを使ってください。 「**完了**」をクリックします。
 
 ![AEMCS](./images/nav4.png)
 
-これで完了です。 「**公開**」をクリックします。
+では、これを使ってください。 「**公開**」をクリックします。
 
 ![AEMCS](./images/nav4a.png)
 
-もう一度 **公開** をクリックします。
+**公開**&#x200B;をもう一度クリックします。
 
 ![AEMCS](./images/nav5.png)
 
-これで、新しいページがメニューに追加されました。
+新しいページがメニューに追加されました。
 
-## 1.4.2.2 Brand Conciergeを表示するように web サイトを設定する – GitHub
+## 1.4.2.2 Brand Conciergeを表示するようにweb サイトを構成する – GitHub
 
-AEM オーサー環境を使用してコンテンツを更新した後、web サイトで使用する GitHub リポジトリーのコードの一部を更新する必要があります。
+AEM オーサー環境を使用してコンテンツを更新した後、web サイトに使用されるGitHub リポジトリ内のコードの一部を更新する必要があります。
 
 ### Javascript ライブラリ
 
-AEM CS/EDS で動作する web サイトにBrand Conciergeを実装するには、次のライブラリが必要です。
+AEM CS/EDSで動作するweb サイトにBrand Conciergeを実装するには、次のライブラリが必要です。
 
 - [styleconfigurations.js](./assets/styleconfigurations.js)
 - [alloy.js](./assets/alloy.js)
 - [brandconciergemain.js](./assets/brandconciergemain.js)
 
-3 つのファイルをすべてデスクトップにダウンロードします。
+3つのファイルをすべてデスクトップにダウンロードします。
 
 ![Brand Concierge](./images/aem0.png)
 
-AEM CS/EDS web サイトの GitHub プロジェクトに移動します。 **スクリプト** に移動します。
+AEM CS/EDS web サイトのGitHub プロジェクトに移動します。 **スクリプト**&#x200B;に移動します。
 
 ![Brand Concierge](./images/aem1.png)
 
-**ファイルを追加** をクリックし、「**ファイルをアップロード**」を選択します。
+「**ファイルを追加**」をクリックし、「**ファイルをアップロード**」を選択します。
 
 ![Brand Concierge](./images/aem3.png)
 
-**ファイルを選択** をクリックします。
+**ファイルを選択**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/aem3a.png)
 
-デスクトップから 3 つのファイル **styleConfigurations.js、alloy.js、brandconciergemain.js** をすべて選択し、「**開く**」をクリックします。
+デスクトップから3つのファイル **styleConfigurations.js、alloy.js、brandconciergemain.js**&#x200B;をすべて選択し、**開く**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/aem4.png)
 
@@ -305,17 +305,17 @@ AEM CS/EDS web サイトの GitHub プロジェクトに移動します。 **ス
 
 ![Brand Concierge](./images/aem5.png)
 
-### head.html を更新
+### head.htmlを更新
 
-前の手順では、3 つの新しいライブラリをアップロードしました。 これらのライブラリは、web サイトが読み込まれる際に読み込む必要があります。その方法は、これらのファイルへの参照をファイル **head.html** に追加することです。
+前の手順では、3つの新しいライブラリをアップロードしました。 これらのライブラリは、web サイトの読み込み時に読み込む必要があります。そのための方法は、これらのファイルへの参照を&#x200B;**head.html** ファイルに追加することです。
 
-さらに、ライブラリが正しい順序で正しく読み込まれるように **head.html** ファイルで指示を指定する必要もあります。
+さらに、**head.html** ファイルで手順を指定して、ライブラリが正しい順序で正しい方法で読み込まれるようにすることも必要です。
 
-それには、AEM CS/EDS web サイトの GitHub プロジェクトで「**コード**」をクリックします。
+これを行うには、**Code**&#x200B;をクリックして、AEM CS/EDS web サイトのGitHub プロジェクトに移動します。
 
 ![Brand Concierge](./images/aem6.png)
 
-少し下にスクロールします。 ファイル **head.html** を開きます。
+少し下にスクロールします。 ファイル **head.html**&#x200B;を開きます。
 
 ![Brand Concierge](./images/aem7.png)
 
@@ -323,23 +323,23 @@ AEM CS/EDS web サイトの GitHub プロジェクトに移動します。 **ス
 
 ![Brand Concierge](./images/aem8.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Brand Concierge](./images/aem9.png)
 
-43 行目までスクロールして、次を貼り付けます。
+43行目まで下にスクロールして、次の項目を貼り付けます。
 
-以下のコードには、更新が必要な 2 つのフィールドがあります。
+以下のコードには、更新が必要な2つのフィールドがあります。
 
 >[!IMPORTANT]
 >
->- **datastreamId** は現在「XXXXX」に設定されており、前の手順で作成したデータストリームの ID に置き換える必要があります。
->- **orgId** は、Adobe Experience Cloud インスタンスの IMS 組織 ID に置き換える必要があります。
+>- **datastreamId**&#x200B;は現在「XXXXX」に設定されており、前の手順で作成したデータストリームのIDに置き換える必要があります。
+>- **orgId**&#x200B;は、Adobe Experience Cloud インスタンスのIMS組織IDに置き換える必要があります。
 
 ```javascript
-<script src="/scripts/styleconfigurations.js"></script>
+<script nonce="aem" src="/scripts/styleconfigurations.js"></script>
 
-<script>
+<script nonce="aem">
     !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
@@ -353,9 +353,9 @@ AEM CS/EDS web サイトの GitHub プロジェクトに移動します。 **ス
     </script>
 
 
-<script src="/scripts/alloy.js"></script>
+<script nonce="aem" src="/scripts/alloy.js"></script>
 
-<script>
+<script nonce="aem">
     alloy("configure", {
         defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
@@ -392,29 +392,29 @@ window["alloy"]("sendEvent", {
 
 ![Brand Concierge](./images/aem11.png)
 
-これで、Web サイトにライブラリを読み込むために必要なコードが更新されました。
+これで、web サイトにライブラリを読み込むために必要なコードが更新されました。
 
 ![Brand Concierge](./images/aem12.png)
 
-## 1.4.2.3 設定をテストする
+## 1.4.2.3設定をテストします
 
-XXX を GitHub ユーザーアカウント（この例では `main--citisignal-aem-accs--XXX.aem.page`）に置き換えた後、`main--citisignal-aem-accs--XXX.aem.live` または `woutervangeluwe` に移動して、web サイトで変更をテストできるようになりました。
+これで、XXXをGitHub ユーザーアカウントに置き換えた後、`main--citisignal-aem-accs--XXX.aem.page`または`main--citisignal-aem-accs--XXX.aem.live`に移動して、web サイトで変更をテストできるようになります。この例では`woutervangeluwe`です。
 
-この例では、完全な URL は次のようになります。
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` や `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
+この例では、完全なURLは次のようになります。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`または`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
-最初に公開する必要があるので、すべてのアセットが正しく表示されるまでには時間がかかる場合があります。
+すべてのアセットを正しく表示するには、最初に公開する必要があるため、時間がかかる場合があります。
 
-この画像が表示されます。 **Brand Concierge** をクリックします。
+そうすると、これが表示されます。 **Brand Concierge**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/aem13.png)
 
-プロンプトを入力できるこのBrand Conciergeが表示されます。
+次に、このBrand Conciergeが表示され、プロンプトを入力できます。
 
 ![Brand Concierge](./images/aem14.png)
 
 ## 次の手順
 
-[Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
+[Brand Concierge](./brandconcierge.md){target="_blank"}に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](./../../../overview.md){target="_blank"}
