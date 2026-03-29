@@ -45,19 +45,19 @@ ht-degree: 9%
 
 [https://claude.ai/](https://claude.ai/){target="_blank"}に移動し、アカウントの詳細を使用してログインします。 ログインしたら、これを確認してください。
 
-![ クロード.ai](./images/claude1.png)
+![&#x200B; クロード.ai](./images/claude1.png)
 
 クリックしてアカウントを開き、**設定**&#x200B;を選択します。
 
-![ クロード.ai](./images/claude2.png)
+![&#x200B; クロード.ai](./images/claude2.png)
 
 **コネクタ**&#x200B;に移動し、**カスタマイズに移動**&#x200B;をクリックします。
 
-![ クロード.ai](./images/claude2a.png)
+![&#x200B; クロード.ai](./images/claude2a.png)
 
 **+**&#x200B;をクリックし、**カスタムコネクタを追加**&#x200B;を選択します。
 
-![ クロード.ai](./images/claude3.png)
+![&#x200B; クロード.ai](./images/claude3.png)
 
 次のようにフィールドに入力します。
 
@@ -66,15 +66,15 @@ ht-degree: 9%
 
 「**追加**」をクリックします。
 
-![ クロード.ai](./images/claude4.png)
+![&#x200B; クロード.ai](./images/claude4.png)
 
 そうすると、これが表示されます。 **+**&#x200B;をクリックして、新しいチャットを開始します。
 
-![ クロード.ai](./images/claude5.png)
+![&#x200B; クロード.ai](./images/claude5.png)
 
 **+** アイコンをクリックし、**コネクタ**&#x200B;に移動して、**Adobe Marketing Agent**&#x200B;が有効になっていることを確認してください**。
 
-![ クロード.ai](./images/claude6.png)
+![&#x200B; クロード.ai](./images/claude6.png)
 
 ## 1.1.5.2認証してコンテキストを設定
 
@@ -86,27 +86,27 @@ Claude.aiを通じてAdobe Marketing Agentをさらに操作する前に、ロ�
 login to Adobe Marketing Agent
 ```
 
-![ クロード.ai](./images/claude7.png)
+![&#x200B; クロード.ai](./images/claude7.png)
 
 「**常に許可**」を選択します。
 
-![ クロード.ai](./images/claude8.png)
+![&#x200B; クロード.ai](./images/claude8.png)
 
 Adobe Marketing agent**にログインするには、リンクをクリックします。
 
-![ クロード.ai](./images/claude8a.png)
+![&#x200B; クロード.ai](./images/claude8a.png)
 
 「**リンクを開く**」をクリックします。
 
-![ クロード.ai](./images/claude8b.png)
+![&#x200B; クロード.ai](./images/claude8b.png)
 
 「**アクセスを許可**」をクリックします。
 
-![ クロード.ai](./images/claude8c.png)
+![&#x200B; クロード.ai](./images/claude8c.png)
 
 正常に認証された後、これを確認する必要があります。 Claudeに戻ります。
 
-![ クロード.ai](./images/claude8d.png)
+![&#x200B; クロード.ai](./images/claude8d.png)
 
 次のコマンドを入力し、**send**&#x200B;をクリックします。
 
@@ -114,7 +114,7 @@ Adobe Marketing agent**にログインするには、リンクをクリックし
 logged in
 ```
 
-![ クロード.ai](./images/claude8e.png)
+![&#x200B; クロード.ai](./images/claude8e.png)
 
 これで正常にログインしました。 次のステップはコンテキストを設定します。 次のプロンプトを入力し、**send**&#x200B;をクリックします。
 
