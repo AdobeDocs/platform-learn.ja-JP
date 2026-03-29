@@ -1,12 +1,12 @@
 ---
-title: Brand Conciergeの概要
-description: Brand Conciergeの概要
+title: Brand Conciergeの導入方法
+description: Brand Conciergeの導入方法
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: fcf99e48868fd0b189291a7215a2871387ea7532
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
@@ -15,371 +15,283 @@ ht-degree: 1%
 
 ## 1.4.1.1 Brand Conciergeの概要
 
-Brand Conciergeを設定する際に使用する 2 つの主な要素は次のとおりです。
+Brand Conciergeの設定では、主に次の2つの要素を使用します。
 
-- **Agent Composer （設定レイヤー）**
+- **エージェント コンポーザー（設定レイヤー）**
 
-  目的：対話型 AI エクスペリエンスの構築と設定に使用される主要な UI プラットフォーム。
+  目的：会話型AI エクスペリエンスの構築と設定に使用される主要なUI プラットフォーム。
 
-  主な責務：
+  主な責任：
 
-   - データソースとナレッジベースの定義と管理
+   - データソースとナレッジベースを定義および管理する
    - ブランド表現（トーン、スタイル、ガードレール）の設定
-   - 会議予約エージェントの設定
+   - ミーティング予約エージェントの設定
 
-- **Agent Orchestrator（実行エンジン）**
+- **Agent Orchestrator （実行エンジン）**
 
-  目的：ユーザーのリクエストを解釈し、適切なエージェントのアクションを実行する推論およびオーケストレーションエンジン。
+  目的：ユーザーリクエストを解釈し、適切なエージェントアクションを実行する推論およびオーケストレーションエンジン。
 
-  主な責務：
+  主な責任：
 
-   - 自然言語のユーザーインテントの解釈
-   - 複数ステップ推論プランの生成と実行
-   - 適切な演算子やツールを選択して呼び出す
-   - ブランドコンテキスト、コンプライアンス、ガードレールの適用
-   - マルチエージェントワークフローの調整
-   - 複数のデータソースからの応答の集計と作成
+   - 自然言語ユーザーの意図を解釈する
+   - マルチステップの推論計画を生成して実行
+   - 適切なオペレーター/ツールを選択して呼び出します
+   - ブランドのコンテキスト、コンプライアンス、ガードレールの適用
+   - 複数の担当者によるワークフローの調整
+   - 複数のデータソースから応答を集約して構成する
 
-- **Brand Concierge Conversation Runtime （サービス レイヤー）**
+- **Brand Concierge Conversation Runtime （サービスレイヤー）**
 
-  目的：チャットセッション、コンテキスト、クライアントとのインタラクションを管理する、顧客向けの会話サービスレイヤー。
+  目的：チャットセッション、コンテキスト、顧客とのやり取りを管理する、顧客向けの会話型サービスレイヤー。
 
-  主要なコンポーネント：
+  主要コンポーネント：
 
-   - Web エージェント（クライアント）:Web SDKを使用して統合されたブラウザーまたはモバイルチャット UI
-   - 会話サービス （バックエンド）: セッション状態を管理し、オーケストレーションゲートウェイとして機能します
+   - Web Agent （クライアント）:Web SDKを使用して統合されたブラウザーまたはモバイルチャット UI
+   - 会話サービス（バックエンド）: セッション状態を管理し、オーケストレーションゲートウェイとして機能します
 
-  主な責務：
+  主な責任：
 
    - ユーザーセッションと会話トランスクリプトの管理
    - ユーザー認証とプロファイルの処理
-   - クライアントとAgent Orchestrator間のメッセージのルーティング
-   - 会話のコンテキストの保持
-   - 行動イベントと操作イベントのAEP for analytics への記録
+   - クライアントとAgent Orchestrator間でメッセージをルーティングする
+   - 会話コンテキストの永続化
+   - Adobe Analytics用にAEPに行動イベントと運用イベントを記録する
    - サーフェス固有の設定の適用
 
-## 1.4.1.2 Brand Concierge インスタンスの設定
+## 1.4.1.2 Brand Concierge インスタンス設定
 
 独自のBrand Concierge インスタンスの作成を開始するには、次の手順に従います。
 
-[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **Brand Concierge** を開きます。
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}に移動します。 **Brand Concierge**&#x200B;を開きます。
 
 ![Brand Concierge](./images/bc1.png)
 
-この画像が表示されます。 **サンドボックス選択** メニューをクリックします。
+そうすると、これが表示されます。 「**サンドボックス選択**」メニューをクリックします。 自分に割り当てられたサンドボックスを選択します。 そのサンドボックスには`techinsidersX`という名前を付ける必要があります（Xを割り当てられた番号に置き換えます）。
 
 ![Brand Concierge](./images/bc2.png)
 
-自分に割り当てられているサンドボックスを選択します。 そのサンドボックスの名前は `--aepUserLdap-- - bc` にする必要があります。
+次に、次の変数に入力します。
 
-![Brand Concierge](./images/bc3.png)
+- **会社名**: CitiSignal
 
-**開始** をクリックします。
+- **コンシェルジュ名**: `CitiSignal Sales Assistant`。
 
-![Brand Concierge](./images/bc4.png)
-
-Brand Concierge インスタンス名には、`--aepUserLdap-- - CitiSignal Brand Concierge` を使用します。
-
-**コンシェルジュで実行する操作** の下に次のテキストを入力します。
+「**コンシェルジュに何をしてもらいますか？**」の下に次のテキストを入力します。
 
 ```javascript
 Brand Concierge should help customers find their best device, plan or entertainment deal. Brand Concierge should help users discover internet plans, entertainment deals,  and help find the best available packages. Brand Concierge should also answer questions about devices such as phones and watches.
 ```
 
-「**作成**」をクリックします。
+- **Web サイトのリンク**：使用しているWeb サイトへのリンクを指定します
+
+「**続行**」をクリックします。
 
 ![Brand Concierge](./images/bc5.png)
 
-この画像が表示されます。 **開始** をクリックして、ナレッジソースを追加してください。
+そうすると、これが表示されます。 この情報は、前のページで提供された入力に基づいて、AIを使用して生成されました。 情報を確認し、満足したら、**コンシェルジュの生成**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/bc6.png)
 
-**Web サイトリンク** を選択し、「**続行**」をクリックします。
+そうすると、これが表示されます。 **消費者に関する製品アドバイザリー**&#x200B;の横にある&#x200B;**+追加**&#x200B;をクリックします。
 
-![Brand Concierge](./images/bc7.png)
+![Brand Concierge](./images/bc6a.png)
 
-この画像が表示されます。 ナレッジソースの名前として `CitiSignal website` を入力します。
+そうすると、これが表示されます。 以下のテキストを使用して、次のフィールドに入力します。
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal web サイトは CSV ファイル &#x200B;](./assets/citisignal-website-links.csv) をデスクトップにダウンロードします。
-
-**ファイルを参照** をクリックします。
-
-![Brand Concierge](./images/bc8.png)
-
-ファイル **citisignal-website-links.csv** を開き、リンクを更新して、独自の CitiSignal web サイトを指すようにします。
-
-![Brand Concierge](./images/bc8a.png)
-
-ダウンロードして編集したばかりのファイル **citisignal-website-links.csv** を選択します。 「**開く**」をクリックします。
-
-![Brand Concierge](./images/bc9.png)
-
-これで、ファイルがこのナレッジソースに追加されました。 「**追加**」をクリックします。
-
-![Brand Concierge](./images/bc10.png)
-
-この画像が表示されます。 「**ホームに移動** をクリックします。
-
-![Brand Concierge](./images/bc11.png)
-
-この画像が表示されます。 **コンシューマー向け製品アドバイザリ** カードの **開始** をクリックします。
-
-![Brand Concierge](./images/bc12.png)
-
-この画像が表示されます。 以下のテキストを使用して、以下のフィールドに入力します。
-
-**コンシェルジュは、レコメンデーションを行う前に、製品やオーディエンスについて何を知っておく必要がありますか？**
+**コンシェルジュは、レコメンデーションを行う前に、商品またはオーディエンスについて何を知っておくべきですか？**
 
 ```
 CitiSignal is a telecommunications company that sells devices such as phones and watches and that sells internet services such as their lead product CitiSignal Fiber Max. On top of that, CitiSignal sells entertainment services that offer premium streaming services at a discounted price. CitiSignal is targeting these 3 personas primarily: Smart Home Families, Online Gamers and Remote Professionals.
 ```
 
-**コンシェルジュが提案を行う際に従うべきビジネスルールや制限事項はありますか？**
+**コンシェルジュが推奨事項を提案する際に従うべきビジネス ルールや制限はありますか？**
 
 ```
 Prioritize positioning the CitiSignal Fiber Max offering.
 ```
 
-**コンシェルジュが従うべき、または避けるべき特定のキーワードやフレーズはありますか？**
+**コンシェルジュがフォローまたは避けるべき特定のキーワードやフレーズはありますか？**
 
 ```
 Competitor pricing, competitor products
 ```
 
-更新内容は自動的に保存されます。 **矢印** をクリックすると、前の画面に戻ります。
+「**保存**」をクリックします。
 
 ![Brand Concierge](./images/bc13.png)
 
-この画像が表示されます。 **開始** をクリックして、ブランド式をカスタマイズします。
+**矢印**&#x200B;をクリックして、前の画面に戻ります。
 
-![Brand Concierge](./images/bc14.png)
+![Brand Concierge](./images/bc13a.png)
 
-**ブランド式** ページで独自の選択を行えます。各質問でオプションが選択されていることを確認します。
+**ナレッジSource**&#x200B;に移動し、**ナレッジソースを作成**&#x200B;をクリックします。
 
-![Brand Concierge](./images/bc15.png)
+![Brand Concierge](./images/bc7.png)
 
-下にスクロールして、「応答の長さ **フィールドの設定を選択し** す。
+**Web サイトのリンク**&#x200B;を選択し、**続行**&#x200B;をクリックします。
 
-更新内容は自動的に保存されます。
+![Brand Concierge](./images/bc7a.png)
 
-![Brand Concierge](./images/bc16.png)
+そうすると、これが表示されます。 ナレッジソースの名前として`CitiSignal website`を入力します。
 
-上にスクロールし、**矢印** をクリックして前の画面に戻ります。
+次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal web サイトをダウンロードすると、CSV ファイル ](./assets/citisignal-website-links.csv)がデスクトップにリンクされます。
 
-![Brand Concierge](./images/bc17.png)
+「**ファイルを参照**」をクリックします。
 
-その後、ここに戻ります。 **ナレッジソース** をクリックします。
+![Brand Concierge](./images/bc8.png)
 
-![Brand Concierge](./images/bc18.png)
+ファイル **citisignal-website-links.csv**&#x200B;を開き、リンクを更新して独自のCitiSignal web サイトを指すようにします。
 
-**ナレッジソースを作成** をクリックします。
+![Brand Concierge](./images/bc8a.png)
 
-![Brand Concierge](./images/bc19.png)
+ダウンロードして編集したばかりのファイル **citisignal-website-links.csv**&#x200B;を選択します。 「**開く**」をクリックします。
 
-**製品カタログ** を選択し、「**続行**」をクリックします。
+![Brand Concierge](./images/bc9.png)
+
+これで、このナレッジソースにファイルが追加されました。 「**追加**」をクリックします。
+
+![Brand Concierge](./images/bc10.png)
+
+そうすると、これが表示されます。 「**ナレッジソースを作成する**」をクリックします。
+
+![Brand Concierge](./images/bc11.png)
+
+**製品カタログ**&#x200B;を選択し、**続行**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/bc20.png)
 
-この画像が表示されます。 ナレッジソースの名前として `CitiSignal Products` を入力します。
+そうすると、これが表示されます。 ナレッジソースの名前として`CitiSignal Products`を入力します。 「**ファイルを参照**」をクリックし、**デバイスから参照**&#x200B;を選択します。
 
 ![Brand Concierge](./images/bc21.png)
 
-次に、web サイトのリンクを含む csv ファイルをアップロードする必要があります。 [CitiSignal 製品カタログ &#x200B;](./assets/CitiSignal-catalog.json.zip) をデスクトップにダウンロードして展開します。
+次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal製品カタログ ](./assets/CitiSignal-catalog.json.zip)をデスクトップにダウンロードし、解凍します。
 
 ![Brand Concierge](./images/bc26.png)
 
-**ファイルを参照** をクリックし、**デバイスから参照** を選択します。
-
-![Brand Concierge](./images/bc22.png)
-
-ファイル **CitiSignal-catalog.json** を選択し、「**開く**」をクリックします。
+ファイル **CitiSignal-catalog.json**&#x200B;を選択し、**開く**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/bc23.png)
 
-この画像が表示されます。 「**追加**」をクリックします。
+そうすると、これが表示されます。 「**追加**」をクリックします。
 
 ![Brand Concierge](./images/bc24.png)
 
-その後、ここに戻ります。
+その後、ここに戻ります。 処理には10～20分かかるので、処理が成功したかどうかを確認するために、後の段階で戻ってくる必要があります。
 
 ![Brand Concierge](./images/bc25.png)
 
-10 ～ 20 分後に、両方のナレッジソースの **ステータス** を **完了** にする必要があります。 **ホーム** をクリックします。
+## 1.4.1.3件のAEP オンボーディング手順
 
-![Brand Concierge](./images/bc27.png)
-
-この画像が表示されます。 **Website links** カードの「**+ Connect**」をクリックします。
-
-![Brand Concierge](./images/bc28.png)
-
-ナレッジソース **CitiSignal Website** を選択し、「**保存**」をクリックします。
-
-![Brand Concierge](./images/bc29.png)
-
-この画像が表示されます。 **製品カタログ** カードの「**+接続**」をクリックします。
-
-![Brand Concierge](./images/bc30.png)
-
-ナレッジソース **CitiSignal 製品** を選択し、「**保存**」をクリックします。
-
-![Brand Concierge](./images/bc31.png)
-
-この画像が表示されます。 「**プレビュー**」をクリックして、Brand Conciergeの操作を開始します。
-
-![Brand Concierge](./images/bc32.png)
-
-これで、提供されたナレッジソースに関連する質問を開始できます。
-
-![Brand Concierge](./images/bc33.png)
-
-## AEP1.4.1.3 オンボーディング手順
-
-Brand Conciergeは、Adobe Experience Platformを使用して、会話からのインタラクションデータを保存します。 Brand ConciergeとBrand Concierge間の接続では、Experience Platformで設定および使用されるデータストリームが必要です。
+Brand Conciergeは、Adobe Experience Platformを使用して、会話のインタラクションデータを保存します。 Brand ConciergeとExperience Platform間の接続には、Brand Conciergeでデータストリームを設定して使用する必要があります。
 
 ### データストリーム
 
-[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} に移動します。 **Experience Platform** を開きます。
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}に移動します。 **Experience Platform**&#x200B;を開きます。
 
 ![Brand Concierge](./images/aep1.png)
 
-適切なサンドボックスを選択したことを確認してください。選択したサンドボックスには、`--aepUserLdap-- - bc` という名前を付ける必要があります。 左側のメニューで、下にスクロールし、**データストリーム** を選択します。
+`techinsidersX`という名前の適切なサンドボックスが選択されていることを確認します。 左側のメニューで、下にスクロールして「**データストリーム**」を選択します。
 
 ![Brand Concierge](./images/aep2.png)
 
-**新規データストリーム** をクリックします。
+**新規データストリーム**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/aep3.png)
 
-**データストリーム名** を入力 `--aepUserLdap-- - Brand Concierge`、**マッピングスキーマ** `cja-brand-concierge-sb-XXX` を選択します。
+**データストリーム名** `--aepUserLdap-- - Brand Concierge`を入力し、**マッピングスキーマ** `cja-brand-concierge-sb-XXX`を選択します。
 
 「**保存**」をクリックします。
 
 ![Brand Concierge](./images/aep4.png)
 
-これで、データストリームが設定されました。 データストリーム名とデータストリーム ID をコピーして、コンピューター上のテキストファイルに書き込みます。
+これで、データストリームが設定されました。 データストリーム名とデータストリーム IDをコピーし、コンピューター上のテキストファイルに書き留めます。
 
 ![Brand Concierge](./images/aep5.png)
 
-### データストリーム設定管理
+### データストリームの設定管理
 
-次に、Brand Concierge Configuration Management API を有効にして、作成したデータストリームを設定します。 これは、リクエスト処理中に IMS 組織 ID やサンドボックスの詳細などを解決するために必要です。
+次の手順では、Brand Concierge Configuration Management APIを有効にして、作成したばかりのデータストリームを設定します。 これは、リクエスト処理中にIMS Org IDやサンドボックスの詳細などを解決するために必要です。
 
-**管理コントロール** に移動します。
+**ホーム**&#x200B;に移動し、**管理者コントロール**&#x200B;を選択します。
 
 ![Brand Concierge](./images/admincontrols1.png)
 
-**データストリーム設定管理** に移動し、「**設定を追加**」をクリックします。
+**Datastream Config Management**&#x200B;に移動し、**Add Config**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/admincontrols2.png)
 
-前の手順で作成したデータストリームの **データストリーム ID** を貼り付けます。 「**保存**」をクリックします。
+前に作成したデータストリームの&#x200B;**データストリーム ID**&#x200B;を貼り付けます。 「**保存**」をクリックします。
 
 ![Brand Concierge](./images/admincontrols3.png)
 
-次のようなメッセージが表示されます。
+このような表示になります。
 
 ![Brand Concierge](./images/admincontrols4.png)
 
-## 1.4.1.4 スタイル設定管理
+## 1.4.1.4 スタイル設定の管理
 
-**スタイル設定管理** に移動します。 **スタイル設定を初期化** をクリックします。
+**スタイル設定の管理**&#x200B;に移動します。 「**スタイル設定を初期化**」をクリックします。
 
 ![Brand Concierge](./images/admincontrols7.png)
 
-**ブランド名** `CitiSignal` を入力し、「**スタイル設定を初期化**」をクリックします。
+**ブランド名** `CitiSignal`を入力し、**スタイル設定の初期化**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/admincontrols8.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Brand Concierge](./images/admincontrols9.png)
 
 ## 1.4.1.5 Agent Orchestrator マニフェスト
 
-**マニフェストを更新** に移動します。 この画像が表示されます。
+**マニフェストの更新**&#x200B;に移動します。 そうすると、これが表示されます。 各フィールドの情報を確認し、必要に応じて変更を加えます。 変更を加えたら、「マニフェストを更新**をクリックします。
 
 ![Brand Concierge](./images/admincontrols5.png)
 
-ここで、マニフェスト内のフィールドを更新する必要があります。 それには以下の入力を使用します。
+## 1.4.1.6 ナレッジソースの設定を完了
 
-**エージェント名**:
-
-```
-CitiSignal Sales Assistant
-```
-
-**はじめに**:
-
-```
-Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
-```
-
-**役割と責務**:
-
-```
-You are CitiSignal's AI Sales Assistant focused on:
-1. **Primary Goal**: Selling connectivity products from the knowledge base
-2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
-3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
-4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
-
-- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
-- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
-- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
-- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
-- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
-```
-
-**範囲**:
-
-```
-You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
-
-# Your Primary Objectives:
-1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
-2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
-3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
-
-# Sales Strategy:
-- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
-- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
-- Use natural transition phrases to introduce entertainment upsells.
-- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
-- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
-
-# Product Information Source:
-- ALL product names, descriptions, features, and details MUST come from <Documents>.
-- Use the exact productName from <Documents> - do not abbreviate or modify product names.
-- Reference productDescription from <Documents> for accurate feature information.
-- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
-```
-
-**マニフェストを更新** をクリックします。
-
-![Brand Concierge](./images/admincontrols6.png)
-
-**ホーム** をクリックします。
+**ナレッジソース**&#x200B;に移動します。 10 ～ 20分後、両方のナレッジソースの&#x200B;**ステータス**&#x200B;は&#x200B;**完了**&#x200B;である必要があります。 両方のナレッジソースのステータスが&#x200B;**Success**&#x200B;になったら、**Home**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/admincontrols10.png)
 
-この画像が表示されます。 「**プレビュー**」をクリックして、Brand Conciergeの操作を開始します。
+そうすると、これが表示されます。 **Web サイトのリンク** カードの&#x200B;**+接続**&#x200B;をクリックします。
 
-![Brand Concierge](./images/bc101.png)
+![Brand Concierge](./images/bc28.png)
 
-これで、提供されたナレッジソースに関連する質問を開始できます。 質問 `what products do you sell?` を入力し、「**送信**」をクリックします。
+ナレッジソース **CitiSignal Web サイト**&#x200B;を選択し、**保存**&#x200B;をクリックします。
+
+![Brand Concierge](./images/bc29.png)
+
+そうすると、これが表示されます。 **製品カタログ** カードの&#x200B;**+ Connect**&#x200B;をクリックします。
+
+![Brand Concierge](./images/bc30.png)
+
+ナレッジソース **CitiSignal Products**&#x200B;を選択し、**保存**&#x200B;をクリックします。
+
+![Brand Concierge](./images/bc31.png)
+
+そうすると、これが表示されます。 **Preview**&#x200B;をクリックして、Brand Conciergeの操作を開始します。
+
+![Brand Concierge](./images/bc32.png)
+
+提供されたナレッジソースに関連する質問を開始できるようになりました。
+
+![Brand Concierge](./images/bc33.png)
+
+質問`what products do you sell?`を入力し、**send**&#x200B;をクリックします。
 
 ![Brand Concierge](./images/bc102.png)
 
-その後、同様の応答が返されます。
+同様の回答を返すべきです。
 
 ![Brand Concierge](./images/bc103.png)
 
-これで、Brand Concierge インスタンスを web サイトに実装する準備が整いました。
+これで、Brand Concierge インスタンスをweb サイトに実装する準備が整いました。
 
 ## 次の手順
 
-[Web サイトへのBrand Conciergeの実装 &#x200B;](./ex2.md){target="_blank"} に移動します。
+[Web サイトへのBrand Conciergeの実装](./ex2.md){target="_blank"}に移動します
 
-[Brand Concierge](./brandconcierge.md){target="_blank"} に戻る
+[Brand Concierge](./brandconcierge.md){target="_blank"}に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](./../../../overview.md){target="_blank"}
