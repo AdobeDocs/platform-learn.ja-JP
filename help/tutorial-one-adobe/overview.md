@@ -1,231 +1,111 @@
 ---
-title: 概要 – 包括的な技術チュートリアル - 1 つのAdobe
-description: 包括的なテクニカルチュートリアル - 1 つのAdobe
+title: 概要 – 包括的なテクニカルチュートリアル - One Adobe
+description: 包括的なテクニカルチュートリアル - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 1%
+source-wordcount: '606'
+ht-degree: 6%
 
 ---
 
-# 包括的なテクニカルチュートリアル - 1 つのAdobe
+# 包括的なテクニカルチュートリアル - One Adobe
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![技術関係者](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概要
 
 このチュートリアルは非常に多様で、次のアプリケーションで明確なインサイトを提供します。
 
 - Adobe Firefly Services、Adobe Photoshop、Adobe Frame I/O、Adobe Substance 3D ステージング
-- Adobe Workfront Workflow、Adobe Workfront計画およびAdobe Workfront Fusion
+- Adobe Workfront Workflow、Adobe Workfront Planning、Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service、Sites、Assets、Forms、Edge Delivery Services
-- AEM Assets Dynamic Media、Content Hub
+- Adobe Experience Manager Assets Dynamic Media, Content Hub
+- Adobe Commerce as a Cloud Service
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
 - Adobe Customer Journey Analytics
 - Adobe Content Analytics
+- Adobe AEP Agent Orchestrator、Adobe Marketing Agent、Brand Concierge
 
-このチュートリアルでは、Adobeのアプリケーションに重点を置くだけでなく、ブランドが運用する広範なエコシステムを考慮します。 そのために、いくつかの教訓では、Adobe以外のアプリケーションとAdobeのアプリケーションとの統合方法に重点を置いています。 そのため、次のアプリケーションがAdobe Experience Platformとどのように連携するかについて、深く理解することができます。
+このチュートリアルでは、Adobeのアプリケーションだけでなく、企業がより広範なエコシステムを活用できるように解説します。 そのために、Adobe以外のアプリケーションとAdobe アプリケーションの統合方法に重点を置いているレッスンもあります。 そのため、次のアプリケーションがAdobe Experience Platformとどのように連携するかを深く理解することができます。
 
-- AmazonAWS
+- ChatGPT Enterprise、Claude、Cursor、Microsoft 365 Copilot、Google Gemini エンタープライズ版
+- Amazon AWS
 - Google Cloud Platform
-- MicrosoftAzure
+- Microsoft Azure
 - Postman
 - Snowflake
 - ...
 
-## 知識を示す
+## アーキテクチャの概要
 
-![Adobe認定 &#x200B;](./assets/images/badge.png){width="100px" align="left"}
+このビデオでは、完全なエンドツーエンドのOne Adobe チュートリアルの背後にあるアーキテクチャについて説明します。
 
-このチュートリアルの一部のモジュールを完了したら、Adobeの資格試験を受けて、**Adobe認定済み** バッジを受けることができます。
+>[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-- モジュール [Adobe Firefly Servicesの概要 &#x200B;](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} を完了すると、**Adobe認定試験** AD2-E901 **に合格する準備が整います**
-  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}。
-- モジュール [Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} を使用したCreative Workflow Automation を完了すると、**Adobe認定済み** 試験 **AD2-E902** に合格する準備が整います。
-  [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}。
+## Content Supply chainとは何ですか？
 
-## コンテンツステータス
+One Adobeチュートリアルは、supply chainの5つのフェーズに分かれており、キャンペーンの計画からマーケティング活動のパフォーマンス測定に至るまで、マーケティング活動のあらゆるステップを合理化するように設計されています。 各Tech Labは、コンテンツ supply chainのいずれかのフェーズにマッピングされます。
 
-以下の内容のステータスを確認するには、[&#x200B; ステータスページ &#x200B;](./status.md){target="_blank"} をご覧ください。
+- **ワークフローとプランニング**: Adobe Workfrontなどのツールを使用して、チームの連携、コンテンツの定義、プロジェクトのタイムラインの管理をおこない、コンテンツ施策を戦略に沿って調整します。
 
-### はじめに
+- **制作と制作**: Adobe Creative Cloudや生成AI （Adobe Firefly）などのアプリケーションを通じて、タスクを自動化し、制作スピードを上げてコンテンツアセットを制作する
 
-[はじめに](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+- **アセット管理**：重複作業を避けるために、Adobe Experience Manager Assetsを通じてアセットを整理、保存、アクセスできるようにします。
 
-この基本モジュールでは、デモ環境にアクセスして使用できるように、すべてを準備します。
+- **配信とアクティベーション**：最適化されたエクスペリエンスのためのDynamic Mediaを使用した、チャネル（web サイト、ソーシャルメディア）間でのコンテンツの配信。
 
-### &#x200B;1. ワークフローと計画
+- **レポートとインサイト**:Adobe Analyticsを使用してコンテンツのパフォーマンスを分析し、今後の戦略に役立つインサイトを獲得します。
 
-[1.1 Adobe Workfrontの計画 &#x200B;](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+## 学習パス
 
-ここでは、Adobe Workfront Planning を使用して、新しいワークスペースの作成、レコードタイプの定義、レコードの管理、新しいリクエストフォームの作成および AI アシスタントの使用を行います。
+3つの学習パスがあります。
 
-[1.2 Adobe Workfront Workflow を使用したワークフロー管理 &#x200B;](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+### Agentic AI Labs
 
-このモジュールでは、Adobe Workfrontを設定および使用して承認フローを管理し、Adobe Experience Manager Assets、ユニバーサルエディター、Photoshopなどとの統合を使用します。
+ここから開始：[Agentic AI Labs](./ai.md){target="_blank"}
 
-### 2.創造・生産
+この学習パスに含まれるアプリケーション：
 
-[1.1 Adobe Firefly Servicesの概要 &#x200B;](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+- Adobe Experience Manager Cloud Service
+- Adobe Experience Platform
+- Adobe Real-Time CDP
+- Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe AEP Agent Orchestrator、Adobe Marketing Agent、Brand Concierge
 
-このモジュールでは、Adobe Firefly Services API、Photoshop API およびMicrosoft Azure ストレージサービスを使用して、画像を生成し、プログラムで保存します。
+### GenStudio Labs
 
-[1.2 Workfront Fusion によるCreative ワークフローの自動化 &#x200B;](./modules/creation-production/module1.2/automation.md){target="_blank"}
+ここから開始：[GenStudio Labs](./genstudiocsc.md){target="_blank"}
 
-このモジュールでは、Adobe Workfront Fusion を使用して、コンテンツ作成ワークフローの自動化と拡張を行います。
+このラーニングパスでは、Content Supply chainの最適化を中心としたAdobeのGenStudio製品について解説します。 マーケターは、より多くのキャンペーンを、かつてないほどのスピードと規模で提供しなければならないというプレッシャーに直面しています。 これには膨大な量のコンテンツが必要です。 多くの企業は、地域、オーディエンス、チャネルをまたいでパーソナライズする必要性が高まる中、増加し続けると予想される需要に対応することに苦慮しています。
 
-[1.3GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+Adobe GenStudioなら、コンテンツの計画、制作、管理、活用、測定など、supply chainのあらゆる側面を変革できます。
 
-このモジュールでは、マーケティングチームやクリエイティブチーム向けの Gen AI ファーストのエンドツーエンドワークフローアプリケーションであるAdobe GenStudio for Performance Marketingを使用して、デジタルマーケティングキャンペーン向けのエンタープライズガバナンスでオムニチャネルコンテンツを作成、アクティブ化および最適化します。
+この学習パスに含まれるアプリケーション：
 
-[1.4 Adobe ExpressおよびAdobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
+- Adobe Firefly Services、Adobe Photoshop、Adobe Frame I/O、Adobe Substance 3D ステージング
+- Adobe Workfront Workflow、Adobe Workfront Planning、Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service、Sites、Assets、Forms、Edge Delivery Services
+- Adobe Experience Manager Assets Dynamic Media, Content Hub
+- Adobe Commerce as a Cloud Service
 
-このモジュールでは、Adobe Expressを使用して画像やビデオを作成し、それらのアセットをより広範なAdobe Experience Cloud エコシステムに向けて共有します。
+### AEP &amp; Apps Labs
 
-[1.5 Frame.io でワークフローを効率化 &#x200B;](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+ここから開始：[AEP &amp; Apps Labs](./aepapps.md){target="_blank"}
 
-このモジュールでは、Adobe Frame.io をAdobe Premiere Proと組み合わせて使用し、画像やビデオの共同作業やレビューを行います。
+この学習パスに含まれるアプリケーション：
 
-[1.6 GenStudio for Performance Marketing – 拡張性 &#x200B;](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+- Adobe Experience Platform
+- Adobe Real-Time CDP
+- Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
 
-このモジュールでは、Adobe IO とApp Builderを使用して、GenStudio for Performance Marketingの機能を拡張するカスタムアプリケーションを作成します。
-
-[1.7 Fireflyのカスタムワークフロー &#x200B;](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
-
-このモジュールでは、Fireflyのカスタムワークフローを使用して、繰り返し可能なクリエイティブデザインと自動化のユースケースを解決します。
-
-[1.8 Workfront、Frame.io、Enterprise Storage Management との統一されたレビューと承認 &#x200B;](./modules/creation-production/module1.8/esm.md){target="_blank"}
-
-このモジュールでは、Workfrontのプロジェクトおよび作業管理機能を、Frame.io のリアルタイムのレビューおよび共同作業エクスペリエンスと直接結び付けます。
-
-### &#x200B;3. アセット管理とサイト
-
-[1.1 Adobe Experience Manager Cloud ServiceおよびEdge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
-
-このモジュールでは、Adobe Experience Manager Cloud Service プログラム、サイトおよびAssets リポジトリを設定します。
-
-[1.2Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
-
-このモジュールでは、AEM Assetsを探索します。
-
-[1.3 Adobe Experience Manager FormsとEdge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"}
-
-このモジュールでは、Edge Delivery ServicesでAdobe Experience Manager Formsを探索します。
-
-[1.4 Adobe Experience Manager Assetsおよび Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
-
-このモジュールでは、AEM Assets Dynamic Media を設定し、Adobe Journey Optimizerで Dynamic Media テンプレートを使用します。
-
-[1.5 Adobe Commerceas a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
-
-このモジュールでは、Adobe Commerce as a Cloud Service インスタンスを作成します。 Commerce インスタンスをAEM Sites CS ストアフロントとAEM Assets CS 環境に接続します。
-
-### 4.配信とアクティベーション
-
-#### データ収集
-
-[1.1 Foundation - Adobe Experience Platform Data Collection および Web SDKのセットアップ](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
-
-この基本モジュールでは、Adobe Experience Platform データ収集と、新しい web SDK拡張機能について説明します。
-
-[1.2 基盤 – データ取り込み](./modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
-
-この基本モジュールでは、様々なソースからAdobe Experience Platformにデータを取り込みます
-
-[1.3 Federated Audience の構成](./modules/delivery-activation/datacollection/dc1.3/fac.md)
-
-このモジュールでは、Federated Audiences モデルを設定し、Federated データを使用してオーディエンスを生成する方法について説明します。
-
-#### Real-Time CDP B2C
-
-[2.1 の基盤 – リアルタイム顧客プロファイル](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
-
-この基本モジュールでは、UI と API を利用して、Adobe Experience Platformのリアルタイム顧客プロファイルを探索します。
-
-[2.2 インテリジェントサービス](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
-
-このモジュールでは、Adobe Experience Platform インテリジェントサービスを設定、設定および使用する方法について説明します。
-
-[2.3 Real-Time CDP - オーディエンスを作成し、アクションを実行します](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
-
-このモジュールでは、オーディエンスを設定し、Google DV360、Adobe Target、AWS S3 など、複数の宛先に対してオーディエンスをアクティブ化します。
-
-[2.4 Real-Time CDP:Audience ActivationからMicrosoft Azure Event Hub へ](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
-
-このモジュールでは、Adobe Experience Platform Real-time CDP のリアルタイムの宛先として、Microsoft Azure EventHub の宛先を設定します。
-
-[2.5 Real-Time CDP接続：イベント転送](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
-
-このモジュールでは、Google Cloud Platform Pub/Sub やAWS Kinesis など、いくつかのエンドポイントにデータサーバーサイドで転送します。
-
-[2.6 Apache Kafka からReal-Time CDPへのデータのストリーミング](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
-
-このモジュールでは、独自の Apache Kafka クラスターを設定し、データをAdobe Experience Platformにストリーミングする方法を説明します。
-
-#### Adobe Journey Optimizer B2C
-
-[3.1 Adobe Journey Optimizer：オーケストレーション](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
-
-このモジュールでは、Adobe Journey Optimizerを使用して、トリガーベースのジャーニーを構築します。
-
-[3.2 Adobe Journey Optimizer：外部データソースとカスタムアクション](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
-
-このモジュールでは、Adobe Journey Optimizerを使用して、オンラインとオフラインの両方で顧客の行動をリッスンし、様々なチャネルにわたってインテリジェントでコンテキストに応じたリアルタイムの方法で対応します。
-
-[3.3 Adobe Journey Optimizer：プッシュメッセージとアプリ内メッセージ](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
-
-このモジュールでは、Adobe Journey Optimizerを使用して、プッシュ通知とアプリ内メッセージを設定します。
-
-[3.4 Adobe Journey Optimizer：イベントベースのジャーニー](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
-
-このモジュールでは、企業が、コンテキストに応じた、つながりのあるパーソナライズされたエクスペリエンスを設計して顧客に提供するのに役立つ、Journey Optimizerについて知っておくべきことをすべて学びます。
-
-[3.5 Adobe Journey Optimizer：翻訳サービス](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
-
-このモジュールでは、Adobe Journey Optimizer内で翻訳サービスを設定および使用して、メッセージを顧客にローカライズする方法について説明します。
-
-[3.6 Adobe Journey Optimizer：コンテンツ管理](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
-
-このモジュールでは、Adobe Journey Optimizer内でコンテンツカードとランディングページを設定および使用する方法を説明し、Adobe Journey OptimizerとGenStudio for Performance Marketingの統合について詳しく説明します。
-
-[3.7 Adobe Journey Optimizer：決定](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
-
-このモジュールでは、Adobe Journey Optimizer内で意思決定とコードベースのエクスペリエンスを設定し、使用する方法について説明します。
-
-[3.8 Adobe Journey Optimizer：キャンペーン](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
-
-このモジュールでは、Adobe Journey Optimizer内でキャンペーンを設定して使用する方法を説明します。
-
-### &#x200B;5. レポートとインサイト
-
-#### Adobe Customer Journey Analytics
-
-[1.1 Customer Journey Analytics:Adobe Experience Platform上にAnalysis Workspaceを使用してダッシュボードを作成する](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
-
-このモジュールでは、オムニチャネルデータを含んだダッシュボードを設定することで、オンラインからオフラインのインサイトを取得します。
-
-[1.2 Customer Journey Analytics:BigQuery Source コネクタを使用したAdobe Experience PlatformでのGoogle Analytics データの取り込みと分析](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
-
-このモジュールでは、Google Cloud Platform の独自のインスタンスを設定し、Google Cloud Platform にデモデータを読み込んだ後、BigQuery Source コネクタを使用して、Google Cloud Platform からAdobe Experience Platformにデータを取り込みます。
-
-#### Data Distiller
-
-[2.1 クエリサービス](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
-
-このモジュールでは、Adobe Experience Platform クエリサービスの使用方法を説明します。
-
-#### Content Analytics
-
-[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
-
-このモジュールでは、Adobe Content Analyticsを実装して使用する方法を説明します。
-
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![技術関係者](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>ご質問がある場合は、**techinsiders@adobe.com**&#x200B;に電子メールを送信して、今後のコンテンツに関する提案の一般的なフィードバックを共有するには、Tech Insidersに直接お問い合わせください。

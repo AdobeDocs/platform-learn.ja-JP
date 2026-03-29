@@ -1,102 +1,102 @@
 ---
-title: ChatGPT Enterprise のAdobe Marketing Agent
-description: ChatGPT Enterprise のAdobe Marketing Agent
+title: ChatGPT エンタープライズ版Adobe Marketing Agent
+description: ChatGPT エンタープライズ版Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 5%
 
 ---
 
-# ChatGPT Enterprise 向け 1.1.2 Adobe Marketing Agent
+# 1.1.2 ChatGPT Enterprise用Adobe Marketing Agent
 
 [!BADGE Beta]
 
 +++Betaの詳細
-Adobe Marketing Agent for ChatGPT Enterprise Betaを使用することにより、お客様は、Betaが「現状のまま」でいかなる保証もなく提供されていることを承諾します。 Adobeは、Betaを維持、修正、更新、変更、修正、またはその他の方法でサポートする義務を負いません。 このようなBetaおよび付属の資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないことをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
+お客様は、ChatGPT Enterprise Beta用Adobe Marketing Agentを使用することにより、Betaが一切の保証なしに「現状のまま」提供されることを了承するものとします。 Adobeは、Betaを維持、修正、更新、変更、その他の方法でサポートする義務を負いません。 このようなBetaおよび/または付随資料の正しい機能や性能に依存しないように、慎重に使用することをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
 
 +++
 
 ## ビデオ
 
-このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+このビデオでは、この演習に関連するすべての手順の説明とデモを行います。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478410?quality=12&learn=on)
 
-## 1.1.2.1 ChatGPT Enterprise でカスタムアプリを作成（Adobe Marketing Agent版）
+## 1.1.2.1 ChatGPT Enterprise for Adobe Marketing Agentでカスタムアプリを作成
 
 >[!NOTE]
 >
->ChatGPT でAdobe Marketing Agentを使用するには、次が必要です。
->- openai の ChatGPT Enterprise の有料版
->- chatGPT Enterprise web クライアントの使用
+>ChatGPTでAdobe Marketing Agentを使用するには、次の操作が必要です。
+>- openAIのChatGPT Enterpriseの有料版
+>- ChatGPT Enterprise web クライアントの使用
 
-[https://chatgpt.com/](https://chatgpt.com/){target="_blank"} に移動し、アカウントの詳細を使用してログインします。 ログインすると、このが表示されます。 ユーザー名をクリックします。
+[https://chatgpt.com/](https://chatgpt.com/){target="_blank"}に移動し、アカウントの詳細を使用してログインします。 ログインしたら、これを確認してください。 ユーザー名をクリックします。
 
 ![ChatGPT](./images/chatgpt1.png)
 
-**設定** を選択します。
+**設定**&#x200B;を選択します。
 
 ![ChatGPT](./images/chatgpt2.png)
 
-**アプリ** に移動し、**詳細設定** を選択します。
+**アプリ**&#x200B;に移動し、**詳細設定**&#x200B;を選択します。
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード** をオンにしてから、&lbrack; 戻る **をクリック** します。
+**開発者モード**&#x200B;をオンにして、**戻る**&#x200B;をクリックします。
 
 ![ChatGPT](./images/chatgpt4.png)
 
-**アプリを作成** をクリックします。
+「**アプリを作成**」をクリックします。
 
 ![ChatGPT](./images/chatgpt5.png)
 
 次のようにフィールドに入力します。
 
 - **名前**: `Adobe Marketing Agent`
-- **MCP サーバー URL**: Adobe担当者にお問い合わせください
+- **MCP Server URL**:Adobe担当者にお問い合わせください
 - **認証**: `OAuth`
 
-**理解して続行する** のチェックボックスをオンにします。
+「**理解して続行したい**」のチェックボックスをオンにします。
 
 「**作成**」をクリックします。
 
 ![ChatGPT](./images/chatgpt6.png)
 
-ChatGPT はAdobe アカウントへの接続を試みます。 **アクセスを許可** を選択すると、Adobe アカウントでログインする必要があります。
+ChatGPTがAdobe アカウントへの接続を試みます。 「**アクセスを許可**」を選択すると、Adobe アカウントでログインする必要があります。
 
 ![ChatGPT](./images/chatgpt7.png)
 
-正常にログインすると、Adobe Marketing Agentが正常に接続されたことがわかります。
+正常にログインすると、Adobe Marketing Agentが正常に接続されたことを確認できます。
 
 ![ChatGPT](./images/chatgpt8.png)
 
-## Adobe Marketing Agentでのコンテキストの 1.1.2.2 定
+## 1.1.2.2 Adobe Marketing Agentでコンテキストを設定
 
 このウィンドウを閉じます。
 
 ![Agent Orchestrator](./images/chatgpt9.png)
 
-この画像が表示されます。 「**+**」アイコンをクリックし、「**詳細**」に移動して「**Adobe Marketing Agent**」を選択します。
+そうすると、これが表示されます。 **+** アイコンをクリックし、**詳細**&#x200B;に移動して、**Adobe Marketing Agent**&#x200B;を選択します。
 
 ![Agent Orchestrator](./images/chatgpt10.png)
 
-ChatGPT を通じてAdobe Marketing Agentとさらに対話する前に、コンテキストを設定する必要があります。
+ChatGPTを通じてAdobe Adobe Marketing Agentをさらに活用する前に、必要なコンテキストを設定します。
 
-この演習では、以下を使用するようにコンテキストを設定する必要があります。
+この演習では、コンテキストを次のように設定する必要があります。
 
-- **サンドボックス**: **実稼動 – 高速化（VA7）**
+- **サンドボックス**: **製品 – 高速化（VA7）**
 
-サンドボックス設定は、質問をする際に ChatGPT が参照するサンドボックスを識別するのに役立ちます。
+サンドボックス設定は、質問を行う際にChatGPTがどのサンドボックスを参照すべきかを特定するのに役立ちます。
 
-- **Dataview**:**2026 B2C の高速化**
+- **データビュー**: **Accelerate 2026 B2C**
 
-データビュー設定は、ChatGPT が質問をする際に参照するデータビューを特定するのに役立ちます。
+データビュー設定は、質問を行う際にChatGPTがどのデータビューを参照すべきかを特定するのに役立ちます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 list sandboxes
@@ -104,9 +104,9 @@ list sandboxes
 
 ![Agent Orchestrator](./images/chatgpt11.png)
 
-使用可能なサンドボックスの同様のリストが表示されます。 この例では、現在のサンドボックスが **prod** に設定されています。
+使用可能なサンドボックスのリストが表示されます。 この例の現在のサンドボックスは&#x200B;**prod**&#x200B;に設定されています。
 
-これを使用する必要があるサンドボックスに変更するには、次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+これを使用する必要のあるサンドボックスに変更するには、次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 switch to sandbox accelerate
@@ -114,11 +114,11 @@ switch to sandbox accelerate
 
 ![Agent Orchestrator](./images/chatgpt12.png)
 
-この画像が表示されます。 **コンテキストを設定** をクリックします。
+そうすると、これが表示されます。 「**Set Context**」をクリックします。
 
 ![Agent Orchestrator](./images/chatgpt13.png)
 
-この画像が表示されます。 次の **プロンプト** と入力し、「**送信**」ボタンをクリックして、使用するデータビューを設定します。
+そうすると、これが表示されます。 次の&#x200B;**プロンプト**&#x200B;を入力し、**send** ボタンをクリックして、使用するデータビューを設定します。
 
 ```javascript
 list dataviews
@@ -126,9 +126,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-使用可能なデータビューの同様のリストが表示されます。
+使用可能なデータビューのリストが表示されます。
 
-使用する必要があるデータビューを設定するには、次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+使用する必要があるデータビューを設定するには、次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 switch to Accelerate 2026 B2C
@@ -136,23 +136,23 @@ switch to Accelerate 2026 B2C
 
 ![Agent Orchestrator](./images/chatgpt15.png)
 
-この画像が表示されます。 **コンテキストを設定** をクリックします。
+そうすると、これが表示されます。 「**Set Context**」をクリックします。
 
 ![Agent Orchestrator](./images/chatgpt16.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/chatgpt17.png)
 
-これでコンテキストが適切に設定され、次に特定のプロンプトの送信を開始できます。
+これでコンテキストがプロパティセットになったので、次に特定のプロンプトの送信を開始できます。
 
-## 1.1.2.3 購入トレンド全体から始めて、コンテキストを固定し、ファイバーにズームインする
+## 1.1.2.3最初に全体的な購入傾向を把握して、コンテキストを固定し、ファイバーにズームインします
 
 **インテント**
 
-特に最新の 60 日間は、モバイル、固定電話、インターネット、テレビ、ファイバーなどのカテゴリニーズに応じてトップレベルのパルスを入手できます。 これにより、ニューヨークのロールアウト後の季節性、プロモ効果、地域差のベースラインが設定されます。
+モバイル、固定電話、インターネット、テレビ、ファイバーなど、過去60日間のカテゴリー別需要を詳細に把握できます。 これにより、ニューヨークのロールアウト後の季節性、プロモ – ション効果、地域のバリエーションのベースラインを設定できます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me purchases by mainCategory over the last 2 months.
@@ -160,11 +160,11 @@ Show me purchases by mainCategory over the last 2 months.
 
 ![Agent Orchestrator](./images/chatgpt18.png)
 
-次の情報が表示されます。
+次の画面が表示されます。
 
 ![Agent Orchestrator](./images/chatgpt19.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me purchases by mainCategory = Fiber over the last 2 months per week
@@ -172,19 +172,19 @@ Show me purchases by mainCategory = Fiber over the last 2 months per week
 
 ![Agent Orchestrator](./images/chatgpt20.png)
 
-これを確認すると、ファイバ固有のトレンドにドリル・ダウンされます。
+次に、これが表示され、ファイバー固有の傾向をドリルダウンします。
 
 ![Agent Orchestrator](./images/chatgpt21.png)
 
-## 注文 1.1.2.4 コンテンツの環境設定に関連付けるには
+## 1.1.2.4注文をコンテンツ設定と関連付ける
 
 **インテント**
 
-特定のジャンル（SF、スポーツ、ドラマなど）の好みが、特に高帯域幅のニーズに対して、ブロードバンドのアップグレード動作を予測するという仮説をテストします。
+特定のジャンル（SciFi、スポーツ、ドラマなど）に対する嗜好が、ブロードバンドのアップグレード行動、特に高帯域幅のニーズを予測するという仮説をテストします。
 
-まず、ジャンルの環境設定を保存するために使用されているフィールドを見つける必要があります。
+まず、ジャンルの環境設定を保存するために使用されるフィールドを見つける必要があります。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Which field is used to store the preferred genre in the sandbox accelerate?
@@ -192,13 +192,13 @@ Which field is used to store the preferred genre in the sandbox accelerate?
 
 ![Agent Orchestrator](./images/chatgpt22.png)
 
-これにより、genre に使用されるフィールドが **_experienceplatform.individualCharacteristics.preferences.preferredGenre** であることが示されます。
+次に、このフィールドが表示されます。これは、ジャンルに使用されるフィールドが&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;であることを示しています。
 
 ![Agent Orchestrator](./images/chatgpt23.png)
 
-この情報を使用して、購入データのドリルダウンを開始できます。
+この情報があれば、購入データをドリルダウンできます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me ordersYTD by preferredGenre for the last 2 months
@@ -206,25 +206,25 @@ Show me ordersYTD by preferredGenre for the last 2 months
 
 ![Agent Orchestrator](./images/chatgpt24.png)
 
-この画像が表示されます。 **リサーチ** をクリックします。
+そうすると、これが表示されます。 「**調査**」をクリックします。
 
 ![Agent Orchestrator](./images/chatgpt25.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/chatgpt26.png)
 
-下にスクロールすると、詳細情報が表示されます。
+下にスクロールして詳細を表示します。
 
 ![Agent Orchestrator](./images/chatgpt27.png)
 
-## 既存のファイバジャーニーを特定 1.1.2.5 る
+## 1.1.2.5既存のファイバージャーニーの特定
 
 **インテント**
 
-タイトルに「Fibre」が含まれる、アクティブなジャーニーまたは最近終了したジャーニーを確認します（例：「Fibre Upgrade NYC - Sept」、「Fibre Trial - Streaming Bundle」）。
+アクティブなジャーニーまたは最近完了したジャーニーのタイトルに「Fiber」が含まれていることを確認します（例：「Fiber Upgrade NYC - Sept」、「Fiber Trial - Streaming Bundle」）。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 What journeys exist? 
@@ -232,15 +232,15 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/chatgpt28.png)
 
-この画像が表示されます。 **リサーチ** をクリックします。
+そうすると、これが表示されます。 「**調査**」をクリックします。
 
 ![Agent Orchestrator](./images/chatgpt29.png)
 
-ジャーニーのリストが表示されます。
+そうすると、ジャーニーのリストが表示されます。
 
 ![Agent Orchestrator](./images/chatgpt30.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
@@ -248,19 +248,19 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/chatgpt31.png)
 
-この画像が表示されます。 **リサーチ** をクリックします。
+そうすると、これが表示されます。 「**調査**」をクリックします。
 
 ![Agent Orchestrator](./images/chatgpt32.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/chatgpt33.png)
 
-下にスクロールすると、詳細が表示されます。
+下にスクロールして詳細を表示します。
 
 ![Agent Orchestrator](./images/chatgpt34.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
@@ -268,7 +268,7 @@ show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 ![Agent Orchestrator](./images/chatgpt35.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/chatgpt36.png)
 
@@ -276,9 +276,9 @@ show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 **インテント**
 
-ジャーニーのパフォーマンスのフォールアウトを理解し、ジャーニー内にドロップされたプロファイルの割合が高いノードや条件がジャーニー内にあるかどうかを把握します。 これは、ジャーニーでさらに調整が必要かどうかを把握する際に役立ちます。
+ジャーニーのパフォーマンスのフォールアウトを把握して、ジャーニー内で多数のプロファイルがドロップされているノードや条件があるかどうかを確認します。 これは、ジャーニーで追加の調整が必要かどうかを把握するのに役立ちます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
@@ -286,11 +286,11 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/chatgpt37.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/chatgpt38.png)
 
-少し下にスクロールします。 これで、各ノードとそれぞれのエントリ番号、フォールアウト番号、フォールアウト率を調べることで、テーブルを確認できます。
+少し下にスクロールします。 各ノードとそれぞれの入力ノードの数値、フォールアウト数、フォールアウト率を調べることで、テーブルを確認できるようになりました。
 
 ![Agent Orchestrator](./images/chatgpt39.png)
 
@@ -298,12 +298,12 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/chatgpt40.png)
 
-これで、このラボが完了しました。
+これで、このラボは完了しました。
 
 ## 次の手順
 
-[Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"} に移動
+[Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}に移動
 
-[Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
+[Agent Orchestrator](./agentorchestrator.md){target="_blank"}に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](./../../../overview.md){target="_blank"}

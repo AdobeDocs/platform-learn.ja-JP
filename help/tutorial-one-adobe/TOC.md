@@ -4,9 +4,9 @@ breadcrumb-title: One Adobe テクニカルチュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,10 @@ ht-degree: 3%
 # One Adobe テクニカルチュートリアル {#tutorial-one-adobe}
 
 + [チュートリアルの概要](/help/tutorial-one-adobe/overview.md)
-+ [コンテンツステータス](/help/tutorial-one-adobe/status.md)
 + [アーキテクチャ](/help/tutorial-one-adobe/architecture.md)
++ [Agentic AI Labs](/help/tutorial-one-adobe/ai.md)
++ [GenStudio Labs](/help/tutorial-one-adobe/genstudiocsc.md)
++ [AEP &amp; Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + はじめに {#gettingstarted}
    + はじめに {#gettingstarted}
@@ -38,6 +40,7 @@ ht-degree: 3%
       + [1.1.2 ChatGPT Enterprise用Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise向けAdobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
    + 1.2 エージェントとAIの基本を学ぶ {#agents2}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 エージェンティック AIの導入](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -298,3 +301,5 @@ ht-degree: 3%
          + [概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analyticsの概要](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [概要と利点](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
++ [コンテンツステータス](/help/tutorial-one-adobe/status.md)

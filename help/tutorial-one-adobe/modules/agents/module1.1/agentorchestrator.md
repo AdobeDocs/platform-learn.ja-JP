@@ -4,9 +4,9 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '282'
 ht-degree: 2%
 
 ---
@@ -15,47 +15,51 @@ ht-degree: 2%
 
 ## 学習内容
 
-Adobe Experience Platform エージェントとAgent Orchestratorを使用して以下を行う方法を説明します。
+Adobe Experience Platform AgentsとAgent Orchestratorの使用方法について説明します。
 
-- 購入トレンドの分析
-- 傾向の高いオーディエンスの特定
+- 購買傾向の分析
+- コンバージョンに達する可能性の高いオーディエンスを特定
 - ジャーニーのパフォーマンスの検証
-- CitiSignal Fiber Max ロールアウトの新しいジャーニーを作成します
+- CitiSignal Fiber Max ロールアウト用の新しいジャーニーの作成
 
 ## ビデオ
 
-このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+このビデオでは、この演習に関連するすべての手順の説明とデモを行います。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
 
 ## 前提条件
 
-- Adobe Journey OptimizerとCustomer Journey Analyticsへのアクセス
-- [Agent Orchestratorの概念に精通している &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)
-- CitiSignal デモデータへのアクセス：購入、注文、オーディエンス、ジャーニー
+- Adobe Journey OptimizerおよびCustomer Journey Analyticsへのアクセス
+- [Agent Orchestratorの概念](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)に関する知識
+- CitiSignalのデモデータへのアクセス：購入、注文、オーディエンス、ジャーニー
 
 ## 演習
 
-[1.1.1 Agent Orchestratorの概要 &#x200B;](./ex1.md){target="_blank"}
+[1.1.1 Agent Orchestratorの概要](./ex1.md){target="_blank"}
 
-この演習では、Fiber Max 向けの CitiSignal ローンチキャンペーンを背景としたAgent Orchestratorの能力を調べます。
+この演習では、Fiber MaxのCitiSignal起動キャンペーンの背景に対するAgent Orchestratorの機能について説明します。
 
-[ChatGPT Enterprise のAdobe Marketing Agent 1.1.2](./ex2.md){target="_blank"}
+[1.1.2 ChatGPT Enterprise用Adobe Marketing Agent](./ex2.md){target="_blank"}
 
-この演習では、Adobe Marketing Agentを ChatGPT と併用することで、Fiber Max 向けの CitiSignal ローンチキャンペーンを背景にAgent Orchestratorの能力を探索します。
+この演習では、Adobe Marketing AgentとChatGPTを使用して、Fiber MaxのCitiSignal起動キャンペーンを背景にAgent Orchestratorの機能を紹介します。
 
 [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}
 
-この演習では、Adobe Marketing AgentとMicrosoft Copilot を使用して、Fiber Max の CitiSignal ローンチキャンペーンを背景にAgent Orchestratorの能力を調べます。
+この演習では、Adobe Marketing AgentとMicrosoft Copilotを組み合わせて使用することで、Fiber Max向けのCitiSignal ローンチキャンペーンを背景にAgent Orchestratorの機能を紹介します。
 
-[1.1.4 Google Gemini Enterprise のAdobe Marketing Agent](./ex4.md){target="_blank"}
+[1.1.4 Google Gemini Enterprise用Adobe Marketing Agent](./ex4.md){target="_blank"}
 
-この演習では、Google Gemini でAdobe Marketing Agentを使用して、Fiber Max 向けの CitiSignal ローンチキャンペーンを背景にAgent Orchestratorの能力を調べます。
+この演習では、Adobe Marketing AgentとGoogle Geminiを使用して、Fiber MaxのCitiSignal起動キャンペーンを背景にAgent Orchestratorの機能を紹介します。
 
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[1.1.5 Claude](./ex5.md){target="_blank"}のAdobe Marketing Agent
+
+この演習では、Adobe Marketing AgentとClaudeを使用して、Fiber MaxのCitiSignal起動キャンペーンを背景にAgent Orchestratorの機能を探索します。
+
+![技術関係者](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>ご質問がある場合は、**techinsiders@adobe.com**&#x200B;に電子メールを送信して、今後のコンテンツに関する提案の一般的なフィードバックを共有するには、Tech Insidersに直接お問い合わせください。
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](../../../overview.md){target="_blank"}

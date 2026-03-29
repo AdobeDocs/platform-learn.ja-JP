@@ -1,10 +1,10 @@
 ---
-title: Agent Orchestratorの概要
-description: Agent Orchestratorの概要
+title: Agent Orchestratorの導入方法
+description: Agent Orchestratorの導入方法
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 ## ビデオ
 
-このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+このビデオでは、この演習に関連するすべての手順の説明とデモを行います。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
 
-## Agent Orchestratorでのコンテキストの 1.1.1.1 定
+## Agent Orchestratorの1.1.1.1 Set Context
 
-[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat) に移動します。
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)に移動します。
 
-この画像が表示されます。 **Experience Platform インターナショナル** に所属していることを確認してください。
+そうすると、これが表示されます。 組織&#x200B;**Experience Platform インターナショナル**&#x200B;にいることを確認してください。
 
 ![Agent Orchestrator](./images/ao1.png)
 
@@ -31,31 +31,31 @@ ht-degree: 0%
 
 ![Agent Orchestrator](./images/ao2.png)
 
-コンテキストをに設定します。
+コンテキストを次のように設定します。
 
-- **ドキュメントSource**:**Journey Optimizer**
+- **ドキュメント Source**: **Journey Optimizer**
 
-ドキュメントのSource設定は、製品のナレッジ/Experience Leagueに関連する質問を確認するための experience league ドキュメントのセットを好みに設定するのに役立ちます。
+Documentation Source設定を使用すると、製品情報/Experience Leagueに関連する質問を確認するExperience League ドキュメントのセットを優先できます。
 
-- **サンドボックス**: **実稼動 – 高速化（VA7）**
+- **サンドボックス**: **製品 – 高速化（VA7）**
 
-サンドボックス設定は、質問をする際に AI Assistant が参照するサンドボックスを識別するのに役立ちます。
+サンドボックス設定は、質問を行う際にAI アシスタントがどのサンドボックスを確認すべきかを特定するのに役立ちます。
 
-- **Dataview**:**2026 B2C の高速化**
+- **データビュー**: **Accelerate 2026 B2C**
 
-データビュー設定は、質問をする際に AI Assistant が調べるデータビューを識別するのに役立ちます。
+データビュー設定は、質問を行う際にAI アシスタントが参照するデータビューを特定するのに役立ちます。
 
-**コンテキストを設定** をクリックします。
+「**コンテキストを設定**」をクリックします。
 
 ![Agent Orchestrator](./images/ao3.png)
 
-## 1.1.1.2 購入トレンド全体から始めて、コンテキストを固定し、ファイバーにズームインする
+## 1.1.1.2最初に全体的な購入傾向を把握して、コンテキストを固定し、ファイバーにズームインします
 
 **インテント**
 
-特に最新の 60 日間は、モバイル、固定電話、インターネット、テレビ、ファイバーなどのカテゴリニーズに応じてトップレベルのパルスを入手できます。 これにより、ニューヨークのロールアウト後の季節性、プロモ効果、地域差のベースラインが設定されます。
+モバイル、固定電話、インターネット、テレビ、ファイバーなど、過去60日間のカテゴリー別需要を詳細に把握できます。 これにより、ニューヨークのロールアウト後の季節性、プロモ – ション効果、地域のバリエーションのベースラインを設定できます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me purchases by mainCategory over the last 2 months.
@@ -63,11 +63,11 @@ Show me purchases by mainCategory over the last 2 months.
 
 ![Agent Orchestrator](./images/ao4.png)
 
-次の情報が表示されます。
+次の画面が表示されます。
 
 ![Agent Orchestrator](./images/ao5.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me purchases by mainCategory = Fiber over the last 2 months per week
@@ -75,19 +75,19 @@ Show me purchases by mainCategory = Fiber over the last 2 months per week
 
 ![Agent Orchestrator](./images/ao6.png)
 
-これを確認すると、ファイバ固有のトレンドにドリル・ダウンされます。
+次に、これが表示され、ファイバー固有の傾向をドリルダウンします。
 
 ![Agent Orchestrator](./images/ao7.png)
 
-## 注文 1.1.1.3 コンテンツの環境設定に関連付けるには
+## 1.1.1.3注文をコンテンツ設定と関連付ける
 
 **インテント**
 
-特定のジャンル（SF、スポーツ、ドラマなど）の好みが、特に高帯域幅のニーズに対して、ブロードバンドのアップグレード動作を予測するという仮説をテストします。
+特定のジャンル（SciFi、スポーツ、ドラマなど）に対する嗜好が、ブロードバンドのアップグレード行動、特に高帯域幅のニーズを予測するという仮説をテストします。
 
-まず、ジャンルの環境設定を保存するために使用されているフィールドを見つける必要があります。
+まず、ジャンルの環境設定を保存するために使用されるフィールドを見つける必要があります。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Which field is used to store the preferred genre?
@@ -95,13 +95,13 @@ Which field is used to store the preferred genre?
 
 ![Agent Orchestrator](./images/ao7a.png)
 
-これにより、genre に使用されるフィールドが **_experienceplatform.individualCharacteristics.preferences.preferredGenre** であることが示されます。
+次に、このフィールドが表示されます。これは、ジャンルに使用されるフィールドが&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;であることを示しています。
 
 ![Agent Orchestrator](./images/ao7b.png)
 
-この情報を使用して、購入データのドリルダウンを開始できます。
+この情報があれば、購入データをドリルダウンできます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me ordersYTD by preferredGenre for the last 2 months
@@ -109,21 +109,21 @@ Show me ordersYTD by preferredGenre for the last 2 months
 
 ![Agent Orchestrator](./images/ao8.png)
 
-この画像が表示されます。 **推論完了** ブロックのアイコンをクリックすると、Agent Orchestratorでバックグラウンドで何が起きているかを把握できます。
+そうすると、これが表示されます。 「**推論完了**」ブロックのアイコンをクリックして、Agent Orchestratorの舞台裏で何が起こっているのかを把握します。
 
 ![Agent Orchestrator](./images/ao9.png)
 
-その後、同様の説明が表示されます。
+同様の説明が表示されます。
 
 ![Agent Orchestrator](./images/ao10.png)
 
-## 既存のファイバジャーニーを特定 1.1.1.4 る
+## 1.1.1.4既存のファイバージャーニーの特定
 
 **インテント**
 
-タイトルに「Fibre」が含まれる、アクティブなジャーニーまたは最近終了したジャーニーを確認します（例：「Fibre Upgrade NYC - Sept」、「Fibre Trial - Streaming Bundle」）。
+アクティブなジャーニーまたは最近完了したジャーニーのタイトルに「Fiber」が含まれていることを確認します（例：「Fiber Upgrade NYC - Sept」、「Fiber Trial - Streaming Bundle」）。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 What journeys exist? 
@@ -131,19 +131,19 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-この画像が表示されます。 **詳細を表示** をクリックします。
+そうすると、これが表示されます。 **詳細を表示**&#x200B;をクリックします。
 
 ![Agent Orchestrator](./images/ao13.png)
 
-その後、アクティブなジャーニーまたは過去のジャーニーのリストが増えます。 **ダウンロード** アイコンをクリックして、これらのジャーニーのリストをダウンロードします。
+アクティブなジャーニーまたは過去のジャーニーのリストが表示されます。 これらのジャーニーのリストをダウンロードするには、**ダウンロード** アイコンをクリックします。
 
 ![Agent Orchestrator](./images/ao13a.png)
 
-AI アシスタントからのすべての出力を含む CSV ファイルが生成されます。
+これにより、AI アシスタントからのすべての出力を含むCSV ファイルが生成されます。
 
 ![Agent Orchestrator](./images/ao13b.png)
 
-クリックして右側のウィンドウを閉じます。 次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+クリックして右側のペインを閉じます。 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
@@ -151,35 +151,35 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-この画像が表示されます。 ジャーニーの 1 つのリンクをクリックし、「**ジャーニーの詳細**」を選択します。
+そうすると、これが表示されます。 ジャーニーの1つのリンクをクリックし、**ジャーニーの詳細**&#x200B;を選択します。
 
 ![Agent Orchestrator](./images/ao15.png)
 
-新しいウィンドウが開き、すぐにジャーニーの詳細の概要に移動します。
+新しいウィンドウが開き、すぐにジャーニーの詳細ページが表示されます。
 
 ![Agent Orchestrator](./images/ao15a.png)
 
-## 1.1.1.5 使用されているオーディエンスの確認
+## 1.1.1.5使用されているオーディエンスを確認してください
 
-**目的**:
+**インテント**:
 
-「CitiSignal - Fiber Max Launch Promotion」ジャーニーのシード定義を理解します。ターゲット設定を促した特性は何ですか（例：「SciFi Genre Preference」、「4+ devices」、「stream ≥ 300GB/month」）。
+「CitiSignal - Fiber Max Launch Promotion」ジャーニーのシード定義を理解します。どのような特性がターゲティングを促進したのか（「SciFi Genre Preference」、「4+ デバイス」、「stream ≥ 300 GB/month」など）。
 
-次の **プロンプト** を入力します。
+次の&#x200B;**プロンプト**&#x200B;を入力します。
 
 ```javascript
 What was the initial audience in the journey named 
 ```
 
-次に、オートコンプリートを有効にするには、`+CitiSignal fib` を手動で入力します。 ジャーニー **CitiSignal - Fibre Max Launch Promotion** を選択します。
+次に、`+CitiSignal fib`を手動で入力して、オートコンプリートを有効にします。 ジャーニー&#x200B;**CitiSignal - Fiber Max Launch Promotion**&#x200B;を選択します。
 
 ![Agent Orchestrator](./images/ao16.png)
 
-この画像が表示されます。 「**送信** ボタンをクリックします。
+そうすると、これが表示されます。 「**送信**」ボタンをクリックします。
 
 ![Agent Orchestrator](./images/ao17.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/ao18.png)
 
@@ -187,9 +187,9 @@ What was the initial audience in the journey named
 
 **インテント**
 
-ジャーニーのパフォーマンスのフォールアウトを理解し、ジャーニー内にドロップされたプロファイルの割合が高いノードや条件がジャーニー内にあるかどうかを把握します。 これは、ジャーニーでさらに調整が必要かどうかを把握する際に役立ちます。
+ジャーニーのパフォーマンスのフォールアウトを把握して、ジャーニー内で多数のプロファイルがドロップされているノードや条件があるかどうかを確認します。 これは、ジャーニーで追加の調整が必要かどうかを把握するのに役立ちます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
@@ -197,29 +197,29 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/ao19.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/ao20.png)
 
-少し下にスクロールします。 これで、各ノードとそれぞれのエントリ番号、フォールアウト番号、フォールアウト率を調べることで、テーブルを確認できます。
+少し下にスクロールします。 各ノードとそれぞれの入力ノードの数値、フォールアウト数、フォールアウト率を調べることで、テーブルを確認できるようになりました。
 
-AI アシスタントは、観察と推奨事項を提供します。
+AI アシスタントが観察とレコメンデーションを提供します。
 
-**結果は次の手順で取得しました** という文をクリックしてください。
+文章「**」をクリックすると、結果が表示されます**。
 
 ![Agent Orchestrator](./images/ao21.png)
 
-手順を確認した後、AI アシスタントで結果を確認できます。
+そして、その後に続くステップと、AI アシスタントが表示されて結果が得られます。
 
 ![Agent Orchestrator](./images/ao22.png)
 
-## 新 1.1.1.7 いオーディエンスを作成するには
+## 1.1.1.7新しいオーディエンスを作成
 
 **インテント**
 
-以上の結果と研究から、大量のデータを消費する SF やファンタジーのジャンルが好ましいお客様には相関関係があります。 次に、オーディエンスでこれらの属性を組み合わせます。
+以上の調査結果と調査を踏まえると、データを多く消費する顧客と、SFやファンタジーの好みのジャンルを持つ顧客との間には相関関係があります。 これらの属性をオーディエンスで組み合わせます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
@@ -227,27 +227,27 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/ao32.png)
 
-計画をレビューします。 `yes` と入力し、「**送信**」をクリックします。
+計画の見直し： `yes`と入力し、**send**&#x200B;をクリックします。
 
 >[!NOTE]
 >
->このプランは、システムのリファレンスガイドに基づいて生成されます。 最終的に、顧客はプランをカスタマイズして独自のプランを追加できるようになりますが、現時点では静的です。
+>このプランは、システム内のリファレンスガイドに基づいて生成されます。 顧客は最終的にはプランをカスタマイズし、独自のプランを追加することができますが、今のところは静的です。
 
 ![Agent Orchestrator](./images/ao33.png)
 
-セグメントクエリ式を確認します。 `yes` と入力し、「**送信** ボタンをクリックします。
+セグメントクエリ式を確認します。 `yes`と入力し、**送信** ボタンをクリックします。
 
 ![Agent Orchestrator](./images/ao34.png)
 
-セグメントサイズの概算を確認します。 `yes` と入力し、「**送信** ボタンをクリックします。
+セグメントサイズの見積もりを確認しましょう。 `yes`と入力し、**送信** ボタンをクリックします。
 
 ![Agent Orchestrator](./images/ao35.png)
 
-**レビュー** をクリックします。
+「**レビュー**」をクリックします。
 
 ![Agent Orchestrator](./images/ao36.png)
 
-セグメント定義を確認します。 「**作成**」をクリックします。
+セグメント定義の見直し： 「**作成**」をクリックします。
 
 ![Agent Orchestrator](./images/ao37.png)
 
@@ -257,19 +257,19 @@ Create an audience that combines people with an average download usage per month
 
 >[!NOTE]
 >
->新しいオーディエンスを作成する場合、オーディエンスが AI アシスタントで使用できるようになるまで 24 時間かかります。
+>新しいオーディエンスを作成する場合、オーディエンスをさらに活用するためにAI アシスタントが利用できるようになるまでに24時間かかります。
 
-## 1.1.1.8 高い使用率に合わせた既存のオーディエンスを見つけて、使用中かどうかを確認する
+## 1.1.1.8使用率の高い既存オーディエンスを検索し、使用率が高いかどうかを確認します
 
-**目的**:
+**インテント**:
 
-毎月のデータ使用しきい値で定義された、「大量のダウンローダー」を含むという名前のオーディエンスを見つけます。
+毎月のデータ使用しきい値で定義される「ヘビーダウンローダー」という名前のオーディエンスを探します。
 
 >[!NOTE]
 >
->前の手順で新しいオーディエンスを作成しました。オーディエンスを AI アシスタントで使用できるようになるまで、さらに時間がかかることに注意してください。 代わりに、別の既存のオーディエンスを使用するようにしてください。
+>新しいオーディエンスを作成した前の手順では、オーディエンスをさらに使用するためにAI アシスタントがオーディエンスを使用できるようになるまでに24時間かかることを覚えておいてください。 既存の別のオーディエンスを代わりに使用してください。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
@@ -277,9 +277,9 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-この画像が表示されます。 すべてのオーディエンスと、過去数日間に変化したオーディエンスの量を確認するとします。
+そうすると、これが表示されます。 これで、すべてのオーディエンスと、過去数日間でどれくらい変化したかを確認できます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 List how much these audiences changed over the last few days.
@@ -287,21 +287,21 @@ List how much these audiences changed over the last few days.
 
 ![Agent Orchestrator](./images/ao31.png)
 
-この画像が表示されます。 **詳細を表示** をクリックします。
+そうすると、これが表示されます。 **詳細を表示**&#x200B;をクリックします。
 
 ![Agent Orchestrator](./images/ao31a.png)
 
-この画像が表示されます。 クリックして右側のウィンドウを閉じます。
+そうすると、これが表示されます。 クリックして右側のペインを閉じます。
 
 ![Agent Orchestrator](./images/ao31b.png)
 
-少し下にスクロールして、AI アシスタントが実行した手順を確認します。
+少し下にスクロールして、AI アシスタントが実行したステップを確認します。
 
 ![Agent Orchestrator](./images/ao31c.png)
 
-既に「ヘビーダウンローダー」向けのオーディエンスが存在します。 既に使用されているかどうかを確認しましょう。
+「ヘビーダウンローダー」には、すでに既存のオーディエンスがいくつかあります。 既に使っているかどうか見てみましょう。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Which of the above are used in a journey? 
@@ -309,11 +309,11 @@ Which of the above are used in a journey?
 
 ![Agent Orchestrator](./images/ao50.png)
 
-これに似た情報が表示されます。
+次に、同様のものが表示されます。
 
 ![Agent Orchestrator](./images/ao51.png)
 
-これで、そのジャーニーがアクティブかどうかを確認できます。 次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+ここで、そのジャーニーがアクティブかどうかを確認する必要があります。 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Are these journeys active? 
@@ -321,21 +321,21 @@ Are these journeys active?
 
 ![Agent Orchestrator](./images/ao52.png)
 
-これに似た情報が表示されます。 これらのジャーニーは現在実行されていません。
+次に、同様のものが表示されます。 これらのジャーニーは現在実行中ではありません。
 
 ![Agent Orchestrator](./images/ao53.png)
 
-今後の Fibre Max のローンチでは、新しいジャーニーを作成する必要があります。
+Fiber Maxの今後のローンチでは、新しいジャーニーを作成する必要があります。
 
-## 1.1.1.9 Fibre Max Launch の新しいジャーニーを作成
+## 1.1.1.9 Fiber Max Launchの新しいジャーニーを作成
 
-**目的**:
+**インテント**:
 
-複合オーディエンスをターゲットにした新しいジャーニーを作成します。
+複合オーディエンスをターゲットとする新しいジャーニーを作成します。
 
-重いダウンローダ∩SciFi の好みです。
+ヘビーダウンローダー∩SciFi環境設定。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
@@ -343,31 +343,31 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-この画像が表示されます。 `yes` と入力し、「生成」をクリックします。
+そうすると、これが表示されます。 `yes`と入力し、「生成」をクリックします。
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-この画像が表示されます。 `yes` と入力し、「生成」をクリックします。
+そうすると、これが表示されます。 `yes`と入力し、「生成」をクリックします。
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-この画像が表示されます。 `The first one` と入力し、「送信」をクリックします。
+そうすると、これが表示されます。 `The first one`と入力し、「送信」をクリックします。
 
 ![Agent Orchestrator](./images/aocj4.png)
 
-この画像が表示されます。 `yes` と入力し、「送信」をクリックします。
+そうすると、これが表示されます。 `yes`と入力し、「送信」をクリックします。
 
 ![Agent Orchestrator](./images/aocj5.png)
 
-応答を確認します。 `yes` と入力し、「送信」をクリックします。
+応答を確認します。 `yes`と入力し、「送信」をクリックします。
 
 ![Agent Orchestrator](./images/aocj6.png)
 
-**レビュー** をクリックします。
+「**レビュー**」をクリックします。
 
 ![Agent Orchestrator](./images/aocj7.png)
 
-ジャーニー名を LDAP で更新して、一意にします。 「**保存**」をクリックします。
+ジャーニー名をLDAPで更新して、一意にします。 「**保存**」をクリックします。
 
 ![Agent Orchestrator](./images/aocj8.png)
 
@@ -375,9 +375,9 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj9.png)
 
-## 1.1.1.10 ジャーニーの競合の管理
+## 1.1.1.10件のジャーニーの競合管理
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 How can I manage journey conflicts?
@@ -385,25 +385,25 @@ How can I manage journey conflicts?
 
 ![Agent Orchestrator](./images/aocj80.png)
 
-情報を確認します。
+情報の確認：
 
 ![Agent Orchestrator](./images/aocj81.png)
 
-下にスクロールして、「**ソース**」を選択し、情報がExperience Leagueから取得されていることを確認します。
+下にスクロールして「**ソース**」を選択し、Experience Leagueから取得されていることを確認します。
 
 ![Agent Orchestrator](./images/aocj82.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
-次に、ジャーニー **CitiSignal - Fibre Max Launch Promotion** をリストから手動で選択します。
+次に、リストからジャーニー&#x200B;**CitiSignal - Fiber Max Launch Promotion**&#x200B;を手動で選択します。
 
 ![Agent Orchestrator](./images/aocj70.png)
 
-この画像が表示されます。 **送信** をクリックします。
+そうすると、これが表示されます。 **send**&#x200B;をクリックします。
 
 ![Agent Orchestrator](./images/aocj70a.png)
 
@@ -411,13 +411,13 @@ List any conflicts for the journey +CitiSignal Fiber Max
 
 ![Agent Orchestrator](./images/aocj71.png)
 
-下にスクロールして、ジャーニーの競合の詳細を検索します。
+下にスクロールして、ジャーニーの競合の詳細を確認します。
 
 ![Agent Orchestrator](./images/aocj72.png)
 
-## 1.1.1.11 実験
+## 1.1.1.11件の実験
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
@@ -425,28 +425,28 @@ How are the experiments performing for the journey named 'CitiSignal - Fiber Max
 
 ![Agent Orchestrator](./images/aoea0.png)
 
-次の情報が表示されます。
+次の画面が表示されます。
 
 ![Agent Orchestrator](./images/aoea1.png)
 
-下にスクロールして、候補の 1 つをクリックします。 **送信** をクリックします。
+下にスクロールして、候補の1つをクリックします。 **send**&#x200B;をクリックします。
 
 >[!NOTE]
 >
->候補は動的なので、応答が生成されるたびに異なる候補が表示されることを期待する必要があります。 提案は、このスクリーンショットに表示される提案とは異なる可能性があります。
+>提案は動的であるため、応答が生成されるたびに異なる提案が表示されることを想定しておく必要があります。 あなたの提案は、このスクリーンショットに示されている提案とは異なる可能性があります。
 
 ![Agent Orchestrator](./images/aoea2.png)
 
-選択された提案に関連する詳細な回答が表示されます。
+選択した提案に関連する詳細な回答が表示されます。
 
 ![Agent Orchestrator](./images/aoea4.png)
 
-これで、このラボが完了しました。
+これで、このラボは完了しました。
 
 ## 次の手順
 
-ChatGPT Enterprise の [Adobe Marketing Agentに移動 &#x200B;](./ex2.md){target="_blank"}
+[ChatGPT Enterprise向けAdobe Marketing Agent](./ex2.md){target="_blank"}に移動
 
-[Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
+[Agent Orchestrator](./agentorchestrator.md){target="_blank"}に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](./../../../overview.md){target="_blank"}

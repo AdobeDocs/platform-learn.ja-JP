@@ -1,59 +1,29 @@
 ---
-title: Adobeの 1 つのチュートリアル – アーキテクチャの概要
-description: Adobeの 1 つのチュートリアル – アーキテクチャの概要
+title: One Adobe チュートリアル – アーキテクチャの概要
+description: One Adobe チュートリアル – アーキテクチャの概要
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: d271e771b75cd4cbc6d526cd8c438d8858930878
+source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
 
-# Adobeの 1 つのチュートリアル – アーキテクチャの概要
+# One Adobe チュートリアル – アーキテクチャの概要
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![技術関係者](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## 1 つのAdobe アーキテクチャの概要
+## Adobe Adobeアーキテクチャの概要
 
-このビデオでは、完全なエンドツーエンドの 1 つのAdobe チュートリアルを支えるアーキテクチャについて説明します。
+このビデオでは、完全なエンドツーエンドのOne Adobe チュートリアルの背後にあるアーキテクチャについて説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
 以下のアーキテクチャの概要画像をダウンロードします。
 
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_all.jpg)
-
-## エージェント AI アーキテクチャの概要
-
-このビデオでは、One Adobe チュートリアルの Agentic AI の一部を支えるアーキテクチャについて説明します。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
-
-以下のアーキテクチャの概要画像をダウンロードします。
-
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_agentic.jpg)
-
-## コンテンツアーキテクチャの概要
-
-このビデオでは、このチュートリアルの一部であるGenStudioの背後にあるアーキテクチャについて説明します。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
-
-以下のアーキテクチャの概要画像をダウンロードします。
-
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_content.jpg)
-
-## データアーキテクチャの概要
-
-このビデオでは、このチュートリアルのAdobe Experience Platformとアプリケーションのパートの背後にあるアーキテクチャについて説明します。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
-
-以下のアーキテクチャの概要画像をダウンロードします。
-
-![&#x200B; 技術インサイダー &#x200B;](./assets/images/architecture_data.jpeg)
+![技術関係者](./assets/images/architecture_all.jpg)
 
 >[!NOTE]
 >
->ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>ご質問がある場合は、**techinsiders@adobe.com**&#x200B;に電子メールを送信して、今後のコンテンツに関する提案の一般的なフィードバックを共有するには、Tech Insidersに直接お問い合わせください。

@@ -1,10 +1,10 @@
 ---
 title: Adobe Marketing Agent for Microsoft 365 Copilot
-description: Microsoft 365 CopilotCopilot のAdobe Marketing Agent
+description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -16,46 +16,46 @@ ht-degree: 5%
 [!BADGE Beta]
 
 +++Betaの詳細
-Adobe Marketing AgentをMicrosoft 365 Copilot Betaと併用することにより、お客様は、Betaが「現状のまま」でいかなる保証もなく提供されていることを承諾します。 Adobeは、Betaを維持、修正、更新、変更、修正、またはその他の方法でサポートする義務を負いません。 このようなBetaおよび付属の資料の正しい機能やパフォーマンスに対して、注意を払い、いかなる形でも依存しないことをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
+Adobe Marketing AgentとMicrosoft 365 Copilot Betaを併用することにより、お客様は、Betaが何らの保証も受けることなく「現状のまま」提供されることを了承するものとします。 Adobeは、Betaを維持、修正、更新、変更、その他の方法でサポートする義務を負いません。 このようなBetaおよび/または付随資料の正しい機能や性能に依存しないように、慎重に使用することをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
 
 +++
 
 ## 前提条件
 
-このラボで後述する手順に従うには、次のアクセス権が必要です。
+このラボの手順に従うには、次のアクセスが必要です。
 
-- Real-Time CDP、Journey OptimizerおよびCustomer Journey Analyticsへのアクセス
-- Adobe Experience Cloudの AI アシスタントへのアクセス
+- Real-Time CDP、Journey Optimizer、Customer Journey Analyticsへのアクセス
+- Adobe Experience CloudのAI アシスタントを利用すれば
 - AEP Agent Orchestratorへのアクセス
-- Microsoft 365 コパイロットへのアクセス
+- Microsoft 365 Copilot
 
 ## ビデオ
 
-このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+このビデオでは、この演習に関連するすべての手順の説明とデモを行います。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
-## 1.1.3.1 Microsoft 365 Teams &amp; Copilot へのAdobe Marketing Agentの追加
+## 1.1.3.1 Adobe Marketing AgentをMicrosoft 365 TeamsおよびCopilotに追加
 
-Microsoft Teamsを開き、アカウントの詳細を使用してログインします。 ログインすると、このが表示されます。
+Microsoft Teamsを開き、アカウントの詳細を使用してログインします。 ログインしたら、これを確認してください。
 
-**アプリ** をクリックします。
+「**アプリ**」をクリックします。
 
 ![ChatGPT](./images/copilot1.png)
 
-**アプリを管理** を選択します。
+**アプリの管理**&#x200B;を選択します。
 
 ![ChatGPT](./images/copilot2.png)
 
-**アプリをアップロード** を選択します。
+**アプリをアップロード**&#x200B;を選択します。
 
 ![ChatGPT](./images/copilot3.png)
 
-**カスタムアプリをアップロード** を選択します。
+**カスタムアプリをアップロード**&#x200B;を選択します。
 
 ![ChatGPT](./images/copilot4.png)
 
-インストラクターから提供されたマニフェストファイルを選択し、「**開く**」をクリックします。
+インストラクターから提供されたマニフェストファイルを選択し、**開く**&#x200B;をクリックします。
 
 ![ChatGPT](./images/copilot5.png)
 
@@ -63,7 +63,7 @@ Microsoft Teamsを開き、アカウントの詳細を使用してログイン�
 
 ![ChatGPT](./images/copilot6.png)
 
-**コパイロットで開く** をクリックします。
+「**コパイロットで開く**」をクリックします。
 
 ![ChatGPT](./images/copilot7.png)
 
@@ -71,51 +71,51 @@ Adobe Marketing Agentが正常に読み込まれました。
 
 ![ChatGPT](./images/copilot8.png)
 
-プロンプト `login` を入力し、「**送信**」ボタンをクリックします。
+プロンプト `login`を入力し、**送信** ボタンをクリックします。
 
 ![ChatGPT](./images/copilotlogin1.png)
 
-**Adobe Marketing Agentにログイン** をクリックします。
+**Adobe Marketing Agentにログイン**&#x200B;をクリックします。
 
 ![ChatGPT](./images/copilotlogin2.png)
 
-新しいウィンドウが開き、Adobe アカウントの資格情報を使用してログインするように求められます。
+新しいウィンドウが開き、Adobe アカウントの資格情報を使用してログインするよう求められます。
 
 ![ChatGPT](./images/copilotlogin3.png)
 
-認証に成功したら、使用する特定のインスタンスを選択する必要がある場合があります。 この画面が表示された場合は、「インスタンス —aepImsOrgName –」を選択してください。
+認証が成功した後、使用する特定のインスタンスを選択する必要がある場合があります。 この画面が表示された場合は、—aepImsOrgName— インスタンスを選択してください。
 
 ![ChatGPT](./images/copilotlogin4.png)
 
-その後、同様のコードが生成されていることがわかります。 「**コピー**」をクリックして、コードをコピーします。
+同じようなコードが生成されます。 「**コピー**」をクリックして、コードをコピーします。
 
 ![ChatGPT](./images/copilotlogin5.png)
 
-コパイロットのAdobe Marketing Agent ウィンドウにコードをペーストし、「**send**」ボタンをクリックします。
+CopilotのAdobe Marketing Agent ウィンドウにコードを貼り付け、**send** ボタンをクリックします。
 
 ![ChatGPT](./images/copilotlogin6.png)
 
-これに似た情報が表示されます。 これで、Microsoft 365 Copilot のAdobe Marketing Agentに正常にログインしました。
+次に、同様のものが表示されます。 Microsoft 365 CopilotでAdobe Marketing Agentに正常にログインできるようになりました。
 
 ![ChatGPT](./images/copilotlogin7.png)
 
-## Adobe Marketing Agentでのコンテキストの 1.1.3.2 定
+## 1.1.3.2 Adobe Marketing Agentでコンテキストを設定
 
-Copilot を通じてAdobe Marketing Agentをさらに操作する前に、コンテキストを設定する必要があります。
+Copilotを通じてAdobe Marketing Agentをさらに操作する前に、コンテキストを設定する必要があります。
 
-この演習では、以下を使用するようにコンテキストを設定する必要があります。
+この演習では、コンテキストを次のように設定する必要があります。
 
-- **サンドボックス**: **実稼動 – 高速化（VA7）**
+- **サンドボックス**: **製品 – 高速化（VA7）**
 
-  サンドボックス設定は、質問をする際に AI Assistant が参照するサンドボックスを識別するのに役立ちます。
+  サンドボックス設定は、質問を行う際にAI アシスタントがどのサンドボックスを確認すべきかを特定するのに役立ちます。
 
-- **Dataview**:**2026 B2C の高速化**
+- **データビュー**: **Accelerate 2026 B2C**
 
-  データビュー設定は、質問をする際に AI Assistant が調べるデータビューを識別するのに役立ちます。
+  データビューの設定は、質問を行う際にAI アシスタントが確認すべきデータビューを特定するのに役立ちます。
 
 ![Agent Orchestrator](./images/copilotlogin7.png)
 
-サンドボックスを変更するには、次のコマンドを入力して「**送信**」ボタンをクリックします。
+サンドボックスを変更するには、次のコマンドを入力し、**send** ボタンをクリックします。
 
 ```javascript
 change sandbox
@@ -123,11 +123,11 @@ change sandbox
 
 ![Agent Orchestrator](./images/copilot9.png)
 
-これに似た情報が表示されます。 使用するサンドボックスを選択し、「**選択**」をクリックします。
+次に、同様のものが表示されます。 使用するサンドボックスを選択し、**select**&#x200B;をクリックします。
 
 ![Agent Orchestrator](./images/copilot10.png)
 
-この画像が表示されます。 データビューを変更するには、次のコマンドを入力して「**送信**」ボタンをクリックします。
+そうすると、これが表示されます。 データビューを変更するには、次のコマンドを入力し、**send** ボタンをクリックします。
 
 ```javascript
 change dataview
@@ -135,21 +135,21 @@ change dataview
 
 ![Agent Orchestrator](./images/copilot11.png)
 
-これに似た情報が表示されます。 使用するデータビューを選択し、「**選択**」をクリックします。
+次に、同様のものが表示されます。 使用するデータビューを選択し、**select**&#x200B;をクリックします。
 
 ![Agent Orchestrator](./images/copilot12.png)
 
-この画像が表示されます。 コンテキストが正しく設定され、次に特定のプロンプトの送信を開始できるようになりました。
+そうすると、これが表示されます。 これでコンテキストが正しく設定され、次に特定のプロンプトの送信を開始できます。
 
 ![Agent Orchestrator](./images/copilot13.png)
 
-## 1.1.3.3 購入トレンド全体から始めて、コンテキストを固定し、ファイバーにズームインする
+## 1.1.3.3最初に全体的な購入傾向を把握して、コンテキストを固定し、ファイバーにズームインします
 
 **インテント**
 
-特に最新の 60 日間は、モバイル、固定電話、インターネット、テレビ、ファイバーなどのカテゴリニーズに応じてトップレベルのパルスを入手できます。 これにより、ニューヨークのロールアウト後の季節性、プロモ効果、地域差のベースラインが設定されます。
+モバイル、固定電話、インターネット、テレビ、ファイバーなど、過去60日間のカテゴリー別需要を詳細に把握できます。 これにより、ニューヨークのロールアウト後の季節性、プロモ – ション効果、地域のバリエーションのベースラインを設定できます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me purchases by mainCategory over the last 4 months.
@@ -157,11 +157,11 @@ Show me purchases by mainCategory over the last 4 months.
 
 ![Agent Orchestrator](./images/copilot18.png)
 
-次の情報が表示されます。
+次の画面が表示されます。
 
 ![Agent Orchestrator](./images/copilot19.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me purchases by mainCategory = Fiber over the last 4 months broken down by week
@@ -169,19 +169,19 @@ Show me purchases by mainCategory = Fiber over the last 4 months broken down by 
 
 ![Agent Orchestrator](./images/copilot20.png)
 
-これを確認すると、ファイバ固有のトレンドにドリル・ダウンされます。
+次に、これが表示され、ファイバー固有の傾向をドリルダウンします。
 
 ![Agent Orchestrator](./images/copilot21.png)
 
-## 注文 1.1.3.4 コンテンツの環境設定に関連付けるには
+## 1.1.3.4注文をコンテンツ設定と関連付ける
 
 **インテント**
 
-特定のジャンル（SF、スポーツ、ドラマなど）の好みが、特に高帯域幅のニーズに対して、ブロードバンドのアップグレード動作を予測するという仮説をテストします。
+特定のジャンル（SciFi、スポーツ、ドラマなど）に対する嗜好が、ブロードバンドのアップグレード行動、特に高帯域幅のニーズを予測するという仮説をテストします。
 
-まず、ジャンルの環境設定を保存するために使用されているフィールドを見つける必要があります。
+まず、ジャンルの環境設定を保存するために使用されるフィールドを見つける必要があります。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Which field is used to store the preferred genre
@@ -189,13 +189,13 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/copilot22.png)
 
-これにより、genre に使用されるフィールドが **_experienceplatform.individualCharacteristics.preferences.preferredGenre** であることが示されます。
+次に、このフィールドが表示されます。これは、ジャンルに使用されるフィールドが&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;であることを示しています。
 
 ![Agent Orchestrator](./images/copilot23.png)
 
-この情報を使用して、購入データのドリルダウンを開始できます。
+この情報があれば、購入データをドリルダウンできます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me ordersYTD by preferredGenre for the last 4 months
@@ -203,21 +203,21 @@ Show me ordersYTD by preferredGenre for the last 4 months
 
 ![Agent Orchestrator](./images/copilot24.png)
 
-この画像が表示されます。 **データを表示** をクリックします。
+そうすると、これが表示されます。 「**データを表示**」をクリックします。
 
 ![Agent Orchestrator](./images/copilot25.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/copilot26.png)
 
-## 既存のファイバジャーニーを特定 1.1.3.5 る
+## 1.1.3.5既存のファイバージャーニーの特定
 
 **インテント**
 
-タイトルに「Fibre」が含まれる、アクティブなジャーニーまたは最近終了したジャーニーを確認します（例：「Fibre Upgrade NYC - Sept」、「Fibre Trial - Streaming Bundle」）。
+アクティブなジャーニーまたは最近完了したジャーニーのタイトルに「Fiber」が含まれていることを確認します（例：「Fiber Upgrade NYC - Sept」、「Fiber Trial - Streaming Bundle」）。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 What journeys exist? 
@@ -225,11 +225,11 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/copilot28.png)
 
-ジャーニーのリストが表示されます。
+そうすると、ジャーニーのリストが表示されます。
 
 ![Agent Orchestrator](./images/copilot29.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
@@ -237,11 +237,11 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/copilot31.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/copilot33.png)
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
@@ -249,7 +249,7 @@ Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 ![Agent Orchestrator](./images/copilot35.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/copilot36.png)
 
@@ -257,9 +257,9 @@ Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 **インテント**
 
-ジャーニーのパフォーマンスのフォールアウトを理解し、ジャーニー内にドロップされたプロファイルの割合が高いノードや条件がジャーニー内にあるかどうかを把握します。 これは、ジャーニーでさらに調整が必要かどうかを把握する際に役立ちます。
+ジャーニーのパフォーマンスのフォールアウトを把握して、ジャーニー内で多数のプロファイルがドロップされているノードや条件があるかどうかを確認します。 これは、ジャーニーで追加の調整が必要かどうかを把握するのに役立ちます。
 
-次の **プロンプト** を入力し、「**送信**」ボタンをクリックします。
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
@@ -267,24 +267,24 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/copilot37.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/copilot38.png)
 
-もう少し下にスクロールして、観察と推奨事項を確認します。 3 つのドット「**...**」をクリックし、「**ジャーニーの詳細**」を選択して、特定のジャーニーをAdobe Journey Optimizerで開きます。
+もう少し下にスクロールして、観察と推奨事項を確認します。 3つのドット **...**&#x200B;をクリックし、**ジャーニーの詳細**&#x200B;を選択して、Adobe Journey Optimizerで特定のジャーニーを開きます。
 
 ![Agent Orchestrator](./images/copilot40.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/copilot41.png)
 
-これで、このラボが完了しました。
+これで、このラボは完了しました。
 
 ## 次の手順
 
-Google Gemini Enterprise の [Adobe Marketing Agentに移動 &#x200B;](./ex4.md){target="_blank"}
+[Google Gemini Enterprise向けAdobe Marketing Agent](./ex4.md){target="_blank"}に移動
 
-[Agent Orchestrator](./agentorchestrator.md){target="_blank"} に戻る
+[Agent Orchestrator](./agentorchestrator.md){target="_blank"}に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](./../../../overview.md){target="_blank"}
