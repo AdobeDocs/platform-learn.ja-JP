@@ -4,7 +4,7 @@ description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -152,7 +152,7 @@ change dataview
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory over the last 4 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![Agent Orchestrator](./images/copilot18.png)
@@ -164,7 +164,7 @@ Show me purchases by mainCategory over the last 4 months.
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 4 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
 ```
 
 ![Agent Orchestrator](./images/copilot20.png)
@@ -198,7 +198,7 @@ Which field is used to store the preferred genre
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 4 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![Agent Orchestrator](./images/copilot24.png)

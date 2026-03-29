@@ -3,9 +3,9 @@ title: One Adobe チュートリアル – アーキテクチャの概要
 description: One Adobe チュートリアル – アーキテクチャの概要
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-以下のアーキテクチャの概要画像をダウンロードします。
+アーキテクチャの概要画像[こちら](./assets/images/architecture_all.jpg)をダウンロードします。
 
-![技術関係者](./assets/images/architecture_all.jpg)
+## スクリプト
+
+スクリプトは間もなくこちらで公開されます。
 
 >[!NOTE]
 >

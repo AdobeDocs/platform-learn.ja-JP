@@ -2,9 +2,9 @@
 title: AEP & Apps Tech Labs
 description: AEP & Apps Tech Labs
 doc-type: multipage-overview
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-以下のアーキテクチャの概要画像をダウンロードします。
-
-![技術関係者](./assets/images/architecture_data.jpeg)
+アーキテクチャの概要画像[こちら](./assets/images/architecture_data.jpeg)をダウンロードします。
 
 ### はじめに
 
