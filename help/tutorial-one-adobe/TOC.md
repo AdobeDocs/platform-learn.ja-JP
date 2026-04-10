@@ -4,9 +4,9 @@ breadcrumb-title: One Adobe テクニカルチュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: a1578a5205fd17a6aaf362145c78e19343255d93
+source-git-commit: bd6a5ccb155195f12552e24000b7a6d152eada39
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1579'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 3%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise向けAdobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 Agent Orchestrator v2](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 —](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2 エージェントとAIの基本を学ぶ {#agents2}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 エージェンティック AIの導入](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
