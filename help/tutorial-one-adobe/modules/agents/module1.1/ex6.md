@@ -1,21 +1,22 @@
 ---
-title: Agent Orchestrator v2
-description: Agent Orchestrator v2
+title: '---'
+description: '---'
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1578a5205fd17a6aaf362145c78e19343255d93
+exl-id: ce845231-17d1-40ab-96f7-bd386753e625
+source-git-commit: 5f30a0e941c8260af954ee2b1b289cc8a863b5bb
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1411'
 ht-degree: 3%
 
 ---
 
-# 1.1.6 Agent Orchestrator v2
+# 1.1.6 —
 
 [!BADGE Beta]
 
 +++Betaの詳細
-Agent Orchestrator v2 Betaを使用することにより、お客様は、Betaが何らの保証も受けることなく「現状のまま」提供されることを了承するものとします。 Adobeは、Betaを維持、修正、更新、変更、その他の方法でサポートする義務を負いません。 このようなBetaおよび/または付随資料の正しい機能や性能に依存しないように、慎重に使用することをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
+Agent Orchestrator Betaを使用することにより、お客様は、Betaが一切の保証なしに「現状のまま」提供されることを了承するものとします。 Adobeは、Betaを維持、修正、更新、変更、その他の方法でサポートする義務を負いません。 このようなBetaおよび/または付随資料の正しい機能や性能に依存しないように、慎重に使用することをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
 
 +++
 
@@ -25,10 +26,10 @@ Agent Orchestrator v2 Betaを使用することにより、お客様は、Beta�
 
 - Real-Time CDP、Journey Optimizer、Customer Journey Analyticsへのアクセス
 - Adobe Experience CloudのAI アシスタントを利用すれば
-- AEP Agent Orchestrator v2へのアクセス
+- AEP Agent Orchestratorへのアクセス
 - Node.js 18以降をシステムにインストールする必要があります
 
-## 1.1.6.1 Agent Orchestrator v2の設定
+## 1.1.6.1設定Agent Orchestrator
 
 ### IAM
 
@@ -42,11 +43,11 @@ IAMを使用して以下のグループに自分自身を追加し、LLM資格�
 GRP-XXX
 ```
 
-### Agent Orchestrator v2のインストール
+### Agent Orchestratorのインストール
 
 コンピューターで新しいターミナルウィンドウを開きます。
 
-![AOV2](./images/aov2lab1.png)
+![AO](./images/aov2lab1.png)
 
 >[!NOTE]
 >
@@ -58,23 +59,23 @@ GRP-XXX
 npm login --registry=https://XXX/ --auth-type=web
 ```
 
-![AOV2](./images/aov2lab2.png)
+![AO](./images/aov2lab2.png)
 
 そうすると、これが表示されます。 「**Enter**」をクリックします。
 
-![AOV2](./images/aov2lab3.png)
+![AO](./images/aov2lab3.png)
 
 **SAML SSO**&#x200B;を選択します。
 
-![AOV2](./images/aov2lab4.png)
+![AO](./images/aov2lab4.png)
 
 **はい**&#x200B;をクリックします。
 
-![AOV2](./images/aov2lab5.png)
+![AO](./images/aov2lab5.png)
 
 そうすると、これが表示されます。
 
-![AOV2](./images/aov2lab6.png)
+![AO](./images/aov2lab6.png)
 
 次のコマンドを実行します。
 
@@ -82,7 +83,7 @@ npm login --registry=https://XXX/ --auth-type=web
 npm install -g ao --no-fund --registry=https://XXX/
 ```
 
-![AOV2](./images/aov2lab7.png)
+![AO](./images/aov2lab7.png)
 
 そうすると、これが表示されます。 次のコマンドを実行します。
 
@@ -90,47 +91,47 @@ npm install -g ao --no-fund --registry=https://XXX/
 ao --help
 ```
 
-![AOV2](./images/aov2lab8.png)
+![AO](./images/aov2lab8.png)
 
-Agent Orchestrator v2がインストールされました。 次のコマンドを実行して、**Agent Orchestrator v2**&#x200B;を起動します。
+Agent Orchestratorがインストールされました。 次のコマンドを実行して、**Agent Orchestrator**&#x200B;を開始します。
 
 ```
 ao web
 ```
 
-そうすると、これが表示されます。 「**Enter**」をクリックして、Agent Orchestrator v2 Web UIを開きます。
+そうすると、これが表示されます。 「**Enter**」をクリックして、Agent Orchestrator Web UIを開きます。
 
-![AOV2](./images/aov2lab9.png)
+![AO](./images/aov2lab9.png)
 
-## 1.1.6.2 Agent Orchestrator v2の設定
+## 1.1.6.2 Agent Orchestratorの設定
 
 「**AO LLMを使用**」をクリックします。
 
-![AOV2](./images/aov2lab11.png)
+![AO](./images/aov2lab11.png)
 
 「**本番環境にログイン**」をクリックします。
 
-![AOV2](./images/aov2lab12.png)
+![AO](./images/aov2lab12.png)
 
 **layers** アイコンをクリックします。
 
-![AOV2](./images/aov2lab13.png)
+![AO](./images/aov2lab13.png)
 
 **AEP AI アシスタント （Code Execution - BashKit）**&#x200B;を選択します。
 
-![AOV2](./images/aov2lab14.png)
+![AO](./images/aov2lab14.png)
 
 **プロファイル** アイコンをクリックし、**設定**&#x200B;を選択します。
 
-![AOV2](./images/aov2lab15.png)
+![AO](./images/aov2lab15.png)
 
 **Plugins**&#x200B;に移動し、**cja**&#x200B;をクリックします。
 
-![AOV2](./images/aov2lab16.png)
+![AO](./images/aov2lab16.png)
 
 「**インストール**」をクリックします。
 
-![AOV2](./images/aov2lab17.png)
+![AO](./images/aov2lab17.png)
 
 ## 1.1.6.3 コンテキストを設定
 
@@ -144,7 +145,7 @@ ao web
 list dataviews
 ```
 
-![AOV2](./images/aov2lab18.png)
+![AO](./images/aov2lab18.png)
 
 次のコマンドを入力し、**送信**&#x200B;をクリックします。
 
@@ -152,11 +153,11 @@ list dataviews
 switch to dataview Accelerate 2026 B2C
 ```
 
-![AOV2](./images/aov2lab20.png)
+![AO](./images/aov2lab20.png)
 
 そうすると、これが表示されます。
 
-![AOV2](./images/aov2lab19.png)
+![AO](./images/aov2lab19.png)
 
 ## 1.1.6.4最初に全体的な購入傾向を把握して、コンテキストを固定し、ファイバーにズームインします
 
