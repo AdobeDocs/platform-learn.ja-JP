@@ -1,10 +1,10 @@
 ---
 title: Adobe Experience Platform のチュートリアル
-description: Adobe Experience Platformについて
+description: Adobe Experience Platformについてさらに詳しく
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 23%
@@ -13,7 +13,7 @@ ht-degree: 23%
 
 # Adobe Experience Platform のチュートリアル
 
-Adobe Experience Platform は、顧客体験を促進する完全なソリューションを構築し、管理するための、市場で最も強力で柔軟性の高いオープンシステムです。Experience Platformを使用すると、あらゆるシステムから顧客データおよびコンテンツを一元化および標準化して、データサイエンスと機械学習を適用し、パーソナライズされた豊富なエクスペリエンスのデザインおよび配信を大幅に強化できます。 これらのビデオとチュートリアルを使用して、Experience Platformの多くのコンポーネントを学習します。
+Adobe Experience Platform は、顧客体験を促進する完全なソリューションを構築し、管理するための、市場で最も強力で柔軟性の高いオープンシステムです。Experience Platformを利用すれば、あらゆるシステムからの顧客データとコンテンツを一元化および標準化し、データサイエンスとマシンラーニング（機械学習）を適用して、パーソナライズされた魅力的なエクスペリエンスの構築と提供を大幅に促進できます。 これらのビデオとチュートリアルを使用して、Experience Platformの多くのコンポーネントを学習します。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -30,41 +30,41 @@ Adobe Experience Platform は、顧客体験を促進する完全なソリュー
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="Experience Platformビデオを活用したカスタマーエクスペリエンス" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="Experience Platformを活用した顧客体験の動画" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>Experience Platformを活用したカスタマーエクスペリエンス </strong>
+    <strong>Experience Platformを活用した顧客体験</strong>
     </a>
     </div>
     <p>
-    <em>Platform を使用して顧客体験を強化する方法を参照してください </em>
+    <em>Platformを使用して顧客体験を強化する方法を確認する</em>
     <p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja">
-      <img alt="「データアーキテクトおよびデータエンジニア向けスタートガイド」チュートリアルのサムネール画像" src="assets/thumb_Getting_started.jpg" />
+      <img alt="「データアーキテクトおよびデータエンジニア向け入門」チュートリアルのサムネイル画像" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ja">
-    <strong> データアーキテクトおよびデータエンジニア向けスタートガイド </strong>
+    <strong> データアーキテクトとデータエンジニア向けの入門</strong>
     </a>
     </div>
     <p>
-    <em> 実践の演習を開始する </em>
+    <em>実践的な演習から始めましょう</em>
     <p>
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="「ソースコネクタについて」ビデオのサムネール画像" src="assets/thumb_Sources.png" />
+      <img alt="「ソースコネクタについて」ビデオのサムネイル画像" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">
-    <strong> ソースコネクタについて </strong>
+    <strong> ソースコネクタについて</strong>
     </a>
     </div>
     <p>
-    <em> データを簡単に取り込む </em>
+    <em> データを簡単に取り込む</em>
     <p>
   </td>
    <!--
@@ -93,7 +93,8 @@ Adobe Experience Platform は、顧客体験を促進する完全なソリュー
     <p>
     <em>Build segments based on your data.</em>
     <p>
-  </td>-->
+  </td>
+  -->
 </tr>
 </table>
 

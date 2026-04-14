@@ -1,23 +1,24 @@
 ---
 title: Adobe Experience Platform のデータハイジーン
-description: Adobe Experience Platformのデータハイジーンツールオプションについて説明します
+description: Adobe Experience Platformのデータハイジーンツールのオプションについて学ぶ
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 feature: Data Hygiene
 role: Developer
 level: Intermediate
-source-git-commit: 9c15708f7300672caa963c0635179dd2855e5fed
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
-# データハイジーンチュートリアル
+# データハイジーンのチュートリアル
 
-以下を含む、Adobe Experience Platformのデータハイジーン機能について説明します。
+Adobe Experience Platformのデータハイジーン機能には、次のようなものがあります。
 
-* データ取り込み時のデータ最小化原則の有効化
-* 既にシステムに存在するデータの調整
+* データ取り込み時のデータ最小化原則の確立
+* 既にシステムにあるデータの調整
 * システムからのデータの削除
 
 <!--
@@ -34,9 +35,10 @@ holistic fashion.
 
 ## 取り込み中のデータの最小化
 
-データ準備機能は、データソースから必要なフィールドのみを取り込む場合に役立ちます。
+データ準備機能を使用すると、データソースから必要なフィールドのみを取り込むことができます。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * data-prep-for-data-hygiene.md
 -->
@@ -46,8 +48,8 @@ holistic fashion.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="data-prep-for-data-hygiene.md" title="データハイジーンのためのデータ準備" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449276/?format=jpeg&nocache=1740251397387&captions=jpn" alt="データハイジーンのためのデータ準備"
+                    <a href="data-prep-for-data-hygiene.md" title="データの健全性を保つためのデータ準備" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="データの健全性を保つためのデータ準備"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -55,12 +57,12 @@ holistic fashion.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="data-prep-for-data-hygiene.md" target="_blank" rel="referrer" title="データハイジーンのためのデータ準備">データハイジーンのためのデータ準備</a>
+                        <a href="data-prep-for-data-hygiene.md" target="_blank" rel="referrer" title="データの健全性を保つためのデータ準備">データハイジーンのためのデータ準備</a>
                     </p>
                     <p class="is-size-6">Experience Platform のデータ準備機能を使用して、データ最小化の原則をサポートする方法について説明します。必要なフィールドのみを取り込み、取り込み中にデータをハッシュする方法について説明します。</p>
                 </div>
                 <a href="data-prep-for-data-hygiene.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -70,8 +72,9 @@ holistic fashion.
 
 ## システム内のデータの削除
 
-システムからデータを削除するのに役立つ機能が多数存在します。 オンデマンドまたはスケジュールでデータセット全体を削除したり、Time-to-Live 設定でレコードとプロファイルを期限切れにしたり、個々のプロファイルを削除したり、プライバシーリクエストに従ったりできます。
-<!-- CARDS
+システムからデータを削除するのに役立つ機能は多数あります。 オンデマンドまたはスケジュールでデータセット全体を削除し、有効期間の設定でレコードやプロファイルを期限切れにし、個々のプロファイルを削除し、プライバシー要求を尊重することができます。
+<!--
+CARDS
 {cta=Watch}
 * delete-datasets-and-batches.md
 * ../data-lifecycle/expire-datasets.md
@@ -99,7 +102,7 @@ holistic fashion.
                     <p class="is-size-6">Adobe Experience Platform でデータセットとバッチを削除する方法について説明します。</p>
                 </div>
                 <a href="delete-datasets-and-batches.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -108,8 +111,8 @@ holistic fashion.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../data-lifecycle/expire-datasets.md" title="データセット削除のスケジュール設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430305?format=jpeg&nocache=1740251397716&captions=jpn" alt="データセット削除のスケジュール設定"
+                    <a href="../data-lifecycle/expire-datasets.md" title="スケジュールデータセットの削除" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="スケジュールデータセットの削除"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,12 +120,12 @@ holistic fashion.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../data-lifecycle/expire-datasets.md" target="_blank" rel="referrer" title="データセット削除のスケジュール設定"> データセットの削除をスケジュール設定 </a>
+                        <a href="../data-lifecycle/expire-datasets.md" target="_blank" rel="referrer" title="スケジュールデータセットの削除"> データセットの削除をスケジュール </a>
                     </p>
-                    <p class="is-size-6">Adobe Experience Platformのデータハイジーン機能を使用してデータセットを削除する方法を説明します。</p>
+                    <p class="is-size-6">Adobe Experience Platformのデータハイジーン機能を使用してデータセットを削除する方法について説明します。</p>
                 </div>
                 <a href="../data-lifecycle/expire-datasets.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -131,8 +134,8 @@ holistic fashion.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="pseudonymous-profile-and-event-expiration.md" title="偽名プロファイルとエクスペリエンスイベントの有効期限" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449845?format=jpeg&nocache=1740251397705&captions=jpn" alt="偽名プロファイルとエクスペリエンスイベントの有効期限"
+                    <a href="pseudonymous-profile-and-event-expiration.md" title="仮名プロファイルとエクスペリエンスイベントの有効期限" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="仮名プロファイルとエクスペリエンスイベントの有効期限"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,12 +143,12 @@ holistic fashion.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="pseudonymous-profile-and-event-expiration.md" target="_blank" rel="referrer" title="偽名プロファイルとエクスペリエンスイベントの有効期限">偽名プロファイルとエクスペリエンスイベントの有効期限</a>
+                        <a href="pseudonymous-profile-and-event-expiration.md" target="_blank" rel="referrer" title="仮名プロファイルとエクスペリエンスイベントの有効期限">偽名プロファイルとエクスペリエンスイベントの有効期限</a>
                     </p>
                     <p class="is-size-6">Experience Platform で偽名プロファイルとイベントの有効期限を設定する方法とそのメリットについて説明します。</p>
                 </div>
                 <a href="pseudonymous-profile-and-event-expiration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -165,10 +168,10 @@ holistic fashion.
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="../profiles/delete-profiles.md" target="_blank" rel="referrer" title="プロファイルの削除">プロファイルの削除</a>
                     </p>
-                    <p class="is-size-6">リアルタイム顧客プロファイル API を使用してプロファイルストアからデータを削除する方法を説明します。 Profile API を使用すると、データレイクや ID グラフに影響を与えることなく、プロファイルストアからデータを削除できます。</p>
+                    <p class="is-size-6">Real-Time Customer Profile APIを使用してプロファイルストアからデータを削除する方法について説明します。 Profile APIを使用すると、データレイクやID グラフに影響を与えることなく、プロファイルストアからデータを削除できます。</p>
                 </div>
                 <a href="../profiles/delete-profiles.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -177,8 +180,8 @@ holistic fashion.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../privacy/introduction-to-privacy-services.md" title="Privacy Serviceについて" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445712?format=jpeg&nocache=1740251397727&captions=jpn" alt="Privacy Serviceについて"
+                    <a href="../privacy/introduction-to-privacy-services.md" title="Privacy Serviceの概要" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Privacy Serviceの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,12 +189,12 @@ holistic fashion.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../privacy/introduction-to-privacy-services.md" target="_blank" rel="referrer" title="Privacy Serviceについて">Privacy Service の概要</a>
+                        <a href="../privacy/introduction-to-privacy-services.md" target="_blank" rel="referrer" title="Privacy Serviceの概要">Privacy Service の概要</a>
                     </p>
-                    <p class="is-size-6">プライバシー規制と、データ操作に与える影響について説明します。また、Privacy Serviceがこれらの課題をどのように処理するかについても説明します。</p>
+                    <p class="is-size-6">プライバシー規制と、データ操作に与える影響について説明します。また、Privacy Serviceがこれらの課題にどのように対応しているかをご確認ください。</p>
                 </div>
                 <a href="../privacy/introduction-to-privacy-services.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>
@@ -203,9 +206,10 @@ holistic fashion.
 
 
 
-## システム内のデータの調整
+## システム内のデータ調整
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../profiles/update-a-specific-attribute-with-upsert.md
 -->
@@ -215,8 +219,8 @@ holistic fashion.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="「upsert」を使用した特定のプロファイル属性の更新" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443442/?format=jpeg&nocache=1740251398874&captions=jpn" alt="「upsert」を使用した特定のプロファイル属性の更新"
+                    <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="「upsert」を使用して特定のプロファイル属性を更新する" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="「upsert」を使用して特定のプロファイル属性を更新する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -224,12 +228,12 @@ holistic fashion.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="「upsert」を使用した特定のプロファイル属性の更新"> 「upsert」を使用した特定のプロファイル属性の更新 </a>
+                        <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="「upsert」を使用して特定のプロファイル属性を更新する">特定のプロファイル属性を「アップサート」を使用して更新する</a>
                     </p>
                     <p class="is-size-6">Adobe Experience Platformの「アップサート」機能を使用して、プロファイルの特定の属性を更新する方法を説明します。</p>
                 </div>
                 <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> ウォッチ </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
         </div>

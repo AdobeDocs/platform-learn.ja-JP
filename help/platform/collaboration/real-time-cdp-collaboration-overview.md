@@ -8,26 +8,27 @@ duration: 92
 last-substantial-update: 2025-07-07T00:00:00Z
 jira: KT-17316
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: 08ebe74f7065acf20964c53e83d4de8e9bee637b
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 21%
+ht-degree: 29%
 
 ---
 
 # Real-Time CDP Collaborationの概要
 
-Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cookie に依存せずに、価値の高いオーディエンスを検出、アクティブ化および測定できます。 このソリューションは、共同作業者間の高度なデータコラボレーションを可能にし、プライバシーに配慮した一元化された環境で、パーソナライズされた効果的な顧客体験を作成するのに役立ちます。
+Adobe Real-Time CDP Collaborationなら、サードパーティ Cookieに依存することなく、有望なオーディエンスを発見、活性化、測定できます。 このソリューションは、共同作業者の間での高度なデータコラボレーションを可能にし、プライバシーが保護された一元化された環境で、パーソナライズされたインパクトのある顧客体験を作成するのに役立ちます。
 
-以下に、Real-Time CDP Collaborationのセットアップ、使用、および価値の取得方法を学ぶのに役立つビデオやその他のリソースを示します。 このページおよびサイトには追加のアセットが追加されますので、頻繁に確認してください。 お疲れ様でした。
+以下では、Real-Time CDP Collaborationの設定、使用方法、価値の取得方法を説明したビデオやその他のリソースを紹介します。 このページとサイトに追加のアセットが追加されるので、頻繁に再度チェックしてください。 ハッピーラーニング！
 
-詳しくは、Real-Time CDP Collaboration[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/home){target="_blank"} を参照してください。
+詳しくは、Real-Time CDP Collaboration [ ドキュメント ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}を参照してください。
 
-[![ExL LIVE 2025 年 4 月 10 日（Pt）](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE （2025年4月10日）](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## はじめに
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * real-time-cdp-collaboration-intro.md
 * rtcdp-overview-for-agency-practitioners.md
@@ -40,8 +41,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration紹介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446802/?format=jpeg&nocache=1756504084960&captions=jpn" alt="Real-Time CDP Collaboration紹介"
+                    <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration イントロダクション" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1756504084960" alt="Real-Time CDP Collaboration イントロダクション"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -49,7 +50,7 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration紹介">Real-Time CDP Collaborationの概要 </a>
+                        <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration イントロダクション">Real-Time CDP Collaboration イントロダクション </a>
                     </p>
                     <p class="is-size-6">価値の高いオーディエンスを検出してアクティブ化し、測定機能を使用して具体的な成果を推進できる専用のデータ共同作業アプリケーションである、Adobe Real-Time CDP Collaboration の概要について説明します。</p>
                 </div>
@@ -63,8 +64,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="rtcdp-overview-for-agency-practitioners.md" title="代理店向けReal-Time CDPの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464659/?format=jpeg&nocache=1756504084963&captions=jpn" alt="代理店向けReal-Time CDPの概要"
+                    <a href="rtcdp-overview-for-agency-practitioners.md" title="Adobe Real-Time CDPの代理店の実務担当者の概要" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1756504084963" alt="Adobe Real-Time CDPの代理店の実務担当者の概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -72,9 +73,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="rtcdp-overview-for-agency-practitioners.md" target="_blank" rel="referrer" title="代理店向けReal-Time CDPの概要"> 代理店向けReal-Time CDPの概要 </a>
+                        <a href="rtcdp-overview-for-agency-practitioners.md" target="_blank" rel="referrer" title="Adobe Real-Time CDPの代理店の実務担当者の概要">代理店の実務担当者に関するReal-Time CDPの概要</a>
                     </p>
-                    <p class="is-size-6">エージェンシーおよび有料メディアチームは、Real-Time CDPの概要、仕組み、データソースとオーディエンスがコラボレーションワークフローを強化する仕組みなどを簡単に確認できます。</p>
+                    <p class="is-size-6">代理店とペイドメディアの担当者は、Real-Time CDPとは何か、どのように機能するのか、データソースとオーディエンスがどのようにコラボレーションワークフローを強化するのかなど、Adobe Marketo Engageの概要をすばやく確認できます。</p>
                 </div>
                 <a href="rtcdp-overview-for-agency-practitioners.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -86,8 +87,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - プロセスと人物" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464670/?format=jpeg&nocache=1756504084955&captions=jpn" alt="Real-Time CDP Collaboration - プロセスと人物"
+                    <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - プロセスと人" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1756504084955" alt="Real-Time CDP Collaboration - プロセスと人"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -95,9 +96,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="rtcdp-collaboration-process-and-people.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration - プロセスと人物">Real-Time CDP Collaboration- プロセスとユーザー </a>
+                        <a href="rtcdp-collaboration-process-and-people.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration - プロセスと人">Real-Time CDP Collaboration - プロセスと人物</a>
                     </p>
-                    <p class="is-size-6">このビデオでは、Real-Time CDP Collaborationを導入する際に、様々なユースケース、データソース、オーディエンス、目標をまたいで、これらの部門横断的なチームがどのように連携し、成功と運用効率を確保すべきかについて、エージェンシー担当者と mar テクニカルチームの両方がReal-Time CDP Collaborationを使用するユーザーを対象にガイダンスを提供します</p>
+                    <p class="is-size-6">このビデオでは、Real-Time CDP Collaborationを導入する際に、エージェンシーの実務担当者とマーテクチームの両方が、異なるユースケース、データソース、オーディエンス、目標に基づいて、これらの部門横断的なチームがどのように連携すべきかをガイダンスしています。Real-Time CDP Collaborationを導入することで、成功と業務効率を確保できます</p>
                 </div>
                 <a href="rtcdp-collaboration-process-and-people.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -112,9 +113,10 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
 
 ## セットアップ
 
-開始するには、Adobe Experience Platform管理者に問い合わせて、後続のチュートリアルで説明されているようにReal-Time CDP Collaboration権限を設定するための適切なアクセス権があることを確認してください。 Experience Platform管理者を特定できない場合は、Adobe アカウントチームにお問い合わせください。
+開始するには、Adobe Experience Platform管理者に連絡して、後続のチュートリアルで説明されているように、Real-Time CDP Collaboration権限を設定するための適切なアクセス権があることを確認してください。 Experience Platform管理者を特定できない場合は、Adobe アカウントチームにお問い合わせください。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../admin/add-product-administrators.md
 * set-permissions-for-collaboration.md
@@ -127,8 +129,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../admin/add-product-administrators.md" title="Adobe Experience Platform ベースのアプリケーションの製品管理者を追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475942?captions=jpn&format=jpeg&nocache=1756504085478" alt="Adobe Experience Platform ベースのアプリケーションの製品管理者を追加"
+                    <a href="../admin/add-product-administrators.md" title="Adobe Experience Platform ベースのアプリケーションの製品管理者の追加" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Adobe Experience Platform ベースのアプリケーションの製品管理者の追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -136,9 +138,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../admin/add-product-administrators.md" target="_blank" rel="referrer" title="Adobe Experience Platform ベースのアプリケーションの製品管理者を追加">Adobe Experience Platform ベースのアプリケーションの製品管理者を追加する </a>
+                        <a href="../admin/add-product-administrators.md" target="_blank" rel="referrer" title="Adobe Experience Platform ベースのアプリケーションの製品管理者の追加">Adobe Experience Platform ベースのアプリケーションの製品管理者を追加</a>
                     </p>
-                    <p class="is-size-6">Adobe Experience Platformと Platform ベースのアプリケーションの製品管理者を追加する方法について説明します。</p>
+                    <p class="is-size-6">Adobe Experience PlatformおよびPlatform ベースのアプリケーションにプロダクト管理者を追加する方法について説明します。</p>
                 </div>
                 <a href="../admin/add-product-administrators.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -151,7 +153,7 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Real-Time CDP Collaborationの権限の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452231/?format=jpeg&nocache=1756504085453&captions=jpn" alt="Real-Time CDP Collaborationの権限の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1756504085453" alt="Real-Time CDP Collaborationの権限の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -161,7 +163,7 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="set-permissions-for-collaboration.md" target="_blank" rel="referrer" title="Real-Time CDP Collaborationの権限の設定">Real-Time CDP Collaboration の権限の設定</a>
                     </p>
-                    <p class="is-size-6">Real-Time CDP Collaborationへのアクセスと使用に必要な権限の設定方法を説明します</p>
+                    <p class="is-size-6">Real-Time CDP Collaborationにアクセスして使用するために必要な権限を設定する方法について説明します</p>
                 </div>
                 <a href="set-permissions-for-collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -197,7 +199,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
 
 ## 広告主のワークフロー
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * reference-audiences-as-an-advertiser.md
 * connect-with-publishers.md
@@ -236,8 +239,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="connect-with-publishers.md" title="Real-Time CDP Collaborationのパブリッシャーとの接続" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1756504085951" alt="Real-Time CDP Collaborationのパブリッシャーとの接続"
+                    <a href="connect-with-publishers.md" title="Real-Time CDP Collaborationでパブリッシャーとつながる" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1756504085951" alt="Real-Time CDP Collaborationでパブリッシャーとつながる"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -245,9 +248,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="connect-with-publishers.md" target="_blank" rel="referrer" title="Real-Time CDP Collaborationのパブリッシャーとの接続">Real-Time CDP Collaboration で投稿者とつながる</a>
+                        <a href="connect-with-publishers.md" target="_blank" rel="referrer" title="Real-Time CDP Collaborationでパブリッシャーとつながる">Real-Time CDP Collaboration で投稿者とつながる</a>
                     </p>
-                    <p class="is-size-6">広告主として、媒体社と連携して共同作業を行う方法を説明します。</p>
+                    <p class="is-size-6">広告主として、パブリッシャーとつながる方法を学んで、パブリッシャーと共同作業を行います。</p>
                 </div>
                 <a href="connect-with-publishers.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -260,7 +263,7 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Real-Time CDP Collaborationでのプロジェクトの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464035/?format=jpeg&nocache=1756504085943&captions=jpn" alt="Real-Time CDP Collaborationでのプロジェクトの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1756504085943" alt="Real-Time CDP Collaborationでのプロジェクトの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -282,8 +285,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="discover-audience-overlaps-in-projects.md" title="Collaboration プロジェクト内でのオーディエンスの重複を検出" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1756504085916" alt="Collaboration プロジェクト内でのオーディエンスの重複を検出"
+                    <a href="discover-audience-overlaps-in-projects.md" title="Collaborationプロジェクト内でオーディエンスの重複を発見する" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1756504085916" alt="Collaborationプロジェクト内でオーディエンスの重複を発見する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -291,9 +294,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" title="Collaboration プロジェクト内でのオーディエンスの重複を検出">Collaboration プロジェクト内でのオーディエンスの重複を検出 </a>
+                        <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" title="Collaborationプロジェクト内でオーディエンスの重複を発見する">Collaboration プロジェクト内のオーディエンスの重複を検出</a>
                     </p>
-                    <p class="is-size-6">Real-Time CDP Collaboration プロジェクト内でオーディエンスの重複を比較する方法を説明します。</p>
+                    <p class="is-size-6">Real-Time CDP Collaboration プロジェクト内でオーディエンスの重複を比較する方法について説明します。</p>
                 </div>
                 <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -314,9 +317,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" title="Collaboration プロジェクトでのオーディエンスのアクティブ化">Collaboration プロジェクトでのオーディエンスのアクティブ化 </a>
+                        <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" title="Collaboration プロジェクトでのオーディエンスのアクティブ化">Collaboration プロジェクトでのオーディエンスのアクティベート</a>
                     </p>
-                    <p class="is-size-6">Real-Time CDP Collaboration プロジェクトで共同作業パートナーに対してオーディエンスをアクティブ化する方法について説明します。</p>
+                    <p class="is-size-6">Real-Time CDP Collaboration プロジェクトで、共同作業パートナーに対してオーディエンスをアクティベートする方法について説明します。</p>
                 </div>
                 <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -328,8 +331,8 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="brand-to-brand-collaboration.md" title="ブランド間Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470937/?format=jpeg&nocache=1756504085934&captions=jpn" alt="ブランド間Collaboration"
+                    <a href="brand-to-brand-collaboration.md" title="Brand to Brand Collaboration" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1756504085934" alt="Brand to Brand Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -337,9 +340,9 @@ Adobe Real-Time CDP Collaborationを使用すると、サードパーティ cook
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="brand-to-brand-collaboration.md" target="_blank" rel="referrer" title="ブランド間Collaboration"> ブランドからブランドへのCollaboration</a>
+                        <a href="brand-to-brand-collaboration.md" target="_blank" rel="referrer" title="Brand to Brand Collaboration"> ブランドからブランドへのCollaboration</a>
                     </p>
-                    <p class="is-size-6">ブランド間コラボレーションでサポートされるユースケースと、これらのワークフローをサポートするために導入された特定の機能について説明します。</p>
+                    <p class="is-size-6">ブランド間のコラボレーションでサポートされるユースケースと、これらのワークフローをサポートするのに導入された特定の機能について説明します。</p>
                 </div>
                 <a href="brand-to-brand-collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>

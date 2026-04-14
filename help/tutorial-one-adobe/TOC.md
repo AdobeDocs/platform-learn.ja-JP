@@ -4,7 +4,7 @@ breadcrumb-title: One Adobe テクニカルチュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bd6a5ccb155195f12552e24000b7a6d152eada39
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 3%

@@ -1,13 +1,13 @@
 ---
 title: データガバナンスの概要
-description: データソースで収集された時点から、Adobe Experience Platform外の宛先に同時配信される時点まで、データを完全に制御する方法を説明します。
+description: データソースで収集された時点から、Adobe Experience Platform以外の宛先にデータをシンジケーションするタイミングまで、データを完全に制御する方法について説明します。
 feature: Data Governance
 role: User, Developer, Admin
 level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 22%
@@ -16,15 +16,16 @@ ht-degree: 22%
 
 # データガバナンスの概要
 
-データソースで収集された時点から、Adobe Experience Platform外の宛先に同時配信される時点まで、データを完全に制御する方法を説明します。 データガバナンスは、データ使用ワークフローに深く埋め込まれた、容易に拡張可能なフレームワークです。 フレームワークは、ラベル、ポリシー、適用という 3 つの重要な側面に基づいて構築されています。 詳しくは、[&#x200B; データガバナンスに関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja) を参照してください。
+データソースで収集された時点から、Adobe Experience Platform以外の宛先にデータをシンジケーションするタイミングまで、データを完全に制御する方法について説明します。 データガバナンスは、データ運用ワークフローに深く組み込まれた、容易に拡張できるフレームワークです。 この枠組みは、ラベル、ポリシー、履行という3つの重要な側面に基づいて構築されています。 詳しくは、[ データガバナンスに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/34106?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 ## デモ
 
-Adobe Experience Platformのデータガバナンス機能のエンドツーエンドのデモをご覧ください。
+Adobe Experience Platformのデータガバナンス機能に関するエンドツーエンドのデモをご覧ください。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-data-governance.md
 -->
@@ -35,7 +36,7 @@ Adobe Experience Platformのデータガバナンス機能のエンドツーエ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="データガバナンスのエンドツーエンドのデモ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41322?captions=jpn&format=jpeg&nocache=1740179989077" alt="データガバナンスのエンドツーエンドのデモ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="データガバナンスのエンドツーエンドのデモ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -45,7 +46,7 @@ Adobe Experience Platformのデータガバナンス機能のエンドツーエ�
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="introduction-to-data-governance.md" target="_blank" rel="referrer" title="データガバナンスのエンドツーエンドのデモ"> データガバナンスのエンドツーエンドのデモ </a>
                     </p>
-                    <p class="is-size-6">Adobe Experience Platformのデータガバナンス機能およびそれが、企業が顧客データを完全に制御しながら、パーソナライズされたエクスペリエンスを顧客に提供するのにどのように役立つかについて説明します。</p>
+                    <p class="is-size-6">Adobe Experience Platformのデータガバナンス機能が、企業が顧客データを完全に制御しながら、パーソナライズされた体験を顧客に提供するのにどのように役立つのかを学びましょう。</p>
                 </div>
                 <a href="introduction-to-data-governance.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -56,11 +57,12 @@ Adobe Experience Platformのデータガバナンス機能のエンドツーエ�
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## データガバナンスのコンポーネント
+## データガバナンスの要素
 
-Experience Platformでラベル、ポリシー、マーケティングアクションを統合してデータガバナンスを自動化する方法について説明します。
+ラベル、ポリシー、マーケティング活動を組み合わせて、Experience Platformでデータガバナンスを自動化する方法をご紹介します。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * classify-data-using-labels.md
 * create-data-usage-policies.md{description=Learn how to create and manage data usage policies.}
@@ -73,7 +75,7 @@ Experience Platformでラベル、ポリシー、マーケティングアクシ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="ラベルを使用したデータの分類" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422791?captions=jpn&format=jpeg&nocache=1740179989358" alt="ラベルを使用したデータの分類"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="ラベルを使用したデータの分類"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +98,7 @@ Experience Platformでラベル、ポリシー、マーケティングアクシ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="データ使用ポリシーの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37133?captions=jpn&format=jpeg&nocache=1740179989347" alt="データ使用ポリシーの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="データ使用ポリシーの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,7 +106,7 @@ Experience Platformでラベル、ポリシー、マーケティングアクシ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="create-data-usage-policies.md" target="_blank" rel="referrer" title="データ使用ポリシーの作成"> データ使用ポリシーの作成 </a>
+                        <a href="create-data-usage-policies.md" target="_blank" rel="referrer" title="データ使用ポリシーの作成"> データ使用ポリシーの作成</a>
                     </p>
                     <p class="is-size-6">データ使用ポリシーを作成および管理する方法について説明します。</p>
                 </div>
@@ -127,9 +129,9 @@ Experience Platformでラベル、ポリシー、マーケティングアクシ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="enforce-data-usage-policies.md" target="_blank" rel="referrer" title="データ使用ポリシーの作成"> データ使用ポリシーの適用 </a>
+                        <a href="enforce-data-usage-policies.md" target="_blank" rel="referrer" title="データ使用ポリシーの作成"> データ使用ポリシーの適用</a>
                     </p>
-                    <p class="is-size-6">宛先に対してオーディエンスをアクティブ化する際に、データ使用ポリシーを適用する方法を説明します。</p>
+                    <p class="is-size-6">宛先に対してオーディエンスをアクティブ化する際に、データ使用ポリシーを適用する方法について説明します。</p>
                 </div>
                 <a href="enforce-data-usage-policies.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -142,9 +144,10 @@ Experience Platformでラベル、ポリシー、マーケティングアクシ�
 
 ## 同意
 
-Experience Platformが顧客の同意に従う方法について説明します。
+Experience Platformが顧客の同意をどのように尊重するかをご確認ください。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * integrate-with-iab-transparency-and-consent-framework-2.md{title=Integrate IAB's Transparency and Consent Framework 2.0}{description=See a demo of how Adobe's Real-Time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties.}
 * enforce-consent.md{description=Learn how to enforce consent in Adobe Experience Platform.}
@@ -155,8 +158,8 @@ Experience Platformが顧客の同意に従う方法について説明します�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="IAB の透明性および同意フレームワーク 2.0 の統合" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326479?captions=jpn&format=jpeg&nocache=1740179989597" alt="IAB の透明性および同意フレームワーク 2.0 の統合"
+                    <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="IABの透明性と同意フレームワークの統合2.0" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="IABの透明性と同意フレームワークの統合2.0"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,9 +167,9 @@ Experience Platformが顧客の同意に従う方法について説明します�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="integrate-with-iab-transparency-and-consent-framework-2.md" target="_blank" rel="referrer" title="IAB の透明性および同意フレームワーク 2.0 の統合">IAB の透明性および同意フレームワーク 2.0 の統合 </a>
+                        <a href="integrate-with-iab-transparency-and-consent-framework-2.md" target="_blank" rel="referrer" title="IABの透明性と同意フレームワークの統合2.0">IABの透明性と同意フレームワーク 2.0</a>を統合する
                     </p>
-                    <p class="is-size-6">AdobeのReal-Time Customer Data Platformが、ブランドがデジタルプロパティに関与する際に消費者の同意を得るのにどのように役立つかについてのデモをご覧ください。</p>
+                    <p class="is-size-6">Adobe Real-Time Customer Data Platformを利用すれば、消費者の同意を得ながら、デジタルプロパティを活用できます。その方法をご覧ください。</p>
                 </div>
                 <a href="integrate-with-iab-transparency-and-consent-framework-2.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -179,7 +182,7 @@ Experience Platformが顧客の同意に従う方法について説明します�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="同意の適用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412101?captions=jpn&format=jpeg&nocache=1740179989584" alt="同意の適用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="同意の適用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -187,9 +190,9 @@ Experience Platformが顧客の同意に従う方法について説明します�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="enforce-consent.md" target="_blank" rel="referrer" title="同意の適用"> 同意の実施 </a>
+                        <a href="enforce-consent.md" target="_blank" rel="referrer" title="同意の適用">同意を強制</a>
                     </p>
-                    <p class="is-size-6">Adobe Experience Platformで同意を強制する方法を説明します。</p>
+                    <p class="is-size-6">Adobe Experience Platformで同意を強制する方法について説明します。</p>
                 </div>
                 <a href="enforce-consent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>

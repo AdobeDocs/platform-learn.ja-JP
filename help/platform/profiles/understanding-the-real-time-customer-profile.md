@@ -1,5 +1,5 @@
 ---
-title: リアルタイム顧客プロファイルについて
+title: リアルタイムの顧客プロファイルの詳細
 description: このビデオでは、Adobe Experience Platform がリアルタイム顧客プロファイルをアセンブルおよび更新する方法、およびこれらのプロファイルにアクセスして使用する方法を説明します。
 feature: Profiles
 role: Developer
@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 15%
@@ -16,13 +16,14 @@ ht-degree: 15%
 
 # リアルタイム顧客プロファイルの概要
 
-このビデオでは、Adobe Experience Platformがリアルタイム顧客プロファイルを構築および更新する方法と、それらのプロファイルにアクセスして使用する方法について説明します。 詳しくは、[&#x200B; リアルタイム顧客プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) を参照してください。
+このビデオでは、Adobe Experience Platformがリアルタイム顧客プロファイルを作成および更新する方法と、これらのプロファイルにアクセスして使用する方法について説明します。 詳しくは、[ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/31660?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## アーキテクチャと機能
 
-<!-- CARDS
+<!--
+CARDS
 * overview-diagram.md
 * create-merge-policies.md
 * union-schemas-overview.md
@@ -35,7 +36,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="リアルタイム顧客プロファイルの概要図" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36809?captions=jpn&format=jpeg&nocache=1740415066741" alt="リアルタイム顧客プロファイルの概要図"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="リアルタイム顧客プロファイルの概要図"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -43,7 +44,7 @@ ht-degree: 15%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="overview-diagram.md" target="_blank" rel="referrer" title="リアルタイム顧客プロファイルの概要図"> リアルタイム顧客プロファイルの概要図 </a>
+                        <a href="overview-diagram.md" target="_blank" rel="referrer" title="リアルタイム顧客プロファイルの概要図"> リアルタイム顧客プロファイルの概要図</a>
                     </p>
                     <p class="is-size-6">このビデオでは、Adobe Experience Platformのリアルタイム顧客プロファイル機能を示す概要図について説明します。</p>
                 </div>
@@ -58,7 +59,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-merge-policies.md" title="結合ポリシーの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345078?captions=jpn&format=jpeg&nocache=1740415066765" alt="結合ポリシーの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330433?format=jpeg&nocache=1740415066765" alt="結合ポリシーの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -66,9 +67,9 @@ ht-degree: 15%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="create-merge-policies.md" target="_blank" rel="referrer" title="結合ポリシーの作成"> 結合ポリシーの作成 </a>
+                        <a href="create-merge-policies.md" target="_blank" rel="referrer" title="結合ポリシーの作成">結合ポリシーの作成</a>
                     </p>
-                    <p class="is-size-6">このビデオでは、Adobe Experience Platformで結合ポリシーを作成する方法を説明します。 結合ポリシーは、顧客プロファイルを作成するために異なるソースのデータセットを組み合わせる際に、どのデータを使用し、優先順位を付けるかを決定するために Platform で使用されるルールです。</p>
+                    <p class="is-size-6">このビデオでは、Adobe Experience Platformで結合ポリシーを作成する方法を説明します。 結合ポリシーは、顧客プロファイルを作成するために、様々なソースからのデータセットを組み合わせる際に、どのデータを使用して優先順位付けするかを決定するためにPlatformが使用するルールです。</p>
                 </div>
                 <a href="create-merge-policies.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
@@ -81,7 +82,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="union-schemas-overview.md" title="結合スキーマの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342824?captions=jpn&format=jpeg&nocache=1740415066755" alt="結合スキーマの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329940?format=jpeg&nocache=1740415066755" alt="結合スキーマの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -91,7 +92,7 @@ ht-degree: 15%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="union-schemas-overview.md" target="_blank" rel="referrer" title="結合スキーマの概要">和集合スキーマの概要</a>
                     </p>
-                    <p class="is-size-6">リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。</p>
+                    <p class="is-size-6">リアルタイムの顧客プロファイルにより、カスタマージャーニーの各段階において、大規模なクロスチャネルのパーソナライゼーションを実現できます。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にすることができます。</p>
                 </div>
                 <a href="union-schemas-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
@@ -103,8 +104,8 @@ ht-degree: 15%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="購入合計の計算属性を作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443552?captions=jpn&format=jpeg&nocache=1740415066775" alt="購入合計の計算属性を作成"
+                    <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="購入合計の計算属性を作成します" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="購入合計の計算属性を作成します"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +113,7 @@ ht-degree: 15%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="create-a-computed-attribute-for-sum-of-purchases.md" target="_blank" rel="referrer" title="購入合計の計算属性を作成">購入の合計に対する計算属性の作成</a>
+                        <a href="create-a-computed-attribute-for-sum-of-purchases.md" target="_blank" rel="referrer" title="購入合計の計算属性を作成します">購入の合計に対する計算属性の作成</a>
                     </p>
                     <p class="is-size-6">計算属性を使用して、ユーザーが複数の販売チャネルで行った購入金額を合計する方法を説明します。</p>
                 </div>
@@ -127,7 +128,8 @@ ht-degree: 15%
 
 ## プロファイルデータの取り込みと管理
 
-<!-- CARDS
+<!--
+CARDS
 * bring-data-into-the-real-time-customer-profile.md
 * delete-profiles.md
 * update-a-specific-attribute-with-upsert.md
@@ -138,8 +140,8 @@ ht-degree: 15%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="bring-data-into-the-real-time-customer-profile.md" title="リアルタイム顧客プロファイルにデータを取り込む" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34393?captions=jpn&format=jpeg&nocache=1740415067018" alt="リアルタイム顧客プロファイルにデータを取り込む"
+                    <a href="bring-data-into-the-real-time-customer-profile.md" title="データをリアルタイムの顧客プロファイルに取り込む" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27301?format=jpeg&nocache=1740415067018" alt="データをリアルタイムの顧客プロファイルに取り込む"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -147,9 +149,9 @@ ht-degree: 15%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="bring-data-into-the-real-time-customer-profile.md" target="_blank" rel="referrer" title="リアルタイム顧客プロファイルにデータを取り込む"> リアルタイム顧客プロファイルへのデータの取り込み </a>
+                        <a href="bring-data-into-the-real-time-customer-profile.md" target="_blank" rel="referrer" title="データをリアルタイムの顧客プロファイルに取り込む"> データをリアルタイムの顧客プロファイルに取り込む</a>
                     </p>
-                    <p class="is-size-6">リアルタイム顧客プロファイルは、カスタマージャーニーの各フェーズを通じて、クロスチャネルパーソナライゼーションを大規模に強化します。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にできます。</p>
+                    <p class="is-size-6">リアルタイムの顧客プロファイルにより、カスタマージャーニーの各段階において、大規模なクロスチャネルのパーソナライゼーションを実現できます。 スキーマと対応するデータセットの両方を有効にすることで、リアルタイム顧客プロファイルに対してバッチデータまたはストリーミングデータを有効にすることができます。</p>
                 </div>
                 <a href="bring-data-into-the-real-time-customer-profile.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>
@@ -172,7 +174,7 @@ ht-degree: 15%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="delete-profiles.md" target="_blank" rel="referrer" title="プロファイルの削除">プロファイルの削除</a>
                     </p>
-                    <p class="is-size-6">リアルタイム顧客プロファイル API を使用してプロファイルストアからデータを削除する方法を説明します。 Profile API を使用すると、データレイクや ID グラフに影響を与えることなく、プロファイルストアからデータを削除できます。 これは、ID グラフの問題をトラブルシューティングし、少数のプロファイルにのみ影響するデータ取り込みでときどき発生するエラーを修正する場合に役立ちます。</p>
+                    <p class="is-size-6">Real-Time Customer Profile APIを使用してプロファイルストアからデータを削除する方法について説明します。 Profile APIを使用すると、データレイクやID グラフに影響を与えることなく、プロファイルストアからデータを削除できます。 これは、ID グラフの問題をトラブルシューティングし、少数のプロファイルのみに影響するデータ取り込みの時折発生するエラーを修正する場合に役立ちます。</p>
                 </div>
                 <a href="delete-profiles.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -184,8 +186,8 @@ ht-degree: 15%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="update-a-specific-attribute-with-upsert.md" title="「upsert」を使用した特定のプロファイル属性の更新" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443442/?captions=jpn&format=jpeg&nocache=1740415067029" alt="「upsert」を使用した特定のプロファイル属性の更新"
+                    <a href="update-a-specific-attribute-with-upsert.md" title="「upsert」を使用して特定のプロファイル属性を更新する" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="「upsert」を使用して特定のプロファイル属性を更新する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -193,7 +195,7 @@ ht-degree: 15%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="「upsert」を使用した特定のプロファイル属性の更新"> 「upsert」を使用した特定のプロファイル属性の更新 </a>
+                        <a href="update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="「upsert」を使用して特定のプロファイル属性を更新する">特定のプロファイル属性を「アップサート」を使用して更新する</a>
                     </p>
                     <p class="is-size-6">Adobe Experience Platformの「アップサート」機能を使用して、プロファイルの特定の属性を更新する方法を説明します。</p>
                 </div>
@@ -208,7 +210,8 @@ ht-degree: 15%
 
 ## アカウントプロファイル
 
-<!-- CARDS
+<!--
+CARDS
 * view-account-profiles.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -218,7 +221,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="アカウントプロファイルの表示" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446578?captions=jpn&format=jpeg&nocache=1740415067214" alt="アカウントプロファイルの表示"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="アカウントプロファイルの表示"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -226,9 +229,9 @@ ht-degree: 15%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="view-account-profiles.md" target="_blank" rel="referrer" title="アカウントプロファイルの表示"> アカウントプロファイルの表示 </a>
+                        <a href="view-account-profiles.md" target="_blank" rel="referrer" title="アカウントプロファイルの表示"> アカウントプロファイルの表示</a>
                     </p>
-                    <p class="is-size-6">Real-Time CDP B2B editionでアカウントプロファイルを表示する方法を説明します。</p>
+                    <p class="is-size-6">Real-Time CDP B2B editionでアカウントプロファイルを表示する方法について説明します。</p>
                 </div>
                 <a href="view-account-profiles.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">詳細情報</span>

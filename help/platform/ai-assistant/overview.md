@@ -9,24 +9,25 @@ duration: 143
 last-substantial-update: 2024-06-14T00:00:00Z
 jira: KT-15749
 exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
-source-git-commit: 98efc766c55531ab61f5404b8d0c71708854e796
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
 # AI アシスタント
 
-Real-Time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platform ベースのアプリケーションで AI アシスタントを使用して実行できることを説明します。 詳しくは、[AI アシスタントのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home) を参照してください。
+Real-Time Customer Data Platform、Journey Optimizer、Customer Journey AnalyticsなどのAdobe Experience Platformベースのアプリケーションで、AI アシスタントを利用して何ができるのかを解説します。 詳しくは、[AI アシスタントのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/home)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 
 ## 基本を学ぶ
 
-AI アシスタントの設定とその基本機能を説明します。
+AI アシスタントの基本を学ぶ。
 
-<!-- CARDS
+<!--
+CARDS
 * access.md
 * discoverability-panel.md
 * validate-responses.md
@@ -37,8 +38,8 @@ AI アシスタントの設定とその基本機能を説明します。
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="access.md" title="AI アシスタントにアクセスする" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475920/?captions=jpn&format=jpeg&nocache=1770666472991" alt="AI アシスタントにアクセスする"
+                    <a href="access.md" title="AI アシスタントを利用する" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1770666472991" alt="AI アシスタントを利用する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -46,9 +47,9 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="access.md" target="_blank" rel="referrer" title="AI アシスタントにアクセスする">AI アシスタントへのアクセス </a>
+                        <a href="access.md" target="_blank" rel="referrer" title="AI アシスタントを利用する">AI アシスタントにアクセス </a>
                     </p>
-                    <p class="is-size-6">Adobe Experience Platformで AI アシスタントのアクセス権と権限を設定する方法について説明します。</p>
+                    <p class="is-size-6">Adobe Experience Platform内でAI アシスタントのアクセス権と権限を設定する方法について説明します。</p>
                 </div>
                 <a href="access.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -60,8 +61,8 @@ AI アシスタントの設定とその基本機能を説明します。
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="discoverability-panel.md" title="AI アシスタントの検出性パネルの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440963/?captions=jpn&format=jpeg&nocache=1770666473011" alt="AI アシスタントの検出性パネルの使用"
+                    <a href="discoverability-panel.md" title="AI アシスタントの見つけやすさパネルの使用" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1770666473011" alt="AI アシスタントの見つけやすさパネルの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,9 +70,9 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="discoverability-panel.md" target="_blank" rel="referrer" title="AI アシスタントの検出性パネルの使用">AI アシスタントで検出性パネルを使用する </a>
+                        <a href="discoverability-panel.md" target="_blank" rel="referrer" title="AI アシスタントの見つけやすさパネルの使用">AI アシスタントの見つけやすさパネルを使用</a>
                     </p>
-                    <p class="is-size-6">AI アシスタントで検出性パネルを使用する方法を説明します。</p>
+                    <p class="is-size-6">AI アシスタントで見つけやすさパネルを使用する方法について説明します。</p>
                 </div>
                 <a href="discoverability-panel.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -83,8 +84,8 @@ AI アシスタントの設定とその基本機能を説明します。
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="validate-responses.md" title="AI アシスタントからの応答を検証" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441739/?captions=jpn&format=jpeg&nocache=1770666473002" alt="AI アシスタントからの応答を検証"
+                    <a href="validate-responses.md" title="AI アシスタントからの回答を検証する" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1770666473002" alt="AI アシスタントからの回答を検証する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -92,9 +93,9 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="validate-responses.md" target="_blank" rel="referrer" title="AI アシスタントからの応答を検証">AI アシスタントからの応答を検証 </a>
+                        <a href="validate-responses.md" target="_blank" rel="referrer" title="AI アシスタントからの回答を検証する">AI アシスタントからの回答を検証</a>
                     </p>
-                    <p class="is-size-6">Adobe Experience Platformの AI アシスタントが提供する応答を検証する方法を説明します。</p>
+                    <p class="is-size-6">Adobe Experience PlatformのAI アシスタントが提供する回答を検証および検証する方法について説明します。</p>
                 </div>
                 <a href="validate-responses.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -107,20 +108,21 @@ AI アシスタントの設定とその基本機能を説明します。
 
 ## Agent Orchestratorとエージェント
 
-<!-- CARDS
+<!--
+CARDS
 
     {cta = Watch}
 
-* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/ja/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
-* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/ja/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
-* audience-agent-overview.md{image = https://experienceleague.adobe.com/ja/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
-* journey-agent-overview.md{image = https://experienceleague.adobe.com/ja/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
-* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/ja/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
-* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/ja/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
-* https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-03-03-26
-* https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
-* https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
-* https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
+* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
+* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
+* audience-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
+* journey-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
+* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
+* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-03-03-26
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -129,7 +131,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-overview.md" title="Agent Orchestratorの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Agent Orchestratorの概要"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Agent Orchestratorの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -137,7 +139,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="agent-orchestrator-overview.md" target="_blank" rel="referrer" title="Agent Orchestratorの概要">Agent Orchestratorの概要 </a>
+                        <a href="agent-orchestrator-overview.md" target="_blank" rel="referrer" title="Agent Orchestratorの概要">Agent Orchestratorの概要</a>
                     </p>
                     <p class="is-size-6">Agent Orchestrator は、Adobe Experience Platform のエージェント型レイヤーで、専用のエージェント、高度な推論エンジン、強力な対話型インターフェイスを使用して、カスタマーエクスペリエンスのオーケストレーションを強化します。</p>
                 </div>
@@ -152,7 +154,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-ui.md" title="Adobe Experience Platform Agent Orchestrator インターフェイスの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="Adobe Experience Platform Agent Orchestrator インターフェイスの使用"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="Adobe Experience Platform Agent Orchestrator インターフェイスの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -175,7 +177,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-agent-overview.md" title="Audience Agentの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Audience Agentの概要"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Audience Agentの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -198,7 +200,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="journey-agent-overview.md" title="Journey Agent の概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Journey Agent の概要"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Journey Agent の概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -221,7 +223,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-insights-agent-overview.md" title="Data Insights Agentの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Data Insights Agentの概要"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Data Insights Agentの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -229,7 +231,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="data-insights-agent-overview.md" target="_blank" rel="referrer" title="Data Insights Agentの概要">Data Insights Agentの概要 </a>
+                        <a href="data-insights-agent-overview.md" target="_blank" rel="referrer" title="Data Insights Agentの概要">Data Insights Agentの概要</a>
                     </p>
                     <p class="is-size-6">Data Insight エージェントは、イベント、プロファイル、ジャーニー、オフラインのデータを利用して、検出を簡素化し、パーソナライズされたダッシュボードを即座に有効にします。</p>
                 </div>
@@ -244,7 +246,7 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="experimentation-agent-overview.md" title="実験エージェントの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/ja/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="実験エージェントの概要"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="実験エージェントの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -266,8 +268,8 @@ AI アシスタントの設定とその基本機能を説明します。
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Adobe Experience Platform Agent Orchestratorによる次世代の顧客体験と効率性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476153/?format=jpeg&nocache=1770666473854" alt="Adobe Experience Platform Agent Orchestratorによる次世代の顧客体験と効率性"
+                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Adobe Experience Platform Agent Orchestratorを活用した次世代の顧客体験と効率性" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476153/?format=jpeg&nocache=1770666473854" alt="Adobe Experience Platform Agent Orchestratorを活用した次世代の顧客体験と効率性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -275,11 +277,11 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Adobe Experience Platform Agent Orchestratorによる次世代の顧客体験と効率性">Adobe Experience Platform Agent Orchestratorによる次世代の顧客体験と効率性 </a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Adobe Experience Platform Agent Orchestratorを活用した次世代の顧客体験と効率性">Adobe Experience Platform Agent Orchestratorを利用した次世代の顧客体験と効率性</a>
                     </p>
-                    <p class="is-size-6">Experience Platform Agent Orchestratorは、目的に合わせて作成されたエキスパート Adobe Experience Platform エージェントの背後にあるインテリジェンスと推論を強化し、複雑な意思決定や問題解決のタスクを迅速かつ大規模に実行できるようにします。</p>
+                    <p class="is-size-6">Experience Platform Agent Orchestratorは、専用に構築されたAdobe Experience Platform Agentsのインテリジェンスと推論を支援し、複雑な意思決定と問題解決のタスクを迅速かつ大規模に実行できるようにします。</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
@@ -289,8 +291,8 @@ AI アシスタントの設定とその基本機能を説明します。
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="職場のエージェント – オーディエンスとジャーニーの作成およびアクティブ化" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3479512/?format=jpeg&nocache=1770666473650" alt="職場のエージェント – オーディエンスとジャーニーの作成およびアクティブ化"
+                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="仕事のエージェント – オーディエンスとジャーニーの作成とアクティブ化" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3479512/?format=jpeg&nocache=1770666473650" alt="仕事のエージェント – オーディエンスとジャーニーの作成とアクティブ化"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -298,11 +300,11 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="職場のエージェント – オーディエンスとジャーニーの作成およびアクティブ化"> 作業中のエージェント – オーディエンスとジャーニーの作成およびアクティブ化 </a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="仕事のエージェント – オーディエンスとジャーニーの作成とアクティブ化">仕事中のエージェント – オーディエンスとジャーニーの作成とアクティブ化</a>
                     </p>
-                    <p class="is-size-6">Audience Agentを参照して、オーディエンスインサイトを明らかにし、すぐに使用できるオーディエンスを数分で作成します。 次に、Journey Agentが自然言語プロンプトを、オーディエンスの選定からクロスチャネルアクティベーションまで、複数の手順からなるジャーニーに変換する様子をご覧ください。</p>
+                    <p class="is-size-6">Audience Agentで、オーディエンスのインサイトを明らかにし、すぐに使用できるオーディエンスを数分で作成できます。 さらに、Journey Agentが自然言語によるプロンプトから、オーディエンスの選定からクロスチャネルのアクティベーションに至るまでのマルチステップのジャーニーを実現する様子をご覧ください。</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
@@ -312,8 +314,8 @@ AI アシスタントの設定とその基本機能を説明します。
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" title="次の実験の時代 – Agentic AI が、よりスマートなテストと成長にどのように役立っているか" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476426/?format=jpeg&nocache=1770666473723" alt="次の実験の時代 – Agentic AI が、よりスマートなテストと成長にどのように役立っているか"
+                    <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" title="実験の次の時代：エージェンティック AIがよりスマートなテストと成長を促進する方法" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476426/?format=jpeg&nocache=1770666473723" alt="実験の次の時代：エージェンティック AIがよりスマートなテストと成長を促進する方法"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -321,9 +323,9 @@ AI アシスタントの設定とその基本機能を説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" target="_blank" rel="referrer" title="次の実験の時代 – Agentic AI が、よりスマートなテストと成長にどのように役立っているか"> 実験の次の時代 – Agentic AI がどのようにして、よりスマートなテストと成長を促進しているか </a>
+                        <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" target="_blank" rel="referrer" title="実験の次の時代：エージェンティック AIがよりスマートなテストと成長を促進する方法">実験の次の時代：Agentic AIがよりスマートなテストと成長を促進する方法</a>
                     </p>
-                    <p class="is-size-6">Experience League ライブセッションにご参加ください。Adobe Journey Optimizer Experimentation Acceleratorは、実験、製品、成長チームによるキャンペーンやカスタマージャーニーのテスト、学習、最適化の方法を変えるために構築された、新しい AI ファーストのアプリケーションです。</p>
+                    <p class="is-size-6">Experience Leagueのライブセッションでは、Adobe Journey Optimizer Experimentation Acceleratorを発表します。AIを利用して、施策やカスタマージャーニーを検証、学習、最適化する方法を変革できます。</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -334,11 +336,12 @@ AI アシスタントの設定とその基本機能を説明します。
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## 運用インサイト用 AI アシスタント
+## 運用インサイト用AI アシスタント
 
-AI アシスタントが、Platform アカウントの管理やマーケティング戦術の改善に役立つ他のユースケースが多数あります。
+AI アシスタントがPlatform アカウントの管理やマーケティング戦術の改善に役立つユースケースは、他にも多数あります。
 
-<!-- CARDS
+<!--
+CARDS
 * operational-insights.md
 * find-unused-audiences.md
 * impact-analysis.md
@@ -350,8 +353,8 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="operational-insights.md" title="AI アシスタントで運用インサイトを取得" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444033/?captions=jpn&format=jpeg&nocache=1770666474551" alt="AI アシスタントで運用インサイトを取得"
+                    <a href="operational-insights.md" title="AI アシスタントで運用上のインサイトを入手" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1770666474551" alt="AI アシスタントで運用上のインサイトを入手"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -359,9 +362,9 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="operational-insights.md" target="_blank" rel="referrer" title="AI アシスタントで運用インサイトを取得">AI アシスタントで運用に関するインサイトを取得</a>
+                        <a href="operational-insights.md" target="_blank" rel="referrer" title="AI アシスタントで運用上のインサイトを入手">AI アシスタントで運用に関するインサイトを取得</a>
                     </p>
-                    <p class="is-size-6">AI アシスタントを使用して、Adobe Experience Platformのオーディエンス、データセット、スキーマ、宛先、ジャーニーなどのビジネスオブジェクトに関する運用インサイトを明らかにする方法を説明します</p>
+                    <p class="is-size-6">AI アシスタントを使用して、Adobe Experience Platformでオーディエンス、データセット、スキーマ、宛先、ジャーニーなどのビジネスオブジェクトに関する運用上のインサイトを明らかにする方法を説明します</p>
                 </div>
                 <a href="operational-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -373,8 +376,8 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="find-unused-audiences.md" title="AI アシスタント – オーディエンスクリーンアップのユースケース" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441988/?captions=jpn&format=jpeg&nocache=1770666474555" alt="AI アシスタント – オーディエンスクリーンアップのユースケース"
+                    <a href="find-unused-audiences.md" title="AI アシスタント – オーディエンスのクリーンアップユースケース" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1770666474555" alt="AI アシスタント – オーディエンスのクリーンアップユースケース"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -382,9 +385,9 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="find-unused-audiences.md" target="_blank" rel="referrer" title="AI アシスタント – オーディエンスクリーンアップのユースケース">AI アシスタント – オーディエンスのクリーンアップのユースケース </a>
+                        <a href="find-unused-audiences.md" target="_blank" rel="referrer" title="AI アシスタント – オーディエンスのクリーンアップユースケース">AI アシスタント – オーディエンスのクリーンアップのユースケース </a>
                     </p>
-                    <p class="is-size-6">AI アシスタントを使用して未使用のオーディエンスを特定し、それらを削除してマーケティング操作をより効率的にする方法を説明します。</p>
+                    <p class="is-size-6">AI アシスタントを使用して未使用のオーディエンスを特定し、削除してマーケティング業務を効率化する方法を説明します。</p>
                 </div>
                 <a href="find-unused-audiences.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -397,7 +400,7 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="AI アシスタントによる影響分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441681/?captions=jpn&format=jpeg&nocache=1770666474559" alt="AI アシスタントによる影響分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1770666474559" alt="AI アシスタントによる影響分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -405,9 +408,9 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="impact-analysis.md" target="_blank" rel="referrer" title="AI アシスタントによる影響分析">AI Assistant による影響分析 </a>
+                        <a href="impact-analysis.md" target="_blank" rel="referrer" title="AI アシスタントによる影響分析">AI アシスタントによる影響分析</a>
                     </p>
-                    <p class="is-size-6">共有オブジェクトを変更する前に、AI アシスタントを使用して潜在的な影響を検出する方法を説明します。 属性やオーディエンスなどの共有オブジェクトを変更すると、他のチームのワークフローが中断され、プロセスが複雑になり、重要なマーケティング活動のリスクが高まる可能性があります。</p>
+                    <p class="is-size-6">共有オブジェクトを変更する前に、AI アシスタントが潜在的な影響を検出する方法について説明します。 属性やオーディエンスなどの共有オブジェクトを変更すると、ほかのチームのワークフローが混乱し、プロセスが複雑になり、重要なマーケティング活動がリスクにさらされます。</p>
                 </div>
                 <a href="impact-analysis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -418,11 +421,12 @@ AI アシスタントが、Platform アカウントの管理やマーケティ�
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## 製品知識のための AI アシスタント
+## 製品知識のためのAI アシスタント
 
-AI アシスタントは、新製品を学習したり、使い慣れた製品に関する迅速な回答を得たりするための便利なツールです。
+AI アシスタントは、新製品を学んだり、使い慣れた製品に関する回答をすばやく得たりするのに役立ちます。
 
-<!-- CARDS
+<!--
+CARDS
 * product-knowledge.md
 * onboard.md
 -->
@@ -432,8 +436,8 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="product-knowledge.md" title="AI アシスタントでExperience Platform アプリケーションを学ぶ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441025/?captions=jpn&format=jpeg&nocache=1770666474659" alt="AI アシスタントでExperience Platform アプリケーションを学ぶ"
+                    <a href="product-knowledge.md" title="AI アシスタントでExperience Platformアプリケーションを学ぶ" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1770666474659" alt="AI アシスタントでExperience Platformアプリケーションを学ぶ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -441,9 +445,9 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="product-knowledge.md" target="_blank" rel="referrer" title="AI アシスタントでExperience Platform アプリケーションを学ぶ">AI アシスタントでExperience Platform アプリケーションを学ぶ </a>
+                        <a href="product-knowledge.md" target="_blank" rel="referrer" title="AI アシスタントでExperience Platformアプリケーションを学ぶ">AI アシスタントを使用してExperience Platform アプリケーションを学習</a>
                     </p>
-                    <p class="is-size-6">AI アシスタントからAdobe Experience Platform アプリケーションについて説明します。</p>
+                    <p class="is-size-6">AI アシスタントによるAdobe Experience Platform製品の詳細をご覧ください。</p>
                 </div>
                 <a href="product-knowledge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -455,8 +459,8 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="onboard.md" title="AI アシスタントを使用したオンボーディング時間の短縮" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475931/?captions=jpn&format=jpeg&nocache=1770666474665" alt="AI アシスタントを使用したオンボーディング時間の短縮"
+                    <a href="onboard.md" title="AI アシスタントを使用してオンボーディング時間を短縮する" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1770666474665" alt="AI アシスタントを使用してオンボーディング時間を短縮する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -464,9 +468,9 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="onboard.md" target="_blank" rel="referrer" title="AI アシスタントを使用したオンボーディング時間の短縮">AI アシスタントを使用したオンボーディング時間の短縮 </a>
+                        <a href="onboard.md" target="_blank" rel="referrer" title="AI アシスタントを使用してオンボーディング時間を短縮する">AI アシスタントを使用してオンボーディング時間を短縮</a>
                     </p>
-                    <p class="is-size-6">AI アシスタントを使用して新機能をすばやく追加し、オンボーディング時間を短縮する方法を説明します。</p>
+                    <p class="is-size-6">AI アシスタントを使用して新機能をすばやく追加し、オンボーディング時間を短縮する方法を学びましょう。</p>
                 </div>
                 <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -479,11 +483,12 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
 
 ## 製品サポート
 
-トラブルシューティングを行い、カスタマーケアチケットを開きます。
+トラブルシューティングを実行し、カスタマーケアチケットを開きます。
 
-<!-- CARDS
+<!--
+CARDS
 * product-support-agent.md
-* https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -492,7 +497,7 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="製品サポート担当者" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443184/?captions=jpn&format=jpeg&nocache=1770666474768" alt="製品サポート担当者"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1770666474768" alt="製品サポート担当者"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -500,9 +505,9 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="product-support-agent.md" target="_blank" rel="referrer" title="製品サポート担当者"> 製品サポート担当者 </a>
+                        <a href="product-support-agent.md" target="_blank" rel="referrer" title="製品サポート担当者">製品サポートエージェント </a>
                     </p>
-                    <p class="is-size-6">プロダクトサポートエージェントは、Adobeのエキスパートサポートチームによってキュレートされた膨大な数のナレッジソースを活用して、問題の解決を支援します。 追加のヘルプが必要な場合、製品サポートエージェントは、詳細なコンテキスト情報を含むサポートケースを作成できるようになりました。</p>
+                    <p class="is-size-6">Product Support Agentは、Adobeのエキスパートのサポートチームが厳選した豊富なナレッジソースと、お客様自身のデータを活用することで、問題の解決を支援します。 追加のヘルプが必要な場合、製品サポート担当者は、詳細なコンテキスト情報を含むサポートケースを作成できるようになりました。</p>
                 </div>
                 <a href="product-support-agent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
@@ -514,8 +519,8 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="製品サポートエージェントによるトラブルシューティングとサポートケース管理の簡素化" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3477984/?format=jpeg&nocache=1770666474994" alt="製品サポートエージェントによるトラブルシューティングとサポートケース管理の簡素化"
+                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="Product Support Agentでトラブルシューティングとサポートケース管理を簡素化する" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3477984/?format=jpeg&nocache=1770666474994" alt="Product Support Agentでトラブルシューティングとサポートケース管理を簡素化する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -523,11 +528,11 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="製品サポートエージェントによるトラブルシューティングとサポートケース管理の簡素化"> 製品サポートエージェントによるトラブルシューティングとサポートケース管理の簡素化 </a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="Product Support Agentでトラブルシューティングとサポートケース管理を簡素化する">製品サポート エージェント </a>を使用して、トラブルシューティングとサポート ケース管理を簡素化する
                     </p>
-                    <p class="is-size-6">Adobe Experience Platform Agent OrchestratorAdobe Experience Platformを活用した Product Support Agent は、問題のトラブルシューティング、診断、エスカレーションをインタラクティブに行うことで、迅速な解決と運用効率の向上を実現します。</p>
+                    <p class="is-size-6">Adobe Adobe Experience Platform Agent Orchestratorを活用したProduct Support Agentは、そうしたAdobe Experience Platformアプリケーションをサポートするチームに合わせて設計されており、問題のトラブルシューティング、診断、エスカレーションをインタラクティブに行う方法を提供し、より迅速な解決と業務効率の向上を実現します。</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>
                 </a>
             </div>
@@ -538,9 +543,10 @@ AI アシスタントは、新製品を学習したり、使い慣れた製品�
 
 ## セキュリティと管理
 
-AI アシスタントのセキュリティ機能について説明します。
+AI アシスタントのセキュリティ機能について詳しく見る。
 
-<!-- CARDS
+<!--
+CARDS
 * security-overview.md
 * ai-credits.md
 -->
@@ -550,8 +556,8 @@ AI アシスタントのセキュリティ機能について説明します。
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="security-overview.md" title="AI アシスタントのセキュリティの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441081/?captions=jpn&format=jpeg&nocache=1770666475529" alt="AI アシスタントのセキュリティの概要"
+                    <a href="security-overview.md" title="AI アシスタントのセキュリティ概要" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1770666475529" alt="AI アシスタントのセキュリティ概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -559,9 +565,9 @@ AI アシスタントのセキュリティ機能について説明します。
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="security-overview.md" target="_blank" rel="referrer" title="AI アシスタントのセキュリティの概要">AI アシスタントのセキュリティの概要 </a>
+                        <a href="security-overview.md" target="_blank" rel="referrer" title="AI アシスタントのセキュリティ概要">AI アシスタントのセキュリティ概要</a>
                     </p>
-                    <p class="is-size-6">ここでは、セキュリティファクトシートに基づいた、AI アシスタントのセキュリティ機能の概要を説明します。</p>
+                    <p class="is-size-6">ここでは、セキュリティ ファクトシートに基づくAI アシスタントのセキュリティ機能の概要を説明します。</p>
                 </div>
                 <a href="security-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">所要時間</span>

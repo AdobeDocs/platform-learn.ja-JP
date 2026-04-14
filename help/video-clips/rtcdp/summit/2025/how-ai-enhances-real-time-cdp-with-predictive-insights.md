@@ -1,6 +1,6 @@
 ---
-title: AI が予測インサイトでReal-Time CDPを強化する方法
-description: Real-Time CDPのAdobe予測 AI 機能が、マーケターがセグメント化、パーソナライゼーションおよびオーディエンスインサイトを最適化するのにどのように役立つかをご確認ください。
+title: AIが予測インサイトでReal-Time CDPを強化する方法
+description: Real-Time CDPのAdobeの予測AI機能が、マーケターのセグメンテーション、パーソナライゼーション、オーディエンスインサイトの最適化にどのように役立つかをご覧ください。
 doc-type: Video Clips
 duration: 66
 index: false
@@ -8,16 +8,16 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 5aff7be5-9c6a-4120-bbce-d6bd2674876b
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-# AI が予測インサイトでReal-Time CDPを強化する方法
+# AIが予測インサイトでReal-Time CDPを強化する方法
 
-Real-Time CDPのAdobe予測 AI 機能が、マーケターがセグメント化、パーソナライゼーションおよびオーディエンスインサイトを最適化するのにどのように役立つかをご確認ください。
+Real-Time CDPのAdobeの予測AI機能が、マーケターのセグメンテーション、パーソナライゼーション、オーディエンスインサイトの最適化にどのように役立つかをご覧ください。
 
 <!-- 85_OS512_3442427_65_how-ai-enhances-realtime-cdp-with-predictive-insights -->
->[!VIDEO](https://video.tv.adobe.com/v/3459957/?captions=jpn&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458200/?learn=on&enablevpops=true)

@@ -1,6 +1,6 @@
 ---
 title: Real-Time CDP Collaborationの仕組み
-description: AdobeのReal-Time CDP Collaborationを使用して、オーディエンスのオンボーディング、パブリッシャーとの共同作業、キャンペーンのアクティブ化を行う手順を説明します。
+description: AdobeとReal-Time CDP Collaborationを利用して、オーディエンスのオンボーディング、メディア企業との共同作業、キャンペーンのアクティベーションを実施する方法を、ステップバイステップで学びましょう。
 doc-type: Video Clips
 duration: 62
 index: false
@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: d8111a39-ee62-46d7-9aa2-4deab0238951
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Real-Time CDP Collaborationの仕組み
 
-AdobeのReal-Time CDP Collaborationを使用して、オーディエンスのオンボーディング、パブリッシャーとの共同作業、キャンペーンのアクティブ化を行う手順を説明します。
+AdobeとReal-Time CDP Collaborationを利用して、オーディエンスのオンボーディング、メディア企業との共同作業、キャンペーンのアクティベーションを実施する方法を、ステップバイステップで学びましょう。
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3459946/?captions=jpn&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)

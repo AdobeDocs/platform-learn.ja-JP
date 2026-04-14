@@ -9,7 +9,7 @@ last-substantial-update: 2025-09-23T00:00:00Z
 jira: KT-19109
 hide: false
 exl-id: 46a251ce-4de2-4c35-800d-fdc6c3a162d4
-source-git-commit: 04931dd0e459a3dc74aaa11ac8be5edc5a269e27
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 46%
@@ -18,6 +18,6 @@ ht-degree: 46%
 
 # Journey Agent の概要
 
-Journey Agentは、AI を使用して、対話型インターフェイスを通じて B2B/B2C ジャーニーを作成、分析および最適化します。 詳しくは、[Journey Agent ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent) を参照してください。
+Journey Agentなら、会話型のインターフェイスを利用して、AIを利用して、B2B/B2C ジャーニーを構築、分析、最適化できます。 詳しくは、[Journey Agentのドキュメント ](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)を参照してください。
 
 >[!SLIDE](journey-agent-overview)

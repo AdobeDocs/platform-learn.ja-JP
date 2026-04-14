@@ -6,93 +6,93 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 hidefromtoc: true
-source-git-commit: 2b2267e84b26f8c2571e40d7f4c0e08281d36c6c
+exl-id: abf0611e-f977-4e34-a5dc-006b0cc99bf4
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 2%
 
 ---
 
+# MarkdowまたはHTML image elementを使用して、インライン画像の使用をテストします。
 
-# Markdow またはHTML画像要素を使用して、インライン画像の使用をテストします。
-
-別の構文を使用したインライン画像のテストについては、以下を参照してください
+異なる構文を使用したインライン画像のテストについては、以下を参照してください
 
 
-## HTML/幅（引用符なし）
+## HTML / 引用符なしの幅
 
-[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[設定の手順](assurance.md#connecting-to-a-session) セクションを確認して、シミュレーターまたはデバイスをAssuranceに接続します。
 
-1. Assurance アイコンを左に移動します。
-1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
+1. Assurance アイコンを左に動かします。
+1. タブバーで&#x200B;**[!UICONTROL Home]**&#x200B;を選択し、ホーム画面に&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子メール]**、および&#x200B;**[!UICONTROL CRM ID]**&#x200B;が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
-1. 商品を選択します。
+1. 製品を選ぶ。
 1. 選択 <img src="assets/saveforlater.png" width="15"> （iOS）または <img src="assets/heart.png" width="25"> （Android）。
 1. 選択 <img src="assets/addtocart.png" width="20">。
 1. 選択 <img src="assets/purchase.png" width="15">。
 
 
-## HTML/幅（引用符あり）
+## HTML / 引用符で囲んだ幅
 
-[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[設定の手順](assurance.md#connecting-to-a-session) セクションを確認して、シミュレーターまたはデバイスをAssuranceに接続します。
 
-1. Assurance アイコンを左に移動します。
-1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
+1. Assurance アイコンを左に動かします。
+1. タブバーで&#x200B;**[!UICONTROL Home]**&#x200B;を選択し、ホーム画面に&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子メール]**、および&#x200B;**[!UICONTROL CRM ID]**&#x200B;が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
-1. 商品を選択します。
+1. 製品を選ぶ。
 1. 選択 <img src="assets/saveforlater.png" width="15"> （iOS）または <img src="assets/heart.png" width="25"> （Android）。
 1. 選択 <img src="assets/addtocart.png" width="20">。
 1. 選択 <img src="assets/purchase.png" width="15">。
 
 
 
-## Markdown/幅（引用符なし）
+## Markdown / 引用符なしの幅
 
-[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[設定の手順](assurance.md#connecting-to-a-session) セクションを確認して、シミュレーターまたはデバイスをAssuranceに接続します。
 
-1. Assurance アイコンを左に移動します。
-1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
+1. Assurance アイコンを左に動かします。
+1. タブバーで&#x200B;**[!UICONTROL Home]**&#x200B;を選択し、ホーム画面に&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子メール]**、および&#x200B;**[!UICONTROL CRM ID]**&#x200B;が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
-1. 商品を選択します。
-1. ![&#x200B; 後で使用するために保存 &#x200B;](assets/saveforlater.png){width=15} （iOS）または ![&#x200B; 後で使用するために保存 &#x200B;](assets/heart.png){width=25} （Android）を選択します。
-1. ![&#x200B; 買い物かごに追加 &#x200B;](assets/addtocart.png){width=20} を選択します。
-1. ![&#x200B; 購入 &#x200B;](assets/purchase.png){width=15} を選択します。
+1. 製品を選ぶ。
+1. ![後で保存](assets/saveforlater.png){width=15} （iOS）または![後で保存](assets/heart.png){width=25} （Android）を選択します。
+1. 「![買い物かごに追加](assets/addtocart.png){width=20}」を選択します。
+1. ![購入](assets/purchase.png){width=15}を選択します。
 
 
-## マークダウン/幅（引用符あり）
+## Markdown / 引用符で囲んだ幅
 
-[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[設定の手順](assurance.md#connecting-to-a-session) セクションを確認して、シミュレーターまたはデバイスをAssuranceに接続します。
 
-1. Assurance アイコンを左に移動します。
-1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
+1. Assurance アイコンを左に動かします。
+1. タブバーで&#x200B;**[!UICONTROL Home]**&#x200B;を選択し、ホーム画面に&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子メール]**、および&#x200B;**[!UICONTROL CRM ID]**&#x200B;が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
-1. 商品を選択します。
-1. ![&#x200B; 後で使用するために保存 &#x200B;](assets/saveforlater.png){width="15"} （iOS）または ![&#x200B; 後で使用するために保存 &#x200B;](assets/heart.png){width="25"} （Android）を選択します。
-1. ![&#x200B; 買い物かごに追加 &#x200B;](assets/addtocart.png){width="20"} を選択します。
-1. ![&#x200B; 購入 &#x200B;](assets/purchase.png){width="15"} を選択します。
+1. 製品を選ぶ。
+1. ![後で保存](assets/saveforlater.png){width="15"} （iOS）または![後で保存](assets/heart.png){width="25"} （Android）を選択します。
+1. 「![買い物かごに追加](assets/addtocart.png){width="20"}」を選択します。
+1. ![購入](assets/purchase.png){width="15"}を選択します。
 
 
 ## HTML/幅なし
 
-[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[設定の手順](assurance.md#connecting-to-a-session) セクションを確認して、シミュレーターまたはデバイスをAssuranceに接続します。
 
-1. Assurance アイコンを左に移動します。
-1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
+1. Assurance アイコンを左に動かします。
+1. タブバーで&#x200B;**[!UICONTROL Home]**&#x200B;を選択し、ホーム画面に&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子メール]**、および&#x200B;**[!UICONTROL CRM ID]**&#x200B;が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
-1. 商品を選択します。
+1. 製品を選ぶ。
 1. 選択 <img src="assets/saveforlater.png"> （iOS）または <img src="assets/heart.png"> （Android）。
 1. 選択 <img src="assets/addtocart.png">。
 1. 選択 <img src="assets/purchase.png">。
 
 
-## マークダウン/幅なし
+## Markdown / 幅なし
 
-[&#x200B; 設定手順 &#x200B;](assurance.md#connecting-to-a-session) の節を参照して、シミュレーターまたはデバイスをAssuranceに接続します。
+[設定の手順](assurance.md#connecting-to-a-session) セクションを確認して、シミュレーターまたはデバイスをAssuranceに接続します。
 
-1. Assurance アイコンを左に移動します。
-1. タブバーで **[!UICONTROL ホーム]** を選択し、ホーム画面に **[!UICONTROL ECID]**、**[!UICONTROL メール]**、**[!UICONTROL CRM ID]** が表示されていることを確認します。
+1. Assurance アイコンを左に動かします。
+1. タブバーで&#x200B;**[!UICONTROL Home]**&#x200B;を選択し、ホーム画面に&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子メール]**、および&#x200B;**[!UICONTROL CRM ID]**&#x200B;が表示されていることを確認します。
 1. タブバーで「**[!DNL Products]**」を選択します。
-1. 商品を選択します。
-1. ![&#x200B; 後で使用するために保存 &#x200B;](assets/saveforlater.png) （iOS）または ![&#x200B; 後で使用するために保存 &#x200B;](assets/heart.png) （Android）を選択します。
-1. ![&#x200B; 買い物かごに追加 &#x200B;](assets/addtocart.png) を選択します。
-1. ![&#x200B; 購入 &#x200B;](assets/purchase.png) を選択します。
+1. 製品を選ぶ。
+1. ![後で保存](assets/saveforlater.png) （iOS）または![後で保存](assets/heart.png) （Android）を選択します。
+1. 「![買い物かごに追加](assets/addtocart.png)」を選択します。
+1. ![購入](assets/purchase.png)を選択します。

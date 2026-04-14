@@ -1,6 +1,6 @@
 ---
-title: Adobeのメンバーのオンボーディングとリテンションのアプローチ
-description: Adobeがデータ駆動型のインサイトとAJOを使用して、メンバーのオンボーディングを強化し、リテンションを高める方法を説明します。
+title: Adobeによるメンバーオンボーディングとリテンションのアプローチ
+description: Adobeでデータ主導のインサイトとAJOを利用して、メンバーオンボーディングを強化し、リテンションを促進する方法をご確認ください。
 doc-type: Video Clips
 duration: 36
 index: false
@@ -8,16 +8,16 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: ae9e4173-ebcf-4520-85a4-90b7fd19936f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
 
 ---
 
-# Adobeのメンバーのオンボーディングとリテンションのアプローチ
+# Adobeによるメンバーオンボーディングとリテンションのアプローチ
 
-Adobeがデータ駆動型のインサイトとAJOを使用して、メンバーのオンボーディングを強化し、リテンションを高める方法を説明します。
+Adobeでデータ主導のインサイトとAJOを利用して、メンバーオンボーディングを強化し、リテンションを促進する方法をご確認ください。
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3459639/?captions=jpn&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)

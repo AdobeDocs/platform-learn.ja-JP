@@ -2,13 +2,13 @@
 title: クエリの実行
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: クエリの実行
-description: このレッスンでは、クエリを設定、記述、実行して、取り込んだデータを検証する方法を学びます。
+description: このレッスンでは、取り込んだデータを検証するためにクエリを設定、記述、実行する方法について説明します。
 role: Developer
 feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 1%
@@ -18,32 +18,33 @@ ht-degree: 1%
 # クエリの実行
 
 <!-- 15 min-->
-このレッスンでは、クエリを設定、記述、実行して、取り込んだデータを検証する方法を学びます。
+このレッスンでは、取り込んだデータを検証するためにクエリを設定、記述、実行する方法について説明します。
 
-Adobe Experience Platform クエリサービスは、標準の SQL を使用して Platform でデータに対してクエリを実行できるようにすることで、データを把握するのに役立ちます。 クエリサービスを使用すると、データレイク内のデータセットを結合したり、クエリ結果を新しいデータセットとして取得したりして、レポートや機械学習で使用したり、リアルタイム顧客プロファイルに取り込んだりできます。
+Adobe Experience Platform Query Serviceでは、標準のSQLを使用してPlatformでデータをクエリできるため、データを正確に理解できます。 Query Serviceを使用すると、データレイク内の任意のデータセットを結合し、クエリの結果を新しいデータセットとして取得して、レポートやマシンラーニングで使用したり、リアルタイム顧客プロファイルに取り込んだりできます。
 
-**データアーキテクト** と **データエンジニア** は、このチュートリアル以外でクエリサービスを使用する必要があります。
+**データアーキテクト**&#x200B;および&#x200B;**データエンジニア**&#x200B;は、このチュートリアル以外でクエリサービスを使用する必要があります。
 
-演習を開始する前に、この短いビデオを視聴してクエリサービスの詳細を確認してください。
->[!VIDEO](https://video.tv.adobe.com/v/35089?captions=jpn&learn=on&enablevpops)
+この演習を開始する前に、この短いビデオでクエリサービスの詳細をご覧ください。
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## 権限が必要です
 
-[&#x200B; 権限の設定 &#x200B;](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
+[権限の設定](configure-permissions.md) レッスンでは、このレッスンを完了するために必要なすべてのアクセス制御を設定します。
 
-<!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
+<!-- 
+Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 -->
 
-## 単純なクエリ
+## シンプルなクエリ
 
-それでは、いくつかの単純なクエリから始めましょう。
+簡単な質問から始めましょう。
 
-1. Platform ユーザーインターフェイスの左側のナビゲーションで、**クエリ** に移動します
-1. 右上の **クエリを作成** ボタンを選択して、クエリを実行および実行するテキストボックスを開きます
-1. エディターに次のクエリを入力し、Shift + Enter キーまたは Shift + Return キーを押してクエリを実行します。
+1. Platform ユーザーインターフェイスで、左側のナビゲーションの&#x200B;**クエリ**&#x200B;に移動します
+1. 右上の「**クエリを作成**」ボタンを選択して、クエリを実行および実行するためのテキストボックスを開きます
+1. エディターで次のクエリを入力し、Shift + Enter キーまたはShift + Return キーを押してクエリを実行します。
 
    ```
    SHOW TABLES
@@ -51,10 +52,10 @@ Adobe Experience Platform クエリサービスは、標準の SQL を使用し�
 
 1. 使用可能なテーブルのリストが表示されます
 
-   ![&#x200B; テーブル クエリの表示 &#x200B;](assets/queries-showTables.png)
+   ![ テーブル クエリを表示](assets/queries-showTables.png)
 
 
-1. 次に、このクエリを試して、`_techmarketingdemos` を独自のテナント名前空間に置き換えます。この名前空間は、思い出すと、スキーマに表示されます。
+1. 次に、このクエリを試して、`_techmarketingdemos`を独自のテナント名前空間に置き換えます。覚えておくと、スキーマに表示されます。
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -62,27 +63,29 @@ Adobe Experience Platform クエリサービスは、標準の SQL を使用し�
    WHERE loyalty.tier ='gold'
    ```
 
-   ![&#x200B; ロイヤルティデータセットからのデータの選択 &#x200B;](assets/queries-loyaltySelect.png)
+   ![ ロイヤルティデータセットからデータを選択](assets/queries-loyaltySelect.png)
 
-1. エラーが発生した場合は、次の図のように、詳細なメッセージが **[!UICONTROL コンソール]** タブに表示されます
-   ![&#x200B; クエリのエラー &#x200B;](assets/queries-error.png)
+1. エラーが発生した場合、以下の図のように、**[!UICONTROL コンソール]** タブに詳細なメッセージが表示されます
+   ![ クエリでエラーが発生しました](assets/queries-error.png)
 
-1. 正常に完了したクエリでは、**[!UICONTROL Name]** が `Luma Gold Level Customers` されます
-1. 「**[!UICONTROL 保存]** ボタンを選択します
-   ![&#x200B; クエリの保存 &#x200B;](assets/queries-loyaltySelect-save.png)
+1. 正常なクエリを実行すると、**[!UICONTROL 名前]**&#x200B;が`Luma Gold Level Customers`になります
+1. 「**[!UICONTROL 保存]**」ボタンを選択します
+   ![ クエリを保存しています](assets/queries-loyaltySelect-save.png)
 
 
-<!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
+<!--
+SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
 
 
 SELECT _techmarketingdemos.systemIdentifier.loyaltyId, COUNT(_techmarketingdemos.systemIdentifier.loyaltyId)
 FROM luma_loyalty_dataset 
 GROUP BY _techmarketingdemos.systemIdentifier.loyaltyId
-HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
+HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;
+-->
 
-## 追加の演習
+## その他の演習
 
-クエリサービスの演習は、後日チュートリアルに追加される予定です。
+後日、追加のクエリサービス演習がチュートリアルに追加されます。
 <!--
 ## Join Datasets
 
@@ -119,7 +122,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## その他のリソース
 
-* [&#x200B; クエリサービスドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
-* [&#x200B; クエリサービス API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
+* [ クエリサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-最後の実践レッスンとして、[&#x200B; セグメントの作成 &#x200B;](build-segments.md) を行います。
+最後の実践レッスンは、[ セグメントの作成](build-segments.md)です。
