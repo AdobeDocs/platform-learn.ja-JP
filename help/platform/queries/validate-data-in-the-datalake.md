@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # データレイク内のデータの検証
 
-Adobe Experience Platformのクエリサービスを使用して、データがデータレイクに正常に取り込まれたかどうかを検証する方法を説明します。 製品ドキュメントの詳細については、[ クエリエディターUI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)を参照してください。
+Adobe Experience Platformのクエリサービスを使用して、データがデータレイクに正常に取り込まれたかどうかを検証する方法を説明します。 製品ドキュメントの詳細については、[&#x200B; クエリエディターUI ガイド &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)

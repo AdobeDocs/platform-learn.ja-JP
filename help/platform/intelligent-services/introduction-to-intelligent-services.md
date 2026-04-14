@@ -17,7 +17,7 @@ ht-degree: 45%
 
 # インテリジェントサービスの概要
 
-インテリジェントサービス：マーケティングアナリストと実務担当者が、データサイエンスの専門知識がなくても、顧客体験のユースケースでAIとマシンラーニングの力を活用できるようにします 詳しくは、[ インテリジェントサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja)を参照してください。
+インテリジェントサービス：マーケティングアナリストと実務担当者が、データサイエンスの専門知識がなくても、顧客体験のユースケースでAIとマシンラーニングの力を活用できるようにします 詳しくは、[&#x200B; インテリジェントサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 

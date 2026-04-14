@@ -16,7 +16,7 @@ ht-degree: 20%
 
 # データ収集の概要
 
-Adobe Experience Platformのデータ取り込み機能により、リアルタイムの顧客プロファイルを管理するために、データを1つのオープンでスケーラブルなプラットフォームに集約できます。 詳しくは、[ データ収集ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)を参照してください。
+Adobe Experience Platformのデータ取り込み機能により、リアルタイムの顧客プロファイルを管理するために、データを1つのオープンでスケーラブルなプラットフォームに集約できます。 詳しくは、[&#x200B; データ収集ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 

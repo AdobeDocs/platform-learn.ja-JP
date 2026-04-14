@@ -19,7 +19,7 @@ ht-degree: 68%
 
 >[!WARNING]
 >
-> このチュートリアルとそのLuma web サイトの演習は、古いJavaScript ライブラリに依存して管理されなくなりました。 現在のベストプラクティスを学ぶには、[Web SDKを使用したAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview)を使用してください。
+> このチュートリアルとそのLuma web サイトの演習は、古いJavaScript ライブラリに依存して管理されなくなりました。 現在のベストプラクティスを学ぶには、[Web SDKを使用したAdobe Experience Cloudの実装チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/overview)を使用してください。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 68%
 
 ## 前提条件
 
-このセクションのレッスンを完了するには、最初に[ タグの設定](create-a-property.md)と[ID サービスの追加](id-service.md)でレッスンを完了する必要があります。
+このセクションのレッスンを完了するには、最初に[&#x200B; タグの設定](create-a-property.md)と[ID サービスの追加](id-service.md)でレッスンを完了する必要があります。
 
 ## Target 非表示スニペットを追加します。
 
@@ -100,7 +100,7 @@ ht-degree: 68%
 
 ## Target 拡張機能の追加
 
-Adobe Target拡張機能は、Targetのat.js JavaScript ライブラリを使用したクライアントサイド実装をサポートしています。 Adobe TargetのWeb SDKの実装については、[Experience Platform Web SDK チュートリアル ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)を参照してください。
+Adobe Target拡張機能は、Targetのat.js JavaScript ライブラリを使用したクライアントサイド実装をサポートしています。 Adobe TargetのWeb SDKの実装については、[Experience Platform Web SDK チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)を参照してください。
 
 Target v2 拡張機能は、次の 2 つの主要部分で構成されます。
 
@@ -193,7 +193,7 @@ Target v2拡張機能を追加し、`Load Target`および`Fire Page Load Reques
 
 1. デバッガーが&#x200B;*前のレッスン*&#x200B;で説明したように、[your](switch-environments.md)開発環境にタグプロパティをマッピングしていることを確認してください
 
-   ![ デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
+   ![&#x200B; デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
 
 1. デバッガーの「概要」タブに移動します。
 
@@ -325,7 +325,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 1. デバッガーが&#x200B;*前のレッスン*&#x200B;で説明したように、[your](switch-environments.md)開発環境にタグプロパティをマッピングしていることを確認してください
 
-   ![ デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
+   ![&#x200B; デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
 
 1. 資格情報（`test@test.com`／`test`）を使用して Luma サイトにログインします。
 1. [Luma のホームページ](https://luma.enablementadobe.com/content/luma/us/en.html)に戻ります。
@@ -393,7 +393,7 @@ Target Premium のお客様がチュートリアルプロパティにプロパ�
 
    ![変更を保存](images/target-addATProperty-keepChanges.png)をクリックします。
 
-1. **[!UICONTROL ライブラリに保存してビルド]**をクリックします
+1. **[!UICONTROL ライブラリに保存してビルド]**&#x200B;をクリックします
    ![「ライブラリに保存してビルド」をクリックする](images/target-addATProperty-save.png)
 
 >[!WARNING]
@@ -409,7 +409,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 1. [Luma サイト](https://luma.enablementadobe.com/content/luma/us/en.html)を開きます。
 1. デバッガーが&#x200B;*前のレッスン*&#x200B;で説明したように、[your](switch-environments.md)開発環境にタグプロパティをマッピングしていることを確認してください
 
-   ![ デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
+   ![&#x200B; デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
 
 1. ブラウザーの開発者ツールを開きます。
 1. 「ネットワーク」タブをクリックします。
@@ -438,7 +438,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ベストプラクティスは、小売以外のサイトであっても、すべての注文ファネルで注文確認リクエストを使用することです。 例えば、リードジェネレーションサイトには通常、生成された一意の「リード ID」を持つリードファネルが最後にあります。これらのサイトでは、orderTotal に静的な値（「1」など）を使用して注文要求を実装する必要があります。
 
-ほとんどのレポートでAnalytics for Target （A4T）統合を使用しているお客様は、A4TをサポートしていないAutomated Personalization アクティビティを使用する場合も、注文リクエストを実装できます。 さらに、注文リクエストはRecommendationsの実装における重要な要素であり、購入行動に基づくアルゴリズムを強化します。 A4T サポートに関する最新情報については、[ ドキュメント ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA)を参照してください。
+ほとんどのレポートでAnalytics for Target （A4T）統合を使用しているお客様は、A4TをサポートしていないAutomated Personalization アクティビティを使用する場合も、注文リクエストを実装できます。 さらに、注文リクエストはRecommendationsの実装における重要な要素であり、購入行動に基づくアルゴリズムを強化します。 A4T サポートに関する最新情報については、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA)を参照してください。
 
 注文確認要求は、注文確認ページまたはイベントでのみトリガーされるルールから実行する必要があります。多くの場合、注文確認要求は Adobe Analytics 購入イベントを設定するルールと組み合わせることができます。これは、コア拡張機能の「Custom Code」アクションで、適切なデータ要素を使用して orderId、orderTotal、productPurchasedId パラメーターを設定する適切なデータ要素を使用して設定する必要があります。
 
@@ -542,7 +542,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 1. デバッガーが&#x200B;*前のレッスン*&#x200B;で説明したように、[your](switch-environments.md)開発環境にタグプロパティをマッピングしていることを確認してください
 
-   ![ デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
+   ![&#x200B; デバッガー](images/switchEnvironments-debuggerOnWeRetail.png)に表示されているタグ開発環境
 
 1. サイトを参照し、買い物かごに複数の製品を追加します。
 1. チェックアウトを続行します。
@@ -572,7 +572,7 @@ at.js 2.x 要求で渡されたカスタムパラメーターをデバッガー�
 
 ページの読み込みと注文確認リクエスト以外に、Target リクエストを行う必要がある場合は、まれです。 例えば、パーソナライゼーションに使用したい重要なデータが、タグ埋め込みコードの前にページ上で定義されていない場合があります。ページの下部でハードコードされたり、非同期API リクエストから返されたりする可能性があります。 このデータは、追加のリクエストを使用してTargetに送信できますが、ページが既に表示されるため、このリクエストをコンテンツ配信に使用するのは最適ではありません。 このデータを使用すると、後で使用するために訪問者プロファイルを充実させたり（プロファイルパラメーターを使用）、レコメンデーションカタログに入力したりできます。
 
-このような状況では、コア拡張機能のカスタムコードアクションを使用して、[getOffer （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html)および[trackEvent （） ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) メソッドを使用してリクエストを実行します。 これは、[注文確認リクエスト ](#order-confirmation-request)の演習で行ったことと非常によく似ていますが、異なるリクエスト名を使用するだけであり、特別注文パラメーターは使用しません。 カスタムコードからTarget リクエストを行う前に、**[!UICONTROL ターゲットを読み込み]** アクションを必ず使用してください。
+このような状況では、コア拡張機能のカスタムコードアクションを使用して、[getOffer （） &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer （） &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html)および[trackEvent （） &#x200B;](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) メソッドを使用してリクエストを実行します。 これは、[注文確認リクエスト &#x200B;](#order-confirmation-request)の演習で行ったことと非常によく似ていますが、異なるリクエスト名を使用するだけであり、特別注文パラメーターは使用しません。 カスタムコードからTarget リクエストを行う前に、**[!UICONTROL ターゲットを読み込み]** アクションを必ず使用してください。
 
 ## ライブラリのヘッダーとライブラリのフッター
 

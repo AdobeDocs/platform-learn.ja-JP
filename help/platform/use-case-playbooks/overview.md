@@ -18,7 +18,7 @@ ht-degree: 28%
 
 # ユースケースプレイブックの概要
 
-Real-Time Customer Data Platform と Journey Optimizer のお客様が、ユースケースプレイブックで価値創出までの時間をどう短縮できるかを説明します。ユースケースプレイブックとは、複数の業界やマーケティング目標をカバーする、数十種類のテンプレートカタログです。 プレイブックは、オーディエンス、ジャーニー、スキーマなどの技術的なアセットを生成し、それらをカスタマイズして他のサンドボックスに公開できます。 詳しくは、[ ユースケースプレイブックのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=ja)を参照してください。
+Real-Time Customer Data Platform と Journey Optimizer のお客様が、ユースケースプレイブックで価値創出までの時間をどう短縮できるかを説明します。ユースケースプレイブックとは、複数の業界やマーケティング目標をカバーする、数十種類のテンプレートカタログです。 プレイブックは、オーディエンス、ジャーニー、スキーマなどの技術的なアセットを生成し、それらをカスタマイズして他のサンドボックスに公開できます。 詳しくは、[&#x200B; ユースケースプレイブックのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=ja)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 

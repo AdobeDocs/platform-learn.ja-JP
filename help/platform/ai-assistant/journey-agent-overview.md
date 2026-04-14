@@ -18,6 +18,6 @@ ht-degree: 46%
 
 # Journey Agent の概要
 
-Journey Agentなら、会話型のインターフェイスを利用して、AIを利用して、B2B/B2C ジャーニーを構築、分析、最適化できます。 詳しくは、[Journey Agentのドキュメント ](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)を参照してください。
+Journey Agentなら、会話型のインターフェイスを利用して、AIを利用して、B2B/B2C ジャーニーを構築、分析、最適化できます。 詳しくは、[Journey Agentのドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)を参照してください。
 
 >[!SLIDE](journey-agent-overview)

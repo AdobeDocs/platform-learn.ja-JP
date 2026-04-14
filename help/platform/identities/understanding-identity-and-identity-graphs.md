@@ -16,7 +16,7 @@ ht-degree: 16%
 
 # IDおよびID グラフの概要
 
-Adobe Experience PlatformのID解決の主な能力であるID収集、ID グラフ、APIについて説明します。 統合プロファイルを構築することで、切断されたIDをID サービスがリンクして、一貫した連続性のあるエクスペリエンスを提供する方法を説明します。 詳しくは、[ID サービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)を参照してください。
+Adobe Experience PlatformのID解決の主な能力であるID収集、ID グラフ、APIについて説明します。 統合プロファイルを構築することで、切断されたIDをID サービスがリンクして、一貫した連続性のあるエクスペリエンスを提供する方法を説明します。 詳しくは、[ID サービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 

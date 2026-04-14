@@ -16,7 +16,7 @@ ht-degree: 10%
 
 # Query ServiceとData Distillerの概要
 
-Adobe Experience Platform Query Serviceでは、Data Distiller アドオンを通じて、SQLを使用してデータレイクに保存されている顧客体験データを検索、検証、変換できます。また、データ出力やスケジューリングなどの高度な機能を利用できます。 このビデオでは、様々なプラットフォームベースのアプリケーションでクエリサービスを活用する方法をユーザーが理解するのに役立つコア機能の概要を説明します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)を参照してください。
+Adobe Experience Platform Query Serviceでは、Data Distiller アドオンを通じて、SQLを使用してデータレイクに保存されている顧客体験データを検索、検証、変換できます。また、データ出力やスケジューリングなどの高度な機能を利用できます。 このビデオでは、様々なプラットフォームベースのアプリケーションでクエリサービスを活用する方法をユーザーが理解するのに役立つコア機能の概要を説明します。 詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 

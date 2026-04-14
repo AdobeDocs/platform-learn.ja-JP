@@ -21,8 +21,8 @@ ht-degree: 4%
 
 このレッスンでは、Adobe Developer Consoleとオンライン Webhook開発ツールを使用してWebhookを設定することで、データ取り込みイベントを購読します。 これらのイベントを使用して、以降のレッスンでデータ取り込みジョブのステータスを監視します。
 
-**データエンジニア**は、このチュートリアル以外でデータ取り込みイベントを購読する必要があります。
-**データアーキテクト** _はこのレッスン_&#x200B;をスキップして、[ バッチ取り込みレッスン ](ingest-batch-data.md)に移動できます。
+**データエンジニア**&#x200B;は、このチュートリアル以外でデータ取り込みイベントを購読する必要があります。
+**データアーキテクト** _はこのレッスン_&#x200B;をスキップして、[&#x200B; バッチ取り込みレッスン &#x200B;](ingest-batch-data.md)に移動できます。
 
 ## 権限が必要です
 
@@ -55,21 +55,21 @@ ht-degree: 4%
 1. `Luma Tutorial API Project`を開きます
 1. 「**[!UICONTROL プロジェクトに追加]**」ボタンを選択し、**[!UICONTROL イベント]**&#x200B;を選択します
 
-   ![ イベントを追加](assets/ioevents-addEvents.png)
+   ![&#x200B; イベントを追加](assets/ioevents-addEvents.png)
 1. **[!UICONTROL Experience Platform]**&#x200B;を選択してリストをフィルタリング
 1. **[!UICONTROL プラットフォーム通知]**&#x200B;を選択
 1. 「**[!UICONTROL 次へ]**」ボタンを選択
    ![通知を追加](assets/ioevents-addNotifications.png)
 1. すべてのイベントを選択し
 1. 「**[!UICONTROL 次へ]**」ボタンを選択
-   ![ サブスクリプションを選択](assets/ioevents-addSubscriptions.png)
+   ![&#x200B; サブスクリプションを選択](assets/ioevents-addSubscriptions.png)
 1. 資格情報を設定する次の画面で、**[!UICONTROL 次へ]** ボタンをもう一度選択します
-   ![資格情報画面をスキップ ](assets/ioevents-clickNext.png)
+   ![資格情報画面をスキップ &#x200B;](assets/ioevents-clickNext.png)
 1. **[!UICONTROL イベント登録名]**&#x200B;として、`Platform notifications`と入力します
 1. 下にスクロールして選択し、**[!UICONTROL Webhook]** セクションを開きます
 1. **[!UICONTROL Webhook URL]**&#x200B;として、Webhook.siteの&#x200B;**一意のURL** フィールドから値を貼り付けます
 1. 「**[!UICONTROL 設定済みイベントを保存]**」ボタンを選択します
-   ![ イベントを保存](assets/ioevents-addWebhook.png)
+   ![&#x200B; イベントを保存](assets/ioevents-addWebhook.png)
 1. 設定が保存されるのを待つと、`Platform notifications` イベントがWebhookの詳細でアクティブであり、エラーメッセージがないことを確認できます
    ![設定が保存されました](assets/ioevents-webhookConfigured.png)
 1. 「webhook.site」タブに切り替えると、Developer Console設定の検証に起因するwebhookへの最初のリクエストが表示されます。
@@ -80,7 +80,7 @@ ht-degree: 4%
 ## その他のリソース
 
 * [Webhook.site](https://webhook.site/)
-* [ データ取り込み通知ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
-* [Adobe I/O Eventsの概要ドキュメント ](https://www.adobe.io/apis/experienceplatform/events/docs.html)
+* [&#x200B; データ取り込み通知ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Adobe I/O Eventsの概要ドキュメント &#x200B;](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
-それでは、最後に[ データの取り込みを開始しましょう](ingest-batch-data.md)!
+それでは、最後に[&#x200B; データの取り込みを開始しましょう](ingest-batch-data.md)!

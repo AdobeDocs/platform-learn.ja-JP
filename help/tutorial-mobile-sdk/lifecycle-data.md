@@ -14,7 +14,7 @@ ht-degree: 2%
 
 モバイルアプリでライフサイクルデータを収集する方法を説明します。
 
-Adobe Experience Platform Mobile SDK Lifecycle拡張機能を使用すると、モバイルアプリからライフサイクルデータを収集できます。 Adobe Experience Platform Edge Network拡張機能は、このライフサイクルデータをPlatform Edge Networkに送信し、データストリーム設定に従って他のアプリケーションやサービスに転送します。 [ ライフサイクル拡張機能](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)について詳しくは、製品ドキュメントを参照してください。
+Adobe Experience Platform Mobile SDK Lifecycle拡張機能を使用すると、モバイルアプリからライフサイクルデータを収集できます。 Adobe Experience Platform Edge Network拡張機能は、このライフサイクルデータをPlatform Edge Networkに送信し、データストリーム設定に従って他のアプリケーションやサービスに転送します。 [&#x200B; ライフサイクル拡張機能](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)について詳しくは、製品ドキュメントを参照してください。
 
 
 ## 前提条件
@@ -100,7 +100,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 1. シミュレーターまたはデバイスをAssuranceに接続するには、[設定の手順](assurance.md#connecting-to-a-session) セクションを確認してください。
 1. アプリをバックグラウンドに送信します。 Assurance UIで&#x200B;**[!UICONTROL LifecyclePause]** イベントを確認します。
 1. アプリを前面へ。 Assurance UIで&#x200B;**[!UICONTROL LifecycleResume]** イベントを確認します。
-   ![ ライフサイクルの検証](assets/lifecycle-lifecycle-assurance.png){zoomable="yes"}
+   ![&#x200B; ライフサイクルの検証](assets/lifecycle-lifecycle-assurance.png){zoomable="yes"}
 
 
 ## データをPlatform Edge Networkに転送
@@ -108,38 +108,38 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 前の演習では、前景イベントと背景イベントをAdobe Experience Platform Mobile SDKにディスパッチしました。 これらのイベントをPlatform Edge Networkに転送するには：
 
 1. タグプロパティで「**[!UICONTROL ルール]**」を選択します。
-   ![ ルールを作成](assets/rule-create.png){zoomable="yes"}
+   ![&#x200B; ルールを作成](assets/rule-create.png){zoomable="yes"}
 1. 使用するライブラリとして「**[!UICONTROL 初期ビルド]**」を選択します。
-1. **[!UICONTROL 新しいルールを作成]**を選択します。
+1. **[!UICONTROL 新しいルールを作成]**&#x200B;を選択します。
    ![新しいルールを作成](assets/rules-create-new.png){zoomable="yes"}
 1. **[!UICONTROL ルールを作成]**&#x200B;画面で、`Application Status`名前&#x200B;**[!UICONTROL に]**&#x200B;と入力します。
-1. ![ イベント ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)の下の&#x200B;**[!UICONTROL 追加]** **[!UICONTROL 追加]**を選択します。
-   ![ ルールを作成ダイアログ ](assets/rule-create-name.png){zoomable="yes"}
+1. ![&#x200B; イベント &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)の下の&#x200B;**[!UICONTROL 追加]** **[!UICONTROL 追加]**&#x200B;を選択します。
+   ![&#x200B; ルールを作成ダイアログ &#x200B;](assets/rule-create-name.png){zoomable="yes"}
 1. **[!UICONTROL イベント設定]**&#x200B;手順では、次の操作を行います。
    1. **[!UICONTROL Mobile Core]**&#x200B;を&#x200B;**[!UICONTROL 拡張機能]**&#x200B;として選択します。
    1. **[!UICONTROL 描画領域]**&#x200B;を&#x200B;**[!UICONTROL イベントタイプ]**&#x200B;として選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![ ルールイベント設定](assets/rule-event-configuration.png){zoomable="yes"}
-1. **[!UICONTROL ルールを作成]**&#x200B;画面に戻り、![Mobile Core - Foreground](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)の横にある&#x200B;**[!UICONTROL Add]** **[!UICONTROL Add]**を選択します。
+      ![&#x200B; ルールイベント設定](assets/rule-event-configuration.png){zoomable="yes"}
+1. **[!UICONTROL ルールを作成]**&#x200B;画面に戻り、![Mobile Core - Foreground](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)の横にある&#x200B;**[!UICONTROL Add]** **[!UICONTROL Add]**&#x200B;を選択します。
    ![次のイベント設定](assets/rule-event-configuration-next.png){zoomable="yes"}
 1. **[!UICONTROL イベント設定]**&#x200B;手順では、次の操作を行います。
    1. **[!UICONTROL Mobile Core]**&#x200B;を&#x200B;**[!UICONTROL 拡張機能]**&#x200B;として選択します。
    1. **[!UICONTROL 背景]**&#x200B;を&#x200B;**[!UICONTROL イベントタイプ]**&#x200B;として選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![ ルールイベント設定](assets/rule-event-configuration-background.png){zoomable="yes"}
-1. **[!UICONTROL ルールを作成]**&#x200B;画面に戻り、![ アクション ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)の下の&#x200B;**[!UICONTROL 追加]** **[!UICONTROL 追加]**&#x200B;を選択します。
+      ![&#x200B; ルールイベント設定](assets/rule-event-configuration-background.png){zoomable="yes"}
+1. **[!UICONTROL ルールを作成]**&#x200B;画面に戻り、![&#x200B; アクション &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)の下の&#x200B;**[!UICONTROL 追加]** **[!UICONTROL 追加]**&#x200B;を選択します。
 
-   ![ ルール追加アクション ](assets/rule-action-button.png){zoomable="yes"}
+   ![&#x200B; ルール追加アクション &#x200B;](assets/rule-action-button.png){zoomable="yes"}
 
 1. **[!UICONTROL アクション設定]**&#x200B;手順では、次の操作を行います。
    1. **[!UICONTROL Adobe Experience Edge Network]**&#x200B;を&#x200B;**[!UICONTROL 拡張機能]**&#x200B;として選択します。
    1. 「**[!UICONTROL イベントをEdge Network]**&#x200B;に転送」を「**[!UICONTROL アクションタイプ]**」として選択します。
    1. 「**[!UICONTROL 変更を保持]**」を選択します。
-      ![ ルールアクション設定](assets/rule-action-configuration.png){zoomable="yes"}
+      ![&#x200B; ルールアクション設定](assets/rule-action-configuration.png){zoomable="yes"}
 1. 「**[!UICONTROL ライブラリに保存]**」を選択します。
-   ![ ルール – ライブラリに保存](assets/rule-save-to-library.png){zoomable="yes"}
-1. ライブラリを再構築するには、**[!UICONTROL ビルド]**を選択します。
-   ![ ルール – ビルド ](assets/rule-build.png){zoomable="yes"}
+   ![&#x200B; ルール – ライブラリに保存](assets/rule-save-to-library.png){zoomable="yes"}
+1. ライブラリを再構築するには、**[!UICONTROL ビルド]**&#x200B;を選択します。
+   ![&#x200B; ルール – ビルド &#x200B;](assets/rule-build.png){zoomable="yes"}
 
 プロパティを正常に構築すると、イベントはPlatform Edge Networkに送信され、イベントはデータストリーム設定に従って他のアプリケーションやサービスに転送されます。
 

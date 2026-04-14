@@ -16,7 +16,7 @@ ht-degree: 22%
 
 # データガバナンスの概要
 
-データソースで収集された時点から、Adobe Experience Platform以外の宛先にデータをシンジケーションするタイミングまで、データを完全に制御する方法について説明します。 データガバナンスは、データ運用ワークフローに深く組み込まれた、容易に拡張できるフレームワークです。 この枠組みは、ラベル、ポリシー、履行という3つの重要な側面に基づいて構築されています。 詳しくは、[ データガバナンスに関するドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)を参照してください。
+データソースで収集された時点から、Adobe Experience Platform以外の宛先にデータをシンジケーションするタイミングまで、データを完全に制御する方法について説明します。 データガバナンスは、データ運用ワークフローに深く組み込まれた、容易に拡張できるフレームワークです。 この枠組みは、ラベル、ポリシー、履行という3つの重要な側面に基づいて構築されています。 詳しくは、[&#x200B; データガバナンスに関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 

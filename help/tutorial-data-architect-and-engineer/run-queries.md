@@ -52,7 +52,7 @@ Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 
 1. 使用可能なテーブルのリストが表示されます
 
-   ![ テーブル クエリを表示](assets/queries-showTables.png)
+   ![&#x200B; テーブル クエリを表示](assets/queries-showTables.png)
 
 
 1. 次に、このクエリを試して、`_techmarketingdemos`を独自のテナント名前空間に置き換えます。覚えておくと、スキーマに表示されます。
@@ -63,14 +63,14 @@ Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
    WHERE loyalty.tier ='gold'
    ```
 
-   ![ ロイヤルティデータセットからデータを選択](assets/queries-loyaltySelect.png)
+   ![&#x200B; ロイヤルティデータセットからデータを選択](assets/queries-loyaltySelect.png)
 
 1. エラーが発生した場合、以下の図のように、**[!UICONTROL コンソール]** タブに詳細なメッセージが表示されます
-   ![ クエリでエラーが発生しました](assets/queries-error.png)
+   ![&#x200B; クエリでエラーが発生しました](assets/queries-error.png)
 
 1. 正常なクエリを実行すると、**[!UICONTROL 名前]**&#x200B;が`Luma Gold Level Customers`になります
 1. 「**[!UICONTROL 保存]**」ボタンを選択します
-   ![ クエリを保存しています](assets/queries-loyaltySelect-save.png)
+   ![&#x200B; クエリを保存しています](assets/queries-loyaltySelect-save.png)
 
 
 <!--
@@ -122,7 +122,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## その他のリソース
 
-* [ クエリサービスのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
-* [ クエリサービス API リファレンス ](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)
+* [&#x200B; クエリサービス API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-最後の実践レッスンは、[ セグメントの作成](build-segments.md)です。
+最後の実践レッスンは、[&#x200B; セグメントの作成](build-segments.md)です。

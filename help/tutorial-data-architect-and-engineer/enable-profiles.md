@@ -69,7 +69,7 @@ ht-degree: 2%
    > 1. データの再取り込み
 
 
-   ![ プロファイル切り替え](assets/profile-loyalty-enableSchema.png)
+   ![&#x200B; プロファイル切り替え](assets/profile-loyalty-enableSchema.png)
 
 簡単だろ？ 他のスキーマについて、上記の手順を繰り返します。
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 1. 「**送信**」ボタンを選択します
 1. 200件の回答が必要です
 1. `Luma CRM Schema`項目の応答を検索し、`meta:altId`値をコピーします
-   ![ メタをコピー:altIid](assets/profile-crm-getMetaAltId.png)
+   ![&#x200B; メタをコピー:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### スキーマを有効にする
 
@@ -112,7 +112,7 @@ ht-degree: 2%
 1. 「**送信**」ボタンを選択します
 1. 200件の回答が必要です
 
-   ![ カスタム メタ :altIidをSCHEMA_ID パラメーター](assets/profile-crm-enableProfile.png)として使用して、プロファイルのCRM スキーマを有効にします
+   ![&#x200B; カスタム メタ :altIidをSCHEMA_ID パラメーター](assets/profile-crm-enableProfile.png)として使用して、プロファイルのCRM スキーマを有効にします
 
 ユーザーインターフェイスで、5つのスキーマがすべてプロファイルに対して有効になっていることを確認できます（`Luma CRM Schema`が有効になっていることを確認するには、SHIFT-Reloadが必要な場合があります）。
 ![すべてのスキーマが有効](assets/profile-allSchemasEnabled.png)
@@ -126,7 +126,7 @@ ht-degree: 2%
 1. **[!UICONTROL プロファイル]**&#x200B;切り替え
 1. 確認モーダルで、**[!UICONTROL 有効]** ボタンを押して確認します
 
-   ![ プロファイル切り替え](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; プロファイル切り替え](assets/profile-loyalty-enableDataset.png)
 
 これらの他のデータセットについて、上記の手順を繰り返します。
 
@@ -176,7 +176,7 @@ ht-degree: 2%
 1. 「**送信**」ボタンを選択します
 1. 200件の回答が必要です
 
-   ![ プロファイルのCRM データセットを有効にし、カスタム データセット IDをDATASET_ID パラメーター](assets/profile-crm-enableDataset.png)として使用してください
+   ![&#x200B; プロファイルのCRM データセットを有効にし、カスタム データセット IDをDATASET_ID パラメーター](assets/profile-crm-enableDataset.png)として使用してください
 
 ユーザーインターフェイスにデータセットが有効になっていることを確認することもできます。
 ![確認](assets/profile-crm-confirmEnabled.png)
@@ -187,9 +187,9 @@ ht-degree: 2%
 
 ## その他のリソース
 
-* [ リアルタイム顧客プロファイルのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
-* [ リアルタイム顧客プロファイル API リファレンス ](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [&#x200B; リアルタイム顧客プロファイルのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
+* [&#x200B; リアルタイム顧客プロファイル API リファレンス &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**データエンジニア**&#x200B;は、[ データ取り込みイベントの登録](subscribe-to-data-ingestion-events.md) レッスンを続行する必要があります。
-**データアーキテクト** _は_&#x200B;をスキップして、[ バッチ取り込みレッスン ](ingest-batch-data.md)に移動できます。
+**データエンジニア**&#x200B;は、[&#x200B; データ取り込みイベントの登録](subscribe-to-data-ingestion-events.md) レッスンを続行する必要があります。
+**データアーキテクト** _は_&#x200B;をスキップして、[&#x200B; バッチ取り込みレッスン &#x200B;](ingest-batch-data.md)に移動できます。

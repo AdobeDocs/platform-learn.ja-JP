@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Query Serviceによるデータ使用パターンの把握
 
-このビデオでは、クエリエディターインターフェイス、PSQL クライアント、ビジネスインテリジェンス（BI）ソリューション、およびHTTP APIでクエリを実行するためのヒントとベストプラクティスを紹介します。 詳しくは、[ クエリサービスのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)を参照してください。
+このビデオでは、クエリエディターインターフェイス、PSQL クライアント、ビジネスインテリジェンス（BI）ソリューション、およびHTTP APIでクエリを実行するためのヒントとベストプラクティスを紹介します。 詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
