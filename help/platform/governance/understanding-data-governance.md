@@ -18,7 +18,7 @@ ht-degree: 22%
 
 データソースで収集された時点から、Adobe Experience Platform以外の宛先にデータをシンジケーションするタイミングまで、データを完全に制御する方法について説明します。 データガバナンスは、データ運用ワークフローに深く組み込まれた、容易に拡張できるフレームワークです。 この枠組みは、ラベル、ポリシー、履行という3つの重要な側面に基づいて構築されています。 詳しくは、[&#x200B; データガバナンスに関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34106?captions=jpn&learn=on&enablevpops)
 
 ## デモ
 
@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="データガバナンスのエンドツーエンドのデモ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="データガバナンスのエンドツーエンドのデモ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41322?captions=jpn&format=jpeg&nocache=1740179989077" alt="データガバナンスのエンドツーエンドのデモ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -75,7 +75,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="ラベルを使用したデータの分類" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="ラベルを使用したデータの分類"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422791?captions=jpn&format=jpeg&nocache=1740179989358" alt="ラベルを使用したデータの分類"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -98,7 +98,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="データ使用ポリシーの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="データ使用ポリシーの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37133?captions=jpn&format=jpeg&nocache=1740179989347" alt="データ使用ポリシーの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -159,7 +159,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="IABの透明性と同意フレームワークの統合2.0" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="IABの透明性と同意フレームワークの統合2.0"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326479?captions=jpn&format=jpeg&nocache=1740179989597" alt="IABの透明性と同意フレームワークの統合2.0"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -182,7 +182,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="同意の適用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="同意の適用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412101?captions=jpn&format=jpeg&nocache=1740179989584" alt="同意の適用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -18,7 +18,7 @@ ht-degree: 20%
 
 Adobe Experience Platformのデータ取り込み機能により、リアルタイムの顧客プロファイルを管理するために、データを1つのオープンでスケーラブルなプラットフォームに集約できます。 詳しくは、[&#x200B; データ収集ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346833?captions=jpn&learn=on&enablevpops)
 
 ## データ収集の方法
 
@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="ソースの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="ソースの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34114?captions=jpn&format=jpeg&nocache=1740414616559" alt="ソースの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Adobe Experience Platform Web SDKとEdge Networkの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Adobe Experience Platform Web SDKとEdge Networkの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37263?captions=jpn&format=jpeg&nocache=1740414616573" alt="Adobe Experience Platform Web SDKとEdge Networkの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -97,7 +97,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="batch-ingestion-overview.md" title="バッチデータ収集の概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330995?format=jpeg&nocache=1740414616813" alt="バッチデータ収集の概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345663?captions=jpn&format=jpeg&nocache=1740414616813" alt="バッチデータ収集の概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -120,7 +120,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="ストリーミングデータ取り込みの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="ストリーミングデータ取り込みの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31657?captions=jpn&format=jpeg&nocache=1740414616825" alt="ストリーミングデータ取り込みの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -143,7 +143,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Adobe Experience Platform Web SDKとEdge Networkの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Adobe Experience Platform Web SDKとEdge Networkの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37263?captions=jpn&format=jpeg&nocache=1740414616799" alt="Adobe Experience Platform Web SDKとEdge Networkの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="CRM Sourceコネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="CRM Sourceコネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34110?captions=jpn&format=jpeg&nocache=1740414616941" alt="CRM Sourceコネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="クラウドストレージSourceコネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="クラウドストレージSourceコネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34108?captions=jpn&format=jpeg&nocache=1740414616962" alt="クラウドストレージSourceコネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-source-connector.md" title="Source Connectorsを使用したストリームデータ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740414616930" alt="Source Connectorsを使用したストリームデータ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410105?captions=jpn&format=jpeg&nocache=1740414616930" alt="Source Connectorsを使用したストリームデータ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -250,7 +250,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-http-api.md" title="ストリーミング接続HTTP API エンドポイントを使用したデータの取得" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740414616952" alt="ストリーミング接続HTTP API エンドポイントを使用したデータの取得"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410930?captions=jpn&format=jpeg&nocache=1740414616952" alt="ストリーミング接続HTTP API エンドポイントを使用したデータの取得"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -288,7 +288,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Adobe Analytics ソースコネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Adobe Analytics ソースコネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430254?captions=jpn&format=jpeg&nocache=1740414617197" alt="Adobe Analytics ソースコネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -311,7 +311,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Marketo Engageからのデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Marketo Engageからのデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451861?captions=jpn&format=jpeg&nocache=1740414617186" alt="Marketo Engageからのデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -334,7 +334,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-aam.md" title="Adobe Audience Manager データコネクタを使用したデータの取り込み" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740414617207" alt="Adobe Audience Manager データコネクタを使用したデータの取り込み"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346986/?captions=jpn&format=jpeg&nocache=1740414617207" alt="Adobe Audience Manager データコネクタを使用したデータの取り込み"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

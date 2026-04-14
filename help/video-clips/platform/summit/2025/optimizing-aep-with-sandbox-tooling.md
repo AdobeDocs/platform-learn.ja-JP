@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Experience Platformのサンドボックスツールを使用してワークフローを効率化し、部門間のコラボレーションを促進する方法を説明します。
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460553/?captions=jpn&learn=on&enablevpops=true)

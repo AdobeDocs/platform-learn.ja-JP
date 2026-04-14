@@ -20,4 +20,4 @@ ht-degree: 0%
 AdobeのReal-Time CDP Collaborationを使用して、マーケターがデータクリーンルームを簡素化し、シームレスなオーディエンス発見、アクティベーション、測定を実現する方法をご確認ください。
 
 <!-- 65_OS511_3442426_34_introduction-to-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458279/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459964/?captions=jpn&learn=on&enablevpops=true)

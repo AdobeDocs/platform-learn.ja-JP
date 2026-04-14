@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Adobeの5つの質問からなるフレームワークを利用して、顧客体験のユースケースを定義し、チームの連携を図り、ビジネス成果を促進する方法をご確認ください。
 
 <!-- 85_S651_3442537_47_defining-customer-experience-use-cases -->
->[!VIDEO](https://video.tv.adobe.com/v/3458292/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459774/?captions=jpn&learn=on&enablevpops=true)

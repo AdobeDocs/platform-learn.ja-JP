@@ -20,4 +20,4 @@ ht-degree: 0%
 AdobeのAI アシスタントが、オーディエンス管理のタスクを簡素化し、インサイトを獲得して、トレンドを予測する方法をご紹介します。
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459595/?captions=jpn&learn=on&enablevpops=true)

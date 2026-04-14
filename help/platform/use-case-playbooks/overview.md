@@ -20,7 +20,7 @@ ht-degree: 28%
 
 Real-Time Customer Data Platform と Journey Optimizer のお客様が、ユースケースプレイブックで価値創出までの時間をどう短縮できるかを説明します。ユースケースプレイブックとは、複数の業界やマーケティング目標をカバーする、数十種類のテンプレートカタログです。 プレイブックは、オーディエンス、ジャーニー、スキーマなどの技術的なアセットを生成し、それらをカスタマイズして他のサンドボックスに公開できます。 詳しくは、[&#x200B; ユースケースプレイブックのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441816/?captions=jpn&learn=on&enablevpops)
 
 ## 基本を学ぶ
 
@@ -38,7 +38,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="プレイブックのサンドボックスの設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="プレイブックのサンドボックスの設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449827/?captions=jpn&format=jpeg&nocache=1739379898120" alt="プレイブックのサンドボックスの設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

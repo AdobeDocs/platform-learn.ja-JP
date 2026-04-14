@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDPを活用して、データを統合し、エクスペリエンスをパーソナライズして、エンゲージメントを促進することで、オーディエンス戦略を加速する方法をご確認ください。
 
 <!-- 62_S508_3442517_45_accelerating-your-audience-strategy-with-realtime-cdp -->
->[!VIDEO](https://video.tv.adobe.com/v/3458220/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459606/?captions=jpn&learn=on&enablevpops=true)

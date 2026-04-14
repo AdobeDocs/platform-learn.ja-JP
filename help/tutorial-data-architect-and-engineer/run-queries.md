@@ -25,7 +25,7 @@ Adobe Experience Platform Query Serviceでは、標準のSQLを使用してPlatf
 **データアーキテクト**&#x200B;および&#x200B;**データエンジニア**&#x200B;は、このチュートリアル以外でクエリサービスを使用する必要があります。
 
 この演習を開始する前に、この短いビデオでクエリサービスの詳細をご覧ください。
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35089?captions=jpn&learn=on&enablevpops)
 
 ## 権限が必要です
 

@@ -42,7 +42,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration イントロダクション" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1756504084960" alt="Real-Time CDP Collaboration イントロダクション"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446802/?captions=jpn&format=jpeg&nocache=1756504084960" alt="Real-Time CDP Collaboration イントロダクション"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -65,7 +65,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Adobe Real-Time CDPの代理店の実務担当者の概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1756504084963" alt="Adobe Real-Time CDPの代理店の実務担当者の概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464659/?captions=jpn&format=jpeg&nocache=1756504084963" alt="Adobe Real-Time CDPの代理店の実務担当者の概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -88,7 +88,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - プロセスと人" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1756504084955" alt="Real-Time CDP Collaboration - プロセスと人"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464670/?captions=jpn&format=jpeg&nocache=1756504084955" alt="Real-Time CDP Collaboration - プロセスと人"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Adobe Experience Platform ベースのアプリケーションの製品管理者の追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Adobe Experience Platform ベースのアプリケーションの製品管理者の追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475942?captions=jpn&format=jpeg&nocache=1756504085478" alt="Adobe Experience Platform ベースのアプリケーションの製品管理者の追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -153,7 +153,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Real-Time CDP Collaborationの権限の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1756504085453" alt="Real-Time CDP Collaborationの権限の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452231/?captions=jpn&format=jpeg&nocache=1756504085453" alt="Real-Time CDP Collaborationの権限の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -263,7 +263,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Real-Time CDP Collaborationでのプロジェクトの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1756504085943" alt="Real-Time CDP Collaborationでのプロジェクトの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464035/?captions=jpn&format=jpeg&nocache=1756504085943" alt="Real-Time CDP Collaborationでのプロジェクトの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -332,7 +332,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="Brand to Brand Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1756504085934" alt="Brand to Brand Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470937/?captions=jpn&format=jpeg&nocache=1756504085934" alt="Brand to Brand Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

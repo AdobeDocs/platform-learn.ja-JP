@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDPのオーディエンスポータルが、顧客データの統合、オーディエンスの管理、リアルタイムのアクティベーションにどのように役立つかをご確認ください。
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459738/?captions=jpn&learn=on&enablevpops=true)

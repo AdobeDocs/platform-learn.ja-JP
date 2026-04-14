@@ -20,4 +20,4 @@ ht-degree: 0%
 連合オーディエンス構成によって、外部のデータウェアハウスをReal-Time CDPに接続して、リアルタイムのマーケティングを実現する方法をご確認ください。
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459792/?captions=jpn&learn=on&enablevpops=true)

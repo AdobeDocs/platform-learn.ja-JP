@@ -20,4 +20,4 @@ ht-degree: 0%
 外部データソースをReal-Time CDPに統合することで、リアルタイムマーケティングを可能にする連合オーディエンス構成の仕組みを説明します。
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-your-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458250/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459902/?captions=jpn&learn=on&enablevpops=true)

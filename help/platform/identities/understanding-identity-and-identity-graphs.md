@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Adobe Experience PlatformのID解決の主な能力であるID収集、ID グラフ、APIについて説明します。 統合プロファイルを構築することで、切断されたIDをID サービスがリンクして、一貫した連続性のあるエクスペリエンスを提供する方法を説明します。 詳しくは、[ID サービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422774?captions=jpn&learn=on&enablevpops)
 
 ## IDの設定
 
@@ -33,7 +33,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="ID データのラベル付け、取り込み、検証" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="ID データのラベル付け、取り込み、検証"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31658?captions=jpn&format=jpeg&nocache=1740414775790" alt="ID データのラベル付け、取り込み、検証"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -67,7 +67,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="ID グラフのリンクルール – グラフシミュレーション" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="ID グラフのリンクルール – グラフシミュレーション"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444044/?captions=jpn&format=jpeg&nocache=1740414776009" alt="ID グラフのリンクルール – グラフシミュレーション"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -101,7 +101,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-identity-graphs.md" title="ID グラフの表示" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331030?format=jpeg&nocache=1740414776113" alt="ID グラフの表示"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345656?captions=jpn&format=jpeg&nocache=1740414776113" alt="ID グラフの表示"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

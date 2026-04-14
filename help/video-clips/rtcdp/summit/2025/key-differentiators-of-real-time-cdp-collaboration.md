@@ -20,4 +20,4 @@ ht-degree: 0%
 マーケター向けのUI、相互運用性、プライバシー重視のデザインなど、Adobe Real-Time CDP Collaborationの独自の機能をご確認ください。
 
 <!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460542/?captions=jpn&learn=on&enablevpops=true)

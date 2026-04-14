@@ -20,4 +20,4 @@ ht-degree: 0%
 AdobeとAgent Orchestratorを組み合わせて利用すれば、生成AIを活用して、次世代のイノベーションを推進できます。リアルタイムの詳細にパーソナライズされた顧客体験を実現できます。
 
 <!-- 62_S653_3442539_67_introducing-adobes-agent-orchestrator-for-intelligent-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458205/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460023/?captions=jpn&learn=on&enablevpops=true)

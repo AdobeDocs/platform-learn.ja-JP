@@ -38,9 +38,9 @@ Platformにデータをストリーミングするその他の一般的な方法
 
 演習を開始する前に、次の2つの短いビデオを見て、ストリーミングデータの取り込みとWeb SDKについて詳しく説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31657?captions=jpn&learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37263?captions=jpn&learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -263,7 +263,7 @@ Experience Platform Debuggerは、Chromeで利用できる拡張機能で、web 
 
 デバッガーをまだ使用したことがない場合、およびこれが古いAdobe Experience Cloud デバッガーとは異なる場合は、この5分間の概要動画をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36086?captions=jpn&learn=on&enablevpops)
 
 ### Luma web サイトを開く
 

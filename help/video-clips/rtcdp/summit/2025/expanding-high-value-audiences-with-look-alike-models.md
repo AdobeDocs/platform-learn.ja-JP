@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDPの類似オーディエンスモデルを利用して、類似オーディエンスを特定し、リーチを拡大する方法をご紹介します。
 
 <!-- 82_OS512_3442427_58_expanding-highvalue-audiences-with-lookalike-models -->
->[!VIDEO](https://video.tv.adobe.com/v/3458190/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459923/?captions=jpn&learn=on&enablevpops=true)

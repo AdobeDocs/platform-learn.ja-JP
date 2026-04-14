@@ -30,7 +30,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="オーディエンスポータルとコンポジションの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="オーディエンスポータルとコンポジションの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423368/?captions=jpn&format=jpeg&nocache=1740173577252" alt="オーディエンスポータルとコンポジションの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -53,7 +53,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Adobe Experience Platformへのオーディエンスのアップロード" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Adobe Experience Platformへのオーディエンスのアップロード"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423359/?captions=jpn&format=jpeg&nocache=1740173577237" alt="Adobe Experience Platformへのオーディエンスのアップロード"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +96,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="オーディエンスを作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="オーディエンスを作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31659?captions=jpn&format=jpeg&nocache=1740173578323" alt="オーディエンスを作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -119,7 +119,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/audience-rule-builder-overview.md" title="オーディエンスルールビルダーの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333301/?format=jpeg&nocache=1740173578357" alt="オーディエンスルールビルダーの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413203/?captions=jpn&format=jpeg&nocache=1740173578357" alt="オーディエンスルールビルダーの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -142,7 +142,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-content-based-audiences.md" title="コンテンツベースのオーディエンスを作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333302/?format=jpeg&nocache=1740173578346" alt="コンテンツベースのオーディエンスを作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413208/?captions=jpn&format=jpeg&nocache=1740173578346" alt="コンテンツベースのオーディエンスを作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-conversion-audiences.md" title="コンバージョンオーディエンスの構築" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333303/?format=jpeg&nocache=1740173578309" alt="コンバージョンオーディエンスの構築"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413193/?captions=jpn&format=jpeg&nocache=1740173578309" alt="コンバージョンオーディエンスの構築"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="動的オーディエンスを作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="動的オーディエンスを作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34392?captions=jpn&format=jpeg&nocache=1740173578383" alt="動的オーディエンスを作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -211,7 +211,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-multi-entity-audiences.md" title="マルチエンティティオーディエンスの作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32179?format=jpeg&nocache=1740173578335" alt="マルチエンティティオーディエンスの作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345109?captions=jpn&format=jpeg&nocache=1740173578335" alt="マルチエンティティオーディエンスの作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -234,7 +234,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-sequential-audiences.md" title="順次オーディエンスを作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333305/?format=jpeg&nocache=1740173578395" alt="順次オーディエンスを作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413213/?captions=jpn&format=jpeg&nocache=1740173578395" alt="順次オーディエンスを作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -293,7 +293,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="連合オーディエンス構成の概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="連合オーディエンス構成の概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450879/?captions=jpn&format=jpeg&nocache=1740173579477" alt="連合オーディエンス構成の概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -316,7 +316,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="連合オーディエンス構成の接続と設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="連合オーディエンス構成の接続と設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451557/?captions=jpn&format=jpeg&nocache=1740173579488" alt="連合オーディエンス構成の接続と設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -339,7 +339,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="連合オーディエンス構成の作成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="連合オーディエンス構成の作成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448579/?captions=jpn&format=jpeg&nocache=1740173579467" alt="連合オーディエンス構成の作成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -373,7 +373,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="ストリーミングセグメンテーションのデモ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="ストリーミングセグメンテーションのデモ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40064?captions=jpn&format=jpeg&nocache=1740173579663" alt="ストリーミングセグメンテーションのデモ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -411,7 +411,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="セグメントマッチ設定フロー" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="セグメントマッチ設定フロー"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346707/?captions=jpn&format=jpeg&nocache=1740173579850" alt="セグメントマッチ設定フロー"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -434,7 +434,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="セグメントマッチ接続の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="セグメントマッチ接続の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346353/?captions=jpn&format=jpeg&nocache=1740173579840" alt="セグメントマッチ接続の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -457,7 +457,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="セグメントマッチのデータガバナンス" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="セグメントマッチのデータガバナンス"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346360/?captions=jpn&format=jpeg&nocache=1740173579862" alt="セグメントマッチのデータガバナンス"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -480,7 +480,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="セグメント一致の事前共有インサイト" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="セグメント一致の事前共有インサイト"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346346/?captions=jpn&format=jpeg&nocache=1740173579872" alt="セグメント一致の事前共有インサイト"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -503,7 +503,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="セグメントマッチ受信データ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="セグメントマッチ受信データ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3411142/?captions=jpn&format=jpeg&nocache=1740173579825" alt="セグメントマッチ受信データ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobeのエンドツーエンドのユースケースのアクティベーションプロセスを、アイデアの立案から最適化まで6つのフェーズでご確認ください。
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460243/?captions=jpn&learn=on&enablevpops=true)

@@ -39,7 +39,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="AI アシスタントを利用する" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1770666472991" alt="AI アシスタントを利用する"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475920/?captions=jpn&format=jpeg&nocache=1770666472991" alt="AI アシスタントを利用する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="AI アシスタントの見つけやすさパネルの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1770666473011" alt="AI アシスタントの見つけやすさパネルの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440963/?captions=jpn&format=jpeg&nocache=1770666473011" alt="AI アシスタントの見つけやすさパネルの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="AI アシスタントからの回答を検証する" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1770666473002" alt="AI アシスタントからの回答を検証する"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441739/?captions=jpn&format=jpeg&nocache=1770666473002" alt="AI アシスタントからの回答を検証する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -354,7 +354,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="AI アシスタントで運用上のインサイトを入手" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1770666474551" alt="AI アシスタントで運用上のインサイトを入手"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444033/?captions=jpn&format=jpeg&nocache=1770666474551" alt="AI アシスタントで運用上のインサイトを入手"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -377,7 +377,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI アシスタント – オーディエンスのクリーンアップユースケース" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1770666474555" alt="AI アシスタント – オーディエンスのクリーンアップユースケース"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441988/?captions=jpn&format=jpeg&nocache=1770666474555" alt="AI アシスタント – オーディエンスのクリーンアップユースケース"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -400,7 +400,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="AI アシスタントによる影響分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1770666474559" alt="AI アシスタントによる影響分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441681/?captions=jpn&format=jpeg&nocache=1770666474559" alt="AI アシスタントによる影響分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -437,7 +437,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="AI アシスタントでExperience Platformアプリケーションを学ぶ" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1770666474659" alt="AI アシスタントでExperience Platformアプリケーションを学ぶ"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441025/?captions=jpn&format=jpeg&nocache=1770666474659" alt="AI アシスタントでExperience Platformアプリケーションを学ぶ"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -460,7 +460,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="AI アシスタントを使用してオンボーディング時間を短縮する" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1770666474665" alt="AI アシスタントを使用してオンボーディング時間を短縮する"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475931/?captions=jpn&format=jpeg&nocache=1770666474665" alt="AI アシスタントを使用してオンボーディング時間を短縮する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -497,7 +497,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="製品サポート担当者" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1770666474768" alt="製品サポート担当者"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443184/?captions=jpn&format=jpeg&nocache=1770666474768" alt="製品サポート担当者"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -557,7 +557,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI アシスタントのセキュリティ概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1770666475529" alt="AI アシスタントのセキュリティ概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441081/?captions=jpn&format=jpeg&nocache=1770666475529" alt="AI アシスタントのセキュリティ概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -20,7 +20,7 @@ ht-degree: 24%
 
 ID グラフのリンクルールを利用して、データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防止する方法を解説します。 詳しくは、[ID グラフ リンク ルールのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448273/?captions=jpn&learn=on&enablevpops)
 
 ## 設定
 
@@ -38,7 +38,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="ID グラフのリンクルール – グラフシミュレーション" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="ID グラフのリンクルール – グラフシミュレーション"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444044/?captions=jpn&format=jpeg&nocache=1747355376342" alt="ID グラフのリンクルール – グラフシミュレーション"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="ID グラフのリンクルール - ID設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="ID グラフのリンクルール - ID設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458488/?captions=jpn&format=jpeg&nocache=1747355376336" alt="ID グラフのリンクルール - ID設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

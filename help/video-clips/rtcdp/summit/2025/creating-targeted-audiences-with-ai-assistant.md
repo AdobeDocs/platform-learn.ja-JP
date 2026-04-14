@@ -20,4 +20,4 @@ ht-degree: 0%
 AI アシスタントが、マーケターが予測モデルを構築し、キャンペーンのターゲットを詳細に絞り込んだオーディエンスを作成するのにどのように役立つのかをご覧ください。
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460188/?captions=jpn&learn=on&enablevpops=true)

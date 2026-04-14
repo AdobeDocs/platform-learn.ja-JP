@@ -49,7 +49,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="データの健全性を保つためのデータ準備" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="データの健全性を保つためのデータ準備"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449276/?captions=jpn&format=jpeg&nocache=1740251397387" alt="データの健全性を保つためのデータ準備"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="スケジュールデータセットの削除" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="スケジュールデータセットの削除"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430305?captions=jpn&format=jpeg&nocache=1740251397716" alt="スケジュールデータセットの削除"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="仮名プロファイルとエクスペリエンスイベントの有効期限" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="仮名プロファイルとエクスペリエンスイベントの有効期限"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449845?captions=jpn&format=jpeg&nocache=1740251397705" alt="仮名プロファイルとエクスペリエンスイベントの有効期限"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Privacy Serviceの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Privacy Serviceの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445712?captions=jpn&format=jpeg&nocache=1740251397727" alt="Privacy Serviceの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -220,7 +220,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="「upsert」を使用して特定のプロファイル属性を更新する" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="「upsert」を使用して特定のプロファイル属性を更新する"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443442/?captions=jpn&format=jpeg&nocache=1740251398874" alt="「upsert」を使用して特定のプロファイル属性を更新する"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

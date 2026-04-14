@@ -33,7 +33,7 @@ Adobe Experience Platform APIの使用方法をご確認ください。 最初�
 >詳しい手順については、[開発者の追加とAPI資格情報への権限の付与のチュートリアル &#x200B;](../admin/add-developers.md)を参照してください。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31656/?captions=jpn&learn=on&enablevpops)
 
 <!--
 CARDS
@@ -47,7 +47,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Postmanを使用したExperience Platform API アクセストークンの生成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Postmanを使用したExperience Platform API アクセストークンの生成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34080/?captions=jpn&format=jpeg&nocache=1752259602830" alt="Postmanを使用したExperience Platform API アクセストークンの生成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -70,7 +70,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="PostmanでのExperience Platform APIの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="PostmanでのExperience Platform APIの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34079/?captions=jpn&format=jpeg&nocache=1752259602844" alt="PostmanでのExperience Platform APIの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

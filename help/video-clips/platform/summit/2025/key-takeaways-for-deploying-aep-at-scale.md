@@ -20,4 +20,4 @@ ht-degree: 0%
 ガバナンス、成長計画、アーキテクチャなど、Adobe Experience Platformを導入する上で重要な考慮事項を理解します。
 
 <!-- 62_S601_3442532_72_key-takeaways-for-deploying-aep-at-scale -->
->[!VIDEO](https://video.tv.adobe.com/v/3458314/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460512/?captions=jpn&learn=on&enablevpops=true)

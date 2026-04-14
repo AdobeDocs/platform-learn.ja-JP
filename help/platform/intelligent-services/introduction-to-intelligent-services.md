@@ -19,7 +19,7 @@ ht-degree: 45%
 
 インテリジェントサービス：マーケティングアナリストと実務担当者が、データサイエンスの専門知識がなくても、顧客体験のユースケースでAIとマシンラーニングの力を活用できるようにします 詳しくは、[&#x200B; インテリジェントサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ja)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36582?captions=jpn&learn=on&enablevpops)
 
 ## 顧客 AI
 
@@ -40,7 +40,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="顧客AIの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="顧客AIの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36509?captions=jpn&format=jpeg&nocache=1740250112240" alt="顧客AIの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -63,7 +63,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="Customer AI の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="Customer AI の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36581?captions=jpn&format=jpeg&nocache=1740250112226" alt="Customer AI の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -86,7 +86,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-customer-ai-scores-and-insights.md" title="Customer AI スコアおよびインサイトの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="Customer AI スコアおよびインサイトの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36580?captions=jpn&format=jpeg&nocache=1740250112262" alt="Customer AI スコアおよびインサイトの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="Customer AIのビジネス価値" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="Customer AIのビジネス価値"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328478?captions=jpn&format=jpeg&nocache=1740250112251" alt="Customer AIのビジネス価値"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -149,7 +149,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="アトリビューション AIの概要" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="アトリビューション AIの概要"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36573?captions=jpn&format=jpeg&nocache=1740250113366" alt="アトリビューション AIの概要"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -172,7 +172,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="Attribution AI の設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="Attribution AI の設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36579?captions=jpn&format=jpeg&nocache=1740250113378" alt="Attribution AI の設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -195,7 +195,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-attribution-ai-scores-and-insights.md" title="Attribution AI スコアおよびインサイトの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="Attribution AI スコアおよびインサイトの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345102?captions=jpn&format=jpeg&nocache=1740250113402" alt="Attribution AI スコアおよびインサイトの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -218,7 +218,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="アトリビューション AIのビジネス価値" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="アトリビューション AIのビジネス価値"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328469?captions=jpn&format=jpeg&nocache=1740250113390" alt="アトリビューション AIのビジネス価値"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

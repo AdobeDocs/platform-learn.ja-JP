@@ -20,4 +20,4 @@ ht-degree: 0%
 Tiger Teams内での構造化とコミュニケーションのベストプラクティスを学び、AEP プロジェクトにおけるコラボレーションを改善し、非効率性を減らします。
 
 <!-- 62_S926_3442625_155_how-to-operate-and-communicate-effectively-in-tiger-teams -->
->[!VIDEO](https://video.tv.adobe.com/v/3458270/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460210/?captions=jpn&learn=on&enablevpops=true)

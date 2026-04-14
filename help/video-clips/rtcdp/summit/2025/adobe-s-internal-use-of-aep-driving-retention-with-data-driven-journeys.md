@@ -20,4 +20,4 @@ ht-degree: 0%
 AdobeでAEPを利用して、データ主導のインサイトとパーソナライズされたカスタマージャーニーを活用し、リテンションとエンゲージメントを促進する方法をご確認ください。
 
 <!-- 62_S655_3442541_61_adobes-internal-use-of-aep-driving-retention-with-datadriven-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458264/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459650/?captions=jpn&learn=on&enablevpops=true)

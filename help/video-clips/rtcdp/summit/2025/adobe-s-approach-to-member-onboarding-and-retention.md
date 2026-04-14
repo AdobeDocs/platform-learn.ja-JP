@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobeでデータ主導のインサイトとAJOを利用して、メンバーオンボーディングを強化し、リテンションを促進する方法をご確認ください。
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459639/?captions=jpn&learn=on&enablevpops=true)

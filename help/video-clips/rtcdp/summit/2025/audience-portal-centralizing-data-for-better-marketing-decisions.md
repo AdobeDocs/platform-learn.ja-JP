@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Real-Time CDPのオーディエンスポータルが、高度なオーディエンス管理とリアルタイムのアクティベーションを実現して、どのように顧客データを統合するかをご確認ください。
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459683/?captions=jpn&learn=on&enablevpops=true)

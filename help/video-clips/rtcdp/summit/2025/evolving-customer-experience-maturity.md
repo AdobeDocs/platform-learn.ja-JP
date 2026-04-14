@@ -20,4 +20,4 @@ ht-degree: 0%
 データ、オーディエンス、ジャーニー、測定、コンテンツのパーソナライゼーションを向上させるための、クロール、ウォーク、実行のフレームワークをご確認ください。
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460167/?captions=jpn&learn=on&enablevpops=true)

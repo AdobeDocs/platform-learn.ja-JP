@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Adobe Experience Platform Query Serviceでは、Data Distiller アドオンを通じて、SQLを使用してデータレイクに保存されている顧客体験データを検索、検証、変換できます。また、データ出力やスケジューリングなどの高度な機能を利用できます。 このビデオでは、様々なプラットフォームベースのアプリケーションでクエリサービスを活用する方法をユーザーが理解するのに役立つコア機能の概要を説明します。 詳しくは、[&#x200B; クエリサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35089?captions=jpn&learn=on&enablevpops)
 
 ## 基本的な使用方法
 
@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="クエリサービスでクエリを実行" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="クエリサービスでクエリを実行"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34782?captions=jpn&format=jpeg&nocache=1759180596408" alt="クエリサービスでクエリを実行"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="Query Serviceでのデータの検証" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="Query Serviceでのデータの検証"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414057?captions=jpn&format=jpeg&nocache=1759180596397" alt="Query Serviceでのデータの検証"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Data Distillerによるデータの取得" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Data Distillerによるデータの取得"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414069?captions=jpn&format=jpeg&nocache=1759180596403" alt="Data Distillerによるデータの取得"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -119,7 +119,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="Tableauをクエリサービスに接続" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1759180596876" alt="Tableauをクエリサービスに接続"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414045?captions=jpn&format=jpeg&nocache=1759180596876" alt="Tableauをクエリサービスに接続"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="顧客データを再構築して魅力的なエクスペリエンスを提供" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="顧客データを再構築して魅力的なエクスペリエンスを提供"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454936?captions=jpn&format=jpeg&nocache=1759180596865" alt="顧客データを再構築して魅力的なエクスペリエンスを提供"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

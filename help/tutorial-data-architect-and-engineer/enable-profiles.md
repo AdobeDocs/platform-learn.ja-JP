@@ -33,7 +33,7 @@ ht-degree: 2%
 **データアーキテクト**&#x200B;は、このチュートリアル以外でリアルタイム顧客プロファイルを有効にする必要があります。
 
 この演習を開始する前に、この短いビデオでリアルタイム顧客プロファイルの詳細をご覧ください。
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31660?captions=jpn&learn=on&enablevpops)
 
 ## 権限が必要です
 

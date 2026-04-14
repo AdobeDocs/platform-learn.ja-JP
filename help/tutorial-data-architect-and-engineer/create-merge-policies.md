@@ -32,7 +32,7 @@ Adobe Experience Platformなら、複数の情報源からデータを集め、�
 
 演習を開始する前に、この短いビデオで結合ポリシーの詳細を確認してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345078?captions=jpn&learn=on&enablevpops)
 
 ## 権限が必要です
 

@@ -20,4 +20,4 @@ ht-degree: 0%
 AdobeとReal-Time CDP Collaborationを利用して、オーディエンスのオンボーディング、メディア企業との共同作業、キャンペーンのアクティベーションを実施する方法を、ステップバイステップで学びましょう。
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459946/?captions=jpn&learn=on&enablevpops=true)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Real-Time CDP Collaborationの主な機能である、オーディエンスの発見、安全なアクティベーション、パフォーマンスの測定をご紹介します。
 
 <!-- 72_OS511_3442426_179_discover-activate-and-measure-with-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458275/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460166/?captions=jpn&learn=on&enablevpops=true)

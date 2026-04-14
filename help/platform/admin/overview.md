@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="ユーザーの追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="ユーザーの追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475974?captions=jpn&format=jpeg&nocache=1740173302150" alt="ユーザーの追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="開発者を追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="開発者を追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446399?captions=jpn&format=jpeg&nocache=1740173302176" alt="開発者を追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="管理者の追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="管理者の追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475942?captions=jpn&format=jpeg&nocache=1740173302208" alt="管理者の追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="属性ベースのアクセス制御を設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="属性ベースのアクセス制御を設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451828?captions=jpn&format=jpeg&nocache=1740173302190" alt="属性ベースのアクセス制御を設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/users-and-permissions" title="データ収集へのユーザーの追加" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="データ収集へのユーザーの追加"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34019/?captions=jpn&format=jpeg&nocache=1740173302543" alt="データ収集へのユーザーの追加"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -166,7 +166,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="サンドボックスの使用" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="サンドボックスの使用"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430299/?captions=jpn&format=jpeg&nocache=1740173302789" alt="サンドボックスの使用"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -189,7 +189,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="サンドボックス間での設定のコピー" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="サンドボックス間での設定のコピー"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446084/?captions=jpn&format=jpeg&nocache=1740173302776" alt="サンドボックス間での設定のコピー"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -212,7 +212,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="IMS組織間でのパッケージの共有" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="IMS組織間でのパッケージの共有"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443918/?captions=jpn&format=jpeg&nocache=1740173302764" alt="IMS組織間でのパッケージの共有"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

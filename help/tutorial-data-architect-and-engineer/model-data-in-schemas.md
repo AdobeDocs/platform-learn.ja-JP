@@ -43,7 +43,7 @@ Key terms:
 **データアーキテクト**&#x200B;は、このチュートリアル以外でスキーマを作成する必要がありますが、**データエンジニア**&#x200B;は、データアーキテクトが作成したスキーマと緊密に連携します。
 
 この演習を開始する前に、この短いビデオで、スキーマとエクスペリエンスデータモデル（XDM）について詳しく説明します。
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38507?captions=jpn&learn=on&enablevpops)
 
 >[!TIP]
 >
