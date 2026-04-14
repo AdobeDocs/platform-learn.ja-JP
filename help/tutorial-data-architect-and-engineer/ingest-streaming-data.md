@@ -44,7 +44,7 @@ Platformにデータをストリーミングするその他の一般的な方法
 
 >[!NOTE]
 >
->このチュートリアルでは、Web SDKを使用するweb サイトからのストリーミング取得に焦点を当てていますが、[&#x200B; モバイル SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview)、[HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http)を使用してデータをストリーミングすることもできます。
+>このチュートリアルでは、Web SDKを使用するweb サイトからのストリーミング取得に焦点を当てていますが、[&#x200B; モバイル SDK](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/server-api/overview)、[HTTP API](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/streaming/http)を使用してデータをストリーミングすることもできます。
 
 ## 権限が必要です
 

@@ -26,7 +26,7 @@ ht-degree: 2%
 
 素晴らしいことに、プロファイル用に&#x200B;*すべてのデータ*&#x200B;をアクティブ化する必要はありません。 実際には、アクティベーションのユースケースに必要なデータのみを有効にする必要があります。 マーケティングのユースケースやコールセンターの統合などで使用するデータを有効にし、堅牢な顧客プロファイルにすばやくアクセスする必要があります。 分析用にのみデータをアップロードする場合は、プロファイルに対してデータを有効にしないでください。
 
-リアルタイム顧客プロファイルデータ [の重要な](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) ガードレールがあり、プロファイルで有効にする独自のデータを決定する際に確認する必要があります。
+リアルタイム顧客プロファイルデータ [の重要な](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ja) ガードレールがあり、プロファイルで有効にする独自のデータを決定する際に確認する必要があります。
 
 <!--is this accurate. Are there other considerations to point out? -->
 

@@ -151,6 +151,6 @@ AssuranceでXDM データを含む&#x200B;**[!UICONTROL Application Close （Bac
 >
 >これで、アプリケーションのステート（前景、背景）イベントをAdobe Experience Platform Edge Networkおよびデータストリームで定義したすべてのサービスに送信するようにアプリを設定しました。
 >
-> Adobe Experience Platform Mobile SDKについて学ぶために時間を割いていただきありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、この[Experience League コミュニティ ディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)で共有してください
+> Adobe Experience Platform Mobile SDKについて学ぶために時間を割いていただきありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、この[Experience League コミュニティ ディスカッション投稿](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ja)で共有してください
 
 次：**[イベントデータの追跡](events.md)**

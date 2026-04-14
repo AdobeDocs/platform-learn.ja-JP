@@ -80,7 +80,7 @@ ht-degree: 4%
 ## その他のリソース
 
 * [Webhook.site](https://webhook.site/)
-* [&#x200B; データ取り込み通知ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [&#x200B; データ取り込み通知ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ja)
 * [Adobe I/O Eventsの概要ドキュメント &#x200B;](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 それでは、最後に[&#x200B; データの取り込みを開始しましょう](ingest-batch-data.md)!

@@ -21,9 +21,9 @@ Adobe Real-Time CDP Collaborationなら、サードパーティ Cookieに依存�
 
 以下では、Real-Time CDP Collaborationの設定、使用方法、価値の取得方法を説明したビデオやその他のリソースを紹介します。 このページとサイトに追加のアセットが追加されるので、頻繁に再度チェックしてください。 ハッピーラーニング！
 
-詳しくは、Real-Time CDP Collaboration [&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}を参照してください。
+詳しくは、Real-Time CDP Collaboration [&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/real-time-cdp-collaboration/using/home){target="_blank"}を参照してください。
 
-[![ExL LIVE （2025年4月10日）](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE （2025年4月10日）](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/ja/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## はじめに
 

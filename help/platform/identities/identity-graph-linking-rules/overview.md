@@ -18,7 +18,7 @@ ht-degree: 24%
 
 # ID グラフのリンクルールの概要
 
-ID グラフのリンクルールを利用して、データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防止する方法を解説します。 詳しくは、[ID グラフ リンク ルールのドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)を参照してください。
+ID グラフのリンクルールを利用して、データアーキテクトが正確な顧客プロファイルを維持し、グラフの折りたたみを防止する方法を解説します。 詳しくは、[ID グラフ リンク ルールのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 

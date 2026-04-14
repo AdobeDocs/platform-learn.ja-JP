@@ -40,7 +40,7 @@ Adobe Experience Platform Web SDK を使用して ID を取得する方法につ
 
 ## Experience Cloud ID
 
-[Experience Cloud ID （ECID） &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)は、Adobe Experience PlatformおよびAdobe Experience Cloud アプリケーションで使用される共有ID名前空間です。 ECIDは、顧客IDの基盤を提供し、デジタルプロパティのデフォルト IDです。 ECIDは、常に存在するため、未認証のユーザー行動を追跡するための理想的な識別子です。
+[Experience Cloud ID （ECID） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/ecid)は、Adobe Experience PlatformおよびAdobe Experience Cloud アプリケーションで使用される共有ID名前空間です。 ECIDは、顧客IDの基盤を提供し、デジタルプロパティのデフォルト IDです。 ECIDは、常に存在するため、未認証のユーザー行動を追跡するための理想的な識別子です。
 
 <!-- 
 FYI I commented this out because it was breaking the build - Jack
@@ -50,7 +50,7 @@ FYI I commented this out because it was breaking the build - Jack
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Platform Web SDK[を使用して](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)ECIDを追跡する方法について説明します。
+Platform Web SDK[を使用して](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/identity/overview)ECIDを追跡する方法について説明します。
 
 ECIDは、ファーストパーティ CookieとPlatform Edge Networkを組み合わせて設定します。 デフォルトでは、ファーストパーティ ID CookieはWeb SDKによってクライアントサイドに設定されます。 Cookieの有効期間に対するブラウザーの制限を考慮するために、代わりに独自のファーストパーティ ID Cookieをサーバーサイドで設定することを選択できます。 これらのID Cookieは、ファーストパーティデバイス ID （FPID）と呼ばれます。
 
@@ -64,7 +64,7 @@ FPIDは、Web SDKが設定したファーストパーティ Cookieではなく�
 
 FPID Cookieが設定されると、その値を取得して、イベントデータが収集されるたびにAdobeに送信できます。 収集されたFPIDは、Platform Edge NetworkでECIDを生成するためのシードとして使用されます。これは、Adobe Experience Cloud アプリケーションのデフォルトのIDであり続けます。
 
-このチュートリアルではFPIDは使用されませんが、独自のWeb SDKの実装ではFPIDを使用することをお勧めします。 [&#x200B; ファーストパーティデバイス IDの詳細については、Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)を参照してください。
+このチュートリアルではFPIDは使用されませんが、独自のWeb SDKの実装ではFPIDを使用することをお勧めします。 [&#x200B; ファーストパーティデバイス IDの詳細については、Platform Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/identity/first-party-device-ids)を参照してください。
 
 >[!CAUTION]
 >
@@ -74,7 +74,7 @@ FPID Cookieが設定されると、その値を取得して、イベントデー
 
 前述のように、Platform Web SDKを使用する場合、デジタルプロパティへのすべての訪問者には、AdobeによってECIDが割り当てられます。 ECIDは、未認証のデジタル行動を追跡するためのデフォルトのIDです。
 
-また、認証されたユーザーIDを送信して、Platformが[ID グラフ &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)を作成し、Targetが[&#x200B; サードパーティ ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)を設定できるようにすることもできます。 認証IDの設定は、[!UICONTROL ID マップ &#x200B;] データ要素タイプを使用して行われます。
+また、認証されたユーザーIDを送信して、Platformが[ID グラフ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)を作成し、Targetが[&#x200B; サードパーティ ID](https://experienceleague.adobe.com/ja/docs/target/using/audiences/visitor-profiles/3rd-party-id)を設定できるようにすることもできます。 認証IDの設定は、[!UICONTROL ID マップ &#x200B;] データ要素タイプを使用して行われます。
 
 [!UICONTROL ID マップ &#x200B;] データ要素を作成するには：
 
@@ -128,4 +128,4 @@ FPID Cookieが設定されると、その値を取得して、イベントデー
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDKについて学ぶために時間を割いていただきありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、この[Experience League コミュニティ ディスカッション投稿](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)で共有してください
+>Adobe Experience Platform Web SDKについて学ぶために時間を割いていただきありがとうございます。 ご質問がある場合、一般的なフィードバックを共有したい場合、または今後のコンテンツに関する提案がある場合は、この[Experience League コミュニティ ディスカッション投稿](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=ja)で共有してください
