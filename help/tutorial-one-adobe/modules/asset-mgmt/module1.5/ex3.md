@@ -236,7 +236,7 @@ AEM Assets CS環境でCommerce統合がサポートされるようになりま�
 
 ## 1.5.3.4製品Assetsのアップロードと製品へのリンク
 
-[製品画像をこちらからダウンロード ](./images/Product_Images.zip)。 ダウンロードしたら、ファイルをデスクトップに書き出します。
+[製品画像をこちらからダウンロード &#x200B;](./images/Product_Images.zip)。 ダウンロードしたら、ファイルをデスクトップに書き出します。
 
 ![ACCS+AEM Assets](./images/accsaemassets35.png)
 
