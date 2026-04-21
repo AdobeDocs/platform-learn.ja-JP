@@ -1,85 +1,89 @@
 ---
-title: ACCS をAEM Assets CS に接続する
-description: ACCS をAEM Assets CS に接続する
+title: ACCSをAEM Assets CSに接続
+description: ACCSをAEM Assets CSに接続
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
 
-# 1.5.3 ACCS をAEM Assets CS に接続する
+# 1.5.3 ACCSをAEM Assets CSに接続する
 
 >[!IMPORTANT]
 >
->この演習を完了するには、EDS 環境を使用して動作するAEM SitesとAssets CS にアクセスできる必要があります。
+>この演習を完了するには、動作するAEM SitesおよびAssets CS with EDS環境にアクセスする必要があります。
 >
->そのような環境がまだない場合は、[Adobe Experience Manager、Cloud Service、Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} の演習に進んでください。 指示に従うと、そのような環境にアクセスできます。
+>まだ環境がない場合は、[Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}の演習に進みます。 そこに記載されている手順に従うと、そのような環境にアクセスできるようになります。
 
 >[!IMPORTANT]
 >
->以前、AEM CS プログラムをAEM SitesとAssets CS 環境で設定したことがある場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
+>AEM SitesおよびAssets CS環境でAEM CS プログラムを既に設定している場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には10～15分かかることを考えると、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
 
-前の演習を完了すると、ACCS から web サイトに製品が返されるのがわかりますが、まだ画像がありません。 この演習の最後では、画像が返されることも確認できます。
+前の演習を完了すると、ACCSからweb サイトに返送される製品が表示されましたが、まだ画像がありません。 この演習の最後に、画像も返されます。
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
-## 1.5.3.1 パイプライン設定を更新
+## 1.5.3.1 パイプライン設定の更新
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 選択する組織は `--aepImsOrgName--` です。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}に移動します。 選択する組織は`--aepImsOrgName--`です。
 
-クリックすると、Cloud Manager プログラムが開きます。このプログラムは `--aepUserLdap-- - CitiSignal AEM+ACCS` と呼ばれます。
+クリックしてCloud Manager プログラムを開きます。次のいずれかの名前を付ける必要があります。
+
+- `--aepUserLdap-- - CitiSignal AEM+ACCS`
+- 対面テクニカルラボセッションの場合：**Tech Insiders - AEM + ACCS XX** （XXを割り当てられた番号に置き換える）
+- ガイド付きオンデマンドセッションの場合：**Tech Insiders On Demand - AEM + ACCS XX** （XXを割り当てられた番号に置き換える）
 
 ![ACCS+AEM Assets](./images/accsaemassets1.png)
 
-少しスクロールして、「**パイプライン**」タブの **リポジトリ情報にアクセス** をクリックします。
+少し下にスクロールして、「**パイプライン**」タブの「**リポジトリ情報にアクセス**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets2.png)
 
-この画像が表示されます。 「**パスワードの生成**」をクリックします。
+そうすると、これが表示されます。 「**パスワードを生成**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets3.png)
 
-もう一度 **パスワードを生成** をクリックします。
+「**パスワードを生成**」をもう一度クリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets4.png)
 
-すると、パスワードが使用可能になります。 次に、「**Git コマンドライン** フィールドの横にある「**コピー** アイコンをクリックします。
+次に、パスワードを利用できるようにします。 次に、**Git コマンドライン** フィールドの横にある&#x200B;**copy** アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets5.png)
 
-コンピューター上の任意の場所に新しいディレクトリを作成し、**AEM パイプライン GitHub** という名前を付けます。
+コンピューター上の任意の場所に新しいディレクトリを作成し、**AEM Pipeline GitHub**&#x200B;という名前を付けます。
 
 ![ACCS+AEM Assets](./images/accsaemassets6.png)
 
-フォルダーを右クリックして、「**フォルダーに新しいターミナル**」を選択します。
+フォルダーを右クリックし、**フォルダーの新しいターミナル**&#x200B;を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets7.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets8.png)
 
-以前にコピーした **Git コマンドライン** コマンドをターミナルウィンドウに貼り付けます。
+前にコピーした&#x200B;**Git コマンドライン** コマンドをターミナルウィンドウに貼り付けます。
 
 ![ACCS+AEM Assets](./images/accsaemassets9.png)
 
-ユーザー名を入力してください。 Cloud Managerのプログラムパイプラインからユーザー名をコピーし **リポジトリ情報にアクセス**、**Enter** を押します。
+ユーザー名を入力する必要があります。 Cloud Managerのプログラムパイプライン **リポジトリ情報**&#x200B;にアクセスし、**enter**&#x200B;をクリックして、ユーザー名をコピーします。
 
 ![ACCS+AEM Assets](./images/accsaemassets10.png)
 
-次に、パスワードを入力する必要があります。 Cloud Manager プログラムパイプラインからパスワードをコピーし **リポジトリ情報にアクセス**、**Enter** を押します。
+次に、パスワードを入力する必要があります。 Cloud Managerのプログラムパイプライン **リポジトリ情報**&#x200B;にアクセスし、**enter**&#x200B;をクリックして、パスワードをコピーします。
 
 ![ACCS+AEM Assets](./images/accsaemassets11.png)
 
-これには数分かかることがあります。 完了すると、プログラムのパイプラインにリンクされた Git リポジトリーのローカルコピーが作成されます。
+これには少し時間がかかることがあります。 完了すると、プログラムのパイプラインにリンクされたGit リポジトリのローカルコピーが作成されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets12.png)
 
-**AEM パイプライン GitHub** ディレクトリに新しいディレクトリが表示されます。 そのディレクトリを開きなさい。
+新しいディレクトリが&#x200B;**AEM パイプライン GitHub** ディレクトリに表示されます。 そのディレクトリを開きます。
 
 ![ACCS+AEM Assets](./images/accsaemassets13.png)
 
@@ -91,131 +95,128 @@ ht-degree: 1%
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce) に移動します。 「**&lt;> コード**」をクリックし、「**ZIP をダウンロード**」を選択します。 ファイルをダウンロードして、デスクトップにドロップします。
+[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce)に移動します。 「**&lt;> Code**」をクリックし、「**ZIP**&#x200B;をダウンロード」を選択します。 ファイルをダウンロードし、デスクトップにドロップします。
 
 ![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
-次に、ファイル **assets-commerce-main.zip** をデスクトップにコピーし、解凍します。 フォルダー **assets-commerce-main** を開きます。
+次に、ファイル **assets-commerce-main.zip**&#x200B;をデスクトップにコピーし、解凍します。 フォルダー&#x200B;**assets-commerce-main**&#x200B;を開きます。
 
 ![ACCS+AEM Assets](./images/accsaemassets16.png)
 
-ディレクトリ **assets-commerce-main** からプログラムのパイプラインリポジトリーディレクトリの空のディレクトリにすべてのファイルをコピーします。
+ディレクトリ **assets-commerce-main**&#x200B;のすべてのファイルを、プログラムのパイプラインリポジトリディレクトリの空のディレクトリにコピーします。
 
 ![ACCS+AEM Assets](./images/accsaemassets17.png)
 
-次に、**Microsoft Visual Studio Code を開き**&#x200B;**Microsoft Visual Studio Code&rbrace; でプログラムのパイプラインリポジトリを含むフォルダーを開き** す。
+次に、**Microsoft Visual Studio Code**&#x200B;を開き、**Microsoft Visual Studio Code**&#x200B;でプログラムのパイプラインリポジトリを含むフォルダーを開きます。
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
-左側のメニューで **検索** に移動し、`<my-app>` を検索します。 `<my-app>` のすべての箇所を `--aepUserLdap--citisignalaemaccs` で置き換える必要があります。
+左側のメニューの&#x200B;**検索**&#x200B;に移動し、`<my-app>`を検索します。 `<my-app>`のすべてのオカレンスを`techinsiderscitisignalaemaccs`で置き換える必要があります。
 
-**すべてを置換** アイコンをクリックします。
+「**すべて置換**」アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets19.png)
 
-**置換** をクリックします。
+「**置換**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets20.png)
 
-これで、プログラムのパイプラインリポジトリにリンクされている Git リポジトリに、新しいファイルをアップロードして戻す準備が整いました。 それには、フォルダー **AEM Pipeline GitHub&rbrace; を開き** 新しいファイルを含むフォルダーを右クリックします。 **フォルダーに新しいターミナル** を選択します。
+これで、新しいファイルを、プログラムのパイプラインリポジトリにリンクされているGit リポジトリにアップロードする準備が整いました。 これを行うには、**AEM Pipeline GitHub** フォルダーを開き、新しいファイルが含まれているフォルダーを右クリックします。 フォルダー&#x200B;**の**&#x200B;新しいターミナルを選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
-この画像が表示されます。 コマンド `git add .` を貼り付けて、**enter** キーを押します。
+そうすると、これが表示されます。 次のコマンドを貼り付け、**enter**&#x200B;を押します。
+
+```
+git add .
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets22.png)
 
-この画像が表示されます。 コマンド `git commit -m "add assets integration"` を貼り付けて、**enter** キーを押します。
+そうすると、これが表示されます。 次のコマンドを貼り付け、**enter**&#x200B;を押します。
+
+```
+git commit -m "add assets integration"
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets23.png)
 
-この画像が表示されます。 コマンド `git push origin main` を貼り付けて、**enter** キーを押します。
+そうすると、これが表示されます。 次のコマンドを貼り付け、**enter**&#x200B;を押します。
+
+```
+git push origin main
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets24.png)
 
-この画像が表示されます。 これで、変更がプログラムのパイプライン Git リポジトリにデプロイされました。
+そうすると、これが表示されます。 これで、変更がプログラムのパイプライン Git リポジトリにデプロイされました。
 
 ![ACCS+AEM Assets](./images/accsaemassets25.png)
 
-Cloud Managerに戻り、「**閉じる** をクリックします。
+Cloud Managerに戻り、**閉じる**&#x200B;をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets26.png)
 
-パイプラインの Git リポジトリーに変更を加えた後、**開発環境にデプロイ** パイプラインを再度実行する必要があります。 3 つのドット **...** をクリックし、「**実行**」を選択します。
+パイプラインのGit リポジトリに変更を加えた後、**Deploy to Dev** パイプラインを再度実行する必要があります。 3つのドット **...**&#x200B;をクリックし、**実行**&#x200B;を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets27.png)
 
-**実行** をクリックします。 パイプラインのデプロイメントの実行には 10～15 分かかる場合があります。 続行するには、パイプラインのデプロイメントが正常に完了するまで待つ必要があります。
+「**実行**」をクリックします。 パイプラインのデプロイメントを実行するには、10～15分かかる場合があります。 パイプラインのデプロイメントが正常に完了するまで待ってから、続行する必要があります。
 
 ![ACCS+AEM Assets](./images/accsaemassets28.png)
 
-## 1.5.3.2 ACCS でのAEM Assets統合の有効化
+## 1.5.3.2 ACCSでのAEM Assets統合の有効化
 
-ACCS インスタンスに戻ります。 左側のメニューで、**ストア** に移動し、「**設定**」を選択します。
+ACCS インスタンスに戻ります。 左側のメニューで、**ストア**&#x200B;に移動し、**設定**&#x200B;を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets49.png)
 
-メニューを下にスクロールして **ADOBE サービスを表示し**&#x200B;**AEM Assets Integration** を開きます。 この画像が表示されます。
+メニューを下にスクロールして&#x200B;**ADOBE サービス**&#x200B;し、**AEM Assets統合**&#x200B;を開きます。 そうすると、これが表示されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
-次の変数を入力します。
+**AEM Environment**&#x200B;のドロップダウンリストから、お使いの環境を選択します。
 
-- **AEM Assets プログラム ID**: プログラム ID は、AEM CS オーサーの URL から取得できます。 この例では、プログラム ID は `166717` です。
+次に、**ビジュアライゼーションオーナー**&#x200B;を`AEM Assets`に設定します（必要に応じて&#x200B;**システム値**&#x200B;のチェックボックスを無効にします）。
 
-![ACCS+AEM Assets](./images/accsaemassets50a.png)
+次に、**同期を有効にする**&#x200B;を`Yes`に設定します（必要に応じて、**システム値を使用** チェックボックスを無効にします）。
 
-- **AEM Assets環境 ID**：環境 ID は、AEM CS オーサーの URL から取得できます。 この例では、環境 ID は `1786231` です。
+これらの設定が次のように設定されていることを確認します。
 
-![ACCS+AEM Assets](./images/accsaemassets50b.png)
-
-- **アセットセレクター IMS クライアント ID**:`1` に設定
-- **同期有効**: `Yes` に設定
-- **ビジュアライゼーション所有者**:`AEM Assets` に設定します
 - **アセット一致ルール**: `Match by product SKU`
-- **製品 SKU 属性名で一致**: `commerce:skus`
+- **製品SKU属性名**&#x200B;で一致：`commerce:skus`
 
 「**設定を保存**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets51.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets52.png)
 
-## config.json の 1.5.3.3 更新
+## 1.5.3.3 config.jsonの更新
 
-AEM Sites CS/EDS 環境の設定時に作成した GitHub リポジトリに移動します。 このリポジトリは、演習 [1.1.2 AEM CS 環境の設定で作成し &#x200B;](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}**citisignal-aem-accs** という名前にする必要があります。
+AEM Sites CS/EDS環境の設定時に作成されたGitHub リポジトリに移動します。
 
-ルートディレクトリで、下にスクロールしてクリックし、**config.json** ファイルを開きます。 **編集** アイコンをクリックして、ファイルを変更します。
+ルートディレクトリで、下にスクロールしてをクリックし、ファイル **config.json**&#x200B;を開きます。
 
-![ACCS+AEM Assets](./images/accsaemassets101.png)
-
-5 行目の `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XXX/graphql",` の下に次のコードスニペットを追加します。
+**config.json** ファイル （この画像の17行目）に次の行が表示されます。この行が&#x200B;**true**&#x200B;に設定されていることを確認してください。
 
 ```json
  "commerce-assets-enabled": "true",
 ```
 
-「**変更をコミット…**」をクリックします。
+![ACCS+AEM Assets](./images/accsaemassets101.png)
 
-![ACCS+AEM Assets](./images/accsaemassets102.png)
+**commerce-assets-enabled**&#x200B;の値が&#x200B;**false**&#x200B;に設定されている場合は、ファイルを更新し、値を&#x200B;**true**&#x200B;に設定します。 次に、変更をコミットします。
 
-「**変更をコミット**」をクリックします。
+## 1.5.3.4 AEM Assets CSでのCommerce フィールドの検証
 
-![ACCS+AEM Assets](./images/accsaemassets103.png)
-
-変更は保存されました。間もなく公開されます。 変更がストアフロントに表示されるまでに数分かかる場合があります。
-
-![ACCS+AEM Assets](./images/accsaemassets104.png)
-
-## AEM Assets CS1.5.3.4Commerce フィールドを検証するには
-
-AEM CS オーサー環境にログインし、**Assets** に移動します。
+AEM CS オーサー環境にログインし、**Assets**&#x200B;に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets30.png)
 
-**ファイル** に移動します。
+**ファイル**&#x200B;に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets31.png)
 
@@ -223,27 +224,27 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets32.png)
 
-任意のアセットの上にマウスポインターを置いて、「**info**」アイコンをクリックします。
+アセットにカーソルを合わせて、**info** アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets33.png)
 
-2 つの新しいメタデータ属性を含む **0&rbrace;Commerce&rbrace; タブが表示されます。**
+2つの新しいメタデータ属性を含む&#x200B;**Commerce** タブが表示されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets34.png)
 
-お使いのAEM Assets CS 環境で、Commerce統合がサポートされるようになりました。 これで、製品画像のアップロードを開始できます。
+AEM Assets CS環境でCommerce統合がサポートされるようになりました。 製品画像のアップロードを開始できるようになりました。
 
-## 1.5.3.4 製品のAssetsをアップロードして製品にリンク
+## 1.5.3.4製品Assetsのアップロードと製品へのリンク
 
-[&#x200B; 製品画像はこちらからダウンロードできます &#x200B;](./images/Product_Images.zip)。 ダウンロードが完了したら、ファイルをデスクトップに書き出します。
+[製品画像をこちらからダウンロード ](./images/Product_Images.zip)。 ダウンロードしたら、ファイルをデスクトップに書き出します。
 
 ![ACCS+AEM Assets](./images/accsaemassets35.png)
 
-**作成** をクリックし、「**フォルダー**」を選択します。
+**作成**&#x200B;をクリックし、**フォルダー**&#x200B;を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets36.png)
 
-「**タイトル**」フィールドと「**名前**」フィールドに値 **Product_Images** を入力します。 「**作成**」をクリックします。
+フィールド **タイトル**&#x200B;および&#x200B;**名前**&#x200B;に値&#x200B;**Product_Images**&#x200B;を入力します。 「**作成**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets37.png)
 
@@ -251,31 +252,31 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets38.png)
 
-**作成** をクリックし、**ファイル** を選択します。
+**作成**&#x200B;をクリックし、**ファイル**&#x200B;を選択します。
 
 ![ACCS+AEM Assets](./images/accsaemassets39.png)
 
-デスクトップ上の **Product_Images** フォルダーに移動し、すべてのファイルを選択して **開く** をクリックします。
+デスクトップ上の&#x200B;**Product_Images** フォルダーに移動し、すべてのファイルを選択して、**開く**&#x200B;をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets40.png)
 
-**アップロード** をクリックします。
+「**アップロード**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets41.png)
 
-その後、画像はフォルダーで使用できるようになります。 商品 **iPhone-Air-Light-Gold.png** にポインタを合わせて、「**プロパティ** アイコンをクリックします。
+その後、画像はフォルダーで利用できるようになります。 商品&#x200B;**iPhone-Air-Light-Gold.png**&#x200B;にカーソルを合わせ、**プロパティ** アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets42.png)
 
-下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
+下にスクロールして、フィールド **Review Status**&#x200B;を&#x200B;**Approved**&#x200B;に設定します。 AEM Assets CS - ACCS統合は、承認済み画像に対してのみ機能します。
 
 ![ACCS+AEM Assets](./images/accsaemassets44.png)
 
-上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+上にスクロールして、**Commerce** タブに移動し、**製品skus**&#x200B;の下の&#x200B;**Add**&#x200B;をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets45.png)
 
-この製品に次の SKU を追加します：
+この製品に次のSKUを追加します。
 
 | キー | 値 | 用途 |
 |:-------------:| :---------------:| :---------------:|
@@ -284,23 +285,23 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 | `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Light-Gold-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-これで完了です。 「**保存して閉じる**」をクリックします。
+では、これを使ってください。 「**保存して閉じる**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets46.png)
 
-商品 **iPhone-Air-Space-Black.png にポインタを合わせ** 「プロパティ **アイコンをクリック** ます。
+商品&#x200B;**iPhone-Air-Space-Black.png**&#x200B;にカーソルを合わせ、**プロパティ** アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets47.png)
 
-下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
+下にスクロールして、フィールド **Review Status**&#x200B;を&#x200B;**Approved**&#x200B;に設定します。 AEM Assets CS - ACCS統合は、承認済み画像に対してのみ機能します。
 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
-上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+上にスクロールして、**Commerce** タブに移動し、**製品skus**&#x200B;の下の&#x200B;**Add**&#x200B;をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets201.png)
 
-この製品に次の SKU を追加します：
+この製品に次のSKUを追加します。
 
 | キー | 値 | 用途 |
 |:-------------:| :---------------:| :---------------:|
@@ -310,23 +311,23 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 | `iPhone-Air-Space-Black-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-これで完了です。 「**保存して閉じる**」をクリックします。
+では、これを使ってください。 「**保存して閉じる**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets202.png)
 
-商品 **iPhone-Air-Sky-Blue.png にポインタを合わせ** 「プロパティ **アイコンをクリック** ます。
+商品&#x200B;**iPhone-Air-Sky-Blue.png**&#x200B;にカーソルを合わせ、**プロパティ** アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets203.png)
 
-下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
+下にスクロールして、フィールド **Review Status**&#x200B;を&#x200B;**Approved**&#x200B;に設定します。 AEM Assets CS - ACCS統合は、承認済み画像に対してのみ機能します。
 
 ![ACCS+AEM Assets](./images/accsaemassets204.png)
 
-上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+上にスクロールして、**Commerce** タブに移動し、**製品skus**&#x200B;の下の&#x200B;**Add**&#x200B;をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets205.png)
 
-この製品に次の SKU を追加します：
+この製品に次のSKUを追加します。
 
 | キー | 値 | 用途 |
 |:-------------:| :---------------:| :---------------:|
@@ -335,23 +336,23 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 | `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Sky-Blue-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-これで完了です。 「**保存して閉じる**」をクリックします。
+では、これを使ってください。 「**保存して閉じる**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets206.png)
 
-商品 **iPhone-Air-Cloud-White.png にポインタを合わせ** 「プロパティ **アイコンをクリック** ます。
+商品&#x200B;**iPhone-Air-Cloud-White.png**&#x200B;にカーソルを合わせ、**プロパティ** アイコンをクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets207.png)
 
-下にスクロールして、フィールド **レビューステータス** を **承認済み** に設定します。 AEM Assets CS - ACCS 統合は、承認済み画像に対してのみ機能します。
+下にスクロールして、フィールド **Review Status**&#x200B;を&#x200B;**Approved**&#x200B;に設定します。 AEM Assets CS - ACCS統合は、承認済み画像に対してのみ機能します。
 
 ![ACCS+AEM Assets](./images/accsaemassets208.png)
 
-上にスクロールして、「**Commerce**」タブに移動し、「**製品 SKU** の下の **追加** をクリックします。
+上にスクロールして、**Commerce** タブに移動し、**製品skus**&#x200B;の下の&#x200B;**Add**&#x200B;をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets209.png)
 
-この製品に次の SKU を追加します：
+この製品に次のSKUを追加します。
 
 | キー | 値 | 用途 |
 |:-------------:| :---------------:| :---------------:|
@@ -360,45 +361,54 @@ AEM CS オーサー環境にログインし、**Assets** に移動します。
 | `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Cloud-White-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-これで完了です。 「**保存して閉じる**」をクリックします。
+では、これを使ってください。 「**保存して閉じる**」をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets210.png)
 
-すべての **iPhone Air** の画像に、アセットが承認されたことを示す **緑のサムズアップ** が表示されるようになりました。
+**iPhone Air**&#x200B;の画像ごとに&#x200B;**緑の親指が上がり**&#x200B;になり、アセットが承認されたことを示します。
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
 
-## AEM Sites CS/EDS ストアフロントでの製品イメージの 1.5.3.5 検証
+次の表を使用して、残りの製品に対してこれらの手順を繰り返す必要があります。 各イメージを承認してから、を設定することを忘れないでください。 **Commerce** タブのSKU設定の下にあります。
+
+| 製品名 | キー | 値 | 用途 |
+|:-------------:|:-------------:| :---------------:| :---------------:|
+| Apple Watch Ultra 3-Black | `Apple-Watch-Ultra-3-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple Watch Ultra 3-Natural | `Apple-Watch-Ultra-3-Natural` | `1` | `thumbnail, image, swatch_image, small_image` |
+| CitiSignal Fiber Max | `CitiSignal-Fiber-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple One | `Apple-One` | `1` | `thumbnail, image, swatch_image, small_image` |
+| YouTube Premium | `YouTube-Premium` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Disney Plus | `Disney` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Netflix + HBO Max | `Netflix-HBO-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+画像はすべて承認する必要があります。
+
+![ACCS+AEM Assets](./images/accsaemassets251.png)
+
+## 1.5.3.5 AEM Sites CS/EDS Storefrontでの商品画像の検証
 
 >[!NOTE]
 >
->上記の変更が正常にデプロイされるまでに、最大 15 分かかる場合があります。 画像がまだ表示されていない場合は、15 分待ってから再試行してください。
+>上記の変更が正常にデプロイされるまでに最大15分かかる場合があります。 画像がまだ表示されていない場合は、15分待ってから、もう一度試してください。
 
-統合が機能していることを確認するには、CitiSignal の Web サイトを開く必要があります。
+統合が機能していることを確認するには、CitiSignal web サイトを開く必要があります。
 
-Web サイトにアクセスするには、XXX を GitHub ユーザーアカウント（この例では `main--citisignal-aem-accs--XXX.aem.page`）に置き換えた後、`main--citisignal-aem-accs--XXX.aem.live` や `woutervangeluwe` に移動します。
-
-この例では、完全な URL は次のようになります。
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` や `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
-
-この画像が表示されます。 **電話** に移動します。
+そうすると、これが表示されます。 **電話**&#x200B;に移動します。
 
 ![ACCS+AEM Assets](./images/accsaemassets150.png)
 
-**iPhone Air** の商品画像が表示されます。 **iPhone Air** をクリックします。
+**iPhone Air**&#x200B;の製品画像が表示されます。 **iPhone Air**&#x200B;をクリックします。
 
 ![ACCS+AEM Assets](./images/accsaemassets151.png)
 
-この画像が表示されます。 カラーおよびストレージオプションを変更すると、選択内容に応じて画像が動的に変化します。
+そうすると、これが表示されます。 カラーとストレージのオプションを変更すると、選択した内容に応じて画像が動的に変更されます。
 
 ![ACCS+AEM Assets](./images/accsaemassets152.png)
 
-色を **ライトゴールド** に、保存サイズを **256 GB** に変更する例を以下に示します。
+色を&#x200B;**ライトゴールド**&#x200B;に、ストレージサイズを&#x200B;**256GB**&#x200B;に変更する例を次に示します。
 
 ![ACCS+AEM Assets](./images/accsaemassets153.png)
 
-次の手順：[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
+[Adobe Commerce as a Cloud Service](./accs.md){target="_blank"}に戻る
 
-[Adobe Commerce as a Cloud Service](./accs.md){target="_blank"} に戻る
-
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](./../../../overview.md){target="_blank"}

@@ -1,25 +1,25 @@
 ---
-title: Adobe Commerceas a Cloud Service
-description: Adobe Commerceas a Cloud Service
+title: Adobe Commerce as a Cloud Service
+description: Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: f4a448ae-d867-4aa9-970c-7da5c77f48c5
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
 
-# 1.5 Adobe Commerce as a Cloud Service
+# 1.5 as a Cloud Service
 
 ## 学習内容
 
-- 様々な方法でAdobe Commerce as a Cloud Serviceを使用する方法を説明します。
+- Adobe Commerce as a Cloud Serviceの様々な使用方法について説明します。
 
 ## ビデオ
 
-このビデオでは、この演習に関係するすべての手順の説明とデモを行います。
+このビデオでは、この演習に関連するすべての手順の説明とデモを行います。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478140?quality=12&learn=on)
 
@@ -29,26 +29,22 @@ ht-degree: 2%
 
 ## 演習
 
-[1.5.1 Adobe Commerce as a Cloud Serviceの概要 &#x200B;](./ex1.md){target="_blank"}
+[1.5.1 Adobe Commerce as a Cloud Serviceの基本を学ぶ](./ex1.md){target="_blank"}
 
-この演習では、Adobe Commerce as a Cloud Serviceの基本的な設定を実行します。
+この演習では、Adobe Commerce as a Cloud Serviceの基本設定を実行します。
 
-[1.5.2 ACCS をAEM Sites CS/EDS ストアフロントに接続する &#x200B;](./ex2.md){target="_blank"}
+[1.5.2 ACCSをAEM Sites CS/EDS Storefrontに接続](./ex2.md){target="_blank"}
 
-この演習では、ACCS バックエンドをAEM Sites ストアフロントにリンクします。
+この演習では、ACCS バックエンドをAEM Sites Storefrontにリンクします。
 
-[1.5.3 ACCS をAEM Assets CS に接続する &#x200B;](./ex3.md){target="_blank"}
+[1.5.3 ACCSをAEM Assets CS](./ex3.md){target="_blank"}に接続
 
-この演習では、ACCS バックエンドをAEM Assets CS 環境にリンクします。
+この演習では、ACCS バックエンドをAEM Assets CS環境にリンクします。
 
-[&#x200B; 概要とメリット &#x200B;](./summary.md){target="_blank"}
-
-このモジュールの概要とメリットの概要
-
-![&#x200B; 技術インサイダー &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![技術関係者](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->ご不明な点がある場合は、have suggestions on future content の一般的なフィードバックをお知らせください。**techinsiders@adobe.com** に電子メールを送信して、技術インサイダーに直接問い合わせてください。
+>ご質問がある場合は、**techinsiders@adobe.com**&#x200B;に電子メールを送信して、今後のコンテンツに関する提案の一般的なフィードバックを共有するには、Tech Insidersに直接お問い合わせください。
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](../../../overview.md){target="_blank"}

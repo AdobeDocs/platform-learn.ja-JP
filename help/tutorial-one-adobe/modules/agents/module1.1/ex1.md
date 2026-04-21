@@ -4,9 +4,9 @@ description: Agent Orchestratorの導入方法
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)に移動します。
 
-そうすると、これが表示されます。 組織&#x200B;**Experience Platform インターナショナル**&#x200B;にいることを確認してください。
+そうすると、これが表示されます。 組織`--aepImsOrgName--`にいることを確認してください。
 
 ![Agent Orchestrator](./images/ao1.png)
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 Documentation Source設定を使用すると、製品情報/Experience Leagueに関連する質問を確認するExperience League ドキュメントのセットを優先できます。
 
-- **サンドボックス**: **製品 – 高速化（VA7）**
+- **サンドボックス**: **製品 – 1つのAdobe （VA7）**
 
 サンドボックス設定は、質問を行う際にAI アシスタントがどのサンドボックスを確認すべきかを特定するのに役立ちます。
 
-- **データビュー**: **Accelerate 2026 B2C**
+- **データビュー**: **AdobeOne統合顧客データビュー**
 
 データビュー設定は、質問を行う際にAI アシスタントが参照するデータビューを特定するのに役立ちます。
 
@@ -58,7 +58,7 @@ Documentation Source設定を使用すると、製品情報/Experience Leagueに
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -70,7 +70,7 @@ Show me purchases by mainCategory over the last 7 months.
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -95,7 +95,7 @@ Which field is used to store the preferred genre?
 
 ![Agent Orchestrator](./images/ao7a.png)
 
-次に、このフィールドが表示されます。これは、ジャンルに使用されるフィールドが&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;であることを示しています。
+これで、ジャンルに使用されるフィールドが&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**&#x200B;であることがわかります。
 
 ![Agent Orchestrator](./images/ao7b.png)
 
@@ -104,7 +104,7 @@ Which field is used to store the preferred genre?
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me ordersYTD by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +131,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-そうすると、これが表示されます。 **詳細を表示**&#x200B;をクリックします。
+そうすると、これが表示されます。 「**すべての結果を表示**」をクリックします。
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -151,7 +151,19 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-そうすると、これが表示されます。 ジャーニーの1つのリンクをクリックし、**ジャーニーの詳細**&#x200B;を選択します。
+このような表示になります。
+
+![Agent Orchestrator](./images/ao14a.png)
+
+次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
+
+```javascript
+give more details about the first one
+```
+
+![Agent Orchestrator](./images/ao14b.png)
+
+そうすると、これが表示されます。 リンクをクリックしてジャーニーを開きます。
 
 ![Agent Orchestrator](./images/ao15.png)
 
