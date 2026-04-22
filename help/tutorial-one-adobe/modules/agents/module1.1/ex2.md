@@ -4,21 +4,14 @@ description: ChatGPT エンタープライズ版Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 5%
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
 # 1.1.2 ChatGPT Enterprise用Adobe Marketing Agent
-
-[!BADGE Beta]
-
-+++Betaの詳細
-お客様は、ChatGPT Enterprise Beta用Adobe Marketing Agentを使用することにより、Betaが一切の保証なしに「現状のまま」提供されることを了承するものとします。 Adobeは、Betaを維持、修正、更新、変更、その他の方法でサポートする義務を負いません。 このようなBetaおよび/または付随資料の正しい機能や性能に依存しないように、慎重に使用することをお勧めします。 BetaはAdobeの機密情報と見なされます。  お客様がアドビに提供するあらゆる「フィードバック」（ベータ版の使用中に発生した問題や欠陥、提案、改善、レコメンデーションを含むがこれに限定されないベータ版に関する情報）は、このようなフィードバックに含まれる、およびフィードバックに対するすべての権利、所有権、利益を含め、アドビに帰属します。
-
-+++
 
 ## ビデオ
 
@@ -57,7 +50,7 @@ ht-degree: 5%
 次のようにフィールドに入力します。
 
 - **名前**: `Adobe Marketing Agent`
-- **MCP Server URL**:Adobe担当者にお問い合わせください
+- **MCP サーバーURL**: `https://aep-ai-ama.adobe.io/mcp`
 - **認証**: `OAuth`
 
 「**理解して続行したい**」のチェックボックスをオンにします。
@@ -88,63 +81,29 @@ ChatGPTを通じてAdobe Adobe Marketing Agentをさらに活用する前に、�
 
 この演習では、コンテキストを次のように設定する必要があります。
 
-- **サンドボックス**: **製品 – 高速化（VA7）**
+- **IMS組織**: `--aepImsOrgName--`。
+
+- **サンドボックス**: **製品 – 1つのAdobe**
 
 サンドボックス設定は、質問を行う際にChatGPTがどのサンドボックスを参照すべきかを特定するのに役立ちます。
 
-- **データビュー**: **Accelerate 2026 B2C**
+- **データビュー**: **AdobeOne – 統合顧客データビュー**
 
 データビュー設定は、質問を行う際にChatGPTがどのデータビューを参照すべきかを特定するのに役立ちます。
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-list sandboxes
+change context
 ```
 
 ![Agent Orchestrator](./images/chatgpt11.png)
 
-使用可能なサンドボックスのリストが表示されます。 この例の現在のサンドボックスは&#x200B;**prod**&#x200B;に設定されています。
-
-これを使用する必要のあるサンドボックスに変更するには、次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
-
-```javascript
-switch to sandbox accelerate
-```
+その後、同様のウィンドウが表示され、現在の組織、サンドボックス、データビューの選択が表示されます。 上記の情報に基づいて、これらのフィールドを正しい組織、サンドボックス、データビューに変更します。
 
 ![Agent Orchestrator](./images/chatgpt12.png)
 
-そうすると、これが表示されます。 「**Set Context**」をクリックします。
-
-![Agent Orchestrator](./images/chatgpt13.png)
-
-そうすると、これが表示されます。 次の&#x200B;**プロンプト**&#x200B;を入力し、**send** ボタンをクリックして、使用するデータビューを設定します。
-
-```javascript
-list dataviews
-```
-
-![Agent Orchestrator](./images/chatgpt14.png)
-
-使用可能なデータビューのリストが表示されます。
-
-使用する必要があるデータビューを設定するには、次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
-
-```javascript
-switch to Accelerate 2026 B2C
-```
-
-![Agent Orchestrator](./images/chatgpt15.png)
-
-そうすると、これが表示されます。 「**Set Context**」をクリックします。
-
-![Agent Orchestrator](./images/chatgpt16.png)
-
-そうすると、これが表示されます。
-
-![Agent Orchestrator](./images/chatgpt17.png)
-
-これでコンテキストがプロパティセットになったので、次に特定のプロンプトの送信を開始できます。
+これでコンテキストが正しく設定されたので、次に特定のプロンプトの送信を開始できます。
 
 ## 1.1.2.3最初に全体的な購入傾向を把握して、コンテキストを固定し、ファイバーにズームインします
 
@@ -155,7 +114,7 @@ switch to Accelerate 2026 B2C
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/chatgpt18.png)
@@ -167,7 +126,7 @@ Show me purchases by mainCategory over the last 7 months.
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/chatgpt20.png)
@@ -187,12 +146,12 @@ Show me purchases by mainCategory = Fiber over the last 7 months per week
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Which field is used to store the preferred genre in the sandbox accelerate?
+Which field is used to store the preferred genre?
 ```
 
 ![Agent Orchestrator](./images/chatgpt22.png)
 
-次に、このフィールドが表示されます。これは、ジャンルに使用されるフィールドが&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;であることを示しています。
+これで、ジャンルに使用されるフィールドが&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**&#x200B;であることがわかります。
 
 ![Agent Orchestrator](./images/chatgpt23.png)
 
@@ -201,22 +160,14 @@ Which field is used to store the preferred genre in the sandbox accelerate?
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by favouriteGenre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/chatgpt24.png)
 
-そうすると、これが表示されます。 「**調査**」をクリックします。
-
-![Agent Orchestrator](./images/chatgpt25.png)
-
 そうすると、これが表示されます。
 
-![Agent Orchestrator](./images/chatgpt26.png)
-
-下にスクロールして詳細を表示します。
-
-![Agent Orchestrator](./images/chatgpt27.png)
+![Agent Orchestrator](./images/chatgpt25.png)
 
 ## 1.1.2.5既存のファイバージャーニーの特定
 
@@ -232,13 +183,9 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/chatgpt28.png)
 
-そうすると、これが表示されます。 「**調査**」をクリックします。
+そうすると、これが表示されます。
 
 ![Agent Orchestrator](./images/chatgpt29.png)
-
-そうすると、ジャーニーのリストが表示されます。
-
-![Agent Orchestrator](./images/chatgpt30.png)
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
@@ -248,17 +195,9 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/chatgpt31.png)
 
-そうすると、これが表示されます。 「**調査**」をクリックします。
-
-![Agent Orchestrator](./images/chatgpt32.png)
-
 そうすると、これが表示されます。
 
-![Agent Orchestrator](./images/chatgpt33.png)
-
-下にスクロールして詳細を表示します。
-
-![Agent Orchestrator](./images/chatgpt34.png)
+![Agent Orchestrator](./images/chatgpt32.png)
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
