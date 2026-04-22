@@ -4,9 +4,9 @@ description: Adobe Marketing Agent for Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
+source-git-commit: 8e6a4b67dc8c1ec19d81a25a6c1a51f17255fc6e
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 5%
 
 ---
@@ -39,59 +39,59 @@ Google Gemini Enterprise BetaでAdobe Marketing Agentを使用することによ
 
 [https://cloud.google.com/gemini-enterprise](https://cloud.google.com/gemini-enterprise)に移動します。 「**30日間の無料体験を開始**」をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini1.png)
+![ ゲミニ ](./images/gemini1.png)
 
 Google アカウントの電子メールアドレスを入力し、**電子メールで続行**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini2.png)
+![ ゲミニ ](./images/gemini2.png)
 
 姓と名を入力し、**同意して開始**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini3.png)
+![ ゲミニ ](./images/gemini3.png)
 
 「**後で行います**」をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini4.png)
+![ ゲミニ ](./images/gemini4.png)
 
 そうすると、これが表示されます。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini5.png)
+![ ゲミニ ](./images/gemini5.png)
 
 [https://cloud.google.com/gemini-enterprise](https://cloud.google.com/gemini-enterprise)に移動します。
 
 このような表示になります。 また、最初に請求先アカウントを作成し、その後ここで選択する必要がある場合もあります。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini6.png)
+![ ゲミニ ](./images/gemini6.png)
 
 「**30日間の無料試用版を開始**」をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini7.png)
+![ ゲミニ ](./images/gemini7.png)
 
 「**続行」をクリックして、API**&#x200B;をアクティブ化します。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini8.png)
+![ ゲミニ ](./images/gemini8.png)
 
 「**作成**」をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini9.png)
+![ ゲミニ ](./images/gemini9.png)
 
 そうすると、これが表示されます。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini10.png)
+![ ゲミニ ](./images/gemini10.png)
 
 ## 1.1.4.2 A2Aを使用してカスタムエージェントを作成します
 
 [https://console.cloud.google.com/gemini-enterprise](https://console.cloud.google.com/gemini-enterprise)に移動します。 「**Agents**」をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini10a.png)
+![ ゲミニ ](./images/gemini10a.png)
 
 「**+エージェントを追加**」をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini11.png)
+![ ゲミニ ](./images/gemini11.png)
 
 A2A **経由で** カスタムエージェントを選択します。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini12.png)
+![ ゲミニ ](./images/gemini12.png)
 
 **エージェントカード JSON**&#x200B;を貼り付けます。
 
@@ -99,19 +99,19 @@ A2A **経由で** カスタムエージェントを選択します。
 >
 >Adobe担当者に問い合わせて、**Agent Card JSON**&#x200B;情報を取得してください。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini13.png)
+![ ゲミニ ](./images/gemini13.png)
 
 **エージェントカード JSON**&#x200B;をペーストしたら、**エージェントの詳細をプレビュー**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini14.png)
+![ ゲミニ ](./images/gemini14.png)
 
 このような表示になります。 下にスクロールして、**次へ**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini15.png)
+![ ゲミニ ](./images/gemini15.png)
 
 このような表示になります。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini16.png)
+![ ゲミニ ](./images/gemini16.png)
 
 インスタンスのフィールドに入力します。
 
@@ -147,49 +147,49 @@ openid email profile
 
 「**完了**」をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini17.png)
+![ ゲミニ ](./images/gemini17.png)
 
 そうすると、これが表示されます。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini18.png)
+![ ゲミニ ](./images/gemini18.png)
 
 ## 1.1.4.3 Adobe Marketing Agentにログイン
 
 **概要**&#x200B;に移動し、**プレビュー**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini19.png)
+![ ゲミニ ](./images/gemini19.png)
 
 「**開始する**」をクリックします
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini20.png)
+![ ゲミニ ](./images/gemini20.png)
 
 **Agents**&#x200B;に移動します。 **Adobe Marketing Agent**&#x200B;が表示されます。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini21.png)
+![ ゲミニ ](./images/gemini21.png)
 
 3つのドット **...**&#x200B;をクリックし、**ピン**&#x200B;を選択します。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini22.png)
+![ ゲミニ ](./images/gemini22.png)
 
 **新しいチャット**&#x200B;に移動し、チャットに記号&#x200B;**@**&#x200B;を入力します。 **Adobe Marketing Agent**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini23.png)
+![ ゲミニ ](./images/gemini23.png)
 
 コマンド `login`を入力し、**送信**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini24.png)
+![ ゲミニ ](./images/gemini24.png)
 
 そうすると、これが表示されます。 **認証**&#x200B;をクリックします。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini25.png)
+![ ゲミニ ](./images/gemini25.png)
 
 **アクセスを許可**&#x200B;をクリックし、Adobe IDを使用してログインを完了し、プロンプトが表示されたらインスタンス `--aepImsOrgName--`を選択します。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini26.png)
+![ ゲミニ ](./images/gemini26.png)
 
 そうすると、これが表示されます。
 
-![&#x200B; ゲミニ &#x200B;](./images/gemini27.png)
+![ ゲミニ ](./images/gemini27.png)
 
 ## 1.1.4.4 Adobe Marketing Agentでコンテキストを設定
 
@@ -197,11 +197,11 @@ Copilotを通じてAdobe Marketing Agentをさらに操作する前に、コン�
 
 この演習では、コンテキストを次のように設定する必要があります。
 
-- **サンドボックス**: **製品 – 高速化（VA7）**
+- **サンドボックス**: **製品 – 1つのAdobe （VA7）**
 
   サンドボックス設定は、質問を行う際にAI アシスタントがどのサンドボックスを確認すべきかを特定するのに役立ちます。
 
-- **データビュー**: **Accelerate 2026 B2C**
+- **データビュー**: **AdobeOne – 統合顧客データビュー**
 
 データビューの設定は、質問を行う際にAI アシスタントが確認すべきデータビューを特定するのに役立ちます。
 
@@ -213,19 +213,27 @@ list sandboxes
 
 ![Agent Orchestrator](./images/gemini28.png)
 
-次に、同様のものが表示されます。 コマンド `switch to sandbox accelerate`を入力し、**送信** ボタンをクリックします。
+次に、同様のものが表示されます。 次のコマンドを入力し、**送信** ボタンをクリックします。
+
+```
+switch to sandbox One Adobe
+```
 
 ![Agent Orchestrator](./images/geminilab10.png)
 
 そうすると、これが表示されます。 データビューを変更するには、次のコマンドを入力し、**send** ボタンをクリックします。
 
-```javascript
+```
 list dataviews
 ```
 
 ![Agent Orchestrator](./images/geminilab11.png)
 
-次に、同様のものが表示されます。 コマンド `switch dataview to Accelerate 2026 B2C`を入力し、**送信** ボタンをクリックします。
+次に、同様のものが表示されます。 次のコマンドを入力し、**送信** ボタンをクリックします。
+
+```
+switch to AdobeOne - Unified Customer Data View
+```
 
 ![Agent Orchestrator](./images/geminilab12.png)
 
@@ -242,7 +250,7 @@ list dataviews
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab18.png)
@@ -254,7 +262,7 @@ Show me purchases by mainCategory over the last 7 months.
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 2 months until today, broken down by week
 ```
 
 ![Agent Orchestrator](./images/geminilab20.png)
@@ -279,7 +287,7 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/geminilab22.png)
 
-次に、このフィールドが表示されます。これは、ジャンルに使用されるフィールドが&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;であることを示しています。
+これで、ジャンルに使用されるフィールドが&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**&#x200B;であることがわかります。
 
 ![Agent Orchestrator](./images/geminilab23.png)
 
@@ -288,7 +296,7 @@ Which field is used to store the preferred genre
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab24.png)
