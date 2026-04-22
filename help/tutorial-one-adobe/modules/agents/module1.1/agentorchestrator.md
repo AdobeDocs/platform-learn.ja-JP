@@ -4,9 +4,9 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '284'
 ht-degree: 2%
 
 ---
@@ -36,9 +36,9 @@ Adobe Experience Platform AgentsとAgent Orchestratorの使用方法について
 
 ## 演習
 
-[1.1.1 Agent Orchestratorの概要](./ex1.md){target="_blank"}
+[1.1.1 AI アシスタントとAgent Orchestrator](./ex1.md){target="_blank"}
 
-この演習では、Fiber MaxのCitiSignal起動キャンペーンの背景に対するAgent Orchestratorの機能について説明します。
+この演習では、Fiber MaxのCitiSignal ローンチ キャンペーンの背景に対して、AI アシスタントとAgent Orchestratorについて説明します。
 
 [1.1.2 ChatGPT Enterprise用Adobe Marketing Agent](./ex2.md){target="_blank"}
 

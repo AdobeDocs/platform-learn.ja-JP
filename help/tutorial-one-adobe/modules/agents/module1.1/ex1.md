@@ -1,17 +1,17 @@
 ---
-title: Agent Orchestratorの導入方法
-description: Agent Orchestratorの導入方法
+title: AI アシスタントとAgent Orchestrator
+description: AI アシスタントとAgent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
-# 1.1.1 Agent Orchestratorの概要
+# 1.1.1 AI アシスタントとAgent Orchestrator
 
 ## ビデオ
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Agent Orchestratorの1.1.1.1 Set Context
 
-[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)に移動します。
+[https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat)に移動します。
 
 そうすると、これが表示されます。 組織`--aepImsOrgName--`にいることを確認してください。
 
@@ -32,10 +32,6 @@ ht-degree: 0%
 ![Agent Orchestrator](./images/ao2.png)
 
 コンテキストを次のように設定します。
-
-- **ドキュメント Source**: **Journey Optimizer**
-
-Documentation Source設定を使用すると、製品情報/Experience Leagueに関連する質問を確認するExperience League ドキュメントのセットを優先できます。
 
 - **サンドボックス**: **製品 – 1つのAdobe （VA7）**
 
@@ -104,7 +100,7 @@ Which field is used to store the preferred genre?
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-Show me ordersYTD by preferred genre for the last 2 months
+Show me purchases by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +127,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-そうすると、これが表示されます。 「**すべての結果を表示**」をクリックします。
+そうすると、これが表示されます。 **プレビュー** アイコンをクリックします。
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -180,7 +176,7 @@ give more details about the first one
 次の&#x200B;**プロンプト**&#x200B;を入力します。
 
 ```javascript
-What was the initial audience in the journey named 
+Which audiences are used by the journey named
 ```
 
 次に、`+CitiSignal fib`を手動で入力して、オートコンプリートを有効にします。 ジャーニー&#x200B;**CitiSignal - Fiber Max Launch Promotion**&#x200B;を選択します。
@@ -217,11 +213,11 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 AI アシスタントが観察とレコメンデーションを提供します。
 
-文章「**」をクリックすると、結果が表示されます**。
+文章「**説明**」をクリックします。
 
 ![Agent Orchestrator](./images/ao21.png)
 
-そして、その後に続くステップと、AI アシスタントが表示されて結果が得られます。
+コンテクストが表示されます。
 
 ![Agent Orchestrator](./images/ao22.png)
 
@@ -247,7 +243,7 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/ao33.png)
 
-セグメントクエリ式を確認します。 `yes`と入力し、**送信** ボタンをクリックします。
+**オーディエンス定義**&#x200B;を確認します。 `yes`と入力し、**送信** ボタンをクリックします。
 
 ![Agent Orchestrator](./images/ao34.png)
 
@@ -259,17 +255,21 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/ao36.png)
 
-セグメント定義の見直し： 「**作成**」をクリックします。
+**オーディエンス提案**&#x200B;を確認します。 「**作成**」をクリックします。
 
 ![Agent Orchestrator](./images/ao37.png)
 
-オーディエンスが作成されました。
+オーディエンスが作成されました。 リンクをクリックしてオーディエンスを開きます。
 
 ![Agent Orchestrator](./images/ao38.png)
 
 >[!NOTE]
 >
 >新しいオーディエンスを作成する場合、オーディエンスをさらに活用するためにAI アシスタントが利用できるようになるまでに24時間かかります。
+
+そうすると、これが表示されます。
+
+![Agent Orchestrator](./images/ao38a.png)
 
 ## 1.1.1.8使用率の高い既存オーディエンスを検索し、使用率が高いかどうかを確認します
 
@@ -289,17 +289,21 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-そうすると、これが表示されます。 これで、すべてのオーディエンスと、過去数日間でどれくらい変化したかを確認できます。
+そうすると、これが表示されます。
+
+![Agent Orchestrator](./images/ao30a.png)
+
+これで、すべてのオーディエンスと、過去数日間でどれくらい変化したかを確認できます。
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
 ```javascript
-List how much these audiences changed over the last few days.
+List how much all my audiences changed over the last few days.
 ```
 
 ![Agent Orchestrator](./images/ao31.png)
 
-そうすると、これが表示されます。 **詳細を表示**&#x200B;をクリックします。
+そうすると、これが表示されます。 「**すべての結果を表示**」をクリックします。
 
 ![Agent Orchestrator](./images/ao31a.png)
 
@@ -355,25 +359,21 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-そうすると、これが表示されます。 `yes`と入力し、「生成」をクリックします。
+そうすると、これが表示されます。 `yes`と入力し、「送信」をクリックします。
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-そうすると、これが表示されます。 `yes`と入力し、「生成」をクリックします。
+そうすると、これが表示されます。 `yes`と入力し、「送信」をクリックします。
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-そうすると、これが表示されます。 `The first one`と入力し、「送信」をクリックします。
+そうすると、これが表示されます。 `the first one`と入力し、「送信」をクリックします。
 
 ![Agent Orchestrator](./images/aocj4.png)
 
 そうすると、これが表示されます。 `yes`と入力し、「送信」をクリックします。
 
 ![Agent Orchestrator](./images/aocj5.png)
-
-応答を確認します。 `yes`と入力し、「送信」をクリックします。
-
-![Agent Orchestrator](./images/aocj6.png)
 
 「**レビュー**」をクリックします。
 
@@ -383,9 +383,13 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj8.png)
 
-これで、ジャーニーがドラフトモードで作成されました。
+これで、ジャーニーがドラフトモードで作成されました。 ジャーニーをクリックして開きます。
 
 ![Agent Orchestrator](./images/aocj9.png)
+
+そうすると、これが表示されます。
+
+![Agent Orchestrator](./images/aocj10.png)
 
 ## 1.1.1.10件のジャーニーの競合管理
 
@@ -419,13 +423,9 @@ List any conflicts for the journey +CitiSignal Fiber Max
 
 ![Agent Orchestrator](./images/aocj70a.png)
 
-ジャーニーの競合情報を確認します。
+潜在的なジャーニーの競合情報を確認します。
 
 ![Agent Orchestrator](./images/aocj71.png)
-
-下にスクロールして、ジャーニーの競合の詳細を確認します。
-
-![Agent Orchestrator](./images/aocj72.png)
 
 ## 1.1.1.11件の実験
 

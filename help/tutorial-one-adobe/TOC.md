@@ -4,7 +4,7 @@ breadcrumb-title: One Adobe テクニカルチュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b32d96f1d7cce7c22d56ef1783e7209796635758
+source-git-commit: 19e1d50fdab39f507b91df9e244323e2f54a95ad
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 3%
@@ -36,7 +36,7 @@ ht-degree: 3%
 + エージェント型 AI {#agents}
    + 1.1 Agent Orchestrator {#agents1}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
-      + [1.1.1 Agent Orchestratorの概要](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+      + [1.1.1 AI アシスタントとAgent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 ChatGPT Enterprise用Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise向けAdobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
