@@ -4,9 +4,9 @@ description: Brand Conciergeの導入方法
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
+source-git-commit: a333ddbf1ed0c51dd9ae1d9a5eff3f0c569a1d1f
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -134,7 +134,9 @@ Competitor pricing, competitor products
 
 そうすると、これが表示されます。 ナレッジソースの名前として`CitiSignal website`を入力します。
 
-次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal web サイトをダウンロードすると、CSV ファイル &#x200B;](./assets/citisignal-website-links.csv)がデスクトップにリンクされます。
+次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal web サイトをダウンロードすると、CSV ファイル ](./assets/citisignal-website-links.csv)がデスクトップにリンクされます。
+
+![Brand Concierge](./images/bc8z.png)
 
 「**ファイルを参照**」をクリックします。
 
@@ -142,9 +144,30 @@ Competitor pricing, competitor products
 
 ファイル **citisignal-website-links.csv**&#x200B;を開き、リンクを更新して独自のCitiSignal web サイトを指すようにします。
 
+Tech Insiders Tech Labの配信の一部としてこの技術研究室を行っている場合、割り当てられた番号に基づいて既存のデモ web サイトにアクセスできるようになりました。 これらのデモ用サイトには、次のようなカスタムドメインが付属しています。XXは、お客様に提供された番号を表します。
+
+**https://techinsidersXX.adobedemosystem.com/** （対面トレーニング用）
+
+or
+
+**https://techinsidersodXX.adobedemosystem.com/** （オンデマンドトレーニング用）
+
+次の画像では、ベース URLをweb サイトのURLに置き換える必要があります。
+
+以下のファイル内の製品へのリンクは、モジュールの演習1で設定した製品に関連しています
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}。
+
 ![Brand Concierge](./images/bc8a.png)
 
-ダウンロードして編集したばかりのファイル **citisignal-website-links.csv**&#x200B;を選択します。 「**開く**」をクリックします。
+お客様の番号が&#x200B;**1**&#x200B;の場合、ファイルは次のようになります。
+
+![Brand Concierge](./images/bc8b.png)
+
+お客様の番号が&#x200B;**90**&#x200B;の場合、ファイルは次のようになります。
+
+![Brand Concierge](./images/bc8c.png)
+
+上記の指示に従ってファイルを更新したら、次にそのファイル **citisignal-website-links.csv**&#x200B;を選択します。 「**開く**」をクリックします。
 
 ![Brand Concierge](./images/bc9.png)
 
@@ -164,7 +187,7 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc21.png)
 
-次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal製品カタログ &#x200B;](./assets/CitiSignal-catalog.json.zip)をデスクトップにダウンロードし、解凍します。
+次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal製品カタログ ](./assets/CitiSignal-catalog.json.zip)をデスクトップにダウンロードし、解凍します。
 
 ![Brand Concierge](./images/bc26.png)
 
