@@ -4,14 +4,14 @@ description: ChatGPT エンタープライズ版Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
+source-git-commit: d732dd6abdacc0ebcfa0ab8a09a49dc4b0f2b56b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
-# 1.1.2 ChatGPT Enterprise用Adobe Marketing Agent
+# 1.1.2 Adobe Marketing Agent for ChatGPT Enterprise
 
 ## ビデオ
 
@@ -27,33 +27,33 @@ ht-degree: 0%
 >- openAIのChatGPT Enterpriseの有料版
 >- ChatGPT Enterprise web クライアントの使用
 
-[https://chatgpt.com/](https://chatgpt.com/){target="_blank"}に移動し、アカウントの詳細を使用してログインします。 ログインしたら、これを確認してください。 ユーザー名をクリックします。
+Go to [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} and log in using your account details. ログインしたら、これを確認してください。 Click your username.
 
 ![ChatGPT](./images/chatgpt1.png)
 
-**設定**&#x200B;を選択します。
+Select **Settings**.
 
 ![ChatGPT](./images/chatgpt2.png)
 
-**アプリ**&#x200B;に移動し、**詳細設定**&#x200B;を選択します。
+Go to **Apps** and then select **Advanced settings**.
 
 ![ChatGPT](./images/chatgpt3.png)
 
-**開発者モード**&#x200B;をオンにして、**戻る**&#x200B;をクリックします。
+Turn on **Developer mode** and then click **Back**.
 
 ![ChatGPT](./images/chatgpt4.png)
 
-「**アプリを作成**」をクリックします。
+Click **Create app**.
 
 ![ChatGPT](./images/chatgpt5.png)
 
 次のようにフィールドに入力します。
 
 - **名前**: `Adobe Marketing Agent`
-- **MCP サーバーURL**: `https://aep-ai-ama.adobe.io/mcp`
+- **MCP Server URL**: Adobe担当者にお問い合わせください
 - **認証**: `OAuth`
 
-「**理解して続行したい**」のチェックボックスをオンにします。
+Check the checkbox for **I understand and want to continue**.
 
 「**作成**」をクリックします。
 
@@ -67,9 +67,9 @@ ChatGPTがAdobe アカウントへの接続を試みます。 「**アクセス�
 
 ![ChatGPT](./images/chatgpt8.png)
 
-## 1.1.2.2 Adobe Marketing Agentでコンテキストを設定
+## 1.1.2.2 Set context in Adobe Marketing Agent
 
-このウィンドウを閉じます。
+Close this window.
 
 ![Agent Orchestrator](./images/chatgpt9.png)
 
@@ -77,19 +77,19 @@ ChatGPTがAdobe アカウントへの接続を試みます。 「**アクセス�
 
 ![Agent Orchestrator](./images/chatgpt10.png)
 
-ChatGPTを通じてAdobe Adobe Marketing Agentをさらに活用する前に、必要なコンテキストを設定します。
+Before interacting further with Adobe Marketing Agent through ChatGPT, the context needs to be set.
 
-この演習では、コンテキストを次のように設定する必要があります。
+For this exercise, the context needs to be set to use:
 
-- **IMS組織**: `--aepImsOrgName--`。
+- **IMS Org**: `--aepImsOrgName--`.
 
-- **サンドボックス**: **製品 – 1つのAdobe**
+- **Sandbox**: **Prod - One Adobe**
 
-サンドボックス設定は、質問を行う際にChatGPTがどのサンドボックスを参照すべきかを特定するのに役立ちます。
+The Sandbox setting helps to identify which sandbox ChatGPT should look at when asking questions.
 
 - **データビュー**: **AdobeOne – 統合顧客データビュー**
 
-データビュー設定は、質問を行う際にChatGPTがどのデータビューを参照すべきかを特定するのに役立ちます。
+The Dataview setting helps to identify which dataview ChatGPT should look at when asking questions.
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
@@ -99,17 +99,17 @@ change context
 
 ![Agent Orchestrator](./images/chatgpt11.png)
 
-その後、同様のウィンドウが表示され、現在の組織、サンドボックス、データビューの選択が表示されます。 上記の情報に基づいて、これらのフィールドを正しい組織、サンドボックス、データビューに変更します。
+You should then see a similar window, showing the current Org, Sandbox and Dataview selection. Change these fields to the correct Org, Sandbox and Dataview based on the above information.
 
 ![Agent Orchestrator](./images/chatgpt12.png)
 
-これでコンテキストが正しく設定されたので、次に特定のプロンプトの送信を開始できます。
+Your context is now properly set, so you can start sending specific prompts next.
 
-## 1.1.2.3最初に全体的な購入傾向を把握して、コンテキストを固定し、ファイバーにズームインします
+## 1.1.2.3 Start with overall purchase trends to anchor context and zoom into fiber
 
 **インテント**
 
-モバイル、固定電話、インターネット、テレビ、ファイバーなど、過去60日間のカテゴリー別需要を詳細に把握できます。 これにより、ニューヨークのロールアウト後の季節性、プロモ – ション効果、地域のバリエーションのベースラインを設定できます。
+Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber—specifically for the most recent 60 days. This sets baselines for seasonality, promo effects, and regional variance after the New York rollout.
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
@@ -119,7 +119,7 @@ Show me purchases by mainCategory over the last 2 months.
 
 ![Agent Orchestrator](./images/chatgpt18.png)
 
-次の画面が表示されます。
+You should then see this:
 
 ![Agent Orchestrator](./images/chatgpt19.png)
 
@@ -139,7 +139,7 @@ Show me purchases by mainCategory = Fiber over the last 2 months per week
 
 **インテント**
 
-特定のジャンル（SciFi、スポーツ、ドラマなど）に対する嗜好が、ブロードバンドのアップグレード行動、特に高帯域幅のニーズを予測するという仮説をテストします。
+Test the hypothesis that a preference for a specific genre (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for high bandwidth needs.
 
 まず、ジャンルの環境設定を保存するために使用されるフィールドを見つける必要があります。
 
@@ -169,11 +169,11 @@ Show me purchases by favouriteGenre for the last 2 months
 
 ![Agent Orchestrator](./images/chatgpt25.png)
 
-## 1.1.2.5既存のファイバージャーニーの特定
+## 1.1.2.5 Identify Existing Fiber Journeys
 
 **インテント**
 
-アクティブなジャーニーまたは最近完了したジャーニーのタイトルに「Fiber」が含まれていることを確認します（例：「Fiber Upgrade NYC - Sept」、「Fiber Trial - Streaming Bundle」）。
+Discover which active or recently concluded journeys include “Fiber” in the title—e.g., “Fiber Upgrade NYC – Sept”, “Fiber Trial – Streaming Bundle”.
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
@@ -215,7 +215,7 @@ show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 **インテント**
 
-ジャーニーのパフォーマンスのフォールアウトを把握して、ジャーニー内で多数のプロファイルがドロップされているノードや条件があるかどうかを確認します。 これは、ジャーニーで追加の調整が必要かどうかを把握するのに役立ちます。
+ジャーニーのパフォーマンスのフォールアウトを把握して、ジャーニー内で多数のプロファイルがドロップされているノードや条件があるかどうかを確認します。 This is helpful in understanding if additional adjustments are needed in the journey.
 
 次の&#x200B;**プロンプト**&#x200B;を入力し、**送信** ボタンをクリックします。
 
@@ -229,7 +229,7 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/chatgpt38.png)
 
-少し下にスクロールします。 各ノードとそれぞれの入力ノードの数値、フォールアウト数、フォールアウト率を調べることで、テーブルを確認できるようになりました。
+少し下にスクロールします。 You can now review the table by inspecting each node and its respective enter numbers, fallout numbers, and fallout rate.
 
 ![Agent Orchestrator](./images/chatgpt39.png)
 

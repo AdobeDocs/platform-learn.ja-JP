@@ -3,9 +3,10 @@ title: Adobe Marketing Agent・フォー・クロード
 description: Adobe Marketing Agent・フォー・クロード
 kt: 5342
 doc-type: tutorial
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+source-git-commit: 2339a3a9c122a3e757c59eec3a9be54acf8d9c1e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 9%
 
 ---
@@ -45,36 +46,36 @@ ht-degree: 9%
 
 [https://claude.ai/](https://claude.ai/){target="_blank"}に移動し、アカウントの詳細を使用してログインします。 ログインしたら、これを確認してください。
 
-![&#x200B; クロード.ai](./images/claude1.png)
+![ クロード.ai](./images/claude1.png)
 
 クリックしてアカウントを開き、**設定**&#x200B;を選択します。
 
-![&#x200B; クロード.ai](./images/claude2.png)
+![ クロード.ai](./images/claude2.png)
 
 **コネクタ**&#x200B;に移動し、**カスタマイズに移動**&#x200B;をクリックします。
 
-![&#x200B; クロード.ai](./images/claude2a.png)
+![ クロード.ai](./images/claude2a.png)
 
 **+**&#x200B;をクリックし、**カスタムコネクタを追加**&#x200B;を選択します。
 
-![&#x200B; クロード.ai](./images/claude3.png)
+![ クロード.ai](./images/claude3.png)
 
 次のようにフィールドに入力します。
 
 - **名前**: `Adobe Marketing Agent`
-- **MCP Server URL**:Adobe担当者にお問い合わせください
+- **MCP Server URL**: Adobe担当者にお問い合わせください
 
 「**追加**」をクリックします。
 
-![&#x200B; クロード.ai](./images/claude4.png)
+![ クロード.ai](./images/claude4.png)
 
 そうすると、これが表示されます。 **+**&#x200B;をクリックして、新しいチャットを開始します。
 
-![&#x200B; クロード.ai](./images/claude5.png)
+![ クロード.ai](./images/claude5.png)
 
-**+** アイコンをクリックし、**コネクタ**&#x200B;に移動して、**Adobe Marketing Agent**&#x200B;が有効になっていることを確認してください**。
+**+** アイコンをクリックし、**コネクタ**&#x200B;に移動して、**Adobe Marketing Agent**&#x200B;が有効になっていることを確認します。
 
-![&#x200B; クロード.ai](./images/claude6.png)
+![ クロード.ai](./images/claude6.png)
 
 ## 1.1.5.2認証してコンテキストを設定
 
@@ -86,27 +87,27 @@ Claude.aiを通じてAdobe Marketing Agentをさらに操作する前に、ロ�
 login to Adobe Marketing Agent
 ```
 
-![&#x200B; クロード.ai](./images/claude7.png)
+![ クロード.ai](./images/claude7.png)
 
 「**常に許可**」を選択します。
 
-![&#x200B; クロード.ai](./images/claude8.png)
+![ クロード.ai](./images/claude8.png)
 
 Adobe Marketing agent**にログインするには、リンクをクリックします。
 
-![&#x200B; クロード.ai](./images/claude8a.png)
+![ クロード.ai](./images/claude8a.png)
 
 「**リンクを開く**」をクリックします。
 
-![&#x200B; クロード.ai](./images/claude8b.png)
+![ クロード.ai](./images/claude8b.png)
 
 「**アクセスを許可**」をクリックします。
 
-![&#x200B; クロード.ai](./images/claude8c.png)
+![ クロード.ai](./images/claude8c.png)
 
 正常に認証された後、これを確認する必要があります。 Claudeに戻ります。
 
-![&#x200B; クロード.ai](./images/claude8d.png)
+![ クロード.ai](./images/claude8d.png)
 
 次のコマンドを入力し、**send**&#x200B;をクリックします。
 
@@ -114,7 +115,7 @@ Adobe Marketing agent**にログインするには、リンクをクリックし
 logged in
 ```
 
-![&#x200B; クロード.ai](./images/claude8e.png)
+![ クロード.ai](./images/claude8e.png)
 
 これで正常にログインしました。 次のステップはコンテキストを設定します。 次のプロンプトを入力し、**send**&#x200B;をクリックします。
 
