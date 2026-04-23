@@ -134,7 +134,7 @@ Competitor pricing, competitor products
 
 そうすると、これが表示されます。 ナレッジソースの名前として`CitiSignal website`を入力します。
 
-次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal web サイトをダウンロードすると、CSV ファイル ](./assets/citisignal-website-links.csv)がデスクトップにリンクされます。
+次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal web サイトをダウンロードすると、CSV ファイル &#x200B;](./assets/citisignal-website-links.csv)がデスクトップにリンクされます。
 
 ![Brand Concierge](./images/bc8z.png)
 
@@ -187,7 +187,7 @@ or
 
 ![Brand Concierge](./images/bc21.png)
 
-次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal製品カタログ ](./assets/CitiSignal-catalog.json.zip)をデスクトップにダウンロードし、解凍します。
+次に、web サイトのリンクを含むcsv ファイルをアップロードする必要があります。 [CitiSignal製品カタログ &#x200B;](./assets/CitiSignal-catalog.json.zip)をデスクトップにダウンロードし、解凍します。
 
 ![Brand Concierge](./images/bc26.png)
 
