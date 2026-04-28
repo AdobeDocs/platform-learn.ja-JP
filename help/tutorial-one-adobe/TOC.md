@@ -4,9 +4,9 @@ breadcrumb-title: One Adobe テクニカルチュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
+source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 + [AEP &amp; Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + はじめに {#gettingstarted}
-   + はじめに {#gettingstarted}
+   + はじめに – AEPとアプリ {#gettingstarted}
       + [概要](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Experience League ドキュメント用のChrome拡張機能のインストール](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [次にデモシステムを使用して、Adobe Experience Platform Data Collection クライアントプロパティを設定します](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -34,9 +34,16 @@ ht-degree: 4%
       + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
    + はじめに – Agentic AI {#gettingstartedagenticai}
       + [概要](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md)
-      + [Experience League ドキュメントのChrome拡張機能をインストール &#x200B;](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
+      + [Experience League ドキュメントのChrome拡張機能をインストール ](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
       + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
       + [web サイトの利用](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
+   + はじめに – GenStudio {#gettingstartedgenstudio}
+      + [概要](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
+      + [Experience League ドキュメント用のChrome拡張機能のインストール](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
+      + [Adobe I/O プロジェクトの設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
+      + [選択肢1:Postmanの設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
+      + [オプション 2: PostBusterの設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex4.md)
+      + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex5.md)
 
 + エージェント型 AI {#agents}
    + 1.1 Agent Orchestrator {#agents1}
