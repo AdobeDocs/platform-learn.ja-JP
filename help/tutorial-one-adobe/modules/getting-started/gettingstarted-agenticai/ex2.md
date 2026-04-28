@@ -29,25 +29,25 @@ ht-degree: 2%
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/){target="_blank"}に移動し、**Visual Studio Code**&#x200B;をダウンロードしてインストールします。
 
-![ ブロック ](./images/vsc1.png)
+![&#x200B; ブロック &#x200B;](./images/vsc1.png)
 
 ## テキストエディター
 
 テキストエディターアプリをお持ちでない場合は、[https://www.sublimetext.com/](https://www.sublimetext.com/){target="_blank"}にアクセスして、このテキストエディターをダウンロードしてインストールできます。
 
-![ ブロック ](./images/text1.png)
+![&#x200B; ブロック &#x200B;](./images/text1.png)
 
 ## GitHub アカウント
 
 まだGitHub アカウントをお持ちでない場合は、[https://github.com/](https://github.com/){target="_blank"}に移動し、**新規登録**&#x200B;をクリックしてください。 個人のメールアドレスを使用し、アカウントを作成します。
 
-![ ブロック ](./images/git.png)
+![&#x200B; ブロック &#x200B;](./images/git.png)
 
 ## GitHub Desktop
 
 [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}に移動し、**Github Desktop**&#x200B;をダウンロードしてインストールします。
 
-![ ブロック ](./images/block1.png)
+![&#x200B; ブロック &#x200B;](./images/block1.png)
 
 これで、「はじめに」モジュールが終了しました。
 
@@ -57,4 +57,4 @@ ht-degree: 2%
 
 [はじめに – エージェンティック AI](./getting-started-agentic-ai.md){target="_blank"}に戻る
 
-[すべてのモジュール ](./../../../overview.md){target="_blank"}./imagesに戻る
+[すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"}./imagesに戻る
