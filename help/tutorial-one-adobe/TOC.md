@@ -4,10 +4,10 @@ breadcrumb-title: One Adobe テクニカルチュートリアル
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 19e1d50fdab39f507b91df9e244323e2f54a95ad
+source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 3%
+source-wordcount: '1462'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +32,11 @@ ht-degree: 3%
       + [選択肢1:Postmanの設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [オプション 2: PostBusterの設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+   + はじめに – Agentic AI {#gettingstartedagenticai}
+      + [概要](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md)
+      + [Experience League ドキュメントのChrome拡張機能をインストール ](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
+      + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
+      + [web サイトの利用](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
 
 + エージェント型 AI {#agents}
    + 1.1 Agent Orchestrator {#agents1}
@@ -41,7 +46,7 @@ ht-degree: 3%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise向けAdobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 —](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 ---](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2 エージェントとAIの基本を学ぶ {#agents2}
       + [概要](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 エージェンティック AIの導入](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
