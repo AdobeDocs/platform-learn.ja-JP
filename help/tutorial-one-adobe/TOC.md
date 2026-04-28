@@ -34,7 +34,7 @@ ht-degree: 4%
       + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
    + はじめに – Agentic AI {#gettingstartedagenticai}
       + [概要](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md)
-      + [Experience League ドキュメントのChrome拡張機能をインストール ](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
+      + [Experience League ドキュメントのChrome拡張機能をインストール &#x200B;](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
       + [インストールするアプリケーション](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
       + [web サイトの利用](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
    + はじめに – GenStudio {#gettingstartedgenstudio}

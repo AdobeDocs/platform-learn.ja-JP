@@ -14,7 +14,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Adobeの社員でない場合は、[Postmanのインストール ](./ex3.md){target="_blank"}の手順に従ってください。 以下の手順は、Adobeの従業員のみを対象としています。
+>Adobeの社員でない場合は、[Postmanのインストール &#x200B;](./ex3.md){target="_blank"}の手順に従ってください。 以下の手順は、Adobeの従業員のみを対象としています。
 
 ## ビデオ
 
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 ## PostBusterのインストール
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}に移動します。
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}に移動します。
 
 クリックして、**PostBuster**&#x200B;の最新リリースをダウンロードします。
 
@@ -168,8 +168,8 @@ Adobe I/O **bearer-token**&#x200B;には、特定の値（非常に長いaccess_
 
 ## 次の手順
 
-[ インストールするアプリケーション ](./ex5.md){target="_blank"}に移動
+[&#x200B; インストールするアプリケーション &#x200B;](./ex5.md){target="_blank"}に移動
 
 [はじめに – GenStudio](./getting-started-genstudio.md){target="_blank"}に戻ります
 
-[すべてのモジュール ](./../../../overview.md){target="_blank"}に戻る
+[すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"}に戻る

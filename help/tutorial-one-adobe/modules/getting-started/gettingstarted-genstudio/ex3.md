@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobeのスタッフの方は、[PostBusterのインストール ](./ex4.md){target="_blank"}の手順に従ってください。
+>Adobeのスタッフの方は、[PostBusterのインストール &#x200B;](./ex4.md){target="_blank"}の手順に従ってください。
 
 ## ビデオ
 
@@ -125,8 +125,8 @@ Your Postman environment is now configured and working.
 
 ## 次の手順
 
-[ インストールするアプリケーション ](./ex5.md){target="_blank"}に移動
+[&#x200B; インストールするアプリケーション &#x200B;](./ex5.md){target="_blank"}に移動
 
 [はじめに – GenStudio](./getting-started-genstudio.md){target="_blank"}に戻ります
 
-[すべてのモジュール ](./../../../overview.md){target="_blank"}に戻る
+[すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"}に戻る

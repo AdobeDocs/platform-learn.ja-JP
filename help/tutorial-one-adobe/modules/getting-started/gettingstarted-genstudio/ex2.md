@@ -68,17 +68,17 @@ ht-degree: 2%
 >
 >選択した学習パスによっては、Photoshop Services APIにアクセスできない場合があります。 Photoshop Services APIにアクセスできるのは、学習パス **Firefly**、**Workfront Fusion**、**ALL**&#x200B;に参加している場合、または&#x200B;**ライブの対面ワークショップ**&#x200B;に参加している場合のみです。 これらの学習パスに参加していない場合は、このステップをスキップしてください。
 >
-「**+ プロジェクトに追加**」を選択し、「**API**」を選択します。
+>「**+ プロジェクトに追加**」を選択し、「**API**」を選択します。
 
-![Azure ストレージ ](./images/ps2.png)
+![Azure ストレージ &#x200B;](./images/ps2.png)
 
 **Adobe Firefly Services**&#x200B;を選択し、**Photoshop - Firefly Services**&#x200B;を選択します。 「**次へ**」を選択します。
 
-![Azure ストレージ ](./images/ps3.png)
+![Azure ストレージ &#x200B;](./images/ps3.png)
 
 「**次へ**」を選択します。
 
-![Azure ストレージ ](./images/ps4.png)
+![Azure ストレージ &#x200B;](./images/ps4.png)
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 **設定したAPIを保存**&#x200B;を選択します。
 
-![Azure ストレージ ](./images/ps5.png)
+![Azure ストレージ &#x200B;](./images/ps5.png)
 
 そうすると、これが表示されます。
 
@@ -100,15 +100,15 @@ ht-degree: 2%
 
 「**+ プロジェクトに追加**」を選択し、「**API**」を選択します。
 
-![Azure ストレージ ](./images/aep1.png)
+![Azure ストレージ &#x200B;](./images/aep1.png)
 
 **Adobe Experience Platform**&#x200B;を選択し、**Experience Platform API**&#x200B;を選択します。 「**次へ**」を選択します。
 
-![Azure ストレージ ](./images/aep2.png)
+![Azure ストレージ &#x200B;](./images/aep2.png)
 
 「**次へ**」を選択します。
 
-![Azure ストレージ ](./images/aep3.png)
+![Azure ストレージ &#x200B;](./images/aep3.png)
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 **設定したAPIを保存**&#x200B;を選択します。
 
-![Azure ストレージ ](./images/aep4.png)
+![Azure ストレージ &#x200B;](./images/aep4.png)
 
 そうすると、これが表示されます。
 
@@ -134,25 +134,25 @@ ht-degree: 2%
 
 「**+ プロジェクトに追加**」を選択し、「**API**」を選択します。
 
-![Azure ストレージ ](./images/fiops2.png)
+![Azure ストレージ &#x200B;](./images/fiops2.png)
 
 **Creative Cloud**&#x200B;を選択し、**Frame.io API**&#x200B;を選択します。 「**次へ**」を選択します。
 
-![Azure ストレージ ](./images/fiops3.png)
+![Azure ストレージ &#x200B;](./images/fiops3.png)
 
 **サーバー間の認証**&#x200B;を選択し、**次へ**&#x200B;をクリックします。
 
-![Azure ストレージ ](./images/fiops4.png)
+![Azure ストレージ &#x200B;](./images/fiops4.png)
 
 **OAuth サーバー間**&#x200B;を選択し、**次へ**&#x200B;をクリックします。
 
-![Azure ストレージ ](./images/fiops5.png)
+![Azure ストレージ &#x200B;](./images/fiops5.png)
 
 次に、この統合で使用できる権限を定義する製品プロファイルを選択する必要があります。
 
 **Default Frame.io Enterprise - Prime Configuration**&#x200B;を選択し、**Save Configured API**&#x200B;をクリックします。
 
-![Azure ストレージ ](./images/fiops6.png)
+![Azure ストレージ &#x200B;](./images/fiops6.png)
 
 そうすると、これが表示されます。
 
@@ -178,10 +178,10 @@ ht-degree: 2%
 
 ## 次の手順
 
-[ オプション 1: Postmanの設定](./ex3.md){target="_blank"}に移動
+[&#x200B; オプション 1: Postmanの設定](./ex3.md){target="_blank"}に移動
 
-[ オプション 2: PostBuster セットアップ ](./ex4.md){target="_blank"}に移動
+[&#x200B; オプション 2: PostBuster セットアップ &#x200B;](./ex4.md){target="_blank"}に移動
 
 [はじめに – GenStudio](./getting-started-genstudio.md){target="_blank"}に戻ります
 
-[すべてのモジュール ](./../../../overview.md){target="_blank"}に戻る
+[すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"}に戻る
