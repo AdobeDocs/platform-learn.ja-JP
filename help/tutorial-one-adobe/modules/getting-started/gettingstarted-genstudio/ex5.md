@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## Adobe Premiere Pro
 
-[https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)からコンピューターにAdobe Premiere Pro Beta バージョンをインストールします
+[https://helpx.adobe.com/jp/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/jp/premiere-pro/using/premiere-pro-beta.html)からコンピューターにAdobe Premiere Pro Beta バージョンをインストールします
 
 ![Adobe I/Oの新しい統合](./images/prpro.png)
 

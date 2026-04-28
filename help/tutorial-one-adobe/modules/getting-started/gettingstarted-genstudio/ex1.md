@@ -58,7 +58,7 @@ ht-degree: 1%
 
 ## Chrome拡張機能の設定
 
-[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}に移動し、拡張機能アイコンをクリックして開きます。
+[https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}に移動し、拡張機能アイコンをクリックして開きます。
 
 ![DSN](./images/tuthome.png)
 
@@ -93,7 +93,7 @@ LDAPは、設定がリンクされ、使用しているインスタンスやサ�
 
 ## チュートリアルコンテンツを確認
 
-テストとして、[このページ &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}に移動します。
+テストとして、[このページ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}に移動します。
 
 これで、このページのすべての&#x200B;**環境変数**&#x200B;が、chrome拡張機能でアクティブ化された環境に基づいて、真の値に置き換えられたことがわかります。
 
