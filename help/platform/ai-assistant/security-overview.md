@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AI アシスタントのセキュリティ概要
 
-これは、<a href="https://www.adobe.com/cc-shared/assets/pdf/trust-center/ungated/whitepapers/experience-cloud/adobe-experience-platform-agent-orchestrator-security-overview.pdf"> セキュリティ ファクトシート </a>に基づくAI アシスタントのセキュリティ機能の概要です。  詳しくは、[AI アシスタントのプライバシーに関するドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/privacy)を参照してください。
+これは、<a href="https://www.adobe.com/cc-shared/assets/pdf/trust-center/ungated/whitepapers/experience-cloud/adobe-experience-platform-agent-orchestrator-security-overview.pdf"> セキュリティ ファクトシート </a>に基づくAI アシスタントのセキュリティ機能の概要です。  詳しくは、[AI アシスタントのプライバシーに関するドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/privacy)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)
