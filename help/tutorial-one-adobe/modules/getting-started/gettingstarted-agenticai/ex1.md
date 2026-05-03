@@ -104,7 +104,7 @@ LDAPは、設定がリンクされ、使用しているインスタンスやサ�
 
 ## チュートリアルコンテンツを確認
 
-テストとして、[このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}に移動します。
+テストとして、[このページ &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}に移動します。
 
 これで、このページのすべての&#x200B;**環境変数**&#x200B;が、chrome拡張機能でアクティブ化された環境に基づいて、真の値に置き換えられたことがわかります。
 
@@ -114,8 +114,8 @@ LDAPは、設定がリンクされ、使用しているインスタンスやサ�
 
 ## 次の手順
 
-[ インストールするアプリケーション ](./ex2.md){target="_blank"}に移動
+[&#x200B; インストールするアプリケーション &#x200B;](./ex2.md){target="_blank"}に移動
 
 [はじめに – エージェンティック AI](./getting-started-agentic-ai.md){target="_blank"}に戻る
 
-[すべてのモジュール ](./../../../overview.md){target="_blank"}に戻る
+[すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"}に戻る

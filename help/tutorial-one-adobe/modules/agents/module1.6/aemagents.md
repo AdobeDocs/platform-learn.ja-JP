@@ -22,7 +22,8 @@ ht-degree: 1%
 - **開発エージェント**&#x200B;は、AIを活用したトラブルシューティングとパフォーマンス調整によって開発者を高速化します。
 
 これらのエージェントを組み合わせることで、AEMは従来のCMSの能力をはるかに超えて、自動化されたエクスペリエンス運用に移行できます。 これらのエージェントはすべて、人間が制御できるように設計されており、正確性、信頼性、監視が確保されています。
->[!IMPORTANT]>
+>[!IMPORTANT]
+&#x200B;>>
 この演習を完了するには、EDS環境で動作するAEM SitesおよびAssets CSにアクセスする必要があり、使用しているIMS組織に対して様々なAEM Agentsを有効にする必要があります。>
 まだ環境がない場合は、[Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}の演習に進みます。 そこに記載されている手順に従うと、そのような環境にアクセスできるようになります。
 
