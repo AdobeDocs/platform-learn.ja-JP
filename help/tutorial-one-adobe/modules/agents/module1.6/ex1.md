@@ -1,312 +1,323 @@
 ---
-title: AEM Agents の概要
-description: AEM Agents の概要
+title: AEM Agentsの概要
+description: AEM Agentsの概要
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
+source-git-commit: 22691d40708e3b48b9365841dff0d3643e041481
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1706'
 ht-degree: 1%
 
 ---
 
-# 1.6.1 AEM Agents の概要
+# 1.6.1 AEM Agentsの概要
 
 >[!IMPORTANT]
 >
->この演習を行うには、EDS 環境で動作するAEM SitesとAssets CS にアクセスし、使用している IMS 組織で様々なAEM エージェントを有効にする必要があります。
->
->そのような環境がまだない場合は、[Adobe Experience Manager、Cloud Service、Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} の演習に進んでください。 指示に従うと、そのような環境にアクセスできます。
+>AEM CS サンドボックスが休止状態になる可能性があります。 サンドボックスの休止解除に10～15分かかることを考えると、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
 
->[!IMPORTANT]
->
->以前、AEM CS プログラムをAEM SitesとAssets CS 環境で設定したことがある場合は、AEM CS サンドボックスが休止状態になっている可能性があります。 このようなサンドボックスの休止解除には 10～15 分かかるので、後で待つ必要がないように、今すぐ休止解除プロセスを開始することをお勧めします。
+## 1.6.1.1探索エージェント
 
-## 1.6.1.1 Discovery Agent
+Adobe Experience Manager（AEM） Discovery Agentは、AEM as a Cloud Service内のAIを搭載したツールで、Assets、コンテンツフラグメント、アダプティブFormsなどのコンテンツを自然言語プロンプトを使用して検索、取得、利用できます。 リポジトリ全体の意図を把握し、検索を行うことで、手作業やクリックを多用するフィルタリング、複雑なフィルタリングなどの必要がなくなります。
 
-Adobe Experience Manager（AEM） Discovery Agent は、AEM as a Cloud Service内の AI を活用したツールで、自然言語プロンプトを使用して（Assets、コンテンツフラグメント、アダプティブFormsなどの）コンテンツを検索、取得、利用できます。 リポジトリ全体の目的を把握して検索することで、手動、クリックが多い、複雑なフィルタリングの必要性がなくなります。
+**Discovery Agent**&#x200B;を使用するには、まずAdobe Experience Managerでタグをいくつか作成し、そのタグを使用してアセットをいくつかタグ付けします。 これが完了すれば、AI アシスタントを利用して、ビジネスが使いやすい方法でアセットを発見できるようになります。
 
-**Discovery Agent** を使用するには、まずAdobe Experience Managerでいくつかのタグを作成し、次にそれらのタグを使用して一部のアセットにタグを付けます。 その後、AI アシスタントを使用して、ビジネスに適した簡単な方法でアセットを検出できます。
-
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に移動します。 選択する組織は `--aepImsOrgName--` です。
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}に移動します。 選択する組織は`--aepImsOrgName--`です。
 
 ### Assetsでのタグの作成と使用
 
-クリックすると、Cloud Manager プログラムが開きます。このプログラムは `--aepUserLdap-- - CitiSignal AEM+ACCS` と呼ばれます。
+クリックしてCloud Manager プログラムを開きます。以下の命名オプションを使用する必要があります。
 
-![AEM エージェント &#x200B;](./images/aemagents1.png)
+- **`Tech Insiders - AEM + ACCS X`** （Xは割り当てられた番号を表します）。
+- **`Tech Insiders On Demand - AEM + ACCS X`** （Xは割り当てられた番号を表します）。
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**。この場合、自分で作成した独自のAEM プログラムを使用しているため、番号がありません。
 
-環境の URL をクリックして開きます。
+この例では、プログラム **Tech Insiders - AEM + ACCS 100**&#x200B;が使用されます。 独自のプログラムを使用する必要があります。
 
-![AEM エージェント &#x200B;](./images/aemagents2.png)
+![AEM Agents](./images/aemagents1.png)
 
-**ハンマー** アイコンをクリックします。
+環境のURLをクリックして開きます。
 
-![AEM エージェント &#x200B;](./images/aemagents3.png)
+![AEM Agents](./images/aemagents2.png)
 
-**一般** の下の **タグ付け** をクリックします。
+**ツール** アイコンをクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents4.png)
+![AEM Agents](./images/aemagents3.png)
 
-この画像が表示されます。 **作成** をクリックし、「**名前空間を作成**」を選択します。
+**一般**&#x200B;で、**タグ付け**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents5.png)
+![AEM Agents](./images/aemagents4.png)
 
-**タイトル** フィールドに、`CitiSignal` と入力します。 「**作成**」をクリックします。
+そうすると、これが表示されます。 **Create**&#x200B;をクリックし、**Create Namespace**&#x200B;を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents6.png)
+![AEM Agents](./images/aemagents5.png)
 
-名前空間 **CitiSignal** をクリックしてドリルダウンします。 **作成** をクリックし、「**タグを作成**」を選択します。
+フィールド **タイトル**&#x200B;に次のように入力します：`--aepUserLdap-- - CitiSignal`。 「**作成**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents7.png)
+![AEM Agents](./images/aemagents6.png)
 
-**タイトル** フィールドに、`Campaign` と入力します。 「**送信**」をクリックします。
+名前空間&#x200B;**`--aepUserLdap-- - CitiSignal`**&#x200B;をクリックしてドリルダウンします。 「**Create**」をクリックし、「**タグを作成**」を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents8.png)
+![AEM Agents](./images/aemagents7.png)
 
-タグ **Campaign** をクリックして選択します。 **作成** をクリックし、「**タグを作成**」を選択します。
+フィールド **タイトル**&#x200B;に次のように入力します：`--aepUserLdap-- - Campaign`。 「**送信**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents9.png)
+![AEM Agents](./images/aemagents8.png)
 
-**タイトル** フィールドに、`Winter 2026` と入力します。 「**送信**」をクリックします。
+タグ **`--aepUserLdap-- - Campaign`**&#x200B;をクリックして選択します。 「**Create**」をクリックし、「**タグを作成**」を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents10.png)
+![AEM Agents](./images/aemagents9.png)
 
-タグ **Campaign** をクリックして選択します。 **作成** をクリックし、「**タグを作成**」を選択します。
+フィールド **タイトル**&#x200B;に次のように入力します：`--aepUserLdap-- - Winter 2026`。 「**送信**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents11.png)
+![AEM Agents](./images/aemagents10.png)
 
-**タイトル** フィールドに、`Spring 2026` と入力します。 「**送信**」をクリックします。
+タグ **Campaign**&#x200B;をクリックして選択します。 「**Create**」をクリックし、「**タグを作成**」を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents12.png)
+![AEM Agents](./images/aemagents11.png)
 
-これで、このが得られます。
+フィールド **タイトル**&#x200B;に次のように入力します：`--aepUserLdap-- - Spring 2026`。 「**送信**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents13.png)
+![AEM Agents](./images/aemagents12.png)
 
-**Adobe Experience Manager**&#x200B;**Assets&rbrace; の順にクリックし** す。
+これで、これで完了です。
 
-![AEM エージェント &#x200B;](./images/aemagents14.png)
+![AEM Agents](./images/aemagents13.png)
 
-**ファイル** をクリックします。
+**Adobe Experience Manager**&#x200B;をクリックし、**Assets**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents15.png)
+![AEM Agents](./images/aemagents14.png)
 
-フォルダー **CitiSignal** をダブルクリックして開きます。
+**ファイル**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents16.png)
+![AEM Agents](./images/aemagents15.png)
 
-**作成** をクリックし、**ファイル** を選択します。
+フォルダー&#x200B;**CitiSignal**&#x200B;をクリックして開きます。
 
-![AEM エージェント &#x200B;](./images/aemagents17.png)
+![AEM Agents](./images/aemagents16.png)
 
-ファイル [citisignal-images-campaign.zip](./assets/citisignal-images-campaign.zip) をダウンロードし、デスクトップに解凍します。
+**作成**&#x200B;をクリックし、**ファイル**&#x200B;を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents17a.png)
+![AEM Agents](./images/aemagents17.png)
 
-を選択します。 ダウンロードした 3 つのファイルをクリックして **開く**。
+ファイル [citisignal-images-campaign.zip](./assets/citisignal-images-campaign.zip)をダウンロードし、デスクトップに展開します。
 
-![AEM エージェント &#x200B;](./images/aemagents18.png)
+![AEM Agents](./images/aemagents17a.png)
 
-**アップロード** をクリックします。
+ダウンロードした3つのファイルを選択し、**開く**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents19.png)
+![AEM Agents](./images/aemagents18.png)
 
-この画像が表示されます。
+「**アップロード**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents20.png)
+![AEM Agents](./images/aemagents19.png)
 
-最初の画像を選択し、「**プロパティ**」をクリックします。
+そうすると、これが表示されます。
 
-![AEM エージェント &#x200B;](./images/aemagents21.png)
+![AEM Agents](./images/aemagents20.png)
 
-タグの下にある **folder**-icon をクリックします。
+最初の画像（citisignal_lion.png）を選択し、**プロパティ**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents22.png)
+![AEM Agents](./images/aemagents21.png)
 
-タグ **Spring 2026** を選択し、[**選択**] をクリックします。 これらの画像に対して、同じ手順を繰り返します。
+タグの下にある&#x200B;**フォルダー** – アイコンをクリックします。
 
-- citisignal_lion.png
-- citisignal_leopard.png
-- citisignal_gorilla.png
-- citisignal_rabbit.png
+![AEM Agents](./images/aemagents22.png)
 
-![AEM エージェント &#x200B;](./images/aemagents23.png)
+タグ **`--aepUserLdap-- - Spring 2026`**&#x200B;を選択し、**選択**&#x200B;をクリックします。
 
-すべての画像に対してそのタグを選択したら、**Experience Manager Assets** に移動します。
+![AEM Agents](./images/aemagents23.png)
 
-![AEM エージェント &#x200B;](./images/aemagents24.png)
+「**保存して閉じる**」をクリックします。
 
-使用しているリポジトリを選択します。
+![AEM Agents](./images/aemagents23a.png)
 
-![AEM エージェント &#x200B;](./images/aemagents25.png)
+これらの画像に対して次の操作を繰り返します。
 
-**Assets** に移動し、フォルダー **CitiSignal** を開きます。
+- `citisignal_leopard.png`
+- `citisignal_gorilla.png`
+- `citisignal_neon_rabbit.png`
 
-![AEM エージェント &#x200B;](./images/aemagents26.png)
+すべての画像のタグを選択したら、**Experience Manager Assets**&#x200B;に移動します。
 
-最初の画像を開きます。
+![AEM Agents](./images/aemagents24.png)
 
-![AEM エージェント &#x200B;](./images/aemagents27.png)
+画面の右上にある「**プロファイル**」アイコンをクリックします。 「**ビューを切り替え**」をクリックします。
 
-「**承認済み**」を選択し、「**保存**」をクリックします。
+![AEM Agents](./images/aemagents25.png)
 
-![AEM エージェント &#x200B;](./images/aemagents28.png)
+そうすると、これが表示されます。
 
-**タグ** の下に、以前に選択したタグが表示されます。
+![AEM Agents](./images/aemagents26.png)
 
-![AEM エージェント &#x200B;](./images/aemagents29.png)
+ダブルクリックして、最初の画像を開きます。
 
-このプロセスを繰り返して、4 つの画像がすべて承認されるようにします。
+![AEM Agents](./images/aemagents27.png)
 
-![AEM エージェント &#x200B;](./images/aemagents30.png)
+**Approved**&#x200B;を選択し、**保存**&#x200B;をクリックします。
 
-次に、**マイワークスペース** に移動し、クリックして **AI アシスタント** を開きます。
+![AEM Agents](./images/aemagents28.png)
 
-![AEM エージェント &#x200B;](./images/aemagents31.png)
+**タグ**&#x200B;の下に、以前に選択したタグが表示されます。
 
-次のプロンプトを入力し、「**送信**」をクリックします。
+![AEM Agents](./images/aemagents29.png)
+
+このプロセスを繰り返して、4つの画像がすべて承認されるようにします。
+
+![AEM Agents](./images/aemagents30.png)
+
+次に、**My workspace**&#x200B;に移動し、クリックして&#x200B;**AI Assistant**&#x200B;を開きます。
+
+![AEM Agents](./images/aemagents31.png)
+
+次のプロンプトを入力し、**送信**&#x200B;をクリックします。
 
 ```javascript
-find all assets tagged with 'Spring 2026'
+find all assets tagged with '--aepUserLdap-- - Spring 2026'
 ```
 
-![AEM エージェント &#x200B;](./images/aemagents32.png)
+![AEM Agents](./images/aemagents32.png)
 
-複数のAEM Assets CS 環境にアクセスできる場合は、次のように表示されます。 使用する環境の提案された回答をクリックし、「**送信**」をクリックします。
+複数のAEM Assets CS環境にアクセスできる場合は、このようになります。 使用する環境に対して提案された回答をクリックし、**送信**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents34.png)
+![AEM Agents](./images/aemagents34.png)
 
-その後、同様の回答が表示されます。 アイコンをクリックして、AI アシスタントを全画面表示に展開します。
+類似した回答が表示されます。 アイコンをクリックして、AI アシスタントを全画面に展開します。
 
-![AEM エージェント &#x200B;](./images/aemagents35.png)
+![AEM Agents](./images/aemagents35.png)
 
-回答を確認します。
+回答を確認する：
 
-![AEM エージェント &#x200B;](./images/aemagents36.png)
+![AEM Agents](./images/aemagents36.png)
 
-AI アシスタント ウィンドウ内から、これらのアセットをクリックして表示できます。
+任意のアセットで「**情報を表示**」アイコンをクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents37.png)
+![AEM Agents](./images/aemagents37.png)
 
-その後、AEM Assets CS に直接移動します。
+選択したアセットが、メタデータを含む拡大表示されます。
 
-![AEM エージェント &#x200B;](./images/aemagents38.png)
+![AEM Agents](./images/aemagents38.png)
 
-その後、使用可能な他のメタデータも確認できます。
+## 1.6.1.2 Experience Production エージェント
 
-![AEM エージェント &#x200B;](./images/aemagents39.png)
+### コンテンツの更新 – Assets
 
-## 1.6.1.2 Experience 実稼動エージェント
+コンテンツアップデート機能は、コンテンツフラグメントやページ、フォーム、アセットなど、既存のコンテンツを容易に更新できます。 担当者は、コンテンツ要素の更新、削除、置換、追加などのアクションを実行し、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語の説明にすることができ、Jira PDFやスクリーンショットを使用して使用する場合も入力を提供できます。
 
-### コンテンツ更新 – Assets
+AI アシスタント画面に戻ります。 サイドパネルを閉じます。
 
-コンテンツ更新スキルは、コンテンツフラグメント、ページ、フォーム、アセットなどの既存のコンテンツを簡単に更新できます。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
+![AEM Agents](./images/aemagents40.png)
 
-AI アシスタント画面に戻ります。
+提案されたプロンプトのいずれかを選択し、**送信**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents40.png)
+`For the first image, generate renditions for Instagram and LinkedIn posts`
 
-次のプロンプトを入力し、「**送信**」をクリックします。
-
-`Generate multiple social media formats (Instagram 1080x1920, Facebook 1200x630, Twitter 1200x675) for the third image`
-
-![AEM エージェント &#x200B;](./images/aemagents40a.png)
+![AEM Agents](./images/aemagents40a.png)
 
 数分後、同様の応答が表示されます。
 
-![AEM エージェント &#x200B;](./images/aemagents41.png)
+![AEM Agents](./images/aemagents41.png)
 
 生成された画像を確認します。
 
-![AEM エージェント &#x200B;](./images/aemagents42.png)
+![AEM Agents](./images/aemagents42.png)
+
+他のプロンプトを自由に試すことができます。 上にスクロールして、他の提案されたプロンプトのいずれかを選択するか、独自のプロンプトを入力し、**送信**&#x200B;をクリックします。
+
+`For the first image, generate a mirrored image`
+
+![AEM Agents](./images/aemagents42a.png)
+
+生成された画像を確認します。
+
+![AEM Agents](./images/aemagents42b.png)
 
 ### コンテンツ更新 – ページ
 
-Adobe Experience Manager オーサー環境に戻り、**Sites** に移動します。
+Adobe Experience Manager オーサー環境に戻り、**Sites**&#x200B;に移動します。
 
-![AEM エージェント &#x200B;](./images/aemagents43.png)
+![AEM Agents](./images/aemagents43.png)
 
-**CitiSignal** に移動します。 **作成** をクリックし、「**ページ**」を選択します。
+**CitiSignal**&#x200B;に移動します。 **作成**&#x200B;をクリックし、**ページ**&#x200B;を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents44.png)
+![AEM Agents](./images/aemagents44.png)
 
-**ページ** を選択し、「**次へ**」をクリックします。
+**ページ**&#x200B;を選択し、**次へ**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents45.png)
+![AEM Agents](./images/aemagents45.png)
 
 次の値を入力します。
 
-- タイトル：**Fibre Max**
+- タイトル：**最大ファイバー**
 - 名前：**fiber-max**
-- ページタイトル：**Fibre Max**
+- ページタイトル：**最大ファイバー**
 
 「**作成**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents46.png)
+![AEM Agents](./images/aemagents46.png)
 
-**開く** を選択します。
+「**開く**」を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents47.png)
+![AEM Agents](./images/aemagents47.png)
 
-この画像が表示されます。
+そうすると、これが表示されます。
 
-![AEM エージェント &#x200B;](./images/aemagents48.png)
+![AEM Agents](./images/aemagents48.png)
 
-空白領域をクリックして、「**セクション**」コンポーネントを選択します。 次に、右側のメニューでプラス **+** アイコンをクリックし、「**ヒーロー**」を選択します。
+空白の領域をクリックして、**セクション** コンポーネントを選択します。 次に、右側のメニューのプラス **+** アイコンをクリックし、**ヒーロー**&#x200B;を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents49.png)
+![AEM Agents](./images/aemagents49.png)
 
-この画像が表示されます。 「**+追加**」をクリックして画像を追加します。
+そうすると、これが表示されます。 「**+ Add**」をクリックして、画像を追加します。
 
-![AEM エージェント &#x200B;](./images/aemagents50.png)
+![AEM Agents](./images/aemagents50.png)
 
-アセットリポジトリを選択します。 次に、フォルダー **CitiSignal** を開きます。
+アセットリポジトリを選択します。 次に、フォルダー&#x200B;**CitiSignal**&#x200B;を開きます。
 
-![AEM エージェント &#x200B;](./images/aemagents51.png)
+![AEM Agents](./images/aemagents51.png)
 
-前にアップロードしたライオンの画像を選択します。 「**選択**」をクリックします。
+先ほどアップロードしたライオンの画像を選択します。 「**選択**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents52.png)
+![AEM Agents](./images/aemagents52.png)
 
-この画像が表示されます。 **テキスト** 領域をクリックして、テキストを変更します。
+そうすると、これが表示されます。 **text**&#x200B;領域をクリックして、テキストを変更します。
 
-![AEM エージェント &#x200B;](./images/aemagents53.png)
+![AEM Agents](./images/aemagents53.png)
 
-このテキストをに貼り付けます。
+このテキストをに貼り付けます：
 
 ```
 This winter, be as fast as a lion.
 ```
 
-**見出し 1** を選択し、「**完了**」をクリックします。
+**見出し1**&#x200B;を選択し、**完了**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents54.png)
+![AEM Agents](./images/aemagents54.png)
 
-この画像が表示されます。 **コンテンツツリー** に移動し、領域 **セクション** を選択します。
+そうすると、これが表示されます。 **コンテンツツリー**&#x200B;に移動し、領域&#x200B;**セクション**&#x200B;を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents55.png)
+![AEM Agents](./images/aemagents55.png)
 
-**+** アイコンをクリックし、「**カード**」を選択します。
+**+** アイコンをクリックし、**カード**&#x200B;を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents56.png)
+![AEM Agents](./images/aemagents56.png)
 
-この画像が表示されます。 **コンテンツツリー** で **カード** が選択されていることを確認します。
+そうすると、これが表示されます。 **コンテンツツリー**&#x200B;で、**カード**&#x200B;が選択されていることを確認してください。
 
-次に、ボタンを **+** 4 回クリックします。
+次に、**+** ボタンを4回クリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents57.png)
+![AEM Agents](./images/aemagents57.png)
 
-**Cards** オブジェクトに 4 つの **Card** オブジェクトがあるところを確認します。
+これで、**Cards** オブジェクトに4つの&#x200B;**Card** オブジェクトが含まれています。
 
-![AEM エージェント &#x200B;](./images/aemagents58.png)
+![AEM Agents](./images/aemagents58.png)
 
-最初の **カード** を選択します。 **テキスト** 領域をクリックして、テキストを変更します。
+最初の&#x200B;**カード**&#x200B;を選択します。 **text**&#x200B;領域をクリックして、テキストを変更します。
 
-![AEM エージェント &#x200B;](./images/aemagents59.png)
+![AEM Agents](./images/aemagents59.png)
 
-次のテキストを貼り付けます。 テキストの 1 行目に **見出し 1** が使用されていることを確認します。 「**完了**」をクリックします。
+次のテキストを貼り付けます。 テキストの最初の行が&#x200B;**見出し1**&#x200B;を使用していることを確認してください。 「**完了**」をクリックします。
 
 ```
 99.9% network reliability
@@ -314,13 +325,13 @@ This winter, be as fast as a lion.
 Game, video chat and stream on multiple devices with ultra low lag.
 ```
 
-![AEM エージェント &#x200B;](./images/aemagents60.png)
+![AEM Agents](./images/aemagents60.png)
 
-2 番目の **カード** を選択します。 **テキスト** 領域をクリックして、テキストを変更します。
+2番目の&#x200B;**Card**&#x200B;を選択します。 **text**&#x200B;領域をクリックして、テキストを変更します。
 
-![AEM エージェント &#x200B;](./images/aemagents61.png)
+![AEM Agents](./images/aemagents61.png)
 
-次のテキストを貼り付けます。 テキストの 1 行目に **見出し 1** が使用されていることを確認します。 「**完了**」をクリックします。
+次のテキストを貼り付けます。 テキストの最初の行が&#x200B;**見出し1**&#x200B;を使用していることを確認してください。 「**完了**」をクリックします。
 
 ```
 3-year
@@ -332,13 +343,13 @@ For new and existing Fiber Max customers on all internet plans.
 No hidden fees.
 ```
 
-![AEM エージェント &#x200B;](./images/aemagents62.png)
+![AEM Agents](./images/aemagents62.png)
 
-3 番目の **カード** を選択します。 **テキスト** 領域をクリックして、テキストを変更します。
+3枚目の&#x200B;**カード**&#x200B;を選択します。 **text**&#x200B;領域をクリックして、テキストを変更します。
 
-![AEM エージェント &#x200B;](./images/aemagents63.png)
+![AEM Agents](./images/aemagents63.png)
 
-次のテキストを貼り付けます。 テキストの 1 行目に **見出し 1** が使用されていることを確認します。 「**完了**」をクリックします。
+次のテキストを貼り付けます。 テキストの最初の行が&#x200B;**見出し1**&#x200B;を使用していることを確認してください。 「**完了**」をクリックします。
 
 ```
 More ways to save
@@ -346,13 +357,13 @@ More ways to save
 Save over 45% on the best entertainment with CitiSignal
 ```
 
-![AEM エージェント &#x200B;](./images/aemagents64.png)
+![AEM Agents](./images/aemagents64.png)
 
-4 番目の **カード** を選択します。 **テキスト** 領域をクリックして、テキストを変更します。
+4番目の&#x200B;**Card**&#x200B;を選択します。 **text**&#x200B;領域をクリックして、テキストを変更します。
 
-![AEM エージェント &#x200B;](./images/aemagents65.png)
+![AEM Agents](./images/aemagents65.png)
 
-次のテキストを貼り付けます。 テキストの 1 行目に **見出し 1** が使用されていることを確認します。 「**完了**」をクリックします。
+次のテキストを貼り付けます。 テキストの最初の行が&#x200B;**見出し1**&#x200B;を使用していることを確認してください。 「**完了**」をクリックします。
 
 ```
 Get Fiber Max now!
@@ -360,31 +371,31 @@ Get Fiber Max now!
 Fill out the form here to get started.
 ```
 
-![AEM エージェント &#x200B;](./images/aemagents66.png)
+![AEM Agents](./images/aemagents66.png)
 
-これで、このが得られます。 「**公開**」をクリックします。
+これで、これで完了です。 「**公開**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents67.png)
+![AEM Agents](./images/aemagents67.png)
 
-もう一度 **公開** をクリックします。
+**公開**&#x200B;をもう一度クリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents68.png)
+![AEM Agents](./images/aemagents68.png)
 
-**ページを開く** をクリックします。
+「**ページを開く**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents69.png)
+![AEM Agents](./images/aemagents69.png)
 
-次に必要になるので、ページの URL をコピーします。
+必要に応じて、ページのURLをコピーします。
 
-URL は次のようになります。`https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/content/CitiSignal/fiber-max.html`
+URLは次のようにする必要があります：`https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/content/CitiSignal/fiber-max.html`。
 
-![AEM エージェント &#x200B;](./images/aemagents70.png)
+![AEM Agents](./images/aemagents70.png)
 
-[https://experience.adobe.com/#/experiencemanager/](https://experience.adobe.com/#/experiencemanager/) に移動します。 クリックすると **AI アシスタント** が開きます。
+[https://experience.adobe.com/#/experiencemanager/](https://experience.adobe.com/#/experiencemanager/)に移動します。 クリックして&#x200B;**AI アシスタント**&#x200B;を開きます。
 
-![AEM エージェント &#x200B;](./images/aemagents71.png)
+![AEM Agents](./images/aemagents71.png)
 
-次のプロンプトを貼り付け、「**送信**」をクリックします。 このプロンプトで XXX を、前の手順でコピーした URL に置き換えます。
+次のプロンプトを貼り付け、**send**&#x200B;をクリックします。 このプロンプトのXXXを、前の手順でコピーしたURLに置き換えます。
 
 ```
 On the page XXX, please make the following changes:
@@ -395,81 +406,81 @@ On the page XXX, please make the following changes:
 - change the text '99.9% network reliability' to '99.999% network reliability'
 ```
 
-![AEM エージェント &#x200B;](./images/aemagents72.png)
+![AEM Agents](./images/aemagents72.png)
 
-1～2 分後、これが表示されます。 プロンプト `generate` を入力し、「**送信**」をクリックします。
+1～2分後、あなたはこれを見るべきです。 プロンプト `generate`を入力し、**送信**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents74.png)
+![AEM Agents](./images/aemagents74.png)
 
-数分後、変更が実行されたことを示す、次のような確認が表示されます。 **更新されたページをプレビュー** をクリックします。
+数分後、変更が実行されたことを確認するメッセージが表示されます。 「**更新されたページをプレビュー**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents75.png)
+![AEM Agents](./images/aemagents75.png)
 
-完了した変更が視覚的に確認できるようになりました。 このプレビューページは情報提供だけを目的としています。このページからアクションを実行することはできません。
+これで、完了した変更を視覚的に確認できます。 このプレビューページは情報提供のみを目的としているため、このページからアクションを実行することはできません。
 
-![AEM エージェント &#x200B;](./images/aemagents76.png)
+![AEM Agents](./images/aemagents76.png)
 
-アクションを実行するには、「**AEMで編集**」をクリックします。
+アクションを実行するには、**AEMで編集**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents75a.png)
+![AEM Agents](./images/aemagents75a.png)
 
-ユニバーサルエディターには、すべての変更が詳細に表示され、変更機能も備わっています。 ページを確認したら、「**公開**」をクリックします。
+ユニバーサルエディターでは、すべての変更点が詳細に表示され、何かを変更する機能が表示されます。 ページを確認したら、**公開**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents77.png)
+![AEM Agents](./images/aemagents77.png)
 
-もう一度 **公開** をクリックします。 加えた変更は、まだ実稼動環境に公開されていません。 代わりに、AEMの **ローンチ** で公開されています。
+**公開**&#x200B;をもう一度クリックします。 変更はまだ本番環境に公開されていません。 代わりに、AEMの&#x200B;**Launches**&#x200B;に公開されています。
 
-ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。 ローンチを作成すると、現在のページを維持しながら、今後の公開に備えて変更を加えることができます。 つまり、現在公開されているページと、今後公開するページのバージョンの 2 つのバージョンを同時に効果的に編集しているということです。 その時間が来たら、元のページを置き換えて、新しいバージョンを公開できます。
+ローンチ機能を使用すると、今後のリリースに向けてコンテンツを効率的に開発できます。 ローンチは、現在のページを維持すると同時に、今後の公開に備えて変更を加えることができるように作成されます。 つまり、現在公開されているページと、それらのページのバージョンを、将来公開するバージョンの2つのバージョンを同時に効果的に編集しています。 その時点で、元のページを置き換え、新しいバージョンを公開できます。
 
-![AEM エージェント &#x200B;](./images/aemagents78.png)
+![AEM Agents](./images/aemagents78.png)
 
-今後のリリースで保留中の変更を **昇格** するには、AEMに戻ります。 ページ上部の **Adobe Experience Manager** をクリックし、「**ハンマー** アイコンをクリックして、「**ローンチ**」を選択します。
+今後のリリース用に保留中の変更内容を&#x200B;**プロモーション**&#x200B;するには、AEMに戻ります。 ページ上部の&#x200B;**Adobe Experience Manager**&#x200B;をクリックし、**ハンマー** アイコンをクリックしてから、**起動**&#x200B;を選択します。
 
-![AEM エージェント &#x200B;](./images/aemagents79.png)
+![AEM Agents](./images/aemagents79.png)
 
-これで、保留中の **ローンチ** が表示されます。 保留中の **起動** の前にあるチェックボックスをオンにします。
+保留中の&#x200B;**Launch**&#x200B;が表示されます。 保留中の&#x200B;**起動**&#x200B;の前にあるチェックボックスをオンにします。
 
-![AEM エージェント &#x200B;](./images/aemagents80.png)
+![AEM Agents](./images/aemagents80.png)
 
-**昇格** をクリックします。
+「**プロモーション**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents81.png)
+![AEM Agents](./images/aemagents81.png)
 
-「**すべてのローンチを昇格**」を選択し、「**次へ**」をクリックします。
+**完全なローンチを促進**&#x200B;を選択し、**次へ**&#x200B;をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents82.png)
+![AEM Agents](./images/aemagents82.png)
 
-**昇格** をクリックします。
+「**プロモーション**」をクリックします。
 
-![AEM エージェント &#x200B;](./images/aemagents83.png)
+![AEM Agents](./images/aemagents83.png)
 
-これが表示されます。 変更は現在実稼動環境にあります。
+今これを見るべきです。 変更内容は現在本番稼動中です。
 
-![AEM エージェント &#x200B;](./images/aemagents84.png)
+![AEM Agents](./images/aemagents84.png)
 
 ページを更新すると、公開されたページにすべての変更が表示されます。
 
-![AEM エージェント &#x200B;](./images/aemagents85.png)
+![AEM Agents](./images/aemagents85.png)
 
-または、手動のプロモーション プロセスを実行する代わりに、AI アシスタントでプロンプト `accept` を入力することもできます。
+または、手作業でプロモーションプロセスを実行する代わりに、AI アシスタントにプロンプト `accept`を入力することもできます。
 
-![AEM エージェント &#x200B;](./images/aemagents86.png)
+![AEM Agents](./images/aemagents86.png)
 
-すると、変更が公開されたことを示す確認メッセージが表示されます。
+その後、変更が公開されていることを確認する必要があります。
 
-![AEM エージェント &#x200B;](./images/aemagents87.png)
+![AEM Agents](./images/aemagents87.png)
 
-### コンテンツの更新 – フォームの作成
+### コンテンツの更新 – フォーム作成
 
-Edge Delivery ServicesのAdobe Experience Manager Forms モジュール [&#x200B; では &#x200B;](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} フォームを手動で作成する手順を確認できます。
+モジュール [Adobe Experience Manager Forms Edge Delivery Services](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"}では、手作業でフォームを作成する手順を確認できます。
 
-このフォーム作成スキルにより、ユーザーは、開発チームや IT チームに依存することなく、自然言語プロンプトを使用してアダプティブフォームを作成できるようになりました。 この機能は、ブランドの一貫性を維持しながらフォームの開発を促進し、ビジネスユーザーが技術的な深い知識がなくてもフォームを作成できるようにします。
+フォーム作成スキルにより、開発チームやIT部門に依存することなく、自然言語によるプロンプトを通じてアダプティブフォームを作成できるようになりました。 この機能により、ブランドの一貫性を維持しながらフォームの開発が加速し、ビジネスユーザーは技術的な知識がなくてもフォームを作成できます。
 
-[https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat) に移動します。
+[https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat)に移動します。
 
-![AEM エージェント &#x200B;](./images/aemagentsforms1.png)
+![AEM Agents](./images/aemagentsforms1.png)
 
-次のプロンプトを入力し、「**送信**」をクリックします。
+次のプロンプトを入力し、**send**&#x200B;をクリックします。
 
 ```
 Create a new adaptive form using Edge Delivery Services and the existing CitiSignal site, with the following details:
@@ -480,8 +491,8 @@ Create a new adaptive form using Edge Delivery Services and the existing CitiSig
 
 ## 次の手順
 
-[1.6.2 AEM MCP Servers &amp; Cursor](./ex2.md){target="_blank"}
+[1.6.2 AEM MCP Servers &amp; Cursor](./ex2.md){target="_blank"}に移動
 
-[AEMとエージェント &#x200B;](./aemagents.md){target="_blank"} に戻る
+[AEM &amp; Agents](./aemagents.md){target="_blank"}に戻る
 
-[&#x200B; すべてのモジュールに戻る &#x200B;](./../../../overview.md){target="_blank"}
+[すべてのモジュールへ戻る](./../../../overview.md){target="_blank"}

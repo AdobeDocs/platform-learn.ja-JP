@@ -3,9 +3,10 @@ title: はじめに – Experience League ドキュメントのChrome拡張機�
 description: はじめに – Experience League ドキュメントのChrome拡張機能をインストールします
 kt: 5342
 doc-type: tutorial
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: a6057d20-b005-47c9-b294-263eaaf78084
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 1%
 | 名前 | キー | 例 |
 |:-------------:| :---------------:| :---------------:|
 | IMS Org ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| IMS組織名 | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS組織名 | `--aepImsOrgName--` | `Adobe Tech Insiders` |
 | AEP テナント ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP サンドボックス名 | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 ## Chrome拡張機能の設定
 
-[https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}に移動し、拡張機能アイコンをクリックして開きます。
+[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}に移動し、拡張機能アイコンをクリックして開きます。
 
 ![DSN](./images/tuthome.png)
 
@@ -70,9 +71,21 @@ ht-degree: 1%
 
 ![DSN](./images/c8.png)
 
-**お客様のLDAP**
+以下のいずれかのイベントに参加する場合は、以下の値を示すように使用してください。
 
-これは、チュートリアルの一部として使用されるユーザー名です。 この例では、LDAPはこのユーザーのメールアドレスに基づいています。 メールアドレスは&#x200B;**vangeluw@adobe.com**&#x200B;なので、LDAPは&#x200B;**vangeluw**&#x200B;になります。
+| 名前 | パートナーTech Labs New Orleans | Tech Insiders対面ワークショップ | Tech Insiders On-Demand Enablement |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| IMS Org ID | `907075E95BF479EC0A495C73@AdobeOrg` | `907075E95BF479EC0A495C73@AdobeOrg` | `0B6930256441790E0A495FFE@AdobeOrg` |
+| IMS組織名 | `Adobe Tech Insiders` | `Adobe Tech Insiders` | `CXO Enablement Training LAB` |
+| AEP テナント ID | `_experienceplatform` | `_experienceplatform` | `_acsultimatesupport` |
+| AEP サンドボックス名 | `one-adobe` | `one-adobe` | `one-adobe` |
+| Learner Profile LDAP | `XXX` | `XXX` | `XXX` |
+
+**学習者プロファイル LDAP**
+
+これは、チュートリアルの一部として使用されるユーザー名です。 この例では、LDAPはこのユーザーのメールアドレスに基づいています。 メールアドレスが&#x200B;**vangeluw@adobe.com**&#x200B;の場合、LDAPは&#x200B;**vangeluw**&#x200B;になります。
+
+ニューオーリンズのPartner Tech Labs イベントに参加する場合は、同じロジックを適用し、メールアドレスの最初の部分をLDAPとして使用してください。
 
 LDAPは、設定がリンクされ、使用しているインスタンスやサンドボックスを使用している他のユーザーと競合しないように使用されます。
 
@@ -91,7 +104,7 @@ LDAPは、設定がリンクされ、使用しているインスタンスやサ�
 
 ## チュートリアルコンテンツを確認
 
-テストとして、[このページ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}に移動します。
+テストとして、[このページ ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}に移動します。
 
 これで、このページのすべての&#x200B;**環境変数**&#x200B;が、chrome拡張機能でアクティブ化された環境に基づいて、真の値に置き換えられたことがわかります。
 
@@ -101,8 +114,8 @@ LDAPは、設定がリンクされ、使用しているインスタンスやサ�
 
 ## 次の手順
 
-[&#x200B; インストールするアプリケーション &#x200B;](./ex2.md){target="_blank"}に移動
+[ インストールするアプリケーション ](./ex2.md){target="_blank"}に移動
 
 [はじめに – エージェンティック AI](./getting-started-agentic-ai.md){target="_blank"}に戻る
 
-[すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"}に戻る
+[すべてのモジュール ](./../../../overview.md){target="_blank"}に戻る

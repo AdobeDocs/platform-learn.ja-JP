@@ -2,9 +2,10 @@
 title: はじめに – Agentic AI - AEM web サイトとAEP サンドボックスを使用する
 description: はじめに – Agentic AI - AEM web サイトとAEP サンドボックスを使用する
 doc-type: multipage-overview
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,11 @@ Agentic AI Tech Labsを利用する場合は、Edge Delivery Servicesを使用�
 >
 >以下のスクリーンショットはすべて、図1のみを使用しています。 以下の手順を実行する際に、受信したメールの一部として割り当てられた番号を使用する必要があります。
 
-AEM プログラムでは、名前で割り当てられた番号が使用されます。 AEM プログラムの名前は次のとおりです。
+AEM プログラムでは、名前で割り当てられた番号が使用されます。 AEM プログラムの名前は、次のいずれかにする必要があります。
 
-- **Tech Insiders - AEM + ACCS X** （Xは、割り当てられた番号を表します）。
+- **`Tech Insiders - AEM + ACCS X`** （Xは割り当てられた番号を表します）。
+- **`Tech Insiders On Demand - AEM + ACCS X`** （Xは割り当てられた番号を表します）。
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**。この場合、自分で作成した独自のAEM プログラムを使用しているため、番号がありません。
 
 ![DSN](./images/aem1.png)
 
@@ -70,14 +73,14 @@ Tech Lab セッションを開始する前のオンボーディングプロセ�
 
 Web サイトにアクセスするには、次のデフォルト URLを使用できます。
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 これらのURLのXを、割り当てられた番号で置き換える必要があります。
 
 さらに、web サイトごとにカスタムドメイン名が作成され、次のURLを使用してアクセスできます。
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 これらのURLのXを、割り当てられた番号で置き換える必要があります。
 
@@ -103,4 +106,4 @@ Brand Concierge Tech Labの場合は、AEP サンドボックスを使用する�
 
 [はじめに – エージェンティック AI](./getting-started-agentic-ai.md){target="_blank"}に戻る
 
-[すべてのモジュール &#x200B;](./../../../overview.md){target="_blank"}./imagesに戻る
+[すべてのモジュール ](./../../../overview.md){target="_blank"}./imagesに戻る
