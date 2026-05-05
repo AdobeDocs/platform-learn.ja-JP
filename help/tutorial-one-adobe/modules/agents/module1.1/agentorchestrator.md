@@ -4,10 +4,10 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: beeb23f59f2191e7f48c9b0283627c8bed1ae11f
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 2%
+source-wordcount: '320'
+ht-degree: 5%
 
 ---
 
@@ -48,13 +48,17 @@ Adobe Experience Platform AgentsとAgent Orchestratorの使用方法について
 
 この演習では、Adobe Marketing AgentとMicrosoft Copilotを組み合わせて使用することで、Fiber Max向けのCitiSignal ローンチキャンペーンを背景にAgent Orchestratorの機能を紹介します。
 
-[1.1.4 Google Gemini Enterprise用Adobe Marketing Agent](./ex4.md){target="_blank"}
+[1.1.4 Google Gemini Enterprise向けAdobe Marketing Agent](./ex4.md){target="_blank"}
 
 この演習では、Adobe Marketing AgentとGoogle Geminiを使用して、Fiber MaxのCitiSignal起動キャンペーンを背景にAgent Orchestratorの機能を紹介します。
 
-[1.1.5 Claude](./ex5.md){target="_blank"}のAdobe Marketing Agent
+[1.1.5 Adobe Marketing Agent for Claude](./ex5.md){target="_blank"}
 
 この演習では、Adobe Marketing AgentとClaudeを使用して、Fiber MaxのCitiSignal起動キャンペーンを背景にAgent Orchestratorの機能を探索します。
+
+[1.1.6 AI ハーネス](./ex5.md){target="_blank"}
+
+この演習では、Fiber MaxのCitiSignal ローンチ キャンペーンの背景に対して、新しいAI ハーネスを使用したAgent Orchestratorの機能について説明します。
 
 ![技術関係者](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
@@ -62,4 +66,4 @@ Adobe Experience Platform AgentsとAgent Orchestratorの使用方法について
 >
 >ご質問がある場合は、**techinsiders@adobe.com**&#x200B;に電子メールを送信して、今後のコンテンツに関する提案の一般的なフィードバックを共有するには、Tech Insidersに直接お問い合わせください。
 
-[すべてのモジュールに戻る](../../../overview.md){target="_blank"}
+[すべてのモジュールへ戻る](../../../overview.md){target="_blank"}
