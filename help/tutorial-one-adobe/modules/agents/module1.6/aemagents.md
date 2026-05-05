@@ -4,7 +4,7 @@ description: Adobe Experience Manager & Agents
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: 22691d40708e3b48b9365841dff0d3643e041481
+source-git-commit: 7eef01795c1c5e994a4c40e7779e730a7998776c
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
@@ -22,10 +22,12 @@ ht-degree: 1%
 - **開発エージェント**&#x200B;は、AIを活用したトラブルシューティングとパフォーマンス調整によって開発者を高速化します。
 
 これらのエージェントを組み合わせることで、AEMは従来のCMSの能力をはるかに超えて、自動化されたエクスペリエンス運用に移行できます。 これらのエージェントはすべて、人間が制御できるように設計されており、正確性、信頼性、監視が確保されています。
+
 >[!IMPORTANT]
-&#x200B;>>
-この演習を完了するには、EDS環境で動作するAEM SitesおよびAssets CSにアクセスする必要があり、使用しているIMS組織に対して様々なAEM Agentsを有効にする必要があります。>
-まだ環境がない場合は、[Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}の演習に進みます。 そこに記載されている手順に従うと、そのような環境にアクセスできるようになります。
+>
+>この演習を完了するには、EDS環境で動作するAEM SitesおよびAssets CSにアクセスする必要があり、使用しているIMS組織に対して様々なAEM Agentsを有効にする必要があります。
+>
+>まだ環境がない場合は、[Adobe Experience Manager Cloud ServiceとEdge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}の演習に進みます。 そこに記載されている手順に従うと、そのような環境にアクセスできるようになります。
 
 ## 学習内容
 
@@ -61,4 +63,4 @@ ht-degree: 1%
 >
 >ご質問がある場合は、**techinsiders@adobe.com**&#x200B;に電子メールを送信して、今後のコンテンツに関する提案の一般的なフィードバックを共有するには、Tech Insidersに直接お問い合わせください。
 
-[すべてのモジュールへ戻る](../../../overview.md){target="_blank"}
+[すべてのモジュールに戻る](../../../overview.md){target="_blank"}
