@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Real-Time CDP Collaborationで測定を設定する方法について説明します。 このガイドでは、パブリッシャーキャンペーンデータにリンクされたレポートを作成できるようにするためのオンボーディングイベントデータについて説明します。 正確な測定は、施策のパフォーマンスを分析し、今後の戦略を最適化するのに役立ちます。 詳細な手順とインサイトについては、動画をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486347/?captions=jpn&learn=on&enablevpops)
