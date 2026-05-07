@@ -1,12 +1,10 @@
 ---
-source-git-commit: d60206d6bf4373ffdba8292c7169d1e3e961a74c
+source-git-commit: 43d59df61305bf6aba739580d28e1ada4a566989
 workflow-type: tm+mt
-source-wordcount: '13'
+source-wordcount: '7'
 ht-degree: 0%
 
 ---
-# platform-learn.en
+# アーカイブ
 
-Platform 向けの共同チュートリアルとイネーブルメント資料。
-
-リポジトリをクリーンアップしてサイズを縮小しました…
+このリポジトリは<https://github.com/Adobe-Enterprise-Docs/platform-learn.en>に移行されました。
